@@ -1004,7 +1004,1182 @@
                 </div>
             </div>
 
-            <!-- Capítulo 18: Mudanças 2024-2026 -->
+            <!-- Capítulo 4: NF-e (Modelo 55) -->
+<div class="chapter" id="chapter-4">
+    <div class="chapter-header">
+        <h1 class="chapter-title">Capítulo 4: NF-e (Modelo 55) — Guia Campo a Campo</h1>
+    </div>
+    <div class="chapter-content">
+        <div class="content-block">
+            <p>A Nota Fiscal de Produtos eletrônica (NF-e), modelo 55, é a espinha dorsal do sistema fiscal brasileiro para a circulação de mercadorias. Dominar seu preenchimento não é apenas uma obrigação, mas uma habilidade estratégica que evita rejeições, autuações e problemas logísticos. Este capítulo é um guia prático, focado nos grupos e campos que mais geram dúvidas no dia a dia do analista fiscal.</p>
+        </div>
+
+        <div class="content-block">
+            <h2>Estrutura Geral do XML da NF-e</h2>
+            <p>O XML da NF-e é dividido em grupos (tags) que organizam as informações de forma lógica. Os principais são:</p>
+            <ul>
+                <li><strong>&lt;ide&gt;</strong>: Identificação da NF-e (número, série, data, tipo de operação).</li>
+                <li><strong>&lt;emit&gt;</strong>: Dados do Emitente (quem está emitindo a nota).</li>
+                <li><strong>&lt;dest&gt;</strong>: Dados do Destinatário (para quem a nota é emitida).</li>
+                <li><strong>&lt;det&gt;</strong>: Detalhamento dos Produtos/Serviços (o "coração" da nota, repetido para cada item).</li>
+                <li><strong>&lt;total&gt;</strong>: Totalizadores da NF-e (soma dos valores).</li>
+                <li><strong>&lt;transp&gt;</strong>: Dados do Transporte (modalidade, transportadora, volumes).</li>
+                <li><strong>&lt;cobr&gt;</strong>: Dados de Cobrança (faturas, duplicatas).</li>
+                <li><strong>&lt;pag&gt;</strong>: Detalhamento dos Pagamentos.</li>
+                <li><strong>&lt;infAdic&gt;</strong>: Informações Adicionais de interesse do Fisco e do contribuinte.</li>
+            </ul>
+        </div>
+
+        <div class="content-block">
+            <h2>Grupo &lt;ide&gt; - A Identidade da Operação</h2>
+            <p>Este grupo define a natureza da operação. Erros aqui costumam causar rejeições imediatas.</p>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Campo</th>
+                            <th>Descrição</th>
+                            <th>🔴 Ponto de Atenção</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>natOp</strong></td>
+                            <td>Natureza da Operação</td>
+                            <td>Texto livre que descreve a operação (ex: "Venda de Mercadoria", "Remessa para Conserto"). Deve ser consistente com o CFOP.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>indPag</strong></td>
+                            <td>Indicador da Forma de Pagamento</td>
+                            <td>0=À vista; 1=A prazo; 2=Outros. Foi substituído pelo grupo &lt;pag&gt;, mas ainda é obrigatório.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>mod</strong></td>
+                            <td>Modelo do Documento</td>
+                            <td>Sempre <strong>55</strong> para NF-e.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>idDest</strong></td>
+                            <td>Identificador de Local de Destino</td>
+                            <td><strong>1=Interna</strong> (dentro do mesmo estado); <strong>2=Interestadual</strong>; <strong>3=Exterior</strong>. Este campo determina as alíquotas de ICMS aplicáveis.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>tpImp</strong></td>
+                            <td>Tipo de Impressão do DANFE</td>
+                            <td>1=Retrato; 2=Paisagem. Padrão é 1.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>tpEmis</strong></td>
+                            <td>Tipo de Emissão</td>
+                            <td><strong>1=Normal</strong>. Outros valores (2 a 9) indicam diferentes tipos de contingência.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>finNFe</strong></td>
+                            <td>Finalidade da Emissão</td>
+                            <td><strong>1=Normal</strong>; 2=Complementar; 3=Ajuste; 4=Devolução. Usar '4' é crucial para que a nota de devolução referencie a nota original.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>indFinal</strong></td>
+                            <td>Indicador de Operação com Consumidor Final</td>
+                            <td><strong>0=Não</strong>; <strong>1=Sim</strong>. Essencial para o cálculo do DIFAL em operações interestaduais.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>indPres</strong></td>
+                            <td>Indicador de Presença do Comprador</td>
+                            <td>Indica como a operação ocorreu (ex: 1=Presencial; 2=Não presencial, pela internet; 4=NFC-e com entrega a domicílio).</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="content-block">
+            <h2>Grupo &lt;dest&gt; - Quem é o Cliente</h2>
+            <p>A correta identificação do destinatário é vital. Inconsistências com o cadastro da SEFAZ levam a rejeições.</p>
+            <div class="attention-block">
+                <h3>🔴 Atenção: Campo indIEDest</h3>
+                <p>Este é um dos campos mais importantes do grupo. Ele define o perfil tributário do destinatário em relação ao ICMS:</p>
+                <ul>
+                    <li><strong>1 = Contribuinte ICMS:</strong> Possui Inscrição Estadual (IE). Geralmente, empresas que revendem produtos ou industrializam.</li>
+                    <li><strong>2 = Contribuinte Isento de IE:</strong> Empresas que não têm IE, como prestadores de serviço ou algumas construtoras.</li>
+                    <li><strong>9 = Não Contribuinte:</strong> Pessoa física ou jurídica que compra o produto para uso ou consumo próprio, sem finalidade comercial.</li>
+                </ul>
+                <p>A combinação de <strong>idDest</strong>, <strong>indFinal</strong> e <strong>indIEDest</strong> dispara as regras de cálculo do DIFAL (Diferencial de Alíquotas).</p>
+            </div>
+        </div>
+
+        <div class="content-block">
+            <h2>Grupo &lt;det&gt; e &lt;imposto&gt; - O Coração da NF-e</h2>
+            <p>Este é o grupo mais complexo, onde cada produto é listado com seus respectivos impostos. Um erro aqui invalida toda a nota.</p>
+            
+            <h3>Subgrupo &lt;prod&gt; - Detalhes do Produto</h3>
+            <ul>
+                <li><strong>cProd:</strong> Código interno do produto na sua empresa.</li>
+                <li><strong>cEAN:</strong> GTIN (Global Trade Item Number), o código de barras. Se o produto tiver, é obrigatório informar.</li>
+                <li><strong>xProd:</strong> Descrição do produto.</li>
+                <li><strong>NCM:</strong> Nomenclatura Comum do Mercosul. Código de 8 dígitos obrigatório. Errar o NCM pode levar a tributação incorreta.</li>
+                <li><strong>CEST:</strong> Código Especificador da Substituição Tributária. Obrigatório se o produto estiver sujeito à ST, mesmo que a operação atual não tenha ST.</li>
+                <li><strong>CFOP:</strong> Código Fiscal de Operações e Prestações. Um dos campos mais críticos, define a natureza fiscal da movimentação do item.</li>
+                <li><strong>uCom e qCom:</strong> Unidade comercial (ex: 'UN', 'CX') e quantidade.</li>
+                <li><strong>vUnCom e vProd:</strong> Valor unitário e valor total do produto.</li>
+            </ul>
+
+            <div class="tip-block">
+                <h3>✅ Dica de Estudo</h3>
+                <p>A SEFAZ cruza as informações. Se você informa um CFOP de devolução (ex: 5.202), a finalidade da nota (finNFe) deve ser 4 (Devolução) e o grupo de nota referenciada deve ser preenchido. A lógica deve ser consistente.</p>
+            </div>
+
+            <h3>Subgrupo &lt;imposto&gt; - A Tributação do Item</h3>
+            <p>Dentro de cada &lt;det&gt;, há um grupo &lt;imposto&gt; que detalha cada tributo incidente.</p>
+            
+            <h4>ICMS</h4>
+            <p>O preenchimento varia conforme o Regime Tributário do emitente e a operação.</p>
+            <ul>
+                <li><strong>Emitente Regime Normal (CRT=3):</strong> Usa-se o grupo <strong>ICMSxx</strong>, onde 'xx' é o <strong>CST (Código de Situação Tributária)</strong>. Ex: <strong>ICMS00</strong> (Tributado integralmente), <strong>ICMS20</strong> (Com redução de base), <strong>ICMS40</strong> (Isento), <strong>ICMS60</strong> (ICMS cobrado anteriormente por ST).</li>
+                <li><strong>Emitente Simples Nacional (CRT=1):</strong> Usa-se o grupo <strong>ICMSSNxx</strong>, onde 'xx' é o <strong>CSOSN (Código de Situação da Operação no Simples Nacional)</strong>. Ex: <strong>ICMSSN101</strong> (Tributada com permissão de crédito), <strong>ICMSSN102</strong> (Tributada sem permissão de crédito), <strong>ICMSSN500</strong> (ICMS cobrado anteriormente por ST).</li>
+            </ul>
+
+            <h4>PIS e COFINS</h4>
+            <p>A estrutura é semelhante, usando os grupos <strong>PISAliq</strong>, <strong>PISNT</strong> (Não Tributado), <strong>PISOutr</strong>, etc., definidos pelo CST de PIS/COFINS (01 a 99).</p>
+
+            <div class="example-block">
+                <h3>💡 Exemplo: Estrutura de um item tributado (Regime Normal)</h3>
+                <pre><code>&lt;det nItem="1"&gt;
+  &lt;prod&gt;
+    &lt;cProd&gt;123&lt;/cProd&gt;
+    &lt;xProd&gt;Monitor LED 24p&lt;/xProd&gt;
+    &lt;NCM&gt;85285220&lt;/NCM&gt;
+    &lt;CFOP&gt;5102&lt;/CFOP&gt;
+    &lt;vProd&gt;1000.00&lt;/vProd&gt;
+    ...
+  &lt;/prod&gt;
+  &lt;imposto&gt;
+    &lt;ICMS&gt;
+      &lt;ICMS00&gt;
+        &lt;orig&gt;0&lt;/orig&gt;
+        &lt;CST&gt;00&lt;/CST&gt;
+        &lt;modBC&gt;3&lt;/modBC&gt;
+        &lt;vBC&gt;1000.00&lt;/vBC&gt;
+        &lt;pICMS&gt;18.00&lt;/pICMS&gt;
+        &lt;vICMS&gt;180.00&lt;/vICMS&gt;
+      &lt;/ICMS00&gt;
+    &lt;/ICMS&gt;
+    &lt;PIS&gt;
+      &lt;PISAliq&gt;
+        &lt;CST&gt;01&lt;/CST&gt;
+        &lt;vBC&gt;1000.00&lt;/vBC&gt;
+        &lt;pPIS&gt;1.65&lt;/pPIS&gt;
+        &lt;vPIS&gt;16.50&lt;/vPIS&gt;
+      &lt;/PISAliq&gt;
+    &lt;/PIS&gt;
+    &lt;COFINS&gt;
+      &lt;COFINSAliq&gt;
+        &lt;CST&gt;01&lt;/CST&gt;
+        &lt;vBC&gt;1000.00&lt;/vBC&gt;
+        &lt;pCOFINS&gt;7.60&lt;/pCOFINS&gt;
+        &lt;vCOFINS&gt;76.00&lt;/vCOFINS&gt;
+      &lt;/COFINSAliq&gt;
+    &lt;/COFINS&gt;
+  &lt;/imposto&gt;
+&lt;/det&gt;</code></pre>
+            </div>
+        </div>
+
+        <div class="content-block">
+            <h2>Grupo &lt;pag&gt; - Detalhamento do Pagamento</h2>
+            <p>Este grupo tornou-se obrigatório e detalha como a operação foi paga. Pode haver múltiplos blocos &lt;detPag&gt; para pagamentos parciais em diferentes formas.</p>
+            <ul>
+                <li><strong>tPag:</strong> Forma de Pagamento (ex: 01=Dinheiro, 03=Cartão de Crédito, 15=Boleto Bancário, 99=Outros).</li>
+                <li><strong>vPag:</strong> Valor do Pagamento.</li>
+                <li><strong>CNPJ, tBand, cAut:</strong> Campos para detalhar operações com cartão.</li>
+            </ul>
+            <p>A soma de todos os <strong>vPag</strong> deve bater com o valor total da nota (<strong>vNF</strong>).</p>
+        </div>
+
+        <div class="procedure-block">
+            <h3>⚙️ Procedimento: Checklist Rápido Antes de Transmitir uma NF-e</h3>
+            <ol>
+                <li><strong>Consistência de CFOP e Natureza da Operação:</strong> Eles "conversam" entre si?</li>
+                <li><strong>Dados do Destinatário:</strong> CNPJ/CPF e Inscrição Estadual estão corretos e ativos na SEFAZ?</li>
+                <li><strong>NCM e CEST:</strong> O NCM está correto para o produto? Se tiver ST, o CEST foi informado?</li>
+                <li><strong>CST/CSOSN:</strong> O código de tributação do ICMS é o correto para a operação e para o seu regime tributário?</li>
+                <li><strong>Valores:</strong> A soma dos produtos (vProd) bate com os totais? A soma dos pagamentos (vPag) bate com o valor da nota (vNF)?</li>
+                <li><strong>DIFAL:</strong> Se for venda interestadual para não contribuinte, o grupo &lt;ICMSUFDest&gt; foi preenchido?</li>
+                <li><strong>Nota Referenciada:</strong> Se for devolução, complementar ou ajuste, a chave de acesso da nota original foi referenciada?</li>
+            </ol>
+        </div>
+    </div>
+</div>
+
+<!-- Capítulo 5: NFC-e (Modelo 65) -->
+<div class="chapter" id="chapter-5">
+    <div class="chapter-header">
+        <h1 class="chapter-title">Capítulo 5: NFC-e (Modelo 65) — O Varejo em Tempo Real</h1>
+    </div>
+    <div class="chapter-content">
+        <div class="content-block">
+            <p>A Nota Fiscal de Consumidor eletrônica (NFC-e), modelo 65, revolucionou o varejo brasileiro ao substituir o antigo cupom fiscal em papel e o ECF (Emissor de Cupom Fiscal). Ela é projetada para ser ágil, simples e de baixo custo, atendendo à dinâmica das vendas diretas ao consumidor. Embora compartilhe a arquitetura básica da NF-e (XML, assinatura digital), suas particularidades são cruciais para o sucesso da operação no ponto de venda (PDV).</p>
+        </div>
+
+        <div class="content-block">
+            <h2>Diferenças Fundamentais: NF-e vs. NFC-e</h2>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Característica</th>
+                            <th>NF-e (Modelo 55)</th>
+                            <th>NFC-e (Modelo 65)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Finalidade</strong></td>
+                            <td>Operações B2B, movimentações de estoque.</td>
+                            <td>Venda final a consumidor (B2C), presencial ou entrega.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>DANFE</strong></td>
+                            <td>DANFE completo, em folha A4, essencial para o transporte.</td>
+                            <td>DANFE NFC-e, simplificado e resumido, impresso em bobina térmica.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Transporte</strong></td>
+                            <td>Grupo &lt;transp&gt; é detalhado e obrigatório.</td>
+                            <td>Não há destaque de frete. O transporte é responsabilidade do consumidor.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Destinatário</strong></td>
+                            <td>Identificação completa e obrigatória.</td>
+                            <td>Identificação opcional para valores baixos (varia por UF), permitindo "Consumidor Final" genérico.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Contingência</strong></td>
+                            <td>Vários modelos (FS-DA, EPEC, SVC).</td>
+                            <td>Principalmente <strong>Contingência Offline</strong>, permitindo a emissão sem internet.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Eventos</strong></td>
+                            <td>Aceita Carta de Correção e Manifestação do Destinatário.</td>
+                            <td><strong>Não aceita Carta de Correção</strong>. O único evento relevante é o Cancelamento.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="content-block">
+            <h2>O QR Code: A Chave para o Consumidor</h2>
+            <p>A principal característica visual do DANFE NFC-e é o QR Code. Ele permite que o consumidor, usando a câmera do celular, acesse uma página da SEFAZ e verifique a validade e os detalhes daquela compra em tempo real. Isso confere transparência e segurança à operação.</p>
+            <div class="attention-block">
+                <h3>🔴 Atenção: CSC - Código de Segurança do Contribuinte</h3>
+                <p>Para gerar o QR Code, o sistema do contribuinte precisa de um token alfanumérico chamado <strong>CSC (Código de Segurança do Contribuinte)</strong>. Esse código é gerado pelo próprio contribuinte no portal da SEFAZ de seu estado. Existem dois CSCs: um para o ambiente de homologação (testes) e um para o de produção (vendas reais). Sem o CSC correto configurado no sistema de PDV, nenhuma NFC-e pode ser emitida.</p>
+            </div>
+        </div>
+
+        <div class="content-block">
+            <h2>Contingência Offline: Vendendo sem Internet</h2>
+            <p>O varejo não pode parar. Se a conexão com a internet cair, a NFC-e prevê o modelo de <strong>contingência offline</strong>. O fluxo é o seguinte:</p>
+            <ol>
+                <li>O sistema de PDV detecta a falta de conexão com a SEFAZ.</li>
+                <li>O PDV gera o XML da NFC-e com o tipo de emissão <strong>tpEmis=9 (Contingência Offline)</strong>.</li>
+                <li>O DANFE NFC-e é impresso normalmente com a informação "Emissão em Contingência".</li>
+                <li>A venda é concluída e o cliente leva o produto.</li>
+                <li><strong>Até o final do primeiro dia útil seguinte</strong>, o contribuinte deve transmitir todos os XMLs emitidos em contingência para a SEFAZ para obter a autorização.</li>
+            </ol>
+            <div class="procedure-block">
+                <h3>⚙️ Procedimento: Gestão da Contingência Offline</h3>
+                <p>É crucial ter um controle rigoroso das notas emitidas em contingência e que ainda não foram transmitidas. Sistemas de PDV devem ter um painel que mostre claramente o status de cada NFC-e. Deixar de transmitir uma nota emitida em contingência é o mesmo que não emitir a nota, sujeitando a empresa a penalidades.</p>
+            </div>
+        </div>
+
+        <div class="content-block">
+            <h2>Cancelamento da NFC-e: Regras Rígidas</h2>
+            <p>Diferente da NF-e, o cancelamento da NFC-e é muito mais restrito.</p>
+            <ul>
+                <li><strong>Prazo:</strong> Extremamente curto. Na maioria dos estados, o prazo para cancelar uma NFC-e é de apenas <strong>30 minutos</strong> após a autorização.</li>
+                <li><strong>Condição:</strong> A mercadoria <strong>não pode ter circulado</strong>. O cancelamento só é permitido se o cliente ainda estiver no estabelecimento.</li>
+                <li><strong>Impossibilidade de Correção:</strong> Como não existe Carta de Correção para NFC-e, um erro simples (ex: CPF do cliente digitado errado) não pode ser corrigido. A solução é cancelar a nota (se ainda estiver no prazo) e emitir uma nova, ou, se o prazo já passou, emitir uma NF-e de devolução para anular a operação fiscal.</li>
+            </ul>
+        </div>
+
+        <div class="example-block">
+            <h3>💡 Exemplo: Cliente desistiu da compra no caixa</h3>
+            <p>O operador de caixa emitiu a NFC-e, mas o cliente percebeu que esqueceu a carteira e não pode pagar. A compra é cancelada. Como o cliente ainda está na loja e a emissão acabou de ocorrer, o operador pode acionar a função "Cancelar NFC-e" no sistema de PDV. O sistema transmitirá um evento de cancelamento à SEFAZ, que anulará a nota original.</p>
+        </div>
+
+        <div class="tip-block">
+            <h3>✅ Dica de Estudo</h3>
+            <p>A agilidade da NFC-e vem com uma contrapartida de rigidez. O foco do analista fiscal em relação à NFC-e deve ser preventivo: garantir que os cadastros de produtos (NCM, tributação) estejam perfeitos no sistema de PDV para evitar a necessidade de correções, que são muito mais trabalhosas do que na NF-e.</p>
+        </div>
+    </div>
+</div>
+
+<!-- Capítulo 6: NFS-e (Serviços/ISS) -->
+<div class="chapter" id="chapter-6">
+    <div class="chapter-header">
+        <h1 class="chapter-title">Capítulo 6: NFS-e (Serviços/ISS) — O Desafio Municipal</h1>
+    </div>
+    <div class="chapter-content">
+        <div class="content-block">
+            <p>A Nota Fiscal de Serviços eletrônica (NFS-e) é o documento fiscal que registra a prestação de serviços, sendo o fato gerador para a cobrança do ISS (Imposto Sobre Serviços), um tributo de competência municipal. Essa característica — ser municipal — é a fonte de toda a complexidade envolvendo a NFS-e. Por décadas, cada um dos mais de 5.500 municípios brasileiros teve autonomia para criar seu próprio sistema, leiaute e regras de emissão, criando um cenário caótico para empresas que prestam serviços em múltiplas cidades.</p>
+        </div>
+
+        <div class="content-block">
+            <h2>O Cenário Duplo: Padrão Nacional vs. Padrões Municipais</h2>
+            <p>Para resolver essa fragmentação, o Governo Federal instituiu o <strong>Padrão Nacional da NFS-e</strong>. No entanto, a adesão dos municípios é gradual. Portanto, o analista fiscal hoje precisa estar preparado para atuar em dois regimes diferentes:</p>
+            
+            <h3>1. Padrão Nacional da NFS-e</h3>
+            <ul>
+                <li><strong>O que é:</strong> Uma iniciativa para unificar a emissão e a gestão da NFS-e em todo o território nacional.</li>
+                <li><strong>Como funciona:</strong> Utiliza um portal web único (gov.br/nfse) e uma API padronizada para que os sistemas das empresas (ERPs) possam emitir as notas.</li>
+                <li><strong>Vantagens:</strong> Uma única integração de sistema serve para todos os municípios que aderiram ao padrão. Simplifica drasticamente a vida do prestador de serviços.</li>
+                <li><strong>Status:</strong> Em expansão. Grandes capitais e cidades importantes estão gradualmente aderindo, mas a cobertura ainda não é total.</li>
+            </ul>
+
+            <h3>2. Padrões Municipais (Legado)</h3>
+            <ul>
+                <li><strong>O que é:</strong> O sistema próprio de cada prefeitura.</li>
+                <li><strong>Como funciona:</strong> Cada município tem seu próprio portal, seu próprio leiaute de XML (muitos baseados no padrão ABRASF), suas próprias regras de validação e, em geral, exigem um cadastro específico (às vezes presencial) para liberar a emissão.</li>
+                <li><strong>Desafios:</strong> Uma empresa que presta serviço em 20 cidades diferentes pode precisar se integrar com 20 sistemas diferentes, um pesadelo de gestão e TI.</li>
+            </ul>
+
+            <div class="procedure-block">
+                <h3>⚙️ Procedimento: Como Saber Qual Padrão Usar?</h3>
+                <ol>
+                    <li>Consulte o portal do Padrão Nacional (gov.br/nfse) e verifique a lista de municípios conveniados.</li>
+                    <li>Se o município onde o serviço foi prestado estiver na lista, você deve usar o Padrão Nacional.</li>
+                    <li>Se não estiver na lista, você deve acessar o site da prefeitura desse município, procurar pela Secretaria de Finanças ou Tributação e seguir as instruções para o sistema local de NFS-e.</li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="content-block">
+            <h2>Campos e Conceitos Chave da NFS-e</h2>
+            <p>Independentemente do padrão, alguns conceitos são universais na NFS-e.</p>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Conceito</th>
+                            <th>Descrição</th>
+                            <th>🔴 Ponto de Atenção</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Local da Prestação</strong></td>
+                            <td>Município onde o serviço foi efetivamente realizado.</td>
+                            <td><strong>Este é o campo mais crítico.</strong> O ISS é devido ao município onde o serviço foi prestado, salvo raras exceções previstas na Lei Complementar 116/03. Errar o local da prestação significa pagar o imposto para a prefeitura errada.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Código de Serviço</strong></td>
+                            <td>Código que identifica o tipo de serviço prestado.</td>
+                            <td>Existem duas codificações: a <strong>LC 116/03</strong> (federal, ex: 1.01, 1.02) e o <strong>código de serviço municipal</strong>. O XML geralmente exige ambos. A alíquota do ISS depende diretamente deste código.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Retenção de ISS</strong></td>
+                            <td>Indica se o ISS deve ser retido pelo tomador (cliente) ou pago pelo prestador.</td>
+                            <td>A legislação municipal define quando a retenção é obrigatória. Se o serviço for prestado com retenção, o tomador é responsável por recolher o imposto, e o valor do ISS é deduzido do total a receber pelo prestador.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>RPS (Recibo Provisório de Serviços)</strong></td>
+                            <td>Um "rascunho" da NFS-e.</td>
+                            <td>Em muitos sistemas municipais, o prestador primeiro emite um RPS numerado sequencialmente e depois o envia em lote para a prefeitura para ser convertido em NFS-e. O RPS serve como comprovante em caso de falha do sistema da prefeitura.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="attention-block">
+            <h3>🔴 Atenção: Guerra Fiscal do ISS</h3>
+            <p>A definição do "local da prestação" é fonte de muita disputa entre os municípios. Para serviços como consultoria ou desenvolvimento de software, onde o local de prestação pode ser ambíguo, é fundamental ter uma base contratual e documental sólida para justificar por que o ISS foi recolhido para o município A e não para o B, caso a empresa seja questionada.</p>
+        </div>
+
+        <div class="tip-block">
+            <h3>✅ Dica de Estudo</h3>
+            <p>Para cada novo serviço que sua empresa for prestar, crie uma "ficha técnica" contendo: o município do tomador, o local da prestação, o código de serviço da LC 116/03, o código de serviço do município, a alíquota de ISS e a regra de retenção. Manter esse cadastro atualizado evita erros operacionais e garante o compliance fiscal.</p>
+        </div>
+    </div>
+</div>
+
+<!-- Capítulo 7: CT-e (Modelos 57 e 67) -->
+<div class="chapter" id="chapter-7">
+    <div class="chapter-header">
+        <h1 class="chapter-title">Capítulo 7: CT-e (Modelos 57 e 67) — A Nota Fiscal do Transporte</h1>
+    </div>
+    <div class="chapter-content">
+        <div class="content-block">
+            <p>O Conhecimento de Transporte eletrônico (CT-e) é o documento fiscal obrigatório para acobertar a prestação de serviço de transporte de cargas no Brasil. Ele é para o transportador o que a NF-e é para o vendedor da mercadoria. Entender o CT-e é fundamental não apenas para as transportadoras que o emitem, mas também para as empresas que contratam fretes (embarcadores), pois os dados do CT-e impactam diretamente o custo da operação e o crédito de impostos.</p>
+        </div>
+
+        <div class="content-block">
+            <h2>Atores da Operação de Transporte</h2>
+            <p>Diferente de uma simples venda, o transporte envolve múltiplos participantes. A correta identificação de cada um no CT-e é crucial.</p>
+            <ul>
+                <li><strong>Emitente:</strong> A transportadora que está realizando o frete e emitindo o CT-e.</li>
+                <li><strong>Remetente:</strong> Quem está enviando a mercadoria (geralmente, o vendedor).</li>
+                <li><strong>Destinatário:</strong> Quem receberá a mercadoria (geralmente, o comprador).</li>
+                <li><strong>Expedidor:</strong> Quem entrega a carga para o transporte (pode ser o remetente ou um terceiro).</li>
+                <li><strong>Recebedor:</strong> Quem recebe a carga no final do trajeto (pode ser o destinatário ou um terceiro).</li>
+                <li><strong>Tomador do Serviço:</strong> <strong>Quem paga pelo frete.</strong> Este é um papel crítico, pois define quem é o responsável tributário pela operação. O tomador pode ser o remetente (frete CIF) ou o destinatário (frete FOB).</li>
+            </ul>
+        </div>
+
+        <div class="content-block">
+            <h2>CT-e (Modelo 57) vs. CT-e OS (Modelo 67)</h2>
+            <p>Existem dois modelos de CT-e, com finalidades distintas:</p>
+            <ul>
+                <li><strong>CT-e (Modelo 57):</strong> É o modelo padrão, usado para o transporte de cargas em geral, acobertado por uma ou mais NF-e. Este é o modelo que 99% dos analistas fiscais encontrarão no dia a dia.</li>
+                <li><strong>CT-e OS (Outros Serviços, Modelo 67):</strong> Usado para operações específicas que não são o transporte de carga tradicional, como transporte de pessoas, transporte de valores ou excesso de bagagem. É muito menos comum.</li>
+            </ul>
+        </div>
+
+        <div class="content-block">
+            <h2>Campos Essenciais do CT-e (Modelo 57)</h2>
+            <p>O CT-e possui campos específicos para a logística da operação.</p>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Campo/Grupo</th>
+                            <th>Descrição</th>
+                            <th>🔴 Ponto de Atenção</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>CFOP</strong></td>
+                            <td>CFOP do Serviço de Transporte</td>
+                            <td>Inicia sempre com 5, 6 ou 7 (ex: 5.352, 6.353). O CFOP define se o transporte é intermunicipal, interestadual, etc.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>infCarga</strong></td>
+                            <td>Informações da Carga</td>
+                            <td>Contém o valor total da mercadoria transportada e o tipo de produto predominante.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>infDoc / infNFe</strong></td>
+                            <td>Documentos Vinculados</td>
+                            <td><strong>Aqui são informadas as chaves de acesso de TODAS as NF-e</strong> que compõem a carga. Um CT-e pode estar vinculado a dezenas de notas.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>vTPrest e vRec</strong></td>
+                            <td>Valor da Prestação e a Receber</td>
+                            <td>vTPrest é o valor total do frete. vRec é o valor a ser pago pelo tomador.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>imposto</strong></td>
+                            <td>Tributação do ICMS</td>
+                            <td>O ICMS sobre o frete é calculado com base no valor do serviço e nas alíquotas (interna ou interestadual) entre a UF de início e a UF de fim da prestação.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="attention-block">
+            <h3>🔴 Atenção: Tomador do Serviço e o Crédito de ICMS</h3>
+            <p>A empresa que paga pelo frete (tomador) pode ter direito a se creditar do ICMS destacado no CT-e, desde que a legislação permita. Por isso, é fundamental que o tomador seja identificado corretamente no XML. Se sua empresa pagou pelo frete, mas o CT-e foi emitido com o tomador errado, você perde o direito ao crédito fiscal.</p>
+        </div>
+
+        <div class="procedure-block">
+            <h3>⚙️ Procedimento: Conferência de um CT-e Recebido</h3>
+            <ol>
+                <li><strong>Verifique o Tomador:</strong> Sua empresa é o tomador do serviço? Se sim, o CNPJ está correto?</li>
+                <li><strong>Verifique as NF-e Vinculadas:</strong> A chave de acesso da sua NF-e de compra/venda está listada no grupo &lt;infNFe&gt; do CT-e?</li>
+                <li><strong>Verifique os Valores:</strong> O valor do frete (vTPrest) corresponde ao que foi negociado com a transportadora?</li>
+                <li><strong>Verifique o ICMS:</strong> O cálculo do ICMS está correto? A alíquota aplicada é a correta para a rota (origem/destino)?</li>
+            </ol>
+            <p>Qualquer divergência deve ser comunicada imediatamente à transportadora para correção, pois um CT-e com erros pode invalidar seu crédito fiscal e gerar problemas na escrituração (SPED Fiscal).</p>
+        </div>
+    </div>
+</div>
+
+<!-- Capítulo 8: MDF-e (Modelo 58) -->
+<div class="chapter" id="chapter-8">
+    <div class="chapter-header">
+        <h1 class="chapter-title">Capítulo 8: MDF-e (Modelo 58) — O Manifesto da Viagem</h1>
+    </div>
+    <div class="chapter-content">
+        <div class="content-block">
+            <p>O Manifesto Eletrônico de Documentos Fiscais (MDF-e), modelo 58, é o documento que consolida a informação de uma carga em trânsito. Pense nele como a "capa do processo" de uma viagem. Enquanto a NF-e detalha os produtos e o CT-e detalha o serviço de transporte, o MDF-e resume tudo, informando qual veículo está transportando quais documentos fiscais, por qual rota. Sua principal função é agilizar a fiscalização de cargas nas estradas.</p>
+        </div>
+
+        <div class="content-block">
+            <h2>Quem Deve Emitir o MDF-e?</h2>
+            <p>A emissão do MDF-e é obrigatória para:</p>
+            <ul>
+                <li><strong>Transportadoras (emitentes de CT-e):</strong> Em qualquer transporte interestadual. Para transporte intermunicipal, a obrigatoriedade depende da legislação estadual.</li>
+                <li><strong>Empresas que transportam carga própria (emitentes de NF-e):</strong> Quando transportam seus próprios produtos entre estados em veículos próprios, arrendados ou contratando um transportador autônomo (TAC).</li>
+            </ul>
+            <div class="attention-block">
+                <h3>🔴 Atenção: Emissão é ANTES do Início da Viagem</h3>
+                <p>O MDF-e deve ser emitido e autorizado pela SEFAZ <strong>antes</strong> de o veículo iniciar o transporte. Um veículo em trânsito sem o MDF-e correspondente está sujeito a multas e à apreensão da carga e do veículo.</p>
+            </div>
+        </div>
+
+        <div class="content-block">
+            <h2>O Ciclo de Vida do MDF-e: Emissão, Eventos e Encerramento</h2>
+            <p>O MDF-e tem um ciclo de vida bem definido, que acompanha a viagem do veículo.</p>
+            
+            <h3>1. Emissão</h3>
+            <p>No momento da emissão, os campos mais importantes são:</p>
+            <ul>
+                <li><strong>UF de Início e Fim:</strong> A rota principal da viagem.</li>
+                <li><strong>Informações do Veículo:</strong> Placa do veículo principal (cavalo) e dos reboques, se houver.</li>
+                <li><strong>Informações do Condutor:</strong> CPF e nome do motorista.</li>
+                <li><strong>Documentos Vinculados:</strong> <strong>Este é o coração do MDF-e.</strong> Aqui são adicionadas as chaves de acesso de todos os CT-e (se emitido por transportadora) ou de todas as NF-e (se transporte de carga própria) que estão naquele veículo.</li>
+            </ul>
+
+            <h3>2. Eventos Durante a Viagem</h3>
+            <p>Se algo mudar durante o percurso, eventos devem ser registrados no MDF-e:</p>
+            <ul>
+                <li><strong>Inclusão de Condutor:</strong> Se houver troca de motorista no meio da viagem.</li>
+                <li><strong>Inclusão de Documento Fiscal:</strong> Se o veículo fizer uma nova coleta de mercadoria no caminho, as novas NF-e/CT-e devem ser adicionadas ao MDF-e em trânsito.</li>
+            </ul>
+
+            <h3>3. Encerramento: A Etapa Final Obrigatória</h3>
+            <p>Ao final da viagem, quando a carga é totalmente descarregada no destino final, o emitente do MDF-e é <strong>obrigado</strong> a registrar o evento de <strong>Encerramento</strong>. </p>
+            <div class="procedure-block">
+                <h3>⚙️ Procedimento: Por que Encerrar o MDF-e é Crucial?</h3>
+                <p>Enquanto um MDF-e estiver "aberto" (não encerrado), a placa do veículo e o CPF do condutor ficam "travados" no sistema da SEFAZ. Isso significa que:</p>
+                <ol>
+                    <li>Não é possível emitir um novo MDF-e para a mesma placa de veículo para uma nova viagem.</li>
+                    <li>Não é possível vincular o mesmo veículo ou condutor a outro MDF-e.</li>
+                </ol>
+                <p>Deixar de encerrar um MDF-e causa uma enorme dor de cabeça operacional, impedindo que o caminhão inicie uma nova viagem. O controle de MDF-e abertos é uma tarefa de gestão logística fundamental.</p>
+            </div>
+        </div>
+
+        <div class="example-block">
+            <h3>💡 Exemplo: Fluxo Completo</h3>
+            <ol>
+                <li>Uma transportadora em SP vai levar mercadorias para 3 clientes no RJ. Ela emite 3 CT-e, um para cada cliente.</li>
+                <li>Antes de o caminhão sair da garagem, a transportadora emite <strong>um único MDF-e</strong>.</li>
+                <li>Nesse MDF-e, ela informa a placa do caminhão, o CPF do motorista, a rota (UF de início SP, UF de fim RJ) e adiciona as chaves de acesso dos 3 CT-e que emitiu.</li>
+                <li>O caminhão viaja e entrega as mercadorias.</li>
+                <li>Assim que a última entrega no RJ é concluída, o setor de logística da transportadora acessa o sistema e registra o <strong>evento de Encerramento</strong> do MDF-e.</li>
+                <li>Agora, a placa do caminhão está liberada para uma nova viagem (ex: o retorno de RJ para SP).</li>
+            </ol>
+        </div>
+    </div>
+</div>
+
+<!-- Capítulo 9: CF-e-SAT/MFE -->
+<div class="chapter" id="chapter-9">
+    <div class="chapter-header">
+        <h1 class="chapter-title">Capítulo 9: CF-e-SAT/MFE — O Legado do Varejo</h1>
+    </div>
+    <div class="chapter-content">
+        <div class="content-block">
+            <p>O Cupom Fiscal Eletrônico (CF-e) é um documento fiscal eletrônico para o varejo que, em vez de depender de uma comunicação online constante com a SEFAZ, utiliza um equipamento de hardware dedicado para autorizar, assinar e transmitir os cupons. Essa abordagem foi adotada por alguns estados, mais notavelmente São Paulo, com o <strong>SAT (Sistema Autenticador e Transmissor)</strong>, e o Ceará, com o <strong>MFE (Módulo Fiscal Eletrônico)</strong>.</p>
+            <p>Embora funcional, este modelo está sendo gradualmente substituído pela NFC-e (modelo 65) na maioria dos estados, por ser uma solução mais flexível e baseada apenas em software. No entanto, entender o CF-e ainda é importante para empresas que operam nesses estados ou que possuem equipamentos legados.</p>
+        </div>
+
+        <div class="content-block">
+            <h2>Como Funciona o Modelo com Hardware (SAT/MFE)</h2>
+            <p>O fluxo de emissão é diferente do da NFC-e:</p>
+            <ol>
+                <li>O software de Ponto de Venda (PDV) coleta os dados da venda (produtos, valores).</li>
+                <li>O PDV envia esses dados para o equipamento SAT/MFE, que está fisicamente conectado ao caixa.</li>
+                <li>O equipamento SAT/MFE valida as informações, assina digitalmente o cupom com seu próprio certificado, autoriza a venda e armazena uma cópia em sua memória interna.</li>
+                <li>O SAT/MFE devolve o cupom autorizado para o PDV, que então imprime o extrato para o cliente.</li>
+                <li>Periodicamente, o equipamento SAT/MFE se conecta à internet e envia para a SEFAZ os lotes de cupons que foram autorizados offline.</li>
+            </ol>
+        </div>
+
+        <div class="attention-block">
+            <h3>🔴 Atenção: Dependência do Hardware</h3>
+            <p>A principal característica e também a principal fraqueza deste modelo é a dependência do equipamento físico. Se o aparelho SAT/MFE apresentar defeito, <strong>nenhuma venda poderá ser processada naquele caixa</strong> até que o equipamento seja reparado ou substituído. Não há uma alternativa de contingência simples como na NFC-e.</p>
+        </div>
+
+        <div class="content-block">
+            <h2>O Cenário Atual: Transição e Migração para a NFC-e</h2>
+            <p>Com a maturidade e a disseminação da NFC-e (modelo 65) pelo país, que também possui um robusto mecanismo de contingência offline, os sistemas baseados em hardware como o SAT e o MFE estão caindo em desuso.</p>
+            <ul>
+                <li><strong>Fim da Obrigatoriedade:</strong> Muitos estados que adotaram o CF-e já não exigem mais a aquisição de novos equipamentos, direcionando os novos contribuintes diretamente para a NFC-e.</li>
+                <li><strong>Substituição Gradual:</strong> A legislação geralmente permite que os contribuintes continuem usando os equipamentos SAT/MFE que já possuem até o fim de sua vida útil, mas, ao precisarem substituí-los, devem migrar para a NFC-e.</li>
+            </ul>
+        </div>
+
+        <div class="procedure-block">
+            <h3>⚙️ Procedimento: Sua Empresa Usa SAT/MFE? O que fazer?</h3>
+            <ol>
+                <li><strong>Verifique a Legislação Estadual:</strong> Consulte o site da SEFAZ do seu estado para verificar qual é a regra atual. Há um cronograma para o fim do SAT/MFE? Novos estabelecimentos são obrigados a usar NFC-e?</li>
+                <li><strong>Planeje a Migração:</strong> Se a migração para a NFC-e é inevitável, comece a planejar. Isso envolve escolher um software de PDV compatível com a NFC-e, obter o CSC (Código de Segurança do Contribuinte) e treinar a equipe.</li>
+                <li><strong>Monitore os Equipamentos:</strong> Enquanto ainda estiver usando o SAT/MFE, monitore a saúde dos equipamentos. Tenha um plano de contingência para o caso de uma falha de hardware, que pode incluir ter um equipamento de reserva.</li>
+            </ol>
+        </div>
+
+        <div class="tip-block">
+            <h3>✅ Dica de Estudo</h3>
+            <p>O conhecimento sobre CF-e-SAT/MFE está se tornando um nicho. Para a maioria dos analistas fiscais que estão começando hoje, o foco principal deve ser o domínio completo da NFC-e, que é o futuro (e o presente) do varejo na maior parte do Brasil.</p>
+        </div>
+    </div>
+</div>
+
+<!-- Capítulo 10: Tabelas Críticas -->
+<div class="chapter" id="chapter-10">
+    <div class="chapter-header">
+        <h1 class="chapter-title">Capítulo 10: Tabelas Críticas — A "Sopa de Letrinhas" Fiscal</h1>
+    </div>
+    <div class="chapter-content">
+        <div class="content-block">
+            <p>O preenchimento correto de um documento fiscal depende de uma série de códigos e tabelas que definem a classificação do produto e a natureza da operação. Errar um desses códigos pode levar à tributação incorreta, rejeição do documento ou, pior, a uma autuação fiscal. Este capítulo desmistifica as principais "letrinhas" que todo analista fiscal deve ter na ponta dos dedos.</p>
+        </div>
+
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Código</th>
+                        <th>Nome Completo</th>
+                        <th>Para que serve?</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>NCM</strong></td>
+                        <td>Nomenclatura Comum do Mercosul</td>
+                        <td>Classifica a mercadoria. Define alíquotas de IPI, II e, em alguns casos, de ICMS-ST.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>CEST</strong></td>
+                        <td>Código Especificador da Substituição Tributária</td>
+                        <td>Identifica produtos passíveis de Substituição Tributária.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>CFOP</strong></td>
+                        <td>Código Fiscal de Operações e Prestações</td>
+                        <td>Descreve a natureza fiscal da operação (venda, devolução, remessa).</td>
+                    </tr>
+                    <tr>
+                        <td><strong>CST/CSOSN</strong></td>
+                        <td>Código de Situação Tributária / Código de Situação da Operação no Simples Nacional</td>
+                        <td>Detalha a forma de tributação do ICMS para a operação.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="content-block">
+            <h2>1. NCM - Nomenclatura Comum do Mercosul</h2>
+            <p>É um código de 8 dígitos que classifica os produtos. A responsabilidade pela correta classificação do NCM é do fabricante/importador, mas o analista fiscal que emite a nota deve garantir que está usando o código correto. Um NCM errado pode fazer com que um produto que deveria ter IPI seja vendido sem, ou que um produto sujeito à ST passe sem o imposto retido.</p>
+            <div class="attention-block">
+                <h3>🔴 Atenção: Onde consultar o NCM?</h3>
+                <p>A fonte oficial para consulta de NCM é a tabela TIPI (Tabela de Incidência do IPI), disponibilizada pela Receita Federal. Ferramentas online podem ajudar, mas a confirmação final deve ser sempre na fonte oficial.</p>
+            </div>
+        </div>
+
+        <div class="content-block">
+            <h2>2. CEST - Código Especificador da Substituição Tributária</h2>
+            <p>O CEST foi criado para separar o joio do trigo. Nem todo produto com um NCM que *pode* ter ST, de fato *tem* ST em todas as operações. O CEST cria um vínculo entre o NCM e a descrição do produto para definir se ele está ou não no regime de ST.</p>
+            <div class="procedure-block">
+                <h3>⚙️ Procedimento: Regra de Ouro do CEST</h3>
+                <ol>
+                    <li>O produto tem NCM? Sim.</li>
+                    <li>Esse NCM está listado no Convênio ICMS 142/2018 (que rege a ST)?</li>
+                    <li>Se sim, você é <strong>obrigado a informar o CEST</strong> no XML do produto, <strong>mesmo que a sua operação específica não tenha cobrança de ST</strong> (por exemplo, uma venda para consumidor final).</li>
+                </ol>
+                <p>A ausência do CEST para um produto que deveria tê-lo é uma causa comum de rejeição.</p>
+            </div>
+        </div>
+
+        <div class="content-block">
+            <h2>3. CFOP - Código Fiscal de Operações e Prestações</h2>
+            <p>O CFOP é um código de 4 dígitos que diz ao Fisco o que você está fazendo com a mercadoria. A estrutura dele já dá muitas pistas:</p>
+            <ul>
+                <li><strong>1º Dígito (Entrada/Saída):</strong> 1, 2, 3 = Entrada; 5, 6, 7 = Saída.</li>
+                <li><strong>1º Dígito (Local):</strong> 1 e 5 = Operação interna (mesmo estado); 2 e 6 = Operação interestadual; 3 e 7 = Operação com o exterior.</li>
+                <li><strong>Últimos 3 Dígitos:</strong> Especificam a operação (ex: 102 = Venda de mercadoria adquirida de terceiros; 202 = Devolução de venda).</li>
+            </ul>
+            <div class="example-block">
+                <h3>💡 Exemplo: Lendo o CFOP</h3>
+                <ul>
+                    <li><strong>5.102:</strong> Saída (5) interna (1) de venda de mercadoria (102).</li>
+                    <li><strong>6.202:</strong> Saída (6) interestadual (2) de devolução de compra (202).</li>
+                    <li><strong>1.905:</strong> Entrada (1) interna (9) de retorno de remessa para depósito (905).</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="content-block">
+            <h2>4. CST e CSOSN - A Tributação do ICMS</h2>
+            <p>Estes códigos detalham como o ICMS será tratado para aquele item.</p>
+            <ul>
+                <li><strong>CST (Código de Situação Tributária):</strong> Usado por empresas do Regime Normal (Lucro Real/Presumido). Ex: 00 (Tributado integralmente), 20 (Com redução de base de cálculo), 41 (Não tributado), 60 (ICMS cobrado anteriormente por ST).</li>
+                <li><strong>CSOSN (Código de Situação da Operação no Simples Nacional):</strong> Usado por empresas do Simples Nacional. Ex: 101 (Tributada com permissão de crédito), 102 (Tributada sem permissão de crédito), 500 (ICMS cobrado anteriormente por ST).</li>
+            </ul>
+            <p>A escolha do CST/CSOSN correto é o que define quais campos de base de cálculo e alíquota de ICMS deverão ser preenchidos no XML.</p>
+        </div>
+    </div>
+</div>
+
+<!-- Capítulo 11: Impostos na Prática -->
+<div class="chapter" id="chapter-11">
+    <div class="chapter-header">
+        <h1 class="chapter-title">Capítulo 11: Impostos na Prática — Cálculos e Aplicações</h1>
+    </div>
+    <div class="chapter-content">
+        <div class="content-block">
+            <p>Entender a teoria por trás dos impostos é importante, mas o que realmente diferencia um analista fiscal é a capacidade de aplicar esse conhecimento em cálculos precisos no dia a dia. Este capítulo aborda as três situações de cálculo de ICMS mais complexas e recorrentes: a Substituição Tributária (ST), o Diferencial de Alíquotas (DIFAL) e a Desoneração de ICMS.</p>
+        </div>
+
+        <div class="content-block">
+            <h2>1. ICMS-ST (Substituição Tributária)</h2>
+            <p>A ST é um regime onde a responsabilidade pelo recolhimento do ICMS de toda a cadeia de vendas é atribuída a um único contribuinte, geralmente o fabricante ou o importador (o "substituto"). Ele calcula e recolhe não apenas o seu próprio ICMS, but também o ICMS que seria devido pelas vendas subsequentes do distribuidor e do varejista (os "substituídos").</p>
+            
+            <h3>Cálculo do ICMS-ST:</h3>
+            <p>O cálculo envolve uma "presunção" do preço final ao consumidor, usando a <strong>MVA (Margem de Valor Agregado)</strong>, que é um percentual definido pela legislação estadual.</p>
+            <div class="procedure-block">
+                <h3>⚙️ Procedimento: Cálculo Básico do ICMS-ST</h3>
+                <ol>
+                    <li><strong>Base de Cálculo Própria:</strong> Valor do Produto + Frete + Outras Despesas - Descontos.</li>
+                    <li><strong>Valor do ICMS Próprio:</strong> Base de Cálculo Própria * Alíquota de ICMS.</li>
+                    <li><strong>Base de Cálculo do ICMS-ST:</strong> (Base de Cálculo Própria) * (1 + % MVA).</li>
+                    <li><strong>Valor do ICMS-ST (Débito):</strong> (Base de Cálculo do ICMS-ST * Alíquota Interna do Destino) - Valor do ICMS Próprio (Crédito).</li>
+                </ol>
+            </div>
+
+            <div class="example-block">
+                <h3>💡 Exemplo: Venda com ST de SP para MG</h3>
+                <ul>
+                    <li>Valor dos Produtos: R$ 1.000,00</li>
+                    <li>Alíquota Interestadual (SP->MG): 12%</li>
+                    <li>Alíquota Interna em MG: 18%</li>
+                    <li>MVA: 40%</li>
+                </ul>
+                <ol>
+                    <li><strong>ICMS Próprio:</strong> R$ 1.000,00 * 12% = R$ 120,00.</li>
+                    <li><strong>Base de Cálculo ST:</strong> R$ 1.000,00 * (1 + 0,40) = R$ 1.400,00.</li>
+                    <li><strong>Débito de ST:</strong> R$ 1.400,00 * 18% = R$ 252,00.</li>
+                    <li><strong>Valor do ICMS-ST a Recolher:</strong> R$ 252,00 - R$ 120,00 = R$ 132,00.</li>
+                </ol>
+                <p>O fabricante em SP irá recolher R$ 120,00 de ICMS próprio para SP e R$ 132,00 de ICMS-ST para MG, via GNRE.</p>
+            </div>
+        </div>
+
+        <div class="content-block">
+            <h2>2. DIFAL (Diferencial de Alíquotas)</h2>
+            <p>O DIFAL ocorre em operações interestaduais destinadas a <strong>consumidor final não contribuinte do ICMS</strong>. O objetivo é partilhar a arrecadação do ICMS entre o estado de origem e o de destino. A responsabilidade pelo recolhimento é do remetente.</p>
+
+            <h3>Cálculo do DIFAL:</h3>
+            <div class="procedure-block">
+                <h3>⚙️ Procedimento: Cálculo do DIFAL</h3>
+                <ol>
+                    <li><strong>Base de Cálculo:</strong> Valor da Operação.</li>
+                    <li><strong>ICMS Origem:</strong> Base de Cálculo * Alíquota Interestadual.</li>
+                    <li><strong>ICMS Destino (Total):</strong> Base de Cálculo * Alíquota Interna do Destino.</li>
+                    <li><strong>Valor do DIFAL:</strong> ICMS Destino (Total) - ICMS Origem.</li>
+                </ol>
+                <p>O valor do DIFAL é partilhado para o estado de destino. Se houver Fundo de Combate à Pobreza (FCP) no estado de destino, ele também deve ser calculado e recolhido.</p>
+            </div>
+
+            <div class="example-block">
+                <h3>💡 Exemplo: E-commerce de SP vendendo para pessoa física na BA</h3>
+                <ul>
+                    <li>Valor da Venda: R$ 2.000,00</li>
+                    <li>Alíquota Interestadual (SP->BA): 7%</li>
+                    <li>Alíquota Interna na BA: 19%</li>
+                </ul>
+                <ol>
+                    <li><strong>ICMS Origem (para SP):</strong> R$ 2.000,00 * 7% = R$ 140,00.</li>
+                    <li><strong>ICMS Destino (Total):</strong> R$ 2.000,00 * 19% = R$ 380,00.</li>
+                    <li><strong>Valor do DIFAL (para BA):</strong> R$ 380,00 - R$ 140,00 = R$ 240,00.</li>
+                </ol>
+                <p>A loja em SP recolherá R$ 140,00 para SP na sua apuração normal e R$ 240,00 para a BA via GNRE.</p>
+            </div>
+        </div>
+
+        <div class="content-block">
+            <h2>3. Desoneração de ICMS</h2>
+            <p>Ocorre em operações com isenção, não incidência ou suspensão do ICMS, mas que exigem que o valor do imposto que seria devido seja informado no XML para fins de controle ou para que o destinatário não pague indevidamente (como em vendas para a Zona Franca de Manaus - SUFRAMA).</p>
+            
+            <h3>Cálculo da Desoneração:</h3>
+            <p>É um cálculo simples, mas que precisa ser informado em campo específico.</p>
+            <div class="procedure-block">
+                <h3>⚙️ Procedimento: Informando a Desoneração</h3>
+                <ol>
+                    <li>Calcule o valor do ICMS que seria devido se a operação fosse tributada normalmente.</li>
+                    <li>Preencha o campo <strong>vICMSDeson</strong> no XML com este valor.</li>
+                    <li>No campo <strong>motDesICMS</strong>, informe o código do motivo da desoneração (ex: 7 = Venda para SUFRAMA).</li>
+                </ol>
+            </div>
+            <div class="attention-block">
+                <h3>🔴 Atenção: O valor do ICMS desonerado é abatido do total da nota.</h3>
+                <p>O valor informado em vICMSDeson deve ser subtraído do valor total da NF-e (vNF). Isso é crucial para que o cliente pague o preço correto, já sem o imposto embutido.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Capítulo 12: Operações Típicas -->
+<div class="chapter" id="chapter-12">
+    <div class="chapter-header">
+        <h1 class="chapter-title">Capítulo 12: Operações Típicas — Cenários Reais do Mercado</h1>
+    </div>
+    <div class="chapter-content">
+        <div class="content-block">
+            <p>Além da venda simples, o dia a dia fiscal está repleto de operações que movimentam mercadorias sem que haja uma venda direta. Dominar o tratamento fiscal dessas operações — como devoluções, remessas e industrialização — é essencial para a correta apuração de impostos e para manter a conformidade do estoque.</p>
+        </div>
+
+        <div class="content-block">
+            <h2>1. Devolução de Mercadoria</h2>
+            <p>A devolução anula fiscalmente a operação de venda original. A nota fiscal de devolução deve espelhar os impostos da nota de origem para que os créditos e débitos sejam estornados corretamente.</p>
+            <div class="procedure-block">
+                <h3>⚙️ Procedimento: Emitindo uma NF-e de Devolução</h3>
+                <ol>
+                    <li><strong>Finalidade da Emissão (finNFe):</strong> Deve ser <strong>4 = Devolução</strong>.</li>
+                    <li><strong>Nota Fiscal Referenciada (&lt;NFref&gt;):</strong> É <strong>obrigatório</strong> informar a chave de acesso da NF-e de venda original que está sendo devolvida.</li>
+                    <li><strong>CFOP:</strong> Deve ser um CFOP de devolução. Ex: <strong>1.202/2.202</strong> (Devolução de venda), <strong>5.202/6.202</strong> (Devolução de compra).</li>
+                    <li><strong>Impostos:</strong> A nota de devolução deve destacar os mesmos impostos (ICMS, IPI) da nota original para que o emitente original possa se creditar do imposto debitado na venda.</li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="content-block">
+            <h2>2. Remessa e Retorno de Industrialização</h2>
+            <p>Ocorre quando uma empresa (o "encomendante") envia insumos para outra (o "industrializador") para que ela execute uma etapa do processo produtivo. A operação é triangular:</p>
+            <ol>
+                <li><strong>Nota de Remessa:</strong> O encomendante emite uma NF-e de "Remessa para Industrialização" (CFOP 5.901/6.901) para acompanhar os insumos até o industrializador. Essa nota tem os impostos suspensos.</li>
+                <li><strong>Nota de Retorno:</strong> Após o processo, o industrializador emite uma NF-e de volta para o encomendante, com dois itens principais:
+                    <ul>
+                        <li><strong>O retorno simbólico dos insumos:</strong> Usando o CFOP 5.902/6.902, com impostos suspensos.</li>
+                        <li><strong>A cobrança pelo serviço e materiais aplicados:</strong> Usando o CFOP 5.124/6.124 ("Industrialização Efetuada para Outra Empresa"), com destaque dos impostos sobre o valor adicionado.</li>
+                    </ul>
+                </li>
+            </ol>
+        </div>
+
+        <div class="content-block">
+            <h2>3. Remessa para Conserto ou Demonstração</h2>
+            <p>Quando um produto é enviado para conserto ou para que um cliente o avalie (demonstração), não há venda. A operação é acobertada por notas de remessa e retorno.</p>
+            <ul>
+                <li><strong>Ida:</strong> NF-e de "Remessa para Conserto" (CFOP 5.915/6.915) ou "Remessa para Demonstração" (CFOP 5.912/6.912), com impostos suspensos.</li>
+                <li><strong>Volta:</strong> NF-e de "Retorno de Conserto" (CFOP 5.916/6.916) ou "Retorno de Demonstração" (CFOP 5.913/6.913), também com impostos suspensos.</li>
+            </ul>
+            <div class="attention-block">
+                <h3>🔴 Atenção: Prazos</h3>
+                <p>A legislação estadual estabelece prazos máximos para que o produto retorne ao estabelecimento de origem nessas operações (geralmente 60 ou 180 dias). Se o prazo for descumprido, a operação pode ser considerada uma venda definitiva, e os impostos suspensos se tornam devidos.</p>
+            </div>
+        </div>
+
+        <div class="content-block">
+            <h2>4. Venda para Entrega Futura</h2>
+            <p>Ocorre quando a venda é faturada, mas o produto só será entregue fisicamente em um momento posterior. Essa operação exige duas notas fiscais:</p>
+            <ol>
+                <li><strong>NF-e de Simples Faturamento:</strong> Emitida no momento da negociação para formalizar a venda e a cobrança. Usa o CFOP <strong>5.922/6.922</strong> ("Lançamento efetuado a título de simples faturamento decorrente de venda para entrega futura"). <strong>Não há destaque de ICMS/IPI aqui</strong>, apenas a cobrança.</li>
+                <li><strong>NF-e de Remessa da Mercadoria:</strong> Emitida quando o produto finalmente for entregue ao cliente. Usa o CFOP <strong>5.116/6.116</strong> ou <strong>5.117/6.117</strong> ("Venda de produção/mercadoria originada de encomenda para entrega futura"). <strong>É nesta nota que os impostos (ICMS/IPI) são destacados.</strong> Ela deve referenciar a chave de acesso da nota de simples faturamento.</li>
+            </ol>
+        </div>
+    </div>
+</div>
+
+<!-- Capítulo 13: Eventos -->
+<div class="chapter" id="chapter-13">
+    <div class="chapter-header">
+        <h1 class="chapter-title">Capítulo 13: Eventos — O que Acontece Depois da Autorização</h1>
+    </div>
+    <div class="chapter-content">
+        <div class="content-block">
+            <p>A vida de um documento fiscal não termina quando ele é autorizado pela SEFAZ. Uma série de situações pode ocorrer após a emissão, e essas ocorrências são formalizadas através de "eventos". Um evento é um arquivo XML que é vinculado à chave de acesso do documento original, registrando uma alteração ou uma confirmação de status. Os principais eventos que um analista fiscal precisa dominar são o Cancelamento, a Carta de Correção e a Manifestação do Destinatário.</p>
+        </div>
+
+        <div class="content-block">
+            <h2>1. Cancelamento</h2>
+            <p>É o evento utilizado para anular completamente um documento fiscal, como se ele nunca tivesse existido. As regras para o cancelamento são rígidas:</p>
+            <ul>
+                <li><strong>Condição Principal:</strong> A mercadoria não pode ter circulado. O cancelamento só é permitido se a operação de fato não ocorreu.</li>
+                <li><strong>Prazo Padrão:</strong> Para a maioria dos documentos (NF-e, CT-e), o prazo padrão para o cancelamento sem burocracia é de <strong>24 horas</strong> a partir da autorização. Para a NFC-e, o prazo é muito mais curto, geralmente <strong>30 minutos</strong>.</li>
+            </ul>
+            <div class="procedure-block">
+                <h3>⚙️ Procedimento: Cancelamento Extemporâneo (Fora do Prazo)</h3>
+                <p>E se você precisar cancelar uma NF-e após 24 horas? É possível, mas mais complexo. O processo, chamado de cancelamento extemporâneo, varia por estado, mas geralmente envolve:</p>
+                <ol>
+                    <li>Abrir um processo administrativo no portal da SEFAZ estadual, justificando o motivo do cancelamento tardio.</li>
+                    <li>Aguardar a análise e a autorização do Fisco.</li>
+                    <li>Se autorizado, a SEFAZ libera o sistema para que você possa transmitir o evento de cancelamento para a nota específica.</li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="content-block">
+            <h2>2. Carta de Correção Eletrônica (CC-e)</h2>
+            <p>A CC-e é utilizada para corrigir erros <strong>simples</strong> em uma NF-e já autorizada. É importante frisar que ela não pode ser usada para alterar informações críticas.</p>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>✅ O que PODE ser corrigido com CC-e</th>
+                            <th>❌ O que NÃO PODE ser corrigido com CC-e</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>- CFOP (desde que não mude a natureza do imposto)</td>
+                            <td>- Valores de impostos (base de cálculo, alíquota, valor)</td>
+                        </tr>
+                        <tr>
+                            <td>- CST (desde que não mude a tributação)</td>
+                            <td>- Dados do remetente ou do destinatário (CNPJ, endereço)</td>
+                        </tr>
+                        <tr>
+                            <td>- Descrição da mercadoria (para erros de digitação)</td>
+                            <td>- Descrição da mercadoria que altere sua essência</td>
+                        </tr>
+                        <tr>
+                            <td>- Peso, volume, acondicionamento</td>
+                            <td>- Data de emissão ou de saída</td>
+                        </tr>
+                        <tr>
+                            <td>- Dados da transportadora</td>
+                            <td>- Qualquer alteração que modifique o valor total da operação</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="attention-block">
+                <h3>🔴 Atenção: A CC-e não altera o XML original.</h3>
+                <p>A CC-e é um evento separado. Ao consultar a chave de acesso, você verá a NF-e original e, vinculada a ela, a(s) carta(s) de correção. Uma NF-e pode ter até 20 cartas de correção, mas a última sempre prevalece sobre as anteriores.</p>
+            </div>
+        </div>
+
+        <div class="content-block">
+            <h2>3. Manifestação do Destinatário (MDe)</h2>
+            <p>A MDe é um conjunto de eventos que o <strong>destinatário</strong> da NF-e utiliza para informar à SEFAZ qual a sua participação naquela operação. É uma ferramenta poderosa para a gestão de notas fiscais recebidas e para a segurança contra fraudes.</p>
+            <p>Os eventos de manifestação são:</p>
+            <ul>
+                <li><strong>Ciência da Emissão:</strong> O destinatário apenas informa que sabe que a nota foi emitida contra seu CNPJ. Este evento é um pré-requisito para poder baixar o XML completo da NF-e do portal da SEFAZ.</li>
+                <li><strong>Confirmação da Operação:</strong> O destinatário confirma que a operação ocorreu conforme descrito na NF-e e que a mercadoria foi recebida. Após este evento, a nota não pode mais ser cancelada pelo emitente.</li>
+                <li><strong>Desconhecimento da Operação:</strong> O destinatário informa que não tem conhecimento daquela operação. É a principal defesa contra "notas frias" emitidas indevidamente contra o seu CNPJ.</li>
+                <li><strong>Operação não Realizada:</strong> O destinatário confirma que a operação foi acordada, mas não se concretizou por algum motivo (ex: a mercadoria foi recusada na entrega por estar danificada).</li>
+            </ul>
+            <div class="tip-block">
+                <h3>✅ Dica de Estudo</h3>
+                <p>Implementar um processo de manifestação de todas as notas recebidas é uma das melhores práticas de governança fiscal. Isso garante que apenas operações legítimas entrem na sua escrituração fiscal e protege a empresa contra o uso indevido de sua Inscrição Estadual.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Capítulo 14: Contingência e Rejeições -->
+<div class="chapter" id="chapter-14">
+    <div class="chapter-header">
+        <h1 class="chapter-title">Capítulo 14: Contingência e Rejeições — Lidando com Problemas</h1>
+    </div>
+    <div class="chapter-content">
+        <div class="content-block">
+            <p>Dois dos maiores desafios na rotina de emissão de documentos fiscais são a instabilidade dos sistemas (tanto da empresa quanto da SEFAZ) e os inúmeros códigos de erro e rejeição. Este capítulo fornece um guia prático para lidar com essas duas situações, explicando os modos de contingência e como decifrar e resolver as rejeições mais comuns.</p>
+        </div>
+
+        <div class="content-block">
+            <h2>1. Modos de Contingência: A Venda Não Pode Parar</h2>
+            <p>Contingência é o plano B acionado quando o sistema da empresa não consegue se comunicar com a SEFAZ para obter a autorização em tempo real. O objetivo é permitir que a operação (a venda, o transporte) continue, com a posterior regularização do documento fiscal.</p>
+            
+            <h3>Principais Modos de Contingência para NF-e:</h3>
+            <ul>
+                <li><strong>Contingência Offline (usada na NFC-e):</strong> A nota é gerada e impressa sem autorização prévia, e depois transmitida. Já detalhada no Capítulo 5.</li>
+                <li><strong>FS-DA (Formulário de Segurança para Impressão de DANFE Auxiliar):</strong> Utiliza um papel de segurança especial, comprado de gráficas autorizadas. O DANFE é impresso neste formulário e a NF-e é transmitida à SEFAZ assim que a comunicação é restabelecida. É um método caro e em desuso.</li>
+                <li><strong>SVC (SEFAZ Virtual de Contingência):</strong> A melhor e mais usada opção. Quando a SEFAZ de um estado fica fora do ar, ela automaticamente aciona um ambiente de autorização de backup, hospedado em outro estado (SVC-AN para o ambiente nacional, SVC-RS para o Rio Grande do Sul e seus parceiros). O sistema da empresa deve ser capaz de detectar a indisponibilidade e redirecionar a transmissão para o endereço da SVC correspondente.</li>
+                <li><strong>EPEC (Evento Prévio de Emissão em Contingência):</strong> Um "pré-cadastro" da nota. O emissor envia um evento com informações mínimas da operação (emitente, destinatário, valor, chave de acesso) para o ambiente nacional. Após receber a autorização do evento, pode-se imprimir o DANFE e liberar a mercadoria. O XML completo da NF-e deve ser transmitido à SEFAZ de origem quando o serviço voltar.</li>
+            </ul>
+        </div>
+
+        <div class="content-block">
+            <h2>2. Rejeições: Decifrando as Mensagens da SEFAZ</h2>
+            <p>Uma rejeição ocorre quando a SEFAZ recebe o XML, mas encontra um erro de validação que impede a autorização. Cada erro tem um código numérico e uma mensagem. A chave para resolver é entender o que a mensagem realmente significa.</p>
+            
+            <h3>Categorias Comuns de Rejeições:</h3>
+            <ul>
+                <li><strong>Erros de Schema XML:</strong> O arquivo está mal formatado, com tags faltando ou no lugar errado. Geralmente, um problema no software emissor.</li>
+                <li><strong>Erros de Cadastro:</strong> CNPJ ou Inscrição Estadual do emitente ou destinatário estão incorretos, suspensos ou baixados na SEFAZ.</li>
+                <li><strong>Erros de Duplicidade:</strong> Tentativa de emitir uma nota com a mesma numeração e série de outra já autorizada.</li>
+                <li><strong>Erros de Regra de Negócio:</strong> A maioria das rejeições. Ocorre quando os dados do XML violam uma regra fiscal. Ex: "Rejeição 773: Operação com Consumidor Final deve indicar o indicador de presença".</li>
+            </ul>
+
+            <div class="procedure-block">
+                <h3>⚙️ Procedimento: Como Resolver uma Rejeição</h3>
+                <ol>
+                    <li><strong>Leia a Mensagem com Atenção:</strong> Não se atenha apenas ao código. A mensagem descritiva é a melhor pista. Ex: "Rejeição 215: Falha no schema XML".</li>
+                    <li><strong>Isole o Problema:</strong> A mensagem geralmente indica o campo ou grupo com erro. Ex: "Rejeição 696: Operação com não contribuinte deve indicar operação com consumidor final". O erro está na relação entre os campos `indIEDest` e `indFinal`.</li>
+                    <li><strong>Consulte o MOC:</strong> O Manual de Orientação do Contribuinte (MOC) contém uma lista com a maioria das regras de validação. Pesquisar pelo código da rejeição no MOC pode fornecer detalhes técnicos sobre a regra violada.</li>
+                    <li><strong>Corrija a Informação no seu Sistema:</strong> Ajuste o dado incorreto no seu ERP ou sistema de emissão.</li>
+                    <li><strong>Transmita Novamente:</strong> Envie o XML corrigido para a SEFAZ.</li>
+                </ol>
+            </div>
+
+            <div class="example-block">
+                <h3>💡 Exemplo: "Rejeição 539: Duplicidade de NF-e com diferença na chave de acesso"</h3>
+                <p><strong>O que significa?</strong> Você está tentando autorizar uma NF-e com o mesmo CNPJ do emitente, mesmo modelo, série e número de uma outra nota que já foi autorizada, mas com alguma outra informação diferente (como data de emissão ou código numérico), o que gerou uma chave de acesso diferente.</p>
+                <p><strong>Como resolver?</strong> Verifique qual foi a última numeração autorizada para aquela série e utilize o próximo número sequencial disponível. Essa rejeição impede que duas notas com o mesmo número legal sejam autorizadas para o mesmo emissor.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Capítulo 15: Conciliação com SPED -->
+<div class="chapter" id="chapter-15">
+    <div class="chapter-header">
+        <h1 class="chapter-title">Capítulo 15: Conciliação com SPED — Fechando o Ciclo</h1>
+    </div>
+    <div class="chapter-content">
+        <div class="content-block">
+            <p>Os documentos fiscais eletrônicos (NF-e, CT-e, etc.) são a base para a escrituração fiscal digital. Todas as informações contidas nos XMLs emitidos e recebidos durante o mês devem ser consolidadas e declaradas ao Fisco através do SPED (Sistema Público de Escrituração Digital), principalmente na EFD ICMS/IPI. A conciliação entre os DF-e e o SPED é a atividade que fecha o ciclo mensal de conformidade, garantindo que o que foi declarado corresponde exatamente ao que foi operado.</p>
+        </div>
+
+        <div class="content-block">
+            <h2>O SPED Fiscal (EFD ICMS/IPI)</h2>
+            <p>O SPED Fiscal é um arquivo de texto (.txt) com um leiaute extremamente rígido, onde a empresa informa em detalhes todas as suas movimentações de entrada e saída, os impostos apurados, os estoques, etc. Os dados para preencher o SPED vêm diretamente dos XMLs dos documentos fiscais.</p>
+        </div>
+
+        <div class="content-block">
+            <h2>A Relação Direta: XML vs. Registros do SPED</h2>
+            <p>Cada parte de um XML corresponde a um registro (linha) ou a um campo específico no arquivo do SPED.</p>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Informação no XML da NF-e</th>
+                            <th>Registro Correspondente no SPED Fiscal</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Dados gerais da nota (número, data, valor)</td>
+                            <td><strong>Registro C100</strong> (Dados do Documento Fiscal)</td>
+                        </tr>
+                        <tr>
+                            <td>Itens da nota (produtos, CFOP, valores)</td>
+                            <td><strong>Registro C170</strong> (Itens do Documento)</td>
+                        </tr>
+                        <tr>
+                            <td>Valores de impostos por item</td>
+                            <td><strong>Registro C190</strong> (Registro Analítico do Documento)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="attention-block">
+                <h3>🔴 Atenção: A Fonte da Verdade é o XML</h3>
+                <p>O Fisco possui todos os XMLs que foram autorizados. Ao receber o seu SPED Fiscal, o sistema da Receita Federal cruza as informações. Se o valor de uma nota no seu SPED (Registro C100) for diferente do valor no XML autorizado, a escrituração será considerada inválida, gerando uma notificação de erro. Não há como esconder uma operação ou alterar um valor; a conciliação deve ser perfeita.</p>
+            </div>
+        </div>
+
+        <div class="procedure-block">
+            <h3>⚙️ Procedimento: Passos para uma Conciliação Eficaz</h3>
+            <ol>
+                <li><strong>Garanta o Repositório de XMLs:</strong> O primeiro passo é ter um sistema que armazene de forma segura e organizada todos os XMLs de entrada e saída do mês.</li>
+                <li><strong>Importação para o Sistema Fiscal:</strong> O seu sistema fiscal/contábil deve importar os dados diretamente desses XMLs para gerar os registros do SPED. Evite digitação manual a todo custo, pois ela é a principal fonte de erros.</li>
+                <li><strong>Relatórios de Conferência:</strong> Antes de gerar o arquivo final do SPED, emita relatórios de conferência. Compare o somatório do valor contábil e dos impostos das NF-e no seu sistema com o totalizador do livro de saídas/entradas.</li>
+                <li><strong>Validação no PVA:</strong> Sempre passe o arquivo .txt gerado pelo seu sistema no PVA (Programa Validador e Assinador) do SPED. O PVA aponta erros de estrutura e algumas inconsistências de dados que devem ser corrigidas antes da transmissão.</li>
+            </ol>
+        </div>
+
+        <div class="tip-block">
+            <h3>✅ Dica de Estudo</h3>
+            <p>Aprenda a ler o arquivo .txt do SPED. Abra-o em um editor de texto e familiarize-se com os principais registros (C100, C170, C190, 0200 - Tabela de Itens). Ser capaz de localizar uma nota ou um produto diretamente no arquivo de texto é uma habilidade avançada que pode economizar horas na resolução de problemas de validação.</p>
+        </div>
+    </div>
+</div>
+
+<!-- Capítulo 16: Checklists e POPs -->
+<div class="chapter" id="chapter-16">
+    <div class="chapter-header">
+        <h1 class="chapter-title">Capítulo 16: Checklists e POPs — Padronizando a Excelência</h1>
+    </div>
+    <div class="chapter-content">
+        <div class="content-block">
+            <p>A complexidade da área fiscal exige organização e método. Erros por esquecimento ou falta de padronização são comuns e custam caro. A melhor maneira de mitigar esses riscos é através da criação de Checklists (listas de verificação) e POPs (Procedimentos Operacionais Padrão). Este capítulo fornece modelos práticos que você pode adaptar para a realidade da sua empresa, transformando tarefas complexas em processos seguros e repetíveis.</p>
+        </div>
+
+        <div class="procedure-block">
+            <h3>⚙️ POP 1: Checklist para Emissão de NF-e de Venda</h3>
+            <p><strong>Objetivo:</strong> Garantir que toda NF-e de venda seja emitida sem erros que possam causar rejeição ou problemas fiscais futuros.</p>
+            <p><strong>Frequência:</strong> A cada emissão de NF-e de venda.</p>
+            <ol>
+                <li><strong>[ ] Cadastro do Cliente:</strong> O CNPJ/CPF e a Inscrição Estadual do destinatário foram validados no SINTEGRA ou no Cadastro Centralizado de Contribuintes (CCC)? O endereço está completo e correto?</li>
+                <li><strong>[ ] Cadastro do Produto:</strong> O NCM do produto está correto? O CEST foi informado (se aplicável)? O GTIN (código de barras) foi preenchido?</li>
+                <li><strong>[ ] CFOP e Natureza da Operação:</strong> O CFOP corresponde à operação (venda, bonificação, etc.) e à localidade (interno/interestadual)? A Natureza da Operação descreve corretamente o CFOP?</li>
+                <li><strong>[ ] Tributação do ICMS:</strong> O CST/CSOSN está correto para o regime da empresa e a natureza do produto? A alíquota e a base de cálculo foram aplicadas corretamente?</li>
+                <li><strong>[ ] ICMS-ST/DIFAL:</strong> A operação exige cálculo de ST ou DIFAL? Se sim, os cálculos foram feitos e os campos específicos (vBCST, vICMSST, vICMSUFDest) foram preenchidos?</li>
+                <li><strong>[ ] PIS/COFINS:</strong> O CST de PIS/COFINS está correto? As bases e alíquotas estão de acordo com o regime da empresa (cumulativo/não cumulativo)?</li>
+                <li><strong>[ ] Informações Adicionais:</strong> É necessário incluir alguma informação de interesse do fisco ou do cliente no campo &lt;infAdic&gt; (ex: número do pedido, dados de um processo)?</li>
+                <li><strong>[ ] Conferência Final:</strong> O valor total dos produtos bate com o valor total da nota? O valor do pagamento corresponde ao total da nota?</li>
+            </ol>
+        </div>
+
+        <div class="procedure-block">
+            <h3>⚙️ POP 2: Checklist para Recebimento e Escrituração de NF-e de Compra</h3>
+            <p><strong>Objetivo:</strong> Garantir que apenas notas fiscais válidas e corretas sejam aceitas e escrituradas, assegurando a legitimidade dos créditos fiscais.</p>
+            <p><strong>Frequência:</strong> Diariamente, para todas as notas recebidas.</p>
+            <ol>
+                <li><strong>[ ] Validade do XML:</strong> O arquivo XML foi recebido? Ele possui assinatura digital válida e protocolo de autorização da SEFAZ?</li>
+                <li><strong>[ ] Manifestação do Destinatário:</strong> O evento de "Ciência da Emissão" foi registrado para permitir o download do XML? Após a conferência física, o evento de "Confirmação da Operação" foi registrado?</li>
+                <li><strong>[ ] Divergências Físicas vs. Fiscal:</strong> A quantidade e a descrição dos produtos recebidos fisicamente correspondem ao que está no XML?</li>
+                <li><strong>[ ] Dados do Documento:</strong> O CNPJ do destinatário é o da sua empresa? O CFOP de entrada está correto (ex: 1.102 para compra, 1.556 para material de consumo)?</li>
+                <li><strong>[ ] Crédito de Impostos:</strong> Os valores de ICMS e IPI destacados na nota são passíveis de crédito para a sua empresa? A alíquota está correta?</li>
+                <li><strong>[ ] Lançamento no Sistema:</strong> A nota foi importada para o sistema fiscal a partir do XML, sem digitação manual?</li>
+                <li><strong>[ ] Arquivamento:</strong> O arquivo XML foi salvo no repositório seguro da empresa?</li>
+            </ol>
+        </div>
+
+        <div class="tip-block">
+            <h3>✅ Dica de Estudo</h3>
+            <p>Transforme estes checklists em formulários (digitais ou em papel) e incorpore-os à rotina oficial do seu departamento. A disciplina de seguir um POP reduz a carga cognitiva do analista, liberando tempo mental para focar em tarefas mais analíticas e menos operacionais. Além disso, serve como uma excelente ferramenta de treinamento para novos membros da equipe.</p>
+        </div>
+    </div>
+</div>
+
+<!-- Capítulo 17: Erros Frequentes -->
+<div class="chapter" id="chapter-17">
+    <div class="chapter-header">
+        <h1 class="chapter-title">Capítulo 17: Erros Frequentes — Como Evitar Problemas Comuns</h1>
+    </div>
+    <div class="chapter-content">
+        <div class="content-block">
+            <p>A experiência na área fiscal muitas vezes é construída sobre os erros que cometemos e aprendemos a corrigir. Este capítulo é um atalho: ele compila os erros mais comuns que analistas fiscais, especialmente os que estão começando, cometem no dia a dia. Conhecer esses pontos de falha antecipadamente é a melhor forma de evitá-los.</p>
+        </div>
+
+        <div class="attention-block">
+            <h3>❌ Erro 1: Confundir o Tomador do Serviço no CT-e</h3>
+            <p><strong>O Erro:</strong> A empresa contrata e paga por um frete (frete FOB, onde o destinatário é o tomador), mas a transportadora emite o CT-e com o remetente como tomador. 
+            <strong>A Consequência:</strong> A sua empresa, que pagou pelo frete, perde o direito de se creditar do ICMS sobre o transporte, pois, para o Fisco, o responsável pelo pagamento foi o remetente. Isso representa uma perda financeira direta.</p>
+        </div>
+
+        <div class="attention-block">
+            <h3>❌ Erro 2: Não Encerrar o MDF-e</h3>
+            <p><strong>O Erro:</strong> O motorista finaliza a entrega, mas o setor de logística esquece de registrar o evento de "Encerramento" do MDF-e.
+            <strong>A Consequência:</strong> O caminhão fica com a placa "travada" no sistema da SEFAZ, impedido de iniciar uma nova viagem. A operação da empresa fica parada por um erro administrativo simples, gerando atrasos e custos.</p>
+        </div>
+
+        <div class="attention-block">
+            <h3>❌ Erro 3: Tentar Corrigir Erros Graves com Carta de Correção (CC-e)</h3>
+            <p><strong>O Erro:</strong> O analista percebe que o valor do ICMS foi calculado errado em uma NF-e já autorizada e tenta emitir uma CC-e para corrigir o valor.
+            <strong>A Consequência:</strong> A CC-e será autorizada, mas ela não tem validade jurídica para alterar valores de impostos. Em uma fiscalização, o Fisco irá desconsiderar a carta de correção e autuar a empresa pela diferença de imposto não recolhido. O correto seria cancelar a nota (se no prazo) ou emitir uma NF-e complementar.</p>
+        </div>
+
+        <div class="attention-block">
+            <h3>❌ Erro 4: Errar o Local de Prestação do Serviço na NFS-e</h3>
+            <p><strong>O Erro:</strong> Uma empresa de consultoria de São Paulo presta um serviço presencial nas instalações de um cliente em Belo Horizonte, mas emite a NFS-e informando o local de prestação como São Paulo.
+            <strong>A Consequência:</strong> O ISS foi recolhido para o município errado (SP). A prefeitura de Belo Horizonte, que é a credora correta do imposto, pode autuar a empresa e cobrar o ISS novamente, com multa e juros. A empresa terá que pagar duas vezes e depois tentar reaver o valor pago indevidamente a SP, um processo burocrático e demorado.</p>
+        </div>
+
+        <div class="attention-block">
+            <h3>❌ Erro 5: Não Fazer a Manifestação das Notas de Entrada</h3>
+            <p><strong>O Erro:</strong> A empresa não tem o processo de manifestar as NF-e que recebe de seus fornecedores.
+            <strong>A Consequência:</strong> A empresa fica vulnerável a fraudes. Uma empresa fantasma pode emitir uma "nota fria" de valor alto contra o CNPJ da sua empresa. Sem o evento de "Desconhecimento da Operação", o Fisco assume que a operação foi legítima, e sua empresa pode ser cobrada por uma obrigação que não é sua. Além disso, sem o evento de "Ciência da Emissão", não é possível baixar o XML do portal nacional.</p>
+        </div>
+
+        <div class="tip-block">
+            <h3>✅ Dica de Estudo</h3>
+            <p>Crie um "mural de erros" no seu departamento. Sempre que um erro novo acontecer, documente-o, explique a causa e a solução correta. Transforme cada falha em uma lição aprendida para toda a equipe. Essa cultura de aprendizado contínuo é o que forma profissionais de excelência.</p>
+        </div>
+    </div>
+</div>
+
+<!-- Capítulo 18: Mudanças 2024-2026 -->
             <div class="chapter" id="chapter-18">
                 <div class="chapter-header">
                     <h1 class="chapter-title">Capítulo 18: Mudanças 2024–2026: CRT-MEI, QR-Code v3 e a Reforma Tributária (RTC)</h1>
