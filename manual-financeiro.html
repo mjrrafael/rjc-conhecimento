@@ -1,0 +1,2217 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manual Profissional de Gestão Financeira Empresarial - Módulo 2</title>
+    <style>
+        /* Reset e configurações básicas */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Variáveis CSS para cores RJC */
+        :root {
+            --rjc-azul-principal: #1e3a8a;
+            --rjc-azul-secundario: #3b82f6;
+            --rjc-azul-claro: #60a5fa;
+            --rjc-laranja: #f97316;
+            --rjc-roxo: #7c3aed;
+            --rjc-verde: #16a34a;
+            --rjc-vermelho: #dc2626;
+            --rjc-branco: #ffffff;
+            --rjc-cinza-claro: #f8fafc;
+            --rjc-cinza-medio: #64748b;
+            --rjc-cinza-escuro: #334155;
+            --rjc-gradiente: linear-gradient(135deg, var(--rjc-azul-principal) 0%, var(--rjc-azul-secundario) 100%);
+        }
+
+        /* Tipografia */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--rjc-cinza-escuro);
+            background-color: var(--rjc-cinza-claro);
+        }
+
+        /* Container principal */
+        .container {
+            max-width: 210mm; /* A4 width */
+            margin: 0 auto;
+            background: var(--rjc-branco);
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            min-height: 100vh;
+        }
+
+        /* Cabeçalho */
+        .header {
+            background: var(--rjc-gradiente);
+            color: var(--rjc-branco);
+            padding: 2rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M 10 0 L 0 0 0 10" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="0.5"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)"/></svg>');
+            opacity: 0.3;
+        }
+
+        .logo-container {
+            position: relative;
+            z-index: 2;
+            margin-bottom: 1rem;
+        }
+
+        .logo-placeholder {
+            width: 200px;
+            height: 80px;
+            background: rgba(255,255,255,0.2);
+            border: 2px dashed rgba(255,255,255,0.5);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto;
+            font-size: 0.9rem;
+            color: rgba(255,255,255,0.8);
+        }
+
+        .title {
+            position: relative;
+            z-index: 2;
+        }
+
+        .title h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            font-weight: 400;
+            opacity: 0.9;
+            margin-bottom: 0.5rem;
+        }
+
+        .version {
+            font-size: 1rem;
+            opacity: 0.8;
+            font-style: italic;
+        }
+
+        /* Navegação/Índice */
+        .nav-container {
+            background: var(--rjc-branco);
+            border-bottom: 3px solid var(--rjc-azul-principal);
+            padding: 1rem 2rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .nav-title {
+            color: var(--rjc-azul-principal);
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .nav-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .nav-link {
+            color: var(--rjc-cinza-medio);
+            text-decoration: none;
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            transition: all 0.3s ease;
+            font-size: 0.9rem;
+            cursor: pointer;
+            display: inline-block;
+        }
+
+        .nav-link:hover {
+            background: var(--rjc-azul-claro);
+            color: var(--rjc-branco);
+            transform: translateY(-2px);
+        }
+
+        /* Conteúdo principal */
+        .content {
+            padding: 2rem;
+        }
+
+        /* Seções */
+        .section {
+            margin-bottom: 3rem;
+            page-break-inside: avoid;
+        }
+
+        .section-header {
+            background: var(--rjc-gradiente);
+            color: var(--rjc-branco);
+            padding: 1.5rem;
+            border-radius: 12px 12px 0 0;
+            margin-bottom: 0;
+        }
+
+        .section-title {
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+
+        .section-subtitle {
+            font-size: 1rem;
+            opacity: 0.9;
+        }
+
+        .section-content {
+            background: var(--rjc-branco);
+            border: 1px solid #e2e8f0;
+            border-top: none;
+            border-radius: 0 0 12px 12px;
+            padding: 2rem;
+        }
+
+        /* Módulos */
+        .module {
+            background: var(--rjc-branco);
+            border: 1px solid #e2e8f0;
+            border-radius: 12px;
+            margin-bottom: 2rem;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            transition: all 0.3s ease;
+        }
+
+        .module:hover {
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+            transform: translateY(-2px);
+        }
+
+        .module-header {
+            background: var(--rjc-azul-principal);
+            color: var(--rjc-branco);
+            padding: 1.2rem;
+            position: relative;
+        }
+
+        .module-number {
+            background: var(--rjc-laranja);
+            color: var(--rjc-branco);
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 1.1rem;
+            position: absolute;
+            top: -10px;
+            right: 1.2rem;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+
+        .module-title {
+            font-size: 1.4rem;
+            font-weight: 600;
+            margin-bottom: 0.3rem;
+            padding-right: 60px;
+        }
+
+        .module-description {
+            font-size: 0.95rem;
+            opacity: 0.9;
+            padding-right: 60px;
+        }
+
+        .module-content {
+            padding: 1.5rem;
+        }
+
+        /* Blocos de conteúdo */
+        .content-block {
+            background: var(--rjc-cinza-claro);
+            border-left: 4px solid var(--rjc-azul-secundario);
+            padding: 1.2rem;
+            margin: 1rem 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .content-block.why {
+            border-left-color: var(--rjc-verde);
+        }
+
+        .content-block.what {
+            border-left-color: var(--rjc-laranja);
+        }
+
+        .content-block.how {
+            border-left-color: var(--rjc-roxo);
+        }
+
+        .block-title {
+            font-weight: 600;
+            color: var(--rjc-azul-principal);
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+        }
+
+        /* Tabelas */
+        .table-container {
+            overflow-x: auto;
+            margin: 1.5rem 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: var(--rjc-branco);
+        }
+
+        th {
+            background: var(--rjc-azul-principal);
+            color: var(--rjc-branco);
+            padding: 1rem;
+            text-align: left;
+            font-weight: 600;
+        }
+
+        td {
+            padding: 0.8rem 1rem;
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        tr:nth-child(even) {
+            background: var(--rjc-cinza-claro);
+        }
+
+        tr:hover {
+            background: rgba(59, 130, 246, 0.1);
+        }
+
+        /* Listas */
+        ul, ol {
+            margin: 1rem 0;
+            padding-left: 2rem;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+        }
+
+        /* Exercícios */
+        .exercise {
+            background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+            border: 1px solid #f59e0b;
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .exercise-title {
+            color: #92400e;
+            font-weight: 700;
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .exercise-title::before {
+            content: "📝";
+            font-size: 1.5rem;
+        }
+
+        /* Gabaritos */
+        .gabarito {
+            background: linear-gradient(135deg, #d1fae5 0%, #a7f3d0 100%);
+            border: 1px solid var(--rjc-verde);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin: 1rem 0;
+        }
+
+        .gabarito-title {
+            color: #065f46;
+            font-weight: 700;
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .gabarito-title::before {
+            content: "✅";
+            font-size: 1.3rem;
+        }
+
+        /* Diagramas */
+        .diagram {
+            background: var(--rjc-branco);
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            padding: 1rem;
+            margin: 1.5rem 0;
+            text-align: center;
+            font-family: monospace;
+            color: var(--rjc-azul-principal);
+        }
+
+        /* Códigos */
+        code {
+            background: var(--rjc-cinza-claro);
+            padding: 0.2rem 0.4rem;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9rem;
+            color: var(--rjc-azul-principal);
+        }
+
+        pre {
+            background: var(--rjc-cinza-escuro);
+            color: var(--rjc-branco);
+            padding: 1rem;
+            border-radius: 8px;
+            overflow-x: auto;
+            margin: 1rem 0;
+        }
+
+        /* Rodapé */
+        .footer {
+            background: var(--rjc-azul-principal);
+            color: var(--rjc-branco);
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+        }
+
+        .footer-content {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .footer h3 {
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+
+        .footer p {
+            opacity: 0.9;
+            line-height: 1.8;
+        }
+
+        /* Numeração de páginas */
+        .page-number {
+            position: fixed;
+            bottom: 20px;
+            right: 30px;
+            background: var(--rjc-azul-principal);
+            color: var(--rjc-branco);
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+            z-index: 1000;
+        }
+
+        /* Sumário */
+        .toc {
+            background: var(--rjc-cinza-claro);
+            border: 1px solid #e2e8f0;
+            border-radius: 12px;
+            padding: 2rem;
+            margin: 2rem 0;
+        }
+
+        .toc h3 {
+            color: var(--rjc-azul-principal);
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+
+        .toc ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .toc li {
+            margin-bottom: 0.3rem;
+        }
+
+        .toc a {
+            color: var(--rjc-cinza-escuro);
+            text-decoration: none;
+            padding: 0.3rem 0;
+            display: block;
+            transition: color 0.3s ease;
+        }
+
+        .toc a:hover {
+            color: var(--rjc-azul-principal);
+        }
+
+        .toc .part {
+            font-weight: 600;
+            color: var(--rjc-azul-principal);
+            margin-top: 1rem;
+        }
+
+        .toc .module {
+            padding-left: 1rem;
+            font-size: 0.95rem;
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            .container {
+                max-width: 100%;
+                margin: 0;
+            }
+            
+            .header {
+                padding: 1.5rem 1rem;
+            }
+            
+            .title h1 {
+                font-size: 2rem;
+            }
+            
+            .content {
+                padding: 1rem;
+            }
+            
+            .nav-links {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+            
+            .module-number {
+                position: static;
+                margin-bottom: 1rem;
+            }
+            
+            .module-title,
+            .module-description {
+                padding-right: 0;
+            }
+        }
+
+        /* Impressão */
+        @media print {
+            .nav-container {
+                position: static;
+            }
+            
+            .page-number {
+                position: static;
+                display: inline-block;
+                margin-top: 1rem;
+            }
+            
+            .module {
+                page-break-inside: avoid;
+            }
+            
+            .section {
+                page-break-inside: avoid;
+            }
+        }
+
+        /* Animações */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .module {
+            animation: fadeInUp 0.6s ease-out;
+        }
+
+        /* Utilitários */
+        .text-center { text-align: center; }
+        .text-justify { text-align: justify; }
+        .mb-1 { margin-bottom: 0.5rem; }
+        .mb-2 { margin-bottom: 1rem; }
+        .mb-3 { margin-bottom: 1.5rem; }
+        .mt-1 { margin-top: 0.5rem; }
+        .mt-2 { margin-top: 1rem; }
+        .mt-3 { margin-top: 1.5rem; }
+        .font-bold { font-weight: 700; }
+        .font-semibold { font-weight: 600; }
+        .text-sm { font-size: 0.9rem; }
+        .text-lg { font-size: 1.1rem; }
+        .text-xl { font-size: 1.3rem; }
+    </style>
+</head>
+<body>
+    <!-- Container principal -->
+    <div class="container">
+        <!-- Cabeçalho -->
+        <header class="header">
+
+            <div class="title">
+                <h1>MANUAL PROFISSIONAL DE GESTÃO FINANCEIRA EMPRESARIAL</h1>
+                <div class="subtitle">Módulo 2 — Do Zero ao Pleno</div>
+                <div class="subtitle">Curso completo para Departamento Financeiro (Comércio, Serviços e Indústria)</div>
+                <div class="version">Edição Didática Completa • v4.1</div>
+            </div>
+        </header>
+
+        <!-- Navegação -->
+        <nav class="nav-container">
+            <div class="nav-title">Navegação Rápida</div>
+            <div class="nav-links">
+                <a href="./index.html" class="nav-link" onclick="window.location.href='index.html'; return false;">← Voltar ao Índice</a>
+                <a href="#como-usar" class="nav-link">Como Usar</a>
+                <a href="#sumario" class="nav-link">Sumário</a>
+                <a href="#parte-1" class="nav-link">Fundamentos</a>
+                <a href="#parte-2" class="nav-link">Tesouraria</a>
+                <a href="#parte-3" class="nav-link">Controladoria</a>
+                <a href="#parte-4" class="nav-link">Playbooks</a>
+                <a href="#parte-5" class="nav-link">Casos Práticos</a>
+                <a href="#apendices" class="nav-link">Apêndices</a>
+            </div>
+        </nav>
+
+        <!-- Conteúdo principal -->
+        <main class="content">
+
+
+            <!-- Como usar este manual -->
+            <section id="como-usar" class="section">
+                <div class="section-header">
+                    <h2 class="section-title">Como usar este manual</h2>
+                    <p class="section-subtitle">Guia de navegação por perfil profissional</p>
+                </div>
+                <div class="section-content">
+                    <div class="table-container">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Perfil</th>
+                                    <th>Foco de Leitura</th>
+                                    <th>Seções Prioritárias</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>Empresários</strong></td>
+                                    <td>Leia os <strong>porquês</strong> (racional de gestão), valide políticas e cobre rituais</td>
+                                    <td>M1, M2, M8, M9, M11, M12, M13</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Analistas/Operadores</strong></td>
+                                    <td>Siga os <strong>SOPs</strong> passo a passo, utilize os <strong>modelos de planilha</strong> e <strong>checklists</strong></td>
+                                    <td>M5, M6, M7, M8, M18</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Gestores (Controller/CFO)</strong></td>
+                                    <td>Aplique <strong>KPIs, orçamento/forecast, DRE</strong>, <strong>fechamento D+3</strong> e ritos de performance</td>
+                                    <td>Todos os módulos</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Todos os perfis</strong></td>
+                                    <td>Cada módulo traz <strong>exercícios</strong> e <strong>gabaritos</strong> para fixação</td>
+                                    <td>M17 (Casos Práticos)</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Sumário -->
+            <section id="sumario" class="section">
+                <div class="section-header">
+                    <h2 class="section-title">SUMÁRIO</h2>
+                    <p class="section-subtitle">Estrutura completa do manual</p>
+                </div>
+                <div class="section-content">
+                    <div class="toc">
+                        <div class="part">PARTE I — Fundamentos & Governança</div>
+                        <ul>
+                            <li class="module"><a href="#m1">M1. Arquitetura do Departamento Financeiro</a></li>
+                            <li class="module"><a href="#m2">M2. Políticas & Normas</a></li>
+                            <li class="module"><a href="#m3">M3. Integração Fiscal ↔ Financeiro</a></li>
+                            <li class="module"><a href="#m4">M4. Implantação em 12 Semanas</a></li>
+                        </ul>
+
+                        <div class="part">PARTE II — Tesouraria & Operações</div>
+                        <ul>
+                            <li class="module"><a href="#m5">M5. Contas a Receber (CR)</a></li>
+                            <li class="module"><a href="#m6">M6. Contas a Pagar (CP)</a></li>
+                            <li class="module"><a href="#m7">M7. Conciliação Bancária Plena</a></li>
+                            <li class="module"><a href="#m8">M8. Fluxo de Caixa & Capital de Giro</a></li>
+                            <li class="module"><a href="#m8a">M8A. Provisões, NCG e Orquestração do Financeiro</a></li>
+                        </ul>
+
+                        <div class="part">PARTE III — Controladoria & Análise</div>
+                        <ul>
+                            <li class="module"><a href="#m9">M9. DRE Gerencial por Grupos</a></li>
+                            <li class="module"><a href="#m10">M10. CMV/CPV/CSP, Preço e Margens</a></li>
+                            <li class="module"><a href="#m11">M11. Orçamento (Budget) & Forecast</a></li>
+                            <li class="module"><a href="#m12">M12. KPIs & Rotina de Performance</a></li>
+                            <li class="module"><a href="#m13">M13. Fechamentos (D+3)</a></li>
+                        </ul>
+
+                        <div class="part">PARTE IV — Playbooks por Setor</div>
+                        <ul>
+                            <li class="module"><a href="#m14">M14. Comércio</a></li>
+                            <li class="module"><a href="#m15">M15. Serviços</a></li>
+                            <li class="module"><a href="#m16">M16. Indústria</a></li>
+                        </ul>
+
+                        <div class="part">PARTE V — Casos, Exercícios & Ferramentas</div>
+                        <ul>
+                            <li class="module"><a href="#m17">M17. Casos Práticos Integrados</a></li>
+                            <li class="module"><a href="#m18">M18. Modelos, Planilhas & Checklists</a></li>
+                        </ul>
+
+                        <div class="part">APÊNDICES</div>
+                        <ul>
+                            <li class="module"><a href="#apendice-a">A. Fórmulas Excel/Sheets</a></li>
+                            <li class="module"><a href="#apendice-b">B. Glossário</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- PARTE I - Fundamentos & Governança -->
+            <section id="parte-1" class="section">
+                <div class="section-header">
+                    <h2 class="section-title">PARTE I — Fundamentos & Governança</h2>
+                    <p class="section-subtitle">Base estrutural para um departamento financeiro eficaz</p>
+                </div>
+                <div class="section-content">
+                    <!-- M1. Arquitetura do Departamento Financeiro -->
+                    <div id="m1" class="module">
+                        <div class="module-header">
+                            <div class="module-number">M1</div>
+                            <h3 class="module-title">Arquitetura do Departamento Financeiro</h3>
+                            <p class="module-description">Estruturação organizacional, papéis, responsabilidades e controles internos</p>
+                        </div>
+                        <div class="module-content">
+                            <div class="content-block why">
+                                <div class="block-title">Por que é importante</div>
+                                <p>Sem papéis claros e trilha de auditoria, aumentam erros, fraudes e atrasos. Boa arquitetura reduz riscos e acelera decisões.</p>
+                            </div>
+                            
+                            <div class="content-block what">
+                                <div class="block-title">O que implementar</div>
+                                <p>Organograma mínimo; responsabilidades; RACI; segregação de funções; alçadas de aprovação; trilha documental.</p>
+                            </div>
+                            
+                            <div class="content-block how">
+                                <div class="block-title">Como fazer (SOP)</div>
+                                <ol>
+                                    <li><strong>Organograma mínimo:</strong> Tesouraria; Contas a Receber; Contas a Pagar; Faturamento/Cobrança; Controladoria; Interface Fiscal/Contábil.</li>
+                                    <li><strong>RACI oficial:</strong> publique em manual interno e revise semestralmente.</li>
+                                    <li><strong>Trilha de auditoria:</strong> toda baixa (CR/CP) com comprovante anexo; versionamento; retenção por 5 anos.</li>
+                                    <li><strong>Alçadas e segregação:</strong> quem <strong>lança</strong> não <strong>aprova</strong>; quem <strong>aprova</strong> não <strong>executa</strong>; quem <strong>concilia</strong> não <strong>lança</strong>.</li>
+                                </ol>
+                            </div>
+
+                            <h4 class="mt-3 mb-2 font-semibold">Matriz RACI (exemplo "slim")</h4>
+                            <div class="table-container">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Processo</th>
+                                            <th>Responsável (R)</th>
+                                            <th>Aprovador (A)</th>
+                                            <th>Consultado (C)</th>
+                                            <th>Informado (I)</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>CR – Emissão/Baixa</td>
+                                            <td>Analista CR</td>
+                                            <td>Gerente Fin.</td>
+                                            <td>Vendas, Contábil</td>
+                                            <td>Diretoria</td>
+                                        </tr>
+                                        <tr>
+                                            <td>CP – Registro/Pagamento</td>
+                                            <td>Analista CP</td>
+                                            <td>Gerente Fin.</td>
+                                            <td>Compras, Contábil</td>
+                                            <td>Diretoria</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Conciliação Bancária</td>
+                                            <td>Tesouraria</td>
+                                            <td>Gerente Fin.</td>
+                                            <td>Contábil</td>
+                                            <td>Diretoria</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Orçamento & DRE</td>
+                                            <td>Controller</td>
+                                            <td>CFO/Diretor</td>
+                                            <td>Áreas</td>
+                                            <td>Diretoria</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <h4 class="mt-3 mb-2 font-semibold">Matriz de Aprovação (pagamentos)</h4>
+                            <div class="table-container">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Faixa de Valor</th>
+                                            <th>Aprovador 1</th>
+                                            <th>Aprovador 2</th>
+                                            <th>Documentos Obrigatórios</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Até R$ 1.000</td>
+                                            <td>Analista</td>
+                                            <td>—</td>
+                                            <td>NF + Pedido</td>
+                                        </tr>
+                                        <tr>
+                                            <td>R$ 1.001–5.000</td>
+                                            <td>Coord. Financeiro</td>
+                                            <td>—</td>
+                                            <td>NF + Pedido + Aprovação</td>
+                                        </tr>
+                                        <tr>
+                                            <td>R$ 5.001–20.000</td>
+                                            <td>Gerente Financeiro</td>
+                                            <td>—</td>
+                                            <td>NF + Pedido + Contrato</td>
+                                        </tr>
+                                        <tr>
+                                            <td>R$ 20.001–50.000</td>
+                                            <td>Diretor Financeiro</td>
+                                            <td>—</td>
+                                            <td>NF + Pedido + Contrato + Orçamento</td>
+                                        </tr>
+                                        <tr>
+                                            <td>> R$ 50.000</td>
+                                            <td>Diretor Fin.</td>
+                                            <td>Diretor Geral</td>
+                                            <td>NF + Pedido + Contrato + Orçamento + Ata</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- M2. Políticas & Normas -->
+                    <div id="m2" class="module">
+                        <div class="module-header">
+                            <div class="module-number">M2</div>
+                            <h3 class="module-title">Políticas & Normas</h3>
+                            <p class="module-description">Estabelecimento de diretrizes para crédito, cobrança, pagamentos e controles</p>
+                        </div>
+                        <div class="module-content">
+                            <div class="content-block why">
+                                <div class="block-title">Por que é importante</div>
+                                <p>Políticas reduzem decisões ad hoc e garantem consistência/compliance.</p>
+                            </div>
+                            
+                            <div class="content-block what">
+                                <div class="block-title">O que implementar</div>
+                                <p>Crédito, cobrança, pagamentos, adiantamentos/reembolsos, petty cash, retenções.</p>
+                            </div>
+                            
+                            <div class="content-block how">
+                                <div class="block-title">Como fazer (SOP)</div>
+                                <ol>
+                                    <li><strong>Crédito:</strong> critérios cadastrais e score; limites por rating; revisão trimestral.</li>
+                                    <li><strong>Cobrança:</strong> cronograma — D−3 lembrete; D+1 contato; D+5 aviso; D+15 protesto/negociação; D+30 jurídico.</li>
+                                    <li><strong>Pagamentos:</strong> janelas semanais; níveis de aprovação; <strong>proibido pagar</strong> sem NF/contrato/recebimento.</li>
+                                    <li><strong>Adiantamentos/Reembolsos:</strong> formulário; comprovantes; prazo D+5; centro de custo.</li>
+                                    <li><strong>Retenções (serviços):</strong> checar <strong>IRRF/INSS/PIS/COFINS/CSLL/ISS</strong> na entrada/saída.</li>
+                                </ol>
+                            </div>
+
+                            <h4 class="mt-3 mb-2 font-semibold">Linha do tempo de cobrança</h4>
+                            <div class="diagram">
+                                <pre>
+D-3: Lembrete automático (e-mail/SMS)
+ ↓
+D+1: Ligação cordial
+ ↓
+D+5: Aviso formal + 2ª via
+ ↓
+D+15: Protesto/Negociação
+ ↓
+D+30: Encaminhar ao jurídico
+                                </pre>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- M3. Integração Fiscal ↔ Financeiro -->
+                    <div id="m3" class="module">
+                        <div class="module-header">
+                            <div class="module-number">M3</div>
+                            <h3 class="module-title">Integração Fiscal ↔ Financeiro</h3>
+                            <p class="module-description">Sincronização entre operações fiscais e financeiras</p>
+                        </div>
+                        <div class="module-content">
+                            <div class="content-block why">
+                                <div class="block-title">Por que é importante</div>
+                                <p>Vendas/compras só "existem" quando têm reflexo <strong>financeiro</strong> e <strong>fiscal</strong> coerente.</p>
+                            </div>
+
+                            <p class="text-justify">
+                                <strong>Entrada (NF-e/NFS-e tomados):</strong> receber XML/PDF → conferir (CNPJ, itens, CFOP, NCM/CST/CSOSN, alíquotas, <strong>retenções</strong>) → <strong>CP</strong> registra título → Fiscal valida tributos/retidos → agenda pagamento → baixa + comprovante.
+                            </p>
+
+                            <p class="text-justify mt-2">
+                                <strong>Saída (NF-e/NFS-e prestados):</strong> pedido/contrato → faturar NF → <strong>CR</strong> cria títulos/parcelas → enviar boleto/PIX/cartão → Fiscal apura tributos (ICMS/ISS, PIS/COFINS etc.) → baixa e conciliação.
+                            </p>
+
+                            <h4 class="mt-3 mb-2 font-semibold">Fluxo de Saída (Vendas)</h4>
+                            <div class="diagram">
+                                <pre>
+Pedido aprovado → Faturar NF → Gerar títulos (CR) → Enviar cobrança → Recebimento → Baixa e Conciliação
+                                </pre>
+                            </div>
+
+                            <h4 class="mt-3 mb-2 font-semibold">Fluxo de Entrada (Compras)</h4>
+                            <div class="diagram">
+                                <pre>
+Receber NF Fornecedor → Conferência (pedido x NF) → Aprovação por alçada → Agendamento (borderô) → Pagamento → Baixa e Conciliação
+                                </pre>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- M4. Implantação em 12 Semanas -->
+                    <div id="m4" class="module">
+                        <div class="module-header">
+                            <div class="module-number">M4</div>
+                            <h3 class="module-title">Implantação em 12 Semanas</h3>
+                            <p class="module-description">Cronograma estruturado para implementação completa</p>
+                        </div>
+                        <div class="module-content">
+                            <div class="table-container">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Período</th>
+                                            <th>Fase</th>
+                                            <th>Atividades Principais</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Semanas 1–2</td>
+                                            <td>Diagnóstico</td>
+                                            <td>Mapear processos, cadastrar clientes/fornecedores/contas, ativar planilhas-base</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Semanas 3–4</td>
+                                            <td>Políticas</td>
+                                            <td>Publicar SOPs CR/CP; definir crédito/cobrança/pagamentos</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Semanas 5–6</td>
+                                            <td>Operação</td>
+                                            <td>Conciliação <strong>diária</strong>; aging CR/CP; cobrança sistemática</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Semanas 7–8</td>
+                                            <td>Controle</td>
+                                            <td>DRE gerencial; orçamento trimestral; KPIs (PMR, PMP, Ciclo de Caixa)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Semanas 9–10</td>
+                                            <td>Gestão</td>
+                                            <td>Dashboards; reuniões semanais; rituais de performance</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Semanas 11–12</td>
+                                            <td>Otimização</td>
+                                            <td>Playbooks setoriais; auditoria interna; ajustes finais</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- PARTE II - Tesouraria & Operações -->
+            <section id="parte-2" class="section">
+                <div class="section-header">
+                    <h2 class="section-title">PARTE II — Tesouraria & Operações</h2>
+                    <p class="section-subtitle">Gestão operacional do fluxo financeiro</p>
+                </div>
+                <div class="section-content">
+                    <!-- M5. Contas a Receber (CR) -->
+                    <div id="m5" class="module">
+                        <div class="module-header">
+                            <div class="module-number">M5</div>
+                            <h3 class="module-title">Contas a Receber (CR)</h3>
+                            <p class="module-description">Gestão eficiente da carteira de clientes e recebimentos</p>
+                        </div>
+                        <div class="module-content">
+                            <div class="content-block why">
+                                <div class="block-title">Por que é importante</div>
+                                <p>Venda sem recebimento = ilusão de receita. CR bem gerido <strong>financia o negócio</strong>.</p>
+                            </div>
+                            
+                            <div class="content-block what">
+                                <div class="block-title">O que implementar</div>
+                                <p>Títulos por parcela; aging; carteira por cliente; política de cobrança; agenda de cartões.</p>
+                            </div>
+                            
+                            <div class="content-block how">
+                                <div class="block-title">Como fazer (SOP detalhado)</div>
+                                <ol>
+                                    <li><strong>Faturar e gerar títulos:</strong> 1 título <strong>por parcela</strong> (1/3, 2/3…).</li>
+                                    <li><strong>Enviar instruções de pagamento:</strong> boleto/PIX/cartão + lembrete <strong>D−3</strong> (automático se possível).</li>
+                                    <li><strong>Acompanhar vencimentos:</strong> Relatório <strong>Aging</strong> (A vencer; 1–30; 31–60; 61–90; >90).</li>
+                                    <li><strong>Baixa:</strong> identificou no extrato? <strong>Baixa imediata</strong> (data/forma/conta) + comprovante.</li>
+                                    <li><strong>Cobrança escalonada:</strong> D+1 ligação cordial; D+5 aviso escrito; D+15 protesto/negociação (registrar tudo).</li>
+                                    <li><strong>Renegociações:</strong> simular fluxo (juros/desconto), formalizar termo, replanejar títulos, marcar "acordo".</li>
+                                    <li><strong>Cartões:</strong> manter agenda de <strong>recebíveis (D+30…)</strong>; registrar taxa em despesa financeira; avaliar antecipação com critério.</li>
+                                </ol>
+                            </div>
+
+                            <h4 class="mt-3 mb-2 font-semibold">Exemplo — Aging de CR</h4>
+                            <div class="table-container">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Cliente</th>
+                                            <th>Valor</th>
+                                            <th>Vencimento</th>
+                                            <th>Dias em Atraso</th>
+                                            <th>Faixa</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Cliente A</td>
+                                            <td>R$ 8.500</td>
+                                            <td>10/05/2025</td>
+                                            <td>—</td>
+                                            <td>A vencer</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Cliente B</td>
+                                            <td>R$ 12.300</td>
+                                            <td>25/04/2025</td>
+                                            <td>3</td>
+                                            <td>1–30</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Cliente C</td>
+                                            <td>R$ 6.750</td>
+                                            <td>02/04/2025</td>
+                                            <td>22</td>
+                                            <td>31–60</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Cliente D</td>
+                                            <td>R$ 15.200</td>
+                                            <td>12/03/2025</td>
+                                            <td>43</td>
+                                            <td>61–90</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Cliente E</td>
+                                            <td>R$ 9.500</td>
+                                            <td>20/12/2024</td>
+                                            <td>> 90</td>
+                                            <td>> 90 dias</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <p class="mt-3"><strong>KPIs CR:</strong> PMR (dias), % no prazo, % inadimplência (>30d), taxa de antecipação, concentração por cliente.</p>
+                            <p><strong>Erros comuns:</strong> baixar sem crédito no banco; esquecer retenções; não registrar acordos; ignorar agenda de cartões.</p>
+
+                            <div class="exercise">
+                                <div class="exercise-title">Exercício M5 — Renegociação</div>
+                                <p><strong>Situação:</strong></p>
+                                <ul>
+                                    <li>T1: R$ 10.000 — venc. 15/03 (30d atraso)</li>
+                                    <li>T2: R$ 15.000 — venc. 30/03 (15d atraso)</li>
+                                    <li>T3: R$ 8.000 — venc. 10/04 (a vencer)</li>
+                                </ul>
+                                <p><strong>Regras:</strong> juros 1% a.m.; desconto à vista 5%; parcelamento máx. 6x.</p>
+                            </div>
+
+                            <div class="gabarito">
+                                <div class="gabarito-title">Gabarito (resumo)</div>
+                                <ul>
+                                    <li><strong>À vista:</strong> R$ 32.062,50 (após atualização e desconto).</li>
+                                    <li><strong>6x:</strong> entrada 1/6 + 5 parcelas iguais (R$ 5.625).</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- M6. Contas a Pagar (CP) -->
+                    <div id="m6" class="module">
+                        <div class="module-header">
+                            <div class="module-number">M6</div>
+                            <h3 class="module-title">Contas a Pagar (CP)</h3>
+                            <p class="module-description">Controle rigoroso de pagamentos e relacionamento com fornecedores</p>
+                        </div>
+                        <div class="module-content">
+                            <div class="content-block why">
+                                <div class="block-title">Por que é importante</div>
+                                <p>Pagar certo e no prazo evita multas, preserva reputação e otimiza custo do capital.</p>
+                            </div>
+                            
+                            <div class="content-block what">
+                                <div class="block-title">O que implementar</div>
+                                <p>Conferência tripla (pedido × NF × recebimento), alçadas, borderô, retenções e priorização.</p>
+                            </div>
+                            
+                            <div class="content-block how">
+                                <div class="block-title">Como fazer (SOP detalhado)</div>
+                                <ol>
+                                    <li><strong>Recebimento e verificação:</strong> centralizar faturas/NFs; conferir contrato, valores e recebimento.</li>
+                                    <li><strong>Aprovação interna:</strong> conforme matriz de alçadas; itens rotineiros podem ter aprovação prévia (orçamento).</li>
+                                    <li><strong>Registro no CP:</strong> fornecedor, doc, emissão, vencimento, valor, categoria e status.</li>
+                                    <li><strong>Planejamento:</strong> cronograma vs <strong>projeção de caixa</strong> (priorizar tributos/folha/serviços essenciais).</li>
+                                    <li><strong>Agendamento:</strong> programar pagamentos para o <strong>vencimento</strong>; montar <strong>borderô</strong>.</li>
+                                    <li><strong>Execução e baixa:</strong> efetivar, anexar comprovante e conciliar.</li>
+                                    <li><strong>Atrasos:</strong> agir rápido; pagar e registrar juros/multa (despesa financeira); notificar credor.</li>
+                                    <li><strong>Relatórios:</strong> aging de CP; por fornecedor; por categoria.</li>
+                                </ol>
+                            </div>
+
+                            <div class="exercise">
+                                <div class="exercise-title">Exercício M6 — Priorização</div>
+                                <p><strong>Caixa disponível:</strong> R$ 50.000</p>
+                                <p><strong>Pagamentos:</strong> ICMS 18k (hoje); Folha 22k (amanhã); Forn. A (crítico) 15k (D+3); Forn. B 12k (hoje); Energia 3,5k (hoje).</p>
+                            </div>
+
+                            <div class="gabarito">
+                                <div class="gabarito-title">Gabarito</div>
+                                <ol>
+                                    <li>ICMS 18.000</li>
+                                    <li>Folha 22.000</li>
+                                    <li>Energia 3.500</li>
+                                    <li>Forn. A <strong>parcial</strong> 6.500; B negociar prazo</li>
+                                </ol>
+                                <p><strong>Total:</strong> 50.000</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- M7. Conciliação Bancária Plena -->
+                    <div id="m7" class="module">
+                        <div class="module-header">
+                            <div class="module-number">M7</div>
+                            <h3 class="module-title">Conciliação Bancária Plena</h3>
+                            <p class="module-description">Garantia de integridade e controle do caixa</p>
+                        </div>
+                        <div class="module-content">
+                            <div class="content-block why">
+                                <div class="block-title">Por que é importante</div>
+                                <p>Garante <strong>integridade do caixa</strong>, detecta falhas/fraudes, evita "saldo ilusório".</p>
+                            </div>
+                            
+                            <div class="content-block what">
+                                <div class="block-title">O que implementar</div>
+                                <p>Bancos, cartões e caixa físico; diferenças típicas (tarifas, estornos, depósitos sem identificação).</p>
+                            </div>
+
+                            <div class="content-block how">
+                                <div class="block-title">Como fazer (SOP diário/mensal)</div>
+                                <ol>
+                                    <li>Importar extratos (CSV/OFX/PDF) do período.</li>
+                                    <li>Comparar com lançamentos internos (match automático + manual).</li>
+                                    <li>Ajustar diferenças (incluir tarifas/IOF/juros; estornar duplicidades; identificar depósitos).</li>
+                                    <li>Validar saldo final = extrato.</li>
+                                    <li>Conciliar <strong>cartões/PDV</strong> (vendas brutas → taxa → líquido recebido).</li>
+                                </ol>
+                            </div>
+
+                            <div class="content-block">
+                                <div class="block-title">Checklist diário</div>
+                                <p>Baixas CR/CP concluídas; posição de caixa emitida; pendências registradas.</p>
+                            </div>
+
+                            <div class="exercise">
+                                <div class="exercise-title">Exercício M7</div>
+                                <p>Concilie 5 diferenças (2 tarifas, 1 depósito sem identificação, 1 pagamento não efetivado, 1 estorno) e documente os ajustes.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- M8. Fluxo de Caixa & Capital de Giro -->
+                    <div id="m8" class="module">
+                        <div class="module-header">
+                            <div class="module-number">M8</div>
+                            <h3 class="module-title">Fluxo de Caixa & Capital de Giro</h3>
+                            <p class="module-description">Projeção e gestão estratégica da liquidez</p>
+                        </div>
+                        <div class="module-content">
+                            <div class="content-block why">
+                                <div class="block-title">Por que é importante</div>
+                                <p>Lucro não paga conta; <strong>caixa paga</strong>. Sem projeção, a empresa é pega de surpresa.</p>
+                            </div>
+                            
+                            <div class="content-block what">
+                                <div class="block-title">O que implementar</div>
+                                <p>Projeção <strong>13 semanas</strong> (rolling) + cenário <strong>12 meses</strong>; gatilhos e reservas.</p>
+                            </div>
+
+                            <p class="text-center font-bold text-lg mt-3">Ciclo de Caixa (CCC) = <span style="color: var(--rjc-azul-principal);">PMR + DIO − PMP</span></p>
+
+                            <h4 class="mt-3 mb-2 font-semibold">Fluxo do Ciclo de Caixa</h4>
+                            <div class="diagram">
+                                <pre>
+Compra/Estoque → Venda → Contas a Receber (PMR) → Caixa → Contas a Pagar (PMP) → Compra/Estoque
+                                </pre>
+                            </div>
+
+                            <div class="content-block">
+                                <div class="block-title">Planilha-modelo (13 semanas)</div>
+                                <ul>
+                                    <li><strong>Aba Fluxo_13W:</strong> Data | Saldo Inicial | Entradas Previstas | Saídas Previstas | Saldo Final | Observações</li>
+                                    <li><strong>Saldo Final:</strong> =[@Saldo Inicial]+[@Entradas]-[@Saídas]</li>
+                                    <li><strong>Semanas críticas:</strong> destaque saldo final < 0</li>
+                                </ul>
+                            </div>
+
+                            <div class="exercise">
+                                <div class="exercise-title">Exercício M8 — Projeção</div>
+                                <p><strong>Saldo inicial:</strong> R$ 80.000</p>
+                                <p><strong>Entradas/Saídas por 4 semanas:</strong></p>
+                                <ul>
+                                    <li>S1: +120.000 / −110.000</li>
+                                    <li>S2: +90.000 / −130.000</li>
+                                    <li>S3: +150.000 / −95.000</li>
+                                    <li>S4: +110.000 / −125.000</li>
+                                </ul>
+                            </div>
+
+                            <div class="gabarito">
+                                <div class="gabarito-title">Gabarito</div>
+                                <ul>
+                                    <li>S1: → <strong>90.000</strong></li>
+                                    <li>S2: → <strong>50.000</strong> (crítico)</li>
+                                    <li>S3: → <strong>105.000</strong></li>
+                                    <li>S4: → <strong>90.000</strong></li>
+                                </ul>
+                                <p><strong>Ação:</strong> Antecipar R$ 30 mil da S1 para cobrir S2.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- M8A. Provisões, NCG e Orquestração do Financeiro -->
+                    <div id="m8a" class="module">
+                        <div class="module-header">
+                            <div class="module-number">M8A</div>
+                            <h3 class="module-title">Provisões, NCG e Orquestração do Financeiro</h3>
+                            <p class="module-description">Gestão avançada de capital de giro e rituais financeiros</p>
+                        </div>
+                        <div class="module-content">
+                            <p class="text-justify">
+                                Capítulo adicional para fechar lacunas: <strong>provisionar</strong> (13º, férias, impostos, sazonalidade, capex), <strong>medir/planejar a NCG</strong> e <strong>orquestrar</strong> o caixa com <strong>gatilhos</strong>.
+                            </p>
+
+                            <h4 class="mt-3 mb-2 font-semibold">Conceitos-chave</h4>
+                            <ul>
+                                <li><strong>NCG = (CR + Estoques + Adiant.) − (Fornecedores + Salários + Impostos + Outras Obrigações)</strong></li>
+                                <li><strong>CCC = PMR + DIO − PMP</strong></li>
+                                <li><strong>BL (Buffer de Liquidez):</strong> caixa mínimo (ex.: 1,5× folha + impostos do mês)</li>
+                            </ul>
+
+                            <div class="content-block">
+                                <div class="block-title">Provisões (envelopes)</div>
+                                <p>Folha + Encargos; <strong>13º (1/12)</strong>; <strong>Férias (1/12 + 1/3)</strong>; <strong>Impostos</strong> (média 6–12m, por regime); <strong>Sazonais</strong>; <strong>Capex/Manutenção</strong>; <strong>Contingências</strong> (0,5–2 folhas).</p>
+                                <p><strong>Implementação:</strong> criar aba Provisões; transferir mensalmente para conta/centro "Provisões"; <strong>romper</strong> só com <strong>alçada</strong>.</p>
+                            </div>
+
+                            <div class="content-block">
+                                <div class="block-title">Plano de Capital de Giro (NCG)</div>
+                                <p>Diagnóstico: calcular <strong>PMR, PMP, DIO, CCC, NCG</strong>.</p>
+                                <p><strong>NCG-alvo</strong> e <strong>Gap</strong>; fontes: <strong>operacionais sem custo</strong> (reduzir PMR/aumentar PMP/otimizar DIO), <strong>táticas</strong> (antecipações), <strong>financeiras</strong> (linhas/alongamento/aporte).</p>
+                            </div>
+
+                            <h4 class="mt-3 mb-2 font-semibold">Ritual & Gatilhos</h4>
+                            <div class="table-container">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Frequência</th>
+                                            <th>Atividades</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><strong>Diário</strong></td>
+                                            <td>Baixas CR/CP; conciliação; posição de caixa</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>Semanal</strong></td>
+                                            <td><strong>Fluxo_13W</strong> atualizado; aging; <strong>borderô</strong></td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>Mensal (D+3)</strong></td>
+                                            <td>Conciliação integral; provisões; <strong>DRE + KPIs</strong></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <h4 class="mt-3 mb-2 font-semibold">Níveis de Alerta</h4>
+                            <div class="table-container">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Nível</th>
+                                            <th>Gatilho</th>
+                                            <th>Ações</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><strong>N1 Atenção</strong></td>
+                                            <td>Saldo < BL em 2S</td>
+                                            <td>Congelar despesas discricionárias; cobrança; replanejar compras</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>N2 Alerta</strong></td>
+                                            <td>Saldo < 0,75× BL na S1</td>
+                                            <td>Antecipar recebíveis; renegociar CP; postergar capex; revisar preço/promo</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>N3 Crítico</strong></td>
+                                            <td>Saldo < 0,5× BL ou negativo</td>
+                                            <td>Acionar linha/sócios; priorizar <strong>folha e tributos</strong>; <strong>comitê diário</strong></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class="content-block">
+                                <div class="block-title">Exemplo numérico (resumo)</div>
+                                <p>Receita 1,0 mi; CMV 0,6 mi; CR 0,5 mi → <strong>PMR 15d</strong>; Fornec. 0,3 mi → <strong>PMP 15d</strong>; Estoque 0,8 mi → <strong>DIO 40d</strong>; <strong>CCC 40d</strong>; <strong>NCG ≈ 1,0 mi</strong>.</p>
+                                <p>Quero reduzir NCG 250k → <strong>cortar DIO ~10d</strong> (compra fina/queima) <strong>ou aumentar PMP ~10d</strong>.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- PARTE III - Controladoria & Análise -->
+            <section id="parte-3" class="section">
+                <div class="section-header">
+                    <h2 class="section-title">PARTE III — Controladoria & Análise</h2>
+                    <p class="section-subtitle">Análise gerencial e tomada de decisão</p>
+                </div>
+                <div class="section-content">
+                    <!-- M9. DRE Gerencial por Grupos -->
+                    <div id="m9" class="module">
+                        <div class="module-header">
+                            <div class="module-number">M9</div>
+                            <h3 class="module-title">DRE Gerencial por Grupos</h3>
+                            <p class="module-description">Estruturação de demonstrativo de resultados para análise gerencial</p>
+                        </div>
+                        <div class="module-content">
+                            <h4 class="mb-2 font-semibold">Estrutura DRE Gerencial</h4>
+                            <div class="table-container">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Linha</th>
+                                            <th>Descrição</th>
+                                            <th>Observações</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Receita Bruta</td>
+                                            <td>Faturamento total por grupo/linha</td>
+                                            <td>Separar por canal, região, produto</td>
+                                        </tr>
+                                        <tr>
+                                            <td>(-) Deduções</td>
+                                            <td>Impostos, devoluções, descontos</td>
+                                            <td>Detalhar por tipo de dedução</td>
+                                        </tr>
+                                        <tr>
+                                            <td>= Receita Líquida</td>
+                                            <td>Base para análise de margens</td>
+                                            <td>Principal indicador de performance</td>
+                                        </tr>
+                                        <tr>
+                                            <td>(-) CMV/CPV/CSP</td>
+                                            <td>Custos diretos por atividade</td>
+                                            <td>Separar por centro de custo</td>
+                                        </tr>
+                                        <tr>
+                                            <td>= Margem Bruta</td>
+                                            <td>Contribuição por linha</td>
+                                            <td>Indicador de viabilidade</td>
+                                        </tr>
+                                        <tr>
+                                            <td>(-) Despesas Operacionais</td>
+                                            <td>Comerciais, administrativas</td>
+                                            <td>Ratear por critério definido</td>
+                                        </tr>
+                                        <tr>
+                                            <td>= EBITDA</td>
+                                            <td>Resultado operacional</td>
+                                            <td>Antes de juros, impostos, depreciação</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- M10. CMV/CPV/CSP, Preço e Margens -->
+                    <div id="m10" class="module">
+                        <div class="module-header">
+                            <div class="module-number">M10</div>
+                            <h3 class="module-title">CMV/CPV/CSP, Preço e Margens</h3>
+                            <p class="module-description">Cálculo de custos e formação de preços por setor</p>
+                        </div>
+                        <div class="module-content">
+                            <div class="table-container">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Setor</th>
+                                            <th>Custo</th>
+                                            <th>Componentes Principais</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><strong>Comércio</strong></td>
+                                            <td>CMV</td>
+                                            <td>Custo de aquisição + frete + impostos recuperáveis</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>Indústria</strong></td>
+                                            <td>CPV</td>
+                                            <td>Matéria-prima + mão de obra direta + custos indiretos</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>Serviços</strong></td>
+                                            <td>CSP</td>
+                                            <td>Mão de obra + materiais + custos diretos do projeto</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class="content-block">
+                                <div class="block-title">Formação de Preço de Venda</div>
+                                <p><strong>Fórmula básica:</strong> Preço = (Custo + Despesas + Margem) / (1 - % Impostos)</p>
+                                <p><strong>Markup:</strong> Multiplicador sobre o custo para chegar ao preço final</p>
+                                <p><strong>Margem de Contribuição:</strong> (Preço - Custos Variáveis) / Preço</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- M11. Orçamento (Budget) & Forecast -->
+                    <div id="m11" class="module">
+                        <div class="module-header">
+                            <div class="module-number">M11</div>
+                            <h3 class="module-title">Orçamento (Budget) & Forecast</h3>
+                            <p class="module-description">Planejamento financeiro e projeções</p>
+                        </div>
+                        <div class="module-content">
+                            <div class="content-block">
+                                <div class="block-title">Metodologia de Orçamento</div>
+                                <ol>
+                                    <li><strong>Base histórica:</strong> Análise de 2-3 anos anteriores</li>
+                                    <li><strong>Premissas macro:</strong> Inflação, crescimento, câmbio</li>
+                                    <li><strong>Metas estratégicas:</strong> Crescimento, novos produtos, expansão</li>
+                                    <li><strong>Orçamento por área:</strong> Vendas, produção, despesas</li>
+                                    <li><strong>Consolidação:</strong> DRE, fluxo de caixa, balanço projetado</li>
+                                </ol>
+                            </div>
+
+                            <div class="content-block">
+                                <div class="block-title">Forecast Rolling Trimestral</div>
+                                <p>Atualização mensal das projeções dos próximos 12 meses, com foco nos próximos 3 meses. Permite ajustes rápidos e tomada de decisão ágil.</p>
+                            </div>
+
+                            <div class="content-block">
+                                <div class="block-title">Análise de Desvios</div>
+                                <p><strong>Desvio = Realizado - Orçado</strong></p>
+                                <p>Classificar desvios por: Volume, Preço, Mix, Eficiência, Timing</p>
+                                <p>Definir planos de ação para desvios > 5% ou R$ 10.000</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- M12. KPIs & Rotina de Performance -->
+                    <div id="m12" class="module">
+                        <div class="module-header">
+                            <div class="module-number">M12</div>
+                            <h3 class="module-title">KPIs & Rotina de Performance</h3>
+                            <p class="module-description">Indicadores-chave e rituais de gestão</p>
+                        </div>
+                        <div class="module-content">
+                            <h4 class="mb-2 font-semibold">KPIs Financeiros Essenciais</h4>
+                            <div class="table-container">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Categoria</th>
+                                            <th>KPI</th>
+                                            <th>Fórmula</th>
+                                            <th>Meta Típica</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td rowspan="3"><strong>Liquidez</strong></td>
+                                            <td>PMR</td>
+                                            <td>(CR / Receita) × 30</td>
+                                            <td>< 30 dias</td>
+                                        </tr>
+                                        <tr>
+                                            <td>PMP</td>
+                                            <td>(CP / Compras) × 30</td>
+                                            <td>> 30 dias</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Ciclo de Caixa</td>
+                                            <td>PMR + DIO - PMP</td>
+                                            <td>< 60 dias</td>
+                                        </tr>
+                                        <tr>
+                                            <td rowspan="2"><strong>Rentabilidade</strong></td>
+                                            <td>Margem Bruta</td>
+                                            <td>(Receita - CMV) / Receita</td>
+                                            <td>> 30%</td>
+                                        </tr>
+                                        <tr>
+                                            <td>EBITDA Margin</td>
+                                            <td>EBITDA / Receita</td>
+                                            <td>> 15%</td>
+                                        </tr>
+                                        <tr>
+                                            <td rowspan="2"><strong>Eficiência</strong></td>
+                                            <td>Giro do Ativo</td>
+                                            <td>Receita / Ativo Total</td>
+                                            <td>> 1,5x</td>
+                                        </tr>
+                                        <tr>
+                                            <td>ROE</td>
+                                            <td>Lucro Líquido / Patrimônio</td>
+                                            <td>> 20%</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class="content-block">
+                                <div class="block-title">Reuniões de Performance</div>
+                                <ul>
+                                    <li><strong>Diária (15min):</strong> Caixa, vendas do dia, pendências críticas</li>
+                                    <li><strong>Semanal (1h):</strong> KPIs, aging, fluxo 13 semanas</li>
+                                    <li><strong>Mensal (2h):</strong> DRE, orçado vs realizado, planos de ação</li>
+                                    <li><strong>Trimestral (4h):</strong> Revisão estratégica, forecast, investimentos</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- M13. Fechamentos (D+3) -->
+                    <div id="m13" class="module">
+                        <div class="module-header">
+                            <div class="module-number">M13</div>
+                            <h3 class="module-title">Fechamentos (D+3)</h3>
+                            <p class="module-description">Processo de fechamento contábil e gerencial acelerado</p>
+                        </div>
+                        <div class="module-content">
+                            <h4 class="mb-2 font-semibold">Cronograma de Fechamento D+3</h4>
+                            <div class="table-container">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Dia</th>
+                                            <th>Atividades</th>
+                                            <th>Responsável</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><strong>D+1</strong></td>
+                                            <td>Conciliação bancária; Fechamento CR/CP; Provisões</td>
+                                            <td>Tesouraria</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>D+2</strong></td>
+                                            <td>DRE preliminar; Análise de desvios; KPIs básicos</td>
+                                            <td>Controladoria</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>D+3</strong></td>
+                                            <td>DRE final; Relatório gerencial; Apresentação</td>
+                                            <td>CFO</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class="content-block">
+                                <div class="block-title">Checklist de Qualidade</div>
+                                <ul>
+                                    <li>✅ Todas as contas conciliadas</li>
+                                    <li>✅ Provisões atualizadas</li>
+                                    <li>✅ Rateios aplicados</li>
+                                    <li>✅ KPIs calculados</li>
+                                    <li>✅ Desvios > 5% explicados</li>
+                                    <li>✅ Relatório revisado</li>
+                                </ul>
+                            </div>
+
+                            <div class="content-block">
+                                <div class="block-title">Relatórios Gerenciais Essenciais</div>
+                                <ol>
+                                    <li><strong>DRE Gerencial:</strong> Por grupo/linha de negócio</li>
+                                    <li><strong>Fluxo de Caixa:</strong> Realizado + projeção 13 semanas</li>
+                                    <li><strong>Dashboard KPIs:</strong> Principais indicadores vs meta</li>
+                                    <li><strong>Aging CR/CP:</strong> Posição de recebíveis e pagamentos</li>
+                                    <li><strong>Análise de Desvios:</strong> Orçado vs realizado com explicações</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- PARTE IV - Playbooks por Setor -->
+            <section id="parte-4" class="section">
+                <div class="section-header">
+                    <h2 class="section-title">PARTE IV — Playbooks por Setor</h2>
+                    <p class="section-subtitle">Adaptações específicas por tipo de negócio</p>
+                </div>
+                <div class="section-content">
+                    <!-- M14. Comércio -->
+                    <div id="m14" class="module">
+                        <div class="module-header">
+                            <div class="module-number">M14</div>
+                            <h3 class="module-title">Comércio</h3>
+                            <p class="module-description">Particularidades da gestão financeira no varejo</p>
+                        </div>
+                        <div class="module-content">
+                            <div class="content-block">
+                                <div class="block-title">Particularidades do Varejo</div>
+                                <ul>
+                                    <li><strong>Sazonalidade:</strong> Natal, Dia das Mães, Black Friday</li>
+                                    <li><strong>Giro de estoque:</strong> Fundamental para rentabilidade</li>
+                                    <li><strong>Mix de produtos:</strong> Análise ABC por margem e giro</li>
+                                    <li><strong>Promoções:</strong> Impacto na margem e fluxo de caixa</li>
+                                </ul>
+                            </div>
+
+                            <h4 class="mt-3 mb-2 font-semibold">KPIs Específicos do Comércio</h4>
+                            <div class="table-container">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>KPI</th>
+                                            <th>Fórmula</th>
+                                            <th>Meta</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Giro de Estoque</td>
+                                            <td>CMV / Estoque Médio</td>
+                                            <td>> 6x/ano</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Margem por Categoria</td>
+                                            <td>(Receita - CMV) / Receita</td>
+                                            <td>Variável</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Vendas por m²</td>
+                                            <td>Receita / Área de Vendas</td>
+                                            <td>Benchmark setor</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Ticket Médio</td>
+                                            <td>Receita / Nº Transações</td>
+                                            <td>Crescimento > inflação</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- M15. Serviços -->
+                    <div id="m15" class="module">
+                        <div class="module-header">
+                            <div class="module-number">M15</div>
+                            <h3 class="module-title">Serviços</h3>
+                            <p class="module-description">Gestão financeira em empresas de serviços</p>
+                        </div>
+                        <div class="module-content">
+                            <div class="content-block">
+                                <div class="block-title">Receitas Recorrentes vs Projetos</div>
+                                <ul>
+                                    <li><strong>Recorrentes:</strong> Contratos mensais, maior previsibilidade</li>
+                                    <li><strong>Projetos:</strong> Receita pontual, gestão de escopo crítica</li>
+                                    <li><strong>Híbrido:</strong> Base recorrente + projetos complementares</li>
+                                </ul>
+                            </div>
+
+                            <h4 class="mt-3 mb-2 font-semibold">KPIs de Serviços</h4>
+                            <div class="table-container">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>KPI</th>
+                                            <th>Fórmula</th>
+                                            <th>Meta</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Utilização</td>
+                                            <td>Horas Faturáveis / Horas Disponíveis</td>
+                                            <td>> 75%</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Margem por Cliente</td>
+                                            <td>(Receita - CSP) / Receita</td>
+                                            <td>> 40%</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Churn Rate</td>
+                                            <td>Clientes Perdidos / Total Clientes</td>
+                                            <td>< 5% mês</td>
+                                        </tr>
+                                        <tr>
+                                            <td>LTV/CAC</td>
+                                            <td>Lifetime Value / Custo Aquisição</td>
+                                            <td>> 3:1</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- M16. Indústria -->
+                    <div id="m16" class="module">
+                        <div class="module-header">
+                            <div class="module-number">M16</div>
+                            <h3 class="module-title">Indústria</h3>
+                            <p class="module-description">Complexidades da gestão financeira industrial</p>
+                        </div>
+                        <div class="module-content">
+                            <div class="content-block">
+                                <div class="block-title">Custeio por Absorção vs Variável</div>
+                                <ul>
+                                    <li><strong>Absorção:</strong> Todos os custos (fixos + variáveis) no produto</li>
+                                    <li><strong>Variável:</strong> Apenas custos variáveis, fixos como despesa do período</li>
+                                    <li><strong>Gerencial:</strong> Usar variável para decisões, absorção para compliance</li>
+                                </ul>
+                            </div>
+
+                            <h4 class="mt-3 mb-2 font-semibold">KPIs Industriais</h4>
+                            <div class="table-container">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>KPI</th>
+                                            <th>Fórmula</th>
+                                            <th>Meta</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>OEE</td>
+                                            <td>Disponibilidade × Performance × Qualidade</td>
+                                            <td>> 85%</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Custo por Unidade</td>
+                                            <td>CPV / Unidades Produzidas</td>
+                                            <td>Redução contínua</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Giro de MP</td>
+                                            <td>Consumo MP / Estoque Médio MP</td>
+                                            <td>> 12x/ano</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Margem de Contribuição</td>
+                                            <td>(Preço - Custo Variável) / Preço</td>
+                                            <td>> 50%</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- PARTE V - Casos, Exercícios & Ferramentas -->
+            <section id="parte-5" class="section">
+                <div class="section-header">
+                    <h2 class="section-title">PARTE V — Casos, Exercícios & Ferramentas</h2>
+                    <p class="section-subtitle">Aplicação prática e recursos complementares</p>
+                </div>
+                <div class="section-content">
+                    <!-- M17. Casos Práticos Integrados -->
+                    <div id="m17" class="module">
+                        <div class="module-header">
+                            <div class="module-number">M17</div>
+                            <h3 class="module-title">Casos Práticos Integrados</h3>
+                            <p class="module-description">Aplicação integrada dos conceitos em situações reais</p>
+                        </div>
+                        <div class="module-content">
+                            <div class="exercise">
+                                <div class="exercise-title">Caso 1: Empresa Comercial (Varejo)</div>
+                                <p><strong>Situação:</strong> Loja de roupas com 3 unidades, faturamento R$ 2 mi/ano, enfrentando problemas de fluxo de caixa na sazonalidade.</p>
+                                <p><strong>Desafios:</strong></p>
+                                <ul>
+                                    <li>PMR de 45 dias (cartões)</li>
+                                    <li>Estoque parado de R$ 300k</li>
+                                    <li>Sazonalidade forte (60% vendas em Nov-Jan)</li>
+                                    <li>Margem bruta de 55%, mas EBITDA de apenas 8%</li>
+                                </ul>
+                                <p><strong>Tarefas:</strong></p>
+                                <ol>
+                                    <li>Calcular o ciclo de caixa atual</li>
+                                    <li>Propor melhorias para reduzir NCG</li>
+                                    <li>Criar fluxo de caixa para os próximos 12 meses</li>
+                                    <li>Sugerir KPIs para acompanhamento</li>
+                                </ol>
+                            </div>
+
+                            <div class="exercise">
+                                <div class="exercise-title">Caso 2: Empresa de Serviços (Consultoria)</div>
+                                <p><strong>Situação:</strong> Consultoria em TI com 50 funcionários, crescimento de 30% ao ano, mas margem em queda.</p>
+                                <p><strong>Desafios:</strong></p>
+                                <ul>
+                                    <li>Utilização da equipe de 65%</li>
+                                    <li>Projetos com escopo mal definido</li>
+                                    <li>Clientes concentrados (top 3 = 60% receita)</li>
+                                    <li>Churn de 15% ao ano</li>
+                                </ul>
+                                <p><strong>Tarefas:</strong></p>
+                                <ol>
+                                    <li>Calcular margem por cliente e projeto</li>
+                                    <li>Propor melhorias na utilização</li>
+                                    <li>Criar modelo de precificação</li>
+                                    <li>Desenvolver plano para reduzir concentração</li>
+                                </ol>
+                            </div>
+
+                            <div class="exercise">
+                                <div class="exercise-title">Caso 3: Empresa Industrial (Manufatura)</div>
+                                <p><strong>Situação:</strong> Fábrica de móveis com capacidade ociosa de 40%, alta variabilidade de custos.</p>
+                                <p><strong>Desafios:</strong></p>
+                                <ul>
+                                    <li>Custos fixos altos (R$ 500k/mês)</li>
+                                    <li>Matéria-prima com alta volatilidade de preços</li>
+                                    <li>Lead time de produção de 30 dias</li>
+                                    <li>Sazonalidade da construção civil</li>
+                                </ul>
+                                <p><strong>Tarefas:</strong></p>
+                                <ol>
+                                    <li>Calcular ponto de equilíbrio</li>
+                                    <li>Propor estratégia para ocupar capacidade ociosa</li>
+                                    <li>Criar modelo de hedge para matéria-prima</li>
+                                    <li>Desenvolver orçamento flexível</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- M18. Modelos, Planilhas & Checklists -->
+                    <div id="m18" class="module">
+                        <div class="module-header">
+                            <div class="module-number">M18</div>
+                            <h3 class="module-title">Modelos, Planilhas & Checklists</h3>
+                            <p class="module-description">Ferramentas práticas para implementação</p>
+                        </div>
+                        <div class="module-content">
+                            <h4 class="mb-2 font-semibold">Biblioteca de Planilhas Excel</h4>
+                            <div class="table-container">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Ferramenta</th>
+                                            <th>Descrição</th>
+                                            <th>Módulo</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Fluxo_13W.xlsx</td>
+                                            <td>Projeção de fluxo de caixa rolling 13 semanas</td>
+                                            <td>M8</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Aging_CR_CP.xlsx</td>
+                                            <td>Relatório de aging automático</td>
+                                            <td>M5, M6</td>
+                                        </tr>
+                                        <tr>
+                                            <td>DRE_Gerencial.xlsx</td>
+                                            <td>Demonstrativo de resultados por grupo</td>
+                                            <td>M9</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Dashboard_KPIs.xlsx</td>
+                                            <td>Painel de indicadores executivos</td>
+                                            <td>M12</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Conciliacao_Bancaria.xlsx</td>
+                                            <td>Ferramenta de conciliação automática</td>
+                                            <td>M7</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Orcamento_Anual.xlsx</td>
+                                            <td>Template de orçamento empresarial</td>
+                                            <td>M11</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Calculadora_Precos.xlsx</td>
+                                            <td>Formação de preços por setor</td>
+                                            <td>M10</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Controle_Provisoes.xlsx</td>
+                                            <td>Gestão de provisões e reservas</td>
+                                            <td>M8A</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <h4 class="mt-3 mb-2 font-semibold">Checklists Operacionais</h4>
+                            <div class="content-block">
+                                <div class="block-title">Checklist Diário - Tesouraria</div>
+                                <ul>
+                                    <li>☐ Baixar extratos bancários</li>
+                                    <li>☐ Conciliar movimentações do dia</li>
+                                    <li>☐ Atualizar posição de caixa</li>
+                                    <li>☐ Processar recebimentos identificados</li>
+                                    <li>☐ Executar pagamentos programados</li>
+                                    <li>☐ Registrar pendências</li>
+                                </ul>
+                            </div>
+
+                            <div class="content-block">
+                                <div class="block-title">Checklist Semanal - Controladoria</div>
+                                <ul>
+                                    <li>☐ Atualizar fluxo de caixa 13 semanas</li>
+                                    <li>☐ Gerar aging de CR e CP</li>
+                                    <li>☐ Revisar KPIs da semana</li>
+                                    <li>☐ Preparar borderô de pagamentos</li>
+                                    <li>☐ Acompanhar metas de cobrança</li>
+                                    <li>☐ Reunião de performance semanal</li>
+                                </ul>
+                            </div>
+
+                            <div class="content-block">
+                                <div class="block-title">Checklist Mensal - Fechamento D+3</div>
+                                <ul>
+                                    <li>☐ Conciliação bancária completa</li>
+                                    <li>☐ Provisões atualizadas</li>
+                                    <li>☐ DRE gerencial por grupo</li>
+                                    <li>☐ Análise de desvios orçamentários</li>
+                                    <li>☐ KPIs consolidados</li>
+                                    <li>☐ Relatório executivo</li>
+                                    <li>☐ Apresentação para diretoria</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- APÊNDICES -->
+            <section id="apendices" class="section">
+                <div class="section-header">
+                    <h2 class="section-title">APÊNDICES</h2>
+                    <p class="section-subtitle">Recursos complementares e referências</p>
+                </div>
+                <div class="section-content">
+                    <!-- Apêndice A -->
+                    <div id="apendice-a" class="module">
+                        <div class="module-header">
+                            <div class="module-number">A</div>
+                            <h3 class="module-title">Fórmulas Excel/Sheets</h3>
+                            <p class="module-description">Principais fórmulas para automação financeira</p>
+                        </div>
+                        <div class="module-content">
+                            <h4 class="mb-2 font-semibold">Fórmulas Financeiras Essenciais</h4>
+                            <div class="table-container">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Função</th>
+                                            <th>Fórmula</th>
+                                            <th>Exemplo</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>PMR</td>
+                                            <td>=MÉDIA(CR)*30/RECEITA_MÊS</td>
+                                            <td>=MÉDIA(B2:B13)*30/C2</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Aging</td>
+                                            <td>=HOJE()-DATA_VENCIMENTO</td>
+                                            <td>=HOJE()-D2</td>
+                                        </tr>
+                                        <tr>
+                                            <td>PROCV Aproximado</td>
+                                            <td>=PROCV(valor;tabela;coluna;VERDADEIRO)</td>
+                                            <td>=PROCV(E2;Tabela!A:C;3;VERDADEIRO)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Soma Condicional</td>
+                                            <td>=SOMASE(critério;intervalo;soma)</td>
+                                            <td>=SOMASE(A:A;"Cliente A";B:B)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Taxa Efetiva</td>
+                                            <td>=POTÊNCIA(1+taxa_nominal/períodos;períodos)-1</td>
+                                            <td>=POTÊNCIA(1+0,12/12;12)-1</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class="content-block">
+                                <div class="block-title">Macros Úteis</div>
+                                <pre><code>
+' Macro para atualizar data automaticamente
+Sub AtualizarData()
+    Range("A1").Value = Date
+End Sub
+
+' Macro para formatar tabela financeira
+Sub FormatarTabela()
+    Selection.NumberFormat = "#,##0.00"
+    Selection.Font.Name = "Arial"
+    Selection.Font.Size = 10
+End Sub
+                                </code></pre>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Apêndice B -->
+                    <div id="apendice-b" class="module">
+                        <div class="module-header">
+                            <div class="module-number">B</div>
+                            <h3 class="module-title">Glossário</h3>
+                            <p class="module-description">Definições de termos técnicos utilizados</p>
+                        </div>
+                        <div class="module-content">
+                            <div class="table-container">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Termo</th>
+                                            <th>Definição</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><strong>Aging</strong></td>
+                                            <td>Relatório que classifica contas a receber ou pagar por faixas de vencimento</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>CCC</strong></td>
+                                            <td>Ciclo de Conversão de Caixa - tempo entre pagamento de fornecedores e recebimento de clientes</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>CMV</strong></td>
+                                            <td>Custo das Mercadorias Vendidas - custo direto dos produtos comercializados</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>CPV</strong></td>
+                                            <td>Custo dos Produtos Vendidos - custo de produção dos itens fabricados</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>CSP</strong></td>
+                                            <td>Custo dos Serviços Prestados - custo direto dos serviços executados</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>DIO</strong></td>
+                                            <td>Dias de Inventário em Estoque - tempo médio de permanência do estoque</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>DRE</strong></td>
+                                            <td>Demonstração de Resultados do Exercício - relatório de receitas e despesas</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>EBITDA</strong></td>
+                                            <td>Lucro antes de juros, impostos, depreciação e amortização</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>KPI</strong></td>
+                                            <td>Indicador-chave de performance - métrica para acompanhar resultados</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>NCG</strong></td>
+                                            <td>Necessidade de Capital de Giro - recursos necessários para financiar operações</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>PMR</strong></td>
+                                            <td>Prazo Médio de Recebimento - tempo médio para receber de clientes</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>PMP</strong></td>
+                                            <td>Prazo Médio de Pagamento - tempo médio para pagar fornecedores</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>RACI</strong></td>
+                                            <td>Matriz de responsabilidades: Responsável, Aprovador, Consultado, Informado</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>SOP</strong></td>
+                                            <td>Procedimento Operacional Padrão - rotina documentada de trabalho</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Rodapé -->
+        <footer class="footer">
+            <div class="footer-content">
+                <h3>RJC Assessoria</h3>
+                <p>A Arte de Registrar o Patrimônio</p>
+                <p>© 2025 RJC Assessoria. Uso autorizado a clientes e parceiros.</p>
+                <p class="mt-2">
+                    <strong>Contato:</strong> contato@rjcassessoria.com.br | (62) 8168-0949<br>
+                    <strong>Endereço:</strong> Sala 09 - St. Central, Goiânia - GO, 74010-010
+                </p>
+            </div>
+        </footer>
+
+        <!-- Numeração de páginas -->
+        <div class="page-number">Página 1 de 307</div>
+    </div>
+
+    <script>
+        // Script para navegação suave
+        document.querySelectorAll('.nav-link, .toc a').forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Script para atualizar numeração de páginas (simulado)
+        let currentPage = 1;
+        const totalPages = 307;
+        
+        function updatePageNumber() {
+            const pageNumberElement = document.querySelector('.page-number');
+            if (pageNumberElement) {
+                pageNumberElement.textContent = `Página ${currentPage} de ${totalPages}`;
+            }
+        }
+
+        // Simular mudança de página ao rolar
+        window.addEventListener('scroll', function() {
+            const scrollPercent = (window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100;
+            currentPage = Math.max(1, Math.min(totalPages, Math.ceil((scrollPercent / 100) * totalPages)));
+            updatePageNumber();
+        });
+
+        // Destacar seção ativa na navegação
+        window.addEventListener('scroll', function() {
+            const sections = document.querySelectorAll('.section');
+            const navLinks = document.querySelectorAll('.nav-link');
+            
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (scrollY >= (sectionTop - 200)) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === '#' + current) {
+                    link.classList.add('active');
+                }
+            });
+        });
+
+        // Adicionar estilo para link ativo
+        const style = document.createElement('style');
+        style.textContent = `
+            .nav-link.active {
+                background: var(--rjc-azul-principal) !important;
+                color: var(--rjc-branco) !important;
+                transform: translateY(-2px);
+            }
+        `;
+        document.head.appendChild(style);
+    </script>
+</body>
+</html>

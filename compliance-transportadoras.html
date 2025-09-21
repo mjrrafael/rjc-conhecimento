@@ -1,0 +1,910 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compliance Fiscal em Transporte Rodoviário - RJC Assessoria</title>
+    <style>
+        /* Reset e configurações básicas */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Variáveis CSS para cores RJC */
+        :root {
+            --rjc-azul-principal: #1e3a8a;
+            --rjc-azul-secundario: #3b82f6;
+            --rjc-azul-claro: #60a5fa;
+            --rjc-laranja: #f97316;
+            --rjc-roxo: #7c3aed;
+            --rjc-verde: #16a34a;
+            --rjc-vermelho: #dc2626;
+            --rjc-branco: #ffffff;
+            --rjc-cinza-claro: #f8fafc;
+            --rjc-cinza-medio: #64748b;
+            --rjc-cinza-escuro: #334155;
+            --rjc-gradiente: linear-gradient(135deg, var(--rjc-azul-principal) 0%, var(--rjc-azul-secundario) 100%);
+        }
+
+        /* Tipografia */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--rjc-cinza-escuro);
+            background-color: var(--rjc-cinza-claro);
+        }
+
+        /* Container principal */
+        .container {
+            max-width: 210mm; /* A4 width */
+            margin: 0 auto;
+            background: var(--rjc-branco);
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            min-height: 100vh;
+        }
+
+        /* Cabeçalho */
+        .header {
+            background: var(--rjc-gradiente);
+            color: var(--rjc-branco);
+            padding: 2rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M 10 0 L 0 0 0 10" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="0.5"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)"/></svg>');
+            opacity: 0.3;
+        }
+
+        .title {
+            position: relative;
+            z-index: 2;
+        }
+
+        .title h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            font-weight: 400;
+            opacity: 0.9;
+            margin-bottom: 0.5rem;
+        }
+
+        .version {
+            font-size: 1rem;
+            opacity: 0.8;
+            font-style: italic;
+            margin-bottom: 0.5rem;
+        }
+
+        .company {
+            font-size: 1rem;
+            opacity: 0.8;
+            color: var(--rjc-laranja);
+        }
+
+        /* Navegação/Índice */
+        .nav-container {
+            background: var(--rjc-branco);
+            border-bottom: 3px solid var(--rjc-azul-principal);
+            padding: 1rem 2rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .nav-title {
+            color: var(--rjc-azul-principal);
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .nav-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .nav-link {
+            color: var(--rjc-cinza-medio);
+            text-decoration: none;
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            transition: all 0.3s ease;
+            font-size: 0.9rem;
+        }
+
+        .nav-link:hover {
+            background: var(--rjc-azul-claro);
+            color: var(--rjc-branco);
+            transform: translateY(-2px);
+        }
+
+        /* Conteúdo principal */
+        .content {
+            padding: 2rem;
+        }
+
+        /* Seções */
+        .section {
+            margin-bottom: 3rem;
+            page-break-inside: avoid;
+        }
+
+        .section-header {
+            background: var(--rjc-gradiente);
+            color: var(--rjc-branco);
+            padding: 1.5rem;
+            border-radius: 12px 12px 0 0;
+            margin-bottom: 0;
+        }
+
+        .section-title {
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+
+        .section-subtitle {
+            font-size: 1rem;
+            opacity: 0.9;
+        }
+
+        .section-content {
+            background: var(--rjc-branco);
+            border: 1px solid #e2e8f0;
+            border-top: none;
+            border-radius: 0 0 12px 12px;
+            padding: 2rem;
+        }
+
+        /* Blocos de conteúdo */
+        .content-block {
+            background: var(--rjc-cinza-claro);
+            border-left: 4px solid var(--rjc-azul-secundario);
+            padding: 1.2rem;
+            margin: 1rem 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .content-block.warning {
+            border-left-color: var(--rjc-laranja);
+            background: #fef3c7;
+        }
+
+        .content-block.important {
+            border-left-color: var(--rjc-vermelho);
+            background: #fee2e2;
+        }
+
+        .content-block.success {
+            border-left-color: var(--rjc-verde);
+            background: #dcfce7;
+        }
+
+        .block-title {
+            font-weight: 600;
+            color: var(--rjc-azul-principal);
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+        }
+
+        /* Tabelas */
+        .table-container {
+            overflow-x: auto;
+            margin: 1.5rem 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: var(--rjc-branco);
+        }
+
+        th {
+            background: var(--rjc-azul-principal);
+            color: var(--rjc-branco);
+            padding: 1rem;
+            text-align: left;
+            font-weight: 600;
+        }
+
+        td {
+            padding: 0.8rem 1rem;
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        tr:nth-child(even) {
+            background: var(--rjc-cinza-claro);
+        }
+
+        /* Listas */
+        ul, ol {
+            margin: 1rem 0;
+            padding-left: 2rem;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+        }
+
+        /* Texto justificado */
+        .text-justify {
+            text-align: justify;
+        }
+
+        .mt-2 {
+            margin-top: 1rem;
+        }
+
+        .mt-3 {
+            margin-top: 1.5rem;
+        }
+
+        /* Capítulos */
+        .chapter {
+            margin: 2rem 0;
+            padding: 1.5rem;
+            background: #f8fafc;
+            border-radius: 8px;
+            border-left: 4px solid var(--rjc-azul-secundario);
+        }
+
+        .chapter h3 {
+            color: var(--rjc-azul-principal);
+            margin-bottom: 1rem;
+            font-size: 1.4rem;
+        }
+
+        .chapter-subsection {
+            margin: 1.5rem 0;
+        }
+
+        .chapter-subsection h4 {
+            color: var(--rjc-azul-secundario);
+            margin-bottom: 0.8rem;
+            font-size: 1.1rem;
+        }
+
+        /* Símbolos */
+        .symbols {
+            background: #e0f2fe;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin: 1rem 0;
+        }
+
+        .symbols h4 {
+            color: var(--rjc-azul-principal);
+            margin-bottom: 1rem;
+        }
+
+        /* Fluxo de processo */
+        .process-flow {
+            background: #f1f5f9;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            padding: 1.5rem;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9rem;
+            margin: 1rem 0;
+            white-space: pre-line;
+        }
+
+        /* Rodapé */
+        .footer {
+            background: var(--rjc-cinza-claro);
+            padding: 2rem;
+            text-align: center;
+            color: var(--rjc-cinza-medio);
+            border-top: 1px solid #e2e8f0;
+            margin-top: 3rem;
+        }
+
+        /* Numeração de páginas */
+        .page-number {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: var(--rjc-azul-principal);
+            color: var(--rjc-branco);
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            z-index: 1000;
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            .container {
+                max-width: 100%;
+                margin: 0;
+            }
+            
+            .content {
+                padding: 1rem;
+            }
+            
+            .header {
+                padding: 1rem;
+            }
+            
+            .title h1 {
+                font-size: 1.8rem;
+            }
+            
+            .nav-links {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+        }
+
+        /* Print styles */
+        @media print {
+            .nav-container {
+                position: static;
+            }
+            
+            .page-number {
+                position: static;
+                float: right;
+                margin-top: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Container principal -->
+    <div class="container">
+        <!-- Cabeçalho -->
+        <header class="header">
+            <div class="title">
+                <h1>COMPLIANCE FISCAL EM TRANSPORTE RODOVIÁRIO</h1>
+                <div class="subtitle">Formação do Zero ao Pleno para Analistas/Assistentes Fiscais</div>
+                <div class="version">v2.0 — Edição Expandida</div>
+                <div class="company">RJC Assessoria • Núcleo Tributário, Fiscal e Compliance</div>
+            </div>
+        </header>
+
+        <!-- Navegação -->
+        <nav class="nav-container">
+            <div class="nav-title">Navegação Rápida</div>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">← Voltar ao Índice</a>
+                <a href="#organizacao" class="nav-link">Como Está Organizado</a>
+                <a href="#fundamentos" class="nav-link">Fundamentos</a>
+                <a href="#regimes" class="nav-link">Regimes Tributários</a>
+                <a href="#beneficios" class="nav-link">Benefícios em Goiás</a>
+                <a href="#implementacao" class="nav-link">Implementação</a>
+                <a href="#comparativo" class="nav-link">Comparativo</a>
+            </div>
+        </nav>
+
+        <!-- Conteúdo principal -->
+        <main class="content">
+            <!-- Alerta -->
+            <div class="content-block warning">
+                <div class="block-title">⚠️ Alerta de Calendário (GO)</div>
+                <p>A partir de 2025, o <strong>vencimento do ICMS em Goiás é no dia 20</strong> do mês seguinte à apuração (salvo exceções específicas). Atualize rotinas, ERP/TMS e políticas internas.</p>
+            </div>
+
+            <!-- Objetivo -->
+            <section class="section">
+                <div class="section-header">
+                    <h2 class="section-title">Objetivo desta Edição</h2>
+                    <p class="section-subtitle">Formação completa em compliance fiscal</p>
+                </div>
+                <div class="section-content">
+                    <p class="text-justify">Transformar iniciantes em <strong>Assistentes/Analistas Fiscais Plenos</strong> e atualizar profissionais seniores, com <strong>explicação plena</strong>, <strong>passo a passo</strong>, <strong>exemplos numéricos</strong>, <strong>mapas de decisão</strong>, <strong>checklists</strong> e <strong>cadernos por público-alvo</strong> (Empresa, Contabilidade e Advocacia).</p>
+                </div>
+            </section>
+
+            <!-- Como está organizado -->
+            <section id="organizacao" class="section">
+                <div class="section-header">
+                    <h2 class="section-title">Como Está Organizado Este Livro</h2>
+                    <p class="section-subtitle">Metodologia didática estruturada</p>
+                </div>
+                <div class="section-content">
+                    <p class="text-justify">Este livro foi <strong>projetado para ensino</strong>. Cada capítulo segue a seguinte lógica didática:</p>
+                    
+                    <ol>
+                        <li><strong>O que você vai aprender</strong> (competências do capítulo)</li>
+                        <li><strong>Contexto e por quê isso importa</strong> (ligação com o dia a dia)</li>
+                        <li><strong>Passo a passo operacional</strong> (com prints mentais: "onde clicar/checar" e "o que conferir")</li>
+                        <li><strong>Exemplos práticos</strong> (com números realistas)</li>
+                        <li><strong>Erros comuns e como evitar</strong></li>
+                        <li><strong>Checklist rápido</strong> (para inserir na rotina)</li>
+                        <li><strong>Notas legais essenciais</strong> (leis/artigos/atos a consultar)</li>
+                    </ol>
+
+                    <div class="symbols">
+                        <h4>Símbolos Utilizados</h4>
+                        <ul>
+                            <li>✅ <strong>Faça assim</strong> (boa prática)</li>
+                            <li>⚠️ <strong>Atenção</strong> (ponto de autuação frequente)</li>
+                            <li>❌ <strong>Não faça</strong> (erro comum)</li>
+                            <li>🧠 <strong>Dica de aprendizagem</strong> (macete de quem opera no dia a dia)</li>
+                            <li>📎 <strong>Modelo/Anexo</strong> (há um modelo pronto no final)</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Fundamentos -->
+            <section id="fundamentos" class="section">
+                <div class="section-header">
+                    <h2 class="section-title">Parte I — Fundamentos (Goiás + Nacional)</h2>
+                    <p class="section-subtitle">Base legal e conceitos essenciais</p>
+                </div>
+                <div class="section-content">
+                    <div class="chapter">
+                        <h3>Cap. 1 — Mapa Legal Essencial (TRC, ICMS, ANTT, Seguros)</h3>
+                        
+                        <div class="chapter-subsection">
+                            <h4>O que você vai aprender</h4>
+                            <ul>
+                                <li>Identificar <strong>quais leis</strong> se aplicam ao TRC e onde buscá-las</li>
+                                <li>Entender <strong>quem pode te autuar</strong> e <strong>por quê</strong></li>
+                                <li>Mapear <strong>quais documentos</strong> você precisa dominar para operar (NF‑e, CT‑e, MDF‑e, CIOT/PEF, vale‑pedágio, RNTRC, apólices)</li>
+                            </ul>
+                        </div>
+
+                        <div class="chapter-subsection">
+                            <h4>Contexto e por quê importa</h4>
+                            <p class="text-justify">A operação de uma transportadora cruza <strong>três esferas</strong>: <strong>fiscal (Estados/ICMS)</strong>, <strong>regulatória (ANTT)</strong> e <strong>seguradora (SUSEP/CNSP)</strong>. <strong>Se um elo falha (ex.: CIOT ausente)</strong>, a viagem <strong>trava em posto fiscal</strong>, gera <strong>multa</strong>, <strong>perda de cliente</strong> e <strong>risco civil</strong>.</p>
+                        </div>
+
+                        <div class="chapter-subsection">
+                            <h4>Quadro-mapa das principais normas</h4>
+                            <div class="table-container">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Norma</th>
+                                            <th>Aplicação</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><strong>Constituição Federal (art. 155, II)</strong></td>
+                                            <td>Autoriza os <strong>Estados/DF</strong> a cobrar <strong>ICMS</strong> sobre <strong>prestações de serviços de transporte intermunicipal e interestadual</strong></td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>LC 87/1996 (Lei Kandir)</strong></td>
+                                            <td>Define <strong>quando incide o ICMS</strong>, <strong>onde é devido</strong> (UF de início), <strong>qual é a base</strong> (preço do frete)</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>Lei 11.442/2007 + Lei 14.599/2023</strong></td>
+                                            <td>Regem o <strong>transporte rodoviário de cargas</strong> e <strong>obrigam a contratação de seguros</strong> (RCTR‑C, RC‑DC e RC‑V)</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>Res. ANTT 5.862/2019</strong></td>
+                                            <td><strong>CIOT obrigatório</strong> para contratações com <strong>TAC/MEI</strong>; <strong>pagamento eletrônico de frete</strong></td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>RCTE/GO (Dec. 4.852/1997)</strong></td>
+                                            <td>Regras do <strong>ICMS em Goiás</strong>; <strong>Anexo VIII</strong> (ST do serviço de transporte), <strong>Anexo IX</strong> (benefícios)</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <div class="content-block important">
+                            <div class="block-title">❌ Erros Comuns</div>
+                            <ul>
+                                <li>Achar que <strong>vale‑pedágio</strong> pode ser reembolsado dentro do frete → <strong>proibido</strong></li>
+                                <li>Achar que <strong>CIOT</strong> é "formalidade" dispensável → <strong>multa ANTT</strong> e <strong>risco trabalhista/previdenciário</strong></li>
+                                <li>Esquecer de <strong>encerrar o MDF‑e</strong> → bloqueios, alertas e <strong>autuações</strong></li>
+                            </ul>
+                        </div>
+
+                        <div class="content-block success">
+                            <div class="block-title">✅ Checklist Rápido</div>
+                            <ul>
+                                <li>Lista das leis impressa/online (favoritar portais oficiais)</li>
+                                <li>Calendário do ICMS <strong>GO = dia 20</strong></li>
+                                <li>Quem fiscaliza o quê? (SEFAZ/GO → ICMS; ANTT → CIOT/PEF/RNTRC; Seguradoras → PGR/averbação)</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="chapter">
+                        <h3>Cap. 2 — Conceitos do TRC que ninguém te conta (mas a fiscalização cobra)</h3>
+                        
+                        <div class="chapter-subsection">
+                            <h4>Conceitos-chave, com exemplos</h4>
+                            <ul>
+                                <li><strong>Prestação intermunicipal (ICMS/GO):</strong> Anápolis → Rio Verde</li>
+                                <li><strong>Prestação interestadual (ICMS na UF de início):</strong> Goiânia (GO) → Uberlândia (MG)</li>
+                                <li><strong>Prestação intramunicipal:</strong> fretes dentro do <strong>mesmo município</strong> → em regra <strong>ISS</strong></li>
+                                <li><strong>Tomador:</strong> quem <strong>paga o frete</strong>; pode ser o embarcador ou o destinatário (CIF/FOB)</li>
+                                <li><strong>Prestador:</strong> transportadora que <strong>emite o CT‑e</strong> e <strong>executa</strong> o serviço</li>
+                            </ul>
+                        </div>
+
+                        <div class="chapter-subsection">
+                            <h4>Fluxo documental (visão 360°)</h4>
+                            <div class="process-flow">1) NF‑e do embarcador (verificar chave, CFOP, volumes/peso, NCM)
+2) CT‑e (mod. 57) atrelado às NF‑es (CFOP/CST corretos; se ST, usar CST 60)
+3) MDF‑e (mod. 58) antes de iniciar a viagem (motorista só sai com DAMDFE emitido)
+4) CIOT/PEF quando houver TAC/MEI (ou equiparados)
+5) Vale‑pedágio (comprovantes) — obrigatório antes de iniciar
+6) Seguros obrigatórios (apólices vigentes e averbação dos embarques)
+7) Encerramento do MDF‑e ao final + escrituração na EFD‑ICMS/IPI</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Regimes Tributários -->
+            <section id="regimes" class="section">
+                <div class="section-header">
+                    <h2 class="section-title">Parte II — Regimes e Planejamento Tributário</h2>
+                    <p class="section-subtitle">Simples Nacional, Presumido e Real</p>
+                </div>
+                <div class="section-content">
+                    <div class="chapter">
+                        <h3>Cap. 3 — Simples Nacional para Transportadoras</h3>
+                        
+                        <div class="chapter-subsection">
+                            <h4>Requisitos e limitações</h4>
+                            <ul>
+                                <li><strong>Receita bruta anual:</strong> até R$ 4,8 milhões</li>
+                                <li><strong>Anexo III da LC 123/2006:</strong> alíquotas de 6% a 33%</li>
+                                <li><strong>Vedações específicas:</strong> transporte de pessoas, cargas perigosas em alguns casos</li>
+                                <li><strong>ICMS:</strong> recolhimento unificado via DAS, mas pode haver ST em algumas operações</li>
+                            </ul>
+                        </div>
+
+                        <div class="chapter-subsection">
+                            <h4>Vantagens e desvantagens</h4>
+                            <div class="table-container">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Vantagens</th>
+                                            <th>Desvantagens</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Simplicidade na apuração</td>
+                                            <td>Limitação de receita bruta</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Redução da carga tributária</td>
+                                            <td>Impossibilidade de aproveitamento de créditos</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Menos obrigações acessórias</td>
+                                            <td>Vedações específicas do setor</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="chapter">
+                        <h3>Cap. 4 — Lucro Presumido para Transportadoras</h3>
+                        
+                        <div class="chapter-subsection">
+                            <h4>Características principais</h4>
+                            <ul>
+                                <li><strong>Base de cálculo:</strong> 8% da receita bruta para IRPJ, 12% para CSLL</li>
+                                <li><strong>PIS/COFINS:</strong> regime cumulativo (0,65% + 3%)</li>
+                                <li><strong>ICMS:</strong> regime normal com direito a créditos</li>
+                                <li><strong>Apuração trimestral:</strong> IRPJ e CSLL</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="chapter">
+                        <h3>Cap. 5 — Lucro Real para Transportadoras</h3>
+                        
+                        <div class="chapter-subsection">
+                            <h4>Quando é obrigatório</h4>
+                            <ul>
+                                <li><strong>Receita bruta anual:</strong> superior a R$ 78 milhões</li>
+                                <li><strong>Atividades específicas:</strong> algumas modalidades de transporte</li>
+                                <li><strong>Opção:</strong> pode ser escolhido mesmo quando não obrigatório</li>
+                            </ul>
+                        </div>
+
+                        <div class="chapter-subsection">
+                            <h4>Vantagens do Lucro Real</h4>
+                            <ul>
+                                <li><strong>Tributação sobre lucro efetivo:</strong> pode ser menor em períodos de baixa margem</li>
+                                <li><strong>Aproveitamento integral de créditos:</strong> PIS/COFINS não cumulativo</li>
+                                <li><strong>Compensação de prejuízos:</strong> até 30% do lucro real</li>
+                                <li><strong>Planejamento tributário:</strong> maior flexibilidade</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Benefícios em Goiás -->
+            <section id="beneficios" class="section">
+                <div class="section-header">
+                    <h2 class="section-title">Parte III — Benefícios Fiscais em Goiás</h2>
+                    <p class="section-subtitle">Crédito presumido e outros incentivos</p>
+                </div>
+                <div class="section-content">
+                    <div class="chapter">
+                        <h3>Cap. 6 — Crédito Presumido de 20% (Anexo IX/GO)</h3>
+                        
+                        <div class="chapter-subsection">
+                            <h4>Como funciona</h4>
+                            <p class="text-justify">O Estado de Goiás concede crédito presumido de <strong>20% sobre o ICMS devido</strong> nas prestações de serviço de transporte, desde que cumpridos os requisitos legais.</p>
+                        </div>
+
+                        <div class="chapter-subsection">
+                            <h4>Requisitos para aproveitamento</h4>
+                            <ul>
+                                <li><strong>Prestação iniciada em Goiás</strong></li>
+                                <li><strong>Transportadora inscrita no Estado</strong></li>
+                                <li><strong>Regularidade fiscal</strong> comprovada</li>
+                                <li><strong>Não cumulatividade:</strong> não pode ser usado junto com créditos físicos do mesmo ICMS</li>
+                            </ul>
+                        </div>
+
+                        <div class="chapter-subsection">
+                            <h4>Exemplo prático</h4>
+                            <div class="content-block">
+                                <div class="block-title">Cálculo do Crédito Presumido</div>
+                                <ul>
+                                    <li><strong>Frete:</strong> R$ 10.000,00</li>
+                                    <li><strong>ICMS devido (12%):</strong> R$ 1.200,00</li>
+                                    <li><strong>Crédito presumido (20%):</strong> R$ 240,00</li>
+                                    <li><strong>ICMS a recolher:</strong> R$ 960,00</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="chapter">
+                        <h3>Cap. 7 — Substituição Tributária (ST) do Serviço</h3>
+                        
+                        <div class="chapter-subsection">
+                            <h4>Quando ocorre ST</h4>
+                            <ul>
+                                <li><strong>TAC/MEI contratado:</strong> tomador recolhe o ICMS</li>
+                                <li><strong>Transportadora de outro Estado:</strong> sem inscrição em GO</li>
+                                <li><strong>Transportadora do Simples:</strong> em determinadas situações</li>
+                            </ul>
+                        </div>
+
+                        <div class="chapter-subsection">
+                            <h4>Procedimentos para o tomador</h4>
+                            <ol>
+                                <li><strong>Identificar a hipótese de ST</strong></li>
+                                <li><strong>Calcular o ICMS devido</strong></li>
+                                <li><strong>Recolher via GNRE/DARE</strong> até o dia 20</li>
+                                <li><strong>Escriturar na EFD-ICMS/IPI</strong> (registro E116)</li>
+                                <li><strong>Indicar na NF-e</strong> a observação sobre ST</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Implementação do Crédito Presumido -->
+            <section id="implementacao" class="section">
+                <div class="section-header">
+                    <h2 class="section-title">Parte IV — Implementação do Crédito Presumido</h2>
+                    <p class="section-subtitle">Passo a passo prático para aplicação</p>
+                </div>
+                <div class="section-content">
+                    <div class="chapter">
+                        <h3>Cap. 8 — Implementação do Crédito Presumido de 20%</h3>
+                        
+                        <div class="chapter-subsection">
+                            <h4>Como funciona o 20%</h4>
+                            <ul>
+                                <li>Percentual <strong>20%</strong> sobre o <strong>ICMS devido</strong> nas <strong>prestações de serviço de transporte</strong> (exceto aéreo, salvo exceções)</li>
+                                <li><strong>Opção é do contribuinte</strong> (empresa): <strong>substitui</strong> os <strong>créditos físicos</strong> de insumos</li>
+                                <li><strong>Uniformidade:</strong> adote uma <strong>política única</strong> por <strong>CNPJ raiz</strong> (evite mistura)</li>
+                            </ul>
+                        </div>
+
+                        <div class="chapter-subsection">
+                            <h4>Implementação passo a passo</h4>
+                            <ol>
+                                <li><strong>Parecer interno</strong> (Contábil/Tributário) definindo a adoção/abrangência</li>
+                                <li><strong>Parametrizar o ERP/TMS:</strong>
+                                    <ul>
+                                        <li>Bloquear <strong>créditos físicos</strong> no módulo de ICMS</li>
+                                        <li>Criar <strong>evento/ajuste</strong> para <strong>crédito presumido 20%</strong> no <strong>Bloco E</strong> (apuração)</li>
+                                    </ul>
+                                </li>
+                                <li><strong>Treinar o Fiscal:</strong> no <strong>SPED/EFD‑ICMS/IPI</strong>, o CT‑e entra no <strong>Bloco D</strong></li>
+                                <li><strong>Auditar 90 dias:</strong> conferir se o <strong>benefício</strong> foi aplicado corretamente</li>
+                            </ol>
+                        </div>
+
+                        <div class="content-block success">
+                            <div class="block-title">Exemplo numérico</div>
+                            <ul>
+                                <li>Débito ICMS do mês (somatório CT‑e): <strong>R$ 100.000</strong></li>
+                                <li><strong>Crédito presumido 20%:</strong> <strong>R$ 20.000</strong></li>
+                                <li><strong>ICMS a pagar</strong> (antes de outros créditos/débitos): <strong>R$ 80.000</strong></li>
+                            </ul>
+                        </div>
+
+                        <div class="content-block important">
+                            <div class="block-title">❌ Erros Comuns</div>
+                            <ul>
+                                <li>Lançar <strong>crédito de diesel/pneu</strong> junto com <strong>crédito presumido</strong> → <strong>vedado</strong></li>
+                                <li>Não guardar <strong>memória de cálculo</strong> (planilha por viagem/mês)</li>
+                            </ul>
+                        </div>
+
+                        <div class="content-block success">
+                            <div class="block-title">✅ Checklist Rápido</div>
+                            <ul>
+                                <li>Política formal (outorga 20%)</li>
+                                <li>ERP com <strong>bloqueio de crédito físico</strong></li>
+                                <li><strong>SPED/EFD</strong> mapeado (<strong>Bloco D</strong> para CT‑e; <strong>D197/E111</strong> para ajustes)</li>
+                                <li>Auditoria trimestral de conformidade</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Comparativo de Regimes -->
+            <section id="comparativo" class="section">
+                <div class="section-header">
+                    <h2 class="section-title">Parte V — Comparativo Detalhado de Regimes</h2>
+                    <p class="section-subtitle">Análise completa para tomada de decisão</p>
+                </div>
+                <div class="section-content">
+                    <div class="chapter">
+                        <h3>Cap. 9 — Comparativo Completo de Regimes Tributários</h3>
+                        
+                        <div class="chapter-subsection">
+                            <h4>Simples Nacional</h4>
+                            <ul>
+                                <li><strong>Anexo III da LC 123/2006:</strong> alíquotas de 6% a 33%</li>
+                                <li><strong>ICMS no DAS</strong> (mas <strong>ST/antecipações</strong> do serviço de transporte <strong>ficam fora</strong> do DAS)</li>
+                                <li><strong>Créditos:</strong> em regra, <strong>não</strong> há crédito de PIS/COFINS</li>
+                            </ul>
+                        </div>
+
+                        <div class="chapter-subsection">
+                            <h4>Lucro Presumido</h4>
+                            <ul>
+                                <li><strong>IRPJ</strong> (base presumida setorial p/ cargas geralmente <strong>8%</strong>) e <strong>CSLL</strong> (geralmente <strong>12%</strong>)</li>
+                                <li><strong>PIS/COFINS cumulativos</strong> (sem crédito)</li>
+                                <li>Bom quando <strong>margem líquida ≥ presunção</strong> e <strong>insumos</strong> não geram créditos relevantes</li>
+                            </ul>
+                        </div>
+
+                        <div class="chapter-subsection">
+                            <h4>Lucro Real</h4>
+                            <ul>
+                                <li><strong>IRPJ/CSLL sobre lucro</strong>; <strong>PIS 1,65% + COFINS 7,6% (não cumulativos)</strong></li>
+                                <li><strong>Créditos</strong> de <strong>insumos essenciais/relevantes</strong> (diesel, pneus, manutenção, lubrificantes etc.)</li>
+                                <li><strong>Subcontratação:</strong> crédito <strong>reduzido (75%)</strong> → <strong>PIS 1,2375%</strong>; <strong>COFINS 5,7%</strong></li>
+                            </ul>
+                        </div>
+
+                        <div class="chapter-subsection">
+                            <h4>Árvore de decisão (simplificada)</h4>
+                            <div class="table-container">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Cenário</th>
+                                            <th>Regime Recomendado</th>
+                                            <th>Justificativa</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Insumos + subcontratações ≥ 25% da receita</td>
+                                            <td><strong>Lucro Real</strong></td>
+                                            <td>Aproveitamento de créditos de PIS/COFINS</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Margem líquida ≥ presunção e poucos insumos</td>
+                                            <td><strong>Presumido</strong></td>
+                                            <td>Simplicidade e menor carga tributária</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Faturamento menor e baixa complexidade</td>
+                                            <td><strong>Simples</strong></td>
+                                            <td>Redução de obrigações acessórias</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Rodapé -->
+        <footer class="footer">
+            <p><strong>RJC Assessoria</strong> • rjcassessoria.com.br</p>
+            <p>A Arte de Registrar o Patrimônio</p>
+        </footer>
+    </div>
+
+    <!-- Numeração de páginas -->
+    <div class="page-number" id="pageNumber">Página 1 de 1</div>
+
+    <script>
+        // Simulação de numeração de páginas
+        let currentPage = 1;
+        const totalPages = 1;
+
+        function updatePageNumber() {
+            document.getElementById('pageNumber').textContent = `Página ${currentPage} de ${totalPages}`;
+        }
+
+        // Simular mudança de página ao rolar
+        window.addEventListener('scroll', function() {
+            const scrollPercent = (window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100;
+            currentPage = Math.max(1, Math.min(totalPages, Math.ceil((scrollPercent / 100) * totalPages)));
+            updatePageNumber();
+        });
+
+        // Destacar seção ativa na navegação
+        window.addEventListener('scroll', function() {
+            const sections = document.querySelectorAll('.section');
+            const navLinks = document.querySelectorAll('.nav-link');
+            
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (scrollY >= (sectionTop - 200)) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === '#' + current) {
+                    link.classList.add('active');
+                }
+            });
+        });
+
+        // Adicionar estilo para link ativo
+        const style = document.createElement('style');
+        style.textContent = `
+            .nav-link.active {
+                background: var(--rjc-azul-principal) !important;
+                color: var(--rjc-branco) !important;
+                transform: translateY(-2px);
+            }
+        `;
+        document.head.appendChild(style);
+    </script>
+</body>
+</html>

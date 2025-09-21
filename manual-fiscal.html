@@ -1,0 +1,1826 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manual Técnico Pleno de Documentos Fiscais Eletrônicos - RJC Assessoria</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            box-shadow: 0 0 30px rgba(0,0,0,0.1);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        /* Header */
+        .header {
+            background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+            color: white;
+            padding: 2rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .header::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: repeating-linear-gradient(
+                45deg,
+                transparent,
+                transparent 10px,
+                rgba(255,255,255,0.05) 10px,
+                rgba(255,255,255,0.05) 20px
+            );
+            animation: slide 20s linear infinite;
+        }
+
+        @keyframes slide {
+            0% { transform: translateX(-50px); }
+            100% { transform: translateX(50px); }
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        .header .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            position: relative;
+            z-index: 1;
+        }
+
+        .header .company {
+            margin-top: 1rem;
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #f97316;
+            position: relative;
+            z-index: 1;
+        }
+
+        /* Navigation */
+        .nav {
+            background: #1e40af;
+            padding: 1rem 2rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .nav ul {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+            font-size: 0.9rem;
+        }
+
+        .nav a:hover {
+            background: rgba(255,255,255,0.2);
+            transform: translateY(-2px);
+        }
+
+        /* Content */
+        .content {
+            padding: 2rem;
+        }
+
+        /* About Section */
+        .about-section {
+            background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border-radius: 10px;
+            border-left: 5px solid #3b82f6;
+        }
+
+        .about-section h2 {
+            color: #1e3a8a;
+            margin-bottom: 1rem;
+            font-size: 1.8rem;
+        }
+
+        .about-section p {
+            margin-bottom: 1rem;
+            text-align: justify;
+        }
+
+        /* Table of Contents */
+        .toc {
+            background: linear-gradient(135deg, #fef3c7 0%, #fbbf24 100%);
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border-radius: 10px;
+            border-left: 5px solid #f59e0b;
+        }
+
+        .toc h2 {
+            color: #92400e;
+            margin-bottom: 1.5rem;
+            font-size: 1.8rem;
+            text-align: center;
+        }
+
+        .toc-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1rem;
+        }
+
+        .toc-item {
+            background: rgba(255,255,255,0.8);
+            padding: 1rem;
+            border-radius: 8px;
+            border-left: 4px solid #f59e0b;
+            transition: all 0.3s ease;
+        }
+
+        .toc-item:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .toc-item a {
+            text-decoration: none;
+            color: #92400e;
+            font-weight: 600;
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+
+        .chapter-description {
+            font-size: 0.9rem;
+            color: #666;
+            font-style: italic;
+        }
+
+        /* Chapters */
+        .chapter {
+            margin-bottom: 3rem;
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+        }
+
+        .chapter-header {
+            background: linear-gradient(135deg, #7c3aed 0%, #a855f7 100%);
+            color: white;
+            padding: 1.5rem 2rem;
+            position: relative;
+        }
+
+        .chapter-header::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, #f97316, #eab308, #22c55e, #3b82f6, #8b5cf6);
+        }
+
+        .chapter-title {
+            font-size: 1.8rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .chapter-content {
+            padding: 2rem;
+        }
+
+        /* Content Blocks */
+        .content-block {
+            margin-bottom: 2rem;
+            padding: 1.5rem;
+            background: #f8fafc;
+            border-radius: 8px;
+            border-left: 4px solid #3b82f6;
+        }
+
+        .content-block h2 {
+            color: #1e3a8a;
+            margin-bottom: 1rem;
+            font-size: 1.4rem;
+        }
+
+        .content-block h3 {
+            color: #1e40af;
+            margin-bottom: 0.8rem;
+            font-size: 1.2rem;
+        }
+
+        .content-block p {
+            margin-bottom: 1rem;
+            text-align: justify;
+        }
+
+        .content-block ul, .content-block ol {
+            margin-left: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .content-block li {
+            margin-bottom: 0.5rem;
+        }
+
+        /* Special Blocks */
+        .attention-block {
+            background: linear-gradient(135deg, #fef2f2 0%, #fecaca 100%);
+            border-left: 4px solid #ef4444;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 8px;
+        }
+
+        .attention-block h3 {
+            color: #dc2626;
+            margin-bottom: 1rem;
+        }
+
+        .tip-block {
+            background: linear-gradient(135deg, #f0fdf4 0%, #bbf7d0 100%);
+            border-left: 4px solid #22c55e;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 8px;
+        }
+
+        .tip-block h3 {
+            color: #16a34a;
+            margin-bottom: 1rem;
+        }
+
+        .example-block {
+            background: linear-gradient(135deg, #fffbeb 0%, #fed7aa 100%);
+            border-left: 4px solid #f97316;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 8px;
+        }
+
+        .example-block h3 {
+            color: #ea580c;
+            margin-bottom: 1rem;
+        }
+
+        .procedure-block {
+            background: linear-gradient(135deg, #f3f4f6 0%, #d1d5db 100%);
+            border-left: 4px solid #6b7280;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 8px;
+        }
+
+        .procedure-block h3 {
+            color: #374151;
+            margin-bottom: 1rem;
+        }
+
+        /* Tables */
+        .table-container {
+            overflow-x: auto;
+            margin: 1.5rem 0;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+        }
+
+        th {
+            background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+            color: white;
+            padding: 1rem;
+            text-align: left;
+            font-weight: 600;
+        }
+
+        td {
+            padding: 1rem;
+            border-bottom: 1px solid #e5e7eb;
+            transition: background-color 0.3s ease;
+        }
+
+        tr:hover td {
+            background-color: #f8fafc;
+        }
+
+        tr:nth-child(even) td {
+            background-color: #f9fafb;
+        }
+
+        /* Images */
+        .image-container {
+            text-align: center;
+            margin: 2rem 0;
+            padding: 1rem;
+            background: #f8fafc;
+            border-radius: 8px;
+            border: 2px dashed #cbd5e1;
+        }
+
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .image-caption {
+            margin-top: 1rem;
+            font-style: italic;
+            color: #6b7280;
+            font-size: 0.9rem;
+        }
+
+        /* Code blocks */
+        .code-block {
+            background: #1f2937;
+            color: #f9fafb;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin: 1.5rem 0;
+            overflow-x: auto;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9rem;
+        }
+
+        /* Footer */
+        .footer {
+            background: linear-gradient(135deg, #1f2937 0%, #374151 100%);
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+        }
+
+        .page-number {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #3b82f6;
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .container {
+                margin: 0;
+                border-radius: 0;
+            }
+
+            .header h1 {
+                font-size: 2rem;
+            }
+
+            .nav ul {
+                flex-direction: column;
+            }
+
+            .content {
+                padding: 1rem;
+            }
+
+            .toc-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .chapter-content {
+                padding: 1rem;
+            }
+        }
+
+        /* Print styles */
+        @media print {
+            .nav, .page-number {
+                display: none;
+            }
+            
+            .chapter {
+                page-break-inside: avoid;
+                margin-bottom: 2rem;
+            }
+            
+            .chapter-header {
+                page-break-after: avoid;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <h1>Manual Técnico Pleno de Documentos Fiscais Eletrônicos</h1>
+            <p class="subtitle">Guia Completo para Profissionais de Excelência</p>
+            <p class="company">RJC Assessoria - "A Arte de Registrar o Patrimônio"</p>
+        </header>
+
+        <!-- Navigation -->
+        <nav class="nav">
+            <ul>
+                <li><a href="index.html">← Voltar ao Índice</a></li>
+                <li><a href="#sumario">Sumário</a></li>
+                <li><a href="#chapter-1">Cap. 1</a></li>
+                <li><a href="#chapter-2">Cap. 2</a></li>
+                <li><a href="#chapter-3">Cap. 3</a></li>
+                <li><a href="#chapter-4">Cap. 4</a></li>
+                <li><a href="#chapter-5">Cap. 5</a></li>
+                <li><a href="#chapter-6">Cap. 6</a></li>
+                <li><a href="#chapter-7">Cap. 7</a></li>
+                <li><a href="#chapter-8">Cap. 8</a></li>
+                <li><a href="#chapter-9">Cap. 9</a></li>
+                <li><a href="#chapter-10">Cap. 10</a></li>
+                <li><a href="#chapter-11">Cap. 11</a></li>
+                <li><a href="#chapter-12">Cap. 12</a></li>
+                <li><a href="#chapter-13">Cap. 13</a></li>
+                <li><a href="#chapter-14">Cap. 14</a></li>
+                <li><a href="#chapter-15">Cap. 15</a></li>
+                <li><a href="#chapter-16">Cap. 16</a></li>
+                <li><a href="#chapter-17">Cap. 17</a></li>
+                <li><a href="#chapter-18">Cap. 18</a></li>
+                <li><a href="#chapter-19">Cap. 19</a></li>
+                <li><a href="#chapter-20">Cap. 20</a></li>
+                <li><a href="#chapter-21">Cap. 21</a></li>
+                <li><a href="#chapter-22">Cap. 22</a></li>
+            </ul>
+        </nav>
+
+        <!-- Content -->
+        <main class="content">
+
+
+            <!-- Sumário -->
+            <section id="sumario" class="toc">
+                <h2>📚 Sumário Completo</h2>
+                <div class="toc-grid">
+                    <div class="toc-item">
+                        <a href="#chapter-1">Capítulo 1: Como Usar Este Manual</a>
+                        <p class="chapter-description">Sua Trilha de Aprendizagem</p>
+                    </div>
+                    <div class="toc-item">
+                        <a href="#chapter-2">Capítulo 2: Mapa dos DF-e e Base Legal</a>
+                        <p class="chapter-description">O que usar e quando usar cada documento fiscal eletrônico</p>
+                    </div>
+                    <div class="toc-item">
+                        <a href="#chapter-3">Capítulo 3: Arquitetura Comum dos DF-e</a>
+                        <p class="chapter-description">Estrutura tecnológica e conceitos fundamentais</p>
+                    </div>
+                    <div class="toc-item">
+                        <a href="#chapter-4">Capítulo 4: NF-e (Modelo 55)</a>
+                        <p class="chapter-description">Guia Campo a Campo</p>
+                    </div>
+                    <div class="toc-item">
+                        <a href="#chapter-5">Capítulo 5: NFC-e (Modelo 65)</a>
+                        <p class="chapter-description">Diferenças que "Derrubam" ou "Salvam" a Nota</p>
+                    </div>
+                    <div class="toc-item">
+                        <a href="#chapter-6">Capítulo 6: NFS-e (Serviços/ISS)</a>
+                        <p class="chapter-description">Padrão Nacional vs Municipal</p>
+                    </div>
+                    <div class="toc-item">
+                        <a href="#chapter-7">Capítulo 7: CT-e (Modelos 57 e 67)</a>
+                        <p class="chapter-description">Conhecimento de Transporte eletrônico</p>
+                    </div>
+                    <div class="toc-item">
+                        <a href="#chapter-8">Capítulo 8: MDF-e (Modelo 58)</a>
+                        <p class="chapter-description">Manifesto de Documentos Fiscais eletrônicos</p>
+                    </div>
+                    <div class="toc-item">
+                        <a href="#chapter-9">Capítulo 9: CF-e-SAT/MFE</a>
+                        <p class="chapter-description">O Legado do Varejo e a Migração para a NFC-e</p>
+                    </div>
+                    <div class="toc-item">
+                        <a href="#chapter-10">Capítulo 10: Tabelas Críticas</a>
+                        <p class="chapter-description">NCM, TIPI, CEST, CFOP, CST/CSOSN</p>
+                    </div>
+                    <div class="toc-item">
+                        <a href="#chapter-11">Capítulo 11: Impostos na Prática</a>
+                        <p class="chapter-description">Cálculos e Aplicações Reais</p>
+                    </div>
+                    <div class="toc-item">
+                        <a href="#chapter-12">Capítulo 12: Operações Típicas</a>
+                        <p class="chapter-description">Cenários Reais do Mercado</p>
+                    </div>
+                    <div class="toc-item">
+                        <a href="#chapter-13">Capítulo 13: Eventos</a>
+                        <p class="chapter-description">Cancelamento, Correção e Manifestação</p>
+                    </div>
+                    <div class="toc-item">
+                        <a href="#chapter-14">Capítulo 14: Contingência e Rejeições</a>
+                        <p class="chapter-description">Soluções para Problemas Técnicos</p>
+                    </div>
+                    <div class="toc-item">
+                        <a href="#chapter-15">Capítulo 15: Conciliação com SPED</a>
+                        <p class="chapter-description">Integração Obrigatória</p>
+                    </div>
+                    <div class="toc-item">
+                        <a href="#chapter-16">Capítulo 16: Checklists e POPs</a>
+                        <p class="chapter-description">Procedimentos Operacionais Padrão</p>
+                    </div>
+                    <div class="toc-item">
+                        <a href="#chapter-17">Capítulo 17: Erros Frequentes</a>
+                        <p class="chapter-description">Como Evitar Problemas Comuns</p>
+                    </div>
+                    <div class="toc-item">
+                        <a href="#chapter-18">Capítulo 18: Mudanças 2024-2026</a>
+                        <p class="chapter-description">CRT-MEI, QR-Code v3 e Reforma Tributária</p>
+                    </div>
+                    <div class="toc-item">
+                        <a href="#chapter-19">Capítulo 19: Casos Práticos Resolvidos</a>
+                        <p class="chapter-description">Aplicação Prática do Conhecimento</p>
+                    </div>
+                    <div class="toc-item">
+                        <a href="#chapter-20">Capítulo 20: Exercícios Práticos</a>
+                        <p class="chapter-description">Teste Seus Conhecimentos</p>
+                    </div>
+                    <div class="toc-item">
+                        <a href="#chapter-21">Capítulo 21: Modelos e Anexos</a>
+                        <p class="chapter-description">Ferramentas Práticas e Gabarito</p>
+                    </div>
+                    <div class="toc-item">
+                        <a href="#chapter-22">Capítulo 22: Referências Oficiais</a>
+                        <p class="chapter-description">Links e Fontes Primárias</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Capítulo 1: Como Usar Este Manual -->
+            <div class="chapter" id="chapter-1">
+                <div class="chapter-header">
+                    <h1 class="chapter-title">Capítulo 1: Como Usar Este Manual</h1>
+                </div>
+                <div class="chapter-content">
+                    <div class="content-block">
+                        <p>Este manual foi projetado para ser sua referência definitiva no universo dos documentos fiscais eletrônicos. Seja você um profissional experiente buscando atualização ou alguém iniciando na área fiscal, aqui você encontrará o conhecimento estruturado de forma didática e prática.</p>
+                    </div>
+
+                    <div class="content-block">
+                        <h2>🎯 Objetivo do Manual</h2>
+                        <p>Formar profissionais capazes de dominar completamente os documentos fiscais eletrônicos brasileiros, desde os conceitos fundamentais até as aplicações mais complexas do dia a dia empresarial.</p>
+                    </div>
+
+                    <div class="content-block">
+                        <h2>📖 Como Estudar</h2>
+                        <p>O manual segue uma progressão lógica: conceitos fundamentais → documentos específicos → aplicações práticas → casos reais. Recomendamos seguir a ordem dos capítulos, mas cada um foi escrito para também servir como consulta independente.</p>
+                    </div>
+
+                    <div class="content-block">
+                        <h2>🔍 Ícones Visuais</h2>
+                        <p>Para facilitar sua navegação e aprendizado, utilizamos ícones específicos ao longo do texto:</p>
+                        
+                        <div class="attention-block">
+                            <h3>🔴 Atenção</h3>
+                            <p>Informações críticas que podem impactar diretamente sua operação ou causar rejeições.</p>
+                        </div>
+
+                        <div class="procedure-block">
+                            <h3>⚙️ Procedimento</h3>
+                            <p>Passo a passo detalhado para executar uma tarefa específica.</p>
+                        </div>
+
+                        <div class="example-block">
+                            <h3>💡 Exemplo</h3>
+                            <p>Casos práticos e exemplos reais para ilustrar conceitos.</p>
+                        </div>
+
+                        <div class="tip-block">
+                            <h3>✅ Dica de Estudo</h3>
+                            <p>Sugestões para aprofundar seu conhecimento e dicas práticas.</p>
+                        </div>
+                    </div>
+
+                    <div class="content-block">
+                        <h2>📚 Estrutura dos Capítulos</h2>
+                        <p>Cada capítulo segue a metodologia <strong>"Por que → O que → Como"</strong>:</p>
+                        <ul>
+                            <li><strong>Por que:</strong> A importância e o contexto do tema</li>
+                            <li><strong>O que:</strong> Os conceitos e definições essenciais</li>
+                            <li><strong>Como:</strong> A aplicação prática no dia a dia</li>
+                        </ul>
+                    </div>
+
+                    <div class="tip-block">
+                        <h3>✅ Dica de Estudo</h3>
+                        <p>Mantenha sempre à mão os links para os portais oficiais (Capítulo 22) e pratique com os exercícios do Capítulo 20. A legislação fiscal é dinâmica - este manual oferece a base sólida, mas a atualização constante é fundamental.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Capítulo 2: Mapa dos DF-e e Base Legal -->
+            <div class="chapter" id="chapter-2">
+                <div class="chapter-header">
+                    <h1 class="chapter-title">Capítulo 2: Mapa dos DF-e e Base Legal</h1>
+                </div>
+                <div class="chapter-content">
+                    <div class="content-block">
+                        <p>Antes de mergulhar nos detalhes técnicos, é fundamental compreender o panorama geral dos documentos fiscais eletrônicos brasileiros. Este capítulo apresenta o "mapa do tesouro" - quando usar cada documento, suas bases legais e como eles se relacionam.</p>
+                    </div>
+
+                    <div class="content-block">
+                        <h2>📋 Panorama dos Documentos Fiscais Eletrônicos</h2>
+                        
+                        <div class="table-container">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Documento</th>
+                                        <th>Modelo</th>
+                                        <th>Finalidade</th>
+                                        <th>Obrigatório Desde</th>
+                                        <th>Base Legal Principal</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><strong>NF-e</strong></td>
+                                        <td>55</td>
+                                        <td>Operações entre empresas (B2B)</td>
+                                        <td>2008</td>
+                                        <td>Ajuste SINIEF 07/05</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>NFC-e</strong></td>
+                                        <td>65</td>
+                                        <td>Venda ao consumidor final</td>
+                                        <td>2013</td>
+                                        <td>Ajuste SINIEF 11/10</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>NFS-e</strong></td>
+                                        <td>-</td>
+                                        <td>Prestação de serviços (ISS)</td>
+                                        <td>Varia por município</td>
+                                        <td>LC 116/03 + legislação municipal</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>CT-e</strong></td>
+                                        <td>57/67</td>
+                                        <td>Transporte de cargas</td>
+                                        <td>2009</td>
+                                        <td>Ajuste SINIEF 09/07</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>MDF-e</strong></td>
+                                        <td>58</td>
+                                        <td>Manifesto de documentos fiscais</td>
+                                        <td>2012</td>
+                                        <td>Ajuste SINIEF 21/10</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>CF-e-SAT</strong></td>
+                                        <td>59</td>
+                                        <td>Cupom fiscal eletrônico (SP)</td>
+                                        <td>2015 (SP)</td>
+                                        <td>Decreto SP 60.522/14</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="content-block">
+                        <h2>🎯 Quando Usar Cada Documento</h2>
+                        
+                        <h3>NF-e (Modelo 55) - O "Carro-Chefe"</h3>
+                        <ul>
+                            <li>Vendas entre empresas (B2B)</li>
+                            <li>Operações com produtos (mercadorias)</li>
+                            <li>Transferências entre filiais</li>
+                            <li>Remessas para industrialização</li>
+                            <li>Devoluções de compras</li>
+                        </ul>
+
+                        <h3>NFC-e (Modelo 65) - O "Substituto do Cupom"</h3>
+                        <ul>
+                            <li>Vendas ao consumidor final (B2C)</li>
+                            <li>Varejo em geral (lojas físicas e e-commerce)</li>
+                            <li>Operações presenciais e não presenciais</li>
+                            <li>Substituiu o cupom fiscal tradicional</li>
+                        </ul>
+
+                        <h3>NFS-e - O "Documento dos Serviços"</h3>
+                        <ul>
+                            <li>Prestação de serviços sujeitos ao ISS</li>
+                            <li>Cada município tem suas regras específicas</li>
+                            <li>Padrão Nacional em implementação gradual</li>
+                        </ul>
+
+                        <h3>CT-e (Modelos 57 e 67) - O "Documento do Transporte"</h3>
+                        <ul>
+                            <li>Transporte rodoviário de cargas</li>
+                            <li>Modelo 57: Transporte normal</li>
+                            <li>Modelo 67: Outros serviços de transporte</li>
+                        </ul>
+
+                        <h3>MDF-e (Modelo 58) - O "Manifesto da Viagem"</h3>
+                        <ul>
+                            <li>Agrupa documentos fiscais de uma viagem</li>
+                            <li>Obrigatório para transporte interestadual</li>
+                            <li>Controle de trânsito de mercadorias</li>
+                        </ul>
+                    </div>
+
+                    <div class="attention-block">
+                        <h3>🔴 Atenção: Hierarquia de Obrigatoriedade</h3>
+                        <p>A escolha do documento correto não é opcional. Usar o documento errado pode resultar em autuações fiscais. A regra geral é:</p>
+                        <ul>
+                            <li><strong>Produtos para empresas:</strong> NF-e</li>
+                            <li><strong>Produtos para consumidor final:</strong> NFC-e</li>
+                            <li><strong>Serviços:</strong> NFS-e</li>
+                            <li><strong>Transporte:</strong> CT-e + MDF-e (quando aplicável)</li>
+                        </ul>
+                    </div>
+
+                    <div class="content-block">
+                        <h2>⚖️ Base Legal Fundamental</h2>
+                        
+                        <h3>Constituição Federal</h3>
+                        <p>Art. 37, XXII - estabelece a obrigatoriedade da informatização dos processos administrativos, base constitucional para os DF-e.</p>
+
+                        <h3>Ajustes SINIEF</h3>
+                        <p>Os Ajustes do Sistema Nacional Integrado de Informações Econômico-Fiscais são os principais instrumentos normativos dos DF-e:</p>
+                        <ul>
+                            <li><strong>Ajuste SINIEF 07/05:</strong> Criou a NF-e</li>
+                            <li><strong>Ajuste SINIEF 11/10:</strong> Criou a NFC-e</li>
+                            <li><strong>Ajuste SINIEF 09/07:</strong> Criou o CT-e</li>
+                            <li><strong>Ajuste SINIEF 21/10:</strong> Criou o MDF-e</li>
+                        </ul>
+
+                        <h3>Convênios ICMS</h3>
+                        <p>Regulamentam aspectos específicos da tributação e operacionalização dos documentos eletrônicos.</p>
+
+                        <h3>Notas Técnicas</h3>
+                        <p>Documentos que detalham alterações, novos campos, validações e cronogramas de implementação.</p>
+                    </div>
+
+                    <div class="tip-block">
+                        <h3>✅ Dica de Estudo</h3>
+                        <p>Bookmark o Portal Nacional da NF-e (nfe.fazenda.gov.br) - é sua fonte primária para Manuais de Orientação, Notas Técnicas e schemas XML. Sempre consulte a versão mais recente dos documentos.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Capítulo 3: Arquitetura Comum dos DF-e -->
+            <div class="chapter" id="chapter-3">
+                <div class="chapter-header">
+                    <h1 class="chapter-title">Capítulo 3: Arquitetura Comum dos DF-e</h1>
+                </div>
+                <div class="chapter-content">
+                    <div class="content-block">
+                        <p>Todos os documentos fiscais eletrônicos brasileiros compartilham uma arquitetura tecnológica comum. Compreender esses fundamentos é essencial para dominar qualquer DF-e, pois os conceitos se repetem em todos eles.</p>
+                    </div>
+
+                    <div class="content-block">
+                        <h2>🏗️ Estrutura XML</h2>
+                        <p>Todos os DF-e são estruturados em <strong>XML (eXtensible Markup Language)</strong>, uma linguagem de marcação que organiza os dados de forma hierárquica e padronizada.</p>
+                        
+                        <div class="code-block">
+&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;nfeProc xmlns="http://www.portalfiscal.inf.br/nfe"&gt;
+    &lt;NFe&gt;
+        &lt;infNFe Id="NFe35200..."&gt;
+            &lt;ide&gt;...&lt;/ide&gt;
+            &lt;emit&gt;...&lt;/emit&gt;
+            &lt;dest&gt;...&lt;/dest&gt;
+            &lt;det nItem="1"&gt;...&lt;/det&gt;
+            &lt;total&gt;...&lt;/total&gt;
+        &lt;/infNFe&gt;
+    &lt;/NFe&gt;
+    &lt;protNFe&gt;...&lt;/protNFe&gt;
+&lt;/nfeProc&gt;
+                        </div>
+                    </div>
+
+                    <div class="content-block">
+                        <h2>🔑 Chave de Acesso</h2>
+                        <p>A chave de acesso é o "DNA" do documento fiscal eletrônico. Com 44 dígitos, ela identifica unicamente cada documento emitido no Brasil.</p>
+                        
+                        <div class="image-container">
+                            <img src="estrutura_chave_acesso.png" alt="Estrutura da Chave de Acesso - 44 dígitos" />
+                            <p class="image-caption">Figura 3.1: Estrutura da Chave de Acesso (44 dígitos)</p>
+                        </div>
+
+                        <div class="table-container">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Posição</th>
+                                        <th>Campo</th>
+                                        <th>Tamanho</th>
+                                        <th>Descrição</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>01-02</td>
+                                        <td>cUF</td>
+                                        <td>2</td>
+                                        <td>Código do estado</td>
+                                    </tr>
+                                    <tr>
+                                        <td>03-06</td>
+                                        <td>AAMM</td>
+                                        <td>4</td>
+                                        <td>Ano e mês de emissão</td>
+                                    </tr>
+                                    <tr>
+                                        <td>07-20</td>
+                                        <td>CNPJ</td>
+                                        <td>14</td>
+                                        <td>CNPJ do emitente</td>
+                                    </tr>
+                                    <tr>
+                                        <td>21-22</td>
+                                        <td>mod</td>
+                                        <td>2</td>
+                                        <td>Modelo do documento</td>
+                                    </tr>
+                                    <tr>
+                                        <td>23-25</td>
+                                        <td>série</td>
+                                        <td>3</td>
+                                        <td>Série do documento</td>
+                                    </tr>
+                                    <tr>
+                                        <td>26-34</td>
+                                        <td>nNF</td>
+                                        <td>9</td>
+                                        <td>Número do documento</td>
+                                    </tr>
+                                    <tr>
+                                        <td>35</td>
+                                        <td>tpEmis</td>
+                                        <td>1</td>
+                                        <td>Tipo de emissão</td>
+                                    </tr>
+                                    <tr>
+                                        <td>36-43</td>
+                                        <td>cNF</td>
+                                        <td>8</td>
+                                        <td>Código numérico</td>
+                                    </tr>
+                                    <tr>
+                                        <td>44</td>
+                                        <td>cDV</td>
+                                        <td>1</td>
+                                        <td>Dígito verificador</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="content-block">
+                        <h2>🔐 Assinatura Digital</h2>
+                        <p>Todos os DF-e devem ser assinados digitalmente usando certificado digital padrão ICP-Brasil. A assinatura garante:</p>
+                        <ul>
+                            <li><strong>Autenticidade:</strong> Confirma quem emitiu o documento</li>
+                            <li><strong>Integridade:</strong> Garante que o conteúdo não foi alterado</li>
+                            <li><strong>Não-repúdio:</strong> O emissor não pode negar a autoria</li>
+                        </ul>
+
+                        <div class="attention-block">
+                            <h3>🔴 Atenção: Validade do Certificado</h3>
+                            <p>Certificados digitais têm prazo de validade. Documentos assinados com certificados vencidos são rejeitados pela SEFAZ. Monitore sempre a data de vencimento e renove com antecedência.</p>
+                        </div>
+                    </div>
+
+                    <div class="content-block">
+                        <h2>🔄 Fluxo de Autorização</h2>
+                        <p>O processo de autorização segue um fluxo padrão em todos os DF-e:</p>
+                        
+                        <div class="image-container">
+                            <img src="fluxo_emissao_nfe.png" alt="Fluxo de Emissão da NF-e" />
+                            <p class="image-caption">Figura 3.2: Fluxo de Emissão da NF-e</p>
+                        </div>
+
+                        <ol>
+                            <li><strong>Geração do XML:</strong> Sistema ERP cria o arquivo XML com os dados da operação</li>
+                            <li><strong>Assinatura Digital:</strong> XML é assinado com certificado digital</li>
+                            <li><strong>Transmissão:</strong> XML assinado é enviado para a SEFAZ</li>
+                            <li><strong>Validação:</strong> SEFAZ valida estrutura, assinatura e regras de negócio</li>
+                            <li><strong>Autorização/Rejeição:</strong> SEFAZ retorna protocolo de autorização ou rejeição</li>
+                            <li><strong>DANFE:</strong> Se autorizado, é gerado o DANFE para impressão</li>
+                        </ol>
+                    </div>
+
+                    <div class="content-block">
+                        <h2>📝 Eventos</h2>
+                        <p>Após a autorização, é possível registrar eventos que alteram o status ou corrigem informações do documento:</p>
+                        
+                        <div class="table-container">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Evento</th>
+                                        <th>Código</th>
+                                        <th>Finalidade</th>
+                                        <th>Prazo</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Cancelamento</td>
+                                        <td>110111</td>
+                                        <td>Anular documento autorizado</td>
+                                        <td>24h após autorização</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Carta de Correção</td>
+                                        <td>110110</td>
+                                        <td>Corrigir dados não fiscais</td>
+                                        <td>Sem prazo limite</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Manifestação</td>
+                                        <td>210200/210210/210220/210240</td>
+                                        <td>Destinatário manifesta ciência</td>
+                                        <td>Sem prazo limite</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="procedure-block">
+                        <h3>⚙️ Procedimento: Validação Básica de XML</h3>
+                        <p>Antes de transmitir qualquer DF-e, execute estas validações:</p>
+                        <ol>
+                            <li>Verificar se o XML está bem formado (tags abertas e fechadas)</li>
+                            <li>Validar contra o schema XSD oficial</li>
+                            <li>Confirmar se a chave de acesso está correta</li>
+                            <li>Verificar se o certificado digital está válido</li>
+                            <li>Testar a assinatura digital</li>
+                        </ol>
+                    </div>
+
+                    <div class="tip-block">
+                        <h3>✅ Dica de Estudo</h3>
+                        <p>Pratique lendo XMLs de documentos reais. Use ferramentas como o Validador da SEFAZ ou editores XML para visualizar a estrutura hierárquica. Quanto mais familiarizado você estiver com a estrutura XML, mais fácil será diagnosticar problemas.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Capítulo 18: Mudanças 2024-2026 -->
+            <div class="chapter" id="chapter-18">
+                <div class="chapter-header">
+                    <h1 class="chapter-title">Capítulo 18: Mudanças 2024–2026: CRT-MEI, QR-Code v3 e a Reforma Tributária (RTC)</h1>
+                </div>
+                <div class="chapter-content">
+                    <div class="content-block">
+                        <p>O universo fiscal é tudo, menos estático. Novas legislações, tecnologias e obrigações são introduzidas constantemente. Um analista fiscal de alto nível não apenas domina as regras de hoje, mas também está atento às mudanças que impactarão seu trabalho amanhã. Este capítulo é um radar, apontando para as principais transformações em curso e previstas para o ciclo 2024-2026.</p>
+                    </div>
+
+                    <div class="content-block">
+                        <h2>1. CRT=4 (MEI) - Já em Vigor</h2>
+                        <ul>
+                            <li><strong>A Mudança:</strong> A <strong>Nota Técnica 2024.001</strong> oficializou a criação do <strong>CRT=4 (Código de Regime Tributário para o Microempreendedor Individual - MEI)</strong>. Antes, o MEI era enquadrado no CRT=1 (Simples Nacional), o que gerava confusão, já que as regras de tributação do MEI são diferentes das outras empresas do Simples.</li>
+                            <li><strong>O Impacto:</strong>
+                                <ul>
+                                    <li><strong>Sistemas Emissores:</strong> Os ERPs e sistemas de faturamento precisaram se adaptar para permitir a seleção do CRT=4 no cadastro do emitente.</li>
+                                    <li><strong>Validações da SEFAZ:</strong> As regras de validação foram ajustadas para tratar o MEI de forma específica, aplicando as isenções e particularidades do seu regime.</li>
+                                </ul>
+                            </li>
+                            <li><strong>Status:</strong> Já implementado e em produção na maioria dos estados. Se sua empresa emite notas para MEIs, verifique se seu sistema está usando o código correto.</li>
+                        </ul>
+                    </div>
+
+                    <div class="content-block">
+                        <h2>2. NFC-e QR-Code v3.0 - A Próxima Evolução do Varejo</h2>
+                        <ul>
+                            <li><strong>A Mudança:</strong> A <strong>Nota Técnica 2025.001</strong> instituiu um novo leiaute para a URL do QR-Code da NFC-e, a versão 3.0.</li>
+                            <li><strong>Por que Mudar?</strong> A nova versão visa aumentar a segurança, padronizar a consulta em nível nacional e incluir novas informações, preparando o terreno para futuras integrações, como com meios de pagamento.</li>
+                            <li><strong>O Impacto:</strong>
+                                <ul>
+                                    <li><strong>Sistemas de PDV:</strong> Todos os softwares de Ponto de Venda que emitem NFC-e deverão ser atualizados para gerar o QR-Code no novo formato.</li>
+                                    <li><strong>Prazos:</strong> A NT estabelece um cronograma de implementação:
+                                        <ul>
+                                            <li>Ambiente de Homologação (testes): Já disponível.</li>
+                                            <li>Ambiente de Produção: <strong>A partir de 01 de setembro de 2025</strong>.</li>
+                                            <li>Haverá um período de convivência em que a SEFAZ aceitará tanto a versão 2.0 quanto a 3.0, mas após o prazo final (a ser definido por cada UF), a versão 2.0 será desativada.</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        
+                        <div class="attention-block">
+                            <h3>🔴 Atenção</h3>
+                            <p>Este é um ponto crítico para todo o varejo. Sistemas de PDV que não forem atualizados a tempo <strong>deixarão de conseguir emitir NFC-e</strong>. Contate seu fornecedor de software para garantir que ele está ciente e trabalhando na atualização.</p>
+                        </div>
+                    </div>
+
+                    <div class="content-block">
+                        <h2>3. RTC - A Reforma Tributária do Consumo</h2>
+                        <p>Esta é, de longe, a maior transformação do sistema tributário brasileiro em décadas. A Emenda Constitucional 132/2023 deu início à <strong>Reforma Tributária do Consumo (RTC)</strong>, que irá substituir cinco tributos atuais (PIS, COFINS, IPI, ICMS e ISS) por três novos.</p>
+
+                        <h3>Os Novos Tributos:</h3>
+                        <ul>
+                            <li><strong>CBS (Contribuição sobre Bens e Serviços):</strong> Substituirá o PIS e a COFINS. Será de competência federal.</li>
+                            <li><strong>IBS (Imposto sobre Bens e Serviços):</strong> Substituirá o ICMS (estadual) e o ISS (municipal). Será de competência compartilhada entre estados e municípios.</li>
+                            <li><strong>IS (Imposto Seletivo):</strong> Um imposto extra que incidirá sobre bens e serviços prejudiciais à saúde ou ao meio ambiente (como cigarros e bebidas alcoólicas).</li>
+                        </ul>
+
+                        <h3>O Impacto nos Documentos Fiscais:</h3>
+                        <p>A forma de calcular os impostos mudará completamente. Para acomodar essa mudança, os documentos fiscais eletrônicos precisarão ser adaptados. A <strong>Nota Técnica 2025.002</strong> já deu o primeiro passo.</p>
+                        <ul>
+                            <li><strong>Novos Campos:</strong> A NT criou novos campos e grupos no leiaute da NF-e/NFC-e para receber as informações do IBS, da CBS e do IS. Haverá campos para a base de cálculo, a alíquota e o valor de cada um dos novos tributos.</li>
+                            <li><strong>Tabelas Novas:</strong> Novas tabelas de códigos serão criadas para detalhar a tributação dos novos impostos (semelhante ao CST atual).</li>
+                        </ul>
+
+                        <h3>O Cronograma da Transição (Longo e Gradual):</h3>
+                        <p>A mudança não será da noite para o dia. A reforma prevê um longo período de transição:</p>
+                        <ul>
+                            <li><strong>2026:</strong> Início da CBS e do IBS, com alíquotas de teste (0,9% para CBS e 0,1% para IBS), convivendo com os tributos atuais.</li>
+                            <li><strong>2027:</strong> A CBS substitui totalmente o PIS e a COFINS. O IPI é zerado (exceto para produtos que concorrem com a Zona Franca de Manaus) e o Imposto Seletivo entra em vigor.</li>
+                            <li><strong>2029 a 2032:</strong> Período de transição em que as alíquotas do ICMS e do ISS serão reduzidas gradualmente, enquanto as do IBS aumentarão na mesma proporção.</li>
+                            <li><strong>2033:</strong> Extinção completa do ICMS e do ISS. O novo sistema com IBS e CBS estará plenamente em vigor.</li>
+                        </ul>
+                    </div>
+
+                    <div class="tip-block">
+                        <h3>🧭 O Papel do Analista Fiscal na Transição</h3>
+                        <ul>
+                            <li><strong>Mantenha-se Informado:</strong> Acompanhe ativamente as notícias sobre a regulamentação da Reforma Tributária. Leis complementares serão publicadas para detalhar todas as regras.</li>
+                            <li><strong>Participe de Treinamentos:</strong> Haverá uma grande demanda por conhecimento sobre o novo sistema. Participe de webinars, cursos e seminários.</li>
+                            <li><strong>Dialogue com a TI:</strong> Converse com a equipe de TI e com os fornecedores de ERP para entender como eles estão se preparando para adaptar os sistemas aos novos impostos e às novas obrigações acessórias que surgirão.</li>
+                        </ul>
+                        <p>O futuro fiscal já começou. Estar preparado para ele não é uma opção, mas uma necessidade para o profissional que deseja se manter relevante e valorizado no mercado. O próximo capítulo trará a teoria para a prática, com casos completos resolvidos.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Capítulo 19: Casos Práticos Resolvidos -->
+            <div class="chapter" id="chapter-19">
+                <div class="chapter-header">
+                    <h1 class="chapter-title">Capítulo 19: Casos Práticos Resolvidos</h1>
+                </div>
+                <div class="chapter-content">
+                    <div class="content-block">
+                        <p>Neste capítulo, vamos consolidar todo o conhecimento adquirido aplicando-o a cenários do mundo real. Cada caso prático irá detalhar a situação, o raciocínio para a escolha do CFOP e da tributação, e como os principais campos do XML seriam preenchidos.</p>
+                        
+                        <div class="attention-block">
+                            <h3>🔴 Nota Didática Importante</h3>
+                            <p>Os valores de alíquotas de ICMS, MVA e FCP variam drasticamente por estado e por produto. Os valores utilizados nos exemplos a seguir são <strong>ilustrativos</strong> e servem para demonstrar a <strong>mecânica de cálculo e preenchimento</strong>. Em uma operação real, você <strong>deve</strong> substituir estes valores pelas alíquotas oficiais vigentes para a sua UF e o seu produto.</p>
+                        </div>
+                    </div>
+
+                    <div class="example-block">
+                        <h3>🧩 Caso 1 — Venda Interna (SP→SP), Regime Normal, sem ST</h3>
+                        <ul>
+                            <li><strong>Situação:</strong> Uma distribuidora (Regime Normal - CRT=3) em São Paulo vende um item de R$ 1.000,00 para um varejista também em São Paulo.</li>
+                            <li><strong>Raciocínio:</strong>
+                                <ul>
+                                    <li>Operação interna, venda de mercadoria de revenda: CFOP <code>5.102</code>.</li>
+                                    <li>Tributação de ICMS com alíquota interna de SP (ex: 18%).</li>
+                                    <li>Tributação de PIS/COFINS pelo regime não cumulativo (1,65% / 7,60%).</li>
+                                </ul>
+                            </li>
+                            <li><strong>Preenchimento do XML (trechos principais):</strong>
+                                <ul>
+                                    <li><code>&lt;ide&gt;</code>: <code>idDest=1</code>, <code>natOp="Venda de Mercadoria"</code></li>
+                                    <li><code>&lt;emit&gt;</code>: <code>CRT=3</code></li>
+                                    <li><code>&lt;det nItem="1"&gt;</code>
+                                        <ul>
+                                            <li><code>&lt;prod&gt;</code>: <code>CFOP=5102</code>, <code>vProd=1000.00</code></li>
+                                            <li><code>&lt;imposto&gt;</code>
+                                                <ul>
+                                                    <li><code>&lt;ICMS&gt;</code>: <code>orig=0</code>, <code>CST=00</code>, <code>modBC=3</code>, <code>vBC=1000.00</code>, <code>pICMS=18.00</code>, <code>vICMS=180.00</code></li>
+                                                    <li><code>&lt;PIS&gt;</code>: <code>CST=01</code>, <code>vBC=1000.00</code>, <code>pPIS=1.65</code>, <code>vPIS=16.50</code></li>
+                                                    <li><code>&lt;COFINS&gt;</code>: <code>CST=01</code>, <code>vBC=1000.00</code>, <code>pCOFINS=7.60</code>, <code>vCOFINS=76.00</code></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="example-block">
+                        <h3>🧩 Caso 2 — Venda Interestadual (SP→RJ) para Consumidor Final Não Contribuinte (E-commerce)</h3>
+                        <ul>
+                            <li><strong>Situação:</strong> Uma loja virtual em SP (Regime Normal) vende um produto de R$ 2.000,00 para uma pessoa física (não contribuinte) no Rio de Janeiro.</li>
+                            <li><strong>Raciocínio:</strong>
+                                <ul>
+                                    <li>Venda interestadual para não contribuinte: CFOP <code>6.108</code>.</li>
+                                    <li>Operação sujeita ao DIFAL.</li>
+                                    <li>Alíquota interestadual SP→RJ (ex: 12%).</li>
+                                    <li>Alíquota interna no RJ (ex: 18%).</li>
+                                    <li>Fundo de Combate à Pobreza (FCP) no RJ (ex: 2%).</li>
+                                </ul>
+                            </li>
+                            <li><strong>Preenchimento do XML (trechos principais):</strong>
+                                <ul>
+                                    <li><code>&lt;ide&gt;</code>: <code>idDest=2</code>, <code>indFinal=1</code></li>
+                                    <li><code>&lt;dest&gt;</code>: <code>indIEDest=9</code></li>
+                                    <li><code>&lt;det nItem="1"&gt;</code>
+                                        <ul>
+                                            <li><code>&lt;prod&gt;</code>: <code>CFOP=6108</code>, <code>vProd=2000.00</code></li>
+                                            <li><code>&lt;imposto&gt;</code>
+                                                <ul>
+                                                    <li><code>&lt;ICMS&gt;</code>: <code>orig=0</code>, <code>CST=00</code>, <code>vBC=2000.00</code>, <code>pICMS=12.00</code>, <code>vICMS=240.00</code></li>
+                                                    <li><code>&lt;ICMSUFDest&gt;</code>:
+                                                        <ul>
+                                                            <li><code>vBCUFDest=2000.00</code></li>
+                                                            <li><code>pFCPUFDest=2.00</code>, <code>vFCPUFDest=40.00</code></li>
+                                                            <li><code>pICMSUFDest=18.00</code>, <code>pICMSInter=12.00</code></li>
+                                                            <li><code>vICMSUFDest=120.00</code> (Valor do DIFAL para o RJ)</li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="example-block">
+                        <h3>🧩 Caso 3 — Venda com Substituição Tributária (ST) Interna</h3>
+                        <ul>
+                            <li><strong>Situação:</strong> Uma indústria (Substituto) em MG vende para um distribuidor (Substituído) em MG um produto de R$ 1.000,00. O produto tem ST.</li>
+                            <li><strong>Raciocínio:</strong>
+                                <ul>
+                                    <li>Venda interna com ST: CFOP <code>5.401</code>.</li>
+                                    <li>Calcular ICMS próprio e ICMS-ST.</li>
+                                    <li>Alíquota interna MG (ex: 18%).</li>
+                                    <li>MVA do produto (ex: 40%).</li>
+                                </ul>
+                            </li>
+                            <li><strong>Cálculos:</strong>
+                                <ul>
+                                    <li><code>vICMS_proprio</code> = 1.000,00 * 18% = R$ 180,00</li>
+                                    <li><code>vBCST</code> = 1.000,00 * (1 + 40%) = R$ 1.400,00</li>
+                                    <li><code>vICMSST</code> = (1.400,00 * 18%) - 180,00 = 252,00 - 180,00 = R$ 72,00</li>
+                                </ul>
+                            </li>
+                            <li><strong>Preenchimento do XML (trechos principais):</strong>
+                                <ul>
+                                    <li><code>&lt;det nItem="1"&gt;</code>
+                                        <ul>
+                                            <li><code>&lt;prod&gt;</code>: <code>CFOP=5401</code>, <code>CEST=...</code> (obrigatório)</li>
+                                            <li><code>&lt;imposto&gt;</code>
+                                                <ul>
+                                                    <li><code>&lt;ICMS&gt;</code>: <code>orig=0</code>, <code>CST=10</code> (Tributada e com cobrança do ICMS por ST), <code>vBC=1000.00</code>, <code>pICMS=18.00</code>, <code>vICMS=180.00</code>, <code>vBCST=1400.00</code>, <code>pMVAST=40.00</code>, <code>vICMSST=72.00</code></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="example-block">
+                        <h3>🧩 Caso 4 — Devolução de Compra Interestadual</h3>
+                        <ul>
+                            <li><strong>Situação:</strong> Sua empresa em SP comprou um item de um fornecedor de SC (NF-e de compra com CFOP <code>2.102</code>) e precisa devolvê-lo.</li>
+                            <li><strong>Raciocínio:</strong>
+                                <ul>
+                                    <li>A nota de devolução deve anular a de compra.</li>
+                                    <li>CFOP de devolução interestadual: <code>6.202</code>.</li>
+                                    <li>A finalidade da NF-e deve ser <code>finNFe=4</code>.</li>
+                                    <li>A chave de acesso da nota de compra original deve ser referenciada.</li>
+                                    <li>Os impostos (ICMS) devem ser destacados na devolução para que seu fornecedor possa se creditar.</li>
+                                </ul>
+                            </li>
+                            <li><strong>Preenchimento do XML (trechos principais):</strong>
+                                <ul>
+                                    <li><code>&lt;ide&gt;</code>: <code>finNFe=4</code></li>
+                                    <li><code>&lt;NFref&gt;</code>: <code>&lt;refNFe&gt;422509...&lt;/refNFe&gt;</code> (Chave da nota de compra de SC)</li>
+                                    <li><code>&lt;det nItem="1"&gt;</code>
+                                        <ul>
+                                            <li><code>&lt;prod&gt;</code>: <code>CFOP=6202</code></li>
+                                            <li><code>&lt;imposto&gt;</code>: <code>&lt;ICMS&gt;</code> (Preencher com os mesmos valores de base e de imposto da nota original de compra).</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="example-block">
+                        <h3>🧩 Caso 5 — Emissão de CT-e para Frete</h3>
+                        <ul>
+                            <li><strong>Situação:</strong> Uma transportadora em SP é contratada por uma indústria em SP (Remetente) para levar uma carga até um cliente em MG (Destinatário). O pagador do frete (Tomador) é a indústria paulista.</li>
+                            <li><strong>Raciocínio:</strong>
+                                <ul>
+                                    <li>Transporte interestadual. O ICMS do frete é devido para o estado de início (SP).</li>
+                                    <li>Tomador do serviço é o Remetente.</li>
+                                    <li>Vincular a NF-e da carga no CT-e.</li>
+                                </ul>
+                            </li>
+                            <li><strong>Preenchimento do CT-e (trechos principais):</strong>
+                                <ul>
+                                    <li><code>&lt;ide&gt;</code>: <code>cMunIni=3550308</code> (São Paulo), <code>cMunFim=3106200</code> (Belo Horizonte), <code>tpServ=0</code> (Normal)</li>
+                                    <li><code>&lt;rem&gt;</code>: Dados da indústria em SP.</li>
+                                    <li><code>&lt;dest&gt;</code>: Dados do cliente em MG.</li>
+                                    <li><code>&lt;toma_3&gt;</code>: <code>toma=0</code> (Remetente)</li>
+                                    <li><code>&lt;infNFe&gt;</code>: <code>&lt;chave&gt;352509...&lt;/chave&gt;</code> (Chave da NF-e da carga)</li>
+                                    <li><code>&lt;vPrest&gt;</code>: <code>vTPrest=500.00</code> (Valor do frete)</li>
+                                    <li><code>&lt;imp&gt;</code>: <code>CST=00</code>, <code>vBC=500.00</code>, <code>pICMS=12.00</code> (Alíquota interestadual de SP), <code>vICMS=60.00</code></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="content-block">
+                        <p>Estes casos ilustram como a análise da operação se traduz em preenchimento de campos e cálculo de impostos. O segredo é decompor a operação em suas partes fundamentais: O que é? (venda, devolução), Onde ocorre? (interna, interestadual), Para quem? (contribuinte, não contribuinte) e Quem paga? (no caso do frete). Com essas respostas, a escolha do CFOP e da tributação se torna um processo lógico.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Capítulo 20: Exercícios Práticos -->
+            <div class="chapter" id="chapter-20">
+                <div class="chapter-header">
+                    <h1 class="chapter-title">Capítulo 20: Exercícios Práticos</h1>
+                </div>
+                <div class="chapter-content">
+                    <div class="content-block">
+                        <p>Agora é a sua vez de aplicar o conhecimento. Os exercícios a seguir foram desenhados para testar sua capacidade de analisar um cenário, escolher a tributação e os códigos corretos, e calcular os impostos. As respostas detalhadas estão no Anexo, mas tente resolver cada um deles antes de consultar o gabarito.</p>
+                        
+                        <p>Lembre-se de usar os capítulos anteriores e os links para as tabelas oficiais como material de consulta.</p>
+                        
+                        <div class="attention-block">
+                            <h3>Convenções para os exercícios:</h3>
+                            <ul>
+                                <li>Sua empresa (o emitente) está localizada em <strong>São Paulo (SP)</strong> e é do <strong>Regime Normal (Lucro Real - CRT=3)</strong>.</li>
+                                <li>Alíquota interna de ICMS em SP: <strong>18%</strong>.</li>
+                                <li>Alíquota interestadual de ICMS (saindo de SP): <strong>12%</strong>.</li>
+                                <li>Alíquotas de PIS/COFINS (regime não cumulativo): <strong>1,65% / 7,60%</strong>.</li>
+                                <li>Considere os valores de MVA e FCP quando informados no cenário.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="example-block">
+                        <h3>Exercício 1: Venda Simples</h3>
+                        <p><strong>Cenário:</strong> Sua empresa vendeu 10 unidades do produto "Parafuso Sextavado Inox" (NCM: 7318.15.00) para a empresa "Metalúrgica Futuro Ltda.", localizada em Campinas (SP). O preço unitário do parafuso é de R$ 5,00.</p>
+                        
+                        <p><strong>Pede-se:</strong></p>
+                        <ol>
+                            <li>Qual o CFOP da operação?</li>
+                            <li>Qual o Valor Total da NF-e?</li>
+                            <li>Calcule os valores de ICMS, PIS e COFINS a serem destacados na nota.</li>
+                            <li>Quais os principais campos a serem preenchidos nos grupos <code>&lt;ide&gt;</code>, <code>&lt;dest&gt;</code> e <code>&lt;imposto&gt;</code>?</li>
+                        </ol>
+                    </div>
+
+                    <div class="example-block">
+                        <h3>Exercício 2: Venda com DIFAL para Não Contribuinte</h3>
+                        <p><strong>Cenário:</strong> Sua empresa (e-commerce) vendeu um "Monitor Gamer UltraWide" de R$ 3.500,00 para um cliente pessoa física (CPF) no estado do <strong>Paraná (PR)</strong>. A alíquota interna de ICMS no Paraná para este produto é de <strong>18%</strong> e não há FCP.</p>
+                        
+                        <p><strong>Pede-se:</strong></p>
+                        <ol>
+                            <li>Qual o CFOP da operação?</li>
+                            <li>Quais os valores dos campos <code>idDest</code>, <code>indFinal</code> e <code>indIEDest</code>?</li>
+                            <li>Calcule o valor do ICMS da operação interestadual (devido a SP).</li>
+                            <li>Calcule o valor do DIFAL devido ao estado do Paraná (PR).</li>
+                            <li>Como o grupo <code>&lt;ICMSUFDest&gt;</code> seria preenchido?</li>
+                        </ol>
+                    </div>
+
+                    <div class="example-block">
+                        <h3>Exercício 3: Devolução de Compra</h3>
+                        <p><strong>Cenário:</strong> Sua empresa precisa devolver um lote de "Rolamentos Industriais" que foi comprado da empresa "Fornecedor do Sul S.A.", localizada em Santa Catarina (SC). A NF-e de compra original, emitida pelo fornecedor, tinha os seguintes dados:</p>
+                        <ul>
+                            <li>Chave de Acesso: <code>4225081234567800019555001000123456100000001</code></li>
+                            <li>Valor dos Produtos: R$ 10.000,00</li>
+                            <li>Base de Cálculo do ICMS: R$ 10.000,00</li>
+                            <li>Alíquota de ICMS: 12%</li>
+                            <li>Valor do ICMS: R$ 1.200,00</li>
+                        </ul>
+                        
+                        <p><strong>Pede-se:</strong></p>
+                        <ol>
+                            <li>Qual o CFOP que sua empresa deverá usar na NF-e de devolução?</li>
+                            <li>Qual a finalidade de emissão (<code>finNFe</code>) da nota?</li>
+                            <li>Qual informação é obrigatória no grupo <code>&lt;NFref&gt;</code>?</li>
+                            <li>Quais os valores de Base de Cálculo e Valor do ICMS que deverão ser destacados na sua nota de devolução?</li>
+                        </ol>
+                    </div>
+
+                    <div class="example-block">
+                        <h3>Exercício 4: Venda com Substituição Tributária (ST)</h3>
+                        <p><strong>Cenário:</strong> Sua empresa é uma indústria de autopeças e vendeu "Velas de Ignição" (produto com ST em SP) para uma loja de autopeças em São Paulo. Os dados da operação são:</p>
+                        <ul>
+                            <li>Valor dos produtos: R$ 800,00</li>
+                            <li>MVA-ST definida para o produto: <strong>71,78%</strong></li>
+                        </ul>
+                        
+                        <p><strong>Pede-se:</strong></p>
+                        <ol>
+                            <li>Qual o CFOP da operação?</li>
+                            <li>Qual o CST do ICMS a ser utilizado?</li>
+                            <li>Calcule o valor do ICMS da operação própria.</li>
+                            <li>Calcule a Base de Cálculo do ICMS-ST (<code>vBCST</code>).</li>
+                            <li>Calcule o valor do ICMS-ST a ser retido (<code>vICMSST</code>).</li>
+                        </ol>
+                    </div>
+
+                    <div class="example-block">
+                        <h3>Exercício 5: Análise de Rejeição</h3>
+                        <p><strong>Cenário:</strong> Ao tentar transmitir uma NF-e para um cliente no Rio de Janeiro (RJ), seu sistema recebe a seguinte mensagem da SEFAZ: <strong>"Rejeição 696: Operação com não contribuinte deve indicar operação com consumidor final"</strong>.</p>
+                        
+                        <p>Analisando o XML, você encontra os seguintes campos:</p>
+                        <ul>
+                            <li><code>&lt;ide&gt;</code>: <code>idDest=2</code></li>
+                            <li><code>&lt;dest&gt;</code>: <code>indIEDest=9</code></li>
+                            <li><code>&lt;ide&gt;</code>: <code>indFinal=0</code></li>
+                        </ul>
+                        
+                        <p><strong>Pede-se:</strong></p>
+                        <ol>
+                            <li>Qual é a causa do erro?</li>
+                            <li>Qual campo deve ser corrigido e qual o seu valor correto?</li>
+                            <li>Após corrigir este erro, qual outro grupo de imposto você imediatamente verificaria se está preenchido, considerando que a operação é interestadual para um não contribuinte?</li>
+                        </ol>
+                    </div>
+
+                    <div class="tip-block">
+                        <h3>✅ Dica</h3>
+                        <p><em>Confira suas respostas no Anexo A: Gabarito dos Exercícios.</em></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Capítulo 21: Modelos e Anexos -->
+            <div class="chapter" id="chapter-21">
+                <div class="chapter-header">
+                    <h1 class="chapter-title">Capítulo 21: Modelos e Anexos</h1>
+                </div>
+                <div class="chapter-content">
+                    <div class="content-block">
+                        <p>Este manual se encerra com uma seção de anexos projetada para servir como um kit de ferramentas práticas para o seu dia a dia. Aqui, você encontrará modelos de textos, o gabarito dos exercícios para que possa validar seu aprendizado, e um glossário para consulta rápida dos termos e siglas mais comuns no universo dos documentos fiscais eletrônicos.</p>
+                        
+                        <p>Utilize estes recursos para acelerar seu trabalho e para reforçar os conceitos aprendidos ao longo dos capítulos.</p>
+                    </div>
+
+                    <div class="content-block">
+                        <h2>Modelos de Textos para o Campo "Informações Complementares" (<code>infCpl</code>)</h2>
+                        <p>O campo de informações complementares é um espaço valioso para adicionar informações que, embora não tenham um campo estruturado próprio, são importantes para a operação ou exigidas pela legislação.</p>
+                        
+                        <h3>Para Operações com Suspensão/Diferimento/Isenção:</h3>
+                        <div class="code-block">
+"ICMS suspenso, conforme Art. [Número do Artigo] do RICMS/[UF]."
+"Operação com isenção de IPI, conforme Decreto Nº 7.212/2010."
+"Diferimento do ICMS para o momento da entrada no estabelecimento do destinatário, conforme [Base Legal]."
+                        </div>
+
+                        <h3>Para Remessa para Industrialização:</h3>
+                        <div class="code-block">
+"Remessa para industrialização por encomenda, com suspensão de ICMS e IPI, conforme [Base Legal do seu estado]. Mercadoria deverá retornar em até 180 dias."
+                        </div>
+
+                        <h3>Para Devolução de Mercadoria:</h3>
+                        <div class="code-block">
+"NF-e referente à devolução total/parcial de mercadorias da sua NF-e de nº [Número da Nota Original], série [Série], emitida em [Data da Emissão Original]."
+                        </div>
+
+                        <h3>Para Simples Nacional (permitindo crédito):</h3>
+                        <div class="code-block">
+"DOCUMENTO EMITIDO POR ME OU EPP OPTANTE PELO SIMPLES NACIONAL. PERMITE O APROVEITAMENTO DO CRÉDITO DE ICMS NO VALOR DE R$ [Valor do ICMS] CORRESPONDENTE À ALÍQUOTA DE [Alíquota]% NOS TERMOS DO ART. 23 DA LC 123."
+                        </div>
+                    </div>
+
+                    <div class="content-block">
+                        <h2>Anexo A: Gabarito dos Exercícios</h2>
+                        <p>Neste anexo, você encontrará as respostas detalhadas para todos os exercícios propostos no Capítulo 20.</p>
+                        
+                        <div class="example-block">
+                            <h3>Gabarito do Exercício 1: Venda Simples</h3>
+                            <ol>
+                                <li><strong>CFOP:</strong> <code>5.102</code> (Venda de mercadoria adquirida ou recebida de terceiros).</li>
+                                <li><strong>Valor Total da NF-e:</strong> 10 unidades * R$ 5,00/unidade = <strong>R$ 50,00</strong>.</li>
+                                <li><strong>Cálculo dos Impostos:</strong>
+                                    <ul>
+                                        <li><strong>ICMS:</strong> R$ 50,00 * 18% = <strong>R$ 9,00</strong>.</li>
+                                        <li><strong>PIS:</strong> R$ 50,00 * 1,65% = <strong>R$ 0,83</strong> (arredondado).</li>
+                                        <li><strong>COFINS:</strong> R$ 50,00 * 7,60% = <strong>R$ 3,80</strong>.</li>
+                                    </ul>
+                                </li>
+                                <li><strong>Preenchimento do XML:</strong>
+                                    <ul>
+                                        <li><code>&lt;ide&gt;</code>: <code>idDest=1</code>, <code>natOp="Venda de Mercadoria"</code>.</li>
+                                        <li><code>&lt;dest&gt;</code>: CNPJ e dados da Metalúrgica Futuro, <code>indIEDest=1</code>.</li>
+                                        <li><code>&lt;imposto&gt;</code>: <code>&lt;ICMS&gt;</code> com <code>CST=00</code>, <code>vBC=50.00</code>, <code>pICMS=18.00</code>, <code>vICMS=9.00</code>. <code>&lt;PIS&gt;</code> e <code>&lt;COFINS&gt;</code> com <code>CST=01</code> e os valores calculados.</li>
+                                    </ul>
+                                </li>
+                            </ol>
+                        </div>
+
+                        <div class="example-block">
+                            <h3>Gabarito do Exercício 2: Venda com DIFAL</h3>
+                            <ol>
+                                <li><strong>CFOP:</strong> <code>6.108</code> (Venda de mercadoria adquirida ou recebida de terceiros, destinada a não contribuinte).</li>
+                                <li><strong>Valores dos Campos:</strong> <code>idDest=2</code>, <code>indFinal=1</code>, <code>indIEDest=9</code>.</li>
+                                <li><strong>ICMS Interestadual (para SP):</strong> R$ 3.500,00 * 12% = <strong>R$ 420,00</strong>.</li>
+                                <li><strong>DIFAL (para PR):</strong>
+                                    <ul>
+                                        <li>Diferença de Alíquotas: 18% (interna PR) - 12% (interestadual) = 6%.</li>
+                                        <li>Valor do DIFAL: R$ 3.500,00 * 6% = <strong>R$ 210,00</strong>.</li>
+                                    </ul>
+                                </li>
+                                <li><strong>Preenchimento do <code>&lt;ICMSUFDest&gt;</code>:</strong>
+                                    <ul>
+                                        <li><code>vBCUFDest=3500.00</code></li>
+                                        <li><code>pFCPUFDest=0.00</code>, <code>vFCPUFDest=0.00</code> (cenário não informa FCP)</li>
+                                        <li><code>pICMSUFDest=18.00</code>, <code>pICMSInter=12.00</code></li>
+                                        <li><code>vICMSUFDest=210.00</code></li>
+                                    </ul>
+                                </li>
+                            </ol>
+                        </div>
+
+                        <div class="example-block">
+                            <h3>Gabarito do Exercício 3: Devolução de Compra</h3>
+                            <ol>
+                                <li><strong>CFOP:</strong> <code>6.202</code> (Devolução de compra para comercialização).</li>
+                                <li><strong>Finalidade:</strong> <code>finNFe=4</code> (Devolução de mercadoria).</li>
+                                <li><strong>Informação Obrigatória:</strong> A chave de acesso da NF-e de compra (<code>4225...</code>) deve ser informada no grupo <code>&lt;NFref&gt;</code>.</li>
+                                <li><strong>Valores na Devolução:</strong> A nota de devolução deve espelhar a original. Portanto, a Base de Cálculo do ICMS será <strong>R$ 10.000,00</strong> e o Valor do ICMS será <strong>R$ 1.200,00</strong>.</li>
+                            </ol>
+                        </div>
+
+                        <div class="example-block">
+                            <h3>Gabarito do Exercício 4: Venda com ST</h3>
+                            <ol>
+                                <li><strong>CFOP:</strong> <code>5.403</code> (Venda de mercadoria adquirida ou recebida de terceiros em operação com mercadoria sujeita ao regime de ST, na condição de contribuinte substituto). <em>Nota: Se sua empresa for a indústria, o CFOP seria 5.401.</em></li>
+                                <li><strong>CST do ICMS:</strong> <code>10</code> (Tributada e com cobrança do ICMS por substituição tributária).</li>
+                                <li><strong>ICMS Próprio:</strong> R$ 800,00 * 18% = <strong>R$ 144,00</strong>.</li>
+                                <li><strong>Base de Cálculo do ICMS-ST:</strong> R$ 800,00 * (1 + 71,78%) = R$ 800,00 * 1,7178 = <strong>R$ 1.374,24</strong>.</li>
+                                <li><strong>Valor do ICMS-ST:</strong> (R$ 1.374,24 * 18%) - R$ 144,00 = R$ 247,36 - R$ 144,00 = <strong>R$ 103,36</strong>.</li>
+                            </ol>
+                        </div>
+
+                        <div class="example-block">
+                            <h3>Gabarito do Exercício 5: Análise de Rejeição</h3>
+                            <ol>
+                                <li><strong>Causa do Erro:</strong> A rejeição indica uma incoerência lógica. A SEFAZ afirma que, se a operação é destinada a um não contribuinte (<code>indIEDest=9</code>), ela necessariamente precisa ser para um consumidor final (<code>indFinal=1</code>). O XML foi enviado com <code>indFinal=0</code>.</li>
+                                <li><strong>Correção:</strong> O campo <code>&lt;indFinal&gt;</code> deve ser alterado de <code>0</code> para <code>1</code>.</li>
+                                <li><strong>Verificação Adicional:</strong> Após corrigir o erro, a próxima verificação obrigatória é o grupo <code>&lt;ICMSUFDest&gt;</code>. Uma operação interestadual (<code>idDest=2</code>) para um não contribuinte (<code>indIEDest=9</code>) é o gatilho para o cálculo do <strong>DIFAL</strong>. Você deve garantir que este grupo foi corretamente preenchido.</li>
+                            </ol>
+                        </div>
+                    </div>
+
+                    <div class="content-block">
+                        <h2>Anexo B: Glossário</h2>
+                        <p>Um dicionário rápido para decifrar a "sopa de letrinhas" do mundo fiscal.</p>
+                        
+                        <div class="table-container">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Sigla/Termo</th>
+                                        <th>Significado</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><strong>ABRASF</strong></td>
+                                        <td>Associação Brasileira das Secretarias de Finanças das Capitais. Criou um padrão para a NFS-e muito adotado pelos municípios.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>CC-e</strong></td>
+                                        <td>Carta de Correção Eletrônica. Evento para corrigir erros simples em DF-e.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>CEST</strong></td>
+                                        <td>Código Especificador da Substituição Tributária.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>CFOP</strong></td>
+                                        <td>Código Fiscal de Operações e Prestações.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>CONFAZ</strong></td>
+                                        <td>Conselho Nacional de Política Fazendária. Órgão que reúne os Secretários de Fazenda dos Estados e do DF para deliberar sobre políticas fiscais.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>CRT</strong></td>
+                                        <td>Código de Regime Tributário (Simples Nacional, Regime Normal, MEI).</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>CSC</strong></td>
+                                        <td>Código de Segurança do Contribuinte. Token usado para gerar o QR-Code da NFC-e.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>CSOSN</strong></td>
+                                        <td>Código de Situação da Operação no Simples Nacional.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>CST</strong></td>
+                                        <td>Código de Situação Tributária.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>CT-e</strong></td>
+                                        <td>Conhecimento de Transporte Eletrônico.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>DACTE</strong></td>
+                                        <td>Documento Auxiliar do Conhecimento de Transporte Eletrônico.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>DAMDFE</strong></td>
+                                        <td>Documento Auxiliar do Manifesto de Documentos Fiscais Eletrônico.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>DANFE</strong></td>
+                                        <td>Documento Auxiliar da Nota Fiscal Eletrônica.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>DF-e</strong></td>
+                                        <td>Documento Fiscal Eletrônico (termo genérico).</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>DIFAL</strong></td>
+                                        <td>Diferencial de Alíquotas do ICMS.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>EPEC</strong></td>
+                                        <td>Evento Prévio de Emissão em Contingência.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>FCP</strong></td>
+                                        <td>Fundo de Combate à Pobreza.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>GTIN</strong></td>
+                                        <td>Global Trade Item Number (código de barras do produto).</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>IBS</strong></td>
+                                        <td>Imposto sobre Bens e Serviços (Reforma Tributária).</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>ICMS</strong></td>
+                                        <td>Imposto sobre Circulação de Mercadorias e Serviços.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>IE</strong></td>
+                                        <td>Inscrição Estadual.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>IPI</strong></td>
+                                        <td>Imposto sobre Produtos Industrializados.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>ISS</strong></td>
+                                        <td>Imposto Sobre Serviços.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>MDF-e</strong></td>
+                                        <td>Manifesto de Documentos Fiscais Eletrônico.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>MOC</strong></td>
+                                        <td>Manual de Orientação do Contribuinte.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>MVA</strong></td>
+                                        <td>Margem de Valor Agregado (usada no cálculo da ST).</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>NCM</strong></td>
+                                        <td>Nomenclatura Comum do Mercosul.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>NF-e</strong></td>
+                                        <td>Nota Fiscal de Produtos Eletrônica (modelo 55).</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>NFC-e</strong></td>
+                                        <td>Nota Fiscal de Consumidor Eletrônica (modelo 65).</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>NFS-e</strong></td>
+                                        <td>Nota Fiscal de Serviços Eletrônica.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>NT</strong></td>
+                                        <td>Nota Técnica. Documento que publica alterações e novas regras para os DF-e.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>PIS/COFINS</strong></td>
+                                        <td>Programa de Integração Social / Contribuição para o Financiamento da Seguridade Social.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>POP</strong></td>
+                                        <td>Procedimento Operacional Padrão.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>PVA</strong></td>
+                                        <td>Programa Validador e Assinador do SPED.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>QR-Code</strong></td>
+                                        <td>Quick Response Code. Código 2D usado na NFC-e para consulta rápida.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>RPS</strong></td>
+                                        <td>Recibo Provisório de Serviços. Rascunho da NFS-e usado em sistemas municipais.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>RTC</strong></td>
+                                        <td>Reforma Tributária do Consumo.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>SAT</strong></td>
+                                        <td>Sistema Autenticador e Transmissor (usado em SP para o CF-e).</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>SEFAZ</strong></td>
+                                        <td>Secretaria de Estado da Fazenda.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>SPED</strong></td>
+                                        <td>Sistema Público de Escrituração Digital.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>ST</strong></td>
+                                        <td>Substituição Tributária.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>SVC</strong></td>
+                                        <td>Sefaz Virtual de Contingência.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Capítulo 22: Referências Oficiais -->
+            <div class="chapter" id="chapter-22">
+                <div class="chapter-header">
+                    <h1 class="chapter-title">Capítulo 22: Referências Oficiais</h1>
+                </div>
+                <div class="chapter-content">
+                    <div class="content-block">
+                        <p>O conhecimento fiscal sólido é construído sobre a consulta constante às fontes primárias de informação. A legislação tributária é viva e dinâmica, e confiar em informações de segunda mão ou desatualizadas é um risco que um profissional de excelência não pode correr. Este capítulo compila os links diretos para os portais e documentos mais importantes que foram a base para a construção deste manual. Mantenha esta página em seus favoritos.</p>
+                    </div>
+
+                    <div class="content-block">
+                        <h2>Portais Nacionais</h2>
+                        
+                        <h3>Portal Nacional da NF-e:</h3>
+                        <p>Centraliza a documentação técnica (MOCs, NTs, schemas) para NF-e, NFC-e, CT-e e MDF-e.</p>
+                        <p><strong>Link:</strong> <a href="https://www.nfe.fazenda.gov.br/portal/principal.aspx" target="_blank">https://www.nfe.fazenda.gov.br/portal/principal.aspx</a></p>
+
+                        <h3>Portal Nacional da NFS-e (Padrão Nacional):</h3>
+                        <p>Ponto central para a Nota Fiscal de Serviços eletrônica no novo padrão unificado.</p>
+                        <p><strong>Link:</strong> <a href="https://www.gov.br/nfse/pt-br" target="_blank">https://www.gov.br/nfse/pt-br</a></p>
+
+                        <h3>Portal do SPED (Sistema Público de Escrituração Digital):</h3>
+                        <p>Onde se encontram os programas validadores (PVA), os guias práticos e toda a legislação da EFD-ICMS/IPI, EFD-Contribuições e demais escriturações.</p>
+                        <p><strong>Link:</strong> <a href="http://sped.rfb.gov.br/" target="_blank">http://sped.rfb.gov.br/</a></p>
+
+                        <h3>CONFAZ (Conselho Nacional de Política Fazendária):</h3>
+                        <p>Para consulta a Ajustes SINIEF, Convênios ICMS e Protocolos que regem a legislação tributária nacionalmente.</p>
+                        <p><strong>Link:</strong> <a href="https://www.confaz.fazenda.gov.br/" target="_blank">https://www.confaz.fazenda.gov.br/</a></p>
+                    </div>
+
+                    <div class="content-block">
+                        <h2>Legislação e Tabelas Críticas</h2>
+                        
+                        <h3>NCM (Nomenclatura Comum do Mercosul):</h3>
+                        <p><strong>Consulta e Download (Portal Único Siscomex - Classif):</strong> <a href="https://portalunico.siscomex.gov.br/classif/" target="_blank">https://portalunico.siscomex.gov.br/classif/</a></p>
+
+                        <h3>CEST (Código Especificador da Substituição Tributária):</h3>
+                        <p><strong>Convênio ICMS 142/2018:</strong> <a href="https://www.confaz.fazenda.gov.br/legislacao/convenios/2018/cv142_18" target="_blank">https://www.confaz.fazenda.gov.br/legislacao/convenios/2018/cv142_18</a></p>
+
+                        <h3>CFOP (Código Fiscal de Operações e Prestações):</h3>
+                        <p><strong>Tabela Oficial (Anexo do Convênio S/Nº de 1970):</strong> <a href="https://www.confaz.fazenda.gov.br/legislacao/convenios/sinief/cvsn_70" target="_blank">https://www.confaz.fazenda.gov.br/legislacao/convenios/sinief/cvsn_70</a></p>
+
+                        <h3>TIPI (Tabela de Incidência do IPI):</h3>
+                        <p><strong>Decreto nº 11.158/2022 (e alterações):</strong> <a href="https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2022/decreto/d11158.htm" target="_blank">https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2022/decreto/d11158.htm</a></p>
+
+                        <h3>PIS/COFINS (Legislação Consolidada):</h3>
+                        <p><strong>Instrução Normativa RFB nº 1.911/2019:</strong> <a href="https://www.in.gov.br/en/web/dou/-/instrucao-normativa-n-1.911-de-11-de-outubro-de-2019-222233202" target="_blank">https://www.in.gov.br/en/web/dou/-/instrucao-normativa-n-1.911-de-11-de-outubro-de-2019-222233202</a></p>
+
+                        <h3>ISS (Imposto Sobre Serviços):</h3>
+                        <p><strong>Lei Complementar nº 116/2003 (Lista de Serviços):</strong> <a href="https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp116.htm" target="_blank">https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp116.htm</a></p>
+                    </div>
+
+                    <div class="content-block">
+                        <h2>Manuais de Orientação do Contribuinte (MOC)</h2>
+                        <ul>
+                            <li><strong>MOC da NF-e e NFC-e:</strong> Acessível através da seção "Documentos" do Portal Nacional da NF-e.</li>
+                            <li><strong>MOC do CT-e:</strong> Acessível através da seção "Documentos" do Portal Nacional do CT-e.</li>
+                            <li><strong>MOC do MDF-e:</strong> Acessível através da seção "Documentos" do Portal Nacional do MDF-e.</li>
+                        </ul>
+                    </div>
+
+                    <div class="content-block">
+                        <h2>Notas Técnicas (NTs) Relevantes Citadas</h2>
+                        <ul>
+                            <li><strong>NT 2024.001:</strong> Institui o CRT=4 para o MEI.</li>
+                            <li><strong>NT 2025.001:</strong> Institui o QR-Code v3.0 para a NFC-e.</li>
+                            <li><strong>NT 2025.002:</strong> Introduz os campos da Reforma Tributária (IBS/CBS/IS) nos leiautes.</li>
+                            <li><strong>NT 2022.005:</strong> Trata das regras de validação do DIFAL.</li>
+                            <li><strong>NT 2021.003:</strong> Define as regras de validação do GTIN.</li>
+                            <li><strong>NT 2020.001:</strong> Traz atualizações para a Manifestação do Destinatário.</li>
+                        </ul>
+                        
+                        <div class="attention-block">
+                            <h3>🔴 Atenção</h3>
+                            <p><em>As Notas Técnicas são publicadas na seção "Documentos" dos respectivos portais (NF-e, CT-e, etc.). É crucial sempre verificar a versão mais recente.</em></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>&copy; 2024 RJC Assessoria - "A Arte de Registrar o Patrimônio"</p>
+            <p>Manual Técnico Pleno de Documentos Fiscais Eletrônicos</p>
+            <p>Todos os direitos reservados</p>
+        </footer>
+
+        <!-- Page Number -->
+        <div class="page-number">
+            Página <span id="current-page">1</span> de 114
+        </div>
+    </div>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Dynamic page numbering simulation
+        let currentPage = 1;
+        const totalPages = 114;
+        
+        function updatePageNumber() {
+            const scrollPosition = window.scrollY;
+            const documentHeight = document.documentElement.scrollHeight - window.innerHeight;
+            const scrollPercentage = scrollPosition / documentHeight;
+            currentPage = Math.max(1, Math.min(totalPages, Math.ceil(scrollPercentage * totalPages)));
+            document.getElementById('current-page').textContent = currentPage;
+        }
+
+        window.addEventListener('scroll', updatePageNumber);
+        
+        // Initialize page number
+        updatePageNumber();
+    </script>
+</body>
+</html>

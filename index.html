@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RJC Assessoria - Portal de Conhecimento</title>
+    <style>
+        /* Reset e configurações básicas */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Variáveis CSS para cores RJC */
+        :root {
+            --rjc-azul-principal: #1e3a8a;
+            --rjc-azul-secundario: #3b82f6;
+            --rjc-azul-claro: #60a5fa;
+            --rjc-laranja: #f97316;
+            --rjc-roxo: #7c3aed;
+            --rjc-verde: #16a34a;
+            --rjc-vermelho: #dc2626;
+            --rjc-branco: #ffffff;
+            --rjc-cinza-claro: #f8fafc;
+            --rjc-cinza-medio: #64748b;
+            --rjc-cinza-escuro: #334155;
+            --rjc-gradiente: linear-gradient(135deg, var(--rjc-azul-principal) 0%, var(--rjc-azul-secundario) 100%);
+        }
+
+        /* Tipografia */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--rjc-cinza-escuro);
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+        }
+
+        /* Container principal */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: var(--rjc-branco);
+            box-shadow: 0 0 30px rgba(0,0,0,0.1);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        /* Cabeçalho */
+        .header {
+            background: var(--rjc-gradiente);
+            color: var(--rjc-branco);
+            padding: 3rem 2rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .header::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: repeating-linear-gradient(
+                45deg,
+                transparent,
+                transparent 10px,
+                rgba(255,255,255,0.05) 10px,
+                rgba(255,255,255,0.05) 20px
+            );
+            animation: slide 20s linear infinite;
+        }
+
+        @keyframes slide {
+            0% { transform: translateX(-50px); }
+            100% { transform: translateX(50px); }
+        }
+
+        .logo-container {
+            position: relative;
+            z-index: 2;
+            margin-bottom: 2rem;
+        }
+
+        .logo-container img {
+            max-width: 300px;
+            height: auto;
+            filter: brightness(0) invert(1);
+        }
+
+        .header h1 {
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+            position: relative;
+            z-index: 1;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .header .subtitle {
+            font-size: 1.4rem;
+            opacity: 0.9;
+            position: relative;
+            z-index: 1;
+            font-weight: 300;
+        }
+
+        /* Conteúdo principal */
+        .content {
+            padding: 3rem 2rem;
+        }
+
+        /* Seção Sobre a RJC */
+        .about-section {
+            background: linear-gradient(135deg, var(--rjc-cinza-claro) 0%, #e2e8f0 100%);
+            padding: 3rem;
+            margin-bottom: 3rem;
+            border-radius: 15px;
+            border-left: 6px solid var(--rjc-azul-secundario);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+        }
+
+        .about-section h2 {
+            color: var(--rjc-azul-principal);
+            margin-bottom: 1.5rem;
+            font-size: 2.2rem;
+            text-align: center;
+        }
+
+        .about-section .section-subtitle {
+            text-align: center;
+            font-style: italic;
+            color: var(--rjc-cinza-medio);
+            margin-bottom: 2rem;
+            font-size: 1.1rem;
+        }
+
+        .about-section p {
+            margin-bottom: 1.5rem;
+            text-align: justify;
+            font-size: 1.05rem;
+            line-height: 1.7;
+        }
+
+        .content-block {
+            background: rgba(255,255,255,0.8);
+            padding: 2rem;
+            border-radius: 10px;
+            border-left: 4px solid var(--rjc-laranja);
+            margin-top: 2rem;
+        }
+
+        .block-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: var(--rjc-azul-principal);
+            margin-bottom: 1rem;
+        }
+
+        /* Menu de navegação dos manuais */
+        .manuals-section {
+            margin-top: 3rem;
+        }
+
+        .manuals-section h2 {
+            color: var(--rjc-azul-principal);
+            margin-bottom: 2rem;
+            font-size: 2.2rem;
+            text-align: center;
+        }
+
+        .manuals-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .manual-card {
+            background: linear-gradient(135deg, var(--rjc-branco) 0%, var(--rjc-cinza-claro) 100%);
+            padding: 2rem;
+            border-radius: 15px;
+            border-left: 5px solid var(--rjc-azul-secundario);
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+
+        .manual-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+            border-left-color: var(--rjc-laranja);
+        }
+
+        .manual-card h3 {
+            color: var(--rjc-azul-principal);
+            font-size: 1.4rem;
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+
+        .manual-card p {
+            color: var(--rjc-cinza-medio);
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+        .manual-card .manual-status {
+            display: inline-block;
+            background: var(--rjc-verde);
+            color: var(--rjc-branco);
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 500;
+            margin-top: 1rem;
+        }
+
+        /* Footer */
+        .footer {
+            background: var(--rjc-cinza-escuro);
+            color: var(--rjc-branco);
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+        }
+
+        .footer p {
+            opacity: 0.8;
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2rem;
+            }
+            
+            .header .subtitle {
+                font-size: 1.1rem;
+            }
+            
+            .content {
+                padding: 2rem 1rem;
+            }
+            
+            .about-section {
+                padding: 2rem;
+            }
+            
+            .manuals-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Cabeçalho -->
+        <header class="header">
+            <div class="logo-container">
+                <img src="logo.png" alt="RJC Assessoria - A Arte de Registrar o Patrimônio">
+            </div>
+            <h1>Portal de Conhecimento</h1>
+            <p class="subtitle">Manuais Técnicos e Guias Especializados</p>
+        </header>
+
+        <!-- Conteúdo principal -->
+        <main class="content">
+            <!-- Sobre a RJC Assessoria -->
+            <section class="about-section">
+                <h2>Sobre a RJC Assessoria</h2>
+                <p class="section-subtitle">A Arte de Registrar o Patrimônio</p>
+                
+                <p>
+                    Nascida do compromisso com a excelência e da paixão por números que transformam negócios, a <strong>RJC Assessoria</strong> trilhou uma jornada de crescimento notável. Começamos com a confiança de um único cliente, um supermercado com um modesto faturamento, e, com foco e constância, expandimos nossa atuação para todo o território nacional, atendendo a uma carteira de clientes cujo faturamento somado ultrapassa os <strong>R$ 750 milhões anuais</strong>.
+                </p>
+                
+                <p>
+                    Nossa expertise se traduz em resultados concretos: já <strong>transacionamos mais de R$ 3 bilhões em tributos</strong>, otimizando a carga fiscal de nossos parceiros em 9 estados brasileiros. Atuamos em setores de alta complexidade, como <strong>indústrias farmacêuticas, construção civil e distribuição de eletrônicos</strong>, o que nos confere uma visão ampla e profunda das particularidades de cada negócio.
+                </p>
+                
+                <p>
+                    Mais do que números, somos especialistas em pessoas. Entendemos que por trás de cada balanço, de cada fluxo de caixa, existem sonhos, desafios e a busca por um crescimento sólido e sustentável. Por isso, nossa missão é oferecer <strong>soluções sob medida</strong>, aliando profissionalismo e eficácia, para que nossos parceiros não apenas alcancem destaque no mercado, mas também <strong>ampliem seu patrimônio</strong> de maneira constante.
+                </p>
+                
+                <div class="content-block">
+                    <div class="block-title">Nossa Missão</div>
+                    <p><strong>"Somos a arte de registrar o patrimônio."</strong> Nosso maior orgulho é ver nossos clientes prosperarem, com a segurança de uma gestão financeira robusta e a tranquilidade de saber que seus números estão em boas mãos.</p>
+                </div>
+            </section>
+
+            <!-- Manuais disponíveis -->
+            <section class="manuals-section">
+                <h2>Manuais Técnicos Disponíveis</h2>
+                
+                <div class="manuals-grid">
+                    <a href="manual-fiscal.html" class="manual-card">
+                        <h3>Manual de Documentos Fiscais Eletrônicos</h3>
+                        <p>Guia completo sobre DF-e, incluindo NF-e, CT-e, MDF-e, NFS-e e demais documentos fiscais eletrônicos. Aborda desde conceitos básicos até procedimentos avançados de auditoria e compliance.</p>
+                        <span class="manual-status">Disponível</span>
+                    </a>
+                    
+                    <a href="manual-financeiro.html" class="manual-card">
+                        <h3>Manual de Gestão Financeira Empresarial</h3>
+                        <p>Manual profissional abrangendo fundamentos de tesouraria, controladoria, playbooks operacionais e casos práticos para gestão financeira eficiente.</p>
+                        <span class="manual-status">Disponível</span>
+                    </a>
+                    
+                    <a href="guia-dp-rh.html" class="manual-card">
+                        <h3>Guia de Departamento Pessoal e RH</h3>
+                        <p>Guia prático para gestão de recursos humanos, incluindo rotinas de DP, compliance trabalhista, folha de pagamento e procedimentos administrativos.</p>
+                        <span class="manual-status">Disponível</span>
+                    </a>
+                    
+                    <a href="compliance-transportadoras.html" class="manual-card">
+                        <h3>Compliance Fiscal em Transporte Rodoviário</h3>
+                        <p>Livro didático especializado em compliance fiscal e operacional para transporte rodoviário de cargas, com foco em Goiás e legislação interestadual.</p>
+                        <span class="manual-status">Disponível</span>
+                    </a>
+                </div>
+            </section>
+        </main>
+
+        <!-- Rodapé -->
+        <footer class="footer">
+            <p>&copy; 2025 RJC Assessoria. Todos os direitos reservados.</p>
+            <p>A Arte de Registrar o Patrimônio</p>
+        </footer>
+    </div>
+</body>
+</html>

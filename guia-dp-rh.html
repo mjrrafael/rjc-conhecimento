@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guia Prático de DP e RH - RJC Assessoria</title>
+    <style>
+        /* Reset e configurações básicas */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Variáveis CSS para cores RJC */
+        :root {
+            --rjc-azul-principal: #1e3a8a;
+            --rjc-azul-secundario: #3b82f6;
+            --rjc-azul-claro: #60a5fa;
+            --rjc-laranja: #f97316;
+            --rjc-roxo: #7c3aed;
+            --rjc-verde: #16a34a;
+            --rjc-vermelho: #dc2626;
+            --rjc-branco: #ffffff;
+            --rjc-cinza-claro: #f8fafc;
+            --rjc-cinza-medio: #64748b;
+            --rjc-cinza-escuro: #334155;
+            --rjc-gradiente: linear-gradient(135deg, var(--rjc-azul-principal) 0%, var(--rjc-azul-secundario) 100%);
+        }
+
+        /* Tipografia */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--rjc-cinza-escuro);
+            background-color: var(--rjc-cinza-claro);
+        }
+
+        /* Container principal */
+        .container {
+            max-width: 210mm; /* A4 width */
+            margin: 0 auto;
+            background: var(--rjc-branco);
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            min-height: 100vh;
+        }
+
+        /* Cabeçalho */
+        .header {
+            background: var(--rjc-gradiente);
+            color: var(--rjc-branco);
+            padding: 2rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M 10 0 L 0 0 0 10" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="0.5"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)"/></svg>');
+            opacity: 0.3;
+        }
+
+        .title {
+            position: relative;
+            z-index: 2;
+        }
+
+        .title h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            font-weight: 400;
+            opacity: 0.9;
+            margin-bottom: 0.5rem;
+        }
+
+        .version {
+            font-size: 1rem;
+            opacity: 0.8;
+            font-style: italic;
+        }
+
+        /* Navegação/Índice */
+        .nav-container {
+            background: var(--rjc-branco);
+            border-bottom: 3px solid var(--rjc-azul-principal);
+            padding: 1rem 2rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .nav-title {
+            color: var(--rjc-azul-principal);
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .nav-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .nav-link {
+            color: var(--rjc-cinza-medio);
+            text-decoration: none;
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            transition: all 0.3s ease;
+            font-size: 0.9rem;
+        }
+
+        .nav-link:hover {
+            background: var(--rjc-azul-claro);
+            color: var(--rjc-branco);
+            transform: translateY(-2px);
+        }
+
+        /* Conteúdo principal */
+        .content {
+            padding: 2rem;
+        }
+
+        /* Seções */
+        .section {
+            margin-bottom: 3rem;
+            page-break-inside: avoid;
+        }
+
+        .section-header {
+            background: var(--rjc-gradiente);
+            color: var(--rjc-branco);
+            padding: 1.5rem;
+            border-radius: 12px 12px 0 0;
+            margin-bottom: 0;
+        }
+
+        .section-title {
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+
+        .section-subtitle {
+            font-size: 1rem;
+            opacity: 0.9;
+        }
+
+        .section-content {
+            background: var(--rjc-branco);
+            border: 1px solid #e2e8f0;
+            border-top: none;
+            border-radius: 0 0 12px 12px;
+            padding: 2rem;
+        }
+
+        /* Blocos de conteúdo */
+        .content-block {
+            background: var(--rjc-cinza-claro);
+            border-left: 4px solid var(--rjc-azul-secundario);
+            padding: 1.2rem;
+            margin: 1rem 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .content-block.warning {
+            border-left-color: var(--rjc-laranja);
+            background: #fef3c7;
+        }
+
+        .content-block.important {
+            border-left-color: var(--rjc-vermelho);
+            background: #fee2e2;
+        }
+
+        .content-block.success {
+            border-left-color: var(--rjc-verde);
+            background: #dcfce7;
+        }
+
+        .block-title {
+            font-weight: 600;
+            color: var(--rjc-azul-principal);
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+        }
+
+        /* Tabelas */
+        .table-container {
+            overflow-x: auto;
+            margin: 1.5rem 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: var(--rjc-branco);
+        }
+
+        th {
+            background: var(--rjc-azul-principal);
+            color: var(--rjc-branco);
+            padding: 1rem;
+            text-align: left;
+            font-weight: 600;
+        }
+
+        td {
+            padding: 0.8rem 1rem;
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        tr:nth-child(even) {
+            background: var(--rjc-cinza-claro);
+        }
+
+        /* Listas */
+        ul, ol {
+            margin: 1rem 0;
+            padding-left: 2rem;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+        }
+
+        /* Texto justificado */
+        .text-justify {
+            text-align: justify;
+        }
+
+        .mt-2 {
+            margin-top: 1rem;
+        }
+
+        .mt-3 {
+            margin-top: 1.5rem;
+        }
+
+        /* Código */
+        .code-block {
+            background: #f1f5f9;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            padding: 1.5rem;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9rem;
+            margin: 1rem 0;
+            white-space: pre-wrap;
+        }
+
+        /* Rodapé */
+        .footer {
+            background: var(--rjc-cinza-claro);
+            padding: 2rem;
+            text-align: center;
+            color: var(--rjc-cinza-medio);
+            border-top: 1px solid #e2e8f0;
+            margin-top: 3rem;
+        }
+
+        /* Numeração de páginas */
+        .page-number {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: var(--rjc-azul-principal);
+            color: var(--rjc-branco);
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            z-index: 1000;
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            .container {
+                max-width: 100%;
+                margin: 0;
+            }
+            
+            .content {
+                padding: 1rem;
+            }
+            
+            .header {
+                padding: 1rem;
+            }
+            
+            .title h1 {
+                font-size: 1.8rem;
+            }
+            
+            .nav-links {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+        }
+
+        /* Print styles */
+        @media print {
+            .nav-container {
+                position: static;
+            }
+            
+            .page-number {
+                position: static;
+                float: right;
+                margin-top: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Container principal -->
+    <div class="container">
+        <!-- Cabeçalho -->
+        <header class="header">
+            <div class="title">
+                <h1>GUIA PRÁTICO DE DP E RH</h1>
+                <div class="subtitle">Departamento Pessoal, Recursos Humanos e SST</div>
+                <div class="version">Brasil, 2025</div>
+            </div>
+        </header>
+
+        <!-- Navegação -->
+        <nav class="nav-container">
+            <div class="nav-title">Navegação Rápida</div>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">← Voltar ao Índice</a>
+                <a href="#conceitos" class="nav-link">Conceitos</a>
+                <a href="#admissao" class="nav-link">Admissão</a>
+                <a href="#jornada" class="nav-link">Jornada</a>
+                <a href="#remuneracao" class="nav-link">Remuneração</a>
+                <a href="#ferias" class="nav-link">Férias</a>
+                <a href="#sst" class="nav-link">SST</a>
+                <a href="#faltas" class="nav-link">Faltas</a>
+                <a href="#rescisoes" class="nav-link">Rescisões</a>
+                <a href="#sindicatos" class="nav-link">Sindicatos</a>
+                <a href="#casos-criticos" class="nav-link">Casos Críticos</a>
+                <a href="#apendices" class="nav-link">Apêndices</a>
+            </div>
+        </nav>
+
+        <!-- Conteúdo principal -->
+        <main class="content">
+            <!-- Introdução -->
+            <section class="section">
+                <div class="content-block important">
+                    <div class="block-title">Como usar este guia</div>
+                    <p class="text-justify">Este material foi escrito para o(a) empresário(a) que precisa <strong>entender e aplicar</strong> as regras de Departamento Pessoal (DP), Recursos Humanos (RH), Saúde e Segurança do Trabalho (SST) e <strong>cumprir prazos oficiais</strong> (eSocial, FGTS Digital, DCTFWeb, EFD‑Reinf). Sempre que você ler "<em>(nós)</em>", significa que <strong>nossa equipe executará</strong> a etapa técnica; a você cabe <strong>fornecer as informações e autorizações</strong> no prazo.</p>
+                </div>
+            </section>
+
+            <!-- Conceitos-chave -->
+            <section id="conceitos" class="section">
+                <div class="section-header">
+                    <h2 class="section-title">1. Conceitos-chave e mapa do sistema</h2>
+                    <p class="section-subtitle">Fundamentos essenciais para gestão de pessoas</p>
+                </div>
+                <div class="section-content">
+                    <ul>
+                        <li><strong>DP x RH</strong>: O DP cuida das obrigações legais e operacionais (folha, tributos, rescisões). O RH trata de políticas, cultura, desempenho e desenvolvimento.</li>
+                        <li><strong>eSocial</strong>: Plataforma do governo que unifica dados trabalhistas, previdenciários e fiscais. Para empresas obrigadas, substitui CAGED/RAIS.</li>
+                        <li><strong>FGTS Digital</strong>: Sistema para apurar e pagar o FGTS (mensal até o dia 20) e o rescisório (no prazo de 10 dias da rescisão).</li>
+                        <li><strong>DCTFWeb e EFD‑Reinf</strong>: A DCTFWeb consolida débitos do eSocial/Reinf. A EFD‑Reinf escritura retenções e serviços.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Admissão -->
+            <section id="admissao" class="section">
+                <div class="section-header">
+                    <h2 class="section-title">2. Admissão — do "ok para contratar" ao primeiro dia</h2>
+                    <p class="section-subtitle">Processo completo de contratação</p>
+                </div>
+                <div class="section-content">
+                    <h3>2.1 Linha do tempo (o essencial)</h3>
+                    <ol>
+                        <li><strong>Aprovação de vaga e salário</strong> (interno).</li>
+                        <li><strong>Coleta de documentos</strong> do candidato.</li>
+                        <li><strong>Exame admissional (ASO)</strong> — deve ocorrer <strong>antes</strong> do início.</li>
+                        <li><strong>Cadastro no eSocial</strong>:
+                            <ul>
+                                <li><strong>S‑2190 (Admissão preliminar)</strong>: enviado <strong>até a véspera</strong> do início.</li>
+                                <li><strong>S‑2200 (Admissão completa)</strong>: até o <strong>dia 15</strong> do mês seguinte.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Entrega de normas internas</strong> e contrato.</li>
+                        <li><strong>Registro de jornada</strong> quando a empresa tiver 20+ empregados.</li>
+                    </ol>
+                    
+                    <div class="content-block warning">
+                        <div class="block-title">ATENÇÃO</div>
+                        <p>Sem <strong>ASO admissional apto</strong>, ninguém inicia. Sem <strong>S‑2190 na véspera</strong>, a admissão fica irregular.</p>
+                    </div>
+
+                    <h3>2.2 Checklist de documentos a solicitar</h3>
+                    <ul>
+                        <li><strong>Obrigatórios</strong>: Documento com foto (RG/CNH) e CPF, CTPS Digital, comprovante de endereço, dados bancários, estado civil, escolaridade, PIS/NIS e ASO admissional (apto).</li>
+                        <li><strong>Condicionais</strong>: CNH (se exigido), certificados de NRs, laudo de PcD, registro em conselho (CREA, etc.), CRNM para estrangeiros.</li>
+                        <li><strong>Menores/aprendizes</strong>: Documentos do responsável e comprovante escolar.</li>
+                    </ul>
+                    
+                    <div class="content-block important">
+                        <div class="block-title">LGPD</div>
+                        <p>Colete apenas o necessário. CID em atestados só com consentimento.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Jornada -->
+            <section id="jornada" class="section">
+                <div class="section-header">
+                    <h2 class="section-title">3. Jornada, ponto e atrasos</h2>
+                    <p class="section-subtitle">O que pode e o que não pode</p>
+                </div>
+                <div class="section-content">
+                    <ul>
+                        <li><strong>Controle de ponto obrigatório</strong> a partir de <strong>20 empregados</strong>.</li>
+                        <li><strong>Ponto por exceção</strong> é permitido pelo art. 74 §4º da CLT, mediante <strong>acordo individual escrito</strong> ou previsão em ACT/CCT.</li>
+                        <li><strong>Tolerância legal</strong>: Até 5 min por marcação, limitado a 10 min/dia (não gera desconto nem hora extra).</li>
+                        <li>Atrasos/faltas além da tolerância podem gerar <strong>desconto</strong>, reflexo no DSR e medidas disciplinares.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Remuneração -->
+            <section id="remuneracao" class="section">
+                <div class="section-header">
+                    <h2 class="section-title">4. Remuneração e tributos sobre a folha</h2>
+                    <p class="section-subtitle">Prazos e obrigações mensais</p>
+                </div>
+                <div class="section-content">
+                    <h4>Quadro-resumo (prazos do mês)</h4>
+                    <div class="table-container">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Quando</th>
+                                    <th>Obrigação</th>
+                                    <th>Quem executa</th>
+                                    <th>Observações</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>5º dia útil</strong></td>
+                                    <td>Salários (mensalistas)</td>
+                                    <td>Empresa</td>
+                                    <td>Nós orientamos a conferência</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Dia 15</strong></td>
+                                    <td>EFD‑Reinf; Fechamento do eSocial</td>
+                                    <td>Nós</td>
+                                    <td>Prazo regra para os eventos</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Dia 20</strong></td>
+                                    <td>FGTS Digital (GFD) e DARF Previdenciário (DCTFWeb)</td>
+                                    <td>Nós</td>
+                                    <td>Guias emitidas e enviadas</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Último dia útil</strong></td>
+                                    <td>Entrega da DCTFWeb</td>
+                                    <td>Nós</td>
+                                    <td>Consolidação final dos débitos</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Férias -->
+            <section id="ferias" class="section">
+                <div class="section-header">
+                    <h2 class="section-title">5. Férias e 13º salário</h2>
+                    <p class="section-subtitle">Direitos e prazos</p>
+                </div>
+                <div class="section-content">
+                    <ul>
+                        <li><strong>Férias</strong>: Direito a até 30 dias após 12 meses. Fracionáveis em até 3 períodos (um de ≥14 dias, demais ≥5). Pagamento até 2 dias antes do início.</li>
+                        <li><strong>13º salário</strong>: 1ª parcela de fevereiro a 30/11. 2ª parcela até 20/12.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- SST -->
+            <section id="sst" class="section">
+                <div class="section-header">
+                    <h2 class="section-title">6. SST — o que todo empresário precisa dominar</h2>
+                    <p class="section-subtitle">Saúde e Segurança do Trabalho</p>
+                </div>
+                <div class="section-content">
+                    <ul>
+                        <li><strong>PCMSO (NR-7)</strong>: Programa que organiza a vigilância médica e define os exames (admissional, periódico, etc.), gerando o ASO.</li>
+                        <li><strong>PGR/GRO (NR-1)</strong>: Mapeia riscos (físicos, químicos, biológicos, etc.) e define controles.</li>
+                        <li><strong>LTCAT</strong>: Laudo técnico que embasa o PPP e o enquadramento para aposentadoria especial.</li>
+                        <li><strong>PPP eletrônico</strong>: Gerado a partir dos eventos de SST no eSocial (S-2210, S-2220, S-2240).</li>
+                    </ul>
+                    
+                    <div class="content-block warning">
+                        <div class="block-title">Prazos de SST</div>
+                        <p>S-2210 (CAT) até o 1º dia útil após o acidente. S-2220 e S-2240 até o dia 15 do mês seguinte.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Faltas -->
+            <section id="faltas" class="section">
+                <div class="section-header">
+                    <h2 class="section-title">7. Faltas, atestados e suspeita de atestado falso</h2>
+                    <p class="section-subtitle">Protocolo de verificação</p>
+                </div>
+                <div class="section-content">
+                    <h3>7.3 Protocolo em 7 passos para suspeita de atestado falso</h3>
+                    <ol>
+                        <li><strong>Conferir formalidades</strong> (dados obrigatórios, legibilidade).</li>
+                        <li><strong>Checar autenticidade</strong> com o emissor (sem solicitar diagnóstico).</li>
+                        <li><strong>Colher justificativa escrita</strong> do empregado.</li>
+                        <li><strong>Abrir sindicância interna</strong> para apurar os fatos.</li>
+                        <li><strong>Aplicar penalidade proporcional</strong>: advertência, suspensão ou justa causa por improbidade (se comprovada a falsidade).</li>
+                        <li><strong>Avaliar comunicações externas</strong> (notícia-crime, CRM) com assessoria jurídica.</li>
+                        <li><strong>Ajustar eventos no eSocial</strong>, se necessário.</li>
+                    </ol>
+                </div>
+            </section>
+
+            <!-- Casos Críticos -->
+            <section id="casos-criticos" class="section">
+                <div class="section-header">
+                    <h2 class="section-title">8. Funcionário chegando atrasado ou faltando</h2>
+                    <p class="section-subtitle">Estratégias lícitas</p>
+                </div>
+                <div class="section-content">
+                    <ol>
+                        <li><strong>Diagnosticar</strong> frequência e causas.</li>
+                        <li><strong>Reforçar política</strong> de ponto e comunicação.</li>
+                        <li><strong>Usar compensação</strong> via banco de horas/ajuste de escala (se permitido em acordo).</li>
+                        <li><strong>Aplicar disciplina progressiva</strong>: advertência → suspensão → justa causa por desídia (somente com reincidência e provas).</li>
+                    </ol>
+                </div>
+            </section>
+
+            <!-- Rescisões -->
+            <section id="rescisoes" class="section">
+                <div class="section-header">
+                    <h2 class="section-title">9. Rescisões — como desligar sem passivo</h2>
+                    <p class="section-subtitle">Modalidades e prazos</p>
+                </div>
+                <div class="section-content">
+                    <ul>
+                        <li><strong>Modalidades</strong>: Sem justa causa, pedido de demissão, acordo (art. 484-A da CLT) ou justa causa (exige prova robusta).</li>
+                        <li><strong>Prazos e pagamentos</strong>: Verbas rescisórias e documentos em <strong>até 10 dias corridos</strong> do término do contrato. FGTS rescisório no mesmo prazo.</li>
+                        <li><strong>Homologação no sindicato</strong>: Não é mais obrigatória, salvo previsão em ACT/CCT.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Sindicatos -->
+            <section id="sindicatos" class="section">
+                <div class="section-header">
+                    <h2 class="section-title">10. Sindicatos — como lidar no dia a dia</h2>
+                    <p class="section-subtitle">Negociação coletiva e contribuições</p>
+                </div>
+                <div class="section-content">
+                    <ul>
+                        <li><strong>ACT x CCT</strong>: O negociado prevalece sobre o legislado em várias matérias (art. 611-A da CLT). Cumpra o que for assinado.</li>
+                        <li><strong>Contribuição assistencial (STF - Tema 935)</strong>: É constitucional a cobrança para todos os empregados (inclusive não sindicalizados), desde que assegurado o direito de oposição.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Apêndices -->
+            <section id="apendices" class="section">
+                <div class="section-header">
+                    <h2 class="section-title">11. Apêndices — checklists e modelos</h2>
+                    <p class="section-subtitle">Ferramentas práticas</p>
+                </div>
+                <div class="section-content">
+                    <h4>A) Checklist de Admissão (operacional)</h4>
+                    <ul>
+                        <li>[ ] Dados pessoais e documentos coletados</li>
+                        <li>[ ] ASO admissional (apto) recebido</li>
+                        <li>[ ] S-2190 (admissão preliminar) enviado até a véspera</li>
+                        <li>[ ] Contrato e política de ponto assinados</li>
+                    </ul>
+                    
+                    <h4>E) Modelo — Acordo Individual de Registro de Ponto por Exceção</h4>
+                    <div class="code-block">
+<strong>ACORDO INDIVIDUAL DE REGISTRO DE PONTO POR EXCEÇÃO</strong>
+
+<strong>Empregador:</strong> [Nome da Empresa], CNPJ: [CNPJ da Empresa]
+<strong>Empregado:</strong> [Nome do Empregado], CPF: [CPF do Empregado]
+
+As partes ajustam, com base no art. 74, §4º, da CLT, que o controle de jornada será realizado <strong>POR EXCEÇÃO</strong> à jornada regular prevista no contrato, presumindo-se cumprida a jornada nos dias sem marcações. O empregado obriga-se a registrar, no sistema indicado pela empresa, todas as ocorrências que alterem a jornada (atrasos, saídas antecipadas, horas extras, etc.), até o primeiro dia útil subsequente, para validação do gestor.
+
+Local e data: ______________________
+
+Assinaturas: ________________________ (Empregador) e ________________________ (Empregado)
+                    </div>
+
+                    <h4>Referências (principais)</h4>
+                    <ul>
+                        <li>CLT: arts. 58 §1º, 74 §4º, 482, 484-A, 611-A/611-B.</li>
+                        <li>Lei 12.506/2011 (aviso prévio proporcional).</li>
+                        <li>NR-1 (PGR/GRO) e NR-7 (PCMSO).</li>
+                        <li>eSocial, FGTS Digital, DCTFWeb, EFD-Reinf.</li>
+                        <li>STF – Tema 935 (contribuição assistencial).</li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+
+        <!-- Rodapé -->
+        <footer class="footer">
+            <p><strong>RJC Assessoria</strong> • rjcassessoria.com.br</p>
+            <p>A Arte de Registrar o Patrimônio</p>
+        </footer>
+    </div>
+
+    <!-- Numeração de páginas -->
+    <div class="page-number" id="pageNumber">Página 1 de 1</div>
+
+    <script>
+        // Simulação de numeração de páginas
+        let currentPage = 1;
+        const totalPages = 1;
+
+        function updatePageNumber() {
+            document.getElementById('pageNumber').textContent = `Página ${currentPage} de ${totalPages}`;
+        }
+
+        // Simular mudança de página ao rolar
+        window.addEventListener('scroll', function() {
+            const scrollPercent = (window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100;
+            currentPage = Math.max(1, Math.min(totalPages, Math.ceil((scrollPercent / 100) * totalPages)));
+            updatePageNumber();
+        });
+
+        // Destacar seção ativa na navegação
+        window.addEventListener('scroll', function() {
+            const sections = document.querySelectorAll('.section');
+            const navLinks = document.querySelectorAll('.nav-link');
+            
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (scrollY >= (sectionTop - 200)) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === '#' + current) {
+                    link.classList.add('active');
+                }
+            });
+        });
+
+        // Adicionar estilo para link ativo
+        const style = document.createElement('style');
+        style.textContent = `
+            .nav-link.active {
+                background: var(--rjc-azul-principal) !important;
+                color: var(--rjc-branco) !important;
+                transform: translateY(-2px);
+            }
+        `;
+        document.head.appendChild(style);
+    </script>
+</body>
+</html>
