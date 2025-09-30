@@ -4,7 +4,7 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Painel Fiscal RJC Assessoria — CFOP, CST/CSOSN, ICMS/FCP, NCM×PIS/COFINS (2025)</title>
+<title>Painel Fiscal RJC Assessoria — Consulta Tributária (CFOP, CST/CSOSN, ICMS/FCP, NCM×PIS/COFINS)</title>
 <style>
     /* Reset e Base */
     * {
@@ -413,7 +413,7 @@
       font-style: italic;
     }
   </style>
-<meta content="Consulta rápida e didática de CFOP, CST/CSOSN, alíquotas de ICMS e FCP por UF, NCM × PIS/COFINS e benefícios fiscais de Goiás. Painel Fiscal 2025 — RJC Assessoria." name="description"/><meta content="index,follow" name="robots"/><meta content="CFOP, CST, CSOSN, ICMS, FCP, NCM, PIS COFINS, DIFAL, Benefícios Goiás, RJC Assessoria" name="keywords"/><meta content="#1e3a8a" name="theme-color"/><meta content="Painel Fiscal RJC Assessoria — CFOP, CST/CSOSN, ICMS/FCP, NCM×PIS/COFINS (2025)" property="og:title"/><meta content="Consulta rápida e didática de CFOP, CST/CSOSN, alíquotas de ICMS e FCP por UF, NCM × PIS/COFINS e benefícios fiscais de Goiás. Painel Fiscal 2025 — RJC Assessoria." property="og:description"/><meta content="website" property="og:type"/><meta content="https://mjrafael.github.io/rjc-conhecimento/painel-fiscal/" property="og:url"/><meta content="RJC Assessoria" property="og:site_name"/><meta content="summary_large_image" name="twitter:card"/><meta content="Painel Fiscal RJC Assessoria — CFOP, CST/CSOSN, ICMS/FCP, NCM×PIS/COFINS (2025)" name="twitter:title"/><meta content="Consulta rápida e didática de CFOP, CST/CSOSN, alíquotas de ICMS e FCP por UF, NCM × PIS/COFINS e benefícios fiscais de Goiás. Painel Fiscal 2025 — RJC Assessoria." name="twitter:description"/><link href="https://mjrafael.github.io/rjc-conhecimento/painel-fiscal/" rel="canonical"/><link href="./ico.png" rel="icon" type="image/png"/><link href="./ico.png" rel="shortcut icon" type="image/png"/><link href="./ico.png" rel="apple-touch-icon"/><link as_="image" href="./ico.png" rel="preload"/><script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "RJC Assessoria", "url": "https://mjrafael.github.io/rjc-conhecimento/", "logo": "./ico.png", "contactPoint": [{"@type": "ContactPoint", "contactType": "customer support", "email": "contato@rjcassessoria.com.br", "telephone": "+55-62-8168-0949"}]}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebSite", "url": "https://mjrafael.github.io/rjc-conhecimento/", "name": "RJC Conhecimento — Painel Fiscal", "potentialAction": {"@type": "SearchAction", "target": "https://mjrafael.github.io/rjc-conhecimento/painel-fiscal/?q={search_term_string}", "query-input": "required name=search_term_string"}}</script></head>
+<link href="/rjc-conhecimento/painel-fiscal/ico.png" rel="icon" type="image/png"/><link href="/rjc-conhecimento/painel-fiscal/ico.png" rel="shortcut icon" type="image/png"/><link href="/rjc-conhecimento/painel-fiscal/ico.png" rel="apple-touch-icon"/><meta content="Painel Fiscal 2025 da RJC: CFOP e Natureza, CST/CSOSN, ICMS/FCP por UF, NCM×PIS/COFINS e benefícios ICMS/GO. Consulta rápida e didática." name="description"/><link href="https://mjrafael.github.io/rjc-conhecimento/painel-fiscal/" rel="canonical"/></head>
 <body>
 <!-- Header Superior -->
 <div style="background: white; padding: 1rem 0; border-bottom: 1px solid #e2e8f0;">
@@ -432,7 +432,7 @@
 </div>
 </div>
 <!-- Header Principal -->
-<header class="header" role="banner">
+<header class="header">
 <div class="header-content">
 <div class="logo">Painel Fiscal - Consulta Tributária</div>
 <div class="tagline">Documentos Fiscais Eletrônicos</div>
@@ -445,7 +445,7 @@
 <div class="search-section">
 <div class="search-container">
 <span class="search-icon">🔍</span>
-<input aria-label="Buscar CFOP, CST, CSOSN, estado ou descrição" class="search-input" id="searchInput" placeholder="Buscar CFOP, CST, CSOSN, estado ou descrição..." type="text"/>
+<input class="search-input" id="searchInput" placeholder="Buscar CFOP, CST, CSOSN, estado ou descrição..." type="text"/>
 </div>
 </div>
 <!-- Navegação -->
@@ -1037,5 +1037,22 @@
       document.getElementById('icmsgoCount').textContent = window.__DATA__.icmsgo.length;
     }
   </script>
-</body>
+<script>
+(function(){
+  window.renderCFOPTable = function renderCFOPTable() {
+    const tbody = document.getElementById('cfopTableBody');
+    let data = (window.currentData && window.currentData.cfop) || (window.__DATA__ && window.__DATA__.cfop) || [];
+    data = [...data].sort((a,b)=> parseFloat(a.codigo) - parseFloat(b.codigo));
+    tbody.innerHTML = data.map(item => `
+      <tr>
+        <td><strong>${item.codigo}</strong></td>
+        <td>${item.titulo}</td>
+        <td><em>${item.natureza || 'Não especificada'}</em></td>
+        <td><span class="tag ${String(item.tipo||'').toLowerCase()}">${item.tipo||''}</span></td>
+        <td>${item.notas || ''}</td>
+      </tr>
+    `).join('');
+  };
+})();
+</script></body>
 </html>
