@@ -1,0 +1,1041 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Painel Fiscal RJC Assessoria — CFOP, CST/CSOSN, ICMS/FCP, NCM×PIS/COFINS (2025)</title>
+<style>
+    /* Reset e Base */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      line-height: 1.6;
+      color: #1e293b;
+      background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+      min-height: 100vh;
+    }
+
+    /* Header RJC */
+    .header {
+      background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+      color: white;
+      padding: 2rem 0;
+      box-shadow: 0 4px 20px rgba(30, 58, 138, 0.3);
+    }
+
+    .header-content {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 2rem;
+      text-align: center;
+    }
+
+    .logo {
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+      letter-spacing: -0.02em;
+    }
+
+    .tagline {
+      font-size: 1.1rem;
+      opacity: 0.9;
+      margin-bottom: 0.5rem;
+    }
+
+    .subtitle {
+      font-size: 0.95rem;
+      opacity: 0.8;
+    }
+
+    /* Container Principal */
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+
+    /* Busca */
+    .search-section {
+      background: white;
+      border-radius: 16px;
+      padding: 2rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+      border: 1px solid #e2e8f0;
+    }
+
+    .search-container {
+      position: relative;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .search-input {
+      width: 100%;
+      padding: 1rem 1rem 1rem 3rem;
+      border: 2px solid #e2e8f0;
+      border-radius: 12px;
+      font-size: 1.1rem;
+      transition: all 0.3s ease;
+      background: #f8fafc;
+    }
+
+    .search-input:focus {
+      outline: none;
+      border-color: #3b82f6;
+      background: white;
+      box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+    }
+
+    .search-icon {
+      position: absolute;
+      left: 1rem;
+      top: 50%;
+      transform: translateY(-50%);
+      color: #64748b;
+      font-size: 1.2rem;
+    }
+
+    /* Navegação por Abas */
+    .nav-tabs {
+      display: flex;
+      gap: 0.5rem;
+      margin-bottom: 2rem;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .nav-tab {
+      background: white;
+      border: 2px solid #e2e8f0;
+      border-radius: 12px;
+      padding: 0.75rem 1.5rem;
+      text-decoration: none;
+      color: #64748b;
+      font-weight: 600;
+      transition: all 0.3s ease;
+      position: relative;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .nav-tab:hover {
+      border-color: #3b82f6;
+      color: #3b82f6;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(59, 130, 246, 0.15);
+    }
+
+    .nav-tab.active {
+      background: #3b82f6;
+      border-color: #3b82f6;
+      color: white;
+      box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+    }
+
+    .nav-tab .badge {
+      background: rgba(255, 255, 255, 0.2);
+      color: inherit;
+      padding: 0.25rem 0.5rem;
+      border-radius: 6px;
+      font-size: 0.8rem;
+      font-weight: 700;
+    }
+
+    .nav-tab.active .badge {
+      background: rgba(255, 255, 255, 0.3);
+    }
+
+    /* Seções */
+    .section {
+      background: white;
+      border-radius: 16px;
+      padding: 2rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+      border: 1px solid #e2e8f0;
+      display: none;
+    }
+
+    .section.active {
+      display: block;
+    }
+
+    .section-title {
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: #1e3a8a;
+      margin-bottom: 0.5rem;
+    }
+
+    .section-description {
+      color: #64748b;
+      margin-bottom: 2rem;
+      font-size: 1.1rem;
+    }
+
+    /* Tabelas */
+    .table-container {
+      overflow-x: auto;
+      border-radius: 12px;
+      border: 1px solid #e2e8f0;
+    }
+
+    .data-table {
+      width: 100%;
+      border-collapse: collapse;
+      background: white;
+    }
+
+    .data-table thead {
+      background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+      color: white;
+    }
+
+    .data-table th {
+      padding: 1rem;
+      text-align: left;
+      font-weight: 600;
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .data-table td {
+      padding: 1rem;
+      border-bottom: 1px solid #f1f5f9;
+      vertical-align: top;
+    }
+
+    .data-table tbody tr:hover {
+      background: #f8fafc;
+    }
+
+    .data-table tbody tr:last-child td {
+      border-bottom: none;
+    }
+
+    /* Tags e Badges */
+    .tag {
+      display: inline-block;
+      padding: 0.25rem 0.75rem;
+      border-radius: 6px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .tag.saida {
+      background: #fef2f2;
+      color: #dc2626;
+      border: 1px solid #fecaca;
+    }
+
+    .tag.entrada {
+      background: #f0fdf4;
+      color: #16a34a;
+      border: 1px solid #bbf7d0;
+    }
+
+    .tag.cst {
+      background: #1f2937;
+      color: white;
+    }
+
+    .tag.csosn {
+      background: #7c3aed;
+      color: white;
+    }
+
+    /* Filtros */
+    .filters {
+      display: flex;
+      gap: 0.5rem;
+      margin-bottom: 1.5rem;
+      flex-wrap: wrap;
+    }
+
+    .filter-btn {
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-radius: 8px;
+      padding: 0.5rem 1rem;
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: #64748b;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .filter-btn:hover {
+      background: #e2e8f0;
+      color: #1e293b;
+    }
+
+    .filter-btn.active {
+      background: #3b82f6;
+      color: white;
+      border-color: #3b82f6;
+    }
+
+    /* Alertas e Informações */
+    .info-box {
+      background: #fef3c7;
+      border: 1px solid #fbbf24;
+      border-radius: 12px;
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .info-box h3 {
+      color: #92400e;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+
+    .info-box p {
+      color: #92400e;
+      margin: 0;
+    }
+
+    /* Footer */
+    .footer {
+      background: #1e293b;
+      color: white;
+      text-align: center;
+      padding: 2rem;
+      margin-top: 3rem;
+    }
+
+    .footer-content {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .footer p {
+      margin-bottom: 0.5rem;
+      opacity: 0.8;
+    }
+
+    .footer .logo-footer {
+      font-weight: 700;
+      font-size: 1.2rem;
+      color: #3b82f6;
+    }
+
+    /* Responsividade */
+    @media (max-width: 768px) {
+      .container {
+        padding: 1rem;
+      }
+
+      .header-content {
+        padding: 0 1rem;
+      }
+
+      .logo {
+        font-size: 2rem;
+      }
+
+      /* Header superior responsivo */
+      .header-superior {
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+      }
+
+      .header-superior .logo-section {
+        justify-content: center;
+      }
+
+      .header-superior .contact-section {
+        text-align: center;
+      }
+
+      .nav-tabs {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .nav-tab {
+        width: 100%;
+        max-width: 300px;
+        justify-content: center;
+      }
+
+      .section {
+        padding: 1.5rem;
+      }
+
+      .data-table th,
+      .data-table td {
+        padding: 0.75rem 0.5rem;
+        font-size: 0.9rem;
+      }
+    }
+
+    /* Animações */
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .section.active {
+      animation: fadeIn 0.5s ease-out;
+    }
+
+    /* Estados de carregamento */
+    .loading {
+      text-align: center;
+      padding: 2rem;
+      color: #64748b;
+    }
+
+    .no-results {
+      text-align: center;
+      padding: 2rem;
+      color: #64748b;
+      font-style: italic;
+    }
+  </style>
+<meta content="Consulta rápida e didática de CFOP, CST/CSOSN, alíquotas de ICMS e FCP por UF, NCM × PIS/COFINS e benefícios fiscais de Goiás. Painel Fiscal 2025 — RJC Assessoria." name="description"/><meta content="index,follow" name="robots"/><meta content="CFOP, CST, CSOSN, ICMS, FCP, NCM, PIS COFINS, DIFAL, Benefícios Goiás, RJC Assessoria" name="keywords"/><meta content="#1e3a8a" name="theme-color"/><meta content="Painel Fiscal RJC Assessoria — CFOP, CST/CSOSN, ICMS/FCP, NCM×PIS/COFINS (2025)" property="og:title"/><meta content="Consulta rápida e didática de CFOP, CST/CSOSN, alíquotas de ICMS e FCP por UF, NCM × PIS/COFINS e benefícios fiscais de Goiás. Painel Fiscal 2025 — RJC Assessoria." property="og:description"/><meta content="website" property="og:type"/><meta content="https://mjrafael.github.io/rjc-conhecimento/painel-fiscal/" property="og:url"/><meta content="RJC Assessoria" property="og:site_name"/><meta content="summary_large_image" name="twitter:card"/><meta content="Painel Fiscal RJC Assessoria — CFOP, CST/CSOSN, ICMS/FCP, NCM×PIS/COFINS (2025)" name="twitter:title"/><meta content="Consulta rápida e didática de CFOP, CST/CSOSN, alíquotas de ICMS e FCP por UF, NCM × PIS/COFINS e benefícios fiscais de Goiás. Painel Fiscal 2025 — RJC Assessoria." name="twitter:description"/><link href="https://mjrafael.github.io/rjc-conhecimento/painel-fiscal/" rel="canonical"/><link href="./ico.png" rel="icon" type="image/png"/><link href="./ico.png" rel="shortcut icon" type="image/png"/><link href="./ico.png" rel="apple-touch-icon"/><link as_="image" href="./ico.png" rel="preload"/><script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "RJC Assessoria", "url": "https://mjrafael.github.io/rjc-conhecimento/", "logo": "./ico.png", "contactPoint": [{"@type": "ContactPoint", "contactType": "customer support", "email": "contato@rjcassessoria.com.br", "telephone": "+55-62-8168-0949"}]}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebSite", "url": "https://mjrafael.github.io/rjc-conhecimento/", "name": "RJC Conhecimento — Painel Fiscal", "potentialAction": {"@type": "SearchAction", "target": "https://mjrafael.github.io/rjc-conhecimento/painel-fiscal/?q={search_term_string}", "query-input": "required name=search_term_string"}}</script></head>
+<body>
+<!-- Header Superior -->
+<div style="background: white; padding: 1rem 0; border-bottom: 1px solid #e2e8f0;">
+<div style="max-width: 1200px; margin: 0 auto; padding: 0 2rem; display: flex; justify-content: space-between; align-items: center;">
+<div style="display: flex; align-items: center; gap: 1rem;">
+<img alt="RJC Logo" src="data:image/png;base64,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gTOAAAAIA8gQMAAADIEzgAAACAPIEDAAAAyBM4AAAAgDyBAwAAAMgTOAAAAIA8gQMAAADIEzgAAACAPIEDAAAAyBM4AAAAgDyBAwAAAMgTOAAAAIA8gQMAAADIEzgAAACAPIEDAAAAyBM4AAAAgDyBAwAAAMgTOAAAAIA8gQMAAADIEzgAAACAPIEDAAAAyBM4AAAAgDyBAwAAAMgTOAAAAIA8gQMAAADIEzgAAACAPIEDAAAAyBM4AAAAgDyBAwAAAMgTOAAAAIA8gQMAAADIEzgAAACAPIEDAAAAyBM4AAAAgDyBAwAAAMgTOAAAAIA8gQMAAADIEzgAAACAPIEDAAAAyBM4AAAAgDyBAwAAAMgTOAAAAIA8gQMAAADIEzgAAACAPIEDAAAAyBM4AAAAgDyBAwAAAMgTOAAAAIA8gQMAAADIEzgAAACAPIEDAAAAyBM4AAAAgDyBAwAAAMgTOAAAAIA8gQMAAADIEzgAAACAPIEDAAAAyBM4AAAAgDyBAwAAAMgTOAAAAIA8gQMAAADIEzgAAACAPIEDAAAAyBM4AAAAgDyBAwAAAMgTOAAAAIA8gQMAAADIEzgAAACAPIEDAAAAyBM4AAAAgDyBAwAAAMgTOAAAAIA8gQMAAADIEzgAAACAPIEDAAAAyBM4AAAAgDyBAwAAAMgTOAAAAIA8gQMAAADIEzgAAACAPIEDAAAAyBM4AAAAgDyBAwAAAMgTOAAAAIA8gQMAAADIEzgAAACAPIEDAAAAyBM4AAAAgDyBAwAAAMgTOAAAAIA8gQMAAADIEzgAAACAPIEDAAAAyBM4AAAAgDyBAwAAAMgTOAAAAIA8gQMAAADIEzgAAACAPIEDAAAAyBM4AAAAgDyBAwAAAMgTOAAAAIA8gQMAAADIEzgAAACAPIEDAAAAyBM4AAAAgDyBAwAAAMgTOAAAAIA8gQMAAADIEzgAAACAPIEDAAAAyBM4AAAAgDyBAwAAAMgTOAAAAIA8gQMAAADIEzgAAACAPIEDAAAAyBM4AAAAgDyBAwAAAMgTOAAAAIA8gQMAAADIEzgAAACAPIEDAAAAyBM4AAAAgDyBAwAAAMgTOAAAAIA8gQMAAADIEzgAAACAPIEDAAAAyBM4AAAAgDyBAwAAAMgTOAAAAIA8gQMAAADIEzgAAACAPIEDAAAAyBM4AAAAgDyBAwAAAMgTOAAAAIA8gQMAAADIEzgAAACAPIEDAAAAyBM4AAAAgDyBAwAAAMgTOAAAAIA8gQMAAADIEzgAAACAPIEDAAAAyBM4AAAAgDyBAwAAAMgTOAAAAIA8gQMAAADIEzgAAACAPIEDAAAAyBM4AAAAgDyBAwAAAMgTOAAAAIA8gQMAAADIEzgAAACAPIEDAAAAyBM4AAAAgDyBAwAAAMgTOAAAAIA8gQMAAADIEzgAAACAPIEDAAAAyBM4AAAAgDyBAwAAAMgTOAAAAIA8gQMAAADIEzgAAACAPIEDAAAAyBM4AAAAgDyBAwAAAMgTOAAAAIA8gQMAAADIEzgAAACAPIEDAAAAyBM4AAAAgDyBAwAAAMgTOAAAAIA8gQMAAADIEzgAAACAPIEDAAAAyBM4AAAAgDyBAwAAAMgTOAAAAIA8gQMAAADIEzgAAACAPIEDAAAAyBM4AAAAgDyBAwAAAMgTOAAAAIA8gQMAAADIEzgAAACAPIEDAAAAyBM4AAAAgDyBAwAAAMgTOAAAAIA8gQMAAADIEzgAAACAPIEDAAAAyBM4AAAAgDyBAwAAAMgTOAAAAIA8gQMAAADIEzgAAACAPIEDAAAAyBM4AAAAgDyBAwAAAMgTOAAAAIA8gQMAAADIEzgAAACAPIEDAAAAyBM4AAAAgDyBAwAAAMgTOAAAAIA8gQMAAADIEzgAAACAPIEDAAAAyBM4AAAAgDyBAwAAAMgTOAAAAIA8gQMAAADIEzgAAACAPIEDAAAAyBM4AAAAgDyBAwAAAMgTOAAAAIA8gQMAAADIEzgAAACAPIEDAAAAyBM4AAAAgDyBAwAAAMgTOAAAAIA8gQMAAADIEzgAAACAPIEDAAAAyBM4AAAAgDyBAwAAAMgTOAAAAIA8gQMAAADIEzgAAACAPIEDAAAAyBM4AAAAgDyBAwAAAMgTOAAAAIA8gQMAAADIEzgAAACAPIEDAAAAyBM4AAAAgDyBAwAAAMgTOAAAAIA8gQMAAADIEzgAAACAPIEDAAAAyBM4AAAAgDyBAwAAAMgTOAAAAIA8gQMAAADIEzgAAACAPIEDAAAAyBM4AAAAgDyBAwAAAMgTOAAAAIA8gQMAAADIEzgAAACAPIEDAAAAyBM4AAAAgDyBAwAAAMgTOAAAAIA8gQMAAADI+wNVlSJf9WRvIkAAAAASUVORK5CYII=" style="width: 40px; height: 40px; border-radius: 8px;"/>
+<div>
+<div style="font-size: 1.5rem; font-weight: 700; color: #1e3a8a; line-height: 1;">RJC ASSESSORIA</div>
+<div style="font-size: 0.9rem; color: #64748b; line-height: 1;">A Arte de Registrar o Patrimônio</div>
+</div>
+</div>
+<div style="text-align: right; color: #64748b; font-size: 0.9rem;">
+<div>contato@rjcassessoria.com.br</div>
+<div>(62) 8168-0949</div>
+</div>
+</div>
+</div>
+<!-- Header Principal -->
+<header class="header" role="banner">
+<div class="header-content">
+<div class="logo">Painel Fiscal - Consulta Tributária</div>
+<div class="tagline">Documentos Fiscais Eletrônicos</div>
+<div class="subtitle">Consulte informações fiscais atualizadas para 2025</div>
+</div>
+</header>
+<!-- Container Principal -->
+<div class="container">
+<!-- Busca -->
+<div class="search-section">
+<div class="search-container">
+<span class="search-icon">🔍</span>
+<input aria-label="Buscar CFOP, CST, CSOSN, estado ou descrição" class="search-input" id="searchInput" placeholder="Buscar CFOP, CST, CSOSN, estado ou descrição..." type="text"/>
+</div>
+</div>
+<!-- Navegação -->
+<nav class="nav-tabs">
+<a class="nav-tab active" data-section="cfop" href="#cfop">
+        📋 CFOP &amp; Natureza
+        <span class="badge" id="cfopCount">—</span>
+</a>
+<a class="nav-tab" data-section="cst" href="#cst">
+        🏷️ CST/CSOSN
+        <span class="badge" id="cstCount">—</span>
+</a>
+<a class="nav-tab" data-section="aliquotas" href="#aliquotas">
+        📊 Alíquotas ICMS
+        <span class="badge" id="aliquotasCount">—</span>
+</a>
+<a class="nav-tab" data-section="ncm" href="#ncm">
+        📦 NCM × PIS/COFINS
+        <span class="badge" id="ncmCount">—</span>
+</a>
+<a class="nav-tab" data-section="icmsgo" href="#icmsgo">
+        🎯 ICMS/GO Benefícios
+        <span class="badge" id="icmsgoCount">—</span>
+</a>
+<a class="nav-tab" data-section="faq" href="#faq">
+        ❓ FAQ
+      </a>
+</nav>
+<!-- Seção CFOP & Natureza da Operação -->
+<section class="section active" id="cfop">
+<h2 class="section-title">CFOP &amp; Natureza da Operação</h2>
+<p class="section-description">
+        Códigos Fiscais de Operações e Prestações com sugestões de natureza da operação para NF-e.
+      </p>
+<div class="table-container">
+<table class="data-table">
+<thead>
+<tr>
+<th>CFOP</th>
+<th>Descrição</th>
+<th>Natureza da Operação</th>
+<th>Tipo</th>
+<th>Observações</th>
+</tr>
+</thead>
+<tbody id="cfopTableBody">
+<!-- Dados serão inseridos via JavaScript -->
+</tbody>
+</table>
+</div>
+</section>
+<!-- Seção CST/CSOSN -->
+<section class="section" id="cst">
+<h2 class="section-title">CST &amp; CSOSN - Códigos de Situação Tributária</h2>
+<p class="section-description">
+        Códigos de Situação Tributária para regime normal (CST) e Simples Nacional (CSOSN).
+      </p>
+<div class="filters">
+<button class="filter-btn active" data-filter="todos">Todos</button>
+<button class="filter-btn" data-filter="normal">Regime Normal (CST)</button>
+<button class="filter-btn" data-filter="simples">Simples Nacional (CSOSN)</button>
+</div>
+<div class="table-container">
+<table class="data-table">
+<thead>
+<tr>
+<th>Código</th>
+<th>Descrição</th>
+<th>Regime</th>
+</tr>
+</thead>
+<tbody id="cstTableBody">
+<!-- Dados serão inseridos via JavaScript -->
+</tbody>
+</table>
+</div>
+</section>
+<!-- Seção Alíquotas ICMS -->
+<section class="section" id="aliquotas">
+<h2 class="section-title">Alíquotas ICMS &amp; FCP por Estado</h2>
+<p class="section-description">
+        Alíquotas internas de ICMS e Fundo de Combate à Pobreza (FCP) atualizadas para 2025.
+      </p>
+<div class="info-box">
+<h3>⚠️ Principais Mudanças em 2025:</h3>
+<p><strong>Maranhão:</strong> 22% → 23% (vigência: 23/02/2025) | 
+           <strong>Rio Grande do Norte:</strong> 18% → 20% (vigência: 20/03/2025) | 
+           <strong>Piauí:</strong> 21% → 22,5% (vigência: 01/04/2025)</p>
+</div>
+<div class="table-container">
+<table class="data-table">
+<thead>
+<tr>
+<th>UF</th>
+<th>Estado</th>
+<th>Alíquota Interna</th>
+<th>FCP</th>
+</tr>
+</thead>
+<tbody id="aliquotasTableBody">
+<!-- Dados serão inseridos via JavaScript -->
+</tbody>
+</table>
+</div>
+</section>
+<!-- Seção NCM -->
+<section class="section" id="ncm">
+<h2 class="section-title">NCM × PIS/COFINS</h2>
+<p class="section-description">
+        Classificação fiscal de produtos com regime de tributação PIS/COFINS.
+      </p>
+<div class="filters">
+<button class="filter-btn active" data-filter="todos">Todos</button>
+<button class="filter-btn" data-filter="monofasico">Monofásico</button>
+<button class="filter-btn" data-filter="tributado">Tributado</button>
+<button class="filter-btn" data-filter="aliquota_zero">Alíquota Zero</button>
+</div>
+<div class="table-container">
+<table class="data-table">
+<thead>
+<tr>
+<th>NCM</th>
+<th>Descrição</th>
+<th>PIS/COFINS</th>
+<th>Observações</th>
+</tr>
+</thead>
+<tbody id="ncmTableBody">
+<!-- Dados serão inseridos via JavaScript -->
+</tbody>
+</table>
+</div>
+</section>
+<!-- Seção ICMS/GO -->
+<section class="section" id="icmsgo">
+<h2 class="section-title">ICMS/GO - Benefícios Fiscais</h2>
+<p class="section-description">
+        Benefícios fiscais específicos do estado de Goiás organizados por categoria.
+      </p>
+<div class="filters">
+<button class="filter-btn active" data-filter="todos">Todos</button>
+<button class="filter-btn" data-filter="Cesta Básica">Cesta Básica</button>
+<button class="filter-btn" data-filter="Agrícola">Agrícola</button>
+<button class="filter-btn" data-filter="Fármacos">Fármacos</button>
+<button class="filter-btn" data-filter="Higiene">Higiene</button>
+<button class="filter-btn" data-filter="Padaria">Padaria</button>
+<button class="filter-btn" data-filter="Bebidas">Bebidas</button>
+</div>
+<div class="table-container">
+<table class="data-table">
+<thead>
+<tr>
+<th>Categoria</th>
+<th>NCM</th>
+<th>Produto</th>
+<th>Benefício</th>
+</tr>
+</thead>
+<tbody id="icmsgoTableBody">
+<!-- Dados serão inseridos via JavaScript -->
+</tbody>
+</table>
+</div>
+</section>
+<!-- Seção FAQ -->
+<section class="section" id="faq">
+<h2 class="section-title">Perguntas Frequentes</h2>
+<p class="section-description">
+        Dúvidas comuns sobre tributação e documentos fiscais eletrônicos.
+      </p>
+<div id="faqContent">
+<!-- Conteúdo FAQ será inserido via JavaScript -->
+</div>
+</section>
+</div>
+<!-- Footer -->
+<footer class="footer">
+<div class="footer-content">
+<p class="logo-footer">RJC ASSESSORIA</p>
+<p>A Arte de Registrar o Patrimônio</p>
+<p>contato@rjcassessoria.com.br | (62) 8168-0949</p>
+<p>© 2025 RJC Assessoria - Painel Fiscal v2.0</p>
+</div>
+</footer>
+<script>
+    // Dados do painel fiscal
+    window.__DATA__ = {
+      cfop: [
+        { codigo:"5.101", titulo:"Venda de produção do estabelecimento", natureza:"Venda de produção do estabelecimento – operação interna", tipo:"Saída", notas:"Usar quando a mercadoria foi produzida pela própria empresa na mesma UF" },
+        { codigo:"6.101", titulo:"Venda de produção do estabelecimento", natureza:"Venda de produção do estabelecimento – operação interestadual", tipo:"Saída", notas:"Mercadoria de fabricação própria para outra UF" },
+        { codigo:"5.102", titulo:"Venda de mercadoria adquirida ou recebida de terceiros", natureza:"Venda de mercadoria adquirida ou recebida de terceiros – operação interna", tipo:"Saída", notas:"Revenda dentro da mesma UF" },
+        { codigo:"6.102", titulo:"Venda de mercadoria adquirida ou recebida de terceiros", natureza:"Venda de mercadoria adquirida ou recebida de terceiros – operação interestadual", tipo:"Saída", notas:"Revenda para outra UF" },
+        { codigo:"5.108", titulo:"Devolução de mercadoria vendida", natureza:"Devolução de venda de mercadoria – operação interna", tipo:"Saída", notas:"Devolução correspondente a 5.102" },
+        { codigo:"6.108", titulo:"Devolução de mercadoria vendida", natureza:"Devolução de venda de mercadoria – operação interestadual", tipo:"Saída", notas:"Devolução correspondente a 6.102" },
+        { codigo:"1.102", titulo:"Compra para comercialização", natureza:"Compra para comercialização – operação interna", tipo:"Entrada", notas:"Aquisição de mercadoria para revenda na mesma UF" },
+        { codigo:"2.102", titulo:"Compra para comercialização", natureza:"Compra para comercialização – operação interestadual", tipo:"Entrada", notas:"Aquisição de mercadoria para revenda de outra UF" },
+        { codigo:"5.403", titulo:"Venda de mercadoria sujeita ao regime de ST", natureza:"Venda de mercadoria sujeita ao regime de substituição tributária – operação interna", tipo:"Saída", notas:"Operação com ST na mesma UF" },
+        { codigo:"6.403", titulo:"Venda de mercadoria sujeita ao regime de ST", natureza:"Venda de mercadoria sujeita ao regime de substituição tributária – operação interestadual", tipo:"Saída", notas:"Operação com ST para outra UF" },
+        { codigo:"5.405", titulo:"Venda de mercadoria adquirida ou recebida de terceiros com ST", natureza:"Venda de mercadoria adquirida ou recebida de terceiros sujeita ao regime de substituição tributária – operação interna", tipo:"Saída", notas:"Revenda com ST na mesma UF" },
+        { codigo:"6.405", titulo:"Venda de mercadoria adquirida ou recebida de terceiros com ST", natureza:"Venda de mercadoria adquirida ou recebida de terceiros sujeita ao regime de substituição tributária – operação interestadual", tipo:"Saída", notas:"Revenda com ST para outra UF" },
+        { codigo:"5.949", titulo:"Outra saída não especificada", natureza:"Outra saída de mercadoria ou prestação de serviço não especificado – operação interna", tipo:"Saída", notas:"Operações não enquadradas em outros CFOPs" },
+        { codigo:"6.949", titulo:"Outra saída não especificada", natureza:"Outra saída de mercadoria ou prestação de serviço não especificado – operação interestadual", tipo:"Saída", notas:"Operações não enquadradas em outros CFOPs" },
+        { codigo:"1.949", titulo:"Outra entrada não especificada", natureza:"Outra entrada de mercadoria ou prestação de serviço não especificado – operação interna", tipo:"Entrada", notas:"Entradas não enquadradas em outros CFOPs" },
+        { codigo:"2.949", titulo:"Outra entrada não especificada", natureza:"Outra entrada de mercadoria ou prestação de serviço não especificado – operação interestadual", tipo:"Entrada", notas:"Entradas não enquadradas em outros CFOPs" }
+      ],
+
+      cst: [
+        { codigo: "00", descricao: "Tributada integralmente", regime: "Normal" },
+        { codigo: "10", descricao: "Tributada e com cobrança do ICMS por substituição tributária", regime: "Normal" },
+        { codigo: "20", descricao: "Com redução da base de cálculo", regime: "Normal" },
+        { codigo: "30", descricao: "Isenta ou não tributada e com cobrança do ICMS por substituição tributária", regime: "Normal" },
+        { codigo: "40", descricao: "Isenta", regime: "Normal" },
+        { codigo: "41", descricao: "Não tributada", regime: "Normal" },
+        { codigo: "50", descricao: "Suspensão", regime: "Normal" },
+        { codigo: "51", descricao: "Diferimento", regime: "Normal" },
+        { codigo: "60", descricao: "ICMS cobrado anteriormente por substituição tributária", regime: "Normal" },
+        { codigo: "70", descricao: "Com redução da base de cálculo e cobrança do ICMS por substituição tributária", regime: "Normal" },
+        { codigo: "90", descricao: "Outras", regime: "Normal" },
+        { codigo: "101", descricao: "Tributada pelo Simples Nacional com permissão de crédito", regime: "Simples Nacional" },
+        { codigo: "102", descricao: "Tributada pelo Simples Nacional sem permissão de crédito", regime: "Simples Nacional" },
+        { codigo: "103", descricao: "Isenção do ICMS no Simples Nacional para faixa de receita bruta", regime: "Simples Nacional" },
+        { codigo: "201", descricao: "Tributada pelo Simples Nacional com permissão de crédito e com cobrança do ICMS por substituição tributária", regime: "Simples Nacional" },
+        { codigo: "202", descricao: "Tributada pelo Simples Nacional sem permissão de crédito e com cobrança do ICMS por substituição tributária", regime: "Simples Nacional" },
+        { codigo: "203", descricao: "Isenção do ICMS no Simples Nacional para faixa de receita bruta e com cobrança do ICMS por substituição tributária", regime: "Simples Nacional" },
+        { codigo: "300", descricao: "Imune", regime: "Simples Nacional" },
+        { codigo: "400", descricao: "Não tributada pelo Simples Nacional", regime: "Simples Nacional" },
+        { codigo: "500", descricao: "ICMS cobrado anteriormente por substituição tributária (substituído) ou por antecipação", regime: "Simples Nacional" },
+        { codigo: "900", descricao: "Outros", regime: "Simples Nacional" }
+      ],
+
+      aliquotas: [
+        { uf: "AC", estado: "Acre", aliquota_interna: "19%", fcp: "Não possui" },
+        { uf: "AL", estado: "Alagoas", aliquota_interna: "20%", fcp: "1% (FECOEP)" },
+        { uf: "AP", estado: "Amapá", aliquota_interna: "18%", fcp: "Não possui" },
+        { uf: "AM", estado: "Amazonas", aliquota_interna: "20%", fcp: "1,5% ou 2%" },
+        { uf: "BA", estado: "Bahia", aliquota_interna: "20,5%", fcp: "2%" },
+        { uf: "CE", estado: "Ceará", aliquota_interna: "20%", fcp: "2%" },
+        { uf: "DF", estado: "Distrito Federal", aliquota_interna: "20%", fcp: "Não possui" },
+        { uf: "ES", estado: "Espírito Santo", aliquota_interna: "17%", fcp: "2%" },
+        { uf: "GO", estado: "Goiás", aliquota_interna: "19%", fcp: "2%" },
+        { uf: "MA", estado: "Maranhão", aliquota_interna: "23%", fcp: "2%" },
+        { uf: "MT", estado: "Mato Grosso", aliquota_interna: "17%", fcp: "2%" },
+        { uf: "MS", estado: "Mato Grosso do Sul", aliquota_interna: "17%", fcp: "2%" },
+        { uf: "MG", estado: "Minas Gerais", aliquota_interna: "18%", fcp: "2%" },
+        { uf: "PA", estado: "Pará", aliquota_interna: "19%", fcp: "Não possui" },
+        { uf: "PB", estado: "Paraíba", aliquota_interna: "20%", fcp: "2%" },
+        { uf: "PR", estado: "Paraná", aliquota_interna: "19,5%", fcp: "2%" },
+        { uf: "PE", estado: "Pernambuco", aliquota_interna: "20,5%", fcp: "2%" },
+        { uf: "PI", estado: "Piauí", aliquota_interna: "22,5%", fcp: "2%" },
+        { uf: "RJ", estado: "Rio de Janeiro", aliquota_interna: "22%", fcp: "2% (FECP)" },
+        { uf: "RN", estado: "Rio Grande do Norte", aliquota_interna: "20%", fcp: "2%" },
+        { uf: "RS", estado: "Rio Grande do Sul", aliquota_interna: "17%", fcp: "2%" },
+        { uf: "RO", estado: "Rondônia", aliquota_interna: "19,5%", fcp: "2%" },
+        { uf: "RR", estado: "Roraima", aliquota_interna: "20%", fcp: "2%" },
+        { uf: "SC", estado: "Santa Catarina", aliquota_interna: "17%", fcp: "Não possui" },
+        { uf: "SP", estado: "São Paulo", aliquota_interna: "18%", fcp: "Não possui" },
+        { uf: "SE", estado: "Sergipe", aliquota_interna: "20%", fcp: "1% (FECOEP)" },
+        { uf: "TO", estado: "Tocantins", aliquota_interna: "20%", fcp: "2%" }
+      ],
+
+      ncm: [
+        { ncm:"22030000", descricao:"Cervejas de malte", pis_cofins:"monofasico", obs:"Regra monofásica bebidas frias" },
+        { ncm:"22021000", descricao:"Águas, incluindo águas minerais e águas gaseificadas, adicionadas de açúcar", pis_cofins:"monofasico", obs:"Bebidas não alcoólicas" },
+        { ncm:"22029900", descricao:"Outras bebidas não alcoólicas", pis_cofins:"monofasico", obs:"Refrigerantes, sucos, etc." },
+        { ncm:"24022000", descricao:"Cigarros contendo tabaco", pis_cofins:"monofasico", obs:"Produtos do fumo" },
+        { ncm:"27101259", descricao:"Gasolina automotiva", pis_cofins:"monofasico", obs:"Combustíveis líquidos" },
+        { ncm:"27101142", descricao:"Óleo diesel", pis_cofins:"monofasico", obs:"Combustível para veículos" },
+        { ncm:"33030010", descricao:"Perfumes (extratos)", pis_cofins:"tributado", obs:"Cosméticos e perfumaria" },
+        { ncm:"33049900", descricao:"Outros produtos de beleza ou de maquiagem", pis_cofins:"tributado", obs:"Cosméticos em geral" },
+        { ncm:"30049019", descricao:"Medicamentos para uso humano", pis_cofins:"aliquota_zero", obs:"Medicamentos essenciais" },
+        { ncm:"30051000", descricao:"Curativos adesivos", pis_cofins:"aliquota_zero", obs:"Material médico-hospitalar" },
+        { ncm:"30059090", descricao:"Outros artigos farmacêuticos", pis_cofins:"aliquota_zero", obs:"Produtos farmacêuticos diversos" },
+        { ncm:"10063021", descricao:"Arroz parboilizado", pis_cofins:"aliquota_zero", obs:"Cesta básica" },
+        { ncm:"09012100", descricao:"Café torrado, não descafeinado", pis_cofins:"aliquota_zero", obs:"Cesta básica" },
+        { ncm:"07133319", descricao:"Feijão comum", pis_cofins:"aliquota_zero", obs:"Cesta básica" },
+        { ncm:"11010010", descricao:"Farinha de trigo", pis_cofins:"aliquota_zero", obs:"Cesta básica" },
+        { ncm:"19021900", descricao:"Macarrão", pis_cofins:"aliquota_zero", obs:"Cesta básica" },
+        { ncm:"15079011", descricao:"Óleo de soja refinado", pis_cofins:"aliquota_zero", obs:"Cesta básica" },
+        { ncm:"25010020", descricao:"Sal de cozinha", pis_cofins:"aliquota_zero", obs:"Cesta básica" },
+        { ncm:"17019900", descricao:"Açúcar cristal", pis_cofins:"aliquota_zero", obs:"Cesta básica" },
+        { ncm:"04021000", descricao:"Leite em pó", pis_cofins:"aliquota_zero", obs:"Cesta básica" },
+        { ncm:"02071400", descricao:"Cortes de frango congelados", pis_cofins:"aliquota_zero", obs:"Cesta básica" },
+        { ncm:"16041900", descricao:"Sardinha em conserva", pis_cofins:"aliquota_zero", obs:"Cesta básica" },
+        { ncm:"20019000", descricao:"Outros legumes e hortaliças preparados", pis_cofins:"aliquota_zero", obs:"Cesta básica" },
+        { ncm:"19053100", descricao:"Biscoitos doces", pis_cofins:"tributado", obs:"Produtos de panificação" },
+        { ncm:"19059090", descricao:"Outros produtos de padaria", pis_cofins:"tributado", obs:"Pães, bolos, etc." },
+        { ncm:"34011900", descricao:"Outros sabões", pis_cofins:"tributado", obs:"Produtos de limpeza" },
+        { ncm:"34022000", descricao:"Detergentes", pis_cofins:"tributado", obs:"Produtos de limpeza" },
+        { ncm:"33061000", descricao:"Dentifrícios", pis_cofins:"tributado", obs:"Higiene pessoal" },
+        { ncm:"33074900", descricao:"Outros produtos de higiene", pis_cofins:"tributado", obs:"Higiene pessoal" },
+        { ncm:"48181000", descricao:"Papel higiênico", pis_cofins:"tributado", obs:"Higiene pessoal" },
+        { ncm:"96032100", descricao:"Escovas de dentes", pis_cofins:"tributado", obs:"Higiene pessoal" }
+      ],
+
+      icmsgo: [
+        { categoria: "Cesta Básica", ncm: "10063021", produto: "Arroz", beneficio: "Isenção" },
+        { categoria: "Cesta Básica", ncm: "09012100", produto: "Café torrado e moído", beneficio: "Isenção" },
+        { categoria: "Cesta Básica", ncm: "07133319", produto: "Feijão", beneficio: "Isenção" },
+        { categoria: "Cesta Básica", ncm: "11010010", produto: "Farinha de trigo", beneficio: "Isenção" },
+        { categoria: "Cesta Básica", ncm: "19021900", produto: "Macarrão", beneficio: "Isenção" },
+        { categoria: "Cesta Básica", ncm: "15079011", produto: "Óleo de soja", beneficio: "Isenção" },
+        { categoria: "Cesta Básica", ncm: "25010020", produto: "Sal", beneficio: "Isenção" },
+        { categoria: "Cesta Básica", ncm: "17019900", produto: "Açúcar", beneficio: "Isenção" },
+        { categoria: "Agrícola", ncm: "07019000", produto: "Batata", beneficio: "Redução BC" },
+        { categoria: "Agrícola", ncm: "07031019", produto: "Cebola", beneficio: "Redução BC" },
+        { categoria: "Agrícola", ncm: "07061000", produto: "Cenoura", beneficio: "Redução BC" },
+        { categoria: "Agrícola", ncm: "07020000", produto: "Tomate", beneficio: "Redução BC" },
+        { categoria: "Agrícola", ncm: "08051000", produto: "Laranja", beneficio: "Redução BC" },
+        { categoria: "Agrícola", ncm: "08030000", produto: "Banana", beneficio: "Redução BC" },
+        { categoria: "Agrícola", ncm: "08071100", produto: "Melancia", beneficio: "Redução BC" },
+        { categoria: "Agrícola", ncm: "08109000", produto: "Outras frutas frescas", beneficio: "Redução BC" },
+        { categoria: "Agrícola", ncm: "12019000", produto: "Soja em grão", beneficio: "Redução BC" },
+        { categoria: "Agrícola", ncm: "10059000", produto: "Milho em grão", beneficio: "Redução BC" },
+        { categoria: "Fármacos", ncm: "30049019", produto: "Medicamentos para uso humano", beneficio: "Isenção" },
+        { categoria: "Fármacos", ncm: "30051000", produto: "Curativos adesivos", beneficio: "Isenção" },
+        { categoria: "Fármacos", ncm: "30059090", produto: "Outros produtos farmacêuticos", beneficio: "Isenção" },
+        { categoria: "Higiene", ncm: "33061000", produto: "Dentifrícios", beneficio: "Redução BC" },
+        { categoria: "Higiene", ncm: "33074900", produto: "Produtos de higiene", beneficio: "Redução BC" },
+        { categoria: "Higiene", ncm: "48181000", produto: "Papel higiênico", beneficio: "Redução BC" },
+        { categoria: "Padaria", ncm: "19053100", produto: "Biscoitos doces", beneficio: "Redução BC" },
+        { categoria: "Padaria", ncm: "19059090", produto: "Produtos de padaria", beneficio: "Redução BC" },
+        { categoria: "Bebidas", ncm: "22011000", produto: "Águas minerais", beneficio: "Redução BC" },
+        { categoria: "Bebidas", ncm: "22029900", produto: "Refrigerantes", beneficio: "Redução BC" }
+      ],
+
+      faq: [
+        {
+          pergunta: "Qual a diferença entre CST e CSOSN?",
+          resposta: "CST (Código de Situação Tributária) é usado por empresas do regime normal de tributação, enquanto CSOSN (Código de Situação da Operação no Simples Nacional) é exclusivo para empresas optantes pelo Simples Nacional. O CSOSN possui códigos específicos que consideram as particularidades do regime simplificado."
+        },
+        {
+          pergunta: "Como escolher o CFOP correto?",
+          resposta: "O CFOP deve ser escolhido com base na natureza da operação (venda, compra, devolução, etc.), no tipo de mercadoria (própria produção ou de terceiros) e na localização (operação interna ou interestadual). Consulte sempre a tabela oficial e considere se há substituição tributária envolvida."
+        },
+        {
+          pergunta: "O que é FCP e quando devo aplicar?",
+          resposta: "FCP (Fundo de Combate à Pobreza) é um percentual adicional ao ICMS cobrado por alguns estados. Nem todos os estados possuem FCP, e quando existe, incide apenas sobre produtos específicos definidos na legislação estadual. Consulte a tabela de alíquotas por estado."
+        },
+        {
+          pergunta: "Como funciona o regime monofásico do PIS/COFINS?",
+          resposta: "No regime monofásico, o PIS/COFINS é cobrado apenas uma vez na cadeia produtiva, geralmente do fabricante ou importador. Produtos como combustíveis, bebidas, cigarros e alguns medicamentos seguem essa regra. As demais operações na cadeia ficam com alíquota zero."
+        },
+        {
+          pergunta: "Quais produtos têm alíquota zero de PIS/COFINS?",
+          resposta: "Produtos da cesta básica (arroz, feijão, farinha, açúcar, sal, etc.), medicamentos essenciais, alguns produtos de higiene e limpeza, e produtos destinados à exportação podem ter alíquota zero de PIS/COFINS, conforme legislação específica."
+        },
+        {
+          pergunta: "Como funcionam os benefícios fiscais do ICMS/GO?",
+          resposta: "Goiás concede benefícios fiscais como isenção ou redução da base de cálculo do ICMS para produtos da cesta básica, produtos agrícolas, medicamentos e outros itens específicos. Esses benefícios estão previstos no Anexo IX do RICMS/GO e devem ser aplicados conforme a classificação fiscal (NCM) do produto."
+        }
+      ]
+    };
+
+    // Funções de renderização e controle
+    let currentData = {};
+    let currentFilter = 'todos';
+
+    // Inicialização
+    document.addEventListener('DOMContentLoaded', function() {
+      initializeApp();
+    });
+
+    function initializeApp() {
+      setupEventListeners();
+      updateCounts();
+      renderSection('cfop');
+    }
+
+    function setupEventListeners() {
+      // Navegação por abas
+      document.querySelectorAll('.nav-tab').forEach(tab => {
+        tab.addEventListener('click', function(e) {
+          e.preventDefault();
+          const section = this.dataset.section;
+          switchSection(section);
+        });
+      });
+
+      // Busca
+      document.getElementById('searchInput').addEventListener('input', function() {
+        const query = this.value.toLowerCase();
+        performSearch(query);
+      });
+
+      // Filtros
+      document.addEventListener('click', function(e) {
+        if (e.target.classList.contains('filter-btn')) {
+          const filter = e.target.dataset.filter;
+          setActiveFilter(e.target, filter);
+        }
+      });
+    }
+
+    function switchSection(sectionName) {
+      // Atualizar navegação
+      document.querySelectorAll('.nav-tab').forEach(tab => {
+        tab.classList.remove('active');
+      });
+      document.querySelector(`[data-section="${sectionName}"]`).classList.add('active');
+
+      // Atualizar seções
+      document.querySelectorAll('.section').forEach(section => {
+        section.classList.remove('active');
+      });
+      document.getElementById(sectionName).classList.add('active');
+
+      // Renderizar conteúdo
+      renderSection(sectionName);
+    }
+
+    function renderSection(sectionName) {
+      switch(sectionName) {
+        case 'cfop':
+          renderCFOPTable();
+          break;
+        case 'cst':
+          renderCSTTable();
+          break;
+        case 'aliquotas':
+          renderAliquotasTable();
+          break;
+        case 'ncm':
+          renderNCMTable();
+          break;
+        case 'icmsgo':
+          renderICMSGOTable();
+          break;
+        case 'faq':
+          renderFAQ();
+          break;
+      }
+    }
+
+    function renderCFOPTable() {
+      const tbody = document.getElementById('cfopTableBody');
+      const data = currentData.cfop || window.__DATA__.cfop;
+      
+      tbody.innerHTML = data.map(item => `
+        <tr>
+          <td><strong>${item.codigo}</strong></td>
+          <td>${item.titulo}</td>
+          <td><em>${item.natureza || 'Não especificada'}</em></td>
+          <td><span class="tag ${item.tipo.toLowerCase()}">${item.tipo}</span></td>
+          <td>${item.notas}</td>
+        </tr>
+      `).join('');
+    }
+
+    function renderCSTTable() {
+      const tbody = document.getElementById('cstTableBody');
+      const data = currentData.cst || window.__DATA__.cst;
+      
+      tbody.innerHTML = data.map(item => `
+        <tr>
+          <td><strong>${item.codigo}</strong></td>
+          <td>${item.descricao}</td>
+          <td><span class="tag ${item.regime === 'Normal' ? 'cst' : 'csosn'}">${item.regime}</span></td>
+        </tr>
+      `).join('');
+    }
+
+    function renderAliquotasTable() {
+      const tbody = document.getElementById('aliquotasTableBody');
+      const data = currentData.aliquotas || window.__DATA__.aliquotas;
+      
+      tbody.innerHTML = data.map(item => `
+        <tr>
+          <td><strong>${item.uf}</strong></td>
+          <td>${item.estado}</td>
+          <td><strong>${item.aliquota_interna}</strong></td>
+          <td>${item.fcp}</td>
+        </tr>
+      `).join('');
+    }
+
+    function renderNCMTable() {
+      const tbody = document.getElementById('ncmTableBody');
+      const data = currentData.ncm || window.__DATA__.ncm;
+      
+      tbody.innerHTML = data.map(item => `
+        <tr>
+          <td><strong>${item.ncm}</strong></td>
+          <td>${item.descricao}</td>
+          <td><span class="tag ${item.pis_cofins}">${item.pis_cofins.replace('_', ' ')}</span></td>
+          <td>${item.obs || ''}</td>
+        </tr>
+      `).join('');
+    }
+
+    function renderICMSGOTable() {
+      const tbody = document.getElementById('icmsgoTableBody');
+      const data = currentData.icmsgo || window.__DATA__.icmsgo;
+      
+      tbody.innerHTML = data.map(item => `
+        <tr>
+          <td><span class="tag">${item.categoria}</span></td>
+          <td><strong>${item.ncm}</strong></td>
+          <td>${item.produto}</td>
+          <td><span class="tag ${item.beneficio === 'Isenção' ? 'entrada' : 'saida'}">${item.beneficio}</span></td>
+        </tr>
+      `).join('');
+    }
+
+    function renderFAQ() {
+      const container = document.getElementById('faqContent');
+      const data = window.__DATA__.faq;
+      
+      container.innerHTML = data.map((item, index) => `
+        <div style="margin-bottom: 1.5rem; border: 1px solid #e2e8f0; border-radius: 12px; overflow: hidden;">
+          <div style="background: #f8fafc; padding: 1rem; cursor: pointer; font-weight: 600; color: #1e3a8a;" onclick="toggleFAQ(${index})">
+            ${item.pergunta}
+          </div>
+          <div id="faq-${index}" style="padding: 1rem; display: none; border-top: 1px solid #e2e8f0;">
+            ${item.resposta}
+          </div>
+        </div>
+      `).join('');
+    }
+
+    function toggleFAQ(index) {
+      const element = document.getElementById(`faq-${index}`);
+      element.style.display = element.style.display === 'none' ? 'block' : 'none';
+    }
+
+    function performSearch(query) {
+      if (!query) {
+        currentData = {};
+        renderSection(getCurrentSection());
+        return;
+      }
+
+      const section = getCurrentSection();
+      const data = window.__DATA__[section];
+      
+      if (!data) return;
+
+      currentData[section] = data.filter(item => {
+        return Object.values(item).some(value => 
+          value.toString().toLowerCase().includes(query)
+        );
+      });
+
+      renderSection(section);
+    }
+
+    function setActiveFilter(button, filter) {
+      // Atualizar botões
+      button.parentElement.querySelectorAll('.filter-btn').forEach(btn => {
+        btn.classList.remove('active');
+      });
+      button.classList.add('active');
+
+      currentFilter = filter;
+      applyFilter();
+    }
+
+    function applyFilter() {
+      const section = getCurrentSection();
+      const data = window.__DATA__[section];
+      
+      if (!data || currentFilter === 'todos') {
+        currentData[section] = data;
+      } else {
+        currentData[section] = data.filter(item => {
+          if (section === 'cst') {
+            if (currentFilter === 'normal') return item.regime === 'Normal';
+            if (currentFilter === 'simples') return item.regime === 'Simples Nacional';
+          } else if (section === 'ncm') {
+            return item.pis_cofins === currentFilter;
+          } else if (section === 'icmsgo') {
+            return item.categoria === currentFilter;
+          }
+          return true;
+        });
+      }
+
+      renderSection(section);
+    }
+
+    function getCurrentSection() {
+      return document.querySelector('.nav-tab.active').dataset.section;
+    }
+
+    function updateCounts() {
+      document.getElementById('cfopCount').textContent = window.__DATA__.cfop.length;
+      document.getElementById('cstCount').textContent = window.__DATA__.cst.length;
+      document.getElementById('aliquotasCount').textContent = window.__DATA__.aliquotas.length;
+      document.getElementById('ncmCount').textContent = window.__DATA__.ncm.length;
+      document.getElementById('icmsgoCount').textContent = window.__DATA__.icmsgo.length;
+    }
+  </script>
+</body>
+</html>
