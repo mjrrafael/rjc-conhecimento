@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playbook Operacional Ronin Pneus - RJC Assessoria</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            background: #fff;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2, h3, h4 {
+            color: #004085;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 5px;
+            margin-top: 25px;
+        }
+        h1 { font-size: 24pt; border-bottom: 3px solid #004085; }
+        h2 { font-size: 18pt; }
+        h3 { font-size: 14pt; border-bottom: 1px dashed #eee; }
+        .resumo-executivo {
+            background-color: #eaf3ff;
+            border-left: 5px solid #004085;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 4px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+            font-size: 10pt;
+        }
+        table th, table td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        table th {
+            background-color: #004085;
+            color: white;
+            font-weight: bold;
+        }
+        .box-info {
+            background-color: #fff3cd;
+            border: 1px solid #ffeeba;
+            color: #856404;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 4px;
+        }
+        .icon {
+            color: #007bff;
+            font-weight: bold;
+        }
+        .folder-structure {
+            font-family: monospace;
+            white-space: pre-wrap;
+            background-color: #f1f1f1;
+            padding: 10px;
+            border-radius: 4px;
+            margin: 10px 0;
+            font-size: 10pt;
+        }
+        .legal-ref a {
+            color: #0056b3;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .kpi {
+            font-weight: bold;
+            color: #28a745;
+        }
+        .math-formula {
+            display: block;
+            margin: 15px 0;
+            padding: 10px;
+            background-color: #f1f8e9;
+            border: 1px solid #dcdcdc;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <header>
+        <h1>PLAYBOOK OPERACIONAL ESTRUTURADO</h1>
+        <h2>RONIN PNEUS</h2>
+        <p><strong>CNPJ:</strong> 48.480.778/0001-71</p>
+        <p><strong>Local:</strong> Goiânia - GO</p>
+        <p><strong>Situação:</strong> Manual Operacional e Diagnóstico de Gestão e Tributação</p>
+        <p><strong>Espaço reservado para o Logotipo da Ronin Pneus</strong></p>
+        <hr>
+    </header>
+
+    <div class="resumo-executivo">
+        <h3>RESUMO EXECUTIVO E DADOS CONSOLIDADOS</h3>
+        <table>
+            <tr><th>Descrição</th><th>Detalhe Técnico</th></tr>
+            <tr><td><strong>Faturamento Médio Mensal</strong></td><td>R$ 300.000,00</td></tr>
+            <tr><td><strong>Custo Fixo (Folha)</strong></td><td>R$ 80.000,00</td></tr>
+            <tr><td><strong>Custo Variável (Compras/Insumos)</strong></td><td>R$ 140.000,00</td></tr>
+            <tr><td><strong>Lucro Potencial Bruto</strong></td><td>R$ 80.000,00</td></tr>
+            <tr><td><strong>Lucro Efetivo Atual</strong></td><td>~R$ 10.000 a R$ 20.000,00 (Devido à má gestão)</td></tr>
+            <tr><td><strong>Regime Tributário Atual</strong></td><td>Lucro Presumido (com forte recomendação de migração)</td></tr>
+        </table>
+    </div>
+
+    <nav>
+        <h2>ÍNDICE</h2>
+        <ol>
+            <li><a href="#sec1">Organização Geral da Empresa</a></li>
+            <li><a href="#sec2">Rotinas Administrativas</a></li>
+            <li><a href="#sec3">Rotinas de Contas a Pagar</a></li>
+            <li><a href="#sec4">Rotinas de Contas a Receber</a></li>
+            <li><a href="#sec5">Rotinas de Compras</a></li>
+            <li><a href="#sec6">Rotinas de Admissão de Funcionários</a></li>
+            <li><a href="#sec7">Rotinas de Comissão e Conferência</a></li>
+            <li><a href="#sec8">Política de Comissão</a></li>
+            <li><a href="#sec9">Solicitação de Exames Admissionais e Periódicos</a></li>
+            <li><a href="#sec10">Organização de Notas Fiscais de Compra e Conferência</a></li>
+            <li><a href="#sec11">Organização e Faturamento de Serviços</a></li>
+            <li><a href="#sec12">Emissão de Nota Fiscal de Venda (Mercadorias)</a></li>
+            <li><a href="#sec13">Emissão de Nota Fiscal de Serviços (NFS-e)</a></li>
+            <li><a href="#sec14">Regimento Interno dos Funcionários</a></li>
+            <li><a href="#sec15">Regimento de Comissão</a></li>
+            <li><a href="#sec16">Regulamento de Banco de Horas e Horas Extras</a></li>
+            <li><a href="#sec17">Apuração de Resultado Mensal ou Bimestral</a></li>
+            <li><a href="#sec18">Política de Precificação</a></li>
+            <li><a href="#sec19">Projeção de Tributos</a></li>
+            <li><a href="#sec20">Projeção de Preço Corretamente</a></li>
+            <li><a href="#sec21">Benefícios Fiscais e Planejamento Tributário</a></li>
+        </ol>
+    </nav>
+    <hr>
+
+    <h2 id="sec1">1. Organização Geral da Empresa</h2>
+    <p><strong>Objetivo:</strong> Estruturar papéis, responsabilidades e o fluxo de informações para otimizar a comunicação e o controle interno.</p>
+
+    <h3>1.1 Organograma Básico (Funções e Responsáveis)</h3>
+    <ul>
+        <li><strong>Direção Geral:</strong> Rones Ramos Ferreira (Estratégia, aprovações acima de R$ 2.000,00).</li>
+        <li><strong>Financeiro/Admin:</strong> Fluxo de caixa, AP/AR, conciliação.</li>
+        <li><strong>Compras/Estoque:</strong> Cotação, Pedido, Conferência Física/Fiscal.</li>
+        <li><strong>Atendimento/Comercial:</strong> Orçamento, Vendas, Faturamento.</li>
+        <li><strong>Oficina/Técnico:</strong> Execução dos Serviços, Qualidade, Uso de EPI.</li>
+        <li><strong>RH/Pessoal:</strong> Admissão, Comissão, Banco de Horas.</li>
+    </ul>
+
+    <h3>1.2 Calendário Operacional Mensal</h3>
+    <table>
+        <tr><th>Período</th><th>Rotina/Foco</th></tr>
+        <tr><td>Dia 01–05</td><td>Fechamento e pagamento da folha salarial</td></tr>
+        <tr><td>Dia 05–10</td><td>Lançamento e conciliação de Contas a Pagar</td></tr>
+        <tr><td>Dia 20–25</td><td>Projeção de tributos e análise de margens</td></tr>
+        <tr><td>Dia 30/31</td><td>Apuração de resultado gerencial (DRE)</td></tr>
+    </table>
+
+    <h3>1.3 Manual de Pastas/Arquivos (Arquivamento Digital)</h3>
+    <p>O arquivamento deve seguir a seguinte estrutura no Google Drive (localização: <code>G:\\Outros computadores\\LOCALHOST\\rjc - clientes\\RONIN PNEUS</code>):</p>
+    <div class="folder-structure">
+        <span class="icon">📂</span> RONIN PNEUS<br>
+        ┣━ <span class="icon">📁</span> 01 ADMINISTRAÇÃO (Contratos, Certidões)<br>
+        ┣━ <span class="icon">📁</span> 02 FINANCEIRO (Extratos, AP/AR, DREs)<br>
+        ┣━ <span class="icon">📁</span> 03 COMPRAS E FORNECEDORES (Cotações, Pedidos, NFs de Entrada - XML)<br>
+        ┣━ <span class="icon">📁</span> 04 VENDAS E SERVIÇOS (Ordens de Serviço, NFs de Venda - XML/PDF)<br>
+        ┣━ <span class="icon">📁</span> 05 RH E FOLHA (Contratos, ASOs, Controle de Ponto, Comissões)<br>
+        ┗━ <span class="icon">📁</span> 06 FISCAL E TRIBUTÁRIO (Impostos Pagos, Obrigações Acessórias, SPEDs)<br>
+    </div>
+
+    <h2 id="sec2">2. Rotinas Administrativas</h2>
+    <p><strong>Objetivo:</strong> Criar padrão diário de controle e comunicação.</p>
+    <ul>
+        <li><strong>Rotina Diária:</strong> Conferir caixa, atualizar planilha financeira, registrar OS, validar NFs recebidas e enviar **Relatório Diário de Caixa e OS** à Direção.</li>
+        <li><strong>Rotina Semanal:</strong> Planejamento (Segunda), Reunião de acompanhamento (Quarta), Revisão de prazos fiscais e estoque (Sexta).</li>
+    </ul>
+
+    <h2 id="sec3">3. Rotinas de Contas a Pagar (AP)</h2>
+    <p><strong>Objetivo:</strong> Assegurar previsibilidade de pagamentos e evitar juros/multas.</p>
+    <h3>Fluxo SOP (Solicitação à Aprovação)</h3>
+    <ol>
+        <li>Recebimento da Fatura/Boleto.</li>
+        <li>Conferência da Nota Fiscal x Pedido de Compra (Setor Compras).</li>
+        <li>Aprovação pela **Política de Alçadas** (digital ou por e-mail).</li>
+        <li>Lançamento em planilha/ERP com data de vencimento.</li>
+        <li>Pagamento e arquivamento imediato do comprovante.</li>
+    </ol>
+    <h3>Política de Alçadas para Pagamento</h3>
+    <table>
+        <tr><th>Valor</th><th>Responsável pela Aprovação</th></tr>
+        <tr><td>Até R$ 500,00</td><td>Assistente Administrativo</td></tr>
+        <tr><td>R$ 501,00 a R$ 2.000,00</td><td>Gestor Administrativo</td></tr>
+        <tr><td>Acima de R$ 2.000,00</td><td>Rones Ramos Ferreira (Direção Geral)</td></tr>
+    </table>
+    <p><strong>KPI:</strong> Percentual de pagamentos no prazo <span class="kpi">> 98 %</span>.</p>
+
+    <h2 id="sec4">4. Rotinas de Contas a Receber (AR)</h2>
+    <p><strong>Objetivo:</strong> Garantir entrada de receitas e controle de inadimplência.</p>
+    <h3>Régua de Cobrança (Automação)</h3>
+    <ul>
+        <li><strong>D-2:</strong> Lembrete cordial pré-vencimento.</li>
+        <li><strong>D+3:</strong> Mensagem formal de cobrança.</li>
+        <li><strong>D+7:</strong> Contato telefônico, negociação de prazo.</li>
+        <li><strong>D+15:</strong> Bloqueio de novos créditos/serviços e aviso formal.</li>
+        <li><strong>D+30:</strong> Envio do dossiê de cobrança para assessoria jurídica (RJC).</li>
+    </ul>
+    <p><strong>KPI:</strong> Inadimplência <span class="kpi">≤ 3 %</span> mensal.</p>
+
+    <h2 id="sec5">5. Rotinas de Compras</h2>
+    <p><strong>Objetivo:</strong> Controlar aquisições, eliminando desperdício e desvios de margem (redução de 10% na margem bruta).</p>
+    <h3>Fluxo Padrão de Compras (SOP)</h3>
+    <ol>
+        <li>Solicitação de compra (formulário interno).</li>
+        <li><strong>Cotação mínima com 3 fornecedores.</strong></li>
+        <li>Aprovação por alçada de valor (Seção 3).</li>
+        <li>Emissão do Pedido de Compra (modelo Ronin).</li>
+        <li>Recebimento da NF + mercadoria.</li>
+        <li>Conferência física x fiscal e lançamento no sistema.</li>
+    </ol>
+    <p class="box-info"><strong>Boas Práticas:</strong> Criar e utilizar Matriz de Fornecedores Homologados e avaliar mensalmente o ticket médio por fornecedor.</p>
+
+    <h2 id="sec6">6. Rotinas de Admissão de Funcionários</h2>
+    <p><strong>Objetivo:</strong> Organizar entradas de novos colaboradores dentro da CLT e eSocial.</p>
+    <h3>Procedimentos e Conformidade</h3>
+    <ul>
+        <li>**eSocial:** Cadastro prévio ao início das atividades (S-2190 ou S-2200).</li>
+        <li>**Saúde Ocupacional:** Solicitação do Exame Admissional (ASO) conforme <span class="legal-ref">NR-7 <a href="https://www.gov.br/trabalho-e-emprego/pt-br/assuntos/inspecao-do-trabalho/seguranca-e-saude-no-trabalho/normas-regulamentadoras/nr-7" target="_blank">(clique aqui)</a></span>.</li>
+        <li>**Documentação:** Assinatura do Contrato de Trabalho, Regimento Interno e Termo de Confidencialidade/LGPD.</li>
+        <li>**Segurança:** Treinamento inicial de segurança e entrega de EPIs, conforme <span class="legal-ref">NR-6 <a href="https://www.gov.br/trabalho-e-emprego/pt-br/assuntos/inspecao-do-trabalho/seguranca-e-saude-no-trabalho/normas-regulamentadoras/nr-6" target="_blank">(clique aqui)</a></span>.</li>
+    </ul>
+
+    <h2 id="sec7">7. Rotinas de Comissão e Conferência</h2>
+    <p><strong>Objetivo:</strong> Garantir transparência, vinculando o ganho à produtividade real e faturamento.</p>
+    <h3>Modelo de Cálculo e Conferência</h3>
+    <ul>
+        <li><strong>Gatilho:</strong> Comissão só é lançada após a **emissão da NF de serviço ou venda** e a **liquidação** do valor pelo cliente.</li>
+        <li>**Cálculo:** 5% sobre serviços próprios / 3% sobre venda de produtos instalados.</li>
+        <li>**Conferência:** Planilha de Comissões é atualizada semanalmente (RH) e validada com as NFs emitidas (Financeiro).</li>
+    </ul>
+    <table>
+        <tr><th>Técnico</th><th>Tipo de serviço</th><th>Valor OS</th><th>%</th><th>Valor comissão</th><th>NF</th><th>Pago (S/N)</th></tr>
+        <tr><td>[Nome]</td><td>Troca de Pneus</td><td>R$ 800,00</td><td>3%</td><td>R$ 24,00</td><td>NFe 123</td><td>Sim</td></tr>
+    </table>
+
+    <h2 id="sec8">8. Política de Comissão</h2>
+    <p><strong>Objetivo:</strong> Formalizar regras claras em documento normativo, mitigando passivos trabalhistas.</p>
+    <ul>
+        <li>A comissão é calculada sobre **valores líquidos** de desconto e sem inclusão de impostos.</li>
+        <li>É devida apenas após o **pagamento integral** do cliente.</li>
+        <li>**Estornos** são aplicáveis em caso de devolução ou refação comprovada.</li>
+        <li>Pagamento até o 5º dia útil do mês seguinte, conforme <span class="legal-ref">CLT - Decreto-Lei nº 5.452/43 <a href="https://www.planalto.gov.br/ccivil_03/decreto-lei/del5452.htm" target="_blank">(clique aqui)</a></span>.</li>
+    </ul>
+
+    <h2 id="sec9">9. Solicitação de Exames Admissionais e Periódicos</h2>
+    <p><strong>Objetivo:</strong> Manter conformidade com o eSocial e <span class="legal-ref">NR-7 <a href="https://www.gov.br/trabalho-e-emprego/pt-br/assuntos/inspecao-do-trabalho/seguranca-e-saude-no-trabalho/normas-regulamentadoras/nr-7" target="_blank">(PCMSO)</a></span>.</p>
+    <ul>
+        <li>**Admissional:** Solicitado obrigatoriamente antes do primeiro dia de trabalho.</li>
+        <li>**Periódico:** Anual para mecânicos e a cada 2 anos para funções administrativas.</li>
+        <li>**Controle:** Planilha de RH deve controlar o vencimento dos ASOs.</li>
+        <li>**Arquivamento:** O ASO (Atestado de Saúde Ocupacional) deve ser arquivado digitalmente no prontuário do colaborador.</li>
+    </ul>
+
+    <h2 id="sec10">10. Organização de Notas Fiscais de Compra e Conferência</h2>
+    <p><strong>Objetivo:</strong> Assegurar que o fornecedor emitiu corretamente a NF, crucial para o crédito de ICMS/PIS/COFINS (Lucro Real).</p>
+    <h3>Checklist de Conferência Fiscal</h3>
+    <ol>
+        <li>Baixar **XML** e PDF da NF.</li>
+        <li>Conferir dados principais (CNPJ/Razão Social).</li>
+        <li>Validar **CFOP** (1.xxx/2.xxx), **CST** e **NCM** (Ex: Pneus 4011.10.00).</li>
+        <li>Verificar a incidência de **ICMS-ST/FCP** retido.</li>
+        <li>Manifestar NFe como “Confirmação da Operação”.</li>
+        <li>Notas erradas → Solicitar Carta de Correção Eletrônica (CC-e) ao fornecedor.</li>
+    </ol>
+
+    <h2 id="sec11">11. Organização e Faturamento de Serviços</h2>
+    <p><strong>Objetivo:</strong> Garantir que 100% das Ordens de Serviço (OS) gerem faturamento fiscal (NFS-e).</p>
+    <ul>
+        <li>**Pipeline:** OS $\rightarrow$ Aprovação do Cliente $\rightarrow$ Emissão da NFS-e.</li>
+        <li>**Emissão:** Pelo sistema municipal de Goiânia (CNAE 45.20-0-01).</li>
+        <li>**Vínculo:** Vincular a NFS-e à OS original e ao lançamento no financeiro/comissão.</li>
+        <li>**KPI:** % de OS faturadas: <span class="kpi">Meta 100%</span>.</li>
+    </ul>
+
+    <h2 id="sec12">12. Emissão de Nota Fiscal de Venda (Mercadorias)</h2>
+    <p><strong>Objetivo:</strong> Padronizar a emissão de NFe (modelo 55) para pneus e peças.</p>
+    <ul>
+        <li>**CFOP:** 5.102 (interna) ou 6.102 (interestadual). Vendas com ST: 5.405/6.405 (contribuinte substituído).</li>
+        <li>**CST/CSOSN:** Usar CST 060 (ICMS cobrado por ST) ou 000 (tributado integralmente, Lucro Presumido).</li>
+        <li>**DIFAL/FCP:** Aplicar nas vendas a Consumidor Final em outros estados (EC 87/2015).</li>
+    </ul>
+
+    <h2 id="sec13">13. Emissão de Nota Fiscal de Serviços (NFS-e)</h2>
+    <p><strong>Objetivo:</strong> Garantir regularidade municipal e correta retenção do ISS.</p>
+    <ul>
+        <li>**Sistema:** Acessar o sistema da Prefeitura de Goiânia (NFS-e).</li>
+        <li>**CNAE:** 45.20-0-01 (serviços de manutenção mecânica).</li>
+        <li>**Alíquota:** ISSQN <span class="kpi">5%</span> (Goiânia).</li>
+        <li>**Boas Práticas:** Incluir sempre a placa do veículo no campo “Discriminação” e emitir a nota no mesmo dia do pagamento.</li>
+    </ul>
+
+    <h2 id="sec14">14. Regimento Interno dos Funcionários</h2>
+    <p><strong>Objetivo:</strong> Criar um código de conduta e rotina interna, de acordo com o poder diretivo do empregador (<span class="legal-ref">CLT <a href="https://www.planalto.gov.br/ccivil_03/decreto-lei/del5452.htm" target="_blank">(clique aqui)</a></span>).</p>
+    <h3>Regras Gerais de Conduta (Excertos)</h3>
+    <ul>
+        <li>Pontualidade obrigatória.</li>
+        <li>Uso de celular proibido durante atendimento/serviço.</li>
+        <li>Uso de Uniforme e EPIs (conforme <span class="legal-ref">NR-6 <a href="https://www.gov.br/trabalho-e-emprego/pt-br/assuntos/inspecao-do-trabalho/seguranca-e-saude-no-trabalho/normas-regulamentadoras/nr-6" target="_blank">(clique aqui)</a></span>).</li>
+        <li>Sigilo absoluto sobre informações financeiras e de clientes (LGPD).</li>
+    </ul>
+
+    <h2 id="sec15">15. Regimento de Comissão</h2>
+    <p><strong>Objetivo:</strong> Consolidar os itens 7 e 8 em documento normativo, de acordo com a CLT.</p>
+    <ul>
+        <li>Comissão é calculada com base em OS faturadas e **NFs liquidadas**.</li>
+        <li>Pagamento até o 5º dia útil do mês seguinte.</li>
+        <li>Estorno automático em caso de cancelamento/devolução de serviço.</li>
+    </ul>
+
+    <h2 id="sec16">16. Regulamento de Banco de Horas e Horas Extras</h2>
+    <p><strong>Objetivo:</strong> Adequar o controle de ponto e jornada à <span class="legal-ref">CLT <a href="https://www.planalto.gov.br/ccivil_03/decreto-lei/del5452.htm" target="_blank">(clique aqui)</a></span>, evitando passivos.</p>
+    <ul>
+        <li>**Banco de Horas:** Compensação em até 6 meses (mediante acordo formal).</li>
+        <li>**Horas Extras:** Horas não compensadas são pagas com adicional de 50% (dias normais) ou 100% (feriados/domingos).</li>
+        <li>**Controle:** Registro de ponto obrigatório (eletrônico ou manual) e validação semanal.</li>
+    </ul>
+
+    <h2 id="sec17">17. Apuração de Resultado Mensal ou Bimestral</h2>
+    <p><strong>Objetivo:</strong> Mensurar lucro, rentabilidade e eficiência operacional (saída do lucro por "percepção").</p>
+    <h3>Modelo DRE Gerencial Simplificado (Metas de Correção)</h3>
+    <table>
+        <tr><th>Descrição</th><th>Valor (R$)</th><th>% da Receita Bruta (R$ 300.000)</th></tr>
+        <tr><td>Receita Bruta</td><td>300.000</td><td>100,0%</td></tr>
+        <tr><td>(-) Deduções/Impostos</td><td>43.710</td><td>14,6%</td></tr>
+        <tr><td><strong>Receita Líquida</strong></td><td><strong>256.290</strong></td><td><strong>85,4%</strong></td></tr>
+        <tr><td>(-) Custos Variáveis (Insumos/Compras)</td><td>140.000</td><td>46,7% (Meta: reduzir para 35%)</td></tr>
+        <tr><td>(-) Folha de Pagamento</td><td>80.000</td><td>26,7%</td></tr>
+        <tr><td>(-) Despesas Fixas e Gerais</td><td>25.000</td><td>8,3%</td></tr>
+        <tr><td><strong>Lucro Líquido Estimado</strong></td><td><strong>11.290</strong></td><td><strong>3,8% (Meta: aumentar para 15%)</strong></td></tr>
+    </table>
+    <p class="box-info"><strong>Ação:</strong> O foco primário para elevar o lucro é a **redução imediata dos Custos Variáveis (46,7%)** através de cotação e controle de estoque.</p>
+
+    <h2 id="sec18">18. Política de Precificação</h2>
+    <p><strong>Objetivo:</strong> Definir margens e critérios para formar preços sustentáveis e competitivos.</p>
+    <h3>Fórmula Base (Mark-up)</h3>
+    <div class="math-formula">
+        $$ \text{Preço de Venda} = \frac{\text{Custo Total}}{1 - (\text{Tributos} + \text{Comissão} + \text{Despesas Variáveis} + \text{Margem Desejada})} $$
+    </div>
+    <p><strong>Exemplo:</strong> Custo do Pneu R$ 500,00 $\rightarrow$ Preço Sugerido **R$ 965,22** (aplicando 20% de margem e 14,6% de tributos).</p>
+
+    <h2 id="sec19">19. Projeção de Tributos</h2>
+    <p><strong>Objetivo:</strong> Otimizar o regime tributário através da análise de créditos (foco em PIS/COFINS).</p>
+    <h3>Crédito de PIS/COFINS (Lucro Real)</h3>
+    <ul>
+        <li>Alíquota: 9,25% (Não-cumulativo).</li>
+        <li>**Crédito Sobre Insumos:** R$ 140.000,00 x 9,25% = **R$ 12.950,00/mês**.</li>
+        <li>**Lei de Referência:** <span class="legal-ref">Lei nº 10.833/2003, Art. 3º, II <a href="https://www.planalto.gov.br/ccivil_03/leis/2003/L10.833.htm" target="_blank">(clique aqui)</a></span>.</li>
+    </ul>
+
+    <h2 id="sec20">20. Projeção de Preço Corretamente</h2>
+    <p><strong>Objetivo:</strong> Aplicar a política de precificação considerando o impacto fiscal real.</p>
+    <h3>Exemplo Consolidado (Pneu Aro 15)</h3>
+    <table>
+        <tr><th>Item</th><th>Valor</th></tr>
+        <tr><td>Custo de compra</td><td>R$ 500,00</td></tr>
+        <tr><td>Taxa de Tributos (14,6%)</td><td>R$ 73,00 (embutido no markup)</td></tr>
+        <tr><td>Comissão Vendedor (5%)</td><td>R$ 25,00 (embutido no markup)</td></tr>
+        <tr><td>Margem Alvo (20%)</td><td>R$ 100,00 (embutido no markup)</td></tr>
+        <tr><td><strong>Preço final sugerido</strong></td><td><strong>R$ 965,22</strong></td></tr>
+    </table>
+
+    <h2 id="sec21">21. Benefícios Fiscais e Planejamento Tributário</h2>
+    <p><strong>Objetivo:</strong> Reduzir legalmente a carga tributária e aumentar o resultado líquido (foco na migração de regime).</p>
+
+    <h3>21.1 Benefícios Fiscais em Goiás</h3>
+    <ul>
+        <li>**Pneus:** Redução de Base de Cálculo do ICMS para pneumáticos novos (Convênio ICMS 32/15) <span class="legal-ref"><a href="https://www.confaz.fazenda.gov.br/legislacao/convenios/2015/CV032_15" target="_blank">(clique aqui)</a></span>.</li>
+        <li>**PIS/COFINS:** Crédito sobre insumos mecânicos e lubrificantes no regime não-cumulativo (<span class="legal-ref">Lei 10.833/2003 <a href="https://www.planalto.gov.br/ccivil_03/leis/2003/L10.833.htm" target="_blank">(clique aqui)</a></span>).</li>
+    </ul>
+
+    <h3>21.2 Planejamento Tributário Estruturado (Matriz de Decisão)</h3>
+    <table>
+        <tr><th>Regime</th><th>Carga Efetiva Estimada</th><th>Tributos/Ano (R$)</th><th>Recomendação Técnica</th></tr>
+        <tr><td>Lucro Presumido (LP)</td><td>$\approx 14,93\%$</td><td>537.480</td><td>Regime Atual - Ineficiente</td></tr>
+        <tr><td><strong>Lucro Real (LR)</strong></td><td>$\approx 12,0\%$</td><td>432.000</td><td><strong>Recomendado (Economia de ~R$ 105.480/ano)</strong></td></tr>
+    </table>
+    <p class="box-info"><strong>Conclusão Técnica:</strong> A migração para o Lucro Real em 2026 é imperativa, condicionada à implantação imediata dos controles contábeis plenos e escrituração digital (para aproveitamento dos créditos de PIS/COFINS e ICMS).</p>
+
+    <footer>
+        <hr>
+        <p style="text-align: center; font-size: 10pt; color: #666;">Documento elaborado pela RJC Assessoria Contábil e Tributária | Versão Operacional e Didática</p>
+    </footer>
+
+</div>
+</body>
+</html>
