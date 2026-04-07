@@ -474,6 +474,10 @@
         🎯 ICMS/GO Benefícios
         <span class="badge" id="icmsgoCount">—</span>
 </a>
+<a class="nav-tab" data-section="cbenef" href="#cbenef">
+        🧾 cBenef Goiás
+        <span class="badge" id="cbenefCount">—</span>
+</a>
 <a class="nav-tab" data-section="reforma" href="#reforma">
         🏛️ Reforma Tributária
       </a>
@@ -590,7 +594,7 @@
 <section class="section" id="icmsgo">
 <h2 class="section-title">ICMS/GO - Benefícios Fiscais</h2>
 <p class="section-description">
-        Benefícios fiscais de ICMS em Goiás organizados por categoria, com apoio operacional à leitura de cBenef, CST, enquadramento documental e programas de incentivo estaduais.
+        Benefícios fiscais de ICMS em Goiás organizados por categoria, com apoio operacional à leitura de CST, enquadramento documental e programas de incentivo estaduais. Os códigos de <strong>cBenef</strong> agora estão detalhados em uma <strong>aba específica</strong>, com recorte setorial e explicação operacional própria.
       </p>
 <div class="info-box">
 <h3>cBenef Goiás e emissão de NF-e/NFC-e</h3>
@@ -631,6 +635,50 @@
 </tr>
 </thead>
 <tbody id="icmsgoTableBody">
+<!-- Dados serão inseridos via JavaScript -->
+</tbody>
+</table>
+</div>
+</section>
+<section class="section" id="cbenef">
+<h2 class="section-title">cBenef Goiás — códigos por setor</h2>
+<p class="section-description">
+        Leitura operacional da tabela estadual do campo <strong>"Código de Benefício na UF"</strong>, com curadoria setorial para facilitar a triagem de alimentos, agro, fármacos, higiene, combustíveis, energia e segmentos correlatos.
+      </p>
+<div class="info-box" style="background:#eff6ff;border-color:#93c5fd;">
+<h3>O que é o cBenef em Goiás</h3>
+<p>A <strong>IN nº 1.518/2022-GSE</strong> instituiu a tabela estadual de <strong>cBenef</strong> para preenchimento da <strong>NF-e modelo 55</strong> e da <strong>NFC-e modelo 65</strong> quando houver benefício fiscal de ICMS sujeito à disciplina goiana. Na prática, o código não deve ser tratado como campo solto: ele precisa conversar com a <strong>hipótese legal</strong>, com o <strong>CST</strong>, com a descrição da operação e com o perfil do contribuinte. A alteração promovida pela <strong>IN nº 1.523/2022-GSE</strong> também exige atenção para a disciplina aplicável ao <strong>Simples Nacional</strong>.</p>
+</div>
+<div class="info-box" style="background:#fff7ed;border-color:#fdba74;">
+<h3>Como ler a curadoria setorial abaixo</h3>
+<p>Os códigos abaixo são um <strong>recorte operacional</strong> da tabela oficial de Goiás. Eles foram organizados por setor para acelerar consulta interna, mas <strong>não substituem</strong> a validação do dispositivo legal, da materialidade da operação, da NCM quando houver, do CST aplicável e das condições específicas de fruição. Em outras palavras: o setor ajuda a localizar o tema, mas a emissão segura continua dependendo do cruzamento normativo completo.</p>
+</div>
+<div class="info-box" style="background:#f8fafc;border-color:#cbd5e1;">
+<h3>Base oficial utilizada nesta aba</h3>
+<p><a href="https://appasp.economia.go.gov.br/legislacao/arquivos/Secretario/IN/IN_1518_2022.htm" target="_blank" rel="noopener">IN nº 1.518/2022-GSE</a>, com alterações posteriores; <a href="https://goias.gov.br/economia/codigos-de-beneficios-fiscais/" target="_blank" rel="noopener">página de Códigos de Benefícios Fiscais da Secretaria da Economia de Goiás</a>; e referências materiais do <a href="https://appasp.economia.go.gov.br/legislacao/arquivos/Rcte/Anexos/ANEXO_09_Beneficio_Fiscal.htm" target="_blank" rel="noopener">Anexo IX do RCTE</a>. A segmentação por setor abaixo é uma <strong>organização editorial da RJC</strong> para consulta, e não a forma oficial de publicação da tabela estadual.</p>
+</div>
+<div class="filters">
+<button class="filter-btn active" data-filter="todos">Todos</button>
+<button class="filter-btn" data-filter="Alimentos">Alimentos</button>
+<button class="filter-btn" data-filter="Agro">Agro</button>
+<button class="filter-btn" data-filter="Fármacos">Fármacos</button>
+<button class="filter-btn" data-filter="Higiene">Higiene</button>
+<button class="filter-btn" data-filter="Combustíveis">Combustíveis</button>
+<button class="filter-btn" data-filter="Energia">Energia</button>
+<button class="filter-btn" data-filter="Bares e Bebidas">Bares e Bebidas</button>
+</div>
+<div class="table-container">
+<table class="data-table">
+<thead>
+<tr>
+<th>Setor</th>
+<th>Código cBenef</th>
+<th>Descrição legal resumida</th>
+<th>Base normativa</th>
+<th>Leitura operacional</th>
+</tr>
+</thead>
+<tbody id="cbenefTableBody">
 <!-- Dados serão inseridos via JavaScript -->
 </tbody>
 </table>
@@ -857,8 +905,29 @@
         { categoria: "Bebidas", ncm: "22011000", produto: "Águas minerais", beneficio: "Redução BC", leitura: "Bebidas exigem especial cautela porque podem coexistir regimes distintos de ICMS e PIS/COFINS." },
         { categoria: "Bebidas", ncm: "22029900", produto: "Refrigerantes", beneficio: "Redução BC", leitura: "A análise deve considerar também o regime monofásico e outras incidências que dialogam com a operação." },
         { categoria: "Programa Estadual", ncm: "—", produto: "ProGoiás", beneficio: "Crédito Outorgado", leitura: "O ProGoiás foi instituído para incentivar implantação, ampliação e revitalização de estabelecimentos industriais, com crédito outorgado de ICMS e critérios próprios de enquadramento, operacionalização e controle." },
-        { categoria: "Programa Estadual", ncm: "—", produto: "cBenef Goiás — IN nº 1.518/2022-GSE", beneficio: "Obrigação acessória documental", leitura: "A IN nº 1.518/2022-GSE institui a tabela estadual do campo 'Código de Benefício na UF' para NF-e e NFC-e. A leitura segura exige cruzar CST, hipótese legal, descrição documental e eventual exceção subjetiva, como a disciplina do Simples Nacional introduzida pela IN nº 1.523/2022-GSE." },
         { categoria: "Programa Estadual", ncm: "—", produto: "Compensação de benefícios de ICMS", beneficio: "Transição da reforma tributária", leitura: "A compensação oficial exige benefício oneroso, concedido por prazo certo e sob condição, regularmente concedido até 31.05.2023, registrado e depositado na forma da LC nº 160/2017 e com cumprimento tempestivo das condições da norma concessiva." }
+      ],
+
+      cbenef: [
+        { setor: "Alimentos", codigo: "GO811052", descricao: "Saída de produtos alimentícios com destino a estabelecimento do Banco de Alimentos, do INTEGRA e do Mesa Brasil SESC.", base: "Tabela cBenef de Goiás; RCTE, Anexo IX, art. 6º, inciso LII.", leitura: "Código útil para operações favorecidas muito específicas no setor alimentício. Não deve ser reaproveitado como código genérico para qualquer venda de alimento." },
+        { setor: "Alimentos", codigo: "GO811115", descricao: "Saída de gênero alimentício para alimentação escolar promovida por agricultor familiar, empreendedor familiar rural ou por suas organizações.", base: "Tabela cBenef de Goiás; RCTE, Anexo IX, art. 6º, inciso CXXVIII.", leitura: "Exige leitura conjunta da política pública, da origem do fornecedor e do destino vinculado à alimentação escolar." },
+        { setor: "Alimentos", codigo: "GO811133", descricao: "Sucessivas saídas internas de trigo com destino à industrialização.", base: "Tabela cBenef de Goiás; RCTE, Anexo IX, art. 6º, inciso CXLIX.", leitura: "É um exemplo claro de que o setor ajuda a localizar o tema, mas a incidência depende do tipo exato de cadeia e da destinação industrial." },
+        { setor: "Agro", codigo: "GO811074", descricao: "Saída interna, com destino à industrialização, inclusive ao resfriamento, de leite em estado natural de produção própria do produtor.", base: "Tabela cBenef de Goiás; RCTE, Anexo IX, art. 6º, inciso LXXXII.", leitura: "Importa conferir se a operação decorre da produção própria, se o destino é realmente industrialização ou resfriamento e qual documento está sendo emitido." },
+        { setor: "Agro", codigo: "GO811117", descricao: "Operação de importação, realizada por produtores de algodão ou por suas associações, de máquina e aparelho para ensaio têxtil.", base: "Tabela cBenef de Goiás; RCTE, Anexo IX, art. 6º, inciso CXXX.", leitura: "O benefício está ligado a hipótese técnica e subjetiva específica. O enquadramento depende do perfil do adquirente e da finalidade do equipamento." },
+        { setor: "Fármacos", codigo: "GO811139", descricao: "Operações com o medicamento Spinraza (Nusinersena) injection 12 mg/5 ml, destinado ao tratamento da Atrofia Muscular Espinal.", base: "Tabela cBenef de Goiás; RCTE, Anexo IX, art. 6º, inciso CLVI.", leitura: "Exemplo de código altamente específico para medicamento individualizado; demanda conferência rigorosa de produto, destinação e hipótese legal." },
+        { setor: "Fármacos", codigo: "GO811140", descricao: "Operações com aceleradores lineares classificados no código NCM 9022.21.90.", base: "Tabela cBenef de Goiás; RCTE, Anexo IX, art. 6º, inciso CLVII.", leitura: "Embora apareça na trilha de saúde, a leitura segura depende do enquadramento do equipamento e da aderência ao item normativo correspondente." },
+        { setor: "Fármacos", codigo: "GO812049", descricao: "Operações internas com medicamentos que possuem farmacêuticos ativos relacionados no Apêndice XLVIII do Anexo IX do RCTE.", base: "Tabela cBenef de Goiás; código acrescido por alteração posterior da tabela estadual.", leitura: "Não basta saber que se trata de medicamento: é preciso confirmar se o fármaco ativo consta do apêndice específico e se a operação é a mesma prevista na norma." },
+        { setor: "Fármacos", codigo: "GO812051", descricao: "Operação com o medicamento Elevidys (delandistrogene moxeparvovec).", base: "Tabela cBenef de Goiás; código acrescido por alteração posterior da tabela estadual.", leitura: "A identificação por nome comercial e princípio ativo reforça que esse código não pode ser generalizado para produtos da mesma família terapêutica." },
+        { setor: "Higiene", codigo: "GO811144", descricao: "Operações com absorventes higiênicos, coletores e discos menstruais, calcinhas absorventes e panos absorventes íntimos destinados a órgãos da Administração Pública Direta e Indireta.", base: "Tabela cBenef de Goiás; código acrescido por alteração posterior da tabela estadual.", leitura: "A descrição mostra um recorte objetivo de produto e também um destino subjetivo específico. A venda fora desse contexto não autoriza uso automático do mesmo código." },
+        { setor: "Higiene", codigo: "GO812015", descricao: "Operação com preservativo, classificado no código 4014.10.00 da NBM/SH.", base: "Tabela cBenef de Goiás; RCTE, Anexo IX, art. 7º, inciso XXIV.", leitura: "O uso seguro depende da aderência simultânea entre descrição, classificação fiscal e hipótese normativa da tabela estadual." },
+        { setor: "Combustíveis", codigo: "GO811128", descricao: "Operação interna com óleo diesel destinada a empresa de transporte coletivo detentora de contrato de concessão celebrado com a CMTC.", base: "Tabela cBenef de Goiás; RCTE, Anexo IX, art. 6º, inciso CXLIII.", leitura: "O setor combustível aqui está condicionado ao destinatário e ao contrato de concessão, o que impede uso ampliado para qualquer operação com diesel." },
+        { setor: "Combustíveis", codigo: "GO811129", descricao: "Operações interna e interestadual com etanol anidro combustível para armazenagem no sistema dutoviário.", base: "Tabela cBenef de Goiás; RCTE, Anexo IX, art. 6º, inciso CXLIV.", leitura: "A materialidade da operação e o ambiente logístico são centrais. Não se trata de código aberto para qualquer circulação de etanol." },
+        { setor: "Combustíveis", codigo: "GO821003", descricao: "Saída tributada interna de gás liquefeito de petróleo.", base: "Tabela cBenef de Goiás; RCTE, Anexo IX, art. 8º, inciso III.", leitura: "Esse código evidencia que a tabela estadual também alcança hipóteses de redução de base e não apenas isenções puras." },
+        { setor: "Energia", codigo: "GO811130", descricao: "Operações realizadas no âmbito de consórcio de empresas constituído com a finalidade de produção de energia elétrica a partir do bagaço de cana-de-açúcar.", base: "Tabela cBenef de Goiás; RCTE, Anexo IX, art. 6º, inciso CXLV.", leitura: "A hipótese está vinculada à estrutura do consórcio e à finalidade energética, o que exige leitura documental e societária da operação." },
+        { setor: "Energia", codigo: "GO811132", descricao: "Fornecimento de energia elétrica pela distribuidora à unidade consumidora, nos termos do Sistema de Compensação de Energia Elétrica.", base: "Tabela cBenef de Goiás; RCTE, Anexo IX, art. 6º, inciso CXLVIII.", leitura: "Exemplo importante para operações relacionadas à compensação de energia, exigindo aderência ao desenho regulatório do setor elétrico." },
+        { setor: "Energia", codigo: "GO811134", descricao: "Operação interna com produtos destinados à geração de energia solar.", base: "Tabela cBenef de Goiás; RCTE, Anexo IX, art. 6º, inciso CLI.", leitura: "O setor de energia solar exige cuidado redobrado com a identificação do produto e com a relação material entre mercadoria e geração de energia." },
+        { setor: "Energia", codigo: "GO811145", descricao: "Saídas internas de biogás, considerado o gás oriundo do processo de biodigestão anaeróbica de resíduos orgânicos.", base: "Tabela cBenef de Goiás; código acrescido por alteração posterior da tabela estadual.", leitura: "A leitura operacional pressupõe definição técnica do produto energético e aderência ao texto estadual atualizado." },
+        { setor: "Bares e Bebidas", codigo: "GO811131", descricao: "Valor cobrado a título de gorjeta, quando do fornecimento de alimentação e bebidas promovido por bares, restaurantes, hotéis e estabelecimentos similares.", base: "Tabela cBenef de Goiás; RCTE, Anexo IX, art. 6º, inciso CXLVII.", leitura: "Apesar de aparecer em uma trilha de alimentação e bebidas, o foco aqui é a rubrica jurídica da gorjeta no documento fiscal, e não uma mercadoria isolada." }
       ],
 
       faq: [
@@ -987,6 +1056,9 @@
         case 'icmsgo':
           renderICMSGOTable();
           break;
+        case 'cbenef':
+          renderCBenefTable();
+          break;
         case 'reforma':
           break;
         case 'faq':
@@ -1066,6 +1138,21 @@
       `).join('');
     }
 
+    function renderCBenefTable() {
+      const tbody = document.getElementById('cbenefTableBody');
+      const data = currentData.cbenef || window.__DATA__.cbenef;
+      
+      tbody.innerHTML = data.map(item => `
+        <tr>
+          <td><span class="tag">${item.setor}</span></td>
+          <td><strong>${item.codigo}</strong></td>
+          <td>${item.descricao}</td>
+          <td>${item.base}</td>
+          <td>${item.leitura}</td>
+        </tr>
+      `).join('');
+    }
+
     function renderFAQ() {
       const container = document.getElementById('faqContent');
       const data = window.__DATA__.faq;
@@ -1134,6 +1221,8 @@
             return item.pis_cofins === currentFilter;
           } else if (section === 'icmsgo') {
             return item.categoria === currentFilter;
+          } else if (section === 'cbenef') {
+            return item.setor === currentFilter;
           }
           return true;
         });
@@ -1152,6 +1241,7 @@
       document.getElementById('aliquotasCount').textContent = window.__DATA__.aliquotas.length;
       document.getElementById('ncmCount').textContent = window.__DATA__.ncm.length;
       document.getElementById('icmsgoCount').textContent = window.__DATA__.icmsgo.length;
+      document.getElementById('cbenefCount').textContent = window.__DATA__.cbenef.length;
     }
   </script>
 <script>
