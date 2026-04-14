@@ -287,6 +287,15 @@
       border-color: #3b82f6;
     }
 
+    .filter-btn:disabled {
+      opacity: 0.45;
+      cursor: not-allowed;
+      background: #f8fafc;
+      color: #94a3b8;
+      border-color: #e2e8f0;
+      box-shadow: none;
+    }
+
     /* Alertas e Informações */
     .info-box {
       background: #fef3c7;
@@ -1405,7 +1414,7 @@
 
     // Funções de renderização e controle
     let currentData = {};
-    let currentFilter = 'todos';
+    let currentFilters = {};
 
     // Inicialização
     document.addEventListener('DOMContentLoaded', function() {
@@ -1415,7 +1424,9 @@
     function initializeApp() {
       setupEventListeners();
       updateCounts();
-      renderSection('cfop');
+      updateFilterAvailability();
+      syncActiveFilterButtons('cfop');
+      applyFilter('cfop');
     }
 
     function setupEventListeners() {
@@ -1436,9 +1447,11 @@
 
       // Filtros
       document.addEventListener('click', function(e) {
-        if (e.target.classList.contains('filter-btn')) {
-          const filter = e.target.dataset.filter;
-          setActiveFilter(e.target, filter);
+        const button = e.target.closest('.filter-btn');
+        if (button && !button.disabled) {
+          const section = button.closest('.section')?.id || getCurrentSection();
+          const filter = button.dataset.filter;
+          setActiveFilter(button, section, filter);
         }
       });
     }
@@ -1456,8 +1469,8 @@
       });
       document.getElementById(sectionName).classList.add('active');
 
-      // Renderizar conteúdo
-      renderSection(sectionName);
+      syncActiveFilterButtons(sectionName);
+      applyFilter(sectionName);
     }
 
     function renderSection(sectionName) {
@@ -1568,7 +1581,16 @@
     function renderCBenefTable() {
       const tbody = document.getElementById('cbenefTableBody');
       const data = currentData.cbenef || window.__DATA__.cbenef;
-      
+
+      if (!data.length) {
+        tbody.innerHTML = `
+        <tr>
+          <td class="no-results" colspan="5">Nenhum cBenef encontrado para este setor.</td>
+        </tr>
+      `;
+        return;
+      }
+
       tbody.innerHTML = data.map(item => `
         <tr>
           <td><span class="tag">${item.setor}</span></td>
@@ -1604,7 +1626,7 @@
     function performSearch(query) {
       if (!query) {
         currentData = {};
-        renderSection(getCurrentSection());
+        applyFilter(getCurrentSection());
         return;
       }
 
@@ -1622,40 +1644,76 @@
       renderSection(section);
     }
 
-    function setActiveFilter(button, filter) {
+    function normalizeFilterValue(value) {
+      return String(value || '')
+        .normalize('NFD')
+        .replace(/[\u0300-\u036f]/g, '')
+        .replace(/\s+/g, ' ')
+        .trim()
+        .toLowerCase();
+    }
+
+    function matchesSectionFilter(sectionName, item, filter) {
+      if (sectionName === 'cst') {
+        if (filter === 'normal') return item.regime === 'Normal';
+        if (filter === 'simples') return item.regime === 'Simples Nacional';
+      } else if (sectionName === 'ncm') {
+        return item.pis_cofins === filter;
+      } else if (sectionName === 'icmsgo') {
+        return normalizeFilterValue(item.categoria) === normalizeFilterValue(filter);
+      } else if (sectionName === 'cbenef') {
+        return normalizeFilterValue(item.setor) === normalizeFilterValue(filter);
+      }
+      return true;
+    }
+
+    function syncActiveFilterButtons(sectionName) {
+      const section = document.getElementById(sectionName);
+      if (!section) return;
+
+      const activeFilter = currentFilters[sectionName] || 'todos';
+      section.querySelectorAll('.filter-btn').forEach(button => {
+        button.classList.toggle('active', button.dataset.filter === activeFilter);
+      });
+    }
+
+    function updateFilterAvailability() {
+      document.querySelectorAll('.section .filters').forEach(container => {
+        const sectionName = container.closest('.section')?.id;
+        const data = window.__DATA__[sectionName];
+        if (!sectionName || !data) return;
+
+        container.querySelectorAll('.filter-btn').forEach(button => {
+          const filter = button.dataset.filter;
+          const hasMatch = filter === 'todos' || data.some(item => matchesSectionFilter(sectionName, item, filter));
+          button.disabled = !hasMatch;
+          button.title = hasMatch ? '' : 'Sem itens cadastrados neste recorte';
+        });
+      });
+    }
+
+    function setActiveFilter(button, sectionName, filter) {
       // Atualizar botões
       button.parentElement.querySelectorAll('.filter-btn').forEach(btn => {
         btn.classList.remove('active');
       });
       button.classList.add('active');
 
-      currentFilter = filter;
-      applyFilter();
+      currentFilters[sectionName] = filter;
+      applyFilter(sectionName);
     }
 
-    function applyFilter() {
-      const section = getCurrentSection();
-      const data = window.__DATA__[section];
-      
-      if (!data || currentFilter === 'todos') {
-        currentData[section] = data;
+    function applyFilter(sectionName = getCurrentSection()) {
+      const data = window.__DATA__[sectionName];
+      const activeFilter = currentFilters[sectionName] || 'todos';
+
+      if (!data || activeFilter === 'todos') {
+        currentData[sectionName] = data;
       } else {
-        currentData[section] = data.filter(item => {
-          if (section === 'cst') {
-            if (currentFilter === 'normal') return item.regime === 'Normal';
-            if (currentFilter === 'simples') return item.regime === 'Simples Nacional';
-          } else if (section === 'ncm') {
-            return item.pis_cofins === currentFilter;
-          } else if (section === 'icmsgo') {
-            return item.categoria === currentFilter;
-          } else if (section === 'cbenef') {
-            return item.setor === currentFilter;
-          }
-          return true;
-        });
+        currentData[sectionName] = data.filter(item => matchesSectionFilter(sectionName, item, activeFilter));
       }
 
-      renderSection(section);
+      renderSection(sectionName);
     }
 
     function getCurrentSection() {
