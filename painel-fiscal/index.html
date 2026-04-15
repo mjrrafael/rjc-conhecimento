@@ -939,9 +939,100 @@
 <p>A leitura oficial hoje disponível permite resumir os requisitos centrais em cinco filtros cumulativos. Primeiro: o benefício precisa ser <strong>oneroso</strong>, ou seja, concedido por <strong>prazo certo e sob condição</strong>. Segundo: deve ter sido <strong>regularmente concedido até 31 de maio de 2023</strong>. Terceiro: o ato concessivo precisa ter sido <strong>registrado e depositado</strong> conforme a <strong>LC 160/2017</strong>. Quarto: a pessoa jurídica deve ter <strong>cumprido tempestivamente</strong> as condições exigidas pela norma. Quinto: o descumprimento superveniente dessas condições leva à <strong>perda do direito à compensação</strong>.</p>
 <p>Na rotina empresarial, isso muda o centro da conversa. Não basta saber que o incentivo existe; é preciso provar que ele era elegível, estava regularizado e continuou sendo cumprido ao longo do tempo.</p>
 </div>
+<div class="info-box" style="background:#eff6ff;border-color:#93c5fd;">
+<h3>Split payment: o que já está desenhado na lei</h3>
+<p>A <strong>LC 214/2025</strong> colocou o <strong>split payment</strong> dentro das modalidades de extinção do débito do IBS e da CBS (<strong>art. 27, III</strong>) e determinou que, nas transações de pagamento, os prestadores de serviço de pagamento e os operadores de sistemas de pagamento <strong>segreguem e recolham</strong> os tributos na <strong>liquidação financeira</strong> da operação (<strong>art. 31</strong>). A <strong>LC 227/2026</strong> refinou o desenho e passou a separar o modelo em <strong>procedimento padrão</strong> e <strong>procedimento simplificado</strong>.</p>
+<p>No cronograma, a leitura correta é esta. A base legal do sistema já produz efeitos em <strong>2026</strong>, e o art. 35 já vinha produzindo efeitos desde <strong>1º de janeiro de 2025</strong> para desenvolvimento da infraestrutura. Ao mesmo tempo, o próprio art. 35 manda que a implementação seja <strong>gradual</strong>, por ato conjunto do <strong>CGIBS</strong> e da <strong>RFB</strong>, com possibilidade de hipóteses facultativas. Em paralelo, o Ministério da Fazenda vem tratando <strong>2026 como ano de teste</strong> das novas regras de tributação do consumo e do método de pagamento.</p>
+</div>
+<div class="table-container">
+<table class="data-table">
+<thead>
+<tr>
+<th>Ponto</th>
+<th>Base oficial</th>
+<th>Leitura prática</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Procedimento padrão</strong></td>
+<td>LC 214/2025, arts. 31 e 32</td>
+<td>O originador da transação transmite os dados da operação e os valores de IBS/CBS ao arranjo de pagamento, e a segregação ocorre na liquidação financeira.</td>
+</tr>
+<tr>
+<td><strong>Procedimento simplificado</strong></td>
+<td>LC 214/2025, art. 33, com redação da LC 227/2026</td>
+<td>Se a transação for iniciada sem identificação dos valores de IBS/CBS, a operação cai no simplificado. Isso importa porque, para adquirente regular, esse caminho não gera crédito pelo valor segregado e recolhido.</td>
+</tr>
+<tr>
+<td><strong>Recolhimento pelo adquirente</strong></td>
+<td>LC 214/2025, art. 36</td>
+<td>Se o meio de pagamento não permitir a segregação, o adquirente do regime regular poderá recolher IBS/CBS da operação. O fornecedor deve conseguir acompanhar esse recolhimento.</td>
+</tr>
+<tr>
+<td><strong>Apropriação de crédito</strong></td>
+<td>LC 214/2025, art. 47</td>
+<td>No regime regular, o crédito nasce quando o débito da operação for extinto por uma das modalidades legais e houver documento fiscal eletrônico idôneo.</td>
+</tr>
+<tr>
+<td><strong>Regra de transição do crédito</strong></td>
+<td>LC 214/2025, art. 48</td>
+<td>Se ainda não houver split payment implementado nem recolhimento pelo adquirente, a extinção do débito fica dispensada para fins de crédito, mas o documento fiscal precisa destacar corretamente IBS e CBS.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="info-box" style="background:#fff7ed;border-color:#fdba74;">
+<h3>Por que os contratos com fornecedores vão mudar</h3>
+<p>Isso não é só discurso de mercado; é uma consequência prática do desenho legal. Se o crédito do adquirente passa a depender da <strong>extinção do débito da operação</strong> e, ao mesmo tempo, o <strong>procedimento simplificado</strong> não gera crédito ao adquirente regular pelo valor segregado, comprador e fornecedor passam a dividir um risco que hoje muitas empresas tratam apenas como problema do fiscal ou do contas a pagar.</p>
+<p>No plano contratual, vale revisar pelo menos seis frentes: <strong>formação do preço</strong> e destaque do IBS/CBS; <strong>qualidade do XML</strong> e dos dados do documento fiscal; <strong>meio de pagamento</strong> e quem inicia a transação; tratamento para hipóteses em que o <strong>adquirente recolha</strong> o tributo na forma do art. 36; rotina de <strong>devolução, cancelamento e estorno</strong>; e cláusulas de <strong>responsabilidade por perda de crédito</strong>, multa, atraso ou custo financeiro causado por erro de emissão, classificação ou parametrização.</p>
+</div>
+<div class="table-container">
+<table class="data-table">
+<thead>
+<tr>
+<th>Cláusula ou rotina</th>
+<th>Por que importa</th>
+<th>O que vale combinar</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Preço e tributo destacado</strong></td>
+<td>O crédito depende de valor correto de IBS/CBS no documento fiscal.</td>
+<td>Definir se o preço é bruto ou líquido de retenções operacionais e como será tratada diferença de imposto apurada depois.</td>
+</tr>
+<tr>
+<td><strong>Integração entre NF-e e pagamento</strong></td>
+<td>O procedimento padrão exige vinculação entre a operação e a transação de pagamento.</td>
+<td>Prever obrigação de manter ERP, gateway, TEF, PIX, boleto e conciliação preparados para transmitir e cruzar os dados certos.</td>
+</tr>
+<tr>
+<td><strong>Fallback do art. 36</strong></td>
+<td>Nem todo instrumento de pagamento permitirá segregação desde o início.</td>
+<td>Definir quando o adquirente poderá recolher IBS/CBS da operação, como o valor será abatido ou informado ao fornecedor e qual prova documental será compartilhada.</td>
+</tr>
+<tr>
+<td><strong>Devolução, cancelamento e estorno</strong></td>
+<td>A reforma cria efeitos recíprocos de débito, crédito e eventual transferência do valor recolhido.</td>
+<td>Fixar prazo para carta de correção, nota de devolução, cancelamento, comunicação entre as partes e ajuste financeiro.</td>
+</tr>
+<tr>
+<td><strong>Regime do fornecedor</strong></td>
+<td>Compras de optante do Simples também entram na conversa de crédito, mas com regra própria.</td>
+<td>Exigir declaração atualizada do regime tributário do fornecedor e obrigação de avisar mudança de enquadramento.</td>
+</tr>
+<tr>
+<td><strong>Indenização por perda de crédito</strong></td>
+<td>Erro de NCM, documento, destaque ou parametrização pode virar custo financeiro real.</td>
+<td>Prever recomposição, abatimento, retenção contratual, SLA de correção e dever de cooperação em fiscalização ou auditoria.</td>
+</tr>
+</tbody>
+</table>
+</div>
 <div class="info-box" style="background:#f8fafc;border-color:#cbd5e1;">
 <h3>Fontes oficiais de apoio para a reforma tributária</h3>
-<p><a href="https://www.planalto.gov.br/ccivil_03/constituicao/emendas/emc/emc132.htm" target="_blank" rel="noopener">EC 132/2023</a>; <a href="https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp214.htm" target="_blank" rel="noopener">LC 214/2025</a>; <a href="https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp227.htm" target="_blank" rel="noopener">LC 227/2026</a>; <a href="https://www.gov.br/fazenda/pt-br/acesso-a-informacao/acoes-e-programas/reforma-tributaria" target="_blank" rel="noopener">Ministério da Fazenda — Reforma Tributária</a>; <a href="https://www.gov.br/fazenda/pt-br/acesso-a-informacao/acoes-e-programas/reforma-tributaria/arquivos/perguntas-e-respostas-reforma-tributaria_.pdf" target="_blank" rel="noopener">Perguntas e Respostas oficiais</a>. A seção resume os pontos com impacto mais direto para acompanhamento empresarial e controle dos incentivos.</p>
+<p><a href="https://www.planalto.gov.br/ccivil_03/constituicao/emendas/emc/emc132.htm" target="_blank" rel="noopener">EC 132/2023</a>; <a href="https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp214.htm" target="_blank" rel="noopener">LC 214/2025</a>; <a href="https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp214.htm#art27" target="_blank" rel="noopener">LC 214/2025, art. 27</a>; <a href="https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp214.htm#art31" target="_blank" rel="noopener">LC 214/2025, arts. 31 a 36</a>; <a href="https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp214.htm#art47" target="_blank" rel="noopener">LC 214/2025, arts. 47 e 48</a>; <a href="https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp227.htm" target="_blank" rel="noopener">LC 227/2026</a>; <a href="https://www.gov.br/fazenda/pt-br/acesso-a-informacao/acoes-e-programas/reforma-tributaria" target="_blank" rel="noopener">Ministério da Fazenda — Reforma Tributária</a>; <a href="https://www.gov.br/fazenda/pt-br/acesso-a-informacao/acoes-e-programas/reforma-tributaria/arquivos/perguntas-e-respostas-reforma-tributaria_.pdf" target="_blank" rel="noopener">Perguntas e Respostas oficiais</a>; <a href="https://www.gov.br/fazenda/pt-br/assuntos/noticias/2024/junho/uso-de-tecnologia-inteligente-e-uma-das-principais-caracteristicas-do-split-payment-ressalta-appy" target="_blank" rel="noopener">Notícia oficial sobre split payment e créditos</a>; <a href="https://www.gov.br/fazenda/pt-br/assuntos/noticias/2025/marco/split-payment-esta-sendo-desenvolvido-para-ter-minima-interferencia-nas-praticas-comerciais-ressalta-appy/" target="_blank" rel="noopener">Notícia oficial sobre implantação gradual</a>. A seção resume os pontos com impacto mais direto para acompanhamento empresarial, contratos e controle dos incentivos.</p>
 </div>
 <div class="table-container">
 <table class="data-table">
@@ -1832,6 +1923,14 @@
         {
           pergunta: "O ProGoiás é apenas uma lista de produtos com benefício?",
           resposta: "Não. O ProGoiás é um programa estadual de incentivo voltado ao desenvolvimento socioeconômico, especialmente ligado à implantação, ampliação e revitalização de estabelecimentos industriais. Sua lógica passa por enquadramento legal, crédito outorgado, sistema próprio e condicionantes de fruição, não por mera consulta a uma tabela de mercadorias."
+        },
+        {
+          pergunta: "Por que a reforma está empurrando renegociação de contratos com fornecedores?",
+          resposta: "Porque o crédito deixa de ser assunto isolado do fiscal e entra no desenho da operação. A <strong>LC 214/2025</strong> liga a apropriação do crédito à <strong>extinção do débito da operação</strong> e ao <strong>documento fiscal eletrônico idôneo</strong>. Além disso, o <strong>procedimento simplificado</strong> do split payment não gera crédito ao adquirente regular pelo valor segregado. Na prática, isso leva empresas a revisar cláusulas sobre preço, XML, meio de pagamento, devolução, estorno e responsabilidade por perda de crédito."
+        },
+        {
+          pergunta: "Sem split payment implementado eu perco o crédito?",
+          resposta: "Não automaticamente. A regra geral do <strong>art. 47</strong> trabalha com crédito após a extinção do débito da operação. Mas o <strong>art. 48</strong> abre uma válvula importante: se ainda não estiver implementado nem o split payment nem o recolhimento pelo adquirente, a extinção do débito fica dispensada para fins de crédito. Nesse cenário, o ponto crítico passa a ser o <strong>destaque correto de IBS e CBS no documento fiscal eletrônico</strong>."
         },
         {
           pergunta: "A reforma tributária extingue imediatamente os incentivos estaduais de ICMS?",
