@@ -565,8 +565,8 @@
                         <p class="chapter-description">Como Evitar Problemas Comuns</p>
                     </div>
                     <div class="toc-item">
-                        <a href="#chapter-18">Capítulo 18: Mudanças 2024-2026</a>
-                        <p class="chapter-description">CRT-MEI, QR-Code v3 e Reforma Tributária</p>
+                        <a href="#chapter-18">Capítulo 18: Virada 2026</a>
+                        <p class="chapter-description">CRT-MEI, QR-Code v3, DF-e e reforma tributária</p>
                     </div>
                     <div class="toc-item">
                         <a href="#chapter-19">Capítulo 19: Casos Práticos Resolvidos</a>
@@ -2182,88 +2182,74 @@
 <!-- Capítulo 18: Mudanças 2024-2026 -->
             <div class="chapter" id="chapter-18">
                 <div class="chapter-header">
-                    <h1 class="chapter-title">Capítulo 18: Mudanças 2024–2026: CRT-MEI, QR-Code v3 e a Reforma Tributária (RTC)</h1>
+                    <h1 class="chapter-title">Capítulo 18: Virada 2026 — CRT-MEI, QR-Code v3, DF-e e Reforma Tributária</h1>
                 </div>
                 <div class="chapter-content">
                     <div class="content-block">
-                        <p>O universo fiscal é tudo, menos estático. Novas legislações, tecnologias e obrigações são introduzidas constantemente. Um analista fiscal de alto nível não apenas domina as regras de hoje, mas também está atento às mudanças que impactarão seu trabalho amanhã. Este capítulo é um radar, apontando para as principais transformações em curso e previstas para o ciclo 2024-2026.</p>
+                        <p>Em 2026, a reforma tributária deixou de ser só pauta de seminário e passou a mexer no coração da rotina fiscal: <strong>cadastro</strong>, <strong>XML</strong>, <strong>ERP</strong>, <strong>homologação</strong>, <strong>regras de negócio</strong> e <strong>qualidade documental</strong>. Este capítulo trata do que já está em produção e do que precisa ser testado com método para a empresa não descobrir a mudança pela rejeição, pela perda de crédito ou pelo retrabalho no fechamento.</p>
                     </div>
 
                     <div class="content-block">
                         <h2>1. CRT=4 (MEI) - Já em Vigor</h2>
                         <ul>
-                            <li><strong>A Mudança:</strong> A <strong>Nota Técnica 2024.001</strong> oficializou a criação do <strong>CRT=4 (Código de Regime Tributário para o Microempreendedor Individual - MEI)</strong>. Antes, o MEI era enquadrado no CRT=1 (Simples Nacional), o que gerava confusão, já que as regras de tributação do MEI são diferentes das outras empresas do Simples.</li>
-                            <li><strong>O Impacto:</strong>
-                                <ul>
-                                    <li><strong>Sistemas Emissores:</strong> Os ERPs e sistemas de faturamento precisaram se adaptar para permitir a seleção do CRT=4 no cadastro do emitente.</li>
-                                    <li><strong>Validações da SEFAZ:</strong> As regras de validação foram ajustadas para tratar o MEI de forma específica, aplicando as isenções e particularidades do seu regime.</li>
-                                </ul>
-                            </li>
-                            <li><strong>Status:</strong> Já implementado e em produção na maioria dos estados. Se sua empresa emite notas para MEIs, verifique se seu sistema está usando o código correto.</li>
+                            <li><strong>A mudança:</strong> a <strong>NT 2024.001</strong> consolidou o <strong>CRT=4</strong> para o MEI, separando-o do CRT=1 do Simples Nacional.</li>
+                            <li><strong>O impacto real:</strong> cadastro do emitente, regras de validação, parametrização do ERP e conferência do DANFE precisam respeitar o enquadramento correto.</li>
+                            <li><strong>Leitura prática:</strong> este ponto já deveria estar resolvido. Se a empresa ainda trata MEI como CRT=1 por comodidade sistêmica, está levando um erro estrutural para dentro do XML.</li>
                         </ul>
                     </div>
 
                     <div class="content-block">
-                        <h2>2. NFC-e QR-Code v3.0 - A Próxima Evolução do Varejo</h2>
+                        <h2>2. NFC-e QR-Code v3.0 - atualização obrigatória do varejo</h2>
                         <ul>
-                            <li><strong>A Mudança:</strong> A <strong>Nota Técnica 2025.001</strong> instituiu um novo leiaute para a URL do QR-Code da NFC-e, a versão 3.0.</li>
-                            <li><strong>Por que Mudar?</strong> A nova versão visa aumentar a segurança, padronizar a consulta em nível nacional e incluir novas informações, preparando o terreno para futuras integrações, como com meios de pagamento.</li>
-                            <li><strong>O Impacto:</strong>
-                                <ul>
-                                    <li><strong>Sistemas de PDV:</strong> Todos os softwares de Ponto de Venda que emitem NFC-e deverão ser atualizados para gerar o QR-Code no novo formato.</li>
-                                    <li><strong>Prazos:</strong> A NT estabelece um cronograma de implementação:
-                                        <ul>
-                                            <li>Ambiente de Homologação (testes): Já disponível.</li>
-                                            <li>Ambiente de Produção: <strong>A partir de 01 de setembro de 2025</strong>.</li>
-                                            <li>Haverá um período de convivência em que a SEFAZ aceitará tanto a versão 2.0 quanto a 3.0, mas após o prazo final (a ser definido por cada UF), a versão 2.0 será desativada.</li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </li>
+                            <li><strong>A mudança:</strong> a <strong>NT 2025.001</strong> trouxe a nova URL do <strong>QR-Code v3.0</strong> da NFC-e.</li>
+                            <li><strong>O impacto real:</strong> PDV, retaguarda, impressão, contingência e homologação passaram a depender da atualização do fornecedor de software.</li>
+                            <li><strong>O que o fiscal precisa cobrar:</strong> evidência de homologação, teste de leitura do QR-Code, conferência do DANFE NFC-e e calendário da UF para o encerramento da convivência com versões antigas.</li>
                         </ul>
                         
                         <div class="attention-block">
                             <h3>🔴 Atenção</h3>
-                            <p>Este é um ponto crítico para todo o varejo. Sistemas de PDV que não forem atualizados a tempo <strong>deixarão de conseguir emitir NFC-e</strong>. Contate seu fornecedor de software para garantir que ele está ciente e trabalhando na atualização.</p>
+                            <p>QR-Code não é detalhe visual. Se o PDV não estiver pronto, a empresa trava emissão no caixa, perde venda e cria fila justamente no ponto mais sensível da operação.</p>
                         </div>
                     </div>
 
                     <div class="content-block">
-                        <h2>3. RTC - A Reforma Tributária do Consumo</h2>
-                        <p>Esta é, de longe, a maior transformação do sistema tributário brasileiro em décadas. A Emenda Constitucional 132/2023 deu início à <strong>Reforma Tributária do Consumo (RTC)</strong>, que irá substituir cinco tributos atuais (PIS, COFINS, IPI, ICMS e ISS) por três novos.</p>
+                        <h2>3. Reforma tributária: o que os DF-e passam a carregar em 2026</h2>
+                        <p>A <strong>EC 132/2023</strong>, a <strong>LC 214/2025</strong>, a <strong>LC 227/2026</strong> e os atos conjuntos da administração tributária colocaram 2026 como ano de <strong>implantação assistida</strong> das obrigações acessórias da reforma. O recolhimento integral do novo modelo ainda convive com o sistema atual, mas <strong>cadastros, XMLs, emissores e rotinas de homologação já precisam estar preparados</strong>.</p>
 
-                        <h3>Os Novos Tributos:</h3>
+                        <h3>Os novos tributos:</h3>
                         <ul>
-                            <li><strong>CBS (Contribuição sobre Bens e Serviços):</strong> Substituirá o PIS e a COFINS. Será de competência federal.</li>
-                            <li><strong>IBS (Imposto sobre Bens e Serviços):</strong> Substituirá o ICMS (estadual) e o ISS (municipal). Será de competência compartilhada entre estados e municípios.</li>
-                            <li><strong>IS (Imposto Seletivo):</strong> Um imposto extra que incidirá sobre bens e serviços prejudiciais à saúde ou ao meio ambiente (como cigarros e bebidas alcoólicas).</li>
+                            <li><strong>CBS</strong>: substitui PIS e Cofins no desenho federal.</li>
+                            <li><strong>IBS</strong>: substitui ICMS e ISS no desenho compartilhado entre estados e municípios.</li>
+                            <li><strong>IS</strong>: tributo seletivo para hipóteses definidas em lei.</li>
                         </ul>
 
-                        <h3>O Impacto nos Documentos Fiscais:</h3>
-                        <p>A forma de calcular os impostos mudará completamente. Para acomodar essa mudança, os documentos fiscais eletrônicos precisarão ser adaptados. A <strong>Nota Técnica 2025.002</strong> já deu o primeiro passo.</p>
+                        <h3>O impacto nos documentos fiscais:</h3>
+                        <p>NF-e, NFC-e, CT-e, CT-e OS, NFCom, NFS-e e outros documentos entram na transição com novos grupos e campos para suportar <strong>CBS, IBS e IS</strong>. A <strong>NT 2025.002</strong> e as orientações oficiais de 2026 tratam isso como trabalho obrigatório de <strong>parametrização, teste e governança</strong>.</p>
                         <ul>
-                            <li><strong>Novos Campos:</strong> A NT criou novos campos e grupos no leiaute da NF-e/NFC-e para receber as informações do IBS, da CBS e do IS. Haverá campos para a base de cálculo, a alíquota e o valor de cada um dos novos tributos.</li>
-                            <li><strong>Tabelas Novas:</strong> Novas tabelas de códigos serão criadas para detalhar a tributação dos novos impostos (semelhante ao CST atual).</li>
+                            <li><strong>Novos campos</strong> para base, alíquota, valor, hipóteses diferenciadas e informações auxiliares do novo modelo.</li>
+                            <li><strong>Novas tabelas</strong> e códigos para leitura tributária da reforma.</li>
+                            <li><strong>Nova responsabilidade do time fiscal</strong>: validar o XML antes que o problema apareça no caixa, no faturamento, no crédito do cliente ou no SPED.</li>
                         </ul>
 
-                        <h3>O Cronograma da Transição (Longo e Gradual):</h3>
-                        <p>A mudança não será da noite para o dia. A reforma prevê um longo período de transição:</p>
+                        <h3>O que muda na prática em 2026:</h3>
                         <ul>
-                            <li><strong>2026:</strong> Início da CBS e do IBS, com alíquotas de teste (0,9% para CBS e 0,1% para IBS), convivendo com os tributos atuais.</li>
-                            <li><strong>2027:</strong> A CBS substitui totalmente o PIS e a COFINS. O IPI é zerado (exceto para produtos que concorrem com a Zona Franca de Manaus) e o Imposto Seletivo entra em vigor.</li>
-                            <li><strong>2029 a 2032:</strong> Período de transição em que as alíquotas do ICMS e do ISS serão reduzidas gradualmente, enquanto as do IBS aumentarão na mesma proporção.</li>
-                            <li><strong>2033:</strong> Extinção completa do ICMS e do ISS. O novo sistema com IBS e CBS estará plenamente em vigor.</li>
+                            <li><strong>É ano de teste, não de desprezo</strong>: a obrigação acessória já começou, mesmo com cronograma de adaptação e correção.</li>
+                            <li><strong>Sem dado correto, não há transição segura</strong>: empresas que adiarem cadastro, classificação e homologação vão pagar a conta em retrabalho e contingência.</li>
+                            <li><strong>Há janela inicial de correção e proteção contra penalidade automática</strong> nas regras inaugurais, mas isso não transforma entrega ruim em prática aceitável.</li>
+                            <li><strong>Para transporte e serviços</strong>, o cuidado sobe de nível porque tomador, município e local da prestação passam a ter peso ainda maior na formação do documento.</li>
                         </ul>
                     </div>
 
                     <div class="tip-block">
-                        <h3>🧭 O Papel do Analista Fiscal na Transição</h3>
+                        <h3>🧭 O que o analista fiscal precisa fazer agora</h3>
                         <ul>
-                            <li><strong>Mantenha-se Informado:</strong> Acompanhe ativamente as notícias sobre a regulamentação da Reforma Tributária. Leis complementares serão publicadas para detalhar todas as regras.</li>
-                            <li><strong>Participe de Treinamentos:</strong> Haverá uma grande demanda por conhecimento sobre o novo sistema. Participe de webinars, cursos e seminários.</li>
-                            <li><strong>Dialogue com a TI:</strong> Converse com a equipe de TI e com os fornecedores de ERP para entender como eles estão se preparando para adaptar os sistemas aos novos impostos e às novas obrigações acessórias que surgirão.</li>
+                            <li><strong>Mapear todos os DF-e emitidos pela empresa</strong> e descobrir quais já exigem plano de transição em 2026.</li>
+                            <li><strong>Validar o cronograma do ERP e do emissor</strong> com evidência de homologação, e não só promessa comercial.</li>
+                            <li><strong>Revisar cadastros e regras de negócio</strong>: NCM, CFOP, CST, naturezas de operação, tomador, município e observações.</li>
+                            <li><strong>Criar rotina de dupla validação</strong>: tributos atuais + campos novos da reforma.</li>
+                            <li><strong>Integrar fiscal, TI, comercial e jurídico</strong>, porque a reforma não cabe mais só dentro do departamento fiscal.</li>
                         </ul>
-                        <p>O futuro fiscal já começou. Estar preparado para ele não é uma opção, mas uma necessidade para o profissional que deseja se manter relevante e valorizado no mercado. O próximo capítulo trará a teoria para a prática, com casos completos resolvidos.</p>
+                        <p>O profissional que vai se destacar em 2026 não é o que decorou a reforma. É o que consegue transformar a mudança em <strong>processo, validação e documento correto</strong>. O próximo capítulo leva esse raciocínio para casos práticos completos.</p>
                     </div>
                 </div>
             </div>
@@ -2938,6 +2924,8 @@
                             <li><strong>NT 2024.001:</strong> Institui o CRT=4 para o MEI.</li>
                             <li><strong>NT 2025.001:</strong> Institui o QR-Code v3.0 para a NFC-e.</li>
                             <li><strong>NT 2025.002:</strong> Introduz os campos da Reforma Tributária (IBS/CBS/IS) nos leiautes.</li>
+                            <li><strong>Ato Conjunto RFB/CGIBS 1/2025:</strong> disciplina obrigações acessórias iniciais da reforma do consumo.</li>
+                            <li><strong>Orientações 2026 da Reforma do Consumo:</strong> consolidam a fase de implantação assistida e o ambiente de adaptação dos DF-e.</li>
                             <li><strong>NT 2022.005:</strong> Trata das regras de validação do DIFAL.</li>
                             <li><strong>NT 2021.003:</strong> Define as regras de validação do GTIN.</li>
                             <li><strong>NT 2020.001:</strong> Traz atualizações para a Manifestação do Destinatário.</li>
@@ -2954,7 +2942,7 @@
 
         <!-- Footer -->
         <footer class="footer">
-            <p>&copy; 2024 RJC Assessoria - "A Arte de Registrar o Patrimônio"</p>
+            <p>&copy; 2026 RJC Assessoria - "A Arte de Registrar o Patrimônio"</p>
             <p>Manual Técnico Pleno de Documentos Fiscais Eletrônicos</p>
             <p>Todos os direitos reservados</p>
         </footer>
