@@ -1020,7 +1020,7 @@ Receber NF Fornecedor → Conferência (pedido x NF) → Aprovação por alçada
                                 </ol>
                             </div>
 
-                            <h4 class="mt-3 mb-2 font-semibold">Exemplo — Aging de CR</h4>
+                            <h4 class="mt-3 mb-2 font-semibold">Exemplo — Aging de CR (data-base: 28/05/2026)</h4>
                             <div class="table-container">
                                 <table>
                                     <thead>
@@ -1036,35 +1036,35 @@ Receber NF Fornecedor → Conferência (pedido x NF) → Aprovação por alçada
                                         <tr>
                                             <td>Cliente A</td>
                                             <td>R$ 8.500</td>
-                                            <td>10/05/2025</td>
+                                            <td>10/06/2026</td>
                                             <td>—</td>
                                             <td>A vencer</td>
                                         </tr>
                                         <tr>
                                             <td>Cliente B</td>
                                             <td>R$ 12.300</td>
-                                            <td>25/04/2025</td>
+                                            <td>25/05/2026</td>
                                             <td>3</td>
                                             <td>1–30</td>
                                         </tr>
                                         <tr>
                                             <td>Cliente C</td>
                                             <td>R$ 6.750</td>
-                                            <td>02/04/2025</td>
-                                            <td>22</td>
+                                            <td>27/04/2026</td>
+                                            <td>31</td>
                                             <td>31–60</td>
                                         </tr>
                                         <tr>
                                             <td>Cliente D</td>
                                             <td>R$ 15.200</td>
-                                            <td>12/03/2025</td>
-                                            <td>43</td>
+                                            <td>12/03/2026</td>
+                                            <td>77</td>
                                             <td>61–90</td>
                                         </tr>
                                         <tr>
                                             <td>Cliente E</td>
                                             <td>R$ 9.500</td>
-                                            <td>20/12/2024</td>
+                                            <td>20/01/2026</td>
                                             <td>> 90</td>
                                             <td>> 90 dias</td>
                                         </tr>
@@ -1077,6 +1077,7 @@ Receber NF Fornecedor → Conferência (pedido x NF) → Aprovação por alçada
 
                             <div class="exercise">
                                 <div class="exercise-title">Exercício M5 — Renegociação</div>
+                                <p><strong>Premissas:</strong> considere a mesa de negociação em <strong>14/04/2026</strong>, com <strong>juros simples pró-rata</strong> apenas sobre os títulos vencidos. O desconto à vista incide sobre o <strong>saldo consolidado na data do acordo</strong>. No parcelamento em 6x, considere <strong>sem juros adicionais</strong> após a assinatura.</p>
                                 <p><strong>Situação:</strong></p>
                                 <ul>
                                     <li>T1: R$ 10.000 — venc. 15/03 (30d atraso)</li>
@@ -1089,8 +1090,9 @@ Receber NF Fornecedor → Conferência (pedido x NF) → Aprovação por alçada
                             <div class="gabarito">
                                 <div class="gabarito-title">Gabarito (resumo)</div>
                                 <ul>
-                                    <li><strong>À vista:</strong> R$ 32.062,50 (após atualização e desconto).</li>
-                                    <li><strong>6x:</strong> entrada 1/6 + 5 parcelas iguais (R$ 5.625).</li>
+                                    <li><strong>Saldo consolidado:</strong> R$ 33.175,00 (T1 = R$ 10.100,00; T2 = R$ 15.075,00; T3 = R$ 8.000,00).</li>
+                                    <li><strong>À vista:</strong> R$ 31.516,25 após desconto de 5% sobre o saldo consolidado.</li>
+                                    <li><strong>6x:</strong> R$ 5.529,17 por parcela, com ajuste de centavos na última se necessário.</li>
                                 </ul>
                             </div>
                         </div>
@@ -1227,6 +1229,7 @@ Compra/Estoque → Venda → Contas a Receber (PMR) → Caixa → Contas a Pagar
                             <div class="exercise">
                                 <div class="exercise-title">Exercício M8 — Projeção</div>
                                 <p><strong>Saldo inicial:</strong> R$ 80.000</p>
+                                <p><strong>Política mínima de caixa:</strong> R$ 80.000</p>
                                 <p><strong>Entradas/Saídas por 4 semanas:</strong></p>
                                 <ul>
                                     <li>S1: +120.000 / −110.000</li>
@@ -1240,11 +1243,11 @@ Compra/Estoque → Venda → Contas a Receber (PMR) → Caixa → Contas a Pagar
                                 <div class="gabarito-title">Gabarito</div>
                                 <ul>
                                     <li>S1: → <strong>90.000</strong></li>
-                                    <li>S2: → <strong>50.000</strong> (crítico)</li>
+                                    <li>S2: → <strong>50.000</strong> (abaixo da política mínima em R$ 30.000)</li>
                                     <li>S3: → <strong>105.000</strong></li>
                                     <li>S4: → <strong>90.000</strong></li>
                                 </ul>
-                                <p><strong>Ação:</strong> Antecipar R$ 30 mil da S1 para cobrir S2.</p>
+                                <p><strong>Ação:</strong> reprogramar ou antecipar R$ 30 mil antes da S2 se a empresa precisar preservar a reserva mínima de caixa.</p>
                             </div>
                         </div>
                     </div>
@@ -1828,6 +1831,7 @@ Compra/Estoque → Venda → Contas a Receber (PMR) → Caixa → Contas a Pagar
                                     <li>Sazonalidade forte (60% vendas em Nov-Jan)</li>
                                     <li>Margem bruta de 55%, mas EBITDA de apenas 8%</li>
                                 </ul>
+                                <p><strong>Dados de apoio:</strong> considere <strong>DIO de 75 dias</strong>, <strong>PMP de 32 dias</strong>, <strong>70% das vendas em cartão</strong> com recebimento médio em 45 dias e <strong>30% à vista</strong>. Use essas premissas para calcular o ciclo de caixa atual e justificar as propostas.</p>
                                 <p><strong>Tarefas:</strong></p>
                                 <ol>
                                     <li>Calcular o ciclo de caixa atual</li>
@@ -1847,6 +1851,7 @@ Compra/Estoque → Venda → Contas a Receber (PMR) → Caixa → Contas a Pagar
                                     <li>Clientes concentrados (top 3 = 60% receita)</li>
                                     <li>Churn de 15% ao ano</li>
                                 </ul>
+                                <p><strong>Dados de apoio:</strong> receita média mensal de <strong>R$ 900.000</strong>; custo direto da equipe faturável de <strong>R$ 420.000</strong>; terceiros/subcontratações de <strong>R$ 90.000</strong>; despesas indiretas de <strong>R$ 180.000</strong>; <strong>8.000 horas disponíveis</strong> por mês e <strong>5.200 horas faturáveis</strong>. Com isso, a análise de margem por cliente, projeto e hora vendida fica fechada.</p>
                                 <p><strong>Tarefas:</strong></p>
                                 <ol>
                                     <li>Calcular margem por cliente e projeto</li>
@@ -1866,6 +1871,7 @@ Compra/Estoque → Venda → Contas a Receber (PMR) → Caixa → Contas a Pagar
                                     <li>Lead time de produção de 30 dias</li>
                                     <li>Sazonalidade da construção civil</li>
                                 </ul>
+                                <p><strong>Dados de apoio:</strong> capacidade instalada de <strong>1.500 unidades/mês</strong>, produção atual de <strong>900 unidades</strong>, preço médio de venda de <strong>R$ 1.600</strong> por unidade e custo variável médio de <strong>R$ 920</strong> por unidade. Essas premissas permitem calcular o ponto de equilíbrio e desenhar o orçamento flexível.</p>
                                 <p><strong>Tarefas:</strong></p>
                                 <ol>
                                     <li>Calcular ponto de equilíbrio</li>
