@@ -501,8 +501,16 @@
 <section class="section active" id="cfop">
 <h2 class="section-title">CFOP &amp; Natureza da Operação</h2>
 <p class="section-description">
-        Códigos Fiscais de Operações e Prestações com sugestões de natureza da operação para NF-e.
+        Códigos Fiscais de Operações e Prestações com sugestões de natureza da operação para NF-e, pensados para consulta rápida sem perder a lógica fiscal da operação.
       </p>
+<div class="info-box" style="background:#eff6ff;border-color:#93c5fd;">
+<h3>Como ler CFOP sem cair no automatismo</h3>
+<p><strong>O que é:</strong> o CFOP identifica a natureza fiscal da entrada ou da saída e ajuda a contar, para o Fisco, que tipo de operação a empresa praticou.</p>
+<p><strong>Onde a leitura costuma errar:</strong> muita empresa escolhe o código pela mercadoria ou pela rotina do sistema, quando a pergunta correta é outra: <strong>o que aconteceu juridicamente e operacionalmente nessa operação?</strong></p>
+<p><strong>Como funciona de verdade:</strong> o CFOP precisa conversar com <strong>origem e destino</strong>, <strong>tipo de operação</strong>, <strong>natureza da mercadoria ou serviço</strong>, <strong>finalidade da nota</strong> e <strong>reflexo tributário</strong>. Um mesmo item pode circular com CFOP diferente conforme devolução, remessa, industrialização, revenda ou transferência.</p>
+<p><strong>Exemplo prático:</strong> uma venda interna de mercadoria adquirida de terceiros costuma seguir a lógica do <strong>5.102</strong>. Se essa mesma mercadoria for devolvida, o CFOP deixa de ser de venda e passa para a lógica da devolução correspondente. O erro não está só no número: ele muda a leitura do XML, da apuração e da escrituração.</p>
+<p><strong>O que precisa ser provado:</strong> pedido, contrato, origem da mercadoria, destino da operação, finalidade do documento e coerência entre CFOP, CST, natureza da operação e escrita fiscal.</p>
+</div>
 <div class="table-container">
 <table class="data-table">
 <thead>
@@ -524,8 +532,16 @@
 <section class="section" id="cst">
 <h2 class="section-title">CST &amp; CSOSN - Códigos de Situação Tributária</h2>
 <p class="section-description">
-        Códigos de Situação Tributária para regime normal (CST) e Simples Nacional (CSOSN).
+        Códigos de Situação Tributária para regime normal (CST) e Simples Nacional (CSOSN), com leitura pensada para emissão, apuração e conferência documental.
       </p>
+<div class="info-box" style="background:#fff7ed;border-color:#fdba74;">
+<h3>O que CST e CSOSN realmente resolvem</h3>
+<p><strong>O que é:</strong> o <strong>CST</strong> traduz a situação tributária da operação no regime normal; o <strong>CSOSN</strong> faz papel semelhante para o <strong>Simples Nacional</strong>.</p>
+<p><strong>Onde a leitura costuma errar:</strong> o erro clássico é tratar CST ou CSOSN como simples código de sistema. Na prática, eles resumem uma tese tributária: tributação integral, redução de base, isenção, não incidência, ST, crédito permitido ou vedado.</p>
+<p><strong>Como funciona de verdade:</strong> o código só fica correto quando fecha com <strong>regime do emitente</strong>, <strong>tipo de operação</strong>, <strong>benefício aplicável</strong>, <strong>cBenef</strong> quando exigido e <strong>base legal</strong>. Em Goiás, isso pesa muito porque vários benefícios dialogam com CST específico.</p>
+<p><strong>Exemplo prático:</strong> se uma operação usa <strong>redução de base</strong>, o CST não pode contar história de tributação integral. Se a empresa está no <strong>Simples Nacional</strong>, o uso de CST de regime normal em lugar de CSOSN costuma sinalizar erro estrutural de parametrização.</p>
+<p><strong>O que precisa ser provado:</strong> regime tributário do emitente, base legal da operação, enquadramento do benefício, memória de cálculo e coerência entre CST/CSOSN, CFOP, destaque do imposto e escrituração.</p>
+</div>
 <div class="filters">
 <button class="filter-btn active" data-filter="todos">Todos</button>
 <button class="filter-btn" data-filter="normal">Regime Normal (CST)</button>
@@ -550,13 +566,21 @@
 <section class="section" id="aliquotas">
 <h2 class="section-title">Alíquotas ICMS &amp; FCP por Estado</h2>
 <p class="section-description">
-        Quadro de apoio para consulta de alíquotas internas de ICMS e Fundo de Combate à Pobreza (FCP). No fechamento da operação, confirme sempre a legislação vigente da UF.
+        Quadro de apoio para consulta de alíquotas internas de ICMS e Fundo de Combate à Pobreza (FCP). No fechamento da operação, confirme sempre a legislação vigente da UF e a data exata do fato gerador.
       </p>
 <div class="info-box">
 <h3>⚠️ Marcos recentes acompanhados nesta base:</h3>
 <p><strong>Maranhão:</strong> 22% → 23% (vigência: 23/02/2025) | 
            <strong>Rio Grande do Norte:</strong> 18% → 20% (vigência: 20/03/2025) | 
            <strong>Piauí:</strong> 21% → 22,5% (vigência: 01/04/2025)</p>
+</div>
+<div class="info-box" style="background:#f8fafc;border-color:#cbd5e1;">
+<h3>Como usar a tabela de alíquotas em 2026</h3>
+<p><strong>O que é:</strong> esta grade mostra a <strong>alíquota interna</strong> e o <strong>FCP</strong> como apoio de consulta. Ela ajuda a triagem, mas não substitui a validação da legislação da UF no momento da operação.</p>
+<p><strong>Onde a leitura costuma errar:</strong> o erro frequente é olhar a tabela e concluir a tributação sem verificar <strong>data da vigência</strong>, <strong>regra específica do produto</strong>, <strong>benefício estadual</strong>, <strong>adicional</strong> ou <strong>regime monofásico/ST</strong>.</p>
+<p><strong>Como funciona de verdade:</strong> a alíquota interna é apenas uma das camadas da operação. A carga real pode mudar por <strong>redução de base</strong>, <strong>isenção</strong>, <strong>adicional de FCP</strong>, <strong>alíquota majorada</strong>, <strong>incidência única</strong> ou regra setorial da UF.</p>
+<p><strong>Exemplo prático:</strong> uma mercadoria com alíquota interna padrão de 19% pode ter, na prática, carga menor por benefício do Anexo IX em Goiás ou carga maior por adicional de 2% ou alíquota majorada em outros cenários. A consulta correta nunca termina na alíquota cheia.</p>
+<p><strong>O que precisa ser provado:</strong> UF competente, data da operação, produto envolvido, benefício ou regime especial aplicável, memória de cálculo e coerência entre alíquota destacada, CST, cBenef e documentos da operação.</p>
 </div>
 <div class="table-container">
 <table class="data-table">
