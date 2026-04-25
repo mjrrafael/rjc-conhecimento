@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 """Render the deep legal modules for the RJC tax portal.
 
-This module keeps the implementation static and reproducible: federal sources
-come from the local BD_LEGISLACAO corpus, while the Goias material that was
-not clean in the local extraction is read from the public Secretaria da
-Economia HTML pages during generation.
+This module keeps the implementation static and reproducible: research files
+guide the federal text extraction, while Goias material that needs live HTML
+is read from public Secretaria da Economia pages during generation. Public
+pages always cite the competent official link.
 """
 
 from __future__ import annotations
@@ -114,7 +114,7 @@ def read_local_text(files: list[str]) -> str:
     for file_name in files:
         path = FEDERAL_ROOT / file_name
         if not path.exists():
-            raise FileNotFoundError(f"Fonte local nao encontrada: {path}")
+            raise FileNotFoundError(f"Arquivo de pesquisa nao encontrado: {path}")
         chunks.append(strip_local_header(path.read_text(encoding="utf-8", errors="ignore")))
     return "\n\n".join(chunks)
 
@@ -925,6 +925,36 @@ def render_source_link(current_path: str, source_id: str, label: str = "abrir at
     return f'<a href="{escape(rel_href(current_path, source_page_path(source_id)))}">{escape(label)}</a>'
 
 
+def official_link_label(source: dict) -> str:
+    url = source.get("url", "").lower()
+    if "planalto.gov.br" in url:
+        return "link oficial no Planalto"
+    if "receita.fazenda.gov.br" in url or "gov.br/receitafederal" in url:
+        return "link oficial na Receita Federal"
+    if "confaz.fazenda.gov.br" in url:
+        return "link oficial no CONFAZ"
+    if "economia.go.gov.br" in url or "goias.gov.br/economia" in url:
+        return "link oficial na Secretaria da Economia de Goias"
+    if "sped.rfb.gov.br" in url:
+        return "link oficial no SPED"
+    return "link oficial da fonte normativa"
+
+
+def official_anchor(source: dict) -> str:
+    return f'<a href="{escape(source["url"])}" target="_blank" rel="noopener">{escape(official_link_label(source))}</a>'
+
+
+def official_source_links(source_ids: list[str]) -> str:
+    links = []
+    for source_id in source_ids:
+        source = SOURCE_DEFS[source_id]
+        links.append(
+            f'<a href="{escape(source["url"])}" target="_blank" rel="noopener">'
+            f'{escape(source["short"])}: {escape(official_link_label(source))}</a>'
+        )
+    return "".join(links)
+
+
 def render_article_blocks(articles: list[dict], source_id: str, current_path: str) -> str:
     if not articles:
         return '<p class="empty-note">Nao foram encontrados artigos numerados para este recorte. Consulte o ato integral nesta mesma trilha.</p>'
@@ -968,6 +998,7 @@ def render_analysis(chapter: dict) -> str:
 <section class="analysis-panel">
   <span class="eyebrow">Depois da lei</span>
   <h2>Leitura didatica e aplicacao</h2>
+  <p>Os comentarios abaixo partem do texto legal exibido acima. A aplicacao concreta deve voltar ao artigo citado e ao link oficial do ato antes de entrar no ERP, no fechamento ou em parecer.</p>
   {points}
   <div class="department-grid compact">
     <article><strong>Fiscal</strong><span>Transforma o artigo em CST, CFOP, base, aliquota, beneficio e documento.</span></article>
@@ -977,7 +1008,6 @@ def render_analysis(chapter: dict) -> str:
   </div>
 </section>
 """
-
 
 def render_chapter_page(module: dict, chapter: dict, sources: dict, layout_func) -> str:
     path = module_chapter_path(module, chapter)
@@ -991,7 +1021,7 @@ def render_chapter_page(module: dict, chapter: dict, sources: dict, layout_func)
         source = sources[source_id]["def"]
         if ref.get("full_text") or source.get("render") == "full_text":
             body = render_text_chunks(sources[source_id]["text"], source_id)
-            count = fmt_num(len(sources[source_id]["text"]))
+            count = f"{fmt_num(len(sources[source_id]['text']))} caracteres"
         else:
             articles = selected_articles(sources[source_id], ref.get("ranges"), False)
             body = render_article_blocks(articles, source_id, path)
@@ -1002,10 +1032,10 @@ def render_chapter_page(module: dict, chapter: dict, sources: dict, layout_func)
     <div>
       <span class="eyebrow">Texto legal</span>
       <h2>{escape(source['title'])}</h2>
-      <p>{escape(source.get('note', ''))}</p>
+      <p>{escape(source.get('note', ''))} Abaixo, o conteudo normativo aparece em tela antes da leitura pratica.</p>
     </div>
     <div class="document-actions">
-      <a href="{escape(source['url'])}" target="_blank" rel="noopener">fonte publica</a>
+      {official_anchor(source)}
       {render_source_link(path, source_id)}
       <span>{escape(str(count))}</span>
     </div>
@@ -1022,7 +1052,7 @@ def render_chapter_page(module: dict, chapter: dict, sources: dict, layout_func)
   </div>
   <aside class="hero-proof">
     <strong>Ordem de leitura</strong>
-    <p>Primeiro o texto normativo. Depois a interpretacao e a aplicacao por departamento.</p>
+    <p>Primeiro o texto normativo em tela. Depois a interpretacao, sempre amarrada ao link oficial do ato.</p>
   </aside>
 </section>
 <section class="law-reader-grid">
@@ -1062,7 +1092,7 @@ def render_source_page(source_id: str, source_data: dict, layout_func) -> str:
   </div>
   <aside class="hero-proof">
     <strong>Texto em tela</strong>
-    <p>{escape(count)} nesta pagina, com link para a fonte publica do ato.</p>
+    <p>{escape(count)} nesta pagina, com link oficial do ato normativo.</p>
   </aside>
 </section>
 <section class="legal-document">
@@ -1070,10 +1100,10 @@ def render_source_page(source_id: str, source_data: dict, layout_func) -> str:
     <div>
       <span class="eyebrow">Ato normativo</span>
       <h2>{escape(source['short'])}</h2>
-      <p>Use esta pagina como leitura da norma antes de aplicar qualquer conclusao pratica nos capitulos do portal.</p>
+      <p>Use esta pagina como leitura da norma antes de aplicar qualquer conclusao pratica nos capitulos do portal. O fundamento externo e o link oficial indicado ao lado.</p>
     </div>
     <div class="document-actions">
-      <a href="{escape(source['url'])}" target="_blank" rel="noopener">fonte publica</a>
+      {official_anchor(source)}
       <span>{escape(UPDATED_ON)}</span>
     </div>
   </div>
@@ -1106,7 +1136,7 @@ def render_module_index(module: dict, sources: dict, layout_func) -> str:
    data-search="{escape(source['title'] + ' ' + source.get('note', ''))}">
   <span>{escape(source['short'])}</span>
   <strong>{escape(source['title'])}</strong>
-  <small>{fmt_num(chars)} caracteres de texto normativo</small>
+  <small>{fmt_num(chars)} caracteres de texto normativo; {escape(official_link_label(source))}</small>
 </a>
 """)
     body = f"""
@@ -1118,7 +1148,7 @@ def render_module_index(module: dict, sources: dict, layout_func) -> str:
   </div>
   <aside class="hero-proof">
     <strong>Metodo</strong>
-    <p>Capitulo por assunto, texto legal primeiro, analise logo depois.</p>
+    <p>Capitulo por assunto, texto legal primeiro, link oficial citado e analise logo depois.</p>
   </aside>
 </section>
 <section class="law-ledger">
@@ -1128,7 +1158,7 @@ def render_module_index(module: dict, sources: dict, layout_func) -> str:
   </div>
   <div>
     <h2>Fontes base</h2>
-    <p>{fmt_num(len(module['sources']))} atos normativos sustentam esta trilha. Cada ato tem pagina propria com texto em tela.</p>
+    <p>{fmt_num(len(module['sources']))} atos normativos sustentam esta trilha. Cada ato tem pagina propria com texto em tela e link oficial da fonte competente.</p>
   </div>
   <div>
     <h2>Continuidade</h2>
@@ -1148,6 +1178,10 @@ def render_module_index(module: dict, sources: dict, layout_func) -> str:
     <h2>Legislacao em tela</h2>
   </div>
   <div class="source-grid">{''.join(source_cards)}</div>
+</section>
+<section class="continuity">
+  <h2>Links oficiais dos atos</h2>
+  <div>{official_source_links(module['sources'])}</div>
 </section>
 <section class="continuity">
   <h2>Continuar a leitura</h2>
@@ -1181,7 +1215,7 @@ def render_federal_hub(sources: dict, layout_func) -> str:
   <div>
     <span class="eyebrow">Federal v1</span>
     <h1>Legislacao federal em tela</h1>
-    <p>IRPJ, CSLL, IOF, IPI, PIS e Cofins organizados por capitulo, com texto legal antes da analise.</p>
+    <p>IRPJ, CSLL, IOF, IPI, PIS e Cofins organizados por capitulo, com texto legal antes da analise e link oficial do Planalto ou da Receita Federal em cada ato.</p>
   </div>
   <aside class="hero-proof">
     <strong>Escopo desta fase</strong>
@@ -1194,6 +1228,13 @@ def render_federal_hub(sources: dict, layout_func) -> str:
     <h2>Escolha o modulo</h2>
   </div>
   <div class="card-grid">{''.join(cards)}</div>
+</section>
+<section class="continuity">
+  <h2>Fontes oficiais federais</h2>
+  <div>
+    <a href="https://www.planalto.gov.br/ccivil_03/legislacao/legislacao-1.htm" target="_blank" rel="noopener">Legislacao federal no Planalto</a>
+    <a href="https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/legislacao" target="_blank" rel="noopener">Legislacao da Receita Federal</a>
+  </div>
 </section>
 """
     return layout_func(path, "Legislacao federal em tela", "IRPJ, CSLL, IOF, IPI, PIS e Cofins.", body, "federal")
@@ -1253,7 +1294,7 @@ def federal_legislation_card(current_path: str) -> str:
    data-search="IRPJ CSLL IOF IPI PIS Cofins legislacao integral lei em tela">
   <span class="card-kicker">Lei em tela</span>
   <h3>Federal: legislacao integral</h3>
-  <p>IRPJ, CSLL, IOF, IPI, PIS e Cofins em capitulos: primeiro a lei, depois a analise.</p>
+  <p>IRPJ, CSLL, IOF, IPI, PIS e Cofins em capitulos: primeiro a lei em tela, com link oficial, depois a analise.</p>
   <small>fase federal publicada</small>
 </a>
 """
@@ -1265,7 +1306,7 @@ def goias_legislation_card(current_path: str) -> str:
    data-search="Goias ICMS Anexo IX beneficios fiscais cBenef RCTE lei em tela">
   <span class="card-kicker">Goias</span>
   <h3>ICMS/GO em tela</h3>
-  <p>RCTE, Anexo IX, cBenef, beneficios, reducoes, creditos e prova documental.</p>
+  <p>RCTE, Anexo IX, cBenef, beneficios, reducoes, creditos e prova documental com link oficial da Secretaria da Economia.</p>
   <small>modelo estadual v1</small>
 </a>
 """
