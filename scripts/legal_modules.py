@@ -126,6 +126,14 @@ def strip_local_header(text: str) -> str:
 
 def normalize_law_text(text: str, start_marker: str = "") -> str:
     text = text.replace("\xa0", " ")
+    text = text.translate({
+        0x0091: ord("'"),
+        0x0092: ord("'"),
+        0x0093: ord('"'),
+        0x0094: ord('"'),
+        0x0096: ord("-"),
+        0x0097: ord("-"),
+    })
     text = re.sub(r"[\x00-\x08\x0b\x0c\x0e-\x1f]", " ", text)
     if start_marker:
         marker_index = text.upper().find(start_marker.upper())
