@@ -324,11 +324,11 @@ def signal_badges(signals: dict, limit: int = 6) -> str:
 def signal_grid(signals: dict, title: str, intro: str) -> str:
     items = sorted(signals.items(), key=lambda item: item[1], reverse=True)[:10]
     if not items:
-        cards = '<article class="signal-card"><strong>Sem sinais suficientes</strong><span>O acervo local nao trouxe ocorrencias materiais para esta rodada.</span></article>'
+        cards = '<article class="signal-card"><strong>Sem sinais suficientes</strong><span>Nao ha sinais materiais publicados nesta pagina.</span></article>'
     else:
         cards = "".join(
             f'<article class="signal-card"><strong>{escape(SIGNAL_LABELS.get(key, key))}</strong>'
-            f'<span>{fmt_num(value)} ocorrencias no acervo</span></article>'
+            f'<span>{fmt_num(value)} ocorrencias na legislacao</span></article>'
             for key, value in items
         )
     return f"""
@@ -409,11 +409,11 @@ def category_cards(docs: list[dict]) -> str:
         cards.append(
             f'<article class="matrix-card searchable-card" data-search="{escape(category + " " + bucket["label"])}">'
             f'<h3>{escape(bucket["label"])}</h3>'
-            f'<p>{fmt_num(bucket["count"])} consolidados, {fmt_num(bucket["chars"])} caracteres de texto legal tratado.</p>'
+            f'<p>{fmt_num(bucket["count"])} atos normativos, {fmt_num(bucket["chars"])} caracteres de texto legal tratado.</p>'
             f'<div class="signals-inline">{signal_badges(top, 4)}</div>'
             "</article>"
         )
-    return '<section class="matrix-section"><h2>Categorias legais do acervo</h2><div class="matrix-grid">' + "".join(cards) + "</div></section>"
+    return '<section class="matrix-section"><h2>Categorias legais publicadas</h2><div class="matrix-grid">' + "".join(cards) + "</div></section>"
 
 
 class CounterLike(dict):
@@ -447,8 +447,8 @@ def source_badge(topic: dict) -> str:
 def inventory_badge(label: str, compiled_on: str, verified_on: str) -> str:
     return (
         '<div class="source-badge">'
-        f'<span>Base normativa em tela</span>'
-        f'<strong>{escape(label)} - acervo de {escape(compiled_on)}</strong>'
+        f'<span>Texto legal em tela</span>'
+        f'<strong>{escape(label)}</strong>'
         "</div>"
     )
 
@@ -459,7 +459,7 @@ def docs_table(docs: list[dict], title: str, intro: str, federal: bool = False) 
 <section class="content-block">
   <h2>{escape(title)}</h2>
   <p>{escape(intro)}</p>
-  <p>Esta aba permanece aberta para receber o acervo oficial quando a base local estiver completa.</p>
+  <p>Esta pagina permanece aberta para receber texto legal publico, vigente e contextualizado antes de qualquer conclusao tributaria.</p>
 </section>
 """
     rows = []
@@ -473,9 +473,10 @@ def docs_table(docs: list[dict], title: str, intro: str, federal: bool = False) 
             sources = doc.get("source_documents", [])[:3]
             second = escape("; ".join(sources) if sources else doc.get("file", ""))
             source = escape(doc.get("file", ""))
+        file_hint = "" if federal else f"<span>{escape(doc.get('file', ''))}</span>"
         rows.append(
             "<tr>"
-            f"<td><strong>{first}</strong><span>{escape(doc.get('file', ''))}</span></td>"
+            f"<td><strong>{first}</strong>{file_hint}</td>"
             f"<td>{second}</td>"
             f"<td><div class=\"signals-inline\">{signal_badges(doc.get('signals', {}), 4)}</div></td>"
             f"<td>{fmt_num(doc.get('chars', 0))}</td>"
@@ -494,7 +495,7 @@ def docs_table(docs: list[dict], title: str, intro: str, federal: bool = False) 
           <th>{'Tema' if federal else 'Trilha de fonte'}</th>
           <th>Sinais</th>
           <th>Tamanho</th>
-          <th>{'Fonte' if federal else 'Consolidado'}</th>
+          <th>Fonte publica</th>
         </tr>
       </thead>
       <tbody>{''.join(rows)}</tbody>
@@ -647,35 +648,34 @@ def related_links(topic: dict) -> str:
 
 def state_inventory_sections(state_inv: dict, verified_on: str, compact: bool = False) -> str:
     docs = state_inv.get("documents", [])
-    commentary = state_inv.get("commentary", {})
     if not docs:
         return f"""
 <section class="law-ledger">
-  {inventory_badge('base estadual ainda ausente', state_inv.get('compiled_on', '11/04/2026'), verified_on)}
+  {inventory_badge('pagina estadual em estruturacao', state_inv.get('compiled_on', '11/04/2026'), verified_on)}
   <div>
     <h2>Leitura juridica</h2>
-    <p>{escape(commentary.get('diagnostico', 'A base local nao trouxe conteudo estadual suficiente para publicacao.'))}</p>
+    <p>A pagina ainda nao possui texto legal estadual suficiente para publicacao responsavel.</p>
   </div>
   <div>
     <h2>Conduta segura</h2>
-    <p>{escape(commentary.get('auditoria', 'Nao publique conclusao estadual sem portal oficial aberto, norma vigente e data de atualizacao.'))}</p>
+    <p>Nao aplique conclusao estadual sem portal publico do ente, norma vigente e prova documental da operacao.</p>
   </div>
 </section>
 """
     lead = f"""
 <section class="content-block">
-  <h2>Leitura do acervo estadual</h2>
-  <p>{escape(commentary.get('diagnostico', ''))}</p>
-  <p>{escape(commentary.get('primeiro_estudo', ''))}</p>
-  <p>{escape(commentary.get('auditoria', ''))}</p>
+  <h2>Leitura da legislacao estadual</h2>
+  <p>A leitura estadual deve partir da regra-matriz do ICMS, passar pelos anexos e beneficios, e terminar no documento fiscal, na escrituracao e na prova.</p>
+  <p>Tratamento favorecido nao se presume por semelhanca comercial: produto, NCM, operacao, destinatario, periodo, regime da empresa e condicoes precisam caber no texto legal.</p>
+  <p>Antes de configurar ERP, valide o dispositivo aplicavel, a vigencia, a forma de demonstracao no XML/EFD e o documento que sustentara a defesa em fiscalizacao.</p>
 </section>
 """
     ledger = f"""
 <section class="law-ledger">
-  {inventory_badge('acervo estadual organizado', state_inv.get('compiled_on', '11/04/2026'), verified_on)}
+  {inventory_badge('legislacao estadual organizada', state_inv.get('compiled_on', '11/04/2026'), verified_on)}
   <div>
     <h2>Material coberto</h2>
-    <p>{fmt_num(state_inv.get('file_count', 0))} consolidados, {fmt_num(state_inv.get('total_chars', 0))} caracteres de texto legal e {fmt_num(len(state_inv.get('categories', [])))} categorias.</p>
+    <p>{fmt_num(state_inv.get('file_count', 0))} atos normativos, {fmt_num(state_inv.get('total_chars', 0))} caracteres de texto legal e {fmt_num(len(state_inv.get('categories', [])))} categorias.</p>
   </div>
   <div>
     <h2>Como usar</h2>
@@ -686,18 +686,14 @@ def state_inventory_sections(state_inv: dict, verified_on: str, compact: bool = 
     signals = signal_grid(
         state_inv.get("signals", {}),
         "Onde a lei mais aparece",
-        "O painel abaixo mostra recorrencias do acervo. Ele nao substitui leitura juridica, mas revela onde a auditoria deve concentrar energia.",
+        "O painel abaixo mostra recorrencias do texto legal publicado. Ele nao substitui leitura juridica, mas revela onde a auditoria deve concentrar energia.",
     )
     legal = "" if compact else render_law_chapters(
         state_inv.get("legal_chapters", []),
         "Lei estadual em tela",
-        "Trechos normativos selecionados do acervo local para orientar a leitura por regra, beneficio, excecao, documento e apuracao.",
+        "Trechos normativos selecionados para orientar a leitura por regra, beneficio, excecao, documento e apuracao.",
     )
-    table = docs_table(
-        docs,
-        "Acervo legal estadual estruturado",
-        "Cada linha representa um consolidado do BD Legislação. A coluna de trilha mostra os primeiros documentos-fonte que sustentam o estudo.",
-    )
+    table = ""
     categories = "" if compact else category_cards(docs)
     return ledger + lead + legal + signals + categories + table
 
@@ -713,8 +709,8 @@ def federal_inventory_sections(data: dict, themes: list[str], verified_on: str, 
 <section class="law-ledger">
   {inventory_badge(FEDERAL_THEME_LABELS.get(key, key), '11/04/2026', verified_on)}
   <div>
-    <h2>Material coberto</h2>
-    <p>{fmt_num(theme.get('file_count', 0))} atos/documentos, {fmt_num(theme.get('total_chars', 0))} caracteres de legislacao e pesquisa normativa.</p>
+    <h2>Material em estudo</h2>
+    <p>{fmt_num(theme.get('file_count', 0))} atos normativos, {fmt_num(theme.get('total_chars', 0))} caracteres de legislacao e pesquisa normativa.</p>
   </div>
   <div>
     <h2>Rota de estudo</h2>
@@ -727,8 +723,7 @@ def federal_inventory_sections(data: dict, themes: list[str], verified_on: str, 
   <p>{escape(analysis[1])}</p>
 </section>
 {law}
-{signal_grid(theme.get('signals', {}), 'Sinais normativos do tema', 'Esses termos ajudam a localizar beneficios, restricoes, riscos e pontos de prova dentro do acervo federal.')}
-{docs_table(docs, 'Atos e documentos do acervo federal', 'A tabela lista o material legal e o caminho de leitura antes de uso em parecer.', federal=True) if not compact else ''}
+{signal_grid(theme.get('signals', {}), 'Sinais normativos do tema', 'Esses termos ajudam a localizar beneficios, restricoes, riscos e pontos de prova dentro da legislacao federal.')}
 """)
     return "".join(blocks)
 
@@ -768,8 +763,8 @@ def home(data: dict) -> str:
 <a class="portal-card featured searchable-card" href="{states_link}" data-search="ICMS por Estado beneficios fiscais Goias">
   <span class="card-kicker">Estados</span>
   <h3>ICMS por Estado</h3>
-  <p>Arquitetura nacional por UF, com acervo estadual lido por categoria legal, sinais de ICMS e trilha de prova.</p>
-  <small>27 UFs, {fmt_num(state_docs)} consolidados</small>
+  <p>Arquitetura nacional por UF, com ICMS, beneficios fiscais, documentos, riscos e trilha de prova.</p>
+  <small>Goias publicado; demais UFs em expansao</small>
 </a>
 """,
         topic_card(next(t for t in topics if t["id"] == "goias-icms-beneficios")),
@@ -779,7 +774,7 @@ def home(data: dict) -> str:
   <span class="card-kicker">Federal</span>
   <h3>Tributos federais</h3>
   <p>PIS, Cofins, IPI, IOF, IRPJ, CSLL, regimes, beneficios federais, DIRBI e reforma tributaria em leitura guiada.</p>
-  <small>{fmt_num(federal_docs)} atos/documentos federais</small>
+  <small>Lei em tela por tributo</small>
 </a>
 """,
         federal_legislation_card("index.html"),
@@ -801,7 +796,7 @@ def home(data: dict) -> str:
   <span class="card-kicker">Federal</span>
   <h3>{escape(page["title"])}</h3>
   <p>{escape(page["summary"])}</p>
-  <small>Acervo estruturado</small>
+  <small>Leitura estruturada</small>
 </a>
 """
         for page in FEDERAL_EXTRA_PAGES
@@ -810,7 +805,7 @@ def home(data: dict) -> str:
 {hero(data["site"]["title"], data["site"]["subtitle"], "Portal publico de conhecimento")}
 <section class="method-strip">
   <div><strong>Fonte oficial primeiro</strong><span>Planalto, Receita, CONFAZ, SPED e UFs.</span></div>
-  <div><strong>BD_LEGISLACAO como acervo</strong><span>{fmt_num(state_docs + federal_docs)} itens em mapa de estudo.</span></div>
+  <div><strong>Lei em tela</strong><span>Texto normativo, contexto e leitura pratica.</span></div>
   <div><strong>Prova documental</strong><span>Cada tema aponta prova e risco comum.</span></div>
 </section>
 <section class="section-wrap">
@@ -851,11 +846,11 @@ def estados_index(data: dict) -> str:
         if state["uf"] == "GO":
             status = "Capitulo profundo publicado"
         elif inv.get("file_count", 0):
-            status = "Acervo estadual em estudo"
+            status = "Estrutura pronta para expansao"
         else:
-            status = "Aguardando base estadual completa"
+            status = "Pagina em estruturacao"
         coverage = (
-            f'{fmt_num(inv.get("file_count", 0))} consolidados; {fmt_num(inv.get("total_chars", 0))} caracteres'
+            "Texto legal estadual em preparacao"
             if inv.get("file_count", 0)
             else state["coverage"]
         )
@@ -874,16 +869,16 @@ def estados_index(data: dict) -> str:
 {hero("ICMS por Estado", "Arquitetura nacional para organizar RICMS, leis do imposto, beneficios fiscais, cBenef, aliquotas, ST, regimes e prova por UF.", "Estados")}
 <section class="law-ledger">
   <div>
-    <h2>Acervo estadual lido</h2>
-    <p>{fmt_num(total_docs)} consolidados estaduais e {fmt_num(total_chars)} caracteres de texto legal foram organizados por UF, categoria e sinal tributario.</p>
+  <h2>Modelo estadual</h2>
+  <p>O portal organiza a leitura por UF, categoria legal, regra de ICMS, beneficio fiscal, documento e prova. Goias abre a primeira entrega profunda; os demais Estados seguem a mesma matriz editorial.</p>
   </div>
   <div>
     <h2>Como estudar uma UF</h2>
     <p>Comece por RICMS e lei material; depois avance para anexos, beneficios, aliquotas, ST, regimes especiais, atos infralegais e prova documental.</p>
   </div>
   <div>
-    <h2>Postura editorial</h2>
-    <p>O acervo local guia o estudo. A tese concreta sempre volta ao texto vigente no portal da UF, CONFAZ ou Planalto na data da operacao.</p>
+  <h2>Postura editorial</h2>
+  <p>A tese concreta sempre volta ao texto vigente no portal da UF, CONFAZ ou Planalto na data da operacao.</p>
   </div>
 </section>
 <section class="section-wrap">
@@ -907,7 +902,7 @@ def state_page(state: dict, data: dict) -> str:
     path = f'estados/{state["uf"].lower()}.html'
     if not inv.get("file_count", 0):
         body = f"""
-{hero(f'{state["name"]}: ICMS e beneficios fiscais', 'Pagina preservada para publicacao responsavel quando houver base estadual util no acervo local.', state["uf"])}
+{hero(f'{state["name"]}: ICMS e beneficios fiscais', 'Pagina preservada para publicacao responsavel quando houver texto legal estadual suficiente para leitura publica.', state["uf"])}
 {state_inventory_sections(inv, verified_on)}
 <section class="continuity">
   <h2>Continuar com seguranca</h2>
@@ -920,11 +915,11 @@ def state_page(state: dict, data: dict) -> str:
 """
         return layout(path, f'{state["name"]}: ICMS e beneficios fiscais', "Pagina estrutural por UF.", body, "estados")
     body = f"""
-{hero(f'{state["name"]}: ICMS e beneficios fiscais', 'Leitura estadual do acervo legal: RICMS, leis, decretos, beneficios, aliquotas, ST, atos infralegais e prova.', state["uf"])}
+{hero(f'{state["name"]}: ICMS e beneficios fiscais', 'Leitura estadual: RICMS, leis, decretos, beneficios, aliquotas, ST, atos infralegais e prova.', state["uf"])}
 <section class="law-ledger">
   <div>
     <h2>Estado do estudo</h2>
-    <p>Acervo estadual em estudo. A base local trouxe {fmt_num(inv.get("file_count", 0))} consolidados estaduais para leitura.</p>
+    <p>Pagina estadual em preparacao. O texto legal sera publicado por capitulos antes de qualquer conclusao operacional.</p>
   </div>
   <div>
     <h2>Primeira pergunta</h2>
@@ -973,16 +968,16 @@ def federal_index(data: dict) -> str:
   <span class="card-kicker">Federal</span>
   <h3>{escape(page["title"])}</h3>
   <p>{escape(page["summary"])}</p>
-  <small>{fmt_num(theme.get("file_count", 0))} atos no acervo</small>
+  <small>Texto legal e analise</small>
 </a>
 """)
     cards.append(f"""
 <a class="portal-card featured searchable-card" href="acervo.html"
-   data-search="acervo federal completo legislacao Receita Planalto DOU PIS COFINS IPI IOF IRPJ CSLL reforma">
-  <span class="card-kicker">Acervo</span>
-  <h3>Acervo federal completo</h3>
-  <p>Mapa de todos os atos federais indexados por tema, com texto legal, fonte publica e alerta quando a origem local exige revisao no portal do ente.</p>
-  <small>{fmt_num(len(data.get("inventory", {}).get("federal", {}).get("documents", [])))} documentos</small>
+   data-search="fontes federais legislacao Receita Planalto DOU PIS COFINS IPI IOF IRPJ CSLL reforma">
+  <span class="card-kicker">Fontes</span>
+  <h3>Fontes federais por tema</h3>
+  <p>Mapa de estudo por tributo, com texto legal, fonte publica e continuidade para os capitulos profundos.</p>
+  <small>Planalto, Receita, DOU e SPED</small>
 </a>
 """)
     fed_themes = data.get("inventory", {}).get("federal", {}).get("themes", {})
@@ -994,8 +989,8 @@ def federal_index(data: dict) -> str:
     <p>Comece pelo tributo, depois confirme o regime da empresa, o tratamento especial, a obrigacao acessoria e a prova documental.</p>
   </div>
   <div>
-    <h2>Acervo federal</h2>
-    <p>{fmt_num(sum(theme.get("file_count", 0) for theme in fed_themes.values()))} atos/documentos organizados em {fmt_num(len(fed_themes))} temas de estudo.</p>
+    <h2>Legislacao federal</h2>
+    <p>Os tributos federais foram organizados por tema de estudo: regra material, beneficios, obrigacoes acessorias, riscos e prova.</p>
   </div>
   <div>
     <h2>Fontes base</h2>
@@ -1023,7 +1018,7 @@ def federal_theme_page(data: dict, page: dict) -> str:
   <h2>Continuar a leitura</h2>
   <div>
     <a href="index.html">Voltar aos tributos federais</a>
-    <a href="acervo.html">Ver acervo federal completo</a>
+    <a href="acervo.html">Ver fontes federais por tema</a>
     <a href="../biblioteca/index.html">Consultar biblioteca e manuais</a>
   </div>
 </section>
@@ -1041,32 +1036,31 @@ def federal_acervo_page(data: dict) -> str:
 <article class="portal-card searchable-card" data-search="{escape(key + ' ' + FEDERAL_THEME_LABELS.get(key, key))}">
   <span class="card-kicker">Federal</span>
   <h3>{escape(FEDERAL_THEME_LABELS.get(key, key))}</h3>
-  <p>{fmt_num(theme.get("file_count", 0))} atos/documentos e {fmt_num(theme.get("total_chars", 0))} caracteres de base normativa.</p>
+  <p>Trilha de leitura com norma, regulamento, obrigacao acessoria, prova e conexao com os capitulos profundos.</p>
   <small>{a(href, 'abrir trilha') if page else 'trilha integrada aos guias'}</small>
 </article>
 """)
     docs = data.get("inventory", {}).get("federal", {}).get("documents", [])
     body = f"""
-{hero("Acervo federal completo", "Mapa de atos federais estruturados por tema, fonte, sinais de auditoria e continuidade de estudo.", "Federal")}
+{hero("Fontes federais por tema", "Mapa de atos federais estruturados por tributo, fonte, sinais de auditoria e continuidade de estudo.", "Federal")}
 <section class="law-ledger">
-  {inventory_badge('acervo federal organizado', '11/04/2026', data["site"]["verified_on"])}
+  {inventory_badge('legislacao federal organizada', '11/04/2026', data["site"]["verified_on"])}
   <div>
     <h2>Escopo</h2>
-    <p>{fmt_num(len(docs))} documentos federais: PIS/Cofins, IPI, IOF, IRPJ/CSLL, regimes, beneficios, folha, reforma e aduaneiro.</p>
+    <p>PIS/Cofins, IPI, IOF, IRPJ/CSLL, regimes, beneficios, folha, reforma e aduaneiro em trilhas de leitura por assunto.</p>
   </div>
   <div>
     <h2>Regra de publicacao</h2>
-    <p>Quando a origem local nao for publica, a tabela aponta revisao em Receita, DOU, Planalto ou portal do ente antes de citar em parecer.</p>
+    <p>Conclusao tributaria so entra no portal quando puder ser sustentada por texto legal, fonte publica e prova operacional.</p>
   </div>
 </section>
 <section class="section-wrap">
   <div class="section-heading">
     <span class="eyebrow">Mapa federal</span>
-    <h2>Temas do acervo</h2>
+    <h2>Temas federais</h2>
   </div>
   {card_grid(cards)}
 </section>
-{docs_table(docs, 'Documentos federais indexados', 'Esta e a prateleira completa do acervo federal usado pelo portal nesta entrega.', federal=True)}
 <section class="continuity">
   <h2>Continuar a leitura</h2>
   <div>
@@ -1079,7 +1073,7 @@ def federal_acervo_page(data: dict) -> str:
   </div>
 </section>
 """
-    return layout("federal/acervo.html", "Acervo federal completo", "Mapa federal completo do acervo legal.", body, "federal")
+    return layout("federal/acervo.html", "Fontes federais por tema", "Mapa federal por fonte publica e trilha legal.", body, "federal")
 
 
 def biblioteca(data: dict) -> str:
@@ -1106,30 +1100,30 @@ def biblioteca(data: dict) -> str:
   </div>
   <div>
     <h2>Data editorial</h2>
-    <p>Conteudos profundos v1 atualizados em {escape(data["site"]["verified_on"])}. Paginas estruturais indicam quando ainda aguardam base normativa completa.</p>
+    <p>Conteudos profundos v1 atualizados em {escape(data["site"]["verified_on"])}. Paginas estruturais indicam quando ainda aguardam texto legal completo para publicacao.</p>
   </div>
   <div>
-    <h2>BD Legislacao</h2>
-    <p>{fmt_num(state_docs)} consolidados estaduais e {fmt_num(federal_docs)} documentos federais foram organizados como acervo de estudo, com leitura pela fonte publica.</p>
+    <h2>Lei e prova</h2>
+    <p>A leitura combina texto normativo, fonte publica, documento fiscal, memoria de calculo e risco de autuacao.</p>
   </div>
 </section>
 <section class="content-block">
-  <h2>Como o acervo entra no portal</h2>
-  <p>O BD Legislação funciona como biblioteca de partida: ele localiza leis, decretos, regulamentos, instrucoes normativas, anexos, beneficios e atos federais. O portal transforma esse material em leitura de consultoria: o que a regra faz, que prova pede, onde costuma haver risco e qual caminho seguir antes de aplicar no ERP ou no fechamento.</p>
-  <p>Quando a trilha local aponta fonte privada ou espelho, a pagina nao trata isso como fundamento final. O texto orienta a leitura em Planalto, Receita Federal, DOU, CONFAZ, SPED ou portal estadual.</p>
+  <h2>Como a legislacao entra no portal</h2>
+  <p>O portal organiza leis, decretos, regulamentos, instrucoes normativas, anexos, beneficios e atos federais em leitura de consultoria: o que a regra faz, que prova pede, onde costuma haver risco e qual caminho seguir antes de aplicar no ERP ou no fechamento.</p>
+  <p>Quando houver conclusao tributaria, a pagina apresenta texto legal em tela, link publico da fonte normativa e leitura pratica para o departamento fiscal, contabil, financeiro, juridico e de auditoria.</p>
 </section>
 <section class="section-wrap">
   <div class="section-heading">
-    <span class="eyebrow">Acervo RJC</span>
+    <span class="eyebrow">Biblioteca RJC</span>
     <h2>Manuais e painel preservados</h2>
   </div>
   {card_grid(cards)}
 </section>
 <section class="continuity">
-  <h2>Entrar no acervo legal</h2>
+  <h2>Entrar na legislacao</h2>
   <div>
     <a href="../estados/index.html">ICMS por Estado</a>
-    <a href="../federal/acervo.html">Acervo federal completo</a>
+    <a href="../federal/acervo.html">Fontes federais por tema</a>
     <a href="../confaz/index.html">CONFAZ e beneficios</a>
   </div>
 </section>
@@ -1154,20 +1148,14 @@ def search_index(data: dict) -> str:
         {
             "title": f'{state["name"]}: ICMS e beneficios fiscais',
             "url": state_href(state["uf"]),
-            "summary": inventory_state(data, state["uf"]).get("commentary", {}).get("diagnostico", state["status"]),
+            "summary": (
+                "Goias publicado com ICMS, beneficios fiscais, cBenef, RCTE, prova e leitura legal."
+                if state["uf"] == "GO"
+                else "Pagina estadual estruturada para futura publicacao por UF, com foco em ICMS, beneficios, documento e prova."
+            ),
             "tags": f'{state["uf"]} {state["name"]} ICMS beneficios fiscais RICMS ' + " ".join(inventory_state(data, state["uf"]).get("categories", []))
         }
         for state in data["states"]
-    ]
-    entries += [
-        {
-            "title": f'{state.get("uf")}: {doc.get("category_label", doc.get("category", ""))}',
-            "url": state_href(state.get("uf", "")),
-            "summary": "; ".join(doc.get("source_documents", [])[:2]) or doc.get("file", ""),
-            "tags": " ".join([state.get("name", ""), doc.get("file", ""), doc.get("category", ""), " ".join(doc.get("signals", {}).keys())])
-        }
-        for state in data.get("inventory", {}).get("states", [])
-        for doc in state.get("documents", [])
     ]
     entries += [
         {
@@ -1179,21 +1167,12 @@ def search_index(data: dict) -> str:
         for page in FEDERAL_EXTRA_PAGES
     ]
     entries.append({
-        "title": "Acervo federal completo",
+        "title": "Fontes federais por tema",
         "url": "federal/acervo.html",
-        "summary": "Mapa completo de atos federais por tema, fonte e sinais de auditoria.",
+        "summary": "Mapa de atos federais por tema, fonte publica e sinais de auditoria.",
         "tags": "PIS Cofins IPI IOF IRPJ CSLL reforma beneficios DIRBI previdencia folha"
     })
     entries += legal_search_entries()
-    entries += [
-        {
-            "title": doc.get("title", doc.get("file", "")),
-            "url": "federal/acervo.html",
-            "summary": FEDERAL_THEME_LABELS.get(doc.get("theme", ""), doc.get("theme", "")),
-            "tags": " ".join([doc.get("file", ""), doc.get("theme", ""), doc.get("source", ""), " ".join(doc.get("signals", {}).keys())])
-        }
-        for doc in data.get("inventory", {}).get("federal", {}).get("documents", [])
-    ]
     entries += [
         {
             "title": item["title"],
