@@ -405,8 +405,32 @@
             <!-- Alerta -->
             <div class="content-block warning">
                 <div class="block-title">⚠️ Alerta de calendário e integração</div>
-                <p>Em 2026, a operação das transportadoras passou a exigir leitura conjunta de <strong>ICMS</strong>, <strong>ANTT</strong>, <strong>seguros obrigatórios</strong> e <strong>DF-e da reforma</strong>. Em Goiás, no recorte operacional mais comum, o vencimento do ICMS do período continua concentrado no <strong>dia 20</strong>, sem dispensar a leitura das hipóteses especiais; no plano regulatório, o pacote de integração entre <strong>CIOT, PEF e MDF-e</strong> entrou em produção em <strong>14 de julho de 2026</strong>.</p>
+                <p>Em 2026, a operação das transportadoras passou a exigir leitura conjunta de <strong>ICMS</strong>, <strong>ANTT</strong>, <strong>seguros obrigatórios</strong> e <strong>DF-e da reforma</strong>. Em Goiás, no recorte operacional mais comum, o vencimento do ICMS do período continua concentrado no <strong>dia 20</strong>, sem dispensar a leitura das hipóteses especiais.</p>
+                <p><strong>Atualização ANTT de 24/04/2026:</strong> a Portaria SUROC nº 6/2026, com vigência a partir de <strong>24/05/2026</strong>, reforça o CIOT como validação prévia da operação, vincula CIOT ao MDF-e, amplia a exigência para o transporte rodoviário remunerado de cargas e prevê bloqueio quando o frete estiver abaixo do piso mínimo.</p>
             </div>
+
+            <section class="guided-reading" aria-labelledby="trilha-integrada-transporte">
+                <h2 id="trilha-integrada-transporte">Leitura guiada da viagem ao fechamento</h2>
+                <p>Este manual começa na contratação do frete, mas a operação só fecha quando conversa com o DF-e, com o financeiro, com o painel fiscal e com a reforma tributária.</p>
+                <div class="guided-steps">
+                    <a class="guided-step" href="manual-fiscal.html#chapter-7">
+                        <strong>1. Volte ao CT-e</strong>
+                        <span>Tomador, prestação, ICMS e XML precisam estar corretos na origem.</span>
+                    </a>
+                    <a class="guided-step" href="#cap2a">
+                        <strong>2. Decida o ICMS do frete</strong>
+                        <span>UF de início, GNRE, apuração mensal e benefício sem misturar mercadoria.</span>
+                    </a>
+                    <a class="guided-step" href="manual-financeiro.html#m3">
+                        <strong>3. Feche cobrança e pagamento</strong>
+                        <span>Frete contratado, CT-e, título, baixa e comprovante em uma trilha.</span>
+                    </a>
+                    <a class="guided-step" href="painel-fiscal/index.html#reforma">
+                        <strong>4. Prepare a transição 2026</strong>
+                        <span>Campos novos, split payment preparatório, cClassTrib e contratos.</span>
+                    </a>
+                </div>
+            </section>
 
             <!-- Objetivo -->
             <section class="section">
@@ -698,6 +722,25 @@
                                 <li>Se <strong>inscrita</strong> (ex.: GO): recolher por <strong>apuração mensal</strong> e garantir escrituração correta do CT-e (<strong>Bloco D</strong>).</li>
                             </ul>
                         </div>
+
+                        <div class="context-callout">
+                            <h3>Continue no documento e na alíquota</h3>
+                            <p>Depois de decidir a UF competente, volte ao CT-e e consulte a alíquota/benefício aplicável antes de liberar o faturamento.</p>
+                            <div class="continuity-links">
+                                <a class="continuity-link" href="manual-fiscal.html#chapter-7">
+                                    <strong>Manual fiscal: CT-e</strong>
+                                    <span>Revise tomador, campos essenciais e crédito do frete.</span>
+                                </a>
+                                <a class="continuity-link" href="painel-fiscal/index.html#aliquotas">
+                                    <strong>Painel: alíquotas ICMS</strong>
+                                    <span>Use a tabela como conferência da rota e da UF.</span>
+                                </a>
+                                <a class="continuity-link" href="painel-fiscal/index.html#icmsgo">
+                                    <strong>Painel: ICMS/GO</strong>
+                                    <span>Separe benefício da mercadoria e benefício do serviço.</span>
+                                </a>
+                            </div>
+                        </div>
                     </div>
 
                     <div class="chapter">
@@ -829,6 +872,25 @@
                                 <li><strong>CIOT ou vale-pedágio mal tratados</strong>: abrem risco regulatório e contaminam a contratação inteira.</li>
                                 <li><strong>Subcontratação mal documentada</strong>: desorganiza sujeito passivo, cobrança e PIS/Cofins.</li>
                             </ul>
+                        </div>
+
+                        <div class="context-callout">
+                            <h3>Da viagem para a cobrança</h3>
+                            <p>Se a cadeia documental não estiver inteira, a transportadora pode até emitir, mas perde força para cobrar, creditar ou defender a operação.</p>
+                            <div class="continuity-links">
+                                <a class="continuity-link" href="manual-fiscal.html#chapter-8">
+                                    <strong>MDF-e e encerramento</strong>
+                                    <span>Confira o ciclo da viagem e os eventos obrigatórios.</span>
+                                </a>
+                                <a class="continuity-link" href="manual-financeiro.html#m3">
+                                    <strong>Fiscal x financeiro</strong>
+                                    <span>Leve CT-e, título, baixa e comprovante para a mesma trilha.</span>
+                                </a>
+                                <a class="continuity-link" href="manual-financeiro.html#m5">
+                                    <strong>Contas a receber</strong>
+                                    <span>Cobrança sem prova documental vira disputa comercial.</span>
+                                </a>
+                            </div>
                         </div>
                     </div>
 
@@ -1049,6 +1111,12 @@
                             <p class="text-justify">A reforma do consumo deixou de ser tema te&oacute;rico. Em <strong>2026</strong>, os documentos fiscais entram em <strong>fase de conviv&ecirc;ncia e teste</strong> com os novos campos de <strong>CBS, IBS e Imposto Seletivo</strong>, e isso j&aacute; altera a forma como a transportadora precisa parametrizar CT-e, revisar contrato, organizar cadastros e preparar a trilha de cr&eacute;dito do tomador.</p>
                         </div>
 
+                        <div class="content-block warning">
+                            <div class="block-title">Atualização oficial relevante em 2026</div>
+                            <p>O Portal do CT-e publicou a <strong>NT CT-e 2026.001 v.1.01</strong> informando que os campos ligados a split payment em CT-e/BP-e têm caráter preparatório no ambiente de produção das empresas em 2026. A obrigatoriedade efetiva de preenchimento ou uso dependerá de ato regulatório conjunto do CGIBS e da RFB.</p>
+                            <p>Em paralelo, a ANTT publicou em <strong>24/04/2026</strong> a <strong>Portaria SUROC nº 6/2026</strong>, com vigência em <strong>24/05/2026</strong>, reforçando o vínculo entre CIOT e MDF-e e bloqueio preventivo de frete abaixo do piso mínimo. Essa atualização deve entrar no checklist de contratação antes da viagem.</p>
+                        </div>
+
                         <div class="chapter-subsection">
                             <h4>Onde a leitura costuma errar</h4>
                             <p class="text-justify">O erro &eacute; imaginar que a reforma vai afetar a transportadora apenas quando o novo tributo substituir totalmente o ICMS e o PIS/Cofins. O setor j&aacute; foi puxado para dentro da mudan&ccedil;a porque a qualidade do <strong>CT-e</strong>, a defini&ccedil;&atilde;o do <strong>tomador</strong>, o contrato de frete e a integra&ccedil;&atilde;o entre documento e pagamento pesam na trilha de cr&eacute;dito do cliente.</p>
@@ -1078,6 +1146,26 @@
                             <div class="block-title">Fechamento operacional</div>
                             <p>O cliente embarcador vai cobrar cada vez mais <strong>qualidade documental</strong>, porque cr&eacute;dito ruim vira custo para ele. Quem entregar CT-e limpo, contrato bem redigido, tomador correto e trilha &iacute;ntegra sai na frente na negocia&ccedil;&atilde;o comercial e tamb&eacute;m reduz contencioso.</p>
                         </div>
+
+                        <div class="context-callout">
+                            <h3>Reforma no transporte não termina no CT-e</h3>
+                            <p>Depois de ajustar o documento, confirme a classificação tributária e o efeito financeiro/contratual da transição.</p>
+                            <div class="continuity-links">
+                                <a class="continuity-link" href="painel-fiscal/index.html#reforma">
+                                    <strong>Painel fiscal: reforma</strong>
+                                    <span>Consulte cClassTrib, fontes oficiais e split payment.</span>
+                                </a>
+                                <a class="continuity-link" href="manual-fiscal.html#chapter-18">
+                                    <strong>Manual fiscal: virada 2026</strong>
+                                    <span>Veja como os novos campos entram na rotina dos DF-e.</span>
+                                </a>
+                                <a class="continuity-link" href="manual-financeiro.html#m10">
+                                    <strong>Preço e contrato</strong>
+                                    <span>Atualize margem, frete, crédito e cláusulas comerciais.</span>
+                                </a>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </section>
@@ -1196,6 +1284,21 @@
                                 </table>
                             </div>
                         </div>
+
+                        <div class="context-callout">
+                            <h3>Auditoria mensal precisa fechar com gestão</h3>
+                            <p>O checklist de frete alimenta o fechamento financeiro, fiscal e documental. Use-o como ponte para evitar que a evidência fique presa só na operação.</p>
+                            <div class="continuity-links">
+                                <a class="continuity-link" href="manual-financeiro.html#m13">
+                                    <strong>Fechamento D+3</strong>
+                                    <span>Leve CT-e, MDF-e, CIOT, seguro e guias para o relatório.</span>
+                                </a>
+                                <a class="continuity-link" href="guia-dp-rh.html#governanca">
+                                    <strong>Governança documental</strong>
+                                    <span>Aplique a mesma lógica de prova pronta ao DP.</span>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -1225,6 +1328,24 @@
             const scrollPercent = (window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100;
             currentPage = Math.max(1, Math.min(totalPages, Math.ceil((scrollPercent / 100) * totalPages)));
             updatePageNumber();
+        });
+
+        // Navegação suave apenas para âncoras internas
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', function(e) {
+                const targetId = this.getAttribute('href');
+                if (!targetId || !targetId.startsWith('#')) {
+                    return;
+                }
+                e.preventDefault();
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
         });
 
         // Destacar seção ativa na navegação

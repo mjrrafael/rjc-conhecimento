@@ -395,6 +395,65 @@
       gap: 1rem;
     }
 
+    .guided-reading,
+    .context-callout {
+      background: linear-gradient(180deg, #ffffff 0%, #f8fbff 100%);
+      border: 1px solid #dbe5f1;
+      border-left: 6px solid #f97316;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .guided-reading h2,
+    .context-callout h3 {
+      color: #1e3a8a;
+      margin-bottom: 0.5rem;
+    }
+
+    .guided-steps,
+    .continuity-links {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 0.8rem;
+      margin-top: 1rem;
+    }
+
+    .guided-step,
+    .continuity-link {
+      display: block;
+      text-decoration: none;
+      color: #1e293b;
+      background: #ffffff;
+      border: 1px solid #dbe5f1;
+      border-radius: 10px;
+      padding: 0.9rem 1rem;
+      transition: all 0.3s ease;
+    }
+
+    .guided-step:hover,
+    .continuity-link:hover {
+      border-color: #3b82f6;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(59, 130, 246, 0.14);
+    }
+
+    .guided-step strong,
+    .continuity-link strong {
+      display: block;
+      color: #1e3a8a;
+      margin-bottom: 0.25rem;
+    }
+
+    .guided-step span,
+    .continuity-link span {
+      display: block;
+      color: #64748b;
+      font-size: 0.92rem;
+      line-height: 1.45;
+    }
+
     /* Footer */
     .footer {
       background: #1e293b;
@@ -524,7 +583,7 @@
 <div class="header-content">
 <div class="logo">Painel Fiscal - Consulta Tributária</div>
 <div class="tagline">Consulta prática com foco em Goiás, PIS/Cofins federal, cBenef, setores críticos e leitura normativa de ponta a ponta</div>
-<div class="subtitle">Conteúdo atualizado em 19/04/2026 para apoiar emissão fiscal, enquadramento documental e leitura integrada de ICMS/GO, PIS/Cofins e reforma tributária</div>
+<div class="subtitle">Conteúdo atualizado em 25/04/2026 para apoiar emissão fiscal, enquadramento documental e leitura integrada de ICMS/GO, PIS/Cofins, transporte e reforma tributária</div>
 </div>
 </header>
 <!-- Container Principal -->
@@ -540,6 +599,28 @@
 <h3>Consulta fiscal para quem precisa decidir</h3>
 <p>Este painel concentra os temas que mais pesam na rotina fiscal e comercial: <strong>cBenef</strong> em Goiás, benefícios e reduções de base do <strong>RCTE</strong>, <strong>PIS/Cofins federal por NCM</strong>, monofásicos, eletrônicos/TIC, veículos, grãos, combustíveis e os efeitos da <strong>reforma tributária</strong> sobre incentivos e documentação. A base foi montada a partir do texto legal e dos materiais oficiais mais recentes, para acelerar a triagem sem perder lastro normativo.</p>
 </div>
+<section class="guided-reading" aria-labelledby="trilha-integrada-painel">
+<h2 id="trilha-integrada-painel">Leitura guiada a partir do painel</h2>
+<p>Use o painel como mesa de consulta viva. Quando a resposta exigir procedimento, fechamento, frete ou folha, continue pelos manuais correlatos em vez de tratar a tabela como fim da análise.</p>
+<div class="guided-steps">
+<a class="guided-step" href="../manual-fiscal.html#chapter-10">
+<strong>1. Volte ao manual fiscal</strong>
+<span>Entenda por que CFOP, CST, NCM e cBenef existem antes de escolher código.</span>
+</a>
+<a class="guided-step" href="../manual-financeiro.html#m10">
+<strong>2. Reflita no preço</strong>
+<span>Imposto recuperável, benefício e frete mudam margem e contrato.</span>
+</a>
+<a class="guided-step" href="../compliance-transportadoras.html#cap2a">
+<strong>3. Separe frete de mercadoria</strong>
+<span>ICMS do transporte, GNRE e tomador pedem leitura própria.</span>
+</a>
+<a class="guided-step" href="../guia-dp-rh.html#fechamento-2026">
+<strong>4. Feche o mês inteiro</strong>
+<span>Folha, retenções e obrigações acessórias precisam entrar na rotina.</span>
+</a>
+</div>
+</section>
 <!-- Navegação -->
 <nav class="nav-tabs">
 <a class="nav-tab active" data-section="guia" href="#guia">
@@ -766,6 +847,20 @@
 <p><strong>Como funciona de verdade:</strong> o CFOP precisa conversar com <strong>origem e destino</strong>, <strong>tipo de operação</strong>, <strong>natureza da mercadoria ou serviço</strong>, <strong>finalidade da nota</strong> e <strong>reflexo tributário</strong>. Um mesmo item pode circular com CFOP diferente conforme devolução, remessa, industrialização, revenda ou transferência.</p>
 <p><strong>Exemplo prático:</strong> uma venda interna de mercadoria adquirida de terceiros costuma seguir a lógica do <strong>5.102</strong>. Se essa mesma mercadoria for devolvida, o CFOP deixa de ser de venda e passa para a lógica da devolução correspondente. O erro não está só no número: ele muda a leitura do XML, da apuração e da escrituração.</p>
 <p><strong>O que precisa ser provado:</strong> pedido, contrato, origem da mercadoria, destino da operação, finalidade do documento e coerência entre CFOP, CST, natureza da operação e escrita fiscal.</p>
+</div>
+<div class="context-callout">
+<h3>Antes de escolher o código, volte ao capítulo de tabelas</h3>
+<p>Se a dúvida envolve CFOP, CST, CSOSN, NCM ou CEST, o painel ajuda na consulta, mas o raciocínio completo está no manual fiscal.</p>
+<div class="continuity-links">
+<a class="continuity-link" href="../manual-fiscal.html#chapter-10">
+<strong>Capítulo 10: tabelas críticas</strong>
+<span>Reveja a lógica de NCM, CEST, CFOP, CST e CSOSN.</span>
+</a>
+<a class="continuity-link" href="../manual-fiscal.html#chapter-11">
+<strong>Capítulo 11: cálculos</strong>
+<span>Leve a classificação para ST, DIFAL e desoneração.</span>
+</a>
+</div>
 </div>
 <div class="table-container">
 <table class="data-table">
@@ -1452,6 +1547,24 @@
 <p>A espinha dorsal da transição passa pela <strong>EC 132/2023</strong>, pela <strong>LC 214/2025</strong> e pela <strong>LC 227/2026</strong>. Em 2026, a reforma já deixou de ser apenas desenho institucional e passou a afetar rotina de <strong>cadastro</strong>, <strong>documento fiscal</strong>, <strong>parametrização sistêmica</strong>, <strong>contrato</strong> e <strong>prova do crédito</strong>.</p>
 <p>O erro mais comum é olhar a reforma apenas como troca futura de tributo. Na prática, a preparação documental, contratual e tecnológica já começou, especialmente para quem depende de incentivos de ICMS, de aproveitamento de crédito pelo adquirente e de integração consistente entre nota e pagamento.</p>
 </div>
+<div class="context-callout">
+<h3>Atualização oficial checada em 25/04/2026</h3>
+<p>O painel passa a considerar a <strong>NT 2025.002 v.1.35</strong> da NF-e/NFC-e, o <strong>Informe Técnico 2025.002 v.1.50</strong> e a tabela <strong>cClassTrib</strong> publicada em <strong>15/04/2026</strong>. Também foram considerados a tabela de meios de pagamento de <strong>06/03/2026</strong>, a NCM/uTrib vigente desde <strong>01/02/2026</strong>, a orientação da Receita sobre 2026 como período de teste/adaptação e a <strong>NT CT-e 2026.001 v.1.01</strong> sobre split payment preparatório em CT-e/BP-e.</p>
+<div class="continuity-links">
+<a class="continuity-link" href="../manual-fiscal.html#chapter-18">
+<strong>Manual fiscal: virada 2026</strong>
+<span>Veja como os novos campos entram na leitura dos DF-e.</span>
+</a>
+<a class="continuity-link" href="../compliance-transportadoras.html#implementacao">
+<strong>Transportadoras: CT-e 2026</strong>
+<span>Leve a atualização para tomador, TMS, CIOT, MDF-e e contrato.</span>
+</a>
+<a class="continuity-link" href="#fontes">
+<strong>Fontes oficiais</strong>
+<span>Abra os portais usados para confirmar versão e vigência.</span>
+</a>
+</div>
+</div>
 <div class="info-box" style="background:#f8fafc;border-color:#cbd5e1;">
 <h3>Como ler 2026 sem antecipar 2033</h3>
 <p>Uma das confusões mais comuns de 2026 é agir como se o sistema antigo já tivesse terminado. Não terminou. O que existe hoje é uma travessia em que a empresa precisa governar <strong>duas linguagens ao mesmo tempo</strong>: a do sistema atual, com <strong>ICMS, cBenef, incentivos estaduais, CST e EFD</strong>, e a do sistema novo, com <strong>IBS, CBS, split payment, documento idôneo e qualidade da informação para crédito</strong>.</p>
@@ -1702,7 +1815,13 @@
 <p><a href="https://www.planalto.gov.br/ccivil_03/Leis/LCP/Lcp214.htm" target="_blank" rel="noopener">LC 214/2025</a></p>
 <p><a href="https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp227.htm" target="_blank" rel="noopener">LC 227/2026</a></p>
 <p><a href="https://www.gov.br/fazenda/pt-br/acesso-a-informacao/acoes-e-programas/reforma-tributaria/arquivos/perguntas-e-respostas-reforma-tributaria_.pdf" target="_blank" rel="noopener">Perguntas e Respostas oficiais</a></p>
-<p><a href="https://www.gov.br/receitafederal/pt-br/assuntos/noticias/2026/abril/reforma-tributaria-receita-federal-esclarece-pontos-sobre-a-operacao-assistida-e-as-obrigacoes-acessorias-no-periodo-de-testes" target="_blank" rel="noopener">Receita Federal - operação assistida e período de testes</a></p>
+<p><a href="https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-consumo/orientacoes-2026" target="_blank" rel="noopener">Receita Federal - orientações da reforma para 2026</a></p>
+<p><a href="https://www.gov.br/receitafederal/pt-br/assuntos/noticias/2026/abril/reforma-tributaria-receita-federal-desmentem-aplicacao-imediata-de-multas-e-reforcam-transicao-simplificada-em-2026" target="_blank" rel="noopener">Receita Federal - transição simplificada em 2026</a></p>
+<p><a href="https://www.nfe.fazenda.gov.br/portal/listaConteudo.aspx?tipoConteudo=6WfrpZYE4Ik%3D" target="_blank" rel="noopener">NF-e - Notas Técnicas vigentes</a></p>
+<p><a href="https://www.nfe.fazenda.gov.br/portal/listaConteudo.aspx?tipoConteudo=hXzemuyNHW4%3D" target="_blank" rel="noopener">NF-e - Informes Técnicos vigentes</a></p>
+<p><a href="https://www.nfe.fazenda.gov.br/portal/listaConteudo.aspx?tipoConteudo=%2FNJarYc9nus%3D" target="_blank" rel="noopener">NF-e - tabelas diversas, cClassTrib, NCM e meios de pagamento</a></p>
+<p><a href="https://www.cte.fazenda.gov.br/portal/informe.aspx" target="_blank" rel="noopener">CT-e - informes e notas técnicas</a></p>
+<p><a href="https://www.gov.br/antt/pt-br/assuntos/ultimas-noticias/frete-irregular-e-barrado-antes-de-existir-antt-transforma-ciot-em-filtro-obrigatorio-e-reforca-o-cumprimento-do-piso-minimo" target="_blank" rel="noopener">ANTT - Portaria SUROC nº 6/2026 e vínculo CIOT/MDF-e</a></p>
 </div>
 </div>
 </section>
@@ -1723,7 +1842,7 @@
 <p class="logo-footer">RJC ASSESSORIA</p>
 <p>A Arte de Registrar o Patrimônio</p>
 <p>contato@rjcassessoria.com.br | (62) 8168-0949</p>
-<p>© 2026 RJC Assessoria - Painel Fiscal | organização editorial V3 atualizada em 19/04/2026</p>
+<p>© 2026 RJC Assessoria - Painel Fiscal | organização editorial V3 atualizada em 25/04/2026</p>
 </div>
 </footer>
 <script>
@@ -2594,11 +2713,8 @@
       setupEventListeners();
       updateCounts();
       updateFilterAvailability();
-      const initialSection = getCurrentSection() || 'cfop';
-      syncActiveFilterButtons(initialSection);
-      if (window.__DATA__[initialSection]) {
-        applyFilter(initialSection);
-      }
+      const initialSection = getSectionFromHash() || getCurrentSection() || 'guia';
+      switchSection(initialSection, false);
     }
 
     function setupEventListeners() {
@@ -2626,23 +2742,43 @@
           setActiveFilter(button, section, filter);
         }
       });
+
+      window.addEventListener('hashchange', function() {
+        const section = getSectionFromHash();
+        if (section) {
+          switchSection(section, false);
+        }
+      });
     }
 
-    function switchSection(sectionName) {
+    function getSectionFromHash() {
+      const section = window.location.hash.replace('#', '').trim();
+      return section && document.getElementById(section) && document.querySelector(`[data-section="${section}"]`) ? section : '';
+    }
+
+    function switchSection(sectionName, updateHash = true) {
+      const targetTab = document.querySelector(`[data-section="${sectionName}"]`);
+      const targetSection = document.getElementById(sectionName);
+      if (!targetTab || !targetSection) return;
+
       // Atualizar navegação
       document.querySelectorAll('.nav-tab').forEach(tab => {
         tab.classList.remove('active');
       });
-      document.querySelector(`[data-section="${sectionName}"]`).classList.add('active');
+      targetTab.classList.add('active');
 
       // Atualizar seções
       document.querySelectorAll('.section').forEach(section => {
         section.classList.remove('active');
       });
-      document.getElementById(sectionName).classList.add('active');
+      targetSection.classList.add('active');
 
       syncActiveFilterButtons(sectionName);
       applyFilter(sectionName);
+
+      if (updateHash && window.location.hash !== `#${sectionName}`) {
+        history.replaceState(null, '', `#${sectionName}`);
+      }
     }
 
     function renderSection(sectionName) {

@@ -607,6 +607,29 @@
 
         <!-- Conteúdo principal -->
         <main class="content">
+            <section class="guided-reading" aria-labelledby="trilha-integrada-financeiro">
+                <h2 id="trilha-integrada-financeiro">Leitura guiada do financeiro para os outros manuais</h2>
+                <p>Use este manual para transformar documento em decisão. Sempre que a rotina financeira depender de imposto, folha, frete ou crédito, avance para o material correlato antes de fechar caixa, margem ou relatório.</p>
+                <div class="guided-steps">
+                    <a class="guided-step" href="#m3">
+                        <strong>1. Integre nota e título</strong>
+                        <span>Pedido, XML, retenção, vencimento, baixa e comprovante em uma linha.</span>
+                    </a>
+                    <a class="guided-step" href="manual-fiscal.html#chapter-15">
+                        <strong>2. Volte ao SPED</strong>
+                        <span>O financeiro só fecha bem quando o XML e a escrituração não divergem.</span>
+                    </a>
+                    <a class="guided-step" href="guia-dp-rh.html#fechamento-2026">
+                        <strong>3. Traga folha e encargos</strong>
+                        <span>Provisões, salários, FGTS Digital e DARF previdenciário afetam o caixa.</span>
+                    </a>
+                    <a class="guided-step" href="painel-fiscal/index.html#reforma">
+                        <strong>4. Reprecifique a transição</strong>
+                        <span>Reforma, crédito e split payment mudam contrato, margem e cobrança.</span>
+                    </a>
+                </div>
+            </section>
+
             <section id="leitura-2026" class="section">
                 <div class="content-block important">
                     <div class="block-title">Leitura 2026</div>
@@ -938,6 +961,25 @@ Receber NF Fornecedor → Conferência (pedido x NF) → Aprovação por alçada
                             <div class="content-block success">
                                 <div class="block-title">O que precisa ser provado</div>
                                 <p>Pedido, contrato, NF, XML, reten&ccedil;&otilde;es, t&iacute;tulo financeiro, comprovante de pagamento e concilia&ccedil;&atilde;o banc&aacute;ria precisam fechar em uma mesma linha de evid&ecirc;ncia. Sem essa trilha, o problema parece financeiro em um dia e fiscal no outro.</p>
+                            </div>
+
+                            <div class="context-callout">
+                                <h3>Continue a integração no fiscal</h3>
+                                <p>Quando a nota cria título ou o pagamento depende de retenção, a conferência precisa voltar para o XML, para o SPED e para o painel de códigos.</p>
+                                <div class="continuity-links">
+                                    <a class="continuity-link" href="manual-fiscal.html#chapter-15">
+                                        <strong>Conciliação com SPED</strong>
+                                        <span>Confira se XML, EFD e financeiro contam a mesma operação.</span>
+                                    </a>
+                                    <a class="continuity-link" href="painel-fiscal/index.html#cfop">
+                                        <strong>CFOP, CST e cBenef</strong>
+                                        <span>Valide a parametrização antes de virar cobrança ou pagamento.</span>
+                                    </a>
+                                    <a class="continuity-link" href="compliance-transportadoras.html#regimes">
+                                        <strong>Frete e faturamento</strong>
+                                        <span>Se houver CT-e/MDF-e, inclua tomador, CIOT e seguro na prova.</span>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -1380,6 +1422,21 @@ Compra/Estoque → Venda → Contas a Receber (PMR) → Caixa → Contas a Pagar
                                 <p>Receita 1,0 mi; CMV 0,6 mi; CR 0,5 mi → <strong>PMR 15d</strong>; Fornec. 0,3 mi → <strong>PMP 15d</strong>; Estoque 0,8 mi → <strong>DIO 40d</strong>; <strong>CCC 40d</strong>; <strong>NCG ≈ 1,0 mi</strong>.</p>
                                 <p>Quero reduzir NCG 250k → <strong>cortar DIO ~10d</strong> (compra fina/queima) <strong>ou aumentar PMP ~10d</strong>.</p>
                             </div>
+
+                            <div class="context-callout">
+                                <h3>Provisão pede ponte com DP e fiscal</h3>
+                                <p>Folha, férias, 13º, tributos e contingências não são envelopes soltos: eles precisam nascer do fechamento operacional e voltar para o fluxo de caixa.</p>
+                                <div class="continuity-links">
+                                    <a class="continuity-link" href="guia-dp-rh.html#fechamento-2026">
+                                        <strong>Fechamento mensal DP</strong>
+                                        <span>Transforme folha, eSocial, Reinf e guias em números provisionados.</span>
+                                    </a>
+                                    <a class="continuity-link" href="manual-fiscal.html#chapter-15">
+                                        <strong>SPED e XML</strong>
+                                        <span>Tributos provisionados precisam conversar com a escrituração.</span>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -1494,6 +1551,25 @@ Compra/Estoque → Venda → Contas a Receber (PMR) → Caixa → Contas a Pagar
                                 <p><strong>Fórmula básica:</strong> Preço = (Custo + Despesas + Margem) / (1 - % Impostos)</p>
                                 <p><strong>Markup:</strong> Multiplicador sobre o custo para chegar ao preço final</p>
                                 <p><strong>Margem de Contribuição:</strong> (Preço - Custos Variáveis) / Preço</p>
+                            </div>
+
+                            <div class="context-callout">
+                                <h3>Preço sem classificação fiscal fica cego</h3>
+                                <p>Antes de congelar margem, confirme o efeito de NCM, PIS/Cofins, ICMS, frete e reforma. O custo recuperável muda a leitura do preço.</p>
+                                <div class="continuity-links">
+                                    <a class="continuity-link" href="painel-fiscal/index.html#ncm">
+                                        <strong>NCM x PIS/Cofins</strong>
+                                        <span>Revise monofásicos, alíquota zero, crédito e regime federal.</span>
+                                    </a>
+                                    <a class="continuity-link" href="painel-fiscal/index.html#icmsgo">
+                                        <strong>ICMS/GO e benefícios</strong>
+                                        <span>Confirme se o benefício altera custo, preço ou prova documental.</span>
+                                    </a>
+                                    <a class="continuity-link" href="manual-fiscal.html#chapter-11">
+                                        <strong>Impostos na prática</strong>
+                                        <span>Volte ao cálculo de ST, DIFAL e desoneração antes da decisão.</span>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -1664,6 +1740,25 @@ Compra/Estoque → Venda → Contas a Receber (PMR) → Caixa → Contas a Pagar
                                     <li><strong>Aging CR/CP:</strong> Posição de recebíveis e pagamentos</li>
                                     <li><strong>Análise de Desvios:</strong> Orçado vs realizado com explicações</li>
                                 </ol>
+                            </div>
+
+                            <div class="context-callout">
+                                <h3>Fechamento gerencial precisa de lastro operacional</h3>
+                                <p>O D+3 só é confiável quando fiscal, DP e financeiro encerram o mesmo mês, com os mesmos fatos e evidências.</p>
+                                <div class="continuity-links">
+                                    <a class="continuity-link" href="manual-fiscal.html#chapter-15">
+                                        <strong>SPED e XML</strong>
+                                        <span>Use a escrituração como referência para receita, compra e imposto.</span>
+                                    </a>
+                                    <a class="continuity-link" href="guia-dp-rh.html#fechamento-2026">
+                                        <strong>Folha e encargos</strong>
+                                        <span>Inclua salários, FGTS Digital, DARF e DCTFWeb no calendário.</span>
+                                    </a>
+                                    <a class="continuity-link" href="compliance-transportadoras.html#comparativo">
+                                        <strong>Auditoria do frete</strong>
+                                        <span>Para transportadoras, CT-e, MDF-e e CIOT entram no fechamento.</span>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -2202,8 +2297,11 @@ End Sub
         // Script para navegação suave
         document.querySelectorAll('.nav-link, .toc a').forEach(link => {
             link.addEventListener('click', function(e) {
-                e.preventDefault();
                 const targetId = this.getAttribute('href');
+                if (!targetId || !targetId.startsWith('#')) {
+                    return;
+                }
+                e.preventDefault();
                 const targetElement = document.querySelector(targetId);
                 if (targetElement) {
                     targetElement.scrollIntoView({

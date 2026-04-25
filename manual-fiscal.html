@@ -493,6 +493,29 @@
         <!-- Content -->
         <main class="content">
 
+            <section class="guided-reading" aria-labelledby="trilha-integrada-fiscal">
+                <h2 id="trilha-integrada-fiscal">Leitura guiada entre fiscal, painel e operação</h2>
+                <p>Use este manual como eixo técnico dos DF-e. Quando a leitura sair do XML e tocar cálculo, caixa, folha ou transporte, siga a continuidade indicada abaixo para fechar a operação com prova documental.</p>
+                <div class="guided-steps">
+                    <a class="guided-step" href="#chapter-10">
+                        <strong>1. Classifique a operação</strong>
+                        <span>NCM, CFOP, CST/CSOSN e cBenef antes de calcular imposto.</span>
+                    </a>
+                    <a class="guided-step" href="painel-fiscal/index.html#cfop">
+                        <strong>2. Consulte o painel fiscal</strong>
+                        <span>Use as abas de CFOP, CST, NCM, ICMS/GO, cBenef e reforma como apoio vivo.</span>
+                    </a>
+                    <a class="guided-step" href="manual-financeiro.html#m3">
+                        <strong>3. Feche o reflexo financeiro</strong>
+                        <span>Título, baixa, retenção, comprovante e conciliação precisam contar a mesma história.</span>
+                    </a>
+                    <a class="guided-step" href="compliance-transportadoras.html#regimes">
+                        <strong>4. Se houver frete, vá para transporte</strong>
+                        <span>CT-e, MDF-e, CIOT, tomador e crédito exigem leitura própria.</span>
+                    </a>
+                </div>
+            </section>
+
 
             <!-- Sumário -->
             <section id="sumario" class="toc">
@@ -1539,6 +1562,29 @@
             <p>Em leitura conservadora, a compra de <strong>veículo operacional</strong> com suporte em crédito de ICMS tem base muito mais sólida do que a aquisição de <strong>automóvel de uso administrativo</strong>. E o ponto decisivo é este: <strong>crédito escritural não é moeda livre</strong>. Ele precisa estar encaixado na hipótese legal correta.</p>
             <p><strong>Base oficial para consulta:</strong> <a href="https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp87.htm" target="_blank">LC 87/1996</a>, <a href="https://appasp.economia.go.gov.br/legislacao/arquivos/Cte/CTE.htm" target="_blank">CTE/RCTE de Goiás</a> e <a href="https://appasp.economia.go.gov.br/legislacao/arquivos/Secretario/IN/IN_0715_2005.htm" target="_blank">IN 715/2005-GSF</a>.</p>
         </div>
+
+        <div class="context-callout">
+            <h3>Se o assunto é transporte, continue fora daqui</h3>
+            <p>Este capítulo explica o CT-e dentro da lógica dos DF-e. Para decidir ICMS do frete, CIOT, MDF-e, contrato, seguro, crédito e cobrança, a leitura precisa continuar no material de transportadoras e no painel fiscal.</p>
+            <div class="continuity-links">
+                <a class="continuity-link" href="compliance-transportadoras.html#fundamentos">
+                    <strong>ICMS do frete e GNRE</strong>
+                    <span>Defina UF de início, tomador e forma de recolhimento.</span>
+                </a>
+                <a class="continuity-link" href="compliance-transportadoras.html#regimes">
+                    <strong>Cadeia documental da viagem</strong>
+                    <span>CT-e, MDF-e, CIOT, seguro e faturamento no mesmo roteiro.</span>
+                </a>
+                <a class="continuity-link" href="painel-fiscal/index.html#aliquotas">
+                    <strong>Alíquotas e ICMS/GO</strong>
+                    <span>Use as tabelas do painel para validar a rota e o benefício.</span>
+                </a>
+                <a class="continuity-link" href="manual-financeiro.html#m3">
+                    <strong>Reflexo financeiro</strong>
+                    <span>Frete negociado, título, baixa e comprovante precisam fechar.</span>
+                </a>
+            </div>
+        </div>
     </div>
 </div>
 
@@ -1758,6 +1804,29 @@
                 <li><strong>CSOSN (Código de Situação da Operação no Simples Nacional):</strong> Usado por empresas do Simples Nacional. Ex: 101 (Tributada com permissão de crédito), 102 (Tributada sem permissão de crédito), 500 (ICMS cobrado anteriormente por ST).</li>
             </ul>
             <p>A escolha do CST/CSOSN correto é o que define quais campos de base de cálculo e alíquota de ICMS deverão ser preenchidos no XML.</p>
+        </div>
+
+        <div class="context-callout">
+            <h3>Continuidade natural deste capítulo</h3>
+            <p>Quando a dúvida sair da definição conceitual e virar parametrização concreta, use o painel como mesa de conferência antes de emitir ou escriturar.</p>
+            <div class="continuity-links">
+                <a class="continuity-link" href="painel-fiscal/index.html#cfop">
+                    <strong>CFOP e natureza da operação</strong>
+                    <span>Confirme entrada, saída, UF e finalidade antes do XML.</span>
+                </a>
+                <a class="continuity-link" href="painel-fiscal/index.html#cst">
+                    <strong>CST/CSOSN</strong>
+                    <span>Amarre regime, tributação e campos obrigatórios.</span>
+                </a>
+                <a class="continuity-link" href="painel-fiscal/index.html#ncm">
+                    <strong>NCM e PIS/Cofins</strong>
+                    <span>Revise classificação e reflexo federal por item.</span>
+                </a>
+                <a class="continuity-link" href="painel-fiscal/index.html#cbenef">
+                    <strong>cBenef Goiás</strong>
+                    <span>Use somente código com benefício vigente e prova documental.</span>
+                </a>
+            </div>
         </div>
     </div>
 </div>
@@ -2126,6 +2195,25 @@
             <h3>✅ Dica de Estudo</h3>
             <p>Aprenda a ler o arquivo .txt do SPED. Abra-o em um editor de texto e familiarize-se com os principais registros (C100, C170, C190, 0200 - Tabela de Itens). Ser capaz de localizar uma nota ou um produto diretamente no arquivo de texto é uma habilidade avançada que pode economizar horas na resolução de problemas de validação.</p>
         </div>
+
+        <div class="context-callout">
+            <h3>Depois do SPED, feche caixa e folha</h3>
+            <p>A conciliação fiscal só fica madura quando conversa com o fechamento financeiro e, quando houver folha ou retenções, com o fechamento de DP.</p>
+            <div class="continuity-links">
+                <a class="continuity-link" href="manual-financeiro.html#m13">
+                    <strong>Fechamento D+3</strong>
+                    <span>Transforme XML, títulos e conciliação em rotina gerencial.</span>
+                </a>
+                <a class="continuity-link" href="manual-financeiro.html#m3">
+                    <strong>Integração fiscal-financeiro</strong>
+                    <span>Confira a trilha pedido, nota, título, baixa e comprovante.</span>
+                </a>
+                <a class="continuity-link" href="guia-dp-rh.html#fechamento-2026">
+                    <strong>Fechamento DP 2026</strong>
+                    <span>eSocial, Reinf, DCTFWeb e guias precisam bater com o mês.</span>
+                </a>
+            </div>
+        </div>
     </div>
 </div>
 
@@ -2234,6 +2322,12 @@
                         <p>Em 2026, a reforma tributária deixou de ser só pauta de seminário e passou a mexer no coração da rotina fiscal: <strong>cadastro</strong>, <strong>XML</strong>, <strong>ERP</strong>, <strong>homologação</strong>, <strong>regras de negócio</strong> e <strong>qualidade documental</strong>. Este capítulo trata do que já está em produção e do que precisa ser testado com método para a empresa não descobrir a mudança pela rejeição, pela perda de crédito ou pelo retrabalho no fechamento.</p>
                     </div>
 
+                    <div class="content-block warning">
+                        <div class="block-title">Atualização tributária checada em 25/04/2026</div>
+                        <p>As fontes oficiais mais recentes mantêm 2026 como ano de adaptação e teste, mas com obrigações acessórias reais nos DF-e. Para NF-e/NFC-e, a referência vigente de leiaute da reforma é a <strong>NT 2025.002 v.1.35</strong>, acompanhada do <strong>Informe Técnico 2025.002 v.1.50</strong> e da tabela <strong>cClassTrib</strong> publicada em <strong>15/04/2026</strong>. Também entram na rotina a tabela de meios de pagamento de <strong>06/03/2026</strong> e a tabela de NCM/uTrib vigente desde <strong>01/02/2026</strong>.</p>
+                        <p>No transporte, a leitura de 2026 deve observar também a <strong>NT CT-e 2026.001 v.1.01</strong>: os campos de split payment em CT-e/BP-e têm caráter preparatório em 2026, sem exigência de uso em produção até novo ato conjunto do CGIBS e da RFB.</p>
+                    </div>
+
                     <div class="content-block">
                         <h2>1. CRT=4 (MEI) - Já em Vigor</h2>
                         <ul>
@@ -2272,7 +2366,7 @@
                         <p>O erro mais comum &eacute; tratar 2026 como “ano de espera”. N&atilde;o &eacute;. O ano j&aacute; exige <strong>preparo documental</strong>, <strong>homologa&ccedil;&atilde;o de sistema</strong>, <strong>revis&atilde;o de cadastros</strong> e <strong>governan&ccedil;a do XML</strong>. Quem deixa isso para a &uacute;ltima hora tende a descobrir o problema na rejei&ccedil;&atilde;o do documento, na perda de cr&eacute;dito do cliente ou no retrabalho do fechamento.</p>
 
                         <h3>Como a regra funciona de verdade</h3>
-                        <p>NF-e, NFC-e, CT-e, CT-e OS, NFCom, NFS-e e outros documentos entram na transi&ccedil;&atilde;o com novos grupos e campos para suportar <strong>CBS, IBS e IS</strong>. A <strong>NT 2025.002</strong> e as orienta&ccedil;&otilde;es oficiais de 2026 tratam isso como trabalho obrigat&oacute;rio de <strong>parametriza&ccedil;&atilde;o, teste e governan&ccedil;a</strong>. Em outras palavras: o documento fiscal passa a carregar mais informa&ccedil;&atilde;o tribut&aacute;ria e precisa refletir com mais fidelidade a opera&ccedil;&atilde;o real.</p>
+                        <p>NF-e, NFC-e, CT-e, CT-e OS, NFCom, NFS-e e outros documentos entram na transi&ccedil;&atilde;o com novos grupos e campos para suportar <strong>CBS, IBS e IS</strong>. A <strong>NT 2025.002 v.1.35</strong> e as orienta&ccedil;&otilde;es oficiais de 2026 tratam isso como trabalho obrigat&oacute;rio de <strong>parametriza&ccedil;&atilde;o, teste e governan&ccedil;a</strong>. Em outras palavras: o documento fiscal passa a carregar mais informa&ccedil;&atilde;o tribut&aacute;ria e precisa refletir com mais fidelidade a opera&ccedil;&atilde;o real.</p>
                         <ul>
                             <li><strong>Novos campos</strong> para base, al&iacute;quota, valor, hip&oacute;teses diferenciadas e informa&ccedil;&otilde;es auxiliares.</li>
                             <li><strong>Novas tabelas</strong> e c&oacute;digos para leitura tribut&aacute;ria da reforma.</li>
@@ -2305,6 +2399,25 @@
                             <li><strong>Integrar fiscal, TI, comercial e jurídico</strong>, porque a reforma não cabe mais só dentro do departamento fiscal.</li>
                         </ul>
                         <p>O profissional que vai se destacar em 2026 n&atilde;o &eacute; o que decorou a reforma. &Eacute; o que consegue transformar a mudan&ccedil;a em <strong>processo, valida&ccedil;&atilde;o e documento correto</strong>. O pr&oacute;ximo cap&iacute;tulo leva esse racioc&iacute;nio para casos pr&aacute;ticos completos.</p>
+                    </div>
+
+                    <div class="context-callout">
+                        <h3>Continue a virada 2026 nos materiais correlatos</h3>
+                        <p>Depois de entender os campos novos, a próxima decisão é onde testar, quem valida e como contrato, pagamento, frete e crédito serão sustentados.</p>
+                        <div class="continuity-links">
+                            <a class="continuity-link" href="painel-fiscal/index.html#reforma">
+                                <strong>Painel fiscal: reforma</strong>
+                                <span>Consulte cClassTrib, fontes oficiais, split payment e contratos.</span>
+                            </a>
+                            <a class="continuity-link" href="compliance-transportadoras.html#implementacao">
+                                <strong>Transportadoras: CT-e 2026</strong>
+                                <span>Leve a reforma para tomador, TMS, CIOT, MDF-e e contrato de frete.</span>
+                            </a>
+                            <a class="continuity-link" href="manual-financeiro.html#m10">
+                                <strong>Preço e margem</strong>
+                                <span>Reveja custo, impostos recuperáveis e cláusulas comerciais.</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -2978,7 +3091,11 @@
                         <ul>
                             <li><strong>NT 2024.001:</strong> Institui o CRT=4 para o MEI.</li>
                             <li><strong>NT 2025.001:</strong> Institui o QR-Code v3.0 para a NFC-e.</li>
-                            <li><strong>NT 2025.002:</strong> Introduz os campos da Reforma Tributária (IBS/CBS/IS) nos leiautes.</li>
+                            <li><strong>NT 2025.002 v.1.35:</strong> Introduz campos e regras de validação da Reforma Tributária (IBS/CBS/IS) na NF-e/NFC-e.</li>
+                            <li><strong>Informe Técnico 2025.002 v.1.50:</strong> Divulga tabela de classificação tributária e indicadores de CST do IBS/CBS.</li>
+                            <li><strong>Informe Técnico 2024.002 v.1.11:</strong> Divulga atualização da tabela de meios de pagamento.</li>
+                            <li><strong>Informe Técnico 2024.001 v.2.30:</strong> Divulga atualização da tabela de NCM vigente a partir de 01/02/2026.</li>
+                            <li><strong>NT CT-e 2026.001 v.1.01:</strong> Trata os campos de split payment em CT-e/BP-e como preparação técnica em 2026, sem exigência de uso em produção até novo ato regulatório.</li>
                             <li><strong>Ato Conjunto RFB/CGIBS 1/2025:</strong> disciplina obrigações acessórias iniciais da reforma do consumo.</li>
                             <li><strong>Orientações 2026 da Reforma do Consumo:</strong> consolidam a fase de implantação assistida e o ambiente de adaptação dos DF-e.</li>
                             <li><strong>NT 2022.005:</strong> Trata das regras de validação do DIFAL.</li>

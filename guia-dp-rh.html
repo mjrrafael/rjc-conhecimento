@@ -361,6 +361,29 @@
 
         <!-- Conteúdo principal -->
         <main class="content">
+            <section class="guided-reading" aria-labelledby="trilha-integrada-dp">
+                <h2 id="trilha-integrada-dp">Leitura guiada do DP dentro do fechamento empresarial</h2>
+                <p>O DP fecha pessoas, encargos e prova trabalhista. Quando essa rotina toca caixa, impostos, retenções ou governança documental, avance pelos materiais abaixo para não deixar passivo escondido no mês.</p>
+                <div class="guided-steps">
+                    <a class="guided-step" href="#fechamento-2026">
+                        <strong>1. Feche folha e obrigações</strong>
+                        <span>eSocial, Reinf, FGTS Digital, DARF e DCTFWeb no calendário correto.</span>
+                    </a>
+                    <a class="guided-step" href="manual-financeiro.html#m8a">
+                        <strong>2. Transforme em provisão</strong>
+                        <span>Folha, férias, 13º e encargos precisam entrar no caixa projetado.</span>
+                    </a>
+                    <a class="guided-step" href="manual-fiscal.html#chapter-15">
+                        <strong>3. Concilie com fiscal</strong>
+                        <span>Retenções, Reinf e escrituração precisam fechar com o mês fiscal.</span>
+                    </a>
+                    <a class="guided-step" href="compliance-transportadoras.html#comparativo">
+                        <strong>4. Use governança comum</strong>
+                        <span>Arquivo, prova e auditoria interna seguem a mesma lógica do compliance.</span>
+                    </a>
+                </div>
+            </section>
+
             <section class="section">
                 <div class="content-block important">
                     <div class="block-title">Como usar este guia</div>
@@ -523,6 +546,25 @@
                         <li><strong>Emitir guias e aprovar financeiramente</strong> antes do vencimento.</li>
                         <li><strong>Transmitir a DCTFWeb e arquivar a trilha do mês</strong>.</li>
                     </ol>
+
+                    <div class="context-callout">
+                        <h3>Depois da folha, continue no caixa e no SPED</h3>
+                        <p>O fechamento de DP vira risco quando não entra no fluxo financeiro ou quando as retenções não conversam com fiscal.</p>
+                        <div class="continuity-links">
+                            <a class="continuity-link" href="manual-financeiro.html#m8a">
+                                <strong>Provisões e NCG</strong>
+                                <span>Leve folha, férias, 13º e encargos para o caixa projetado.</span>
+                            </a>
+                            <a class="continuity-link" href="manual-financeiro.html#m13">
+                                <strong>Fechamento D+3</strong>
+                                <span>Inclua guias e folha no fechamento gerencial do mês.</span>
+                            </a>
+                            <a class="continuity-link" href="manual-fiscal.html#chapter-15">
+                                <strong>Conciliação fiscal</strong>
+                                <span>Retenções, Reinf e obrigações precisam bater com a escrituração.</span>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </section>
 
@@ -548,6 +590,21 @@
                     <div class="content-block success">
                         <div class="block-title">O que precisa ser provado</div>
                         <p>Pol&iacute;tica interna, base legal, rubrica correta, contrato ou instrumento coletivo, recibo e reflexo coerente na folha, no eSocial e na contabilidade. Quando a prova n&atilde;o fecha, a verba vira discuss&atilde;o sobre natureza salarial.</p>
+                    </div>
+
+                    <div class="context-callout">
+                        <h3>Remuneração também é decisão de caixa</h3>
+                        <p>Antes de criar verba, benefício ou política nova, simule reflexo em folha, encargos, provisões e margem.</p>
+                        <div class="continuity-links">
+                            <a class="continuity-link" href="manual-financeiro.html#m8a">
+                                <strong>Provisões financeiras</strong>
+                                <span>Leve o impacto da remuneração para caixa, NCG e alertas.</span>
+                            </a>
+                            <a class="continuity-link" href="manual-financeiro.html#m13">
+                                <strong>Fechamento gerencial</strong>
+                                <span>Mostre variações de folha como desvio explicado, não surpresa.</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -640,6 +697,21 @@
                         <div class="block-title">Leitura operacional</div>
                         <p>O melhor DP n&atilde;o &eacute; o que corre atr&aacute;s do prazo no &uacute;ltimo dia. &Eacute; o que fecha o m&ecirc;s com <strong>cadastro limpo</strong>, <strong>evento &iacute;ntegro</strong>, <strong>guia correta</strong> e <strong>prova pronta</strong>.</p>
                     </div>
+
+                    <div class="context-callout">
+                        <h3>Governança de DP conversa com compliance</h3>
+                        <p>Arquivo trabalhista, fiscal e operacional têm a mesma finalidade: provar a decisão antes que ela vire defesa.</p>
+                        <div class="continuity-links">
+                            <a class="continuity-link" href="compliance-transportadoras.html#comparativo">
+                                <strong>Checklist de auditoria</strong>
+                                <span>Use a lógica de evidência mínima para revisar também o DP.</span>
+                            </a>
+                            <a class="continuity-link" href="manual-fiscal.html#chapter-16">
+                                <strong>POPs fiscais</strong>
+                                <span>Padronize checklist, responsável, prova e revisão mensal.</span>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </section>
 
@@ -716,6 +788,24 @@ Assinaturas: ________________________ (Empregador) e ________________________ (E
             const scrollPercent = (window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100;
             currentPage = Math.max(1, Math.min(totalPages, Math.ceil((scrollPercent / 100) * totalPages)));
             updatePageNumber();
+        });
+
+        // Navegação suave apenas para âncoras internas
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', function(e) {
+                const targetId = this.getAttribute('href');
+                if (!targetId || !targetId.startsWith('#')) {
+                    return;
+                }
+                e.preventDefault();
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
         });
 
         // Destacar seção ativa na navegação
