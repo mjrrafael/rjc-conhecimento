@@ -29,10 +29,12 @@ body {
   background: var(--paper);
   font-family: "Segoe UI", Arial, sans-serif;
   line-height: 1.55;
+  overflow-x: hidden;
 }
 
 a {
   color: inherit;
+  overflow-wrap: anywhere;
 }
 
 .site-header {
@@ -89,6 +91,7 @@ a {
   justify-content: flex-end;
   gap: 4px;
   flex-wrap: wrap;
+  max-width: 100%;
 }
 
 .primary-nav a {
@@ -199,6 +202,16 @@ main {
   box-shadow: var(--shadow);
 }
 
+.hero-panel > *,
+.method-strip > *,
+.law-ledger > *,
+.portal-card,
+.state-card,
+.matrix-card,
+.signal-card {
+  min-width: 0;
+}
+
 .hero-panel h1 {
   max-width: 850px;
   margin: 8px 0 14px;
@@ -212,6 +225,7 @@ main {
   margin: 0;
   color: var(--muted);
   font-size: 1.08rem;
+  overflow-wrap: anywhere;
 }
 
 .eyebrow,
@@ -273,7 +287,9 @@ main {
 .law-ledger,
 .content-block,
 .matrix-section,
-.continuity {
+.continuity,
+.signal-panel,
+.legal-chapters {
   margin-top: 28px;
 }
 
@@ -287,7 +303,8 @@ main {
 .content-block h2,
 .matrix-section h2,
 .continuity h2,
-.law-ledger h2 {
+.law-ledger h2,
+.legal-chapters h2 {
   margin: 6px 0 8px;
   color: var(--navy);
   font-size: 1.55rem;
@@ -298,6 +315,7 @@ main {
 .content-block p,
 .law-ledger p {
   color: var(--muted);
+  overflow-wrap: anywhere;
 }
 
 .card-grid {
@@ -349,6 +367,7 @@ a.state-card:hover {
 .matrix-card p {
   margin: 0;
   color: var(--muted);
+  overflow-wrap: anywhere;
 }
 
 .portal-card small,
@@ -452,6 +471,12 @@ a.state-card:hover {
 .source-list a {
   color: var(--blue);
   font-weight: 650;
+  word-break: break-word;
+}
+
+.source-status {
+  color: var(--amber);
+  font-weight: 750;
 }
 
 .content-block {
@@ -459,6 +484,222 @@ a.state-card:hover {
   background: var(--surface);
   border: 1px solid var(--line);
   border-radius: 8px;
+}
+
+.signal-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.signal-card {
+  min-height: 96px;
+  padding: 16px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+}
+
+.signal-card strong,
+.signal-card span {
+  display: block;
+}
+
+.signal-card strong {
+  color: var(--navy);
+  line-height: 1.18;
+}
+
+.signal-card span {
+  margin-top: 8px;
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+.signals-inline {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 10px;
+}
+
+.signal-chip {
+  display: inline-flex;
+  align-items: center;
+  min-height: 26px;
+  padding: 4px 8px;
+  border-radius: 999px;
+  background: var(--soft-blue);
+  color: var(--navy);
+  font-size: 0.78rem;
+  font-weight: 750;
+}
+
+.signal-chip.quiet {
+  color: var(--muted);
+  background: #eef2f7;
+}
+
+.inventory-table p {
+  max-width: 850px;
+}
+
+.doc-table-wrap {
+  margin-top: 16px;
+  overflow-x: auto;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+}
+
+.doc-table {
+  width: 100%;
+  min-width: 920px;
+  border-collapse: collapse;
+  font-size: 0.92rem;
+}
+
+.doc-table th,
+.doc-table td {
+  padding: 12px;
+  border-bottom: 1px solid var(--line);
+  text-align: left;
+  vertical-align: top;
+}
+
+.doc-table th {
+  position: sticky;
+  top: 0;
+  background: var(--soft-blue);
+  color: var(--navy);
+  font-size: 0.78rem;
+  text-transform: uppercase;
+}
+
+.doc-table td:first-child {
+  width: 260px;
+}
+
+.doc-table td:nth-child(4) {
+  white-space: nowrap;
+}
+
+.doc-table strong,
+.doc-table span {
+  display: block;
+}
+
+.doc-table td:first-child span {
+  margin-top: 4px;
+  color: var(--muted);
+  font-size: 0.78rem;
+  overflow-wrap: anywhere;
+}
+
+.doc-table a {
+  color: var(--blue);
+  font-weight: 750;
+}
+
+.law-chapter-list {
+  display: grid;
+  gap: 16px;
+}
+
+.law-chapter {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 22px;
+}
+
+.law-chapter h3 {
+  margin: 0 0 8px;
+  color: var(--navy);
+  font-size: 1.22rem;
+}
+
+.law-chapter > p {
+  margin: 0 0 14px;
+  color: var(--muted);
+  overflow-wrap: anywhere;
+}
+
+.law-quotes {
+  display: grid;
+  gap: 10px;
+}
+
+.law-quote {
+  margin: 0;
+  padding: 16px 18px;
+  border-left: 4px solid var(--blue);
+  border-radius: 8px;
+  background: var(--soft-blue);
+}
+
+.law-quote p {
+  margin: 0;
+  color: var(--ink);
+  font-size: 0.96rem;
+  overflow-wrap: anywhere;
+}
+
+.law-quote cite {
+  display: block;
+  margin-top: 10px;
+  color: var(--muted);
+  font-style: normal;
+  font-weight: 800;
+  font-size: 0.82rem;
+}
+
+.chapter-application {
+  display: grid;
+  grid-template-columns: 160px minmax(0, 1fr);
+  gap: 12px;
+  margin-top: 14px;
+  padding: 14px;
+  border-radius: 8px;
+  border: 1px solid rgba(47, 125, 87, 0.25);
+  background: var(--green-soft);
+}
+
+.chapter-application strong {
+  color: var(--green);
+}
+
+.chapter-application span {
+  color: var(--ink);
+}
+
+.department-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.department-grid article {
+  padding: 14px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--paper);
+}
+
+.department-grid strong,
+.department-grid span {
+  display: block;
+}
+
+.department-grid strong {
+  color: var(--navy);
+}
+
+.department-grid span {
+  margin-top: 6px;
+  color: var(--muted);
+  font-size: 0.9rem;
 }
 
 .matrix-grid {
@@ -560,7 +801,9 @@ a.state-card:hover {
   .card-grid,
   .states-grid,
   .timeline,
-  .matrix-grid {
+  .matrix-grid,
+  .signal-grid,
+  .department-grid {
     grid-template-columns: 1fr 1fr;
   }
 }
@@ -570,6 +813,8 @@ a.state-card:hover {
   main {
     padding-left: 16px;
     padding-right: 16px;
+    width: 100%;
+    max-width: 100%;
   }
 
   .searchbar {
@@ -587,13 +832,27 @@ a.state-card:hover {
 
   .hero-panel {
     padding: 24px;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .hero-panel h1 {
+    font-size: 2rem;
+    overflow-wrap: anywhere;
+  }
+
+  .hero-proof {
+    width: calc(100vw - 82px);
+    max-width: 100%;
   }
 
   .method-strip,
   .card-grid,
   .states-grid,
   .timeline,
-  .matrix-grid {
+  .matrix-grid,
+  .signal-grid,
+  .department-grid {
     grid-template-columns: 1fr;
   }
 
@@ -601,7 +860,41 @@ a.state-card:hover {
     grid-template-columns: 1fr;
   }
 
+  .chapter-application {
+    grid-template-columns: 1fr;
+  }
+
   .primary-nav {
-    justify-content: flex-start;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    justify-content: stretch;
+    width: calc(100vw - 32px);
+    max-width: 100%;
+  }
+
+  .primary-nav a {
+    padding: 8px 6px;
+    text-align: center;
+    font-size: 0.84rem;
+    overflow-wrap: anywhere;
+    width: 100%;
+  }
+
+  .hero-panel h1,
+  .hero-panel p,
+  .hero-proof p,
+  .method-strip span,
+  .section-heading p,
+  .content-block p,
+  .law-ledger p,
+  .source-list,
+  .source-list li,
+  .source-list a,
+  .portal-card p,
+  .state-card p,
+  .matrix-card p {
+    width: calc(100vw - 90px);
+    max-width: 100%;
+    word-break: break-word;
   }
 }
