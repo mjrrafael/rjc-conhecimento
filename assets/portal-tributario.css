@@ -654,6 +654,209 @@ a.state-card:hover {
   font-size: 0.82rem;
 }
 
+.legal-hero {
+  align-items: stretch;
+}
+
+.legal-continuity p {
+  margin: 0 0 14px;
+  color: var(--muted);
+}
+
+.source-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.source-card {
+  display: grid;
+  gap: 8px;
+  padding: 18px;
+  min-height: 150px;
+  color: inherit;
+  text-decoration: none;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+
+.source-card:hover {
+  border-color: rgba(29, 111, 184, 0.45);
+  box-shadow: 0 10px 28px rgba(23, 32, 51, 0.08);
+}
+
+.source-card span {
+  color: var(--amber);
+  font-size: 0.78rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.source-card strong {
+  color: var(--navy);
+  font-size: 1.02rem;
+  line-height: 1.25;
+}
+
+.source-card small {
+  color: var(--muted);
+}
+
+.law-reader-grid {
+  display: grid;
+  grid-template-columns: 250px minmax(0, 1fr);
+  gap: 24px;
+  margin-top: 28px;
+  align-items: start;
+}
+
+.law-sidebar {
+  position: sticky;
+  top: 112px;
+  display: grid;
+  gap: 8px;
+  padding: 16px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+
+.law-sidebar strong {
+  margin-top: 8px;
+  color: var(--navy);
+  font-size: 0.82rem;
+  text-transform: uppercase;
+}
+
+.law-sidebar strong:first-child {
+  margin-top: 0;
+}
+
+.law-sidebar a {
+  padding: 8px 10px;
+  border-radius: 6px;
+  color: var(--muted);
+  font-size: 0.9rem;
+  font-weight: 650;
+  text-decoration: none;
+}
+
+.law-sidebar a:hover,
+.law-sidebar a.active {
+  color: var(--navy);
+  background: var(--soft-blue);
+}
+
+.law-reader-main {
+  display: grid;
+  gap: 22px;
+  min-width: 0;
+}
+
+.legal-document,
+.analysis-panel {
+  padding: 22px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+
+.document-heading {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(180px, 260px);
+  gap: 18px;
+  align-items: start;
+  padding-bottom: 16px;
+  margin-bottom: 18px;
+  border-bottom: 1px solid var(--line);
+}
+
+.document-heading h2,
+.analysis-panel h2 {
+  margin: 4px 0 8px;
+  color: var(--navy);
+  font-size: 1.35rem;
+}
+
+.document-heading p,
+.analysis-panel p {
+  margin: 0 0 10px;
+  color: var(--muted);
+}
+
+.document-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.document-actions a,
+.document-actions span {
+  display: inline-flex;
+  align-items: center;
+  min-height: 34px;
+  padding: 7px 10px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  color: var(--navy);
+  background: var(--soft-blue);
+  font-size: 0.82rem;
+  font-weight: 750;
+  text-decoration: none;
+}
+
+.article-block {
+  margin-top: 14px;
+  padding: 16px;
+  background: #fffdf8;
+  border: 1px solid #eadfce;
+  border-left: 4px solid var(--amber);
+  border-radius: 8px;
+}
+
+.article-number {
+  margin-bottom: 10px;
+  color: var(--amber);
+  font-size: 0.86rem;
+  font-weight: 850;
+  text-transform: uppercase;
+}
+
+.article-text {
+  color: #253047;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 0.98rem;
+  line-height: 1.65;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+.law-pre {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  color: #253047;
+  background: transparent;
+  border: 0;
+  font: 0.92rem/1.6 Consolas, "Courier New", monospace;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+.department-grid.compact {
+  margin-top: 16px;
+}
+
+.empty-note {
+  padding: 14px;
+  color: var(--muted);
+  background: var(--soft-blue);
+  border-radius: 8px;
+}
+
 .chapter-application {
   display: grid;
   grid-template-columns: 160px minmax(0, 1fr);
@@ -803,8 +1006,17 @@ a.state-card:hover {
   .timeline,
   .matrix-grid,
   .signal-grid,
-  .department-grid {
+  .department-grid,
+  .source-grid {
     grid-template-columns: 1fr 1fr;
+  }
+
+  .law-reader-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .law-sidebar {
+    position: static;
   }
 }
 
@@ -852,8 +1064,14 @@ a.state-card:hover {
   .timeline,
   .matrix-grid,
   .signal-grid,
-  .department-grid {
+  .department-grid,
+  .source-grid,
+  .document-heading {
     grid-template-columns: 1fr;
+  }
+
+  .document-actions {
+    justify-content: flex-start;
   }
 
   .matrix-card dl {

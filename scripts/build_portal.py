@@ -8,6 +8,16 @@ import re
 from html import escape
 from pathlib import Path
 
+from legal_modules import (
+    build_legal_pages,
+    federal_legislation_card,
+    goias_legislation_card,
+    legal_search_entries,
+    legal_theme_teaser,
+    legal_topic_teaser,
+    topic_has_legal_module,
+)
+
 
 ROOT = Path(__file__).resolve().parents[1]
 CATALOG = ROOT / "data" / "portal_catalog.json"
@@ -698,6 +708,7 @@ def federal_inventory_sections(data: dict, themes: list[str], verified_on: str, 
         theme = federal_theme(data, key)
         docs = theme.get("documents", [])
         analysis = FEDERAL_ANALYSIS.get(key, FEDERAL_ANALYSIS["geral"])
+        law = ""
         blocks.append(f"""
 <section class="law-ledger">
   {inventory_badge(FEDERAL_THEME_LABELS.get(key, key), '11/04/2026', verified_on)}
@@ -715,7 +726,7 @@ def federal_inventory_sections(data: dict, themes: list[str], verified_on: str, 
   <p>{escape(analysis[0])}</p>
   <p>{escape(analysis[1])}</p>
 </section>
-{render_law_chapters(theme.get('legal_chapters', []), 'Lei federal em tela', 'Trechos do acervo normativo que sustentam a leitura deste tema.')}
+{law}
 {signal_grid(theme.get('signals', {}), 'Sinais normativos do tema', 'Esses termos ajudam a localizar beneficios, restricoes, riscos e pontos de prova dentro do acervo federal.')}
 {docs_table(docs, 'Atos e documentos do acervo federal', 'A tabela lista o material legal e o caminho de leitura antes de uso em parecer.', federal=True) if not compact else ''}
 """)
@@ -723,10 +734,10 @@ def federal_inventory_sections(data: dict, themes: list[str], verified_on: str, 
 
 
 def topic_page(topic: dict, active: str, extra_body: str = "") -> str:
-    curated_law = render_law_chapters(
+    curated_law = "" if topic_has_legal_module(topic.get("id", "")) else render_law_chapters(
         CURATED_TOPIC_CHAPTERS.get(topic.get("id", ""), []),
         "Lei em tela",
-        "Trechos essenciais para ler a norma antes da conclusao pratica.",
+        "Dispositivos de abertura para ler a norma antes da conclusao pratica.",
     )
     intro = f"""
 {hero(topic["titulo"], topic["resumo"], topic["tema"])}
@@ -742,7 +753,7 @@ def topic_page(topic: dict, active: str, extra_body: str = "") -> str:
   </div>
 </section>
 """
-    body = intro + curated_law + render_sections(topic) + render_matrix(topic) + extra_body + related_links(topic)
+    body = intro + curated_law + render_sections(topic) + render_matrix(topic) + extra_body + legal_topic_teaser(topic.get("id", ""), topic["path"]) + related_links(topic)
     return layout(topic["path"], topic["titulo"], topic["resumo"], body, active)
 
 
@@ -771,6 +782,8 @@ def home(data: dict) -> str:
   <small>{fmt_num(federal_docs)} atos/documentos federais</small>
 </a>
 """,
+        federal_legislation_card("index.html"),
+        goias_legislation_card("index.html"),
         topic_card(next(t for t in topics if t["id"] == "folha-clt-previdencia")),
         f"""
 <a class="portal-card searchable-card" href="biblioteca/index.html" data-search="manual fiscal financeiro DP RH transportadoras painel fiscal biblioteca">
@@ -947,7 +960,7 @@ def state_page(state: dict, data: dict) -> str:
 
 def federal_index(data: dict) -> str:
     topics = [t for t in data["topics"] if t["path"].startswith("federal/")]
-    cards = []
+    cards = [federal_legislation_card("federal/index.html")]
     for topic in topics:
         local_topic = dict(topic)
         local_topic["path"] = Path(topic["path"]).name
@@ -1005,6 +1018,7 @@ def federal_theme_page(data: dict, page: dict) -> str:
     body = f"""
 {hero(page["title"], page["summary"], "Federal")}
 {federal_inventory_sections(data, [page["theme"]], data["site"]["verified_on"])}
+{legal_theme_teaser(page["theme"], page["path"])}
 <section class="continuity">
   <h2>Continuar a leitura</h2>
   <div>
@@ -1056,6 +1070,7 @@ def federal_acervo_page(data: dict) -> str:
 <section class="continuity">
   <h2>Continuar a leitura</h2>
   <div>
+    <a href="legislacao/index.html">Legislacao federal em tela</a>
     <a href="pis-cofins.html">PIS e Cofins</a>
     <a href="ipi.html">IPI</a>
     <a href="iof.html">IOF</a>
@@ -1169,6 +1184,7 @@ def search_index(data: dict) -> str:
         "summary": "Mapa completo de atos federais por tema, fonte e sinais de auditoria.",
         "tags": "PIS Cofins IPI IOF IRPJ CSLL reforma beneficios DIRBI previdencia folha"
     })
+    entries += legal_search_entries()
     entries += [
         {
             "title": doc.get("title", doc.get("file", "")),
@@ -1235,6 +1251,8 @@ def main() -> None:
     folha_extra = federal_inventory_sections(data, TOPIC_THEME_MAP.get(folha_topic["id"], []), data["site"]["verified_on"], compact=True)
     write("folha-clt/index.html", topic_page(folha_topic, "folha", folha_extra))
     write("biblioteca/index.html", biblioteca(data))
+    for legal_path, legal_content in build_legal_pages(layout).items():
+        write(legal_path, legal_content)
     write("assets/portal-search.js", search_index(data))
     print("Portal generated successfully.")
 

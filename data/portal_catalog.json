@@ -52,7 +52,7 @@
         {"label": "Secretaria da Economia de Goias - Legislacao Tributaria", "url": "https://goias.gov.br/economia/categoria/institucional/legislacao/tributaria/"}
       ],
       "data_conferencia": "25/04/2026",
-      "status_curadoria": "Publicado v1 - fonte oficial conferida",
+      "status_curadoria": "Publicado v1 - base legal em tela",
       "links_relacionados": [
         {"label": "Painel Fiscal - cBenef Goias", "href": "../painel-fiscal/index.html#cbenef"},
         {"label": "Manual Fiscal - CFOP/CST/cBenef", "href": "../manual-fiscal.html#chapter-10"},
@@ -143,7 +143,7 @@
         {"label": "LC 160/2017 - Planalto", "url": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp160.htm"}
       ],
       "data_conferencia": "25/04/2026",
-      "status_curadoria": "Publicado v1 - fonte oficial conferida",
+      "status_curadoria": "Publicado v1 - base legal em tela",
       "links_relacionados": [
         {"label": "Goias: beneficios fiscais", "href": "../estados/goias.html"},
         {"label": "Manual Fiscal - DF-e e SPED", "href": "../manual-fiscal.html#chapter-11"},
@@ -214,13 +214,13 @@
       "resumo": "Base legal, regimes, creditos, aliquota zero, suspensoes, monofasicos e prova para PIS/Pasep e Cofins.",
       "base_legal": ["Lei 9.718/1998", "Lei 10.637/2002", "Lei 10.833/2003", "Lei 10.865/2004", "IN RFB 2.121/2022"],
       "fonte_oficial": [
-        {"label": "Receita Federal - IN RFB 2.121/2022", "url": "https://www.gov.br/receitafederal/pt-br/assuntos/noticias/2022/dezembro/receita-federal-atualiza-legislacao-sobre-pis-pasep-e-cofins"},
+        {"label": "Receita Federal - IN RFB 2.121/2022", "url": "https://normasinternet2.receita.fazenda.gov.br/#/consulta/externa/127905"},
         {"label": "Lei 10.637/2002 - Planalto", "url": "https://www.planalto.gov.br/ccivil_03/leis/2002/l10637.htm"},
         {"label": "Lei 10.833/2003 - Planalto", "url": "https://www.planalto.gov.br/ccivil_03/leis/2003/l10.833.htm"},
         {"label": "Lei 10.865/2004 - Planalto", "url": "https://www.planalto.gov.br/ccivil_03/_ato2004-2006/2004/lei/l10.865.htm"}
       ],
       "data_conferencia": "25/04/2026",
-      "status_curadoria": "Publicado v1 - fonte oficial conferida",
+      "status_curadoria": "Publicado v1 - base legal em tela",
       "links_relacionados": [
         {"label": "Beneficios federais e DIRBI", "href": "beneficios-federais.html"},
         {"label": "Lucro Real", "href": "lucro-real.html"},
@@ -289,7 +289,7 @@
         {"label": "TIPI - Decreto 11.158/2022", "url": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2022/decreto/d11158.htm"}
       ],
       "data_conferencia": "25/04/2026",
-      "status_curadoria": "Publicado v1 - fonte oficial conferida",
+      "status_curadoria": "Publicado v1 - base legal em tela",
       "links_relacionados": [
         {"label": "PIS/Cofins por NCM", "href": "pis-cofins.html"},
         {"label": "Manual Fiscal - NF-e", "href": "../manual-fiscal.html#chapter-5"}
@@ -340,7 +340,7 @@
         {"label": "Lei 9.430/1996", "url": "https://www.planalto.gov.br/ccivil_03/leis/l9430.htm"}
       ],
       "data_conferencia": "25/04/2026",
-      "status_curadoria": "Publicado v1 - fonte oficial conferida",
+      "status_curadoria": "Publicado v1 - base legal em tela",
       "links_relacionados": [
         {"label": "Lucro Real", "href": "lucro-real.html"},
         {"label": "Lucro Presumido", "href": "lucro-presumido.html"},
@@ -390,7 +390,7 @@
         {"label": "SPED - ECF", "url": "https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/sped"}
       ],
       "data_conferencia": "25/04/2026",
-      "status_curadoria": "Publicado v1 - fonte oficial conferida",
+      "status_curadoria": "Publicado v1 - base legal em tela",
       "links_relacionados": [
         {"label": "IRPJ e CSLL", "href": "irpj-csll.html"},
         {"label": "PIS/Cofins", "href": "pis-cofins.html"}
@@ -428,7 +428,7 @@
         {"label": "Lei 9.430/1996", "url": "https://www.planalto.gov.br/ccivil_03/leis/l9430.htm"}
       ],
       "data_conferencia": "25/04/2026",
-      "status_curadoria": "Publicado v1 - fonte oficial conferida",
+      "status_curadoria": "Publicado v1 - base legal em tela",
       "links_relacionados": [
         {"label": "IRPJ e CSLL", "href": "irpj-csll.html"},
         {"label": "Manual Financeiro - indicadores", "href": "../manual-financeiro.html#m10"}
@@ -467,7 +467,7 @@
         {"label": "Receita Federal - Beneficios Fiscais", "url": "https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/beneficios"}
       ],
       "data_conferencia": "25/04/2026",
-      "status_curadoria": "Publicado v1 - fonte oficial conferida",
+      "status_curadoria": "Publicado v1 - base legal em tela",
       "links_relacionados": [
         {"label": "PIS/Cofins", "href": "pis-cofins.html"},
         {"label": "IRPJ e CSLL", "href": "irpj-csll.html"}
@@ -519,7 +519,7 @@
         {"label": "Receita Federal - DCTFWeb", "url": "https://www.gov.br/receitafederal/pt-br/assuntos/orientacao-tributaria/declaracoes-e-demonstrativos/dctfweb"}
       ],
       "data_conferencia": "25/04/2026",
-      "status_curadoria": "Publicado v1 - fonte oficial conferida",
+      "status_curadoria": "Publicado v1 - base legal em tela",
       "links_relacionados": [
         {"label": "Guia DP/RH", "href": "../guia-dp-rh.html#fechamento-2026"},
         {"label": "Manual Financeiro - fechamento", "href": "../manual-financeiro.html#m8a"}
