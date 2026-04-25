@@ -1,380 +1,168 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RJC Assessoria - Base de Conhecimento 2026</title>
-    <style>
-        /* Reset e configurações básicas */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        /* Variáveis CSS para cores RJC */
-        :root {
-            --rjc-azul-principal: #1e3a8a;
-            --rjc-azul-secundario: #3b82f6;
-            --rjc-azul-claro: #60a5fa;
-            --rjc-laranja: #f97316;
-            --rjc-roxo: #7c3aed;
-            --rjc-verde: #16a34a;
-            --rjc-vermelho: #dc2626;
-            --rjc-branco: #ffffff;
-            --rjc-cinza-claro: #f8fafc;
-            --rjc-cinza-medio: #64748b;
-            --rjc-cinza-escuro: #334155;
-            --rjc-gradiente: linear-gradient(135deg, var(--rjc-azul-principal) 0%, var(--rjc-azul-secundario) 100%);
-        }
-
-        /* Tipografia */
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            color: var(--rjc-cinza-escuro);
-            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-            min-height: 100vh;
-        }
-
-        /* Container principal */
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            background: var(--rjc-branco);
-            box-shadow: 0 0 30px rgba(0,0,0,0.1);
-            border-radius: 10px;
-            overflow: hidden;
-        }
-
-        /* Cabeçalho */
-        .header {
-            background: var(--rjc-gradiente);
-            color: var(--rjc-branco);
-            padding: 3rem 2rem;
-            text-align: center;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .header::before {
-            content: '';
-            position: absolute;
-            top: -50%;
-            left: -50%;
-            width: 200%;
-            height: 200%;
-            background: repeating-linear-gradient(
-                45deg,
-                transparent,
-                transparent 10px,
-                rgba(255,255,255,0.05) 10px,
-                rgba(255,255,255,0.05) 20px
-            );
-            animation: slide 20s linear infinite;
-        }
-
-        @keyframes slide {
-            0% { transform: translateX(-50px); }
-            100% { transform: translateX(50px); }
-        }
-
-        .logo-container {
-            position: relative;
-            z-index: 2;
-            margin-bottom: 2rem;
-        }
-
-        .logo-container img {
-            max-width: 300px;
-            height: auto;
-            filter: brightness(0) invert(1);
-        }
-
-        .header h1 {
-            font-size: 3rem;
-            margin-bottom: 0.5rem;
-            position: relative;
-            z-index: 1;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
-        }
-
-        .header .subtitle {
-            font-size: 1.4rem;
-            opacity: 0.9;
-            position: relative;
-            z-index: 1;
-            font-weight: 300;
-        }
-
-        /* Conteúdo principal */
-        .content {
-            padding: 3rem 2rem;
-        }
-
-        /* Seção Sobre a RJC */
-        .about-section {
-            background: linear-gradient(135deg, var(--rjc-cinza-claro) 0%, #e2e8f0 100%);
-            padding: 3rem;
-            margin-bottom: 3rem;
-            border-radius: 15px;
-            border-left: 6px solid var(--rjc-azul-secundario);
-            box-shadow: 0 8px 25px rgba(0,0,0,0.08);
-        }
-
-        .about-section h2 {
-            color: var(--rjc-azul-principal);
-            margin-bottom: 1.5rem;
-            font-size: 2.2rem;
-            text-align: center;
-        }
-
-        .about-section .section-subtitle {
-            text-align: center;
-            font-style: italic;
-            color: var(--rjc-cinza-medio);
-            margin-bottom: 2rem;
-            font-size: 1.1rem;
-        }
-
-        .about-section p {
-            margin-bottom: 1.5rem;
-            text-align: justify;
-            font-size: 1.05rem;
-            line-height: 1.7;
-        }
-
-        .content-block {
-            background: rgba(255,255,255,0.8);
-            padding: 2rem;
-            border-radius: 10px;
-            border-left: 4px solid var(--rjc-laranja);
-            margin-top: 2rem;
-        }
-
-        .block-title {
-            font-size: 1.3rem;
-            font-weight: 600;
-            color: var(--rjc-azul-principal);
-            margin-bottom: 1rem;
-        }
-
-        /* Menu de navegação dos manuais */
-        .manuals-section {
-            margin-top: 3rem;
-        }
-
-        .manuals-section h2 {
-            color: var(--rjc-azul-principal);
-            margin-bottom: 2rem;
-            font-size: 2.2rem;
-            text-align: center;
-        }
-
-        .manuals-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-            margin-top: 2rem;
-        }
-
-        .manual-card {
-            background: linear-gradient(135deg, var(--rjc-branco) 0%, var(--rjc-cinza-claro) 100%);
-            padding: 2rem;
-            border-radius: 15px;
-            border-left: 5px solid var(--rjc-azul-secundario);
-            transition: all 0.3s ease;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
-            text-decoration: none;
-            color: inherit;
-            display: block;
-        }
-
-        .manual-card:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 15px 35px rgba(0,0,0,0.15);
-            border-left-color: var(--rjc-laranja);
-        }
-
-        .manual-card h3 {
-            color: var(--rjc-azul-principal);
-            font-size: 1.4rem;
-            margin-bottom: 1rem;
-            font-weight: 600;
-        }
-
-        .manual-card p {
-            color: var(--rjc-cinza-medio);
-            font-size: 0.95rem;
-            line-height: 1.6;
-        }
-
-        .manual-card .manual-status {
-            display: inline-block;
-            background: var(--rjc-verde);
-            color: var(--rjc-branco);
-            padding: 0.3rem 0.8rem;
-            border-radius: 20px;
-            font-size: 0.8rem;
-            font-weight: 500;
-            margin-top: 1rem;
-        }
-
-        /* Footer */
-        .footer {
-            background: var(--rjc-cinza-escuro);
-            color: var(--rjc-branco);
-            text-align: center;
-            padding: 2rem;
-            margin-top: 3rem;
-        }
-
-        .footer p {
-            opacity: 0.8;
-        }
-
-        /* Responsividade */
-        @media (max-width: 768px) {
-            .header h1 {
-                font-size: 2rem;
-            }
-            
-            .header .subtitle {
-                font-size: 1.1rem;
-            }
-            
-            .content {
-                padding: 2rem 1rem;
-            }
-            
-            .about-section {
-                padding: 2rem;
-            }
-            
-            .manuals-grid {
-                grid-template-columns: 1fr;
-            }
-        }
-    </style>
-    <link rel="stylesheet" href="assets/knowledge-theme-2026.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portal RJC Tributario Aberto | RJC Assessoria</title>
+  <meta name="description" content="Legislacao tributaria brasileira organizada por Estado, tributo, regime e prova documental.">
+  <link rel="icon" href="ico.png">
+  <link rel="stylesheet" href="assets/portal-tributario.css">
+  <script defer src="assets/portal-search.js"></script>
+  <script defer src="assets/portal-tributario.js"></script>
 </head>
-<body class="knowledge-page knowledge-page--home">
-    <div class="container">
-        <!-- Cabeçalho -->
-        <header class="header">
-            <div class="logo-container">
-                <img src="logo.png" alt="RJC Assessoria - A Arte de Registrar o Patrimônio">
-            </div>
-            <h1>Base de Conhecimento RJC</h1>
-            <p class="subtitle">Tributos, operação fiscal, departamento pessoal e compliance empresarial</p>
-        </header>
-
-        <!-- Conteúdo principal -->
-        <main class="content">
-            <!-- Sobre a RJC Assessoria -->
-            <section class="about-section">
-                <h2>Sobre a RJC Assessoria</h2>
-                <p class="section-subtitle">Conhecimento aplicado para decisões tributárias, operacionais e patrimoniais</p>
-
-                <p>
-                    Esta base foi organizada para funcionar como um <strong>centro de consulta técnica e de formação aplicada</strong> da RJC. Aqui reunimos materiais de uso real para rotina fiscal, departamento pessoal, transportes, documentos eletr&ocirc;nicos e temas cr&iacute;ticos da <strong>reforma tribut&aacute;ria</strong>, sempre com foco em aplica&ccedil;&atilde;o pr&aacute;tica, lastro normativo e tomada de decis&atilde;o.
-                </p>
-
-                <p>
-                    Nosso trabalho está ancorado em operações de alta complexidade: <strong>varejo, indústria, transportadoras, construção, distribuição, saúde, eletrônicos e agronegócio</strong>. Isso nos obriga a cruzar legislação federal, legislação estadual, SPED, DF-e, eSocial, regimes especiais, benefícios fiscais e a transição para <strong>CBS, IBS e Imposto Seletivo</strong>.
-                </p>
-
-                <div class="content-block">
-                    <div class="block-title">O que está atualizado nesta edição</div>
-                    <p><strong>2026 j&aacute; est&aacute; em opera&ccedil;&atilde;o.</strong> A base foi refor&ccedil;ada para refletir a entrada da reforma do consumo nas obriga&ccedil;&otilde;es acess&oacute;rias, o novo n&iacute;vel de exig&ecirc;ncia sobre documentos fiscais eletr&ocirc;nicos, a governan&ccedil;a de cr&eacute;ditos tribut&aacute;rios e o ambiente operacional das transportadoras, com destaque para <strong>ICMS do frete, CT-e, MDF-e, CIOT, PEF, vale-ped&aacute;gio, seguros obrigat&oacute;rios, gr&atilde;os e benef&iacute;cios em Goi&aacute;s</strong>.</p>
-                </div>
-
-                <div class="content-block">
-                    <div class="block-title">Nossa Missão</div>
-                    <p><strong>"Somos a arte de registrar o patrimônio."</strong> A nossa leitura sempre parte do mesmo compromisso: traduzir norma em procedimento, procedimento em segurança e segurança em crescimento sustentável para a empresa.</p>
-                </div>
-
-                <div class="content-block important">
-                    <div class="block-title">Como esta base deve ser lida</div>
-                    <p>Este portal foi escrito para funcionar como material de consulta real e tamb&eacute;m como trilha de forma&ccedil;&atilde;o. Por isso, cada tema precisa ser lido em seis camadas: <strong>o que &eacute;</strong>, <strong>onde a leitura costuma errar</strong>, <strong>como a regra funciona</strong>, <strong>exemplo pr&aacute;tico</strong>, <strong>documento</strong> e <strong>prova</strong>.</p>
-                    <ul>
-                        <li><strong>O que &eacute;:</strong> qual instituto, rotina ou documento est&aacute; sendo tratado.</li>
-                        <li><strong>Onde a leitura costuma errar:</strong> qual atalho gera autua&ccedil;&atilde;o, glosa ou passivo.</li>
-                        <li><strong>Como funciona:</strong> como a norma chega na opera&ccedil;&atilde;o real da empresa.</li>
-                        <li><strong>Exemplo pr&aacute;tico:</strong> como aplicar a leitura em uma situa&ccedil;&atilde;o concreta.</li>
-                        <li><strong>Documento:</strong> qual XML, guia, contrato, evento ou cadastro sustenta a leitura adotada.</li>
-                        <li><strong>Prova:</strong> o que precisa ficar guardado para auditoria, fiscaliza&ccedil;&atilde;o, cr&eacute;dito ou defesa.</li>
-                    </ul>
-                </div>
-            </section>
-
-            <!-- Manuais disponíveis -->
-            <section class="manuals-section">
-                <div class="guided-reading">
-                    <span class="eyebrow">Entrada recomendada</span>
-                    <h2 id="trilha-portal">Trilha de leitura integrada</h2>
-                    <p>Comece pela opera&ccedil;&atilde;o fiscal, valide os cadastros no painel, leve o impacto para o financeiro e feche a prova em DP/RH ou transporte quando a rotina pedir evid&ecirc;ncia complementar.</p>
-                    <div class="guided-steps">
-                        <a class="guided-step" href="manual-fiscal.html#chapter-10">
-                            <span class="step-number">1</span>
-                            <span><strong>Opera&ccedil;&atilde;o e XML</strong><br>CFOP, CST, cBenef, NCM e documento fiscal.</span>
-                        </a>
-                        <a class="guided-step" href="painel-fiscal/index.html#cfop">
-                            <span class="step-number">2</span>
-                            <span><strong>Consulta fiscal</strong><br>Grade r&aacute;pida para enquadramento e reforma tribut&aacute;ria.</span>
-                        </a>
-                        <a class="guided-step" href="manual-financeiro.html#m3">
-                            <span class="step-number">3</span>
-                            <span><strong>Caixa e concilia&ccedil;&atilde;o</strong><br>Leitura financeira do que foi emitido e escriturado.</span>
-                        </a>
-                        <a class="guided-step" href="guia-dp-rh.html#fechamento-2026">
-                            <span class="step-number">4</span>
-                            <span><strong>Fechamento e prova</strong><br>Calend&aacute;rio, eventos, obriga&ccedil;&otilde;es e evid&ecirc;ncias.</span>
-                        </a>
-                    </div>
-                </div>
-
-                <h2>Manuais e Painel Disponíveis</h2>
-
-                <div class="manuals-grid">
-                    <a href="manual-fiscal.html" class="manual-card">
-                        <h3>Manual de Documentos Fiscais Eletrônicos</h3>
-                        <p>Base completa de <strong>NF-e, NFC-e, CT-e, CT-e OS, MDF-e, NFS-e, NFCom e SPED</strong>, com atualiza&ccedil;&atilde;o para 2026 sobre reforma tribut&aacute;ria, leiautes de <strong>CBS/IBS/IS</strong>, QR-Code v3, governan&ccedil;a de XML e impactos pr&aacute;ticos por documento, sempre explicando regra, erro comum, exemplo e prova.</p>
-                        <span class="manual-status">Atualizado para 2026</span>
-                    </a>
-
-                    <a href="manual-financeiro.html" class="manual-card">
-                        <h3>Manual de Gestão Financeira Empresarial</h3>
-                        <p>Manual de tesouraria, controladoria, fluxo de caixa, indicadores, rotinas de fechamento e playbooks de decis&atilde;o para apoiar crescimento com disciplina financeira, conectando processo, documento, evid&ecirc;ncia e leitura gerencial.</p>
-                        <span class="manual-status">Disponível</span>
-                    </a>
-
-                    <a href="guia-dp-rh.html" class="manual-card">
-                        <h3>Guia de Departamento Pessoal e RH</h3>
-                        <p>Rotina de <strong>admiss&atilde;o, fechamento mensal, eSocial, FGTS Digital, DCTFWeb, EFD-Reinf, SST, rescis&otilde;es e governan&ccedil;a documental</strong>, com calend&aacute;rio, pontos de risco e prova documental atualizados para 2026.</p>
-                        <span class="manual-status">Atualizado para 2026</span>
-                    </a>
-
-                    <a href="compliance-transportadoras.html" class="manual-card">
-                        <h3>Compliance Fiscal em Transporte Rodoviário</h3>
-                        <p>Material aprofundado sobre <strong>ICMS do frete, CT-e, MDF-e, RNTRC, CIOT, PEF, vale-ped&aacute;gio, seguros obrigat&oacute;rios, subcontrata&ccedil;&atilde;o, gr&atilde;os, benef&iacute;cios em Goi&aacute;s e transi&ccedil;&atilde;o da reforma tribut&aacute;ria</strong>, com foco em contrato, documento, cr&eacute;dito e prova.</p>
-                        <span class="manual-status">Atualizado para 2026</span>
-                    </a>
-
-                    <a href="painel-fiscal/index.html" class="manual-card">
-                        <h3>Painel Fiscal de Consulta Tributária</h3>
-                        <p>Consulta operacional de <strong>CFOP, CST/CSOSN, al&iacute;quotas de ICMS, NCM, PIS/Cofins, cBenef Goi&aacute;s e reforma tribut&aacute;ria</strong>, conectada aos manuais para sair da triagem e chegar na prova documental.</p>
-                        <span class="manual-status">Consulta interativa</span>
-                    </a>
-                </div>
-            </section>
-        </main>
-
-        <!-- Rodapé -->
-        <footer class="footer">
-            <p>&copy; 2026 RJC Assessoria. Todos os direitos reservados.</p>
-            <p>A Arte de Registrar o Patrimônio</p>
-        </footer>
+<body>
+  <header class="site-header">
+    <div class="topbar">
+      <a class="brand" href="index.html" aria-label="Portal RJC Tributario Aberto">
+        <img src="logo.png" alt="RJC Assessoria">
+        <span>
+          <strong>RJC Tributario Aberto</strong>
+          <small>A Arte de Registrar o Patrimonio</small>
+        </span>
+      </a>
+      <nav class="primary-nav" aria-label="Navegacao principal">
+        <a href="index.html" class="active">Inicio</a><a href="estados/index.html" class="">Estados</a><a href="confaz/index.html" class="">CONFAZ</a><a href="federal/index.html" class="">Federal</a><a href="folha-clt/index.html" class="">Folha e CLT</a><a href="biblioteca/index.html" class="">Biblioteca</a>
+      </nav>
     </div>
+    <div class="searchbar" role="search">
+      <label for="globalSearch">Buscar no portal</label>
+      <input id="globalSearch" type="search" placeholder="Ex.: cBenef Goias, DIRBI, Convênio ICMS, Lucro Real">
+      <div id="searchResults" class="search-results" aria-live="polite"></div>
+    </div>
+  </header>
+  <main>
+
+
+<section class="hero-panel">
+  <div>
+    <span class="eyebrow">Portal publico de conhecimento</span>
+    <h1>Portal RJC Tributario Aberto</h1>
+    <p>Legislacao tributaria brasileira organizada por Estado, tributo, regime e prova documental.</p>
+  </div>
+  <aside class="hero-proof">
+    <strong>Regra editorial</strong>
+    <p>Lei primeiro. Comentario depois. Cada guia profundo exibe base legal, fonte oficial e data de conferencia.</p>
+  </aside>
+</section>
+
+<section class="method-strip">
+  <div><strong>Fonte oficial primeiro</strong><span>Planalto, Receita Federal, CONFAZ, SPED e portais estaduais.</span></div>
+  <div><strong>BD_LEGISLACAO como acervo</strong><span>Usado para localizar temas, nunca para publicar sem reconferencia.</span></div>
+  <div><strong>Prova documental</strong><span>Cada tema aponta documento, memoria de calculo e risco comum.</span></div>
+</section>
+<section class="section-wrap">
+  <div class="section-heading">
+    <span class="eyebrow">Comece por aqui</span>
+    <h2>Portal, painel e fonte de conhecimento tributario</h2>
+    <p>Uma estrutura aberta para ensinar a regra, mostrar a lei, apontar o documento fiscal e conectar a operacao ao fechamento.</p>
+  </div>
+  <div class="card-grid ">
+<a class="portal-card featured searchable-card" href="estados/index.html" data-search="ICMS por Estado beneficios fiscais Goias">
+  <span class="card-kicker">Estados</span>
+  <h3>ICMS por Estado</h3>
+  <p>Arquitetura nacional por UF, com Goias publicado em profundidade e demais Estados prontos para curadoria.</p>
+  <small>27 UFs estruturadas</small>
+</a>
+
+<a class="portal-card  searchable-card" href="estados/goias.html"
+   data-search="Goias: ICMS, beneficios fiscais e prova documental ICMS estadual Leitura operacional do ICMS em Goias: RCTE, Anexo IX, cBenef, programas de incentivo, condicionantes, documento fiscal e prova. LC 87/1996, Lei GO 11.651/1991, Decreto GO 4.852/1997 - RCTE">
+  <span class="card-kicker">GO · guia estadual profundo</span>
+  <h3>Goias: ICMS, beneficios fiscais e prova documental</h3>
+  <p>Leitura operacional do ICMS em Goias: RCTE, Anexo IX, cBenef, programas de incentivo, condicionantes, documento fiscal e prova.</p>
+  <small>Publicado v1 - fonte oficial conferida</small>
+</a>
+
+<a class="portal-card  searchable-card" href="confaz/index.html"
+   data-search="CONFAZ: atos nacionais que sustentam ICMS e beneficios CONFAZ Como Convênios ICMS, Ajustes SINIEF, Protocolos ICMS, LC 24/1975, LC 160/2017 e Convênio ICMS 190/2017 entram na leitura de beneficios estaduais. LC 24/1975, LC 160/2017, Convênio ICMS 190/2017">
+  <span class="card-kicker">Nacional · guia institucional</span>
+  <h3>CONFAZ: atos nacionais que sustentam ICMS e beneficios</h3>
+  <p>Como Convênios ICMS, Ajustes SINIEF, Protocolos ICMS, LC 24/1975, LC 160/2017 e Convênio ICMS 190/2017 entram na leitura de beneficios estaduais.</p>
+  <small>Publicado v1 - fonte oficial conferida</small>
+</a>
+
+<a class="portal-card searchable-card" href="federal/index.html" data-search="PIS Cofins IPI IRPJ CSLL Lucro Real Lucro Presumido Federal">
+  <span class="card-kicker">Federal</span>
+  <h3>Tributos federais</h3>
+  <p>PIS, Cofins, IPI, IRPJ, CSLL, regimes, beneficios federais e DIRBI em leitura guiada.</p>
+  <small>Guias profundos v1</small>
+</a>
+
+<a class="portal-card  searchable-card" href="folha-clt/index.html"
+   data-search="Folha, CLT, previdencia e obrigacoes trabalhistas Folha e CLT Base de folha com CLT, custeio previdenciario, eSocial, FGTS Digital, DCTFWeb, EFD-Reinf e prova documental. Decreto-Lei 5.452/1943 - CLT, Lei 8.212/1991, Lei 8.213/1991">
+  <span class="card-kicker">Federal · guia trabalhista-tributario</span>
+  <h3>Folha, CLT, previdencia e obrigacoes trabalhistas</h3>
+  <p>Base de folha com CLT, custeio previdenciario, eSocial, FGTS Digital, DCTFWeb, EFD-Reinf e prova documental.</p>
+  <small>Publicado v1 - fonte oficial conferida</small>
+</a>
+
+<a class="portal-card searchable-card" href="biblioteca/index.html" data-search="manual fiscal financeiro DP RH transportadoras painel fiscal biblioteca">
+  <span class="card-kicker">Biblioteca viva</span>
+  <h3>Manuais e painel</h3>
+  <p>Os materiais existentes continuam funcionando e entram como biblioteca avancada do portal.</p>
+  <small>URLs preservadas</small>
+</a>
+</div>
+</section>
+<section class="guided-reading">
+  <span class="eyebrow">Trilha sugerida</span>
+  <h2>Da lei ao documento</h2>
+  <div class="timeline">
+    <a href="estados/goias.html"><strong>1. Estado</strong><span>Identifique ICMS, beneficio, condicionantes e cBenef.</span></a>
+    <a href="confaz/index.html"><strong>2. CONFAZ</strong><span>Confira o lastro nacional de convenio, ajuste ou protocolo.</span></a>
+    <a href="federal/pis-cofins.html"><strong>3. Federal</strong><span>Segregue PIS/Cofins, IPI, IRPJ, CSLL e regimes.</span></a>
+    <a href="biblioteca/index.html"><strong>4. Prova</strong><span>Use manuais, painel fiscal e rotinas de fechamento.</span></a>
+  </div>
+</section>
+<section class="section-wrap">
+  <div class="section-heading">
+    <span class="eyebrow">Federal v1</span>
+    <h2>Guias profundos publicados</h2>
+  </div>
+  <div class="card-grid ">
+<a class="portal-card  searchable-card" href="federal/pis-cofins.html"
+   data-search="PIS e Cofins: cumulativo, nao cumulativo, monofasico e beneficios PIS/Cofins Base legal, regimes, creditos, aliquota zero, suspensoes, monofasicos e prova para PIS/Pasep e Cofins. Lei 9.718/1998, Lei 10.637/2002, Lei 10.833/2003">
+  <span class="card-kicker">Federal · guia federal profundo</span>
+  <h3>PIS e Cofins: cumulativo, nao cumulativo, monofasico e beneficios</h3>
+  <p>Base legal, regimes, creditos, aliquota zero, suspensoes, monofasicos e prova para PIS/Pasep e Cofins.</p>
+  <small>Publicado v1 - fonte oficial conferida</small>
+</a>
+
+<a class="portal-card  searchable-card" href="federal/ipi.html"
+   data-search="IPI: industrializacao, TIPI, suspensoes e prova IPI Leitura pratica do IPI com RIPI, TIPI, industrializacao, estabelecimento equiparado, suspensoes, ZFM e reflexo documental. Decreto 7.212/2010 - RIPI, TIPI vigente, Lei 4.502/1964">
+  <span class="card-kicker">Federal · guia federal profundo</span>
+  <h3>IPI: industrializacao, TIPI, suspensoes e prova</h3>
+  <p>Leitura pratica do IPI com RIPI, TIPI, industrializacao, estabelecimento equiparado, suspensoes, ZFM e reflexo documental.</p>
+  <small>Publicado v1 - fonte oficial conferida</small>
+</a>
+
+<a class="portal-card  searchable-card" href="federal/irpj-csll.html"
+   data-search="IRPJ e CSLL: base, adicoes, exclusoes e beneficios IRPJ/CSLL Leitura integrada de IRPJ e CSLL, com RIR, leis de base, subvenções, JCP, prejuizo fiscal, base negativa e controles. Decreto 9.580/2018 - RIR, Lei 7.689/1988, Lei 9.249/1995">
+  <span class="card-kicker">Federal · guia federal profundo</span>
+  <h3>IRPJ e CSLL: base, adicoes, exclusoes e beneficios</h3>
+  <p>Leitura integrada de IRPJ e CSLL, com RIR, leis de base, subvenções, JCP, prejuizo fiscal, base negativa e controles.</p>
+  <small>Publicado v1 - fonte oficial conferida</small>
+</a>
+
+<a class="portal-card  searchable-card" href="federal/lucro-real.html"
+   data-search="Lucro Real: apuracao, creditos, controles e fechamento Regime tributario Como estruturar Lucro Real com ECD, ECF, Lalur/Lacs, PIS/Cofins nao cumulativo, adicoes, exclusoes e prova. RIR/2018, Lei 9.430/1996, Lei 12.973/2014">
+  <span class="card-kicker">Federal · guia de regime</span>
+  <h3>Lucro Real: apuracao, creditos, controles e fechamento</h3>
+  <p>Como estruturar Lucro Real com ECD, ECF, Lalur/Lacs, PIS/Cofins nao cumulativo, adicoes, exclusoes e prova.</p>
+  <small>Publicado v1 - fonte oficial conferida</small>
+</a>
+</div>
+</section>
+
+  </main>
+  <footer class="site-footer">
+    <div>
+      <strong>Portal RJC Tributario Aberto</strong>
+      <p>Conteudo educativo pautado em legislacao oficial. Nao substitui parecer individual para operacao concreta.</p>
+    </div>
+    <div>
+      <span>Conferencia editorial: 25/04/2026</span>
+      <a href="biblioteca/index.html#metodo">Metodo e fontes</a>
+    </div>
+  </footer>
 </body>
 </html>

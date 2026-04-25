@@ -1,0 +1,590 @@
+{
+  "site": {
+    "title": "Portal RJC Tributario Aberto",
+    "subtitle": "Legislacao tributaria brasileira organizada por Estado, tributo, regime e prova documental.",
+    "verified_on": "25/04/2026",
+    "repository_state": "v1 arquitetura nacional, Goias profundo e federal profundo",
+    "source_policy": "O BD_LEGISLACAO e usado como acervo de partida. A publicacao so ocorre quando a regra esta amarrada a fonte oficial vigente."
+  },
+  "states": [
+    {"uf": "AC", "name": "Acre", "status": "Estrutura pronta para curadoria", "coverage": "Base estadual compilada em 11/04/2026", "priority": "v2"},
+    {"uf": "AL", "name": "Alagoas", "status": "Estrutura pronta para curadoria", "coverage": "Base estadual compilada em 11/04/2026", "priority": "v2"},
+    {"uf": "AP", "name": "Amapa", "status": "Estrutura pronta para curadoria", "coverage": "Base estadual compilada em 11/04/2026", "priority": "v2"},
+    {"uf": "AM", "name": "Amazonas", "status": "Estrutura pronta para curadoria", "coverage": "Base estadual compilada em 11/04/2026", "priority": "v2"},
+    {"uf": "BA", "name": "Bahia", "status": "Estrutura pronta para curadoria", "coverage": "Base estadual compilada em 11/04/2026", "priority": "v2"},
+    {"uf": "CE", "name": "Ceara", "status": "Estrutura pronta para curadoria", "coverage": "Base estadual compilada em 11/04/2026", "priority": "v2"},
+    {"uf": "DF", "name": "Distrito Federal", "status": "Estrutura pronta para curadoria", "coverage": "Base estadual compilada em 11/04/2026", "priority": "v2"},
+    {"uf": "ES", "name": "Espirito Santo", "status": "Estrutura pronta para curadoria", "coverage": "Base estadual compilada em 11/04/2026", "priority": "v2"},
+    {"uf": "GO", "name": "Goias", "status": "Publicado v1 com curadoria oficial", "coverage": "Conteudo profundo publicado: ICMS, beneficios, cBenef, RCTE e prova", "priority": "v1"},
+    {"uf": "MA", "name": "Maranhao", "status": "Estrutura pronta para curadoria", "coverage": "Base estadual compilada em 11/04/2026", "priority": "v2"},
+    {"uf": "MT", "name": "Mato Grosso", "status": "Estrutura pronta para curadoria", "coverage": "Base estadual compilada em 11/04/2026", "priority": "v2"},
+    {"uf": "MS", "name": "Mato Grosso do Sul", "status": "Aguardando base estadual util", "coverage": "Indice local aponta cobertura vazia", "priority": "v2"},
+    {"uf": "MG", "name": "Minas Gerais", "status": "Estrutura pronta para curadoria", "coverage": "Base estadual compilada em 11/04/2026", "priority": "v2"},
+    {"uf": "PA", "name": "Para", "status": "Estrutura pronta para curadoria", "coverage": "Base estadual compilada em 11/04/2026", "priority": "v2"},
+    {"uf": "PB", "name": "Paraiba", "status": "Estrutura pronta para curadoria", "coverage": "Base estadual compilada em 11/04/2026", "priority": "v2"},
+    {"uf": "PR", "name": "Parana", "status": "Estrutura pronta para curadoria", "coverage": "Base estadual compilada em 11/04/2026", "priority": "v2"},
+    {"uf": "PE", "name": "Pernambuco", "status": "Estrutura pronta para curadoria", "coverage": "Base estadual compilada em 11/04/2026", "priority": "v2"},
+    {"uf": "PI", "name": "Piaui", "status": "Estrutura pronta para curadoria", "coverage": "Base estadual compilada em 11/04/2026", "priority": "v2"},
+    {"uf": "RJ", "name": "Rio de Janeiro", "status": "Estrutura pronta para curadoria", "coverage": "Base estadual compilada em 11/04/2026", "priority": "v2"},
+    {"uf": "RN", "name": "Rio Grande do Norte", "status": "Estrutura pronta para curadoria", "coverage": "Base estadual compilada em 11/04/2026", "priority": "v2"},
+    {"uf": "RS", "name": "Rio Grande do Sul", "status": "Estrutura pronta para curadoria", "coverage": "Base estadual compilada em 11/04/2026", "priority": "v2"},
+    {"uf": "RO", "name": "Rondonia", "status": "Estrutura pronta para curadoria", "coverage": "Base estadual compilada em 11/04/2026", "priority": "v2"},
+    {"uf": "RR", "name": "Roraima", "status": "Estrutura pronta para curadoria", "coverage": "Base estadual compilada em 11/04/2026", "priority": "v2"},
+    {"uf": "SC", "name": "Santa Catarina", "status": "Estrutura pronta para curadoria", "coverage": "Base estadual compilada em 11/04/2026", "priority": "v2"},
+    {"uf": "SP", "name": "Sao Paulo", "status": "Estrutura pronta para curadoria", "coverage": "Base estadual compilada em 11/04/2026", "priority": "v2"},
+    {"uf": "SE", "name": "Sergipe", "status": "Estrutura pronta para curadoria", "coverage": "Base estadual compilada em 11/04/2026", "priority": "v2"},
+    {"uf": "TO", "name": "Tocantins", "status": "Estrutura pronta para curadoria", "coverage": "Base estadual compilada em 11/04/2026", "priority": "v2"}
+  ],
+  "topics": [
+    {
+      "id": "goias-icms-beneficios",
+      "path": "estados/goias.html",
+      "titulo": "Goias: ICMS, beneficios fiscais e prova documental",
+      "jurisdicao": "GO",
+      "tema": "ICMS estadual",
+      "tipo": "guia estadual profundo",
+      "resumo": "Leitura operacional do ICMS em Goias: RCTE, Anexo IX, cBenef, programas de incentivo, condicionantes, documento fiscal e prova.",
+      "base_legal": ["LC 87/1996", "Lei GO 11.651/1991", "Decreto GO 4.852/1997 - RCTE", "RCTE Anexo IX", "IN 1.518/2022-GSE"],
+      "fonte_oficial": [
+        {"label": "RCTE Goias", "url": "https://appasp.economia.go.gov.br/legislacao/arquivos/RCTE/RCTE.htm"},
+        {"label": "Anexo IX do RCTE - Beneficios Fiscais", "url": "https://appasp.economia.go.gov.br/legislacao/arquivos/Rcte/Anexos/ANEXO_09_Beneficio_Fiscal.htm"},
+        {"label": "IN 1.518/2022-GSE - cBenef Goias", "url": "https://appasp.economia.go.gov.br/Legislacao/arquivos/Secretario/IN/IN_1518_2022.htm"},
+        {"label": "Secretaria da Economia de Goias - Legislacao Tributaria", "url": "https://goias.gov.br/economia/categoria/institucional/legislacao/tributaria/"}
+      ],
+      "data_conferencia": "25/04/2026",
+      "status_curadoria": "Publicado v1 - fonte oficial conferida",
+      "links_relacionados": [
+        {"label": "Painel Fiscal - cBenef Goias", "href": "../painel-fiscal/index.html#cbenef"},
+        {"label": "Manual Fiscal - CFOP/CST/cBenef", "href": "../manual-fiscal.html#chapter-10"},
+        {"label": "CONFAZ e beneficios de ICMS", "href": "../confaz/index.html"}
+      ],
+      "sections": [
+        {
+          "heading": "Como ler Goias sem automatismo",
+          "body": [
+            "A regra estadual precisa ser lida em camadas: primeiro a incidencia do ICMS, depois a modalidade do tratamento tributario, depois o documento fiscal e por fim a prova.",
+            "O Anexo IX do RCTE concentra beneficios, mas ele nao transforma todo tratamento favorecido em incentivo livre. Isencao, reducao de base, credito outorgado, diferimento, nao incidencia, substituicao tributaria e regime monofasico possuem efeitos e provas diferentes."
+          ]
+        },
+        {
+          "heading": "Caminho minimo antes de aplicar beneficio",
+          "body": [
+            "Confirme a mercadoria, NCM, natureza da operacao, destinatario, regime do contribuinte, dispositivo legal, vigencia, eventual TARE, condicionantes como regularidade fiscal ou PROTEGE quando exigido, CST/CSOSN, cBenef e escrituracao.",
+            "Se a empresa nao consegue provar o dispositivo e a condicao de fruicao, o beneficio deve ser tratado como hipotese pendente, nao como regra pronta de ERP."
+          ]
+        }
+      ],
+      "matriz": [
+        {
+          "titulo": "Beneficios fiscais do Anexo IX do RCTE",
+          "o_que_e": "Conjunto de hipoteses de isencao, reducao de base, credito outorgado e outros tratamentos fiscais previstos no regulamento goiano.",
+          "base_legal": "Decreto GO 4.852/1997, RCTE, Anexo IX; Lei GO 11.651/1991; convenios ou leis especificas quando citados pelo dispositivo.",
+          "quem_pode_usar": "Contribuinte cuja operacao, produto, destinatario e periodo estejam exatamente dentro da hipotese legal.",
+          "condicoes": "Validar vigencia, adimplencia quando exigida, DTE, ausencia de restricao, TARE quando aplicavel e eventual recolhimento a fundo estadual.",
+          "vedacoes": "Nao aplicar por semelhanca comercial; nao usar beneficio vencido; nao misturar reducao de base com credito outorgado sem permissao expressa.",
+          "como_aparece_no_documento": "NF-e/NFC-e com CST/CSOSN coerente, cBenef quando exigido, informacoes complementares e EFD com ajustes correspondentes.",
+          "prova_necessaria": "XML, cadastro do produto, NCM, parecer interno, norma vigente, comprovante de condicoes, TARE se houver e memoria de calculo.",
+          "risco_comum": "ERP preencher cBenef automaticamente sem prova da hipotese legal.",
+          "fonte_oficial": "RCTE Anexo IX - Secretaria da Economia de Goias"
+        },
+        {
+          "titulo": "cBenef Goias na NF-e e NFC-e",
+          "o_que_e": "Codigo de Beneficio Fiscal da UF que documenta a hipotese legal aplicada na emissao fiscal.",
+          "base_legal": "IN 1.518/2022-GSE e dispositivos do RCTE que exigem o campo Codigo de Beneficio na UF.",
+          "quem_pode_usar": "Contribuintes sujeitos ao preenchimento do codigo quando houver beneficio fiscal, observadas as excecoes da norma.",
+          "condicoes": "A chave e a coerencia: codigo, CST, produto, NCM, operacao e dispositivo legal precisam contar a mesma historia.",
+          "vedacoes": "Nao usar cBenef para maquiar operacao tributada; nao repetir codigo de outro produto sem conferir o texto legal.",
+          "como_aparece_no_documento": "Campo cBenef da NF-e/NFC-e, informacoes complementares e reflexo na EFD.",
+          "prova_necessaria": "Tabela oficial vigente, XML emitido, memoria de enquadramento e norma estadual que sustenta o codigo.",
+          "risco_comum": "Codigo valido na tabela, mas invalido para aquela operacao concreta.",
+          "fonte_oficial": "IN 1.518/2022-GSE - Secretaria da Economia de Goias"
+        },
+        {
+          "titulo": "Reducao de base de calculo",
+          "o_que_e": "Tecnica que reduz a base tributavel para chegar a carga efetiva menor, sem transformar a operacao em isenta.",
+          "base_legal": "Hipoteses especificas do Anexo IX do RCTE, especialmente os dispositivos de reducao de base aplicaveis a cada produto ou operacao.",
+          "quem_pode_usar": "Quem cumprir o recorte de produto, NCM, operacao, destinatario, vigencia e eventuais condicionantes.",
+          "condicoes": "Calcular a carga final, manter memoria, conferir se ha manutencao ou estorno de credito e registrar corretamente na EFD.",
+          "vedacoes": "Nao confundir reducao de base com aliquota reduzida; nao aproveitar credito integral se a norma exigir estorno.",
+          "como_aparece_no_documento": "CST 20 ou outro CST coerente, base reduzida, percentual de reducao e cBenef quando exigido.",
+          "prova_necessaria": "Planilha de calculo, XML, norma, cadastro fiscal do item e validacao do periodo.",
+          "risco_comum": "Aplicar carga efetiva de memoria antiga sem reler o Anexo IX vigente.",
+          "fonte_oficial": "RCTE Anexo IX - Beneficios Fiscais"
+        },
+        {
+          "titulo": "Credito outorgado e programas goianos",
+          "o_que_e": "Credito presumido/outorgado concedido por norma, muitas vezes condicionado a atividade, investimento, meta ou regime especial.",
+          "base_legal": "RCTE Anexo IX, leis estaduais especificas e atos concessivos como TARE quando exigidos.",
+          "quem_pode_usar": "Contribuinte enquadrado no programa ou hipotese legal, com ato concessivo quando necessario.",
+          "condicoes": "Aderencia ao programa, calculo correto, escrituracao, cumprimento de metas/condicoes e guarda do ato concessivo.",
+          "vedacoes": "Nao usar credito outorgado como credito livre; nao acumular com outros beneficios se a norma vedar.",
+          "como_aparece_no_documento": "Ajustes de apuracao, EFD, controles internos e demonstrativos do programa.",
+          "prova_necessaria": "TARE, ato concessivo, memoria de apuracao, EFD, demonstrativos e comprovantes de cumprimento das condicoes.",
+          "risco_comum": "Tratar programa de incentivo como beneficio automatico por CNAE.",
+          "fonte_oficial": "RCTE Anexo IX e legislacao tributaria estadual"
+        }
+      ]
+    },
+    {
+      "id": "confaz-atos-beneficios",
+      "path": "confaz/index.html",
+      "titulo": "CONFAZ: atos nacionais que sustentam ICMS e beneficios",
+      "jurisdicao": "Nacional",
+      "tema": "CONFAZ",
+      "tipo": "guia institucional",
+      "resumo": "Como Convênios ICMS, Ajustes SINIEF, Protocolos ICMS, LC 24/1975, LC 160/2017 e Convênio ICMS 190/2017 entram na leitura de beneficios estaduais.",
+      "base_legal": ["LC 24/1975", "LC 160/2017", "Convênio ICMS 190/2017", "Convênios ICMS", "Ajustes SINIEF", "Protocolos ICMS"],
+      "fonte_oficial": [
+        {"label": "CONFAZ - Convênios ICMS", "url": "https://www.confaz.fazenda.gov.br/legislacao/convenios"},
+        {"label": "CONFAZ - Ajustes SINIEF", "url": "https://www.confaz.fazenda.gov.br/legislacao/ajustes"},
+        {"label": "CONFAZ - Protocolos ICMS", "url": "https://www.confaz.fazenda.gov.br/legislacao/protocolos"},
+        {"label": "Convênio ICMS 190/2017", "url": "https://www.confaz.fazenda.gov.br/legislacao/convenios/2017/CV190_17"},
+        {"label": "LC 24/1975 - Planalto", "url": "https://www.planalto.gov.br/ccivil_03/leis/LCP/Lcp24.htm"},
+        {"label": "LC 160/2017 - Planalto", "url": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp160.htm"}
+      ],
+      "data_conferencia": "25/04/2026",
+      "status_curadoria": "Publicado v1 - fonte oficial conferida",
+      "links_relacionados": [
+        {"label": "Goias: beneficios fiscais", "href": "../estados/goias.html"},
+        {"label": "Manual Fiscal - DF-e e SPED", "href": "../manual-fiscal.html#chapter-11"},
+        {"label": "Painel Fiscal - Reforma", "href": "../painel-fiscal/index.html#reforma"}
+      ],
+      "sections": [
+        {
+          "heading": "O que cada ato resolve",
+          "body": [
+            "Convênio ICMS e o ato classico para autorizar, prorrogar, revogar ou disciplinar beneficios fiscais de ICMS entre Estados e Distrito Federal.",
+            "Ajuste SINIEF costuma disciplinar documento fiscal, escrituracao, leiaute, obrigacao acessoria e procedimentos comuns. Protocolo ICMS tende a vincular UFs especificas em substituicao tributaria, intercambio de informacoes ou procedimentos operacionais."
+          ]
+        },
+        {
+          "heading": "Por que a LC 160/2017 importa",
+          "body": [
+            "A LC 160/2017 e o Convênio ICMS 190/2017 criaram o caminho de remissao, reinstituicao e transparencia de beneficios de ICMS concedidos em desacordo com o modelo da LC 24/1975.",
+            "Na pratica, beneficio estadual precisa ser lido em duas prateleiras: a norma estadual que concede e o lastro nacional que autoriza, convalida, reinstitui ou limita."
+          ]
+        }
+      ],
+      "matriz": [
+        {
+          "titulo": "Convênio ICMS",
+          "o_que_e": "Ato celebrado no ambito do CONFAZ para tratar de beneficios, regimes e temas nacionais de ICMS.",
+          "base_legal": "LC 24/1975, LC 160/2017 quando aplicavel, e o proprio convênio publicado pelo CONFAZ.",
+          "quem_pode_usar": "Estados, Distrito Federal e contribuintes alcançados depois da internalizacao pela legislacao estadual.",
+          "condicoes": "Verificar ratificacao, vigencia, unidades signatarias, internalizacao e norma estadual correspondente.",
+          "vedacoes": "Nao tratar convênio como beneficio automatico sem ato estadual quando a aplicacao depender de internalizacao.",
+          "como_aparece_no_documento": "Normalmente aparece como fundamento da norma estadual, cBenef, informacoes complementares ou ajuste de apuracao.",
+          "prova_necessaria": "Convênio, decreto/lei estadual, vigencia, XML/EFD e memoria de enquadramento.",
+          "risco_comum": "Citar apenas o convênio e esquecer a norma estadual que operacionaliza o beneficio.",
+          "fonte_oficial": "CONFAZ - Convênios ICMS"
+        },
+        {
+          "titulo": "Ajuste SINIEF",
+          "o_que_e": "Ato nacional voltado a documentos fiscais, escrituracao e procedimentos do Sistema Nacional Integrado de Informacoes Economico-Fiscais.",
+          "base_legal": "Ajustes SINIEF publicados pelo CONFAZ e normas estaduais complementares.",
+          "quem_pode_usar": "Contribuintes sujeitos ao documento ou obrigacao acessoria disciplinada.",
+          "condicoes": "Conferir leiaute, obrigatoriedade, prazo, evento fiscal e reflexo no SPED.",
+          "vedacoes": "Nao usar ajuste procedimental como se fosse beneficio material de ICMS.",
+          "como_aparece_no_documento": "Leiaute de XML, evento, registro de EFD, campo obrigatorio ou procedimento de emissao.",
+          "prova_necessaria": "Arquivo XML, protocolo de autorizacao, EFD, recibos e norma aplicavel.",
+          "risco_comum": "Cumprir o imposto e falhar no documento, criando autuacao por obrigacao acessoria.",
+          "fonte_oficial": "CONFAZ - Ajustes SINIEF"
+        },
+        {
+          "titulo": "Convênio ICMS 190/2017",
+          "o_que_e": "Ato de remissao, reinstituicao e transparencia de beneficios de ICMS, nos termos da LC 160/2017.",
+          "base_legal": "LC 160/2017 e Convênio ICMS 190/2017.",
+          "quem_pode_usar": "UFs e contribuintes vinculados aos beneficios reinstituidos ou tratados no regime de convalidacao.",
+          "condicoes": "Checar deposito, registro, publicacao, reinstituicao, prazo de fruicao e eventual adesao regional.",
+          "vedacoes": "Nao presumir que todo incentivo antigo esta regular; e preciso conferir a trilha de reinstituicao.",
+          "como_aparece_no_documento": "Como lastro nacional de beneficios estaduais, especialmente em pareceres, defesas e governanca de incentivos.",
+          "prova_necessaria": "Ato estadual, registro/deposito, convênio, prazo e comprovacao de cumprimento das condicoes.",
+          "risco_comum": "Ignorar prazo maximo de fruicao e reducoes futuras previstas na sistematica nacional.",
+          "fonte_oficial": "CONFAZ - Convênio ICMS 190/2017"
+        }
+      ]
+    },
+    {
+      "id": "federal-pis-cofins",
+      "path": "federal/pis-cofins.html",
+      "titulo": "PIS e Cofins: cumulativo, nao cumulativo, monofasico e beneficios",
+      "jurisdicao": "Federal",
+      "tema": "PIS/Cofins",
+      "tipo": "guia federal profundo",
+      "resumo": "Base legal, regimes, creditos, aliquota zero, suspensoes, monofasicos e prova para PIS/Pasep e Cofins.",
+      "base_legal": ["Lei 9.718/1998", "Lei 10.637/2002", "Lei 10.833/2003", "Lei 10.865/2004", "IN RFB 2.121/2022"],
+      "fonte_oficial": [
+        {"label": "Receita Federal - IN RFB 2.121/2022", "url": "https://www.gov.br/receitafederal/pt-br/assuntos/noticias/2022/dezembro/receita-federal-atualiza-legislacao-sobre-pis-pasep-e-cofins"},
+        {"label": "Lei 10.637/2002 - Planalto", "url": "https://www.planalto.gov.br/ccivil_03/leis/2002/l10637.htm"},
+        {"label": "Lei 10.833/2003 - Planalto", "url": "https://www.planalto.gov.br/ccivil_03/leis/2003/l10.833.htm"},
+        {"label": "Lei 10.865/2004 - Planalto", "url": "https://www.planalto.gov.br/ccivil_03/_ato2004-2006/2004/lei/l10.865.htm"}
+      ],
+      "data_conferencia": "25/04/2026",
+      "status_curadoria": "Publicado v1 - fonte oficial conferida",
+      "links_relacionados": [
+        {"label": "Beneficios federais e DIRBI", "href": "beneficios-federais.html"},
+        {"label": "Lucro Real", "href": "lucro-real.html"},
+        {"label": "Painel Fiscal - NCM x PIS/Cofins", "href": "../painel-fiscal/index.html#ncm"}
+      ],
+      "sections": [
+        {
+          "heading": "O erro central",
+          "body": [
+            "PIS e Cofins nao devem ser classificados apenas por NCM. A leitura correta combina regime da pessoa juridica, natureza da receita, produto, etapa da cadeia, lei especifica, regra de credito e obrigacao acessoria.",
+            "Monofasico, aliquota zero, suspensao e nao incidencia produzem efeitos distintos. Misturar essas categorias distorce credito, debito, EFD-Contribuicoes e precificacao."
+          ]
+        }
+      ],
+      "matriz": [
+        {
+          "titulo": "Regime cumulativo",
+          "o_que_e": "Apuracao em que, em regra, nao ha direito amplo a creditos sobre custos, despesas e encargos.",
+          "base_legal": "Lei 9.718/1998 e regras especificas conforme receita e regime tributario.",
+          "quem_pode_usar": "Pessoas juridicas e receitas enquadradas na sistematica cumulativa, normalmente associadas ao Lucro Presumido, com excecoes legais.",
+          "condicoes": "Separar receitas sujeitas a tratamentos especiais e conferir se ha regra propria para a atividade.",
+          "vedacoes": "Nao presumir cumulatividade apenas pelo regime societario; receitas especificas podem ter tratamento proprio.",
+          "como_aparece_no_documento": "EFD-Contribuicoes, codigos de receita, CST de PIS/Cofins e documentos fiscais.",
+          "prova_necessaria": "Memoria de receita, segregacao por natureza, base legal e EFD.",
+          "risco_comum": "Aplicar aliquota padrao sobre receita que estava em regime especial.",
+          "fonte_oficial": "Receita Federal e Planalto"
+        },
+        {
+          "titulo": "Regime nao cumulativo",
+          "o_que_e": "Apuracao com debitos sobre receitas e creditos admitidos pela legislacao.",
+          "base_legal": "Lei 10.637/2002, Lei 10.833/2003 e IN RFB 2.121/2022.",
+          "quem_pode_usar": "Pessoas juridicas e receitas sujeitas ao regime nao cumulativo, com excecoes legais.",
+          "condicoes": "Validar essencialidade/relevancia, tipo de insumo, documento idoneo, vinculacao a receita tributada e vedacoes.",
+          "vedacoes": "Nao creditar despesa sem previsao ou sem vinculo com receita tributada; nao creditar sobre item monofasico quando vedado.",
+          "como_aparece_no_documento": "EFD-Contribuicoes, CST, base de credito, documentos de aquisicao e memoria de apropriacao.",
+          "prova_necessaria": "XML, contrato, comprovante de uso, memoria de credito e amarracao a atividade.",
+          "risco_comum": "Criar credito por descricao contabil generica, sem prova operacional.",
+          "fonte_oficial": "IN RFB 2.121/2022 e leis de nao cumulatividade"
+        },
+        {
+          "titulo": "Monofasico e aliquota zero",
+          "o_que_e": "Regimes que deslocam ou reduzem a tributacao em setores ou produtos especificos.",
+          "base_legal": "Leis setoriais como Lei 10.147/2000, Lei 10.485/2002, Lei 10.925/2004, Lei 13.097/2015 e IN RFB 2.121/2022.",
+          "quem_pode_usar": "Contribuinte cuja mercadoria, etapa da cadeia e operacao estejam no recorte legal.",
+          "condicoes": "Confirmar NCM, descricao real, etapa fabricante/importador/atacado/varejo e vigencia da tabela aplicavel.",
+          "vedacoes": "Nao chamar de monofasico todo produto com NCM parecida; a lei setorial manda.",
+          "como_aparece_no_documento": "CST de PIS/Cofins, NCM, descricao do item, EFD-Contribuicoes e observacoes fiscais.",
+          "prova_necessaria": "NCM validada, ficha tecnica, lei setorial, XML e memoria de enquadramento.",
+          "risco_comum": "Produto usado ou operacao fora da etapa legal recebendo tratamento de produto novo monofasico.",
+          "fonte_oficial": "Planalto e Receita Federal"
+        }
+      ]
+    },
+    {
+      "id": "federal-ipi",
+      "path": "federal/ipi.html",
+      "titulo": "IPI: industrializacao, TIPI, suspensoes e prova",
+      "jurisdicao": "Federal",
+      "tema": "IPI",
+      "tipo": "guia federal profundo",
+      "resumo": "Leitura pratica do IPI com RIPI, TIPI, industrializacao, estabelecimento equiparado, suspensoes, ZFM e reflexo documental.",
+      "base_legal": ["Decreto 7.212/2010 - RIPI", "TIPI vigente", "Lei 4.502/1964", "Lei 7.798/1989"],
+      "fonte_oficial": [
+        {"label": "RIPI - Decreto 7.212/2010", "url": "https://www.planalto.gov.br/ccivil_03/_ato2007-2010/2010/decreto/d7212.htm"},
+        {"label": "Receita Federal - Legislação", "url": "https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/legislacao"},
+        {"label": "TIPI - Decreto 11.158/2022", "url": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2022/decreto/d11158.htm"}
+      ],
+      "data_conferencia": "25/04/2026",
+      "status_curadoria": "Publicado v1 - fonte oficial conferida",
+      "links_relacionados": [
+        {"label": "PIS/Cofins por NCM", "href": "pis-cofins.html"},
+        {"label": "Manual Fiscal - NF-e", "href": "../manual-fiscal.html#chapter-5"}
+      ],
+      "sections": [
+        {"heading": "IPI comeca pela materialidade", "body": ["Antes da aliquota, confirme se houve industrializacao, quem e o estabelecimento industrial ou equiparado, qual a classificacao fiscal e se ha suspensao, imunidade, isencao ou aliquota zero aplicavel."]}
+      ],
+      "matriz": [
+        {
+          "titulo": "Classificacao e TIPI",
+          "o_que_e": "A TIPI organiza a tributacao por classificacao fiscal, mas nao substitui a analise da operacao.",
+          "base_legal": "RIPI, TIPI e normas de classificacao fiscal.",
+          "quem_pode_usar": "Contribuintes industriais, equiparados ou importadores sujeitos ao IPI.",
+          "condicoes": "NCM correta, descricao tecnica, enquadramento na TIPI e validacao de excecoes.",
+          "vedacoes": "Nao usar aliquota por produto semelhante sem confirmar NCM e excecao.",
+          "como_aparece_no_documento": "NF-e com IPI, CST, codigo de enquadramento, base, aliquota e valor quando aplicavel.",
+          "prova_necessaria": "Ficha tecnica, laudo/classificacao, TIPI vigente, XML e memoria de calculo.",
+          "risco_comum": "Tratar revenda como industrializacao ou ignorar equiparacao legal.",
+          "fonte_oficial": "RIPI e TIPI"
+        },
+        {
+          "titulo": "Suspensoes e beneficios de IPI",
+          "o_que_e": "Tratamentos que afastam ou suspendem a cobranca em operacoes especificas, como regimes especiais, exportacao e areas incentivadas.",
+          "base_legal": "RIPI, leis setoriais e atos de habilitacao quando exigidos.",
+          "quem_pode_usar": "Empresas dentro do regime, produto e destino previstos na norma.",
+          "condicoes": "Habilitacao quando exigida, destino comprovado, documento coerente e controle de cumprimento.",
+          "vedacoes": "Nao aplicar suspensao a venda comum sem condicao legal expressa.",
+          "como_aparece_no_documento": "CST de IPI, informacoes complementares, codigo de enquadramento e controles do regime.",
+          "prova_necessaria": "Ato de habilitacao, pedido, NF-e, comprovante de destino e memoria legal.",
+          "risco_comum": "Beneficio valido no papel, mas operacao sem prova de destino ou habilitacao.",
+          "fonte_oficial": "RIPI e Receita Federal"
+        }
+      ]
+    },
+    {
+      "id": "federal-irpj-csll",
+      "path": "federal/irpj-csll.html",
+      "titulo": "IRPJ e CSLL: base, adicoes, exclusoes e beneficios",
+      "jurisdicao": "Federal",
+      "tema": "IRPJ/CSLL",
+      "tipo": "guia federal profundo",
+      "resumo": "Leitura integrada de IRPJ e CSLL, com RIR, leis de base, subvenções, JCP, prejuizo fiscal, base negativa e controles.",
+      "base_legal": ["Decreto 9.580/2018 - RIR", "Lei 7.689/1988", "Lei 9.249/1995", "Lei 9.430/1996", "Lei 12.973/2014"],
+      "fonte_oficial": [
+        {"label": "RIR - Decreto 9.580/2018", "url": "https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/decreto/d9580.htm"},
+        {"label": "Lei 7.689/1988 - CSLL", "url": "https://www.planalto.gov.br/ccivil_03/leis/l7689.htm"},
+        {"label": "Lei 9.249/1995", "url": "https://www.planalto.gov.br/ccivil_03/leis/l9249.htm"},
+        {"label": "Lei 9.430/1996", "url": "https://www.planalto.gov.br/ccivil_03/leis/l9430.htm"}
+      ],
+      "data_conferencia": "25/04/2026",
+      "status_curadoria": "Publicado v1 - fonte oficial conferida",
+      "links_relacionados": [
+        {"label": "Lucro Real", "href": "lucro-real.html"},
+        {"label": "Lucro Presumido", "href": "lucro-presumido.html"},
+        {"label": "Manual Financeiro - fechamento", "href": "../manual-financeiro.html#m13"}
+      ],
+      "sections": [
+        {"heading": "IRPJ/CSLL exigem ponte entre contabilidade e fiscal", "body": ["A apuracao nao nasce em uma planilha isolada. Ela parte do resultado contabil, passa por adicoes, exclusoes, compensacoes, limites e beneficios, e precisa conversar com ECF, ECD, DCTFWeb/DCOMP e demonstrativos internos."]}
+      ],
+      "matriz": [
+        {
+          "titulo": "Base do IRPJ e da CSLL",
+          "o_que_e": "Determinacao da base tributavel conforme regime e ajustes legais.",
+          "base_legal": "RIR/2018, Lei 7.689/1988, Lei 9.249/1995, Lei 9.430/1996 e Lei 12.973/2014.",
+          "quem_pode_usar": "Todas as pessoas juridicas sujeitas a IRPJ e CSLL, conforme regime adotado.",
+          "condicoes": "Regime correto, periodo de apuracao, resultado contabil confiavel e ajustes fundamentados.",
+          "vedacoes": "Nao excluir receita ou despesa sem base legal; nao compensar acima dos limites aplicaveis.",
+          "como_aparece_no_documento": "ECF, Lalur/Lacs, ECD, DCTF, PER/DCOMP quando houver compensacao.",
+          "prova_necessaria": "Balancete, ECD, ECF, memoria de ajuste, contratos e fontes legais.",
+          "risco_comum": "Ajuste fiscal feito no final sem suporte contabil e documental.",
+          "fonte_oficial": "RIR/2018 e leis federais"
+        },
+        {
+          "titulo": "Beneficios e incentivos federais",
+          "o_que_e": "Tratamentos como reducoes, creditos, deducoes ou regimes especiais que impactam IRPJ/CSLL.",
+          "base_legal": "Lei especifica do incentivo, RIR/2018 e atos da Receita Federal.",
+          "quem_pode_usar": "Empresa habilitada ou enquadrada na hipotese legal.",
+          "condicoes": "Habilitacao, limite, prazo, atividade, investimento e demonstracao do beneficio quando exigidos.",
+          "vedacoes": "Nao tratar incentivo como reducao livre de tributo; observar DIRBI quando aplicavel.",
+          "como_aparece_no_documento": "ECF, controles de incentivo, DIRBI quando exigida e demonstrativos internos.",
+          "prova_necessaria": "Ato legal, habilitacao, calculo, ECF, DIRBI e documentacao do projeto/atividade.",
+          "risco_comum": "Beneficio usado sem controle de limite ou sem declaracao acessoria.",
+          "fonte_oficial": "Receita Federal e Planalto"
+        }
+      ]
+    },
+    {
+      "id": "federal-lucro-real",
+      "path": "federal/lucro-real.html",
+      "titulo": "Lucro Real: apuracao, creditos, controles e fechamento",
+      "jurisdicao": "Federal",
+      "tema": "Regime tributario",
+      "tipo": "guia de regime",
+      "resumo": "Como estruturar Lucro Real com ECD, ECF, Lalur/Lacs, PIS/Cofins nao cumulativo, adicoes, exclusoes e prova.",
+      "base_legal": ["RIR/2018", "Lei 9.430/1996", "Lei 12.973/2014", "IN RFB 2.121/2022"],
+      "fonte_oficial": [
+        {"label": "RIR - Decreto 9.580/2018", "url": "https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/decreto/d9580.htm"},
+        {"label": "SPED - ECF", "url": "https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/sped"}
+      ],
+      "data_conferencia": "25/04/2026",
+      "status_curadoria": "Publicado v1 - fonte oficial conferida",
+      "links_relacionados": [
+        {"label": "IRPJ e CSLL", "href": "irpj-csll.html"},
+        {"label": "PIS/Cofins", "href": "pis-cofins.html"}
+      ],
+      "sections": [
+        {"heading": "Lucro Real e regime de prova", "body": ["Lucro Real e menos uma forma de pagar imposto e mais um sistema de prova: resultado contabil, ajustes fiscais, creditos, controles auxiliares, ECF e documentacao precisam fechar entre si."]}
+      ],
+      "matriz": [
+        {
+          "titulo": "Fechamento fiscal do Lucro Real",
+          "o_que_e": "Apuracao do IRPJ/CSLL a partir do lucro liquido ajustado por adicoes, exclusoes e compensacoes.",
+          "base_legal": "RIR/2018, Lei 9.430/1996 e Lei 12.973/2014.",
+          "quem_pode_usar": "Empresas obrigadas ou optantes pelo Lucro Real.",
+          "condicoes": "ECD consistente, ECF coerente, Lalur/Lacs atualizado e documentacao dos ajustes.",
+          "vedacoes": "Nao usar ajuste extracontabil sem lastro documental.",
+          "como_aparece_no_documento": "ECD, ECF, Lalur/Lacs, DCTF/DCOMP e balancetes.",
+          "prova_necessaria": "Razao contabil, contratos, notas, memoria fiscal, demonstrativos e reconciliacoes.",
+          "risco_comum": "Base fiscal correta na planilha, mas divergente da ECF ou da contabilidade.",
+          "fonte_oficial": "RIR/2018 e SPED"
+        }
+      ]
+    },
+    {
+      "id": "federal-lucro-presumido",
+      "path": "federal/lucro-presumido.html",
+      "titulo": "Lucro Presumido: presuncao, segregacao de receita e riscos",
+      "jurisdicao": "Federal",
+      "tema": "Regime tributario",
+      "tipo": "guia de regime",
+      "resumo": "Leitura de Lucro Presumido com percentuais, atividades, receitas financeiras, PIS/Cofins cumulativo e limites.",
+      "base_legal": ["RIR/2018", "Lei 9.249/1995", "Lei 9.430/1996", "Lei 9.718/1998"],
+      "fonte_oficial": [
+        {"label": "RIR - Decreto 9.580/2018", "url": "https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/decreto/d9580.htm"},
+        {"label": "Lei 9.249/1995", "url": "https://www.planalto.gov.br/ccivil_03/leis/l9249.htm"},
+        {"label": "Lei 9.430/1996", "url": "https://www.planalto.gov.br/ccivil_03/leis/l9430.htm"}
+      ],
+      "data_conferencia": "25/04/2026",
+      "status_curadoria": "Publicado v1 - fonte oficial conferida",
+      "links_relacionados": [
+        {"label": "IRPJ e CSLL", "href": "irpj-csll.html"},
+        {"label": "Manual Financeiro - indicadores", "href": "../manual-financeiro.html#m10"}
+      ],
+      "sections": [
+        {"heading": "Presumido nao e regime sem prova", "body": ["O Lucro Presumido simplifica a base, mas exige segregacao de receitas, conferencia de atividade, limites legais, tratamento de receitas nao operacionais e obrigações acessorias coerentes."]}
+      ],
+      "matriz": [
+        {
+          "titulo": "Segregacao de receitas",
+          "o_que_e": "Separacao das receitas por atividade e tratamento fiscal para aplicar o percentual correto.",
+          "base_legal": "RIR/2018, Lei 9.249/1995 e Lei 9.430/1996.",
+          "quem_pode_usar": "Empresas optantes pelo Lucro Presumido que atendem aos limites e vedacoes legais.",
+          "condicoes": "CNAE nao basta; contrato, nota fiscal e realidade da receita definem a leitura.",
+          "vedacoes": "Nao aplicar percentual unico sobre receitas de naturezas diferentes sem conferir a regra.",
+          "como_aparece_no_documento": "Balancete, ECF, notas fiscais, demonstrativos de receita e DCTF.",
+          "prova_necessaria": "Contratos, notas, segregacao contabil e memoria de calculo.",
+          "risco_comum": "Servicos distintos tratados sob o mesmo percentual por comodidade.",
+          "fonte_oficial": "RIR/2018 e leis federais"
+        }
+      ]
+    },
+    {
+      "id": "federal-beneficios-dirbi",
+      "path": "federal/beneficios-federais.html",
+      "titulo": "Beneficios federais, regimes especiais e DIRBI",
+      "jurisdicao": "Federal",
+      "tema": "Beneficios fiscais federais",
+      "tipo": "guia federal profundo",
+      "resumo": "Mapa de beneficios federais com foco em habilitacao, limite, prova, declaracoes e governanca.",
+      "base_legal": ["LC 224/2025", "Lei 14.973/2024", "IN RFB 2.198/2024", "IN RFB 2.216/2024", "IN RFB 2.294/2025"],
+      "fonte_oficial": [
+        {"label": "Receita Federal - DIRBI", "url": "https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/perguntas-frequentes/beneficios-fiscais/beneficios-fiscais/declaracao-de-incentivos-renuncias-beneficios-e-imunidades-de-natureza-tributaria-dirbi"},
+        {"label": "Servico gov.br - Declarar DIRBI", "url": "https://www.gov.br/pt-br/servicos/declarar-incentivos-renuncias-beneficios-e-imunidades-de-natureza-tributaria"},
+        {"label": "LC 224/2025 - Planalto", "url": "https://www.planalto.gov.br/ccivil_03/leis/lcp/Lcp224.htm"},
+        {"label": "Receita Federal - Beneficios Fiscais", "url": "https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/beneficios"}
+      ],
+      "data_conferencia": "25/04/2026",
+      "status_curadoria": "Publicado v1 - fonte oficial conferida",
+      "links_relacionados": [
+        {"label": "PIS/Cofins", "href": "pis-cofins.html"},
+        {"label": "IRPJ e CSLL", "href": "irpj-csll.html"}
+      ],
+      "sections": [
+        {"heading": "Beneficio federal pede governanca mensal", "body": ["A Receita Federal passou a exigir mais transparencia sobre incentivos, renuncias, beneficios e imunidades. A leitura tecnica precisa juntar lei do beneficio, habilitacao, valor fruido, declaracao e prova de permanencia nas condicoes."]}
+      ],
+      "matriz": [
+        {
+          "titulo": "DIRBI",
+          "o_que_e": "Declaracao de Incentivos, Renuncias, Beneficios e Imunidades de Natureza Tributaria.",
+          "base_legal": "IN RFB 2.198/2024, alteracoes posteriores e Lei 14.973/2024 quando aplicavel.",
+          "quem_pode_usar": "Pessoas juridicas obrigadas a declarar beneficios listados nos atos da Receita Federal.",
+          "condicoes": "Identificar beneficio ativo, periodo, valor do credito tributario e obrigatoriedade por matriz.",
+          "vedacoes": "Nao omitir beneficio fruido; nao declarar beneficio sem codigo ativo reconhecido.",
+          "como_aparece_no_documento": "Declaracao no e-CAC/API e controles de suporte por beneficio e tributo.",
+          "prova_necessaria": "Lei do beneficio, habilitacao, memoria de calculo, declaracao transmitida e recibos.",
+          "risco_comum": "Area fiscal usar beneficio, mas controladoria nao medir renuncia para declarar.",
+          "fonte_oficial": "Receita Federal - DIRBI"
+        },
+        {
+          "titulo": "Beneficio federal habilitado",
+          "o_que_e": "Incentivo ou regime especial dependente de ato formal, condicao ou enquadramento.",
+          "base_legal": "Lei especifica do regime, atos da Receita Federal e LC 224/2025 quando aplicavel.",
+          "quem_pode_usar": "Empresas habilitadas ou enquadradas na forma da lei.",
+          "condicoes": "Manter regularidade, cumprir finalidade, observar limite financeiro e prazo de vigencia.",
+          "vedacoes": "Nao estender beneficio a produto, receita ou estabelecimento fora da habilitacao.",
+          "como_aparece_no_documento": "NF-e, EFD-Contribuicoes, ECF, PER/DCOMP, DIRBI ou controles especificos.",
+          "prova_necessaria": "Ato de habilitacao, processo, memoria de calculo, documentos fiscais e declaracoes.",
+          "risco_comum": "Beneficio usado apos perda de condicao ou fim de prazo.",
+          "fonte_oficial": "Receita Federal e Planalto"
+        }
+      ]
+    },
+    {
+      "id": "folha-clt-previdencia",
+      "path": "folha-clt/index.html",
+      "titulo": "Folha, CLT, previdencia e obrigacoes trabalhistas",
+      "jurisdicao": "Federal",
+      "tema": "Folha e CLT",
+      "tipo": "guia trabalhista-tributario",
+      "resumo": "Base de folha com CLT, custeio previdenciario, eSocial, FGTS Digital, DCTFWeb, EFD-Reinf e prova documental.",
+      "base_legal": ["Decreto-Lei 5.452/1943 - CLT", "Lei 8.212/1991", "Lei 8.213/1991", "eSocial", "DCTFWeb", "EFD-Reinf"],
+      "fonte_oficial": [
+        {"label": "CLT - Planalto", "url": "https://www.planalto.gov.br/ccivil_03/decreto-lei/Del5452.htm"},
+        {"label": "Lei 8.212/1991 - Custeio", "url": "https://www.planalto.gov.br/ccivil_03/leis/l8212cons.htm"},
+        {"label": "Lei 8.213/1991 - Beneficios Previdenciarios", "url": "https://www.planalto.gov.br/ccivil_03/leis/l8213cons.htm"},
+        {"label": "eSocial", "url": "https://www.gov.br/esocial/pt-br"},
+        {"label": "Receita Federal - DCTFWeb", "url": "https://www.gov.br/receitafederal/pt-br/assuntos/orientacao-tributaria/declaracoes-e-demonstrativos/dctfweb"}
+      ],
+      "data_conferencia": "25/04/2026",
+      "status_curadoria": "Publicado v1 - fonte oficial conferida",
+      "links_relacionados": [
+        {"label": "Guia DP/RH", "href": "../guia-dp-rh.html#fechamento-2026"},
+        {"label": "Manual Financeiro - fechamento", "href": "../manual-financeiro.html#m8a"}
+      ],
+      "sections": [
+        {"heading": "Folha tambem e tributario", "body": ["Folha de pagamento nao termina no recibo. Cada evento precisa fechar com contrato, jornada, rubrica, incidencia, eSocial, FGTS Digital, DCTFWeb, Reinf quando aplicavel e contabilizacao."]}
+      ],
+      "matriz": [
+        {
+          "titulo": "Rubricas e incidencias",
+          "o_que_e": "Classificacao de verbas trabalhistas e reflexos previdenciarios, FGTS e IRRF.",
+          "base_legal": "CLT, Lei 8.212/1991, Lei 8.213/1991 e leiautes oficiais do eSocial.",
+          "quem_pode_usar": "Empregadores e equiparados obrigados a escriturar eventos trabalhistas e previdenciarios.",
+          "condicoes": "Rubrica coerente, natureza da verba, incidencia correta e evento transmitido no prazo.",
+          "vedacoes": "Nao usar rubrica generica para reduzir incidencia sem base legal.",
+          "como_aparece_no_documento": "eSocial, folha, recibo, DCTFWeb, FGTS Digital, EFD-Reinf quando houver retencoes.",
+          "prova_necessaria": "Contrato, ponto, acordo, recibos, eventos eSocial, comprovantes de pagamento e memoria de incidencia.",
+          "risco_comum": "Verba paga corretamente ao empregado, mas tributada ou informada de forma errada.",
+          "fonte_oficial": "CLT, Lei 8.212/1991 e eSocial"
+        },
+        {
+          "titulo": "Fechamento mensal trabalhista-tributario",
+          "o_que_e": "Conferencia do ciclo folha, encargos, retencoes, declaracoes e contabilizacao.",
+          "base_legal": "CLT, legislacao previdenciaria, eSocial, DCTFWeb e normas do FGTS Digital.",
+          "quem_pode_usar": "Empresas com empregados, autonomos, tomadores/prestadores com retencoes e obrigacoes de folha.",
+          "condicoes": "Eventos periodicos e nao periodicos conciliados, bases fechadas e guias coerentes.",
+          "vedacoes": "Nao fechar guia sem reconciliar rubricas, eventos e contabilizacao.",
+          "como_aparece_no_documento": "Recibos do eSocial, DCTFWeb, DARF, FGTS Digital, Reinf e lancamentos contabeis.",
+          "prova_necessaria": "Relatorio de fechamento, recibos, guias, comprovantes e reconciliacao contabil.",
+          "risco_comum": "DP, fiscal e financeiro trabalharem com bases diferentes.",
+          "fonte_oficial": "eSocial, Receita Federal e Ministerio do Trabalho"
+        }
+      ]
+    }
+  ],
+  "library": [
+    {
+      "title": "Manual de Documentos Fiscais Eletronicos",
+      "href": "manual-fiscal.html",
+      "summary": "NF-e, NFC-e, CT-e, MDF-e, NFS-e, NFCom, SPED, reforma tributaria e governanca de XML.",
+      "type": "Manual avancado"
+    },
+    {
+      "title": "Manual de Gestao Financeira Empresarial",
+      "href": "manual-financeiro.html",
+      "summary": "Tesouraria, conciliacao, fechamento, indicadores, playbooks e leitura gerencial.",
+      "type": "Manual avancado"
+    },
+    {
+      "title": "Guia de Departamento Pessoal e RH",
+      "href": "guia-dp-rh.html",
+      "summary": "Admissao, folha, eSocial, FGTS Digital, DCTFWeb, Reinf, SST e prova documental.",
+      "type": "Guia operacional"
+    },
+    {
+      "title": "Compliance Fiscal em Transporte Rodoviario",
+      "href": "compliance-transportadoras.html",
+      "summary": "ICMS do frete, CT-e, MDF-e, RNTRC, CIOT, PEF, vale-pedagio e auditoria cruzada.",
+      "type": "Especial setorial"
+    },
+    {
+      "title": "Painel Fiscal de Consulta Tributaria",
+      "href": "painel-fiscal/index.html",
+      "summary": "CFOP, CST/CSOSN, aliquotas, NCM, PIS/Cofins, cBenef Goias e reforma tributaria.",
+      "type": "Painel interativo"
+    }
+  ]
+}
