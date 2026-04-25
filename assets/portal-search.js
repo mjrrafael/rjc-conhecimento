@@ -242,8 +242,8 @@ window.RJC_SEARCH = [
   {
     "title": "Legislacao federal em tela",
     "url": "federal/legislacao/index.html",
-    "summary": "IRPJ, CSLL, IOF, IPI, PIS e Cofins por capitulos, com lei antes da analise.",
-    "tags": "IRPJ CSLL IOF IPI PIS Cofins legislacao integral"
+    "summary": "IRPJ, CSLL, IOF, IPI, PIS, Cofins, Folha e CLT por capitulos, com lei antes da analise.",
+    "tags": "IRPJ CSLL IOF IPI PIS Cofins Folha CLT previdencia legislacao integral"
   },
   {
     "title": "IRPJ: legislacao em tela",
@@ -454,6 +454,60 @@ window.RJC_SEARCH = [
     "url": "federal/legislacao/cofins/beneficios-monofasico.html",
     "summary": "Tratamentos especiais por setor, produto e etapa da cadeia.",
     "tags": "cofins beneficios-monofasico Monofasico, aliquota zero, suspensao e beneficios"
+  },
+  {
+    "title": "Folha e CLT: legislacao em tela",
+    "url": "federal/legislacao/folha-clt/index.html",
+    "summary": "CLT, contrato, jornada, salario, ferias, rescisao, custeio previdenciario, FGTS, afastamentos e eSocial.",
+    "tags": "Federal folha-clt clt-1943 lei-8212-1991-custeio lei-8213-1991-beneficios decreto-3048-1999-rps lei-8036-1990-fgts decreto-8373-2014-esocial"
+  },
+  {
+    "title": "Folha e CLT: legislacao em tela - Contrato de trabalho, empregado e registro",
+    "url": "federal/legislacao/folha-clt/contrato-emprego-registro.html",
+    "summary": "A relacao de emprego, o contrato individual e o registro como ponto de partida da folha.",
+    "tags": "folha-clt contrato-emprego-registro Contrato de trabalho, empregado e registro"
+  },
+  {
+    "title": "Folha e CLT: legislacao em tela - Jornada, descanso, horas extras e ferias",
+    "url": "federal/legislacao/folha-clt/jornada-descanso-ferias.html",
+    "summary": "Tempo de trabalho, descansos, remuneracao variavel e ferias como base de calculo da folha.",
+    "tags": "folha-clt jornada-descanso-ferias Jornada, descanso, horas extras e ferias"
+  },
+  {
+    "title": "Folha e CLT: legislacao em tela - Salario, remuneracao, verbas e rescisao",
+    "url": "federal/legislacao/folha-clt/salario-remuneracao-rescisao.html",
+    "summary": "O que compoe remuneracao, como classificar verbas e como provar a rescisao.",
+    "tags": "folha-clt salario-remuneracao-rescisao Salario, remuneracao, verbas e rescisao"
+  },
+  {
+    "title": "Folha e CLT: legislacao em tela - Seguranca, saude, acidente e afastamentos",
+    "url": "federal/legislacao/folha-clt/seguranca-saude-afastamentos.html",
+    "summary": "Normas de protecao, acidente do trabalho, CAT, estabilidade e reflexos na folha.",
+    "tags": "folha-clt seguranca-saude-afastamentos Seguranca, saude, acidente e afastamentos"
+  },
+  {
+    "title": "Folha e CLT: legislacao em tela - Custeio previdenciario e salario-de-contribuicao",
+    "url": "federal/legislacao/folha-clt/custeio-previdenciario.html",
+    "summary": "Quem contribui, sobre qual base, com quais responsabilidades e controles.",
+    "tags": "folha-clt custeio-previdenciario Custeio previdenciario e salario-de-contribuicao"
+  },
+  {
+    "title": "Folha e CLT: legislacao em tela - FGTS, deposito, movimentacao e prova",
+    "url": "federal/legislacao/folha-clt/fgts-deposito-rescisao.html",
+    "summary": "Conta vinculada, depositos mensais, rescisao e fiscalizacao do FGTS.",
+    "tags": "folha-clt fgts-deposito-rescisao FGTS, deposito, movimentacao e prova"
+  },
+  {
+    "title": "Folha e CLT: legislacao em tela - eSocial, eventos e obrigacoes digitais",
+    "url": "federal/legislacao/folha-clt/esocial-obrigacoes-digitais.html",
+    "summary": "A unificacao das informacoes trabalhistas, previdenciarias e fiscais em ambiente nacional.",
+    "tags": "folha-clt esocial-obrigacoes-digitais eSocial, eventos e obrigacoes digitais"
+  },
+  {
+    "title": "Folha e CLT: legislacao em tela - Beneficios previdenciarios, incapacidades e prova",
+    "url": "federal/legislacao/folha-clt/beneficios-previdenciarios-prova.html",
+    "summary": "Beneficios, segurados, incapacidade, acidente e documentos que impactam a folha.",
+    "tags": "folha-clt beneficios-previdenciarios-prova Beneficios previdenciarios, incapacidades e prova"
   },
   {
     "title": "Goias: ICMS e beneficios fiscais em tela",
@@ -670,6 +724,42 @@ window.RJC_SEARCH = [
     "url": "estados/goias/legislacao/atos/in-1518-2022-cbenef-go.html",
     "summary": "Tabela e uso do codigo de beneficio fiscal na NF-e e NFC-e.",
     "tags": "in-1518-2022-cbenef-go GO IN cBenef/GO"
+  },
+  {
+    "title": "Decreto-Lei 5.452/1943 - Consolidacao das Leis do Trabalho",
+    "url": "federal/legislacao/atos/clt-1943.html",
+    "summary": "Texto compilado da CLT: relacao de emprego, contrato, jornada, salario, ferias, rescisao, seguranca e normas trabalhistas.",
+    "tags": "clt-1943 Federal CLT"
+  },
+  {
+    "title": "Lei 8.212/1991 - Custeio da Seguridade Social",
+    "url": "federal/legislacao/atos/lei-8212-1991-custeio.html",
+    "summary": "Custeio previdenciario, segurados, empresa, contribuicoes sobre folha, obrigacoes, arrecadacao e prova.",
+    "tags": "lei-8212-1991-custeio Federal Lei 8.212/1991"
+  },
+  {
+    "title": "Lei 8.213/1991 - Planos de Beneficios da Previdencia Social",
+    "url": "federal/legislacao/atos/lei-8213-1991-beneficios.html",
+    "summary": "Beneficios previdenciarios, incapacidade, acidente do trabalho, estabilidade e deveres informacionais.",
+    "tags": "lei-8213-1991-beneficios Federal Lei 8.213/1991"
+  },
+  {
+    "title": "Decreto 3.048/1999 - Regulamento da Previdencia Social",
+    "url": "federal/legislacao/atos/decreto-3048-1999-rps.html",
+    "summary": "Regulamento do RGPS: segurados, beneficios, salario-de-contribuicao, arrecadacao e obrigações previdenciarias.",
+    "tags": "decreto-3048-1999-rps Federal RPS/1999"
+  },
+  {
+    "title": "Lei 8.036/1990 - Fundo de Garantia do Tempo de Servico",
+    "url": "federal/legislacao/atos/lei-8036-1990-fgts.html",
+    "summary": "Regime legal do FGTS: contas vinculadas, depositos, movimentacao, rescisao, fiscalizacao e penalidades.",
+    "tags": "lei-8036-1990-fgts Federal Lei 8.036/1990"
+  },
+  {
+    "title": "Decreto 8.373/2014 - eSocial",
+    "url": "federal/legislacao/atos/decreto-8373-2014-esocial.html",
+    "summary": "Institui o Sistema de Escrituracao Digital das Obrigacoes Fiscais, Previdenciarias e Trabalhistas.",
+    "tags": "decreto-8373-2014-esocial Federal Decreto do eSocial"
   },
   {
     "title": "Manual de Documentos Fiscais Eletronicos",

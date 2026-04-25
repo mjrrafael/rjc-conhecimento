@@ -512,9 +512,9 @@
       "resumo": "Base de folha com CLT, custeio previdenciario, eSocial, FGTS Digital, DCTFWeb, EFD-Reinf e prova documental.",
       "base_legal": ["Decreto-Lei 5.452/1943 - CLT", "Lei 8.212/1991", "Lei 8.213/1991", "eSocial", "DCTFWeb", "EFD-Reinf"],
       "fonte_oficial": [
-        {"label": "CLT - Planalto", "url": "https://www.planalto.gov.br/ccivil_03/decreto-lei/del5452.htm"},
-        {"label": "Lei 8.212/1991 - Custeio", "url": "https://www.planalto.gov.br/ccivil_03/leis/l8212cons.htm"},
-        {"label": "Lei 8.213/1991 - Beneficios Previdenciarios", "url": "https://www.planalto.gov.br/ccivil_03/leis/l8213cons.htm"},
+        {"label": "CLT - Planalto", "url": "https://www.planalto.gov.br/ccivil_03/Decreto-lei/Del5452.htm"},
+        {"label": "Lei 8.212/1991 - Custeio", "url": "https://www.planalto.gov.br/ccivil_03/leis/L8212cons.htm"},
+        {"label": "Lei 8.213/1991 - Beneficios Previdenciarios", "url": "https://www.planalto.gov.br/ccivil_03/LEIS/L8213cons.htm"},
         {"label": "eSocial", "url": "https://www.gov.br/esocial/pt-br"},
         {"label": "Receita Federal - DCTFWeb", "url": "https://www.gov.br/receitafederal/pt-br/assuntos/orientacao-tributaria/declaracoes-e-demonstrativos/dctfweb"}
       ],

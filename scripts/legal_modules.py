@@ -420,6 +420,54 @@ SOURCE_DEFS: dict[str, dict] = {
         "render": "full_text",
         "note": "Tabela e uso do codigo de beneficio fiscal na NF-e e NFC-e.",
     },
+    "clt-1943": {
+        "jurisdiction": "Federal",
+        "title": "Decreto-Lei 5.452/1943 - Consolidacao das Leis do Trabalho",
+        "short": "CLT",
+        "url": "https://www.planalto.gov.br/ccivil_03/Decreto-lei/Del5452.htm",
+        "fetch_url": "https://www.planalto.gov.br/ccivil_03/Decreto-lei/Del5452.htm",
+        "note": "Texto compilado da CLT: relacao de emprego, contrato, jornada, salario, ferias, rescisao, seguranca e normas trabalhistas.",
+    },
+    "lei-8212-1991-custeio": {
+        "jurisdiction": "Federal",
+        "title": "Lei 8.212/1991 - Custeio da Seguridade Social",
+        "short": "Lei 8.212/1991",
+        "url": "https://www.planalto.gov.br/ccivil_03/leis/L8212cons.htm",
+        "files": ["Lei_8212_1991_Custeio_Previdencia.txt"],
+        "note": "Custeio previdenciario, segurados, empresa, contribuicoes sobre folha, obrigacoes, arrecadacao e prova.",
+    },
+    "lei-8213-1991-beneficios": {
+        "jurisdiction": "Federal",
+        "title": "Lei 8.213/1991 - Planos de Beneficios da Previdencia Social",
+        "short": "Lei 8.213/1991",
+        "url": "https://www.planalto.gov.br/ccivil_03/LEIS/L8213cons.htm",
+        "files": ["Lei_8213_1991_Beneficios_Previdencia.txt"],
+        "note": "Beneficios previdenciarios, incapacidade, acidente do trabalho, estabilidade e deveres informacionais.",
+    },
+    "decreto-3048-1999-rps": {
+        "jurisdiction": "Federal",
+        "title": "Decreto 3.048/1999 - Regulamento da Previdencia Social",
+        "short": "RPS/1999",
+        "url": "https://www.planalto.gov.br/ccivil_03/decreto/D3048.htm",
+        "fetch_url": "https://www.planalto.gov.br/ccivil_03/decreto/D3048.htm",
+        "note": "Regulamento do RGPS: segurados, beneficios, salario-de-contribuicao, arrecadacao e obrigações previdenciarias.",
+    },
+    "lei-8036-1990-fgts": {
+        "jurisdiction": "Federal",
+        "title": "Lei 8.036/1990 - Fundo de Garantia do Tempo de Servico",
+        "short": "Lei 8.036/1990",
+        "url": "https://www.planalto.gov.br/ccivil_03/leis/L8036consol.htm",
+        "fetch_url": "https://www.planalto.gov.br/ccivil_03/leis/L8036consol.htm",
+        "note": "Regime legal do FGTS: contas vinculadas, depositos, movimentacao, rescisao, fiscalizacao e penalidades.",
+    },
+    "decreto-8373-2014-esocial": {
+        "jurisdiction": "Federal",
+        "title": "Decreto 8.373/2014 - eSocial",
+        "short": "Decreto do eSocial",
+        "url": "https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2014/decreto/d8373.htm",
+        "fetch_url": "https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2014/decreto/d8373.htm",
+        "note": "Institui o Sistema de Escrituracao Digital das Obrigacoes Fiscais, Previdenciarias e Trabalhistas.",
+    },
 }
 
 
@@ -775,6 +823,103 @@ LEGAL_MODULES: list[dict] = [
         ],
     },
     {
+        "id": "folha-clt",
+        "jurisdiction": "Federal",
+        "title": "Folha e CLT: legislacao em tela",
+        "summary": "CLT, contrato, jornada, salario, ferias, rescisao, custeio previdenciario, FGTS, afastamentos e eSocial.",
+        "legacy": "folha-clt/index.html",
+        "sources": [
+            "clt-1943",
+            "lei-8212-1991-custeio",
+            "lei-8213-1991-beneficios",
+            "decreto-3048-1999-rps",
+            "lei-8036-1990-fgts",
+            "decreto-8373-2014-esocial",
+        ],
+        "chapters": [
+            {
+                "id": "contrato-emprego-registro",
+                "title": "Contrato de trabalho, empregado e registro",
+                "summary": "A relacao de emprego, o contrato individual e o registro como ponto de partida da folha.",
+                "refs": [{"source": "clt-1943", "ranges": [(2, 13), (29, 41), (442, 456)]}],
+                "analysis": [
+                    "Folha nasce no vinculo. Antes da rubrica, confirme se existe relacao de emprego, quem e o empregador, qual contrato foi firmado e como o registro foi escriturado.",
+                    "Na pratica, admissao, alteracao salarial, funcao, jornada, local de trabalho e eventos nao periodicos do eSocial precisam contar a mesma historia do contrato e da CTPS.",
+                ],
+            },
+            {
+                "id": "jornada-descanso-ferias",
+                "title": "Jornada, descanso, horas extras e ferias",
+                "summary": "Tempo de trabalho, descansos, remuneracao variavel e ferias como base de calculo da folha.",
+                "refs": [{"source": "clt-1943", "ranges": [(57, 75), (129, 153)]}],
+                "analysis": [
+                    "Jornada e prova, nao apenas escala. Ponto, acordo, banco de horas, intervalo, adicional noturno, horas extras e ferias precisam fechar com a remuneracao paga.",
+                    "O risco aparece quando o recibo paga uma verba correta, mas o controle de jornada ou o evento transmitido nao sustenta a quantidade, o periodo ou o adicional.",
+                ],
+            },
+            {
+                "id": "salario-remuneracao-rescisao",
+                "title": "Salario, remuneracao, verbas e rescisao",
+                "summary": "O que compoe remuneracao, como classificar verbas e como provar a rescisao.",
+                "refs": [{"source": "clt-1943", "ranges": [(457, 467), (477, 486)]}],
+                "analysis": [
+                    "A natureza da verba decide reflexos trabalhistas, previdenciarios, FGTS e IRRF. Nome comercial de rubrica nao resolve incidencia.",
+                    "Rescisao exige cronologia: aviso, motivo, saldo salarial, ferias, decimo terceiro quando devido, FGTS, guias, comprovantes e evento de desligamento precisam ser coerentes.",
+                ],
+            },
+            {
+                "id": "seguranca-saude-afastamentos",
+                "title": "Seguranca, saude, acidente e afastamentos",
+                "summary": "Normas de protecao, acidente do trabalho, CAT, estabilidade e reflexos na folha.",
+                "refs": [{"source": "clt-1943", "ranges": [(154, 201)]}, {"source": "lei-8213-1991-beneficios", "ranges": [(19, 23), (118, 120)]}],
+                "analysis": [
+                    "SST nao e anexo do DP; ela altera risco, afastamento, beneficio, estabilidade e custo previdenciario. A folha precisa conversar com laudos, exames, CAT e eventos de SST.",
+                    "Quando ha afastamento, a auditoria deve reconstruir data, causa, remuneracao, beneficio, retorno, estabilidade e reflexos em FGTS e encargos.",
+                ],
+            },
+            {
+                "id": "custeio-previdenciario",
+                "title": "Custeio previdenciario e salario-de-contribuicao",
+                "summary": "Quem contribui, sobre qual base, com quais responsabilidades e controles.",
+                "refs": [{"source": "lei-8212-1991-custeio", "ranges": [(10, 31)]}, {"source": "decreto-3048-1999-rps", "ranges": [(195, 216)]}],
+                "analysis": [
+                    "A contribuicao previdenciaria nasce da remuneracao paga, devida ou creditada, mas a base depende da natureza juridica da verba. Por isso rubrica e incidencia precisam ser governadas juntas.",
+                    "O fechamento forte concilia folha, eSocial, DCTFWeb, DARF, contabilidade, retenções e demonstrativo por estabelecimento, lotacao e categoria.",
+                ],
+            },
+            {
+                "id": "fgts-deposito-rescisao",
+                "title": "FGTS, deposito, movimentacao e prova",
+                "summary": "Conta vinculada, depositos mensais, rescisao e fiscalizacao do FGTS.",
+                "refs": [{"source": "lei-8036-1990-fgts", "ranges": [(1, 23)]}],
+                "analysis": [
+                    "FGTS deve ser lido como obrigacao documental mensal. O deposito precisa bater com remuneracao, categoria, afastamento, rescisao e comprovante.",
+                    "No controle, nao basta emitir guia: a empresa precisa provar base, empregado, competencia, pagamento, eventuais diferencas e reflexos da rescisao.",
+                ],
+            },
+            {
+                "id": "esocial-obrigacoes-digitais",
+                "title": "eSocial, eventos e obrigacoes digitais",
+                "summary": "A unificacao das informacoes trabalhistas, previdenciarias e fiscais em ambiente nacional.",
+                "refs": [{"source": "decreto-8373-2014-esocial", "ranges": None}, {"source": "lei-8212-1991-custeio", "ranges": [(32, 33), (47, 47)]}],
+                "analysis": [
+                    "eSocial nao cria o direito trabalhista, mas torna a prova cronologica. Admissao, afastamento, remuneracao, pagamento, desligamento e SST ficam datados e cruzaveis.",
+                    "A leitura pratica e sequencial: evento nao periodico correto, rubrica correta, evento periodico fechado, DCTFWeb coerente, FGTS Digital conciliado e contabilizacao sem sobra.",
+                ],
+            },
+            {
+                "id": "beneficios-previdenciarios-prova",
+                "title": "Beneficios previdenciarios, incapacidades e prova",
+                "summary": "Beneficios, segurados, incapacidade, acidente e documentos que impactam a folha.",
+                "refs": [{"source": "lei-8213-1991-beneficios", "ranges": [(9, 18), (42, 63), (71, 80)]}, {"source": "decreto-3048-1999-rps", "ranges": [(18, 75)]}],
+                "analysis": [
+                    "Beneficio previdenciario impacta folha porque altera pagamento, afastamento, estabilidade, FGTS e retorno ao trabalho. A empresa precisa saber o que paga e o que sai da folha.",
+                    "O dossie seguro junta comunicado, atestado, CAT quando aplicavel, protocolo, decisao previdenciaria, evento eSocial, calculo da folha, guia e retorno.",
+                ],
+            },
+        ],
+    },
+    {
         "id": "goias",
         "jurisdiction": "GO",
         "title": "Goias: ICMS e beneficios fiscais em tela",
@@ -874,6 +1019,7 @@ TOPIC_TO_MODULES = {
     "federal-irpj-csll": ["irpj", "csll"],
     "federal-lucro-real": ["irpj", "csll"],
     "federal-lucro-presumido": ["irpj", "csll"],
+    "folha-clt-previdencia": ["folha-clt"],
 }
 
 THEME_TO_MODULES = {
@@ -881,6 +1027,7 @@ THEME_TO_MODULES = {
     "ipi": ["ipi"],
     "pis_cofins": ["pis", "cofins"],
     "irpj_csll": ["irpj", "csll"],
+    "previdencia_folha": ["folha-clt"],
 }
 
 
@@ -1215,7 +1362,7 @@ def render_federal_hub(sources: dict, layout_func) -> str:
   <div>
     <span class="eyebrow">Federal v1</span>
     <h1>Legislacao federal em tela</h1>
-    <p>IRPJ, CSLL, IOF, IPI, PIS e Cofins organizados por capitulo, com texto legal antes da analise e link oficial do Planalto ou da Receita Federal em cada ato.</p>
+    <p>IRPJ, CSLL, IOF, IPI, PIS, Cofins, Folha e CLT organizados por capitulo, com texto legal antes da analise e link oficial do Planalto ou da Receita Federal em cada ato.</p>
   </div>
   <aside class="hero-proof">
     <strong>Escopo desta fase</strong>
@@ -1237,7 +1384,7 @@ def render_federal_hub(sources: dict, layout_func) -> str:
   </div>
 </section>
 """
-    return layout_func(path, "Legislacao federal em tela", "IRPJ, CSLL, IOF, IPI, PIS e Cofins.", body, "federal")
+    return layout_func(path, "Legislacao federal em tela", "IRPJ, CSLL, IOF, IPI, PIS, Cofins, Folha e CLT.", body, "federal")
 
 
 def build_legal_pages(layout_func) -> dict[str, str]:
@@ -1291,10 +1438,10 @@ def legal_module_teaser(module_ids: list[str], current_path: str) -> str:
 def federal_legislation_card(current_path: str) -> str:
     return f"""
 <a class="portal-card featured searchable-card" href="{escape(rel_href(current_path, 'federal/legislacao/index.html'))}"
-   data-search="IRPJ CSLL IOF IPI PIS Cofins legislacao integral lei em tela">
+   data-search="IRPJ CSLL IOF IPI PIS Cofins Folha CLT previdencia legislacao integral lei em tela">
   <span class="card-kicker">Lei em tela</span>
   <h3>Federal: legislacao integral</h3>
-  <p>IRPJ, CSLL, IOF, IPI, PIS e Cofins em capitulos: primeiro a lei em tela, com link oficial, depois a analise.</p>
+  <p>IRPJ, CSLL, IOF, IPI, PIS, Cofins, Folha e CLT em capitulos: primeiro a lei em tela, com link oficial, depois a analise.</p>
   <small>fase federal publicada</small>
 </a>
 """
@@ -1317,8 +1464,8 @@ def legal_search_entries() -> list[dict[str, str]]:
         {
             "title": "Legislacao federal em tela",
             "url": "federal/legislacao/index.html",
-            "summary": "IRPJ, CSLL, IOF, IPI, PIS e Cofins por capitulos, com lei antes da analise.",
-            "tags": "IRPJ CSLL IOF IPI PIS Cofins legislacao integral",
+            "summary": "IRPJ, CSLL, IOF, IPI, PIS, Cofins, Folha e CLT por capitulos, com lei antes da analise.",
+            "tags": "IRPJ CSLL IOF IPI PIS Cofins Folha CLT previdencia legislacao integral",
         }
     ]
     for module in LEGAL_MODULES:
