@@ -159,6 +159,23 @@ def read_source_text(source: dict) -> str:
 ARTICLE_RE = re.compile(r"(?m)^\s*Art\.\s*(\d+(?:\.\d+)?(?:-[A-Za-z])?)\s*(?:º|°|o)?\.?")
 
 
+ROMAN_ONLY_RE = re.compile(r"^[IVXLCDM]{1,12}[A-Z]?$", re.I)
+INCISO_DASH_RE = re.compile(r"^(?P<marker>[IVXLCDM]{1,12}[A-Z]?)\s*[-–]\s*(?P<rest>.*)$", re.I)
+ALINEA_RE = re.compile(r"^(?P<marker>[a-z])\)\s*(?P<rest>.*)$")
+ITEM_RE = re.compile(r"^(?P<marker>\d+(?:\.\d+)*)\s*(?:[-–.)])\s*(?P<rest>.*)$")
+PARAGRAPH_RE = re.compile(
+    r"^(?P<marker>(?:Â§|§)\s*\d+\s*(?:Âº|º|°|o)?[A-Za-z]?|Par[aá]grafo\s+u[nú]nico|Paragrafo\s+unico)\s*(?P<rest>.*)$",
+    re.I,
+)
+
+SUBUNIT_LABELS = {
+    "inciso": "Inciso",
+    "paragrafo": "Paragrafo",
+    "alinea": "Alinea",
+    "item": "Item",
+}
+
+
 def article_base_number(number: str) -> int:
     base = number.split("-", 1)[0].replace(".", "")
     try:
@@ -183,6 +200,214 @@ def parse_articles(text: str) -> list[dict]:
             "text": block,
         })
     return articles
+
+
+def ascii_upper(value: str) -> str:
+    normalized = unicodedata.normalize("NFKD", value)
+    return normalized.encode("ascii", "ignore").decode("ascii").upper()
+
+
+def canonical_marker(kind: str, marker: str) -> str:
+    clean = ascii_upper(marker)
+    clean = clean.replace("PARAGRAFO UNICO", "UNICO")
+    clean = re.sub(r"[^A-Z0-9]+", "", clean)
+    return f"{kind}:{clean}"
+
+
+def is_source_index_instruction(line: str) -> bool:
+    clean = ascii_upper(line)
+    return "PARA ACESSAR" in clean or "CLICAR EM SEU NUMERO" in clean
+
+
+def index_marker(line: str) -> dict | None:
+    clean = line.strip()
+    if not clean:
+        return None
+    if ROMAN_ONLY_RE.match(clean):
+        return {"kind": "inciso", "marker": clean}
+    paragraph = PARAGRAPH_RE.match(clean)
+    if paragraph:
+        return {"kind": "paragrafo", "marker": paragraph.group("marker").strip()}
+    return None
+
+
+def strip_source_index(text: str) -> tuple[str, list[dict]]:
+    """Remove source-site click instructions and keep them as a real index."""
+    lines = text.splitlines()
+    cleaned: list[str] = []
+    markers: list[dict] = []
+    in_index = False
+    for line in lines:
+        if is_source_index_instruction(line):
+            in_index = True
+            continue
+        if in_index:
+            marker = index_marker(line)
+            if marker:
+                markers.append(marker)
+                continue
+            if not line.strip():
+                continue
+            in_index = False
+        cleaned.append(line)
+    return "\n".join(cleaned).strip(), markers
+
+
+def next_nonempty_line(lines: list[str], start: int) -> str:
+    for line in lines[start + 1:]:
+        if line.strip():
+            return line.strip()
+    return ""
+
+
+def detect_subunit_start(lines: list[str], index: int) -> dict | None:
+    line = lines[index].strip()
+    if not line:
+        return None
+    paragraph = PARAGRAPH_RE.match(line)
+    if paragraph:
+        return {"kind": "paragrafo", "marker": paragraph.group("marker").strip(), "line": index}
+    inciso = INCISO_DASH_RE.match(line)
+    if inciso:
+        return {"kind": "inciso", "marker": inciso.group("marker").strip(), "line": index}
+    if ROMAN_ONLY_RE.match(line) and next_nonempty_line(lines, index).startswith(("-", "–")):
+        return {"kind": "inciso", "marker": line, "line": index}
+    alinea = ALINEA_RE.match(line)
+    if alinea:
+        return {"kind": "alinea", "marker": alinea.group("marker").strip(), "line": index}
+    item = ITEM_RE.match(line)
+    if item and not re.match(r"^Art\.", line, flags=re.I):
+        marker = item.group("marker").strip()
+        if re.match(r"^\d{1,2}\.\d{1,2}\.\d{2,4}$", marker):
+            return None
+        return {"kind": "item", "marker": marker, "line": index}
+    return None
+
+
+def parse_article_structure(text: str, article_id: str) -> dict:
+    cleaned_text, source_index = strip_source_index(text)
+    lines = cleaned_text.splitlines()
+    starts: list[dict] = []
+    for index, _line in enumerate(lines):
+        start = detect_subunit_start(lines, index)
+        if start:
+            starts.append(start)
+    if not starts:
+        return {
+            "text": cleaned_text,
+            "intro": cleaned_text,
+            "source_index": source_index,
+            "subunits": [],
+            "targets": {},
+        }
+    intro = "\n".join(lines[:starts[0]["line"]]).strip()
+    seen: dict[str, int] = {}
+    targets: dict[str, str] = {}
+    subunits: list[dict] = []
+    for position, start in enumerate(starts):
+        end_line = starts[position + 1]["line"] if position + 1 < len(starts) else len(lines)
+        body = "\n".join(lines[start["line"]:end_line]).strip()
+        key = canonical_marker(start["kind"], start["marker"])
+        seen[key] = seen.get(key, 0) + 1
+        base_anchor = f"{article_id}-{start['kind']}-{slug(start['marker'])}"
+        anchor = base_anchor if seen[key] == 1 else f"{base_anchor}-{seen[key]}"
+        targets.setdefault(key, anchor)
+        subunits.append({
+            "kind": start["kind"],
+            "marker": start["marker"],
+            "anchor": anchor,
+            "text": body,
+            "key": key,
+        })
+    return {
+        "text": cleaned_text,
+        "intro": intro,
+        "source_index": source_index,
+        "subunits": subunits,
+        "targets": targets,
+    }
+
+
+def subunit_summary(text: str, limit: int = 108) -> str:
+    clean = re.sub(r"\s+", " ", text).strip()
+    return clean[:limit].rstrip() + ("..." if len(clean) > limit else "")
+
+
+def render_article_index(structure: dict) -> str:
+    index_items = structure.get("source_index") or [
+        {"kind": item["kind"], "marker": item["marker"]} for item in structure.get("subunits", [])
+    ]
+    if not index_items or (not structure.get("source_index") and len(index_items) < 4):
+        return ""
+    subunit_by_key = {item["key"]: item for item in structure.get("subunits", [])}
+    compact = len(index_items) > 24
+    links = []
+    missing = 0
+    seen_index_keys: set[str] = set()
+    for item in index_items:
+        key = canonical_marker(item["kind"], item["marker"])
+        if key in seen_index_keys:
+            continue
+        seen_index_keys.add(key)
+        target = structure.get("targets", {}).get(key)
+        label = f"{SUBUNIT_LABELS.get(item['kind'], 'Parte')} {item['marker']}"
+        if not target:
+            missing += 1
+            continue
+        detail = ""
+        if not compact and key in subunit_by_key:
+            detail = f"<small>{escape(subunit_summary(subunit_by_key[key]['text']))}</small>"
+        links.append(f'<a href="#{escape(target)}"><span>{escape(label)}</span>{detail}</a>')
+    if not links:
+        return ""
+    note = ""
+    if missing:
+        note = f'<p class="article-index-note">Os atalhos aparecem apenas quando o texto do inciso ou paragrafo esta em tela. As demais remissoes internas devem ser lidas no ato integral.</p>'
+    return f"""
+<nav class="article-index" aria-label="Indice interno do artigo">
+  <strong>Indice do artigo</strong>
+  <p>Use este mapa para sair do caput e chegar diretamente aos incisos, paragrafos, alineas ou itens que estruturam a regra.</p>
+  <div class="article-index-links {'compact' if compact else ''}">{''.join(links)}</div>
+  {note}
+</nav>
+"""
+
+
+def render_article_guidance(structure: dict) -> str:
+    subunits = structure.get("subunits", [])
+    if not subunits:
+        return ""
+    counts: dict[str, int] = {}
+    for item in subunits:
+        counts[item["kind"]] = counts.get(item["kind"], 0) + 1
+    parts = [
+        f"{count} {SUBUNIT_LABELS.get(kind, kind).lower()}{'' if count == 1 else 's'}"
+        for kind, count in counts.items()
+    ]
+    return f"""
+<div class="article-context-note">
+  <strong>Como ler este artigo</strong>
+  <span>Comece pelo caput, depois avance pelas unidades normativas: {escape(', '.join(parts))}. Em beneficios e excecoes, confira sempre condicao, vigencia, documento e eventual nota de revogacao.</span>
+</div>
+"""
+
+
+def render_article_body(article: dict, source_id: str) -> str:
+    article_id = source_id + "-" + article["anchor"]
+    structure = parse_article_structure(article["text"], article_id)
+    if not structure.get("subunits"):
+        return f'<div class="article-text">{escape(structure["text"])}</div>'
+    intro = f'<div class="article-text article-caput">{escape(structure["intro"])}</div>' if structure.get("intro") else ""
+    subunits = "".join(
+        f"""
+<section class="article-subunit" id="{escape(item['anchor'])}">
+  <div class="article-subunit-marker">{escape(SUBUNIT_LABELS.get(item['kind'], 'Parte'))} {escape(item['marker'])}</div>
+  <div class="article-text">{escape(item['text'])}</div>
+</section>
+"""
+        for item in structure["subunits"]
+    )
+    return render_article_guidance(structure) + render_article_index(structure) + intro + f'<div class="article-subunits">{subunits}</div>'
 
 
 def in_ranges(article: dict, ranges: list[tuple[int, int]] | None) -> bool:
@@ -1107,10 +1332,11 @@ def render_article_blocks(articles: list[dict], source_id: str, current_path: st
         return '<p class="empty-note">Nao foram encontrados artigos numerados para este recorte. Consulte o ato integral nesta mesma trilha.</p>'
     rendered = []
     for article in articles:
+        article_id = source_id + "-" + article["anchor"]
         rendered.append(f"""
-<article class="article-block" id="{escape(source_id + '-' + article['anchor'])}">
+<article class="article-block" id="{escape(article_id)}">
   <div class="article-number">Art. {escape(article['number'])}</div>
-  <div class="article-text">{escape(article['text'])}</div>
+  {render_article_body(article, source_id)}
 </article>
 """)
     return "".join(rendered)
@@ -1142,7 +1368,7 @@ def render_text_chunks(text: str, source_id: str, chunk_size: int = 28000) -> st
 def render_analysis(chapter: dict) -> str:
     points = "".join(f"<p>{escape(item)}</p>" for item in chapter.get("analysis", []))
     return f"""
-<section class="analysis-panel">
+<section class="analysis-panel" id="analise">
   <span class="eyebrow">Depois da lei</span>
   <h2>Leitura didatica e aplicacao</h2>
   <p>Os comentarios abaixo partem do texto legal exibido acima. A aplicacao concreta deve voltar ao artigo citado e ao link oficial do ato antes de entrar no ERP, no fechamento ou em parecer.</p>
@@ -1156,6 +1382,7 @@ def render_analysis(chapter: dict) -> str:
 </section>
 """
 
+
 def render_chapter_page(module: dict, chapter: dict, sources: dict, layout_func) -> str:
     path = module_chapter_path(module, chapter)
     sibling_links = "".join(
@@ -1163,9 +1390,12 @@ def render_chapter_page(module: dict, chapter: dict, sources: dict, layout_func)
         for item in module["chapters"]
     )
     source_blocks = []
+    chapter_nav = []
     for ref in chapter.get("refs", []):
         source_id = ref["source"]
         source = sources[source_id]["def"]
+        source_anchor = f"lei-{slug(source_id)}"
+        chapter_nav.append(f'<a href="#{escape(source_anchor)}">Lei: {escape(source["short"])}</a>')
         if ref.get("full_text") or source.get("render") == "full_text":
             body = render_text_chunks(sources[source_id]["text"], source_id)
             count = f"{fmt_num(len(sources[source_id]['text']))} caracteres"
@@ -1174,7 +1404,7 @@ def render_chapter_page(module: dict, chapter: dict, sources: dict, layout_func)
             body = render_article_blocks(articles, source_id, path)
             count = f"{fmt_num(len(articles))} artigos"
         source_blocks.append(f"""
-<section class="legal-document searchable-card" data-search="{escape(source['title'] + ' ' + chapter['title'])}">
+<section class="legal-document searchable-card" id="{escape(source_anchor)}" data-search="{escape(source['title'] + ' ' + chapter['title'])}">
   <div class="document-heading">
     <div>
       <span class="eyebrow">Texto legal</span>
@@ -1201,6 +1431,13 @@ def render_chapter_page(module: dict, chapter: dict, sources: dict, layout_func)
     <strong>Ordem de leitura</strong>
     <p>Primeiro o texto normativo em tela. Depois a interpretacao, sempre amarrada ao link oficial do ato.</p>
   </aside>
+</section>
+<section class="chapter-map" aria-label="Mapa do capitulo">
+  <strong>Indice do capitulo</strong>
+  <div>
+    {''.join(chapter_nav)}
+    <a href="#analise">Analise, aplicacao e prova</a>
+  </div>
 </section>
 <section class="law-reader-grid">
   <aside class="law-sidebar">
@@ -1261,6 +1498,82 @@ def render_source_page(source_id: str, source_data: dict, layout_func) -> str:
     return layout_func(path, source["title"], source.get("note", ""), body, active)
 
 
+THEMATIC_GROUPS = [
+    {
+        "id": "regra-matriz",
+        "title": "Regra matriz",
+        "summary": "Comece aqui: competencia, materialidade, contribuinte, fato gerador e campo de incidencia.",
+        "needles": ["REGRA", "MATRIZ", "MATERIALIDADE", "INSTITUICAO", "CONTRIBUINT", "FATO GERADOR", "RECEITA", "CONTRATO"],
+    },
+    {
+        "id": "base-aliquota",
+        "title": "Base de calculo e aliquotas",
+        "summary": "Localize como a base nasce, quando muda e qual carga a lei autoriza aplicar.",
+        "needles": ["BASE", "ALIQUOT", "CALCULO", "TIPI", "PRESUN", "PERCENTUAL", "REDUCAO"],
+    },
+    {
+        "id": "regimes-apuracao",
+        "title": "Regimes, apuracao e creditos",
+        "summary": "Separe regime, debito, credito, compensacao, pagamento, livro e fechamento.",
+        "needles": ["REGIME", "LUCRO", "CUMULATIVO", "NAO CUMULATIV", "APURACAO", "COMPENSACAO", "PAGAMENTO", "CREDITO", "LALUR"],
+    },
+    {
+        "id": "beneficios-excecoes",
+        "title": "Beneficios, isencoes e excecoes",
+        "summary": "Estude reducao, isencao, suspensao, diferimento, monofasico, credito outorgado e condicoes.",
+        "needles": ["BENEF", "ISENC", "SUSPENS", "DIFER", "MONOFASICO", "OUTORGADO", "ZONA FRANCA", "INCENTIV", "EXCECO"],
+    },
+    {
+        "id": "obrigacoes-prova",
+        "title": "Obrigacoes, prova e fiscalizacao",
+        "summary": "Feche documento, escrituracao, declaracao, penalidade, dossie e risco de auditoria.",
+        "needles": ["OBRIGAC", "DOCUMENT", "LIVRO", "ESOCIAL", "DCTF", "REINF", "FGTS", "FISCALIZ", "PENAL", "PROVA", "CBENEF"],
+    },
+]
+
+
+def classify_chapter(chapter: dict) -> dict:
+    text = ascii_upper(" ".join([chapter.get("id", ""), chapter.get("title", ""), chapter.get("summary", "")]))
+    for group in THEMATIC_GROUPS:
+        if any(needle in text for needle in group["needles"]):
+            return group
+    return THEMATIC_GROUPS[-1]
+
+
+def render_module_topic_index(module: dict, current_path: str) -> str:
+    buckets: dict[str, list[dict]] = {group["id"]: [] for group in THEMATIC_GROUPS}
+    for chapter in module["chapters"]:
+        group = classify_chapter(chapter)
+        buckets[group["id"]].append(chapter)
+    groups = []
+    for group in THEMATIC_GROUPS:
+        chapters = buckets[group["id"]]
+        if not chapters:
+            continue
+        links = "".join(
+            f'<a href="{escape(rel_href(current_path, module_chapter_path(module, chapter)))}">'
+            f'<strong>{escape(chapter["title"])}</strong><span>{escape(chapter["summary"])}</span></a>'
+            for chapter in chapters
+        )
+        groups.append(f"""
+<article class="topic-index-group" id="indice-{escape(group['id'])}">
+  <h3>{escape(group['title'])}</h3>
+  <p>{escape(group['summary'])}</p>
+  <div>{links}</div>
+</article>
+""")
+    return f"""
+<section class="topic-index">
+  <div class="section-heading">
+    <span class="eyebrow">Indice por tema</span>
+    <h2>Escolha o assunto antes do artigo</h2>
+    <p>A trilha abaixo organiza a lei por materia tributaria. Ela evita que o leitor entre direto em um inciso sem saber se esta diante da regra geral, de excecao, beneficio, apuracao ou prova.</p>
+  </div>
+  <div class="topic-index-grid">{''.join(groups)}</div>
+</section>
+"""
+
+
 def render_module_index(module: dict, sources: dict, layout_func) -> str:
     path = module_index_path(module)
     chapter_cards = []
@@ -1312,6 +1625,7 @@ def render_module_index(module: dict, sources: dict, layout_func) -> str:
     <p>Esta pagina complementa a estrutura aprovada e preserva a pagina principal ja publicada.</p>
   </div>
 </section>
+{render_module_topic_index(module, path)}
 <section class="section-wrap">
   <div class="section-heading">
     <span class="eyebrow">Capitulos</span>

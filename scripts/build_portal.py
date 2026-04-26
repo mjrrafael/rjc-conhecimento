@@ -40,6 +40,93 @@ SIGNAL_LABELS = {
     "efd/sped": "EFD/SPED",
 }
 
+SIGNAL_STUDY = {
+    "exportacao": {
+        "summary": "Organiza imunidade, nao incidencia, saida com fim especifico de exportacao, manutencao de creditos e prova de embarque.",
+        "law": "Leia primeiro a regra constitucional ou legal de nao tributacao; depois confira convenio, regulamento estadual, DU-E, NF-e e CFOP.",
+        "proof": "Dossie com pedido, contrato, invoice quando houver, NF-e, comprovante de exportacao, DU-E e conciliacao na EFD.",
+        "risk": "Tratar remessa interna como exportacao sem comprovar fim especifico, destinatario, prazo e documento de saida ao exterior.",
+    },
+    "aliquota": {
+        "summary": "Separa aliquota nominal, carga efetiva, reducao de base, adicional, vigencia e excecao por produto ou operacao.",
+        "law": "Confirme a regra geral e so depois leia anexos, tabelas, TIPI, RICMS ou ato especifico que altere a carga.",
+        "proof": "Cadastro de produto, NCM, CST, memoria de calculo, XML e periodo de vigencia aplicado.",
+        "risk": "Aplicar aliquota atual em fato gerador antigo ou confundir reducao de base com mudanca da aliquota.",
+    },
+    "protege/fundo": {
+        "summary": "Mostra beneficios condicionados a fundo, contrapartida, termo, regime especial ou pagamento separado.",
+        "law": "Leia a norma do beneficio junto com a norma do fundo; a fruicao costuma depender de recolhimento, adesao ou controle proprio.",
+        "proof": "Termo, credenciamento, guia do fundo, demonstrativo de apuracao e vinculacao ao beneficio usado.",
+        "risk": "Usar o beneficio e esquecer a contrapartida que mantem a fruicao defensavel.",
+    },
+    "isencao": {
+        "summary": "Localiza hipoteses em que a lei afasta a cobranca dentro de destinatario, produto, operacao e periodo definidos.",
+        "law": "Leia a isencao literalmente: sujeito, objeto, condicao, prazo, manutencao ou estorno de credito.",
+        "proof": "Documento fiscal com CST correto, fundamento legal, cadastro da operacao e evidencia da condicao.",
+        "risk": "Ampliar isencao por analogia para produto ou destinatario que a lei nao incluiu.",
+    },
+    "regime especial": {
+        "summary": "Reune tratamentos que exigem ato concessivo, credenciamento, pedido, autorizacao ou procedimento diferenciado.",
+        "law": "Diferencie regra geral de ato individual ou setorial; regime especial precisa ser lido junto com suas condicoes.",
+        "proof": "Ato concessivo, vigencia, anexos, relatorios exigidos e rastreio das operacoes abrangidas.",
+        "risk": "Continuar aplicando regime vencido, revogado ou fora da operacao autorizada.",
+    },
+    "suspensao": {
+        "summary": "Indica casos em que a exigencia fica parada enquanto a condicao legal for cumprida.",
+        "law": "Procure o evento que suspende, o evento que encerra a suspensao e a consequencia do descumprimento.",
+        "proof": "Nota fiscal, termo, retorno, industrializacao, exportacao, controle de prazo e baixa documental.",
+        "risk": "Tratar suspensao como isencao definitiva e nao controlar prazo ou destino.",
+    },
+    "diferimento": {
+        "summary": "Mapeia transferencia do momento de pagamento para etapa posterior ou responsavel definido pela lei.",
+        "law": "Identifique quem deixa de recolher, quem recolhe depois, em qual evento e com qual documento.",
+        "proof": "XML, destinatario, evento posterior, memoria do imposto diferido e conciliacao de estoque ou producao.",
+        "risk": "Perder o evento de encerramento e deixar o imposto sem recolhimento ou sem prova.",
+    },
+    "nao incidencia": {
+        "summary": "Mostra situacoes fora do campo de incidencia, antes de discutir beneficio fiscal.",
+        "law": "Comece pelo fato gerador. Se ele nao ocorre, a conclusao e de nao incidencia, nao de favor fiscal.",
+        "proof": "Natureza da operacao, contrato, documento fiscal, livro e demonstracao de que o fato tributavel nao nasceu.",
+        "risk": "Usar CST de beneficio quando o correto seria demonstrar ausencia de fato gerador.",
+    },
+    "credito outorgado": {
+        "summary": "Agrupa credito concedido pela lei como tecnica de beneficio, incentivo ou carga efetiva.",
+        "law": "Leia percentual, base do credito, condicoes, vedacoes, estornos, acumulacao com outros beneficios e fundo exigido.",
+        "proof": "Memoria do credito, EFD, ajuste, XML, termo de opcao quando houver e conciliacao com o imposto devido.",
+        "risk": "Somar credito outorgado com outro beneficio que a lei manda excluir.",
+    },
+    "cBenef": {
+        "summary": "Conecta beneficio fiscal ao codigo declarado no documento fiscal eletronico.",
+        "law": "Leia a regra material do beneficio antes de preencher o codigo; cBenef e reflexo documental, nao origem da tese.",
+        "proof": "XML, cadastro fiscal, tabela da UF, dispositivo legal e rotina de atualizacao.",
+        "risk": "Informar codigo de beneficio sem que a operacao cumpra a norma que o sustenta.",
+    },
+    "efd/sped": {
+        "summary": "Leva a leitura legal para escrituracao, declaracao, ajustes, registros e cruzamentos digitais.",
+        "law": "Depois da regra material, confira como ela aparece na EFD, EFD-Contribuicoes, ECF, DCTFWeb ou Reinf.",
+        "proof": "Arquivo transmitido, recibo, registros, ajustes, memoria e conciliacao com XML, folha ou contabilidade.",
+        "risk": "A lei estar correta no parecer, mas incoerente no arquivo digital entregue ao fisco.",
+    },
+    "monofasico": {
+        "summary": "Separa concentracao de tributacao por cadeia, produto, NCM e etapa de circulacao.",
+        "law": "Confira se a etapa anterior concentrou a carga e se a etapa atual esta na regra de aliquota zero ou tratamento especifico.",
+        "proof": "NCM, fornecedor, XML, CST, EFD-Contribuicoes e memoria por produto.",
+        "risk": "Aplicar monofasico por familia comercial sem confirmar NCM e etapa da cadeia.",
+    },
+    "substituicao tributaria": {
+        "summary": "Organiza responsabilidade por recolhimento antecipado ou posterior, MVA, pauta, base presumida e ressarcimento.",
+        "law": "Leia protocolo, convenio, RICMS, lista de mercadorias, base, responsavel, encerramento e direito de complemento ou ressarcimento.",
+        "proof": "XML, NCM/CEST, pauta ou MVA, GNRE/guia, estoque, EFD e memoria por item.",
+        "risk": "Aplicar ST por descricao parecida, sem mercadoria, CEST, destinatario e operacao enquadrados.",
+    },
+    "reducao de base": {
+        "summary": "Mostra quando a lei reduz a base para atingir carga efetiva menor, normalmente com condicoes e vedacoes.",
+        "law": "Leia percentual de reducao, carga final, operacoes abrangidas, manutencao de credito e exclusoes.",
+        "proof": "Calculo da base reduzida, XML, CST, fundamento legal, NCM e demonstrativo da carga efetiva.",
+        "risk": "Informar aliquota menor em vez de demonstrar a base reduzida e sua condicao legal.",
+    },
+}
+
 FEDERAL_THEME_LABELS = {
     "pis_cofins": "PIS e Cofins",
     "ipi": "IPI",
@@ -321,14 +408,67 @@ def signal_badges(signals: dict, limit: int = 6) -> str:
     )
 
 
+def signal_detail(key: str) -> dict:
+    label = SIGNAL_LABELS.get(key, key)
+    default = {
+        "summary": "Tema recorrente no texto legal que precisa ser conectado a regra, excecao, documento e prova.",
+        "law": "Leia a norma material, depois o regulamento, anexos e obrigacoes acessorias que fazem a regra aparecer na rotina.",
+        "proof": "Guarde lei, documento fiscal, memoria de calculo, declaracao e evidencia operacional da condicao aplicada.",
+        "risk": "Aplicar a palavra encontrada no acervo sem confirmar se o artigo realmente regula a operacao concreta.",
+    }
+    detail = dict(default)
+    detail.update(SIGNAL_STUDY.get(key, {}))
+    detail["label"] = label
+    return detail
+
+
+def signal_anchor(key: str) -> str:
+    return f"tema-{slug(key)}"
+
+
+def signal_sections(items: list[tuple[str, int]]) -> str:
+    sections = []
+    for key, value in items:
+        detail = signal_detail(key)
+        sections.append(f"""
+<article class="signal-study searchable-card" id="{escape(signal_anchor(key))}"
+         data-search="{escape(detail['label'] + ' ' + detail['summary'] + ' ' + key)}">
+  <div>
+    <span class="eyebrow">Capitulo tematico</span>
+    <h3>{escape(detail['label'])}</h3>
+    <p>{escape(detail['summary'])}</p>
+  </div>
+  <dl class="signal-study-grid">
+    <dt>Como ler a lei</dt><dd>{escape(detail['law'])}</dd>
+    <dt>Prova documental</dt><dd>{escape(detail['proof'])}</dd>
+    <dt>Risco comum</dt><dd>{escape(detail['risk'])}</dd>
+    <dt>Ocorrencias</dt><dd>{fmt_num(value)} sinais no texto usado nesta trilha.</dd>
+  </dl>
+</article>
+""")
+    if not sections:
+        return ""
+    return f"""
+<section class="signal-study-list">
+  <div class="section-heading">
+    <span class="eyebrow">Capitulos por tema</span>
+    <h2>Leia o sinal dentro de uma materia</h2>
+    <p>Cada item abaixo transforma o termo encontrado na lei em um roteiro de estudo: regra, excecao, prova, risco e continuidade.</p>
+  </div>
+  {''.join(sections)}
+</section>
+"""
+
+
 def signal_grid(signals: dict, title: str, intro: str) -> str:
     items = sorted(signals.items(), key=lambda item: item[1], reverse=True)[:10]
     if not items:
         cards = '<article class="signal-card"><strong>Sem sinais suficientes</strong><span>Nao ha sinais materiais publicados nesta pagina.</span></article>'
     else:
         cards = "".join(
-            f'<article class="signal-card"><strong>{escape(SIGNAL_LABELS.get(key, key))}</strong>'
-            f'<span>{fmt_num(value)} ocorrencias na legislacao</span></article>'
+            f'<a class="signal-card" href="#{escape(signal_anchor(key))}"><strong>{escape(signal_detail(key)["label"])}</strong>'
+            f'<span>{escape(signal_detail(key)["summary"])}</span>'
+            f'<small>{fmt_num(value)} ocorrencias na legislacao</small></a>'
             for key, value in items
         )
     return f"""
@@ -340,6 +480,7 @@ def signal_grid(signals: dict, title: str, intro: str) -> str:
   </div>
   <div class="signal-grid">{cards}</div>
 </section>
+{signal_sections(items)}
 """
 
 

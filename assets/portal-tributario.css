@@ -498,10 +498,21 @@ a.state-card:hover {
   border: 1px solid var(--line);
   border-radius: 8px;
   background: var(--surface);
+  color: inherit;
+  text-decoration: none;
+  transition: border-color 0.16s ease, transform 0.16s ease, box-shadow 0.16s ease;
+}
+
+.signal-card:hover,
+.signal-card:focus {
+  border-color: rgba(177, 99, 12, 0.45);
+  box-shadow: 0 12px 26px rgba(15, 23, 42, 0.08);
+  transform: translateY(-1px);
 }
 
 .signal-card strong,
-.signal-card span {
+.signal-card span,
+.signal-card small {
   display: block;
 }
 
@@ -514,6 +525,110 @@ a.state-card:hover {
   margin-top: 8px;
   color: var(--muted);
   font-size: 0.92rem;
+}
+
+.signal-card small {
+  margin-top: 10px;
+  color: var(--amber);
+  font-size: 0.78rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.signal-study-list,
+.topic-index {
+  display: grid;
+  gap: 16px;
+}
+
+.signal-study {
+  scroll-margin-top: 96px;
+  display: grid;
+  grid-template-columns: minmax(220px, 0.8fr) minmax(0, 1.2fr);
+  gap: 18px;
+  padding: 20px;
+  border: 1px solid var(--line);
+  border-left: 4px solid var(--green);
+  border-radius: 8px;
+  background: var(--surface);
+}
+
+.signal-study:target,
+.article-subunit:target {
+  outline: 3px solid rgba(177, 99, 12, 0.22);
+  outline-offset: 3px;
+}
+
+.signal-study h3 {
+  margin: 4px 0 8px;
+  color: var(--navy);
+}
+
+.signal-study p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.signal-study-grid {
+  display: grid;
+  grid-template-columns: 150px minmax(0, 1fr);
+  gap: 10px 14px;
+  margin: 0;
+}
+
+.signal-study-grid dt {
+  color: var(--navy);
+  font-weight: 850;
+}
+
+.signal-study-grid dd {
+  margin: 0;
+  color: var(--ink);
+}
+
+.topic-index-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.topic-index-group {
+  padding: 18px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+}
+
+.topic-index-group h3 {
+  margin: 0 0 8px;
+  color: var(--navy);
+}
+
+.topic-index-group p {
+  margin: 0 0 12px;
+  color: var(--muted);
+}
+
+.topic-index-group div {
+  display: grid;
+  gap: 8px;
+}
+
+.topic-index-group a {
+  display: grid;
+  gap: 3px;
+  padding: 10px 12px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  color: var(--navy);
+  background: var(--soft-blue);
+  text-decoration: none;
+}
+
+.topic-index-group a span {
+  color: var(--muted);
+  font-size: 0.88rem;
+  line-height: 1.35;
 }
 
 .signals-inline {
@@ -756,6 +871,8 @@ a.state-card:hover {
 
 .legal-document,
 .analysis-panel {
+  max-width: 100%;
+  min-width: 0;
   padding: 22px;
   background: var(--surface);
   border: 1px solid var(--line);
@@ -772,11 +889,16 @@ a.state-card:hover {
   border-bottom: 1px solid var(--line);
 }
 
+.document-heading > div {
+  min-width: 0;
+}
+
 .document-heading h2,
 .analysis-panel h2 {
   margin: 4px 0 8px;
   color: var(--navy);
   font-size: 1.35rem;
+  overflow-wrap: anywhere;
 }
 
 .document-heading p,
@@ -832,6 +954,161 @@ a.state-card:hover {
   line-height: 1.65;
   white-space: pre-wrap;
   overflow-wrap: anywhere;
+}
+
+.article-caput {
+  margin-top: 12px;
+}
+
+.article-context-note {
+  display: grid;
+  grid-template-columns: 170px minmax(0, 1fr);
+  gap: 12px;
+  margin: 8px 0 14px;
+  padding: 12px 14px;
+  border: 1px solid rgba(47, 125, 87, 0.24);
+  border-radius: 8px;
+  background: var(--green-soft);
+}
+
+.article-context-note strong {
+  color: var(--green);
+}
+
+.article-context-note span {
+  color: var(--ink);
+}
+
+.article-index {
+  margin: 12px 0 16px;
+  padding: 14px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #f8fafc;
+}
+
+.article-index strong {
+  display: block;
+  color: var(--navy);
+  font-size: 0.92rem;
+  text-transform: uppercase;
+}
+
+.article-index p {
+  margin: 6px 0 12px;
+  color: var(--muted);
+}
+
+.article-index-links {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.article-index-links.compact {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.article-index-links a,
+.article-index-missing {
+  display: grid;
+  gap: 3px;
+  min-height: 36px;
+  padding: 8px 10px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: var(--surface);
+  color: var(--navy);
+  text-decoration: none;
+}
+
+.article-index-links.compact a,
+.article-index-links.compact .article-index-missing {
+  min-height: 32px;
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 9px;
+}
+
+.article-index-links a span,
+.article-index-missing span {
+  font-weight: 850;
+}
+
+.article-index-links a small,
+.article-index-missing small {
+  color: var(--muted);
+  font-size: 0.78rem;
+  line-height: 1.25;
+}
+
+.article-index-missing {
+  color: var(--muted);
+  background: #f3f4f6;
+}
+
+.article-index-note {
+  margin: 10px 0 0;
+  color: var(--muted);
+  font-size: 0.84rem;
+}
+
+.article-subunits {
+  display: grid;
+  gap: 12px;
+  margin-top: 14px;
+}
+
+.article-subunit {
+  scroll-margin-top: 96px;
+  padding: 12px 14px;
+  border: 1px solid #eadfce;
+  border-radius: 8px;
+  background: #fffaf1;
+}
+
+.article-subunit-marker {
+  margin-bottom: 8px;
+  color: var(--amber);
+  font-size: 0.8rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.chapter-map {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  padding: 14px 16px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+}
+
+.chapter-map strong {
+  color: var(--navy);
+}
+
+.chapter-map div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.chapter-map a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 32px;
+  padding: 6px 10px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  color: var(--navy);
+  background: var(--soft-blue);
+  font-size: 0.82rem;
+  font-weight: 800;
+  text-decoration: none;
 }
 
 .law-pre {
@@ -1006,6 +1283,8 @@ a.state-card:hover {
   .timeline,
   .matrix-grid,
   .signal-grid,
+  .signal-study,
+  .topic-index-grid,
   .department-grid,
   .source-grid {
     grid-template-columns: 1fr 1fr;
@@ -1064,10 +1343,20 @@ a.state-card:hover {
   .timeline,
   .matrix-grid,
   .signal-grid,
+  .signal-study,
+  .signal-study-grid,
+  .topic-index-grid,
+  .article-context-note,
+  .article-index-links,
   .department-grid,
   .source-grid,
   .document-heading {
     grid-template-columns: 1fr;
+  }
+
+  .chapter-map {
+    align-items: flex-start;
+    flex-direction: column;
   }
 
   .document-actions {
@@ -1110,7 +1399,13 @@ a.state-card:hover {
   .source-list a,
   .portal-card p,
   .state-card p,
-  .matrix-card p {
+  .matrix-card p,
+  .signal-study p,
+  .signal-study-grid dd,
+  .topic-index-group p,
+  .topic-index-group a span,
+  .article-context-note span,
+  .article-index p {
     width: calc(100vw - 90px);
     max-width: 100%;
     word-break: break-word;
