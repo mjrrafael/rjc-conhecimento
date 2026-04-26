@@ -1427,6 +1427,10 @@ def state_page(state: dict, data: dict) -> str:
 <section class="matrix-section">
   <h2>Benefícios fiscais por grupo</h2>
   <div class="matrix-grid">
+    <a class="matrix-card searchable-card" href="ba/legislacao/mapa-revisado-beneficios.html" data-search="Bahia mapa revisado benefícios fiscais ICMS LC 160 Convênio 190 DESENVOLVE PROIND PRONAVAL crédito presumido EFD">
+      <h3>Mapa revisado dos benefícios</h3>
+      <p>Rotas normativas por espécie: LC 160, programas, crédito presumido, rural, informática, ST, EFD e prova do benefício.</p>
+    </a>
     <a class="matrix-card searchable-card" href="ba/legislacao/desenvolve.html" data-search="Bahia DESENVOLVE indústria implantação ampliação diferimento dilação desconto">
       <h3>Indústria, implantação e ampliação</h3>
       <p>DESENVOLVE: diferimento, dilação de prazo, desconto, resolução, investimento, recolhimento e perda do benefício.</p>
@@ -1485,6 +1489,10 @@ def state_page(state: dict, data: dict) -> str:
 <section class="matrix-section">
   <h2>Benefícios fiscais por grupo</h2>
   <div class="matrix-grid">
+    <a class="matrix-card searchable-card" href="df/legislacao/mapa-revisado-beneficios.html" data-search="Distrito Federal DF mapa revisado benefícios ICMS Cadernos Anexo I LC 160 EMPREGA-DF PRÓ-DF Desenvolve-DF EFD">
+      <h3>Mapa revisado dos benefícios</h3>
+      <p>Cadernos do Anexo I, LC 160, regime especial, crédito outorgado, EMPREGA-DF, PRÓ-DF, Desenvolve-DF e EFD.</p>
+    </a>
     <a class="matrix-card searchable-card" href="df/legislacao/regime-especial-apuracao.html" data-search="Distrito Federal DF atacado atacadista regime especial apuração crédito outorgado Lei 5005 Decreto 39753">
       <h3>Atacado e crédito outorgado</h3>
       <p>Regime especial de apuração, cálculo favorecido, operações interestaduais, condições de fruição e perda do benefício.</p>
@@ -1543,6 +1551,10 @@ def state_page(state: dict, data: dict) -> str:
 <section class="matrix-section">
   <h2>Benefícios fiscais por grupo</h2>
   <div class="matrix-grid">
+    <a class="matrix-card searchable-card" href="mt/legislacao/mapa-revisado-beneficios.html" data-search="Mato Grosso MT mapa revisado benefícios ICMS art 12 RICMS LC 631 PRODEIC cBenef anexos IV V VI VII VIII">
+      <h3>Mapa revisado dos benefícios</h3>
+      <p>Art. 12 do RICMS/MT, anexos IV a VIII, LC 631/2019, PRODEIC, cBenef, ST, estimativa e prova fiscal.</p>
+    </a>
     <a class="matrix-card searchable-card" href="mt/legislacao/prodeic-desenvolvimento.html" data-search="Mato Grosso MT PRODEIC desenvolvimento econômico indústria comércio incentivo programa estadual">
       <h3>PRODEIC e desenvolvimento</h3>
       <p>Programas, módulos, resoluções, condições de fruição, crédito, redução, prazo, metas e prova de cumprimento.</p>

@@ -882,6 +882,12 @@ window.RJC_SEARCH = [
     "tags": "BA Bahia ICMS benefícios fiscais Prova digital Documentos fiscais, EFD e prova dos incentivos Como a tese aparece no XML, nos registros da EFD e nos códigos de ajuste dos benefícios baianos."
   },
   {
+    "title": "Bahia: Mapa revisado dos benefícios de ICMS da Bahia",
+    "url": "estados/ba/legislacao/mapa-revisado-beneficios.html",
+    "summary": "Revisão das espécies e rotas normativas de benefícios baianos: LC 160, DESENVOLVE, PROIND, PRONAVAL, crédito presumido, informática, rural, ST e EFD.",
+    "tags": "BA Bahia ICMS benefícios fiscais Inventário de benefícios Mapa revisado dos benefícios de ICMS da Bahia Revisão das espécies e rotas normativas de benefícios baianos: LC 160, DESENVOLVE, PROIND, PRONAVAL, crédito presumido, informática, rural, ST e EFD."
+  },
+  {
     "title": "Bahia: Fiscalização, regularidade e perda de benefício",
     "url": "estados/ba/legislacao/fiscalizacao-riscos.html",
     "summary": "Pontos de controle que fazem uma tese sobreviver: cadastro, regularidade, cumprimento, prova e coerência.",
@@ -972,6 +978,12 @@ window.RJC_SEARCH = [
     "tags": "DF Distrito Federal ICMS benefícios fiscais Prova digital Documentos fiscais, EFD ICMS/IPI e prova Como a tese aparece no documento fiscal, na escrituração, nos registros digitais e no dossiê de auditoria."
   },
   {
+    "title": "Distrito Federal: Mapa revisado dos benefícios de ICMS do Distrito Federal",
+    "url": "estados/df/legislacao/mapa-revisado-beneficios.html",
+    "summary": "Revisão das espécies e rotas normativas do DF: Cadernos do Anexo I, LC 160, regime especial, crédito outorgado, EMPREGA-DF, PRÓ-DF, Desenvolve-DF e EFD.",
+    "tags": "DF Distrito Federal ICMS benefícios fiscais Inventário de benefícios Mapa revisado dos benefícios de ICMS do Distrito Federal Revisão das espécies e rotas normativas do DF: Cadernos do Anexo I, LC 160, regime especial, crédito outorgado, EMPREGA-DF, PRÓ-DF, Desenvolve-DF e EFD."
+  },
+  {
     "title": "Distrito Federal: Fiscalização, perda de benefício e defesa documental",
     "url": "estados/df/legislacao/fiscalizacao-riscos.html",
     "summary": "Pontos que normalmente decidem a sobrevivência de um benefício: regularidade, condição, prazo, prova e coerência entre sistemas.",
@@ -1060,6 +1072,12 @@ window.RJC_SEARCH = [
     "url": "estados/mt/legislacao/documentos-cbenef-efd-prova.html",
     "summary": "Como o benefício aparece no XML, nos códigos de benefício, na escrituração e no dossiê mensal de auditoria.",
     "tags": "MT Mato Grosso ICMS benefícios fiscais Prova digital Documentos fiscais, cBenef, EFD e prova Como o benefício aparece no XML, nos códigos de benefício, na escrituração e no dossiê mensal de auditoria."
+  },
+  {
+    "title": "Mato Grosso: Mapa revisado dos benefícios de ICMS de Mato Grosso",
+    "url": "estados/mt/legislacao/mapa-revisado-beneficios.html",
+    "summary": "Revisão das espécies e rotas normativas do MT: art. 12 do RICMS, anexos IV a VIII, LC 631/2019, PRODEIC, cBenef, ST e estimativa.",
+    "tags": "MT Mato Grosso ICMS benefícios fiscais Inventário de benefícios Mapa revisado dos benefícios de ICMS de Mato Grosso Revisão das espécies e rotas normativas do MT: art. 12 do RICMS, anexos IV a VIII, LC 631/2019, PRODEIC, cBenef, ST e estimativa."
   },
   {
     "title": "Mato Grosso: Fiscalização, penalidades e perda de benefício",

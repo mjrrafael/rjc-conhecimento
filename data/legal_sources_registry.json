@@ -1321,7 +1321,8 @@
           "module_id": "state-ba",
           "module_title": "Bahia: ICMS e benefícios fiscais em tela",
           "chapters": [
-            "rural-cesta-credito"
+            "rural-cesta-credito",
+            "mapa-revisado-beneficios"
           ]
         }
       ]
@@ -1351,7 +1352,8 @@
           "module_id": "state-ba",
           "module_title": "Bahia: ICMS e benefícios fiscais em tela",
           "chapters": [
-            "desenvolve"
+            "desenvolve",
+            "mapa-revisado-beneficios"
           ]
         }
       ]
@@ -1412,7 +1414,8 @@
           "module_id": "state-ba",
           "module_title": "Bahia: ICMS e benefícios fiscais em tela",
           "chapters": [
-            "programas-setoriais"
+            "programas-setoriais",
+            "mapa-revisado-beneficios"
           ]
         }
       ]
@@ -1442,7 +1445,8 @@
           "module_id": "state-ba",
           "module_title": "Bahia: ICMS e benefícios fiscais em tela",
           "chapters": [
-            "programas-setoriais"
+            "programas-setoriais",
+            "mapa-revisado-beneficios"
           ]
         }
       ]
@@ -1502,7 +1506,8 @@
           "module_id": "state-ba",
           "module_title": "Bahia: ICMS e benefícios fiscais em tela",
           "chapters": [
-            "programas-setoriais"
+            "programas-setoriais",
+            "mapa-revisado-beneficios"
           ]
         }
       ]
@@ -1562,7 +1567,8 @@
           "module_id": "state-ba",
           "module_title": "Bahia: ICMS e benefícios fiscais em tela",
           "chapters": [
-            "programas-setoriais"
+            "programas-setoriais",
+            "mapa-revisado-beneficios"
           ]
         }
       ]
@@ -1593,7 +1599,8 @@
           "module_title": "Bahia: ICMS e benefícios fiscais em tela",
           "chapters": [
             "beneficios-matriz-lc160",
-            "rural-cesta-credito"
+            "rural-cesta-credito",
+            "mapa-revisado-beneficios"
           ]
         }
       ]
@@ -1623,7 +1630,8 @@
           "module_id": "state-ba",
           "module_title": "Bahia: ICMS e benefícios fiscais em tela",
           "chapters": [
-            "beneficios-matriz-lc160"
+            "beneficios-matriz-lc160",
+            "mapa-revisado-beneficios"
           ]
         }
       ]
@@ -1655,6 +1663,7 @@
           "chapters": [
             "desenvolve",
             "documentos-efd-prova",
+            "mapa-revisado-beneficios",
             "fiscalizacao-riscos"
           ]
         }
@@ -1723,6 +1732,7 @@
             "beneficios-matriz-lc160",
             "substituicao-tributaria-antecipacao",
             "documentos-efd-prova",
+            "mapa-revisado-beneficios",
             "fiscalizacao-riscos"
           ]
         }
@@ -1753,7 +1763,8 @@
           "module_id": "state-df",
           "module_title": "Distrito Federal: ICMS e benefícios fiscais em tela",
           "chapters": [
-            "beneficios-matriz-lc160"
+            "beneficios-matriz-lc160",
+            "mapa-revisado-beneficios"
           ]
         }
       ]
@@ -1784,6 +1795,7 @@
           "module_title": "Distrito Federal: ICMS e benefícios fiscais em tela",
           "chapters": [
             "regime-especial-apuracao",
+            "mapa-revisado-beneficios",
             "fiscalizacao-riscos"
           ]
         }
@@ -1816,6 +1828,7 @@
           "chapters": [
             "regime-especial-apuracao",
             "beneficios-setoriais-agro-atacado",
+            "mapa-revisado-beneficios",
             "fiscalizacao-riscos"
           ]
         }
@@ -1847,6 +1860,7 @@
           "module_title": "Distrito Federal: ICMS e benefícios fiscais em tela",
           "chapters": [
             "emprega-df-prodf-desenvolve",
+            "mapa-revisado-beneficios",
             "fiscalizacao-riscos"
           ]
         }
@@ -1937,7 +1951,8 @@
           "module_id": "state-df",
           "module_title": "Distrito Federal: ICMS e benefícios fiscais em tela",
           "chapters": [
-            "documentos-efd-prova"
+            "documentos-efd-prova",
+            "mapa-revisado-beneficios"
           ]
         }
       ]
@@ -2027,7 +2042,8 @@
           "module_id": "state-df",
           "module_title": "Distrito Federal: ICMS e benefícios fiscais em tela",
           "chapters": [
-            "emprega-df-prodf-desenvolve"
+            "emprega-df-prodf-desenvolve",
+            "mapa-revisado-beneficios"
           ]
         }
       ]
@@ -2098,6 +2114,7 @@
             "agro-cesta-diferimento",
             "st-estimativa-anexos",
             "documentos-cbenef-efd-prova",
+            "mapa-revisado-beneficios",
             "fiscalizacao-riscos"
           ]
         }
@@ -2130,6 +2147,7 @@
           "chapters": [
             "beneficios-matriz-lc160",
             "prodeic-desenvolvimento",
+            "mapa-revisado-beneficios",
             "fiscalizacao-riscos"
           ]
         }
@@ -2163,7 +2181,8 @@
             "prodeic-desenvolvimento",
             "isencoes-reducoes-creditos",
             "agro-cesta-diferimento",
-            "documentos-cbenef-efd-prova"
+            "documentos-cbenef-efd-prova",
+            "mapa-revisado-beneficios"
           ]
         }
       ]
