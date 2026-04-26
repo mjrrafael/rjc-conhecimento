@@ -86,7 +86,7 @@ window.RJC_SEARCH = [
   {
     "title": "Bahia: ICMS e benefícios fiscais",
     "url": "estados/ba.html",
-    "summary": "Página estadual estruturada para futura publicação por UF, com foco em ICMS, benefícios, documento e prova.",
+    "summary": "Página estadual com legislação de ICMS em tela, benefícios, documento e prova.",
     "tags": "BA Bahia Bahia ICMS beneficios fiscais RICMS DECRETOS ICMS_ANEXOS ICMS_LEIS IPVA ITCD OUTROS RICMS TAXAS"
   },
   {
@@ -826,6 +826,96 @@ window.RJC_SEARCH = [
     "url": "federal/legislacao/atos/decreto-8373-2014-esocial.html",
     "summary": "Institui o Sistema de Escrituracao Digital das Obrigacoes Fiscais, Previdenciarias e Trabalhistas.",
     "tags": "decreto-8373-2014-esocial Federal Decreto do eSocial"
+  },
+  {
+    "title": "Bahia: ICMS e benefícios fiscais em tela",
+    "url": "estados/ba/legislacao/index.html",
+    "summary": "Lei do ICMS, RICMS, anexos, substituição tributária, DESENVOLVE, PROIND, PRONAVAL, crédito presumido, informática, eletrônica, LC 160 e EFD.",
+    "tags": "BA Bahia ICMS RICMS benefícios fiscais alíquotas base cálculo substituição tributária ST DESENVOLVE PROIND PRONAVAL crédito presumido informática eletrônica EFD SPED LC 160 Convênio 190"
+  },
+  {
+    "title": "Bahia: ICMS/BA: incidência, não incidência e contribuinte",
+    "url": "estados/ba/legislacao/icms-regra-matriz.html",
+    "summary": "A regra maior da Bahia: quando o ICMS nasce, quando não nasce e quem responde pelo imposto.",
+    "tags": "BA Bahia ICMS benefícios fiscais Regra matriz ICMS/BA: incidência, não incidência e contribuinte A regra maior da Bahia: quando o ICMS nasce, quando não nasce e quem responde pelo imposto."
+  },
+  {
+    "title": "Bahia: Base de cálculo, alíquotas, adicional e apuração",
+    "url": "estados/ba/legislacao/base-aliquota-apuracao.html",
+    "summary": "Como a operação vira base tributável, qual alíquota se aplica e como a Bahia trata carga efetiva e adicional.",
+    "tags": "BA Bahia ICMS benefícios fiscais Carga tributária Base de cálculo, alíquotas, adicional e apuração Como a operação vira base tributável, qual alíquota se aplica e como a Bahia trata carga efetiva e adicional."
+  },
+  {
+    "title": "Bahia: Benefícios fiscais: matriz, LC 160 e Convênio ICMS 190/2017",
+    "url": "estados/ba/legislacao/beneficios-matriz-lc160.html",
+    "summary": "Como a Bahia documenta os benefícios fiscais e financeiro-fiscais reinstituídos, listados e conectados ao CONFAZ.",
+    "tags": "BA Bahia ICMS benefícios fiscais Benefícios fiscais Benefícios fiscais: matriz, LC 160 e Convênio ICMS 190/2017 Como a Bahia documenta os benefícios fiscais e financeiro-fiscais reinstituídos, listados e conectados ao CONFAZ."
+  },
+  {
+    "title": "Bahia: DESENVOLVE: diferimento, dilação de prazo, desconto e obrigações",
+    "url": "estados/ba/legislacao/desenvolve.html",
+    "summary": "O principal programa baiano de desenvolvimento industrial lido como benefício condicionado e controlável.",
+    "tags": "BA Bahia ICMS benefícios fiscais Programa estadual DESENVOLVE: diferimento, dilação de prazo, desconto e obrigações O principal programa baiano de desenvolvimento industrial lido como benefício condicionado e controlável."
+  },
+  {
+    "title": "Bahia: PROIND, PRONAVAL, informática, eletrônica e crédito presumido",
+    "url": "estados/ba/legislacao/programas-setoriais.html",
+    "summary": "Benefícios setoriais baianos por cadeia econômica, com leitura de programa, ato, condição e prova.",
+    "tags": "BA Bahia ICMS benefícios fiscais Setores incentivados PROIND, PRONAVAL, informática, eletrônica e crédito presumido Benefícios setoriais baianos por cadeia econômica, com leitura de programa, ato, condição e prova."
+  },
+  {
+    "title": "Bahia: Substituição tributária, antecipação e Anexo 1 do RICMS/BA",
+    "url": "estados/ba/legislacao/substituicao-tributaria-antecipacao.html",
+    "summary": "Responsabilidade, mercadoria, CEST/NCM, MVA/pauta, antecipação e prova na cadeia.",
+    "tags": "BA Bahia ICMS benefícios fiscais Responsabilidade tributária Substituição tributária, antecipação e Anexo 1 do RICMS/BA Responsabilidade, mercadoria, CEST/NCM, MVA/pauta, antecipação e prova na cadeia."
+  },
+  {
+    "title": "Bahia: Crédito fiscal rural, cesta básica e cadeias agroalimentares",
+    "url": "estados/ba/legislacao/rural-cesta-credito.html",
+    "summary": "Tratamentos do Anexo 2 e leitura de benefícios ligados a produção rural, alimentos e insumos.",
+    "tags": "BA Bahia ICMS benefícios fiscais Agro e alimentos Crédito fiscal rural, cesta básica e cadeias agroalimentares Tratamentos do Anexo 2 e leitura de benefícios ligados a produção rural, alimentos e insumos."
+  },
+  {
+    "title": "Bahia: Documentos fiscais, EFD e prova dos incentivos",
+    "url": "estados/ba/legislacao/documentos-efd-prova.html",
+    "summary": "Como a tese aparece no XML, nos registros da EFD e nos códigos de ajuste dos benefícios baianos.",
+    "tags": "BA Bahia ICMS benefícios fiscais Prova digital Documentos fiscais, EFD e prova dos incentivos Como a tese aparece no XML, nos registros da EFD e nos códigos de ajuste dos benefícios baianos."
+  },
+  {
+    "title": "Bahia: Fiscalização, regularidade e perda de benefício",
+    "url": "estados/ba/legislacao/fiscalizacao-riscos.html",
+    "summary": "Pontos de controle que fazem uma tese sobreviver: cadastro, regularidade, cumprimento, prova e coerência.",
+    "tags": "BA Bahia ICMS benefícios fiscais Auditoria fiscal Fiscalização, regularidade e perda de benefício Pontos de controle que fazem uma tese sobreviver: cadastro, regularidade, cumprimento, prova e coerência."
+  },
+  {
+    "title": "Bahia: benefícios para indústria e implantação",
+    "url": "estados/ba/legislacao/desenvolve.html",
+    "summary": "Entrada direta para o capítulo temático correspondente, com texto legal em tela e análise aplicada.",
+    "tags": "BA Bahia ICMS benefícios fiscais DESENVOLVE dilação diferimento implantação ampliação indústria incentivo"
+  },
+  {
+    "title": "Bahia: eletrônicos, informática e automação",
+    "url": "estados/ba/legislacao/programas-setoriais.html",
+    "summary": "Entrada direta para o capítulo temático correspondente, com texto legal em tela e análise aplicada.",
+    "tags": "BA Bahia ICMS benefícios fiscais informática eletrônica automação PROIND Decreto 4316 indústria tecnologia"
+  },
+  {
+    "title": "Bahia: naval e PROIND",
+    "url": "estados/ba/legislacao/programas-setoriais.html",
+    "summary": "Entrada direta para o capítulo temático correspondente, com texto legal em tela e análise aplicada.",
+    "tags": "BA Bahia ICMS benefícios fiscais PRONAVAL PROIND naval indústria implantação incentivo fiscal"
+  },
+  {
+    "title": "Bahia: crédito presumido e outorgado",
+    "url": "estados/ba/legislacao/beneficios-matriz-lc160.html",
+    "summary": "Entrada direta para o capítulo temático correspondente, com texto legal em tela e análise aplicada.",
+    "tags": "BA Bahia ICMS benefícios fiscais crédito presumido crédito outorgado incentivo benefício LC 160 Convênio 190"
+  },
+  {
+    "title": "Bahia: substituição tributária por mercadoria",
+    "url": "estados/ba/legislacao/substituicao-tributaria-antecipacao.html",
+    "summary": "Entrada direta para o capítulo temático correspondente, com texto legal em tela e análise aplicada.",
+    "tags": "BA Bahia ICMS benefícios fiscais substituição tributária ST CEST MVA mercadoria antecipação"
   },
   {
     "title": "Manual de Documentos Fiscais Eletronicos",

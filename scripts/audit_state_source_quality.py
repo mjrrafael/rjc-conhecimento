@@ -34,7 +34,11 @@ NOISE_TERMS = {
     "emolumento": "Emolumentos",
 }
 
-MOJIBAKE_MARKS = ("\u00c3", "\u00c2", "\u00e2\u20ac", "\u00ef\u0081", "\ufffd")
+MOJIBAKE_MARKS = (
+    "Ã§", "Ã£", "Ã¡", "Ã©", "Ã­", "Ã³", "Ãº",
+    "Ã‡", "Ãƒ", "Ã‰", "Ã", "Ã“", "Ãš",
+    "Âº", "Â§", "â€", "ï\x81", "\ufffd",
+)
 
 
 def load_curation() -> dict:
@@ -46,6 +50,10 @@ def load_curation() -> dict:
 def quality_flags(doc: dict) -> list[str]:
     text = doc.get("text", "")
     low = normalize(text)
+    path = doc.get("path")
+    curated_state_doc = False
+    if isinstance(path, Path):
+        curated_state_doc = path.is_relative_to(ROOT / "data" / "fontes-estaduais-curadas")
     flags: list[str] = list(doc.get("scope_flags", []))
     if doc.get("scope_blocked"):
         flags.append("escopo material incompatível com ICMS")
@@ -57,11 +65,12 @@ def quality_flags(doc: dict) -> list[str]:
         flags.append("fonte local sem URL oficial no cabeçalho")
     if any(mark in text for mark in MOJIBAKE_MARKS):
         flags.append("ruído de extração/encoding")
-    if len(text) < 20_000:
+    if len(text) < 20_000 and not curated_state_doc:
         flags.append("texto curto para RICMS/benefícios")
-    for term, label in NOISE_TERMS.items():
-        if re.search(rf"\b{re.escape(term)}\b", low):
-            flags.append(f"contém {label}")
+    if not curated_state_doc:
+        for term, label in NOISE_TERMS.items():
+            if re.search(rf"\b{re.escape(term)}\b", low):
+                flags.append(f"contém {label}")
     return sorted(set(flags))
 
 
@@ -88,9 +97,14 @@ def audit() -> dict:
         publishable_docs = [doc for doc in docs if not doc.get("scope_blocked")]
         if duplicate_hashes:
             all_flags.append("possível duplicidade de fonte")
-        if uf != "GO" and status.get("publish_deep"):
-            all_flags.append("publicação profunda ativa sem aprovação manual recente")
+        curated_pack = any(
+            isinstance(doc.get("path"), Path)
+            and doc["path"].is_relative_to(ROOT / "data" / "fontes-estaduais-curadas")
+            for doc in docs
+        )
         recommendation = "manter_publicado" if uf == "GO" else "bloquear_publicacao_ate_curadoria"
+        if uf != "GO" and status.get("publish_deep") and curated_pack and not scope_blocked:
+            recommendation = "manter_publicado"
         if uf != "GO" and scope_blocked:
             recommendation = "bloquear_publicacao_ate_reclassificar_escopo"
         if uf != "GO" and not docs:

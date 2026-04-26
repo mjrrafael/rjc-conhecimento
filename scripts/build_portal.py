@@ -1406,6 +1406,64 @@ def state_page(state: dict, data: dict) -> str:
 """
         return layout(path, f'{display_name}: ICMS e benefícios fiscais', "Página estrutural por UF.", body, "estados")
     if has_pack:
+        if state["uf"] == "BA":
+            body = f"""
+{hero(f'{display_name}: ICMS e benefícios fiscais', 'Legislação estadual em tela: ICMS, benefícios fiscais, alíquotas, ST, documentos e prova por assunto.', state["uf"])}
+<section class="law-ledger">
+  <div>
+    <h2>Estado do estudo</h2>
+    <p>A Bahia está publicada em capítulos próprios, sem depender do inventário antigo. O caminho correto é abrir o índice estadual, ler a lei em tela e depois avançar para a análise aplicada.</p>
+  </div>
+  <div>
+    <h2>Primeira pergunta</h2>
+    <p>A operação está no campo de incidência do ICMS? Só depois disso faz sentido discutir isenção, redução, crédito outorgado, diferimento, incentivo ou substituição tributária.</p>
+  </div>
+  <div>
+    <h2>Prova antes de tese</h2>
+    <p>XML, cadastro do item, NCM, EFD, memória de cálculo, ato concessivo e dispositivo legal precisam sustentar a mesma conclusão.</p>
+  </div>
+</section>
+{state_legislation_teaser(state["uf"], path)}
+<section class="matrix-section">
+  <h2>Benefícios fiscais por grupo</h2>
+  <div class="matrix-grid">
+    <a class="matrix-card searchable-card" href="ba/legislacao/desenvolve.html" data-search="Bahia DESENVOLVE indústria implantação ampliação diferimento dilação desconto">
+      <h3>Indústria, implantação e ampliação</h3>
+      <p>DESENVOLVE: diferimento, dilação de prazo, desconto, resolução, investimento, recolhimento e perda do benefício.</p>
+    </a>
+    <a class="matrix-card searchable-card" href="ba/legislacao/programas-setoriais.html" data-search="Bahia informática eletrônica automação telecomunicações PROIND PRONAVAL naval crédito presumido">
+      <h3>Setores incentivados</h3>
+      <p>PROIND, PRONAVAL, informática, eletrônica, telecomunicações e crédito presumido lidos por cadeia econômica.</p>
+    </a>
+    <a class="matrix-card searchable-card" href="ba/legislacao/beneficios-matriz-lc160.html" data-search="Bahia benefícios fiscais LC 160 Convênio 190 isenção redução crédito outorgado crédito presumido">
+      <h3>Isenções, reduções e créditos</h3>
+      <p>Matriz dos benefícios listados, reinstituídos e documentados na lógica da LC 160/2017 e do Convênio ICMS 190/2017.</p>
+    </a>
+    <a class="matrix-card searchable-card" href="ba/legislacao/substituicao-tributaria-antecipacao.html" data-search="Bahia substituição tributária ST antecipação Anexo 1 CEST NCM MVA">
+      <h3>ST, antecipação e mercadorias</h3>
+      <p>Anexo 1 do RICMS/BA: mercadorias, responsabilidade, CEST/NCM, MVA, pauta e recolhimento antecipado.</p>
+    </a>
+    <a class="matrix-card searchable-card" href="ba/legislacao/rural-cesta-credito.html" data-search="Bahia agro alimentos rural cesta básica crédito fiscal produtor rural">
+      <h3>Agro, alimentos e cesta</h3>
+      <p>Anexo 2 e cadeias agroalimentares: crédito fiscal, produto, etapa, destinação, manutenção ou estorno.</p>
+    </a>
+    <a class="matrix-card searchable-card" href="ba/legislacao/documentos-efd-prova.html" data-search="Bahia EFD SPED XML incentivo código ajuste prova documento fiscal">
+      <h3>EFD, XML e prova digital</h3>
+      <p>Como o benefício aparece nos registros E110, E111, E115 e E116, e como montar prova mensal defensável.</p>
+    </a>
+  </div>
+</section>
+<section class="continuity">
+  <h2>Continuar a leitura</h2>
+  <div>
+    <a href="ba/legislacao/index.html">Abrir índice completo da Bahia</a>
+    <a href="../confaz/index.html">Entender CONFAZ e benefícios</a>
+    <a href="../federal/pis-cofins.html">Conectar com PIS/Cofins</a>
+    <a href="../biblioteca/index.html">Consultar manuais e painel</a>
+  </div>
+</section>
+"""
+            return layout(path, f'{display_name}: ICMS e benefícios fiscais', "ICMS baiano em tela por capítulos.", body, "estados")
         body = f"""
 {hero(f'{display_name}: ICMS e benefícios fiscais', 'Legislação estadual em tela: ICMS, benefícios fiscais, alíquotas, ST, documentos e prova por assunto.', state["uf"])}
 <section class="law-ledger">

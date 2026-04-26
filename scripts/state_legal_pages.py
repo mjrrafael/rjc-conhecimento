@@ -336,6 +336,212 @@ SIGNAL_TO_GROUP = {
     "cBenef": "prova",
 }
 
+CURATED_CATEGORY_BY_SOURCE_ID = {
+    "BA_LEI_7014_1996_ICMS": "ICMS_LEIS",
+    "BA_DEC_13780_2012_RICMS": "RICMS",
+    "BA_RICMS_ANEXO_1_ST_2026": "ICMS_ST",
+    "BA_RICMS_ANEXO_2_RURAL": "ICMS_BENEFICIOS",
+    "BA_LEI_7980_2001_DESENVOLVE": "ICMS_BENEFICIOS",
+    "BA_DEC_8205_2002_DESENVOLVE": "ICMS_BENEFICIOS",
+    "BA_DEC_18802_2018_PROIND": "ICMS_BENEFICIOS",
+    "BA_LEI_9829_2005_PRONAVAL": "ICMS_BENEFICIOS",
+    "BA_DEC_11015_2008_PRONAVAL": "ICMS_BENEFICIOS",
+    "BA_LEI_7025_1997_CREDITO_PRESUMIDO": "ICMS_BENEFICIOS",
+    "BA_DEC_6734_1997_CREDITO_PRESUMIDO": "ICMS_BENEFICIOS",
+    "BA_DEC_4316_1995_INFORMATICA_ELETRONICA": "ICMS_BENEFICIOS",
+    "BA_DEC_18270_2018_BENEFICIOS_LC160": "ICMS_BENEFICIOS",
+    "BA_DEC_18288_2018_BENEFICIOS_LC160": "ICMS_BENEFICIOS",
+    "BA_PORT_273_2014_EFD_INCENTIVOS": "INSTRUCOES_NORMATIVAS",
+}
+
+BA_CHAPTERS = [
+    {
+        "id": "icms-regra-matriz",
+        "title": "ICMS/BA: incidência, não incidência e contribuinte",
+        "summary": "A regra maior da Bahia: quando o ICMS nasce, quando não nasce e quem responde pelo imposto.",
+        "theme": "Regra matriz",
+        "refs": [
+            {"source": "BA_LEI_7014_1996_ICMS", "articles": ["1", "2", "3", "4", "5", "6"]},
+            {"source": "BA_DEC_13780_2012_RICMS", "articles": ["1", "2", "5"]},
+        ],
+        "analysis": [
+            "A leitura começa pela Lei nº 7.014/1996. Ela fixa o campo do ICMS baiano: circulação de mercadorias, transporte intermunicipal e interestadual e comunicação. Sem essa pergunta inicial, qualquer benefício vira palpite.",
+            "A não incidência do art. 3º deve ser separada de isenção. Na não incidência, o fato tributável não entra no campo do imposto; na isenção, o fato entra, mas a lei afasta a cobrança dentro de condições fechadas.",
+            "O RICMS entra como manual operacional: cadastro, inscrição, substituto/responsável e controle documental. A empresa precisa ligar o dispositivo legal à inscrição estadual, ao XML, à EFD e ao responsável pelo recolhimento.",
+        ],
+        "departments": "Fiscal define CFOP, CST/CSOSN, destinatário, contribuinte e responsável. Cadastro garante inscrição e regime. Jurídico valida não incidência, imunidade, responsabilidade e risco de autuação.",
+        "documents": "NF-e, CT-e, cadastro CAD-ICMS, contrato, pedido, comprovante de circulação/prestação, inscrição estadual, EFD e memória de enquadramento.",
+        "risks": "Chamar de benefício aquilo que é não incidência; aplicar regra de contribuinte habitual a operação eventual sem ler as exceções; tratar substituto tributário como simples emissor de documento.",
+    },
+    {
+        "id": "base-aliquota-apuracao",
+        "title": "Base de cálculo, alíquotas, adicional e apuração",
+        "summary": "Como a operação vira base tributável, qual alíquota se aplica e como a Bahia trata carga efetiva e adicional.",
+        "theme": "Carga tributária",
+        "refs": [
+            {"source": "BA_LEI_7014_1996_ICMS", "articles": ["15", "16", "16-A", "17", "18", "19"]},
+            {"source": "BA_DEC_13780_2012_RICMS", "keywords": ["base de cálculo", "alíquota", "apuração", "recolhimento"]},
+        ],
+        "analysis": [
+            "A alíquota não pode ser cadastrada isoladamente. Primeiro vem a base; depois a alíquota; depois adicionais, reduções, crédito, fundo e forma de apuração.",
+            "A Bahia usa alíquotas gerais, alíquotas específicas e adicional vinculado ao Fundo Estadual de Combate e Erradicação da Pobreza. Isso exige que o ERP mostre base cheia, adicional, carga final e fundamento.",
+            "Quando houver redução de base, o correto não é simplesmente trocar a alíquota. A memória deve demonstrar a base reduzida e a carga efetiva, preservando eventual estorno ou manutenção de crédito.",
+        ],
+        "departments": "Fiscal parametriza base, alíquota, adicional e CST. Contábil concilia imposto, custo e crédito. Financeiro confere DAE/GNRE. Auditoria cruza XML, EFD e recolhimento.",
+        "documents": "XML, cadastro NCM, tabela de alíquota, memória de cálculo, EFD, DAE, GNRE, guia de fundo quando aplicável e demonstrativo de carga efetiva.",
+        "risks": "Aplicar alíquota vigente a período anterior; esquecer adicional de fundo; registrar redução de base como alíquota menor; deixar o crédito incompatível com a regra de benefício.",
+    },
+    {
+        "id": "beneficios-matriz-lc160",
+        "title": "Benefícios fiscais: matriz, LC 160 e Convênio ICMS 190/2017",
+        "summary": "Como a Bahia documenta os benefícios fiscais e financeiro-fiscais reinstituídos, listados e conectados ao CONFAZ.",
+        "theme": "Benefícios fiscais",
+        "refs": [
+            {"source": "BA_DEC_18270_2018_BENEFICIOS_LC160", "articles": ["1"]},
+            {"source": "BA_DEC_18270_2018_BENEFICIOS_LC160", "keywords": ["ANEXO ÚNICO", "PROBAHIA", "crédito presumido", "redução de base", "DESENVOLVE"]},
+            {"source": "BA_DEC_18288_2018_BENEFICIOS_LC160", "keywords": ["benefícios fiscais", "Convênio ICMS 190", "Anexo Único"]},
+        ],
+        "analysis": [
+            "Na Bahia, o estudo dos benefícios começa pela lista de atos normativos publicada no Decreto nº 18.270/2018. Ele não é o benefício em si; é o mapa de atos que precisam ser lidos para saber o benefício, o setor, o dispositivo e a vigência.",
+            "A LC 160/2017 e o Convênio ICMS 190/2017 são a camada de convalidação/reinstituição. A pergunta prática é: o benefício está listado, o ato-base está em vigor, o contribuinte cumpre as condições e a fruição aparece corretamente na EFD?",
+            "Benefício fiscal é exceção. Ele precisa de operação, produto, setor, ato, período, condição, prova e forma de escrituração. Sem isso, a tese fica vulnerável.",
+        ],
+        "departments": "Jurídico identifica o ato e vigência. Fiscal parametriza CST, ajustes e EFD. Controladoria mede impacto. Financeiro guarda recolhimentos e contrapartidas.",
+        "documents": "Ato concessivo quando houver, decreto/lei do benefício, relação da LC 160, XML, EFD, resolução, termo, guia, memória de cálculo e evidência de cumprimento das condições.",
+        "risks": "Usar a relação do Decreto nº 18.270/2018 como se ela substituísse o ato material; aplicar benefício listado mas vencido; acumular benefícios vedados; não provar a contrapartida.",
+    },
+    {
+        "id": "desenvolve",
+        "title": "DESENVOLVE: diferimento, dilação de prazo, desconto e obrigações",
+        "summary": "O principal programa baiano de desenvolvimento industrial lido como benefício condicionado e controlável.",
+        "theme": "Programa estadual",
+        "refs": [
+            {"source": "BA_LEI_7980_2001_DESENVOLVE", "articles": ["1", "2", "3", "4", "5", "6"]},
+            {"source": "BA_DEC_8205_2002_DESENVOLVE", "articles": ["1", "2", "3", "4", "5", "6", "14", "16", "17", "18", "19", "20"]},
+            {"source": "BA_PORT_273_2014_EFD_INCENTIVOS", "keywords": ["Programa Desenvolve", "BA040120", "BA000120", "BA000121", "BA000125"]},
+        ],
+        "analysis": [
+            "O DESENVOLVE não é uma simples redução de imposto. Ele combina política industrial, habilitação, diferimento, dilação de prazo, eventual desconto por liquidação antecipada, resolução do conselho e controle na EFD.",
+            "A empresa só deve tratar como benefício aquilo que estiver dentro do projeto aprovado, da resolução, do prazo e da condição. O art. 18 do regulamento é ponto crítico: falta de recolhimento da parcela não incentivada pode fazer perder o direito no mês.",
+            "No fechamento mensal, a leitura precisa sair da lei para a escrituração: valor incentivado, saldo devedor passível, piso, parcela com prazo dilatado, recolhimento e eventual fundo devem estar separados.",
+        ],
+        "departments": "Fiscal calcula incentivo e EFD. Contábil prova investimento e saldo. Financeiro controla vencimentos e liquidação. Jurídico acompanha resolução, prazo e manutenção.",
+        "documents": "Projeto, protocolo, resolução, laudo de investimento, EFD E110/E111/E115/E116, DAE, memória do SDPI, guia do fundo quando aplicável e conciliação contábil.",
+        "risks": "Usar incentivo fora do projeto aprovado; perder prazo de recolhimento; não informar corretamente na EFD; tratar desconto como remissão sem observar o regulamento.",
+    },
+    {
+        "id": "programas-setoriais",
+        "title": "PROIND, PRONAVAL, informática, eletrônica e crédito presumido",
+        "summary": "Benefícios setoriais baianos por cadeia econômica, com leitura de programa, ato, condição e prova.",
+        "theme": "Setores incentivados",
+        "refs": [
+            {"source": "BA_DEC_18802_2018_PROIND", "articles": ["1", "2", "3", "4", "5"]},
+            {"source": "BA_LEI_9829_2005_PRONAVAL", "articles": ["1", "2", "3", "4"]},
+            {"source": "BA_DEC_11015_2008_PRONAVAL", "articles": ["1", "2", "3", "4", "5"]},
+            {"source": "BA_DEC_4316_1995_INFORMATICA_ELETRONICA", "keywords": ["informática", "eletrônica", "telecomunicações", "crédito presumido", "diferimento"]},
+            {"source": "BA_LEI_7025_1997_CREDITO_PRESUMIDO", "articles": ["1", "2", "3"]},
+            {"source": "BA_DEC_6734_1997_CREDITO_PRESUMIDO", "keywords": ["crédito presumido", "processo industrial incentivado", "estorno de crédito"]},
+        ],
+        "analysis": [
+            "Os benefícios setoriais devem ser estudados por cadeia: indústria geral, naval, informática/eletrônica/telecomunicações, crédito presumido e programas substituídos ou listados.",
+            "A lei costuma exigir projeto, atividade, produto, investimento, resolução, prazo, piso, estorno ou não apropriação de créditos. A vantagem fiscal nasce da combinação desses elementos.",
+            "Quando o benefício envolve crédito presumido, a empresa precisa separar crédito legal, crédito comum, estorno, vedação de acumulação e ajuste na EFD.",
+        ],
+        "departments": "Fiscal parametriza por produto/setor. Operações comprova industrialização. Contábil controla crédito e estorno. Jurídico valida programa e prazo.",
+        "documents": "Ato do programa, resolução, cadastro de produto, NCM, laudo, XML, EFD, demonstrativo de crédito, controle de investimento e memória por estabelecimento.",
+        "risks": "Enquadrar setor por nome comercial; usar crédito presumido sem estornar o que a norma veda; aplicar benefício sem resolução; misturar operações incentivadas e não incentivadas.",
+    },
+    {
+        "id": "substituicao-tributaria-antecipacao",
+        "title": "Substituição tributária, antecipação e Anexo 1 do RICMS/BA",
+        "summary": "Responsabilidade, mercadoria, CEST/NCM, MVA/pauta, antecipação e prova na cadeia.",
+        "theme": "Responsabilidade tributária",
+        "refs": [
+            {"source": "BA_RICMS_ANEXO_1_ST_2026", "full_text": True},
+            {"source": "BA_DEC_13780_2012_RICMS", "keywords": ["substituição tributária", "antecipação tributária", "MVA", "pauta fiscal"]},
+        ],
+        "analysis": [
+            "ST e antecipação não são benefícios: são técnicas de responsabilidade e momento de recolhimento. O ponto de partida é identificar mercadoria, NCM/CEST, operação, origem, destino e responsável.",
+            "O Anexo 1 deve ser lido como tabela viva de mercadorias sujeitas a substituição ou antecipação. A descrição legal precisa bater com o produto real, e não apenas com uma descrição comercial parecida.",
+            "Quando houver adicional de fundo, MVA, pauta ou recolhimento antecipado, a memória precisa reconstruir o cálculo por item.",
+        ],
+        "departments": "Fiscal controla NCM/CEST, MVA, pauta e CST. Compras valida fornecedor/substituto. Financeiro guarda guias. Auditoria cruza estoque, XML e EFD.",
+        "documents": "XML, NCM, CEST, pauta/MVA, GNRE/DAE, EFD, cadastro de item, comprovante de recolhimento e demonstrativo por produto.",
+        "risks": "Aplicar ST por semelhança de produto; ignorar adicional de fundo; não controlar ressarcimento/complemento; confundir antecipação parcial com encerramento de cadeia.",
+    },
+    {
+        "id": "rural-cesta-credito",
+        "title": "Crédito fiscal rural, cesta básica e cadeias agroalimentares",
+        "summary": "Tratamentos do Anexo 2 e leitura de benefícios ligados a produção rural, alimentos e insumos.",
+        "theme": "Agro e alimentos",
+        "refs": [
+            {"source": "BA_RICMS_ANEXO_2_RURAL", "full_text": True},
+            {"source": "BA_DEC_18270_2018_BENEFICIOS_LC160", "keywords": ["crédito fiscal nas", "cesta", "alimentos", "produtor rural", "agro"]},
+        ],
+        "analysis": [
+            "Na cadeia agroalimentar, a pergunta nunca é só 'tem benefício?'. É preciso identificar produto, etapa da cadeia, produtor, destinatário, finalidade e manutenção ou estorno de crédito.",
+            "Crédito rural e cesta básica exigem leitura literal. A descrição legal do item, a operação e o documento devem apontar para a mesma conclusão.",
+        ],
+        "departments": "Fiscal parametriza produto e CST. Compras guarda prova de origem. Operações comprova destinação. Contábil controla crédito e estoque.",
+        "documents": "NF-e, cadastro NCM, contrato rural, inscrição, EFD, memória de crédito, romaneio e prova de destinação.",
+        "risks": "Aplicar benefício por família comercial; não provar destinatário ou finalidade; manter crédito quando a norma manda estornar.",
+    },
+    {
+        "id": "documentos-efd-prova",
+        "title": "Documentos fiscais, EFD e prova dos incentivos",
+        "summary": "Como a tese aparece no XML, nos registros da EFD e nos códigos de ajuste dos benefícios baianos.",
+        "theme": "Prova digital",
+        "refs": [
+            {"source": "BA_DEC_13780_2012_RICMS", "articles": ["33", "42", "247", "248", "249", "250", "251", "252", "253"]},
+            {"source": "BA_PORT_273_2014_EFD_INCENTIVOS", "articles": ["1", "2", "3"]},
+        ],
+        "analysis": [
+            "A tese tributária só existe, para a fiscalização, se aparece no documento certo e na escrituração certa. A Bahia detalha a EFD dos incentivos por registros, códigos e valores declarados.",
+            "A Portaria nº 273/2014 é essencial porque conecta benefício material e SPED. Ela indica como declarar crédito presumido, DESENVOLVE, PRONAVAL, PROIND e outros incentivos nos registros E110, E111, E115 e E116.",
+            "O código de ajuste não cria direito; ele documenta o direito que a lei já concedeu. Se o ato material não sustenta a operação, o SPED apenas evidencia o erro.",
+        ],
+        "departments": "Fiscal transmite EFD. TI mantém parâmetros. Contábil concilia ajustes. Financeiro guarda recolhimentos. Auditoria valida cruzamentos.",
+        "documents": "XML, EFD, recibo de transmissão, registros E110/E111/E115/E116, tabela de códigos, DAE/GNRE, memória de cálculo e ato legal.",
+        "risks": "Informar ajuste sem benefício material; usar código errado; deixar valor de fundo fora do débito especial; transmitir EFD incoerente com o XML.",
+    },
+    {
+        "id": "fiscalizacao-riscos",
+        "title": "Fiscalização, regularidade e perda de benefício",
+        "summary": "Pontos de controle que fazem uma tese sobreviver: cadastro, regularidade, cumprimento, prova e coerência.",
+        "theme": "Auditoria fiscal",
+        "refs": [
+            {"source": "BA_DEC_13780_2012_RICMS", "articles": ["18", "27", "31-A", "33", "42"]},
+            {"source": "BA_DEC_8205_2002_DESENVOLVE", "articles": ["16", "17", "18", "19", "20"]},
+            {"source": "BA_PORT_273_2014_EFD_INCENTIVOS", "keywords": ["confissão de dívida", "Débito Especial", "recolhimento", "beneficiários"]},
+        ],
+        "analysis": [
+            "A fiscalização tende a procurar incoerência: benefício no cadastro mas não no XML; ajuste na EFD mas sem ato; crédito presumido sem estorno; regime com prazo vencido; recolhimento do fundo ausente.",
+            "Regularidade é parte da tese. Nos programas condicionados, cumprir investimento, publicar resolução, manter recolhimentos e declarar corretamente pode ser tão importante quanto o dispositivo que concede o benefício.",
+            "O padrão de defesa é dossiê por operação ou por programa: lei, ato concessivo, documento fiscal, cálculo, escrituração, pagamento e evidência da condição.",
+        ],
+        "departments": "Jurídico mantém matriz de risco. Fiscal e contábil fecham a prova mensal. Financeiro valida pagamentos. Diretoria acompanha contrapartidas e prazos.",
+        "documents": "Checklists, certidões, resolução, XML, EFD, comprovantes, laudos, atas, contratos, memória de cálculo e parecer de enquadramento.",
+        "risks": "Benefício materialmente correto, mas documentalmente frágil; perda mensal por recolhimento parcial; prova espalhada entre áreas; cadastro fiscal desatualizado.",
+    },
+]
+
+BA_SIGNAL_CHAPTER_MAP = {
+    "exportacao": "icms-regra-matriz",
+    "nao incidencia": "icms-regra-matriz",
+    "aliquota": "base-aliquota-apuracao",
+    "reducao de base": "beneficios-matriz-lc160",
+    "isencao": "beneficios-matriz-lc160",
+    "credito outorgado": "programas-setoriais",
+    "diferimento": "desenvolve",
+    "suspensao": "beneficios-matriz-lc160",
+    "regime especial": "desenvolve",
+    "protege/fundo": "documentos-efd-prova",
+    "fundo/contrapartida": "documentos-efd-prova",
+    "substituicao tributaria": "substituicao-tributaria-antecipacao",
+    "efd/sped": "documentos-efd-prova",
+    "cBenef": "documentos-efd-prova",
+}
+
 
 def slug(value: str) -> str:
     normalized = unicodedata.normalize("NFKD", value)
@@ -432,6 +638,63 @@ def category_from_file(uf: str, path: Path) -> str:
     return name.upper()
 
 
+def curated_category(source: dict) -> str:
+    source_id = source.get("id", "")
+    if source_id in CURATED_CATEGORY_BY_SOURCE_ID:
+        return CURATED_CATEGORY_BY_SOURCE_ID[source_id]
+    theme = normalize(source.get("tema", ""))
+    if "substituicao" in theme:
+        return "ICMS_ST"
+    if "beneficio" in theme or "credito" in theme:
+        return "ICMS_BENEFICIOS"
+    if "regulamento" in theme:
+        return "RICMS"
+    if "lei material" in theme:
+        return "ICMS_LEIS"
+    return "OUTROS"
+
+
+@lru_cache(maxsize=None)
+def collect_curated_state_documents(uf: str) -> tuple[dict, ...]:
+    manifest = state_source_manifest(uf)
+    manifest_path = state_source_manifest_path(uf)
+    if not manifest or not manifest_path or not manifest.get("fontes"):
+        return tuple()
+    docs: list[dict] = []
+    for source in manifest.get("fontes", []):
+        source_file = source.get("arquivo", "")
+        path = manifest_path.parent / source_file
+        if not path.exists():
+            continue
+        text = clean_text(read_text(path))
+        category = curated_category(source)
+        source_id = source.get("id") or path.stem
+        docs.append({
+            "id": slug(source_id),
+            "source_id": source_id,
+            "uf": uf,
+            "origin": "curated",
+            "path": path,
+            "file": source_file,
+            "category": category,
+            "category_label": source.get("tema") or CATEGORY_LABELS.get(category, category.replace("_", " ").title()),
+            "title": source.get("titulo") or title_from_file(uf, path, category),
+            "text": text,
+            "chars": len(text),
+            "sha256": source.get("sha256") or sha256_file(path),
+            "source_documents": [source.get("url", "")] if source.get("url") else [],
+            "official_url": source.get("url", STATE_OFFICIAL_PORTALS.get(uf, "")),
+            "dominant_scope": "ICMS",
+            "scores": {"ICMS": normalize(text).count("icms")},
+            "source_scopes": ["ICMS"],
+            "scope_flags": [],
+            "scope_blocked": False,
+            "named_icms": True,
+            "fallback_icms": False,
+        })
+    return tuple(docs)
+
+
 def source_documents(text: str) -> list[str]:
     docs: list[str] = []
     in_sources = False
@@ -511,6 +774,9 @@ def state_folders(uf: str) -> list[tuple[str, Path]]:
 
 @lru_cache(maxsize=None)
 def collect_state_documents(uf: str) -> tuple[dict, ...]:
+    curated_docs = collect_curated_state_documents(uf)
+    if curated_docs:
+        return curated_docs
     candidates: list[dict] = []
     for origin, folder in state_folders(uf):
         if not folder.exists():
@@ -853,6 +1119,268 @@ def render_chunks(text: str, doc_id: str, chunk_size: int = 30000) -> str:
     return "".join(chunks)
 
 
+STATE_ARTICLE_RE = re.compile(r"(?m)^\s*Art\.\s*(\d+(?:-[A-Za-z])?)\s*(?:º|°|o)?\.?")
+
+
+def clean_law_segment(text: str, limit: int = 12000) -> str:
+    skip_prefixes = ("TITULO:", "TEMA:", "TIPO:", "FONTE PUBLICA:", "DATA DA CAPTURA:", "TEXTO EXTRAIDO")
+    lines = []
+    for line in text.splitlines():
+        stripped = line.strip()
+        if not stripped:
+            lines.append("")
+            continue
+        if stripped.startswith("====="):
+            continue
+        if any(stripped.startswith(prefix) for prefix in skip_prefixes):
+            continue
+        if stripped.lower().endswith(".doc") and len(stripped) < 80:
+            continue
+        lines.append(line.rstrip())
+    cleaned = "\n".join(lines).strip()
+    cleaned = re.sub(r"\n{4,}", "\n\n\n", cleaned)
+    if len(cleaned) > limit:
+        cleaned = cleaned[:limit].rsplit("\n", 1)[0].strip() + "\n\n[continua na fonte integral em tela]"
+    return cleaned
+
+
+def article_segments(doc: dict, numbers: list[str], max_segments_per_article: int = 4) -> list[tuple[str, str]]:
+    matches = list(STATE_ARTICLE_RE.finditer(doc["text"]))
+    wanted = {number.upper() for number in numbers}
+    by_number: dict[str, list[str]] = {number.upper(): [] for number in numbers}
+    for index, match in enumerate(matches):
+        number = match.group(1).upper()
+        if number not in wanted:
+            continue
+        end = matches[index + 1].start() if index + 1 < len(matches) else len(doc["text"])
+        block = clean_law_segment(doc["text"][match.start():end], limit=14000)
+        if len(block) < 80:
+            continue
+        if block in by_number[number]:
+            continue
+        by_number[number].append(block)
+    segments: list[tuple[str, str]] = []
+    for number in numbers:
+        for block in by_number.get(number.upper(), [])[:max_segments_per_article]:
+            segments.append((f"Art. {number}", block))
+    return segments
+
+
+def docs_by_source_id(docs: list[dict] | tuple[dict, ...]) -> dict[str, dict]:
+    mapping = {}
+    for doc in docs:
+        mapping[doc.get("source_id", doc["id"])] = doc
+        mapping[doc["id"]] = doc
+    return mapping
+
+
+def ba_chapter_path(chapter_id: str) -> str:
+    return f"estados/ba/legislacao/{chapter_id}.html"
+
+
+def ba_chapter_by_id(chapter_id: str) -> dict:
+    return next(chapter for chapter in BA_CHAPTERS if chapter["id"] == chapter_id)
+
+
+def ba_law_blocks(current_path: str, docs: tuple[dict, ...], chapter: dict) -> str:
+    source_map = docs_by_source_id(docs)
+    blocks = []
+    for ref in chapter.get("refs", []):
+        doc = source_map.get(ref["source"])
+        if not doc:
+            continue
+        segments: list[tuple[str, str]] = []
+        if ref.get("articles"):
+            segments = article_segments(doc, ref["articles"])
+        elif ref.get("full_text"):
+            if doc["chars"] <= 25000:
+                segments = [("Texto integral do ato", clean_law_segment(doc["text"], limit=26000))]
+            else:
+                needles = ["substituição tributária", "mercadorias", "CEST", "MVA", "antecipação", "crédito fiscal"]
+                segments = [(f"Trecho {idx}", clean_law_segment(item, limit=5000)) for idx, item in enumerate(excerpts(doc["text"], needles, limit=5), start=1)]
+        elif ref.get("keywords"):
+            segments = [(f"Trecho {idx}", clean_law_segment(item, limit=5000)) for idx, item in enumerate(excerpts(doc["text"], ref["keywords"], limit=5), start=1)]
+        if not segments:
+            segments = [(f"Trecho {idx}", clean_law_segment(item, limit=5000)) for idx, item in enumerate(excerpts(doc["text"], [chapter["title"], chapter["summary"]], limit=2), start=1)]
+        law_html = "".join(f"""
+<article class="article-block">
+  <div class="article-number">{escape(label)}</div>
+  <pre class="law-pre">{escape(segment)}</pre>
+</article>
+""" for label, segment in segments if segment)
+        blocks.append(f"""
+<section class="legal-document">
+  <div class="document-heading">
+    <div>
+      <span class="eyebrow">{escape(doc['category_label'])}</span>
+      <h3>{escape(doc['title'])}</h3>
+      <p>Dispositivos essenciais para este capítulo. A íntegra está preservada na página-fonte.</p>
+    </div>
+    <div class="document-actions">
+      <a href="{escape(rel_href(current_path, source_path('BA', doc)))}">abrir fonte integral</a>
+      <a href="{escape(doc.get('official_url', STATE_OFFICIAL_PORTALS['BA']))}" target="_blank" rel="noopener">fonte pública</a>
+    </div>
+  </div>
+  {law_html}
+</section>
+""")
+    return "".join(blocks)
+
+
+def render_ba_index_page(docs: tuple[dict, ...], layout_func) -> str:
+    current = index_path("BA")
+    chapter_cards = []
+    for chapter in BA_CHAPTERS:
+        chapter_cards.append(f"""
+<a class="portal-card searchable-card" href="{escape(rel_href(current, ba_chapter_path(chapter['id'])))}"
+   data-search="{escape('Bahia BA ICMS beneficios fiscais ' + chapter['title'] + ' ' + chapter['summary'] + ' ' + chapter['theme'])}">
+  <span class="card-kicker">{escape(chapter['theme'])}</span>
+  <h3>{escape(chapter['title'])}</h3>
+  <p>{escape(chapter['summary'])}</p>
+  <small>lei em tela + análise aplicada</small>
+</a>
+""")
+    source_cards = render_doc_links(current, "BA", list(docs))
+    body = f"""
+<section class="hero-panel legal-hero">
+  <div>
+    <span class="eyebrow">Bahia completa</span>
+    <h1>Bahia: ICMS e benefícios fiscais em tela</h1>
+    <p>Lei nº 7.014/1996, RICMS/BA, anexos, substituição tributária, DESENVOLVE, PROIND, PRONAVAL, crédito presumido, informática, eletrônica, LC 160/Convênio 190 e EFD dos incentivos.</p>
+  </div>
+  <aside class="hero-proof">
+    <strong>Como ler</strong>
+    <p>Primeiro a regra matriz; depois base e alíquota; só então benefícios, programas, ST e prova digital.</p>
+  </aside>
+</section>
+<section class="law-ledger">
+  <div>
+    <h2>Textos publicados</h2>
+    <p>{fmt_num(len(docs))} atos normativos e {fmt_num(sum(int(doc['chars']) for doc in docs))} caracteres em tela no portal.</p>
+  </div>
+  <div>
+    <h2>Arquitetura baiana</h2>
+    <p>Bahia não tem um único anexo de benefícios. A leitura passa por lei material, regulamento, anexos, programas e atos listados na LC 160/Convênio 190.</p>
+  </div>
+  <div>
+    <h2>Fonte pública</h2>
+    <p><a href="https://www.sefaz.ba.gov.br/legislacao/textos-legais/" target="_blank" rel="noopener">Textos legais da SEFAZ-BA</a></p>
+  </div>
+</section>
+<section class="topic-index">
+  <div class="section-heading">
+    <span class="eyebrow">Índice por tema</span>
+    <h2>Estude pela matéria, não pelo número do ato</h2>
+    <p>Cada capítulo abre com dispositivos legais em tela e depois ensina como aplicar, provar e auditar a regra.</p>
+  </div>
+  <div class="card-grid">{''.join(chapter_cards)}</div>
+</section>
+<section class="section-wrap">
+  <div class="section-heading">
+    <span class="eyebrow">Fontes integrais</span>
+    <h2>Legislação em tela</h2>
+    <p>As páginas abaixo preservam a íntegra textual capturada das fontes públicas, para que o portal não dependa do link externo para ensinar.</p>
+  </div>
+  {source_cards}
+</section>
+<section class="continuity">
+  <h2>Continuar a leitura</h2>
+  <div>
+    <a href="{escape(rel_href(current, 'estados/ba.html'))}">página da Bahia</a>
+    <a href="{escape(rel_href(current, 'estados/goias/legislacao/index.html'))}">comparar com Goiás</a>
+    <a href="{escape(rel_href(current, 'confaz/index.html'))}">CONFAZ e Convênio 190/2017</a>
+    <a href="{escape(rel_href(current, 'manual-fiscal.html'))}">manual fiscal</a>
+  </div>
+</section>
+"""
+    return layout_func(current, "Bahia: ICMS e benefícios fiscais em tela", "Lei, RICMS, benefícios, ST, programas e prova do ICMS baiano.", body, "estados")
+
+
+def render_ba_chapter_page(docs: tuple[dict, ...], chapter: dict, layout_func) -> str:
+    current = ba_chapter_path(chapter["id"])
+    related = []
+    for other in BA_CHAPTERS:
+        if other["id"] == chapter["id"]:
+            continue
+        if other["theme"] == chapter["theme"] or len(related) < 4:
+            related.append(other)
+        if len(related) >= 5:
+            break
+    related_links = "".join(
+        f'<a href="{escape(rel_href(current, ba_chapter_path(item["id"])))}">{escape(item["title"])}</a>'
+        for item in related
+    )
+    analysis_items = "".join(f"<p>{escape(item)}</p>" for item in chapter.get("analysis", []))
+    body = f"""
+<section class="hero-panel legal-hero">
+  <div>
+    <span class="eyebrow">Bahia · {escape(chapter['theme'])}</span>
+    <h1>{escape(chapter['title'])}</h1>
+    <p>{escape(chapter['summary'])}</p>
+  </div>
+  <aside class="hero-proof">
+    <strong>Ordem correta</strong>
+    <p>Leia os dispositivos em tela antes da interpretação. Depois confira aplicação, prova e risco.</p>
+  </aside>
+</section>
+<section class="topic-index compact-index">
+  <div class="section-heading">
+    <span class="eyebrow">Voltar ao índice</span>
+    <h2>Bahia por capítulos</h2>
+  </div>
+  <div class="signal-law-links">
+    <strong>Continuar no Estado</strong>
+    <div>
+      <a href="{escape(rel_href(current, index_path('BA')))}">índice da Bahia</a>
+      <a href="{escape(rel_href(current, 'estados/ba.html'))}">página principal</a>
+      <a href="{escape(rel_href(current, 'confaz/index.html'))}">CONFAZ</a>
+    </div>
+  </div>
+</section>
+<section class="legal-chapters">
+  <div class="section-heading">
+    <span class="eyebrow">Legislação em tela</span>
+    <h2>Texto legal antes da análise</h2>
+    <p>Os blocos abaixo trazem os dispositivos nucleares deste assunto. A íntegra de cada ato fica aberta nas páginas-fonte do portal.</p>
+  </div>
+  {ba_law_blocks(current, docs, chapter)}
+</section>
+<section class="content-block">
+  <span class="eyebrow">Análise aplicada</span>
+  <h2>Como interpretar</h2>
+  {analysis_items}
+</section>
+<section class="law-ledger">
+  <div>
+    <h2>Aplicação por departamento</h2>
+    <p>{escape(chapter.get('departments', 'Fiscal, contábil, financeiro e jurídico devem amarrar regra, documento, escrituração e pagamento.'))}</p>
+  </div>
+  <div>
+    <h2>Documentos de prova</h2>
+    <p>{escape(chapter.get('documents', 'XML, EFD, memória de cálculo, ato legal e comprovantes.'))}</p>
+  </div>
+  <div>
+    <h2>Riscos comuns</h2>
+    <p>{escape(chapter.get('risks', 'Aplicar tese sem dispositivo, condição, vigência ou prova documental suficiente.'))}</p>
+  </div>
+</section>
+<section class="continuity">
+  <h2>Continuar este estudo</h2>
+  <div>{related_links}</div>
+</section>
+"""
+    return layout_func(current, f"Bahia: {chapter['title']}", chapter["summary"], body, "estados")
+
+
+def render_ba_pages(docs: tuple[dict, ...], layout_func) -> dict[str, str]:
+    pages = {index_path("BA"): render_ba_index_page(docs, layout_func)}
+    for chapter in BA_CHAPTERS:
+        pages[ba_chapter_path(chapter["id"])] = render_ba_chapter_page(docs, chapter, layout_func)
+    for doc in docs:
+        pages[source_path("BA", doc)] = render_source_page("BA", doc, layout_func)
+    return pages
+
+
 def render_index_page(uf: str, docs: list[dict], layout_func) -> str:
     name = STATE_NAMES.get(uf, uf)
     current = index_path(uf)
@@ -1001,7 +1529,7 @@ def render_source_page(uf: str, doc: dict, layout_func) -> str:
   </div>
   <div>
     <h2>Portal oficial</h2>
-    <p><a href="{escape(STATE_OFFICIAL_PORTALS.get(uf, '#'))}" target="_blank" rel="noopener">abrir legislação de {escape(name)}</a></p>
+    <p><a href="{escape(doc.get('official_url', STATE_OFFICIAL_PORTALS.get(uf, '#')))}" target="_blank" rel="noopener">abrir fonte pública</a></p>
   </div>
 </section>
 <section class="legal-document searchable-card" data-search="{escape(doc['title'] + ' ' + doc['file'] + ' ' + doc['category_label'])}">
@@ -1033,6 +1561,9 @@ def build_state_legal_pages(layout_func, data: dict) -> dict[str, str]:
         docs = publishable_state_documents(uf)
         if not docs:
             continue
+        if uf == "BA":
+            pages.update(render_ba_pages(docs, layout_func))
+            continue
         pages[index_path(uf)] = render_index_page(uf, docs, layout_func)
         for group in GROUP_DEFS:
             pages[group_path(uf, group["id"])] = render_group_page(uf, docs, group, layout_func)
@@ -1046,6 +1577,15 @@ def state_legislation_teaser(uf: str, current_path: str) -> str:
         links = [
             ("ICMS/GO em tela", "estados/goias/legislacao/index.html"),
             ("benefícios fiscais de Goiás", "estados/goias/legislacao/beneficios-regra-maior.html"),
+        ]
+    elif uf == "BA" and state_is_deep_published(uf) and publishable_state_documents(uf):
+        links = [
+            ("Bahia: índice completo", index_path("BA")),
+            ("ICMS: regra matriz", ba_chapter_path("icms-regra-matriz")),
+            ("base, alíquotas e apuração", ba_chapter_path("base-aliquota-apuracao")),
+            ("benefícios fiscais e LC 160", ba_chapter_path("beneficios-matriz-lc160")),
+            ("DESENVOLVE", ba_chapter_path("desenvolve")),
+            ("EFD, documentos e prova", ba_chapter_path("documentos-efd-prova")),
         ]
     else:
         if not state_is_deep_published(uf):
@@ -1115,6 +1655,20 @@ def state_legislation_teaser(uf: str, current_path: str) -> str:
 def state_signal_links(uf: str, signal_key: str, current_path: str) -> str:
     if uf == "GO":
         return ""
+    if uf == "BA":
+        if not state_is_deep_published(uf) or not publishable_state_documents(uf):
+            return ""
+        chapter_id = BA_SIGNAL_CHAPTER_MAP.get(signal_key, "icms-regra-matriz")
+        chapter = ba_chapter_by_id(chapter_id)
+        return f"""
+<div class="signal-law-links">
+  <strong>Capítulo baiano para estudar agora</strong>
+  <div>
+    <a href="{escape(rel_href(current_path, ba_chapter_path(chapter_id)))}">{escape(chapter['title'])}</a>
+    <a href="{escape(rel_href(current_path, index_path('BA')))}">índice completo da Bahia</a>
+  </div>
+</div>
+"""
     if not state_is_deep_published(uf) or not publishable_state_documents(uf):
         return ""
     group_id = SIGNAL_TO_GROUP.get(signal_key, "icms")
@@ -1143,6 +1697,34 @@ def state_legal_search_entries(data: dict) -> list[dict[str, str]]:
         if not docs:
             continue
         name = STATE_NAMES.get(uf, uf)
+        if uf == "BA":
+            entries.append({
+                "title": "Bahia: ICMS e benefícios fiscais em tela",
+                "url": index_path("BA"),
+                "summary": "Lei do ICMS, RICMS, anexos, substituição tributária, DESENVOLVE, PROIND, PRONAVAL, crédito presumido, informática, eletrônica, LC 160 e EFD.",
+                "tags": "BA Bahia ICMS RICMS benefícios fiscais alíquotas base cálculo substituição tributária ST DESENVOLVE PROIND PRONAVAL crédito presumido informática eletrônica EFD SPED LC 160 Convênio 190",
+            })
+            for chapter in BA_CHAPTERS:
+                entries.append({
+                    "title": f"Bahia: {chapter['title']}",
+                    "url": ba_chapter_path(chapter["id"]),
+                    "summary": chapter["summary"],
+                    "tags": f"BA Bahia ICMS benefícios fiscais {chapter['theme']} {chapter['title']} {chapter['summary']}",
+                })
+            for title, url, tags in [
+                ("Bahia: benefícios para indústria e implantação", ba_chapter_path("desenvolve"), "DESENVOLVE dilação diferimento implantação ampliação indústria incentivo"),
+                ("Bahia: eletrônicos, informática e automação", ba_chapter_path("programas-setoriais"), "informática eletrônica automação PROIND Decreto 4316 indústria tecnologia"),
+                ("Bahia: naval e PROIND", ba_chapter_path("programas-setoriais"), "PRONAVAL PROIND naval indústria implantação incentivo fiscal"),
+                ("Bahia: crédito presumido e outorgado", ba_chapter_path("beneficios-matriz-lc160"), "crédito presumido crédito outorgado incentivo benefício LC 160 Convênio 190"),
+                ("Bahia: substituição tributária por mercadoria", ba_chapter_path("substituicao-tributaria-antecipacao"), "substituição tributária ST CEST MVA mercadoria antecipação"),
+            ]:
+                entries.append({
+                    "title": title,
+                    "url": url,
+                    "summary": "Entrada direta para o capítulo temático correspondente, com texto legal em tela e análise aplicada.",
+                    "tags": f"BA Bahia ICMS benefícios fiscais {tags}",
+                })
+            continue
         entries.append({
             "title": f"{name}: legislação de ICMS em tela",
             "url": index_path(uf),
@@ -1176,17 +1758,33 @@ def state_source_records() -> list[dict]:
         if not state_is_deep_published(uf):
             continue
         for doc in publishable_state_documents(uf):
+            if doc["path"].is_relative_to(ROOT):
+                file_ref = doc["path"].relative_to(ROOT).as_posix()
+            elif doc["path"].is_relative_to(BD_ROOT):
+                file_ref = doc["path"].relative_to(BD_ROOT).as_posix()
+            else:
+                file_ref = str(doc["path"])
+            if uf == "BA":
+                used_chapters = [
+                    chapter["id"]
+                    for chapter in BA_CHAPTERS
+                    if any(ref.get("source") == doc.get("source_id") for ref in chapter.get("refs", []))
+                ]
+                module_title = "Bahia: ICMS e benefícios fiscais em tela"
+            else:
+                used_chapters = [group["id"] for group in GROUP_DEFS if doc_matches_group(doc, group)]
+                module_title = f"{STATE_NAMES.get(uf, uf)}: legislação de ICMS em tela"
             records.append({
                 "source_id": f"state-{uf.lower()}-{doc['id']}",
                 "jurisdiction": uf,
                 "title": doc["title"],
                 "short": doc["category_label"],
-                "official_url": STATE_OFFICIAL_PORTALS.get(uf, ""),
+                "official_url": doc.get("official_url") or STATE_OFFICIAL_PORTALS.get(uf, ""),
                 "storage": {
                     "type": "local_text",
-                    "files": [str(doc["path"].relative_to(BD_ROOT)) if doc["path"].is_relative_to(BD_ROOT) else str(doc["path"])],
+                    "files": [file_ref],
                     "sha256": {doc["file"]: doc["sha256"]},
-                    "fetch_url": "",
+                    "fetch_url": doc.get("official_url", ""),
                 },
                 "note": f"Texto estadual de ICMS publicado em {source_path(uf, doc)}.",
                 "render": "full_text",
@@ -1195,8 +1793,8 @@ def state_source_records() -> list[dict]:
                 "used_by": [
                     {
                         "module_id": f"state-{uf.lower()}",
-                        "module_title": f"{STATE_NAMES.get(uf, uf)}: legislação de ICMS em tela",
-                        "chapters": [group["id"] for group in GROUP_DEFS if doc_matches_group(doc, group)],
+                        "module_title": module_title,
+                        "chapters": used_chapters,
                     }
                 ],
             })

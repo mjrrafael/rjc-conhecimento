@@ -26,8 +26,10 @@ from legal_modules import (  # noqa: E402
     module_index_path,
 )
 from state_legal_pages import (  # noqa: E402
+    BA_CHAPTERS,
     GROUP_DEFS,
     STATE_NAMES,
+    ba_chapter_path,
     benefit_sector_results,
     collect_state_documents,
     group_docs,
@@ -274,6 +276,32 @@ def audit_content_pages() -> list[str]:
             continue
         docs = collect_state_documents(uf)
         if not docs:
+            continue
+        if uf == "BA":
+            index_html = read_page(state_index_path(uf))
+            if not index_html or "Bahia: ICMS e benefícios fiscais em tela" not in index_html:
+                errors.append("BA: indice profundo de ICMS e beneficios ausente")
+            state_html = read_page("estados/ba.html")
+            if not state_html or "Benefícios fiscais por grupo" not in state_html:
+                errors.append("BA: pagina estadual sem grupos didaticos de beneficios")
+            if state_html and re.search(r"\bTaxas\b|BA_ICMS_ANEXOS|BA_DECRETOS", state_html):
+                errors.append("BA: pagina estadual ainda contem inventario antigo ou taxas fora de escopo")
+            for chapter in BA_CHAPTERS:
+                chapter_html = read_page(ba_chapter_path(chapter["id"]))
+                if not chapter_html or "Texto legal antes da análise" not in chapter_html or "law-pre" not in chapter_html:
+                    errors.append(f"BA: capitulo sem lei em tela: {chapter['id']}")
+            benefits_html = (
+                read_page(ba_chapter_path("beneficios-matriz-lc160"))
+                + read_page(ba_chapter_path("desenvolve"))
+                + read_page(ba_chapter_path("programas-setoriais"))
+            )
+            for term in ["DESENVOLVE", "PROIND", "PRONAVAL", "informática", "crédito presumido", "LC 160"]:
+                if term not in benefits_html:
+                    errors.append(f"BA: beneficio setorial sem trilha publicada: {term}")
+            for doc in list(docs)[:3]:
+                source_html = read_page(source_path(uf, doc))
+                if not source_html or "law-pre" not in source_html:
+                    errors.append(f"{uf}: fonte estadual sem texto em tela: {doc['file']}")
             continue
         index_html = read_page(state_index_path(uf))
         if not index_html or "legislação de ICMS em tela" not in index_html:

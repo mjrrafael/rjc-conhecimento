@@ -6,7 +6,7 @@
     "AL": {"region": "Nordeste", "status": "revisao_fonte", "publish_deep": false, "next_step": "Baixar RICMS e benefícios de ICMS no portal oficial de Alagoas."},
     "AP": {"region": "Norte", "status": "revisao_fonte", "publish_deep": false, "next_step": "Baixar RICMS e benefícios de ICMS no portal oficial do Amapá."},
     "AM": {"region": "Norte", "status": "revisao_fonte", "publish_deep": false, "next_step": "Separar Código Tributário, RICMS e benefícios; baixar o regulamento vigente do Amazonas."},
-    "BA": {"region": "Nordeste", "status": "em_segmentacao", "publish_deep": false, "next_step": "Material normativo reunido: Lei do ICMS, RICMS, anexos, DESENVOLVE, PROIND, PRONAVAL, crédito presumido, informática/eletrônica, atos da LC 160/Convênio 190 e EFD dos incentivos. Próxima etapa: segmentar por capítulos temáticos antes de publicar a página profunda."},
+    "BA": {"region": "Nordeste", "status": "publicado_v1", "publish_deep": true, "next_step": "Bahia publicada como página profunda: Lei do ICMS, RICMS, anexos, substituição tributária, DESENVOLVE, PROIND, PRONAVAL, crédito presumido, informática/eletrônica, atos da LC 160/Convênio 190 e EFD dos incentivos."},
     "CE": {"region": "Nordeste", "status": "revisao_fonte", "publish_deep": false, "next_step": "Baixar RICMS, decretos modificadores e benefícios no portal oficial do Ceará."},
     "DF": {"region": "Centro-Oeste", "status": "revisao_fonte", "publish_deep": false, "next_step": "Baixar RICMS/DF e caderno de benefícios fiscais na Receita do Distrito Federal."},
     "ES": {"region": "Sudeste", "status": "revisao_fonte", "publish_deep": false, "next_step": "Baixar RICMS/ES vigente e benefícios no portal oficial do Espírito Santo."},

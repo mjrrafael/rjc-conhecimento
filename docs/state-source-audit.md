@@ -7,51 +7,42 @@ Esta auditoria mede qualidade editorial do acervo estadual antes de publicação
 ## Resumo
 
 - Estados avaliados: 27
-- Documentos estaduais candidatos a ICMS: 183
-- Documentos úteis após teste de escopo: 174
-- Documentos bloqueados por escopo material: 9
-- Estados bloqueados para publicação profunda: 26
+- Documentos estaduais candidatos a ICMS: 191
+- Documentos úteis após teste de escopo: 184
+- Documentos bloqueados por escopo material: 7
+- Estados bloqueados para publicação profunda: 25
 
 ## Estados
 
 | UF | Região | Status | Docs | Úteis | Escopo bloqueado | Recomendação | Principais alertas |
 | --- | --- | --- | ---: | ---: | ---: | --- | --- |
-| AC | Norte | revisao_fonte | 6 | 6 | 0 | bloquear_publicacao_ate_curadoria | contém IPVA, contém ITCMD/ITCD, contém Taxas, fonte local sem URL oficial no cabeçalho, ruído de extração/encoding |
-| AL | Nordeste | revisao_fonte | 3 | 3 | 0 | bloquear_publicacao_ate_curadoria | fonte local sem URL oficial no cabeçalho, ruído de extração/encoding, texto curto para RICMS/benefícios |
+| AC | Norte | revisao_fonte | 6 | 6 | 0 | bloquear_publicacao_ate_curadoria | contém IPVA, contém ITCMD/ITCD, contém Taxas, fonte local sem URL oficial no cabeçalho, texto curto para RICMS/benefícios |
+| AL | Nordeste | revisao_fonte | 3 | 3 | 0 | bloquear_publicacao_ate_curadoria | fonte local sem URL oficial no cabeçalho, texto curto para RICMS/benefícios |
 | AM | Norte | revisao_fonte | 4 | 4 | 0 | bloquear_publicacao_ate_curadoria | categoria não específica de ICMS, contém IPVA, contém ITCMD/ITCD, contém Taxas, fallback amplo |
 | AP | Norte | revisao_fonte | 7 | 7 | 0 | bloquear_publicacao_ate_curadoria | contém Taxas, fonte local sem URL oficial no cabeçalho, ruído de extração/encoding, texto curto para RICMS/benefícios |
-| BA | Nordeste | em_segmentacao | 7 | 5 | 2 | bloquear_publicacao_ate_reclassificar_escopo | contém Taxas, escopo dominante incompatível: conteúdo parece tratar de Taxas, não de ICMS, escopo incompatível: arquivo classificado como ICMS, mas os documentos fonte indicam Taxas, escopo material incompatível com ICMS, fonte local sem URL oficial no cabeçalho |
+| BA | Nordeste | publicado_v1 | 15 | 15 | 0 | manter_publicado | sem alerta automatizado |
 | CE | Nordeste | revisao_fonte | 8 | 8 | 0 | bloquear_publicacao_ate_curadoria | categoria não específica de ICMS, contém IPVA, contém ITCMD/ITCD, contém Taxas, fallback amplo |
 | DF | Centro-Oeste | revisao_fonte | 5 | 1 | 4 | bloquear_publicacao_ate_reclassificar_escopo | categoria não específica de ICMS, contém IPVA, contém ITCMD/ITCD, contém Taxas, escopo material incompatível com ICMS |
-| ES | Sudeste | revisao_fonte | 7 | 7 | 0 | bloquear_publicacao_ate_curadoria | contém IPVA, contém Taxas, ruído de extração/encoding |
+| ES | Sudeste | revisao_fonte | 7 | 7 | 0 | bloquear_publicacao_ate_curadoria | contém IPVA, contém Taxas |
 | GO | Centro-Oeste | aprovado_v1 | 0 | 0 | 0 | manter_publicado | sem alerta automatizado |
-| MA | Nordeste | revisao_fonte | 10 | 10 | 0 | bloquear_publicacao_ate_curadoria | contém Taxas, fonte local sem URL oficial no cabeçalho, ruído de extração/encoding |
-| MG | Sudeste | revisao_fonte | 31 | 31 | 0 | bloquear_publicacao_ate_curadoria | contém Taxas, ruído de extração/encoding |
-| MS | Centro-Oeste | revisao_fonte | 5 | 5 | 0 | bloquear_publicacao_ate_curadoria | contém IPVA, contém ITCMD/ITCD, contém Taxas, ruído de extração/encoding |
-| MT | Centro-Oeste | em_segmentacao | 3 | 3 | 0 | bloquear_publicacao_ate_curadoria | contém IPVA, contém Taxas, ruído de extração/encoding |
+| MA | Nordeste | revisao_fonte | 10 | 10 | 0 | bloquear_publicacao_ate_curadoria | contém Taxas, fonte local sem URL oficial no cabeçalho |
+| MG | Sudeste | revisao_fonte | 31 | 31 | 0 | bloquear_publicacao_ate_curadoria | contém Taxas |
+| MS | Centro-Oeste | revisao_fonte | 5 | 5 | 0 | bloquear_publicacao_ate_curadoria | contém IPVA, contém ITCMD/ITCD, contém Taxas |
+| MT | Centro-Oeste | em_segmentacao | 3 | 3 | 0 | bloquear_publicacao_ate_curadoria | contém IPVA, contém Taxas |
 | PA | Norte | revisao_fonte | 2 | 0 | 2 | bloquear_publicacao_ate_reclassificar_escopo | categoria não específica de ICMS, contém IPVA, contém ITCMD/ITCD, contém Taxas, escopo material incompatível com ICMS |
-| PB | Nordeste | revisao_fonte | 1 | 1 | 0 | bloquear_publicacao_ate_curadoria | contém IPVA, contém ITCMD/ITCD, contém Taxas, ruído de extração/encoding |
-| PE | Nordeste | revisao_fonte | 8 | 8 | 0 | bloquear_publicacao_ate_curadoria | contém Taxas, fonte local sem URL oficial no cabeçalho, ruído de extração/encoding, texto curto para RICMS/benefícios |
-| PI | Nordeste | revisao_fonte | 9 | 9 | 0 | bloquear_publicacao_ate_curadoria | contém IPVA, contém Taxas, fonte local sem URL oficial no cabeçalho, ruído de extração/encoding |
-| PR | Sul | revisao_fonte | 11 | 11 | 0 | bloquear_publicacao_ate_curadoria | contém Taxas, fonte local sem URL oficial no cabeçalho, ruído de extração/encoding |
+| PB | Nordeste | revisao_fonte | 1 | 1 | 0 | bloquear_publicacao_ate_curadoria | contém IPVA, contém ITCMD/ITCD, contém Taxas |
+| PE | Nordeste | revisao_fonte | 8 | 8 | 0 | bloquear_publicacao_ate_curadoria | contém Taxas, fonte local sem URL oficial no cabeçalho, texto curto para RICMS/benefícios |
+| PI | Nordeste | revisao_fonte | 9 | 9 | 0 | bloquear_publicacao_ate_curadoria | contém IPVA, contém Taxas, fonte local sem URL oficial no cabeçalho |
+| PR | Sul | revisao_fonte | 11 | 11 | 0 | bloquear_publicacao_ate_curadoria | contém Taxas, fonte local sem URL oficial no cabeçalho |
 | RJ | Sudeste | revisao_fonte | 1 | 1 | 0 | bloquear_publicacao_ate_curadoria | ruído de extração/encoding |
-| RN | Nordeste | revisao_fonte | 8 | 8 | 0 | bloquear_publicacao_ate_curadoria | contém IPVA, contém ITCMD/ITCD, contém Taxas, fonte local sem URL oficial no cabeçalho, ruído de extração/encoding |
+| RN | Nordeste | revisao_fonte | 8 | 8 | 0 | bloquear_publicacao_ate_curadoria | contém IPVA, contém ITCMD/ITCD, contém Taxas, fonte local sem URL oficial no cabeçalho |
 | RO | Norte | revisao_fonte | 4 | 3 | 1 | bloquear_publicacao_ate_reclassificar_escopo | contém IPVA, contém Taxas, escopo dominante incompatível: conteúdo parece tratar de IPVA, não de ICMS, escopo material incompatível com ICMS, fonte local sem URL oficial no cabeçalho |
-| RR | Norte | revisao_fonte | 5 | 5 | 0 | bloquear_publicacao_ate_curadoria | contém IPVA, contém Taxas, fonte local sem URL oficial no cabeçalho, ruído de extração/encoding, texto curto para RICMS/benefícios |
-| RS | Sul | revisao_fonte | 9 | 9 | 0 | bloquear_publicacao_ate_curadoria | contém IPVA, contém Taxas, ruído de extração/encoding |
-| SC | Sul | revisao_fonte | 2 | 2 | 0 | bloquear_publicacao_ate_curadoria | ruído de extração/encoding, texto curto para RICMS/benefícios |
-| SE | Nordeste | revisao_fonte | 4 | 4 | 0 | bloquear_publicacao_ate_curadoria | contém IPVA, contém Taxas, fonte local sem URL oficial no cabeçalho, ruído de extração/encoding, texto curto para RICMS/benefícios |
-| SP | Sudeste | revisao_fonte | 21 | 21 | 0 | bloquear_publicacao_ate_curadoria | contém IPVA, contém Taxas, fonte local sem URL oficial no cabeçalho, ruído de extração/encoding, possível duplicidade de fonte |
-| TO | Norte | revisao_fonte | 2 | 2 | 0 | bloquear_publicacao_ate_curadoria | contém Taxas, ruído de extração/encoding, texto curto para RICMS/benefícios |
-
-## Caso Bahia: erro de escopo material
-
-A Bahia mostrou o risco central: arquivo com rótulo de ICMS não pode ser aceito quando o próprio texto ou os documentos-fonte indicam Taxas, IPVA, ITCMD ou outro tributo. Categoria, nome do arquivo e ocorrência da palavra ICMS não bastam.
-
-| Arquivo | Categoria | Escopo dominante | Documentos-fonte | Alerta |
-| --- | --- | --- | --- | --- |
-| BA_ICMS_ANEXOS.txt | ICMS_ANEXOS | Taxas | TAXAS/legest_2009_11631_taxas_anexo_II_anterior.pdf | escopo dominante incompatível: conteúdo parece tratar de Taxas, não de ICMS; escopo incompatível: arquivo classificado como ICMS, mas os documentos fonte indicam Taxas |
-| BA_ICMS_ANEXOS_parte2.txt | ICMS_ANEXOS | Taxas | TAXAS/legest_2009_11631_taxas_anexo_I_anterior.pdf | escopo dominante incompatível: conteúdo parece tratar de Taxas, não de ICMS; escopo incompatível: arquivo classificado como ICMS, mas os documentos fonte indicam Taxas |
+| RR | Norte | revisao_fonte | 5 | 5 | 0 | bloquear_publicacao_ate_curadoria | contém IPVA, contém Taxas, fonte local sem URL oficial no cabeçalho, texto curto para RICMS/benefícios |
+| RS | Sul | revisao_fonte | 9 | 9 | 0 | bloquear_publicacao_ate_curadoria | contém IPVA, contém Taxas |
+| SC | Sul | revisao_fonte | 2 | 2 | 0 | bloquear_publicacao_ate_curadoria | texto curto para RICMS/benefícios |
+| SE | Nordeste | revisao_fonte | 4 | 4 | 0 | bloquear_publicacao_ate_curadoria | contém IPVA, contém Taxas, fonte local sem URL oficial no cabeçalho, texto curto para RICMS/benefícios |
+| SP | Sudeste | revisao_fonte | 21 | 21 | 0 | bloquear_publicacao_ate_curadoria | contém IPVA, contém Taxas, fonte local sem URL oficial no cabeçalho, possível duplicidade de fonte |
+| TO | Norte | revisao_fonte | 2 | 2 | 0 | bloquear_publicacao_ate_curadoria | contém Taxas, texto curto para RICMS/benefícios |
 
 ## Regra De Leitura Do Resultado
 

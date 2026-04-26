@@ -2,10 +2,10 @@
   "generated_on": "2026-04-26",
   "summary": {
     "states": 27,
-    "docs": 183,
-    "publishable_docs": 174,
-    "scope_blocked_docs": 9,
-    "blocked": 26
+    "docs": 191,
+    "publishable_docs": 184,
+    "scope_blocked_docs": 7,
+    "blocked": 25
   },
   "states": {
     "AC": {
@@ -28,7 +28,6 @@
         "contém ITCMD/ITCD",
         "contém Taxas",
         "fonte local sem URL oficial no cabeçalho",
-        "ruído de extração/encoding",
         "texto curto para RICMS/benefícios"
       ],
       "recommendation": "bloquear_publicacao_ate_curadoria",
@@ -50,7 +49,6 @@
           ],
           "flags": [
             "fonte local sem URL oficial no cabeçalho",
-            "ruído de extração/encoding",
             "texto curto para RICMS/benefícios"
           ]
         },
@@ -78,8 +76,7 @@
           ],
           "flags": [
             "contém Taxas",
-            "fonte local sem URL oficial no cabeçalho",
-            "ruído de extração/encoding"
+            "fonte local sem URL oficial no cabeçalho"
           ]
         },
         {
@@ -101,8 +98,7 @@
             "Decretos/Decreto nº 11.667 de 4 de abril de 2025 - Incorpora à legislação tributária do Estado Ajustes SINIEF Convênios Protocolos ICMS e Acordos de Cooperação Técnica.pdf"
           ],
           "flags": [
-            "fonte local sem URL oficial no cabeçalho",
-            "ruído de extração/encoding"
+            "fonte local sem URL oficial no cabeçalho"
           ]
         },
         {
@@ -123,8 +119,7 @@
           "flags": [
             "contém IPVA",
             "contém Taxas",
-            "fonte local sem URL oficial no cabeçalho",
-            "ruído de extração/encoding"
+            "fonte local sem URL oficial no cabeçalho"
           ]
         },
         {
@@ -153,8 +148,7 @@
             "contém IPVA",
             "contém ITCMD/ITCD",
             "contém Taxas",
-            "fonte local sem URL oficial no cabeçalho",
-            "ruído de extração/encoding"
+            "fonte local sem URL oficial no cabeçalho"
           ]
         },
         {
@@ -177,8 +171,7 @@
             "Decretos/Decreto nº 11.675 de 10 de abril de 2025 Altera o RICMS _ NFCom (AJ 7-22_ atualizado até o AJ 34-24).pdf"
           ],
           "flags": [
-            "fonte local sem URL oficial no cabeçalho",
-            "ruído de extração/encoding"
+            "fonte local sem URL oficial no cabeçalho"
           ]
         }
       ]
@@ -198,7 +191,6 @@
       },
       "flags": [
         "fonte local sem URL oficial no cabeçalho",
-        "ruído de extração/encoding",
         "texto curto para RICMS/benefícios"
       ],
       "recommendation": "bloquear_publicacao_ate_curadoria",
@@ -219,7 +211,6 @@
           ],
           "flags": [
             "fonte local sem URL oficial no cabeçalho",
-            "ruído de extração/encoding",
             "texto curto para RICMS/benefícios"
           ]
         },
@@ -236,9 +227,7 @@
           "source_documents": [
             "DECRETO Nº 90.309-2023 -RETIFICADO260523-COM MVAs AJUSTADAS-atualizado23-12-25.pdf"
           ],
-          "flags": [
-            "ruído de extração/encoding"
-          ]
+          "flags": []
         },
         {
           "file": "AL_ICMS_ST_parte2.txt",
@@ -254,8 +243,7 @@
             "MERCADORIAS SUJEITAS À SUBSTITUIÇÃO TRIBUTÁRIA (5).pdf"
           ],
           "flags": [
-            "fonte local sem URL oficial no cabeçalho",
-            "ruído de extração/encoding"
+            "fonte local sem URL oficial no cabeçalho"
           ]
         }
       ]
@@ -278,8 +266,7 @@
         "contém IPVA",
         "contém ITCMD/ITCD",
         "contém Taxas",
-        "fallback amplo",
-        "ruído de extração/encoding"
+        "fallback amplo"
       ],
       "recommendation": "bloquear_publicacao_ate_curadoria",
       "next_step": "Separar Código Tributário, RICMS e benefícios; baixar o regulamento vigente do Amazonas.",
@@ -300,8 +287,7 @@
           "flags": [
             "categoria não específica de ICMS",
             "contém Taxas",
-            "fallback amplo",
-            "ruído de extração/encoding"
+            "fallback amplo"
           ]
         },
         {
@@ -321,8 +307,7 @@
           "flags": [
             "categoria não específica de ICMS",
             "contém Taxas",
-            "fallback amplo",
-            "ruído de extração/encoding"
+            "fallback amplo"
           ]
         },
         {
@@ -343,8 +328,7 @@
             "contém IPVA",
             "contém ITCMD/ITCD",
             "contém Taxas",
-            "fallback amplo",
-            "ruído de extração/encoding"
+            "fallback amplo"
           ]
         },
         {
@@ -371,8 +355,7 @@
             "categoria não específica de ICMS",
             "contém ITCMD/ITCD",
             "contém Taxas",
-            "fallback amplo",
-            "ruído de extração/encoding"
+            "fallback amplo"
           ]
         }
       ]
@@ -442,7 +425,6 @@
           ],
           "flags": [
             "fonte local sem URL oficial no cabeçalho",
-            "ruído de extração/encoding",
             "texto curto para RICMS/benefícios"
           ]
         },
@@ -467,8 +449,7 @@
             "DECRETOS/2021/2021 - DECRETO 4907 - PROR DECRETOS BENEF CV ICMS 178_DOEn7575 (1).pdf"
           ],
           "flags": [
-            "contém Taxas",
-            "ruído de extração/encoding"
+            "contém Taxas"
           ]
         },
         {
@@ -486,7 +467,6 @@
           ],
           "flags": [
             "fonte local sem URL oficial no cabeçalho",
-            "ruído de extração/encoding",
             "texto curto para RICMS/benefícios"
           ]
         },
@@ -512,9 +492,7 @@
             "DECRETOS/2022/2022 - DECRETO 3815 - SUBSTITUI__O TRIBTUT_ALT ANEXO III RICMS.AP.pdf",
             "DECRETOS/2022/2022 - DECRETO 3815 - SUBSTITUI__O TRIBTUT_ALT ANEXO III RICMS.AP_DOEn7738.pdf"
           ],
-          "flags": [
-            "ruído de extração/encoding"
-          ]
+          "flags": []
         },
         {
           "file": "AP_RICMS_parte2.txt",
@@ -532,8 +510,7 @@
             "REGULAMENTO/1998 - DECRETO 2269 - RICMS Atualizado 13.07.2021 (1).pdf"
           ],
           "flags": [
-            "contém Taxas",
-            "ruído de extração/encoding"
+            "contém Taxas"
           ]
         },
         {
@@ -552,8 +529,7 @@
             "REGULAMENTO/1998 - DECRETO 2269 - RICMS Atualizado 13.07.2021.pdf"
           ],
           "flags": [
-            "contém Taxas",
-            "ruído de extração/encoding"
+            "contém Taxas"
           ]
         }
       ]
@@ -561,87 +537,27 @@
     "BA": {
       "estado": "Bahia",
       "region": "Nordeste",
-      "curadoria": "em_segmentacao",
-      "publish_deep": false,
-      "document_count": 7,
-      "publishable_document_count": 5,
-      "scope_blocked_document_count": 2,
-      "total_chars": 4297939,
+      "curadoria": "publicado_v1",
+      "publish_deep": true,
+      "document_count": 15,
+      "publishable_document_count": 15,
+      "scope_blocked_document_count": 0,
+      "total_chars": 1844093,
       "categories": {
-        "ICMS_ANEXOS": 2,
+        "ICMS_BENEFICIOS": 11,
         "ICMS_LEIS": 1,
-        "RICMS": 4
+        "ICMS_ST": 1,
+        "INSTRUCOES_NORMATIVAS": 1,
+        "RICMS": 1
       },
-      "flags": [
-        "contém Taxas",
-        "escopo dominante incompatível: conteúdo parece tratar de Taxas, não de ICMS",
-        "escopo incompatível: arquivo classificado como ICMS, mas os documentos fonte indicam Taxas",
-        "escopo material incompatível com ICMS",
-        "fonte local sem URL oficial no cabeçalho",
-        "ruído de extração/encoding",
-        "texto curto para RICMS/benefícios"
-      ],
-      "recommendation": "bloquear_publicacao_ate_reclassificar_escopo",
-      "next_step": "Material normativo reunido: Lei do ICMS, RICMS, anexos, DESENVOLVE, PROIND, PRONAVAL, crédito presumido, informática/eletrônica, atos da LC 160/Convênio 190 e EFD dos incentivos. Próxima etapa: segmentar por capítulos temáticos antes de publicar a página profunda.",
+      "flags": [],
+      "recommendation": "manter_publicado",
+      "next_step": "Bahia publicada como página profunda: Lei do ICMS, RICMS, anexos, substituição tributária, DESENVOLVE, PROIND, PRONAVAL, crédito presumido, informática/eletrônica, atos da LC 160/Convênio 190 e EFD dos incentivos.",
       "documents": [
         {
-          "file": "BA_ICMS_ANEXOS.txt",
-          "category": "ICMS_ANEXOS",
-          "chars": 421426,
-          "named_icms": true,
-          "fallback_icms": false,
-          "dominant_scope": "Taxas",
-          "source_scopes": [
-            "Taxas"
-          ],
-          "scope_blocked": true,
-          "scope_flags": [
-            "escopo dominante incompatível: conteúdo parece tratar de Taxas, não de ICMS",
-            "escopo incompatível: arquivo classificado como ICMS, mas os documentos fonte indicam Taxas"
-          ],
-          "source_documents": [
-            "TAXAS/legest_2009_11631_taxas_anexo_II_anterior.pdf"
-          ],
-          "flags": [
-            "contém Taxas",
-            "escopo dominante incompatível: conteúdo parece tratar de Taxas, não de ICMS",
-            "escopo incompatível: arquivo classificado como ICMS, mas os documentos fonte indicam Taxas",
-            "escopo material incompatível com ICMS",
-            "fonte local sem URL oficial no cabeçalho",
-            "ruído de extração/encoding"
-          ]
-        },
-        {
-          "file": "BA_ICMS_ANEXOS_parte2.txt",
-          "category": "ICMS_ANEXOS",
-          "chars": 864895,
-          "named_icms": true,
-          "fallback_icms": false,
-          "dominant_scope": "Taxas",
-          "source_scopes": [
-            "Taxas"
-          ],
-          "scope_blocked": true,
-          "scope_flags": [
-            "escopo dominante incompatível: conteúdo parece tratar de Taxas, não de ICMS",
-            "escopo incompatível: arquivo classificado como ICMS, mas os documentos fonte indicam Taxas"
-          ],
-          "source_documents": [
-            "TAXAS/legest_2009_11631_taxas_anexo_I_anterior.pdf"
-          ],
-          "flags": [
-            "contém Taxas",
-            "escopo dominante incompatível: conteúdo parece tratar de Taxas, não de ICMS",
-            "escopo incompatível: arquivo classificado como ICMS, mas os documentos fonte indicam Taxas",
-            "escopo material incompatível com ICMS",
-            "fonte local sem URL oficial no cabeçalho",
-            "ruído de extração/encoding"
-          ]
-        },
-        {
-          "file": "BA_ICMS_LEIS.txt",
+          "file": "BA_LEI_7014_1996_ICMS_2026-04-26.txt",
           "category": "ICMS_LEIS",
-          "chars": 312679,
+          "chars": 320655,
           "named_icms": true,
           "fallback_icms": false,
           "dominant_scope": "ICMS",
@@ -651,18 +567,14 @@
           "scope_blocked": false,
           "scope_flags": [],
           "source_documents": [
-            "ICMS/legest_1996_7014_icmscomnotas.pdf"
+            "https://mbusca.sefaz.ba.gov.br/DITRI/leis/leis_estaduais/legest_1996_7014_icmscomnotas.pdf"
           ],
-          "flags": [
-            "contém Taxas",
-            "fonte local sem URL oficial no cabeçalho",
-            "ruído de extração/encoding"
-          ]
+          "flags": []
         },
         {
-          "file": "BA_RICMS.txt",
+          "file": "BA_DEC_13780_2012_RICMS_2026-04-26.txt",
           "category": "RICMS",
-          "chars": 478386,
+          "chars": 910096,
           "named_icms": true,
           "fallback_icms": false,
           "dominant_scope": "ICMS",
@@ -672,21 +584,14 @@
           "scope_blocked": false,
           "scope_flags": [],
           "source_documents": [
-            "ICMS/decreto_2012_13780_ricms_anexo_1_vigente_2023_a_partir_22_03_2023.pdf",
-            "ICMS/decreto_2012_13780_ricms_anexo_1_vigente_2023_paisagem.pdf",
-            "ICMS/decreto_2012_13780_ricms_anexo_1_vigente_2024.pdf",
-            "ICMS/decreto_2012_13780_ricms_anexo_1_vigente_2024_a_partir_07_02_2024.pdf",
-            "ICMS/decreto_2012_13780_ricms_anexo_1_vigente_2025.pdf"
+            "https://mbusca.sefaz.ba.gov.br/DITRI/normas_complementares/decretos/decreto_2012_13780_ricms_texto_2021.pdf"
           ],
-          "flags": [
-            "fonte local sem URL oficial no cabeçalho",
-            "ruído de extração/encoding"
-          ]
+          "flags": []
         },
         {
-          "file": "BA_RICMS_parte2.txt",
-          "category": "RICMS",
-          "chars": 13858,
+          "file": "BA_RICMS_ANEXO_1_ST_2026-04-26.txt",
+          "category": "ICMS_ST",
+          "chars": 74766,
           "named_icms": true,
           "fallback_icms": false,
           "dominant_scope": "ICMS",
@@ -696,19 +601,14 @@
           "scope_blocked": false,
           "scope_flags": [],
           "source_documents": [
-            "ICMS/decreto_2012_13780_ricms_anexo_2.pdf",
-            "ICMS/decreto_2012_13780_ricms_indice.pdf"
+            "https://mbusca.sefaz.ba.gov.br/DITRI/normas_complementares/decretos/decreto_2012_13780_ricms_anexo_1_vigente_2026.pdf"
           ],
-          "flags": [
-            "fonte local sem URL oficial no cabeçalho",
-            "ruído de extração/encoding",
-            "texto curto para RICMS/benefícios"
-          ]
+          "flags": []
         },
         {
-          "file": "BA_RICMS_parte3.txt",
-          "category": "RICMS",
-          "chars": 1329276,
+          "file": "BA_RICMS_ANEXO_2_RURAL_2026-04-26.txt",
+          "category": "ICMS_BENEFICIOS",
+          "chars": 633,
           "named_icms": true,
           "fallback_icms": false,
           "dominant_scope": "ICMS",
@@ -718,17 +618,14 @@
           "scope_blocked": false,
           "scope_flags": [],
           "source_documents": [
-            "ICMS/decreto_2012_13780_ricms_texto.pdf"
+            "https://mbusca.sefaz.ba.gov.br/DITRI/normas_complementares/decretos/decreto_2012_13780_ricms_anexo_2.pdf"
           ],
-          "flags": [
-            "contém Taxas",
-            "ruído de extração/encoding"
-          ]
+          "flags": []
         },
         {
-          "file": "BA_RICMS_parte4.txt",
-          "category": "RICMS",
-          "chars": 877419,
+          "file": "BA_LEI_7980_2001_DESENVOLVE_2026-04-26.txt",
+          "category": "ICMS_BENEFICIOS",
+          "chars": 9099,
           "named_icms": true,
           "fallback_icms": false,
           "dominant_scope": "ICMS",
@@ -738,12 +635,179 @@
           "scope_blocked": false,
           "scope_flags": [],
           "source_documents": [
-            "ICMS/decreto_2012_13780_ricms_texto_2021.pdf"
+            "https://mbusca.sefaz.ba.gov.br/DITRI/leis/leis_estaduais/legest_2001_7980.pdf"
           ],
-          "flags": [
-            "contém Taxas",
-            "ruído de extração/encoding"
-          ]
+          "flags": []
+        },
+        {
+          "file": "BA_DEC_8205_2002_DESENVOLVE_2026-04-26.txt",
+          "category": "ICMS_BENEFICIOS",
+          "chars": 61863,
+          "named_icms": true,
+          "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [
+            "ICMS"
+          ],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [
+            "https://mbusca.sefaz.ba.gov.br/DITRI/normas_complementares/decretos/decreto_2002_8205_desenvolve.pdf"
+          ],
+          "flags": []
+        },
+        {
+          "file": "BA_DEC_18802_2018_PROIND_2026-04-26.txt",
+          "category": "ICMS_BENEFICIOS",
+          "chars": 19472,
+          "named_icms": true,
+          "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [
+            "ICMS"
+          ],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [
+            "https://mbusca.sefaz.ba.gov.br/DITRI/normas_complementares/decretos/decreto_2018_18802.pdf"
+          ],
+          "flags": []
+        },
+        {
+          "file": "BA_LEI_9829_2005_PRONAVAL_2026-04-26.txt",
+          "category": "ICMS_BENEFICIOS",
+          "chars": 4399,
+          "named_icms": true,
+          "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [
+            "ICMS"
+          ],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [
+            "https://mbusca.sefaz.ba.gov.br/DITRI/leis/leis_estaduais/legest_2005_9829.pdf"
+          ],
+          "flags": []
+        },
+        {
+          "file": "BA_DEC_11015_2008_PRONAVAL_2026-04-26.txt",
+          "category": "ICMS_BENEFICIOS",
+          "chars": 8645,
+          "named_icms": true,
+          "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [
+            "ICMS"
+          ],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [
+            "https://mbusca.sefaz.ba.gov.br/DITRI/normas_complementares/decretos/decreto_2008_11015.pdf"
+          ],
+          "flags": []
+        },
+        {
+          "file": "BA_LEI_7025_1997_CREDITO_PRESUMIDO_2026-04-26.txt",
+          "category": "ICMS_BENEFICIOS",
+          "chars": 5906,
+          "named_icms": true,
+          "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [
+            "ICMS"
+          ],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [
+            "https://mbusca.sefaz.ba.gov.br/DITRI/leis/leis_estaduais/legest_1997_7025.pdf"
+          ],
+          "flags": []
+        },
+        {
+          "file": "BA_DEC_6734_1997_CREDITO_PRESUMIDO_2026-04-26.txt",
+          "category": "ICMS_BENEFICIOS",
+          "chars": 220439,
+          "named_icms": true,
+          "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [
+            "ICMS"
+          ],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [
+            "https://mbusca.sefaz.ba.gov.br/DITRI/normas_complementares/decretos/decreto_1997_6734.pdf"
+          ],
+          "flags": []
+        },
+        {
+          "file": "BA_DEC_4316_1995_INFORMATICA_ELETRONICA_2026-04-26.txt",
+          "category": "ICMS_BENEFICIOS",
+          "chars": 62441,
+          "named_icms": true,
+          "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [
+            "ICMS"
+          ],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [
+            "https://mbusca.sefaz.ba.gov.br/DITRI/normas_complementares/decretos/decreto_1995_4316.pdf"
+          ],
+          "flags": []
+        },
+        {
+          "file": "BA_DEC_18270_2018_BENEFICIOS_LC160_2026-04-26.txt",
+          "category": "ICMS_BENEFICIOS",
+          "chars": 94571,
+          "named_icms": true,
+          "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [
+            "ICMS"
+          ],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [
+            "https://mbusca.sefaz.ba.gov.br/DITRI/normas_complementares/decretos/decreto_2018_18270.pdf"
+          ],
+          "flags": []
+        },
+        {
+          "file": "BA_DEC_18288_2018_BENEFICIOS_LC160_2026-04-26.txt",
+          "category": "ICMS_BENEFICIOS",
+          "chars": 33157,
+          "named_icms": true,
+          "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [
+            "ICMS"
+          ],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [
+            "https://mbusca.sefaz.ba.gov.br/DITRI/normas_complementares/decretos/decreto_2018_18288.pdf"
+          ],
+          "flags": []
+        },
+        {
+          "file": "BA_PORT_273_2014_EFD_INCENTIVOS_2026-04-26.txt",
+          "category": "INSTRUCOES_NORMATIVAS",
+          "chars": 17951,
+          "named_icms": true,
+          "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [
+            "ICMS"
+          ],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [
+            "https://www.sefaz.ba.gov.br/docs/inspetoria-eletronica/icms/incentivos_fiscais_orientacoes_lancamento.pdf"
+          ],
+          "flags": []
         }
       ]
     },
@@ -767,8 +831,7 @@
         "contém ITCMD/ITCD",
         "contém Taxas",
         "fallback amplo",
-        "fonte local sem URL oficial no cabeçalho",
-        "ruído de extração/encoding"
+        "fonte local sem URL oficial no cabeçalho"
       ],
       "recommendation": "bloquear_publicacao_ate_curadoria",
       "next_step": "Baixar RICMS, decretos modificadores e benefícios no portal oficial do Ceará.",
@@ -790,8 +853,7 @@
             "categoria não específica de ICMS",
             "contém Taxas",
             "fallback amplo",
-            "fonte local sem URL oficial no cabeçalho",
-            "ruído de extração/encoding"
+            "fonte local sem URL oficial no cabeçalho"
           ]
         },
         {
@@ -812,8 +874,7 @@
             "contém IPVA",
             "contém Taxas",
             "fallback amplo",
-            "fonte local sem URL oficial no cabeçalho",
-            "ruído de extração/encoding"
+            "fonte local sem URL oficial no cabeçalho"
           ]
         },
         {
@@ -836,8 +897,7 @@
             "contém ITCMD/ITCD",
             "contém Taxas",
             "fallback amplo",
-            "fonte local sem URL oficial no cabeçalho",
-            "ruído de extração/encoding"
+            "fonte local sem URL oficial no cabeçalho"
           ]
         },
         {
@@ -861,8 +921,7 @@
             "contém IPVA",
             "contém Taxas",
             "fallback amplo",
-            "fonte local sem URL oficial no cabeçalho",
-            "ruído de extração/encoding"
+            "fonte local sem URL oficial no cabeçalho"
           ]
         },
         {
@@ -882,8 +941,7 @@
             "categoria não específica de ICMS",
             "contém Taxas",
             "fallback amplo",
-            "fonte local sem URL oficial no cabeçalho",
-            "ruído de extração/encoding"
+            "fonte local sem URL oficial no cabeçalho"
           ]
         },
         {
@@ -905,8 +963,7 @@
             "categoria não específica de ICMS",
             "contém Taxas",
             "fallback amplo",
-            "fonte local sem URL oficial no cabeçalho",
-            "ruído de extração/encoding"
+            "fonte local sem URL oficial no cabeçalho"
           ]
         },
         {
@@ -924,8 +981,7 @@
           ],
           "flags": [
             "categoria não específica de ICMS",
-            "fallback amplo",
-            "ruído de extração/encoding"
+            "fallback amplo"
           ]
         },
         {
@@ -947,8 +1003,7 @@
             "contém ITCMD/ITCD",
             "contém Taxas",
             "fallback amplo",
-            "fonte local sem URL oficial no cabeçalho",
-            "ruído de extração/encoding"
+            "fonte local sem URL oficial no cabeçalho"
           ]
         }
       ]
@@ -976,8 +1031,7 @@
         "fallback amplo",
         "fallback amplo contaminado: categoria DECRETOS contém ICMS, mas o escopo dominante é Taxas",
         "fallback amplo contaminado: categoria LEIS contém ICMS, mas o escopo dominante é Taxas",
-        "fallback amplo contaminado: categoria PORTARIAS contém ICMS, mas o escopo dominante é Taxas",
-        "ruído de extração/encoding"
+        "fallback amplo contaminado: categoria PORTARIAS contém ICMS, mas o escopo dominante é Taxas"
       ],
       "recommendation": "bloquear_publicacao_ate_reclassificar_escopo",
       "next_step": "Baixar RICMS/DF e caderno de benefícios fiscais na Receita do Distrito Federal.",
@@ -1010,8 +1064,7 @@
             "contém Taxas",
             "escopo material incompatível com ICMS",
             "fallback amplo",
-            "fallback amplo contaminado: categoria DECRETOS contém ICMS, mas o escopo dominante é Taxas",
-            "ruído de extração/encoding"
+            "fallback amplo contaminado: categoria DECRETOS contém ICMS, mas o escopo dominante é Taxas"
           ]
         },
         {
@@ -1038,8 +1091,7 @@
             "contém IPVA",
             "contém ITCMD/ITCD",
             "contém Taxas",
-            "fallback amplo",
-            "ruído de extração/encoding"
+            "fallback amplo"
           ]
         },
         {
@@ -1063,8 +1115,7 @@
             "contém Taxas",
             "escopo material incompatível com ICMS",
             "fallback amplo",
-            "fallback amplo contaminado: categoria DECRETOS contém ICMS, mas o escopo dominante é Taxas",
-            "ruído de extração/encoding"
+            "fallback amplo contaminado: categoria DECRETOS contém ICMS, mas o escopo dominante é Taxas"
           ]
         },
         {
@@ -1092,8 +1143,7 @@
             "contém Taxas",
             "escopo material incompatível com ICMS",
             "fallback amplo",
-            "fallback amplo contaminado: categoria LEIS contém ICMS, mas o escopo dominante é Taxas",
-            "ruído de extração/encoding"
+            "fallback amplo contaminado: categoria LEIS contém ICMS, mas o escopo dominante é Taxas"
           ]
         },
         {
@@ -1125,8 +1175,7 @@
             "contém Taxas",
             "escopo material incompatível com ICMS",
             "fallback amplo",
-            "fallback amplo contaminado: categoria PORTARIAS contém ICMS, mas o escopo dominante é Taxas",
-            "ruído de extração/encoding"
+            "fallback amplo contaminado: categoria PORTARIAS contém ICMS, mas o escopo dominante é Taxas"
           ]
         }
       ]
@@ -1145,8 +1194,7 @@
       },
       "flags": [
         "contém IPVA",
-        "contém Taxas",
-        "ruído de extração/encoding"
+        "contém Taxas"
       ],
       "recommendation": "bloquear_publicacao_ate_curadoria",
       "next_step": "Baixar RICMS/ES vigente e benefícios no portal oficial do Espírito Santo.",
@@ -1164,8 +1212,7 @@
           "source_documents": [],
           "flags": [
             "contém IPVA",
-            "contém Taxas",
-            "ruído de extração/encoding"
+            "contém Taxas"
           ]
         },
         {
@@ -1180,8 +1227,7 @@
           "scope_flags": [],
           "source_documents": [],
           "flags": [
-            "contém Taxas",
-            "ruído de extração/encoding"
+            "contém Taxas"
           ]
         },
         {
@@ -1196,8 +1242,7 @@
           "scope_flags": [],
           "source_documents": [],
           "flags": [
-            "contém Taxas",
-            "ruído de extração/encoding"
+            "contém Taxas"
           ]
         },
         {
@@ -1212,8 +1257,7 @@
           "scope_flags": [],
           "source_documents": [],
           "flags": [
-            "contém Taxas",
-            "ruído de extração/encoding"
+            "contém Taxas"
           ]
         },
         {
@@ -1228,8 +1272,7 @@
           "scope_flags": [],
           "source_documents": [],
           "flags": [
-            "contém Taxas",
-            "ruído de extração/encoding"
+            "contém Taxas"
           ]
         },
         {
@@ -1245,8 +1288,7 @@
           "source_documents": [],
           "flags": [
             "contém IPVA",
-            "contém Taxas",
-            "ruído de extração/encoding"
+            "contém Taxas"
           ]
         },
         {
@@ -1260,9 +1302,7 @@
           "scope_blocked": false,
           "scope_flags": [],
           "source_documents": [],
-          "flags": [
-            "ruído de extração/encoding"
-          ]
+          "flags": []
         }
       ]
     },
@@ -1296,8 +1336,7 @@
       },
       "flags": [
         "contém Taxas",
-        "fonte local sem URL oficial no cabeçalho",
-        "ruído de extração/encoding"
+        "fonte local sem URL oficial no cabeçalho"
       ],
       "recommendation": "bloquear_publicacao_ate_curadoria",
       "next_step": "Baixar RICMS/MA e anexos de benefícios no portal oficial do Maranhão.",
@@ -1317,8 +1356,7 @@
           ],
           "flags": [
             "contém Taxas",
-            "fonte local sem URL oficial no cabeçalho",
-            "ruído de extração/encoding"
+            "fonte local sem URL oficial no cabeçalho"
           ]
         },
         {
@@ -1345,8 +1383,7 @@
           ],
           "flags": [
             "contém Taxas",
-            "fonte local sem URL oficial no cabeçalho",
-            "ruído de extração/encoding"
+            "fonte local sem URL oficial no cabeçalho"
           ]
         },
         {
@@ -1372,8 +1409,7 @@
             "REGULAMENTO ICMS/ANEXO 4.45.pdf"
           ],
           "flags": [
-            "contém Taxas",
-            "ruído de extração/encoding"
+            "contém Taxas"
           ]
         },
         {
@@ -1400,8 +1436,7 @@
           ],
           "flags": [
             "contém Taxas",
-            "fonte local sem URL oficial no cabeçalho",
-            "ruído de extração/encoding"
+            "fonte local sem URL oficial no cabeçalho"
           ]
         },
         {
@@ -1427,8 +1462,7 @@
           ],
           "flags": [
             "contém Taxas",
-            "fonte local sem URL oficial no cabeçalho",
-            "ruído de extração/encoding"
+            "fonte local sem URL oficial no cabeçalho"
           ]
         },
         {
@@ -1454,8 +1488,7 @@
             "REGULAMENTO ICMS/ANEXO4.13.pdf"
           ],
           "flags": [
-            "contém Taxas",
-            "ruído de extração/encoding"
+            "contém Taxas"
           ]
         },
         {
@@ -1481,8 +1514,7 @@
             "REGULAMENTO ICMS/ANEXO4.30.pdf"
           ],
           "flags": [
-            "fonte local sem URL oficial no cabeçalho",
-            "ruído de extração/encoding"
+            "fonte local sem URL oficial no cabeçalho"
           ]
         },
         {
@@ -1503,8 +1535,7 @@
             "REGULAMENTO ICMS/Anexo 4.47.pdf"
           ],
           "flags": [
-            "fonte local sem URL oficial no cabeçalho",
-            "ruído de extração/encoding"
+            "fonte local sem URL oficial no cabeçalho"
           ]
         },
         {
@@ -1523,8 +1554,7 @@
             "REGULAMENTO ICMS/REGULAMENTO ICMS.pdf"
           ],
           "flags": [
-            "contém Taxas",
-            "ruído de extração/encoding"
+            "contém Taxas"
           ]
         },
         {
@@ -1550,8 +1580,7 @@
             "REGULAMENTO ICMS/Anexos 5.0/Guia para Liberação de Mercadoria Estrangeira sem comprovação do Recolhimento do ICMS.pdf"
           ],
           "flags": [
-            "fonte local sem URL oficial no cabeçalho",
-            "ruído de extração/encoding"
+            "fonte local sem URL oficial no cabeçalho"
           ]
         }
       ]
@@ -1569,8 +1598,7 @@
         "RICMS": 31
       },
       "flags": [
-        "contém Taxas",
-        "ruído de extração/encoding"
+        "contém Taxas"
       ],
       "recommendation": "bloquear_publicacao_ate_curadoria",
       "next_step": "Baixar RICMS/MG vigente, anexos e benefícios diretamente da SEF/MG.",
@@ -1587,8 +1615,7 @@
           "scope_flags": [],
           "source_documents": [],
           "flags": [
-            "contém Taxas",
-            "ruído de extração/encoding"
+            "contém Taxas"
           ]
         },
         {
@@ -1602,9 +1629,7 @@
           "scope_blocked": false,
           "scope_flags": [],
           "source_documents": [],
-          "flags": [
-            "ruído de extração/encoding"
-          ]
+          "flags": []
         },
         {
           "file": "MG_RICMS_pt11.txt",
@@ -1618,8 +1643,7 @@
           "scope_flags": [],
           "source_documents": [],
           "flags": [
-            "contém Taxas",
-            "ruído de extração/encoding"
+            "contém Taxas"
           ]
         },
         {
@@ -1634,8 +1658,7 @@
           "scope_flags": [],
           "source_documents": [],
           "flags": [
-            "contém Taxas",
-            "ruído de extração/encoding"
+            "contém Taxas"
           ]
         },
         {
@@ -1650,8 +1673,7 @@
           "scope_flags": [],
           "source_documents": [],
           "flags": [
-            "contém Taxas",
-            "ruído de extração/encoding"
+            "contém Taxas"
           ]
         },
         {
@@ -1666,8 +1688,7 @@
           "scope_flags": [],
           "source_documents": [],
           "flags": [
-            "contém Taxas",
-            "ruído de extração/encoding"
+            "contém Taxas"
           ]
         },
         {
@@ -1681,9 +1702,7 @@
           "scope_blocked": false,
           "scope_flags": [],
           "source_documents": [],
-          "flags": [
-            "ruído de extração/encoding"
-          ]
+          "flags": []
         },
         {
           "file": "MG_RICMS_pt16.txt",
@@ -1696,9 +1715,7 @@
           "scope_blocked": false,
           "scope_flags": [],
           "source_documents": [],
-          "flags": [
-            "ruído de extração/encoding"
-          ]
+          "flags": []
         },
         {
           "file": "MG_RICMS_pt17.txt",
@@ -1711,9 +1728,7 @@
           "scope_blocked": false,
           "scope_flags": [],
           "source_documents": [],
-          "flags": [
-            "ruído de extração/encoding"
-          ]
+          "flags": []
         },
         {
           "file": "MG_RICMS_pt18.txt",
@@ -1726,9 +1741,7 @@
           "scope_blocked": false,
           "scope_flags": [],
           "source_documents": [],
-          "flags": [
-            "ruído de extração/encoding"
-          ]
+          "flags": []
         },
         {
           "file": "MG_RICMS_pt19.txt",
@@ -1742,8 +1755,7 @@
           "scope_flags": [],
           "source_documents": [],
           "flags": [
-            "contém Taxas",
-            "ruído de extração/encoding"
+            "contém Taxas"
           ]
         },
         {
@@ -1758,8 +1770,7 @@
           "scope_flags": [],
           "source_documents": [],
           "flags": [
-            "contém Taxas",
-            "ruído de extração/encoding"
+            "contém Taxas"
           ]
         },
         {
@@ -1773,9 +1784,7 @@
           "scope_blocked": false,
           "scope_flags": [],
           "source_documents": [],
-          "flags": [
-            "ruído de extração/encoding"
-          ]
+          "flags": []
         },
         {
           "file": "MG_RICMS_pt21.txt",
@@ -1789,8 +1798,7 @@
           "scope_flags": [],
           "source_documents": [],
           "flags": [
-            "contém Taxas",
-            "ruído de extração/encoding"
+            "contém Taxas"
           ]
         },
         {
@@ -1805,8 +1813,7 @@
           "scope_flags": [],
           "source_documents": [],
           "flags": [
-            "contém Taxas",
-            "ruído de extração/encoding"
+            "contém Taxas"
           ]
         },
         {
@@ -1821,8 +1828,7 @@
           "scope_flags": [],
           "source_documents": [],
           "flags": [
-            "contém Taxas",
-            "ruído de extração/encoding"
+            "contém Taxas"
           ]
         },
         {
@@ -1837,8 +1843,7 @@
           "scope_flags": [],
           "source_documents": [],
           "flags": [
-            "contém Taxas",
-            "ruído de extração/encoding"
+            "contém Taxas"
           ]
         },
         {
@@ -1852,9 +1857,7 @@
           "scope_blocked": false,
           "scope_flags": [],
           "source_documents": [],
-          "flags": [
-            "ruído de extração/encoding"
-          ]
+          "flags": []
         },
         {
           "file": "MG_RICMS_pt26.txt",
@@ -1868,8 +1871,7 @@
           "scope_flags": [],
           "source_documents": [],
           "flags": [
-            "contém Taxas",
-            "ruído de extração/encoding"
+            "contém Taxas"
           ]
         },
         {
@@ -1883,9 +1885,7 @@
           "scope_blocked": false,
           "scope_flags": [],
           "source_documents": [],
-          "flags": [
-            "ruído de extração/encoding"
-          ]
+          "flags": []
         },
         {
           "file": "MG_RICMS_pt28.txt",
@@ -1898,9 +1898,7 @@
           "scope_blocked": false,
           "scope_flags": [],
           "source_documents": [],
-          "flags": [
-            "ruído de extração/encoding"
-          ]
+          "flags": []
         },
         {
           "file": "MG_RICMS_pt29.txt",
@@ -1914,8 +1912,7 @@
           "scope_flags": [],
           "source_documents": [],
           "flags": [
-            "contém Taxas",
-            "ruído de extração/encoding"
+            "contém Taxas"
           ]
         },
         {
@@ -1930,8 +1927,7 @@
           "scope_flags": [],
           "source_documents": [],
           "flags": [
-            "contém Taxas",
-            "ruído de extração/encoding"
+            "contém Taxas"
           ]
         },
         {
@@ -1946,8 +1942,7 @@
           "scope_flags": [],
           "source_documents": [],
           "flags": [
-            "contém Taxas",
-            "ruído de extração/encoding"
+            "contém Taxas"
           ]
         },
         {
@@ -1961,9 +1956,7 @@
           "scope_blocked": false,
           "scope_flags": [],
           "source_documents": [],
-          "flags": [
-            "ruído de extração/encoding"
-          ]
+          "flags": []
         },
         {
           "file": "MG_RICMS_pt4.txt",
@@ -1977,8 +1970,7 @@
           "scope_flags": [],
           "source_documents": [],
           "flags": [
-            "contém Taxas",
-            "ruído de extração/encoding"
+            "contém Taxas"
           ]
         },
         {
@@ -1993,8 +1985,7 @@
           "scope_flags": [],
           "source_documents": [],
           "flags": [
-            "contém Taxas",
-            "ruído de extração/encoding"
+            "contém Taxas"
           ]
         },
         {
@@ -2008,9 +1999,7 @@
           "scope_blocked": false,
           "scope_flags": [],
           "source_documents": [],
-          "flags": [
-            "ruído de extração/encoding"
-          ]
+          "flags": []
         },
         {
           "file": "MG_RICMS_pt7.txt",
@@ -2037,8 +2026,7 @@
           "scope_flags": [],
           "source_documents": [],
           "flags": [
-            "contém Taxas",
-            "ruído de extração/encoding"
+            "contém Taxas"
           ]
         },
         {
@@ -2053,8 +2041,7 @@
           "scope_flags": [],
           "source_documents": [],
           "flags": [
-            "contém Taxas",
-            "ruído de extração/encoding"
+            "contém Taxas"
           ]
         }
       ]
@@ -2074,8 +2061,7 @@
       "flags": [
         "contém IPVA",
         "contém ITCMD/ITCD",
-        "contém Taxas",
-        "ruído de extração/encoding"
+        "contém Taxas"
       ],
       "recommendation": "bloquear_publicacao_ate_curadoria",
       "next_step": "Baixar RICMS/MS e anexos de benefícios no portal oficial de Mato Grosso do Sul.",
@@ -2093,8 +2079,7 @@
           "source_documents": [],
           "flags": [
             "contém ITCMD/ITCD",
-            "contém Taxas",
-            "ruído de extração/encoding"
+            "contém Taxas"
           ]
         },
         {
@@ -2109,8 +2094,7 @@
           "scope_flags": [],
           "source_documents": [],
           "flags": [
-            "contém Taxas",
-            "ruído de extração/encoding"
+            "contém Taxas"
           ]
         },
         {
@@ -2125,8 +2109,7 @@
           "scope_flags": [],
           "source_documents": [],
           "flags": [
-            "contém Taxas",
-            "ruído de extração/encoding"
+            "contém Taxas"
           ]
         },
         {
@@ -2143,8 +2126,7 @@
           "flags": [
             "contém IPVA",
             "contém ITCMD/ITCD",
-            "contém Taxas",
-            "ruído de extração/encoding"
+            "contém Taxas"
           ]
         },
         {
@@ -2159,8 +2141,7 @@
           "scope_flags": [],
           "source_documents": [],
           "flags": [
-            "contém Taxas",
-            "ruído de extração/encoding"
+            "contém Taxas"
           ]
         }
       ]
@@ -2180,8 +2161,7 @@
       },
       "flags": [
         "contém IPVA",
-        "contém Taxas",
-        "ruído de extração/encoding"
+        "contém Taxas"
       ],
       "recommendation": "bloquear_publicacao_ate_curadoria",
       "next_step": "Material normativo reunido: RICMS/MT. Próxima etapa: complementar anexos, benefícios fiscais, atos modificadores e validar vigência antes de publicar a página profunda.",
@@ -2204,9 +2184,7 @@
             "ANEXO XIX.pdf",
             "ANEXO XV.pdf"
           ],
-          "flags": [
-            "ruído de extração/encoding"
-          ]
+          "flags": []
         },
         {
           "file": "MT_ICMS_ANEXOS_parte2.txt",
@@ -2225,9 +2203,7 @@
             "APÊNDICE DO ANEXO X​​.pdf",
             "Anexo XVIII.pdf"
           ],
-          "flags": [
-            "ruído de extração/encoding"
-          ]
+          "flags": []
         },
         {
           "file": "MT_RICMS.txt",
@@ -2246,8 +2222,7 @@
           ],
           "flags": [
             "contém IPVA",
-            "contém Taxas",
-            "ruído de extração/encoding"
+            "contém Taxas"
           ]
         }
       ]
@@ -2272,8 +2247,7 @@
         "escopo material incompatível com ICMS",
         "fallback amplo",
         "fallback amplo contaminado: categoria OUTROS contém ICMS, mas o escopo dominante é Taxas",
-        "fonte local sem URL oficial no cabeçalho",
-        "ruído de extração/encoding"
+        "fonte local sem URL oficial no cabeçalho"
       ],
       "recommendation": "bloquear_publicacao_ate_reclassificar_escopo",
       "next_step": "Baixar RICMS/PA e benefícios no portal oficial do Pará.",
@@ -2306,8 +2280,7 @@
             "escopo material incompatível com ICMS",
             "fallback amplo",
             "fallback amplo contaminado: categoria OUTROS contém ICMS, mas o escopo dominante é Taxas",
-            "fonte local sem URL oficial no cabeçalho",
-            "ruído de extração/encoding"
+            "fonte local sem URL oficial no cabeçalho"
           ]
         },
         {
@@ -2336,8 +2309,7 @@
             "escopo material incompatível com ICMS",
             "fallback amplo",
             "fallback amplo contaminado: categoria OUTROS contém ICMS, mas o escopo dominante é Taxas",
-            "fonte local sem URL oficial no cabeçalho",
-            "ruído de extração/encoding"
+            "fonte local sem URL oficial no cabeçalho"
           ]
         }
       ]
@@ -2357,8 +2329,7 @@
       "flags": [
         "contém IPVA",
         "contém ITCMD/ITCD",
-        "contém Taxas",
-        "ruído de extração/encoding"
+        "contém Taxas"
       ],
       "recommendation": "bloquear_publicacao_ate_curadoria",
       "next_step": "Baixar RICMS/PB e benefícios no portal oficial da Paraíba.",
@@ -2388,8 +2359,7 @@
           "flags": [
             "contém IPVA",
             "contém ITCMD/ITCD",
-            "contém Taxas",
-            "ruído de extração/encoding"
+            "contém Taxas"
           ]
         }
       ]
@@ -2412,7 +2382,6 @@
       "flags": [
         "contém Taxas",
         "fonte local sem URL oficial no cabeçalho",
-        "ruído de extração/encoding",
         "texto curto para RICMS/benefícios"
       ],
       "recommendation": "bloquear_publicacao_ate_curadoria",
@@ -2433,7 +2402,6 @@
           ],
           "flags": [
             "fonte local sem URL oficial no cabeçalho",
-            "ruído de extração/encoding",
             "texto curto para RICMS/benefícios"
           ]
         },
@@ -2451,8 +2419,7 @@
             "LEI Nº 15.730, DE 17 DE MARÇO DE 2016 - ICMS.pdf"
           ],
           "flags": [
-            "contém Taxas",
-            "ruído de extração/encoding"
+            "contém Taxas"
           ]
         },
         {
@@ -2470,8 +2437,7 @@
             "Produtos_Antecipacao_Tributaria.pdf"
           ],
           "flags": [
-            "fonte local sem URL oficial no cabeçalho",
-            "ruído de extração/encoding"
+            "fonte local sem URL oficial no cabeçalho"
           ]
         },
         {
@@ -2489,9 +2455,7 @@
           "source_documents": [
             "RICMS.pdf (parte 1)"
           ],
-          "flags": [
-            "ruído de extração/encoding"
-          ]
+          "flags": []
         },
         {
           "file": "PE_RICMS_parte2.txt",
@@ -2508,9 +2472,7 @@
           "source_documents": [
             "RICMS.pdf (parte 2)"
           ],
-          "flags": [
-            "ruído de extração/encoding"
-          ]
+          "flags": []
         },
         {
           "file": "PE_RICMS_parte3.txt",
@@ -2528,8 +2490,7 @@
             "RICMS.pdf (parte 3)"
           ],
           "flags": [
-            "contém Taxas",
-            "ruído de extração/encoding"
+            "contém Taxas"
           ]
         },
         {
@@ -2548,8 +2509,7 @@
             "RICMS.pdf (parte 4)"
           ],
           "flags": [
-            "contém Taxas",
-            "ruído de extração/encoding"
+            "contém Taxas"
           ]
         },
         {
@@ -2568,8 +2528,7 @@
             "RICMS.pdf (parte 5)"
           ],
           "flags": [
-            "contém Taxas",
-            "ruído de extração/encoding"
+            "contém Taxas"
           ]
         }
       ]
@@ -2591,8 +2550,7 @@
       "flags": [
         "contém IPVA",
         "contém Taxas",
-        "fonte local sem URL oficial no cabeçalho",
-        "ruído de extração/encoding"
+        "fonte local sem URL oficial no cabeçalho"
       ],
       "recommendation": "bloquear_publicacao_ate_curadoria",
       "next_step": "Baixar RICMS/PI e benefícios no portal oficial do Piauí.",
@@ -2615,8 +2573,7 @@
             "ICMS/ANEXO III.pdf"
           ],
           "flags": [
-            "fonte local sem URL oficial no cabeçalho",
-            "ruído de extração/encoding"
+            "fonte local sem URL oficial no cabeçalho"
           ]
         },
         {
@@ -2637,8 +2594,7 @@
           ],
           "flags": [
             "contém Taxas",
-            "fonte local sem URL oficial no cabeçalho",
-            "ruído de extração/encoding"
+            "fonte local sem URL oficial no cabeçalho"
           ]
         },
         {
@@ -2657,8 +2613,7 @@
             "ICMS/ANEXO V.pdf"
           ],
           "flags": [
-            "fonte local sem URL oficial no cabeçalho",
-            "ruído de extração/encoding"
+            "fonte local sem URL oficial no cabeçalho"
           ]
         },
         {
@@ -2678,8 +2633,7 @@
           ],
           "flags": [
             "contém Taxas",
-            "fonte local sem URL oficial no cabeçalho",
-            "ruído de extração/encoding"
+            "fonte local sem URL oficial no cabeçalho"
           ]
         },
         {
@@ -2699,8 +2653,7 @@
           ],
           "flags": [
             "contém Taxas",
-            "fonte local sem URL oficial no cabeçalho",
-            "ruído de extração/encoding"
+            "fonte local sem URL oficial no cabeçalho"
           ]
         },
         {
@@ -2719,8 +2672,7 @@
             "ICMS/ANEXO VIII.pdf"
           ],
           "flags": [
-            "contém IPVA",
-            "ruído de extração/encoding"
+            "contém IPVA"
           ]
         },
         {
@@ -2739,8 +2691,7 @@
             "ICMS/ANEXO X.pdf"
           ],
           "flags": [
-            "contém Taxas",
-            "ruído de extração/encoding"
+            "contém Taxas"
           ]
         },
         {
@@ -2760,8 +2711,7 @@
           ],
           "flags": [
             "contém Taxas",
-            "fonte local sem URL oficial no cabeçalho",
-            "ruído de extração/encoding"
+            "fonte local sem URL oficial no cabeçalho"
           ]
         },
         {
@@ -2781,8 +2731,7 @@
           ],
           "flags": [
             "contém Taxas",
-            "fonte local sem URL oficial no cabeçalho",
-            "ruído de extração/encoding"
+            "fonte local sem URL oficial no cabeçalho"
           ]
         }
       ]
@@ -2801,8 +2750,7 @@
       },
       "flags": [
         "contém Taxas",
-        "fonte local sem URL oficial no cabeçalho",
-        "ruído de extração/encoding"
+        "fonte local sem URL oficial no cabeçalho"
       ],
       "recommendation": "bloquear_publicacao_ate_curadoria",
       "next_step": "Baixar RICMS/PR e anexos de benefícios no portal oficial do Paraná.",
@@ -2824,8 +2772,7 @@
           ],
           "flags": [
             "contém Taxas",
-            "fonte local sem URL oficial no cabeçalho",
-            "ruído de extração/encoding"
+            "fonte local sem URL oficial no cabeçalho"
           ]
         },
         {
@@ -2839,9 +2786,7 @@
           "scope_blocked": false,
           "scope_flags": [],
           "source_documents": [],
-          "flags": [
-            "ruído de extração/encoding"
-          ]
+          "flags": []
         },
         {
           "file": "PR_RICMS_pt11.txt",
@@ -2854,9 +2799,7 @@
           "scope_blocked": false,
           "scope_flags": [],
           "source_documents": [],
-          "flags": [
-            "ruído de extração/encoding"
-          ]
+          "flags": []
         },
         {
           "file": "PR_RICMS_pt2.txt",
@@ -2870,8 +2813,7 @@
           "scope_flags": [],
           "source_documents": [],
           "flags": [
-            "contém Taxas",
-            "ruído de extração/encoding"
+            "contém Taxas"
           ]
         },
         {
@@ -2885,9 +2827,7 @@
           "scope_blocked": false,
           "scope_flags": [],
           "source_documents": [],
-          "flags": [
-            "ruído de extração/encoding"
-          ]
+          "flags": []
         },
         {
           "file": "PR_RICMS_pt4.txt",
@@ -2900,9 +2840,7 @@
           "scope_blocked": false,
           "scope_flags": [],
           "source_documents": [],
-          "flags": [
-            "ruído de extração/encoding"
-          ]
+          "flags": []
         },
         {
           "file": "PR_RICMS_pt5.txt",
@@ -2915,9 +2853,7 @@
           "scope_blocked": false,
           "scope_flags": [],
           "source_documents": [],
-          "flags": [
-            "ruído de extração/encoding"
-          ]
+          "flags": []
         },
         {
           "file": "PR_RICMS_pt6.txt",
@@ -2931,8 +2867,7 @@
           "scope_flags": [],
           "source_documents": [],
           "flags": [
-            "contém Taxas",
-            "ruído de extração/encoding"
+            "contém Taxas"
           ]
         },
         {
@@ -2946,9 +2881,7 @@
           "scope_blocked": false,
           "scope_flags": [],
           "source_documents": [],
-          "flags": [
-            "ruído de extração/encoding"
-          ]
+          "flags": []
         },
         {
           "file": "PR_RICMS_pt8.txt",
@@ -2961,9 +2894,7 @@
           "scope_blocked": false,
           "scope_flags": [],
           "source_documents": [],
-          "flags": [
-            "ruído de extração/encoding"
-          ]
+          "flags": []
         },
         {
           "file": "PR_RICMS_pt9.txt",
@@ -2977,8 +2908,7 @@
           "scope_flags": [],
           "source_documents": [],
           "flags": [
-            "contém Taxas",
-            "ruído de extração/encoding"
+            "contém Taxas"
           ]
         }
       ]
@@ -3039,8 +2969,7 @@
         "contém IPVA",
         "contém ITCMD/ITCD",
         "contém Taxas",
-        "fonte local sem URL oficial no cabeçalho",
-        "ruído de extração/encoding"
+        "fonte local sem URL oficial no cabeçalho"
       ],
       "recommendation": "bloquear_publicacao_ate_curadoria",
       "next_step": "Baixar RICMS/RN e benefícios no portal oficial do Rio Grande do Norte.",
@@ -3065,8 +2994,7 @@
             "contém IPVA",
             "contém ITCMD/ITCD",
             "contém Taxas",
-            "fonte local sem URL oficial no cabeçalho",
-            "ruído de extração/encoding"
+            "fonte local sem URL oficial no cabeçalho"
           ]
         },
         {
@@ -3083,8 +3011,7 @@
           "flags": [
             "contém IPVA",
             "contém ITCMD/ITCD",
-            "contém Taxas",
-            "ruído de extração/encoding"
+            "contém Taxas"
           ]
         },
         {
@@ -3099,8 +3026,7 @@
           "scope_flags": [],
           "source_documents": [],
           "flags": [
-            "contém Taxas",
-            "ruído de extração/encoding"
+            "contém Taxas"
           ]
         },
         {
@@ -3115,8 +3041,7 @@
           "scope_flags": [],
           "source_documents": [],
           "flags": [
-            "contém Taxas",
-            "ruído de extração/encoding"
+            "contém Taxas"
           ]
         },
         {
@@ -3131,8 +3056,7 @@
           "scope_flags": [],
           "source_documents": [],
           "flags": [
-            "contém Taxas",
-            "ruído de extração/encoding"
+            "contém Taxas"
           ]
         },
         {
@@ -3146,9 +3070,7 @@
           "scope_blocked": false,
           "scope_flags": [],
           "source_documents": [],
-          "flags": [
-            "ruído de extração/encoding"
-          ]
+          "flags": []
         },
         {
           "file": "RN_RICMS_pt6.txt",
@@ -3162,8 +3084,7 @@
           "scope_flags": [],
           "source_documents": [],
           "flags": [
-            "contém Taxas",
-            "ruído de extração/encoding"
+            "contém Taxas"
           ]
         },
         {
@@ -3177,9 +3098,7 @@
           "scope_blocked": false,
           "scope_flags": [],
           "source_documents": [],
-          "flags": [
-            "ruído de extração/encoding"
-          ]
+          "flags": []
         }
       ]
     },
@@ -3202,8 +3121,7 @@
         "contém Taxas",
         "escopo dominante incompatível: conteúdo parece tratar de IPVA, não de ICMS",
         "escopo material incompatível com ICMS",
-        "fonte local sem URL oficial no cabeçalho",
-        "ruído de extração/encoding"
+        "fonte local sem URL oficial no cabeçalho"
       ],
       "recommendation": "bloquear_publicacao_ate_reclassificar_escopo",
       "next_step": "Baixar RICMS/RO e benefícios no portal oficial de Rondônia.",
@@ -3226,8 +3144,7 @@
           "flags": [
             "contém IPVA",
             "contém Taxas",
-            "fonte local sem URL oficial no cabeçalho",
-            "ruído de extração/encoding"
+            "fonte local sem URL oficial no cabeçalho"
           ]
         },
         {
@@ -3251,8 +3168,7 @@
             "contém IPVA",
             "escopo dominante incompatível: conteúdo parece tratar de IPVA, não de ICMS",
             "escopo material incompatível com ICMS",
-            "fonte local sem URL oficial no cabeçalho",
-            "ruído de extração/encoding"
+            "fonte local sem URL oficial no cabeçalho"
           ]
         },
         {
@@ -3272,8 +3188,7 @@
           ],
           "flags": [
             "contém Taxas",
-            "fonte local sem URL oficial no cabeçalho",
-            "ruído de extração/encoding"
+            "fonte local sem URL oficial no cabeçalho"
           ]
         },
         {
@@ -3294,8 +3209,7 @@
           ],
           "flags": [
             "contém IPVA",
-            "contém Taxas",
-            "ruído de extração/encoding"
+            "contém Taxas"
           ]
         }
       ]
@@ -3319,7 +3233,6 @@
         "contém IPVA",
         "contém Taxas",
         "fonte local sem URL oficial no cabeçalho",
-        "ruído de extração/encoding",
         "texto curto para RICMS/benefícios"
       ],
       "recommendation": "bloquear_publicacao_ate_curadoria",
@@ -3341,7 +3254,6 @@
           "flags": [
             "contém IPVA",
             "fonte local sem URL oficial no cabeçalho",
-            "ruído de extração/encoding",
             "texto curto para RICMS/benefícios"
           ]
         },
@@ -3362,8 +3274,7 @@
             "INSTRUÇÕES NORMATIVAS/011_25 Altera a Instru o Normativa n 003_2025 - Disciplina os procedimentos para a concess o de incentivo fiscal dos projetos culturais e esportivos.pdf"
           ],
           "flags": [
-            "contém Taxas",
-            "ruído de extração/encoding"
+            "contém Taxas"
           ]
         },
         {
@@ -3385,7 +3296,6 @@
             "LEIS/Lei 2.093_24 Incorpora o Conv nio ICMS n 143_24 e Altera a Lei n 2.012_24.pdf"
           ],
           "flags": [
-            "ruído de extração/encoding",
             "texto curto para RICMS/benefícios"
           ]
         },
@@ -3403,8 +3313,7 @@
             "REGULAMENTO DE ICMS - ANEXO - ATUALIZADO ATE JUNHO 2021.pdf"
           ],
           "flags": [
-            "contém Taxas",
-            "ruído de extração/encoding"
+            "contém Taxas"
           ]
         },
         {
@@ -3419,8 +3328,7 @@
           "scope_flags": [],
           "source_documents": [],
           "flags": [
-            "contém Taxas",
-            "ruído de extração/encoding"
+            "contém Taxas"
           ]
         }
       ]
@@ -3439,8 +3347,7 @@
       },
       "flags": [
         "contém IPVA",
-        "contém Taxas",
-        "ruído de extração/encoding"
+        "contém Taxas"
       ],
       "recommendation": "bloquear_publicacao_ate_curadoria",
       "next_step": "Baixar RICMS/RS e benefícios no portal oficial do Rio Grande do Sul.",
@@ -3459,8 +3366,7 @@
             "DECRETON37699DE26DEAGOSTODE1997RegulamentodoICMSdoc.pdf"
           ],
           "flags": [
-            "contém Taxas",
-            "ruído de extração/encoding"
+            "contém Taxas"
           ]
         },
         {
@@ -3475,8 +3381,7 @@
           "scope_flags": [],
           "source_documents": [],
           "flags": [
-            "contém Taxas",
-            "ruído de extração/encoding"
+            "contém Taxas"
           ]
         },
         {
@@ -3492,8 +3397,7 @@
           "source_documents": [],
           "flags": [
             "contém IPVA",
-            "contém Taxas",
-            "ruído de extração/encoding"
+            "contém Taxas"
           ]
         },
         {
@@ -3507,9 +3411,7 @@
           "scope_blocked": false,
           "scope_flags": [],
           "source_documents": [],
-          "flags": [
-            "ruído de extração/encoding"
-          ]
+          "flags": []
         },
         {
           "file": "RS_RICMS_pt5.txt",
@@ -3523,8 +3425,7 @@
           "scope_flags": [],
           "source_documents": [],
           "flags": [
-            "contém Taxas",
-            "ruído de extração/encoding"
+            "contém Taxas"
           ]
         },
         {
@@ -3539,8 +3440,7 @@
           "scope_flags": [],
           "source_documents": [],
           "flags": [
-            "contém Taxas",
-            "ruído de extração/encoding"
+            "contém Taxas"
           ]
         },
         {
@@ -3554,9 +3454,7 @@
           "scope_blocked": false,
           "scope_flags": [],
           "source_documents": [],
-          "flags": [
-            "ruído de extração/encoding"
-          ]
+          "flags": []
         },
         {
           "file": "RS_RICMS_pt8.txt",
@@ -3570,8 +3468,7 @@
           "scope_flags": [],
           "source_documents": [],
           "flags": [
-            "contém Taxas",
-            "ruído de extração/encoding"
+            "contém Taxas"
           ]
         },
         {
@@ -3586,8 +3483,7 @@
           "scope_flags": [],
           "source_documents": [],
           "flags": [
-            "contém Taxas",
-            "ruído de extração/encoding"
+            "contém Taxas"
           ]
         }
       ]
@@ -3606,7 +3502,6 @@
         "RICMS": 1
       },
       "flags": [
-        "ruído de extração/encoding",
         "texto curto para RICMS/benefícios"
       ],
       "recommendation": "bloquear_publicacao_ate_curadoria",
@@ -3630,9 +3525,7 @@
             "ICMS/ICMS- Legislação.pdf",
             "ICMS/INDICE REMISSIVO.pdf"
           ],
-          "flags": [
-            "ruído de extração/encoding"
-          ]
+          "flags": []
         },
         {
           "file": "SC_RICMS.txt",
@@ -3650,7 +3543,6 @@
             "ICMS/RICMS-SC-01.pdf"
           ],
           "flags": [
-            "ruído de extração/encoding",
             "texto curto para RICMS/benefícios"
           ]
         }
@@ -3673,7 +3565,6 @@
         "contém IPVA",
         "contém Taxas",
         "fonte local sem URL oficial no cabeçalho",
-        "ruído de extração/encoding",
         "texto curto para RICMS/benefícios"
       ],
       "recommendation": "bloquear_publicacao_ate_curadoria",
@@ -3695,8 +3586,7 @@
             "Lei Ordinária 8.628_2019 (Cria o ICMS-Social).pdf"
           ],
           "flags": [
-            "contém Taxas",
-            "ruído de extração/encoding"
+            "contém Taxas"
           ]
         },
         {
@@ -3717,7 +3607,6 @@
           "flags": [
             "contém Taxas",
             "fonte local sem URL oficial no cabeçalho",
-            "ruído de extração/encoding",
             "texto curto para RICMS/benefícios"
           ]
         },
@@ -3738,8 +3627,7 @@
           ],
           "flags": [
             "contém IPVA",
-            "contém Taxas",
-            "ruído de extração/encoding"
+            "contém Taxas"
           ]
         },
         {
@@ -3758,8 +3646,7 @@
             "RICMS/Regulamento do ICMS vigente-2002.pdf"
           ],
           "flags": [
-            "contém Taxas",
-            "ruído de extração/encoding"
+            "contém Taxas"
           ]
         }
       ]
@@ -3782,7 +3669,6 @@
         "contém IPVA",
         "contém Taxas",
         "fonte local sem URL oficial no cabeçalho",
-        "ruído de extração/encoding",
         "possível duplicidade de fonte"
       ],
       "recommendation": "bloquear_publicacao_ate_curadoria",
@@ -3804,8 +3690,7 @@
             "ICMS/LEI N° 6.374, DE 01 DE MARÇO DE 1989 - Assembleia Legislativa do Estado de São Paulo.pdf"
           ],
           "flags": [
-            "contém Taxas",
-            "ruído de extração/encoding"
+            "contém Taxas"
           ]
         },
         {
@@ -3824,8 +3709,7 @@
             "ICMS/SUBSTITUIÇÃO TRIBUTÁRIA.pdf"
           ],
           "flags": [
-            "fonte local sem URL oficial no cabeçalho",
-            "ruído de extração/encoding"
+            "fonte local sem URL oficial no cabeçalho"
           ]
         },
         {
@@ -3845,8 +3729,7 @@
           ],
           "flags": [
             "contém Taxas",
-            "fonte local sem URL oficial no cabeçalho",
-            "ruído de extração/encoding"
+            "fonte local sem URL oficial no cabeçalho"
           ]
         },
         {
@@ -3861,8 +3744,7 @@
           "scope_flags": [],
           "source_documents": [],
           "flags": [
-            "contém Taxas",
-            "ruído de extração/encoding"
+            "contém Taxas"
           ]
         },
         {
@@ -3877,8 +3759,7 @@
           "scope_flags": [],
           "source_documents": [],
           "flags": [
-            "contém Taxas",
-            "ruído de extração/encoding"
+            "contém Taxas"
           ]
         },
         {
@@ -3892,9 +3773,7 @@
           "scope_blocked": false,
           "scope_flags": [],
           "source_documents": [],
-          "flags": [
-            "ruído de extração/encoding"
-          ]
+          "flags": []
         },
         {
           "file": "SP_RICMS_pt4.txt",
@@ -3908,8 +3787,7 @@
           "scope_flags": [],
           "source_documents": [],
           "flags": [
-            "contém Taxas",
-            "ruído de extração/encoding"
+            "contém Taxas"
           ]
         },
         {
@@ -3925,8 +3803,7 @@
           "source_documents": [],
           "flags": [
             "contém IPVA",
-            "contém Taxas",
-            "ruído de extração/encoding"
+            "contém Taxas"
           ]
         },
         {
@@ -3942,8 +3819,7 @@
           "source_documents": [],
           "flags": [
             "contém IPVA",
-            "contém Taxas",
-            "ruído de extração/encoding"
+            "contém Taxas"
           ]
         },
         {
@@ -3957,9 +3833,7 @@
           "scope_blocked": false,
           "scope_flags": [],
           "source_documents": [],
-          "flags": [
-            "ruído de extração/encoding"
-          ]
+          "flags": []
         },
         {
           "file": "SP_RICMS_pt8.txt",
@@ -3973,8 +3847,7 @@
           "scope_flags": [],
           "source_documents": [],
           "flags": [
-            "contém Taxas",
-            "ruído de extração/encoding"
+            "contém Taxas"
           ]
         },
         {
@@ -3988,9 +3861,7 @@
           "scope_blocked": false,
           "scope_flags": [],
           "source_documents": [],
-          "flags": [
-            "ruído de extração/encoding"
-          ]
+          "flags": []
         },
         {
           "file": "SP_RICMS_pt10.txt",
@@ -4004,8 +3875,7 @@
           "scope_flags": [],
           "source_documents": [],
           "flags": [
-            "contém Taxas",
-            "ruído de extração/encoding"
+            "contém Taxas"
           ]
         },
         {
@@ -4020,8 +3890,7 @@
           "scope_flags": [],
           "source_documents": [],
           "flags": [
-            "contém Taxas",
-            "ruído de extração/encoding"
+            "contém Taxas"
           ]
         },
         {
@@ -4035,9 +3904,7 @@
           "scope_blocked": false,
           "scope_flags": [],
           "source_documents": [],
-          "flags": [
-            "ruído de extração/encoding"
-          ]
+          "flags": []
         },
         {
           "file": "SP_RICMS_pt4.txt",
@@ -4051,8 +3918,7 @@
           "scope_flags": [],
           "source_documents": [],
           "flags": [
-            "contém Taxas",
-            "ruído de extração/encoding"
+            "contém Taxas"
           ]
         },
         {
@@ -4068,8 +3934,7 @@
           "source_documents": [],
           "flags": [
             "contém IPVA",
-            "contém Taxas",
-            "ruído de extração/encoding"
+            "contém Taxas"
           ]
         },
         {
@@ -4085,8 +3950,7 @@
           "source_documents": [],
           "flags": [
             "contém IPVA",
-            "contém Taxas",
-            "ruído de extração/encoding"
+            "contém Taxas"
           ]
         },
         {
@@ -4100,9 +3964,7 @@
           "scope_blocked": false,
           "scope_flags": [],
           "source_documents": [],
-          "flags": [
-            "ruído de extração/encoding"
-          ]
+          "flags": []
         },
         {
           "file": "SP_RICMS_pt8.txt",
@@ -4116,8 +3978,7 @@
           "scope_flags": [],
           "source_documents": [],
           "flags": [
-            "contém Taxas",
-            "ruído de extração/encoding"
+            "contém Taxas"
           ]
         },
         {
@@ -4131,9 +3992,7 @@
           "scope_blocked": false,
           "scope_flags": [],
           "source_documents": [],
-          "flags": [
-            "ruído de extração/encoding"
-          ]
+          "flags": []
         }
       ]
     },
@@ -4152,7 +4011,6 @@
       },
       "flags": [
         "contém Taxas",
-        "ruído de extração/encoding",
         "texto curto para RICMS/benefícios"
       ],
       "recommendation": "bloquear_publicacao_ate_curadoria",
@@ -4172,7 +4030,6 @@
             "anexo unico Port nº 979.07.pdf"
           ],
           "flags": [
-            "ruído de extração/encoding",
             "texto curto para RICMS/benefícios"
           ]
         },
@@ -4192,8 +4049,7 @@
             "RICMS.pdf"
           ],
           "flags": [
-            "contém Taxas",
-            "ruído de extração/encoding"
+            "contém Taxas"
           ]
         }
       ]

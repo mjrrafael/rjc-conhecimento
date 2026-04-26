@@ -1200,6 +1200,465 @@
           ]
         }
       ]
+    },
+    {
+      "source_id": "state-ba-ba-lei-7014-1996-icms",
+      "jurisdiction": "BA",
+      "title": "Lei nº 7.014/1996 - Lei básica do ICMS da Bahia",
+      "short": "ICMS - lei material",
+      "official_url": "https://mbusca.sefaz.ba.gov.br/DITRI/leis/leis_estaduais/legest_1996_7014_icmscomnotas.pdf",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "data/fontes-estaduais-curadas/nordeste/BA/BA_LEI_7014_1996_ICMS_2026-04-26.txt"
+        ],
+        "sha256": {
+          "BA_LEI_7014_1996_ICMS_2026-04-26.txt": "6b4ec6301c718e86bf6813e1e22644be7b70975b8e9e52b288d1ed96d77aae7b"
+        },
+        "fetch_url": "https://mbusca.sefaz.ba.gov.br/DITRI/leis/leis_estaduais/legest_1996_7014_icmscomnotas.pdf"
+      },
+      "note": "Texto estadual de ICMS publicado em estados/ba/legislacao/fontes/ba-lei-7014-1996-icms.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-ba",
+          "module_title": "Bahia: ICMS e benefícios fiscais em tela",
+          "chapters": [
+            "icms-regra-matriz",
+            "base-aliquota-apuracao"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-ba-ba-dec-13780-2012-ricms",
+      "jurisdiction": "BA",
+      "title": "Decreto nº 13.780/2012 - Regulamento do ICMS da Bahia",
+      "short": "ICMS - regulamento",
+      "official_url": "https://mbusca.sefaz.ba.gov.br/DITRI/normas_complementares/decretos/decreto_2012_13780_ricms_texto_2021.pdf",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "data/fontes-estaduais-curadas/nordeste/BA/BA_DEC_13780_2012_RICMS_2026-04-26.txt"
+        ],
+        "sha256": {
+          "BA_DEC_13780_2012_RICMS_2026-04-26.txt": "bced9703a8d47603f5e33c0cec0adb01a1baccdb6ba6bf1c2e8f49986ce6717c"
+        },
+        "fetch_url": "https://mbusca.sefaz.ba.gov.br/DITRI/normas_complementares/decretos/decreto_2012_13780_ricms_texto_2021.pdf"
+      },
+      "note": "Texto estadual de ICMS publicado em estados/ba/legislacao/fontes/ba-dec-13780-2012-ricms.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-ba",
+          "module_title": "Bahia: ICMS e benefícios fiscais em tela",
+          "chapters": [
+            "icms-regra-matriz",
+            "base-aliquota-apuracao",
+            "substituicao-tributaria-antecipacao",
+            "documentos-efd-prova",
+            "fiscalizacao-riscos"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-ba-ba-ricms-anexo-1-st-2026",
+      "jurisdiction": "BA",
+      "title": "Anexo 1 do RICMS/BA - Substituição tributária vigente 2026",
+      "short": "ICMS - substituição tributária",
+      "official_url": "https://mbusca.sefaz.ba.gov.br/DITRI/normas_complementares/decretos/decreto_2012_13780_ricms_anexo_1_vigente_2026.pdf",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "data/fontes-estaduais-curadas/nordeste/BA/BA_RICMS_ANEXO_1_ST_2026-04-26.txt"
+        ],
+        "sha256": {
+          "BA_RICMS_ANEXO_1_ST_2026-04-26.txt": "3c77558262e5b3efa13a635eb8eec0bf2e9d80025e2b6754b9eebbb682fb4515"
+        },
+        "fetch_url": "https://mbusca.sefaz.ba.gov.br/DITRI/normas_complementares/decretos/decreto_2012_13780_ricms_anexo_1_vigente_2026.pdf"
+      },
+      "note": "Texto estadual de ICMS publicado em estados/ba/legislacao/fontes/ba-ricms-anexo-1-st-2026.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-ba",
+          "module_title": "Bahia: ICMS e benefícios fiscais em tela",
+          "chapters": [
+            "substituicao-tributaria-antecipacao"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-ba-ba-ricms-anexo-2-rural",
+      "jurisdiction": "BA",
+      "title": "Anexo 2 do RICMS/BA - Crédito fiscal nas atividades rurais",
+      "short": "ICMS - crédito fiscal rural",
+      "official_url": "https://mbusca.sefaz.ba.gov.br/DITRI/normas_complementares/decretos/decreto_2012_13780_ricms_anexo_2.pdf",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "data/fontes-estaduais-curadas/nordeste/BA/BA_RICMS_ANEXO_2_RURAL_2026-04-26.txt"
+        ],
+        "sha256": {
+          "BA_RICMS_ANEXO_2_RURAL_2026-04-26.txt": "08675130d3b0900cdfb6dc1bb175b5dd485aaf0ac71aa28d14126a9cda06f102"
+        },
+        "fetch_url": "https://mbusca.sefaz.ba.gov.br/DITRI/normas_complementares/decretos/decreto_2012_13780_ricms_anexo_2.pdf"
+      },
+      "note": "Texto estadual de ICMS publicado em estados/ba/legislacao/fontes/ba-ricms-anexo-2-rural.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-ba",
+          "module_title": "Bahia: ICMS e benefícios fiscais em tela",
+          "chapters": [
+            "rural-cesta-credito"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-ba-ba-lei-7980-2001-desenvolve",
+      "jurisdiction": "BA",
+      "title": "Lei nº 7.980/2001 - Programa DESENVOLVE",
+      "short": "ICMS - benefício fiscal e desenvolvimento industrial",
+      "official_url": "https://mbusca.sefaz.ba.gov.br/DITRI/leis/leis_estaduais/legest_2001_7980.pdf",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "data/fontes-estaduais-curadas/nordeste/BA/BA_LEI_7980_2001_DESENVOLVE_2026-04-26.txt"
+        ],
+        "sha256": {
+          "BA_LEI_7980_2001_DESENVOLVE_2026-04-26.txt": "9f69652b81cd78d54e616f21ba8c1f329dca0459195d439b51548f76a633a2cd"
+        },
+        "fetch_url": "https://mbusca.sefaz.ba.gov.br/DITRI/leis/leis_estaduais/legest_2001_7980.pdf"
+      },
+      "note": "Texto estadual de ICMS publicado em estados/ba/legislacao/fontes/ba-lei-7980-2001-desenvolve.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-ba",
+          "module_title": "Bahia: ICMS e benefícios fiscais em tela",
+          "chapters": [
+            "desenvolve"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-ba-ba-dec-8205-2002-desenvolve",
+      "jurisdiction": "BA",
+      "title": "Decreto nº 8.205/2002 - Regulamento do Programa DESENVOLVE",
+      "short": "ICMS - benefício fiscal e desenvolvimento industrial",
+      "official_url": "https://mbusca.sefaz.ba.gov.br/DITRI/normas_complementares/decretos/decreto_2002_8205_desenvolve.pdf",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "data/fontes-estaduais-curadas/nordeste/BA/BA_DEC_8205_2002_DESENVOLVE_2026-04-26.txt"
+        ],
+        "sha256": {
+          "BA_DEC_8205_2002_DESENVOLVE_2026-04-26.txt": "b63557d31a0fc7fc210aa696bc56de76407f57a137ad417f898a13410aac9d54"
+        },
+        "fetch_url": "https://mbusca.sefaz.ba.gov.br/DITRI/normas_complementares/decretos/decreto_2002_8205_desenvolve.pdf"
+      },
+      "note": "Texto estadual de ICMS publicado em estados/ba/legislacao/fontes/ba-dec-8205-2002-desenvolve.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-ba",
+          "module_title": "Bahia: ICMS e benefícios fiscais em tela",
+          "chapters": [
+            "desenvolve",
+            "fiscalizacao-riscos"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-ba-ba-dec-18802-2018-proind",
+      "jurisdiction": "BA",
+      "title": "Decreto nº 18.802/2018 - Programa de Estímulo à Indústria da Bahia",
+      "short": "ICMS - benefício fiscal industrial",
+      "official_url": "https://mbusca.sefaz.ba.gov.br/DITRI/normas_complementares/decretos/decreto_2018_18802.pdf",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "data/fontes-estaduais-curadas/nordeste/BA/BA_DEC_18802_2018_PROIND_2026-04-26.txt"
+        ],
+        "sha256": {
+          "BA_DEC_18802_2018_PROIND_2026-04-26.txt": "22b0633e23dbe2e9a8f25f950e0af1c68f7098caadd55dac1e85c016885f4f45"
+        },
+        "fetch_url": "https://mbusca.sefaz.ba.gov.br/DITRI/normas_complementares/decretos/decreto_2018_18802.pdf"
+      },
+      "note": "Texto estadual de ICMS publicado em estados/ba/legislacao/fontes/ba-dec-18802-2018-proind.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-ba",
+          "module_title": "Bahia: ICMS e benefícios fiscais em tela",
+          "chapters": [
+            "programas-setoriais"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-ba-ba-lei-9829-2005-pronaval",
+      "jurisdiction": "BA",
+      "title": "Lei nº 9.829/2005 - PRONAVAL",
+      "short": "ICMS - benefício fiscal setorial",
+      "official_url": "https://mbusca.sefaz.ba.gov.br/DITRI/leis/leis_estaduais/legest_2005_9829.pdf",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "data/fontes-estaduais-curadas/nordeste/BA/BA_LEI_9829_2005_PRONAVAL_2026-04-26.txt"
+        ],
+        "sha256": {
+          "BA_LEI_9829_2005_PRONAVAL_2026-04-26.txt": "73aa4cd5d04f63d045b7823b4cde6467a3e0a68fb17955db1c900b49c7de95c0"
+        },
+        "fetch_url": "https://mbusca.sefaz.ba.gov.br/DITRI/leis/leis_estaduais/legest_2005_9829.pdf"
+      },
+      "note": "Texto estadual de ICMS publicado em estados/ba/legislacao/fontes/ba-lei-9829-2005-pronaval.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-ba",
+          "module_title": "Bahia: ICMS e benefícios fiscais em tela",
+          "chapters": [
+            "programas-setoriais"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-ba-ba-dec-11015-2008-pronaval",
+      "jurisdiction": "BA",
+      "title": "Decreto nº 11.015/2008 - Regulamento do PRONAVAL",
+      "short": "ICMS - benefício fiscal setorial",
+      "official_url": "https://mbusca.sefaz.ba.gov.br/DITRI/normas_complementares/decretos/decreto_2008_11015.pdf",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "data/fontes-estaduais-curadas/nordeste/BA/BA_DEC_11015_2008_PRONAVAL_2026-04-26.txt"
+        ],
+        "sha256": {
+          "BA_DEC_11015_2008_PRONAVAL_2026-04-26.txt": "c15a130aa697dcb98c5e97a6713fbe6d3f25caa8c15278275b8e02a010872656"
+        },
+        "fetch_url": "https://mbusca.sefaz.ba.gov.br/DITRI/normas_complementares/decretos/decreto_2008_11015.pdf"
+      },
+      "note": "Texto estadual de ICMS publicado em estados/ba/legislacao/fontes/ba-dec-11015-2008-pronaval.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-ba",
+          "module_title": "Bahia: ICMS e benefícios fiscais em tela",
+          "chapters": [
+            "programas-setoriais"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-ba-ba-lei-7025-1997-credito-presumido",
+      "jurisdiction": "BA",
+      "title": "Lei nº 7.025/1997 - Crédito presumido do ICMS",
+      "short": "ICMS - crédito presumido",
+      "official_url": "https://mbusca.sefaz.ba.gov.br/DITRI/leis/leis_estaduais/legest_1997_7025.pdf",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "data/fontes-estaduais-curadas/nordeste/BA/BA_LEI_7025_1997_CREDITO_PRESUMIDO_2026-04-26.txt"
+        ],
+        "sha256": {
+          "BA_LEI_7025_1997_CREDITO_PRESUMIDO_2026-04-26.txt": "db80b6953a5dc01e3f9d2f8176177c1b23efa39073733d38e73bb98471586582"
+        },
+        "fetch_url": "https://mbusca.sefaz.ba.gov.br/DITRI/leis/leis_estaduais/legest_1997_7025.pdf"
+      },
+      "note": "Texto estadual de ICMS publicado em estados/ba/legislacao/fontes/ba-lei-7025-1997-credito-presumido.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-ba",
+          "module_title": "Bahia: ICMS e benefícios fiscais em tela",
+          "chapters": [
+            "programas-setoriais"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-ba-ba-dec-6734-1997-credito-presumido",
+      "jurisdiction": "BA",
+      "title": "Decreto nº 6.734/1997 - Crédito presumido do ICMS",
+      "short": "ICMS - crédito presumido",
+      "official_url": "https://mbusca.sefaz.ba.gov.br/DITRI/normas_complementares/decretos/decreto_1997_6734.pdf",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "data/fontes-estaduais-curadas/nordeste/BA/BA_DEC_6734_1997_CREDITO_PRESUMIDO_2026-04-26.txt"
+        ],
+        "sha256": {
+          "BA_DEC_6734_1997_CREDITO_PRESUMIDO_2026-04-26.txt": "20d2440ad86f75f461a7f0adf27c5f25f04724a4ca8473f2bd9733110823eb09"
+        },
+        "fetch_url": "https://mbusca.sefaz.ba.gov.br/DITRI/normas_complementares/decretos/decreto_1997_6734.pdf"
+      },
+      "note": "Texto estadual de ICMS publicado em estados/ba/legislacao/fontes/ba-dec-6734-1997-credito-presumido.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-ba",
+          "module_title": "Bahia: ICMS e benefícios fiscais em tela",
+          "chapters": [
+            "programas-setoriais"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-ba-ba-dec-4316-1995-informatica-eletronica",
+      "jurisdiction": "BA",
+      "title": "Decreto nº 4.316/1995 - Informática, eletrônica e telecomunicações",
+      "short": "ICMS - benefício fiscal setorial",
+      "official_url": "https://mbusca.sefaz.ba.gov.br/DITRI/normas_complementares/decretos/decreto_1995_4316.pdf",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "data/fontes-estaduais-curadas/nordeste/BA/BA_DEC_4316_1995_INFORMATICA_ELETRONICA_2026-04-26.txt"
+        ],
+        "sha256": {
+          "BA_DEC_4316_1995_INFORMATICA_ELETRONICA_2026-04-26.txt": "87bb4a615085b194ef929880e2351dd3b85a21f730cd33dbb60505f365f407ed"
+        },
+        "fetch_url": "https://mbusca.sefaz.ba.gov.br/DITRI/normas_complementares/decretos/decreto_1995_4316.pdf"
+      },
+      "note": "Texto estadual de ICMS publicado em estados/ba/legislacao/fontes/ba-dec-4316-1995-informatica-eletronica.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-ba",
+          "module_title": "Bahia: ICMS e benefícios fiscais em tela",
+          "chapters": [
+            "programas-setoriais"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-ba-ba-dec-18270-2018-beneficios-lc160",
+      "jurisdiction": "BA",
+      "title": "Decreto nº 18.270/2018 - Relação de atos de benefícios fiscais",
+      "short": "ICMS - benefícios fiscais e Convênio ICMS 190/2017",
+      "official_url": "https://mbusca.sefaz.ba.gov.br/DITRI/normas_complementares/decretos/decreto_2018_18270.pdf",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "data/fontes-estaduais-curadas/nordeste/BA/BA_DEC_18270_2018_BENEFICIOS_LC160_2026-04-26.txt"
+        ],
+        "sha256": {
+          "BA_DEC_18270_2018_BENEFICIOS_LC160_2026-04-26.txt": "5587fb66a55784777395f33e9b28c01607553fb260492da104b2d1e031376847"
+        },
+        "fetch_url": "https://mbusca.sefaz.ba.gov.br/DITRI/normas_complementares/decretos/decreto_2018_18270.pdf"
+      },
+      "note": "Texto estadual de ICMS publicado em estados/ba/legislacao/fontes/ba-dec-18270-2018-beneficios-lc160.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-ba",
+          "module_title": "Bahia: ICMS e benefícios fiscais em tela",
+          "chapters": [
+            "beneficios-matriz-lc160",
+            "rural-cesta-credito"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-ba-ba-dec-18288-2018-beneficios-lc160",
+      "jurisdiction": "BA",
+      "title": "Decreto nº 18.288/2018 - Alteração da relação de atos de benefícios fiscais",
+      "short": "ICMS - benefícios fiscais e Convênio ICMS 190/2017",
+      "official_url": "https://mbusca.sefaz.ba.gov.br/DITRI/normas_complementares/decretos/decreto_2018_18288.pdf",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "data/fontes-estaduais-curadas/nordeste/BA/BA_DEC_18288_2018_BENEFICIOS_LC160_2026-04-26.txt"
+        ],
+        "sha256": {
+          "BA_DEC_18288_2018_BENEFICIOS_LC160_2026-04-26.txt": "9f828871c9053e85722db1a17b2e90c988a7c97cd5cf5c234556672f13df05bb"
+        },
+        "fetch_url": "https://mbusca.sefaz.ba.gov.br/DITRI/normas_complementares/decretos/decreto_2018_18288.pdf"
+      },
+      "note": "Texto estadual de ICMS publicado em estados/ba/legislacao/fontes/ba-dec-18288-2018-beneficios-lc160.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-ba",
+          "module_title": "Bahia: ICMS e benefícios fiscais em tela",
+          "chapters": [
+            "beneficios-matriz-lc160"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-ba-ba-port-273-2014-efd-incentivos",
+      "jurisdiction": "BA",
+      "title": "Portaria nº 273/2014 - EFD dos incentivos fiscais",
+      "short": "ICMS - obrigações acessórias e benefícios fiscais",
+      "official_url": "https://www.sefaz.ba.gov.br/docs/inspetoria-eletronica/icms/incentivos_fiscais_orientacoes_lancamento.pdf",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "data/fontes-estaduais-curadas/nordeste/BA/BA_PORT_273_2014_EFD_INCENTIVOS_2026-04-26.txt"
+        ],
+        "sha256": {
+          "BA_PORT_273_2014_EFD_INCENTIVOS_2026-04-26.txt": "c98cefd0b5e146f6b059da21ec8c43ab39b047dd3466ed48881115d5a0f7416e"
+        },
+        "fetch_url": "https://www.sefaz.ba.gov.br/docs/inspetoria-eletronica/icms/incentivos_fiscais_orientacoes_lancamento.pdf"
+      },
+      "note": "Texto estadual de ICMS publicado em estados/ba/legislacao/fontes/ba-port-273-2014-efd-incentivos.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-ba",
+          "module_title": "Bahia: ICMS e benefícios fiscais em tela",
+          "chapters": [
+            "desenvolve",
+            "documentos-efd-prova",
+            "fiscalizacao-riscos"
+          ]
+        }
+      ]
     }
   ]
 }
