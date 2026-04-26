@@ -2909,7 +2909,42 @@ def render_sources_list(docs: list[dict]) -> str:
     return f"<ul>{''.join(items[:18])}</ul>"
 
 
+SOURCE_HEADER_PREFIXES = (
+    "TITULO:",
+    "TÍTULO:",
+    "TEMA:",
+    "TIPO:",
+    "FONTE PUBLICA:",
+    "FONTE PÚBLICA:",
+    "DATA DA CAPTURA:",
+    "TEXTO EXTRAIDO",
+    "TEXTO EXTRAÍDO",
+)
+
+
+def strip_source_header(text: str) -> str:
+    lines = []
+    for raw_line in text.splitlines():
+        stripped = raw_line.strip()
+        low = normalize(stripped)
+        if any(low.startswith(normalize(prefix)) for prefix in SOURCE_HEADER_PREFIXES):
+            continue
+        lines.append(raw_line)
+    return "\n".join(lines).strip()
+
+
+def excerpt_base_text(text: str) -> str:
+    value = strip_source_header(text)
+    head = normalize(value[:70000])
+    if "indice sistematico" in head:
+        match = re.search(r"(?mi)^\s*(?:Artigo|Art\.?)\s*1\s*(?:º|°|o)?\s*(?:[-–.]|\b)", value)
+        if match and match.start() > 500:
+            value = value[match.start():]
+    return value
+
+
 def paragraph_candidates(text: str) -> list[str]:
+    text = excerpt_base_text(text)
     chunks = re.split(r"\n\s*\n|\r\n\s*\r\n", text)
     cleaned = []
     for chunk in chunks:
@@ -2919,13 +2954,24 @@ def paragraph_candidates(text: str) -> list[str]:
         value = re.sub(r"\s+", " ", value).strip()
         if len(value) < 180:
             continue
+        low = normalize(value)
+        if any(term in low for term in (
+            "comando para ignorar faixa de opcoes",
+            "ativar o modo mais acessivel",
+            "desativar o modo mais acessivel",
+            "ir para o conteudo principal",
+            "pesquisa de satisfacao",
+        )):
+            continue
+        if (low.count("capitulo") + low.count("secao") + low.count("subsecao") > 10) and not re.search(r"\bart(?:igo|\.)\b", low):
+            continue
         cleaned.append(value)
     if not cleaned:
         lines = []
-        skip_prefixes = ("TITULO:", "TEMA:", "TIPO:", "FONTE PUBLICA:", "DATA DA CAPTURA:", "TEXTO EXTRAIDO")
         for raw_line in text.splitlines():
             line = raw_line.strip()
-            if not line or line.startswith("=====") or any(line.startswith(prefix) for prefix in skip_prefixes):
+            low = normalize(line)
+            if not line or line.startswith("=====") or any(low.startswith(normalize(prefix)) for prefix in SOURCE_HEADER_PREFIXES):
                 continue
             lines.append(line)
         for index in range(0, len(lines), 24):
@@ -3142,11 +3188,10 @@ def render_chunks(text: str, doc_id: str, chunk_size: int = 30000) -> str:
     return "".join(chunks)
 
 
-STATE_ARTICLE_RE = re.compile(r"(?m)^\s*Art\.\s*(\d+(?:-[A-Za-z])?)\s*(?:º|°|o)?\.?")
+STATE_ARTICLE_RE = re.compile(r"(?mi)^\s*(?:Art\.?|Artigo)\s*(\d+(?:-[A-Za-z])?)\s*(?:º|°|o)?\s*(?:[-–.]|\b)")
 
 
 def clean_law_segment(text: str, limit: int = 12000) -> str:
-    skip_prefixes = ("TITULO:", "TEMA:", "TIPO:", "FONTE PUBLICA:", "DATA DA CAPTURA:", "TEXTO EXTRAIDO")
     lines = []
     for line in text.splitlines():
         stripped = line.strip()
@@ -3160,7 +3205,8 @@ def clean_law_segment(text: str, limit: int = 12000) -> str:
         if stripped.startswith("TEXTO EXTRAIDO "):
             line = stripped.replace("TEXTO EXTRAIDO ", "", 1)
             stripped = line.strip()
-        if any(stripped.startswith(prefix) for prefix in skip_prefixes if prefix != "TEXTO EXTRAIDO"):
+        low = normalize(stripped)
+        if any(low.startswith(normalize(prefix)) for prefix in SOURCE_HEADER_PREFIXES):
             continue
         if stripped.lower().endswith(".doc") and len(stripped) < 80:
             continue
@@ -4415,7 +4461,7 @@ def render_source_page(uf: str, doc: dict, layout_func) -> str:
       <span>{escape(UPDATED_ON)}</span>
     </div>
   </div>
-  {render_chunks(doc['text'], doc['id'])}
+  {render_chunks(clean_law_segment(doc['text'], limit=max(len(doc['text']) + 1000, 12000)), doc['id'])}
 </section>
 """
     return layout_func(current, f"{doc['title']} | {name}", f"Texto integral de ICMS de {name}.", body, "estados")

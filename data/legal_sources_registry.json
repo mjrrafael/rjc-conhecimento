@@ -5746,7 +5746,7 @@
     {
       "source_id": "state-sp-sp-lei-6374-1989-icms",
       "jurisdiction": "SP",
-      "title": "Lei n. 6.374/1989 - ICMS do Estado de Sao Paulo",
+      "title": "Lei n. 6.374/1989 - ICMS do Estado de São Paulo",
       "short": "Lei material do ICMS",
       "official_url": "https://legislacao.fazenda.sp.gov.br/Paginas/texto6374.aspx",
       "storage": {
@@ -5755,7 +5755,7 @@
           "data/fontes-estaduais-curadas/sudeste/SP/SP_LEI_6374_1989_ICMS_2026-04-26.txt"
         ],
         "sha256": {
-          "SP_LEI_6374_1989_ICMS_2026-04-26.txt": "33c2384d1eddb5bb8680cc3cdd13fb8abaad7724e232a4d97624fe12e5077707"
+          "SP_LEI_6374_1989_ICMS_2026-04-26.txt": "25e0d897dc46228c0fb65a7312e16be7a35e31174786d520fdcafc86f0f09a8b"
         },
         "fetch_url": "https://legislacao.fazenda.sp.gov.br/Paginas/texto6374.aspx"
       },
@@ -5781,7 +5781,7 @@
       "source_id": "state-sp-sp-ricms-2000-integral",
       "jurisdiction": "SP",
       "title": "Decreto n. 45.490/2000 - RICMS/SP 2000 integral",
-      "short": "Regulamento do ICMS e beneficios fiscais de ICMS",
+      "short": "Regulamento do ICMS e benefícios fiscais de ICMS",
       "official_url": "https://legislacao.fazenda.sp.gov.br/Paginas/textoricms.aspx",
       "storage": {
         "type": "local_text",
@@ -5789,7 +5789,7 @@
           "data/fontes-estaduais-curadas/sudeste/SP/SP_RICMS_2000_INTEGRAL_2026-04-26.txt"
         ],
         "sha256": {
-          "SP_RICMS_2000_INTEGRAL_2026-04-26.txt": "d93fd90a910c4deb9d02b9177ff41ade0ad3326c37c4f42a9b8c5b77fb4e71b7"
+          "SP_RICMS_2000_INTEGRAL_2026-04-26.txt": "a8cfa0b99ac125d518e17b17f56dc35025d0aa8a53b2aff60ec20c80875f4291"
         },
         "fetch_url": "https://legislacao.fazenda.sp.gov.br/Paginas/textoricms.aspx"
       },
@@ -5819,8 +5819,8 @@
     {
       "source_id": "state-sp-sp-portaria-sre-70-2025-cbenef",
       "jurisdiction": "SP",
-      "title": "Portaria SRE n. 70/2025 - cBenef nos documentos fiscais eletronicos",
-      "short": "Obrigacoes acessorias e documentos",
+      "title": "Portaria SRE n. 70/2025 - cBenef nos documentos fiscais eletrônicos",
+      "short": "Obrigações acessórias e documentos",
       "official_url": "https://legislacao.fazenda.sp.gov.br/Paginas/Portaria-SRE-70-de-2025.aspx",
       "storage": {
         "type": "local_text",
@@ -5828,7 +5828,7 @@
           "data/fontes-estaduais-curadas/sudeste/SP/SP_PORTARIA_SRE_70_2025_CBENEF_2026-04-26.txt"
         ],
         "sha256": {
-          "SP_PORTARIA_SRE_70_2025_CBENEF_2026-04-26.txt": "e87b99ba88cb49c4f1e338e8a8a388711898fa7bdf82bd43c3b8d48611ee646f"
+          "SP_PORTARIA_SRE_70_2025_CBENEF_2026-04-26.txt": "4a27c74f9812539fa7c20e9d434071f499df33f105f685fdb657d58132db051f"
         },
         "fetch_url": "https://legislacao.fazenda.sp.gov.br/Paginas/Portaria-SRE-70-de-2025.aspx"
       },
@@ -5851,8 +5851,8 @@
     {
       "source_id": "state-sp-sp-portal-cbenef-nfe",
       "jurisdiction": "SP",
-      "title": "SEFAZ/SP - Codigo de Beneficio Fiscal cBenef na NF-e",
-      "short": "Obrigacoes acessorias e documentos",
+      "title": "SEFAZ/SP - Código de Benefício Fiscal cBenef na NF-e",
+      "short": "Obrigações acessórias e documentos",
       "official_url": "https://portal.fazenda.sp.gov.br/servicos/nfe/Paginas/cBenef.aspx",
       "storage": {
         "type": "local_text",
@@ -5860,7 +5860,7 @@
           "data/fontes-estaduais-curadas/sudeste/SP/SP_PORTAL_CBENEF_NFE_2026-04-26.txt"
         ],
         "sha256": {
-          "SP_PORTAL_CBENEF_NFE_2026-04-26.txt": "b0410d54be5d2763b44201b46456d6327198278bdb49e26b21859adfddff48c2"
+          "SP_PORTAL_CBENEF_NFE_2026-04-26.txt": "23a0fc8b160e24b13cb93fdb5c3b3dbb90c4f384ef33cb58e7d19b629d03b102"
         },
         "fetch_url": "https://portal.fazenda.sp.gov.br/servicos/nfe/Paginas/cBenef.aspx"
       },

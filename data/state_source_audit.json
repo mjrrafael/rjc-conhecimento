@@ -4541,7 +4541,7 @@
       "document_count": 4,
       "publishable_document_count": 4,
       "scope_blocked_document_count": 0,
-      "total_chars": 4799941,
+      "total_chars": 4838552,
       "categories": {
         "ICMS_BENEFICIOS": 1,
         "ICMS_LEIS": 1,
@@ -4554,7 +4554,7 @@
         {
           "file": "SP_LEI_6374_1989_ICMS_2026-04-26.txt",
           "category": "ICMS_LEIS",
-          "chars": 398049,
+          "chars": 399942,
           "named_icms": true,
           "fallback_icms": false,
           "dominant_scope": "ICMS",
@@ -4571,7 +4571,7 @@
         {
           "file": "SP_RICMS_2000_INTEGRAL_2026-04-26.txt",
           "category": "ICMS_BENEFICIOS",
-          "chars": 4395202,
+          "chars": 4435134,
           "named_icms": true,
           "fallback_icms": false,
           "dominant_scope": "ICMS",
@@ -4588,7 +4588,7 @@
         {
           "file": "SP_PORTARIA_SRE_70_2025_CBENEF_2026-04-26.txt",
           "category": "OUTROS",
-          "chars": 3667,
+          "chars": 1858,
           "named_icms": true,
           "fallback_icms": false,
           "dominant_scope": "ICMS",
@@ -4605,7 +4605,7 @@
         {
           "file": "SP_PORTAL_CBENEF_NFE_2026-04-26.txt",
           "category": "OUTROS",
-          "chars": 3023,
+          "chars": 1618,
           "named_icms": true,
           "fallback_icms": false,
           "dominant_scope": "ICMS",
