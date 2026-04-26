@@ -102,6 +102,19 @@ Benefício fiscal não pode ser classificado apenas por contagem de palavra. O b
 - prova;
 - risco de uso indevido.
 
+## Validação De Escopo Material
+
+O caso da Bahia virou regra permanente: um arquivo chamado ICMS, RICMS ou Anexo de ICMS não é suficiente para publicação. A curadoria precisa ler o cabeçalho, os documentos-fonte e amostras do texto.
+
+Bloqueie o documento quando:
+
+- o arquivo estiver classificado como ICMS, mas os documentos-fonte indicarem Taxas, IPVA, ITCMD/ITCD ou outro tributo;
+- a palavra ICMS aparecer apenas como referência lateral, enquanto o texto dominante tratar de taxas, serviços, emolumentos, IPVA, ITCMD ou matéria administrativa;
+- o anexo prometido como ICMS trouxer, na prática, tabela de taxas ou lei de taxas;
+- a página gerada estiver explicando ICMS com base em texto que não regula ICMS.
+
+Antes de aprovar qualquer Estado, registrar no relatório de auditoria quantos documentos são candidatos, quantos são realmente úteis para ICMS e quantos foram bloqueados por escopo.
+
 ## Auditorias Obrigatorias
 
 Rodar antes de cada publicação:

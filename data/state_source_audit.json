@@ -3,6 +3,8 @@
   "summary": {
     "states": 27,
     "docs": 183,
+    "publishable_docs": 174,
+    "scope_blocked_docs": 9,
     "blocked": 26
   },
   "states": {
@@ -12,6 +14,8 @@
       "curadoria": "revisao_fonte",
       "publish_deep": false,
       "document_count": 6,
+      "publishable_document_count": 6,
+      "scope_blocked_document_count": 0,
       "total_chars": 2567917,
       "categories": {
         "ICMS_ALIQUOTAS": 1,
@@ -36,6 +40,14 @@
           "chars": 6251,
           "named_icms": true,
           "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [
+            "Leis Complementares/Lei Complementar nº 254 de 27 de dezembro de 2012- altera LC nº 55-1997-RSN 13- aliquota de 4%.pdf",
+            "Leis Complementares/Lei complementar n 422 de 26 de dezembro de 2022 - altera LC 55-97 _ aliquotas ICMS.pdf"
+          ],
           "flags": [
             "fonte local sem URL oficial no cabeçalho",
             "ruído de extração/encoding",
@@ -48,6 +60,22 @@
           "chars": 102251,
           "named_icms": true,
           "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [
+            "ICMS"
+          ],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [
+            "Decretos/Decreto n 11.399 de 5 de janeiro de 2024 - Altera o Decreto n 5.693-2013 - Isencao do ICMS na saida de veiculo destinado a portadores de deficiencia.pdf",
+            "ICMS/Lei n° 1.358  de 29 de dezembro de 2000 - Institui o Programa de Incentivo Tributário para Empresas Cooperativas e Associações de Produtores - atualizada até a Lei nº 2.956-2015.pdf",
+            "ICMS/Lei nº 1.361 de 29 de dezembro de 2000 - Dispoe sobre a Politica de Incentivo as Atividades Industriais no Estado do Acre-Atualizada até a Lei 2.872-2014 -.pdf",
+            "Leis Complementares/Lei Complementar nº 069 de 30 de junho de 1999 - Isenção ICMS Táxi.pdf",
+            "Leis Complementares/Lei Complementar nº 269 de 27 de dezembro de 2013 - altera a LC nº 55-97 - isenção de energia elétrica .pdf",
+            "Leis Ordinárias/Lei n 3.911 de 15 de fevereiro de 2022 _ Isencao nas operacoes internas com farinha de mandioca - Conv. 131-05.pdf",
+            "Leis Ordinárias/Lei n 3.924 de 1 de abril de 2022 - Reducao de base de calculo do ICMS nas operacoes com veiculos usados apreendidos pelo DETRAN.pdf",
+            "Leis Ordinárias/Lei n 4.058 de 15 de dezembro de 2022 - adesao incentivo fiscal previsto na legislacao de RO (leite UHT).pdf"
+          ],
           "flags": [
             "contém Taxas",
             "fonte local sem URL oficial no cabeçalho",
@@ -60,6 +88,18 @@
           "chars": 94306,
           "named_icms": true,
           "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [
+            "Decretos/Decreto n 11.398 de 5 de janeiro de 2024 - Incorpora a legislacao tributaria do Estado os Ajustes SINIEF e os Convenios e Protocolos ICMS que especifica.pdf",
+            "Decretos/Decreto n 11.509 de 1 de julho de 2024 - Dispoe sobre a delimitacao dos debitos fiscais compreendidos na prorrogacao dos prazos para pagamento ICMS _ Lei n 4.357 de 6 de junho de 2024.pdf",
+            "Decretos/Decreto n 11.510 de 1 de julho de 2024 - Incorpora a legislacao tributaria do Estado os Ajustes SINIEF e Convenios ICMS.pdf",
+            "Decretos/Decreto nº 11.423 de 4 de março de 2024 - Incorpora à legislação do Estado os Convênios e Protocolos ICMS de 2023 - dezembro 2023.pdf",
+            "Decretos/Decreto nº 11.456 de 16 de abril de 2024 - Incorpora à legislação do Estado os Convênios ICMS nºs 10 e 11 de 2024.pdf",
+            "Decretos/Decreto nº 11.667 de 4 de abril de 2025 - Incorpora à legislação tributária do Estado Ajustes SINIEF Convênios Protocolos ICMS e Acordos de Cooperação Técnica.pdf"
+          ],
           "flags": [
             "fonte local sem URL oficial no cabeçalho",
             "ruído de extração/encoding"
@@ -71,6 +111,15 @@
           "chars": 2065691,
           "named_icms": true,
           "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [
+            "ICMS"
+          ],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [
+            "ICMS/DECRETO 08-98 - atualizado até o Decreto 11703 de 2 de junho de 2025.pdf"
+          ],
           "flags": [
             "contém IPVA",
             "contém Taxas",
@@ -84,6 +133,22 @@
           "chars": 254363,
           "named_icms": true,
           "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [
+            "ICMS"
+          ],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [
+            "ICMS/Lei Complementar nº 055-1997 - ICMS - Atualizada até a LC nº 481 de 17-12-2024.pdf",
+            "ICMS/Lei complementar nº 483 de 17 de dezembro de 2024 - Dispõe sobre o IPVA .pdf",
+            "ICMS/Lei nº 1.530 de 22 de janeiro de 2004 - Institui o ICMS Verde.pdf",
+            "Leis Complementares/Lei Complementar nº 075 de 7 de julho de 1999 - dispensa constituição de crédito do ICMS.pdf",
+            "Leis Ordinárias/Lei n 4.101 de 27 de abril de 2023 - Porroga prazos para pagamento do ICMS devido por PF e PJ atingidas pelo transbordo de rios e igarapes.pdf",
+            "Leis Ordinárias/Lei n 4.357 de 6 de junho de 2024 - Prorrogacao dos prazo para pagamento do ICMS (inundacoes) - Republicada.pdf",
+            "Leis Ordinárias/Lei nº 3.874 de 17 de dezembro de 2021 - dispõe sobre o devedor contumaz do ICMS.pdf",
+            "Leis Ordinárias/Lei nº 3.976 de 15 de setembro de 2022 - Altera a Lei n° 3.532-2019 - Critérios de distribuição do ICMS para os Municípios.pdf"
+          ],
           "flags": [
             "contém IPVA",
             "contém ITCMD/ITCD",
@@ -98,6 +163,19 @@
           "chars": 45055,
           "named_icms": true,
           "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [
+            "ICMS"
+          ],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [
+            "Decretos/Decreto n 11.385 de 22 de dezembro de 2023 - Altera RICMS e Decreto n 4.698-2019.pdf",
+            "Decretos/Decreto n 11.613 de 27 de dezembro de 2024 - Altera o Regulamento do ICMS.pdf",
+            "Decretos/Decreto nº 11.573 de 30 de outubro de 2024 - Altera o RICMS - Art. 258-Z e Anexo I (1).pdf",
+            "Decretos/Decreto nº 11.596  de 29 de novembro de 2024 - Altera o RICMS - Anexo I.pdf",
+            "Decretos/Decreto nº 11.675 de 10 de abril de 2025 Altera o RICMS _ NFCom (AJ 7-22_ atualizado até o AJ 34-24).pdf"
+          ],
           "flags": [
             "fonte local sem URL oficial no cabeçalho",
             "ruído de extração/encoding"
@@ -111,6 +189,8 @@
       "curadoria": "revisao_fonte",
       "publish_deep": false,
       "document_count": 3,
+      "publishable_document_count": 3,
+      "scope_blocked_document_count": 0,
       "total_chars": 608948,
       "categories": {
         "ICMS_LEIS": 1,
@@ -130,6 +210,13 @@
           "chars": 3047,
           "named_icms": true,
           "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [
+            "1 ICMS ANTECIPADO.pdf"
+          ],
           "flags": [
             "fonte local sem URL oficial no cabeçalho",
             "ruído de extração/encoding",
@@ -142,6 +229,13 @@
           "chars": 422359,
           "named_icms": true,
           "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [
+            "DECRETO Nº 90.309-2023 -RETIFICADO260523-COM MVAs AJUSTADAS-atualizado23-12-25.pdf"
+          ],
           "flags": [
             "ruído de extração/encoding"
           ]
@@ -152,6 +246,13 @@
           "chars": 183542,
           "named_icms": true,
           "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [
+            "MERCADORIAS SUJEITAS À SUBSTITUIÇÃO TRIBUTÁRIA (5).pdf"
+          ],
           "flags": [
             "fonte local sem URL oficial no cabeçalho",
             "ruído de extração/encoding"
@@ -165,6 +266,8 @@
       "curadoria": "revisao_fonte",
       "publish_deep": false,
       "document_count": 4,
+      "publishable_document_count": 4,
+      "scope_blocked_document_count": 0,
       "total_chars": 1944429,
       "categories": {
         "DECRETOS": 2,
@@ -187,6 +290,13 @@
           "chars": 765049,
           "named_icms": false,
           "fallback_icms": true,
+          "dominant_scope": "ICMS",
+          "source_scopes": [],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [
+            "2 DECRETO Nº 20.686, DE 28 DE DEZEMBRO DE 1999 - RCTE AM.pdf"
+          ],
           "flags": [
             "categoria não específica de ICMS",
             "contém Taxas",
@@ -200,6 +310,14 @@
           "chars": 193298,
           "named_icms": false,
           "fallback_icms": true,
+          "dominant_scope": "ICMS",
+          "source_scopes": [],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [
+            "DECRETO Nº 23.994, DE 29 DE DEZEMBRO DE 2003.pdf",
+            "DECRETO Nº 47.727, DE 05 DE JULHO DE 2023.pdf"
+          ],
           "flags": [
             "categoria não específica de ICMS",
             "contém Taxas",
@@ -213,6 +331,13 @@
           "chars": 570759,
           "named_icms": false,
           "fallback_icms": true,
+          "dominant_scope": "Taxas",
+          "source_scopes": [],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [
+            "1 LEI COMPLEMENTAR Nº 19, DE 29 DE DEZEMBRO DE 1997 - cte amazonas.pdf"
+          ],
           "flags": [
             "categoria não específica de ICMS",
             "contém IPVA",
@@ -228,6 +353,20 @@
           "chars": 415323,
           "named_icms": false,
           "fallback_icms": true,
+          "dominant_scope": "ICMS",
+          "source_scopes": [],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [
+            "LEI COMPLEMENTAR Nº 240, DE 23 DE DEZEMBRO DE 2022.pdf",
+            "LEI COMPLEMENTAR Nº 244, DE 27 DE ABRIL DE 2023.pdf",
+            "LEI COMPLEMENTAR Nº 249, DE 28 DE AGOSTO DE 2023.pdf",
+            "LEI COMPLEMENTAR Nº 257, DE 14 DE DEZEMBRO DE 2023.pdf",
+            "LEI COMPLEMENTAR Nº 258, DE 14 DE DEZEMBRO DE 2023.pdf",
+            "LEI COMPLEMENTAR Nº 259, DE 14 DE DEZEMBRO DE 2023.pdf",
+            "LEI COMPLEMENTAR Nº 260, DE 14 DE DEZEMBRO DE 2023.pdf",
+            "LEI COMPLEMENTAR Nº 269, DE 23 DE DEZEMBRO DE 2024.pdf"
+          ],
           "flags": [
             "categoria não específica de ICMS",
             "contém ITCMD/ITCD",
@@ -244,6 +383,8 @@
       "curadoria": "revisao_fonte",
       "publish_deep": false,
       "document_count": 7,
+      "publishable_document_count": 7,
+      "scope_blocked_document_count": 0,
       "total_chars": 5618371,
       "categories": {
         "ICMS_ANEXOS": 1,
@@ -267,6 +408,20 @@
           "chars": 119297,
           "named_icms": true,
           "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [
+            "DECRETOS/2023/2023 - DECRETO 8243 - ALTERA ANEXO I DEC. 2269 - CADASTRO CONTRIBUINTE.pdf",
+            "DECRETOS/2024/2024 - DECRETO 5170 - ALTERA T_TULO II ANEXO III - COMBUST_VEIS E LUBRIFICANTES - DOE. 8194.pdf",
+            "DECRETOS/2025/2025 - DECRETO 8731 - INSTITUI NFCOM - ACRESCENTA ANEXO XXXV - DEC. 2269.pdf",
+            "DECRETOS/2025/2025 - DECRETO 9332 - ALTERA ANEXO III DEC. 2.269 DE 1998 - FORMATADO (1).pdf",
+            "DECRETOS/2025/2025 - DECRETO 9332 - ALTERA ANEXO III DEC. 2.269 DE 1998 - FORMATADO.pdf",
+            "PORTARIAS/2021/2021 - PORTARIA (T) 009 - Altera o Anexo I da Portaria (T) n_ 0012017_COD EFD_DOEn7441.pdf",
+            "PORTARIAS/2023/2023 - PORTARIA (T) 013 - Altera os Anexos I e II da Portaria (T) n_ 003.2022 ST SORVETES E PREPARADOS.pdf",
+            "PORTARIAS/2025/2025 - PORTARIA (T) 034 - INCLUI CONTRIBUINTE NO ANEXO _NICO DA PORTARIA 001 DE 2012.pdf"
+          ],
           "flags": [
             "contém Taxas",
             "ruído de extração/encoding"
@@ -278,6 +433,13 @@
           "chars": 10842,
           "named_icms": true,
           "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [
+            "DECRETOS/2024/2024 - DECRETO 3900 - PRORROGA DEC BENEF_CIOS FISCAIS CONV. ICMS 226 - DOE. 8.158.pdf"
+          ],
           "flags": [
             "fonte local sem URL oficial no cabeçalho",
             "ruído de extração/encoding",
@@ -290,6 +452,20 @@
           "chars": 204091,
           "named_icms": true,
           "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [
+            "DECRETOS/2021/2021 - DECRETO 1718  - Implem. Pt ICMS 01, 02, 08, 10, 12 de 2021_DOEn7418.pdf",
+            "DECRETOS/2021/2021 - DECRETO 1718 -Pt ICMS 01, 02, 08, 10, 12 de 2021.pdf",
+            "DECRETOS/2021/2021 - DECRETO 1827 - ISEN__O ICMS T_XI.pdf",
+            "DECRETOS/2021/2021 - DECRETO 1827 - ISEN__O ICMS T_XI_DOE 7426 (1).pdf",
+            "DECRETOS/2021/2021 - DECRETO 1827 - ISEN__O ICMS T_XI_DOE 7426.pdf",
+            "DECRETOS/2021/2021 - DECRETO 4281 - REMISS_O DE D_BITOS DO ICMS CEA PETROBRAS_DOEn7544.pdf",
+            "DECRETOS/2021/2021 - DECRETO 4906 - IMPLEM AJUSTES SINIEF CV ICMS_DOEn7575.pdf",
+            "DECRETOS/2021/2021 - DECRETO 4907 - PROR DECRETOS BENEF CV ICMS 178_DOEn7575 (1).pdf"
+          ],
           "flags": [
             "contém Taxas",
             "ruído de extração/encoding"
@@ -301,6 +477,13 @@
           "chars": 5738,
           "named_icms": true,
           "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [
+            "ISNTRUÇÕES NORMATIVAS/2023/2023 - LEI 2.960 - Altera dispo da Lei n_ 0400 - CESTA B_SICA.pdf"
+          ],
           "flags": [
             "fonte local sem URL oficial no cabeçalho",
             "ruído de extração/encoding",
@@ -313,6 +496,22 @@
           "chars": 105541,
           "named_icms": true,
           "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [
+            "ICMS"
+          ],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [
+            "DECRETOS/2021/2021 - DECRETO 1825 - ACRESCENTA DISPOSITIVOS ART. 73 RICMS - SUSPENS_O CADASTRO_DOEn7426.pdf",
+            "DECRETOS/2021/2021 - DECRETO 3153 - ACRESCENTA INCISO XV ao art. 73 RICMS.AP (1).pdf",
+            "DECRETOS/2021/2021 - DECRETO 3153 - ACRESCENTA INCISO XV ao art. 73 RICMS.AP.pdf",
+            "DECRETOS/2021/2021 - DECRETO 4909 - Alt Anexo III RICMS ST_DOEn7575.pdf",
+            "DECRETOS/2022/2022 - DECRETO 3814 - NF ENERGIA ELETRONICA_ACRESC ANEXO XXXIV RICMS.AP.pdf",
+            "DECRETOS/2022/2022 - DECRETO 3814 - NF ENERGIA ELETRONICA_ACRESC ANEXO XXXIV RICMS.AP_DOEn7738.pdf",
+            "DECRETOS/2022/2022 - DECRETO 3815 - SUBSTITUI__O TRIBTUT_ALT ANEXO III RICMS.AP.pdf",
+            "DECRETOS/2022/2022 - DECRETO 3815 - SUBSTITUI__O TRIBTUT_ALT ANEXO III RICMS.AP_DOEn7738.pdf"
+          ],
           "flags": [
             "ruído de extração/encoding"
           ]
@@ -323,6 +522,15 @@
           "chars": 2586435,
           "named_icms": true,
           "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [
+            "ICMS"
+          ],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [
+            "REGULAMENTO/1998 - DECRETO 2269 - RICMS Atualizado 13.07.2021 (1).pdf"
+          ],
           "flags": [
             "contém Taxas",
             "ruído de extração/encoding"
@@ -334,6 +542,15 @@
           "chars": 2586427,
           "named_icms": true,
           "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [
+            "ICMS"
+          ],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [
+            "REGULAMENTO/1998 - DECRETO 2269 - RICMS Atualizado 13.07.2021.pdf"
+          ],
           "flags": [
             "contém Taxas",
             "ruído de extração/encoding"
@@ -347,6 +564,8 @@
       "curadoria": "revisao_fonte",
       "publish_deep": false,
       "document_count": 7,
+      "publishable_document_count": 5,
+      "scope_blocked_document_count": 2,
       "total_chars": 4297939,
       "categories": {
         "ICMS_ANEXOS": 2,
@@ -355,11 +574,14 @@
       },
       "flags": [
         "contém Taxas",
+        "escopo dominante incompatível: conteúdo parece tratar de Taxas, não de ICMS",
+        "escopo incompatível: arquivo classificado como ICMS, mas os documentos fonte indicam Taxas",
+        "escopo material incompatível com ICMS",
         "fonte local sem URL oficial no cabeçalho",
         "ruído de extração/encoding",
         "texto curto para RICMS/benefícios"
       ],
-      "recommendation": "bloquear_publicacao_ate_curadoria",
+      "recommendation": "bloquear_publicacao_ate_reclassificar_escopo",
       "next_step": "Baixar RICMS e anexos de benefícios no portal oficial da Bahia.",
       "documents": [
         {
@@ -368,8 +590,23 @@
           "chars": 421426,
           "named_icms": true,
           "fallback_icms": false,
+          "dominant_scope": "Taxas",
+          "source_scopes": [
+            "Taxas"
+          ],
+          "scope_blocked": true,
+          "scope_flags": [
+            "escopo dominante incompatível: conteúdo parece tratar de Taxas, não de ICMS",
+            "escopo incompatível: arquivo classificado como ICMS, mas os documentos fonte indicam Taxas"
+          ],
+          "source_documents": [
+            "TAXAS/legest_2009_11631_taxas_anexo_II_anterior.pdf"
+          ],
           "flags": [
             "contém Taxas",
+            "escopo dominante incompatível: conteúdo parece tratar de Taxas, não de ICMS",
+            "escopo incompatível: arquivo classificado como ICMS, mas os documentos fonte indicam Taxas",
+            "escopo material incompatível com ICMS",
             "fonte local sem URL oficial no cabeçalho",
             "ruído de extração/encoding"
           ]
@@ -380,8 +617,23 @@
           "chars": 864895,
           "named_icms": true,
           "fallback_icms": false,
+          "dominant_scope": "Taxas",
+          "source_scopes": [
+            "Taxas"
+          ],
+          "scope_blocked": true,
+          "scope_flags": [
+            "escopo dominante incompatível: conteúdo parece tratar de Taxas, não de ICMS",
+            "escopo incompatível: arquivo classificado como ICMS, mas os documentos fonte indicam Taxas"
+          ],
+          "source_documents": [
+            "TAXAS/legest_2009_11631_taxas_anexo_I_anterior.pdf"
+          ],
           "flags": [
             "contém Taxas",
+            "escopo dominante incompatível: conteúdo parece tratar de Taxas, não de ICMS",
+            "escopo incompatível: arquivo classificado como ICMS, mas os documentos fonte indicam Taxas",
+            "escopo material incompatível com ICMS",
             "fonte local sem URL oficial no cabeçalho",
             "ruído de extração/encoding"
           ]
@@ -392,6 +644,15 @@
           "chars": 312679,
           "named_icms": true,
           "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [
+            "ICMS"
+          ],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [
+            "ICMS/legest_1996_7014_icmscomnotas.pdf"
+          ],
           "flags": [
             "contém Taxas",
             "fonte local sem URL oficial no cabeçalho",
@@ -404,6 +665,19 @@
           "chars": 478386,
           "named_icms": true,
           "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [
+            "ICMS"
+          ],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [
+            "ICMS/decreto_2012_13780_ricms_anexo_1_vigente_2023_a_partir_22_03_2023.pdf",
+            "ICMS/decreto_2012_13780_ricms_anexo_1_vigente_2023_paisagem.pdf",
+            "ICMS/decreto_2012_13780_ricms_anexo_1_vigente_2024.pdf",
+            "ICMS/decreto_2012_13780_ricms_anexo_1_vigente_2024_a_partir_07_02_2024.pdf",
+            "ICMS/decreto_2012_13780_ricms_anexo_1_vigente_2025.pdf"
+          ],
           "flags": [
             "fonte local sem URL oficial no cabeçalho",
             "ruído de extração/encoding"
@@ -415,6 +689,16 @@
           "chars": 13858,
           "named_icms": true,
           "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [
+            "ICMS"
+          ],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [
+            "ICMS/decreto_2012_13780_ricms_anexo_2.pdf",
+            "ICMS/decreto_2012_13780_ricms_indice.pdf"
+          ],
           "flags": [
             "fonte local sem URL oficial no cabeçalho",
             "ruído de extração/encoding",
@@ -427,6 +711,15 @@
           "chars": 1329276,
           "named_icms": true,
           "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [
+            "ICMS"
+          ],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [
+            "ICMS/decreto_2012_13780_ricms_texto.pdf"
+          ],
           "flags": [
             "contém Taxas",
             "ruído de extração/encoding"
@@ -438,6 +731,15 @@
           "chars": 877419,
           "named_icms": true,
           "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [
+            "ICMS"
+          ],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [
+            "ICMS/decreto_2012_13780_ricms_texto_2021.pdf"
+          ],
           "flags": [
             "contém Taxas",
             "ruído de extração/encoding"
@@ -451,6 +753,8 @@
       "curadoria": "revisao_fonte",
       "publish_deep": false,
       "document_count": 8,
+      "publishable_document_count": 8,
+      "scope_blocked_document_count": 0,
       "total_chars": 4274313,
       "categories": {
         "DECRETOS": 6,
@@ -475,6 +779,13 @@
           "chars": 72560,
           "named_icms": false,
           "fallback_icms": true,
+          "dominant_scope": "ICMS",
+          "source_scopes": [],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [
+            "DECRETO N.º 33.251, DE 28 DE AGOSTO DE 2019.pdf"
+          ],
           "flags": [
             "categoria não específica de ICMS",
             "contém Taxas",
@@ -489,6 +800,13 @@
           "chars": 1089446,
           "named_icms": false,
           "fallback_icms": true,
+          "dominant_scope": "ICMS",
+          "source_scopes": [],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [
+            "DECRETO N.º 33.327, DE 30 DE OUTUBRO DE 2019..pdf"
+          ],
           "flags": [
             "categoria não específica de ICMS",
             "contém IPVA",
@@ -504,6 +822,14 @@
           "chars": 306925,
           "named_icms": false,
           "fallback_icms": true,
+          "dominant_scope": "ICMS",
+          "source_scopes": [],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [
+            "DECRETO N.º 34.256, DE 21 DE SETEMBRO DE 2021.pdf",
+            "DECRETO N.º 34.605, DE 24 DE MARÇO DE 2022.pdf"
+          ],
           "flags": [
             "categoria não específica de ICMS",
             "contém IPVA",
@@ -520,6 +846,16 @@
           "chars": 369783,
           "named_icms": false,
           "fallback_icms": true,
+          "dominant_scope": "ICMS",
+          "source_scopes": [],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [
+            "DECRETO N.º 35.061, DE 21 DE DEZEMBRO DE 2022.pdf",
+            "DECRETO N.º 36.617, DE 16 DE MAIO DE 2025.pdf",
+            "DECRETO N° 29.560, DE 27 DE NOVEMBRO DE 2008.pdf",
+            "DECRETO N° 31.066, DE 28 DE NOVEMBRO DE 2012.pdf"
+          ],
           "flags": [
             "categoria não específica de ICMS",
             "contém IPVA",
@@ -535,6 +871,13 @@
           "chars": 1878223,
           "named_icms": false,
           "fallback_icms": true,
+          "dominant_scope": "ICMS",
+          "source_scopes": [],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [
+            "DECRETO Nº 24.569, DE 31 DE JULHO DE 1997.pdf"
+          ],
           "flags": [
             "categoria não específica de ICMS",
             "contém Taxas",
@@ -549,6 +892,15 @@
           "chars": 132595,
           "named_icms": false,
           "fallback_icms": true,
+          "dominant_scope": "ICMS",
+          "source_scopes": [],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [
+            "DECRETO Nº 30.519, DE 26 DE ABRIL DE 2011.pdf",
+            "DECRETO Nº 31.270, DE 1º DE AGOSTO DE 2013.pdf",
+            "DECRETO Nº 32.900, de 17 de dezembro de 2018..pdf"
+          ],
           "flags": [
             "categoria não específica de ICMS",
             "contém Taxas",
@@ -563,6 +915,13 @@
           "chars": 117408,
           "named_icms": false,
           "fallback_icms": true,
+          "dominant_scope": "ICMS",
+          "source_scopes": [],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [
+            "INSTRUÇÃO NORMATIVA N.º 77, DE 08 DE NOVEMBRO DE 2019.pdf"
+          ],
           "flags": [
             "categoria não específica de ICMS",
             "fallback amplo",
@@ -575,6 +934,13 @@
           "chars": 307373,
           "named_icms": false,
           "fallback_icms": true,
+          "dominant_scope": "ICMS",
+          "source_scopes": [],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [
+            "LEI N.º 18.665, DE 28 DE DEZEMBRO DE 2023..pdf"
+          ],
           "flags": [
             "categoria não específica de ICMS",
             "contém IPVA",
@@ -593,6 +959,8 @@
       "curadoria": "revisao_fonte",
       "publish_deep": false,
       "document_count": 5,
+      "publishable_document_count": 1,
+      "scope_blocked_document_count": 4,
       "total_chars": 1571628,
       "categories": {
         "DECRETOS": 3,
@@ -604,10 +972,14 @@
         "contém IPVA",
         "contém ITCMD/ITCD",
         "contém Taxas",
+        "escopo material incompatível com ICMS",
         "fallback amplo",
+        "fallback amplo contaminado: categoria DECRETOS contém ICMS, mas o escopo dominante é Taxas",
+        "fallback amplo contaminado: categoria LEIS contém ICMS, mas o escopo dominante é Taxas",
+        "fallback amplo contaminado: categoria PORTARIAS contém ICMS, mas o escopo dominante é Taxas",
         "ruído de extração/encoding"
       ],
-      "recommendation": "bloquear_publicacao_ate_curadoria",
+      "recommendation": "bloquear_publicacao_ate_reclassificar_escopo",
       "next_step": "Baixar RICMS/DF e caderno de benefícios fiscais na Receita do Distrito Federal.",
       "documents": [
         {
@@ -616,11 +988,29 @@
           "chars": 495502,
           "named_icms": false,
           "fallback_icms": true,
+          "dominant_scope": "Taxas",
+          "source_scopes": [],
+          "scope_blocked": true,
+          "scope_flags": [
+            "fallback amplo contaminado: categoria DECRETOS contém ICMS, mas o escopo dominante é Taxas"
+          ],
+          "source_documents": [
+            "LEGISLAÇÃO CONTABIL/Decreto 46143 de 19_08_2024.pdf",
+            "LEGISLAÇÃO CONTABIL/Decreto 46286 de 23_09_2024.pdf",
+            "LEGISLAÇÃO CONTABIL/Decreto 47688 de 15_09_2025.pdf",
+            "LEGISLAÇÃO CONTABIL/Decreto 47748 de 29_09_2025.pdf",
+            "LEGISLAÇÃO CONTABIL/Decreto 47810 de 13_10_2025.pdf",
+            "LEGISLAÇÃO CONTABIL/Decreto 47840 de 22_10_2025.pdf",
+            "LEGISLAÇÃO FINANCEIRA/Decreto 1 de 13_01_2023.pdf",
+            "LEGISLAÇÃO FINANCEIRA/Decreto 32598 de 15_12_2010.pdf"
+          ],
           "flags": [
             "categoria não específica de ICMS",
             "contém IPVA",
             "contém Taxas",
+            "escopo material incompatível com ICMS",
             "fallback amplo",
+            "fallback amplo contaminado: categoria DECRETOS contém ICMS, mas o escopo dominante é Taxas",
             "ruído de extração/encoding"
           ]
         },
@@ -630,6 +1020,19 @@
           "chars": 364467,
           "named_icms": false,
           "fallback_icms": true,
+          "dominant_scope": "ICMS",
+          "source_scopes": [],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [
+            "LEGISLAÇÃO FINANCEIRA/Decreto 33522 de 08_02_2012.pdf",
+            "LEGISLAÇÃO FINANCEIRA/Decreto 35565 de 25_06_2014.pdf",
+            "LEGISLAÇÃO FINANCEIRA/Decreto 40372 de 30_12_2019.pdf",
+            "LEGISLAÇÃO FINANCEIRA/Decreto 40467 de 20_02_2020.pdf",
+            "LEGISLAÇÃO FINANCEIRA/Decreto 41603 de 15_12_2020.pdf",
+            "LEGISLAÇÃO FINANCEIRA/Decreto 41773 de 04_02_2021.pdf",
+            "LEGISLAÇÃO FINANCEIRA/Decreto 43183 de 04_04_2022.pdf"
+          ],
           "flags": [
             "categoria não específica de ICMS",
             "contém IPVA",
@@ -645,11 +1048,22 @@
           "chars": 245525,
           "named_icms": false,
           "fallback_icms": true,
+          "dominant_scope": "Taxas",
+          "source_scopes": [],
+          "scope_blocked": true,
+          "scope_flags": [
+            "fallback amplo contaminado: categoria DECRETOS contém ICMS, mas o escopo dominante é Taxas"
+          ],
+          "source_documents": [
+            "LEGISLAÇÃO FINANCEIRA/Decreto Lei 82 de 26_12_1966.pdf"
+          ],
           "flags": [
             "categoria não específica de ICMS",
             "contém IPVA",
             "contém Taxas",
+            "escopo material incompatível com ICMS",
             "fallback amplo",
+            "fallback amplo contaminado: categoria DECRETOS contém ICMS, mas o escopo dominante é Taxas",
             "ruído de extração/encoding"
           ]
         },
@@ -659,11 +1073,26 @@
           "chars": 121505,
           "named_icms": false,
           "fallback_icms": true,
+          "dominant_scope": "Taxas",
+          "source_scopes": [],
+          "scope_blocked": true,
+          "scope_flags": [
+            "fallback amplo contaminado: categoria LEIS contém ICMS, mas o escopo dominante é Taxas"
+          ],
+          "source_documents": [
+            "LEGISLAÇÃO FINANCEIRA/Lei 4614 de 12_08_2011.pdf",
+            "LEGISLAÇÃO FINANCEIRA/Lei 4891 de 18_07_2012.pdf",
+            "LEGISLAÇÃO FINANCEIRA/Lei 4892 de 19_07_2012.pdf",
+            "LEGISLAÇÃO FINANCEIRA/Lei Complementar 292 de 02_06_2000.pdf",
+            "LEGISLAÇÃO FINANCEIRA/Lei Complementar 925 de 28_06_2017.pdf"
+          ],
           "flags": [
             "categoria não específica de ICMS",
             "contém IPVA",
             "contém Taxas",
+            "escopo material incompatível com ICMS",
             "fallback amplo",
+            "fallback amplo contaminado: categoria LEIS contém ICMS, mas o escopo dominante é Taxas",
             "ruído de extração/encoding"
           ]
         },
@@ -673,12 +1102,30 @@
           "chars": 344629,
           "named_icms": false,
           "fallback_icms": true,
+          "dominant_scope": "Taxas",
+          "source_scopes": [],
+          "scope_blocked": true,
+          "scope_flags": [
+            "fallback amplo contaminado: categoria PORTARIAS contém ICMS, mas o escopo dominante é Taxas"
+          ],
+          "source_documents": [
+            "LEGISLAÇÃO CONTABIL/Portaria 1026 de 23_12_2025.pdf",
+            "LEGISLAÇÃO CONTABIL/Portaria 107 de 11_03_2019.pdf",
+            "LEGISLAÇÃO CONTABIL/Portaria 13 de 06_02_2025.pdf",
+            "LEGISLAÇÃO CONTABIL/Portaria 251 de 16_09_2021.pdf",
+            "LEGISLAÇÃO CONTABIL/Portaria 338 de 16_07_2025.pdf",
+            "LEGISLAÇÃO CONTABIL/Portaria 344 de 23_07_2025.pdf",
+            "LEGISLAÇÃO CONTABIL/Portaria Conjunta 2 de 14_03_2023.pdf",
+            "LEGISLAÇÃO CONTABIL/Portaria Conjunta 39 de 01_09_2021.pdf"
+          ],
           "flags": [
             "categoria não específica de ICMS",
             "contém IPVA",
             "contém ITCMD/ITCD",
             "contém Taxas",
+            "escopo material incompatível com ICMS",
             "fallback amplo",
+            "fallback amplo contaminado: categoria PORTARIAS contém ICMS, mas o escopo dominante é Taxas",
             "ruído de extração/encoding"
           ]
         }
@@ -690,6 +1137,8 @@
       "curadoria": "revisao_fonte",
       "publish_deep": false,
       "document_count": 7,
+      "publishable_document_count": 7,
+      "scope_blocked_document_count": 0,
       "total_chars": 3144165,
       "categories": {
         "RICMS": 7
@@ -708,6 +1157,11 @@
           "chars": 482946,
           "named_icms": true,
           "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [],
           "flags": [
             "contém IPVA",
             "contém Taxas",
@@ -720,6 +1174,11 @@
           "chars": 479965,
           "named_icms": true,
           "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [],
           "flags": [
             "contém Taxas",
             "ruído de extração/encoding"
@@ -731,6 +1190,11 @@
           "chars": 481125,
           "named_icms": true,
           "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [],
           "flags": [
             "contém Taxas",
             "ruído de extração/encoding"
@@ -742,6 +1206,11 @@
           "chars": 479621,
           "named_icms": true,
           "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [],
           "flags": [
             "contém Taxas",
             "ruído de extração/encoding"
@@ -753,6 +1222,11 @@
           "chars": 479189,
           "named_icms": true,
           "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [],
           "flags": [
             "contém Taxas",
             "ruído de extração/encoding"
@@ -764,6 +1238,11 @@
           "chars": 479907,
           "named_icms": true,
           "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [],
           "flags": [
             "contém IPVA",
             "contém Taxas",
@@ -776,6 +1255,11 @@
           "chars": 261412,
           "named_icms": true,
           "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [],
           "flags": [
             "ruído de extração/encoding"
           ]
@@ -788,6 +1272,8 @@
       "curadoria": "aprovado_v1",
       "publish_deep": true,
       "document_count": 0,
+      "publishable_document_count": 0,
+      "scope_blocked_document_count": 0,
       "total_chars": 0,
       "categories": {},
       "flags": [],
@@ -801,6 +1287,8 @@
       "curadoria": "revisao_fonte",
       "publish_deep": false,
       "document_count": 10,
+      "publishable_document_count": 10,
+      "scope_blocked_document_count": 0,
       "total_chars": 5048278,
       "categories": {
         "ICMS_LEIS": 1,
@@ -820,6 +1308,13 @@
           "chars": 874624,
           "named_icms": true,
           "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [
+            "ICMS.pdf"
+          ],
           "flags": [
             "contém Taxas",
             "fonte local sem URL oficial no cabeçalho",
@@ -832,6 +1327,22 @@
           "chars": 486397,
           "named_icms": true,
           "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [
+            "ICMS"
+          ],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [
+            "REGULAMENTO ICMS/ANEXO 10.pdf",
+            "REGULAMENTO ICMS/ANEXO 11.pdf",
+            "REGULAMENTO ICMS/ANEXO 12.pdf",
+            "REGULAMENTO ICMS/ANEXO 15.pdf",
+            "REGULAMENTO ICMS/ANEXO 16.pdf",
+            "REGULAMENTO ICMS/ANEXO 17.pdf",
+            "REGULAMENTO ICMS/ANEXO 18.1.pdf",
+            "REGULAMENTO ICMS/ANEXO 18.pdf"
+          ],
           "flags": [
             "contém Taxas",
             "fonte local sem URL oficial no cabeçalho",
@@ -844,6 +1355,22 @@
           "chars": 482908,
           "named_icms": true,
           "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [
+            "ICMS"
+          ],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [
+            "REGULAMENTO ICMS/ANEXO 4.42.6.pdf",
+            "REGULAMENTO ICMS/ANEXO 4.42.7.pdf",
+            "REGULAMENTO ICMS/ANEXO 4.42.8.pdf",
+            "REGULAMENTO ICMS/ANEXO 4.42.9.pdf",
+            "REGULAMENTO ICMS/ANEXO 4.42.pdf",
+            "REGULAMENTO ICMS/ANEXO 4.43.pdf",
+            "REGULAMENTO ICMS/ANEXO 4.44.pdf",
+            "REGULAMENTO ICMS/ANEXO 4.45.pdf"
+          ],
           "flags": [
             "contém Taxas",
             "ruído de extração/encoding"
@@ -855,6 +1382,22 @@
           "chars": 386131,
           "named_icms": true,
           "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [
+            "ICMS"
+          ],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [
+            "REGULAMENTO ICMS/ANEXO 9.4.pdf",
+            "REGULAMENTO ICMS/ANEXO 9.5.pdf",
+            "REGULAMENTO ICMS/ANEXO 9.6.pdf",
+            "REGULAMENTO ICMS/ANEXO 9.7.pdf",
+            "REGULAMENTO ICMS/ANEXO 9.8.pdf",
+            "REGULAMENTO ICMS/ANEXO 9.9.pdf",
+            "REGULAMENTO ICMS/ANEXO1.2.pdf",
+            "REGULAMENTO ICMS/ANEXO1.3.pdf"
+          ],
           "flags": [
             "contém Taxas",
             "fonte local sem URL oficial no cabeçalho",
@@ -867,6 +1410,21 @@
           "chars": 470319,
           "named_icms": true,
           "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [
+            "ICMS"
+          ],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [
+            "REGULAMENTO ICMS/ANEXO1.4.pdf",
+            "REGULAMENTO ICMS/ANEXO1.5.1.pdf",
+            "REGULAMENTO ICMS/ANEXO1.5.pdf",
+            "REGULAMENTO ICMS/ANEXO1.6.pdf",
+            "REGULAMENTO ICMS/ANEXO1.7.pdf",
+            "REGULAMENTO ICMS/ANEXO1.8.pdf",
+            "REGULAMENTO ICMS/ANEXO1.pdf"
+          ],
           "flags": [
             "contém Taxas",
             "fonte local sem URL oficial no cabeçalho",
@@ -879,6 +1437,22 @@
           "chars": 470720,
           "named_icms": true,
           "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [
+            "ICMS"
+          ],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [
+            "REGULAMENTO ICMS/ANEXO3.1.pdf",
+            "REGULAMENTO ICMS/ANEXO3.2.pdf",
+            "REGULAMENTO ICMS/ANEXO3.3.pdf",
+            "REGULAMENTO ICMS/ANEXO4.0.pdf",
+            "REGULAMENTO ICMS/ANEXO4.1.pdf",
+            "REGULAMENTO ICMS/ANEXO4.11.pdf",
+            "REGULAMENTO ICMS/ANEXO4.12.pdf",
+            "REGULAMENTO ICMS/ANEXO4.13.pdf"
+          ],
           "flags": [
             "contém Taxas",
             "ruído de extração/encoding"
@@ -890,6 +1464,22 @@
           "chars": 279304,
           "named_icms": true,
           "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [
+            "ICMS"
+          ],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [
+            "REGULAMENTO ICMS/ANEXO4.24.pdf",
+            "REGULAMENTO ICMS/ANEXO4.25.pdf",
+            "REGULAMENTO ICMS/ANEXO4.26.pdf",
+            "REGULAMENTO ICMS/ANEXO4.27.pdf",
+            "REGULAMENTO ICMS/ANEXO4.28.pdf",
+            "REGULAMENTO ICMS/ANEXO4.29.pdf",
+            "REGULAMENTO ICMS/ANEXO4.3.pdf",
+            "REGULAMENTO ICMS/ANEXO4.30.pdf"
+          ],
           "flags": [
             "fonte local sem URL oficial no cabeçalho",
             "ruído de extração/encoding"
@@ -901,6 +1491,17 @@
           "chars": 258918,
           "named_icms": true,
           "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [
+            "ICMS"
+          ],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [
+            "REGULAMENTO ICMS/Anexo 3.0.PDF",
+            "REGULAMENTO ICMS/Anexo 4.46.pdf",
+            "REGULAMENTO ICMS/Anexo 4.47.pdf"
+          ],
           "flags": [
             "fonte local sem URL oficial no cabeçalho",
             "ruído de extração/encoding"
@@ -912,6 +1513,15 @@
           "chars": 1254809,
           "named_icms": true,
           "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [
+            "ICMS"
+          ],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [
+            "REGULAMENTO ICMS/REGULAMENTO ICMS.pdf"
+          ],
           "flags": [
             "contém Taxas",
             "ruído de extração/encoding"
@@ -923,6 +1533,22 @@
           "chars": 84148,
           "named_icms": true,
           "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [
+            "ICMS"
+          ],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [
+            "REGULAMENTO ICMS/Anexos 5.0/ANEXO III - Convênio 126-12 - TABELA DE PREÇO SUGERIDO AO PÚBLICO PELO FABRICANTE.pdf",
+            "REGULAMENTO ICMS/Anexos 5.0/AUTORIZAÇÃO PARA AQUISIÇÃO DE VEÍCULO COM ISENÇÃO DE ICMS.pdf",
+            "REGULAMENTO ICMS/Anexos 5.0/Anexos  5.0.pdf",
+            "REGULAMENTO ICMS/Anexos 5.0/Anexos I a IV-Gás Liquefeito derivado de Gás Natural -GLGN Protocolo ICMS 197.pdf",
+            "REGULAMENTO ICMS/Anexos 5.0/Conhecimento de Transporte Multimodal de cargas - mod 26.pdf",
+            "REGULAMENTO ICMS/Anexos 5.0/Declaração Sistema Médico Privado integrante do SUS - Anexo V  CV 38-12.pdf",
+            "REGULAMENTO ICMS/Anexos 5.0/GTV - Guia de Transporte de Valores.pdf",
+            "REGULAMENTO ICMS/Anexos 5.0/Guia para Liberação de Mercadoria Estrangeira sem comprovação do Recolhimento do ICMS.pdf"
+          ],
           "flags": [
             "fonte local sem URL oficial no cabeçalho",
             "ruído de extração/encoding"
@@ -936,6 +1562,8 @@
       "curadoria": "revisao_fonte",
       "publish_deep": false,
       "document_count": 31,
+      "publishable_document_count": 31,
+      "scope_blocked_document_count": 0,
       "total_chars": 14454235,
       "categories": {
         "RICMS": 31
@@ -953,6 +1581,11 @@
           "chars": 485024,
           "named_icms": true,
           "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [],
           "flags": [
             "contém Taxas",
             "ruído de extração/encoding"
@@ -964,6 +1597,11 @@
           "chars": 480511,
           "named_icms": true,
           "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [],
           "flags": [
             "ruído de extração/encoding"
           ]
@@ -974,6 +1612,11 @@
           "chars": 481681,
           "named_icms": true,
           "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [],
           "flags": [
             "contém Taxas",
             "ruído de extração/encoding"
@@ -985,6 +1628,11 @@
           "chars": 481158,
           "named_icms": true,
           "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [],
           "flags": [
             "contém Taxas",
             "ruído de extração/encoding"
@@ -996,6 +1644,11 @@
           "chars": 482997,
           "named_icms": true,
           "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [],
           "flags": [
             "contém Taxas",
             "ruído de extração/encoding"
@@ -1007,6 +1660,11 @@
           "chars": 481868,
           "named_icms": true,
           "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [],
           "flags": [
             "contém Taxas",
             "ruído de extração/encoding"
@@ -1018,6 +1676,11 @@
           "chars": 483381,
           "named_icms": true,
           "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [],
           "flags": [
             "ruído de extração/encoding"
           ]
@@ -1028,6 +1691,11 @@
           "chars": 481633,
           "named_icms": true,
           "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [],
           "flags": [
             "ruído de extração/encoding"
           ]
@@ -1038,6 +1706,11 @@
           "chars": 482687,
           "named_icms": true,
           "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [],
           "flags": [
             "ruído de extração/encoding"
           ]
@@ -1048,6 +1721,11 @@
           "chars": 482076,
           "named_icms": true,
           "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [],
           "flags": [
             "ruído de extração/encoding"
           ]
@@ -1058,6 +1736,11 @@
           "chars": 480357,
           "named_icms": true,
           "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [],
           "flags": [
             "contém Taxas",
             "ruído de extração/encoding"
@@ -1069,6 +1752,11 @@
           "chars": 482696,
           "named_icms": true,
           "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [],
           "flags": [
             "contém Taxas",
             "ruído de extração/encoding"
@@ -1080,6 +1768,11 @@
           "chars": 483813,
           "named_icms": true,
           "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [],
           "flags": [
             "ruído de extração/encoding"
           ]
@@ -1090,6 +1783,11 @@
           "chars": 482271,
           "named_icms": true,
           "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [],
           "flags": [
             "contém Taxas",
             "ruído de extração/encoding"
@@ -1101,6 +1799,11 @@
           "chars": 480434,
           "named_icms": true,
           "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [],
           "flags": [
             "contém Taxas",
             "ruído de extração/encoding"
@@ -1112,6 +1815,11 @@
           "chars": 481344,
           "named_icms": true,
           "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [],
           "flags": [
             "contém Taxas",
             "ruído de extração/encoding"
@@ -1123,6 +1831,11 @@
           "chars": 479227,
           "named_icms": true,
           "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [],
           "flags": [
             "contém Taxas",
             "ruído de extração/encoding"
@@ -1134,6 +1847,11 @@
           "chars": 477383,
           "named_icms": true,
           "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [],
           "flags": [
             "ruído de extração/encoding"
           ]
@@ -1144,6 +1862,11 @@
           "chars": 486587,
           "named_icms": true,
           "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [],
           "flags": [
             "contém Taxas",
             "ruído de extração/encoding"
@@ -1155,6 +1878,11 @@
           "chars": 478299,
           "named_icms": true,
           "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [],
           "flags": [
             "ruído de extração/encoding"
           ]
@@ -1165,6 +1893,11 @@
           "chars": 479539,
           "named_icms": true,
           "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [],
           "flags": [
             "ruído de extração/encoding"
           ]
@@ -1175,6 +1908,11 @@
           "chars": 481330,
           "named_icms": true,
           "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [],
           "flags": [
             "contém Taxas",
             "ruído de extração/encoding"
@@ -1186,6 +1924,11 @@
           "chars": 482288,
           "named_icms": true,
           "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [],
           "flags": [
             "contém Taxas",
             "ruído de extração/encoding"
@@ -1197,6 +1940,11 @@
           "chars": 479647,
           "named_icms": true,
           "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [],
           "flags": [
             "contém Taxas",
             "ruído de extração/encoding"
@@ -1208,6 +1956,11 @@
           "chars": 82153,
           "named_icms": true,
           "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [],
           "flags": [
             "ruído de extração/encoding"
           ]
@@ -1218,6 +1971,11 @@
           "chars": 482934,
           "named_icms": true,
           "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [],
           "flags": [
             "contém Taxas",
             "ruído de extração/encoding"
@@ -1229,6 +1987,11 @@
           "chars": 481339,
           "named_icms": true,
           "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [],
           "flags": [
             "contém Taxas",
             "ruído de extração/encoding"
@@ -1240,6 +2003,11 @@
           "chars": 415710,
           "named_icms": true,
           "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [],
           "flags": [
             "ruído de extração/encoding"
           ]
@@ -1250,6 +2018,11 @@
           "chars": 459527,
           "named_icms": true,
           "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [],
           "flags": []
         },
         {
@@ -1258,6 +2031,11 @@
           "chars": 493456,
           "named_icms": true,
           "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [],
           "flags": [
             "contém Taxas",
             "ruído de extração/encoding"
@@ -1269,6 +2047,11 @@
           "chars": 480885,
           "named_icms": true,
           "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [],
           "flags": [
             "contém Taxas",
             "ruído de extração/encoding"
@@ -1282,6 +2065,8 @@
       "curadoria": "revisao_fonte",
       "publish_deep": false,
       "document_count": 5,
+      "publishable_document_count": 5,
+      "scope_blocked_document_count": 0,
       "total_chars": 2230461,
       "categories": {
         "RICMS": 5
@@ -1301,6 +2086,11 @@
           "chars": 482292,
           "named_icms": true,
           "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [],
           "flags": [
             "contém ITCMD/ITCD",
             "contém Taxas",
@@ -1313,6 +2103,11 @@
           "chars": 484683,
           "named_icms": true,
           "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [],
           "flags": [
             "contém Taxas",
             "ruído de extração/encoding"
@@ -1324,6 +2119,11 @@
           "chars": 482571,
           "named_icms": true,
           "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [],
           "flags": [
             "contém Taxas",
             "ruído de extração/encoding"
@@ -1335,6 +2135,11 @@
           "chars": 482282,
           "named_icms": true,
           "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [],
           "flags": [
             "contém IPVA",
             "contém ITCMD/ITCD",
@@ -1348,6 +2153,11 @@
           "chars": 298633,
           "named_icms": true,
           "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [],
           "flags": [
             "contém Taxas",
             "ruído de extração/encoding"
@@ -1361,6 +2171,8 @@
       "curadoria": "capturado_sem_aprovacao",
       "publish_deep": false,
       "document_count": 3,
+      "publishable_document_count": 3,
+      "scope_blocked_document_count": 0,
       "total_chars": 3867071,
       "categories": {
         "ICMS_ANEXOS": 2,
@@ -1380,6 +2192,18 @@
           "chars": 437844,
           "named_icms": true,
           "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [
+            "ANEXO XI.pdf",
+            "ANEXO XII.pdf",
+            "ANEXO XIII.pdf",
+            "ANEXO XIV.pdf",
+            "ANEXO XIX.pdf",
+            "ANEXO XV.pdf"
+          ],
           "flags": [
             "ruído de extração/encoding"
           ]
@@ -1390,6 +2214,17 @@
           "chars": 373385,
           "named_icms": true,
           "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [
+            "ANEXO XVI.pdf",
+            "ANEXO XVII.pdf",
+            "ANEXO XX.pdf",
+            "APÊNDICE DO ANEXO X​​.pdf",
+            "Anexo XVIII.pdf"
+          ],
           "flags": [
             "ruído de extração/encoding"
           ]
@@ -1400,6 +2235,15 @@
           "chars": 3055842,
           "named_icms": true,
           "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [
+            "ICMS"
+          ],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [
+            "REGULAMENTO DO ICMS-2014 .PDF"
+          ],
           "flags": [
             "contém IPVA",
             "contém Taxas",
@@ -1414,6 +2258,8 @@
       "curadoria": "revisao_fonte",
       "publish_deep": false,
       "document_count": 2,
+      "publishable_document_count": 0,
+      "scope_blocked_document_count": 2,
       "total_chars": 658217,
       "categories": {
         "OUTROS": 2
@@ -1423,11 +2269,13 @@
         "contém IPVA",
         "contém ITCMD/ITCD",
         "contém Taxas",
+        "escopo material incompatível com ICMS",
         "fallback amplo",
+        "fallback amplo contaminado: categoria OUTROS contém ICMS, mas o escopo dominante é Taxas",
         "fonte local sem URL oficial no cabeçalho",
         "ruído de extração/encoding"
       ],
-      "recommendation": "bloquear_publicacao_ate_curadoria",
+      "recommendation": "bloquear_publicacao_ate_reclassificar_escopo",
       "next_step": "Baixar RICMS/PA e benefícios no portal oficial do Pará.",
       "documents": [
         {
@@ -1436,12 +2284,28 @@
           "chars": 402641,
           "named_icms": false,
           "fallback_icms": true,
+          "dominant_scope": "Taxas",
+          "source_scopes": [],
+          "scope_blocked": true,
+          "scope_flags": [
+            "fallback amplo contaminado: categoria OUTROS contém ICMS, mas o escopo dominante é Taxas"
+          ],
+          "source_documents": [
+            "lc2006_p0058.pdf",
+            "lp1982_05055.pdf",
+            "lp1988_05519.pdf",
+            "lp1989_05529.pdf",
+            "lp1989_05530.pdf",
+            "lp1996_06017.pdf"
+          ],
           "flags": [
             "categoria não específica de ICMS",
             "contém IPVA",
             "contém ITCMD/ITCD",
             "contém Taxas",
+            "escopo material incompatível com ICMS",
             "fallback amplo",
+            "fallback amplo contaminado: categoria OUTROS contém ICMS, mas o escopo dominante é Taxas",
             "fonte local sem URL oficial no cabeçalho",
             "ruído de extração/encoding"
           ]
@@ -1452,12 +2316,26 @@
           "chars": 255576,
           "named_icms": false,
           "fallback_icms": true,
+          "dominant_scope": "Taxas",
+          "source_scopes": [],
+          "scope_blocked": true,
+          "scope_flags": [
+            "fallback amplo contaminado: categoria OUTROS contém ICMS, mas o escopo dominante é Taxas"
+          ],
+          "source_documents": [
+            "lp1998_06182.pdf",
+            "lp2011_07591.pdf",
+            "lp2016_08455.pdf",
+            "lp2023_10311.pdf"
+          ],
           "flags": [
             "categoria não específica de ICMS",
             "contém IPVA",
             "contém ITCMD/ITCD",
             "contém Taxas",
+            "escopo material incompatível com ICMS",
             "fallback amplo",
+            "fallback amplo contaminado: categoria OUTROS contém ICMS, mas o escopo dominante é Taxas",
             "fonte local sem URL oficial no cabeçalho",
             "ruído de extração/encoding"
           ]
@@ -1470,6 +2348,8 @@
       "curadoria": "revisao_fonte",
       "publish_deep": false,
       "document_count": 1,
+      "publishable_document_count": 1,
+      "scope_blocked_document_count": 0,
       "total_chars": 177194,
       "categories": {
         "ICMS_LEIS": 1
@@ -1489,6 +2369,22 @@
           "chars": 177194,
           "named_icms": true,
           "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [
+            "ICMS"
+          ],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [
+            "ICMS/EI Nº 12.843, DE 26 DE OUTUBRO DE 2023.pdf",
+            "ICMS/EI Nº 12.958 DE 11 DE DEZEMBRO DE 2023.PDF",
+            "ICMS/LEI Nº 12.756 DE 05 DE SETEMBRO DE 2023.pdf",
+            "ICMS/LEI Nº 12.757 DE 05 DE SETEMBRO DE 2023.pdf",
+            "ICMS/LEI Nº 12.788 DE 28 DE SETEMBRO DE 2023.pdf",
+            "ICMS/LEI Nº 12.840, DE 26 DE OUTUBRO DE 2023.pdf",
+            "ICMS/LEI Nº 12.841, DE 26 DE OUTUBRO DE 2023.pdf",
+            "ICMS/LEI Nº 12.842 DE 26 DE OUTUBRO DE 2023.PDF"
+          ],
           "flags": [
             "contém IPVA",
             "contém ITCMD/ITCD",
@@ -1504,6 +2400,8 @@
       "curadoria": "revisao_fonte",
       "publish_deep": false,
       "document_count": 8,
+      "publishable_document_count": 8,
+      "scope_blocked_document_count": 0,
       "total_chars": 2554153,
       "categories": {
         "ICMS_ALIQUOTAS": 1,
@@ -1526,6 +2424,13 @@
           "chars": 6577,
           "named_icms": true,
           "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [
+            "ALIQUOTAS_ICMS_atualizada.pdf"
+          ],
           "flags": [
             "fonte local sem URL oficial no cabeçalho",
             "ruído de extração/encoding",
@@ -1538,6 +2443,13 @@
           "chars": 244482,
           "named_icms": true,
           "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [
+            "LEI Nº 15.730, DE 17 DE MARÇO DE 2016 - ICMS.pdf"
+          ],
           "flags": [
             "contém Taxas",
             "ruído de extração/encoding"
@@ -1549,6 +2461,14 @@
           "chars": 29665,
           "named_icms": true,
           "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [
+            "Pauta_Fiscal_Eletronica.pdf",
+            "Produtos_Antecipacao_Tributaria.pdf"
+          ],
           "flags": [
             "fonte local sem URL oficial no cabeçalho",
             "ruído de extração/encoding"
@@ -1560,6 +2480,15 @@
           "chars": 498786,
           "named_icms": true,
           "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [
+            "ICMS"
+          ],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [
+            "RICMS.pdf (parte 1)"
+          ],
           "flags": [
             "ruído de extração/encoding"
           ]
@@ -1570,6 +2499,15 @@
           "chars": 498785,
           "named_icms": true,
           "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [
+            "ICMS"
+          ],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [
+            "RICMS.pdf (parte 2)"
+          ],
           "flags": [
             "ruído de extração/encoding"
           ]
@@ -1580,6 +2518,15 @@
           "chars": 498757,
           "named_icms": true,
           "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [
+            "ICMS"
+          ],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [
+            "RICMS.pdf (parte 3)"
+          ],
           "flags": [
             "contém Taxas",
             "ruído de extração/encoding"
@@ -1591,6 +2538,15 @@
           "chars": 495116,
           "named_icms": true,
           "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [
+            "ICMS"
+          ],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [
+            "RICMS.pdf (parte 4)"
+          ],
           "flags": [
             "contém Taxas",
             "ruído de extração/encoding"
@@ -1602,6 +2558,15 @@
           "chars": 281985,
           "named_icms": true,
           "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [
+            "ICMS"
+          ],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [
+            "RICMS.pdf (parte 5)"
+          ],
           "flags": [
             "contém Taxas",
             "ruído de extração/encoding"
@@ -1615,6 +2580,8 @@
       "curadoria": "revisao_fonte",
       "publish_deep": false,
       "document_count": 9,
+      "publishable_document_count": 9,
+      "scope_blocked_document_count": 0,
       "total_chars": 2812719,
       "categories": {
         "ICMS_ANEXOS": 7,
@@ -1636,6 +2603,17 @@
           "chars": 69793,
           "named_icms": true,
           "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [
+            "ICMS"
+          ],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [
+            "ICMS/ANEXO I.pdf",
+            "ICMS/ANEXO II.pdf",
+            "ICMS/ANEXO III.pdf"
+          ],
           "flags": [
             "fonte local sem URL oficial no cabeçalho",
             "ruído de extração/encoding"
@@ -1647,6 +2625,16 @@
           "chars": 491020,
           "named_icms": true,
           "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [
+            "ICMS"
+          ],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [
+            "ICMS/ANEXO IV.pdf",
+            "ICMS/ANEXO IX.pdf"
+          ],
           "flags": [
             "contém Taxas",
             "fonte local sem URL oficial no cabeçalho",
@@ -1659,6 +2647,15 @@
           "chars": 34416,
           "named_icms": true,
           "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [
+            "ICMS"
+          ],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [
+            "ICMS/ANEXO V.pdf"
+          ],
           "flags": [
             "fonte local sem URL oficial no cabeçalho",
             "ruído de extração/encoding"
@@ -1670,6 +2667,15 @@
           "chars": 580492,
           "named_icms": true,
           "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [
+            "ICMS"
+          ],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [
+            "ICMS/ANEXO VI.pdf"
+          ],
           "flags": [
             "contém Taxas",
             "fonte local sem URL oficial no cabeçalho",
@@ -1682,6 +2688,15 @@
           "chars": 159625,
           "named_icms": true,
           "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [
+            "ICMS"
+          ],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [
+            "ICMS/ANEXO VII.pdf"
+          ],
           "flags": [
             "contém Taxas",
             "fonte local sem URL oficial no cabeçalho",
@@ -1694,6 +2709,15 @@
           "chars": 455641,
           "named_icms": true,
           "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [
+            "ICMS"
+          ],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [
+            "ICMS/ANEXO VIII.pdf"
+          ],
           "flags": [
             "contém IPVA",
             "ruído de extração/encoding"
@@ -1705,6 +2729,15 @@
           "chars": 470883,
           "named_icms": true,
           "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [
+            "ICMS"
+          ],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [
+            "ICMS/ANEXO X.pdf"
+          ],
           "flags": [
             "contém Taxas",
             "ruído de extração/encoding"
@@ -1716,6 +2749,15 @@
           "chars": 268197,
           "named_icms": true,
           "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [
+            "ICMS"
+          ],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [
+            "ICMS/LEI 4.257-89 ICMS.pdf"
+          ],
           "flags": [
             "contém Taxas",
             "fonte local sem URL oficial no cabeçalho",
@@ -1728,6 +2770,15 @@
           "chars": 282652,
           "named_icms": true,
           "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [
+            "ICMS"
+          ],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [
+            "ICMS/RICMS.pdf"
+          ],
           "flags": [
             "contém Taxas",
             "fonte local sem URL oficial no cabeçalho",
@@ -1742,6 +2793,8 @@
       "curadoria": "revisao_fonte",
       "publish_deep": false,
       "document_count": 11,
+      "publishable_document_count": 11,
+      "scope_blocked_document_count": 0,
       "total_chars": 5053219,
       "categories": {
         "RICMS": 11
@@ -1760,6 +2813,15 @@
           "chars": 462012,
           "named_icms": true,
           "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [
+            "ICMS"
+          ],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [
+            "RICMS-2017.pdf"
+          ],
           "flags": [
             "contém Taxas",
             "fonte local sem URL oficial no cabeçalho",
@@ -1772,6 +2834,11 @@
           "chars": 459753,
           "named_icms": true,
           "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [],
           "flags": [
             "ruído de extração/encoding"
           ]
@@ -1782,6 +2849,11 @@
           "chars": 448569,
           "named_icms": true,
           "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [],
           "flags": [
             "ruído de extração/encoding"
           ]
@@ -1792,6 +2864,11 @@
           "chars": 461880,
           "named_icms": true,
           "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [],
           "flags": [
             "contém Taxas",
             "ruído de extração/encoding"
@@ -1803,6 +2880,11 @@
           "chars": 459558,
           "named_icms": true,
           "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [],
           "flags": [
             "ruído de extração/encoding"
           ]
@@ -1813,6 +2895,11 @@
           "chars": 461289,
           "named_icms": true,
           "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [],
           "flags": [
             "ruído de extração/encoding"
           ]
@@ -1823,6 +2910,11 @@
           "chars": 461987,
           "named_icms": true,
           "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [],
           "flags": [
             "ruído de extração/encoding"
           ]
@@ -1833,6 +2925,11 @@
           "chars": 458168,
           "named_icms": true,
           "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [],
           "flags": [
             "contém Taxas",
             "ruído de extração/encoding"
@@ -1844,6 +2941,11 @@
           "chars": 457846,
           "named_icms": true,
           "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [],
           "flags": [
             "ruído de extração/encoding"
           ]
@@ -1854,6 +2956,11 @@
           "chars": 460818,
           "named_icms": true,
           "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [],
           "flags": [
             "ruído de extração/encoding"
           ]
@@ -1864,6 +2971,11 @@
           "chars": 461339,
           "named_icms": true,
           "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [],
           "flags": [
             "contém Taxas",
             "ruído de extração/encoding"
@@ -1877,6 +2989,8 @@
       "curadoria": "revisao_fonte",
       "publish_deep": false,
       "document_count": 1,
+      "publishable_document_count": 1,
+      "scope_blocked_document_count": 0,
       "total_chars": 65086,
       "categories": {
         "RICMS": 1
@@ -1893,6 +3007,15 @@
           "chars": 65086,
           "named_icms": true,
           "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [
+            "ICMS"
+          ],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [
+            "RICMS.pdf"
+          ],
           "flags": [
             "ruído de extração/encoding"
           ]
@@ -1905,6 +3028,8 @@
       "curadoria": "revisao_fonte",
       "publish_deep": false,
       "document_count": 8,
+      "publishable_document_count": 8,
+      "scope_blocked_document_count": 0,
       "total_chars": 3100167,
       "categories": {
         "ICMS_LEIS": 1,
@@ -1926,6 +3051,16 @@
           "chars": 51753,
           "named_icms": true,
           "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [
+            "ICMS"
+          ],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [
+            "ICMS/Lei 12111-2025.pdf",
+            "ICMS/Lei 12145-2025.pdf"
+          ],
           "flags": [
             "contém IPVA",
             "contém ITCMD/ITCD",
@@ -1940,6 +3075,11 @@
           "chars": 476686,
           "named_icms": true,
           "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [],
           "flags": [
             "contém IPVA",
             "contém ITCMD/ITCD",
@@ -1953,6 +3093,11 @@
           "chars": 480174,
           "named_icms": true,
           "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [],
           "flags": [
             "contém Taxas",
             "ruído de extração/encoding"
@@ -1964,6 +3109,11 @@
           "chars": 475594,
           "named_icms": true,
           "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [],
           "flags": [
             "contém Taxas",
             "ruído de extração/encoding"
@@ -1975,6 +3125,11 @@
           "chars": 476563,
           "named_icms": true,
           "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [],
           "flags": [
             "contém Taxas",
             "ruído de extração/encoding"
@@ -1986,6 +3141,11 @@
           "chars": 476483,
           "named_icms": true,
           "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [],
           "flags": [
             "ruído de extração/encoding"
           ]
@@ -1996,6 +3156,11 @@
           "chars": 477674,
           "named_icms": true,
           "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [],
           "flags": [
             "contém Taxas",
             "ruído de extração/encoding"
@@ -2007,6 +3172,11 @@
           "chars": 185240,
           "named_icms": true,
           "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [],
           "flags": [
             "ruído de extração/encoding"
           ]
@@ -2019,6 +3189,8 @@
       "curadoria": "revisao_fonte",
       "publish_deep": false,
       "document_count": 4,
+      "publishable_document_count": 3,
+      "scope_blocked_document_count": 1,
       "total_chars": 1532161,
       "categories": {
         "ICMS_BENEFICIOS": 1,
@@ -2028,10 +3200,12 @@
       "flags": [
         "contém IPVA",
         "contém Taxas",
+        "escopo dominante incompatível: conteúdo parece tratar de IPVA, não de ICMS",
+        "escopo material incompatível com ICMS",
         "fonte local sem URL oficial no cabeçalho",
         "ruído de extração/encoding"
       ],
-      "recommendation": "bloquear_publicacao_ate_curadoria",
+      "recommendation": "bloquear_publicacao_ate_reclassificar_escopo",
       "next_step": "Baixar RICMS/RO e benefícios no portal oficial de Rondônia.",
       "documents": [
         {
@@ -2040,6 +3214,15 @@
           "chars": 435614,
           "named_icms": true,
           "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [
+            "ICMS"
+          ],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [
+            "ICMS/ANEXO I - ISENCAO Consolid. ate Dec. 30539-25.pdf"
+          ],
           "flags": [
             "contém IPVA",
             "contém Taxas",
@@ -2053,8 +3236,21 @@
           "chars": 33833,
           "named_icms": true,
           "fallback_icms": false,
+          "dominant_scope": "IPVA",
+          "source_scopes": [
+            "ICMS"
+          ],
+          "scope_blocked": true,
+          "scope_flags": [
+            "escopo dominante incompatível: conteúdo parece tratar de IPVA, não de ICMS"
+          ],
+          "source_documents": [
+            "ICMS/L00-950 IPVA - Consolid. ate L23_5706.pdf"
+          ],
           "flags": [
             "contém IPVA",
+            "escopo dominante incompatível: conteúdo parece tratar de IPVA, não de ICMS",
+            "escopo material incompatível com ICMS",
             "fonte local sem URL oficial no cabeçalho",
             "ruído de extração/encoding"
           ]
@@ -2065,6 +3261,15 @@
           "chars": 624338,
           "named_icms": true,
           "fallback_icms": false,
+          "dominant_scope": "Taxas",
+          "source_scopes": [
+            "ICMS"
+          ],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [
+            "ICMS/L96-688 - consolidada - L25-6287.pdf"
+          ],
           "flags": [
             "contém Taxas",
             "fonte local sem URL oficial no cabeçalho",
@@ -2077,6 +3282,16 @@
           "chars": 438376,
           "named_icms": true,
           "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [
+            "ICMS",
+            "IPVA"
+          ],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [
+            "IPVA/Legislação - RICMS_RO 22721_2018.pdf"
+          ],
           "flags": [
             "contém IPVA",
             "contém Taxas",
@@ -2091,6 +3306,8 @@
       "curadoria": "revisao_fonte",
       "publish_deep": false,
       "document_count": 5,
+      "publishable_document_count": 5,
+      "scope_blocked_document_count": 0,
       "total_chars": 980042,
       "categories": {
         "ICMS_ANEXOS": 1,
@@ -2114,6 +3331,13 @@
           "chars": 4895,
           "named_icms": true,
           "fallback_icms": false,
+          "dominant_scope": "IPVA",
+          "source_scopes": [],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [
+            "DECRETOS/DECRETO 37.132_24 - Altera o anexo do Decreto do IPVA 1.083_95 - revoga os Decretos 29.347_20 e 34.941_2023.pdf"
+          ],
           "flags": [
             "contém IPVA",
             "fonte local sem URL oficial no cabeçalho",
@@ -2127,6 +3351,16 @@
           "chars": 71974,
           "named_icms": true,
           "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [
+            "INSTRUÇÕES NORMATIVAS/001-25 Estabele diretrizes e procedimentos para credenciamento do credito presumido de energia eletrica 1.pdf",
+            "INSTRUÇÕES NORMATIVAS/003-25 Disciplina os procedimento para a concess o de incentivo fiscal dos projetos culturais e esportivos - Alterada pela IN 011_2025.pdf",
+            "INSTRUÇÕES NORMATIVAS/009_25 Altera a Instru o Normativa n 001_2025 - Estabele diretrizes e procedimentos para credenciamento do credito presumido de energia eletrica.pdf",
+            "INSTRUÇÕES NORMATIVAS/011_25 Altera a Instru o Normativa n 003_2025 - Disciplina os procedimentos para a concess o de incentivo fiscal dos projetos culturais e esportivos.pdf"
+          ],
           "flags": [
             "contém Taxas",
             "ruído de extração/encoding"
@@ -2138,6 +3372,18 @@
           "chars": 19259,
           "named_icms": true,
           "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [
+            "DECRETOS/DECRETO 37.202_24 INCORPORA OS CONV NIOS ICMS 109 113 123 124 126 e 127_2024.pdf",
+            "DECRETOS/DECRETO 38.702-25 Altera o Decreto 24.852-18 reduz a base de c lculo do ICMS de querosene de avia o - QAV.pdf",
+            "LEIS/Lei 2.012_24 Dispoe redu o de base de calculo do ICMS de Importacao Convenio ICMS 81_23.pdf",
+            "LEIS/Lei 2.091_24 Incorpora os Conv nos ICMS 22_23 27_23 e 28_23.pdf",
+            "LEIS/Lei 2.092_24 Concede Cr dito Presumido combustiveis Energia Conv nio ICMS 199_22.pdf",
+            "LEIS/Lei 2.093_24 Incorpora o Conv nio ICMS n 143_24 e Altera a Lei n 2.012_24.pdf"
+          ],
           "flags": [
             "ruído de extração/encoding",
             "texto curto para RICMS/benefícios"
@@ -2149,6 +3395,13 @@
           "chars": 440375,
           "named_icms": true,
           "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [
+            "REGULAMENTO DE ICMS - ANEXO - ATUALIZADO ATE JUNHO 2021.pdf"
+          ],
           "flags": [
             "contém Taxas",
             "ruído de extração/encoding"
@@ -2160,6 +3413,11 @@
           "chars": 443539,
           "named_icms": true,
           "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [],
           "flags": [
             "contém Taxas",
             "ruído de extração/encoding"
@@ -2173,6 +3431,8 @@
       "curadoria": "revisao_fonte",
       "publish_deep": false,
       "document_count": 9,
+      "publishable_document_count": 9,
+      "scope_blocked_document_count": 0,
       "total_chars": 4208482,
       "categories": {
         "RICMS": 9
@@ -2191,6 +3451,13 @@
           "chars": 468546,
           "named_icms": true,
           "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [
+            "DECRETON37699DE26DEAGOSTODE1997RegulamentodoICMSdoc.pdf"
+          ],
           "flags": [
             "contém Taxas",
             "ruído de extração/encoding"
@@ -2202,6 +3469,11 @@
           "chars": 468713,
           "named_icms": true,
           "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [],
           "flags": [
             "contém Taxas",
             "ruído de extração/encoding"
@@ -2213,6 +3485,11 @@
           "chars": 468650,
           "named_icms": true,
           "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [],
           "flags": [
             "contém IPVA",
             "contém Taxas",
@@ -2225,6 +3502,11 @@
           "chars": 468627,
           "named_icms": true,
           "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [],
           "flags": [
             "ruído de extração/encoding"
           ]
@@ -2235,6 +3517,11 @@
           "chars": 468804,
           "named_icms": true,
           "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [],
           "flags": [
             "contém Taxas",
             "ruído de extração/encoding"
@@ -2246,6 +3533,11 @@
           "chars": 468626,
           "named_icms": true,
           "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [],
           "flags": [
             "contém Taxas",
             "ruído de extração/encoding"
@@ -2257,6 +3549,11 @@
           "chars": 468794,
           "named_icms": true,
           "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [],
           "flags": [
             "ruído de extração/encoding"
           ]
@@ -2267,6 +3564,11 @@
           "chars": 468258,
           "named_icms": true,
           "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [],
           "flags": [
             "contém Taxas",
             "ruído de extração/encoding"
@@ -2278,6 +3580,11 @@
           "chars": 459464,
           "named_icms": true,
           "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [],
           "flags": [
             "contém Taxas",
             "ruído de extração/encoding"
@@ -2291,6 +3598,8 @@
       "curadoria": "revisao_fonte",
       "publish_deep": false,
       "document_count": 2,
+      "publishable_document_count": 2,
+      "scope_blocked_document_count": 0,
       "total_chars": 259272,
       "categories": {
         "ICMS_LEIS": 1,
@@ -2309,6 +3618,18 @@
           "chars": 255963,
           "named_icms": true,
           "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [
+            "ICMS"
+          ],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [
+            "ICMS/DECRETO Nº 1.555, DE 28 DE MARÇO DE 2018.pdf",
+            "ICMS/DECRETO Nº 1.750, DE 27 DE SETEMBRO DE 2018.pdf",
+            "ICMS/ICMS- Legislação.pdf",
+            "ICMS/INDICE REMISSIVO.pdf"
+          ],
           "flags": [
             "ruído de extração/encoding"
           ]
@@ -2319,6 +3640,15 @@
           "chars": 3309,
           "named_icms": true,
           "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [
+            "ICMS"
+          ],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [
+            "ICMS/RICMS-SC-01.pdf"
+          ],
           "flags": [
             "ruído de extração/encoding",
             "texto curto para RICMS/benefícios"
@@ -2332,6 +3662,8 @@
       "curadoria": "revisao_fonte",
       "publish_deep": false,
       "document_count": 4,
+      "publishable_document_count": 4,
+      "scope_blocked_document_count": 0,
       "total_chars": 6860651,
       "categories": {
         "ICMS_LEIS": 1,
@@ -2353,6 +3685,15 @@
           "chars": 76647,
           "named_icms": true,
           "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [
+            "Decreto Estadual nº 40.540_2020 (Regulamenta o ICMS-Social).pdf",
+            "Decreto Numerado nº 182_2022 (Constitui a Comissão Especial do ICMS-Social).pdf",
+            "Lei Ordinária 8.628_2019 (Cria o ICMS-Social).pdf"
+          ],
           "flags": [
             "contém Taxas",
             "ruído de extração/encoding"
@@ -2364,6 +3705,15 @@
           "chars": 16015,
           "named_icms": true,
           "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [
+            "ICMS"
+          ],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [
+            "CAPÍTULO III do RICMS - VAF.pdf"
+          ],
           "flags": [
             "contém Taxas",
             "fonte local sem URL oficial no cabeçalho",
@@ -2377,6 +3727,15 @@
           "chars": 2238982,
           "named_icms": true,
           "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [
+            "ICMS"
+          ],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [
+            "RICMS/Anexos do Regulamento do ICMS vigente-2002.pdf"
+          ],
           "flags": [
             "contém IPVA",
             "contém Taxas",
@@ -2389,6 +3748,15 @@
           "chars": 4529007,
           "named_icms": true,
           "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [
+            "ICMS"
+          ],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [
+            "RICMS/Regulamento do ICMS vigente-2002.pdf"
+          ],
           "flags": [
             "contém Taxas",
             "ruído de extração/encoding"
@@ -2402,6 +3770,8 @@
       "curadoria": "revisao_fonte",
       "publish_deep": false,
       "document_count": 21,
+      "publishable_document_count": 21,
+      "scope_blocked_document_count": 0,
       "total_chars": 8702614,
       "categories": {
         "ICMS_LEIS": 1,
@@ -2424,6 +3794,15 @@
           "chars": 343561,
           "named_icms": true,
           "fallback_icms": false,
+          "dominant_scope": "Taxas",
+          "source_scopes": [
+            "ICMS"
+          ],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [
+            "ICMS/LEI N° 6.374, DE 01 DE MARÇO DE 1989 - Assembleia Legislativa do Estado de São Paulo.pdf"
+          ],
           "flags": [
             "contém Taxas",
             "ruído de extração/encoding"
@@ -2435,6 +3814,15 @@
           "chars": 67399,
           "named_icms": true,
           "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [
+            "ICMS"
+          ],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [
+            "ICMS/SUBSTITUIÇÃO TRIBUTÁRIA.pdf"
+          ],
           "flags": [
             "fonte local sem URL oficial no cabeçalho",
             "ruído de extração/encoding"
@@ -2446,6 +3834,15 @@
           "chars": 437394,
           "named_icms": true,
           "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [
+            "ICMS"
+          ],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [
+            "RICMS_2000 - Integral.pdf"
+          ],
           "flags": [
             "contém Taxas",
             "fonte local sem URL oficial no cabeçalho",
@@ -2458,6 +3855,11 @@
           "chars": 427836,
           "named_icms": true,
           "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [],
           "flags": [
             "contém Taxas",
             "ruído de extração/encoding"
@@ -2469,6 +3871,11 @@
           "chars": 437486,
           "named_icms": true,
           "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [],
           "flags": [
             "contém Taxas",
             "ruído de extração/encoding"
@@ -2480,6 +3887,11 @@
           "chars": 437500,
           "named_icms": true,
           "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [],
           "flags": [
             "ruído de extração/encoding"
           ]
@@ -2490,6 +3902,11 @@
           "chars": 437462,
           "named_icms": true,
           "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [],
           "flags": [
             "contém Taxas",
             "ruído de extração/encoding"
@@ -2501,6 +3918,11 @@
           "chars": 437468,
           "named_icms": true,
           "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [],
           "flags": [
             "contém IPVA",
             "contém Taxas",
@@ -2513,6 +3935,11 @@
           "chars": 437469,
           "named_icms": true,
           "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [],
           "flags": [
             "contém IPVA",
             "contém Taxas",
@@ -2525,6 +3952,11 @@
           "chars": 436928,
           "named_icms": true,
           "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [],
           "flags": [
             "ruído de extração/encoding"
           ]
@@ -2535,6 +3967,11 @@
           "chars": 437513,
           "named_icms": true,
           "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [],
           "flags": [
             "contém Taxas",
             "ruído de extração/encoding"
@@ -2546,6 +3983,11 @@
           "chars": 437468,
           "named_icms": true,
           "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [],
           "flags": [
             "ruído de extração/encoding"
           ]
@@ -2556,6 +3998,11 @@
           "chars": 427836,
           "named_icms": true,
           "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [],
           "flags": [
             "contém Taxas",
             "ruído de extração/encoding"
@@ -2567,6 +4014,11 @@
           "chars": 437486,
           "named_icms": true,
           "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [],
           "flags": [
             "contém Taxas",
             "ruído de extração/encoding"
@@ -2578,6 +4030,11 @@
           "chars": 437500,
           "named_icms": true,
           "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [],
           "flags": [
             "ruído de extração/encoding"
           ]
@@ -2588,6 +4045,11 @@
           "chars": 437462,
           "named_icms": true,
           "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [],
           "flags": [
             "contém Taxas",
             "ruído de extração/encoding"
@@ -2599,6 +4061,11 @@
           "chars": 437468,
           "named_icms": true,
           "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [],
           "flags": [
             "contém IPVA",
             "contém Taxas",
@@ -2611,6 +4078,11 @@
           "chars": 437469,
           "named_icms": true,
           "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [],
           "flags": [
             "contém IPVA",
             "contém Taxas",
@@ -2623,6 +4095,11 @@
           "chars": 436928,
           "named_icms": true,
           "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [],
           "flags": [
             "ruído de extração/encoding"
           ]
@@ -2633,6 +4110,11 @@
           "chars": 437513,
           "named_icms": true,
           "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [],
           "flags": [
             "contém Taxas",
             "ruído de extração/encoding"
@@ -2644,6 +4126,11 @@
           "chars": 437468,
           "named_icms": true,
           "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [],
           "flags": [
             "ruído de extração/encoding"
           ]
@@ -2656,6 +4143,8 @@
       "curadoria": "revisao_fonte",
       "publish_deep": false,
       "document_count": 2,
+      "publishable_document_count": 2,
+      "scope_blocked_document_count": 0,
       "total_chars": 2986071,
       "categories": {
         "ICMS_ANEXOS": 1,
@@ -2675,6 +4164,13 @@
           "chars": 12720,
           "named_icms": true,
           "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [
+            "anexo unico Port nº 979.07.pdf"
+          ],
           "flags": [
             "ruído de extração/encoding",
             "texto curto para RICMS/benefícios"
@@ -2686,6 +4182,15 @@
           "chars": 2973351,
           "named_icms": true,
           "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [
+            "ICMS"
+          ],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [
+            "RICMS.pdf"
+          ],
           "flags": [
             "contém Taxas",
             "ruído de extração/encoding"

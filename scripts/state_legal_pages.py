@@ -96,6 +96,31 @@ CATEGORY_LABELS = {
     "OUTROS": "Atos complementares",
 }
 
+ICMS_NAMED_CATEGORIES = {
+    "RICMS",
+    "ICMS_LEIS",
+    "ICMS_DECRETOS",
+    "ICMS_BENEFICIOS",
+    "ICMS_ST",
+    "ICMS_ALIQUOTAS",
+    "ICMS_ANEXOS",
+}
+
+ICMS_FALLBACK_CATEGORIES = {"LEIS", "DECRETOS", "INSTRUCOES_NORMATIVAS", "PORTARIAS", "RESOLUCOES", "OUTROS"}
+
+NON_ICMS_SCOPE_TERMS = {
+    "Taxas": ["taxa", "taxas", "emolumento", "emolumentos", "prestacao de servicos", "poder executivo"],
+    "IPVA": ["ipva", "propriedade de veiculos automotores"],
+    "ITCMD/ITCD": ["itcmd", "itcd", "transmissao causa mortis", "doacao"],
+}
+
+SOURCE_SCOPE_TERMS = {
+    "ICMS": ["icms/", "/icms", "ricms", "regulamento_do_icms", "regulamento do icms"],
+    "Taxas": ["taxas/", "/taxas", "_taxas", "taxas_", "lei_taxas", "regulamento das taxas"],
+    "IPVA": ["ipva/", "/ipva", "_ipva", "ipva_"],
+    "ITCMD/ITCD": ["itcmd/", "/itcmd", "itcd/", "/itcd", "_itcmd", "_itcd"],
+}
+
 GROUP_DEFS = [
     {
         "id": "icms",
@@ -405,6 +430,60 @@ def source_documents(text: str) -> list[str]:
     return docs[:24]
 
 
+def source_scope_labels(sources: list[str]) -> list[str]:
+    labels: set[str] = set()
+    for source in sources:
+        low = normalize(source).replace("\\", "/")
+        for label, terms in SOURCE_SCOPE_TERMS.items():
+            if any(term in low for term in terms):
+                labels.add(label)
+    return sorted(labels)
+
+
+def content_scope_scores(text: str) -> dict[str, int]:
+    low = normalize(text)
+    scores = {
+        "ICMS": low.count("icms") + low.count("regulamento do icms") * 8 + low.count("conv icms") * 3,
+    }
+    for label, terms in NON_ICMS_SCOPE_TERMS.items():
+        scores[label] = sum(low.count(term) for term in terms)
+    return scores
+
+
+def material_scope_profile(category: str, text: str, sources: list[str]) -> dict:
+    scores = content_scope_scores(text)
+    source_scopes = source_scope_labels(sources)
+    dominant_scope = max(scores, key=lambda key: scores[key]) if scores else "indefinido"
+    non_icms_sources = [scope for scope in source_scopes if scope != "ICMS"]
+    non_icms_scores = {key: value for key, value in scores.items() if key != "ICMS"}
+    strongest_non_icms = max(non_icms_scores, key=lambda key: non_icms_scores[key]) if non_icms_scores else ""
+    strongest_non_icms_score = non_icms_scores.get(strongest_non_icms, 0)
+    flags: list[str] = []
+
+    if category in ICMS_NAMED_CATEGORIES:
+        if non_icms_sources and "ICMS" not in source_scopes:
+            flags.append(
+                "escopo incompatível: arquivo classificado como ICMS, mas os documentos fonte indicam "
+                + ", ".join(non_icms_sources)
+            )
+        if strongest_non_icms_score >= 10 and scores.get("ICMS", 0) < max(5, strongest_non_icms_score // 3):
+            flags.append(
+                f"escopo dominante incompatível: conteúdo parece tratar de {strongest_non_icms}, não de ICMS"
+            )
+    elif category in ICMS_FALLBACK_CATEGORIES and strongest_non_icms_score > max(20, scores.get("ICMS", 0) * 2):
+        flags.append(
+            f"fallback amplo contaminado: categoria {category} contém ICMS, mas o escopo dominante é {strongest_non_icms}"
+        )
+
+    return {
+        "dominant_scope": dominant_scope,
+        "scores": scores,
+        "source_scopes": source_scopes,
+        "scope_flags": sorted(set(flags)),
+        "scope_blocked": bool(flags),
+    }
+
+
 def state_folders(uf: str) -> list[tuple[str, Path]]:
     return [
         ("principal", STATE_MAIN / uf),
@@ -424,10 +503,12 @@ def collect_state_documents(uf: str) -> tuple[dict, ...]:
             text = clean_text(read_text(path))
             category = category_from_file(uf, path)
             normalized = normalize(text)
-            is_named_icms = category == "RICMS" or category.startswith("ICMS_")
-            is_fallback_icms = "icms" in normalized and category in {"LEIS", "DECRETOS", "INSTRUCOES_NORMATIVAS", "PORTARIAS", "RESOLUCOES", "OUTROS"}
+            is_named_icms = category in ICMS_NAMED_CATEGORIES
+            is_fallback_icms = "icms" in normalized and category in ICMS_FALLBACK_CATEGORIES
             if not (is_named_icms or is_fallback_icms):
                 continue
+            sources = source_documents(text)
+            scope_profile = material_scope_profile(category, text, sources)
             doc_id = slug(f"{origin}-{path.stem}")
             candidates.append({
                 "id": doc_id,
@@ -441,7 +522,8 @@ def collect_state_documents(uf: str) -> tuple[dict, ...]:
                 "text": text,
                 "chars": len(text),
                 "sha256": sha256_file(path),
-                "source_documents": source_documents(text),
+                "source_documents": sources,
+                **scope_profile,
                 "named_icms": is_named_icms,
                 "fallback_icms": is_fallback_icms,
             })
@@ -451,6 +533,10 @@ def collect_state_documents(uf: str) -> tuple[dict, ...]:
         if doc["named_icms"] or (doc["fallback_icms"] and not has_named_icms)
     ]
     return tuple(docs)
+
+
+def publishable_state_documents(uf: str) -> tuple[dict, ...]:
+    return tuple(doc for doc in collect_state_documents(uf) if not doc.get("scope_blocked"))
 
 
 def title_from_file(uf: str, path: Path, category: str) -> str:
@@ -502,7 +588,7 @@ def state_page_path(uf: str) -> str:
 def state_has_legal_pack(uf: str) -> bool:
     if uf == "GO":
         return True
-    return state_is_deep_published(uf) and bool(collect_state_documents(uf))
+    return state_is_deep_published(uf) and bool(publishable_state_documents(uf))
 
 
 def render_doc_links(current_path: str, uf: str, docs: list[dict]) -> str:
@@ -926,7 +1012,7 @@ def build_state_legal_pages(layout_func, data: dict) -> dict[str, str]:
             continue
         if not state_is_deep_published(uf):
             continue
-        docs = collect_state_documents(uf)
+        docs = publishable_state_documents(uf)
         if not docs:
             continue
         pages[index_path(uf)] = render_index_page(uf, docs, layout_func)
@@ -956,7 +1042,7 @@ def state_legislation_teaser(uf: str, current_path: str) -> str:
   </div>
 </section>
 """
-        docs = collect_state_documents(uf)
+        docs = publishable_state_documents(uf)
         if not docs:
             return ""
         links = [
@@ -979,7 +1065,7 @@ def state_legislation_teaser(uf: str, current_path: str) -> str:
 def state_signal_links(uf: str, signal_key: str, current_path: str) -> str:
     if uf == "GO":
         return ""
-    if not state_is_deep_published(uf) or not collect_state_documents(uf):
+    if not state_is_deep_published(uf) or not publishable_state_documents(uf):
         return ""
     group_id = SIGNAL_TO_GROUP.get(signal_key, "icms")
     target = group_path(uf, group_id)
@@ -1003,7 +1089,7 @@ def state_legal_search_entries(data: dict) -> list[dict[str, str]]:
             continue
         if not state_is_deep_published(uf):
             continue
-        docs = collect_state_documents(uf)
+        docs = publishable_state_documents(uf)
         if not docs:
             continue
         name = STATE_NAMES.get(uf, uf)
@@ -1039,7 +1125,7 @@ def state_source_records() -> list[dict]:
             continue
         if not state_is_deep_published(uf):
             continue
-        for doc in collect_state_documents(uf):
+        for doc in publishable_state_documents(uf):
             records.append({
                 "source_id": f"state-{uf.lower()}-{doc['id']}",
                 "jurisdiction": uf,
