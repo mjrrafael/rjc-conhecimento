@@ -134,7 +134,7 @@ window.RJC_SEARCH = [
   {
     "title": "Minas Gerais: ICMS e benefícios fiscais",
     "url": "estados/mg.html",
-    "summary": "Página estadual estruturada para futura publicação por UF, com foco em ICMS, benefícios, documento e prova.",
+    "summary": "Página estadual com legislação de ICMS em tela, benefícios, documento e prova.",
     "tags": "MG Minas Gerais Minas Gerais ICMS beneficios fiscais RICMS DECRETOS IPVA ITCMD LEIS OUTROS RESOLUCOES RICMS"
   },
   {
@@ -1294,6 +1294,114 @@ window.RJC_SEARCH = [
     "url": "estados/ms/legislacao/documentos-efd-prova.html",
     "summary": "Entrada direta para o capítulo temático correspondente, com texto legal em tela e análise aplicada.",
     "tags": "MS Mato Grosso do Sul ICMS benefícios fiscais substituição tributária EFD SPED XML documento fiscal cadastro prova"
+  },
+  {
+    "title": "Minas Gerais: ICMS e benefícios fiscais em tela",
+    "url": "estados/mg/legislacao/index.html",
+    "summary": "Legislação estadual em tela: Lei nº 6.763/1975, RICMS/MG 2023, anexos de alíquotas, redução de base, crédito acumulado, crédito presumido, diferimento, ST, EFD e disposições especiais.",
+    "tags": "MG Minas Gerais ICMS RICMS benefícios fiscais alíquotas base cálculo redução base crédito presumido crédito acumulado diferimento substituição tributária ST Anexo I Anexo II Anexo III Anexo IV Anexo V Anexo VI Anexo VII Anexo VIII EFD SPED LC 160 Convênio 190"
+  },
+  {
+    "title": "Minas Gerais: ICMS/MG: regra matriz, fato gerador, não incidência e sujeição passiva",
+    "url": "estados/mg/legislacao/icms-regra-matriz.html",
+    "summary": "A base do ICMS mineiro: quando o imposto nasce, quando a lei afasta a incidência, quem é contribuinte e quem pode ser responsável pelo recolhimento.",
+    "tags": "MG Minas Gerais ICMS benefícios fiscais Regra matriz ICMS/MG: regra matriz, fato gerador, não incidência e sujeição passiva A base do ICMS mineiro: quando o imposto nasce, quando a lei afasta a incidência, quem é contribuinte e quem pode ser responsável pelo recolhimento."
+  },
+  {
+    "title": "Minas Gerais: Base de cálculo, alíquotas, carga efetiva, DIFAL, crédito e apuração",
+    "url": "estados/mg/legislacao/base-aliquota-apuracao.html",
+    "summary": "Como a operação vira base tributável em Minas Gerais, qual alíquota se aplica, como ler o Anexo I, crédito, estorno, DIFAL e apuração.",
+    "tags": "MG Minas Gerais ICMS benefícios fiscais Carga tributária Base de cálculo, alíquotas, carga efetiva, DIFAL, crédito e apuração Como a operação vira base tributável em Minas Gerais, qual alíquota se aplica, como ler o Anexo I, crédito, estorno, DIFAL e apuração."
+  },
+  {
+    "title": "Minas Gerais: Benefícios fiscais: matriz legal, LC 160, CONFAZ e anexos do RICMS/MG",
+    "url": "estados/mg/legislacao/beneficios-matriz-lc160.html",
+    "summary": "A porta de entrada para benefícios mineiros: redução de base, crédito presumido, crédito acumulado, diferimento, disposições especiais, regimes e prova documental.",
+    "tags": "MG Minas Gerais ICMS benefícios fiscais Benefícios fiscais Benefícios fiscais: matriz legal, LC 160, CONFAZ e anexos do RICMS/MG A porta de entrada para benefícios mineiros: redução de base, crédito presumido, crédito acumulado, diferimento, disposições especiais, regimes e prova documental."
+  },
+  {
+    "title": "Minas Gerais: Reduções de base, isenções e cargas efetivas por mercadoria e setor",
+    "url": "estados/mg/legislacao/isencoes-reducoes-creditos.html",
+    "summary": "Leitura do Anexo II e das disposições correlatas: cesta básica, medicamentos, máquinas, energia, transporte, agro, indústria, importação e operações especiais.",
+    "tags": "MG Minas Gerais ICMS benefícios fiscais Benefícios por grupo Reduções de base, isenções e cargas efetivas por mercadoria e setor Leitura do Anexo II e das disposições correlatas: cesta básica, medicamentos, máquinas, energia, transporte, agro, indústria, importação e operações especiais."
+  },
+  {
+    "title": "Minas Gerais: Crédito presumido, crédito acumulado, transferência e utilização",
+    "url": "estados/mg/legislacao/creditos-presumidos-acumulados.html",
+    "summary": "Como Minas trata créditos especiais: Anexo III para crédito acumulado e Anexo IV para crédito presumido, com controles de autorização, substituição de créditos e prova.",
+    "tags": "MG Minas Gerais ICMS benefícios fiscais Créditos fiscais Crédito presumido, crédito acumulado, transferência e utilização Como Minas trata créditos especiais: Anexo III para crédito acumulado e Anexo IV para crédito presumido, com controles de autorização, substituição de créditos e prova."
+  },
+  {
+    "title": "Minas Gerais: Exportação, não incidência, manutenção de crédito e crédito acumulado",
+    "url": "estados/mg/legislacao/creditos-exportacao-acumulado.html",
+    "summary": "Como exportação e operações equiparadas conversam com não incidência, manutenção de créditos, transferência e utilização de crédito acumulado em Minas Gerais.",
+    "tags": "MG Minas Gerais ICMS benefícios fiscais Exportação e crédito Exportação, não incidência, manutenção de crédito e crédito acumulado Como exportação e operações equiparadas conversam com não incidência, manutenção de créditos, transferência e utilização de crédito acumulado em Minas Gerais."
+  },
+  {
+    "title": "Minas Gerais: Diferimento, regimes especiais e disposições especiais de tributação",
+    "url": "estados/mg/legislacao/diferimento-regimes-especiais.html",
+    "summary": "Anexo VI e Anexo VIII: diferimento por operação, encerramento, regimes especiais, tratamento setorial, condições, vedações e prova.",
+    "tags": "MG Minas Gerais ICMS benefícios fiscais Regimes especiais Diferimento, regimes especiais e disposições especiais de tributação Anexo VI e Anexo VIII: diferimento por operação, encerramento, regimes especiais, tratamento setorial, condições, vedações e prova."
+  },
+  {
+    "title": "Minas Gerais: Substituição tributária, antecipação, MVA, segmentos, complemento e ressarcimento",
+    "url": "estados/mg/legislacao/st-antecipacao-segmentos.html",
+    "summary": "Anexo VII do RICMS/MG: responsabilidade por substituição, mercadorias sujeitas, base presumida, MVA, recolhimento, complemento, restituição e prova.",
+    "tags": "MG Minas Gerais ICMS benefícios fiscais Responsabilidade tributária Substituição tributária, antecipação, MVA, segmentos, complemento e ressarcimento Anexo VII do RICMS/MG: responsabilidade por substituição, mercadorias sujeitas, base presumida, MVA, recolhimento, complemento, restituição e prova."
+  },
+  {
+    "title": "Minas Gerais: Documentos fiscais, EFD, escrituração, registros e prova digital",
+    "url": "estados/mg/legislacao/documentos-efd-prova.html",
+    "summary": "Anexo V: como a regra aparece no XML, nos documentos fiscais, na EFD, nos ajustes, nos livros e no dossiê de benefício, crédito, ST ou regime.",
+    "tags": "MG Minas Gerais ICMS benefícios fiscais Prova digital Documentos fiscais, EFD, escrituração, registros e prova digital Anexo V: como a regra aparece no XML, nos documentos fiscais, na EFD, nos ajustes, nos livros e no dossiê de benefício, crédito, ST ou regime."
+  },
+  {
+    "title": "Minas Gerais: Mapa revisado dos benefícios de ICMS de Minas Gerais",
+    "url": "estados/mg/legislacao/mapa-revisado-beneficios.html",
+    "summary": "Inventário didático dos grupos de benefícios mineiros: redução de base, crédito presumido, crédito acumulado, diferimento, disposições especiais, regimes, ST e prova.",
+    "tags": "MG Minas Gerais ICMS benefícios fiscais Inventário de benefícios Mapa revisado dos benefícios de ICMS de Minas Gerais Inventário didático dos grupos de benefícios mineiros: redução de base, crédito presumido, crédito acumulado, diferimento, disposições especiais, regimes, ST e prova."
+  },
+  {
+    "title": "Minas Gerais: Fiscalização, multas, glosa, regime especial de controle e defesa",
+    "url": "estados/mg/legislacao/fiscalizacao-riscos.html",
+    "summary": "Pontos de controle do crédito tributário mineiro: documento, EFD, glosa de crédito, descumprimento de condição, perda de regime, autuação e correção de causa.",
+    "tags": "MG Minas Gerais ICMS benefícios fiscais Fiscalização e regularização Fiscalização, multas, glosa, regime especial de controle e defesa Pontos de controle do crédito tributário mineiro: documento, EFD, glosa de crédito, descumprimento de condição, perda de regime, autuação e correção de causa."
+  },
+  {
+    "title": "Minas Gerais: isenções, reduções e créditos",
+    "url": "estados/mg/legislacao/isencoes-reducoes-creditos.html",
+    "summary": "Entrada direta para o capítulo temático correspondente, com texto legal em tela e análise aplicada.",
+    "tags": "MG Minas Gerais ICMS benefícios fiscais isenção redução base crédito presumido máquinas medicamentos veículos saúde agro"
+  },
+  {
+    "title": "Minas Gerais: mapa revisado dos benefícios",
+    "url": "estados/mg/legislacao/mapa-revisado-beneficios.html",
+    "summary": "Entrada direta para o capítulo temático correspondente, com texto legal em tela e análise aplicada.",
+    "tags": "MG Minas Gerais ICMS benefícios fiscais inventário benefícios regimes especiais LC 160 CONFAZ crédito presumido redução base diferimento"
+  },
+  {
+    "title": "Minas Gerais: crédito presumido e acumulado",
+    "url": "estados/mg/legislacao/creditos-presumidos-acumulados.html",
+    "summary": "Entrada direta para o capítulo temático correspondente, com texto legal em tela e análise aplicada.",
+    "tags": "MG Minas Gerais ICMS benefícios fiscais crédito presumido crédito acumulado transferência utilização Anexo III Anexo IV"
+  },
+  {
+    "title": "Minas Gerais: exportação e crédito acumulado",
+    "url": "estados/mg/legislacao/creditos-exportacao-acumulado.html",
+    "summary": "Entrada direta para o capítulo temático correspondente, com texto legal em tela e análise aplicada.",
+    "tags": "MG Minas Gerais ICMS benefícios fiscais exportação não incidência manutenção crédito acumulado transferência utilização"
+  },
+  {
+    "title": "Minas Gerais: diferimento e regimes especiais",
+    "url": "estados/mg/legislacao/diferimento-regimes-especiais.html",
+    "summary": "Entrada direta para o capítulo temático correspondente, com texto legal em tela e análise aplicada.",
+    "tags": "MG Minas Gerais ICMS benefícios fiscais diferimento regime especial disposições especiais Anexo VI Anexo VIII"
+  },
+  {
+    "title": "Minas Gerais: ST, EFD e prova",
+    "url": "estados/mg/legislacao/documentos-efd-prova.html",
+    "summary": "Entrada direta para o capítulo temático correspondente, com texto legal em tela e análise aplicada.",
+    "tags": "MG Minas Gerais ICMS benefícios fiscais substituição tributária EFD SPED XML documento fiscal cadastro prova"
   },
   {
     "title": "Rio Grande do Norte: ICMS e benefícios fiscais em tela",

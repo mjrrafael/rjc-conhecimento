@@ -1,0 +1,100 @@
+{
+  "uf": "MG",
+  "estado": "Minas Gerais",
+  "regiao": "Sudeste",
+  "status_curadoria": "publicado_v1",
+  "data_captura": "2026-04-26",
+  "fonte_principal": "Secretaria de Estado de Fazenda de Minas Gerais - legislação tributária do ICMS",
+  "fontes": [
+    {
+      "id": "MG_LEI_6763_1975_ICMS",
+      "titulo": "Lei n. 6.763/1975 - Consolidação da legislação tributária de Minas Gerais",
+      "tema": "Lei material do ICMS",
+      "tipo": "lei",
+      "url": "https://www.fazenda.mg.gov.br/empresas/legislacao_tributaria/leis/lei_6763_1975.pdf",
+      "arquivo": "MG_LEI_6763_1975_ICMS_2026-04-26.txt",
+      "sha256": "55f329f180e8c64db380a5373de6b9d78b8f913efcece549ae35ba72e4069ee8"
+    },
+    {
+      "id": "MG_DEC_48589_2023_RICMS_REGULAMENTO",
+      "titulo": "Decreto n. 48.589/2023 - Regulamento do ICMS/MG 2023",
+      "tema": "Regulamento do ICMS",
+      "tipo": "decreto",
+      "url": "https://www.fazenda.mg.gov.br/empresas/legislacao_tributaria/ricms2023/regulamento2023.pdf",
+      "arquivo": "MG_DEC_48589_2023_RICMS_REGULAMENTO_2026-04-26.txt",
+      "sha256": "73e90f434d0940a5a0ee3bcb566338a14911875201f607f5375cc82f8b01723c"
+    },
+    {
+      "id": "MG_RICMS_2023_ANEXO_I_ALIQUOTAS",
+      "titulo": "RICMS/MG 2023 - Anexo I - Alíquotas",
+      "tema": "Alíquotas de ICMS",
+      "tipo": "anexo",
+      "url": "https://www.fazenda.mg.gov.br/empresas/legislacao_tributaria/ricms2023/anexoi2023.pdf",
+      "arquivo": "MG_RICMS_2023_ANEXO_I_ALIQUOTAS_2026-04-26.txt",
+      "sha256": "62554a0831282de488a0b7e4d7fe2ed694d3328d00e20a35d75cbce6b7904f68"
+    },
+    {
+      "id": "MG_RICMS_2023_ANEXO_II_REDUCAO_BASE",
+      "titulo": "RICMS/MG 2023 - Anexo II - redução de base de cálculo",
+      "tema": "Benefícios fiscais de ICMS",
+      "tipo": "anexo",
+      "url": "https://www.fazenda.mg.gov.br/empresas/legislacao_tributaria/ricms2023/anexoii2023.pdf",
+      "arquivo": "MG_RICMS_2023_ANEXO_II_REDUCAO_BASE_2026-04-26.txt",
+      "sha256": "9f060225bbdd1426e504c98a973073f056ae0b67f9cc7230293ea43efcb21f72"
+    },
+    {
+      "id": "MG_RICMS_2023_ANEXO_III_CREDITO_ACUMULADO",
+      "titulo": "RICMS/MG 2023 - Anexo III - Transferência e utilização de crédito acumulado",
+      "tema": "Benefícios fiscais de ICMS",
+      "tipo": "anexo",
+      "url": "https://www.fazenda.mg.gov.br/empresas/legislacao_tributaria/ricms2023/anexoiii2023.pdf",
+      "arquivo": "MG_RICMS_2023_ANEXO_III_CREDITO_ACUMULADO_2026-04-26.txt",
+      "sha256": "812c29ddf687221b79fc03ae76df01bef4aa5dc7997211615c79bbec18af43c6"
+    },
+    {
+      "id": "MG_RICMS_2023_ANEXO_IV_CREDITO_PRESUMIDO",
+      "titulo": "RICMS/MG 2023 - Anexo IV - Crédito presumido",
+      "tema": "Benefícios fiscais de ICMS",
+      "tipo": "anexo",
+      "url": "https://www.fazenda.mg.gov.br/empresas/legislacao_tributaria/ricms2023/anexoiv2023.pdf",
+      "arquivo": "MG_RICMS_2023_ANEXO_IV_CREDITO_PRESUMIDO_2026-04-26.txt",
+      "sha256": "d9530cf39222f526822b54dca24d50e0c1d4837783bb3a7e6ce4bef6f681a4a7"
+    },
+    {
+      "id": "MG_RICMS_2023_ANEXO_V_DOCUMENTOS_EFD",
+      "titulo": "RICMS/MG 2023 - Anexo V - Documentos fiscais e escrituração",
+      "tema": "Obrigações acessórias e documentos",
+      "tipo": "anexo",
+      "url": "https://www.fazenda.mg.gov.br/empresas/legislacao_tributaria/ricms2023/anexov2023.pdf",
+      "arquivo": "MG_RICMS_2023_ANEXO_V_DOCUMENTOS_EFD_2026-04-26.txt",
+      "sha256": "12c8243813f29e8a6a9031cd86d0a2e99da041ea7a41e056fec782646d5eb1aa"
+    },
+    {
+      "id": "MG_RICMS_2023_ANEXO_VI_DIFERIMENTO",
+      "titulo": "RICMS/MG 2023 - Anexo VI - Diferimento",
+      "tema": "Benefícios fiscais de ICMS",
+      "tipo": "anexo",
+      "url": "https://www.fazenda.mg.gov.br/empresas/legislacao_tributaria/ricms2023/anexovi2023.pdf",
+      "arquivo": "MG_RICMS_2023_ANEXO_VI_DIFERIMENTO_2026-04-26.txt",
+      "sha256": "61305a97845d5e34233f7e655e40099f01642ab829a7b1ba16b4c8c9068031b8"
+    },
+    {
+      "id": "MG_RICMS_2023_ANEXO_VII_ST",
+      "titulo": "RICMS/MG 2023 - Anexo VII - Substituição tributária",
+      "tema": "Substituição tributária",
+      "tipo": "anexo",
+      "url": "https://www.fazenda.mg.gov.br/empresas/legislacao_tributaria/ricms2023/anexovii2023.pdf",
+      "arquivo": "MG_RICMS_2023_ANEXO_VII_ST_2026-04-26.txt",
+      "sha256": "15b10abaf4e6e8e39373140cd8fe111929398769ef840d2b0450a5011359975b"
+    },
+    {
+      "id": "MG_RICMS_2023_ANEXO_VIII_DISPOSICOES_ESPECIAIS",
+      "titulo": "RICMS/MG 2023 - Anexo VIII - Disposições especiais de tributação",
+      "tema": "Benefícios fiscais de ICMS",
+      "tipo": "anexo",
+      "url": "https://www.fazenda.mg.gov.br/empresas/legislacao_tributaria/ricms2023/anexoviii2023.pdf",
+      "arquivo": "MG_RICMS_2023_ANEXO_VIII_DISPOSICOES_ESPECIAIS_2026-04-26.txt",
+      "sha256": "8673fe017a9d12990a6cbc1d51cded9222bd166ddebac5fd96a8054dcfe29b16"
+    }
+  ]
+}

@@ -1390,8 +1390,11 @@ def configured_state_overview_cards(uf: str) -> str:
     priority = [
         "mapa-revisado-beneficios",
         "isencoes-reducoes-creditos",
+        "creditos-presumidos-acumulados",
+        "creditos-exportacao-acumulado",
         "agro-fundersul-diferimento",
         "invest-compete-fundap",
+        "diferimento-regimes-especiais",
         "ms-empreendedor-regimes",
         "st-antecipacao-segmentos",
         "documentos-efd-prova",

@@ -76,9 +76,9 @@
     },
     "MG": {
       "region": "Sudeste",
-      "status": "revisao_fonte",
-      "publish_deep": false,
-      "next_step": "Baixar RICMS/MG vigente, anexos e benefícios diretamente da SEF/MG."
+      "status": "publicado_v1",
+      "publish_deep": true,
+      "next_step": "Minas Gerais publicada como página profunda: Lei nº 6.763/1975, Decreto nº 48.589/2023, RICMS/MG 2023, Anexos I a VIII, alíquotas, redução de base, crédito presumido, crédito acumulado, diferimento, ST, EFD e prova fiscal."
     },
     "PA": {
       "region": "Norte",

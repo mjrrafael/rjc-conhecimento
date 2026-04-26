@@ -2,10 +2,10 @@
   "generated_on": "2026-04-26",
   "summary": {
     "states": 27,
-    "docs": 240,
-    "publishable_docs": 237,
+    "docs": 219,
+    "publishable_docs": 216,
     "scope_blocked_docs": 3,
-    "blocked": 20
+    "blocked": 19
   },
   "states": {
     "AC": {
@@ -1655,461 +1655,193 @@
     "MG": {
       "estado": "Minas Gerais",
       "region": "Sudeste",
-      "curadoria": "revisao_fonte",
-      "publish_deep": false,
-      "document_count": 31,
-      "publishable_document_count": 31,
+      "curadoria": "publicado_v1",
+      "publish_deep": true,
+      "document_count": 10,
+      "publishable_document_count": 10,
       "scope_blocked_document_count": 0,
-      "total_chars": 14454235,
+      "total_chars": 3782222,
       "categories": {
-        "RICMS": 31
+        "ICMS_ALIQUOTAS": 1,
+        "ICMS_BENEFICIOS": 5,
+        "ICMS_LEIS": 1,
+        "ICMS_ST": 1,
+        "INSTRUCOES_NORMATIVAS": 1,
+        "RICMS": 1
       },
-      "flags": [
-        "contém Taxas"
-      ],
-      "recommendation": "bloquear_publicacao_ate_curadoria",
-      "next_step": "Baixar RICMS/MG vigente, anexos e benefícios diretamente da SEF/MG.",
+      "flags": [],
+      "recommendation": "manter_publicado",
+      "next_step": "Minas Gerais publicada como página profunda: Lei nº 6.763/1975, Decreto nº 48.589/2023, RICMS/MG 2023, Anexos I a VIII, alíquotas, redução de base, crédito presumido, crédito acumulado, diferimento, ST, EFD e prova fiscal.",
       "documents": [
         {
-          "file": "MG_RICMS_pt1.txt",
-          "category": "RICMS",
-          "chars": 485024,
+          "file": "MG_LEI_6763_1975_ICMS_2026-04-26.txt",
+          "category": "ICMS_LEIS",
+          "chars": 1282288,
           "named_icms": true,
           "fallback_icms": false,
           "dominant_scope": "ICMS",
-          "source_scopes": [],
+          "source_scopes": [
+            "ICMS"
+          ],
           "scope_blocked": false,
           "scope_flags": [],
-          "source_documents": [],
-          "flags": [
-            "contém Taxas"
-          ]
-        },
-        {
-          "file": "MG_RICMS_pt10.txt",
-          "category": "RICMS",
-          "chars": 480511,
-          "named_icms": true,
-          "fallback_icms": false,
-          "dominant_scope": "ICMS",
-          "source_scopes": [],
-          "scope_blocked": false,
-          "scope_flags": [],
-          "source_documents": [],
+          "source_documents": [
+            "https://www.fazenda.mg.gov.br/empresas/legislacao_tributaria/leis/lei_6763_1975.pdf"
+          ],
           "flags": []
         },
         {
-          "file": "MG_RICMS_pt11.txt",
+          "file": "MG_DEC_48589_2023_RICMS_REGULAMENTO_2026-04-26.txt",
           "category": "RICMS",
-          "chars": 481681,
+          "chars": 389714,
           "named_icms": true,
           "fallback_icms": false,
           "dominant_scope": "ICMS",
-          "source_scopes": [],
+          "source_scopes": [
+            "ICMS"
+          ],
           "scope_blocked": false,
           "scope_flags": [],
-          "source_documents": [],
-          "flags": [
-            "contém Taxas"
-          ]
-        },
-        {
-          "file": "MG_RICMS_pt12.txt",
-          "category": "RICMS",
-          "chars": 481158,
-          "named_icms": true,
-          "fallback_icms": false,
-          "dominant_scope": "ICMS",
-          "source_scopes": [],
-          "scope_blocked": false,
-          "scope_flags": [],
-          "source_documents": [],
-          "flags": [
-            "contém Taxas"
-          ]
-        },
-        {
-          "file": "MG_RICMS_pt13.txt",
-          "category": "RICMS",
-          "chars": 482997,
-          "named_icms": true,
-          "fallback_icms": false,
-          "dominant_scope": "ICMS",
-          "source_scopes": [],
-          "scope_blocked": false,
-          "scope_flags": [],
-          "source_documents": [],
-          "flags": [
-            "contém Taxas"
-          ]
-        },
-        {
-          "file": "MG_RICMS_pt14.txt",
-          "category": "RICMS",
-          "chars": 481868,
-          "named_icms": true,
-          "fallback_icms": false,
-          "dominant_scope": "ICMS",
-          "source_scopes": [],
-          "scope_blocked": false,
-          "scope_flags": [],
-          "source_documents": [],
-          "flags": [
-            "contém Taxas"
-          ]
-        },
-        {
-          "file": "MG_RICMS_pt15.txt",
-          "category": "RICMS",
-          "chars": 483381,
-          "named_icms": true,
-          "fallback_icms": false,
-          "dominant_scope": "ICMS",
-          "source_scopes": [],
-          "scope_blocked": false,
-          "scope_flags": [],
-          "source_documents": [],
+          "source_documents": [
+            "https://www.fazenda.mg.gov.br/empresas/legislacao_tributaria/ricms2023/regulamento2023.pdf"
+          ],
           "flags": []
         },
         {
-          "file": "MG_RICMS_pt16.txt",
-          "category": "RICMS",
-          "chars": 481633,
+          "file": "MG_RICMS_2023_ANEXO_I_ALIQUOTAS_2026-04-26.txt",
+          "category": "ICMS_ALIQUOTAS",
+          "chars": 19811,
           "named_icms": true,
           "fallback_icms": false,
           "dominant_scope": "ICMS",
-          "source_scopes": [],
+          "source_scopes": [
+            "ICMS"
+          ],
           "scope_blocked": false,
           "scope_flags": [],
-          "source_documents": [],
+          "source_documents": [
+            "https://www.fazenda.mg.gov.br/empresas/legislacao_tributaria/ricms2023/anexoi2023.pdf"
+          ],
           "flags": []
         },
         {
-          "file": "MG_RICMS_pt17.txt",
-          "category": "RICMS",
-          "chars": 482687,
+          "file": "MG_RICMS_2023_ANEXO_II_REDUCAO_BASE_2026-04-26.txt",
+          "category": "ICMS_BENEFICIOS",
+          "chars": 216541,
           "named_icms": true,
           "fallback_icms": false,
           "dominant_scope": "ICMS",
-          "source_scopes": [],
+          "source_scopes": [
+            "ICMS"
+          ],
           "scope_blocked": false,
           "scope_flags": [],
-          "source_documents": [],
+          "source_documents": [
+            "https://www.fazenda.mg.gov.br/empresas/legislacao_tributaria/ricms2023/anexoii2023.pdf"
+          ],
           "flags": []
         },
         {
-          "file": "MG_RICMS_pt18.txt",
-          "category": "RICMS",
-          "chars": 482076,
+          "file": "MG_RICMS_2023_ANEXO_III_CREDITO_ACUMULADO_2026-04-26.txt",
+          "category": "ICMS_BENEFICIOS",
+          "chars": 145271,
           "named_icms": true,
           "fallback_icms": false,
           "dominant_scope": "ICMS",
-          "source_scopes": [],
+          "source_scopes": [
+            "ICMS"
+          ],
           "scope_blocked": false,
           "scope_flags": [],
-          "source_documents": [],
+          "source_documents": [
+            "https://www.fazenda.mg.gov.br/empresas/legislacao_tributaria/ricms2023/anexoiii2023.pdf"
+          ],
           "flags": []
         },
         {
-          "file": "MG_RICMS_pt19.txt",
-          "category": "RICMS",
-          "chars": 480357,
+          "file": "MG_RICMS_2023_ANEXO_IV_CREDITO_PRESUMIDO_2026-04-26.txt",
+          "category": "ICMS_BENEFICIOS",
+          "chars": 55073,
           "named_icms": true,
           "fallback_icms": false,
           "dominant_scope": "ICMS",
-          "source_scopes": [],
+          "source_scopes": [
+            "ICMS"
+          ],
           "scope_blocked": false,
           "scope_flags": [],
-          "source_documents": [],
-          "flags": [
-            "contém Taxas"
-          ]
-        },
-        {
-          "file": "MG_RICMS_pt2.txt",
-          "category": "RICMS",
-          "chars": 482696,
-          "named_icms": true,
-          "fallback_icms": false,
-          "dominant_scope": "ICMS",
-          "source_scopes": [],
-          "scope_blocked": false,
-          "scope_flags": [],
-          "source_documents": [],
-          "flags": [
-            "contém Taxas"
-          ]
-        },
-        {
-          "file": "MG_RICMS_pt20.txt",
-          "category": "RICMS",
-          "chars": 483813,
-          "named_icms": true,
-          "fallback_icms": false,
-          "dominant_scope": "ICMS",
-          "source_scopes": [],
-          "scope_blocked": false,
-          "scope_flags": [],
-          "source_documents": [],
+          "source_documents": [
+            "https://www.fazenda.mg.gov.br/empresas/legislacao_tributaria/ricms2023/anexoiv2023.pdf"
+          ],
           "flags": []
         },
         {
-          "file": "MG_RICMS_pt21.txt",
-          "category": "RICMS",
-          "chars": 482271,
+          "file": "MG_RICMS_2023_ANEXO_V_DOCUMENTOS_EFD_2026-04-26.txt",
+          "category": "INSTRUCOES_NORMATIVAS",
+          "chars": 255881,
           "named_icms": true,
           "fallback_icms": false,
           "dominant_scope": "ICMS",
-          "source_scopes": [],
+          "source_scopes": [
+            "ICMS"
+          ],
           "scope_blocked": false,
           "scope_flags": [],
-          "source_documents": [],
-          "flags": [
-            "contém Taxas"
-          ]
-        },
-        {
-          "file": "MG_RICMS_pt22.txt",
-          "category": "RICMS",
-          "chars": 480434,
-          "named_icms": true,
-          "fallback_icms": false,
-          "dominant_scope": "ICMS",
-          "source_scopes": [],
-          "scope_blocked": false,
-          "scope_flags": [],
-          "source_documents": [],
-          "flags": [
-            "contém Taxas"
-          ]
-        },
-        {
-          "file": "MG_RICMS_pt23.txt",
-          "category": "RICMS",
-          "chars": 481344,
-          "named_icms": true,
-          "fallback_icms": false,
-          "dominant_scope": "ICMS",
-          "source_scopes": [],
-          "scope_blocked": false,
-          "scope_flags": [],
-          "source_documents": [],
-          "flags": [
-            "contém Taxas"
-          ]
-        },
-        {
-          "file": "MG_RICMS_pt24.txt",
-          "category": "RICMS",
-          "chars": 479227,
-          "named_icms": true,
-          "fallback_icms": false,
-          "dominant_scope": "ICMS",
-          "source_scopes": [],
-          "scope_blocked": false,
-          "scope_flags": [],
-          "source_documents": [],
-          "flags": [
-            "contém Taxas"
-          ]
-        },
-        {
-          "file": "MG_RICMS_pt25.txt",
-          "category": "RICMS",
-          "chars": 477383,
-          "named_icms": true,
-          "fallback_icms": false,
-          "dominant_scope": "ICMS",
-          "source_scopes": [],
-          "scope_blocked": false,
-          "scope_flags": [],
-          "source_documents": [],
+          "source_documents": [
+            "https://www.fazenda.mg.gov.br/empresas/legislacao_tributaria/ricms2023/anexov2023.pdf"
+          ],
           "flags": []
         },
         {
-          "file": "MG_RICMS_pt26.txt",
-          "category": "RICMS",
-          "chars": 486587,
+          "file": "MG_RICMS_2023_ANEXO_VI_DIFERIMENTO_2026-04-26.txt",
+          "category": "ICMS_BENEFICIOS",
+          "chars": 67500,
           "named_icms": true,
           "fallback_icms": false,
           "dominant_scope": "ICMS",
-          "source_scopes": [],
+          "source_scopes": [
+            "ICMS"
+          ],
           "scope_blocked": false,
           "scope_flags": [],
-          "source_documents": [],
-          "flags": [
-            "contém Taxas"
-          ]
-        },
-        {
-          "file": "MG_RICMS_pt27.txt",
-          "category": "RICMS",
-          "chars": 478299,
-          "named_icms": true,
-          "fallback_icms": false,
-          "dominant_scope": "ICMS",
-          "source_scopes": [],
-          "scope_blocked": false,
-          "scope_flags": [],
-          "source_documents": [],
+          "source_documents": [
+            "https://www.fazenda.mg.gov.br/empresas/legislacao_tributaria/ricms2023/anexovi2023.pdf"
+          ],
           "flags": []
         },
         {
-          "file": "MG_RICMS_pt28.txt",
-          "category": "RICMS",
-          "chars": 479539,
+          "file": "MG_RICMS_2023_ANEXO_VII_ST_2026-04-26.txt",
+          "category": "ICMS_ST",
+          "chars": 500695,
           "named_icms": true,
           "fallback_icms": false,
           "dominant_scope": "ICMS",
-          "source_scopes": [],
+          "source_scopes": [
+            "ICMS"
+          ],
           "scope_blocked": false,
           "scope_flags": [],
-          "source_documents": [],
+          "source_documents": [
+            "https://www.fazenda.mg.gov.br/empresas/legislacao_tributaria/ricms2023/anexovii2023.pdf"
+          ],
           "flags": []
         },
         {
-          "file": "MG_RICMS_pt29.txt",
-          "category": "RICMS",
-          "chars": 481330,
+          "file": "MG_RICMS_2023_ANEXO_VIII_DISPOSICOES_ESPECIAIS_2026-04-26.txt",
+          "category": "ICMS_BENEFICIOS",
+          "chars": 849448,
           "named_icms": true,
           "fallback_icms": false,
           "dominant_scope": "ICMS",
-          "source_scopes": [],
+          "source_scopes": [
+            "ICMS"
+          ],
           "scope_blocked": false,
           "scope_flags": [],
-          "source_documents": [],
-          "flags": [
-            "contém Taxas"
-          ]
-        },
-        {
-          "file": "MG_RICMS_pt3.txt",
-          "category": "RICMS",
-          "chars": 482288,
-          "named_icms": true,
-          "fallback_icms": false,
-          "dominant_scope": "ICMS",
-          "source_scopes": [],
-          "scope_blocked": false,
-          "scope_flags": [],
-          "source_documents": [],
-          "flags": [
-            "contém Taxas"
-          ]
-        },
-        {
-          "file": "MG_RICMS_pt30.txt",
-          "category": "RICMS",
-          "chars": 479647,
-          "named_icms": true,
-          "fallback_icms": false,
-          "dominant_scope": "ICMS",
-          "source_scopes": [],
-          "scope_blocked": false,
-          "scope_flags": [],
-          "source_documents": [],
-          "flags": [
-            "contém Taxas"
-          ]
-        },
-        {
-          "file": "MG_RICMS_pt31.txt",
-          "category": "RICMS",
-          "chars": 82153,
-          "named_icms": true,
-          "fallback_icms": false,
-          "dominant_scope": "ICMS",
-          "source_scopes": [],
-          "scope_blocked": false,
-          "scope_flags": [],
-          "source_documents": [],
+          "source_documents": [
+            "https://www.fazenda.mg.gov.br/empresas/legislacao_tributaria/ricms2023/anexoviii2023.pdf"
+          ],
           "flags": []
-        },
-        {
-          "file": "MG_RICMS_pt4.txt",
-          "category": "RICMS",
-          "chars": 482934,
-          "named_icms": true,
-          "fallback_icms": false,
-          "dominant_scope": "ICMS",
-          "source_scopes": [],
-          "scope_blocked": false,
-          "scope_flags": [],
-          "source_documents": [],
-          "flags": [
-            "contém Taxas"
-          ]
-        },
-        {
-          "file": "MG_RICMS_pt5.txt",
-          "category": "RICMS",
-          "chars": 481339,
-          "named_icms": true,
-          "fallback_icms": false,
-          "dominant_scope": "ICMS",
-          "source_scopes": [],
-          "scope_blocked": false,
-          "scope_flags": [],
-          "source_documents": [],
-          "flags": [
-            "contém Taxas"
-          ]
-        },
-        {
-          "file": "MG_RICMS_pt6.txt",
-          "category": "RICMS",
-          "chars": 415710,
-          "named_icms": true,
-          "fallback_icms": false,
-          "dominant_scope": "ICMS",
-          "source_scopes": [],
-          "scope_blocked": false,
-          "scope_flags": [],
-          "source_documents": [],
-          "flags": []
-        },
-        {
-          "file": "MG_RICMS_pt7.txt",
-          "category": "RICMS",
-          "chars": 459527,
-          "named_icms": true,
-          "fallback_icms": false,
-          "dominant_scope": "ICMS",
-          "source_scopes": [],
-          "scope_blocked": false,
-          "scope_flags": [],
-          "source_documents": [],
-          "flags": []
-        },
-        {
-          "file": "MG_RICMS_pt8.txt",
-          "category": "RICMS",
-          "chars": 493456,
-          "named_icms": true,
-          "fallback_icms": false,
-          "dominant_scope": "ICMS",
-          "source_scopes": [],
-          "scope_blocked": false,
-          "scope_flags": [],
-          "source_documents": [],
-          "flags": [
-            "contém Taxas"
-          ]
-        },
-        {
-          "file": "MG_RICMS_pt9.txt",
-          "category": "RICMS",
-          "chars": 480885,
-          "named_icms": true,
-          "fallback_icms": false,
-          "dominant_scope": "ICMS",
-          "source_scopes": [],
-          "scope_blocked": false,
-          "scope_flags": [],
-          "source_documents": [],
-          "flags": [
-            "contém Taxas"
-          ]
         }
       ]
     },
