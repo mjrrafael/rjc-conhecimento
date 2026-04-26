@@ -1,0 +1,1962 @@
+SEFAZ/RJ - Manual de emissao e escrituracao de documentos fiscais para controle de beneficios fiscais
+Fonte publica: https://portal.fazenda.rj.gov.br/efd/wp-content/uploads/sites/32/2025/01/Manual-de-emissa%CC%83o-e-escriturac%CC%A7a%CC%83o-de-documentos-fiscais-para-controle-de-benefi%CC%81cios-fiscais__29_01_25-1.pdf
+Captura: 2026-04-26
+Tema: Obrigacoes acessorias e documentos
+
+INCENTIVOS E BENEFÍCIOS FISCAIS
+          Regras de Preenchimento
+            de Documento Fiscal e
+                   de Escrituração
+                       Atualizado em 29/01/2025
+                                                                                                                                      8
+
+
+
+
+ÍNDICE
+
+
+ÍNDICE .......................................................................................................................... 8
+INTRODUÇÃO ................................................................................................................ 9
+LEGISLAÇÃO ............................................................................................................... 10
+INFORMAÇÕES PRELIMINARES ...................................................................................... 11
+   A QUEM AS REGRAS SE APLICAM ........................................................................................ 11
+   ENTENDENDO O CÁLCULO .................................................................................................. 11
+   PERCENTUAL DE ICMS DESTINADO AO FUNDO ESTADUAL DE COMBATE À POBREZA E À
+   DESIGUALDADE SOCIAL ..................................................................................................... 11
+   REGRAS DE VALIDAÇÃO ..................................................................................................... 12
+   OPERAÇÕES DE DEVOLUÇÃO ............................................................................................. 13
+   OPERAÇÕES DE AJUSTE .................................................................................................... 13
+   TABELA DE CÓDIGOS ......................................................................................................... 13
+1. ISENÇÃO ................................................................................................................. 14
+2. REDUÇÃO DA BASE DE CÁLCULO OU REDUÇÃO DE ALÍQUOTA ...................................... 18
+3. CRÉDITO PRESUMIDO .............................................................................................. 23
+4. “TRIBUTAÇÃO SOBRE FATURAMENTO”, “TRIBUTAÇÃO SOBRE RECEITA” OU “TRIBUTAÇÃO
+SOBRE SAÍDA”............................................................................................................. 29
+
+5. DIFERIMENTO .......................................................................................................... 33
+6. INEXIGIBILIDADE DE ESTORNO DE CRÉDITO ............................................................... 37
+7. REPASSE DO CRÉDITO FISCAL OU TRANSFERÊNCIA DE SALDO CREDOR ACUMULADO .... 41
+8. PAGAMENTO MÍNIMO ............................................................................................... 45
+9. PAGAMENTO DE IMPOSTO EM SEPARADO .................................................................. 46
+CONTROLE DE VERSÕES .............................................................................................. 47
+                                                                                                      9
+
+
+
+
+INTRODUÇÃO
+
+Este manual tem o objetivo de orientar o contribuinte que usufrui de diferimento ou de incentivos e
+benefícios de natureza tributária, dispostos no manual instituído pelo Decreto nº 27.815/01, no
+preenchimento de seus documentos fiscais, e de sua escrituração, em razão das exigências impostas
+pelo Decreto nº 46.536/2018, pela Resolução SEFAZ nº 13/2019 e pela Portaria SUCIEF nº 65/2019.
+Respectivamente, essas normas alteraram o Livro VI do Regulamento do ICMS, Decreto nº 27.427/00,
+e a Resolução SEFAZ nº 720/14, para estabelecer regras gerais de preenchimento e escrituração de
+documentos fiscais com intuito de aprimorar os controles fiscais sobre a fruição de incentivos e
+benefícios de natureza tributária.
+
+Aqui, a matéria se encontra agrupada, unindo legislação à técnica, sendo indicados, por espécie de
+benefício – isenção, redução de base de cálculo, crédito presumido etc. –, os campos que devem ser
+preenchidos e a forma de fazê-lo, oferecendo ao contribuinte uma visão de todo o processo, de modo
+a facilitar o cumprimento da obrigação acessória.
+
+Ressaltamos que os exemplos práticos apresentados neste manual são mera simplificação, não
+refletindo a realidade completa da escrituração. No mesmo sentido, os valores atribuídos às
+mercadorias não refletem a realidade.
+                                                                                                10
+
+
+
+
+LEGISLAÇÃO
+
+As seguintes normas embasam este Manual:
+
+   ▪   Manual de Diferimento, Ampliação de Prazo de Recolhimento, Suspensão e de Incentivos e
+       Benefícios de Natureza Tributária, aprovado pelo Decreto nº 27.815/01;
+   ▪   Livro VI do Regulamento do ICMS, aprovado pelo Decreto nº 27.427/00;
+   ▪   Anexo VII da Parte II da Resolução SEFAZ nº 720/14;
+   ▪   Anexo XVIII da Parte II da Resolução SEFAZ nº 720/14;
+   ▪   Manual de Orientação do Contribuinte (NF-e e NFC-e).
+                                                                                                         11
+
+
+
+
+INFORMAÇÕES PRELIMINARES
+
+A quem as regras se aplicam
+As regras de preenchimento e de escrituração tratadas neste manual se aplicam a todos os
+contribuintes que usufruem de incentivos e benefícios fiscais listados no Manual de Diferimento,
+Ampliação de Prazo de Recolhimento, Suspensão e de Incentivos e Benefícios de Natureza Tributária,
+aprovado pelo Decreto nº 27.815/01 (Manual de Benefícios), disponível no Portal da SEFAZ. Esses
+benefícios e incentivos correspondem a operações enquadradas nos CST 20, 30, 40, 51, 53 e 70
+(Anexo XVIII da Parte II da Resolução SEFAZ nº 720/14).
+Cabe observar, contudo, que elas se aplicam especificamente ao contribuinte que diretamente usufrui
+do benefício. Assim sendo, na EFD ICMS/IPI, as regras de escrituração se aplicam, por exemplo, ao
+contribuinte que emitiu a nota fiscal para acobertar operação beneficiada com isenção, e não ao
+contribuinte que a recebeu, que goza indiretamente do benefício.
+Há de ressalvar, decerto, situações especiais como benefícios em operações de importação
+(diferimento na aquisição de ativo), quando o contribuinte é emitente e destinatário do documento, e
+operações interestaduais, em relação ao diferencial de alíquotas (DIFAL). Nesses casos, deve emitir o
+documento de entrada e escriturá-lo segundo as regras descritas neste manual.
+
+
+
+Entendendo o cálculo
+Os cálculos publicados no Anexo XVIII da Parte II da Resolução SEFAZ nº 720/14, incluído pela
+Resolução SEFAZ nº 13/2019, levam em conta o disposto no art. 13, § 1º, I, da Lei Complementar nº
+86/97, reproduzido no art. 5º, I, da Lei nº 2.657/96, que determina:
+        “Art. 13. A base de cálculo do imposto é:
+        (...)
+        § 1º Integra a base de cálculo do imposto, inclusive na hipótese do inciso V do caput deste
+        artigo:
+        I - o montante do próprio imposto, constituindo o respectivo destaque mera indicação para fins
+        de controle;”
+É o chamado cálculo “por dentro”, no qual o valor do imposto integra sua própria base de cálculo.
+
+
+Percentual de ICMS destinado ao Fundo Estadual de Combate à Pobreza e à
+Desigualdade Social
+O percentual de ICMS destinado ao FECP, instituído no Estado do Rio de Janeiro pela Lei
+Complementar nº 210, de 21 de julho de 2023, apenas acresce a alíquota do ICMS, ou seja, não se
+trata de um novo imposto. É apenas um adicional de ICMS que, por autorização constitucional (art. 82
+da ADCT), possui destinação específica. Portanto, a base de cálculo e o cálculo são os mesmos
+utilizados para obtenção do imposto sem o adicional.
+                                                                                                          12
+
+
+
+
+Regras de validação
+As regras de validação dos campos relacionados com código de benefício fiscal, valor desonerado e
+diferimento foram divulgadas na NT2019.001.
+A partir de 1º de outubro de 2019, o Estado do Rio de Janeiro ativará as seguintes regras de validação:
+
+            CAMPO-SEQ             MSG                           CST
+
+                N12-85            930                       20, 30, 40, 70
+
+                N12-86            928                       20, 30, 40, 70
+
+                                                              20, 40, 70
+                N12-90            934
+                                           Não será ativada a validação para CST 30 e 90
+
+                N12-94            931                       20, 30, 40, 70
+
+                N12-97            929                            51
+
+
+ATENÇÃO!
+Preenchimento dos campos relacionados com benefícios fiscais e diferimento
+Embora a implementação das regras de validação N12-85, N12-86, N12-90, N12-94 e N12-97, em
+ambiente de produção, somente venha a ocorrer em 1º de outubro de 2019, ressaltamos que a
+legislação citada no quadro acima, que exige o preenchimento dos campos relativos a código de
+benefício, valor desonerado e diferido, já se encontra em vigor. Portanto, ainda que não sejam
+validados, o preenchimento dos campos é obrigatório. O desatendimento do disposto na legislação
+sujeita o contribuinte a multa.
+
+
+CST 41 e 50
+Nas operações com CST 41 ou 50, respectivamente, não tributada e suspensão, os campos
+relacionados com valor desonerado e código de benefício não devem ser preenchidos (art. 7º do Anexo
+XVIII da Parte II da Resolução SEFAZ nº 720/14, incluído pela Resolução SEFAZ nº 13/19).
+No campo código de benefício, não deve ser informado o literal SEM CBENEF. O referido campo não
+deve ser preenchido.
+
+
+CST 30 e 90
+A regra de validação N12-90 não será aplicada nos CST 30 e 90. No caso do CST 30, em razão do
+referido código abranger também operação não tributada (não incidência), situação em que a legislação
+dispensa o preenchimento dos campos, quando não incluídos no Manual de Benefícios (art. 7º do
+Anexo XVIII da Parte II da SEFAZ nº 720/14, incluído pela Resolução SEFAZ nº 13/19).
+No caso do CST 90, em razão da orientação de preenchimento da NF-e nas “vendas diretas de veículos
+novos” (NT2008.004).
+Contudo, a não ativação da regra de validação para esses CST não dispensa os contribuintes da
+obrigatoriedade de preencher os campos, quando exigido pela legislação: operação isenta (diferente
+de não tributada), no caso de CST 30; operação com redução de base de cálculo, no caso do CST 90.
+                                                                                                        13
+
+
+
+
+Em relação ao campo código de benefício, para os CST em questão serão aceitas notas sem
+preenchimento do campo. Contudo, conforme informado acima, a não ativação da regra de validação
+não dispensa os contribuintes da obrigatoriedade de preencher os campos, quando exigido pela
+legislação. E, se preenchido, somente serão aceitos códigos constantes da tabela de códigos,
+habilitados para os referidos CST.
+
+
+Operações de devolução
+No Rio de Janeiro, não será exigido o preenchimento dos campos nas operações de devolução (finNFe
+4), independentemente do destino – operação interna, interestadual ou para o exterior.
+
+
+Operações de ajuste
+No Rio de Janeiro, não será aplicada validação nas notas fiscais emitidas com finalidade de ajuste
+(finNFe 3). Entretanto, caso a legislação determine o preenchimento de determinado campo
+(transferência de saldo credor, por exemplo), ele deve ser preenchido.
+
+
+Tabela de códigos
+A tabela de códigos utilizada para validação dos campos encontra-se disponível em nfe.fazenda.gov.br,
+opção, no menu, “Documentos”, “Diversos”.
+1. ISENÇÃO
+Os procedimentos abaixo devem ser adotados por contribuinte que utilizar norma relacionada no
+Manual de Diferimento, Ampliação de Prazo de Recolhimento, Suspensão e de Incentivos e Benefícios
+de Natureza Tributária classificada como “isenção”.
+
+
+No Documento Fiscal (NF-e ou NFC-e)
+Nas operações ou prestações beneficiadas, o documento fiscal deve ser emitido seguindo as regras
+aplicáveis ao regime normal de tributação (confronto entre débitos e créditos), com atenção para os
+seguintes campos:
+
+   •   CRT (Código do Regime Tributário), campo CRT na NF-e/NFC-e: conforme o caso,
+       ▪ 3 - Regime normal; ou
+       ▪ 2 - Simples Nacional – excesso de sublimite da receita bruta, caso tenha ultrapassado o
+          sublimite estadual, nos termos do § 1º do art. 20 da Lei Complementar nº 123, de 14 de
+          dezembro de 2006
+
+   •   CST (Código da Situação tributária), campo CST na NF-e/NFC-e: conforme o caso,
+       ▪ 30 - Isenta ou não tributada e com cobrança do ICMS por substituição tributária; ou
+       ▪ 40 - Isenta
+
+   •   Desoneração:
+          ▪ Valor do ICMS desonerado, campo vICMSDeson: valor do imposto
+             Fórmula:
+                 Valor do ICMS Desonerado = Preço na Nota Fiscal / (1 - Alíquota) * Alíquota
+
+           ▪   Motivo da desoneração do ICMS, campo motDesICMS: escolher “9 – Outros”, caso
+               não se enquadre em, caso não se enquadre em uma das opções disponíveis de acordo
+               com o CST (30 ou 40) informado:
+                   ▪ 1 - Táxi;
+                   ▪ 3 - Produtor Agropecuário;
+                   ▪ 4 - Frotista/Locadora;
+                   ▪ 5 - Diplomático/Consular;
+                   ▪ 6 - Utilitários e Motocicletas da Amazônia Ocidental e Áreas de Livre Comércio
+                       (Resolução 714/88 e 790/94 – CONTRAN e suas alterações);
+                   ▪ 7 - SUFRAMA;
+                   ▪ 8 - Venda a Órgão Público;
+                   ▪ 10 - Deficiente Condutor (Convênio ICMS 38/12);
+                   ▪ 11 - Deficiente Não Condutor (Convênio ICMS 38/12).
+
+           ▪   Código de Benefício Fiscal na UF, campo cBenef: Código do Benefício Fiscal que
+               deverá ser informado no registro E115 a partir da tabela 5.2.
+
+
+Na EFD ICMS/IPI
+Identificação da Isenção na EFD:
+No registro E115 - Informações adicionais da apuração – valores declaratórios, o contribuinte deve
+identificar o(s) benefício(s) utilizado(s) da seguinte forma:
+   •   Campo 02: preencher com o código da Tabela 5.2 correspondente ao dispositivo legal;
+   •   Campo 03: preencher com o valor 0;
+                                                                                                          15
+
+
+
+
+   •    Campo 04: não preencher.
+Deverão ser preenchidos tantos registros E115 quantas forem as combinações aproveitadas pelo
+contribuinte naquele mês de apuração entre normas previstas no Manual de Diferimento, Ampliação de
+Prazo de Recolhimento, Suspensão e de Incentivos e Benefícios de Natureza Tributária que consta do
+Decreto 27.815/2001 e espécies de benefício.
+
+Documentos de entrada:
+No registro C100, os documentos de entrada devem ser escriturados normalmente sob a ótica do
+declarante da EFD, informando o ICMS destacado no campo 22 do registro C100 quando, segundo as
+regras normais de tributação, houver direito a crédito.
+
+Documentos de saída:
+No registro C100, os documentos de saída devem ser escriturados normalmente, na forma como foram
+emitidos.
+No registro C197, filho do registro C100 da nota fiscal emitida com isenção de ICMS, devem ser feitos
+os seguintes lançamentos:
+    •   Campo 02: código RJ90980000 - Informativo - Isenção, não incidência, redução de base de
+        cálculo ou de alíquota de ICMS em função de norma relacionada no manual de que trata o
+        Decreto 27.815/2001 ou código RJ91980000 - Informativo - Isenção, não incidência, redução
+        de base de cálculo ou de alíquota de ICMS-ST em função de norma relacionada no manual de
+        que trata o Decreto 27.815/2001;
+    •   Campo 03: preencher com o código da Tabela 5.2 correspondente à norma utilizada e espécie,
+        indicado no campo 02 do registro E115;
+    •   Campo 04: informar o código do item do produto beneficiado;
+    •   Campos 05 a 07: não preencher;
+    •   Campo 08: preencher com o valor do ICMS desonerado informado no campo vICMSDeson do
+        documento fiscal.
+
+Apuração:
+No registro E111 - Ajuste/benefício/incentivo da apuração do ICMS, deve ser efetuado:
+    a) Caso a legislação não autorize a manutenção dos créditos do ICMS
+    O estorno dos créditos relativos às operações de saída beneficiadas pela isenção, caso a legislação
+    concedente não autorize sua manutenção e a operação anterior tenha sido onerada, preenchendo-
+    se os campos da forma que segue:
+    •   Campo 02: código RJ018003 – Estornos de Créditos - Estorno de crédito em função de norma
+        relacionada no manual de que trata o Decreto 27.815/2001;
+        • Campo 03: preencher com o código da Tabela 5.2 correspondente à norma utilizada e
+            espécie, indicado no campo 02 do registro E115;
+                                                                                                     16
+
+
+
+
+       •    Campo 04: somatório dos valores de ICMS destacados nas notas fiscais de entrada que
+            devem ser estornados por causa de incentivo fiscal.
+
+                                    Atenção! Estornos de créditos
+
+            Esse lançamento tem o condão de mostrar os estornos de créditos de produtos ou
+            serviços em função da posterior saída isenta da mercadoria ou serviço. Os
+            estornos de créditos regulares, em função das demais hipóteses dispostas no art.
+            37 da Lei 2.657/96, que não se referem a produtos, serviços ou insumos
+            relacionados com a mercadoria incentivada devem utilizar os demais códigos de
+            estorno listados no item 3.1 do Manual EFD ICMS/IPI.
+
+   b) Caso a legislação autorize a manutenção dos créditos de ICMS
+   Caso a legislação autorize a manutenção do crédito, deve ser observado o procedimento descrito
+   em “item 6 - Inexigibilidade de estorno de Crédito” neste Manual.
+
+
+No Registro E110 – Apuração do ICMS – Operações Próprias, os valores informados no registro E111
+devem ser lançados no campo 05: Valor total de Ajustes “Estornos de Créditos” no caso da letra “a”
+acima. No caso da letra “b”, ver o “item 6 - Inexigibilidade de estorno de Crédito” deste Manual.
+
+
+
+ NA PRÁTICA
+
+ Vejamos um exemplo da aplicação das regras acima para o benefício fiscal previsto no Convênio
+ ICMS nº 94/2005, que concede isenção nas operações com maçã ou pera. Suponhamos a venda no
+ varejo que totalizou R$ 3,50.
+ Operação: venda de maçãs
+ Produto: maçãs, 1 kg
+
+ Preço do produto na Nota Fiscal: R$ 3,50 (valor desonerado)
+
+ Alíquota: 20%, já incluído o acréscimo de alíquota destinado ao FECP, Lei nº 4.056/02.
+
+ No Documento Fiscal (NF-e ou NFC-e)
+ CRT: 3 - Regime normal
+ CST: 40 - Isenta
+
+ Valor do ICMS desonerado, campo vICMSDeson: R$ 0,88
+
+           Cálculo:
+           ICMS Desonerado = Preço na Nota Fiscal / (1 - Alíquota) * Alíquota
+           ICMS Desonerado = 3,5 / (1 – 0,20) * 0,20
+           ICMS Desonerado = R$ 0,88
+ Motivo da desoneração do ICMS, campo motDesICMS: “9 – Outros”
+ Código de Benefício Fiscal na UF, campo cBenef: RJ801137
+ ATENÇÃO! No exemplo, foi considerado o disposto na Nota Técnica 2013.005 - v1.22, regra de
+ validação W16-10 – Exceção 3, a respeito do valor inserido no campo vICMSDeson no TOTAL da
+ NF-e, que não será subtraído do valor total caso o valor do produto (campo vProd) não contenha o
+ valor do imposto desonerado. Sobre o assunto, transcrevemos informação constante na referida NT:
+                                                                                                       17
+
+
+
+
+         “Em função de questionamentos feitos pelas empresas com respeito ao alcance dos efeitos
+         jurídicos de incluir o valor da desoneração de ICMS no valor total da nota, nos termos
+         comandados pelo Ajuste SINIEF 10, de 28 de setembro de 2012, foi alterada a regra de
+         validação W16-10, de forma que, quando o campo vICMSDeson for utilizado, serão aceitas
+         notas tanto no caso de que o valor correspondente à desoneração tenha sido incluído no
+         valor total da nota, quanto quando não tiver sido incluído.”
+
+Portanto, há duas formas de emissão: uma em que o valor do produto contém o valor do imposto
+que será desonerado, devendo ser descontado nos totais; outra em que o valor do produto não
+contém o valor desonerado (imposto), não devendo, portanto, ser reduzido do valor total o valor
+informado no campo vICMSDeson, que será meramente informativo. As duas hipóteses atendem ao
+Fisco, pois o resultado será o mesmo, ou seja, o valor cobrado do contribuinte não terá a parcela do
+imposto desonerado.
+
+Importante observar que a adoção de uma solução se aplica a todos os itens, ou seja, não é possível
+adotar as duas soluções, aplicando cada uma em itens diferentes da nota.
+
+O contribuinte que utiliza o software disponibilizado pelo SEBRAE que desejar utilizar a segunda
+opção, adotada neste manual em seus exemplos (o valor do produto não contém o valor
+desonerado), deverá alterar manualmente o valor total no aplicativo, reduzindo dele o valor
+desonerado.
+
+
+
+Na EFD ICMS/IPI
+ No registro E115, deve ser informado no campo 02 o código RJ801137 e no campo 03, “0”, para
+identificar o Benefício Fiscal usufruído pelo estabelecimento. A linha de registro da EFD terá a
+seguinte configuração:
+                                        E115|RJ801137|0||
+
+
+No registro C100, os documentos de entrada devem ser escriturados normalmente. Os de saídas,
+também, da maneira como foram emitidos, sem informações de imposto (alíquota e base de cálculo).
+A linha de registro da EFD da Nota Fiscal da saída terá a seguinte configuração:
+ C100|1|0|adquirente|65|00|001|000000001|chavedodocumento|15012018||3,50|0|||3,50|9|||||||||||||
+
+
+No registro C197, vinculado ao documento de saída, será informado no campo 02 o código
+RJ90980000 e no campo 03 o código RJ801137 que identifica a norma legal no registro E115. No
+campo 08, o valor do ICMS desonerado, no caso R$ 0,88. A linha de registro da EFD terá a seguinte
+configuração:
+                         C197|RJ90980000|RJ801137|codigoitem||||0,88|
+
+
+No registro E111, deverão ser efetuados os registros relacionados com o estorno do crédito do
+ICMS em função do crédito na entrada do produto beneficiado da seguinte forma:
+    ▪   no campo 02: informar o código RJ018003 – Estornos de Créditos - Estorno de crédito em
+        função de norma relacionada no manual de que trata o Decreto 27.815/2001;
+    ▪   no campo 03: preencher com o código da Tabela 5.2 correspondente à norma utilizada,
+        indicado no campo 02 do registro E115;
+    ▪   no campo 04: somatório dos valores de ICMS a estornar, destacados nas notas fiscais de
+        entrada do produto beneficiado com a isenção, supondo-se neste caso um crédito de R$
+        0,20.
+A linha de registro da EFD terá a seguinte configuração:
+                                 E111|RJ018003|RJ801137|0,20|
+                                                                                                                 18
+
+
+
+
+2. REDUÇÃO DA BASE DE CÁLCULO OU REDUÇÃO DE
+ALÍQUOTA           1
+
+
+
+
+Os procedimentos abaixo devem ser adotados por contribuinte que utilizar norma relacionada no
+Manual de Diferimento, Ampliação de Prazo de Recolhimento, Suspensão e de Incentivos e Benefícios
+de Natureza Tributária classificada como “redução de base de cálculo” ou “redução de alíquota”.
+
+No Documento Fiscal (NF-e ou NFC-e)
+Nas operações ou prestações beneficiadas, o documento fiscal deve ser emitido seguindo as regras
+aplicáveis ao regime normal de tributação (confronto entre débitos e créditos), com atenção para os
+seguintes campos:
+
+    •   CRT (Código do Regime Tributário), campo CRT na NF-e/NFC-e: conforme o caso,
+        ▪ 3 - Regime normal; ou
+        ▪ 2 - Simples Nacional – excesso de sublimite da receita bruta, caso tenha ultrapassado o
+           sublimite estadual, nos termos do § 1º do art. 20 da Lei Complementar nº 123, de 14 de
+           dezembro de 2006.
+
+    •   CST (Código da Situação tributária), campo CST na NF-e/NFC-e: conforme o caso,
+        ▪ 20 - Com redução de base de cálculo;
+        ▪ 70 - Com redução de base de cálculo e cobrança do ICMS por substituição tributária.
+
+                                                      CST 70
+
+              No caso do CST 70, havendo também redução de base de cálculo na operação
+              de substituição tributária, o valor desonerado dessa operação deve ser informado
+              no seu campo próprio. No valor total do documento, os valores da desoneração
+              do imposto próprio e da ST devem ser somados.
+
+
+
+    •   Percentual da Redução de BC, campo pRedBC: percentual de redução.
+
+    •   Alíquota, campo pICMS: alíquota padrão aplicada à operação, sem o adicional de ICMS
+        destinado ao FECP.
+
+    •   Valor da BC do ICMS, campo vBC: valor da base de cálculo reduzida.
+
+    •   Valor do ICMS, campo vICMS: valor do imposto.
+
+    •   Alíquota, campo pFCP: alíquota adicional de ICMS destinado ao FECP.
+
+    •   Valor da BC do ICMS destinado ao FECP, campo vBCFCP: valor da base de cálculo
+        reduzida.
+
+    •   Valor do ICMS destinado ao FECP, campo vFCP: valor do imposto.
+
+    •   Desoneração:
+
+
+1 Alteração do Livro VI do RICMS encaminhada neste processo veda a utilização de alíquota efetiva, ressalvando
+
+apenas os casos em que não são utilizados documentos fiscais eletrônicos.
+                                                                                                      19
+
+
+
+
+           ▪   Valor do ICMS desonerado, campo vICMSDeson: valor do imposto.
+               Fórmula:
+               ICMS Desonerado = Preço na Nota Fiscal * (1 - (Alíquota * (1 - Percentual de redução
+               da BC))) / (1 - Alíquota) - Preço na Nota Fiscal
+
+           ▪   Motivo da desoneração do ICMS, campo motDesICMS: escolher “9 – Outros”, caso
+               não se enquadre em:
+                   ▪ 3 - Uso na agropecuária;
+                   ▪ 12 - Órgão de fomento e desenvolvimento agropecuário.
+
+           ▪   Código de Benefício Fiscal na UF, campo cBenef: Código do Benefício Fiscal que
+               deverá ser informado no registro E115 a partir da tabela 5.2.
+
+
+
+Na EFD ICMS/IPI
+Identificação da Redução da Base de Cálculo ou Redução de Alíquota na EFD:
+No registro E115 - Informações adicionais da apuração – valores declaratórios, o contribuinte deve
+identificar o(s) benefício(s) utilizado(s) da seguinte forma:
+   •   Campo 02: preencher com o código da Tabela 5.2 correspondente ao dispositivo legal;
+   •   Campo 03: preencher com o valor “0”;
+   •   Campo 04: não preencher.
+Deverão ser preenchidos tantos registros E115 quantas forem as combinações aproveitadas pelo
+contribuinte naquele mês de apuração entre normas previstas no Manual de Diferimento, Ampliação de
+Prazo de Recolhimento, Suspensão e de Incentivos e Benefícios de Natureza Tributária que consta do
+Decreto 27.815/2001 e espécies de benefício.
+Documentos de entrada:
+No registro C100, os documentos de entrada devem ser escriturados normalmente sob a ótica do
+declarante da EFD, informando o ICMS destacado no campo 22 do registro C100 quando, segundo as
+regras normais de tributação, houver direito a crédito.
+
+Documentos de saída:
+No registro C100, os documentos de saída devem ser escriturados normalmente, na forma como foram
+emitidos.
+No registro C197, filho do registro C100 da nota fiscal emitida com redução de base de cálculo ou
+redução de alíquota, devem ser feitos os seguintes lançamentos:
+   •   Campo 02: código RJ90980000 - Informativo - Isenção, não incidência, redução de base de
+       cálculo ou de alíquota de ICMS em função de norma relacionada no manual de que trata o
+       Decreto 27.815/2001 ou código RJ91980000 - Informativo - Isenção, não incidência, redução
+       de base de cálculo ou de alíquota de ICMS-ST em função de norma relacionada no manual de
+       que trata o Decreto 27.815/2001;
+   •   Campo 03: preencher com o código da Tabela 5.2 correspondente à norma utilizada e espécie,
+       indicado no campo 02 do registro E115;
+   •   Campo 04: informar o código do item do produto beneficiado;
+   •   Campos 05 a 07: não preencher;
+   •   Campo 08: valor do ICMS desonerado informado no campo vICMSDeson da nota fiscal.
+                                                                                                                 20
+
+
+
+
+Apuração:
+No registro E111 - Ajuste/benefício/incentivo da apuração do ICMS devem ser efetuados os seguintes
+registros:
+    a) Caso a legislação não autorize a manutenção dos créditos de ICMS
+    O estorno dos créditos relativos às operações de saída beneficiadas pela redução de base de
+    cálculo ou redução de alíquota, caso a legislação concedente não autorize sua manutenção e a
+    operação anterior tenha sido onerada, preenchendo-se os campos da forma que segue:
+        •    Campo 02: código RJ018003 – Estornos de Créditos - Estorno de crédito em função de
+             norma relacionada no manual de que trata o Decreto 27.815/2001;
+        •    Campo 03: preencher com o código da Tabela 5.2 correspondente à norma utilizada,
+             indicado no campo 02 do registro E115;
+        •    Campo 04: somatório dos valores de ICMS destacados nas notas fiscais de entrada que
+             devem ser estornados por causa do incentivo fiscal.
+
+
+                                      Atenção! Estornos de créditos
+
+            Esse lançamento tem o condão de mostrar os estornos de créditos de produtos ou
+            serviços em função da posterior saída da mercadoria ou serviço com redução da
+            base de cálculo. Os estornos de créditos regulares, em função das demais
+            hipóteses dispostas no art. 37 da Lei 2.657/96, que não se referem a produtos,
+            serviços ou insumos relacionados com a mercadoria incentivada devem utilizar os
+            demais códigos de estorno listados no item 3.1 do Manual EFD ICMS/IPI.
+
+
+    b) Caso a legislação autorize a manutenção dos créditos de ICMS
+    Caso a legislação autorize a manutenção do crédito, deve ser observado adicionalmente o
+procedimento descrito no “item 6 - Inexigibilidade de estorno de Crédito” neste Manual.
+
+
+No Registro E110 – Apuração do ICMS – operações próprias, os valores informados no registro E111
+devem ser lançados no campo 05: Valor total de Ajustes “Estornos de créditos” no caso da letra “a”
+acima. No caso da letra “b”, ver o “item 6 - Inexigibilidade de estorno de Crédito” neste Manual.
+
+
+ NA PRÁTICA
+
+ Vejamos um exemplo da aplicação das regras do benefício fiscal previsto no Convênio ICMS nº
+ 128/1994 e na Lei nº 4.892/06 – Cesta Básica e no Decreto nº 32.161/02 2. Suponhamos a venda de
+ um pacote de feijão de um atacadista para o varejista, operação beneficiada pela redução de base
+ de cálculo de forma que a tributação seja 7%. Neste exemplo, o atacadista adquiriu a mercadoria de
+ um industrial localizado no Estado do Rio de Janeiro, que também se beneficia da redução de base
+ de cálculo. Supondo que esta operação gerou um crédito de R$ 0,14. Caso fosse adquirida de outra
+ Unidade Federada, seria tributada a 12%, sendo necessário promover o estorno da diferença entre
+ a tributação interna e externa.
+ Operação: venda de feijão no atacado
+ Produto: feijão, 1 kg
+
+
+
+2 O exemplo foi elaborado na época em que ainda não havia sido publicada a Lei nº 9.391/21, que internalizou o
+
+Convênio ICMS 224/17, concedendo isenção na operação interna realizada com feijão. O exemplo será mantido
+no manual, mas deve ser considerando apenas como o que se destina a ser – um exemplo –, não afastando a
+aplicação de nenhuma norma superveniente.
+                                                                                                       21
+
+
+
+
+Preço na Nota Fiscal: R$ 3,50 (R$ 0,24 desse valor se refere ao ICMS, considerando que o imposto
+é “por dentro”)
+
+Alíquota: 12%, de acordo com art. 14, X, da Lei nº 2.657/96. Não há acréscimo de alíquota no ICMS
+destinado ao Fundo Estadual de Combate à Pobreza (FECP), conforme o disposto no art. 1º,
+parágrafo único, II, da Lei nº 4.056/02.
+
+Percentual de redução de base de cálculo de forma que tributação seja 7%: 41,67
+         Cálculo:
+         Percentual de redução = 1 - (Carga Tributária Reduzida ou Alíquota reduzida /Alíquota)
+         Percentual de redução = 1 - (7%/12%)
+         Percentual de redução = 41,67
+
+
+No Documento Fiscal (NF-e ou NFC-e)
+CRT: 3 – Regime normal
+CST: 20 – Com redução da Base de Cálculo
+Alíquota: 12% (no exemplo em questão, não há adicional de ICMS destinado ao FECP, em
+obediência ao disposto no art. 2º, I, “a”, da Lei nº 4.056/02, não devendo ser preenchidos os campos
+relativos a ele.)
+Percentual da Redução de BC: 41,67%
+Valor da BC do ICMS, campo vBC: R$ 2,04
+ICMS destacado: R$ 0,24
+
+Valor do ICMS desonerado, campo vICMSDeson: R$ 0,20
+
+         Cálculo:
+         ICMS Desonerado = Preço na Nota Fiscal * (1 - (Alíquota padrão* (1 - Percentual de
+         redução da BC))) / (1 – Alíquota padrão) - Preço na Nota Fiscal
+         ICMS desonerado = 3,50 * (1 - (0,12 * (1 - 0,4167))) / (1 - 0,12) - 3,50
+         Valor do ICMS desonerado = R$ 0,20
+Motivo da desoneração do ICMS, campo motDesICMS: “9 – Outros”
+Código de Benefício Fiscal na UF, campo cBenef: RJ802164
+ATENÇÃO! No exemplo, foi considerado o disposto na Nota Técnica 2013.005 - v1.22, regra de
+validação W16-10 – Exceção 3, a respeito do valor inserido no campo vICMSDeson no TOTAL da
+NF-e, que não será subtraído do valor total caso o valor do produto (campo vProd) não contenha o
+valor do imposto desonerado. Sobre o assunto, transcrevemos informação constante na referida NT:
+
+         “Em função de questionamentos feitos pelas empresas com respeito ao alcance dos
+         efeitos jurídicos de incluir o valor da desoneração de ICMS no valor total da nota, nos
+         termos comandados pelo Ajuste SINIEF 10, de 28 de setembro de 2012, foi alterada a
+         regra de validação W16-10, de forma que, quando o campo vICMSDeson for utilizado,
+         serão aceitas notas tanto no caso de que o valor correspondente à desoneração tenha
+         sido incluído no valor total da nota, quanto quando não tiver sido incluído.”
+
+Portanto, há duas formas de emissão: uma em que o valor do produto contém o valor do imposto
+que será desonerado, devendo ser descontado nos totais; outra em que o valor do produto não
+contém o valor desonerado (imposto), não devendo, portanto, ser reduzido do valor total o valor
+informado no campo vICMSDeson, que será meramente informativo. As duas hipóteses atendem ao
+Fisco, pois o resultado será o mesmo, ou seja, o valor cobrado do contribuinte não terá a parcela do
+imposto desonerado.
+                                                                                                      22
+
+
+
+
+Importante observar que a adoção de uma solução se aplica a todos os itens, ou seja, não é possível
+adotar as duas soluções, aplicando cada uma em itens diferentes da nota.
+
+O contribuinte que utiliza o software disponibilizado pelo SEBRAE que desejar utilizar a segunda
+opção, adotada neste manual em seus exemplos (o valor do produto não contém o valor
+desonerado), deverá alterar manualmente o valor total no aplicativo, reduzindo dele o valor
+desonerado.
+
+
+Na EFD ICMS/IPI
+No registro E115, deve ser informado no campo 02 o código RJ802164 e no campo 03, “0”, para
+identificar o Benefício Fiscal usufruído pelo estabelecimento. A linha de registro da EFD terá a
+seguinte configuração:
+                                        E115|RJ802164|0||
+
+
+No registro C100, os documentos de entrada devem escriturados normalmente sob a ótica do
+declarante. Os de saídas também, com as informações nos moldes da nota fiscal emitida, com as
+informações da redução de base de cálculo. As linhas de registro da EFD das Notas Fiscais de
+entrada e saída terão a seguinte configuração, respectivamente:
+C100|0|1|remetente|55|00|001|000000001|chavedodocumento|01012018|02012018|2,00|0|||2,00|9||
+                                      ||2,00|0,14||||||||
+    C100|1|0|adquirente|55|00|001|000000001|chavedodocumento|15012018||3,50|0|||3,50|9|||
+                                       |2,04|0,24||||||||
+
+
+No registro C197, vinculado ao documento de saída, será informado no campo 02 o código
+RJ90980000 e no campo 03 o código RJ802164 que identifica a norma legal no registro E115. No
+campo 08, o valor do ICMS desonerado, no caso R$ 0,20. A linha de registro da EFD terá a seguinte
+configuração:
+                         C197|RJ90980000|RJ802164|codigotem||||0,20|
+
+
+Não haverá ajustes a serem feitos no registro E111 relacionados com estorno de crédito, tendo em
+vista que o atacadista adquiriu o produto no mercado interno (industrial), que também se beneficia
+da redução de base de cálculo.
+
+
+No registro E110 serão preenchidos os campos a partir dos valores consolidados advindos dos
+documentos fiscais. Não há lançamentos a título de ajustes advindo do E111 ou do C197. A linha de
+registro da EFD terá a seguinte configuração:
+                           E110|0,24|0|0|0|0,14|0|0|0|0|0,10|0|0,10|0|0|
+                                                                                                      23
+
+
+
+
+3. CRÉDITO PRESUMIDO
+
+Os procedimentos abaixo devem ser adotados por contribuinte que utilizar norma relacionada no
+Manual de Diferimento, Ampliação de Prazo de Recolhimento, Suspensão e de Incentivos e Benefícios
+de Natureza Tributária classificada como “crédito presumido”.
+
+
+No Documento Fiscal (NF-e ou NFC-e)
+Essa espécie de benefício se concretiza na escrita fiscal, não ocorrendo nenhuma alteração no
+preenchimento do documento, que deve ser emitido seguindo as regras comuns de tributação
+aplicáveis ao regime normal, principalmente em relação ao destaque de imposto, devendo ser
+considerada a situação tributária prevista para a operação.
+Contudo, se norma legal previr que as informações do crédito presumido constem no documento fiscal,
+também deverão ser preenchidos os campos do Grupo de informações sobre o Crédito Presumido
+(gCred), quais sejam:
+   -   cCredPresumido = Código de Benefício Fiscal de Crédito Presumido na UF aplicado ao item
+   -   pCredPResumido = Percentual do Crédito Presumido
+   -   vCredPresumido = Valor do Crédito Presumido
+
+
+
+
+Na EFD ICMS/IPI
+Identificação do Benefício
+No registro E115 - Informações adicionais da apuração – valores declaratórios, o contribuinte deve
+identificar o benefício utilizado da seguinte forma:
+   •   Campo 02: preencher com o código da Tabela 5.2 correspondente ao dispositivo legal e
+       espécie;
+   •   Campo 03: preencher com o valor 0;
+   •   Campo 04: não preencher.
+
+
+Deverão ser preenchidos tantos registros E115 quantas forem as combinações aproveitadas pelo
+contribuinte naquele mês de apuração entre normas previstas no Manual de Diferimento, Ampliação de
+Prazo de Recolhimento, Suspensão e de Incentivos e Benefícios de Natureza Tributária que consta do
+Decreto 27.815/2001 e espécies de benefício.
+
+
+Documentos de entrada:
+Os documentos de entrada devem ser escriturados normalmente, sob a ótica do declarante da EFD,
+informando o ICMS destacado no campo 22 do registro C100 quando, segundo as regras normais de
+tributação, houver direito a crédito.
+
+
+Documentos de saída:
+Os documentos de saída devem ser escriturados normalmente, conforme foram emitidos, informando
+o ICMS destacado na nota fiscal, quando houver, no campo 22 do registro C100.
+
+
+Apuração:
+Apropriação do crédito presumido
+                                                                                                     24
+
+
+
+
+O crédito poderá ser apropriado de duas formas, dependendo do que determina a legislação
+concedente do benefício fiscal. Vejamos:
+       a) crédito presumido individualizado por operação de saída (registro C197)
+       Nos casos em que a norma disponha que o registro do crédito presumido seja individualizado
+       por operação de saída, o contribuinte deverá efetuar lançamento no registro C197, filho do
+       registro C100 da nota fiscal emitida com direito ao crédito presumido, da forma que segue:
+       ▪     Campo 02: código RJ10080000 - Outros créditos - Crédito presumido em função de norma
+             relacionada no manual de que trata o Decreto 27.815/2001;
+       ▪     Campo 03: preencher com o código da Tabela 5.2 correspondentes à norma utilizada e
+             espécie, indicado no campo 02 do registro E115;
+       ▪     Campo 04: informar o código do item do produto beneficiado;
+       ▪     Campos 05 e 06: informar o valor da Base de Cálculo do ICMS e a Alíquota do crédito
+             presumido;
+       ▪     Campo 07: valor do crédito presumido;
+       ▪     Campo 08: não preencher.
+
+       b) crédito presumido sobre o total de operações (registros E111):
+       Nos casos em que a norma disponha que o registro do crédito presumido seja realizado sobre
+       o total de operações, o contribuinte deverá preencher o registro E111 da forma que segue:
+       ▪     Campo 02: código RJ028001 – Outros Créditos - Crédito presumido em função de norma
+             relacionada no manual de que trata o Decreto 27.815/2001;
+       ▪     Campo 03: preencher com o código da Tabela 5.2 correspondente à norma utilizada e
+             espécie, indicado no campo 02 do registro E115;
+       ▪     Campo 04: valor do crédito presumido.
+
+
+           Atenção! Somente poderá ser lançado o crédito presumido diretamente no
+           registro de apuração se houver autorização expressa na legislação concedente,
+           por meio de dispositivos como:
+            “O crédito presumido, a que se refere este artigo, será escriturado no item "007-
+           outros créditos" do livro Registro de Apuração do ICMS (RAICMS), seguido da
+           indicação: crédito presumido e Decreto nº 41.596/2008.”
+
+
+
+
+Estorno de créditos de ICMS
+No registro E111 - Ajuste/benefício/incentivo da apuração do ICMS devem ser efetuados os seguintes
+registros:
+   a) Caso a legislação não autorize a manutenção dos créditos de ICMS
+   O estorno dos créditos relativos às operações de saída beneficiadas pelo benefício, caso a
+   legislação concedente não autorize sua manutenção operação anterior tenha sido onerada, deverá
+   ser lançado preenchendo-se os campos da forma que segue:
+       ▪     Campo 02: código RJ018003 – Estornos de Créditos - Estorno de crédito em função de
+             norma relacionada no manual de que trata o Decreto 27.815/2001;
+       ▪     Campo 03: preencher com o código da Tabela 5.2 correspondente à norma utilizada,
+             indicado no campo 02 do registro E115;
+                                                                                                            25
+
+
+
+
+        ▪   Campo 04: somatório dos valores de ICMS destacados nas notas fiscais de entrada que
+            devem ser estornados.
+
+                                   Atenção! Estornos de créditos
+
+        Esse lançamento tem o condão de mostrar os estornos de créditos de produtos ou
+        serviços em função da posterior saída da mercadoria ou serviço com crédito
+        presumido. Os estornos de créditos regulares, em função das demais hipóteses
+        dispostas no art. 37 da Lei 2.657/96, que não se referem a produtos, serviços ou
+        insumos relacionados com a mercadoria incentivada devem utilizar os demais
+        códigos de estorno listados no item 3.1 do Manual EFD ICMS/IPI.
+
+
+b) Caso a legislação autorize a manutenção dos créditos de ICMS
+    Caso a legislação autorize a manutenção dos créditos, deve ser observado adicionalmente o
+procedimento descrito no “item 6 - Inexigibilidade de Estorno de Crédito” neste Manual.
+
+
+Apuração final
+No Registro E110 – Apuração do ICMS – operações próprias, os valores dos créditos informados no
+registro E111 ou C197 devem ser lançados no campo 08 - Valor total dos ajustes a crédito ou no campo
+07 - Valor total dos ajustes a crédito decorrentes do documento fiscal. Os valores informados no registro
+E111 devem ser lançados no campo 05: Valor total de Ajustes “Estornos de créditos” no caso da letra
+“a” acima. No caso da letra “b”, ver o item 6 - Inexigibilidade de estorno de Crédito neste Manual.
+
+
+
+ Na Prática
+
+ EXEMPLO 1 - CRÉDITO PRESUMIDO INDIVIDUALIZADO POR OPERAÇÃO DE SAÍDA
+ Vejamos um exemplo da aplicação do benefício fiscal conferido às indústrias de bicicletas elétricas
+ e motocicletas elétricas e atacadistas de peças ligado ao projeto industrial pelo Decreto nº
+ 42.569/10, que concede crédito presumido nas operações de saída desses produtos de modo que
+ a carga tributária da operação seja 5%, exigindo estorno de crédito das operações anteriores.
+ Suponhamos, neste exemplo, um crédito total de R$ 200,00 de ICMS cujo preço dos produtos na
+ entrada com crédito tenha ocorrido com valor de R$ 1.000,00.
+ Operação: venda no atacado
+ Produto: bicicleta elétrica
+
+ Preço na Nota Fiscal: R$ 2.000,00
+
+ Alíquota padrão: 20%, já incluído o acréscimo de alíquota destinado ao FECP, Lei nº 4.056/02.
+
+
+ No Documento Fiscal (NF-e ou NFC-e)
+ CRT: 3 – Regime normal
+
+ CST: 00 – Tributada integralmente
+ Alíquota: 20% (18% ICMS e 2% ICMS destinado ao FECP)
+
+ Preço do item na Nota Fiscal: R$ 2.000,00
+
+ Valor da BC do item: R$ 2.000,00
+ Imposto destacado do item: R$ 400,00
+                                                                                                    26
+
+
+
+
+Na EFD ICMS/IPI
+No registro E115, deve ser informado no campo 02 o código RJ805289 e no campo 03, “0”, para
+identificar o Benefício Fiscal usufruído pelo estabelecimento. A linha de registro da EFD terá a
+seguinte configuração:
+                                       E115|RJ805289|0||
+
+
+No registro C100, os documentos de entrada devem ser escriturados normalmente e os
+documentos de saídas devem ser escriturados da forma como foram emitidos. As linhas de registro
+da EFD das Notas Fiscais de entrada e saída terão a seguinte configuração, respectivamente:
+ C100|0|1|remetente|55|00|001|000000001|chavedodocumento|01012018|02012018|1000,00|0||
+                              |1000,00|9||||1000,00|200,00||||||||
+C100|1|0|adquirente|55|00|001|000000001|chavedodocumento|15012018||2000,00|0|||2000,00|9|||
+                                    |2000,00|400,00||||||||
+
+
+No registro C197, vinculado ao documento de saída, será informado no campo 02 o código
+RJ10080000 e no campo 03 o código RJ805289 que identifica a norma legal e espécie no registro
+E115. No campo 07, o valor do crédito presumido, no caso R$ 300,00.
+
+         Cálculo:
+         Crédito presumido = Imposto do item destacado na Nota Fiscal - (Preço do item na Nota
+         Fiscal * Alíquota reduzida)
+         Crédito presumido = 400 - (2000 * 0,05)
+         Crédito presumido = R$ 300,00
+A linha de registro da EFD terá a seguinte configuração:
+                   C197|RJ10080000|RJ805289|codigoitem|2000,00|5|300,00||
+
+
+No registro E111, deverão ser efetuados os registros relacionados com o estorno do crédito do
+ICMS em função do crédito na entrada do produto beneficiado da seguinte forma:
+    ▪   no campo 02: informar o código RJ018003 – Estornos de Créditos - Estorno de crédito em
+        função de norma relacionada no manual de que trata o Decreto 27.815/2001;
+    ▪   no campo 03: preencher com o código da Tabela 5.2 correspondente à norma utilizada,
+        indicado no campo 02 do registro E115;
+    ▪   no campo 04: somatório dos valores de ICMS a estornar, destacados nas notas fiscais de
+        entrada do produto beneficiado com o crédito presumido, no caso R$ 200,00.
+A linha de registro da EFD terá a seguinte configuração:
+                               E111|RJ018003|RJ805289|200,00|
+
+
+No registro E110, além dos campos preenchidos a partir dos valores consolidados advindos dos
+documentos fiscais, deve ser lançado no campo 05 o Valor total de Ajustes “Estornos de créditos”,
+no caso R$ 200,00, e no campo 07 o valor do crédito presumido, no caso R$ 300,00. A linha de
+registro da EFD terá a seguinte configuração:
+    E110|400,00|0,00|0,00|200,00|200,00|300,00|0,00|0,00|0,00|100,00|0,00|100,00|0,00|0,00|
+
+
+EXEMPLO 2 - CRÉDITO PRESUMIDO SOBRE O TOTAL DE OPERAÇÕES (E111)
+Vejamos um exemplo da aplicação do benefício fiscal conferido ao setor de artefatos de joalheria,
+pelo Decreto nº 41.596/08, que concede crédito presumido nas operações de saída de modo que a
+                                                                                                     27
+
+
+
+
+carga tributária da operação seja 7,5%. A mesma norma determina que o crédito presumido seja
+lançado diretamente no registro de apuração. Suponhamos, neste exemplo, um crédito total de R$
+200,00 de ICMS cujo preço dos produtos na entrada com crédito tenha ocorrido com valor de R$
+1.000,00.
+
+
+Operação: venda no varejo
+Produto: relógio
+Preço na Nota Fiscal: R$ 2.000,00
+
+Alíquota padrão: 20%, já incluído o acréscimo de alíquota destinado ao Fundo Estadual de
+Combate à Pobreza (FECP), conforme o disposto no art. 1º, parágrafo único, II, da Lei nº 4.056/02.
+
+
+No Documento Fiscal (NF-e ou NFC-e)
+
+CRT: 3 – Regime normal
+
+CST: 00 – Tributada integralmente
+
+Alíquota: 20%
+Preço na Nota Fiscal: R$ 2.000,00
+
+Valor da BC: R$ 2.000,00
+Imposto destacado: R$ 400,00
+
+
+Na EFD ICMS/IPI
+No registro E115, deve ser informado no campo 02 o código RJ805279 e no campo 03, “0”, para
+identificar o Benefício Fiscal usufruído pelo estabelecimento. A linha de registro da EFD terá a
+seguinte configuração:
+                                       E115|RJ805279|0||
+
+
+No registro C100, os documentos de entrada devem ser escriturados normalmente. Os documentos
+de saídas devem ser escriturados da maneira como foram emitidos. As linhas de registro da EFD
+das Notas Fiscais de entrada e saída terão a seguinte configuração, respectivamente:
+ C100|0|1|remetente|55|00|001|000000001|chavedodocumento|01012018|02012018|1000,00|0||
+                              |1000,00|9||||1000,00|200,00||||||||
+C100|1|0|adquirente|55|00|001|000000001|chavedodocumento|15012018||2000,00|0|||2000,00|9|||
+                                    |2000,00|400,00||||||||
+
+
+No registro E111, deverão ser efetuados os registros relacionados com o crédito apropriado da
+seguinte forma:
+    ▪   no campo 02: informar o código RJ028001 - Outros Créditos - Crédito presumido em função
+        de norma relacionada no manual de que trata o Decreto 27.815/2001;
+    ▪   no campo 03: preencher com o código da Tabela 5.2 correspondente à norma utilizada,
+        indicado no campo 02 do registro E115;
+    ▪   no campo 04: valor do crédito presumido, no caso R$ 250,00, pois o exemplo se resume a
+        um produto.
+          Cálculo:
+          Crédito presumido = Imposto destacado na Nota Fiscal - (Preço do item na Nota Fiscal *
+          Alíquota reduzida)
+                                                                                                    28
+
+
+
+
+         Crédito presumido = 400 - (2000 * 0,075)
+         Crédito presumido = R$ 250,00
+
+A linha de registro da EFD terá a seguinte configuração:
+
+                               E111|RJ028001|RJ805279|250,00|
+
+
+Também no registro E111, deverão ser efetuados os registros relacionados com o estono do crédito
+do ICMS em função do crédito na entrada do produto beneficiado da seguinte forma:
+    ▪   no campo 02: informar o código RJ018003 – Estornos de Créditos - Estorno de crédito em
+        função de norma relacionada no manual de que trata o Decreto 27.815/2001;
+    ▪   no campo 03: preencher com o código da Tabela 5.2 correspondente à norma utilizada e
+        espécie, indicado no campo 02 do registro E115;
+    ▪   no campo 04: somatório dos valores de ICMS a estornar, destacados nas notas fiscais de
+        entrada do produto beneficiado com o crédito presumido, no caso R$ 200,00.
+A linha de registro da EFD terá a seguinte configuração:
+                               E111|RJ018003|RJ805279|200,00|
+
+
+No registro E110, além dos campos preenchidos a partir dos valores consolidados advindos dos
+documentos fiscais, deve ser lançado no campo 05 o Valor total de Ajustes “Estornos de créditos”,
+no caso R$ 200,00 e no campo 08 o valor do crédito presumido, no caso R$ 250,00. A linha de
+registro da EFD terá a seguinte configuração:
+    E110|400,00|0,00|0,00|200,00|200,00|0,00|250,00|0,00|0,00|150,00|0,00|150,00|0,00|0,00|
+                                                                                                        29
+
+
+
+
+4. “TRIBUTAÇÃO SOBRE FATURAMENTO”, “TRIBUTAÇÃO
+SOBRE RECEITA” OU “TRIBUTAÇÃO SOBRE SAÍDA”
+
+Os procedimentos a seguir devem ser adotados por contribuinte que utilizar norma relacionada no
+Manual de Diferimento, Ampliação de Prazo de Recolhimento, Suspensão e de Incentivos e Benefícios
+de Natureza Tributária classificada como “Tributação sobre Faturamento”, “Tributação sobre Receita”
+ou “Tributação sobre Saída”.
+As orientações seguintes estão fundamentadas no artigo 12 do Anexo XVIII da Parte da Resolução
+SEFAZ n° 720/2014, com a redação da Resolução SEFAZ n° 705/2024.
+
+
+No Documento Fiscal (NF-e ou NFC-e)
+Essa espécie de benefício se concretiza na escrita fiscal, não ocorrendo nenhuma alteração no
+preenchimento do documento, que deve ser emitido seguindo as regras comuns de tributação
+aplicáveis ao regime normal, principalmente em relação ao destaque de imposto, devendo ser
+considerada a situação tributária prevista para a operação. Assim, se a tributação é de 20%, deve ser
+utilizada essa alíquota. Se a operação é isenta, deve ser indicada operação isenta.
+
+
+Na EFD ICMS/IPI
+Identificação do Benefício
+No registro E115 - Informações adicionais da apuração – valores declaratórios, o contribuinte deve
+identificar o benefício utilizado da seguinte forma:
+   •   Campo 02: preencher com o código da Tabela 5.2 correspondente ao dispositivo legal e
+       espécie;
+   •   Campo 03: preencher com o valor 0;
+   •   Campo 04: não preencher.
+Deverão ser preenchidos tantos registros E115 quantas forem as combinações aproveitadas pelo
+contribuinte naquele mês de apuração entre normas previstas no Manual de Diferimento, Ampliação de
+Prazo de Recolhimento, Suspensão e de Incentivos e Benefícios de Natureza Tributária que consta do
+Decreto 27.815/2001 e espécies de benefício.
+
+
+Documentos de entrada:
+Os documentos de entrada devem ser escriturados normalmente, sob a ótica do declarante da EFD,
+informando o ICMS destacado no campo 22 do registro C100 quando, segundo as regras normais de
+tributação, houver direito a crédito.
+
+
+Documentos de saída:
+Os documentos de saída devem ser escriturados normalmente, conforme foram emitidos, informando
+o ICMS destacado na nota fiscal, quando houver, no campo 22 do registro C100.
+
+
+Apuração:
+No registro E111 - Ajuste/benefício/incentivo da apuração do ICMS, deve ser efetuado:
+    a) O estorno dos créditos escriturados, salvo os permitidos pela legislação, preenchendo-se os
+    campos da forma que segue:
+                                                                                                        30
+
+
+
+
+      •    Campo 02: código RJ018003 – Estornos de Créditos - Estorno de crédito em função de
+           norma relacionada no manual de que trata o Decreto 27.815/2001;
+      •    Campo 03: preencher com o código da Tabela 5.2 correspondente à norma utilizada e
+           espécie, indicado no campo 02 do registro E115;
+      •    Campo 04: somatório dos valores de ICMS destacados nas notas fiscais de entrada e que
+           foram escrituradas com crédito no campo 22 do registro C100.
+
+
+  b) Lançar a crédito no registro E111 a diferença positiva entre o total dos débitos relativos às
+  operações abrangidas pela norma utilizada no período e o valor devido do imposto calculado em
+  função do faturamento, receita ou saída, conforme exigência da norma utilizada.
+
+      •    Campo 02: código RJ028001 – Outros Créditos - Crédito presumido em função de norma
+           relacionada no manual de que trata o Decreto 27.815/2001
+      •    Campo 03: preencher com o código da Tabela 5.2 correspondente à norma utilizada e
+           espécie, indicado no campo 02 do registro E115;
+      •    Campo 04: preencher com o valor da diferença entre a soma dos débitos de ICMS relativo
+           às operações de saídas ocorridas no período, apurado segundo as regras comuns de
+           tributação e o valor devido de acordo com o benefício fiscal de natureza “Tributação sobre
+           Faturamento”, “Tributação sobre Receita” ou “Tributação sobre Saída”, se o resultado for
+           positivo.
+   c) Caso o valor devido do imposto calculado seja superior ao total dos débitos (§ 2º do artigo 12
+   do Anexo XVIII da Parte II da Resolução SEFAZ n° 720/2014), lançar o valor da diferença a débito:
+       •    Campo 02 código RJ008006 - Outros Débitos - ICMS calculado sobre o faturamento,
+            receita ou saída previsto em norma relacionada no manual de que trata o Decreto
+            27.815/2001
+      •    Campo 03: preencher com o código da Tabela 5.2 correspondente à norma utilizada e
+           espécie, indicado no campo 02 do registro E115;
+      •    Campo 04: preencher com o valor da diferença entre a soma dos débitos de ICMS relativo
+           às operações de saídas ocorridas no período, apurado segundo as regras comuns de
+           tributação e o valor devido de acordo com o benefício fiscal de natureza “Tributação sobre
+           Faturamento”, “Tributação sobre Receita” ou “Tributação sobre Saída”, se o resultado for
+           negativo.
+
+
+
+
+Na Prática
+
+Vejamos um exemplo da aplicação das regras no benefício fiscal concedido aos fabricantes de
+produtos têxteis pela lei nº 6.331/12. Por este regime, os estabelecimentos enquadrados, em
+substituição ao regime comum de tributação, pagam o ICMS equivalente a 3,5% do valor contábil
+das operações de saídas realizadas no mês de referência.
+Operação: venda de roupa
+Produto: camiseta
+
+Preço na Nota Fiscal: R$ 40,00
+Alíquota: 20% (18% de ICMS e 2% de ICMS destinado ao FECP)
+No benefício concedido pela Lei nº 6.331/12, todos os créditos apurados no registro devem ser
+estornados, inclusive, os créditos de bens adquiridos para integrar o ativo permanente. Vamos supor,
+neste exemplo, um crédito por entradas no valor de R$ 0,70 decorrente da compra de insumos no
+valor de R$ 10,00.
+                                                                                                    31
+
+
+
+
+No Documento Fiscal (NF-e ou NFC-e)
+CRT: 3 – Regime normal
+
+CST: 00 – Tributada integralmente
+Alíquota: 20% (18% de ICMS, campo pICMS, e 2% de ICMS destinado ao FECP, campo pFCP)
+
+Valor da BC: R$ 40,00
+Imposto destacado: R$ 8,00 (R$ 7,2 de ICMS, campo vICMS, e R$ 0,8 de ICMS destinado ao
+FECP, campo vFCP)
+
+
+Na EFD ICMS/IPI
+No registro E115, deve ser informado no campo 02 o código RJ822371 e no campo 03, “0”, para
+identificar o Benefício Fiscal usufruído pelo estabelecimento. A linha de registro da EFD terá a
+seguinte configuração:
+                                        E115|RJ822371|0| |
+
+
+No registro C100, os documentos de entrada e saída devem ser escriturados normalmente, com o
+destaque do imposto, se houver.
+   C100|0|1|remetente|55|00|001|000000001|chavedodocumento|01012018|02012018|10,00|0||
+                                  |10,00|9||||10,00|0,70||||||||
+   C100|1|0|adquirente|65|00|001|000000001|chavedodocumento|15012018||40,00|0|||40,00|9|||
+                                       |40,00|8,00||||||||
+
+
+No registro E111, deverão ser promovidos os estornos dos créditos escriturados a partir das notas
+fiscais recebidas.
+Assim, para registro do estorno de créditos, o contribuinte deverá:
+    •   no campo 02: informar o código RJ018003 – Estornos de Créditos - Estorno de crédito em
+        função de norma relacionada no manual de que trata o Decreto 27.815/2001;
+    ▪   no campo 03: preencher com o código da Tabela 5.2 correspondente à norma utilizada e
+        espécie, indicado no campo 02 do registro E115;
+    ▪   no campo 04: somatório dos valores de ICMS destacados nas notas fiscais de entrada. No
+        exemplo, R$ 0,70.
+
+A linha de registro da EFD terá a seguinte configuração:
+                                 E111|RJ018003|RJ822371|0,70|
+
+Para registro do débito de 3,5% sobre o valor contábil das operações de saídas realizadas no mês
+de referência, o contribuinte deverá:
+    ▪ no campo 02: informar o código RJ028001 – Outros Créditos - Crédito presumido em função
+        de norma relacionada no manual de que trata o Decreto 27.815/2001 (hipótese referente ao
+        item b)
+    ▪ no campo 03: preencher com o código da Tabela 5.2 correspondente à norma utilizada e
+        espécie, indicado no campo 02 do registro E115;
+    ▪ no campo 04:
+            o somatório dos valores de ICMS destacados nas notas fiscais de saída: R$ 40,00 x
+                 20% = R$ 8,00
+            o valor do ICMS de 3.5% valor contábil das operações de saídas realizadas no mês
+                 de referência, no caso, R$ 40,00 x 3.5% = R$ 1,40.
+            o valor a ser informado no campo 4: R$ 6,60 (R$ 8,00 – R$ 1,40)
+                                                                                                      32
+
+
+
+
+A linha de registro da EFD terá a seguinte configuração:
+                                 E111|RJ028001|RJ822371|6,60|
+
+
+Neste exemplo, deverão ser lançados os valores consolidados dos ajustes realizados no registro
+E111, no registro E110, nos campos 05 e 07 referentes respectivamente ao estorno de créditos e
+ao ajuste a crédito, nos valores respectivamente de 0,70, e 6,60. A linha de registro da EFD terá a
+seguinte configuração, com a demonstração do FECP devido:
+               E110|8,00|0,00|0,00|0,70|0,70|0,00|6,60|0,00|0,00|1,40|0,40|1,00|0,00|0,40|
+                                                                                                     33
+
+
+
+
+5. DIFERIMENTO
+
+Os procedimentos abaixo devem ser adotados por contribuinte que utilizar norma relacionada no
+Manual de Diferimento, Ampliação de Prazo de Recolhimento, Suspensão e de Incentivos e Benefícios
+de Natureza Tributária classificada como “diferimento”.
+
+
+No Documento Fiscal (NF-e ou NFC-e)
+Nas operações ou prestações beneficiadas, o documento fiscal deve ser emitido seguindo as regras
+aplicáveis ao regime normal de tributação (confronto entre débito e créditos), com atenção para os
+seguintes campos:
+   •   CRT (Código do Regime Tributário), campo CRT na NF-e/NFC-e: conforme o caso,
+       ▪ 3 - Regime normal; ou
+       ▪ 2 - Simples Nacional – excesso de sublimite da receita bruta, caso tenha ultrapassado o
+          sublimite estadual, nos termos do § 1º do art. 20 da Lei Complementar n.º 123, de 14 de
+          dezembro de 2006.
+
+       ▪   CST (Código da Situação tributária), campo CST na NF-e/NFC-e: 51 - diferimento
+
+   •   Valor da BC do ICMS, campo vBC: valor da BC.
+               O campo “Percentual da Redução de BC” (pRedBC) deverá ser preenchido caso a
+               operação seja também beneficiada com redução de base de cálculo.
+
+
+                              Atenção! Informação impressa no DANFE
+
+           O valor da base de cálculo, ainda que 100% diferido o imposto, aparecerá impresso
+           no DANFE.
+           Isso não prejudica as regras de escrituração previstas para operações com
+           diferimento.
+
+
+
+   •   Alíquota, campo pICMS: alíquota padrão aplicada à mercadoria, sem o percentual destinado
+       ao FECP.
+
+   •   Valor do ICMS da Operação, campo vICMSOp: valor do imposto como se não houvesse
+       diferimento.
+
+   •   Percentual do diferimento, campo pDif: informar o percentual.
+               No caso de diferimento total, informar o percentual de diferimento "100".
+
+
+   •   Valor do ICMS diferido, campo vICMSDif: informar o valor diferido.
+              Fórmula:
+              ICMS diferido = Preço na Nota Fiscal / (1 - Alíquota) * Alíquota
+
+   •   Valor do ICMS, campo vICMS: Informar o valor realmente devido, caso se trate de diferimento
+       parcial.
+                                                                                                     34
+
+
+
+
+   •   Valor da Base de Cálculo do FCP, campo vBCFCP: valor da base de cálculo, igual ao valor
+       do campo vBC
+
+   •   Percentual do Fundo de Combate à Pobreza (FCP), campo pFCP: informar o percentual
+       destinado ao FECP.
+
+   •   Valor do ICMS relativo ao Fundo de Combate à Pobreza (FCP), campo vFCP:, a despeito
+       do que consta no campo observações da NT2020.005, preencher o campo com o valor
+       considerando o diferimento, ou seja, com o valor do FECP efetivo. Assim sendo, se o
+       diferimento for total, informar zero.
+
+   •   Percentual do diferimento do ICMS relativo ao Fundo de Combate à Pobreza (FCP),
+       campo pFCPDif: informar o percentual.
+
+               No caso de diferimento total, informar o percentual de diferimento "100".
+
+
+
+   •   Valor do FECP diferido, campo vFCPdif: informar o valor do FECP diferido
+              Fórmula:
+              ICMS diferido = Preço na Nota Fiscal / (1 - Alíquota) * Alíquota
+
+   •   Valor efetivo do ICMS relativo ao Fundo de Combate à Pobreza (FCP), campo vFCPEfet:
+       a despeito do que consta na NT2020.005, informar zero.
+
+   •   Código de Benefício Fiscal na UF, campo cBenef: Código do Benefício Fiscal que deverá
+       ser informado no registro E115 a partir da tabela 5.2.
+
+
+Na EFD ICMS/IPI
+Identificação do Benefício
+No registro E115 - Informações adicionais da apuração – valores declaratórios, o contribuinte deve
+identificar o benefício utilizado da seguinte forma:
+   •   Campo 02: preencher com o código da Tabela 5.2 correspondente ao dispositivo legal e a
+       espécie;
+   •   Campo 03: preencher com o valor 0;
+   •   Campo 04: não preencher.
+Deverão ser preenchidos tantos registros E115 quantas forem as combinações aproveitadas pelo
+contribuinte naquele mês de apuração entre normas previstas no Manual de Diferimento, Ampliação de
+Prazo de Recolhimento, Suspensão e de Incentivos e Benefícios de Natureza Tributária que consta do
+Decreto 27.815/2001 e espécies de benefício.
+
+
+Documentos de entrada:
+No registro C100, os documentos de entrada devem ser escriturados normalmente, sob a ótica do
+declarante da EFD, informando o ICMS destacado no campo 22 do registro C100 quando, segundo as
+regras normais de tributação, houver direito a crédito.
+
+
+Documentos de saída:
+                                                                                                        35
+
+
+
+
+No registro C100, os documentos de saída devem ser escriturados normalmente, conforme foram
+emitidos, sem ICMS ou com ICMS parcial, a depender da extensão do diferimento.
+No registro C197, filho do registro C100 da nota fiscal emitida com diferimento, devem ser feitos os
+seguintes lançamentos:
+   •    Campo 02: preencher com o código informativo RJ90980001 – Informativo - Diferimento em
+        função de norma relacionada no manual de que trata o Decreto 27.815/2001;
+    •   Campo 03: preencher com o código da Tabela 5.2 correspondente à norma utilizada e espécie,
+        indicado no campo 02 do registro E115;
+    •   Campo 04: informar o código do item do produto diferido;
+    •   Campos 05 a 07: não preencher;
+    •   Campo 08: valor do ICMS diferido informado no campo vICMSDif, somado ao FECP diferido,
+        informado no campo vFCPDif, ambos do documento fiscal.
+
+
+
+ Na Prática
+
+ Vejamos um exemplo da aplicação do benefício conferido aos estabelecimentos que beneficiem e/ou
+ industrializem produtos aplicados na construção civil pelo Decreto nº 44.629/14, no que se refere ao
+ diferimento. Suponhamos a importação de um equipamento destinado a compor o ativo fixo do
+ estabelecimento.
+ Operação: importação
+ Produto: equipamento X
+
+ Preço do produto na Nota Fiscal: R$ 30.000,00 (observando as regras de formação de base de
+ cálculo prevista na Lei 2657/96)
+
+ Alíquota: 18% (art. 14, IV, da Lei nº 2.657/96, já incluído o percentual do FECP)
+
+
+ No Documento Fiscal (NF-e ou NFC-e)
+ Nota Fiscal de Entrada
+ CRT: 3 – Regime normal
+ CST: 51 – Diferimento
+ Valor do produto: 30.000,00 (valor desonerado)
+ Valor da BC do ICMS:
+  - campo vBC: 36.585,36 (considerando que o imposto integra a base de cálculo)
+
+          Cálculo:
+          BC = 30.000 / (1 – 0,18)
+          BC = 36.585,36
+  - campo vBCFCP: 36.585,36
+
+ Alíquota:
+
+  - campo pICMS: 16%
+
+  - campo pFCP: 2%
+ Valor do ICMS da Operação:
+                                                                                                   36
+
+
+
+
+ - campo vICMSOp: R$ 5.853,66
+Valor do ICMS Diferido:
+
+ - campo vICMSDif: R$ 5.853,66
+         Cálculo:
+         ICMS diferido = (Preço na Nota Fiscal / (1 - Alíquota)) * Alíquota
+         ICMS diferido = (30.000 / (1 – 0,18)) * 0,16
+         ICMS diferido = R$ 5.853,66
+ - campo vFCPDif: preencher: R$ 731,70
+
+         Cálculo:
+         ICMS diferido = (Preço na Nota Fiscal / (1 - Alíquota)) * Alíquota
+         ICMS diferido = (30.000 / (1 – 0,18)) * 0,02
+         ICMS diferido = R$ 731,71
+Percentual do diferimento:
+
+ - campo pDif: 100
+
+ - campo pFECDif: 100
+
+Valor do ICMS, campo vICMS: 0
+
+Valor do ICMS FECP, campo vFCP: 0,00
+
+campo vFCPEfet: 0,00
+
+Código de Benefício Fiscal na UF, campo cBenef: RJ818317
+
+
+Na EFD ICMS/IPI
+No registro E115, deve ser informado no campo 02 o código RJ818317 e no campo 03, “0”, para
+identificar o Benefício Fiscal usufruído pelo estabelecimento. A linha de registro da EFD terá a
+seguinte configuração:
+                                        E115|RJ818317|0||
+
+
+No registro C100, o documento de entrada que acobertou a importação deve ser escriturado
+normalmente, sem informações de imposto (alíquota e base de cálculo). A linha de registro da EFD
+terá a seguinte configuração:
+ C100|0|0|remetente|55|00|001|000000001|chavedodocumento|01012018|02012018|30000,00|0| |
+                              |30000,00|9| | | |0,00|0,00| | | | | | | |
+
+
+No registro C197, vinculado ao documento de entrada, será informado no campo 02 o código
+RJ90980001 e no campo 03 o código RJ818317 que identifica a norma legal no registro E115. No
+campo 08, o valor do ICMS diferido informado no campo vICMSdif somado com o FECP diferido,
+informado no campo vFCPDif, ambos do documento fiscal, no caso R$ 6.585,36. A linha de registro
+da EFD terá a seguinte configuração:
+                       C197|RJ90980001|RJ818317|codigoitem||||6585,36|
+                                                                                                         37
+
+
+
+
+6. INEXIGIBILIDADE DE ESTORNO DE CRÉDITO
+Os procedimentos abaixo devem ser adotados por contribuinte que utilizar norma relacionada no
+Manual de Diferimento, Ampliação de Prazo de Recolhimento, Suspensão e de Incentivos e Benefícios
+de Natureza Tributária classificada como “inexigibilidade de estorno de crédito”.
+Esse tipo de benefício está associado a isenções, redução de base de cálculo ou alíquota, entre outras
+espécies de benefícios, excepcionando a regra geral que determina o estorno do imposto creditado
+quando não houver saída subsequente tributada, nas situações dispostas no art. 37 da Lei nº 2.657/96.
+
+
+           Atenção! O contribuinte só deve fazer os lançamentos previstos neste item,
+           referentes à inexigibilidade de estorno de crédito, nos casos em que haja
+           autorização expressa na legislação concedente, por meio de dispositivos como:
+           “Não será exigido o estorno do crédito fiscal de que trata o art. 21 da Lei
+           Complementar nº 87, de 13 de setembro de 1996.”
+
+
+
+
+No Documento Fiscal (NF-e ou NFC-e)
+Especificamente em relação ao estorno de crédito não há nenhum registro a ser feito no documento
+fiscal emitido pelo contribuinte. Todo o procedimento é realizado exclusivamente na escrita fiscal.
+
+
+Na EFD ICMS/IPI
+Identificação do Benefício
+No registro E115 - Informações adicionais da apuração – valores declaratórios, o contribuinte deve
+identificar o benefício utilizado da seguinte forma:
+    •   Campo 02: preencher com o código da Tabela 5.2 correspondente ao dispositivo legal;
+    •   Campo 03: preencher com o valor 0;
+    •   Campo 04: não preencher.
+Deverão ser preenchidos tantos registros E115 quantas forem as combinações aproveitadas pelo
+contribuinte naquele mês de apuração entre normas previstas no Manual de Diferimento, Ampliação de
+Prazo de Recolhimento, Suspensão e de Incentivos e Benefícios de Natureza Tributária que consta do
+Decreto 27.815/2001 e espécies de benefício.
+
+
+Documentos de entrada:
+No registro C100, os documentos de entrada devem ser escriturados normalmente, sob a ótica do
+declarante da EFD, informando o ICMS destacado no campo 22 do registro C100 quando, em situação
+regular, houver direito a crédito.
+
+
+Documentos de saída:
+No registro C100, os documentos de saída devem ser escriturados normalmente, conforme foram
+emitidos, com as informações exigidas em razão da situação tributária da operação, informando o ICMS
+destacado na nota fiscal, quando houver, no campo 22 do registro C100.
+                                                                                                          38
+
+
+
+
+Apuração:
+No registro E111 - Ajuste/benefício/incentivo da apuração do ICMS, deve ser efetuado o lançamento
+do crédito a que o contribuinte tem direito em função da inexigibilidade de estorno de crédito prevista
+na norma utilizada para que devolva à apuração o crédito lançado como estornado em cumprimento
+ao disposto no art. 37 da lei 2.657/96.
+Assim, para registro do estorno de créditos, o contribuinte deverá:
+    •   Campo 02: código RJ018003 – Estornos de Créditos - Estorno de crédito em função de norma
+        relacionada no manual de que trata o Decreto 27.815/2001;
+        • Campo 03: preencher com o código da Tabela 5.2 correspondente à norma utilizada e
+            espécie, indicado no campo 02 do registro E115;
+        • Campo 04: somatório dos valores de ICMS destacados nas notas fiscais de entrada que
+            devem ser estornados.
+
+
+                                   Atenção! Estornos de créditos
+
+           Esse lançamento tem o condão de mostrar os estornos de créditos de produtos ou
+           serviços em função da posterior saída da mercadoria ou serviço sem tributação,
+           em função do disposto no art. 37 da lei 2657/96. Os estornos de créditos regulares,
+           que não se referem a produtos, serviços ou insumos relacionados com a
+           mercadoria incentivada devem utilizar os demais códigos de estorno listados no
+           item 3.1 do Manual EFD ICMS/IPI.
+
+
+
+Para registro do crédito em razão da inexigibilidade de seu estorno, o contribuinte deverá:
+    ▪   Campo 02: código RJ028003 – Outros Créditos - Inexigibilidade de estorno de crédito em
+        função de norma relacionada no manual de que trata o Decreto 27.815/2001;
+    ▪   Campo 03: preencher com o código da Tabela 5.2 correspondente à norma utilizada, indicado
+        no campo 02 do registro E115;
+    ▪   Campo 04: valor do crédito cujo estorno não foi exigido.
+
+
+
+ Na Prática
+
+ Vejamos um exemplo da aplicação do benefício fiscal conferido às operações com artigos e
+ aparelhos ortopédicos e para fraturas pelo Convênio ICMS 126/10. Suponhamos a venda de uma
+ cadeira de rodas. A operação é isenta, não sendo exigido o estorno do crédito das operações
+ anteriores. Suponhamos neste exemplo um crédito de R$ 20,00.
+ Operação: saída do industrial para o varejo
+ Produto: cadeira de rodas
+
+ Preço do produto na Nota Fiscal: R$ 200,00
+
+
+ No Documento Fiscal (NF-e ou NFC-e)
+ CRT: 3 - Regime normal
+ CST: 40 - Isenta
+
+ Valor do ICMS desonerado, campo vICMSDeson: R$ 50,00
+
+           Cálculo:
+                                                                                                          39
+
+
+
+
+            ICMS Desonerado = (Preço na Nota Fiscal / (1 - Alíquota)) * Alíquota
+            ICMS Desonerado = (200 / (1 – 0,2)) * 0,20
+            ICMS Desonerado = R$ 50,00
+Motivo da desoneração do ICMS, campo motDesICMS: “9 – Outros”
+Código de Benefício Fiscal na UF, campo cBenef: RJ801163
+
+
+Na EFD ICMS/IPI
+- Registro da isenção
+No registro E115, deve ser informado no campo 02 o código RJ801163 e no campo 03, “0”, para
+identificar o Benefício Fiscal usufruído pelo estabelecimento. A linha de registro da EFD terá a
+seguinte configuração:
+                                          E115|RJ801163|0||
+
+
+No registro C100, os documentos de entrada devem ser escriturados normalmente. Os de saídas,
+também, da maneira como foram emitidos, sem informações de imposto (alíquota e base de cálculo)
+uma vez que a operação é isenta. As linhas de registro da EFD das Notas Fiscais de entrada e saída
+terão a seguinte configuração, respectivamente:
+  C100|0|1|remetente|55|00|001|000000001|chavedodocumento|01012018|02012018|100,00|0||
+                                |100,00|9||||100,00|20,00||||||||
+ C100|1|0|adquirente|65|00|001|000000001|chavedodocumento|15012018| |200,00|0|||200,00|9|||||
+                                            ||||||||
+
+
+No registro C197, vinculado ao documento de saída, será informado no campo 02 o código
+RJ90980000 e no campo 03 o código RJ801163 que identifica a norma legal no registro E115. No
+campo 08, o valor do ICMS desonerado, no caso R$ 50,00.
+A linha de registro da EFD terá a seguinte configuração:
+                           C197|RJ90980000|RJ801163|codigoitem||||50,00|
+
+
+No registro E111, deverão ser efetuados os lançamentos de estorno de créditos para cumprimento
+do disposto no art. 37 da lei 2.657/96 e, posteriormente, dos créditos a que o contribuinte tem direito
+em função da inexigibilidade de seu estorno.
+Assim, para registro do estorno de créditos, o contribuinte deverá:
+
+        •    Campo 02: código RJ018003 – Estornos de Créditos - Estorno de crédito em função de
+             norma relacionada no manual de que trata o Decreto 27.815/2001;
+        • Campo 03: preencher com o código da Tabela 5.2 correspondente à norma utilizada e
+             espécie, indicado no campo 02 do registro E115 (RJ801163);
+        • Campo 04: somatório dos valores de ICMS destacados nas notas fiscais de entrada que
+             devem ser estornados, no exemplo, R$20,00.
+A linha de registro da EFD terá a seguinte configuração:
+                                   E111|RJ018003|RJ801163|20,00|
+
+
+- Registro da inexigibilidade de estorno
+                                                                                                        40
+
+
+
+
+No registro E115, deve ser informado no campo 02 o código RJ803163 e no campo 03, “0”, para
+identificar o Benefício Fiscal usufruído pelo estabelecimento. A linha de registro da EFD terá a
+seguinte configuração:
+                                        E115|RJ803163|0||
+
+
+No Registro E111, para registro do crédito em razão da inexigibilidade de seu estorno, o contribuinte
+deverá efetuar os seguintes lançamentos:
+    ▪   Campo 02: código RJ028003 – Outros Créditos - Inexigibilidade de estorno de crédito em
+        função de norma relacionada no manual de que trata o Decreto 27.815/2001.
+     ▪ Campo 03: preencher com o código da Tabela 5.2 correspondente à norma utilizada,
+        indicado no campo 02 do registro E115 (RJ803163).
+     ▪ Campo 04: valor do crédito cujo estorno não foi exigido, no exemplo, R$ 20,00.
+A linha de registro da EFD terá a seguinte configuração:
+                                 E111|RJ028003|RJ803163|20,00|
+Atenção! O Convênio 126/10 abrange mais de uma modalidade de benefício fiscal e a fruição de
+cada um deles deve ser registrada com códigos diferentes. Sendo assim, o campo 03 do Registro
+E111 referente à isenção deve ser preenchido com o código RJ801163 e aquele referente à
+inexigibilidade de estorno de crédito com o código RJ803163.
+
+
+No registro E110, além dos campos preenchidos a partir dos valores consolidados advindos dos
+documentos fiscais, deverão ser efetuados os lançamentos nos campos 05 e 08 deverão ser
+preenchidos respectivamente com o valor consolidado dos estornos de crédito e do ajuste a título de
+crédito, no exemplo acima, ambos no mesmo valor de R$20,00. A linha de registro da EFD terá a
+seguinte configuração:
+         E110|0,00|0,00|0,00|20,00|20,00|0,00|20,00|0,00|0,00|0,00|0,00|0,00|20,00|0,00|
+                                                                                                         41
+
+
+
+
+7. REPASSE DO CRÉDITO FISCAL OU TRANSFERÊNCIA DE
+SALDO CREDOR ACUMULADO
+
+Os procedimentos abaixo devem ser adotados por contribuinte que utilizar norma relacionada no
+Manual de Diferimento, Ampliação de Prazo de Recolhimento, Suspensão e de Incentivos e Benefícios
+de Natureza Tributária classificada como “repasse do crédito fiscal” ou “transferência de saldo credor
+acumulado”.
+
+
+No Documento Fiscal (NF-e)
+Nas operações ou prestações beneficiadas, o documento fiscal deve ser emitido seguindo as regras
+aplicáveis ao regime normal de tributação (confronto entre débito e créditos), com atenção para os
+seguintes campos:
+    •   CRT (Código do Regime Tributário), campo CRT na NF-e:
+        ▪   3 - Regime normal; ou
+        ▪   2 - Simples Nacional – excesso de sublimite da receita bruta, caso tenha ultrapassado o
+            sublimite estadual, nos termos do § 1º do art. 20 da Lei Complementar nº 123, de 14 de
+            dezembro de 2006.
+
+    •   Finalidade de emissão, campo finNFe: 3 – NF-e de Ajuste
+    •   CST (Código da Situação tributária), campo CST na NF-e: 90 – outros
+    •   CFOP: 5601 – Transferência de Crédito de ICMS Acumulado
+    •   Descrição: Transferência de Crédito de ICMS Acumulado
+    •   Valor Total bruto, campo vProd: o valor do crédito acumulado transferido
+    •   Código de Benefício Fiscal na UF, campo cBenef: Código do Benefício Fiscal que deverá
+        ser informado no registro E115 a partir da tabela 5.2.
+
+        Nos demais campos, preencher com “0” (zero) para todos os locais numéricos e obrigatórios
+        nos quais não consta orientação específica.
+
+
+Na EFD ICMS/IPI
+- Remetente
+Identificação do Benefício
+No registro E115 - Informações adicionais da apuração – valores declaratórios, o contribuinte deve
+identificar o benefício utilizado da seguinte forma:
+    •   Campo 02: preencher com o código da Tabela 5.2 correspondente ao dispositivo legal e a
+        espécie;
+    •   Campo 03: preencher com o valor 0;
+    •   Campo 04: não preencher.
+Deverão ser preenchidos tantos registros E115 quantas forem as combinações aproveitadas pelo
+contribuinte naquele mês de apuração entre normas previstas no Manual de Diferimento, Ampliação de
+Prazo de Recolhimento, Suspensão e de Incentivos e Benefícios de Natureza Tributária que consta do
+Decreto 27.815/2001 e espécies de benefício.
+                                                                                                         42
+
+
+
+
+Documentos de saída:
+No registro C100, os documentos de saída devem ser escriturados normalmente, conforme foram
+emitidos.
+No registro C197, filho do registro C100 da nota fiscal emitida para transferência ou repasse de saldo
+credor, devem ser feitos os seguintes lançamentos:
+    •   Campo 02: preencher com o código informativo RJ40080001 – Outros débitos - Transferência
+        de saldo credor ou repasse de crédito em função de norma relacionada no manual de que trata
+        o Decreto 27.815/2001;
+    •   Campo 03: preencher com o código da Tabela 5.2 correspondente à norma utilizada e espécie,
+        indicado no campo 02 do registro E115;
+    •   Campos 04, 05 e 08: não preencher;
+    •   Campo 07: valor do repasse ou transferência realizados.
+
+
+- Destinatário
+Identificação do Benefício
+No registro E115 - Informações adicionais da apuração – valores declaratórios, o contribuinte deve
+identificar o benefício utilizado da seguinte forma:
+    •   Campo 02: preencher com o código da Tabela 5.2 correspondente ao dispositivo legal e a
+        espécie;
+    •   Campo 03: preencher com o valor 0;
+    •   Campo 04: não preencher.
+Deverão ser preenchidos tantos registros E115 quantas forem as combinações aproveitadas pelo
+contribuinte naquele mês de apuração entre normas previstas no Manual de Diferimento, Ampliação de
+Prazo de Recolhimento, Suspensão e de Incentivos e Benefícios de Natureza Tributária que consta do
+Decreto 27.815/2001 e espécies de benefício.
+
+
+Documentos de entrada:
+No registro C100, os documentos de entrada devem ser escriturados normalmente, conforme foram
+emitidos.
+No registro C197, filho do registro C100 da nota fiscal emitida para transferência ou repasse de saldo
+credor, devem ser feitos os seguintes lançamentos:
+    •   Campo 02: preencher com o código informativo RJ10080002 – Outros créditos - Transferência
+        de saldo credor ou repasse de crédito em função de norma relacionada no manual de que trata
+        o Decreto 27.815/2001;
+    •   Campo 03: preencher com o código da Tabela 5.2 correspondente à norma utilizada e espécie,
+        indicado no campo 02 do registro E115;
+    •   Campos 04, 05 e 08: não preencher;
+    •   Campo 07: valor do repasse/transferência recebido.
+
+
+
+ Na Prática
+
+ Vejamos um exemplo da aplicação do benefício conferido aos integrantes da cadeia farmacêutica
+ pelo Decreto nº 36.450/04, que autoriza transferência de saldo credor acumulado entre os
+ estabelecimentos industriais.
+                                                                                                     43
+
+
+
+
+Valor do crédito transferido: R$ 50.000,00
+
+
+No Documento Fiscal (NF-e)
+CRT: 3 – Regime normal
+
+Finalidade de emissão, campo finNFe: 3 -NF-e de Ajuste
+
+CST: 90 – outros
+CFOP: 5601 – Transferência de Crédito de ICMS Acumulado
+
+Descrição: Transferência de Crédito de ICMS Acumulado
+
+Valor Total bruto, campo vProd: R$ 50.000,00
+Código de Benefício Fiscal na UF, campo cBenef: RJ821231
+
+
+Na EFD ICMS/IPI
+- Remetente
+No registro E115, deve ser informado no campo 02 o código RJ821231 e no campo 03, “0”, para
+identificar o Benefício Fiscal usufruído pelo estabelecimento. A linha de registro da EFD terá a
+seguinte configuração:
+                                        E115|RJ821231|0||
+
+
+No registro C100, o documento de saída emitido para transferência do saldo credor deve ser
+escriturado normalmente, sem informações de imposto (alíquota e base de cálculo).
+A linha de registro da EFD terá a seguinte configuração:
+C100|1|0|destinatário|55|00|001|000000001|chavedodocumento|01012018|01012018|50000,00|2|||
+                                      50000,00|9|||||||||||||
+
+
+No registro C197, vinculado ao documento de saída, será informado no campo 02 o código
+RJ40080001 e no campo 03 o código RJ821231 que identifica a norma legal no registro E115. No
+campo 07, o valor do saldo credor do ICMS transferido, no caso R$ 50.000,00. A linha de registro
+da EFD terá a seguinte configuração:
+                      C197| RJ40080001|RJ821231|codigoitem|||50000,00||
+
+
+- Destinatário
+No registro E115, deve ser informado no campo 02 o código RJ821231 e no campo 03, “0”, para
+identificar o Benefício Fiscal usufruído pelo estabelecimento. A linha de registro da EFD terá a
+seguinte configuração:
+                                        E115|RJ821231|0||
+
+
+No registro C100, o documento de entrada que acobertou o recebimento do saldo credor transferido
+deve ser escriturado normalmente, sem informações de imposto (alíquota e base de cálculo). A linha
+de registro da EFD terá a seguinte configuração:
+C100|0|1|remetente|55|00|001|000000001|chavedodocumento|01012018|01012018|50000,00|2|||5
+                                     0000,00|9|||||||||||||
+                                                                                               44
+
+
+
+
+No registro C197, vinculado ao documento de entrada, será informado no campo 02 o código
+RJ10080002 e no campo 03 o código RJ821231 que identifica a norma legal no registro E115. No
+campo 07, o valor do saldo credor de ICMS recebido em transferência, no caso R$ 50.000,00. A
+linha de registro da EFD terá a seguinte configuração:
+                     C197|RJ10080002|RJ821231|codigoitem|||50000,00||
+                                                                                                         45
+
+
+
+
+8. PAGAMENTO MÍNIMO
+Os procedimentos abaixo devem ser adotados por contribuinte que utilizar norma relacionada no
+Manual de Diferimento, Ampliação de Prazo de Recolhimento, Suspensão e de Incentivos e Benefícios
+de Natureza Tributária condicionada a um pagamento mínimo, calculado de acordo com a legislação.
+
+
+Na EFD ICMS/IPI
+
+
+No registro C100, os documentos de entrada devem ser escriturados normalmente, conforme foram
+emitidos.
+O valor do pagamento mínimo exigido pela legislação será informado no Registro E111 da seguinte
+maneira:
+
+
+    •   Campo 02: preencher com o código RJ058002 – Débitos especiais - Pagamento mínimo
+        previsto em norma relacionada no manual de que trata o Decreto 27.815/2001 (Manual de
+        Benefícios)
+    •   Campo 03: preencher com o código da Tabela 5.2 correspondente à norma utilizada e espécie,
+        indicado no campo 02 do registro E115;
+    •   Campo 04: preencher com o valor do pagamento mínimo ou valor parcial para complementar
+        o valor mínimo a ser pago.
+
+
+
+Na Prática
+
+Vejamos um exemplo da escrituração do pagamento mínimo estabelecido como condição para fruição
+do regime diferenciado de tributação conferido ao setor atacadista pela Lei n° 9.025/20.
+Suponhamos que, em determinado período o contribuinte atacadista beneficiado pela sistemática tenha
+apurado saldo devedor de R$ 100.000,00
+Contudo, de acordo com o art. 7°, inciso I, da Lei nº 9.025/20 este contribuinte deveria realizar, por
+exemplo, um pagamento mínimo de R$ 120.000,00, correspondente à média aritmética de recolhimento
+de ICMS da operação própria adicionado do ICMS-ST e do ICMS importação nos últimos 12 meses
+anteriores à adesão ao regime, corrigida pela UFIR.
+Valor da diferença a ser lançada, tendo em vista o recolhimento mínimo: R$ 20.000,00
+
+
+Na EFD ICMS/IPI
+
+
+No registro E111, deve ser informado no campo 02 o código RJ058002 e no campo 03, RJ820432,
+para identificar o Benefício Fiscal usufruído pelo estabelecimento. A linha de registro da EFD terá a
+seguinte configuração:
+                                 E111|RJ05002|RJ820432|20000,00
+                                                                                                     46
+
+
+
+
+9. PAGAMENTO DE IMPOSTO EM SEPARADO
+
+Os procedimentos abaixo devem ser adotados por contribuinte que utilizar norma relacionada no
+Manual de Diferimento, Ampliação de Prazo de Recolhimento, Suspensão e de Incentivos e Benefícios
+de Natureza Tributária condicionada a um pagamento de imposto à parte, extra apuração.
+
+
+
+
+Na EFD ICMS/IPI
+
+
+No registro C100, os documentos de entrada devem ser escriturados normalmente, conforme foram
+emitidos.
+O valor do pagamento em separado exigido pela legislação será informado no Registro E111 de acordo
+com as hipóteses a seguir:
+A) Caso a norma estabeleça que o lançamento seja efetuado sobre o total de determinada natureza, o
+contribuinte preencherá o Registro E111, da seguinte maneira:
+
+
+   •   Campo 02: preencher com o código RJ058001 – Débitos especiais - Débito previsto em norma
+       relacionada no manual de que trata o Decreto 27.815/2001;
+   •   Campo 03: preencher com o código da Tabela 5.2 correspondente à norma utilizada e espécie,
+       indicado no campo 02 do registro E115;
+   •   Campo 04: preencher com o valor do ICMS a ser pago em separado.
+
+B) Caso a norma estabeleça que o lançamento seja efetuado por documento fiscal, o contribuinte
+preencherá no Registro C197/D197, da seguinte forma:
+
+   •   Campo 02: preencher com o código RJ70080001 – Débitos especiais - Débito previsto em
+       norma relacionada no manual de que trata o Decreto 27.815/2001
+   •   Campo 03: preencher com o código da Tabela 5.2 correspondente à norma utilizada e espécie,
+       indicado no campo 02 do registro E115;
+   •   Campo 07: preencher com o valor do ICMS a ser pago em separado
+                                                                                                  47
+
+
+
+
+CONTROLE DE VERSÕES
+
+DATA         ALTERAÇÕES
+
+21/02/2019   Primeira publicação
+
+             Atualizada as seções “Isenção”, “Redução de base de cálculo" e “Diferimento” para
+             esclarecer:
+             - os procedimentos de emissão do documento considerando o disposto na Nota
+             Técnica 2013.005 - v1.22, regra de validação W16-10 – Exceção 3, a respeito do
+3/04/2019
+             valor inserido no campo vICMSDeson no TOTAL da NF-e;
+             - que o valor do imposto integra da base de cálculo, motivo pelo qual, no
+             diferimento, a base de cálculo é diferente do valor do produto, que, no exemplo,
+             está desonerado.
+
+             Atualizado para inclusão:
+             - da seção “Informações preliminares”;
+20/05/2019
+             - informações sobre os campos destinados a informar dados relativos ao
+             ICMS/FECP na seção “Diferimento”.
+
+             Atualizado para alterar informações na seção diferimento a respeito dos campos
+21/05/2019   destinados ao ICMS/FECP, considerando que não há campos para informar que o
+             valor relativo a esse adicional também está diferido.
+
+             Atualizado para acrescentar:
+             - informações no item “A quem as regras se aplicam”;
+2/09/2019
+             - o item “Regras de validação”
+             - o item “Tabela de códigos”
+
+             Atualizado para incluir informações sobre os CST 30 e 90, no item “Informações
+6/09/2019
+             Preliminares”.
+
+             Atualizado para incluir:
+             - informações sobre operações com finalidade de devolução e ajuste;
+             - no item 2 - Redução da Base de Cálculo ou Redução de Alíquota informações
+26/09/2019   sobre como informar a desoneração no caso de a operação sujeita a substituição
+             tributária também for beneficiada;
+             - no item 5 - Diferimento informação sobre a impressão do valor da base de cálculo
+             no DANFE.
+
+             Atualizado para incluir informações sobre a inclusão ou não do valor do imposto no
+08/10/2019
+             valor do produto, páginas 16, 17, 21 e 22.
+
+             Atualizado para corrigir a configuração do registro C100 da EFD no caso de
+10/12/2019
+             diferimento, pág. 36.
+
+             Atualizado para corrigir informação no quadro “Na prática” dos itens 5 e 7: “No
+18/11/2020
+             registro C197, vinculado ao documento de entrada, e não de saída”.
+                                                                                                 48
+
+
+
+
+             Informações sobre preenchimento do FECP nas operações com diferimento em face
+27/09/2021
+             das alterações promovidas pela NT2020.005.
+
+             Correção da informação do campo vICMSOp no quadro “Na prática” do item
+29/09/2021
+             Diferimento.
+             Correção das seguintes informações no quadro “Na prática” do item Diferimento:
+
+04/10/2021   “Valor do ICMS diferido, campo vICMSDif: R$ 5.853,66” (valor),
+
+             Valor do ICMS FECP, campo vFCP: 731,71(sigla do campo e valor)”
+
+             Correção das seguintes informações no quadro “Na prática” do item Diferimento:
+             “Na página 35, em percentual de diferimento do FCP, correção da sigla do campo
+06/10/2021
+             pFCPDif;
+             Valor do ICMS FECP, campo vFCP: 731,71(valor alterado para 0,00)”
+07/10/2021   Inclusão na página 35 dos campos vFCPDif e campo pFCPDif.
+
+             Atualizar a informação sobre campo de desoneração do imposto retido por ST no
+04/04/2022
+             item “redução de base de cálculo ou redução de alíquota”.
+06/07/2022   Incluir na seção “A quem as regras se aplicam” informação sobre Difal.
+
+             Inclusão da nota 2 na seção sobre redução de base de cálculo, a respeito das
+14/07/2022   operações com feijão.
+             Correções gramaticais.
+
+18/09/2023   Inclusão dos itens 8 e 9
+
+             Inclusão de observação na seção “Tributação sobre faturamento”, “Tributação sobre
+08/02/2024
+             receita” ou “Tributação sobre saída”
+
+             Correção das informações no quadro “Na prática” do item Diferimento, Registro
+16/04/2024
+             C197
+
+             Atualização do item 4. “TRIBUTAÇÃO SOBRE FATURAMENTO”, “TRIBUTAÇÃO
+25/09/2024   SOBRE RECEITA” OU “TRIBUTAÇÃO SOBRE SAÍDA”, em razão da publicação da
+             Resolução SEFAZ n° 705/2024
+
+             Atualização das informações do crédito presumido no documento fiscal - Resolução
+27/01/2025
+             Sefaz 754/2025.
+29/01/2025   Correção do item 4 da versão anterior.

@@ -170,7 +170,7 @@ window.RJC_SEARCH = [
   {
     "title": "Rio de Janeiro: ICMS e benefícios fiscais",
     "url": "estados/rj.html",
-    "summary": "Página estadual estruturada para futura publicação por UF, com foco em ICMS, benefícios, documento e prova.",
+    "summary": "Página estadual com legislação de ICMS em tela, benefícios, documento e prova.",
     "tags": "RJ Rio de Janeiro Rio de Janeiro ICMS beneficios fiscais RICMS DECRETOS RESOLUCOES RICMS"
   },
   {
@@ -1402,6 +1402,102 @@ window.RJC_SEARCH = [
     "url": "estados/mg/legislacao/documentos-efd-prova.html",
     "summary": "Entrada direta para o capítulo temático correspondente, com texto legal em tela e análise aplicada.",
     "tags": "MG Minas Gerais ICMS benefícios fiscais substituição tributária EFD SPED XML documento fiscal cadastro prova"
+  },
+  {
+    "title": "Rio de Janeiro: ICMS e benefícios fiscais em tela",
+    "url": "estados/rj/legislacao/index.html",
+    "summary": "Legislação estadual em tela: Lei nº 2.657/1996, RICMS/RJ, Manual de Benefícios, FOT, Repetro, indústria setorial, ST, documentos, EFD, códigos de benefício e prova fiscal.",
+    "tags": "RJ Rio de Janeiro ICMS RICMS benefícios fiscais alíquotas base cálculo redução base crédito presumido diferimento suspensão FOT FEEF Repetro indústria Lei 4531 Manual de Benefícios Decreto 27815 cBenef cCredPresumido EFD SPED LC 160 Convênio 190"
+  },
+  {
+    "title": "Rio de Janeiro: ICMS/RJ: incidência, fato gerador, contribuinte, não incidência e regra maior",
+    "url": "estados/rj/legislacao/icms-regra-matriz.html",
+    "summary": "A porta de entrada do ICMS fluminense: quando o imposto nasce, quem responde, quais operações entram no campo de incidência e quando a tese começa por não incidência.",
+    "tags": "RJ Rio de Janeiro ICMS benefícios fiscais Regra matriz ICMS/RJ: incidência, fato gerador, contribuinte, não incidência e regra maior A porta de entrada do ICMS fluminense: quando o imposto nasce, quem responde, quais operações entram no campo de incidência e quando a tese começa por não incidência."
+  },
+  {
+    "title": "Rio de Janeiro: Base de cálculo, alíquotas, FECP, DIFAL, importação e apuração do ICMS/RJ",
+    "url": "estados/rj/legislacao/base-aliquota-apuracao.html",
+    "summary": "Como o fato gerador vira valor tributável: base, parcelas integrantes, alíquota interna, interestadual, FECP, diferencial, importação e apuração.",
+    "tags": "RJ Rio de Janeiro ICMS benefícios fiscais Carga tributária Base de cálculo, alíquotas, FECP, DIFAL, importação e apuração do ICMS/RJ Como o fato gerador vira valor tributável: base, parcelas integrantes, alíquota interna, interestadual, FECP, diferencial, importação e apuração."
+  },
+  {
+    "title": "Rio de Janeiro: Benefícios fiscais do RJ: matriz legal, Manual de Benefícios, LC 160 e CONFAZ",
+    "url": "estados/rj/legislacao/beneficios-matriz-lc160.html",
+    "summary": "Como o RJ organiza isenção, não incidência, redução de base, suspensão, diferimento, crédito presumido, tributação sobre saída e regimes especiais.",
+    "tags": "RJ Rio de Janeiro ICMS benefícios fiscais Benefícios fiscais Benefícios fiscais do RJ: matriz legal, Manual de Benefícios, LC 160 e CONFAZ Como o RJ organiza isenção, não incidência, redução de base, suspensão, diferimento, crédito presumido, tributação sobre saída e regimes especiais."
+  },
+  {
+    "title": "Rio de Janeiro: Isenções, reduções de base, créditos presumidos e códigos de benefício do RJ",
+    "url": "estados/rj/legislacao/isencoes-reducoes-creditos.html",
+    "summary": "Leitura aplicada das espécies de benefício: produto, operação, destinatário, período, CST, código, EFD, estorno, manutenção de crédito e prova.",
+    "tags": "RJ Rio de Janeiro ICMS benefícios fiscais Benefícios por técnica Isenções, reduções de base, créditos presumidos e códigos de benefício do RJ Leitura aplicada das espécies de benefício: produto, operação, destinatário, período, CST, código, EFD, estorno, manutenção de crédito e prova."
+  },
+  {
+    "title": "Rio de Janeiro: FOT/FEEF: contrapartida, redução indireta do benefício e controle mensal",
+    "url": "estados/rj/legislacao/fot-feef-contrapartidas.html",
+    "summary": "Como o Fundo Orçamentário Temporário conversa com incentivos, benefícios fiscais, financeiro-fiscais, base de cálculo, EFD, DARJ, exceções e transição até 2032.",
+    "tags": "RJ Rio de Janeiro ICMS benefícios fiscais Fundo e contrapartida FOT/FEEF: contrapartida, redução indireta do benefício e controle mensal Como o Fundo Orçamentário Temporário conversa com incentivos, benefícios fiscais, financeiro-fiscais, base de cálculo, EFD, DARJ, exceções e transição até 2032."
+  },
+  {
+    "title": "Rio de Janeiro: Regimes setoriais: indústria, Repetro, petróleo e tratamento tributário especial",
+    "url": "estados/rj/legislacao/regimes-setoriais-industria-repetro.html",
+    "summary": "Leitura de benefícios setoriais relevantes: Lei nº 4.531/2005, Lei nº 8.890/2020, Repetro-SPED, Repetro-Industrialização, regimes especiais e obrigações de adesão.",
+    "tags": "RJ Rio de Janeiro ICMS benefícios fiscais Programas setoriais Regimes setoriais: indústria, Repetro, petróleo e tratamento tributário especial Leitura de benefícios setoriais relevantes: Lei nº 4.531/2005, Lei nº 8.890/2020, Repetro-SPED, Repetro-Industrialização, regimes especiais e obrigações de adesão."
+  },
+  {
+    "title": "Rio de Janeiro: Exportação, não incidência, manutenção de crédito, saldo credor e transferência",
+    "url": "estados/rj/legislacao/creditos-exportacao-saldo-credor.html",
+    "summary": "Como exportação, remessa com fim específico, crédito acumulado, saldo credor e transferência se conectam ao ICMS/RJ e à prova documental.",
+    "tags": "RJ Rio de Janeiro ICMS benefícios fiscais Exportação e crédito Exportação, não incidência, manutenção de crédito, saldo credor e transferência Como exportação, remessa com fim específico, crédito acumulado, saldo credor e transferência se conectam ao ICMS/RJ e à prova documental."
+  },
+  {
+    "title": "Rio de Janeiro: Substituição tributária, antecipação, combustíveis, veículos, MVA, complemento e ressarcimento",
+    "url": "estados/rj/legislacao/st-antecipacao-segmentos.html",
+    "summary": "Livro II, combustíveis e veículos: responsável, substituto, substituído, base presumida, retenção, operações subsequentes, complemento, ressarcimento e prova.",
+    "tags": "RJ Rio de Janeiro ICMS benefícios fiscais Responsabilidade tributária Substituição tributária, antecipação, combustíveis, veículos, MVA, complemento e ressarcimento Livro II, combustíveis e veículos: responsável, substituto, substituído, base presumida, retenção, operações subsequentes, complemento, ressarcimento e prova."
+  },
+  {
+    "title": "Rio de Janeiro: Importação, transporte, veículos, combustíveis, energia e setores de alto controle",
+    "url": "estados/rj/legislacao/importacao-transporte-veiculos-combustiveis.html",
+    "summary": "Livros XI, IV, IX, XII e XIII: desembaraço, transporte, serviços, veículos automotores, combustíveis, documentos, responsabilidade e benefícios setoriais.",
+    "tags": "RJ Rio de Janeiro ICMS benefícios fiscais Setores fiscalizados Importação, transporte, veículos, combustíveis, energia e setores de alto controle Livros XI, IV, IX, XII e XIII: desembaraço, transporte, serviços, veículos automotores, combustíveis, documentos, responsabilidade e benefícios setoriais."
+  },
+  {
+    "title": "Rio de Janeiro: Documentos fiscais, EFD, cBenef, cCredPresumido, Anexo XVIII e prova digital",
+    "url": "estados/rj/legislacao/documentos-efd-prova.html",
+    "summary": "Como a tese aparece no XML, na EFD ICMS/IPI, nos códigos de benefício, nos ajustes, no documento fiscal e no dossiê mensal.",
+    "tags": "RJ Rio de Janeiro ICMS benefícios fiscais Prova digital Documentos fiscais, EFD, cBenef, cCredPresumido, Anexo XVIII e prova digital Como a tese aparece no XML, na EFD ICMS/IPI, nos códigos de benefício, nos ajustes, no documento fiscal e no dossiê mensal."
+  },
+  {
+    "title": "Rio de Janeiro: Mapa revisado dos benefícios de ICMS do Rio de Janeiro",
+    "url": "estados/rj/legislacao/mapa-revisado-beneficios.html",
+    "summary": "Inventário didático dos benefícios fluminenses por técnica e grupo: isenção, redução, suspensão, diferimento, crédito presumido, FOT, Repetro, indústria, transporte, ST, cBenef e EFD.",
+    "tags": "RJ Rio de Janeiro ICMS benefícios fiscais Inventário de benefícios Mapa revisado dos benefícios de ICMS do Rio de Janeiro Inventário didático dos benefícios fluminenses por técnica e grupo: isenção, redução, suspensão, diferimento, crédito presumido, FOT, Repetro, indústria, transporte, ST, cBenef e EFD."
+  },
+  {
+    "title": "Rio de Janeiro: Fiscalização, penalidades, glosa, perda de benefício, consulta e defesa",
+    "url": "estados/rj/legislacao/fiscalizacao-riscos.html",
+    "summary": "Pontos de controle do ICMS/RJ: documento, EFD, benefício, FOT, crédito, ST, importação, regime especial, autuação, correção de causa e defesa.",
+    "tags": "RJ Rio de Janeiro ICMS benefícios fiscais Fiscalização e regularização Fiscalização, penalidades, glosa, perda de benefício, consulta e defesa Pontos de controle do ICMS/RJ: documento, EFD, benefício, FOT, crédito, ST, importação, regime especial, autuação, correção de causa e defesa."
+  },
+  {
+    "title": "Rio de Janeiro: isenções, reduções e créditos",
+    "url": "estados/rj/legislacao/isencoes-reducoes-creditos.html",
+    "summary": "Entrada direta para o capítulo temático correspondente, com texto legal em tela e análise aplicada.",
+    "tags": "RJ Rio de Janeiro ICMS benefícios fiscais isenção redução base crédito presumido máquinas medicamentos veículos saúde agro"
+  },
+  {
+    "title": "Rio de Janeiro: mapa revisado dos benefícios",
+    "url": "estados/rj/legislacao/mapa-revisado-beneficios.html",
+    "summary": "Entrada direta para o capítulo temático correspondente, com texto legal em tela e análise aplicada.",
+    "tags": "RJ Rio de Janeiro ICMS benefícios fiscais inventário benefícios regimes especiais LC 160 CONFAZ crédito presumido redução base diferimento"
+  },
+  {
+    "title": "Rio de Janeiro: ST, EFD e prova",
+    "url": "estados/rj/legislacao/documentos-efd-prova.html",
+    "summary": "Entrada direta para o capítulo temático correspondente, com texto legal em tela e análise aplicada.",
+    "tags": "RJ Rio de Janeiro ICMS benefícios fiscais substituição tributária EFD SPED XML documento fiscal cadastro prova"
   },
   {
     "title": "Rio Grande do Norte: ICMS e benefícios fiscais em tela",

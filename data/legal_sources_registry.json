@@ -3795,6 +3795,778 @@
       ]
     },
     {
+      "source_id": "state-rj-rj-lei-2657-1996-icms",
+      "jurisdiction": "RJ",
+      "title": "Lei n. 2.657/1996 - ICMS do Estado do Rio de Janeiro",
+      "short": "Lei material do ICMS",
+      "official_url": "http://alerjln1.alerj.rj.gov.br/contlei.nsf/f25edae7e64db53b032564fe005262ef/01cc04eee53b3b30032564fb005c2ddf?OpenDocument",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "data/fontes-estaduais-curadas/sudeste/RJ/RJ_LEI_2657_1996_ICMS_2026-04-26.txt"
+        ],
+        "sha256": {
+          "RJ_LEI_2657_1996_ICMS_2026-04-26.txt": "055f7428c751bb905e9b5f8cc89007ee6fcba9a00c02b5e68a6c1fa89650f6d0"
+        },
+        "fetch_url": "http://alerjln1.alerj.rj.gov.br/contlei.nsf/f25edae7e64db53b032564fe005262ef/01cc04eee53b3b30032564fb005c2ddf?OpenDocument"
+      },
+      "note": "Texto estadual de ICMS publicado em estados/rj/legislacao/fontes/rj-lei-2657-1996-icms.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-rj",
+          "module_title": "Rio de Janeiro: ICMS e benefícios fiscais em tela",
+          "chapters": [
+            "icms-regra-matriz",
+            "base-aliquota-apuracao",
+            "isencoes-reducoes-creditos",
+            "creditos-exportacao-saldo-credor",
+            "st-antecipacao-segmentos",
+            "fiscalizacao-riscos"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-rj-rj-dec-27427-2000-ricms-livro-i-obrigacao-principal",
+      "jurisdiction": "RJ",
+      "title": "Decreto n. 27.427/2000 - RICMS/RJ - Livro I - Obrigacao principal",
+      "short": "Regulamento do ICMS",
+      "official_url": "https://legislacao.fazenda.rj.gov.br/wcc-migracao/Contribution_Folders/site_fazenda/legislacao/tributaria/decretos/2000/ricms/livro%20I/livro_I.html",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "data/fontes-estaduais-curadas/sudeste/RJ/RJ_DEC_27427_2000_RICMS_LIVRO_I_OBRIGACAO_PRINCIPAL_2026-04-26.txt"
+        ],
+        "sha256": {
+          "RJ_DEC_27427_2000_RICMS_LIVRO_I_OBRIGACAO_PRINCIPAL_2026-04-26.txt": "b8ca8376123c736cf60867fcf54e231c59a6370aa126bfb8bf7c6ae42b9a93de"
+        },
+        "fetch_url": "https://legislacao.fazenda.rj.gov.br/wcc-migracao/Contribution_Folders/site_fazenda/legislacao/tributaria/decretos/2000/ricms/livro%20I/livro_I.html"
+      },
+      "note": "Texto estadual de ICMS publicado em estados/rj/legislacao/fontes/rj-dec-27427-2000-ricms-livro-i-obrigacao-principal.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-rj",
+          "module_title": "Rio de Janeiro: ICMS e benefícios fiscais em tela",
+          "chapters": [
+            "icms-regra-matriz",
+            "base-aliquota-apuracao",
+            "creditos-exportacao-saldo-credor"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-rj-rj-dec-27427-2000-ricms-livro-ii-st",
+      "jurisdiction": "RJ",
+      "title": "Decreto n. 27.427/2000 - RICMS/RJ - Livro II - Substituicao tributaria",
+      "short": "Substituicao tributaria",
+      "official_url": "https://legislacao.fazenda.rj.gov.br/wcc-migracao/Contribution_Folders/site_fazenda/legislacao/tributaria/decretos/2000/ricms/livro%20II/livro_II.html",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "data/fontes-estaduais-curadas/sudeste/RJ/RJ_DEC_27427_2000_RICMS_LIVRO_II_ST_2026-04-26.txt"
+        ],
+        "sha256": {
+          "RJ_DEC_27427_2000_RICMS_LIVRO_II_ST_2026-04-26.txt": "a6cd40c4031c59011497e98d54a9c47e6fccb63a7641e5cba4e825210c9c6392"
+        },
+        "fetch_url": "https://legislacao.fazenda.rj.gov.br/wcc-migracao/Contribution_Folders/site_fazenda/legislacao/tributaria/decretos/2000/ricms/livro%20II/livro_II.html"
+      },
+      "note": "Texto estadual de ICMS publicado em estados/rj/legislacao/fontes/rj-dec-27427-2000-ricms-livro-ii-st.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-rj",
+          "module_title": "Rio de Janeiro: ICMS e benefícios fiscais em tela",
+          "chapters": [
+            "st-antecipacao-segmentos"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-rj-rj-dec-27427-2000-ricms-livro-iii-credito-acumulado",
+      "jurisdiction": "RJ",
+      "title": "Decreto n. 27.427/2000 - RICMS/RJ - Livro III - Compensacao, transferencia e saldo credor",
+      "short": "Beneficios fiscais de ICMS",
+      "official_url": "https://legislacao.fazenda.rj.gov.br/wcc-migracao/Contribution_Folders/site_fazenda/legislacao/tributaria/decretos/2000/ricms/livro%20III/livro_III.html",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "data/fontes-estaduais-curadas/sudeste/RJ/RJ_DEC_27427_2000_RICMS_LIVRO_III_CREDITO_ACUMULADO_2026-04-26.txt"
+        ],
+        "sha256": {
+          "RJ_DEC_27427_2000_RICMS_LIVRO_III_CREDITO_ACUMULADO_2026-04-26.txt": "58666ac4851064f06940378e059d4e1cff1a55e47b1f97d88dc063cfec730e99"
+        },
+        "fetch_url": "https://legislacao.fazenda.rj.gov.br/wcc-migracao/Contribution_Folders/site_fazenda/legislacao/tributaria/decretos/2000/ricms/livro%20III/livro_III.html"
+      },
+      "note": "Texto estadual de ICMS publicado em estados/rj/legislacao/fontes/rj-dec-27427-2000-ricms-livro-iii-credito-acumulado.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-rj",
+          "module_title": "Rio de Janeiro: ICMS e benefícios fiscais em tela",
+          "chapters": [
+            "creditos-exportacao-saldo-credor"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-rj-rj-dec-27427-2000-ricms-livro-iv-transporte",
+      "jurisdiction": "RJ",
+      "title": "Decreto n. 27.427/2000 - RICMS/RJ - Livro IV - Transporte",
+      "short": "Obriga??es acess?rias e transporte",
+      "official_url": "https://legislacao.fazenda.rj.gov.br/wcc-migracao/Contribution_Folders/site_fazenda/legislacao/tributaria/decretos/2000/ricms/livro%20IV/livro_IV.html",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "data/fontes-estaduais-curadas/sudeste/RJ/RJ_DEC_27427_2000_RICMS_LIVRO_IV_TRANSPORTE_2026-04-26.txt"
+        ],
+        "sha256": {
+          "RJ_DEC_27427_2000_RICMS_LIVRO_IV_TRANSPORTE_2026-04-26.txt": "c286aab5dabdfed16ef628574d97cec048b4a32364ba96a1e787d15e39281bfd"
+        },
+        "fetch_url": "https://legislacao.fazenda.rj.gov.br/wcc-migracao/Contribution_Folders/site_fazenda/legislacao/tributaria/decretos/2000/ricms/livro%20IV/livro_IV.html"
+      },
+      "note": "Texto estadual de ICMS publicado em estados/rj/legislacao/fontes/rj-dec-27427-2000-ricms-livro-iv-transporte.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-rj",
+          "module_title": "Rio de Janeiro: ICMS e benefícios fiscais em tela",
+          "chapters": [
+            "importacao-transporte-veiculos-combustiveis"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-rj-rj-dec-27427-2000-ricms-livro-v-documentos-antigos",
+      "jurisdiction": "RJ",
+      "title": "Decreto n. 27.427/2000 - RICMS/RJ - Livro V - Documentos e livros fiscais",
+      "short": "Obrigacoes acessorias e documentos",
+      "official_url": "https://legislacao.fazenda.rj.gov.br/wcc-migracao/Contribution_Folders/site_fazenda/legislacao/tributaria/decretos/2000/ricms/livro%20V/livro_V.html",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "data/fontes-estaduais-curadas/sudeste/RJ/RJ_DEC_27427_2000_RICMS_LIVRO_V_DOCUMENTOS_ANTIGOS_2026-04-26.txt"
+        ],
+        "sha256": {
+          "RJ_DEC_27427_2000_RICMS_LIVRO_V_DOCUMENTOS_ANTIGOS_2026-04-26.txt": "2d680ff14c3377a1dc4cd036151fde825a16781b79219d9a90a57c402ba8dfcf"
+        },
+        "fetch_url": "https://legislacao.fazenda.rj.gov.br/wcc-migracao/Contribution_Folders/site_fazenda/legislacao/tributaria/decretos/2000/ricms/livro%20V/livro_V.html"
+      },
+      "note": "Texto estadual de ICMS publicado em estados/rj/legislacao/fontes/rj-dec-27427-2000-ricms-livro-v-documentos-antigos.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-rj",
+          "module_title": "Rio de Janeiro: ICMS e benefícios fiscais em tela",
+          "chapters": []
+        }
+      ]
+    },
+    {
+      "source_id": "state-rj-rj-dec-27427-2000-ricms-livro-vi-obrigacoes-acessorias",
+      "jurisdiction": "RJ",
+      "title": "Decreto n. 27.427/2000 - RICMS/RJ - Livro VI - Obrigacoes acessorias",
+      "short": "Obrigacoes acessorias e documentos",
+      "official_url": "https://legislacao.fazenda.rj.gov.br/wcc-migracao/Contribution_Folders/site_fazenda/legislacao/tributaria/decretos/2000/ricms/livro%20VI/livro_VI.html",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "data/fontes-estaduais-curadas/sudeste/RJ/RJ_DEC_27427_2000_RICMS_LIVRO_VI_OBRIGACOES_ACESSORIAS_2026-04-26.txt"
+        ],
+        "sha256": {
+          "RJ_DEC_27427_2000_RICMS_LIVRO_VI_OBRIGACOES_ACESSORIAS_2026-04-26.txt": "f0b3fe791593b360e948d85ed06e90d51df96d02ff28f52e8e2580a7f6d27a81"
+        },
+        "fetch_url": "https://legislacao.fazenda.rj.gov.br/wcc-migracao/Contribution_Folders/site_fazenda/legislacao/tributaria/decretos/2000/ricms/livro%20VI/livro_VI.html"
+      },
+      "note": "Texto estadual de ICMS publicado em estados/rj/legislacao/fontes/rj-dec-27427-2000-ricms-livro-vi-obrigacoes-acessorias.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-rj",
+          "module_title": "Rio de Janeiro: ICMS e benefícios fiscais em tela",
+          "chapters": [
+            "documentos-efd-prova",
+            "fiscalizacao-riscos"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-rj-rj-dec-27427-2000-ricms-livro-ix-transporte-servicos",
+      "jurisdiction": "RJ",
+      "title": "Decreto n. 27.427/2000 - RICMS/RJ - Livro IX - Transporte e servicos",
+      "short": "Obriga??es acess?rias e transporte",
+      "official_url": "https://legislacao.fazenda.rj.gov.br/wcc-migracao/Contribution_Folders/site_fazenda/legislacao/tributaria/decretos/2000/ricms/livro%20IX/livro_IX.html",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "data/fontes-estaduais-curadas/sudeste/RJ/RJ_DEC_27427_2000_RICMS_LIVRO_IX_TRANSPORTE_SERVICOS_2026-04-26.txt"
+        ],
+        "sha256": {
+          "RJ_DEC_27427_2000_RICMS_LIVRO_IX_TRANSPORTE_SERVICOS_2026-04-26.txt": "795a3b3c1689d3131c55a64616abe059e13243cb3bb3a816a62e916ea179a0ae"
+        },
+        "fetch_url": "https://legislacao.fazenda.rj.gov.br/wcc-migracao/Contribution_Folders/site_fazenda/legislacao/tributaria/decretos/2000/ricms/livro%20IX/livro_IX.html"
+      },
+      "note": "Texto estadual de ICMS publicado em estados/rj/legislacao/fontes/rj-dec-27427-2000-ricms-livro-ix-transporte-servicos.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-rj",
+          "module_title": "Rio de Janeiro: ICMS e benefícios fiscais em tela",
+          "chapters": [
+            "importacao-transporte-veiculos-combustiveis"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-rj-rj-dec-27427-2000-ricms-livro-x-regimes-especiais",
+      "jurisdiction": "RJ",
+      "title": "Decreto n. 27.427/2000 - RICMS/RJ - Livro X - Regimes especiais",
+      "short": "Beneficios fiscais de ICMS",
+      "official_url": "https://legislacao.fazenda.rj.gov.br/wcc-migracao/Contribution_Folders/site_fazenda/legislacao/tributaria/decretos/2000/ricms/livro%20X/livro_X.html",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "data/fontes-estaduais-curadas/sudeste/RJ/RJ_DEC_27427_2000_RICMS_LIVRO_X_REGIMES_ESPECIAIS_2026-04-26.txt"
+        ],
+        "sha256": {
+          "RJ_DEC_27427_2000_RICMS_LIVRO_X_REGIMES_ESPECIAIS_2026-04-26.txt": "2ca7a02ce84758b50367ff49ae7e325f56c5705e3d7fc53de03dfe570a006a24"
+        },
+        "fetch_url": "https://legislacao.fazenda.rj.gov.br/wcc-migracao/Contribution_Folders/site_fazenda/legislacao/tributaria/decretos/2000/ricms/livro%20X/livro_X.html"
+      },
+      "note": "Texto estadual de ICMS publicado em estados/rj/legislacao/fontes/rj-dec-27427-2000-ricms-livro-x-regimes-especiais.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-rj",
+          "module_title": "Rio de Janeiro: ICMS e benefícios fiscais em tela",
+          "chapters": [
+            "isencoes-reducoes-creditos",
+            "regimes-setoriais-industria-repetro"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-rj-rj-dec-27427-2000-ricms-livro-xi-importacao",
+      "jurisdiction": "RJ",
+      "title": "Decreto n. 27.427/2000 - RICMS/RJ - Livro XI - Importacao",
+      "short": "Regulamento do ICMS",
+      "official_url": "https://legislacao.fazenda.rj.gov.br/wcc-migracao/Contribution_Folders/site_fazenda/legislacao/tributaria/decretos/2000/ricms/livro%20XI/livro_XI.html",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "data/fontes-estaduais-curadas/sudeste/RJ/RJ_DEC_27427_2000_RICMS_LIVRO_XI_IMPORTACAO_2026-04-26.txt"
+        ],
+        "sha256": {
+          "RJ_DEC_27427_2000_RICMS_LIVRO_XI_IMPORTACAO_2026-04-26.txt": "c6900566c1125ec63164069fe133394e26d05e51207ac07de4c4cb1d5eba6152"
+        },
+        "fetch_url": "https://legislacao.fazenda.rj.gov.br/wcc-migracao/Contribution_Folders/site_fazenda/legislacao/tributaria/decretos/2000/ricms/livro%20XI/livro_XI.html"
+      },
+      "note": "Texto estadual de ICMS publicado em estados/rj/legislacao/fontes/rj-dec-27427-2000-ricms-livro-xi-importacao.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-rj",
+          "module_title": "Rio de Janeiro: ICMS e benefícios fiscais em tela",
+          "chapters": [
+            "base-aliquota-apuracao",
+            "importacao-transporte-veiculos-combustiveis"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-rj-rj-dec-27427-2000-ricms-livro-xii-combustiveis",
+      "jurisdiction": "RJ",
+      "title": "Decreto n. 27.427/2000 - RICMS/RJ - Livro XII - Operacoes com combustiveis",
+      "short": "Substituicao tributaria",
+      "official_url": "https://legislacao.fazenda.rj.gov.br/wcc-migracao/Contribution_Folders/site_fazenda/legislacao/tributaria/decretos/2000/ricms/livro%20XII/livro_XII.html",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "data/fontes-estaduais-curadas/sudeste/RJ/RJ_DEC_27427_2000_RICMS_LIVRO_XII_COMBUSTIVEIS_2026-04-26.txt"
+        ],
+        "sha256": {
+          "RJ_DEC_27427_2000_RICMS_LIVRO_XII_COMBUSTIVEIS_2026-04-26.txt": "7a1f40d2d9e3aa1cd7256e1a1ec2e92148bdb867e381d1e002e6ace1989c8165"
+        },
+        "fetch_url": "https://legislacao.fazenda.rj.gov.br/wcc-migracao/Contribution_Folders/site_fazenda/legislacao/tributaria/decretos/2000/ricms/livro%20XII/livro_XII.html"
+      },
+      "note": "Texto estadual de ICMS publicado em estados/rj/legislacao/fontes/rj-dec-27427-2000-ricms-livro-xii-combustiveis.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-rj",
+          "module_title": "Rio de Janeiro: ICMS e benefícios fiscais em tela",
+          "chapters": [
+            "st-antecipacao-segmentos",
+            "importacao-transporte-veiculos-combustiveis"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-rj-rj-dec-27427-2000-ricms-livro-xiii-veiculos",
+      "jurisdiction": "RJ",
+      "title": "Decreto n. 27.427/2000 - RICMS/RJ - Livro XIII - Veiculos automotores",
+      "short": "Substituicao tributaria",
+      "official_url": "https://legislacao.fazenda.rj.gov.br/wcc-migracao/Contribution_Folders/site_fazenda/legislacao/tributaria/decretos/2000/ricms/livro%20XIII/livro_XIII.html",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "data/fontes-estaduais-curadas/sudeste/RJ/RJ_DEC_27427_2000_RICMS_LIVRO_XIII_VEICULOS_2026-04-26.txt"
+        ],
+        "sha256": {
+          "RJ_DEC_27427_2000_RICMS_LIVRO_XIII_VEICULOS_2026-04-26.txt": "81835399422667db9aaf53b7edc351f102d8b6e8f9f1ab00f5435b3292ae576b"
+        },
+        "fetch_url": "https://legislacao.fazenda.rj.gov.br/wcc-migracao/Contribution_Folders/site_fazenda/legislacao/tributaria/decretos/2000/ricms/livro%20XIII/livro_XIII.html"
+      },
+      "note": "Texto estadual de ICMS publicado em estados/rj/legislacao/fontes/rj-dec-27427-2000-ricms-livro-xiii-veiculos.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-rj",
+          "module_title": "Rio de Janeiro: ICMS e benefícios fiscais em tela",
+          "chapters": [
+            "st-antecipacao-segmentos",
+            "importacao-transporte-veiculos-combustiveis"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-rj-rj-dec-27815-2001-manual-beneficios",
+      "jurisdiction": "RJ",
+      "title": "Decreto n. 27.815/2001 - Manual de diferimento, ampliacao de prazo, suspensao, incentivos e beneficios",
+      "short": "Beneficios fiscais de ICMS",
+      "official_url": "https://legislacao.fazenda.rj.gov.br/81630-2/",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "data/fontes-estaduais-curadas/sudeste/RJ/RJ_DEC_27815_2001_MANUAL_BENEFICIOS_2026-04-26.txt"
+        ],
+        "sha256": {
+          "RJ_DEC_27815_2001_MANUAL_BENEFICIOS_2026-04-26.txt": "d17bb2abd661982a901249f892ae75a9249a9bf1ccb7d9dcd7b21836e5dc017b"
+        },
+        "fetch_url": "https://legislacao.fazenda.rj.gov.br/81630-2/"
+      },
+      "note": "Texto estadual de ICMS publicado em estados/rj/legislacao/fontes/rj-dec-27815-2001-manual-beneficios.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-rj",
+          "module_title": "Rio de Janeiro: ICMS e benefícios fiscais em tela",
+          "chapters": [
+            "beneficios-matriz-lc160",
+            "mapa-revisado-beneficios"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-rj-rj-lei-4531-2005-setorial-industria",
+      "jurisdiction": "RJ",
+      "title": "Lei n. 4.531/2005 - Tratamento tributario especial setorial industrial",
+      "short": "Beneficios fiscais de ICMS",
+      "official_url": "https://www3.alerj.rj.gov.br/lotus_notes/default.asp?id=58&url=L3NjcHJvMDMwNy5uc2YvZTAwYTdjM2M4NjUyYjY5YTgzMjU2Y2NhMDA2NDZlZTUvY2UwYmViOWJlNzE3YTdkNTgzMjU2ZmNjMDA3ZmFkMTc%2FT3BlbkRvY3VtZW50",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "data/fontes-estaduais-curadas/sudeste/RJ/RJ_LEI_4531_2005_SETORIAL_INDUSTRIA_2026-04-26.txt"
+        ],
+        "sha256": {
+          "RJ_LEI_4531_2005_SETORIAL_INDUSTRIA_2026-04-26.txt": "f2f18c47c3a2f7f8787ecdc776bd23e650548af35afeba07e036cf009c32fc4d"
+        },
+        "fetch_url": "https://www3.alerj.rj.gov.br/lotus_notes/default.asp?id=58&url=L3NjcHJvMDMwNy5uc2YvZTAwYTdjM2M4NjUyYjY5YTgzMjU2Y2NhMDA2NDZlZTUvY2UwYmViOWJlNzE3YTdkNTgzMjU2ZmNjMDA3ZmFkMTc%2FT3BlbkRvY3VtZW50"
+      },
+      "note": "Texto estadual de ICMS publicado em estados/rj/legislacao/fontes/rj-lei-4531-2005-setorial-industria.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-rj",
+          "module_title": "Rio de Janeiro: ICMS e benefícios fiscais em tela",
+          "chapters": [
+            "regimes-setoriais-industria-repetro"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-rj-rj-lei-8890-2020-repetro",
+      "jurisdiction": "RJ",
+      "title": "Lei n. 8.890/2020 - Repetro-SPED e Repetro-Industrializacao no ICMS/RJ",
+      "short": "Beneficios fiscais de ICMS",
+      "official_url": "https://www3.alerj.rj.gov.br/lotus_notes/default.asp?id=2&url=L0NPTlRMRUkuTlNGL2M4YWEwOTAwMDI1ZmVlZjYwMzI1NjRlYzAwNjBkZmZmL2IyMmRhMzVjNzc1MTg3NzMwMzI1ODU4YjAwMDg5MmJhP09wZW5Eb2N1bWVudA%3D%3D",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "data/fontes-estaduais-curadas/sudeste/RJ/RJ_LEI_8890_2020_REPETRO_2026-04-26.txt"
+        ],
+        "sha256": {
+          "RJ_LEI_8890_2020_REPETRO_2026-04-26.txt": "e2ba860fad85530f82d3b089251d4000c0aee9814c010d29814eb14f441023cf"
+        },
+        "fetch_url": "https://www3.alerj.rj.gov.br/lotus_notes/default.asp?id=2&url=L0NPTlRMRUkuTlNGL2M4YWEwOTAwMDI1ZmVlZjYwMzI1NjRlYzAwNjBkZmZmL2IyMmRhMzVjNzc1MTg3NzMwMzI1ODU4YjAwMDg5MmJhP09wZW5Eb2N1bWVudA%3D%3D"
+      },
+      "note": "Texto estadual de ICMS publicado em estados/rj/legislacao/fontes/rj-lei-8890-2020-repetro.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-rj",
+          "module_title": "Rio de Janeiro: ICMS e benefícios fiscais em tela",
+          "chapters": [
+            "regimes-setoriais-industria-repetro"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-rj-rj-lei-8645-2019-fot",
+      "jurisdiction": "RJ",
+      "title": "Lei n. 8.645/2019 - Fundo Orcamentario Temporario - FOT",
+      "short": "Beneficios fiscais de ICMS",
+      "official_url": "https://www3.alerj.rj.gov.br/lotus_notes/default.asp?id=59&url=L3NjcHJvMTkyMy5uc2YvZjRiNDZiM2NkYmJhOTkwMDgzMjU2Y2M5MDA3NDZjZjYvM2ExYTZjMmJkODQzMjhkODgzMjU4NDRlMDA1NWY5OWE%2FT3BlbkRvY3VtZW50",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "data/fontes-estaduais-curadas/sudeste/RJ/RJ_LEI_8645_2019_FOT_2026-04-26.txt"
+        ],
+        "sha256": {
+          "RJ_LEI_8645_2019_FOT_2026-04-26.txt": "515470f3c1b83f1e1dec1acb2072d4d4cfb5f5524beb5c8d46ea6d66f25ce986"
+        },
+        "fetch_url": "https://www3.alerj.rj.gov.br/lotus_notes/default.asp?id=59&url=L3NjcHJvMTkyMy5uc2YvZjRiNDZiM2NkYmJhOTkwMDgzMjU2Y2M5MDA3NDZjZjYvM2ExYTZjMmJkODQzMjhkODgzMjU4NDRlMDA1NWY5OWE%2FT3BlbkRvY3VtZW50"
+      },
+      "note": "Texto estadual de ICMS publicado em estados/rj/legislacao/fontes/rj-lei-8645-2019-fot.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-rj",
+          "module_title": "Rio de Janeiro: ICMS e benefícios fiscais em tela",
+          "chapters": [
+            "fot-feef-contrapartidas",
+            "mapa-revisado-beneficios"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-rj-rj-portal-feef-fot-2026",
+      "jurisdiction": "RJ",
+      "title": "SEFAZ/RJ - Fundo Orcamentario Temporario FOT e FEEF",
+      "short": "Beneficios fiscais de ICMS",
+      "official_url": "https://portal.fazenda.rj.gov.br/icms/feef-fot/",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "data/fontes-estaduais-curadas/sudeste/RJ/RJ_PORTAL_FEEF_FOT_2026_2026-04-26.txt"
+        ],
+        "sha256": {
+          "RJ_PORTAL_FEEF_FOT_2026_2026-04-26.txt": "9cba66469d611bbcc5e668bc5689bee3fd1a5e80dc78e475620a49115fee8067"
+        },
+        "fetch_url": "https://portal.fazenda.rj.gov.br/icms/feef-fot/"
+      },
+      "note": "Texto estadual de ICMS publicado em estados/rj/legislacao/fontes/rj-portal-feef-fot-2026.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-rj",
+          "module_title": "Rio de Janeiro: ICMS e benefícios fiscais em tela",
+          "chapters": [
+            "fot-feef-contrapartidas",
+            "fiscalizacao-riscos"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-rj-rj-res-sefaz-604-2024-efd-beneficios",
+      "jurisdiction": "RJ",
+      "title": "Resolucao SEFAZ n. 604/2024 - EFD e controle de beneficios do Anexo XVIII da Resolucao 720/2014",
+      "short": "Obrigacoes acessorias e documentos",
+      "official_url": "https://legislacao.fazenda.rj.gov.br/resolucao-sefaz-no-604-de-09-de-janeiro-de-2024/",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "data/fontes-estaduais-curadas/sudeste/RJ/RJ_RES_SEFAZ_604_2024_EFD_BENEFICIOS_2026-04-26.txt"
+        ],
+        "sha256": {
+          "RJ_RES_SEFAZ_604_2024_EFD_BENEFICIOS_2026-04-26.txt": "a5bd49ba369f03c90e1c4924faf17f5e40aed3e8ecf1a469955c2343ebde0afc"
+        },
+        "fetch_url": "https://legislacao.fazenda.rj.gov.br/resolucao-sefaz-no-604-de-09-de-janeiro-de-2024/"
+      },
+      "note": "Texto estadual de ICMS publicado em estados/rj/legislacao/fontes/rj-res-sefaz-604-2024-efd-beneficios.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-rj",
+          "module_title": "Rio de Janeiro: ICMS e benefícios fiscais em tela",
+          "chapters": [
+            "documentos-efd-prova"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-rj-rj-res-sefaz-668-2024-self-storage",
+      "jurisdiction": "RJ",
+      "title": "Resolucao SEFAZ n. 668/2024 - Suspensao do ICMS em self storage no Anexo XIII da Resolucao 720/2014",
+      "short": "Beneficios fiscais de ICMS",
+      "official_url": "https://legislacao.fazenda.rj.gov.br/resolucao-sefaz-no-668-de-25-de-junho-de-2024/",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "data/fontes-estaduais-curadas/sudeste/RJ/RJ_RES_SEFAZ_668_2024_SELF_STORAGE_2026-04-26.txt"
+        ],
+        "sha256": {
+          "RJ_RES_SEFAZ_668_2024_SELF_STORAGE_2026-04-26.txt": "e94bb60787ad8b74edd6e43de369765ab26c598b760788570d48fa758d6c64ec"
+        },
+        "fetch_url": "https://legislacao.fazenda.rj.gov.br/resolucao-sefaz-no-668-de-25-de-junho-de-2024/"
+      },
+      "note": "Texto estadual de ICMS publicado em estados/rj/legislacao/fontes/rj-res-sefaz-668-2024-self-storage.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-rj",
+          "module_title": "Rio de Janeiro: ICMS e benefícios fiscais em tela",
+          "chapters": []
+        }
+      ]
+    },
+    {
+      "source_id": "state-rj-rj-res-sefaz-754-2025-ccredpresumido",
+      "jurisdiction": "RJ",
+      "title": "Resolucao SEFAZ n. 754/2025 - cCredPresumido no documento fiscal",
+      "short": "Obrigacoes acessorias e documentos",
+      "official_url": "https://legislacao.fazenda.rj.gov.br/resolucao-sefaz-no-754-de-16-de-janeiro-de-2025/",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "data/fontes-estaduais-curadas/sudeste/RJ/RJ_RES_SEFAZ_754_2025_CCREDPRESUMIDO_2026-04-26.txt"
+        ],
+        "sha256": {
+          "RJ_RES_SEFAZ_754_2025_CCREDPRESUMIDO_2026-04-26.txt": "454e5c57a58235a185f596ef692feb048823a5f67e730d730c258f2b6bf069e4"
+        },
+        "fetch_url": "https://legislacao.fazenda.rj.gov.br/resolucao-sefaz-no-754-de-16-de-janeiro-de-2025/"
+      },
+      "note": "Texto estadual de ICMS publicado em estados/rj/legislacao/fontes/rj-res-sefaz-754-2025-ccredpresumido.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-rj",
+          "module_title": "Rio de Janeiro: ICMS e benefícios fiscais em tela",
+          "chapters": [
+            "documentos-efd-prova"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-rj-rj-res-sefaz-766-2025-repetro-efd",
+      "jurisdiction": "RJ",
+      "title": "Resolucao SEFAZ n. 766/2025 - Procedimentos de adesao ao tratamento da Lei n. 8.890/2020",
+      "short": "Obrigacoes acessorias e documentos",
+      "official_url": "https://legislacao.fazenda.rj.gov.br/resolucao-sefaz-no-766-de-26-de-fevereiro-de-2025/",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "data/fontes-estaduais-curadas/sudeste/RJ/RJ_RES_SEFAZ_766_2025_REPETRO_EFD_2026-04-26.txt"
+        ],
+        "sha256": {
+          "RJ_RES_SEFAZ_766_2025_REPETRO_EFD_2026-04-26.txt": "773ae42a8bfe6382397030905aa9f323bf9be24a84c9dc08afb730b15d7440a7"
+        },
+        "fetch_url": "https://legislacao.fazenda.rj.gov.br/resolucao-sefaz-no-766-de-26-de-fevereiro-de-2025/"
+      },
+      "note": "Texto estadual de ICMS publicado em estados/rj/legislacao/fontes/rj-res-sefaz-766-2025-repetro-efd.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-rj",
+          "module_title": "Rio de Janeiro: ICMS e benefícios fiscais em tela",
+          "chapters": [
+            "regimes-setoriais-industria-repetro"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-rj-rj-portal-transparencia-beneficios-2026",
+      "jurisdiction": "RJ",
+      "title": "SEFAZ/RJ - Transparencia da Receita Estadual - informacoes de beneficios fiscais",
+      "short": "Beneficios fiscais de ICMS",
+      "official_url": "https://portal.fazenda.rj.gov.br/transparencia-da-receita-estadual/usuarios-de-beneficios-fiscais/",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "data/fontes-estaduais-curadas/sudeste/RJ/RJ_PORTAL_TRANSPARENCIA_BENEFICIOS_2026_2026-04-26.txt"
+        ],
+        "sha256": {
+          "RJ_PORTAL_TRANSPARENCIA_BENEFICIOS_2026_2026-04-26.txt": "5d905e6c43699381eeaf746ab29aff8b8206ec775d9e8dafa88f50bfe86a07f2"
+        },
+        "fetch_url": "https://portal.fazenda.rj.gov.br/transparencia-da-receita-estadual/usuarios-de-beneficios-fiscais/"
+      },
+      "note": "Texto estadual de ICMS publicado em estados/rj/legislacao/fontes/rj-portal-transparencia-beneficios-2026.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-rj",
+          "module_title": "Rio de Janeiro: ICMS e benefícios fiscais em tela",
+          "chapters": [
+            "beneficios-matriz-lc160",
+            "mapa-revisado-beneficios"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-rj-rj-roteiro-beneficios-fiscais-transparencia-2025",
+      "jurisdiction": "RJ",
+      "title": "SEFAZ/RJ - Roteiro de beneficios fiscais",
+      "short": "Beneficios fiscais de ICMS",
+      "official_url": "https://portal.fazenda.rj.gov.br/transparencia-da-receita-estadual/wp-content/uploads/sites/5/2025/04/PORTAL-DA-TRANSPARENCIA-ROTEIRO-BF.pdf",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "data/fontes-estaduais-curadas/sudeste/RJ/RJ_ROTEIRO_BENEFICIOS_FISCAIS_TRANSPARENCIA_2025_2026-04-26.txt"
+        ],
+        "sha256": {
+          "RJ_ROTEIRO_BENEFICIOS_FISCAIS_TRANSPARENCIA_2025_2026-04-26.txt": "3576734bebcd68dff9f274c75c3f41b9cbe386cba64e2fc185e97dcbc6ed461b"
+        },
+        "fetch_url": "https://portal.fazenda.rj.gov.br/transparencia-da-receita-estadual/wp-content/uploads/sites/5/2025/04/PORTAL-DA-TRANSPARENCIA-ROTEIRO-BF.pdf"
+      },
+      "note": "Texto estadual de ICMS publicado em estados/rj/legislacao/fontes/rj-roteiro-beneficios-fiscais-transparencia-2025.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-rj",
+          "module_title": "Rio de Janeiro: ICMS e benefícios fiscais em tela",
+          "chapters": [
+            "beneficios-matriz-lc160",
+            "fot-feef-contrapartidas",
+            "mapa-revisado-beneficios"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-rj-rj-manual-documentos-beneficios-2025",
+      "jurisdiction": "RJ",
+      "title": "SEFAZ/RJ - Manual de emissao e escrituracao de documentos fiscais para controle de beneficios fiscais",
+      "short": "Obrigacoes acessorias e documentos",
+      "official_url": "https://portal.fazenda.rj.gov.br/efd/wp-content/uploads/sites/32/2025/01/Manual-de-emissa%CC%83o-e-escriturac%CC%A7a%CC%83o-de-documentos-fiscais-para-controle-de-benefi%CC%81cios-fiscais__29_01_25-1.pdf",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "data/fontes-estaduais-curadas/sudeste/RJ/RJ_MANUAL_DOCUMENTOS_BENEFICIOS_2025_2026-04-26.txt"
+        ],
+        "sha256": {
+          "RJ_MANUAL_DOCUMENTOS_BENEFICIOS_2025_2026-04-26.txt": "439dbea7955fdc1ca272dc38487a4730d0b2478c833a1190efab3e26219de298"
+        },
+        "fetch_url": "https://portal.fazenda.rj.gov.br/efd/wp-content/uploads/sites/32/2025/01/Manual-de-emissa%CC%83o-e-escriturac%CC%A7a%CC%83o-de-documentos-fiscais-para-controle-de-benefi%CC%81cios-fiscais__29_01_25-1.pdf"
+      },
+      "note": "Texto estadual de ICMS publicado em estados/rj/legislacao/fontes/rj-manual-documentos-beneficios-2025.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-rj",
+          "module_title": "Rio de Janeiro: ICMS e benefícios fiscais em tela",
+          "chapters": [
+            "isencoes-reducoes-creditos",
+            "fot-feef-contrapartidas",
+            "creditos-exportacao-saldo-credor",
+            "documentos-efd-prova",
+            "mapa-revisado-beneficios",
+            "fiscalizacao-riscos"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-rj-rj-tabela-codigo-beneficio-cst-2026",
+      "jurisdiction": "RJ",
+      "title": "SEFAZ/RJ - Tabela de codigo de beneficio x CST - versao 2026-03-09",
+      "short": "Obrigacoes acessorias e documentos",
+      "official_url": "http://portal.fazenda.rj.gov.br/dfe/wp-content/uploads/sites/17/2023/10/Tabela-codigo-de-beneficio-X-CST_versao_2026-03-09.pdf",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "data/fontes-estaduais-curadas/sudeste/RJ/RJ_TABELA_CODIGO_BENEFICIO_CST_2026_2026-04-26.txt"
+        ],
+        "sha256": {
+          "RJ_TABELA_CODIGO_BENEFICIO_CST_2026_2026-04-26.txt": "cfe75329ef79b601d8fbda75618f00a2c5fe14fefb4ef62424f6553e1b76f3de"
+        },
+        "fetch_url": "http://portal.fazenda.rj.gov.br/dfe/wp-content/uploads/sites/17/2023/10/Tabela-codigo-de-beneficio-X-CST_versao_2026-03-09.pdf"
+      },
+      "note": "Texto estadual de ICMS publicado em estados/rj/legislacao/fontes/rj-tabela-codigo-beneficio-cst-2026.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-rj",
+          "module_title": "Rio de Janeiro: ICMS e benefícios fiscais em tela",
+          "chapters": [
+            "beneficios-matriz-lc160",
+            "isencoes-reducoes-creditos",
+            "documentos-efd-prova",
+            "mapa-revisado-beneficios"
+          ]
+        }
+      ]
+    },
+    {
       "source_id": "state-rn-rn-dec-31825-2022-ricms-geral",
       "jurisdiction": "RN",
       "title": "Decreto nº 31.825/2022 - Regulamento do ICMS/RN, parte geral",

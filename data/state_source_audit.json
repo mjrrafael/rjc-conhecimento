@@ -2,10 +2,10 @@
   "generated_on": "2026-04-26",
   "summary": {
     "states": 27,
-    "docs": 219,
-    "publishable_docs": 216,
+    "docs": 243,
+    "publishable_docs": 240,
     "scope_blocked_docs": 3,
-    "blocked": 19
+    "blocked": 18
   },
   "states": {
     "AC": {
@@ -3238,25 +3238,27 @@
     "RJ": {
       "estado": "Rio de Janeiro",
       "region": "Sudeste",
-      "curadoria": "revisao_fonte",
-      "publish_deep": false,
-      "document_count": 1,
-      "publishable_document_count": 1,
+      "curadoria": "publicado_v1",
+      "publish_deep": true,
+      "document_count": 25,
+      "publishable_document_count": 25,
       "scope_blocked_document_count": 0,
-      "total_chars": 65086,
+      "total_chars": 1209922,
       "categories": {
-        "RICMS": 1
+        "ICMS_BENEFICIOS": 10,
+        "ICMS_LEIS": 1,
+        "ICMS_ST": 3,
+        "INSTRUCOES_NORMATIVAS": 7,
+        "RICMS": 4
       },
-      "flags": [
-        "ruído de extração/encoding"
-      ],
-      "recommendation": "bloquear_publicacao_ate_curadoria",
-      "next_step": "Baixar RICMS/RJ, Livro/Anexos e benefícios no portal oficial do Rio de Janeiro.",
+      "flags": [],
+      "recommendation": "manter_publicado",
+      "next_step": "Rio de Janeiro publicado como página profunda: Lei nº 2.657/1996, RICMS/RJ, Manual de Benefícios, FOT/FEEF, Repetro, tratamento setorial industrial, ST, importação, transporte, veículos, combustíveis, EFD, cBenef/cCredPresumido e prova fiscal.",
       "documents": [
         {
-          "file": "RJ_RICMS.txt",
-          "category": "RICMS",
-          "chars": 65086,
+          "file": "RJ_LEI_2657_1996_ICMS_2026-04-26.txt",
+          "category": "ICMS_LEIS",
+          "chars": 370648,
           "named_icms": true,
           "fallback_icms": false,
           "dominant_scope": "ICMS",
@@ -3266,11 +3268,417 @@
           "scope_blocked": false,
           "scope_flags": [],
           "source_documents": [
-            "RICMS.pdf"
+            "http://alerjln1.alerj.rj.gov.br/contlei.nsf/f25edae7e64db53b032564fe005262ef/01cc04eee53b3b30032564fb005c2ddf?OpenDocument"
           ],
-          "flags": [
-            "ruído de extração/encoding"
-          ]
+          "flags": []
+        },
+        {
+          "file": "RJ_DEC_27427_2000_RICMS_LIVRO_I_OBRIGACAO_PRINCIPAL_2026-04-26.txt",
+          "category": "RICMS",
+          "chars": 94550,
+          "named_icms": true,
+          "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [
+            "ICMS"
+          ],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [
+            "https://legislacao.fazenda.rj.gov.br/wcc-migracao/Contribution_Folders/site_fazenda/legislacao/tributaria/decretos/2000/ricms/livro%20I/livro_I.html"
+          ],
+          "flags": []
+        },
+        {
+          "file": "RJ_DEC_27427_2000_RICMS_LIVRO_II_ST_2026-04-26.txt",
+          "category": "ICMS_ST",
+          "chars": 79157,
+          "named_icms": true,
+          "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [
+            "ICMS"
+          ],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [
+            "https://legislacao.fazenda.rj.gov.br/wcc-migracao/Contribution_Folders/site_fazenda/legislacao/tributaria/decretos/2000/ricms/livro%20II/livro_II.html"
+          ],
+          "flags": []
+        },
+        {
+          "file": "RJ_DEC_27427_2000_RICMS_LIVRO_III_CREDITO_ACUMULADO_2026-04-26.txt",
+          "category": "ICMS_BENEFICIOS",
+          "chars": 18391,
+          "named_icms": true,
+          "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [
+            "ICMS"
+          ],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [
+            "https://legislacao.fazenda.rj.gov.br/wcc-migracao/Contribution_Folders/site_fazenda/legislacao/tributaria/decretos/2000/ricms/livro%20III/livro_III.html"
+          ],
+          "flags": []
+        },
+        {
+          "file": "RJ_DEC_27427_2000_RICMS_LIVRO_IV_TRANSPORTE_2026-04-26.txt",
+          "category": "RICMS",
+          "chars": 73146,
+          "named_icms": true,
+          "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [
+            "ICMS"
+          ],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [
+            "https://legislacao.fazenda.rj.gov.br/wcc-migracao/Contribution_Folders/site_fazenda/legislacao/tributaria/decretos/2000/ricms/livro%20IV/livro_IV.html"
+          ],
+          "flags": []
+        },
+        {
+          "file": "RJ_DEC_27427_2000_RICMS_LIVRO_V_DOCUMENTOS_ANTIGOS_2026-04-26.txt",
+          "category": "INSTRUCOES_NORMATIVAS",
+          "chars": 13502,
+          "named_icms": true,
+          "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [
+            "ICMS"
+          ],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [
+            "https://legislacao.fazenda.rj.gov.br/wcc-migracao/Contribution_Folders/site_fazenda/legislacao/tributaria/decretos/2000/ricms/livro%20V/livro_V.html"
+          ],
+          "flags": []
+        },
+        {
+          "file": "RJ_DEC_27427_2000_RICMS_LIVRO_VI_OBRIGACOES_ACESSORIAS_2026-04-26.txt",
+          "category": "INSTRUCOES_NORMATIVAS",
+          "chars": 79552,
+          "named_icms": true,
+          "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [
+            "ICMS"
+          ],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [
+            "https://legislacao.fazenda.rj.gov.br/wcc-migracao/Contribution_Folders/site_fazenda/legislacao/tributaria/decretos/2000/ricms/livro%20VI/livro_VI.html"
+          ],
+          "flags": []
+        },
+        {
+          "file": "RJ_DEC_27427_2000_RICMS_LIVRO_IX_TRANSPORTE_SERVICOS_2026-04-26.txt",
+          "category": "RICMS",
+          "chars": 93128,
+          "named_icms": true,
+          "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [
+            "ICMS"
+          ],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [
+            "https://legislacao.fazenda.rj.gov.br/wcc-migracao/Contribution_Folders/site_fazenda/legislacao/tributaria/decretos/2000/ricms/livro%20IX/livro_IX.html"
+          ],
+          "flags": []
+        },
+        {
+          "file": "RJ_DEC_27427_2000_RICMS_LIVRO_X_REGIMES_ESPECIAIS_2026-04-26.txt",
+          "category": "ICMS_BENEFICIOS",
+          "chars": 46489,
+          "named_icms": true,
+          "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [
+            "ICMS"
+          ],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [
+            "https://legislacao.fazenda.rj.gov.br/wcc-migracao/Contribution_Folders/site_fazenda/legislacao/tributaria/decretos/2000/ricms/livro%20X/livro_X.html"
+          ],
+          "flags": []
+        },
+        {
+          "file": "RJ_DEC_27427_2000_RICMS_LIVRO_XI_IMPORTACAO_2026-04-26.txt",
+          "category": "RICMS",
+          "chars": 23807,
+          "named_icms": true,
+          "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [
+            "ICMS"
+          ],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [
+            "https://legislacao.fazenda.rj.gov.br/wcc-migracao/Contribution_Folders/site_fazenda/legislacao/tributaria/decretos/2000/ricms/livro%20XI/livro_XI.html"
+          ],
+          "flags": []
+        },
+        {
+          "file": "RJ_DEC_27427_2000_RICMS_LIVRO_XII_COMBUSTIVEIS_2026-04-26.txt",
+          "category": "ICMS_ST",
+          "chars": 7583,
+          "named_icms": true,
+          "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [
+            "ICMS"
+          ],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [
+            "https://legislacao.fazenda.rj.gov.br/wcc-migracao/Contribution_Folders/site_fazenda/legislacao/tributaria/decretos/2000/ricms/livro%20XII/livro_XII.html"
+          ],
+          "flags": []
+        },
+        {
+          "file": "RJ_DEC_27427_2000_RICMS_LIVRO_XIII_VEICULOS_2026-04-26.txt",
+          "category": "ICMS_ST",
+          "chars": 20611,
+          "named_icms": true,
+          "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [
+            "ICMS"
+          ],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [
+            "https://legislacao.fazenda.rj.gov.br/wcc-migracao/Contribution_Folders/site_fazenda/legislacao/tributaria/decretos/2000/ricms/livro%20XIII/livro_XIII.html"
+          ],
+          "flags": []
+        },
+        {
+          "file": "RJ_DEC_27815_2001_MANUAL_BENEFICIOS_2026-04-26.txt",
+          "category": "ICMS_BENEFICIOS",
+          "chars": 4992,
+          "named_icms": true,
+          "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [
+            "ICMS"
+          ],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [
+            "https://legislacao.fazenda.rj.gov.br/81630-2/"
+          ],
+          "flags": []
+        },
+        {
+          "file": "RJ_LEI_4531_2005_SETORIAL_INDUSTRIA_2026-04-26.txt",
+          "category": "ICMS_BENEFICIOS",
+          "chars": 27845,
+          "named_icms": true,
+          "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [
+            "ICMS"
+          ],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [
+            "https://www3.alerj.rj.gov.br/lotus_notes/default.asp?id=58&url=L3NjcHJvMDMwNy5uc2YvZTAwYTdjM2M4NjUyYjY5YTgzMjU2Y2NhMDA2NDZlZTUvY2UwYmViOWJlNzE3YTdkNTgzMjU2ZmNjMDA3ZmFkMTc%2FT3BlbkRvY3VtZW50"
+          ],
+          "flags": []
+        },
+        {
+          "file": "RJ_LEI_8890_2020_REPETRO_2026-04-26.txt",
+          "category": "ICMS_BENEFICIOS",
+          "chars": 22413,
+          "named_icms": true,
+          "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [
+            "ICMS"
+          ],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [
+            "https://www3.alerj.rj.gov.br/lotus_notes/default.asp?id=2&url=L0NPTlRMRUkuTlNGL2M4YWEwOTAwMDI1ZmVlZjYwMzI1NjRlYzAwNjBkZmZmL2IyMmRhMzVjNzc1MTg3NzMwMzI1ODU4YjAwMDg5MmJhP09wZW5Eb2N1bWVudA%3D%3D"
+          ],
+          "flags": []
+        },
+        {
+          "file": "RJ_LEI_8645_2019_FOT_2026-04-26.txt",
+          "category": "ICMS_BENEFICIOS",
+          "chars": 21152,
+          "named_icms": true,
+          "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [
+            "ICMS"
+          ],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [
+            "https://www3.alerj.rj.gov.br/lotus_notes/default.asp?id=59&url=L3NjcHJvMTkyMy5uc2YvZjRiNDZiM2NkYmJhOTkwMDgzMjU2Y2M5MDA3NDZjZjYvM2ExYTZjMmJkODQzMjhkODgzMjU4NDRlMDA1NWY5OWE%2FT3BlbkRvY3VtZW50"
+          ],
+          "flags": []
+        },
+        {
+          "file": "RJ_PORTAL_FEEF_FOT_2026_2026-04-26.txt",
+          "category": "ICMS_BENEFICIOS",
+          "chars": 3130,
+          "named_icms": true,
+          "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [
+            "ICMS"
+          ],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [
+            "https://portal.fazenda.rj.gov.br/icms/feef-fot/"
+          ],
+          "flags": []
+        },
+        {
+          "file": "RJ_RES_SEFAZ_604_2024_EFD_BENEFICIOS_2026-04-26.txt",
+          "category": "INSTRUCOES_NORMATIVAS",
+          "chars": 2765,
+          "named_icms": true,
+          "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [
+            "ICMS"
+          ],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [
+            "https://legislacao.fazenda.rj.gov.br/resolucao-sefaz-no-604-de-09-de-janeiro-de-2024/"
+          ],
+          "flags": []
+        },
+        {
+          "file": "RJ_RES_SEFAZ_668_2024_SELF_STORAGE_2026-04-26.txt",
+          "category": "ICMS_BENEFICIOS",
+          "chars": 8631,
+          "named_icms": true,
+          "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [
+            "ICMS"
+          ],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [
+            "https://legislacao.fazenda.rj.gov.br/resolucao-sefaz-no-668-de-25-de-junho-de-2024/"
+          ],
+          "flags": []
+        },
+        {
+          "file": "RJ_RES_SEFAZ_754_2025_CCREDPRESUMIDO_2026-04-26.txt",
+          "category": "INSTRUCOES_NORMATIVAS",
+          "chars": 2504,
+          "named_icms": true,
+          "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [
+            "ICMS"
+          ],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [
+            "https://legislacao.fazenda.rj.gov.br/resolucao-sefaz-no-754-de-16-de-janeiro-de-2025/"
+          ],
+          "flags": []
+        },
+        {
+          "file": "RJ_RES_SEFAZ_766_2025_REPETRO_EFD_2026-04-26.txt",
+          "category": "INSTRUCOES_NORMATIVAS",
+          "chars": 3819,
+          "named_icms": true,
+          "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [
+            "ICMS"
+          ],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [
+            "https://legislacao.fazenda.rj.gov.br/resolucao-sefaz-no-766-de-26-de-fevereiro-de-2025/"
+          ],
+          "flags": []
+        },
+        {
+          "file": "RJ_PORTAL_TRANSPARENCIA_BENEFICIOS_2026_2026-04-26.txt",
+          "category": "ICMS_BENEFICIOS",
+          "chars": 4142,
+          "named_icms": true,
+          "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [
+            "ICMS"
+          ],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [
+            "https://portal.fazenda.rj.gov.br/transparencia-da-receita-estadual/usuarios-de-beneficios-fiscais/"
+          ],
+          "flags": []
+        },
+        {
+          "file": "RJ_ROTEIRO_BENEFICIOS_FISCAIS_TRANSPARENCIA_2025_2026-04-26.txt",
+          "category": "ICMS_BENEFICIOS",
+          "chars": 6328,
+          "named_icms": true,
+          "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [
+            "ICMS"
+          ],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [
+            "https://portal.fazenda.rj.gov.br/transparencia-da-receita-estadual/wp-content/uploads/sites/5/2025/04/PORTAL-DA-TRANSPARENCIA-ROTEIRO-BF.pdf"
+          ],
+          "flags": []
+        },
+        {
+          "file": "RJ_MANUAL_DOCUMENTOS_BENEFICIOS_2025_2026-04-26.txt",
+          "category": "INSTRUCOES_NORMATIVAS",
+          "chars": 96610,
+          "named_icms": true,
+          "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [
+            "ICMS"
+          ],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [
+            "https://portal.fazenda.rj.gov.br/efd/wp-content/uploads/sites/32/2025/01/Manual-de-emissa%CC%83o-e-escriturac%CC%A7a%CC%83o-de-documentos-fiscais-para-controle-de-benefi%CC%81cios-fiscais__29_01_25-1.pdf"
+          ],
+          "flags": []
+        },
+        {
+          "file": "RJ_TABELA_CODIGO_BENEFICIO_CST_2026_2026-04-26.txt",
+          "category": "INSTRUCOES_NORMATIVAS",
+          "chars": 85027,
+          "named_icms": true,
+          "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [
+            "ICMS"
+          ],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [
+            "http://portal.fazenda.rj.gov.br/dfe/wp-content/uploads/sites/17/2023/10/Tabela-codigo-de-beneficio-X-CST_versao_2026-03-09.pdf"
+          ],
+          "flags": []
         }
       ]
     },

@@ -1,0 +1,126 @@
+SEFAZ/RJ - Roteiro de beneficios fiscais
+Fonte publica: https://portal.fazenda.rj.gov.br/transparencia-da-receita-estadual/wp-content/uploads/sites/5/2025/04/PORTAL-DA-TRANSPARENCIA-ROTEIRO-BF.pdf
+Captura: 2026-04-26
+Tema: Beneficios fiscais de ICMS
+
+1. TIPOS DE BENEFÍCIOS FISCAIS
+
+Os benefícios fiscais do ICMS no âmbito do Estado do Rio de Janeiro se dividem em
+dois tipos:
+
+       Benefício Fiscal de caráter geral: aquele de cunho objetivo, que não depende de
+        condições ou características do sujeito passivo, e sim do produto que está sendo
+        comercializado. Como exemplo, temos os produtos da cesta básica dispostos na
+        Lei nº 4.892/2006. Esses benefícios fiscais, a não ser que a legislação específica
+        exija, independem de formalidades a serem cumpridas pelo contribuinte junto à
+        SEFAZ.
+       Benefício Fiscal de caráter não geral: aquele de cunho subjetivo, que depende
+        de condições ou características do sujeito passivo, e não apenas do produto que
+        está sendo comercializado. Esses benefícios fiscais possuem, em suas
+        respectivas legislações de regência, formalidades a serem cumpridas pelo
+        contribuinte junto à SEFAZ.
+
+Passamos a tratar do segundo tipo (benefícios não gerais), que se subdividem em não
+condicionados e condicionados.
+
+
+
+   2. BENEFÍCIOS FISCAIS NÃO CONDICIONADOS DE CARÁTER NÃO
+      GERAL (BENEFÍCIOS POR ADESÃO)
+
+
+   2.1. Legislação de regência e especificidades
+
+NORMAS ESPECÍFICAS DE CADA BENEFÍCIO FISCAL COMPLEMENTADAS
+COM A PORTARIA SSER Nº 345/2023.
+
+Esses benefícios fiscais possuem legislações esparsas, mas seus trâmites foram
+alinhados com a publicação da Portaria SSER nº 345/2023, que deverá ser seguida
+subsidiariamente às legislações, ou seja: primeiramente deve-se seguir a legislação de
+regência do benefício fiscal, para, em seguida, no que não lhe for contrária, utilizar a
+portaria SSER nº 345/2023.
+
+Exemplo: O art. 12 da Lei nº 6.331/2012, que menciona que a decisão sobre a perda
+desse benefício se dá por decisão do Secretário de Fazenda com recurso à CPPDE
+prevalece sobre a regra disposta no art. 10 da Portaria SSER nº 345/2023, que menciona
+que a decisão sobre a perda do benefício se dá por ato do Superintendente de Benefício
+Fiscal com recurso ao Subsecretário de Estado de Receita.
+
+Em comum, esses benefícios não dependem de termo de acordo ou contrato, condição
+ou contrapartida onerosa para sua fruição e a legislação própria permite que o
+contribuinte realize uma mera comunicação à Secretaria de Fazenda ou firme um
+simples termo de adesão, informando que começará a usufruir do benefício.
+   2.2. Procedimento de adesão ao benefício fiscal
+
+Os contribuintes que desejarem fruir desse tipo de benefício deverão comunicar suas
+adesões no SEI-RJ, endereçando o Processo em questão à Superintendência de
+Benefícios Fiscais Tributários de ICMS (SUPBF).
+
+A análise desses processos se dará no âmbito da SUPBF que constatará a regularidade
+ou irregularidade para a fruição do benefício fiscal pelo contribuinte, sendo que, caso o
+contribuinte esteja irregular, não poderá fruir do benefício pleiteado, cabendo recurso
+hierárquico ao Subsecretário de Estado de Receita.
+
+   2.3. Exemplos de benefícios fiscais não condicionados de caráter não geral
+
+Lei nº 6.331/2012, Lei nº 8.890/2020, Decreto nº 36.448/2004, Decreto nº 41.557/2008,
+Decreto nº 44.629/2014, Decreto nº 46.781/2019, Lei nº 9.281/2021, Lei nº 6.821/2014.
+
+
+
+   3. BENEFÍCIOS FISCAIS CONDICIONADOS DE CARÁTER NÃO GERAL
+      (BENEFÍCIOS POR CONCESSÃO)
+
+   3.1. Legislação de regência e especificidades
+
+LEI Nº 8.445/2019, DECRETO Nº 47.201/2020, RESOLUÇÃO SEFAZ Nº 392/2022,
+RESOLUÇÃO SEFAZ Nº 282/2021, PORTARIA SSER Nº 349/2024 E NORMAS
+ESPECÍFICAS DE CADA BENEFÍCIO FISCAL.
+
+Esses benefícios fiscais passaram a ter seus trâmites uniformizados desde a publicação
+da Lei nº 8.445/2019 com sua posterior regulamentação, que, ao contrário dos
+benefícios não condicionados, prevalecem sobre os procedimentos previstos em leis
+específicas (como, por exemplo, na Lei nº 6.979/2015 e na Lei nº 4.178/2003), que
+devem ser aplicadas subsidiariamente no que não lhe for contrária.
+
+Em comum, os benefícios em questão dependem de termo de acordo ou contrato,
+condição ou contrapartida onerosa para sua fruição, têm cunho subjetivo, ou seja, não
+dependem unicamente do objeto comercializado pelo sujeito passivo, e sim de
+condições e/ou contrapartidas onerosas a serem observados pelo sujeito passivo
+(cumprimento de metas, prévia aprovação de projetos de investimento, recolhimento de
+valores mínimos de ICMS e de valores mínimos de faturamento, ou obrigação de
+importação pelos portos e aeroportos do Estado do Rio de Janeiro, por exemplo).
+
+
+
+   3.2. Procedimentos de enquadramento do contribuinte no benefício fiscal
+Esses processos devem se iniciar na CODIN ou AGERIO, por meio de requerimento e
+Carta Consulta, que os encaminhará à SEFAZ, onde a SUBF analisará a regularidade
+fiscal e cadastral do contribuinte, inclusive em relação à dívida ativa.
+
+Estando o contribuinte regular, o Processo irá para a CPPDE para deliberação e, em
+caso de aprovação, será novamente encaminhado à SUBF para a confecção de Termo de
+Acordo a ser assinado pelo contribuinte e pelos Secretários da SEFAZ e da SEDEICS.
+
+No mês subsequente à assinatura por todas as partes, o contribuinte estará apto a fruir o
+benefício fiscal. Entretanto, caso a CPPDE não delibere em até noventa dias do
+protocolo da Carta Consulta, o contribuinte estará apto a utilizar o benefício fiscal de
+maneira precária mediante a apresentação de relatório circunstanciado pela CODIN
+(enquadramento tácito).
+
+Se a CPPDE deliberar por não enquadrar o contribuinte, ele poderá pedir reexame do
+pleito à própria CPPDE.
+
+   3.3. Exemplos de benefícios fiscais condicionados de caráter não geral
+
+Lei nº 9.025/2020, Lei nº 6.979/2015, Decreto nº 36.449/2004, Decreto nº 36.450/2004,
+Decreto nº 45.339/2015, Lei nº 4.178/2003, Decreto nº 44.418/2013, Decreto nº
+44.868/2014.
+
+Observações:
+
+   1. O disposto neste roteiro tem caráter apenas de orientação, e, em hipótese
+      alguma, poderá ser citado ou ter seus termos reproduzidos em Processos
+      Administrativos ou Judiciais.
+   2. Este roteiro estará sujeito a modificações caso haja alterações nas
+      legislações em questão.

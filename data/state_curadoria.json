@@ -112,9 +112,9 @@
     },
     "RJ": {
       "region": "Sudeste",
-      "status": "revisao_fonte",
-      "publish_deep": false,
-      "next_step": "Baixar RICMS/RJ, Livro/Anexos e benefícios no portal oficial do Rio de Janeiro."
+      "status": "publicado_v1",
+      "publish_deep": true,
+      "next_step": "Rio de Janeiro publicado como página profunda: Lei nº 2.657/1996, RICMS/RJ, Manual de Benefícios, FOT/FEEF, Repetro, tratamento setorial industrial, ST, importação, transporte, veículos, combustíveis, EFD, cBenef/cCredPresumido e prova fiscal."
     },
     "RN": {
       "region": "Nordeste",

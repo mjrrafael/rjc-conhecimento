@@ -1,0 +1,260 @@
+{
+  "uf": "RJ",
+  "estado": "Rio de Janeiro",
+  "regiao": "Sudeste",
+  "status_curadoria": "publicado_v1",
+  "data_captura": "2026-04-26",
+  "fonte_principal": "Secretaria de Estado de Fazenda do Rio de Janeiro, Assembleia Legislativa do Estado do Rio de Janeiro e atos oficiais de ICMS",
+  "fontes": [
+    {
+      "id": "RJ_LEI_2657_1996_ICMS",
+      "titulo": "Lei n. 2.657/1996 - ICMS do Estado do Rio de Janeiro",
+      "tema": "Lei material do ICMS",
+      "tipo": "lei",
+      "url": "http://alerjln1.alerj.rj.gov.br/contlei.nsf/f25edae7e64db53b032564fe005262ef/01cc04eee53b3b30032564fb005c2ddf?OpenDocument",
+      "arquivo": "RJ_LEI_2657_1996_ICMS_2026-04-26.txt",
+      "sha256": "055f7428c751bb905e9b5f8cc89007ee6fcba9a00c02b5e68a6c1fa89650f6d0",
+      "caracteres": 370649
+    },
+    {
+      "id": "RJ_DEC_27427_2000_RICMS_LIVRO_I_OBRIGACAO_PRINCIPAL",
+      "titulo": "Decreto n. 27.427/2000 - RICMS/RJ - Livro I - Obrigacao principal",
+      "tema": "Regulamento do ICMS",
+      "tipo": "livro do RICMS",
+      "url": "https://legislacao.fazenda.rj.gov.br/wcc-migracao/Contribution_Folders/site_fazenda/legislacao/tributaria/decretos/2000/ricms/livro%20I/livro_I.html",
+      "arquivo": "RJ_DEC_27427_2000_RICMS_LIVRO_I_OBRIGACAO_PRINCIPAL_2026-04-26.txt",
+      "sha256": "b8ca8376123c736cf60867fcf54e231c59a6370aa126bfb8bf7c6ae42b9a93de",
+      "caracteres": 94551
+    },
+    {
+      "id": "RJ_DEC_27427_2000_RICMS_LIVRO_II_ST",
+      "titulo": "Decreto n. 27.427/2000 - RICMS/RJ - Livro II - Substituicao tributaria",
+      "tema": "Substituicao tributaria",
+      "tipo": "livro do RICMS",
+      "url": "https://legislacao.fazenda.rj.gov.br/wcc-migracao/Contribution_Folders/site_fazenda/legislacao/tributaria/decretos/2000/ricms/livro%20II/livro_II.html",
+      "arquivo": "RJ_DEC_27427_2000_RICMS_LIVRO_II_ST_2026-04-26.txt",
+      "sha256": "a6cd40c4031c59011497e98d54a9c47e6fccb63a7641e5cba4e825210c9c6392",
+      "caracteres": 79158
+    },
+    {
+      "id": "RJ_DEC_27427_2000_RICMS_LIVRO_III_CREDITO_ACUMULADO",
+      "titulo": "Decreto n. 27.427/2000 - RICMS/RJ - Livro III - Compensacao, transferencia e saldo credor",
+      "tema": "Beneficios fiscais de ICMS",
+      "tipo": "livro do RICMS",
+      "url": "https://legislacao.fazenda.rj.gov.br/wcc-migracao/Contribution_Folders/site_fazenda/legislacao/tributaria/decretos/2000/ricms/livro%20III/livro_III.html",
+      "arquivo": "RJ_DEC_27427_2000_RICMS_LIVRO_III_CREDITO_ACUMULADO_2026-04-26.txt",
+      "sha256": "58666ac4851064f06940378e059d4e1cff1a55e47b1f97d88dc063cfec730e99",
+      "caracteres": 18392
+    },
+    {
+      "id": "RJ_DEC_27427_2000_RICMS_LIVRO_IV_TRANSPORTE",
+      "titulo": "Decreto n. 27.427/2000 - RICMS/RJ - Livro IV - Transporte",
+      "tema": "Obriga??es acess?rias e transporte",
+      "tipo": "livro do RICMS",
+      "url": "https://legislacao.fazenda.rj.gov.br/wcc-migracao/Contribution_Folders/site_fazenda/legislacao/tributaria/decretos/2000/ricms/livro%20IV/livro_IV.html",
+      "arquivo": "RJ_DEC_27427_2000_RICMS_LIVRO_IV_TRANSPORTE_2026-04-26.txt",
+      "sha256": "c286aab5dabdfed16ef628574d97cec048b4a32364ba96a1e787d15e39281bfd",
+      "caracteres": 73147
+    },
+    {
+      "id": "RJ_DEC_27427_2000_RICMS_LIVRO_V_DOCUMENTOS_ANTIGOS",
+      "titulo": "Decreto n. 27.427/2000 - RICMS/RJ - Livro V - Documentos e livros fiscais",
+      "tema": "Obrigacoes acessorias e documentos",
+      "tipo": "livro do RICMS",
+      "url": "https://legislacao.fazenda.rj.gov.br/wcc-migracao/Contribution_Folders/site_fazenda/legislacao/tributaria/decretos/2000/ricms/livro%20V/livro_V.html",
+      "arquivo": "RJ_DEC_27427_2000_RICMS_LIVRO_V_DOCUMENTOS_ANTIGOS_2026-04-26.txt",
+      "sha256": "2d680ff14c3377a1dc4cd036151fde825a16781b79219d9a90a57c402ba8dfcf",
+      "caracteres": 13503
+    },
+    {
+      "id": "RJ_DEC_27427_2000_RICMS_LIVRO_VI_OBRIGACOES_ACESSORIAS",
+      "titulo": "Decreto n. 27.427/2000 - RICMS/RJ - Livro VI - Obrigacoes acessorias",
+      "tema": "Obrigacoes acessorias e documentos",
+      "tipo": "livro do RICMS",
+      "url": "https://legislacao.fazenda.rj.gov.br/wcc-migracao/Contribution_Folders/site_fazenda/legislacao/tributaria/decretos/2000/ricms/livro%20VI/livro_VI.html",
+      "arquivo": "RJ_DEC_27427_2000_RICMS_LIVRO_VI_OBRIGACOES_ACESSORIAS_2026-04-26.txt",
+      "sha256": "f0b3fe791593b360e948d85ed06e90d51df96d02ff28f52e8e2580a7f6d27a81",
+      "caracteres": 79553
+    },
+    {
+      "id": "RJ_DEC_27427_2000_RICMS_LIVRO_IX_TRANSPORTE_SERVICOS",
+      "titulo": "Decreto n. 27.427/2000 - RICMS/RJ - Livro IX - Transporte e servicos",
+      "tema": "Obriga??es acess?rias e transporte",
+      "tipo": "livro do RICMS",
+      "url": "https://legislacao.fazenda.rj.gov.br/wcc-migracao/Contribution_Folders/site_fazenda/legislacao/tributaria/decretos/2000/ricms/livro%20IX/livro_IX.html",
+      "arquivo": "RJ_DEC_27427_2000_RICMS_LIVRO_IX_TRANSPORTE_SERVICOS_2026-04-26.txt",
+      "sha256": "795a3b3c1689d3131c55a64616abe059e13243cb3bb3a816a62e916ea179a0ae",
+      "caracteres": 93129
+    },
+    {
+      "id": "RJ_DEC_27427_2000_RICMS_LIVRO_X_REGIMES_ESPECIAIS",
+      "titulo": "Decreto n. 27.427/2000 - RICMS/RJ - Livro X - Regimes especiais",
+      "tema": "Beneficios fiscais de ICMS",
+      "tipo": "livro do RICMS",
+      "url": "https://legislacao.fazenda.rj.gov.br/wcc-migracao/Contribution_Folders/site_fazenda/legislacao/tributaria/decretos/2000/ricms/livro%20X/livro_X.html",
+      "arquivo": "RJ_DEC_27427_2000_RICMS_LIVRO_X_REGIMES_ESPECIAIS_2026-04-26.txt",
+      "sha256": "2ca7a02ce84758b50367ff49ae7e325f56c5705e3d7fc53de03dfe570a006a24",
+      "caracteres": 46490
+    },
+    {
+      "id": "RJ_DEC_27427_2000_RICMS_LIVRO_XI_IMPORTACAO",
+      "titulo": "Decreto n. 27.427/2000 - RICMS/RJ - Livro XI - Importacao",
+      "tema": "Regulamento do ICMS",
+      "tipo": "livro do RICMS",
+      "url": "https://legislacao.fazenda.rj.gov.br/wcc-migracao/Contribution_Folders/site_fazenda/legislacao/tributaria/decretos/2000/ricms/livro%20XI/livro_XI.html",
+      "arquivo": "RJ_DEC_27427_2000_RICMS_LIVRO_XI_IMPORTACAO_2026-04-26.txt",
+      "sha256": "c6900566c1125ec63164069fe133394e26d05e51207ac07de4c4cb1d5eba6152",
+      "caracteres": 23808
+    },
+    {
+      "id": "RJ_DEC_27427_2000_RICMS_LIVRO_XII_COMBUSTIVEIS",
+      "titulo": "Decreto n. 27.427/2000 - RICMS/RJ - Livro XII - Operacoes com combustiveis",
+      "tema": "Substituicao tributaria",
+      "tipo": "livro do RICMS",
+      "url": "https://legislacao.fazenda.rj.gov.br/wcc-migracao/Contribution_Folders/site_fazenda/legislacao/tributaria/decretos/2000/ricms/livro%20XII/livro_XII.html",
+      "arquivo": "RJ_DEC_27427_2000_RICMS_LIVRO_XII_COMBUSTIVEIS_2026-04-26.txt",
+      "sha256": "7a1f40d2d9e3aa1cd7256e1a1ec2e92148bdb867e381d1e002e6ace1989c8165",
+      "caracteres": 7584
+    },
+    {
+      "id": "RJ_DEC_27427_2000_RICMS_LIVRO_XIII_VEICULOS",
+      "titulo": "Decreto n. 27.427/2000 - RICMS/RJ - Livro XIII - Veiculos automotores",
+      "tema": "Substituicao tributaria",
+      "tipo": "livro do RICMS",
+      "url": "https://legislacao.fazenda.rj.gov.br/wcc-migracao/Contribution_Folders/site_fazenda/legislacao/tributaria/decretos/2000/ricms/livro%20XIII/livro_XIII.html",
+      "arquivo": "RJ_DEC_27427_2000_RICMS_LIVRO_XIII_VEICULOS_2026-04-26.txt",
+      "sha256": "81835399422667db9aaf53b7edc351f102d8b6e8f9f1ab00f5435b3292ae576b",
+      "caracteres": 20612
+    },
+    {
+      "id": "RJ_DEC_27815_2001_MANUAL_BENEFICIOS",
+      "titulo": "Decreto n. 27.815/2001 - Manual de diferimento, ampliacao de prazo, suspensao, incentivos e beneficios",
+      "tema": "Beneficios fiscais de ICMS",
+      "tipo": "decreto",
+      "url": "https://legislacao.fazenda.rj.gov.br/81630-2/",
+      "arquivo": "RJ_DEC_27815_2001_MANUAL_BENEFICIOS_2026-04-26.txt",
+      "sha256": "d17bb2abd661982a901249f892ae75a9249a9bf1ccb7d9dcd7b21836e5dc017b",
+      "caracteres": 4993
+    },
+    {
+      "id": "RJ_LEI_4531_2005_SETORIAL_INDUSTRIA",
+      "titulo": "Lei n. 4.531/2005 - Tratamento tributario especial setorial industrial",
+      "tema": "Beneficios fiscais de ICMS",
+      "tipo": "lei",
+      "url": "https://www3.alerj.rj.gov.br/lotus_notes/default.asp?id=58&url=L3NjcHJvMDMwNy5uc2YvZTAwYTdjM2M4NjUyYjY5YTgzMjU2Y2NhMDA2NDZlZTUvY2UwYmViOWJlNzE3YTdkNTgzMjU2ZmNjMDA3ZmFkMTc%2FT3BlbkRvY3VtZW50",
+      "arquivo": "RJ_LEI_4531_2005_SETORIAL_INDUSTRIA_2026-04-26.txt",
+      "sha256": "f2f18c47c3a2f7f8787ecdc776bd23e650548af35afeba07e036cf009c32fc4d",
+      "caracteres": 27846
+    },
+    {
+      "id": "RJ_LEI_8890_2020_REPETRO",
+      "titulo": "Lei n. 8.890/2020 - Repetro-SPED e Repetro-Industrializacao no ICMS/RJ",
+      "tema": "Beneficios fiscais de ICMS",
+      "tipo": "lei",
+      "url": "https://www3.alerj.rj.gov.br/lotus_notes/default.asp?id=2&url=L0NPTlRMRUkuTlNGL2M4YWEwOTAwMDI1ZmVlZjYwMzI1NjRlYzAwNjBkZmZmL2IyMmRhMzVjNzc1MTg3NzMwMzI1ODU4YjAwMDg5MmJhP09wZW5Eb2N1bWVudA%3D%3D",
+      "arquivo": "RJ_LEI_8890_2020_REPETRO_2026-04-26.txt",
+      "sha256": "e2ba860fad85530f82d3b089251d4000c0aee9814c010d29814eb14f441023cf",
+      "caracteres": 22414
+    },
+    {
+      "id": "RJ_LEI_8645_2019_FOT",
+      "titulo": "Lei n. 8.645/2019 - Fundo Orcamentario Temporario - FOT",
+      "tema": "Beneficios fiscais de ICMS",
+      "tipo": "lei",
+      "url": "https://www3.alerj.rj.gov.br/lotus_notes/default.asp?id=59&url=L3NjcHJvMTkyMy5uc2YvZjRiNDZiM2NkYmJhOTkwMDgzMjU2Y2M5MDA3NDZjZjYvM2ExYTZjMmJkODQzMjhkODgzMjU4NDRlMDA1NWY5OWE%2FT3BlbkRvY3VtZW50",
+      "arquivo": "RJ_LEI_8645_2019_FOT_2026-04-26.txt",
+      "sha256": "515470f3c1b83f1e1dec1acb2072d4d4cfb5f5524beb5c8d46ea6d66f25ce986",
+      "caracteres": 21153
+    },
+    {
+      "id": "RJ_PORTAL_FEEF_FOT_2026",
+      "titulo": "SEFAZ/RJ - Fundo Orcamentario Temporario FOT e FEEF",
+      "tema": "Beneficios fiscais de ICMS",
+      "tipo": "orientacao administrativa",
+      "url": "https://portal.fazenda.rj.gov.br/icms/feef-fot/",
+      "arquivo": "RJ_PORTAL_FEEF_FOT_2026_2026-04-26.txt",
+      "sha256": "9cba66469d611bbcc5e668bc5689bee3fd1a5e80dc78e475620a49115fee8067",
+      "caracteres": 3131
+    },
+    {
+      "id": "RJ_RES_SEFAZ_604_2024_EFD_BENEFICIOS",
+      "titulo": "Resolucao SEFAZ n. 604/2024 - EFD e controle de beneficios do Anexo XVIII da Resolucao 720/2014",
+      "tema": "Obrigacoes acessorias e documentos",
+      "tipo": "resolucao",
+      "url": "https://legislacao.fazenda.rj.gov.br/resolucao-sefaz-no-604-de-09-de-janeiro-de-2024/",
+      "arquivo": "RJ_RES_SEFAZ_604_2024_EFD_BENEFICIOS_2026-04-26.txt",
+      "sha256": "a5bd49ba369f03c90e1c4924faf17f5e40aed3e8ecf1a469955c2343ebde0afc",
+      "caracteres": 2766
+    },
+    {
+      "id": "RJ_RES_SEFAZ_668_2024_SELF_STORAGE",
+      "titulo": "Resolucao SEFAZ n. 668/2024 - Suspensao do ICMS em self storage no Anexo XIII da Resolucao 720/2014",
+      "tema": "Beneficios fiscais de ICMS",
+      "tipo": "resolucao",
+      "url": "https://legislacao.fazenda.rj.gov.br/resolucao-sefaz-no-668-de-25-de-junho-de-2024/",
+      "arquivo": "RJ_RES_SEFAZ_668_2024_SELF_STORAGE_2026-04-26.txt",
+      "sha256": "e94bb60787ad8b74edd6e43de369765ab26c598b760788570d48fa758d6c64ec",
+      "caracteres": 8632
+    },
+    {
+      "id": "RJ_RES_SEFAZ_754_2025_CCREDPRESUMIDO",
+      "titulo": "Resolucao SEFAZ n. 754/2025 - cCredPresumido no documento fiscal",
+      "tema": "Obrigacoes acessorias e documentos",
+      "tipo": "resolucao",
+      "url": "https://legislacao.fazenda.rj.gov.br/resolucao-sefaz-no-754-de-16-de-janeiro-de-2025/",
+      "arquivo": "RJ_RES_SEFAZ_754_2025_CCREDPRESUMIDO_2026-04-26.txt",
+      "sha256": "454e5c57a58235a185f596ef692feb048823a5f67e730d730c258f2b6bf069e4",
+      "caracteres": 2505
+    },
+    {
+      "id": "RJ_RES_SEFAZ_766_2025_REPETRO_EFD",
+      "titulo": "Resolucao SEFAZ n. 766/2025 - Procedimentos de adesao ao tratamento da Lei n. 8.890/2020",
+      "tema": "Obrigacoes acessorias e documentos",
+      "tipo": "resolucao",
+      "url": "https://legislacao.fazenda.rj.gov.br/resolucao-sefaz-no-766-de-26-de-fevereiro-de-2025/",
+      "arquivo": "RJ_RES_SEFAZ_766_2025_REPETRO_EFD_2026-04-26.txt",
+      "sha256": "773ae42a8bfe6382397030905aa9f323bf9be24a84c9dc08afb730b15d7440a7",
+      "caracteres": 3820
+    },
+    {
+      "id": "RJ_PORTAL_TRANSPARENCIA_BENEFICIOS_2026",
+      "titulo": "SEFAZ/RJ - Transparencia da Receita Estadual - informacoes de beneficios fiscais",
+      "tema": "Beneficios fiscais de ICMS",
+      "tipo": "orientacao administrativa",
+      "url": "https://portal.fazenda.rj.gov.br/transparencia-da-receita-estadual/usuarios-de-beneficios-fiscais/",
+      "arquivo": "RJ_PORTAL_TRANSPARENCIA_BENEFICIOS_2026_2026-04-26.txt",
+      "sha256": "5d905e6c43699381eeaf746ab29aff8b8206ec775d9e8dafa88f50bfe86a07f2",
+      "caracteres": 4143
+    },
+    {
+      "id": "RJ_ROTEIRO_BENEFICIOS_FISCAIS_TRANSPARENCIA_2025",
+      "titulo": "SEFAZ/RJ - Roteiro de beneficios fiscais",
+      "tema": "Beneficios fiscais de ICMS",
+      "tipo": "roteiro oficial",
+      "url": "https://portal.fazenda.rj.gov.br/transparencia-da-receita-estadual/wp-content/uploads/sites/5/2025/04/PORTAL-DA-TRANSPARENCIA-ROTEIRO-BF.pdf",
+      "arquivo": "RJ_ROTEIRO_BENEFICIOS_FISCAIS_TRANSPARENCIA_2025_2026-04-26.txt",
+      "sha256": "3576734bebcd68dff9f274c75c3f41b9cbe386cba64e2fc185e97dcbc6ed461b",
+      "caracteres": 6329
+    },
+    {
+      "id": "RJ_MANUAL_DOCUMENTOS_BENEFICIOS_2025",
+      "titulo": "SEFAZ/RJ - Manual de emissao e escrituracao de documentos fiscais para controle de beneficios fiscais",
+      "tema": "Obrigacoes acessorias e documentos",
+      "tipo": "manual oficial",
+      "url": "https://portal.fazenda.rj.gov.br/efd/wp-content/uploads/sites/32/2025/01/Manual-de-emissa%CC%83o-e-escriturac%CC%A7a%CC%83o-de-documentos-fiscais-para-controle-de-benefi%CC%81cios-fiscais__29_01_25-1.pdf",
+      "arquivo": "RJ_MANUAL_DOCUMENTOS_BENEFICIOS_2025_2026-04-26.txt",
+      "sha256": "439dbea7955fdc1ca272dc38487a4730d0b2478c833a1190efab3e26219de298",
+      "caracteres": 96703
+    },
+    {
+      "id": "RJ_TABELA_CODIGO_BENEFICIO_CST_2026",
+      "titulo": "SEFAZ/RJ - Tabela de codigo de beneficio x CST - versao 2026-03-09",
+      "tema": "Obrigacoes acessorias e documentos",
+      "tipo": "tabela oficial",
+      "url": "http://portal.fazenda.rj.gov.br/dfe/wp-content/uploads/sites/17/2023/10/Tabela-codigo-de-beneficio-X-CST_versao_2026-03-09.pdf",
+      "arquivo": "RJ_TABELA_CODIGO_BENEFICIO_CST_2026_2026-04-26.txt",
+      "sha256": "cfe75329ef79b601d8fbda75618f00a2c5fe14fefb4ef62424f6553e1b76f3de",
+      "caracteres": 85028
+    }
+  ]
+}

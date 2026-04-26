@@ -1,0 +1,126 @@
+Resolucao SEFAZ n. 754/2025 - cCredPresumido no documento fiscal
+Fonte publica: https://legislacao.fazenda.rj.gov.br/resolucao-sefaz-no-754-de-16-de-janeiro-de-2025/
+Captura: 2026-04-26
+Tema: Obrigacoes acessorias e documentos
+
+RESOLUÇÃO SEFAZ Nº 754 DE 16 DE JANEIRO DE 2025 – Legislação - Secretaria de Estado de Fazenda do Rio de Janeiro
+
+Legislação
+
+Buscar por "
+" em
+Legislação
+
+Buscar por "
+" em Fazenda RJ
+
+Legislação
+
+Legislação Tributária
+
+Publicada no D.O.E. de 21.01.2025, pág. 04. Este texto não substitui o publicado no D.O.E.
+Índice remissivo: Letra E - EFD e Letra I - ICMS
+
+RESOLUÇÃO SEFAZ Nº 754 DE 16 DE JANEIRO DE 2025
+
+ALTERA O ANEXO XVIII, DA PARTE II, DA
+RESOLUÇÃO SEFAZ Nº 720/2014.
+
+O SECRETÁRIO DE ESTADO DE FAZENDA , no uso de suas atribuições conferidas pelo inciso II, do parágrafo único do art. 148 da Constituição do Estado do Rio de Janeiro e nos termos do disposto no Processo nº SEI-040006/048705/2024, e
+
+R E S O L V E :
+
+Art. 1º Incluir o artigo 6º-A no Anexo XVIII da Parte II da Resolução SEFAZ nº 720 , de 04 de fevereiro de 2014, com a seguinte redação:
+
+“Art. 6º-A Nos casos em que a norma disponha que o registro do crédito presumido seja realizado por documento fiscal, o contribuinte deverá preencher os seguintes campos do documento:
+
+I – cCredPresumido = Código de Benefício Fiscal de Crédito Presumido na UF aplicado ao item, de acordo com a lista estabelecida na tabela 5.2 “Tabela de Informações Adicionais da Apuração – Valores Declaratórios” do Ato Cotepe/ICMS nº 9, de 18 de abril de 2008;
+
+II – pCredPresumido = Percentual do Crédito Presumido;
+
+III – vCredPresumido = Valor do Crédito Presumido.”
+
+Art. 2º Esta Resolução entrará em vigor na data de sua publicação, produzindo efeitos após decorridos 90 (noventa) dias da mesma.
+
+Rio de Janeiro, 16 de janeiro de 2025
+
+LEONARDO LOBO PIRES
+Secretário de Estado de Fazenda
+
+Av. Presidente Vargas, nº 670, Rio de Janeiro / RJ - 20071-001
+
+(21) 2334-4440
+
+(21) 2334-4440
+
+Menu
+
+Telefonia Geral
+
+(21) 2334-4440
+
+Sugerir correção
+
+Menu
+
+Início
+
+Canais de Atendimento
+
+Nossos
+Serviços
+
+Nossos Sites
+
+Institucional
+
+Ouvidoria
+
+Transparência
+
+Lei Geral de
+Proteção de Dados (LGPD)
+
+Login
+
+Política
+de Segurança da Informação
+
+Menu
+
+Institucional
+
+Conheça a SEFAZ-RJ
+
+Quem é quem
+
+Repartições
+Fazendárias
+
+Estrutura
+
+Imprensa
+
+Notícias
+
+Menu
+
+Canais de Atendimento
+
+Agendar
+atendimento
+presencial
+
+Fale conosco
+
+Repartições
+fazendárias
+
+Telefonia geral
+
+Buscar por "
+" em
+Legislação
+
+Buscar por "
+" em Fazenda RJ
