@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import hashlib
+import json
 import os
 import re
 import unicodedata
@@ -16,6 +17,7 @@ ROOT = Path(__file__).resolve().parents[1]
 BD_ROOT = Path(os.environ.get("RJC_BD_LEGISLACAO", r"C:\Users\kris2\OneDrive\COWORK\BD_LEGISLACAO"))
 STATE_MAIN = BD_ROOT / "#ESTADUAIS-COMPILADO-NOTEBOOKLM"
 STATE_COMPLEMENT = BD_ROOT / "Estados_Complementar"
+CURATION_FILE = ROOT / "data" / "state_curadoria.json"
 UPDATED_ON = "25/04/2026"
 
 STATE_NAMES = {
@@ -345,6 +347,24 @@ def read_text(path: Path) -> str:
     return path.read_text(encoding="utf-8", errors="ignore")
 
 
+@lru_cache(maxsize=1)
+def curation_statuses() -> dict:
+    if not CURATION_FILE.exists():
+        return {}
+    data = json.loads(CURATION_FILE.read_text(encoding="utf-8"))
+    return data.get("statuses", {})
+
+
+def state_curation(uf: str) -> dict:
+    return curation_statuses().get(uf, {})
+
+
+def state_is_deep_published(uf: str) -> bool:
+    if uf == "GO":
+        return True
+    return bool(state_curation(uf).get("publish_deep"))
+
+
 def clean_text(text: str) -> str:
     text = text.replace("\x00", " ")
     text = re.sub(r"[\x01-\x08\x0b\x0c\x0e-\x1f]", " ", text)
@@ -482,7 +502,7 @@ def state_page_path(uf: str) -> str:
 def state_has_legal_pack(uf: str) -> bool:
     if uf == "GO":
         return True
-    return bool(collect_state_documents(uf))
+    return state_is_deep_published(uf) and bool(collect_state_documents(uf))
 
 
 def render_doc_links(current_path: str, uf: str, docs: list[dict]) -> str:
@@ -904,6 +924,8 @@ def build_state_legal_pages(layout_func, data: dict) -> dict[str, str]:
         uf = state["uf"]
         if uf == "GO":
             continue
+        if not state_is_deep_published(uf):
+            continue
         docs = collect_state_documents(uf)
         if not docs:
             continue
@@ -922,6 +944,18 @@ def state_legislation_teaser(uf: str, current_path: str) -> str:
             ("benefícios fiscais de Goiás", "estados/goias/legislacao/beneficios-regra-maior.html"),
         ]
     else:
+        if not state_is_deep_published(uf):
+            step = state_curation(uf).get("next_step", "Curadoria fonte-a-fonte pendente.")
+            return f"""
+<section class="continuity legal-continuity">
+  <h2>Curadoria estadual em andamento</h2>
+  <p>O conteúdo profundo deste Estado foi retirado da publicação até que RICMS, benefícios fiscais e atos modificadores sejam revisados contra fonte pública vigente e salvos em texto local limpo.</p>
+  <div>
+    <a href="{escape(rel_href(current_path, 'workflow.md'))}">ver workflow editorial</a>
+    <a href="{escape(STATE_OFFICIAL_PORTALS.get(uf, '#'))}" target="_blank" rel="noopener">{escape(step)}</a>
+  </div>
+</section>
+"""
         docs = collect_state_documents(uf)
         if not docs:
             return ""
@@ -945,7 +979,7 @@ def state_legislation_teaser(uf: str, current_path: str) -> str:
 def state_signal_links(uf: str, signal_key: str, current_path: str) -> str:
     if uf == "GO":
         return ""
-    if not collect_state_documents(uf):
+    if not state_is_deep_published(uf) or not collect_state_documents(uf):
         return ""
     group_id = SIGNAL_TO_GROUP.get(signal_key, "icms")
     target = group_path(uf, group_id)
@@ -966,6 +1000,8 @@ def state_legal_search_entries(data: dict) -> list[dict[str, str]]:
     for state in data.get("states", []):
         uf = state["uf"]
         if uf == "GO":
+            continue
+        if not state_is_deep_published(uf):
             continue
         docs = collect_state_documents(uf)
         if not docs:
@@ -1000,6 +1036,8 @@ def state_source_records() -> list[dict]:
     records: list[dict] = []
     for uf in STATE_NAMES:
         if uf == "GO":
+            continue
+        if not state_is_deep_published(uf):
             continue
         for doc in collect_state_documents(uf):
             records.append({

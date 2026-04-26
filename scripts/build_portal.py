@@ -669,11 +669,11 @@ def state_card_markup(state: dict, data: dict) -> str:
     elif state_has_legal_pack(state["uf"]):
         status = "ICMS em tela publicado"
     elif inv.get("file_count", 0):
-        status = "Estrutura pronta para expansao"
+        status = "Estrutura pronta para expansão"
     else:
-        status = "Pagina em estruturacao"
+        status = "Página em estruturação"
     coverage = (
-        "RICMS, leis, anexos e beneficios em tela"
+        "RICMS, leis, anexos e benefícios em tela"
         if state_has_legal_pack(state["uf"])
         else "Texto legal estadual em preparacao"
         if inv.get("file_count", 0)
@@ -1136,10 +1136,10 @@ def state_inventory_sections(state_inv: dict, verified_on: str, compact: bool = 
     if not docs:
         return f"""
 <section class="law-ledger">
-  {inventory_badge('pagina estadual em estruturacao', state_inv.get('compiled_on', '11/04/2026'), verified_on)}
+  {inventory_badge('página estadual em estruturação', state_inv.get('compiled_on', '11/04/2026'), verified_on)}
   <div>
     <h2>Leitura juridica</h2>
-    <p>A pagina ainda nao possui texto legal estadual suficiente para publicacao responsavel.</p>
+    <p>A página ainda não possui texto legal estadual suficiente para publicação responsável.</p>
   </div>
   <div>
     <h2>Conduta segura</h2>
@@ -1149,22 +1149,22 @@ def state_inventory_sections(state_inv: dict, verified_on: str, compact: bool = 
 """
     lead = f"""
 <section class="content-block">
-  <h2>Leitura da legislacao estadual</h2>
-  <p>A leitura estadual deve partir da regra-matriz do ICMS, passar pelos anexos e beneficios, e terminar no documento fiscal, na escrituracao e na prova.</p>
+  <h2>Leitura da legislação estadual</h2>
+  <p>A leitura estadual deve partir da regra-matriz do ICMS, passar pelos anexos e benefícios, e terminar no documento fiscal, na escrituração e na prova.</p>
   <p>Tratamento favorecido nao se presume por semelhanca comercial: produto, NCM, operacao, destinatario, periodo, regime da empresa e condicoes precisam caber no texto legal.</p>
   <p>Antes de configurar ERP, valide o dispositivo aplicavel, a vigencia, a forma de demonstracao no XML/EFD e o documento que sustentara a defesa em fiscalizacao.</p>
 </section>
 """
     ledger = f"""
 <section class="law-ledger">
-  {inventory_badge('legislacao estadual organizada', state_inv.get('compiled_on', '11/04/2026'), verified_on)}
+  {inventory_badge('legislação estadual organizada', state_inv.get('compiled_on', '11/04/2026'), verified_on)}
   <div>
     <h2>Material coberto</h2>
     <p>{fmt_num(state_inv.get('file_count', 0))} atos normativos, {fmt_num(state_inv.get('total_chars', 0))} caracteres de texto legal e {fmt_num(len(state_inv.get('categories', [])))} categorias.</p>
   </div>
   <div>
     <h2>Como usar</h2>
-    <p>Use a tabela como roteiro: norma material, anexos, beneficios, aliquotas, ST, atos infralegais e prova. A tese concreta sempre volta ao portal oficial da UF.</p>
+    <p>Use a tabela como roteiro: norma material, anexos, benefícios, alíquotas, ST, atos infralegais e prova. A tese concreta sempre volta ao portal oficial da UF.</p>
   </div>
 </section>
 """
@@ -1343,9 +1343,9 @@ def estados_index(data: dict) -> str:
 <section class="region-block" id="regiao-{escape(region_id)}">
   <div class="region-heading">
     <div>
-      <span class="eyebrow">Regiao</span>
+      <span class="eyebrow">Região</span>
       <h3>{escape(label)}</h3>
-      <p>{escape(STATE_REGION_SUMMARIES.get(region_id, 'Estados organizados para expansao por RICMS, beneficios, documentos e prova.'))}</p>
+      <p>{escape(STATE_REGION_SUMMARIES.get(region_id, 'Estados organizados para expansão por RICMS, benefícios, documentos e prova.'))}</p>
     </div>
     <a href="#topo-estados">voltar ao mapa</a>
   </div>
@@ -1353,15 +1353,15 @@ def estados_index(data: dict) -> str:
 </section>
 """)
     body = f"""
-{hero("ICMS por Estado", "Arquitetura nacional para organizar RICMS, leis do imposto, beneficios fiscais, cBenef, aliquotas, ST, regimes e prova por UF.", "Estados")}
+{hero("ICMS por Estado", "Arquitetura nacional para organizar RICMS, leis do imposto, benefícios fiscais, cBenef, alíquotas, ST, regimes e prova por UF.", "Estados")}
 <section class="law-ledger">
   <div>
   <h2>Modelo estadual</h2>
-  <p>O portal organiza a leitura por UF, categoria legal, regra de ICMS, beneficio fiscal, documento e prova. Goias continua como modelo profundo; os demais Estados agora têm legislação de ICMS em tela para estudo e expansão didática.</p>
+  <p>O portal organiza a leitura por UF, categoria legal, regra de ICMS, benefício fiscal, documento e prova. Goiás continua como modelo profundo; os demais Estados ficam em curadoria fonte-a-fonte antes de nova publicação profunda.</p>
   </div>
   <div>
     <h2>Como estudar uma UF</h2>
-    <p>Comece por RICMS e lei material; depois avance para anexos, beneficios, aliquotas, ST, regimes especiais, atos infralegais e prova documental.</p>
+    <p>Comece por RICMS e lei material; depois avance para anexos, benefícios, alíquotas, ST, regimes especiais, atos infralegais e prova documental.</p>
   </div>
   <div>
   <h2>Postura editorial</h2>
@@ -1371,14 +1371,14 @@ def estados_index(data: dict) -> str:
 <section class="section-wrap" id="topo-estados">
   <div class="section-heading">
     <span class="eyebrow">Mapa nacional</span>
-    <h2>Estados estruturados por regiao</h2>
-    <p>{fmt_num(total_docs)} atos estaduais mapeados e {fmt_num(total_chars)} caracteres de acervo organizados para virar capitulo por UF, com Goias como modelo editorial aprovado.</p>
+    <h2>Estados estruturados por região</h2>
+    <p>{fmt_num(total_docs)} atos estaduais mapeados e {fmt_num(total_chars)} caracteres de acervo organizados para virar capítulo por UF, com Goiás como modelo editorial aprovado.</p>
   </div>
-  <nav class="region-jump" aria-label="Regioes do Brasil">{region_nav}</nav>
+  <nav class="region-jump" aria-label="Regiões do Brasil">{region_nav}</nav>
   {''.join(region_sections)}
 </section>
 """
-    return layout("estados/index.html", "ICMS por Estado", "Mapa nacional de ICMS e beneficios fiscais por UF.", body, "estados")
+    return layout("estados/index.html", "ICMS por Estado", "Mapa nacional de ICMS e benefícios fiscais por UF.", body, "estados")
 
 
 def state_page(state: dict, data: dict) -> str:
@@ -1393,21 +1393,21 @@ def state_page(state: dict, data: dict) -> str:
     has_pack = state_has_legal_pack(state["uf"])
     if not inv.get("file_count", 0) and not has_pack:
         body = f"""
-{hero(f'{display_name}: ICMS e beneficios fiscais', 'Pagina preservada para publicacao responsavel quando houver texto legal estadual suficiente para leitura publica.', state["uf"])}
-{state_inventory_sections(inv, verified_on, current_path=path)}
+{hero(f'{display_name}: ICMS e benefícios fiscais', 'Página preservada para publicação responsável quando houver texto legal estadual suficiente para leitura pública.', state["uf"])}
+{state_legislation_teaser(state["uf"], path)}
 <section class="continuity">
   <h2>Continuar com seguranca</h2>
   <div>
-    <a href="goias.html">Ver modelo publicado de Goias</a>
-    <a href="../confaz/index.html">Entender CONFAZ e beneficios</a>
+    <a href="goias.html">Ver modelo publicado de Goiás</a>
+    <a href="../confaz/index.html">Entender CONFAZ e benefícios</a>
     <a href="../federal/index.html">Estudar tributos federais</a>
   </div>
 </section>
 """
-        return layout(path, f'{display_name}: ICMS e beneficios fiscais', "Pagina estrutural por UF.", body, "estados")
+        return layout(path, f'{display_name}: ICMS e benefícios fiscais', "Página estrutural por UF.", body, "estados")
     if has_pack:
         body = f"""
-{hero(f'{display_name}: ICMS e beneficios fiscais', 'Legislação estadual em tela: ICMS, benefícios fiscais, alíquotas, ST, documentos e prova por assunto.', state["uf"])}
+{hero(f'{display_name}: ICMS e benefícios fiscais', 'Legislação estadual em tela: ICMS, benefícios fiscais, alíquotas, ST, documentos e prova por assunto.', state["uf"])}
 <section class="law-ledger">
   <div>
     <h2>Estado do estudo</h2>
@@ -1433,13 +1433,13 @@ def state_page(state: dict, data: dict) -> str:
   </div>
 </section>
 """
-        return layout(path, f'{display_name}: ICMS e beneficios fiscais', "ICMS estadual em tela por UF.", body, "estados")
+        return layout(path, f'{display_name}: ICMS e benefícios fiscais', "ICMS estadual em tela por UF.", body, "estados")
     body = f"""
-{hero(f'{display_name}: ICMS e beneficios fiscais', 'Leitura estadual: RICMS, leis, decretos, beneficios, aliquotas, ST, atos infralegais e prova.', state["uf"])}
+{hero(f'{display_name}: ICMS e benefícios fiscais', 'Página estadual em curadoria fonte-a-fonte: RICMS, benefícios, alíquotas, ST, atos infralegais e prova só entram depois de revisão contra fonte pública vigente.', state["uf"])}
 <section class="law-ledger">
   <div>
     <h2>Estado do estudo</h2>
-    <p>Pagina estadual em preparacao. O texto legal sera publicado por capitulos antes de qualquer conclusao operacional.</p>
+    <p>Página estadual em revisão. O texto legal profundo anterior foi bloqueado até substituição por fonte pública limpa e vigente.</p>
   </div>
   <div>
     <h2>Primeira pergunta</h2>
@@ -1454,23 +1454,23 @@ def state_page(state: dict, data: dict) -> str:
   <h2>Matriz estadual de trabalho</h2>
   <div class="matrix-grid">
     <article class="matrix-card"><h3>ICMS material</h3><p>Localize fato gerador, contribuinte, responsavel, base, aliquota, diferimento, ST e obrigacoes acessorias.</p></article>
-    <article class="matrix-card"><h3>Beneficios fiscais</h3><p>Classifique o favor fiscal: isencao, reducao de base, credito outorgado, suspensao, regime especial ou incentivo condicionado.</p></article>
+    <article class="matrix-card"><h3>Benefícios fiscais</h3><p>Classifique o favor fiscal: isenção, redução de base, crédito outorgado, suspensão, regime especial ou incentivo condicionado.</p></article>
     <article class="matrix-card"><h3>Documento e SPED</h3><p>Confira NF-e, CT-e, MDF-e, cBenef quando houver, EFD, ajustes e memoria de calculo.</p></article>
     <article class="matrix-card"><h3>Risco comum</h3><p>Nao aplique beneficio por semelhanca comercial. Produto, operacao, destinatario, vigencia e condicao precisam caber no texto legal.</p></article>
   </div>
 </section>
-{state_inventory_sections(inv, verified_on, current_path=path)}
+{state_legislation_teaser(state["uf"], path)}
 <section class="continuity">
   <h2>Continuar a leitura</h2>
   <div>
-    <a href="goias.html">Ver modelo publicado de Goias</a>
-    <a href="../confaz/index.html">Entender CONFAZ e beneficios</a>
+    <a href="goias.html">Ver modelo publicado de Goiás</a>
+    <a href="../confaz/index.html">Entender CONFAZ e benefícios</a>
     <a href="../federal/pis-cofins.html">Conectar com PIS/Cofins</a>
     <a href="../biblioteca/index.html">Consultar manuais e painel</a>
   </div>
 </section>
 """
-    return layout(path, f'{display_name}: ICMS e beneficios fiscais', "Pagina estrutural por UF.", body, "estados")
+    return layout(path, f'{display_name}: ICMS e benefícios fiscais', "Página estrutural por UF.", body, "estados")
 
 
 def federal_index(data: dict) -> str:
@@ -1666,14 +1666,14 @@ def search_index(data: dict) -> str:
     ]
     entries += [
         {
-            "title": f'{state_display_name(state)}: ICMS e beneficios fiscais',
+            "title": f'{state_display_name(state)}: ICMS e benefícios fiscais',
             "url": state_href(state["uf"]),
             "summary": (
-                "Goias publicado com ICMS, beneficios fiscais, cBenef, RCTE, prova e leitura legal."
+                "Goiás publicado com ICMS, benefícios fiscais, cBenef, RCTE, prova e leitura legal."
                 if state["uf"] == "GO"
-                else "Pagina estadual com legislação de ICMS em tela, beneficios, documento e prova."
+                else "Página estadual com legislação de ICMS em tela, benefícios, documento e prova."
                 if state_has_legal_pack(state["uf"])
-                else "Pagina estadual estruturada para futura publicacao por UF, com foco em ICMS, beneficios, documento e prova."
+                else "Página estadual estruturada para futura publicação por UF, com foco em ICMS, benefícios, documento e prova."
             ),
             "tags": f'{state["uf"]} {state["name"]} {state_display_name(state)} ICMS beneficios fiscais RICMS ' + " ".join(inventory_state(data, state["uf"]).get("categories", []))
         }

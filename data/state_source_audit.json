@@ -1,0 +1,2697 @@
+{
+  "generated_on": "2026-04-26",
+  "summary": {
+    "states": 27,
+    "docs": 183,
+    "blocked": 26
+  },
+  "states": {
+    "AC": {
+      "estado": "Acre",
+      "region": "Norte",
+      "curadoria": "revisao_fonte",
+      "publish_deep": false,
+      "document_count": 6,
+      "total_chars": 2567917,
+      "categories": {
+        "ICMS_ALIQUOTAS": 1,
+        "ICMS_BENEFICIOS": 1,
+        "ICMS_LEIS": 3,
+        "RICMS": 1
+      },
+      "flags": [
+        "contém IPVA",
+        "contém ITCMD/ITCD",
+        "contém Taxas",
+        "fonte local sem URL oficial no cabeçalho",
+        "ruído de extração/encoding",
+        "texto curto para RICMS/benefícios"
+      ],
+      "recommendation": "bloquear_publicacao_ate_curadoria",
+      "next_step": "Baixar RICMS e benefícios de ICMS no portal oficial do Acre.",
+      "documents": [
+        {
+          "file": "AC_ICMS_ALIQUOTAS.txt",
+          "category": "ICMS_ALIQUOTAS",
+          "chars": 6251,
+          "named_icms": true,
+          "fallback_icms": false,
+          "flags": [
+            "fonte local sem URL oficial no cabeçalho",
+            "ruído de extração/encoding",
+            "texto curto para RICMS/benefícios"
+          ]
+        },
+        {
+          "file": "AC_ICMS_BENEFICIOS.txt",
+          "category": "ICMS_BENEFICIOS",
+          "chars": 102251,
+          "named_icms": true,
+          "fallback_icms": false,
+          "flags": [
+            "contém Taxas",
+            "fonte local sem URL oficial no cabeçalho",
+            "ruído de extração/encoding"
+          ]
+        },
+        {
+          "file": "AC_ICMS_LEIS.txt",
+          "category": "ICMS_LEIS",
+          "chars": 94306,
+          "named_icms": true,
+          "fallback_icms": false,
+          "flags": [
+            "fonte local sem URL oficial no cabeçalho",
+            "ruído de extração/encoding"
+          ]
+        },
+        {
+          "file": "AC_ICMS_LEIS_parte2.txt",
+          "category": "ICMS_LEIS",
+          "chars": 2065691,
+          "named_icms": true,
+          "fallback_icms": false,
+          "flags": [
+            "contém IPVA",
+            "contém Taxas",
+            "fonte local sem URL oficial no cabeçalho",
+            "ruído de extração/encoding"
+          ]
+        },
+        {
+          "file": "AC_ICMS_LEIS_parte3.txt",
+          "category": "ICMS_LEIS",
+          "chars": 254363,
+          "named_icms": true,
+          "fallback_icms": false,
+          "flags": [
+            "contém IPVA",
+            "contém ITCMD/ITCD",
+            "contém Taxas",
+            "fonte local sem URL oficial no cabeçalho",
+            "ruído de extração/encoding"
+          ]
+        },
+        {
+          "file": "AC_RICMS.txt",
+          "category": "RICMS",
+          "chars": 45055,
+          "named_icms": true,
+          "fallback_icms": false,
+          "flags": [
+            "fonte local sem URL oficial no cabeçalho",
+            "ruído de extração/encoding"
+          ]
+        }
+      ]
+    },
+    "AL": {
+      "estado": "Alagoas",
+      "region": "Nordeste",
+      "curadoria": "revisao_fonte",
+      "publish_deep": false,
+      "document_count": 3,
+      "total_chars": 608948,
+      "categories": {
+        "ICMS_LEIS": 1,
+        "ICMS_ST": 2
+      },
+      "flags": [
+        "fonte local sem URL oficial no cabeçalho",
+        "ruído de extração/encoding",
+        "texto curto para RICMS/benefícios"
+      ],
+      "recommendation": "bloquear_publicacao_ate_curadoria",
+      "next_step": "Baixar RICMS e benefícios de ICMS no portal oficial de Alagoas.",
+      "documents": [
+        {
+          "file": "AL_ICMS_LEIS.txt",
+          "category": "ICMS_LEIS",
+          "chars": 3047,
+          "named_icms": true,
+          "fallback_icms": false,
+          "flags": [
+            "fonte local sem URL oficial no cabeçalho",
+            "ruído de extração/encoding",
+            "texto curto para RICMS/benefícios"
+          ]
+        },
+        {
+          "file": "AL_ICMS_ST.txt",
+          "category": "ICMS_ST",
+          "chars": 422359,
+          "named_icms": true,
+          "fallback_icms": false,
+          "flags": [
+            "ruído de extração/encoding"
+          ]
+        },
+        {
+          "file": "AL_ICMS_ST_parte2.txt",
+          "category": "ICMS_ST",
+          "chars": 183542,
+          "named_icms": true,
+          "fallback_icms": false,
+          "flags": [
+            "fonte local sem URL oficial no cabeçalho",
+            "ruído de extração/encoding"
+          ]
+        }
+      ]
+    },
+    "AM": {
+      "estado": "Amazonas",
+      "region": "Norte",
+      "curadoria": "revisao_fonte",
+      "publish_deep": false,
+      "document_count": 4,
+      "total_chars": 1944429,
+      "categories": {
+        "DECRETOS": 2,
+        "LEIS": 2
+      },
+      "flags": [
+        "categoria não específica de ICMS",
+        "contém IPVA",
+        "contém ITCMD/ITCD",
+        "contém Taxas",
+        "fallback amplo",
+        "ruído de extração/encoding"
+      ],
+      "recommendation": "bloquear_publicacao_ate_curadoria",
+      "next_step": "Separar Código Tributário, RICMS e benefícios; baixar o regulamento vigente do Amazonas.",
+      "documents": [
+        {
+          "file": "AM_DECRETOS.txt",
+          "category": "DECRETOS",
+          "chars": 765049,
+          "named_icms": false,
+          "fallback_icms": true,
+          "flags": [
+            "categoria não específica de ICMS",
+            "contém Taxas",
+            "fallback amplo",
+            "ruído de extração/encoding"
+          ]
+        },
+        {
+          "file": "AM_DECRETOS_parte2.txt",
+          "category": "DECRETOS",
+          "chars": 193298,
+          "named_icms": false,
+          "fallback_icms": true,
+          "flags": [
+            "categoria não específica de ICMS",
+            "contém Taxas",
+            "fallback amplo",
+            "ruído de extração/encoding"
+          ]
+        },
+        {
+          "file": "AM_LEIS.txt",
+          "category": "LEIS",
+          "chars": 570759,
+          "named_icms": false,
+          "fallback_icms": true,
+          "flags": [
+            "categoria não específica de ICMS",
+            "contém IPVA",
+            "contém ITCMD/ITCD",
+            "contém Taxas",
+            "fallback amplo",
+            "ruído de extração/encoding"
+          ]
+        },
+        {
+          "file": "AM_LEIS_parte2.txt",
+          "category": "LEIS",
+          "chars": 415323,
+          "named_icms": false,
+          "fallback_icms": true,
+          "flags": [
+            "categoria não específica de ICMS",
+            "contém ITCMD/ITCD",
+            "contém Taxas",
+            "fallback amplo",
+            "ruído de extração/encoding"
+          ]
+        }
+      ]
+    },
+    "AP": {
+      "estado": "Amapá",
+      "region": "Norte",
+      "curadoria": "revisao_fonte",
+      "publish_deep": false,
+      "document_count": 7,
+      "total_chars": 5618371,
+      "categories": {
+        "ICMS_ANEXOS": 1,
+        "ICMS_BENEFICIOS": 1,
+        "ICMS_LEIS": 1,
+        "ICMS_ST": 1,
+        "RICMS": 3
+      },
+      "flags": [
+        "contém Taxas",
+        "fonte local sem URL oficial no cabeçalho",
+        "ruído de extração/encoding",
+        "texto curto para RICMS/benefícios"
+      ],
+      "recommendation": "bloquear_publicacao_ate_curadoria",
+      "next_step": "Baixar RICMS e benefícios de ICMS no portal oficial do Amapá.",
+      "documents": [
+        {
+          "file": "AP_ICMS_ANEXOS.txt",
+          "category": "ICMS_ANEXOS",
+          "chars": 119297,
+          "named_icms": true,
+          "fallback_icms": false,
+          "flags": [
+            "contém Taxas",
+            "ruído de extração/encoding"
+          ]
+        },
+        {
+          "file": "AP_ICMS_BENEFICIOS.txt",
+          "category": "ICMS_BENEFICIOS",
+          "chars": 10842,
+          "named_icms": true,
+          "fallback_icms": false,
+          "flags": [
+            "fonte local sem URL oficial no cabeçalho",
+            "ruído de extração/encoding",
+            "texto curto para RICMS/benefícios"
+          ]
+        },
+        {
+          "file": "AP_ICMS_LEIS.txt",
+          "category": "ICMS_LEIS",
+          "chars": 204091,
+          "named_icms": true,
+          "fallback_icms": false,
+          "flags": [
+            "contém Taxas",
+            "ruído de extração/encoding"
+          ]
+        },
+        {
+          "file": "AP_ICMS_ST.txt",
+          "category": "ICMS_ST",
+          "chars": 5738,
+          "named_icms": true,
+          "fallback_icms": false,
+          "flags": [
+            "fonte local sem URL oficial no cabeçalho",
+            "ruído de extração/encoding",
+            "texto curto para RICMS/benefícios"
+          ]
+        },
+        {
+          "file": "AP_RICMS.txt",
+          "category": "RICMS",
+          "chars": 105541,
+          "named_icms": true,
+          "fallback_icms": false,
+          "flags": [
+            "ruído de extração/encoding"
+          ]
+        },
+        {
+          "file": "AP_RICMS_parte2.txt",
+          "category": "RICMS",
+          "chars": 2586435,
+          "named_icms": true,
+          "fallback_icms": false,
+          "flags": [
+            "contém Taxas",
+            "ruído de extração/encoding"
+          ]
+        },
+        {
+          "file": "AP_RICMS_parte3.txt",
+          "category": "RICMS",
+          "chars": 2586427,
+          "named_icms": true,
+          "fallback_icms": false,
+          "flags": [
+            "contém Taxas",
+            "ruído de extração/encoding"
+          ]
+        }
+      ]
+    },
+    "BA": {
+      "estado": "Bahia",
+      "region": "Nordeste",
+      "curadoria": "revisao_fonte",
+      "publish_deep": false,
+      "document_count": 7,
+      "total_chars": 4297939,
+      "categories": {
+        "ICMS_ANEXOS": 2,
+        "ICMS_LEIS": 1,
+        "RICMS": 4
+      },
+      "flags": [
+        "contém Taxas",
+        "fonte local sem URL oficial no cabeçalho",
+        "ruído de extração/encoding",
+        "texto curto para RICMS/benefícios"
+      ],
+      "recommendation": "bloquear_publicacao_ate_curadoria",
+      "next_step": "Baixar RICMS e anexos de benefícios no portal oficial da Bahia.",
+      "documents": [
+        {
+          "file": "BA_ICMS_ANEXOS.txt",
+          "category": "ICMS_ANEXOS",
+          "chars": 421426,
+          "named_icms": true,
+          "fallback_icms": false,
+          "flags": [
+            "contém Taxas",
+            "fonte local sem URL oficial no cabeçalho",
+            "ruído de extração/encoding"
+          ]
+        },
+        {
+          "file": "BA_ICMS_ANEXOS_parte2.txt",
+          "category": "ICMS_ANEXOS",
+          "chars": 864895,
+          "named_icms": true,
+          "fallback_icms": false,
+          "flags": [
+            "contém Taxas",
+            "fonte local sem URL oficial no cabeçalho",
+            "ruído de extração/encoding"
+          ]
+        },
+        {
+          "file": "BA_ICMS_LEIS.txt",
+          "category": "ICMS_LEIS",
+          "chars": 312679,
+          "named_icms": true,
+          "fallback_icms": false,
+          "flags": [
+            "contém Taxas",
+            "fonte local sem URL oficial no cabeçalho",
+            "ruído de extração/encoding"
+          ]
+        },
+        {
+          "file": "BA_RICMS.txt",
+          "category": "RICMS",
+          "chars": 478386,
+          "named_icms": true,
+          "fallback_icms": false,
+          "flags": [
+            "fonte local sem URL oficial no cabeçalho",
+            "ruído de extração/encoding"
+          ]
+        },
+        {
+          "file": "BA_RICMS_parte2.txt",
+          "category": "RICMS",
+          "chars": 13858,
+          "named_icms": true,
+          "fallback_icms": false,
+          "flags": [
+            "fonte local sem URL oficial no cabeçalho",
+            "ruído de extração/encoding",
+            "texto curto para RICMS/benefícios"
+          ]
+        },
+        {
+          "file": "BA_RICMS_parte3.txt",
+          "category": "RICMS",
+          "chars": 1329276,
+          "named_icms": true,
+          "fallback_icms": false,
+          "flags": [
+            "contém Taxas",
+            "ruído de extração/encoding"
+          ]
+        },
+        {
+          "file": "BA_RICMS_parte4.txt",
+          "category": "RICMS",
+          "chars": 877419,
+          "named_icms": true,
+          "fallback_icms": false,
+          "flags": [
+            "contém Taxas",
+            "ruído de extração/encoding"
+          ]
+        }
+      ]
+    },
+    "CE": {
+      "estado": "Ceará",
+      "region": "Nordeste",
+      "curadoria": "revisao_fonte",
+      "publish_deep": false,
+      "document_count": 8,
+      "total_chars": 4274313,
+      "categories": {
+        "DECRETOS": 6,
+        "INSTRUCOES_NORMATIVAS": 1,
+        "LEIS": 1
+      },
+      "flags": [
+        "categoria não específica de ICMS",
+        "contém IPVA",
+        "contém ITCMD/ITCD",
+        "contém Taxas",
+        "fallback amplo",
+        "fonte local sem URL oficial no cabeçalho",
+        "ruído de extração/encoding"
+      ],
+      "recommendation": "bloquear_publicacao_ate_curadoria",
+      "next_step": "Baixar RICMS, decretos modificadores e benefícios no portal oficial do Ceará.",
+      "documents": [
+        {
+          "file": "CE_DECRETOS.txt",
+          "category": "DECRETOS",
+          "chars": 72560,
+          "named_icms": false,
+          "fallback_icms": true,
+          "flags": [
+            "categoria não específica de ICMS",
+            "contém Taxas",
+            "fallback amplo",
+            "fonte local sem URL oficial no cabeçalho",
+            "ruído de extração/encoding"
+          ]
+        },
+        {
+          "file": "CE_DECRETOS_parte2.txt",
+          "category": "DECRETOS",
+          "chars": 1089446,
+          "named_icms": false,
+          "fallback_icms": true,
+          "flags": [
+            "categoria não específica de ICMS",
+            "contém IPVA",
+            "contém Taxas",
+            "fallback amplo",
+            "fonte local sem URL oficial no cabeçalho",
+            "ruído de extração/encoding"
+          ]
+        },
+        {
+          "file": "CE_DECRETOS_parte3.txt",
+          "category": "DECRETOS",
+          "chars": 306925,
+          "named_icms": false,
+          "fallback_icms": true,
+          "flags": [
+            "categoria não específica de ICMS",
+            "contém IPVA",
+            "contém ITCMD/ITCD",
+            "contém Taxas",
+            "fallback amplo",
+            "fonte local sem URL oficial no cabeçalho",
+            "ruído de extração/encoding"
+          ]
+        },
+        {
+          "file": "CE_DECRETOS_parte4.txt",
+          "category": "DECRETOS",
+          "chars": 369783,
+          "named_icms": false,
+          "fallback_icms": true,
+          "flags": [
+            "categoria não específica de ICMS",
+            "contém IPVA",
+            "contém Taxas",
+            "fallback amplo",
+            "fonte local sem URL oficial no cabeçalho",
+            "ruído de extração/encoding"
+          ]
+        },
+        {
+          "file": "CE_DECRETOS_parte5.txt",
+          "category": "DECRETOS",
+          "chars": 1878223,
+          "named_icms": false,
+          "fallback_icms": true,
+          "flags": [
+            "categoria não específica de ICMS",
+            "contém Taxas",
+            "fallback amplo",
+            "fonte local sem URL oficial no cabeçalho",
+            "ruído de extração/encoding"
+          ]
+        },
+        {
+          "file": "CE_DECRETOS_parte6.txt",
+          "category": "DECRETOS",
+          "chars": 132595,
+          "named_icms": false,
+          "fallback_icms": true,
+          "flags": [
+            "categoria não específica de ICMS",
+            "contém Taxas",
+            "fallback amplo",
+            "fonte local sem URL oficial no cabeçalho",
+            "ruído de extração/encoding"
+          ]
+        },
+        {
+          "file": "CE_INSTRUCOES_NORMATIVAS.txt",
+          "category": "INSTRUCOES_NORMATIVAS",
+          "chars": 117408,
+          "named_icms": false,
+          "fallback_icms": true,
+          "flags": [
+            "categoria não específica de ICMS",
+            "fallback amplo",
+            "ruído de extração/encoding"
+          ]
+        },
+        {
+          "file": "CE_LEIS.txt",
+          "category": "LEIS",
+          "chars": 307373,
+          "named_icms": false,
+          "fallback_icms": true,
+          "flags": [
+            "categoria não específica de ICMS",
+            "contém IPVA",
+            "contém ITCMD/ITCD",
+            "contém Taxas",
+            "fallback amplo",
+            "fonte local sem URL oficial no cabeçalho",
+            "ruído de extração/encoding"
+          ]
+        }
+      ]
+    },
+    "DF": {
+      "estado": "Distrito Federal",
+      "region": "Centro-Oeste",
+      "curadoria": "revisao_fonte",
+      "publish_deep": false,
+      "document_count": 5,
+      "total_chars": 1571628,
+      "categories": {
+        "DECRETOS": 3,
+        "LEIS": 1,
+        "PORTARIAS": 1
+      },
+      "flags": [
+        "categoria não específica de ICMS",
+        "contém IPVA",
+        "contém ITCMD/ITCD",
+        "contém Taxas",
+        "fallback amplo",
+        "ruído de extração/encoding"
+      ],
+      "recommendation": "bloquear_publicacao_ate_curadoria",
+      "next_step": "Baixar RICMS/DF e caderno de benefícios fiscais na Receita do Distrito Federal.",
+      "documents": [
+        {
+          "file": "DF_DECRETOS_parte2.txt",
+          "category": "DECRETOS",
+          "chars": 495502,
+          "named_icms": false,
+          "fallback_icms": true,
+          "flags": [
+            "categoria não específica de ICMS",
+            "contém IPVA",
+            "contém Taxas",
+            "fallback amplo",
+            "ruído de extração/encoding"
+          ]
+        },
+        {
+          "file": "DF_DECRETOS_parte3.txt",
+          "category": "DECRETOS",
+          "chars": 364467,
+          "named_icms": false,
+          "fallback_icms": true,
+          "flags": [
+            "categoria não específica de ICMS",
+            "contém IPVA",
+            "contém ITCMD/ITCD",
+            "contém Taxas",
+            "fallback amplo",
+            "ruído de extração/encoding"
+          ]
+        },
+        {
+          "file": "DF_DECRETOS_parte4.txt",
+          "category": "DECRETOS",
+          "chars": 245525,
+          "named_icms": false,
+          "fallback_icms": true,
+          "flags": [
+            "categoria não específica de ICMS",
+            "contém IPVA",
+            "contém Taxas",
+            "fallback amplo",
+            "ruído de extração/encoding"
+          ]
+        },
+        {
+          "file": "DF_LEIS_parte3.txt",
+          "category": "LEIS",
+          "chars": 121505,
+          "named_icms": false,
+          "fallback_icms": true,
+          "flags": [
+            "categoria não específica de ICMS",
+            "contém IPVA",
+            "contém Taxas",
+            "fallback amplo",
+            "ruído de extração/encoding"
+          ]
+        },
+        {
+          "file": "DF_PORTARIAS.txt",
+          "category": "PORTARIAS",
+          "chars": 344629,
+          "named_icms": false,
+          "fallback_icms": true,
+          "flags": [
+            "categoria não específica de ICMS",
+            "contém IPVA",
+            "contém ITCMD/ITCD",
+            "contém Taxas",
+            "fallback amplo",
+            "ruído de extração/encoding"
+          ]
+        }
+      ]
+    },
+    "ES": {
+      "estado": "Espírito Santo",
+      "region": "Sudeste",
+      "curadoria": "revisao_fonte",
+      "publish_deep": false,
+      "document_count": 7,
+      "total_chars": 3144165,
+      "categories": {
+        "RICMS": 7
+      },
+      "flags": [
+        "contém IPVA",
+        "contém Taxas",
+        "ruído de extração/encoding"
+      ],
+      "recommendation": "bloquear_publicacao_ate_curadoria",
+      "next_step": "Baixar RICMS/ES vigente e benefícios no portal oficial do Espírito Santo.",
+      "documents": [
+        {
+          "file": "ES_RICMS_pt1.txt",
+          "category": "RICMS",
+          "chars": 482946,
+          "named_icms": true,
+          "fallback_icms": false,
+          "flags": [
+            "contém IPVA",
+            "contém Taxas",
+            "ruído de extração/encoding"
+          ]
+        },
+        {
+          "file": "ES_RICMS_pt2.txt",
+          "category": "RICMS",
+          "chars": 479965,
+          "named_icms": true,
+          "fallback_icms": false,
+          "flags": [
+            "contém Taxas",
+            "ruído de extração/encoding"
+          ]
+        },
+        {
+          "file": "ES_RICMS_pt3.txt",
+          "category": "RICMS",
+          "chars": 481125,
+          "named_icms": true,
+          "fallback_icms": false,
+          "flags": [
+            "contém Taxas",
+            "ruído de extração/encoding"
+          ]
+        },
+        {
+          "file": "ES_RICMS_pt4.txt",
+          "category": "RICMS",
+          "chars": 479621,
+          "named_icms": true,
+          "fallback_icms": false,
+          "flags": [
+            "contém Taxas",
+            "ruído de extração/encoding"
+          ]
+        },
+        {
+          "file": "ES_RICMS_pt5.txt",
+          "category": "RICMS",
+          "chars": 479189,
+          "named_icms": true,
+          "fallback_icms": false,
+          "flags": [
+            "contém Taxas",
+            "ruído de extração/encoding"
+          ]
+        },
+        {
+          "file": "ES_RICMS_pt6.txt",
+          "category": "RICMS",
+          "chars": 479907,
+          "named_icms": true,
+          "fallback_icms": false,
+          "flags": [
+            "contém IPVA",
+            "contém Taxas",
+            "ruído de extração/encoding"
+          ]
+        },
+        {
+          "file": "ES_RICMS_pt7.txt",
+          "category": "RICMS",
+          "chars": 261412,
+          "named_icms": true,
+          "fallback_icms": false,
+          "flags": [
+            "ruído de extração/encoding"
+          ]
+        }
+      ]
+    },
+    "GO": {
+      "estado": "Goiás",
+      "region": "Centro-Oeste",
+      "curadoria": "aprovado_v1",
+      "publish_deep": true,
+      "document_count": 0,
+      "total_chars": 0,
+      "categories": {},
+      "flags": [],
+      "recommendation": "manter_publicado",
+      "next_step": "Manter monitoramento de RCTE, Anexo IX, cBenef e atos modificadores.",
+      "documents": []
+    },
+    "MA": {
+      "estado": "Maranhão",
+      "region": "Nordeste",
+      "curadoria": "revisao_fonte",
+      "publish_deep": false,
+      "document_count": 10,
+      "total_chars": 5048278,
+      "categories": {
+        "ICMS_LEIS": 1,
+        "RICMS": 9
+      },
+      "flags": [
+        "contém Taxas",
+        "fonte local sem URL oficial no cabeçalho",
+        "ruído de extração/encoding"
+      ],
+      "recommendation": "bloquear_publicacao_ate_curadoria",
+      "next_step": "Baixar RICMS/MA e anexos de benefícios no portal oficial do Maranhão.",
+      "documents": [
+        {
+          "file": "MA_ICMS_LEIS.txt",
+          "category": "ICMS_LEIS",
+          "chars": 874624,
+          "named_icms": true,
+          "fallback_icms": false,
+          "flags": [
+            "contém Taxas",
+            "fonte local sem URL oficial no cabeçalho",
+            "ruído de extração/encoding"
+          ]
+        },
+        {
+          "file": "MA_RICMS.txt",
+          "category": "RICMS",
+          "chars": 486397,
+          "named_icms": true,
+          "fallback_icms": false,
+          "flags": [
+            "contém Taxas",
+            "fonte local sem URL oficial no cabeçalho",
+            "ruído de extração/encoding"
+          ]
+        },
+        {
+          "file": "MA_RICMS_parte2.txt",
+          "category": "RICMS",
+          "chars": 482908,
+          "named_icms": true,
+          "fallback_icms": false,
+          "flags": [
+            "contém Taxas",
+            "ruído de extração/encoding"
+          ]
+        },
+        {
+          "file": "MA_RICMS_parte3.txt",
+          "category": "RICMS",
+          "chars": 386131,
+          "named_icms": true,
+          "fallback_icms": false,
+          "flags": [
+            "contém Taxas",
+            "fonte local sem URL oficial no cabeçalho",
+            "ruído de extração/encoding"
+          ]
+        },
+        {
+          "file": "MA_RICMS_parte4.txt",
+          "category": "RICMS",
+          "chars": 470319,
+          "named_icms": true,
+          "fallback_icms": false,
+          "flags": [
+            "contém Taxas",
+            "fonte local sem URL oficial no cabeçalho",
+            "ruído de extração/encoding"
+          ]
+        },
+        {
+          "file": "MA_RICMS_parte5.txt",
+          "category": "RICMS",
+          "chars": 470720,
+          "named_icms": true,
+          "fallback_icms": false,
+          "flags": [
+            "contém Taxas",
+            "ruído de extração/encoding"
+          ]
+        },
+        {
+          "file": "MA_RICMS_parte6.txt",
+          "category": "RICMS",
+          "chars": 279304,
+          "named_icms": true,
+          "fallback_icms": false,
+          "flags": [
+            "fonte local sem URL oficial no cabeçalho",
+            "ruído de extração/encoding"
+          ]
+        },
+        {
+          "file": "MA_RICMS_parte7.txt",
+          "category": "RICMS",
+          "chars": 258918,
+          "named_icms": true,
+          "fallback_icms": false,
+          "flags": [
+            "fonte local sem URL oficial no cabeçalho",
+            "ruído de extração/encoding"
+          ]
+        },
+        {
+          "file": "MA_RICMS_parte8.txt",
+          "category": "RICMS",
+          "chars": 1254809,
+          "named_icms": true,
+          "fallback_icms": false,
+          "flags": [
+            "contém Taxas",
+            "ruído de extração/encoding"
+          ]
+        },
+        {
+          "file": "MA_RICMS_parte9.txt",
+          "category": "RICMS",
+          "chars": 84148,
+          "named_icms": true,
+          "fallback_icms": false,
+          "flags": [
+            "fonte local sem URL oficial no cabeçalho",
+            "ruído de extração/encoding"
+          ]
+        }
+      ]
+    },
+    "MG": {
+      "estado": "Minas Gerais",
+      "region": "Sudeste",
+      "curadoria": "revisao_fonte",
+      "publish_deep": false,
+      "document_count": 31,
+      "total_chars": 14454235,
+      "categories": {
+        "RICMS": 31
+      },
+      "flags": [
+        "contém Taxas",
+        "ruído de extração/encoding"
+      ],
+      "recommendation": "bloquear_publicacao_ate_curadoria",
+      "next_step": "Baixar RICMS/MG vigente, anexos e benefícios diretamente da SEF/MG.",
+      "documents": [
+        {
+          "file": "MG_RICMS_pt1.txt",
+          "category": "RICMS",
+          "chars": 485024,
+          "named_icms": true,
+          "fallback_icms": false,
+          "flags": [
+            "contém Taxas",
+            "ruído de extração/encoding"
+          ]
+        },
+        {
+          "file": "MG_RICMS_pt10.txt",
+          "category": "RICMS",
+          "chars": 480511,
+          "named_icms": true,
+          "fallback_icms": false,
+          "flags": [
+            "ruído de extração/encoding"
+          ]
+        },
+        {
+          "file": "MG_RICMS_pt11.txt",
+          "category": "RICMS",
+          "chars": 481681,
+          "named_icms": true,
+          "fallback_icms": false,
+          "flags": [
+            "contém Taxas",
+            "ruído de extração/encoding"
+          ]
+        },
+        {
+          "file": "MG_RICMS_pt12.txt",
+          "category": "RICMS",
+          "chars": 481158,
+          "named_icms": true,
+          "fallback_icms": false,
+          "flags": [
+            "contém Taxas",
+            "ruído de extração/encoding"
+          ]
+        },
+        {
+          "file": "MG_RICMS_pt13.txt",
+          "category": "RICMS",
+          "chars": 482997,
+          "named_icms": true,
+          "fallback_icms": false,
+          "flags": [
+            "contém Taxas",
+            "ruído de extração/encoding"
+          ]
+        },
+        {
+          "file": "MG_RICMS_pt14.txt",
+          "category": "RICMS",
+          "chars": 481868,
+          "named_icms": true,
+          "fallback_icms": false,
+          "flags": [
+            "contém Taxas",
+            "ruído de extração/encoding"
+          ]
+        },
+        {
+          "file": "MG_RICMS_pt15.txt",
+          "category": "RICMS",
+          "chars": 483381,
+          "named_icms": true,
+          "fallback_icms": false,
+          "flags": [
+            "ruído de extração/encoding"
+          ]
+        },
+        {
+          "file": "MG_RICMS_pt16.txt",
+          "category": "RICMS",
+          "chars": 481633,
+          "named_icms": true,
+          "fallback_icms": false,
+          "flags": [
+            "ruído de extração/encoding"
+          ]
+        },
+        {
+          "file": "MG_RICMS_pt17.txt",
+          "category": "RICMS",
+          "chars": 482687,
+          "named_icms": true,
+          "fallback_icms": false,
+          "flags": [
+            "ruído de extração/encoding"
+          ]
+        },
+        {
+          "file": "MG_RICMS_pt18.txt",
+          "category": "RICMS",
+          "chars": 482076,
+          "named_icms": true,
+          "fallback_icms": false,
+          "flags": [
+            "ruído de extração/encoding"
+          ]
+        },
+        {
+          "file": "MG_RICMS_pt19.txt",
+          "category": "RICMS",
+          "chars": 480357,
+          "named_icms": true,
+          "fallback_icms": false,
+          "flags": [
+            "contém Taxas",
+            "ruído de extração/encoding"
+          ]
+        },
+        {
+          "file": "MG_RICMS_pt2.txt",
+          "category": "RICMS",
+          "chars": 482696,
+          "named_icms": true,
+          "fallback_icms": false,
+          "flags": [
+            "contém Taxas",
+            "ruído de extração/encoding"
+          ]
+        },
+        {
+          "file": "MG_RICMS_pt20.txt",
+          "category": "RICMS",
+          "chars": 483813,
+          "named_icms": true,
+          "fallback_icms": false,
+          "flags": [
+            "ruído de extração/encoding"
+          ]
+        },
+        {
+          "file": "MG_RICMS_pt21.txt",
+          "category": "RICMS",
+          "chars": 482271,
+          "named_icms": true,
+          "fallback_icms": false,
+          "flags": [
+            "contém Taxas",
+            "ruído de extração/encoding"
+          ]
+        },
+        {
+          "file": "MG_RICMS_pt22.txt",
+          "category": "RICMS",
+          "chars": 480434,
+          "named_icms": true,
+          "fallback_icms": false,
+          "flags": [
+            "contém Taxas",
+            "ruído de extração/encoding"
+          ]
+        },
+        {
+          "file": "MG_RICMS_pt23.txt",
+          "category": "RICMS",
+          "chars": 481344,
+          "named_icms": true,
+          "fallback_icms": false,
+          "flags": [
+            "contém Taxas",
+            "ruído de extração/encoding"
+          ]
+        },
+        {
+          "file": "MG_RICMS_pt24.txt",
+          "category": "RICMS",
+          "chars": 479227,
+          "named_icms": true,
+          "fallback_icms": false,
+          "flags": [
+            "contém Taxas",
+            "ruído de extração/encoding"
+          ]
+        },
+        {
+          "file": "MG_RICMS_pt25.txt",
+          "category": "RICMS",
+          "chars": 477383,
+          "named_icms": true,
+          "fallback_icms": false,
+          "flags": [
+            "ruído de extração/encoding"
+          ]
+        },
+        {
+          "file": "MG_RICMS_pt26.txt",
+          "category": "RICMS",
+          "chars": 486587,
+          "named_icms": true,
+          "fallback_icms": false,
+          "flags": [
+            "contém Taxas",
+            "ruído de extração/encoding"
+          ]
+        },
+        {
+          "file": "MG_RICMS_pt27.txt",
+          "category": "RICMS",
+          "chars": 478299,
+          "named_icms": true,
+          "fallback_icms": false,
+          "flags": [
+            "ruído de extração/encoding"
+          ]
+        },
+        {
+          "file": "MG_RICMS_pt28.txt",
+          "category": "RICMS",
+          "chars": 479539,
+          "named_icms": true,
+          "fallback_icms": false,
+          "flags": [
+            "ruído de extração/encoding"
+          ]
+        },
+        {
+          "file": "MG_RICMS_pt29.txt",
+          "category": "RICMS",
+          "chars": 481330,
+          "named_icms": true,
+          "fallback_icms": false,
+          "flags": [
+            "contém Taxas",
+            "ruído de extração/encoding"
+          ]
+        },
+        {
+          "file": "MG_RICMS_pt3.txt",
+          "category": "RICMS",
+          "chars": 482288,
+          "named_icms": true,
+          "fallback_icms": false,
+          "flags": [
+            "contém Taxas",
+            "ruído de extração/encoding"
+          ]
+        },
+        {
+          "file": "MG_RICMS_pt30.txt",
+          "category": "RICMS",
+          "chars": 479647,
+          "named_icms": true,
+          "fallback_icms": false,
+          "flags": [
+            "contém Taxas",
+            "ruído de extração/encoding"
+          ]
+        },
+        {
+          "file": "MG_RICMS_pt31.txt",
+          "category": "RICMS",
+          "chars": 82153,
+          "named_icms": true,
+          "fallback_icms": false,
+          "flags": [
+            "ruído de extração/encoding"
+          ]
+        },
+        {
+          "file": "MG_RICMS_pt4.txt",
+          "category": "RICMS",
+          "chars": 482934,
+          "named_icms": true,
+          "fallback_icms": false,
+          "flags": [
+            "contém Taxas",
+            "ruído de extração/encoding"
+          ]
+        },
+        {
+          "file": "MG_RICMS_pt5.txt",
+          "category": "RICMS",
+          "chars": 481339,
+          "named_icms": true,
+          "fallback_icms": false,
+          "flags": [
+            "contém Taxas",
+            "ruído de extração/encoding"
+          ]
+        },
+        {
+          "file": "MG_RICMS_pt6.txt",
+          "category": "RICMS",
+          "chars": 415710,
+          "named_icms": true,
+          "fallback_icms": false,
+          "flags": [
+            "ruído de extração/encoding"
+          ]
+        },
+        {
+          "file": "MG_RICMS_pt7.txt",
+          "category": "RICMS",
+          "chars": 459527,
+          "named_icms": true,
+          "fallback_icms": false,
+          "flags": []
+        },
+        {
+          "file": "MG_RICMS_pt8.txt",
+          "category": "RICMS",
+          "chars": 493456,
+          "named_icms": true,
+          "fallback_icms": false,
+          "flags": [
+            "contém Taxas",
+            "ruído de extração/encoding"
+          ]
+        },
+        {
+          "file": "MG_RICMS_pt9.txt",
+          "category": "RICMS",
+          "chars": 480885,
+          "named_icms": true,
+          "fallback_icms": false,
+          "flags": [
+            "contém Taxas",
+            "ruído de extração/encoding"
+          ]
+        }
+      ]
+    },
+    "MS": {
+      "estado": "Mato Grosso do Sul",
+      "region": "Centro-Oeste",
+      "curadoria": "revisao_fonte",
+      "publish_deep": false,
+      "document_count": 5,
+      "total_chars": 2230461,
+      "categories": {
+        "RICMS": 5
+      },
+      "flags": [
+        "contém IPVA",
+        "contém ITCMD/ITCD",
+        "contém Taxas",
+        "ruído de extração/encoding"
+      ],
+      "recommendation": "bloquear_publicacao_ate_curadoria",
+      "next_step": "Baixar RICMS/MS e anexos de benefícios no portal oficial de Mato Grosso do Sul.",
+      "documents": [
+        {
+          "file": "MS_RICMS_pt1.txt",
+          "category": "RICMS",
+          "chars": 482292,
+          "named_icms": true,
+          "fallback_icms": false,
+          "flags": [
+            "contém ITCMD/ITCD",
+            "contém Taxas",
+            "ruído de extração/encoding"
+          ]
+        },
+        {
+          "file": "MS_RICMS_pt2.txt",
+          "category": "RICMS",
+          "chars": 484683,
+          "named_icms": true,
+          "fallback_icms": false,
+          "flags": [
+            "contém Taxas",
+            "ruído de extração/encoding"
+          ]
+        },
+        {
+          "file": "MS_RICMS_pt3.txt",
+          "category": "RICMS",
+          "chars": 482571,
+          "named_icms": true,
+          "fallback_icms": false,
+          "flags": [
+            "contém Taxas",
+            "ruído de extração/encoding"
+          ]
+        },
+        {
+          "file": "MS_RICMS_pt4.txt",
+          "category": "RICMS",
+          "chars": 482282,
+          "named_icms": true,
+          "fallback_icms": false,
+          "flags": [
+            "contém IPVA",
+            "contém ITCMD/ITCD",
+            "contém Taxas",
+            "ruído de extração/encoding"
+          ]
+        },
+        {
+          "file": "MS_RICMS_pt5.txt",
+          "category": "RICMS",
+          "chars": 298633,
+          "named_icms": true,
+          "fallback_icms": false,
+          "flags": [
+            "contém Taxas",
+            "ruído de extração/encoding"
+          ]
+        }
+      ]
+    },
+    "MT": {
+      "estado": "Mato Grosso",
+      "region": "Centro-Oeste",
+      "curadoria": "capturado_sem_aprovacao",
+      "publish_deep": false,
+      "document_count": 3,
+      "total_chars": 3867071,
+      "categories": {
+        "ICMS_ANEXOS": 2,
+        "RICMS": 1
+      },
+      "flags": [
+        "contém IPVA",
+        "contém Taxas",
+        "ruído de extração/encoding"
+      ],
+      "recommendation": "bloquear_publicacao_ate_curadoria",
+      "next_step": "RICMS/MT capturado em data/fontes-estaduais-curadas/centro-oeste/MT; falta segmentar anexos, benefícios e validar vigência.",
+      "documents": [
+        {
+          "file": "MT_ICMS_ANEXOS.txt",
+          "category": "ICMS_ANEXOS",
+          "chars": 437844,
+          "named_icms": true,
+          "fallback_icms": false,
+          "flags": [
+            "ruído de extração/encoding"
+          ]
+        },
+        {
+          "file": "MT_ICMS_ANEXOS_parte2.txt",
+          "category": "ICMS_ANEXOS",
+          "chars": 373385,
+          "named_icms": true,
+          "fallback_icms": false,
+          "flags": [
+            "ruído de extração/encoding"
+          ]
+        },
+        {
+          "file": "MT_RICMS.txt",
+          "category": "RICMS",
+          "chars": 3055842,
+          "named_icms": true,
+          "fallback_icms": false,
+          "flags": [
+            "contém IPVA",
+            "contém Taxas",
+            "ruído de extração/encoding"
+          ]
+        }
+      ]
+    },
+    "PA": {
+      "estado": "Pará",
+      "region": "Norte",
+      "curadoria": "revisao_fonte",
+      "publish_deep": false,
+      "document_count": 2,
+      "total_chars": 658217,
+      "categories": {
+        "OUTROS": 2
+      },
+      "flags": [
+        "categoria não específica de ICMS",
+        "contém IPVA",
+        "contém ITCMD/ITCD",
+        "contém Taxas",
+        "fallback amplo",
+        "fonte local sem URL oficial no cabeçalho",
+        "ruído de extração/encoding"
+      ],
+      "recommendation": "bloquear_publicacao_ate_curadoria",
+      "next_step": "Baixar RICMS/PA e benefícios no portal oficial do Pará.",
+      "documents": [
+        {
+          "file": "PA_OUTROS.txt",
+          "category": "OUTROS",
+          "chars": 402641,
+          "named_icms": false,
+          "fallback_icms": true,
+          "flags": [
+            "categoria não específica de ICMS",
+            "contém IPVA",
+            "contém ITCMD/ITCD",
+            "contém Taxas",
+            "fallback amplo",
+            "fonte local sem URL oficial no cabeçalho",
+            "ruído de extração/encoding"
+          ]
+        },
+        {
+          "file": "PA_OUTROS_parte2.txt",
+          "category": "OUTROS",
+          "chars": 255576,
+          "named_icms": false,
+          "fallback_icms": true,
+          "flags": [
+            "categoria não específica de ICMS",
+            "contém IPVA",
+            "contém ITCMD/ITCD",
+            "contém Taxas",
+            "fallback amplo",
+            "fonte local sem URL oficial no cabeçalho",
+            "ruído de extração/encoding"
+          ]
+        }
+      ]
+    },
+    "PB": {
+      "estado": "Paraíba",
+      "region": "Nordeste",
+      "curadoria": "revisao_fonte",
+      "publish_deep": false,
+      "document_count": 1,
+      "total_chars": 177194,
+      "categories": {
+        "ICMS_LEIS": 1
+      },
+      "flags": [
+        "contém IPVA",
+        "contém ITCMD/ITCD",
+        "contém Taxas",
+        "ruído de extração/encoding"
+      ],
+      "recommendation": "bloquear_publicacao_ate_curadoria",
+      "next_step": "Baixar RICMS/PB e benefícios no portal oficial da Paraíba.",
+      "documents": [
+        {
+          "file": "PB_ICMS_LEIS.txt",
+          "category": "ICMS_LEIS",
+          "chars": 177194,
+          "named_icms": true,
+          "fallback_icms": false,
+          "flags": [
+            "contém IPVA",
+            "contém ITCMD/ITCD",
+            "contém Taxas",
+            "ruído de extração/encoding"
+          ]
+        }
+      ]
+    },
+    "PE": {
+      "estado": "Pernambuco",
+      "region": "Nordeste",
+      "curadoria": "revisao_fonte",
+      "publish_deep": false,
+      "document_count": 8,
+      "total_chars": 2554153,
+      "categories": {
+        "ICMS_ALIQUOTAS": 1,
+        "ICMS_LEIS": 1,
+        "ICMS_ST": 1,
+        "RICMS": 5
+      },
+      "flags": [
+        "contém Taxas",
+        "fonte local sem URL oficial no cabeçalho",
+        "ruído de extração/encoding",
+        "texto curto para RICMS/benefícios"
+      ],
+      "recommendation": "bloquear_publicacao_ate_curadoria",
+      "next_step": "Baixar RICMS/PE e benefícios no portal oficial de Pernambuco.",
+      "documents": [
+        {
+          "file": "PE_ICMS_ALIQUOTAS.txt",
+          "category": "ICMS_ALIQUOTAS",
+          "chars": 6577,
+          "named_icms": true,
+          "fallback_icms": false,
+          "flags": [
+            "fonte local sem URL oficial no cabeçalho",
+            "ruído de extração/encoding",
+            "texto curto para RICMS/benefícios"
+          ]
+        },
+        {
+          "file": "PE_ICMS_LEIS.txt",
+          "category": "ICMS_LEIS",
+          "chars": 244482,
+          "named_icms": true,
+          "fallback_icms": false,
+          "flags": [
+            "contém Taxas",
+            "ruído de extração/encoding"
+          ]
+        },
+        {
+          "file": "PE_ICMS_ST.txt",
+          "category": "ICMS_ST",
+          "chars": 29665,
+          "named_icms": true,
+          "fallback_icms": false,
+          "flags": [
+            "fonte local sem URL oficial no cabeçalho",
+            "ruído de extração/encoding"
+          ]
+        },
+        {
+          "file": "PE_RICMS.txt",
+          "category": "RICMS",
+          "chars": 498786,
+          "named_icms": true,
+          "fallback_icms": false,
+          "flags": [
+            "ruído de extração/encoding"
+          ]
+        },
+        {
+          "file": "PE_RICMS_parte2.txt",
+          "category": "RICMS",
+          "chars": 498785,
+          "named_icms": true,
+          "fallback_icms": false,
+          "flags": [
+            "ruído de extração/encoding"
+          ]
+        },
+        {
+          "file": "PE_RICMS_parte3.txt",
+          "category": "RICMS",
+          "chars": 498757,
+          "named_icms": true,
+          "fallback_icms": false,
+          "flags": [
+            "contém Taxas",
+            "ruído de extração/encoding"
+          ]
+        },
+        {
+          "file": "PE_RICMS_parte4.txt",
+          "category": "RICMS",
+          "chars": 495116,
+          "named_icms": true,
+          "fallback_icms": false,
+          "flags": [
+            "contém Taxas",
+            "ruído de extração/encoding"
+          ]
+        },
+        {
+          "file": "PE_RICMS_parte5.txt",
+          "category": "RICMS",
+          "chars": 281985,
+          "named_icms": true,
+          "fallback_icms": false,
+          "flags": [
+            "contém Taxas",
+            "ruído de extração/encoding"
+          ]
+        }
+      ]
+    },
+    "PI": {
+      "estado": "Piauí",
+      "region": "Nordeste",
+      "curadoria": "revisao_fonte",
+      "publish_deep": false,
+      "document_count": 9,
+      "total_chars": 2812719,
+      "categories": {
+        "ICMS_ANEXOS": 7,
+        "ICMS_LEIS": 1,
+        "RICMS": 1
+      },
+      "flags": [
+        "contém IPVA",
+        "contém Taxas",
+        "fonte local sem URL oficial no cabeçalho",
+        "ruído de extração/encoding"
+      ],
+      "recommendation": "bloquear_publicacao_ate_curadoria",
+      "next_step": "Baixar RICMS/PI e benefícios no portal oficial do Piauí.",
+      "documents": [
+        {
+          "file": "PI_ICMS_ANEXOS.txt",
+          "category": "ICMS_ANEXOS",
+          "chars": 69793,
+          "named_icms": true,
+          "fallback_icms": false,
+          "flags": [
+            "fonte local sem URL oficial no cabeçalho",
+            "ruído de extração/encoding"
+          ]
+        },
+        {
+          "file": "PI_ICMS_ANEXOS_parte2.txt",
+          "category": "ICMS_ANEXOS",
+          "chars": 491020,
+          "named_icms": true,
+          "fallback_icms": false,
+          "flags": [
+            "contém Taxas",
+            "fonte local sem URL oficial no cabeçalho",
+            "ruído de extração/encoding"
+          ]
+        },
+        {
+          "file": "PI_ICMS_ANEXOS_parte3.txt",
+          "category": "ICMS_ANEXOS",
+          "chars": 34416,
+          "named_icms": true,
+          "fallback_icms": false,
+          "flags": [
+            "fonte local sem URL oficial no cabeçalho",
+            "ruído de extração/encoding"
+          ]
+        },
+        {
+          "file": "PI_ICMS_ANEXOS_parte4.txt",
+          "category": "ICMS_ANEXOS",
+          "chars": 580492,
+          "named_icms": true,
+          "fallback_icms": false,
+          "flags": [
+            "contém Taxas",
+            "fonte local sem URL oficial no cabeçalho",
+            "ruído de extração/encoding"
+          ]
+        },
+        {
+          "file": "PI_ICMS_ANEXOS_parte5.txt",
+          "category": "ICMS_ANEXOS",
+          "chars": 159625,
+          "named_icms": true,
+          "fallback_icms": false,
+          "flags": [
+            "contém Taxas",
+            "fonte local sem URL oficial no cabeçalho",
+            "ruído de extração/encoding"
+          ]
+        },
+        {
+          "file": "PI_ICMS_ANEXOS_parte6.txt",
+          "category": "ICMS_ANEXOS",
+          "chars": 455641,
+          "named_icms": true,
+          "fallback_icms": false,
+          "flags": [
+            "contém IPVA",
+            "ruído de extração/encoding"
+          ]
+        },
+        {
+          "file": "PI_ICMS_ANEXOS_parte7.txt",
+          "category": "ICMS_ANEXOS",
+          "chars": 470883,
+          "named_icms": true,
+          "fallback_icms": false,
+          "flags": [
+            "contém Taxas",
+            "ruído de extração/encoding"
+          ]
+        },
+        {
+          "file": "PI_ICMS_LEIS.txt",
+          "category": "ICMS_LEIS",
+          "chars": 268197,
+          "named_icms": true,
+          "fallback_icms": false,
+          "flags": [
+            "contém Taxas",
+            "fonte local sem URL oficial no cabeçalho",
+            "ruído de extração/encoding"
+          ]
+        },
+        {
+          "file": "PI_RICMS.txt",
+          "category": "RICMS",
+          "chars": 282652,
+          "named_icms": true,
+          "fallback_icms": false,
+          "flags": [
+            "contém Taxas",
+            "fonte local sem URL oficial no cabeçalho",
+            "ruído de extração/encoding"
+          ]
+        }
+      ]
+    },
+    "PR": {
+      "estado": "Paraná",
+      "region": "Sul",
+      "curadoria": "revisao_fonte",
+      "publish_deep": false,
+      "document_count": 11,
+      "total_chars": 5053219,
+      "categories": {
+        "RICMS": 11
+      },
+      "flags": [
+        "contém Taxas",
+        "fonte local sem URL oficial no cabeçalho",
+        "ruído de extração/encoding"
+      ],
+      "recommendation": "bloquear_publicacao_ate_curadoria",
+      "next_step": "Baixar RICMS/PR e anexos de benefícios no portal oficial do Paraná.",
+      "documents": [
+        {
+          "file": "PR_RICMS.txt",
+          "category": "RICMS",
+          "chars": 462012,
+          "named_icms": true,
+          "fallback_icms": false,
+          "flags": [
+            "contém Taxas",
+            "fonte local sem URL oficial no cabeçalho",
+            "ruído de extração/encoding"
+          ]
+        },
+        {
+          "file": "PR_RICMS_pt10.txt",
+          "category": "RICMS",
+          "chars": 459753,
+          "named_icms": true,
+          "fallback_icms": false,
+          "flags": [
+            "ruído de extração/encoding"
+          ]
+        },
+        {
+          "file": "PR_RICMS_pt11.txt",
+          "category": "RICMS",
+          "chars": 448569,
+          "named_icms": true,
+          "fallback_icms": false,
+          "flags": [
+            "ruído de extração/encoding"
+          ]
+        },
+        {
+          "file": "PR_RICMS_pt2.txt",
+          "category": "RICMS",
+          "chars": 461880,
+          "named_icms": true,
+          "fallback_icms": false,
+          "flags": [
+            "contém Taxas",
+            "ruído de extração/encoding"
+          ]
+        },
+        {
+          "file": "PR_RICMS_pt3.txt",
+          "category": "RICMS",
+          "chars": 459558,
+          "named_icms": true,
+          "fallback_icms": false,
+          "flags": [
+            "ruído de extração/encoding"
+          ]
+        },
+        {
+          "file": "PR_RICMS_pt4.txt",
+          "category": "RICMS",
+          "chars": 461289,
+          "named_icms": true,
+          "fallback_icms": false,
+          "flags": [
+            "ruído de extração/encoding"
+          ]
+        },
+        {
+          "file": "PR_RICMS_pt5.txt",
+          "category": "RICMS",
+          "chars": 461987,
+          "named_icms": true,
+          "fallback_icms": false,
+          "flags": [
+            "ruído de extração/encoding"
+          ]
+        },
+        {
+          "file": "PR_RICMS_pt6.txt",
+          "category": "RICMS",
+          "chars": 458168,
+          "named_icms": true,
+          "fallback_icms": false,
+          "flags": [
+            "contém Taxas",
+            "ruído de extração/encoding"
+          ]
+        },
+        {
+          "file": "PR_RICMS_pt7.txt",
+          "category": "RICMS",
+          "chars": 457846,
+          "named_icms": true,
+          "fallback_icms": false,
+          "flags": [
+            "ruído de extração/encoding"
+          ]
+        },
+        {
+          "file": "PR_RICMS_pt8.txt",
+          "category": "RICMS",
+          "chars": 460818,
+          "named_icms": true,
+          "fallback_icms": false,
+          "flags": [
+            "ruído de extração/encoding"
+          ]
+        },
+        {
+          "file": "PR_RICMS_pt9.txt",
+          "category": "RICMS",
+          "chars": 461339,
+          "named_icms": true,
+          "fallback_icms": false,
+          "flags": [
+            "contém Taxas",
+            "ruído de extração/encoding"
+          ]
+        }
+      ]
+    },
+    "RJ": {
+      "estado": "Rio de Janeiro",
+      "region": "Sudeste",
+      "curadoria": "revisao_fonte",
+      "publish_deep": false,
+      "document_count": 1,
+      "total_chars": 65086,
+      "categories": {
+        "RICMS": 1
+      },
+      "flags": [
+        "ruído de extração/encoding"
+      ],
+      "recommendation": "bloquear_publicacao_ate_curadoria",
+      "next_step": "Baixar RICMS/RJ, Livro/Anexos e benefícios no portal oficial do Rio de Janeiro.",
+      "documents": [
+        {
+          "file": "RJ_RICMS.txt",
+          "category": "RICMS",
+          "chars": 65086,
+          "named_icms": true,
+          "fallback_icms": false,
+          "flags": [
+            "ruído de extração/encoding"
+          ]
+        }
+      ]
+    },
+    "RN": {
+      "estado": "Rio Grande do Norte",
+      "region": "Nordeste",
+      "curadoria": "revisao_fonte",
+      "publish_deep": false,
+      "document_count": 8,
+      "total_chars": 3100167,
+      "categories": {
+        "ICMS_LEIS": 1,
+        "RICMS": 7
+      },
+      "flags": [
+        "contém IPVA",
+        "contém ITCMD/ITCD",
+        "contém Taxas",
+        "fonte local sem URL oficial no cabeçalho",
+        "ruído de extração/encoding"
+      ],
+      "recommendation": "bloquear_publicacao_ate_curadoria",
+      "next_step": "Baixar RICMS/RN e benefícios no portal oficial do Rio Grande do Norte.",
+      "documents": [
+        {
+          "file": "RN_ICMS_LEIS.txt",
+          "category": "ICMS_LEIS",
+          "chars": 51753,
+          "named_icms": true,
+          "fallback_icms": false,
+          "flags": [
+            "contém IPVA",
+            "contém ITCMD/ITCD",
+            "contém Taxas",
+            "fonte local sem URL oficial no cabeçalho",
+            "ruído de extração/encoding"
+          ]
+        },
+        {
+          "file": "RN_RICMS_pt1.txt",
+          "category": "RICMS",
+          "chars": 476686,
+          "named_icms": true,
+          "fallback_icms": false,
+          "flags": [
+            "contém IPVA",
+            "contém ITCMD/ITCD",
+            "contém Taxas",
+            "ruído de extração/encoding"
+          ]
+        },
+        {
+          "file": "RN_RICMS_pt2.txt",
+          "category": "RICMS",
+          "chars": 480174,
+          "named_icms": true,
+          "fallback_icms": false,
+          "flags": [
+            "contém Taxas",
+            "ruído de extração/encoding"
+          ]
+        },
+        {
+          "file": "RN_RICMS_pt3.txt",
+          "category": "RICMS",
+          "chars": 475594,
+          "named_icms": true,
+          "fallback_icms": false,
+          "flags": [
+            "contém Taxas",
+            "ruído de extração/encoding"
+          ]
+        },
+        {
+          "file": "RN_RICMS_pt4.txt",
+          "category": "RICMS",
+          "chars": 476563,
+          "named_icms": true,
+          "fallback_icms": false,
+          "flags": [
+            "contém Taxas",
+            "ruído de extração/encoding"
+          ]
+        },
+        {
+          "file": "RN_RICMS_pt5.txt",
+          "category": "RICMS",
+          "chars": 476483,
+          "named_icms": true,
+          "fallback_icms": false,
+          "flags": [
+            "ruído de extração/encoding"
+          ]
+        },
+        {
+          "file": "RN_RICMS_pt6.txt",
+          "category": "RICMS",
+          "chars": 477674,
+          "named_icms": true,
+          "fallback_icms": false,
+          "flags": [
+            "contém Taxas",
+            "ruído de extração/encoding"
+          ]
+        },
+        {
+          "file": "RN_RICMS_pt7.txt",
+          "category": "RICMS",
+          "chars": 185240,
+          "named_icms": true,
+          "fallback_icms": false,
+          "flags": [
+            "ruído de extração/encoding"
+          ]
+        }
+      ]
+    },
+    "RO": {
+      "estado": "Rondônia",
+      "region": "Norte",
+      "curadoria": "revisao_fonte",
+      "publish_deep": false,
+      "document_count": 4,
+      "total_chars": 1532161,
+      "categories": {
+        "ICMS_BENEFICIOS": 1,
+        "ICMS_LEIS": 2,
+        "RICMS": 1
+      },
+      "flags": [
+        "contém IPVA",
+        "contém Taxas",
+        "fonte local sem URL oficial no cabeçalho",
+        "ruído de extração/encoding"
+      ],
+      "recommendation": "bloquear_publicacao_ate_curadoria",
+      "next_step": "Baixar RICMS/RO e benefícios no portal oficial de Rondônia.",
+      "documents": [
+        {
+          "file": "RO_ICMS_BENEFICIOS.txt",
+          "category": "ICMS_BENEFICIOS",
+          "chars": 435614,
+          "named_icms": true,
+          "fallback_icms": false,
+          "flags": [
+            "contém IPVA",
+            "contém Taxas",
+            "fonte local sem URL oficial no cabeçalho",
+            "ruído de extração/encoding"
+          ]
+        },
+        {
+          "file": "RO_ICMS_LEIS.txt",
+          "category": "ICMS_LEIS",
+          "chars": 33833,
+          "named_icms": true,
+          "fallback_icms": false,
+          "flags": [
+            "contém IPVA",
+            "fonte local sem URL oficial no cabeçalho",
+            "ruído de extração/encoding"
+          ]
+        },
+        {
+          "file": "RO_ICMS_LEIS_parte2.txt",
+          "category": "ICMS_LEIS",
+          "chars": 624338,
+          "named_icms": true,
+          "fallback_icms": false,
+          "flags": [
+            "contém Taxas",
+            "fonte local sem URL oficial no cabeçalho",
+            "ruído de extração/encoding"
+          ]
+        },
+        {
+          "file": "RO_RICMS.txt",
+          "category": "RICMS",
+          "chars": 438376,
+          "named_icms": true,
+          "fallback_icms": false,
+          "flags": [
+            "contém IPVA",
+            "contém Taxas",
+            "ruído de extração/encoding"
+          ]
+        }
+      ]
+    },
+    "RR": {
+      "estado": "Roraima",
+      "region": "Norte",
+      "curadoria": "revisao_fonte",
+      "publish_deep": false,
+      "document_count": 5,
+      "total_chars": 980042,
+      "categories": {
+        "ICMS_ANEXOS": 1,
+        "ICMS_BENEFICIOS": 1,
+        "ICMS_LEIS": 1,
+        "RICMS": 2
+      },
+      "flags": [
+        "contém IPVA",
+        "contém Taxas",
+        "fonte local sem URL oficial no cabeçalho",
+        "ruído de extração/encoding",
+        "texto curto para RICMS/benefícios"
+      ],
+      "recommendation": "bloquear_publicacao_ate_curadoria",
+      "next_step": "Baixar RICMS/RR e benefícios no portal oficial de Roraima.",
+      "documents": [
+        {
+          "file": "RR_ICMS_ANEXOS.txt",
+          "category": "ICMS_ANEXOS",
+          "chars": 4895,
+          "named_icms": true,
+          "fallback_icms": false,
+          "flags": [
+            "contém IPVA",
+            "fonte local sem URL oficial no cabeçalho",
+            "ruído de extração/encoding",
+            "texto curto para RICMS/benefícios"
+          ]
+        },
+        {
+          "file": "RR_ICMS_BENEFICIOS.txt",
+          "category": "ICMS_BENEFICIOS",
+          "chars": 71974,
+          "named_icms": true,
+          "fallback_icms": false,
+          "flags": [
+            "contém Taxas",
+            "ruído de extração/encoding"
+          ]
+        },
+        {
+          "file": "RR_ICMS_LEIS.txt",
+          "category": "ICMS_LEIS",
+          "chars": 19259,
+          "named_icms": true,
+          "fallback_icms": false,
+          "flags": [
+            "ruído de extração/encoding",
+            "texto curto para RICMS/benefícios"
+          ]
+        },
+        {
+          "file": "RR_RICMS.txt",
+          "category": "RICMS",
+          "chars": 440375,
+          "named_icms": true,
+          "fallback_icms": false,
+          "flags": [
+            "contém Taxas",
+            "ruído de extração/encoding"
+          ]
+        },
+        {
+          "file": "RR_RICMS.txt",
+          "category": "RICMS",
+          "chars": 443539,
+          "named_icms": true,
+          "fallback_icms": false,
+          "flags": [
+            "contém Taxas",
+            "ruído de extração/encoding"
+          ]
+        }
+      ]
+    },
+    "RS": {
+      "estado": "Rio Grande do Sul",
+      "region": "Sul",
+      "curadoria": "revisao_fonte",
+      "publish_deep": false,
+      "document_count": 9,
+      "total_chars": 4208482,
+      "categories": {
+        "RICMS": 9
+      },
+      "flags": [
+        "contém IPVA",
+        "contém Taxas",
+        "ruído de extração/encoding"
+      ],
+      "recommendation": "bloquear_publicacao_ate_curadoria",
+      "next_step": "Baixar RICMS/RS e benefícios no portal oficial do Rio Grande do Sul.",
+      "documents": [
+        {
+          "file": "RS_RICMS.txt",
+          "category": "RICMS",
+          "chars": 468546,
+          "named_icms": true,
+          "fallback_icms": false,
+          "flags": [
+            "contém Taxas",
+            "ruído de extração/encoding"
+          ]
+        },
+        {
+          "file": "RS_RICMS_pt2.txt",
+          "category": "RICMS",
+          "chars": 468713,
+          "named_icms": true,
+          "fallback_icms": false,
+          "flags": [
+            "contém Taxas",
+            "ruído de extração/encoding"
+          ]
+        },
+        {
+          "file": "RS_RICMS_pt3.txt",
+          "category": "RICMS",
+          "chars": 468650,
+          "named_icms": true,
+          "fallback_icms": false,
+          "flags": [
+            "contém IPVA",
+            "contém Taxas",
+            "ruído de extração/encoding"
+          ]
+        },
+        {
+          "file": "RS_RICMS_pt4.txt",
+          "category": "RICMS",
+          "chars": 468627,
+          "named_icms": true,
+          "fallback_icms": false,
+          "flags": [
+            "ruído de extração/encoding"
+          ]
+        },
+        {
+          "file": "RS_RICMS_pt5.txt",
+          "category": "RICMS",
+          "chars": 468804,
+          "named_icms": true,
+          "fallback_icms": false,
+          "flags": [
+            "contém Taxas",
+            "ruído de extração/encoding"
+          ]
+        },
+        {
+          "file": "RS_RICMS_pt6.txt",
+          "category": "RICMS",
+          "chars": 468626,
+          "named_icms": true,
+          "fallback_icms": false,
+          "flags": [
+            "contém Taxas",
+            "ruído de extração/encoding"
+          ]
+        },
+        {
+          "file": "RS_RICMS_pt7.txt",
+          "category": "RICMS",
+          "chars": 468794,
+          "named_icms": true,
+          "fallback_icms": false,
+          "flags": [
+            "ruído de extração/encoding"
+          ]
+        },
+        {
+          "file": "RS_RICMS_pt8.txt",
+          "category": "RICMS",
+          "chars": 468258,
+          "named_icms": true,
+          "fallback_icms": false,
+          "flags": [
+            "contém Taxas",
+            "ruído de extração/encoding"
+          ]
+        },
+        {
+          "file": "RS_RICMS_pt9.txt",
+          "category": "RICMS",
+          "chars": 459464,
+          "named_icms": true,
+          "fallback_icms": false,
+          "flags": [
+            "contém Taxas",
+            "ruído de extração/encoding"
+          ]
+        }
+      ]
+    },
+    "SC": {
+      "estado": "Santa Catarina",
+      "region": "Sul",
+      "curadoria": "revisao_fonte",
+      "publish_deep": false,
+      "document_count": 2,
+      "total_chars": 259272,
+      "categories": {
+        "ICMS_LEIS": 1,
+        "RICMS": 1
+      },
+      "flags": [
+        "ruído de extração/encoding",
+        "texto curto para RICMS/benefícios"
+      ],
+      "recommendation": "bloquear_publicacao_ate_curadoria",
+      "next_step": "Baixar RICMS/SC e anexos de benefícios no portal oficial de Santa Catarina.",
+      "documents": [
+        {
+          "file": "SC_ICMS_LEIS.txt",
+          "category": "ICMS_LEIS",
+          "chars": 255963,
+          "named_icms": true,
+          "fallback_icms": false,
+          "flags": [
+            "ruído de extração/encoding"
+          ]
+        },
+        {
+          "file": "SC_RICMS.txt",
+          "category": "RICMS",
+          "chars": 3309,
+          "named_icms": true,
+          "fallback_icms": false,
+          "flags": [
+            "ruído de extração/encoding",
+            "texto curto para RICMS/benefícios"
+          ]
+        }
+      ]
+    },
+    "SE": {
+      "estado": "Sergipe",
+      "region": "Nordeste",
+      "curadoria": "revisao_fonte",
+      "publish_deep": false,
+      "document_count": 4,
+      "total_chars": 6860651,
+      "categories": {
+        "ICMS_LEIS": 1,
+        "RICMS": 3
+      },
+      "flags": [
+        "contém IPVA",
+        "contém Taxas",
+        "fonte local sem URL oficial no cabeçalho",
+        "ruído de extração/encoding",
+        "texto curto para RICMS/benefícios"
+      ],
+      "recommendation": "bloquear_publicacao_ate_curadoria",
+      "next_step": "Baixar RICMS/SE e benefícios no portal oficial de Sergipe.",
+      "documents": [
+        {
+          "file": "SE_ICMS_LEIS.txt",
+          "category": "ICMS_LEIS",
+          "chars": 76647,
+          "named_icms": true,
+          "fallback_icms": false,
+          "flags": [
+            "contém Taxas",
+            "ruído de extração/encoding"
+          ]
+        },
+        {
+          "file": "SE_RICMS.txt",
+          "category": "RICMS",
+          "chars": 16015,
+          "named_icms": true,
+          "fallback_icms": false,
+          "flags": [
+            "contém Taxas",
+            "fonte local sem URL oficial no cabeçalho",
+            "ruído de extração/encoding",
+            "texto curto para RICMS/benefícios"
+          ]
+        },
+        {
+          "file": "SE_RICMS_parte2.txt",
+          "category": "RICMS",
+          "chars": 2238982,
+          "named_icms": true,
+          "fallback_icms": false,
+          "flags": [
+            "contém IPVA",
+            "contém Taxas",
+            "ruído de extração/encoding"
+          ]
+        },
+        {
+          "file": "SE_RICMS_parte3.txt",
+          "category": "RICMS",
+          "chars": 4529007,
+          "named_icms": true,
+          "fallback_icms": false,
+          "flags": [
+            "contém Taxas",
+            "ruído de extração/encoding"
+          ]
+        }
+      ]
+    },
+    "SP": {
+      "estado": "São Paulo",
+      "region": "Sudeste",
+      "curadoria": "revisao_fonte",
+      "publish_deep": false,
+      "document_count": 21,
+      "total_chars": 8702614,
+      "categories": {
+        "ICMS_LEIS": 1,
+        "ICMS_ST": 1,
+        "RICMS": 19
+      },
+      "flags": [
+        "contém IPVA",
+        "contém Taxas",
+        "fonte local sem URL oficial no cabeçalho",
+        "ruído de extração/encoding",
+        "possível duplicidade de fonte"
+      ],
+      "recommendation": "bloquear_publicacao_ate_curadoria",
+      "next_step": "Substituir PDF extraído por texto limpo do RICMS/2000 e anexos de benefícios da SEFAZ/SP.",
+      "documents": [
+        {
+          "file": "SP_ICMS_LEIS.txt",
+          "category": "ICMS_LEIS",
+          "chars": 343561,
+          "named_icms": true,
+          "fallback_icms": false,
+          "flags": [
+            "contém Taxas",
+            "ruído de extração/encoding"
+          ]
+        },
+        {
+          "file": "SP_ICMS_ST.txt",
+          "category": "ICMS_ST",
+          "chars": 67399,
+          "named_icms": true,
+          "fallback_icms": false,
+          "flags": [
+            "fonte local sem URL oficial no cabeçalho",
+            "ruído de extração/encoding"
+          ]
+        },
+        {
+          "file": "SP_RICMS.txt",
+          "category": "RICMS",
+          "chars": 437394,
+          "named_icms": true,
+          "fallback_icms": false,
+          "flags": [
+            "contém Taxas",
+            "fonte local sem URL oficial no cabeçalho",
+            "ruído de extração/encoding"
+          ]
+        },
+        {
+          "file": "SP_RICMS_pt10.txt",
+          "category": "RICMS",
+          "chars": 427836,
+          "named_icms": true,
+          "fallback_icms": false,
+          "flags": [
+            "contém Taxas",
+            "ruído de extração/encoding"
+          ]
+        },
+        {
+          "file": "SP_RICMS_pt2.txt",
+          "category": "RICMS",
+          "chars": 437486,
+          "named_icms": true,
+          "fallback_icms": false,
+          "flags": [
+            "contém Taxas",
+            "ruído de extração/encoding"
+          ]
+        },
+        {
+          "file": "SP_RICMS_pt3.txt",
+          "category": "RICMS",
+          "chars": 437500,
+          "named_icms": true,
+          "fallback_icms": false,
+          "flags": [
+            "ruído de extração/encoding"
+          ]
+        },
+        {
+          "file": "SP_RICMS_pt4.txt",
+          "category": "RICMS",
+          "chars": 437462,
+          "named_icms": true,
+          "fallback_icms": false,
+          "flags": [
+            "contém Taxas",
+            "ruído de extração/encoding"
+          ]
+        },
+        {
+          "file": "SP_RICMS_pt5.txt",
+          "category": "RICMS",
+          "chars": 437468,
+          "named_icms": true,
+          "fallback_icms": false,
+          "flags": [
+            "contém IPVA",
+            "contém Taxas",
+            "ruído de extração/encoding"
+          ]
+        },
+        {
+          "file": "SP_RICMS_pt6.txt",
+          "category": "RICMS",
+          "chars": 437469,
+          "named_icms": true,
+          "fallback_icms": false,
+          "flags": [
+            "contém IPVA",
+            "contém Taxas",
+            "ruído de extração/encoding"
+          ]
+        },
+        {
+          "file": "SP_RICMS_pt7.txt",
+          "category": "RICMS",
+          "chars": 436928,
+          "named_icms": true,
+          "fallback_icms": false,
+          "flags": [
+            "ruído de extração/encoding"
+          ]
+        },
+        {
+          "file": "SP_RICMS_pt8.txt",
+          "category": "RICMS",
+          "chars": 437513,
+          "named_icms": true,
+          "fallback_icms": false,
+          "flags": [
+            "contém Taxas",
+            "ruído de extração/encoding"
+          ]
+        },
+        {
+          "file": "SP_RICMS_pt9.txt",
+          "category": "RICMS",
+          "chars": 437468,
+          "named_icms": true,
+          "fallback_icms": false,
+          "flags": [
+            "ruído de extração/encoding"
+          ]
+        },
+        {
+          "file": "SP_RICMS_pt10.txt",
+          "category": "RICMS",
+          "chars": 427836,
+          "named_icms": true,
+          "fallback_icms": false,
+          "flags": [
+            "contém Taxas",
+            "ruído de extração/encoding"
+          ]
+        },
+        {
+          "file": "SP_RICMS_pt2.txt",
+          "category": "RICMS",
+          "chars": 437486,
+          "named_icms": true,
+          "fallback_icms": false,
+          "flags": [
+            "contém Taxas",
+            "ruído de extração/encoding"
+          ]
+        },
+        {
+          "file": "SP_RICMS_pt3.txt",
+          "category": "RICMS",
+          "chars": 437500,
+          "named_icms": true,
+          "fallback_icms": false,
+          "flags": [
+            "ruído de extração/encoding"
+          ]
+        },
+        {
+          "file": "SP_RICMS_pt4.txt",
+          "category": "RICMS",
+          "chars": 437462,
+          "named_icms": true,
+          "fallback_icms": false,
+          "flags": [
+            "contém Taxas",
+            "ruído de extração/encoding"
+          ]
+        },
+        {
+          "file": "SP_RICMS_pt5.txt",
+          "category": "RICMS",
+          "chars": 437468,
+          "named_icms": true,
+          "fallback_icms": false,
+          "flags": [
+            "contém IPVA",
+            "contém Taxas",
+            "ruído de extração/encoding"
+          ]
+        },
+        {
+          "file": "SP_RICMS_pt6.txt",
+          "category": "RICMS",
+          "chars": 437469,
+          "named_icms": true,
+          "fallback_icms": false,
+          "flags": [
+            "contém IPVA",
+            "contém Taxas",
+            "ruído de extração/encoding"
+          ]
+        },
+        {
+          "file": "SP_RICMS_pt7.txt",
+          "category": "RICMS",
+          "chars": 436928,
+          "named_icms": true,
+          "fallback_icms": false,
+          "flags": [
+            "ruído de extração/encoding"
+          ]
+        },
+        {
+          "file": "SP_RICMS_pt8.txt",
+          "category": "RICMS",
+          "chars": 437513,
+          "named_icms": true,
+          "fallback_icms": false,
+          "flags": [
+            "contém Taxas",
+            "ruído de extração/encoding"
+          ]
+        },
+        {
+          "file": "SP_RICMS_pt9.txt",
+          "category": "RICMS",
+          "chars": 437468,
+          "named_icms": true,
+          "fallback_icms": false,
+          "flags": [
+            "ruído de extração/encoding"
+          ]
+        }
+      ]
+    },
+    "TO": {
+      "estado": "Tocantins",
+      "region": "Norte",
+      "curadoria": "revisao_fonte",
+      "publish_deep": false,
+      "document_count": 2,
+      "total_chars": 2986071,
+      "categories": {
+        "ICMS_ANEXOS": 1,
+        "RICMS": 1
+      },
+      "flags": [
+        "contém Taxas",
+        "ruído de extração/encoding",
+        "texto curto para RICMS/benefícios"
+      ],
+      "recommendation": "bloquear_publicacao_ate_curadoria",
+      "next_step": "Baixar RICMS/TO e benefícios no portal oficial do Tocantins.",
+      "documents": [
+        {
+          "file": "TO_ICMS_ANEXOS.txt",
+          "category": "ICMS_ANEXOS",
+          "chars": 12720,
+          "named_icms": true,
+          "fallback_icms": false,
+          "flags": [
+            "ruído de extração/encoding",
+            "texto curto para RICMS/benefícios"
+          ]
+        },
+        {
+          "file": "TO_RICMS.txt",
+          "category": "RICMS",
+          "chars": 2973351,
+          "named_icms": true,
+          "fallback_icms": false,
+          "flags": [
+            "contém Taxas",
+            "ruído de extração/encoding"
+          ]
+        }
+      ]
+    }
+  }
+}

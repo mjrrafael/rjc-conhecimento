@@ -36,6 +36,7 @@ from state_legal_pages import (  # noqa: E402
     index_path as state_index_path,
     sector_anchor,
     source_path,
+    state_is_deep_published,
 )
 
 
@@ -266,6 +267,10 @@ def audit_content_pages() -> list[str]:
         errors.append("indice da Reforma nao cita os atos centrais")
     for uf in STATE_NAMES:
         if uf == "GO":
+            continue
+        if not state_is_deep_published(uf):
+            if read_page(state_index_path(uf)):
+                errors.append(f"{uf}: pagina profunda existe apesar de publish_deep=false")
             continue
         docs = collect_state_documents(uf)
         if not docs:

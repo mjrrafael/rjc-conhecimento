@@ -1,0 +1,15 @@
+{
+  "uf": "MT",
+  "estado": "Mato Grosso",
+  "regiao": "Centro-Oeste",
+  "status_curadoria": "capturado_sem_aprovacao",
+  "data_captura": "2026-04-26",
+  "fonte_oficial": "https://app1.sefaz.mt.gov.br/Sistema/legislacao/legislacaotribut.nsf/7c7b6a9347c50f55032569140065ebbf/42abb08790833f6d84257ca200448229/%24FILE/RICMS%20-%202014-20-03-2014.pdf",
+  "arquivos": [
+    "RICMS_MT_2014_fonte_oficial_2026-04-26.txt"
+  ],
+  "sha256": {
+    "RICMS_MT_2014_fonte_oficial_2026-04-26.txt": "ae6969b602f10fb889a7bd5e7f114ed2584f38e4907c5f9e18916de1fbe51159"
+  },
+  "observacoes": "RICMS/2014 capturado da SEFAZ-MT. Ainda precisa segmentar beneficios, anexos e validar vigencia antes de publish_deep=true."
+}
