@@ -1037,7 +1037,6 @@ def state_legislation_teaser(uf: str, current_path: str) -> str:
   <h2>Curadoria estadual em andamento</h2>
   <p>O conteúdo profundo deste Estado foi retirado da publicação até que RICMS, benefícios fiscais e atos modificadores sejam revisados contra fonte pública vigente e salvos em texto local limpo.</p>
   <div>
-    <a href="{escape(rel_href(current_path, 'workflow.md'))}">ver workflow editorial</a>
     <a href="{escape(STATE_OFFICIAL_PORTALS.get(uf, '#'))}" target="_blank" rel="noopener">{escape(step)}</a>
   </div>
 </section>
