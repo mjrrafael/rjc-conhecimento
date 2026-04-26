@@ -1,0 +1,130 @@
+{
+  "uf": "DF",
+  "estado": "Distrito Federal",
+  "regiao": "Centro-Oeste",
+  "capturado_em": "2026-04-26",
+  "fonte_principal": "Sistema Integrado de Normas Jurídicas do Distrito Federal - SINJ/DF",
+  "escopo": "ICMS/DF, RICMS, benefícios fiscais, regimes especiais, programas econômicos com reflexo tributário, diferimento agro e EFD ICMS/IPI.",
+  "fontes": [
+    {
+      "id": "DF_LEI_1254_1996_ICMS",
+      "titulo": "Lei nº 1.254/1996 - Lei material do ICMS/DF",
+      "tema": "ICMS - lei material",
+      "arquivo": "DF_LEI_1254_1996_ICMS_2026-04-26.txt",
+      "url": "https://www.sinj.df.gov.br/sinj/Norma/49208/Lei_1254_08_11_1996.html",
+      "tipo": "lei vigente compilada",
+      "sha256": "620a5050e23189efb2f1c3d772f5cfbb57260345df834f059d5eb464042ad0fe",
+      "caracteres": 195278
+    },
+    {
+      "id": "DF_DEC_18955_1997_RICMS",
+      "titulo": "Decreto nº 18.955/1997 - RICMS/DF",
+      "tema": "ICMS - regulamento, anexos, benefícios e ST",
+      "arquivo": "DF_DEC_18955_1997_RICMS_2026-04-26.txt",
+      "url": "https://www.sinj.df.gov.br/sinj/Norma/33077/Decreto_18955_22_12_1997.html",
+      "tipo": "decreto regulamentar compilado",
+      "sha256": "c5a39d7c917068b77bf1a871d934ad22a6608626d20b1b69129d9bd12b8c394a",
+      "caracteres": 767081
+    },
+    {
+      "id": "DF_LEI_6225_2018_BENEFICIOS_LC160",
+      "titulo": "Lei nº 6.225/2018 - remissão, reinstituição e LC 160/Convênio 190",
+      "tema": "ICMS - benefícios fiscais e Convênio ICMS 190/2017",
+      "arquivo": "DF_LEI_6225_2018_BENEFICIOS_LC160_2026-04-26.txt",
+      "url": "https://www.sinj.df.gov.br/sinj/Norma/a744aad6615b49c79697917e29de46e2/Lei_6225_19_11_2018.html",
+      "tipo": "lei de benefícios fiscais compilada",
+      "sha256": "879e419a8f2af4c0a538897505f55d7793c5a08ff5451420157a2ef57dffdd32",
+      "caracteres": 18963
+    },
+    {
+      "id": "DF_LEI_5005_2012_REGIME_APURACAO",
+      "titulo": "Lei nº 5.005/2012 - regime especial de apuração do ICMS",
+      "tema": "ICMS - regime de apuração",
+      "arquivo": "DF_LEI_5005_2012_REGIME_APURACAO_2026-04-26.txt",
+      "url": "https://www.sinj.df.gov.br/sinj/Norma/73211/Lei_5005_21_12_2012.html",
+      "tipo": "lei de regime especial compilada",
+      "sha256": "116332e7ad456fae5e035ab41d2871d18dcac4433157d08c543b275a5bffa805",
+      "caracteres": 24956
+    },
+    {
+      "id": "DF_DEC_39753_2019_CREDITO_OUTORGADO",
+      "titulo": "Decreto nº 39.753/2019 - crédito outorgado para operações interestaduais",
+      "tema": "ICMS - crédito outorgado",
+      "arquivo": "DF_DEC_39753_2019_CREDITO_OUTORGADO_2026-04-26.txt",
+      "url": "https://www.sinj.df.gov.br/sinj/Norma/9c1f1eab1e634211bb33093188f6c6a4/Decreto_39753_02_04_2019.html",
+      "tipo": "decreto de benefício fiscal compilado",
+      "sha256": "c8d46700f5da1c631c1c4610100dc49bb452112d300ca84102879f782dd31fc9",
+      "caracteres": 11278
+    },
+    {
+      "id": "DF_DEC_39803_2019_EMPREGADF",
+      "titulo": "Decreto nº 39.803/2019 - EMPREGA-DF e incentivos de ICMS",
+      "tema": "ICMS - EMPREGA-DF",
+      "arquivo": "DF_DEC_39803_2019_EMPREGADF_2026-04-26.txt",
+      "url": "https://www.sinj.df.gov.br/sinj/Norma/2257f831264c4e06850f0248431427df/Decreto_39803_02_05_2019.html",
+      "tipo": "decreto de programa fiscal compilado",
+      "sha256": "c5ca81d64cdcf178f18e02a9730cabe096c2844401f197fc4225f3fec4a2ee59",
+      "caracteres": 77088
+    },
+    {
+      "id": "DF_DEC_45287_2023_ALHO_CREDITO_OUTORGADO",
+      "titulo": "Decreto nº 45.287/2023 - crédito outorgado do alho",
+      "tema": "ICMS - benefício agro e crédito outorgado",
+      "arquivo": "DF_DEC_45287_2023_ALHO_CREDITO_OUTORGADO_2026-04-26.txt",
+      "url": "https://www.sinj.df.gov.br/sinj/Norma/1e727ef68cb84ce385cb0a7dc8d17a1b/Decreto_45287_15_12_2023.html",
+      "tipo": "decreto de benefício fiscal compilado",
+      "sha256": "1e6fe0afad55579c5e0b6ef600153b95a094a35ef1b21aed1334c8d2293d5ce1",
+      "caracteres": 7513
+    },
+    {
+      "id": "DF_DEC_18726_1997_AGRO_DIFERIMENTO",
+      "titulo": "Decreto nº 18.726/1997 - diferimento de insumos agropecuários",
+      "tema": "ICMS - agro e diferimento",
+      "arquivo": "DF_DEC_18726_1997_AGRO_DIFERIMENTO_2026-04-26.txt",
+      "url": "https://www.sinj.df.gov.br/sinj/Norma/32661/Decreto_18726_15_10_1997.pdf",
+      "tipo": "decreto de diferimento compilado",
+      "sha256": "25d00f0bbb6f279594df1a100e2a95f5706d0455ee35481bebc879b82551f370",
+      "caracteres": 8415
+    },
+    {
+      "id": "DF_DEC_39789_2019_EFD_ICMS_IPI",
+      "titulo": "Decreto nº 39.789/2019 - EFD ICMS/IPI no DF",
+      "tema": "ICMS - EFD/SPED e obrigações acessórias",
+      "arquivo": "DF_DEC_39789_2019_EFD_ICMS_IPI_2026-04-26.txt",
+      "url": "https://www.sinj.df.gov.br/sinj/Norma/c2775e5323a848c5ac079c921d210e08/Decreto_39789_26_04_2019.html",
+      "tipo": "decreto de obrigação acessória compilado",
+      "sha256": "706d3977db71dbd99fdfb5931b9b8a53f704293266a3d4f7b151b6cbaf226190",
+      "caracteres": 6061
+    },
+    {
+      "id": "DF_LEI_3196_2003_PRODF_II",
+      "titulo": "Lei nº 3.196/2003 - PRÓ-DF II",
+      "tema": "Incentivos econômicos - PRÓ-DF II",
+      "arquivo": "DF_LEI_3196_2003_PRODF_II_2026-04-26.txt",
+      "url": "https://www.sinj.df.gov.br/sinj/Norma/51144/Lei_3196_29_09_2003.html",
+      "tipo": "lei de programa econômico compilada",
+      "sha256": "562b73115dc67961ddcee02ab41ce56465a693a6faf977e4df3a5ef21882d258",
+      "caracteres": 48069
+    },
+    {
+      "id": "DF_LEI_3266_2003_PRODF_II_COMPLEMENTAR",
+      "titulo": "Lei nº 3.266/2003 - benefícios do PRÓ-DF II",
+      "tema": "Incentivos econômicos - PRÓ-DF II e benefícios",
+      "arquivo": "DF_LEI_3266_2003_PRODF_II_COMPLEMENTAR_2026-04-26.txt",
+      "url": "https://www.sinj.df.gov.br/sinj/Norma/51208/Lei_3266_30_12_2003.html",
+      "tipo": "lei de programa econômico compilada",
+      "sha256": "d526ced65458a5520483e2294d30db76c55c26cde1431ab1a45fe50190aa83e9",
+      "caracteres": 63929
+    },
+    {
+      "id": "DF_DEC_46900_2025_PRODF_DESENVOLVEDF",
+      "titulo": "Decreto nº 46.900/2025 - PRÓ-DF II e Desenvolve-DF",
+      "tema": "Incentivos econômicos - PRÓ-DF II e Desenvolve-DF",
+      "arquivo": "DF_DEC_46900_2025_PRODF_DESENVOLVEDF_2026-04-26.txt",
+      "url": "https://www.sinj.df.gov.br/sinj/Norma/3925adc94a154b4381fd110c140f25e9/Decreto_46900_25_02_2025.html",
+      "tipo": "decreto de programa econômico compilado",
+      "sha256": "c49da0f4cc94aed5b62dddd0c6d774b7db8559dba0278d8db8ddbd5b7aeffcef",
+      "caracteres": 105208
+    }
+  ]
+}

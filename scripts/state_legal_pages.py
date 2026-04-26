@@ -352,6 +352,18 @@ CURATED_CATEGORY_BY_SOURCE_ID = {
     "BA_DEC_18270_2018_BENEFICIOS_LC160": "ICMS_BENEFICIOS",
     "BA_DEC_18288_2018_BENEFICIOS_LC160": "ICMS_BENEFICIOS",
     "BA_PORT_273_2014_EFD_INCENTIVOS": "INSTRUCOES_NORMATIVAS",
+    "DF_LEI_1254_1996_ICMS": "ICMS_LEIS",
+    "DF_DEC_18955_1997_RICMS": "RICMS",
+    "DF_LEI_6225_2018_BENEFICIOS_LC160": "ICMS_BENEFICIOS",
+    "DF_LEI_5005_2012_REGIME_APURACAO": "ICMS_BENEFICIOS",
+    "DF_DEC_39753_2019_CREDITO_OUTORGADO": "ICMS_BENEFICIOS",
+    "DF_DEC_39803_2019_EMPREGADF": "ICMS_BENEFICIOS",
+    "DF_DEC_45287_2023_ALHO_CREDITO_OUTORGADO": "ICMS_BENEFICIOS",
+    "DF_DEC_18726_1997_AGRO_DIFERIMENTO": "ICMS_BENEFICIOS",
+    "DF_DEC_39789_2019_EFD_ICMS_IPI": "INSTRUCOES_NORMATIVAS",
+    "DF_LEI_3196_2003_PRODF_II": "ICMS_BENEFICIOS",
+    "DF_LEI_3266_2003_PRODF_II_COMPLEMENTAR": "ICMS_BENEFICIOS",
+    "DF_DEC_46900_2025_PRODF_DESENVOLVEDF": "ICMS_BENEFICIOS",
 }
 
 BA_CHAPTERS = [
@@ -537,6 +549,196 @@ BA_SIGNAL_CHAPTER_MAP = {
     "regime especial": "desenvolve",
     "protege/fundo": "documentos-efd-prova",
     "fundo/contrapartida": "documentos-efd-prova",
+    "substituicao tributaria": "substituicao-tributaria-antecipacao",
+    "efd/sped": "documentos-efd-prova",
+    "cBenef": "documentos-efd-prova",
+}
+
+DF_CHAPTERS = [
+    {
+        "id": "icms-regra-matriz",
+        "title": "ICMS/DF: incidência, não incidência e contribuinte",
+        "summary": "A base de todo estudo no Distrito Federal: campo de incidência, hipóteses de não incidência, momento do fato gerador e sujeito passivo.",
+        "theme": "Regra matriz",
+        "refs": [
+            {"source": "DF_LEI_1254_1996_ICMS", "articles": ["1", "2", "3", "5", "22"]},
+            {"source": "DF_DEC_18955_1997_RICMS", "articles": ["1", "2", "3", "5", "12"]},
+        ],
+        "analysis": [
+            "No DF, a Lei nº 1.254/1996 faz o papel de lei material do ICMS. Ela delimita quando a operação entra no campo do imposto, quando fica fora dele e quem assume a posição de contribuinte.",
+            "A não incidência, especialmente nas exportações e em situações que a Constituição retira do campo do ICMS, não deve ser tratada como favor fiscal. Ela é uma fronteira da própria competência tributária.",
+            "O RICMS/DF transforma essa regra em rotina: inscrição, documento fiscal, escrituração, responsável pelo recolhimento e prova da operação. A interpretação correta sempre conecta lei, regulamento e XML.",
+        ],
+        "departments": "Fiscal define CFOP, CST/CSOSN, natureza da operação e responsável. Cadastro valida contribuinte e inscrição. Jurídico separa não incidência, imunidade, isenção e responsabilidade.",
+        "documents": "NF-e, CT-e, cadastro fiscal, inscrição, contrato, pedido, comprovante de circulação, EFD ICMS/IPI e memória de enquadramento.",
+        "risks": "Tratar não incidência como isenção; aplicar benefício antes de saber se o fato gerador existe; esquecer responsabilidade por substituição ou recolhimento antecipado.",
+    },
+    {
+        "id": "base-aliquota-apuracao",
+        "title": "Base de cálculo, alíquotas, DIFAL e apuração",
+        "summary": "Como a operação vira base tributável, qual alíquota se aplica, quando há diferencial de alíquotas e como o débito é apurado.",
+        "theme": "Carga tributária",
+        "refs": [
+            {"source": "DF_LEI_1254_1996_ICMS", "articles": ["6", "8", "10", "18", "20"]},
+            {"source": "DF_DEC_18955_1997_RICMS", "articles": ["34", "46", "48", "49", "51", "74"]},
+        ],
+        "analysis": [
+            "A alíquota só é a terceira pergunta. Antes dela vêm a operação, a base de cálculo e eventuais reduções. Depois dela vêm crédito, apuração, prazo de recolhimento e declaração.",
+            "O DIFAL exige atenção própria: destinatário, uso ou consumo, ativo, contribuinte ou não contribuinte e período do fato gerador mudam a leitura prática.",
+            "Na auditoria, o cálculo precisa mostrar base cheia, parcela excluída ou reduzida, alíquota nominal, carga efetiva, crédito admitido, débito apurado e recolhimento.",
+        ],
+        "departments": "Fiscal parametriza base, alíquota, DIFAL e prazo. Contábil concilia débito, crédito e custo. Financeiro guarda DAR/GNRE. Auditoria cruza XML, EFD e recolhimento.",
+        "documents": "XML, cadastro NCM, tabela de alíquotas, memória de cálculo, EFD, guia de recolhimento, contrato e demonstrativo por operação.",
+        "risks": "Cadastrar alíquota sem ler a base; tratar redução de base como alíquota menor; aplicar DIFAL sem reconstruir destinatário, finalidade e período.",
+    },
+    {
+        "id": "beneficios-matriz-lc160",
+        "title": "Benefícios fiscais do DF, LC 160 e Convênio ICMS 190/2017",
+        "summary": "A porta de entrada para isenções, reduções, créditos, suspensões e diferimentos no DF, com leitura pela LC 160/2017 e pelos Cadernos do RICMS.",
+        "theme": "Benefícios fiscais",
+        "refs": [
+            {"source": "DF_LEI_6225_2018_BENEFICIOS_LC160", "articles": ["1", "2", "3", "4", "5", "6", "7", "8"]},
+            {"source": "DF_DEC_18955_1997_RICMS", "articles": ["6", "7", "8", "9", "10"]},
+            {"source": "DF_DEC_18955_1997_RICMS", "keywords": ["Caderno I", "Caderno II", "Caderno III", "Caderno IV", "Caderno V"]},
+        ],
+        "analysis": [
+            "O RICMS/DF organiza benefícios nos Cadernos do Anexo I: isenção, redução de base, crédito presumido, suspensão e diferimento. Esse desenho é didático e deve virar checklist de enquadramento.",
+            "A Lei nº 6.225/2018 trata da remissão, reinstituição e adesão aos benefícios no ambiente da LC 160/2017 e do Convênio ICMS 190/2017. Ela não substitui a leitura do ato que concede o benefício; ela mostra a camada de convalidação e reinstituição.",
+            "Todo benefício fiscal deve ser lido como exceção condicionada. Produto, operação, destinatário, período, regime, ato concessivo e escrituração precisam apontar para o mesmo fundamento.",
+        ],
+        "departments": "Jurídico identifica ato, vigência e condições. Fiscal parametriza CST, cBenef quando aplicável, ajustes e EFD. Contábil mede crédito/estorno. Financeiro controla contrapartidas e recolhimentos.",
+        "documents": "Ato legal, Caderno aplicável do RICMS, ato concessivo quando houver, XML, EFD, memória de cálculo, comprovantes e dossiê de cumprimento das condições.",
+        "risks": "Usar a lista da LC 160 como se fosse autorização material suficiente; acumular benefícios vedados; não provar condição, prazo ou escrituração.",
+    },
+    {
+        "id": "regime-especial-apuracao",
+        "title": "Regime especial de apuração e crédito outorgado",
+        "summary": "Regime especial, atacado, cálculo favorecido, crédito outorgado, condições de fruição e perda do benefício.",
+        "theme": "Regimes especiais",
+        "refs": [
+            {"source": "DF_LEI_5005_2012_REGIME_APURACAO", "articles": ["1", "2", "3", "4", "8", "9"]},
+            {"source": "DF_DEC_39753_2019_CREDITO_OUTORGADO", "articles": ["1", "2", "3", "4"]},
+        ],
+        "analysis": [
+            "O regime especial de apuração não é desconto livre. A lei define quem pode usar, como calcular, quais operações entram, quais ficam fora e em que situações o contribuinte perde o tratamento.",
+            "O crédito outorgado deve ser lido como técnica de apuração. Ele altera o resultado fiscal dentro de condições fechadas, normalmente com controle por estabelecimento, mercadoria, operação e período.",
+            "Para o atacado, a leitura operacional precisa separar venda interestadual, entrada, saída interna, substituição tributária, item excluído e documentação de fruição.",
+        ],
+        "departments": "Fiscal controla enquadramento, cálculo e EFD. Comercial e cadastro validam cliente, UF e operação. Contábil acompanha margem e crédito. Jurídico revisa condições e risco de exclusão.",
+        "documents": "Termo, autorização ou enquadramento, XML por operação, EFD, memória de cálculo, controles de mercadorias excluídas, guias e demonstrativo do crédito outorgado.",
+        "risks": "Aplicar regime a mercadoria fora do escopo; deixar de cumprir condição de regularidade; somar crédito outorgado com crédito comum vedado; não segregar operações.",
+    },
+    {
+        "id": "emprega-df-prodf-desenvolve",
+        "title": "EMPREGA-DF, PRÓ-DF II e Desenvolve-DF",
+        "summary": "Programas de desenvolvimento econômico do DF: incentivo, crédito presumido, diferimento, projeto, investimento, emprego e prova de cumprimento.",
+        "theme": "Programas estaduais",
+        "refs": [
+            {"source": "DF_DEC_39803_2019_EMPREGADF", "articles": ["1", "2", "3", "5", "8", "9", "10", "18", "24"]},
+            {"source": "DF_LEI_3196_2003_PRODF_II", "articles": ["1", "2", "3", "4"]},
+            {"source": "DF_LEI_3266_2003_PRODF_II_COMPLEMENTAR", "articles": ["1", "2", "3"]},
+            {"source": "DF_DEC_46900_2025_PRODF_DESENVOLVEDF", "articles": ["1", "2", "3", "4", "5"]},
+        ],
+        "analysis": [
+            "Programas de desenvolvimento econômico são benefícios condicionados. O direito nasce da combinação entre lei, regulamento, projeto, aprovação, prazo, metas e manutenção das condições.",
+            "O EMPREGA-DF trabalha com estímulo à atividade econômica, emprego e incentivo fiscal. O PRÓ-DF II e o Desenvolve-DF exigem leitura de projeto, benefício autorizado, regularidade e acompanhamento.",
+            "A empresa deve montar dossiê por programa: norma, ato de enquadramento, investimento, empregos, localização, recolhimento, EFD, cumprimento de metas e eventual renovação.",
+        ],
+        "departments": "Jurídico acompanha habilitação e ato concessivo. Controladoria mede investimento e empregos. Fiscal calcula o incentivo. Financeiro controla recolhimentos. RH e operações provam metas.",
+        "documents": "Projeto econômico, ato de aprovação, contrato/termo, comprovantes de investimento, folha, EFD, XML, memória de cálculo, certidões, relatórios e guias.",
+        "risks": "Reduzir imposto sem ato válido; perder condição por regularidade ou metas; não comprovar emprego/investimento; usar benefício fora do estabelecimento ou atividade aprovada.",
+    },
+    {
+        "id": "beneficios-setoriais-agro-atacado",
+        "title": "Benefícios setoriais: atacado, alho, agro e diferimento",
+        "summary": "Tratamentos direcionados por setor ou produto, com foco em crédito outorgado, cadeia agropecuária e diferimento.",
+        "theme": "Setores incentivados",
+        "refs": [
+            {"source": "DF_DEC_39753_2019_CREDITO_OUTORGADO", "articles": ["2", "3", "4"]},
+            {"source": "DF_DEC_45287_2023_ALHO_CREDITO_OUTORGADO", "articles": ["1", "2", "3", "4"]},
+            {"source": "DF_DEC_18726_1997_AGRO_DIFERIMENTO", "articles": ["1", "2", "3", "4", "5"]},
+        ],
+        "analysis": [
+            "Benefício setorial deve ser lido por produto, NCM, etapa da cadeia e destinatário. O nome econômico do setor não substitui a descrição legal.",
+            "Crédito outorgado e diferimento não são sinônimos. O primeiro atua na apuração do crédito; o segundo desloca o momento de pagamento ou transfere o recolhimento para etapa posterior.",
+            "No agro e em alimentos, a prova costuma depender de origem, destino, finalidade, industrialização, revenda e manutenção ou estorno de créditos.",
+        ],
+        "departments": "Fiscal parametriza produto, NCM e CST. Compras guarda prova de origem. Operações comprova destinação. Contábil controla crédito, estorno e diferimento.",
+        "documents": "XML, cadastro NCM, contrato, romaneio, laudo ou ficha do produto, EFD, memória de cálculo, guia e prova de destinação.",
+        "risks": "Aplicar benefício por semelhança comercial; esquecer item excluído; manter crédito quando a norma exige estorno; não provar a etapa da cadeia.",
+    },
+    {
+        "id": "substituicao-tributaria-antecipacao",
+        "title": "Substituição tributária, antecipação e responsabilidade",
+        "summary": "Responsável, substituto, substituído, recolhimento antecipado, mercadorias sujeitas e prova do imposto retido.",
+        "theme": "Responsabilidade tributária",
+        "refs": [
+            {"source": "DF_LEI_1254_1996_ICMS", "articles": ["24", "46"]},
+            {"source": "DF_DEC_18955_1997_RICMS", "articles": ["13", "18", "320", "321", "337"]},
+            {"source": "DF_DEC_18955_1997_RICMS", "keywords": ["substituição tributária", "antecipação", "Caderno I do Anexo IV", "Caderno II do Anexo IV"]},
+        ],
+        "analysis": [
+            "Substituição tributária não é benefício; é técnica de responsabilidade e antecipação do recolhimento. A leitura correta começa por mercadoria, operação, UF, NCM/CEST e responsável.",
+            "O RICMS/DF organiza mercadorias e hipóteses nos Cadernos do Anexo IV. A tabela precisa conversar com a descrição real do produto e com o documento fiscal.",
+            "Quando há antecipação ou ST, a memória deve demonstrar base presumida, MVA ou pauta quando aplicável, crédito, imposto próprio, imposto retido e recolhimento.",
+        ],
+        "departments": "Fiscal controla NCM/CEST, base, MVA/pauta e CST. Compras valida fornecedor e retenção. Financeiro guarda guia. Auditoria cruza estoque, XML e EFD.",
+        "documents": "XML, NCM, CEST, tabela do Anexo IV, MVA/pauta, GNRE/DAR, EFD, cadastro de item e comprovante de recolhimento.",
+        "risks": "Aplicar ST por descrição parecida; ignorar complemento ou ressarcimento; tratar antecipação como encerramento de cadeia sem base legal.",
+    },
+    {
+        "id": "documentos-efd-prova",
+        "title": "Documentos fiscais, EFD ICMS/IPI e prova",
+        "summary": "Como a tese aparece no documento fiscal, na escrituração, nos registros digitais e no dossiê de auditoria.",
+        "theme": "Prova digital",
+        "refs": [
+            {"source": "DF_LEI_1254_1996_ICMS", "articles": ["48", "49", "51"]},
+            {"source": "DF_DEC_18955_1997_RICMS", "articles": ["79", "181", "207", "347", "349", "350"]},
+            {"source": "DF_DEC_39789_2019_EFD_ICMS_IPI", "articles": ["1", "2", "3", "4", "5", "6", "7"]},
+        ],
+        "analysis": [
+            "A tese tributária precisa aparecer em documento fiscal e escrituração. A lei dá a obrigação, o RICMS detalha documentos e fiscalização, e o decreto da EFD organiza o ambiente digital.",
+            "EFD ICMS/IPI não cria o benefício. Ela declara e evidencia o direito que precisa existir na norma material, no ato concessivo e no documento fiscal.",
+            "O melhor padrão de controle é o dossiê mensal: lei, ato, XML, EFD, cálculo, guia, prova de condição e conciliação contábil.",
+        ],
+        "departments": "Fiscal transmite EFD e valida XML. TI mantém parametrização. Contábil concilia ajustes. Financeiro prova pagamento. Auditoria testa coerência.",
+        "documents": "NF-e, CT-e, EFD ICMS/IPI, recibo, registros e ajustes, memória de cálculo, guias, cadastro de item, ato legal e comprovantes.",
+        "risks": "Declarar ajuste sem direito material; transmitir EFD incoerente com XML; perder prova por falta de dossiê; guardar só link externo e não o texto aplicável.",
+    },
+    {
+        "id": "fiscalizacao-riscos",
+        "title": "Fiscalização, perda de benefício e defesa documental",
+        "summary": "Pontos que normalmente decidem a sobrevivência de um benefício: regularidade, condição, prazo, prova e coerência entre sistemas.",
+        "theme": "Auditoria fiscal",
+        "refs": [
+            {"source": "DF_DEC_18955_1997_RICMS", "articles": ["347", "349", "350"]},
+            {"source": "DF_LEI_5005_2012_REGIME_APURACAO", "articles": ["8", "9"]},
+            {"source": "DF_DEC_39753_2019_CREDITO_OUTORGADO", "articles": ["4"]},
+            {"source": "DF_DEC_39803_2019_EMPREGADF", "keywords": ["perda", "cancelamento", "irregularidade", "comprovação", "cumprimento"]},
+        ],
+        "analysis": [
+            "A fiscalização costuma atacar a distância entre tese e prova: benefício no cadastro, mas sem ato; XML divergente da EFD; cálculo sem memória; operação fora do produto ou período.",
+            "Programas condicionados exigem acompanhamento vivo. Regularidade fiscal, metas, investimento, emprego, localização e escrituração podem ser tão relevantes quanto a regra que concede o incentivo.",
+            "Defesa documental boa nasce antes da autuação. O portal deve ensinar o contribuinte a criar a prova no mês do fato gerador, e não tentar reconstruí-la anos depois.",
+        ],
+        "departments": "Jurídico mantém matriz de risco. Fiscal e contábil fecham prova mensal. Financeiro valida pagamentos. Diretoria acompanha metas e contrapartidas.",
+        "documents": "Checklists, certidões, atos concessivos, XML, EFD, comprovantes, relatórios de metas, contratos, memória de cálculo e parecer de enquadramento.",
+        "risks": "Benefício materialmente correto, mas documentalmente frágil; condição vencida; prova espalhada em áreas diferentes; cálculo impossível de reconstruir.",
+    },
+]
+
+DF_SIGNAL_CHAPTER_MAP = {
+    "exportacao": "icms-regra-matriz",
+    "nao incidencia": "icms-regra-matriz",
+    "aliquota": "base-aliquota-apuracao",
+    "reducao de base": "beneficios-matriz-lc160",
+    "isencao": "beneficios-matriz-lc160",
+    "credito outorgado": "regime-especial-apuracao",
+    "diferimento": "beneficios-setoriais-agro-atacado",
+    "suspensao": "beneficios-matriz-lc160",
+    "regime especial": "regime-especial-apuracao",
+    "protege/fundo": "emprega-df-prodf-desenvolve",
+    "fundo/contrapartida": "emprega-df-prodf-desenvolve",
     "substituicao tributaria": "substituicao-tributaria-antecipacao",
     "efd/sped": "documentos-efd-prova",
     "cBenef": "documentos-efd-prova",
@@ -1381,6 +1583,214 @@ def render_ba_pages(docs: tuple[dict, ...], layout_func) -> dict[str, str]:
     return pages
 
 
+def df_chapter_path(chapter_id: str) -> str:
+    return f"estados/df/legislacao/{chapter_id}.html"
+
+
+def df_chapter_by_id(chapter_id: str) -> dict:
+    return next(chapter for chapter in DF_CHAPTERS if chapter["id"] == chapter_id)
+
+
+def df_law_blocks(current_path: str, docs: tuple[dict, ...], chapter: dict) -> str:
+    source_map = docs_by_source_id(docs)
+    blocks = []
+    for ref in chapter.get("refs", []):
+        doc = source_map.get(ref["source"])
+        if not doc:
+            continue
+        segments: list[tuple[str, str]] = []
+        if ref.get("articles"):
+            segments = article_segments(doc, ref["articles"])
+        elif ref.get("full_text"):
+            if doc["chars"] <= 25000:
+                segments = [("Texto integral do ato", clean_law_segment(doc["text"], limit=26000))]
+            else:
+                needles = ["substituição tributária", "mercadorias", "CEST", "MVA", "antecipação", "crédito fiscal"]
+                segments = [(f"Trecho {idx}", clean_law_segment(item, limit=5000)) for idx, item in enumerate(excerpts(doc["text"], needles, limit=5), start=1)]
+        elif ref.get("keywords"):
+            segments = [(f"Trecho {idx}", clean_law_segment(item, limit=5000)) for idx, item in enumerate(excerpts(doc["text"], ref["keywords"], limit=5), start=1)]
+        if not segments:
+            segments = [(f"Trecho {idx}", clean_law_segment(item, limit=5000)) for idx, item in enumerate(excerpts(doc["text"], [chapter["title"], chapter["summary"]], limit=2), start=1)]
+        law_html = "".join(f"""
+<article class="article-block">
+  <div class="article-number">{escape(label)}</div>
+  <pre class="law-pre">{escape(segment)}</pre>
+</article>
+""" for label, segment in segments if segment)
+        blocks.append(f"""
+<section class="legal-document">
+  <div class="document-heading">
+    <div>
+      <span class="eyebrow">{escape(doc['category_label'])}</span>
+      <h3>{escape(doc['title'])}</h3>
+      <p>Dispositivos essenciais para este capítulo. A íntegra está preservada na página-fonte.</p>
+    </div>
+    <div class="document-actions">
+      <a href="{escape(rel_href(current_path, source_path('DF', doc)))}">abrir fonte integral</a>
+      <a href="{escape(doc.get('official_url', STATE_OFFICIAL_PORTALS['DF']))}" target="_blank" rel="noopener">fonte pública</a>
+    </div>
+  </div>
+  {law_html}
+</section>
+""")
+    return "".join(blocks)
+
+
+def render_df_index_page(docs: tuple[dict, ...], layout_func) -> str:
+    current = index_path("DF")
+    chapter_cards = []
+    for chapter in DF_CHAPTERS:
+        chapter_cards.append(f"""
+<a class="portal-card searchable-card" href="{escape(rel_href(current, df_chapter_path(chapter['id'])))}"
+   data-search="{escape('Distrito Federal DF ICMS beneficios fiscais ' + chapter['title'] + ' ' + chapter['summary'] + ' ' + chapter['theme'])}">
+  <span class="card-kicker">{escape(chapter['theme'])}</span>
+  <h3>{escape(chapter['title'])}</h3>
+  <p>{escape(chapter['summary'])}</p>
+  <small>lei em tela + análise aplicada</small>
+</a>
+""")
+    source_cards = render_doc_links(current, "DF", list(docs))
+    body = f"""
+<section class="hero-panel legal-hero">
+  <div>
+    <span class="eyebrow">Distrito Federal completo</span>
+    <h1>Distrito Federal: ICMS e benefícios fiscais em tela</h1>
+    <p>Lei nº 1.254/1996, RICMS/DF, Cadernos do Anexo I, Anexo IV, LC 160/Convênio 190, regime especial de apuração, crédito outorgado, EMPREGA-DF, PRÓ-DF II, Desenvolve-DF, diferimento agro e EFD ICMS/IPI.</p>
+  </div>
+  <aside class="hero-proof">
+    <strong>Como ler</strong>
+    <p>Comece pela regra matriz; depois base, alíquota e apuração; em seguida benefícios, regimes, programas, ST, EFD e prova.</p>
+  </aside>
+</section>
+<section class="law-ledger">
+  <div>
+    <h2>Textos publicados</h2>
+    <p>{fmt_num(len(docs))} atos normativos e {fmt_num(sum(int(doc['chars']) for doc in docs))} caracteres em tela no portal.</p>
+  </div>
+  <div>
+    <h2>Arquitetura do DF</h2>
+    <p>O estudo passa pela lei material, pelo RICMS, pelos Cadernos dos Anexos, pela LC 160/Convênio 190 e pelos programas de desenvolvimento econômico.</p>
+  </div>
+  <div>
+    <h2>Fonte pública</h2>
+    <p><a href="https://www.sinj.df.gov.br/sinj/" target="_blank" rel="noopener">Sistema Integrado de Normas Jurídicas do DF</a></p>
+  </div>
+</section>
+<section class="topic-index">
+  <div class="section-heading">
+    <span class="eyebrow">Índice por tema</span>
+    <h2>Estude pela matéria, não pelo número do ato</h2>
+    <p>Cada capítulo abre com dispositivos legais em tela e depois ensina como aplicar, provar e auditar a regra.</p>
+  </div>
+  <div class="card-grid">{''.join(chapter_cards)}</div>
+</section>
+<section class="section-wrap">
+  <div class="section-heading">
+    <span class="eyebrow">Fontes integrais</span>
+    <h2>Legislação em tela</h2>
+    <p>As páginas abaixo preservam a íntegra textual capturada das fontes públicas, para que o portal não dependa do link externo para ensinar.</p>
+  </div>
+  {source_cards}
+</section>
+<section class="continuity">
+  <h2>Continuar a leitura</h2>
+  <div>
+    <a href="{escape(rel_href(current, 'estados/df.html'))}">página do Distrito Federal</a>
+    <a href="{escape(rel_href(current, 'estados/ba/legislacao/index.html'))}">comparar com Bahia</a>
+    <a href="{escape(rel_href(current, 'estados/goias/legislacao/index.html'))}">comparar com Goiás</a>
+    <a href="{escape(rel_href(current, 'confaz/index.html'))}">CONFAZ e Convênio 190/2017</a>
+    <a href="{escape(rel_href(current, 'manual-fiscal.html'))}">manual fiscal</a>
+  </div>
+</section>
+"""
+    return layout_func(current, "Distrito Federal: ICMS e benefícios fiscais em tela", "Lei, RICMS, benefícios, ST, programas e prova do ICMS no Distrito Federal.", body, "estados")
+
+
+def render_df_chapter_page(docs: tuple[dict, ...], chapter: dict, layout_func) -> str:
+    current = df_chapter_path(chapter["id"])
+    related = []
+    for other in DF_CHAPTERS:
+        if other["id"] == chapter["id"]:
+            continue
+        if other["theme"] == chapter["theme"] or len(related) < 4:
+            related.append(other)
+        if len(related) >= 5:
+            break
+    related_links = "".join(
+        f'<a href="{escape(rel_href(current, df_chapter_path(item["id"])))}">{escape(item["title"])}</a>'
+        for item in related
+    )
+    analysis_items = "".join(f"<p>{escape(item)}</p>" for item in chapter.get("analysis", []))
+    body = f"""
+<section class="hero-panel legal-hero">
+  <div>
+    <span class="eyebrow">Distrito Federal · {escape(chapter['theme'])}</span>
+    <h1>{escape(chapter['title'])}</h1>
+    <p>{escape(chapter['summary'])}</p>
+  </div>
+  <aside class="hero-proof">
+    <strong>Ordem correta</strong>
+    <p>Leia os dispositivos em tela antes da interpretação. Depois confira aplicação, prova e risco.</p>
+  </aside>
+</section>
+<section class="topic-index compact-index">
+  <div class="section-heading">
+    <span class="eyebrow">Voltar ao índice</span>
+    <h2>Distrito Federal por capítulos</h2>
+  </div>
+  <div class="signal-law-links">
+    <strong>Continuar no Estado</strong>
+    <div>
+      <a href="{escape(rel_href(current, index_path('DF')))}">índice do DF</a>
+      <a href="{escape(rel_href(current, 'estados/df.html'))}">página principal</a>
+      <a href="{escape(rel_href(current, 'confaz/index.html'))}">CONFAZ</a>
+    </div>
+  </div>
+</section>
+<section class="legal-chapters">
+  <div class="section-heading">
+    <span class="eyebrow">Legislação em tela</span>
+    <h2>Texto legal antes da análise</h2>
+    <p>Os blocos abaixo trazem os dispositivos nucleares deste assunto. A íntegra de cada ato fica aberta nas páginas-fonte do portal.</p>
+  </div>
+  {df_law_blocks(current, docs, chapter)}
+</section>
+<section class="content-block">
+  <span class="eyebrow">Análise aplicada</span>
+  <h2>Como interpretar</h2>
+  {analysis_items}
+</section>
+<section class="law-ledger">
+  <div>
+    <h2>Aplicação por departamento</h2>
+    <p>{escape(chapter.get('departments', 'Fiscal, contábil, financeiro e jurídico devem amarrar regra, documento, escrituração e pagamento.'))}</p>
+  </div>
+  <div>
+    <h2>Documentos de prova</h2>
+    <p>{escape(chapter.get('documents', 'XML, EFD, memória de cálculo, ato legal e comprovantes.'))}</p>
+  </div>
+  <div>
+    <h2>Riscos comuns</h2>
+    <p>{escape(chapter.get('risks', 'Aplicar tese sem dispositivo, condição, vigência ou prova documental suficiente.'))}</p>
+  </div>
+</section>
+<section class="continuity">
+  <h2>Continuar este estudo</h2>
+  <div>{related_links}</div>
+</section>
+"""
+    return layout_func(current, f"Distrito Federal: {chapter['title']}", chapter["summary"], body, "estados")
+
+
+def render_df_pages(docs: tuple[dict, ...], layout_func) -> dict[str, str]:
+    pages = {index_path("DF"): render_df_index_page(docs, layout_func)}
+    for chapter in DF_CHAPTERS:
+        pages[df_chapter_path(chapter["id"])] = render_df_chapter_page(docs, chapter, layout_func)
+    for doc in docs:
+        pages[source_path("DF", doc)] = render_source_page("DF", doc, layout_func)
+    return pages
+
+
 def render_index_page(uf: str, docs: list[dict], layout_func) -> str:
     name = STATE_NAMES.get(uf, uf)
     current = index_path(uf)
@@ -1564,6 +1974,9 @@ def build_state_legal_pages(layout_func, data: dict) -> dict[str, str]:
         if uf == "BA":
             pages.update(render_ba_pages(docs, layout_func))
             continue
+        if uf == "DF":
+            pages.update(render_df_pages(docs, layout_func))
+            continue
         pages[index_path(uf)] = render_index_page(uf, docs, layout_func)
         for group in GROUP_DEFS:
             pages[group_path(uf, group["id"])] = render_group_page(uf, docs, group, layout_func)
@@ -1586,6 +1999,16 @@ def state_legislation_teaser(uf: str, current_path: str) -> str:
             ("benefícios fiscais e LC 160", ba_chapter_path("beneficios-matriz-lc160")),
             ("DESENVOLVE", ba_chapter_path("desenvolve")),
             ("EFD, documentos e prova", ba_chapter_path("documentos-efd-prova")),
+        ]
+    elif uf == "DF" and state_is_deep_published(uf) and publishable_state_documents(uf):
+        links = [
+            ("Distrito Federal: índice completo", index_path("DF")),
+            ("ICMS: regra matriz", df_chapter_path("icms-regra-matriz")),
+            ("base, alíquotas e apuração", df_chapter_path("base-aliquota-apuracao")),
+            ("benefícios fiscais e LC 160", df_chapter_path("beneficios-matriz-lc160")),
+            ("regime especial e crédito outorgado", df_chapter_path("regime-especial-apuracao")),
+            ("EMPREGA-DF, PRÓ-DF e Desenvolve-DF", df_chapter_path("emprega-df-prodf-desenvolve")),
+            ("EFD, documentos e prova", df_chapter_path("documentos-efd-prova")),
         ]
     else:
         if not state_is_deep_published(uf):
@@ -1669,6 +2092,20 @@ def state_signal_links(uf: str, signal_key: str, current_path: str) -> str:
   </div>
 </div>
 """
+    if uf == "DF":
+        if not state_is_deep_published(uf) or not publishable_state_documents(uf):
+            return ""
+        chapter_id = DF_SIGNAL_CHAPTER_MAP.get(signal_key, "icms-regra-matriz")
+        chapter = df_chapter_by_id(chapter_id)
+        return f"""
+<div class="signal-law-links">
+  <strong>Capítulo do DF para estudar agora</strong>
+  <div>
+    <a href="{escape(rel_href(current_path, df_chapter_path(chapter_id)))}">{escape(chapter['title'])}</a>
+    <a href="{escape(rel_href(current_path, index_path('DF')))}">índice completo do DF</a>
+  </div>
+</div>
+"""
     if not state_is_deep_published(uf) or not publishable_state_documents(uf):
         return ""
     group_id = SIGNAL_TO_GROUP.get(signal_key, "icms")
@@ -1725,6 +2162,34 @@ def state_legal_search_entries(data: dict) -> list[dict[str, str]]:
                     "tags": f"BA Bahia ICMS benefícios fiscais {tags}",
                 })
             continue
+        if uf == "DF":
+            entries.append({
+                "title": "Distrito Federal: ICMS e benefícios fiscais em tela",
+                "url": index_path("DF"),
+                "summary": "Lei do ICMS/DF, RICMS/DF, Cadernos, LC 160, regime especial, crédito outorgado, EMPREGA-DF, PRÓ-DF II, Desenvolve-DF, diferimento agro, ST e EFD.",
+                "tags": "DF Distrito Federal ICMS RICMS benefícios fiscais alíquotas base cálculo substituição tributária ST EMPREGA-DF PRO-DF Desenvolve-DF crédito outorgado diferimento EFD SPED LC 160 Convênio 190",
+            })
+            for chapter in DF_CHAPTERS:
+                entries.append({
+                    "title": f"Distrito Federal: {chapter['title']}",
+                    "url": df_chapter_path(chapter["id"]),
+                    "summary": chapter["summary"],
+                    "tags": f"DF Distrito Federal ICMS benefícios fiscais {chapter['theme']} {chapter['title']} {chapter['summary']}",
+                })
+            for title, url, tags in [
+                ("Distrito Federal: atacado e crédito outorgado", df_chapter_path("regime-especial-apuracao"), "atacado atacadista crédito outorgado regime especial apuração Lei 5005 Decreto 39753"),
+                ("Distrito Federal: EMPREGA-DF, PRÓ-DF II e Desenvolve-DF", df_chapter_path("emprega-df-prodf-desenvolve"), "EMPREGA-DF PRODF PRÓ-DF Desenvolve-DF desenvolvimento econômico incentivo investimento emprego"),
+                ("Distrito Federal: alho, agro e diferimento", df_chapter_path("beneficios-setoriais-agro-atacado"), "alho agro agropecuário diferimento insumos crédito outorgado setor produto"),
+                ("Distrito Federal: substituição tributária e antecipação", df_chapter_path("substituicao-tributaria-antecipacao"), "substituição tributária ST antecipação CEST MVA Anexo IV responsabilidade"),
+                ("Distrito Federal: EFD ICMS/IPI e prova", df_chapter_path("documentos-efd-prova"), "EFD SPED ICMS IPI documento fiscal XML prova escrituração ajuste"),
+            ]:
+                entries.append({
+                    "title": title,
+                    "url": url,
+                    "summary": "Entrada direta para o capítulo temático correspondente, com texto legal em tela e análise aplicada.",
+                    "tags": f"DF Distrito Federal ICMS benefícios fiscais {tags}",
+                })
+            continue
         entries.append({
             "title": f"{name}: legislação de ICMS em tela",
             "url": index_path(uf),
@@ -1771,6 +2236,13 @@ def state_source_records() -> list[dict]:
                     if any(ref.get("source") == doc.get("source_id") for ref in chapter.get("refs", []))
                 ]
                 module_title = "Bahia: ICMS e benefícios fiscais em tela"
+            elif uf == "DF":
+                used_chapters = [
+                    chapter["id"]
+                    for chapter in DF_CHAPTERS
+                    if any(ref.get("source") == doc.get("source_id") for ref in chapter.get("refs", []))
+                ]
+                module_title = "Distrito Federal: ICMS e benefícios fiscais em tela"
             else:
                 used_chapters = [group["id"] for group in GROUP_DEFS if doc_matches_group(doc, group)]
                 module_title = f"{STATE_NAMES.get(uf, uf)}: legislação de ICMS em tela"

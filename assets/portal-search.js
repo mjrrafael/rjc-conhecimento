@@ -98,7 +98,7 @@ window.RJC_SEARCH = [
   {
     "title": "Distrito Federal: ICMS e benefícios fiscais",
     "url": "estados/df.html",
-    "summary": "Página estadual estruturada para futura publicação por UF, com foco em ICMS, benefícios, documento e prova.",
+    "summary": "Página estadual com legislação de ICMS em tela, benefícios, documento e prova.",
     "tags": "DF Distrito Federal Distrito Federal ICMS beneficios fiscais RICMS DECRETOS INSTRUCOES_NORMATIVAS LEIS OUTROS PORTARIAS RESOLUCOES"
   },
   {
@@ -916,6 +916,96 @@ window.RJC_SEARCH = [
     "url": "estados/ba/legislacao/substituicao-tributaria-antecipacao.html",
     "summary": "Entrada direta para o capítulo temático correspondente, com texto legal em tela e análise aplicada.",
     "tags": "BA Bahia ICMS benefícios fiscais substituição tributária ST CEST MVA mercadoria antecipação"
+  },
+  {
+    "title": "Distrito Federal: ICMS e benefícios fiscais em tela",
+    "url": "estados/df/legislacao/index.html",
+    "summary": "Lei do ICMS/DF, RICMS/DF, Cadernos, LC 160, regime especial, crédito outorgado, EMPREGA-DF, PRÓ-DF II, Desenvolve-DF, diferimento agro, ST e EFD.",
+    "tags": "DF Distrito Federal ICMS RICMS benefícios fiscais alíquotas base cálculo substituição tributária ST EMPREGA-DF PRO-DF Desenvolve-DF crédito outorgado diferimento EFD SPED LC 160 Convênio 190"
+  },
+  {
+    "title": "Distrito Federal: ICMS/DF: incidência, não incidência e contribuinte",
+    "url": "estados/df/legislacao/icms-regra-matriz.html",
+    "summary": "A base de todo estudo no Distrito Federal: campo de incidência, hipóteses de não incidência, momento do fato gerador e sujeito passivo.",
+    "tags": "DF Distrito Federal ICMS benefícios fiscais Regra matriz ICMS/DF: incidência, não incidência e contribuinte A base de todo estudo no Distrito Federal: campo de incidência, hipóteses de não incidência, momento do fato gerador e sujeito passivo."
+  },
+  {
+    "title": "Distrito Federal: Base de cálculo, alíquotas, DIFAL e apuração",
+    "url": "estados/df/legislacao/base-aliquota-apuracao.html",
+    "summary": "Como a operação vira base tributável, qual alíquota se aplica, quando há diferencial de alíquotas e como o débito é apurado.",
+    "tags": "DF Distrito Federal ICMS benefícios fiscais Carga tributária Base de cálculo, alíquotas, DIFAL e apuração Como a operação vira base tributável, qual alíquota se aplica, quando há diferencial de alíquotas e como o débito é apurado."
+  },
+  {
+    "title": "Distrito Federal: Benefícios fiscais do DF, LC 160 e Convênio ICMS 190/2017",
+    "url": "estados/df/legislacao/beneficios-matriz-lc160.html",
+    "summary": "A porta de entrada para isenções, reduções, créditos, suspensões e diferimentos no DF, com leitura pela LC 160/2017 e pelos Cadernos do RICMS.",
+    "tags": "DF Distrito Federal ICMS benefícios fiscais Benefícios fiscais Benefícios fiscais do DF, LC 160 e Convênio ICMS 190/2017 A porta de entrada para isenções, reduções, créditos, suspensões e diferimentos no DF, com leitura pela LC 160/2017 e pelos Cadernos do RICMS."
+  },
+  {
+    "title": "Distrito Federal: Regime especial de apuração e crédito outorgado",
+    "url": "estados/df/legislacao/regime-especial-apuracao.html",
+    "summary": "Regime especial, atacado, cálculo favorecido, crédito outorgado, condições de fruição e perda do benefício.",
+    "tags": "DF Distrito Federal ICMS benefícios fiscais Regimes especiais Regime especial de apuração e crédito outorgado Regime especial, atacado, cálculo favorecido, crédito outorgado, condições de fruição e perda do benefício."
+  },
+  {
+    "title": "Distrito Federal: EMPREGA-DF, PRÓ-DF II e Desenvolve-DF",
+    "url": "estados/df/legislacao/emprega-df-prodf-desenvolve.html",
+    "summary": "Programas de desenvolvimento econômico do DF: incentivo, crédito presumido, diferimento, projeto, investimento, emprego e prova de cumprimento.",
+    "tags": "DF Distrito Federal ICMS benefícios fiscais Programas estaduais EMPREGA-DF, PRÓ-DF II e Desenvolve-DF Programas de desenvolvimento econômico do DF: incentivo, crédito presumido, diferimento, projeto, investimento, emprego e prova de cumprimento."
+  },
+  {
+    "title": "Distrito Federal: Benefícios setoriais: atacado, alho, agro e diferimento",
+    "url": "estados/df/legislacao/beneficios-setoriais-agro-atacado.html",
+    "summary": "Tratamentos direcionados por setor ou produto, com foco em crédito outorgado, cadeia agropecuária e diferimento.",
+    "tags": "DF Distrito Federal ICMS benefícios fiscais Setores incentivados Benefícios setoriais: atacado, alho, agro e diferimento Tratamentos direcionados por setor ou produto, com foco em crédito outorgado, cadeia agropecuária e diferimento."
+  },
+  {
+    "title": "Distrito Federal: Substituição tributária, antecipação e responsabilidade",
+    "url": "estados/df/legislacao/substituicao-tributaria-antecipacao.html",
+    "summary": "Responsável, substituto, substituído, recolhimento antecipado, mercadorias sujeitas e prova do imposto retido.",
+    "tags": "DF Distrito Federal ICMS benefícios fiscais Responsabilidade tributária Substituição tributária, antecipação e responsabilidade Responsável, substituto, substituído, recolhimento antecipado, mercadorias sujeitas e prova do imposto retido."
+  },
+  {
+    "title": "Distrito Federal: Documentos fiscais, EFD ICMS/IPI e prova",
+    "url": "estados/df/legislacao/documentos-efd-prova.html",
+    "summary": "Como a tese aparece no documento fiscal, na escrituração, nos registros digitais e no dossiê de auditoria.",
+    "tags": "DF Distrito Federal ICMS benefícios fiscais Prova digital Documentos fiscais, EFD ICMS/IPI e prova Como a tese aparece no documento fiscal, na escrituração, nos registros digitais e no dossiê de auditoria."
+  },
+  {
+    "title": "Distrito Federal: Fiscalização, perda de benefício e defesa documental",
+    "url": "estados/df/legislacao/fiscalizacao-riscos.html",
+    "summary": "Pontos que normalmente decidem a sobrevivência de um benefício: regularidade, condição, prazo, prova e coerência entre sistemas.",
+    "tags": "DF Distrito Federal ICMS benefícios fiscais Auditoria fiscal Fiscalização, perda de benefício e defesa documental Pontos que normalmente decidem a sobrevivência de um benefício: regularidade, condição, prazo, prova e coerência entre sistemas."
+  },
+  {
+    "title": "Distrito Federal: atacado e crédito outorgado",
+    "url": "estados/df/legislacao/regime-especial-apuracao.html",
+    "summary": "Entrada direta para o capítulo temático correspondente, com texto legal em tela e análise aplicada.",
+    "tags": "DF Distrito Federal ICMS benefícios fiscais atacado atacadista crédito outorgado regime especial apuração Lei 5005 Decreto 39753"
+  },
+  {
+    "title": "Distrito Federal: EMPREGA-DF, PRÓ-DF II e Desenvolve-DF",
+    "url": "estados/df/legislacao/emprega-df-prodf-desenvolve.html",
+    "summary": "Entrada direta para o capítulo temático correspondente, com texto legal em tela e análise aplicada.",
+    "tags": "DF Distrito Federal ICMS benefícios fiscais EMPREGA-DF PRODF PRÓ-DF Desenvolve-DF desenvolvimento econômico incentivo investimento emprego"
+  },
+  {
+    "title": "Distrito Federal: alho, agro e diferimento",
+    "url": "estados/df/legislacao/beneficios-setoriais-agro-atacado.html",
+    "summary": "Entrada direta para o capítulo temático correspondente, com texto legal em tela e análise aplicada.",
+    "tags": "DF Distrito Federal ICMS benefícios fiscais alho agro agropecuário diferimento insumos crédito outorgado setor produto"
+  },
+  {
+    "title": "Distrito Federal: substituição tributária e antecipação",
+    "url": "estados/df/legislacao/substituicao-tributaria-antecipacao.html",
+    "summary": "Entrada direta para o capítulo temático correspondente, com texto legal em tela e análise aplicada.",
+    "tags": "DF Distrito Federal ICMS benefícios fiscais substituição tributária ST antecipação CEST MVA Anexo IV responsabilidade"
+  },
+  {
+    "title": "Distrito Federal: EFD ICMS/IPI e prova",
+    "url": "estados/df/legislacao/documentos-efd-prova.html",
+    "summary": "Entrada direta para o capítulo temático correspondente, com texto legal em tela e análise aplicada.",
+    "tags": "DF Distrito Federal ICMS benefícios fiscais EFD SPED ICMS IPI documento fiscal XML prova escrituração ajuste"
   },
   {
     "title": "Manual de Documentos Fiscais Eletronicos",

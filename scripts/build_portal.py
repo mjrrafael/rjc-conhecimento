@@ -1464,6 +1464,64 @@ def state_page(state: dict, data: dict) -> str:
 </section>
 """
             return layout(path, f'{display_name}: ICMS e benefícios fiscais', "ICMS baiano em tela por capítulos.", body, "estados")
+        if state["uf"] == "DF":
+            body = f"""
+{hero(f'{display_name}: ICMS e benefícios fiscais', 'Legislação estadual em tela: ICMS, benefícios fiscais, alíquotas, ST, documentos e prova por assunto.', state["uf"])}
+<section class="law-ledger">
+  <div>
+    <h2>Estado do estudo</h2>
+    <p>O Distrito Federal está publicado em capítulos próprios, com lei material, RICMS, Cadernos, programas e obrigações acessórias em tela. O caminho correto é abrir o índice do DF, ler a lei e depois avançar para a análise aplicada.</p>
+  </div>
+  <div>
+    <h2>Primeira pergunta</h2>
+    <p>A operação está no campo de incidência do ICMS? Só depois disso faz sentido discutir isenção, redução, crédito outorgado, diferimento, regime especial ou substituição tributária.</p>
+  </div>
+  <div>
+    <h2>Prova antes de tese</h2>
+    <p>XML, cadastro do item, NCM, EFD, memória de cálculo, ato concessivo e dispositivo legal precisam sustentar a mesma conclusão.</p>
+  </div>
+</section>
+{state_legislation_teaser(state["uf"], path)}
+<section class="matrix-section">
+  <h2>Benefícios fiscais por grupo</h2>
+  <div class="matrix-grid">
+    <a class="matrix-card searchable-card" href="df/legislacao/regime-especial-apuracao.html" data-search="Distrito Federal DF atacado atacadista regime especial apuração crédito outorgado Lei 5005 Decreto 39753">
+      <h3>Atacado e crédito outorgado</h3>
+      <p>Regime especial de apuração, cálculo favorecido, operações interestaduais, condições de fruição e perda do benefício.</p>
+    </a>
+    <a class="matrix-card searchable-card" href="df/legislacao/emprega-df-prodf-desenvolve.html" data-search="Distrito Federal DF EMPREGA-DF PRÓ-DF PRODF Desenvolve-DF investimento emprego incentivo desenvolvimento econômico">
+      <h3>EMPREGA-DF, PRÓ-DF e Desenvolve-DF</h3>
+      <p>Programas de desenvolvimento econômico: projeto, investimento, emprego, crédito presumido, diferimento, habilitação e prova.</p>
+    </a>
+    <a class="matrix-card searchable-card" href="df/legislacao/beneficios-setoriais-agro-atacado.html" data-search="Distrito Federal DF agro alho insumos agropecuários diferimento crédito outorgado setor produto">
+      <h3>Agro, alho e benefícios setoriais</h3>
+      <p>Tratamentos por produto e cadeia: crédito outorgado do alho, diferimento de insumos agropecuários, destinação e documentação.</p>
+    </a>
+    <a class="matrix-card searchable-card" href="df/legislacao/beneficios-matriz-lc160.html" data-search="Distrito Federal DF benefícios fiscais LC 160 Convênio 190 isenção redução crédito presumido suspensão diferimento Cadernos Anexo I">
+      <h3>Isenções, reduções e Cadernos</h3>
+      <p>Cadernos do Anexo I do RICMS/DF, LC 160/2017, Convênio ICMS 190/2017, remissão, reinstituição e adesão.</p>
+    </a>
+    <a class="matrix-card searchable-card" href="df/legislacao/substituicao-tributaria-antecipacao.html" data-search="Distrito Federal DF substituição tributária ST antecipação Anexo IV CEST NCM MVA responsabilidade">
+      <h3>ST, antecipação e mercadorias</h3>
+      <p>Anexo IV do RICMS/DF: responsável, substituto, substituído, mercadorias, MVA/pauta, recolhimento e prova.</p>
+    </a>
+    <a class="matrix-card searchable-card" href="df/legislacao/documentos-efd-prova.html" data-search="Distrito Federal DF EFD SPED ICMS IPI XML documento fiscal escrituração prova">
+      <h3>EFD, XML e prova digital</h3>
+      <p>Como a tese aparece no documento fiscal, na EFD ICMS/IPI, nos registros, nos ajustes e no dossiê mensal.</p>
+    </a>
+  </div>
+</section>
+<section class="continuity">
+  <h2>Continuar a leitura</h2>
+  <div>
+    <a href="df/legislacao/index.html">Abrir índice completo do DF</a>
+    <a href="../confaz/index.html">Entender CONFAZ e benefícios</a>
+    <a href="../federal/pis-cofins.html">Conectar com PIS/Cofins</a>
+    <a href="../biblioteca/index.html">Consultar manuais e painel</a>
+  </div>
+</section>
+"""
+            return layout(path, f'{display_name}: ICMS e benefícios fiscais', "ICMS do Distrito Federal em tela por capítulos.", body, "estados")
         body = f"""
 {hero(f'{display_name}: ICMS e benefícios fiscais', 'Legislação estadual em tela: ICMS, benefícios fiscais, alíquotas, ST, documentos e prova por assunto.', state["uf"])}
 <section class="law-ledger">

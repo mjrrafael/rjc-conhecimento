@@ -8,7 +8,7 @@
     "AM": {"region": "Norte", "status": "revisao_fonte", "publish_deep": false, "next_step": "Separar Código Tributário, RICMS e benefícios; baixar o regulamento vigente do Amazonas."},
     "BA": {"region": "Nordeste", "status": "publicado_v1", "publish_deep": true, "next_step": "Bahia publicada como página profunda: Lei do ICMS, RICMS, anexos, substituição tributária, DESENVOLVE, PROIND, PRONAVAL, crédito presumido, informática/eletrônica, atos da LC 160/Convênio 190 e EFD dos incentivos."},
     "CE": {"region": "Nordeste", "status": "revisao_fonte", "publish_deep": false, "next_step": "Baixar RICMS, decretos modificadores e benefícios no portal oficial do Ceará."},
-    "DF": {"region": "Centro-Oeste", "status": "revisao_fonte", "publish_deep": false, "next_step": "Baixar RICMS/DF e caderno de benefícios fiscais na Receita do Distrito Federal."},
+    "DF": {"region": "Centro-Oeste", "status": "publicado_v1", "publish_deep": true, "next_step": "Distrito Federal publicado como página profunda: Lei do ICMS, RICMS, Cadernos do Anexo I, Anexo IV, LC 160/Convênio 190, regime especial de apuração, crédito outorgado, EMPREGA-DF, PRÓ-DF II, Desenvolve-DF, diferimento agro e EFD ICMS/IPI."},
     "ES": {"region": "Sudeste", "status": "revisao_fonte", "publish_deep": false, "next_step": "Baixar RICMS/ES vigente e benefícios no portal oficial do Espírito Santo."},
     "GO": {"region": "Centro-Oeste", "status": "aprovado_v1", "publish_deep": true, "next_step": "Manter monitoramento de RCTE, Anexo IX, cBenef e atos modificadores."},
     "MA": {"region": "Nordeste", "status": "revisao_fonte", "publish_deep": false, "next_step": "Baixar RICMS/MA e anexos de benefícios no portal oficial do Maranhão."},

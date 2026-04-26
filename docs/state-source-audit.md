@@ -7,10 +7,10 @@ Esta auditoria mede qualidade editorial do acervo estadual antes de publicação
 ## Resumo
 
 - Estados avaliados: 27
-- Documentos estaduais candidatos a ICMS: 191
-- Documentos úteis após teste de escopo: 184
-- Documentos bloqueados por escopo material: 7
-- Estados bloqueados para publicação profunda: 25
+- Documentos estaduais candidatos a ICMS: 198
+- Documentos úteis após teste de escopo: 195
+- Documentos bloqueados por escopo material: 3
+- Estados bloqueados para publicação profunda: 24
 
 ## Estados
 
@@ -22,7 +22,7 @@ Esta auditoria mede qualidade editorial do acervo estadual antes de publicação
 | AP | Norte | revisao_fonte | 7 | 7 | 0 | bloquear_publicacao_ate_curadoria | contém Taxas, fonte local sem URL oficial no cabeçalho, ruído de extração/encoding, texto curto para RICMS/benefícios |
 | BA | Nordeste | publicado_v1 | 15 | 15 | 0 | manter_publicado | sem alerta automatizado |
 | CE | Nordeste | revisao_fonte | 8 | 8 | 0 | bloquear_publicacao_ate_curadoria | categoria não específica de ICMS, contém IPVA, contém ITCMD/ITCD, contém Taxas, fallback amplo |
-| DF | Centro-Oeste | revisao_fonte | 5 | 1 | 4 | bloquear_publicacao_ate_reclassificar_escopo | categoria não específica de ICMS, contém IPVA, contém ITCMD/ITCD, contém Taxas, escopo material incompatível com ICMS |
+| DF | Centro-Oeste | publicado_v1 | 12 | 12 | 0 | manter_publicado | sem alerta automatizado |
 | ES | Sudeste | revisao_fonte | 7 | 7 | 0 | bloquear_publicacao_ate_curadoria | contém IPVA, contém Taxas |
 | GO | Centro-Oeste | aprovado_v1 | 0 | 0 | 0 | manter_publicado | sem alerta automatizado |
 | MA | Nordeste | revisao_fonte | 10 | 10 | 0 | bloquear_publicacao_ate_curadoria | contém Taxas, fonte local sem URL oficial no cabeçalho |

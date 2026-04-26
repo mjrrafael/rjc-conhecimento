@@ -1659,6 +1659,378 @@
           ]
         }
       ]
+    },
+    {
+      "source_id": "state-df-df-lei-1254-1996-icms",
+      "jurisdiction": "DF",
+      "title": "Lei nº 1.254/1996 - Lei material do ICMS/DF",
+      "short": "ICMS - lei material",
+      "official_url": "https://www.sinj.df.gov.br/sinj/Norma/49208/Lei_1254_08_11_1996.html",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "data/fontes-estaduais-curadas/centro-oeste/DF/DF_LEI_1254_1996_ICMS_2026-04-26.txt"
+        ],
+        "sha256": {
+          "DF_LEI_1254_1996_ICMS_2026-04-26.txt": "620a5050e23189efb2f1c3d772f5cfbb57260345df834f059d5eb464042ad0fe"
+        },
+        "fetch_url": "https://www.sinj.df.gov.br/sinj/Norma/49208/Lei_1254_08_11_1996.html"
+      },
+      "note": "Texto estadual de ICMS publicado em estados/df/legislacao/fontes/df-lei-1254-1996-icms.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-df",
+          "module_title": "Distrito Federal: ICMS e benefícios fiscais em tela",
+          "chapters": [
+            "icms-regra-matriz",
+            "base-aliquota-apuracao",
+            "substituicao-tributaria-antecipacao",
+            "documentos-efd-prova"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-df-df-dec-18955-1997-ricms",
+      "jurisdiction": "DF",
+      "title": "Decreto nº 18.955/1997 - RICMS/DF",
+      "short": "ICMS - regulamento, anexos, benefícios e ST",
+      "official_url": "https://www.sinj.df.gov.br/sinj/Norma/33077/Decreto_18955_22_12_1997.html",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "data/fontes-estaduais-curadas/centro-oeste/DF/DF_DEC_18955_1997_RICMS_2026-04-26.txt"
+        ],
+        "sha256": {
+          "DF_DEC_18955_1997_RICMS_2026-04-26.txt": "c5a39d7c917068b77bf1a871d934ad22a6608626d20b1b69129d9bd12b8c394a"
+        },
+        "fetch_url": "https://www.sinj.df.gov.br/sinj/Norma/33077/Decreto_18955_22_12_1997.html"
+      },
+      "note": "Texto estadual de ICMS publicado em estados/df/legislacao/fontes/df-dec-18955-1997-ricms.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-df",
+          "module_title": "Distrito Federal: ICMS e benefícios fiscais em tela",
+          "chapters": [
+            "icms-regra-matriz",
+            "base-aliquota-apuracao",
+            "beneficios-matriz-lc160",
+            "substituicao-tributaria-antecipacao",
+            "documentos-efd-prova",
+            "fiscalizacao-riscos"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-df-df-lei-6225-2018-beneficios-lc160",
+      "jurisdiction": "DF",
+      "title": "Lei nº 6.225/2018 - remissão, reinstituição e LC 160/Convênio 190",
+      "short": "ICMS - benefícios fiscais e Convênio ICMS 190/2017",
+      "official_url": "https://www.sinj.df.gov.br/sinj/Norma/a744aad6615b49c79697917e29de46e2/Lei_6225_19_11_2018.html",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "data/fontes-estaduais-curadas/centro-oeste/DF/DF_LEI_6225_2018_BENEFICIOS_LC160_2026-04-26.txt"
+        ],
+        "sha256": {
+          "DF_LEI_6225_2018_BENEFICIOS_LC160_2026-04-26.txt": "879e419a8f2af4c0a538897505f55d7793c5a08ff5451420157a2ef57dffdd32"
+        },
+        "fetch_url": "https://www.sinj.df.gov.br/sinj/Norma/a744aad6615b49c79697917e29de46e2/Lei_6225_19_11_2018.html"
+      },
+      "note": "Texto estadual de ICMS publicado em estados/df/legislacao/fontes/df-lei-6225-2018-beneficios-lc160.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-df",
+          "module_title": "Distrito Federal: ICMS e benefícios fiscais em tela",
+          "chapters": [
+            "beneficios-matriz-lc160"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-df-df-lei-5005-2012-regime-apuracao",
+      "jurisdiction": "DF",
+      "title": "Lei nº 5.005/2012 - regime especial de apuração do ICMS",
+      "short": "ICMS - regime de apuração",
+      "official_url": "https://www.sinj.df.gov.br/sinj/Norma/73211/Lei_5005_21_12_2012.html",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "data/fontes-estaduais-curadas/centro-oeste/DF/DF_LEI_5005_2012_REGIME_APURACAO_2026-04-26.txt"
+        ],
+        "sha256": {
+          "DF_LEI_5005_2012_REGIME_APURACAO_2026-04-26.txt": "116332e7ad456fae5e035ab41d2871d18dcac4433157d08c543b275a5bffa805"
+        },
+        "fetch_url": "https://www.sinj.df.gov.br/sinj/Norma/73211/Lei_5005_21_12_2012.html"
+      },
+      "note": "Texto estadual de ICMS publicado em estados/df/legislacao/fontes/df-lei-5005-2012-regime-apuracao.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-df",
+          "module_title": "Distrito Federal: ICMS e benefícios fiscais em tela",
+          "chapters": [
+            "regime-especial-apuracao",
+            "fiscalizacao-riscos"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-df-df-dec-39753-2019-credito-outorgado",
+      "jurisdiction": "DF",
+      "title": "Decreto nº 39.753/2019 - crédito outorgado para operações interestaduais",
+      "short": "ICMS - crédito outorgado",
+      "official_url": "https://www.sinj.df.gov.br/sinj/Norma/9c1f1eab1e634211bb33093188f6c6a4/Decreto_39753_02_04_2019.html",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "data/fontes-estaduais-curadas/centro-oeste/DF/DF_DEC_39753_2019_CREDITO_OUTORGADO_2026-04-26.txt"
+        ],
+        "sha256": {
+          "DF_DEC_39753_2019_CREDITO_OUTORGADO_2026-04-26.txt": "c8d46700f5da1c631c1c4610100dc49bb452112d300ca84102879f782dd31fc9"
+        },
+        "fetch_url": "https://www.sinj.df.gov.br/sinj/Norma/9c1f1eab1e634211bb33093188f6c6a4/Decreto_39753_02_04_2019.html"
+      },
+      "note": "Texto estadual de ICMS publicado em estados/df/legislacao/fontes/df-dec-39753-2019-credito-outorgado.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-df",
+          "module_title": "Distrito Federal: ICMS e benefícios fiscais em tela",
+          "chapters": [
+            "regime-especial-apuracao",
+            "beneficios-setoriais-agro-atacado",
+            "fiscalizacao-riscos"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-df-df-dec-39803-2019-empregadf",
+      "jurisdiction": "DF",
+      "title": "Decreto nº 39.803/2019 - EMPREGA-DF e incentivos de ICMS",
+      "short": "ICMS - EMPREGA-DF",
+      "official_url": "https://www.sinj.df.gov.br/sinj/Norma/2257f831264c4e06850f0248431427df/Decreto_39803_02_05_2019.html",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "data/fontes-estaduais-curadas/centro-oeste/DF/DF_DEC_39803_2019_EMPREGADF_2026-04-26.txt"
+        ],
+        "sha256": {
+          "DF_DEC_39803_2019_EMPREGADF_2026-04-26.txt": "c5ca81d64cdcf178f18e02a9730cabe096c2844401f197fc4225f3fec4a2ee59"
+        },
+        "fetch_url": "https://www.sinj.df.gov.br/sinj/Norma/2257f831264c4e06850f0248431427df/Decreto_39803_02_05_2019.html"
+      },
+      "note": "Texto estadual de ICMS publicado em estados/df/legislacao/fontes/df-dec-39803-2019-empregadf.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-df",
+          "module_title": "Distrito Federal: ICMS e benefícios fiscais em tela",
+          "chapters": [
+            "emprega-df-prodf-desenvolve",
+            "fiscalizacao-riscos"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-df-df-dec-45287-2023-alho-credito-outorgado",
+      "jurisdiction": "DF",
+      "title": "Decreto nº 45.287/2023 - crédito outorgado do alho",
+      "short": "ICMS - benefício agro e crédito outorgado",
+      "official_url": "https://www.sinj.df.gov.br/sinj/Norma/1e727ef68cb84ce385cb0a7dc8d17a1b/Decreto_45287_15_12_2023.html",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "data/fontes-estaduais-curadas/centro-oeste/DF/DF_DEC_45287_2023_ALHO_CREDITO_OUTORGADO_2026-04-26.txt"
+        ],
+        "sha256": {
+          "DF_DEC_45287_2023_ALHO_CREDITO_OUTORGADO_2026-04-26.txt": "1e6fe0afad55579c5e0b6ef600153b95a094a35ef1b21aed1334c8d2293d5ce1"
+        },
+        "fetch_url": "https://www.sinj.df.gov.br/sinj/Norma/1e727ef68cb84ce385cb0a7dc8d17a1b/Decreto_45287_15_12_2023.html"
+      },
+      "note": "Texto estadual de ICMS publicado em estados/df/legislacao/fontes/df-dec-45287-2023-alho-credito-outorgado.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-df",
+          "module_title": "Distrito Federal: ICMS e benefícios fiscais em tela",
+          "chapters": [
+            "beneficios-setoriais-agro-atacado"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-df-df-dec-18726-1997-agro-diferimento",
+      "jurisdiction": "DF",
+      "title": "Decreto nº 18.726/1997 - diferimento de insumos agropecuários",
+      "short": "ICMS - agro e diferimento",
+      "official_url": "https://www.sinj.df.gov.br/sinj/Norma/32661/Decreto_18726_15_10_1997.pdf",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "data/fontes-estaduais-curadas/centro-oeste/DF/DF_DEC_18726_1997_AGRO_DIFERIMENTO_2026-04-26.txt"
+        ],
+        "sha256": {
+          "DF_DEC_18726_1997_AGRO_DIFERIMENTO_2026-04-26.txt": "25d00f0bbb6f279594df1a100e2a95f5706d0455ee35481bebc879b82551f370"
+        },
+        "fetch_url": "https://www.sinj.df.gov.br/sinj/Norma/32661/Decreto_18726_15_10_1997.pdf"
+      },
+      "note": "Texto estadual de ICMS publicado em estados/df/legislacao/fontes/df-dec-18726-1997-agro-diferimento.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-df",
+          "module_title": "Distrito Federal: ICMS e benefícios fiscais em tela",
+          "chapters": [
+            "beneficios-setoriais-agro-atacado"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-df-df-dec-39789-2019-efd-icms-ipi",
+      "jurisdiction": "DF",
+      "title": "Decreto nº 39.789/2019 - EFD ICMS/IPI no DF",
+      "short": "ICMS - EFD/SPED e obrigações acessórias",
+      "official_url": "https://www.sinj.df.gov.br/sinj/Norma/c2775e5323a848c5ac079c921d210e08/Decreto_39789_26_04_2019.html",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "data/fontes-estaduais-curadas/centro-oeste/DF/DF_DEC_39789_2019_EFD_ICMS_IPI_2026-04-26.txt"
+        ],
+        "sha256": {
+          "DF_DEC_39789_2019_EFD_ICMS_IPI_2026-04-26.txt": "706d3977db71dbd99fdfb5931b9b8a53f704293266a3d4f7b151b6cbaf226190"
+        },
+        "fetch_url": "https://www.sinj.df.gov.br/sinj/Norma/c2775e5323a848c5ac079c921d210e08/Decreto_39789_26_04_2019.html"
+      },
+      "note": "Texto estadual de ICMS publicado em estados/df/legislacao/fontes/df-dec-39789-2019-efd-icms-ipi.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-df",
+          "module_title": "Distrito Federal: ICMS e benefícios fiscais em tela",
+          "chapters": [
+            "documentos-efd-prova"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-df-df-lei-3196-2003-prodf-ii",
+      "jurisdiction": "DF",
+      "title": "Lei nº 3.196/2003 - PRÓ-DF II",
+      "short": "Incentivos econômicos - PRÓ-DF II",
+      "official_url": "https://www.sinj.df.gov.br/sinj/Norma/51144/Lei_3196_29_09_2003.html",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "data/fontes-estaduais-curadas/centro-oeste/DF/DF_LEI_3196_2003_PRODF_II_2026-04-26.txt"
+        ],
+        "sha256": {
+          "DF_LEI_3196_2003_PRODF_II_2026-04-26.txt": "562b73115dc67961ddcee02ab41ce56465a693a6faf977e4df3a5ef21882d258"
+        },
+        "fetch_url": "https://www.sinj.df.gov.br/sinj/Norma/51144/Lei_3196_29_09_2003.html"
+      },
+      "note": "Texto estadual de ICMS publicado em estados/df/legislacao/fontes/df-lei-3196-2003-prodf-ii.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-df",
+          "module_title": "Distrito Federal: ICMS e benefícios fiscais em tela",
+          "chapters": [
+            "emprega-df-prodf-desenvolve"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-df-df-lei-3266-2003-prodf-ii-complementar",
+      "jurisdiction": "DF",
+      "title": "Lei nº 3.266/2003 - benefícios do PRÓ-DF II",
+      "short": "Incentivos econômicos - PRÓ-DF II e benefícios",
+      "official_url": "https://www.sinj.df.gov.br/sinj/Norma/51208/Lei_3266_30_12_2003.html",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "data/fontes-estaduais-curadas/centro-oeste/DF/DF_LEI_3266_2003_PRODF_II_COMPLEMENTAR_2026-04-26.txt"
+        ],
+        "sha256": {
+          "DF_LEI_3266_2003_PRODF_II_COMPLEMENTAR_2026-04-26.txt": "d526ced65458a5520483e2294d30db76c55c26cde1431ab1a45fe50190aa83e9"
+        },
+        "fetch_url": "https://www.sinj.df.gov.br/sinj/Norma/51208/Lei_3266_30_12_2003.html"
+      },
+      "note": "Texto estadual de ICMS publicado em estados/df/legislacao/fontes/df-lei-3266-2003-prodf-ii-complementar.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-df",
+          "module_title": "Distrito Federal: ICMS e benefícios fiscais em tela",
+          "chapters": [
+            "emprega-df-prodf-desenvolve"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-df-df-dec-46900-2025-prodf-desenvolvedf",
+      "jurisdiction": "DF",
+      "title": "Decreto nº 46.900/2025 - PRÓ-DF II e Desenvolve-DF",
+      "short": "Incentivos econômicos - PRÓ-DF II e Desenvolve-DF",
+      "official_url": "https://www.sinj.df.gov.br/sinj/Norma/3925adc94a154b4381fd110c140f25e9/Decreto_46900_25_02_2025.html",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "data/fontes-estaduais-curadas/centro-oeste/DF/DF_DEC_46900_2025_PRODF_DESENVOLVEDF_2026-04-26.txt"
+        ],
+        "sha256": {
+          "DF_DEC_46900_2025_PRODF_DESENVOLVEDF_2026-04-26.txt": "c49da0f4cc94aed5b62dddd0c6d774b7db8559dba0278d8db8ddbd5b7aeffcef"
+        },
+        "fetch_url": "https://www.sinj.df.gov.br/sinj/Norma/3925adc94a154b4381fd110c140f25e9/Decreto_46900_25_02_2025.html"
+      },
+      "note": "Texto estadual de ICMS publicado em estados/df/legislacao/fontes/df-dec-46900-2025-prodf-desenvolvedf.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-df",
+          "module_title": "Distrito Federal: ICMS e benefícios fiscais em tela",
+          "chapters": [
+            "emprega-df-prodf-desenvolve"
+          ]
+        }
+      ]
     }
   ]
 }

@@ -27,11 +27,13 @@ from legal_modules import (  # noqa: E402
 )
 from state_legal_pages import (  # noqa: E402
     BA_CHAPTERS,
+    DF_CHAPTERS,
     GROUP_DEFS,
     STATE_NAMES,
     ba_chapter_path,
     benefit_sector_results,
     collect_state_documents,
+    df_chapter_path,
     group_docs,
     group_path,
     group_by_id,
@@ -298,6 +300,34 @@ def audit_content_pages() -> list[str]:
             for term in ["DESENVOLVE", "PROIND", "PRONAVAL", "informática", "crédito presumido", "LC 160"]:
                 if term not in benefits_html:
                     errors.append(f"BA: beneficio setorial sem trilha publicada: {term}")
+            for doc in list(docs)[:3]:
+                source_html = read_page(source_path(uf, doc))
+                if not source_html or "law-pre" not in source_html:
+                    errors.append(f"{uf}: fonte estadual sem texto em tela: {doc['file']}")
+            continue
+        if uf == "DF":
+            index_html = read_page(state_index_path(uf))
+            if not index_html or "Distrito Federal: ICMS e benefícios fiscais em tela" not in index_html:
+                errors.append("DF: indice profundo de ICMS e beneficios ausente")
+            state_html = read_page("estados/df.html")
+            if not state_html or "Benefícios fiscais por grupo" not in state_html:
+                errors.append("DF: pagina estadual sem grupos didaticos de beneficios")
+            if state_html and re.search(r"\bTaxas\b|DF_DECRETOS|DF_LEIS", state_html):
+                errors.append("DF: pagina estadual ainda contem inventario antigo ou taxas fora de escopo")
+            for chapter in DF_CHAPTERS:
+                chapter_html = read_page(df_chapter_path(chapter["id"]))
+                if not chapter_html or "Texto legal antes da análise" not in chapter_html or "law-pre" not in chapter_html:
+                    errors.append(f"DF: capitulo sem lei em tela: {chapter['id']}")
+            benefits_html = (
+                read_page(df_chapter_path("beneficios-matriz-lc160"))
+                + read_page(df_chapter_path("regime-especial-apuracao"))
+                + read_page(df_chapter_path("emprega-df-prodf-desenvolve"))
+                + read_page(df_chapter_path("beneficios-setoriais-agro-atacado"))
+                + read_page(df_chapter_path("documentos-efd-prova"))
+            )
+            for term in ["Lei nº 6.225", "EMPREGA", "PRÓ-DF", "crédito outorgado", "EFD"]:
+                if term not in benefits_html:
+                    errors.append(f"DF: beneficio ou prova sem trilha publicada: {term}")
             for doc in list(docs)[:3]:
                 source_html = read_page(source_path(uf, doc))
                 if not source_html or "law-pre" not in source_html:

@@ -2,10 +2,10 @@
   "generated_on": "2026-04-26",
   "summary": {
     "states": 27,
-    "docs": 191,
-    "publishable_docs": 184,
-    "scope_blocked_docs": 7,
-    "blocked": 25
+    "docs": 198,
+    "publishable_docs": 195,
+    "scope_blocked_docs": 3,
+    "blocked": 24
   },
   "states": {
     "AC": {
@@ -1011,172 +1011,225 @@
     "DF": {
       "estado": "Distrito Federal",
       "region": "Centro-Oeste",
-      "curadoria": "revisao_fonte",
-      "publish_deep": false,
-      "document_count": 5,
-      "publishable_document_count": 1,
-      "scope_blocked_document_count": 4,
-      "total_chars": 1571628,
+      "curadoria": "publicado_v1",
+      "publish_deep": true,
+      "document_count": 12,
+      "publishable_document_count": 12,
+      "scope_blocked_document_count": 0,
+      "total_chars": 1333827,
       "categories": {
-        "DECRETOS": 3,
-        "LEIS": 1,
-        "PORTARIAS": 1
+        "ICMS_BENEFICIOS": 9,
+        "ICMS_LEIS": 1,
+        "INSTRUCOES_NORMATIVAS": 1,
+        "RICMS": 1
       },
-      "flags": [
-        "categoria não específica de ICMS",
-        "contém IPVA",
-        "contém ITCMD/ITCD",
-        "contém Taxas",
-        "escopo material incompatível com ICMS",
-        "fallback amplo",
-        "fallback amplo contaminado: categoria DECRETOS contém ICMS, mas o escopo dominante é Taxas",
-        "fallback amplo contaminado: categoria LEIS contém ICMS, mas o escopo dominante é Taxas",
-        "fallback amplo contaminado: categoria PORTARIAS contém ICMS, mas o escopo dominante é Taxas"
-      ],
-      "recommendation": "bloquear_publicacao_ate_reclassificar_escopo",
-      "next_step": "Baixar RICMS/DF e caderno de benefícios fiscais na Receita do Distrito Federal.",
+      "flags": [],
+      "recommendation": "manter_publicado",
+      "next_step": "Distrito Federal publicado como página profunda: Lei do ICMS, RICMS, Cadernos do Anexo I, Anexo IV, LC 160/Convênio 190, regime especial de apuração, crédito outorgado, EMPREGA-DF, PRÓ-DF II, Desenvolve-DF, diferimento agro e EFD ICMS/IPI.",
       "documents": [
         {
-          "file": "DF_DECRETOS_parte2.txt",
-          "category": "DECRETOS",
-          "chars": 495502,
-          "named_icms": false,
-          "fallback_icms": true,
-          "dominant_scope": "Taxas",
-          "source_scopes": [],
-          "scope_blocked": true,
-          "scope_flags": [
-            "fallback amplo contaminado: categoria DECRETOS contém ICMS, mas o escopo dominante é Taxas"
-          ],
-          "source_documents": [
-            "LEGISLAÇÃO CONTABIL/Decreto 46143 de 19_08_2024.pdf",
-            "LEGISLAÇÃO CONTABIL/Decreto 46286 de 23_09_2024.pdf",
-            "LEGISLAÇÃO CONTABIL/Decreto 47688 de 15_09_2025.pdf",
-            "LEGISLAÇÃO CONTABIL/Decreto 47748 de 29_09_2025.pdf",
-            "LEGISLAÇÃO CONTABIL/Decreto 47810 de 13_10_2025.pdf",
-            "LEGISLAÇÃO CONTABIL/Decreto 47840 de 22_10_2025.pdf",
-            "LEGISLAÇÃO FINANCEIRA/Decreto 1 de 13_01_2023.pdf",
-            "LEGISLAÇÃO FINANCEIRA/Decreto 32598 de 15_12_2010.pdf"
-          ],
-          "flags": [
-            "categoria não específica de ICMS",
-            "contém IPVA",
-            "contém Taxas",
-            "escopo material incompatível com ICMS",
-            "fallback amplo",
-            "fallback amplo contaminado: categoria DECRETOS contém ICMS, mas o escopo dominante é Taxas"
-          ]
-        },
-        {
-          "file": "DF_DECRETOS_parte3.txt",
-          "category": "DECRETOS",
-          "chars": 364467,
-          "named_icms": false,
-          "fallback_icms": true,
+          "file": "DF_LEI_1254_1996_ICMS_2026-04-26.txt",
+          "category": "ICMS_LEIS",
+          "chars": 195277,
+          "named_icms": true,
+          "fallback_icms": false,
           "dominant_scope": "ICMS",
-          "source_scopes": [],
+          "source_scopes": [
+            "ICMS"
+          ],
           "scope_blocked": false,
           "scope_flags": [],
           "source_documents": [
-            "LEGISLAÇÃO FINANCEIRA/Decreto 33522 de 08_02_2012.pdf",
-            "LEGISLAÇÃO FINANCEIRA/Decreto 35565 de 25_06_2014.pdf",
-            "LEGISLAÇÃO FINANCEIRA/Decreto 40372 de 30_12_2019.pdf",
-            "LEGISLAÇÃO FINANCEIRA/Decreto 40467 de 20_02_2020.pdf",
-            "LEGISLAÇÃO FINANCEIRA/Decreto 41603 de 15_12_2020.pdf",
-            "LEGISLAÇÃO FINANCEIRA/Decreto 41773 de 04_02_2021.pdf",
-            "LEGISLAÇÃO FINANCEIRA/Decreto 43183 de 04_04_2022.pdf"
+            "https://www.sinj.df.gov.br/sinj/Norma/49208/Lei_1254_08_11_1996.html"
           ],
-          "flags": [
-            "categoria não específica de ICMS",
-            "contém IPVA",
-            "contém ITCMD/ITCD",
-            "contém Taxas",
-            "fallback amplo"
-          ]
+          "flags": []
         },
         {
-          "file": "DF_DECRETOS_parte4.txt",
-          "category": "DECRETOS",
-          "chars": 245525,
-          "named_icms": false,
-          "fallback_icms": true,
-          "dominant_scope": "Taxas",
-          "source_scopes": [],
-          "scope_blocked": true,
-          "scope_flags": [
-            "fallback amplo contaminado: categoria DECRETOS contém ICMS, mas o escopo dominante é Taxas"
+          "file": "DF_DEC_18955_1997_RICMS_2026-04-26.txt",
+          "category": "RICMS",
+          "chars": 767080,
+          "named_icms": true,
+          "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [
+            "ICMS"
           ],
+          "scope_blocked": false,
+          "scope_flags": [],
           "source_documents": [
-            "LEGISLAÇÃO FINANCEIRA/Decreto Lei 82 de 26_12_1966.pdf"
+            "https://www.sinj.df.gov.br/sinj/Norma/33077/Decreto_18955_22_12_1997.html"
           ],
-          "flags": [
-            "categoria não específica de ICMS",
-            "contém IPVA",
-            "contém Taxas",
-            "escopo material incompatível com ICMS",
-            "fallback amplo",
-            "fallback amplo contaminado: categoria DECRETOS contém ICMS, mas o escopo dominante é Taxas"
-          ]
+          "flags": []
         },
         {
-          "file": "DF_LEIS_parte3.txt",
-          "category": "LEIS",
-          "chars": 121505,
-          "named_icms": false,
-          "fallback_icms": true,
-          "dominant_scope": "Taxas",
-          "source_scopes": [],
-          "scope_blocked": true,
-          "scope_flags": [
-            "fallback amplo contaminado: categoria LEIS contém ICMS, mas o escopo dominante é Taxas"
+          "file": "DF_LEI_6225_2018_BENEFICIOS_LC160_2026-04-26.txt",
+          "category": "ICMS_BENEFICIOS",
+          "chars": 18962,
+          "named_icms": true,
+          "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [
+            "ICMS"
           ],
+          "scope_blocked": false,
+          "scope_flags": [],
           "source_documents": [
-            "LEGISLAÇÃO FINANCEIRA/Lei 4614 de 12_08_2011.pdf",
-            "LEGISLAÇÃO FINANCEIRA/Lei 4891 de 18_07_2012.pdf",
-            "LEGISLAÇÃO FINANCEIRA/Lei 4892 de 19_07_2012.pdf",
-            "LEGISLAÇÃO FINANCEIRA/Lei Complementar 292 de 02_06_2000.pdf",
-            "LEGISLAÇÃO FINANCEIRA/Lei Complementar 925 de 28_06_2017.pdf"
+            "https://www.sinj.df.gov.br/sinj/Norma/a744aad6615b49c79697917e29de46e2/Lei_6225_19_11_2018.html"
           ],
-          "flags": [
-            "categoria não específica de ICMS",
-            "contém IPVA",
-            "contém Taxas",
-            "escopo material incompatível com ICMS",
-            "fallback amplo",
-            "fallback amplo contaminado: categoria LEIS contém ICMS, mas o escopo dominante é Taxas"
-          ]
+          "flags": []
         },
         {
-          "file": "DF_PORTARIAS.txt",
-          "category": "PORTARIAS",
-          "chars": 344629,
-          "named_icms": false,
-          "fallback_icms": true,
-          "dominant_scope": "Taxas",
-          "source_scopes": [],
-          "scope_blocked": true,
-          "scope_flags": [
-            "fallback amplo contaminado: categoria PORTARIAS contém ICMS, mas o escopo dominante é Taxas"
+          "file": "DF_LEI_5005_2012_REGIME_APURACAO_2026-04-26.txt",
+          "category": "ICMS_BENEFICIOS",
+          "chars": 24955,
+          "named_icms": true,
+          "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [
+            "ICMS"
           ],
+          "scope_blocked": false,
+          "scope_flags": [],
           "source_documents": [
-            "LEGISLAÇÃO CONTABIL/Portaria 1026 de 23_12_2025.pdf",
-            "LEGISLAÇÃO CONTABIL/Portaria 107 de 11_03_2019.pdf",
-            "LEGISLAÇÃO CONTABIL/Portaria 13 de 06_02_2025.pdf",
-            "LEGISLAÇÃO CONTABIL/Portaria 251 de 16_09_2021.pdf",
-            "LEGISLAÇÃO CONTABIL/Portaria 338 de 16_07_2025.pdf",
-            "LEGISLAÇÃO CONTABIL/Portaria 344 de 23_07_2025.pdf",
-            "LEGISLAÇÃO CONTABIL/Portaria Conjunta 2 de 14_03_2023.pdf",
-            "LEGISLAÇÃO CONTABIL/Portaria Conjunta 39 de 01_09_2021.pdf"
+            "https://www.sinj.df.gov.br/sinj/Norma/73211/Lei_5005_21_12_2012.html"
           ],
-          "flags": [
-            "categoria não específica de ICMS",
-            "contém IPVA",
-            "contém ITCMD/ITCD",
-            "contém Taxas",
-            "escopo material incompatível com ICMS",
-            "fallback amplo",
-            "fallback amplo contaminado: categoria PORTARIAS contém ICMS, mas o escopo dominante é Taxas"
-          ]
+          "flags": []
+        },
+        {
+          "file": "DF_DEC_39753_2019_CREDITO_OUTORGADO_2026-04-26.txt",
+          "category": "ICMS_BENEFICIOS",
+          "chars": 11277,
+          "named_icms": true,
+          "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [
+            "ICMS"
+          ],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [
+            "https://www.sinj.df.gov.br/sinj/Norma/9c1f1eab1e634211bb33093188f6c6a4/Decreto_39753_02_04_2019.html"
+          ],
+          "flags": []
+        },
+        {
+          "file": "DF_DEC_39803_2019_EMPREGADF_2026-04-26.txt",
+          "category": "ICMS_BENEFICIOS",
+          "chars": 77087,
+          "named_icms": true,
+          "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [
+            "ICMS"
+          ],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [
+            "https://www.sinj.df.gov.br/sinj/Norma/2257f831264c4e06850f0248431427df/Decreto_39803_02_05_2019.html"
+          ],
+          "flags": []
+        },
+        {
+          "file": "DF_DEC_45287_2023_ALHO_CREDITO_OUTORGADO_2026-04-26.txt",
+          "category": "ICMS_BENEFICIOS",
+          "chars": 7512,
+          "named_icms": true,
+          "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [
+            "ICMS"
+          ],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [
+            "https://www.sinj.df.gov.br/sinj/Norma/1e727ef68cb84ce385cb0a7dc8d17a1b/Decreto_45287_15_12_2023.html"
+          ],
+          "flags": []
+        },
+        {
+          "file": "DF_DEC_18726_1997_AGRO_DIFERIMENTO_2026-04-26.txt",
+          "category": "ICMS_BENEFICIOS",
+          "chars": 8414,
+          "named_icms": true,
+          "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [
+            "ICMS"
+          ],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [
+            "https://www.sinj.df.gov.br/sinj/Norma/32661/Decreto_18726_15_10_1997.pdf"
+          ],
+          "flags": []
+        },
+        {
+          "file": "DF_DEC_39789_2019_EFD_ICMS_IPI_2026-04-26.txt",
+          "category": "INSTRUCOES_NORMATIVAS",
+          "chars": 6060,
+          "named_icms": true,
+          "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [
+            "ICMS"
+          ],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [
+            "https://www.sinj.df.gov.br/sinj/Norma/c2775e5323a848c5ac079c921d210e08/Decreto_39789_26_04_2019.html"
+          ],
+          "flags": []
+        },
+        {
+          "file": "DF_LEI_3196_2003_PRODF_II_2026-04-26.txt",
+          "category": "ICMS_BENEFICIOS",
+          "chars": 48068,
+          "named_icms": true,
+          "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [
+            "ICMS"
+          ],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [
+            "https://www.sinj.df.gov.br/sinj/Norma/51144/Lei_3196_29_09_2003.html"
+          ],
+          "flags": []
+        },
+        {
+          "file": "DF_LEI_3266_2003_PRODF_II_COMPLEMENTAR_2026-04-26.txt",
+          "category": "ICMS_BENEFICIOS",
+          "chars": 63928,
+          "named_icms": true,
+          "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [
+            "ICMS"
+          ],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [
+            "https://www.sinj.df.gov.br/sinj/Norma/51208/Lei_3266_30_12_2003.html"
+          ],
+          "flags": []
+        },
+        {
+          "file": "DF_DEC_46900_2025_PRODF_DESENVOLVEDF_2026-04-26.txt",
+          "category": "ICMS_BENEFICIOS",
+          "chars": 105207,
+          "named_icms": true,
+          "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [
+            "ICMS"
+          ],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [
+            "https://www.sinj.df.gov.br/sinj/Norma/3925adc94a154b4381fd110c140f25e9/Decreto_46900_25_02_2025.html"
+          ],
+          "flags": []
         }
       ]
     },
