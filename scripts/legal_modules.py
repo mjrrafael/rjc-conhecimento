@@ -333,6 +333,14 @@ def subunit_summary(text: str, limit: int = 108) -> str:
     return clean[:limit].rstrip() + ("..." if len(clean) > limit else "")
 
 
+SUBUNIT_PLURALS = {
+    "alinea": "alíneas",
+    "inciso": "incisos",
+    "item": "itens",
+    "paragrafo": "parágrafos",
+}
+
+
 def render_article_index(structure: dict) -> str:
     index_items = structure.get("source_index") or [
         {"kind": item["kind"], "marker": item["marker"]} for item in structure.get("subunits", [])
@@ -362,11 +370,11 @@ def render_article_index(structure: dict) -> str:
         return ""
     note = ""
     if missing:
-        note = f'<p class="article-index-note">Os atalhos aparecem apenas quando o texto do inciso ou paragrafo esta em tela. As demais remissoes internas devem ser lidas no ato integral.</p>'
+        note = f'<p class="article-index-note">Os atalhos aparecem apenas quando o texto do inciso ou parágrafo está em tela. As demais remissões internas devem ser lidas no ato integral.</p>'
     return f"""
-<nav class="article-index" aria-label="Indice interno do artigo">
-  <strong>Indice do artigo</strong>
-  <p>Use este mapa para sair do caput e chegar diretamente aos incisos, paragrafos, alineas ou itens que estruturam a regra.</p>
+<nav class="article-index" aria-label="Índice interno do artigo">
+  <strong>Índice do artigo</strong>
+  <p>Use este mapa para sair do caput e chegar diretamente aos incisos, parágrafos, alíneas ou itens que estruturam a regra.</p>
   <div class="article-index-links {'compact' if compact else ''}">{''.join(links)}</div>
   {note}
 </nav>
@@ -380,10 +388,11 @@ def render_article_guidance(structure: dict) -> str:
     counts: dict[str, int] = {}
     for item in subunits:
         counts[item["kind"]] = counts.get(item["kind"], 0) + 1
-    parts = [
-        f"{count} {SUBUNIT_LABELS.get(kind, kind).lower()}{'' if count == 1 else 's'}"
-        for kind, count in counts.items()
-    ]
+    parts = []
+    for kind, count in counts.items():
+        singular = SUBUNIT_LABELS.get(kind, kind).lower()
+        label = singular if count == 1 else SUBUNIT_PLURALS.get(kind, f"{singular}s")
+        parts.append(f"{count} {label}")
     return f"""
 <div class="article-context-note">
   <strong>Como ler este artigo</strong>
@@ -1253,11 +1262,127 @@ THEME_TO_MODULES = {
     "pis_cofins": ["pis", "cofins"],
     "irpj_csll": ["irpj", "csll"],
     "previdencia_folha": ["folha-clt"],
+    "goias": ["goias"],
+}
+
+
+SIGNAL_CHAPTER_MAP = {
+    "goias": {
+        "aliquota": ["base-aliquota-apuracao", "reducao-base"],
+        "reducao de base": ["reducao-base"],
+        "isencao": ["isencoes"],
+        "credito outorgado": ["credito-outorgado"],
+        "diferimento": ["diferimento-st"],
+        "substituicao tributaria": ["diferimento-st"],
+        "regime especial": ["beneficios-regra-maior", "credito-outorgado"],
+        "protege/fundo": ["beneficios-regra-maior", "credito-outorgado"],
+        "cBenef": ["cbenef-prova"],
+        "efd/sped": ["cbenef-prova"],
+        "nao incidencia": ["icms-regra-geral"],
+        "exportacao": ["icms-regra-geral", "beneficios-regra-maior"],
+        "suspensao": ["beneficios-regra-maior"],
+    },
+    "ipi": {
+        "aliquota": ["tipi-aliquota"],
+        "isencao": ["suspensoes-isencoes"],
+        "suspensao": ["suspensoes-isencoes"],
+        "exportacao": ["suspensoes-isencoes", "creditos-obrigacoes"],
+        "regime especial": ["suspensoes-isencoes"],
+        "credito outorgado": ["creditos-obrigacoes"],
+        "efd/sped": ["creditos-obrigacoes"],
+        "nao incidencia": ["materialidade-industrializacao"],
+    },
+    "iof": {
+        "aliquota": ["matriz-aliquotas", "atualizacoes-risco"],
+        "regime especial": ["atualizacoes-risco"],
+        "isencao": ["matriz-aliquotas"],
+        "suspensao": ["atualizacoes-risco"],
+        "exportacao": ["cambio-seguro"],
+    },
+    "pis": {
+        "aliquota": ["regra-geral", "beneficios-monofasico"],
+        "isencao": ["beneficios-monofasico"],
+        "suspensao": ["beneficios-monofasico"],
+        "monofasico": ["beneficios-monofasico"],
+        "exportacao": ["regra-geral", "nao-cumulativo-creditos"],
+        "credito outorgado": ["nao-cumulativo-creditos"],
+        "efd/sped": ["nao-cumulativo-creditos"],
+        "nao incidencia": ["regra-geral"],
+    },
+    "cofins": {
+        "aliquota": ["instituicao-receita", "beneficios-monofasico"],
+        "isencao": ["beneficios-monofasico"],
+        "suspensao": ["beneficios-monofasico"],
+        "monofasico": ["beneficios-monofasico"],
+        "exportacao": ["instituicao-receita", "nao-cumulativo-creditos"],
+        "credito outorgado": ["nao-cumulativo-creditos"],
+        "efd/sped": ["nao-cumulativo-creditos"],
+        "nao incidencia": ["instituicao-receita"],
+    },
+    "irpj": {
+        "aliquota": ["apuracao-regimes"],
+        "regime especial": ["apuracao-regimes"],
+        "isencao": ["beneficios-jcp-prova"],
+        "credito outorgado": ["beneficios-jcp-prova"],
+        "efd/sped": ["lucro-real"],
+        "suspensao": ["beneficios-jcp-prova"],
+    },
+    "csll": {
+        "aliquota": ["aliquotas-ajustes", "adicional-csll"],
+        "regime especial": ["adicional-csll"],
+        "isencao": ["compensacao-controles"],
+        "credito outorgado": ["compensacao-controles"],
+        "efd/sped": ["compensacao-controles"],
+    },
+    "folha-clt": {
+        "aliquota": ["custeio-previdenciario"],
+        "regime especial": ["esocial-obrigacoes-digitais"],
+        "efd/sped": ["esocial-obrigacoes-digitais"],
+        "isencao": ["custeio-previdenciario"],
+        "suspensao": ["beneficios-previdenciarios-prova"],
+        "protege/fundo": ["fgts-deposito-rescisao"],
+    },
 }
 
 
 def module_by_id(module_id: str) -> dict:
     return next(module for module in LEGAL_MODULES if module["id"] == module_id)
+
+
+def legal_signal_links(theme_id: str, signal_key: str, current_path: str) -> str:
+    module_ids = THEME_TO_MODULES.get(theme_id, [])
+    if not module_ids:
+        return ""
+    links = []
+    seen: set[str] = set()
+    for module_id in module_ids:
+        module = module_by_id(module_id)
+        chapter_ids = SIGNAL_CHAPTER_MAP.get(module_id, {}).get(signal_key, [])
+        chapters = [chapter for chapter in module["chapters"] if chapter["id"] in chapter_ids]
+        if not chapters:
+            words = set(re.findall(r"[a-z0-9]+", slug(signal_key)))
+            chapters = [
+                chapter for chapter in module["chapters"]
+                if words and words.intersection(set(re.findall(r"[a-z0-9]+", slug(chapter["id"] + " " + chapter["title"] + " " + chapter["summary"]))))
+            ][:2]
+        for chapter in chapters:
+            href = rel_href(current_path, module_chapter_path(module, chapter))
+            if href in seen:
+                continue
+            seen.add(href)
+            links.append(f'<a href="{escape(href)}">{escape(module["title"])}: {escape(chapter["title"])}</a>')
+    if not links:
+        links = [
+            f'<a href="{escape(rel_href(current_path, module_index_path(module_by_id(module_id))))}">'
+            f'{escape(module_by_id(module_id)["title"])}</a>'
+            for module_id in module_ids
+        ]
+    return f"""
+<div class="signal-law-links">
+  <strong>Lei em tela para estudar agora</strong>
+  <div>{''.join(links)}</div>
+</div>
+"""
 
 
 def module_index_path(module: dict) -> str:

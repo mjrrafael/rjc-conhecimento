@@ -1,0 +1,3 @@
+.codex-screenshots/
+__pycache__/
+*.py[cod]

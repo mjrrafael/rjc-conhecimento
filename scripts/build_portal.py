@@ -13,6 +13,7 @@ from legal_modules import (
     federal_legislation_card,
     goias_legislation_card,
     legal_search_entries,
+    legal_signal_links,
     legal_theme_teaser,
     legal_topic_teaser,
     topic_has_legal_module,
@@ -24,18 +25,18 @@ CATALOG = ROOT / "data" / "portal_catalog.json"
 INVENTORY = ROOT / "data" / "legal_inventory.json"
 
 SIGNAL_LABELS = {
-    "isencao": "Isencao",
-    "reducao de base": "Reducao de base",
-    "credito outorgado": "Credito outorgado/presumido",
+    "isencao": "Isenção",
+    "reducao de base": "Redução de base",
+    "credito outorgado": "Crédito outorgado/presumido",
     "diferimento": "Diferimento",
-    "substituicao tributaria": "Substituicao tributaria",
-    "aliquota": "Aliquota",
-    "nao incidencia": "Nao incidencia",
-    "suspensao": "Suspensao",
+    "substituicao tributaria": "Substituição tributária",
+    "aliquota": "Alíquota",
+    "nao incidencia": "Não incidência",
+    "suspensao": "Suspensão",
     "regime especial": "Regime especial",
     "protege/fundo": "Fundo/contrapartida",
-    "exportacao": "Exportacao",
-    "monofasico": "Monofasico",
+    "exportacao": "Exportação",
+    "monofasico": "Monofásico",
     "cBenef": "cBenef",
     "efd/sped": "EFD/SPED",
 }
@@ -344,6 +345,245 @@ def fmt_num(value: int | float | str) -> str:
         return str(value)
 
 
+PORTUGUESE_WORDS = {
+    "acessorias": "acessórias",
+    "acessorio": "acessório",
+    "adimplencia": "adimplência",
+    "alinea": "alínea",
+    "alineas": "alíneas",
+    "aliquota": "alíquota",
+    "aliquotas": "alíquotas",
+    "analise": "análise",
+    "aplicacao": "aplicação",
+    "aplicavel": "aplicável",
+    "aplicaveis": "aplicáveis",
+    "apuracao": "apuração",
+    "area": "área",
+    "areas": "áreas",
+    "ausencia": "ausência",
+    "autorizacao": "autorização",
+    "autorizacoes": "autorizações",
+    "automatico": "automático",
+    "autonomo": "autônomo",
+    "autonomos": "autônomos",
+    "beneficio": "benefício",
+    "beneficios": "benefícios",
+    "calculo": "cálculo",
+    "capitulo": "capítulo",
+    "capitulos": "capítulos",
+    "classificacao": "classificação",
+    "cobranca": "cobrança",
+    "codigo": "código",
+    "competencia": "competência",
+    "condicao": "condição",
+    "condicoes": "condições",
+    "conexao": "conexão",
+    "conclusao": "conclusão",
+    "conciliacao": "conciliação",
+    "consequencia": "consequência",
+    "consequencias": "consequências",
+    "contabil": "contábil",
+    "contabeis": "contábeis",
+    "contabilizacao": "contabilização",
+    "contribuicao": "contribuição",
+    "contribuicoes": "contribuições",
+    "conteudo": "conteúdo",
+    "convenio": "convênio",
+    "convenios": "convênios",
+    "credito": "crédito",
+    "creditos": "créditos",
+    "decisao": "decisão",
+    "declaracao": "declaração",
+    "declaracoes": "declarações",
+    "desoneracao": "desoneração",
+    "destinatario": "destinatário",
+    "destinatarios": "destinatários",
+    "descricao": "descrição",
+    "dossie": "dossiê",
+    "economica": "econômica",
+    "emissao": "emissão",
+    "equiparacao": "equiparação",
+    "escrituracao": "escrituração",
+    "especifica": "específica",
+    "especificas": "específicas",
+    "especifico": "específico",
+    "especificos": "específicos",
+    "excecao": "exceção",
+    "excecoes": "exceções",
+    "exportacao": "exportação",
+    "exigencia": "exigência",
+    "exigencias": "exigências",
+    "fiscalizacao": "fiscalização",
+    "fruicao": "fruição",
+    "generica": "genérica",
+    "genericas": "genéricas",
+    "generico": "genérico",
+    "genericos": "genéricos",
+    "goias": "Goiás",
+    "ha": "há",
+    "habilitacao": "habilitação",
+    "hipotese": "hipótese",
+    "hipoteses": "hipóteses",
+    "incidencia": "incidência",
+    "incidencias": "incidências",
+    "indice": "índice",
+    "indices": "índices",
+    "industrializacao": "industrialização",
+    "informacao": "informação",
+    "informacoes": "informações",
+    "importacao": "importação",
+    "instrucao": "instrução",
+    "isencao": "isenção",
+    "ja": "já",
+    "juridica": "jurídica",
+    "juridico": "jurídico",
+    "legislacao": "legislação",
+    "liquido": "líquido",
+    "logica": "lógica",
+    "lancamento": "lançamento",
+    "lancamentos": "lançamentos",
+    "manutencao": "manutenção",
+    "memoria": "memória",
+    "ministerio": "ministério",
+    "minimo": "mínimo",
+    "minimos": "mínimos",
+    "modulo": "módulo",
+    "modulos": "módulos",
+    "monofasico": "monofásico",
+    "movimentacao": "movimentação",
+    "mudanca": "mudança",
+    "necessaria": "necessária",
+    "necessarias": "necessárias",
+    "necessario": "necessário",
+    "necessarios": "necessários",
+    "nao": "não",
+    "obrigacao": "obrigação",
+    "obrigacoes": "obrigações",
+    "operacao": "operação",
+    "operacoes": "operações",
+    "orgao": "órgão",
+    "orgaos": "órgãos",
+    "pagina": "página",
+    "paragrafo": "parágrafo",
+    "paragrafos": "parágrafos",
+    "peca": "peça",
+    "pecas": "peças",
+    "periodo": "período",
+    "periodica": "periódica",
+    "periodicas": "periódicas",
+    "periodico": "periódico",
+    "periodicos": "periódicos",
+    "permissao": "permissão",
+    "previdencia": "previdência",
+    "previdenciaria": "previdenciária",
+    "previdenciarias": "previdenciárias",
+    "previdenciario": "previdenciário",
+    "previdenciarios": "previdenciários",
+    "producao": "produção",
+    "propria": "própria",
+    "proprio": "próprio",
+    "prova": "prova",
+    "publicacao": "publicação",
+    "publica": "pública",
+    "publicas": "públicas",
+    "publico": "público",
+    "publicos": "públicos",
+    "receita": "receita",
+    "reducao": "redução",
+    "referencia": "referência",
+    "regulamento": "regulamento",
+    "relacao": "relação",
+    "relatorio": "relatório",
+    "relatorios": "relatórios",
+    "remissao": "remissão",
+    "remissoes": "remissões",
+    "responsavel": "responsável",
+    "responsaveis": "responsáveis",
+    "restricao": "restrição",
+    "restricoes": "restrições",
+    "retencao": "retenção",
+    "retencoes": "retenções",
+    "revisao": "revisão",
+    "revogacao": "revogação",
+    "revogacoes": "revogações",
+    "saida": "saída",
+    "salario": "salário",
+    "salarios": "salários",
+    "seguranca": "segurança",
+    "sera": "será",
+    "situacao": "situação",
+    "situacoes": "situações",
+    "so": "só",
+    "tambem": "também",
+    "reune": "reúne",
+    "substituicao": "substituição",
+    "suspensao": "suspensão",
+    "tecnica": "técnica",
+    "tecnicas": "técnicas",
+    "tecnico": "técnico",
+    "tecnicos": "técnicos",
+    "transferencia": "transferência",
+    "tributacao": "tributação",
+    "tributaria": "tributária",
+    "tributario": "tributário",
+    "tributarios": "tributários",
+    "tributavel": "tributável",
+    "unico": "único",
+    "utilizacao": "utilização",
+    "validacao": "validação",
+    "vedacoes": "vedações",
+    "vigencia": "vigência",
+}
+
+
+def preserve_case(original: str, replacement: str) -> str:
+    if original.isupper():
+        return replacement.upper()
+    if original[:1].isupper():
+        return replacement[:1].upper() + replacement[1:]
+    return replacement
+
+
+PORTUGUESE_PHRASES = {
+    "a chave e a coerencia": "a chave é a coerência",
+    "folha tambem e": "folha também é",
+    "o que e": "o que é",
+    "tambem e": "também é",
+}
+
+PORTUGUESE_PHRASE_PATTERN = re.compile(
+    r"(?<!\w)("
+    + "|".join(re.escape(phrase) for phrase in sorted(PORTUGUESE_PHRASES, key=len, reverse=True))
+    + r")(?!\w)",
+    re.I,
+)
+
+PORTUGUESE_PATTERN = re.compile(
+    r"(?<!\w)("
+    + "|".join(re.escape(word) for word in sorted(PORTUGUESE_WORDS, key=len, reverse=True))
+    + r")(?!\w)",
+    re.I,
+)
+
+
+def polish_portuguese_text(text: str) -> str:
+    text = PORTUGUESE_PHRASE_PATTERN.sub(
+        lambda match: preserve_case(match.group(0), PORTUGUESE_PHRASES[match.group(0).lower()]),
+        text,
+    )
+    return PORTUGUESE_PATTERN.sub(
+        lambda match: preserve_case(match.group(0), PORTUGUESE_WORDS[match.group(0).lower()]),
+        text,
+    )
+
+
+def polish_html_text(content: str) -> str:
+    parts = re.split(r"(<[^>]+>)", content)
+    for index in range(0, len(parts), 2):
+        parts[index] = polish_portuguese_text(parts[index])
+    return "".join(parts)
+
+
 def state_href(uf: str) -> str:
     return "estados/goias.html" if uf == "GO" else f"estados/{uf.lower()}.html"
 
@@ -423,18 +663,19 @@ def signal_detail(key: str) -> dict:
 
 
 def signal_anchor(key: str) -> str:
-    return f"tema-{slug(key)}"
+    return f"capitulo-{slug(key)}"
 
 
-def signal_sections(items: list[tuple[str, int]]) -> str:
+def signal_sections(items: list[tuple[str, int]], current_path: str = "", theme_key: str = "") -> str:
     sections = []
     for key, value in items:
         detail = signal_detail(key)
+        law_links = legal_signal_links(theme_key, key, current_path) if current_path and theme_key else ""
         sections.append(f"""
 <article class="signal-study searchable-card" id="{escape(signal_anchor(key))}"
          data-search="{escape(detail['label'] + ' ' + detail['summary'] + ' ' + key)}">
   <div>
-    <span class="eyebrow">Capitulo tematico</span>
+    <span class="eyebrow">Capítulo de estudo</span>
     <h3>{escape(detail['label'])}</h3>
     <p>{escape(detail['summary'])}</p>
   </div>
@@ -442,8 +683,9 @@ def signal_sections(items: list[tuple[str, int]]) -> str:
     <dt>Como ler a lei</dt><dd>{escape(detail['law'])}</dd>
     <dt>Prova documental</dt><dd>{escape(detail['proof'])}</dd>
     <dt>Risco comum</dt><dd>{escape(detail['risk'])}</dd>
-    <dt>Ocorrencias</dt><dd>{fmt_num(value)} sinais no texto usado nesta trilha.</dd>
+    <dt>Onde aparece</dt><dd>O tema aparece {fmt_num(value)} vezes no texto usado nesta trilha. A contagem orienta a pesquisa, mas a conclusão nasce da leitura do artigo indicado.</dd>
   </dl>
+  {law_links}
 </article>
 """)
     if not sections:
@@ -451,36 +693,36 @@ def signal_sections(items: list[tuple[str, int]]) -> str:
     return f"""
 <section class="signal-study-list">
   <div class="section-heading">
-    <span class="eyebrow">Capitulos por tema</span>
-    <h2>Leia o sinal dentro de uma materia</h2>
-    <p>Cada item abaixo transforma o termo encontrado na lei em um roteiro de estudo: regra, excecao, prova, risco e continuidade.</p>
+    <span class="eyebrow">Capítulos por tema</span>
+    <h2>Do índice para a aula</h2>
+    <p>Cada item abaixo abre uma seção própria: primeiro o conceito, depois a leitura da lei, a prova documental, o risco comum e o caminho para a legislação em tela.</p>
   </div>
   {''.join(sections)}
 </section>
 """
 
 
-def signal_grid(signals: dict, title: str, intro: str) -> str:
+def signal_grid(signals: dict, title: str, intro: str, current_path: str = "", theme_key: str = "") -> str:
     items = sorted(signals.items(), key=lambda item: item[1], reverse=True)[:10]
     if not items:
-        cards = '<article class="signal-card"><strong>Sem sinais suficientes</strong><span>Nao ha sinais materiais publicados nesta pagina.</span></article>'
+        cards = '<article class="signal-card"><strong>Sem capítulos suficientes</strong><span>Não há material publicado nesta página para abrir um capítulo temático responsável.</span></article>'
     else:
         cards = "".join(
             f'<a class="signal-card" href="#{escape(signal_anchor(key))}"><strong>{escape(signal_detail(key)["label"])}</strong>'
             f'<span>{escape(signal_detail(key)["summary"])}</span>'
-            f'<small>{fmt_num(value)} ocorrencias na legislacao</small></a>'
+            f'<small>Abrir capítulo</small></a>'
             for key, value in items
         )
     return f"""
 <section class="signal-panel">
   <div class="section-heading">
-    <span class="eyebrow">Sinais de leitura</span>
+    <span class="eyebrow">Índice de estudo</span>
     <h2>{escape(title)}</h2>
     <p>{escape(intro)}</p>
   </div>
   <div class="signal-grid">{cards}</div>
 </section>
-{signal_sections(items)}
+{signal_sections(items, current_path, theme_key)}
 """
 
 
@@ -787,7 +1029,7 @@ def related_links(topic: dict) -> str:
     return f'<section class="continuity"><h2>Continuar a leitura</h2><div>{html}</div></section>'
 
 
-def state_inventory_sections(state_inv: dict, verified_on: str, compact: bool = False) -> str:
+def state_inventory_sections(state_inv: dict, verified_on: str, compact: bool = False, current_path: str = "") -> str:
     docs = state_inv.get("documents", [])
     if not docs:
         return f"""
@@ -826,8 +1068,10 @@ def state_inventory_sections(state_inv: dict, verified_on: str, compact: bool = 
 """
     signals = signal_grid(
         state_inv.get("signals", {}),
-        "Onde a lei mais aparece",
-        "O painel abaixo mostra recorrencias do texto legal publicado. Ele nao substitui leitura juridica, mas revela onde a auditoria deve concentrar energia.",
+        "Capítulos temáticos do Estado",
+        "Abra cada tema como aula: regra, exceção, documento, prova e continuidade para a legislação em tela.",
+        current_path,
+        "goias" if state_inv.get("uf") == "GO" else "",
     )
     legal = "" if compact else render_law_chapters(
         state_inv.get("legal_chapters", []),
@@ -839,7 +1083,7 @@ def state_inventory_sections(state_inv: dict, verified_on: str, compact: bool = 
     return ledger + lead + legal + signals + categories + table
 
 
-def federal_inventory_sections(data: dict, themes: list[str], verified_on: str, compact: bool = False) -> str:
+def federal_inventory_sections(data: dict, themes: list[str], verified_on: str, compact: bool = False, current_path: str = "") -> str:
     blocks = []
     for key in themes:
         theme = federal_theme(data, key)
@@ -864,7 +1108,7 @@ def federal_inventory_sections(data: dict, themes: list[str], verified_on: str, 
   <p>{escape(analysis[1])}</p>
 </section>
 {law}
-{signal_grid(theme.get('signals', {}), 'Sinais normativos do tema', 'Esses termos ajudam a localizar beneficios, restricoes, riscos e pontos de prova dentro da legislacao federal.')}
+{signal_grid(theme.get('signals', {}), 'Capítulos temáticos do tema', 'Abra cada assunto como aula: conceito, lei em tela, interpretação, prova documental e risco de aplicação.', current_path, key)}
 """)
     return "".join(blocks)
 
@@ -1038,13 +1282,13 @@ def state_page(state: dict, data: dict) -> str:
     verified_on = data["site"]["verified_on"]
     if state["uf"] == "GO":
         topic = next(t for t in data["topics"] if t["id"] == "goias-icms-beneficios")
-        extra = state_inventory_sections(inv, verified_on, compact=True)
+        extra = state_inventory_sections(inv, verified_on, compact=True, current_path="estados/goias.html")
         return topic_page(topic, "estados", extra)
     path = f'estados/{state["uf"].lower()}.html'
     if not inv.get("file_count", 0):
         body = f"""
 {hero(f'{state["name"]}: ICMS e beneficios fiscais', 'Pagina preservada para publicacao responsavel quando houver texto legal estadual suficiente para leitura publica.', state["uf"])}
-{state_inventory_sections(inv, verified_on)}
+{state_inventory_sections(inv, verified_on, current_path=path)}
 <section class="continuity">
   <h2>Continuar com seguranca</h2>
   <div>
@@ -1080,7 +1324,7 @@ def state_page(state: dict, data: dict) -> str:
     <article class="matrix-card"><h3>Risco comum</h3><p>Nao aplique beneficio por semelhanca comercial. Produto, operacao, destinatario, vigencia e condicao precisam caber no texto legal.</p></article>
   </div>
 </section>
-{state_inventory_sections(inv, verified_on)}
+{state_inventory_sections(inv, verified_on, current_path=path)}
 <section class="continuity">
   <h2>Continuar a leitura</h2>
   <div>
@@ -1153,7 +1397,7 @@ def federal_theme_page(data: dict, page: dict) -> str:
     theme = federal_theme(data, page["theme"])
     body = f"""
 {hero(page["title"], page["summary"], "Federal")}
-{federal_inventory_sections(data, [page["theme"]], data["site"]["verified_on"])}
+{federal_inventory_sections(data, [page["theme"]], data["site"]["verified_on"], current_path=page["path"])}
 {legal_theme_teaser(page["theme"], page["path"])}
 <section class="continuity">
   <h2>Continuar a leitura</h2>
@@ -1330,6 +1574,8 @@ def search_index(data: dict) -> str:
 def write(path: str, content: str) -> None:
     target = ROOT / path
     target.parent.mkdir(parents=True, exist_ok=True)
+    if path.endswith(".html"):
+        content = polish_html_text(content)
     clean = "\n".join(line.rstrip() for line in content.splitlines()) + "\n"
     target.write_text(clean, encoding="utf-8", newline="\n")
 
@@ -1361,14 +1607,14 @@ def main() -> None:
         if topic["path"] in {"estados/goias.html", "confaz/index.html", "folha-clt/index.html"}:
             continue
         if topic["path"].startswith("federal/"):
-            extra = federal_inventory_sections(data, TOPIC_THEME_MAP.get(topic["id"], []), data["site"]["verified_on"], compact=True)
+            extra = federal_inventory_sections(data, TOPIC_THEME_MAP.get(topic["id"], []), data["site"]["verified_on"], compact=True, current_path=topic["path"])
             write(topic["path"], topic_page(topic, "federal", extra))
     for page in FEDERAL_EXTRA_PAGES:
         write(page["path"], federal_theme_page(data, page))
     write("federal/acervo.html", federal_acervo_page(data))
     write("confaz/index.html", topic_page(next(t for t in data["topics"] if t["id"] == "confaz-atos-beneficios"), "confaz"))
     folha_topic = next(t for t in data["topics"] if t["id"] == "folha-clt-previdencia")
-    folha_extra = federal_inventory_sections(data, TOPIC_THEME_MAP.get(folha_topic["id"], []), data["site"]["verified_on"], compact=True)
+    folha_extra = federal_inventory_sections(data, TOPIC_THEME_MAP.get(folha_topic["id"], []), data["site"]["verified_on"], compact=True, current_path="folha-clt/index.html")
     write("folha-clt/index.html", topic_page(folha_topic, "folha", folha_extra))
     write("biblioteca/index.html", biblioteca(data))
     for legal_path, legal_content in build_legal_pages(layout).items():

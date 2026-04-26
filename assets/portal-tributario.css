@@ -586,6 +586,38 @@ a.state-card:hover {
   color: var(--ink);
 }
 
+.signal-law-links {
+  grid-column: 1 / -1;
+  display: grid;
+  gap: 10px;
+  padding-top: 14px;
+  border-top: 1px solid var(--line);
+}
+
+.signal-law-links strong {
+  color: var(--navy);
+}
+
+.signal-law-links div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.signal-law-links a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 34px;
+  padding: 7px 10px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  color: var(--navy);
+  background: var(--soft-blue);
+  font-size: 0.84rem;
+  font-weight: 800;
+  text-decoration: none;
+}
+
 .topic-index-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -1328,12 +1360,13 @@ a.state-card:hover {
   }
 
   .hero-panel h1 {
-    font-size: 2rem;
+    font-size: 1.7rem;
+    line-height: 1.12;
     overflow-wrap: anywhere;
   }
 
   .hero-proof {
-    width: calc(100vw - 82px);
+    width: 100%;
     max-width: 100%;
   }
 
