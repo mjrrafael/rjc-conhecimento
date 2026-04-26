@@ -2188,6 +2188,1054 @@
       ]
     },
     {
+      "source_id": "state-ms-ms-lei-1810-1997-icms",
+      "jurisdiction": "MS",
+      "title": "Lei n? 1.810/1997 - C?digo Tribut?rio Estadual de MS: ICMS",
+      "short": "Lei material do ICMS",
+      "official_url": "https://aacpdappls.net.ms.gov.br/appls/legislacao/secoge/govato.nsf/448b683bce4ca84704256c0b00651e9d/037448c46af3acaf04256d410048094b?OpenDocument=",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "data/fontes-estaduais-curadas/centro-oeste/MS/MS_LEI_1810_1997_ICMS_2026-04-26.txt"
+        ],
+        "sha256": {
+          "MS_LEI_1810_1997_ICMS_2026-04-26.txt": "cfca14337f08bd23b9fe63bf5c826c136cac8ca68c5765c7c0c55ff2e6580492"
+        },
+        "fetch_url": "https://aacpdappls.net.ms.gov.br/appls/legislacao/secoge/govato.nsf/448b683bce4ca84704256c0b00651e9d/037448c46af3acaf04256d410048094b?OpenDocument="
+      },
+      "note": "Texto estadual de ICMS publicado em estados/ms/legislacao/fontes/ms-lei-1810-1997-icms.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-ms",
+          "module_title": "Mato Grosso do Sul: ICMS e benefícios fiscais em tela",
+          "chapters": [
+            "icms-regra-matriz",
+            "base-aliquota-apuracao",
+            "beneficios-matriz-lc160",
+            "isencoes-reducoes-creditos",
+            "st-antecipacao-segmentos",
+            "fiscalizacao-pagamento-restauracao"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-ms-ms-lc-93-2001-ms-empreendedor",
+      "jurisdiction": "MS",
+      "title": "Lei Complementar n? 93/2001 - MS-Empreendedor, incentivos e benef?cios de ICMS",
+      "short": "Benef?cios fiscais de ICMS",
+      "official_url": "https://aacpdappls.net.ms.gov.br/appls/legislacao/serc/legato.nsf/23b657614c182061042579c80053770d/8c374a7005c9643104256da9006e87c4",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "data/fontes-estaduais-curadas/centro-oeste/MS/MS_LC_93_2001_MS_EMPREENDEDOR_2026-04-26.txt"
+        ],
+        "sha256": {
+          "MS_LC_93_2001_MS_EMPREENDEDOR_2026-04-26.txt": "d5d83be7af98bfccacd806799068f57aa4a6c57799d7922a23e601ead8b61a42"
+        },
+        "fetch_url": "https://aacpdappls.net.ms.gov.br/appls/legislacao/serc/legato.nsf/23b657614c182061042579c80053770d/8c374a7005c9643104256da9006e87c4"
+      },
+      "note": "Texto estadual de ICMS publicado em estados/ms/legislacao/fontes/ms-lc-93-2001-ms-empreendedor.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-ms",
+          "module_title": "Mato Grosso do Sul: ICMS e benefícios fiscais em tela",
+          "chapters": [
+            "beneficios-matriz-lc160",
+            "ms-empreendedor-regimes",
+            "mapa-revisado-beneficios"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-ms-ms-lei-1963-1999-fundersul",
+      "jurisdiction": "MS",
+      "title": "Lei n? 1.963/1999 - FUNDERSUL, diferimento agropecu?rio e cr?dito presumido",
+      "short": "Benef?cios fiscais de ICMS",
+      "official_url": "https://aacpdappls.net.ms.gov.br/appls/legislacao/serc/legato.nsf/23b657614c182061042579c80053770d/0fabf2cd6f2fefed04256ae7004d34c5",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "data/fontes-estaduais-curadas/centro-oeste/MS/MS_LEI_1963_1999_FUNDERSUL_2026-04-26.txt"
+        ],
+        "sha256": {
+          "MS_LEI_1963_1999_FUNDERSUL_2026-04-26.txt": "d7a86f3a7143e10c32123d28cde7d605f7c5a3b11cf87790deaf1a195099b2d1"
+        },
+        "fetch_url": "https://aacpdappls.net.ms.gov.br/appls/legislacao/serc/legato.nsf/23b657614c182061042579c80053770d/0fabf2cd6f2fefed04256ae7004d34c5"
+      },
+      "note": "Texto estadual de ICMS publicado em estados/ms/legislacao/fontes/ms-lei-1963-1999-fundersul.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-ms",
+          "module_title": "Mato Grosso do Sul: ICMS e benefícios fiscais em tela",
+          "chapters": [
+            "agro-fundersul-diferimento",
+            "mapa-revisado-beneficios"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-ms-ms-dec-9203-1998-ricms-geral",
+      "jurisdiction": "MS",
+      "title": "Decreto n? 9.203/1998 - Regulamento do ICMS/MS, parte geral",
+      "short": "Regulamento do ICMS",
+      "official_url": "https://aacpdappls.net.ms.gov.br/appls/legislacao/serc/legato.nsf/7a2675fdf26e910204256b1f005348a7/d3cc39d3a6aeeda803256cc20066f1fb",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "data/fontes-estaduais-curadas/centro-oeste/MS/MS_DEC_9203_1998_RICMS_GERAL_2026-04-26.txt"
+        ],
+        "sha256": {
+          "MS_DEC_9203_1998_RICMS_GERAL_2026-04-26.txt": "6ea8fd6b23402788db94435b5d8541cb2046f6848d343ab4f921a26f99f38b5c"
+        },
+        "fetch_url": "https://aacpdappls.net.ms.gov.br/appls/legislacao/serc/legato.nsf/7a2675fdf26e910204256b1f005348a7/d3cc39d3a6aeeda803256cc20066f1fb"
+      },
+      "note": "Texto estadual de ICMS publicado em estados/ms/legislacao/fontes/ms-dec-9203-1998-ricms-geral.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-ms",
+          "module_title": "Mato Grosso do Sul: ICMS e benefícios fiscais em tela",
+          "chapters": [
+            "icms-regra-matriz",
+            "base-aliquota-apuracao"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-ms-ms-ricms-anexo-023-importados-aliquota-4",
+      "jurisdiction": "MS",
+      "title": "RICMS/MS - Anexo XXIII - Al?quota de 4% em importados",
+      "short": "Base de c?lculo, al?quotas e transporte",
+      "official_url": "https://www.sefazms.com.br/legislacao",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "data/fontes-estaduais-curadas/centro-oeste/MS/MS_RICMS_ANEXO_023_IMPORTADOS_ALIQUOTA_4_2026-04-26.txt"
+        ],
+        "sha256": {
+          "MS_RICMS_ANEXO_023_IMPORTADOS_ALIQUOTA_4_2026-04-26.txt": "92c8fb5b2689ef00af23aa22354985a27e867bdb1d8661c031f65a49f0f8677b"
+        },
+        "fetch_url": "https://www.sefazms.com.br/legislacao"
+      },
+      "note": "Texto estadual de ICMS publicado em estados/ms/legislacao/fontes/ms-ricms-anexo-023-importados-aliquota-4.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-ms",
+          "module_title": "Mato Grosso do Sul: ICMS e benefícios fiscais em tela",
+          "chapters": [
+            "base-aliquota-apuracao"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-ms-ms-ricms-anexo-001-beneficios",
+      "jurisdiction": "MS",
+      "title": "RICMS/MS - Anexo I - Dos Benef?cios Fiscais",
+      "short": "Benef?cios fiscais de ICMS",
+      "official_url": "https://www.sefazms.com.br/legislacao",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "data/fontes-estaduais-curadas/centro-oeste/MS/MS_RICMS_ANEXO_001_BENEFICIOS_2026-04-26.txt"
+        ],
+        "sha256": {
+          "MS_RICMS_ANEXO_001_BENEFICIOS_2026-04-26.txt": "eb9698dc126c4d7af8f78d4b42d324cbef2f21eafb3247988e3b28d300a1468b"
+        },
+        "fetch_url": "https://www.sefazms.com.br/legislacao"
+      },
+      "note": "Texto estadual de ICMS publicado em estados/ms/legislacao/fontes/ms-ricms-anexo-001-beneficios.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-ms",
+          "module_title": "Mato Grosso do Sul: ICMS e benefícios fiscais em tela",
+          "chapters": [
+            "beneficios-matriz-lc160",
+            "isencoes-reducoes-creditos",
+            "mapa-revisado-beneficios"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-ms-ms-ricms-anexo-002-diferimento",
+      "jurisdiction": "MS",
+      "title": "RICMS/MS - Anexo II - Diferimento do lan?amento e do pagamento",
+      "short": "Benef?cios fiscais de ICMS",
+      "official_url": "https://www.sefazms.com.br/legislacao",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "data/fontes-estaduais-curadas/centro-oeste/MS/MS_RICMS_ANEXO_002_DIFERIMENTO_2026-04-26.txt"
+        ],
+        "sha256": {
+          "MS_RICMS_ANEXO_002_DIFERIMENTO_2026-04-26.txt": "3aadacc5061f792a97fac00463d4d16909123bf1e78867048188b260d31ebf1a"
+        },
+        "fetch_url": "https://www.sefazms.com.br/legislacao"
+      },
+      "note": "Texto estadual de ICMS publicado em estados/ms/legislacao/fontes/ms-ricms-anexo-002-diferimento.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-ms",
+          "module_title": "Mato Grosso do Sul: ICMS e benefícios fiscais em tela",
+          "chapters": [
+            "agro-fundersul-diferimento",
+            "mapa-revisado-beneficios"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-ms-ms-ricms-anexo-003-st",
+      "jurisdiction": "MS",
+      "title": "RICMS/MS - Anexo III - Substitui??o Tribut?ria",
+      "short": "Substitui??o tribut?ria e antecipa??o",
+      "official_url": "https://www.sefazms.com.br/legislacao",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "data/fontes-estaduais-curadas/centro-oeste/MS/MS_RICMS_ANEXO_003_ST_2026-04-26.txt"
+        ],
+        "sha256": {
+          "MS_RICMS_ANEXO_003_ST_2026-04-26.txt": "de6ea0856dbf60d0cfa3cea8c6de1bc4b8c5e253a533f1733f56e3051a6e98ef"
+        },
+        "fetch_url": "https://www.sefazms.com.br/legislacao"
+      },
+      "note": "Texto estadual de ICMS publicado em estados/ms/legislacao/fontes/ms-ricms-anexo-003-st.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-ms",
+          "module_title": "Mato Grosso do Sul: ICMS e benefícios fiscais em tela",
+          "chapters": [
+            "st-antecipacao-segmentos"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-ms-ms-ricms-anexo-004-cadastro",
+      "jurisdiction": "MS",
+      "title": "RICMS/MS - Anexo IV - Cadastro Fiscal",
+      "short": "Obriga??es acess?rias e cadastro",
+      "official_url": "https://www.sefazms.com.br/legislacao",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "data/fontes-estaduais-curadas/centro-oeste/MS/MS_RICMS_ANEXO_004_CADASTRO_2026-04-26.txt"
+        ],
+        "sha256": {
+          "MS_RICMS_ANEXO_004_CADASTRO_2026-04-26.txt": "ed651f949e3edcc21683aef1ffaa1ab45e2b30bb2f4dc4b0ec70acb45805eccd"
+        },
+        "fetch_url": "https://www.sefazms.com.br/legislacao"
+      },
+      "note": "Texto estadual de ICMS publicado em estados/ms/legislacao/fontes/ms-ricms-anexo-004-cadastro.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-ms",
+          "module_title": "Mato Grosso do Sul: ICMS e benefícios fiscais em tela",
+          "chapters": [
+            "documentos-efd-prova"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-ms-ms-ricms-anexo-005-regimes-especiais",
+      "jurisdiction": "MS",
+      "title": "RICMS/MS - Anexo V - Regimes especiais e autoriza??es espec?ficas",
+      "short": "Benef?cios fiscais de ICMS",
+      "official_url": "https://www.sefazms.com.br/legislacao",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "data/fontes-estaduais-curadas/centro-oeste/MS/MS_RICMS_ANEXO_005_REGIMES_ESPECIAIS_2026-04-26.txt"
+        ],
+        "sha256": {
+          "MS_RICMS_ANEXO_005_REGIMES_ESPECIAIS_2026-04-26.txt": "80eec77946fb579094339bbaca9a93b7159d67fe494084a94a4e4a89180f9998"
+        },
+        "fetch_url": "https://www.sefazms.com.br/legislacao"
+      },
+      "note": "Texto estadual de ICMS publicado em estados/ms/legislacao/fontes/ms-ricms-anexo-005-regimes-especiais.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-ms",
+          "module_title": "Mato Grosso do Sul: ICMS e benefícios fiscais em tela",
+          "chapters": [
+            "beneficios-matriz-lc160",
+            "ms-empreendedor-regimes",
+            "mapa-revisado-beneficios"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-ms-ms-ricms-anexo-006-creditos-presumidos-produtor",
+      "jurisdiction": "MS",
+      "title": "RICMS/MS - Anexo VI - Cr?ditos fixos ou presumidos e produtor rural",
+      "short": "Benef?cios fiscais de ICMS",
+      "official_url": "https://www.sefazms.com.br/legislacao",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "data/fontes-estaduais-curadas/centro-oeste/MS/MS_RICMS_ANEXO_006_CREDITOS_PRESUMIDOS_PRODUTOR_2026-04-26.txt"
+        ],
+        "sha256": {
+          "MS_RICMS_ANEXO_006_CREDITOS_PRESUMIDOS_PRODUTOR_2026-04-26.txt": "e67c88ca1b823de2265f56994db8980974fafff3e359c375c721ff2572544b6d"
+        },
+        "fetch_url": "https://www.sefazms.com.br/legislacao"
+      },
+      "note": "Texto estadual de ICMS publicado em estados/ms/legislacao/fontes/ms-ricms-anexo-006-creditos-presumidos-produtor.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-ms",
+          "module_title": "Mato Grosso do Sul: ICMS e benefícios fiscais em tela",
+          "chapters": [
+            "isencoes-reducoes-creditos",
+            "agro-fundersul-diferimento",
+            "mapa-revisado-beneficios"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-ms-ms-ricms-anexo-007-estimativa",
+      "jurisdiction": "MS",
+      "title": "RICMS/MS - Anexo VII - Regime de estimativa",
+      "short": "Apura??o e pagamento",
+      "official_url": "https://www.sefazms.com.br/legislacao",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "data/fontes-estaduais-curadas/centro-oeste/MS/MS_RICMS_ANEXO_007_ESTIMATIVA_2026-04-26.txt"
+        ],
+        "sha256": {
+          "MS_RICMS_ANEXO_007_ESTIMATIVA_2026-04-26.txt": "3d57b2f16b67f243ae695d7aebcf70794fd0bfe58694ce1fb2f8dcb292794669"
+        },
+        "fetch_url": "https://www.sefazms.com.br/legislacao"
+      },
+      "note": "Texto estadual de ICMS publicado em estados/ms/legislacao/fontes/ms-ricms-anexo-007-estimativa.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-ms",
+          "module_title": "Mato Grosso do Sul: ICMS e benefícios fiscais em tela",
+          "chapters": []
+        }
+      ]
+    },
+    {
+      "source_id": "state-ms-ms-ricms-anexo-008-pagamento",
+      "jurisdiction": "MS",
+      "title": "RICMS/MS - Anexo VIII - Prazos para obriga??es tribut?rias",
+      "short": "Apura??o e pagamento",
+      "official_url": "https://www.sefazms.com.br/legislacao",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "data/fontes-estaduais-curadas/centro-oeste/MS/MS_RICMS_ANEXO_008_PAGAMENTO_2026-04-26.txt"
+        ],
+        "sha256": {
+          "MS_RICMS_ANEXO_008_PAGAMENTO_2026-04-26.txt": "880f6f32a6078cdbb177f29be61b194dc96467f6eeda2acaead4a41da50af48e"
+        },
+        "fetch_url": "https://www.sefazms.com.br/legislacao"
+      },
+      "note": "Texto estadual de ICMS publicado em estados/ms/legislacao/fontes/ms-ricms-anexo-008-pagamento.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-ms",
+          "module_title": "Mato Grosso do Sul: ICMS e benefícios fiscais em tela",
+          "chapters": []
+        }
+      ]
+    },
+    {
+      "source_id": "state-ms-ms-ricms-anexo-009-parcelamento",
+      "jurisdiction": "MS",
+      "title": "RICMS/MS - Anexo IX - Parcelamento de d?bitos fiscais",
+      "short": "Fiscaliza??o, pagamento e parcelamento",
+      "official_url": "https://www.sefazms.com.br/legislacao",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "data/fontes-estaduais-curadas/centro-oeste/MS/MS_RICMS_ANEXO_009_PARCELAMENTO_2026-04-26.txt"
+        ],
+        "sha256": {
+          "MS_RICMS_ANEXO_009_PARCELAMENTO_2026-04-26.txt": "2cfe0e5eadd3a6ae97c07091d38c84148b9896c97c87d635542ce99c0f0922d3"
+        },
+        "fetch_url": "https://www.sefazms.com.br/legislacao"
+      },
+      "note": "Texto estadual de ICMS publicado em estados/ms/legislacao/fontes/ms-ricms-anexo-009-parcelamento.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-ms",
+          "module_title": "Mato Grosso do Sul: ICMS e benefícios fiscais em tela",
+          "chapters": [
+            "fiscalizacao-pagamento-restauracao"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-ms-ms-ricms-anexo-010-atualizacao-monetaria",
+      "jurisdiction": "MS",
+      "title": "RICMS/MS - Anexo X - Atualiza??o monet?ria e acr?scimos",
+      "short": "Fiscaliza??o, pagamento e parcelamento",
+      "official_url": "https://www.sefazms.com.br/legislacao",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "data/fontes-estaduais-curadas/centro-oeste/MS/MS_RICMS_ANEXO_010_ATUALIZACAO_MONETARIA_2026-04-26.txt"
+        ],
+        "sha256": {
+          "MS_RICMS_ANEXO_010_ATUALIZACAO_MONETARIA_2026-04-26.txt": "7f0e3491f7d25ba86f243822b2a43d8091bd52ae78f09e1eb22618ffcaf033e2"
+        },
+        "fetch_url": "https://www.sefazms.com.br/legislacao"
+      },
+      "note": "Texto estadual de ICMS publicado em estados/ms/legislacao/fontes/ms-ricms-anexo-010-atualizacao-monetaria.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-ms",
+          "module_title": "Mato Grosso do Sul: ICMS e benefícios fiscais em tela",
+          "chapters": []
+        }
+      ]
+    },
+    {
+      "source_id": "state-ms-ms-ricms-anexo-011-auto-infracao",
+      "jurisdiction": "MS",
+      "title": "RICMS/MS - Anexo XI - Exig?ncia de of?cio do cr?dito tribut?rio",
+      "short": "Fiscaliza??o e penalidades",
+      "official_url": "https://www.sefazms.com.br/legislacao",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "data/fontes-estaduais-curadas/centro-oeste/MS/MS_RICMS_ANEXO_011_AUTO_INFRACAO_2026-04-26.txt"
+        ],
+        "sha256": {
+          "MS_RICMS_ANEXO_011_AUTO_INFRACAO_2026-04-26.txt": "e0e0863571ff6c6d62c0790a4d4a036671ff8926e0e664d4a13f505f9cc264ce"
+        },
+        "fetch_url": "https://www.sefazms.com.br/legislacao"
+      },
+      "note": "Texto estadual de ICMS publicado em estados/ms/legislacao/fontes/ms-ricms-anexo-011-auto-infracao.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-ms",
+          "module_title": "Mato Grosso do Sul: ICMS e benefícios fiscais em tela",
+          "chapters": [
+            "fiscalizacao-pagamento-restauracao"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-ms-ms-ricms-anexo-012-fiscalizacao-transito",
+      "jurisdiction": "MS",
+      "title": "RICMS/MS - Anexo XII - Fiscaliza??o e apreens?o em tr?nsito",
+      "short": "Fiscaliza??o e penalidades",
+      "official_url": "https://www.sefazms.com.br/legislacao",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "data/fontes-estaduais-curadas/centro-oeste/MS/MS_RICMS_ANEXO_012_FISCALIZACAO_TRANSITO_2026-04-26.txt"
+        ],
+        "sha256": {
+          "MS_RICMS_ANEXO_012_FISCALIZACAO_TRANSITO_2026-04-26.txt": "aaa9d9a07d4c2d2e2069ff4c663a8f13a51116bc2c877533e9c09a189f9669ac"
+        },
+        "fetch_url": "https://www.sefazms.com.br/legislacao"
+      },
+      "note": "Texto estadual de ICMS publicado em estados/ms/legislacao/fontes/ms-ricms-anexo-012-fiscalizacao-transito.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-ms",
+          "module_title": "Mato Grosso do Sul: ICMS e benefícios fiscais em tela",
+          "chapters": [
+            "fiscalizacao-pagamento-restauracao"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-ms-ms-ricms-anexo-013-divida-ativa",
+      "jurisdiction": "MS",
+      "title": "RICMS/MS - Anexo XIII - Inscri??o em d?vida ativa",
+      "short": "Fiscaliza??o, pagamento e parcelamento",
+      "official_url": "https://www.sefazms.com.br/legislacao",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "data/fontes-estaduais-curadas/centro-oeste/MS/MS_RICMS_ANEXO_013_DIVIDA_ATIVA_2026-04-26.txt"
+        ],
+        "sha256": {
+          "MS_RICMS_ANEXO_013_DIVIDA_ATIVA_2026-04-26.txt": "19d802cd4e6187cd9831c8b746d06545cb639019111d98add995479deedc3cb2"
+        },
+        "fetch_url": "https://www.sefazms.com.br/legislacao"
+      },
+      "note": "Texto estadual de ICMS publicado em estados/ms/legislacao/fontes/ms-ricms-anexo-013-divida-ativa.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-ms",
+          "module_title": "Mato Grosso do Sul: ICMS e benefícios fiscais em tela",
+          "chapters": [
+            "fiscalizacao-pagamento-restauracao"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-ms-ms-ricms-anexo-014-creditos-publicos",
+      "jurisdiction": "MS",
+      "title": "RICMS/MS - Anexo XIV - Controle dos cr?ditos p?blicos",
+      "short": "Fiscaliza??o, pagamento e parcelamento",
+      "official_url": "https://www.sefazms.com.br/legislacao",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "data/fontes-estaduais-curadas/centro-oeste/MS/MS_RICMS_ANEXO_014_CREDITOS_PUBLICOS_2026-04-26.txt"
+        ],
+        "sha256": {
+          "MS_RICMS_ANEXO_014_CREDITOS_PUBLICOS_2026-04-26.txt": "4c34664c158c39a664c5c5d390730eb91c9968506e3ef8614dd0617b7886fe45"
+        },
+        "fetch_url": "https://www.sefazms.com.br/legislacao"
+      },
+      "note": "Texto estadual de ICMS publicado em estados/ms/legislacao/fontes/ms-ricms-anexo-014-creditos-publicos.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-ms",
+          "module_title": "Mato Grosso do Sul: ICMS e benefícios fiscais em tela",
+          "chapters": []
+        }
+      ]
+    },
+    {
+      "source_id": "state-ms-ms-ricms-anexo-015-documentos-fiscais",
+      "jurisdiction": "MS",
+      "title": "RICMS/MS - Anexo XV - Obriga??es acess?rias, livros e documentos fiscais",
+      "short": "Obriga??es acess?rias e documentos",
+      "official_url": "https://www.sefazms.com.br/legislacao",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "data/fontes-estaduais-curadas/centro-oeste/MS/MS_RICMS_ANEXO_015_DOCUMENTOS_FISCAIS_2026-04-26.txt"
+        ],
+        "sha256": {
+          "MS_RICMS_ANEXO_015_DOCUMENTOS_FISCAIS_2026-04-26.txt": "f82b3372f988349bde28cd0a11568a4c5a5af7c76ff647280ee093c806a4ad61"
+        },
+        "fetch_url": "https://www.sefazms.com.br/legislacao"
+      },
+      "note": "Texto estadual de ICMS publicado em estados/ms/legislacao/fontes/ms-ricms-anexo-015-documentos-fiscais.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-ms",
+          "module_title": "Mato Grosso do Sul: ICMS e benefícios fiscais em tela",
+          "chapters": [
+            "documentos-efd-prova",
+            "mapa-revisado-beneficios"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-ms-ms-ricms-anexo-018-automacao-comercial",
+      "jurisdiction": "MS",
+      "title": "RICMS/MS - Anexo XVIII - Automa??o comercial para fins fiscais",
+      "short": "Obriga??es acess?rias e documentos",
+      "official_url": "https://www.sefazms.com.br/legislacao",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "data/fontes-estaduais-curadas/centro-oeste/MS/MS_RICMS_ANEXO_018_AUTOMACAO_COMERCIAL_2026-04-26.txt"
+        ],
+        "sha256": {
+          "MS_RICMS_ANEXO_018_AUTOMACAO_COMERCIAL_2026-04-26.txt": "2b996c670b66f731c108c8a95e94e53414a3e9af44396fc0de4dbdd8ffe6512e"
+        },
+        "fetch_url": "https://www.sefazms.com.br/legislacao"
+      },
+      "note": "Texto estadual de ICMS publicado em estados/ms/legislacao/fontes/ms-ricms-anexo-018-automacao-comercial.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-ms",
+          "module_title": "Mato Grosso do Sul: ICMS e benefícios fiscais em tela",
+          "chapters": [
+            "documentos-efd-prova"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-ms-ms-ricms-anexo-021-tabela-transporte",
+      "jurisdiction": "MS",
+      "title": "RICMS/MS - Anexo XXI - Tabela de c?lculo para ICMS transporte",
+      "short": "Base de c?lculo, al?quotas e transporte",
+      "official_url": "https://www.sefazms.com.br/legislacao",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "data/fontes-estaduais-curadas/centro-oeste/MS/MS_RICMS_ANEXO_021_TABELA_TRANSPORTE_2026-04-26.txt"
+        ],
+        "sha256": {
+          "MS_RICMS_ANEXO_021_TABELA_TRANSPORTE_2026-04-26.txt": "c46452a2362fb5e21dbb83a71feb685b9295fbd127c2e8ad4e5f9404eaff04c9"
+        },
+        "fetch_url": "https://www.sefazms.com.br/legislacao"
+      },
+      "note": "Texto estadual de ICMS publicado em estados/ms/legislacao/fontes/ms-ricms-anexo-021-tabela-transporte.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-ms",
+          "module_title": "Mato Grosso do Sul: ICMS e benefícios fiscais em tela",
+          "chapters": [
+            "st-antecipacao-segmentos"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-ms-ms-ricms-anexo-024-consumidor-final",
+      "jurisdiction": "MS",
+      "title": "RICMS/MS - Anexo XXIV - Consumidor final n?o contribuinte",
+      "short": "Base de c?lculo, al?quotas e transporte",
+      "official_url": "https://www.sefazms.com.br/legislacao",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "data/fontes-estaduais-curadas/centro-oeste/MS/MS_RICMS_ANEXO_024_CONSUMIDOR_FINAL_2026-04-26.txt"
+        ],
+        "sha256": {
+          "MS_RICMS_ANEXO_024_CONSUMIDOR_FINAL_2026-04-26.txt": "4f38a4417f4ba4fadc649cfedc8642ffc3dec64890ebc51658abac0b9f1b1c9d"
+        },
+        "fetch_url": "https://www.sefazms.com.br/legislacao"
+      },
+      "note": "Texto estadual de ICMS publicado em estados/ms/legislacao/fontes/ms-ricms-anexo-024-consumidor-final.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-ms",
+          "module_title": "Mato Grosso do Sul: ICMS e benefícios fiscais em tela",
+          "chapters": [
+            "base-aliquota-apuracao"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-ms-ms-ricms-anexo-025-transferencias",
+      "jurisdiction": "MS",
+      "title": "RICMS/MS - Anexo XXV - Transfer?ncias de mercadorias",
+      "short": "Regulamento do ICMS",
+      "official_url": "https://www.sefazms.com.br/legislacao",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "data/fontes-estaduais-curadas/centro-oeste/MS/MS_RICMS_ANEXO_025_TRANSFERENCIAS_2026-04-26.txt"
+        ],
+        "sha256": {
+          "MS_RICMS_ANEXO_025_TRANSFERENCIAS_2026-04-26.txt": "78a390b5ae815d4e3ec9b293c14c2396052c686a19c7c1fba2fe2746611dc130"
+        },
+        "fetch_url": "https://www.sefazms.com.br/legislacao"
+      },
+      "note": "Texto estadual de ICMS publicado em estados/ms/legislacao/fontes/ms-ricms-anexo-025-transferencias.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-ms",
+          "module_title": "Mato Grosso do Sul: ICMS e benefícios fiscais em tela",
+          "chapters": []
+        }
+      ]
+    },
+    {
+      "source_id": "state-ms-ms-dec-9203-1998-aprovacao-ricms",
+      "jurisdiction": "MS",
+      "title": "Decreto n? 9.203/1998 - ato de aprova??o do RICMS/MS",
+      "short": "Regulamento do ICMS",
+      "official_url": "https://aacpdappls.net.ms.gov.br/appls/legislacao/secoge/govato.nsf/fd8600de8a55c7fc04256b210079ce25/9c9e3a59ea627ab40425715300728e6a",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "data/fontes-estaduais-curadas/centro-oeste/MS/MS_DEC_9203_1998_APROVACAO_RICMS_2026-04-26.txt"
+        ],
+        "sha256": {
+          "MS_DEC_9203_1998_APROVACAO_RICMS_2026-04-26.txt": "1a650d96ab67524e31927cfbc97f4a1750196b0d96432406763277e537fe0599"
+        },
+        "fetch_url": "https://aacpdappls.net.ms.gov.br/appls/legislacao/secoge/govato.nsf/fd8600de8a55c7fc04256b210079ce25/9c9e3a59ea627ab40425715300728e6a"
+      },
+      "note": "Texto estadual de ICMS publicado em estados/ms/legislacao/fontes/ms-dec-9203-1998-aprovacao-ricms.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-ms",
+          "module_title": "Mato Grosso do Sul: ICMS e benefícios fiscais em tela",
+          "chapters": []
+        }
+      ]
+    },
+    {
+      "source_id": "state-ms-ms-dec-14644-2016-cadastro-fiscal",
+      "jurisdiction": "MS",
+      "title": "Decreto n? 14.644/2016 - Cadastro Fiscal no RICMS/MS",
+      "short": "Obriga??es acess?rias e cadastro",
+      "official_url": "https://www.sefazms.com.br/legislacao",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "data/fontes-estaduais-curadas/centro-oeste/MS/MS_DEC_14644_2016_CADASTRO_FISCAL_2026-04-26.txt"
+        ],
+        "sha256": {
+          "MS_DEC_14644_2016_CADASTRO_FISCAL_2026-04-26.txt": "9d53eff2c8671f58019bd08830d448d885e242afa51ac4e9adf8a241f956740e"
+        },
+        "fetch_url": "https://www.sefazms.com.br/legislacao"
+      },
+      "note": "Texto estadual de ICMS publicado em estados/ms/legislacao/fontes/ms-dec-14644-2016-cadastro-fiscal.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-ms",
+          "module_title": "Mato Grosso do Sul: ICMS e benefícios fiscais em tela",
+          "chapters": [
+            "documentos-efd-prova"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-ms-ms-dec-16721-2025-refis-prorrogacao",
+      "jurisdiction": "MS",
+      "title": "Decreto n? 16.721/2025 - Prorroga??o do REFIS/ICMS 2025",
+      "short": "Fiscaliza??o, pagamento e parcelamento",
+      "official_url": "https://www.sefazms.com.br/legislacao",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "data/fontes-estaduais-curadas/centro-oeste/MS/MS_DEC_16721_2025_REFIS_PRORROGACAO_2026-04-26.txt"
+        ],
+        "sha256": {
+          "MS_DEC_16721_2025_REFIS_PRORROGACAO_2026-04-26.txt": "1a890f602b0129b0eeea3810d80c2beeeeff9f760f89f51b51b938281e70feac"
+        },
+        "fetch_url": "https://www.sefazms.com.br/legislacao"
+      },
+      "note": "Texto estadual de ICMS publicado em estados/ms/legislacao/fontes/ms-dec-16721-2025-refis-prorrogacao.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-ms",
+          "module_title": "Mato Grosso do Sul: ICMS e benefícios fiscais em tela",
+          "chapters": [
+            "fiscalizacao-pagamento-restauracao"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-ms-ms-dec-16722-2025-icms",
+      "jurisdiction": "MS",
+      "title": "Decreto n? 16.722/2025 - altera??es de ICMS/MS",
+      "short": "Regulamento do ICMS",
+      "official_url": "https://www.sefazms.com.br/legislacao",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "data/fontes-estaduais-curadas/centro-oeste/MS/MS_DEC_16722_2025_ICMS_2026-04-26.txt"
+        ],
+        "sha256": {
+          "MS_DEC_16722_2025_ICMS_2026-04-26.txt": "7c88f3f1c4e9096a9e5e19e99f0f072917b09ea07597a0b6906055e7fc326954"
+        },
+        "fetch_url": "https://www.sefazms.com.br/legislacao"
+      },
+      "note": "Texto estadual de ICMS publicado em estados/ms/legislacao/fontes/ms-dec-16722-2025-icms.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-ms",
+          "module_title": "Mato Grosso do Sul: ICMS e benefícios fiscais em tela",
+          "chapters": []
+        }
+      ]
+    },
+    {
+      "source_id": "state-ms-ms-dec-16724-2025-icms",
+      "jurisdiction": "MS",
+      "title": "Decreto n? 16.724/2025 - altera??es de ICMS/MS",
+      "short": "Regulamento do ICMS",
+      "official_url": "https://www.sefazms.com.br/legislacao",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "data/fontes-estaduais-curadas/centro-oeste/MS/MS_DEC_16724_2025_ICMS_2026-04-26.txt"
+        ],
+        "sha256": {
+          "MS_DEC_16724_2025_ICMS_2026-04-26.txt": "eacdf028bea453385b010c3a4d3459693c9d8ee3eeedc426c50d8c688320b293"
+        },
+        "fetch_url": "https://www.sefazms.com.br/legislacao"
+      },
+      "note": "Texto estadual de ICMS publicado em estados/ms/legislacao/fontes/ms-dec-16724-2025-icms.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-ms",
+          "module_title": "Mato Grosso do Sul: ICMS e benefícios fiscais em tela",
+          "chapters": []
+        }
+      ]
+    },
+    {
+      "source_id": "state-ms-ms-lei-6495-2025-refis-icms",
+      "jurisdiction": "MS",
+      "title": "Lei n? 6.495/2025 - formas excepcionais de pagamento de cr?ditos de ICMS",
+      "short": "Fiscaliza??o, pagamento e parcelamento",
+      "official_url": "https://assets.imprensaoficial.ms.gov.br/public/prd/Diario%20Oficial/2025/10/31/DO11983_31_10_2025.pdf",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "data/fontes-estaduais-curadas/centro-oeste/MS/MS_LEI_6495_2025_REFIS_ICMS_2026-04-26.txt"
+        ],
+        "sha256": {
+          "MS_LEI_6495_2025_REFIS_ICMS_2026-04-26.txt": "a7eb926f58785dbcb9dd73ff1496d22822773c5e8bdd53246e350b77e932bb11"
+        },
+        "fetch_url": "https://assets.imprensaoficial.ms.gov.br/public/prd/Diario%20Oficial/2025/10/31/DO11983_31_10_2025.pdf"
+      },
+      "note": "Texto estadual de ICMS publicado em estados/ms/legislacao/fontes/ms-lei-6495-2025-refis-icms.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-ms",
+          "module_title": "Mato Grosso do Sul: ICMS e benefícios fiscais em tela",
+          "chapters": [
+            "agro-fundersul-diferimento",
+            "fiscalizacao-pagamento-restauracao"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-ms-ms-port-3759-2025-valor-real-pesquisado",
+      "jurisdiction": "MS",
+      "title": "Portaria/SAT n? 3.759/2025 - Valor Real Pesquisado",
+      "short": "Base de c?lculo, al?quotas e transporte",
+      "official_url": "https://www.sefazms.com.br/legislacao",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "data/fontes-estaduais-curadas/centro-oeste/MS/MS_PORT_3759_2025_VALOR_REAL_PESQUISADO_2026-04-26.txt"
+        ],
+        "sha256": {
+          "MS_PORT_3759_2025_VALOR_REAL_PESQUISADO_2026-04-26.txt": "2877bbdf93bc9fbfa2016a68342dc0564b7cfd3d548d989c7583da222c89789f"
+        },
+        "fetch_url": "https://www.sefazms.com.br/legislacao"
+      },
+      "note": "Texto estadual de ICMS publicado em estados/ms/legislacao/fontes/ms-port-3759-2025-valor-real-pesquisado.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-ms",
+          "module_title": "Mato Grosso do Sul: ICMS e benefícios fiscais em tela",
+          "chapters": []
+        }
+      ]
+    },
+    {
+      "source_id": "state-ms-ms-port-3760-2026-valor-real-pesquisado",
+      "jurisdiction": "MS",
+      "title": "Portaria/SAT n? 3.760/2026 - Valor Real Pesquisado",
+      "short": "Base de c?lculo, al?quotas e transporte",
+      "official_url": "https://www.sefazms.com.br/legislacao",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "data/fontes-estaduais-curadas/centro-oeste/MS/MS_PORT_3760_2026_VALOR_REAL_PESQUISADO_2026-04-26.txt"
+        ],
+        "sha256": {
+          "MS_PORT_3760_2026_VALOR_REAL_PESQUISADO_2026-04-26.txt": "81df30637fe9484fcf564da0295e9e383ee258f0d2d0b2c7c1e520b8e62a0fb9"
+        },
+        "fetch_url": "https://www.sefazms.com.br/legislacao"
+      },
+      "note": "Texto estadual de ICMS publicado em estados/ms/legislacao/fontes/ms-port-3760-2026-valor-real-pesquisado.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-ms",
+          "module_title": "Mato Grosso do Sul: ICMS e benefícios fiscais em tela",
+          "chapters": [
+            "base-aliquota-apuracao"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-ms-ms-port-3761-2026-valor-real-pesquisado",
+      "jurisdiction": "MS",
+      "title": "Portaria/SAT n? 3.761/2026 - Valor Real Pesquisado",
+      "short": "Base de c?lculo, al?quotas e transporte",
+      "official_url": "https://www.sefazms.com.br/legislacao",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "data/fontes-estaduais-curadas/centro-oeste/MS/MS_PORT_3761_2026_VALOR_REAL_PESQUISADO_2026-04-26.txt"
+        ],
+        "sha256": {
+          "MS_PORT_3761_2026_VALOR_REAL_PESQUISADO_2026-04-26.txt": "ba52db1b85880d1a42f5d7e0a75cfa84e07780cc7f78a91bfb6dbe43478f767d"
+        },
+        "fetch_url": "https://www.sefazms.com.br/legislacao"
+      },
+      "note": "Texto estadual de ICMS publicado em estados/ms/legislacao/fontes/ms-port-3761-2026-valor-real-pesquisado.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-ms",
+          "module_title": "Mato Grosso do Sul: ICMS e benefícios fiscais em tela",
+          "chapters": []
+        }
+      ]
+    },
+    {
+      "source_id": "state-ms-ms-res-3485-2025-efd",
+      "jurisdiction": "MS",
+      "title": "Resolu??o/SEFAZ n? 3.485/2025 - procedimentos ligados ? EFD",
+      "short": "Obriga??es acess?rias e documentos",
+      "official_url": "https://www.sefazms.com.br/legislacao",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "data/fontes-estaduais-curadas/centro-oeste/MS/MS_RES_3485_2025_EFD_2026-04-26.txt"
+        ],
+        "sha256": {
+          "MS_RES_3485_2025_EFD_2026-04-26.txt": "254fc687fb5f5d5779e8b546ab0f70ef1ac7ca813ec968f0c1f104ae9129afa2"
+        },
+        "fetch_url": "https://www.sefazms.com.br/legislacao"
+      },
+      "note": "Texto estadual de ICMS publicado em estados/ms/legislacao/fontes/ms-res-3485-2025-efd.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-ms",
+          "module_title": "Mato Grosso do Sul: ICMS e benefícios fiscais em tela",
+          "chapters": [
+            "documentos-efd-prova"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-ms-ms-ato-decl-1-2026-cadastro",
+      "jurisdiction": "MS",
+      "title": "Ato Declarat?rio SAT n? 1/2026 - suspens?o e cancelamento de inscri??es estaduais",
+      "short": "Obriga??es acess?rias e cadastro",
+      "official_url": "https://www.sefazms.com.br/legislacao",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "data/fontes-estaduais-curadas/centro-oeste/MS/MS_ATO_DECL_1_2026_CADASTRO_2026-04-26.txt"
+        ],
+        "sha256": {
+          "MS_ATO_DECL_1_2026_CADASTRO_2026-04-26.txt": "5f16297e9c8f9808be2437b9fb295dea8a4612611b0f38efab7938ce82df9d81"
+        },
+        "fetch_url": "https://www.sefazms.com.br/legislacao"
+      },
+      "note": "Texto estadual de ICMS publicado em estados/ms/legislacao/fontes/ms-ato-decl-1-2026-cadastro.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-ms",
+          "module_title": "Mato Grosso do Sul: ICMS e benefícios fiscais em tela",
+          "chapters": [
+            "documentos-efd-prova"
+          ]
+        }
+      ]
+    },
+    {
       "source_id": "state-rn-rn-dec-31825-2022-ricms-geral",
       "jurisdiction": "RN",
       "title": "Decreto nº 31.825/2022 - Regulamento do ICMS/RN, parte geral",

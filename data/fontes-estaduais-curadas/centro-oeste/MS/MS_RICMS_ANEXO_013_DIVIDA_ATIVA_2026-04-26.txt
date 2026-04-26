@@ -1,0 +1,91 @@
+ANEXO XIII
+DA INSCRIÇÃO DE DÉBITOS NA DÍVIDA ATIVA
+
+
+Art. 1º - Os créditos estaduais de natureza tributária, provenientes de obrigaçÕes relativas a tributos, juros de mora e multas por infração à legislação tributária exigidos em processos administrativos, serão inscritos, na forma deste Anexo, como Dívida Ativa tributária, em registro próprio, após apurada a sua liquidez e certeza (Lei Federal nº 6830/80, art. 2º, §§ 1º e 2º).
+
+Art. 2º - Observado o disposto no art. 175, § 2º, do Regulamento, a Dívida Ativa tributária será inscrita em termo próprio, pelo Chefe do Núcleo de Dívida Ativa e Parcelamento de Débitos, e deverá conter (Lei Federal nº 6830/80, art. 2º, § 5º):
+
+I - o nome do devedor, dos co-responsáveis e, sempre que conhecidos, o domicílio, a residência, os números da cédula de identidade (RG) e das inscrições estadual (CCE) e federal (CPF ou CGC) de uns de outros;
+
+II - o valor originário da dívida, bem como o termo inicial e a forma de calcular os juros de mora e os demais encargos previstos em Lei;
+
+III - a origem, a natureza e o fundamento legal da dívida;
+
+IV - a indicação, se for o caso, de estar a dívida sujeita à atualização monetária, bem como o respectivo fundamento legal e o termo inicial para o cálculo;
+
+V - a data e o número da inscrição, no Registro de Dívida Ativa; e
+
+VI - o número do processo administrativo, do Auto de Infração (AI) e/ou pedido de parcelamento de débito (PPD), se nele estiver apurado o valor da dívida.
+
+Art. 3º - No termo de inscrição da Dívida Ativa tributária, bem como na respectiva certidão, que poderão ser preparados e numerados por processo manual, mecânico ou eletrônico, deverão constar os valores originários do tributo, da multa por infração à legislação tributária e dos juros de mora, em cruzeiros, bem como, sem prejuízo das respectivas liquidez e certeza, ser inscrita com os valores convertidos em Bônus do Tesouro Nacional - Fiscal (BTN - Fiscal), obedecidos os seguintes critérios:
+
+I - tratando-se de débito vencido até 28 de fevereiro de 1986, expresso em moeda nacional, deverá ser adotado o seguinte procedimento:
+
+a) seu valor será, inicialmente, convertido e expresso em OTN do mês em que o débito deveria ter sido pago;
+
+b) o valor em OTN, apurado na forma da alínea anterior, será reconvertido e expresso em moeda nacional pela sua multiplicação por Cz$ 93,03 (noventa e três cruzados e três centavos), valor daquela obrigação vigente no mês de fevereiro de 1986, convertida em cruzados, permanecendo inalterado até 28 de fevereiro de 1987;
+
+c) o valor em cruzados, apurado na forma da alínea anterior, será novamente, convertido e expresso em OTN pela sua divisão por Cz$ 181,61 (cento e oitenta e um cruzados e sessenta e um centavos), valor daquela obrigação vigente no mês de março de 1987;
+
+d) a conversão do débito em BTN - Fiscal far-se-á pela multiplicação da quantidade de OTN apurada na forma da alínea anterior, por NCz$ 6,17 (seis cruzados novos e desessete centavos);
+
+II - os débitos vencidos no período compreendido entre os dias 28 de fevereiro de 1986 e 1º de março de 1987, não sofrerão atualização monetária nesse período e sua conversão em OTN e BTN - Fiscal far-se-á, respectivamente, com a adoção dos critérios estabelecidos  nas alíneas "c" e "d" do inciso anterior;
+
+III - tratando-se de débito vencido entre 1º de março de 1987, inclusive, e até 31 de janeiro de 1989:
+
+a) quando expresso em OTN, pela multiplicação da quantidade de OTN por NCz$ 6,17 (seis cruzados novos e dezessete centavos);
+
+b) quando expresso em cruzados, deverá, inicialmente, ser convertido em OTN, através da divisão do seu montante pelo valor da mesma obrigação no mês do seu vencimento e, a seguir, aplicado o critério estabelecido na alínea anterior;
+
+IV - pela divisão do seu valor expresso em cruzados novos pelo valor do BTN do mês do respectivo vencimento, quando se referir a débito vencido no período compreendido entre os dias 1º de fevereiro de 1989, inclusive, e 1º de julho de 1989;
+
+V - pela divisão do seu valor expresso em moeda nacional pelo valor do BTN - Fiscal da data do seu vencimento, quando se referir a débito vencido após 30 de junho de 1989.
+
+§ 1º - Sobre o tributo exigido serão calculados juros de mora de um por cento ao mês, a partir do dia imediato ao do seu vencimento, até a data da inscrição, não interrompendo sua fluência, eventual prazo concedido para a liquidação do débito, e serão convertidos em BTN - Fiscal, tomando-se por base o valor do mesmo indexador na data da inscrição.
+
+§ 2º - Os juros de mora serão calculados sobre o valor monetariamente atualizado.
+
+§ 3º - Os juros de mora serão cobrados sobre o total da Dívida Ativa, observado o disposto do parágrafo anterior.
+
+§ 4º - Para os fins deste Anexo, entende-se por valor originário do débito aquele que, desvinculadamente de qualquer acréscimo e atualização monetária, o representar para a competente cobrança.
+
+§ 5º - Os valores expressos em BTN - Fiscal, terão suas fraçÕes subdividadas até a segunda casa decimal, abandonando-se as demais.
+
+Art. 4º - Inscrita a dívida, o Chefe do Núcleo de Dívida Ativa e Parcelamento de Débitos extrairá imeditamente a Certidão de Dívida Ativa tributária, em que consignará os dados constantes do termo de inscrição da dívida, além de indicar o livro e a folha da inscrição.
+
+Art. 5º - O Termo de Inscrição da Dívida Ativa tributária, emitido em desacordo com o disposto neste Anexo e referente a débito não ajuizado e não alcançado pela decadência ou prescrição, será refeito e dele extraída nova Certidão de Dívida Ativa tributária, em substituição à anterior.
+
+§ 1º - Nos casos de substituição de Certidão de Dívida Ativa tributária, em que tenha havido qualquer pagamento parcial, e na hipótese de existência de diversos débitos, para fins de amortização da dívida, serão eles somados e amortizadas as dívidas de vencimentos mais antigos, até o valor do pagamento parcial.
+
+§ 2º - Para os efeitos do disposto no parágrafo anterior, entende-se cada débito com os seus acréscimos de juros moratórios e penalidades.
+
+§ 3º - A substituição de que trata este artigo, deverá ser efetivada no prazo de 180 dias contados da data da publicação deste Anexo.
+
+§ 4º - Quando se tratar de Certidão de Dívida Ativa ajuizada, será requerido ao Juiz competente a conversão do débito em BTN - Fiscal, na forma do art. 3º.
+
+Art. 6º - Extraída a Certidão de Dívida Ativa, o Chefe do Núcleo de Dívida Ativa e Parcelamento de Débitos deverá vistá-la e encaminha-lá à Procuradoria Geral do Estado, para a cobrança administrativa ou judicial.
+
+Art. 7º - Antes do ajuizamento da execução fiscal, a Procuradoria Geral do Estado atualizará os cálculos da dívida, se possível mediante processamento eletrônico de dados, demonstrando separadamente os totais devidos na data do ajuizamento.
+
+Art. 8º - Para a apuração do total devido no ato do ajuizamento da execução fiscal, os valores em BTN - Fiscal do tributo, da multa por infração à legislação tributária e dos juros de mora, obtidos na forma do art. 3º, serão apurados em moeda nacional, tomando-se por base o valor do mesmo indexador na data do ajuizamento.
+
+Art. 9º - O total da Dívida Ativa, nos casos de concessão de parcelamento ou de pagamento integral do débito, será apurado mediante a reconversão em moeda nacional, de cada parte integrante do montante devido, apurado em BTN - Fiscal, na forma do art. 3º, com a aplicação do valor do mesmo indexador vigente na data da efetiva liquidação da parcela do débito.
+
+Art. 10 - Sem prejuízo da incidência da atualização monetária e dos juros de mora, bem como da exigência da prova de quitação para com a Fazenda Pública estadual, não serão objeto de inscrição na Dívida Ativa os débitos de qualquer origem de valor igual ou inferior a vinte BTN - Fiscal ou indexador que o substitua (CTE, art. 245, introduzido pela Lei nº 765, de 08.10.87).
+
+§ 1º - A dispensa referida neste artigo, não se aplica:
+
+I - às penalidades impostas por autoridades judiciárias, policiais e do Tribunal de Contas e por aquelas da fiscalização ou controle do ambiente, da saúde pública e do trânsito de veículos;
+
+II - às glosas contra prestação de contas de funcionário, originadas de cálculo e recolhimento a menor de crédito tributário;
+
+III - aos débitos decorrentes de alcance praticado por servidor público.
+
+§ 2º - Na hipótese de existência de diversos débitos de responsabilidade de um só devedor, mesmo que em processos diversos, para os efeitos da não inscrição referida neste artigo, serão eles somados.
+
+Art. 11 - Aplicam-se as disposições deste Anexo, no que couber, aos processos de Dívida Ativa não tributária (Lei Federal nº 6830/80, art. 4º, § 2º).
+
+Art. 12 - Através de Resolução conjunta, o Secretário de Estado de Fazenda e o Procurador Geral do Estado poderão instituir outros modelos de documentos e adotar as providências complementares e necessárias ao fiel cumprimento do disposto neste Anexo.
+
+Art. 13 - Na ocorrência de condições técnicas, serão transferidos inscrição e controle dos débitos do Núcleo de Dívida Ativa e Parcelamento de Débitos da Secretaria de Fazenda para igual setor na Procuradoria Geral do Estado (Lei Compl. nº 052/90 e RICMS, art. 175, § 2º).

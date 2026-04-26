@@ -1,0 +1,263 @@
+ANEXO XXIV
+
+DOS PROCEDIMENTOS A SEREM OBSERVADOS NAS OPERAÇÕES E PRESTAÇÕES INTERESTADUAIS QUE DESTINEM BENS E SERVIÇOS A CONSUMIDOR FINAL, LOCALIZADO NESTE ESTADO, NÃO CONTRIBUINTE DO ICMS
+
+Aprovado pelo Decreto nº 14.365, de 28.12.2015, publicado no DOE nº 9.074, de 29.12.2015. Efeitos a partir de 1º.01.2016.
+
+CAPÍTULO I
+DISPOSIÇÕES PRELIMINARES
+
+Art. 1º Este Anexo dispõe, com base no Convênio ICMS n° 93/15, de 17 de setembro de 2015, sobre os procedimentos a serem observados nas operações e prestações iniciadas em outras unidades da Federação que destinem bens e serviços a consumidor final, localizado neste Estado, não contribuinte do ICMS, visando à apuração e ao recolhimento do ICMS incidente sobre essas operações e essas prestações de serviços, nos termos do art. 5º, caput, VIII, da Lei n° 1.810, de 22 de dezembro de 1997, acrescentado pela Lei n° 4.743, de 21 de outubro de 2015.
+
+CAPÍTULO II
+DO CÁLCULO E DO RECOLHIMENTO DO ICMS
+
+Art. 2º Nas operações e nas prestações de serviço a que se refere o art. 1º deste Anexo, o contribuinte que as realizar deve:
+
+I - se remetente do bem:
+
+a) utilizar a alíquota prevista, no art. 41 da Lei n° 1.810, de 22 de dezembro de 1997, para as operações internas com o respectivo bem, para o cálculo do imposto total devido na operação, observado quanto ao adicional previsto no art. 41-A, inciso I, da referida Lei, quando for o caso, o disposto no art. 3º deste Anexo;
+
+b) utilizar a alíquota interestadual aplicável à respectiva operação, prevista na legislação da unidade da Federação da sua localização, para o cálculo do imposto devido à unidade federada de origem;
+
+c) recolher, em favor deste Estado, como unidade federada de destino, o imposto correspondente à diferença entre o imposto calculado na forma da alínea “a” e o calculado na forma da alínea “b” deste inciso;
+
+II - se prestador de serviço:
+
+a) utilizar a alíquota prevista, no art. 41 da Lei n° 1.810, de 22 de dezembro de 1997, para as prestações internas do respectivo serviço, para o cálculo do ICMS total devido na prestação, observado quanto ao adicional previsto no art. 41-A, inciso II, da referida Lei, quando for o caso, o disposto no art. 3º deste Anexo;
+
+b) utilizar a alíquota interestadual aplicável à respectiva prestação, prevista na legislação da unidade da Federação onde se inicia o serviço, para o cálculo do imposto devido à unidade federada de origem;
+
+c) recolher em favor deste Estado, como unidade federada de destino, o imposto correspondente à diferença entre o imposto calculado na forma da alínea “a” e o calculado na forma da alínea “b” deste inciso.
+
+§ 1º A base de cálculo do imposto, de que tratam os incisos I e II do caput deste artigo, é única e corresponde ao valor da operação ou ao preço do serviço, observado o disposto no § 1º do art. 13 da Lei Complementar Federal nº 87, de 13 de setembro de 1996.
+
+§ 2º O ICMS devido à unidade federada de origem e o devido a este Estado, como unidade federada de destino, devem ser calculados por meio da aplicação das seguintes fórmulas, respectivamente:
+
+I - ICMS origem = BC x ALQ inter, em que:
+
+a) BC = base de cálculo do imposto, observado o disposto no   § 1º deste artigo;
+
+b) ALQ inter = alíquota interestadual aplicável à operação ou à prestação de serviço, na unidade federada de origem;
+
+II - ICMS destino = [BC x ALQ intra] - ICMS origem, em que:
+
+a) BC = base de cálculo do imposto, observado o disposto no   § 1º deste artigo;
+
+b) ALQ intra = alíquota interna aplicável à operação ou à prestação de serviço neste Estado.
+
+§ 3º Não se exige o recolhimento de que trata a alínea “c” do inciso II do caput deste artigo quando o transporte for efetuado pelo próprio remetente ou por sua conta e ordem (cláusula CIF - Cost, Insurance and Freight).
+
+CAPÍTULO III
+DO CÁLCULO E DO RECOLHIMENTO DO ICMS ADICIONAL
+
+Art. 3º Nos casos em que as operações, de que trata este Anexo, refiram-se a bens mencionados no art. 41-A, inciso I, da Lei n° 1.810, de 1997, bem assim nos casos de prestações de serviço de comunicação, o remetente ou o prestador deve calcular, separadamente, o valor do imposto correspondente ao adicional previsto no referido artigo.
+
+§ 1º O adicional a que se refere o caput deste artigo deve ser calculado mediante a aplicação do percentual de dois por cento sobre a base de cálculo utilizada para o cálculo do valor do imposto a que se refere:
+
+I - a alínea “a” do inciso I do caput do art. 2º deste Anexo, no caso de operações;
+
+II - alínea “a” do inciso II do caput do art. 2º deste Anexo, no caso de prestações de serviço de comunicação.
+
+§ 2º O remetente ou o prestador deve recolher em favor deste Estado, como unidade federada de destino, o imposto correspondente ao adicional de alíquota, calculado nos termos deste artigo.
+
+CAPÍTULO III-A
+DOS BENEFÍCIOS FISCAIS
+(Capítulo III-A e arts. 3º-A, 3º-B e 3º-C: acrescentados pelo Decreto nº 14.456/2016. Efeitos desde 1º.01.2016.)
+
+Seção I
+Dos Benefícios Fiscais na Origem
+
+Art. 3º-A. No cálculo do imposto devido a este Estado, relativamente às operações a que se refere o art. 1º deste Anexo, não se consideram benefícios fiscais de redução da base de cálculo ou de isenção, concedidos em relação às operações interestaduais pela unidade da Federação de origem, quanto ao imposto de sua competência, ressalvado o disposto no art. 3º-C deste Anexo.
+
+Seção II
+Dos Benefícios Fiscais no Destino
+
+Art. 3º-B. No cálculo do imposto devido a este Estado, relativamente às operações a que se refere o art. 1º deste Anexo, consideram-se os benefícios fiscais de redução da base de cálculo ou de isenção, concedidos por este Estado, em relação às operações internas com bens da mesma espécie.
+
+Parágrafo único. Em decorrência do disposto no caput deste artigo, se o benefício fiscal consistir em:
+
+I - redução de base de cálculo: a base de cálculo prevista no    § 1º do art. 2º deste Anexo fica reduzida, para efeito do que dispõem o art. 2º, inciso I, alínea “a”, e o art. 3º, § 1º, inciso I, deste Anexo, no mesmo percentual de redução previsto para as operações internas com bens da mesma espécie;
+
+II - isenção: não se exigirá o imposto correspondente à diferença entre a alíquota interna e a alíquota interestadual.
+
+Seção III
+Dos Benefícios Fiscais na Origem e no Destino
+
+Art. 3º-C. Nos casos em que tanto as operações interestaduais realizadas na unidade da Federação de origem, como as operações internas realizadas neste Estado, estejam beneficiadas por redução de base de cálculo ou por isenção, concedidas mediante Convênios ICMS, esses benefícios devem ser considerados no cálculo do imposto devido a este Estado, relativamente às operações a que se refere o art. 1º deste Anexo com bens da mesma espécie. (Art. 3º-C, caput: nova redação dada pelo Decreto nº 15.109/2018. Efeitos desde 1º.02.2018.)
+
+Art. 3º-C, caput: redação anterior, acrescentada pelo Decreto nº 14.456/2016, vigente de 1º.01.2016 até 31.01.2018.
+Art. 3º-C. Nos casos em que tanto as operações interestaduais realizadas na unidade da Federação de origem, como as operações internas realizadas neste Estado, estejam beneficiadas por redução de base de cálculo ou por isenção, concedidas mediante convênios celebrados até 1º de janeiro de 2016, esses benefícios devem ser considerados no cálculo do imposto devido a este Estado, relativamente às operações a que se refere o art. 1º deste Anexo com bens da mesma espécie.
+
+Parágrafo único. Em decorrência do disposto no caput deste artigo, se o benefício fiscal consistir em:
+
+I - redução de base de cálculo: a base de cálculo prevista no    § 1º do art. 2º deste Anexo fica reduzida:
+
+a) para efeito do que dispõem o art. 2º, inciso I, alínea “a”, e o art. 3º, § 1º, inciso I, deste Anexo, no mesmo percentual de redução previsto para as operações internas com bens da mesma espécie, realizadas neste Estado;
+
+b) para efeito do que dispõe o art. 2º, inciso I, alínea “b”, deste Anexo, no mesmo percentual de redução previsto para as operações interestaduais com bens da mesma espécie, realizadas na unidade da Federação de origem;
+
+II - isenção: não se exigirá o imposto correspondente à diferença entre a alíquota internas e a alíquota interestadual.
+
+CAPÍTULO IV
+DO CRÉDITO DO IMPOSTO
+
+Art. 4º O crédito do imposto, relativo às operações e às prestações de serviços anteriores, deve ser deduzido do débito correspondente ao imposto devido à unidade federada de origem, observando-se o disposto nos arts. 19 e 20 da Lei Complementar Federal nº 87, de 1996.
+
+CAPÍTULO V
+DO PRAZO E DA FORMA DE RECOLHIMENTO
+
+Art. 5º Os valores do imposto, apurados na forma dos arts. 2º e 3º deste Anexo, em favor deste Estado, devem ser recolhidos separadamente, por meio de Documento de Arrecadação Estadual (DAEMS), utilizando-se, para especificar e identificar a respectiva receita, as seguintes expressões e códigos, observado o disposto no parágrafo único deste artigo:
+
+I - a expressão “ICMS DIFCON” e o código 351, no caso dos valores a que se referem a alínea “c” do inciso I e a alínea “c” do II, ambos do caput do art. 2º deste Anexo;
+
+II - a expressão “ICMS ADICIONAL” e o código 918, no caso do valor correspondente ao adicional a que se refere o art. 3º deste Anexo.
+
+Parágrafo único. O recolhimento pode ser realizado mediante a utilização da Guia Nacional de Recolhimento de Tributos Estaduais (GNRE), hipótese em que se devem observar, no seu preenchimento, inclusive quanto ao código de receita, as disposições do Convênio/SINIEF n° 6/89, de 21 de fevereiro de 1989, relativas a esse documento.
+
+Art. 6º O recolhimento do ICMS devido a este Estado nos termos deste Anexo deve ser realizado:
+
+I - até o décimo quinto dia do mês subsequente ao da saída do bem do estabelecimento do remetente ou ao do início da prestação de serviço, no caso em que o remetente ou o prestador esteja inscrito no Cadastro de Contribuinte do Estado, observado o disposto no § 1º deste artigo;
+
+II - por ocasião da saída do bem do estabelecimento do remetente ou do início da prestação do serviço, nos demais casos.
+
+§ 1º Nos casos em que o remetente ou o prestador esteja inscrito no Cadastro de Contribuintes do Estado, na condição de contribuinte substituto, o recolhimento do ICMS em favor deste Estado, devido nos termos deste Anexo, deve ser realizado no prazo previsto no respectivo convênio ou protocolo, que dispõe sobre a substituição tributária.
+
+§ 2º Na hipótese do inciso I do caput deste artigo:
+
+I - a apuração do imposto pode ser realizada por período mensal, com encerramento do período no último dia de cada mês;
+
+II - o recolhimento deve ser efetuado por meio do Documento de Arrecadação Estadual (DAEMS) ou da Guia Nacional de Recolhimento de Tributos Estaduais (GNRE).
+
+§ 3º Na hipótese do inciso II do caput deste artigo:
+
+I - a apuração do imposto deve ser realizada à vista de cada operação ou de cada prestação de serviço;
+
+II - o recolhimento deve ser efetuado por meio do Documento de Arrecadação Estadual (DAEMS) ou da Guia Nacional de Recolhimento de Tributos Estaduais (GNRE), com indicação, neles, do número do respectivo documento fiscal;
+
+III - o DAEMS ou a GNRE deve acompanhar o trânsito do bem, no caso de operação, ou o respectivo veículo, no caso de prestação do serviço;
+
+IV - o imposto deve ser exigido no momento da entrada da mercadoria ou do veículo transportador no território deste Estado, na repartição fiscal mais próxima do local da entrada ou, no caso de transporte aéreo, do desembarque, nos casos em que o DAEMS ou a GNRE não estiver acompanhando o trânsito do bem, no caso de operação, ou o respectivo veículo, no caso de prestação de serviço.
+
+§ 4º O recolhimento do imposto deve ser feito por meio de Documento de Arrecadação Estadual (DAEMS), nos casos de ação fiscal, visando à cobrança do imposto.
+
+CAPÍTULO VI
+DA INSCRIÇÃO NO CADASTRO
+
+Art. 7º A inscrição no Cadastro de Contribuinte do Estado é obrigatória para o remetente ou o prestador que pretender realizar o recolhimento do imposto no prazo de que trata o art. 6º, caput, inciso I, deste Anexo.
+
+§ 1º Para obter a sua inscrição, o remetente ou o prestador deve apresentar à Secretaria de Estado de Fazenda, para esse fim:
+
+I - requerimento assinado pelo contribuinte ou pelo seu representante legal, solicitando a inscrição no Cadastro de Contribuintes do Estado, com as seguintes indicações:
+
+a) o nome, a inscrição no CNPJ e o endereço da empresa;
+
+b) o nome, a qualificação civil e o CPF dos sócios ou dos diretores responsáveis pela empresa;
+
+c) a atividade exercida pelo estabelecimento a ser inscrito e o capital social atualizado;
+
+d) o nome do contador ou da pessoa autorizada a dar informações, indicando o endereço comercial ou residencial, o telefone e o endereço eletrônico (e-mail);
+
+II - Ficha de Atualização Cadastral (FAC), devidamente preenchida em duas vias e assinada pelo contribuinte ou pelo seu representante legal e pelo contabilista;
+
+III - cópia autenticada do Contrato Social, do Estatuto ou de outro ato pelo qual se tenha constituído a pessoa jurídica, acompanhado, se for o caso, da ata da reunião da Assembleia Geral, na qual se elegeu a última diretoria e, quando alterado o ato constitutivo, de sua mais recente alteração ou consolidação, devidamente registrados na Junta Comercial;
+
+IV - comprovante de Inscrição e de Situação Cadastral no Cadastro Nacional da Pessoa Jurídica (CNPJ) do Ministério da Fazenda do estabelecimento a ser inscrito no Cadastro de Contribuintes do Estado;
+
+V – Revogado.
+
+(REVOGADO pelo Decreto nº 15.020/2018. Efeitos a partir de 15.06.2018.)
+
+V - cópia da última das declarações de imposto de renda apresentadas até a data do pedido da inscrição;
+
+VI - certidões negativas de débitos expedidas pela unidade da Federação de origem e pela Secretaria da Receita Federal, relativas ao estabelecimento a ser inscrito no Cadastro de Contribuintes do Estado;
+
+VII - cópia autenticada de documento oficial de identificação civil e do comprovante de inscrição do titular, sócios ou dos diretores indicados na Ficha de Atualização Cadastral (FAC), no Cadastro de Pessoas Físicas (CPF) do Ministério da Fazenda;
+
+VIII - comprovante de pagamento da taxa de serviços estaduais, referente à análise do pedido de inscrição estadual;
+
+IX – revogado;
+(Inciso IX: revogado pelo Decreto n° 14.542/2016. Efeitos desde 1°.07.2016.)
+
+Inciso IX: redação vigente até 30.06.2016.
+IX - garantia destinada a assegurar o pagamento do crédito tributário, na modalidade de fiança bancária ou de caução em dinheiro, aplicando-se, complementarmente e no que couber, o disposto no art. 5º do Anexo V - Dos Regimes Especiais e das Autorizações Especiais, ao Regulamento do ICMS;
+
+X - outros documentos ou informações, a critério da Superintendência de Administração Tributária.
+
+§ 2º Na hipótese deste artigo, a apreciação do pedido de inscrição compete ao Superintendente de Administração Tributária.
+
+§ 3º A competência para o deferimento do pedido de inscrição pode ser delegada pelo Superintendente de Administração Tributária.
+
+§ 4º O número da inscrição no Cadastro de Contribuintes do Estado deve ser indicado:
+
+I - no documento pelo qual se realizar o pagamento do imposto;
+
+II - em todos os documentos encaminhados a este Estado na condição de seu contribuinte.
+
+§ 5º Fica dispensado de nova inscrição o remetente já inscrito no Cadastro de Contribuinte do Estado na condição de substituto tributário.
+
+§ 6º A inadimplência do remetente ou do prestador inscrito, em relação ao imposto devido a este Estado, nos termos deste Anexo, ou a sua irregularidade quanto ao Cadastro de Contribuintes do Estado enseja, a critério da Superintendência de Administração Tributária, a suspensão ou o cancelamento da respectiva inscrição.
+
+§ 7º A suspensão ou o cancelamento da inscrição obriga o remetente ou o prestador a recolher o imposto devido a este Estado por ocasião da saída do bem ou do início da prestação do serviço, na forma disposta no art. 6º, caput, II, deste Anexo.
+
+CAPÍTULO VII
+DA EMISSÃO DA NOTA FISCAL ELETRÔNICA (NFe)
+
+Art. 8º As operações de que trata este Anexo devem ser acobertadas por Nota Fiscal Eletrônica (NFe), modelo 55, a qual deve conter as informações previstas no Ajuste Sinief 07/05, de 30 de setembro de 2005.
+
+CAPÍTULO VIII
+DA ESCRITURAÇÃO FISCAL
+
+Art. 9º A escrituração fiscal das operações e das prestações de serviço de que trata este Anexo, e o cumprimento das respectivas obrigações acessórias, são as disciplinadas em Ajuste SINIEF.
+
+CAPÍTULO IX
+DOS CONTRIBUINTES OPTANTES DO SIMPLES NACIONAL
+
+Art. 10. Aplicam-se as disposições deste Anexo aos contribuintes optantes pelo Regime Especial Unificado de Arrecadação de Tributos e Contribuições, devidos pelas Microempresas e Empresas de Pequeno Porte (Simples Nacional), instituído pela Lei Complementar nº 123, de 14 de dezembro de 2006, em relação ao imposto devido a este Estado, nas operações ou nas prestações que realizarem destinando bens ou serviços a este Estado. (Obs.: Este artigo reproduz a cláusula nona do Convênio ICMS 93/15, que teve sua eficácia suspensa por medida cautelar concedida pelo STF até o julgamento final da ação.)
+
+CAPÍTULO X
+DO PARTILHAMENTO
+
+Art. 11. Nos exercícios de 2016, 2017 e 2018, as diferenças a que se referem a alínea “c” do inciso I e a alínea “c” do inciso II, ambos do caput do art. 2º deste Anexo, observado o disposto no § 1º deste artigo, devem ser partilhadas entre o Estado de Mato Grosso do Sul e a unidade da Federação onde se iniciam as respectivas operações ou prestações, na seguinte proporção:
+
+I - para o Estado de Mato Grosso do Sul:
+
+a) quarenta por cento, no ano de 2016;
+
+b) sessenta por cento, no ano de 2017;
+
+c) oitenta por cento, no ano de 2018;
+
+II - para a unidade da Federação onde se iniciam as operações ou as prestações:
+
+a) sessenta por cento, no ano de 2016;
+
+b) quarenta por cento, no ano de 2017;
+
+c) vinte por cento, no ano de 2018.
+
+§ 1º A parte pertencente ao Estado de Mato Grosso do Sul deve ser recolhida na forma e no prazo estabelecidos no art. 6º deste Decreto.
+
+§ 2º O partilhamento de que trata este artigo não se aplica ao ICMS Adicional, devendo o respectivo valor ser recolhido integralmente em favor do Estado de Mato Grosso do Sul.
+
+Art. 12. Nos exercícios a que se refere o caput do art. 11 deste Anexo, as diferenças de que tratam a alínea “c” do inciso I e a alínea “c” do inciso II, ambas do caput da cláusula segunda do Convênio ICMS 93/15, de 17 de setembro de 2015, relativamente às operações e às prestações que destinem bens e serviços a consumidor final não contribuinte do imposto localizado em outra unidade da Federação, serão partilhadas entre o Estado de Mato Grosso do Sul e a unidade da Federação de destino, na seguinte proporção:
+
+I - a este Estado:
+
+a) sessenta por cento, no ano de 2016;
+
+b) quarenta por cento, no ano de 2017;
+
+c) vinte por cento, no ano de 2018;
+
+II - ao Estado para onde se destinam as operações ou as prestações de serviço:
+
+a) quarenta por cento, no ano de 2016;
+
+b) sessenta por cento, no ano de 2017;
+
+c) oitenta por cento, no ano de 2018.
+
+Parágrafo único. A parte pertencente ao Estado de Mato Grosso do Sul deve ser recolhida no prazo estabelecido para o pagamento do ICMS incidente nas respectivas operações ou prestações, por meio de Documento de Arrecadação Estadual (DAEMS) distinto, utilizando-se a expressão “ICMS DIFCON” e o código 351, para especificar e identificar a respectiva receita.
+
+Art. 13. A partir do exercício de 2019, as diferenças a que se refere o art. 11 deste Anexo caberão, integralmente, a este Estado e, as que se refere o art. 12 deste Anexo, ao Estado de destino.

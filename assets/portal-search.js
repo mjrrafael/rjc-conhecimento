@@ -128,7 +128,7 @@ window.RJC_SEARCH = [
   {
     "title": "Mato Grosso do Sul: ICMS e benefícios fiscais",
     "url": "estados/ms.html",
-    "summary": "Página estadual estruturada para futura publicação por UF, com foco em ICMS, benefícios, documento e prova.",
+    "summary": "Página estadual com legislação de ICMS em tela, benefícios, documento e prova.",
     "tags": "MS Mato Grosso do Sul Mato Grosso do Sul ICMS beneficios fiscais RICMS DECRETOS LEIS OUTROS PORTARIAS RESOLUCOES RICMS"
   },
   {
@@ -1114,6 +1114,102 @@ window.RJC_SEARCH = [
     "url": "estados/mt/legislacao/documentos-cbenef-efd-prova.html",
     "summary": "Entrada direta para o capítulo temático correspondente, com texto legal em tela e análise aplicada.",
     "tags": "MT Mato Grosso ICMS benefícios fiscais cBenef EFD SPED XML documento fiscal código benefício Portaria 211"
+  },
+  {
+    "title": "Mato Grosso do Sul: ICMS e benefícios fiscais em tela",
+    "url": "estados/ms/legislacao/index.html",
+    "summary": "Legislação estadual em tela: ICMS, benefícios fiscais, MS-Empreendedor, FUNDERSUL, ST, EFD, documentos, parcelamento e prova por assunto.",
+    "tags": "MS Mato Grosso do Sul ICMS RICMS benefícios fiscais alíquotas base cálculo substituição tributária ST MS-Empreendedor FUNDERSUL crédito presumido diferimento Anexo I Anexo V Anexo VI EFD SPED LC 160 Convênio 190"
+  },
+  {
+    "title": "Mato Grosso do Sul: ICMS/MS: incidência, imunidades, não incidência, isenção, suspensão e diferimento",
+    "url": "estados/ms/legislacao/icms-regra-matriz.html",
+    "summary": "A regra maior do ICMS em Mato Grosso do Sul: quando o imposto nasce, quando a competência é limitada e como a norma separa isenção, suspensão e diferimento.",
+    "tags": "MS Mato Grosso do Sul ICMS benefícios fiscais Regra matriz ICMS/MS: incidência, imunidades, não incidência, isenção, suspensão e diferimento A regra maior do ICMS em Mato Grosso do Sul: quando o imposto nasce, quando a competência é limitada e como a norma separa isenção, suspensão e diferimento."
+  },
+  {
+    "title": "Mato Grosso do Sul: Base de cálculo, alíquotas, DIFAL, FECOMP, importados e apuração",
+    "url": "estados/ms/legislacao/base-aliquota-apuracao.html",
+    "summary": "Como a operação vira base tributável, qual alíquota se aplica, como ler carga efetiva, importados a 4%, consumidor final e recolhimento.",
+    "tags": "MS Mato Grosso do Sul ICMS benefícios fiscais Carga tributária Base de cálculo, alíquotas, DIFAL, FECOMP, importados e apuração Como a operação vira base tributável, qual alíquota se aplica, como ler carga efetiva, importados a 4%, consumidor final e recolhimento."
+  },
+  {
+    "title": "Mato Grosso do Sul: Benefícios fiscais: matriz legal, LC 160, CONFAZ e espécies admitidas",
+    "url": "estados/ms/legislacao/beneficios-matriz-lc160.html",
+    "summary": "A porta de entrada para benefícios no MS: isenção, redução de base, crédito presumido, diferimento, dispensa, regime especial e incentivo condicionado.",
+    "tags": "MS Mato Grosso do Sul ICMS benefícios fiscais Benefícios fiscais Benefícios fiscais: matriz legal, LC 160, CONFAZ e espécies admitidas A porta de entrada para benefícios no MS: isenção, redução de base, crédito presumido, diferimento, dispensa, regime especial e incentivo condicionado."
+  },
+  {
+    "title": "Mato Grosso do Sul: Isenções, reduções de base, créditos presumidos e subanexos setoriais",
+    "url": "estados/ms/legislacao/isencoes-reducoes-creditos.html",
+    "summary": "Leitura aplicada do Anexo I e dos créditos fiscais: máquinas, agro, medicamentos, veículos, saúde, hortifrutigranjeiros, importação, indústria e demais grupos.",
+    "tags": "MS Mato Grosso do Sul ICMS benefícios fiscais Benefícios por grupo Isenções, reduções de base, créditos presumidos e subanexos setoriais Leitura aplicada do Anexo I e dos créditos fiscais: máquinas, agro, medicamentos, veículos, saúde, hortifrutigranjeiros, importação, indústria e demais grupos."
+  },
+  {
+    "title": "Mato Grosso do Sul: Agro, produtor rural, FUNDERSUL, diferimento e crédito presumido de abate",
+    "url": "estados/ms/legislacao/agro-fundersul-diferimento.html",
+    "summary": "Como o MS trata cadeias agropecuárias: diferimento, contribuição condicionante, produtor rural, crédito presumido, circulação interna e prova da etapa posterior.",
+    "tags": "MS Mato Grosso do Sul ICMS benefícios fiscais Agro e fundo Agro, produtor rural, FUNDERSUL, diferimento e crédito presumido de abate Como o MS trata cadeias agropecuárias: diferimento, contribuição condicionante, produtor rural, crédito presumido, circulação interna e prova da etapa posterior."
+  },
+  {
+    "title": "Mato Grosso do Sul: MS-Empreendedor, regimes especiais, autorizações e crédito presumido",
+    "url": "estados/ms/legislacao/ms-empreendedor-regimes.html",
+    "summary": "Programas e regimes de desenvolvimento: LC nº 93/2001, Anexo V, termo de acordo, projeto, investimento, substituição por crédito presumido e perda do benefício.",
+    "tags": "MS Mato Grosso do Sul ICMS benefícios fiscais Programas estaduais MS-Empreendedor, regimes especiais, autorizações e crédito presumido Programas e regimes de desenvolvimento: LC nº 93/2001, Anexo V, termo de acordo, projeto, investimento, substituição por crédito presumido e perda do benefício."
+  },
+  {
+    "title": "Mato Grosso do Sul: Substituição tributária, antecipação, MVA, segmentos e transporte",
+    "url": "estados/ms/legislacao/st-antecipacao-segmentos.html",
+    "summary": "Responsabilidade por substituição, mercadorias sujeitas, base presumida, MVA, pauta, transporte e prova do imposto retido.",
+    "tags": "MS Mato Grosso do Sul ICMS benefícios fiscais Responsabilidade tributária Substituição tributária, antecipação, MVA, segmentos e transporte Responsabilidade por substituição, mercadorias sujeitas, base presumida, MVA, pauta, transporte e prova do imposto retido."
+  },
+  {
+    "title": "Mato Grosso do Sul: Cadastro, documentos fiscais, EFD, automação comercial e prova digital",
+    "url": "estados/ms/legislacao/documentos-efd-prova.html",
+    "summary": "Como a regra aparece no XML, no cadastro, nos livros, na EFD, nos controles de automação e no dossiê mensal de auditoria.",
+    "tags": "MS Mato Grosso do Sul ICMS benefícios fiscais Prova digital Cadastro, documentos fiscais, EFD, automação comercial e prova digital Como a regra aparece no XML, no cadastro, nos livros, na EFD, nos controles de automação e no dossiê mensal de auditoria."
+  },
+  {
+    "title": "Mato Grosso do Sul: Mapa revisado dos benefícios de ICMS do Mato Grosso do Sul",
+    "url": "estados/ms/legislacao/mapa-revisado-beneficios.html",
+    "summary": "Inventário didático dos grupos de benefícios: Anexo I, diferimento, crédito presumido, MS-Empreendedor, FUNDERSUL, regimes especiais, ST e prova.",
+    "tags": "MS Mato Grosso do Sul ICMS benefícios fiscais Inventário de benefícios Mapa revisado dos benefícios de ICMS do Mato Grosso do Sul Inventário didático dos grupos de benefícios: Anexo I, diferimento, crédito presumido, MS-Empreendedor, FUNDERSUL, regimes especiais, ST e prova."
+  },
+  {
+    "title": "Mato Grosso do Sul: Fiscalização, parcelamento, REFIS, dívida ativa e restauração de benefício",
+    "url": "estados/ms/legislacao/fiscalizacao-pagamento-restauracao.html",
+    "summary": "Pontos de controle do crédito tributário: auto de infração, trânsito, parcelamento, dívida ativa, REFIS/ICMS, contribuição condicionante e regularização.",
+    "tags": "MS Mato Grosso do Sul ICMS benefícios fiscais Fiscalização e regularização Fiscalização, parcelamento, REFIS, dívida ativa e restauração de benefício Pontos de controle do crédito tributário: auto de infração, trânsito, parcelamento, dívida ativa, REFIS/ICMS, contribuição condicionante e regularização."
+  },
+  {
+    "title": "Mato Grosso do Sul: isenções, reduções e créditos",
+    "url": "estados/ms/legislacao/isencoes-reducoes-creditos.html",
+    "summary": "Entrada direta para o capítulo temático correspondente, com texto legal em tela e análise aplicada.",
+    "tags": "MS Mato Grosso do Sul ICMS benefícios fiscais isenção redução base crédito presumido máquinas medicamentos veículos saúde agro"
+  },
+  {
+    "title": "Mato Grosso do Sul: mapa revisado dos benefícios",
+    "url": "estados/ms/legislacao/mapa-revisado-beneficios.html",
+    "summary": "Entrada direta para o capítulo temático correspondente, com texto legal em tela e análise aplicada.",
+    "tags": "MS Mato Grosso do Sul ICMS benefícios fiscais Anexo I Anexo VI regimes especiais LC 160 FUNDERSUL MS-Empreendedor"
+  },
+  {
+    "title": "Mato Grosso do Sul: agro, FUNDERSUL e diferimento",
+    "url": "estados/ms/legislacao/agro-fundersul-diferimento.html",
+    "summary": "Entrada direta para o capítulo temático correspondente, com texto legal em tela e análise aplicada.",
+    "tags": "MS Mato Grosso do Sul ICMS benefícios fiscais agro produtor rural FUNDERSUL diferimento crédito presumido abate contribuição"
+  },
+  {
+    "title": "Mato Grosso do Sul: MS-Empreendedor e regimes especiais",
+    "url": "estados/ms/legislacao/ms-empreendedor-regimes.html",
+    "summary": "Entrada direta para o capítulo temático correspondente, com texto legal em tela e análise aplicada.",
+    "tags": "MS Mato Grosso do Sul ICMS benefícios fiscais MS-Empreendedor LC 93 incentivo industrial regime especial crédito presumido"
+  },
+  {
+    "title": "Mato Grosso do Sul: ST, EFD e prova",
+    "url": "estados/ms/legislacao/documentos-efd-prova.html",
+    "summary": "Entrada direta para o capítulo temático correspondente, com texto legal em tela e análise aplicada.",
+    "tags": "MS Mato Grosso do Sul ICMS benefícios fiscais substituição tributária EFD SPED XML documento fiscal cadastro prova"
   },
   {
     "title": "Rio Grande do Norte: ICMS e benefícios fiscais em tela",

@@ -1266,6 +1266,243 @@ RN_SIGNAL_CHAPTER_MAP = {
 }
 
 
+CONFIGURED_STATE_PROFILES = {
+    "MS": {
+        "name": "Mato Grosso do Sul",
+        "hero": "Legislação estadual em tela: ICMS, benefícios fiscais, MS-Empreendedor, FUNDERSUL, ST, EFD, documentos, parcelamento e prova por assunto.",
+        "material": "Lei nº 1.810/1997, RICMS/MS, Anexo I de benefícios, Anexos II, III, V, VI e XV, LC nº 93/2001, Lei nº 1.963/1999 e atos recentes de pagamento, cadastro e EFD.",
+        "benefits": "Isenção, redução de base, crédito presumido, diferimento, regimes especiais, MS-Empreendedor, FUNDERSUL, benefícios agropecuários, máquinas, medicamentos, veículos, ST, parcelamento e restauração de incentivo.",
+        "first_question": "A operação está no campo de incidência do ICMS sul-mato-grossense? Depois disso, separe regra comum, exoneração, benefício condicionado, regime especial, ST, documento e prova.",
+        "tags": "MS Mato Grosso do Sul ICMS RICMS benefícios fiscais alíquotas base cálculo substituição tributária ST MS-Empreendedor FUNDERSUL crédito presumido diferimento Anexo I Anexo V Anexo VI EFD SPED LC 160 Convênio 190",
+        "signal_map": {
+            "exportacao": "icms-regra-matriz",
+            "nao incidencia": "icms-regra-matriz",
+            "aliquota": "base-aliquota-apuracao",
+            "reducao de base": "isencoes-reducoes-creditos",
+            "isencao": "isencoes-reducoes-creditos",
+            "credito outorgado": "ms-empreendedor-regimes",
+            "diferimento": "agro-fundersul-diferimento",
+            "suspensao": "icms-regra-matriz",
+            "regime especial": "ms-empreendedor-regimes",
+            "protege/fundo": "agro-fundersul-diferimento",
+            "fundo/contrapartida": "agro-fundersul-diferimento",
+            "substituicao tributaria": "st-antecipacao-segmentos",
+            "efd/sped": "documentos-efd-prova",
+            "cBenef": "documentos-efd-prova",
+        },
+    },
+}
+
+
+CONFIGURED_STATE_CHAPTERS = {
+    "MS": [
+        {
+            "id": "icms-regra-matriz",
+            "title": "ICMS/MS: incidência, imunidades, não incidência, isenção, suspensão e diferimento",
+            "summary": "A regra maior do ICMS em Mato Grosso do Sul: quando o imposto nasce, quando a competência é limitada e como a norma separa isenção, suspensão e diferimento.",
+            "theme": "Regra matriz",
+            "refs": [
+                {"source": "MS_LEI_1810_1997_ICMS", "articles": ["1", "2", "5", "6", "7", "12", "13"]},
+                {"source": "MS_DEC_9203_1998_RICMS_GERAL", "articles": ["1", "2", "3", "4", "5", "6", "7", "8", "9"]},
+            ],
+            "analysis": [
+                "O estudo do MS começa pela Lei nº 1.810/1997 e pelo Decreto nº 9.203/1998. A lei fixa a competência tributária e o RICMS transforma essa competência em rotina fiscal: fato gerador, contribuinte, responsável, documento e prazo.",
+                "Não incidência e isenção não são a mesma coisa. Na não incidência, o fato fica fora do campo do ICMS; na isenção, o fato entra no campo do imposto, mas a lei dispensa a cobrança dentro de condições fechadas.",
+                "Suspensão e diferimento exigem controle de evento posterior. A empresa precisa saber quando a suspensão termina, quando o diferimento encerra e quem passa a responder pelo recolhimento.",
+            ],
+            "departments": "Fiscal define CFOP, CST/CSOSN, responsável e momento do imposto. Cadastro mantém inscrição e regime. Jurídico valida imunidade, não incidência, isenção e responsabilidade. Contábil concilia débito, crédito e efeitos de diferimento.",
+            "documents": "XML, CT-e, cadastro de contribuinte, contrato, pedido, comprovante de circulação ou prestação, EFD, memória de enquadramento e fundamento legal usado no documento.",
+            "risks": "Aplicar benefício antes de verificar incidência; tratar diferimento como dispensa definitiva; chamar não incidência de isenção; não controlar o evento que encerra suspensão ou diferimento.",
+        },
+        {
+            "id": "base-aliquota-apuracao",
+            "title": "Base de cálculo, alíquotas, DIFAL, FECOMP, importados e apuração",
+            "summary": "Como a operação vira base tributável, qual alíquota se aplica, como ler carga efetiva, importados a 4%, consumidor final e recolhimento.",
+            "theme": "Carga tributária",
+            "refs": [
+                {"source": "MS_LEI_1810_1997_ICMS", "articles": ["18", "20", "30", "31", "32", "41", "41-A", "41-B", "42", "43", "83", "84"]},
+                {"source": "MS_DEC_9203_1998_RICMS_GERAL", "articles": ["15", "16", "17", "18", "19", "20", "41", "42", "42-A", "53", "61", "73", "74"]},
+                {"source": "MS_RICMS_ANEXO_023_IMPORTADOS_ALIQUOTA_4", "full_text": True},
+                {"source": "MS_RICMS_ANEXO_024_CONSUMIDOR_FINAL", "full_text": True},
+                {"source": "MS_PORT_3760_2026_VALOR_REAL_PESQUISADO", "keywords": ["Valor Real Pesquisado", "base de cálculo", "produtos"]},
+            ],
+            "analysis": [
+                "A alíquota só é lida depois da base de cálculo. Em auditoria, a pergunta correta é: qual operação ocorreu, qual base a lei mandou usar, quais parcelas entram, qual alíquota incide e se existe redução, adicional ou regime próprio.",
+                "O art. 43 da Lei nº 1.810/1997 é importante para benefícios: ele autoriza o Regulamento a disciplinar redução de base ou crédito presumido para reduzir carga tributária dentro dos limites legais.",
+                "Operações com importados, consumidor final não contribuinte, DIFAL, transporte e pauta fiscal precisam de demonstrativo próprio. O cadastro do ERP deve mostrar base cheia, base ajustada, alíquota, carga efetiva, crédito e guia.",
+            ],
+            "departments": "Fiscal parametriza base, alíquota, DIFAL, FECOMP, pauta e crédito. Contábil concilia imposto e custo. Financeiro guarda guias. Auditoria compara XML, EFD, memória de cálculo e período de vigência.",
+            "documents": "XML, NCM, tabela de alíquotas, memória de base, valor real pesquisado quando houver, EFD, DAE/GNRE, guia de fundo e demonstrativo de carga efetiva.",
+            "risks": "Trocar redução de base por alíquota menor no cadastro; aplicar alíquota atual a fato gerador antigo; ignorar regra de importados; calcular DIFAL sem reconstruir destinatário, finalidade e período.",
+        },
+        {
+            "id": "beneficios-matriz-lc160",
+            "title": "Benefícios fiscais: matriz legal, LC 160, CONFAZ e espécies admitidas",
+            "summary": "A porta de entrada para benefícios no MS: isenção, redução de base, crédito presumido, diferimento, dispensa, regime especial e incentivo condicionado.",
+            "theme": "Benefícios fiscais",
+            "refs": [
+                {"source": "MS_LEI_1810_1997_ICMS", "articles": ["43", "117-A", "228"]},
+                {"source": "MS_RICMS_ANEXO_001_BENEFICIOS", "keywords": ["DOS BENEFÍCIOS FISCAIS", "isenção", "redução de base", "crédito presumido", "Convênio ICMS", "benefício fiscal"]},
+                {"source": "MS_RICMS_ANEXO_005_REGIMES_ESPECIAIS", "keywords": ["favores fiscais", "benefícios fiscais", "regimes especiais", "condições", "manutenção"]},
+                {"source": "MS_LC_93_2001_MS_EMPREENDEDOR", "articles": ["1", "5", "14", "22", "31"]},
+            ],
+            "analysis": [
+                "Benefício fiscal é exceção expressa. Em Mato Grosso do Sul, o mapa começa no Anexo I do RICMS, passa pelos créditos do Anexo VI, pelos regimes do Anexo V, pelos programas da LC nº 93/2001 e pelas contrapartidas do FUNDERSUL quando aplicáveis.",
+                "A LC 160/2017 e o Convênio ICMS 190/2017 não dispensam a leitura do ato material. Eles explicam a camada de convalidação e reinstituição; a aplicação concreta continua exigindo produto, operação, destinatário, período, condição e prova.",
+                "A espécie do benefício muda o controle: isenção reduz débito, redução muda base, crédito presumido atua na apuração, diferimento desloca o pagamento, regime especial depende de ato e condição, e parcelamento regulariza crédito já constituído.",
+            ],
+            "departments": "Jurídico mantém matriz de ato, vigência, condição e vedação. Fiscal transforma a tese em CST, CFOP, EFD e ajuste. Contábil mede crédito, estorno e custo. Financeiro controla fundos, contribuições e recolhimentos.",
+            "documents": "Lei, decreto, anexo, termo de acordo quando houver, XML, EFD, memória de cálculo, guia, comprovação de condição, evidência de regularidade e dossiê por benefício.",
+            "risks": "Usar benefício por semelhança econômica; aplicar lista de CONFAZ como se fosse norma material completa; acumular benefício vedado; perder direito por falta de contribuição ou regularidade.",
+        },
+        {
+            "id": "isencoes-reducoes-creditos",
+            "title": "Isenções, reduções de base, créditos presumidos e subanexos setoriais",
+            "summary": "Leitura aplicada do Anexo I e dos créditos fiscais: máquinas, agro, medicamentos, veículos, saúde, hortifrutigranjeiros, importação, indústria e demais grupos.",
+            "theme": "Benefícios por grupo",
+            "refs": [
+                {"source": "MS_RICMS_ANEXO_001_BENEFICIOS", "full_text": True},
+                {"source": "MS_RICMS_ANEXO_006_CREDITOS_PRESUMIDOS_PRODUTOR", "full_text": True},
+                {"source": "MS_LEI_1810_1997_ICMS", "articles": ["43"]},
+            ],
+            "analysis": [
+                "O Anexo I é o núcleo dos benefícios sul-mato-grossenses. Ele deve ser lido por grupo: isenções, reduções, subanexos de máquinas e equipamentos industriais, implementos agrícolas, medicamentos, veículos, saúde, hortifrutigranjeiros, infraestrutura e hipóteses específicas.",
+                "O benefício não nasce do nome do setor. Ele nasce da descrição legal. Máquinas, informática, medicamentos, veículos, agro, energia, transporte e saúde exigem NCM, produto, destinatário, operação, finalidade, prazo e eventual convênio de suporte.",
+                "Crédito presumido ou fixo não é crédito comum. A empresa precisa demonstrar base do crédito, percentual, operação alcançada, vedação de acumulação, estorno de crédito comum e reflexo na apuração.",
+            ],
+            "departments": "Fiscal parametriza CST, benefício e ajuste. Compras e comercial validam produto, NCM e destinatário. Contábil separa crédito normal e presumido. Jurídico revisa condição, prazo e vedação.",
+            "documents": "XML, NCM, ficha técnica, laudo quando necessário, contrato, EFD, memória de cálculo, termo de regime quando houver, guia e fundamento legal no dossiê.",
+            "risks": "Ampliar isenção por analogia; usar subanexo de máquina para bem fora da descrição; manter crédito quando a norma manda estornar; somar crédito presumido com benefício incompatível.",
+        },
+        {
+            "id": "agro-fundersul-diferimento",
+            "title": "Agro, produtor rural, FUNDERSUL, diferimento e crédito presumido de abate",
+            "summary": "Como o MS trata cadeias agropecuárias: diferimento, contribuição condicionante, produtor rural, crédito presumido, circulação interna e prova da etapa posterior.",
+            "theme": "Agro e fundo",
+            "refs": [
+                {"source": "MS_LEI_1963_1999_FUNDERSUL", "articles": ["1", "4", "9", "13", "14"]},
+                {"source": "MS_RICMS_ANEXO_002_DIFERIMENTO", "full_text": True},
+                {"source": "MS_RICMS_ANEXO_006_CREDITOS_PRESUMIDOS_PRODUTOR", "full_text": True},
+                {"source": "MS_LEI_6495_2025_REFIS_ICMS", "articles": ["7", "8", "9"]},
+            ],
+            "analysis": [
+                "O agro no MS precisa ser lido junto com o FUNDERSUL. A Lei nº 1.963/1999 conecta diferimento em operações internas com produtos agropecuários e crédito presumido de abate a contribuição específica, quando a norma a coloca como condição.",
+                "Diferimento não elimina imposto: transfere o lançamento ou pagamento para etapa futura. Por isso, o controle exige mercadoria, produtor, adquirente, destino, evento de encerramento e contribuição quando aplicável.",
+                "A Lei nº 6.495/2025 é relevante porque permite restaurar, em hipóteses específicas, direito a benefício ou incentivo condicionado à contribuição, quando a regularização ocorre nos termos legais.",
+            ],
+            "departments": "Fiscal controla diferimento, produtor rural, encerramento e EFD. Compras valida origem e produtor. Financeiro guarda contribuição e guias. Contábil mede custo, crédito e estoque. Jurídico acompanha regularidade do benefício.",
+            "documents": "NF-e, cadastro agropecuário, inscrição estadual, romaneio, contrato, guia FUNDERSUL, EFD, memória de diferimento, comprovante de contribuição e prova da etapa posterior.",
+            "risks": "Tratar diferimento como isenção; esquecer contribuição condicionante; não provar origem/destino; perder benefício por inadimplência; não restaurar formalmente o direito quando a lei exigir procedimento.",
+        },
+        {
+            "id": "ms-empreendedor-regimes",
+            "title": "MS-Empreendedor, regimes especiais, autorizações e crédito presumido",
+            "summary": "Programas e regimes de desenvolvimento: LC nº 93/2001, Anexo V, termo de acordo, projeto, investimento, substituição por crédito presumido e perda do benefício.",
+            "theme": "Programas estaduais",
+            "refs": [
+                {"source": "MS_LC_93_2001_MS_EMPREENDEDOR", "articles": ["1", "2", "5", "14", "19", "22", "24", "27-A", "31"]},
+                {"source": "MS_RICMS_ANEXO_005_REGIMES_ESPECIAIS", "full_text": True},
+            ],
+            "analysis": [
+                "A LC nº 93/2001 estrutura o ambiente de incentivos de MS, incluindo concessão, revisão, suspensão, cancelamento e substituição de benefícios por crédito fixo ou presumido. O ponto central é que o benefício depende de ato, projeto, condição e acompanhamento.",
+                "O Anexo V do RICMS é a camada procedimental dos regimes especiais e autorizações específicas. Ele ensina quem decide, quais condições devem ser cumpridas, quais prazos valem e quando o favor fiscal pode ser suspenso ou cancelado.",
+                "Para indústria, centro de distribuição ou empreendimento incentivado, a tese não é apenas tributária: é operacional. Investimento, emprego, localização, produção, prazo, regularidade e cumprimento do termo fazem parte da prova.",
+            ],
+            "departments": "Jurídico e controladoria acompanham projeto, termo e vigência. Fiscal calcula benefício e EFD. Operações prova investimento e produção. RH prova emprego quando relevante. Financeiro controla recolhimento e contrapartidas.",
+            "documents": "Projeto, termo de acordo, deliberação, ato concessivo, relatórios de investimento, XML, EFD, memória de crédito presumido, certidões, guias e controles de metas.",
+            "risks": "Usar incentivo fora do estabelecimento ou produto aprovado; ignorar prazo; deixar de cumprir condição; calcular crédito presumido sem autorização; perder benefício por irregularidade fiscal.",
+        },
+        {
+            "id": "st-antecipacao-segmentos",
+            "title": "Substituição tributária, antecipação, MVA, segmentos e transporte",
+            "summary": "Responsabilidade por substituição, mercadorias sujeitas, base presumida, MVA, pauta, transporte e prova do imposto retido.",
+            "theme": "Responsabilidade tributária",
+            "refs": [
+                {"source": "MS_LEI_1810_1997_ICMS", "articles": ["55", "56", "57", "57-A", "58", "61", "62"]},
+                {"source": "MS_RICMS_ANEXO_003_ST", "full_text": True},
+                {"source": "MS_RICMS_ANEXO_021_TABELA_TRANSPORTE", "full_text": True},
+            ],
+            "analysis": [
+                "ST não é benefício; é técnica de responsabilidade. O estudo deve começar por mercadoria, NCM/CEST, protocolo ou convênio, operação, origem, destino, responsável e base presumida.",
+                "O Anexo III reúne regras de substituição tributária e seus segmentos. A descrição legal precisa bater com o produto real; sem isso, MVA, pauta e recolhimento antecipado podem estar errados desde a origem.",
+                "Transporte e pauta exigem leitura própria. O CT-e, MDF-e, percurso, carga, tarifa e responsável precisam fechar com a memória de cálculo e com a EFD.",
+            ],
+            "departments": "Fiscal controla NCM/CEST, MVA, pauta e CST. Compras valida fornecedor/substituto. Logística prova transporte. Financeiro guarda guia. Auditoria cruza estoque, XML, CT-e e EFD.",
+            "documents": "XML, CT-e, MDF-e, NCM, CEST, tabela do anexo, pauta, MVA, GNRE/DAE, EFD, cadastro de item, comprovante de recolhimento e memória por produto.",
+            "risks": "Aplicar ST por semelhança de produto; ignorar ressarcimento ou complemento; tratar antecipação como encerramento de cadeia sem base; usar pauta desatualizada.",
+        },
+        {
+            "id": "documentos-efd-prova",
+            "title": "Cadastro, documentos fiscais, EFD, automação comercial e prova digital",
+            "summary": "Como a regra aparece no XML, no cadastro, nos livros, na EFD, nos controles de automação e no dossiê mensal de auditoria.",
+            "theme": "Prova digital",
+            "refs": [
+                {"source": "MS_RICMS_ANEXO_004_CADASTRO", "full_text": True},
+                {"source": "MS_RICMS_ANEXO_015_DOCUMENTOS_FISCAIS", "keywords": ["NF-e", "EFD", "Escrituração Fiscal Digital", "documentos fiscais", "livros fiscais", "Nota Fiscal Eletrônica"]},
+                {"source": "MS_RICMS_ANEXO_018_AUTOMACAO_COMERCIAL", "full_text": True},
+                {"source": "MS_DEC_14644_2016_CADASTRO_FISCAL", "keywords": ["Cadastro Fiscal", "inscrição", "suspensão", "cancelamento"]},
+                {"source": "MS_RES_3485_2025_EFD", "full_text": True},
+                {"source": "MS_ATO_DECL_1_2026_CADASTRO", "full_text": True},
+            ],
+            "analysis": [
+                "A tese tributária só vira defesa quando aparece no documento certo. No MS, cadastro fiscal, NF-e, CT-e, EFD, livros, automação comercial e atos de suspensão ou cancelamento de inscrição formam a trilha de prova.",
+                "EFD não cria direito. Ela declara o direito que precisa existir na lei, no decreto, no anexo ou no termo. Se o fundamento material estiver errado, o arquivo digital apenas torna o erro mais visível.",
+                "Benefício, ST, diferimento e crédito presumido devem deixar rastro: CST/CSOSN, CFOP, informações complementares, ajuste, registro, guia, memória e conciliação contábil.",
+            ],
+            "departments": "Fiscal transmite e reconcilia EFD. TI mantém parâmetros de emissão. Cadastro cuida de inscrição e regime. Contábil fecha ajustes. Financeiro guarda guias. Auditoria valida coerência mensal.",
+            "documents": "NF-e, NFC-e, CT-e, MDF-e, EFD, recibo, registros e ajustes, livros fiscais, cadastro, termo, XML, comprovante de guia, memória de cálculo e ato legal.",
+            "risks": "Declarar ajuste sem direito material; manter cadastro incompatível com operação; perder inscrição por pendência; emitir XML sem fundamento; não guardar dossiê local do benefício.",
+        },
+        {
+            "id": "mapa-revisado-beneficios",
+            "title": "Mapa revisado dos benefícios de ICMS do Mato Grosso do Sul",
+            "summary": "Inventário didático dos grupos de benefícios: Anexo I, diferimento, crédito presumido, MS-Empreendedor, FUNDERSUL, regimes especiais, ST e prova.",
+            "theme": "Inventário de benefícios",
+            "refs": [
+                {"source": "MS_RICMS_ANEXO_001_BENEFICIOS", "full_text": True},
+                {"source": "MS_RICMS_ANEXO_002_DIFERIMENTO", "keywords": ["diferimento", "produtos agropecuários", "operações internas", "encerramento"]},
+                {"source": "MS_RICMS_ANEXO_006_CREDITOS_PRESUMIDOS_PRODUTOR", "full_text": True},
+                {"source": "MS_RICMS_ANEXO_005_REGIMES_ESPECIAIS", "keywords": ["favores fiscais", "regimes especiais", "condições para concessão", "manutenção"]},
+                {"source": "MS_LC_93_2001_MS_EMPREENDEDOR", "keywords": ["MS-EMPREENDEDOR", "incentivo", "benefício fiscal", "crédito fixo", "crédito presumido"]},
+                {"source": "MS_LEI_1963_1999_FUNDERSUL", "keywords": ["diferimento", "crédito presumido", "FUNDERSUL", "contribuição"]},
+                {"source": "MS_RICMS_ANEXO_015_DOCUMENTOS_FISCAIS", "keywords": ["EFD", "documentos fiscais", "Nota Fiscal Eletrônica"]},
+            ],
+            "analysis": [
+                "O mapa de benefícios de MS deve ser lido por técnica e por setor. Técnica: isenção, redução, crédito presumido, diferimento, suspensão, regime especial e parcelamento/restauração. Setor: agro, indústria, máquinas, medicamentos, saúde, veículos, infraestrutura, importação, transporte e comércio.",
+                "O Anexo I traz a lista material mais extensa. O Anexo II cuida de diferimento. O Anexo VI cuida de créditos fixos ou presumidos e produtor rural. O Anexo V dá o procedimento de regimes especiais. A LC nº 93/2001 organiza incentivos econômicos. A Lei nº 1.963/1999 conecta agro, FUNDERSUL e condições.",
+                "A forma mais segura de aplicar qualquer item é montar matriz com: dispositivo, produto/operação, destinatário, vigência, condição, vedação, documento, EFD, guia e revisão de acumulação.",
+            ],
+            "departments": "Jurídico guarda a matriz de benefícios. Fiscal parametriza cada técnica. Compras, comercial e operações comprovam produto, destino e finalidade. Contábil mede crédito e estorno. Financeiro guarda contribuições e guias.",
+            "documents": "Anexo ou lei do benefício, termo quando houver, XML, EFD, NCM, ficha técnica, memória de cálculo, guia, comprovante de contribuição, relatório de metas e parecer de enquadramento.",
+            "risks": "Confundir técnica do benefício; aplicar por setor sem ler o item; esquecer contrapartida; não provar condição; usar benefício vencido ou acumulado indevidamente.",
+        },
+        {
+            "id": "fiscalizacao-pagamento-restauracao",
+            "title": "Fiscalização, parcelamento, REFIS, dívida ativa e restauração de benefício",
+            "summary": "Pontos de controle do crédito tributário: auto de infração, trânsito, parcelamento, dívida ativa, REFIS/ICMS, contribuição condicionante e regularização.",
+            "theme": "Fiscalização e regularização",
+            "refs": [
+                {"source": "MS_LEI_1810_1997_ICMS", "articles": ["117-A", "119", "228"]},
+                {"source": "MS_LEI_6495_2025_REFIS_ICMS", "articles": ["1", "2", "3", "4", "7", "8", "9", "16"]},
+                {"source": "MS_DEC_16721_2025_REFIS_PRORROGACAO", "full_text": True},
+                {"source": "MS_RICMS_ANEXO_009_PARCELAMENTO", "full_text": True},
+                {"source": "MS_RICMS_ANEXO_011_AUTO_INFRACAO", "full_text": True},
+                {"source": "MS_RICMS_ANEXO_012_FISCALIZACAO_TRANSITO", "full_text": True},
+                {"source": "MS_RICMS_ANEXO_013_DIVIDA_ATIVA", "full_text": True},
+            ],
+            "analysis": [
+                "Fiscalização fecha o ciclo da tese: se a empresa aplicou benefício sem condição, crédito sem base, ST sem enquadramento ou diferimento sem encerramento, o risco aparece em auto, inscrição, parcelamento ou perda de benefício.",
+                "A Lei nº 6.495/2025 é relevante para créditos de ICMS de fatos geradores até 28 de fevereiro de 2025 e para hipóteses de regularização ligadas a benefício ou incentivo condicionado à contribuição. Ela deve ser lida com o art. 228 da Lei nº 1.810/1997.",
+                "Regularizar não apaga a necessidade de corrigir processo. Depois do parcelamento ou restauração, a empresa precisa corrigir cadastro, XML, EFD, memória, recolhimento e política interna para evitar repetição do erro.",
+            ],
+            "departments": "Jurídico conduz defesa, parcelamento e risco. Fiscal reconstrói documentos. Contábil concilia crédito e provisão. Financeiro acompanha adesão, parcela e guia. Auditoria ajusta controles internos.",
+            "documents": "Auto de infração, notificação, processo administrativo, dívida ativa, termo de parcelamento, guia, comprovante de pagamento, EFD retificada, XML, memória e relatório de correção de causa.",
+            "risks": "Aderir a regularização sem corrigir parametrização; pagar contribuição fora do prazo; manter benefício suspenso; não retificar EFD; perder prova de pagamento e restauração.",
+        },
+    ],
+}
+
+
 def slug(value: str) -> str:
     normalized = unicodedata.normalize("NFKD", value)
     ascii_text = normalized.encode("ascii", "ignore").decode("ascii")
@@ -2726,6 +2963,227 @@ def render_rn_pages(docs: tuple[dict, ...], layout_func) -> dict[str, str]:
     return pages
 
 
+def configured_chapters(uf: str) -> list[dict]:
+    return CONFIGURED_STATE_CHAPTERS.get(uf, [])
+
+
+def configured_profile(uf: str) -> dict:
+    return CONFIGURED_STATE_PROFILES.get(uf, {"name": STATE_NAMES.get(uf, uf), "signal_map": {}})
+
+
+def configured_chapter_path(uf: str, chapter_id: str) -> str:
+    return f"estados/{uf.lower()}/legislacao/{chapter_id}.html"
+
+
+def configured_chapter_by_id(uf: str, chapter_id: str) -> dict:
+    return next(chapter for chapter in configured_chapters(uf) if chapter["id"] == chapter_id)
+
+
+def configured_law_blocks(current_path: str, uf: str, docs: tuple[dict, ...], chapter: dict) -> str:
+    source_map = docs_by_source_id(docs)
+    blocks = []
+    for ref in chapter.get("refs", []):
+        doc = source_map.get(ref["source"])
+        if not doc:
+            continue
+        segments: list[tuple[str, str]] = []
+        if ref.get("articles"):
+            segments = article_segments(doc, ref["articles"])
+        elif ref.get("full_text"):
+            if doc["chars"] <= 28000:
+                segments = [("Texto integral do ato", clean_law_segment(doc["text"], limit=30000))]
+            else:
+                needles = [
+                    "isenção", "redução de base", "crédito presumido", "diferimento",
+                    "regime especial", "benefício fiscal", "EFD", "substituição tributária",
+                ]
+                segments = [
+                    (f"Trecho {idx}", clean_law_segment(item, limit=6200))
+                    for idx, item in enumerate(excerpts(doc["text"], needles, limit=6), start=1)
+                ]
+        elif ref.get("keywords"):
+            segments = [
+                (f"Trecho {idx}", clean_law_segment(item, limit=6200))
+                for idx, item in enumerate(excerpts(doc["text"], ref["keywords"], limit=6), start=1)
+            ]
+        if not segments:
+            segments = [
+                (f"Trecho {idx}", clean_law_segment(item, limit=5000))
+                for idx, item in enumerate(excerpts(doc["text"], [chapter["title"], chapter["summary"]], limit=2), start=1)
+            ]
+        law_html = "".join(f"""
+<article class="article-block">
+  <div class="article-number">{escape(label)}</div>
+  <pre class="law-pre">{escape(segment)}</pre>
+</article>
+""" for label, segment in segments if segment)
+        blocks.append(f"""
+<section class="legal-document">
+  <div class="document-heading">
+    <div>
+      <span class="eyebrow">{escape(doc['category_label'])}</span>
+      <h3>{escape(doc['title'])}</h3>
+      <p>Dispositivos essenciais para este capítulo. A íntegra está preservada na página-fonte do portal.</p>
+    </div>
+    <div class="document-actions">
+      <a href="{escape(rel_href(current_path, source_path(uf, doc)))}">abrir fonte integral</a>
+      <a href="{escape(doc.get('official_url', STATE_OFFICIAL_PORTALS.get(uf, '#')))}" target="_blank" rel="noopener">fonte pública</a>
+    </div>
+  </div>
+  {law_html}
+</section>
+""")
+    return "".join(blocks)
+
+
+def render_configured_state_index_page(uf: str, docs: tuple[dict, ...], layout_func) -> str:
+    profile = configured_profile(uf)
+    name = profile.get("name", STATE_NAMES.get(uf, uf))
+    current = index_path(uf)
+    chapter_cards = []
+    for chapter in configured_chapters(uf):
+        chapter_cards.append(f"""
+<a class="portal-card searchable-card" href="{escape(rel_href(current, configured_chapter_path(uf, chapter['id'])))}"
+   data-search="{escape(name + ' ' + uf + ' ICMS beneficios fiscais ' + chapter['title'] + ' ' + chapter['summary'] + ' ' + chapter['theme'])}">
+  <span class="card-kicker">{escape(chapter['theme'])}</span>
+  <h3>{escape(chapter['title'])}</h3>
+  <p>{escape(chapter['summary'])}</p>
+</a>
+""")
+    body = f"""
+<section class="hero-panel legal-hero">
+  <div>
+    <span class="eyebrow">{escape(uf)} · ICMS em tela</span>
+    <h1>{escape(name)}: ICMS e benefícios fiscais em tela</h1>
+    <p>{escape(profile.get('hero', 'Legislação estadual em tela por capítulos temáticos.'))}</p>
+  </div>
+  <aside class="hero-proof">
+    <strong>Como estudar</strong>
+    <p>Leia primeiro a regra maior. Depois avance para benefícios, regimes, documentos, fiscalização e riscos. A análise vem sempre depois do texto legal.</p>
+  </aside>
+</section>
+<section class="law-ledger">
+  <div>
+    <h2>Material publicado</h2>
+    <p>{fmt_num(len(docs))} fontes normativas de ICMS/{escape(uf)}, com {fmt_num(sum(int(doc['chars']) for doc in docs))} caracteres em tela.</p>
+  </div>
+  <div>
+    <h2>Fontes centrais</h2>
+    <p>{escape(profile.get('material', 'RICMS, leis, anexos e atos complementares de ICMS.'))}</p>
+  </div>
+  <div>
+    <h2>Benefícios cobertos</h2>
+    <p>{escape(profile.get('benefits', 'Isenção, redução, crédito, diferimento, ST, regimes especiais e prova fiscal.'))}</p>
+  </div>
+</section>
+<section class="topic-index">
+  <div class="section-heading">
+    <span class="eyebrow">Índice por tema</span>
+    <h2>Capítulos do ICMS de {escape(name)}</h2>
+    <p>Cada entrada leva a uma seção específica, com lei em tela, explicação, aplicação por departamento, documentos de prova e riscos.</p>
+  </div>
+  <div class="card-grid">{''.join(chapter_cards)}</div>
+</section>
+<section class="continuity">
+  <h2>Continuar a leitura</h2>
+  <div>
+    <a href="{escape(rel_href(current, state_page_path(uf)))}">voltar ao Estado</a>
+    <a href="{escape(rel_href(current, 'confaz/index.html'))}">CONFAZ e LC 160</a>
+    <a href="{escape(rel_href(current, 'federal/pis-cofins.html'))}">conectar com PIS/Cofins</a>
+    <a href="{escape(rel_href(current, 'biblioteca/index.html'))}">biblioteca avançada</a>
+  </div>
+</section>
+"""
+    return layout_func(current, f"{name}: ICMS e benefícios fiscais em tela", f"ICMS/{uf}, benefícios fiscais, regimes, ST e prova documental.", body, "estados")
+
+
+def render_configured_state_chapter_page(uf: str, docs: tuple[dict, ...], chapter: dict, layout_func) -> str:
+    profile = configured_profile(uf)
+    name = profile.get("name", STATE_NAMES.get(uf, uf))
+    current = configured_chapter_path(uf, chapter["id"])
+    related = []
+    for other in configured_chapters(uf):
+        if other["id"] == chapter["id"]:
+            continue
+        if other["theme"] == chapter["theme"] or len(related) < 4:
+            related.append(other)
+        if len(related) >= 5:
+            break
+    related_links = "".join(
+        f'<a href="{escape(rel_href(current, configured_chapter_path(uf, item["id"])))}">{escape(item["title"])}</a>'
+        for item in related
+    )
+    analysis_items = "".join(f"<p>{escape(item)}</p>" for item in chapter.get("analysis", []))
+    body = f"""
+<section class="hero-panel legal-hero">
+  <div>
+    <span class="eyebrow">{escape(name)} · {escape(chapter['theme'])}</span>
+    <h1>{escape(chapter['title'])}</h1>
+    <p>{escape(chapter['summary'])}</p>
+  </div>
+  <aside class="hero-proof">
+    <strong>Leitura guiada</strong>
+    <p>Primeiro a legislação em tela; depois interpretação, aplicação por departamento, prova e risco.</p>
+  </aside>
+</section>
+<section class="topic-index compact-index">
+  <div class="section-heading">
+    <span class="eyebrow">Voltar ao índice</span>
+    <h2>{escape(uf)} por capítulos</h2>
+  </div>
+  <div class="signal-law-links">
+    <strong>Continuar no Estado</strong>
+    <div>
+      <a href="{escape(rel_href(current, index_path(uf)))}">índice de {escape(uf)}</a>
+      <a href="{escape(rel_href(current, state_page_path(uf)))}">página principal</a>
+      <a href="{escape(rel_href(current, 'confaz/index.html'))}">CONFAZ</a>
+    </div>
+  </div>
+</section>
+<section class="legal-chapters">
+  <div class="section-heading">
+    <span class="eyebrow">Legislação em tela</span>
+    <h2>Texto legal antes da análise</h2>
+    <p>Os blocos abaixo trazem os dispositivos nucleares deste assunto. A íntegra de cada ato fica aberta nas páginas-fonte do portal.</p>
+  </div>
+  {configured_law_blocks(current, uf, docs, chapter)}
+</section>
+<section class="content-block">
+  <span class="eyebrow">Análise aplicada</span>
+  <h2>Como interpretar</h2>
+  {analysis_items}
+</section>
+<section class="law-ledger">
+  <div>
+    <h2>Aplicação por departamento</h2>
+    <p>{escape(chapter.get('departments', 'Fiscal, contábil, financeiro e jurídico devem amarrar regra, documento, escrituração e pagamento.'))}</p>
+  </div>
+  <div>
+    <h2>Documentos de prova</h2>
+    <p>{escape(chapter.get('documents', 'XML, EFD, memória de cálculo, ato legal e comprovantes.'))}</p>
+  </div>
+  <div>
+    <h2>Riscos comuns</h2>
+    <p>{escape(chapter.get('risks', 'Aplicar tese sem dispositivo, condição, vigência ou prova documental suficiente.'))}</p>
+  </div>
+</section>
+<section class="continuity">
+  <h2>Continuar este estudo</h2>
+  <div>{related_links}</div>
+</section>
+"""
+    return layout_func(current, f"{name}: {chapter['title']}", chapter["summary"], body, "estados")
+
+
+def render_configured_state_pages(uf: str, docs: tuple[dict, ...], layout_func) -> dict[str, str]:
+    pages = {index_path(uf): render_configured_state_index_page(uf, docs, layout_func)}
+    for chapter in configured_chapters(uf):
+        pages[configured_chapter_path(uf, chapter["id"])] = render_configured_state_chapter_page(uf, docs, chapter, layout_func)
+    for doc in docs:
+        pages[source_path(uf, doc)] = render_source_page(uf, doc, layout_func)
+    return pages
+
+
 def render_index_page(uf: str, docs: list[dict], layout_func) -> str:
     name = STATE_NAMES.get(uf, uf)
     current = index_path(uf)
@@ -2918,6 +3376,9 @@ def build_state_legal_pages(layout_func, data: dict) -> dict[str, str]:
         if uf == "RN":
             pages.update(render_rn_pages(docs, layout_func))
             continue
+        if uf in CONFIGURED_STATE_CHAPTERS:
+            pages.update(render_configured_state_pages(uf, docs, layout_func))
+            continue
         pages[index_path(uf)] = render_index_page(uf, docs, layout_func)
         for group in GROUP_DEFS:
             pages[group_path(uf, group["id"])] = render_group_page(uf, docs, group, layout_func)
@@ -2970,6 +3431,19 @@ def state_legislation_teaser(uf: str, current_path: str) -> str:
             ("ST, antecipação e combustíveis", rn_chapter_path("st-antecipacao-combustiveis")),
             ("cBenef, EFD e prova", rn_chapter_path("documentos-cbenef-efd-prova")),
         ]
+    elif uf in CONFIGURED_STATE_CHAPTERS and state_is_deep_published(uf) and publishable_state_documents(uf):
+        chapters = configured_chapters(uf)
+        links = [(f"{STATE_NAMES.get(uf, uf)}: índice completo", index_path(uf))]
+        for chapter_id in [
+            "icms-regra-matriz",
+            "base-aliquota-apuracao",
+            "beneficios-matriz-lc160",
+            "mapa-revisado-beneficios",
+            "documentos-efd-prova",
+        ]:
+            if any(chapter["id"] == chapter_id for chapter in chapters):
+                chapter = configured_chapter_by_id(uf, chapter_id)
+                links.append((chapter["title"], configured_chapter_path(uf, chapter_id)))
     else:
         if not state_is_deep_published(uf):
             step = state_curation(uf).get("next_step", "Curadoria fonte-a-fonte pendente.")
@@ -3091,6 +3565,21 @@ def state_signal_links(uf: str, signal_key: str, current_path: str) -> str:
   <div>
     <a href="{escape(rel_href(current_path, rn_chapter_path(chapter_id)))}">{escape(chapter['title'])}</a>
     <a href="{escape(rel_href(current_path, index_path('RN')))}">índice completo do RN</a>
+  </div>
+</div>
+"""
+    if uf in CONFIGURED_STATE_CHAPTERS:
+        if not state_is_deep_published(uf) or not publishable_state_documents(uf):
+            return ""
+        profile = configured_profile(uf)
+        chapter_id = profile.get("signal_map", {}).get(signal_key, "icms-regra-matriz")
+        chapter = configured_chapter_by_id(uf, chapter_id)
+        return f"""
+<div class="signal-law-links">
+  <strong>Capítulo de {escape(uf)} para estudar agora</strong>
+  <div>
+    <a href="{escape(rel_href(current_path, configured_chapter_path(uf, chapter_id)))}">{escape(chapter['title'])}</a>
+    <a href="{escape(rel_href(current_path, index_path(uf)))}">índice completo de {escape(uf)}</a>
   </div>
 </div>
 """
@@ -3235,6 +3724,36 @@ def state_legal_search_entries(data: dict) -> list[dict[str, str]]:
                     "tags": f"RN Rio Grande do Norte ICMS benefícios fiscais {tags}",
                 })
             continue
+        if uf in CONFIGURED_STATE_CHAPTERS:
+            profile = configured_profile(uf)
+            entries.append({
+                "title": f"{name}: ICMS e benefícios fiscais em tela",
+                "url": index_path(uf),
+                "summary": profile.get("hero", f"RICMS, leis, anexos, benefícios fiscais, alíquotas, ST e prova documental de {name}."),
+                "tags": profile.get("tags", f"{uf} {name} ICMS RICMS benefícios fiscais alíquotas ST"),
+            })
+            for chapter in configured_chapters(uf):
+                entries.append({
+                    "title": f"{name}: {chapter['title']}",
+                    "url": configured_chapter_path(uf, chapter["id"]),
+                    "summary": chapter["summary"],
+                    "tags": f"{uf} {name} ICMS benefícios fiscais {chapter['theme']} {chapter['title']} {chapter['summary']}",
+                })
+            for title, chapter_id, tags in [
+                (f"{name}: isenções, reduções e créditos", "isencoes-reducoes-creditos", "isenção redução base crédito presumido máquinas medicamentos veículos saúde agro"),
+                (f"{name}: mapa revisado dos benefícios", "mapa-revisado-beneficios", "Anexo I Anexo VI regimes especiais LC 160 FUNDERSUL MS-Empreendedor"),
+                (f"{name}: agro, FUNDERSUL e diferimento", "agro-fundersul-diferimento", "agro produtor rural FUNDERSUL diferimento crédito presumido abate contribuição"),
+                (f"{name}: MS-Empreendedor e regimes especiais", "ms-empreendedor-regimes", "MS-Empreendedor LC 93 incentivo industrial regime especial crédito presumido"),
+                (f"{name}: ST, EFD e prova", "documentos-efd-prova", "substituição tributária EFD SPED XML documento fiscal cadastro prova"),
+            ]:
+                if any(chapter["id"] == chapter_id for chapter in configured_chapters(uf)):
+                    entries.append({
+                        "title": title,
+                        "url": configured_chapter_path(uf, chapter_id),
+                        "summary": "Entrada direta para o capítulo temático correspondente, com texto legal em tela e análise aplicada.",
+                        "tags": f"{uf} {name} ICMS benefícios fiscais {tags}",
+                    })
+            continue
         entries.append({
             "title": f"{name}: legislação de ICMS em tela",
             "url": index_path(uf),
@@ -3302,6 +3821,13 @@ def state_source_records() -> list[dict]:
                     if any(ref.get("source") == doc.get("source_id") for ref in chapter.get("refs", []))
                 ]
                 module_title = "Rio Grande do Norte: ICMS e benefícios fiscais em tela"
+            elif uf in CONFIGURED_STATE_CHAPTERS:
+                used_chapters = [
+                    chapter["id"]
+                    for chapter in configured_chapters(uf)
+                    if any(ref.get("source") == doc.get("source_id") for ref in chapter.get("refs", []))
+                ]
+                module_title = f"{STATE_NAMES.get(uf, uf)}: ICMS e benefícios fiscais em tela"
             else:
                 used_chapters = [group["id"] for group in GROUP_DEFS if doc_matches_group(doc, group)]
                 module_title = f"{STATE_NAMES.get(uf, uf)}: legislação de ICMS em tela"

@@ -19,7 +19,11 @@ from legal_modules import (
     topic_has_legal_module,
 )
 from state_legal_pages import (
+    CONFIGURED_STATE_CHAPTERS,
     build_state_legal_pages,
+    configured_chapter_path,
+    configured_chapters,
+    configured_profile,
     state_has_legal_pack,
     state_legal_search_entries,
     state_legislation_teaser,
@@ -1381,6 +1385,31 @@ def estados_index(data: dict) -> str:
     return layout("estados/index.html", "ICMS por Estado", "Mapa nacional de ICMS e benefícios fiscais por UF.", body, "estados")
 
 
+def configured_state_overview_cards(uf: str) -> str:
+    cards = []
+    priority = [
+        "mapa-revisado-beneficios",
+        "isencoes-reducoes-creditos",
+        "agro-fundersul-diferimento",
+        "ms-empreendedor-regimes",
+        "st-antecipacao-segmentos",
+        "documentos-efd-prova",
+        "fiscalizacao-pagamento-restauracao",
+    ]
+    chapters = {chapter["id"]: chapter for chapter in configured_chapters(uf)}
+    ordered = [chapters[item] for item in priority if item in chapters]
+    ordered.extend(chapter for chapter in configured_chapters(uf) if chapter["id"] not in priority)
+    for chapter in ordered[:8]:
+        href = configured_chapter_path(uf, chapter["id"]).replace(f"estados/{uf.lower()}/", f"{uf.lower()}/")
+        cards.append(f"""
+    <a class="matrix-card searchable-card" href="{escape(href)}" data-search="{escape(uf + ' ICMS beneficios fiscais ' + chapter['title'] + ' ' + chapter['summary'])}">
+      <h3>{escape(chapter['title'])}</h3>
+      <p>{escape(chapter['summary'])}</p>
+    </a>
+""")
+    return "".join(cards)
+
+
 def state_page(state: dict, data: dict) -> str:
     inv = inventory_state(data, state["uf"])
     display_name = state_display_name(state)
@@ -1658,6 +1687,42 @@ def state_page(state: dict, data: dict) -> str:
 </section>
 """
             return layout(path, f'{display_name}: ICMS e benefícios fiscais', "ICMS do Rio Grande do Norte em tela por capítulos.", body, "estados")
+        if state["uf"] in CONFIGURED_STATE_CHAPTERS:
+            profile = configured_profile(state["uf"])
+            body = f"""
+{hero(f'{display_name}: ICMS e benefícios fiscais', profile.get('hero', 'Legislação estadual em tela: ICMS, benefícios fiscais, alíquotas, ST, documentos e prova por assunto.'), state["uf"])}
+<section class="law-ledger">
+  <div>
+    <h2>Estado do estudo</h2>
+    <p>{escape(display_name)} está publicado em capítulos próprios, com legislação em tela, benefícios por grupos, regimes especiais, documentos fiscais e prova. O caminho correto é abrir o índice do Estado, ler a lei e depois avançar para a análise aplicada.</p>
+  </div>
+  <div>
+    <h2>Primeira pergunta</h2>
+    <p>{escape(profile.get('first_question', 'A operação está no campo de incidência do ICMS? Só depois disso faz sentido discutir benefício, regime, ST ou documento.'))}</p>
+  </div>
+  <div>
+    <h2>Prova antes de tese</h2>
+    <p>XML, cadastro do item, NCM, EFD, memória de cálculo, ato concessivo, guia e dispositivo legal precisam sustentar a mesma conclusão.</p>
+  </div>
+</section>
+{state_legislation_teaser(state["uf"], path)}
+<section class="matrix-section">
+  <h2>Benefícios fiscais por grupo</h2>
+  <div class="matrix-grid">
+{configured_state_overview_cards(state["uf"])}
+  </div>
+</section>
+<section class="continuity">
+  <h2>Continuar a leitura</h2>
+  <div>
+    <a href="{state["uf"].lower()}/legislacao/index.html">Abrir índice completo de {escape(state["uf"])}</a>
+    <a href="../confaz/index.html">Entender CONFAZ e benefícios</a>
+    <a href="../federal/pis-cofins.html">Conectar com PIS/Cofins</a>
+    <a href="../biblioteca/index.html">Consultar manuais e painel</a>
+  </div>
+</section>
+"""
+            return layout(path, f'{display_name}: ICMS e benefícios fiscais', f"ICMS de {display_name} em tela por capítulos.", body, "estados")
         body = f"""
 {hero(f'{display_name}: ICMS e benefícios fiscais', 'Legislação estadual em tela: ICMS, benefícios fiscais, alíquotas, ST, documentos e prova por assunto.', state["uf"])}
 <section class="law-ledger">

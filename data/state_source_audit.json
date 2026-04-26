@@ -2,10 +2,10 @@
   "generated_on": "2026-04-26",
   "summary": {
     "states": 27,
-    "docs": 210,
-    "publishable_docs": 207,
+    "docs": 240,
+    "publishable_docs": 237,
     "scope_blocked_docs": 3,
-    "blocked": 22
+    "blocked": 21
   },
   "states": {
     "AC": {
@@ -2102,100 +2102,615 @@
     "MS": {
       "estado": "Mato Grosso do Sul",
       "region": "Centro-Oeste",
-      "curadoria": "revisao_fonte",
-      "publish_deep": false,
-      "document_count": 5,
-      "publishable_document_count": 5,
+      "curadoria": "publicado_v1",
+      "publish_deep": true,
+      "document_count": 35,
+      "publishable_document_count": 35,
       "scope_blocked_document_count": 0,
-      "total_chars": 2230461,
+      "total_chars": 3173727,
       "categories": {
+        "ICMS_LEIS": 1,
+        "OUTROS": 29,
         "RICMS": 5
       },
-      "flags": [
-        "contém IPVA",
-        "contém ITCMD/ITCD",
-        "contém Taxas"
-      ],
-      "recommendation": "bloquear_publicacao_ate_curadoria",
-      "next_step": "Baixar RICMS/MS e anexos de benefícios no portal oficial de Mato Grosso do Sul.",
+      "flags": [],
+      "recommendation": "manter_publicado",
+      "next_step": "Mato Grosso do Sul publicado como página profunda: Lei nº 1.810/1997, RICMS/MS, Anexos I, II, III, V, VI e XV, LC nº 93/2001, FUNDERSUL, MS-Empreendedor, diferimento, crédito presumido, ST, EFD, parcelamento e prova fiscal.",
       "documents": [
         {
-          "file": "MS_RICMS_pt1.txt",
-          "category": "RICMS",
-          "chars": 482292,
+          "file": "MS_LEI_1810_1997_ICMS_2026-04-26.txt",
+          "category": "ICMS_LEIS",
+          "chars": 559591,
           "named_icms": true,
           "fallback_icms": false,
           "dominant_scope": "ICMS",
-          "source_scopes": [],
+          "source_scopes": [
+            "ICMS"
+          ],
           "scope_blocked": false,
           "scope_flags": [],
-          "source_documents": [],
-          "flags": [
-            "contém ITCMD/ITCD",
-            "contém Taxas"
-          ]
+          "source_documents": [
+            "https://aacpdappls.net.ms.gov.br/appls/legislacao/secoge/govato.nsf/448b683bce4ca84704256c0b00651e9d/037448c46af3acaf04256d410048094b?OpenDocument="
+          ],
+          "flags": []
         },
         {
-          "file": "MS_RICMS_pt2.txt",
-          "category": "RICMS",
-          "chars": 484683,
+          "file": "MS_LC_93_2001_MS_EMPREENDEDOR_2026-04-26.txt",
+          "category": "OUTROS",
+          "chars": 227645,
           "named_icms": true,
           "fallback_icms": false,
           "dominant_scope": "ICMS",
-          "source_scopes": [],
+          "source_scopes": [
+            "ICMS"
+          ],
           "scope_blocked": false,
           "scope_flags": [],
-          "source_documents": [],
-          "flags": [
-            "contém Taxas"
-          ]
+          "source_documents": [
+            "https://aacpdappls.net.ms.gov.br/appls/legislacao/serc/legato.nsf/23b657614c182061042579c80053770d/8c374a7005c9643104256da9006e87c4"
+          ],
+          "flags": []
         },
         {
-          "file": "MS_RICMS_pt3.txt",
-          "category": "RICMS",
-          "chars": 482571,
+          "file": "MS_LEI_1963_1999_FUNDERSUL_2026-04-26.txt",
+          "category": "OUTROS",
+          "chars": 41460,
           "named_icms": true,
           "fallback_icms": false,
           "dominant_scope": "ICMS",
-          "source_scopes": [],
+          "source_scopes": [
+            "ICMS"
+          ],
           "scope_blocked": false,
           "scope_flags": [],
-          "source_documents": [],
-          "flags": [
-            "contém Taxas"
-          ]
+          "source_documents": [
+            "https://aacpdappls.net.ms.gov.br/appls/legislacao/serc/legato.nsf/23b657614c182061042579c80053770d/0fabf2cd6f2fefed04256ae7004d34c5"
+          ],
+          "flags": []
         },
         {
-          "file": "MS_RICMS_pt4.txt",
+          "file": "MS_DEC_9203_1998_RICMS_GERAL_2026-04-26.txt",
           "category": "RICMS",
-          "chars": 482282,
+          "chars": 585956,
           "named_icms": true,
           "fallback_icms": false,
           "dominant_scope": "ICMS",
-          "source_scopes": [],
+          "source_scopes": [
+            "ICMS"
+          ],
           "scope_blocked": false,
           "scope_flags": [],
-          "source_documents": [],
-          "flags": [
-            "contém IPVA",
-            "contém ITCMD/ITCD",
-            "contém Taxas"
-          ]
+          "source_documents": [
+            "https://aacpdappls.net.ms.gov.br/appls/legislacao/serc/legato.nsf/7a2675fdf26e910204256b1f005348a7/d3cc39d3a6aeeda803256cc20066f1fb"
+          ],
+          "flags": []
         },
         {
-          "file": "MS_RICMS_pt5.txt",
-          "category": "RICMS",
-          "chars": 298633,
+          "file": "MS_RICMS_ANEXO_023_IMPORTADOS_ALIQUOTA_4_2026-04-26.txt",
+          "category": "OUTROS",
+          "chars": 15970,
           "named_icms": true,
           "fallback_icms": false,
           "dominant_scope": "ICMS",
-          "source_scopes": [],
+          "source_scopes": [
+            "ICMS"
+          ],
           "scope_blocked": false,
           "scope_flags": [],
-          "source_documents": [],
-          "flags": [
-            "contém Taxas"
-          ]
+          "source_documents": [
+            "https://www.sefazms.com.br/legislacao"
+          ],
+          "flags": []
+        },
+        {
+          "file": "MS_RICMS_ANEXO_001_BENEFICIOS_2026-04-26.txt",
+          "category": "OUTROS",
+          "chars": 541273,
+          "named_icms": true,
+          "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [
+            "ICMS"
+          ],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [
+            "https://www.sefazms.com.br/legislacao"
+          ],
+          "flags": []
+        },
+        {
+          "file": "MS_RICMS_ANEXO_002_DIFERIMENTO_2026-04-26.txt",
+          "category": "OUTROS",
+          "chars": 42730,
+          "named_icms": true,
+          "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [
+            "ICMS"
+          ],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [
+            "https://www.sefazms.com.br/legislacao"
+          ],
+          "flags": []
+        },
+        {
+          "file": "MS_RICMS_ANEXO_003_ST_2026-04-26.txt",
+          "category": "OUTROS",
+          "chars": 190640,
+          "named_icms": true,
+          "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [
+            "ICMS"
+          ],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [
+            "https://www.sefazms.com.br/legislacao"
+          ],
+          "flags": []
+        },
+        {
+          "file": "MS_RICMS_ANEXO_004_CADASTRO_2026-04-26.txt",
+          "category": "OUTROS",
+          "chars": 113374,
+          "named_icms": true,
+          "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [
+            "ICMS"
+          ],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [
+            "https://www.sefazms.com.br/legislacao"
+          ],
+          "flags": []
+        },
+        {
+          "file": "MS_RICMS_ANEXO_005_REGIMES_ESPECIAIS_2026-04-26.txt",
+          "category": "OUTROS",
+          "chars": 192590,
+          "named_icms": true,
+          "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [
+            "ICMS"
+          ],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [
+            "https://www.sefazms.com.br/legislacao"
+          ],
+          "flags": []
+        },
+        {
+          "file": "MS_RICMS_ANEXO_006_CREDITOS_PRESUMIDOS_PRODUTOR_2026-04-26.txt",
+          "category": "OUTROS",
+          "chars": 8459,
+          "named_icms": true,
+          "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [
+            "ICMS"
+          ],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [
+            "https://www.sefazms.com.br/legislacao"
+          ],
+          "flags": []
+        },
+        {
+          "file": "MS_RICMS_ANEXO_007_ESTIMATIVA_2026-04-26.txt",
+          "category": "OUTROS",
+          "chars": 9592,
+          "named_icms": true,
+          "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [
+            "ICMS"
+          ],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [
+            "https://www.sefazms.com.br/legislacao"
+          ],
+          "flags": []
+        },
+        {
+          "file": "MS_RICMS_ANEXO_008_PAGAMENTO_2026-04-26.txt",
+          "category": "OUTROS",
+          "chars": 7832,
+          "named_icms": true,
+          "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [
+            "ICMS"
+          ],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [
+            "https://www.sefazms.com.br/legislacao"
+          ],
+          "flags": []
+        },
+        {
+          "file": "MS_RICMS_ANEXO_009_PARCELAMENTO_2026-04-26.txt",
+          "category": "OUTROS",
+          "chars": 33888,
+          "named_icms": true,
+          "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [
+            "ICMS"
+          ],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [
+            "https://www.sefazms.com.br/legislacao"
+          ],
+          "flags": []
+        },
+        {
+          "file": "MS_RICMS_ANEXO_010_ATUALIZACAO_MONETARIA_2026-04-26.txt",
+          "category": "OUTROS",
+          "chars": 9186,
+          "named_icms": true,
+          "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [
+            "ICMS"
+          ],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [
+            "https://www.sefazms.com.br/legislacao"
+          ],
+          "flags": []
+        },
+        {
+          "file": "MS_RICMS_ANEXO_011_AUTO_INFRACAO_2026-04-26.txt",
+          "category": "OUTROS",
+          "chars": 9253,
+          "named_icms": true,
+          "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [
+            "ICMS"
+          ],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [
+            "https://www.sefazms.com.br/legislacao"
+          ],
+          "flags": []
+        },
+        {
+          "file": "MS_RICMS_ANEXO_012_FISCALIZACAO_TRANSITO_2026-04-26.txt",
+          "category": "OUTROS",
+          "chars": 11604,
+          "named_icms": true,
+          "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [
+            "ICMS"
+          ],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [
+            "https://www.sefazms.com.br/legislacao"
+          ],
+          "flags": []
+        },
+        {
+          "file": "MS_RICMS_ANEXO_013_DIVIDA_ATIVA_2026-04-26.txt",
+          "category": "OUTROS",
+          "chars": 9188,
+          "named_icms": true,
+          "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [
+            "ICMS"
+          ],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [
+            "https://www.sefazms.com.br/legislacao"
+          ],
+          "flags": []
+        },
+        {
+          "file": "MS_RICMS_ANEXO_014_CREDITOS_PUBLICOS_2026-04-26.txt",
+          "category": "OUTROS",
+          "chars": 12208,
+          "named_icms": true,
+          "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [
+            "ICMS"
+          ],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [
+            "https://www.sefazms.com.br/legislacao"
+          ],
+          "flags": []
+        },
+        {
+          "file": "MS_RICMS_ANEXO_015_DOCUMENTOS_FISCAIS_2026-04-26.txt",
+          "category": "OUTROS",
+          "chars": 343445,
+          "named_icms": true,
+          "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [
+            "ICMS"
+          ],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [
+            "https://www.sefazms.com.br/legislacao"
+          ],
+          "flags": []
+        },
+        {
+          "file": "MS_RICMS_ANEXO_018_AUTOMACAO_COMERCIAL_2026-04-26.txt",
+          "category": "OUTROS",
+          "chars": 40554,
+          "named_icms": true,
+          "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [
+            "ICMS"
+          ],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [
+            "https://www.sefazms.com.br/legislacao"
+          ],
+          "flags": []
+        },
+        {
+          "file": "MS_RICMS_ANEXO_021_TABELA_TRANSPORTE_2026-04-26.txt",
+          "category": "OUTROS",
+          "chars": 4870,
+          "named_icms": true,
+          "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [
+            "ICMS"
+          ],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [
+            "https://www.sefazms.com.br/legislacao"
+          ],
+          "flags": []
+        },
+        {
+          "file": "MS_RICMS_ANEXO_024_CONSUMIDOR_FINAL_2026-04-26.txt",
+          "category": "OUTROS",
+          "chars": 19544,
+          "named_icms": true,
+          "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [
+            "ICMS"
+          ],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [
+            "https://www.sefazms.com.br/legislacao"
+          ],
+          "flags": []
+        },
+        {
+          "file": "MS_RICMS_ANEXO_025_TRANSFERENCIAS_2026-04-26.txt",
+          "category": "RICMS",
+          "chars": 23233,
+          "named_icms": true,
+          "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [
+            "ICMS"
+          ],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [
+            "https://www.sefazms.com.br/legislacao"
+          ],
+          "flags": []
+        },
+        {
+          "file": "MS_DEC_9203_1998_APROVACAO_RICMS_2026-04-26.txt",
+          "category": "RICMS",
+          "chars": 6033,
+          "named_icms": true,
+          "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [
+            "ICMS"
+          ],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [
+            "https://aacpdappls.net.ms.gov.br/appls/legislacao/secoge/govato.nsf/fd8600de8a55c7fc04256b210079ce25/9c9e3a59ea627ab40425715300728e6a"
+          ],
+          "flags": []
+        },
+        {
+          "file": "MS_DEC_14644_2016_CADASTRO_FISCAL_2026-04-26.txt",
+          "category": "OUTROS",
+          "chars": 69764,
+          "named_icms": true,
+          "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [
+            "ICMS"
+          ],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [
+            "https://www.sefazms.com.br/legislacao"
+          ],
+          "flags": []
+        },
+        {
+          "file": "MS_DEC_16721_2025_REFIS_PRORROGACAO_2026-04-26.txt",
+          "category": "OUTROS",
+          "chars": 2799,
+          "named_icms": true,
+          "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [
+            "ICMS"
+          ],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [
+            "https://www.sefazms.com.br/legislacao"
+          ],
+          "flags": []
+        },
+        {
+          "file": "MS_DEC_16722_2025_ICMS_2026-04-26.txt",
+          "category": "RICMS",
+          "chars": 891,
+          "named_icms": true,
+          "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [
+            "ICMS"
+          ],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [
+            "https://www.sefazms.com.br/legislacao"
+          ],
+          "flags": []
+        },
+        {
+          "file": "MS_DEC_16724_2025_ICMS_2026-04-26.txt",
+          "category": "RICMS",
+          "chars": 2039,
+          "named_icms": true,
+          "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [
+            "ICMS"
+          ],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [
+            "https://www.sefazms.com.br/legislacao"
+          ],
+          "flags": []
+        },
+        {
+          "file": "MS_LEI_6495_2025_REFIS_ICMS_2026-04-26.txt",
+          "category": "OUTROS",
+          "chars": 27983,
+          "named_icms": true,
+          "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [
+            "ICMS"
+          ],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [
+            "https://assets.imprensaoficial.ms.gov.br/public/prd/Diario%20Oficial/2025/10/31/DO11983_31_10_2025.pdf"
+          ],
+          "flags": []
+        },
+        {
+          "file": "MS_PORT_3759_2025_VALOR_REAL_PESQUISADO_2026-04-26.txt",
+          "category": "OUTROS",
+          "chars": 1774,
+          "named_icms": true,
+          "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [
+            "ICMS"
+          ],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [
+            "https://www.sefazms.com.br/legislacao"
+          ],
+          "flags": []
+        },
+        {
+          "file": "MS_PORT_3760_2026_VALOR_REAL_PESQUISADO_2026-04-26.txt",
+          "category": "OUTROS",
+          "chars": 1856,
+          "named_icms": true,
+          "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [
+            "ICMS"
+          ],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [
+            "https://www.sefazms.com.br/legislacao"
+          ],
+          "flags": []
+        },
+        {
+          "file": "MS_PORT_3761_2026_VALOR_REAL_PESQUISADO_2026-04-26.txt",
+          "category": "OUTROS",
+          "chars": 1695,
+          "named_icms": true,
+          "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [
+            "ICMS"
+          ],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [
+            "https://www.sefazms.com.br/legislacao"
+          ],
+          "flags": []
+        },
+        {
+          "file": "MS_RES_3485_2025_EFD_2026-04-26.txt",
+          "category": "OUTROS",
+          "chars": 994,
+          "named_icms": true,
+          "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [
+            "ICMS"
+          ],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [
+            "https://www.sefazms.com.br/legislacao"
+          ],
+          "flags": []
+        },
+        {
+          "file": "MS_ATO_DECL_1_2026_CADASTRO_2026-04-26.txt",
+          "category": "OUTROS",
+          "chars": 3814,
+          "named_icms": true,
+          "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [
+            "ICMS"
+          ],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [
+            "https://www.sefazms.com.br/legislacao"
+          ],
+          "flags": []
         }
       ]
     },

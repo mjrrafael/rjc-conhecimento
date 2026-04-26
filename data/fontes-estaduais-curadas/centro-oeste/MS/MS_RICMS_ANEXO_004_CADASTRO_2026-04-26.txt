@@ -1,0 +1,1283 @@
+ANEXO IV
+DO CADASTRO FISCAL
+
+Nova redação dada pelo Decreto nº 14.644/2016, publicado no DOE nº 9.318, de 30.12.2016. Efeitos a partir de 1º.01.2017.
+
+CAPÍTULO I
+DISPOSIÇÕES GERAIS
+
+Art. 1º Deverão inscrever-se no Cadastro de Contribuintes do Estado (CCE), antes de iniciarem suas atividades, as pessoas físicas ou jurídicas que pretendam realizar operações relativas à circulação de mercadorias ou prestações de serviços de transporte interestadual e intermunicipal e de comunicação (Lei n. 1.810, de 1997, art. 60 e RICMS, art. 49).
+
+§ 1º Sem prejuízo da aplicação das penalidades cabíveis, deverão inscrever-se, também, todas as pessoas que, realizando operações ou prestações, não tenham requerido antecipadamente a inscrição estadual.
+
+§ 2º A Secretaria de Estado de Fazenda, sempre que entender mais prático, conveniente ou necessário, pode (Lei n. 1.810, de 1997, art. 60, § 2°):
+
+I - autorizar a inscrição não obrigatória;
+
+II - dispensar a inscrição;
+
+III - determinar a inscrição de estabelecimento ou pessoa que, embora não esteja revestida da condição de contribuinte ou de responsável, intervenha no mecanismo da circulação de mercadoria ou bem e no da prestação de serviços.
+
+§ 3º A juízo de autoridade da Secretaria de Estado de Fazenda, serão também inscritos neste Estado os contribuintes localizados em outras Unidades da Federação aos quais é aplicável a legislação de Mato Grosso do Sul, por decorrência de Convênio, Protocolo ou de lei de efeitos nacionais (CTN, art. 102).
+
+§ 4º Estão, ainda, sujeitas à inscrição no Cadastro de Contribuintes do Estado, observado o disposto no art. 7º do Anexo XXIV deste Regulamento do ICMS, as pessoas, naturais ou jurídicas, localizadas em outras Unidades da Federação, que realizem operações ou prestações destinando bens e serviços a consumidor final não contribuinte do imposto localizado neste Estado, e que pretendam recolher o imposto no prazo de que trata o art. 6º, caput, inciso I, do referido Anexo.
+
+§ 5º O Cadastro de Contribuintes do Estado compõe-se dos seguintes cadastros:
+
+I - Cadastro do Comércio, Indústria e Serviços (CCIS), para a inscrição de comerciantes, industriais e demais pessoas naturais ou jurídicas que se enquadrem nas disposições do art. 12 deste Anexo;
+
+II – Cadastro da Agropecuária (CAP), para a inscrição das pessoas naturais ou jurídicas que exploram atividades agropecuárias e extrativas vegetais.
+
+§ 6º No caso de inscrição de pessoas, físicas ou jurídicas, que não se qualifiquem como contribuinte do imposto, essa condição deve ser registrada no respectivo cadastro pela indicação da expressão “Não Contribuinte do ICMS”. (§ 6º: acrescentado pelo Decreto nº 14.749/2017. Efeitos a partir de 06.06.2017.)
+
+Art. 2º A inscrição deverá ser requerida pelo contribuinte diretamente ou por intermédio do seu representante legal, mediante a utilização de formulário eletrônico próprio, na Internet, nos termos do disposto nos arts. 13 ou 24 deste Anexo, conforme o caso.
+
+§ 1º A inscrição não será concedida, quando:
+
+I - no mesmo local indicado na solicitação da inscrição, houver outro contribuinte com situação cadastral ativa ou suspensa, observado o disposto no § 3º-A deste artigo; (Inciso I: nova redação dada pelo Decreto nº 15.540/2020. Efeitos a partir de 3.11.2020.)
+
+Redação anterior vigente até 2.11.2020.
+I - no mesmo local indicado na solicitação da inscrição, houver outro contribuinte com situação cadastral ativa ou suspensa;
+
+II - exista situação cadastral irregular ou obrigações tributárias, principais ou acessórias, pendentes de solução em qualquer outro estabelecimento da mesma pessoa jurídica, matriz e filiais, ou da mesma pessoa física, inclusive o empresário individual de que tratam os arts. 966 a 969 do Código Civil, ainda que localizado em outra unidade da Federação, se a pendência fiscal for com o Fisco deste Estado. (Inciso II: nova redação dada pelo Decreto n° 15.491/2020. Efeitos a partir de 06.08.2020.)
+
+Redação anterior vigente até 05.08.2020.
+II - o requerente, seus sócios e dirigentes estiverem vinculados a outra empresa ou a outro estabelecimento produtor ou extrator com situação cadastral irregular ou com obrigações tributárias, principais ou acessórias, pendentes de solução.
+
+§ 2º Na hipótese do previsto no inciso I do § 1º deste artigo, a inscrição solicitada poderá ser concedida se ficar comprovado, mediante diligência fiscal, que o contribuinte anteriormente estabelecido no local deixou de exercer suas atividades sem requerer a baixa da inscrição, sem prejuízo do disposto na alínea “a” do inciso III do art. 42 deste Anexo.
+
+§ 3º O Superintendente de Administração Tributaria pode, sob as condições que entender convenientes para resguardar o interesse da fiscalização e da arrecadação, autorizar a concessão de inscrição estadual em situações que se enquadrem nas disposições do § 1º deste artigo.
+
+§ 3º-A. O disposto do inciso I do § 1º deste artigo não se aplica no caso em que a atividade econômica seja desenvolvida em ambiente de empresa com o ramo de prestação de serviços de escritórios compartilhados (coworking), cujo CNAE seja 8211-3/00 (serviços combinados de escritório e apoio administrativo), sob contrato, hipótese em que o estabelecimento: (§ 3º-A: acrescentado pelo Decreto nº 15.540/2020. Efeitos a partir de 3.11.2020.)
+
+I - deve ser inscrito no Cadastro do Comércio, Indústria e Serviços (CCIS), com as atividades de comércio e/ou prestação de serviço, vedada atividade: (Inciso I: acrescentado pelo Decreto nº 15.540/2020. Efeitos a partir de 3.11.2020.)
+
+a) industrial; (Alínea “a”: acrescentada pelo Decreto nº 15.540/2020. Efeitos a partir de 3.11.2020.)
+
+b) de comercialização de produtos agropecuários in natura; (Alínea “b”: acrescentada pelo Decreto nº 15.540/2020. Efeitos a partir de 3.11.2020.)
+
+II - fica impedido de manter estoque físico e/ou promover movimentação física de mercadoria a partir do domicílio tributário localizado no ambiente de coworking; (Inciso II: acrescentado pelo Decreto nº 15.540/2020. Efeitos a partir de 3.11.2020.)
+
+III - deve conter, em seu cadastro, o complemento de endereço que possa identificar a numeração sequencial do seu domicílio tributário, vedada a concessão de inscrição estadual, mediante contrato de sublocação dos espaços; (Inciso III: acrescentado pelo Decreto nº 15.540/2020. Efeitos a partir de 3.11.2020.)
+
+IV - deverá requerer, ao término do contrato: (Inciso IV: acrescentado pelo Decreto nº 15.540/2020. Efeitos a partir de 3.11.2020.)
+
+a) a alteração do endereço, na forma prevista na Seção III do Capítulo II deste Anexo; ou (Alínea “a”: acrescentada pelo Decreto nº 15.540/2020. Efeitos a partir de 3.11.2020.)
+
+b) a baixa da inscrição estadual, na forma prevista no Capítulo V deste Anexo; (Alínea “b”: acrescentada pelo Decreto nº 15.540/2020. Efeitos a partir de 3.11.2020.)
+
+V - poderá requerer a reativação da inscrição estadual baixada, cancelada ou suspensa, caso venha celebrar novamente contrato de serviço com empresa em ambiente de coworking. (Inciso V: acrescentado pelo Decreto nº 15.540/2020. Efeitos a partir de 3.11.2020.)
+
+§ 4º O deferimento do pedido de inscrição e de alteração cadastral, compete:
+(§ 4º: acrescentado pelo Decreto nº 14.749/2017. Efeitos a partir de 06.06.2017.)
+
+I - ao chefe da Unidade de Cadastro Fiscal e aos Chefes das Unidades de Fiscalização, isoladamente, nas hipóteses que se enquadrem nas disposições do art. 17 deste Anexo e nos casos especiais a que se refere a Seção VI do Capítulo II deste Anexo;
+
+II - ao chefe da Agência Fazendária na qual se processar o pedido, nos demais casos.
+
+§ 5º A competência de que trata o § 4º deste artigo pode ser delegada a qualquer servidor do Grupo TAF lotado na respectiva unidade administrativa. (§ 5º: acrescentado pelo Decreto nº 14.749/2017. Efeitos a partir de 06.06.2017.)
+
+§ 6º Para efeitos de comprovação de autenticidade de assinaturas previstas neste Anexo, os documentos entregues em formato digital podem ter assinatura eletrônica qualificada, conforme Decreto nº 15.903, de 21 de março de 2022, em substituição de firma reconhecida por semelhança ou por autenticidade em cartório. (§ 6º: acrescentado pelo Decreto n° 16.103/2023. Efeitos a partir de 8.2.2023.)
+
+Art. 3º Cada estabelecimento receberá um número específico de inscrição estadual, observado o seguinte:
+
+I – ressalvado o disposto no § 5º deste artigo e no art. 4º deste Anexo, é vedada a concessão de uma única inscrição estadual com validade para mais de um estabelecimento, ainda que da mesma pessoa natural ou jurídica;
+
+II – no caso de exercício, no mesmo estabelecimento, pela mesma pessoa natural ou jurídica, de atividades distintas, submetidas a tratamentos tributários ou a regimes de arrecadação específicos, é obrigatória a existência de inscrição estadual, bem como de escrituração fiscal, distintas para cada atividade;
+
+III – para efeito de aplicação do disposto no inciso II do caput deste artigo, as atividades distintas, submetidas a tratamentos tributários ou a regimes de arrecadação específicos, são as especificadas em ato do Superintendente de Administração Tributária.
+
+§ 1º Nas hipóteses de incorporação ou de fusão societárias, em que não haja interrupção das atividades do estabelecimento, a inscrição estadual da empresa sucedida poderá, a critério do Superintendente de Administração Tributária, ser transferida para a empresa sucessora, mediante:
+
+I - pedido de alteração de dados cadastrais, por meio eletrônico, conforme disposto no art. 21 deste Anexo;
+
+II – envio, por meio eletrônico, juntamente com o pedido de alteração, dos documentos jurídicos comprobatórios da incorporação ou da fusão; e
+
+III – indicação do local onde se encontram, à disposição do Fisco, os documentos a que se refere o inciso I do art. 44 deste Anexo.
+
+§ 2º Na hipótese do previsto no § 1º deste artigo, deferida a alteração, o respectivo processo deverá ser encaminhado à unidade de fiscalização responsável pelo acompanhamento fiscal do estabelecimento, para a realização ou a atualização do levantamento fiscal relativo aos cinco últimos exercícios.
+
+§ 3º Nas demais espécies de transformações societárias que não impliquem descaracterização de responsabilidade tributária, a transferência da inscrição estadual poderá ser autorizada pelo Superintendente de Administração Tributária, analisada a conveniência e o interesse da Administração Fazendária, relativamente à fiscalização e à arrecadação tributárias, observado o disposto nos §§ 1º e 2º deste artigo.
+
+§ 4º Observado o disposto nos §§ 1º a 3º deste artigo, a titularidade do número de inscrição estadual é intransferível.
+
+§ 5º A Secretaria de Estado de Fazenda poderá conceder inscrição estadual única, nos seguintes casos:
+
+I - às prestadoras de serviços públicos de telecomunicações (Convênio ICMS 126/98);
+
+II – à Empresa Brasileira de Correios e Telégrafos (Ajuste SINIEF nº 03/89);
+
+III - às empresas nacionais de transporte aeroviário (Ajuste SINIEF nº 10/89);
+
+IV - às empresas prestadoras de serviço de transporte, inclusive aquelas sem estabelecimento fixo no Estado (Ajuste SINIEF nº 17/89 e Anexo XV, art. 119);
+
+V - aos concessionários de serviço público de transporte ferroviário (Ajuste SINIEF nº 19/89);
+
+VI - às instituições financeiras sujeitas ao imposto (Ajuste SINIEF nº 23/89);
+
+VII - às concessionárias de serviço público de distribuição de energia elétrica (Ajuste SINIEF nº 28/89);
+
+VIII - a outros contribuintes aos quais:
+
+a) Ajuste, Protocolo ou Convênio, firmados com outras unidades da Federação, permitir;
+
+b) o Secretário de Estado de Fazenda ou o Superintendente de Administração Tributária entender conveniente ou necessário.
+
+§ 6º Revogado.
+
+(§ 6º: REVOGADO pelo Decreto nº 16.178/2023. Efeitos a partir de 31.3.2023.)
+
+Redação anterior dada pelo Decreto 15.789/2021. Efeitos de 19.10.21 a 30.3.23,
+§ 6º A Secretaria de Estado de Fazenda poderá, também, conceder inscrição estadual única, por município, para área de terras, contíguas ou não, de domínio, posse ou direito de uso de usinas sucroalcooleiras e de indústrias de celulose, localizadas neste Estado.
+
+Redação original vigente até 18.10.2021.
+§ 6º A Secretaria de Estado de Fazenda poderá, também, conceder inscrição estadual única, por município, para área de terras, contíguas ou não, de domínio, posse ou direito de uso de usinas sucroalcooleiras localizadas neste Estado.
+
+Art. 4º Revogado.
+
+(Art. 4º: REVOGADO pelo Decreto nº 16.178/2023. Efeitos a partir de 31.3.2023.)
+
+Redação original vigente até 30.3.2023.
+Art. 4º Os produtores rurais podem, exclusivamente, nos casos de área de terras contíguas situadas em um mesmo município, em relação às quais detenha o domínio, a posse ou o direito de uso, obter inscrição estadual única para os respectivos imóveis rurais, nos termos dos arts. 24 e 25 deste Anexo.
+§ 1º Na hipótese do caput deste artigo, o produtor rural deve:
+I - preencher a Ficha de Atualização Cadastral da Agropecuária (FAC Agropecuária), eletronicamente, com as informações do imóvel rural principal e no campo “Nome do imóvel” acrescentar a expressão “(com áreas de terras contíguas)”;
+II – digitalizar e enviar juntamente com a FAC Agropecuária os documentos do estabelecimento principal e das respectivas áreas de terras contíguas, de que trata o art. 25 deste Anexo.
+§ 2º Os contribuintes já inscritos no Cadastro de Contribuintes da Agropecuária (CAP) e que desejem inscrever-se na forma disposta no caput deste artigo devem:
+I - apresentar, eletronicamente, nos termos do art. 30 deste Anexo, a FAC Agropecuária de alteração cadastral do estabelecimento principal instruída com os documentos referentes às áreas contíguas, nos termos do § 1º deste artigo;
+II – solicitar a baixa das inscrições estaduais das áreas contíguas de que trata o caput deste artigo, nos termos dos art. 43 a 46 deste Anexo.
+
+Art. 4º-A. Observados os arts. 24 e 25 deste Anexo, a Secretaria de Estado de Fazenda poderá conceder, a pedido do contribuinte, inscrição estadual única no Cadastro de Contribuintes da Agropecuária (CAP), para área de terras contíguas ou não, situadas no mesmo município, de domínio, posse ou direito de uso: (Art. 4º: Acrescentado pelo Decreto nº 16.178/2023. Efeitos a partir de 31.3.2023.)
+
+I - das usinas sucroalcooleiras e das indústrias de celulose, com atividade de cultivo nas referidas áreas rurais deste Estado; (Inciso I: Acrescentado pelo Decreto nº 16.178/2023. Efeitos a partir de 31.3.2023.)
+
+II - dos demais produtores rurais estabelecidos neste Estado. (Inciso II: Acrescentado pelo Decreto nº 16.178/2023. Efeitos a partir de 31.3.2023.)
+
+§ 1º Os contribuintes já possuidores de inscrições no CAP, distintas para cada estabelecimento agropecuário, que desejem agregar as inscrições na forma disposta neste artigo, para solicitar a agregação, devem: (§ 1º: Acrescentado pelo Decreto nº 16.178/2023. Efeitos a partir de 31.3.2023.)
+
+I - fazer login, no portal da Secretaria de Estado de Fazenda na internet, com o usuário que deseja que seja realizada a inscrição agregadora no CAP; (Inciso I: Acrescentado pelo Decreto nº 16.178/2023. Efeitos a partir de 31.3.2023.)
+
+II - selecionar uma ou mais inscrições no CAP, exibidas pelo sistema como passíveis de agregação, cujas áreas serão somadas à inscrição no CAP agregadora. (Inciso II: Acrescentado pelo Decreto nº 16.178/2023. Efeitos a partir de 31.3.2023.)
+
+§ 2º Na alteração cadastral no CAP e na reativação da inscrição no CAP será possível: (§ 2º: Acrescentado pelo Decreto nº 16.178/2023. Efeitos a partir de 31.3.2023.)
+
+I - agregar novas áreas, de domínio, posse ou direito de uso do mesmo contribuinte; (Inciso I: Acrescentado pelo Decreto nº 16.178/2023. Efeitos a partir de 31.3.2023.)
+
+II - agregar áreas já inscritas, de domínio, posse ou direito de uso do mesmo contribuinte; (Inciso II: Acrescentado pelo Decreto nº 16.178/2023. Efeitos a partir de 31.3.2023.)
+
+III - reagregar áreas que estão desagregadas, de domínio, posse ou direito de uso do mesmo contribuinte; (Inciso III: Acrescentado pelo Decreto nº 16.178/2023. Efeitos a partir de 31.3.2023.)
+
+IV - desagregar áreas. (Inciso IV: Acrescentado pelo Decreto nº 16.178/2023. Efeitos a partir de 31.3.2023.)
+
+§ 3º São condições para agregação de áreas de que trata este artigo: (§ 3º: Acrescentado pelo Decreto nº 16.178/2023. Efeitos a partir de 31.3.2023.)
+
+I – que tanto as áreas a serem agregadas, quanto a área agregadora, estejam cadastradas no Cadastro Ambiental Rural do Estado de Mato Grosso do Sul (CAR-MS); (Inciso I: Acrescentado pelo Decreto nº 16.178/2023. Efeitos a partir de 31.3.2023.)
+
+II - que o CNPJ da inscrição agregadora corresponda a uma filial específica com a atividade de cultivo, no caso do inciso I do caput deste artigo. (Inciso II: Acrescentado pelo Decreto nº 16.178/2023. Efeitos a partir de 31.3.2023.)
+
+§ 4º No ato do deferimento da solicitação de que trata este artigo, todas as inscrições no CAP agregadas serão baixadas de ofício pela Secretaria de Estado de Fazenda. (§ 4º: Acrescentado pelo Decreto nº 16.178/2023. Efeitos a partir de 31.3.2023.)
+
+Art. 5º O número da inscrição estadual constará, obrigatoriamente, nos documentos fiscais regulamentados ou autorizados em regime especial, nas faturas e duplicatas, nas guias ou documentos de arrecadação e em quaisquer petições, impugnações ou recursos administrativos ou judiciais (art. 20 deste Anexo).
+
+Art. 6º Sempre que o comprovante da inscrição, emitido nos termos do disposto no art. 19 deste Anexo, for encontrado com outra pessoa que não o titular ou o representante habilitado, ou quando ocorrer suspeita ou prova da sua falsificação, adulteração ou de uso indevido, o documento deverá ser apreendido pelas autoridades fazendárias e o titular responderá pelos danos resultantes do evento (art. 42, VI, deste Anexo).
+
+Art. 7º O ajuste de operação relativa à circulação de mercadoria ou de prestação de serviço obriga os contribuintes envolvidos a exigirem, reciprocamente, a inscrição regular neste Estado.
+
+Art. 8º O sujeito passivo deve comunicar ao órgão fazendário estadual ou a outro órgão, por este especificamente indicado, qualquer alteração ocorrida em seu domicílio tributário, inclusive o domicílio tributário eletrônico, no prazo de vinte dias, contados do evento.
+
+§ 1° A comunicação a que se refere o caput deste artigo não produz efeitos quanto a endereço inverídico ou no caso de recusa administrativa do domicílio tributário eleito pelo sujeito passivo, aplicando-se, no que couber, as regras estabelecidas no art. 127 do Código Tributário Nacional.
+
+§ 2° Sempre que o contribuinte proceder à alteração cadastral na Junta Comercial, e deixar de informar tal alteração na Secretaria de Estado de Fazenda (SEFAZ), no prazo previsto no caput deste artigo, o Fisco poderá proceder, de ofício, à atualização no Cadastro de Contribuintes do Estado, sem prejuízo das penalidades cabíveis.
+
+Art. 8º-A. Na hipótese do disposto no art. 51 deste Anexo, o contribuinte deve solicitar a alteração cadastral visando à inclusão do novo contabilista ou escritório de contabilidade no prazo máximo de trinta dias, contados da data da notificação de que trata o parágrafo único do referido artigo. (Art. 8º-A: acrescentado pelo Decreto nº 14.749/2017. Efeitos a partir de 06.06.2017.)
+
+Parágrafo único. O descumprimento do disposto no caput deste artigo enseja o cancelamento da inscrição estadual do contribuinte.
+
+Art. 9º Para os efeitos do Regulamento do imposto, salvo determinação em contrário ou autorização expressa da Secretaria de Estado de Fazenda, considera-se domicílio fiscal do contribuinte aquele do local do estabelecimento ao qual foi deferida a inscrição (RICMS, arts 11 e 12).
+
+Parágrafo único. Tratando-se de multiplicidade de estabelecimentos agropecuários ou extrativos vegetais, o domicílio do contribuinte poderá ser o do estabelecimento no qual aquele, devidamente autorizado pela Secretaria de Estado de Fazenda, centralizar as suas atividades fiscais (arts. 32 a 35), observado o disposto nos arts. 11 e 12 da parte geral deste Regulamento.
+
+Art. 10. Na inscrição dos estabelecimentos no Cadastro de Contribuintes do Estado deverão ser adotados, para efeito da identificação da atividade econômica, os códigos de atividades econômicas que compõem a Classificação Nacional de Atividades Econômicas (CNAE), constituída pelos códigos que compõem a Classificação Nacional de Atividades Econômicas - CNAE, aprovada por resolução do Instituto Brasileiro de Geografia e Estatística - IBGE e da Comissão Nacional de Classificação - CONCLA.
+
+Parágrafo único. A tabela, contendo os códigos, a denominação e as notas explicativas da Classificação Nacional de Atividades Econômicas (CNAE), encontra-se no endereço eletrônico http://concla.ibge.gov.br .
+
+Art. 11. Os documentos que, nos termos deste Anexo, devam ser microfilmados, deverão ser encaminhados à Coordenadoria de Operação, Suporte e Infraestrutura da Superintendência de Gestão da Informação (COSI/SGI) até o dia cinco do mês seguinte ao da edição do ato ou da finalização do procedimento que motivou a sua apresentação.
+
+Parágrafo único. A Coordenadoria de Operação, Suporte e Infraestrutura (COSI) deve organizar o registro da microfilmagem de forma a agilizar o fornecimento de cópias dos documentos microfilmados, quando solicitadas pela Superintendência de Administração Tributária, diretamente ou por meio de suas assessorias ou unidades, pela Unidade de Cadastro Fiscal (UNCAD) ou pela repartição que encaminhou o documento para microfilmagem.
+
+
+CAPÍTULO II
+DA INSCRIÇÃO NO CADASTRO DO COMÉRCIO, INDÚSTRIA E SERVIÇOS
+
+Seção I
+Das Regras Relativas ao Cadastramento
+
+Art. 12. Observado o disposto no art. 1º deste Anexo, deverão ser inscritos no Cadastro do Comércio, Indústria e Serviços (CCIS):
+
+I - os comerciantes e os industriais;
+
+II - as empresas de construção;
+
+III - os prestadores de serviços de transporte interestadual e intermunicipal e de comunicação;
+
+IV - as cooperativas;
+
+V - as instituições financeiras e as seguradoras;
+
+VI - as sociedades civis de fim econômico;
+
+VII - os extratores de substâncias minerais ou fósseis;
+
+VIII - os órgãos da Administração Pública, as entidades da Administração Indireta e as Fundações instituídas e mantidas pelo Poder Público;
+
+IX - as concessionárias ou as permissionárias de serviços públicos de transporte, de comunicação e de energia elétrica;
+
+X - os prestadores dos serviços não compreendidos na competência tributária dos Municípios e que envolvam fornecimento de mercadorias;
+
+XI - os prestadores dos serviços compreendidos na competência tributária dos Municípios e que envolvam fornecimento de mercadorias ressalvadas em Lei Complementar;
+
+XII - os fornecedores de alimentação, bebidas e outras mercadorias em qualquer estabelecimento;
+
+XIII - as companhias de armazéns gerais;
+
+XIV - os despachantes aduaneiros;
+
+XV - os representantes e os mandatários;
+
+XVI - os leiloeiros e as demais pessoas naturais ou jurídicas, de direito público ou privado, que praticam habitualmente, em nome próprio ou de terceiros, operações relativas à circulação de mercadorias e a prestações de serviços de transporte interestadual e intermunicipal e de comunicação.
+
+§ 1º Não estão obrigados a se inscrever no Cadastro do Comércio, Indústria e Serviços (CCIS) os representantes e os mandatários mencionados no inciso XV do caput deste artigo, que se limitam a angariar pedidos de mercadorias a serem remetidas diretamente do estabelecimento representado aos respectivos adquirentes. (§ 1º: renumerado e nova redação dada pelo Decreto n° 16.617/2025. Efeitos a partir de 30.4.2025)
+
+Redação original vigente até 29.4.2025.
+Parágrafo único. Não estão obrigados a se inscrever no CCIS os representantes e os mandatários mencionados no inciso XV do caput deste artigo, que se limitam a angariar pedidos de mercadorias a serem remetidas diretamente do estabelecimento representado aos respectivos adquirentes.
+
+§ 2º Os estabelecimentos que realizem operações com combustíveis, para solicitar a inscrição no Cadastro de Contribuintes do Estado, devem observar os procedimentos dispostos em atos normativos específicos. (§ 2º: acrescentado pelo Decreto n° 16.617/2025. Efeitos a partir de 30.4.2025)
+
+
+Art. 13. A inscrição no Cadastro do Comércio, Indústria e Serviços (CCIS) deve ser solicitada eletronicamente, na internet, no endereço www.sefaz.ms.gov.br, na opção “cadastro de contribuinte online”, mediante o preenchimento e o envio da Ficha de Atualização Cadastral do CCIS (FAC Comércio Indústria).
+
+§ 1º Por ocasião do pedido de inscrição no CCIS na forma do caput deste artigo, o interessado deve, eletronicamente:
+
+I – prestar informações relativas:
+
+a) à sua própria identificação, dos responsáveis e do técnico incumbido dos serviços fisco-contábeis (art. 49 deste Anexo);
+
+b) à localização do estabelecimento;
+
+c) aos demais dados exigidos para a complementação do cadastro estadual, nos termos deste Anexo;
+
+II - digitalizar e enviar juntamente com a FAC Comércio Indústria os documentos elencados no art. 14 deste Anexo;
+
+III - declarar que:
+
+a) no estabelecimento a ser inscrito:
+
+1.  não existe estoque de mercadorias; ou
+
+2. existe estoque de mercadorias devidamente regularizado no que se refere ao pagamento do ICMS;
+
+b) o local indicado como endereço do estabelecimento a ser inscrito é apropriado para o exercício da respectiva atividade;
+
+§ 1º-A. Por ocasião do pedido de inscrição no Cadastro do Comércio, Indústria e Serviços (CCIS), o interessado deve, também, efetuar o pagamento da respectiva taxa de serviços estaduais. (§ 1º-A: acrescentado pelo Decreto nº 14.749/2017. Efeitos a partir de 06.06.2017.)
+
+§ 2º Na hipótese do § 1º, inciso III, alínea “a”, item 2, deste artigo, o interessado deve digitalizar e enviar juntamente com a FAC Comércio Indústria os documentos relativos à aquisição das mercadorias e os respectivos comprovantes de pagamento do ICMS.
+
+§ 3º A pessoa, natural ou jurídica, que obtiver a inscrição no Cadastro do Comércio, Indústria e Serviços (CCIS) na forma deste artigo, fica obrigada a apresentar ao Fisco, quando intimada, no prazo estabelecido na intimação, quaisquer documentos a que se refere o art. 14 deste Anexo.
+
+§ 4º O descumprimento da intimação a que se refere o § 3º deste artigo implica:
+
+I - a suspensão da inscrição estadual;
+
+II - o cancelamento da inscrição estadual quando, decorrido o prazo de noventa dias contados da suspensão, não ocorrer a regularização da situação que a motivou.
+
+Art. 14. Ao solicitar a inscrição, na forma do art. 13 deste Anexo, o contribuinte deve anexar ao pedido, digitalmente, sem prejuízo de outros exigidos em norma específica, os seguintes documentos:
+
+I - Alvará de Licença da Prefeitura Municipal, para localização e funcionamento;
+
+II - comprovação da existência jurídica, regular, da pessoa que explora o estabelecimento, a saber:
+
+a) quando se tratar de pessoa que explora o estabelecimento como firma individual ‑ documento que comprove seu registro na Junta Comercial do Estado de Mato Grosso do Sul;
+
+b) quando se tratar de pessoa jurídica ‑ contrato social ou publicação do estatuto e da ata da assembleia geral que elegeu a última diretoria, bem como as suas respectivas alterações, em qualquer hipótese, arquivadas na Junta Comercial do Estado ou no Cartório de Registro de Títulos e Documentos da Comarca em que se situe o estabelecimento;
+
+III - identidade oficial e prova de inscrição no Cadastro da Pessoa Física/Ministério da Fazenda (CPF/MF), do titular, dos sócios ou dos dirigentes indicados na FAC;
+
+IV - comprovação da existência jurídica regular e prova de inscrição no Cadastro Nacional da Pessoa Jurídica/Ministério da Fazenda (CNPJ/MF), das pessoas jurídicas indicadas como acionistas ou como sócias cotistas indicadas na FAC;
+
+V - prova de inscrição no CNPJ/MF da empresa a cadastrar no Estado;
+
+VI - certidão do registro de imóveis que comprove a propriedade do local onde funcionará o estabelecimento ou, caso não seja próprio, o contrato de locação ou qualquer outro instrumento jurídico que autorize a utilização do imóvel;
+
+VII - comprovação da existência física do local onde se pretende exercer a atividade, feita por meio de fotos do local, da fachada, do interior e da indicação de suas coordenadas geográficas (latitude e longitude); (Inciso VII: nova redação dada pelo Decreto nº 14.749/2017. Efeitos a partir de 06.06.2017.)
+
+Redação anterior vigente até 05.06.2017.
+VII – comprovação da existência física do local onde se pretende exercer a atividade, feita por meio de fotos do local, da fachada, do interior e mapa da localização por GPS;
+
+VIII - revogado.
+
+(Inciso VIII: REVOGADO pelo Decreto nº 14.749/2017. Efeitos a partir de 06.06.2017.)
+
+Redação anterior vigente até 05.06.2017.
+VIII - comprovante de pagamento da taxa de serviços estaduais referente ao pedido de inscrição.
+
+§ 1º O Fisco poderá exigir a apresentação de quaisquer outros documentos, bem como determinar que se preste, por escrito ou verbalmente, as informações entendidas necessárias à apreciação do pedido.
+
+§ 2º Sendo o pedido de inscrição firmado por procurador, deverão ser apresentados a procuração por instrumento público e o documento oficial de identidade do mandatário.
+
+§ 3º Nos casos em que o alvará seja expedido com validade inferior a doze meses ou em condições que essa validade possa ser extinta em tempo inferior a esse período, o Fisco poderá exigir, após a extinção de sua validade, por decurso de prazo ou por qualquer outro evento, a apresentação do alvará de localização e funcionamento válido para o período ou para os períodos subsequentes.
+
+§ 4º Na hipótese de o interessado ter seus atos constitutivos registrados ou arquivados na Junta Comercial do Estado (JUCEMS) e possuir o respectivo Número de Identificação do Registro de Empresas (NIRE), fica dispensada a apresentação, na forma deste Anexo, dos documentos elencados nos incisos II, III, IV e V do caput deste artigo, exceto nos casos do § 1º do art. 17 deste Anexo. (§ 4º: acrescentado pelo Decreto nº 14.749/2017. Efeitos a partir de 06.06.2017.)
+
+Art. 15. Na hipótese do art. 13 deste Anexo, o pedido de inscrição no CCIS é deferido mediante os seguintes procedimentos:
+
+I - inserção do nome e dos demais dados do interessado, sob o número de inscrição que lhe for determinado, no Cadastro do Comércio, Indústria e Serviços do Estado;
+
+II - notificação ao interessado, pelo seu endereço eletrônico ou do seu representante, do deferimento de sua inscrição no Cadastro de Contribuintes do Estado. (Inciso II: nova redação dada pelo Decreto nº 14.749/2017. Efeitos a partir de 06.06.2017.)
+
+Redação anterior vigente até 05.06.2017.
+II - notificação do interessado, pelo seu endereço eletrônico ou do seu representante, do deferimento de sua inscrição no Cadastro de Contribuintes do Estado.
+
+
+Art. 16. Constatada qualquer irregularidade relativa à pessoa ou ao estabelecimento do contribuinte:
+(Art. 16: nova redação dada pelo Decreto nº 14.749/2017. Efeitos a partir de 06.06.2017.)
+
+I - o pedido deverá ser indeferido, no caso de irregularidade insanável;
+
+II - a autoridade competente para o deferimento do pedido pode conceder prazo, não superior a vinte dias, para o saneamento da irregularidade, se a falta for sanável, indeferindo o pedido no caso de descumprimento;
+
+III - o pedido pode ser renovado, com o aproveitamento dos requisitos já atendidos anteriormente, na hipótese de indeferimento com base no inciso II do caput deste artigo, se apresentado até sessenta dias, contados do indeferimento.
+
+Redação anterior do caput vigente até 05.06.2017.
+Art. 16. Constatada qualquer irregularidade relativa à pessoa ou ao estabelecimento do contribuinte, será indeferido o pedido de inscrição, podendo este ser renovado, com o aproveitamento dos requisitos já atendidos anteriormente, se a falta for sanável.
+
+
+§ 1° O indeferimento do pedido de inscrição estadual será feito mediante notificação ao interessado, pelo seu endereço eletrônico ou do seu representante, contendo as respectivas justificativas. (§ 1º: nova redação dada pelo Decreto nº 14.749/2017. Efeitos a partir de 06.06.2017.)
+
+Redação anterior vigente até 05.06.2017.
+§ 1° O indeferimento do pedido de inscrição estadual será feito mediante notificação do interessado, pelo seu endereço eletrônico ou do seu representante, contendo as respectivas justificativas.
+
+§ 2° O indeferimento do pedido de inscrição pode ser feito, também, mediante despacho em papel, contendo as respectivas justificativas, dando-se ciência da decisão ao interessado, pelos meios admitidos na legislação.
+
+§ 3° Na hipótese do § 2º deste artigo, a repartição fiscal deve digitalizar o despacho de indeferimento e a respectiva ciência ao interessado e anexá-los à FAC Comércio Indústria do interessado, arquivando os documentos originais pelo prazo mínimo de dois anos.
+
+Art. 17. A inscrição ou a alteração no Cadastro do Comércio, Indústria e Serviços (CCIS) independem de fiscalização prévia do respectivo estabelecimento, observado o disposto nos §§ 1º e 2º deste artigo.
+
+§ 1º O pedido de inscrição deve ser submetido à Unidade de Fiscalização, para emissão de parecer prévio, podendo ser precedido de fiscalização do estabelecimento, nos casos em que o estabelecimento a ser inscrito tenha por atividade:
+
+I - a industrialização ou a comercialização de:
+
+a) combustíveis derivados ou não de petróleo;
+
+b) carne bovina ou bubalina, em estado natural ou simplesmente resfriadas ou congeladas, ainda que embaladas a vácuo (frigoríficos);
+
+II - o beneficiamento elementar ou primário e o comércio atacadista de produtos de origem vegetal que realize operações de armazenamento próprio ou para terceiros (cerealistas);
+
+III – o exercício de comércio que se enquadre nos Códigos de Atividades Econômicas mencionados no Decreto nº 10.098, de 27 de outubro de 2000;
+
+IV – outras atividades definidas em ato do Superintendente de Administração Tributária.
+
+§ 2º Em casos específicos, o Superintendente de Administração Tributária pode, no interesse da Administração, estabelecer que a concessão da inscrição estadual seja precedida de parecer prévio e que este, por sua vez, seja precedido de fiscalização do respectivo estabelecimento.
+
+Art. 18. A fiscalização prévia do estabelecimento, em consequência dos procedimentos de que tratam os §§ 1º e 2º do art. 17 deste Anexo, tem por objetivo verificar:
+
+I - a identificação do endereço declarado com o local físico onde se exerce ou se pretende exercer a atividade;
+
+II - a adequação do local a que se refere o endereço declarado para o desempenho da atividade que se exerce ou se pretende exercer e, na hipótese do inciso II do § 1º do art. 17 deste Anexo, a existência de instalações adequadas ao armazenamento de grãos;
+
+III - a eventual existência de mercadorias no local fiscalizado ou de funcionamento de outra atividade no mesmo local;
+
+IV - em caso de sucessão, a documentação comprobatória da transmissão regular da propriedade das mercadorias ou dos bens.
+
+§ 1º Para efeito deste artigo, considera-se adequado o local que, pela estrutura e área disponível, permite o desempenho da atividade que se exerce ou se pretende exercer.
+
+§ 2º Na hipótese deste artigo:
+
+I - a fiscalização deve ser realizada por agente do Fisco integrante da Unidade de Fiscalização designado pelo respectivo chefe e sob a sua supervisão;
+
+II - o pedido de inscrição deve ser indeferido, observando-se o disposto nos §§ 1° a 3º do art. 16 deste Anexo, nos casos em que:
+
+a) o endereço declarado não corresponda ao local onde se pretende exercer a atividade;
+
+b) o local a que se refere o endereço declarado não seja adequado para o desempenho da atividade que se pretende exercer, observado o disposto no § 3º deste artigo;
+
+c) houver, no local, o exercício de atividade diversa da informada;
+
+III - o responsável pela realização da fiscalização deve:
+
+a) lavrar termo, relatando o resultado da fiscalização, com especificação das irregularidades constatadas, quando for o caso;
+
+b) fornecer cópia do termo lavrado ao interessado ou ao seu representante legal;
+
+c) digitalizar o termo lavrado e encaminhá-lo à Unidade de Cadastro Fiscal (UNCAD), para que este seja anexado à FAC Comércio Indústria do interessado.
+
+§ 3º Na hipótese do § 2º, II, “b”, deste artigo:
+
+I - o indeferimento do pedido deve especificar os motivos pelos quais o local a que se refere o endereço declarado não permite o desempenho da atividade que se pretende exercer;
+
+II - o interessado pode solicitar ao Superintendente de Administração Tributária a reconsideração do indeferimento, desde que demonstre que o local a que se refere o endereço declarado permite, pela forma de operação ou por outras circunstâncias, o desempenho da atividade que pretende exercer.
+
+Seção II
+Da Inscrição
+
+Art. 19. Cumpridas as exigências deste Capítulo e do Capítulo I deste Anexo, será deferida a inscrição estadual ao contribuinte, cabendo a ele providenciar a emissão da Ficha de Inscrição Estadual (FIC) no Portal ICMS Transparente, na Internet, no endereço eletrônico www.icmstransparente.ms.gov.br.
+
+Parágrafo único. O contribuinte deve providenciar a emissão de nova FIC, sempre que ocorrerem alterações dos dados cadastrais nela constantes.
+
+Art. 20. As autoridades fiscais poderão exigir a apresentação da FIC em quaisquer situações onde seja necessária a identificação do contribuinte (art. 5º deste Anexo).
+
+
+Seção III
+Das Alterações Cadastrais
+
+Art. 21. No caso de alteração de dados cadastrais da pessoa ou do estabelecimento, relativamente ao capital, aos sócios, ao ramo de negócio ou à atividade, à natureza jurídica, ao técnico responsável, ao endereço e a outros que impliquem a modificação dos dados anteriormente fornecidos, o contribuinte deve apresentar eletronicamente a FAC Comércio Indústria, tipo “Alteração Cadastral”, disponível na internet no endereço www.sefaz.ms.gov.br, na opção “cadastro de contribuinte online”, aplicando-se à hipótese as disposições dos arts. 13, 14 e 16 deste Anexo. (Art. 21, caput: nova redação dada pelo Decreto nº 14.749/2017. Efeitos a partir de 06.06.2017.)
+
+Redação anterior do caput vigente até 05.06.2017.
+Art. 21. No caso de alteração de dados cadastrais da pessoa ou do estabelecimento, relativamente ao capital, aos sócios, ao ramo de negócio ou à atividade, à natureza jurídica, ao técnico responsável, ao endereço e a outros que impliquem a modificação dos dados anteriormente fornecidos, o contribuinte deve apresentar eletronicamente a FAC Comércio Indústria, tipo “Alteração Cadastral”, disponível na internet no endereço www.sefaz.ms.gov.br, na opção “cadastro de contribuinte online”, aplicando-se à hipótese as disposições dos arts. 13 e 14 deste Anexo.
+
+§ 1º Nos casos deste artigo:
+
+I - a FAC deve ser preenchida apenas nos campos objeto das alterações e, obrigatoriamente, com número da inscrição estadual;
+
+II - os documentos comprobatórios da alteração devem ser digitalizados e enviados juntamente com a respectiva FAC, observado o disposto no § 4º do art. 14 deste Anexo. (Inciso II: nova redação dada pelo Decreto nº 14.749/2017. Efeitos a partir de 06.06.2017.)
+
+Redação anterior vigente até 05.06.2017.
+II – os documentos comprobatórios da alteração devem ser digitalizados e enviados juntamente com a respectiva FAC.
+
+§ 2º No caso de transformação de registro de empresário individual em registro de sociedade empresária, pela admissão de sócios, nos termos do art. 968, § 3°, do Código Civil (Lei n° 10.406, de 10 de janeiro de 2002), é permitida a transformação, por alteração, de cadastro de empresário individual em cadastro de sociedade empresária.
+
+Seção IV
+Das Disposições Sobre o Comércio Ambulante
+
+Art. 22. Os ambulantes estão obrigados à inscrição no cadastro referido neste Capítulo, tendo como domicílio fiscal o endereço de sua residência fixa, situada neste Estado.
+
+§ 1º Não será concedida inscrição ao ambulante que não comprovar a sua residência fixa, cancelando-se aquela concedida a quem perder ou modificar o domicílio sem a devida comunicação ao Fisco estadual.
+
+§ 2º Aos ambulantes são aplicáveis as disposições deste Capítulo e do anterior.
+
+Seção V
+Do Microempreendedor Individual (MEI)
+
+(Seção V, art. 22-A: acrescentados pelo Decreto nº 14.749/2017. Efeitos a partir de 06.06.2017.)
+
+Art. 22-A. Ao Microempreendedor Individual (MEI), assim definido nos termos do § 1º do art. 18-A da Lei Complementar nº 123, de 14 de dezembro de 2006, aplicam-se as disposições desta Seção.
+
+§ 1º A inscrição no Cadastro do Comércio, Indústria e Serviços (CCIS) deve ser solicitada na forma do disposto no caput do art. 13 deste Anexo, instruída com os seguintes documentos:
+
+I - Certificado de Condição de Microempreendedor Individual (CCMEI), obtido no endereço www.portaldoempreendedor.gov.br, contendo o: (Inciso I: nova redação dada pelo Decreto nº 15.522/2020. Efeitos a partir de 29.09.2020.)
+
+Redação anterior vigente até 28.09.2020.
+I - Certificado de Condição de Microempreendedor Individual (MEI), contendo Alvará de Licença e Funcionamento Provisório, obtido no endereço www.portaldoempreendedor.gov.br;
+
+a) Termo de Ciência e Responsabilidade com Efeito de Dispensa de Alvará e Licença de Funcionamento; ou o (Alínea “a”: acrescentada pelo Decreto nº 15.522/2020. Efeitos a partir de 29.09.2020.)
+
+b) Alvará de Licença e Funcionamento; (Alínea “b”: acrescentada pelo Decreto nº 15.522/2020. Efeitos a partir de 29.09.2020.)
+
+II - identidade oficial e prova de inscrição no Cadastro da Pessoa Física/Ministério da Fazenda (CPF/MF).
+
+§ 2º A alteração cadastral ou a suspensão, a prorrogação de suspensão, a reativação e a baixa de inscrição estadual devem ser solicitadas na forma deste Anexo, devendo o pedido ser acompanhado dos documentos comprobatórios que o instruem.
+
+§ 3º Não se exige do Microempreendedor Individual (MEI) a existência ou a indicação de contabilista responsável pela sua escrita fiscal.
+
+§ 4º No Cadastro de Contribuintes do Estado, o nome do microempreendedor individual deve figurar com o acréscimo do número do seu CPF.
+
+§ 5º O pedido de inscrição estadual ou de alteração cadastral deve ser indeferido nos casos em que:
+
+I - não forem apresentados todos os documentos necessários ou forem apresentados documentos contendo irregularidade;
+
+II - for constatada qualquer irregularidade relativa à pessoa ou ao estabelecimento do contribuinte.
+
+§ 6º Na hipótese do indeferimento de que trata o § 5º deste artigo, o pedido pode ser renovado, com o aproveitamento dos requisitos já atendidos anteriormente, se a falta for sanável.
+
+§ 7º As taxas de serviços estaduais relativas à inscrição, ao registro, ao cadastro, às alterações cadastrais e às baixas de inscrição ficam reduzidas a zero, nos termos do § 4º do art. 8º da Lei Complementar Estadual nº 197, de 24 de dezembro de 2014.
+
+Seção VI
+Dos Casos Especiais
+
+(Seção VI, Subseção Única, arts. 22-B a 22-D: acrescentados pelo Decreto nº 14.749/2017. Efeitos a partir de 06.06.2017.)
+
+Subseção Única
+Da Inscrição Estadual Em Caráter Temporário ou Provisório
+
+Art. 22-B. Às empresas de construção civil estabelecidas em outra unidade da Federação, que apenas executem obras neste Estado, podem obter inscrição estadual, em caráter temporário, nos termos desta Subseção, observado o disposto no § 6º do art. 1º deste Anexo.
+
+§ 1º A inscrição deve ser solicitada na forma prevista no art. 13 deste Anexo, mediante requerimento assinado pelo respectivo representante legal, acompanhado dos seguintes documentos:
+
+I - identidade oficial e prova de inscrição no Cadastro da Pessoa Física/Ministério da Fazenda (CPF/MF), do representante legal;
+
+II - prova de inscrição no Cadastro Nacional de Pessoas Jurídicas (CNPJ) do estabelecimento na unidade da Federação de origem;
+
+III - contrato social e as suas respectivas alterações, do estabelecimento na unidade da Federação de origem;
+
+IV - contratos referentes às obras a serem executadas neste Estado e dos respectivos Alvarás de Construção expedidos pelos Municípios de localização das obras.
+
+§ 2º A Ficha de Atualização Cadastral da Indústria e do Comércio (FAC Indústria e Comércio) deve ser preenchida consignando o número de inscrição no CNPJ do seu estabelecimento na unidade da Federação de origem e, como endereço, o local da obra neste Estado.
+
+§ 3º Havendo mais de um contrato de execução de obra, o endereço a que se refere o § 2º deste artigo deve corresponder ao da obra que tenha o maior prazo de execução.
+
+§ 4º Concluída a execução das obras, a empresa deve requerer a baixa da inscrição estadual.
+
+§ 5º Na hipótese de a empresa vir a contratar a execução de nova obra no Estado, esta pode requerer a reativação da inscrição estadual baixada, observado os §§ 1º a 3º deste artigo.
+
+Art. 22-C. No caso de contribuinte do ICMS cujo início das atividades deva ocorrer somente após a construção ou a montagem das respectivas instalações, a inscrição estadual pode ser concedida em caráter provisório, para a finalidade exclusiva de aquisição de materiais necessários à referida construção ou montagem, incluída a aquisição de bens do ativo imobilizado.
+
+§ 1º A inscrição deve ser solicitada na forma prevista nos arts. 13 e 14 deste Anexo, acompanhada dos documentos elencados nos incisos II a VI do art. 14 deste Anexo.
+
+§ 2º Na hipótese do caput deste artigo, a empresa deve requerer a conversão da inscrição provisória em inscrição definitiva antes do início efetivo de suas atividades, na forma do art. 21 deste Anexo, apresentando, para esta finalidade, por meio eletrônico, os documentos elencados nos incisos I e VII do art. 14 deste Anexo.
+
+§ 3º A conversão de inscrição provisória em inscrição definitiva fica condicionada a inexistência de pendência fiscal em nome da empresa e deve ser feita mediante alteração da situação, no cadastro, de “provisória” para “ativo”.
+
+Art. 22-D. A inscrição estadual provisória não pode ser usada para a realização de operações diversas das mencionadas nesta Subseção.
+
+
+CAPÍTULO III
+DA INSCRIÇÃO NO CADASTRO DA AGROPECUÁRIA
+
+Seção I
+Das Regras Relativas ao Cadastramento
+
+Art. 23. Observadas as disposições do art. 1º deste Anexo, deverão inscrever-se no Cadastro da Agropecuária (CAP), as pessoas naturais ou jurídicas que explorem atividades agropecuárias e extrativas vegetais, em imóvel próprio ou alheio.
+
+Parágrafo único. Deverão, também, inscrever-se no CAP, em relação ao respectivo imóvel, as pessoas naturais ou jurídicas que, ainda que não explorem atividades agropecuárias e extrativas vegetais, concedam, total ou parcialmente, a terceiro, sob condição de arrendamento, parceria, comodato, cessão gratuita ou outra, a posse ou o direito de uso do imóvel rural de que detenha o domínio ou a posse.
+
+Art. 24. A inscrição no Cadastro da Agropecuária (CAP) deve ser solicitada eletronicamente, na internet, no endereço www.sefaz.ms.gov.br, na opção “cadastro de contribuinte online”, mediante o preenchimento e o envio da Ficha de Atualização Cadastral da Agropecuária (FAC Agropecuária), instruída com os documentos elencados no art. 25 deste Anexo.
+
+Parágrafo único. Por ocasião do pedido de inscrição no Cadastro da Agropecuária (CAP) na forma do caput deste artigo, o interessado deve, também, efetuar o pagamento da respectiva taxa de serviços estaduais. (Parágrafo único: acrescentado pelo Decreto nº 14.749/2017. Efeitos a partir de 06.06.2017.)
+
+Art. 25. Ao solicitar a inscrição, na forma do art. 24 deste Anexo, o contribuinte deve anexar à FAC Agropecuária, digitalmente, sem prejuízo de outros exigidos em norma específica, os seguintes documentos:
+
+I – revogado;
+
+(Inciso I: REVOGADO pelo Decreto nº 14.749/2017. Efeitos a partir de 06.06.2017.)
+
+Redação anterior vigente até 05.06.2017.
+I - comprovante de pagamento da taxa de serviços estaduais, referente ao pedido de inscrição;
+
+II - sendo pessoa física, o documento oficial de identidade, a prova de inscrição no CPF/MF e um dos seguintes documentos de domínio, posse ou direito de uso de área de terras objeto do pedido de inscrição, acompanhado do comprovante do respectivo Cadastro Ambiental Rural do Estado de Mato Grosso do Sul (CAR-MS) do imóvel, quando obrigado fazê-lo, nos termos do Decreto n. 13.977, de 5 de junho de 2014:
+
+a) contrato de promessa de compra e venda;
+
+b) escritura definitiva de compra e venda;
+
+c) contrato de usufruto;
+
+d) formal de partilha;
+
+e) carta de adjudicação;
+
+f) sentença declaratória de usucapião;
+
+g) carta de aforamento ou enfiteuse;
+
+h) certidão de cartório de registro de imóveis;
+
+i) outros que comprovem a posse;
+
+j) contrato de arrendamento, parceria ou comodato rurais;
+
+l) outro que autorize a utilização da área de terras;
+
+III - sendo pessoa jurídica:
+
+a) os documentos previstos nos incisos II e V do art. 14 deste Anexo;
+
+b) o documento que comprove o domínio, a posse ou o direito de uso da área de terras, dentre os relacionados no inciso II deste artigo, acompanhado do comprovante do respectivo Cadastro Ambiental Rural do Estado de Mato Grosso do Sul (CAR-MS) do imóvel, quando obrigado fazê-lo, nos termos no Decreto n. 13.977, de 5 de junho de 2014.
+
+§ 1º Aplicam-se ao pedido de inscrição no Cadastro da Agropecuária, as disposições contidas nos §§ 1º e 2º do art. 14 deste Anexo.
+
+§ 2º Constatada qualquer irregularidade relativa à pessoa do produtor rural ou ao seu estabelecimento, deve ser indeferido o pedido de inscrição, mediante a observância do disposto no art. 16 deste Anexo, podendo o pedido ser renovado, com o aproveitamento dos requisitos já atendidos anteriormente, se a irregularidade for sanada. (§ 2º: nova redação dada pelo Decreto nº 14.749/2017. Efeitos a partir de 06.06.2017.)
+
+Redação anterior vigente até 05.06.2017.
+§ 2° Constatada qualquer irregularidade relativa à pessoa do produtor rural ou ao seu estabelecimento, deve ser indeferido o pedido de inscrição, mediante a observância do disposto nos §§ 1° a 3º do art. 16 deste Anexo, podendo o pedido ser renovado, com o aproveitamento dos requisitos já atendidos anteriormente, se a irregularidade for sanada.
+
+§ 3º Considera-se o contribuinte como circunscrito ao Município em que se encontra localizada a sede de sua propriedade, quando o imóvel rural estiver situado no território de mais de um Município (Lei n. 1.810, de 1997, art. 16).
+
+§ 4º Quando o produtor rural não tiver residência fixa na área do estabelecimento, ou quando o seu estabelecimento não for acessível para entrega de correspondência, deverá consignar, obrigatoriamente, o seu endereço pessoal ou aquele onde receberá as comunicações e intimações fiscais.
+
+§ 5º Tratando-se de pessoa jurídica, o endereço a que se refere o § 4º deste artigo poderá ser o do escritório da sede ou de filial do estabelecimento.
+
+Art. 25-A. Nos casos em que a posse imobiliária do imóvel rural esteja submetida a processo de regularização fundiária ou de implementação de assentamentos rurais, ou ainda, em litígio judicial, a inscrição estadual do estabelecimento no Cadastro da Agropecuária poderá ser concedida provisoriamente, pelo prazo de até 12 (doze) meses. (Art. 25-A: acrescentado pelo Decreto nº 15.321/2019. Efeitos a partir de 05.12.2019.)
+
+§ 1º Na hipótese deste artigo, o contribuinte, pessoa física ou jurídica, deve, para comprovar o exercício da posse não clandestina sobre o imóvel, em substituição aos documentos exigidos nas alíneas do inciso II do art. 25 deste Anexo, digitalizar e enviar, juntamente com a FAC Agropecuária, observada as demais exigências do referido artigo, um dos seguintes documentos:
+
+I - comprovante de protocolo e tramitação de ações judiciais visando à defesa ou ao reconhecimento da posse ou da propriedade;
+
+II - protocolo administrativo de pedido não julgado de “regularização fundiária” ou de “implementação de assentamentos rurais” formulado pelo interessado à União, ao Estado ou ao Município, na Administração Direta ou Indireta, conforme a competência legal para essa finalidade, associado ao documento que justifique a posse originária ou derivada.
+
+§ 2º A inscrição estadual concedida mediante a apresentação dos documentos constantes no § 1º deste artigo, deve conter a indicação do prazo de validade nos arquivos próprios da Secretaria de Estado de Fazenda.
+
+§ 3º Nos casos de comprovação da emissão da titulação, em caráter definitivo, da posse do imóvel:
+
+I - ao contribuinte inscrito nos termos deste artigo, a inscrição passa a vigorar por prazo indeterminado;
+
+II - à pessoa diferente do contribuinte inscrito nos termos deste artigo, a inscrição deve ser cancelada.
+
+§ 4º Findo o prazo de que trata o caput deste artigo, estando a inscrição estadual em situação cadastral ativa ou suspensa, na hipótese de não cessar a precariedade da posse do imóvel, o prazo será automaticamente prorrogado por igual período.
+
+§ 5º O deferimento do cadastramento provisório de contribuinte em processo de regularização fundiária, de assentamento, de posse ou propriedade litigiosa, não implica legitimação de posse clandestina ou irregular, e nem servirá como prova da posse de fato, para todos os fins legais.
+
+Art. 26. Nos casos em que, em face de casamento ou união estável, duas pessoas exerçam juntas a atividade agropecuária, a inscrição do respectivo estabelecimento no Cadastro de Contribuintes da Agropecuária (CAP) pode ser feita em nome de ambas, mediante a concessão de uma única inscrição.
+
+ § 1º Na hipótese deste artigo, os interessados devem:
+
+I – preencher a FAC Agropecuária, nos termos do art. 23 deste Anexo, informando na aba “Identificação do Contribuinte”:
+
+a) no campo “Nome/Razão Social”, o nome do primeiro titular;
+
+b) no campo “Nome do Cônjuge”, o nome do segundo titular;
+
+c) no campo “Nome a constar em Documentos Fiscais”, o nome do primeiro titular seguido do nome do segundo titular;
+
+II – digitalizar e enviar juntamente com a FAC Agropecuária, além dos documentos previstos no art. 25 deste Anexo:
+
+a) pedido formal, assinado pelos interessados, solicitando a inscrição no Cadastro de Contribuintes da Agropecuária em nome das duas pessoas, sob a justificativa de que exercem juntos a atividade agropecuária;
+
+b) Certidão de Casamento ou Escritura Pública Declaratória de União Estável.
+
+§ 2º Os contribuintes que, estando inscritos no Cadastro de Contribuintes da Agropecuária (CAP), pretenderem alterar o respectivo cadastro para a forma prevista neste artigo, devem apresentar, eletronicamente, nos termos do art. 30 deste Anexo, a FAC Agropecuária de alteração cadastral instruída com os documentos previstos nas alíneas “a” e “b” do inciso II do § 1º deste artigo.
+
+Seção I-A
+Da Inscrição de Apicultores e de Meliponicultores no Cadastro da Agropecuária (CAP)
+(Seção I-A: acrescentada pelo Decreto n° 16.103/2023. Efeitos desde 13.6.2022.)
+
+Art. 26-A. Os produtores rurais que exerçam apenas as atividades econômicas de apicultura e/ou de meliponicultura, devidamente inscritos no Cadastro de Apicultor perante a Agência Estadual de Defesa Sanitária Animal e Vegetal (IAGRO), podem se inscrever no Cadastro da Agropecuária (CAP), de forma simplificada, observadas as disposições deste artigo. (Art. 26-A: acrescentado pelo Decreto n° 16.103/2023. Efeitos desde 13.6.2022.)
+
+§ 1º Para efeito de domicílio tributário, o apicultor ou o meliponicultor podem indicar, opcionalmente: (§ 1º: acrescentado pelo Decreto n° 16.103/2023. Efeitos desde 13.6.2022.)
+
+I - o local onde exerçam, permanentemente, atividade relacionada com a produção e a venda de mel e de outros produtos apícolas por eles produzidos; ou (Inciso I: acrescentado pelo Decreto n° 16.103/2023. Efeitos desde 13.6.2022.)
+
+II – o endereço, em qualquer local do território do Estado de Mato Grosso do Sul, inclusive em área urbana, onde comprovadamente residam. (Inciso II: acrescentado pelo Decreto n° 16.103/2023. Efeitos desde 13.6.2022.)
+
+§ 2º A inscrição deve ser feita observando-se as disposições dos arts. 24 e 25 deste Anexo, não se exigindo: (§ 2º: acrescentado pelo Decreto n° 16.103/2023. Efeitos desde 13.6.2022.)
+
+I - o pagamento da taxa de serviços estaduais de que trata o parágrafo único do art. 24 deste Anexo, cujo o interessado fica dispensado; (Inciso I: acrescentado pelo Decreto n° 16.103/2023. Efeitos desde 13.6.2022.)
+
+II - a comprovação de domínio, posse, ou direito de uso de área de terras e a comprovação da inscrição no CAR-MS, de que tratam o inciso II e a alínea “b” do inciso III, ambos do caput do art. 25 deste Anexo, no caso em que o interessado tenha optado, em conformidade com o disposto no inciso II do § 1º deste artigo, pelo endereço onde resida como domicilio tributário. (Inciso II: acrescentado pelo Decreto n° 16.103/2023. Efeitos desde 13.6.2022.)
+
+§ 3º O apicultor e o meliponicultor devem ser inscritos indicando-se como atividade constante na Classificação Nacional de Atividades Econômicas (CNAE FISCAL) 0159-8/01 – APICULTURA. (§ 3º: acrescentado pelo Decreto n° 16.103/2023. Efeitos desde 13.6.2022.)
+
+§ 4º A inscrição realizada nos termos deste artigo é válida para o exercício da atividade de apicultura ou de meliponicultura em qualquer local do território do Estado. (§ 4º: acrescentado pelo Decreto n° 16.103/2023. Efeitos desde 13.6.2022.)
+
+
+Seção II
+Do Cadastramento de Estabelecimento em Propriedade em Condomínio
+
+Art. 27. No caso de propriedade em condomínio, o estabelecimento deve ser inscrito em nome de um dos condôminos.
+
+§ 1º Se a atividade produtiva for desenvolvida por apenas um dos condôminos, o estabelecimento será inscrito em nome deste.
+
+§ 2º Se a propriedade for subdividida entre os condôminos para fins de desenvolvimento de atividade produtiva, cada subdivisão corresponderá a um estabelecimento, a ser inscrito em nome do respectivo condômino.
+
+§ 3º Na hipótese deste artigo, além dos documentos exigidos para a inscrição no Cadastro de Contribuintes da Agropecuária, deve ser apresentado documento firmado pelos condôminos, com firma reconhecida por autenticidade em cartório, em que declarem:
+
+I - na hipótese do caput deste artigo, que a atividade produtiva, na propriedade, será desenvolvida em comum, por todos os condôminos;
+
+II - na hipótese do § 1º deste artigo, que a atividade produtiva, na propriedade, será desenvolvida exclusivamente por um dos condôminos, mencionando-se o respectivo nome;
+
+III - na hipótese do § 2º deste artigo, que a atividade produtiva, na propriedade, será desenvolvida de forma individualizada, em locais distintos.
+
+§ 4º Na hipótese do caput deste artigo, os condôminos devem indicar na declaração de que trata o inciso I do § 3º deste artigo o nome do condômino em nome do qual deve ser inscrito o estabelecimento e o nome daquele, que pode ser o mesmo, que representa os demais perante a Secretaria de Estado de Fazenda, relativamente ao respectivo estabelecimento.
+
+§ 5º Na hipótese dos §§ 2º e 3º, III, deste artigo, deve ser apresentado documento firmado pelos condôminos contendo a representação, em superfície plana, da respectiva propriedade, com a respectiva divisão.
+
+§ 6º No caso em que a atividade produtiva seja desenvolvida por mais de um dos condôminos em comum, mas não por todos, aplicam-se, no que couber, as disposições deste artigo.
+
+Seção III
+Da Inscrição
+
+Art. 28. Cumpridas as exigências deste Capítulo e do Capítulo I, será deferida a inscrição ao contribuinte.
+
+Parágrafo único. A prova da inscrição no Cadastro da Agropecuária pode ser feita por meio da consulta ou da apresentação do comprovante emitido por meio da Internet, mediante acesso ao Portal ICMS Transparente, no endereço eletrônico www.icmstransparente.ms.gov.br.
+
+Seção IV: Revogada.
+
+(Seção IV: REVOGADA pelo Decreto nº 16.451/2024. Efeitos a partir de 30.12.2024.)
+
+Redação original vigente até 29.12.24.
+Seção IV
+Da Revalidação Cadastral Da Inscrição
+
+Art. 29 Revogado.
+
+(Art. 29: REVOGADO pelo Decreto nº 16.451/2024. Efeitos a partir de 30.12.2024.)
+
+Redação original vigente até 29.12.24.
+Art. 29. A inscrição no Cadastro da Agropecuária deve ser revalidada anualmente, pelo contribuinte, mediante a apresentação da Declaração Anual do Produtor Rural (DAP) relativa ao ano anterior, no prazo previsto no Subanexo IX – Declaração Anual do Produtor Rural (DAP), ao Anexo XV – Das Obrigações Acessórias, ao Regulamento do ICMS.
+
+§ 1º A Declaração Anual do Produtor Rural (DAP) deve ser preenchida e enviada de forma individualizada para cada estabelecimento inscrito, por meio do programa Módulos Integrados do Contribuinte (MIC), disponibilizado, na internet, no endereço www.sefaz.ms.gov.br, observado o disposto no Subanexo IX ao Anexo XV ao Regulamento do ICMS. (§ 1º: nova redação dada pelo Decreto nº 14.749/2017. Efeitos a partir de 06.06.2017.)
+
+Redação anterior vigente até 05.06.2017.
+§ 1º A declaração prevista neste artigo será feita de forma individualizada para cada estabelecimento inscrito, mediante o preenchimento e o envio eletrônicos do formulário DAP, disponibilizado, na internet, no endereço www.sefaz.ms.gov.br, observado o disposto no Subanexo IX ao Anexo XV ao Regulamento do ICMS.
+
+§ 2º Será, também, exigida a DAP, abrangendo o período compreendido entre 1º de janeiro e a data de encerramento das atividades, do ano do pedido da baixa da inscrição (arts. 43 a 46 deste Anexo).
+
+§ 3º O apicultor e o meliponicultor, inscritos nos termos do art. 26-A deste Anexo, ficam dispensados da revalidação anual da inscrição estadual e da apresentação da Declaração Anual de Produtor Rural (DAP) de que trata este artigo. (§ 3º: acrescentado pelo Decreto n° 16.103/2023. Efeitos desde 13.6.2022.)
+
+Seção V
+Das Alterações Cadastrais
+
+Art. 30. No caso de alteração de dados da pessoa ou do estabelecimento, relativamente à atividade explorada, à natureza jurídica, ao endereço pessoal do contribuinte e a outras que impliquem a modificação dos dados anteriormente fornecidos, o contribuinte deve apresentar eletronicamente a FAC Agropecuária, tipo “Alteração Cadastral”, disponível na internet no endereço www.sefaz.ms.gov.br, na opção “cadastro de contribuinte online”, aplicando-se à hipótese as disposições do art. 25 deste Anexo.
+
+§ 1° Na hipótese deste artigo:
+
+I - a FAC Agropecuária deve ser preenchida apenas nos campos objeto das alterações e, obrigatoriamente, com a inscrição do contribuinte;
+
+II – os documentos exigidos relativamente à alteração pretendida devem ser digitalizados e enviados juntamente com a referida FAC Agropecuária.
+
+§ 2º Não são permitidas alterações cadastrais:
+
+I – que impliquem a transferência da titularidade da inscrição, exceto quando se tratar de propriedade em condomínio;
+
+II – em decorrência de mudança de local para o exercício da respectiva atividade, hipótese em que deverá ser requerida a baixa de uma e a abertura de outra inscrição.
+
+Art. 31. Ocorrendo o falecimento do contribuinte inscrito, será realizada a alteração cadastral, para que o nome do contribuinte figure precedido da expressão “Espólio de”, até que ocorra, com a partilha, o encerramento do inventário.
+
+Parágrafo único. A alteração referida neste artigo deve ser promovida:
+
+I - pelo inventariante, que deve apresentar os documentos necessários à comprovação da sua identidade, da sua condição de inventariante e do falecimento do contribuinte; ou
+
+II - de ofício, nos casos em que o Fisco estadual tomar conhecimento da ocorrência do falecimento do contribuinte antes de o inventariante promover a alteração.
+
+Seção VI
+Das Modificações na Situação Cadastral
+
+Art. 32. Observadas as disposições dos arts. 11 e 12 da parte geral deste Regulamento, no caso de multiplicidade de estabelecimentos agropecuários ou extrativos vegetais, o domicílio tributário do produtor, mediante autorização prévia do Superintendente de Administração Tributária ou de autoridade administrativa cuja competência tenha sido por ele delegada, poderá ser centralizado em apenas um deles.
+
+Parágrafo único. Havendo circunstâncias que impossibilitem ou que dificultem as atividades de arrecadação ou de fiscalização, a centralização poderá ser denegada, mediante despacho fundamentado.
+
+Art. 33. Independentemente do domicílio tributário do produtor rural, que é do estabelecimento efetivo ou centralizador (arts. 9º e 32 deste Anexo), pode aquele relacionar-se com o Fisco por meio de Agência Fazendária diferente daquela do seu domicílio.
+
+Art. 34. O pedido do contribuinte, relativo à centralização à que se refere o art. 32 deste Anexo, deve ser:
+
+I - fundamentado com as razões que o justifiquem;
+
+II - apresentado na Agência Fazendária onde se pretenda centralizar o domicílio tributário, ou, se já tiver centralização anterior, na repartição centralizada;
+
+III – acompanhado:
+
+a) dos documentos, inclusive mapas, se for o caso, que comprovem a necessidade da transferência ou da centralização;
+
+b) das certidões negativas de débito;
+
+c) do comprovante do pagamento da taxa relativa à alteração cadastral.
+
+§ 1º Na hipótese deste artigo, o contribuinte deve estar regular quanto às prestações de contas, realizadas nos termos do Subanexo II ao Anexo XV deste Regulamento, referentes à entrega de todos os talonários a ele fornecidos.
+
+§ 2º Os documentos de que trata este artigo devem ser encaminhados, à Unidade de Cadastro Fiscal (UNCAD), para processamento e encaminhamento à Coordenadoria de Operação, Suporte e Infraestrutura (COSI) para fins de microfilmagem.
+
+Art. 35. Autorizada a centralização, o domicílio tributário do produtor passará a ser o do estabelecimento efetivo ou centralizador para todos os efeitos legais.
+
+CAPÍTULO IV
+DA SUSPENSÃO E DO CANCELAMENTO DA INSCRIÇÃO
+
+Seção I
+Das Disposições Gerais
+
+Art. 36. A suspensão e o cancelamento da inscrição estadual, exceto nas hipóteses do inciso I e das alíneas “c” e “h” do inciso II, todos do caput do art. 38 deste Anexo, deverão ser objeto de Ato Declaratório exarado pelo Superintendente de Administração Tributária, publicado no Diário Oficial do Estado, para o conhecimento dos servidores fazendários, do contribuinte e de terceiros. (Art. 36: nova redação dada pelo Decreto n° 16.103/2023. Efeitos a partir de 8.2.2023.)
+
+Redação anterior dada pelo Decreto nº 15.540/2020 . Efeitos de 3.11.2020 a 7.2.2023.
+Art. 36. A suspensão e o cancelamento da inscrição estadual, exceto nas hipóteses das alíneas “c” e “h” do inciso II do art. 38, deste Anexo, deverão ser objeto de Ato Declaratório exarado pelo Superintendente de Administração Tributária, publicado no Diário Oficial do Estado, para o conhecimento dos servidores fazendários, do contribuinte e de terceiros.
+Redação anterior vigente até 2.11.2020.
+Art. 36. A suspensão e o cancelamento da inscrição estadual, exceto na hipótese do art. 38, caput, II, "c", deste Anexo, deverá ser objeto de Ato Declaratório exarado pelo Superintendente de Administração Tributária, publicado no Diário Oficial do Estado, para o conhecimento dos servidores fazendários, do contribuinte e de terceiros.
+
+§ 1° A inscrição cancelada ou suspensa pode ser reativada, com o mesmo número, por meio de Ato Declaratório exarado pelo Superintendente de Administração Tributária, depois de cumpridas as exigências necessárias à sua reativação, observado o disposto no art. 47 deste Anexo.
+
+§ 2º A suspensão ou o cancelamento da inscrição não exime o contribuinte ou o responsável do pagamento do ICMS.
+
+Seção II
+Da Suspensão
+
+Art. 37. A inscrição poderá ter a sua eficácia suspensa, nos termos do disposto nesta seção, sem prejuízo do disposto na Seção III deste Capítulo.
+
+Art. 38. A suspensão dar-se-á nas seguintes hipóteses:
+
+I - a requerimento do contribuinte, por prazo de até um ano, nos casos de paralisação das atividades, nos termos do art. 39 deste Anexo; (Inciso I: nova redação dada pelo Decreto n° 16.103/2023. Efeitos a partir de 8.2.2023.)
+
+Redação anterior dada pelo Decreto nº 14.749/2017. Efeitos de 6.6.2017 a 7.2.2023.
+I - a requerimento do contribuinte, por prazo de até cento e oitenta dias, nos casos de paralisação das atividades, nos termos do art. 39 deste Anexo;
+
+Redação anterior vigente até 05.06.2017.
+I - a requerimento do contribuinte, por prazo de até cento e oitenta dias, nos casos de paralização das atividades, nos termos do art. 39 deste Anexo;
+
+II - de ofício, pelo Superintendente de Administração Tributária, por prazo de até noventa dias, quando o contribuinte:
+
+a) sistematicamente, deixar de pagar o imposto por ele devido ou do qual se tornou responsável;
+
+b) desacatar, comprovadamente, a autoridade fiscal ou, deliberada e repetidamente, motivar embaraço a fiscalização;
+
+c) sendo produtor rural cujo direito de uso da terra decorra de contrato, deixar de renová-lo antes do seu vencimento;
+
+d) deixar de comunicar à Secretaria de Estado de Fazenda, no prazo regulamentar (art. 8º deste Anexo), qualquer alteração cadastral.
+
+e) deixar de apresentar, por ocasião da fiscalização do estabelecimento ou quando intimado, quaisquer documentos a que se refere o art. 14 ou 25 deste Anexo, conforme o caso;
+
+f) deixar de prestar contas da utilização das Notas Fiscais de Produtor – Série Especial (NFP/SE), nos termos do Subanexo II ao Anexo XV deste Regulamento do ICMS;
+
+g) for responsável por outros acontecimentos que, a critério do Superintendente de Administração Tributária, contrariem o interesse público relativamente à arrecadação ou à fiscalização do imposto.
+
+h) que possua domicílio tributário em ambiente de coworking (art. 2º, § 3º-A deste Anexo), ao término do contrato: (Alínea “h”: acrescentada pelo Decreto nº 15.540/2020. Efeitos a partir de 3.11.2020.)
+
+1.  não comprove a sua renovação; ou (Item “1”: acrescentado pelo Decreto nº 15.540/2020. Efeitos a partir de 3.11.2020.)
+
+2. não promova a alteração de endereço ou a baixa da sua inscrição estadual. (Item “2”: acrescentado pelo Decreto nº 15.540/2020. Efeitos a partir de 3.11.2020.)
+
+§ 1º A suspensão não elide o contribuinte do cumprimento das seguintes obrigações acessórias:
+
+I - da entrega da Escrituração Fiscal Digital (EFD), da Declaração de Substituição Tributária, Diferencial de Alíquota e Antecipação (DeSTDA), da Guia Nacional de Informação e Apuração do ICMS - Substituição Tributária (GIA-ST) ou de documento equivalente, conforme a hipótese na qual se enquadre;
+
+II - da entrega da declaração do Programa Gerador do Documento de Arrecadação do Simples Nacional (PGDAS-D), se optante do Simples Nacional;
+
+III - revogado;
+(Inciso III: REVOGADO pelo Decreto nº 16.451/2024. Efeitos a partir de 30.12.2024.)
+
+Redação original vigente até 29.12.24.
+III - da entrega da Declaração Anual de Produtor (DAP), se estabelecimento agropecuário;
+
+IV - da comunicação, à Secretaria de Estado de Fazenda, de qualquer alteração cadastral.
+
+§ 2° Na hipótese prevista na alínea “g” do inciso II do caput deste artigo, o agente do Fisco que sugerir a suspensão da inscrição estadual deve indicar os fatos que a fundamentam.
+
+§ 3° Suspensa a inscrição estadual, o documento contendo a sugestão de que trata o § 2° deste artigo deve ser digitalizado e encaminhado à Unidade de Cadastro Fiscal (UNCAD) para processamento, exceto no caso em que a sugestão seja encaminhada mediante comunicação eletrônica, hipótese em que a Unidade de Cadastro Fiscal (UNCAD) deve registrar, no sistema informatizado, os dados que identificam a referida comunicação.
+
+§ 4º Na hipótese do inciso II do caput deste artigo, após a regularização da situação que motivou a sua suspensão, a inscrição deve ser reativada, salvo se já cancelada, hipótese em que se aplicam as regras relativas ao cancelamento.
+
+§ 5º Em casos excepcionais, na hipótese do inciso II do caput deste artigo, a suspensão poderá ser prorrogada, a critério do Superintendente de Administração Tributária, por período não superior ao da suspensão inicial.
+
+Art. 39. Na hipótese do inciso I do art. 38 deste Anexo, o contribuinte deve solicitar a suspensão da inscrição estadual eletronicamente, na internet, no endereço www.sefaz.ms.gov.br, na opção “cadastro de contribuinte online”, mediante o preenchimento e o envio da FAC Agropecuária ou da FAC Comércio Indústria, tipo “Pedido de Suspensão”, conforme o caso.
+
+§ 1º A suspensão da inscrição a pedido do contribuinte é condicionada, ainda, que o contribuinte digitalize e envie, eletronicamente, juntamente com o pedido:
+
+I - requerimento contendo a especificação da situação que motivou o pedido;
+
+II - documentos comprobatórios da informação objeto do pedido.
+
+§ 2º A suspensão solicitada pelo contribuinte poderá ser prorrogada, a critério do Superintendente de Administração Tributária, por mais um período não superior ao inicialmente concedido.
+
+§ 3º O pedido de que trata o § 2º deste artigo deve ser solicitado eletronicamente, na internet, no endereço  www.sefaz.ms.gov.br, na opção “cadastro de contribuinte online”, mediante o preenchimento e o envio da FAC Agropecuária ou da FAC Comércio Indústria, tipo “Prorrogação da Suspensão”, conforme o caso.
+
+Art. 40. O Superintendente de Administração Tributária poderá, nos casos de suspensão, exigir que os livros, os talonários de notas e outros documentos fiscais ou contábeis, quando em papel, permaneçam sob a guarda do órgão fazendário da circunscrição do estabelecimento.
+
+Art. 41. Durante o período de suspensão, o imposto incidente nas operações ou nas prestações realizadas pelo contribuinte com a inscrição suspensa deve ser pago nos seguintes momentos, observado o disposto no § 2º deste artigo:
+
+I – na saída das mercadorias do respectivo estabelecimento, no caso de mercadorias que, estando sujeitas ao regime de apuração normal, estiverem em estoque na data de vigência da suspensão;
+
+II - na saída das mercadorias do estabelecimento do fornecedor, no caso de mercadorias adquiridas de estabelecimento localizado neste Estado, para industrialização ou comercialização, salvo nos casos em que a responsabilidade pelo seu pagamento esteja atribuída ao fornecedor;
+
+III - na entrada no território do Estado, no caso de mercadorias ou de bens adquiridos de estabelecimentos localizados em outra unidade da Federação, incluído, se for o caso, o imposto relativo à respectiva prestação de serviço (diferencial de alíquota), excetuadas as operações em relação às quais o remetente, na condição de substituto tributário, devidamente habilitado, tenha efetuado a retenção do imposto;
+
+IV - no início da prestação, no caso de prestações de serviço de transporte intermunicipal ou interestadual iniciadas neste Estado, exceto as prestações cuja responsabilidade pelo pagamento do imposto esteja atribuída ao remetente das respectivas mercadorias ou bens;
+
+V - no momento definido no ato de suspensão, nas demais hipóteses.
+
+§ 1º O imposto deve ser pago pelo estabelecimento com a inscrição suspensa, ressalvadas as hipóteses em que a responsabilidade esteja atribuída a pessoa diversa, na condição de substituto tributário, hipótese em que o pagamento deve ser feito pelo substituto tributário, no prazo previsto para a respectiva hipótese.
+
+§ 2º O imposto pode ser pago até o momento da passagem das respectivas mercadorias ou bens, ou do veículo transportador, pela primeira repartição fiscal, fixa ou volante, existente no itinerário, entre:
+
+I - o estabelecimento com a inscrição estadual suspensa e o destinatário, na hipótese do inciso I do caput deste artigo;
+
+II - o estabelecimento fornecedor e o estabelecimento com a inscrição estadual suspensa, na hipótese do inciso II do caput deste artigo;
+
+III - o local de entrada no território do Estado e o estabelecimento com a inscrição estadual suspensa, na hipótese do inciso III do caput deste artigo.
+
+IV - o local de início e o do término da prestação ou, se este localizar-se em outra unidade da Federação, o local da saída do veículo do território do Estado, na hipótese do inciso IV do caput deste artigo.
+
+§ 3º As disposições da legislação tributária, relativas ao comércio eventual e ao transportador autônomo, aplicam-se, complementar e respectivamente, às operações e às prestações realizadas por contribuinte com a inscrição estadual suspensa.
+
+Seção III
+Do Cancelamento
+
+Art. 42. A inscrição será cancelada, quando:
+
+I - o contribuinte deixar de exercer as suas atividades ou de realizar operações ou prestações, observado o disposto na Seção II deste Capítulo, por um período de:
+
+a) um ano, tanto no caso de contribuinte inscrito no Cadastro do Comércio, Indústria e Serviços (CCIS), quanto no caso de contribuinte inscrito no Cadastro da Agropecuária (CAP); (Alínea “a”: nova redação dada pelo Decreto n° 16.103/2023. Efeitos a partir de 8.2.2023.)
+
+Redação original vigente até 7.2.2023.
+a) cento e oitenta dias, no caso de contribuinte inscrito no CCIS; e
+
+b) revogada;
+
+(Alínea “b”: REVOGADA pelo Decreto n° 16.103/2023 . Efeitos a partir de 8.2.2023.)
+
+Redação original vigente até 7.2.2023.
+b) um ano, no caso de contribuinte inscrito no CAP;
+
+
+II - ocorrer falência, após sua decretação pelo juiz competente;
+
+III - através de ação fiscal, ficar provado que:
+
+a) o contribuinte não exerce suas atividades no endereço cadastrado;
+
+b) exista, no local, em atividade, outro contribuinte com inscrição estadual ativa ou suspensa operando;
+
+c) o local a que corresponde o endereço cadastrado não seja, nos termos do art. 18, II e § 1º, deste Anexo, adequado para o desempenho da respectiva atividade;
+
+IV - revogado;
+(Inciso IV: REVOGADO pelo Decreto nº 16.451/2024. Efeitos a partir de 30.12.2024.)
+
+Redação original vigente até 29.12.24.
+IV - o produtor rural deixar de apresentar a DAP, relativa ao ano anterior, na forma e prazo determinados pela Secretaria de Estado de Fazenda;
+
+V - o contribuinte não regularizar, no período de suspensão de sua inscrição estadual efetivada com fundamento no inciso II do caput do art. 38 deste Anexo, a situação fisco-tributária que a motivou;
+
+VI - o documento pelo qual se comprova a inscrição estadual for comprovadamente utilizado por outra pessoa, que não o titular ou o representante legal, ou houver prova de sua adulteração ou falsificação;
+
+VII - o produtor rural cadastrar seu estabelecimento rural em duplicidade.
+
+VIII - o contribuinte for responsável por adulteração de combustíveis, assim considerados os estabelecimentos que realizarem o transporte, ou a distribuição, ou a estocagem ou a revenda de combustíveis adulterados, comprovada por laudo da Agência Nacional de Petróleo (ANP) ou de entidade por ela credenciada.
+
+IX - o contribuinte incorrer nas situações a que se referem:
+
+a) o inciso II do § 4º do art. 13 deste Anexo;
+
+b) o § 1º do art. 22 deste Anexo;
+
+c) o art. 46 deste Anexo;
+
+d) o parágrafo único do art. 8º-A deste Anexo. (Alínea “d”: acrescentado pelo Decreto nº 14.749/2017. Efeitos a partir de 06.06.2017.)
+
+X - a inscrição no Cadastro Nacional da Pessoa Jurídica (CNPJ) ou na Junta Comercial ou, se for o caso, no Cartório de Registro de Títulos e Documentos do contribuinte tiver sido baixada, cancelada ou extinta, exceto nos casos em que o contribuinte tenha atendido ao disposto no art. 43 deste Anexo ou ainda não tenha transcorrido o prazo estabelecido no inciso I do § 1º do referido artigo;
+
+XI – revogado;
+
+(Inciso XI: REVOGADO pelo Decreto nº 15.852/2022. Efeitos a partir de 11.1.2022.)
+
+Redação anterior vigente até 10.1.2022.
+XI – o contribuinte deixar, por três períodos, consecutivos ou não, de entregar a Escrituração Fiscal Digital (EFD), a Declaração de Substituição Tributária, Diferencial de Alíquota e Antecipação (DeSTDA), a Guia Nacional de Informação e Apuração do ICMS - Substituição Tributária (GIA-ST) ou documento equivalente, bem como, se optante do Simples Nacional, deixar de apresentar a declaração do Programa Gerador do Documento de Arrecadação do Simples Nacional (PGDAS-D);
+
+XII - o contribuinte for responsável por outros acontecimentos que, a critério do Superintendente de Administração Tributária, contrariem o interesse público relativamente à arrecadação ou à fiscalização do imposto, cuja gravidade justifique a medida.
+
+§ 1º O cancelamento previsto neste artigo, importará em:
+
+I - verificação dos lançamentos do imposto e apuração de débitos fiscais, se houver;
+
+II - ineficácia da inscrição, inabilitando o contribuinte para:
+
+a) a emissão de documentos fiscais eletrônicos e a transmissão da Escrituração Fiscal Digital (EFD);
+
+b) a aquisição, na condição de inscrito, de mercadorias ou de bens, ou de serviços de transporte interestadual ou intermunicipal e de comunicação;
+
+III - inidoneidade, nos termos do art. 93, V, da Lei n° 1.810, de 22 de dezembro de 1997, da documentação fiscal emitida após o cancelamento da inscrição;
+
+IV - aplicação das normas relativas ao comércio eventual e ao transportador autônomo em relação, respectivamente, às operações e às prestações realizadas pelo estabelecimento cuja inscrição foi cancelada.
+
+§ 2º A partir da publicação do Ato Declaratório do cancelamento da inscrição (art. 36), não será permitida a utilização de crédito fiscal decorrente de operações ou prestações realizadas por contribuintes alcançados pelo ato (RICMS, art. 65, VIII).
+
+§ 3º São inidôneos, inclusive para fins de registro e utilização de crédito fiscal pelos destinatários dos respectivos bens, mercadorias ou serviços, os documentos fiscais emitidos, após o cancelamento, por estabelecimentos cuja inscrição estadual esteja cancelada.
+
+§ 4º O cancelamento da inscrição estadual realizado nos termos do inciso X do caput deste artigo não dispensa o contribuinte da obrigação de requerer a respectiva baixa na Secretaria de Estado de Fazenda, de acordo com o disposto nos arts. 43 a 46 deste Anexo.
+
+§ 5º Na hipótese do inciso X do caput deste artigo o cancelamento:
+
+I - efetiva-se, independentemente de Ato Declaratório, mediante a inserção no respectivo sistema da informação prestada pela Receita Federal do Brasil, pela Junta Comercial ou por Cartório de Registro de Títulos e Documentos;
+
+II - produz efeitos a partir da data de sua efetivação, inclusive quanto ao disposto nos §§ 2º e 3º deste artigo.
+
+§ 6° Nas hipóteses de que tratam os incisos III, VIII e XII do caput deste artigo, o cancelamento da inscrição estadual deve ser precedido da lavratura de termo justificado e fundamentado, descrevendo o fato motivador do cancelamento.
+
+§ 7° O termo de que trata o § 6° deste artigo deve ser digitalizado e encaminhado, à Unidade de Cadastro Fiscal (UNCAD), para que este seja anexado à FAC Comércio Indústria do interessado.
+
+§ 8º A inscrição pode ser cancelada se: (§ 8º: acrescentado pelo Decreto nº 15.852/2022. Efeitos a partir de 11.1.2022.)
+
+I - o contribuinte deixar de entregar por 3 (três) períodos, consecutivos ou não, a Escrituração Fiscal Digital (EFD); a Declaração de Substituição Tributária, Diferencial de Alíquota e Antecipação (DeSTDA); a Guia Nacional de Informação e Apuração do ICMS - Substituição Tributária (GIA-ST) ou documento equivalente; (Inciso I: acrescentado pelo Decreto nº 15.852/2022. Efeitos a partir de 11.1.2022.)
+
+II - o optante do Simples Nacional deixar de apresentar a declaração do Programa Gerador do Documento de Arrecadação do Simples Nacional (PGDAS-D). (Inciso II: acrescentado pelo Decreto nº 15.852/2022. Efeitos a partir de 11.1.2022.)
+
+CAPÍTULO IV-A
+DA NULIDADE DA INSCRIÇÃO ESTADUAL
+(Capítulo IV-A: acrescentado pelo Decreto n° 16.103/2023. Efeitos a partir de 8.2.2023.)
+
+Art. 42-A. A inscrição estadual pode, a qualquer tempo, ser declarada nula quando se constatar que a empresa se constituiu ou passou a ser empregada com características fictícias, com propósito fraudulento ou de servir como instrumento à prática de outros ilícitos, nos termos deste capítulo. (Art. 42-A: acrescentado pelo Decreto n° 16.103/2023. Efeitos a partir de 8.2.2023.)
+
+§ 1º São fatos que poderão implicar a nulidade da inscrição estadual: (§ 1º: acrescentado pelo Decreto n° 16.103/2023. Efeitos a partir de 8.2.2023.)
+
+I - a simulação de existência do estabelecimento ou da empresa; (Inciso I: acrescentado pelo Decreto n° 16.103/2023. Efeitos a partir de 8.2.2023.)
+
+II - a simulação do quadro societário da empresa;(Inciso II: acrescentado pelo Decreto n° 16.103/2023. Efeitos a partir de 8.2.2023.)
+
+III - a realização de operações simuladas; (Inciso III: acrescentado pelo Decreto n° 16.103/2023. Efeitos a partir de 8.2.2023.)
+
+IV - a indicação, para efeito de inscrição no Cadastro de Contribuintes do Estado, de dados falsos que contribuam para a caracterização da simulação prevista no inciso I nem se enquadrem no inciso II deste parágrafo. (Inciso IV: acrescentado pelo Decreto n° 16.103/2023. Efeitos a partir de 8.2.2023.)
+
+§ 2° Considera-se simulação: (§ 2º: acrescentado pelo Decreto n° 16.103/2023. Efeitos a partir de 8.2.2023.)
+
+I - de existência do estabelecimento ou da empresa quando: (Inciso I: acrescentado pelo Decreto n° 16.103/2023. Efeitos a partir de 8.2.2023.)
+
+a) a atividade relativa a seu objeto social não tiver sido ali efetivamente exercida, em conformidade com a declaração do contribuinte, prestada para efeito de inscrição no Cadastro de Contribuintes do Estado; (Alínea “a”: acrescentada pelo Decreto n° 16.103/2023. Efeitos a partir de 8.2.2023.)
+
+b) as operações ou as prestações de serviços constantes nos documentos ou nos registros contábeis e fiscais não tiverem efetivamente ocorrido; (Alínea “b”: acrescentada pelo Decreto n° 16.103/2023. Efeitos a partir de 8.2.2023.)
+
+II - relativamente ao quadro societário, quando a sociedade ou a entidade for composta por pessoas interpostas, assim entendidos sócios, diretores ou administradores, que: (Inciso II: acrescentado pelo Decreto n° 16.103/2023. Efeitos a partir de 8.2.2023.)
+
+a) não sejam localizados nos endereços informados como sendo de sua residência ou domicílio; (Alínea “a”: acrescentada pelo Decreto n° 16.103/2023. Efeitos a partir de 8.2.2023.)
+
+b) não disponham de capacidade econômica compatível com os vínculos que contratualmente possuam com a empresa ou com as funções que lhes são atribuídas; (Alínea “b”: acrescentada pelo Decreto n° 16.103/2023. Efeitos a partir de 8.2.2023.)
+
+c) apresentem outras evidências, constatadas pelo fisco, que as qualifiquem como pessoas interpostas; (Alínea “c”: acrescentada pelo Decreto n° 16.103/2023. Efeitos a partir de 8.2.2023.)
+
+III - de operações, quando houver evidências de que a emissão de documento fiscal ocorre: (Inciso III: acrescentado pelo Decreto n° 16.103/2023. Efeitos a partir de 8.2.2023.)
+
+a) com a finalidade de gerar crédito de ICMS, sem que haja efetiva circulação da mercadoria; (Alínea “a”: acrescentada pelo Decreto n° 16.103/2023. Efeitos a partir de 8.2.2023.)
+
+b) sob o propósito de acobertar circulação de mercadoria cujo real destinatário ou remetente é distinto daquele indicado no respectivo documento fiscal; (Alínea “b”: acrescentada pelo Decreto n° 16.103/2023. Efeitos a partir de 8.2.2023.)
+
+c) em outras circunstâncias, em que a emissão de documentos fiscais se dá com a finalidade de emprego de fraude, notadamente: (Alínea “c”: acrescentada pelo Decreto n° 16.103/2023. Efeitos a partir de 8.2.2023.)
+
+1. quando a entrada de mercadoria for insuficiente para acobertar a saída (estoque negativo); (Item 1: acrescentado pelo Decreto n° 16.103/2023. Efeitos a partir de 8.2.2023.)
+
+2. quando a entrada da mercadoria for decorrente de documento emitido por empresa cuja inscrição estadual tenha sido declarada nula ou os documentos tenham sido considerados inidôneos; (Item 2: acrescentado pelo Decreto n° 16.103/2023. Efeitos a partir de 8.2.2023.)
+
+3. quando não haja, para as operações de saída acobertadas, a comprovação de que estas efetivamente ocorreram; (Item  3: acrescentado pelo Decreto n° 16.103/2023. Efeitos a partir de 8.2.2023.)
+
+4. quando houver ocorrência reiterada de falta de registros de passagem, pelas unidades de fiscalização em trânsito, em operações interestaduais; (Item  4: acrescentado pelo Decreto n° 16.103/2023. Efeitos a partir de 8.2.2023.)
+
+5. em flagrantes, que se constatam em trânsito, que revelem rotas incompatíveis com a origem ou com o destino da mercadoria. (Item  5: acrescentado pelo Decreto n° 16.103/2023. Efeitos a partir de 8.2.2023.)
+
+§ 3º Tratando-se de simulação de estabelecimento, conjugada ou não com simulação de atividade ou com simulação de operações, o Fisco verificará se a irregularidade ocorreu desde a obtenção da inscrição ou a partir de determinada data. (§ 3º: acrescentado pelo Decreto n° 16.103/2023. Efeitos a partir de 8.2.2023.)
+
+Art. 42-B. A nulidade da inscrição estadual, de que trata este capítulo, deve ser declarada mediante Ato Declaratório exarado pelo Superintendente de Administração Tributária, publicado no Diário Oficial do Estado, para o conhecimento dos servidores fazendários, do sujeito passivo e de terceiros, bem como registrada nos sistemas fazendários para controle. (Art. 42-B: acrescentado pelo Decreto n° 16.103/2023. Efeitos a partir de 8.2.2023.)
+
+§ 1º A declaração de nulidade torna inválida a inscrição estadual perante a Administração Tributária desde a ocorrência do fato no qual se fundamenta. (§ 1º: acrescentado pelo Decreto n° 16.103/2023. Efeitos a partir de 8.2.2023.)
+
+§ 2º O procedimento destinado à declaração de nulidade da inscrição estadual deve ser disciplinado por ato do Superintende de Administração Tributária, respeitado o contraditório e a ampla defesa em processo administrativo regularmente instaurado. (§ 2º: acrescentado pelo Decreto n° 16.103/2023. Efeitos a partir de 8.2.2023.)
+
+Art. 42-C. A declaração de nulidade da inscrição estadual: (Art. 42-C: acrescentado pelo Decreto n° 16.103/2023. Efeitos a partir de 8.2.2023.)
+
+I - inabilita o sujeito passivo para: (Inciso I: acrescentado pelo Decreto n° 16.103/2023. Efeitos a partir de 8.2.2023.)
+
+a) a emissão de documentos fiscais eletrônicos e a transmissão da Escrituração Fiscal Digital (EFD); (Alínea “a”: acrescentada pelo Decreto n° 16.103/2023. Efeitos a partir de 8.2.2023.)
+
+b) a aquisição, na condição de inscrito, de mercadorias ou de bens, ou de serviços de transporte interestadual ou intermunicipal e de comunicação; (Alínea “b”: acrescentada pelo Decreto n° 16.103/2023. Efeitos a partir de 8.2.2023.)
+
+II - torna inidônea, nos termos do art. 93, incisos II, III, IV e VI, da Lei nº 1.810, de 1997, a documentação fiscal emitida, desde a data em que, pela declaração de nulidade, a inscrição se torna inválida. (Inciso II: acrescentado pelo Decreto n° 16.103/2023. Efeitos a partir de 8.2.2023.)
+
+Parágrafo único. Declarada a nulidade da inscrição estadual, devem-se realizar os lançamentos do imposto, se houver, e a aplicação de penalidades, se cabíveis. (Parágrafo único: acrescentado pelo Decreto n° 16.103/2023. Efeitos a partir de 8.2.2023.)
+
+CAPÍTULO V
+DA BAIXA DA INSCRIÇÃO ESTADUAL
+
+Art. 43. Sempre que o contribuinte encerrar a atividade de estabelecimento inscrito, fica obrigado a solicitar a baixa da respectiva inscrição.
+
+§ 1º A baixa será requerida:
+
+I - dentro do prazo de oito dias contados do encerramento da atividade do estabelecimento;
+
+II – eletronicamente, na internet, no endereço www.sefaz.ms.gov.br, na opção “cadastro de contribuinte online”, mediante o preenchimento e o envio da FAC Agropecuária ou da FAC Comércio Indústria, tipo “Pedido de Baixa”, conforme o caso;
+
+III - mediante pagamento da taxa de serviços estaduais prevista.
+
+Art. 43-A. A baixa da inscrição no CAP, em relação às áreas agregadas, de que trata o art. 4º-A deste Anexo, ocorrerá de ofício, pela Secretaria de Estado de Fazenda, no ato do deferimento da solicitação. (Art. 43-A: Acrescentado pelo Decreto nº 16.178/2023. Efeitos a partir de 31.3.2023.)
+
+Art. 44. O contribuinte, ao requerer a baixa da inscrição:
+
+I - deve indicar o local onde se encontrem, à disposição do Fisco, os seguintes documentos, observado o disposto no § 2º deste artigo:
+
+a) sendo inscrito no Cadastro do Comércio, Indústria e Serviços (CCIS):
+
+1. os livros fiscais e contábeis usados e em uso, quando em papel;
+
+2. todos os demais documentos fiscais, relativamente aos últimos cinco anos anteriores ao exercício então corrente, inclusive este, quando em papel;
+
+b) sendo inscrito no Cadastro da Agropecuária (CAP), as notas fiscais de compras e de vendas de produtos, relativamente aos últimos cinco anos anteriores ao exercício então corrente, inclusive este, quando em papel;
+
+II – deve inutilizar os impressos de documentos fiscais ainda não utilizados, cuja impressão tenha sido realizada mediante autorização do Fisco.
+
+III - deve, sendo inscrito no Cadastro da Agropecuária (CAP):
+(Inciso III: nova redação dada pelo Decreto nº 14.749/2017. Efeitos a partir de 06.06.2017.)
+
+a) prestar contas da utilização das Notas Fiscais de Produtor, Série Especial (NFP/SE), se for o caso, nos termos do Subanexo II - Da Nota Fiscal de Produtor, Série Especial, ao Anexo XV - Das Obrigações Acessórias, ao Regulamento do ICMS;
+
+b) revogada;
+(Alínea “b”: REVOGADA pelo Decreto nº 16.451/2024. Efeitos a partir de 30.12.2024.)
+
+Redação anterior da alínea “b”, acrescentada pelo Decreto nº 14.749/2017. Efeitos de 6.6.2017 a 29.12.2024.
+b) apresentar a DAP, na forma disciplinada pelo Subanexo IX - Da Declaração Anual do Produtor Rural (DAP), ao Anexo XV - Das Obrigações Acessórias, ao Regulamento do ICMS, abrangendo o período compreendido entre 1º de janeiro e a data de encerramento das atividades, do ano do pedido da baixa da inscrição (arts. 29, § 2º, deste Anexo);
+
+Redação anterior do inciso III vigente até 05.06.2017.
+III – deve prestar contas da utilização das Notas Fiscais de Produtor, Série Especial (NFP/SE), se for o caso, nos termos do Subanexo II – Da Nota Fiscal de Produtor, Série Especial, ao Anexo XV – Das Obrigações Acessórias, ao Regulamento do ICMS.
+
+
+IV - deve:
+(Inciso IV: acrescentado pelo Decreto nº 14.749/2017. Efeitos a partir de 06.06.2017.)
+
+a) realizar o inventário das mercadorias constantes no estoque final, e observar, quanto a essas mercadorias, o disposto no § 6º deste artigo;
+
+b) não existindo mercadorias no estoque final, declarar, expressamente, essa situação.
+
+§ 1º Na hipótese deste artigo, se o contribuinte for optante ou obrigado à Escrituração Fiscal Digital (EFD), a baixa da inscrição estadual fica condicionada ao prévio envio do arquivo digital da EFD, nos termos do Subanexo XIV – Da Escrituração Fiscal Digital (EFD), ao Anexo XV – Das Obrigações Acessórias, ao Regulamento do ICMS, relativamente:
+
+I – ao período cujo prazo normal para a sua entrega ainda não tenha findado; e
+
+II – ao período em curso, hipótese em que o termo final do período deve ser a data do encerramento das atividades.
+
+§ 2º O local a que se refere o inciso I do caput deste artigo não pode situar-se fora do território do Estado e, havendo necessidade de sua mudança, no curso do período em que os documentos devam ser guardados e conservados, o contribuinte deve solicitar autorização prévia ao Fisco.
+
+§ 3º Os documentos fiscais e impressos a que se refere este artigo devem ser guardados e conservados pelo prazo previsto no art. 105 da parte geral do Regulamento do ICMS, para apresentação ao Fisco, quando exigido. (§ 3º: nova redação dada pelo Decreto nº 14.749/2017. Efeitos a partir de 06.06.2017.)
+
+Redação anterior vigente até 05.06.2017.
+§ 3º Os documentos fiscais e impressos a que se refere este artigo, ressalvado o disposto no inciso II do caput deste artigo, devem ser guardados e conservados pelo prazo previsto no art. 105 da parte geral do Regulamento do ICMS, para apresentação ao Fisco, quando exigido.
+
+§ 4o A apresentação dos documentos a que se refere este artigo ou a indicação do local onde se encontram à disposição do Fisco não dispensam o contribuinte da apresentação, mediante intimação, de outros documentos que o Fisco entender necessários para a realização da fiscalização visando à constatação de sua regularidade fiscal.
+
+§ 5º A inutilização dos impressos de documentos fiscais, em atendimento ao disposto no inciso II do caput deste artigo, pode ser realizada mediante a indicação, nos impressos, da expressão “inutilizado”, entre duas linhas transversais, ou mediante corte dos impressos, em qualquer sentido, de forma a manter apenas a parte que identifica o contribuinte e a espécie e o numero do documento.
+
+§ 6º No caso de existência de estoque de mercadorias, por ocasião do pedido de baixa, o contribuinte deve apresentar o comprovante do pagamento do imposto incidente sobre a operação que, nos termos do art. 5º, § 2º, I, da Lei n° 1.810, de 22 de dezembro de 1997, considera-se ocorrida em relação às referidas mercadorias ou, existindo saldo credor anterior, resultante de escrituração fiscal regular, a comprovação de que realizou a compensação do referido imposto com esse saldo. (§ 6º: acrescentado pelo Decreto nº 14.749/2017. Efeitos a partir de 06.06.2017.)
+
+Art. 45. É competente para o deferimento do pedido de baixa o Chefe da Agência Fazendária onde se processar o pedido.
+
+§ 1º O pedido de baixa, observado o disposto nos §§ 2º a 6º deste artigo:
+
+I - pode ser deferido ao contribuinte independentemente de prévia fiscalização do respectivo estabelecimento, observado o disposto no inciso II deste parágrafo; (Inciso I: nova redação dada pelo Decreto nº 14.749/2017. Efeitos a partir de 06.06.2017.)
+
+Redação anterior vigente até 05.06.2017.
+I - pode ser deferido ao contribuinte antes da realização da fiscalização do respectivo estabelecimento tendente à verificação da sua situação quanto ao cumprimento das obrigações tributárias, observado o disposto no inciso II deste parágrafo;
+
+II – somente pode ser deferido nos casos de inexistência, em nome do sujeito passivo, na condição de contribuinte ou de responsável, de:
+
+a) créditos tributários relativos ao ICMS, incluídos o imposto, atualizado monetariamente, os juros de mora e as multas cabíveis, registrados em banco de dados da Secretaria de Estado de Fazenda, pendentes de pagamento, não enquadrados nas situações a que se refere a alínea “b” deste inciso;
+
+b) créditos tributários relativos ao ICMS, incluídos o imposto, atualizado monetariamente, os juros de mora e as multas cabíveis:
+(Alínea “b”: nova redação dada pelo Decreto nº 14.749/2017. Efeitos a partir de 06.06.2017.)
+
+1. inscritos em dívida ativa, não parcelados;
+
+2. parcelados, ainda que inscritos em dívida ativa, com duas ou mais parcelas vencidas, pendentes de pagamento;
+
+Redação anterior vigente até 05.06.2017.
+b) créditos tributários relativos ao ICMS, incluídos o imposto, atualizado monetariamente, os juros de mora e as multas cabíveis, parcelados, com a exigibilidade suspensa ou inscritos em dívida ativa;
+
+c) quaisquer outros créditos tributários relativos a tributos estaduais, não enquadrados nas alíneas “a” e “b” deste inciso, registrados em banco de dados da Secretaria de Estado de Fazenda;
+
+d) registro, em banco de dados da Secretaria de Estado de Fazenda, de omissões quanto à entrega dos arquivos relativos à Escrituração Fiscal Digital (EFD) e à entrega, por meio eletrônico ou não, de quaisquer informações previstas na legislação tributária, tais como declaração, relação e listagem.
+
+§ 1º-A. O pedido de baixa pode ser deferido, também, independentemente de prévia fiscalização do respectivo estabelecimento, nos casos em que, em nome do sujeito passivo, na condição de contribuinte ou de responsável, existam apenas créditos tributários:
+(§ 1º-A: acrescentado pelo Decreto nº 14.749/2017. Efeitos a partir de 06.06.2017.)
+
+I - parcelados, ainda que inscritos em dívida ativa, com até uma parcela vencida, pendente de pagamento;
+
+II - com exigibilidade suspensa.
+
+§ 2º Havendo pendências que se enquadrem nas disposições do inciso II do § 1º deste artigo, o Chefe da Agência Fazendária deve:
+
+I – notificar o sujeito passivo, dando-lhe o prazo de vinte dias, contados da ciência, para a regularização, no caso das pendências a que se referem as alíneas “a”, “c” e “d” do referido inciso;
+
+II – informar ao sujeito passivo que a existência das pendências a que se refere a alínea “b” do inciso II do § 1º deste artigo impede o deferimento do pedido de baixa.
+
+§ 3º Sempre que houver pendências que se enquadrem na alínea “b” do inciso II do § 1º deste artigo, o pedido de baixa deve ser indeferido, após a informação de que trata o inciso II do § 2º deste artigo, com prova de sua cientificação ao sujeito passivo, e, havendo, também, pendências que se enquadrem nas alíneas “a”, “c” e “d” do referido inciso, após o decurso do prazo a que se refere o inciso I do § 2º deste parágrafo.
+
+§ 4º Se houver apenas pendências que se enquadrem nas alíneas “a”, “c” e “d” do inciso II do § 1º deste artigo, o pedido de baixa:
+
+I – deve ser indeferido, nos casos em que não haja a regularização dessas pendências no prazo a que se refere o inciso I do § 2º deste artigo;
+
+II - pode ser deferido, após a regularização dessas pendências e independentemente da prévia fiscalização a que se refere o inciso I do § 1º deste artigo, na condição prevista no § 5º deste artigo. (Inciso II: nova redação dada pelo Decreto nº 14.749/2017. Efeitos a partir de 06.06.2017.)
+
+Redação anterior vigente até 05.06.2017.
+II – pode ser deferido, após a regularização dessas pendências e antes da realização da fiscalização a que se refere o inciso I do § 1º deste artigo, na condição prevista no § 5º deste artigo.
+
+§ 5º Na hipótese do inciso I do § 1º e do inciso II do § 4º deste artigo, a eficácia do deferimento do pedido de baixa é condicionada:
+
+I - à homologação expressa do agente do Fisco que proceder à fiscalização a que se refere o inciso I do § 1º deste artigo, no caso de não constatação de irregularidades que resultem na constituição de crédito tributário;
+
+II – à extinção do crédito tributário que eventualmente for constituído em decorrência da realização da fiscalização a que se refere o inciso I do § 1º deste artigo.
+
+§ 6º Na ausência das hipóteses de que trata o § 5º deste artigo, o deferimento do pedido de baixa torna-se eficaz após o decurso do prazo de cinco anos contados da data do ato pelo qual se deferiu o pedido de baixa.
+
+§ 6º-A. Na hipótese do § 1º-A deste artigo, a eficácia do deferimento do pedido de baixa é, também, condicionada à extinção do crédito tributário. (§ 6º: acrescentado pelo Decreto nº 14.749/2017. Efeitos a partir de 06.06.2017.)
+
+§ 7º O Superintendente de Administração Tributária pode, sem prejuízo das demais disposições deste artigo, condicionar o deferimento do pedido de baixa à realização da fiscalização do respectivo estabelecimento tendente à verificação da sua situação quanto ao cumprimento das obrigações tributárias, hipótese em que deve informar às Agências Fazendárias os respectivos estabelecimentos individualmente, por categorias ou por setores de atividades.
+
+§ 8º Para efeito de controle e acompanhamento, a situação da inscrição estadual cujo pedido de baixa for deferido na forma do inciso I do § 1º, do § 1º-A ou do inciso II do § 4º deste artigo deve ser registrada, no respectivo cadastro, pela indicação da expressão “baixa não homologada”, até que ocorra, nos termos dos §§ 5º, 6º ou 6º-A deste artigo, a eficácia do deferimento. (§ 8º: nova redação dada pelo Decreto nº 14.749/2017. Efeitos a partir de 06.06.2017.)
+
+Redação anterior vigente até 05.06.2017.
+§ 8º Para efeito de controle e acompanhamento, a situação (status) da inscrição estadual cujo pedido de baixa for deferido na forma do inciso I do § 1º ou do inciso II do § 4º deste artigo deve ser registrada, no respectivo cadastro, pela indicação da expressão “baixa não homologada”, até que ocorra, nos termos dos §§ 5º ou 6º deste artigo, a eficácia do deferimento.
+
+§ 9º O deferimento de baixa da inscrição estadual, ainda que em caráter definitivo, não implica a quitação de créditos tributários e nem exonera o sujeito passivo de qualquer outra responsabilidade.
+
+§ 10. Na hipótese do disposto no § 8º deste artigo, o contribuinte pode solicitar a reativação da inscrição estadual, nos termos do art. 48 deste Anexo, se for o caso. (§ 10: acrescentado pelo Decreto nº 14.749/2017. Efeitos a partir de 06.06.2017.)
+
+Art. 46. No caso de indeferimento do pedido de baixa com fundamento na existência de pendências fiscais, o Chefe da Agência Fazendária deve, imediatamente após o respectivo ato, proceder ao cancelamento da inscrição estadual. (Art. 46: nova redação dada pelo Decreto nº 15.852/2022. Efeitos a partir de 11.1.2022.)
+
+Redação original vigente até 10.1.2022.
+Art. 46. No caso de indeferimento do pedido de baixa com fundamento na existência de pendências fiscais, o Chefe da Agência Fazendária deve, imediatamente após o respectivo ato, proceder ao cancelamento da inscrição estadual e encaminhar o respectivo processo à Coordenadoria de Fiscalização (COFIS).
+
+CAPÍTULO VI
+DA REATIVAÇÃO DA INSCRIÇÃO ESTADUAL
+
+Seção Única
+Da Reativação da Inscrição Suspensa ou Cancelada
+
+Art. 47. A inscrição cancelada ou suspensa pode ser reativada, depois de cumpridas as exigências necessárias à sua reativação e desde que não exista situação cadastral irregular ou obrigações tributárias, principais ou acessórias, pendentes de solução em qualquer outro estabelecimento da mesma pessoa jurídica, matriz e filiais, ou da mesma pessoa física, produtor rural ou extrator e empresário individual de que tratam os arts. 966 a 969 do Código Civil, ainda que localizado em outra unidade da Federação, se a pendência fiscal for com o Fisco deste Estado. (Art. 47, caput: nova redação dada pelo Decreto n° 15.491/2020. Efeitos a partir de 06.08.2020.)
+
+Redação anterior vigente até 05.08.2020.
+Art. 47. A inscrição cancelada ou suspensa pode ser reativada, depois de cumpridas as exigências necessárias à sua reativação e desde que o requerente, seus sócios e dirigentes não estejam vinculados a outra empresa ou a outro estabelecimento produtor rural com situação cadastral irregular ou com obrigações tributárias, principais ou acessórias pendentes de solução, observado o disposto nos §§ 6º e 8º deste artigo.
+
+§ 1º A reativação e a publicação do Ato Declaratório, aptas a restaurar a eficácia da inscrição, devem ser feitas a pedido do contribuinte, após o cumprimento das penalidades aplicadas e do pagamento das taxas incidentes e da indenização pelas publicações no Diário Oficial.
+
+ § 2° A reativação da inscrição estadual não se aplica à hipótese de cancelamento prevista no inciso VIII do caput do art. 42 deste Anexo.
+
+§ 3º Para a reativação da inscrição na hipótese do caput deste artigo, o contribuinte deve solicitar a reativação da inscrição estadual eletronicamente, na internet, no endereço www.sefaz.ms.gov.br, na opção “cadastro de contribuinte online”, mediante o preenchimento e o envio da FAC Agropecuária ou da FAC Comércio Indústria, tipo “Reativação de Suspensão” ou “Reativação de Cancelamento”, conforme o caso, e a digitalização e o envio, juntamente com a referida FAC, dos documentos comprobatórios de regularização da situação fiscal que motivou o pedido, observado, na hipótese de cancelamento, o disposto no § 6º deste artigo.
+
+§ 4º O Superintendente de Administração Tributária pode, sob às condições que entender convenientes para resguardar o interesse da fiscalização e da arrecadação:
+(§ 4º: nova redação dada pelo Decreto nº 14.749/2017. Efeitos a partir de 06.06.2017.)
+
+I - reativar a inscrição estadual, com o mesmo número, em situações em que se verifique a vinculação de que trata o caput deste artigo;
+
+II - reativar ou autorizar a manutenção, por certo tempo, de inscrição estadual cuja permanência dependa de cumprimento, periodicamente, de determinados requisitos e o contribuinte, por qualquer motivo, não possa ou encontre dificuldade em atendê-los.
+
+Redação anterior vigente até 05.06.2017.
+§ 4º O Superintendente de Administração Tributária pode, sob às condições que entender convenientes para resguardar o interesse da fiscalização e da arrecadação, reativar a inscrição estadual, com o mesmo número, em situações em que se verifique a vinculação de que trata o caput deste artigo.
+
+§ 5º Sem prejuízo do disposto no § 3º deste artigo, a reativação de inscrição cancelada:
+
+I - fica condicionada à apresentação das declarações, dos arquivos ou de outros documentos exigidos dos contribuintes inscritos, relativamente aos períodos anteriores à reativação, observado o disposto no § 7º deste artigo;
+
+II - pode ser condicionada, a critério do Superintendente de Administração Tributária, à apresentação dos documentos exigíveis para a inscrição inicial e a parecer prévio, nos termos deste Anexo.
+
+§ 6º A critério do Superintendente de Administração Tributária, a reativação da inscrição pode ser feita independentemente de apresentação de FAC.
+
+§ 7º Para a reativação da inscrição estadual, salvo nas hipóteses em que houver justificativa devidamente fundamentada, não se exige a apresentação de declaração, arquivo ou outro documento, cujos dados se refiram a fatos geradores em relação aos quais já tenha decorrido o prazo decadencial.
+
+§ 8º Revogado.
+
+(§ 8º: REVOGADO pelo Decreto nº 14.749/2017. Efeitos a partir de 06.06.2017.)
+
+Redação anterior vigente até 05.06.2017.
+§ 8º No caso de cancelamento por falta de entrega de Escrituração Fiscal Digital (EFD), a entrega dos arquivos, nos termos da legislação aplicável, relativos aos períodos cuja falta de entrega motivou o cancelamento, implica a regularização da situação e a reativação da inscrição estadual de forma automática e independentemente de publicação de ato declaratório.
+
+Art. 48. A inscrição baixada poderá ser reativada com o mesmo número desde que não exista situação cadastral irregular ou obrigações tributárias, principais ou acessórias, pendentes de solução em qualquer outro estabelecimento da mesma pessoa jurídica, matriz e filiais, ou da mesma pessoa física, produtor rural ou extrator e empresário individual de que tratam os arts. 966 a 969 do Código Civil, ainda que localizado em outra unidade da Federação, se a pendência fiscal for com o Fisco deste Estado. (Art. 48, caput: nova redação dada pelo Decreto n° 15.491/2020. Efeitos a partir de 06.08.2020.)
+
+Redação anterior vigente até 05.08.2020.
+Art. 48. A inscrição baixada poderá ser reativada com o mesmo número desde que o requerente, seus sócios e dirigentes não possuam vinculo com outra empresa ou outro estabelecimento produtor rural com situação cadastral irregular ou com obrigações tributárias, principais ou acessórias, pendentes de solução.
+
+§ 1º Em se tratando de pessoa jurídica, a reativação está condicionada a que não tenha havido:
+
+I - cancelamento definitivo dos números das inscrições no CNPJ/MF e na Junta Comercial ou, se for o caso, no Cartório de Registro de Títulos e Documentos;
+
+II – alterações, no contrato social ou estatuto, após a baixa da inscrição estadual, relativamente ao quadro social, ao capital social e, a critério da Superintendência de Administração Tributária, a outros aspectos desses documentos.
+
+§ 2º Na hipótese do § 1º deste artigo, o interessado deve solicitar a reativação da inscrição estadual eletronicamente, na internet, no endereço www.sefaz.ms.gov.br, na opção “cadastro de contribuinte online”, mediante o preenchimento e o envio da FAC Agropecuária ou da FAC Comércio Indústria, tipo “Reativação de Baixa”, conforme o caso, e a digitalização e o envio, juntamente com a referida FAC, dos documentos elencados no art. 14 ou 25 deste Anexo.
+
+
+CAPÍTULO VII
+DO CADASTRO DE CONTABILISTAS
+
+Art. 49. Inscrever-se-ão no Cadastro de Contabilistas de Mato Grosso do Sul todos os Contabilistas e Escritórios de Contabilidade que tenham sob sua responsabilidade técnica a escrituração fisco-contábil de pessoa física ou jurídica inscrita no Cadastro de Contribuintes do ICMS.
+
+§ 1º A inscrição se fará mediante formulário próprio, que conterá os elementos necessários para a identificação do contabilista ou empresas fisco-contábeis e do local do exercício de suas atividades.
+
+§ 2º A Secretaria de Estado de Fazenda poderá celebrar convênio com o Conselho Regional de Contabilidade de Mato Grosso do Sul, para efetuar a inscrição prevista neste artigo.
+
+§ 3º Os contabilistas ou empresas fisco-contábeis inscritos deverão informar à Secretaria de Estado de Fazenda, no prazo de quinze dias, quaisquer alterações ocorridas em seus dados cadastrais.
+
+Art. 50. A prova de inscrição referida no artigo anterior será feita mediante o Cartão de Identificação apropriado, emitido pela Secretaria de Estado de Fazenda.
+
+Parágrafo único. Será emitido novo Cartão de Identificação do Contabilista, sempre que ocorrerem alterações nos dados nele constantes.
+
+Art. 51. Os contabilistas e empresas inscritos deverão comunicar à Secretaria de Estado de Fazenda a exclusão de empresa de sua responsabilidade técnica, no prazo de quinze dias contado do evento.
+
+Parágrafo único. A Secretaria de Estado de Fazenda deve notificar o contribuinte, pelo seu endereço eletrônico ou do seu representante, sobre a comunicação de que trata o caput deste artigo, para efeito do disposto no art. 8º-A deste Anexo. (Parágrafo único: acrescentado pelo Decreto nº 14.749/2017. Efeitos a partir de 06.06.2017.)
+
+Art. 52. Os contabilistas e empresas registrados no CRC/MS e inscritos na Secretaria de Estado de Fazenda ficarão autorizados a manter em seu poder e sob sua responsabilidade os livros fiscais e/ou comerciais dos contribuintes aos quais prestam serviços (Anexo XV, art. 152, §§ 3º e 4º).
+
+Art. 53. A inscrição do contabilista ou empresa, salvo quanto à hipótese do § 2º do art. 49 deste Anexo, será feita na Agência Fazendária da localidade onde estejam estabelecidos, ou na ausência desta, na Agência Fazendária mais próxima.
+
+Parágrafo único. Não sendo o contabilista ou a empresa estabelecidos no território do Estado de Mato Grosso do Sul, a sua inscrição será feita na Agência Fazendária da circunscrição de um dos contribuintes sob sua responsabilidade técnica.

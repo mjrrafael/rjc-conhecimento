@@ -70,9 +70,9 @@
     },
     "MS": {
       "region": "Centro-Oeste",
-      "status": "revisao_fonte",
-      "publish_deep": false,
-      "next_step": "Baixar RICMS/MS e anexos de benefícios no portal oficial de Mato Grosso do Sul."
+      "status": "publicado_v1",
+      "publish_deep": true,
+      "next_step": "Mato Grosso do Sul publicado como página profunda: Lei nº 1.810/1997, RICMS/MS, Anexos I, II, III, V, VI e XV, LC nº 93/2001, FUNDERSUL, MS-Empreendedor, diferimento, crédito presumido, ST, EFD, parcelamento e prova fiscal."
     },
     "MG": {
       "region": "Sudeste",

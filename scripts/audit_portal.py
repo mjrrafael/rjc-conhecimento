@@ -27,6 +27,7 @@ from legal_modules import (  # noqa: E402
 )
 from state_legal_pages import (  # noqa: E402
     BA_CHAPTERS,
+    CONFIGURED_STATE_CHAPTERS,
     DF_CHAPTERS,
     GROUP_DEFS,
     MT_CHAPTERS,
@@ -35,6 +36,8 @@ from state_legal_pages import (  # noqa: E402
     ba_chapter_path,
     benefit_sector_results,
     collect_state_documents,
+    configured_chapter_path,
+    configured_chapters,
     df_chapter_path,
     group_docs,
     group_path,
@@ -389,6 +392,33 @@ def audit_content_pages() -> list[str]:
             for term in ["PROEDI", "FUNDERN", "Tax Free", "cBenef", "crédito presumido", "redução de base"]:
                 if term not in benefits_html:
                     errors.append(f"RN: beneficio ou prova sem trilha publicada: {term}")
+            for doc in list(docs)[:3]:
+                source_html = read_page(source_path(uf, doc))
+                if not source_html or "law-pre" not in source_html:
+                    errors.append(f"{uf}: fonte estadual sem texto em tela: {doc['file']}")
+            continue
+        if uf in CONFIGURED_STATE_CHAPTERS:
+            index_html = read_page(state_index_path(uf))
+            if not index_html or f"{STATE_NAMES.get(uf, uf)}: ICMS e benefícios fiscais em tela" not in index_html:
+                errors.append(f"{uf}: indice profundo de ICMS e beneficios ausente")
+            state_html = read_page(f"estados/{uf.lower()}.html")
+            if not state_html or "Benefícios fiscais por grupo" not in state_html:
+                errors.append(f"{uf}: pagina estadual sem grupos didaticos de beneficios")
+            if state_html and re.search(r"\bTaxas\b|ITCD|IPVA", state_html):
+                errors.append(f"{uf}: pagina estadual contem tema fora do escopo ICMS")
+            for chapter in configured_chapters(uf):
+                chapter_html = read_page(configured_chapter_path(uf, chapter["id"]))
+                if not chapter_html or "Texto legal antes da análise" not in chapter_html or "law-pre" not in chapter_html:
+                    errors.append(f"{uf}: capitulo sem lei em tela: {chapter['id']}")
+            benefits_html = (
+                read_page(configured_chapter_path(uf, "beneficios-matriz-lc160"))
+                + read_page(configured_chapter_path(uf, "isencoes-reducoes-creditos"))
+                + read_page(configured_chapter_path(uf, "mapa-revisado-beneficios"))
+                + read_page(configured_chapter_path(uf, "documentos-efd-prova"))
+            )
+            for term in ["crédito presumido", "redução de base", "diferimento", "EFD"]:
+                if term not in benefits_html:
+                    errors.append(f"{uf}: beneficio ou prova sem trilha publicada: {term}")
             for doc in list(docs)[:3]:
                 source_html = read_page(source_path(uf, doc))
                 if not source_html or "law-pre" not in source_html:

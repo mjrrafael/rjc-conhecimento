@@ -1,0 +1,47 @@
+PORTARIA/SAT Nº 3.760, DE 5 DE JANEIRO DE 2026.
+
+Dispõe sobre alteração do grupo de preços na tabela denominada Valor Real Pesquisado, do produto que especifica.
+
+Publicado no DOE nº 12.040, de 6 de janeiro de 2025.
+O SUPERINTENDENTE DE ADMINISTRAÇÃO TRIBUTÁRIA, no uso de suas atribuições e da competência que lhe confere o art. 1°, caput do Decreto 12.985, de 11 de maio de 2010, e
+
+CONSIDERANDO a prerrogativa da administração tributária estadual de modificar, em qualquer tempo, os produtos da tabela da Sefaz/MS denominada Valor Real Pesquisado (VRP);
+
+CONSIDERANDO os resultados das pesquisas realizadas em conformidade com as disposições do art. 2° do referido Decreto,
+
+R E S O L V E:
+
+Art. 1° Alterar, na tabela denominada Valor Real Pesquisado, o Grupo de Preço do seguinte produto: milho debulhado, conforme anexo.
+
+Parágrafo único. Os produtos cujo grupo de preço foram alterados na referida tabela, nos termos do caput deste artigo, ficam sujeitos, a partir da inclusão, às disposições do Decreto 12.985, de 11 de maio de 2010.
+
+Art. 2º Esta Portaria entra em vigor na data da sua publicação, produzindo efeitos a partir de 7 de janeiro de 2026.
+
+
+Campo Grande, 5 de janeiro de 2026
+
+BRUNO GOUVÊA BASTOS
+SUPERINTENDENTE DE ADMINISTRAÇÃO TRIBUTÁRIA
+
+
+ANEXO À PORTARIA/SAT Nº 3.760, DE 5 DE JANEIRO DE 2026.
+
+CÓDIGO	DESCRIÇÃO	TIPO	VALOR (R$)	AÇÃO
+53218	MILHO DEBULHADO - A GRANEL (OPERACAO INTERESTADUAL)	3	R$ 1,26	R
+6205	MILHO DEBULHADO - A GRANEL (OPERACAO INTERNA)	2	R$ 0,90	R
+53224	MILHO DEBULHADO - SC 60 KG (OPERACAO INTERESTADUAL)	3	R$ 75,60	R
+466	MILHO DEBULHADO - SC 60 KG (OPERACAO INTERNA)	2	R$ 54,00	R
+
+Legenda Ações*
+I – Inclusão
+R – Revisão
+S – Suspensão
+E – Exclusão
+A - Alteração
+
+
+Legenda Tipo**
+1 - PMPF - Preço Médio Ponderado Consumidor Final
+2 - VRP - Valor Real Pesquisado
+3 - VRP - Operação Interestadual
+4 - VRP – Atacado
