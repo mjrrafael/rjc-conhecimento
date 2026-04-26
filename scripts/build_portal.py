@@ -1522,6 +1522,64 @@ def state_page(state: dict, data: dict) -> str:
 </section>
 """
             return layout(path, f'{display_name}: ICMS e benefícios fiscais', "ICMS do Distrito Federal em tela por capítulos.", body, "estados")
+        if state["uf"] == "MT":
+            body = f"""
+{hero(f'{display_name}: ICMS e benefícios fiscais', 'Legislação estadual em tela: ICMS, benefícios fiscais, alíquotas, ST, documentos e prova por assunto.', state["uf"])}
+<section class="law-ledger">
+  <div>
+    <h2>Estado do estudo</h2>
+    <p>Mato Grosso está publicado em capítulos próprios, com lei material, RICMS, LC 631/2019, anexos de benefícios e códigos de benefício em tela. O caminho correto é abrir o índice de MT, ler a lei e depois avançar para a análise aplicada.</p>
+  </div>
+  <div>
+    <h2>Primeira pergunta</h2>
+    <p>A operação está no campo de incidência do ICMS? Só depois disso faz sentido discutir isenção, redução de base, crédito outorgado, diferimento, PRODEIC, ST ou estimativa simplificada.</p>
+  </div>
+  <div>
+    <h2>Prova antes de tese</h2>
+    <p>XML, cadastro do item, NCM, EFD, cBenef, memória de cálculo, ato concessivo e dispositivo legal precisam sustentar a mesma conclusão.</p>
+  </div>
+</section>
+{state_legislation_teaser(state["uf"], path)}
+<section class="matrix-section">
+  <h2>Benefícios fiscais por grupo</h2>
+  <div class="matrix-grid">
+    <a class="matrix-card searchable-card" href="mt/legislacao/prodeic-desenvolvimento.html" data-search="Mato Grosso MT PRODEIC desenvolvimento econômico indústria comércio incentivo programa estadual">
+      <h3>PRODEIC e desenvolvimento</h3>
+      <p>Programas, módulos, resoluções, condições de fruição, crédito, redução, prazo, metas e prova de cumprimento.</p>
+    </a>
+    <a class="matrix-card searchable-card" href="mt/legislacao/isencoes-reducoes-creditos.html" data-search="Mato Grosso MT isenção redução base cálculo crédito outorgado crédito presumido Anexo IV V VI cBenef">
+      <h3>Isenções, reduções e créditos</h3>
+      <p>Anexos IV, V e VI do RICMS/MT: benefício por produto, operação, setor, destinatário e documentos de prova.</p>
+    </a>
+    <a class="matrix-card searchable-card" href="mt/legislacao/agro-cesta-diferimento.html" data-search="Mato Grosso MT agro alimentos cesta básica vegetal animal biodiesel diferimento Anexo VII">
+      <h3>Agro, cesta e diferimento</h3>
+      <p>Cadeias agroindustriais, cesta básica, produtos vegetais e animais, biodiesel, diferimento e controle da etapa posterior.</p>
+    </a>
+    <a class="matrix-card searchable-card" href="mt/legislacao/beneficios-matriz-lc160.html" data-search="Mato Grosso MT benefícios fiscais LC 160 Convênio 190 LC 631 remissão anistia reinstituição">
+      <h3>LC 160, reinstituição e matriz</h3>
+      <p>LC nº 631/2019, remissão, anistia, reinstituição, regras gerais de fruição, vedações, suspensão e revogações.</p>
+    </a>
+    <a class="matrix-card searchable-card" href="mt/legislacao/st-estimativa-anexos.html" data-search="Mato Grosso MT substituição tributária ST estimativa simplificada carga média CNAE Anexo X XIII">
+      <h3>ST e estimativa simplificada</h3>
+      <p>Responsabilidade, substituição tributária, segmentos, carga média por CNAE, recolhimento e prova da cadeia.</p>
+    </a>
+    <a class="matrix-card searchable-card" href="mt/legislacao/documentos-cbenef-efd-prova.html" data-search="Mato Grosso MT cBenef EFD SPED XML código benefício Portaria 211 documento fiscal">
+      <h3>cBenef, EFD e prova digital</h3>
+      <p>Como o benefício aparece no XML, no código de benefício, na escrituração e no dossiê mensal de auditoria.</p>
+    </a>
+  </div>
+</section>
+<section class="continuity">
+  <h2>Continuar a leitura</h2>
+  <div>
+    <a href="mt/legislacao/index.html">Abrir índice completo de MT</a>
+    <a href="../confaz/index.html">Entender CONFAZ e benefícios</a>
+    <a href="../federal/pis-cofins.html">Conectar com PIS/Cofins</a>
+    <a href="../biblioteca/index.html">Consultar manuais e painel</a>
+  </div>
+</section>
+"""
+            return layout(path, f'{display_name}: ICMS e benefícios fiscais', "ICMS de Mato Grosso em tela por capítulos.", body, "estados")
         body = f"""
 {hero(f'{display_name}: ICMS e benefícios fiscais', 'Legislação estadual em tela: ICMS, benefícios fiscais, alíquotas, ST, documentos e prova por assunto.', state["uf"])}
 <section class="law-ledger">

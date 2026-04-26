@@ -122,7 +122,7 @@ window.RJC_SEARCH = [
   {
     "title": "Mato Grosso: ICMS e benefícios fiscais",
     "url": "estados/mt.html",
-    "summary": "Página estadual estruturada para futura publicação por UF, com foco em ICMS, benefícios, documento e prova.",
+    "summary": "Página estadual com legislação de ICMS em tela, benefícios, documento e prova.",
     "tags": "MT Mato Grosso Mato Grosso ICMS beneficios fiscais RICMS ICMS_ANEXOS ITCD OUTROS RICMS"
   },
   {
@@ -1006,6 +1006,96 @@ window.RJC_SEARCH = [
     "url": "estados/df/legislacao/documentos-efd-prova.html",
     "summary": "Entrada direta para o capítulo temático correspondente, com texto legal em tela e análise aplicada.",
     "tags": "DF Distrito Federal ICMS benefícios fiscais EFD SPED ICMS IPI documento fiscal XML prova escrituração ajuste"
+  },
+  {
+    "title": "Mato Grosso: ICMS e benefícios fiscais em tela",
+    "url": "estados/mt/legislacao/index.html",
+    "summary": "Lei do ICMS/MT, RICMS/MT, LC 631/2019, anexos de benefícios, PRODEIC, cBenef, substituição tributária, estimativa simplificada, agro e EFD.",
+    "tags": "MT Mato Grosso ICMS RICMS benefícios fiscais alíquotas base cálculo substituição tributária ST PRODEIC crédito outorgado crédito presumido redução base isenção diferimento cBenef EFD SPED LC 160 Convênio 190"
+  },
+  {
+    "title": "Mato Grosso: ICMS/MT: incidência, não incidência e contribuinte",
+    "url": "estados/mt/legislacao/icms-regra-matriz.html",
+    "summary": "A leitura de entrada do Mato Grosso: campo do imposto, fato gerador, não incidência, contribuinte e obrigações centrais.",
+    "tags": "MT Mato Grosso ICMS benefícios fiscais Regra matriz ICMS/MT: incidência, não incidência e contribuinte A leitura de entrada do Mato Grosso: campo do imposto, fato gerador, não incidência, contribuinte e obrigações centrais."
+  },
+  {
+    "title": "Mato Grosso: Base de cálculo, alíquotas, crédito e apuração",
+    "url": "estados/mt/legislacao/base-aliquota-apuracao.html",
+    "summary": "Como a operação vira base, qual alíquota se aplica, como o crédito é tomado e como o imposto é apurado no MT.",
+    "tags": "MT Mato Grosso ICMS benefícios fiscais Carga tributária Base de cálculo, alíquotas, crédito e apuração Como a operação vira base, qual alíquota se aplica, como o crédito é tomado e como o imposto é apurado no MT."
+  },
+  {
+    "title": "Mato Grosso: Benefícios fiscais, LC 160 e Convênio ICMS 190/2017",
+    "url": "estados/mt/legislacao/beneficios-matriz-lc160.html",
+    "summary": "A matriz de benefícios do MT: remissão, anistia, reinstituição, isenções, reduções, créditos, diferimentos e condições de fruição.",
+    "tags": "MT Mato Grosso ICMS benefícios fiscais Benefícios fiscais Benefícios fiscais, LC 160 e Convênio ICMS 190/2017 A matriz de benefícios do MT: remissão, anistia, reinstituição, isenções, reduções, créditos, diferimentos e condições de fruição."
+  },
+  {
+    "title": "Mato Grosso: PRODEIC, desenvolvimento econômico e regimes incentivados",
+    "url": "estados/mt/legislacao/prodeic-desenvolvimento.html",
+    "summary": "Programas e tratamentos de desenvolvimento econômico em Mato Grosso, com foco em crédito, redução, projeto e cumprimento de condições.",
+    "tags": "MT Mato Grosso ICMS benefícios fiscais Programas estaduais PRODEIC, desenvolvimento econômico e regimes incentivados Programas e tratamentos de desenvolvimento econômico em Mato Grosso, com foco em crédito, redução, projeto e cumprimento de condições."
+  },
+  {
+    "title": "Mato Grosso: Isenções, reduções de base e créditos outorgados",
+    "url": "estados/mt/legislacao/isencoes-reducoes-creditos.html",
+    "summary": "Leitura dos Anexos IV, V e VI do RICMS/MT: benefício por produto, operação, setor, destinatário e prova.",
+    "tags": "MT Mato Grosso ICMS benefícios fiscais Benefícios por espécie Isenções, reduções de base e créditos outorgados Leitura dos Anexos IV, V e VI do RICMS/MT: benefício por produto, operação, setor, destinatário e prova."
+  },
+  {
+    "title": "Mato Grosso: Agro, cesta básica, diferimento e cadeias produtivas",
+    "url": "estados/mt/legislacao/agro-cesta-diferimento.html",
+    "summary": "Benefícios e diferimentos ligados a produtos de origem vegetal, animal, alimentos, insumos, biodiesel e cadeia agroindustrial.",
+    "tags": "MT Mato Grosso ICMS benefícios fiscais Agro e alimentos Agro, cesta básica, diferimento e cadeias produtivas Benefícios e diferimentos ligados a produtos de origem vegetal, animal, alimentos, insumos, biodiesel e cadeia agroindustrial."
+  },
+  {
+    "title": "Mato Grosso: Substituição tributária, estimativa simplificada e anexos de carga",
+    "url": "estados/mt/legislacao/st-estimativa-anexos.html",
+    "summary": "Responsabilidade, ST, antecipação, anexos de segmentos, carga média por CNAE e controles de recolhimento.",
+    "tags": "MT Mato Grosso ICMS benefícios fiscais Responsabilidade tributária Substituição tributária, estimativa simplificada e anexos de carga Responsabilidade, ST, antecipação, anexos de segmentos, carga média por CNAE e controles de recolhimento."
+  },
+  {
+    "title": "Mato Grosso: Documentos fiscais, cBenef, EFD e prova",
+    "url": "estados/mt/legislacao/documentos-cbenef-efd-prova.html",
+    "summary": "Como o benefício aparece no XML, nos códigos de benefício, na escrituração e no dossiê mensal de auditoria.",
+    "tags": "MT Mato Grosso ICMS benefícios fiscais Prova digital Documentos fiscais, cBenef, EFD e prova Como o benefício aparece no XML, nos códigos de benefício, na escrituração e no dossiê mensal de auditoria."
+  },
+  {
+    "title": "Mato Grosso: Fiscalização, penalidades e perda de benefício",
+    "url": "estados/mt/legislacao/fiscalizacao-riscos.html",
+    "summary": "Pontos de controle que sustentam ou derrubam benefício: regularidade, condição, prazo, escrituração, prova e defesa.",
+    "tags": "MT Mato Grosso ICMS benefícios fiscais Auditoria fiscal Fiscalização, penalidades e perda de benefício Pontos de controle que sustentam ou derrubam benefício: regularidade, condição, prazo, escrituração, prova e defesa."
+  },
+  {
+    "title": "Mato Grosso: PRODEIC e desenvolvimento econômico",
+    "url": "estados/mt/legislacao/prodeic-desenvolvimento.html",
+    "summary": "Entrada direta para o capítulo temático correspondente, com texto legal em tela e análise aplicada.",
+    "tags": "MT Mato Grosso ICMS benefícios fiscais PRODEIC desenvolvimento econômico indústria comércio incentivo fiscal programa estadual"
+  },
+  {
+    "title": "Mato Grosso: isenção, redução e crédito outorgado",
+    "url": "estados/mt/legislacao/isencoes-reducoes-creditos.html",
+    "summary": "Entrada direta para o capítulo temático correspondente, com texto legal em tela e análise aplicada.",
+    "tags": "MT Mato Grosso ICMS benefícios fiscais isenção redução base crédito outorgado crédito presumido Anexo IV V VI cBenef"
+  },
+  {
+    "title": "Mato Grosso: agro, cesta básica e diferimento",
+    "url": "estados/mt/legislacao/agro-cesta-diferimento.html",
+    "summary": "Entrada direta para o capítulo temático correspondente, com texto legal em tela e análise aplicada.",
+    "tags": "MT Mato Grosso ICMS benefícios fiscais agro alimentos cesta básica vegetal animal biodiesel diferimento Anexo VII"
+  },
+  {
+    "title": "Mato Grosso: ST e estimativa simplificada",
+    "url": "estados/mt/legislacao/st-estimativa-anexos.html",
+    "summary": "Entrada direta para o capítulo temático correspondente, com texto legal em tela e análise aplicada.",
+    "tags": "MT Mato Grosso ICMS benefícios fiscais substituição tributária ST estimativa simplificada carga média CNAE Anexo X XIII"
+  },
+  {
+    "title": "Mato Grosso: cBenef, EFD e prova",
+    "url": "estados/mt/legislacao/documentos-cbenef-efd-prova.html",
+    "summary": "Entrada direta para o capítulo temático correspondente, com texto legal em tela e análise aplicada.",
+    "tags": "MT Mato Grosso ICMS benefícios fiscais cBenef EFD SPED XML documento fiscal código benefício Portaria 211"
   },
   {
     "title": "Manual de Documentos Fiscais Eletronicos",

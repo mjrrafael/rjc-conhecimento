@@ -12,7 +12,7 @@
     "ES": {"region": "Sudeste", "status": "revisao_fonte", "publish_deep": false, "next_step": "Baixar RICMS/ES vigente e benefícios no portal oficial do Espírito Santo."},
     "GO": {"region": "Centro-Oeste", "status": "aprovado_v1", "publish_deep": true, "next_step": "Manter monitoramento de RCTE, Anexo IX, cBenef e atos modificadores."},
     "MA": {"region": "Nordeste", "status": "revisao_fonte", "publish_deep": false, "next_step": "Baixar RICMS/MA e anexos de benefícios no portal oficial do Maranhão."},
-    "MT": {"region": "Centro-Oeste", "status": "em_segmentacao", "publish_deep": false, "next_step": "Material normativo reunido: RICMS/MT. Próxima etapa: complementar anexos, benefícios fiscais, atos modificadores e validar vigência antes de publicar a página profunda."},
+    "MT": {"region": "Centro-Oeste", "status": "publicado_v1", "publish_deep": true, "next_step": "Mato Grosso publicado como página profunda: Lei do ICMS, RICMS, LC 631/2019, anexos de isenção, redução de base, créditos fiscais, diferimento, PRODEIC, substituição tributária, estimativa simplificada, cBenef e prova fiscal."},
     "MS": {"region": "Centro-Oeste", "status": "revisao_fonte", "publish_deep": false, "next_step": "Baixar RICMS/MS e anexos de benefícios no portal oficial de Mato Grosso do Sul."},
     "MG": {"region": "Sudeste", "status": "revisao_fonte", "publish_deep": false, "next_step": "Baixar RICMS/MG vigente, anexos e benefícios diretamente da SEF/MG."},
     "PA": {"region": "Norte", "status": "revisao_fonte", "publish_deep": false, "next_step": "Baixar RICMS/PA e benefícios no portal oficial do Pará."},

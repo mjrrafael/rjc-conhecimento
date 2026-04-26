@@ -2031,6 +2031,142 @@
           ]
         }
       ]
+    },
+    {
+      "source_id": "state-mt-mt-lei-7098-1998-icms",
+      "jurisdiction": "MT",
+      "title": "Lei nº 7.098/1998 - Lei material do ICMS/MT",
+      "short": "Lei material do ICMS",
+      "official_url": "http://app1.sefaz.mt.gov.br/0325677500623408/07FA81BED2760C6B84256710004D3940/CC9C3B9886404BAA0325678B0043A842",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "data/fontes-estaduais-curadas/centro-oeste/MT/MT_LEI_7098_1998_ICMS_2026-04-26.txt"
+        ],
+        "sha256": {
+          "MT_LEI_7098_1998_ICMS_2026-04-26.txt": "f760ee56980962e6f2d68ecd6d8a97624c7df97902ee68f88211c70503e17d74"
+        },
+        "fetch_url": "http://app1.sefaz.mt.gov.br/0325677500623408/07FA81BED2760C6B84256710004D3940/CC9C3B9886404BAA0325678B0043A842"
+      },
+      "note": "Texto estadual de ICMS publicado em estados/mt/legislacao/fontes/mt-lei-7098-1998-icms.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-mt",
+          "module_title": "Mato Grosso: ICMS e benefícios fiscais em tela",
+          "chapters": [
+            "icms-regra-matriz",
+            "base-aliquota-apuracao",
+            "st-estimativa-anexos",
+            "fiscalizacao-riscos"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-mt-mt-dec-2212-2014-ricms",
+      "jurisdiction": "MT",
+      "title": "Decreto nº 2.212/2014 - RICMS/MT",
+      "short": "Regulamento do ICMS",
+      "official_url": "https://app1.sefaz.mt.gov.br/sistema/legislacao/legislacaotribut.nsf/2b2e6c5ed54869788425671300480214/42abb08790833f6d84257ca200448229/%24FILE/RICMS%20-%202014-20-03-2014.pdf",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "data/fontes-estaduais-curadas/centro-oeste/MT/RICMS_MT_2014_fonte_oficial_2026-04-26.txt"
+        ],
+        "sha256": {
+          "RICMS_MT_2014_fonte_oficial_2026-04-26.txt": "1640f7085b61db9ac67b5a65c958cbe0f3ba63060b4ad8e136d3feb2a2502196"
+        },
+        "fetch_url": "https://app1.sefaz.mt.gov.br/sistema/legislacao/legislacaotribut.nsf/2b2e6c5ed54869788425671300480214/42abb08790833f6d84257ca200448229/%24FILE/RICMS%20-%202014-20-03-2014.pdf"
+      },
+      "note": "Texto estadual de ICMS publicado em estados/mt/legislacao/fontes/mt-dec-2212-2014-ricms.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-mt",
+          "module_title": "Mato Grosso: ICMS e benefícios fiscais em tela",
+          "chapters": [
+            "icms-regra-matriz",
+            "base-aliquota-apuracao",
+            "beneficios-matriz-lc160",
+            "prodeic-desenvolvimento",
+            "isencoes-reducoes-creditos",
+            "agro-cesta-diferimento",
+            "st-estimativa-anexos",
+            "documentos-cbenef-efd-prova",
+            "fiscalizacao-riscos"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-mt-mt-lc-631-2019-beneficios-lc160",
+      "jurisdiction": "MT",
+      "title": "Lei Complementar nº 631/2019 - remissão, anistia e reinstituição de benefícios de ICMS",
+      "short": "Benefícios fiscais de ICMS",
+      "official_url": "https://app1.sefaz.mt.gov.br/0425762E005567C5/9733A1D3F5BB1AB384256710004D4754/5631FD07CED41894842584490048FC5A",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "data/fontes-estaduais-curadas/centro-oeste/MT/MT_LC_631_2019_BENEFICIOS_LC160_2026-04-26.txt"
+        ],
+        "sha256": {
+          "MT_LC_631_2019_BENEFICIOS_LC160_2026-04-26.txt": "fd1b1a4ad6bbd9c07b56d0b972ad374b79e38812637bd25b19355606845066b6"
+        },
+        "fetch_url": "https://app1.sefaz.mt.gov.br/0425762E005567C5/9733A1D3F5BB1AB384256710004D4754/5631FD07CED41894842584490048FC5A"
+      },
+      "note": "Texto estadual de ICMS publicado em estados/mt/legislacao/fontes/mt-lc-631-2019-beneficios-lc160.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-mt",
+          "module_title": "Mato Grosso: ICMS e benefícios fiscais em tela",
+          "chapters": [
+            "beneficios-matriz-lc160",
+            "prodeic-desenvolvimento",
+            "fiscalizacao-riscos"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-mt-mt-port-211-2024-cbenef",
+      "jurisdiction": "MT",
+      "title": "Portaria nº 211/2024-SEFAZ - Anexo único de códigos de benefício do ICMS/MT",
+      "short": "Instruções normativas",
+      "official_url": "https://app1.sefaz.mt.gov.br/Sistema/Legislacao/legislacaotribut.nsf/173e6c0d2202fdcb03258b1700659f1e/7cd6803a7eaf464103258bf5005302a2/%24FILE/ANEXO%20%C3%9ANICO%20-%20Port.%20211.2024.pdf",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "data/fontes-estaduais-curadas/centro-oeste/MT/MT_PORT_211_2024_CBENEF_2026-04-26.txt"
+        ],
+        "sha256": {
+          "MT_PORT_211_2024_CBENEF_2026-04-26.txt": "c615038fd8005096a2fcfc7495c21e3164c4a6fc3aee0e6f3210fe49af1c9ba1"
+        },
+        "fetch_url": "https://app1.sefaz.mt.gov.br/Sistema/Legislacao/legislacaotribut.nsf/173e6c0d2202fdcb03258b1700659f1e/7cd6803a7eaf464103258bf5005302a2/%24FILE/ANEXO%20%C3%9ANICO%20-%20Port.%20211.2024.pdf"
+      },
+      "note": "Texto estadual de ICMS publicado em estados/mt/legislacao/fontes/mt-port-211-2024-cbenef.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-mt",
+          "module_title": "Mato Grosso: ICMS e benefícios fiscais em tela",
+          "chapters": [
+            "prodeic-desenvolvimento",
+            "isencoes-reducoes-creditos",
+            "agro-cesta-diferimento",
+            "documentos-cbenef-efd-prova"
+          ]
+        }
+      ]
     }
   ]
 }

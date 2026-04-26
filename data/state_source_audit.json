@@ -2,10 +2,10 @@
   "generated_on": "2026-04-26",
   "summary": {
     "states": 27,
-    "docs": 198,
-    "publishable_docs": 195,
+    "docs": 199,
+    "publishable_docs": 196,
     "scope_blocked_docs": 3,
-    "blocked": 24
+    "blocked": 23
   },
   "states": {
     "AC": {
@@ -2202,66 +2202,26 @@
     "MT": {
       "estado": "Mato Grosso",
       "region": "Centro-Oeste",
-      "curadoria": "em_segmentacao",
-      "publish_deep": false,
-      "document_count": 3,
-      "publishable_document_count": 3,
+      "curadoria": "publicado_v1",
+      "publish_deep": true,
+      "document_count": 4,
+      "publishable_document_count": 4,
       "scope_blocked_document_count": 0,
-      "total_chars": 3867071,
+      "total_chars": 3695037,
       "categories": {
-        "ICMS_ANEXOS": 2,
+        "ICMS_BENEFICIOS": 1,
+        "ICMS_LEIS": 1,
+        "INSTRUCOES_NORMATIVAS": 1,
         "RICMS": 1
       },
-      "flags": [
-        "contém IPVA",
-        "contém Taxas"
-      ],
-      "recommendation": "bloquear_publicacao_ate_curadoria",
-      "next_step": "Material normativo reunido: RICMS/MT. Próxima etapa: complementar anexos, benefícios fiscais, atos modificadores e validar vigência antes de publicar a página profunda.",
+      "flags": [],
+      "recommendation": "manter_publicado",
+      "next_step": "Mato Grosso publicado como página profunda: Lei do ICMS, RICMS, LC 631/2019, anexos de isenção, redução de base, créditos fiscais, diferimento, PRODEIC, substituição tributária, estimativa simplificada, cBenef e prova fiscal.",
       "documents": [
         {
-          "file": "MT_ICMS_ANEXOS.txt",
-          "category": "ICMS_ANEXOS",
-          "chars": 437844,
-          "named_icms": true,
-          "fallback_icms": false,
-          "dominant_scope": "ICMS",
-          "source_scopes": [],
-          "scope_blocked": false,
-          "scope_flags": [],
-          "source_documents": [
-            "ANEXO XI.pdf",
-            "ANEXO XII.pdf",
-            "ANEXO XIII.pdf",
-            "ANEXO XIV.pdf",
-            "ANEXO XIX.pdf",
-            "ANEXO XV.pdf"
-          ],
-          "flags": []
-        },
-        {
-          "file": "MT_ICMS_ANEXOS_parte2.txt",
-          "category": "ICMS_ANEXOS",
-          "chars": 373385,
-          "named_icms": true,
-          "fallback_icms": false,
-          "dominant_scope": "ICMS",
-          "source_scopes": [],
-          "scope_blocked": false,
-          "scope_flags": [],
-          "source_documents": [
-            "ANEXO XVI.pdf",
-            "ANEXO XVII.pdf",
-            "ANEXO XX.pdf",
-            "APÊNDICE DO ANEXO X​​.pdf",
-            "Anexo XVIII.pdf"
-          ],
-          "flags": []
-        },
-        {
-          "file": "MT_RICMS.txt",
-          "category": "RICMS",
-          "chars": 3055842,
+          "file": "MT_LEI_7098_1998_ICMS_2026-04-26.txt",
+          "category": "ICMS_LEIS",
+          "chars": 412618,
           "named_icms": true,
           "fallback_icms": false,
           "dominant_scope": "ICMS",
@@ -2271,12 +2231,60 @@
           "scope_blocked": false,
           "scope_flags": [],
           "source_documents": [
-            "REGULAMENTO DO ICMS-2014 .PDF"
+            "http://app1.sefaz.mt.gov.br/0325677500623408/07FA81BED2760C6B84256710004D3940/CC9C3B9886404BAA0325678B0043A842"
           ],
-          "flags": [
-            "contém IPVA",
-            "contém Taxas"
-          ]
+          "flags": []
+        },
+        {
+          "file": "RICMS_MT_2014_fonte_oficial_2026-04-26.txt",
+          "category": "RICMS",
+          "chars": 3075573,
+          "named_icms": true,
+          "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [
+            "ICMS"
+          ],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [
+            "https://app1.sefaz.mt.gov.br/sistema/legislacao/legislacaotribut.nsf/2b2e6c5ed54869788425671300480214/42abb08790833f6d84257ca200448229/%24FILE/RICMS%20-%202014-20-03-2014.pdf"
+          ],
+          "flags": []
+        },
+        {
+          "file": "MT_LC_631_2019_BENEFICIOS_LC160_2026-04-26.txt",
+          "category": "ICMS_BENEFICIOS",
+          "chars": 155149,
+          "named_icms": true,
+          "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [
+            "ICMS"
+          ],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [
+            "https://app1.sefaz.mt.gov.br/0425762E005567C5/9733A1D3F5BB1AB384256710004D4754/5631FD07CED41894842584490048FC5A"
+          ],
+          "flags": []
+        },
+        {
+          "file": "MT_PORT_211_2024_CBENEF_2026-04-26.txt",
+          "category": "INSTRUCOES_NORMATIVAS",
+          "chars": 51697,
+          "named_icms": true,
+          "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [
+            "ICMS"
+          ],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [
+            "https://app1.sefaz.mt.gov.br/Sistema/Legislacao/legislacaotribut.nsf/173e6c0d2202fdcb03258b1700659f1e/7cd6803a7eaf464103258bf5005302a2/%24FILE/ANEXO%20%C3%9ANICO%20-%20Port.%20211.2024.pdf"
+          ],
+          "flags": []
         }
       ]
     },

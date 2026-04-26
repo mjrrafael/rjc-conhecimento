@@ -2,14 +2,52 @@
   "uf": "MT",
   "estado": "Mato Grosso",
   "regiao": "Centro-Oeste",
-  "status_curadoria": "capturado_sem_aprovacao",
+  "status_curadoria": "publicado_v1",
   "data_captura": "2026-04-26",
-  "fonte_oficial": "https://app1.sefaz.mt.gov.br/Sistema/legislacao/legislacaotribut.nsf/7c7b6a9347c50f55032569140065ebbf/42abb08790833f6d84257ca200448229/%24FILE/RICMS%20-%202014-20-03-2014.pdf",
-  "arquivos": [
-    "RICMS_MT_2014_fonte_oficial_2026-04-26.txt"
+  "fonte_principal": "Secretaria de Estado de Fazenda de Mato Grosso - legislação tributária",
+  "fontes": [
+    {
+      "id": "MT_LEI_7098_1998_ICMS",
+      "titulo": "Lei nº 7.098/1998 - Lei material do ICMS/MT",
+      "tema": "Lei material do ICMS",
+      "tipo": "lei",
+      "url": "http://app1.sefaz.mt.gov.br/0325677500623408/07FA81BED2760C6B84256710004D3940/CC9C3B9886404BAA0325678B0043A842",
+      "arquivo": "MT_LEI_7098_1998_ICMS_2026-04-26.txt",
+      "sha256": "f760ee56980962e6f2d68ecd6d8a97624c7df97902ee68f88211c70503e17d74"
+    },
+    {
+      "id": "MT_DEC_2212_2014_RICMS",
+      "titulo": "Decreto nº 2.212/2014 - RICMS/MT",
+      "tema": "Regulamento do ICMS",
+      "tipo": "decreto",
+      "url": "https://app1.sefaz.mt.gov.br/sistema/legislacao/legislacaotribut.nsf/2b2e6c5ed54869788425671300480214/42abb08790833f6d84257ca200448229/%24FILE/RICMS%20-%202014-20-03-2014.pdf",
+      "arquivo": "RICMS_MT_2014_fonte_oficial_2026-04-26.txt",
+      "sha256": "1640f7085b61db9ac67b5a65c958cbe0f3ba63060b4ad8e136d3feb2a2502196"
+    },
+    {
+      "id": "MT_LC_631_2019_BENEFICIOS_LC160",
+      "titulo": "Lei Complementar nº 631/2019 - remissão, anistia e reinstituição de benefícios de ICMS",
+      "tema": "Benefícios fiscais de ICMS",
+      "tipo": "lei complementar",
+      "url": "https://app1.sefaz.mt.gov.br/0425762E005567C5/9733A1D3F5BB1AB384256710004D4754/5631FD07CED41894842584490048FC5A",
+      "arquivo": "MT_LC_631_2019_BENEFICIOS_LC160_2026-04-26.txt",
+      "sha256": "fd1b1a4ad6bbd9c07b56d0b972ad374b79e38812637bd25b19355606845066b6"
+    },
+    {
+      "id": "MT_PORT_211_2024_CBENEF",
+      "titulo": "Portaria nº 211/2024-SEFAZ - Anexo único de códigos de benefício do ICMS/MT",
+      "tema": "Instruções normativas",
+      "tipo": "portaria",
+      "url": "https://app1.sefaz.mt.gov.br/Sistema/Legislacao/legislacaotribut.nsf/173e6c0d2202fdcb03258b1700659f1e/7cd6803a7eaf464103258bf5005302a2/%24FILE/ANEXO%20%C3%9ANICO%20-%20Port.%20211.2024.pdf",
+      "arquivo": "MT_PORT_211_2024_CBENEF_2026-04-26.txt",
+      "sha256": "c615038fd8005096a2fcfc7495c21e3164c4a6fc3aee0e6f3210fe49af1c9ba1"
+    }
   ],
   "sha256": {
-    "RICMS_MT_2014_fonte_oficial_2026-04-26.txt": "ae6969b602f10fb889a7bd5e7f114ed2584f38e4907c5f9e18916de1fbe51159"
+    "MT_LEI_7098_1998_ICMS_2026-04-26.txt": "f760ee56980962e6f2d68ecd6d8a97624c7df97902ee68f88211c70503e17d74",
+    "RICMS_MT_2014_fonte_oficial_2026-04-26.txt": "1640f7085b61db9ac67b5a65c958cbe0f3ba63060b4ad8e136d3feb2a2502196",
+    "MT_LC_631_2019_BENEFICIOS_LC160_2026-04-26.txt": "fd1b1a4ad6bbd9c07b56d0b972ad374b79e38812637bd25b19355606845066b6",
+    "MT_PORT_211_2024_CBENEF_2026-04-26.txt": "c615038fd8005096a2fcfc7495c21e3164c4a6fc3aee0e6f3210fe49af1c9ba1"
   },
-  "observacoes": "RICMS/2014 capturado da SEFAZ-MT. Ainda precisa segmentar beneficios, anexos e validar vigencia antes de publish_deep=true."
+  "observacoes": "Pacote publicado com Lei 7.098/1998, RICMS/2014, LC 631/2019 e Portaria 211/2024-SEFAZ/cBenef. Conteúdo em tela e organizado em capítulos temáticos."
 }

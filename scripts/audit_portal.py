@@ -29,6 +29,7 @@ from state_legal_pages import (  # noqa: E402
     BA_CHAPTERS,
     DF_CHAPTERS,
     GROUP_DEFS,
+    MT_CHAPTERS,
     STATE_NAMES,
     ba_chapter_path,
     benefit_sector_results,
@@ -36,6 +37,7 @@ from state_legal_pages import (  # noqa: E402
     df_chapter_path,
     group_docs,
     group_path,
+    mt_chapter_path,
     group_by_id,
     index_path as state_index_path,
     sector_anchor,
@@ -328,6 +330,34 @@ def audit_content_pages() -> list[str]:
             for term in ["Lei nº 6.225", "EMPREGA", "PRÓ-DF", "crédito outorgado", "EFD"]:
                 if term not in benefits_html:
                     errors.append(f"DF: beneficio ou prova sem trilha publicada: {term}")
+            for doc in list(docs)[:3]:
+                source_html = read_page(source_path(uf, doc))
+                if not source_html or "law-pre" not in source_html:
+                    errors.append(f"{uf}: fonte estadual sem texto em tela: {doc['file']}")
+            continue
+        if uf == "MT":
+            index_html = read_page(state_index_path(uf))
+            if not index_html or "Mato Grosso: ICMS e benefícios fiscais em tela" not in index_html:
+                errors.append("MT: indice profundo de ICMS e beneficios ausente")
+            state_html = read_page("estados/mt.html")
+            if not state_html or "Benefícios fiscais por grupo" not in state_html:
+                errors.append("MT: pagina estadual sem grupos didaticos de beneficios")
+            if state_html and re.search(r"\bTaxas\b|MT_ITCD|MT_OUTROS", state_html):
+                errors.append("MT: pagina estadual ainda contem inventario antigo ou taxas fora de escopo")
+            for chapter in MT_CHAPTERS:
+                chapter_html = read_page(mt_chapter_path(chapter["id"]))
+                if not chapter_html or "Texto legal antes da análise" not in chapter_html or "law-pre" not in chapter_html:
+                    errors.append(f"MT: capitulo sem lei em tela: {chapter['id']}")
+            benefits_html = (
+                read_page(mt_chapter_path("beneficios-matriz-lc160"))
+                + read_page(mt_chapter_path("prodeic-desenvolvimento"))
+                + read_page(mt_chapter_path("isencoes-reducoes-creditos"))
+                + read_page(mt_chapter_path("agro-cesta-diferimento"))
+                + read_page(mt_chapter_path("documentos-cbenef-efd-prova"))
+            )
+            for term in ["LC nº 631", "PRODEIC", "Crédito", "Código Benefício", "cBenef"]:
+                if term not in benefits_html:
+                    errors.append(f"MT: beneficio ou prova sem trilha publicada: {term}")
             for doc in list(docs)[:3]:
                 source_html = read_page(source_path(uf, doc))
                 if not source_html or "law-pre" not in source_html:

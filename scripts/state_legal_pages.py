@@ -364,6 +364,10 @@ CURATED_CATEGORY_BY_SOURCE_ID = {
     "DF_LEI_3196_2003_PRODF_II": "ICMS_BENEFICIOS",
     "DF_LEI_3266_2003_PRODF_II_COMPLEMENTAR": "ICMS_BENEFICIOS",
     "DF_DEC_46900_2025_PRODF_DESENVOLVEDF": "ICMS_BENEFICIOS",
+    "MT_LEI_7098_1998_ICMS": "ICMS_LEIS",
+    "MT_DEC_2212_2014_RICMS": "RICMS",
+    "MT_LC_631_2019_BENEFICIOS_LC160": "ICMS_BENEFICIOS",
+    "MT_PORT_211_2024_CBENEF": "INSTRUCOES_NORMATIVAS",
 }
 
 BA_CHAPTERS = [
@@ -742,6 +746,192 @@ DF_SIGNAL_CHAPTER_MAP = {
     "substituicao tributaria": "substituicao-tributaria-antecipacao",
     "efd/sped": "documentos-efd-prova",
     "cBenef": "documentos-efd-prova",
+}
+
+MT_CHAPTERS = [
+    {
+        "id": "icms-regra-matriz",
+        "title": "ICMS/MT: incidência, não incidência e contribuinte",
+        "summary": "A leitura de entrada do Mato Grosso: campo do imposto, fato gerador, não incidência, contribuinte e obrigações centrais.",
+        "theme": "Regra matriz",
+        "refs": [
+            {"source": "MT_LEI_7098_1998_ICMS", "articles": ["1", "2", "3", "4", "16", "17"]},
+            {"source": "MT_DEC_2212_2014_RICMS", "articles": ["1", "2", "3", "4", "5", "22"]},
+        ],
+        "analysis": [
+            "Em Mato Grosso, o estudo começa pela Lei nº 7.098/1998. Ela consolida a incidência do ICMS, o momento do fato gerador, as hipóteses de não incidência e a posição do contribuinte.",
+            "O RICMS/MT, aprovado pelo Decreto nº 2.212/2014, traduz a lei para a rotina fiscal: definição da operação, saída, documento, obrigação acessória, sujeição passiva e controle da prova.",
+            "Antes de falar em benefício, é preciso responder se a operação está dentro do campo do ICMS. Se não houver incidência, o tratamento é estrutural; se houver incidência, benefícios e regimes entram como exceções legais.",
+        ],
+        "departments": "Fiscal define CFOP, CST/CSOSN, operação e responsável. Cadastro valida contribuinte e inscrição. Jurídico separa não incidência, imunidade, isenção e responsabilidade.",
+        "documents": "NF-e, CT-e, cadastro fiscal, inscrição estadual, contrato, pedido, prova de circulação, EFD e memória de enquadramento.",
+        "risks": "Aplicar benefício antes de confirmar a incidência; confundir não incidência com isenção; tratar contribuinte, responsável e substituto como figuras iguais.",
+    },
+    {
+        "id": "base-aliquota-apuracao",
+        "title": "Base de cálculo, alíquotas, crédito e apuração",
+        "summary": "Como a operação vira base, qual alíquota se aplica, como o crédito é tomado e como o imposto é apurado no MT.",
+        "theme": "Carga tributária",
+        "refs": [
+            {"source": "MT_LEI_7098_1998_ICMS", "articles": ["6", "14", "24", "25", "30", "31"]},
+            {"source": "MT_DEC_2212_2014_RICMS", "articles": ["72", "81", "95", "96", "99", "131"]},
+        ],
+        "analysis": [
+            "Alíquota não resolve sozinha a tributação. A ordem correta é operação, base de cálculo, eventual redução, alíquota, crédito, apuração, prazo e recolhimento.",
+            "A não cumulatividade exige memória de crédito. Crédito comum, crédito outorgado, estorno e vedação precisam estar separados para evitar que um benefício fiscal contamine a apuração mensal.",
+            "No fechamento, o cálculo precisa conversar com XML, EFD, guia e contabilidade. Quando houver carga reduzida, a prova deve mostrar se a redução veio da base, do crédito ou de regime específico.",
+        ],
+        "departments": "Fiscal parametriza base, alíquota, crédito e prazo. Contábil concilia imposto, custo e crédito. Financeiro guarda guias. Auditoria cruza XML, EFD e recolhimento.",
+        "documents": "XML, cadastro NCM, tabela de alíquotas, memória de cálculo, EFD, guia de recolhimento, demonstrativo de crédito e conciliação contábil.",
+        "risks": "Trocar base reduzida por alíquota menor; tomar crédito incompatível com benefício; aplicar alíquota de período errado; não demonstrar a carga efetiva.",
+    },
+    {
+        "id": "beneficios-matriz-lc160",
+        "title": "Benefícios fiscais, LC 160 e Convênio ICMS 190/2017",
+        "summary": "A matriz de benefícios do MT: remissão, anistia, reinstituição, isenções, reduções, créditos, diferimentos e condições de fruição.",
+        "theme": "Benefícios fiscais",
+        "refs": [
+            {"source": "MT_LC_631_2019_BENEFICIOS_LC160", "articles": ["1", "3", "7", "8", "10", "11", "12", "14", "56", "58", "59"]},
+            {"source": "MT_DEC_2212_2014_RICMS", "keywords": ["ANEXO IV", "ANEXO V", "ANEXO VI", "ANEXO VII", "isenção", "redução de base", "créditos fiscais", "diferimento"]},
+        ],
+        "analysis": [
+            "A LC nº 631/2019 é a camada de remissão, anistia, reinstituição e disciplina dos benefícios no ambiente da LC 160/2017 e do Convênio ICMS 190/2017.",
+            "O RICMS/MT organiza benefícios em anexos: Anexo IV para isenções, Anexo V para reduções de base, Anexo VI para créditos fiscais/outorgados/presumidos e Anexo VII para diferimentos.",
+            "Benefício fiscal é exceção condicionada. Produto, operação, destinatário, período, enquadramento, vedação, estorno, contrapartida e escrituração precisam estar no mesmo dossiê.",
+        ],
+        "departments": "Jurídico identifica ato, vigência e condições. Fiscal parametriza CST, cBenef quando aplicável e ajustes. Contábil mede crédito/estorno. Financeiro controla recolhimentos e fundos.",
+        "documents": "LC 631/2019, RICMS/MT, anexo aplicável, XML, EFD, código de benefício, memória de cálculo, ato concessivo quando houver e prova de cumprimento.",
+        "risks": "Usar a reinstituição como se fosse o benefício material; acumular benefícios vedados; esquecer estorno; não provar condição ou regularidade.",
+    },
+    {
+        "id": "prodeic-desenvolvimento",
+        "title": "PRODEIC, desenvolvimento econômico e regimes incentivados",
+        "summary": "Programas e tratamentos de desenvolvimento econômico em Mato Grosso, com foco em crédito, redução, projeto e cumprimento de condições.",
+        "theme": "Programas estaduais",
+        "refs": [
+            {"source": "MT_LC_631_2019_BENEFICIOS_LC160", "articles": ["18", "19", "24", "25", "36", "56"]},
+            {"source": "MT_DEC_2212_2014_RICMS", "keywords": ["PRODEIC", "Programa de Desenvolvimento", "tratamento diferenciado", "benefícios fiscais"]},
+            {"source": "MT_PORT_211_2024_CBENEF", "keywords": ["Desenvolvimento", "Agroindústria", "Comércio", "Industrial"]},
+        ],
+        "analysis": [
+            "O PRODEIC e os módulos de desenvolvimento não devem ser lidos como simples desconto. Eles dependem de programa, resolução, setor, operação, metas, prazo e manutenção das condições.",
+            "A LC nº 631/2019 reorganiza a fruição e os limites de vários benefícios reinstituídos. O contribuinte precisa sair da norma geral para o ato concreto e para a escrituração do benefício usado.",
+            "A portaria de cBenef ajuda a transformar o benefício em linguagem de documento fiscal: setor, código, benefício, fundamento e classificação simplificada.",
+        ],
+        "departments": "Jurídico acompanha enquadramento, ato e vigência. Fiscal calcula incentivo e cBenef. Controladoria mede impacto. Financeiro controla recolhimentos e contrapartidas.",
+        "documents": "Resolução, termo, ato concessivo, LC 631/2019, XML, EFD, cBenef, memória de cálculo, certidões, relatório de cumprimento e guias.",
+        "risks": "Aplicar incentivo sem ato individual; não comprovar metas; usar código de benefício sem direito material; misturar operação incentivada e não incentivada.",
+    },
+    {
+        "id": "isencoes-reducoes-creditos",
+        "title": "Isenções, reduções de base e créditos outorgados",
+        "summary": "Leitura dos Anexos IV, V e VI do RICMS/MT: benefício por produto, operação, setor, destinatário e prova.",
+        "theme": "Benefícios por espécie",
+        "refs": [
+            {"source": "MT_DEC_2212_2014_RICMS", "keywords": ["ANEXO IV", "DAS OPERAÇÕES E PRESTAÇÕES ALCANÇADAS POR ISENÇÃO", "ANEXO V", "REDUÇÃO DE BASE DE CÁLCULO", "ANEXO VI", "CRÉDITOS FISCAIS, OUTORGADOS E PRESUMIDOS"]},
+            {"source": "MT_PORT_211_2024_CBENEF", "keywords": ["Isenção", "Redução da base de cálculo", "Crédito outorgado", "Crédito presumido"]},
+        ],
+        "analysis": [
+            "Isenção afasta a cobrança em hipótese específica; redução de base reduz a grandeza tributável; crédito outorgado ou presumido altera a apuração. Cada técnica exige prova diferente.",
+            "Nos anexos do RICMS/MT, o título do capítulo ajuda, mas não basta. A descrição legal do item deve bater com produto, NCM, operação, destinatário e período.",
+            "O cBenef deve ser consequência da norma material. Ele identifica o benefício no documento; não cria direito quando produto, operação ou condição estão fora do texto legal.",
+        ],
+        "departments": "Fiscal parametriza CST, cBenef e benefício. Cadastro valida NCM e produto. Contábil controla crédito/estorno. Auditoria testa aderência por item.",
+        "documents": "XML, cadastro de item, NCM, anexo aplicável, cBenef, EFD, memória de cálculo, comprovação de destinatário e prova de finalidade.",
+        "risks": "Usar benefício por semelhança comercial; informar cBenef indevido; manter crédito quando a norma manda estornar; não demonstrar a condição específica.",
+    },
+    {
+        "id": "agro-cesta-diferimento",
+        "title": "Agro, cesta básica, diferimento e cadeias produtivas",
+        "summary": "Benefícios e diferimentos ligados a produtos de origem vegetal, animal, alimentos, insumos, biodiesel e cadeia agroindustrial.",
+        "theme": "Agro e alimentos",
+        "refs": [
+            {"source": "MT_DEC_2212_2014_RICMS", "keywords": ["cesta básica", "produtos de origem", "reino vegetal", "reino animal", "biodiesel", "ANEXO VII", "DIFERIMENTO"]},
+            {"source": "MT_PORT_211_2024_CBENEF", "keywords": ["Agroindústria", "cesta básica", "biodiesel", "carnes", "gado", "produtos vegetais"]},
+        ],
+        "analysis": [
+            "Mato Grosso exige leitura cuidadosa das cadeias agroindustriais. O produto, a etapa, a origem, o destinatário e a finalidade costumam decidir se há isenção, redução, crédito ou diferimento.",
+            "Diferimento não é perdão do imposto. Ele desloca o recolhimento para outro momento ou para outro responsável, e precisa de controle documental da etapa posterior.",
+            "A cesta básica e os produtos agroalimentares exigem aderência literal à descrição do anexo. O cadastro comercial do ERP não substitui o texto normativo.",
+        ],
+        "departments": "Fiscal parametriza produto e CST. Compras prova origem. Operações prova destinação. Contábil controla crédito, estorno e diferimento.",
+        "documents": "NF-e, NCM, romaneio, contrato, prova de origem/destino, EFD, memória de crédito, anexo aplicável e cBenef quando exigido.",
+        "risks": "Aplicar benefício por família comercial; não provar finalidade; tratar diferimento como isenção; perder crédito por falta de controle da cadeia.",
+    },
+    {
+        "id": "st-estimativa-anexos",
+        "title": "Substituição tributária, estimativa simplificada e anexos de carga",
+        "summary": "Responsabilidade, ST, antecipação, anexos de segmentos, carga média por CNAE e controles de recolhimento.",
+        "theme": "Responsabilidade tributária",
+        "refs": [
+            {"source": "MT_DEC_2212_2014_RICMS", "articles": ["448", "450", "463", "573"]},
+            {"source": "MT_DEC_2212_2014_RICMS", "keywords": ["ANEXO X", "substituição tributária", "regime de estimativa simplificado", "ANEXO XIII", "carga tributária média"]},
+            {"source": "MT_LEI_7098_1998_ICMS", "articles": ["30", "31"]},
+        ],
+        "analysis": [
+            "ST e antecipação não são benefícios: são técnicas de responsabilidade e momento de recolhimento. A leitura começa por mercadoria, operação, NCM/CEST, segmento e responsável.",
+            "O regime de estimativa simplificada e anexos de carga exigem cuidado com CNAE, operação, período e hipótese de encerramento ou não encerramento da fase tributária.",
+            "A prova deve reconstruir base, carga, imposto próprio, imposto retido ou antecipado, eventual complemento e escrituração.",
+        ],
+        "departments": "Fiscal controla NCM/CEST, segmento, base e carga. Compras valida fornecedor e retenção. Financeiro guarda guias. Auditoria cruza estoque, XML e EFD.",
+        "documents": "XML, NCM, CEST, CNAE, Anexo X, Anexo XIII, MVA/carga, guia, EFD, cadastro de item e memória por operação.",
+        "risks": "Aplicar ST por descrição parecida; ignorar CNAE ou segmento; tratar estimativa como benefício; não controlar complemento ou ressarcimento.",
+    },
+    {
+        "id": "documentos-cbenef-efd-prova",
+        "title": "Documentos fiscais, cBenef, EFD e prova",
+        "summary": "Como o benefício aparece no XML, nos códigos de benefício, na escrituração e no dossiê mensal de auditoria.",
+        "theme": "Prova digital",
+        "refs": [
+            {"source": "MT_PORT_211_2024_CBENEF", "keywords": ["Código Benefício", "Classificação Simplificada", "MT001", "MT002", "MT003"]},
+            {"source": "MT_DEC_2212_2014_RICMS", "articles": ["174", "215", "216", "327", "328"]},
+            {"source": "MT_DEC_2212_2014_RICMS", "keywords": ["documento fiscal", "escrituração fiscal", "NF-e", "EFD"]},
+        ],
+        "analysis": [
+            "A tese só sobrevive se o documento fiscal e a escrituração contam a mesma história que a lei. cBenef, CST, CFOP, base, crédito e observações precisam ser coerentes.",
+            "O anexo da Portaria nº 211/2024 organiza benefícios por código, descrição e classificação. Ele é ferramenta de prova documental, mas depende do fundamento legal material.",
+            "O dossiê mensal deve permitir que alguém refaça o caminho: norma, produto, operação, código, cálculo, XML, EFD e guia.",
+        ],
+        "departments": "Fiscal emite e escritura. TI mantém parametrização. Contábil concilia ajustes. Financeiro prova pagamento. Auditoria testa coerência.",
+        "documents": "NF-e, CT-e, cBenef, EFD, recibos, registros e ajustes, memória de cálculo, guias, cadastro de item e fundamento legal.",
+        "risks": "Informar código sem direito material; usar código genérico; transmitir EFD divergente do XML; não guardar a memória do benefício usado.",
+    },
+    {
+        "id": "fiscalizacao-riscos",
+        "title": "Fiscalização, penalidades e perda de benefício",
+        "summary": "Pontos de controle que sustentam ou derrubam benefício: regularidade, condição, prazo, escrituração, prova e defesa.",
+        "theme": "Auditoria fiscal",
+        "refs": [
+            {"source": "MT_LEI_7098_1998_ICMS", "articles": ["35", "39", "45", "47"]},
+            {"source": "MT_DEC_2212_2014_RICMS", "articles": ["917", "935", "936", "945"]},
+            {"source": "MT_LC_631_2019_BENEFICIOS_LC160", "articles": ["12", "14", "56", "58", "59"]},
+        ],
+        "analysis": [
+            "A fiscalização normalmente procura inconsistência: benefício no XML sem ato, código sem fundamento, crédito sem estorno, regime vencido ou prova dispersa.",
+            "Nos benefícios reinstituídos e programas condicionados, regularidade e cumprimento de requisitos são parte da tese. A perda pode surgir por descumprimento operacional, não apenas por interpretação jurídica errada.",
+            "A defesa documental deve nascer no mês do fato gerador. Depois da autuação, reconstruir prova de produto, condição, cálculo e escrituração fica caro e frágil.",
+        ],
+        "departments": "Jurídico mantém matriz de risco. Fiscal e contábil fecham prova mensal. Financeiro valida guias. Diretoria acompanha metas e contrapartidas.",
+        "documents": "Checklists, certidões, atos concessivos, XML, EFD, comprovantes, relatórios, contratos, memória de cálculo e parecer de enquadramento.",
+        "risks": "Benefício materialmente correto, mas sem prova; condição vencida; código indevido; cálculo impossível de reconstruir; falta de controle por estabelecimento.",
+    },
+]
+
+MT_SIGNAL_CHAPTER_MAP = {
+    "exportacao": "icms-regra-matriz",
+    "nao incidencia": "icms-regra-matriz",
+    "aliquota": "base-aliquota-apuracao",
+    "reducao de base": "isencoes-reducoes-creditos",
+    "isencao": "isencoes-reducoes-creditos",
+    "credito outorgado": "isencoes-reducoes-creditos",
+    "diferimento": "agro-cesta-diferimento",
+    "suspensao": "beneficios-matriz-lc160",
+    "regime especial": "prodeic-desenvolvimento",
+    "protege/fundo": "prodeic-desenvolvimento",
+    "fundo/contrapartida": "prodeic-desenvolvimento",
+    "substituicao tributaria": "st-estimativa-anexos",
+    "efd/sped": "documentos-cbenef-efd-prova",
+    "cBenef": "documentos-cbenef-efd-prova",
 }
 
 
@@ -1791,6 +1981,214 @@ def render_df_pages(docs: tuple[dict, ...], layout_func) -> dict[str, str]:
     return pages
 
 
+def mt_chapter_path(chapter_id: str) -> str:
+    return f"estados/mt/legislacao/{chapter_id}.html"
+
+
+def mt_chapter_by_id(chapter_id: str) -> dict:
+    return next(chapter for chapter in MT_CHAPTERS if chapter["id"] == chapter_id)
+
+
+def mt_law_blocks(current_path: str, docs: tuple[dict, ...], chapter: dict) -> str:
+    source_map = docs_by_source_id(docs)
+    blocks = []
+    for ref in chapter.get("refs", []):
+        doc = source_map.get(ref["source"])
+        if not doc:
+            continue
+        segments: list[tuple[str, str]] = []
+        if ref.get("articles"):
+            segments = article_segments(doc, ref["articles"])
+        elif ref.get("full_text"):
+            if doc["chars"] <= 25000:
+                segments = [("Texto integral do ato", clean_law_segment(doc["text"], limit=26000))]
+            else:
+                needles = ["isenção", "redução de base", "crédito outorgado", "diferimento", "substituição tributária"]
+                segments = [(f"Trecho {idx}", clean_law_segment(item, limit=5000)) for idx, item in enumerate(excerpts(doc["text"], needles, limit=5), start=1)]
+        elif ref.get("keywords"):
+            segments = [(f"Trecho {idx}", clean_law_segment(item, limit=5000)) for idx, item in enumerate(excerpts(doc["text"], ref["keywords"], limit=5), start=1)]
+        if not segments:
+            segments = [(f"Trecho {idx}", clean_law_segment(item, limit=5000)) for idx, item in enumerate(excerpts(doc["text"], [chapter["title"], chapter["summary"]], limit=2), start=1)]
+        law_html = "".join(f"""
+<article class="article-block">
+  <div class="article-number">{escape(label)}</div>
+  <pre class="law-pre">{escape(segment)}</pre>
+</article>
+""" for label, segment in segments if segment)
+        blocks.append(f"""
+<section class="legal-document">
+  <div class="document-heading">
+    <div>
+      <span class="eyebrow">{escape(doc['category_label'])}</span>
+      <h3>{escape(doc['title'])}</h3>
+      <p>Dispositivos essenciais para este capítulo. A íntegra está preservada na página-fonte.</p>
+    </div>
+    <div class="document-actions">
+      <a href="{escape(rel_href(current_path, source_path('MT', doc)))}">abrir fonte integral</a>
+      <a href="{escape(doc.get('official_url', STATE_OFFICIAL_PORTALS['MT']))}" target="_blank" rel="noopener">fonte pública</a>
+    </div>
+  </div>
+  {law_html}
+</section>
+""")
+    return "".join(blocks)
+
+
+def render_mt_index_page(docs: tuple[dict, ...], layout_func) -> str:
+    current = index_path("MT")
+    chapter_cards = []
+    for chapter in MT_CHAPTERS:
+        chapter_cards.append(f"""
+<a class="portal-card searchable-card" href="{escape(rel_href(current, mt_chapter_path(chapter['id'])))}"
+   data-search="{escape('Mato Grosso MT ICMS beneficios fiscais ' + chapter['title'] + ' ' + chapter['summary'] + ' ' + chapter['theme'])}">
+  <span class="card-kicker">{escape(chapter['theme'])}</span>
+  <h3>{escape(chapter['title'])}</h3>
+  <p>{escape(chapter['summary'])}</p>
+  <small>lei em tela + análise aplicada</small>
+</a>
+""")
+    source_cards = render_doc_links(current, "MT", list(docs))
+    body = f"""
+<section class="hero-panel legal-hero">
+  <div>
+    <span class="eyebrow">Mato Grosso completo</span>
+    <h1>Mato Grosso: ICMS e benefícios fiscais em tela</h1>
+    <p>Lei nº 7.098/1998, RICMS/MT, LC nº 631/2019, anexos de isenção, redução de base, créditos outorgados, diferimento, substituição tributária, estimativa simplificada, PRODEIC e cBenef.</p>
+  </div>
+  <aside class="hero-proof">
+    <strong>Como ler</strong>
+    <p>Comece pela regra matriz; depois base, alíquota e crédito; em seguida benefícios, PRODEIC, agro, ST, cBenef, EFD e fiscalização.</p>
+  </aside>
+</section>
+<section class="law-ledger">
+  <div>
+    <h2>Textos publicados</h2>
+    <p>{fmt_num(len(docs))} atos normativos e {fmt_num(sum(int(doc['chars']) for doc in docs))} caracteres em tela no portal.</p>
+  </div>
+  <div>
+    <h2>Arquitetura do MT</h2>
+    <p>A leitura passa pela lei material, pelo RICMS, pela LC 631/2019, pelos anexos de benefícios e pela tabela de códigos de benefício.</p>
+  </div>
+  <div>
+    <h2>Fonte pública</h2>
+    <p><a href="https://www.sefaz.mt.gov.br/" target="_blank" rel="noopener">SEFAZ-MT: legislação tributária</a></p>
+  </div>
+</section>
+<section class="topic-index">
+  <div class="section-heading">
+    <span class="eyebrow">Índice por tema</span>
+    <h2>Estude pela matéria, não pelo número do ato</h2>
+    <p>Cada capítulo abre com dispositivos legais em tela e depois ensina como aplicar, provar e auditar a regra.</p>
+  </div>
+  <div class="card-grid">{''.join(chapter_cards)}</div>
+</section>
+<section class="section-wrap">
+  <div class="section-heading">
+    <span class="eyebrow">Fontes integrais</span>
+    <h2>Legislação em tela</h2>
+    <p>As páginas abaixo preservam a íntegra textual capturada das fontes públicas, para que o portal não dependa do link externo para ensinar.</p>
+  </div>
+  {source_cards}
+</section>
+<section class="continuity">
+  <h2>Continuar a leitura</h2>
+  <div>
+    <a href="{escape(rel_href(current, 'estados/mt.html'))}">página de Mato Grosso</a>
+    <a href="{escape(rel_href(current, 'estados/df/legislacao/index.html'))}">comparar com DF</a>
+    <a href="{escape(rel_href(current, 'estados/ba/legislacao/index.html'))}">comparar com Bahia</a>
+    <a href="{escape(rel_href(current, 'estados/goias/legislacao/index.html'))}">comparar com Goiás</a>
+    <a href="{escape(rel_href(current, 'confaz/index.html'))}">CONFAZ e Convênio 190/2017</a>
+  </div>
+</section>
+"""
+    return layout_func(current, "Mato Grosso: ICMS e benefícios fiscais em tela", "Lei, RICMS, benefícios, ST, cBenef e prova do ICMS no Mato Grosso.", body, "estados")
+
+
+def render_mt_chapter_page(docs: tuple[dict, ...], chapter: dict, layout_func) -> str:
+    current = mt_chapter_path(chapter["id"])
+    related = []
+    for other in MT_CHAPTERS:
+        if other["id"] == chapter["id"]:
+            continue
+        if other["theme"] == chapter["theme"] or len(related) < 4:
+            related.append(other)
+        if len(related) >= 5:
+            break
+    related_links = "".join(
+        f'<a href="{escape(rel_href(current, mt_chapter_path(item["id"])))}">{escape(item["title"])}</a>'
+        for item in related
+    )
+    analysis_items = "".join(f"<p>{escape(item)}</p>" for item in chapter.get("analysis", []))
+    body = f"""
+<section class="hero-panel legal-hero">
+  <div>
+    <span class="eyebrow">Mato Grosso · {escape(chapter['theme'])}</span>
+    <h1>{escape(chapter['title'])}</h1>
+    <p>{escape(chapter['summary'])}</p>
+  </div>
+  <aside class="hero-proof">
+    <strong>Ordem correta</strong>
+    <p>Leia os dispositivos em tela antes da interpretação. Depois confira aplicação, prova e risco.</p>
+  </aside>
+</section>
+<section class="topic-index compact-index">
+  <div class="section-heading">
+    <span class="eyebrow">Voltar ao índice</span>
+    <h2>Mato Grosso por capítulos</h2>
+  </div>
+  <div class="signal-law-links">
+    <strong>Continuar no Estado</strong>
+    <div>
+      <a href="{escape(rel_href(current, index_path('MT')))}">índice de MT</a>
+      <a href="{escape(rel_href(current, 'estados/mt.html'))}">página principal</a>
+      <a href="{escape(rel_href(current, 'confaz/index.html'))}">CONFAZ</a>
+    </div>
+  </div>
+</section>
+<section class="legal-chapters">
+  <div class="section-heading">
+    <span class="eyebrow">Legislação em tela</span>
+    <h2>Texto legal antes da análise</h2>
+    <p>Os blocos abaixo trazem os dispositivos nucleares deste assunto. A íntegra de cada ato fica aberta nas páginas-fonte do portal.</p>
+  </div>
+  {mt_law_blocks(current, docs, chapter)}
+</section>
+<section class="content-block">
+  <span class="eyebrow">Análise aplicada</span>
+  <h2>Como interpretar</h2>
+  {analysis_items}
+</section>
+<section class="law-ledger">
+  <div>
+    <h2>Aplicação por departamento</h2>
+    <p>{escape(chapter.get('departments', 'Fiscal, contábil, financeiro e jurídico devem amarrar regra, documento, escrituração e pagamento.'))}</p>
+  </div>
+  <div>
+    <h2>Documentos de prova</h2>
+    <p>{escape(chapter.get('documents', 'XML, EFD, memória de cálculo, ato legal e comprovantes.'))}</p>
+  </div>
+  <div>
+    <h2>Riscos comuns</h2>
+    <p>{escape(chapter.get('risks', 'Aplicar tese sem dispositivo, condição, vigência ou prova documental suficiente.'))}</p>
+  </div>
+</section>
+<section class="continuity">
+  <h2>Continuar este estudo</h2>
+  <div>{related_links}</div>
+</section>
+"""
+    return layout_func(current, f"Mato Grosso: {chapter['title']}", chapter["summary"], body, "estados")
+
+
+def render_mt_pages(docs: tuple[dict, ...], layout_func) -> dict[str, str]:
+    pages = {index_path("MT"): render_mt_index_page(docs, layout_func)}
+    for chapter in MT_CHAPTERS:
+        pages[mt_chapter_path(chapter["id"])] = render_mt_chapter_page(docs, chapter, layout_func)
+    for doc in docs:
+        pages[source_path("MT", doc)] = render_source_page("MT", doc, layout_func)
+    return pages
+
+
 def render_index_page(uf: str, docs: list[dict], layout_func) -> str:
     name = STATE_NAMES.get(uf, uf)
     current = index_path(uf)
@@ -1977,6 +2375,9 @@ def build_state_legal_pages(layout_func, data: dict) -> dict[str, str]:
         if uf == "DF":
             pages.update(render_df_pages(docs, layout_func))
             continue
+        if uf == "MT":
+            pages.update(render_mt_pages(docs, layout_func))
+            continue
         pages[index_path(uf)] = render_index_page(uf, docs, layout_func)
         for group in GROUP_DEFS:
             pages[group_path(uf, group["id"])] = render_group_page(uf, docs, group, layout_func)
@@ -2009,6 +2410,15 @@ def state_legislation_teaser(uf: str, current_path: str) -> str:
             ("regime especial e crédito outorgado", df_chapter_path("regime-especial-apuracao")),
             ("EMPREGA-DF, PRÓ-DF e Desenvolve-DF", df_chapter_path("emprega-df-prodf-desenvolve")),
             ("EFD, documentos e prova", df_chapter_path("documentos-efd-prova")),
+        ]
+    elif uf == "MT" and state_is_deep_published(uf) and publishable_state_documents(uf):
+        links = [
+            ("Mato Grosso: índice completo", index_path("MT")),
+            ("ICMS: regra matriz", mt_chapter_path("icms-regra-matriz")),
+            ("base, alíquotas e apuração", mt_chapter_path("base-aliquota-apuracao")),
+            ("benefícios fiscais e LC 160", mt_chapter_path("beneficios-matriz-lc160")),
+            ("PRODEIC e desenvolvimento", mt_chapter_path("prodeic-desenvolvimento")),
+            ("cBenef, EFD e prova", mt_chapter_path("documentos-cbenef-efd-prova")),
         ]
     else:
         if not state_is_deep_published(uf):
@@ -2106,6 +2516,20 @@ def state_signal_links(uf: str, signal_key: str, current_path: str) -> str:
   </div>
 </div>
 """
+    if uf == "MT":
+        if not state_is_deep_published(uf) or not publishable_state_documents(uf):
+            return ""
+        chapter_id = MT_SIGNAL_CHAPTER_MAP.get(signal_key, "icms-regra-matriz")
+        chapter = mt_chapter_by_id(chapter_id)
+        return f"""
+<div class="signal-law-links">
+  <strong>Capítulo de MT para estudar agora</strong>
+  <div>
+    <a href="{escape(rel_href(current_path, mt_chapter_path(chapter_id)))}">{escape(chapter['title'])}</a>
+    <a href="{escape(rel_href(current_path, index_path('MT')))}">índice completo de MT</a>
+  </div>
+</div>
+"""
     if not state_is_deep_published(uf) or not publishable_state_documents(uf):
         return ""
     group_id = SIGNAL_TO_GROUP.get(signal_key, "icms")
@@ -2190,6 +2614,34 @@ def state_legal_search_entries(data: dict) -> list[dict[str, str]]:
                     "tags": f"DF Distrito Federal ICMS benefícios fiscais {tags}",
                 })
             continue
+        if uf == "MT":
+            entries.append({
+                "title": "Mato Grosso: ICMS e benefícios fiscais em tela",
+                "url": index_path("MT"),
+                "summary": "Lei do ICMS/MT, RICMS/MT, LC 631/2019, anexos de benefícios, PRODEIC, cBenef, substituição tributária, estimativa simplificada, agro e EFD.",
+                "tags": "MT Mato Grosso ICMS RICMS benefícios fiscais alíquotas base cálculo substituição tributária ST PRODEIC crédito outorgado crédito presumido redução base isenção diferimento cBenef EFD SPED LC 160 Convênio 190",
+            })
+            for chapter in MT_CHAPTERS:
+                entries.append({
+                    "title": f"Mato Grosso: {chapter['title']}",
+                    "url": mt_chapter_path(chapter["id"]),
+                    "summary": chapter["summary"],
+                    "tags": f"MT Mato Grosso ICMS benefícios fiscais {chapter['theme']} {chapter['title']} {chapter['summary']}",
+                })
+            for title, url, tags in [
+                ("Mato Grosso: PRODEIC e desenvolvimento econômico", mt_chapter_path("prodeic-desenvolvimento"), "PRODEIC desenvolvimento econômico indústria comércio incentivo fiscal programa estadual"),
+                ("Mato Grosso: isenção, redução e crédito outorgado", mt_chapter_path("isencoes-reducoes-creditos"), "isenção redução base crédito outorgado crédito presumido Anexo IV V VI cBenef"),
+                ("Mato Grosso: agro, cesta básica e diferimento", mt_chapter_path("agro-cesta-diferimento"), "agro alimentos cesta básica vegetal animal biodiesel diferimento Anexo VII"),
+                ("Mato Grosso: ST e estimativa simplificada", mt_chapter_path("st-estimativa-anexos"), "substituição tributária ST estimativa simplificada carga média CNAE Anexo X XIII"),
+                ("Mato Grosso: cBenef, EFD e prova", mt_chapter_path("documentos-cbenef-efd-prova"), "cBenef EFD SPED XML documento fiscal código benefício Portaria 211"),
+            ]:
+                entries.append({
+                    "title": title,
+                    "url": url,
+                    "summary": "Entrada direta para o capítulo temático correspondente, com texto legal em tela e análise aplicada.",
+                    "tags": f"MT Mato Grosso ICMS benefícios fiscais {tags}",
+                })
+            continue
         entries.append({
             "title": f"{name}: legislação de ICMS em tela",
             "url": index_path(uf),
@@ -2243,6 +2695,13 @@ def state_source_records() -> list[dict]:
                     if any(ref.get("source") == doc.get("source_id") for ref in chapter.get("refs", []))
                 ]
                 module_title = "Distrito Federal: ICMS e benefícios fiscais em tela"
+            elif uf == "MT":
+                used_chapters = [
+                    chapter["id"]
+                    for chapter in MT_CHAPTERS
+                    if any(ref.get("source") == doc.get("source_id") for ref in chapter.get("refs", []))
+                ]
+                module_title = "Mato Grosso: ICMS e benefícios fiscais em tela"
             else:
                 used_chapters = [group["id"] for group in GROUP_DEFS if doc_matches_group(doc, group)]
                 module_title = f"{STATE_NAMES.get(uf, uf)}: legislação de ICMS em tela"
