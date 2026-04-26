@@ -382,6 +382,23 @@ a.state-card:hover {
   grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
+.state-symbol {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 42px;
+}
+
+.state-symbol img {
+  width: 62px;
+  height: 42px;
+  object-fit: cover;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: var(--surface);
+  box-shadow: 0 5px 14px rgba(23, 32, 51, 0.08);
+}
+
 .state-card strong {
   display: inline-grid;
   width: 42px;

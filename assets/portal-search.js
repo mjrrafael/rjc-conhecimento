@@ -63,163 +63,163 @@ window.RJC_SEARCH = [
     "title": "Acre: ICMS e beneficios fiscais",
     "url": "estados/ac.html",
     "summary": "Pagina estadual estruturada para futura publicacao por UF, com foco em ICMS, beneficios, documento e prova.",
-    "tags": "AC Acre ICMS beneficios fiscais RICMS DECRETOS ICMS_ALIQUOTAS ICMS_BENEFICIOS ICMS_LEIS INSTRUCOES_NORMATIVAS LEIS OUTROS PORTARIAS RESOLUCOES RICMS"
+    "tags": "AC Acre Acre ICMS beneficios fiscais RICMS DECRETOS ICMS_ALIQUOTAS ICMS_BENEFICIOS ICMS_LEIS INSTRUCOES_NORMATIVAS LEIS OUTROS PORTARIAS RESOLUCOES RICMS"
   },
   {
     "title": "Alagoas: ICMS e beneficios fiscais",
     "url": "estados/al.html",
     "summary": "Pagina estadual estruturada para futura publicacao por UF, com foco em ICMS, beneficios, documento e prova.",
-    "tags": "AL Alagoas ICMS beneficios fiscais RICMS DECRETOS ICMS_LEIS ICMS_ST INSTRUCOES_NORMATIVAS ITCD LEIS OUTROS"
+    "tags": "AL Alagoas Alagoas ICMS beneficios fiscais RICMS DECRETOS ICMS_LEIS ICMS_ST INSTRUCOES_NORMATIVAS ITCD LEIS OUTROS"
   },
   {
-    "title": "Amapa: ICMS e beneficios fiscais",
+    "title": "Amapá: ICMS e beneficios fiscais",
     "url": "estados/ap.html",
     "summary": "Pagina estadual estruturada para futura publicacao por UF, com foco em ICMS, beneficios, documento e prova.",
-    "tags": "AP Amapa ICMS beneficios fiscais RICMS DECRETOS ICMS_ANEXOS ICMS_BENEFICIOS ICMS_LEIS ICMS_ST INSTRUCOES_NORMATIVAS IPVA ITCD LEIS OUTROS PORTARIAS RICMS TAXAS"
+    "tags": "AP Amapa Amapá ICMS beneficios fiscais RICMS DECRETOS ICMS_ANEXOS ICMS_BENEFICIOS ICMS_LEIS ICMS_ST INSTRUCOES_NORMATIVAS IPVA ITCD LEIS OUTROS PORTARIAS RICMS TAXAS"
   },
   {
     "title": "Amazonas: ICMS e beneficios fiscais",
     "url": "estados/am.html",
     "summary": "Pagina estadual estruturada para futura publicacao por UF, com foco em ICMS, beneficios, documento e prova.",
-    "tags": "AM Amazonas ICMS beneficios fiscais RICMS DECRETOS LEIS"
+    "tags": "AM Amazonas Amazonas ICMS beneficios fiscais RICMS DECRETOS LEIS"
   },
   {
     "title": "Bahia: ICMS e beneficios fiscais",
     "url": "estados/ba.html",
     "summary": "Pagina estadual estruturada para futura publicacao por UF, com foco em ICMS, beneficios, documento e prova.",
-    "tags": "BA Bahia ICMS beneficios fiscais RICMS DECRETOS ICMS_ANEXOS ICMS_LEIS IPVA ITCD OUTROS RICMS TAXAS"
+    "tags": "BA Bahia Bahia ICMS beneficios fiscais RICMS DECRETOS ICMS_ANEXOS ICMS_LEIS IPVA ITCD OUTROS RICMS TAXAS"
   },
   {
-    "title": "Ceara: ICMS e beneficios fiscais",
+    "title": "Ceará: ICMS e beneficios fiscais",
     "url": "estados/ce.html",
     "summary": "Pagina estadual estruturada para futura publicacao por UF, com foco em ICMS, beneficios, documento e prova.",
-    "tags": "CE Ceara ICMS beneficios fiscais RICMS DECRETOS INSTRUCOES_NORMATIVAS LEIS"
+    "tags": "CE Ceara Ceará ICMS beneficios fiscais RICMS DECRETOS INSTRUCOES_NORMATIVAS LEIS"
   },
   {
     "title": "Distrito Federal: ICMS e beneficios fiscais",
     "url": "estados/df.html",
     "summary": "Pagina estadual estruturada para futura publicacao por UF, com foco em ICMS, beneficios, documento e prova.",
-    "tags": "DF Distrito Federal ICMS beneficios fiscais RICMS DECRETOS INSTRUCOES_NORMATIVAS LEIS OUTROS PORTARIAS RESOLUCOES"
+    "tags": "DF Distrito Federal Distrito Federal ICMS beneficios fiscais RICMS DECRETOS INSTRUCOES_NORMATIVAS LEIS OUTROS PORTARIAS RESOLUCOES"
   },
   {
-    "title": "Espirito Santo: ICMS e beneficios fiscais",
+    "title": "Espírito Santo: ICMS e beneficios fiscais",
     "url": "estados/es.html",
     "summary": "Pagina estadual estruturada para futura publicacao por UF, com foco em ICMS, beneficios, documento e prova.",
-    "tags": "ES Espirito Santo ICMS beneficios fiscais RICMS LEIS OUTROS"
+    "tags": "ES Espirito Santo Espírito Santo ICMS beneficios fiscais RICMS LEIS OUTROS"
   },
   {
-    "title": "Goias: ICMS e beneficios fiscais",
+    "title": "Goiás: ICMS e beneficios fiscais",
     "url": "estados/goias.html",
     "summary": "Goias publicado com ICMS, beneficios fiscais, cBenef, RCTE, prova e leitura legal.",
-    "tags": "GO Goias ICMS beneficios fiscais RICMS DECRETOS ICMS_ANEXOS INSTRUCOES_NORMATIVAS OUTROS PORTARIAS"
+    "tags": "GO Goias Goiás ICMS beneficios fiscais RICMS DECRETOS ICMS_ANEXOS INSTRUCOES_NORMATIVAS OUTROS PORTARIAS"
   },
   {
-    "title": "Maranhao: ICMS e beneficios fiscais",
+    "title": "Maranhão: ICMS e beneficios fiscais",
     "url": "estados/ma.html",
     "summary": "Pagina estadual estruturada para futura publicacao por UF, com foco em ICMS, beneficios, documento e prova.",
-    "tags": "MA Maranhao ICMS beneficios fiscais RICMS ICMS_LEIS LEIS RICMS"
+    "tags": "MA Maranhao Maranhão ICMS beneficios fiscais RICMS ICMS_LEIS LEIS RICMS"
   },
   {
     "title": "Mato Grosso: ICMS e beneficios fiscais",
     "url": "estados/mt.html",
     "summary": "Pagina estadual estruturada para futura publicacao por UF, com foco em ICMS, beneficios, documento e prova.",
-    "tags": "MT Mato Grosso ICMS beneficios fiscais RICMS ICMS_ANEXOS ITCD OUTROS RICMS"
+    "tags": "MT Mato Grosso Mato Grosso ICMS beneficios fiscais RICMS ICMS_ANEXOS ITCD OUTROS RICMS"
   },
   {
     "title": "Mato Grosso do Sul: ICMS e beneficios fiscais",
     "url": "estados/ms.html",
     "summary": "Pagina estadual estruturada para futura publicacao por UF, com foco em ICMS, beneficios, documento e prova.",
-    "tags": "MS Mato Grosso do Sul ICMS beneficios fiscais RICMS "
+    "tags": "MS Mato Grosso do Sul Mato Grosso do Sul ICMS beneficios fiscais RICMS "
   },
   {
     "title": "Minas Gerais: ICMS e beneficios fiscais",
     "url": "estados/mg.html",
     "summary": "Pagina estadual estruturada para futura publicacao por UF, com foco em ICMS, beneficios, documento e prova.",
-    "tags": "MG Minas Gerais ICMS beneficios fiscais RICMS DECRETOS OUTROS RESOLUCOES"
+    "tags": "MG Minas Gerais Minas Gerais ICMS beneficios fiscais RICMS DECRETOS OUTROS RESOLUCOES"
   },
   {
-    "title": "Para: ICMS e beneficios fiscais",
+    "title": "Pará: ICMS e beneficios fiscais",
     "url": "estados/pa.html",
     "summary": "Pagina estadual estruturada para futura publicacao por UF, com foco em ICMS, beneficios, documento e prova.",
-    "tags": "PA Para ICMS beneficios fiscais RICMS OUTROS"
+    "tags": "PA Para Pará ICMS beneficios fiscais RICMS OUTROS"
   },
   {
-    "title": "Paraiba: ICMS e beneficios fiscais",
+    "title": "Paraíba: ICMS e beneficios fiscais",
     "url": "estados/pb.html",
     "summary": "Pagina estadual estruturada para futura publicacao por UF, com foco em ICMS, beneficios, documento e prova.",
-    "tags": "PB Paraiba ICMS beneficios fiscais RICMS ICMS_LEIS IPVA ITCD"
+    "tags": "PB Paraiba Paraíba ICMS beneficios fiscais RICMS ICMS_LEIS IPVA ITCD"
   },
   {
-    "title": "Parana: ICMS e beneficios fiscais",
+    "title": "Paraná: ICMS e beneficios fiscais",
     "url": "estados/pr.html",
     "summary": "Pagina estadual estruturada para futura publicacao por UF, com foco em ICMS, beneficios, documento e prova.",
-    "tags": "PR Parana ICMS beneficios fiscais RICMS DECRETOS IPVA ITCD LEIS OUTROS RESOLUCOES RESOLUCOES_PARTE2 RICMS"
+    "tags": "PR Parana Paraná ICMS beneficios fiscais RICMS DECRETOS IPVA ITCD LEIS OUTROS RESOLUCOES RESOLUCOES_PARTE2 RICMS"
   },
   {
     "title": "Pernambuco: ICMS e beneficios fiscais",
     "url": "estados/pe.html",
     "summary": "Pagina estadual estruturada para futura publicacao por UF, com foco em ICMS, beneficios, documento e prova.",
-    "tags": "PE Pernambuco ICMS beneficios fiscais RICMS ICMS_ALIQUOTAS ICMS_LEIS ICMS_ST IPVA ITCD LEIS OUTROS RICMS"
+    "tags": "PE Pernambuco Pernambuco ICMS beneficios fiscais RICMS ICMS_ALIQUOTAS ICMS_LEIS ICMS_ST IPVA ITCD LEIS OUTROS RICMS"
   },
   {
-    "title": "Piaui: ICMS e beneficios fiscais",
+    "title": "Piauí: ICMS e beneficios fiscais",
     "url": "estados/pi.html",
     "summary": "Pagina estadual estruturada para futura publicacao por UF, com foco em ICMS, beneficios, documento e prova.",
-    "tags": "PI Piaui ICMS beneficios fiscais RICMS DECRETOS ICMS_ANEXOS ICMS_LEIS IPVA ITCD PORTARIAS RICMS"
+    "tags": "PI Piaui Piauí ICMS beneficios fiscais RICMS DECRETOS ICMS_ANEXOS ICMS_LEIS IPVA ITCD PORTARIAS RICMS"
   },
   {
     "title": "Rio de Janeiro: ICMS e beneficios fiscais",
     "url": "estados/rj.html",
     "summary": "Pagina estadual estruturada para futura publicacao por UF, com foco em ICMS, beneficios, documento e prova.",
-    "tags": "RJ Rio de Janeiro ICMS beneficios fiscais RICMS DECRETOS RESOLUCOES RICMS"
+    "tags": "RJ Rio de Janeiro Rio de Janeiro ICMS beneficios fiscais RICMS DECRETOS RESOLUCOES RICMS"
   },
   {
     "title": "Rio Grande do Norte: ICMS e beneficios fiscais",
     "url": "estados/rn.html",
     "summary": "Pagina estadual estruturada para futura publicacao por UF, com foco em ICMS, beneficios, documento e prova.",
-    "tags": "RN Rio Grande do Norte ICMS beneficios fiscais RICMS ICMS_LEIS"
+    "tags": "RN Rio Grande do Norte Rio Grande do Norte ICMS beneficios fiscais RICMS ICMS_LEIS"
   },
   {
     "title": "Rio Grande do Sul: ICMS e beneficios fiscais",
     "url": "estados/rs.html",
     "summary": "Pagina estadual estruturada para futura publicacao por UF, com foco em ICMS, beneficios, documento e prova.",
-    "tags": "RS Rio Grande do Sul ICMS beneficios fiscais RICMS DECRETOS IPVA OUTROS RICMS"
+    "tags": "RS Rio Grande do Sul Rio Grande do Sul ICMS beneficios fiscais RICMS DECRETOS IPVA OUTROS RICMS"
   },
   {
-    "title": "Rondonia: ICMS e beneficios fiscais",
+    "title": "Rondônia: ICMS e beneficios fiscais",
     "url": "estados/ro.html",
     "summary": "Pagina estadual estruturada para futura publicacao por UF, com foco em ICMS, beneficios, documento e prova.",
-    "tags": "RO Rondonia ICMS beneficios fiscais RICMS ICMS_BENEFICIOS ICMS_LEIS IPVA ITCD RICMS"
+    "tags": "RO Rondonia Rondônia ICMS beneficios fiscais RICMS ICMS_BENEFICIOS ICMS_LEIS IPVA ITCD RICMS"
   },
   {
     "title": "Roraima: ICMS e beneficios fiscais",
     "url": "estados/rr.html",
     "summary": "Pagina estadual estruturada para futura publicacao por UF, com foco em ICMS, beneficios, documento e prova.",
-    "tags": "RR Roraima ICMS beneficios fiscais RICMS DECRETOS ICMS_ANEXOS ICMS_BENEFICIOS ICMS_LEIS IPVA ITCD LEIS OUTROS PORTARIAS RICMS"
+    "tags": "RR Roraima Roraima ICMS beneficios fiscais RICMS DECRETOS ICMS_ANEXOS ICMS_BENEFICIOS ICMS_LEIS IPVA ITCD LEIS OUTROS PORTARIAS RICMS"
   },
   {
     "title": "Santa Catarina: ICMS e beneficios fiscais",
     "url": "estados/sc.html",
     "summary": "Pagina estadual estruturada para futura publicacao por UF, com foco em ICMS, beneficios, documento e prova.",
-    "tags": "SC Santa Catarina ICMS beneficios fiscais RICMS DECRETOS ICMS_LEIS IPVA ITCD LEIS RICMS"
+    "tags": "SC Santa Catarina Santa Catarina ICMS beneficios fiscais RICMS DECRETOS ICMS_LEIS IPVA ITCD LEIS RICMS"
   },
   {
-    "title": "Sao Paulo: ICMS e beneficios fiscais",
+    "title": "São Paulo: ICMS e beneficios fiscais",
     "url": "estados/sp.html",
     "summary": "Pagina estadual estruturada para futura publicacao por UF, com foco em ICMS, beneficios, documento e prova.",
-    "tags": "SP Sao Paulo ICMS beneficios fiscais RICMS DECRETOS ICMS_LEIS ICMS_ST RICMS"
+    "tags": "SP Sao Paulo São Paulo ICMS beneficios fiscais RICMS DECRETOS ICMS_LEIS ICMS_ST RICMS"
   },
   {
     "title": "Sergipe: ICMS e beneficios fiscais",
     "url": "estados/se.html",
     "summary": "Pagina estadual estruturada para futura publicacao por UF, com foco em ICMS, beneficios, documento e prova.",
-    "tags": "SE Sergipe ICMS beneficios fiscais RICMS DECRETOS ICMS_LEIS LEIS OUTROS PORTARIAS RICMS"
+    "tags": "SE Sergipe Sergipe ICMS beneficios fiscais RICMS DECRETOS ICMS_LEIS LEIS OUTROS PORTARIAS RICMS"
   },
   {
     "title": "Tocantins: ICMS e beneficios fiscais",
     "url": "estados/to.html",
     "summary": "Pagina estadual estruturada para futura publicacao por UF, com foco em ICMS, beneficios, documento e prova.",
-    "tags": "TO Tocantins ICMS beneficios fiscais RICMS DECRETOS ICMS_ANEXOS ITCD LEIS PORTARIAS RICMS"
+    "tags": "TO Tocantins Tocantins ICMS beneficios fiscais RICMS DECRETOS ICMS_ANEXOS ITCD LEIS PORTARIAS RICMS"
   },
   {
     "title": "IOF: credito, cambio, seguro e titulos",

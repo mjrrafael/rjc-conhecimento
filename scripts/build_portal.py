@@ -24,6 +24,36 @@ ROOT = Path(__file__).resolve().parents[1]
 CATALOG = ROOT / "data" / "portal_catalog.json"
 INVENTORY = ROOT / "data" / "legal_inventory.json"
 
+STATE_DISPLAY_NAMES = {
+    "AC": "Acre",
+    "AL": "Alagoas",
+    "AP": "Amapá",
+    "AM": "Amazonas",
+    "BA": "Bahia",
+    "CE": "Ceará",
+    "DF": "Distrito Federal",
+    "ES": "Espírito Santo",
+    "GO": "Goiás",
+    "MA": "Maranhão",
+    "MT": "Mato Grosso",
+    "MS": "Mato Grosso do Sul",
+    "MG": "Minas Gerais",
+    "PA": "Pará",
+    "PB": "Paraíba",
+    "PR": "Paraná",
+    "PE": "Pernambuco",
+    "PI": "Piauí",
+    "RJ": "Rio de Janeiro",
+    "RN": "Rio Grande do Norte",
+    "RS": "Rio Grande do Sul",
+    "RO": "Rondônia",
+    "RR": "Roraima",
+    "SC": "Santa Catarina",
+    "SP": "São Paulo",
+    "SE": "Sergipe",
+    "TO": "Tocantins",
+}
+
 SIGNAL_LABELS = {
     "isencao": "Isenção",
     "reducao de base": "Redução de base",
@@ -590,6 +620,20 @@ def state_href(uf: str) -> str:
 
 def local_state_href(uf: str) -> str:
     return "goias.html" if uf == "GO" else f"{uf.lower()}.html"
+
+
+def state_display_name(state: dict) -> str:
+    return STATE_DISPLAY_NAMES.get(state["uf"], state["name"])
+
+
+def state_flag(path_prefix: str, uf: str, name: str) -> str:
+    src = f"{path_prefix}assets/flags/{uf.lower()}.svg"
+    return f"""
+  <div class="state-symbol">
+    <img src="{escape(src)}" alt="{escape(name)} - bandeira estadual" loading="lazy" decoding="async">
+    <strong>{escape(uf)}</strong>
+  </div>
+"""
 
 
 def inventory_state(data: dict, uf: str) -> dict:
@@ -1226,6 +1270,7 @@ def estados_index(data: dict) -> str:
     cards = []
     for state in data["states"]:
         inv = inventory_state(data, state["uf"])
+        display_name = state_display_name(state)
         href = local_state_href(state["uf"])
         klass = "featured" if state["uf"] == "GO" else ""
         if state["uf"] == "GO":
@@ -1241,9 +1286,9 @@ def estados_index(data: dict) -> str:
         )
         cards.append(f"""
 <a class="state-card {klass} searchable-card" href="{escape(href)}"
-   data-search="{escape(state["uf"] + " " + state["name"] + " ICMS beneficios fiscais " + " ".join(inv.get("categories", [])))}">
-  <strong>{escape(state["uf"])}</strong>
-  <h3>{escape(state["name"])}</h3>
+   data-search="{escape(state["uf"] + " " + state["name"] + " " + display_name + " ICMS beneficios fiscais " + " ".join(inv.get("categories", [])))}">
+  {state_flag("../", state["uf"], display_name)}
+  <h3>{escape(display_name)}</h3>
   <p>{escape(status)}</p>
   <small>{escape(coverage)}</small>
 </a>
@@ -1279,6 +1324,7 @@ def estados_index(data: dict) -> str:
 
 def state_page(state: dict, data: dict) -> str:
     inv = inventory_state(data, state["uf"])
+    display_name = state_display_name(state)
     verified_on = data["site"]["verified_on"]
     if state["uf"] == "GO":
         topic = next(t for t in data["topics"] if t["id"] == "goias-icms-beneficios")
@@ -1287,7 +1333,7 @@ def state_page(state: dict, data: dict) -> str:
     path = f'estados/{state["uf"].lower()}.html'
     if not inv.get("file_count", 0):
         body = f"""
-{hero(f'{state["name"]}: ICMS e beneficios fiscais', 'Pagina preservada para publicacao responsavel quando houver texto legal estadual suficiente para leitura publica.', state["uf"])}
+{hero(f'{display_name}: ICMS e beneficios fiscais', 'Pagina preservada para publicacao responsavel quando houver texto legal estadual suficiente para leitura publica.', state["uf"])}
 {state_inventory_sections(inv, verified_on, current_path=path)}
 <section class="continuity">
   <h2>Continuar com seguranca</h2>
@@ -1298,9 +1344,9 @@ def state_page(state: dict, data: dict) -> str:
   </div>
 </section>
 """
-        return layout(path, f'{state["name"]}: ICMS e beneficios fiscais', "Pagina estrutural por UF.", body, "estados")
+        return layout(path, f'{display_name}: ICMS e beneficios fiscais', "Pagina estrutural por UF.", body, "estados")
     body = f"""
-{hero(f'{state["name"]}: ICMS e beneficios fiscais', 'Leitura estadual: RICMS, leis, decretos, beneficios, aliquotas, ST, atos infralegais e prova.', state["uf"])}
+{hero(f'{display_name}: ICMS e beneficios fiscais', 'Leitura estadual: RICMS, leis, decretos, beneficios, aliquotas, ST, atos infralegais e prova.', state["uf"])}
 <section class="law-ledger">
   <div>
     <h2>Estado do estudo</h2>
@@ -1335,7 +1381,7 @@ def state_page(state: dict, data: dict) -> str:
   </div>
 </section>
 """
-    return layout(path, f'{state["name"]}: ICMS e beneficios fiscais', "Pagina estrutural por UF.", body, "estados")
+    return layout(path, f'{display_name}: ICMS e beneficios fiscais', "Pagina estrutural por UF.", body, "estados")
 
 
 def federal_index(data: dict) -> str:
@@ -1531,14 +1577,14 @@ def search_index(data: dict) -> str:
     ]
     entries += [
         {
-            "title": f'{state["name"]}: ICMS e beneficios fiscais',
+            "title": f'{state_display_name(state)}: ICMS e beneficios fiscais',
             "url": state_href(state["uf"]),
             "summary": (
                 "Goias publicado com ICMS, beneficios fiscais, cBenef, RCTE, prova e leitura legal."
                 if state["uf"] == "GO"
                 else "Pagina estadual estruturada para futura publicacao por UF, com foco em ICMS, beneficios, documento e prova."
             ),
-            "tags": f'{state["uf"]} {state["name"]} ICMS beneficios fiscais RICMS ' + " ".join(inventory_state(data, state["uf"]).get("categories", []))
+            "tags": f'{state["uf"]} {state["name"]} {state_display_name(state)} ICMS beneficios fiscais RICMS ' + " ".join(inventory_state(data, state["uf"]).get("categories", []))
         }
         for state in data["states"]
     ]
