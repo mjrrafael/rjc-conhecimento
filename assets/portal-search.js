@@ -242,8 +242,8 @@ window.RJC_SEARCH = [
   {
     "title": "Legislacao federal em tela",
     "url": "federal/legislacao/index.html",
-    "summary": "IRPJ, CSLL, IOF, IPI, PIS, Cofins, Folha e CLT por capitulos, com lei antes da analise.",
-    "tags": "IRPJ CSLL IOF IPI PIS Cofins Folha CLT previdencia legislacao integral"
+    "summary": "IRPJ, CSLL, IOF, IPI, PIS, Cofins, Reforma Tributaria, Folha e CLT por capitulos, com lei antes da analise.",
+    "tags": "IRPJ CSLL IOF IPI PIS Cofins Reforma Tributaria IBS CBS Imposto Seletivo Folha CLT previdencia legislacao integral"
   },
   {
     "title": "IRPJ: legislacao em tela",
@@ -510,6 +510,54 @@ window.RJC_SEARCH = [
     "tags": "folha-clt beneficios-previdenciarios-prova Beneficios previdenciarios, incapacidades e prova"
   },
   {
+    "title": "Reforma Tributaria: legislacao em tela",
+    "url": "federal/legislacao/reforma-tributaria/index.html",
+    "summary": "EC 132/2023, LC 214/2025 e LC 227/2026 organizadas por IBS, CBS, Imposto Seletivo, transicao, creditos, split payment, beneficios e governanca.",
+    "tags": "Federal reforma-tributaria ec-132-2023-reforma lc-214-2025-reforma lc-227-2026-cgibs"
+  },
+  {
+    "title": "Reforma Tributaria: legislacao em tela - Regra matriz do IBS e da CBS",
+    "url": "federal/legislacao/reforma-tributaria/matriz-ibs-cbs.html",
+    "summary": "Competencia, neutralidade, incidencia ampla sobre bens e servicos, sujeito passivo, definicoes e local da operacao.",
+    "tags": "reforma-tributaria matriz-ibs-cbs Regra matriz do IBS e da CBS"
+  },
+  {
+    "title": "Reforma Tributaria: legislacao em tela - Base de calculo, aliquotas e transicao",
+    "url": "federal/legislacao/reforma-tributaria/base-aliquotas-transicao.html",
+    "summary": "Como a lei constroi a base, fixa aliquotas de referencia e disciplina a convivencia de tributos antigos e novos.",
+    "tags": "reforma-tributaria base-aliquotas-transicao Base de calculo, aliquotas e transicao"
+  },
+  {
+    "title": "Reforma Tributaria: legislacao em tela - Creditos, recolhimento e split payment",
+    "url": "federal/legislacao/reforma-tributaria/creditos-recolhimento-split-payment.html",
+    "summary": "Extincao do debito, recolhimento, nao cumulatividade operacional e segregacao automatica do imposto no pagamento.",
+    "tags": "reforma-tributaria creditos-recolhimento-split-payment Creditos, recolhimento e split payment"
+  },
+  {
+    "title": "Reforma Tributaria: legislacao em tela - Regimes diferenciados, reducoes e beneficios",
+    "url": "federal/legislacao/reforma-tributaria/regimes-diferenciados-beneficios.html",
+    "summary": "Cesta basica, devolucoes, reducoes de aliquota, regimes especificos e tratamentos favorecidos previstos em lei.",
+    "tags": "reforma-tributaria regimes-diferenciados-beneficios Regimes diferenciados, reducoes e beneficios"
+  },
+  {
+    "title": "Reforma Tributaria: legislacao em tela - Imposto Seletivo",
+    "url": "federal/legislacao/reforma-tributaria/imposto-seletivo.html",
+    "summary": "Incidencia, nao incidencia, base, aliquotas, contribuinte, responsabilidade, apuracao e pagamento do IS.",
+    "tags": "reforma-tributaria imposto-seletivo Imposto Seletivo"
+  },
+  {
+    "title": "Reforma Tributaria: legislacao em tela - Comite Gestor, administracao e fiscalizacao",
+    "url": "federal/legislacao/reforma-tributaria/comite-gestor-fiscalizacao.html",
+    "summary": "Governanca do IBS, competencias administrativas, fiscalizacao integrada, cobranca e financiamento do CGIBS.",
+    "tags": "reforma-tributaria comite-gestor-fiscalizacao Comite Gestor, administracao e fiscalizacao"
+  },
+  {
+    "title": "Reforma Tributaria: legislacao em tela - Transicao, beneficios antigos e saldos de ICMS",
+    "url": "federal/legislacao/reforma-tributaria/transicao-icms-iss-beneficios-saldos.html",
+    "summary": "Extincao gradual de tributos, fundos de compensacao, beneficios onerosos, distribuicao da arrecadacao e saldos credores.",
+    "tags": "reforma-tributaria transicao-icms-iss-beneficios-saldos Transicao, beneficios antigos e saldos de ICMS"
+  },
+  {
     "title": "Goias: ICMS e beneficios fiscais em tela",
     "url": "estados/goias/legislacao/index.html",
     "summary": "RCTE, Anexo IX, cBenef, isencoes, reducoes, creditos outorgados, PROTEGE, ST e prova documental.",
@@ -706,6 +754,24 @@ window.RJC_SEARCH = [
     "url": "federal/legislacao/atos/lei-13097-2015-pis-cofins.html",
     "summary": "Tratamentos setoriais, aliquota zero e beneficios.",
     "tags": "lei-13097-2015-pis-cofins Federal Lei 13.097/2015"
+  },
+  {
+    "title": "Emenda Constitucional 132/2023 - Reforma Tributaria",
+    "url": "federal/legislacao/atos/ec-132-2023-reforma.html",
+    "summary": "Altera o Sistema Tributario Nacional, cria a arquitetura constitucional do IBS, CBS e Imposto Seletivo e disciplina a transicao.",
+    "tags": "ec-132-2023-reforma Federal EC 132/2023"
+  },
+  {
+    "title": "Lei Complementar 214/2025 - IBS, CBS e Imposto Seletivo",
+    "url": "federal/legislacao/atos/lc-214-2025-reforma.html",
+    "summary": "Institui IBS, CBS e Imposto Seletivo, organiza fato gerador, base, creditos, recolhimento, split payment, regimes diferenciados e transicao.",
+    "tags": "lc-214-2025-reforma Federal LC 214/2025"
+  },
+  {
+    "title": "Lei Complementar 227/2026 - Comite Gestor do IBS",
+    "url": "federal/legislacao/atos/lc-227-2026-cgibs.html",
+    "summary": "Institui o Comite Gestor do IBS, disciplina administracao integrada, fiscalizacao, distribuicao da arrecadacao e saldos credores de ICMS.",
+    "tags": "lc-227-2026-cgibs Federal LC 227/2026"
   },
   {
     "title": "Decreto GO 4.852/1997 - RCTE",

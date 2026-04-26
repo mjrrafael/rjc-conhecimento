@@ -628,6 +628,30 @@ SOURCE_DEFS: dict[str, dict] = {
         "files": ["Lei_13097_2015_Reducao_Zero_PIS_COFINS.txt"],
         "note": "Tratamentos setoriais, aliquota zero e beneficios.",
     },
+    "ec-132-2023-reforma": {
+        "jurisdiction": "Federal",
+        "title": "Emenda Constitucional 132/2023 - Reforma Tributaria",
+        "short": "EC 132/2023",
+        "url": "https://www.planalto.gov.br/ccivil_03/constituicao/emendas/emc/emc132.htm",
+        "files": ["EC_132_2023_Reforma_Tributaria.txt"],
+        "note": "Altera o Sistema Tributario Nacional, cria a arquitetura constitucional do IBS, CBS e Imposto Seletivo e disciplina a transicao.",
+    },
+    "lc-214-2025-reforma": {
+        "jurisdiction": "Federal",
+        "title": "Lei Complementar 214/2025 - IBS, CBS e Imposto Seletivo",
+        "short": "LC 214/2025",
+        "url": "https://www.planalto.gov.br/ccivil_03/leis/lcp/Lcp214compilado.htm",
+        "files": ["LC_214_2025_Compilada_IBS_CBS_IS.txt"],
+        "note": "Institui IBS, CBS e Imposto Seletivo, organiza fato gerador, base, creditos, recolhimento, split payment, regimes diferenciados e transicao.",
+    },
+    "lc-227-2026-cgibs": {
+        "jurisdiction": "Federal",
+        "title": "Lei Complementar 227/2026 - Comite Gestor do IBS",
+        "short": "LC 227/2026",
+        "url": "https://www.planalto.gov.br/ccivil_03/leis/lcp/Lcp227.htm",
+        "files": ["LC_227_2026_Comite_Gestor_IBS.txt"],
+        "note": "Institui o Comite Gestor do IBS, disciplina administracao integrada, fiscalizacao, distribuicao da arrecadacao e saldos credores de ICMS.",
+    },
     "rcte-go": {
         "jurisdiction": "GO",
         "title": "Decreto GO 4.852/1997 - RCTE",
@@ -1154,6 +1178,106 @@ LEGAL_MODULES: list[dict] = [
         ],
     },
     {
+        "id": "reforma-tributaria",
+        "jurisdiction": "Federal",
+        "title": "Reforma Tributaria: legislacao em tela",
+        "summary": "EC 132/2023, LC 214/2025 e LC 227/2026 organizadas por IBS, CBS, Imposto Seletivo, transicao, creditos, split payment, beneficios e governanca.",
+        "legacy": "federal/reforma-tributaria.html",
+        "sources": ["ec-132-2023-reforma", "lc-214-2025-reforma", "lc-227-2026-cgibs"],
+        "chapters": [
+            {
+                "id": "matriz-ibs-cbs",
+                "title": "Regra matriz do IBS e da CBS",
+                "summary": "Competencia, neutralidade, incidencia ampla sobre bens e servicos, sujeito passivo, definicoes e local da operacao.",
+                "refs": [
+                    {"source": "ec-132-2023-reforma", "ranges": [(156, 156), (195, 195)]},
+                    {"source": "lc-214-2025-reforma", "ranges": [(1, 18)]},
+                ],
+                "analysis": [
+                    "A Reforma muda a leitura de consumo: sai a logica fragmentada de tributos sobre mercadoria, servico e faturamento, e entra uma matriz ampla sobre operacoes com bens e servicos. O primeiro cuidado e separar competencia constitucional, lei complementar e regra operacional.",
+                    "Na pratica, compras, fiscal, cadastro e tecnologia precisam falar a mesma lingua: local da operacao, destinatario, documento fiscal, natureza do bem ou servico e tratamento da contraprestacao passam a ser pontos centrais de apuracao.",
+                ],
+            },
+            {
+                "id": "base-aliquotas-transicao",
+                "title": "Base de calculo, aliquotas e transicao",
+                "summary": "Como a lei constroi a base, fixa aliquotas de referencia e disciplina a convivencia de tributos antigos e novos.",
+                "refs": [
+                    {"source": "ec-132-2023-reforma", "ranges": [(21, 23)]},
+                    {"source": "lc-214-2025-reforma", "ranges": [(12, 18), (345, 365)]},
+                ],
+                "analysis": [
+                    "A aliquota da Reforma nao deve ser lida como um numero isolado. Ela depende da referencia definida em lei, do periodo de transicao, do ente competente e de eventuais reducoes ou regimes diferenciados.",
+                    "O impacto real aparece em preco, contrato, ERP, pedido, NF-e, contas a receber, contas a pagar e fluxo de caixa. A transicao exige memoria de calculo para demonstrar por que uma operacao ficou em determinado periodo, aliquota e tratamento.",
+                ],
+            },
+            {
+                "id": "creditos-recolhimento-split-payment",
+                "title": "Creditos, recolhimento e split payment",
+                "summary": "Extincao do debito, recolhimento, nao cumulatividade operacional e segregacao automatica do imposto no pagamento.",
+                "refs": [
+                    {"source": "lc-214-2025-reforma", "ranges": [(27, 68)]},
+                ],
+                "analysis": [
+                    "O credito deixa de ser apenas uma rotina contabil posterior. Com split payment e mecanismos de extincao do debito, o documento, o pagamento e a validacao do sistema se aproximam.",
+                    "A empresa precisa provar tres coisas: que a operacao ocorreu, que o tributo foi destacado ou tratado corretamente e que o credito ou recolhimento dialoga com o fluxo financeiro. Sem essa amarracao, o risco migra do imposto para a prova.",
+                ],
+            },
+            {
+                "id": "regimes-diferenciados-beneficios",
+                "title": "Regimes diferenciados, reducoes e beneficios",
+                "summary": "Cesta basica, devolucoes, reducoes de aliquota, regimes especificos e tratamentos favorecidos previstos em lei.",
+                "refs": [
+                    {"source": "ec-132-2023-reforma", "ranges": [(8, 10), (12, 12), (19, 19)]},
+                    {"source": "lc-214-2025-reforma", "ranges": [(101, 188), (234, 260)]},
+                ],
+                "analysis": [
+                    "Beneficio na Reforma continua sendo excecao legal, nao atalho comercial. A pergunta correta e: a operacao esta expressamente dentro da hipotese, no periodo e nas condicoes previstas?",
+                    "Para aplicar reducao, aliquota zero, regime especifico ou tratamento diferenciado, documente produto, servico, destinatario, finalidade, enquadramento legal, vigencia, reflexo no documento e memoria de calculo.",
+                ],
+            },
+            {
+                "id": "imposto-seletivo",
+                "title": "Imposto Seletivo",
+                "summary": "Incidencia, nao incidencia, base, aliquotas, contribuinte, responsabilidade, apuracao e pagamento do IS.",
+                "refs": [
+                    {"source": "lc-214-2025-reforma", "ranges": [(409, 433)]},
+                ],
+                "analysis": [
+                    "O Imposto Seletivo nao substitui a leitura do IBS e da CBS; ele adiciona uma camada sobre bens e servicos escolhidos pela lei. A materialidade, a base, a incidencia unica e as exclusoes precisam ser lidas antes de qualquer parametrizacao.",
+                    "No dia a dia, o risco nasce em NCM, enquadramento do produto, cadeia de fornecimento, exportacao, responsabilidade e centralizacao do pagamento. O cadastro fiscal deve registrar por que o item entra ou sai do campo do IS.",
+                ],
+            },
+            {
+                "id": "comite-gestor-fiscalizacao",
+                "title": "Comite Gestor, administracao e fiscalizacao",
+                "summary": "Governanca do IBS, competencias administrativas, fiscalizacao integrada, cobranca e financiamento do CGIBS.",
+                "refs": [
+                    {"source": "ec-132-2023-reforma", "ranges": [(156, 156)]},
+                    {"source": "lc-227-2026-cgibs", "ranges": [(1, 12), (47, 51)]},
+                ],
+                "analysis": [
+                    "O CGIBS e a peca de governanca do IBS. Para o contribuinte, isso significa que a operacao pode continuar local, mas a administracao, a uniformizacao e parte relevante da fiscalizacao passam a ter desenho integrado.",
+                    "Departamentos fiscal e juridico devem acompanhar regulamento unico, procedimentos de fiscalizacao, cobranca e contencioso. A prova precisa estar pronta para uma leitura coordenada entre entes.",
+                ],
+            },
+            {
+                "id": "transicao-icms-iss-beneficios-saldos",
+                "title": "Transicao, beneficios antigos e saldos de ICMS",
+                "summary": "Extincao gradual de tributos, fundos de compensacao, beneficios onerosos, distribuicao da arrecadacao e saldos credores.",
+                "refs": [
+                    {"source": "ec-132-2023-reforma", "ranges": [(12, 23)]},
+                    {"source": "lc-214-2025-reforma", "ranges": [(542, 544)]},
+                    {"source": "lc-227-2026-cgibs", "ranges": [(109, 117), (132, 134), (180, 182)]},
+                ],
+                "analysis": [
+                    "A transicao e o ponto em que a Reforma conversa diretamente com ICMS, ISS, PIS, Cofins e beneficios fiscais existentes. Nao basta saber quando o tributo novo entra; e preciso provar o que acontece com contratos, creditos, incentivos e saldos.",
+                    "Empresas com beneficio estadual, saldo credor relevante, operacoes incentivadas ou contratos longos devem construir dossie por periodo: norma antiga, norma nova, condicao cumprida, efeito financeiro e reflexo documental.",
+                ],
+            },
+        ],
+    },
+    {
         "id": "goias",
         "jurisdiction": "GO",
         "title": "Goias: ICMS e beneficios fiscais em tela",
@@ -1253,7 +1377,33 @@ TOPIC_TO_MODULES = {
     "federal-irpj-csll": ["irpj", "csll"],
     "federal-lucro-real": ["irpj", "csll"],
     "federal-lucro-presumido": ["irpj", "csll"],
+    "federal-reforma-tributaria": ["reforma-tributaria"],
     "folha-clt-previdencia": ["folha-clt"],
+}
+
+TOPIC_CHAPTER_LINKS = {
+    "federal-lucro-real": [
+        ("IRPJ: Lucro Real, adicoes, exclusoes e compensacoes", "irpj", "lucro-real"),
+        ("IRPJ: periodo de apuracao e regimes", "irpj", "apuracao-regimes"),
+        ("CSLL: compensacao, controles e prova", "csll", "compensacao-controles"),
+    ],
+    "federal-lucro-presumido": [
+        ("IRPJ: Lucro Presumido e segregacao de receitas", "irpj", "lucro-presumido"),
+        ("IRPJ: periodo de apuracao e regimes", "irpj", "apuracao-regimes"),
+        ("CSLL: base, aliquotas e ajustes", "csll", "aliquotas-ajustes"),
+    ],
+    "federal-irpj-csll": [
+        ("IRPJ: contribuintes e regra matriz", "irpj", "contribuintes-regra-matriz"),
+        ("IRPJ: Lucro Real", "irpj", "lucro-real"),
+        ("IRPJ: Lucro Presumido", "irpj", "lucro-presumido"),
+        ("CSLL: instituicao e base", "csll", "instituicao-base"),
+    ],
+    "federal-pis-cofins": [
+        ("PIS: regra geral e receita", "pis", "regra-geral"),
+        ("PIS: nao cumulatividade e creditos", "pis", "nao-cumulativo-creditos"),
+        ("Cofins: instituicao e receita", "cofins", "instituicao-receita"),
+        ("Cofins: nao cumulatividade e creditos", "cofins", "nao-cumulativo-creditos"),
+    ],
 }
 
 THEME_TO_MODULES = {
@@ -1261,7 +1411,10 @@ THEME_TO_MODULES = {
     "ipi": ["ipi"],
     "pis_cofins": ["pis", "cofins"],
     "irpj_csll": ["irpj", "csll"],
+    "regimes": ["irpj", "csll"],
+    "beneficios": ["pis", "cofins", "irpj", "csll", "reforma-tributaria"],
     "previdencia_folha": ["folha-clt"],
+    "reforma": ["reforma-tributaria"],
     "goias": ["goias"],
 }
 
@@ -1342,11 +1495,28 @@ SIGNAL_CHAPTER_MAP = {
         "suspensao": ["beneficios-previdenciarios-prova"],
         "protege/fundo": ["fgts-deposito-rescisao"],
     },
+    "reforma-tributaria": {
+        "aliquota": ["base-aliquotas-transicao", "regimes-diferenciados-beneficios"],
+        "isencao": ["regimes-diferenciados-beneficios"],
+        "suspensao": ["regimes-diferenciados-beneficios"],
+        "exportacao": ["imposto-seletivo", "regimes-diferenciados-beneficios"],
+        "nao incidencia": ["matriz-ibs-cbs", "imposto-seletivo"],
+        "credito outorgado": ["transicao-icms-iss-beneficios-saldos"],
+        "credito": ["creditos-recolhimento-split-payment", "transicao-icms-iss-beneficios-saldos"],
+        "regime especial": ["regimes-diferenciados-beneficios"],
+        "efd/sped": ["creditos-recolhimento-split-payment", "comite-gestor-fiscalizacao"],
+        "fundo/contrapartida": ["transicao-icms-iss-beneficios-saldos"],
+        "protege/fundo": ["transicao-icms-iss-beneficios-saldos"],
+    },
 }
 
 
 def module_by_id(module_id: str) -> dict:
     return next(module for module in LEGAL_MODULES if module["id"] == module_id)
+
+
+def chapter_by_id(module: dict, chapter_id: str) -> dict:
+    return next(chapter for chapter in module["chapters"] if chapter["id"] == chapter_id)
 
 
 def legal_signal_links(theme_id: str, signal_key: str, current_path: str) -> str:
@@ -1801,7 +1971,7 @@ def render_federal_hub(sources: dict, layout_func) -> str:
   <div>
     <span class="eyebrow">Federal v1</span>
     <h1>Legislacao federal em tela</h1>
-    <p>IRPJ, CSLL, IOF, IPI, PIS, Cofins, Folha e CLT organizados por capitulo, com texto legal antes da analise e link oficial do Planalto ou da Receita Federal em cada ato.</p>
+    <p>IRPJ, CSLL, IOF, IPI, PIS, Cofins, Reforma Tributaria, Folha e CLT organizados por capitulo, com texto legal antes da analise e link oficial do Planalto ou da Receita Federal em cada ato.</p>
   </div>
   <aside class="hero-proof">
     <strong>Escopo desta fase</strong>
@@ -1823,7 +1993,7 @@ def render_federal_hub(sources: dict, layout_func) -> str:
   </div>
 </section>
 """
-    return layout_func(path, "Legislacao federal em tela", "IRPJ, CSLL, IOF, IPI, PIS, Cofins, Folha e CLT.", body, "federal")
+    return layout_func(path, "Legislacao federal em tela", "IRPJ, CSLL, IOF, IPI, PIS, Cofins, Reforma Tributaria, Folha e CLT.", body, "federal")
 
 
 def build_legal_pages(layout_func) -> dict[str, str]:
@@ -1850,6 +2020,28 @@ def topic_has_legal_module(topic_id: str) -> bool:
 
 
 def legal_topic_teaser(topic_id: str, current_path: str) -> str:
+    chapter_links = TOPIC_CHAPTER_LINKS.get(topic_id, [])
+    if chapter_links:
+        links = []
+        for label, module_id, chapter_id in chapter_links:
+            module = module_by_id(module_id)
+            chapter = chapter_by_id(module, chapter_id)
+            links.append(
+                f'<a href="{escape(rel_href(current_path, module_chapter_path(module, chapter)))}">{escape(label)}</a>'
+            )
+        module_links = []
+        for module_id in TOPIC_TO_MODULES.get(topic_id, []):
+            module = module_by_id(module_id)
+            module_links.append(
+                f'<a href="{escape(rel_href(current_path, module_index_path(module)))}">{escape(module["title"])}</a>'
+            )
+        return f"""
+<section class="continuity legal-continuity">
+  <h2>Lei em tela por capitulo</h2>
+  <p>Comece pelo capitulo especifico do tema. Cada link abre texto legal em tela antes da interpretacao e da aplicacao operacional.</p>
+  <div>{''.join(links + module_links)}</div>
+</section>
+"""
     module_ids = TOPIC_TO_MODULES.get(topic_id, [])
     return legal_module_teaser(module_ids, current_path)
 
@@ -1877,10 +2069,10 @@ def legal_module_teaser(module_ids: list[str], current_path: str) -> str:
 def federal_legislation_card(current_path: str) -> str:
     return f"""
 <a class="portal-card featured searchable-card" href="{escape(rel_href(current_path, 'federal/legislacao/index.html'))}"
-   data-search="IRPJ CSLL IOF IPI PIS Cofins Folha CLT previdencia legislacao integral lei em tela">
+   data-search="IRPJ CSLL IOF IPI PIS Cofins Reforma Tributaria IBS CBS Imposto Seletivo Folha CLT previdencia legislacao integral lei em tela">
   <span class="card-kicker">Lei em tela</span>
   <h3>Federal: legislacao integral</h3>
-  <p>IRPJ, CSLL, IOF, IPI, PIS, Cofins, Folha e CLT em capitulos: primeiro a lei em tela, com link oficial, depois a analise.</p>
+  <p>IRPJ, CSLL, IOF, IPI, PIS, Cofins, Reforma Tributaria, Folha e CLT em capitulos: primeiro a lei em tela, com link oficial, depois a analise.</p>
   <small>fase federal publicada</small>
 </a>
 """
@@ -1903,8 +2095,8 @@ def legal_search_entries() -> list[dict[str, str]]:
         {
             "title": "Legislacao federal em tela",
             "url": "federal/legislacao/index.html",
-            "summary": "IRPJ, CSLL, IOF, IPI, PIS, Cofins, Folha e CLT por capitulos, com lei antes da analise.",
-            "tags": "IRPJ CSLL IOF IPI PIS Cofins Folha CLT previdencia legislacao integral",
+            "summary": "IRPJ, CSLL, IOF, IPI, PIS, Cofins, Reforma Tributaria, Folha e CLT por capitulos, com lei antes da analise.",
+            "tags": "IRPJ CSLL IOF IPI PIS Cofins Reforma Tributaria IBS CBS Imposto Seletivo Folha CLT previdencia legislacao integral",
         }
     ]
     for module in LEGAL_MODULES:

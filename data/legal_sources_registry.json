@@ -1,0 +1,1205 @@
+{
+  "schema": "rjc-legal-sources-v1",
+  "updated_on": "25/04/2026",
+  "editorial_rule": "Cada tese publicada deve apontar o ato oficial, manter o texto em tela e registrar o caminho de continuidade por tema.",
+  "change_workflow": [
+    "adicionar ou atualizar a fonte em scripts/legal_modules.py",
+    "vincular a fonte a modulo e capitulo",
+    "executar scripts/build_portal.py",
+    "executar scripts/export_legal_registry.py",
+    "executar scripts/audit_portal.py"
+  ],
+  "sources": [
+    {
+      "source_id": "anexo-ix-go",
+      "jurisdiction": "GO",
+      "title": "Anexo IX do RCTE/GO - Beneficios fiscais",
+      "short": "Anexo IX",
+      "official_url": "https://appasp.economia.go.gov.br/legislacao/arquivos/Rcte/Anexos/ANEXO_09_Beneficio_Fiscal.htm",
+      "storage": {
+        "type": "official_fetch",
+        "files": [],
+        "sha256": {},
+        "fetch_url": "https://appasp.economia.go.gov.br/legislacao/arquivos/Rcte/Anexos/ANEXO_09_Beneficio_Fiscal.htm"
+      },
+      "note": "Isencoes, reducoes, creditos outorgados, condicionantes e beneficios goianos.",
+      "render": "articles",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "goias",
+          "module_title": "Goias: ICMS e beneficios fiscais em tela",
+          "chapters": [
+            "beneficios-regra-maior",
+            "credito-outorgado",
+            "diferimento-st",
+            "isencoes",
+            "reducao-base"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "clt-1943",
+      "jurisdiction": "Federal",
+      "title": "Decreto-Lei 5.452/1943 - Consolidacao das Leis do Trabalho",
+      "short": "CLT",
+      "official_url": "https://www.planalto.gov.br/ccivil_03/Decreto-lei/Del5452.htm",
+      "storage": {
+        "type": "official_fetch",
+        "files": [],
+        "sha256": {},
+        "fetch_url": "https://www.planalto.gov.br/ccivil_03/Decreto-lei/Del5452.htm"
+      },
+      "note": "Texto compilado da CLT: relacao de emprego, contrato, jornada, salario, ferias, rescisao, seguranca e normas trabalhistas.",
+      "render": "articles",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "folha-clt",
+          "module_title": "Folha e CLT: legislacao em tela",
+          "chapters": [
+            "contrato-emprego-registro",
+            "jornada-descanso-ferias",
+            "salario-remuneracao-rescisao",
+            "seguranca-saude-afastamentos"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "decreto-3048-1999-rps",
+      "jurisdiction": "Federal",
+      "title": "Decreto 3.048/1999 - Regulamento da Previdencia Social",
+      "short": "RPS/1999",
+      "official_url": "https://www.planalto.gov.br/ccivil_03/decreto/D3048.htm",
+      "storage": {
+        "type": "official_fetch",
+        "files": [],
+        "sha256": {},
+        "fetch_url": "https://www.planalto.gov.br/ccivil_03/decreto/D3048.htm"
+      },
+      "note": "Regulamento do RGPS: segurados, beneficios, salario-de-contribuicao, arrecadacao e obrigações previdenciarias.",
+      "render": "articles",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "folha-clt",
+          "module_title": "Folha e CLT: legislacao em tela",
+          "chapters": [
+            "beneficios-previdenciarios-prova",
+            "custeio-previdenciario"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "decreto-6306-2007-iof",
+      "jurisdiction": "Federal",
+      "title": "Decreto 6.306/2007 - Regulamento do IOF",
+      "short": "Regulamento do IOF",
+      "official_url": "https://www.planalto.gov.br/ccivil_03/_ato2007-2010/2007/Decreto/D6306.htm",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "Decreto_6306_2007_Regulamento_IOF.txt"
+        ],
+        "sha256": {
+          "Decreto_6306_2007_Regulamento_IOF.txt": "64914cfea167e63822f3800d7d196a7f378cdbf3c690a46286308da1871ea38f"
+        },
+        "fetch_url": ""
+      },
+      "note": "Credito, cambio, seguro, titulos, responsaveis, cobranca e fiscalizacao.",
+      "render": "articles",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "iof",
+          "module_title": "IOF: legislacao em tela",
+          "chapters": [
+            "atualizacoes-risco",
+            "cambio-seguro",
+            "credito",
+            "titulos-valores"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "decreto-8373-2014-esocial",
+      "jurisdiction": "Federal",
+      "title": "Decreto 8.373/2014 - eSocial",
+      "short": "Decreto do eSocial",
+      "official_url": "https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2014/decreto/d8373.htm",
+      "storage": {
+        "type": "official_fetch",
+        "files": [],
+        "sha256": {},
+        "fetch_url": "https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2014/decreto/d8373.htm"
+      },
+      "note": "Institui o Sistema de Escrituracao Digital das Obrigacoes Fiscais, Previdenciarias e Trabalhistas.",
+      "render": "articles",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "folha-clt",
+          "module_title": "Folha e CLT: legislacao em tela",
+          "chapters": [
+            "esocial-obrigacoes-digitais"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "decretos-iof-2025",
+      "jurisdiction": "Federal",
+      "title": "Decretos de 2025 - Alteracoes recentes do IOF",
+      "short": "Alteracoes IOF 2025",
+      "official_url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/decreto/indice.htm",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "Decreto_12466_2025_IOF_Aliquotas.txt",
+          "Decreto_12467_2025_IOF_Alteracoes.txt",
+          "Decreto_12499_2025_IOF_Alteracoes2.txt"
+        ],
+        "sha256": {
+          "Decreto_12466_2025_IOF_Aliquotas.txt": "8c0e5391ad2526a8bbeb7bebd6cefbcb9e8081800253de2eb23f3fc51f99687b",
+          "Decreto_12467_2025_IOF_Alteracoes.txt": "1cb8ead1f6786787f8925bc42992ffb03932e515daeabc9fc52d529917219a35",
+          "Decreto_12499_2025_IOF_Alteracoes2.txt": "e7d01427001bb35c3aef6b64b40aea6a74dc775061fb24e0a15a08761cc2cf94"
+        },
+        "fetch_url": ""
+      },
+      "note": "Atos recentes de aliquota e vigencia.",
+      "render": "articles",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "iof",
+          "module_title": "IOF: legislacao em tela",
+          "chapters": [
+            "atualizacoes-risco"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "decretos-tipi-2025",
+      "jurisdiction": "Federal",
+      "title": "Decretos de 2025 - Atualizacoes da TIPI",
+      "short": "Atualizacoes TIPI 2025",
+      "official_url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/decreto/indice.htm",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "Decreto_12549_2025_TIPI_Atualizada.txt"
+        ],
+        "sha256": {
+          "Decreto_12549_2025_TIPI_Atualizada.txt": "4d3b9457d4ddad8685834a2f2372d57f455bdd2c4fc8981322cd26ba2ef25965"
+        },
+        "fetch_url": ""
+      },
+      "note": "Ajustes recentes de classificacao e aliquota.",
+      "render": "articles",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "ipi",
+          "module_title": "IPI: legislacao em tela",
+          "chapters": [
+            "tipi-aliquota"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "ec-132-2023-reforma",
+      "jurisdiction": "Federal",
+      "title": "Emenda Constitucional 132/2023 - Reforma Tributaria",
+      "short": "EC 132/2023",
+      "official_url": "https://www.planalto.gov.br/ccivil_03/constituicao/emendas/emc/emc132.htm",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "EC_132_2023_Reforma_Tributaria.txt"
+        ],
+        "sha256": {
+          "EC_132_2023_Reforma_Tributaria.txt": "103afd2c9843569e5d379fee25babecf06fc79ca9a2c21f22be3a765098feaad"
+        },
+        "fetch_url": ""
+      },
+      "note": "Altera o Sistema Tributario Nacional, cria a arquitetura constitucional do IBS, CBS e Imposto Seletivo e disciplina a transicao.",
+      "render": "articles",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "reforma-tributaria",
+          "module_title": "Reforma Tributaria: legislacao em tela",
+          "chapters": [
+            "base-aliquotas-transicao",
+            "comite-gestor-fiscalizacao",
+            "matriz-ibs-cbs",
+            "regimes-diferenciados-beneficios",
+            "transicao-icms-iss-beneficios-saldos"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "in-1518-2022-cbenef-go",
+      "jurisdiction": "GO",
+      "title": "IN 1.518/2022-GSE - Codigo de Beneficio Fiscal em Goias",
+      "short": "IN cBenef/GO",
+      "official_url": "https://appasp.economia.go.gov.br/Legislacao/arquivos/Secretario/IN/IN_1518_2022.htm",
+      "storage": {
+        "type": "official_fetch",
+        "files": [],
+        "sha256": {},
+        "fetch_url": "https://appasp.economia.go.gov.br/Legislacao/arquivos/Secretario/IN/IN_1518_2022.htm"
+      },
+      "note": "Tabela e uso do codigo de beneficio fiscal na NF-e e NFC-e.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "goias",
+          "module_title": "Goias: ICMS e beneficios fiscais em tela",
+          "chapters": [
+            "cbenef-prova"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "in-rfb-2121-2022-pis-cofins",
+      "jurisdiction": "Federal",
+      "title": "IN RFB 2.121/2022 - PIS/Pasep, Cofins e importacao",
+      "short": "IN RFB 2.121/2022",
+      "official_url": "https://normasinternet2.receita.fazenda.gov.br/#/consulta/externa/127905",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "IN_RFB_2121_2022_PIS_COFINS_Parte1.txt",
+          "IN_RFB_2121_2022_PIS_COFINS_Parte2.txt",
+          "IN_RFB_2121_2022_PIS_COFINS_Parte3.txt"
+        ],
+        "sha256": {
+          "IN_RFB_2121_2022_PIS_COFINS_Parte1.txt": "e98d9706116597869c7c38bac567c7d64fdf2adac3c123fba2f60d45438c2b1e",
+          "IN_RFB_2121_2022_PIS_COFINS_Parte2.txt": "156ac6aea549373aae7cc67b3fa3afbac9bd9008688fd473c698ac0bed3e0302",
+          "IN_RFB_2121_2022_PIS_COFINS_Parte3.txt": "c7c43516862d295e61a2d1adf87d49248cc62525eedbffd3a19cc5a7f0d2b63a"
+        },
+        "fetch_url": ""
+      },
+      "note": "Consolidacao normativa de PIS/Pasep, Cofins, importacao, regimes e obrigacoes.",
+      "render": "articles",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "pis",
+          "module_title": "PIS/Pasep: legislacao em tela",
+          "chapters": [
+            "beneficios-monofasico",
+            "cumulativo",
+            "importacao",
+            "nao-cumulativo-creditos",
+            "regra-geral"
+          ]
+        },
+        {
+          "module_id": "cofins",
+          "module_title": "Cofins: legislacao em tela",
+          "chapters": [
+            "beneficios-monofasico",
+            "cumulativo",
+            "instituicao-receita",
+            "nao-cumulativo-creditos"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "lc-214-2025-reforma",
+      "jurisdiction": "Federal",
+      "title": "Lei Complementar 214/2025 - IBS, CBS e Imposto Seletivo",
+      "short": "LC 214/2025",
+      "official_url": "https://www.planalto.gov.br/ccivil_03/leis/lcp/Lcp214compilado.htm",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "LC_214_2025_Compilada_IBS_CBS_IS.txt"
+        ],
+        "sha256": {
+          "LC_214_2025_Compilada_IBS_CBS_IS.txt": "d926cdfa4d7270a4e6b8088f274838f9fe70c32e98c890fe14f6091827cd2315"
+        },
+        "fetch_url": ""
+      },
+      "note": "Institui IBS, CBS e Imposto Seletivo, organiza fato gerador, base, creditos, recolhimento, split payment, regimes diferenciados e transicao.",
+      "render": "articles",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "reforma-tributaria",
+          "module_title": "Reforma Tributaria: legislacao em tela",
+          "chapters": [
+            "base-aliquotas-transicao",
+            "creditos-recolhimento-split-payment",
+            "imposto-seletivo",
+            "matriz-ibs-cbs",
+            "regimes-diferenciados-beneficios",
+            "transicao-icms-iss-beneficios-saldos"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "lc-227-2026-cgibs",
+      "jurisdiction": "Federal",
+      "title": "Lei Complementar 227/2026 - Comite Gestor do IBS",
+      "short": "LC 227/2026",
+      "official_url": "https://www.planalto.gov.br/ccivil_03/leis/lcp/Lcp227.htm",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "LC_227_2026_Comite_Gestor_IBS.txt"
+        ],
+        "sha256": {
+          "LC_227_2026_Comite_Gestor_IBS.txt": "f33b484e98df0e66f2117b710686aed2dd45ecee9460a2af10c89d90ff077ed6"
+        },
+        "fetch_url": ""
+      },
+      "note": "Institui o Comite Gestor do IBS, disciplina administracao integrada, fiscalizacao, distribuicao da arrecadacao e saldos credores de ICMS.",
+      "render": "articles",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "reforma-tributaria",
+          "module_title": "Reforma Tributaria: legislacao em tela",
+          "chapters": [
+            "comite-gestor-fiscalizacao",
+            "transicao-icms-iss-beneficios-saldos"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "lc-70-1991-cofins",
+      "jurisdiction": "Federal",
+      "title": "Lei Complementar 70/1991 - Cofins",
+      "short": "LC 70/1991",
+      "official_url": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp70.htm",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "LC_70_1991_COFINS_Original.txt"
+        ],
+        "sha256": {
+          "LC_70_1991_COFINS_Original.txt": "184f11f9c6c6cb50263647b1b06bf53f09e0cf502b8159f62fe8d6b3439d8c24"
+        },
+        "fetch_url": ""
+      },
+      "note": "Instituicao da Cofins.",
+      "render": "articles",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "cofins",
+          "module_title": "Cofins: legislacao em tela",
+          "chapters": [
+            "instituicao-receita"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "lei-10637-2002-pis",
+      "jurisdiction": "Federal",
+      "title": "Lei 10.637/2002 - PIS/Pasep nao cumulativo",
+      "short": "Lei 10.637/2002",
+      "official_url": "https://www.planalto.gov.br/ccivil_03/leis/2002/l10637.htm",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "Lei_10637_2002_PIS_Nao_Cumulativo.txt"
+        ],
+        "sha256": {
+          "Lei_10637_2002_PIS_Nao_Cumulativo.txt": "338fb3f5d770a3552b270b2f05ef94f33cca771371f3b343e9fc87bbf00d21dd"
+        },
+        "fetch_url": ""
+      },
+      "note": "Nao cumulatividade do PIS/Pasep, creditos e regras correlatas.",
+      "render": "articles",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "pis",
+          "module_title": "PIS/Pasep: legislacao em tela",
+          "chapters": [
+            "nao-cumulativo-creditos"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "lei-10833-2003-cofins",
+      "jurisdiction": "Federal",
+      "title": "Lei 10.833/2003 - Cofins nao cumulativa",
+      "short": "Lei 10.833/2003",
+      "official_url": "https://www.planalto.gov.br/ccivil_03/leis/2003/l10.833.htm",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "Lei_10833_2003_Compilada_COFINS.txt"
+        ],
+        "sha256": {
+          "Lei_10833_2003_Compilada_COFINS.txt": "287e515301961c290a73c19b936cce22b56de22c99663f8ef35e8c09eab47aea"
+        },
+        "fetch_url": ""
+      },
+      "note": "Nao cumulatividade da Cofins, creditos, retencoes e regras correlatas.",
+      "render": "articles",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "cofins",
+          "module_title": "Cofins: legislacao em tela",
+          "chapters": [
+            "importacao-retencoes",
+            "nao-cumulativo-creditos"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "lei-10865-2004-pis-cofins-importacao",
+      "jurisdiction": "Federal",
+      "title": "Lei 10.865/2004 - PIS/Cofins-Importacao",
+      "short": "Lei 10.865/2004",
+      "official_url": "https://www.planalto.gov.br/ccivil_03/_ato2004-2006/2004/lei/l10.865.htm",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "Lei_10865_2004_PIS_COFINS_Importacao.txt"
+        ],
+        "sha256": {
+          "Lei_10865_2004_PIS_COFINS_Importacao.txt": "e5a85dbbf20e5b759385bbdbe29f84bddece09ca75a70f9c6848907ec905d736"
+        },
+        "fetch_url": ""
+      },
+      "note": "Importacao de bens e servicos, base, aliquota, contribuinte e creditos.",
+      "render": "articles",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "pis",
+          "module_title": "PIS/Pasep: legislacao em tela",
+          "chapters": [
+            "importacao"
+          ]
+        },
+        {
+          "module_id": "cofins",
+          "module_title": "Cofins: legislacao em tela",
+          "chapters": [
+            "importacao-retencoes"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "lei-13097-2015-pis-cofins",
+      "jurisdiction": "Federal",
+      "title": "Lei 13.097/2015 - Reducoes a zero e regimes setoriais",
+      "short": "Lei 13.097/2015",
+      "official_url": "https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2015/lei/l13097.htm",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "Lei_13097_2015_Reducao_Zero_PIS_COFINS.txt"
+        ],
+        "sha256": {
+          "Lei_13097_2015_Reducao_Zero_PIS_COFINS.txt": "044aca49e1caf0906ebd47faedb230e20d59a8926cfbb849f71a9b9cae856877"
+        },
+        "fetch_url": ""
+      },
+      "note": "Tratamentos setoriais, aliquota zero e beneficios.",
+      "render": "articles",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "pis",
+          "module_title": "PIS/Pasep: legislacao em tela",
+          "chapters": [
+            "beneficios-monofasico"
+          ]
+        },
+        {
+          "module_id": "cofins",
+          "module_title": "Cofins: legislacao em tela",
+          "chapters": [
+            "beneficios-monofasico"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "lei-15079-2024-csll",
+      "jurisdiction": "Federal",
+      "title": "Lei 15.079/2024 - Adicional da CSLL",
+      "short": "Lei 15.079/2024",
+      "official_url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2024/lei/l15079.htm",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "Lei_15079_2024_Adicional_CSLL.txt"
+        ],
+        "sha256": {
+          "Lei_15079_2024_Adicional_CSLL.txt": "b8979580bec1a3c42fc9eea19bd43619fa97307be941473310f5f5259e373b72"
+        },
+        "fetch_url": ""
+      },
+      "note": "Adicional da CSLL e controles especificos.",
+      "render": "articles",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "csll",
+          "module_title": "CSLL: legislacao em tela",
+          "chapters": [
+            "adicional-csll"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "lei-5143-1966-iof",
+      "jurisdiction": "Federal",
+      "title": "Lei 5.143/1966 - Instituicao do IOF",
+      "short": "Lei do IOF",
+      "official_url": "https://www.planalto.gov.br/ccivil_03/leis/l5143.htm",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "Lei_5143_1966_IOF_Original.txt"
+        ],
+        "sha256": {
+          "Lei_5143_1966_IOF_Original.txt": "d4641eec06717f618c7ba32d99e2a3c938a2ae9ecf12e4d47f5b90286f815744"
+        },
+        "fetch_url": ""
+      },
+      "note": "Norma matriz do IOF.",
+      "render": "articles",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "iof",
+          "module_title": "IOF: legislacao em tela",
+          "chapters": [
+            "matriz-aliquotas"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "lei-7689-1988-csll",
+      "jurisdiction": "Federal",
+      "title": "Lei 7.689/1988 - Contribuicao Social sobre o Lucro Liquido",
+      "short": "Lei da CSLL",
+      "official_url": "https://www.planalto.gov.br/ccivil_03/leis/l7689.htm",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "Lei_7689_1988_CSLL_Original.txt"
+        ],
+        "sha256": {
+          "Lei_7689_1988_CSLL_Original.txt": "8718f91a6b04161b322721c2f367b97589c700387df1ac5d05e69509175f8dc2"
+        },
+        "fetch_url": ""
+      },
+      "note": "Instituicao, base e regras centrais da CSLL.",
+      "render": "articles",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "csll",
+          "module_title": "CSLL: legislacao em tela",
+          "chapters": [
+            "aliquotas-ajustes",
+            "instituicao-base"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "lei-7798-1989-ipi",
+      "jurisdiction": "Federal",
+      "title": "Lei 7.798/1989 - IPI e classificacao de produtos",
+      "short": "Lei 7.798/1989",
+      "official_url": "https://www.planalto.gov.br/ccivil_03/leis/l7798.htm",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "Lei_7798_1989_IPI_Alteracoes.txt"
+        ],
+        "sha256": {
+          "Lei_7798_1989_IPI_Alteracoes.txt": "d4e621babf56620e3ef93d2234e746131b8aabd5490a4f254e9e24e295ed627e"
+        },
+        "fetch_url": ""
+      },
+      "note": "Regras legais de IPI ligadas a produtos e tributacao.",
+      "render": "articles",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "ipi",
+          "module_title": "IPI: legislacao em tela",
+          "chapters": []
+        }
+      ]
+    },
+    {
+      "source_id": "lei-8036-1990-fgts",
+      "jurisdiction": "Federal",
+      "title": "Lei 8.036/1990 - Fundo de Garantia do Tempo de Servico",
+      "short": "Lei 8.036/1990",
+      "official_url": "https://www.planalto.gov.br/ccivil_03/leis/L8036consol.htm",
+      "storage": {
+        "type": "official_fetch",
+        "files": [],
+        "sha256": {},
+        "fetch_url": "https://www.planalto.gov.br/ccivil_03/leis/L8036consol.htm"
+      },
+      "note": "Regime legal do FGTS: contas vinculadas, depositos, movimentacao, rescisao, fiscalizacao e penalidades.",
+      "render": "articles",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "folha-clt",
+          "module_title": "Folha e CLT: legislacao em tela",
+          "chapters": [
+            "fgts-deposito-rescisao"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "lei-8212-1991-custeio",
+      "jurisdiction": "Federal",
+      "title": "Lei 8.212/1991 - Custeio da Seguridade Social",
+      "short": "Lei 8.212/1991",
+      "official_url": "https://www.planalto.gov.br/ccivil_03/leis/L8212cons.htm",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "Lei_8212_1991_Custeio_Previdencia.txt"
+        ],
+        "sha256": {
+          "Lei_8212_1991_Custeio_Previdencia.txt": "e6f24c2dd0b522dfe83c3ef08eabd142deeadd8476b6dce19e22a7b241d3cd6c"
+        },
+        "fetch_url": ""
+      },
+      "note": "Custeio previdenciario, segurados, empresa, contribuicoes sobre folha, obrigacoes, arrecadacao e prova.",
+      "render": "articles",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "folha-clt",
+          "module_title": "Folha e CLT: legislacao em tela",
+          "chapters": [
+            "custeio-previdenciario",
+            "esocial-obrigacoes-digitais"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "lei-8213-1991-beneficios",
+      "jurisdiction": "Federal",
+      "title": "Lei 8.213/1991 - Planos de Beneficios da Previdencia Social",
+      "short": "Lei 8.213/1991",
+      "official_url": "https://www.planalto.gov.br/ccivil_03/LEIS/L8213cons.htm",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "Lei_8213_1991_Beneficios_Previdencia.txt"
+        ],
+        "sha256": {
+          "Lei_8213_1991_Beneficios_Previdencia.txt": "5b3101cf7dcc95ae11533b189d670750dd22a0ff8b01fac029a6b0d0ee9d37ff"
+        },
+        "fetch_url": ""
+      },
+      "note": "Beneficios previdenciarios, incapacidade, acidente do trabalho, estabilidade e deveres informacionais.",
+      "render": "articles",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "folha-clt",
+          "module_title": "Folha e CLT: legislacao em tela",
+          "chapters": [
+            "beneficios-previdenciarios-prova",
+            "seguranca-saude-afastamentos"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "lei-8387-1991-zfm-ipi",
+      "jurisdiction": "Federal",
+      "title": "Lei 8.387/1991 - Zona Franca de Manaus e IPI",
+      "short": "ZFM e IPI",
+      "official_url": "https://www.planalto.gov.br/ccivil_03/leis/l8387.htm",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "Lei_8387_1991_ZFM_IPI_Isento.txt"
+        ],
+        "sha256": {
+          "Lei_8387_1991_ZFM_IPI_Isento.txt": "79931857949c510648b24f7ddf4e7c386e7af93b871b13a1836889b830c7e6dc"
+        },
+        "fetch_url": ""
+      },
+      "note": "Beneficios e condicionantes de IPI em area incentivada.",
+      "render": "articles",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "ipi",
+          "module_title": "IPI: legislacao em tela",
+          "chapters": [
+            "suspensoes-isencoes"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "lei-8894-1994-iof",
+      "jurisdiction": "Federal",
+      "title": "Lei 8.894/1994 - Aliquotas do IOF",
+      "short": "Lei 8.894/1994",
+      "official_url": "https://www.planalto.gov.br/ccivil_03/leis/l8894.htm",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "Lei_8894_1994_IOF_Aliquotas.txt"
+        ],
+        "sha256": {
+          "Lei_8894_1994_IOF_Aliquotas.txt": "ae252e16dfec157797dae9490061a6dc16b24a51b4b4769d225dd3cebc45691d"
+        },
+        "fetch_url": ""
+      },
+      "note": "Competencia para alteracao de aliquotas e limites.",
+      "render": "articles",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "iof",
+          "module_title": "IOF: legislacao em tela",
+          "chapters": [
+            "matriz-aliquotas"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "lei-8981-1995-regimes",
+      "jurisdiction": "Federal",
+      "title": "Lei 8.981/1995 - Lucro real, presumido, arbitrado e receitas",
+      "short": "Lei 8.981/1995",
+      "official_url": "https://www.planalto.gov.br/ccivil_03/leis/l8981.htm",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "Lei_8981_1995_Lucro_Real_Presumido.txt"
+        ],
+        "sha256": {
+          "Lei_8981_1995_Lucro_Real_Presumido.txt": "7d53e23950872eeec693912c6c8fcae1e70e283bcf6b11230354776307853791"
+        },
+        "fetch_url": ""
+      },
+      "note": "Regimes e bases de apuracao usados na leitura de IRPJ e CSLL.",
+      "render": "articles",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "irpj",
+          "module_title": "IRPJ: legislacao em tela",
+          "chapters": [
+            "apuracao-regimes"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "lei-9065-1995-irpj",
+      "jurisdiction": "Federal",
+      "title": "Lei 9.065/1995 - IRPJ, compensacao e limites",
+      "short": "Lei 9.065/1995",
+      "official_url": "https://www.planalto.gov.br/ccivil_03/leis/l9065.htm",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "Lei_9065_1995_IRPJ_Aliquotas.txt"
+        ],
+        "sha256": {
+          "Lei_9065_1995_IRPJ_Aliquotas.txt": "099bee538d4194341c2a6afb7010280c76909c11ff65f716c63c95cf9a3e8e06"
+        },
+        "fetch_url": ""
+      },
+      "note": "Aliquotas, compensacoes e limites relevantes a fechamento.",
+      "render": "articles",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "irpj",
+          "module_title": "IRPJ: legislacao em tela",
+          "chapters": []
+        },
+        {
+          "module_id": "csll",
+          "module_title": "CSLL: legislacao em tela",
+          "chapters": [
+            "compensacao-controles"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "lei-9249-1995-irpj-csll",
+      "jurisdiction": "Federal",
+      "title": "Lei 9.249/1995 - IRPJ, CSLL, juros sobre capital proprio e ajustes",
+      "short": "Lei 9.249/1995",
+      "official_url": "https://www.planalto.gov.br/ccivil_03/leis/l9249.htm",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "Lei_9249_1995_IRPJ_CSLL.txt"
+        ],
+        "sha256": {
+          "Lei_9249_1995_IRPJ_CSLL.txt": "05220e37a823ff62ffb6e3480bf7899621d359badf0638b035ded158dc91442e"
+        },
+        "fetch_url": ""
+      },
+      "note": "Base de IRPJ/CSLL, JCP, deducoes, dividendos e regras correlatas.",
+      "render": "articles",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "irpj",
+          "module_title": "IRPJ: legislacao em tela",
+          "chapters": [
+            "beneficios-jcp-prova",
+            "lucro-presumido"
+          ]
+        },
+        {
+          "module_id": "csll",
+          "module_title": "CSLL: legislacao em tela",
+          "chapters": [
+            "aliquotas-ajustes"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "lei-9430-1996-irpj",
+      "jurisdiction": "Federal",
+      "title": "Lei 9.430/1996 - Administracao tributaria, IRPJ e CSLL",
+      "short": "Lei 9.430/1996",
+      "official_url": "https://www.planalto.gov.br/ccivil_03/leis/l9430.htm",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "Lei_9430_1996_Compilada_IRPJ.txt"
+        ],
+        "sha256": {
+          "Lei_9430_1996_Compilada_IRPJ.txt": "fa2c04f9ac3c7d9d0fd0b32783983f0499e06a6e2dd8a0306f29be3a50ab9856"
+        },
+        "fetch_url": ""
+      },
+      "note": "Apuracao, estimativas, compensacao, multa, juros e controles.",
+      "render": "articles",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "irpj",
+          "module_title": "IRPJ: legislacao em tela",
+          "chapters": [
+            "lucro-real"
+          ]
+        },
+        {
+          "module_id": "csll",
+          "module_title": "CSLL: legislacao em tela",
+          "chapters": [
+            "compensacao-controles"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "lei-9715-1998-pis",
+      "jurisdiction": "Federal",
+      "title": "Lei 9.715/1998 - PIS/Pasep",
+      "short": "Lei 9.715/1998",
+      "official_url": "https://www.planalto.gov.br/ccivil_03/leis/l9715.htm",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "Lei_9715_1998_PIS_Base_Contributiva.txt"
+        ],
+        "sha256": {
+          "Lei_9715_1998_PIS_Base_Contributiva.txt": "4c874044314d9cd682928f62ee767d003686cf147bceb181b22b49812d09bfeb"
+        },
+        "fetch_url": ""
+      },
+      "note": "Base legal geral do PIS/Pasep.",
+      "render": "articles",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "pis",
+          "module_title": "PIS/Pasep: legislacao em tela",
+          "chapters": [
+            "regra-geral"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "lei-9718-1998-pis-cofins",
+      "jurisdiction": "Federal",
+      "title": "Lei 9.718/1998 - PIS/Cofins no regime cumulativo",
+      "short": "Lei 9.718/1998",
+      "official_url": "https://www.planalto.gov.br/ccivil_03/leis/l9718.htm",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "Lei_9718_1998_COFINS_Compilada.txt"
+        ],
+        "sha256": {
+          "Lei_9718_1998_COFINS_Compilada.txt": "7c86425c9a70a6d5fdcb2d67053a71d4f2bab8519be5bc7d191b692a93b026ad"
+        },
+        "fetch_url": ""
+      },
+      "note": "Receita bruta, cumulatividade e regras de PIS/Cofins.",
+      "render": "articles",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "pis",
+          "module_title": "PIS/Pasep: legislacao em tela",
+          "chapters": [
+            "cumulativo"
+          ]
+        },
+        {
+          "module_id": "cofins",
+          "module_title": "Cofins: legislacao em tela",
+          "chapters": [
+            "cumulativo"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "rcte-go",
+      "jurisdiction": "GO",
+      "title": "Decreto GO 4.852/1997 - RCTE",
+      "short": "RCTE/GO",
+      "official_url": "https://appasp.economia.go.gov.br/legislacao/arquivos/RCTE/RCTE.htm",
+      "storage": {
+        "type": "official_fetch",
+        "files": [],
+        "sha256": {},
+        "fetch_url": "https://appasp.economia.go.gov.br/legislacao/arquivos/RCTE/RCTE.htm"
+      },
+      "note": "Regulamento do Codigo Tributario de Goias, com ICMS, beneficios e documento fiscal.",
+      "render": "articles",
+      "source_ranges": [
+        [
+          1,
+          107
+        ],
+        [
+          167,
+          167
+        ],
+        [
+          167,
+          168
+        ],
+        [
+          520,
+          540
+        ]
+      ],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "goias",
+          "module_title": "Goias: ICMS e beneficios fiscais em tela",
+          "chapters": [
+            "base-aliquota-apuracao",
+            "beneficios-regra-maior",
+            "cbenef-prova",
+            "diferimento-st",
+            "icms-regra-geral"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "ripi-2010",
+      "jurisdiction": "Federal",
+      "title": "Decreto 7.212/2010 - Regulamento do IPI",
+      "short": "RIPI/2010",
+      "official_url": "https://www.planalto.gov.br/ccivil_03/_ato2007-2010/2010/decreto/d7212.htm",
+      "storage": {
+        "type": "official_fetch",
+        "files": [],
+        "sha256": {},
+        "fetch_url": "https://www.planalto.gov.br/ccivil_03/_ato2007-2010/2010/decreto/d7212.htm"
+      },
+      "note": "Regulamento vigente da cobranca, fiscalizacao, arrecadacao e administracao do IPI.",
+      "render": "articles",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "ipi",
+          "module_title": "IPI: legislacao em tela",
+          "chapters": [
+            "contribuintes-equiparados",
+            "creditos-obrigacoes",
+            "materialidade-industrializacao",
+            "suspensoes-isencoes"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "rir-2018-pj",
+      "jurisdiction": "Federal",
+      "title": "Decreto 9.580/2018 - Regulamento do Imposto sobre a Renda",
+      "short": "RIR/2018",
+      "official_url": "https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/decreto/d9580.htm",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "Decreto_9580_2018_Regulamento_IRPJ.txt"
+        ],
+        "sha256": {
+          "Decreto_9580_2018_Regulamento_IRPJ.txt": "6f719da265ae0cb60d7c1e36038a66900fbac184502f0abc9174ee2f51378f2b"
+        },
+        "fetch_url": ""
+      },
+      "note": "Livro II e dispositivos de pessoa juridica, regimes, pagamento e Lalur.",
+      "render": "articles",
+      "source_ranges": [
+        [
+          158,
+          204
+        ],
+        [
+          217,
+          386
+        ],
+        [
+          500,
+          540
+        ],
+        [
+          578,
+          610
+        ],
+        [
+          919,
+          925
+        ],
+        [
+          1010,
+          1010
+        ]
+      ],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "irpj",
+          "module_title": "IRPJ: legislacao em tela",
+          "chapters": [
+            "apuracao-regimes",
+            "beneficios-jcp-prova",
+            "contribuintes-regra-matriz",
+            "lucro-presumido",
+            "lucro-real"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "tipi-2022",
+      "jurisdiction": "Federal",
+      "title": "TIPI vigente - Tabela de Incidencia do IPI",
+      "short": "TIPI",
+      "official_url": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2022/decreto/d11158.htm",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "TIPI_Vigente_2022_Parte1.txt",
+          "TIPI_Vigente_2022_Parte2.txt",
+          "TIPI_Vigente_2022_Parte3.txt"
+        ],
+        "sha256": {
+          "TIPI_Vigente_2022_Parte1.txt": "c87cf25dcc17eff13481f1d8e6b03939d1b375fc57047c1033e2e948fcd65201",
+          "TIPI_Vigente_2022_Parte2.txt": "04b69ba0e8996bb0979d9d1725fef0c72e24227598a6f74d759ebe2a8713dc1f",
+          "TIPI_Vigente_2022_Parte3.txt": "5b78e8eb438856077685a62da9b6af20b8857354c8d9887336d487c09886ad22"
+        },
+        "fetch_url": ""
+      },
+      "note": "Tabela de classificacao e aliquotas do IPI.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "ipi",
+          "module_title": "IPI: legislacao em tela",
+          "chapters": [
+            "tipi-aliquota"
+          ]
+        }
+      ]
+    }
+  ]
+}

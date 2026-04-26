@@ -54,6 +54,22 @@ STATE_DISPLAY_NAMES = {
     "TO": "Tocantins",
 }
 
+STATE_REGIONS = [
+    ("centro-oeste", "Centro-Oeste", ["DF", "GO", "MT", "MS"]),
+    ("sudeste", "Sudeste", ["ES", "MG", "RJ", "SP"]),
+    ("sul", "Sul", ["PR", "RS", "SC"]),
+    ("nordeste", "Nordeste", ["AL", "BA", "CE", "MA", "PB", "PE", "PI", "RN", "SE"]),
+    ("norte", "Norte", ["AC", "AP", "AM", "PA", "RO", "RR", "TO"]),
+]
+
+STATE_REGION_SUMMARIES = {
+    "centro-oeste": "Goiás é o modelo profundo da primeira fase. Distrito Federal, Mato Grosso e Mato Grosso do Sul seguem a mesma matriz de RICMS, benefícios, ST, fundos e prova.",
+    "sudeste": "Região de grande volume documental: legislação estadual, regimes setoriais, substituição tributária, benefícios industriais, comércio e serviços.",
+    "sul": "Leitura por RICMS, incentivos, importação, agroindústria, crédito, diferimento, documento fiscal e obrigações acessórias.",
+    "nordeste": "Organização por benefícios fiscais, desenvolvimento regional, fundos, regimes especiais, CONFAZ, indústria, atacado e prova documental.",
+    "norte": "Trilha preparada para ICMS, incentivos regionais, Zona Franca, áreas de livre comércio, benefícios estaduais e conexão com atos federais.",
+}
+
 SIGNAL_LABELS = {
     "isencao": "Isenção",
     "reducao de base": "Redução de base",
@@ -633,6 +649,34 @@ def state_flag(path_prefix: str, uf: str, name: str) -> str:
     <img src="{escape(src)}" alt="{escape(name)} - bandeira estadual" loading="lazy" decoding="async">
     <strong>{escape(uf)}</strong>
   </div>
+"""
+
+
+def state_card_markup(state: dict, data: dict) -> str:
+    inv = inventory_state(data, state["uf"])
+    display_name = state_display_name(state)
+    href = local_state_href(state["uf"])
+    klass = "featured" if state["uf"] == "GO" else ""
+    if state["uf"] == "GO":
+        status = "Capitulo profundo publicado"
+    elif inv.get("file_count", 0):
+        status = "Estrutura pronta para expansao"
+    else:
+        status = "Pagina em estruturacao"
+    coverage = (
+        "Texto legal estadual em preparacao"
+        if inv.get("file_count", 0)
+        else state["coverage"]
+    )
+    search_text = state["uf"] + " " + state["name"] + " " + display_name + " ICMS beneficios fiscais " + " ".join(inv.get("categories", []))
+    return f"""
+<a class="state-card {klass} searchable-card" href="{escape(href)}"
+   data-search="{escape(search_text)}">
+  {state_flag("../", state["uf"], display_name)}
+  <h3>{escape(display_name)}</h3>
+  <p>{escape(status)}</p>
+  <small>{escape(coverage)}</small>
+</a>
 """
 
 
@@ -1267,34 +1311,33 @@ def home(data: dict) -> str:
 
 
 def estados_index(data: dict) -> str:
-    cards = []
-    for state in data["states"]:
-        inv = inventory_state(data, state["uf"])
-        display_name = state_display_name(state)
-        href = local_state_href(state["uf"])
-        klass = "featured" if state["uf"] == "GO" else ""
-        if state["uf"] == "GO":
-            status = "Capitulo profundo publicado"
-        elif inv.get("file_count", 0):
-            status = "Estrutura pronta para expansao"
-        else:
-            status = "Pagina em estruturacao"
-        coverage = (
-            "Texto legal estadual em preparacao"
-            if inv.get("file_count", 0)
-            else state["coverage"]
-        )
-        cards.append(f"""
-<a class="state-card {klass} searchable-card" href="{escape(href)}"
-   data-search="{escape(state["uf"] + " " + state["name"] + " " + display_name + " ICMS beneficios fiscais " + " ".join(inv.get("categories", [])))}">
-  {state_flag("../", state["uf"], display_name)}
-  <h3>{escape(display_name)}</h3>
-  <p>{escape(status)}</p>
-  <small>{escape(coverage)}</small>
-</a>
-""")
     total_docs = sum(inventory_state(data, state["uf"]).get("file_count", 0) for state in data["states"])
     total_chars = sum(inventory_state(data, state["uf"]).get("total_chars", 0) for state in data["states"])
+    states_by_uf = {state["uf"]: state for state in data["states"]}
+    region_nav = "".join(
+        f'<a href="#regiao-{escape(region_id)}">{escape(label)}</a>'
+        for region_id, label, _ufs in STATE_REGIONS
+    )
+    region_sections = []
+    for region_id, label, ufs in STATE_REGIONS:
+        region_cards = [
+            state_card_markup(states_by_uf[uf], data)
+            for uf in ufs
+            if uf in states_by_uf
+        ]
+        region_sections.append(f"""
+<section class="region-block" id="regiao-{escape(region_id)}">
+  <div class="region-heading">
+    <div>
+      <span class="eyebrow">Regiao</span>
+      <h3>{escape(label)}</h3>
+      <p>{escape(STATE_REGION_SUMMARIES.get(region_id, 'Estados organizados para expansao por RICMS, beneficios, documentos e prova.'))}</p>
+    </div>
+    <a href="#topo-estados">voltar ao mapa</a>
+  </div>
+  {card_grid(region_cards, "states-grid")}
+</section>
+""")
     body = f"""
 {hero("ICMS por Estado", "Arquitetura nacional para organizar RICMS, leis do imposto, beneficios fiscais, cBenef, aliquotas, ST, regimes e prova por UF.", "Estados")}
 <section class="law-ledger">
@@ -1311,12 +1354,14 @@ def estados_index(data: dict) -> str:
   <p>A tese concreta sempre volta ao texto vigente no portal da UF, CONFAZ ou Planalto na data da operacao.</p>
   </div>
 </section>
-<section class="section-wrap">
+<section class="section-wrap" id="topo-estados">
   <div class="section-heading">
     <span class="eyebrow">Mapa nacional</span>
-    <h2>Estados estruturados</h2>
+    <h2>Estados estruturados por regiao</h2>
+    <p>{fmt_num(total_docs)} atos estaduais mapeados e {fmt_num(total_chars)} caracteres de acervo organizados para virar capitulo por UF, com Goias como modelo editorial aprovado.</p>
   </div>
-  {card_grid(cards, "states-grid")}
+  <nav class="region-jump" aria-label="Regioes do Brasil">{region_nav}</nav>
+  {''.join(region_sections)}
 </section>
 """
     return layout("estados/index.html", "ICMS por Estado", "Mapa nacional de ICMS e beneficios fiscais por UF.", body, "estados")
