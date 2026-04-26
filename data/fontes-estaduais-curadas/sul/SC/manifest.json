@@ -1,0 +1,90 @@
+{
+  "uf": "SC",
+  "estado": "Santa Catarina",
+  "regiao": "Sul",
+  "status_curadoria": "publicado_v1",
+  "data_captura": "2026-04-26",
+  "fonte_principal": "Legislacao Tributaria da Secretaria de Estado da Fazenda de Santa Catarina",
+  "fontes": [
+    {
+      "id": "SC_RICMS_2001_REGULAMENTO",
+      "titulo": "Decreto n. 2.870/2001 - RICMS/SC parte geral",
+      "tema": "Regulamento do ICMS",
+      "tipo": "regulamento",
+      "url": "https://legislacao.sef.sc.gov.br/html/regulamentos/icms/ricms_01_00.htm",
+      "arquivo": "SC_RICMS_2001_REGULAMENTO_2026-04-26.txt",
+      "sha256": "3cf454af93aa8240e5d1405611417326ca0696e65ddf88337f11d3762d425d15",
+      "caracteres": 263399
+    },
+    {
+      "id": "SC_RICMS_ANEXO_1",
+      "titulo": "RICMS/SC - Anexo 1",
+      "tema": "Regulamento do ICMS",
+      "tipo": "anexo",
+      "url": "https://legislacao.sef.sc.gov.br/html/regulamentos/icms/ricms_01_01.htm",
+      "arquivo": "SC_RICMS_ANEXO_1_2026-04-26.txt",
+      "sha256": "b9f1a1970424627bc48e1bdf6b8ee71d6767ae0a520b48d0e97922d8982b0f15",
+      "caracteres": 498027
+    },
+    {
+      "id": "SC_RICMS_ANEXO_2_BENEFICIOS",
+      "titulo": "RICMS/SC - Anexo 2 - Beneficios fiscais",
+      "tema": "Beneficios fiscais de ICMS",
+      "tipo": "anexo",
+      "url": "https://legislacao.sef.sc.gov.br/html/regulamentos/icms/ricms_01_02.htm",
+      "arquivo": "SC_RICMS_ANEXO_2_BENEFICIOS_2026-04-26.txt",
+      "sha256": "da8b3e384bed0e5a67f389d55bc57fef4882fbf3b3e05b0a3f3d02409be60f33",
+      "caracteres": 669673
+    },
+    {
+      "id": "SC_RICMS_ANEXO_3_ST",
+      "titulo": "RICMS/SC - Anexo 3 - Substituicao tributaria",
+      "tema": "Substituicao tributaria e antecipacao",
+      "tipo": "anexo",
+      "url": "https://legislacao.sef.sc.gov.br/html/regulamentos/icms/ricms_01_03.htm",
+      "arquivo": "SC_RICMS_ANEXO_3_ST_2026-04-26.txt",
+      "sha256": "701537904134098391a599c20cde9951e3d247b8a7e449d0b95a6fa2cfd4753e",
+      "caracteres": 231967
+    },
+    {
+      "id": "SC_RICMS_ANEXO_5_OBRIGACOES",
+      "titulo": "RICMS/SC - Anexo 5 - Obrigacoes acessorias",
+      "tema": "Obrigacoes acessorias e documentos",
+      "tipo": "anexo",
+      "url": "https://legislacao.sef.sc.gov.br/html/regulamentos/icms/ricms_01_05.htm",
+      "arquivo": "SC_RICMS_ANEXO_5_OBRIGACOES_2026-04-26.txt",
+      "sha256": "3852e11525e266dc8b21f718d0d1d53b0dca7ccac3614a62e4edc5efbb5d9108",
+      "caracteres": 233554
+    },
+    {
+      "id": "SC_RICMS_ANEXO_6_REGIMES_ESPECIAIS",
+      "titulo": "RICMS/SC - Anexo 6 - Regimes especiais",
+      "tema": "Beneficios fiscais de ICMS",
+      "tipo": "anexo",
+      "url": "https://legislacao.sef.sc.gov.br/html/regulamentos/icms/ricms_01_06.htm",
+      "arquivo": "SC_RICMS_ANEXO_6_REGIMES_ESPECIAIS_2026-04-26.txt",
+      "sha256": "b181e4d66eb831d174d2cc97ef581a87e4c22c4d8d15654226f0b48f8b8996d5",
+      "caracteres": 572204
+    },
+    {
+      "id": "SC_RICMS_ANEXO_10_CODIGOS",
+      "titulo": "RICMS/SC - Anexo 10 - Codigos fiscais",
+      "tema": "Obrigacoes acessorias e documentos",
+      "tipo": "anexo",
+      "url": "https://legislacao.sef.sc.gov.br/html/regulamentos/icms/ricms_01_10.htm",
+      "arquivo": "SC_RICMS_ANEXO_10_CODIGOS_2026-04-26.txt",
+      "sha256": "6c23a075634992f41a4427186bd2c6a28764bfba7daae74167916699087b8047",
+      "caracteres": 10958
+    },
+    {
+      "id": "SC_RICMS_ANEXO_11_NFE",
+      "titulo": "RICMS/SC - Anexo 11 - Nota Fiscal Eletronica",
+      "tema": "Obrigacoes acessorias e documentos",
+      "tipo": "anexo",
+      "url": "https://legislacao.sef.sc.gov.br/html/regulamentos/icms/ricms_01_11.htm",
+      "arquivo": "SC_RICMS_ANEXO_11_NFE_2026-04-26.txt",
+      "sha256": "1b017fb1267f8fe229323b229fd7a2ee4ebc0ddc69c7eada4f548bd15b4ad1c6",
+      "caracteres": 403307
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "uf": "RS",
+  "estado": "Rio Grande do Sul",
+  "regiao": "Sul",
+  "status_curadoria": "publicado_v1",
+  "data_captura": "2026-04-26",
+  "fonte_principal": "Portal de Legislacao da SEFAZ/RS e Receita Estadual do Rio Grande do Sul",
+  "fontes": [
+    {
+      "id": "RS_DEC_37699_1997_RICMS",
+      "titulo": "Decreto n. 37.699/1997 - RICMS/RS integral",
+      "tema": "Regulamento do ICMS e beneficios fiscais de ICMS",
+      "tipo": "regulamento",
+      "url": "http://www.legislacao.sefaz.rs.gov.br/Site/DocumentView.aspx?inpKey=109362&inpCodDispositive=0&inpStToValidateDoc=&inpForceEdit=&inpDtTimeTunnel=&inpDsKeywords=&Debug=",
+      "arquivo": "RS_DEC_37699_1997_RICMS_2026-04-26.txt",
+      "sha256": "ea57050509baa35ea1542f591079daf7dbf84918f3d73ca65935bcc7d1965f71",
+      "caracteres": 4206657
+    },
+    {
+      "id": "RS_ICMS_IMPORTACAO_FUNDAMENTOS",
+      "titulo": "Receita Estadual/RS - Fundamentos do ICMS importacao",
+      "tema": "Regulamento do ICMS",
+      "tipo": "orientacao administrativa",
+      "url": "https://atendimento.receita.rs.gov.br/dos-fundamentos-basicos-do-icms-importacao",
+      "arquivo": "RS_ICMS_IMPORTACAO_FUNDAMENTOS_2026-04-26.txt",
+      "sha256": "88ccf2d1835fdf2318017de40adc4311a866c615e934b9264b3d28af9ee8e2fa",
+      "caracteres": 3991
+    },
+    {
+      "id": "RS_AMPARA_RS",
+      "titulo": "Receita Estadual/RS - Pagamento do AMPARA-RS",
+      "tema": "Base de calculo, aliquotas e transporte",
+      "tipo": "orientacao administrativa",
+      "url": "https://atendimento.receita.rs.gov.br/pagamento-do-ampara-rs",
+      "arquivo": "RS_AMPARA_RS_2026-04-26.txt",
+      "sha256": "c157e373e20f907458d3e8ade0f84e5c80a87f701c8541f3699e50dd3cc487ec",
+      "caracteres": 8758
+    },
+    {
+      "id": "RS_CREDITO_PRESUMIDO_DEMAIS_CASOS",
+      "titulo": "Receita Estadual/RS - Opcao ao credito presumido: demais casos",
+      "tema": "Beneficios fiscais de ICMS",
+      "tipo": "servico oficial",
+      "url": "https://receita.fazenda.rs.gov.br/servicos-a-empresas/servicos?servico=2959",
+      "arquivo": "RS_CREDITO_PRESUMIDO_DEMAIS_CASOS_2026-04-26.txt",
+      "sha256": "34d42a1d1b63898fe7d21b5ad25e190c29d3dd0e6a16b1642921ab08e689c4f7",
+      "caracteres": 5613
+    },
+    {
+      "id": "RS_CREDITO_PRESUMIDO_IMPORTACAO",
+      "titulo": "Receita Estadual/RS - Credito presumido vinculado a importacao",
+      "tema": "Beneficios fiscais de ICMS",
+      "tipo": "servico oficial",
+      "url": "https://receita.fazenda.rs.gov.br/servicos-a-empresas/servicos?servico=1693",
+      "arquivo": "RS_CREDITO_PRESUMIDO_IMPORTACAO_2026-04-26.txt",
+      "sha256": "05af634bc1595c5a13b1e462235e26be22c1b177fd37062a023b32976b06ea29",
+      "caracteres": 10303
+    }
+  ]
+}

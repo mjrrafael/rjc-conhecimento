@@ -94,9 +94,9 @@
     },
     "PR": {
       "region": "Sul",
-      "status": "revisao_fonte",
-      "publish_deep": false,
-      "next_step": "Baixar RICMS/PR e anexos de benefícios no portal oficial do Paraná."
+      "status": "publicado_v1",
+      "publish_deep": true,
+      "next_step": "Paran? publicado como p?gina profunda: Lei n? 11.580/1996, RICMS/PR, benef?cios fiscais de car?ter geral, Paran? Competitivo, isen??o, redu??o de base, cr?dito presumido, diferimento, ST, documentos, EFD e prova fiscal."
     },
     "PE": {
       "region": "Nordeste",
@@ -124,9 +124,9 @@
     },
     "RS": {
       "region": "Sul",
-      "status": "revisao_fonte",
-      "publish_deep": false,
-      "next_step": "Baixar RICMS/RS e benefícios no portal oficial do Rio Grande do Sul."
+      "status": "publicado_v1",
+      "publish_deep": true,
+      "next_step": "Rio Grande do Sul publicado como p?gina profunda: Decreto n? 37.699/1997, RICMS/RS integral, AMPARA-RS, importa??o, cr?dito presumido, diferimento, ST, documentos, EFD e prova fiscal."
     },
     "RO": {
       "region": "Norte",
@@ -142,15 +142,15 @@
     },
     "SC": {
       "region": "Sul",
-      "status": "revisao_fonte",
-      "publish_deep": false,
-      "next_step": "Baixar RICMS/SC e anexos de benefícios no portal oficial de Santa Catarina."
+      "status": "publicado_v1",
+      "publish_deep": true,
+      "next_step": "Santa Catarina publicada como p?gina profunda: RICMS/SC, Anexo 2 de benef?cios fiscais, Anexo 3 de substitui??o tribut?ria, Anexo 5 de obriga??es acess?rias, Anexo 6 de regimes especiais, NFe e prova fiscal."
     },
     "SP": {
       "region": "Sudeste",
-      "status": "revisao_fonte",
-      "publish_deep": false,
-      "next_step": "Substituir PDF extraído por texto limpo do RICMS/2000 e anexos de benefícios da SEFAZ/SP."
+      "status": "publicado_v1",
+      "publish_deep": true,
+      "next_step": "S?o Paulo publicado como p?gina profunda: Lei n? 6.374/1989, RICMS/2000 integral, Anexos de isen??es, redu??es e cr?ditos outorgados, substitui??o tribut?ria, regimes especiais, cBenef, EFD e prova fiscal."
     },
     "SE": {
       "region": "Nordeste",

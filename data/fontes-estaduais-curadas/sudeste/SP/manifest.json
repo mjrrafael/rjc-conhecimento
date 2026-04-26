@@ -1,0 +1,50 @@
+{
+  "uf": "SP",
+  "estado": "Sao Paulo",
+  "regiao": "Sudeste",
+  "status_curadoria": "publicado_v1",
+  "data_captura": "2026-04-26",
+  "fonte_principal": "Secretaria da Fazenda e Planejamento do Estado de Sao Paulo",
+  "fontes": [
+    {
+      "id": "SP_LEI_6374_1989_ICMS",
+      "titulo": "Lei n. 6.374/1989 - ICMS do Estado de Sao Paulo",
+      "tema": "Lei material do ICMS",
+      "tipo": "lei",
+      "url": "https://legislacao.fazenda.sp.gov.br/Paginas/texto6374.aspx",
+      "arquivo": "SP_LEI_6374_1989_ICMS_2026-04-26.txt",
+      "sha256": "33c2384d1eddb5bb8680cc3cdd13fb8abaad7724e232a4d97624fe12e5077707",
+      "caracteres": 398050
+    },
+    {
+      "id": "SP_RICMS_2000_INTEGRAL",
+      "titulo": "Decreto n. 45.490/2000 - RICMS/SP 2000 integral",
+      "tema": "Regulamento do ICMS e beneficios fiscais de ICMS",
+      "tipo": "regulamento",
+      "url": "https://legislacao.fazenda.sp.gov.br/Paginas/textoricms.aspx",
+      "arquivo": "SP_RICMS_2000_INTEGRAL_2026-04-26.txt",
+      "sha256": "d93fd90a910c4deb9d02b9177ff41ade0ad3326c37c4f42a9b8c5b77fb4e71b7",
+      "caracteres": 4395203
+    },
+    {
+      "id": "SP_PORTARIA_SRE_70_2025_CBENEF",
+      "titulo": "Portaria SRE n. 70/2025 - cBenef nos documentos fiscais eletronicos",
+      "tema": "Obrigacoes acessorias e documentos",
+      "tipo": "portaria",
+      "url": "https://legislacao.fazenda.sp.gov.br/Paginas/Portaria-SRE-70-de-2025.aspx",
+      "arquivo": "SP_PORTARIA_SRE_70_2025_CBENEF_2026-04-26.txt",
+      "sha256": "e87b99ba88cb49c4f1e338e8a8a388711898fa7bdf82bd43c3b8d48611ee646f",
+      "caracteres": 3668
+    },
+    {
+      "id": "SP_PORTAL_CBENEF_NFE",
+      "titulo": "SEFAZ/SP - Codigo de Beneficio Fiscal cBenef na NF-e",
+      "tema": "Obrigacoes acessorias e documentos",
+      "tipo": "orientacao administrativa",
+      "url": "https://portal.fazenda.sp.gov.br/servicos/nfe/Paginas/cBenef.aspx",
+      "arquivo": "SP_PORTAL_CBENEF_NFE_2026-04-26.txt",
+      "sha256": "b0410d54be5d2763b44201b46456d6327198278bdb49e26b21859adfddff48c2",
+      "caracteres": 3024
+    }
+  ]
+}

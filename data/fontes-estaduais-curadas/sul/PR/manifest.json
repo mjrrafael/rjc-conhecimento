@@ -1,0 +1,50 @@
+{
+  "uf": "PR",
+  "estado": "Parana",
+  "regiao": "Sul",
+  "status_curadoria": "publicado_v1",
+  "data_captura": "2026-04-26",
+  "fonte_principal": "Secretaria da Fazenda do Estado do Parana e Receita Estadual do Parana",
+  "fontes": [
+    {
+      "id": "PR_LEI_11580_1996_ICMS",
+      "titulo": "Lei n. 11.580/1996 - ICMS do Estado do Parana",
+      "tema": "Lei material do ICMS",
+      "tipo": "lei",
+      "url": "https://www.sefanet.pr.gov.br/dados/SEFADOCUMENTOS/7199611580.pdf",
+      "arquivo": "PR_LEI_11580_1996_ICMS_2026-04-26.txt",
+      "sha256": "077bfb8282d06686ac3a50873dfc4b835cef4d572dfb3de98f457b172f378569",
+      "caracteres": 314978
+    },
+    {
+      "id": "PR_DEC_7871_2017_RICMS",
+      "titulo": "Decreto n. 7.871/2017 - RICMS/PR integral",
+      "tema": "Regulamento do ICMS e beneficios fiscais de ICMS",
+      "tipo": "regulamento",
+      "url": "https://www.fazenda.pr.gov.br/sites/default/arquivos_restritos/files/documento/2020-06/106201707871.pdf",
+      "arquivo": "PR_DEC_7871_2017_RICMS_2026-04-26.txt",
+      "sha256": "f666fce3cd7a249db24876b9b36a620760ebd363319bcf47222e8233acefe6f4",
+      "caracteres": 4716871
+    },
+    {
+      "id": "PR_PORTAL_BENEFICIOS_GERAIS",
+      "titulo": "SEFA/PR - Beneficios fiscais de carater geral",
+      "tema": "Beneficios fiscais de ICMS",
+      "tipo": "pagina institucional",
+      "url": "https://www.fazenda.pr.gov.br/Pagina/Beneficios-Fiscais-de-Carater-Geral",
+      "arquivo": "PR_PORTAL_BENEFICIOS_GERAIS_2026-04-26.txt",
+      "sha256": "f3628bfb262a016ae49a1a5beb8995b15ed9a652feff4fe601fdc0e0a0a13ea1",
+      "caracteres": 19862
+    },
+    {
+      "id": "PR_PROGRAMA_PARANA_COMPETITIVO",
+      "titulo": "SEFA/PR - Programa Parana Competitivo",
+      "tema": "Beneficios fiscais de ICMS",
+      "tipo": "programa estadual",
+      "url": "https://www.fazenda.pr.gov.br/Pagina/Parana-Competitivo",
+      "arquivo": "PR_PROGRAMA_PARANA_COMPETITIVO_2026-04-26.txt",
+      "sha256": "e9292c9b11ddcbaad233b509cc40bdc1b14fa78a99dfcefe2c7c439075d209ad",
+      "caracteres": 25987
+    }
+  ]
+}

@@ -152,7 +152,7 @@ window.RJC_SEARCH = [
   {
     "title": "Paraná: ICMS e benefícios fiscais",
     "url": "estados/pr.html",
-    "summary": "Página estadual estruturada para futura publicação por UF, com foco em ICMS, benefícios, documento e prova.",
+    "summary": "Página estadual com legislação de ICMS em tela, benefícios, documento e prova.",
     "tags": "PR Parana Paraná ICMS beneficios fiscais RICMS DECRETOS IPVA ITCD LEIS OUTROS RESOLUCOES RESOLUCOES_PARTE2 RICMS"
   },
   {
@@ -182,7 +182,7 @@ window.RJC_SEARCH = [
   {
     "title": "Rio Grande do Sul: ICMS e benefícios fiscais",
     "url": "estados/rs.html",
-    "summary": "Página estadual estruturada para futura publicação por UF, com foco em ICMS, benefícios, documento e prova.",
+    "summary": "Página estadual com legislação de ICMS em tela, benefícios, documento e prova.",
     "tags": "RS Rio Grande do Sul Rio Grande do Sul ICMS beneficios fiscais RICMS DECRETOS IPVA OUTROS RICMS"
   },
   {
@@ -200,13 +200,13 @@ window.RJC_SEARCH = [
   {
     "title": "Santa Catarina: ICMS e benefícios fiscais",
     "url": "estados/sc.html",
-    "summary": "Página estadual estruturada para futura publicação por UF, com foco em ICMS, benefícios, documento e prova.",
+    "summary": "Página estadual com legislação de ICMS em tela, benefícios, documento e prova.",
     "tags": "SC Santa Catarina Santa Catarina ICMS beneficios fiscais RICMS DECRETOS ICMS_LEIS IPVA ITCD LEIS RICMS"
   },
   {
     "title": "São Paulo: ICMS e benefícios fiscais",
     "url": "estados/sp.html",
-    "summary": "Página estadual estruturada para futura publicação por UF, com foco em ICMS, benefícios, documento e prova.",
+    "summary": "Página estadual com legislação de ICMS em tela, benefícios, documento e prova.",
     "tags": "SP Sao Paulo São Paulo ICMS beneficios fiscais RICMS DECRETOS ICMS_LEIS ICMS_ST RICMS"
   },
   {
@@ -1404,6 +1404,102 @@ window.RJC_SEARCH = [
     "tags": "MG Minas Gerais ICMS benefícios fiscais substituição tributária EFD SPED XML documento fiscal cadastro prova"
   },
   {
+    "title": "Paraná: ICMS e benefícios fiscais em tela",
+    "url": "estados/pr/legislacao/index.html",
+    "summary": "Legislação estadual em tela: Lei nº 11.580/1996, RICMS/PR, benefícios fiscais de caráter geral, Paraná Competitivo, ST, documentos, EFD e prova por assunto.",
+    "tags": "PR Paraná ICMS RICMS benefícios fiscais isenção redução de base crédito presumido crédito outorgado diferimento suspensão regime especial substituição tributária ST EFD SPED cBenef exportação importação LC 160 Convênio 190"
+  },
+  {
+    "title": "Paraná: ICMS/PR: regra matriz, incidência, não incidência, fato gerador e contribuinte",
+    "url": "estados/pr/legislacao/icms-regra-matriz.html",
+    "summary": "A porta de entrada do ICMS de Paraná: quando o imposto nasce, quem responde, quando a operação fica fora do campo tributável e como ler exportação, imunidade, suspensão e diferimento.",
+    "tags": "PR Paraná ICMS benefícios fiscais Regra matriz ICMS/PR: regra matriz, incidência, não incidência, fato gerador e contribuinte A porta de entrada do ICMS de Paraná: quando o imposto nasce, quem responde, quando a operação fica fora do campo tributável e como ler exportação, imunidade, suspensão e diferimento."
+  },
+  {
+    "title": "Paraná: Base de cálculo, alíquotas, carga efetiva, DIFAL, fundos e apuração",
+    "url": "estados/pr/legislacao/base-aliquota-apuracao.html",
+    "summary": "Como Paraná transforma operação em imposto: base cheia, reduções, alíquota nominal, carga efetiva, adicionais, consumidor final, importação, crédito e recolhimento.",
+    "tags": "PR Paraná ICMS benefícios fiscais Carga tributária Base de cálculo, alíquotas, carga efetiva, DIFAL, fundos e apuração Como Paraná transforma operação em imposto: base cheia, reduções, alíquota nominal, carga efetiva, adicionais, consumidor final, importação, crédito e recolhimento."
+  },
+  {
+    "title": "Paraná: Benefícios fiscais: matriz legal, LC 160, CONFAZ, condições e contrapartidas",
+    "url": "estados/pr/legislacao/beneficios-matriz-lc160.html",
+    "summary": "O roteiro para ler benefícios de Paraná: lei estadual, RICMS, convênio, reinstituição, termo, prazo, condição, vedação, fundo e prova mensal.",
+    "tags": "PR Paraná ICMS benefícios fiscais Benefícios fiscais Benefícios fiscais: matriz legal, LC 160, CONFAZ, condições e contrapartidas O roteiro para ler benefícios de Paraná: lei estadual, RICMS, convênio, reinstituição, termo, prazo, condição, vedação, fundo e prova mensal."
+  },
+  {
+    "title": "Paraná: Isenções, reduções de base, crédito presumido e grupos de benefícios",
+    "url": "estados/pr/legislacao/isencoes-reducoes-creditos.html",
+    "summary": "Capítulo por grupos: alimentos, agro, medicamentos e saúde, informática e eletrônicos, veículos, energia, transporte, importação, indústria, comércio, máquinas, equipamentos e regimes especiais.",
+    "tags": "PR Paraná ICMS benefícios fiscais Benefícios por grupo Isenções, reduções de base, crédito presumido e grupos de benefícios Capítulo por grupos: alimentos, agro, medicamentos e saúde, informática e eletrônicos, veículos, energia, transporte, importação, indústria, comércio, máquinas, equipamentos e regimes especiais."
+  },
+  {
+    "title": "Paraná: Exportação, manutenção de créditos, saldo credor e crédito acumulado",
+    "url": "estados/pr/legislacao/creditos-exportacao-acumulado.html",
+    "summary": "Como ler exportação e créditos: não incidência, fim específico de exportação, manutenção de crédito, saldo credor, transferência, apropriação e prova documental.",
+    "tags": "PR Paraná ICMS benefícios fiscais Exportação e créditos Exportação, manutenção de créditos, saldo credor e crédito acumulado Como ler exportação e créditos: não incidência, fim específico de exportação, manutenção de crédito, saldo credor, transferência, apropriação e prova documental."
+  },
+  {
+    "title": "Paraná: Diferimento, suspensão, regimes especiais e Paraná Competitivo, crédito presumido, dilação de prazo e investimento produtivo",
+    "url": "estados/pr/legislacao/diferimento-regimes-especiais.html",
+    "summary": "A leitura dos tratamentos condicionados em Paraná: quando o pagamento fica para etapa posterior, quando há termo, quando há requisito operacional e como provar a fruição.",
+    "tags": "PR Paraná ICMS benefícios fiscais Regimes especiais Diferimento, suspensão, regimes especiais e Paraná Competitivo, crédito presumido, dilação de prazo e investimento produtivo A leitura dos tratamentos condicionados em Paraná: quando o pagamento fica para etapa posterior, quando há termo, quando há requisito operacional e como provar a fruição."
+  },
+  {
+    "title": "Paraná: Substituição tributária, antecipação, MVA, segmentos, CEST e responsabilidade",
+    "url": "estados/pr/legislacao/st-antecipacao-segmentos.html",
+    "summary": "Como Paraná organiza ST: mercadoria, NCM, CEST, protocolo ou convênio, base presumida, MVA, responsável, antecipação, ressarcimento e prova da retenção.",
+    "tags": "PR Paraná ICMS benefícios fiscais Responsabilidade tributária Substituição tributária, antecipação, MVA, segmentos, CEST e responsabilidade Como Paraná organiza ST: mercadoria, NCM, CEST, protocolo ou convênio, base presumida, MVA, responsável, antecipação, ressarcimento e prova da retenção."
+  },
+  {
+    "title": "Paraná: Documentos fiscais, EFD, cBenef, códigos, NFe e prova do benefício",
+    "url": "estados/pr/legislacao/documentos-efd-prova.html",
+    "summary": "Como a legislação vira prova: NF-e, CT-e, EFD ICMS/IPI, cBenef quando exigido, código de ajuste, livro fiscal, guia, memória de cálculo e dossiê de fruição.",
+    "tags": "PR Paraná ICMS benefícios fiscais Prova fiscal Documentos fiscais, EFD, cBenef, códigos, NFe e prova do benefício Como a legislação vira prova: NF-e, CT-e, EFD ICMS/IPI, cBenef quando exigido, código de ajuste, livro fiscal, guia, memória de cálculo e dossiê de fruição."
+  },
+  {
+    "title": "Paraná: Mapa revisado dos benefícios por setor, produto e técnica tributária",
+    "url": "estados/pr/legislacao/mapa-revisado-beneficios.html",
+    "summary": "Índice de estudo dos benefícios: agro, alimentos, saúde, medicamentos, informática, eletrônicos, máquinas, veículos, energia, transporte, importação, indústria, comércio e regimes especiais.",
+    "tags": "PR Paraná ICMS benefícios fiscais Mapa dos benefícios Mapa revisado dos benefícios por setor, produto e técnica tributária Índice de estudo dos benefícios: agro, alimentos, saúde, medicamentos, informática, eletrônicos, máquinas, veículos, energia, transporte, importação, indústria, comércio e regimes especiais."
+  },
+  {
+    "title": "Paraná: Fiscalização, autuação, glosa, penalidades e defesa do enquadramento",
+    "url": "estados/pr/legislacao/fiscalizacao-riscos.html",
+    "summary": "Como defender o ICMS aplicado: reconstrução da operação, prova de benefício, glosa de crédito, penalidade, consulta, retificação e correção de cadastro.",
+    "tags": "PR Paraná ICMS benefícios fiscais Fiscalização e risco Fiscalização, autuação, glosa, penalidades e defesa do enquadramento Como defender o ICMS aplicado: reconstrução da operação, prova de benefício, glosa de crédito, penalidade, consulta, retificação e correção de cadastro."
+  },
+  {
+    "title": "Paraná: isenções, reduções e créditos",
+    "url": "estados/pr/legislacao/isencoes-reducoes-creditos.html",
+    "summary": "Entrada direta para o capítulo temático correspondente, com texto legal em tela e análise aplicada.",
+    "tags": "PR Paraná ICMS benefícios fiscais isenção redução base crédito presumido máquinas medicamentos veículos saúde agro"
+  },
+  {
+    "title": "Paraná: mapa revisado dos benefícios",
+    "url": "estados/pr/legislacao/mapa-revisado-beneficios.html",
+    "summary": "Entrada direta para o capítulo temático correspondente, com texto legal em tela e análise aplicada.",
+    "tags": "PR Paraná ICMS benefícios fiscais inventário benefícios regimes especiais LC 160 CONFAZ crédito presumido redução base diferimento"
+  },
+  {
+    "title": "Paraná: exportação e crédito acumulado",
+    "url": "estados/pr/legislacao/creditos-exportacao-acumulado.html",
+    "summary": "Entrada direta para o capítulo temático correspondente, com texto legal em tela e análise aplicada.",
+    "tags": "PR Paraná ICMS benefícios fiscais exportação não incidência manutenção crédito acumulado transferência utilização"
+  },
+  {
+    "title": "Paraná: diferimento e regimes especiais",
+    "url": "estados/pr/legislacao/diferimento-regimes-especiais.html",
+    "summary": "Entrada direta para o capítulo temático correspondente, com texto legal em tela e análise aplicada.",
+    "tags": "PR Paraná ICMS benefícios fiscais diferimento regime especial disposições especiais Anexo VI Anexo VIII"
+  },
+  {
+    "title": "Paraná: ST, EFD e prova",
+    "url": "estados/pr/legislacao/documentos-efd-prova.html",
+    "summary": "Entrada direta para o capítulo temático correspondente, com texto legal em tela e análise aplicada.",
+    "tags": "PR Paraná ICMS benefícios fiscais substituição tributária EFD SPED XML documento fiscal cadastro prova"
+  },
+  {
     "title": "Rio de Janeiro: ICMS e benefícios fiscais em tela",
     "url": "estados/rj/legislacao/index.html",
     "summary": "Legislação estadual em tela: Lei nº 2.657/1996, RICMS/RJ, Manual de Benefícios, FOT, Repetro, indústria setorial, ST, documentos, EFD, códigos de benefício e prova fiscal.",
@@ -1606,6 +1702,294 @@ window.RJC_SEARCH = [
     "url": "estados/rn/legislacao/documentos-cbenef-efd-prova.html",
     "summary": "Entrada direta para o capítulo temático correspondente, com texto legal em tela e análise aplicada.",
     "tags": "RN Rio Grande do Norte ICMS benefícios fiscais cBenef EFD SPED XML NF-e NFC-e código benefício Portaria 970"
+  },
+  {
+    "title": "Rio Grande do Sul: ICMS e benefícios fiscais em tela",
+    "url": "estados/rs/legislacao/index.html",
+    "summary": "Legislação estadual em tela: Decreto nº 37.699/1997, RICMS/RS integral, AMPARA-RS, importação, crédito presumido, ST, documentos e prova fiscal.",
+    "tags": "RS Rio Grande do Sul ICMS RICMS benefícios fiscais isenção redução de base crédito presumido crédito outorgado diferimento suspensão regime especial substituição tributária ST EFD SPED cBenef exportação importação LC 160 Convênio 190"
+  },
+  {
+    "title": "Rio Grande do Sul: ICMS/RS: regra matriz, incidência, não incidência, fato gerador e contribuinte",
+    "url": "estados/rs/legislacao/icms-regra-matriz.html",
+    "summary": "A porta de entrada do ICMS de Rio Grande do Sul: quando o imposto nasce, quem responde, quando a operação fica fora do campo tributável e como ler exportação, imunidade, suspensão e diferimento.",
+    "tags": "RS Rio Grande do Sul ICMS benefícios fiscais Regra matriz ICMS/RS: regra matriz, incidência, não incidência, fato gerador e contribuinte A porta de entrada do ICMS de Rio Grande do Sul: quando o imposto nasce, quem responde, quando a operação fica fora do campo tributável e como ler exportação, imunidade, suspensão e diferimento."
+  },
+  {
+    "title": "Rio Grande do Sul: Base de cálculo, alíquotas, carga efetiva, DIFAL, fundos e apuração",
+    "url": "estados/rs/legislacao/base-aliquota-apuracao.html",
+    "summary": "Como Rio Grande do Sul transforma operação em imposto: base cheia, reduções, alíquota nominal, carga efetiva, adicionais, consumidor final, importação, crédito e recolhimento.",
+    "tags": "RS Rio Grande do Sul ICMS benefícios fiscais Carga tributária Base de cálculo, alíquotas, carga efetiva, DIFAL, fundos e apuração Como Rio Grande do Sul transforma operação em imposto: base cheia, reduções, alíquota nominal, carga efetiva, adicionais, consumidor final, importação, crédito e recolhimento."
+  },
+  {
+    "title": "Rio Grande do Sul: Benefícios fiscais: matriz legal, LC 160, CONFAZ, condições e contrapartidas",
+    "url": "estados/rs/legislacao/beneficios-matriz-lc160.html",
+    "summary": "O roteiro para ler benefícios de Rio Grande do Sul: lei estadual, RICMS, convênio, reinstituição, termo, prazo, condição, vedação, fundo e prova mensal.",
+    "tags": "RS Rio Grande do Sul ICMS benefícios fiscais Benefícios fiscais Benefícios fiscais: matriz legal, LC 160, CONFAZ, condições e contrapartidas O roteiro para ler benefícios de Rio Grande do Sul: lei estadual, RICMS, convênio, reinstituição, termo, prazo, condição, vedação, fundo e prova mensal."
+  },
+  {
+    "title": "Rio Grande do Sul: Isenções, reduções de base, crédito presumido e grupos de benefícios",
+    "url": "estados/rs/legislacao/isencoes-reducoes-creditos.html",
+    "summary": "Capítulo por grupos: alimentos, agro, medicamentos e saúde, informática e eletrônicos, veículos, energia, transporte, importação, indústria, comércio, máquinas, equipamentos e regimes especiais.",
+    "tags": "RS Rio Grande do Sul ICMS benefícios fiscais Benefícios por grupo Isenções, reduções de base, crédito presumido e grupos de benefícios Capítulo por grupos: alimentos, agro, medicamentos e saúde, informática e eletrônicos, veículos, energia, transporte, importação, indústria, comércio, máquinas, equipamentos e regimes especiais."
+  },
+  {
+    "title": "Rio Grande do Sul: Exportação, manutenção de créditos, saldo credor e crédito acumulado",
+    "url": "estados/rs/legislacao/creditos-exportacao-acumulado.html",
+    "summary": "Como ler exportação e créditos: não incidência, fim específico de exportação, manutenção de crédito, saldo credor, transferência, apropriação e prova documental.",
+    "tags": "RS Rio Grande do Sul ICMS benefícios fiscais Exportação e créditos Exportação, manutenção de créditos, saldo credor e crédito acumulado Como ler exportação e créditos: não incidência, fim específico de exportação, manutenção de crédito, saldo credor, transferência, apropriação e prova documental."
+  },
+  {
+    "title": "Rio Grande do Sul: Diferimento, suspensão, regimes especiais e créditos presumidos, importação, regimes especiais e tratamentos setoriais do RICMS/RS",
+    "url": "estados/rs/legislacao/diferimento-regimes-especiais.html",
+    "summary": "A leitura dos tratamentos condicionados em Rio Grande do Sul: quando o pagamento fica para etapa posterior, quando há termo, quando há requisito operacional e como provar a fruição.",
+    "tags": "RS Rio Grande do Sul ICMS benefícios fiscais Regimes especiais Diferimento, suspensão, regimes especiais e créditos presumidos, importação, regimes especiais e tratamentos setoriais do RICMS/RS A leitura dos tratamentos condicionados em Rio Grande do Sul: quando o pagamento fica para etapa posterior, quando há termo, quando há requisito operacional e como provar a fruição."
+  },
+  {
+    "title": "Rio Grande do Sul: Substituição tributária, antecipação, MVA, segmentos, CEST e responsabilidade",
+    "url": "estados/rs/legislacao/st-antecipacao-segmentos.html",
+    "summary": "Como Rio Grande do Sul organiza ST: mercadoria, NCM, CEST, protocolo ou convênio, base presumida, MVA, responsável, antecipação, ressarcimento e prova da retenção.",
+    "tags": "RS Rio Grande do Sul ICMS benefícios fiscais Responsabilidade tributária Substituição tributária, antecipação, MVA, segmentos, CEST e responsabilidade Como Rio Grande do Sul organiza ST: mercadoria, NCM, CEST, protocolo ou convênio, base presumida, MVA, responsável, antecipação, ressarcimento e prova da retenção."
+  },
+  {
+    "title": "Rio Grande do Sul: Documentos fiscais, EFD, cBenef, códigos, NFe e prova do benefício",
+    "url": "estados/rs/legislacao/documentos-efd-prova.html",
+    "summary": "Como a legislação vira prova: NF-e, CT-e, EFD ICMS/IPI, cBenef quando exigido, código de ajuste, livro fiscal, guia, memória de cálculo e dossiê de fruição.",
+    "tags": "RS Rio Grande do Sul ICMS benefícios fiscais Prova fiscal Documentos fiscais, EFD, cBenef, códigos, NFe e prova do benefício Como a legislação vira prova: NF-e, CT-e, EFD ICMS/IPI, cBenef quando exigido, código de ajuste, livro fiscal, guia, memória de cálculo e dossiê de fruição."
+  },
+  {
+    "title": "Rio Grande do Sul: Mapa revisado dos benefícios por setor, produto e técnica tributária",
+    "url": "estados/rs/legislacao/mapa-revisado-beneficios.html",
+    "summary": "Índice de estudo dos benefícios: agro, alimentos, saúde, medicamentos, informática, eletrônicos, máquinas, veículos, energia, transporte, importação, indústria, comércio e regimes especiais.",
+    "tags": "RS Rio Grande do Sul ICMS benefícios fiscais Mapa dos benefícios Mapa revisado dos benefícios por setor, produto e técnica tributária Índice de estudo dos benefícios: agro, alimentos, saúde, medicamentos, informática, eletrônicos, máquinas, veículos, energia, transporte, importação, indústria, comércio e regimes especiais."
+  },
+  {
+    "title": "Rio Grande do Sul: Fiscalização, autuação, glosa, penalidades e defesa do enquadramento",
+    "url": "estados/rs/legislacao/fiscalizacao-riscos.html",
+    "summary": "Como defender o ICMS aplicado: reconstrução da operação, prova de benefício, glosa de crédito, penalidade, consulta, retificação e correção de cadastro.",
+    "tags": "RS Rio Grande do Sul ICMS benefícios fiscais Fiscalização e risco Fiscalização, autuação, glosa, penalidades e defesa do enquadramento Como defender o ICMS aplicado: reconstrução da operação, prova de benefício, glosa de crédito, penalidade, consulta, retificação e correção de cadastro."
+  },
+  {
+    "title": "Rio Grande do Sul: isenções, reduções e créditos",
+    "url": "estados/rs/legislacao/isencoes-reducoes-creditos.html",
+    "summary": "Entrada direta para o capítulo temático correspondente, com texto legal em tela e análise aplicada.",
+    "tags": "RS Rio Grande do Sul ICMS benefícios fiscais isenção redução base crédito presumido máquinas medicamentos veículos saúde agro"
+  },
+  {
+    "title": "Rio Grande do Sul: mapa revisado dos benefícios",
+    "url": "estados/rs/legislacao/mapa-revisado-beneficios.html",
+    "summary": "Entrada direta para o capítulo temático correspondente, com texto legal em tela e análise aplicada.",
+    "tags": "RS Rio Grande do Sul ICMS benefícios fiscais inventário benefícios regimes especiais LC 160 CONFAZ crédito presumido redução base diferimento"
+  },
+  {
+    "title": "Rio Grande do Sul: exportação e crédito acumulado",
+    "url": "estados/rs/legislacao/creditos-exportacao-acumulado.html",
+    "summary": "Entrada direta para o capítulo temático correspondente, com texto legal em tela e análise aplicada.",
+    "tags": "RS Rio Grande do Sul ICMS benefícios fiscais exportação não incidência manutenção crédito acumulado transferência utilização"
+  },
+  {
+    "title": "Rio Grande do Sul: diferimento e regimes especiais",
+    "url": "estados/rs/legislacao/diferimento-regimes-especiais.html",
+    "summary": "Entrada direta para o capítulo temático correspondente, com texto legal em tela e análise aplicada.",
+    "tags": "RS Rio Grande do Sul ICMS benefícios fiscais diferimento regime especial disposições especiais Anexo VI Anexo VIII"
+  },
+  {
+    "title": "Rio Grande do Sul: ST, EFD e prova",
+    "url": "estados/rs/legislacao/documentos-efd-prova.html",
+    "summary": "Entrada direta para o capítulo temático correspondente, com texto legal em tela e análise aplicada.",
+    "tags": "RS Rio Grande do Sul ICMS benefícios fiscais substituição tributária EFD SPED XML documento fiscal cadastro prova"
+  },
+  {
+    "title": "Santa Catarina: ICMS e benefícios fiscais em tela",
+    "url": "estados/sc/legislacao/index.html",
+    "summary": "Legislação estadual em tela: RICMS/SC, Anexo 2 de benefícios fiscais, Anexo 3 de ST, Anexo 5 de obrigações, Anexo 6 de regimes especiais, NFe e prova fiscal.",
+    "tags": "SC Santa Catarina ICMS RICMS benefícios fiscais isenção redução de base crédito presumido crédito outorgado diferimento suspensão regime especial substituição tributária ST EFD SPED cBenef exportação importação LC 160 Convênio 190"
+  },
+  {
+    "title": "Santa Catarina: ICMS/SC: regra matriz, incidência, não incidência, fato gerador e contribuinte",
+    "url": "estados/sc/legislacao/icms-regra-matriz.html",
+    "summary": "A porta de entrada do ICMS de Santa Catarina: quando o imposto nasce, quem responde, quando a operação fica fora do campo tributável e como ler exportação, imunidade, suspensão e diferimento.",
+    "tags": "SC Santa Catarina ICMS benefícios fiscais Regra matriz ICMS/SC: regra matriz, incidência, não incidência, fato gerador e contribuinte A porta de entrada do ICMS de Santa Catarina: quando o imposto nasce, quem responde, quando a operação fica fora do campo tributável e como ler exportação, imunidade, suspensão e diferimento."
+  },
+  {
+    "title": "Santa Catarina: Base de cálculo, alíquotas, carga efetiva, DIFAL, fundos e apuração",
+    "url": "estados/sc/legislacao/base-aliquota-apuracao.html",
+    "summary": "Como Santa Catarina transforma operação em imposto: base cheia, reduções, alíquota nominal, carga efetiva, adicionais, consumidor final, importação, crédito e recolhimento.",
+    "tags": "SC Santa Catarina ICMS benefícios fiscais Carga tributária Base de cálculo, alíquotas, carga efetiva, DIFAL, fundos e apuração Como Santa Catarina transforma operação em imposto: base cheia, reduções, alíquota nominal, carga efetiva, adicionais, consumidor final, importação, crédito e recolhimento."
+  },
+  {
+    "title": "Santa Catarina: Benefícios fiscais: matriz legal, LC 160, CONFAZ, condições e contrapartidas",
+    "url": "estados/sc/legislacao/beneficios-matriz-lc160.html",
+    "summary": "O roteiro para ler benefícios de Santa Catarina: lei estadual, RICMS, convênio, reinstituição, termo, prazo, condição, vedação, fundo e prova mensal.",
+    "tags": "SC Santa Catarina ICMS benefícios fiscais Benefícios fiscais Benefícios fiscais: matriz legal, LC 160, CONFAZ, condições e contrapartidas O roteiro para ler benefícios de Santa Catarina: lei estadual, RICMS, convênio, reinstituição, termo, prazo, condição, vedação, fundo e prova mensal."
+  },
+  {
+    "title": "Santa Catarina: Isenções, reduções de base, crédito presumido e grupos de benefícios",
+    "url": "estados/sc/legislacao/isencoes-reducoes-creditos.html",
+    "summary": "Capítulo por grupos: alimentos, agro, medicamentos e saúde, informática e eletrônicos, veículos, energia, transporte, importação, indústria, comércio, máquinas, equipamentos e regimes especiais.",
+    "tags": "SC Santa Catarina ICMS benefícios fiscais Benefícios por grupo Isenções, reduções de base, crédito presumido e grupos de benefícios Capítulo por grupos: alimentos, agro, medicamentos e saúde, informática e eletrônicos, veículos, energia, transporte, importação, indústria, comércio, máquinas, equipamentos e regimes especiais."
+  },
+  {
+    "title": "Santa Catarina: Exportação, manutenção de créditos, saldo credor e crédito acumulado",
+    "url": "estados/sc/legislacao/creditos-exportacao-acumulado.html",
+    "summary": "Como ler exportação e créditos: não incidência, fim específico de exportação, manutenção de crédito, saldo credor, transferência, apropriação e prova documental.",
+    "tags": "SC Santa Catarina ICMS benefícios fiscais Exportação e créditos Exportação, manutenção de créditos, saldo credor e crédito acumulado Como ler exportação e créditos: não incidência, fim específico de exportação, manutenção de crédito, saldo credor, transferência, apropriação e prova documental."
+  },
+  {
+    "title": "Santa Catarina: Diferimento, suspensão, regimes especiais e tratamentos tributários diferenciados, regimes especiais e benefícios do Anexo 2",
+    "url": "estados/sc/legislacao/diferimento-regimes-especiais.html",
+    "summary": "A leitura dos tratamentos condicionados em Santa Catarina: quando o pagamento fica para etapa posterior, quando há termo, quando há requisito operacional e como provar a fruição.",
+    "tags": "SC Santa Catarina ICMS benefícios fiscais Regimes especiais Diferimento, suspensão, regimes especiais e tratamentos tributários diferenciados, regimes especiais e benefícios do Anexo 2 A leitura dos tratamentos condicionados em Santa Catarina: quando o pagamento fica para etapa posterior, quando há termo, quando há requisito operacional e como provar a fruição."
+  },
+  {
+    "title": "Santa Catarina: Substituição tributária, antecipação, MVA, segmentos, CEST e responsabilidade",
+    "url": "estados/sc/legislacao/st-antecipacao-segmentos.html",
+    "summary": "Como Santa Catarina organiza ST: mercadoria, NCM, CEST, protocolo ou convênio, base presumida, MVA, responsável, antecipação, ressarcimento e prova da retenção.",
+    "tags": "SC Santa Catarina ICMS benefícios fiscais Responsabilidade tributária Substituição tributária, antecipação, MVA, segmentos, CEST e responsabilidade Como Santa Catarina organiza ST: mercadoria, NCM, CEST, protocolo ou convênio, base presumida, MVA, responsável, antecipação, ressarcimento e prova da retenção."
+  },
+  {
+    "title": "Santa Catarina: Documentos fiscais, EFD, cBenef, códigos, NFe e prova do benefício",
+    "url": "estados/sc/legislacao/documentos-efd-prova.html",
+    "summary": "Como a legislação vira prova: NF-e, CT-e, EFD ICMS/IPI, cBenef quando exigido, código de ajuste, livro fiscal, guia, memória de cálculo e dossiê de fruição.",
+    "tags": "SC Santa Catarina ICMS benefícios fiscais Prova fiscal Documentos fiscais, EFD, cBenef, códigos, NFe e prova do benefício Como a legislação vira prova: NF-e, CT-e, EFD ICMS/IPI, cBenef quando exigido, código de ajuste, livro fiscal, guia, memória de cálculo e dossiê de fruição."
+  },
+  {
+    "title": "Santa Catarina: Mapa revisado dos benefícios por setor, produto e técnica tributária",
+    "url": "estados/sc/legislacao/mapa-revisado-beneficios.html",
+    "summary": "Índice de estudo dos benefícios: agro, alimentos, saúde, medicamentos, informática, eletrônicos, máquinas, veículos, energia, transporte, importação, indústria, comércio e regimes especiais.",
+    "tags": "SC Santa Catarina ICMS benefícios fiscais Mapa dos benefícios Mapa revisado dos benefícios por setor, produto e técnica tributária Índice de estudo dos benefícios: agro, alimentos, saúde, medicamentos, informática, eletrônicos, máquinas, veículos, energia, transporte, importação, indústria, comércio e regimes especiais."
+  },
+  {
+    "title": "Santa Catarina: Fiscalização, autuação, glosa, penalidades e defesa do enquadramento",
+    "url": "estados/sc/legislacao/fiscalizacao-riscos.html",
+    "summary": "Como defender o ICMS aplicado: reconstrução da operação, prova de benefício, glosa de crédito, penalidade, consulta, retificação e correção de cadastro.",
+    "tags": "SC Santa Catarina ICMS benefícios fiscais Fiscalização e risco Fiscalização, autuação, glosa, penalidades e defesa do enquadramento Como defender o ICMS aplicado: reconstrução da operação, prova de benefício, glosa de crédito, penalidade, consulta, retificação e correção de cadastro."
+  },
+  {
+    "title": "Santa Catarina: isenções, reduções e créditos",
+    "url": "estados/sc/legislacao/isencoes-reducoes-creditos.html",
+    "summary": "Entrada direta para o capítulo temático correspondente, com texto legal em tela e análise aplicada.",
+    "tags": "SC Santa Catarina ICMS benefícios fiscais isenção redução base crédito presumido máquinas medicamentos veículos saúde agro"
+  },
+  {
+    "title": "Santa Catarina: mapa revisado dos benefícios",
+    "url": "estados/sc/legislacao/mapa-revisado-beneficios.html",
+    "summary": "Entrada direta para o capítulo temático correspondente, com texto legal em tela e análise aplicada.",
+    "tags": "SC Santa Catarina ICMS benefícios fiscais inventário benefícios regimes especiais LC 160 CONFAZ crédito presumido redução base diferimento"
+  },
+  {
+    "title": "Santa Catarina: exportação e crédito acumulado",
+    "url": "estados/sc/legislacao/creditos-exportacao-acumulado.html",
+    "summary": "Entrada direta para o capítulo temático correspondente, com texto legal em tela e análise aplicada.",
+    "tags": "SC Santa Catarina ICMS benefícios fiscais exportação não incidência manutenção crédito acumulado transferência utilização"
+  },
+  {
+    "title": "Santa Catarina: diferimento e regimes especiais",
+    "url": "estados/sc/legislacao/diferimento-regimes-especiais.html",
+    "summary": "Entrada direta para o capítulo temático correspondente, com texto legal em tela e análise aplicada.",
+    "tags": "SC Santa Catarina ICMS benefícios fiscais diferimento regime especial disposições especiais Anexo VI Anexo VIII"
+  },
+  {
+    "title": "Santa Catarina: ST, EFD e prova",
+    "url": "estados/sc/legislacao/documentos-efd-prova.html",
+    "summary": "Entrada direta para o capítulo temático correspondente, com texto legal em tela e análise aplicada.",
+    "tags": "SC Santa Catarina ICMS benefícios fiscais substituição tributária EFD SPED XML documento fiscal cadastro prova"
+  },
+  {
+    "title": "São Paulo: ICMS e benefícios fiscais em tela",
+    "url": "estados/sp/legislacao/index.html",
+    "summary": "Legislação estadual em tela: Lei nº 6.374/1989, RICMS/2000 integral, Anexos I, II e III, substituição tributária, regimes especiais, cBenef, EFD e prova fiscal.",
+    "tags": "SP São Paulo ICMS RICMS benefícios fiscais isenção redução de base crédito presumido crédito outorgado diferimento suspensão regime especial substituição tributária ST EFD SPED cBenef exportação importação LC 160 Convênio 190"
+  },
+  {
+    "title": "São Paulo: ICMS/SP: regra matriz, incidência, não incidência, fato gerador e contribuinte",
+    "url": "estados/sp/legislacao/icms-regra-matriz.html",
+    "summary": "A porta de entrada do ICMS de São Paulo: quando o imposto nasce, quem responde, quando a operação fica fora do campo tributável e como ler exportação, imunidade, suspensão e diferimento.",
+    "tags": "SP São Paulo ICMS benefícios fiscais Regra matriz ICMS/SP: regra matriz, incidência, não incidência, fato gerador e contribuinte A porta de entrada do ICMS de São Paulo: quando o imposto nasce, quem responde, quando a operação fica fora do campo tributável e como ler exportação, imunidade, suspensão e diferimento."
+  },
+  {
+    "title": "São Paulo: Base de cálculo, alíquotas, carga efetiva, DIFAL, fundos e apuração",
+    "url": "estados/sp/legislacao/base-aliquota-apuracao.html",
+    "summary": "Como São Paulo transforma operação em imposto: base cheia, reduções, alíquota nominal, carga efetiva, adicionais, consumidor final, importação, crédito e recolhimento.",
+    "tags": "SP São Paulo ICMS benefícios fiscais Carga tributária Base de cálculo, alíquotas, carga efetiva, DIFAL, fundos e apuração Como São Paulo transforma operação em imposto: base cheia, reduções, alíquota nominal, carga efetiva, adicionais, consumidor final, importação, crédito e recolhimento."
+  },
+  {
+    "title": "São Paulo: Benefícios fiscais: matriz legal, LC 160, CONFAZ, condições e contrapartidas",
+    "url": "estados/sp/legislacao/beneficios-matriz-lc160.html",
+    "summary": "O roteiro para ler benefícios de São Paulo: lei estadual, RICMS, convênio, reinstituição, termo, prazo, condição, vedação, fundo e prova mensal.",
+    "tags": "SP São Paulo ICMS benefícios fiscais Benefícios fiscais Benefícios fiscais: matriz legal, LC 160, CONFAZ, condições e contrapartidas O roteiro para ler benefícios de São Paulo: lei estadual, RICMS, convênio, reinstituição, termo, prazo, condição, vedação, fundo e prova mensal."
+  },
+  {
+    "title": "São Paulo: Isenções, reduções de base, crédito presumido e grupos de benefícios",
+    "url": "estados/sp/legislacao/isencoes-reducoes-creditos.html",
+    "summary": "Capítulo por grupos: alimentos, agro, medicamentos e saúde, informática e eletrônicos, veículos, energia, transporte, importação, indústria, comércio, máquinas, equipamentos e regimes especiais.",
+    "tags": "SP São Paulo ICMS benefícios fiscais Benefícios por grupo Isenções, reduções de base, crédito presumido e grupos de benefícios Capítulo por grupos: alimentos, agro, medicamentos e saúde, informática e eletrônicos, veículos, energia, transporte, importação, indústria, comércio, máquinas, equipamentos e regimes especiais."
+  },
+  {
+    "title": "São Paulo: Exportação, manutenção de créditos, saldo credor e crédito acumulado",
+    "url": "estados/sp/legislacao/creditos-exportacao-acumulado.html",
+    "summary": "Como ler exportação e créditos: não incidência, fim específico de exportação, manutenção de crédito, saldo credor, transferência, apropriação e prova documental.",
+    "tags": "SP São Paulo ICMS benefícios fiscais Exportação e créditos Exportação, manutenção de créditos, saldo credor e crédito acumulado Como ler exportação e créditos: não incidência, fim específico de exportação, manutenção de crédito, saldo credor, transferência, apropriação e prova documental."
+  },
+  {
+    "title": "São Paulo: Diferimento, suspensão, regimes especiais e regimes especiais paulistas, crédito outorgado e tratamentos setoriais do RICMS/SP",
+    "url": "estados/sp/legislacao/diferimento-regimes-especiais.html",
+    "summary": "A leitura dos tratamentos condicionados em São Paulo: quando o pagamento fica para etapa posterior, quando há termo, quando há requisito operacional e como provar a fruição.",
+    "tags": "SP São Paulo ICMS benefícios fiscais Regimes especiais Diferimento, suspensão, regimes especiais e regimes especiais paulistas, crédito outorgado e tratamentos setoriais do RICMS/SP A leitura dos tratamentos condicionados em São Paulo: quando o pagamento fica para etapa posterior, quando há termo, quando há requisito operacional e como provar a fruição."
+  },
+  {
+    "title": "São Paulo: Substituição tributária, antecipação, MVA, segmentos, CEST e responsabilidade",
+    "url": "estados/sp/legislacao/st-antecipacao-segmentos.html",
+    "summary": "Como São Paulo organiza ST: mercadoria, NCM, CEST, protocolo ou convênio, base presumida, MVA, responsável, antecipação, ressarcimento e prova da retenção.",
+    "tags": "SP São Paulo ICMS benefícios fiscais Responsabilidade tributária Substituição tributária, antecipação, MVA, segmentos, CEST e responsabilidade Como São Paulo organiza ST: mercadoria, NCM, CEST, protocolo ou convênio, base presumida, MVA, responsável, antecipação, ressarcimento e prova da retenção."
+  },
+  {
+    "title": "São Paulo: Documentos fiscais, EFD, cBenef, códigos, NFe e prova do benefício",
+    "url": "estados/sp/legislacao/documentos-efd-prova.html",
+    "summary": "Como a legislação vira prova: NF-e, CT-e, EFD ICMS/IPI, cBenef quando exigido, código de ajuste, livro fiscal, guia, memória de cálculo e dossiê de fruição.",
+    "tags": "SP São Paulo ICMS benefícios fiscais Prova fiscal Documentos fiscais, EFD, cBenef, códigos, NFe e prova do benefício Como a legislação vira prova: NF-e, CT-e, EFD ICMS/IPI, cBenef quando exigido, código de ajuste, livro fiscal, guia, memória de cálculo e dossiê de fruição."
+  },
+  {
+    "title": "São Paulo: Mapa revisado dos benefícios por setor, produto e técnica tributária",
+    "url": "estados/sp/legislacao/mapa-revisado-beneficios.html",
+    "summary": "Índice de estudo dos benefícios: agro, alimentos, saúde, medicamentos, informática, eletrônicos, máquinas, veículos, energia, transporte, importação, indústria, comércio e regimes especiais.",
+    "tags": "SP São Paulo ICMS benefícios fiscais Mapa dos benefícios Mapa revisado dos benefícios por setor, produto e técnica tributária Índice de estudo dos benefícios: agro, alimentos, saúde, medicamentos, informática, eletrônicos, máquinas, veículos, energia, transporte, importação, indústria, comércio e regimes especiais."
+  },
+  {
+    "title": "São Paulo: Fiscalização, autuação, glosa, penalidades e defesa do enquadramento",
+    "url": "estados/sp/legislacao/fiscalizacao-riscos.html",
+    "summary": "Como defender o ICMS aplicado: reconstrução da operação, prova de benefício, glosa de crédito, penalidade, consulta, retificação e correção de cadastro.",
+    "tags": "SP São Paulo ICMS benefícios fiscais Fiscalização e risco Fiscalização, autuação, glosa, penalidades e defesa do enquadramento Como defender o ICMS aplicado: reconstrução da operação, prova de benefício, glosa de crédito, penalidade, consulta, retificação e correção de cadastro."
+  },
+  {
+    "title": "São Paulo: isenções, reduções e créditos",
+    "url": "estados/sp/legislacao/isencoes-reducoes-creditos.html",
+    "summary": "Entrada direta para o capítulo temático correspondente, com texto legal em tela e análise aplicada.",
+    "tags": "SP São Paulo ICMS benefícios fiscais isenção redução base crédito presumido máquinas medicamentos veículos saúde agro"
+  },
+  {
+    "title": "São Paulo: mapa revisado dos benefícios",
+    "url": "estados/sp/legislacao/mapa-revisado-beneficios.html",
+    "summary": "Entrada direta para o capítulo temático correspondente, com texto legal em tela e análise aplicada.",
+    "tags": "SP São Paulo ICMS benefícios fiscais inventário benefícios regimes especiais LC 160 CONFAZ crédito presumido redução base diferimento"
+  },
+  {
+    "title": "São Paulo: exportação e crédito acumulado",
+    "url": "estados/sp/legislacao/creditos-exportacao-acumulado.html",
+    "summary": "Entrada direta para o capítulo temático correspondente, com texto legal em tela e análise aplicada.",
+    "tags": "SP São Paulo ICMS benefícios fiscais exportação não incidência manutenção crédito acumulado transferência utilização"
+  },
+  {
+    "title": "São Paulo: diferimento e regimes especiais",
+    "url": "estados/sp/legislacao/diferimento-regimes-especiais.html",
+    "summary": "Entrada direta para o capítulo temático correspondente, com texto legal em tela e análise aplicada.",
+    "tags": "SP São Paulo ICMS benefícios fiscais diferimento regime especial disposições especiais Anexo VI Anexo VIII"
+  },
+  {
+    "title": "São Paulo: ST, EFD e prova",
+    "url": "estados/sp/legislacao/documentos-efd-prova.html",
+    "summary": "Entrada direta para o capítulo temático correspondente, com texto legal em tela e análise aplicada.",
+    "tags": "SP São Paulo ICMS benefícios fiscais substituição tributária EFD SPED XML documento fiscal cadastro prova"
   },
   {
     "title": "Manual de Documentos Fiscais Eletronicos",

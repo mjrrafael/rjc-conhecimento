@@ -2250,6 +2250,307 @@ CONFIGURED_STATE_CHAPTERS = {
 }
 
 
+STANDARD_STATE_SOURCE_SETS = {
+    "SP": {
+        "name": "São Paulo",
+        "hero": "Legislação estadual em tela: Lei nº 6.374/1989, RICMS/2000 integral, Anexos I, II e III, substituição tributária, regimes especiais, cBenef, EFD e prova fiscal.",
+        "material": "Lei nº 6.374/1989, Decreto nº 45.490/2000 (RICMS/SP integral), Portaria SRE nº 70/2025 e página de cBenef da SEFAZ/SP.",
+        "benefits": "Isenções, reduções de base, créditos outorgados, diferimento, suspensão, regimes especiais, alimentos, agro, medicamentos, veículos, eletrônicos, informática, energia, transporte, importação, indústria, comércio, ST, cBenef e prova fiscal.",
+        "law": ["SP_LEI_6374_1989_ICMS"],
+        "ricms": ["SP_RICMS_2000_INTEGRAL"],
+        "benefits_sources": ["SP_RICMS_2000_INTEGRAL"],
+        "program_sources": ["SP_RICMS_2000_INTEGRAL"],
+        "st_sources": ["SP_RICMS_2000_INTEGRAL"],
+        "docs_sources": ["SP_PORTARIA_SRE_70_2025_CBENEF", "SP_PORTAL_CBENEF_NFE", "SP_RICMS_2000_INTEGRAL"],
+        "fund_name": "contrapartidas, regime especial e requisitos de fruição",
+        "program_name": "regimes especiais paulistas, crédito outorgado e tratamentos setoriais do RICMS/SP",
+    },
+    "PR": {
+        "name": "Paraná",
+        "hero": "Legislação estadual em tela: Lei nº 11.580/1996, RICMS/PR, benefícios fiscais de caráter geral, Paraná Competitivo, ST, documentos, EFD e prova por assunto.",
+        "material": "Lei nº 11.580/1996, Decreto nº 7.871/2017 (RICMS/PR), página de benefícios fiscais de caráter geral e Programa Paraná Competitivo.",
+        "benefits": "Imunidade, não incidência, isenção, redução de base, crédito presumido, diferimento, suspensão, Paraná Competitivo, benefícios setoriais, agro, saúde, energia, indústria, comércio exterior, ST, documentos e prova fiscal.",
+        "law": ["PR_LEI_11580_1996_ICMS"],
+        "ricms": ["PR_DEC_7871_2017_RICMS"],
+        "benefits_sources": ["PR_DEC_7871_2017_RICMS", "PR_PORTAL_BENEFICIOS_GERAIS"],
+        "program_sources": ["PR_PROGRAMA_PARANA_COMPETITIVO", "PR_DEC_7871_2017_RICMS"],
+        "st_sources": ["PR_DEC_7871_2017_RICMS"],
+        "docs_sources": ["PR_DEC_7871_2017_RICMS"],
+        "fund_name": "Paraná Competitivo, SISCRED e condições de transferência de créditos",
+        "program_name": "Paraná Competitivo, crédito presumido, dilação de prazo e investimento produtivo",
+    },
+    "RS": {
+        "name": "Rio Grande do Sul",
+        "hero": "Legislação estadual em tela: Decreto nº 37.699/1997, RICMS/RS integral, AMPARA-RS, importação, crédito presumido, ST, documentos e prova fiscal.",
+        "material": "Decreto nº 37.699/1997 (RICMS/RS integral), orientações oficiais da Receita Estadual sobre importação, AMPARA-RS e serviços de opção a crédito presumido.",
+        "benefits": "Isenção, redução de base, crédito fiscal presumido, diferimento, suspensão, importação, AMPARA-RS, benefícios setoriais, agro, indústria, informática, energia, transporte, ST e prova documental.",
+        "law": ["RS_DEC_37699_1997_RICMS"],
+        "ricms": ["RS_DEC_37699_1997_RICMS"],
+        "benefits_sources": ["RS_DEC_37699_1997_RICMS", "RS_CREDITO_PRESUMIDO_DEMAIS_CASOS", "RS_CREDITO_PRESUMIDO_IMPORTACAO"],
+        "program_sources": ["RS_DEC_37699_1997_RICMS", "RS_CREDITO_PRESUMIDO_DEMAIS_CASOS", "RS_CREDITO_PRESUMIDO_IMPORTACAO", "RS_AMPARA_RS"],
+        "st_sources": ["RS_DEC_37699_1997_RICMS"],
+        "docs_sources": ["RS_DEC_37699_1997_RICMS", "RS_ICMS_IMPORTACAO_FUNDAMENTOS", "RS_AMPARA_RS"],
+        "fund_name": "AMPARA-RS, termos de opção e condições de fruição",
+        "program_name": "créditos presumidos, importação, regimes especiais e tratamentos setoriais do RICMS/RS",
+    },
+    "SC": {
+        "name": "Santa Catarina",
+        "hero": "Legislação estadual em tela: RICMS/SC, Anexo 2 de benefícios fiscais, Anexo 3 de ST, Anexo 5 de obrigações, Anexo 6 de regimes especiais, NFe e prova fiscal.",
+        "material": "Decreto nº 2.870/2001 (RICMS/SC), Anexos 1, 2, 3, 5, 6, 10 e 11 da legislação tributária catarinense.",
+        "benefits": "Isenções, reduções de base, crédito presumido, diferimento, suspensão, regimes especiais, TTD, agro, alimentos, indústria, importação, medicamentos, veículos, energia, ST, NFe e documentos fiscais.",
+        "law": ["SC_RICMS_2001_REGULAMENTO"],
+        "ricms": ["SC_RICMS_2001_REGULAMENTO", "SC_RICMS_ANEXO_1"],
+        "benefits_sources": ["SC_RICMS_ANEXO_2_BENEFICIOS", "SC_RICMS_ANEXO_6_REGIMES_ESPECIAIS"],
+        "program_sources": ["SC_RICMS_ANEXO_6_REGIMES_ESPECIAIS", "SC_RICMS_ANEXO_2_BENEFICIOS"],
+        "st_sources": ["SC_RICMS_ANEXO_3_ST"],
+        "docs_sources": ["SC_RICMS_ANEXO_5_OBRIGACOES", "SC_RICMS_ANEXO_10_CODIGOS", "SC_RICMS_ANEXO_11_NFE"],
+        "fund_name": "regime especial, TTD e condições de fruição",
+        "program_name": "tratamentos tributários diferenciados, regimes especiais e benefícios do Anexo 2",
+    },
+}
+
+
+def _profile_signal_map() -> dict[str, str]:
+    return {
+        "exportacao": "creditos-exportacao-acumulado",
+        "nao incidencia": "icms-regra-matriz",
+        "aliquota": "base-aliquota-apuracao",
+        "reducao de base": "isencoes-reducoes-creditos",
+        "isencao": "isencoes-reducoes-creditos",
+        "credito outorgado": "isencoes-reducoes-creditos",
+        "diferimento": "diferimento-regimes-especiais",
+        "suspensao": "icms-regra-matriz",
+        "regime especial": "diferimento-regimes-especiais",
+        "protege/fundo": "beneficios-matriz-lc160",
+        "fundo/contrapartida": "beneficios-matriz-lc160",
+        "substituicao tributaria": "st-antecipacao-segmentos",
+        "efd/sped": "documentos-efd-prova",
+        "cBenef": "documentos-efd-prova",
+    }
+
+
+def _source_refs(source_ids: list[str], keywords: list[str]) -> list[dict]:
+    return [{"source": source_id, "keywords": keywords} for source_id in source_ids]
+
+
+def _standard_state_profile(uf: str, cfg: dict) -> dict:
+    return {
+        "name": cfg["name"],
+        "hero": cfg["hero"],
+        "material": cfg["material"],
+        "benefits": cfg["benefits"],
+        "first_question": (
+            f"A operação está no campo do ICMS de {cfg['name']}? Depois disso, separe "
+            "regra comum, não incidência, benefício, condição, regime especial, ST, "
+            "documento fiscal, escrituração e prova."
+        ),
+        "tags": (
+            f"{uf} {cfg['name']} ICMS RICMS benefícios fiscais isenção redução de base "
+            "crédito presumido crédito outorgado diferimento suspensão regime especial "
+            "substituição tributária ST EFD SPED cBenef exportação importação LC 160 Convênio 190"
+        ),
+        "signal_map": _profile_signal_map(),
+    }
+
+
+def _standard_state_chapters(uf: str, cfg: dict) -> list[dict]:
+    name = cfg["name"]
+    law = cfg["law"]
+    ricms = cfg["ricms"]
+    benefits = cfg["benefits_sources"]
+    programs = cfg["program_sources"]
+    st_sources = cfg["st_sources"]
+    docs_sources = cfg["docs_sources"]
+    return [
+        {
+            "id": "icms-regra-matriz",
+            "title": f"ICMS/{uf}: regra matriz, incidência, não incidência, fato gerador e contribuinte",
+            "summary": f"A porta de entrada do ICMS de {name}: quando o imposto nasce, quem responde, quando a operação fica fora do campo tributável e como ler exportação, imunidade, suspensão e diferimento.",
+            "theme": "Regra matriz",
+            "refs": (
+                _source_refs(law, ["incide sobre", "não incide", "fato gerador", "contribuinte", "responsável", "exportação"])
+                + _source_refs(ricms, ["incide sobre", "não incide", "fato gerador", "contribuinte", "suspensão", "diferimento"])
+            ),
+            "analysis": [
+                f"O estudo de {name} começa pela regra matriz: operação ou prestação, mercadoria ou serviço, local, momento, contribuinte e responsável. Só depois dessa leitura faz sentido falar em benefício fiscal.",
+                "Não incidência, imunidade e isenção não têm a mesma natureza. A não incidência deixa o fato fora do campo do ICMS; a isenção dispensa a cobrança de fato que entraria no campo do imposto; suspensão e diferimento deslocam o momento de exigência e exigem controle do evento posterior.",
+                "Exportação deve ser lida com cuidado: a saída ao exterior costuma afastar a incidência, mas a manutenção de créditos, o fim específico de exportação, a documentação e o prazo de comprovação mudam o risco fiscal.",
+            ],
+            "departments": "Fiscal define CFOP, CST/CSOSN, local da operação e responsável. Jurídico valida imunidade, não incidência, isenção e responsabilidade. Contábil mede débito, crédito e estorno. Comercial e logística provam operação real.",
+            "documents": "XML, CT-e, contrato, pedido, comprovante de entrega, despacho de exportação quando houver, cadastro do contribuinte, EFD, memória de enquadramento e fundamento legal aplicado.",
+            "risks": "Aplicar benefício antes de confirmar incidência; tratar diferimento como perdão; confundir não incidência com isenção; não provar exportação ou destinatário; deixar o documento fiscal contar história diferente da lei.",
+        },
+        {
+            "id": "base-aliquota-apuracao",
+            "title": "Base de cálculo, alíquotas, carga efetiva, DIFAL, fundos e apuração",
+            "summary": f"Como {name} transforma operação em imposto: base cheia, reduções, alíquota nominal, carga efetiva, adicionais, consumidor final, importação, crédito e recolhimento.",
+            "theme": "Carga tributária",
+            "refs": (
+                _source_refs(law, ["base de cálculo", "alíquota", "adicional", "diferencial de alíquotas", "imposto devido", "crédito do imposto"])
+                + _source_refs(ricms, ["base de cálculo", "alíquota", "carga tributária", "apuração", "DIFAL", "importação", "crédito"])
+                + _source_refs(programs, ["adicional", "fundo", "contrapartida", "pagamento", "apuração"])
+            ),
+            "analysis": [
+                "A alíquota nunca deve ser lida isoladamente. Primeiro vem a base de cálculo; depois entram redução, adicional, fundo, crédito admitido, vedação, estorno e forma de recolhimento.",
+                "Carga efetiva é resultado, não ponto de partida. Quando a norma fala em carga reduzida, crédito presumido ou regime especial, o cadastro fiscal precisa demonstrar como a carga foi alcançada.",
+                "DIFAL, importação, ST e consumidor final exigem memória própria porque mudam base, responsável, guia, prazo e documento. Em auditoria, o cálculo precisa ser reconstruível a partir do XML e da EFD.",
+            ],
+            "departments": "Fiscal parametriza base, alíquota, fundo, DIFAL e guia. Contábil concilia imposto, crédito e custo. Financeiro guarda recolhimentos. Auditoria compara cadastro, XML, EFD e memória de cálculo.",
+            "documents": "XML, NCM, tabela de alíquotas, demonstrativo de base, guia de recolhimento, GNRE quando houver, EFD, planilha de apuração, laudo ou enquadramento setorial.",
+            "risks": "Trocar redução de base por alíquota menor; esquecer adicional ou fundo; aplicar alíquota de período errado; calcular DIFAL sem destinatário e finalidade; não separar crédito comum de crédito presumido.",
+        },
+        {
+            "id": "beneficios-matriz-lc160",
+            "title": "Benefícios fiscais: matriz legal, LC 160, CONFAZ, condições e contrapartidas",
+            "summary": f"O roteiro para ler benefícios de {name}: lei estadual, RICMS, convênio, reinstituição, termo, prazo, condição, vedação, fundo e prova mensal.",
+            "theme": "Benefícios fiscais",
+            "refs": (
+                _source_refs(benefits, ["benefício fiscal", "Convênio ICMS", "LC 160", "isenção", "redução de base", "crédito presumido", "diferimento", "suspensão"])
+                + _source_refs(programs, ["benefício", "incentivo", "regime especial", "contrapartida", "termo", cfg["fund_name"]])
+            ),
+            "analysis": [
+                "Benefício fiscal é exceção expressa. Ele pode aparecer como isenção, redução de base, crédito presumido, crédito outorgado, diferimento, suspensão, regime especial, dilação de prazo ou tratamento setorial.",
+                "A LC 160/2017 e o Convênio ICMS 190/2017 não substituem a leitura do ato material. Eles organizam convalidação e reinstituição, mas a aplicação concreta continua dependendo do dispositivo estadual, da mercadoria, da operação, do destinatário e da condição.",
+                f"Em {name}, a fruição precisa ser tratada como rotina de prova. {cfg['fund_name']} não são detalhes administrativos: normalmente são a diferença entre benefício defensável e glosa.",
+            ],
+            "departments": "Jurídico mantém matriz de ato, vigência, condição e vedação. Fiscal transforma a regra em CST, CFOP, cBenef quando exigido, ajuste e EFD. Contábil mede crédito, estorno e resultado. Financeiro controla fundos e recolhimentos.",
+            "documents": "Lei, decreto, anexo, convênio, termo de opção ou regime, XML, EFD, cBenef quando aplicável, guia, memória de cálculo, comprovação de condição e dossiê por benefício.",
+            "risks": "Usar benefício por analogia econômica; ignorar prazo ou convênio; acumular benefícios incompatíveis; deixar de recolher fundo; aplicar crédito presumido sem termo ou sem estorno exigido.",
+        },
+        {
+            "id": "isencoes-reducoes-creditos",
+            "title": "Isenções, reduções de base, crédito presumido e grupos de benefícios",
+            "summary": "Capítulo por grupos: alimentos, agro, medicamentos e saúde, informática e eletrônicos, veículos, energia, transporte, importação, indústria, comércio, máquinas, equipamentos e regimes especiais.",
+            "theme": "Benefícios por grupo",
+            "refs": _source_refs(benefits, ["ISENÇÕES", "isenção", "REDUÇÕES", "redução de base", "crédito presumido", "créditos outorgados", "produtos", "máquinas", "veículos", "medicamentos", "informática", "agropecuários"]),
+            "analysis": [
+                "A leitura por grupo evita o erro comum de procurar somente uma palavra. Alimentos, agro, medicamentos, eletrônicos, informática, veículos, energia, transporte, importação e indústria podem usar técnicas diferentes: isenção, redução, crédito presumido, diferimento ou regime especial.",
+                "A descrição legal manda mais que o nome comercial. Produto, NCM, operação, destinatário, finalidade, prazo, convênio de suporte e manutenção ou estorno de crédito precisam aparecer no dossiê.",
+                "Crédito presumido e crédito outorgado não são crédito comum. A empresa deve demonstrar base do crédito, percentual, limite, vedação de acúmulo, estorno do crédito de entrada quando exigido e reflexo na apuração.",
+            ],
+            "departments": "Fiscal parametriza CST, CFOP, cBenef quando houver, benefício e ajuste. Compras e comercial validam NCM, produto e destinatário. Contábil separa crédito comum e presumido. Jurídico revisa condição, prazo e vedação.",
+            "documents": "XML, NCM, ficha técnica, laudo quando necessário, contrato, EFD, memória de cálculo, termo ou regime, guia, convênio e fundamento legal no cadastro fiscal.",
+            "risks": "Ampliar isenção por analogia; usar redução para produto fora da descrição; manter crédito quando a regra exige estorno; somar crédito presumido com benefício incompatível; esquecer cBenef ou código documental.",
+        },
+        {
+            "id": "creditos-exportacao-acumulado",
+            "title": "Exportação, manutenção de créditos, saldo credor e crédito acumulado",
+            "summary": "Como ler exportação e créditos: não incidência, fim específico de exportação, manutenção de crédito, saldo credor, transferência, apropriação e prova documental.",
+            "theme": "Exportação e créditos",
+            "refs": (
+                _source_refs(law, ["exterior", "exportação", "crédito", "saldo credor", "manutenção do crédito", "transferência de crédito"])
+                + _source_refs(ricms, ["exterior", "exportação", "crédito acumulado", "saldo credor", "apropriação do crédito", "transferência de crédito"])
+                + _source_refs(programs, ["crédito", "transferência", "habilitados", "exportação"])
+            ),
+            "analysis": [
+                "Exportação não é apenas uma saída sem débito. O ponto sensível é provar que a operação chegou ao exterior ou saiu com fim específico, e que o crédito mantido decorre de entradas vinculadas a essa cadeia.",
+                "Saldo credor e crédito acumulado exigem método. A empresa precisa separar crédito comum, crédito incentivado, estorno, apropriação, autorização de uso ou transferência e eventual limite por regime.",
+                "Quando houver programa de transferência de crédito ou tratamento especial, o controle passa a ser jurídico, fiscal e financeiro ao mesmo tempo: ato, habilitação, contrapartida, escrituração e comprovação de uso.",
+            ],
+            "departments": "Exportação e logística guardam documentos aduaneiros. Fiscal vincula CFOP, CST, EFD e crédito. Contábil reconstrói saldo. Financeiro acompanha transferência, autorização e recebimento. Jurídico valida regime e prazo.",
+            "documents": "NF-e, DU-E, contrato de câmbio quando aplicável, comprovante de exportação, EFD, razão do crédito, memória de saldo, autorização de transferência e dossiê de entradas vinculadas.",
+            "risks": "Manter crédito sem provar exportação; transferir crédito sem autorização; misturar crédito comum e crédito presumido; esquecer estorno; não reconciliar saldo credor com a EFD.",
+        },
+        {
+            "id": "diferimento-regimes-especiais",
+            "title": f"Diferimento, suspensão, regimes especiais e {cfg['program_name']}",
+            "summary": f"A leitura dos tratamentos condicionados em {name}: quando o pagamento fica para etapa posterior, quando há termo, quando há requisito operacional e como provar a fruição.",
+            "theme": "Regimes especiais",
+            "refs": (
+                _source_refs(ricms, ["diferimento", "suspensão", "regime especial", "tratamento tributário", "termo de acordo", "credenciamento"])
+                + _source_refs(programs, ["diferimento", "suspensão", "regime especial", "crédito presumido", "incentivo", "termo", "opção"])
+            ),
+            "analysis": [
+                "Diferimento e suspensão não encerram o imposto; eles deslocam a exigência ou condicionam a cobrança a evento posterior. O risco aparece quando a empresa não controla o encerramento.",
+                f"{cfg['program_name']} devem ser lidos como contrato fiscal com o Estado: ato, prazo, condição, estabelecimento, produto, investimento, regularidade e escrituração compõem a prova.",
+                "Regime especial sem rotina de acompanhamento perde força. O benefício precisa aparecer no documento, na EFD, na apuração, no financeiro e no arquivo jurídico.",
+            ],
+            "departments": "Jurídico acompanha ato e vigência. Fiscal controla diferimento, suspensão, regime e EFD. Operações prova destino e etapa posterior. Contábil mede efeito. Financeiro guarda pagamentos e garantias.",
+            "documents": "Termo de acordo, despacho ou regime, XML, EFD, memória de diferimento, prova de destino, guia, relatório de cumprimento de condição e evidência de regularidade fiscal.",
+            "risks": "Tratar diferimento como isenção; esquecer evento de encerramento; aplicar regime a produto ou estabelecimento não autorizado; não renovar termo; não provar condição operacional.",
+        },
+        {
+            "id": "st-antecipacao-segmentos",
+            "title": "Substituição tributária, antecipação, MVA, segmentos, CEST e responsabilidade",
+            "summary": f"Como {name} organiza ST: mercadoria, NCM, CEST, protocolo ou convênio, base presumida, MVA, responsável, antecipação, ressarcimento e prova da retenção.",
+            "theme": "Responsabilidade tributária",
+            "refs": (
+                _source_refs(law, ["substituição tributária", "responsável", "retenção", "antecipação", "mercadorias"])
+                + _source_refs(st_sources, ["SUBSTITUIÇÃO TRIBUTÁRIA", "substituição tributária", "MVA", "CEST", "responsável", "ressarcimento", "antecipação"])
+            ),
+            "analysis": [
+                "ST não é benefício fiscal. É técnica de responsabilidade que desloca o recolhimento para outro sujeito. Por isso, a primeira leitura é mercadoria, NCM, CEST, segmento, origem, destino e convênio ou protocolo aplicável.",
+                "A base presumida precisa ser documentada: preço, pauta, margem, MVA ajustada, redução de base, alíquota e eventual adicional. O XML deve permitir reconstituir o cálculo.",
+                "Ressarcimento, complemento ou restituição exigem comparação entre base presumida e operação real, além de controle por item. Sem EFD e XML consistentes, a tese fica frágil.",
+            ],
+            "departments": "Fiscal parametriza NCM, CEST, MVA, base e responsável. Compras valida fornecedor e retenção. Comercial avalia preço final. Contábil controla ressarcimento e complemento. Jurídico acompanha convênios e protocolos.",
+            "documents": "XML com ICMS-ST, CEST, NCM, planilha de MVA, protocolo ou convênio, EFD, GNRE ou guia, comprovante de retenção, pedido de ressarcimento e memória por item.",
+            "risks": "Usar ST para mercadoria fora da lista; aplicar MVA errada; ignorar redução de base; não recolher antecipação; perder ressarcimento por falta de XML e EFD por item.",
+        },
+        {
+            "id": "documentos-efd-prova",
+            "title": "Documentos fiscais, EFD, cBenef, códigos, NFe e prova do benefício",
+            "summary": "Como a legislação vira prova: NF-e, CT-e, EFD ICMS/IPI, cBenef quando exigido, código de ajuste, livro fiscal, guia, memória de cálculo e dossiê de fruição.",
+            "theme": "Prova fiscal",
+            "refs": (
+                _source_refs(docs_sources, ["EFD", "SPED", "Nota Fiscal Eletrônica", "NF-e", "documento fiscal", "cBenef", "Código de Benefício Fiscal", "registro", "ajuste"])
+                + _source_refs(benefits, ["documento fiscal", "EFD", "cBenef", "crédito presumido", "redução de base", "diferimento"])
+            ),
+            "analysis": [
+                "Benefício bom precisa aparecer no documento certo. A lei pode autorizar a fruição, mas o XML, a EFD, o código de ajuste, o cBenef quando exigido e a memória de cálculo precisam contar a mesma história.",
+                "A prova deve ser mensal. Não basta guardar o ato legal; é preciso manter dossiê por benefício, por estabelecimento e por período, com cálculo, condição, documento e escrituração.",
+                "Quando o Estado exige cBenef ou código específico, o erro deixa de ser só formal. Ele prejudica a leitura da operação pela fiscalização e pode travar autorização, escrituração ou defesa.",
+            ],
+            "departments": "Fiscal emite e escritura. TI/ERP parametriza códigos. Contábil concilia. Financeiro guarda guias. Jurídico mantém ato e vigência. Auditoria testa aderência entre cadastro, XML e EFD.",
+            "documents": "NF-e, NFC-e, CT-e, EFD ICMS/IPI, código de ajuste, cBenef quando aplicável, guia, memória de cálculo, termo de regime, planilha por item e parecer de enquadramento.",
+            "risks": "Documento sem código de benefício; EFD sem ajuste; XML com CST incompatível; guia sem vínculo; cadastro fiscal desatualizado; dossiê incapaz de provar condição ou cálculo.",
+        },
+        {
+            "id": "mapa-revisado-beneficios",
+            "title": "Mapa revisado dos benefícios por setor, produto e técnica tributária",
+            "summary": "Índice de estudo dos benefícios: agro, alimentos, saúde, medicamentos, informática, eletrônicos, máquinas, veículos, energia, transporte, importação, indústria, comércio e regimes especiais.",
+            "theme": "Mapa dos benefícios",
+            "refs": (
+                _source_refs(benefits, ["isenção", "redução de base", "crédito presumido", "diferimento", "suspensão", "veículos", "medicamentos", "energia", "máquinas", "agropecuários", "informática"])
+                + _source_refs(programs, ["programa", "incentivo", "regime especial", "crédito", "investimento", "termo", "opção"])
+                + _source_refs(docs_sources, ["EFD", "cBenef", "documento fiscal", "Código de Benefício Fiscal"])
+            ),
+            "analysis": [
+                "Este mapa é a mesa de trabalho do consultor: primeiro classifique o benefício pela técnica, depois pelo setor e só então pela mercadoria ou operação.",
+                "Os grupos de leitura são alimentos e cesta básica, agro e insumos, saúde e medicamentos, informática e eletrônicos, máquinas e equipamentos, veículos, energia, transporte, importação, indústria, atacado e comércio.",
+                "Cada grupo deve terminar com a mesma pergunta: qual é o dispositivo, qual é a condição, qual é o prazo, há vedação de acúmulo, há fundo ou termo, como isso sai no documento e como aparece na EFD?",
+            ],
+            "departments": "Consultoria monta matriz. Fiscal aplica. Comercial e compras validam produto e destinatário. Contábil testa efeito econômico. Jurídico valida base legal. Auditoria revisa prova por período.",
+            "documents": "Matriz de benefícios, dispositivo legal, NCM, setor, destinatário, XML, EFD, guia, cBenef quando exigido, termo, prova de condição e revisão de vigência.",
+            "risks": "Transformar benefício setorial em regra geral; usar notícia como norma; ignorar prazo; aplicar por NCM parecida; não controlar vedação de acúmulo; não guardar prova documental.",
+        },
+        {
+            "id": "fiscalizacao-riscos",
+            "title": "Fiscalização, autuação, glosa, penalidades e defesa do enquadramento",
+            "summary": "Como defender o ICMS aplicado: reconstrução da operação, prova de benefício, glosa de crédito, penalidade, consulta, retificação e correção de cadastro.",
+            "theme": "Fiscalização e risco",
+            "refs": (
+                _source_refs(law, ["penalidade", "infração", "fiscalização", "auto de infração", "crédito tributário", "multa"])
+                + _source_refs(ricms, ["fiscalização", "penalidade", "glosa", "auto de infração", "crédito tributário", "documentos fiscais"])
+                + _source_refs(docs_sources, ["documento fiscal", "EFD", "NF-e", "cBenef", "registro"])
+            ),
+            "analysis": [
+                "A fiscalização normalmente ataca a distância entre benefício informado e prova disponível. O direito pode estar no anexo, mas cai se cadastro, XML, EFD, guia e condição não conversam.",
+                "Glosa de crédito e perda de benefício costumam nascer de falhas simples: produto fora da descrição, destinatário errado, vigência encerrada, regime vencido, código documental incorreto ou ausência de prova.",
+                "Defesa boa começa antes da autuação. O portal deve ensinar a manter dossiê mensal, parecer de enquadramento, conciliação contábil e rotina de revisão de alteração normativa.",
+            ],
+            "departments": "Jurídico conduz consulta, defesa e matriz de risco. Fiscal reconstrói XML e EFD. Contábil mede crédito, estorno e provisão. Financeiro guarda guias. Auditoria corrige cadastro e causa raiz.",
+            "documents": "Auto de infração, intimação, consulta tributária, XML, EFD, guia, parecer de enquadramento, regime especial, memória de cálculo, relatório de correção e provas operacionais.",
+            "risks": "Defender benefício sem dossiê; corrigir guia sem retificar EFD; pagar autuação sem ajustar cadastro; ignorar alteração normativa; não provar condição, vigência ou operação real.",
+        },
+    ]
+
+
+for _uf, _cfg in STANDARD_STATE_SOURCE_SETS.items():
+    CONFIGURED_STATE_PROFILES[_uf] = _standard_state_profile(_uf, _cfg)
+    CONFIGURED_STATE_CHAPTERS[_uf] = _standard_state_chapters(_uf, _cfg)
+
+
 def slug(value: str) -> str:
     normalized = unicodedata.normalize("NFKD", value)
     ascii_text = normalized.encode("ascii", "ignore").decode("ascii")
@@ -2613,11 +2914,26 @@ def paragraph_candidates(text: str) -> list[str]:
     cleaned = []
     for chunk in chunks:
         value = re.sub(r"\s+", " ", chunk).strip()
+        value = re.sub(r"={5,}\s*P[ÁA]GINA\s+\d+\s*={5,}", " ", value, flags=re.I)
+        value = re.sub(r"={8,}|-{8,}|\.{6,}", " ", value)
+        value = re.sub(r"\s+", " ", value).strip()
         if len(value) < 180:
             continue
-        if re.search(r"\.{6,}|={8,}|-{8,}", value):
-            continue
         cleaned.append(value)
+    if not cleaned:
+        lines = []
+        skip_prefixes = ("TITULO:", "TEMA:", "TIPO:", "FONTE PUBLICA:", "DATA DA CAPTURA:", "TEXTO EXTRAIDO")
+        for raw_line in text.splitlines():
+            line = raw_line.strip()
+            if not line or line.startswith("=====") or any(line.startswith(prefix) for prefix in skip_prefixes):
+                continue
+            lines.append(line)
+        for index in range(0, len(lines), 24):
+            value = re.sub(r"\s+", " ", " ".join(lines[index:index + 24])).strip()
+            if len(value) >= 180:
+                cleaned.append(value)
+            if len(cleaned) >= 80:
+                break
     return cleaned
 
 
@@ -2839,7 +3155,12 @@ def clean_law_segment(text: str, limit: int = 12000) -> str:
             continue
         if stripped.startswith("====="):
             continue
-        if any(stripped.startswith(prefix) for prefix in skip_prefixes):
+        if stripped == "TEXTO EXTRAIDO":
+            continue
+        if stripped.startswith("TEXTO EXTRAIDO "):
+            line = stripped.replace("TEXTO EXTRAIDO ", "", 1)
+            stripped = line.strip()
+        if any(stripped.startswith(prefix) for prefix in skip_prefixes if prefix != "TEXTO EXTRAIDO"):
             continue
         if stripped.lower().endswith(".doc") and len(stripped) < 80:
             continue

@@ -3795,6 +3795,146 @@
       ]
     },
     {
+      "source_id": "state-pr-pr-lei-11580-1996-icms",
+      "jurisdiction": "PR",
+      "title": "Lei n. 11.580/1996 - ICMS do Estado do Parana",
+      "short": "Lei material do ICMS",
+      "official_url": "https://www.sefanet.pr.gov.br/dados/SEFADOCUMENTOS/7199611580.pdf",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "data/fontes-estaduais-curadas/sul/PR/PR_LEI_11580_1996_ICMS_2026-04-26.txt"
+        ],
+        "sha256": {
+          "PR_LEI_11580_1996_ICMS_2026-04-26.txt": "077bfb8282d06686ac3a50873dfc4b835cef4d572dfb3de98f457b172f378569"
+        },
+        "fetch_url": "https://www.sefanet.pr.gov.br/dados/SEFADOCUMENTOS/7199611580.pdf"
+      },
+      "note": "Texto estadual de ICMS publicado em estados/pr/legislacao/fontes/pr-lei-11580-1996-icms.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-pr",
+          "module_title": "Paraná: ICMS e benefícios fiscais em tela",
+          "chapters": [
+            "icms-regra-matriz",
+            "base-aliquota-apuracao",
+            "creditos-exportacao-acumulado",
+            "st-antecipacao-segmentos",
+            "fiscalizacao-riscos"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-pr-pr-dec-7871-2017-ricms",
+      "jurisdiction": "PR",
+      "title": "Decreto n. 7.871/2017 - RICMS/PR integral",
+      "short": "Regulamento do ICMS e beneficios fiscais de ICMS",
+      "official_url": "https://www.fazenda.pr.gov.br/sites/default/arquivos_restritos/files/documento/2020-06/106201707871.pdf",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "data/fontes-estaduais-curadas/sul/PR/PR_DEC_7871_2017_RICMS_2026-04-26.txt"
+        ],
+        "sha256": {
+          "PR_DEC_7871_2017_RICMS_2026-04-26.txt": "f666fce3cd7a249db24876b9b36a620760ebd363319bcf47222e8233acefe6f4"
+        },
+        "fetch_url": "https://www.fazenda.pr.gov.br/sites/default/arquivos_restritos/files/documento/2020-06/106201707871.pdf"
+      },
+      "note": "Texto estadual de ICMS publicado em estados/pr/legislacao/fontes/pr-dec-7871-2017-ricms.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-pr",
+          "module_title": "Paraná: ICMS e benefícios fiscais em tela",
+          "chapters": [
+            "icms-regra-matriz",
+            "base-aliquota-apuracao",
+            "beneficios-matriz-lc160",
+            "isencoes-reducoes-creditos",
+            "creditos-exportacao-acumulado",
+            "diferimento-regimes-especiais",
+            "st-antecipacao-segmentos",
+            "documentos-efd-prova",
+            "mapa-revisado-beneficios",
+            "fiscalizacao-riscos"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-pr-pr-portal-beneficios-gerais",
+      "jurisdiction": "PR",
+      "title": "SEFA/PR - Beneficios fiscais de carater geral",
+      "short": "Beneficios fiscais de ICMS",
+      "official_url": "https://www.fazenda.pr.gov.br/Pagina/Beneficios-Fiscais-de-Carater-Geral",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "data/fontes-estaduais-curadas/sul/PR/PR_PORTAL_BENEFICIOS_GERAIS_2026-04-26.txt"
+        ],
+        "sha256": {
+          "PR_PORTAL_BENEFICIOS_GERAIS_2026-04-26.txt": "f3628bfb262a016ae49a1a5beb8995b15ed9a652feff4fe601fdc0e0a0a13ea1"
+        },
+        "fetch_url": "https://www.fazenda.pr.gov.br/Pagina/Beneficios-Fiscais-de-Carater-Geral"
+      },
+      "note": "Texto estadual de ICMS publicado em estados/pr/legislacao/fontes/pr-portal-beneficios-gerais.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-pr",
+          "module_title": "Paraná: ICMS e benefícios fiscais em tela",
+          "chapters": [
+            "beneficios-matriz-lc160",
+            "isencoes-reducoes-creditos",
+            "documentos-efd-prova",
+            "mapa-revisado-beneficios"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-pr-pr-programa-parana-competitivo",
+      "jurisdiction": "PR",
+      "title": "SEFA/PR - Programa Parana Competitivo",
+      "short": "Beneficios fiscais de ICMS",
+      "official_url": "https://www.fazenda.pr.gov.br/Pagina/Parana-Competitivo",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "data/fontes-estaduais-curadas/sul/PR/PR_PROGRAMA_PARANA_COMPETITIVO_2026-04-26.txt"
+        ],
+        "sha256": {
+          "PR_PROGRAMA_PARANA_COMPETITIVO_2026-04-26.txt": "e9292c9b11ddcbaad233b509cc40bdc1b14fa78a99dfcefe2c7c439075d209ad"
+        },
+        "fetch_url": "https://www.fazenda.pr.gov.br/Pagina/Parana-Competitivo"
+      },
+      "note": "Texto estadual de ICMS publicado em estados/pr/legislacao/fontes/pr-programa-parana-competitivo.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-pr",
+          "module_title": "Paraná: ICMS e benefícios fiscais em tela",
+          "chapters": [
+            "base-aliquota-apuracao",
+            "beneficios-matriz-lc160",
+            "creditos-exportacao-acumulado",
+            "diferimento-regimes-especiais",
+            "mapa-revisado-beneficios"
+          ]
+        }
+      ]
+    },
+    {
       "source_id": "state-rj-rj-lei-2657-1996-icms",
       "jurisdiction": "RJ",
       "title": "Lei n. 2.657/1996 - ICMS do Estado do Rio de Janeiro",
@@ -5152,6 +5292,589 @@
             "isencoes-reducoes-creditos",
             "agro-cesta-diferimento",
             "documentos-cbenef-efd-prova",
+            "fiscalizacao-riscos"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-rs-rs-dec-37699-1997-ricms",
+      "jurisdiction": "RS",
+      "title": "Decreto n. 37.699/1997 - RICMS/RS integral",
+      "short": "Regulamento do ICMS e beneficios fiscais de ICMS",
+      "official_url": "http://www.legislacao.sefaz.rs.gov.br/Site/DocumentView.aspx?inpKey=109362&inpCodDispositive=0&inpStToValidateDoc=&inpForceEdit=&inpDtTimeTunnel=&inpDsKeywords=&Debug=",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "data/fontes-estaduais-curadas/sul/RS/RS_DEC_37699_1997_RICMS_2026-04-26.txt"
+        ],
+        "sha256": {
+          "RS_DEC_37699_1997_RICMS_2026-04-26.txt": "ea57050509baa35ea1542f591079daf7dbf84918f3d73ca65935bcc7d1965f71"
+        },
+        "fetch_url": "http://www.legislacao.sefaz.rs.gov.br/Site/DocumentView.aspx?inpKey=109362&inpCodDispositive=0&inpStToValidateDoc=&inpForceEdit=&inpDtTimeTunnel=&inpDsKeywords=&Debug="
+      },
+      "note": "Texto estadual de ICMS publicado em estados/rs/legislacao/fontes/rs-dec-37699-1997-ricms.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-rs",
+          "module_title": "Rio Grande do Sul: ICMS e benefícios fiscais em tela",
+          "chapters": [
+            "icms-regra-matriz",
+            "base-aliquota-apuracao",
+            "beneficios-matriz-lc160",
+            "isencoes-reducoes-creditos",
+            "creditos-exportacao-acumulado",
+            "diferimento-regimes-especiais",
+            "st-antecipacao-segmentos",
+            "documentos-efd-prova",
+            "mapa-revisado-beneficios",
+            "fiscalizacao-riscos"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-rs-rs-icms-importacao-fundamentos",
+      "jurisdiction": "RS",
+      "title": "Receita Estadual/RS - Fundamentos do ICMS importacao",
+      "short": "Regulamento do ICMS",
+      "official_url": "https://atendimento.receita.rs.gov.br/dos-fundamentos-basicos-do-icms-importacao",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "data/fontes-estaduais-curadas/sul/RS/RS_ICMS_IMPORTACAO_FUNDAMENTOS_2026-04-26.txt"
+        ],
+        "sha256": {
+          "RS_ICMS_IMPORTACAO_FUNDAMENTOS_2026-04-26.txt": "88ccf2d1835fdf2318017de40adc4311a866c615e934b9264b3d28af9ee8e2fa"
+        },
+        "fetch_url": "https://atendimento.receita.rs.gov.br/dos-fundamentos-basicos-do-icms-importacao"
+      },
+      "note": "Texto estadual de ICMS publicado em estados/rs/legislacao/fontes/rs-icms-importacao-fundamentos.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-rs",
+          "module_title": "Rio Grande do Sul: ICMS e benefícios fiscais em tela",
+          "chapters": [
+            "documentos-efd-prova",
+            "mapa-revisado-beneficios",
+            "fiscalizacao-riscos"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-rs-rs-ampara-rs",
+      "jurisdiction": "RS",
+      "title": "Receita Estadual/RS - Pagamento do AMPARA-RS",
+      "short": "Base de calculo, aliquotas e transporte",
+      "official_url": "https://atendimento.receita.rs.gov.br/pagamento-do-ampara-rs",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "data/fontes-estaduais-curadas/sul/RS/RS_AMPARA_RS_2026-04-26.txt"
+        ],
+        "sha256": {
+          "RS_AMPARA_RS_2026-04-26.txt": "c157e373e20f907458d3e8ade0f84e5c80a87f701c8541f3699e50dd3cc487ec"
+        },
+        "fetch_url": "https://atendimento.receita.rs.gov.br/pagamento-do-ampara-rs"
+      },
+      "note": "Texto estadual de ICMS publicado em estados/rs/legislacao/fontes/rs-ampara-rs.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-rs",
+          "module_title": "Rio Grande do Sul: ICMS e benefícios fiscais em tela",
+          "chapters": [
+            "base-aliquota-apuracao",
+            "beneficios-matriz-lc160",
+            "creditos-exportacao-acumulado",
+            "diferimento-regimes-especiais",
+            "documentos-efd-prova",
+            "mapa-revisado-beneficios",
+            "fiscalizacao-riscos"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-rs-rs-credito-presumido-demais-casos",
+      "jurisdiction": "RS",
+      "title": "Receita Estadual/RS - Opcao ao credito presumido: demais casos",
+      "short": "Beneficios fiscais de ICMS",
+      "official_url": "https://receita.fazenda.rs.gov.br/servicos-a-empresas/servicos?servico=2959",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "data/fontes-estaduais-curadas/sul/RS/RS_CREDITO_PRESUMIDO_DEMAIS_CASOS_2026-04-26.txt"
+        ],
+        "sha256": {
+          "RS_CREDITO_PRESUMIDO_DEMAIS_CASOS_2026-04-26.txt": "34d42a1d1b63898fe7d21b5ad25e190c29d3dd0e6a16b1642921ab08e689c4f7"
+        },
+        "fetch_url": "https://receita.fazenda.rs.gov.br/servicos-a-empresas/servicos?servico=2959"
+      },
+      "note": "Texto estadual de ICMS publicado em estados/rs/legislacao/fontes/rs-credito-presumido-demais-casos.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-rs",
+          "module_title": "Rio Grande do Sul: ICMS e benefícios fiscais em tela",
+          "chapters": [
+            "base-aliquota-apuracao",
+            "beneficios-matriz-lc160",
+            "isencoes-reducoes-creditos",
+            "creditos-exportacao-acumulado",
+            "diferimento-regimes-especiais",
+            "documentos-efd-prova",
+            "mapa-revisado-beneficios"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-rs-rs-credito-presumido-importacao",
+      "jurisdiction": "RS",
+      "title": "Receita Estadual/RS - Credito presumido vinculado a importacao",
+      "short": "Beneficios fiscais de ICMS",
+      "official_url": "https://receita.fazenda.rs.gov.br/servicos-a-empresas/servicos?servico=1693",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "data/fontes-estaduais-curadas/sul/RS/RS_CREDITO_PRESUMIDO_IMPORTACAO_2026-04-26.txt"
+        ],
+        "sha256": {
+          "RS_CREDITO_PRESUMIDO_IMPORTACAO_2026-04-26.txt": "05af634bc1595c5a13b1e462235e26be22c1b177fd37062a023b32976b06ea29"
+        },
+        "fetch_url": "https://receita.fazenda.rs.gov.br/servicos-a-empresas/servicos?servico=1693"
+      },
+      "note": "Texto estadual de ICMS publicado em estados/rs/legislacao/fontes/rs-credito-presumido-importacao.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-rs",
+          "module_title": "Rio Grande do Sul: ICMS e benefícios fiscais em tela",
+          "chapters": [
+            "base-aliquota-apuracao",
+            "beneficios-matriz-lc160",
+            "isencoes-reducoes-creditos",
+            "creditos-exportacao-acumulado",
+            "diferimento-regimes-especiais",
+            "documentos-efd-prova",
+            "mapa-revisado-beneficios"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-sc-sc-ricms-2001-regulamento",
+      "jurisdiction": "SC",
+      "title": "Decreto n. 2.870/2001 - RICMS/SC parte geral",
+      "short": "Regulamento do ICMS",
+      "official_url": "https://legislacao.sef.sc.gov.br/html/regulamentos/icms/ricms_01_00.htm",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "data/fontes-estaduais-curadas/sul/SC/SC_RICMS_2001_REGULAMENTO_2026-04-26.txt"
+        ],
+        "sha256": {
+          "SC_RICMS_2001_REGULAMENTO_2026-04-26.txt": "3cf454af93aa8240e5d1405611417326ca0696e65ddf88337f11d3762d425d15"
+        },
+        "fetch_url": "https://legislacao.sef.sc.gov.br/html/regulamentos/icms/ricms_01_00.htm"
+      },
+      "note": "Texto estadual de ICMS publicado em estados/sc/legislacao/fontes/sc-ricms-2001-regulamento.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-sc",
+          "module_title": "Santa Catarina: ICMS e benefícios fiscais em tela",
+          "chapters": [
+            "icms-regra-matriz",
+            "base-aliquota-apuracao",
+            "creditos-exportacao-acumulado",
+            "diferimento-regimes-especiais",
+            "st-antecipacao-segmentos",
+            "fiscalizacao-riscos"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-sc-sc-ricms-anexo-1",
+      "jurisdiction": "SC",
+      "title": "RICMS/SC - Anexo 1",
+      "short": "Regulamento do ICMS",
+      "official_url": "https://legislacao.sef.sc.gov.br/html/regulamentos/icms/ricms_01_01.htm",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "data/fontes-estaduais-curadas/sul/SC/SC_RICMS_ANEXO_1_2026-04-26.txt"
+        ],
+        "sha256": {
+          "SC_RICMS_ANEXO_1_2026-04-26.txt": "b9f1a1970424627bc48e1bdf6b8ee71d6767ae0a520b48d0e97922d8982b0f15"
+        },
+        "fetch_url": "https://legislacao.sef.sc.gov.br/html/regulamentos/icms/ricms_01_01.htm"
+      },
+      "note": "Texto estadual de ICMS publicado em estados/sc/legislacao/fontes/sc-ricms-anexo-1.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-sc",
+          "module_title": "Santa Catarina: ICMS e benefícios fiscais em tela",
+          "chapters": [
+            "icms-regra-matriz",
+            "base-aliquota-apuracao",
+            "creditos-exportacao-acumulado",
+            "diferimento-regimes-especiais",
+            "fiscalizacao-riscos"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-sc-sc-ricms-anexo-2-beneficios",
+      "jurisdiction": "SC",
+      "title": "RICMS/SC - Anexo 2 - Beneficios fiscais",
+      "short": "Beneficios fiscais de ICMS",
+      "official_url": "https://legislacao.sef.sc.gov.br/html/regulamentos/icms/ricms_01_02.htm",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "data/fontes-estaduais-curadas/sul/SC/SC_RICMS_ANEXO_2_BENEFICIOS_2026-04-26.txt"
+        ],
+        "sha256": {
+          "SC_RICMS_ANEXO_2_BENEFICIOS_2026-04-26.txt": "da8b3e384bed0e5a67f389d55bc57fef4882fbf3b3e05b0a3f3d02409be60f33"
+        },
+        "fetch_url": "https://legislacao.sef.sc.gov.br/html/regulamentos/icms/ricms_01_02.htm"
+      },
+      "note": "Texto estadual de ICMS publicado em estados/sc/legislacao/fontes/sc-ricms-anexo-2-beneficios.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-sc",
+          "module_title": "Santa Catarina: ICMS e benefícios fiscais em tela",
+          "chapters": [
+            "base-aliquota-apuracao",
+            "beneficios-matriz-lc160",
+            "isencoes-reducoes-creditos",
+            "creditos-exportacao-acumulado",
+            "diferimento-regimes-especiais",
+            "documentos-efd-prova",
+            "mapa-revisado-beneficios"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-sc-sc-ricms-anexo-3-st",
+      "jurisdiction": "SC",
+      "title": "RICMS/SC - Anexo 3 - Substituicao tributaria",
+      "short": "Substituicao tributaria e antecipacao",
+      "official_url": "https://legislacao.sef.sc.gov.br/html/regulamentos/icms/ricms_01_03.htm",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "data/fontes-estaduais-curadas/sul/SC/SC_RICMS_ANEXO_3_ST_2026-04-26.txt"
+        ],
+        "sha256": {
+          "SC_RICMS_ANEXO_3_ST_2026-04-26.txt": "701537904134098391a599c20cde9951e3d247b8a7e449d0b95a6fa2cfd4753e"
+        },
+        "fetch_url": "https://legislacao.sef.sc.gov.br/html/regulamentos/icms/ricms_01_03.htm"
+      },
+      "note": "Texto estadual de ICMS publicado em estados/sc/legislacao/fontes/sc-ricms-anexo-3-st.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-sc",
+          "module_title": "Santa Catarina: ICMS e benefícios fiscais em tela",
+          "chapters": [
+            "st-antecipacao-segmentos"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-sc-sc-ricms-anexo-5-obrigacoes",
+      "jurisdiction": "SC",
+      "title": "RICMS/SC - Anexo 5 - Obrigacoes acessorias",
+      "short": "Obrigacoes acessorias e documentos",
+      "official_url": "https://legislacao.sef.sc.gov.br/html/regulamentos/icms/ricms_01_05.htm",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "data/fontes-estaduais-curadas/sul/SC/SC_RICMS_ANEXO_5_OBRIGACOES_2026-04-26.txt"
+        ],
+        "sha256": {
+          "SC_RICMS_ANEXO_5_OBRIGACOES_2026-04-26.txt": "3852e11525e266dc8b21f718d0d1d53b0dca7ccac3614a62e4edc5efbb5d9108"
+        },
+        "fetch_url": "https://legislacao.sef.sc.gov.br/html/regulamentos/icms/ricms_01_05.htm"
+      },
+      "note": "Texto estadual de ICMS publicado em estados/sc/legislacao/fontes/sc-ricms-anexo-5-obrigacoes.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-sc",
+          "module_title": "Santa Catarina: ICMS e benefícios fiscais em tela",
+          "chapters": [
+            "documentos-efd-prova",
+            "mapa-revisado-beneficios",
+            "fiscalizacao-riscos"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-sc-sc-ricms-anexo-6-regimes-especiais",
+      "jurisdiction": "SC",
+      "title": "RICMS/SC - Anexo 6 - Regimes especiais",
+      "short": "Beneficios fiscais de ICMS",
+      "official_url": "https://legislacao.sef.sc.gov.br/html/regulamentos/icms/ricms_01_06.htm",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "data/fontes-estaduais-curadas/sul/SC/SC_RICMS_ANEXO_6_REGIMES_ESPECIAIS_2026-04-26.txt"
+        ],
+        "sha256": {
+          "SC_RICMS_ANEXO_6_REGIMES_ESPECIAIS_2026-04-26.txt": "b181e4d66eb831d174d2cc97ef581a87e4c22c4d8d15654226f0b48f8b8996d5"
+        },
+        "fetch_url": "https://legislacao.sef.sc.gov.br/html/regulamentos/icms/ricms_01_06.htm"
+      },
+      "note": "Texto estadual de ICMS publicado em estados/sc/legislacao/fontes/sc-ricms-anexo-6-regimes-especiais.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-sc",
+          "module_title": "Santa Catarina: ICMS e benefícios fiscais em tela",
+          "chapters": [
+            "base-aliquota-apuracao",
+            "beneficios-matriz-lc160",
+            "isencoes-reducoes-creditos",
+            "creditos-exportacao-acumulado",
+            "diferimento-regimes-especiais",
+            "documentos-efd-prova",
+            "mapa-revisado-beneficios"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-sc-sc-ricms-anexo-10-codigos",
+      "jurisdiction": "SC",
+      "title": "RICMS/SC - Anexo 10 - Codigos fiscais",
+      "short": "Obrigacoes acessorias e documentos",
+      "official_url": "https://legislacao.sef.sc.gov.br/html/regulamentos/icms/ricms_01_10.htm",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "data/fontes-estaduais-curadas/sul/SC/SC_RICMS_ANEXO_10_CODIGOS_2026-04-26.txt"
+        ],
+        "sha256": {
+          "SC_RICMS_ANEXO_10_CODIGOS_2026-04-26.txt": "6c23a075634992f41a4427186bd2c6a28764bfba7daae74167916699087b8047"
+        },
+        "fetch_url": "https://legislacao.sef.sc.gov.br/html/regulamentos/icms/ricms_01_10.htm"
+      },
+      "note": "Texto estadual de ICMS publicado em estados/sc/legislacao/fontes/sc-ricms-anexo-10-codigos.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-sc",
+          "module_title": "Santa Catarina: ICMS e benefícios fiscais em tela",
+          "chapters": [
+            "documentos-efd-prova",
+            "mapa-revisado-beneficios",
+            "fiscalizacao-riscos"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-sc-sc-ricms-anexo-11-nfe",
+      "jurisdiction": "SC",
+      "title": "RICMS/SC - Anexo 11 - Nota Fiscal Eletronica",
+      "short": "Obrigacoes acessorias e documentos",
+      "official_url": "https://legislacao.sef.sc.gov.br/html/regulamentos/icms/ricms_01_11.htm",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "data/fontes-estaduais-curadas/sul/SC/SC_RICMS_ANEXO_11_NFE_2026-04-26.txt"
+        ],
+        "sha256": {
+          "SC_RICMS_ANEXO_11_NFE_2026-04-26.txt": "1b017fb1267f8fe229323b229fd7a2ee4ebc0ddc69c7eada4f548bd15b4ad1c6"
+        },
+        "fetch_url": "https://legislacao.sef.sc.gov.br/html/regulamentos/icms/ricms_01_11.htm"
+      },
+      "note": "Texto estadual de ICMS publicado em estados/sc/legislacao/fontes/sc-ricms-anexo-11-nfe.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-sc",
+          "module_title": "Santa Catarina: ICMS e benefícios fiscais em tela",
+          "chapters": [
+            "documentos-efd-prova",
+            "mapa-revisado-beneficios",
+            "fiscalizacao-riscos"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-sp-sp-lei-6374-1989-icms",
+      "jurisdiction": "SP",
+      "title": "Lei n. 6.374/1989 - ICMS do Estado de Sao Paulo",
+      "short": "Lei material do ICMS",
+      "official_url": "https://legislacao.fazenda.sp.gov.br/Paginas/texto6374.aspx",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "data/fontes-estaduais-curadas/sudeste/SP/SP_LEI_6374_1989_ICMS_2026-04-26.txt"
+        ],
+        "sha256": {
+          "SP_LEI_6374_1989_ICMS_2026-04-26.txt": "33c2384d1eddb5bb8680cc3cdd13fb8abaad7724e232a4d97624fe12e5077707"
+        },
+        "fetch_url": "https://legislacao.fazenda.sp.gov.br/Paginas/texto6374.aspx"
+      },
+      "note": "Texto estadual de ICMS publicado em estados/sp/legislacao/fontes/sp-lei-6374-1989-icms.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-sp",
+          "module_title": "São Paulo: ICMS e benefícios fiscais em tela",
+          "chapters": [
+            "icms-regra-matriz",
+            "base-aliquota-apuracao",
+            "creditos-exportacao-acumulado",
+            "st-antecipacao-segmentos",
+            "fiscalizacao-riscos"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-sp-sp-ricms-2000-integral",
+      "jurisdiction": "SP",
+      "title": "Decreto n. 45.490/2000 - RICMS/SP 2000 integral",
+      "short": "Regulamento do ICMS e beneficios fiscais de ICMS",
+      "official_url": "https://legislacao.fazenda.sp.gov.br/Paginas/textoricms.aspx",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "data/fontes-estaduais-curadas/sudeste/SP/SP_RICMS_2000_INTEGRAL_2026-04-26.txt"
+        ],
+        "sha256": {
+          "SP_RICMS_2000_INTEGRAL_2026-04-26.txt": "d93fd90a910c4deb9d02b9177ff41ade0ad3326c37c4f42a9b8c5b77fb4e71b7"
+        },
+        "fetch_url": "https://legislacao.fazenda.sp.gov.br/Paginas/textoricms.aspx"
+      },
+      "note": "Texto estadual de ICMS publicado em estados/sp/legislacao/fontes/sp-ricms-2000-integral.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-sp",
+          "module_title": "São Paulo: ICMS e benefícios fiscais em tela",
+          "chapters": [
+            "icms-regra-matriz",
+            "base-aliquota-apuracao",
+            "beneficios-matriz-lc160",
+            "isencoes-reducoes-creditos",
+            "creditos-exportacao-acumulado",
+            "diferimento-regimes-especiais",
+            "st-antecipacao-segmentos",
+            "documentos-efd-prova",
+            "mapa-revisado-beneficios",
+            "fiscalizacao-riscos"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-sp-sp-portaria-sre-70-2025-cbenef",
+      "jurisdiction": "SP",
+      "title": "Portaria SRE n. 70/2025 - cBenef nos documentos fiscais eletronicos",
+      "short": "Obrigacoes acessorias e documentos",
+      "official_url": "https://legislacao.fazenda.sp.gov.br/Paginas/Portaria-SRE-70-de-2025.aspx",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "data/fontes-estaduais-curadas/sudeste/SP/SP_PORTARIA_SRE_70_2025_CBENEF_2026-04-26.txt"
+        ],
+        "sha256": {
+          "SP_PORTARIA_SRE_70_2025_CBENEF_2026-04-26.txt": "e87b99ba88cb49c4f1e338e8a8a388711898fa7bdf82bd43c3b8d48611ee646f"
+        },
+        "fetch_url": "https://legislacao.fazenda.sp.gov.br/Paginas/Portaria-SRE-70-de-2025.aspx"
+      },
+      "note": "Texto estadual de ICMS publicado em estados/sp/legislacao/fontes/sp-portaria-sre-70-2025-cbenef.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-sp",
+          "module_title": "São Paulo: ICMS e benefícios fiscais em tela",
+          "chapters": [
+            "documentos-efd-prova",
+            "mapa-revisado-beneficios",
+            "fiscalizacao-riscos"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-sp-sp-portal-cbenef-nfe",
+      "jurisdiction": "SP",
+      "title": "SEFAZ/SP - Codigo de Beneficio Fiscal cBenef na NF-e",
+      "short": "Obrigacoes acessorias e documentos",
+      "official_url": "https://portal.fazenda.sp.gov.br/servicos/nfe/Paginas/cBenef.aspx",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "data/fontes-estaduais-curadas/sudeste/SP/SP_PORTAL_CBENEF_NFE_2026-04-26.txt"
+        ],
+        "sha256": {
+          "SP_PORTAL_CBENEF_NFE_2026-04-26.txt": "b0410d54be5d2763b44201b46456d6327198278bdb49e26b21859adfddff48c2"
+        },
+        "fetch_url": "https://portal.fazenda.sp.gov.br/servicos/nfe/Paginas/cBenef.aspx"
+      },
+      "note": "Texto estadual de ICMS publicado em estados/sp/legislacao/fontes/sp-portal-cbenef-nfe.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-sp",
+          "module_title": "São Paulo: ICMS e benefícios fiscais em tela",
+          "chapters": [
+            "documentos-efd-prova",
+            "mapa-revisado-beneficios",
             "fiscalizacao-riscos"
           ]
         }
