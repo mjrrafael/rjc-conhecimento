@@ -18,6 +18,13 @@ from legal_modules import (
     legal_topic_teaser,
     topic_has_legal_module,
 )
+from state_legal_pages import (
+    build_state_legal_pages,
+    state_has_legal_pack,
+    state_legal_search_entries,
+    state_legislation_teaser,
+    state_signal_links,
+)
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -659,12 +666,16 @@ def state_card_markup(state: dict, data: dict) -> str:
     klass = "featured" if state["uf"] == "GO" else ""
     if state["uf"] == "GO":
         status = "Capitulo profundo publicado"
+    elif state_has_legal_pack(state["uf"]):
+        status = "ICMS em tela publicado"
     elif inv.get("file_count", 0):
         status = "Estrutura pronta para expansao"
     else:
         status = "Pagina em estruturacao"
     coverage = (
-        "Texto legal estadual em preparacao"
+        "RICMS, leis, anexos e beneficios em tela"
+        if state_has_legal_pack(state["uf"])
+        else "Texto legal estadual em preparacao"
         if inv.get("file_count", 0)
         else state["coverage"]
     )
@@ -758,7 +769,10 @@ def signal_sections(items: list[tuple[str, int]], current_path: str = "", theme_
     sections = []
     for key, value in items:
         detail = signal_detail(key)
-        law_links = legal_signal_links(theme_key, key, current_path) if current_path and theme_key else ""
+        if current_path and theme_key and theme_key.startswith("state:"):
+            law_links = state_signal_links(theme_key.split(":", 1)[1], key, current_path)
+        else:
+            law_links = legal_signal_links(theme_key, key, current_path) if current_path and theme_key else ""
         sections.append(f"""
 <article class="signal-study searchable-card" id="{escape(signal_anchor(key))}"
          data-search="{escape(detail['label'] + ' ' + detail['summary'] + ' ' + key)}">
@@ -1159,7 +1173,7 @@ def state_inventory_sections(state_inv: dict, verified_on: str, compact: bool = 
         "Capítulos temáticos do Estado",
         "Abra cada tema como aula: regra, exceção, documento, prova e continuidade para a legislação em tela.",
         current_path,
-        "goias" if state_inv.get("uf") == "GO" else "",
+        "goias" if state_inv.get("uf") == "GO" else f"state:{state_inv.get('uf')}" if state_has_legal_pack(state_inv.get("uf", "")) else "",
     )
     legal = "" if compact else render_law_chapters(
         state_inv.get("legal_chapters", []),
@@ -1236,8 +1250,8 @@ def home(data: dict) -> str:
 <a class="portal-card featured searchable-card" href="{states_link}" data-search="ICMS por Estado beneficios fiscais Goias">
   <span class="card-kicker">Estados</span>
   <h3>ICMS por Estado</h3>
-  <p>Arquitetura nacional por UF, com ICMS, beneficios fiscais, documentos, riscos e trilha de prova.</p>
-  <small>Goias publicado; demais UFs em expansao</small>
+  <p>Arquitetura nacional por UF, com ICMS, beneficios fiscais, documentos, riscos, prova e legislação estadual em tela.</p>
+  <small>ICMS estadual publicado por UF</small>
 </a>
 """,
         topic_card(next(t for t in topics if t["id"] == "goias-icms-beneficios")),
@@ -1343,7 +1357,7 @@ def estados_index(data: dict) -> str:
 <section class="law-ledger">
   <div>
   <h2>Modelo estadual</h2>
-  <p>O portal organiza a leitura por UF, categoria legal, regra de ICMS, beneficio fiscal, documento e prova. Goias abre a primeira entrega profunda; os demais Estados seguem a mesma matriz editorial.</p>
+  <p>O portal organiza a leitura por UF, categoria legal, regra de ICMS, beneficio fiscal, documento e prova. Goias continua como modelo profundo; os demais Estados agora têm legislação de ICMS em tela para estudo e expansão didática.</p>
   </div>
   <div>
     <h2>Como estudar uma UF</h2>
@@ -1376,7 +1390,8 @@ def state_page(state: dict, data: dict) -> str:
         extra = state_inventory_sections(inv, verified_on, compact=True, current_path="estados/goias.html")
         return topic_page(topic, "estados", extra)
     path = f'estados/{state["uf"].lower()}.html'
-    if not inv.get("file_count", 0):
+    has_pack = state_has_legal_pack(state["uf"])
+    if not inv.get("file_count", 0) and not has_pack:
         body = f"""
 {hero(f'{display_name}: ICMS e beneficios fiscais', 'Pagina preservada para publicacao responsavel quando houver texto legal estadual suficiente para leitura publica.', state["uf"])}
 {state_inventory_sections(inv, verified_on, current_path=path)}
@@ -1390,6 +1405,35 @@ def state_page(state: dict, data: dict) -> str:
 </section>
 """
         return layout(path, f'{display_name}: ICMS e beneficios fiscais', "Pagina estrutural por UF.", body, "estados")
+    if has_pack:
+        body = f"""
+{hero(f'{display_name}: ICMS e beneficios fiscais', 'Legislação estadual em tela: ICMS, benefícios fiscais, alíquotas, ST, documentos e prova por assunto.', state["uf"])}
+<section class="law-ledger">
+  <div>
+    <h2>Estado do estudo</h2>
+    <p>A legislação estadual de ICMS já está publicada em tela por temas. Use o índice legal antes de aplicar qualquer conclusão operacional.</p>
+  </div>
+  <div>
+    <h2>Primeira pergunta</h2>
+    <p>A operação está no campo de incidência do ICMS? Só depois disso faz sentido discutir isenção, redução, crédito outorgado, diferimento ou ST.</p>
+  </div>
+  <div>
+    <h2>Prova antes de tese</h2>
+    <p>XML, cadastro do item, NCM, EFD, memória de cálculo e dispositivo legal precisam sustentar a mesma conclusão.</p>
+  </div>
+</section>
+{state_legislation_teaser(state["uf"], path)}
+{state_inventory_sections(inv, verified_on, current_path=path)}
+<section class="continuity">
+  <h2>Continuar a leitura</h2>
+  <div>
+    <a href="../confaz/index.html">Entender CONFAZ e benefícios</a>
+    <a href="../federal/pis-cofins.html">Conectar com PIS/Cofins</a>
+    <a href="../biblioteca/index.html">Consultar manuais e painel</a>
+  </div>
+</section>
+"""
+        return layout(path, f'{display_name}: ICMS e beneficios fiscais', "ICMS estadual em tela por UF.", body, "estados")
     body = f"""
 {hero(f'{display_name}: ICMS e beneficios fiscais', 'Leitura estadual: RICMS, leis, decretos, beneficios, aliquotas, ST, atos infralegais e prova.', state["uf"])}
 <section class="law-ledger">
@@ -1627,6 +1671,8 @@ def search_index(data: dict) -> str:
             "summary": (
                 "Goias publicado com ICMS, beneficios fiscais, cBenef, RCTE, prova e leitura legal."
                 if state["uf"] == "GO"
+                else "Pagina estadual com legislação de ICMS em tela, beneficios, documento e prova."
+                if state_has_legal_pack(state["uf"])
                 else "Pagina estadual estruturada para futura publicacao por UF, com foco em ICMS, beneficios, documento e prova."
             ),
             "tags": f'{state["uf"]} {state["name"]} {state_display_name(state)} ICMS beneficios fiscais RICMS ' + " ".join(inventory_state(data, state["uf"]).get("categories", []))
@@ -1649,6 +1695,7 @@ def search_index(data: dict) -> str:
         "tags": "PIS Cofins IPI IOF IRPJ CSLL reforma beneficios DIRBI previdencia folha"
     })
     entries += legal_search_entries()
+    entries += state_legal_search_entries(data)
     entries += [
         {
             "title": item["title"],
@@ -1710,6 +1757,8 @@ def main() -> None:
     write("biblioteca/index.html", biblioteca(data))
     for legal_path, legal_content in build_legal_pages(layout).items():
         write(legal_path, legal_content)
+    for state_legal_path, state_legal_content in build_state_legal_pages(layout, data).items():
+        write(state_legal_path, state_legal_content)
     write("assets/portal-search.js", search_index(data))
     print("Portal generated successfully.")
 

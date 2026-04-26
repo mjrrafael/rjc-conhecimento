@@ -1200,6 +1200,6198 @@
           ]
         }
       ]
+    },
+    {
+      "source_id": "state-ac-principal-ac-icms-aliquotas",
+      "jurisdiction": "AC",
+      "title": "Acre: Alíquotas de ICMS",
+      "short": "Alíquotas de ICMS",
+      "official_url": "https://sefaz.ac.gov.br/",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "#ESTADUAIS-COMPILADO-NOTEBOOKLM\\AC\\AC_ICMS_ALIQUOTAS.txt"
+        ],
+        "sha256": {
+          "AC_ICMS_ALIQUOTAS.txt": "b9ea3c590aaebf1eca7eea8fa4fd25337137b46956d118b4ff80f8a96e35c30a"
+        },
+        "fetch_url": ""
+      },
+      "note": "Texto estadual de ICMS publicado em estados/ac/legislacao/fontes/principal-ac-icms-aliquotas.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-ac",
+          "module_title": "Acre: legislação de ICMS em tela",
+          "chapters": [
+            "icms",
+            "aliquotas"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-ac-principal-ac-icms-beneficios",
+      "jurisdiction": "AC",
+      "title": "Acre: Benefícios fiscais de ICMS",
+      "short": "Benefícios fiscais de ICMS",
+      "official_url": "https://sefaz.ac.gov.br/",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "#ESTADUAIS-COMPILADO-NOTEBOOKLM\\AC\\AC_ICMS_BENEFICIOS.txt"
+        ],
+        "sha256": {
+          "AC_ICMS_BENEFICIOS.txt": "7f0af610fb28f0c03e5155899a7889985563a2cc55d3ffd13222b59eb9679fc2"
+        },
+        "fetch_url": ""
+      },
+      "note": "Texto estadual de ICMS publicado em estados/ac/legislacao/fontes/principal-ac-icms-beneficios.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-ac",
+          "module_title": "Acre: legislação de ICMS em tela",
+          "chapters": [
+            "icms",
+            "beneficios",
+            "aliquotas",
+            "st",
+            "prova"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-ac-principal-ac-icms-leis",
+      "jurisdiction": "AC",
+      "title": "Acre: Leis do ICMS",
+      "short": "Leis do ICMS",
+      "official_url": "https://sefaz.ac.gov.br/",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "#ESTADUAIS-COMPILADO-NOTEBOOKLM\\AC\\AC_ICMS_LEIS.txt"
+        ],
+        "sha256": {
+          "AC_ICMS_LEIS.txt": "c0b04fc8726679358c3d66eb196743e4de17489c08cf850afca38b5158d50c83"
+        },
+        "fetch_url": ""
+      },
+      "note": "Texto estadual de ICMS publicado em estados/ac/legislacao/fontes/principal-ac-icms-leis.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-ac",
+          "module_title": "Acre: legislação de ICMS em tela",
+          "chapters": [
+            "icms",
+            "beneficios",
+            "aliquotas",
+            "st",
+            "prova"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-ac-principal-ac-icms-leis-parte2",
+      "jurisdiction": "AC",
+      "title": "Acre: Leis do ICMS - parte 2",
+      "short": "Leis do ICMS",
+      "official_url": "https://sefaz.ac.gov.br/",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "#ESTADUAIS-COMPILADO-NOTEBOOKLM\\AC\\AC_ICMS_LEIS_parte2.txt"
+        ],
+        "sha256": {
+          "AC_ICMS_LEIS_parte2.txt": "743f57c5b33309d7d4f9438242ef914d0ec92fbf0ea5c707db61c4986c64d06a"
+        },
+        "fetch_url": ""
+      },
+      "note": "Texto estadual de ICMS publicado em estados/ac/legislacao/fontes/principal-ac-icms-leis-parte2.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-ac",
+          "module_title": "Acre: legislação de ICMS em tela",
+          "chapters": [
+            "icms",
+            "beneficios",
+            "aliquotas",
+            "st",
+            "prova"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-ac-principal-ac-icms-leis-parte3",
+      "jurisdiction": "AC",
+      "title": "Acre: Leis do ICMS - parte 3",
+      "short": "Leis do ICMS",
+      "official_url": "https://sefaz.ac.gov.br/",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "#ESTADUAIS-COMPILADO-NOTEBOOKLM\\AC\\AC_ICMS_LEIS_parte3.txt"
+        ],
+        "sha256": {
+          "AC_ICMS_LEIS_parte3.txt": "1897f0fa25773142fe54a6e48a36447ab750f713ea140726aa1292f1f7252172"
+        },
+        "fetch_url": ""
+      },
+      "note": "Texto estadual de ICMS publicado em estados/ac/legislacao/fontes/principal-ac-icms-leis-parte3.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-ac",
+          "module_title": "Acre: legislação de ICMS em tela",
+          "chapters": [
+            "icms",
+            "beneficios",
+            "aliquotas",
+            "st",
+            "prova"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-ac-principal-ac-ricms",
+      "jurisdiction": "AC",
+      "title": "Acre: Regulamento do ICMS",
+      "short": "Regulamento do ICMS",
+      "official_url": "https://sefaz.ac.gov.br/",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "#ESTADUAIS-COMPILADO-NOTEBOOKLM\\AC\\AC_RICMS.txt"
+        ],
+        "sha256": {
+          "AC_RICMS.txt": "c1a37fefd332cdb0c936b39671e56d1da8bf2941baf7596792cd871045fd36c0"
+        },
+        "fetch_url": ""
+      },
+      "note": "Texto estadual de ICMS publicado em estados/ac/legislacao/fontes/principal-ac-ricms.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-ac",
+          "module_title": "Acre: legislação de ICMS em tela",
+          "chapters": [
+            "icms",
+            "beneficios",
+            "aliquotas",
+            "st",
+            "prova"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-al-principal-al-icms-leis",
+      "jurisdiction": "AL",
+      "title": "Alagoas: Leis do ICMS",
+      "short": "Leis do ICMS",
+      "official_url": "https://www.sefaz.al.gov.br/",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "#ESTADUAIS-COMPILADO-NOTEBOOKLM\\AL\\AL_ICMS_LEIS.txt"
+        ],
+        "sha256": {
+          "AL_ICMS_LEIS.txt": "762700704b85fd334a88c7c2a53314d3571d88de8477d8a31072e0c6b28a15a8"
+        },
+        "fetch_url": ""
+      },
+      "note": "Texto estadual de ICMS publicado em estados/al/legislacao/fontes/principal-al-icms-leis.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-al",
+          "module_title": "Alagoas: legislação de ICMS em tela",
+          "chapters": [
+            "icms",
+            "aliquotas"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-al-principal-al-icms-st",
+      "jurisdiction": "AL",
+      "title": "Alagoas: Substituição tributária",
+      "short": "Substituição tributária",
+      "official_url": "https://www.sefaz.al.gov.br/",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "#ESTADUAIS-COMPILADO-NOTEBOOKLM\\AL\\AL_ICMS_ST.txt"
+        ],
+        "sha256": {
+          "AL_ICMS_ST.txt": "6df43688486b3a3b176f2dfd6bb52a41903c391965f7751a1fd58753a302a14a"
+        },
+        "fetch_url": ""
+      },
+      "note": "Texto estadual de ICMS publicado em estados/al/legislacao/fontes/principal-al-icms-st.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-al",
+          "module_title": "Alagoas: legislação de ICMS em tela",
+          "chapters": [
+            "icms",
+            "beneficios",
+            "aliquotas",
+            "st",
+            "prova"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-al-principal-al-icms-st-parte2",
+      "jurisdiction": "AL",
+      "title": "Alagoas: Substituição tributária - parte 2",
+      "short": "Substituição tributária",
+      "official_url": "https://www.sefaz.al.gov.br/",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "#ESTADUAIS-COMPILADO-NOTEBOOKLM\\AL\\AL_ICMS_ST_parte2.txt"
+        ],
+        "sha256": {
+          "AL_ICMS_ST_parte2.txt": "41f88e3e25ea05bd1b32e74d21b40d2f6b2fc9af4ee5d6f85992b34bbbca0f92"
+        },
+        "fetch_url": ""
+      },
+      "note": "Texto estadual de ICMS publicado em estados/al/legislacao/fontes/principal-al-icms-st-parte2.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-al",
+          "module_title": "Alagoas: legislação de ICMS em tela",
+          "chapters": [
+            "icms",
+            "beneficios",
+            "aliquotas",
+            "st"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-ap-principal-ap-icms-anexos",
+      "jurisdiction": "AP",
+      "title": "Amapá: Anexos do ICMS",
+      "short": "Anexos do ICMS",
+      "official_url": "https://www.sefaz.ap.gov.br/",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "#ESTADUAIS-COMPILADO-NOTEBOOKLM\\AP\\AP_ICMS_ANEXOS.txt"
+        ],
+        "sha256": {
+          "AP_ICMS_ANEXOS.txt": "2d29b1d069eb772c3e5ccec90bf05b95ee4be18dafdc414b384878082829ee71"
+        },
+        "fetch_url": ""
+      },
+      "note": "Texto estadual de ICMS publicado em estados/ap/legislacao/fontes/principal-ap-icms-anexos.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-ap",
+          "module_title": "Amapá: legislação de ICMS em tela",
+          "chapters": [
+            "icms",
+            "beneficios",
+            "aliquotas",
+            "st",
+            "prova"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-ap-principal-ap-icms-beneficios",
+      "jurisdiction": "AP",
+      "title": "Amapá: Benefícios fiscais de ICMS",
+      "short": "Benefícios fiscais de ICMS",
+      "official_url": "https://www.sefaz.ap.gov.br/",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "#ESTADUAIS-COMPILADO-NOTEBOOKLM\\AP\\AP_ICMS_BENEFICIOS.txt"
+        ],
+        "sha256": {
+          "AP_ICMS_BENEFICIOS.txt": "6a12195daf5df682d8b4b54212850c7e008070f1211b43e316c0ba6d7837fc86"
+        },
+        "fetch_url": ""
+      },
+      "note": "Texto estadual de ICMS publicado em estados/ap/legislacao/fontes/principal-ap-icms-beneficios.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-ap",
+          "module_title": "Amapá: legislação de ICMS em tela",
+          "chapters": [
+            "icms",
+            "beneficios",
+            "aliquotas"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-ap-principal-ap-icms-leis",
+      "jurisdiction": "AP",
+      "title": "Amapá: Leis do ICMS",
+      "short": "Leis do ICMS",
+      "official_url": "https://www.sefaz.ap.gov.br/",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "#ESTADUAIS-COMPILADO-NOTEBOOKLM\\AP\\AP_ICMS_LEIS.txt"
+        ],
+        "sha256": {
+          "AP_ICMS_LEIS.txt": "2d0486e76b0983e5d41e65fbe83e825800803b47508ab3cac426a1883c89686c"
+        },
+        "fetch_url": ""
+      },
+      "note": "Texto estadual de ICMS publicado em estados/ap/legislacao/fontes/principal-ap-icms-leis.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-ap",
+          "module_title": "Amapá: legislação de ICMS em tela",
+          "chapters": [
+            "icms",
+            "beneficios",
+            "aliquotas",
+            "st",
+            "prova"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-ap-principal-ap-icms-st",
+      "jurisdiction": "AP",
+      "title": "Amapá: Substituição tributária",
+      "short": "Substituição tributária",
+      "official_url": "https://www.sefaz.ap.gov.br/",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "#ESTADUAIS-COMPILADO-NOTEBOOKLM\\AP\\AP_ICMS_ST.txt"
+        ],
+        "sha256": {
+          "AP_ICMS_ST.txt": "53ae2efd6284ead334be23f6fd28dd4d80ebd28d895e93a7a4a680e2ca31e8ae"
+        },
+        "fetch_url": ""
+      },
+      "note": "Texto estadual de ICMS publicado em estados/ap/legislacao/fontes/principal-ap-icms-st.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-ap",
+          "module_title": "Amapá: legislação de ICMS em tela",
+          "chapters": [
+            "icms",
+            "st"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-ap-principal-ap-ricms",
+      "jurisdiction": "AP",
+      "title": "Amapá: Regulamento do ICMS",
+      "short": "Regulamento do ICMS",
+      "official_url": "https://www.sefaz.ap.gov.br/",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "#ESTADUAIS-COMPILADO-NOTEBOOKLM\\AP\\AP_RICMS.txt"
+        ],
+        "sha256": {
+          "AP_RICMS.txt": "443a0cebaf5b3f99579ec9eee9a5603d4eed2dc4c2557388e7d0fd3b8f7a59ac"
+        },
+        "fetch_url": ""
+      },
+      "note": "Texto estadual de ICMS publicado em estados/ap/legislacao/fontes/principal-ap-ricms.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-ap",
+          "module_title": "Amapá: legislação de ICMS em tela",
+          "chapters": [
+            "icms",
+            "beneficios",
+            "aliquotas",
+            "st",
+            "prova"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-ap-principal-ap-ricms-parte2",
+      "jurisdiction": "AP",
+      "title": "Amapá: Regulamento do ICMS - parte 2",
+      "short": "Regulamento do ICMS",
+      "official_url": "https://www.sefaz.ap.gov.br/",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "#ESTADUAIS-COMPILADO-NOTEBOOKLM\\AP\\AP_RICMS_parte2.txt"
+        ],
+        "sha256": {
+          "AP_RICMS_parte2.txt": "bdcef42dba05780c0f293dc979dc5bca0a0f285c2a51aecde1bbe1638cf6de10"
+        },
+        "fetch_url": ""
+      },
+      "note": "Texto estadual de ICMS publicado em estados/ap/legislacao/fontes/principal-ap-ricms-parte2.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-ap",
+          "module_title": "Amapá: legislação de ICMS em tela",
+          "chapters": [
+            "icms",
+            "beneficios",
+            "aliquotas",
+            "st",
+            "prova"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-ap-principal-ap-ricms-parte3",
+      "jurisdiction": "AP",
+      "title": "Amapá: Regulamento do ICMS - parte 3",
+      "short": "Regulamento do ICMS",
+      "official_url": "https://www.sefaz.ap.gov.br/",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "#ESTADUAIS-COMPILADO-NOTEBOOKLM\\AP\\AP_RICMS_parte3.txt"
+        ],
+        "sha256": {
+          "AP_RICMS_parte3.txt": "5a925ec47a6e172cb25bd66635a652a97d89505f153ce861d765a9cd62aa1f45"
+        },
+        "fetch_url": ""
+      },
+      "note": "Texto estadual de ICMS publicado em estados/ap/legislacao/fontes/principal-ap-ricms-parte3.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-ap",
+          "module_title": "Amapá: legislação de ICMS em tela",
+          "chapters": [
+            "icms",
+            "beneficios",
+            "aliquotas",
+            "st",
+            "prova"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-am-principal-am-decretos",
+      "jurisdiction": "AM",
+      "title": "Amazonas: Decretos com reflexo no ICMS",
+      "short": "Decretos com reflexo no ICMS",
+      "official_url": "https://www.sefaz.am.gov.br/",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "#ESTADUAIS-COMPILADO-NOTEBOOKLM\\AM\\AM_DECRETOS.txt"
+        ],
+        "sha256": {
+          "AM_DECRETOS.txt": "6ae7ff8301d0592dab074bc2c754ed66242f13542bf5d16525d5a8a22642a517"
+        },
+        "fetch_url": ""
+      },
+      "note": "Texto estadual de ICMS publicado em estados/am/legislacao/fontes/principal-am-decretos.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-am",
+          "module_title": "Amazonas: legislação de ICMS em tela",
+          "chapters": [
+            "icms",
+            "beneficios",
+            "aliquotas",
+            "st",
+            "prova"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-am-principal-am-decretos-parte2",
+      "jurisdiction": "AM",
+      "title": "Amazonas: Decretos com reflexo no ICMS - parte 2",
+      "short": "Decretos com reflexo no ICMS",
+      "official_url": "https://www.sefaz.am.gov.br/",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "#ESTADUAIS-COMPILADO-NOTEBOOKLM\\AM\\AM_DECRETOS_parte2.txt"
+        ],
+        "sha256": {
+          "AM_DECRETOS_parte2.txt": "7aa6153cf5c4111e831ece26ab9b87675542e132b5cce5867eee77544280892c"
+        },
+        "fetch_url": ""
+      },
+      "note": "Texto estadual de ICMS publicado em estados/am/legislacao/fontes/principal-am-decretos-parte2.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-am",
+          "module_title": "Amazonas: legislação de ICMS em tela",
+          "chapters": [
+            "icms",
+            "beneficios",
+            "aliquotas",
+            "prova"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-am-principal-am-leis",
+      "jurisdiction": "AM",
+      "title": "Amazonas: Leis com reflexo no ICMS",
+      "short": "Leis com reflexo no ICMS",
+      "official_url": "https://www.sefaz.am.gov.br/",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "#ESTADUAIS-COMPILADO-NOTEBOOKLM\\AM\\AM_LEIS.txt"
+        ],
+        "sha256": {
+          "AM_LEIS.txt": "600619c81b1584b72af7b43058d51edeedb873d05e41e1fe4beb9b292c3fa32d"
+        },
+        "fetch_url": ""
+      },
+      "note": "Texto estadual de ICMS publicado em estados/am/legislacao/fontes/principal-am-leis.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-am",
+          "module_title": "Amazonas: legislação de ICMS em tela",
+          "chapters": [
+            "icms",
+            "beneficios",
+            "aliquotas",
+            "st",
+            "prova"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-am-principal-am-leis-parte2",
+      "jurisdiction": "AM",
+      "title": "Amazonas: Leis com reflexo no ICMS - parte 2",
+      "short": "Leis com reflexo no ICMS",
+      "official_url": "https://www.sefaz.am.gov.br/",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "#ESTADUAIS-COMPILADO-NOTEBOOKLM\\AM\\AM_LEIS_parte2.txt"
+        ],
+        "sha256": {
+          "AM_LEIS_parte2.txt": "572f00afb49d805fcf137a384b162560e68448227b095b0d7398da7a185e4462"
+        },
+        "fetch_url": ""
+      },
+      "note": "Texto estadual de ICMS publicado em estados/am/legislacao/fontes/principal-am-leis-parte2.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-am",
+          "module_title": "Amazonas: legislação de ICMS em tela",
+          "chapters": [
+            "icms",
+            "beneficios",
+            "aliquotas",
+            "st",
+            "prova"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-ba-principal-ba-icms-anexos",
+      "jurisdiction": "BA",
+      "title": "Bahia: Anexos do ICMS",
+      "short": "Anexos do ICMS",
+      "official_url": "https://www.sefaz.ba.gov.br/",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "#ESTADUAIS-COMPILADO-NOTEBOOKLM\\BA\\BA_ICMS_ANEXOS.txt"
+        ],
+        "sha256": {
+          "BA_ICMS_ANEXOS.txt": "b1efc9397ab8c43ac4359702509adc3d616cd7c31bfa871f2d0fe64f478f0f18"
+        },
+        "fetch_url": ""
+      },
+      "note": "Texto estadual de ICMS publicado em estados/ba/legislacao/fontes/principal-ba-icms-anexos.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-ba",
+          "module_title": "Bahia: legislação de ICMS em tela",
+          "chapters": [
+            "icms",
+            "beneficios",
+            "aliquotas",
+            "st",
+            "prova"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-ba-principal-ba-icms-anexos-parte2",
+      "jurisdiction": "BA",
+      "title": "Bahia: Anexos do ICMS - parte 2",
+      "short": "Anexos do ICMS",
+      "official_url": "https://www.sefaz.ba.gov.br/",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "#ESTADUAIS-COMPILADO-NOTEBOOKLM\\BA\\BA_ICMS_ANEXOS_parte2.txt"
+        ],
+        "sha256": {
+          "BA_ICMS_ANEXOS_parte2.txt": "92df1e09e6b4d3143cefe5c35c8490a4f33ca39646baa700c807b8856139726f"
+        },
+        "fetch_url": ""
+      },
+      "note": "Texto estadual de ICMS publicado em estados/ba/legislacao/fontes/principal-ba-icms-anexos-parte2.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-ba",
+          "module_title": "Bahia: legislação de ICMS em tela",
+          "chapters": [
+            "icms",
+            "beneficios",
+            "st",
+            "prova"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-ba-principal-ba-icms-leis",
+      "jurisdiction": "BA",
+      "title": "Bahia: Leis do ICMS",
+      "short": "Leis do ICMS",
+      "official_url": "https://www.sefaz.ba.gov.br/",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "#ESTADUAIS-COMPILADO-NOTEBOOKLM\\BA\\BA_ICMS_LEIS.txt"
+        ],
+        "sha256": {
+          "BA_ICMS_LEIS.txt": "43c9b93647ce9d4eb4956776a17f36680714c4f961e2bd69998682b8e9a7b875"
+        },
+        "fetch_url": ""
+      },
+      "note": "Texto estadual de ICMS publicado em estados/ba/legislacao/fontes/principal-ba-icms-leis.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-ba",
+          "module_title": "Bahia: legislação de ICMS em tela",
+          "chapters": [
+            "icms",
+            "beneficios",
+            "aliquotas",
+            "st",
+            "prova"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-ba-principal-ba-ricms",
+      "jurisdiction": "BA",
+      "title": "Bahia: Regulamento do ICMS",
+      "short": "Regulamento do ICMS",
+      "official_url": "https://www.sefaz.ba.gov.br/",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "#ESTADUAIS-COMPILADO-NOTEBOOKLM\\BA\\BA_RICMS.txt"
+        ],
+        "sha256": {
+          "BA_RICMS.txt": "fdf951b55661f4a607ef31876787172156c4dc917fe74808fdedeb77134c7f0a"
+        },
+        "fetch_url": ""
+      },
+      "note": "Texto estadual de ICMS publicado em estados/ba/legislacao/fontes/principal-ba-ricms.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-ba",
+          "module_title": "Bahia: legislação de ICMS em tela",
+          "chapters": [
+            "icms",
+            "beneficios",
+            "aliquotas",
+            "st",
+            "prova"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-ba-principal-ba-ricms-parte2",
+      "jurisdiction": "BA",
+      "title": "Bahia: Regulamento do ICMS - parte 2",
+      "short": "Regulamento do ICMS",
+      "official_url": "https://www.sefaz.ba.gov.br/",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "#ESTADUAIS-COMPILADO-NOTEBOOKLM\\BA\\BA_RICMS_parte2.txt"
+        ],
+        "sha256": {
+          "BA_RICMS_parte2.txt": "352c4de5cc1f70300142ed97ef811040f5549233401a782405e6d6f57ff7c56a"
+        },
+        "fetch_url": ""
+      },
+      "note": "Texto estadual de ICMS publicado em estados/ba/legislacao/fontes/principal-ba-ricms-parte2.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-ba",
+          "module_title": "Bahia: legislação de ICMS em tela",
+          "chapters": [
+            "icms",
+            "beneficios",
+            "aliquotas",
+            "st",
+            "prova"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-ba-principal-ba-ricms-parte3",
+      "jurisdiction": "BA",
+      "title": "Bahia: Regulamento do ICMS - parte 3",
+      "short": "Regulamento do ICMS",
+      "official_url": "https://www.sefaz.ba.gov.br/",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "#ESTADUAIS-COMPILADO-NOTEBOOKLM\\BA\\BA_RICMS_parte3.txt"
+        ],
+        "sha256": {
+          "BA_RICMS_parte3.txt": "c720f32ac834d730e6c1b2e7ca7bce241aa54ce0843ded12e6ff50040740424b"
+        },
+        "fetch_url": ""
+      },
+      "note": "Texto estadual de ICMS publicado em estados/ba/legislacao/fontes/principal-ba-ricms-parte3.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-ba",
+          "module_title": "Bahia: legislação de ICMS em tela",
+          "chapters": [
+            "icms",
+            "beneficios",
+            "aliquotas",
+            "st",
+            "prova"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-ba-principal-ba-ricms-parte4",
+      "jurisdiction": "BA",
+      "title": "Bahia: Regulamento do ICMS - parte 4",
+      "short": "Regulamento do ICMS",
+      "official_url": "https://www.sefaz.ba.gov.br/",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "#ESTADUAIS-COMPILADO-NOTEBOOKLM\\BA\\BA_RICMS_parte4.txt"
+        ],
+        "sha256": {
+          "BA_RICMS_parte4.txt": "84e68d6c8e7106c3747146bbc7ea671de79a2e7fb875122ed74398d94939676a"
+        },
+        "fetch_url": ""
+      },
+      "note": "Texto estadual de ICMS publicado em estados/ba/legislacao/fontes/principal-ba-ricms-parte4.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-ba",
+          "module_title": "Bahia: legislação de ICMS em tela",
+          "chapters": [
+            "icms",
+            "beneficios",
+            "aliquotas",
+            "st",
+            "prova"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-ce-principal-ce-decretos",
+      "jurisdiction": "CE",
+      "title": "Ceará: Decretos com reflexo no ICMS",
+      "short": "Decretos com reflexo no ICMS",
+      "official_url": "https://www.sefaz.ce.gov.br/",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "#ESTADUAIS-COMPILADO-NOTEBOOKLM\\CE\\CE_DECRETOS.txt"
+        ],
+        "sha256": {
+          "CE_DECRETOS.txt": "e884fab9bf34b4cfc92b985606e8f06818424f2bc024367fb1ebdbfae6303956"
+        },
+        "fetch_url": ""
+      },
+      "note": "Texto estadual de ICMS publicado em estados/ce/legislacao/fontes/principal-ce-decretos.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-ce",
+          "module_title": "Ceará: legislação de ICMS em tela",
+          "chapters": [
+            "icms",
+            "beneficios",
+            "aliquotas",
+            "st",
+            "prova"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-ce-principal-ce-decretos-parte2",
+      "jurisdiction": "CE",
+      "title": "Ceará: Decretos com reflexo no ICMS - parte 2",
+      "short": "Decretos com reflexo no ICMS",
+      "official_url": "https://www.sefaz.ce.gov.br/",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "#ESTADUAIS-COMPILADO-NOTEBOOKLM\\CE\\CE_DECRETOS_parte2.txt"
+        ],
+        "sha256": {
+          "CE_DECRETOS_parte2.txt": "b0e19b299e65e5398bd281439c0120b6dce41c1682d6c8fceaf5022237574a5b"
+        },
+        "fetch_url": ""
+      },
+      "note": "Texto estadual de ICMS publicado em estados/ce/legislacao/fontes/principal-ce-decretos-parte2.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-ce",
+          "module_title": "Ceará: legislação de ICMS em tela",
+          "chapters": [
+            "icms",
+            "beneficios",
+            "aliquotas",
+            "st",
+            "prova"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-ce-principal-ce-decretos-parte3",
+      "jurisdiction": "CE",
+      "title": "Ceará: Decretos com reflexo no ICMS - parte 3",
+      "short": "Decretos com reflexo no ICMS",
+      "official_url": "https://www.sefaz.ce.gov.br/",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "#ESTADUAIS-COMPILADO-NOTEBOOKLM\\CE\\CE_DECRETOS_parte3.txt"
+        ],
+        "sha256": {
+          "CE_DECRETOS_parte3.txt": "6101ea5435914e07961d7c91f358866eb963e96a496ee71545db5c1195bda16a"
+        },
+        "fetch_url": ""
+      },
+      "note": "Texto estadual de ICMS publicado em estados/ce/legislacao/fontes/principal-ce-decretos-parte3.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-ce",
+          "module_title": "Ceará: legislação de ICMS em tela",
+          "chapters": [
+            "icms",
+            "beneficios",
+            "aliquotas",
+            "st",
+            "prova"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-ce-principal-ce-decretos-parte4",
+      "jurisdiction": "CE",
+      "title": "Ceará: Decretos com reflexo no ICMS - parte 4",
+      "short": "Decretos com reflexo no ICMS",
+      "official_url": "https://www.sefaz.ce.gov.br/",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "#ESTADUAIS-COMPILADO-NOTEBOOKLM\\CE\\CE_DECRETOS_parte4.txt"
+        ],
+        "sha256": {
+          "CE_DECRETOS_parte4.txt": "0da5533c6f09e9a08246339c3f37acf689d5c059d99958302cc7c0dc02400d73"
+        },
+        "fetch_url": ""
+      },
+      "note": "Texto estadual de ICMS publicado em estados/ce/legislacao/fontes/principal-ce-decretos-parte4.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-ce",
+          "module_title": "Ceará: legislação de ICMS em tela",
+          "chapters": [
+            "icms",
+            "beneficios",
+            "aliquotas",
+            "st",
+            "prova"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-ce-principal-ce-decretos-parte5",
+      "jurisdiction": "CE",
+      "title": "Ceará: Decretos com reflexo no ICMS - parte 5",
+      "short": "Decretos com reflexo no ICMS",
+      "official_url": "https://www.sefaz.ce.gov.br/",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "#ESTADUAIS-COMPILADO-NOTEBOOKLM\\CE\\CE_DECRETOS_parte5.txt"
+        ],
+        "sha256": {
+          "CE_DECRETOS_parte5.txt": "5568f37a7a4f6136c7bb00d17a277b5d6daf3efc143216380020491fa3f4bbf9"
+        },
+        "fetch_url": ""
+      },
+      "note": "Texto estadual de ICMS publicado em estados/ce/legislacao/fontes/principal-ce-decretos-parte5.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-ce",
+          "module_title": "Ceará: legislação de ICMS em tela",
+          "chapters": [
+            "icms",
+            "beneficios",
+            "aliquotas",
+            "st",
+            "prova"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-ce-principal-ce-decretos-parte6",
+      "jurisdiction": "CE",
+      "title": "Ceará: Decretos com reflexo no ICMS - parte 6",
+      "short": "Decretos com reflexo no ICMS",
+      "official_url": "https://www.sefaz.ce.gov.br/",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "#ESTADUAIS-COMPILADO-NOTEBOOKLM\\CE\\CE_DECRETOS_parte6.txt"
+        ],
+        "sha256": {
+          "CE_DECRETOS_parte6.txt": "8cb88df0cb8e958d062802f15e7df8cfb5dd4304b8c1f3ff72ea4012971bc7a4"
+        },
+        "fetch_url": ""
+      },
+      "note": "Texto estadual de ICMS publicado em estados/ce/legislacao/fontes/principal-ce-decretos-parte6.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-ce",
+          "module_title": "Ceará: legislação de ICMS em tela",
+          "chapters": [
+            "icms",
+            "beneficios",
+            "aliquotas",
+            "st",
+            "prova"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-ce-principal-ce-instrucoes-normativas",
+      "jurisdiction": "CE",
+      "title": "Ceará: Instruções normativas",
+      "short": "Instruções normativas",
+      "official_url": "https://www.sefaz.ce.gov.br/",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "#ESTADUAIS-COMPILADO-NOTEBOOKLM\\CE\\CE_INSTRUCOES_NORMATIVAS.txt"
+        ],
+        "sha256": {
+          "CE_INSTRUCOES_NORMATIVAS.txt": "cb8de70c270bd9a2dc9b092f60085f9dd1f4fbdb5f69bb1075ca02b87cac82ee"
+        },
+        "fetch_url": ""
+      },
+      "note": "Texto estadual de ICMS publicado em estados/ce/legislacao/fontes/principal-ce-instrucoes-normativas.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-ce",
+          "module_title": "Ceará: legislação de ICMS em tela",
+          "chapters": [
+            "icms",
+            "beneficios",
+            "aliquotas",
+            "st",
+            "prova"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-ce-principal-ce-leis",
+      "jurisdiction": "CE",
+      "title": "Ceará: Leis com reflexo no ICMS",
+      "short": "Leis com reflexo no ICMS",
+      "official_url": "https://www.sefaz.ce.gov.br/",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "#ESTADUAIS-COMPILADO-NOTEBOOKLM\\CE\\CE_LEIS.txt"
+        ],
+        "sha256": {
+          "CE_LEIS.txt": "bb08787f9fbd9f1a95cd653d667349a5d356e1e897e58d1feefbd6df06caf98c"
+        },
+        "fetch_url": ""
+      },
+      "note": "Texto estadual de ICMS publicado em estados/ce/legislacao/fontes/principal-ce-leis.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-ce",
+          "module_title": "Ceará: legislação de ICMS em tela",
+          "chapters": [
+            "icms",
+            "beneficios",
+            "aliquotas",
+            "st",
+            "prova"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-df-principal-df-decretos-parte2",
+      "jurisdiction": "DF",
+      "title": "Distrito Federal: Decretos com reflexo no ICMS - parte 2",
+      "short": "Decretos com reflexo no ICMS",
+      "official_url": "https://www.receita.fazenda.df.gov.br/",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "#ESTADUAIS-COMPILADO-NOTEBOOKLM\\DF\\DF_DECRETOS_parte2.txt"
+        ],
+        "sha256": {
+          "DF_DECRETOS_parte2.txt": "b169e922599a77467770f73529aa752f2741c437eeee84d69be1aed1a25c5722"
+        },
+        "fetch_url": ""
+      },
+      "note": "Texto estadual de ICMS publicado em estados/df/legislacao/fontes/principal-df-decretos-parte2.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-df",
+          "module_title": "Distrito Federal: legislação de ICMS em tela",
+          "chapters": [
+            "icms",
+            "beneficios",
+            "aliquotas",
+            "st",
+            "prova"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-df-principal-df-decretos-parte3",
+      "jurisdiction": "DF",
+      "title": "Distrito Federal: Decretos com reflexo no ICMS - parte 3",
+      "short": "Decretos com reflexo no ICMS",
+      "official_url": "https://www.receita.fazenda.df.gov.br/",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "#ESTADUAIS-COMPILADO-NOTEBOOKLM\\DF\\DF_DECRETOS_parte3.txt"
+        ],
+        "sha256": {
+          "DF_DECRETOS_parte3.txt": "7accb56d4ec48d566edba98f5688de8d823f8d65e02463283c0541295bfd822c"
+        },
+        "fetch_url": ""
+      },
+      "note": "Texto estadual de ICMS publicado em estados/df/legislacao/fontes/principal-df-decretos-parte3.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-df",
+          "module_title": "Distrito Federal: legislação de ICMS em tela",
+          "chapters": [
+            "icms",
+            "beneficios",
+            "aliquotas",
+            "st",
+            "prova"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-df-principal-df-decretos-parte4",
+      "jurisdiction": "DF",
+      "title": "Distrito Federal: Decretos com reflexo no ICMS - parte 4",
+      "short": "Decretos com reflexo no ICMS",
+      "official_url": "https://www.receita.fazenda.df.gov.br/",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "#ESTADUAIS-COMPILADO-NOTEBOOKLM\\DF\\DF_DECRETOS_parte4.txt"
+        ],
+        "sha256": {
+          "DF_DECRETOS_parte4.txt": "45e4538bdccdd39ad7c95467b6465878e0aeff6cb05914e12bb606f2076c3903"
+        },
+        "fetch_url": ""
+      },
+      "note": "Texto estadual de ICMS publicado em estados/df/legislacao/fontes/principal-df-decretos-parte4.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-df",
+          "module_title": "Distrito Federal: legislação de ICMS em tela",
+          "chapters": [
+            "icms",
+            "beneficios",
+            "aliquotas",
+            "st",
+            "prova"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-df-principal-df-leis-parte3",
+      "jurisdiction": "DF",
+      "title": "Distrito Federal: Leis com reflexo no ICMS - parte 3",
+      "short": "Leis com reflexo no ICMS",
+      "official_url": "https://www.receita.fazenda.df.gov.br/",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "#ESTADUAIS-COMPILADO-NOTEBOOKLM\\DF\\DF_LEIS_parte3.txt"
+        ],
+        "sha256": {
+          "DF_LEIS_parte3.txt": "416d8182fd6be66d2227067d028e8fd38afe1fc0a8fcf7d1fc944db77a3e7a2c"
+        },
+        "fetch_url": ""
+      },
+      "note": "Texto estadual de ICMS publicado em estados/df/legislacao/fontes/principal-df-leis-parte3.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-df",
+          "module_title": "Distrito Federal: legislação de ICMS em tela",
+          "chapters": [
+            "icms",
+            "beneficios",
+            "aliquotas",
+            "st",
+            "prova"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-df-principal-df-portarias",
+      "jurisdiction": "DF",
+      "title": "Distrito Federal: Portarias",
+      "short": "Portarias",
+      "official_url": "https://www.receita.fazenda.df.gov.br/",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "#ESTADUAIS-COMPILADO-NOTEBOOKLM\\DF\\DF_PORTARIAS.txt"
+        ],
+        "sha256": {
+          "DF_PORTARIAS.txt": "b60a8b612a009922f90de03a5b56d39956c868c239d640c3254770637e1aedb7"
+        },
+        "fetch_url": ""
+      },
+      "note": "Texto estadual de ICMS publicado em estados/df/legislacao/fontes/principal-df-portarias.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-df",
+          "module_title": "Distrito Federal: legislação de ICMS em tela",
+          "chapters": [
+            "icms",
+            "beneficios",
+            "aliquotas",
+            "prova"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-es-complementar-es-ricms-pt1",
+      "jurisdiction": "ES",
+      "title": "Espírito Santo: Regulamento do ICMS - parte 1",
+      "short": "Regulamento do ICMS",
+      "official_url": "https://sefaz.es.gov.br/legislacao-online",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "Estados_Complementar\\ES\\ES_RICMS_pt1.txt"
+        ],
+        "sha256": {
+          "ES_RICMS_pt1.txt": "eaf5a79b5140664df25d9fd2e9ce56c5152e70711b9430a3e7068625aba5f7fb"
+        },
+        "fetch_url": ""
+      },
+      "note": "Texto estadual de ICMS publicado em estados/es/legislacao/fontes/complementar-es-ricms-pt1.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-es",
+          "module_title": "Espírito Santo: legislação de ICMS em tela",
+          "chapters": [
+            "icms",
+            "beneficios",
+            "aliquotas",
+            "st",
+            "prova"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-es-complementar-es-ricms-pt2",
+      "jurisdiction": "ES",
+      "title": "Espírito Santo: Regulamento do ICMS - parte 2",
+      "short": "Regulamento do ICMS",
+      "official_url": "https://sefaz.es.gov.br/legislacao-online",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "Estados_Complementar\\ES\\ES_RICMS_pt2.txt"
+        ],
+        "sha256": {
+          "ES_RICMS_pt2.txt": "1dc7d66e5e6d51dd9207dd6f555855dac911b3c4e53060a8c34099fb157c5fcc"
+        },
+        "fetch_url": ""
+      },
+      "note": "Texto estadual de ICMS publicado em estados/es/legislacao/fontes/complementar-es-ricms-pt2.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-es",
+          "module_title": "Espírito Santo: legislação de ICMS em tela",
+          "chapters": [
+            "icms",
+            "beneficios",
+            "aliquotas",
+            "st",
+            "prova"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-es-complementar-es-ricms-pt3",
+      "jurisdiction": "ES",
+      "title": "Espírito Santo: Regulamento do ICMS - parte 3",
+      "short": "Regulamento do ICMS",
+      "official_url": "https://sefaz.es.gov.br/legislacao-online",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "Estados_Complementar\\ES\\ES_RICMS_pt3.txt"
+        ],
+        "sha256": {
+          "ES_RICMS_pt3.txt": "b98cbb0e9be74bb514b1bf2f6ecdad479af2c954b929e6f6825d2e89bf282902"
+        },
+        "fetch_url": ""
+      },
+      "note": "Texto estadual de ICMS publicado em estados/es/legislacao/fontes/complementar-es-ricms-pt3.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-es",
+          "module_title": "Espírito Santo: legislação de ICMS em tela",
+          "chapters": [
+            "icms",
+            "beneficios",
+            "aliquotas",
+            "st",
+            "prova"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-es-complementar-es-ricms-pt4",
+      "jurisdiction": "ES",
+      "title": "Espírito Santo: Regulamento do ICMS - parte 4",
+      "short": "Regulamento do ICMS",
+      "official_url": "https://sefaz.es.gov.br/legislacao-online",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "Estados_Complementar\\ES\\ES_RICMS_pt4.txt"
+        ],
+        "sha256": {
+          "ES_RICMS_pt4.txt": "6e1743c9de83bf3588ae44a10b500e6cc24aafc57a2122ae09b873a875483cb5"
+        },
+        "fetch_url": ""
+      },
+      "note": "Texto estadual de ICMS publicado em estados/es/legislacao/fontes/complementar-es-ricms-pt4.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-es",
+          "module_title": "Espírito Santo: legislação de ICMS em tela",
+          "chapters": [
+            "icms",
+            "beneficios",
+            "aliquotas",
+            "st",
+            "prova"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-es-complementar-es-ricms-pt5",
+      "jurisdiction": "ES",
+      "title": "Espírito Santo: Regulamento do ICMS - parte 5",
+      "short": "Regulamento do ICMS",
+      "official_url": "https://sefaz.es.gov.br/legislacao-online",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "Estados_Complementar\\ES\\ES_RICMS_pt5.txt"
+        ],
+        "sha256": {
+          "ES_RICMS_pt5.txt": "e51929f28110a1337b1eb4264ead5a46d247b82ede29ef50cd7a2882560393d2"
+        },
+        "fetch_url": ""
+      },
+      "note": "Texto estadual de ICMS publicado em estados/es/legislacao/fontes/complementar-es-ricms-pt5.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-es",
+          "module_title": "Espírito Santo: legislação de ICMS em tela",
+          "chapters": [
+            "icms",
+            "beneficios",
+            "aliquotas",
+            "st",
+            "prova"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-es-complementar-es-ricms-pt6",
+      "jurisdiction": "ES",
+      "title": "Espírito Santo: Regulamento do ICMS - parte 6",
+      "short": "Regulamento do ICMS",
+      "official_url": "https://sefaz.es.gov.br/legislacao-online",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "Estados_Complementar\\ES\\ES_RICMS_pt6.txt"
+        ],
+        "sha256": {
+          "ES_RICMS_pt6.txt": "5354bb93dc8144e079a086977b19d2b5d058f4908bccb6b6734833de5e10bcec"
+        },
+        "fetch_url": ""
+      },
+      "note": "Texto estadual de ICMS publicado em estados/es/legislacao/fontes/complementar-es-ricms-pt6.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-es",
+          "module_title": "Espírito Santo: legislação de ICMS em tela",
+          "chapters": [
+            "icms",
+            "beneficios",
+            "aliquotas",
+            "st",
+            "prova"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-es-complementar-es-ricms-pt7",
+      "jurisdiction": "ES",
+      "title": "Espírito Santo: Regulamento do ICMS - parte 7",
+      "short": "Regulamento do ICMS",
+      "official_url": "https://sefaz.es.gov.br/legislacao-online",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "Estados_Complementar\\ES\\ES_RICMS_pt7.txt"
+        ],
+        "sha256": {
+          "ES_RICMS_pt7.txt": "0e9cb34cb151032b11275d1cebd1b7a8d440ecf64a74447239ee305ed5d25ef4"
+        },
+        "fetch_url": ""
+      },
+      "note": "Texto estadual de ICMS publicado em estados/es/legislacao/fontes/complementar-es-ricms-pt7.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-es",
+          "module_title": "Espírito Santo: legislação de ICMS em tela",
+          "chapters": [
+            "icms",
+            "beneficios",
+            "aliquotas",
+            "st",
+            "prova"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-ma-principal-ma-icms-leis",
+      "jurisdiction": "MA",
+      "title": "Maranhão: Leis do ICMS",
+      "short": "Leis do ICMS",
+      "official_url": "https://sistemas1.sefaz.ma.gov.br/portalsefaz/",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "#ESTADUAIS-COMPILADO-NOTEBOOKLM\\MA\\MA_ICMS_LEIS.txt"
+        ],
+        "sha256": {
+          "MA_ICMS_LEIS.txt": "70154672e297c656aba4e459b8f5078dcaaa7fee92cd89d75d546c5e3f25e36e"
+        },
+        "fetch_url": ""
+      },
+      "note": "Texto estadual de ICMS publicado em estados/ma/legislacao/fontes/principal-ma-icms-leis.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-ma",
+          "module_title": "Maranhão: legislação de ICMS em tela",
+          "chapters": [
+            "icms",
+            "beneficios",
+            "aliquotas",
+            "st",
+            "prova"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-ma-principal-ma-ricms",
+      "jurisdiction": "MA",
+      "title": "Maranhão: Regulamento do ICMS",
+      "short": "Regulamento do ICMS",
+      "official_url": "https://sistemas1.sefaz.ma.gov.br/portalsefaz/",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "#ESTADUAIS-COMPILADO-NOTEBOOKLM\\MA\\MA_RICMS.txt"
+        ],
+        "sha256": {
+          "MA_RICMS.txt": "9a3a30735548898280817bf23033d3dccea4d3ac2329237c855af6797d327a0b"
+        },
+        "fetch_url": ""
+      },
+      "note": "Texto estadual de ICMS publicado em estados/ma/legislacao/fontes/principal-ma-ricms.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-ma",
+          "module_title": "Maranhão: legislação de ICMS em tela",
+          "chapters": [
+            "icms",
+            "beneficios",
+            "aliquotas",
+            "st",
+            "prova"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-ma-principal-ma-ricms-parte2",
+      "jurisdiction": "MA",
+      "title": "Maranhão: Regulamento do ICMS - parte 2",
+      "short": "Regulamento do ICMS",
+      "official_url": "https://sistemas1.sefaz.ma.gov.br/portalsefaz/",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "#ESTADUAIS-COMPILADO-NOTEBOOKLM\\MA\\MA_RICMS_parte2.txt"
+        ],
+        "sha256": {
+          "MA_RICMS_parte2.txt": "928bff257c4b9c2a752f9984108b54a1811f76a2ccced358239be1b8a6fd19ee"
+        },
+        "fetch_url": ""
+      },
+      "note": "Texto estadual de ICMS publicado em estados/ma/legislacao/fontes/principal-ma-ricms-parte2.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-ma",
+          "module_title": "Maranhão: legislação de ICMS em tela",
+          "chapters": [
+            "icms",
+            "beneficios",
+            "aliquotas",
+            "st",
+            "prova"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-ma-principal-ma-ricms-parte3",
+      "jurisdiction": "MA",
+      "title": "Maranhão: Regulamento do ICMS - parte 3",
+      "short": "Regulamento do ICMS",
+      "official_url": "https://sistemas1.sefaz.ma.gov.br/portalsefaz/",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "#ESTADUAIS-COMPILADO-NOTEBOOKLM\\MA\\MA_RICMS_parte3.txt"
+        ],
+        "sha256": {
+          "MA_RICMS_parte3.txt": "7c9b5688d8b6cf3f92b7f326735267185d0000b48346781261cd83f9b5bd3677"
+        },
+        "fetch_url": ""
+      },
+      "note": "Texto estadual de ICMS publicado em estados/ma/legislacao/fontes/principal-ma-ricms-parte3.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-ma",
+          "module_title": "Maranhão: legislação de ICMS em tela",
+          "chapters": [
+            "icms",
+            "beneficios",
+            "aliquotas",
+            "st",
+            "prova"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-ma-principal-ma-ricms-parte4",
+      "jurisdiction": "MA",
+      "title": "Maranhão: Regulamento do ICMS - parte 4",
+      "short": "Regulamento do ICMS",
+      "official_url": "https://sistemas1.sefaz.ma.gov.br/portalsefaz/",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "#ESTADUAIS-COMPILADO-NOTEBOOKLM\\MA\\MA_RICMS_parte4.txt"
+        ],
+        "sha256": {
+          "MA_RICMS_parte4.txt": "90a1b86b3595f9a19f7d6f85973eefc3bd8412f1ebf884d05d0f059a47436942"
+        },
+        "fetch_url": ""
+      },
+      "note": "Texto estadual de ICMS publicado em estados/ma/legislacao/fontes/principal-ma-ricms-parte4.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-ma",
+          "module_title": "Maranhão: legislação de ICMS em tela",
+          "chapters": [
+            "icms",
+            "beneficios",
+            "aliquotas",
+            "st",
+            "prova"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-ma-principal-ma-ricms-parte5",
+      "jurisdiction": "MA",
+      "title": "Maranhão: Regulamento do ICMS - parte 5",
+      "short": "Regulamento do ICMS",
+      "official_url": "https://sistemas1.sefaz.ma.gov.br/portalsefaz/",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "#ESTADUAIS-COMPILADO-NOTEBOOKLM\\MA\\MA_RICMS_parte5.txt"
+        ],
+        "sha256": {
+          "MA_RICMS_parte5.txt": "7a1158aea1eacc7f3c01cac2306a33b722407ec5611083ec5c4bca541cf64cda"
+        },
+        "fetch_url": ""
+      },
+      "note": "Texto estadual de ICMS publicado em estados/ma/legislacao/fontes/principal-ma-ricms-parte5.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-ma",
+          "module_title": "Maranhão: legislação de ICMS em tela",
+          "chapters": [
+            "icms",
+            "beneficios",
+            "aliquotas",
+            "st",
+            "prova"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-ma-principal-ma-ricms-parte6",
+      "jurisdiction": "MA",
+      "title": "Maranhão: Regulamento do ICMS - parte 6",
+      "short": "Regulamento do ICMS",
+      "official_url": "https://sistemas1.sefaz.ma.gov.br/portalsefaz/",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "#ESTADUAIS-COMPILADO-NOTEBOOKLM\\MA\\MA_RICMS_parte6.txt"
+        ],
+        "sha256": {
+          "MA_RICMS_parte6.txt": "da6f3973a618fc4e217ea0c5314db88571a73f0e44b4152f6f1e47a73b55b6e4"
+        },
+        "fetch_url": ""
+      },
+      "note": "Texto estadual de ICMS publicado em estados/ma/legislacao/fontes/principal-ma-ricms-parte6.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-ma",
+          "module_title": "Maranhão: legislação de ICMS em tela",
+          "chapters": [
+            "icms",
+            "beneficios",
+            "aliquotas",
+            "st",
+            "prova"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-ma-principal-ma-ricms-parte7",
+      "jurisdiction": "MA",
+      "title": "Maranhão: Regulamento do ICMS - parte 7",
+      "short": "Regulamento do ICMS",
+      "official_url": "https://sistemas1.sefaz.ma.gov.br/portalsefaz/",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "#ESTADUAIS-COMPILADO-NOTEBOOKLM\\MA\\MA_RICMS_parte7.txt"
+        ],
+        "sha256": {
+          "MA_RICMS_parte7.txt": "20faf147bcc136904de75ea2d6484be1a5533d4348c674ce16a757eeb85ea9ae"
+        },
+        "fetch_url": ""
+      },
+      "note": "Texto estadual de ICMS publicado em estados/ma/legislacao/fontes/principal-ma-ricms-parte7.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-ma",
+          "module_title": "Maranhão: legislação de ICMS em tela",
+          "chapters": [
+            "icms",
+            "beneficios",
+            "aliquotas",
+            "st",
+            "prova"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-ma-principal-ma-ricms-parte8",
+      "jurisdiction": "MA",
+      "title": "Maranhão: Regulamento do ICMS - parte 8",
+      "short": "Regulamento do ICMS",
+      "official_url": "https://sistemas1.sefaz.ma.gov.br/portalsefaz/",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "#ESTADUAIS-COMPILADO-NOTEBOOKLM\\MA\\MA_RICMS_parte8.txt"
+        ],
+        "sha256": {
+          "MA_RICMS_parte8.txt": "2ae1b22c998ef193f93c346be0cc7b82f36755ccef8cbf19e8b6d8b7962b1f52"
+        },
+        "fetch_url": ""
+      },
+      "note": "Texto estadual de ICMS publicado em estados/ma/legislacao/fontes/principal-ma-ricms-parte8.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-ma",
+          "module_title": "Maranhão: legislação de ICMS em tela",
+          "chapters": [
+            "icms",
+            "beneficios",
+            "aliquotas",
+            "st",
+            "prova"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-ma-principal-ma-ricms-parte9",
+      "jurisdiction": "MA",
+      "title": "Maranhão: Regulamento do ICMS - parte 9",
+      "short": "Regulamento do ICMS",
+      "official_url": "https://sistemas1.sefaz.ma.gov.br/portalsefaz/",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "#ESTADUAIS-COMPILADO-NOTEBOOKLM\\MA\\MA_RICMS_parte9.txt"
+        ],
+        "sha256": {
+          "MA_RICMS_parte9.txt": "a1a8a193d83c83f73331a63f95b48a8579936e992a62ce7a984d0cbe6c6d6a55"
+        },
+        "fetch_url": ""
+      },
+      "note": "Texto estadual de ICMS publicado em estados/ma/legislacao/fontes/principal-ma-ricms-parte9.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-ma",
+          "module_title": "Maranhão: legislação de ICMS em tela",
+          "chapters": [
+            "icms",
+            "beneficios",
+            "aliquotas",
+            "st",
+            "prova"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-mt-principal-mt-icms-anexos",
+      "jurisdiction": "MT",
+      "title": "Mato Grosso: Anexos do ICMS",
+      "short": "Anexos do ICMS",
+      "official_url": "https://www.sefaz.mt.gov.br/",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "#ESTADUAIS-COMPILADO-NOTEBOOKLM\\MT\\MT_ICMS_ANEXOS.txt"
+        ],
+        "sha256": {
+          "MT_ICMS_ANEXOS.txt": "843945df51bd372dbe1c21e47aef6abba611cc93125501c9e51f430510e64a21"
+        },
+        "fetch_url": ""
+      },
+      "note": "Texto estadual de ICMS publicado em estados/mt/legislacao/fontes/principal-mt-icms-anexos.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-mt",
+          "module_title": "Mato Grosso: legislação de ICMS em tela",
+          "chapters": [
+            "icms",
+            "beneficios",
+            "aliquotas",
+            "st",
+            "prova"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-mt-principal-mt-icms-anexos-parte2",
+      "jurisdiction": "MT",
+      "title": "Mato Grosso: Anexos do ICMS - parte 2",
+      "short": "Anexos do ICMS",
+      "official_url": "https://www.sefaz.mt.gov.br/",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "#ESTADUAIS-COMPILADO-NOTEBOOKLM\\MT\\MT_ICMS_ANEXOS_parte2.txt"
+        ],
+        "sha256": {
+          "MT_ICMS_ANEXOS_parte2.txt": "0de8606c74b22832ee6d86bcbdfc86029d89337057e98eaac1105da91f41c19f"
+        },
+        "fetch_url": ""
+      },
+      "note": "Texto estadual de ICMS publicado em estados/mt/legislacao/fontes/principal-mt-icms-anexos-parte2.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-mt",
+          "module_title": "Mato Grosso: legislação de ICMS em tela",
+          "chapters": [
+            "icms",
+            "beneficios",
+            "aliquotas",
+            "st",
+            "prova"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-mt-principal-mt-ricms",
+      "jurisdiction": "MT",
+      "title": "Mato Grosso: Regulamento do ICMS",
+      "short": "Regulamento do ICMS",
+      "official_url": "https://www.sefaz.mt.gov.br/",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "#ESTADUAIS-COMPILADO-NOTEBOOKLM\\MT\\MT_RICMS.txt"
+        ],
+        "sha256": {
+          "MT_RICMS.txt": "32f1aff6e59bc7bfc8cea966adf1e2f83a7f3b9054b9cae1937833f89c7d98f6"
+        },
+        "fetch_url": ""
+      },
+      "note": "Texto estadual de ICMS publicado em estados/mt/legislacao/fontes/principal-mt-ricms.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-mt",
+          "module_title": "Mato Grosso: legislação de ICMS em tela",
+          "chapters": [
+            "icms",
+            "beneficios",
+            "aliquotas",
+            "st",
+            "prova"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-ms-complementar-ms-ricms-pt1",
+      "jurisdiction": "MS",
+      "title": "Mato Grosso do Sul: Regulamento do ICMS - parte 1",
+      "short": "Regulamento do ICMS",
+      "official_url": "https://www.sefaz.ms.gov.br/legislacao/",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "Estados_Complementar\\MS\\MS_RICMS_pt1.txt"
+        ],
+        "sha256": {
+          "MS_RICMS_pt1.txt": "e1ca0f4f823b457d2e1f6aa3042ca7c87cb70d02804365b5838e3aa527835de9"
+        },
+        "fetch_url": ""
+      },
+      "note": "Texto estadual de ICMS publicado em estados/ms/legislacao/fontes/complementar-ms-ricms-pt1.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-ms",
+          "module_title": "Mato Grosso do Sul: legislação de ICMS em tela",
+          "chapters": [
+            "icms",
+            "beneficios",
+            "aliquotas",
+            "st",
+            "prova"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-ms-complementar-ms-ricms-pt2",
+      "jurisdiction": "MS",
+      "title": "Mato Grosso do Sul: Regulamento do ICMS - parte 2",
+      "short": "Regulamento do ICMS",
+      "official_url": "https://www.sefaz.ms.gov.br/legislacao/",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "Estados_Complementar\\MS\\MS_RICMS_pt2.txt"
+        ],
+        "sha256": {
+          "MS_RICMS_pt2.txt": "cbdf3e275e154d5681a6540c94c0627ddbb259eb5279f24de484e225d6c9a856"
+        },
+        "fetch_url": ""
+      },
+      "note": "Texto estadual de ICMS publicado em estados/ms/legislacao/fontes/complementar-ms-ricms-pt2.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-ms",
+          "module_title": "Mato Grosso do Sul: legislação de ICMS em tela",
+          "chapters": [
+            "icms",
+            "beneficios",
+            "aliquotas",
+            "st",
+            "prova"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-ms-complementar-ms-ricms-pt3",
+      "jurisdiction": "MS",
+      "title": "Mato Grosso do Sul: Regulamento do ICMS - parte 3",
+      "short": "Regulamento do ICMS",
+      "official_url": "https://www.sefaz.ms.gov.br/legislacao/",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "Estados_Complementar\\MS\\MS_RICMS_pt3.txt"
+        ],
+        "sha256": {
+          "MS_RICMS_pt3.txt": "c53d910d2fe8a2e677a9b51e09940caeee646ee2b670319d1edf34c9c399e6b0"
+        },
+        "fetch_url": ""
+      },
+      "note": "Texto estadual de ICMS publicado em estados/ms/legislacao/fontes/complementar-ms-ricms-pt3.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-ms",
+          "module_title": "Mato Grosso do Sul: legislação de ICMS em tela",
+          "chapters": [
+            "icms",
+            "beneficios",
+            "aliquotas",
+            "st",
+            "prova"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-ms-complementar-ms-ricms-pt4",
+      "jurisdiction": "MS",
+      "title": "Mato Grosso do Sul: Regulamento do ICMS - parte 4",
+      "short": "Regulamento do ICMS",
+      "official_url": "https://www.sefaz.ms.gov.br/legislacao/",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "Estados_Complementar\\MS\\MS_RICMS_pt4.txt"
+        ],
+        "sha256": {
+          "MS_RICMS_pt4.txt": "54db79eb8756adec99bc36549455fe8c9d1e52a01b10e0c888bc827e9ca01ec7"
+        },
+        "fetch_url": ""
+      },
+      "note": "Texto estadual de ICMS publicado em estados/ms/legislacao/fontes/complementar-ms-ricms-pt4.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-ms",
+          "module_title": "Mato Grosso do Sul: legislação de ICMS em tela",
+          "chapters": [
+            "icms",
+            "beneficios",
+            "aliquotas",
+            "st",
+            "prova"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-ms-complementar-ms-ricms-pt5",
+      "jurisdiction": "MS",
+      "title": "Mato Grosso do Sul: Regulamento do ICMS - parte 5",
+      "short": "Regulamento do ICMS",
+      "official_url": "https://www.sefaz.ms.gov.br/legislacao/",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "Estados_Complementar\\MS\\MS_RICMS_pt5.txt"
+        ],
+        "sha256": {
+          "MS_RICMS_pt5.txt": "efd4934adb495d9ebdb91596f814650df8e0a89472f3e51e5886718eaa48c587"
+        },
+        "fetch_url": ""
+      },
+      "note": "Texto estadual de ICMS publicado em estados/ms/legislacao/fontes/complementar-ms-ricms-pt5.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-ms",
+          "module_title": "Mato Grosso do Sul: legislação de ICMS em tela",
+          "chapters": [
+            "icms",
+            "beneficios",
+            "aliquotas",
+            "st",
+            "prova"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-mg-complementar-mg-ricms-pt1",
+      "jurisdiction": "MG",
+      "title": "Minas Gerais: Regulamento do ICMS - parte 1",
+      "short": "Regulamento do ICMS",
+      "official_url": "http://www.fazenda.mg.gov.br/empresas/legislacao_tributaria/",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "Estados_Complementar\\MG\\MG_RICMS_pt1.txt"
+        ],
+        "sha256": {
+          "MG_RICMS_pt1.txt": "49a32ee58fbee1bd3acea2c67bbe49fe612e74dcb089431d4f92f6e2fc6de59b"
+        },
+        "fetch_url": ""
+      },
+      "note": "Texto estadual de ICMS publicado em estados/mg/legislacao/fontes/complementar-mg-ricms-pt1.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-mg",
+          "module_title": "Minas Gerais: legislação de ICMS em tela",
+          "chapters": [
+            "icms",
+            "beneficios",
+            "aliquotas",
+            "st",
+            "prova"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-mg-complementar-mg-ricms-pt10",
+      "jurisdiction": "MG",
+      "title": "Minas Gerais: Regulamento do ICMS - parte 10",
+      "short": "Regulamento do ICMS",
+      "official_url": "http://www.fazenda.mg.gov.br/empresas/legislacao_tributaria/",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "Estados_Complementar\\MG\\MG_RICMS_pt10.txt"
+        ],
+        "sha256": {
+          "MG_RICMS_pt10.txt": "160cd90ab39e3d23b7fc97e6b7f1a6e52bef6d6336a2dc6a1c741bd70b90fa8c"
+        },
+        "fetch_url": ""
+      },
+      "note": "Texto estadual de ICMS publicado em estados/mg/legislacao/fontes/complementar-mg-ricms-pt10.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-mg",
+          "module_title": "Minas Gerais: legislação de ICMS em tela",
+          "chapters": [
+            "icms",
+            "beneficios",
+            "aliquotas",
+            "st",
+            "prova"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-mg-complementar-mg-ricms-pt11",
+      "jurisdiction": "MG",
+      "title": "Minas Gerais: Regulamento do ICMS - parte 11",
+      "short": "Regulamento do ICMS",
+      "official_url": "http://www.fazenda.mg.gov.br/empresas/legislacao_tributaria/",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "Estados_Complementar\\MG\\MG_RICMS_pt11.txt"
+        ],
+        "sha256": {
+          "MG_RICMS_pt11.txt": "fc0cdc60a8c7b38e10522ab3e3b7bc832128c4fdb4112d11acdb07d74ffedfcc"
+        },
+        "fetch_url": ""
+      },
+      "note": "Texto estadual de ICMS publicado em estados/mg/legislacao/fontes/complementar-mg-ricms-pt11.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-mg",
+          "module_title": "Minas Gerais: legislação de ICMS em tela",
+          "chapters": [
+            "icms",
+            "beneficios",
+            "aliquotas",
+            "st",
+            "prova"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-mg-complementar-mg-ricms-pt12",
+      "jurisdiction": "MG",
+      "title": "Minas Gerais: Regulamento do ICMS - parte 12",
+      "short": "Regulamento do ICMS",
+      "official_url": "http://www.fazenda.mg.gov.br/empresas/legislacao_tributaria/",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "Estados_Complementar\\MG\\MG_RICMS_pt12.txt"
+        ],
+        "sha256": {
+          "MG_RICMS_pt12.txt": "aedf83eb3b6c5bf14a57836a33f719dc51c12698bd29a2dac6380156c840c6b3"
+        },
+        "fetch_url": ""
+      },
+      "note": "Texto estadual de ICMS publicado em estados/mg/legislacao/fontes/complementar-mg-ricms-pt12.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-mg",
+          "module_title": "Minas Gerais: legislação de ICMS em tela",
+          "chapters": [
+            "icms",
+            "beneficios",
+            "aliquotas",
+            "st",
+            "prova"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-mg-complementar-mg-ricms-pt13",
+      "jurisdiction": "MG",
+      "title": "Minas Gerais: Regulamento do ICMS - parte 13",
+      "short": "Regulamento do ICMS",
+      "official_url": "http://www.fazenda.mg.gov.br/empresas/legislacao_tributaria/",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "Estados_Complementar\\MG\\MG_RICMS_pt13.txt"
+        ],
+        "sha256": {
+          "MG_RICMS_pt13.txt": "8e1ca8ce8ea18e958b618a9bd30ba591e47309b82eb9f991d190cf3b55507ce2"
+        },
+        "fetch_url": ""
+      },
+      "note": "Texto estadual de ICMS publicado em estados/mg/legislacao/fontes/complementar-mg-ricms-pt13.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-mg",
+          "module_title": "Minas Gerais: legislação de ICMS em tela",
+          "chapters": [
+            "icms",
+            "beneficios",
+            "aliquotas",
+            "st",
+            "prova"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-mg-complementar-mg-ricms-pt14",
+      "jurisdiction": "MG",
+      "title": "Minas Gerais: Regulamento do ICMS - parte 14",
+      "short": "Regulamento do ICMS",
+      "official_url": "http://www.fazenda.mg.gov.br/empresas/legislacao_tributaria/",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "Estados_Complementar\\MG\\MG_RICMS_pt14.txt"
+        ],
+        "sha256": {
+          "MG_RICMS_pt14.txt": "d4d85e0c09d091b5b04e468f85c02f6a3d438430d03ba230aa975553d913effb"
+        },
+        "fetch_url": ""
+      },
+      "note": "Texto estadual de ICMS publicado em estados/mg/legislacao/fontes/complementar-mg-ricms-pt14.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-mg",
+          "module_title": "Minas Gerais: legislação de ICMS em tela",
+          "chapters": [
+            "icms",
+            "beneficios",
+            "aliquotas",
+            "st",
+            "prova"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-mg-complementar-mg-ricms-pt15",
+      "jurisdiction": "MG",
+      "title": "Minas Gerais: Regulamento do ICMS - parte 15",
+      "short": "Regulamento do ICMS",
+      "official_url": "http://www.fazenda.mg.gov.br/empresas/legislacao_tributaria/",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "Estados_Complementar\\MG\\MG_RICMS_pt15.txt"
+        ],
+        "sha256": {
+          "MG_RICMS_pt15.txt": "f86c7d0f1c22248814db3679c5d16f9d63f8d709a9bdd1246b4593a44bea2736"
+        },
+        "fetch_url": ""
+      },
+      "note": "Texto estadual de ICMS publicado em estados/mg/legislacao/fontes/complementar-mg-ricms-pt15.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-mg",
+          "module_title": "Minas Gerais: legislação de ICMS em tela",
+          "chapters": [
+            "icms",
+            "beneficios",
+            "aliquotas",
+            "st",
+            "prova"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-mg-complementar-mg-ricms-pt16",
+      "jurisdiction": "MG",
+      "title": "Minas Gerais: Regulamento do ICMS - parte 16",
+      "short": "Regulamento do ICMS",
+      "official_url": "http://www.fazenda.mg.gov.br/empresas/legislacao_tributaria/",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "Estados_Complementar\\MG\\MG_RICMS_pt16.txt"
+        ],
+        "sha256": {
+          "MG_RICMS_pt16.txt": "1bd63b1a6a870677b0b5ac20736217f93a313fee58b556d17e27f4438e5833da"
+        },
+        "fetch_url": ""
+      },
+      "note": "Texto estadual de ICMS publicado em estados/mg/legislacao/fontes/complementar-mg-ricms-pt16.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-mg",
+          "module_title": "Minas Gerais: legislação de ICMS em tela",
+          "chapters": [
+            "icms",
+            "beneficios",
+            "aliquotas",
+            "st",
+            "prova"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-mg-complementar-mg-ricms-pt17",
+      "jurisdiction": "MG",
+      "title": "Minas Gerais: Regulamento do ICMS - parte 17",
+      "short": "Regulamento do ICMS",
+      "official_url": "http://www.fazenda.mg.gov.br/empresas/legislacao_tributaria/",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "Estados_Complementar\\MG\\MG_RICMS_pt17.txt"
+        ],
+        "sha256": {
+          "MG_RICMS_pt17.txt": "0e552f061671281442530aac8b98828548f25565bf8c918be71566893d097f08"
+        },
+        "fetch_url": ""
+      },
+      "note": "Texto estadual de ICMS publicado em estados/mg/legislacao/fontes/complementar-mg-ricms-pt17.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-mg",
+          "module_title": "Minas Gerais: legislação de ICMS em tela",
+          "chapters": [
+            "icms",
+            "beneficios",
+            "aliquotas",
+            "st",
+            "prova"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-mg-complementar-mg-ricms-pt18",
+      "jurisdiction": "MG",
+      "title": "Minas Gerais: Regulamento do ICMS - parte 18",
+      "short": "Regulamento do ICMS",
+      "official_url": "http://www.fazenda.mg.gov.br/empresas/legislacao_tributaria/",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "Estados_Complementar\\MG\\MG_RICMS_pt18.txt"
+        ],
+        "sha256": {
+          "MG_RICMS_pt18.txt": "fd60e48aba62e3436764c296986b974ec22aff4481c56173efa6a4a75730bfed"
+        },
+        "fetch_url": ""
+      },
+      "note": "Texto estadual de ICMS publicado em estados/mg/legislacao/fontes/complementar-mg-ricms-pt18.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-mg",
+          "module_title": "Minas Gerais: legislação de ICMS em tela",
+          "chapters": [
+            "icms",
+            "beneficios",
+            "aliquotas",
+            "st",
+            "prova"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-mg-complementar-mg-ricms-pt19",
+      "jurisdiction": "MG",
+      "title": "Minas Gerais: Regulamento do ICMS - parte 19",
+      "short": "Regulamento do ICMS",
+      "official_url": "http://www.fazenda.mg.gov.br/empresas/legislacao_tributaria/",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "Estados_Complementar\\MG\\MG_RICMS_pt19.txt"
+        ],
+        "sha256": {
+          "MG_RICMS_pt19.txt": "b513af1e18e24cccc6578056077526c17483af410b22f4823f55671f826c6038"
+        },
+        "fetch_url": ""
+      },
+      "note": "Texto estadual de ICMS publicado em estados/mg/legislacao/fontes/complementar-mg-ricms-pt19.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-mg",
+          "module_title": "Minas Gerais: legislação de ICMS em tela",
+          "chapters": [
+            "icms",
+            "beneficios",
+            "aliquotas",
+            "st",
+            "prova"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-mg-complementar-mg-ricms-pt2",
+      "jurisdiction": "MG",
+      "title": "Minas Gerais: Regulamento do ICMS - parte 2",
+      "short": "Regulamento do ICMS",
+      "official_url": "http://www.fazenda.mg.gov.br/empresas/legislacao_tributaria/",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "Estados_Complementar\\MG\\MG_RICMS_pt2.txt"
+        ],
+        "sha256": {
+          "MG_RICMS_pt2.txt": "3fa5455ffdf9a1a6c4e6bebcc8e02f26c797b91b84eca96d905e116269228be3"
+        },
+        "fetch_url": ""
+      },
+      "note": "Texto estadual de ICMS publicado em estados/mg/legislacao/fontes/complementar-mg-ricms-pt2.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-mg",
+          "module_title": "Minas Gerais: legislação de ICMS em tela",
+          "chapters": [
+            "icms",
+            "beneficios",
+            "aliquotas",
+            "st",
+            "prova"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-mg-complementar-mg-ricms-pt20",
+      "jurisdiction": "MG",
+      "title": "Minas Gerais: Regulamento do ICMS - parte 20",
+      "short": "Regulamento do ICMS",
+      "official_url": "http://www.fazenda.mg.gov.br/empresas/legislacao_tributaria/",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "Estados_Complementar\\MG\\MG_RICMS_pt20.txt"
+        ],
+        "sha256": {
+          "MG_RICMS_pt20.txt": "677d42eff921920c282ef2c8835f2a818233b4c84bb9c921a39b6d338c136c1a"
+        },
+        "fetch_url": ""
+      },
+      "note": "Texto estadual de ICMS publicado em estados/mg/legislacao/fontes/complementar-mg-ricms-pt20.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-mg",
+          "module_title": "Minas Gerais: legislação de ICMS em tela",
+          "chapters": [
+            "icms",
+            "beneficios",
+            "aliquotas",
+            "st",
+            "prova"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-mg-complementar-mg-ricms-pt21",
+      "jurisdiction": "MG",
+      "title": "Minas Gerais: Regulamento do ICMS - parte 21",
+      "short": "Regulamento do ICMS",
+      "official_url": "http://www.fazenda.mg.gov.br/empresas/legislacao_tributaria/",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "Estados_Complementar\\MG\\MG_RICMS_pt21.txt"
+        ],
+        "sha256": {
+          "MG_RICMS_pt21.txt": "39e2ce9e248c21384c3b4594c4761c63a0a1baef5dcfa79cf314bd053e772012"
+        },
+        "fetch_url": ""
+      },
+      "note": "Texto estadual de ICMS publicado em estados/mg/legislacao/fontes/complementar-mg-ricms-pt21.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-mg",
+          "module_title": "Minas Gerais: legislação de ICMS em tela",
+          "chapters": [
+            "icms",
+            "beneficios",
+            "aliquotas",
+            "st",
+            "prova"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-mg-complementar-mg-ricms-pt22",
+      "jurisdiction": "MG",
+      "title": "Minas Gerais: Regulamento do ICMS - parte 22",
+      "short": "Regulamento do ICMS",
+      "official_url": "http://www.fazenda.mg.gov.br/empresas/legislacao_tributaria/",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "Estados_Complementar\\MG\\MG_RICMS_pt22.txt"
+        ],
+        "sha256": {
+          "MG_RICMS_pt22.txt": "6f63d7181da107ef6f36a965a2df5bf570dc4df971ce99598ca050de038123b4"
+        },
+        "fetch_url": ""
+      },
+      "note": "Texto estadual de ICMS publicado em estados/mg/legislacao/fontes/complementar-mg-ricms-pt22.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-mg",
+          "module_title": "Minas Gerais: legislação de ICMS em tela",
+          "chapters": [
+            "icms",
+            "beneficios",
+            "aliquotas",
+            "st",
+            "prova"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-mg-complementar-mg-ricms-pt23",
+      "jurisdiction": "MG",
+      "title": "Minas Gerais: Regulamento do ICMS - parte 23",
+      "short": "Regulamento do ICMS",
+      "official_url": "http://www.fazenda.mg.gov.br/empresas/legislacao_tributaria/",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "Estados_Complementar\\MG\\MG_RICMS_pt23.txt"
+        ],
+        "sha256": {
+          "MG_RICMS_pt23.txt": "4d7509bb75baaba776bfb0075e00ef06fcb765a27aae457ab01847bf917dd82d"
+        },
+        "fetch_url": ""
+      },
+      "note": "Texto estadual de ICMS publicado em estados/mg/legislacao/fontes/complementar-mg-ricms-pt23.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-mg",
+          "module_title": "Minas Gerais: legislação de ICMS em tela",
+          "chapters": [
+            "icms",
+            "beneficios",
+            "aliquotas",
+            "st",
+            "prova"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-mg-complementar-mg-ricms-pt24",
+      "jurisdiction": "MG",
+      "title": "Minas Gerais: Regulamento do ICMS - parte 24",
+      "short": "Regulamento do ICMS",
+      "official_url": "http://www.fazenda.mg.gov.br/empresas/legislacao_tributaria/",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "Estados_Complementar\\MG\\MG_RICMS_pt24.txt"
+        ],
+        "sha256": {
+          "MG_RICMS_pt24.txt": "2e902802b56a4747101e400ff2c81fee668afdfbf37d35732b7e79a5856490d5"
+        },
+        "fetch_url": ""
+      },
+      "note": "Texto estadual de ICMS publicado em estados/mg/legislacao/fontes/complementar-mg-ricms-pt24.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-mg",
+          "module_title": "Minas Gerais: legislação de ICMS em tela",
+          "chapters": [
+            "icms",
+            "beneficios",
+            "aliquotas",
+            "st",
+            "prova"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-mg-complementar-mg-ricms-pt25",
+      "jurisdiction": "MG",
+      "title": "Minas Gerais: Regulamento do ICMS - parte 25",
+      "short": "Regulamento do ICMS",
+      "official_url": "http://www.fazenda.mg.gov.br/empresas/legislacao_tributaria/",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "Estados_Complementar\\MG\\MG_RICMS_pt25.txt"
+        ],
+        "sha256": {
+          "MG_RICMS_pt25.txt": "e29256e5dd04039a921f2f1d6602573ea30bca719d3057fd57727e0c50e90c7c"
+        },
+        "fetch_url": ""
+      },
+      "note": "Texto estadual de ICMS publicado em estados/mg/legislacao/fontes/complementar-mg-ricms-pt25.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-mg",
+          "module_title": "Minas Gerais: legislação de ICMS em tela",
+          "chapters": [
+            "icms",
+            "beneficios",
+            "aliquotas",
+            "st",
+            "prova"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-mg-complementar-mg-ricms-pt26",
+      "jurisdiction": "MG",
+      "title": "Minas Gerais: Regulamento do ICMS - parte 26",
+      "short": "Regulamento do ICMS",
+      "official_url": "http://www.fazenda.mg.gov.br/empresas/legislacao_tributaria/",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "Estados_Complementar\\MG\\MG_RICMS_pt26.txt"
+        ],
+        "sha256": {
+          "MG_RICMS_pt26.txt": "216c42342bc8dde9dd55dc7d4edf1a43d65c17586aeab3d7d31074192a503181"
+        },
+        "fetch_url": ""
+      },
+      "note": "Texto estadual de ICMS publicado em estados/mg/legislacao/fontes/complementar-mg-ricms-pt26.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-mg",
+          "module_title": "Minas Gerais: legislação de ICMS em tela",
+          "chapters": [
+            "icms",
+            "beneficios",
+            "aliquotas",
+            "st",
+            "prova"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-mg-complementar-mg-ricms-pt27",
+      "jurisdiction": "MG",
+      "title": "Minas Gerais: Regulamento do ICMS - parte 27",
+      "short": "Regulamento do ICMS",
+      "official_url": "http://www.fazenda.mg.gov.br/empresas/legislacao_tributaria/",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "Estados_Complementar\\MG\\MG_RICMS_pt27.txt"
+        ],
+        "sha256": {
+          "MG_RICMS_pt27.txt": "50b4c999806284e2bafef786c86f5c4dfd0fbc128a1de9174922d21a7834972f"
+        },
+        "fetch_url": ""
+      },
+      "note": "Texto estadual de ICMS publicado em estados/mg/legislacao/fontes/complementar-mg-ricms-pt27.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-mg",
+          "module_title": "Minas Gerais: legislação de ICMS em tela",
+          "chapters": [
+            "icms",
+            "beneficios",
+            "aliquotas",
+            "st",
+            "prova"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-mg-complementar-mg-ricms-pt28",
+      "jurisdiction": "MG",
+      "title": "Minas Gerais: Regulamento do ICMS - parte 28",
+      "short": "Regulamento do ICMS",
+      "official_url": "http://www.fazenda.mg.gov.br/empresas/legislacao_tributaria/",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "Estados_Complementar\\MG\\MG_RICMS_pt28.txt"
+        ],
+        "sha256": {
+          "MG_RICMS_pt28.txt": "53f38bc3def9e662aeda34e263532192879c8cf59521a64b1303ccf66459d1e5"
+        },
+        "fetch_url": ""
+      },
+      "note": "Texto estadual de ICMS publicado em estados/mg/legislacao/fontes/complementar-mg-ricms-pt28.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-mg",
+          "module_title": "Minas Gerais: legislação de ICMS em tela",
+          "chapters": [
+            "icms",
+            "beneficios",
+            "aliquotas",
+            "st",
+            "prova"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-mg-complementar-mg-ricms-pt29",
+      "jurisdiction": "MG",
+      "title": "Minas Gerais: Regulamento do ICMS - parte 29",
+      "short": "Regulamento do ICMS",
+      "official_url": "http://www.fazenda.mg.gov.br/empresas/legislacao_tributaria/",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "Estados_Complementar\\MG\\MG_RICMS_pt29.txt"
+        ],
+        "sha256": {
+          "MG_RICMS_pt29.txt": "64e70986244dbf1731bb9619e2ed8a2e5d56ba803f6baabaa5603bf38f0c61e4"
+        },
+        "fetch_url": ""
+      },
+      "note": "Texto estadual de ICMS publicado em estados/mg/legislacao/fontes/complementar-mg-ricms-pt29.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-mg",
+          "module_title": "Minas Gerais: legislação de ICMS em tela",
+          "chapters": [
+            "icms",
+            "beneficios",
+            "aliquotas",
+            "st",
+            "prova"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-mg-complementar-mg-ricms-pt3",
+      "jurisdiction": "MG",
+      "title": "Minas Gerais: Regulamento do ICMS - parte 3",
+      "short": "Regulamento do ICMS",
+      "official_url": "http://www.fazenda.mg.gov.br/empresas/legislacao_tributaria/",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "Estados_Complementar\\MG\\MG_RICMS_pt3.txt"
+        ],
+        "sha256": {
+          "MG_RICMS_pt3.txt": "23f2ff857872033d7aa738b0fc5a04e4dc5a506ef80035c86042a641e77bf038"
+        },
+        "fetch_url": ""
+      },
+      "note": "Texto estadual de ICMS publicado em estados/mg/legislacao/fontes/complementar-mg-ricms-pt3.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-mg",
+          "module_title": "Minas Gerais: legislação de ICMS em tela",
+          "chapters": [
+            "icms",
+            "beneficios",
+            "aliquotas",
+            "st",
+            "prova"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-mg-complementar-mg-ricms-pt30",
+      "jurisdiction": "MG",
+      "title": "Minas Gerais: Regulamento do ICMS - parte 30",
+      "short": "Regulamento do ICMS",
+      "official_url": "http://www.fazenda.mg.gov.br/empresas/legislacao_tributaria/",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "Estados_Complementar\\MG\\MG_RICMS_pt30.txt"
+        ],
+        "sha256": {
+          "MG_RICMS_pt30.txt": "45520ca0b23f7c0726f5b0a274216ab3a9ca6babba082d469725cf499069350c"
+        },
+        "fetch_url": ""
+      },
+      "note": "Texto estadual de ICMS publicado em estados/mg/legislacao/fontes/complementar-mg-ricms-pt30.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-mg",
+          "module_title": "Minas Gerais: legislação de ICMS em tela",
+          "chapters": [
+            "icms",
+            "beneficios",
+            "aliquotas",
+            "st",
+            "prova"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-mg-complementar-mg-ricms-pt31",
+      "jurisdiction": "MG",
+      "title": "Minas Gerais: Regulamento do ICMS - parte 31",
+      "short": "Regulamento do ICMS",
+      "official_url": "http://www.fazenda.mg.gov.br/empresas/legislacao_tributaria/",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "Estados_Complementar\\MG\\MG_RICMS_pt31.txt"
+        ],
+        "sha256": {
+          "MG_RICMS_pt31.txt": "3ff21a4147b765e8b5744bb5060ff1e8a0e6fe741a48a98f1b379073abcf1b9c"
+        },
+        "fetch_url": ""
+      },
+      "note": "Texto estadual de ICMS publicado em estados/mg/legislacao/fontes/complementar-mg-ricms-pt31.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-mg",
+          "module_title": "Minas Gerais: legislação de ICMS em tela",
+          "chapters": [
+            "icms",
+            "beneficios",
+            "aliquotas",
+            "st",
+            "prova"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-mg-complementar-mg-ricms-pt4",
+      "jurisdiction": "MG",
+      "title": "Minas Gerais: Regulamento do ICMS - parte 4",
+      "short": "Regulamento do ICMS",
+      "official_url": "http://www.fazenda.mg.gov.br/empresas/legislacao_tributaria/",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "Estados_Complementar\\MG\\MG_RICMS_pt4.txt"
+        ],
+        "sha256": {
+          "MG_RICMS_pt4.txt": "9bf636d5769ed3c4aae018b7acdd87f9a09c915a4dc0054dcf8744c91ae27386"
+        },
+        "fetch_url": ""
+      },
+      "note": "Texto estadual de ICMS publicado em estados/mg/legislacao/fontes/complementar-mg-ricms-pt4.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-mg",
+          "module_title": "Minas Gerais: legislação de ICMS em tela",
+          "chapters": [
+            "icms",
+            "beneficios",
+            "aliquotas",
+            "st",
+            "prova"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-mg-complementar-mg-ricms-pt5",
+      "jurisdiction": "MG",
+      "title": "Minas Gerais: Regulamento do ICMS - parte 5",
+      "short": "Regulamento do ICMS",
+      "official_url": "http://www.fazenda.mg.gov.br/empresas/legislacao_tributaria/",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "Estados_Complementar\\MG\\MG_RICMS_pt5.txt"
+        ],
+        "sha256": {
+          "MG_RICMS_pt5.txt": "2bc54ecace5519cd42d888a3d7c220ccf6312b096407e183adae6e6ce31c24ee"
+        },
+        "fetch_url": ""
+      },
+      "note": "Texto estadual de ICMS publicado em estados/mg/legislacao/fontes/complementar-mg-ricms-pt5.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-mg",
+          "module_title": "Minas Gerais: legislação de ICMS em tela",
+          "chapters": [
+            "icms",
+            "beneficios",
+            "aliquotas",
+            "st",
+            "prova"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-mg-complementar-mg-ricms-pt6",
+      "jurisdiction": "MG",
+      "title": "Minas Gerais: Regulamento do ICMS - parte 6",
+      "short": "Regulamento do ICMS",
+      "official_url": "http://www.fazenda.mg.gov.br/empresas/legislacao_tributaria/",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "Estados_Complementar\\MG\\MG_RICMS_pt6.txt"
+        ],
+        "sha256": {
+          "MG_RICMS_pt6.txt": "2db597cfc1a88292dff9cd6b042e4269ca61992b8a931001718c076a66ff4a5e"
+        },
+        "fetch_url": ""
+      },
+      "note": "Texto estadual de ICMS publicado em estados/mg/legislacao/fontes/complementar-mg-ricms-pt6.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-mg",
+          "module_title": "Minas Gerais: legislação de ICMS em tela",
+          "chapters": [
+            "icms",
+            "beneficios",
+            "aliquotas",
+            "st",
+            "prova"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-mg-complementar-mg-ricms-pt7",
+      "jurisdiction": "MG",
+      "title": "Minas Gerais: Regulamento do ICMS - parte 7",
+      "short": "Regulamento do ICMS",
+      "official_url": "http://www.fazenda.mg.gov.br/empresas/legislacao_tributaria/",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "Estados_Complementar\\MG\\MG_RICMS_pt7.txt"
+        ],
+        "sha256": {
+          "MG_RICMS_pt7.txt": "11c46cdaa7339ab539aed4c714480b928c6765a04d171ed9bd8430153c9c70f9"
+        },
+        "fetch_url": ""
+      },
+      "note": "Texto estadual de ICMS publicado em estados/mg/legislacao/fontes/complementar-mg-ricms-pt7.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-mg",
+          "module_title": "Minas Gerais: legislação de ICMS em tela",
+          "chapters": [
+            "icms",
+            "beneficios",
+            "aliquotas",
+            "st",
+            "prova"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-mg-complementar-mg-ricms-pt8",
+      "jurisdiction": "MG",
+      "title": "Minas Gerais: Regulamento do ICMS - parte 8",
+      "short": "Regulamento do ICMS",
+      "official_url": "http://www.fazenda.mg.gov.br/empresas/legislacao_tributaria/",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "Estados_Complementar\\MG\\MG_RICMS_pt8.txt"
+        ],
+        "sha256": {
+          "MG_RICMS_pt8.txt": "121bc803b2620bd8aaaf867d58da4bb2a01e1b79154f03b2de179c4286205dcb"
+        },
+        "fetch_url": ""
+      },
+      "note": "Texto estadual de ICMS publicado em estados/mg/legislacao/fontes/complementar-mg-ricms-pt8.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-mg",
+          "module_title": "Minas Gerais: legislação de ICMS em tela",
+          "chapters": [
+            "icms",
+            "beneficios",
+            "aliquotas",
+            "st",
+            "prova"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-mg-complementar-mg-ricms-pt9",
+      "jurisdiction": "MG",
+      "title": "Minas Gerais: Regulamento do ICMS - parte 9",
+      "short": "Regulamento do ICMS",
+      "official_url": "http://www.fazenda.mg.gov.br/empresas/legislacao_tributaria/",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "Estados_Complementar\\MG\\MG_RICMS_pt9.txt"
+        ],
+        "sha256": {
+          "MG_RICMS_pt9.txt": "9362704c137aa4681516e7d8eef7bd0d686f0b8926510e7110ffa940a9c86462"
+        },
+        "fetch_url": ""
+      },
+      "note": "Texto estadual de ICMS publicado em estados/mg/legislacao/fontes/complementar-mg-ricms-pt9.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-mg",
+          "module_title": "Minas Gerais: legislação de ICMS em tela",
+          "chapters": [
+            "icms",
+            "beneficios",
+            "aliquotas",
+            "st",
+            "prova"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-pa-principal-pa-outros",
+      "jurisdiction": "PA",
+      "title": "Pará: Atos complementares",
+      "short": "Atos complementares",
+      "official_url": "https://www.sefa.pa.gov.br/legislacao/",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "#ESTADUAIS-COMPILADO-NOTEBOOKLM\\PA\\PA_OUTROS.txt"
+        ],
+        "sha256": {
+          "PA_OUTROS.txt": "a92782432cf2708e1082e541ebf0321406700c67fffb5ad01b7ce79883049a66"
+        },
+        "fetch_url": ""
+      },
+      "note": "Texto estadual de ICMS publicado em estados/pa/legislacao/fontes/principal-pa-outros.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-pa",
+          "module_title": "Pará: legislação de ICMS em tela",
+          "chapters": [
+            "icms",
+            "beneficios",
+            "aliquotas",
+            "st",
+            "prova"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-pa-principal-pa-outros-parte2",
+      "jurisdiction": "PA",
+      "title": "Pará: Atos complementares - parte 2",
+      "short": "Atos complementares",
+      "official_url": "https://www.sefa.pa.gov.br/legislacao/",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "#ESTADUAIS-COMPILADO-NOTEBOOKLM\\PA\\PA_OUTROS_parte2.txt"
+        ],
+        "sha256": {
+          "PA_OUTROS_parte2.txt": "39bfce1bd91d282a6e46d0ec29c7e2065c8dec92a4778eb0957f2fc267f36a9a"
+        },
+        "fetch_url": ""
+      },
+      "note": "Texto estadual de ICMS publicado em estados/pa/legislacao/fontes/principal-pa-outros-parte2.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-pa",
+          "module_title": "Pará: legislação de ICMS em tela",
+          "chapters": [
+            "icms",
+            "beneficios",
+            "aliquotas",
+            "st",
+            "prova"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-pb-principal-pb-icms-leis",
+      "jurisdiction": "PB",
+      "title": "Paraíba: Leis do ICMS",
+      "short": "Leis do ICMS",
+      "official_url": "https://www.sefaz.pb.gov.br/legislacao",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "#ESTADUAIS-COMPILADO-NOTEBOOKLM\\PB\\PB_ICMS_LEIS.txt"
+        ],
+        "sha256": {
+          "PB_ICMS_LEIS.txt": "9b66796cdc6a44bea008137e9bf1415c5b0c1ce5177cb4295e50e5772f9bf78a"
+        },
+        "fetch_url": ""
+      },
+      "note": "Texto estadual de ICMS publicado em estados/pb/legislacao/fontes/principal-pb-icms-leis.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-pb",
+          "module_title": "Paraíba: legislação de ICMS em tela",
+          "chapters": [
+            "icms",
+            "beneficios",
+            "aliquotas",
+            "st",
+            "prova"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-pr-principal-pr-ricms",
+      "jurisdiction": "PR",
+      "title": "Paraná: Regulamento do ICMS",
+      "short": "Regulamento do ICMS",
+      "official_url": "https://www.fazenda.pr.gov.br/",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "#ESTADUAIS-COMPILADO-NOTEBOOKLM\\PR\\PR_RICMS.txt"
+        ],
+        "sha256": {
+          "PR_RICMS.txt": "0546920142b7fe7f1f5404932a0212438882f3545b712446406afc98de06325b"
+        },
+        "fetch_url": ""
+      },
+      "note": "Texto estadual de ICMS publicado em estados/pr/legislacao/fontes/principal-pr-ricms.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-pr",
+          "module_title": "Paraná: legislação de ICMS em tela",
+          "chapters": [
+            "icms",
+            "beneficios",
+            "aliquotas",
+            "st",
+            "prova"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-pr-principal-pr-ricms-pt10",
+      "jurisdiction": "PR",
+      "title": "Paraná: Regulamento do ICMS - parte 10",
+      "short": "Regulamento do ICMS",
+      "official_url": "https://www.fazenda.pr.gov.br/",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "#ESTADUAIS-COMPILADO-NOTEBOOKLM\\PR\\PR_RICMS_pt10.txt"
+        ],
+        "sha256": {
+          "PR_RICMS_pt10.txt": "ad4047cd6eab65da65df2e9a49a946f5a3e8fc53d231a9d86e5de452b9ac5720"
+        },
+        "fetch_url": ""
+      },
+      "note": "Texto estadual de ICMS publicado em estados/pr/legislacao/fontes/principal-pr-ricms-pt10.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-pr",
+          "module_title": "Paraná: legislação de ICMS em tela",
+          "chapters": [
+            "icms",
+            "beneficios",
+            "aliquotas",
+            "st",
+            "prova"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-pr-principal-pr-ricms-pt11",
+      "jurisdiction": "PR",
+      "title": "Paraná: Regulamento do ICMS - parte 11",
+      "short": "Regulamento do ICMS",
+      "official_url": "https://www.fazenda.pr.gov.br/",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "#ESTADUAIS-COMPILADO-NOTEBOOKLM\\PR\\PR_RICMS_pt11.txt"
+        ],
+        "sha256": {
+          "PR_RICMS_pt11.txt": "b122127b3cc6ace405a75721f4366c96c6b22a7b22a5f71726e2eb1792bc6a91"
+        },
+        "fetch_url": ""
+      },
+      "note": "Texto estadual de ICMS publicado em estados/pr/legislacao/fontes/principal-pr-ricms-pt11.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-pr",
+          "module_title": "Paraná: legislação de ICMS em tela",
+          "chapters": [
+            "icms",
+            "beneficios",
+            "aliquotas",
+            "st",
+            "prova"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-pr-principal-pr-ricms-pt2",
+      "jurisdiction": "PR",
+      "title": "Paraná: Regulamento do ICMS - parte 2",
+      "short": "Regulamento do ICMS",
+      "official_url": "https://www.fazenda.pr.gov.br/",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "#ESTADUAIS-COMPILADO-NOTEBOOKLM\\PR\\PR_RICMS_pt2.txt"
+        ],
+        "sha256": {
+          "PR_RICMS_pt2.txt": "e01f9d9fb67f34870d5fc6211bb5f36c283f66d63d3133d7d1ca3306cd1b6047"
+        },
+        "fetch_url": ""
+      },
+      "note": "Texto estadual de ICMS publicado em estados/pr/legislacao/fontes/principal-pr-ricms-pt2.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-pr",
+          "module_title": "Paraná: legislação de ICMS em tela",
+          "chapters": [
+            "icms",
+            "beneficios",
+            "aliquotas",
+            "st",
+            "prova"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-pr-principal-pr-ricms-pt3",
+      "jurisdiction": "PR",
+      "title": "Paraná: Regulamento do ICMS - parte 3",
+      "short": "Regulamento do ICMS",
+      "official_url": "https://www.fazenda.pr.gov.br/",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "#ESTADUAIS-COMPILADO-NOTEBOOKLM\\PR\\PR_RICMS_pt3.txt"
+        ],
+        "sha256": {
+          "PR_RICMS_pt3.txt": "bbd6c8efb7217855569540def5eb3552158dada3b5c529b213e3895d5ac4c007"
+        },
+        "fetch_url": ""
+      },
+      "note": "Texto estadual de ICMS publicado em estados/pr/legislacao/fontes/principal-pr-ricms-pt3.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-pr",
+          "module_title": "Paraná: legislação de ICMS em tela",
+          "chapters": [
+            "icms",
+            "beneficios",
+            "aliquotas",
+            "st",
+            "prova"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-pr-principal-pr-ricms-pt4",
+      "jurisdiction": "PR",
+      "title": "Paraná: Regulamento do ICMS - parte 4",
+      "short": "Regulamento do ICMS",
+      "official_url": "https://www.fazenda.pr.gov.br/",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "#ESTADUAIS-COMPILADO-NOTEBOOKLM\\PR\\PR_RICMS_pt4.txt"
+        ],
+        "sha256": {
+          "PR_RICMS_pt4.txt": "133748be45d9658bdc8c2ae4f309b283b871d0cd4d15a251cbf3b5fc1a83fb87"
+        },
+        "fetch_url": ""
+      },
+      "note": "Texto estadual de ICMS publicado em estados/pr/legislacao/fontes/principal-pr-ricms-pt4.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-pr",
+          "module_title": "Paraná: legislação de ICMS em tela",
+          "chapters": [
+            "icms",
+            "beneficios",
+            "aliquotas",
+            "st",
+            "prova"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-pr-principal-pr-ricms-pt5",
+      "jurisdiction": "PR",
+      "title": "Paraná: Regulamento do ICMS - parte 5",
+      "short": "Regulamento do ICMS",
+      "official_url": "https://www.fazenda.pr.gov.br/",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "#ESTADUAIS-COMPILADO-NOTEBOOKLM\\PR\\PR_RICMS_pt5.txt"
+        ],
+        "sha256": {
+          "PR_RICMS_pt5.txt": "53e9a1ff668939cc23c98db83ebbc9d7404e6bacdb6df924306a676a9df34681"
+        },
+        "fetch_url": ""
+      },
+      "note": "Texto estadual de ICMS publicado em estados/pr/legislacao/fontes/principal-pr-ricms-pt5.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-pr",
+          "module_title": "Paraná: legislação de ICMS em tela",
+          "chapters": [
+            "icms",
+            "beneficios",
+            "aliquotas",
+            "st",
+            "prova"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-pr-principal-pr-ricms-pt6",
+      "jurisdiction": "PR",
+      "title": "Paraná: Regulamento do ICMS - parte 6",
+      "short": "Regulamento do ICMS",
+      "official_url": "https://www.fazenda.pr.gov.br/",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "#ESTADUAIS-COMPILADO-NOTEBOOKLM\\PR\\PR_RICMS_pt6.txt"
+        ],
+        "sha256": {
+          "PR_RICMS_pt6.txt": "5b92108f387b4e664b3455bb1e607128b2cc6f69c853da11438f8d7d5c3c9691"
+        },
+        "fetch_url": ""
+      },
+      "note": "Texto estadual de ICMS publicado em estados/pr/legislacao/fontes/principal-pr-ricms-pt6.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-pr",
+          "module_title": "Paraná: legislação de ICMS em tela",
+          "chapters": [
+            "icms",
+            "beneficios",
+            "aliquotas",
+            "st",
+            "prova"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-pr-principal-pr-ricms-pt7",
+      "jurisdiction": "PR",
+      "title": "Paraná: Regulamento do ICMS - parte 7",
+      "short": "Regulamento do ICMS",
+      "official_url": "https://www.fazenda.pr.gov.br/",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "#ESTADUAIS-COMPILADO-NOTEBOOKLM\\PR\\PR_RICMS_pt7.txt"
+        ],
+        "sha256": {
+          "PR_RICMS_pt7.txt": "d876a04c2a4acde5a0e51cf457554c69e7d5deb6d50493e523f904a026f0d99f"
+        },
+        "fetch_url": ""
+      },
+      "note": "Texto estadual de ICMS publicado em estados/pr/legislacao/fontes/principal-pr-ricms-pt7.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-pr",
+          "module_title": "Paraná: legislação de ICMS em tela",
+          "chapters": [
+            "icms",
+            "beneficios",
+            "aliquotas",
+            "st",
+            "prova"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-pr-principal-pr-ricms-pt8",
+      "jurisdiction": "PR",
+      "title": "Paraná: Regulamento do ICMS - parte 8",
+      "short": "Regulamento do ICMS",
+      "official_url": "https://www.fazenda.pr.gov.br/",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "#ESTADUAIS-COMPILADO-NOTEBOOKLM\\PR\\PR_RICMS_pt8.txt"
+        ],
+        "sha256": {
+          "PR_RICMS_pt8.txt": "63d0855a269701c1cf8e35d19bf2f5c9ba9e4516f818095a7d9bcfaa36bc0a8a"
+        },
+        "fetch_url": ""
+      },
+      "note": "Texto estadual de ICMS publicado em estados/pr/legislacao/fontes/principal-pr-ricms-pt8.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-pr",
+          "module_title": "Paraná: legislação de ICMS em tela",
+          "chapters": [
+            "icms",
+            "beneficios",
+            "aliquotas",
+            "st",
+            "prova"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-pr-principal-pr-ricms-pt9",
+      "jurisdiction": "PR",
+      "title": "Paraná: Regulamento do ICMS - parte 9",
+      "short": "Regulamento do ICMS",
+      "official_url": "https://www.fazenda.pr.gov.br/",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "#ESTADUAIS-COMPILADO-NOTEBOOKLM\\PR\\PR_RICMS_pt9.txt"
+        ],
+        "sha256": {
+          "PR_RICMS_pt9.txt": "72e75002c1ed51d28cbc82fa54d7b2556b89ffc68532f62ad71e6c7c6d64cae6"
+        },
+        "fetch_url": ""
+      },
+      "note": "Texto estadual de ICMS publicado em estados/pr/legislacao/fontes/principal-pr-ricms-pt9.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-pr",
+          "module_title": "Paraná: legislação de ICMS em tela",
+          "chapters": [
+            "icms",
+            "beneficios",
+            "aliquotas",
+            "st",
+            "prova"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-pe-principal-pe-icms-aliquotas",
+      "jurisdiction": "PE",
+      "title": "Pernambuco: Alíquotas de ICMS",
+      "short": "Alíquotas de ICMS",
+      "official_url": "https://www.sefaz.pe.gov.br/Legislacao/Tributaria/Paginas/default.aspx",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "#ESTADUAIS-COMPILADO-NOTEBOOKLM\\PE\\PE_ICMS_ALIQUOTAS.txt"
+        ],
+        "sha256": {
+          "PE_ICMS_ALIQUOTAS.txt": "1642f3e9d1ffbf68b9bf8db7a5bf9a3df525653e46c0c7e93a2a1dddeb752580"
+        },
+        "fetch_url": ""
+      },
+      "note": "Texto estadual de ICMS publicado em estados/pe/legislacao/fontes/principal-pe-icms-aliquotas.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-pe",
+          "module_title": "Pernambuco: legislação de ICMS em tela",
+          "chapters": [
+            "icms",
+            "aliquotas"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-pe-principal-pe-icms-leis",
+      "jurisdiction": "PE",
+      "title": "Pernambuco: Leis do ICMS",
+      "short": "Leis do ICMS",
+      "official_url": "https://www.sefaz.pe.gov.br/Legislacao/Tributaria/Paginas/default.aspx",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "#ESTADUAIS-COMPILADO-NOTEBOOKLM\\PE\\PE_ICMS_LEIS.txt"
+        ],
+        "sha256": {
+          "PE_ICMS_LEIS.txt": "76157d26273a64fd70cccb250c4a294469d709c6b08552bc87edadb3ffca2b6e"
+        },
+        "fetch_url": ""
+      },
+      "note": "Texto estadual de ICMS publicado em estados/pe/legislacao/fontes/principal-pe-icms-leis.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-pe",
+          "module_title": "Pernambuco: legislação de ICMS em tela",
+          "chapters": [
+            "icms",
+            "beneficios",
+            "aliquotas",
+            "st",
+            "prova"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-pe-principal-pe-icms-st",
+      "jurisdiction": "PE",
+      "title": "Pernambuco: Substituição tributária",
+      "short": "Substituição tributária",
+      "official_url": "https://www.sefaz.pe.gov.br/Legislacao/Tributaria/Paginas/default.aspx",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "#ESTADUAIS-COMPILADO-NOTEBOOKLM\\PE\\PE_ICMS_ST.txt"
+        ],
+        "sha256": {
+          "PE_ICMS_ST.txt": "57bf08756856243cd97769346ad0f99cde8fc3d82d9f924f4c06db6fee860e18"
+        },
+        "fetch_url": ""
+      },
+      "note": "Texto estadual de ICMS publicado em estados/pe/legislacao/fontes/principal-pe-icms-st.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-pe",
+          "module_title": "Pernambuco: legislação de ICMS em tela",
+          "chapters": [
+            "icms",
+            "aliquotas",
+            "st"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-pe-principal-pe-ricms",
+      "jurisdiction": "PE",
+      "title": "Pernambuco: Regulamento do ICMS",
+      "short": "Regulamento do ICMS",
+      "official_url": "https://www.sefaz.pe.gov.br/Legislacao/Tributaria/Paginas/default.aspx",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "#ESTADUAIS-COMPILADO-NOTEBOOKLM\\PE\\PE_RICMS.txt"
+        ],
+        "sha256": {
+          "PE_RICMS.txt": "e6ddbf32a0da736ca16cf5de2e985c8a552c9f274c67eebdb61eb00af78eafbc"
+        },
+        "fetch_url": ""
+      },
+      "note": "Texto estadual de ICMS publicado em estados/pe/legislacao/fontes/principal-pe-ricms.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-pe",
+          "module_title": "Pernambuco: legislação de ICMS em tela",
+          "chapters": [
+            "icms",
+            "beneficios",
+            "aliquotas",
+            "st",
+            "prova"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-pe-principal-pe-ricms-parte2",
+      "jurisdiction": "PE",
+      "title": "Pernambuco: Regulamento do ICMS - parte 2",
+      "short": "Regulamento do ICMS",
+      "official_url": "https://www.sefaz.pe.gov.br/Legislacao/Tributaria/Paginas/default.aspx",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "#ESTADUAIS-COMPILADO-NOTEBOOKLM\\PE\\PE_RICMS_parte2.txt"
+        ],
+        "sha256": {
+          "PE_RICMS_parte2.txt": "c9db7e1351e6c4879c289402a648dffc5924625d8820e1cfa682244abc999bad"
+        },
+        "fetch_url": ""
+      },
+      "note": "Texto estadual de ICMS publicado em estados/pe/legislacao/fontes/principal-pe-ricms-parte2.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-pe",
+          "module_title": "Pernambuco: legislação de ICMS em tela",
+          "chapters": [
+            "icms",
+            "beneficios",
+            "aliquotas",
+            "st",
+            "prova"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-pe-principal-pe-ricms-parte3",
+      "jurisdiction": "PE",
+      "title": "Pernambuco: Regulamento do ICMS - parte 3",
+      "short": "Regulamento do ICMS",
+      "official_url": "https://www.sefaz.pe.gov.br/Legislacao/Tributaria/Paginas/default.aspx",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "#ESTADUAIS-COMPILADO-NOTEBOOKLM\\PE\\PE_RICMS_parte3.txt"
+        ],
+        "sha256": {
+          "PE_RICMS_parte3.txt": "e01b8d42f493d4e30d35bb31a97a02a47b06c67809d0c602274df694fc37dda7"
+        },
+        "fetch_url": ""
+      },
+      "note": "Texto estadual de ICMS publicado em estados/pe/legislacao/fontes/principal-pe-ricms-parte3.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-pe",
+          "module_title": "Pernambuco: legislação de ICMS em tela",
+          "chapters": [
+            "icms",
+            "beneficios",
+            "aliquotas",
+            "st",
+            "prova"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-pe-principal-pe-ricms-parte4",
+      "jurisdiction": "PE",
+      "title": "Pernambuco: Regulamento do ICMS - parte 4",
+      "short": "Regulamento do ICMS",
+      "official_url": "https://www.sefaz.pe.gov.br/Legislacao/Tributaria/Paginas/default.aspx",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "#ESTADUAIS-COMPILADO-NOTEBOOKLM\\PE\\PE_RICMS_parte4.txt"
+        ],
+        "sha256": {
+          "PE_RICMS_parte4.txt": "24f03dbe74e0b44a99a28fe7f40475108aa7f508c21382e0441e336adf1d233f"
+        },
+        "fetch_url": ""
+      },
+      "note": "Texto estadual de ICMS publicado em estados/pe/legislacao/fontes/principal-pe-ricms-parte4.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-pe",
+          "module_title": "Pernambuco: legislação de ICMS em tela",
+          "chapters": [
+            "icms",
+            "beneficios",
+            "aliquotas",
+            "st",
+            "prova"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-pe-principal-pe-ricms-parte5",
+      "jurisdiction": "PE",
+      "title": "Pernambuco: Regulamento do ICMS - parte 5",
+      "short": "Regulamento do ICMS",
+      "official_url": "https://www.sefaz.pe.gov.br/Legislacao/Tributaria/Paginas/default.aspx",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "#ESTADUAIS-COMPILADO-NOTEBOOKLM\\PE\\PE_RICMS_parte5.txt"
+        ],
+        "sha256": {
+          "PE_RICMS_parte5.txt": "a323f6038a24bf8a8ada359d380eaf6ef7e68b4e6a0df80d2b675d76be953596"
+        },
+        "fetch_url": ""
+      },
+      "note": "Texto estadual de ICMS publicado em estados/pe/legislacao/fontes/principal-pe-ricms-parte5.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-pe",
+          "module_title": "Pernambuco: legislação de ICMS em tela",
+          "chapters": [
+            "icms",
+            "beneficios",
+            "aliquotas",
+            "st",
+            "prova"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-pi-principal-pi-icms-anexos",
+      "jurisdiction": "PI",
+      "title": "Piauí: Anexos do ICMS",
+      "short": "Anexos do ICMS",
+      "official_url": "https://portal.sefaz.pi.gov.br/documentos/legislacao/",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "#ESTADUAIS-COMPILADO-NOTEBOOKLM\\PI\\PI_ICMS_ANEXOS.txt"
+        ],
+        "sha256": {
+          "PI_ICMS_ANEXOS.txt": "c61a1f882c0909cf703c7a456087754d10999c5d9e6920325bf040c16a554fd7"
+        },
+        "fetch_url": ""
+      },
+      "note": "Texto estadual de ICMS publicado em estados/pi/legislacao/fontes/principal-pi-icms-anexos.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-pi",
+          "module_title": "Piauí: legislação de ICMS em tela",
+          "chapters": [
+            "icms",
+            "beneficios",
+            "aliquotas",
+            "st"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-pi-principal-pi-icms-anexos-parte2",
+      "jurisdiction": "PI",
+      "title": "Piauí: Anexos do ICMS - parte 2",
+      "short": "Anexos do ICMS",
+      "official_url": "https://portal.sefaz.pi.gov.br/documentos/legislacao/",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "#ESTADUAIS-COMPILADO-NOTEBOOKLM\\PI\\PI_ICMS_ANEXOS_parte2.txt"
+        ],
+        "sha256": {
+          "PI_ICMS_ANEXOS_parte2.txt": "ab8e3b57c602f6e0ea6b4d2d955e63f389c9ef048475fddf2e4933103eb7da8b"
+        },
+        "fetch_url": ""
+      },
+      "note": "Texto estadual de ICMS publicado em estados/pi/legislacao/fontes/principal-pi-icms-anexos-parte2.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-pi",
+          "module_title": "Piauí: legislação de ICMS em tela",
+          "chapters": [
+            "icms",
+            "beneficios",
+            "aliquotas",
+            "st",
+            "prova"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-pi-principal-pi-icms-anexos-parte3",
+      "jurisdiction": "PI",
+      "title": "Piauí: Anexos do ICMS - parte 3",
+      "short": "Anexos do ICMS",
+      "official_url": "https://portal.sefaz.pi.gov.br/documentos/legislacao/",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "#ESTADUAIS-COMPILADO-NOTEBOOKLM\\PI\\PI_ICMS_ANEXOS_parte3.txt"
+        ],
+        "sha256": {
+          "PI_ICMS_ANEXOS_parte3.txt": "e2becaf11efd388e65efd35489c54f8fe1e9293e7c43346b7f445f4b4bae64bc"
+        },
+        "fetch_url": ""
+      },
+      "note": "Texto estadual de ICMS publicado em estados/pi/legislacao/fontes/principal-pi-icms-anexos-parte3.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-pi",
+          "module_title": "Piauí: legislação de ICMS em tela",
+          "chapters": [
+            "icms",
+            "beneficios",
+            "aliquotas",
+            "st",
+            "prova"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-pi-principal-pi-icms-anexos-parte4",
+      "jurisdiction": "PI",
+      "title": "Piauí: Anexos do ICMS - parte 4",
+      "short": "Anexos do ICMS",
+      "official_url": "https://portal.sefaz.pi.gov.br/documentos/legislacao/",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "#ESTADUAIS-COMPILADO-NOTEBOOKLM\\PI\\PI_ICMS_ANEXOS_parte4.txt"
+        ],
+        "sha256": {
+          "PI_ICMS_ANEXOS_parte4.txt": "f5b4c447b27b20cb0a9b956f2f25e4537378220b800620ef3d15ca95a12289db"
+        },
+        "fetch_url": ""
+      },
+      "note": "Texto estadual de ICMS publicado em estados/pi/legislacao/fontes/principal-pi-icms-anexos-parte4.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-pi",
+          "module_title": "Piauí: legislação de ICMS em tela",
+          "chapters": [
+            "icms",
+            "beneficios",
+            "aliquotas",
+            "st",
+            "prova"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-pi-principal-pi-icms-anexos-parte5",
+      "jurisdiction": "PI",
+      "title": "Piauí: Anexos do ICMS - parte 5",
+      "short": "Anexos do ICMS",
+      "official_url": "https://portal.sefaz.pi.gov.br/documentos/legislacao/",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "#ESTADUAIS-COMPILADO-NOTEBOOKLM\\PI\\PI_ICMS_ANEXOS_parte5.txt"
+        ],
+        "sha256": {
+          "PI_ICMS_ANEXOS_parte5.txt": "80c8ca9e072d2a19a2d30021419e057f52126fd7951c38733ab8426abf9fa92a"
+        },
+        "fetch_url": ""
+      },
+      "note": "Texto estadual de ICMS publicado em estados/pi/legislacao/fontes/principal-pi-icms-anexos-parte5.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-pi",
+          "module_title": "Piauí: legislação de ICMS em tela",
+          "chapters": [
+            "icms",
+            "beneficios",
+            "aliquotas",
+            "st",
+            "prova"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-pi-principal-pi-icms-anexos-parte6",
+      "jurisdiction": "PI",
+      "title": "Piauí: Anexos do ICMS - parte 6",
+      "short": "Anexos do ICMS",
+      "official_url": "https://portal.sefaz.pi.gov.br/documentos/legislacao/",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "#ESTADUAIS-COMPILADO-NOTEBOOKLM\\PI\\PI_ICMS_ANEXOS_parte6.txt"
+        ],
+        "sha256": {
+          "PI_ICMS_ANEXOS_parte6.txt": "06807f960578acd1f3f02ceec34be8d39ca9376376d9ffe824ffdf6ebb469399"
+        },
+        "fetch_url": ""
+      },
+      "note": "Texto estadual de ICMS publicado em estados/pi/legislacao/fontes/principal-pi-icms-anexos-parte6.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-pi",
+          "module_title": "Piauí: legislação de ICMS em tela",
+          "chapters": [
+            "icms",
+            "beneficios",
+            "aliquotas",
+            "st",
+            "prova"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-pi-principal-pi-icms-anexos-parte7",
+      "jurisdiction": "PI",
+      "title": "Piauí: Anexos do ICMS - parte 7",
+      "short": "Anexos do ICMS",
+      "official_url": "https://portal.sefaz.pi.gov.br/documentos/legislacao/",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "#ESTADUAIS-COMPILADO-NOTEBOOKLM\\PI\\PI_ICMS_ANEXOS_parte7.txt"
+        ],
+        "sha256": {
+          "PI_ICMS_ANEXOS_parte7.txt": "52acd9631601e8294fc0f414af08b918cbac7911969d18fc6c7f2e240737eeb1"
+        },
+        "fetch_url": ""
+      },
+      "note": "Texto estadual de ICMS publicado em estados/pi/legislacao/fontes/principal-pi-icms-anexos-parte7.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-pi",
+          "module_title": "Piauí: legislação de ICMS em tela",
+          "chapters": [
+            "icms",
+            "beneficios",
+            "aliquotas",
+            "st",
+            "prova"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-pi-principal-pi-icms-leis",
+      "jurisdiction": "PI",
+      "title": "Piauí: Leis do ICMS",
+      "short": "Leis do ICMS",
+      "official_url": "https://portal.sefaz.pi.gov.br/documentos/legislacao/",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "#ESTADUAIS-COMPILADO-NOTEBOOKLM\\PI\\PI_ICMS_LEIS.txt"
+        ],
+        "sha256": {
+          "PI_ICMS_LEIS.txt": "cf1da44429cda86728ef103bed0b0ebc6fb31c3679738f4ac97517cca01a6736"
+        },
+        "fetch_url": ""
+      },
+      "note": "Texto estadual de ICMS publicado em estados/pi/legislacao/fontes/principal-pi-icms-leis.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-pi",
+          "module_title": "Piauí: legislação de ICMS em tela",
+          "chapters": [
+            "icms",
+            "beneficios",
+            "aliquotas",
+            "st",
+            "prova"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-pi-principal-pi-ricms",
+      "jurisdiction": "PI",
+      "title": "Piauí: Regulamento do ICMS",
+      "short": "Regulamento do ICMS",
+      "official_url": "https://portal.sefaz.pi.gov.br/documentos/legislacao/",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "#ESTADUAIS-COMPILADO-NOTEBOOKLM\\PI\\PI_RICMS.txt"
+        ],
+        "sha256": {
+          "PI_RICMS.txt": "6f6095618b078ca9d22395ff3ba6056fc90e6adbbdd52ebfaa513c32cb494953"
+        },
+        "fetch_url": ""
+      },
+      "note": "Texto estadual de ICMS publicado em estados/pi/legislacao/fontes/principal-pi-ricms.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-pi",
+          "module_title": "Piauí: legislação de ICMS em tela",
+          "chapters": [
+            "icms",
+            "beneficios",
+            "aliquotas",
+            "st",
+            "prova"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-rj-principal-rj-ricms",
+      "jurisdiction": "RJ",
+      "title": "Rio de Janeiro: Regulamento do ICMS",
+      "short": "Regulamento do ICMS",
+      "official_url": "https://portal.fazenda.rj.gov.br/legislacao-tributaria/",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "#ESTADUAIS-COMPILADO-NOTEBOOKLM\\RJ\\RJ_RICMS.txt"
+        ],
+        "sha256": {
+          "RJ_RICMS.txt": "7e5b298b5591b7a7a4a4548338db4bf1fdb7d59710b622559ecd91960f7f2f30"
+        },
+        "fetch_url": ""
+      },
+      "note": "Texto estadual de ICMS publicado em estados/rj/legislacao/fontes/principal-rj-ricms.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-rj",
+          "module_title": "Rio de Janeiro: legislação de ICMS em tela",
+          "chapters": [
+            "icms",
+            "beneficios",
+            "aliquotas",
+            "st",
+            "prova"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-rn-principal-rn-icms-leis",
+      "jurisdiction": "RN",
+      "title": "Rio Grande do Norte: Leis do ICMS",
+      "short": "Leis do ICMS",
+      "official_url": "https://www.set.rn.gov.br/",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "#ESTADUAIS-COMPILADO-NOTEBOOKLM\\RN\\RN_ICMS_LEIS.txt"
+        ],
+        "sha256": {
+          "RN_ICMS_LEIS.txt": "bcf027c269efcc2970c1d9b6bb1e420f171ef3b356f742395e8a07173707271e"
+        },
+        "fetch_url": ""
+      },
+      "note": "Texto estadual de ICMS publicado em estados/rn/legislacao/fontes/principal-rn-icms-leis.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-rn",
+          "module_title": "Rio Grande do Norte: legislação de ICMS em tela",
+          "chapters": [
+            "icms",
+            "beneficios",
+            "aliquotas",
+            "prova"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-rn-complementar-rn-ricms-pt1",
+      "jurisdiction": "RN",
+      "title": "Rio Grande do Norte: Regulamento do ICMS - parte 1",
+      "short": "Regulamento do ICMS",
+      "official_url": "https://www.set.rn.gov.br/",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "Estados_Complementar\\RN\\RN_RICMS_pt1.txt"
+        ],
+        "sha256": {
+          "RN_RICMS_pt1.txt": "56d37874ee0d9ddaa222577883348de8ee38a600f453827078d1255af85f4937"
+        },
+        "fetch_url": ""
+      },
+      "note": "Texto estadual de ICMS publicado em estados/rn/legislacao/fontes/complementar-rn-ricms-pt1.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-rn",
+          "module_title": "Rio Grande do Norte: legislação de ICMS em tela",
+          "chapters": [
+            "icms",
+            "beneficios",
+            "aliquotas",
+            "st",
+            "prova"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-rn-complementar-rn-ricms-pt2",
+      "jurisdiction": "RN",
+      "title": "Rio Grande do Norte: Regulamento do ICMS - parte 2",
+      "short": "Regulamento do ICMS",
+      "official_url": "https://www.set.rn.gov.br/",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "Estados_Complementar\\RN\\RN_RICMS_pt2.txt"
+        ],
+        "sha256": {
+          "RN_RICMS_pt2.txt": "5f5f8991aa3f0e1a2cfd3404b0fddd6f8d547ad36497abfe2da70af433095482"
+        },
+        "fetch_url": ""
+      },
+      "note": "Texto estadual de ICMS publicado em estados/rn/legislacao/fontes/complementar-rn-ricms-pt2.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-rn",
+          "module_title": "Rio Grande do Norte: legislação de ICMS em tela",
+          "chapters": [
+            "icms",
+            "beneficios",
+            "aliquotas",
+            "st",
+            "prova"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-rn-complementar-rn-ricms-pt3",
+      "jurisdiction": "RN",
+      "title": "Rio Grande do Norte: Regulamento do ICMS - parte 3",
+      "short": "Regulamento do ICMS",
+      "official_url": "https://www.set.rn.gov.br/",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "Estados_Complementar\\RN\\RN_RICMS_pt3.txt"
+        ],
+        "sha256": {
+          "RN_RICMS_pt3.txt": "fbef8dd0ee8fe88d5df0c94d38d277b010f567883ed84c4c052012867b907e3d"
+        },
+        "fetch_url": ""
+      },
+      "note": "Texto estadual de ICMS publicado em estados/rn/legislacao/fontes/complementar-rn-ricms-pt3.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-rn",
+          "module_title": "Rio Grande do Norte: legislação de ICMS em tela",
+          "chapters": [
+            "icms",
+            "beneficios",
+            "aliquotas",
+            "st",
+            "prova"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-rn-complementar-rn-ricms-pt4",
+      "jurisdiction": "RN",
+      "title": "Rio Grande do Norte: Regulamento do ICMS - parte 4",
+      "short": "Regulamento do ICMS",
+      "official_url": "https://www.set.rn.gov.br/",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "Estados_Complementar\\RN\\RN_RICMS_pt4.txt"
+        ],
+        "sha256": {
+          "RN_RICMS_pt4.txt": "469d66293efd1462cff0f1c3d344a784f282dd84c1040ed818fe084c5ff850a8"
+        },
+        "fetch_url": ""
+      },
+      "note": "Texto estadual de ICMS publicado em estados/rn/legislacao/fontes/complementar-rn-ricms-pt4.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-rn",
+          "module_title": "Rio Grande do Norte: legislação de ICMS em tela",
+          "chapters": [
+            "icms",
+            "beneficios",
+            "aliquotas",
+            "st",
+            "prova"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-rn-complementar-rn-ricms-pt5",
+      "jurisdiction": "RN",
+      "title": "Rio Grande do Norte: Regulamento do ICMS - parte 5",
+      "short": "Regulamento do ICMS",
+      "official_url": "https://www.set.rn.gov.br/",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "Estados_Complementar\\RN\\RN_RICMS_pt5.txt"
+        ],
+        "sha256": {
+          "RN_RICMS_pt5.txt": "ba796ceb0ea3f7dc05ebd37532b9a5ce776ab94b8dcabb4d7762d6227c3e9ac5"
+        },
+        "fetch_url": ""
+      },
+      "note": "Texto estadual de ICMS publicado em estados/rn/legislacao/fontes/complementar-rn-ricms-pt5.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-rn",
+          "module_title": "Rio Grande do Norte: legislação de ICMS em tela",
+          "chapters": [
+            "icms",
+            "beneficios",
+            "aliquotas",
+            "st",
+            "prova"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-rn-complementar-rn-ricms-pt6",
+      "jurisdiction": "RN",
+      "title": "Rio Grande do Norte: Regulamento do ICMS - parte 6",
+      "short": "Regulamento do ICMS",
+      "official_url": "https://www.set.rn.gov.br/",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "Estados_Complementar\\RN\\RN_RICMS_pt6.txt"
+        ],
+        "sha256": {
+          "RN_RICMS_pt6.txt": "d9e68a2e140ee9bf3d410cd0afebe2be8d00e91396e204e84e8ca2ccd3e95067"
+        },
+        "fetch_url": ""
+      },
+      "note": "Texto estadual de ICMS publicado em estados/rn/legislacao/fontes/complementar-rn-ricms-pt6.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-rn",
+          "module_title": "Rio Grande do Norte: legislação de ICMS em tela",
+          "chapters": [
+            "icms",
+            "beneficios",
+            "aliquotas",
+            "st",
+            "prova"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-rn-complementar-rn-ricms-pt7",
+      "jurisdiction": "RN",
+      "title": "Rio Grande do Norte: Regulamento do ICMS - parte 7",
+      "short": "Regulamento do ICMS",
+      "official_url": "https://www.set.rn.gov.br/",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "Estados_Complementar\\RN\\RN_RICMS_pt7.txt"
+        ],
+        "sha256": {
+          "RN_RICMS_pt7.txt": "c8bf1d665e29bf950e4253bf96db8d04e6bdca1c3e1a4336fa62ef8c7ada183b"
+        },
+        "fetch_url": ""
+      },
+      "note": "Texto estadual de ICMS publicado em estados/rn/legislacao/fontes/complementar-rn-ricms-pt7.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-rn",
+          "module_title": "Rio Grande do Norte: legislação de ICMS em tela",
+          "chapters": [
+            "icms",
+            "beneficios",
+            "aliquotas",
+            "st",
+            "prova"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-rs-principal-rs-ricms",
+      "jurisdiction": "RS",
+      "title": "Rio Grande do Sul: Regulamento do ICMS",
+      "short": "Regulamento do ICMS",
+      "official_url": "https://www.legislacao.sefaz.rs.gov.br/",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "#ESTADUAIS-COMPILADO-NOTEBOOKLM\\RS\\RS_RICMS.txt"
+        ],
+        "sha256": {
+          "RS_RICMS.txt": "4b88195c39f0463f1eb876964505e7b5eca8c54fe9ff15708a34f13951b4bced"
+        },
+        "fetch_url": ""
+      },
+      "note": "Texto estadual de ICMS publicado em estados/rs/legislacao/fontes/principal-rs-ricms.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-rs",
+          "module_title": "Rio Grande do Sul: legislação de ICMS em tela",
+          "chapters": [
+            "icms",
+            "beneficios",
+            "aliquotas",
+            "st",
+            "prova"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-rs-principal-rs-ricms-pt2",
+      "jurisdiction": "RS",
+      "title": "Rio Grande do Sul: Regulamento do ICMS - parte 2",
+      "short": "Regulamento do ICMS",
+      "official_url": "https://www.legislacao.sefaz.rs.gov.br/",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "#ESTADUAIS-COMPILADO-NOTEBOOKLM\\RS\\RS_RICMS_pt2.txt"
+        ],
+        "sha256": {
+          "RS_RICMS_pt2.txt": "769dafdec7ef8a7053593017ce771476f77a5325b5f80e86c880e3b28f7c0926"
+        },
+        "fetch_url": ""
+      },
+      "note": "Texto estadual de ICMS publicado em estados/rs/legislacao/fontes/principal-rs-ricms-pt2.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-rs",
+          "module_title": "Rio Grande do Sul: legislação de ICMS em tela",
+          "chapters": [
+            "icms",
+            "beneficios",
+            "aliquotas",
+            "st",
+            "prova"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-rs-principal-rs-ricms-pt3",
+      "jurisdiction": "RS",
+      "title": "Rio Grande do Sul: Regulamento do ICMS - parte 3",
+      "short": "Regulamento do ICMS",
+      "official_url": "https://www.legislacao.sefaz.rs.gov.br/",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "#ESTADUAIS-COMPILADO-NOTEBOOKLM\\RS\\RS_RICMS_pt3.txt"
+        ],
+        "sha256": {
+          "RS_RICMS_pt3.txt": "443f8b1074b1b602dc301aeec7000bf76bab8f4e32bf54c0c1e3b225e96c3b51"
+        },
+        "fetch_url": ""
+      },
+      "note": "Texto estadual de ICMS publicado em estados/rs/legislacao/fontes/principal-rs-ricms-pt3.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-rs",
+          "module_title": "Rio Grande do Sul: legislação de ICMS em tela",
+          "chapters": [
+            "icms",
+            "beneficios",
+            "aliquotas",
+            "st",
+            "prova"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-rs-principal-rs-ricms-pt4",
+      "jurisdiction": "RS",
+      "title": "Rio Grande do Sul: Regulamento do ICMS - parte 4",
+      "short": "Regulamento do ICMS",
+      "official_url": "https://www.legislacao.sefaz.rs.gov.br/",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "#ESTADUAIS-COMPILADO-NOTEBOOKLM\\RS\\RS_RICMS_pt4.txt"
+        ],
+        "sha256": {
+          "RS_RICMS_pt4.txt": "d30c872dd723975fbad7b4dd08ec00cf2e931cf0a1057c76ad1855f4e04307ef"
+        },
+        "fetch_url": ""
+      },
+      "note": "Texto estadual de ICMS publicado em estados/rs/legislacao/fontes/principal-rs-ricms-pt4.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-rs",
+          "module_title": "Rio Grande do Sul: legislação de ICMS em tela",
+          "chapters": [
+            "icms",
+            "beneficios",
+            "aliquotas",
+            "st",
+            "prova"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-rs-principal-rs-ricms-pt5",
+      "jurisdiction": "RS",
+      "title": "Rio Grande do Sul: Regulamento do ICMS - parte 5",
+      "short": "Regulamento do ICMS",
+      "official_url": "https://www.legislacao.sefaz.rs.gov.br/",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "#ESTADUAIS-COMPILADO-NOTEBOOKLM\\RS\\RS_RICMS_pt5.txt"
+        ],
+        "sha256": {
+          "RS_RICMS_pt5.txt": "4c85015b8ba8234b9b73f94aeb807b1e9f8891c2ff51b7081318fb1af4e9b982"
+        },
+        "fetch_url": ""
+      },
+      "note": "Texto estadual de ICMS publicado em estados/rs/legislacao/fontes/principal-rs-ricms-pt5.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-rs",
+          "module_title": "Rio Grande do Sul: legislação de ICMS em tela",
+          "chapters": [
+            "icms",
+            "beneficios",
+            "aliquotas",
+            "st",
+            "prova"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-rs-principal-rs-ricms-pt6",
+      "jurisdiction": "RS",
+      "title": "Rio Grande do Sul: Regulamento do ICMS - parte 6",
+      "short": "Regulamento do ICMS",
+      "official_url": "https://www.legislacao.sefaz.rs.gov.br/",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "#ESTADUAIS-COMPILADO-NOTEBOOKLM\\RS\\RS_RICMS_pt6.txt"
+        ],
+        "sha256": {
+          "RS_RICMS_pt6.txt": "5c8abf69c7af0cac075760c22164f4b194a4405c9848b487fe32b31755cb7c25"
+        },
+        "fetch_url": ""
+      },
+      "note": "Texto estadual de ICMS publicado em estados/rs/legislacao/fontes/principal-rs-ricms-pt6.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-rs",
+          "module_title": "Rio Grande do Sul: legislação de ICMS em tela",
+          "chapters": [
+            "icms",
+            "beneficios",
+            "aliquotas",
+            "st",
+            "prova"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-rs-principal-rs-ricms-pt7",
+      "jurisdiction": "RS",
+      "title": "Rio Grande do Sul: Regulamento do ICMS - parte 7",
+      "short": "Regulamento do ICMS",
+      "official_url": "https://www.legislacao.sefaz.rs.gov.br/",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "#ESTADUAIS-COMPILADO-NOTEBOOKLM\\RS\\RS_RICMS_pt7.txt"
+        ],
+        "sha256": {
+          "RS_RICMS_pt7.txt": "e818135cc0e381057a965054ba214e23440b638af17384a8eae09cb7e0fdf6a7"
+        },
+        "fetch_url": ""
+      },
+      "note": "Texto estadual de ICMS publicado em estados/rs/legislacao/fontes/principal-rs-ricms-pt7.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-rs",
+          "module_title": "Rio Grande do Sul: legislação de ICMS em tela",
+          "chapters": [
+            "icms",
+            "beneficios",
+            "aliquotas",
+            "st",
+            "prova"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-rs-principal-rs-ricms-pt8",
+      "jurisdiction": "RS",
+      "title": "Rio Grande do Sul: Regulamento do ICMS - parte 8",
+      "short": "Regulamento do ICMS",
+      "official_url": "https://www.legislacao.sefaz.rs.gov.br/",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "#ESTADUAIS-COMPILADO-NOTEBOOKLM\\RS\\RS_RICMS_pt8.txt"
+        ],
+        "sha256": {
+          "RS_RICMS_pt8.txt": "87f821eb771b20f3fea22b28969374899ceee14b1b158a6b2d3d3729793ef7c6"
+        },
+        "fetch_url": ""
+      },
+      "note": "Texto estadual de ICMS publicado em estados/rs/legislacao/fontes/principal-rs-ricms-pt8.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-rs",
+          "module_title": "Rio Grande do Sul: legislação de ICMS em tela",
+          "chapters": [
+            "icms",
+            "beneficios",
+            "aliquotas",
+            "st",
+            "prova"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-rs-principal-rs-ricms-pt9",
+      "jurisdiction": "RS",
+      "title": "Rio Grande do Sul: Regulamento do ICMS - parte 9",
+      "short": "Regulamento do ICMS",
+      "official_url": "https://www.legislacao.sefaz.rs.gov.br/",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "#ESTADUAIS-COMPILADO-NOTEBOOKLM\\RS\\RS_RICMS_pt9.txt"
+        ],
+        "sha256": {
+          "RS_RICMS_pt9.txt": "24fd12b6d1b59ff5c3df2daaefb6e354781549a6096312293c12deb16c45aa82"
+        },
+        "fetch_url": ""
+      },
+      "note": "Texto estadual de ICMS publicado em estados/rs/legislacao/fontes/principal-rs-ricms-pt9.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-rs",
+          "module_title": "Rio Grande do Sul: legislação de ICMS em tela",
+          "chapters": [
+            "icms",
+            "beneficios",
+            "aliquotas",
+            "st",
+            "prova"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-ro-principal-ro-icms-beneficios",
+      "jurisdiction": "RO",
+      "title": "Rondônia: Benefícios fiscais de ICMS",
+      "short": "Benefícios fiscais de ICMS",
+      "official_url": "https://portal.sefin.ro.gov.br/legislacao",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "#ESTADUAIS-COMPILADO-NOTEBOOKLM\\RO\\RO_ICMS_BENEFICIOS.txt"
+        ],
+        "sha256": {
+          "RO_ICMS_BENEFICIOS.txt": "8267a8dd4441ebf3911e74e2ff6db328d626727de1f540bf06d59fcc4912bc79"
+        },
+        "fetch_url": ""
+      },
+      "note": "Texto estadual de ICMS publicado em estados/ro/legislacao/fontes/principal-ro-icms-beneficios.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-ro",
+          "module_title": "Rondônia: legislação de ICMS em tela",
+          "chapters": [
+            "icms",
+            "beneficios",
+            "aliquotas",
+            "st",
+            "prova"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-ro-principal-ro-icms-leis",
+      "jurisdiction": "RO",
+      "title": "Rondônia: Leis do ICMS",
+      "short": "Leis do ICMS",
+      "official_url": "https://portal.sefin.ro.gov.br/legislacao",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "#ESTADUAIS-COMPILADO-NOTEBOOKLM\\RO\\RO_ICMS_LEIS.txt"
+        ],
+        "sha256": {
+          "RO_ICMS_LEIS.txt": "58c6cc70b1e220aff63ec64bedcd6bf58fc8fb0a58cef8d737b3abf411153cf0"
+        },
+        "fetch_url": ""
+      },
+      "note": "Texto estadual de ICMS publicado em estados/ro/legislacao/fontes/principal-ro-icms-leis.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-ro",
+          "module_title": "Rondônia: legislação de ICMS em tela",
+          "chapters": [
+            "icms",
+            "beneficios",
+            "aliquotas",
+            "st",
+            "prova"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-ro-principal-ro-icms-leis-parte2",
+      "jurisdiction": "RO",
+      "title": "Rondônia: Leis do ICMS - parte 2",
+      "short": "Leis do ICMS",
+      "official_url": "https://portal.sefin.ro.gov.br/legislacao",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "#ESTADUAIS-COMPILADO-NOTEBOOKLM\\RO\\RO_ICMS_LEIS_parte2.txt"
+        ],
+        "sha256": {
+          "RO_ICMS_LEIS_parte2.txt": "62a587f66f60bc50ad4c4a36b0c0d8bbc8c31a988b19b33109373fde8cc18528"
+        },
+        "fetch_url": ""
+      },
+      "note": "Texto estadual de ICMS publicado em estados/ro/legislacao/fontes/principal-ro-icms-leis-parte2.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-ro",
+          "module_title": "Rondônia: legislação de ICMS em tela",
+          "chapters": [
+            "icms",
+            "beneficios",
+            "aliquotas",
+            "st",
+            "prova"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-ro-principal-ro-ricms",
+      "jurisdiction": "RO",
+      "title": "Rondônia: Regulamento do ICMS",
+      "short": "Regulamento do ICMS",
+      "official_url": "https://portal.sefin.ro.gov.br/legislacao",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "#ESTADUAIS-COMPILADO-NOTEBOOKLM\\RO\\RO_RICMS.txt"
+        ],
+        "sha256": {
+          "RO_RICMS.txt": "50e9783ce351fd9c88070539551385db2527abd30567ec8dbe94e04e4ab269e6"
+        },
+        "fetch_url": ""
+      },
+      "note": "Texto estadual de ICMS publicado em estados/ro/legislacao/fontes/principal-ro-ricms.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-ro",
+          "module_title": "Rondônia: legislação de ICMS em tela",
+          "chapters": [
+            "icms",
+            "beneficios",
+            "aliquotas",
+            "st",
+            "prova"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-rr-principal-rr-icms-anexos",
+      "jurisdiction": "RR",
+      "title": "Roraima: Anexos do ICMS",
+      "short": "Anexos do ICMS",
+      "official_url": "https://www.sefaz.rr.gov.br/",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "#ESTADUAIS-COMPILADO-NOTEBOOKLM\\RR\\RR_ICMS_ANEXOS.txt"
+        ],
+        "sha256": {
+          "RR_ICMS_ANEXOS.txt": "0c706f3445f4a45a271c1b71641e688c65a7c2a6c5e2786fd34d61932f4e12c4"
+        },
+        "fetch_url": ""
+      },
+      "note": "Texto estadual de ICMS publicado em estados/rr/legislacao/fontes/principal-rr-icms-anexos.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-rr",
+          "module_title": "Roraima: legislação de ICMS em tela",
+          "chapters": [
+            "icms",
+            "beneficios",
+            "aliquotas",
+            "st"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-rr-principal-rr-icms-beneficios",
+      "jurisdiction": "RR",
+      "title": "Roraima: Benefícios fiscais de ICMS",
+      "short": "Benefícios fiscais de ICMS",
+      "official_url": "https://www.sefaz.rr.gov.br/",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "#ESTADUAIS-COMPILADO-NOTEBOOKLM\\RR\\RR_ICMS_BENEFICIOS.txt"
+        ],
+        "sha256": {
+          "RR_ICMS_BENEFICIOS.txt": "6a0a16214c830ad2653572c49e873115298e2d0fce630ede002e70af8a10091e"
+        },
+        "fetch_url": ""
+      },
+      "note": "Texto estadual de ICMS publicado em estados/rr/legislacao/fontes/principal-rr-icms-beneficios.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-rr",
+          "module_title": "Roraima: legislação de ICMS em tela",
+          "chapters": [
+            "icms",
+            "beneficios",
+            "aliquotas",
+            "st",
+            "prova"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-rr-principal-rr-icms-leis",
+      "jurisdiction": "RR",
+      "title": "Roraima: Leis do ICMS",
+      "short": "Leis do ICMS",
+      "official_url": "https://www.sefaz.rr.gov.br/",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "#ESTADUAIS-COMPILADO-NOTEBOOKLM\\RR\\RR_ICMS_LEIS.txt"
+        ],
+        "sha256": {
+          "RR_ICMS_LEIS.txt": "1f2fd9aec6499c45466cbb2477d3e88076866b050457e1e144cf9478852b0d9b"
+        },
+        "fetch_url": ""
+      },
+      "note": "Texto estadual de ICMS publicado em estados/rr/legislacao/fontes/principal-rr-icms-leis.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-rr",
+          "module_title": "Roraima: legislação de ICMS em tela",
+          "chapters": [
+            "icms",
+            "beneficios",
+            "aliquotas",
+            "st"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-rr-principal-rr-ricms",
+      "jurisdiction": "RR",
+      "title": "Roraima: Regulamento do ICMS",
+      "short": "Regulamento do ICMS",
+      "official_url": "https://www.sefaz.rr.gov.br/",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "#ESTADUAIS-COMPILADO-NOTEBOOKLM\\RR\\RR_RICMS.txt"
+        ],
+        "sha256": {
+          "RR_RICMS.txt": "726aab8f6347aa19e5c17753a9abb3fcd90d9ed51e06f8caf0edbad5a2d8b0c0"
+        },
+        "fetch_url": ""
+      },
+      "note": "Texto estadual de ICMS publicado em estados/rr/legislacao/fontes/principal-rr-ricms.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-rr",
+          "module_title": "Roraima: legislação de ICMS em tela",
+          "chapters": [
+            "icms",
+            "beneficios",
+            "aliquotas",
+            "st",
+            "prova"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-rr-complementar-rr-ricms",
+      "jurisdiction": "RR",
+      "title": "Roraima: Regulamento do ICMS",
+      "short": "Regulamento do ICMS",
+      "official_url": "https://www.sefaz.rr.gov.br/",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "Estados_Complementar\\RR\\RR_RICMS.txt"
+        ],
+        "sha256": {
+          "RR_RICMS.txt": "60f43bda837904f2a875c414bb03902fcfc34d4ef305136184bbe43cc2bbde64"
+        },
+        "fetch_url": ""
+      },
+      "note": "Texto estadual de ICMS publicado em estados/rr/legislacao/fontes/complementar-rr-ricms.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-rr",
+          "module_title": "Roraima: legislação de ICMS em tela",
+          "chapters": [
+            "icms",
+            "beneficios",
+            "aliquotas",
+            "st",
+            "prova"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-sc-principal-sc-icms-leis",
+      "jurisdiction": "SC",
+      "title": "Santa Catarina: Leis do ICMS",
+      "short": "Leis do ICMS",
+      "official_url": "https://legislacao.sef.sc.gov.br/",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "#ESTADUAIS-COMPILADO-NOTEBOOKLM\\SC\\SC_ICMS_LEIS.txt"
+        ],
+        "sha256": {
+          "SC_ICMS_LEIS.txt": "6a589b33cd4cf1d45efdfebc4da3d06a934679ffd864e426fe8b26022f3d5a25"
+        },
+        "fetch_url": ""
+      },
+      "note": "Texto estadual de ICMS publicado em estados/sc/legislacao/fontes/principal-sc-icms-leis.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-sc",
+          "module_title": "Santa Catarina: legislação de ICMS em tela",
+          "chapters": [
+            "icms",
+            "beneficios",
+            "aliquotas",
+            "st"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-sc-principal-sc-ricms",
+      "jurisdiction": "SC",
+      "title": "Santa Catarina: Regulamento do ICMS",
+      "short": "Regulamento do ICMS",
+      "official_url": "https://legislacao.sef.sc.gov.br/",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "#ESTADUAIS-COMPILADO-NOTEBOOKLM\\SC\\SC_RICMS.txt"
+        ],
+        "sha256": {
+          "SC_RICMS.txt": "d4359c5d1fb563d88bed2c1039de6e1f1e52e9c6c764185b41b110847e09453d"
+        },
+        "fetch_url": ""
+      },
+      "note": "Texto estadual de ICMS publicado em estados/sc/legislacao/fontes/principal-sc-ricms.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-sc",
+          "module_title": "Santa Catarina: legislação de ICMS em tela",
+          "chapters": [
+            "icms",
+            "beneficios",
+            "aliquotas",
+            "st",
+            "prova"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-sp-principal-sp-icms-leis",
+      "jurisdiction": "SP",
+      "title": "São Paulo: Leis do ICMS",
+      "short": "Leis do ICMS",
+      "official_url": "https://legislacao.fazenda.sp.gov.br/",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "#ESTADUAIS-COMPILADO-NOTEBOOKLM\\SP\\SP_ICMS_LEIS.txt"
+        ],
+        "sha256": {
+          "SP_ICMS_LEIS.txt": "ffdf367ecb7d9d73517f0db7a4fc37d9dcdc50ea9e9f1f47f60838364e80c7bd"
+        },
+        "fetch_url": ""
+      },
+      "note": "Texto estadual de ICMS publicado em estados/sp/legislacao/fontes/principal-sp-icms-leis.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-sp",
+          "module_title": "São Paulo: legislação de ICMS em tela",
+          "chapters": [
+            "icms",
+            "beneficios",
+            "aliquotas",
+            "st",
+            "prova"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-sp-principal-sp-icms-st",
+      "jurisdiction": "SP",
+      "title": "São Paulo: Substituição tributária",
+      "short": "Substituição tributária",
+      "official_url": "https://legislacao.fazenda.sp.gov.br/",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "#ESTADUAIS-COMPILADO-NOTEBOOKLM\\SP\\SP_ICMS_ST.txt"
+        ],
+        "sha256": {
+          "SP_ICMS_ST.txt": "7135e34d89fc3cded06d938a7df727101b8ff7de8829698dc336804f0b4e46e5"
+        },
+        "fetch_url": ""
+      },
+      "note": "Texto estadual de ICMS publicado em estados/sp/legislacao/fontes/principal-sp-icms-st.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-sp",
+          "module_title": "São Paulo: legislação de ICMS em tela",
+          "chapters": [
+            "icms",
+            "aliquotas",
+            "st"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-sp-principal-sp-ricms",
+      "jurisdiction": "SP",
+      "title": "São Paulo: Regulamento do ICMS",
+      "short": "Regulamento do ICMS",
+      "official_url": "https://legislacao.fazenda.sp.gov.br/",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "#ESTADUAIS-COMPILADO-NOTEBOOKLM\\SP\\SP_RICMS.txt"
+        ],
+        "sha256": {
+          "SP_RICMS.txt": "592371459a93a23649dfd4f6806490c5f071b6e31793e7730853d510c61c1b9a"
+        },
+        "fetch_url": ""
+      },
+      "note": "Texto estadual de ICMS publicado em estados/sp/legislacao/fontes/principal-sp-ricms.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-sp",
+          "module_title": "São Paulo: legislação de ICMS em tela",
+          "chapters": [
+            "icms",
+            "beneficios",
+            "aliquotas",
+            "st",
+            "prova"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-sp-principal-sp-ricms-pt10",
+      "jurisdiction": "SP",
+      "title": "São Paulo: Regulamento do ICMS - parte 10",
+      "short": "Regulamento do ICMS",
+      "official_url": "https://legislacao.fazenda.sp.gov.br/",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "#ESTADUAIS-COMPILADO-NOTEBOOKLM\\SP\\SP_RICMS_pt10.txt"
+        ],
+        "sha256": {
+          "SP_RICMS_pt10.txt": "54222b57907a439f77d1ab77476ad5872b9672a3c4d9db11158faa8770e204c0"
+        },
+        "fetch_url": ""
+      },
+      "note": "Texto estadual de ICMS publicado em estados/sp/legislacao/fontes/principal-sp-ricms-pt10.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-sp",
+          "module_title": "São Paulo: legislação de ICMS em tela",
+          "chapters": [
+            "icms",
+            "beneficios",
+            "aliquotas",
+            "st",
+            "prova"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-sp-principal-sp-ricms-pt2",
+      "jurisdiction": "SP",
+      "title": "São Paulo: Regulamento do ICMS - parte 2",
+      "short": "Regulamento do ICMS",
+      "official_url": "https://legislacao.fazenda.sp.gov.br/",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "#ESTADUAIS-COMPILADO-NOTEBOOKLM\\SP\\SP_RICMS_pt2.txt"
+        ],
+        "sha256": {
+          "SP_RICMS_pt2.txt": "37f06f7196533b45c0b8c9d6bff0307f3e94a3e97f16156063fc8aafda7e3e98"
+        },
+        "fetch_url": ""
+      },
+      "note": "Texto estadual de ICMS publicado em estados/sp/legislacao/fontes/principal-sp-ricms-pt2.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-sp",
+          "module_title": "São Paulo: legislação de ICMS em tela",
+          "chapters": [
+            "icms",
+            "beneficios",
+            "aliquotas",
+            "st",
+            "prova"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-sp-principal-sp-ricms-pt3",
+      "jurisdiction": "SP",
+      "title": "São Paulo: Regulamento do ICMS - parte 3",
+      "short": "Regulamento do ICMS",
+      "official_url": "https://legislacao.fazenda.sp.gov.br/",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "#ESTADUAIS-COMPILADO-NOTEBOOKLM\\SP\\SP_RICMS_pt3.txt"
+        ],
+        "sha256": {
+          "SP_RICMS_pt3.txt": "4d9f517e66ee98af5b20679715fa2abb72e385e9210790a4f48445bbdff6606d"
+        },
+        "fetch_url": ""
+      },
+      "note": "Texto estadual de ICMS publicado em estados/sp/legislacao/fontes/principal-sp-ricms-pt3.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-sp",
+          "module_title": "São Paulo: legislação de ICMS em tela",
+          "chapters": [
+            "icms",
+            "beneficios",
+            "aliquotas",
+            "st",
+            "prova"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-sp-principal-sp-ricms-pt4",
+      "jurisdiction": "SP",
+      "title": "São Paulo: Regulamento do ICMS - parte 4",
+      "short": "Regulamento do ICMS",
+      "official_url": "https://legislacao.fazenda.sp.gov.br/",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "#ESTADUAIS-COMPILADO-NOTEBOOKLM\\SP\\SP_RICMS_pt4.txt"
+        ],
+        "sha256": {
+          "SP_RICMS_pt4.txt": "af2fc3892f4423ee448745e4bb4455c474e6995be3244c73d598d72f0da07605"
+        },
+        "fetch_url": ""
+      },
+      "note": "Texto estadual de ICMS publicado em estados/sp/legislacao/fontes/principal-sp-ricms-pt4.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-sp",
+          "module_title": "São Paulo: legislação de ICMS em tela",
+          "chapters": [
+            "icms",
+            "beneficios",
+            "aliquotas",
+            "st",
+            "prova"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-sp-principal-sp-ricms-pt5",
+      "jurisdiction": "SP",
+      "title": "São Paulo: Regulamento do ICMS - parte 5",
+      "short": "Regulamento do ICMS",
+      "official_url": "https://legislacao.fazenda.sp.gov.br/",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "#ESTADUAIS-COMPILADO-NOTEBOOKLM\\SP\\SP_RICMS_pt5.txt"
+        ],
+        "sha256": {
+          "SP_RICMS_pt5.txt": "6b09dbb2dbbdf738345d7e620581cdcfa5cea71dbea7aab9d40b388022627a9b"
+        },
+        "fetch_url": ""
+      },
+      "note": "Texto estadual de ICMS publicado em estados/sp/legislacao/fontes/principal-sp-ricms-pt5.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-sp",
+          "module_title": "São Paulo: legislação de ICMS em tela",
+          "chapters": [
+            "icms",
+            "beneficios",
+            "aliquotas",
+            "st",
+            "prova"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-sp-principal-sp-ricms-pt6",
+      "jurisdiction": "SP",
+      "title": "São Paulo: Regulamento do ICMS - parte 6",
+      "short": "Regulamento do ICMS",
+      "official_url": "https://legislacao.fazenda.sp.gov.br/",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "#ESTADUAIS-COMPILADO-NOTEBOOKLM\\SP\\SP_RICMS_pt6.txt"
+        ],
+        "sha256": {
+          "SP_RICMS_pt6.txt": "58d43b45d4bc7c75f8f215f220e7abdbfe7f0a68e71fa8d4cfb14154d74b180c"
+        },
+        "fetch_url": ""
+      },
+      "note": "Texto estadual de ICMS publicado em estados/sp/legislacao/fontes/principal-sp-ricms-pt6.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-sp",
+          "module_title": "São Paulo: legislação de ICMS em tela",
+          "chapters": [
+            "icms",
+            "beneficios",
+            "aliquotas",
+            "st",
+            "prova"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-sp-principal-sp-ricms-pt7",
+      "jurisdiction": "SP",
+      "title": "São Paulo: Regulamento do ICMS - parte 7",
+      "short": "Regulamento do ICMS",
+      "official_url": "https://legislacao.fazenda.sp.gov.br/",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "#ESTADUAIS-COMPILADO-NOTEBOOKLM\\SP\\SP_RICMS_pt7.txt"
+        ],
+        "sha256": {
+          "SP_RICMS_pt7.txt": "ab0bfec6681e0e428e1a86e071efe304c209358b1ef842f93965f9b335405109"
+        },
+        "fetch_url": ""
+      },
+      "note": "Texto estadual de ICMS publicado em estados/sp/legislacao/fontes/principal-sp-ricms-pt7.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-sp",
+          "module_title": "São Paulo: legislação de ICMS em tela",
+          "chapters": [
+            "icms",
+            "beneficios",
+            "aliquotas",
+            "st",
+            "prova"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-sp-principal-sp-ricms-pt8",
+      "jurisdiction": "SP",
+      "title": "São Paulo: Regulamento do ICMS - parte 8",
+      "short": "Regulamento do ICMS",
+      "official_url": "https://legislacao.fazenda.sp.gov.br/",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "#ESTADUAIS-COMPILADO-NOTEBOOKLM\\SP\\SP_RICMS_pt8.txt"
+        ],
+        "sha256": {
+          "SP_RICMS_pt8.txt": "1db55bd4a1ddcad4c2f3790980e16211b4308c333f13295e29187e43d788a715"
+        },
+        "fetch_url": ""
+      },
+      "note": "Texto estadual de ICMS publicado em estados/sp/legislacao/fontes/principal-sp-ricms-pt8.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-sp",
+          "module_title": "São Paulo: legislação de ICMS em tela",
+          "chapters": [
+            "icms",
+            "beneficios",
+            "aliquotas",
+            "st",
+            "prova"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-sp-principal-sp-ricms-pt9",
+      "jurisdiction": "SP",
+      "title": "São Paulo: Regulamento do ICMS - parte 9",
+      "short": "Regulamento do ICMS",
+      "official_url": "https://legislacao.fazenda.sp.gov.br/",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "#ESTADUAIS-COMPILADO-NOTEBOOKLM\\SP\\SP_RICMS_pt9.txt"
+        ],
+        "sha256": {
+          "SP_RICMS_pt9.txt": "bd8512c7f102e48972ecfe6e01ef40181b3dac3c0dd7c7ca6e3aa78317757a06"
+        },
+        "fetch_url": ""
+      },
+      "note": "Texto estadual de ICMS publicado em estados/sp/legislacao/fontes/principal-sp-ricms-pt9.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-sp",
+          "module_title": "São Paulo: legislação de ICMS em tela",
+          "chapters": [
+            "icms",
+            "beneficios",
+            "aliquotas",
+            "st",
+            "prova"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-sp-complementar-sp-ricms-pt10",
+      "jurisdiction": "SP",
+      "title": "São Paulo: Regulamento do ICMS - parte 10",
+      "short": "Regulamento do ICMS",
+      "official_url": "https://legislacao.fazenda.sp.gov.br/",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "Estados_Complementar\\SP\\SP_RICMS_pt10.txt"
+        ],
+        "sha256": {
+          "SP_RICMS_pt10.txt": "54222b57907a439f77d1ab77476ad5872b9672a3c4d9db11158faa8770e204c0"
+        },
+        "fetch_url": ""
+      },
+      "note": "Texto estadual de ICMS publicado em estados/sp/legislacao/fontes/complementar-sp-ricms-pt10.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-sp",
+          "module_title": "São Paulo: legislação de ICMS em tela",
+          "chapters": [
+            "icms",
+            "beneficios",
+            "aliquotas",
+            "st",
+            "prova"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-sp-complementar-sp-ricms-pt2",
+      "jurisdiction": "SP",
+      "title": "São Paulo: Regulamento do ICMS - parte 2",
+      "short": "Regulamento do ICMS",
+      "official_url": "https://legislacao.fazenda.sp.gov.br/",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "Estados_Complementar\\SP\\SP_RICMS_pt2.txt"
+        ],
+        "sha256": {
+          "SP_RICMS_pt2.txt": "37f06f7196533b45c0b8c9d6bff0307f3e94a3e97f16156063fc8aafda7e3e98"
+        },
+        "fetch_url": ""
+      },
+      "note": "Texto estadual de ICMS publicado em estados/sp/legislacao/fontes/complementar-sp-ricms-pt2.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-sp",
+          "module_title": "São Paulo: legislação de ICMS em tela",
+          "chapters": [
+            "icms",
+            "beneficios",
+            "aliquotas",
+            "st",
+            "prova"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-sp-complementar-sp-ricms-pt3",
+      "jurisdiction": "SP",
+      "title": "São Paulo: Regulamento do ICMS - parte 3",
+      "short": "Regulamento do ICMS",
+      "official_url": "https://legislacao.fazenda.sp.gov.br/",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "Estados_Complementar\\SP\\SP_RICMS_pt3.txt"
+        ],
+        "sha256": {
+          "SP_RICMS_pt3.txt": "4d9f517e66ee98af5b20679715fa2abb72e385e9210790a4f48445bbdff6606d"
+        },
+        "fetch_url": ""
+      },
+      "note": "Texto estadual de ICMS publicado em estados/sp/legislacao/fontes/complementar-sp-ricms-pt3.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-sp",
+          "module_title": "São Paulo: legislação de ICMS em tela",
+          "chapters": [
+            "icms",
+            "beneficios",
+            "aliquotas",
+            "st",
+            "prova"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-sp-complementar-sp-ricms-pt4",
+      "jurisdiction": "SP",
+      "title": "São Paulo: Regulamento do ICMS - parte 4",
+      "short": "Regulamento do ICMS",
+      "official_url": "https://legislacao.fazenda.sp.gov.br/",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "Estados_Complementar\\SP\\SP_RICMS_pt4.txt"
+        ],
+        "sha256": {
+          "SP_RICMS_pt4.txt": "af2fc3892f4423ee448745e4bb4455c474e6995be3244c73d598d72f0da07605"
+        },
+        "fetch_url": ""
+      },
+      "note": "Texto estadual de ICMS publicado em estados/sp/legislacao/fontes/complementar-sp-ricms-pt4.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-sp",
+          "module_title": "São Paulo: legislação de ICMS em tela",
+          "chapters": [
+            "icms",
+            "beneficios",
+            "aliquotas",
+            "st",
+            "prova"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-sp-complementar-sp-ricms-pt5",
+      "jurisdiction": "SP",
+      "title": "São Paulo: Regulamento do ICMS - parte 5",
+      "short": "Regulamento do ICMS",
+      "official_url": "https://legislacao.fazenda.sp.gov.br/",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "Estados_Complementar\\SP\\SP_RICMS_pt5.txt"
+        ],
+        "sha256": {
+          "SP_RICMS_pt5.txt": "6b09dbb2dbbdf738345d7e620581cdcfa5cea71dbea7aab9d40b388022627a9b"
+        },
+        "fetch_url": ""
+      },
+      "note": "Texto estadual de ICMS publicado em estados/sp/legislacao/fontes/complementar-sp-ricms-pt5.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-sp",
+          "module_title": "São Paulo: legislação de ICMS em tela",
+          "chapters": [
+            "icms",
+            "beneficios",
+            "aliquotas",
+            "st",
+            "prova"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-sp-complementar-sp-ricms-pt6",
+      "jurisdiction": "SP",
+      "title": "São Paulo: Regulamento do ICMS - parte 6",
+      "short": "Regulamento do ICMS",
+      "official_url": "https://legislacao.fazenda.sp.gov.br/",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "Estados_Complementar\\SP\\SP_RICMS_pt6.txt"
+        ],
+        "sha256": {
+          "SP_RICMS_pt6.txt": "58d43b45d4bc7c75f8f215f220e7abdbfe7f0a68e71fa8d4cfb14154d74b180c"
+        },
+        "fetch_url": ""
+      },
+      "note": "Texto estadual de ICMS publicado em estados/sp/legislacao/fontes/complementar-sp-ricms-pt6.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-sp",
+          "module_title": "São Paulo: legislação de ICMS em tela",
+          "chapters": [
+            "icms",
+            "beneficios",
+            "aliquotas",
+            "st",
+            "prova"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-sp-complementar-sp-ricms-pt7",
+      "jurisdiction": "SP",
+      "title": "São Paulo: Regulamento do ICMS - parte 7",
+      "short": "Regulamento do ICMS",
+      "official_url": "https://legislacao.fazenda.sp.gov.br/",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "Estados_Complementar\\SP\\SP_RICMS_pt7.txt"
+        ],
+        "sha256": {
+          "SP_RICMS_pt7.txt": "ab0bfec6681e0e428e1a86e071efe304c209358b1ef842f93965f9b335405109"
+        },
+        "fetch_url": ""
+      },
+      "note": "Texto estadual de ICMS publicado em estados/sp/legislacao/fontes/complementar-sp-ricms-pt7.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-sp",
+          "module_title": "São Paulo: legislação de ICMS em tela",
+          "chapters": [
+            "icms",
+            "beneficios",
+            "aliquotas",
+            "st",
+            "prova"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-sp-complementar-sp-ricms-pt8",
+      "jurisdiction": "SP",
+      "title": "São Paulo: Regulamento do ICMS - parte 8",
+      "short": "Regulamento do ICMS",
+      "official_url": "https://legislacao.fazenda.sp.gov.br/",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "Estados_Complementar\\SP\\SP_RICMS_pt8.txt"
+        ],
+        "sha256": {
+          "SP_RICMS_pt8.txt": "1db55bd4a1ddcad4c2f3790980e16211b4308c333f13295e29187e43d788a715"
+        },
+        "fetch_url": ""
+      },
+      "note": "Texto estadual de ICMS publicado em estados/sp/legislacao/fontes/complementar-sp-ricms-pt8.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-sp",
+          "module_title": "São Paulo: legislação de ICMS em tela",
+          "chapters": [
+            "icms",
+            "beneficios",
+            "aliquotas",
+            "st",
+            "prova"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-sp-complementar-sp-ricms-pt9",
+      "jurisdiction": "SP",
+      "title": "São Paulo: Regulamento do ICMS - parte 9",
+      "short": "Regulamento do ICMS",
+      "official_url": "https://legislacao.fazenda.sp.gov.br/",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "Estados_Complementar\\SP\\SP_RICMS_pt9.txt"
+        ],
+        "sha256": {
+          "SP_RICMS_pt9.txt": "bd8512c7f102e48972ecfe6e01ef40181b3dac3c0dd7c7ca6e3aa78317757a06"
+        },
+        "fetch_url": ""
+      },
+      "note": "Texto estadual de ICMS publicado em estados/sp/legislacao/fontes/complementar-sp-ricms-pt9.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-sp",
+          "module_title": "São Paulo: legislação de ICMS em tela",
+          "chapters": [
+            "icms",
+            "beneficios",
+            "aliquotas",
+            "st",
+            "prova"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-se-principal-se-icms-leis",
+      "jurisdiction": "SE",
+      "title": "Sergipe: Leis do ICMS",
+      "short": "Leis do ICMS",
+      "official_url": "https://www.sefaz.se.gov.br/",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "#ESTADUAIS-COMPILADO-NOTEBOOKLM\\SE\\SE_ICMS_LEIS.txt"
+        ],
+        "sha256": {
+          "SE_ICMS_LEIS.txt": "408472597e2f9fe9647c60e1959bca7ab6ea5752b6dc4132b8d50b99f2016f63"
+        },
+        "fetch_url": ""
+      },
+      "note": "Texto estadual de ICMS publicado em estados/se/legislacao/fontes/principal-se-icms-leis.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-se",
+          "module_title": "Sergipe: legislação de ICMS em tela",
+          "chapters": [
+            "icms",
+            "aliquotas",
+            "st"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-se-principal-se-ricms",
+      "jurisdiction": "SE",
+      "title": "Sergipe: Regulamento do ICMS",
+      "short": "Regulamento do ICMS",
+      "official_url": "https://www.sefaz.se.gov.br/",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "#ESTADUAIS-COMPILADO-NOTEBOOKLM\\SE\\SE_RICMS.txt"
+        ],
+        "sha256": {
+          "SE_RICMS.txt": "309d48617f581b54c1fbff9e26d4692e657caeb68eb968094c48f3988d660eb9"
+        },
+        "fetch_url": ""
+      },
+      "note": "Texto estadual de ICMS publicado em estados/se/legislacao/fontes/principal-se-ricms.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-se",
+          "module_title": "Sergipe: legislação de ICMS em tela",
+          "chapters": [
+            "icms",
+            "beneficios",
+            "aliquotas",
+            "st",
+            "prova"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-se-principal-se-ricms-parte2",
+      "jurisdiction": "SE",
+      "title": "Sergipe: Regulamento do ICMS - parte 2",
+      "short": "Regulamento do ICMS",
+      "official_url": "https://www.sefaz.se.gov.br/",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "#ESTADUAIS-COMPILADO-NOTEBOOKLM\\SE\\SE_RICMS_parte2.txt"
+        ],
+        "sha256": {
+          "SE_RICMS_parte2.txt": "d12206cb95ed5498fc22f1a87be73d91ebec4228c9184a2a2d1516dcdbc70dfe"
+        },
+        "fetch_url": ""
+      },
+      "note": "Texto estadual de ICMS publicado em estados/se/legislacao/fontes/principal-se-ricms-parte2.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-se",
+          "module_title": "Sergipe: legislação de ICMS em tela",
+          "chapters": [
+            "icms",
+            "beneficios",
+            "aliquotas",
+            "st",
+            "prova"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-se-principal-se-ricms-parte3",
+      "jurisdiction": "SE",
+      "title": "Sergipe: Regulamento do ICMS - parte 3",
+      "short": "Regulamento do ICMS",
+      "official_url": "https://www.sefaz.se.gov.br/",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "#ESTADUAIS-COMPILADO-NOTEBOOKLM\\SE\\SE_RICMS_parte3.txt"
+        ],
+        "sha256": {
+          "SE_RICMS_parte3.txt": "25eb96c5dd81de89a087ebb76fa85a41016e09b6024c2898b36b4d3908955749"
+        },
+        "fetch_url": ""
+      },
+      "note": "Texto estadual de ICMS publicado em estados/se/legislacao/fontes/principal-se-ricms-parte3.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-se",
+          "module_title": "Sergipe: legislação de ICMS em tela",
+          "chapters": [
+            "icms",
+            "beneficios",
+            "aliquotas",
+            "st",
+            "prova"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-to-principal-to-icms-anexos",
+      "jurisdiction": "TO",
+      "title": "Tocantins: Anexos do ICMS",
+      "short": "Anexos do ICMS",
+      "official_url": "https://www.to.gov.br/sefaz/legislacao-tributaria/",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "#ESTADUAIS-COMPILADO-NOTEBOOKLM\\TO\\TO_ICMS_ANEXOS.txt"
+        ],
+        "sha256": {
+          "TO_ICMS_ANEXOS.txt": "84faf1cc42a4230d497dd7c0e9cfd204b17ba33a5bf116e4b3446008553e4d1d"
+        },
+        "fetch_url": ""
+      },
+      "note": "Texto estadual de ICMS publicado em estados/to/legislacao/fontes/principal-to-icms-anexos.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-to",
+          "module_title": "Tocantins: legislação de ICMS em tela",
+          "chapters": [
+            "icms",
+            "beneficios",
+            "st",
+            "prova"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-to-principal-to-ricms",
+      "jurisdiction": "TO",
+      "title": "Tocantins: Regulamento do ICMS",
+      "short": "Regulamento do ICMS",
+      "official_url": "https://www.to.gov.br/sefaz/legislacao-tributaria/",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "#ESTADUAIS-COMPILADO-NOTEBOOKLM\\TO\\TO_RICMS.txt"
+        ],
+        "sha256": {
+          "TO_RICMS.txt": "0d88c58cdb3b569c589e6500d9886e670c887ae48c0d36c228d924d1559df6b1"
+        },
+        "fetch_url": ""
+      },
+      "note": "Texto estadual de ICMS publicado em estados/to/legislacao/fontes/principal-to-ricms.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-to",
+          "module_title": "Tocantins: legislação de ICMS em tela",
+          "chapters": [
+            "icms",
+            "beneficios",
+            "aliquotas",
+            "st",
+            "prova"
+          ]
+        }
+      ]
     }
   ]
 }

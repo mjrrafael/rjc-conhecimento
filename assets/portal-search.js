@@ -62,50 +62,50 @@ window.RJC_SEARCH = [
   {
     "title": "Acre: ICMS e beneficios fiscais",
     "url": "estados/ac.html",
-    "summary": "Pagina estadual estruturada para futura publicacao por UF, com foco em ICMS, beneficios, documento e prova.",
-    "tags": "AC Acre Acre ICMS beneficios fiscais RICMS DECRETOS ICMS_ALIQUOTAS ICMS_BENEFICIOS ICMS_LEIS INSTRUCOES_NORMATIVAS LEIS OUTROS PORTARIAS RESOLUCOES RICMS"
+    "summary": "Pagina estadual com legislação de ICMS em tela, beneficios, documento e prova.",
+    "tags": "AC Acre Acre ICMS beneficios fiscais RICMS DECRETOS ICMS_ALIQUOTAS ICMS_BENEFICIOS ICMS_LEIS INSTRUCOES_NORMATIVAS LEIS OUTROS PORTARIAS RESOLUCOES RICMS TABELAS"
   },
   {
     "title": "Alagoas: ICMS e beneficios fiscais",
     "url": "estados/al.html",
-    "summary": "Pagina estadual estruturada para futura publicacao por UF, com foco em ICMS, beneficios, documento e prova.",
+    "summary": "Pagina estadual com legislação de ICMS em tela, beneficios, documento e prova.",
     "tags": "AL Alagoas Alagoas ICMS beneficios fiscais RICMS DECRETOS ICMS_LEIS ICMS_ST INSTRUCOES_NORMATIVAS ITCD LEIS OUTROS"
   },
   {
     "title": "Amapá: ICMS e beneficios fiscais",
     "url": "estados/ap.html",
-    "summary": "Pagina estadual estruturada para futura publicacao por UF, com foco em ICMS, beneficios, documento e prova.",
+    "summary": "Pagina estadual com legislação de ICMS em tela, beneficios, documento e prova.",
     "tags": "AP Amapa Amapá ICMS beneficios fiscais RICMS DECRETOS ICMS_ANEXOS ICMS_BENEFICIOS ICMS_LEIS ICMS_ST INSTRUCOES_NORMATIVAS IPVA ITCD LEIS OUTROS PORTARIAS RICMS TAXAS"
   },
   {
     "title": "Amazonas: ICMS e beneficios fiscais",
     "url": "estados/am.html",
-    "summary": "Pagina estadual estruturada para futura publicacao por UF, com foco em ICMS, beneficios, documento e prova.",
+    "summary": "Pagina estadual com legislação de ICMS em tela, beneficios, documento e prova.",
     "tags": "AM Amazonas Amazonas ICMS beneficios fiscais RICMS DECRETOS LEIS"
   },
   {
     "title": "Bahia: ICMS e beneficios fiscais",
     "url": "estados/ba.html",
-    "summary": "Pagina estadual estruturada para futura publicacao por UF, com foco em ICMS, beneficios, documento e prova.",
+    "summary": "Pagina estadual com legislação de ICMS em tela, beneficios, documento e prova.",
     "tags": "BA Bahia Bahia ICMS beneficios fiscais RICMS DECRETOS ICMS_ANEXOS ICMS_LEIS IPVA ITCD OUTROS RICMS TAXAS"
   },
   {
     "title": "Ceará: ICMS e beneficios fiscais",
     "url": "estados/ce.html",
-    "summary": "Pagina estadual estruturada para futura publicacao por UF, com foco em ICMS, beneficios, documento e prova.",
+    "summary": "Pagina estadual com legislação de ICMS em tela, beneficios, documento e prova.",
     "tags": "CE Ceara Ceará ICMS beneficios fiscais RICMS DECRETOS INSTRUCOES_NORMATIVAS LEIS"
   },
   {
     "title": "Distrito Federal: ICMS e beneficios fiscais",
     "url": "estados/df.html",
-    "summary": "Pagina estadual estruturada para futura publicacao por UF, com foco em ICMS, beneficios, documento e prova.",
+    "summary": "Pagina estadual com legislação de ICMS em tela, beneficios, documento e prova.",
     "tags": "DF Distrito Federal Distrito Federal ICMS beneficios fiscais RICMS DECRETOS INSTRUCOES_NORMATIVAS LEIS OUTROS PORTARIAS RESOLUCOES"
   },
   {
     "title": "Espírito Santo: ICMS e beneficios fiscais",
     "url": "estados/es.html",
-    "summary": "Pagina estadual estruturada para futura publicacao por UF, com foco em ICMS, beneficios, documento e prova.",
-    "tags": "ES Espirito Santo Espírito Santo ICMS beneficios fiscais RICMS LEIS OUTROS"
+    "summary": "Pagina estadual com legislação de ICMS em tela, beneficios, documento e prova.",
+    "tags": "ES Espirito Santo Espírito Santo ICMS beneficios fiscais RICMS LEIS OUTROS RICMS"
   },
   {
     "title": "Goiás: ICMS e beneficios fiscais",
@@ -116,109 +116,109 @@ window.RJC_SEARCH = [
   {
     "title": "Maranhão: ICMS e beneficios fiscais",
     "url": "estados/ma.html",
-    "summary": "Pagina estadual estruturada para futura publicacao por UF, com foco em ICMS, beneficios, documento e prova.",
+    "summary": "Pagina estadual com legislação de ICMS em tela, beneficios, documento e prova.",
     "tags": "MA Maranhao Maranhão ICMS beneficios fiscais RICMS ICMS_LEIS LEIS RICMS"
   },
   {
     "title": "Mato Grosso: ICMS e beneficios fiscais",
     "url": "estados/mt.html",
-    "summary": "Pagina estadual estruturada para futura publicacao por UF, com foco em ICMS, beneficios, documento e prova.",
+    "summary": "Pagina estadual com legislação de ICMS em tela, beneficios, documento e prova.",
     "tags": "MT Mato Grosso Mato Grosso ICMS beneficios fiscais RICMS ICMS_ANEXOS ITCD OUTROS RICMS"
   },
   {
     "title": "Mato Grosso do Sul: ICMS e beneficios fiscais",
     "url": "estados/ms.html",
-    "summary": "Pagina estadual estruturada para futura publicacao por UF, com foco em ICMS, beneficios, documento e prova.",
-    "tags": "MS Mato Grosso do Sul Mato Grosso do Sul ICMS beneficios fiscais RICMS "
+    "summary": "Pagina estadual com legislação de ICMS em tela, beneficios, documento e prova.",
+    "tags": "MS Mato Grosso do Sul Mato Grosso do Sul ICMS beneficios fiscais RICMS DECRETOS LEIS OUTROS PORTARIAS RESOLUCOES RICMS"
   },
   {
     "title": "Minas Gerais: ICMS e beneficios fiscais",
     "url": "estados/mg.html",
-    "summary": "Pagina estadual estruturada para futura publicacao por UF, com foco em ICMS, beneficios, documento e prova.",
-    "tags": "MG Minas Gerais Minas Gerais ICMS beneficios fiscais RICMS DECRETOS OUTROS RESOLUCOES"
+    "summary": "Pagina estadual com legislação de ICMS em tela, beneficios, documento e prova.",
+    "tags": "MG Minas Gerais Minas Gerais ICMS beneficios fiscais RICMS DECRETOS IPVA ITCMD LEIS OUTROS RESOLUCOES RICMS"
   },
   {
     "title": "Pará: ICMS e beneficios fiscais",
     "url": "estados/pa.html",
-    "summary": "Pagina estadual estruturada para futura publicacao por UF, com foco em ICMS, beneficios, documento e prova.",
+    "summary": "Pagina estadual com legislação de ICMS em tela, beneficios, documento e prova.",
     "tags": "PA Para Pará ICMS beneficios fiscais RICMS OUTROS"
   },
   {
     "title": "Paraíba: ICMS e beneficios fiscais",
     "url": "estados/pb.html",
-    "summary": "Pagina estadual estruturada para futura publicacao por UF, com foco em ICMS, beneficios, documento e prova.",
+    "summary": "Pagina estadual com legislação de ICMS em tela, beneficios, documento e prova.",
     "tags": "PB Paraiba Paraíba ICMS beneficios fiscais RICMS ICMS_LEIS IPVA ITCD"
   },
   {
     "title": "Paraná: ICMS e beneficios fiscais",
     "url": "estados/pr.html",
-    "summary": "Pagina estadual estruturada para futura publicacao por UF, com foco em ICMS, beneficios, documento e prova.",
+    "summary": "Pagina estadual com legislação de ICMS em tela, beneficios, documento e prova.",
     "tags": "PR Parana Paraná ICMS beneficios fiscais RICMS DECRETOS IPVA ITCD LEIS OUTROS RESOLUCOES RESOLUCOES_PARTE2 RICMS"
   },
   {
     "title": "Pernambuco: ICMS e beneficios fiscais",
     "url": "estados/pe.html",
-    "summary": "Pagina estadual estruturada para futura publicacao por UF, com foco em ICMS, beneficios, documento e prova.",
+    "summary": "Pagina estadual com legislação de ICMS em tela, beneficios, documento e prova.",
     "tags": "PE Pernambuco Pernambuco ICMS beneficios fiscais RICMS ICMS_ALIQUOTAS ICMS_LEIS ICMS_ST IPVA ITCD LEIS OUTROS RICMS"
   },
   {
     "title": "Piauí: ICMS e beneficios fiscais",
     "url": "estados/pi.html",
-    "summary": "Pagina estadual estruturada para futura publicacao por UF, com foco em ICMS, beneficios, documento e prova.",
+    "summary": "Pagina estadual com legislação de ICMS em tela, beneficios, documento e prova.",
     "tags": "PI Piaui Piauí ICMS beneficios fiscais RICMS DECRETOS ICMS_ANEXOS ICMS_LEIS IPVA ITCD PORTARIAS RICMS"
   },
   {
     "title": "Rio de Janeiro: ICMS e beneficios fiscais",
     "url": "estados/rj.html",
-    "summary": "Pagina estadual estruturada para futura publicacao por UF, com foco em ICMS, beneficios, documento e prova.",
+    "summary": "Pagina estadual com legislação de ICMS em tela, beneficios, documento e prova.",
     "tags": "RJ Rio de Janeiro Rio de Janeiro ICMS beneficios fiscais RICMS DECRETOS RESOLUCOES RICMS"
   },
   {
     "title": "Rio Grande do Norte: ICMS e beneficios fiscais",
     "url": "estados/rn.html",
-    "summary": "Pagina estadual estruturada para futura publicacao por UF, com foco em ICMS, beneficios, documento e prova.",
-    "tags": "RN Rio Grande do Norte Rio Grande do Norte ICMS beneficios fiscais RICMS ICMS_LEIS"
+    "summary": "Pagina estadual com legislação de ICMS em tela, beneficios, documento e prova.",
+    "tags": "RN Rio Grande do Norte Rio Grande do Norte ICMS beneficios fiscais RICMS DECRETOS ICMS_LEIS IPVA ITCMD LEIS RICMS"
   },
   {
     "title": "Rio Grande do Sul: ICMS e beneficios fiscais",
     "url": "estados/rs.html",
-    "summary": "Pagina estadual estruturada para futura publicacao por UF, com foco em ICMS, beneficios, documento e prova.",
+    "summary": "Pagina estadual com legislação de ICMS em tela, beneficios, documento e prova.",
     "tags": "RS Rio Grande do Sul Rio Grande do Sul ICMS beneficios fiscais RICMS DECRETOS IPVA OUTROS RICMS"
   },
   {
     "title": "Rondônia: ICMS e beneficios fiscais",
     "url": "estados/ro.html",
-    "summary": "Pagina estadual estruturada para futura publicacao por UF, com foco em ICMS, beneficios, documento e prova.",
+    "summary": "Pagina estadual com legislação de ICMS em tela, beneficios, documento e prova.",
     "tags": "RO Rondonia Rondônia ICMS beneficios fiscais RICMS ICMS_BENEFICIOS ICMS_LEIS IPVA ITCD RICMS"
   },
   {
     "title": "Roraima: ICMS e beneficios fiscais",
     "url": "estados/rr.html",
-    "summary": "Pagina estadual estruturada para futura publicacao por UF, com foco em ICMS, beneficios, documento e prova.",
+    "summary": "Pagina estadual com legislação de ICMS em tela, beneficios, documento e prova.",
     "tags": "RR Roraima Roraima ICMS beneficios fiscais RICMS DECRETOS ICMS_ANEXOS ICMS_BENEFICIOS ICMS_LEIS IPVA ITCD LEIS OUTROS PORTARIAS RICMS"
   },
   {
     "title": "Santa Catarina: ICMS e beneficios fiscais",
     "url": "estados/sc.html",
-    "summary": "Pagina estadual estruturada para futura publicacao por UF, com foco em ICMS, beneficios, documento e prova.",
+    "summary": "Pagina estadual com legislação de ICMS em tela, beneficios, documento e prova.",
     "tags": "SC Santa Catarina Santa Catarina ICMS beneficios fiscais RICMS DECRETOS ICMS_LEIS IPVA ITCD LEIS RICMS"
   },
   {
     "title": "São Paulo: ICMS e beneficios fiscais",
     "url": "estados/sp.html",
-    "summary": "Pagina estadual estruturada para futura publicacao por UF, com foco em ICMS, beneficios, documento e prova.",
+    "summary": "Pagina estadual com legislação de ICMS em tela, beneficios, documento e prova.",
     "tags": "SP Sao Paulo São Paulo ICMS beneficios fiscais RICMS DECRETOS ICMS_LEIS ICMS_ST RICMS"
   },
   {
     "title": "Sergipe: ICMS e beneficios fiscais",
     "url": "estados/se.html",
-    "summary": "Pagina estadual estruturada para futura publicacao por UF, com foco em ICMS, beneficios, documento e prova.",
+    "summary": "Pagina estadual com legislação de ICMS em tela, beneficios, documento e prova.",
     "tags": "SE Sergipe Sergipe ICMS beneficios fiscais RICMS DECRETOS ICMS_LEIS LEIS OUTROS PORTARIAS RICMS"
   },
   {
     "title": "Tocantins: ICMS e beneficios fiscais",
     "url": "estados/to.html",
-    "summary": "Pagina estadual estruturada para futura publicacao por UF, com foco em ICMS, beneficios, documento e prova.",
+    "summary": "Pagina estadual com legislação de ICMS em tela, beneficios, documento e prova.",
     "tags": "TO Tocantins Tocantins ICMS beneficios fiscais RICMS DECRETOS ICMS_ANEXOS ITCD LEIS PORTARIAS RICMS"
   },
   {
@@ -826,6 +826,942 @@ window.RJC_SEARCH = [
     "url": "federal/legislacao/atos/decreto-8373-2014-esocial.html",
     "summary": "Institui o Sistema de Escrituracao Digital das Obrigacoes Fiscais, Previdenciarias e Trabalhistas.",
     "tags": "decreto-8373-2014-esocial Federal Decreto do eSocial"
+  },
+  {
+    "title": "Acre: legislação de ICMS em tela",
+    "url": "estados/ac/legislacao/index.html",
+    "summary": "RICMS, leis, anexos, benefícios fiscais, alíquotas, ST e prova documental de Acre.",
+    "tags": "AC Acre ICMS RICMS benefícios fiscais alíquotas ST"
+  },
+  {
+    "title": "Acre: ICMS completo",
+    "url": "estados/ac/legislacao/icms.html",
+    "summary": "RICMS, leis materiais, decretos e anexos que formam a base de incidência, apuração e documentação do ICMS estadual.",
+    "tags": "AC Acre ICMS completo ICMS benefícios fiscais"
+  },
+  {
+    "title": "Acre: Benefícios fiscais de ICMS",
+    "url": "estados/ac/legislacao/beneficios-fiscais.html",
+    "summary": "Isenção, redução de base, crédito presumido/outorgado, diferimento, suspensão, fundos, regimes especiais e condicionantes.",
+    "tags": "AC Acre Benefícios fiscais de ICMS ICMS benefícios fiscais"
+  },
+  {
+    "title": "Acre: Alíquotas e base de cálculo",
+    "url": "estados/ac/legislacao/aliquotas.html",
+    "summary": "Alíquota interna, interestadual, carga efetiva, redução de base, fundo estadual e formação da base de cálculo.",
+    "tags": "AC Acre Alíquotas e base de cálculo ICMS benefícios fiscais"
+  },
+  {
+    "title": "Acre: Substituição tributária",
+    "url": "estados/ac/legislacao/substituicao-tributaria.html",
+    "summary": "Responsável, substituído, MVA, pauta, protocolos, convênios, recolhimento e documento fiscal em operações sujeitas a ST.",
+    "tags": "AC Acre Substituição tributária ICMS benefícios fiscais"
+  },
+  {
+    "title": "Acre: Documentos, SPED e prova",
+    "url": "estados/ac/legislacao/documentos-prova.html",
+    "summary": "NF-e, CT-e, EFD, escrituração, cBenef quando aplicável, obrigações acessórias, comprovantes e memória de cálculo.",
+    "tags": "AC Acre Documentos, SPED e prova ICMS benefícios fiscais"
+  },
+  {
+    "title": "Alagoas: legislação de ICMS em tela",
+    "url": "estados/al/legislacao/index.html",
+    "summary": "RICMS, leis, anexos, benefícios fiscais, alíquotas, ST e prova documental de Alagoas.",
+    "tags": "AL Alagoas ICMS RICMS benefícios fiscais alíquotas ST"
+  },
+  {
+    "title": "Alagoas: ICMS completo",
+    "url": "estados/al/legislacao/icms.html",
+    "summary": "RICMS, leis materiais, decretos e anexos que formam a base de incidência, apuração e documentação do ICMS estadual.",
+    "tags": "AL Alagoas ICMS completo ICMS benefícios fiscais"
+  },
+  {
+    "title": "Alagoas: Benefícios fiscais de ICMS",
+    "url": "estados/al/legislacao/beneficios-fiscais.html",
+    "summary": "Isenção, redução de base, crédito presumido/outorgado, diferimento, suspensão, fundos, regimes especiais e condicionantes.",
+    "tags": "AL Alagoas Benefícios fiscais de ICMS ICMS benefícios fiscais"
+  },
+  {
+    "title": "Alagoas: Alíquotas e base de cálculo",
+    "url": "estados/al/legislacao/aliquotas.html",
+    "summary": "Alíquota interna, interestadual, carga efetiva, redução de base, fundo estadual e formação da base de cálculo.",
+    "tags": "AL Alagoas Alíquotas e base de cálculo ICMS benefícios fiscais"
+  },
+  {
+    "title": "Alagoas: Substituição tributária",
+    "url": "estados/al/legislacao/substituicao-tributaria.html",
+    "summary": "Responsável, substituído, MVA, pauta, protocolos, convênios, recolhimento e documento fiscal em operações sujeitas a ST.",
+    "tags": "AL Alagoas Substituição tributária ICMS benefícios fiscais"
+  },
+  {
+    "title": "Alagoas: Documentos, SPED e prova",
+    "url": "estados/al/legislacao/documentos-prova.html",
+    "summary": "NF-e, CT-e, EFD, escrituração, cBenef quando aplicável, obrigações acessórias, comprovantes e memória de cálculo.",
+    "tags": "AL Alagoas Documentos, SPED e prova ICMS benefícios fiscais"
+  },
+  {
+    "title": "Amapá: legislação de ICMS em tela",
+    "url": "estados/ap/legislacao/index.html",
+    "summary": "RICMS, leis, anexos, benefícios fiscais, alíquotas, ST e prova documental de Amapá.",
+    "tags": "AP Amapá ICMS RICMS benefícios fiscais alíquotas ST"
+  },
+  {
+    "title": "Amapá: ICMS completo",
+    "url": "estados/ap/legislacao/icms.html",
+    "summary": "RICMS, leis materiais, decretos e anexos que formam a base de incidência, apuração e documentação do ICMS estadual.",
+    "tags": "AP Amapá ICMS completo ICMS benefícios fiscais"
+  },
+  {
+    "title": "Amapá: Benefícios fiscais de ICMS",
+    "url": "estados/ap/legislacao/beneficios-fiscais.html",
+    "summary": "Isenção, redução de base, crédito presumido/outorgado, diferimento, suspensão, fundos, regimes especiais e condicionantes.",
+    "tags": "AP Amapá Benefícios fiscais de ICMS ICMS benefícios fiscais"
+  },
+  {
+    "title": "Amapá: Alíquotas e base de cálculo",
+    "url": "estados/ap/legislacao/aliquotas.html",
+    "summary": "Alíquota interna, interestadual, carga efetiva, redução de base, fundo estadual e formação da base de cálculo.",
+    "tags": "AP Amapá Alíquotas e base de cálculo ICMS benefícios fiscais"
+  },
+  {
+    "title": "Amapá: Substituição tributária",
+    "url": "estados/ap/legislacao/substituicao-tributaria.html",
+    "summary": "Responsável, substituído, MVA, pauta, protocolos, convênios, recolhimento e documento fiscal em operações sujeitas a ST.",
+    "tags": "AP Amapá Substituição tributária ICMS benefícios fiscais"
+  },
+  {
+    "title": "Amapá: Documentos, SPED e prova",
+    "url": "estados/ap/legislacao/documentos-prova.html",
+    "summary": "NF-e, CT-e, EFD, escrituração, cBenef quando aplicável, obrigações acessórias, comprovantes e memória de cálculo.",
+    "tags": "AP Amapá Documentos, SPED e prova ICMS benefícios fiscais"
+  },
+  {
+    "title": "Amazonas: legislação de ICMS em tela",
+    "url": "estados/am/legislacao/index.html",
+    "summary": "RICMS, leis, anexos, benefícios fiscais, alíquotas, ST e prova documental de Amazonas.",
+    "tags": "AM Amazonas ICMS RICMS benefícios fiscais alíquotas ST"
+  },
+  {
+    "title": "Amazonas: ICMS completo",
+    "url": "estados/am/legislacao/icms.html",
+    "summary": "RICMS, leis materiais, decretos e anexos que formam a base de incidência, apuração e documentação do ICMS estadual.",
+    "tags": "AM Amazonas ICMS completo ICMS benefícios fiscais"
+  },
+  {
+    "title": "Amazonas: Benefícios fiscais de ICMS",
+    "url": "estados/am/legislacao/beneficios-fiscais.html",
+    "summary": "Isenção, redução de base, crédito presumido/outorgado, diferimento, suspensão, fundos, regimes especiais e condicionantes.",
+    "tags": "AM Amazonas Benefícios fiscais de ICMS ICMS benefícios fiscais"
+  },
+  {
+    "title": "Amazonas: Alíquotas e base de cálculo",
+    "url": "estados/am/legislacao/aliquotas.html",
+    "summary": "Alíquota interna, interestadual, carga efetiva, redução de base, fundo estadual e formação da base de cálculo.",
+    "tags": "AM Amazonas Alíquotas e base de cálculo ICMS benefícios fiscais"
+  },
+  {
+    "title": "Amazonas: Substituição tributária",
+    "url": "estados/am/legislacao/substituicao-tributaria.html",
+    "summary": "Responsável, substituído, MVA, pauta, protocolos, convênios, recolhimento e documento fiscal em operações sujeitas a ST.",
+    "tags": "AM Amazonas Substituição tributária ICMS benefícios fiscais"
+  },
+  {
+    "title": "Amazonas: Documentos, SPED e prova",
+    "url": "estados/am/legislacao/documentos-prova.html",
+    "summary": "NF-e, CT-e, EFD, escrituração, cBenef quando aplicável, obrigações acessórias, comprovantes e memória de cálculo.",
+    "tags": "AM Amazonas Documentos, SPED e prova ICMS benefícios fiscais"
+  },
+  {
+    "title": "Bahia: legislação de ICMS em tela",
+    "url": "estados/ba/legislacao/index.html",
+    "summary": "RICMS, leis, anexos, benefícios fiscais, alíquotas, ST e prova documental de Bahia.",
+    "tags": "BA Bahia ICMS RICMS benefícios fiscais alíquotas ST"
+  },
+  {
+    "title": "Bahia: ICMS completo",
+    "url": "estados/ba/legislacao/icms.html",
+    "summary": "RICMS, leis materiais, decretos e anexos que formam a base de incidência, apuração e documentação do ICMS estadual.",
+    "tags": "BA Bahia ICMS completo ICMS benefícios fiscais"
+  },
+  {
+    "title": "Bahia: Benefícios fiscais de ICMS",
+    "url": "estados/ba/legislacao/beneficios-fiscais.html",
+    "summary": "Isenção, redução de base, crédito presumido/outorgado, diferimento, suspensão, fundos, regimes especiais e condicionantes.",
+    "tags": "BA Bahia Benefícios fiscais de ICMS ICMS benefícios fiscais"
+  },
+  {
+    "title": "Bahia: Alíquotas e base de cálculo",
+    "url": "estados/ba/legislacao/aliquotas.html",
+    "summary": "Alíquota interna, interestadual, carga efetiva, redução de base, fundo estadual e formação da base de cálculo.",
+    "tags": "BA Bahia Alíquotas e base de cálculo ICMS benefícios fiscais"
+  },
+  {
+    "title": "Bahia: Substituição tributária",
+    "url": "estados/ba/legislacao/substituicao-tributaria.html",
+    "summary": "Responsável, substituído, MVA, pauta, protocolos, convênios, recolhimento e documento fiscal em operações sujeitas a ST.",
+    "tags": "BA Bahia Substituição tributária ICMS benefícios fiscais"
+  },
+  {
+    "title": "Bahia: Documentos, SPED e prova",
+    "url": "estados/ba/legislacao/documentos-prova.html",
+    "summary": "NF-e, CT-e, EFD, escrituração, cBenef quando aplicável, obrigações acessórias, comprovantes e memória de cálculo.",
+    "tags": "BA Bahia Documentos, SPED e prova ICMS benefícios fiscais"
+  },
+  {
+    "title": "Ceará: legislação de ICMS em tela",
+    "url": "estados/ce/legislacao/index.html",
+    "summary": "RICMS, leis, anexos, benefícios fiscais, alíquotas, ST e prova documental de Ceará.",
+    "tags": "CE Ceará ICMS RICMS benefícios fiscais alíquotas ST"
+  },
+  {
+    "title": "Ceará: ICMS completo",
+    "url": "estados/ce/legislacao/icms.html",
+    "summary": "RICMS, leis materiais, decretos e anexos que formam a base de incidência, apuração e documentação do ICMS estadual.",
+    "tags": "CE Ceará ICMS completo ICMS benefícios fiscais"
+  },
+  {
+    "title": "Ceará: Benefícios fiscais de ICMS",
+    "url": "estados/ce/legislacao/beneficios-fiscais.html",
+    "summary": "Isenção, redução de base, crédito presumido/outorgado, diferimento, suspensão, fundos, regimes especiais e condicionantes.",
+    "tags": "CE Ceará Benefícios fiscais de ICMS ICMS benefícios fiscais"
+  },
+  {
+    "title": "Ceará: Alíquotas e base de cálculo",
+    "url": "estados/ce/legislacao/aliquotas.html",
+    "summary": "Alíquota interna, interestadual, carga efetiva, redução de base, fundo estadual e formação da base de cálculo.",
+    "tags": "CE Ceará Alíquotas e base de cálculo ICMS benefícios fiscais"
+  },
+  {
+    "title": "Ceará: Substituição tributária",
+    "url": "estados/ce/legislacao/substituicao-tributaria.html",
+    "summary": "Responsável, substituído, MVA, pauta, protocolos, convênios, recolhimento e documento fiscal em operações sujeitas a ST.",
+    "tags": "CE Ceará Substituição tributária ICMS benefícios fiscais"
+  },
+  {
+    "title": "Ceará: Documentos, SPED e prova",
+    "url": "estados/ce/legislacao/documentos-prova.html",
+    "summary": "NF-e, CT-e, EFD, escrituração, cBenef quando aplicável, obrigações acessórias, comprovantes e memória de cálculo.",
+    "tags": "CE Ceará Documentos, SPED e prova ICMS benefícios fiscais"
+  },
+  {
+    "title": "Distrito Federal: legislação de ICMS em tela",
+    "url": "estados/df/legislacao/index.html",
+    "summary": "RICMS, leis, anexos, benefícios fiscais, alíquotas, ST e prova documental de Distrito Federal.",
+    "tags": "DF Distrito Federal ICMS RICMS benefícios fiscais alíquotas ST"
+  },
+  {
+    "title": "Distrito Federal: ICMS completo",
+    "url": "estados/df/legislacao/icms.html",
+    "summary": "RICMS, leis materiais, decretos e anexos que formam a base de incidência, apuração e documentação do ICMS estadual.",
+    "tags": "DF Distrito Federal ICMS completo ICMS benefícios fiscais"
+  },
+  {
+    "title": "Distrito Federal: Benefícios fiscais de ICMS",
+    "url": "estados/df/legislacao/beneficios-fiscais.html",
+    "summary": "Isenção, redução de base, crédito presumido/outorgado, diferimento, suspensão, fundos, regimes especiais e condicionantes.",
+    "tags": "DF Distrito Federal Benefícios fiscais de ICMS ICMS benefícios fiscais"
+  },
+  {
+    "title": "Distrito Federal: Alíquotas e base de cálculo",
+    "url": "estados/df/legislacao/aliquotas.html",
+    "summary": "Alíquota interna, interestadual, carga efetiva, redução de base, fundo estadual e formação da base de cálculo.",
+    "tags": "DF Distrito Federal Alíquotas e base de cálculo ICMS benefícios fiscais"
+  },
+  {
+    "title": "Distrito Federal: Substituição tributária",
+    "url": "estados/df/legislacao/substituicao-tributaria.html",
+    "summary": "Responsável, substituído, MVA, pauta, protocolos, convênios, recolhimento e documento fiscal em operações sujeitas a ST.",
+    "tags": "DF Distrito Federal Substituição tributária ICMS benefícios fiscais"
+  },
+  {
+    "title": "Distrito Federal: Documentos, SPED e prova",
+    "url": "estados/df/legislacao/documentos-prova.html",
+    "summary": "NF-e, CT-e, EFD, escrituração, cBenef quando aplicável, obrigações acessórias, comprovantes e memória de cálculo.",
+    "tags": "DF Distrito Federal Documentos, SPED e prova ICMS benefícios fiscais"
+  },
+  {
+    "title": "Espírito Santo: legislação de ICMS em tela",
+    "url": "estados/es/legislacao/index.html",
+    "summary": "RICMS, leis, anexos, benefícios fiscais, alíquotas, ST e prova documental de Espírito Santo.",
+    "tags": "ES Espírito Santo ICMS RICMS benefícios fiscais alíquotas ST"
+  },
+  {
+    "title": "Espírito Santo: ICMS completo",
+    "url": "estados/es/legislacao/icms.html",
+    "summary": "RICMS, leis materiais, decretos e anexos que formam a base de incidência, apuração e documentação do ICMS estadual.",
+    "tags": "ES Espírito Santo ICMS completo ICMS benefícios fiscais"
+  },
+  {
+    "title": "Espírito Santo: Benefícios fiscais de ICMS",
+    "url": "estados/es/legislacao/beneficios-fiscais.html",
+    "summary": "Isenção, redução de base, crédito presumido/outorgado, diferimento, suspensão, fundos, regimes especiais e condicionantes.",
+    "tags": "ES Espírito Santo Benefícios fiscais de ICMS ICMS benefícios fiscais"
+  },
+  {
+    "title": "Espírito Santo: Alíquotas e base de cálculo",
+    "url": "estados/es/legislacao/aliquotas.html",
+    "summary": "Alíquota interna, interestadual, carga efetiva, redução de base, fundo estadual e formação da base de cálculo.",
+    "tags": "ES Espírito Santo Alíquotas e base de cálculo ICMS benefícios fiscais"
+  },
+  {
+    "title": "Espírito Santo: Substituição tributária",
+    "url": "estados/es/legislacao/substituicao-tributaria.html",
+    "summary": "Responsável, substituído, MVA, pauta, protocolos, convênios, recolhimento e documento fiscal em operações sujeitas a ST.",
+    "tags": "ES Espírito Santo Substituição tributária ICMS benefícios fiscais"
+  },
+  {
+    "title": "Espírito Santo: Documentos, SPED e prova",
+    "url": "estados/es/legislacao/documentos-prova.html",
+    "summary": "NF-e, CT-e, EFD, escrituração, cBenef quando aplicável, obrigações acessórias, comprovantes e memória de cálculo.",
+    "tags": "ES Espírito Santo Documentos, SPED e prova ICMS benefícios fiscais"
+  },
+  {
+    "title": "Maranhão: legislação de ICMS em tela",
+    "url": "estados/ma/legislacao/index.html",
+    "summary": "RICMS, leis, anexos, benefícios fiscais, alíquotas, ST e prova documental de Maranhão.",
+    "tags": "MA Maranhão ICMS RICMS benefícios fiscais alíquotas ST"
+  },
+  {
+    "title": "Maranhão: ICMS completo",
+    "url": "estados/ma/legislacao/icms.html",
+    "summary": "RICMS, leis materiais, decretos e anexos que formam a base de incidência, apuração e documentação do ICMS estadual.",
+    "tags": "MA Maranhão ICMS completo ICMS benefícios fiscais"
+  },
+  {
+    "title": "Maranhão: Benefícios fiscais de ICMS",
+    "url": "estados/ma/legislacao/beneficios-fiscais.html",
+    "summary": "Isenção, redução de base, crédito presumido/outorgado, diferimento, suspensão, fundos, regimes especiais e condicionantes.",
+    "tags": "MA Maranhão Benefícios fiscais de ICMS ICMS benefícios fiscais"
+  },
+  {
+    "title": "Maranhão: Alíquotas e base de cálculo",
+    "url": "estados/ma/legislacao/aliquotas.html",
+    "summary": "Alíquota interna, interestadual, carga efetiva, redução de base, fundo estadual e formação da base de cálculo.",
+    "tags": "MA Maranhão Alíquotas e base de cálculo ICMS benefícios fiscais"
+  },
+  {
+    "title": "Maranhão: Substituição tributária",
+    "url": "estados/ma/legislacao/substituicao-tributaria.html",
+    "summary": "Responsável, substituído, MVA, pauta, protocolos, convênios, recolhimento e documento fiscal em operações sujeitas a ST.",
+    "tags": "MA Maranhão Substituição tributária ICMS benefícios fiscais"
+  },
+  {
+    "title": "Maranhão: Documentos, SPED e prova",
+    "url": "estados/ma/legislacao/documentos-prova.html",
+    "summary": "NF-e, CT-e, EFD, escrituração, cBenef quando aplicável, obrigações acessórias, comprovantes e memória de cálculo.",
+    "tags": "MA Maranhão Documentos, SPED e prova ICMS benefícios fiscais"
+  },
+  {
+    "title": "Mato Grosso: legislação de ICMS em tela",
+    "url": "estados/mt/legislacao/index.html",
+    "summary": "RICMS, leis, anexos, benefícios fiscais, alíquotas, ST e prova documental de Mato Grosso.",
+    "tags": "MT Mato Grosso ICMS RICMS benefícios fiscais alíquotas ST"
+  },
+  {
+    "title": "Mato Grosso: ICMS completo",
+    "url": "estados/mt/legislacao/icms.html",
+    "summary": "RICMS, leis materiais, decretos e anexos que formam a base de incidência, apuração e documentação do ICMS estadual.",
+    "tags": "MT Mato Grosso ICMS completo ICMS benefícios fiscais"
+  },
+  {
+    "title": "Mato Grosso: Benefícios fiscais de ICMS",
+    "url": "estados/mt/legislacao/beneficios-fiscais.html",
+    "summary": "Isenção, redução de base, crédito presumido/outorgado, diferimento, suspensão, fundos, regimes especiais e condicionantes.",
+    "tags": "MT Mato Grosso Benefícios fiscais de ICMS ICMS benefícios fiscais"
+  },
+  {
+    "title": "Mato Grosso: Alíquotas e base de cálculo",
+    "url": "estados/mt/legislacao/aliquotas.html",
+    "summary": "Alíquota interna, interestadual, carga efetiva, redução de base, fundo estadual e formação da base de cálculo.",
+    "tags": "MT Mato Grosso Alíquotas e base de cálculo ICMS benefícios fiscais"
+  },
+  {
+    "title": "Mato Grosso: Substituição tributária",
+    "url": "estados/mt/legislacao/substituicao-tributaria.html",
+    "summary": "Responsável, substituído, MVA, pauta, protocolos, convênios, recolhimento e documento fiscal em operações sujeitas a ST.",
+    "tags": "MT Mato Grosso Substituição tributária ICMS benefícios fiscais"
+  },
+  {
+    "title": "Mato Grosso: Documentos, SPED e prova",
+    "url": "estados/mt/legislacao/documentos-prova.html",
+    "summary": "NF-e, CT-e, EFD, escrituração, cBenef quando aplicável, obrigações acessórias, comprovantes e memória de cálculo.",
+    "tags": "MT Mato Grosso Documentos, SPED e prova ICMS benefícios fiscais"
+  },
+  {
+    "title": "Mato Grosso do Sul: legislação de ICMS em tela",
+    "url": "estados/ms/legislacao/index.html",
+    "summary": "RICMS, leis, anexos, benefícios fiscais, alíquotas, ST e prova documental de Mato Grosso do Sul.",
+    "tags": "MS Mato Grosso do Sul ICMS RICMS benefícios fiscais alíquotas ST"
+  },
+  {
+    "title": "Mato Grosso do Sul: ICMS completo",
+    "url": "estados/ms/legislacao/icms.html",
+    "summary": "RICMS, leis materiais, decretos e anexos que formam a base de incidência, apuração e documentação do ICMS estadual.",
+    "tags": "MS Mato Grosso do Sul ICMS completo ICMS benefícios fiscais"
+  },
+  {
+    "title": "Mato Grosso do Sul: Benefícios fiscais de ICMS",
+    "url": "estados/ms/legislacao/beneficios-fiscais.html",
+    "summary": "Isenção, redução de base, crédito presumido/outorgado, diferimento, suspensão, fundos, regimes especiais e condicionantes.",
+    "tags": "MS Mato Grosso do Sul Benefícios fiscais de ICMS ICMS benefícios fiscais"
+  },
+  {
+    "title": "Mato Grosso do Sul: Alíquotas e base de cálculo",
+    "url": "estados/ms/legislacao/aliquotas.html",
+    "summary": "Alíquota interna, interestadual, carga efetiva, redução de base, fundo estadual e formação da base de cálculo.",
+    "tags": "MS Mato Grosso do Sul Alíquotas e base de cálculo ICMS benefícios fiscais"
+  },
+  {
+    "title": "Mato Grosso do Sul: Substituição tributária",
+    "url": "estados/ms/legislacao/substituicao-tributaria.html",
+    "summary": "Responsável, substituído, MVA, pauta, protocolos, convênios, recolhimento e documento fiscal em operações sujeitas a ST.",
+    "tags": "MS Mato Grosso do Sul Substituição tributária ICMS benefícios fiscais"
+  },
+  {
+    "title": "Mato Grosso do Sul: Documentos, SPED e prova",
+    "url": "estados/ms/legislacao/documentos-prova.html",
+    "summary": "NF-e, CT-e, EFD, escrituração, cBenef quando aplicável, obrigações acessórias, comprovantes e memória de cálculo.",
+    "tags": "MS Mato Grosso do Sul Documentos, SPED e prova ICMS benefícios fiscais"
+  },
+  {
+    "title": "Minas Gerais: legislação de ICMS em tela",
+    "url": "estados/mg/legislacao/index.html",
+    "summary": "RICMS, leis, anexos, benefícios fiscais, alíquotas, ST e prova documental de Minas Gerais.",
+    "tags": "MG Minas Gerais ICMS RICMS benefícios fiscais alíquotas ST"
+  },
+  {
+    "title": "Minas Gerais: ICMS completo",
+    "url": "estados/mg/legislacao/icms.html",
+    "summary": "RICMS, leis materiais, decretos e anexos que formam a base de incidência, apuração e documentação do ICMS estadual.",
+    "tags": "MG Minas Gerais ICMS completo ICMS benefícios fiscais"
+  },
+  {
+    "title": "Minas Gerais: Benefícios fiscais de ICMS",
+    "url": "estados/mg/legislacao/beneficios-fiscais.html",
+    "summary": "Isenção, redução de base, crédito presumido/outorgado, diferimento, suspensão, fundos, regimes especiais e condicionantes.",
+    "tags": "MG Minas Gerais Benefícios fiscais de ICMS ICMS benefícios fiscais"
+  },
+  {
+    "title": "Minas Gerais: Alíquotas e base de cálculo",
+    "url": "estados/mg/legislacao/aliquotas.html",
+    "summary": "Alíquota interna, interestadual, carga efetiva, redução de base, fundo estadual e formação da base de cálculo.",
+    "tags": "MG Minas Gerais Alíquotas e base de cálculo ICMS benefícios fiscais"
+  },
+  {
+    "title": "Minas Gerais: Substituição tributária",
+    "url": "estados/mg/legislacao/substituicao-tributaria.html",
+    "summary": "Responsável, substituído, MVA, pauta, protocolos, convênios, recolhimento e documento fiscal em operações sujeitas a ST.",
+    "tags": "MG Minas Gerais Substituição tributária ICMS benefícios fiscais"
+  },
+  {
+    "title": "Minas Gerais: Documentos, SPED e prova",
+    "url": "estados/mg/legislacao/documentos-prova.html",
+    "summary": "NF-e, CT-e, EFD, escrituração, cBenef quando aplicável, obrigações acessórias, comprovantes e memória de cálculo.",
+    "tags": "MG Minas Gerais Documentos, SPED e prova ICMS benefícios fiscais"
+  },
+  {
+    "title": "Pará: legislação de ICMS em tela",
+    "url": "estados/pa/legislacao/index.html",
+    "summary": "RICMS, leis, anexos, benefícios fiscais, alíquotas, ST e prova documental de Pará.",
+    "tags": "PA Pará ICMS RICMS benefícios fiscais alíquotas ST"
+  },
+  {
+    "title": "Pará: ICMS completo",
+    "url": "estados/pa/legislacao/icms.html",
+    "summary": "RICMS, leis materiais, decretos e anexos que formam a base de incidência, apuração e documentação do ICMS estadual.",
+    "tags": "PA Pará ICMS completo ICMS benefícios fiscais"
+  },
+  {
+    "title": "Pará: Benefícios fiscais de ICMS",
+    "url": "estados/pa/legislacao/beneficios-fiscais.html",
+    "summary": "Isenção, redução de base, crédito presumido/outorgado, diferimento, suspensão, fundos, regimes especiais e condicionantes.",
+    "tags": "PA Pará Benefícios fiscais de ICMS ICMS benefícios fiscais"
+  },
+  {
+    "title": "Pará: Alíquotas e base de cálculo",
+    "url": "estados/pa/legislacao/aliquotas.html",
+    "summary": "Alíquota interna, interestadual, carga efetiva, redução de base, fundo estadual e formação da base de cálculo.",
+    "tags": "PA Pará Alíquotas e base de cálculo ICMS benefícios fiscais"
+  },
+  {
+    "title": "Pará: Substituição tributária",
+    "url": "estados/pa/legislacao/substituicao-tributaria.html",
+    "summary": "Responsável, substituído, MVA, pauta, protocolos, convênios, recolhimento e documento fiscal em operações sujeitas a ST.",
+    "tags": "PA Pará Substituição tributária ICMS benefícios fiscais"
+  },
+  {
+    "title": "Pará: Documentos, SPED e prova",
+    "url": "estados/pa/legislacao/documentos-prova.html",
+    "summary": "NF-e, CT-e, EFD, escrituração, cBenef quando aplicável, obrigações acessórias, comprovantes e memória de cálculo.",
+    "tags": "PA Pará Documentos, SPED e prova ICMS benefícios fiscais"
+  },
+  {
+    "title": "Paraíba: legislação de ICMS em tela",
+    "url": "estados/pb/legislacao/index.html",
+    "summary": "RICMS, leis, anexos, benefícios fiscais, alíquotas, ST e prova documental de Paraíba.",
+    "tags": "PB Paraíba ICMS RICMS benefícios fiscais alíquotas ST"
+  },
+  {
+    "title": "Paraíba: ICMS completo",
+    "url": "estados/pb/legislacao/icms.html",
+    "summary": "RICMS, leis materiais, decretos e anexos que formam a base de incidência, apuração e documentação do ICMS estadual.",
+    "tags": "PB Paraíba ICMS completo ICMS benefícios fiscais"
+  },
+  {
+    "title": "Paraíba: Benefícios fiscais de ICMS",
+    "url": "estados/pb/legislacao/beneficios-fiscais.html",
+    "summary": "Isenção, redução de base, crédito presumido/outorgado, diferimento, suspensão, fundos, regimes especiais e condicionantes.",
+    "tags": "PB Paraíba Benefícios fiscais de ICMS ICMS benefícios fiscais"
+  },
+  {
+    "title": "Paraíba: Alíquotas e base de cálculo",
+    "url": "estados/pb/legislacao/aliquotas.html",
+    "summary": "Alíquota interna, interestadual, carga efetiva, redução de base, fundo estadual e formação da base de cálculo.",
+    "tags": "PB Paraíba Alíquotas e base de cálculo ICMS benefícios fiscais"
+  },
+  {
+    "title": "Paraíba: Substituição tributária",
+    "url": "estados/pb/legislacao/substituicao-tributaria.html",
+    "summary": "Responsável, substituído, MVA, pauta, protocolos, convênios, recolhimento e documento fiscal em operações sujeitas a ST.",
+    "tags": "PB Paraíba Substituição tributária ICMS benefícios fiscais"
+  },
+  {
+    "title": "Paraíba: Documentos, SPED e prova",
+    "url": "estados/pb/legislacao/documentos-prova.html",
+    "summary": "NF-e, CT-e, EFD, escrituração, cBenef quando aplicável, obrigações acessórias, comprovantes e memória de cálculo.",
+    "tags": "PB Paraíba Documentos, SPED e prova ICMS benefícios fiscais"
+  },
+  {
+    "title": "Paraná: legislação de ICMS em tela",
+    "url": "estados/pr/legislacao/index.html",
+    "summary": "RICMS, leis, anexos, benefícios fiscais, alíquotas, ST e prova documental de Paraná.",
+    "tags": "PR Paraná ICMS RICMS benefícios fiscais alíquotas ST"
+  },
+  {
+    "title": "Paraná: ICMS completo",
+    "url": "estados/pr/legislacao/icms.html",
+    "summary": "RICMS, leis materiais, decretos e anexos que formam a base de incidência, apuração e documentação do ICMS estadual.",
+    "tags": "PR Paraná ICMS completo ICMS benefícios fiscais"
+  },
+  {
+    "title": "Paraná: Benefícios fiscais de ICMS",
+    "url": "estados/pr/legislacao/beneficios-fiscais.html",
+    "summary": "Isenção, redução de base, crédito presumido/outorgado, diferimento, suspensão, fundos, regimes especiais e condicionantes.",
+    "tags": "PR Paraná Benefícios fiscais de ICMS ICMS benefícios fiscais"
+  },
+  {
+    "title": "Paraná: Alíquotas e base de cálculo",
+    "url": "estados/pr/legislacao/aliquotas.html",
+    "summary": "Alíquota interna, interestadual, carga efetiva, redução de base, fundo estadual e formação da base de cálculo.",
+    "tags": "PR Paraná Alíquotas e base de cálculo ICMS benefícios fiscais"
+  },
+  {
+    "title": "Paraná: Substituição tributária",
+    "url": "estados/pr/legislacao/substituicao-tributaria.html",
+    "summary": "Responsável, substituído, MVA, pauta, protocolos, convênios, recolhimento e documento fiscal em operações sujeitas a ST.",
+    "tags": "PR Paraná Substituição tributária ICMS benefícios fiscais"
+  },
+  {
+    "title": "Paraná: Documentos, SPED e prova",
+    "url": "estados/pr/legislacao/documentos-prova.html",
+    "summary": "NF-e, CT-e, EFD, escrituração, cBenef quando aplicável, obrigações acessórias, comprovantes e memória de cálculo.",
+    "tags": "PR Paraná Documentos, SPED e prova ICMS benefícios fiscais"
+  },
+  {
+    "title": "Pernambuco: legislação de ICMS em tela",
+    "url": "estados/pe/legislacao/index.html",
+    "summary": "RICMS, leis, anexos, benefícios fiscais, alíquotas, ST e prova documental de Pernambuco.",
+    "tags": "PE Pernambuco ICMS RICMS benefícios fiscais alíquotas ST"
+  },
+  {
+    "title": "Pernambuco: ICMS completo",
+    "url": "estados/pe/legislacao/icms.html",
+    "summary": "RICMS, leis materiais, decretos e anexos que formam a base de incidência, apuração e documentação do ICMS estadual.",
+    "tags": "PE Pernambuco ICMS completo ICMS benefícios fiscais"
+  },
+  {
+    "title": "Pernambuco: Benefícios fiscais de ICMS",
+    "url": "estados/pe/legislacao/beneficios-fiscais.html",
+    "summary": "Isenção, redução de base, crédito presumido/outorgado, diferimento, suspensão, fundos, regimes especiais e condicionantes.",
+    "tags": "PE Pernambuco Benefícios fiscais de ICMS ICMS benefícios fiscais"
+  },
+  {
+    "title": "Pernambuco: Alíquotas e base de cálculo",
+    "url": "estados/pe/legislacao/aliquotas.html",
+    "summary": "Alíquota interna, interestadual, carga efetiva, redução de base, fundo estadual e formação da base de cálculo.",
+    "tags": "PE Pernambuco Alíquotas e base de cálculo ICMS benefícios fiscais"
+  },
+  {
+    "title": "Pernambuco: Substituição tributária",
+    "url": "estados/pe/legislacao/substituicao-tributaria.html",
+    "summary": "Responsável, substituído, MVA, pauta, protocolos, convênios, recolhimento e documento fiscal em operações sujeitas a ST.",
+    "tags": "PE Pernambuco Substituição tributária ICMS benefícios fiscais"
+  },
+  {
+    "title": "Pernambuco: Documentos, SPED e prova",
+    "url": "estados/pe/legislacao/documentos-prova.html",
+    "summary": "NF-e, CT-e, EFD, escrituração, cBenef quando aplicável, obrigações acessórias, comprovantes e memória de cálculo.",
+    "tags": "PE Pernambuco Documentos, SPED e prova ICMS benefícios fiscais"
+  },
+  {
+    "title": "Piauí: legislação de ICMS em tela",
+    "url": "estados/pi/legislacao/index.html",
+    "summary": "RICMS, leis, anexos, benefícios fiscais, alíquotas, ST e prova documental de Piauí.",
+    "tags": "PI Piauí ICMS RICMS benefícios fiscais alíquotas ST"
+  },
+  {
+    "title": "Piauí: ICMS completo",
+    "url": "estados/pi/legislacao/icms.html",
+    "summary": "RICMS, leis materiais, decretos e anexos que formam a base de incidência, apuração e documentação do ICMS estadual.",
+    "tags": "PI Piauí ICMS completo ICMS benefícios fiscais"
+  },
+  {
+    "title": "Piauí: Benefícios fiscais de ICMS",
+    "url": "estados/pi/legislacao/beneficios-fiscais.html",
+    "summary": "Isenção, redução de base, crédito presumido/outorgado, diferimento, suspensão, fundos, regimes especiais e condicionantes.",
+    "tags": "PI Piauí Benefícios fiscais de ICMS ICMS benefícios fiscais"
+  },
+  {
+    "title": "Piauí: Alíquotas e base de cálculo",
+    "url": "estados/pi/legislacao/aliquotas.html",
+    "summary": "Alíquota interna, interestadual, carga efetiva, redução de base, fundo estadual e formação da base de cálculo.",
+    "tags": "PI Piauí Alíquotas e base de cálculo ICMS benefícios fiscais"
+  },
+  {
+    "title": "Piauí: Substituição tributária",
+    "url": "estados/pi/legislacao/substituicao-tributaria.html",
+    "summary": "Responsável, substituído, MVA, pauta, protocolos, convênios, recolhimento e documento fiscal em operações sujeitas a ST.",
+    "tags": "PI Piauí Substituição tributária ICMS benefícios fiscais"
+  },
+  {
+    "title": "Piauí: Documentos, SPED e prova",
+    "url": "estados/pi/legislacao/documentos-prova.html",
+    "summary": "NF-e, CT-e, EFD, escrituração, cBenef quando aplicável, obrigações acessórias, comprovantes e memória de cálculo.",
+    "tags": "PI Piauí Documentos, SPED e prova ICMS benefícios fiscais"
+  },
+  {
+    "title": "Rio de Janeiro: legislação de ICMS em tela",
+    "url": "estados/rj/legislacao/index.html",
+    "summary": "RICMS, leis, anexos, benefícios fiscais, alíquotas, ST e prova documental de Rio de Janeiro.",
+    "tags": "RJ Rio de Janeiro ICMS RICMS benefícios fiscais alíquotas ST"
+  },
+  {
+    "title": "Rio de Janeiro: ICMS completo",
+    "url": "estados/rj/legislacao/icms.html",
+    "summary": "RICMS, leis materiais, decretos e anexos que formam a base de incidência, apuração e documentação do ICMS estadual.",
+    "tags": "RJ Rio de Janeiro ICMS completo ICMS benefícios fiscais"
+  },
+  {
+    "title": "Rio de Janeiro: Benefícios fiscais de ICMS",
+    "url": "estados/rj/legislacao/beneficios-fiscais.html",
+    "summary": "Isenção, redução de base, crédito presumido/outorgado, diferimento, suspensão, fundos, regimes especiais e condicionantes.",
+    "tags": "RJ Rio de Janeiro Benefícios fiscais de ICMS ICMS benefícios fiscais"
+  },
+  {
+    "title": "Rio de Janeiro: Alíquotas e base de cálculo",
+    "url": "estados/rj/legislacao/aliquotas.html",
+    "summary": "Alíquota interna, interestadual, carga efetiva, redução de base, fundo estadual e formação da base de cálculo.",
+    "tags": "RJ Rio de Janeiro Alíquotas e base de cálculo ICMS benefícios fiscais"
+  },
+  {
+    "title": "Rio de Janeiro: Substituição tributária",
+    "url": "estados/rj/legislacao/substituicao-tributaria.html",
+    "summary": "Responsável, substituído, MVA, pauta, protocolos, convênios, recolhimento e documento fiscal em operações sujeitas a ST.",
+    "tags": "RJ Rio de Janeiro Substituição tributária ICMS benefícios fiscais"
+  },
+  {
+    "title": "Rio de Janeiro: Documentos, SPED e prova",
+    "url": "estados/rj/legislacao/documentos-prova.html",
+    "summary": "NF-e, CT-e, EFD, escrituração, cBenef quando aplicável, obrigações acessórias, comprovantes e memória de cálculo.",
+    "tags": "RJ Rio de Janeiro Documentos, SPED e prova ICMS benefícios fiscais"
+  },
+  {
+    "title": "Rio Grande do Norte: legislação de ICMS em tela",
+    "url": "estados/rn/legislacao/index.html",
+    "summary": "RICMS, leis, anexos, benefícios fiscais, alíquotas, ST e prova documental de Rio Grande do Norte.",
+    "tags": "RN Rio Grande do Norte ICMS RICMS benefícios fiscais alíquotas ST"
+  },
+  {
+    "title": "Rio Grande do Norte: ICMS completo",
+    "url": "estados/rn/legislacao/icms.html",
+    "summary": "RICMS, leis materiais, decretos e anexos que formam a base de incidência, apuração e documentação do ICMS estadual.",
+    "tags": "RN Rio Grande do Norte ICMS completo ICMS benefícios fiscais"
+  },
+  {
+    "title": "Rio Grande do Norte: Benefícios fiscais de ICMS",
+    "url": "estados/rn/legislacao/beneficios-fiscais.html",
+    "summary": "Isenção, redução de base, crédito presumido/outorgado, diferimento, suspensão, fundos, regimes especiais e condicionantes.",
+    "tags": "RN Rio Grande do Norte Benefícios fiscais de ICMS ICMS benefícios fiscais"
+  },
+  {
+    "title": "Rio Grande do Norte: Alíquotas e base de cálculo",
+    "url": "estados/rn/legislacao/aliquotas.html",
+    "summary": "Alíquota interna, interestadual, carga efetiva, redução de base, fundo estadual e formação da base de cálculo.",
+    "tags": "RN Rio Grande do Norte Alíquotas e base de cálculo ICMS benefícios fiscais"
+  },
+  {
+    "title": "Rio Grande do Norte: Substituição tributária",
+    "url": "estados/rn/legislacao/substituicao-tributaria.html",
+    "summary": "Responsável, substituído, MVA, pauta, protocolos, convênios, recolhimento e documento fiscal em operações sujeitas a ST.",
+    "tags": "RN Rio Grande do Norte Substituição tributária ICMS benefícios fiscais"
+  },
+  {
+    "title": "Rio Grande do Norte: Documentos, SPED e prova",
+    "url": "estados/rn/legislacao/documentos-prova.html",
+    "summary": "NF-e, CT-e, EFD, escrituração, cBenef quando aplicável, obrigações acessórias, comprovantes e memória de cálculo.",
+    "tags": "RN Rio Grande do Norte Documentos, SPED e prova ICMS benefícios fiscais"
+  },
+  {
+    "title": "Rio Grande do Sul: legislação de ICMS em tela",
+    "url": "estados/rs/legislacao/index.html",
+    "summary": "RICMS, leis, anexos, benefícios fiscais, alíquotas, ST e prova documental de Rio Grande do Sul.",
+    "tags": "RS Rio Grande do Sul ICMS RICMS benefícios fiscais alíquotas ST"
+  },
+  {
+    "title": "Rio Grande do Sul: ICMS completo",
+    "url": "estados/rs/legislacao/icms.html",
+    "summary": "RICMS, leis materiais, decretos e anexos que formam a base de incidência, apuração e documentação do ICMS estadual.",
+    "tags": "RS Rio Grande do Sul ICMS completo ICMS benefícios fiscais"
+  },
+  {
+    "title": "Rio Grande do Sul: Benefícios fiscais de ICMS",
+    "url": "estados/rs/legislacao/beneficios-fiscais.html",
+    "summary": "Isenção, redução de base, crédito presumido/outorgado, diferimento, suspensão, fundos, regimes especiais e condicionantes.",
+    "tags": "RS Rio Grande do Sul Benefícios fiscais de ICMS ICMS benefícios fiscais"
+  },
+  {
+    "title": "Rio Grande do Sul: Alíquotas e base de cálculo",
+    "url": "estados/rs/legislacao/aliquotas.html",
+    "summary": "Alíquota interna, interestadual, carga efetiva, redução de base, fundo estadual e formação da base de cálculo.",
+    "tags": "RS Rio Grande do Sul Alíquotas e base de cálculo ICMS benefícios fiscais"
+  },
+  {
+    "title": "Rio Grande do Sul: Substituição tributária",
+    "url": "estados/rs/legislacao/substituicao-tributaria.html",
+    "summary": "Responsável, substituído, MVA, pauta, protocolos, convênios, recolhimento e documento fiscal em operações sujeitas a ST.",
+    "tags": "RS Rio Grande do Sul Substituição tributária ICMS benefícios fiscais"
+  },
+  {
+    "title": "Rio Grande do Sul: Documentos, SPED e prova",
+    "url": "estados/rs/legislacao/documentos-prova.html",
+    "summary": "NF-e, CT-e, EFD, escrituração, cBenef quando aplicável, obrigações acessórias, comprovantes e memória de cálculo.",
+    "tags": "RS Rio Grande do Sul Documentos, SPED e prova ICMS benefícios fiscais"
+  },
+  {
+    "title": "Rondônia: legislação de ICMS em tela",
+    "url": "estados/ro/legislacao/index.html",
+    "summary": "RICMS, leis, anexos, benefícios fiscais, alíquotas, ST e prova documental de Rondônia.",
+    "tags": "RO Rondônia ICMS RICMS benefícios fiscais alíquotas ST"
+  },
+  {
+    "title": "Rondônia: ICMS completo",
+    "url": "estados/ro/legislacao/icms.html",
+    "summary": "RICMS, leis materiais, decretos e anexos que formam a base de incidência, apuração e documentação do ICMS estadual.",
+    "tags": "RO Rondônia ICMS completo ICMS benefícios fiscais"
+  },
+  {
+    "title": "Rondônia: Benefícios fiscais de ICMS",
+    "url": "estados/ro/legislacao/beneficios-fiscais.html",
+    "summary": "Isenção, redução de base, crédito presumido/outorgado, diferimento, suspensão, fundos, regimes especiais e condicionantes.",
+    "tags": "RO Rondônia Benefícios fiscais de ICMS ICMS benefícios fiscais"
+  },
+  {
+    "title": "Rondônia: Alíquotas e base de cálculo",
+    "url": "estados/ro/legislacao/aliquotas.html",
+    "summary": "Alíquota interna, interestadual, carga efetiva, redução de base, fundo estadual e formação da base de cálculo.",
+    "tags": "RO Rondônia Alíquotas e base de cálculo ICMS benefícios fiscais"
+  },
+  {
+    "title": "Rondônia: Substituição tributária",
+    "url": "estados/ro/legislacao/substituicao-tributaria.html",
+    "summary": "Responsável, substituído, MVA, pauta, protocolos, convênios, recolhimento e documento fiscal em operações sujeitas a ST.",
+    "tags": "RO Rondônia Substituição tributária ICMS benefícios fiscais"
+  },
+  {
+    "title": "Rondônia: Documentos, SPED e prova",
+    "url": "estados/ro/legislacao/documentos-prova.html",
+    "summary": "NF-e, CT-e, EFD, escrituração, cBenef quando aplicável, obrigações acessórias, comprovantes e memória de cálculo.",
+    "tags": "RO Rondônia Documentos, SPED e prova ICMS benefícios fiscais"
+  },
+  {
+    "title": "Roraima: legislação de ICMS em tela",
+    "url": "estados/rr/legislacao/index.html",
+    "summary": "RICMS, leis, anexos, benefícios fiscais, alíquotas, ST e prova documental de Roraima.",
+    "tags": "RR Roraima ICMS RICMS benefícios fiscais alíquotas ST"
+  },
+  {
+    "title": "Roraima: ICMS completo",
+    "url": "estados/rr/legislacao/icms.html",
+    "summary": "RICMS, leis materiais, decretos e anexos que formam a base de incidência, apuração e documentação do ICMS estadual.",
+    "tags": "RR Roraima ICMS completo ICMS benefícios fiscais"
+  },
+  {
+    "title": "Roraima: Benefícios fiscais de ICMS",
+    "url": "estados/rr/legislacao/beneficios-fiscais.html",
+    "summary": "Isenção, redução de base, crédito presumido/outorgado, diferimento, suspensão, fundos, regimes especiais e condicionantes.",
+    "tags": "RR Roraima Benefícios fiscais de ICMS ICMS benefícios fiscais"
+  },
+  {
+    "title": "Roraima: Alíquotas e base de cálculo",
+    "url": "estados/rr/legislacao/aliquotas.html",
+    "summary": "Alíquota interna, interestadual, carga efetiva, redução de base, fundo estadual e formação da base de cálculo.",
+    "tags": "RR Roraima Alíquotas e base de cálculo ICMS benefícios fiscais"
+  },
+  {
+    "title": "Roraima: Substituição tributária",
+    "url": "estados/rr/legislacao/substituicao-tributaria.html",
+    "summary": "Responsável, substituído, MVA, pauta, protocolos, convênios, recolhimento e documento fiscal em operações sujeitas a ST.",
+    "tags": "RR Roraima Substituição tributária ICMS benefícios fiscais"
+  },
+  {
+    "title": "Roraima: Documentos, SPED e prova",
+    "url": "estados/rr/legislacao/documentos-prova.html",
+    "summary": "NF-e, CT-e, EFD, escrituração, cBenef quando aplicável, obrigações acessórias, comprovantes e memória de cálculo.",
+    "tags": "RR Roraima Documentos, SPED e prova ICMS benefícios fiscais"
+  },
+  {
+    "title": "Santa Catarina: legislação de ICMS em tela",
+    "url": "estados/sc/legislacao/index.html",
+    "summary": "RICMS, leis, anexos, benefícios fiscais, alíquotas, ST e prova documental de Santa Catarina.",
+    "tags": "SC Santa Catarina ICMS RICMS benefícios fiscais alíquotas ST"
+  },
+  {
+    "title": "Santa Catarina: ICMS completo",
+    "url": "estados/sc/legislacao/icms.html",
+    "summary": "RICMS, leis materiais, decretos e anexos que formam a base de incidência, apuração e documentação do ICMS estadual.",
+    "tags": "SC Santa Catarina ICMS completo ICMS benefícios fiscais"
+  },
+  {
+    "title": "Santa Catarina: Benefícios fiscais de ICMS",
+    "url": "estados/sc/legislacao/beneficios-fiscais.html",
+    "summary": "Isenção, redução de base, crédito presumido/outorgado, diferimento, suspensão, fundos, regimes especiais e condicionantes.",
+    "tags": "SC Santa Catarina Benefícios fiscais de ICMS ICMS benefícios fiscais"
+  },
+  {
+    "title": "Santa Catarina: Alíquotas e base de cálculo",
+    "url": "estados/sc/legislacao/aliquotas.html",
+    "summary": "Alíquota interna, interestadual, carga efetiva, redução de base, fundo estadual e formação da base de cálculo.",
+    "tags": "SC Santa Catarina Alíquotas e base de cálculo ICMS benefícios fiscais"
+  },
+  {
+    "title": "Santa Catarina: Substituição tributária",
+    "url": "estados/sc/legislacao/substituicao-tributaria.html",
+    "summary": "Responsável, substituído, MVA, pauta, protocolos, convênios, recolhimento e documento fiscal em operações sujeitas a ST.",
+    "tags": "SC Santa Catarina Substituição tributária ICMS benefícios fiscais"
+  },
+  {
+    "title": "Santa Catarina: Documentos, SPED e prova",
+    "url": "estados/sc/legislacao/documentos-prova.html",
+    "summary": "NF-e, CT-e, EFD, escrituração, cBenef quando aplicável, obrigações acessórias, comprovantes e memória de cálculo.",
+    "tags": "SC Santa Catarina Documentos, SPED e prova ICMS benefícios fiscais"
+  },
+  {
+    "title": "São Paulo: legislação de ICMS em tela",
+    "url": "estados/sp/legislacao/index.html",
+    "summary": "RICMS, leis, anexos, benefícios fiscais, alíquotas, ST e prova documental de São Paulo.",
+    "tags": "SP São Paulo ICMS RICMS benefícios fiscais alíquotas ST"
+  },
+  {
+    "title": "São Paulo: ICMS completo",
+    "url": "estados/sp/legislacao/icms.html",
+    "summary": "RICMS, leis materiais, decretos e anexos que formam a base de incidência, apuração e documentação do ICMS estadual.",
+    "tags": "SP São Paulo ICMS completo ICMS benefícios fiscais"
+  },
+  {
+    "title": "São Paulo: Benefícios fiscais de ICMS",
+    "url": "estados/sp/legislacao/beneficios-fiscais.html",
+    "summary": "Isenção, redução de base, crédito presumido/outorgado, diferimento, suspensão, fundos, regimes especiais e condicionantes.",
+    "tags": "SP São Paulo Benefícios fiscais de ICMS ICMS benefícios fiscais"
+  },
+  {
+    "title": "São Paulo: Alíquotas e base de cálculo",
+    "url": "estados/sp/legislacao/aliquotas.html",
+    "summary": "Alíquota interna, interestadual, carga efetiva, redução de base, fundo estadual e formação da base de cálculo.",
+    "tags": "SP São Paulo Alíquotas e base de cálculo ICMS benefícios fiscais"
+  },
+  {
+    "title": "São Paulo: Substituição tributária",
+    "url": "estados/sp/legislacao/substituicao-tributaria.html",
+    "summary": "Responsável, substituído, MVA, pauta, protocolos, convênios, recolhimento e documento fiscal em operações sujeitas a ST.",
+    "tags": "SP São Paulo Substituição tributária ICMS benefícios fiscais"
+  },
+  {
+    "title": "São Paulo: Documentos, SPED e prova",
+    "url": "estados/sp/legislacao/documentos-prova.html",
+    "summary": "NF-e, CT-e, EFD, escrituração, cBenef quando aplicável, obrigações acessórias, comprovantes e memória de cálculo.",
+    "tags": "SP São Paulo Documentos, SPED e prova ICMS benefícios fiscais"
+  },
+  {
+    "title": "Sergipe: legislação de ICMS em tela",
+    "url": "estados/se/legislacao/index.html",
+    "summary": "RICMS, leis, anexos, benefícios fiscais, alíquotas, ST e prova documental de Sergipe.",
+    "tags": "SE Sergipe ICMS RICMS benefícios fiscais alíquotas ST"
+  },
+  {
+    "title": "Sergipe: ICMS completo",
+    "url": "estados/se/legislacao/icms.html",
+    "summary": "RICMS, leis materiais, decretos e anexos que formam a base de incidência, apuração e documentação do ICMS estadual.",
+    "tags": "SE Sergipe ICMS completo ICMS benefícios fiscais"
+  },
+  {
+    "title": "Sergipe: Benefícios fiscais de ICMS",
+    "url": "estados/se/legislacao/beneficios-fiscais.html",
+    "summary": "Isenção, redução de base, crédito presumido/outorgado, diferimento, suspensão, fundos, regimes especiais e condicionantes.",
+    "tags": "SE Sergipe Benefícios fiscais de ICMS ICMS benefícios fiscais"
+  },
+  {
+    "title": "Sergipe: Alíquotas e base de cálculo",
+    "url": "estados/se/legislacao/aliquotas.html",
+    "summary": "Alíquota interna, interestadual, carga efetiva, redução de base, fundo estadual e formação da base de cálculo.",
+    "tags": "SE Sergipe Alíquotas e base de cálculo ICMS benefícios fiscais"
+  },
+  {
+    "title": "Sergipe: Substituição tributária",
+    "url": "estados/se/legislacao/substituicao-tributaria.html",
+    "summary": "Responsável, substituído, MVA, pauta, protocolos, convênios, recolhimento e documento fiscal em operações sujeitas a ST.",
+    "tags": "SE Sergipe Substituição tributária ICMS benefícios fiscais"
+  },
+  {
+    "title": "Sergipe: Documentos, SPED e prova",
+    "url": "estados/se/legislacao/documentos-prova.html",
+    "summary": "NF-e, CT-e, EFD, escrituração, cBenef quando aplicável, obrigações acessórias, comprovantes e memória de cálculo.",
+    "tags": "SE Sergipe Documentos, SPED e prova ICMS benefícios fiscais"
+  },
+  {
+    "title": "Tocantins: legislação de ICMS em tela",
+    "url": "estados/to/legislacao/index.html",
+    "summary": "RICMS, leis, anexos, benefícios fiscais, alíquotas, ST e prova documental de Tocantins.",
+    "tags": "TO Tocantins ICMS RICMS benefícios fiscais alíquotas ST"
+  },
+  {
+    "title": "Tocantins: ICMS completo",
+    "url": "estados/to/legislacao/icms.html",
+    "summary": "RICMS, leis materiais, decretos e anexos que formam a base de incidência, apuração e documentação do ICMS estadual.",
+    "tags": "TO Tocantins ICMS completo ICMS benefícios fiscais"
+  },
+  {
+    "title": "Tocantins: Benefícios fiscais de ICMS",
+    "url": "estados/to/legislacao/beneficios-fiscais.html",
+    "summary": "Isenção, redução de base, crédito presumido/outorgado, diferimento, suspensão, fundos, regimes especiais e condicionantes.",
+    "tags": "TO Tocantins Benefícios fiscais de ICMS ICMS benefícios fiscais"
+  },
+  {
+    "title": "Tocantins: Alíquotas e base de cálculo",
+    "url": "estados/to/legislacao/aliquotas.html",
+    "summary": "Alíquota interna, interestadual, carga efetiva, redução de base, fundo estadual e formação da base de cálculo.",
+    "tags": "TO Tocantins Alíquotas e base de cálculo ICMS benefícios fiscais"
+  },
+  {
+    "title": "Tocantins: Substituição tributária",
+    "url": "estados/to/legislacao/substituicao-tributaria.html",
+    "summary": "Responsável, substituído, MVA, pauta, protocolos, convênios, recolhimento e documento fiscal em operações sujeitas a ST.",
+    "tags": "TO Tocantins Substituição tributária ICMS benefícios fiscais"
+  },
+  {
+    "title": "Tocantins: Documentos, SPED e prova",
+    "url": "estados/to/legislacao/documentos-prova.html",
+    "summary": "NF-e, CT-e, EFD, escrituração, cBenef quando aplicável, obrigações acessórias, comprovantes e memória de cálculo.",
+    "tags": "TO Tocantins Documentos, SPED e prova ICMS benefícios fiscais"
   },
   {
     "title": "Manual de Documentos Fiscais Eletronicos",

@@ -24,6 +24,14 @@ from legal_modules import (  # noqa: E402
     module_chapter_path,
     module_index_path,
 )
+from state_legal_pages import (  # noqa: E402
+    GROUP_DEFS,
+    STATE_NAMES,
+    collect_state_documents,
+    group_path,
+    index_path as state_index_path,
+    source_path,
+)
 
 
 class PageParser(HTMLParser):
@@ -217,6 +225,23 @@ def audit_content_pages() -> list[str]:
     reforma = read_page("federal/legislacao/reforma-tributaria/index.html")
     if reforma and not re.search(r"EC 132/2023|LC 214/2025|LC 227/2026", reforma):
         errors.append("indice da Reforma nao cita os atos centrais")
+    for uf in STATE_NAMES:
+        if uf == "GO":
+            continue
+        docs = collect_state_documents(uf)
+        if not docs:
+            continue
+        index_html = read_page(state_index_path(uf))
+        if not index_html or "legislação de ICMS em tela" not in index_html:
+            errors.append(f"{uf}: indice estadual de ICMS ausente")
+        for group in GROUP_DEFS:
+            group_html = read_page(group_path(uf, group["id"]))
+            if not group_html or "Texto integral" not in group_html:
+                errors.append(f"{uf}: grupo estadual sem texto integral: {group['id']}")
+        for doc in list(docs)[:3]:
+            source_html = read_page(source_path(uf, doc))
+            if not source_html or "law-pre" not in source_html:
+                errors.append(f"{uf}: fonte estadual sem texto em tela: {doc['file']}")
     return errors
 
 

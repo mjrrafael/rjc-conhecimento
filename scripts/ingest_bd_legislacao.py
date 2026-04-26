@@ -374,13 +374,16 @@ def build_legal_chapters_from_docs(docs: list[dict], limit_per_chapter: int = 3)
 
 def ingest_states(bd: Path) -> list[dict]:
     base = bd / "#ESTADUAIS-COMPILADO-NOTEBOOKLM"
+    complement = bd / "Estados_Complementar"
     states = []
     for uf, name in STATE_NAMES.items():
-        folder = base / uf
+        folders = [base / uf, complement / uf]
         docs = []
         total_signals: Counter[str] = Counter()
         total_chars = 0
-        if folder.exists():
+        for folder in folders:
+            if not folder.exists():
+                continue
             for path in sorted(folder.glob("*.txt")):
                 if path.name.startswith("00_"):
                     continue

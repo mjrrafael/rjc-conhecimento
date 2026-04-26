@@ -13,6 +13,7 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
 
 from legal_modules import FEDERAL_ROOT, LEGAL_MODULES, SOURCE_DEFS, UPDATED_ON  # noqa: E402
+from state_legal_pages import state_source_records  # noqa: E402
 
 
 def sha256_file(path: Path) -> str:
@@ -82,7 +83,7 @@ def main() -> int:
             "executar scripts/export_legal_registry.py",
             "executar scripts/audit_portal.py",
         ],
-        "sources": [source_record(source_id, SOURCE_DEFS[source_id]) for source_id in sorted(SOURCE_DEFS)],
+        "sources": [source_record(source_id, SOURCE_DEFS[source_id]) for source_id in sorted(SOURCE_DEFS)] + state_source_records(),
     }
     target = ROOT / "data" / "legal_sources_registry.json"
     target.write_text(json.dumps(registry, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
