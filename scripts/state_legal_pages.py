@@ -368,6 +368,25 @@ CURATED_CATEGORY_BY_SOURCE_ID = {
     "MT_DEC_2212_2014_RICMS": "RICMS",
     "MT_LC_631_2019_BENEFICIOS_LC160": "ICMS_BENEFICIOS",
     "MT_PORT_211_2024_CBENEF": "INSTRUCOES_NORMATIVAS",
+    "RN_DEC_31825_2022_RICMS_GERAL": "RICMS",
+    "RN_RICMS_ANEXO_001_ISENCAO": "ICMS_BENEFICIOS",
+    "RN_RICMS_ANEXO_002_DIFERIMENTO": "ICMS_BENEFICIOS",
+    "RN_RICMS_ANEXO_003_CREDITO_PRESUMIDO": "ICMS_BENEFICIOS",
+    "RN_RICMS_ANEXO_004_REDUCAO_BASE": "ICMS_BENEFICIOS",
+    "RN_RICMS_ANEXO_005_ANTECIPACAO": "ICMS_ST",
+    "RN_RICMS_ANEXO_007_ST": "ICMS_ST",
+    "RN_RICMS_ANEXO_008_ST_COMBUSTIVEIS": "ICMS_ST",
+    "RN_RICMS_ANEXO_009_TRIGO": "ICMS_ST",
+    "RN_RICMS_ANEXO_010_VEICULOS": "ICMS_ST",
+    "RN_RICMS_ANEXO_011_DOCUMENTOS": "INSTRUCOES_NORMATIVAS",
+    "RN_PORT_022_2018_BENEFICIOS_LC160": "ICMS_BENEFICIOS",
+    "RN_LEI_10640_2019_PROEDI": "ICMS_BENEFICIOS",
+    "RN_DEC_29420_2019_PROEDI": "ICMS_BENEFICIOS",
+    "RN_DEC_27608_2017_FUNDERN": "ICMS_BENEFICIOS",
+    "RN_DEC_26789_2017_ATACADISTAS": "ICMS_BENEFICIOS",
+    "RN_LEI_12111_2025_TAX_FREE": "ICMS_BENEFICIOS",
+    "RN_LEI_11999_2024_ICMS_LC87": "ICMS_LEIS",
+    "RN_PORT_970_2025_CBENEF": "INSTRUCOES_NORMATIVAS",
 }
 
 BA_CHAPTERS = [
@@ -1005,6 +1024,243 @@ MT_SIGNAL_CHAPTER_MAP = {
     "protege/fundo": "prodeic-desenvolvimento",
     "fundo/contrapartida": "prodeic-desenvolvimento",
     "substituicao tributaria": "st-estimativa-anexos",
+    "efd/sped": "documentos-cbenef-efd-prova",
+    "cBenef": "documentos-cbenef-efd-prova",
+}
+
+
+RN_CHAPTERS = [
+    {
+        "id": "icms-regra-matriz",
+        "title": "ICMS/RN: incidência, não incidência, suspensão e diferimento",
+        "summary": "A porta de entrada do ICMS potiguar: campo de incidência, fato gerador, não incidência, isenção, suspensão, diferimento, contribuinte e responsabilidade.",
+        "theme": "Regra matriz",
+        "refs": [
+            {"source": "RN_DEC_31825_2022_RICMS_GERAL", "articles": ["1", "2", "3", "4", "7", "8", "9"]},
+            {"source": "RN_LEI_11999_2024_ICMS_LC87", "keywords": ["Lei nº 6.968", "Lei Complementar Federal nº 87", "ICMS", "não incidência"]},
+        ],
+        "analysis": [
+            "No Rio Grande do Norte, a leitura começa pelo Decreto nº 31.825/2022. Ele consolida a operação, a prestação, o fato gerador e as hipóteses em que a cobrança não nasce ou fica deslocada para outro momento.",
+            "Isenção, suspensão e diferimento não são sinônimos. A isenção afasta a cobrança dentro de hipótese legal; a suspensão condiciona a exigência a evento futuro; o diferimento adia lançamento e pagamento para etapa posterior.",
+            "A Lei nº 11.999/2024 aparece como atualização material da Lei nº 6.968/1996 para compatibilizar a legislação estadual com alterações da LC 87/1996. Ela deve ser lida junto com o RICMS nas teses de incidência, não incidência e exportação.",
+        ],
+        "departments": "Fiscal define operação, CFOP, CST/CSOSN, incidência e responsável. Jurídico separa não incidência, imunidade, isenção e diferimento. Cadastro confirma inscrição e regime.",
+        "documents": "NF-e, CT-e, cadastro fiscal, contrato, pedido, comprovante de circulação ou prestação, inscrição estadual, EFD e memória de enquadramento.",
+        "risks": "Aplicar benefício antes de confirmar incidência; tratar diferimento como perdão; confundir suspensão com isenção; perder a prova do evento posterior que encerra a suspensão ou o diferimento.",
+    },
+    {
+        "id": "base-aliquota-apuracao",
+        "title": "Base de cálculo, alíquotas, FECOP, crédito e apuração",
+        "summary": "Como o valor tributável é formado no RN, qual alíquota se aplica, quando há adicional do FECOP e como crédito, vedação, apuração e recolhimento se conectam.",
+        "theme": "Carga tributária",
+        "refs": [
+            {"source": "RN_DEC_31825_2022_RICMS_GERAL", "articles": ["27", "28", "29", "30", "31", "35", "36", "40", "41", "58"]},
+            {"source": "RN_RICMS_ANEXO_004_REDUCAO_BASE", "articles": ["1", "2", "8", "12"]},
+        ],
+        "analysis": [
+            "A ordem correta é base, eventual redução, alíquota, adicional, crédito, estorno e recolhimento. Trocar a alíquota no cadastro sem demonstrar a base reduzida enfraquece a prova fiscal.",
+            "O art. 29 do RICMS/RN reúne as alíquotas; o art. 30 adiciona pontos percentuais ao FECOP em produtos e serviços indicados. O cálculo precisa mostrar a carga final, e não apenas a alíquota nominal.",
+            "O crédito comum nasce da não cumulatividade, mas o crédito presumido é benefício. Por isso, crédito do art. 36, crédito presumido do art. 40 e vedações do art. 41 devem ficar separados na memória de apuração.",
+        ],
+        "departments": "Fiscal parametriza base, alíquota, FECOP e crédito. Contábil concilia imposto, estoque, custo e estorno. Financeiro guarda guias. Auditoria cruza XML, EFD e recolhimento.",
+        "documents": "XML, cadastro NCM, tabela de alíquotas, demonstrativo de base reduzida, memória de crédito, EFD, guia de recolhimento e conciliação contábil.",
+        "risks": "Confundir redução de base com alíquota menor; esquecer FECOP; tomar crédito incompatível com benefício; não provar a carga efetiva aplicada.",
+    },
+    {
+        "id": "beneficios-matriz-lc160",
+        "title": "Benefícios fiscais, LC 160 e Convênio ICMS 190/2017",
+        "summary": "A matriz potiguar de benefícios de ICMS: atos publicados para LC 160, isenções, incentivos, crédito presumido, regime especial, contrapartida e prova.",
+        "theme": "Benefícios fiscais",
+        "refs": [
+            {"source": "RN_PORT_022_2018_BENEFICIOS_LC160", "full_text": True},
+            {"source": "RN_DEC_31825_2022_RICMS_GERAL", "articles": ["7", "8", "9", "28", "40"]},
+            {"source": "RN_DEC_27608_2017_FUNDERN", "articles": ["1", "2", "3", "4", "5"]},
+        ],
+        "analysis": [
+            "A Portaria nº 022/2018-GS/SET é o mapa publicado pelo RN para a LC 160/2017 e o Convênio ICMS 190/2017. Ela não substitui o ato material do benefício; ela identifica o ato, o dispositivo, o início de vigência e o benefício que precisa ser lido.",
+            "Benefício fiscal deve ser classificado pela técnica jurídica: isenção, suspensão, diferimento, redução de base, crédito presumido, regime especial ou incentivo financeiro-fiscal. Cada técnica muda XML, EFD, crédito e prova.",
+            "Quando houver FUNDERN, a contrapartida financeira entra no dossiê do benefício. A empresa não prova só o direito ao incentivo; prova também que cumpriu depósito, prazo, condição e regularidade.",
+        ],
+        "departments": "Jurídico identifica ato e vigência. Fiscal transforma o benefício em CST, cBenef quando exigido, ajustes e EFD. Financeiro controla FUNDERN e guias. Controladoria mede renúncia e impacto.",
+        "documents": "Portaria 022/2018, RICMS/RN, ato do benefício, termo de regime quando houver, XML, EFD, cBenef, guias, comprovante de FUNDERN e memória de cálculo.",
+        "risks": "Usar a lista LC 160 sem abrir o ato material; acumular benefícios vedados; esquecer contrapartida; aplicar benefício vencido ou sem prova de condição.",
+    },
+    {
+        "id": "isencoes-reducoes-creditos",
+        "title": "Isenções, reduções de base e créditos presumidos",
+        "summary": "Leitura por espécie: Anexo 001 para isenções, Anexo 004 para redução de base e Anexo 003 para crédito presumido.",
+        "theme": "Benefícios por espécie",
+        "refs": [
+            {"source": "RN_RICMS_ANEXO_001_ISENCAO", "keywords": ["DAS OPERAÇÕES E PRESTAÇÕES ALCANÇADAS COM ISENÇÃO", "produtos", "medicamentos", "veículos", "taxista", "exportação"]},
+            {"source": "RN_RICMS_ANEXO_004_REDUCAO_BASE", "keywords": ["REDUÇÃO DE BASE DE CÁLCULO", "carga tributária", "veículos", "produtos", "máquinas"]},
+            {"source": "RN_RICMS_ANEXO_003_CREDITO_PRESUMIDO", "keywords": ["CRÉDITO PRESUMIDO", "óleo diesel", "biodiesel", "PROEDI", "aquisição"]},
+            {"source": "RN_PORT_970_2025_CBENEF", "full_text": True},
+        ],
+        "analysis": [
+            "Isenção afasta o débito; redução de base diminui o valor tributável; crédito presumido altera a apuração. As três figuras podem produzir cargas parecidas, mas a prova e a escrituração são diferentes.",
+            "O Anexo 001 deve ser lido por sujeito, produto, operação, finalidade e prazo. O título do benefício não basta: a hipótese legal costuma restringir destinatário, condição sanitária, laudo, credenciamento ou finalidade.",
+            "O cBenef é consequência da norma material. Ele ajuda a fiscalizar o benefício no documento fiscal, mas não cria direito quando a operação não cabe no texto do anexo ou da lei.",
+        ],
+        "departments": "Fiscal parametriza CST, cBenef, base e crédito. Cadastro valida NCM e descrição legal. Jurídico valida condições. Contábil controla estorno ou manutenção de crédito.",
+        "documents": "XML, cBenef, cadastro de item, NCM, anexo aplicável, laudo quando houver, prova de destinatário/finalidade, EFD e memória de cálculo.",
+        "risks": "Aplicar benefício por semelhança comercial; informar cBenef sem direito material; manter crédito quando a norma exige estorno; deixar de provar finalidade específica.",
+    },
+    {
+        "id": "proedi-desenvolvimento",
+        "title": "PROEDI, desenvolvimento industrial e FUNDERN",
+        "summary": "Programa de Estímulo ao Desenvolvimento Industrial do RN: crédito presumido, adesão, enquadramento, regulamento, condições, recolhimento e contrapartida.",
+        "theme": "Programas estaduais",
+        "refs": [
+            {"source": "RN_LEI_10640_2019_PROEDI", "full_text": True},
+            {"source": "RN_DEC_29420_2019_PROEDI", "full_text": True},
+            {"source": "RN_DEC_27608_2017_FUNDERN", "articles": ["3", "4", "5", "6"]},
+            {"source": "RN_RICMS_ANEXO_003_CREDITO_PRESUMIDO", "keywords": ["PROEDI", "Programa de Estímulo ao Desenvolvimento Industrial", "crédito presumido"]},
+        ],
+        "analysis": [
+            "O PROEDI é programa de desenvolvimento, não mero desconto de ICMS. A fruição depende de enquadramento, atividade industrial, ato, condições, regularidade, cálculo do crédito presumido e acompanhamento do projeto.",
+            "A Lei nº 10.640/2019 institui o programa e o Decreto nº 29.420/2019 regula a operação. O contribuinte precisa sair da lei geral para o ato concreto e para a escrituração mensal.",
+            "Quando houver depósito, fundo ou contrapartida, a prova do pagamento é parte do benefício. Sem ela, o crédito presumido pode estar correto no cálculo e frágil na defesa.",
+        ],
+        "departments": "Jurídico acompanha enquadramento e vigência. Fiscal calcula crédito e cBenef quando exigido. Financeiro controla depósitos e guias. Controladoria mede metas e impacto econômico.",
+        "documents": "Lei do PROEDI, decreto regulamentar, requerimento, termo, ato concessivo, XML, EFD, cBenef, memória do crédito, comprovante de regularidade e comprovante de contrapartida.",
+        "risks": "Aplicar PROEDI sem ato individual; usar crédito fora da operação habilitada; não comprovar regularidade; perder prazo, meta ou depósito vinculado.",
+    },
+    {
+        "id": "agro-cesta-diferimento",
+        "title": "Agro, alimentos, cesta, pesca e diferimento",
+        "summary": "Tratamentos para cadeias agropecuárias, alimentos, abate, pesca, óleo diesel/biodiesel de transporte e diferimentos por etapa produtiva.",
+        "theme": "Agro e alimentos",
+        "refs": [
+            {"source": "RN_RICMS_ANEXO_001_ISENCAO", "keywords": ["gado", "bovino", "bufalino", "suíno", "leite", "peixe", "cesta", "alimento"]},
+            {"source": "RN_RICMS_ANEXO_002_DIFERIMENTO", "keywords": ["produtor", "agropecuária", "algodão", "camarão", "cana", "diferimento"]},
+            {"source": "RN_RICMS_ANEXO_003_CREDITO_PRESUMIDO", "keywords": ["óleo diesel", "biodiesel", "embarcações pesqueiras", "transporte público"]},
+            {"source": "RN_PORT_970_2025_CBENEF", "keywords": ["RN010001", "RN020001", "RN020002", "RN020003"]},
+        ],
+        "analysis": [
+            "Nas cadeias agroalimentares, a descrição do produto e a etapa da cadeia são decisivas. Abate, produtor, industrialização, revenda e consumo final podem ter tratamentos diferentes.",
+            "Diferimento desloca o recolhimento; não extingue o imposto. A prova precisa acompanhar a etapa posterior e quem assume a responsabilidade pelo pagamento.",
+            "Os códigos cBenef publicados para RN mostram a lógica de controle: abate com isenção, óleo diesel/biodiesel com crédito presumido para transporte coletivo e óleo diesel para embarcações pesqueiras.",
+        ],
+        "departments": "Fiscal parametriza produto e etapa. Compras guarda origem e destinatário. Operações prova uso ou finalidade. Contábil controla crédito, estorno, diferimento e baixa.",
+        "documents": "NF-e, NCM, romaneio, laudo sanitário quando aplicável, contrato, prova de origem/destino, EFD, cBenef e memória do tratamento aplicado.",
+        "risks": "Aplicar benefício por nome comercial; não provar destinação; tratar diferimento como isenção; usar cBenef de produto sem aderência ao anexo.",
+    },
+    {
+        "id": "atacado-distribuicao-regimes",
+        "title": "Atacado, distribuição, regimes especiais e comércio",
+        "summary": "Regimes de atacadistas, distribuição, cosméticos, perfumaria, produtos de higiene, centralização, credenciamento e limites de fruição.",
+        "theme": "Regimes especiais",
+        "refs": [
+            {"source": "RN_DEC_26789_2017_ATACADISTAS", "full_text": True},
+            {"source": "RN_PORT_022_2018_BENEFICIOS_LC160", "keywords": ["atacadista", "cosméticos", "perfumaria", "higiene pessoal", "regime especial"]},
+            {"source": "RN_DEC_31825_2022_RICMS_GERAL", "keywords": ["regime especial", "atacadista", "PROEDI", "regularidade"]},
+        ],
+        "analysis": [
+            "Regime especial para atacado depende de atividade real e critério de saídas. A leitura deve separar atacado, varejo, venda a contribuinte, venda a consumidor final e mercadoria excluída.",
+            "A norma de alteração não substitui o controle mensal: percentual de saídas, cadastro, produto, destinatário, regularidade e vedação de acumulação precisam estar demonstrados.",
+            "Quando o regime reduz carga ou desloca recolhimento, o dossiê deve mostrar cálculo, origem do direito, documento fiscal e cumprimento de condições.",
+        ],
+        "departments": "Comercial informa cadeia e perfil de clientes. Fiscal parametriza carga e documento. Financeiro guarda recolhimentos. Auditoria mede percentual de saídas e aderência do regime.",
+        "documents": "Termo ou ato de regime, cadastro, XML, relatório de vendas por destinatário, EFD, guia, memória de apuração e prova de regularidade.",
+        "risks": "Aplicar regime atacadista a operação varejista; descumprir percentual de saídas; usar produto fora do escopo; não provar regularidade fiscal.",
+    },
+    {
+        "id": "st-antecipacao-combustiveis",
+        "title": "Substituição tributária, antecipação, combustíveis, trigo e veículos",
+        "summary": "Responsabilidade tributária por segmento: ST geral, antecipação, combustíveis e lubrificantes, trigo/farinha/derivados e veículos autopropulsados.",
+        "theme": "Responsabilidade tributária",
+        "refs": [
+            {"source": "RN_DEC_31825_2022_RICMS_GERAL", "articles": ["59", "60"]},
+            {"source": "RN_RICMS_ANEXO_005_ANTECIPACAO", "articles": ["1", "2", "3", "4"]},
+            {"source": "RN_RICMS_ANEXO_007_ST", "articles": ["1", "2", "3", "4"]},
+            {"source": "RN_RICMS_ANEXO_008_ST_COMBUSTIVEIS", "keywords": ["combustíveis", "lubrificantes", "substituição tributária"]},
+            {"source": "RN_RICMS_ANEXO_009_TRIGO", "keywords": ["trigo", "farinha de trigo", "derivados"]},
+            {"source": "RN_RICMS_ANEXO_010_VEICULOS", "keywords": ["veículos autopropulsados", "substituição tributária"]},
+        ],
+        "analysis": [
+            "ST e antecipação não são benefícios; são técnicas de responsabilidade, momento e controle de recolhimento. O primeiro passo é identificar mercadoria, NCM/CEST, segmento e responsável.",
+            "A antecipação do art. 59 e do Anexo 005 precisa ser separada da ST encerrada. Em algumas hipóteses, a antecipação é parcial e se transforma em crédito na apuração normal.",
+            "Combustíveis, trigo e veículos têm anexos próprios. Nesses segmentos, convênios, protocolos, MVA, pauta, preço de referência e responsabilidade podem mudar o cálculo e a prova.",
+        ],
+        "departments": "Fiscal controla NCM/CEST, MVA, pauta e responsável. Compras valida retenção na entrada. Financeiro guarda GNRE/DAE. Auditoria cruza estoque, XML e EFD.",
+        "documents": "XML, NCM, CEST, anexo do segmento, pauta/MVA, guia, EFD, cadastro de item e memória por operação.",
+        "risks": "Aplicar ST por descrição parecida; misturar antecipação parcial com encerramento de fase; ignorar convênio ou protocolo; não controlar ressarcimento ou complemento.",
+    },
+    {
+        "id": "documentos-cbenef-efd-prova",
+        "title": "Documentos fiscais, cBenef, EFD e prova digital",
+        "summary": "Como a tese tributária aparece no XML, na NFC-e, na NF-e, na EFD, nos livros, nos documentos fiscais e na prova mensal de auditoria.",
+        "theme": "Prova digital",
+        "refs": [
+            {"source": "RN_DEC_31825_2022_RICMS_GERAL", "articles": ["119", "120", "121", "139", "143", "145"]},
+            {"source": "RN_RICMS_ANEXO_011_DOCUMENTOS", "articles": ["1", "2", "3", "4", "11"]},
+            {"source": "RN_PORT_970_2025_CBENEF", "full_text": True},
+        ],
+        "analysis": [
+            "A prova nasce no documento fiscal. Se a operação usa benefício, o XML precisa refletir CST, base, crédito, cBenef quando exigido, fundamento e coerência com EFD.",
+            "O art. 143 do RICMS/RN torna a EFD o repositório digital de apuração e informações de interesse do fisco. Por isso, tese sem escrituração compatível é tese incompleta.",
+            "A Portaria-SEI nº 970/2025 mostra que o RN passou a exigir controle explícito do cBenef em operações alcançadas pelos benefícios listados. O código deve nascer da norma, não do desejo de reduzir imposto.",
+        ],
+        "departments": "Fiscal emite e escritura. TI mantém cadastro fiscal. Contábil concilia apuração. Jurídico guarda fundamento. Auditoria monta dossiê mensal.",
+        "documents": "XML, DANFE, NFC-e, EFD, registros de ajuste, cBenef, memória de cálculo, guia, cadastro de produto, ato legal e comprovante de condição.",
+        "risks": "Documento com benefício sem cBenef exigido; EFD sem ajuste; XML divergente da memória; código de benefício usado sem aderência ao texto legal.",
+    },
+    {
+        "id": "mapa-revisado-beneficios",
+        "title": "Mapa revisado dos benefícios fiscais do RN",
+        "summary": "Roteiro de estudo por grupo: isenção, redução, crédito presumido, diferimento, PROEDI, Tax Free, FUNDERN, atacado, ST/antecipação, cBenef e prova.",
+        "theme": "Mapa de benefícios",
+        "refs": [
+            {"source": "RN_PORT_022_2018_BENEFICIOS_LC160", "full_text": True},
+            {"source": "RN_RICMS_ANEXO_001_ISENCAO", "keywords": ["isenção", "operações", "prestações"]},
+            {"source": "RN_RICMS_ANEXO_003_CREDITO_PRESUMIDO", "keywords": ["crédito presumido", "PROEDI", "óleo diesel", "biodiesel"]},
+            {"source": "RN_RICMS_ANEXO_004_REDUCAO_BASE", "keywords": ["redução de base de cálculo", "carga tributária"]},
+            {"source": "RN_LEI_12111_2025_TAX_FREE", "full_text": True},
+        ],
+        "analysis": [
+            "Este mapa é a rota de navegação: primeiro identificar a técnica do benefício; depois abrir o anexo ou lei; em seguida validar operação, produto, destinatário, vigência, prova e escrituração.",
+            "O Tax Free de 2025 é benefício com restituição condicionada, não isenção automática na venda. A mercadoria precisa sair do país no prazo e o documento fiscal deve evidenciar a restituição e o montante.",
+            "A leitura por grupo evita erro comum: chamar todo incentivo de isenção. No RN, há isenção, redução, crédito presumido, diferimento, regime especial, restituição condicionada e contrapartida financeira.",
+        ],
+        "departments": "Jurídico monta matriz de benefícios. Fiscal parametriza documento. Financeiro controla restituição, guias e FUNDERN. Auditoria testa aderência por operação.",
+        "documents": "Ato legal, anexo aplicável, XML, EFD, cBenef, contrato, prova de destinatário, comprovante de saída do país quando Tax Free, guia e memória de cálculo.",
+        "risks": "Usar o grupo errado; aplicar benefício sem ler condição específica; deixar restituição ou contrapartida fora da prova; informar benefício no XML sem base material.",
+    },
+    {
+        "id": "fiscalizacao-riscos",
+        "title": "Fiscalização, regularidade, perda de benefício e defesa documental",
+        "summary": "Como a fiscalização tende a testar benefícios: regularidade, cadastro, documento, escrituração, prazo, contrapartida, condição e coerência entre sistemas.",
+        "theme": "Auditoria fiscal",
+        "refs": [
+            {"source": "RN_DEC_31825_2022_RICMS_GERAL", "articles": ["77", "102", "103", "108", "121"]},
+            {"source": "RN_DEC_29420_2019_PROEDI", "keywords": ["cancelamento", "regularidade", "obrigações tributárias", "penalidades", "termo"]},
+            {"source": "RN_DEC_27608_2017_FUNDERN", "keywords": ["depósito mensal", "beneficiários", "FUNDERN"]},
+            {"source": "RN_PORT_970_2025_CBENEF", "articles": ["1", "2"]},
+        ],
+        "analysis": [
+            "A fiscalização costuma atacar a distância entre benefício informado e prova disponível. O direito pode estar no anexo, mas cai se cadastro, XML, EFD, cBenef, guia e condição não conversam.",
+            "Regularidade fiscal, inscrição, depósito em fundo, credenciamento, prazo e ato individual são tão importantes quanto a regra que concede o benefício.",
+            "Defesa boa é construída no mês do fato gerador: dispositivo, cálculo, documento, escrituração e comprovante precisam estar arquivados antes de qualquer intimação.",
+        ],
+        "departments": "Jurídico mantém matriz de risco. Fiscal fecha dossiê mensal. Financeiro guarda pagamentos e contrapartidas. Contábil concilia crédito, débito e estorno.",
+        "documents": "Checklists, certidões, atos concessivos, XML, EFD, cBenef, guias, comprovante FUNDERN, relatórios de metas, memória de cálculo e parecer de enquadramento.",
+        "risks": "Benefício materialmente correto, mas documentalmente frágil; condição vencida; cBenef ausente; regime sem ato; cálculo impossível de reconstruir.",
+    },
+]
+
+RN_SIGNAL_CHAPTER_MAP = {
+    "exportacao": "icms-regra-matriz",
+    "nao incidencia": "icms-regra-matriz",
+    "aliquota": "base-aliquota-apuracao",
+    "reducao de base": "isencoes-reducoes-creditos",
+    "isencao": "isencoes-reducoes-creditos",
+    "credito outorgado": "isencoes-reducoes-creditos",
+    "diferimento": "agro-cesta-diferimento",
+    "suspensao": "icms-regra-matriz",
+    "regime especial": "atacado-distribuicao-regimes",
+    "protege/fundo": "proedi-desenvolvimento",
+    "fundo/contrapartida": "proedi-desenvolvimento",
+    "substituicao tributaria": "st-antecipacao-combustiveis",
     "efd/sped": "documentos-cbenef-efd-prova",
     "cBenef": "documentos-cbenef-efd-prova",
 }
@@ -2264,6 +2520,212 @@ def render_mt_pages(docs: tuple[dict, ...], layout_func) -> dict[str, str]:
     return pages
 
 
+def rn_chapter_path(chapter_id: str) -> str:
+    return f"estados/rn/legislacao/{chapter_id}.html"
+
+
+def rn_chapter_by_id(chapter_id: str) -> dict:
+    return next(chapter for chapter in RN_CHAPTERS if chapter["id"] == chapter_id)
+
+
+def rn_law_blocks(current_path: str, docs: tuple[dict, ...], chapter: dict) -> str:
+    source_map = docs_by_source_id(docs)
+    blocks = []
+    for ref in chapter.get("refs", []):
+        doc = source_map.get(ref["source"])
+        if not doc:
+            continue
+        segments: list[tuple[str, str]] = []
+        if ref.get("articles"):
+            segments = article_segments(doc, ref["articles"])
+        elif ref.get("full_text"):
+            if doc["chars"] <= 28000:
+                segments = [("Texto integral do ato", clean_law_segment(doc["text"], limit=30000))]
+            else:
+                needles = ["isenção", "redução de base", "crédito presumido", "diferimento", "PROEDI", "FUNDERN", "cBenef"]
+                segments = [
+                    (f"Trecho {idx}", clean_law_segment(item, limit=6200))
+                    for idx, item in enumerate(excerpts(doc["text"], needles, limit=6), start=1)
+                ]
+        elif ref.get("keywords"):
+            segments = [
+                (f"Trecho {idx}", clean_law_segment(item, limit=6200))
+                for idx, item in enumerate(excerpts(doc["text"], ref["keywords"], limit=6), start=1)
+            ]
+        if not segments:
+            segments = [
+                (f"Trecho {idx}", clean_law_segment(item, limit=5000))
+                for idx, item in enumerate(excerpts(doc["text"], [chapter["title"], chapter["summary"]], limit=2), start=1)
+            ]
+        law_html = "".join(f"""
+<article class="article-block">
+  <div class="article-number">{escape(label)}</div>
+  <pre class="law-pre">{escape(segment)}</pre>
+</article>
+""" for label, segment in segments if segment)
+        blocks.append(f"""
+<section class="legal-document">
+  <div class="document-heading">
+    <div>
+      <span class="eyebrow">{escape(doc['category_label'])}</span>
+      <h3>{escape(doc['title'])}</h3>
+      <p>Dispositivos essenciais para este capítulo. A íntegra está preservada na página-fonte do portal.</p>
+    </div>
+    <div class="document-actions">
+      <a href="{escape(rel_href(current_path, source_path('RN', doc)))}">abrir fonte integral</a>
+      <a href="{escape(doc.get('official_url', STATE_OFFICIAL_PORTALS['RN']))}" target="_blank" rel="noopener">fonte pública</a>
+    </div>
+  </div>
+  {law_html}
+</section>
+""")
+    return "".join(blocks)
+
+
+def render_rn_index_page(docs: tuple[dict, ...], layout_func) -> str:
+    current = index_path("RN")
+    chapter_cards = []
+    for chapter in RN_CHAPTERS:
+        chapter_cards.append(f"""
+<a class="portal-card searchable-card" href="{escape(rel_href(current, rn_chapter_path(chapter['id'])))}"
+   data-search="{escape('Rio Grande do Norte RN ICMS beneficios fiscais ' + chapter['title'] + ' ' + chapter['summary'] + ' ' + chapter['theme'])}">
+  <span class="card-kicker">{escape(chapter['theme'])}</span>
+  <h3>{escape(chapter['title'])}</h3>
+  <p>{escape(chapter['summary'])}</p>
+</a>
+""")
+    body = f"""
+<section class="hero-panel legal-hero">
+  <div>
+    <span class="eyebrow">RN · ICMS em tela</span>
+    <h1>Rio Grande do Norte: ICMS e benefícios fiscais em tela</h1>
+    <p>RICMS/RN, anexos de isenção, diferimento, crédito presumido, redução de base, antecipação, ST, documentos fiscais, PROEDI, FUNDERN, Tax Free, cBenef e matriz LC 160 organizados por assunto.</p>
+  </div>
+  <aside class="hero-proof">
+    <strong>Como estudar</strong>
+    <p>Leia primeiro a regra maior. Depois vá para benefícios, regimes, documentos e riscos. A análise vem sempre depois do texto legal.</p>
+  </aside>
+</section>
+<section class="law-ledger">
+  <div>
+    <h2>Material publicado</h2>
+    <p>{fmt_num(len(docs))} fontes normativas de ICMS/RN, com {fmt_num(sum(int(doc['chars']) for doc in docs))} caracteres em tela.</p>
+  </div>
+  <div>
+    <h2>Benefícios cobertos</h2>
+    <p>Isenção, redução de base, crédito presumido, diferimento, suspensão, PROEDI, Tax Free, FUNDERN, atacado, ST e cBenef.</p>
+  </div>
+  <div>
+    <h2>Ordem de leitura</h2>
+    <p>Regra matriz, base/alíquota, benefícios, programas, ST/antecipação, documentos e fiscalização.</p>
+  </div>
+</section>
+<section class="topic-index">
+  <div class="section-heading">
+    <span class="eyebrow">Índice por tema</span>
+    <h2>Capítulos do ICMS potiguar</h2>
+    <p>Cada entrada leva a uma seção específica, com lei em tela, explicação, aplicação por departamento, documentos de prova e riscos.</p>
+  </div>
+  <div class="card-grid">{''.join(chapter_cards)}</div>
+</section>
+<section class="continuity">
+  <h2>Continuar a leitura</h2>
+  <div>
+    <a href="{escape(rel_href(current, state_page_path('RN')))}">voltar ao Estado</a>
+    <a href="{escape(rel_href(current, 'confaz/index.html'))}">CONFAZ e LC 160</a>
+    <a href="{escape(rel_href(current, 'federal/pis-cofins.html'))}">conectar com PIS/Cofins</a>
+    <a href="{escape(rel_href(current, 'biblioteca/index.html'))}">biblioteca avançada</a>
+  </div>
+</section>
+"""
+    return layout_func(current, "Rio Grande do Norte: ICMS e benefícios fiscais em tela", "ICMS/RN, benefícios fiscais, PROEDI, ST, cBenef e prova documental.", body, "estados")
+
+
+def render_rn_chapter_page(docs: tuple[dict, ...], chapter: dict, layout_func) -> str:
+    current = rn_chapter_path(chapter["id"])
+    related = []
+    for other in RN_CHAPTERS:
+        if other["id"] == chapter["id"]:
+            continue
+        if other["theme"] == chapter["theme"] or len(related) < 4:
+            related.append(other)
+        if len(related) >= 5:
+            break
+    related_links = "".join(
+        f'<a href="{escape(rel_href(current, rn_chapter_path(item["id"])))}">{escape(item["title"])}</a>'
+        for item in related
+    )
+    analysis_items = "".join(f"<p>{escape(item)}</p>" for item in chapter.get("analysis", []))
+    body = f"""
+<section class="hero-panel legal-hero">
+  <div>
+    <span class="eyebrow">Rio Grande do Norte · {escape(chapter['theme'])}</span>
+    <h1>{escape(chapter['title'])}</h1>
+    <p>{escape(chapter['summary'])}</p>
+  </div>
+  <aside class="hero-proof">
+    <strong>Leitura guiada</strong>
+    <p>Primeiro a legislação em tela; depois interpretação, aplicação por departamento, prova e risco.</p>
+  </aside>
+</section>
+<section class="topic-index compact-index">
+  <div class="section-heading">
+    <span class="eyebrow">Voltar ao índice</span>
+    <h2>RN por capítulos</h2>
+  </div>
+  <div class="signal-law-links">
+    <strong>Continuar no Estado</strong>
+    <div>
+      <a href="{escape(rel_href(current, index_path('RN')))}">índice do RN</a>
+      <a href="{escape(rel_href(current, 'estados/rn.html'))}">página principal</a>
+      <a href="{escape(rel_href(current, 'confaz/index.html'))}">CONFAZ</a>
+    </div>
+  </div>
+</section>
+<section class="legal-chapters">
+  <div class="section-heading">
+    <span class="eyebrow">Legislação em tela</span>
+    <h2>Texto legal antes da análise</h2>
+    <p>Os blocos abaixo trazem os dispositivos nucleares deste assunto. A íntegra de cada ato fica aberta nas páginas-fonte do portal.</p>
+  </div>
+  {rn_law_blocks(current, docs, chapter)}
+</section>
+<section class="content-block">
+  <span class="eyebrow">Análise aplicada</span>
+  <h2>Como interpretar</h2>
+  {analysis_items}
+</section>
+<section class="law-ledger">
+  <div>
+    <h2>Aplicação por departamento</h2>
+    <p>{escape(chapter.get('departments', 'Fiscal, contábil, financeiro e jurídico devem amarrar regra, documento, escrituração e pagamento.'))}</p>
+  </div>
+  <div>
+    <h2>Documentos de prova</h2>
+    <p>{escape(chapter.get('documents', 'XML, EFD, memória de cálculo, ato legal e comprovantes.'))}</p>
+  </div>
+  <div>
+    <h2>Riscos comuns</h2>
+    <p>{escape(chapter.get('risks', 'Aplicar tese sem dispositivo, condição, vigência ou prova documental suficiente.'))}</p>
+  </div>
+</section>
+<section class="continuity">
+  <h2>Continuar este estudo</h2>
+  <div>{related_links}</div>
+</section>
+"""
+    return layout_func(current, f"Rio Grande do Norte: {chapter['title']}", chapter["summary"], body, "estados")
+
+
+def render_rn_pages(docs: tuple[dict, ...], layout_func) -> dict[str, str]:
+    pages = {index_path("RN"): render_rn_index_page(docs, layout_func)}
+    for chapter in RN_CHAPTERS:
+        pages[rn_chapter_path(chapter["id"])] = render_rn_chapter_page(docs, chapter, layout_func)
+    for doc in docs:
+        pages[source_path("RN", doc)] = render_source_page("RN", doc, layout_func)
+    return pages
+
+
 def render_index_page(uf: str, docs: list[dict], layout_func) -> str:
     name = STATE_NAMES.get(uf, uf)
     current = index_path(uf)
@@ -2453,6 +2915,9 @@ def build_state_legal_pages(layout_func, data: dict) -> dict[str, str]:
         if uf == "MT":
             pages.update(render_mt_pages(docs, layout_func))
             continue
+        if uf == "RN":
+            pages.update(render_rn_pages(docs, layout_func))
+            continue
         pages[index_path(uf)] = render_index_page(uf, docs, layout_func)
         for group in GROUP_DEFS:
             pages[group_path(uf, group["id"])] = render_group_page(uf, docs, group, layout_func)
@@ -2494,6 +2959,16 @@ def state_legislation_teaser(uf: str, current_path: str) -> str:
             ("benefícios fiscais e LC 160", mt_chapter_path("beneficios-matriz-lc160")),
             ("PRODEIC e desenvolvimento", mt_chapter_path("prodeic-desenvolvimento")),
             ("cBenef, EFD e prova", mt_chapter_path("documentos-cbenef-efd-prova")),
+        ]
+    elif uf == "RN" and state_is_deep_published(uf) and publishable_state_documents(uf):
+        links = [
+            ("Rio Grande do Norte: índice completo", index_path("RN")),
+            ("ICMS: regra matriz", rn_chapter_path("icms-regra-matriz")),
+            ("base, alíquotas, FECOP e crédito", rn_chapter_path("base-aliquota-apuracao")),
+            ("benefícios fiscais e LC 160", rn_chapter_path("beneficios-matriz-lc160")),
+            ("PROEDI e desenvolvimento", rn_chapter_path("proedi-desenvolvimento")),
+            ("ST, antecipação e combustíveis", rn_chapter_path("st-antecipacao-combustiveis")),
+            ("cBenef, EFD e prova", rn_chapter_path("documentos-cbenef-efd-prova")),
         ]
     else:
         if not state_is_deep_published(uf):
@@ -2602,6 +3077,20 @@ def state_signal_links(uf: str, signal_key: str, current_path: str) -> str:
   <div>
     <a href="{escape(rel_href(current_path, mt_chapter_path(chapter_id)))}">{escape(chapter['title'])}</a>
     <a href="{escape(rel_href(current_path, index_path('MT')))}">índice completo de MT</a>
+  </div>
+</div>
+"""
+    if uf == "RN":
+        if not state_is_deep_published(uf) or not publishable_state_documents(uf):
+            return ""
+        chapter_id = RN_SIGNAL_CHAPTER_MAP.get(signal_key, "icms-regra-matriz")
+        chapter = rn_chapter_by_id(chapter_id)
+        return f"""
+<div class="signal-law-links">
+  <strong>Capítulo do RN para estudar agora</strong>
+  <div>
+    <a href="{escape(rel_href(current_path, rn_chapter_path(chapter_id)))}">{escape(chapter['title'])}</a>
+    <a href="{escape(rel_href(current_path, index_path('RN')))}">índice completo do RN</a>
   </div>
 </div>
 """
@@ -2717,6 +3206,35 @@ def state_legal_search_entries(data: dict) -> list[dict[str, str]]:
                     "tags": f"MT Mato Grosso ICMS benefícios fiscais {tags}",
                 })
             continue
+        if uf == "RN":
+            entries.append({
+                "title": "Rio Grande do Norte: ICMS e benefícios fiscais em tela",
+                "url": index_path("RN"),
+                "summary": "RICMS/RN, anexos de isenção, redução, crédito presumido, diferimento, antecipação, ST, PROEDI, FUNDERN, Tax Free, cBenef e matriz LC 160.",
+                "tags": "RN Rio Grande do Norte ICMS RICMS benefícios fiscais alíquotas FECOP base cálculo substituição tributária ST antecipação PROEDI FUNDERN Tax Free crédito presumido redução base isenção diferimento cBenef EFD SPED LC 160 Convênio 190",
+            })
+            for chapter in RN_CHAPTERS:
+                entries.append({
+                    "title": f"Rio Grande do Norte: {chapter['title']}",
+                    "url": rn_chapter_path(chapter["id"]),
+                    "summary": chapter["summary"],
+                    "tags": f"RN Rio Grande do Norte ICMS benefícios fiscais {chapter['theme']} {chapter['title']} {chapter['summary']}",
+                })
+            for title, url, tags in [
+                ("Rio Grande do Norte: PROEDI e desenvolvimento industrial", rn_chapter_path("proedi-desenvolvimento"), "PROEDI desenvolvimento industrial crédito presumido incentivo fiscal FUNDERN regularidade"),
+                ("Rio Grande do Norte: isenção, redução e crédito presumido", rn_chapter_path("isencoes-reducoes-creditos"), "isenção redução base crédito presumido Anexo 001 Anexo 003 Anexo 004 cBenef"),
+                ("Rio Grande do Norte: agro, alimentos, pesca e diferimento", rn_chapter_path("agro-cesta-diferimento"), "agro alimentos abate gado bovino pesca óleo diesel biodiesel diferimento"),
+                ("Rio Grande do Norte: ST, antecipação, combustíveis, trigo e veículos", rn_chapter_path("st-antecipacao-combustiveis"), "substituição tributária ST antecipação combustíveis lubrificantes trigo farinha veículos autopropulsados"),
+                ("Rio Grande do Norte: Tax Free e restituição de ICMS", rn_chapter_path("mapa-revisado-beneficios"), "Tax Free restituição turistas estrangeiros saída país Convênio 150"),
+                ("Rio Grande do Norte: cBenef, EFD e prova", rn_chapter_path("documentos-cbenef-efd-prova"), "cBenef EFD SPED XML NF-e NFC-e código benefício Portaria 970"),
+            ]:
+                entries.append({
+                    "title": title,
+                    "url": url,
+                    "summary": "Entrada direta para o capítulo temático correspondente, com texto legal em tela e análise aplicada.",
+                    "tags": f"RN Rio Grande do Norte ICMS benefícios fiscais {tags}",
+                })
+            continue
         entries.append({
             "title": f"{name}: legislação de ICMS em tela",
             "url": index_path(uf),
@@ -2777,6 +3295,13 @@ def state_source_records() -> list[dict]:
                     if any(ref.get("source") == doc.get("source_id") for ref in chapter.get("refs", []))
                 ]
                 module_title = "Mato Grosso: ICMS e benefícios fiscais em tela"
+            elif uf == "RN":
+                used_chapters = [
+                    chapter["id"]
+                    for chapter in RN_CHAPTERS
+                    if any(ref.get("source") == doc.get("source_id") for ref in chapter.get("refs", []))
+                ]
+                module_title = "Rio Grande do Norte: ICMS e benefícios fiscais em tela"
             else:
                 used_chapters = [group["id"] for group in GROUP_DEFS if doc_matches_group(doc, group)]
                 module_title = f"{STATE_NAMES.get(uf, uf)}: legislação de ICMS em tela"

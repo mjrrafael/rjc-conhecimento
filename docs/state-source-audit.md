@@ -7,10 +7,10 @@ Esta auditoria mede qualidade editorial do acervo estadual antes de publicação
 ## Resumo
 
 - Estados avaliados: 27
-- Documentos estaduais candidatos a ICMS: 199
-- Documentos úteis após teste de escopo: 196
+- Documentos estaduais candidatos a ICMS: 210
+- Documentos úteis após teste de escopo: 207
 - Documentos bloqueados por escopo material: 3
-- Estados bloqueados para publicação profunda: 23
+- Estados bloqueados para publicação profunda: 22
 
 ## Estados
 
@@ -35,7 +35,7 @@ Esta auditoria mede qualidade editorial do acervo estadual antes de publicação
 | PI | Nordeste | revisao_fonte | 9 | 9 | 0 | bloquear_publicacao_ate_curadoria | contém IPVA, contém Taxas, fonte local sem URL oficial no cabeçalho |
 | PR | Sul | revisao_fonte | 11 | 11 | 0 | bloquear_publicacao_ate_curadoria | contém Taxas, fonte local sem URL oficial no cabeçalho |
 | RJ | Sudeste | revisao_fonte | 1 | 1 | 0 | bloquear_publicacao_ate_curadoria | ruído de extração/encoding |
-| RN | Nordeste | revisao_fonte | 8 | 8 | 0 | bloquear_publicacao_ate_curadoria | contém IPVA, contém ITCMD/ITCD, contém Taxas, fonte local sem URL oficial no cabeçalho |
+| RN | Nordeste | publicado_v1 | 19 | 19 | 0 | manter_publicado | sem alerta automatizado |
 | RO | Norte | revisao_fonte | 4 | 3 | 1 | bloquear_publicacao_ate_reclassificar_escopo | contém IPVA, contém Taxas, escopo dominante incompatível: conteúdo parece tratar de IPVA, não de ICMS, escopo material incompatível com ICMS, fonte local sem URL oficial no cabeçalho |
 | RR | Norte | revisao_fonte | 5 | 5 | 0 | bloquear_publicacao_ate_curadoria | contém IPVA, contém Taxas, fonte local sem URL oficial no cabeçalho, texto curto para RICMS/benefícios |
 | RS | Sul | revisao_fonte | 9 | 9 | 0 | bloquear_publicacao_ate_curadoria | contém IPVA, contém Taxas |

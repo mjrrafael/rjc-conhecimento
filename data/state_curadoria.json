@@ -2,32 +2,167 @@
   "updated_on": "2026-04-26",
   "policy": "Conteúdo estadual profundo só pode ser publicado quando RICMS, benefícios fiscais e fontes oficiais estiverem curados, salvos em texto local e revisados contra portal oficial da UF.",
   "statuses": {
-    "AC": {"region": "Norte", "status": "revisao_fonte", "publish_deep": false, "next_step": "Baixar RICMS e benefícios de ICMS no portal oficial do Acre."},
-    "AL": {"region": "Nordeste", "status": "revisao_fonte", "publish_deep": false, "next_step": "Baixar RICMS e benefícios de ICMS no portal oficial de Alagoas."},
-    "AP": {"region": "Norte", "status": "revisao_fonte", "publish_deep": false, "next_step": "Baixar RICMS e benefícios de ICMS no portal oficial do Amapá."},
-    "AM": {"region": "Norte", "status": "revisao_fonte", "publish_deep": false, "next_step": "Separar Código Tributário, RICMS e benefícios; baixar o regulamento vigente do Amazonas."},
-    "BA": {"region": "Nordeste", "status": "publicado_v1", "publish_deep": true, "next_step": "Bahia publicada como página profunda: Lei do ICMS, RICMS, anexos, substituição tributária, DESENVOLVE, PROIND, PRONAVAL, crédito presumido, informática/eletrônica, atos da LC 160/Convênio 190 e EFD dos incentivos."},
-    "CE": {"region": "Nordeste", "status": "revisao_fonte", "publish_deep": false, "next_step": "Baixar RICMS, decretos modificadores e benefícios no portal oficial do Ceará."},
-    "DF": {"region": "Centro-Oeste", "status": "publicado_v1", "publish_deep": true, "next_step": "Distrito Federal publicado como página profunda: Lei do ICMS, RICMS, Cadernos do Anexo I, Anexo IV, LC 160/Convênio 190, regime especial de apuração, crédito outorgado, EMPREGA-DF, PRÓ-DF II, Desenvolve-DF, diferimento agro e EFD ICMS/IPI."},
-    "ES": {"region": "Sudeste", "status": "revisao_fonte", "publish_deep": false, "next_step": "Baixar RICMS/ES vigente e benefícios no portal oficial do Espírito Santo."},
-    "GO": {"region": "Centro-Oeste", "status": "aprovado_v1", "publish_deep": true, "next_step": "Manter monitoramento de RCTE, Anexo IX, cBenef e atos modificadores."},
-    "MA": {"region": "Nordeste", "status": "revisao_fonte", "publish_deep": false, "next_step": "Baixar RICMS/MA e anexos de benefícios no portal oficial do Maranhão."},
-    "MT": {"region": "Centro-Oeste", "status": "publicado_v1", "publish_deep": true, "next_step": "Mato Grosso publicado como página profunda: Lei do ICMS, RICMS, LC 631/2019, anexos de isenção, redução de base, créditos fiscais, diferimento, PRODEIC, substituição tributária, estimativa simplificada, cBenef e prova fiscal."},
-    "MS": {"region": "Centro-Oeste", "status": "revisao_fonte", "publish_deep": false, "next_step": "Baixar RICMS/MS e anexos de benefícios no portal oficial de Mato Grosso do Sul."},
-    "MG": {"region": "Sudeste", "status": "revisao_fonte", "publish_deep": false, "next_step": "Baixar RICMS/MG vigente, anexos e benefícios diretamente da SEF/MG."},
-    "PA": {"region": "Norte", "status": "revisao_fonte", "publish_deep": false, "next_step": "Baixar RICMS/PA e benefícios no portal oficial do Pará."},
-    "PB": {"region": "Nordeste", "status": "revisao_fonte", "publish_deep": false, "next_step": "Baixar RICMS/PB e benefícios no portal oficial da Paraíba."},
-    "PR": {"region": "Sul", "status": "revisao_fonte", "publish_deep": false, "next_step": "Baixar RICMS/PR e anexos de benefícios no portal oficial do Paraná."},
-    "PE": {"region": "Nordeste", "status": "revisao_fonte", "publish_deep": false, "next_step": "Baixar RICMS/PE e benefícios no portal oficial de Pernambuco."},
-    "PI": {"region": "Nordeste", "status": "revisao_fonte", "publish_deep": false, "next_step": "Baixar RICMS/PI e benefícios no portal oficial do Piauí."},
-    "RJ": {"region": "Sudeste", "status": "revisao_fonte", "publish_deep": false, "next_step": "Baixar RICMS/RJ, Livro/Anexos e benefícios no portal oficial do Rio de Janeiro."},
-    "RN": {"region": "Nordeste", "status": "revisao_fonte", "publish_deep": false, "next_step": "Baixar RICMS/RN e benefícios no portal oficial do Rio Grande do Norte."},
-    "RS": {"region": "Sul", "status": "revisao_fonte", "publish_deep": false, "next_step": "Baixar RICMS/RS e benefícios no portal oficial do Rio Grande do Sul."},
-    "RO": {"region": "Norte", "status": "revisao_fonte", "publish_deep": false, "next_step": "Baixar RICMS/RO e benefícios no portal oficial de Rondônia."},
-    "RR": {"region": "Norte", "status": "revisao_fonte", "publish_deep": false, "next_step": "Baixar RICMS/RR e benefícios no portal oficial de Roraima."},
-    "SC": {"region": "Sul", "status": "revisao_fonte", "publish_deep": false, "next_step": "Baixar RICMS/SC e anexos de benefícios no portal oficial de Santa Catarina."},
-    "SP": {"region": "Sudeste", "status": "revisao_fonte", "publish_deep": false, "next_step": "Substituir PDF extraído por texto limpo do RICMS/2000 e anexos de benefícios da SEFAZ/SP."},
-    "SE": {"region": "Nordeste", "status": "revisao_fonte", "publish_deep": false, "next_step": "Baixar RICMS/SE e benefícios no portal oficial de Sergipe."},
-    "TO": {"region": "Norte", "status": "revisao_fonte", "publish_deep": false, "next_step": "Baixar RICMS/TO e benefícios no portal oficial do Tocantins."}
+    "AC": {
+      "region": "Norte",
+      "status": "revisao_fonte",
+      "publish_deep": false,
+      "next_step": "Baixar RICMS e benefícios de ICMS no portal oficial do Acre."
+    },
+    "AL": {
+      "region": "Nordeste",
+      "status": "revisao_fonte",
+      "publish_deep": false,
+      "next_step": "Baixar RICMS e benefícios de ICMS no portal oficial de Alagoas."
+    },
+    "AP": {
+      "region": "Norte",
+      "status": "revisao_fonte",
+      "publish_deep": false,
+      "next_step": "Baixar RICMS e benefícios de ICMS no portal oficial do Amapá."
+    },
+    "AM": {
+      "region": "Norte",
+      "status": "revisao_fonte",
+      "publish_deep": false,
+      "next_step": "Separar Código Tributário, RICMS e benefícios; baixar o regulamento vigente do Amazonas."
+    },
+    "BA": {
+      "region": "Nordeste",
+      "status": "publicado_v1",
+      "publish_deep": true,
+      "next_step": "Bahia publicada como página profunda: Lei do ICMS, RICMS, anexos, substituição tributária, DESENVOLVE, PROIND, PRONAVAL, crédito presumido, informática/eletrônica, atos da LC 160/Convênio 190 e EFD dos incentivos."
+    },
+    "CE": {
+      "region": "Nordeste",
+      "status": "revisao_fonte",
+      "publish_deep": false,
+      "next_step": "Baixar RICMS, decretos modificadores e benefícios no portal oficial do Ceará."
+    },
+    "DF": {
+      "region": "Centro-Oeste",
+      "status": "publicado_v1",
+      "publish_deep": true,
+      "next_step": "Distrito Federal publicado como página profunda: Lei do ICMS, RICMS, Cadernos do Anexo I, Anexo IV, LC 160/Convênio 190, regime especial de apuração, crédito outorgado, EMPREGA-DF, PRÓ-DF II, Desenvolve-DF, diferimento agro e EFD ICMS/IPI."
+    },
+    "ES": {
+      "region": "Sudeste",
+      "status": "revisao_fonte",
+      "publish_deep": false,
+      "next_step": "Baixar RICMS/ES vigente e benefícios no portal oficial do Espírito Santo."
+    },
+    "GO": {
+      "region": "Centro-Oeste",
+      "status": "aprovado_v1",
+      "publish_deep": true,
+      "next_step": "Manter monitoramento de RCTE, Anexo IX, cBenef e atos modificadores."
+    },
+    "MA": {
+      "region": "Nordeste",
+      "status": "revisao_fonte",
+      "publish_deep": false,
+      "next_step": "Baixar RICMS/MA e anexos de benefícios no portal oficial do Maranhão."
+    },
+    "MT": {
+      "region": "Centro-Oeste",
+      "status": "publicado_v1",
+      "publish_deep": true,
+      "next_step": "Mato Grosso publicado como página profunda: Lei do ICMS, RICMS, LC 631/2019, anexos de isenção, redução de base, créditos fiscais, diferimento, PRODEIC, substituição tributária, estimativa simplificada, cBenef e prova fiscal."
+    },
+    "MS": {
+      "region": "Centro-Oeste",
+      "status": "revisao_fonte",
+      "publish_deep": false,
+      "next_step": "Baixar RICMS/MS e anexos de benefícios no portal oficial de Mato Grosso do Sul."
+    },
+    "MG": {
+      "region": "Sudeste",
+      "status": "revisao_fonte",
+      "publish_deep": false,
+      "next_step": "Baixar RICMS/MG vigente, anexos e benefícios diretamente da SEF/MG."
+    },
+    "PA": {
+      "region": "Norte",
+      "status": "revisao_fonte",
+      "publish_deep": false,
+      "next_step": "Baixar RICMS/PA e benefícios no portal oficial do Pará."
+    },
+    "PB": {
+      "region": "Nordeste",
+      "status": "revisao_fonte",
+      "publish_deep": false,
+      "next_step": "Baixar RICMS/PB e benefícios no portal oficial da Paraíba."
+    },
+    "PR": {
+      "region": "Sul",
+      "status": "revisao_fonte",
+      "publish_deep": false,
+      "next_step": "Baixar RICMS/PR e anexos de benefícios no portal oficial do Paraná."
+    },
+    "PE": {
+      "region": "Nordeste",
+      "status": "revisao_fonte",
+      "publish_deep": false,
+      "next_step": "Baixar RICMS/PE e benefícios no portal oficial de Pernambuco."
+    },
+    "PI": {
+      "region": "Nordeste",
+      "status": "revisao_fonte",
+      "publish_deep": false,
+      "next_step": "Baixar RICMS/PI e benefícios no portal oficial do Piauí."
+    },
+    "RJ": {
+      "region": "Sudeste",
+      "status": "revisao_fonte",
+      "publish_deep": false,
+      "next_step": "Baixar RICMS/RJ, Livro/Anexos e benefícios no portal oficial do Rio de Janeiro."
+    },
+    "RN": {
+      "region": "Nordeste",
+      "status": "publicado_v1",
+      "publish_deep": true,
+      "next_step": "RN publicado com RICMS, anexos de isenção, diferimento, crédito presumido, redução de base, antecipação, ST, PROEDI, FUNDERN, Tax Free, cBenef e matriz LC 160."
+    },
+    "RS": {
+      "region": "Sul",
+      "status": "revisao_fonte",
+      "publish_deep": false,
+      "next_step": "Baixar RICMS/RS e benefícios no portal oficial do Rio Grande do Sul."
+    },
+    "RO": {
+      "region": "Norte",
+      "status": "revisao_fonte",
+      "publish_deep": false,
+      "next_step": "Baixar RICMS/RO e benefícios no portal oficial de Rondônia."
+    },
+    "RR": {
+      "region": "Norte",
+      "status": "revisao_fonte",
+      "publish_deep": false,
+      "next_step": "Baixar RICMS/RR e benefícios no portal oficial de Roraima."
+    },
+    "SC": {
+      "region": "Sul",
+      "status": "revisao_fonte",
+      "publish_deep": false,
+      "next_step": "Baixar RICMS/SC e anexos de benefícios no portal oficial de Santa Catarina."
+    },
+    "SP": {
+      "region": "Sudeste",
+      "status": "revisao_fonte",
+      "publish_deep": false,
+      "next_step": "Substituir PDF extraído por texto limpo do RICMS/2000 e anexos de benefícios da SEFAZ/SP."
+    },
+    "SE": {
+      "region": "Nordeste",
+      "status": "revisao_fonte",
+      "publish_deep": false,
+      "next_step": "Baixar RICMS/SE e benefícios no portal oficial de Sergipe."
+    },
+    "TO": {
+      "region": "Norte",
+      "status": "revisao_fonte",
+      "publish_deep": false,
+      "next_step": "Baixar RICMS/TO e benefícios no portal oficial do Tocantins."
+    }
   }
 }

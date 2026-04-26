@@ -2186,6 +2186,597 @@
           ]
         }
       ]
+    },
+    {
+      "source_id": "state-rn-rn-dec-31825-2022-ricms-geral",
+      "jurisdiction": "RN",
+      "title": "Decreto nº 31.825/2022 - Regulamento do ICMS/RN, parte geral",
+      "short": "Regulamento do ICMS",
+      "official_url": "https://www.diariooficial.rn.gov.br/dei/dorn3/documentos/00000001/20220819/783131.htm",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "data/fontes-estaduais-curadas/nordeste/RN/RN_DEC_31825_2022_RICMS_GERAL_2026-04-26.txt"
+        ],
+        "sha256": {
+          "RN_DEC_31825_2022_RICMS_GERAL_2026-04-26.txt": "4c5e9729b8eb8ddebe030546c34f18abf4f5c5e051f9846eefec61e54dd32303"
+        },
+        "fetch_url": "https://www.diariooficial.rn.gov.br/dei/dorn3/documentos/00000001/20220819/783131.htm"
+      },
+      "note": "Texto estadual de ICMS publicado em estados/rn/legislacao/fontes/rn-dec-31825-2022-ricms-geral.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-rn",
+          "module_title": "Rio Grande do Norte: ICMS e benefícios fiscais em tela",
+          "chapters": [
+            "icms-regra-matriz",
+            "base-aliquota-apuracao",
+            "beneficios-matriz-lc160",
+            "atacado-distribuicao-regimes",
+            "st-antecipacao-combustiveis",
+            "documentos-cbenef-efd-prova",
+            "fiscalizacao-riscos"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-rn-rn-ricms-anexo-001-isencao",
+      "jurisdiction": "RN",
+      "title": "RICMS/RN - Anexo 001 - operações e prestações alcançadas com isenção do ICMS",
+      "short": "Benefícios fiscais de ICMS",
+      "official_url": "https://www.diariooficial.rn.gov.br/dei/dorn3/documentos/00000001/20220819/783146.htm",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "data/fontes-estaduais-curadas/nordeste/RN/RN_RICMS_ANEXO_001_ISENCAO_2026-04-26.txt"
+        ],
+        "sha256": {
+          "RN_RICMS_ANEXO_001_ISENCAO_2026-04-26.txt": "e5da95cb94644f677d8065fedb2df991c1bfdc71373fdcd7d3e56c8b322fb21c"
+        },
+        "fetch_url": "https://www.diariooficial.rn.gov.br/dei/dorn3/documentos/00000001/20220819/783146.htm"
+      },
+      "note": "Texto estadual de ICMS publicado em estados/rn/legislacao/fontes/rn-ricms-anexo-001-isencao.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-rn",
+          "module_title": "Rio Grande do Norte: ICMS e benefícios fiscais em tela",
+          "chapters": [
+            "isencoes-reducoes-creditos",
+            "agro-cesta-diferimento",
+            "mapa-revisado-beneficios"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-rn-rn-ricms-anexo-002-diferimento",
+      "jurisdiction": "RN",
+      "title": "RICMS/RN - Anexo 002 - operações e prestações alcançadas pelo diferimento do ICMS",
+      "short": "Benefícios fiscais de ICMS",
+      "official_url": "https://www.diariooficial.rn.gov.br/dei/dorn3/documentos/00000001/20220819/783143.htm",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "data/fontes-estaduais-curadas/nordeste/RN/RN_RICMS_ANEXO_002_DIFERIMENTO_2026-04-26.txt"
+        ],
+        "sha256": {
+          "RN_RICMS_ANEXO_002_DIFERIMENTO_2026-04-26.txt": "4cd676831c4dd63c338fe4b188dd1fb1282296e84f165c37e7ea2f4cbf118c6d"
+        },
+        "fetch_url": "https://www.diariooficial.rn.gov.br/dei/dorn3/documentos/00000001/20220819/783143.htm"
+      },
+      "note": "Texto estadual de ICMS publicado em estados/rn/legislacao/fontes/rn-ricms-anexo-002-diferimento.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-rn",
+          "module_title": "Rio Grande do Norte: ICMS e benefícios fiscais em tela",
+          "chapters": [
+            "agro-cesta-diferimento"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-rn-rn-ricms-anexo-003-credito-presumido",
+      "jurisdiction": "RN",
+      "title": "RICMS/RN - Anexo 003 - operações e prestações alcançadas pelo crédito presumido do ICMS",
+      "short": "Benefícios fiscais de ICMS",
+      "official_url": "https://www.diariooficial.rn.gov.br/dei/dorn3/documentos/00000001/20220819/783139.htm",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "data/fontes-estaduais-curadas/nordeste/RN/RN_RICMS_ANEXO_003_CREDITO_PRESUMIDO_2026-04-26.txt"
+        ],
+        "sha256": {
+          "RN_RICMS_ANEXO_003_CREDITO_PRESUMIDO_2026-04-26.txt": "ac8e0bc0692c0569fbdaa7ec60971905d2527c0420f7ebd54dc0397452615783"
+        },
+        "fetch_url": "https://www.diariooficial.rn.gov.br/dei/dorn3/documentos/00000001/20220819/783139.htm"
+      },
+      "note": "Texto estadual de ICMS publicado em estados/rn/legislacao/fontes/rn-ricms-anexo-003-credito-presumido.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-rn",
+          "module_title": "Rio Grande do Norte: ICMS e benefícios fiscais em tela",
+          "chapters": [
+            "isencoes-reducoes-creditos",
+            "proedi-desenvolvimento",
+            "agro-cesta-diferimento",
+            "mapa-revisado-beneficios"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-rn-rn-ricms-anexo-004-reducao-base",
+      "jurisdiction": "RN",
+      "title": "RICMS/RN - Anexo 004 - operações e prestações com redução de base de cálculo do ICMS",
+      "short": "Benefícios fiscais de ICMS",
+      "official_url": "https://www.diariooficial.rn.gov.br/dei/dorn3/documentos/00000001/20220819/783151.htm",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "data/fontes-estaduais-curadas/nordeste/RN/RN_RICMS_ANEXO_004_REDUCAO_BASE_2026-04-26.txt"
+        ],
+        "sha256": {
+          "RN_RICMS_ANEXO_004_REDUCAO_BASE_2026-04-26.txt": "00ad759b1c05880b89ceaf349e8e64601c2957f38166e9a8cfa1595cf328f4ff"
+        },
+        "fetch_url": "https://www.diariooficial.rn.gov.br/dei/dorn3/documentos/00000001/20220819/783151.htm"
+      },
+      "note": "Texto estadual de ICMS publicado em estados/rn/legislacao/fontes/rn-ricms-anexo-004-reducao-base.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-rn",
+          "module_title": "Rio Grande do Norte: ICMS e benefícios fiscais em tela",
+          "chapters": [
+            "base-aliquota-apuracao",
+            "isencoes-reducoes-creditos",
+            "mapa-revisado-beneficios"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-rn-rn-ricms-anexo-005-antecipacao",
+      "jurisdiction": "RN",
+      "title": "RICMS/RN - Anexo 005 - produtos sujeitos à antecipação do ICMS",
+      "short": "Substituição tributária e antecipação",
+      "official_url": "https://www.diariooficial.rn.gov.br/dei/dorn3/documentos/00000001/20220819/783140.htm",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "data/fontes-estaduais-curadas/nordeste/RN/RN_RICMS_ANEXO_005_ANTECIPACAO_2026-04-26.txt"
+        ],
+        "sha256": {
+          "RN_RICMS_ANEXO_005_ANTECIPACAO_2026-04-26.txt": "98356f0a7ca7e9d3e2dd80d0b463a7e19ff23a324e40284612299f4e1d15ce54"
+        },
+        "fetch_url": "https://www.diariooficial.rn.gov.br/dei/dorn3/documentos/00000001/20220819/783140.htm"
+      },
+      "note": "Texto estadual de ICMS publicado em estados/rn/legislacao/fontes/rn-ricms-anexo-005-antecipacao.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-rn",
+          "module_title": "Rio Grande do Norte: ICMS e benefícios fiscais em tela",
+          "chapters": [
+            "st-antecipacao-combustiveis"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-rn-rn-ricms-anexo-007-st",
+      "jurisdiction": "RN",
+      "title": "RICMS/RN - Anexo 007 - regime de substituição tributária",
+      "short": "Substituição tributária e antecipação",
+      "official_url": "https://www.diariooficial.rn.gov.br/dei/dorn3/documentos/00000001/20220819/783145.htm",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "data/fontes-estaduais-curadas/nordeste/RN/RN_RICMS_ANEXO_007_ST_2026-04-26.txt"
+        ],
+        "sha256": {
+          "RN_RICMS_ANEXO_007_ST_2026-04-26.txt": "3096767d20bbaebde91d2a1be31da45684956faf3b1c58a9bfd7dafc07ee77f4"
+        },
+        "fetch_url": "https://www.diariooficial.rn.gov.br/dei/dorn3/documentos/00000001/20220819/783145.htm"
+      },
+      "note": "Texto estadual de ICMS publicado em estados/rn/legislacao/fontes/rn-ricms-anexo-007-st.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-rn",
+          "module_title": "Rio Grande do Norte: ICMS e benefícios fiscais em tela",
+          "chapters": [
+            "st-antecipacao-combustiveis"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-rn-rn-ricms-anexo-008-st-combustiveis",
+      "jurisdiction": "RN",
+      "title": "RICMS/RN - Anexo 008 - substituição tributária com combustíveis e lubrificantes",
+      "short": "Substituição tributária e antecipação",
+      "official_url": "https://www.diariooficial.rn.gov.br/dei/dorn3/documentos/00000001/20220819/783150.htm",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "data/fontes-estaduais-curadas/nordeste/RN/RN_RICMS_ANEXO_008_ST_COMBUSTIVEIS_2026-04-26.txt"
+        ],
+        "sha256": {
+          "RN_RICMS_ANEXO_008_ST_COMBUSTIVEIS_2026-04-26.txt": "fdf8b35761fd67f4be65d7edfc5ee2d3dd31b20d94335ff458c5e3502709e1f4"
+        },
+        "fetch_url": "https://www.diariooficial.rn.gov.br/dei/dorn3/documentos/00000001/20220819/783150.htm"
+      },
+      "note": "Texto estadual de ICMS publicado em estados/rn/legislacao/fontes/rn-ricms-anexo-008-st-combustiveis.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-rn",
+          "module_title": "Rio Grande do Norte: ICMS e benefícios fiscais em tela",
+          "chapters": [
+            "st-antecipacao-combustiveis"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-rn-rn-ricms-anexo-009-trigo",
+      "jurisdiction": "RN",
+      "title": "RICMS/RN - Anexo 009 - substituição tributária com trigo, farinha de trigo e derivados",
+      "short": "Substituição tributária e antecipação",
+      "official_url": "https://www.diariooficial.rn.gov.br/dei/dorn3/documentos/00000001/20220819/783138.htm",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "data/fontes-estaduais-curadas/nordeste/RN/RN_RICMS_ANEXO_009_TRIGO_2026-04-26.txt"
+        ],
+        "sha256": {
+          "RN_RICMS_ANEXO_009_TRIGO_2026-04-26.txt": "1e6d95eeaee1f87cd0c8650005dbe1c6f8200eb045bcf00cfc843f5400f4e377"
+        },
+        "fetch_url": "https://www.diariooficial.rn.gov.br/dei/dorn3/documentos/00000001/20220819/783138.htm"
+      },
+      "note": "Texto estadual de ICMS publicado em estados/rn/legislacao/fontes/rn-ricms-anexo-009-trigo.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-rn",
+          "module_title": "Rio Grande do Norte: ICMS e benefícios fiscais em tela",
+          "chapters": [
+            "st-antecipacao-combustiveis"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-rn-rn-ricms-anexo-010-veiculos",
+      "jurisdiction": "RN",
+      "title": "RICMS/RN - Anexo 010 - substituição tributária com veículos autopropulsados",
+      "short": "Substituição tributária e antecipação",
+      "official_url": "https://www.diariooficial.rn.gov.br/dei/dorn3/documentos/00000001/20220819/783142.htm",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "data/fontes-estaduais-curadas/nordeste/RN/RN_RICMS_ANEXO_010_VEICULOS_2026-04-26.txt"
+        ],
+        "sha256": {
+          "RN_RICMS_ANEXO_010_VEICULOS_2026-04-26.txt": "3f7a2a551043e1245eb1f5880c7219b93dc199fcfd50907392d460867927cb4f"
+        },
+        "fetch_url": "https://www.diariooficial.rn.gov.br/dei/dorn3/documentos/00000001/20220819/783142.htm"
+      },
+      "note": "Texto estadual de ICMS publicado em estados/rn/legislacao/fontes/rn-ricms-anexo-010-veiculos.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-rn",
+          "module_title": "Rio Grande do Norte: ICMS e benefícios fiscais em tela",
+          "chapters": [
+            "st-antecipacao-combustiveis"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-rn-rn-ricms-anexo-011-documentos",
+      "jurisdiction": "RN",
+      "title": "RICMS/RN - Anexo 011 - documentos fiscais",
+      "short": "Documentos fiscais, EFD e prova",
+      "official_url": "https://www.diariooficial.rn.gov.br/dei/dorn3/documentos/00000001/20220819/783154.htm",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "data/fontes-estaduais-curadas/nordeste/RN/RN_RICMS_ANEXO_011_DOCUMENTOS_2026-04-26.txt"
+        ],
+        "sha256": {
+          "RN_RICMS_ANEXO_011_DOCUMENTOS_2026-04-26.txt": "a1a7cbc40cebb1f79127adb3fafa2178b017136988d7b590ed7497d4b8dab187"
+        },
+        "fetch_url": "https://www.diariooficial.rn.gov.br/dei/dorn3/documentos/00000001/20220819/783154.htm"
+      },
+      "note": "Texto estadual de ICMS publicado em estados/rn/legislacao/fontes/rn-ricms-anexo-011-documentos.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-rn",
+          "module_title": "Rio Grande do Norte: ICMS e benefícios fiscais em tela",
+          "chapters": [
+            "documentos-cbenef-efd-prova"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-rn-rn-port-022-2018-beneficios-lc160",
+      "jurisdiction": "RN",
+      "title": "Portaria nº 022/2018-GS/SET - relação de atos de benefícios fiscais do ICMS/RN para LC 160/2017 e Convênio ICMS 190/2017",
+      "short": "Benefícios fiscais de ICMS",
+      "official_url": "https://www.diariooficial.rn.gov.br/dei/dorn3/documentos/00000001/20180329/604259.htm",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "data/fontes-estaduais-curadas/nordeste/RN/RN_PORT_022_2018_BENEFICIOS_LC160_2026-04-26.txt"
+        ],
+        "sha256": {
+          "RN_PORT_022_2018_BENEFICIOS_LC160_2026-04-26.txt": "788748d40bf3d32e109c57121938f3cda8d9a4bb2dfc9ce22a825b361a777cc4"
+        },
+        "fetch_url": "https://www.diariooficial.rn.gov.br/dei/dorn3/documentos/00000001/20180329/604259.htm"
+      },
+      "note": "Texto estadual de ICMS publicado em estados/rn/legislacao/fontes/rn-port-022-2018-beneficios-lc160.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-rn",
+          "module_title": "Rio Grande do Norte: ICMS e benefícios fiscais em tela",
+          "chapters": [
+            "beneficios-matriz-lc160",
+            "atacado-distribuicao-regimes",
+            "mapa-revisado-beneficios"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-rn-rn-lei-10640-2019-proedi",
+      "jurisdiction": "RN",
+      "title": "Lei nº 10.640/2019 - Programa de Estímulo ao Desenvolvimento Industrial do Rio Grande do Norte (PROEDI)",
+      "short": "Benefícios fiscais de ICMS",
+      "official_url": "https://diariooficial.rn.gov.br/dei/dorn3/documentos/00000001/20191228/670153.htm",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "data/fontes-estaduais-curadas/nordeste/RN/RN_LEI_10640_2019_PROEDI_2026-04-26.txt"
+        ],
+        "sha256": {
+          "RN_LEI_10640_2019_PROEDI_2026-04-26.txt": "3afae41436f7b9f4d749ec98594af1c638095ed8f9be5ecb207718af5c1ec385"
+        },
+        "fetch_url": "https://diariooficial.rn.gov.br/dei/dorn3/documentos/00000001/20191228/670153.htm"
+      },
+      "note": "Texto estadual de ICMS publicado em estados/rn/legislacao/fontes/rn-lei-10640-2019-proedi.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-rn",
+          "module_title": "Rio Grande do Norte: ICMS e benefícios fiscais em tela",
+          "chapters": [
+            "proedi-desenvolvimento"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-rn-rn-dec-29420-2019-proedi",
+      "jurisdiction": "RN",
+      "title": "Decreto nº 29.420/2019 - regulamentação do PROEDI",
+      "short": "Benefícios fiscais de ICMS",
+      "official_url": "https://diariooficial.rn.gov.br/dei/dorn3/documentos/00000001/20191228/670256.htm",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "data/fontes-estaduais-curadas/nordeste/RN/RN_DEC_29420_2019_PROEDI_2026-04-26.txt"
+        ],
+        "sha256": {
+          "RN_DEC_29420_2019_PROEDI_2026-04-26.txt": "ad0313e1f5ecffb38b7d09ef06ad7b08451c4722f1d2cbbb106dc486f29f635a"
+        },
+        "fetch_url": "https://diariooficial.rn.gov.br/dei/dorn3/documentos/00000001/20191228/670256.htm"
+      },
+      "note": "Texto estadual de ICMS publicado em estados/rn/legislacao/fontes/rn-dec-29420-2019-proedi.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-rn",
+          "module_title": "Rio Grande do Norte: ICMS e benefícios fiscais em tela",
+          "chapters": [
+            "proedi-desenvolvimento",
+            "fiscalizacao-riscos"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-rn-rn-dec-27608-2017-fundern",
+      "jurisdiction": "RN",
+      "title": "Decreto nº 27.608/2017 - regulamentação do FUNDERN vinculado a incentivos e benefícios de ICMS",
+      "short": "Fundos e contrapartidas",
+      "official_url": "https://diariooficial.rn.gov.br/dei/dorn3/documentos/00000001/20171214/594560.htm",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "data/fontes-estaduais-curadas/nordeste/RN/RN_DEC_27608_2017_FUNDERN_2026-04-26.txt"
+        ],
+        "sha256": {
+          "RN_DEC_27608_2017_FUNDERN_2026-04-26.txt": "6e4d2b0595520c01bb0aa9cbc03a3bf31343469cdec4b392804f1c7df369335b"
+        },
+        "fetch_url": "https://diariooficial.rn.gov.br/dei/dorn3/documentos/00000001/20171214/594560.htm"
+      },
+      "note": "Texto estadual de ICMS publicado em estados/rn/legislacao/fontes/rn-dec-27608-2017-fundern.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-rn",
+          "module_title": "Rio Grande do Norte: ICMS e benefícios fiscais em tela",
+          "chapters": [
+            "beneficios-matriz-lc160",
+            "proedi-desenvolvimento",
+            "fiscalizacao-riscos"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-rn-rn-dec-26789-2017-atacadistas",
+      "jurisdiction": "RN",
+      "title": "Decreto nº 26.789/2017 - alteração do regime especial de tributação para contribuintes atacadistas",
+      "short": "Regimes especiais de ICMS",
+      "official_url": "https://www.diariooficial.rn.gov.br/dei/dorn3/documentos/00000001/20170421/569957.htm",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "data/fontes-estaduais-curadas/nordeste/RN/RN_DEC_26789_2017_ATACADISTAS_2026-04-26.txt"
+        ],
+        "sha256": {
+          "RN_DEC_26789_2017_ATACADISTAS_2026-04-26.txt": "cfd0bdcc6ce98e6595ab159d7f867dbfff88d6856233059b1697d242c66422f3"
+        },
+        "fetch_url": "https://www.diariooficial.rn.gov.br/dei/dorn3/documentos/00000001/20170421/569957.htm"
+      },
+      "note": "Texto estadual de ICMS publicado em estados/rn/legislacao/fontes/rn-dec-26789-2017-atacadistas.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-rn",
+          "module_title": "Rio Grande do Norte: ICMS e benefícios fiscais em tela",
+          "chapters": [
+            "atacado-distribuicao-regimes"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-rn-rn-lei-12111-2025-tax-free",
+      "jurisdiction": "RN",
+      "title": "Lei nº 12.111/2025 - Programa Tax Free no ICMS/RN",
+      "short": "Benefícios fiscais de ICMS",
+      "official_url": "https://www.al.rn.leg.br/storage/legislacao/2025/f5rvqq0qjlkyx5yr1fyknufh0wf5ts.pdf",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "data/fontes-estaduais-curadas/nordeste/RN/RN_LEI_12111_2025_TAX_FREE_2026-04-26.txt"
+        ],
+        "sha256": {
+          "RN_LEI_12111_2025_TAX_FREE_2026-04-26.txt": "253133c1b9f666ef008bc0219544bfcc4ec498f6046d81a802c4658cf8ab4485"
+        },
+        "fetch_url": "https://www.al.rn.leg.br/storage/legislacao/2025/f5rvqq0qjlkyx5yr1fyknufh0wf5ts.pdf"
+      },
+      "note": "Texto estadual de ICMS publicado em estados/rn/legislacao/fontes/rn-lei-12111-2025-tax-free.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-rn",
+          "module_title": "Rio Grande do Norte: ICMS e benefícios fiscais em tela",
+          "chapters": [
+            "mapa-revisado-beneficios"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-rn-rn-lei-11999-2024-icms-lc87",
+      "jurisdiction": "RN",
+      "title": "Lei nº 11.999/2024 - alterações na Lei nº 6.968/1996 para adequação à LC 87/1996",
+      "short": "Lei material do ICMS",
+      "official_url": "https://www.al.rn.leg.br/storage/legislacao/2025/stqpzaxnkhj8e1efdy6wnsk815m85v.pdf",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "data/fontes-estaduais-curadas/nordeste/RN/RN_LEI_11999_2024_ICMS_LC87_2026-04-26.txt"
+        ],
+        "sha256": {
+          "RN_LEI_11999_2024_ICMS_LC87_2026-04-26.txt": "91ec14f0517b59430d69972f879ce3891e4dd27343091199d7f4bb01ee097079"
+        },
+        "fetch_url": "https://www.al.rn.leg.br/storage/legislacao/2025/stqpzaxnkhj8e1efdy6wnsk815m85v.pdf"
+      },
+      "note": "Texto estadual de ICMS publicado em estados/rn/legislacao/fontes/rn-lei-11999-2024-icms-lc87.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-rn",
+          "module_title": "Rio Grande do Norte: ICMS e benefícios fiscais em tela",
+          "chapters": [
+            "icms-regra-matriz"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-rn-rn-port-970-2025-cbenef",
+      "jurisdiction": "RN",
+      "title": "Portaria-SEI nº 970/2025 - tabela de códigos de benefícios fiscais cBenef do ICMS/RN",
+      "short": "Documentos fiscais, EFD e prova",
+      "official_url": "https://webdisk.diariooficial.rn.gov.br/Jornal/12025-09-23.pdf",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "data/fontes-estaduais-curadas/nordeste/RN/RN_PORT_970_2025_CBENEF_2026-04-26.txt"
+        ],
+        "sha256": {
+          "RN_PORT_970_2025_CBENEF_2026-04-26.txt": "bc484fae74a6ba74825d97d2e407f23c48034f5443fdf621fcc442fc8c675976"
+        },
+        "fetch_url": "https://webdisk.diariooficial.rn.gov.br/Jornal/12025-09-23.pdf"
+      },
+      "note": "Texto estadual de ICMS publicado em estados/rn/legislacao/fontes/rn-port-970-2025-cbenef.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-rn",
+          "module_title": "Rio Grande do Norte: ICMS e benefícios fiscais em tela",
+          "chapters": [
+            "isencoes-reducoes-creditos",
+            "agro-cesta-diferimento",
+            "documentos-cbenef-efd-prova",
+            "fiscalizacao-riscos"
+          ]
+        }
+      ]
     }
   ]
 }

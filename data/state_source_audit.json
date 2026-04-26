@@ -2,10 +2,10 @@
   "generated_on": "2026-04-26",
   "summary": {
     "states": 27,
-    "docs": 199,
-    "publishable_docs": 196,
+    "docs": 210,
+    "publishable_docs": 207,
     "scope_blocked_docs": 3,
-    "blocked": 23
+    "blocked": 22
   },
   "states": {
     "AC": {
@@ -3016,29 +3016,27 @@
     "RN": {
       "estado": "Rio Grande do Norte",
       "region": "Nordeste",
-      "curadoria": "revisao_fonte",
-      "publish_deep": false,
-      "document_count": 8,
-      "publishable_document_count": 8,
+      "curadoria": "publicado_v1",
+      "publish_deep": true,
+      "document_count": 19,
+      "publishable_document_count": 19,
       "scope_blocked_document_count": 0,
-      "total_chars": 3100167,
+      "total_chars": 2198500,
       "categories": {
+        "ICMS_BENEFICIOS": 10,
         "ICMS_LEIS": 1,
-        "RICMS": 7
+        "ICMS_ST": 5,
+        "INSTRUCOES_NORMATIVAS": 2,
+        "RICMS": 1
       },
-      "flags": [
-        "contém IPVA",
-        "contém ITCMD/ITCD",
-        "contém Taxas",
-        "fonte local sem URL oficial no cabeçalho"
-      ],
-      "recommendation": "bloquear_publicacao_ate_curadoria",
-      "next_step": "Baixar RICMS/RN e benefícios no portal oficial do Rio Grande do Norte.",
+      "flags": [],
+      "recommendation": "manter_publicado",
+      "next_step": "RN publicado com RICMS, anexos de isenção, diferimento, crédito presumido, redução de base, antecipação, ST, PROEDI, FUNDERN, Tax Free, cBenef e matriz LC 160.",
       "documents": [
         {
-          "file": "RN_ICMS_LEIS.txt",
-          "category": "ICMS_LEIS",
-          "chars": 51753,
+          "file": "RN_DEC_31825_2022_RICMS_GERAL_2026-04-26.txt",
+          "category": "RICMS",
+          "chars": 1065662,
           "named_icms": true,
           "fallback_icms": false,
           "dominant_scope": "ICMS",
@@ -3048,117 +3046,314 @@
           "scope_blocked": false,
           "scope_flags": [],
           "source_documents": [
-            "ICMS/Lei 12111-2025.pdf",
-            "ICMS/Lei 12145-2025.pdf"
+            "https://www.diariooficial.rn.gov.br/dei/dorn3/documentos/00000001/20220819/783131.htm"
           ],
-          "flags": [
-            "contém IPVA",
-            "contém ITCMD/ITCD",
-            "contém Taxas",
-            "fonte local sem URL oficial no cabeçalho"
-          ]
-        },
-        {
-          "file": "RN_RICMS_pt1.txt",
-          "category": "RICMS",
-          "chars": 476686,
-          "named_icms": true,
-          "fallback_icms": false,
-          "dominant_scope": "ICMS",
-          "source_scopes": [],
-          "scope_blocked": false,
-          "scope_flags": [],
-          "source_documents": [],
-          "flags": [
-            "contém IPVA",
-            "contém ITCMD/ITCD",
-            "contém Taxas"
-          ]
-        },
-        {
-          "file": "RN_RICMS_pt2.txt",
-          "category": "RICMS",
-          "chars": 480174,
-          "named_icms": true,
-          "fallback_icms": false,
-          "dominant_scope": "ICMS",
-          "source_scopes": [],
-          "scope_blocked": false,
-          "scope_flags": [],
-          "source_documents": [],
-          "flags": [
-            "contém Taxas"
-          ]
-        },
-        {
-          "file": "RN_RICMS_pt3.txt",
-          "category": "RICMS",
-          "chars": 475594,
-          "named_icms": true,
-          "fallback_icms": false,
-          "dominant_scope": "ICMS",
-          "source_scopes": [],
-          "scope_blocked": false,
-          "scope_flags": [],
-          "source_documents": [],
-          "flags": [
-            "contém Taxas"
-          ]
-        },
-        {
-          "file": "RN_RICMS_pt4.txt",
-          "category": "RICMS",
-          "chars": 476563,
-          "named_icms": true,
-          "fallback_icms": false,
-          "dominant_scope": "ICMS",
-          "source_scopes": [],
-          "scope_blocked": false,
-          "scope_flags": [],
-          "source_documents": [],
-          "flags": [
-            "contém Taxas"
-          ]
-        },
-        {
-          "file": "RN_RICMS_pt5.txt",
-          "category": "RICMS",
-          "chars": 476483,
-          "named_icms": true,
-          "fallback_icms": false,
-          "dominant_scope": "ICMS",
-          "source_scopes": [],
-          "scope_blocked": false,
-          "scope_flags": [],
-          "source_documents": [],
           "flags": []
         },
         {
-          "file": "RN_RICMS_pt6.txt",
-          "category": "RICMS",
-          "chars": 477674,
+          "file": "RN_RICMS_ANEXO_001_ISENCAO_2026-04-26.txt",
+          "category": "ICMS_BENEFICIOS",
+          "chars": 192280,
           "named_icms": true,
           "fallback_icms": false,
           "dominant_scope": "ICMS",
-          "source_scopes": [],
+          "source_scopes": [
+            "ICMS"
+          ],
           "scope_blocked": false,
           "scope_flags": [],
-          "source_documents": [],
-          "flags": [
-            "contém Taxas"
-          ]
+          "source_documents": [
+            "https://www.diariooficial.rn.gov.br/dei/dorn3/documentos/00000001/20220819/783146.htm"
+          ],
+          "flags": []
         },
         {
-          "file": "RN_RICMS_pt7.txt",
-          "category": "RICMS",
-          "chars": 185240,
+          "file": "RN_RICMS_ANEXO_002_DIFERIMENTO_2026-04-26.txt",
+          "category": "ICMS_BENEFICIOS",
+          "chars": 38786,
           "named_icms": true,
           "fallback_icms": false,
           "dominant_scope": "ICMS",
-          "source_scopes": [],
+          "source_scopes": [
+            "ICMS"
+          ],
           "scope_blocked": false,
           "scope_flags": [],
-          "source_documents": [],
+          "source_documents": [
+            "https://www.diariooficial.rn.gov.br/dei/dorn3/documentos/00000001/20220819/783143.htm"
+          ],
+          "flags": []
+        },
+        {
+          "file": "RN_RICMS_ANEXO_003_CREDITO_PRESUMIDO_2026-04-26.txt",
+          "category": "ICMS_BENEFICIOS",
+          "chars": 35857,
+          "named_icms": true,
+          "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [
+            "ICMS"
+          ],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [
+            "https://www.diariooficial.rn.gov.br/dei/dorn3/documentos/00000001/20220819/783139.htm"
+          ],
+          "flags": []
+        },
+        {
+          "file": "RN_RICMS_ANEXO_004_REDUCAO_BASE_2026-04-26.txt",
+          "category": "ICMS_BENEFICIOS",
+          "chars": 86652,
+          "named_icms": true,
+          "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [
+            "ICMS"
+          ],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [
+            "https://www.diariooficial.rn.gov.br/dei/dorn3/documentos/00000001/20220819/783151.htm"
+          ],
+          "flags": []
+        },
+        {
+          "file": "RN_RICMS_ANEXO_005_ANTECIPACAO_2026-04-26.txt",
+          "category": "ICMS_ST",
+          "chars": 96319,
+          "named_icms": true,
+          "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [
+            "ICMS"
+          ],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [
+            "https://www.diariooficial.rn.gov.br/dei/dorn3/documentos/00000001/20220819/783140.htm"
+          ],
+          "flags": []
+        },
+        {
+          "file": "RN_RICMS_ANEXO_007_ST_2026-04-26.txt",
+          "category": "ICMS_ST",
+          "chars": 92980,
+          "named_icms": true,
+          "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [
+            "ICMS"
+          ],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [
+            "https://www.diariooficial.rn.gov.br/dei/dorn3/documentos/00000001/20220819/783145.htm"
+          ],
+          "flags": []
+        },
+        {
+          "file": "RN_RICMS_ANEXO_008_ST_COMBUSTIVEIS_2026-04-26.txt",
+          "category": "ICMS_ST",
+          "chars": 107137,
+          "named_icms": true,
+          "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [
+            "ICMS"
+          ],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [
+            "https://www.diariooficial.rn.gov.br/dei/dorn3/documentos/00000001/20220819/783150.htm"
+          ],
+          "flags": []
+        },
+        {
+          "file": "RN_RICMS_ANEXO_009_TRIGO_2026-04-26.txt",
+          "category": "ICMS_ST",
+          "chars": 17907,
+          "named_icms": true,
+          "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [
+            "ICMS"
+          ],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [
+            "https://www.diariooficial.rn.gov.br/dei/dorn3/documentos/00000001/20220819/783138.htm"
+          ],
+          "flags": []
+        },
+        {
+          "file": "RN_RICMS_ANEXO_010_VEICULOS_2026-04-26.txt",
+          "category": "ICMS_ST",
+          "chars": 12583,
+          "named_icms": true,
+          "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [
+            "ICMS"
+          ],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [
+            "https://www.diariooficial.rn.gov.br/dei/dorn3/documentos/00000001/20220819/783142.htm"
+          ],
+          "flags": []
+        },
+        {
+          "file": "RN_RICMS_ANEXO_011_DOCUMENTOS_2026-04-26.txt",
+          "category": "INSTRUCOES_NORMATIVAS",
+          "chars": 350644,
+          "named_icms": true,
+          "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [
+            "ICMS"
+          ],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [
+            "https://www.diariooficial.rn.gov.br/dei/dorn3/documentos/00000001/20220819/783154.htm"
+          ],
+          "flags": []
+        },
+        {
+          "file": "RN_PORT_022_2018_BENEFICIOS_LC160_2026-04-26.txt",
+          "category": "ICMS_BENEFICIOS",
+          "chars": 26334,
+          "named_icms": true,
+          "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [
+            "ICMS"
+          ],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [
+            "https://www.diariooficial.rn.gov.br/dei/dorn3/documentos/00000001/20180329/604259.htm"
+          ],
+          "flags": []
+        },
+        {
+          "file": "RN_LEI_10640_2019_PROEDI_2026-04-26.txt",
+          "category": "ICMS_BENEFICIOS",
+          "chars": 6563,
+          "named_icms": true,
+          "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [
+            "ICMS"
+          ],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [
+            "https://diariooficial.rn.gov.br/dei/dorn3/documentos/00000001/20191228/670153.htm"
+          ],
+          "flags": []
+        },
+        {
+          "file": "RN_DEC_29420_2019_PROEDI_2026-04-26.txt",
+          "category": "ICMS_BENEFICIOS",
+          "chars": 22002,
+          "named_icms": true,
+          "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [
+            "ICMS"
+          ],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [
+            "https://diariooficial.rn.gov.br/dei/dorn3/documentos/00000001/20191228/670256.htm"
+          ],
+          "flags": []
+        },
+        {
+          "file": "RN_DEC_27608_2017_FUNDERN_2026-04-26.txt",
+          "category": "ICMS_BENEFICIOS",
+          "chars": 4783,
+          "named_icms": true,
+          "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [
+            "ICMS"
+          ],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [
+            "https://diariooficial.rn.gov.br/dei/dorn3/documentos/00000001/20171214/594560.htm"
+          ],
+          "flags": []
+        },
+        {
+          "file": "RN_DEC_26789_2017_ATACADISTAS_2026-04-26.txt",
+          "category": "ICMS_BENEFICIOS",
+          "chars": 4053,
+          "named_icms": true,
+          "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [
+            "ICMS"
+          ],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [
+            "https://www.diariooficial.rn.gov.br/dei/dorn3/documentos/00000001/20170421/569957.htm"
+          ],
+          "flags": []
+        },
+        {
+          "file": "RN_LEI_12111_2025_TAX_FREE_2026-04-26.txt",
+          "category": "ICMS_BENEFICIOS",
+          "chars": 6556,
+          "named_icms": true,
+          "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [
+            "ICMS"
+          ],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [
+            "https://www.al.rn.leg.br/storage/legislacao/2025/f5rvqq0qjlkyx5yr1fyknufh0wf5ts.pdf"
+          ],
+          "flags": []
+        },
+        {
+          "file": "RN_LEI_11999_2024_ICMS_LC87_2026-04-26.txt",
+          "category": "ICMS_LEIS",
+          "chars": 26804,
+          "named_icms": true,
+          "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [
+            "ICMS"
+          ],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [
+            "https://www.al.rn.leg.br/storage/legislacao/2025/stqpzaxnkhj8e1efdy6wnsk815m85v.pdf"
+          ],
+          "flags": []
+        },
+        {
+          "file": "RN_PORT_970_2025_CBENEF_2026-04-26.txt",
+          "category": "INSTRUCOES_NORMATIVAS",
+          "chars": 4598,
+          "named_icms": true,
+          "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [
+            "ICMS"
+          ],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [
+            "https://webdisk.diariooficial.rn.gov.br/Jornal/12025-09-23.pdf"
+          ],
           "flags": []
         }
       ]

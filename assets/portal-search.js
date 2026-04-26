@@ -176,7 +176,7 @@ window.RJC_SEARCH = [
   {
     "title": "Rio Grande do Norte: ICMS e benefícios fiscais",
     "url": "estados/rn.html",
-    "summary": "Página estadual estruturada para futura publicação por UF, com foco em ICMS, benefícios, documento e prova.",
+    "summary": "Página estadual com legislação de ICMS em tela, benefícios, documento e prova.",
     "tags": "RN Rio Grande do Norte Rio Grande do Norte ICMS beneficios fiscais RICMS DECRETOS ICMS_LEIS IPVA ITCMD LEIS RICMS"
   },
   {
@@ -1114,6 +1114,114 @@ window.RJC_SEARCH = [
     "url": "estados/mt/legislacao/documentos-cbenef-efd-prova.html",
     "summary": "Entrada direta para o capítulo temático correspondente, com texto legal em tela e análise aplicada.",
     "tags": "MT Mato Grosso ICMS benefícios fiscais cBenef EFD SPED XML documento fiscal código benefício Portaria 211"
+  },
+  {
+    "title": "Rio Grande do Norte: ICMS e benefícios fiscais em tela",
+    "url": "estados/rn/legislacao/index.html",
+    "summary": "RICMS/RN, anexos de isenção, redução, crédito presumido, diferimento, antecipação, ST, PROEDI, FUNDERN, Tax Free, cBenef e matriz LC 160.",
+    "tags": "RN Rio Grande do Norte ICMS RICMS benefícios fiscais alíquotas FECOP base cálculo substituição tributária ST antecipação PROEDI FUNDERN Tax Free crédito presumido redução base isenção diferimento cBenef EFD SPED LC 160 Convênio 190"
+  },
+  {
+    "title": "Rio Grande do Norte: ICMS/RN: incidência, não incidência, suspensão e diferimento",
+    "url": "estados/rn/legislacao/icms-regra-matriz.html",
+    "summary": "A porta de entrada do ICMS potiguar: campo de incidência, fato gerador, não incidência, isenção, suspensão, diferimento, contribuinte e responsabilidade.",
+    "tags": "RN Rio Grande do Norte ICMS benefícios fiscais Regra matriz ICMS/RN: incidência, não incidência, suspensão e diferimento A porta de entrada do ICMS potiguar: campo de incidência, fato gerador, não incidência, isenção, suspensão, diferimento, contribuinte e responsabilidade."
+  },
+  {
+    "title": "Rio Grande do Norte: Base de cálculo, alíquotas, FECOP, crédito e apuração",
+    "url": "estados/rn/legislacao/base-aliquota-apuracao.html",
+    "summary": "Como o valor tributável é formado no RN, qual alíquota se aplica, quando há adicional do FECOP e como crédito, vedação, apuração e recolhimento se conectam.",
+    "tags": "RN Rio Grande do Norte ICMS benefícios fiscais Carga tributária Base de cálculo, alíquotas, FECOP, crédito e apuração Como o valor tributável é formado no RN, qual alíquota se aplica, quando há adicional do FECOP e como crédito, vedação, apuração e recolhimento se conectam."
+  },
+  {
+    "title": "Rio Grande do Norte: Benefícios fiscais, LC 160 e Convênio ICMS 190/2017",
+    "url": "estados/rn/legislacao/beneficios-matriz-lc160.html",
+    "summary": "A matriz potiguar de benefícios de ICMS: atos publicados para LC 160, isenções, incentivos, crédito presumido, regime especial, contrapartida e prova.",
+    "tags": "RN Rio Grande do Norte ICMS benefícios fiscais Benefícios fiscais Benefícios fiscais, LC 160 e Convênio ICMS 190/2017 A matriz potiguar de benefícios de ICMS: atos publicados para LC 160, isenções, incentivos, crédito presumido, regime especial, contrapartida e prova."
+  },
+  {
+    "title": "Rio Grande do Norte: Isenções, reduções de base e créditos presumidos",
+    "url": "estados/rn/legislacao/isencoes-reducoes-creditos.html",
+    "summary": "Leitura por espécie: Anexo 001 para isenções, Anexo 004 para redução de base e Anexo 003 para crédito presumido.",
+    "tags": "RN Rio Grande do Norte ICMS benefícios fiscais Benefícios por espécie Isenções, reduções de base e créditos presumidos Leitura por espécie: Anexo 001 para isenções, Anexo 004 para redução de base e Anexo 003 para crédito presumido."
+  },
+  {
+    "title": "Rio Grande do Norte: PROEDI, desenvolvimento industrial e FUNDERN",
+    "url": "estados/rn/legislacao/proedi-desenvolvimento.html",
+    "summary": "Programa de Estímulo ao Desenvolvimento Industrial do RN: crédito presumido, adesão, enquadramento, regulamento, condições, recolhimento e contrapartida.",
+    "tags": "RN Rio Grande do Norte ICMS benefícios fiscais Programas estaduais PROEDI, desenvolvimento industrial e FUNDERN Programa de Estímulo ao Desenvolvimento Industrial do RN: crédito presumido, adesão, enquadramento, regulamento, condições, recolhimento e contrapartida."
+  },
+  {
+    "title": "Rio Grande do Norte: Agro, alimentos, cesta, pesca e diferimento",
+    "url": "estados/rn/legislacao/agro-cesta-diferimento.html",
+    "summary": "Tratamentos para cadeias agropecuárias, alimentos, abate, pesca, óleo diesel/biodiesel de transporte e diferimentos por etapa produtiva.",
+    "tags": "RN Rio Grande do Norte ICMS benefícios fiscais Agro e alimentos Agro, alimentos, cesta, pesca e diferimento Tratamentos para cadeias agropecuárias, alimentos, abate, pesca, óleo diesel/biodiesel de transporte e diferimentos por etapa produtiva."
+  },
+  {
+    "title": "Rio Grande do Norte: Atacado, distribuição, regimes especiais e comércio",
+    "url": "estados/rn/legislacao/atacado-distribuicao-regimes.html",
+    "summary": "Regimes de atacadistas, distribuição, cosméticos, perfumaria, produtos de higiene, centralização, credenciamento e limites de fruição.",
+    "tags": "RN Rio Grande do Norte ICMS benefícios fiscais Regimes especiais Atacado, distribuição, regimes especiais e comércio Regimes de atacadistas, distribuição, cosméticos, perfumaria, produtos de higiene, centralização, credenciamento e limites de fruição."
+  },
+  {
+    "title": "Rio Grande do Norte: Substituição tributária, antecipação, combustíveis, trigo e veículos",
+    "url": "estados/rn/legislacao/st-antecipacao-combustiveis.html",
+    "summary": "Responsabilidade tributária por segmento: ST geral, antecipação, combustíveis e lubrificantes, trigo/farinha/derivados e veículos autopropulsados.",
+    "tags": "RN Rio Grande do Norte ICMS benefícios fiscais Responsabilidade tributária Substituição tributária, antecipação, combustíveis, trigo e veículos Responsabilidade tributária por segmento: ST geral, antecipação, combustíveis e lubrificantes, trigo/farinha/derivados e veículos autopropulsados."
+  },
+  {
+    "title": "Rio Grande do Norte: Documentos fiscais, cBenef, EFD e prova digital",
+    "url": "estados/rn/legislacao/documentos-cbenef-efd-prova.html",
+    "summary": "Como a tese tributária aparece no XML, na NFC-e, na NF-e, na EFD, nos livros, nos documentos fiscais e na prova mensal de auditoria.",
+    "tags": "RN Rio Grande do Norte ICMS benefícios fiscais Prova digital Documentos fiscais, cBenef, EFD e prova digital Como a tese tributária aparece no XML, na NFC-e, na NF-e, na EFD, nos livros, nos documentos fiscais e na prova mensal de auditoria."
+  },
+  {
+    "title": "Rio Grande do Norte: Mapa revisado dos benefícios fiscais do RN",
+    "url": "estados/rn/legislacao/mapa-revisado-beneficios.html",
+    "summary": "Roteiro de estudo por grupo: isenção, redução, crédito presumido, diferimento, PROEDI, Tax Free, FUNDERN, atacado, ST/antecipação, cBenef e prova.",
+    "tags": "RN Rio Grande do Norte ICMS benefícios fiscais Mapa de benefícios Mapa revisado dos benefícios fiscais do RN Roteiro de estudo por grupo: isenção, redução, crédito presumido, diferimento, PROEDI, Tax Free, FUNDERN, atacado, ST/antecipação, cBenef e prova."
+  },
+  {
+    "title": "Rio Grande do Norte: Fiscalização, regularidade, perda de benefício e defesa documental",
+    "url": "estados/rn/legislacao/fiscalizacao-riscos.html",
+    "summary": "Como a fiscalização tende a testar benefícios: regularidade, cadastro, documento, escrituração, prazo, contrapartida, condição e coerência entre sistemas.",
+    "tags": "RN Rio Grande do Norte ICMS benefícios fiscais Auditoria fiscal Fiscalização, regularidade, perda de benefício e defesa documental Como a fiscalização tende a testar benefícios: regularidade, cadastro, documento, escrituração, prazo, contrapartida, condição e coerência entre sistemas."
+  },
+  {
+    "title": "Rio Grande do Norte: PROEDI e desenvolvimento industrial",
+    "url": "estados/rn/legislacao/proedi-desenvolvimento.html",
+    "summary": "Entrada direta para o capítulo temático correspondente, com texto legal em tela e análise aplicada.",
+    "tags": "RN Rio Grande do Norte ICMS benefícios fiscais PROEDI desenvolvimento industrial crédito presumido incentivo fiscal FUNDERN regularidade"
+  },
+  {
+    "title": "Rio Grande do Norte: isenção, redução e crédito presumido",
+    "url": "estados/rn/legislacao/isencoes-reducoes-creditos.html",
+    "summary": "Entrada direta para o capítulo temático correspondente, com texto legal em tela e análise aplicada.",
+    "tags": "RN Rio Grande do Norte ICMS benefícios fiscais isenção redução base crédito presumido Anexo 001 Anexo 003 Anexo 004 cBenef"
+  },
+  {
+    "title": "Rio Grande do Norte: agro, alimentos, pesca e diferimento",
+    "url": "estados/rn/legislacao/agro-cesta-diferimento.html",
+    "summary": "Entrada direta para o capítulo temático correspondente, com texto legal em tela e análise aplicada.",
+    "tags": "RN Rio Grande do Norte ICMS benefícios fiscais agro alimentos abate gado bovino pesca óleo diesel biodiesel diferimento"
+  },
+  {
+    "title": "Rio Grande do Norte: ST, antecipação, combustíveis, trigo e veículos",
+    "url": "estados/rn/legislacao/st-antecipacao-combustiveis.html",
+    "summary": "Entrada direta para o capítulo temático correspondente, com texto legal em tela e análise aplicada.",
+    "tags": "RN Rio Grande do Norte ICMS benefícios fiscais substituição tributária ST antecipação combustíveis lubrificantes trigo farinha veículos autopropulsados"
+  },
+  {
+    "title": "Rio Grande do Norte: Tax Free e restituição de ICMS",
+    "url": "estados/rn/legislacao/mapa-revisado-beneficios.html",
+    "summary": "Entrada direta para o capítulo temático correspondente, com texto legal em tela e análise aplicada.",
+    "tags": "RN Rio Grande do Norte ICMS benefícios fiscais Tax Free restituição turistas estrangeiros saída país Convênio 150"
+  },
+  {
+    "title": "Rio Grande do Norte: cBenef, EFD e prova",
+    "url": "estados/rn/legislacao/documentos-cbenef-efd-prova.html",
+    "summary": "Entrada direta para o capítulo temático correspondente, com texto legal em tela e análise aplicada.",
+    "tags": "RN Rio Grande do Norte ICMS benefícios fiscais cBenef EFD SPED XML NF-e NFC-e código benefício Portaria 970"
   },
   {
     "title": "Manual de Documentos Fiscais Eletronicos",

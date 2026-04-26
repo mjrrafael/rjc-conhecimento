@@ -1592,6 +1592,72 @@ def state_page(state: dict, data: dict) -> str:
 </section>
 """
             return layout(path, f'{display_name}: ICMS e benefícios fiscais', "ICMS de Mato Grosso em tela por capítulos.", body, "estados")
+        if state["uf"] == "RN":
+            body = f"""
+{hero(f'{display_name}: ICMS e benefícios fiscais', 'Legislação estadual em tela: ICMS, benefícios fiscais, alíquotas, FECOP, ST, documentos, PROEDI, FUNDERN e cBenef por assunto.', state["uf"])}
+<section class="law-ledger">
+  <div>
+    <h2>Estado do estudo</h2>
+    <p>Rio Grande do Norte está publicado em capítulos próprios, com RICMS, anexos de benefícios, matriz LC 160, PROEDI, FUNDERN, Tax Free, cBenef, ST e documentos fiscais em tela. O caminho correto é abrir o índice do RN, ler a lei e depois avançar para a análise aplicada.</p>
+  </div>
+  <div>
+    <h2>Primeira pergunta</h2>
+    <p>A operação está no campo de incidência do ICMS? Só depois disso faz sentido discutir isenção, redução de base, crédito presumido, diferimento, PROEDI, Tax Free, ST ou antecipação.</p>
+  </div>
+  <div>
+    <h2>Prova antes de tese</h2>
+    <p>XML, cadastro do item, NCM, EFD, cBenef, memória de cálculo, ato concessivo, guia e dispositivo legal precisam sustentar a mesma conclusão.</p>
+  </div>
+</section>
+{state_legislation_teaser(state["uf"], path)}
+<section class="matrix-section">
+  <h2>Benefícios fiscais por grupo</h2>
+  <div class="matrix-grid">
+    <a class="matrix-card searchable-card" href="rn/legislacao/mapa-revisado-beneficios.html" data-search="Rio Grande do Norte RN mapa revisado benefícios ICMS LC 160 Convênio 190 isenção redução crédito presumido diferimento PROEDI Tax Free FUNDERN cBenef">
+      <h3>Mapa revisado dos benefícios</h3>
+      <p>Roteiro por técnica: isenção, redução, crédito presumido, diferimento, PROEDI, Tax Free, FUNDERN, atacado, ST, cBenef e prova.</p>
+    </a>
+    <a class="matrix-card searchable-card" href="rn/legislacao/proedi-desenvolvimento.html" data-search="Rio Grande do Norte RN PROEDI desenvolvimento industrial crédito presumido FUNDERN incentivo fiscal">
+      <h3>PROEDI e desenvolvimento</h3>
+      <p>Lei nº 10.640/2019, Decreto nº 29.420/2019, crédito presumido, enquadramento, requerimento, regularidade, contrapartida e perda do benefício.</p>
+    </a>
+    <a class="matrix-card searchable-card" href="rn/legislacao/isencoes-reducoes-creditos.html" data-search="Rio Grande do Norte RN isenção redução base crédito presumido Anexo 001 Anexo 003 Anexo 004 cBenef">
+      <h3>Isenções, reduções e créditos</h3>
+      <p>Anexos 001, 003 e 004 do RICMS/RN: produto, operação, destinatário, carga efetiva, crédito, estorno e cBenef.</p>
+    </a>
+    <a class="matrix-card searchable-card" href="rn/legislacao/agro-cesta-diferimento.html" data-search="Rio Grande do Norte RN agro alimentos abate gado pesca óleo diesel biodiesel diferimento cesta">
+      <h3>Agro, alimentos, pesca e diferimento</h3>
+      <p>Cadeias agroalimentares, abate, transporte coletivo, embarcações pesqueiras, óleo diesel/biodiesel e diferimento por etapa.</p>
+    </a>
+    <a class="matrix-card searchable-card" href="rn/legislacao/beneficios-matriz-lc160.html" data-search="Rio Grande do Norte RN benefícios fiscais LC 160 Convênio 190 Portaria 022 FUNDERN atos normativos">
+      <h3>LC 160, matriz e FUNDERN</h3>
+      <p>Portaria nº 022/2018-GS/SET, atos de benefícios, reinstituição, contrapartida financeira, depósito e prova mensal.</p>
+    </a>
+    <a class="matrix-card searchable-card" href="rn/legislacao/atacado-distribuicao-regimes.html" data-search="Rio Grande do Norte RN atacado atacadista distribuição regime especial cosméticos perfumaria higiene pessoal">
+      <h3>Atacado, distribuição e regimes</h3>
+      <p>Regime especial de atacadistas, percentuais de saídas, atividades reais, vedações, mercadorias e regularidade.</p>
+    </a>
+    <a class="matrix-card searchable-card" href="rn/legislacao/st-antecipacao-combustiveis.html" data-search="Rio Grande do Norte RN substituição tributária ST antecipação combustíveis lubrificantes trigo farinha veículos">
+      <h3>ST, antecipação e segmentos</h3>
+      <p>Anexos 005, 007, 008, 009 e 010: antecipação, ST geral, combustíveis, trigo/farinha e veículos autopropulsados.</p>
+    </a>
+    <a class="matrix-card searchable-card" href="rn/legislacao/documentos-cbenef-efd-prova.html" data-search="Rio Grande do Norte RN cBenef EFD SPED XML NF-e NFC-e documento fiscal prova Portaria 970">
+      <h3>cBenef, EFD e prova digital</h3>
+      <p>Como o benefício aparece no XML, na NF-e/NFC-e, na EFD, nos livros fiscais e no dossiê mensal de auditoria.</p>
+    </a>
+  </div>
+</section>
+<section class="continuity">
+  <h2>Continuar a leitura</h2>
+  <div>
+    <a href="rn/legislacao/index.html">Abrir índice completo do RN</a>
+    <a href="../confaz/index.html">Entender CONFAZ e benefícios</a>
+    <a href="../federal/pis-cofins.html">Conectar com PIS/Cofins</a>
+    <a href="../biblioteca/index.html">Consultar manuais e painel</a>
+  </div>
+</section>
+"""
+            return layout(path, f'{display_name}: ICMS e benefícios fiscais', "ICMS do Rio Grande do Norte em tela por capítulos.", body, "estados")
         body = f"""
 {hero(f'{display_name}: ICMS e benefícios fiscais', 'Legislação estadual em tela: ICMS, benefícios fiscais, alíquotas, ST, documentos e prova por assunto.', state["uf"])}
 <section class="law-ledger">
