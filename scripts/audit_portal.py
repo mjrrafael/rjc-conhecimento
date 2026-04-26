@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import os
+import json
 import re
 import sys
 from html.parser import HTMLParser
@@ -27,9 +28,13 @@ from legal_modules import (  # noqa: E402
 from state_legal_pages import (  # noqa: E402
     GROUP_DEFS,
     STATE_NAMES,
+    benefit_sector_results,
     collect_state_documents,
+    group_docs,
     group_path,
+    group_by_id,
     index_path as state_index_path,
+    sector_anchor,
     source_path,
 )
 
@@ -103,6 +108,40 @@ def audit_links(parsed: dict[Path, PageParser]) -> list[str]:
                 target_parser = parsed.get(target)
                 if target_parser and fragment not in target_parser.ids:
                     errors.append(f"{path.relative_to(ROOT)}: ancora sem destino -> {value}")
+    return errors
+
+
+def audit_search_entries(parsed: dict[Path, PageParser]) -> list[str]:
+    errors: list[str] = []
+    search_path = ROOT / "assets" / "portal-search.js"
+    if not search_path.exists():
+        return ["indice de busca ausente: assets/portal-search.js"]
+    raw = search_path.read_text(encoding="utf-8", errors="ignore").strip()
+    prefix = "window.RJC_SEARCH = "
+    if not raw.startswith(prefix):
+        return ["indice de busca em formato inesperado"]
+    try:
+        entries = json.loads(raw[len(prefix):].rstrip(";"))
+    except json.JSONDecodeError as exc:
+        return [f"indice de busca invalido: {exc}"]
+    known = set(parsed)
+    for index, entry in enumerate(entries):
+        title = entry.get("title", "")
+        url = entry.get("url", "")
+        if not title or not url:
+            errors.append(f"busca item {index}: titulo ou url ausente")
+            continue
+        if is_external(url):
+            continue
+        raw_path, fragment = clean_target(url)
+        target = (ROOT / raw_path).resolve()
+        if target.is_dir():
+            target = target / "index.html"
+        if target not in known:
+            errors.append(f"busca item quebrado: {title} -> {url}")
+            continue
+        if fragment and fragment not in parsed[target].ids:
+            errors.append(f"busca ancora sem destino: {title} -> {url}")
     return errors
 
 
@@ -238,6 +277,15 @@ def audit_content_pages() -> list[str]:
             group_html = read_page(group_path(uf, group["id"]))
             if not group_html or "Texto integral" not in group_html:
                 errors.append(f"{uf}: grupo estadual sem texto integral: {group['id']}")
+        beneficios_html = read_page(group_path(uf, "beneficios"))
+        sector_results = benefit_sector_results(group_docs(docs, group_by_id("beneficios")))
+        # Reuse the benefits classifier only to confirm that visible sector links exist when the corpus supports them.
+        if sector_results and "benefit-sector" not in beneficios_html:
+            errors.append(f"{uf}: beneficios fiscais sem secoes setoriais")
+        for result in sector_results:
+            anchor = sector_anchor(result["sector"])
+            if f'id="{anchor}"' not in beneficios_html:
+                errors.append(f"{uf}: ancora setorial ausente em beneficios: {anchor}")
         for doc in list(docs)[:3]:
             source_html = read_page(source_path(uf, doc))
             if not source_html or "law-pre" not in source_html:
@@ -249,6 +297,7 @@ def main() -> int:
     parsed = parse_pages()
     checks = [
         ("links e ancoras", audit_links(parsed)),
+        ("indice de busca", audit_search_entries(parsed)),
         ("fontes e modulos legais", audit_legal_registry()),
         ("regioes e bandeiras", audit_regions()),
         ("conteudo critico", audit_content_pages()),

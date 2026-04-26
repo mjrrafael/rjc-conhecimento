@@ -147,6 +147,150 @@ GROUP_DEFS = [
     },
 ]
 
+BENEFIT_SECTOR_DEFS = [
+    {
+        "id": "agro-alimentos",
+        "title": "Agropecuário, alimentos e cesta básica",
+        "summary": "Benefícios que normalmente dependem de produto, destinação, produtor rural, insumo, industrialização ou política de abastecimento.",
+        "read": "Comece pela mercadoria e pela NCM; depois verifique destinatário, etapa da cadeia, manutenção de crédito e eventual vedação de acumulação.",
+        "departments": "Fiscal parametriza CST, CFOP, base e crédito; compras prova origem e destinação; contábil concilia estoque, custo e crédito.",
+        "documents": "NF-e de compra e venda, cadastro de produto, NCM, laudo técnico quando houver, pedido/contrato, EFD e memória de cálculo.",
+        "risk": "Aplicar benefício de alimento ou insumo agropecuário por descrição comercial, sem confirmar o produto legalmente alcançado.",
+        "keywords": [
+            "agropecuário", "agropecuario", "produtor rural", "atividade rural", "insumo agropecuário", "insumo agropecuario",
+            "fertilizante", "defensivo", "semente", "muda", "ração", "racao", "milho", "soja", "arroz", "feijão", "feijao",
+            "leite", "carne", "frango", "peixe", "alimento", "cesta básica", "cesta basica"
+        ],
+    },
+    {
+        "id": "eletronicos-informatica-telecom",
+        "title": "Eletrônicos, informática e telecomunicações",
+        "summary": "Tratamentos ligados a equipamentos eletrônicos, bens de informática, telecomunicações, processamento de dados e cadeia tecnológica.",
+        "read": "Leia a descrição legal junto com NCM, industrialização, origem, destinatário e eventual exigência de regime especial ou credenciamento.",
+        "departments": "Fiscal controla NCM e documento; comercial valida produto vendido; jurídico confirma enquadramento; TI mantém cadastro e cBenef quando aplicável.",
+        "documents": "XML, ficha técnica, NCM, catálogo do produto, contrato, laudo quando necessário, cadastro fiscal e memória do benefício.",
+        "risk": "Enquadrar tecnologia por nome de mercado. A lei costuma exigir descrição, código fiscal, uso ou operação específica.",
+        "keywords": [
+            "eletrônico", "eletronico", "eletrônicos", "eletronicos", "informática", "informatica", "computador", "computadores",
+            "software", "hardware", "processamento de dados", "telecomunicação", "telecomunicacao", "telecomunicações",
+            "telefonia", "telefone", "celular", "aparelho", "equipamento de comunicação", "equipamento de comunicacao",
+            "semicondutor", "componentes eletrônicos", "componentes eletronicos"
+        ],
+    },
+    {
+        "id": "veiculos-autopecas-transporte",
+        "title": "Veículos, autopeças e transporte",
+        "summary": "Benefícios e regimes para veículos, autopeças, transporte, frete, implementos, ônibus, caminhões e cadeias automotivas.",
+        "read": "Separe mercadoria de serviço: veículo, peça, frete, ativo imobilizado, transporte de carga e transporte de passageiro têm lógicas diferentes.",
+        "departments": "Fiscal valida NCM/CEST e ST; logística prova operação; financeiro guarda guias; contábil concilia ativo, estoque e crédito.",
+        "documents": "NF-e, CT-e, MDF-e, RENAVAM/chassi quando aplicável, contrato de frete, EFD, guia e demonstrativo da base.",
+        "risk": "Confundir benefício de mercadoria automotiva com regra de prestação de transporte ou substituição tributária.",
+        "keywords": [
+            "veículo", "veiculo", "veículos", "veiculos", "automotor", "automóvel", "automovel", "autopeça", "autopeca",
+            "peças", "pecas", "caminhão", "caminhao", "ônibus", "onibus", "motocicleta", "chassi", "renavam",
+            "transporte", "transportador", "frete", "carga", "passageiro", "implemento rodoviário", "implemento rodoviario"
+        ],
+    },
+    {
+        "id": "medicamentos-saude",
+        "title": "Medicamentos, saúde e produtos hospitalares",
+        "summary": "Hipóteses de tratamento favorecido para medicamentos, produtos médico-hospitalares, saúde pública, deficiência e equipamentos assistivos.",
+        "read": "Confira produto, registro sanitário quando pertinente, destinatário, finalidade, operação e se a norma exige estorno ou manutenção de crédito.",
+        "departments": "Fiscal parametriza item; compras guarda laudos e registros; jurídico valida condição; contábil acompanha crédito e estoque.",
+        "documents": "NF-e, NCM, registro ou laudo técnico quando houver, contrato, prescrição ou destinação institucional quando exigida, EFD e memória.",
+        "risk": "Ampliar isenção de saúde para produto correlato sem que a descrição legal alcance a mercadoria.",
+        "keywords": [
+            "medicamento", "medicamentos", "farmacêutico", "farmaceutico", "hospital", "hospitalar", "produto médico",
+            "produto medico", "saúde", "saude", "deficiente", "deficiência", "deficiencia", "prótese", "protese",
+            "órtese", "ortese", "cadeira de rodas", "insumo hospitalar", "equipamento hospitalar"
+        ],
+    },
+    {
+        "id": "energia-combustiveis-infraestrutura",
+        "title": "Energia, combustíveis e infraestrutura",
+        "summary": "Regras especiais envolvendo energia elétrica, combustíveis, gás, infraestrutura, obras, concessões e cadeias essenciais.",
+        "read": "Identifique se a regra trata de mercadoria, fornecimento, uso em processo produtivo, ativo, obra, concessionária ou consumidor final.",
+        "departments": "Fiscal separa operação e consumo; engenharia ou operação comprova destinação; financeiro guarda recolhimentos; auditoria cruza contrato e XML.",
+        "documents": "Contrato, medição, XML, nota de energia ou combustível, laudo de uso, EFD, memória de cálculo e guia quando houver.",
+        "risk": "Aproveitar regra de insumo ou infraestrutura fora da destinação prevista no ato estadual.",
+        "keywords": [
+            "energia elétrica", "energia eletrica", "combustível", "combustivel", "combustíveis", "combustiveis", "diesel",
+            "gasolina", "etanol", "álcool", "alcool", "biodiesel", "biocombustível", "biocombustivel", "gás natural",
+            "gas natural", "glp", "infraestrutura", "concessão", "concessao", "obra pública", "obra publica"
+        ],
+    },
+    {
+        "id": "industria-maquinas-equipamentos",
+        "title": "Indústria, máquinas e equipamentos",
+        "summary": "Benefícios de desenvolvimento industrial, máquinas, equipamentos, ativo imobilizado, bens de capital, implantação e modernização.",
+        "read": "Aplique a matriz: projeto, bem, destinação, prazo, termo de acordo, crédito, diferimento e obrigação de manter o investimento.",
+        "departments": "Operações comprova uso; fiscal parametriza entrada e saída; contábil controla ativo; jurídico acompanha regime e contrapartidas.",
+        "documents": "Projeto, termo, NF-e, CIAP quando couber, laudo de instalação, EFD, controle de ativo e memória do incentivo.",
+        "risk": "Usar benefício de implantação ou ativo para bem sem vinculação ao projeto autorizado ou fora do período de fruição.",
+        "keywords": [
+            "indústria", "industria", "industrial", "industrialização", "industrializacao", "máquina", "maquina", "máquinas",
+            "maquinas", "equipamento", "equipamentos", "bem de capital", "bens de capital", "ativo imobilizado",
+            "implantação", "implantacao", "modernização", "modernizacao", "investimento", "parque industrial"
+        ],
+    },
+    {
+        "id": "importacao-exportacao-comercio-exterior",
+        "title": "Importação, exportação e comércio exterior",
+        "summary": "Imunidade, não incidência, suspensão, diferimento, desembaraço, importação por conta e ordem, exportação e regimes ligados ao exterior.",
+        "read": "Separe importação de exportação. Na exportação, prove saída e fim específico; na importação, prove desembaraço, adquirente, NCM e regime.",
+        "departments": "Comex monta dossiê; fiscal reflete XML e EFD; financeiro guarda tributos; jurídico valida operação triangular ou regime.",
+        "documents": "DU-E, DI/DUIMP, invoice, conhecimento, contrato, NF-e, comprovante de embarque, EFD e memória de crédito.",
+        "risk": "Tratar operação interna preparatória como exportação sem comprovar fim específico e saída efetiva ao exterior.",
+        "keywords": [
+            "importação", "importacao", "importado", "desembaraço", "desembaraco", "exportação", "exportacao", "exterior",
+            "comércio exterior", "comercio exterior", "drawback", "zona franca", "área de livre comércio",
+            "area de livre comercio", "fim específico de exportação", "fim especifico de exportacao"
+        ],
+    },
+    {
+        "id": "atacado-comercio-distribuicao",
+        "title": "Atacado, comércio e centros de distribuição",
+        "summary": "Regimes e benefícios para atacadistas, varejo, distribuição, centrais, comércio, carga efetiva e credenciamentos.",
+        "read": "Verifique CNAE, atividade real, volume, destinatários, termo de acordo, vedação de acumulação, fundo e escrituração.",
+        "departments": "Comercial informa cadeia; fiscal parametriza carga; financeiro controla fundo; contábil mede margem e aderência ao regime.",
+        "documents": "Termo de credenciamento, cadastro, XML, EFD, demonstrativo de apuração, guia do fundo e relatório de vendas.",
+        "risk": "Aplicar regime atacadista a operação varejista, venda a consumidor final ou mercadoria excluída.",
+        "keywords": [
+            "atacadista", "atacado", "comércio atacadista", "comercio atacadista", "varejo", "varejista", "distribuição",
+            "distribuicao", "distribuidor", "centro de distribuição", "centro de distribuicao", "central de distribuição",
+            "central de distribuicao", "carga efetiva", "regime atacadista"
+        ],
+    },
+    {
+        "id": "social-educacao-cultura-entidades",
+        "title": "Social, educação, cultura e entidades",
+        "summary": "Benefícios vinculados a entidades, assistência, educação, cultura, livros, doações, pessoas com deficiência e políticas públicas.",
+        "read": "Leia a finalidade e o sujeito favorecido: muitas regras exigem entidade específica, destinação pública ou vedação de revenda.",
+        "departments": "Jurídico valida entidade e finalidade; fiscal documenta CST e fundamento; financeiro guarda doação ou termo; contábil evidencia baixa.",
+        "documents": "Contrato, termo de doação, estatuto ou comprovação da entidade, NF-e, declaração de destinação, EFD e fundamento legal.",
+        "risk": "Transformar benefício social em regra comercial comum, sem provar a destinação ou o sujeito beneficiado.",
+        "keywords": [
+            "educação", "educacao", "ensino", "escola", "universidade", "cultura", "livro", "livros", "entidade",
+            "filantrópica", "filantropica", "assistência social", "assistencia social", "doação", "doacao",
+            "deficiência", "deficiencia", "pessoa com deficiência", "pessoa com deficiencia"
+        ],
+    },
+    {
+        "id": "construcao-minerais-madeira",
+        "title": "Construção, minerais, madeira e materiais",
+        "summary": "Tratamentos para construção civil, minerais, madeira, cimento, cerâmica, aço, materiais e cadeias extrativas.",
+        "read": "Defina se a operação é venda de mercadoria, fornecimento com instalação, extração, industrialização ou obra.",
+        "departments": "Fiscal separa ICMS/ISS quando necessário; engenharia comprova aplicação; compras guarda origem; contábil concilia estoque e obra.",
+        "documents": "NF-e, contrato de obra, laudo, NCM, romaneio, controle de estoque, EFD e memória de base ou crédito.",
+        "risk": "Aplicar benefício de material ou mineral a prestação de serviço, obra ou produto fora da descrição legal.",
+        "keywords": [
+            "construção civil", "construcao civil", "cimento", "cerâmica", "ceramica", "madeira", "mineral", "minério",
+            "minerio", "pedra", "areia", "brita", "aço", "aco", "ferro", "metalúrgica", "metalurgica", "material de construção",
+            "material de construcao"
+        ],
+    },
+]
+
 SIGNAL_TO_GROUP = {
     "aliquota": "aliquotas",
     "reducao de base": "beneficios",
@@ -395,6 +539,140 @@ def excerpts(text: str, needles: list[str], limit: int = 3) -> list[str]:
     return found
 
 
+def sector_anchor(sector: dict) -> str:
+    return f"beneficio-{sector['id']}"
+
+
+def benefit_sector_results(docs: list[dict]) -> list[dict]:
+    normalized_docs = [(doc, normalize(doc["text"])) for doc in docs]
+    results: list[dict] = []
+    for sector in BENEFIT_SECTOR_DEFS:
+        normalized_keywords = [normalize(keyword) for keyword in sector["keywords"]]
+        hits: list[dict] = []
+        total = 0
+        for doc, low in normalized_docs:
+            matched_terms = []
+            score = 0
+            for raw_keyword, keyword in zip(sector["keywords"], normalized_keywords):
+                count = low.count(keyword)
+                if count:
+                    matched_terms.append(raw_keyword)
+                    score += count
+            if score:
+                total += score
+                hits.append({
+                    "doc": doc,
+                    "score": score,
+                    "terms": matched_terms[:8],
+                })
+        if hits:
+            hits.sort(key=lambda item: (-item["score"], item["doc"]["title"]))
+            results.append({
+                "sector": sector,
+                "hits": hits,
+                "score": total,
+            })
+    results.sort(key=lambda item: (-item["score"], item["sector"]["title"]))
+    return results
+
+
+def render_benefit_sector_index(current_path: str, uf: str, results: list[dict]) -> str:
+    if not results:
+        return ""
+    name = STATE_NAMES.get(uf, uf)
+    cards = []
+    for result in results:
+        sector = result["sector"]
+        terms = ", ".join(sorted({term for hit in result["hits"][:4] for term in hit["terms"]})[:6])
+        cards.append(f"""
+<a class="benefit-sector-card searchable-card" href="#{escape(sector_anchor(sector))}"
+   data-search="{escape(name + ' ' + sector['title'] + ' ' + sector['summary'] + ' ' + ' '.join(sector['keywords']))}">
+  <span>{escape(fmt_num(len(result['hits'])))} fontes</span>
+  <strong>{escape(sector['title'])}</strong>
+  <small>{escape(terms or 'benefício fiscal setorial')}</small>
+</a>
+""")
+    return f"""
+<section class="section-wrap benefit-sector-map">
+  <div class="section-heading">
+    <span class="eyebrow">Benefícios por setor</span>
+    <h2>Entre pelo assunto econômico</h2>
+    <p>O índice abaixo leva a seções reais desta página. Ele ajuda a estudar a lei por cadeia econômica: mercadoria, operação, destinatário, documento e risco.</p>
+  </div>
+  <div class="benefit-sector-grid">{''.join(cards)}</div>
+</section>
+"""
+
+
+def render_benefit_sector_sections(current_path: str, uf: str, results: list[dict]) -> str:
+    if not results:
+        return ""
+    articles = []
+    for result in results:
+        sector = result["sector"]
+        quotes = []
+        for hit in result["hits"][:4]:
+            doc = hit["doc"]
+            quote_text = excerpts(doc["text"], sector["keywords"], limit=1)
+            if not quote_text:
+                continue
+            terms = ", ".join(hit["terms"][:5])
+            quotes.append(f"""
+<blockquote class="law-quote">
+  <p>{escape(quote_text[0])}</p>
+  <cite>{escape(doc['file'])}{' · sinais: ' + escape(terms) if terms else ''}</cite>
+</blockquote>
+<div class="chapter-application">
+  <strong>Texto integral</strong>
+  <span><a href="{escape(rel_href(current_path, source_path(uf, doc)))}">abrir fonte em tela</a></span>
+</div>
+""")
+        if not quotes:
+            continue
+        related = [
+            ("Alíquotas e base", group_path(uf, "aliquotas")),
+            ("ST", group_path(uf, "st")),
+            ("Documentos e prova", group_path(uf, "prova")),
+        ]
+        related_links = "".join(f'<a href="{escape(rel_href(current_path, target))}">{escape(label)}</a>' for label, target in related)
+        articles.append(f"""
+<article class="benefit-sector" id="{escape(sector_anchor(sector))}">
+  <div class="benefit-sector-heading">
+    <span>{escape(fmt_num(result['score']))} ocorrências no texto legal</span>
+    <h3>{escape(sector['title'])}</h3>
+    <p>{escape(sector['summary'])}</p>
+  </div>
+  <dl class="benefit-sector-rules">
+    <dt>Como ler</dt>
+    <dd>{escape(sector['read'])}</dd>
+    <dt>Aplicação</dt>
+    <dd>{escape(sector['departments'])}</dd>
+    <dt>Prova</dt>
+    <dd>{escape(sector['documents'])}</dd>
+    <dt>Risco</dt>
+    <dd>{escape(sector['risk'])}</dd>
+  </dl>
+  <div class="law-quotes">{''.join(quotes)}</div>
+  <div class="signal-law-links">
+    <strong>Continuar este estudo</strong>
+    <div>{related_links}</div>
+  </div>
+</article>
+""")
+    if not articles:
+        return ""
+    return f"""
+<section class="benefit-sector-list">
+  <div class="section-heading">
+    <span class="eyebrow">Estudo setorial</span>
+    <h2>Benefício fiscal precisa de contexto</h2>
+    <p>Cada bloco mostra a porta de entrada do tema, os cuidados de interpretação e trechos legais que levaram à classificação. A íntegra continua disponível em tela.</p>
+  </div>
+  {''.join(articles)}
+</section>
+"""
+
+
 def render_excerpts(current_path: str, uf: str, docs: list[dict], group: dict) -> str:
     blocks = []
     for doc in docs[:8]:
@@ -516,6 +794,10 @@ def render_group_page(uf: str, docs: list[dict], group: dict, layout_func) -> st
     name = STATE_NAMES.get(uf, uf)
     current = group_path(uf, group["id"])
     matched = group_docs(docs, group)
+    benefit_results = benefit_sector_results(matched) if group["id"] == "beneficios" else []
+    benefit_sector_html = ""
+    if benefit_results:
+        benefit_sector_html = render_benefit_sector_index(current, uf, benefit_results) + render_benefit_sector_sections(current, uf, benefit_results)
     body = f"""
 <section class="hero-panel legal-hero">
   <div>
@@ -546,7 +828,7 @@ def render_group_page(uf: str, docs: list[dict], group: dict, layout_func) -> st
   <h2>Como interpretar</h2>
   <p>{escape(group['lesson'])}</p>
   <p>Não aplique a regra por título do arquivo. Leia o dispositivo, identifique operação, mercadoria, destinatário, período, condição e prova documental.</p>
-</section>
+</section>{benefit_sector_html}
 {render_excerpts(current, uf, matched, group)}
 <section class="section-wrap">
   <div class="section-heading">
@@ -701,6 +983,15 @@ def state_legal_search_entries(data: dict) -> list[dict[str, str]]:
                 "url": group_path(uf, group["id"]),
                 "summary": group["summary"],
                 "tags": f"{uf} {name} {group['title']} ICMS benefícios fiscais",
+            })
+        beneficios_group = group_by_id("beneficios")
+        for result in benefit_sector_results(group_docs(docs, beneficios_group)):
+            sector = result["sector"]
+            entries.append({
+                "title": f"{name}: benefícios fiscais - {sector['title']}",
+                "url": f"{group_path(uf, 'beneficios')}#{sector_anchor(sector)}",
+                "summary": sector["summary"],
+                "tags": f"{uf} {name} ICMS benefícios fiscais incentivo isenção redução crédito presumido {sector['title']} {' '.join(sector['keywords'])}",
             })
     return entries
 

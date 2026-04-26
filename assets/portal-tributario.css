@@ -609,6 +609,111 @@ a.state-card:hover {
   gap: 16px;
 }
 
+.benefit-sector-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.benefit-sector-card {
+  display: grid;
+  gap: 8px;
+  min-height: 138px;
+  padding: 18px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+  color: inherit;
+  text-decoration: none;
+  transition: border-color 160ms ease, transform 160ms ease, box-shadow 160ms ease;
+}
+
+.benefit-sector-card:hover,
+.benefit-sector-card:focus {
+  border-color: rgba(47, 125, 87, 0.45);
+  box-shadow: 0 12px 28px rgba(23, 32, 51, 0.10);
+  transform: translateY(-1px);
+}
+
+.benefit-sector-card span {
+  color: var(--amber);
+  font-size: 0.78rem;
+  font-weight: 850;
+  text-transform: uppercase;
+}
+
+.benefit-sector-card strong {
+  color: var(--navy);
+  font-size: 1.02rem;
+  line-height: 1.2;
+}
+
+.benefit-sector-card small {
+  color: var(--muted);
+  line-height: 1.35;
+}
+
+.benefit-sector-list {
+  display: grid;
+  gap: 18px;
+  margin-top: 28px;
+}
+
+.benefit-sector {
+  scroll-margin-top: 108px;
+  padding: 22px;
+  border: 1px solid var(--line);
+  border-left: 4px solid var(--green);
+  border-radius: 8px;
+  background: var(--surface);
+}
+
+.benefit-sector:target {
+  outline: 3px solid rgba(47, 125, 87, 0.22);
+  outline-offset: 3px;
+}
+
+.benefit-sector-heading span {
+  color: var(--amber);
+  font-size: 0.78rem;
+  font-weight: 850;
+  text-transform: uppercase;
+}
+
+.benefit-sector-heading h3 {
+  margin: 5px 0 8px;
+  color: var(--navy);
+  font-size: 1.35rem;
+  line-height: 1.18;
+}
+
+.benefit-sector-heading p {
+  max-width: 860px;
+  margin: 0;
+  color: var(--muted);
+}
+
+.benefit-sector-rules {
+  display: grid;
+  grid-template-columns: 150px minmax(0, 1fr);
+  gap: 10px 16px;
+  margin: 18px 0;
+  padding: 16px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #f8fafc;
+}
+
+.benefit-sector-rules dt {
+  color: var(--navy);
+  font-weight: 850;
+}
+
+.benefit-sector-rules dd {
+  margin: 0;
+  color: var(--ink);
+}
+
 .signal-study {
   scroll-margin-top: 96px;
   display: grid;
@@ -1383,6 +1488,7 @@ a.state-card:hover {
   .timeline,
   .matrix-grid,
   .signal-grid,
+  .benefit-sector-grid,
   .signal-study,
   .topic-index-grid,
   .department-grid,
@@ -1448,8 +1554,10 @@ a.state-card:hover {
   .timeline,
   .matrix-grid,
   .signal-grid,
+  .benefit-sector-grid,
   .signal-study,
   .signal-study-grid,
+  .benefit-sector-rules,
   .topic-index-grid,
   .article-context-note,
   .article-index-links,

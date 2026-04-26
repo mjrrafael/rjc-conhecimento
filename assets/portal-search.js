@@ -864,6 +864,66 @@ window.RJC_SEARCH = [
     "tags": "AC Acre Documentos, SPED e prova ICMS benefícios fiscais"
   },
   {
+    "title": "Acre: benefícios fiscais - Construção, minerais, madeira e materiais",
+    "url": "estados/ac/legislacao/beneficios-fiscais.html#beneficio-construcao-minerais-madeira",
+    "summary": "Tratamentos para construção civil, minerais, madeira, cimento, cerâmica, aço, materiais e cadeias extrativas.",
+    "tags": "AC Acre ICMS benefícios fiscais incentivo isenção redução crédito presumido Construção, minerais, madeira e materiais construção civil construcao civil cimento cerâmica ceramica madeira mineral minério minerio pedra areia brita aço aco ferro metalúrgica metalurgica material de construção material de construcao"
+  },
+  {
+    "title": "Acre: benefícios fiscais - Agropecuário, alimentos e cesta básica",
+    "url": "estados/ac/legislacao/beneficios-fiscais.html#beneficio-agro-alimentos",
+    "summary": "Benefícios que normalmente dependem de produto, destinação, produtor rural, insumo, industrialização ou política de abastecimento.",
+    "tags": "AC Acre ICMS benefícios fiscais incentivo isenção redução crédito presumido Agropecuário, alimentos e cesta básica agropecuário agropecuario produtor rural atividade rural insumo agropecuário insumo agropecuario fertilizante defensivo semente muda ração racao milho soja arroz feijão feijao leite carne frango peixe alimento cesta básica cesta basica"
+  },
+  {
+    "title": "Acre: benefícios fiscais - Indústria, máquinas e equipamentos",
+    "url": "estados/ac/legislacao/beneficios-fiscais.html#beneficio-industria-maquinas-equipamentos",
+    "summary": "Benefícios de desenvolvimento industrial, máquinas, equipamentos, ativo imobilizado, bens de capital, implantação e modernização.",
+    "tags": "AC Acre ICMS benefícios fiscais incentivo isenção redução crédito presumido Indústria, máquinas e equipamentos indústria industria industrial industrialização industrializacao máquina maquina máquinas maquinas equipamento equipamentos bem de capital bens de capital ativo imobilizado implantação implantacao modernização modernizacao investimento parque industrial"
+  },
+  {
+    "title": "Acre: benefícios fiscais - Veículos, autopeças e transporte",
+    "url": "estados/ac/legislacao/beneficios-fiscais.html#beneficio-veiculos-autopecas-transporte",
+    "summary": "Benefícios e regimes para veículos, autopeças, transporte, frete, implementos, ônibus, caminhões e cadeias automotivas.",
+    "tags": "AC Acre ICMS benefícios fiscais incentivo isenção redução crédito presumido Veículos, autopeças e transporte veículo veiculo veículos veiculos automotor automóvel automovel autopeça autopeca peças pecas caminhão caminhao ônibus onibus motocicleta chassi renavam transporte transportador frete carga passageiro implemento rodoviário implemento rodoviario"
+  },
+  {
+    "title": "Acre: benefícios fiscais - Eletrônicos, informática e telecomunicações",
+    "url": "estados/ac/legislacao/beneficios-fiscais.html#beneficio-eletronicos-informatica-telecom",
+    "summary": "Tratamentos ligados a equipamentos eletrônicos, bens de informática, telecomunicações, processamento de dados e cadeia tecnológica.",
+    "tags": "AC Acre ICMS benefícios fiscais incentivo isenção redução crédito presumido Eletrônicos, informática e telecomunicações eletrônico eletronico eletrônicos eletronicos informática informatica computador computadores software hardware processamento de dados telecomunicação telecomunicacao telecomunicações telefonia telefone celular aparelho equipamento de comunicação equipamento de comunicacao semicondutor componentes eletrônicos componentes eletronicos"
+  },
+  {
+    "title": "Acre: benefícios fiscais - Energia, combustíveis e infraestrutura",
+    "url": "estados/ac/legislacao/beneficios-fiscais.html#beneficio-energia-combustiveis-infraestrutura",
+    "summary": "Regras especiais envolvendo energia elétrica, combustíveis, gás, infraestrutura, obras, concessões e cadeias essenciais.",
+    "tags": "AC Acre ICMS benefícios fiscais incentivo isenção redução crédito presumido Energia, combustíveis e infraestrutura energia elétrica energia eletrica combustível combustivel combustíveis combustiveis diesel gasolina etanol álcool alcool biodiesel biocombustível biocombustivel gás natural gas natural glp infraestrutura concessão concessao obra pública obra publica"
+  },
+  {
+    "title": "Acre: benefícios fiscais - Social, educação, cultura e entidades",
+    "url": "estados/ac/legislacao/beneficios-fiscais.html#beneficio-social-educacao-cultura-entidades",
+    "summary": "Benefícios vinculados a entidades, assistência, educação, cultura, livros, doações, pessoas com deficiência e políticas públicas.",
+    "tags": "AC Acre ICMS benefícios fiscais incentivo isenção redução crédito presumido Social, educação, cultura e entidades educação educacao ensino escola universidade cultura livro livros entidade filantrópica filantropica assistência social assistencia social doação doacao deficiência deficiencia pessoa com deficiência pessoa com deficiencia"
+  },
+  {
+    "title": "Acre: benefícios fiscais - Importação, exportação e comércio exterior",
+    "url": "estados/ac/legislacao/beneficios-fiscais.html#beneficio-importacao-exportacao-comercio-exterior",
+    "summary": "Imunidade, não incidência, suspensão, diferimento, desembaraço, importação por conta e ordem, exportação e regimes ligados ao exterior.",
+    "tags": "AC Acre ICMS benefícios fiscais incentivo isenção redução crédito presumido Importação, exportação e comércio exterior importação importacao importado desembaraço desembaraco exportação exportacao exterior comércio exterior comercio exterior drawback zona franca área de livre comércio area de livre comercio fim específico de exportação fim especifico de exportacao"
+  },
+  {
+    "title": "Acre: benefícios fiscais - Medicamentos, saúde e produtos hospitalares",
+    "url": "estados/ac/legislacao/beneficios-fiscais.html#beneficio-medicamentos-saude",
+    "summary": "Hipóteses de tratamento favorecido para medicamentos, produtos médico-hospitalares, saúde pública, deficiência e equipamentos assistivos.",
+    "tags": "AC Acre ICMS benefícios fiscais incentivo isenção redução crédito presumido Medicamentos, saúde e produtos hospitalares medicamento medicamentos farmacêutico farmaceutico hospital hospitalar produto médico produto medico saúde saude deficiente deficiência deficiencia prótese protese órtese ortese cadeira de rodas insumo hospitalar equipamento hospitalar"
+  },
+  {
+    "title": "Acre: benefícios fiscais - Atacado, comércio e centros de distribuição",
+    "url": "estados/ac/legislacao/beneficios-fiscais.html#beneficio-atacado-comercio-distribuicao",
+    "summary": "Regimes e benefícios para atacadistas, varejo, distribuição, centrais, comércio, carga efetiva e credenciamentos.",
+    "tags": "AC Acre ICMS benefícios fiscais incentivo isenção redução crédito presumido Atacado, comércio e centros de distribuição atacadista atacado comércio atacadista comercio atacadista varejo varejista distribuição distribuicao distribuidor centro de distribuição centro de distribuicao central de distribuição central de distribuicao carga efetiva regime atacadista"
+  },
+  {
     "title": "Alagoas: legislação de ICMS em tela",
     "url": "estados/al/legislacao/index.html",
     "summary": "RICMS, leis, anexos, benefícios fiscais, alíquotas, ST e prova documental de Alagoas.",
@@ -898,6 +958,66 @@ window.RJC_SEARCH = [
     "url": "estados/al/legislacao/documentos-prova.html",
     "summary": "NF-e, CT-e, EFD, escrituração, cBenef quando aplicável, obrigações acessórias, comprovantes e memória de cálculo.",
     "tags": "AL Alagoas Documentos, SPED e prova ICMS benefícios fiscais"
+  },
+  {
+    "title": "Alagoas: benefícios fiscais - Construção, minerais, madeira e materiais",
+    "url": "estados/al/legislacao/beneficios-fiscais.html#beneficio-construcao-minerais-madeira",
+    "summary": "Tratamentos para construção civil, minerais, madeira, cimento, cerâmica, aço, materiais e cadeias extrativas.",
+    "tags": "AL Alagoas ICMS benefícios fiscais incentivo isenção redução crédito presumido Construção, minerais, madeira e materiais construção civil construcao civil cimento cerâmica ceramica madeira mineral minério minerio pedra areia brita aço aco ferro metalúrgica metalurgica material de construção material de construcao"
+  },
+  {
+    "title": "Alagoas: benefícios fiscais - Agropecuário, alimentos e cesta básica",
+    "url": "estados/al/legislacao/beneficios-fiscais.html#beneficio-agro-alimentos",
+    "summary": "Benefícios que normalmente dependem de produto, destinação, produtor rural, insumo, industrialização ou política de abastecimento.",
+    "tags": "AL Alagoas ICMS benefícios fiscais incentivo isenção redução crédito presumido Agropecuário, alimentos e cesta básica agropecuário agropecuario produtor rural atividade rural insumo agropecuário insumo agropecuario fertilizante defensivo semente muda ração racao milho soja arroz feijão feijao leite carne frango peixe alimento cesta básica cesta basica"
+  },
+  {
+    "title": "Alagoas: benefícios fiscais - Energia, combustíveis e infraestrutura",
+    "url": "estados/al/legislacao/beneficios-fiscais.html#beneficio-energia-combustiveis-infraestrutura",
+    "summary": "Regras especiais envolvendo energia elétrica, combustíveis, gás, infraestrutura, obras, concessões e cadeias essenciais.",
+    "tags": "AL Alagoas ICMS benefícios fiscais incentivo isenção redução crédito presumido Energia, combustíveis e infraestrutura energia elétrica energia eletrica combustível combustivel combustíveis combustiveis diesel gasolina etanol álcool alcool biodiesel biocombustível biocombustivel gás natural gas natural glp infraestrutura concessão concessao obra pública obra publica"
+  },
+  {
+    "title": "Alagoas: benefícios fiscais - Indústria, máquinas e equipamentos",
+    "url": "estados/al/legislacao/beneficios-fiscais.html#beneficio-industria-maquinas-equipamentos",
+    "summary": "Benefícios de desenvolvimento industrial, máquinas, equipamentos, ativo imobilizado, bens de capital, implantação e modernização.",
+    "tags": "AL Alagoas ICMS benefícios fiscais incentivo isenção redução crédito presumido Indústria, máquinas e equipamentos indústria industria industrial industrialização industrializacao máquina maquina máquinas maquinas equipamento equipamentos bem de capital bens de capital ativo imobilizado implantação implantacao modernização modernizacao investimento parque industrial"
+  },
+  {
+    "title": "Alagoas: benefícios fiscais - Veículos, autopeças e transporte",
+    "url": "estados/al/legislacao/beneficios-fiscais.html#beneficio-veiculos-autopecas-transporte",
+    "summary": "Benefícios e regimes para veículos, autopeças, transporte, frete, implementos, ônibus, caminhões e cadeias automotivas.",
+    "tags": "AL Alagoas ICMS benefícios fiscais incentivo isenção redução crédito presumido Veículos, autopeças e transporte veículo veiculo veículos veiculos automotor automóvel automovel autopeça autopeca peças pecas caminhão caminhao ônibus onibus motocicleta chassi renavam transporte transportador frete carga passageiro implemento rodoviário implemento rodoviario"
+  },
+  {
+    "title": "Alagoas: benefícios fiscais - Eletrônicos, informática e telecomunicações",
+    "url": "estados/al/legislacao/beneficios-fiscais.html#beneficio-eletronicos-informatica-telecom",
+    "summary": "Tratamentos ligados a equipamentos eletrônicos, bens de informática, telecomunicações, processamento de dados e cadeia tecnológica.",
+    "tags": "AL Alagoas ICMS benefícios fiscais incentivo isenção redução crédito presumido Eletrônicos, informática e telecomunicações eletrônico eletronico eletrônicos eletronicos informática informatica computador computadores software hardware processamento de dados telecomunicação telecomunicacao telecomunicações telefonia telefone celular aparelho equipamento de comunicação equipamento de comunicacao semicondutor componentes eletrônicos componentes eletronicos"
+  },
+  {
+    "title": "Alagoas: benefícios fiscais - Importação, exportação e comércio exterior",
+    "url": "estados/al/legislacao/beneficios-fiscais.html#beneficio-importacao-exportacao-comercio-exterior",
+    "summary": "Imunidade, não incidência, suspensão, diferimento, desembaraço, importação por conta e ordem, exportação e regimes ligados ao exterior.",
+    "tags": "AL Alagoas ICMS benefícios fiscais incentivo isenção redução crédito presumido Importação, exportação e comércio exterior importação importacao importado desembaraço desembaraco exportação exportacao exterior comércio exterior comercio exterior drawback zona franca área de livre comércio area de livre comercio fim específico de exportação fim especifico de exportacao"
+  },
+  {
+    "title": "Alagoas: benefícios fiscais - Atacado, comércio e centros de distribuição",
+    "url": "estados/al/legislacao/beneficios-fiscais.html#beneficio-atacado-comercio-distribuicao",
+    "summary": "Regimes e benefícios para atacadistas, varejo, distribuição, centrais, comércio, carga efetiva e credenciamentos.",
+    "tags": "AL Alagoas ICMS benefícios fiscais incentivo isenção redução crédito presumido Atacado, comércio e centros de distribuição atacadista atacado comércio atacadista comercio atacadista varejo varejista distribuição distribuicao distribuidor centro de distribuição centro de distribuicao central de distribuição central de distribuicao carga efetiva regime atacadista"
+  },
+  {
+    "title": "Alagoas: benefícios fiscais - Medicamentos, saúde e produtos hospitalares",
+    "url": "estados/al/legislacao/beneficios-fiscais.html#beneficio-medicamentos-saude",
+    "summary": "Hipóteses de tratamento favorecido para medicamentos, produtos médico-hospitalares, saúde pública, deficiência e equipamentos assistivos.",
+    "tags": "AL Alagoas ICMS benefícios fiscais incentivo isenção redução crédito presumido Medicamentos, saúde e produtos hospitalares medicamento medicamentos farmacêutico farmaceutico hospital hospitalar produto médico produto medico saúde saude deficiente deficiência deficiencia prótese protese órtese ortese cadeira de rodas insumo hospitalar equipamento hospitalar"
+  },
+  {
+    "title": "Alagoas: benefícios fiscais - Social, educação, cultura e entidades",
+    "url": "estados/al/legislacao/beneficios-fiscais.html#beneficio-social-educacao-cultura-entidades",
+    "summary": "Benefícios vinculados a entidades, assistência, educação, cultura, livros, doações, pessoas com deficiência e políticas públicas.",
+    "tags": "AL Alagoas ICMS benefícios fiscais incentivo isenção redução crédito presumido Social, educação, cultura e entidades educação educacao ensino escola universidade cultura livro livros entidade filantrópica filantropica assistência social assistencia social doação doacao deficiência deficiencia pessoa com deficiência pessoa com deficiencia"
   },
   {
     "title": "Amapá: legislação de ICMS em tela",
@@ -936,6 +1056,66 @@ window.RJC_SEARCH = [
     "tags": "AP Amapá Documentos, SPED e prova ICMS benefícios fiscais"
   },
   {
+    "title": "Amapá: benefícios fiscais - Construção, minerais, madeira e materiais",
+    "url": "estados/ap/legislacao/beneficios-fiscais.html#beneficio-construcao-minerais-madeira",
+    "summary": "Tratamentos para construção civil, minerais, madeira, cimento, cerâmica, aço, materiais e cadeias extrativas.",
+    "tags": "AP Amapá ICMS benefícios fiscais incentivo isenção redução crédito presumido Construção, minerais, madeira e materiais construção civil construcao civil cimento cerâmica ceramica madeira mineral minério minerio pedra areia brita aço aco ferro metalúrgica metalurgica material de construção material de construcao"
+  },
+  {
+    "title": "Amapá: benefícios fiscais - Agropecuário, alimentos e cesta básica",
+    "url": "estados/ap/legislacao/beneficios-fiscais.html#beneficio-agro-alimentos",
+    "summary": "Benefícios que normalmente dependem de produto, destinação, produtor rural, insumo, industrialização ou política de abastecimento.",
+    "tags": "AP Amapá ICMS benefícios fiscais incentivo isenção redução crédito presumido Agropecuário, alimentos e cesta básica agropecuário agropecuario produtor rural atividade rural insumo agropecuário insumo agropecuario fertilizante defensivo semente muda ração racao milho soja arroz feijão feijao leite carne frango peixe alimento cesta básica cesta basica"
+  },
+  {
+    "title": "Amapá: benefícios fiscais - Indústria, máquinas e equipamentos",
+    "url": "estados/ap/legislacao/beneficios-fiscais.html#beneficio-industria-maquinas-equipamentos",
+    "summary": "Benefícios de desenvolvimento industrial, máquinas, equipamentos, ativo imobilizado, bens de capital, implantação e modernização.",
+    "tags": "AP Amapá ICMS benefícios fiscais incentivo isenção redução crédito presumido Indústria, máquinas e equipamentos indústria industria industrial industrialização industrializacao máquina maquina máquinas maquinas equipamento equipamentos bem de capital bens de capital ativo imobilizado implantação implantacao modernização modernizacao investimento parque industrial"
+  },
+  {
+    "title": "Amapá: benefícios fiscais - Veículos, autopeças e transporte",
+    "url": "estados/ap/legislacao/beneficios-fiscais.html#beneficio-veiculos-autopecas-transporte",
+    "summary": "Benefícios e regimes para veículos, autopeças, transporte, frete, implementos, ônibus, caminhões e cadeias automotivas.",
+    "tags": "AP Amapá ICMS benefícios fiscais incentivo isenção redução crédito presumido Veículos, autopeças e transporte veículo veiculo veículos veiculos automotor automóvel automovel autopeça autopeca peças pecas caminhão caminhao ônibus onibus motocicleta chassi renavam transporte transportador frete carga passageiro implemento rodoviário implemento rodoviario"
+  },
+  {
+    "title": "Amapá: benefícios fiscais - Energia, combustíveis e infraestrutura",
+    "url": "estados/ap/legislacao/beneficios-fiscais.html#beneficio-energia-combustiveis-infraestrutura",
+    "summary": "Regras especiais envolvendo energia elétrica, combustíveis, gás, infraestrutura, obras, concessões e cadeias essenciais.",
+    "tags": "AP Amapá ICMS benefícios fiscais incentivo isenção redução crédito presumido Energia, combustíveis e infraestrutura energia elétrica energia eletrica combustível combustivel combustíveis combustiveis diesel gasolina etanol álcool alcool biodiesel biocombustível biocombustivel gás natural gas natural glp infraestrutura concessão concessao obra pública obra publica"
+  },
+  {
+    "title": "Amapá: benefícios fiscais - Eletrônicos, informática e telecomunicações",
+    "url": "estados/ap/legislacao/beneficios-fiscais.html#beneficio-eletronicos-informatica-telecom",
+    "summary": "Tratamentos ligados a equipamentos eletrônicos, bens de informática, telecomunicações, processamento de dados e cadeia tecnológica.",
+    "tags": "AP Amapá ICMS benefícios fiscais incentivo isenção redução crédito presumido Eletrônicos, informática e telecomunicações eletrônico eletronico eletrônicos eletronicos informática informatica computador computadores software hardware processamento de dados telecomunicação telecomunicacao telecomunicações telefonia telefone celular aparelho equipamento de comunicação equipamento de comunicacao semicondutor componentes eletrônicos componentes eletronicos"
+  },
+  {
+    "title": "Amapá: benefícios fiscais - Importação, exportação e comércio exterior",
+    "url": "estados/ap/legislacao/beneficios-fiscais.html#beneficio-importacao-exportacao-comercio-exterior",
+    "summary": "Imunidade, não incidência, suspensão, diferimento, desembaraço, importação por conta e ordem, exportação e regimes ligados ao exterior.",
+    "tags": "AP Amapá ICMS benefícios fiscais incentivo isenção redução crédito presumido Importação, exportação e comércio exterior importação importacao importado desembaraço desembaraco exportação exportacao exterior comércio exterior comercio exterior drawback zona franca área de livre comércio area de livre comercio fim específico de exportação fim especifico de exportacao"
+  },
+  {
+    "title": "Amapá: benefícios fiscais - Atacado, comércio e centros de distribuição",
+    "url": "estados/ap/legislacao/beneficios-fiscais.html#beneficio-atacado-comercio-distribuicao",
+    "summary": "Regimes e benefícios para atacadistas, varejo, distribuição, centrais, comércio, carga efetiva e credenciamentos.",
+    "tags": "AP Amapá ICMS benefícios fiscais incentivo isenção redução crédito presumido Atacado, comércio e centros de distribuição atacadista atacado comércio atacadista comercio atacadista varejo varejista distribuição distribuicao distribuidor centro de distribuição centro de distribuicao central de distribuição central de distribuicao carga efetiva regime atacadista"
+  },
+  {
+    "title": "Amapá: benefícios fiscais - Social, educação, cultura e entidades",
+    "url": "estados/ap/legislacao/beneficios-fiscais.html#beneficio-social-educacao-cultura-entidades",
+    "summary": "Benefícios vinculados a entidades, assistência, educação, cultura, livros, doações, pessoas com deficiência e políticas públicas.",
+    "tags": "AP Amapá ICMS benefícios fiscais incentivo isenção redução crédito presumido Social, educação, cultura e entidades educação educacao ensino escola universidade cultura livro livros entidade filantrópica filantropica assistência social assistencia social doação doacao deficiência deficiencia pessoa com deficiência pessoa com deficiencia"
+  },
+  {
+    "title": "Amapá: benefícios fiscais - Medicamentos, saúde e produtos hospitalares",
+    "url": "estados/ap/legislacao/beneficios-fiscais.html#beneficio-medicamentos-saude",
+    "summary": "Hipóteses de tratamento favorecido para medicamentos, produtos médico-hospitalares, saúde pública, deficiência e equipamentos assistivos.",
+    "tags": "AP Amapá ICMS benefícios fiscais incentivo isenção redução crédito presumido Medicamentos, saúde e produtos hospitalares medicamento medicamentos farmacêutico farmaceutico hospital hospitalar produto médico produto medico saúde saude deficiente deficiência deficiencia prótese protese órtese ortese cadeira de rodas insumo hospitalar equipamento hospitalar"
+  },
+  {
     "title": "Amazonas: legislação de ICMS em tela",
     "url": "estados/am/legislacao/index.html",
     "summary": "RICMS, leis, anexos, benefícios fiscais, alíquotas, ST e prova documental de Amazonas.",
@@ -970,6 +1150,66 @@ window.RJC_SEARCH = [
     "url": "estados/am/legislacao/documentos-prova.html",
     "summary": "NF-e, CT-e, EFD, escrituração, cBenef quando aplicável, obrigações acessórias, comprovantes e memória de cálculo.",
     "tags": "AM Amazonas Documentos, SPED e prova ICMS benefícios fiscais"
+  },
+  {
+    "title": "Amazonas: benefícios fiscais - Construção, minerais, madeira e materiais",
+    "url": "estados/am/legislacao/beneficios-fiscais.html#beneficio-construcao-minerais-madeira",
+    "summary": "Tratamentos para construção civil, minerais, madeira, cimento, cerâmica, aço, materiais e cadeias extrativas.",
+    "tags": "AM Amazonas ICMS benefícios fiscais incentivo isenção redução crédito presumido Construção, minerais, madeira e materiais construção civil construcao civil cimento cerâmica ceramica madeira mineral minério minerio pedra areia brita aço aco ferro metalúrgica metalurgica material de construção material de construcao"
+  },
+  {
+    "title": "Amazonas: benefícios fiscais - Agropecuário, alimentos e cesta básica",
+    "url": "estados/am/legislacao/beneficios-fiscais.html#beneficio-agro-alimentos",
+    "summary": "Benefícios que normalmente dependem de produto, destinação, produtor rural, insumo, industrialização ou política de abastecimento.",
+    "tags": "AM Amazonas ICMS benefícios fiscais incentivo isenção redução crédito presumido Agropecuário, alimentos e cesta básica agropecuário agropecuario produtor rural atividade rural insumo agropecuário insumo agropecuario fertilizante defensivo semente muda ração racao milho soja arroz feijão feijao leite carne frango peixe alimento cesta básica cesta basica"
+  },
+  {
+    "title": "Amazonas: benefícios fiscais - Indústria, máquinas e equipamentos",
+    "url": "estados/am/legislacao/beneficios-fiscais.html#beneficio-industria-maquinas-equipamentos",
+    "summary": "Benefícios de desenvolvimento industrial, máquinas, equipamentos, ativo imobilizado, bens de capital, implantação e modernização.",
+    "tags": "AM Amazonas ICMS benefícios fiscais incentivo isenção redução crédito presumido Indústria, máquinas e equipamentos indústria industria industrial industrialização industrializacao máquina maquina máquinas maquinas equipamento equipamentos bem de capital bens de capital ativo imobilizado implantação implantacao modernização modernizacao investimento parque industrial"
+  },
+  {
+    "title": "Amazonas: benefícios fiscais - Veículos, autopeças e transporte",
+    "url": "estados/am/legislacao/beneficios-fiscais.html#beneficio-veiculos-autopecas-transporte",
+    "summary": "Benefícios e regimes para veículos, autopeças, transporte, frete, implementos, ônibus, caminhões e cadeias automotivas.",
+    "tags": "AM Amazonas ICMS benefícios fiscais incentivo isenção redução crédito presumido Veículos, autopeças e transporte veículo veiculo veículos veiculos automotor automóvel automovel autopeça autopeca peças pecas caminhão caminhao ônibus onibus motocicleta chassi renavam transporte transportador frete carga passageiro implemento rodoviário implemento rodoviario"
+  },
+  {
+    "title": "Amazonas: benefícios fiscais - Energia, combustíveis e infraestrutura",
+    "url": "estados/am/legislacao/beneficios-fiscais.html#beneficio-energia-combustiveis-infraestrutura",
+    "summary": "Regras especiais envolvendo energia elétrica, combustíveis, gás, infraestrutura, obras, concessões e cadeias essenciais.",
+    "tags": "AM Amazonas ICMS benefícios fiscais incentivo isenção redução crédito presumido Energia, combustíveis e infraestrutura energia elétrica energia eletrica combustível combustivel combustíveis combustiveis diesel gasolina etanol álcool alcool biodiesel biocombustível biocombustivel gás natural gas natural glp infraestrutura concessão concessao obra pública obra publica"
+  },
+  {
+    "title": "Amazonas: benefícios fiscais - Importação, exportação e comércio exterior",
+    "url": "estados/am/legislacao/beneficios-fiscais.html#beneficio-importacao-exportacao-comercio-exterior",
+    "summary": "Imunidade, não incidência, suspensão, diferimento, desembaraço, importação por conta e ordem, exportação e regimes ligados ao exterior.",
+    "tags": "AM Amazonas ICMS benefícios fiscais incentivo isenção redução crédito presumido Importação, exportação e comércio exterior importação importacao importado desembaraço desembaraco exportação exportacao exterior comércio exterior comercio exterior drawback zona franca área de livre comércio area de livre comercio fim específico de exportação fim especifico de exportacao"
+  },
+  {
+    "title": "Amazonas: benefícios fiscais - Eletrônicos, informática e telecomunicações",
+    "url": "estados/am/legislacao/beneficios-fiscais.html#beneficio-eletronicos-informatica-telecom",
+    "summary": "Tratamentos ligados a equipamentos eletrônicos, bens de informática, telecomunicações, processamento de dados e cadeia tecnológica.",
+    "tags": "AM Amazonas ICMS benefícios fiscais incentivo isenção redução crédito presumido Eletrônicos, informática e telecomunicações eletrônico eletronico eletrônicos eletronicos informática informatica computador computadores software hardware processamento de dados telecomunicação telecomunicacao telecomunicações telefonia telefone celular aparelho equipamento de comunicação equipamento de comunicacao semicondutor componentes eletrônicos componentes eletronicos"
+  },
+  {
+    "title": "Amazonas: benefícios fiscais - Social, educação, cultura e entidades",
+    "url": "estados/am/legislacao/beneficios-fiscais.html#beneficio-social-educacao-cultura-entidades",
+    "summary": "Benefícios vinculados a entidades, assistência, educação, cultura, livros, doações, pessoas com deficiência e políticas públicas.",
+    "tags": "AM Amazonas ICMS benefícios fiscais incentivo isenção redução crédito presumido Social, educação, cultura e entidades educação educacao ensino escola universidade cultura livro livros entidade filantrópica filantropica assistência social assistencia social doação doacao deficiência deficiencia pessoa com deficiência pessoa com deficiencia"
+  },
+  {
+    "title": "Amazonas: benefícios fiscais - Atacado, comércio e centros de distribuição",
+    "url": "estados/am/legislacao/beneficios-fiscais.html#beneficio-atacado-comercio-distribuicao",
+    "summary": "Regimes e benefícios para atacadistas, varejo, distribuição, centrais, comércio, carga efetiva e credenciamentos.",
+    "tags": "AM Amazonas ICMS benefícios fiscais incentivo isenção redução crédito presumido Atacado, comércio e centros de distribuição atacadista atacado comércio atacadista comercio atacadista varejo varejista distribuição distribuicao distribuidor centro de distribuição centro de distribuicao central de distribuição central de distribuicao carga efetiva regime atacadista"
+  },
+  {
+    "title": "Amazonas: benefícios fiscais - Medicamentos, saúde e produtos hospitalares",
+    "url": "estados/am/legislacao/beneficios-fiscais.html#beneficio-medicamentos-saude",
+    "summary": "Hipóteses de tratamento favorecido para medicamentos, produtos médico-hospitalares, saúde pública, deficiência e equipamentos assistivos.",
+    "tags": "AM Amazonas ICMS benefícios fiscais incentivo isenção redução crédito presumido Medicamentos, saúde e produtos hospitalares medicamento medicamentos farmacêutico farmaceutico hospital hospitalar produto médico produto medico saúde saude deficiente deficiência deficiencia prótese protese órtese ortese cadeira de rodas insumo hospitalar equipamento hospitalar"
   },
   {
     "title": "Bahia: legislação de ICMS em tela",
@@ -1008,6 +1248,66 @@ window.RJC_SEARCH = [
     "tags": "BA Bahia Documentos, SPED e prova ICMS benefícios fiscais"
   },
   {
+    "title": "Bahia: benefícios fiscais - Construção, minerais, madeira e materiais",
+    "url": "estados/ba/legislacao/beneficios-fiscais.html#beneficio-construcao-minerais-madeira",
+    "summary": "Tratamentos para construção civil, minerais, madeira, cimento, cerâmica, aço, materiais e cadeias extrativas.",
+    "tags": "BA Bahia ICMS benefícios fiscais incentivo isenção redução crédito presumido Construção, minerais, madeira e materiais construção civil construcao civil cimento cerâmica ceramica madeira mineral minério minerio pedra areia brita aço aco ferro metalúrgica metalurgica material de construção material de construcao"
+  },
+  {
+    "title": "Bahia: benefícios fiscais - Agropecuário, alimentos e cesta básica",
+    "url": "estados/ba/legislacao/beneficios-fiscais.html#beneficio-agro-alimentos",
+    "summary": "Benefícios que normalmente dependem de produto, destinação, produtor rural, insumo, industrialização ou política de abastecimento.",
+    "tags": "BA Bahia ICMS benefícios fiscais incentivo isenção redução crédito presumido Agropecuário, alimentos e cesta básica agropecuário agropecuario produtor rural atividade rural insumo agropecuário insumo agropecuario fertilizante defensivo semente muda ração racao milho soja arroz feijão feijao leite carne frango peixe alimento cesta básica cesta basica"
+  },
+  {
+    "title": "Bahia: benefícios fiscais - Veículos, autopeças e transporte",
+    "url": "estados/ba/legislacao/beneficios-fiscais.html#beneficio-veiculos-autopecas-transporte",
+    "summary": "Benefícios e regimes para veículos, autopeças, transporte, frete, implementos, ônibus, caminhões e cadeias automotivas.",
+    "tags": "BA Bahia ICMS benefícios fiscais incentivo isenção redução crédito presumido Veículos, autopeças e transporte veículo veiculo veículos veiculos automotor automóvel automovel autopeça autopeca peças pecas caminhão caminhao ônibus onibus motocicleta chassi renavam transporte transportador frete carga passageiro implemento rodoviário implemento rodoviario"
+  },
+  {
+    "title": "Bahia: benefícios fiscais - Indústria, máquinas e equipamentos",
+    "url": "estados/ba/legislacao/beneficios-fiscais.html#beneficio-industria-maquinas-equipamentos",
+    "summary": "Benefícios de desenvolvimento industrial, máquinas, equipamentos, ativo imobilizado, bens de capital, implantação e modernização.",
+    "tags": "BA Bahia ICMS benefícios fiscais incentivo isenção redução crédito presumido Indústria, máquinas e equipamentos indústria industria industrial industrialização industrializacao máquina maquina máquinas maquinas equipamento equipamentos bem de capital bens de capital ativo imobilizado implantação implantacao modernização modernizacao investimento parque industrial"
+  },
+  {
+    "title": "Bahia: benefícios fiscais - Energia, combustíveis e infraestrutura",
+    "url": "estados/ba/legislacao/beneficios-fiscais.html#beneficio-energia-combustiveis-infraestrutura",
+    "summary": "Regras especiais envolvendo energia elétrica, combustíveis, gás, infraestrutura, obras, concessões e cadeias essenciais.",
+    "tags": "BA Bahia ICMS benefícios fiscais incentivo isenção redução crédito presumido Energia, combustíveis e infraestrutura energia elétrica energia eletrica combustível combustivel combustíveis combustiveis diesel gasolina etanol álcool alcool biodiesel biocombustível biocombustivel gás natural gas natural glp infraestrutura concessão concessao obra pública obra publica"
+  },
+  {
+    "title": "Bahia: benefícios fiscais - Importação, exportação e comércio exterior",
+    "url": "estados/ba/legislacao/beneficios-fiscais.html#beneficio-importacao-exportacao-comercio-exterior",
+    "summary": "Imunidade, não incidência, suspensão, diferimento, desembaraço, importação por conta e ordem, exportação e regimes ligados ao exterior.",
+    "tags": "BA Bahia ICMS benefícios fiscais incentivo isenção redução crédito presumido Importação, exportação e comércio exterior importação importacao importado desembaraço desembaraco exportação exportacao exterior comércio exterior comercio exterior drawback zona franca área de livre comércio area de livre comercio fim específico de exportação fim especifico de exportacao"
+  },
+  {
+    "title": "Bahia: benefícios fiscais - Eletrônicos, informática e telecomunicações",
+    "url": "estados/ba/legislacao/beneficios-fiscais.html#beneficio-eletronicos-informatica-telecom",
+    "summary": "Tratamentos ligados a equipamentos eletrônicos, bens de informática, telecomunicações, processamento de dados e cadeia tecnológica.",
+    "tags": "BA Bahia ICMS benefícios fiscais incentivo isenção redução crédito presumido Eletrônicos, informática e telecomunicações eletrônico eletronico eletrônicos eletronicos informática informatica computador computadores software hardware processamento de dados telecomunicação telecomunicacao telecomunicações telefonia telefone celular aparelho equipamento de comunicação equipamento de comunicacao semicondutor componentes eletrônicos componentes eletronicos"
+  },
+  {
+    "title": "Bahia: benefícios fiscais - Atacado, comércio e centros de distribuição",
+    "url": "estados/ba/legislacao/beneficios-fiscais.html#beneficio-atacado-comercio-distribuicao",
+    "summary": "Regimes e benefícios para atacadistas, varejo, distribuição, centrais, comércio, carga efetiva e credenciamentos.",
+    "tags": "BA Bahia ICMS benefícios fiscais incentivo isenção redução crédito presumido Atacado, comércio e centros de distribuição atacadista atacado comércio atacadista comercio atacadista varejo varejista distribuição distribuicao distribuidor centro de distribuição centro de distribuicao central de distribuição central de distribuicao carga efetiva regime atacadista"
+  },
+  {
+    "title": "Bahia: benefícios fiscais - Medicamentos, saúde e produtos hospitalares",
+    "url": "estados/ba/legislacao/beneficios-fiscais.html#beneficio-medicamentos-saude",
+    "summary": "Hipóteses de tratamento favorecido para medicamentos, produtos médico-hospitalares, saúde pública, deficiência e equipamentos assistivos.",
+    "tags": "BA Bahia ICMS benefícios fiscais incentivo isenção redução crédito presumido Medicamentos, saúde e produtos hospitalares medicamento medicamentos farmacêutico farmaceutico hospital hospitalar produto médico produto medico saúde saude deficiente deficiência deficiencia prótese protese órtese ortese cadeira de rodas insumo hospitalar equipamento hospitalar"
+  },
+  {
+    "title": "Bahia: benefícios fiscais - Social, educação, cultura e entidades",
+    "url": "estados/ba/legislacao/beneficios-fiscais.html#beneficio-social-educacao-cultura-entidades",
+    "summary": "Benefícios vinculados a entidades, assistência, educação, cultura, livros, doações, pessoas com deficiência e políticas públicas.",
+    "tags": "BA Bahia ICMS benefícios fiscais incentivo isenção redução crédito presumido Social, educação, cultura e entidades educação educacao ensino escola universidade cultura livro livros entidade filantrópica filantropica assistência social assistencia social doação doacao deficiência deficiencia pessoa com deficiência pessoa com deficiencia"
+  },
+  {
     "title": "Ceará: legislação de ICMS em tela",
     "url": "estados/ce/legislacao/index.html",
     "summary": "RICMS, leis, anexos, benefícios fiscais, alíquotas, ST e prova documental de Ceará.",
@@ -1042,6 +1342,66 @@ window.RJC_SEARCH = [
     "url": "estados/ce/legislacao/documentos-prova.html",
     "summary": "NF-e, CT-e, EFD, escrituração, cBenef quando aplicável, obrigações acessórias, comprovantes e memória de cálculo.",
     "tags": "CE Ceará Documentos, SPED e prova ICMS benefícios fiscais"
+  },
+  {
+    "title": "Ceará: benefícios fiscais - Construção, minerais, madeira e materiais",
+    "url": "estados/ce/legislacao/beneficios-fiscais.html#beneficio-construcao-minerais-madeira",
+    "summary": "Tratamentos para construção civil, minerais, madeira, cimento, cerâmica, aço, materiais e cadeias extrativas.",
+    "tags": "CE Ceará ICMS benefícios fiscais incentivo isenção redução crédito presumido Construção, minerais, madeira e materiais construção civil construcao civil cimento cerâmica ceramica madeira mineral minério minerio pedra areia brita aço aco ferro metalúrgica metalurgica material de construção material de construcao"
+  },
+  {
+    "title": "Ceará: benefícios fiscais - Agropecuário, alimentos e cesta básica",
+    "url": "estados/ce/legislacao/beneficios-fiscais.html#beneficio-agro-alimentos",
+    "summary": "Benefícios que normalmente dependem de produto, destinação, produtor rural, insumo, industrialização ou política de abastecimento.",
+    "tags": "CE Ceará ICMS benefícios fiscais incentivo isenção redução crédito presumido Agropecuário, alimentos e cesta básica agropecuário agropecuario produtor rural atividade rural insumo agropecuário insumo agropecuario fertilizante defensivo semente muda ração racao milho soja arroz feijão feijao leite carne frango peixe alimento cesta básica cesta basica"
+  },
+  {
+    "title": "Ceará: benefícios fiscais - Indústria, máquinas e equipamentos",
+    "url": "estados/ce/legislacao/beneficios-fiscais.html#beneficio-industria-maquinas-equipamentos",
+    "summary": "Benefícios de desenvolvimento industrial, máquinas, equipamentos, ativo imobilizado, bens de capital, implantação e modernização.",
+    "tags": "CE Ceará ICMS benefícios fiscais incentivo isenção redução crédito presumido Indústria, máquinas e equipamentos indústria industria industrial industrialização industrializacao máquina maquina máquinas maquinas equipamento equipamentos bem de capital bens de capital ativo imobilizado implantação implantacao modernização modernizacao investimento parque industrial"
+  },
+  {
+    "title": "Ceará: benefícios fiscais - Veículos, autopeças e transporte",
+    "url": "estados/ce/legislacao/beneficios-fiscais.html#beneficio-veiculos-autopecas-transporte",
+    "summary": "Benefícios e regimes para veículos, autopeças, transporte, frete, implementos, ônibus, caminhões e cadeias automotivas.",
+    "tags": "CE Ceará ICMS benefícios fiscais incentivo isenção redução crédito presumido Veículos, autopeças e transporte veículo veiculo veículos veiculos automotor automóvel automovel autopeça autopeca peças pecas caminhão caminhao ônibus onibus motocicleta chassi renavam transporte transportador frete carga passageiro implemento rodoviário implemento rodoviario"
+  },
+  {
+    "title": "Ceará: benefícios fiscais - Importação, exportação e comércio exterior",
+    "url": "estados/ce/legislacao/beneficios-fiscais.html#beneficio-importacao-exportacao-comercio-exterior",
+    "summary": "Imunidade, não incidência, suspensão, diferimento, desembaraço, importação por conta e ordem, exportação e regimes ligados ao exterior.",
+    "tags": "CE Ceará ICMS benefícios fiscais incentivo isenção redução crédito presumido Importação, exportação e comércio exterior importação importacao importado desembaraço desembaraco exportação exportacao exterior comércio exterior comercio exterior drawback zona franca área de livre comércio area de livre comercio fim específico de exportação fim especifico de exportacao"
+  },
+  {
+    "title": "Ceará: benefícios fiscais - Eletrônicos, informática e telecomunicações",
+    "url": "estados/ce/legislacao/beneficios-fiscais.html#beneficio-eletronicos-informatica-telecom",
+    "summary": "Tratamentos ligados a equipamentos eletrônicos, bens de informática, telecomunicações, processamento de dados e cadeia tecnológica.",
+    "tags": "CE Ceará ICMS benefícios fiscais incentivo isenção redução crédito presumido Eletrônicos, informática e telecomunicações eletrônico eletronico eletrônicos eletronicos informática informatica computador computadores software hardware processamento de dados telecomunicação telecomunicacao telecomunicações telefonia telefone celular aparelho equipamento de comunicação equipamento de comunicacao semicondutor componentes eletrônicos componentes eletronicos"
+  },
+  {
+    "title": "Ceará: benefícios fiscais - Energia, combustíveis e infraestrutura",
+    "url": "estados/ce/legislacao/beneficios-fiscais.html#beneficio-energia-combustiveis-infraestrutura",
+    "summary": "Regras especiais envolvendo energia elétrica, combustíveis, gás, infraestrutura, obras, concessões e cadeias essenciais.",
+    "tags": "CE Ceará ICMS benefícios fiscais incentivo isenção redução crédito presumido Energia, combustíveis e infraestrutura energia elétrica energia eletrica combustível combustivel combustíveis combustiveis diesel gasolina etanol álcool alcool biodiesel biocombustível biocombustivel gás natural gas natural glp infraestrutura concessão concessao obra pública obra publica"
+  },
+  {
+    "title": "Ceará: benefícios fiscais - Social, educação, cultura e entidades",
+    "url": "estados/ce/legislacao/beneficios-fiscais.html#beneficio-social-educacao-cultura-entidades",
+    "summary": "Benefícios vinculados a entidades, assistência, educação, cultura, livros, doações, pessoas com deficiência e políticas públicas.",
+    "tags": "CE Ceará ICMS benefícios fiscais incentivo isenção redução crédito presumido Social, educação, cultura e entidades educação educacao ensino escola universidade cultura livro livros entidade filantrópica filantropica assistência social assistencia social doação doacao deficiência deficiencia pessoa com deficiência pessoa com deficiencia"
+  },
+  {
+    "title": "Ceará: benefícios fiscais - Atacado, comércio e centros de distribuição",
+    "url": "estados/ce/legislacao/beneficios-fiscais.html#beneficio-atacado-comercio-distribuicao",
+    "summary": "Regimes e benefícios para atacadistas, varejo, distribuição, centrais, comércio, carga efetiva e credenciamentos.",
+    "tags": "CE Ceará ICMS benefícios fiscais incentivo isenção redução crédito presumido Atacado, comércio e centros de distribuição atacadista atacado comércio atacadista comercio atacadista varejo varejista distribuição distribuicao distribuidor centro de distribuição centro de distribuicao central de distribuição central de distribuicao carga efetiva regime atacadista"
+  },
+  {
+    "title": "Ceará: benefícios fiscais - Medicamentos, saúde e produtos hospitalares",
+    "url": "estados/ce/legislacao/beneficios-fiscais.html#beneficio-medicamentos-saude",
+    "summary": "Hipóteses de tratamento favorecido para medicamentos, produtos médico-hospitalares, saúde pública, deficiência e equipamentos assistivos.",
+    "tags": "CE Ceará ICMS benefícios fiscais incentivo isenção redução crédito presumido Medicamentos, saúde e produtos hospitalares medicamento medicamentos farmacêutico farmaceutico hospital hospitalar produto médico produto medico saúde saude deficiente deficiência deficiencia prótese protese órtese ortese cadeira de rodas insumo hospitalar equipamento hospitalar"
   },
   {
     "title": "Distrito Federal: legislação de ICMS em tela",
@@ -1080,6 +1440,66 @@ window.RJC_SEARCH = [
     "tags": "DF Distrito Federal Documentos, SPED e prova ICMS benefícios fiscais"
   },
   {
+    "title": "Distrito Federal: benefícios fiscais - Construção, minerais, madeira e materiais",
+    "url": "estados/df/legislacao/beneficios-fiscais.html#beneficio-construcao-minerais-madeira",
+    "summary": "Tratamentos para construção civil, minerais, madeira, cimento, cerâmica, aço, materiais e cadeias extrativas.",
+    "tags": "DF Distrito Federal ICMS benefícios fiscais incentivo isenção redução crédito presumido Construção, minerais, madeira e materiais construção civil construcao civil cimento cerâmica ceramica madeira mineral minério minerio pedra areia brita aço aco ferro metalúrgica metalurgica material de construção material de construcao"
+  },
+  {
+    "title": "Distrito Federal: benefícios fiscais - Agropecuário, alimentos e cesta básica",
+    "url": "estados/df/legislacao/beneficios-fiscais.html#beneficio-agro-alimentos",
+    "summary": "Benefícios que normalmente dependem de produto, destinação, produtor rural, insumo, industrialização ou política de abastecimento.",
+    "tags": "DF Distrito Federal ICMS benefícios fiscais incentivo isenção redução crédito presumido Agropecuário, alimentos e cesta básica agropecuário agropecuario produtor rural atividade rural insumo agropecuário insumo agropecuario fertilizante defensivo semente muda ração racao milho soja arroz feijão feijao leite carne frango peixe alimento cesta básica cesta basica"
+  },
+  {
+    "title": "Distrito Federal: benefícios fiscais - Indústria, máquinas e equipamentos",
+    "url": "estados/df/legislacao/beneficios-fiscais.html#beneficio-industria-maquinas-equipamentos",
+    "summary": "Benefícios de desenvolvimento industrial, máquinas, equipamentos, ativo imobilizado, bens de capital, implantação e modernização.",
+    "tags": "DF Distrito Federal ICMS benefícios fiscais incentivo isenção redução crédito presumido Indústria, máquinas e equipamentos indústria industria industrial industrialização industrializacao máquina maquina máquinas maquinas equipamento equipamentos bem de capital bens de capital ativo imobilizado implantação implantacao modernização modernizacao investimento parque industrial"
+  },
+  {
+    "title": "Distrito Federal: benefícios fiscais - Social, educação, cultura e entidades",
+    "url": "estados/df/legislacao/beneficios-fiscais.html#beneficio-social-educacao-cultura-entidades",
+    "summary": "Benefícios vinculados a entidades, assistência, educação, cultura, livros, doações, pessoas com deficiência e políticas públicas.",
+    "tags": "DF Distrito Federal ICMS benefícios fiscais incentivo isenção redução crédito presumido Social, educação, cultura e entidades educação educacao ensino escola universidade cultura livro livros entidade filantrópica filantropica assistência social assistencia social doação doacao deficiência deficiencia pessoa com deficiência pessoa com deficiencia"
+  },
+  {
+    "title": "Distrito Federal: benefícios fiscais - Veículos, autopeças e transporte",
+    "url": "estados/df/legislacao/beneficios-fiscais.html#beneficio-veiculos-autopecas-transporte",
+    "summary": "Benefícios e regimes para veículos, autopeças, transporte, frete, implementos, ônibus, caminhões e cadeias automotivas.",
+    "tags": "DF Distrito Federal ICMS benefícios fiscais incentivo isenção redução crédito presumido Veículos, autopeças e transporte veículo veiculo veículos veiculos automotor automóvel automovel autopeça autopeca peças pecas caminhão caminhao ônibus onibus motocicleta chassi renavam transporte transportador frete carga passageiro implemento rodoviário implemento rodoviario"
+  },
+  {
+    "title": "Distrito Federal: benefícios fiscais - Energia, combustíveis e infraestrutura",
+    "url": "estados/df/legislacao/beneficios-fiscais.html#beneficio-energia-combustiveis-infraestrutura",
+    "summary": "Regras especiais envolvendo energia elétrica, combustíveis, gás, infraestrutura, obras, concessões e cadeias essenciais.",
+    "tags": "DF Distrito Federal ICMS benefícios fiscais incentivo isenção redução crédito presumido Energia, combustíveis e infraestrutura energia elétrica energia eletrica combustível combustivel combustíveis combustiveis diesel gasolina etanol álcool alcool biodiesel biocombustível biocombustivel gás natural gas natural glp infraestrutura concessão concessao obra pública obra publica"
+  },
+  {
+    "title": "Distrito Federal: benefícios fiscais - Medicamentos, saúde e produtos hospitalares",
+    "url": "estados/df/legislacao/beneficios-fiscais.html#beneficio-medicamentos-saude",
+    "summary": "Hipóteses de tratamento favorecido para medicamentos, produtos médico-hospitalares, saúde pública, deficiência e equipamentos assistivos.",
+    "tags": "DF Distrito Federal ICMS benefícios fiscais incentivo isenção redução crédito presumido Medicamentos, saúde e produtos hospitalares medicamento medicamentos farmacêutico farmaceutico hospital hospitalar produto médico produto medico saúde saude deficiente deficiência deficiencia prótese protese órtese ortese cadeira de rodas insumo hospitalar equipamento hospitalar"
+  },
+  {
+    "title": "Distrito Federal: benefícios fiscais - Eletrônicos, informática e telecomunicações",
+    "url": "estados/df/legislacao/beneficios-fiscais.html#beneficio-eletronicos-informatica-telecom",
+    "summary": "Tratamentos ligados a equipamentos eletrônicos, bens de informática, telecomunicações, processamento de dados e cadeia tecnológica.",
+    "tags": "DF Distrito Federal ICMS benefícios fiscais incentivo isenção redução crédito presumido Eletrônicos, informática e telecomunicações eletrônico eletronico eletrônicos eletronicos informática informatica computador computadores software hardware processamento de dados telecomunicação telecomunicacao telecomunicações telefonia telefone celular aparelho equipamento de comunicação equipamento de comunicacao semicondutor componentes eletrônicos componentes eletronicos"
+  },
+  {
+    "title": "Distrito Federal: benefícios fiscais - Atacado, comércio e centros de distribuição",
+    "url": "estados/df/legislacao/beneficios-fiscais.html#beneficio-atacado-comercio-distribuicao",
+    "summary": "Regimes e benefícios para atacadistas, varejo, distribuição, centrais, comércio, carga efetiva e credenciamentos.",
+    "tags": "DF Distrito Federal ICMS benefícios fiscais incentivo isenção redução crédito presumido Atacado, comércio e centros de distribuição atacadista atacado comércio atacadista comercio atacadista varejo varejista distribuição distribuicao distribuidor centro de distribuição centro de distribuicao central de distribuição central de distribuicao carga efetiva regime atacadista"
+  },
+  {
+    "title": "Distrito Federal: benefícios fiscais - Importação, exportação e comércio exterior",
+    "url": "estados/df/legislacao/beneficios-fiscais.html#beneficio-importacao-exportacao-comercio-exterior",
+    "summary": "Imunidade, não incidência, suspensão, diferimento, desembaraço, importação por conta e ordem, exportação e regimes ligados ao exterior.",
+    "tags": "DF Distrito Federal ICMS benefícios fiscais incentivo isenção redução crédito presumido Importação, exportação e comércio exterior importação importacao importado desembaraço desembaraco exportação exportacao exterior comércio exterior comercio exterior drawback zona franca área de livre comércio area de livre comercio fim específico de exportação fim especifico de exportacao"
+  },
+  {
     "title": "Espírito Santo: legislação de ICMS em tela",
     "url": "estados/es/legislacao/index.html",
     "summary": "RICMS, leis, anexos, benefícios fiscais, alíquotas, ST e prova documental de Espírito Santo.",
@@ -1114,6 +1534,66 @@ window.RJC_SEARCH = [
     "url": "estados/es/legislacao/documentos-prova.html",
     "summary": "NF-e, CT-e, EFD, escrituração, cBenef quando aplicável, obrigações acessórias, comprovantes e memória de cálculo.",
     "tags": "ES Espírito Santo Documentos, SPED e prova ICMS benefícios fiscais"
+  },
+  {
+    "title": "Espírito Santo: benefícios fiscais - Construção, minerais, madeira e materiais",
+    "url": "estados/es/legislacao/beneficios-fiscais.html#beneficio-construcao-minerais-madeira",
+    "summary": "Tratamentos para construção civil, minerais, madeira, cimento, cerâmica, aço, materiais e cadeias extrativas.",
+    "tags": "ES Espírito Santo ICMS benefícios fiscais incentivo isenção redução crédito presumido Construção, minerais, madeira e materiais construção civil construcao civil cimento cerâmica ceramica madeira mineral minério minerio pedra areia brita aço aco ferro metalúrgica metalurgica material de construção material de construcao"
+  },
+  {
+    "title": "Espírito Santo: benefícios fiscais - Agropecuário, alimentos e cesta básica",
+    "url": "estados/es/legislacao/beneficios-fiscais.html#beneficio-agro-alimentos",
+    "summary": "Benefícios que normalmente dependem de produto, destinação, produtor rural, insumo, industrialização ou política de abastecimento.",
+    "tags": "ES Espírito Santo ICMS benefícios fiscais incentivo isenção redução crédito presumido Agropecuário, alimentos e cesta básica agropecuário agropecuario produtor rural atividade rural insumo agropecuário insumo agropecuario fertilizante defensivo semente muda ração racao milho soja arroz feijão feijao leite carne frango peixe alimento cesta básica cesta basica"
+  },
+  {
+    "title": "Espírito Santo: benefícios fiscais - Indústria, máquinas e equipamentos",
+    "url": "estados/es/legislacao/beneficios-fiscais.html#beneficio-industria-maquinas-equipamentos",
+    "summary": "Benefícios de desenvolvimento industrial, máquinas, equipamentos, ativo imobilizado, bens de capital, implantação e modernização.",
+    "tags": "ES Espírito Santo ICMS benefícios fiscais incentivo isenção redução crédito presumido Indústria, máquinas e equipamentos indústria industria industrial industrialização industrializacao máquina maquina máquinas maquinas equipamento equipamentos bem de capital bens de capital ativo imobilizado implantação implantacao modernização modernizacao investimento parque industrial"
+  },
+  {
+    "title": "Espírito Santo: benefícios fiscais - Veículos, autopeças e transporte",
+    "url": "estados/es/legislacao/beneficios-fiscais.html#beneficio-veiculos-autopecas-transporte",
+    "summary": "Benefícios e regimes para veículos, autopeças, transporte, frete, implementos, ônibus, caminhões e cadeias automotivas.",
+    "tags": "ES Espírito Santo ICMS benefícios fiscais incentivo isenção redução crédito presumido Veículos, autopeças e transporte veículo veiculo veículos veiculos automotor automóvel automovel autopeça autopeca peças pecas caminhão caminhao ônibus onibus motocicleta chassi renavam transporte transportador frete carga passageiro implemento rodoviário implemento rodoviario"
+  },
+  {
+    "title": "Espírito Santo: benefícios fiscais - Importação, exportação e comércio exterior",
+    "url": "estados/es/legislacao/beneficios-fiscais.html#beneficio-importacao-exportacao-comercio-exterior",
+    "summary": "Imunidade, não incidência, suspensão, diferimento, desembaraço, importação por conta e ordem, exportação e regimes ligados ao exterior.",
+    "tags": "ES Espírito Santo ICMS benefícios fiscais incentivo isenção redução crédito presumido Importação, exportação e comércio exterior importação importacao importado desembaraço desembaraco exportação exportacao exterior comércio exterior comercio exterior drawback zona franca área de livre comércio area de livre comercio fim específico de exportação fim especifico de exportacao"
+  },
+  {
+    "title": "Espírito Santo: benefícios fiscais - Energia, combustíveis e infraestrutura",
+    "url": "estados/es/legislacao/beneficios-fiscais.html#beneficio-energia-combustiveis-infraestrutura",
+    "summary": "Regras especiais envolvendo energia elétrica, combustíveis, gás, infraestrutura, obras, concessões e cadeias essenciais.",
+    "tags": "ES Espírito Santo ICMS benefícios fiscais incentivo isenção redução crédito presumido Energia, combustíveis e infraestrutura energia elétrica energia eletrica combustível combustivel combustíveis combustiveis diesel gasolina etanol álcool alcool biodiesel biocombustível biocombustivel gás natural gas natural glp infraestrutura concessão concessao obra pública obra publica"
+  },
+  {
+    "title": "Espírito Santo: benefícios fiscais - Social, educação, cultura e entidades",
+    "url": "estados/es/legislacao/beneficios-fiscais.html#beneficio-social-educacao-cultura-entidades",
+    "summary": "Benefícios vinculados a entidades, assistência, educação, cultura, livros, doações, pessoas com deficiência e políticas públicas.",
+    "tags": "ES Espírito Santo ICMS benefícios fiscais incentivo isenção redução crédito presumido Social, educação, cultura e entidades educação educacao ensino escola universidade cultura livro livros entidade filantrópica filantropica assistência social assistencia social doação doacao deficiência deficiencia pessoa com deficiência pessoa com deficiencia"
+  },
+  {
+    "title": "Espírito Santo: benefícios fiscais - Eletrônicos, informática e telecomunicações",
+    "url": "estados/es/legislacao/beneficios-fiscais.html#beneficio-eletronicos-informatica-telecom",
+    "summary": "Tratamentos ligados a equipamentos eletrônicos, bens de informática, telecomunicações, processamento de dados e cadeia tecnológica.",
+    "tags": "ES Espírito Santo ICMS benefícios fiscais incentivo isenção redução crédito presumido Eletrônicos, informática e telecomunicações eletrônico eletronico eletrônicos eletronicos informática informatica computador computadores software hardware processamento de dados telecomunicação telecomunicacao telecomunicações telefonia telefone celular aparelho equipamento de comunicação equipamento de comunicacao semicondutor componentes eletrônicos componentes eletronicos"
+  },
+  {
+    "title": "Espírito Santo: benefícios fiscais - Atacado, comércio e centros de distribuição",
+    "url": "estados/es/legislacao/beneficios-fiscais.html#beneficio-atacado-comercio-distribuicao",
+    "summary": "Regimes e benefícios para atacadistas, varejo, distribuição, centrais, comércio, carga efetiva e credenciamentos.",
+    "tags": "ES Espírito Santo ICMS benefícios fiscais incentivo isenção redução crédito presumido Atacado, comércio e centros de distribuição atacadista atacado comércio atacadista comercio atacadista varejo varejista distribuição distribuicao distribuidor centro de distribuição centro de distribuicao central de distribuição central de distribuicao carga efetiva regime atacadista"
+  },
+  {
+    "title": "Espírito Santo: benefícios fiscais - Medicamentos, saúde e produtos hospitalares",
+    "url": "estados/es/legislacao/beneficios-fiscais.html#beneficio-medicamentos-saude",
+    "summary": "Hipóteses de tratamento favorecido para medicamentos, produtos médico-hospitalares, saúde pública, deficiência e equipamentos assistivos.",
+    "tags": "ES Espírito Santo ICMS benefícios fiscais incentivo isenção redução crédito presumido Medicamentos, saúde e produtos hospitalares medicamento medicamentos farmacêutico farmaceutico hospital hospitalar produto médico produto medico saúde saude deficiente deficiência deficiencia prótese protese órtese ortese cadeira de rodas insumo hospitalar equipamento hospitalar"
   },
   {
     "title": "Maranhão: legislação de ICMS em tela",
@@ -1152,6 +1632,66 @@ window.RJC_SEARCH = [
     "tags": "MA Maranhão Documentos, SPED e prova ICMS benefícios fiscais"
   },
   {
+    "title": "Maranhão: benefícios fiscais - Construção, minerais, madeira e materiais",
+    "url": "estados/ma/legislacao/beneficios-fiscais.html#beneficio-construcao-minerais-madeira",
+    "summary": "Tratamentos para construção civil, minerais, madeira, cimento, cerâmica, aço, materiais e cadeias extrativas.",
+    "tags": "MA Maranhão ICMS benefícios fiscais incentivo isenção redução crédito presumido Construção, minerais, madeira e materiais construção civil construcao civil cimento cerâmica ceramica madeira mineral minério minerio pedra areia brita aço aco ferro metalúrgica metalurgica material de construção material de construcao"
+  },
+  {
+    "title": "Maranhão: benefícios fiscais - Agropecuário, alimentos e cesta básica",
+    "url": "estados/ma/legislacao/beneficios-fiscais.html#beneficio-agro-alimentos",
+    "summary": "Benefícios que normalmente dependem de produto, destinação, produtor rural, insumo, industrialização ou política de abastecimento.",
+    "tags": "MA Maranhão ICMS benefícios fiscais incentivo isenção redução crédito presumido Agropecuário, alimentos e cesta básica agropecuário agropecuario produtor rural atividade rural insumo agropecuário insumo agropecuario fertilizante defensivo semente muda ração racao milho soja arroz feijão feijao leite carne frango peixe alimento cesta básica cesta basica"
+  },
+  {
+    "title": "Maranhão: benefícios fiscais - Indústria, máquinas e equipamentos",
+    "url": "estados/ma/legislacao/beneficios-fiscais.html#beneficio-industria-maquinas-equipamentos",
+    "summary": "Benefícios de desenvolvimento industrial, máquinas, equipamentos, ativo imobilizado, bens de capital, implantação e modernização.",
+    "tags": "MA Maranhão ICMS benefícios fiscais incentivo isenção redução crédito presumido Indústria, máquinas e equipamentos indústria industria industrial industrialização industrializacao máquina maquina máquinas maquinas equipamento equipamentos bem de capital bens de capital ativo imobilizado implantação implantacao modernização modernizacao investimento parque industrial"
+  },
+  {
+    "title": "Maranhão: benefícios fiscais - Veículos, autopeças e transporte",
+    "url": "estados/ma/legislacao/beneficios-fiscais.html#beneficio-veiculos-autopecas-transporte",
+    "summary": "Benefícios e regimes para veículos, autopeças, transporte, frete, implementos, ônibus, caminhões e cadeias automotivas.",
+    "tags": "MA Maranhão ICMS benefícios fiscais incentivo isenção redução crédito presumido Veículos, autopeças e transporte veículo veiculo veículos veiculos automotor automóvel automovel autopeça autopeca peças pecas caminhão caminhao ônibus onibus motocicleta chassi renavam transporte transportador frete carga passageiro implemento rodoviário implemento rodoviario"
+  },
+  {
+    "title": "Maranhão: benefícios fiscais - Energia, combustíveis e infraestrutura",
+    "url": "estados/ma/legislacao/beneficios-fiscais.html#beneficio-energia-combustiveis-infraestrutura",
+    "summary": "Regras especiais envolvendo energia elétrica, combustíveis, gás, infraestrutura, obras, concessões e cadeias essenciais.",
+    "tags": "MA Maranhão ICMS benefícios fiscais incentivo isenção redução crédito presumido Energia, combustíveis e infraestrutura energia elétrica energia eletrica combustível combustivel combustíveis combustiveis diesel gasolina etanol álcool alcool biodiesel biocombustível biocombustivel gás natural gas natural glp infraestrutura concessão concessao obra pública obra publica"
+  },
+  {
+    "title": "Maranhão: benefícios fiscais - Eletrônicos, informática e telecomunicações",
+    "url": "estados/ma/legislacao/beneficios-fiscais.html#beneficio-eletronicos-informatica-telecom",
+    "summary": "Tratamentos ligados a equipamentos eletrônicos, bens de informática, telecomunicações, processamento de dados e cadeia tecnológica.",
+    "tags": "MA Maranhão ICMS benefícios fiscais incentivo isenção redução crédito presumido Eletrônicos, informática e telecomunicações eletrônico eletronico eletrônicos eletronicos informática informatica computador computadores software hardware processamento de dados telecomunicação telecomunicacao telecomunicações telefonia telefone celular aparelho equipamento de comunicação equipamento de comunicacao semicondutor componentes eletrônicos componentes eletronicos"
+  },
+  {
+    "title": "Maranhão: benefícios fiscais - Importação, exportação e comércio exterior",
+    "url": "estados/ma/legislacao/beneficios-fiscais.html#beneficio-importacao-exportacao-comercio-exterior",
+    "summary": "Imunidade, não incidência, suspensão, diferimento, desembaraço, importação por conta e ordem, exportação e regimes ligados ao exterior.",
+    "tags": "MA Maranhão ICMS benefícios fiscais incentivo isenção redução crédito presumido Importação, exportação e comércio exterior importação importacao importado desembaraço desembaraco exportação exportacao exterior comércio exterior comercio exterior drawback zona franca área de livre comércio area de livre comercio fim específico de exportação fim especifico de exportacao"
+  },
+  {
+    "title": "Maranhão: benefícios fiscais - Social, educação, cultura e entidades",
+    "url": "estados/ma/legislacao/beneficios-fiscais.html#beneficio-social-educacao-cultura-entidades",
+    "summary": "Benefícios vinculados a entidades, assistência, educação, cultura, livros, doações, pessoas com deficiência e políticas públicas.",
+    "tags": "MA Maranhão ICMS benefícios fiscais incentivo isenção redução crédito presumido Social, educação, cultura e entidades educação educacao ensino escola universidade cultura livro livros entidade filantrópica filantropica assistência social assistencia social doação doacao deficiência deficiencia pessoa com deficiência pessoa com deficiencia"
+  },
+  {
+    "title": "Maranhão: benefícios fiscais - Atacado, comércio e centros de distribuição",
+    "url": "estados/ma/legislacao/beneficios-fiscais.html#beneficio-atacado-comercio-distribuicao",
+    "summary": "Regimes e benefícios para atacadistas, varejo, distribuição, centrais, comércio, carga efetiva e credenciamentos.",
+    "tags": "MA Maranhão ICMS benefícios fiscais incentivo isenção redução crédito presumido Atacado, comércio e centros de distribuição atacadista atacado comércio atacadista comercio atacadista varejo varejista distribuição distribuicao distribuidor centro de distribuição centro de distribuicao central de distribuição central de distribuicao carga efetiva regime atacadista"
+  },
+  {
+    "title": "Maranhão: benefícios fiscais - Medicamentos, saúde e produtos hospitalares",
+    "url": "estados/ma/legislacao/beneficios-fiscais.html#beneficio-medicamentos-saude",
+    "summary": "Hipóteses de tratamento favorecido para medicamentos, produtos médico-hospitalares, saúde pública, deficiência e equipamentos assistivos.",
+    "tags": "MA Maranhão ICMS benefícios fiscais incentivo isenção redução crédito presumido Medicamentos, saúde e produtos hospitalares medicamento medicamentos farmacêutico farmaceutico hospital hospitalar produto médico produto medico saúde saude deficiente deficiência deficiencia prótese protese órtese ortese cadeira de rodas insumo hospitalar equipamento hospitalar"
+  },
+  {
     "title": "Mato Grosso: legislação de ICMS em tela",
     "url": "estados/mt/legislacao/index.html",
     "summary": "RICMS, leis, anexos, benefícios fiscais, alíquotas, ST e prova documental de Mato Grosso.",
@@ -1186,6 +1726,66 @@ window.RJC_SEARCH = [
     "url": "estados/mt/legislacao/documentos-prova.html",
     "summary": "NF-e, CT-e, EFD, escrituração, cBenef quando aplicável, obrigações acessórias, comprovantes e memória de cálculo.",
     "tags": "MT Mato Grosso Documentos, SPED e prova ICMS benefícios fiscais"
+  },
+  {
+    "title": "Mato Grosso: benefícios fiscais - Construção, minerais, madeira e materiais",
+    "url": "estados/mt/legislacao/beneficios-fiscais.html#beneficio-construcao-minerais-madeira",
+    "summary": "Tratamentos para construção civil, minerais, madeira, cimento, cerâmica, aço, materiais e cadeias extrativas.",
+    "tags": "MT Mato Grosso ICMS benefícios fiscais incentivo isenção redução crédito presumido Construção, minerais, madeira e materiais construção civil construcao civil cimento cerâmica ceramica madeira mineral minério minerio pedra areia brita aço aco ferro metalúrgica metalurgica material de construção material de construcao"
+  },
+  {
+    "title": "Mato Grosso: benefícios fiscais - Indústria, máquinas e equipamentos",
+    "url": "estados/mt/legislacao/beneficios-fiscais.html#beneficio-industria-maquinas-equipamentos",
+    "summary": "Benefícios de desenvolvimento industrial, máquinas, equipamentos, ativo imobilizado, bens de capital, implantação e modernização.",
+    "tags": "MT Mato Grosso ICMS benefícios fiscais incentivo isenção redução crédito presumido Indústria, máquinas e equipamentos indústria industria industrial industrialização industrializacao máquina maquina máquinas maquinas equipamento equipamentos bem de capital bens de capital ativo imobilizado implantação implantacao modernização modernizacao investimento parque industrial"
+  },
+  {
+    "title": "Mato Grosso: benefícios fiscais - Agropecuário, alimentos e cesta básica",
+    "url": "estados/mt/legislacao/beneficios-fiscais.html#beneficio-agro-alimentos",
+    "summary": "Benefícios que normalmente dependem de produto, destinação, produtor rural, insumo, industrialização ou política de abastecimento.",
+    "tags": "MT Mato Grosso ICMS benefícios fiscais incentivo isenção redução crédito presumido Agropecuário, alimentos e cesta básica agropecuário agropecuario produtor rural atividade rural insumo agropecuário insumo agropecuario fertilizante defensivo semente muda ração racao milho soja arroz feijão feijao leite carne frango peixe alimento cesta básica cesta basica"
+  },
+  {
+    "title": "Mato Grosso: benefícios fiscais - Veículos, autopeças e transporte",
+    "url": "estados/mt/legislacao/beneficios-fiscais.html#beneficio-veiculos-autopecas-transporte",
+    "summary": "Benefícios e regimes para veículos, autopeças, transporte, frete, implementos, ônibus, caminhões e cadeias automotivas.",
+    "tags": "MT Mato Grosso ICMS benefícios fiscais incentivo isenção redução crédito presumido Veículos, autopeças e transporte veículo veiculo veículos veiculos automotor automóvel automovel autopeça autopeca peças pecas caminhão caminhao ônibus onibus motocicleta chassi renavam transporte transportador frete carga passageiro implemento rodoviário implemento rodoviario"
+  },
+  {
+    "title": "Mato Grosso: benefícios fiscais - Atacado, comércio e centros de distribuição",
+    "url": "estados/mt/legislacao/beneficios-fiscais.html#beneficio-atacado-comercio-distribuicao",
+    "summary": "Regimes e benefícios para atacadistas, varejo, distribuição, centrais, comércio, carga efetiva e credenciamentos.",
+    "tags": "MT Mato Grosso ICMS benefícios fiscais incentivo isenção redução crédito presumido Atacado, comércio e centros de distribuição atacadista atacado comércio atacadista comercio atacadista varejo varejista distribuição distribuicao distribuidor centro de distribuição centro de distribuicao central de distribuição central de distribuicao carga efetiva regime atacadista"
+  },
+  {
+    "title": "Mato Grosso: benefícios fiscais - Eletrônicos, informática e telecomunicações",
+    "url": "estados/mt/legislacao/beneficios-fiscais.html#beneficio-eletronicos-informatica-telecom",
+    "summary": "Tratamentos ligados a equipamentos eletrônicos, bens de informática, telecomunicações, processamento de dados e cadeia tecnológica.",
+    "tags": "MT Mato Grosso ICMS benefícios fiscais incentivo isenção redução crédito presumido Eletrônicos, informática e telecomunicações eletrônico eletronico eletrônicos eletronicos informática informatica computador computadores software hardware processamento de dados telecomunicação telecomunicacao telecomunicações telefonia telefone celular aparelho equipamento de comunicação equipamento de comunicacao semicondutor componentes eletrônicos componentes eletronicos"
+  },
+  {
+    "title": "Mato Grosso: benefícios fiscais - Energia, combustíveis e infraestrutura",
+    "url": "estados/mt/legislacao/beneficios-fiscais.html#beneficio-energia-combustiveis-infraestrutura",
+    "summary": "Regras especiais envolvendo energia elétrica, combustíveis, gás, infraestrutura, obras, concessões e cadeias essenciais.",
+    "tags": "MT Mato Grosso ICMS benefícios fiscais incentivo isenção redução crédito presumido Energia, combustíveis e infraestrutura energia elétrica energia eletrica combustível combustivel combustíveis combustiveis diesel gasolina etanol álcool alcool biodiesel biocombustível biocombustivel gás natural gas natural glp infraestrutura concessão concessao obra pública obra publica"
+  },
+  {
+    "title": "Mato Grosso: benefícios fiscais - Importação, exportação e comércio exterior",
+    "url": "estados/mt/legislacao/beneficios-fiscais.html#beneficio-importacao-exportacao-comercio-exterior",
+    "summary": "Imunidade, não incidência, suspensão, diferimento, desembaraço, importação por conta e ordem, exportação e regimes ligados ao exterior.",
+    "tags": "MT Mato Grosso ICMS benefícios fiscais incentivo isenção redução crédito presumido Importação, exportação e comércio exterior importação importacao importado desembaraço desembaraco exportação exportacao exterior comércio exterior comercio exterior drawback zona franca área de livre comércio area de livre comercio fim específico de exportação fim especifico de exportacao"
+  },
+  {
+    "title": "Mato Grosso: benefícios fiscais - Social, educação, cultura e entidades",
+    "url": "estados/mt/legislacao/beneficios-fiscais.html#beneficio-social-educacao-cultura-entidades",
+    "summary": "Benefícios vinculados a entidades, assistência, educação, cultura, livros, doações, pessoas com deficiência e políticas públicas.",
+    "tags": "MT Mato Grosso ICMS benefícios fiscais incentivo isenção redução crédito presumido Social, educação, cultura e entidades educação educacao ensino escola universidade cultura livro livros entidade filantrópica filantropica assistência social assistencia social doação doacao deficiência deficiencia pessoa com deficiência pessoa com deficiencia"
+  },
+  {
+    "title": "Mato Grosso: benefícios fiscais - Medicamentos, saúde e produtos hospitalares",
+    "url": "estados/mt/legislacao/beneficios-fiscais.html#beneficio-medicamentos-saude",
+    "summary": "Hipóteses de tratamento favorecido para medicamentos, produtos médico-hospitalares, saúde pública, deficiência e equipamentos assistivos.",
+    "tags": "MT Mato Grosso ICMS benefícios fiscais incentivo isenção redução crédito presumido Medicamentos, saúde e produtos hospitalares medicamento medicamentos farmacêutico farmaceutico hospital hospitalar produto médico produto medico saúde saude deficiente deficiência deficiencia prótese protese órtese ortese cadeira de rodas insumo hospitalar equipamento hospitalar"
   },
   {
     "title": "Mato Grosso do Sul: legislação de ICMS em tela",
@@ -1224,6 +1824,66 @@ window.RJC_SEARCH = [
     "tags": "MS Mato Grosso do Sul Documentos, SPED e prova ICMS benefícios fiscais"
   },
   {
+    "title": "Mato Grosso do Sul: benefícios fiscais - Construção, minerais, madeira e materiais",
+    "url": "estados/ms/legislacao/beneficios-fiscais.html#beneficio-construcao-minerais-madeira",
+    "summary": "Tratamentos para construção civil, minerais, madeira, cimento, cerâmica, aço, materiais e cadeias extrativas.",
+    "tags": "MS Mato Grosso do Sul ICMS benefícios fiscais incentivo isenção redução crédito presumido Construção, minerais, madeira e materiais construção civil construcao civil cimento cerâmica ceramica madeira mineral minério minerio pedra areia brita aço aco ferro metalúrgica metalurgica material de construção material de construcao"
+  },
+  {
+    "title": "Mato Grosso do Sul: benefícios fiscais - Agropecuário, alimentos e cesta básica",
+    "url": "estados/ms/legislacao/beneficios-fiscais.html#beneficio-agro-alimentos",
+    "summary": "Benefícios que normalmente dependem de produto, destinação, produtor rural, insumo, industrialização ou política de abastecimento.",
+    "tags": "MS Mato Grosso do Sul ICMS benefícios fiscais incentivo isenção redução crédito presumido Agropecuário, alimentos e cesta básica agropecuário agropecuario produtor rural atividade rural insumo agropecuário insumo agropecuario fertilizante defensivo semente muda ração racao milho soja arroz feijão feijao leite carne frango peixe alimento cesta básica cesta basica"
+  },
+  {
+    "title": "Mato Grosso do Sul: benefícios fiscais - Indústria, máquinas e equipamentos",
+    "url": "estados/ms/legislacao/beneficios-fiscais.html#beneficio-industria-maquinas-equipamentos",
+    "summary": "Benefícios de desenvolvimento industrial, máquinas, equipamentos, ativo imobilizado, bens de capital, implantação e modernização.",
+    "tags": "MS Mato Grosso do Sul ICMS benefícios fiscais incentivo isenção redução crédito presumido Indústria, máquinas e equipamentos indústria industria industrial industrialização industrializacao máquina maquina máquinas maquinas equipamento equipamentos bem de capital bens de capital ativo imobilizado implantação implantacao modernização modernizacao investimento parque industrial"
+  },
+  {
+    "title": "Mato Grosso do Sul: benefícios fiscais - Veículos, autopeças e transporte",
+    "url": "estados/ms/legislacao/beneficios-fiscais.html#beneficio-veiculos-autopecas-transporte",
+    "summary": "Benefícios e regimes para veículos, autopeças, transporte, frete, implementos, ônibus, caminhões e cadeias automotivas.",
+    "tags": "MS Mato Grosso do Sul ICMS benefícios fiscais incentivo isenção redução crédito presumido Veículos, autopeças e transporte veículo veiculo veículos veiculos automotor automóvel automovel autopeça autopeca peças pecas caminhão caminhao ônibus onibus motocicleta chassi renavam transporte transportador frete carga passageiro implemento rodoviário implemento rodoviario"
+  },
+  {
+    "title": "Mato Grosso do Sul: benefícios fiscais - Importação, exportação e comércio exterior",
+    "url": "estados/ms/legislacao/beneficios-fiscais.html#beneficio-importacao-exportacao-comercio-exterior",
+    "summary": "Imunidade, não incidência, suspensão, diferimento, desembaraço, importação por conta e ordem, exportação e regimes ligados ao exterior.",
+    "tags": "MS Mato Grosso do Sul ICMS benefícios fiscais incentivo isenção redução crédito presumido Importação, exportação e comércio exterior importação importacao importado desembaraço desembaraco exportação exportacao exterior comércio exterior comercio exterior drawback zona franca área de livre comércio area de livre comercio fim específico de exportação fim especifico de exportacao"
+  },
+  {
+    "title": "Mato Grosso do Sul: benefícios fiscais - Social, educação, cultura e entidades",
+    "url": "estados/ms/legislacao/beneficios-fiscais.html#beneficio-social-educacao-cultura-entidades",
+    "summary": "Benefícios vinculados a entidades, assistência, educação, cultura, livros, doações, pessoas com deficiência e políticas públicas.",
+    "tags": "MS Mato Grosso do Sul ICMS benefícios fiscais incentivo isenção redução crédito presumido Social, educação, cultura e entidades educação educacao ensino escola universidade cultura livro livros entidade filantrópica filantropica assistência social assistencia social doação doacao deficiência deficiencia pessoa com deficiência pessoa com deficiencia"
+  },
+  {
+    "title": "Mato Grosso do Sul: benefícios fiscais - Energia, combustíveis e infraestrutura",
+    "url": "estados/ms/legislacao/beneficios-fiscais.html#beneficio-energia-combustiveis-infraestrutura",
+    "summary": "Regras especiais envolvendo energia elétrica, combustíveis, gás, infraestrutura, obras, concessões e cadeias essenciais.",
+    "tags": "MS Mato Grosso do Sul ICMS benefícios fiscais incentivo isenção redução crédito presumido Energia, combustíveis e infraestrutura energia elétrica energia eletrica combustível combustivel combustíveis combustiveis diesel gasolina etanol álcool alcool biodiesel biocombustível biocombustivel gás natural gas natural glp infraestrutura concessão concessao obra pública obra publica"
+  },
+  {
+    "title": "Mato Grosso do Sul: benefícios fiscais - Eletrônicos, informática e telecomunicações",
+    "url": "estados/ms/legislacao/beneficios-fiscais.html#beneficio-eletronicos-informatica-telecom",
+    "summary": "Tratamentos ligados a equipamentos eletrônicos, bens de informática, telecomunicações, processamento de dados e cadeia tecnológica.",
+    "tags": "MS Mato Grosso do Sul ICMS benefícios fiscais incentivo isenção redução crédito presumido Eletrônicos, informática e telecomunicações eletrônico eletronico eletrônicos eletronicos informática informatica computador computadores software hardware processamento de dados telecomunicação telecomunicacao telecomunicações telefonia telefone celular aparelho equipamento de comunicação equipamento de comunicacao semicondutor componentes eletrônicos componentes eletronicos"
+  },
+  {
+    "title": "Mato Grosso do Sul: benefícios fiscais - Medicamentos, saúde e produtos hospitalares",
+    "url": "estados/ms/legislacao/beneficios-fiscais.html#beneficio-medicamentos-saude",
+    "summary": "Hipóteses de tratamento favorecido para medicamentos, produtos médico-hospitalares, saúde pública, deficiência e equipamentos assistivos.",
+    "tags": "MS Mato Grosso do Sul ICMS benefícios fiscais incentivo isenção redução crédito presumido Medicamentos, saúde e produtos hospitalares medicamento medicamentos farmacêutico farmaceutico hospital hospitalar produto médico produto medico saúde saude deficiente deficiência deficiencia prótese protese órtese ortese cadeira de rodas insumo hospitalar equipamento hospitalar"
+  },
+  {
+    "title": "Mato Grosso do Sul: benefícios fiscais - Atacado, comércio e centros de distribuição",
+    "url": "estados/ms/legislacao/beneficios-fiscais.html#beneficio-atacado-comercio-distribuicao",
+    "summary": "Regimes e benefícios para atacadistas, varejo, distribuição, centrais, comércio, carga efetiva e credenciamentos.",
+    "tags": "MS Mato Grosso do Sul ICMS benefícios fiscais incentivo isenção redução crédito presumido Atacado, comércio e centros de distribuição atacadista atacado comércio atacadista comercio atacadista varejo varejista distribuição distribuicao distribuidor centro de distribuição centro de distribuicao central de distribuição central de distribuicao carga efetiva regime atacadista"
+  },
+  {
     "title": "Minas Gerais: legislação de ICMS em tela",
     "url": "estados/mg/legislacao/index.html",
     "summary": "RICMS, leis, anexos, benefícios fiscais, alíquotas, ST e prova documental de Minas Gerais.",
@@ -1258,6 +1918,66 @@ window.RJC_SEARCH = [
     "url": "estados/mg/legislacao/documentos-prova.html",
     "summary": "NF-e, CT-e, EFD, escrituração, cBenef quando aplicável, obrigações acessórias, comprovantes e memória de cálculo.",
     "tags": "MG Minas Gerais Documentos, SPED e prova ICMS benefícios fiscais"
+  },
+  {
+    "title": "Minas Gerais: benefícios fiscais - Construção, minerais, madeira e materiais",
+    "url": "estados/mg/legislacao/beneficios-fiscais.html#beneficio-construcao-minerais-madeira",
+    "summary": "Tratamentos para construção civil, minerais, madeira, cimento, cerâmica, aço, materiais e cadeias extrativas.",
+    "tags": "MG Minas Gerais ICMS benefícios fiscais incentivo isenção redução crédito presumido Construção, minerais, madeira e materiais construção civil construcao civil cimento cerâmica ceramica madeira mineral minério minerio pedra areia brita aço aco ferro metalúrgica metalurgica material de construção material de construcao"
+  },
+  {
+    "title": "Minas Gerais: benefícios fiscais - Agropecuário, alimentos e cesta básica",
+    "url": "estados/mg/legislacao/beneficios-fiscais.html#beneficio-agro-alimentos",
+    "summary": "Benefícios que normalmente dependem de produto, destinação, produtor rural, insumo, industrialização ou política de abastecimento.",
+    "tags": "MG Minas Gerais ICMS benefícios fiscais incentivo isenção redução crédito presumido Agropecuário, alimentos e cesta básica agropecuário agropecuario produtor rural atividade rural insumo agropecuário insumo agropecuario fertilizante defensivo semente muda ração racao milho soja arroz feijão feijao leite carne frango peixe alimento cesta básica cesta basica"
+  },
+  {
+    "title": "Minas Gerais: benefícios fiscais - Indústria, máquinas e equipamentos",
+    "url": "estados/mg/legislacao/beneficios-fiscais.html#beneficio-industria-maquinas-equipamentos",
+    "summary": "Benefícios de desenvolvimento industrial, máquinas, equipamentos, ativo imobilizado, bens de capital, implantação e modernização.",
+    "tags": "MG Minas Gerais ICMS benefícios fiscais incentivo isenção redução crédito presumido Indústria, máquinas e equipamentos indústria industria industrial industrialização industrializacao máquina maquina máquinas maquinas equipamento equipamentos bem de capital bens de capital ativo imobilizado implantação implantacao modernização modernizacao investimento parque industrial"
+  },
+  {
+    "title": "Minas Gerais: benefícios fiscais - Veículos, autopeças e transporte",
+    "url": "estados/mg/legislacao/beneficios-fiscais.html#beneficio-veiculos-autopecas-transporte",
+    "summary": "Benefícios e regimes para veículos, autopeças, transporte, frete, implementos, ônibus, caminhões e cadeias automotivas.",
+    "tags": "MG Minas Gerais ICMS benefícios fiscais incentivo isenção redução crédito presumido Veículos, autopeças e transporte veículo veiculo veículos veiculos automotor automóvel automovel autopeça autopeca peças pecas caminhão caminhao ônibus onibus motocicleta chassi renavam transporte transportador frete carga passageiro implemento rodoviário implemento rodoviario"
+  },
+  {
+    "title": "Minas Gerais: benefícios fiscais - Energia, combustíveis e infraestrutura",
+    "url": "estados/mg/legislacao/beneficios-fiscais.html#beneficio-energia-combustiveis-infraestrutura",
+    "summary": "Regras especiais envolvendo energia elétrica, combustíveis, gás, infraestrutura, obras, concessões e cadeias essenciais.",
+    "tags": "MG Minas Gerais ICMS benefícios fiscais incentivo isenção redução crédito presumido Energia, combustíveis e infraestrutura energia elétrica energia eletrica combustível combustivel combustíveis combustiveis diesel gasolina etanol álcool alcool biodiesel biocombustível biocombustivel gás natural gas natural glp infraestrutura concessão concessao obra pública obra publica"
+  },
+  {
+    "title": "Minas Gerais: benefícios fiscais - Eletrônicos, informática e telecomunicações",
+    "url": "estados/mg/legislacao/beneficios-fiscais.html#beneficio-eletronicos-informatica-telecom",
+    "summary": "Tratamentos ligados a equipamentos eletrônicos, bens de informática, telecomunicações, processamento de dados e cadeia tecnológica.",
+    "tags": "MG Minas Gerais ICMS benefícios fiscais incentivo isenção redução crédito presumido Eletrônicos, informática e telecomunicações eletrônico eletronico eletrônicos eletronicos informática informatica computador computadores software hardware processamento de dados telecomunicação telecomunicacao telecomunicações telefonia telefone celular aparelho equipamento de comunicação equipamento de comunicacao semicondutor componentes eletrônicos componentes eletronicos"
+  },
+  {
+    "title": "Minas Gerais: benefícios fiscais - Importação, exportação e comércio exterior",
+    "url": "estados/mg/legislacao/beneficios-fiscais.html#beneficio-importacao-exportacao-comercio-exterior",
+    "summary": "Imunidade, não incidência, suspensão, diferimento, desembaraço, importação por conta e ordem, exportação e regimes ligados ao exterior.",
+    "tags": "MG Minas Gerais ICMS benefícios fiscais incentivo isenção redução crédito presumido Importação, exportação e comércio exterior importação importacao importado desembaraço desembaraco exportação exportacao exterior comércio exterior comercio exterior drawback zona franca área de livre comércio area de livre comercio fim específico de exportação fim especifico de exportacao"
+  },
+  {
+    "title": "Minas Gerais: benefícios fiscais - Atacado, comércio e centros de distribuição",
+    "url": "estados/mg/legislacao/beneficios-fiscais.html#beneficio-atacado-comercio-distribuicao",
+    "summary": "Regimes e benefícios para atacadistas, varejo, distribuição, centrais, comércio, carga efetiva e credenciamentos.",
+    "tags": "MG Minas Gerais ICMS benefícios fiscais incentivo isenção redução crédito presumido Atacado, comércio e centros de distribuição atacadista atacado comércio atacadista comercio atacadista varejo varejista distribuição distribuicao distribuidor centro de distribuição centro de distribuicao central de distribuição central de distribuicao carga efetiva regime atacadista"
+  },
+  {
+    "title": "Minas Gerais: benefícios fiscais - Social, educação, cultura e entidades",
+    "url": "estados/mg/legislacao/beneficios-fiscais.html#beneficio-social-educacao-cultura-entidades",
+    "summary": "Benefícios vinculados a entidades, assistência, educação, cultura, livros, doações, pessoas com deficiência e políticas públicas.",
+    "tags": "MG Minas Gerais ICMS benefícios fiscais incentivo isenção redução crédito presumido Social, educação, cultura e entidades educação educacao ensino escola universidade cultura livro livros entidade filantrópica filantropica assistência social assistencia social doação doacao deficiência deficiencia pessoa com deficiência pessoa com deficiencia"
+  },
+  {
+    "title": "Minas Gerais: benefícios fiscais - Medicamentos, saúde e produtos hospitalares",
+    "url": "estados/mg/legislacao/beneficios-fiscais.html#beneficio-medicamentos-saude",
+    "summary": "Hipóteses de tratamento favorecido para medicamentos, produtos médico-hospitalares, saúde pública, deficiência e equipamentos assistivos.",
+    "tags": "MG Minas Gerais ICMS benefícios fiscais incentivo isenção redução crédito presumido Medicamentos, saúde e produtos hospitalares medicamento medicamentos farmacêutico farmaceutico hospital hospitalar produto médico produto medico saúde saude deficiente deficiência deficiencia prótese protese órtese ortese cadeira de rodas insumo hospitalar equipamento hospitalar"
   },
   {
     "title": "Pará: legislação de ICMS em tela",
@@ -1296,6 +2016,66 @@ window.RJC_SEARCH = [
     "tags": "PA Pará Documentos, SPED e prova ICMS benefícios fiscais"
   },
   {
+    "title": "Pará: benefícios fiscais - Construção, minerais, madeira e materiais",
+    "url": "estados/pa/legislacao/beneficios-fiscais.html#beneficio-construcao-minerais-madeira",
+    "summary": "Tratamentos para construção civil, minerais, madeira, cimento, cerâmica, aço, materiais e cadeias extrativas.",
+    "tags": "PA Pará ICMS benefícios fiscais incentivo isenção redução crédito presumido Construção, minerais, madeira e materiais construção civil construcao civil cimento cerâmica ceramica madeira mineral minério minerio pedra areia brita aço aco ferro metalúrgica metalurgica material de construção material de construcao"
+  },
+  {
+    "title": "Pará: benefícios fiscais - Agropecuário, alimentos e cesta básica",
+    "url": "estados/pa/legislacao/beneficios-fiscais.html#beneficio-agro-alimentos",
+    "summary": "Benefícios que normalmente dependem de produto, destinação, produtor rural, insumo, industrialização ou política de abastecimento.",
+    "tags": "PA Pará ICMS benefícios fiscais incentivo isenção redução crédito presumido Agropecuário, alimentos e cesta básica agropecuário agropecuario produtor rural atividade rural insumo agropecuário insumo agropecuario fertilizante defensivo semente muda ração racao milho soja arroz feijão feijao leite carne frango peixe alimento cesta básica cesta basica"
+  },
+  {
+    "title": "Pará: benefícios fiscais - Veículos, autopeças e transporte",
+    "url": "estados/pa/legislacao/beneficios-fiscais.html#beneficio-veiculos-autopecas-transporte",
+    "summary": "Benefícios e regimes para veículos, autopeças, transporte, frete, implementos, ônibus, caminhões e cadeias automotivas.",
+    "tags": "PA Pará ICMS benefícios fiscais incentivo isenção redução crédito presumido Veículos, autopeças e transporte veículo veiculo veículos veiculos automotor automóvel automovel autopeça autopeca peças pecas caminhão caminhao ônibus onibus motocicleta chassi renavam transporte transportador frete carga passageiro implemento rodoviário implemento rodoviario"
+  },
+  {
+    "title": "Pará: benefícios fiscais - Indústria, máquinas e equipamentos",
+    "url": "estados/pa/legislacao/beneficios-fiscais.html#beneficio-industria-maquinas-equipamentos",
+    "summary": "Benefícios de desenvolvimento industrial, máquinas, equipamentos, ativo imobilizado, bens de capital, implantação e modernização.",
+    "tags": "PA Pará ICMS benefícios fiscais incentivo isenção redução crédito presumido Indústria, máquinas e equipamentos indústria industria industrial industrialização industrializacao máquina maquina máquinas maquinas equipamento equipamentos bem de capital bens de capital ativo imobilizado implantação implantacao modernização modernizacao investimento parque industrial"
+  },
+  {
+    "title": "Pará: benefícios fiscais - Social, educação, cultura e entidades",
+    "url": "estados/pa/legislacao/beneficios-fiscais.html#beneficio-social-educacao-cultura-entidades",
+    "summary": "Benefícios vinculados a entidades, assistência, educação, cultura, livros, doações, pessoas com deficiência e políticas públicas.",
+    "tags": "PA Pará ICMS benefícios fiscais incentivo isenção redução crédito presumido Social, educação, cultura e entidades educação educacao ensino escola universidade cultura livro livros entidade filantrópica filantropica assistência social assistencia social doação doacao deficiência deficiencia pessoa com deficiência pessoa com deficiencia"
+  },
+  {
+    "title": "Pará: benefícios fiscais - Eletrônicos, informática e telecomunicações",
+    "url": "estados/pa/legislacao/beneficios-fiscais.html#beneficio-eletronicos-informatica-telecom",
+    "summary": "Tratamentos ligados a equipamentos eletrônicos, bens de informática, telecomunicações, processamento de dados e cadeia tecnológica.",
+    "tags": "PA Pará ICMS benefícios fiscais incentivo isenção redução crédito presumido Eletrônicos, informática e telecomunicações eletrônico eletronico eletrônicos eletronicos informática informatica computador computadores software hardware processamento de dados telecomunicação telecomunicacao telecomunicações telefonia telefone celular aparelho equipamento de comunicação equipamento de comunicacao semicondutor componentes eletrônicos componentes eletronicos"
+  },
+  {
+    "title": "Pará: benefícios fiscais - Importação, exportação e comércio exterior",
+    "url": "estados/pa/legislacao/beneficios-fiscais.html#beneficio-importacao-exportacao-comercio-exterior",
+    "summary": "Imunidade, não incidência, suspensão, diferimento, desembaraço, importação por conta e ordem, exportação e regimes ligados ao exterior.",
+    "tags": "PA Pará ICMS benefícios fiscais incentivo isenção redução crédito presumido Importação, exportação e comércio exterior importação importacao importado desembaraço desembaraco exportação exportacao exterior comércio exterior comercio exterior drawback zona franca área de livre comércio area de livre comercio fim específico de exportação fim especifico de exportacao"
+  },
+  {
+    "title": "Pará: benefícios fiscais - Energia, combustíveis e infraestrutura",
+    "url": "estados/pa/legislacao/beneficios-fiscais.html#beneficio-energia-combustiveis-infraestrutura",
+    "summary": "Regras especiais envolvendo energia elétrica, combustíveis, gás, infraestrutura, obras, concessões e cadeias essenciais.",
+    "tags": "PA Pará ICMS benefícios fiscais incentivo isenção redução crédito presumido Energia, combustíveis e infraestrutura energia elétrica energia eletrica combustível combustivel combustíveis combustiveis diesel gasolina etanol álcool alcool biodiesel biocombustível biocombustivel gás natural gas natural glp infraestrutura concessão concessao obra pública obra publica"
+  },
+  {
+    "title": "Pará: benefícios fiscais - Medicamentos, saúde e produtos hospitalares",
+    "url": "estados/pa/legislacao/beneficios-fiscais.html#beneficio-medicamentos-saude",
+    "summary": "Hipóteses de tratamento favorecido para medicamentos, produtos médico-hospitalares, saúde pública, deficiência e equipamentos assistivos.",
+    "tags": "PA Pará ICMS benefícios fiscais incentivo isenção redução crédito presumido Medicamentos, saúde e produtos hospitalares medicamento medicamentos farmacêutico farmaceutico hospital hospitalar produto médico produto medico saúde saude deficiente deficiência deficiencia prótese protese órtese ortese cadeira de rodas insumo hospitalar equipamento hospitalar"
+  },
+  {
+    "title": "Pará: benefícios fiscais - Atacado, comércio e centros de distribuição",
+    "url": "estados/pa/legislacao/beneficios-fiscais.html#beneficio-atacado-comercio-distribuicao",
+    "summary": "Regimes e benefícios para atacadistas, varejo, distribuição, centrais, comércio, carga efetiva e credenciamentos.",
+    "tags": "PA Pará ICMS benefícios fiscais incentivo isenção redução crédito presumido Atacado, comércio e centros de distribuição atacadista atacado comércio atacadista comercio atacadista varejo varejista distribuição distribuicao distribuidor centro de distribuição centro de distribuicao central de distribuição central de distribuicao carga efetiva regime atacadista"
+  },
+  {
     "title": "Paraíba: legislação de ICMS em tela",
     "url": "estados/pb/legislacao/index.html",
     "summary": "RICMS, leis, anexos, benefícios fiscais, alíquotas, ST e prova documental de Paraíba.",
@@ -1330,6 +2110,60 @@ window.RJC_SEARCH = [
     "url": "estados/pb/legislacao/documentos-prova.html",
     "summary": "NF-e, CT-e, EFD, escrituração, cBenef quando aplicável, obrigações acessórias, comprovantes e memória de cálculo.",
     "tags": "PB Paraíba Documentos, SPED e prova ICMS benefícios fiscais"
+  },
+  {
+    "title": "Paraíba: benefícios fiscais - Construção, minerais, madeira e materiais",
+    "url": "estados/pb/legislacao/beneficios-fiscais.html#beneficio-construcao-minerais-madeira",
+    "summary": "Tratamentos para construção civil, minerais, madeira, cimento, cerâmica, aço, materiais e cadeias extrativas.",
+    "tags": "PB Paraíba ICMS benefícios fiscais incentivo isenção redução crédito presumido Construção, minerais, madeira e materiais construção civil construcao civil cimento cerâmica ceramica madeira mineral minério minerio pedra areia brita aço aco ferro metalúrgica metalurgica material de construção material de construcao"
+  },
+  {
+    "title": "Paraíba: benefícios fiscais - Energia, combustíveis e infraestrutura",
+    "url": "estados/pb/legislacao/beneficios-fiscais.html#beneficio-energia-combustiveis-infraestrutura",
+    "summary": "Regras especiais envolvendo energia elétrica, combustíveis, gás, infraestrutura, obras, concessões e cadeias essenciais.",
+    "tags": "PB Paraíba ICMS benefícios fiscais incentivo isenção redução crédito presumido Energia, combustíveis e infraestrutura energia elétrica energia eletrica combustível combustivel combustíveis combustiveis diesel gasolina etanol álcool alcool biodiesel biocombustível biocombustivel gás natural gas natural glp infraestrutura concessão concessao obra pública obra publica"
+  },
+  {
+    "title": "Paraíba: benefícios fiscais - Agropecuário, alimentos e cesta básica",
+    "url": "estados/pb/legislacao/beneficios-fiscais.html#beneficio-agro-alimentos",
+    "summary": "Benefícios que normalmente dependem de produto, destinação, produtor rural, insumo, industrialização ou política de abastecimento.",
+    "tags": "PB Paraíba ICMS benefícios fiscais incentivo isenção redução crédito presumido Agropecuário, alimentos e cesta básica agropecuário agropecuario produtor rural atividade rural insumo agropecuário insumo agropecuario fertilizante defensivo semente muda ração racao milho soja arroz feijão feijao leite carne frango peixe alimento cesta básica cesta basica"
+  },
+  {
+    "title": "Paraíba: benefícios fiscais - Importação, exportação e comércio exterior",
+    "url": "estados/pb/legislacao/beneficios-fiscais.html#beneficio-importacao-exportacao-comercio-exterior",
+    "summary": "Imunidade, não incidência, suspensão, diferimento, desembaraço, importação por conta e ordem, exportação e regimes ligados ao exterior.",
+    "tags": "PB Paraíba ICMS benefícios fiscais incentivo isenção redução crédito presumido Importação, exportação e comércio exterior importação importacao importado desembaraço desembaraco exportação exportacao exterior comércio exterior comercio exterior drawback zona franca área de livre comércio area de livre comercio fim específico de exportação fim especifico de exportacao"
+  },
+  {
+    "title": "Paraíba: benefícios fiscais - Veículos, autopeças e transporte",
+    "url": "estados/pb/legislacao/beneficios-fiscais.html#beneficio-veiculos-autopecas-transporte",
+    "summary": "Benefícios e regimes para veículos, autopeças, transporte, frete, implementos, ônibus, caminhões e cadeias automotivas.",
+    "tags": "PB Paraíba ICMS benefícios fiscais incentivo isenção redução crédito presumido Veículos, autopeças e transporte veículo veiculo veículos veiculos automotor automóvel automovel autopeça autopeca peças pecas caminhão caminhao ônibus onibus motocicleta chassi renavam transporte transportador frete carga passageiro implemento rodoviário implemento rodoviario"
+  },
+  {
+    "title": "Paraíba: benefícios fiscais - Social, educação, cultura e entidades",
+    "url": "estados/pb/legislacao/beneficios-fiscais.html#beneficio-social-educacao-cultura-entidades",
+    "summary": "Benefícios vinculados a entidades, assistência, educação, cultura, livros, doações, pessoas com deficiência e políticas públicas.",
+    "tags": "PB Paraíba ICMS benefícios fiscais incentivo isenção redução crédito presumido Social, educação, cultura e entidades educação educacao ensino escola universidade cultura livro livros entidade filantrópica filantropica assistência social assistencia social doação doacao deficiência deficiencia pessoa com deficiência pessoa com deficiencia"
+  },
+  {
+    "title": "Paraíba: benefícios fiscais - Eletrônicos, informática e telecomunicações",
+    "url": "estados/pb/legislacao/beneficios-fiscais.html#beneficio-eletronicos-informatica-telecom",
+    "summary": "Tratamentos ligados a equipamentos eletrônicos, bens de informática, telecomunicações, processamento de dados e cadeia tecnológica.",
+    "tags": "PB Paraíba ICMS benefícios fiscais incentivo isenção redução crédito presumido Eletrônicos, informática e telecomunicações eletrônico eletronico eletrônicos eletronicos informática informatica computador computadores software hardware processamento de dados telecomunicação telecomunicacao telecomunicações telefonia telefone celular aparelho equipamento de comunicação equipamento de comunicacao semicondutor componentes eletrônicos componentes eletronicos"
+  },
+  {
+    "title": "Paraíba: benefícios fiscais - Atacado, comércio e centros de distribuição",
+    "url": "estados/pb/legislacao/beneficios-fiscais.html#beneficio-atacado-comercio-distribuicao",
+    "summary": "Regimes e benefícios para atacadistas, varejo, distribuição, centrais, comércio, carga efetiva e credenciamentos.",
+    "tags": "PB Paraíba ICMS benefícios fiscais incentivo isenção redução crédito presumido Atacado, comércio e centros de distribuição atacadista atacado comércio atacadista comercio atacadista varejo varejista distribuição distribuicao distribuidor centro de distribuição centro de distribuicao central de distribuição central de distribuicao carga efetiva regime atacadista"
+  },
+  {
+    "title": "Paraíba: benefícios fiscais - Indústria, máquinas e equipamentos",
+    "url": "estados/pb/legislacao/beneficios-fiscais.html#beneficio-industria-maquinas-equipamentos",
+    "summary": "Benefícios de desenvolvimento industrial, máquinas, equipamentos, ativo imobilizado, bens de capital, implantação e modernização.",
+    "tags": "PB Paraíba ICMS benefícios fiscais incentivo isenção redução crédito presumido Indústria, máquinas e equipamentos indústria industria industrial industrialização industrializacao máquina maquina máquinas maquinas equipamento equipamentos bem de capital bens de capital ativo imobilizado implantação implantacao modernização modernizacao investimento parque industrial"
   },
   {
     "title": "Paraná: legislação de ICMS em tela",
@@ -1368,6 +2202,66 @@ window.RJC_SEARCH = [
     "tags": "PR Paraná Documentos, SPED e prova ICMS benefícios fiscais"
   },
   {
+    "title": "Paraná: benefícios fiscais - Construção, minerais, madeira e materiais",
+    "url": "estados/pr/legislacao/beneficios-fiscais.html#beneficio-construcao-minerais-madeira",
+    "summary": "Tratamentos para construção civil, minerais, madeira, cimento, cerâmica, aço, materiais e cadeias extrativas.",
+    "tags": "PR Paraná ICMS benefícios fiscais incentivo isenção redução crédito presumido Construção, minerais, madeira e materiais construção civil construcao civil cimento cerâmica ceramica madeira mineral minério minerio pedra areia brita aço aco ferro metalúrgica metalurgica material de construção material de construcao"
+  },
+  {
+    "title": "Paraná: benefícios fiscais - Agropecuário, alimentos e cesta básica",
+    "url": "estados/pr/legislacao/beneficios-fiscais.html#beneficio-agro-alimentos",
+    "summary": "Benefícios que normalmente dependem de produto, destinação, produtor rural, insumo, industrialização ou política de abastecimento.",
+    "tags": "PR Paraná ICMS benefícios fiscais incentivo isenção redução crédito presumido Agropecuário, alimentos e cesta básica agropecuário agropecuario produtor rural atividade rural insumo agropecuário insumo agropecuario fertilizante defensivo semente muda ração racao milho soja arroz feijão feijao leite carne frango peixe alimento cesta básica cesta basica"
+  },
+  {
+    "title": "Paraná: benefícios fiscais - Indústria, máquinas e equipamentos",
+    "url": "estados/pr/legislacao/beneficios-fiscais.html#beneficio-industria-maquinas-equipamentos",
+    "summary": "Benefícios de desenvolvimento industrial, máquinas, equipamentos, ativo imobilizado, bens de capital, implantação e modernização.",
+    "tags": "PR Paraná ICMS benefícios fiscais incentivo isenção redução crédito presumido Indústria, máquinas e equipamentos indústria industria industrial industrialização industrializacao máquina maquina máquinas maquinas equipamento equipamentos bem de capital bens de capital ativo imobilizado implantação implantacao modernização modernizacao investimento parque industrial"
+  },
+  {
+    "title": "Paraná: benefícios fiscais - Veículos, autopeças e transporte",
+    "url": "estados/pr/legislacao/beneficios-fiscais.html#beneficio-veiculos-autopecas-transporte",
+    "summary": "Benefícios e regimes para veículos, autopeças, transporte, frete, implementos, ônibus, caminhões e cadeias automotivas.",
+    "tags": "PR Paraná ICMS benefícios fiscais incentivo isenção redução crédito presumido Veículos, autopeças e transporte veículo veiculo veículos veiculos automotor automóvel automovel autopeça autopeca peças pecas caminhão caminhao ônibus onibus motocicleta chassi renavam transporte transportador frete carga passageiro implemento rodoviário implemento rodoviario"
+  },
+  {
+    "title": "Paraná: benefícios fiscais - Energia, combustíveis e infraestrutura",
+    "url": "estados/pr/legislacao/beneficios-fiscais.html#beneficio-energia-combustiveis-infraestrutura",
+    "summary": "Regras especiais envolvendo energia elétrica, combustíveis, gás, infraestrutura, obras, concessões e cadeias essenciais.",
+    "tags": "PR Paraná ICMS benefícios fiscais incentivo isenção redução crédito presumido Energia, combustíveis e infraestrutura energia elétrica energia eletrica combustível combustivel combustíveis combustiveis diesel gasolina etanol álcool alcool biodiesel biocombustível biocombustivel gás natural gas natural glp infraestrutura concessão concessao obra pública obra publica"
+  },
+  {
+    "title": "Paraná: benefícios fiscais - Eletrônicos, informática e telecomunicações",
+    "url": "estados/pr/legislacao/beneficios-fiscais.html#beneficio-eletronicos-informatica-telecom",
+    "summary": "Tratamentos ligados a equipamentos eletrônicos, bens de informática, telecomunicações, processamento de dados e cadeia tecnológica.",
+    "tags": "PR Paraná ICMS benefícios fiscais incentivo isenção redução crédito presumido Eletrônicos, informática e telecomunicações eletrônico eletronico eletrônicos eletronicos informática informatica computador computadores software hardware processamento de dados telecomunicação telecomunicacao telecomunicações telefonia telefone celular aparelho equipamento de comunicação equipamento de comunicacao semicondutor componentes eletrônicos componentes eletronicos"
+  },
+  {
+    "title": "Paraná: benefícios fiscais - Importação, exportação e comércio exterior",
+    "url": "estados/pr/legislacao/beneficios-fiscais.html#beneficio-importacao-exportacao-comercio-exterior",
+    "summary": "Imunidade, não incidência, suspensão, diferimento, desembaraço, importação por conta e ordem, exportação e regimes ligados ao exterior.",
+    "tags": "PR Paraná ICMS benefícios fiscais incentivo isenção redução crédito presumido Importação, exportação e comércio exterior importação importacao importado desembaraço desembaraco exportação exportacao exterior comércio exterior comercio exterior drawback zona franca área de livre comércio area de livre comercio fim específico de exportação fim especifico de exportacao"
+  },
+  {
+    "title": "Paraná: benefícios fiscais - Social, educação, cultura e entidades",
+    "url": "estados/pr/legislacao/beneficios-fiscais.html#beneficio-social-educacao-cultura-entidades",
+    "summary": "Benefícios vinculados a entidades, assistência, educação, cultura, livros, doações, pessoas com deficiência e políticas públicas.",
+    "tags": "PR Paraná ICMS benefícios fiscais incentivo isenção redução crédito presumido Social, educação, cultura e entidades educação educacao ensino escola universidade cultura livro livros entidade filantrópica filantropica assistência social assistencia social doação doacao deficiência deficiencia pessoa com deficiência pessoa com deficiencia"
+  },
+  {
+    "title": "Paraná: benefícios fiscais - Atacado, comércio e centros de distribuição",
+    "url": "estados/pr/legislacao/beneficios-fiscais.html#beneficio-atacado-comercio-distribuicao",
+    "summary": "Regimes e benefícios para atacadistas, varejo, distribuição, centrais, comércio, carga efetiva e credenciamentos.",
+    "tags": "PR Paraná ICMS benefícios fiscais incentivo isenção redução crédito presumido Atacado, comércio e centros de distribuição atacadista atacado comércio atacadista comercio atacadista varejo varejista distribuição distribuicao distribuidor centro de distribuição centro de distribuicao central de distribuição central de distribuicao carga efetiva regime atacadista"
+  },
+  {
+    "title": "Paraná: benefícios fiscais - Medicamentos, saúde e produtos hospitalares",
+    "url": "estados/pr/legislacao/beneficios-fiscais.html#beneficio-medicamentos-saude",
+    "summary": "Hipóteses de tratamento favorecido para medicamentos, produtos médico-hospitalares, saúde pública, deficiência e equipamentos assistivos.",
+    "tags": "PR Paraná ICMS benefícios fiscais incentivo isenção redução crédito presumido Medicamentos, saúde e produtos hospitalares medicamento medicamentos farmacêutico farmaceutico hospital hospitalar produto médico produto medico saúde saude deficiente deficiência deficiencia prótese protese órtese ortese cadeira de rodas insumo hospitalar equipamento hospitalar"
+  },
+  {
     "title": "Pernambuco: legislação de ICMS em tela",
     "url": "estados/pe/legislacao/index.html",
     "summary": "RICMS, leis, anexos, benefícios fiscais, alíquotas, ST e prova documental de Pernambuco.",
@@ -1402,6 +2296,66 @@ window.RJC_SEARCH = [
     "url": "estados/pe/legislacao/documentos-prova.html",
     "summary": "NF-e, CT-e, EFD, escrituração, cBenef quando aplicável, obrigações acessórias, comprovantes e memória de cálculo.",
     "tags": "PE Pernambuco Documentos, SPED e prova ICMS benefícios fiscais"
+  },
+  {
+    "title": "Pernambuco: benefícios fiscais - Construção, minerais, madeira e materiais",
+    "url": "estados/pe/legislacao/beneficios-fiscais.html#beneficio-construcao-minerais-madeira",
+    "summary": "Tratamentos para construção civil, minerais, madeira, cimento, cerâmica, aço, materiais e cadeias extrativas.",
+    "tags": "PE Pernambuco ICMS benefícios fiscais incentivo isenção redução crédito presumido Construção, minerais, madeira e materiais construção civil construcao civil cimento cerâmica ceramica madeira mineral minério minerio pedra areia brita aço aco ferro metalúrgica metalurgica material de construção material de construcao"
+  },
+  {
+    "title": "Pernambuco: benefícios fiscais - Agropecuário, alimentos e cesta básica",
+    "url": "estados/pe/legislacao/beneficios-fiscais.html#beneficio-agro-alimentos",
+    "summary": "Benefícios que normalmente dependem de produto, destinação, produtor rural, insumo, industrialização ou política de abastecimento.",
+    "tags": "PE Pernambuco ICMS benefícios fiscais incentivo isenção redução crédito presumido Agropecuário, alimentos e cesta básica agropecuário agropecuario produtor rural atividade rural insumo agropecuário insumo agropecuario fertilizante defensivo semente muda ração racao milho soja arroz feijão feijao leite carne frango peixe alimento cesta básica cesta basica"
+  },
+  {
+    "title": "Pernambuco: benefícios fiscais - Indústria, máquinas e equipamentos",
+    "url": "estados/pe/legislacao/beneficios-fiscais.html#beneficio-industria-maquinas-equipamentos",
+    "summary": "Benefícios de desenvolvimento industrial, máquinas, equipamentos, ativo imobilizado, bens de capital, implantação e modernização.",
+    "tags": "PE Pernambuco ICMS benefícios fiscais incentivo isenção redução crédito presumido Indústria, máquinas e equipamentos indústria industria industrial industrialização industrializacao máquina maquina máquinas maquinas equipamento equipamentos bem de capital bens de capital ativo imobilizado implantação implantacao modernização modernizacao investimento parque industrial"
+  },
+  {
+    "title": "Pernambuco: benefícios fiscais - Veículos, autopeças e transporte",
+    "url": "estados/pe/legislacao/beneficios-fiscais.html#beneficio-veiculos-autopecas-transporte",
+    "summary": "Benefícios e regimes para veículos, autopeças, transporte, frete, implementos, ônibus, caminhões e cadeias automotivas.",
+    "tags": "PE Pernambuco ICMS benefícios fiscais incentivo isenção redução crédito presumido Veículos, autopeças e transporte veículo veiculo veículos veiculos automotor automóvel automovel autopeça autopeca peças pecas caminhão caminhao ônibus onibus motocicleta chassi renavam transporte transportador frete carga passageiro implemento rodoviário implemento rodoviario"
+  },
+  {
+    "title": "Pernambuco: benefícios fiscais - Energia, combustíveis e infraestrutura",
+    "url": "estados/pe/legislacao/beneficios-fiscais.html#beneficio-energia-combustiveis-infraestrutura",
+    "summary": "Regras especiais envolvendo energia elétrica, combustíveis, gás, infraestrutura, obras, concessões e cadeias essenciais.",
+    "tags": "PE Pernambuco ICMS benefícios fiscais incentivo isenção redução crédito presumido Energia, combustíveis e infraestrutura energia elétrica energia eletrica combustível combustivel combustíveis combustiveis diesel gasolina etanol álcool alcool biodiesel biocombustível biocombustivel gás natural gas natural glp infraestrutura concessão concessao obra pública obra publica"
+  },
+  {
+    "title": "Pernambuco: benefícios fiscais - Importação, exportação e comércio exterior",
+    "url": "estados/pe/legislacao/beneficios-fiscais.html#beneficio-importacao-exportacao-comercio-exterior",
+    "summary": "Imunidade, não incidência, suspensão, diferimento, desembaraço, importação por conta e ordem, exportação e regimes ligados ao exterior.",
+    "tags": "PE Pernambuco ICMS benefícios fiscais incentivo isenção redução crédito presumido Importação, exportação e comércio exterior importação importacao importado desembaraço desembaraco exportação exportacao exterior comércio exterior comercio exterior drawback zona franca área de livre comércio area de livre comercio fim específico de exportação fim especifico de exportacao"
+  },
+  {
+    "title": "Pernambuco: benefícios fiscais - Atacado, comércio e centros de distribuição",
+    "url": "estados/pe/legislacao/beneficios-fiscais.html#beneficio-atacado-comercio-distribuicao",
+    "summary": "Regimes e benefícios para atacadistas, varejo, distribuição, centrais, comércio, carga efetiva e credenciamentos.",
+    "tags": "PE Pernambuco ICMS benefícios fiscais incentivo isenção redução crédito presumido Atacado, comércio e centros de distribuição atacadista atacado comércio atacadista comercio atacadista varejo varejista distribuição distribuicao distribuidor centro de distribuição centro de distribuicao central de distribuição central de distribuicao carga efetiva regime atacadista"
+  },
+  {
+    "title": "Pernambuco: benefícios fiscais - Eletrônicos, informática e telecomunicações",
+    "url": "estados/pe/legislacao/beneficios-fiscais.html#beneficio-eletronicos-informatica-telecom",
+    "summary": "Tratamentos ligados a equipamentos eletrônicos, bens de informática, telecomunicações, processamento de dados e cadeia tecnológica.",
+    "tags": "PE Pernambuco ICMS benefícios fiscais incentivo isenção redução crédito presumido Eletrônicos, informática e telecomunicações eletrônico eletronico eletrônicos eletronicos informática informatica computador computadores software hardware processamento de dados telecomunicação telecomunicacao telecomunicações telefonia telefone celular aparelho equipamento de comunicação equipamento de comunicacao semicondutor componentes eletrônicos componentes eletronicos"
+  },
+  {
+    "title": "Pernambuco: benefícios fiscais - Social, educação, cultura e entidades",
+    "url": "estados/pe/legislacao/beneficios-fiscais.html#beneficio-social-educacao-cultura-entidades",
+    "summary": "Benefícios vinculados a entidades, assistência, educação, cultura, livros, doações, pessoas com deficiência e políticas públicas.",
+    "tags": "PE Pernambuco ICMS benefícios fiscais incentivo isenção redução crédito presumido Social, educação, cultura e entidades educação educacao ensino escola universidade cultura livro livros entidade filantrópica filantropica assistência social assistencia social doação doacao deficiência deficiencia pessoa com deficiência pessoa com deficiencia"
+  },
+  {
+    "title": "Pernambuco: benefícios fiscais - Medicamentos, saúde e produtos hospitalares",
+    "url": "estados/pe/legislacao/beneficios-fiscais.html#beneficio-medicamentos-saude",
+    "summary": "Hipóteses de tratamento favorecido para medicamentos, produtos médico-hospitalares, saúde pública, deficiência e equipamentos assistivos.",
+    "tags": "PE Pernambuco ICMS benefícios fiscais incentivo isenção redução crédito presumido Medicamentos, saúde e produtos hospitalares medicamento medicamentos farmacêutico farmaceutico hospital hospitalar produto médico produto medico saúde saude deficiente deficiência deficiencia prótese protese órtese ortese cadeira de rodas insumo hospitalar equipamento hospitalar"
   },
   {
     "title": "Piauí: legislação de ICMS em tela",
@@ -1440,6 +2394,66 @@ window.RJC_SEARCH = [
     "tags": "PI Piauí Documentos, SPED e prova ICMS benefícios fiscais"
   },
   {
+    "title": "Piauí: benefícios fiscais - Construção, minerais, madeira e materiais",
+    "url": "estados/pi/legislacao/beneficios-fiscais.html#beneficio-construcao-minerais-madeira",
+    "summary": "Tratamentos para construção civil, minerais, madeira, cimento, cerâmica, aço, materiais e cadeias extrativas.",
+    "tags": "PI Piauí ICMS benefícios fiscais incentivo isenção redução crédito presumido Construção, minerais, madeira e materiais construção civil construcao civil cimento cerâmica ceramica madeira mineral minério minerio pedra areia brita aço aco ferro metalúrgica metalurgica material de construção material de construcao"
+  },
+  {
+    "title": "Piauí: benefícios fiscais - Agropecuário, alimentos e cesta básica",
+    "url": "estados/pi/legislacao/beneficios-fiscais.html#beneficio-agro-alimentos",
+    "summary": "Benefícios que normalmente dependem de produto, destinação, produtor rural, insumo, industrialização ou política de abastecimento.",
+    "tags": "PI Piauí ICMS benefícios fiscais incentivo isenção redução crédito presumido Agropecuário, alimentos e cesta básica agropecuário agropecuario produtor rural atividade rural insumo agropecuário insumo agropecuario fertilizante defensivo semente muda ração racao milho soja arroz feijão feijao leite carne frango peixe alimento cesta básica cesta basica"
+  },
+  {
+    "title": "Piauí: benefícios fiscais - Veículos, autopeças e transporte",
+    "url": "estados/pi/legislacao/beneficios-fiscais.html#beneficio-veiculos-autopecas-transporte",
+    "summary": "Benefícios e regimes para veículos, autopeças, transporte, frete, implementos, ônibus, caminhões e cadeias automotivas.",
+    "tags": "PI Piauí ICMS benefícios fiscais incentivo isenção redução crédito presumido Veículos, autopeças e transporte veículo veiculo veículos veiculos automotor automóvel automovel autopeça autopeca peças pecas caminhão caminhao ônibus onibus motocicleta chassi renavam transporte transportador frete carga passageiro implemento rodoviário implemento rodoviario"
+  },
+  {
+    "title": "Piauí: benefícios fiscais - Energia, combustíveis e infraestrutura",
+    "url": "estados/pi/legislacao/beneficios-fiscais.html#beneficio-energia-combustiveis-infraestrutura",
+    "summary": "Regras especiais envolvendo energia elétrica, combustíveis, gás, infraestrutura, obras, concessões e cadeias essenciais.",
+    "tags": "PI Piauí ICMS benefícios fiscais incentivo isenção redução crédito presumido Energia, combustíveis e infraestrutura energia elétrica energia eletrica combustível combustivel combustíveis combustiveis diesel gasolina etanol álcool alcool biodiesel biocombustível biocombustivel gás natural gas natural glp infraestrutura concessão concessao obra pública obra publica"
+  },
+  {
+    "title": "Piauí: benefícios fiscais - Indústria, máquinas e equipamentos",
+    "url": "estados/pi/legislacao/beneficios-fiscais.html#beneficio-industria-maquinas-equipamentos",
+    "summary": "Benefícios de desenvolvimento industrial, máquinas, equipamentos, ativo imobilizado, bens de capital, implantação e modernização.",
+    "tags": "PI Piauí ICMS benefícios fiscais incentivo isenção redução crédito presumido Indústria, máquinas e equipamentos indústria industria industrial industrialização industrializacao máquina maquina máquinas maquinas equipamento equipamentos bem de capital bens de capital ativo imobilizado implantação implantacao modernização modernizacao investimento parque industrial"
+  },
+  {
+    "title": "Piauí: benefícios fiscais - Importação, exportação e comércio exterior",
+    "url": "estados/pi/legislacao/beneficios-fiscais.html#beneficio-importacao-exportacao-comercio-exterior",
+    "summary": "Imunidade, não incidência, suspensão, diferimento, desembaraço, importação por conta e ordem, exportação e regimes ligados ao exterior.",
+    "tags": "PI Piauí ICMS benefícios fiscais incentivo isenção redução crédito presumido Importação, exportação e comércio exterior importação importacao importado desembaraço desembaraco exportação exportacao exterior comércio exterior comercio exterior drawback zona franca área de livre comércio area de livre comercio fim específico de exportação fim especifico de exportacao"
+  },
+  {
+    "title": "Piauí: benefícios fiscais - Eletrônicos, informática e telecomunicações",
+    "url": "estados/pi/legislacao/beneficios-fiscais.html#beneficio-eletronicos-informatica-telecom",
+    "summary": "Tratamentos ligados a equipamentos eletrônicos, bens de informática, telecomunicações, processamento de dados e cadeia tecnológica.",
+    "tags": "PI Piauí ICMS benefícios fiscais incentivo isenção redução crédito presumido Eletrônicos, informática e telecomunicações eletrônico eletronico eletrônicos eletronicos informática informatica computador computadores software hardware processamento de dados telecomunicação telecomunicacao telecomunicações telefonia telefone celular aparelho equipamento de comunicação equipamento de comunicacao semicondutor componentes eletrônicos componentes eletronicos"
+  },
+  {
+    "title": "Piauí: benefícios fiscais - Social, educação, cultura e entidades",
+    "url": "estados/pi/legislacao/beneficios-fiscais.html#beneficio-social-educacao-cultura-entidades",
+    "summary": "Benefícios vinculados a entidades, assistência, educação, cultura, livros, doações, pessoas com deficiência e políticas públicas.",
+    "tags": "PI Piauí ICMS benefícios fiscais incentivo isenção redução crédito presumido Social, educação, cultura e entidades educação educacao ensino escola universidade cultura livro livros entidade filantrópica filantropica assistência social assistencia social doação doacao deficiência deficiencia pessoa com deficiência pessoa com deficiencia"
+  },
+  {
+    "title": "Piauí: benefícios fiscais - Atacado, comércio e centros de distribuição",
+    "url": "estados/pi/legislacao/beneficios-fiscais.html#beneficio-atacado-comercio-distribuicao",
+    "summary": "Regimes e benefícios para atacadistas, varejo, distribuição, centrais, comércio, carga efetiva e credenciamentos.",
+    "tags": "PI Piauí ICMS benefícios fiscais incentivo isenção redução crédito presumido Atacado, comércio e centros de distribuição atacadista atacado comércio atacadista comercio atacadista varejo varejista distribuição distribuicao distribuidor centro de distribuição centro de distribuicao central de distribuição central de distribuicao carga efetiva regime atacadista"
+  },
+  {
+    "title": "Piauí: benefícios fiscais - Medicamentos, saúde e produtos hospitalares",
+    "url": "estados/pi/legislacao/beneficios-fiscais.html#beneficio-medicamentos-saude",
+    "summary": "Hipóteses de tratamento favorecido para medicamentos, produtos médico-hospitalares, saúde pública, deficiência e equipamentos assistivos.",
+    "tags": "PI Piauí ICMS benefícios fiscais incentivo isenção redução crédito presumido Medicamentos, saúde e produtos hospitalares medicamento medicamentos farmacêutico farmaceutico hospital hospitalar produto médico produto medico saúde saude deficiente deficiência deficiencia prótese protese órtese ortese cadeira de rodas insumo hospitalar equipamento hospitalar"
+  },
+  {
     "title": "Rio de Janeiro: legislação de ICMS em tela",
     "url": "estados/rj/legislacao/index.html",
     "summary": "RICMS, leis, anexos, benefícios fiscais, alíquotas, ST e prova documental de Rio de Janeiro.",
@@ -1474,6 +2488,60 @@ window.RJC_SEARCH = [
     "url": "estados/rj/legislacao/documentos-prova.html",
     "summary": "NF-e, CT-e, EFD, escrituração, cBenef quando aplicável, obrigações acessórias, comprovantes e memória de cálculo.",
     "tags": "RJ Rio de Janeiro Documentos, SPED e prova ICMS benefícios fiscais"
+  },
+  {
+    "title": "Rio de Janeiro: benefícios fiscais - Construção, minerais, madeira e materiais",
+    "url": "estados/rj/legislacao/beneficios-fiscais.html#beneficio-construcao-minerais-madeira",
+    "summary": "Tratamentos para construção civil, minerais, madeira, cimento, cerâmica, aço, materiais e cadeias extrativas.",
+    "tags": "RJ Rio de Janeiro ICMS benefícios fiscais incentivo isenção redução crédito presumido Construção, minerais, madeira e materiais construção civil construcao civil cimento cerâmica ceramica madeira mineral minério minerio pedra areia brita aço aco ferro metalúrgica metalurgica material de construção material de construcao"
+  },
+  {
+    "title": "Rio de Janeiro: benefícios fiscais - Veículos, autopeças e transporte",
+    "url": "estados/rj/legislacao/beneficios-fiscais.html#beneficio-veiculos-autopecas-transporte",
+    "summary": "Benefícios e regimes para veículos, autopeças, transporte, frete, implementos, ônibus, caminhões e cadeias automotivas.",
+    "tags": "RJ Rio de Janeiro ICMS benefícios fiscais incentivo isenção redução crédito presumido Veículos, autopeças e transporte veículo veiculo veículos veiculos automotor automóvel automovel autopeça autopeca peças pecas caminhão caminhao ônibus onibus motocicleta chassi renavam transporte transportador frete carga passageiro implemento rodoviário implemento rodoviario"
+  },
+  {
+    "title": "Rio de Janeiro: benefícios fiscais - Agropecuário, alimentos e cesta básica",
+    "url": "estados/rj/legislacao/beneficios-fiscais.html#beneficio-agro-alimentos",
+    "summary": "Benefícios que normalmente dependem de produto, destinação, produtor rural, insumo, industrialização ou política de abastecimento.",
+    "tags": "RJ Rio de Janeiro ICMS benefícios fiscais incentivo isenção redução crédito presumido Agropecuário, alimentos e cesta básica agropecuário agropecuario produtor rural atividade rural insumo agropecuário insumo agropecuario fertilizante defensivo semente muda ração racao milho soja arroz feijão feijao leite carne frango peixe alimento cesta básica cesta basica"
+  },
+  {
+    "title": "Rio de Janeiro: benefícios fiscais - Social, educação, cultura e entidades",
+    "url": "estados/rj/legislacao/beneficios-fiscais.html#beneficio-social-educacao-cultura-entidades",
+    "summary": "Benefícios vinculados a entidades, assistência, educação, cultura, livros, doações, pessoas com deficiência e políticas públicas.",
+    "tags": "RJ Rio de Janeiro ICMS benefícios fiscais incentivo isenção redução crédito presumido Social, educação, cultura e entidades educação educacao ensino escola universidade cultura livro livros entidade filantrópica filantropica assistência social assistencia social doação doacao deficiência deficiencia pessoa com deficiência pessoa com deficiencia"
+  },
+  {
+    "title": "Rio de Janeiro: benefícios fiscais - Indústria, máquinas e equipamentos",
+    "url": "estados/rj/legislacao/beneficios-fiscais.html#beneficio-industria-maquinas-equipamentos",
+    "summary": "Benefícios de desenvolvimento industrial, máquinas, equipamentos, ativo imobilizado, bens de capital, implantação e modernização.",
+    "tags": "RJ Rio de Janeiro ICMS benefícios fiscais incentivo isenção redução crédito presumido Indústria, máquinas e equipamentos indústria industria industrial industrialização industrializacao máquina maquina máquinas maquinas equipamento equipamentos bem de capital bens de capital ativo imobilizado implantação implantacao modernização modernizacao investimento parque industrial"
+  },
+  {
+    "title": "Rio de Janeiro: benefícios fiscais - Importação, exportação e comércio exterior",
+    "url": "estados/rj/legislacao/beneficios-fiscais.html#beneficio-importacao-exportacao-comercio-exterior",
+    "summary": "Imunidade, não incidência, suspensão, diferimento, desembaraço, importação por conta e ordem, exportação e regimes ligados ao exterior.",
+    "tags": "RJ Rio de Janeiro ICMS benefícios fiscais incentivo isenção redução crédito presumido Importação, exportação e comércio exterior importação importacao importado desembaraço desembaraco exportação exportacao exterior comércio exterior comercio exterior drawback zona franca área de livre comércio area de livre comercio fim específico de exportação fim especifico de exportacao"
+  },
+  {
+    "title": "Rio de Janeiro: benefícios fiscais - Eletrônicos, informática e telecomunicações",
+    "url": "estados/rj/legislacao/beneficios-fiscais.html#beneficio-eletronicos-informatica-telecom",
+    "summary": "Tratamentos ligados a equipamentos eletrônicos, bens de informática, telecomunicações, processamento de dados e cadeia tecnológica.",
+    "tags": "RJ Rio de Janeiro ICMS benefícios fiscais incentivo isenção redução crédito presumido Eletrônicos, informática e telecomunicações eletrônico eletronico eletrônicos eletronicos informática informatica computador computadores software hardware processamento de dados telecomunicação telecomunicacao telecomunicações telefonia telefone celular aparelho equipamento de comunicação equipamento de comunicacao semicondutor componentes eletrônicos componentes eletronicos"
+  },
+  {
+    "title": "Rio de Janeiro: benefícios fiscais - Atacado, comércio e centros de distribuição",
+    "url": "estados/rj/legislacao/beneficios-fiscais.html#beneficio-atacado-comercio-distribuicao",
+    "summary": "Regimes e benefícios para atacadistas, varejo, distribuição, centrais, comércio, carga efetiva e credenciamentos.",
+    "tags": "RJ Rio de Janeiro ICMS benefícios fiscais incentivo isenção redução crédito presumido Atacado, comércio e centros de distribuição atacadista atacado comércio atacadista comercio atacadista varejo varejista distribuição distribuicao distribuidor centro de distribuição centro de distribuicao central de distribuição central de distribuicao carga efetiva regime atacadista"
+  },
+  {
+    "title": "Rio de Janeiro: benefícios fiscais - Energia, combustíveis e infraestrutura",
+    "url": "estados/rj/legislacao/beneficios-fiscais.html#beneficio-energia-combustiveis-infraestrutura",
+    "summary": "Regras especiais envolvendo energia elétrica, combustíveis, gás, infraestrutura, obras, concessões e cadeias essenciais.",
+    "tags": "RJ Rio de Janeiro ICMS benefícios fiscais incentivo isenção redução crédito presumido Energia, combustíveis e infraestrutura energia elétrica energia eletrica combustível combustivel combustíveis combustiveis diesel gasolina etanol álcool alcool biodiesel biocombustível biocombustivel gás natural gas natural glp infraestrutura concessão concessao obra pública obra publica"
   },
   {
     "title": "Rio Grande do Norte: legislação de ICMS em tela",
@@ -1512,6 +2580,66 @@ window.RJC_SEARCH = [
     "tags": "RN Rio Grande do Norte Documentos, SPED e prova ICMS benefícios fiscais"
   },
   {
+    "title": "Rio Grande do Norte: benefícios fiscais - Construção, minerais, madeira e materiais",
+    "url": "estados/rn/legislacao/beneficios-fiscais.html#beneficio-construcao-minerais-madeira",
+    "summary": "Tratamentos para construção civil, minerais, madeira, cimento, cerâmica, aço, materiais e cadeias extrativas.",
+    "tags": "RN Rio Grande do Norte ICMS benefícios fiscais incentivo isenção redução crédito presumido Construção, minerais, madeira e materiais construção civil construcao civil cimento cerâmica ceramica madeira mineral minério minerio pedra areia brita aço aco ferro metalúrgica metalurgica material de construção material de construcao"
+  },
+  {
+    "title": "Rio Grande do Norte: benefícios fiscais - Agropecuário, alimentos e cesta básica",
+    "url": "estados/rn/legislacao/beneficios-fiscais.html#beneficio-agro-alimentos",
+    "summary": "Benefícios que normalmente dependem de produto, destinação, produtor rural, insumo, industrialização ou política de abastecimento.",
+    "tags": "RN Rio Grande do Norte ICMS benefícios fiscais incentivo isenção redução crédito presumido Agropecuário, alimentos e cesta básica agropecuário agropecuario produtor rural atividade rural insumo agropecuário insumo agropecuario fertilizante defensivo semente muda ração racao milho soja arroz feijão feijao leite carne frango peixe alimento cesta básica cesta basica"
+  },
+  {
+    "title": "Rio Grande do Norte: benefícios fiscais - Energia, combustíveis e infraestrutura",
+    "url": "estados/rn/legislacao/beneficios-fiscais.html#beneficio-energia-combustiveis-infraestrutura",
+    "summary": "Regras especiais envolvendo energia elétrica, combustíveis, gás, infraestrutura, obras, concessões e cadeias essenciais.",
+    "tags": "RN Rio Grande do Norte ICMS benefícios fiscais incentivo isenção redução crédito presumido Energia, combustíveis e infraestrutura energia elétrica energia eletrica combustível combustivel combustíveis combustiveis diesel gasolina etanol álcool alcool biodiesel biocombustível biocombustivel gás natural gas natural glp infraestrutura concessão concessao obra pública obra publica"
+  },
+  {
+    "title": "Rio Grande do Norte: benefícios fiscais - Indústria, máquinas e equipamentos",
+    "url": "estados/rn/legislacao/beneficios-fiscais.html#beneficio-industria-maquinas-equipamentos",
+    "summary": "Benefícios de desenvolvimento industrial, máquinas, equipamentos, ativo imobilizado, bens de capital, implantação e modernização.",
+    "tags": "RN Rio Grande do Norte ICMS benefícios fiscais incentivo isenção redução crédito presumido Indústria, máquinas e equipamentos indústria industria industrial industrialização industrializacao máquina maquina máquinas maquinas equipamento equipamentos bem de capital bens de capital ativo imobilizado implantação implantacao modernização modernizacao investimento parque industrial"
+  },
+  {
+    "title": "Rio Grande do Norte: benefícios fiscais - Veículos, autopeças e transporte",
+    "url": "estados/rn/legislacao/beneficios-fiscais.html#beneficio-veiculos-autopecas-transporte",
+    "summary": "Benefícios e regimes para veículos, autopeças, transporte, frete, implementos, ônibus, caminhões e cadeias automotivas.",
+    "tags": "RN Rio Grande do Norte ICMS benefícios fiscais incentivo isenção redução crédito presumido Veículos, autopeças e transporte veículo veiculo veículos veiculos automotor automóvel automovel autopeça autopeca peças pecas caminhão caminhao ônibus onibus motocicleta chassi renavam transporte transportador frete carga passageiro implemento rodoviário implemento rodoviario"
+  },
+  {
+    "title": "Rio Grande do Norte: benefícios fiscais - Importação, exportação e comércio exterior",
+    "url": "estados/rn/legislacao/beneficios-fiscais.html#beneficio-importacao-exportacao-comercio-exterior",
+    "summary": "Imunidade, não incidência, suspensão, diferimento, desembaraço, importação por conta e ordem, exportação e regimes ligados ao exterior.",
+    "tags": "RN Rio Grande do Norte ICMS benefícios fiscais incentivo isenção redução crédito presumido Importação, exportação e comércio exterior importação importacao importado desembaraço desembaraco exportação exportacao exterior comércio exterior comercio exterior drawback zona franca área de livre comércio area de livre comercio fim específico de exportação fim especifico de exportacao"
+  },
+  {
+    "title": "Rio Grande do Norte: benefícios fiscais - Eletrônicos, informática e telecomunicações",
+    "url": "estados/rn/legislacao/beneficios-fiscais.html#beneficio-eletronicos-informatica-telecom",
+    "summary": "Tratamentos ligados a equipamentos eletrônicos, bens de informática, telecomunicações, processamento de dados e cadeia tecnológica.",
+    "tags": "RN Rio Grande do Norte ICMS benefícios fiscais incentivo isenção redução crédito presumido Eletrônicos, informática e telecomunicações eletrônico eletronico eletrônicos eletronicos informática informatica computador computadores software hardware processamento de dados telecomunicação telecomunicacao telecomunicações telefonia telefone celular aparelho equipamento de comunicação equipamento de comunicacao semicondutor componentes eletrônicos componentes eletronicos"
+  },
+  {
+    "title": "Rio Grande do Norte: benefícios fiscais - Social, educação, cultura e entidades",
+    "url": "estados/rn/legislacao/beneficios-fiscais.html#beneficio-social-educacao-cultura-entidades",
+    "summary": "Benefícios vinculados a entidades, assistência, educação, cultura, livros, doações, pessoas com deficiência e políticas públicas.",
+    "tags": "RN Rio Grande do Norte ICMS benefícios fiscais incentivo isenção redução crédito presumido Social, educação, cultura e entidades educação educacao ensino escola universidade cultura livro livros entidade filantrópica filantropica assistência social assistencia social doação doacao deficiência deficiencia pessoa com deficiência pessoa com deficiencia"
+  },
+  {
+    "title": "Rio Grande do Norte: benefícios fiscais - Atacado, comércio e centros de distribuição",
+    "url": "estados/rn/legislacao/beneficios-fiscais.html#beneficio-atacado-comercio-distribuicao",
+    "summary": "Regimes e benefícios para atacadistas, varejo, distribuição, centrais, comércio, carga efetiva e credenciamentos.",
+    "tags": "RN Rio Grande do Norte ICMS benefícios fiscais incentivo isenção redução crédito presumido Atacado, comércio e centros de distribuição atacadista atacado comércio atacadista comercio atacadista varejo varejista distribuição distribuicao distribuidor centro de distribuição centro de distribuicao central de distribuição central de distribuicao carga efetiva regime atacadista"
+  },
+  {
+    "title": "Rio Grande do Norte: benefícios fiscais - Medicamentos, saúde e produtos hospitalares",
+    "url": "estados/rn/legislacao/beneficios-fiscais.html#beneficio-medicamentos-saude",
+    "summary": "Hipóteses de tratamento favorecido para medicamentos, produtos médico-hospitalares, saúde pública, deficiência e equipamentos assistivos.",
+    "tags": "RN Rio Grande do Norte ICMS benefícios fiscais incentivo isenção redução crédito presumido Medicamentos, saúde e produtos hospitalares medicamento medicamentos farmacêutico farmaceutico hospital hospitalar produto médico produto medico saúde saude deficiente deficiência deficiencia prótese protese órtese ortese cadeira de rodas insumo hospitalar equipamento hospitalar"
+  },
+  {
     "title": "Rio Grande do Sul: legislação de ICMS em tela",
     "url": "estados/rs/legislacao/index.html",
     "summary": "RICMS, leis, anexos, benefícios fiscais, alíquotas, ST e prova documental de Rio Grande do Sul.",
@@ -1546,6 +2674,66 @@ window.RJC_SEARCH = [
     "url": "estados/rs/legislacao/documentos-prova.html",
     "summary": "NF-e, CT-e, EFD, escrituração, cBenef quando aplicável, obrigações acessórias, comprovantes e memória de cálculo.",
     "tags": "RS Rio Grande do Sul Documentos, SPED e prova ICMS benefícios fiscais"
+  },
+  {
+    "title": "Rio Grande do Sul: benefícios fiscais - Agropecuário, alimentos e cesta básica",
+    "url": "estados/rs/legislacao/beneficios-fiscais.html#beneficio-agro-alimentos",
+    "summary": "Benefícios que normalmente dependem de produto, destinação, produtor rural, insumo, industrialização ou política de abastecimento.",
+    "tags": "RS Rio Grande do Sul ICMS benefícios fiscais incentivo isenção redução crédito presumido Agropecuário, alimentos e cesta básica agropecuário agropecuario produtor rural atividade rural insumo agropecuário insumo agropecuario fertilizante defensivo semente muda ração racao milho soja arroz feijão feijao leite carne frango peixe alimento cesta básica cesta basica"
+  },
+  {
+    "title": "Rio Grande do Sul: benefícios fiscais - Construção, minerais, madeira e materiais",
+    "url": "estados/rs/legislacao/beneficios-fiscais.html#beneficio-construcao-minerais-madeira",
+    "summary": "Tratamentos para construção civil, minerais, madeira, cimento, cerâmica, aço, materiais e cadeias extrativas.",
+    "tags": "RS Rio Grande do Sul ICMS benefícios fiscais incentivo isenção redução crédito presumido Construção, minerais, madeira e materiais construção civil construcao civil cimento cerâmica ceramica madeira mineral minério minerio pedra areia brita aço aco ferro metalúrgica metalurgica material de construção material de construcao"
+  },
+  {
+    "title": "Rio Grande do Sul: benefícios fiscais - Indústria, máquinas e equipamentos",
+    "url": "estados/rs/legislacao/beneficios-fiscais.html#beneficio-industria-maquinas-equipamentos",
+    "summary": "Benefícios de desenvolvimento industrial, máquinas, equipamentos, ativo imobilizado, bens de capital, implantação e modernização.",
+    "tags": "RS Rio Grande do Sul ICMS benefícios fiscais incentivo isenção redução crédito presumido Indústria, máquinas e equipamentos indústria industria industrial industrialização industrializacao máquina maquina máquinas maquinas equipamento equipamentos bem de capital bens de capital ativo imobilizado implantação implantacao modernização modernizacao investimento parque industrial"
+  },
+  {
+    "title": "Rio Grande do Sul: benefícios fiscais - Veículos, autopeças e transporte",
+    "url": "estados/rs/legislacao/beneficios-fiscais.html#beneficio-veiculos-autopecas-transporte",
+    "summary": "Benefícios e regimes para veículos, autopeças, transporte, frete, implementos, ônibus, caminhões e cadeias automotivas.",
+    "tags": "RS Rio Grande do Sul ICMS benefícios fiscais incentivo isenção redução crédito presumido Veículos, autopeças e transporte veículo veiculo veículos veiculos automotor automóvel automovel autopeça autopeca peças pecas caminhão caminhao ônibus onibus motocicleta chassi renavam transporte transportador frete carga passageiro implemento rodoviário implemento rodoviario"
+  },
+  {
+    "title": "Rio Grande do Sul: benefícios fiscais - Energia, combustíveis e infraestrutura",
+    "url": "estados/rs/legislacao/beneficios-fiscais.html#beneficio-energia-combustiveis-infraestrutura",
+    "summary": "Regras especiais envolvendo energia elétrica, combustíveis, gás, infraestrutura, obras, concessões e cadeias essenciais.",
+    "tags": "RS Rio Grande do Sul ICMS benefícios fiscais incentivo isenção redução crédito presumido Energia, combustíveis e infraestrutura energia elétrica energia eletrica combustível combustivel combustíveis combustiveis diesel gasolina etanol álcool alcool biodiesel biocombustível biocombustivel gás natural gas natural glp infraestrutura concessão concessao obra pública obra publica"
+  },
+  {
+    "title": "Rio Grande do Sul: benefícios fiscais - Importação, exportação e comércio exterior",
+    "url": "estados/rs/legislacao/beneficios-fiscais.html#beneficio-importacao-exportacao-comercio-exterior",
+    "summary": "Imunidade, não incidência, suspensão, diferimento, desembaraço, importação por conta e ordem, exportação e regimes ligados ao exterior.",
+    "tags": "RS Rio Grande do Sul ICMS benefícios fiscais incentivo isenção redução crédito presumido Importação, exportação e comércio exterior importação importacao importado desembaraço desembaraco exportação exportacao exterior comércio exterior comercio exterior drawback zona franca área de livre comércio area de livre comercio fim específico de exportação fim especifico de exportacao"
+  },
+  {
+    "title": "Rio Grande do Sul: benefícios fiscais - Social, educação, cultura e entidades",
+    "url": "estados/rs/legislacao/beneficios-fiscais.html#beneficio-social-educacao-cultura-entidades",
+    "summary": "Benefícios vinculados a entidades, assistência, educação, cultura, livros, doações, pessoas com deficiência e políticas públicas.",
+    "tags": "RS Rio Grande do Sul ICMS benefícios fiscais incentivo isenção redução crédito presumido Social, educação, cultura e entidades educação educacao ensino escola universidade cultura livro livros entidade filantrópica filantropica assistência social assistencia social doação doacao deficiência deficiencia pessoa com deficiência pessoa com deficiencia"
+  },
+  {
+    "title": "Rio Grande do Sul: benefícios fiscais - Eletrônicos, informática e telecomunicações",
+    "url": "estados/rs/legislacao/beneficios-fiscais.html#beneficio-eletronicos-informatica-telecom",
+    "summary": "Tratamentos ligados a equipamentos eletrônicos, bens de informática, telecomunicações, processamento de dados e cadeia tecnológica.",
+    "tags": "RS Rio Grande do Sul ICMS benefícios fiscais incentivo isenção redução crédito presumido Eletrônicos, informática e telecomunicações eletrônico eletronico eletrônicos eletronicos informática informatica computador computadores software hardware processamento de dados telecomunicação telecomunicacao telecomunicações telefonia telefone celular aparelho equipamento de comunicação equipamento de comunicacao semicondutor componentes eletrônicos componentes eletronicos"
+  },
+  {
+    "title": "Rio Grande do Sul: benefícios fiscais - Atacado, comércio e centros de distribuição",
+    "url": "estados/rs/legislacao/beneficios-fiscais.html#beneficio-atacado-comercio-distribuicao",
+    "summary": "Regimes e benefícios para atacadistas, varejo, distribuição, centrais, comércio, carga efetiva e credenciamentos.",
+    "tags": "RS Rio Grande do Sul ICMS benefícios fiscais incentivo isenção redução crédito presumido Atacado, comércio e centros de distribuição atacadista atacado comércio atacadista comercio atacadista varejo varejista distribuição distribuicao distribuidor centro de distribuição centro de distribuicao central de distribuição central de distribuicao carga efetiva regime atacadista"
+  },
+  {
+    "title": "Rio Grande do Sul: benefícios fiscais - Medicamentos, saúde e produtos hospitalares",
+    "url": "estados/rs/legislacao/beneficios-fiscais.html#beneficio-medicamentos-saude",
+    "summary": "Hipóteses de tratamento favorecido para medicamentos, produtos médico-hospitalares, saúde pública, deficiência e equipamentos assistivos.",
+    "tags": "RS Rio Grande do Sul ICMS benefícios fiscais incentivo isenção redução crédito presumido Medicamentos, saúde e produtos hospitalares medicamento medicamentos farmacêutico farmaceutico hospital hospitalar produto médico produto medico saúde saude deficiente deficiência deficiencia prótese protese órtese ortese cadeira de rodas insumo hospitalar equipamento hospitalar"
   },
   {
     "title": "Rondônia: legislação de ICMS em tela",
@@ -1584,6 +2772,66 @@ window.RJC_SEARCH = [
     "tags": "RO Rondônia Documentos, SPED e prova ICMS benefícios fiscais"
   },
   {
+    "title": "Rondônia: benefícios fiscais - Construção, minerais, madeira e materiais",
+    "url": "estados/ro/legislacao/beneficios-fiscais.html#beneficio-construcao-minerais-madeira",
+    "summary": "Tratamentos para construção civil, minerais, madeira, cimento, cerâmica, aço, materiais e cadeias extrativas.",
+    "tags": "RO Rondônia ICMS benefícios fiscais incentivo isenção redução crédito presumido Construção, minerais, madeira e materiais construção civil construcao civil cimento cerâmica ceramica madeira mineral minério minerio pedra areia brita aço aco ferro metalúrgica metalurgica material de construção material de construcao"
+  },
+  {
+    "title": "Rondônia: benefícios fiscais - Agropecuário, alimentos e cesta básica",
+    "url": "estados/ro/legislacao/beneficios-fiscais.html#beneficio-agro-alimentos",
+    "summary": "Benefícios que normalmente dependem de produto, destinação, produtor rural, insumo, industrialização ou política de abastecimento.",
+    "tags": "RO Rondônia ICMS benefícios fiscais incentivo isenção redução crédito presumido Agropecuário, alimentos e cesta básica agropecuário agropecuario produtor rural atividade rural insumo agropecuário insumo agropecuario fertilizante defensivo semente muda ração racao milho soja arroz feijão feijao leite carne frango peixe alimento cesta básica cesta basica"
+  },
+  {
+    "title": "Rondônia: benefícios fiscais - Indústria, máquinas e equipamentos",
+    "url": "estados/ro/legislacao/beneficios-fiscais.html#beneficio-industria-maquinas-equipamentos",
+    "summary": "Benefícios de desenvolvimento industrial, máquinas, equipamentos, ativo imobilizado, bens de capital, implantação e modernização.",
+    "tags": "RO Rondônia ICMS benefícios fiscais incentivo isenção redução crédito presumido Indústria, máquinas e equipamentos indústria industria industrial industrialização industrializacao máquina maquina máquinas maquinas equipamento equipamentos bem de capital bens de capital ativo imobilizado implantação implantacao modernização modernizacao investimento parque industrial"
+  },
+  {
+    "title": "Rondônia: benefícios fiscais - Veículos, autopeças e transporte",
+    "url": "estados/ro/legislacao/beneficios-fiscais.html#beneficio-veiculos-autopecas-transporte",
+    "summary": "Benefícios e regimes para veículos, autopeças, transporte, frete, implementos, ônibus, caminhões e cadeias automotivas.",
+    "tags": "RO Rondônia ICMS benefícios fiscais incentivo isenção redução crédito presumido Veículos, autopeças e transporte veículo veiculo veículos veiculos automotor automóvel automovel autopeça autopeca peças pecas caminhão caminhao ônibus onibus motocicleta chassi renavam transporte transportador frete carga passageiro implemento rodoviário implemento rodoviario"
+  },
+  {
+    "title": "Rondônia: benefícios fiscais - Social, educação, cultura e entidades",
+    "url": "estados/ro/legislacao/beneficios-fiscais.html#beneficio-social-educacao-cultura-entidades",
+    "summary": "Benefícios vinculados a entidades, assistência, educação, cultura, livros, doações, pessoas com deficiência e políticas públicas.",
+    "tags": "RO Rondônia ICMS benefícios fiscais incentivo isenção redução crédito presumido Social, educação, cultura e entidades educação educacao ensino escola universidade cultura livro livros entidade filantrópica filantropica assistência social assistencia social doação doacao deficiência deficiencia pessoa com deficiência pessoa com deficiencia"
+  },
+  {
+    "title": "Rondônia: benefícios fiscais - Importação, exportação e comércio exterior",
+    "url": "estados/ro/legislacao/beneficios-fiscais.html#beneficio-importacao-exportacao-comercio-exterior",
+    "summary": "Imunidade, não incidência, suspensão, diferimento, desembaraço, importação por conta e ordem, exportação e regimes ligados ao exterior.",
+    "tags": "RO Rondônia ICMS benefícios fiscais incentivo isenção redução crédito presumido Importação, exportação e comércio exterior importação importacao importado desembaraço desembaraco exportação exportacao exterior comércio exterior comercio exterior drawback zona franca área de livre comércio area de livre comercio fim específico de exportação fim especifico de exportacao"
+  },
+  {
+    "title": "Rondônia: benefícios fiscais - Eletrônicos, informática e telecomunicações",
+    "url": "estados/ro/legislacao/beneficios-fiscais.html#beneficio-eletronicos-informatica-telecom",
+    "summary": "Tratamentos ligados a equipamentos eletrônicos, bens de informática, telecomunicações, processamento de dados e cadeia tecnológica.",
+    "tags": "RO Rondônia ICMS benefícios fiscais incentivo isenção redução crédito presumido Eletrônicos, informática e telecomunicações eletrônico eletronico eletrônicos eletronicos informática informatica computador computadores software hardware processamento de dados telecomunicação telecomunicacao telecomunicações telefonia telefone celular aparelho equipamento de comunicação equipamento de comunicacao semicondutor componentes eletrônicos componentes eletronicos"
+  },
+  {
+    "title": "Rondônia: benefícios fiscais - Medicamentos, saúde e produtos hospitalares",
+    "url": "estados/ro/legislacao/beneficios-fiscais.html#beneficio-medicamentos-saude",
+    "summary": "Hipóteses de tratamento favorecido para medicamentos, produtos médico-hospitalares, saúde pública, deficiência e equipamentos assistivos.",
+    "tags": "RO Rondônia ICMS benefícios fiscais incentivo isenção redução crédito presumido Medicamentos, saúde e produtos hospitalares medicamento medicamentos farmacêutico farmaceutico hospital hospitalar produto médico produto medico saúde saude deficiente deficiência deficiencia prótese protese órtese ortese cadeira de rodas insumo hospitalar equipamento hospitalar"
+  },
+  {
+    "title": "Rondônia: benefícios fiscais - Energia, combustíveis e infraestrutura",
+    "url": "estados/ro/legislacao/beneficios-fiscais.html#beneficio-energia-combustiveis-infraestrutura",
+    "summary": "Regras especiais envolvendo energia elétrica, combustíveis, gás, infraestrutura, obras, concessões e cadeias essenciais.",
+    "tags": "RO Rondônia ICMS benefícios fiscais incentivo isenção redução crédito presumido Energia, combustíveis e infraestrutura energia elétrica energia eletrica combustível combustivel combustíveis combustiveis diesel gasolina etanol álcool alcool biodiesel biocombustível biocombustivel gás natural gas natural glp infraestrutura concessão concessao obra pública obra publica"
+  },
+  {
+    "title": "Rondônia: benefícios fiscais - Atacado, comércio e centros de distribuição",
+    "url": "estados/ro/legislacao/beneficios-fiscais.html#beneficio-atacado-comercio-distribuicao",
+    "summary": "Regimes e benefícios para atacadistas, varejo, distribuição, centrais, comércio, carga efetiva e credenciamentos.",
+    "tags": "RO Rondônia ICMS benefícios fiscais incentivo isenção redução crédito presumido Atacado, comércio e centros de distribuição atacadista atacado comércio atacadista comercio atacadista varejo varejista distribuição distribuicao distribuidor centro de distribuição centro de distribuicao central de distribuição central de distribuicao carga efetiva regime atacadista"
+  },
+  {
     "title": "Roraima: legislação de ICMS em tela",
     "url": "estados/rr/legislacao/index.html",
     "summary": "RICMS, leis, anexos, benefícios fiscais, alíquotas, ST e prova documental de Roraima.",
@@ -1618,6 +2866,66 @@ window.RJC_SEARCH = [
     "url": "estados/rr/legislacao/documentos-prova.html",
     "summary": "NF-e, CT-e, EFD, escrituração, cBenef quando aplicável, obrigações acessórias, comprovantes e memória de cálculo.",
     "tags": "RR Roraima Documentos, SPED e prova ICMS benefícios fiscais"
+  },
+  {
+    "title": "Roraima: benefícios fiscais - Indústria, máquinas e equipamentos",
+    "url": "estados/rr/legislacao/beneficios-fiscais.html#beneficio-industria-maquinas-equipamentos",
+    "summary": "Benefícios de desenvolvimento industrial, máquinas, equipamentos, ativo imobilizado, bens de capital, implantação e modernização.",
+    "tags": "RR Roraima ICMS benefícios fiscais incentivo isenção redução crédito presumido Indústria, máquinas e equipamentos indústria industria industrial industrialização industrializacao máquina maquina máquinas maquinas equipamento equipamentos bem de capital bens de capital ativo imobilizado implantação implantacao modernização modernizacao investimento parque industrial"
+  },
+  {
+    "title": "Roraima: benefícios fiscais - Construção, minerais, madeira e materiais",
+    "url": "estados/rr/legislacao/beneficios-fiscais.html#beneficio-construcao-minerais-madeira",
+    "summary": "Tratamentos para construção civil, minerais, madeira, cimento, cerâmica, aço, materiais e cadeias extrativas.",
+    "tags": "RR Roraima ICMS benefícios fiscais incentivo isenção redução crédito presumido Construção, minerais, madeira e materiais construção civil construcao civil cimento cerâmica ceramica madeira mineral minério minerio pedra areia brita aço aco ferro metalúrgica metalurgica material de construção material de construcao"
+  },
+  {
+    "title": "Roraima: benefícios fiscais - Agropecuário, alimentos e cesta básica",
+    "url": "estados/rr/legislacao/beneficios-fiscais.html#beneficio-agro-alimentos",
+    "summary": "Benefícios que normalmente dependem de produto, destinação, produtor rural, insumo, industrialização ou política de abastecimento.",
+    "tags": "RR Roraima ICMS benefícios fiscais incentivo isenção redução crédito presumido Agropecuário, alimentos e cesta básica agropecuário agropecuario produtor rural atividade rural insumo agropecuário insumo agropecuario fertilizante defensivo semente muda ração racao milho soja arroz feijão feijao leite carne frango peixe alimento cesta básica cesta basica"
+  },
+  {
+    "title": "Roraima: benefícios fiscais - Eletrônicos, informática e telecomunicações",
+    "url": "estados/rr/legislacao/beneficios-fiscais.html#beneficio-eletronicos-informatica-telecom",
+    "summary": "Tratamentos ligados a equipamentos eletrônicos, bens de informática, telecomunicações, processamento de dados e cadeia tecnológica.",
+    "tags": "RR Roraima ICMS benefícios fiscais incentivo isenção redução crédito presumido Eletrônicos, informática e telecomunicações eletrônico eletronico eletrônicos eletronicos informática informatica computador computadores software hardware processamento de dados telecomunicação telecomunicacao telecomunicações telefonia telefone celular aparelho equipamento de comunicação equipamento de comunicacao semicondutor componentes eletrônicos componentes eletronicos"
+  },
+  {
+    "title": "Roraima: benefícios fiscais - Veículos, autopeças e transporte",
+    "url": "estados/rr/legislacao/beneficios-fiscais.html#beneficio-veiculos-autopecas-transporte",
+    "summary": "Benefícios e regimes para veículos, autopeças, transporte, frete, implementos, ônibus, caminhões e cadeias automotivas.",
+    "tags": "RR Roraima ICMS benefícios fiscais incentivo isenção redução crédito presumido Veículos, autopeças e transporte veículo veiculo veículos veiculos automotor automóvel automovel autopeça autopeca peças pecas caminhão caminhao ônibus onibus motocicleta chassi renavam transporte transportador frete carga passageiro implemento rodoviário implemento rodoviario"
+  },
+  {
+    "title": "Roraima: benefícios fiscais - Social, educação, cultura e entidades",
+    "url": "estados/rr/legislacao/beneficios-fiscais.html#beneficio-social-educacao-cultura-entidades",
+    "summary": "Benefícios vinculados a entidades, assistência, educação, cultura, livros, doações, pessoas com deficiência e políticas públicas.",
+    "tags": "RR Roraima ICMS benefícios fiscais incentivo isenção redução crédito presumido Social, educação, cultura e entidades educação educacao ensino escola universidade cultura livro livros entidade filantrópica filantropica assistência social assistencia social doação doacao deficiência deficiencia pessoa com deficiência pessoa com deficiencia"
+  },
+  {
+    "title": "Roraima: benefícios fiscais - Medicamentos, saúde e produtos hospitalares",
+    "url": "estados/rr/legislacao/beneficios-fiscais.html#beneficio-medicamentos-saude",
+    "summary": "Hipóteses de tratamento favorecido para medicamentos, produtos médico-hospitalares, saúde pública, deficiência e equipamentos assistivos.",
+    "tags": "RR Roraima ICMS benefícios fiscais incentivo isenção redução crédito presumido Medicamentos, saúde e produtos hospitalares medicamento medicamentos farmacêutico farmaceutico hospital hospitalar produto médico produto medico saúde saude deficiente deficiência deficiencia prótese protese órtese ortese cadeira de rodas insumo hospitalar equipamento hospitalar"
+  },
+  {
+    "title": "Roraima: benefícios fiscais - Importação, exportação e comércio exterior",
+    "url": "estados/rr/legislacao/beneficios-fiscais.html#beneficio-importacao-exportacao-comercio-exterior",
+    "summary": "Imunidade, não incidência, suspensão, diferimento, desembaraço, importação por conta e ordem, exportação e regimes ligados ao exterior.",
+    "tags": "RR Roraima ICMS benefícios fiscais incentivo isenção redução crédito presumido Importação, exportação e comércio exterior importação importacao importado desembaraço desembaraco exportação exportacao exterior comércio exterior comercio exterior drawback zona franca área de livre comércio area de livre comercio fim específico de exportação fim especifico de exportacao"
+  },
+  {
+    "title": "Roraima: benefícios fiscais - Energia, combustíveis e infraestrutura",
+    "url": "estados/rr/legislacao/beneficios-fiscais.html#beneficio-energia-combustiveis-infraestrutura",
+    "summary": "Regras especiais envolvendo energia elétrica, combustíveis, gás, infraestrutura, obras, concessões e cadeias essenciais.",
+    "tags": "RR Roraima ICMS benefícios fiscais incentivo isenção redução crédito presumido Energia, combustíveis e infraestrutura energia elétrica energia eletrica combustível combustivel combustíveis combustiveis diesel gasolina etanol álcool alcool biodiesel biocombustível biocombustivel gás natural gas natural glp infraestrutura concessão concessao obra pública obra publica"
+  },
+  {
+    "title": "Roraima: benefícios fiscais - Atacado, comércio e centros de distribuição",
+    "url": "estados/rr/legislacao/beneficios-fiscais.html#beneficio-atacado-comercio-distribuicao",
+    "summary": "Regimes e benefícios para atacadistas, varejo, distribuição, centrais, comércio, carga efetiva e credenciamentos.",
+    "tags": "RR Roraima ICMS benefícios fiscais incentivo isenção redução crédito presumido Atacado, comércio e centros de distribuição atacadista atacado comércio atacadista comercio atacadista varejo varejista distribuição distribuicao distribuidor centro de distribuição centro de distribuicao central de distribuição central de distribuicao carga efetiva regime atacadista"
   },
   {
     "title": "Santa Catarina: legislação de ICMS em tela",
@@ -1656,6 +2964,66 @@ window.RJC_SEARCH = [
     "tags": "SC Santa Catarina Documentos, SPED e prova ICMS benefícios fiscais"
   },
   {
+    "title": "Santa Catarina: benefícios fiscais - Construção, minerais, madeira e materiais",
+    "url": "estados/sc/legislacao/beneficios-fiscais.html#beneficio-construcao-minerais-madeira",
+    "summary": "Tratamentos para construção civil, minerais, madeira, cimento, cerâmica, aço, materiais e cadeias extrativas.",
+    "tags": "SC Santa Catarina ICMS benefícios fiscais incentivo isenção redução crédito presumido Construção, minerais, madeira e materiais construção civil construcao civil cimento cerâmica ceramica madeira mineral minério minerio pedra areia brita aço aco ferro metalúrgica metalurgica material de construção material de construcao"
+  },
+  {
+    "title": "Santa Catarina: benefícios fiscais - Indústria, máquinas e equipamentos",
+    "url": "estados/sc/legislacao/beneficios-fiscais.html#beneficio-industria-maquinas-equipamentos",
+    "summary": "Benefícios de desenvolvimento industrial, máquinas, equipamentos, ativo imobilizado, bens de capital, implantação e modernização.",
+    "tags": "SC Santa Catarina ICMS benefícios fiscais incentivo isenção redução crédito presumido Indústria, máquinas e equipamentos indústria industria industrial industrialização industrializacao máquina maquina máquinas maquinas equipamento equipamentos bem de capital bens de capital ativo imobilizado implantação implantacao modernização modernizacao investimento parque industrial"
+  },
+  {
+    "title": "Santa Catarina: benefícios fiscais - Agropecuário, alimentos e cesta básica",
+    "url": "estados/sc/legislacao/beneficios-fiscais.html#beneficio-agro-alimentos",
+    "summary": "Benefícios que normalmente dependem de produto, destinação, produtor rural, insumo, industrialização ou política de abastecimento.",
+    "tags": "SC Santa Catarina ICMS benefícios fiscais incentivo isenção redução crédito presumido Agropecuário, alimentos e cesta básica agropecuário agropecuario produtor rural atividade rural insumo agropecuário insumo agropecuario fertilizante defensivo semente muda ração racao milho soja arroz feijão feijao leite carne frango peixe alimento cesta básica cesta basica"
+  },
+  {
+    "title": "Santa Catarina: benefícios fiscais - Importação, exportação e comércio exterior",
+    "url": "estados/sc/legislacao/beneficios-fiscais.html#beneficio-importacao-exportacao-comercio-exterior",
+    "summary": "Imunidade, não incidência, suspensão, diferimento, desembaraço, importação por conta e ordem, exportação e regimes ligados ao exterior.",
+    "tags": "SC Santa Catarina ICMS benefícios fiscais incentivo isenção redução crédito presumido Importação, exportação e comércio exterior importação importacao importado desembaraço desembaraco exportação exportacao exterior comércio exterior comercio exterior drawback zona franca área de livre comércio area de livre comercio fim específico de exportação fim especifico de exportacao"
+  },
+  {
+    "title": "Santa Catarina: benefícios fiscais - Eletrônicos, informática e telecomunicações",
+    "url": "estados/sc/legislacao/beneficios-fiscais.html#beneficio-eletronicos-informatica-telecom",
+    "summary": "Tratamentos ligados a equipamentos eletrônicos, bens de informática, telecomunicações, processamento de dados e cadeia tecnológica.",
+    "tags": "SC Santa Catarina ICMS benefícios fiscais incentivo isenção redução crédito presumido Eletrônicos, informática e telecomunicações eletrônico eletronico eletrônicos eletronicos informática informatica computador computadores software hardware processamento de dados telecomunicação telecomunicacao telecomunicações telefonia telefone celular aparelho equipamento de comunicação equipamento de comunicacao semicondutor componentes eletrônicos componentes eletronicos"
+  },
+  {
+    "title": "Santa Catarina: benefícios fiscais - Atacado, comércio e centros de distribuição",
+    "url": "estados/sc/legislacao/beneficios-fiscais.html#beneficio-atacado-comercio-distribuicao",
+    "summary": "Regimes e benefícios para atacadistas, varejo, distribuição, centrais, comércio, carga efetiva e credenciamentos.",
+    "tags": "SC Santa Catarina ICMS benefícios fiscais incentivo isenção redução crédito presumido Atacado, comércio e centros de distribuição atacadista atacado comércio atacadista comercio atacadista varejo varejista distribuição distribuicao distribuidor centro de distribuição centro de distribuicao central de distribuição central de distribuicao carga efetiva regime atacadista"
+  },
+  {
+    "title": "Santa Catarina: benefícios fiscais - Veículos, autopeças e transporte",
+    "url": "estados/sc/legislacao/beneficios-fiscais.html#beneficio-veiculos-autopecas-transporte",
+    "summary": "Benefícios e regimes para veículos, autopeças, transporte, frete, implementos, ônibus, caminhões e cadeias automotivas.",
+    "tags": "SC Santa Catarina ICMS benefícios fiscais incentivo isenção redução crédito presumido Veículos, autopeças e transporte veículo veiculo veículos veiculos automotor automóvel automovel autopeça autopeca peças pecas caminhão caminhao ônibus onibus motocicleta chassi renavam transporte transportador frete carga passageiro implemento rodoviário implemento rodoviario"
+  },
+  {
+    "title": "Santa Catarina: benefícios fiscais - Medicamentos, saúde e produtos hospitalares",
+    "url": "estados/sc/legislacao/beneficios-fiscais.html#beneficio-medicamentos-saude",
+    "summary": "Hipóteses de tratamento favorecido para medicamentos, produtos médico-hospitalares, saúde pública, deficiência e equipamentos assistivos.",
+    "tags": "SC Santa Catarina ICMS benefícios fiscais incentivo isenção redução crédito presumido Medicamentos, saúde e produtos hospitalares medicamento medicamentos farmacêutico farmaceutico hospital hospitalar produto médico produto medico saúde saude deficiente deficiência deficiencia prótese protese órtese ortese cadeira de rodas insumo hospitalar equipamento hospitalar"
+  },
+  {
+    "title": "Santa Catarina: benefícios fiscais - Energia, combustíveis e infraestrutura",
+    "url": "estados/sc/legislacao/beneficios-fiscais.html#beneficio-energia-combustiveis-infraestrutura",
+    "summary": "Regras especiais envolvendo energia elétrica, combustíveis, gás, infraestrutura, obras, concessões e cadeias essenciais.",
+    "tags": "SC Santa Catarina ICMS benefícios fiscais incentivo isenção redução crédito presumido Energia, combustíveis e infraestrutura energia elétrica energia eletrica combustível combustivel combustíveis combustiveis diesel gasolina etanol álcool alcool biodiesel biocombustível biocombustivel gás natural gas natural glp infraestrutura concessão concessao obra pública obra publica"
+  },
+  {
+    "title": "Santa Catarina: benefícios fiscais - Social, educação, cultura e entidades",
+    "url": "estados/sc/legislacao/beneficios-fiscais.html#beneficio-social-educacao-cultura-entidades",
+    "summary": "Benefícios vinculados a entidades, assistência, educação, cultura, livros, doações, pessoas com deficiência e políticas públicas.",
+    "tags": "SC Santa Catarina ICMS benefícios fiscais incentivo isenção redução crédito presumido Social, educação, cultura e entidades educação educacao ensino escola universidade cultura livro livros entidade filantrópica filantropica assistência social assistencia social doação doacao deficiência deficiencia pessoa com deficiência pessoa com deficiencia"
+  },
+  {
     "title": "São Paulo: legislação de ICMS em tela",
     "url": "estados/sp/legislacao/index.html",
     "summary": "RICMS, leis, anexos, benefícios fiscais, alíquotas, ST e prova documental de São Paulo.",
@@ -1690,6 +3058,66 @@ window.RJC_SEARCH = [
     "url": "estados/sp/legislacao/documentos-prova.html",
     "summary": "NF-e, CT-e, EFD, escrituração, cBenef quando aplicável, obrigações acessórias, comprovantes e memória de cálculo.",
     "tags": "SP São Paulo Documentos, SPED e prova ICMS benefícios fiscais"
+  },
+  {
+    "title": "São Paulo: benefícios fiscais - Construção, minerais, madeira e materiais",
+    "url": "estados/sp/legislacao/beneficios-fiscais.html#beneficio-construcao-minerais-madeira",
+    "summary": "Tratamentos para construção civil, minerais, madeira, cimento, cerâmica, aço, materiais e cadeias extrativas.",
+    "tags": "SP São Paulo ICMS benefícios fiscais incentivo isenção redução crédito presumido Construção, minerais, madeira e materiais construção civil construcao civil cimento cerâmica ceramica madeira mineral minério minerio pedra areia brita aço aco ferro metalúrgica metalurgica material de construção material de construcao"
+  },
+  {
+    "title": "São Paulo: benefícios fiscais - Agropecuário, alimentos e cesta básica",
+    "url": "estados/sp/legislacao/beneficios-fiscais.html#beneficio-agro-alimentos",
+    "summary": "Benefícios que normalmente dependem de produto, destinação, produtor rural, insumo, industrialização ou política de abastecimento.",
+    "tags": "SP São Paulo ICMS benefícios fiscais incentivo isenção redução crédito presumido Agropecuário, alimentos e cesta básica agropecuário agropecuario produtor rural atividade rural insumo agropecuário insumo agropecuario fertilizante defensivo semente muda ração racao milho soja arroz feijão feijao leite carne frango peixe alimento cesta básica cesta basica"
+  },
+  {
+    "title": "São Paulo: benefícios fiscais - Indústria, máquinas e equipamentos",
+    "url": "estados/sp/legislacao/beneficios-fiscais.html#beneficio-industria-maquinas-equipamentos",
+    "summary": "Benefícios de desenvolvimento industrial, máquinas, equipamentos, ativo imobilizado, bens de capital, implantação e modernização.",
+    "tags": "SP São Paulo ICMS benefícios fiscais incentivo isenção redução crédito presumido Indústria, máquinas e equipamentos indústria industria industrial industrialização industrializacao máquina maquina máquinas maquinas equipamento equipamentos bem de capital bens de capital ativo imobilizado implantação implantacao modernização modernizacao investimento parque industrial"
+  },
+  {
+    "title": "São Paulo: benefícios fiscais - Veículos, autopeças e transporte",
+    "url": "estados/sp/legislacao/beneficios-fiscais.html#beneficio-veiculos-autopecas-transporte",
+    "summary": "Benefícios e regimes para veículos, autopeças, transporte, frete, implementos, ônibus, caminhões e cadeias automotivas.",
+    "tags": "SP São Paulo ICMS benefícios fiscais incentivo isenção redução crédito presumido Veículos, autopeças e transporte veículo veiculo veículos veiculos automotor automóvel automovel autopeça autopeca peças pecas caminhão caminhao ônibus onibus motocicleta chassi renavam transporte transportador frete carga passageiro implemento rodoviário implemento rodoviario"
+  },
+  {
+    "title": "São Paulo: benefícios fiscais - Energia, combustíveis e infraestrutura",
+    "url": "estados/sp/legislacao/beneficios-fiscais.html#beneficio-energia-combustiveis-infraestrutura",
+    "summary": "Regras especiais envolvendo energia elétrica, combustíveis, gás, infraestrutura, obras, concessões e cadeias essenciais.",
+    "tags": "SP São Paulo ICMS benefícios fiscais incentivo isenção redução crédito presumido Energia, combustíveis e infraestrutura energia elétrica energia eletrica combustível combustivel combustíveis combustiveis diesel gasolina etanol álcool alcool biodiesel biocombustível biocombustivel gás natural gas natural glp infraestrutura concessão concessao obra pública obra publica"
+  },
+  {
+    "title": "São Paulo: benefícios fiscais - Importação, exportação e comércio exterior",
+    "url": "estados/sp/legislacao/beneficios-fiscais.html#beneficio-importacao-exportacao-comercio-exterior",
+    "summary": "Imunidade, não incidência, suspensão, diferimento, desembaraço, importação por conta e ordem, exportação e regimes ligados ao exterior.",
+    "tags": "SP São Paulo ICMS benefícios fiscais incentivo isenção redução crédito presumido Importação, exportação e comércio exterior importação importacao importado desembaraço desembaraco exportação exportacao exterior comércio exterior comercio exterior drawback zona franca área de livre comércio area de livre comercio fim específico de exportação fim especifico de exportacao"
+  },
+  {
+    "title": "São Paulo: benefícios fiscais - Eletrônicos, informática e telecomunicações",
+    "url": "estados/sp/legislacao/beneficios-fiscais.html#beneficio-eletronicos-informatica-telecom",
+    "summary": "Tratamentos ligados a equipamentos eletrônicos, bens de informática, telecomunicações, processamento de dados e cadeia tecnológica.",
+    "tags": "SP São Paulo ICMS benefícios fiscais incentivo isenção redução crédito presumido Eletrônicos, informática e telecomunicações eletrônico eletronico eletrônicos eletronicos informática informatica computador computadores software hardware processamento de dados telecomunicação telecomunicacao telecomunicações telefonia telefone celular aparelho equipamento de comunicação equipamento de comunicacao semicondutor componentes eletrônicos componentes eletronicos"
+  },
+  {
+    "title": "São Paulo: benefícios fiscais - Social, educação, cultura e entidades",
+    "url": "estados/sp/legislacao/beneficios-fiscais.html#beneficio-social-educacao-cultura-entidades",
+    "summary": "Benefícios vinculados a entidades, assistência, educação, cultura, livros, doações, pessoas com deficiência e políticas públicas.",
+    "tags": "SP São Paulo ICMS benefícios fiscais incentivo isenção redução crédito presumido Social, educação, cultura e entidades educação educacao ensino escola universidade cultura livro livros entidade filantrópica filantropica assistência social assistencia social doação doacao deficiência deficiencia pessoa com deficiência pessoa com deficiencia"
+  },
+  {
+    "title": "São Paulo: benefícios fiscais - Medicamentos, saúde e produtos hospitalares",
+    "url": "estados/sp/legislacao/beneficios-fiscais.html#beneficio-medicamentos-saude",
+    "summary": "Hipóteses de tratamento favorecido para medicamentos, produtos médico-hospitalares, saúde pública, deficiência e equipamentos assistivos.",
+    "tags": "SP São Paulo ICMS benefícios fiscais incentivo isenção redução crédito presumido Medicamentos, saúde e produtos hospitalares medicamento medicamentos farmacêutico farmaceutico hospital hospitalar produto médico produto medico saúde saude deficiente deficiência deficiencia prótese protese órtese ortese cadeira de rodas insumo hospitalar equipamento hospitalar"
+  },
+  {
+    "title": "São Paulo: benefícios fiscais - Atacado, comércio e centros de distribuição",
+    "url": "estados/sp/legislacao/beneficios-fiscais.html#beneficio-atacado-comercio-distribuicao",
+    "summary": "Regimes e benefícios para atacadistas, varejo, distribuição, centrais, comércio, carga efetiva e credenciamentos.",
+    "tags": "SP São Paulo ICMS benefícios fiscais incentivo isenção redução crédito presumido Atacado, comércio e centros de distribuição atacadista atacado comércio atacadista comercio atacadista varejo varejista distribuição distribuicao distribuidor centro de distribuição centro de distribuicao central de distribuição central de distribuicao carga efetiva regime atacadista"
   },
   {
     "title": "Sergipe: legislação de ICMS em tela",
@@ -1728,6 +3156,66 @@ window.RJC_SEARCH = [
     "tags": "SE Sergipe Documentos, SPED e prova ICMS benefícios fiscais"
   },
   {
+    "title": "Sergipe: benefícios fiscais - Construção, minerais, madeira e materiais",
+    "url": "estados/se/legislacao/beneficios-fiscais.html#beneficio-construcao-minerais-madeira",
+    "summary": "Tratamentos para construção civil, minerais, madeira, cimento, cerâmica, aço, materiais e cadeias extrativas.",
+    "tags": "SE Sergipe ICMS benefícios fiscais incentivo isenção redução crédito presumido Construção, minerais, madeira e materiais construção civil construcao civil cimento cerâmica ceramica madeira mineral minério minerio pedra areia brita aço aco ferro metalúrgica metalurgica material de construção material de construcao"
+  },
+  {
+    "title": "Sergipe: benefícios fiscais - Indústria, máquinas e equipamentos",
+    "url": "estados/se/legislacao/beneficios-fiscais.html#beneficio-industria-maquinas-equipamentos",
+    "summary": "Benefícios de desenvolvimento industrial, máquinas, equipamentos, ativo imobilizado, bens de capital, implantação e modernização.",
+    "tags": "SE Sergipe ICMS benefícios fiscais incentivo isenção redução crédito presumido Indústria, máquinas e equipamentos indústria industria industrial industrialização industrializacao máquina maquina máquinas maquinas equipamento equipamentos bem de capital bens de capital ativo imobilizado implantação implantacao modernização modernizacao investimento parque industrial"
+  },
+  {
+    "title": "Sergipe: benefícios fiscais - Agropecuário, alimentos e cesta básica",
+    "url": "estados/se/legislacao/beneficios-fiscais.html#beneficio-agro-alimentos",
+    "summary": "Benefícios que normalmente dependem de produto, destinação, produtor rural, insumo, industrialização ou política de abastecimento.",
+    "tags": "SE Sergipe ICMS benefícios fiscais incentivo isenção redução crédito presumido Agropecuário, alimentos e cesta básica agropecuário agropecuario produtor rural atividade rural insumo agropecuário insumo agropecuario fertilizante defensivo semente muda ração racao milho soja arroz feijão feijao leite carne frango peixe alimento cesta básica cesta basica"
+  },
+  {
+    "title": "Sergipe: benefícios fiscais - Veículos, autopeças e transporte",
+    "url": "estados/se/legislacao/beneficios-fiscais.html#beneficio-veiculos-autopecas-transporte",
+    "summary": "Benefícios e regimes para veículos, autopeças, transporte, frete, implementos, ônibus, caminhões e cadeias automotivas.",
+    "tags": "SE Sergipe ICMS benefícios fiscais incentivo isenção redução crédito presumido Veículos, autopeças e transporte veículo veiculo veículos veiculos automotor automóvel automovel autopeça autopeca peças pecas caminhão caminhao ônibus onibus motocicleta chassi renavam transporte transportador frete carga passageiro implemento rodoviário implemento rodoviario"
+  },
+  {
+    "title": "Sergipe: benefícios fiscais - Energia, combustíveis e infraestrutura",
+    "url": "estados/se/legislacao/beneficios-fiscais.html#beneficio-energia-combustiveis-infraestrutura",
+    "summary": "Regras especiais envolvendo energia elétrica, combustíveis, gás, infraestrutura, obras, concessões e cadeias essenciais.",
+    "tags": "SE Sergipe ICMS benefícios fiscais incentivo isenção redução crédito presumido Energia, combustíveis e infraestrutura energia elétrica energia eletrica combustível combustivel combustíveis combustiveis diesel gasolina etanol álcool alcool biodiesel biocombustível biocombustivel gás natural gas natural glp infraestrutura concessão concessao obra pública obra publica"
+  },
+  {
+    "title": "Sergipe: benefícios fiscais - Eletrônicos, informática e telecomunicações",
+    "url": "estados/se/legislacao/beneficios-fiscais.html#beneficio-eletronicos-informatica-telecom",
+    "summary": "Tratamentos ligados a equipamentos eletrônicos, bens de informática, telecomunicações, processamento de dados e cadeia tecnológica.",
+    "tags": "SE Sergipe ICMS benefícios fiscais incentivo isenção redução crédito presumido Eletrônicos, informática e telecomunicações eletrônico eletronico eletrônicos eletronicos informática informatica computador computadores software hardware processamento de dados telecomunicação telecomunicacao telecomunicações telefonia telefone celular aparelho equipamento de comunicação equipamento de comunicacao semicondutor componentes eletrônicos componentes eletronicos"
+  },
+  {
+    "title": "Sergipe: benefícios fiscais - Importação, exportação e comércio exterior",
+    "url": "estados/se/legislacao/beneficios-fiscais.html#beneficio-importacao-exportacao-comercio-exterior",
+    "summary": "Imunidade, não incidência, suspensão, diferimento, desembaraço, importação por conta e ordem, exportação e regimes ligados ao exterior.",
+    "tags": "SE Sergipe ICMS benefícios fiscais incentivo isenção redução crédito presumido Importação, exportação e comércio exterior importação importacao importado desembaraço desembaraco exportação exportacao exterior comércio exterior comercio exterior drawback zona franca área de livre comércio area de livre comercio fim específico de exportação fim especifico de exportacao"
+  },
+  {
+    "title": "Sergipe: benefícios fiscais - Social, educação, cultura e entidades",
+    "url": "estados/se/legislacao/beneficios-fiscais.html#beneficio-social-educacao-cultura-entidades",
+    "summary": "Benefícios vinculados a entidades, assistência, educação, cultura, livros, doações, pessoas com deficiência e políticas públicas.",
+    "tags": "SE Sergipe ICMS benefícios fiscais incentivo isenção redução crédito presumido Social, educação, cultura e entidades educação educacao ensino escola universidade cultura livro livros entidade filantrópica filantropica assistência social assistencia social doação doacao deficiência deficiencia pessoa com deficiência pessoa com deficiencia"
+  },
+  {
+    "title": "Sergipe: benefícios fiscais - Atacado, comércio e centros de distribuição",
+    "url": "estados/se/legislacao/beneficios-fiscais.html#beneficio-atacado-comercio-distribuicao",
+    "summary": "Regimes e benefícios para atacadistas, varejo, distribuição, centrais, comércio, carga efetiva e credenciamentos.",
+    "tags": "SE Sergipe ICMS benefícios fiscais incentivo isenção redução crédito presumido Atacado, comércio e centros de distribuição atacadista atacado comércio atacadista comercio atacadista varejo varejista distribuição distribuicao distribuidor centro de distribuição centro de distribuicao central de distribuição central de distribuicao carga efetiva regime atacadista"
+  },
+  {
+    "title": "Sergipe: benefícios fiscais - Medicamentos, saúde e produtos hospitalares",
+    "url": "estados/se/legislacao/beneficios-fiscais.html#beneficio-medicamentos-saude",
+    "summary": "Hipóteses de tratamento favorecido para medicamentos, produtos médico-hospitalares, saúde pública, deficiência e equipamentos assistivos.",
+    "tags": "SE Sergipe ICMS benefícios fiscais incentivo isenção redução crédito presumido Medicamentos, saúde e produtos hospitalares medicamento medicamentos farmacêutico farmaceutico hospital hospitalar produto médico produto medico saúde saude deficiente deficiência deficiencia prótese protese órtese ortese cadeira de rodas insumo hospitalar equipamento hospitalar"
+  },
+  {
     "title": "Tocantins: legislação de ICMS em tela",
     "url": "estados/to/legislacao/index.html",
     "summary": "RICMS, leis, anexos, benefícios fiscais, alíquotas, ST e prova documental de Tocantins.",
@@ -1762,6 +3250,66 @@ window.RJC_SEARCH = [
     "url": "estados/to/legislacao/documentos-prova.html",
     "summary": "NF-e, CT-e, EFD, escrituração, cBenef quando aplicável, obrigações acessórias, comprovantes e memória de cálculo.",
     "tags": "TO Tocantins Documentos, SPED e prova ICMS benefícios fiscais"
+  },
+  {
+    "title": "Tocantins: benefícios fiscais - Construção, minerais, madeira e materiais",
+    "url": "estados/to/legislacao/beneficios-fiscais.html#beneficio-construcao-minerais-madeira",
+    "summary": "Tratamentos para construção civil, minerais, madeira, cimento, cerâmica, aço, materiais e cadeias extrativas.",
+    "tags": "TO Tocantins ICMS benefícios fiscais incentivo isenção redução crédito presumido Construção, minerais, madeira e materiais construção civil construcao civil cimento cerâmica ceramica madeira mineral minério minerio pedra areia brita aço aco ferro metalúrgica metalurgica material de construção material de construcao"
+  },
+  {
+    "title": "Tocantins: benefícios fiscais - Agropecuário, alimentos e cesta básica",
+    "url": "estados/to/legislacao/beneficios-fiscais.html#beneficio-agro-alimentos",
+    "summary": "Benefícios que normalmente dependem de produto, destinação, produtor rural, insumo, industrialização ou política de abastecimento.",
+    "tags": "TO Tocantins ICMS benefícios fiscais incentivo isenção redução crédito presumido Agropecuário, alimentos e cesta básica agropecuário agropecuario produtor rural atividade rural insumo agropecuário insumo agropecuario fertilizante defensivo semente muda ração racao milho soja arroz feijão feijao leite carne frango peixe alimento cesta básica cesta basica"
+  },
+  {
+    "title": "Tocantins: benefícios fiscais - Indústria, máquinas e equipamentos",
+    "url": "estados/to/legislacao/beneficios-fiscais.html#beneficio-industria-maquinas-equipamentos",
+    "summary": "Benefícios de desenvolvimento industrial, máquinas, equipamentos, ativo imobilizado, bens de capital, implantação e modernização.",
+    "tags": "TO Tocantins ICMS benefícios fiscais incentivo isenção redução crédito presumido Indústria, máquinas e equipamentos indústria industria industrial industrialização industrializacao máquina maquina máquinas maquinas equipamento equipamentos bem de capital bens de capital ativo imobilizado implantação implantacao modernização modernizacao investimento parque industrial"
+  },
+  {
+    "title": "Tocantins: benefícios fiscais - Veículos, autopeças e transporte",
+    "url": "estados/to/legislacao/beneficios-fiscais.html#beneficio-veiculos-autopecas-transporte",
+    "summary": "Benefícios e regimes para veículos, autopeças, transporte, frete, implementos, ônibus, caminhões e cadeias automotivas.",
+    "tags": "TO Tocantins ICMS benefícios fiscais incentivo isenção redução crédito presumido Veículos, autopeças e transporte veículo veiculo veículos veiculos automotor automóvel automovel autopeça autopeca peças pecas caminhão caminhao ônibus onibus motocicleta chassi renavam transporte transportador frete carga passageiro implemento rodoviário implemento rodoviario"
+  },
+  {
+    "title": "Tocantins: benefícios fiscais - Eletrônicos, informática e telecomunicações",
+    "url": "estados/to/legislacao/beneficios-fiscais.html#beneficio-eletronicos-informatica-telecom",
+    "summary": "Tratamentos ligados a equipamentos eletrônicos, bens de informática, telecomunicações, processamento de dados e cadeia tecnológica.",
+    "tags": "TO Tocantins ICMS benefícios fiscais incentivo isenção redução crédito presumido Eletrônicos, informática e telecomunicações eletrônico eletronico eletrônicos eletronicos informática informatica computador computadores software hardware processamento de dados telecomunicação telecomunicacao telecomunicações telefonia telefone celular aparelho equipamento de comunicação equipamento de comunicacao semicondutor componentes eletrônicos componentes eletronicos"
+  },
+  {
+    "title": "Tocantins: benefícios fiscais - Importação, exportação e comércio exterior",
+    "url": "estados/to/legislacao/beneficios-fiscais.html#beneficio-importacao-exportacao-comercio-exterior",
+    "summary": "Imunidade, não incidência, suspensão, diferimento, desembaraço, importação por conta e ordem, exportação e regimes ligados ao exterior.",
+    "tags": "TO Tocantins ICMS benefícios fiscais incentivo isenção redução crédito presumido Importação, exportação e comércio exterior importação importacao importado desembaraço desembaraco exportação exportacao exterior comércio exterior comercio exterior drawback zona franca área de livre comércio area de livre comercio fim específico de exportação fim especifico de exportacao"
+  },
+  {
+    "title": "Tocantins: benefícios fiscais - Energia, combustíveis e infraestrutura",
+    "url": "estados/to/legislacao/beneficios-fiscais.html#beneficio-energia-combustiveis-infraestrutura",
+    "summary": "Regras especiais envolvendo energia elétrica, combustíveis, gás, infraestrutura, obras, concessões e cadeias essenciais.",
+    "tags": "TO Tocantins ICMS benefícios fiscais incentivo isenção redução crédito presumido Energia, combustíveis e infraestrutura energia elétrica energia eletrica combustível combustivel combustíveis combustiveis diesel gasolina etanol álcool alcool biodiesel biocombustível biocombustivel gás natural gas natural glp infraestrutura concessão concessao obra pública obra publica"
+  },
+  {
+    "title": "Tocantins: benefícios fiscais - Social, educação, cultura e entidades",
+    "url": "estados/to/legislacao/beneficios-fiscais.html#beneficio-social-educacao-cultura-entidades",
+    "summary": "Benefícios vinculados a entidades, assistência, educação, cultura, livros, doações, pessoas com deficiência e políticas públicas.",
+    "tags": "TO Tocantins ICMS benefícios fiscais incentivo isenção redução crédito presumido Social, educação, cultura e entidades educação educacao ensino escola universidade cultura livro livros entidade filantrópica filantropica assistência social assistencia social doação doacao deficiência deficiencia pessoa com deficiência pessoa com deficiencia"
+  },
+  {
+    "title": "Tocantins: benefícios fiscais - Atacado, comércio e centros de distribuição",
+    "url": "estados/to/legislacao/beneficios-fiscais.html#beneficio-atacado-comercio-distribuicao",
+    "summary": "Regimes e benefícios para atacadistas, varejo, distribuição, centrais, comércio, carga efetiva e credenciamentos.",
+    "tags": "TO Tocantins ICMS benefícios fiscais incentivo isenção redução crédito presumido Atacado, comércio e centros de distribuição atacadista atacado comércio atacadista comercio atacadista varejo varejista distribuição distribuicao distribuidor centro de distribuição centro de distribuicao central de distribuição central de distribuicao carga efetiva regime atacadista"
+  },
+  {
+    "title": "Tocantins: benefícios fiscais - Medicamentos, saúde e produtos hospitalares",
+    "url": "estados/to/legislacao/beneficios-fiscais.html#beneficio-medicamentos-saude",
+    "summary": "Hipóteses de tratamento favorecido para medicamentos, produtos médico-hospitalares, saúde pública, deficiência e equipamentos assistivos.",
+    "tags": "TO Tocantins ICMS benefícios fiscais incentivo isenção redução crédito presumido Medicamentos, saúde e produtos hospitalares medicamento medicamentos farmacêutico farmaceutico hospital hospitalar produto médico produto medico saúde saude deficiente deficiência deficiencia prótese protese órtese ortese cadeira de rodas insumo hospitalar equipamento hospitalar"
   },
   {
     "title": "Manual de Documentos Fiscais Eletronicos",
