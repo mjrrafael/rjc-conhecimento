@@ -1,0 +1,1153 @@
+Tabela de Códigos de Benefício Fiscal por CST
+CÓDIGO
+CST 00
+CST 10
+CST 20
+CST 30
+CST 40
+CST 41
+CST 50
+CST 51
+CST 53
+CST 60
+CST 70
+CST 90
+DT INÍCIO
+DT FINAL
+DESCRIÇÃO
+NULO
+SIM
+1/8/2018
+SEM PREENCHIMENTO do cBenef
+SEM CBENEF
+1/8/2018
+Item sem cBenef e UF exige cBenef para o CST
+PR800000
+01/08/2018
+Imunidade ou não incidência do imposto reconhecida judicialmente
+PR800001
+Não incidência de que trata o inciso I do “caput” do art. 3º do
+RICMS/2017
+PR800002
+Não incidência de que trata o inciso II do “caput” do art. 3º do
+PR800003
+Não incidência de que trata o inciso III do “caput” do art. 3º do
+PR800004
+Não incidência de que trata o inciso IV do “caput” do art. 3º do
+PR800005
+Não incidência de que trata o inciso V do “caput” do art. 3º do
+PR800006
+Não incidência de que trata o inciso VI do “caput” do art. 3º do
+PR800007
+Não incidência de que trata o inciso VII do “caput” do art. 3º do
+PR800008
+Não incidência de que trata o inciso VIII do “caput” do art. 3º do
+PR800009
+Não incidência de que trata o inciso IX do “caput” do art. 3º do
+PR800010
+Não incidência de que trata o inciso X do “caput” do art. 3º do
+PR800011
+Não incidência de que trata o inciso XI do “caput” do art. 3º do
+PR800012
+Não incidência de que trata o inciso XIII do “caput” do art. 3º do
+PR800013
+Não incidência de que trata o inciso XIV do “caput” do art. 3º do
+PR800014
+Não incidência de que trata o inciso XV do “caput” do art. 3º do
+
+PR800015
+Não incidência de que trata o inciso I do parágrafo único do art. 3º
+do RICMS/2017
+PR800016
+Não incidência de que trata o inciso II do parágrafo único do art. 3º
+PR800017
+Não incidência de que trata o inciso XII do “caput” do art. 3º do
+PR800018
+09/09/2019
+Sem destaque do ICMS conforme art. 140 do RICMS/2017
+PR800019
+Sem destaque do ICMS conforme inciso II do § 3º do art. 237 e art.
+13 do Anexo VIII do RICMS/2017
+PR800020
+Sem destaque do ICMS conforme § 5º do art. 237 do RICMS/2017
+PR800021
+Sem destaque do ICMS conforme alínea 'b' do inciso I do § 11 do
+art. 237 do RICMS/2017
+PR800022
+Sem destaque do ICMS conforme § 2º do art. 395 do RICMS/2017
+PR800023
+Sem destaque do ICMS conforme
+inciso I do art. 397
+do
+PR800024
+Sem destaque do ICMS conforme § 1º do art. 411 do RICMS/2017
+PR800025
+Sem destaque do ICMS conforme inciso II do § 2º do art. 411 do
+PR800026
+Sem
+destaque do ICMS conforme inciso II do art. 415 do
+PR800027
+Sem
+destaque do ICMS conforme inciso II do art. 416 do
+PR800028
+Sem destaque do ICMS conforme art. 419 do RICMS/2017
+PR800029
+Sem destaque do ICMS conforme alínea 'b' do inciso I do art. 425
+PR800030
+Sem destaque do ICMS conforme
+inciso II do art. 425
+do
+PR800031
+Sem destaque do ICMS conforme alínea 'a' do inciso I do art. 430
+PR800032
+Sem destaque do ICMS conforme inciso II do art. 430
+do
+PR800033
+Sem destaque do ICMS conforme art. 439 do RICMS/2017
+PR800034
+Sem destaque do ICMS conforme § 3º do art. 440 do RICMS/2017
+PR800035
+Sem destaque do ICMS conforme art. 472 do RICMS/2017
+PR800036
+Sem destaque do ICMS conforme inciso I do art. 497 e alínea 'a' do
+inciso II do art. 499 do RICMS/2017
+PR800037
+Sem destaque do ICMS conforme alínea 'a' do inciso I do § 1º art.
+497 e alínea 'c' do inciso II do art. 499 do RICMS/2017
+PR800038
+Sem destaque do ICMS conforme alínea 'b' do inciso II do art. 499
+e inciso II do art. 499-A do RICMS/2017
+PR800039
+Sem destaque do ICMS conforme art. 518 do RICMS/2017
+PR800040
+Sem
+destaque do ICMS
+conforme inciso
+I
+do art.
+518 do
+PR800041
+Sem destaque do ICMS conforme arts. 538 e 539 do RICMS/2017
+PR800042
+Sem destaque do ICMS conforme art. 578, 'caput' do RICMS/2017
+PR800043
+Sem destaque do ICMS conforme art. 578, § 4º, inciso II, item 2, do
+PR800044
+Sem destaque do ICMS conforme Anexo VIII, arts. 8º, inciso I,
+alínea 'c', e 9º, inciso I, do RICMS/2017
+PR800045
+Sem destaque do ICMS conforme Anexo IV, Subanexo II, arts. 31 e
+33,do RICMS/2017
+PR800046
+01/08/2022
+Sem destaque do ICMS conforme Anexo IV, Subanexo I, art.14, do
+PR800047
+01/12/2019
+Imunidade por se tratar de operação equiparada a exportação,
+descrita no item 50 do Anexo V do RICMS/2017, conforme
+Consulta nº 052/2018 do Setor Consultivo da REPR.
+PR800048
+01/07/2022
+Não incidência de que trata o inciso XVI do “caput” do art. 3º do
+PR809997
+Não incidência reconhecida pelo STF em decisão com efeito
+vinculanteT
+PR809998
+Operação ou prestação não tributada sem código específico
+PR809999
+Não Incidência prevista em regime especial e/ou programa de
+incentivo
+PR810000
+Isenção do pagamento do imposto reconhecida judicialmente
+PR810001
+Isenção prevista no item 1 do Anexo V do RICMS/2017
+PR810002
+Isenção prevista no item 2 do Anexo V do RICMS/2017
+PR810003
+Isenção prevista no item 3 do Anexo V do RICMS/2017
+PR810004
+Isenção prevista no item 4 do Anexo V do RICMS/2017
+PR810005
+Isenção prevista no item 5 do Anexo V do RICMS/2017
+PR810006
+Isenção prevista no item 6 do Anexo V do RICMS/2017
+PR810007
+Isenção prevista no item 7 do Anexo V do RICMS/2017
+PR810008
+Isenção prevista no item 8 do Anexo V do RICMS/2017
+PR810009
+Isenção prevista no item 9 do Anexo V do RICMS/2017
+PR810010
+Isenção prevista no item 10 do Anexo V do RICMS/2017
+PR810011
+Isenção prevista no item 11 do Anexo V do RICMS/2017
+PR810012
+Isenção prevista no item 12 do Anexo V do RICMS/2017
+PR810013
+Isenção prevista no item 13 do Anexo V do RICMS/2017
+PR810014
+Isenção prevista no item 14 do Anexo V do RICMS/2017
+PR810015
+Isenção prevista no item 15 do Anexo V do RICMS/2017
+PR810016
+Isenção prevista no item 16 do Anexo V do RICMS/2017
+PR810017
+Isenção prevista no item 17 do Anexo V do RICMS/2017
+PR810018
+Isenção prevista no item 18 do Anexo V do RICMS/2017
+PR810019
+Isenção prevista no item 19 do Anexo V do RICMS/2017
+PR810020
+Isenção prevista no item 20 do Anexo V do RICMS/2017
+PR810021
+Isenção prevista no item 21 do Anexo V do RICMS/2017 e no art.
+1º da Lei nº 14.978/2005
+PR810022
+Isenção prevista no item 22 do Anexo V do RICMS/2017
+PR810023
+Isenção prevista no item 23 do Anexo V do RICMS/2017
+PR810024
+01/05/2019
+Isenção prevista no item 24 do Anexo V do RICMS/2017
+PR810025
+01/06/2023
+Isenção prevista no item 25 do Anexo V do RICMS/2017
+PR810026
+Isenção prevista no item 26 do Anexo V do RICMS/2017
+PR810027
+Isenção prevista no item 27 do Anexo V do RICMS/2017
+PR810028
+Isenção prevista no item 28 do Anexo V do RICMS/2017
+PR810029
+Isenção prevista no item 29 do Anexo V do RICMS/2017
+PR810030
+Isenção prevista no item 30 do Anexo V do RICMS/2017
+PR810031
+Isenção prevista no item 31 do Anexo V do RICMS/2017
+PR810032
+Isenção prevista no item 32 do Anexo V do RICMS/2017
+PR810033
+Isenção prevista no item 33 do Anexo V do RICMS/2017
+PR810034
+Isenção prevista no item 34 do Anexo V do RICMS/2017
+PR810035
+Isenção prevista no item 35 do Anexo V do RICMS/2017
+PR810036
+Isenção prevista no item 36 do Anexo V do RICMS/2017
+PR810037
+Isenção prevista no item 37 do Anexo V do RICMS/2017 e no art.
+1º da Lei nº 14.773/2005
+PR810038
+Isenção prevista no item 38 do Anexo V do RICMS/2017
+PR810039
+Isenção prevista no item 39 do Anexo V do RICMS/2017
+PR810040
+Isenção prevista no item 40 do Anexo V do RICMS/2017
+PR810041
+Isenção prevista no item 41 do Anexo V do RICMS/2017
+PR810042
+Isenção prevista no item 42 do Anexo V do RICMS/2017
+PR810043
+Isenção prevista no item 43 do Anexo V do RICMS/2017
+PR810044
+Isenção prevista no item 44 do Anexo V do RICMS/2017
+PR810045
+Isenção prevista no item 45 do Anexo V do RICMS/2017
+PR810046
+Isenção prevista no item 46 do Anexo V do RICMS/2017
+PR810047
+Isenção prevista no item 47 do Anexo V do RICMS/2017
+PR810048
+Isenção prevista no item 48 do Anexo V do RICMS/2017
+PR810049
+Isenção prevista no item 49 do Anexo V do RICMS/2017
+PR810050
+Isenção prevista no item 50 do Anexo V do RICMS/2017
+PR810051
+Isenção prevista no item 51 do Anexo V do RICMS/2017
+PR810052
+Isenção prevista no item 52 do Anexo V do RICMS/2017
+PR810053
+Isenção prevista no item 53 do Anexo V do RICMS/2017
+PR810054
+Isenção prevista no item 54 do Anexo V do RICMS/2017
+PR810055
+Isenção prevista no item 55 do Anexo V do RICMS/2017
+PR810056
+Isenção prevista no item 56 do Anexo V do RICMS/2017
+PR810057
+Isenção prevista no item 57 do Anexo V do RICMS/2017
+PR810058
+01/01/2019
+Isenção prevista no item 58 do Anexo V do RICMS/2017 e no art.
+1º da Lei nº 14.959/2005
+PR810059
+Isenção prevista no item 59 do Anexo V do RICMS/2017
+PR810060
+Isenção prevista no item 60 do Anexo V do RICMS/2017
+PR810061
+Isenção prevista no item 61 do Anexo V do RICMS/2017
+PR810062
+Isenção prevista no item 62 do Anexo V do RICMS/2017
+PR810063
+Isenção prevista no item 63 do Anexo V do RICMS/2017
+PR810064
+Isenção prevista no item 64 do Anexo V do RICMS/2017
+PR810065
+Isenção prevista no item 65 do Anexo V do RICMS/2017
+PR810066
+Isenção prevista no item 66 do Anexo V do RICMS/2017
+PR810067
+Isenção prevista no item 67 do Anexo V do RICMS/2017
+PR810068
+Isenção prevista no item 68 do Anexo V do RICMS/2017
+PR810069
+Isenção prevista no item 69 do Anexo V do RICMS/2017
+PR810070
+Isenção prevista no item 70 do Anexo V do RICMS/2017
+PR810071
+Isenção prevista no item 71 do Anexo V do RICMS/2017
+PR810072
+Isenção prevista no item 72 do Anexo V do RICMS/2017
+PR810073
+Isenção prevista no item 73 do Anexo V do RICMS/2017
+PR810074
+Isenção prevista no item 74 do Anexo V do RICMS/2017
+PR810075
+Isenção prevista no item 75 do Anexo V do RICMS/2017
+PR810076
+Isenção prevista no item 76 do Anexo V do RICMS/2017
+PR810077
+Isenção prevista no item 77 do Anexo V do RICMS/2017
+PR810078
+Isenção prevista no item 78 do Anexo V do RICMS/2017
+PR810079
+Isenção prevista no item 79 do Anexo V do RICMS/2017
+PR810080
+Isenção prevista no item 80 do Anexo V do RICMS/2017 e no art.
+1º da Lei nº 14.586/2004
+PR810081
+Isenção prevista no item 81 do Anexo V do RICMS/2017
+PR810082
+Isenção prevista no item 82 do Anexo V do RICMS/2017
+PR810083
+Isenção prevista no item 83 do Anexo V do RICMS/2017
+PR810084
+Isenção prevista no item 84 do Anexo V do RICMS/2017
+PR810085
+Isenção prevista no item 85 do Anexo V do RICMS/2017
+PR810086
+02/082018
+Isenção prevista no item 86 do Anexo V do RICMS/2017
+PR810087
+Isenção prevista no item 87 do Anexo V do RICMS/2017
+PR810088
+Isenção prevista no item 88 do Anexo V do RICMS/2017
+PR810089
+Isenção prevista no item 89 do Anexo V do RICMS/2017
+PR810090
+Isenção prevista no item 90 do Anexo V do RICMS/2017
+PR810091
+Isenção prevista no item 91 do Anexo V do RICMS/2017
+PR810092
+Isenção prevista no item 92 do Anexo V do RICMS/2017
+PR810093
+Isenção prevista no item 93 do Anexo V do RICMS/2017
+PR810094
+Isenção prevista no item 94 do Anexo V do RICMS/2017
+PR810095
+Isenção prevista no item 95 do Anexo V do RICMS/2017
+PR810096
+Isenção prevista no item 96 do Anexo V do RICMS/2017
+PR810097
+Isenção prevista no item 97 do Anexo V do RICMS/2017
+PR810098
+Isenção prevista no item 98 do Anexo V do RICMS/2017
+PR810099
+Isenção prevista no item 99 do Anexo V do RICMS/2017
+PR810100
+Isenção prevista no item 100 do Anexo V do RICMS/2017
+PR810101
+01/01/2024
+Isenção prevista no item 101 do Anexo V do RICMS/2017
+PR810102
+Isenção prevista no item 102 do Anexo V do RICMS/2017
+PR810103
+Isenção prevista no item 103 do Anexo V do RICMS/2017
+PR810104
+Isenção prevista no item 104 do Anexo V do RICMS/2017
+PR810105
+Isenção prevista no item 105 do Anexo V do RICMS/2017
+PR810106
+Isenção prevista no item 106 do Anexo V do RICMS/2017
+PR810107
+Isenção prevista no item 107 do Anexo V do RICMS/2017
+PR810108
+Isenção prevista no item 108 do Anexo V do RICMS/2017
+PR810109
+Isenção prevista no item 109 do Anexo V do RICMS/2017
+PR810110
+Isenção prevista no item 110 do Anexo V do RICMS/2017 e no art.
+1º da Lei nº 15.457/2007
+PR810111
+30/09/2019
+Isenção prevista no item 111 do Anexo V do RICMS/2017 e no art.
+1º da Lei nº 17.557/2013
+PR810112
+Isenção prevista no item 112 do Anexo V do RICMS/2017
+PR810113
+Isenção prevista no item 113 do Anexo V do RICMS/2017
+PR810114
+Isenção prevista no item 114 do Anexo V do RICMS/2017
+PR810115
+Isenção prevista no item 115 do Anexo V do RICMS/2017
+PR810116
+Isenção prevista no item 116 do Anexo V do RICMS/2017
+PR810117
+Isenção prevista no item 117 do Anexo V do RICMS/2017
+PR810118
+Isenção prevista no item 118 do Anexo V do RICMS/2017
+PR810119
+Isenção prevista no item 119 do Anexo V do RICMS/2017
+PR810120
+Isenção prevista no item 120 do Anexo V do RICMS/2017
+PR810121
+Isenção prevista no item 121 do Anexo V do RICMS/2017
+PR810122
+Isenção prevista no item 122 do Anexo V do RICMS/2017
+PR810123
+Isenção prevista no item 123 do Anexo V do RICMS/2017
+PR810124
+Isenção prevista no item 124 do Anexo V do RICMS/2017
+PR810125
+01/05/2023
+Isenção prevista no item 125 do Anexo V do RICMS/2017
+PR810126
+Isenção prevista no item 126 do Anexo V do RICMS/2017
+PR810127
+Isenção prevista no item 127 do Anexo V do RICMS/2017
+PR810128
+Isenção prevista no item 128 do Anexo V do RICMS/2017
+PR810129
+Isenção prevista no item 129 do Anexo V do RICMS/2017
+PR810130
+Isenção prevista no item 130 do Anexo V do RICMS/2017
+PR810131
+Isenção prevista no item 131 do Anexo V do RICMS/2017
+PR810132
+Isenção prevista no item 132 do Anexo V do RICMS/2017
+PR810133
+Isenção prevista no item 133 do Anexo V do RICMS/2017
+PR810134
+Isenção prevista no item 134 do Anexo V do RICMS/2017
+PR810135
+01/01/2019
+Isenção prevista no item 135 do Anexo V do RICMS/2017
+PR810136
+Isenção prevista no item 136 do Anexo V do RICMS/2017
+PR810137
+Isenção prevista no item 137 do Anexo V do RICMS/2017
+PR810138
+01/01/2021
+Isenção prevista no item 138 do Anexo V do RICMS/2017
+PR810139
+Isenção prevista no item 139 do Anexo V do RICMS/2017
+PR810140
+Isenção prevista no item 140 do Anexo V do RICMS/2017
+PR810141
+Isenção prevista no item 141 do Anexo V do RICMS/2017
+PR810142
+Isenção prevista no item 142 do Anexo V do RICMS/2017
+PR810143
+Isenção prevista no item 143 do Anexo V do RICMS/2017
+PR810144
+Isenção prevista no item 144 do Anexo V do RICMS/2017
+PR810145
+01/01/2021
+Isenção prevista no item 145 do Anexo V do RICMS/2017
+PR810146
+Isenção prevista no item 146 do Anexo V do RICMS/2017
+PR810147
+Isenção prevista no item 147 do Anexo V do RICMS/2017
+PR810148
+Isenção prevista no item 148 do Anexo V do RICMS/2017
+PR810149
+Isenção prevista no item 149 do Anexo V do RICMS/2017
+PR810150
+Isenção prevista no item 150 do Anexo V do RICMS/2017
+PR810151
+Isenção prevista no item 151 do Anexo V do RICMS/2017
+PR810152
+Isenção prevista no item 152 do Anexo V do RICMS/2017
+PR810153
+Isenção prevista no item 153 do Anexo V do RICMS/2017
+PR810154
+Isenção prevista no item 154 do Anexo V do RICMS/2017
+PR810155
+Isenção prevista no item 155 do Anexo V do RICMS/2017
+PR810156
+Isenção prevista no item 156 do Anexo V do RICMS/2017
+PR810157
+Isenção prevista no item 157 do Anexo V do RICMS/2017
+PR810158
+Isenção prevista no item 158 do Anexo V do RICMS/2017
+PR810159
+Isenção prevista no item 159 do Anexo V do RICMS/2017
+PR810160
+Isenção prevista no item 160 do Anexo V do RICMS/2017
+PR810161
+Isenção prevista no item 161 do Anexo V do RICMS/2017
+PR810162
+Isenção prevista no item 162 do Anexo V do RICMS/2017
+PR810163
+Isenção prevista no item 163 do Anexo V do RICMS/2017
+PR810164
+Isenção prevista no item 164 do Anexo V do RICMS/2017
+PR810165
+Isenção prevista no item 165 do Anexo V do RICMS/2017
+PR810166
+Isenção prevista no item 166 do Anexo V do RICMS/2017
+PR810167
+Isenção prevista no item 167 do Anexo V do RICMS/2017
+PR810168
+Isenção prevista no item 168 do Anexo V do RICMS/2017
+PR810169
+Isenção prevista no item 169 do Anexo V do RICMS/2017
+PR810170
+Isenção prevista no item 170 do Anexo V do RICMS/2017
+PR810171
+Isenção prevista no item 171 do Anexo V do RICMS/2017
+PR810172
+Isenção prevista no item 172 do Anexo V do RICMS/2017
+PR810173
+Isenção prevista no item 173 do Anexo V do RICMS/2017
+PR810174
+Isenção prevista no item 174 do Anexo V do RICMS/2017
+PR810175
+Isenção prevista no item 175 do Anexo V do RICMS/2017
+PR810176
+01/12/2018
+Isenção prevista no item 58-A do Anexo V do RICMS/2017
+PR810177
+01/09/2018
+Isenção prevista no item 104-A do Anexo V do RICMS/2017 e no
+art. 1º da Lei nº 19.595/2018
+PR810178
+01/12/2018
+Isenção prevista no item 108-A do Anexo V do RICMS/2017
+PR810179
+01/12/2018
+Isenção prevista no item 125-A do Anexo V do RICMS/2017
+PR810180
+02/02/2018
+Isenção prevista no item 143-A do Anexo V do RICMS/2017
+PR810181
+Isenção prevista no item 143-B do Anexo V do RICMS/2017
+PR810182
+Isenção prevista no item 143-C do Anexo V do RICMS/2017
+PR810183
+01/09/2018
+Isenção prevista no item 144-A do Anexo V do RICMS/2017
+PR810184
+Isenção prevista no §3º do art. 549 do RICMS/2017
+PR810185
+16/02/2023
+Isenção prevista no item 1-A do Anexo V do RICMS/2017
+PR810186
+Isenção prevista no item 5-A do Anexo V do RICMS/2017
+PR810187
+Isenção prevista no item 23-A do Anexo V do RICMS/2017
+PR810188
+Isenção prevista no item 84-A do Anexo V do RICMS/2017
+PR810189
+Isenção prevista no item 138-A do Anexo V do RICMS/2017
+PR810190
+Isenção prevista no item 151-A do Anexo V do RICMS/2017
+PR810191
+Isenção prevista no item 164-A do Anexo V do RICMS/2017
+PR810192
+Isenção prevista no item 167-A do Anexo V do RICMS/2017
+PR810193
+Isenção prevista no item 174-A do Anexo V do RICMS/2017
+PR810194
+Isenção prevista no item 174-B do Anexo V do RICMS/2017
+PR810195
+Isenção prevista no item 174-C do Anexo V do RICMS/2017
+PR810196
+Isenção prevista no item 174-D do Anexo V do RICMS/2017
+PR810197
+Isenção prevista no item 174-E do Anexo V do RICMS/2017
+PR810198
+14/08/2024
+Isenção prevista no item 5-B do Anexo V do RICMS/2017
+PR810199
+25/07/2024
+Isenção prevista no item 19-A do Anexo V do RICMS/2017
+PR810200
+01/01/2024
+Isenção prevista no item 79-A do Anexo V do RICMS/2017
+PR810201
+30/09/2024
+Isenção prevista no item 154-A do Anexo V do RICMS/2017
+PR810202
+10/04/2025
+Isenção prevista no item 13-A do Anexo V do RICMS/2017
+PR810203
+06/10/2025
+Isenção prevista no item 58-B do Anexo V do RICMS/2017
+PR819998
+Isenção sem código específico
+PR819999
+Isenção prevista em regime especial e/ou programa de incentivo
+PR820000
+Redução de base de cálculo do imposto reconhecida judicialmente
+PR820001
+Redução de base de cálculo prevista no item 1 do Anexo VI do
+PR820002
+Redução de base de cálculo prevista no item 2 do Anexo VI do
+PR820003
+Redução de base de cálculo prevista no item 3 do Anexo VI do
+PR820004
+Redução de base de cálculo prevista no item 4 do Anexo VI do
+PR820005
+Redução de base de cálculo prevista no item 5 do Anexo VI do
+PR820006
+Redução de base de cálculo prevista no item 6 do Anexo VI do
+PR820007
+Redução de base de cálculo prevista no item 7 do Anexo VI do
+RICMS/2017 e no art. 1º da Lei nº 15.182/2006
+PR820008
+Redução de base de cálculo prevista no item 8 do Anexo VI do
+PR820009
+Redução de base de cálculo prevista no item 9 do Anexo VI do
+PR820010
+Redução de base de cálculo prevista no item 10 do Anexo VI do
+PR820011
+Redução de base de cálculo prevista no item 11 do Anexo VI do
+PR820012
+Redução de base de cálculo prevista no item 12 do Anexo VI do
+PR820013
+Redução de base de cálculo prevista no item 13 do Anexo VI do
+PR820014
+Redução de base de cálculo prevista no item 14 do Anexo VI do
+PR820015
+Redução de base de cálculo prevista no item 15 do Anexo VI do
+PR820016
+Redução de base de cálculo prevista no item 16 do Anexo VI do
+PR820017
+Redução de base de cálculo prevista no item 17 do Anexo VI do
+PR820018
+Redução de base de cálculo prevista no item 18 do Anexo VI do
+RICMS/2017 e no inciso V do art. 5º da Lei nº 13.212/2001
+PR820019
+Redução de base de cálculo prevista no item 19 do Anexo VI do
+PR820020
+Redução de base de cálculo prevista no item 20 do Anexo VI do
+PR820021
+Redução de base de cálculo prevista no item 21 do Anexo VI do
+PR820022
+Redução de base de cálculo prevista no item 22 do Anexo VI do
+PR820023
+Redução de base de cálculo prevista no item 23 do Anexo VI do
+PR820024
+Redução de base de cálculo prevista no item 24 do Anexo VI do
+PR820025
+Redução de base de cálculo prevista no item 25 do Anexo VI do
+PR820026
+Redução de base de cálculo prevista no item 26 do Anexo VI do
+PR820027
+Redução de base de cálculo prevista no item 27 do Anexo VI do
+PR820028
+Redução de base de cálculo prevista no item 28 do Anexo VI do
+PR820029
+Redução de base de cálculo prevista no item 29 do Anexo VI do
+PR820030
+Redução de base de cálculo prevista no item 30 do Anexo VI do
+PR820031
+Redução de base de cálculo prevista no item 31 do Anexo VI do
+PR820032
+Redução de base de cálculo prevista no item 32 do Anexo VI do
+PR820033
+Redução de base de cálculo prevista no item 33 do Anexo VI do
+PR820034
+Redução de base de cálculo prevista no item 34 do Anexo VI do
+PR820035
+Redução de base de cálculo prevista no item 35 do Anexo VI do
+PR820036
+Redução de base de cálculo prevista no item 36 do Anexo VI do
+PR820037
+Redução de base de cálculo prevista no item 37 do Anexo VI do
+PR820038
+Redução de base de cálculo prevista no item 38 do Anexo VI do
+PR820039
+Redução de base de cálculo prevista no item 39 do Anexo VI do
+PR820040
+Redução de base de cálculo prevista no item 40 do Anexo VI do
+PR820041
+01/11/2021
+Redução de base de cálculo prevista no item 41 do Anexo VI do
+PR820042
+Redução de base de cálculo prevista no item 8-A do Anexo VI do
+PR820043
+02/08/2018
+Redução de base de cálculo prevista no item 36-A do Anexo VI do
+PR820044
+01/11/2018
+17/02/2025
+Redução de base de cálculo do imposto prevista no inciso II, do art.
+5º da Lei 13.212/2001
+PR820045
+17/02/2025
+Redução de base de cálculo do imposto prevista no inciso IV, do
+art. 5º da Lei 13.212/2001
+PR820046
+Redução de base de cálculo prevista no item 32-A do Anexo VI do
+PR820047
+01/01/2019
+Redução de base de cálculo prevista no inciso VI, do art. 3º da Lei
+13.214/2001
+PR820048
+Redução de base de cálculo prevista no inciso I do art. 5º da Lei
+13.212/2001
+PR820049
+Redução de base de cálculo prevista no inciso II do art. 5º da Lei
+13.212/2001
+PR820050
+Redução de base de cálculo prevista no inciso IV do art. 5º da Lei
+13.212/2001
+PR820051
+Redução de base de cálculo prevista no inciso III do art. 3º da Lei
+PR820052
+Redução de base de cálculo prevista no inciso V do art. 3º da Lei
+PR820053
+Redução de base de cálculo prevista no inciso VI do art. 3º da Lei
+PR820054
+Redução de base de cálculo prevista na alínea 'c' do art. 4º da Lei
+PR820055
+Redução de base de cálculo prevista no art. 3º da Lei 13.332/2001
+PR820056
+Redução de base de cálculo prevista no art. 3º da Lei 14.747/2005
+PR820057
+Redução da base de cálculo prevista no art. 37 do RICMS/2017
+PR820058
+01/10/2019
+18/05/2023
+Redução da base de cálculo prevista no item 26-A do Anexo VI do
+PR820059
+Redução da base de cálculo prevista no item 36-B do Anexo VI do
+PR820060
+09/01/2023
+Redução da base de cálculo prevista no item 16-A do Anexo VI do
+PR820061
+45383
+Redução da base de cálculo prevista no item 11-A do Anexo VI do
+PR820062
+Redução da base de cálculo prevista no item 15-A do Anexo VI do
+PR820063
+Redução da base de cálculo prevista no item 36-C do Anexo VI do
+PR820064
+16/08/2023
+Redução da base de cálculo prevista no item 32-B do Anexo VI do
+PR820065
+Redução da base de cálculo prevista no item 2-A do Anexo VI do
+PR820066
+01/01/2024
+Redução da base de cálculo prevista no item 5-A do Anexo VI do
+PR829998
+Redução da base de cálculo sem código específico
+PR829999
+Redução de base de cálculo prevista em regime especial e/ou
+programa de incentivo
+PR830000
+Diferimento do pagamento do imposto reconhecido judicialmente
+PR830001
+Diferimento previsto no inciso I do “caput” do art. 28 do Anexo VIII
+PR830002
+Diferimento previsto no inciso II do “caput” do art. 28 do Anexo VIII
+PR830003
+13/03/2023
+Diferimento previsto no inciso III do “caput” do art. 28 do Anexo VIII
+PR830004
+13/03/2023
+Diferimento previsto no inciso IV do “caput” do art. 28 do Anexo VIII
+PR830005
+Diferimento previsto no item 1 do “caput” do art. 31 do Anexo VIII
+PR830006
+Diferimento previsto no item 2 do “caput” do art. 31 do Anexo VIII
+PR830007
+Diferimento previsto no item 3 do “caput” do art. 31 do Anexo VIII
+PR830008
+Diferimento previsto no subitem 4.1 do “caput” do art. 31 do Anexo
+VIII do RICMS/2017
+PR830009
+Diferimento previsto no subitem 4.2 do “caput” do art. 31 do Anexo
+PR830010
+Diferimento previsto no item 5 do “caput” do art. 31 do Anexo VIII
+PR830011
+Diferimento previsto no item 6 do “caput” do art. 31 do Anexo VIII
+PR830012
+Diferimento previsto no item 7 do “caput” do art. 31 do Anexo VIII
+PR830013
+Diferimento previsto no item 8 do “caput” do art. 31 do Anexo VIII
+PR830014
+Diferimento previsto no item 9 do “caput” do art. 31 do Anexo VIII
+PR830015
+Diferimento previsto no item 10 do “caput” do art. 31 do Anexo VIII
+PR830016
+Diferimento previsto no item 11 do “caput” do art. 31 do Anexo VIII
+PR830017
+Diferimento previsto no item 12 do “caput” do art. 31 do Anexo VIII
+PR830018
+Diferimento previsto no item 13 do “caput” do art. 31 do Anexo VIII
+PR830019
+Diferimento previsto no item 14 do “caput” do art. 31 do Anexo VIII
+PR830020
+Diferimento previsto no item 15 do “caput” do art. 31 do Anexo VIII
+PR830021
+Diferimento previsto no item 16 do “caput” do art. 31 do Anexo VIII
+PR830022
+Diferimento previsto no item 17 do “caput” do art. 31 do Anexo VIII
+PR830023
+Diferimento previsto no item 18 do “caput” do art. 31 do Anexo VIII
+PR830024
+Diferimento previsto no item 19 do “caput” do art. 31 do Anexo VIII
+PR830025
+Diferimento previsto no item 20 do “caput” do art. 31 do Anexo VIII
+PR830026
+Diferimento previsto no item 21 do “caput” do art. 31 do Anexo VIII
+PR830027
+Diferimento previsto no item 22 do “caput” do art. 31 do Anexo VIII
+do RICMS/2017 e no inciso I do art. 1º da Lei nº 14.895/2005
+PR830028
+Diferimento previsto no item 23 do “caput” do art. 31 do Anexo VIII
+PR830029
+Diferimento previsto no item 24 do “caput” do art. 31 do Anexo VIII
+PR830030
+Diferimento previsto no item 25 do “caput” do art. 31 do Anexo VIII
+PR830031
+Diferimento previsto no item 26 do “caput” do art. 31 do Anexo VIII
+PR830032
+Diferimento previsto no subitem 27.1 do “caput” do art. 31 do
+Anexo VIII do RICMS/2017
+PR830033
+Diferimento previsto no subitem 27.2 do “caput” do art. 31 do
+PR830034
+Diferimento previsto no subitem 27.3 do “caput” do art. 31 do
+PR830035
+Diferimento previsto no item 28 do “caput” do art. 31 do Anexo VIII
+PR830036
+Diferimento previsto no item 29 do “caput” do art. 31 do Anexo VIII
+PR830037
+Diferimento previsto no item 30 do “caput” do art. 31 do Anexo VIII
+PR830038
+Diferimento previsto no item 31 do “caput” do art. 31 do Anexo VIII
+PR830039
+Diferimento previsto no item 32 do “caput” do art. 31 do Anexo VIII
+PR830040
+Diferimento previsto no item 33 do “caput” do art. 31 do Anexo VIII
+PR830041
+Diferimento previsto no item 34 do “caput” do art. 31 do Anexo VIII
+PR830042
+Diferimento previsto no item 35 do “caput” do art. 31 do Anexo VIII
+PR830043
+Diferimento previsto no item 36 do “caput” do art. 31 do Anexo VIII
+do RICMS/2017 e no art. 3º da Lei nº 13.212/2001
+PR830044
+Diferimento previsto no item 37 do “caput” do art. 31 do Anexo VIII
+PR830045
+Diferimento previsto no item 38 do “caput” do art. 31 do Anexo VIII
+PR830046
+Diferimento previsto no item 39 do “caput” do art. 31 do Anexo VIII
+PR830047
+Diferimento previsto no item 40 do “caput” do art. 31 do Anexo VIII
+PR830048
+Diferimento previsto no item 41 do “caput” do art. 31 do Anexo VIII
+PR830049
+Diferimento previsto no item 42 do “caput” do art. 31 do Anexo VIII
+PR830050
+Diferimento previsto no item 43 do “caput” do art. 31 do Anexo VIII
+PR830051
+Diferimento previsto no item 44 do “caput” do art. 31 do Anexo VIII
+PR830052
+Diferimento previsto no item 45 do “caput” do art. 31 do Anexo VIII
+PR830053
+Diferimento previsto no item 46 do “caput” do art. 31 do Anexo VIII
+PR830054
+Diferimento previsto no item 47 do “caput” do art. 31 do Anexo VIII
+PR830055
+Diferimento previsto no item 48 do “caput” do art. 31 do Anexo VIII
+PR830056
+Diferimento previsto no item 49 do “caput” do art. 31 do Anexo VIII
+PR830057
+Diferimento previsto no item 50 do “caput” do art. 31 do Anexo VIII
+PR830058
+Diferimento previsto no item 51 do “caput” do art. 31 do Anexo VIII
+PR830059
+Diferimento previsto no item 52 do “caput” do art. 31 do Anexo VIII
+PR830060
+Diferimento previsto no item 53 do “caput” do art. 31 do Anexo VIII
+PR830061
+Diferimento previsto no item 54 do “caput” do art. 31 do Anexo VIII
+PR830062
+Diferimento previsto no item 55 do “caput” do art. 31 do Anexo VIII
+PR830063
+Diferimento previsto no item 56 do “caput” do art. 31 do Anexo VIII
+PR830064
+Diferimento previsto no item 57 do “caput” do art. 31 do Anexo VIII
+PR830065
+Diferimento previsto no item 58 do “caput” do art. 31 do Anexo VIII
+PR830066
+Diferimento previsto no item 59 do “caput” do art. 31 do Anexo VIII
+PR830067
+Diferimento previsto no item 60 do “caput” do art. 31 do Anexo VIII
+PR830068
+Diferimento previsto no item 61 do “caput” do art. 31 do Anexo VIII
+PR830069
+Diferimento previsto no item 62 do “caput” do art. 31 do Anexo VIII
+PR830070
+Diferimento previsto no item 63 do “caput” do art. 31 do Anexo VIII
+PR830071
+Diferimento previsto no item 64 do “caput” do art. 31 do Anexo VIII
+PR830072
+Diferimento previsto no item 65 do “caput” do art. 31 do Anexo VIII
+PR830073
+Diferimento previsto no item 66 do “caput” do art. 31 do Anexo VIII
+PR830074
+Diferimento previsto no item 67 do “caput” do art. 31 do Anexo VIII
+PR830075
+Diferimento previsto no item 68 do “caput” do art. 31 do Anexo VIII
+PR830076
+Diferimento previsto no item 69 do “caput” do art. 31 do Anexo VIII
+PR830077
+Diferimento previsto no item 70 do “caput” do art. 31 do Anexo VIII
+PR830078
+Diferimento previsto no item 71 do “caput” do art. 31 do Anexo VIII
+PR830079
+Diferimento previsto no item 72 do “caput” do art. 31 do Anexo VIII
+PR830080
+Diferimento previsto no item 73 do “caput” do art. 31 do Anexo VIII
+PR830081
+Diferimento previsto no item 74 do “caput” do art. 31 do Anexo VIII
+PR830082
+Diferimento previsto no item 75 do “caput” do art. 31 do Anexo VIII
+PR830083
+Diferimento previsto no item 76 do “caput” do art. 31 do Anexo VIII
+PR830084
+Diferimento previsto no item 77 do “caput” do art. 31 do Anexo VIII
+PR830085
+Diferimento previsto no item 78 do “caput” do art. 31 do Anexo VIII
+PR830086
+Diferimento previsto no item 79 do “caput” do art. 31 do Anexo VIII
+PR830087
+Diferimento previsto no item 80 do “caput” do art. 31 do Anexo VIII
+PR830088
+Diferimento previsto no item 81 do “caput” do art. 31 do Anexo VIII
+PR830089
+27/12/2022
+Diferimento previsto no item 82 do “caput” do art. 31 do Anexo VIII
+PR830090
+Diferimento previsto no item 83 do “caput” do art. 31 do Anexo VIII
+PR830091
+Diferimento previsto no item 84 do “caput” do art. 31 do Anexo VIII
+PR830092
+Diferimento previsto no item 85 do “caput” do art. 31 do Anexo VIII
+PR830093
+Diferimento previsto no item 86 do “caput” do art. 31 do Anexo VIII
+PR830094
+Diferimento previsto no § 1º do art. 31 do Anexo VIII do
+PR830095
+Diferimento previsto no § 11 do art. 31 do Anexo VIII do
+PR830096
+Diferimento previsto no § 17 do art. 31 do Anexo VIII do
+PR830097
+27/03/2019
+Diferimento previsto no § 19 do art. 31 do Anexo VIII do
+PR830098
+Diferimento previsto no art. 32 do Anexo VIII do RICMS/2017
+PR830099
+Diferimento previsto no art. 39 do Anexo VIII do RICMS/2017
+PR830100
+Diferimento previsto no art. 41 do Anexo VIII do RICMS/2017
+PR830101
+Diferimento previsto no inciso I do “caput” do art. 42 do Anexo VIII
+PR830102
+Diferimento previsto no inciso II do “caput” do art. 42 do Anexo VIII
+PR830103
+Diferimento previsto no inciso III do “caput” do art. 42 do Anexo VIII
+PR830104
+Diferimento previsto no inciso IV do “caput” do art. 42 do Anexo VIII
+PR830105
+Diferimento previsto no inciso V do “caput” do art. 42 do Anexo VIII
+PR830106
+Diferimento previsto na alínea a do inc. VI do “caput” do art. 42 do
+PR830107
+Diferimento previsto na alínea b do inc. VI do “caput” do art. 42 do
+PR830108
+Diferimento previsto no inciso VII do “caput” do art. 42 do Anexo
+PR830109
+Diferimento previsto no inciso VIII do “caput” do art. 42 do Anexo
+PR830110
+Diferimento previsto no inciso IX do “caput” do art. 42 do Anexo VIII
+PR830111
+Diferimento previsto no inciso X do “caput” do art. 42 do Anexo VIII
+PR830112
+Diferimento previsto no inciso I do “caput” do art. 44 do Anexo VIII
+PR830113
+Diferimento previsto no inciso II do “caput” do art. 44 do Anexo VIII
+PR830114
+Diferimento previsto no inciso III do “caput” do art. 44 do Anexo VIII
+PR830115
+Diferimento previsto no inciso IV do “caput” do art. 44 do Anexo VIII
+PR830116
+Diferimento previsto no inciso V do “caput” do art. 44 do Anexo VIII
+PR830117
+Diferimento previsto no inciso VI do “caput” do art. 44 do Anexo VIII
+PR830118
+Diferimento previsto no inciso VII do “caput” do art. 44 do Anexo
+PR830119
+Diferimento previsto no inciso VIII do “caput” do art. 44 do Anexo
+PR830120
+Diferimento previsto no inciso IX do “caput” do art. 44 do Anexo VIII
+PR830121
+Diferimento previsto no inciso X do “caput” do art. 44 do Anexo VIII
+PR830122
+Diferimento previsto no inciso XI do “caput” do art. 44 do Anexo VIII
+PR830123
+Diferimento previsto no inciso XII do “caput” do art. 44 do Anexo
+PR830124
+Diferimento previsto no inciso XIII do “caput” do art. 44 do Anexo
+PR830125
+Diferimento previsto no inciso XIV do “caput” do art. 44 do Anexo
+PR830126
+Diferimento previsto na alínea a do inciso I do “caput” do art. 46 do
+PR830127
+Diferimento previsto na alínea b do inciso I do “caput” do art. 46 do
+PR830128
+Diferimento previsto na alínea a do inciso II do “caput” do art. 46 do
+PR830129
+Diferimento previsto na alínea b do inciso II do “caput” do art. 46 do
+PR830130
+Diferimento previsto no art. 6º da Lei 13.212/2001
+PR830131
+Diferimento previsto no art. 459 do RICMS/2017
+PR830132
+Diferimento previsto nos arts. 524 e 530 do RICMS/2017
+PR830133
+Diferimento previsto no art. 60 do Anexo IX do RICMS/2017
+PR830134
+Diferimento previsto no inciso III do art. 3º da Lei 13.212/2001
+PR830135
+01/05/2021
+Diferimento previsto no art. 10 do Decreto 6.434/2017
+PR830136
+01/05/2021
+Diferimento previsto no art. 3º do Decreto 1.107/2011
+PR830137
+Diferimento do ICMS conforme Anexo IV, Subanexo
+I, art.14, do RICMS/2017
+PR830138
+01/05/2023
+Diferimento em atenção ao art. 145-B do RICMS/2017
+PR830139
+01/08/2024
+Diferimento previsto no item 87 do “caput” do art. 31 do Anexo VIII
+PR830140
+07/08/2024
+Diferimento previsto no item 88 do “caput” do art. 31 do Anexo VIII
+PR830141
+20/02/2025
+89.
+palmito
+preparado
+em
+conserva,
+classificado
+no
+2008.91.00 da NCM, na saída promovida por estabelecimento
+fabricante.
+PR839998
+Diferimento sem código específico
+PR839999
+Diferimento
+previsto
+em
+regime
+especial
+e/ou
+programa
+de
+incentivo
+PR840000
+Suspensão do pagamento do imposto reconhecida judicialmente
+PR840001
+Suspensão prevista no inciso I do “caput” do art. 1º do Anexo VIII
+PR840002
+Suspensão prevista no inciso II do “caput” do art. 1º do Anexo VIII
+PR840003
+Suspensão prevista no inciso III do “caput” do art. 1º do Anexo VIII
+PR840004
+Suspensão prevista no inciso IV do “caput” do art. 1º do Anexo VIII
+PR840005
+Suspensão prevista no inciso V do “caput” do art. 1º do Anexo VIII
+PR840006
+31/01/2024
+Suspensão prevista no inciso VI do “caput” do art. 1º do Anexo VIII
+PR840007
+Suspensão prevista no inciso VII do “caput” do art. 1º do Anexo VIII
+PR840008
+Suspensão prevista no inciso VIII do “caput” do art. 1º do Anexo
+PR840009
+Suspensão prevista no inciso IX do “caput” do art. 1º do Anexo VIII
+PR840010
+Suspensão prevista no inciso X do “caput” do art. 1º do Anexo VIII
+PR840011
+Suspensão prevista no inciso XI do “caput” do art. 1º do Anexo VIII
+PR840012
+Suspensão prevista no inciso XII do “caput” do art. 1º do Anexo VIII
+PR840013
+Suspensão prevista no inciso XIII do “caput” do art. 1º do Anexo
+PR840014
+30/9/2019
+Suspensão prevista no “caput” do art. 2º do Anexo VIII do
+PR840015
+Suspensão prevista no art. 12-A, da Subseção II, do Anexo VIII do
+PR840016
+Suspensão prevista no § 6º do art. 448 do RICMS/2017
+PR840017
+Suspensão prevista no art. 458 do RICMS/2017
+PR840018
+Suspensão prevista no art. 460 do RICMS/2017
+PR840019
+Suspensão prevista no art. 468 do RICMS/2017
+PR840020
+Suspensão prevista na alínea 'b' do inciso I do § 1º do art. 497 e
+alínea 'c' do inciso II do art. 499 do RICMS/2017
+PR840021
+Suspensão prevista no inciso I do 'caput', na alínea 'a' do inciso IV
+e no inciso V do § 1º, nas alíneas 'a' e 'b' do inciso I e no inciso II
+do § 3º do art. 499-C do RICMS/2017
+PR840022
+Suspensão prevista nos arts. 525 e 529 do RICMS/2017
+PR840023
+Suspensão prevista nos art. 532 do RICMS/2017
+PR840024
+Sem destaque do ICMS conforme art. 554 do RICMS/2017
+PR840025
+Suspensão prevista nos arts. 572, 573, § 2º, inciso I, e 576, inciso
+II, alínea 'a', item 2, do RICMS/2017
+PR840026
+Suspensão prevista na Subseção II da Seção II, do Capítulo I do
+PR840027
+Suspensão prevista no art. 60 do Anexo IX do RICMS/2017
+OBSERVAÇÃO
+Informar a tag,
+preenchendo com o
+literal SEM CBENEF
+Imunidade ou não
+incidência
+Não tributado
+Imunidade
+Isenção
+Redução de base de
+cálculo
+Suspensão

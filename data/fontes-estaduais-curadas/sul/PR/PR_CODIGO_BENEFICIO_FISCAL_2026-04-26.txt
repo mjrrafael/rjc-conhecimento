@@ -1,0 +1,36 @@
+CÓDIGO DE BENEFÍCIO FISCAL
+
+Desde 1º de fevereiro de 2019, na emissão da Nota Fiscal eletrônica – NF-e e Nota Fiscal de Consumidor eletrônica – NFC-e, deve ser preenchido o campo “cBenef” referente ao código de benefício fiscal, quando a operação está contemplada por benefício, conforme previsto na Norma de Procedimento Fiscal, NPF nº 53/2018.
+
+Os códigos de benefícios fiscais do Paraná a serem preenchidos no campo "cBenef" da NF-e e NFC-e estão relacionados na Tabela de Códigos de Benefício Fiscal por CST, com a identificação do tipo de benefício ou operação, seu respectivo dispositivo legal e a situação tributária(CST) compatível, publicada no Portal Nacional da NF-e.
+
+Link:
+
+TABELA DE CÓDIGOS DE BENEFÍCIO FISCAL POR CST - PARANÁ (atualizada em 24/10/2025)
+
+A Tabela de Códigos de Benefício Fiscal por CST tem como base a Tabela 5.2 – Tabela de Informações Adicionais da Apuração da EFD.
+
+OBSERVAÇÃO 1: O Código de Situação Tributária - CST é o código que determina a tributação de ICMS do produto. O CST está previsto na Tabela B do Convênio s/nº de 15 de dezembro de 1970:
+
+CST 00 – Tributada integralmente
+CST 10 – Tributada e com cobrança do ICMS por substituição tributária
+CST 20 - Com redução de base de cálculo;
+CST 30 - Isenta ou não tributada e com cobrança do ICMS por substituição tributária
+CST 40 - Isenta
+CST 41 - Não tributada
+CST 50 – Suspensão
+CST 51 – Diferimento
+CST 60 – ICMS cobrado anteriormente por substituição tributária
+CST 70 - Redução de base de cálculo e cobrança do ICMS por substituição tributária
+CST 90 - Outras (excepcionalmente utilizado quando a tributação da operação é diversa dos CST acima citados)
+
+OBSERVAÇÃO 2: Nas operações abrangidas por Diferimento Parcial com Substituição Tributária proceder conforme orientação descrita no Boletim Informativo nº 012/2015 com a atualização do dispositivo legal RICMS/2017:
+
+Para o cálculo do ICMS devido nas operações internas sujeitas à substituição tributária, o contribuinte que atende à condição de substituto tributário deverá seguir as seguintes orientações:
+
+O ICMS PRÓPRIO deverá ser calculado COM a aplicação do diferimento parcial.
+
+O ICMS-ST deverá ser calculado SEM a aplicação do diferimento parcial.
+Deverão ser consideradas as demais regras vigentes para cada produto.
+As notas fiscais deverão conter o CST - Código de Situação Tributária - 10, de que trata a Tabela II do Subanexo I do Anexo II do RICMS/2017, e a alíquota de 12%, informando no campo “Informações Adicionais” o respectivo código de benefício fiscal e a expressão: “ICMS parcialmente diferido no montante de R$ ...., conforme art. 28 do RICMS/2017”.
+IMPORTANTE: não deve preencher o campo "cBenef", para a nota fiscal não ser rejeitada com o código 928 - "Rejeição:Informado código de benefício fiscal para CST sem benefício fiscal".

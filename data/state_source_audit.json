@@ -2,8 +2,8 @@
   "generated_on": "2026-04-26",
   "summary": {
     "states": 27,
-    "docs": 221,
-    "publishable_docs": 218,
+    "docs": 225,
+    "publishable_docs": 222,
     "scope_blocked_docs": 3,
     "blocked": 14
   },
@@ -3063,22 +3063,24 @@
       "region": "Sul",
       "curadoria": "publicado_v1",
       "publish_deep": true,
-      "document_count": 4,
-      "publishable_document_count": 4,
+      "document_count": 8,
+      "publishable_document_count": 8,
       "scope_blocked_document_count": 0,
-      "total_chars": 5057146,
+      "total_chars": 4030035,
       "categories": {
         "ICMS_BENEFICIOS": 3,
-        "ICMS_LEIS": 1
+        "ICMS_LEIS": 1,
+        "INSTRUCOES_NORMATIVAS": 3,
+        "RICMS": 1
       },
       "flags": [],
       "recommendation": "manter_publicado",
-      "next_step": "Paran? publicado como p?gina profunda: Lei n? 11.580/1996, RICMS/PR, benef?cios fiscais de car?ter geral, Paran? Competitivo, isen??o, redu??o de base, cr?dito presumido, diferimento, ST, documentos, EFD e prova fiscal.",
+      "next_step": "Paraná publicado como página profunda: Lei nº 11.580/1996, RICMS/PR, benefícios fiscais de caráter geral, Paraná Competitivo, isenção, redução de base, crédito presumido, diferimento, ST, documentos, EFD e prova fiscal.",
       "documents": [
         {
           "file": "PR_LEI_11580_1996_ICMS_2026-04-26.txt",
           "category": "ICMS_LEIS",
-          "chars": 314605,
+          "chars": 285546,
           "named_icms": true,
           "fallback_icms": false,
           "dominant_scope": "ICMS",
@@ -3094,8 +3096,8 @@
         },
         {
           "file": "PR_DEC_7871_2017_RICMS_2026-04-26.txt",
-          "category": "ICMS_BENEFICIOS",
-          "chars": 4696694,
+          "category": "RICMS",
+          "chars": 3635650,
           "named_icms": true,
           "fallback_icms": false,
           "dominant_scope": "ICMS",
@@ -3105,14 +3107,14 @@
           "scope_blocked": false,
           "scope_flags": [],
           "source_documents": [
-            "https://www.fazenda.pr.gov.br/sites/default/arquivos_restritos/files/documento/2020-06/106201707871.pdf"
+            "https://www.sefanet.pr.gov.br/dados/SEFADOCUMENTOS/106201707871.pdf"
           ],
           "flags": []
         },
         {
           "file": "PR_PORTAL_BENEFICIOS_GERAIS_2026-04-26.txt",
           "category": "ICMS_BENEFICIOS",
-          "chars": 19861,
+          "chars": 256,
           "named_icms": true,
           "fallback_icms": false,
           "dominant_scope": "ICMS",
@@ -3127,9 +3129,60 @@
           "flags": []
         },
         {
+          "file": "PR_CODIGO_BENEFICIO_FISCAL_2026-04-26.txt",
+          "category": "INSTRUCOES_NORMATIVAS",
+          "chars": 2809,
+          "named_icms": true,
+          "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [
+            "ICMS"
+          ],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [
+            "https://sped.fazenda.pr.gov.br/NFe/Pagina/CODIGO-DE-BENEFICIO-FISCAL"
+          ],
+          "flags": []
+        },
+        {
+          "file": "PR_TABELA_CBENEF_CST_2026-04-26.txt",
+          "category": "INSTRUCOES_NORMATIVAS",
+          "chars": 36680,
+          "named_icms": true,
+          "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [
+            "ICMS"
+          ],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [
+            "https://sped.fazenda.pr.gov.br/sites/sped/arquivos_restritos/files/documento/2025-10/tabela_cbenef_pr_portal_nacional_abril_2025_v25.pdf"
+          ],
+          "flags": []
+        },
+        {
+          "file": "PR_NPF_53_2018_CBENEF_2026-04-26.txt",
+          "category": "INSTRUCOES_NORMATIVAS",
+          "chars": 5005,
+          "named_icms": true,
+          "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [
+            "ICMS"
+          ],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [
+            "https://www.sefanet.pr.gov.br/dados/SEFADOCUMENTOS/103201800053.pdf"
+          ],
+          "flags": []
+        },
+        {
           "file": "PR_PROGRAMA_PARANA_COMPETITIVO_2026-04-26.txt",
           "category": "ICMS_BENEFICIOS",
-          "chars": 25986,
+          "chars": 6511,
           "named_icms": true,
           "fallback_icms": false,
           "dominant_scope": "ICMS",
@@ -3140,6 +3193,23 @@
           "scope_flags": [],
           "source_documents": [
             "https://www.fazenda.pr.gov.br/Pagina/Parana-Competitivo"
+          ],
+          "flags": []
+        },
+        {
+          "file": "PR_DEC_7721_2024_PARANA_COMPETITIVO_2026-04-26.txt",
+          "category": "ICMS_BENEFICIOS",
+          "chars": 57578,
+          "named_icms": true,
+          "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [
+            "ICMS"
+          ],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [
+            "https://www.legislacao.pr.gov.br/legislacao/listarAtosAno.do?action=exibir&codAto=341992&codItemAto=2159740"
           ],
           "flags": []
         }

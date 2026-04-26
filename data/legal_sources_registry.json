@@ -3797,7 +3797,7 @@
     {
       "source_id": "state-pr-pr-lei-11580-1996-icms",
       "jurisdiction": "PR",
-      "title": "Lei n. 11.580/1996 - ICMS do Estado do Parana",
+      "title": "Lei n. 11.580/1996 - ICMS do Estado do Paraná",
       "short": "Lei material do ICMS",
       "official_url": "https://www.sefanet.pr.gov.br/dados/SEFADOCUMENTOS/7199611580.pdf",
       "storage": {
@@ -3806,7 +3806,7 @@
           "data/fontes-estaduais-curadas/sul/PR/PR_LEI_11580_1996_ICMS_2026-04-26.txt"
         ],
         "sha256": {
-          "PR_LEI_11580_1996_ICMS_2026-04-26.txt": "077bfb8282d06686ac3a50873dfc4b835cef4d572dfb3de98f457b172f378569"
+          "PR_LEI_11580_1996_ICMS_2026-04-26.txt": "e16ced20f80268f723610df3f0b23231f83542d535b4bdc6850af1cba374eff2"
         },
         "fetch_url": "https://www.sefanet.pr.gov.br/dados/SEFADOCUMENTOS/7199611580.pdf"
       },
@@ -3832,17 +3832,17 @@
       "source_id": "state-pr-pr-dec-7871-2017-ricms",
       "jurisdiction": "PR",
       "title": "Decreto n. 7.871/2017 - RICMS/PR integral",
-      "short": "Regulamento do ICMS e beneficios fiscais de ICMS",
-      "official_url": "https://www.fazenda.pr.gov.br/sites/default/arquivos_restritos/files/documento/2020-06/106201707871.pdf",
+      "short": "Regulamento do ICMS e benefícios fiscais de ICMS",
+      "official_url": "https://www.sefanet.pr.gov.br/dados/SEFADOCUMENTOS/106201707871.pdf",
       "storage": {
         "type": "local_text",
         "files": [
           "data/fontes-estaduais-curadas/sul/PR/PR_DEC_7871_2017_RICMS_2026-04-26.txt"
         ],
         "sha256": {
-          "PR_DEC_7871_2017_RICMS_2026-04-26.txt": "f666fce3cd7a249db24876b9b36a620760ebd363319bcf47222e8233acefe6f4"
+          "PR_DEC_7871_2017_RICMS_2026-04-26.txt": "1f2c7647afb2e8f2a6c28ea3833d7643be2088d44f80c30d0299d638a06cbf6e"
         },
-        "fetch_url": "https://www.fazenda.pr.gov.br/sites/default/arquivos_restritos/files/documento/2020-06/106201707871.pdf"
+        "fetch_url": "https://www.sefanet.pr.gov.br/dados/SEFADOCUMENTOS/106201707871.pdf"
       },
       "note": "Texto estadual de ICMS publicado em estados/pr/legislacao/fontes/pr-dec-7871-2017-ricms.html.",
       "render": "full_text",
@@ -3870,8 +3870,8 @@
     {
       "source_id": "state-pr-pr-portal-beneficios-gerais",
       "jurisdiction": "PR",
-      "title": "SEFA/PR - Beneficios fiscais de carater geral",
-      "short": "Beneficios fiscais de ICMS",
+      "title": "SEFA/PR - Benefícios fiscais de caráter geral",
+      "short": "Benefícios fiscais de ICMS",
       "official_url": "https://www.fazenda.pr.gov.br/Pagina/Beneficios-Fiscais-de-Carater-Geral",
       "storage": {
         "type": "local_text",
@@ -3879,7 +3879,7 @@
           "data/fontes-estaduais-curadas/sul/PR/PR_PORTAL_BENEFICIOS_GERAIS_2026-04-26.txt"
         ],
         "sha256": {
-          "PR_PORTAL_BENEFICIOS_GERAIS_2026-04-26.txt": "f3628bfb262a016ae49a1a5beb8995b15ed9a652feff4fe601fdc0e0a0a13ea1"
+          "PR_PORTAL_BENEFICIOS_GERAIS_2026-04-26.txt": "5412040c7799346c8a6c47b51ed97fdb1054e426a491cfaa1b476af335a81270"
         },
         "fetch_url": "https://www.fazenda.pr.gov.br/Pagina/Beneficios-Fiscais-de-Carater-Geral"
       },
@@ -3901,10 +3901,94 @@
       ]
     },
     {
+      "source_id": "state-pr-pr-codigo-beneficio-fiscal",
+      "jurisdiction": "PR",
+      "title": "SEFA/PR - Código de Benefício Fiscal na NF-e e NFC-e",
+      "short": "cBenef, NF-e, NFC-e e prova do benefício fiscal",
+      "official_url": "https://sped.fazenda.pr.gov.br/NFe/Pagina/CODIGO-DE-BENEFICIO-FISCAL",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "data/fontes-estaduais-curadas/sul/PR/PR_CODIGO_BENEFICIO_FISCAL_2026-04-26.txt"
+        ],
+        "sha256": {
+          "PR_CODIGO_BENEFICIO_FISCAL_2026-04-26.txt": "a36e6608df701f877e475796077a06b57b74368340731396b6c7823ec6082e49"
+        },
+        "fetch_url": "https://sped.fazenda.pr.gov.br/NFe/Pagina/CODIGO-DE-BENEFICIO-FISCAL"
+      },
+      "note": "Texto estadual de ICMS publicado em estados/pr/legislacao/fontes/pr-codigo-beneficio-fiscal.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-pr",
+          "module_title": "Paraná: ICMS e benefícios fiscais em tela",
+          "chapters": []
+        }
+      ]
+    },
+    {
+      "source_id": "state-pr-pr-tabela-cbenef-cst",
+      "jurisdiction": "PR",
+      "title": "Tabela de Códigos de Benefício Fiscal por CST - Paraná",
+      "short": "cBenef, CST e benefícios fiscais de ICMS",
+      "official_url": "https://sped.fazenda.pr.gov.br/sites/sped/arquivos_restritos/files/documento/2025-10/tabela_cbenef_pr_portal_nacional_abril_2025_v25.pdf",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "data/fontes-estaduais-curadas/sul/PR/PR_TABELA_CBENEF_CST_2026-04-26.txt"
+        ],
+        "sha256": {
+          "PR_TABELA_CBENEF_CST_2026-04-26.txt": "945ec5875b51453433105af81fbe7932a0a9af9d7ab2b02da0c3056b23bca31d"
+        },
+        "fetch_url": "https://sped.fazenda.pr.gov.br/sites/sped/arquivos_restritos/files/documento/2025-10/tabela_cbenef_pr_portal_nacional_abril_2025_v25.pdf"
+      },
+      "note": "Texto estadual de ICMS publicado em estados/pr/legislacao/fontes/pr-tabela-cbenef-cst.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-pr",
+          "module_title": "Paraná: ICMS e benefícios fiscais em tela",
+          "chapters": []
+        }
+      ]
+    },
+    {
+      "source_id": "state-pr-pr-npf-53-2018-cbenef",
+      "jurisdiction": "PR",
+      "title": "NPF n. 53/2018 - cBenef no Paraná",
+      "short": "Obrigação acessória de cBenef",
+      "official_url": "https://www.sefanet.pr.gov.br/dados/SEFADOCUMENTOS/103201800053.pdf",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "data/fontes-estaduais-curadas/sul/PR/PR_NPF_53_2018_CBENEF_2026-04-26.txt"
+        ],
+        "sha256": {
+          "PR_NPF_53_2018_CBENEF_2026-04-26.txt": "a420741b1a620c493ae7bd47a558626a47289463a2a4f9cda4c45a86b12317c6"
+        },
+        "fetch_url": "https://www.sefanet.pr.gov.br/dados/SEFADOCUMENTOS/103201800053.pdf"
+      },
+      "note": "Texto estadual de ICMS publicado em estados/pr/legislacao/fontes/pr-npf-53-2018-cbenef.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-pr",
+          "module_title": "Paraná: ICMS e benefícios fiscais em tela",
+          "chapters": []
+        }
+      ]
+    },
+    {
       "source_id": "state-pr-pr-programa-parana-competitivo",
       "jurisdiction": "PR",
-      "title": "SEFA/PR - Programa Parana Competitivo",
-      "short": "Beneficios fiscais de ICMS",
+      "title": "SEFA/PR - Programa Paraná Competitivo",
+      "short": "Programa estadual de benefícios e incentivos de ICMS",
       "official_url": "https://www.fazenda.pr.gov.br/Pagina/Parana-Competitivo",
       "storage": {
         "type": "local_text",
@@ -3912,7 +3996,7 @@
           "data/fontes-estaduais-curadas/sul/PR/PR_PROGRAMA_PARANA_COMPETITIVO_2026-04-26.txt"
         ],
         "sha256": {
-          "PR_PROGRAMA_PARANA_COMPETITIVO_2026-04-26.txt": "e9292c9b11ddcbaad233b509cc40bdc1b14fa78a99dfcefe2c7c439075d209ad"
+          "PR_PROGRAMA_PARANA_COMPETITIVO_2026-04-26.txt": "e978b95fc663be98574c8e240a89e7cfa0cd1e35ad7b0bd3f181cede47b14513"
         },
         "fetch_url": "https://www.fazenda.pr.gov.br/Pagina/Parana-Competitivo"
       },
@@ -3931,6 +4015,34 @@
             "diferimento-regimes-especiais",
             "mapa-revisado-beneficios"
           ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-pr-pr-dec-7721-2024-parana-competitivo",
+      "jurisdiction": "PR",
+      "title": "Decreto n. 7.721/2024 - Programa Paraná Competitivo",
+      "short": "Paraná Competitivo, ICMS incremental, diferimento, créditos e e-commerce",
+      "official_url": "https://www.legislacao.pr.gov.br/legislacao/listarAtosAno.do?action=exibir&codAto=341992&codItemAto=2159740",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "data/fontes-estaduais-curadas/sul/PR/PR_DEC_7721_2024_PARANA_COMPETITIVO_2026-04-26.txt"
+        ],
+        "sha256": {
+          "PR_DEC_7721_2024_PARANA_COMPETITIVO_2026-04-26.txt": "235614f59785f4814bd6ceadbf25fb8abb3dde61f612dfd38094aea9e6ba8654"
+        },
+        "fetch_url": "https://www.legislacao.pr.gov.br/legislacao/listarAtosAno.do?action=exibir&codAto=341992&codItemAto=2159740"
+      },
+      "note": "Texto estadual de ICMS publicado em estados/pr/legislacao/fontes/pr-dec-7721-2024-parana-competitivo.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-pr",
+          "module_title": "Paraná: ICMS e benefícios fiscais em tela",
+          "chapters": []
         }
       ]
     },

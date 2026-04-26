@@ -1,0 +1,95 @@
+Estado do Paraná
+Secretaria de Estado da Fazenda
+Receita Estadual do Paraná
+NORMA DE PROCEDIMENTO FISCAL N. 053/2018
+Publicada no DOE 10232 de 17.7.2018
+Estabelece a obrigatoriedade de preenchimento de campos específicos nos
+documentos fiscais eletrônicos.
+Nova redação da súmula dada pelo art.1º da NPF 018/2022, de 25.3.2022, produzindo
+efeitos a partir de 29.03.2022.
+Redação anterior que produziu efeitos de 17.7.2018 até 28.03.2022:
+"SÚMULA: Estabelece a obrigatoriedade de inclusão de código específico de
+benefício fiscal nos documentos fiscais eletrônicos."
+O DIRETOR DA CRE - COORDENAÇÃO DA RECEITA DO ESTADO, no uso das
+atribuições que lhe confere o inciso X do art. 9º do Anexo II da Resolução SEFA n. 1.132, de 28 de
+julho de 2017, resolve:
+Art. 1.º Será obrigatória a inserção de código específico nos documentos
+fiscais eletrônicos, identificando os benefícios fiscais previstos no Regulamento
+do ICMS, aprovado pelo Decreto n. 7.871, de 29 de setembro de 2017, no
+campo “cBenef” da:
+I - NF-e - Nota Fiscal Eletrônica, modelo 55, a partir de 1º de fevereiro de
+2019;
+Nova redação do inc. I dada pelo art. 1º, inciso I da NPF 074/2018, de 22.10.2018, em
+vigor em 1º.11.2018 (publicação).
+
+Redações anteriores:
+a) Redação original em vigor no período de 17.7.2018 até 19.8.2018:
+"I - NF-e - Nota Fiscal Eletrônica, modelo 55, a partir de 3 de setembro de 2018;"
+b) redação dada pelo art. 1º da NPF 060/2018, de 13.8.2018, em vigor em 20.8.2018
+(publicação) a 31.10.2018:
+I - NF-e - Nota Fiscal Eletrônica, modelo 55, a partir de 5 de novembro de 2018.
+II - NFC-e - Nota Fiscal Eletrônica, modelo 65, a partir de 1º de fevereiro de 2019.
+Nova redação do inc. II dada pelo art. 1º, inciso I da NPF 074/2018, de 22.10.2018, em
+vigor em 1º.11.2018 (publicação).
+Redação original em vigor no período de 17.7.2018 até 31.10.2018:
+"II - NFC-e - Nota Fiscal Eletrônica, modelo 65, a partir de 5 de novembro de 2018.
+III - NF3e - Nota Fiscal de Energia Elétrica Eletrônica, modelo 66, a partir de 1º de setembro
+de 2021.
+Acrescentado o inciso pelo art.1º da NPF 034/2021, de 1º.6.2021, produzindo efeitos a
+partir de 07/06/2021.
+Parágrafo único. O disposto neste artigo não se aplica ao contribuinte optante pelo Regime
+Especial Unificado de Arrecadação de Tributos e Contribuições - Simples Nacional.
+Art. 2.º Os valores desonerados das operações de saídas, referentes aos
+códigos específicos a que se refere o "caput" do art. 1º desta norma, deverão
+ser informados no Registro E115 da EFD - Escrituração Fiscal Digital.
+Nova redação do art. 2º dada pelo art. 1º, inciso II da NPF 074/2018, de 22.10.2018, em
+vigor em 1º.11.2018 (publicação).
+Redação original em vigor no período de 17.7.2018 até 31.10.2018:
+"Art. 2.º Os valores das operações de saídas, referentes aos códigos específicos a
+que se refere o “caput” do art. 1º desta norma, deverão ser informados no Registro
+E115 da EFD - Escrituração Fiscal Digital.
+
+Art. 3.º Os códigos específicos de benefícios fiscais referidos no “caput”
+do art. 1º desta norma estarão definidos na tabela identificada como
+“5.2.TABELA DE INFORMAÇÕES ADICIONAIS DA APURAÇÃO - VALORES
+DECLARATÓRIOS”, disponíveis na página pública do Sistema Público de
+Escrituração
+Digital
+do
+Paraná
+-
+SPED/PR,
+no
+endereço
+eletrônico
+http://www.sped.fazenda.pr.gov.br/modules/conteudo/conteudo.php?conteudo=
+3.
+Art. 4.º Para a instituição dos códigos específicos de benefícios fiscais
+referidos no “caput” do art. 1º desta norma será publicado o Anexo II da Norma
+de Procedimento Fiscal n. 052/2018, referente à tabela identificada como
+“5.2.TABELA DE INFORMAÇÕES ADICIONAIS DA APURAÇÃO - VALORES
+DECLARATÓRIOS”.
+Parágrafo único. Qualquer inclusão, desativação e alteração dos códigos a que se refere a
+tabela identificada como “5.2.TABELA DE INFORMAÇÕES ADICIONAIS DA APURAÇÃO -
+VALORES DECLARATÓRIOS” será divulgada, pela IGF - Inspetoria Geral de Fiscalização, por
+meio de Boletim Informativo da CRE - Coordenação da Receita do Estado.
+Art. 4º-A. Nas hipóteses em que o estabelecimento possuir Regime
+Especial, deverá ser informado, quando exigido, o respectivo número nos
+documentos fiscais eletrônicos por ele regulamentados:
+Acrescentado o artigo pelo art.1º da NPF 018/2022, de 25.3.2022, produzindo efeitos a
+partir de 29.03.2022.
+I - NF-e - Nota Fiscal Eletrônica, modelo 55;
+Acrescentado pelo art.1º da NPF 018/2022, de 25.3.2022, produzindo efeitos a partir de
+29.03.2022.
+
+II - NFC-e - Nota Fiscal Eletrônica, modelo 65.
+§ 1º. O número do Regime Especial será informado no campo "nProc", conforme Tabela de
+Padrões de Regime Especial de cada UF.
+§ 2º. O campo Indicador da origem do processo deverá ser preenchido com o valor
+correspondente à SEFAZ (indProc=0) e o campo Tipo do ato concessório deverá ser preenchido com
+o valor correspondente à Regime Especial (tpAto=10).
+Art. 5.º Esta Norma de Procedimento Fiscal entra em vigor na data da
+sua publicação.
+COORDENAÇÃO DA RECEITA DO ESTADO, Curitiba, 12 de julho de 2018.
+Luiz Carlos Lucchesi Ribas,
+DIRETOR DA CRE.

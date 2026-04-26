@@ -1,13 +1,3 @@
-TITULO: Lei n. 11.580/1996 - ICMS do Estado do Parana
-TEMA: Lei material do ICMS
-TIPO: lei
-FONTE PUBLICA: https://www.sefanet.pr.gov.br/dados/SEFADOCUMENTOS/7199611580.pdf
-DATA DA CAPTURA: 2026-04-26
-
-TEXTO EXTRAIDO
-===== PAGINA 1 =====
-____________________________________________________________________
-1
 LEI 11.580/1996
 (Atualizada até a Lei n. 22.962, de 18.12.2025)
 Publicada no DOE 4885 de 14.11.1996
@@ -33,9 +23,6 @@ providências."
 A ASSEMBLÉIA LEGISLATIVA DO ESTADO DO PARANÁ
 decretou e eu sanciono a seguinte Lei:
 
-===== PAGINA 2 =====
-____________________________________________________________________
-2
 DISPOSIÇÃO PRELIMINAR
 Art. 1º Esta Lei dispõe quanto ao imposto sobre operações
 relativas à circulação de mercadorias e sobre prestações de serviços de
@@ -62,11 +49,7 @@ complementar aplicável expressamente o sujeitar à incidência do imposto estad
 VI – a entrada no estabelecimento de contribuinte, de mercadoria ou bem
 oriundos de outras unidades da Federação, destinados ao uso ou consumo ou ao ativo
 permanente.
-
-===== PAGINA 3 =====
-____________________________________________________________________
-3
-Acrescentado o inciso VI pelo art. 1°,  inciso I, da Lei 15.342, de 22.12.2006, em vigor em
+Acrescentado o inciso VI pelo art. 1°, inciso I, da Lei 15.342, de 22.12.2006, em vigor em
 22.12.2006 (publicação), produzindo efeitos a partir de 1º.4.2007.
 VII - operações e prestações iniciadas em outra unidade da Federação que
 destinem bens e serviços a consumidor final não contribuinte do imposto localizado neste
@@ -88,7 +71,7 @@ alíquota interna do Estado de destino e a alíquota interestadual"
 I - sobre a entrada de mercadoria ou bem importados do exterior, por
 pessoa física ou jurídica, ainda que não seja contribuinte habitual do imposto, qualquer
 que seja a sua finalidade (Lei Complementar nº. 114/02);
-Nova redação do inciso I dada pelo art. 1º,  alteração 1ª, da Lei n. 14.050, de 14.5.2003,
+Nova redação do inciso I dada pelo art. 1º, alteração 1ª, da Lei n. 14.050, de 14.5.2003,
 em vigor em 14.5.2003 (publicação), produzindo efeitos a partir de 17.12.2002.
 Redação original do inciso I que produziu efeitos de 1º.11.1996 a 16.12.2002:
 "I - sobre a entrada de mercadoria importada do exterior, por pessoa física ou jurídica,
@@ -102,10 +85,6 @@ quando não destinados à industrialização ou à comercialização pelo destin
 adquirente aqui localizado, decorrentes de operações interestaduais, cabendo o imposto
 a este Estado.
 § 2º A caracterização do fato gerador independe da natureza jurídica da
-
-===== PAGINA 4 =====
-____________________________________________________________________
-4
 operação ou prestação que o constitua.
 CAPÍTULO II
 DAS IMUNIDADES, NÃO-INCIDÊNCIAS E BENEFÍCIOS FISCAIS
@@ -135,10 +114,6 @@ competência tributária dos Municípios, ressalvadas as hipóteses previstas na
 complementar;
 VI - operações de qualquer natureza de que decorra a transferência de
 propriedade de estabelecimento industrial, comercial ou de outra espécie;
-
-===== PAGINA 5 =====
-____________________________________________________________________
-5
 VII - operações decorrentes de alienação fiduciária em garantia, inclusive
 a operação efetuada pelo credor em decorrência do inadimplemento do devedor;
 VIII - operações de arrendamento mercantil, não compreendida a venda
@@ -158,35 +133,31 @@ Parágrafo único. Equipara-se às operações de que trata o inciso II a saída
 de mercadoria realizada com o fim específico de exportação para o exterior, destinada a:
 I - empresa comercial exportadora, inclusive "tradings" ou outro
 estabelecimento da mesma empresa;
-II - armazém alfandegado ou entreposto aduaneiro. 
+II - armazém alfandegado ou entreposto aduaneiro.
 CAPÍTULO III
 DO FATO GERADOR
 Art. 5º Considera-se ocorrido o fato gerador do imposto no
-momento: 
+momento:
 I - da saída de mercadoria de estabelecimento de contribuinte (Lei
 Complementar Federal nº 204, de 28 de dezembro de 2023);
 Nova redação do inciso I dada pelo art. 2º da Lei n. 22.190, de 13.11.2024, em vigor em
 13.11.2024 (publicação), produzindo efeitos a partir de 1º.1.2024.
 Redação original do inciso I que produziu efeitos de 1º.11.1996 a 31.12.2023:
-
-===== PAGINA 6 =====
-____________________________________________________________________
-6
-"I  - da saída de mercadoria de estabelecimento de contribuinte, ainda que para outro
+"I - da saída de mercadoria de estabelecimento de contribuinte, ainda que para outro
 estabelecimento do mesmo titular;"
 II - do fornecimento de alimentação, bebidas e outras mercadorias por
 qualquer estabelecimento;
 III - da transmissão a terceiro de mercadoria depositada em armazém
 geral ou em depósito fechado, na unidade federada do transmitente;
 IV - da transmissão de propriedade de mercadoria, ou de título que a
-represente, 
-quando 
-a 
-mercadoria 
-não 
-tiver 
-transitado 
-pelo 
+represente,
+quando
+a
+mercadoria
+não
+tiver
+transitado
+pelo
 estabelecimento
 transmitente;
 V - do início da prestação de serviços de transporte interestadual e
@@ -203,19 +174,13 @@ lei complementar aplicável;
 IX - do desembaraço aduaneiro de mercadoria ou bem importados do
 exterior (Lei Complementar nº. 114/02);
 Nova redação do inciso IX dada pelo art. 1º, alteração 2ª, da Lei n. 14.050, de 14.5.2003,
-em vigor em 14.5.2003 (publicação), produzindo efeitos a partir de 17.12.2002.
 Redação original do inciso IX que produziu efeitos de 1º.11.1996 a 16.12.2002:
 "IX - do desembaraço aduaneiro das mercadorias importadas do exterior; "
 X - do recebimento, pelo destinatário, de serviço prestado no exterior;
 XI - da aquisição em licitação pública de mercadoria ou bem importados
 do exterior e apreendidos ou abandonados (Lei Complementar nº. 114/02);
 Nova redação do inciso XI dada pelo art. 1º, alteração 2ª, da Lei n. 14.050, de 14.5.2003,
-em vigor em 14.5.2003 (publicação), produzindo efeitos a partir de 17.12.2002.
 Redação original do inciso XI que produziu efeitos de 1º.11.1996 a 16.12.2002:
-
-===== PAGINA 7 =====
-____________________________________________________________________
-7
 "XI - da aquisição em licitação pública de bens ou mercadorias importados do exterior
 apreendidos ou abandonados;"
 XII - da entrada no território do Estado de petróleo, inclusive lubrificantes
@@ -229,8 +194,7 @@ de outro Estado adquiridos por contribuinte do imposto e destinados ao seu uso o
 consumo ou à integração ao seu ativo imobilizado (Lei Complementar Federal nº 190, de
 4 de janeiro de 2022);
 Nova redação do inciso XIV dada pelo art. 3º da Lei n. 22.190, de 13.11.2024, em vigor
-em 13.11.2024 (publicação), produzindo efeitos a partir de 13.11.2024.
-Redação original do inciso XIV, acrescentado pelo art. 1º,  inciso II, da Lei 15.342, de
+Redação original do inciso XIV, acrescentado pelo art. 1º, inciso II, da Lei 15.342, de
 22.12.2006, em vigor em 22.12.2006, que produziu efeitos de 1º.4.2007 até 12.11.2024:
 "XIV – da entrada no estabelecimento de contribuinte, de mercadoria ou bem oriundos de
 outra unidade da Federação, destinados ao uso ou consumo ou ao ativo permanente."
@@ -238,7 +202,6 @@ XV - da saída, de estabelecimento de contribuinte domiciliado em outro
 Estado, de bem ou mercadoria destinados a consumidor final não contribuinte do
 imposto domiciliado ou estabelecido neste Estado;
 Nova redação do inciso XV dada pelo art. 3º da Lei n. 22.190, de 13.11.2024, em vigor
-em 13.11.2024 (publicação), produzindo efeitos a partir de 13.11.2024.
 Redação original do inciso XV, acrescentado pelo art. 50, inciso III, da Lei n. 18.573, de
 30.9.2015, em vigor em 2.10.2015 (republicação), que produziu efeitos de 1º.1.2016 até
 12.11.2024:
@@ -253,18 +216,13 @@ Acrescentado o inciso XVI pelo art. 2º, da Lei n. 20.949, de 31.12.2021, em vig
 XVII - (REVOGADO)
 Revogado o inciso XVII pelo inciso II do art. 14 da Lei n. 22.190, de 13.11.2024, em vigor
 em 13.11.2024 (publicação), produzindo efeitos a partir de 13.11.2024
-
-===== PAGINA 8 =====
-____________________________________________________________________
-8
 Redação original do inciso XVII, acrescentado pelo art. 2º, da Lei n. 20.949, de
 31.12.2021, em vigor em 31.12.2021, que produziu efeitos de 1º.4.2022 até 12.11.2024:
 "XVII - da entrada no território do Estado de bem ou mercadoria oriundos de outro Estado
 adquiridos por contribuinte do imposto e destinados ao seu uso ou consumo ou à
 integração ao seu ativo imobilizado;"
-XVIII - (REVOGADO) 
+XVIII - (REVOGADO)
 Revogado o inciso XVIII pelo inciso II do art. 14 da Lei n. 22.190, de 13.11.2024, em vigor
-em 13.11.2024 (publicação), produzindo efeitos a partir de 13.11.2024
 Redação original do inciso XVIII, acrescentado pelo art. 2º, da Lei n. 20.949, de
 31.12.2021, em vigor em 31.12.2021, que produziu efeitos de 1º.4.2022 até 12.11.2024:
 "XVIII - da saída, de estabelecimento de contribuinte, de bem ou mercadoria destinado a
@@ -288,24 +246,20 @@ Estado para revenda sem destinatário certo.
 antes do desembaraço aduaneiro, considera-se ocorrido o fato gerador neste momento,
 devendo a autoridade responsável, salvo disposição em contrário, exigir a comprovação
 do pagamento do imposto (Lei Complementar nº. 114/02).
-Acrescentado o § 5º  pelo art. 1º,  alteração 2ª, da Lei n. 14.050, de 14.5.2003, em vigor
+Acrescentado o § 5º pelo art. 1º, alteração 2ª, da Lei n. 14.050, de 14.5.2003, em vigor
 em 14.5.2003 (publicação), produzindo efeitos a partir de 17.12.2002.
-§ 
-6º 
-Poderá 
-ser 
-exigido 
-o 
-pagamento 
-antecipado 
-do 
+§
+6º
+Poderá
+ser
+exigido
+o
+pagamento
+antecipado
+do
 imposto
 correspondente à diferença entre as alíquotas interna e interestadual, relativamente a
 operações que tenham origem em outra unidade federada, na forma e nos casos
-
-===== PAGINA 9 =====
-____________________________________________________________________
-9
 estabelecidos pelo Poder Executivo.
 Acrescentado o § 6º pelo art. 5,º inciso I, da Lei n. 17.444, de 27.12.2012, produzindo
 efeitos a partir de 27.12.2012 (publicação).
@@ -344,10 +298,6 @@ IV do § 2º do art. 155 da Constituição Federal.
 Acrescentado o § 10º pelo art. 1º da Lei n. 22.262, de 13.12.2024, em vigor em
 13.12.2024 (publicação), produzindo efeitos a partir de 13.12.2024 (vide art. 43, inciso V,
 da Lei n. 22.262, de 13.12.2024).
-
-===== PAGINA 10 =====
-____________________________________________________________________
-10
 CAPÍTULO IV
 DOS ELEMENTOS QUANTIFICADORES
 SEÇÃO I
@@ -373,10 +323,6 @@ e) quaisquer outros impostos, taxas, contribuições e despesas aduaneiras
 (Lei Complementar nº. 114/02);
 Nova redação da alínea "e" dada pelo art. 1º, alteração 3ª, da Lei n. 14.050, de
 14.5.2003, em vigor em 14.05.2003 (publicação), produzindo efeitos a partir de
-
-===== PAGINA 11 =====
-____________________________________________________________________
-11
 17.12.2002.
 Redação original da alínea "e" que produziu efeitos de 1º.11.1996 a 16.12.2002:
 "e) quaisquer despesas aduaneiras;"
@@ -391,7 +337,6 @@ IX - nas hipóteses dos incisos XIII e XIV do caput do art. 5º desta Lei, o
 valor da operação ou da prestação neste Estado (Lei Complementar Federal nº 190, de
 2022).
 Nova redação do inciso IX dada pelo art. 5º da Lei n. 22.190, de 13.11.2024, em vigor em
-13.11.2024 (publicação), produzindo efeitos a partir de 13.11.2024.
 Redação original do inciso IX que produziu efeitos de 1º.11.1996 a 12.11.2024:
 "iX - na hipótese do inciso XIII do art. 5º, o valor da prestação na unidade federada de
 origem."
@@ -404,17 +349,12 @@ Acrescentado o inciso X pelo art. 6 da Lei n. 22.190, de 13.11.2024, em vigor em
 incisos V, IX e X do caput deste artigo (Leis Complementares Federais nº 114, de 16 de
 dezembro de 2002, e nº 190, de 2022):
 Nova redação do § 1º dada pelo art. 7º da Lei n. 22.190, de 13.11.2024, em vigor em
-13.11.2024 (publicação), produzindo efeitos a partir de 13.11.2024.
-Redação anterior do § 1º  dada pelo art. 1º, alteração 3ª, da Lei n. 14.050, de 14.5.2003,
+Redação anterior do § 1º dada pelo art. 1º, alteração 3ª, da Lei n. 14.050, de 14.5.2003,
 em vigor em 14.05.2003 (publicação), que produzindo efeitos de 17.12.2002 a
 12.11.2024:
 "§ 1º Integra a base de cálculo do imposto, inclusive na importação do exterior de
 mercadoria ou bem (Lei Complementar nº. 114/02):"
 Redação original do § 1º que produziu efeitos de 1º.11.1996 a 16.12.2002:
-
-===== PAGINA 12 =====
-____________________________________________________________________
-12
 "§ 1º Integra a base de cálculo do imposto:"
 I - o montante do próprio imposto, constituindo o respectivo destaque
 mera indicação para fins de controle;
@@ -449,10 +389,6 @@ interna e a interestadual, utilizando-se, para efeitos: (Lei Complementar Federa
 de 2022).
 I - do inciso IX do caput deste artigo:
 a) a alíquota prevista para a operação ou prestação interestadual, para
-
-===== PAGINA 13 =====
-____________________________________________________________________
-13
 estabelecer a base de cálculo da operação ou prestação no Estado de origem;
 b) a alíquota prevista para a operação ou prestação interna, para
 estabelecer a base de cálculo da operação ou prestação neste Estado;
@@ -460,7 +396,6 @@ II - do inciso X do caput deste artigo, a alíquota prevista para a operação
 ou prestação interna, para estabelecer a base de cálculo da operação ou prestação neste
 Estado.
 Nova redação do § 3º dada pelo art. 8º da Lei n. 22.190, de 13.11.2024, em vigor em
-13.11.2024 (publicação), produzindo efeitos a partir de 13.11.2024.
 Redação original do § 3º que produziu efeitos de 1º.11.1996 a 12.11.2024:
 "§ 3º No caso do inciso IX, o imposto a pagar será o valor resultante da aplicação do
 percentual equivalente à diferença entre a alíquota interna e a interestadual, sobre o
@@ -488,10 +423,6 @@ faturamento.
 Revogado o § 8º pelo art. 36 da Lei n. 19.358, de 20.12.2017, em vigor com sua
 publicação em 21.12.2017, produzindo efeitos a partir de 1º.2.2018.
 Redação original do § 8º que produziu efeitos de 14.11.1996 até 31.1.2018:
-
-===== PAGINA 14 =====
-____________________________________________________________________
-14
 "§ 8º Para os fins do disposto na alínea "b" do inciso III do § 2º deste artigo, a parcela do
 acréscimo financeiro que exceder ao valor resultante da aplicação da taxa fixada pela
 Secretaria da Fazenda não será excluída da base de cálculo do imposto, sendo tributada
@@ -504,20 +435,20 @@ partir de 30.9.2016 (publicação).
 Art. 6ºA (REVOGADO)
 Revogado o "caput" do art. 6ºA pelo inciso IV do art. 14 da Lei n. 22.190, de 13.11.2024,
 em vigor em 13.11.2024 (publicação), produzindo efeitos a partir de 13.11.2024
-Redação anterior  do  "caput" do art. 6º dada pelo art. 4º, da Lei n. 18.879, de 27.9.2016,
+Redação anterior do "caput" do art. 6º dada pelo art. 4º, da Lei n. 18.879, de 27.9.2016,
 em vigor em 30.9.2016 (publicação), que produziu efeitos de 1º.1.2016 até 12.11.2024:
 "Art. 6ºA Na hipótese do inciso XIV do art. 5º desta Lei, a base de cálculo é o valor da
 operação na unidade federada de origem, e o imposto a recolher será correspondente à
 diferença entre as alíquotas interna e interestadual, observado o disposto no inciso I do §
 1º do art. 6º desta Lei."
-Redação anterior do  "caput" do art. 6º dada pelo art. 50, inciso IV, da Lei n. 18.573, de
-30.09.2015, em vigor em 2.10.2015 (republicação),  que não produziu efeitos:
+Redação anterior do "caput" do art. 6º dada pelo art. 50, inciso IV, da Lei n. 18.573, de
+30.09.2015, em vigor em 2.10.2015 (republicação), que não produziu efeitos:
 "Art. 6ºA Na hipótese do inciso XIV do art. 5º desta Lei, a base de cálculo é o valor da
 operação na unidade federada de origem, e o imposto a recolher será correspondente à
 diferença entre as alíquotas interna e interestadual, devendo o montante do ICMS
 relativo à diferença de alíquotas integrar a sua base de cálculo (Emenda Constitucional
 nº 87, de 16 de abril de 2015)."
-Redação original do  "caput" do art. 6º, acrescentado pelo inciso III, art. 1º, da Lei 15.342,
+Redação original do "caput" do art. 6º, acrescentado pelo inciso III, art. 1º, da Lei 15.342,
 de 22.12.2006, em vigor em 22.12.2006 (publicação), que produziu efeitos de 1º.04.2007
 até 31.12.2015:
 "Art. 6º-A. Na hipótese do inciso XIV do art. 5º, a base de cálculo é o valor da operação
@@ -527,11 +458,7 @@ Parágrafo único. (REVOGADO)
 Revogado o parágrafo único dada pelo inciso IV do art. 14 da Lei n. 22.190, de
 13.11.2024, em vigor em 13.11.2024 (publicação), produzindo efeitos a partir de
 13.11.2024
-Redação original do parágrafo único, acrescentado pelo art. 1º, inciso III,  da Lei 15.342,
-
-===== PAGINA 15 =====
-____________________________________________________________________
-15
+Redação original do parágrafo único, acrescentado pelo art. 1º, inciso III, da Lei 15.342,
 de 22.12.2006, em vigor em 22.12.2006 (publicação), que produziu efeitos de 1º.04.2007
 a 12.11.2024:
 "Parágrafo único. Quando a mercadoria entrar no estabelecimento para fins de
@@ -542,15 +469,14 @@ decorreu a entrada, quando esta ocorrer de outro estabelecimento industrial ou a
 equiparado."
 Art. 6ºB (REVOGADO)
 Revogado o art. 6ºB pelo inciso IV do art. 14 da Lei n. 22.190, de 13.11.2024, em vigor
-em 13.11.2024 (publicação), produzindo efeitos a partir de 13.11.2024
-Redação anterior do art. 6ºB dada pelo art. 5º, da Lei n. 18.879, de 27.9.2016,  em vigor
+Redação anterior do art. 6ºB dada pelo art. 5º, da Lei n. 18.879, de 27.9.2016, em vigor
 em 30.9.2016 (publicação), que produziu efeitos de 1º.1.2016 até 12.11.2024:
 "Art. 6ºB Na hipótese do inciso XV do art. 5º desta Lei, a base de cálculo é o valor da
 operação ou o preço do serviço sobre o qual foi cobrado o imposto na unidade federada
 de origem, e o imposto a recolher será correspondente à diferença entre as alíquotas
 interna e interestadual, observado o disposto no inciso I do § 1º do art. 6º desta Lei
 (Emenda Constitucional nº 87, de 16 de abril de 2015)."
-Redação original do art. 6ºB,  acrescentado pelo art. 50, inciso V, da Lei n. 18.573, de
+Redação original do art. 6ºB, acrescentado pelo art. 50, inciso V, da Lei n. 18.573, de
 30.09.2015, publicada em 2.10.2015, que não produziu efeitos:
 "Art. 6ºB Na hipótese do inciso XIV do art. 5º desta Lei, a base de cálculo é o valor da
 operação ou prestação na unidade federada de origem, e o imposto a recolher será
@@ -559,29 +485,23 @@ montante do ICMS relativo à diferença de alíquotas integrar a sua base de cá
 (Emenda Constitucional nº 87, de 2015)."
 Art. 6ºC (REVOGADO)
 Revogado o art. 6ºC pelo inciso IV do art. 14 da Lei n. 22.190, de 13.11.2024, em vigor
-em 13.11.2024 (publicação), produzindo efeitos a partir de 13.11.2024.
 Redação original do art. 6ºC, acrescentado pelo art. 3º, da Lei n. 20.949, de 31.12.2021,
 em vigor em 31.12.2021, que produziu efeitos de 1º.4.2022 até 12.11.2024:
 "Art. 6ºC Nas hipóteses dos incisos XIII e XVII do art. 5º desta Lei, a base de cálculo é:
 I - o valor da operação ou prestação no Estado de origem, para o cálculo do imposto
-devido a esse Estado; 
+devido a esse Estado;
 II - o valor da operação ou prestação no Estado de destino, para o cálculo do imposto
 devido a esse Estado.
 Parágrafo único. O imposto a recolher será correspondente à diferença entre as alíquotas
-
-===== PAGINA 16 =====
-____________________________________________________________________
-16
 interna e interestadual, observado o disposto no inciso I do § 1º do art. 6º desta Lei nas
 hipóteses dos incisos XIII e XVII do art. 5º desta Lei."
 Art. 6ºD (REVOGADO)
 Revogado o art. 6ºD pelo inciso IV do art. 14 da Lei n. 22.190, de 13.11.2024, em vigor
-em 13.11.2024 (publicação), produzindo efeitos a partir de 13.11.2024.
 Redação original do art. 6ºD, acrescentado pelo art. 4º, da Lei n. 20.949, de 31.12.2021,
 em vigor em 31.12.2021, que produziu efeitos de 1º.4.2022 até 12.11.2024:
 "Art. 6ºD Nas hipóteses dos incisos XVI e XVIII do art. 5º desta Lei, a base de cálculo é o
 valor da operação ou o preço do serviço, para o cálculo do imposto devido ao Estado de
-origem e ao de destino. 
+origem e ao de destino.
 Parágrafo único. O imposto a recolher será correspondente à diferença entre as alíquotas
 interna e interestadual, observado o disposto no inciso I do § 1º do art. 6º desta Lei."
 Art. 7º O preço de importação expresso em moeda estrangeira
@@ -603,10 +523,6 @@ III - o preço FOB estabelecimento comercial a vista, na venda a outros
 comerciantes ou industriais, caso o remetente seja comerciante.
 § 1º Para aplicação dos incisos II e III deste artigo, adotar-se-á
 sucessivamente:
-
-===== PAGINA 17 =====
-____________________________________________________________________
-17
 I - o preço efetivamente cobrado pelo estabelecimento remetente na
 operação mais recente;
 II - caso o remetente não tenha efetuado venda de mercadoria, o preço
@@ -624,13 +540,13 @@ empresa que com aquele mantenha relação de interdependência, exceder os
 níveis normais de preços em vigor, no mercado local, para serviço semelhante,
 constantes de tabelas elaboradas pelos órgãos competentes, o valor excedente
 será havido como parte do preço da mercadoria.
-Parágrafo 
-único. 
-Para 
-os 
-fins 
-deste 
-artigo, 
+Parágrafo
+único.
+Para
+os
+fins
+deste
+artigo,
 considerar-se-ão
 interdependentes duas empresas quando:
 I - uma delas, por si, seus sócios ou acionistas, e respectivos cônjuges ou
@@ -644,10 +560,6 @@ será:
 I - em relação às operações ou prestações antecedentes ou concomitantes,
 o valor da operação ou prestação praticado pelo contribuinte substituído;
 II - em relação às operações ou prestações subseqüentes, obtida pelo
-
-===== PAGINA 18 =====
-____________________________________________________________________
-18
 somatório das parcelas seguintes:
 a) o valor da operação ou prestação própria realizada pelo substituto
 tributário ou pelo substituído intermediário;
@@ -682,10 +594,6 @@ base de cálculo em relação às operações ou prestações subseqüentes pode
 a consumidor final usualmente praticado no mercado considerado, relativamente ao
 serviço, à mercadoria ou sua similar, em condições de livre concorrência, adotando-se
 para sua apuração as regras estabelecidas no § 3º (Lei Complementar nº. 114/02).
-
-===== PAGINA 19 =====
-____________________________________________________________________
-19
 Acrescentadao o § 5º pelo art. 1º, alteração 4ª, da Lei n. 14.050, de 14.5.2003, em vigor
 em 14.05.2003 (publicação), produzindo efeitos a partir de 17.12.2002.
 Art. 12. Poderá a Fazenda Pública:
@@ -718,10 +626,6 @@ Redação original do parágrafo único que produziu efeitos de 1º.1.1996 até 
 "Parágrafo único. Havendo discordância em relação ao valor estimado ou arbitrado, nos
 termos do inciso II, caberá avaliação contraditória administrativa, observado o disposto
 no art. 56, ou judicial."
-
-===== PAGINA 20 =====
-____________________________________________________________________
-20
 Art. 13. Na hipótese do pagamento antecipado a que se refere o §
 4º do art. 5º, a base de cálculo é o valor da mercadoria ou da prestação,
 acrescido de percentual de margem de lucro fixado para os casos de substituição
@@ -732,7 +636,7 @@ Vide art. 7º da Lei nº 22.926/2025
 Art. 14. As alíquotas internas são, conforme o caso e de acordo
 com a Nomenclatura Comum do Mercosul (NCM) ou a Nomenclatura Brasileira
 de Mercadorias - Sistema Harmonizado (NBM/SH), assim distribuídas:
-Nova redação do "caput"  dada pelo art. 1º, inciso I , da Lei nº 16.016, de 19.12.2008,
+Nova redação do "caput" dada pelo art. 1º, inciso I , da Lei nº 16.016, de 19.12.2008,
 produzindo efeitos a partir de 01.04.2009 (1º mês subsequente ao decurso de 90 dias da
 publicação em 19.12.2008) .
 Redação original do "caput" que produziu efeitos de 01.01.1996 até 31.03.2009:
@@ -755,42 +659,25 @@ Redação original que produziu efeitos de 1º.1.1996 até 31.12.2001:
 "a) álcool anidro para fins combustíveis;"
 b) armas e munições, suas partes e acessórios classificados no Capítulo 93 da
 Nomenclatura Brasileira de Mercadorias - Sistema Harmonizado - NBM/SH;
-
-===== PAGINA 21 =====
-____________________________________________________________________
-21
 c) asas-delta, balões e dirigíveis classificados nos códigos 8801.10.0200 e
 8801.90.0100 da NBM/SH;
 d )
-Revogada a alínea pelo art. 1º, alteração 3ª , da Lei nº 13.410, de 26.12.2001, em
-vigor em 26.12.2001 (publicação), produzindo efeitos a partir de 1º.1.2002.
-Redação original que produziu efeitos de 1º.1.1996 até 31.12.2001:
 "d) bebidas alcoólicas classificadas nas posições 2203, 2204, 2205, 2206 e
 2208 da NBM/SH;"
 e) embarcações de esporte e de recreio classificadas na posição 8903 da NBM/SH;
-f  ) energia elétrica destinada à eletrificação rural.
-Nova redação da alínea dada pelo art. 2º  da Lei nº 13.410, de 26.12.2001, em
-vigor em 26.12.2001 (publicação), produzindo efeitos a partir de 1º.1.2002.
-Redação original que produziu efeitos de 1º.1.1996 até 31.12.2001:
+f ) energia elétrica destinada à eletrificação rural.
+Nova redação da alínea dada pelo art. 2º da Lei nº 13.410, de 26.12.2001, em
 "f) energia elétrica;"
 g )
-Revogada a alínea pelo art. 1º, alteração 3ª , da Lei nº 13.410, de 26.12.2001, em
-vigor em 26.12.2001 (publicação), produzindo efeitos a partir de 1º.1.2002.
-Redação original que produziu efeitos de 1º.1.1996 até 31.12.2001:
 "g) fumo e seus sucedâneos manufaturados classificados no Capítulo 24 da
 NBM/SH;"
 h )
-Revogada a alínea pelo art. 1º, alteração 3ª , da Lei nº 13.410, de 26.12.2001, em
-vigor em 26.12.2001 (publicação), produzindo efeitos a partir de 1º.1.2002.
-Redação original que produziu efeitos de 1º.1.1996 até 31.12.2001:
 "h) gasolina;"
 i) peleteria e suas obras e peleteria artificial classificadas no Capítulo 43 da NBM/SH;
-j) perfumes e cosméticos classificados nas posições 3303, 3304,  3305 e  3307 da
+j) perfumes e cosméticos classificados nas posições 3303, 3304, 3305 e 3307 da
 NBM/SH;
-l  )
-Revogada a alínea pelo art. 1º, alteração 3ª , da Lei nº 13.410, de 26.12.2001, em
-vigor em 26.12.2001 (publicação), produzindo efeitos a partir de 1º.1.2002.
-Redação anterior dada pelo art. 1º  da Lei nº 13.023/2000, produzindo efeitos de
+l )
+Redação anterior dada pelo art. 1º da Lei nº 13.023/2000, produzindo efeitos de
 1º.1.2001 até 31.12.2001:
 "l) prestações de serviços de comunicação."
 Redação original que produziu efeitos de 1º.1.1996 até 31.12.2000:
@@ -799,10 +686,6 @@ II - alíquota de 12% (doze por cento) para as operações e prestaçõescom
 os seguintes bens, mercadorias e serviços:
 a) animais vivos;
 b) calcário e gesso;
-
-===== PAGINA 22 =====
-____________________________________________________________________
-22
 c) farinha de trigo;
 d) máquinas e aparelhos industriais, exceto peças e partes (NCM 84.17 a
 84.22, 84.24, 84.34 a 84.49, 84.51, 84.53 a 84.65, 84.68, 84.74 a 84.80 e 85.15);
@@ -833,10 +716,6 @@ folha, funcho;
 11. macaxeira, madeira em toras, mamona, mandioca, manjericão,
 manjerona, maxixe, milho em espiga e em grão, morango, mostarda;
 12. nabo e nabiça;
-
-===== PAGINA 23 =====
-____________________________________________________________________
-23
 13. ovos de aves;
 14. palmito, peixes frescos, resfriados ou congelados, pepino, pimentão,
 pimenta;
@@ -863,31 +742,27 @@ regime da sujeição passiva por substituição tributária, com retenção do i
 p) independentemente de sujeição passiva por substituição tributária, os
 veículos classificados na NBM/SH, com o sistema de classificação adotado até 31 de
 dezembro de 1996:
-8701.20.0200, 
-8701.20.9900, 
-8702.10.0100, 
+8701.20.0200,
+8701.20.9900,
+8702.10.0100,
 8702.10.0200,
-8702.10.9900, 
-8704.21.0100, 
-8704.22.0100, 
-8704.23.0100, 
+8702.10.9900,
+8704.21.0100,
+8704.22.0100,
+8704.23.0100,
 8704.31.0100,
 8704.32.0100, 8704.32.9900, 8706.00.0100 e 8706.00.0200;
 q) etanol hidratado combustível - EHC;
 Acrescentada a alínea "q" pelo art. 1º, da Lei nº 21.308, de 13.12.2022, produzindo
-
-===== PAGINA 24 =====
-____________________________________________________________________
-24
 efeitos a partir de 15.7.2022.
 r) gás natural.
 Acrescentada a alínea "r" pelo art. 1º, da Lei nº 21.850, de 19.12.2023, produzindo
 efeitos a partir de 1º.1.2024.
 Nova redação do inciso II dada pelo art. 1º, inciso I , da Lei 18.371, de 15.12.2014,em
-vigor em 17.4.2015 (republicação), produzindo efeitos a partir de 1º.4.2015.  (Ver art. 2º e
+vigor em 17.4.2015 (republicação), produzindo efeitos a partir de 1º.4.2015. (Ver art. 2º e
 3º da Lei 18.371/2014)
 Redação original que produziu efeitos de 1º.1.1996 até 31.3.2015, ressalvadas as
-exceções: 
+exceções:
 "II - alíquota de doze por cento nas prestações de serviço de transporte
 intermunicipal e nas operações com os seguintes bens e mercadorias, exceto em
 relação às saídas promovidas pelos estabelecimentos beneficiados pelas leis
@@ -911,46 +786,29 @@ Nova redação da alínea do inciso dada pelo art. 1º, inciso I , da Lei nº 16
 Redação original que produziu efeitos de 1º.1.1996 até 18.12.2008:
 "a) animais vivos;"
 b) animais vivos;
-Nova redação da alínea do inciso dada pelo art. 1º, inciso I , da Lei nº 16.016, de
 19.12.2008, produzindo efeitos de 1º.4.2009 (1º mês subsequente ao decurso de
 90 dias da publicação em 19.12.2008) até 31.3.2015.
 Redação original que produziu efeitos de 1º.1.1996 até 31.3.2009:
 "b) calcário e gesso;"
-c) 
-hortifrutigranjeiros 
-e 
-agropecuários, 
-em 
-estado 
-natural; 
-casulos 
-do
+c)
+hortifrutigranjeiros
+e
+agropecuários,
+em
+estado
+natural;
+casulos
 bicho-da-seda; semens, embriões, ovos férteis, girinos e alevinos;
 Nova redação da alínea dada do inciso pelo art. 1º, inciso I , da Lei nº 16.016, de
-19.12.2008, produzindo efeitos de 1º.4.2009 (1º mês subsequente ao decurso de
-90 dias da publicação em 19.12.2008) até 31.3.2015.
-Redação original que produziu efeitos de 1º.1.1996 até 31.3.2009:
 "c) farinha de trigo;"
-
-===== PAGINA 25 =====
-____________________________________________________________________
-25
 d) alimentos, sucos de frutas (NCM 2009) e água de coco;
 d.1) água mineral (NCM 2201)
 d.2) ... Vetado ...
-Nova redação da alínea do inciso dada pelo art. 1º, inciso I , da Lei nº 16.016, de
-19.12.2008, produzindo efeitos de 1º.4.2009 (1º mês subsequente ao decurso de
-90 dias da publicação em 19.12.2008) até 31.3.2015.
-Redação original que produziu efeitos de 1º.1.1996 até 31.3.2009:
 "d) máquinas e aparelhos industriais (exceto peças e partes), classificados
 nas posições 8417 a 8422, 8424, 8434 a 8449, 8451, 8453 a 8465, 8468,
 8474 a 8480 e 8515 da NBM/SH;"
 e) rações, farinhas, farelos, tortas e resíduos destinados à alimentação animal ou
 utilizadas na sua fabricação;
-Nova redação da alínea do inciso dada pelo art. 1º, inciso I , da Lei nº 16.016, de
-19.12.2008, produzindo efeitos de 1º.4.2009 (1º mês subsequente ao decurso de
-90 dias da publicação em 19.12.2008) até 31.3.2015.
-Redação original que produziu efeitos de 1º.1.1996 até 31.3.2009:
 "e) massas alimentícias classificadas na posição 1902 da NBM/SH, desde
 que não consumidas no próprio local;"
 f) refeições industriais (NCM 2106.90.90) e demais refeições quando destinadas a
@@ -958,9 +816,6 @@ vendas diretas a corporações, empresas e outras entidades, para consumo de
 seus funcionários, empregados ou dirigentes, bem como fornecimento de
 alimentação de que trata o inciso I do art. 2º, exceto o fornecimento ou a saída de
 bebidas;
-Nova redação da alínea do inciso dada pelo art. 1º, inciso I , da Lei nº 16.016, de
-19.12.2008, produzindo efeitos de 1º.4.2009 (1º mês subsequente ao decurso de
-90 dias da publicação em 19.12.2008) até 31.3.2015.
 Redação anterior dada pelo art. 1º, inciso I, da Lei nº 15.610/2007, que
 produziu efeitos de 22.8.2007 até 31.3.2009:
 "f) óleo diesel (código NCM 2710.19.21), biodiesel (código NCM 3824.90.29),
@@ -975,17 +830,12 @@ Nova redação dad alínea do inciso dada pelo art. 1º, inciso I , da Lei nº
 16.016, de 19.12.2008, produzindo efeitos de 1º.4.2009 (1º mês
 subsequente ao decurso de 90 dias da publicação em 19.12.2008) até
 31.3.2015.
-Redação original que produziu efeitos de 1º.1.1996 até 31.3.2009:
 "g) os seguintes produtos avícolas e agropecuários, desde que em
 estado natural:
 1. abóbora, abobrinha, acelga, agrião, aipim, aipo, alcachofra, alecrim,
 alface,alfavaca, alfazema, algodão em caroço, almeirão, alpiste,
 amendoim, aneto, anis, araruta, arroz, arruda, aspargo, aveia, azedim;
 2. batata, batata-doce, beringela, bertalha, beterraba, beterraba de
-
-===== PAGINA 26 =====
-____________________________________________________________________
-26
 açúcar, brócolis, brotos de feijão, brotos de samambaia, brotos de
 bambu;
 3. cacateira, cambuquira, camomila, cana-de-açúcar, cará, cardo, carnes
@@ -1030,24 +880,12 @@ regulamentação da lei:
 artigos higiênicos semelhantes (NCM 4818.40);"
 6. escovas de dentes (NCM 9603.21.00);
 7. protetor solar (NCM 3304);
-
-===== PAGINA 27 =====
-____________________________________________________________________
-27
 Nova redação da alínea do inciso dada pelo art. 1º, inciso I , da Lei nº
-16.016, de 19.12.2008, produzindo efeitos de 1º.4.2009 (1º mês
-subsequente ao decurso de 90 dias da publicação em 19.12.2008) até
-31.3.2015.
-Redação original que produziu efeitos de 1º.1.1996 até 31.3.2009:
 "h) produtos classificados na posição 1905 da NBM/SH;"
 i) calçados, tecidos, artefatos de tecidos, artigos de cama, mesa e banho, e
 artigos de vestuário, inclusive roupas íntimas e de banho, camisolas e
 pijamas, gravatas, meias, luvas, lenços, xales, echarpes, cachecóis,
 mantilhas e véus;
-Nova redação da alínea do inciso dada pelo art. 1º, inciso I , da Lei nº
-16.016, de 19.12.2008, produzindo efeitos de 1º.4.2009 (1º mês
-subsequente ao decurso de 90 dias da publicação em 19.12.2008) até
-31.3.2015.
 Redação anterior dada pelo art. 1º da Lei nº 13.961, de 19.12.2002,
 produzindo efeitos a partir de 19.12.2002 (publicação):
 "i) refeições industriais classificadas no código 2106.90.0500 da NBM/SH
@@ -1062,11 +900,6 @@ NBM/SH e demais refeições quando destinadas a vendas diretas a
 corporações, empresas e outras entidades, para consumo de seus
 funcionários, empregados ou dirigentes;"
 j) sacolas ecológicas;
-Nova redação da alínea do inciso dada pelo art. 1º, inciso I , da Lei nº
-16.016, de 19.12.2008, produzindo efeitos de 1º.4.2009 (1º mês
-subsequente ao decurso de 90 dias da publicação em 19.12.2008) até
-31.3.2015.
-Redação original que produziu efeitos de 1º.1.1996 até 31.3.2009:
 "j) semens, embriões, ovos férteis, girinos e alevinos;"
 k) de uso doméstico:
 1. artigos para serviço de mesa ou de cozinha, de plástico, madeira, porcelana,
@@ -1081,10 +914,6 @@ passar (NCM 8516.40.00);
 6. chuveiros e duchas;
 7. aparelhos receptores de televisão, até 29 polegadas.
 Redação do item do inciso acrescentada pelo art. 1º, inciso I , da Lei nº
-
-===== PAGINA 28 =====
-____________________________________________________________________
-28
 16.016, de 19.12.2008, produzindo efeitos de 1º.4.2009 (1º mês subsequente
 ao decurso de 90 dias da publicação em 19.12.2008) até 31.3.2015.
 l) assentos (NCM 9401); móveis (NCM 9403); suportes elásticos para camas
@@ -1092,7 +921,6 @@ l) assentos (NCM 9401); móveis (NCM 9403); suportes elásticos para camas
 Nova redação da alínea do inciso dada pelo art. 1º, inciso I , da Lei nº 16.016,
 de 19.12.2008, produzindo efeitos de 1º.4.2009 (1º mês subsequente ao
 decurso de 90 dias da publicação em 19.12.2008) até 31.3.2015.
-Redação original que produziu efeitos de 1º.1.1996 até 31.3.2009:
 "l) serviços de transporte;"
 m) destinados à construção civil:
 1. areia, argila, saibro, pedra bruta, brita graduada e pedra marruada;
@@ -1105,9 +933,6 @@ cimento, de concreto, ou de pedra artificial, mesmo armadas;
 7. pias, lavatórios, colunas para lavatórios, banheiras, bidês, sanitários e
 caixas de descarga, mictórios e aparelhos fixos semelhantes para uso
 sanitário, de porcelana ou cerâmica (NCM 6910.10.00 e 6910.90.00);
-Nova redação da alínea do inciso dada pelo art. 1º, inciso I , da Lei nº 16.016,
-de 19.12.2008, produzindo efeitos de 1º.4.2009 (1º mês subsequente ao
-decurso de 90 dias da publicação em 19.12.2008) até 31.3.2015.
 Redação original que produziu efeitos de 1º.1.1996 até 31.3.2009 (ver art.
 67):
 "m) tijolo, telha, tubo e manilha que, na sua fabricação, tenha sido utilizado
@@ -1119,12 +944,11 @@ n) madeiras e suas obras:
 resinas ou com outros aglutinantes orgânicos (NCM 4410 e 4411);
 4. ... Vetado ...
 5. molduras de madeira (NCM 4414); caixotes, caixas, engradados, barricas e
-embalagens 
-semelhantes, 
-carretéis 
-para 
-cabos, 
-paletes 
+embalagens
+semelhantes,
+carretéis
+cabos,
+paletes
 simples,
 paletescaixas e outros estrados para carga e taipais de paletes (NCM 4415);
 barris, cubas, balsas, dornas, selhas e outras obras de tanoeiro e respectivas
@@ -1133,14 +957,7 @@ e cabos, de ferramentas, de escovas e de vassouras; formas, alargadeiras e
 esticadores, para calçados (NCM 4417); obras de marcenaria ou de
 carpintaria para construções, incluídos os painéis celulares, os painéis para
 soalhos e as fasquias para telhados ("shingles" e "shakes") (NCM 4418);
-Nova redação da alínea do inciso dada pelo art. 1º, inciso I , da Lei nº 16.016,
-de 19.12.2008, produzindo efeitos de 1º.4.2009 (1º mês subsequente ao
-decurso de 90 dias da publicação em 19.12.2008) até 31.3.2015.
 Redação anterior dada pelo art. 1º da Lei nº 14.599, 27.12.2004,
-
-===== PAGINA 29 =====
-____________________________________________________________________
-29
 produzindo efeitos de 27.12.2004 até 31.03.2009:
 "n) tratores, microtratores, máquinas e implementos agropecuários e
 agrícolas classificados nos códigos, posições ou subposições:
@@ -1164,11 +981,11 @@ artigo;"
 Redação original que produziu efeitos de 1º.1.1996 até 26.12.2004:
 "n) tratores, microtratores, máquinas e implementos agropecuários e
 agrícolas (em todos excetuados peças e partes) classificados nos
-códigos, 
-posições 
-ou 
-subposições 
-8701.10.0100, 
+códigos,
+posições
+ou
+subposições
+8701.10.0100,
 8701.90.0100,
 8701.90.0200, 8201, 8424.81, 8432, 8433, 8436 e 8437 da NBM/SH;"
 o) plásticos e suas obras:
@@ -1179,9 +996,6 @@ o) plásticos e suas obras:
 3920);
 5. artigos de transporte ou de embalagem; rolhas, tampas, cápsulas e outros
 dispositivos para fechar recipientes (NCM 3923);
-Nova redação da alínea do inciso dada pelo art. 1º, inciso I , da Lei nº 16.016,
-de 19.12.2008, produzindo efeitos de 1º.4.2009 (1º mês subsequente ao
-decurso de 90 dias da publicação em 19.12.2008) até 31.3.2015.
 Redação original que produziu efeitos de 1º.1.1996 até 31.03.2009:
 "o) veículos automotores novos, classificados nos códigos 8701.20.0200,
 8701.20.9900, 8702.10.0100, 8702.10.0200, 8702.10.9900, 8702.90.0000,
@@ -1196,15 +1010,10 @@ Redação original que produziu efeitos de 1º.1.1996 até 31.03.2009:
 8704.22.0100, 8704.23.0100, 8704.31.0100, 8704.31.0200, 8704.32.0100,
 8704.32.9900, 8706.00.0100 e 8706.00.0200 e na posição 8711, da
 NBM/SH, quando a operação seja realizada sob o regime da sujeição
-
-===== PAGINA 30 =====
-____________________________________________________________________
-30
 passiva por substituição tributária, com retenção do imposto relativo às
 operações subseqüentes, observado o disposto no § 2º deste artigo;"
 p) combustíveis:
 1. combustíveis de aviação (NCM 2710.11.51);
-Nova redação da alínea do inciso dada pelo art. 1º, inciso I , da Lei nº 16.016,
 de 19.12.2008, com alteração dada pelo art. 1º da Lei n. 16.370/2009
 (conforme publicação no DOE 8128 de 29.12.2009), produzindo efeitos a
 partir de 1°.4.2009 (1º mês subsequente ao decurso de 90 dias da publicação
@@ -1217,10 +1026,6 @@ Redação anterior, não produziu efeitos:
 5. gás natural (NCM 2711.11.00 e 2711.21.00);
 6. gás de refinaria (NCM 2711.29.90);
 7. biodiesel (NCM 3824.90.29);
-Nova redação da alínea do inciso dada pelo art. 1º, inciso I , da Lei nº
-16.016, de 19.12.2008, produzindo efeitos de 1º.4.2009 (1º mês
-subsequente ao decurso de 90 dias da publicação em 19.12.2008) até
-31.3.2015.
 Redação anterior acrescentada pelo art. 1º da Lei nº 13.523, de
 11.4.2002, produzindo efeitos de 11.4.2002 até 31.03.2009:
 "p) produtos classificados na Nomenclatura Brasileira de Mercadorias:
@@ -1229,9 +1034,6 @@ assentos (9401); móveis (9403); suportes elásticos para camas
 q) máquinas, implementos, tratores e micro-tratores, agropecuários e
 agrícolas (NCM 8201, 8424.81, 8432, 8436, 8437,e 8701, 8433.20.90,
 8433.51.00, 8433.59.90 e 8433.90.90);
-Nova redação da alínea do inciso dada pelo art. 1º, inciso I , da Lei nº 16.016,
-de 19.12.2008, produzindo efeitos de 1º.4.2009 (1º mês subsequente ao
-decurso de 90 dias da publicação em 19.12.2008) até 31.3.2015.
 Redação anterior acrescentada pelo art. 1º da Lei nº 13.972, de
 26.12.2002, produzindo efeitos de 26.12.2002 até 31.3.2009:
 "q) produtos classificados na Nomenclatura Brasileira de Mercadorias:
@@ -1243,14 +1045,7 @@ aglutinantes orgânicos);"
 r) máquinas e aparelhos industriais, exceto peças e partes (NCM 8417 a
 8422, 8424, 8434 a 8435, 8438 a 8449, 8451, 8453 a 8465, 8468, 8474 a
 8480 e 8515);
-Nova redação da alínea do inciso dada pelo art. 1º, inciso I , da Lei nº 16.016,
-de 19.12.2008, produzindo efeitos de 1º.4.2009 (1º mês subsequente ao
-decurso de 90 dias da publicação em 19.12.2008) até 31.3.2015.
 Redação anterior acrescentada pelo art. 1º da Lei nº 13.972, de
-
-===== PAGINA 31 =====
-____________________________________________________________________
-31
 26.12.2002, produzindo efeitos de 26.12.2002 até 31.3.2009:
 "r) produtos classificados na Nomenclatura Brasileira de Mercadorias:
 Códigos 3909.50.29 (blocos de espuma); 3916.20.00 (perfis de polímeros
@@ -1268,12 +1063,12 @@ Redação anterior dada pelo art. 1º, inciso I , da Lei nº 16.016, de
 19.12.2008, produzindo efeitos de 1º.4.2009 (1º mês subsequente ao
 decurso de 90 dias da publicação em 19.12.2008) até 8.12.2013:
 "s) empilhadeiras (NCM 8427.1019, 8427.2010 e 8427.2090), trator de
-esteira 
-(NCM 
-8429.1190), 
-rolo 
-compactador 
-(NCM 
+esteira
+(NCM
+8429.1190),
+rolo
+compactador
+(NCM
 8429.4000),
 motoniveladoras (NCM 8429.2090), carregadeiras (NCM 8429.51.9),
 escavadeira hidráulica (NCM 8429.5290) e retroescavadeiras (NCM
@@ -1295,10 +1090,6 @@ para veículos, máquinas e equipamentos agrícolas e rodoviários, quando a
 operação seja realizada sob o regime da sujeição passiva por substituição
 tributária, com retenção do imposto relativo às operações subseqüentes, sem
 prejuízo do disposto na alínea seguinte;
-Nova redação da alínea do inciso dada pelo art. 1º, inciso I , da Lei nº
-16.016, de 19.12.2008, produzindo efeitos de 1º.4.2009 (1º mês
-subsequente ao decurso de 90 dias da publicação em 19.12.2008) até
-31.3.2015.
 Redação anterior acrescentada pelo art. 2º da Lei nº 14.599, de
 27.12.2004, produzindo efeitos de 27.12.2004 até 31.03.2009:
 "u) produtos classificados na Nomenclatura Brasileira de Mercadorias:
@@ -1307,17 +1098,9 @@ suas partes (8708.60), elevadores e monta-cargas (8428.10), escadas e
 tapetes rolantes (8428.40) e partes de elevadores (8431.31)."
 v) independentemente de sujeição passiva por substituição tributária, os
 veículos classificados na NBM/SH, com o sistema de classificação adotado
-
-===== PAGINA 32 =====
-____________________________________________________________________
-32
 até 31 de dezembro de 1996: 8701.20.0200, 8701.20.9900, 8702.10.0100,
 8702.10.0200, 8702.10.9900, 8704.21.0100, 8704.22.0100, 8704.23.0100,
 8704.31.0100, 8704.32.0100, 8704.32.9900, 8706.00.0100 e 8706.00.0200;
-Nova redação da alínea do inciso dada pelo art. 1º, inciso I , da Lei nº
-16.016, de 19.12.2008, produzindo efeitos de 1º.4.2009 (1º mês
-subsequente ao decurso de 90 dias da publicação em 19.12.2008) até
-31.3.2015.
 Redação anterior dada pelo art. 1º da Lei nº 14.604, de 5.1.2005,
 produzindo efeitos de 5.1.2005 até 31.3.2009:
 "v) pias, lavatórios, colunas para lavatórios, banheiras, bidês, sanitários
@@ -1361,10 +1144,6 @@ numérico computadorizado (NCM 8537.10.1); controlador programável (NCM
 8. diodos, transistores e dispositivos semelhantes semicondutores; dispositivos
 fotossensíveis semicondutores, incluídas as células fotovoltaicas, mesmo montadas
 em módulos ou painéis; diodos emissores de luz; cristais piezelétricos montados
-
-===== PAGINA 33 =====
-____________________________________________________________________
-33
 (NCM 8541); circuitos integrados e microconjuntos, eletrônicos (NCM 8542);
 máquinas e aparelhos elétricos com funções próprias, não especificados nem
 compreendidos em outras posições (NCM 8543);
@@ -1376,24 +1155,19 @@ individualmente, mesmo com condutores elétricos ou munidos de peças de conexã
 feixes e cabos de fibras óticas (NCM 9001.10.20); dispositivos de cristais líquidos -
 LCD (NCM 9013.80.10);
 10. instrumentos e aparelhos digitais para medicina, cirurgia, odontologia e veterinária
-(NCM 
-9018); 
-aparelhos 
-digitais 
-de 
-mecanoterapia; 
-de 
-ozonoterapia, 
+(NCM
+9018);
+aparelhos
+digitais
 de
+mecanoterapia;
+ozonoterapia,
 oxigenoterapia, de aerossolterapia; aparelhos digitais respiratórios de reanimação e
 outros aparelhos digitais de terapia respiratória (NCM 9019);
 11. implantes dentários em geral, de qualquer material, inclusive os de titânio,
 de todas as formas, diâmetros e alturas, próprios para serem fixados nos
 ossos da mandíbula, maxilar ou zigomático, suas partes, acessórios e
 complementos (NCM 8108).
-Nova redação da alínea do inciso dada pelo art. 1º, inciso I , da Lei nº 16.016,
-de 19.12.2008, produzindo efeitos de 1º.4.2009 (1º mês subsequente ao
-decurso de 90 dias da publicação em 19.12.2008) até 31.3.2015.
 Redação anterior dada pelo art. 1º da Lei nº 14.738, de 8.6.2005, em vigor
 em 9.6.2005 (publicação), produzindo efeitos de 5.1.2005 até 31.3.2009:
 "x) ladrilhos e placas de cerâmica classificados nos códigos 6907 e 6908
@@ -1406,7 +1180,6 @@ Comum do Mercosul - NCM;"
 z) automotrizes para espalhar e calcar pavimentos betuminosos (NCM
 8479.1010), reservatórios (NCM 7310.1000) e outros: vassouras, escovas,
 pincéis, espanadores, rodos, etc. (NCM 9603.9000).
-Nova redação da alínea do inciso dada pelo art. 1º, inciso I , da Lei nº 16.016,
 de 19.12.2008, com alteração dada pelo art. 1º da Lei n. 16.370/2009
 (conforme republicação no DOE 8285 de 16.08.2010), produzindo efeitos de
 1º.4.2009 (1º mês subsequente ao decurso de 90 dias da publicação em
@@ -1416,23 +1189,19 @@ Nova redação dada à alínea do inciso pelo art. 1º, inciso I , da Lei nº
 16.370/2009 (conforme publicação no DOE 8128 de 29.12.2009), que não
 produziu efeitos:
 "z) ...vetada..."
-Redação anterior acrescentada pelo art. 1º  da Lei nº 15.003, de
+Redação anterior acrescentada pelo art. 1º da Lei nº 15.003, de
 26.1.2006, produzindo efeitos de 26.1.2006 até 31.3.2009:
 "z) produtos classificados na Nomenclatura Brasileira de Mercadorias:
 retroescavadeiras (8429.5900), carregadeiras (8429.5190 - 8429.5199),
 motoniveladoras (8429.2090), empilhadeiras (8427.2090, 8427.2010 e
 8427.1019), escavadeira hidráulica (8429.5290), trator de esteira
 (8429.1190) e rolo compactador (8429.4000)."
-
-===== PAGINA 34 =====
-____________________________________________________________________
-34
 z-A)
 Revogada a alínea do inciso pelo art. 1º, inciso I , da Lei nº 16.016, de
 19.12.2008, com alteração dada pelo art. 1º da Lei nº 16.370/2009,
 produzindo efeitos de 1º.4.2009 (1º mês subsequente ao decurso de 90 dias
 da publicação em 19.12.2008) até 31.3.2015.
-Redação anterior acrescentada pelo art. 1º  da Lei nº 15.429, de 15.1.2007,
+Redação anterior acrescentada pelo art. 1º da Lei nº 15.429, de 15.1.2007,
 produzindo efeitos de 8.2.2007 (conforme republicação de 7.2.2007) até
 31.3.2009:
 "z-A) produtos classificados na Nomenclatura Brasileira de Mercadorias –
@@ -1444,13 +1213,12 @@ Revogada a alínea do inciso pelo art. 1º, inciso I , da Lei nº 16.016, de
 19.12.2008, com alteração dada pelo art. 1º da Lei nº 16.370/2009,
 produzindo efeitos de 1º.4.2009 (1º mês subsequente ao decurso de 90 dias
 da publicação em 19.12.2008) até 31.3.2015.
-Redação anterior acrescentada pelo art. 4º  da Lei nº 15.760, de 14.1.2008,
+Redação anterior acrescentada pelo art. 4º da Lei nº 15.760, de 14.1.2008,
 produzindo efeitos de 14.1.2008 até 31.3.2009:
 "z-B) produtos classificados na Nomenclatura Brasileira de Mercadorias –
 NBM/SH no código e especificação abaixo:
 1. NCM
 PRODUTO
-8414
 Bombas de ar ou de
 vácuo, compressores
 de ar ou de outros
@@ -1461,7 +1229,6 @@ reciclagem, com
 ventilador
 incorporado, mesmo
 filtrantes.
-8443
 Máquinas e
 aparelhos de
 impressão por meio
@@ -1475,21 +1242,17 @@ e telecopiadoras
 (fax), mesmo
 combinados entre si;
 partes e acessórios.
-8470.2 
+8470.2
 Máquinas de calcular
 programáveis pelo
 usuário e dotadas de
-
-===== PAGINA 35 =====
-____________________________________________________________________
-35
 aplicações
-especializadas 
-8470.50.1 
+especializadas
+8470.50.1
 Caixa registradora eletrônica
-84.71 
-...vetado... 
-8472.90.10 
+84.71
+...vetado...
+8472.90.10
 Máquinas,
 equipamentos e suas
 unidades baseadas
@@ -1497,48 +1260,39 @@ em técnicas digitais
 próprias para
 aplicações em
 automação de
-serviços 
-8472.90.2 
-8472.90.30 
-8472.90.5 
+serviços
+8472.90.2
+8472.90.30
+8472.90.5
 8472.90.90
-84.73 
+84.73
 Partes e acessórios
 reconhecíveis como
-exclusiva 
-ou
+exclusiva
 principalmente
-destinados 
+destinados
 a
-máquinas 
-e
-aparelhos 
+máquinas
 da
 subposição 8470.2,
 do item 8470.50.1,
 da posição 84.71,
-dos 
+dos
 subitens
 8472.90.10,
-8472.90.30 
-e
+8472.90.30
 8472.90.90, e dos
-itens 
-8472.90.2 
-e
+itens
+8472.90.2
 8472.90.5 desde que
-tais 
-máquinas 
-e
-aparelhos 
+tais
 estejam
-relacionados 
+relacionados
 neste
 Anexo.
 8473.30
 Partes e acessórios
-das 
-máquinas 
+das
 da
 posição 8471.
 8473.30.19
@@ -1546,72 +1300,51 @@ Outros
 Excluídos os produtos classificados na posição NCM 8473.30.41 pelo art. 1º da Lei n° 15.794/2008, em vigor em 09.04.2008,
 produzindo efeitos a partir de 14.01.2008.
 Redação anterior acrescentada pelo art. 4º da Lei nº 15.760/2008, não produziu efeitos:
-"8473.30.41      Placas-mãe ("mother boards")"
+"8473.30.41 Placas-mãe ("mother boards")"
 Excluídos os produtos classificados na posição NCM 8473.30.42 pelo art. 1º da Lei n° 15.794/2008, em vigor em 09.04.2008,
-produzindo efeitos a partir de 14.01.2008.
-Redação anterior acrescentada pelo art. 4º da Lei nº 15.760/2008, não produziu efeitos:
-
-===== PAGINA 36 =====
-____________________________________________________________________
-36
-"8473.30.42      Placas (módulos) de memória com uma superfície inferior ou igual a 50 cm2."
-8501.10.1 
-Motores de passo 
-8504
+"8473.30.42 Placas (módulos) de memória com uma superfície inferior ou igual a 50 cm2."
+8501.10.1
+Motores de passo
 Transformadores
 elétricos,
 conversores elétricos
 estáticos
-(retificadores, 
+(retificadores,
 por
-exemplo), 
+exemplo),
 bobinas
 de reatância e de
 alta indução.
-85.17 
-Aparelhos 
+85.17
 elétricos
-para 
-telefonia 
-ou
+telefonia
 telegrafia, por fios e
-os 
-aparelhos 
-de
 telecomunicação por
-corrente 
+corrente
 portadora
-ou 
-de
 telecomunicação
-digital; 
-aparelhos
+digital;
 telefônicos por fio,
-conjugados 
+conjugados
 com
-aparelho 
+aparelho
 telefônico
-sem 
-fio, 
+sem
+fio,
 que
 incorporem controle
 por técnicas digitais,
-do 
 subitem
-8517.11.00, 
+8517.11.00,
 exceto
-os 
-aparelhos
-classificados 
+classificados
 no
 subitem 8517.19.10
 e no item 8517.19.9,
 salvo os terminais
-dedicados 
-de
+dedicados
 centrais privadas de
-comutação 
-8518
+comutação
 Microfones e seus
 suportes,
 alto-falantes, mesmo
@@ -1619,389 +1352,251 @@ montados no seus
 receptáculos; fones
 de ouvido, mesmo
 combinados com um
-microfone, 
-e
+microfone,
 conjuntos ou sortidos
 constituídos por um
 microfone e um ou
-mais 
+mais
 alto-falantes;
 amplificadores
-elétricos 
-de
 audiofrequência;
-aparelhos 
-elétricos
 de amplificação de
-
-===== PAGINA 37 =====
-____________________________________________________________________
-37
 som.
-8519
-Aparelhos 
-de
 gravação de som;
-aparelhos 
-de
 reprodução de som;
-aparelhos 
-de
-gravação 
-e 
-de
+gravação
 reprodução de som.
-8523
-Discos, 
+Discos,
 fitas,
-dispositivos 
-de
+dispositivos
 armazenamento não
 volátil de dados à
-base 
-de
+base
 semicondutores,
 "cartões inteligentes"
-("smart 
-cards") 
-e
+("smart
+cards")
 outros suportes para
 gravação de som ou
-para 
 gravações
 semelhantes, mesmo
-gravados, 
+gravados,
 incluídos
 as matrizes e moldes
-galvânicos 
-para
+galvânicos
 fabricação de discos.
-8525
-Aparelhos
 transmissores
-(emissores) 
-para
-radiodifusão 
-ou
-televisão, 
+(emissores)
+radiodifusão
+televisão,
 mesmo
-incorporando 
+incorporando
 um
 aparelho receptor ou
-um 
-aparelho 
-de
-gravação 
-ou 
-de
+um
 reprodução de som;
-câmeras 
-de
-televisão, 
+câmeras
 câmeras
 fotográficas digitais e
 câmeras de vídeo.
-8525.10 
+8525.10
 Aparelhos transmissores (emissores) e aparelhos
 transmissores (emissores) com aparelho receptor
-incorporado baseados em técnica digital 
-8525.20 
-8527.90.1 
+incorporado baseados em técnica digital
+8525.20
+8527.90.1
 Receptores pessoais
 de radiomensagens
-(Pager) 
+(Pager)
 8528.41.20
 ...vetado...
 8528.51.20
 ...vetado...
 8528.71.19
-Monitores 
-e
+Monitores
 projetores, que não
 incorporem aparelho
-
-===== PAGINA 38 =====
-____________________________________________________________________
-38
-receptor 
-de
+receptor
 televisão; aparelhos
-receptores 
-de
-televisão, 
-mesmo
+receptores
 que incorporem um
 aparelho receptor de
 radiodifusão ou um
-aparelho 
-de
-gravação 
-ou 
-de
 reprodução de som
-ou 
-de 
 imagens.
 Receptor-decodificad
 or integrado (IRD) de
-sinais 
+sinais
 digitalizados
 de vídeo codificados.
-Outros
 8528.71.90
-Monitores 
-e
+Monitores
 projetores, que não
 incorporem aparelho
-receptor 
-de
+receptor
 televisão; aparelhos
-receptores 
-de
-televisão, 
-mesmo
+receptores
 que incorporem um
 aparelho receptor de
 radiodifusão ou um
-aparelho 
-de
-gravação 
-ou 
-de
 reprodução de som
-ou 
-de 
 imagens.
-Outros
-85.29 
+85.29
 Partes reconhecíveis
 como exclusiva ou
 principalmente
-destinadas 
+destinadas
 aos
-aparelhos 
-das
 subposições 8525.10
-e 8525.20 
-85.31 
+e 8525.20
+85.31
 Aparelhos digitais de
 sinalização acústica
 ou visual, exceto os
-aparelhos
-residenciais 
-8532.21.10 
+residenciais
+8532.21.10
 Condensadores elétricos próprios para montagem em
 superfície (SMD)
-8532.23.10 
-8532.24.10 
-8532.25.10 
-8532.29.10 
+8532.23.10
+8532.24.10
+8532.25.10
+8532.29.10
 8532.30.10
-
-===== PAGINA 39 =====
-____________________________________________________________________
-39
-85.33 
+85.33
 Resistências
-elétricas 
+elétricas
 próprias
 para montagem em
-superfície (SMD) 
+superfície (SMD)
 8534.00.00
-Circuito 
+Circuito
 impressos
-multicamadas 
-e
-circuitos 
+multicamadas
+circuitos
 impressos
 flexíveis
 multicamadas,
-próprios 
-para 
+próprios
 as
 máquinas,
 aparelhos,
-equipamentos 
-e
-dispositivos
-constantes 
+equipamentos
+constantes
 neste
-Anexo. 
-8536.50 
+Anexo.
+8536.50
 Interruptor,
 seccionador,
-comutador 
-e
-codificador digitais 
-8536.90.40 
-Conectores 
-para
-circuito impresso 
+comutador
+codificador digitais
+8536.90.40
+Conectores
+circuito impresso
 8537.10.1
 Comando numérico
-computadorizado 
-8537.10.20 
+computadorizado
+8537.10.20
 Controlador
-programável 
-8537.10.30 
-Controlador 
-de
+programável
+8537.10.30
+Controlador
 demanda de energia
-elétrica 
+elétrica
 Excluídos os produtos classificados na posição NCM 8538.90.10 pelo art. 1º da Lei n° 15.794/2008, em vigor em 09.04.2008,
-produzindo efeitos a partir de 14.01.2008.
-Redação anterior acrescentada pelo art. 4º da Lei nº 15.760/2008, não produziu efeitos:
-"8538.90.10     Circuitos impressos com componentes elétricos ou eletrônicos, montados, partes da subposição 8536.50, do
+"8538.90.10 Circuitos impressos com componentes elétricos ou eletrônicos, montados, partes da subposição 8536.50, do
 item 8537.10.1 e dos subitens 8537.10.20 e 8537.10.30"
 85.41
 Diodos, transistores
-e 
-dispositivos
 semelhantes
 semicondutores;
-dispositivos
 fotossensíveis
 semicondutores,
 incluídas as células
 fotovoltaicas, mesmo
-montadas 
-em
+montadas
 módulos ou painéis;
 diodos emissores de
-luz; 
+luz;
 cristais
 piezelétricos
 montados
-
-===== PAGINA 40 =====
-____________________________________________________________________
-40
 85.42
 Circuitos integrados
-e 
 microconjuntos,
-eletrônicos 
-8543
-Máquinas 
-e
-aparelhos 
-elétricos
-com 
+eletrônicos
 funções
-próprias, 
+próprias,
 não
-especificados 
+especificados
 nem
-compreendidos 
-em
+compreendidos
 outras posições do
 presente capítulo.
-8544
-Fios, 
+Fios,
 cabos
 (incluídos os cabos
-coaxiais) 
-e 
-outros
+coaxiais)
 condutores, isolados
 para usos elétricos
-(incluídos 
-os
-envernizados 
-ou
+(incluídos
+envernizados
 oxidados
 anodicamente),
 mesmo com peças
 de conexão; cabos
-de 
-fibras 
+fibras
 óticas,
 constituídos de fibras
 embainhadas
 individualmente,
-mesmo 
-com
 condutores elétricos
 ou munidos de peças
 de conexão.
 8544.70.10
-Cabos 
-de 
-fibras
-óticas 
-com
+óticas
 revestimento externo
-de material dielétrico 
+de material dielétrico
 8544.70.20
-Cabos 
-de 
-fibras
-óticas 
-com
+óticas
 revestimento externo
 de aço, próprios para
-instalação submarina 
+instalação submarina
 8544.70.30
-Cabos 
-de 
-fibras
-óticas 
-com
+óticas
 revestimento externo
-de alumínio 
+de alumínio
 8544.70.90
-Outros 
-cabos 
-de
-fibras óticas 
+fibras óticas
 9001.10.1
-Fibras óticas 
+Fibras óticas
 9001.10.20
 Feixes e cabos de
-fibras óticas 
+fibras óticas
 9013.80.10
-Dispositivos 
-de
-cristais 
+cristais
 líquidos
-
-===== PAGINA 41 =====
-____________________________________________________________________
-41
-(LCD) 
+(LCD)
 90.18
-Instrumentos 
-e
-aparelhos 
+Instrumentos
 digitais
-para 
 medicina,
 cirurgia, odontologia
 e veterinária
 90.19
 Aparelhos digitais de
-mecanoterapia; 
-de
-ozonoterapia, 
-de
-oxigenoterapia, 
-de
+mecanoterapia;
+ozonoterapia,
+oxigenoterapia,
 aerossolterapia;
-aparelhos 
 digitais
-respiratórios 
-de
+respiratórios
 reanimação e outros
 aparelhos digitais de
 terapia respiratória
 Excluídos os produtos classificados na posição NCM 9028 pelo art. 1º da Lei n° 15.794/2008, em vigor em 09.04.2008,
-produzindo efeitos a partir de 14.01.2008.
-Redação anterior acrescentada pelo art. 4º da Lei nº 15.760/2008, não produziu efeitos:
-"90.28      Contadores digitais de gases, líquidos ou de eletricidade incluídos os aparelhos para sua aferição"
+"90.28 Contadores digitais de gases, líquidos ou de eletricidade incluídos os aparelhos para sua aferição"
 Excluídos os produtos classificados na posição NCM 9032.89 pelo art. 1º da Lei n° 15.794/2008, em vigor em 09.04.2008,
-produzindo efeitos a partir de 14.01.2008.
-Redação anterior acrescentada pelo art. 4º da Lei nº 15.760/2008, não produziu efeitos:
-"9032.89      Instrumentos e aparelhos digitais para regulação ou controle automáticos"
+"9032.89 Instrumentos e aparelhos digitais para regulação ou controle automáticos"
 "."
 IIA - alíquota de 20% (vinte por cento) nas operações com águas
 gaseificadas, adicionadas de açúcar ou de outros edulcorantes ou aromatizadas,
@@ -2009,19 +1604,13 @@ refrigerantes, refrescos e outros, cervejas sem álcool e isotônicos (NCM 22.02
 Acrescentado o inciso IIA pelo art. 1º, da Lei nº 21.308, de 13.12.2022, produzindo
 efeitos a partir de 13.3.2023.
 III - alíquota de vinte e cinco por cento (25%) nas operações com:
-Nova redação do "caput" do inciso III dada  pelo art. 1º, inciso I , da Lei nº 16.016, de
+Nova redação do "caput" do inciso III dada pelo art. 1º, inciso I , da Lei nº 16.016, de
 19.12.2008, produzindo efeitos a partir de 1º.4.2009 (1º mês subsequente ao decurso de
 90 dias da publicação em 19.12.2008).
-Redação original que produziu efeitos de 1º.1.1996 até 31.3.2009:
 "III - alíquota de 7% (sete por cento) para as operações com:"
 a) armas e munições, suas partes e acessórios (NCM Capítulo 93);
 Nova redação da alínea "a" dada pelo art. 1º, inciso I , da Lei nº 16.016, de 19.12.2008,
 produzindo efeitos a partir de 1º.4.2009 (1º mês subsequente ao decurso de 90 dias da
-publicação em 19.12.2008).
-
-===== PAGINA 42 =====
-____________________________________________________________________
-42
 Redação acrescentada pelo art. 1º da Lei nº 13.753/2002, produzindo efeitos de
 27.8.2002 até 31.3.2009:
 "a) alimentos, quando destinados à merenda escolar, nas vendas internas à órgãos da
@@ -2035,21 +1624,11 @@ Redação original em vigor de 1º.1.1996 até 13.12.2000:
 b) balões e dirigíveis; planadores, asas voadoras e outros veículos aéreos,
 não concebidos para propulsão com motor (NCM 8801.00.00);
 Nova redação da alínea "b" dada pelo art. 1º, inciso I , da Lei nº 16.016, de 19.12.2008,
-produzindo efeitos a partir de 1º.4.2009 (1º mês subsequente ao decurso de 90 dias da
-publicação em 19.12.2008).
-Revogada pelo art. 7º da Lei nº 13.214/2001, em vigor em 29.6.2001, produzindo efeitos
-de 14.12.2000 até 26.8.2002:
 "b)"(REVOGADA)
-Redação original em vigor de 1º.1.1996 até 13.12.2000:
 "b) gabinete classificado no código 8473.30.0100 da NBM/SH;"
 c) embarcações de esporte e de recreio (NCM 8903);
 Nova redação da alínea "c" dada pelo art. 1º, inciso I , da Lei nº 16.016, de 19.12.2008,
-produzindo efeitos a partir de 1º.4.2009 (1º mês subsequente ao decurso de 90 dias da
-publicação em 19.12.2008).
-Revogada pelo art. 7º da Lei nº 13.214/2001, em vigor em 29.6.2001, produzindo efeitos
-de 14.12.2000 até 26.8.2002:
 "c)"(REVOGADO)
-Redação original em vigor de 1º.1.1996 até 13.12.2000:
 "c) produtos de informática e automação, produzidos por estabelecimentos industriais,
 que estejam isentos do imposto sobre produtos industrializados e atendam às
 disposições do art. 4º da Lei nº 8.248, de 23 de outubro de 1991 - desde que
@@ -2057,10 +1636,6 @@ relacionados em portaria conjunta dos Ministérios da Ciência e Tecnologia e da
 baixada por força do art. 6º do Decreto Federal nº 792, de 2 de abril de 1993 - ou da Lei
 nº 8.387, de 30 de dezembro de 1991, regulamentada pelo Decreto nº 1.885, de 26 de
 abril de 1996;"
-
-===== PAGINA 43 =====
-____________________________________________________________________
-43
 d) (REVOGADA)
 Revogada a alínea "d"pelo art. 8º, da Lei nº 21.308, de 13.12.2022, produzindo efeitos a
 partir de 23.6.2022
@@ -2068,31 +1643,22 @@ Redação anterior da alínea "d" dada pelo art. 1º, inciso I , da Lei nº 16.0
 19.12.2008, produziu efeitos de 1º.4.2009 (1º mês subsequente ao decurso de 90 dias da
 publicação em 19.12.2008) até 22.6.2022:
 "d) energia elétrica destinada à eletrificação rural;"
-Revogada pelo art. 7º da Lei nº 13.214/2001, em vigor em 29.6.2001, produzindo efeitos
-de 14.12.2000 até 26.8.2002:
 "d)"(REVOGADA)
-Redação original em vigor de 1º.1.1996 até 13.12.2000:
-"d) 
-fios 
-e 
-tecidos 
-de 
-seda, 
-desde 
-que 
-promovidas 
-por 
+"d)
+fios
+tecidos
+seda,
+desde
+que
+promovidas
+por
 estabelecimento
 industrial-fabricante localizado neste Estado;"
 e) peleteria e suas obras e peleteria artificial (NCM Capítulo 43);
 Acrescentada a alínea "e" pelo art. 1º, inciso I , da Lei nº 16.016, de 19.12.2008,
-produzindo efeitos a partir de 1º.4.2009 (1º mês subsequente ao decurso de 90 dias da
-publicação em 19.12.2008).
 f) perfumes e cosméticos (NCM: 3303; 3304; 3305, exceto 3305.10.00; e
 3307, exceto 3307.20);
 Acrescentada a alínea "f" pelo art. 1º, inciso I , da Lei nº 16.016, de 19.12.2008,
-produzindo efeitos a partir de 1º.4.2009 (1º mês subsequente ao decurso de 90 dias da
-publicação em 19.12.2008).
 IV - (REVOGADO)
 Revogado o inciso IV pelo art. 1º, inciso IV, da Lei 18.371/2014, em vigor em 17.12.2014
 (publicação), produzindo efeitos a partir de 1º.4.2015 (1º dia do quarto mês subsequente
@@ -2105,16 +1671,11 @@ a) gasolina, exceto para aviação;
 b) álcool anidro para fins combustíveis;"
 Redação anterior dada pelo art. 1º, alteração 1ª , da Lei nº 13.410, de 26.12.2001,
 produzindo efeitos de 1º.1.2002 até 31.3.2009:
-
-===== PAGINA 44 =====
-____________________________________________________________________
-44
 "IV - alíquota de 18% (dezoito por cento) para os demais serviços, bens e mercadorias."
-Redação original que produziu efeitos de 1º.1.1996 até 31.12.2001:
 "IV - alíquota de 17% para demais serviços, bens e mercadorias, inclusive álcool
 hidratado."
 V - alíquota de 29% (vinte e nove por cento) nas operações com:
-Nova redação do caput do inciso V  dada pelo art. 3º, da Lei nº 21.308, de 13.12.2022,
+Nova redação do caput do inciso V dada pelo art. 3º, da Lei nº 21.308, de 13.12.2022,
 produzindo efeitos a partir de 23.6.2022
 Redação anterior dada pelo art. 1º, inciso I, da Lei nº 16.016, de 19.12.2008, produziu
 efeitos de 1º.4.2009 até 22.6.2022:
@@ -2135,36 +1696,22 @@ de 26.12.2001, produzindo efeitos de 1º.1.2002 até 31.3.2009:
 "a) gasolina;"
 b) fumo e sucedâneos, manufaturados (NCM 2402.10.00 a 2403.99.90);
 Nova redação do inciso V dada pelo art. 1º, inciso I, da Lei nº 16.016, de 19.12.2008,
-produzindo efeitos a partir de 1º.4.2009 (1º mês subsequente ao decurso de 90 dias da
-publicação em 19.12.2008).
-Redação anterior acrescentada pelo art. 1º, alteração 2ª, da Lei nº 13.410, de
-26.12.2001, produzindo efeitos de 1º.1.2002 até 31.3.2009:
 "b) álcool anidro para fins combustíveis;"
 c) bebidas alcoólicas (NCM 22.03, 22.05, 22.06 e 22.08);
-
-===== PAGINA 45 =====
-____________________________________________________________________
-45
 Nova redação da alínea dada pelo art. 1º da Lei nº 20.531, de 14.4.2021, produzindo
 efeitos a partir de 1º.4.2021.
 Redação anterior do inciso V dada pelo art. 1º, inciso I, da Lei nº 16.016, de 19.12.2008,
 produziu efeitos de 1º.4.2009 (1º mês subsequente ao decurso de 90 dias da publicação
 em 19.12.2008) até 31.3.3021:
 "c) bebidas alcoólicas (NCM 2203, 2204, 2205, 2206 e 2208);"
-Redação anterior acrescentada pelo art. 1º, alteração 2ª, da Lei nº 13.410, de
-26.12.2001, produzindo efeitos de 1º.1.2002 até 31.3.2009:
 "c) bebidas alcoólicas classificadas nas posições 2203, 2204, 2205, 2206 e 2208 da
 NBM/SH;"
 d) (REVOGADA)
 Revogada a alinea pelo art. 1º, inciso I, da Lei nº 16.016, de 19.12.2008, produzindo
-efeitos a partir de 1º.4.2009 (1º mês subsequente ao decurso de 90 dias da publicação
 em 19.12.2008).
-Redação anterior acrescentada pelo art. 1º, alteração 2ª, da Lei nº 13.410, de
-26.12.2001, produzindo efeitos de 1º.1.2002 até 31.3.2009:
 "d) fumos e sucedâneos manufaturados classificados no Capitulo 24 da NBM/SH."
 e)(REVOGADA)
 Revogada a alínea pelo art. 8º, da Lei nº 21.308, de 13.12.2022, produzindo efeitos a
-partir de 23.6.2022
 Redação anterior acrescentada pelo art. 1º, inciso II, da Lei 18.371, de 15.12.2014, em
 vigor em 17.12.2014 (republicação), produziu efeitos de 1º.04.2015 (1º dia do quarto mês
 subsequente ao da publicação) até 22.6.2022:
@@ -2179,10 +1726,6 @@ subsequente ao da publicação) até 22.6.2022:
 VI - alíquota de dezoito por cento (18%) nas operações com:
 Nova redação do inciso VI dada pelo art. 2º da Lei nº 21.850, de 19.12.2023, produzindo
 efeitos a partir de 18.3.2024 (após 90 dias da publicação em 19.12.2023).
-
-===== PAGINA 46 =====
-____________________________________________________________________
-46
 Redação anterior dada pelo art. 4º, da Lei nº 21.308, de 13.12.2022, produzindo efeitos
 de 23.6.2022 até 17.3.2024 (90 dias da publicação da Lei nº 21.850/2023, em
 19.12.2024):
@@ -2207,26 +1750,18 @@ efeitos de 1º.4.2009 (1º mês subsequente ao decurso de 90 dias da publicaçã
 19.12.2008) até 22.6.2022:
 "VI - alíquota de dezoito por cento (18%) nas operações com os demais bens e
 mercadorias."
-Redação anterior acrescentada pelo art. 1º, alteração 2ª, da Lei nº 13.410, de
-26.12.2001, produzindo efeitos de 1º.1.2002 até 31.3.2009:
 "VI - alíquota de 27% (vinte e sete por cento) para operações e prestações com:
 a) energia elétrica, exceto a destinada à eletrificação rural;
 b) prestação de serviços de comunicação;
 c) bebidas alcoólicas classificadas nas posições 2203, 2204, 2205, 2206 e 2208 da
-NBM/SH;
-d) fumos e sucedâneos manufaturados classificados no Capitulo 24 da NBM/SH". 
+d) fumos e sucedâneos manufaturados classificados no Capitulo 24 da NBM/SH".
 VIIA - alíquota de dezenove por cento (19%) nas operações com energia
 elétrica, exceto a destinada à eletrificação rural.
 Acrescentado inciso VIIA pelo art. 3º, da Lei nº 21.850, de 19.12.2023, produzindo efeitos
 a partir de 18.3.2024 (após 90 dias da publicação da Lei nº 21.850/2023, em
-
-===== PAGINA 47 =====
-____________________________________________________________________
-47
 19.12.2023).
 VII (REVOGADO)
 Revogado o inciso pelo art. 1º, inciso I , da Lei nº 16.016, de 19.12.2008, produzindo
-efeitos a partir de 1º.4.2009 (1º mês subsequente ao decurso de 90 dias da publicação
 em 19.12.2008).
 Redação anterior acrescentada pelo art. 1º, da Lei nº 14.036, de 20.3.2003, produzindo
 efeitos de 11.04.2003 até 31.03.2009, aplicando-se-lhe a numeração subsequente:
@@ -2254,20 +1789,13 @@ III - das prestações de serviço de transporte, ainda que contratado no
 exterior, e o de comunicação transmitida ou emitida no estrangeiro e recebida neste
 Estado;
 Nova redação do inciso III dada pelo art. 1º, inciso I , da Lei nº 16.016, de 19.12.2008,
-produzindo efeitos a partir de 1º.4.2009 (1º mês subsequente ao decurso de 90 dias da
-publicação em 19.12.2008).
 Redação original do inciso III que produziu efeitos de 1º.1.1996 até 31.3.2009:
 "III - da prestação de serviço de transporte, ainda que contratado no exterior, e o de
-
-===== PAGINA 48 =====
-____________________________________________________________________
-48
 comunicação transmitida ou emitida no estrangeiro e recebida neste Estado;"
 IV - (REVOGADO)
 Revogado o inciso IV pelo art. 61, inciso II, da Lei n. 18.573, de 30.9.2015, em vigor em
 2.10.2015 (publicação), produzindo efeitos a partir de 1º.1.2016.
 Redação anterior do inciso IV dada pelo art. 1º, inciso I , da Lei nº 16.016, de 19.12.2008,
-produzindo efeitos a partir de 1º.4.2009 (1º mês subsequente ao decurso de 90 dias da
 publicação em 19.12.2008) até 31.12.2015:
 "IV - o destinatário da mercadoria ou do serviço for consumidor final localizado em outra
 unidade federada, desde que não contribuinte do imposto."
@@ -2285,7 +1813,6 @@ produzindo efeitos a partir de 2.1.2014 (publicação) até 31.3.2015:
 "§ 2º. A aplicação da alíquota prevista na alínea "u" do inciso II deste artigo independerá
 da sujeição ao regime da substituição tributária nas seguintes situações:"
 Redação anterior do caput do § 2º dada pelo art. 1º, inciso I , da Lei nº 16.016, de
-19.12.2008, produzindo efeitos a partir de 1º.4.2009 (1º mês subsequente ao decurso de
 90 dias da publicação em 19.12.2008) até 01.01.2014:
 "§ 2º. A aplicação da alíquota prevista na alínea “t” do inciso II deste artigo, independerá
 da sujeição ao regime da substituição tributária nas seguintes situações:"
@@ -2296,19 +1823,11 @@ I - no recebimento do veículo importado do exterior, por contribuinte do
 imposto, para o fim de comercialização, integração no ativo imobilizado ou uso próprio
 do importador;
 Renumerado o inciso II para inciso I pelo art. 1º, inciso I , da Lei nº 16.016, de
-19.12.2008, produzindo efeitos a partir de 1º.4.2009 (1º mês subsequente ao decurso de
-
-===== PAGINA 49 =====
-____________________________________________________________________
-49
 90 dias da publicação em 19.12.2008).
 Redação original do inciso II que produziu efeitos de 1º.1.1996 até 31.3.2009:
 "II - no recebimento do veículo importado do exterior, por contribuinte do imposto, para o
 fim de comercialização, integração no ativo imobilizado ou uso próprio do importador;"
 Revogado tacitamente o inciso I pelo art. 1º, inciso I , da Lei nº 16.016, de 19.12.2008,
-produzindo efeitos a partir de 1º.4.2009 (1º mês subsequente ao decurso de 90 dias da
-publicação em 19.12.2008).
-Redação original que produziu efeitos de 1º.1.1996 até 31.3.2009:
 "I - em relação aos veículos classificados nos códigos 8701.20.0200, 8701.20.9900,
 8702.10.0100, 702.10.0200, 8702.10.9900, 8704.21.0100, 8704.22.0100, 8704.23.0100,
 8704.31.0100, 8704.32.0100, 8704.32.9900, 8706.00.0100 e 8706.00.0200 da NBM/SH;"
@@ -2316,7 +1835,6 @@ II - na operação realizada pelo fabricante ou importador, que destine o
 veículo diretamente a consumidor ou usuário final, ou quando destinado ao ativo
 imobilizado do adquirente.
 Renumerado o inciso III para inciso II pelo art. 1º, inciso I , da Lei nº 16.016, de
-19.12.2008, produzindo efeitos a partir de 1º.4.2009 (1º mês subsequente ao decurso de
 90 dias da publicação em 19.12.2008).
 Redação original do inciso II que produziu efeitos de 1º.1.1996 até 31.3.2009:
 "III - na operação realizada pelo fabricante ou importador, que destine o veículo
@@ -2327,19 +1845,13 @@ que eventual e posterior alienação do veículo ou sua transferência para outr
 pelo estabelecimento adquirente, ocorra após o transcurso de, no mínimo, 12 (doze)
 meses da respectiva entrada, circunstância que deverá constar no documento fiscal
 emitido referente à aquisição e será informada ao fisco de destino do veículo.
-Nova redação do § 3º dada pelo  art. 1º, inciso I , da Lei nº 16.016, de 19.12.2008,
-produzindo efeitos a partir de 1º.4.2009 (1º mês subsequente ao decurso de 90 dias da
-publicação em 19.12.2008).
+Nova redação do § 3º dada pelo art. 1º, inciso I , da Lei nº 16.016, de 19.12.2008,
 Reintroduzido o §3º pelo art. 1º da Lei nº 14.702, de 25.5.2005, produzindo efeitos de
 27.05.2005 (publicação) até 31.03.2009:
 "§ 3º. Na saída interestadual de mercadoria para a empresa de construção civil inscrita
 no cadastro de contribuintes do ICMS da unidade federada de destino aplica-se a
 alíquota interestadual."
 Revogado pelo art. 7º da Lei nº 13.214, de 29.6.2001, em vigor em 29.6.2001
-
-===== PAGINA 50 =====
-____________________________________________________________________
-50
 (publicação), produzindo efeitos de 14.12.2000 até 26.8.2002:
 "§ 3º" (REVOGADO)
 Redação original do § 3º que produziu efeitos de 1º.1.1996 até 13.12.2000:
@@ -2362,7 +1874,6 @@ aplicação da alíquota prevista no inciso VI do caput e aquela tratada na alí
 inciso II do caput, com os acréscimos legais cabíveis desde a data de entrada do veículo
 no seu estabelecimento."
 Redação anterior do § 4º dada pelo pelo art. 1º, inciso I , da Lei nº 16.016, de
-19.12.2008, produzindo efeitos a partir de 1º.4.2009 (1º mês subsequente ao decurso de
 90 dias da publicação em 19.12.2008) até 1º.1.2014:
 "§ 4º. O não cumprimento da condição, tratada no § 3º, ensejará a cobrança, do
 estabelecimento adquirente, do imposto devido, decorrente da diferença entre a
@@ -2377,10 +1888,6 @@ NBM/SH."
 Redação original do § 4º, acrescentado pelo art. 1º, alteração 2ª, da Lei nº 13.410,
 26.12.2001, em vigor em 26.12.2001 (publicação):
 "§ 4º....Vetado... "
-
-===== PAGINA 51 =====
-____________________________________________________________________
-51
 § 5º O disposto nos §§ 3º e 4º deste artigo aplica-se a veículos
 automotores de passageiros (NCM 87.03) e a veículos comerciais leves com capacidade
 de carga de até 5 t (NCM 87.04), e não se aplica no caso de sinistro com perda
@@ -2388,8 +1895,7 @@ substancial ou total do veículo, a ser comprovada de acordo com a legislação 
 segundo os princípios de contabilidade geralmente aceitos.
 Nova redação do § 5º dada pelo art. 1º da Lei nº 17.907, de 2.1.2014, produzindo efeitos
 a partir de 2.1.2014 (publicação).
-Redação anterior dada pelo  art. 1º, inciso I , da Lei nº 16.016, de 19.12.2008, produzindo
-efeitos a partir de 1º.4.2009 (1º mês subsequente ao decurso de 90 dias da publicação
+Redação anterior dada pelo art. 1º, inciso I , da Lei nº 16.016, de 19.12.2008, produzindo
 em 19.12.2008) até 1º.1.2014:
 "§ 5º. O disposto nos §§ 3º e 4º aplica-se a veículos automóveis de passageiros (NCM
 8703) e veículos comerciais leves com capacidade de carga de até 5 t (NCM 8704), e
@@ -2404,7 +1910,7 @@ transferência para outro Estado pelo estabelecimento adquirente, ocorra após o
 transcurso de, no mínimo, 12 (doze) meses da respectiva entrada, circunstância essa
 que deverá constar no documento fiscal emitido referente à aquisição e será informada
 ao fisco de destino do veículo."
-Redação original do § 5º,  acrescentado pelo art. 1º da Lei nº 14.981, de 28.12.2005, que
+Redação original do § 5º, acrescentado pelo art. 1º da Lei nº 14.981, de 28.12.2005, que
 produziu efeitos de 28.12.2005 (publicação) até 21.1.2007:
 "§ 5º. Para efeito do disposto na parte final prevista no inciso III do § 2º deste artigo, é
 condição para tanto que eventual e posterior alienação do veículo ou sua transferência
@@ -2419,12 +1925,7 @@ valor de mercado, apurado mediante consulta à Tabela FIPE do mês imediatamente
 anterior ao em que ocorreu o sinistro.
 Acrescentado o § 6º pelo art. 1º da Lei nº 17.907, de 2.1.2014, produzindo efeitos a partir
 de 2.1.2014 (publicação).
-Revogado o § 6º pelo  art. 1º, inciso I , da Lei nº 16.016, de 19.12.2008, produzindo
-
-===== PAGINA 52 =====
-____________________________________________________________________
-52
-efeitos a partir de 1º.4.2009 (1º mês subsequente ao decurso de 90 dias da publicação
+Revogado o § 6º pelo art. 1º, inciso I , da Lei nº 16.016, de 19.12.2008, produzindo
 em 19.12.2008) até 1º.1.2014:
 § 6º (REVOGADO)
 Redação anterior do § 6º dada pelo art. 1º da Lei nº 15.450, de 15.1.2007, produzindo
@@ -2450,7 +1951,6 @@ veículos automotores.
 Acrescentado o § 7º pelo art. 1º da Lei nº 17.907, de 2.1.2014, produzindo efeitos a partir
 de 2.1.2014 (publicação).
 Revogado o § 7º pelo art. 1º, inciso I , da Lei nº 16.016, de 19.12.2008, produzindo
-efeitos a partir de 1º.4.2009 (1º mês subsequente ao decurso de 90 dias da publicação
 em 19.12.2008) até 1º.1.2014:
 § 7º (REVOGADO)
 Redação anterior do § 7º dada pelo art. 1º da Lei nº 15.450, de 15.1.2007, produzindo
@@ -2460,10 +1960,6 @@ passageiros, classificados nos códigos NBM/SH 87.03, e veículos comerciais lev
 capacidade de carga de até 5 t, classificados nos códigos NBM/SH 87.04, e não se aplica
 no caso de sinistro por perda total do veículo a ser comprovado de acordo com a
 legislação própria e/ou segundo os princípios de contabilidade geralmente aceitos."
-
-===== PAGINA 53 =====
-____________________________________________________________________
-53
 Redação original do § 7, acrescentado pelo art. 1º da Lei nº 14.981, de 28.12.2005, que
 produziu efeitos de 28.12.2005 (publicação) até 21.1.2007:
 "§ 7º. O disposto nos §§ 5º e 6º deste artigo não se aplica no caso de sinistro por perda
@@ -2477,7 +1973,6 @@ de 2.1.2014 (publicação).
 Revogado pelo iart. 1º, inciso I , da Lei nº 16.016, de 19.12.2008, produzindo efeitos a
 partir de 1º.4.2009 (1º mês subsequente ao decurso de 90 dias da publicação em
 19.12.2008) até 1º.1.2014:
-§ 8º (REVOGADO)
 Redação original do § 8º, acrescentado pelo art. 1º, inciso I, da Lei nº 15.343, de
 22.12.2006, produzindo efeitos de 22.12.2006 até 31.3.2009:
 "§ 8º. A alíquota prevista no inciso II aplica-se às operações com blocos e tijolos para
@@ -2493,16 +1988,11 @@ Nova redação do inciso I dada pelo art. 5º, da Lei nº 21.850, de 19.12.2023,
 efeitos a partir de 18.3.2024 (após 90 dias da publicação em 19.12.2023)
 Redação anterior do inciso I dada pelo art. 6º da Lei nº 21.308, de 13.12.2022,
 produzindo efeitos de 13.3.2023 até 17.3.2024 (90 dias da publicação da Lei nº
-21.850/2023, em 19.12.2023):
 "I - água mineral (NCM 22.01) e bebida alcóolica (NCM 22.04) - 17% (dezessete por
 cento);"
 Redação anterior do inciso I dada pelo art. 2º da Lei nº 20.531, de 14.4.2021, produziu
 efeitos de 1º.4.2021 até 12.3.2023:
 "I - água mineral (NCM 22.01) e bebida alcóolica (NCM 22.04) - 16%;"
-
-===== PAGINA 54 =====
-____________________________________________________________________
-54
 Redação original do inciso I, acrescentado pelo art. 50, inciso VI, da Lei n. 18.573, de
 30.09.2015, em vigor em 2.10.2015 (republicação), produziu efeitos de 1º.2.2016 (1º dia
 do quarto mês subsequente ao da republicação) até 31.3.2021:
@@ -2513,7 +2003,6 @@ Nova redação do inciso II dada pelo art. 5º, da Lei nº 21.850, de 19.12.2023
 efeitos a partir de 18.3.2024 (após 90 dias da publicação em 14.12.2023)
 Redação anterior do inciso II dada pelo art. 6º da Lei nº 21.308, de 13.12.2022,
 produzindo efeitos de 13.3.2023 até 17.3.2024 (90 dias da publicação da Lei nº
-21.850/2023, em 19.12.2023):
 "II - artefatos de joalheria e de ourivesaria, e suas partes (NCM 71.13 e 71.14) - 17%
 (dezessete por cento);"
 Redação original do inciso II, acrescentado pelo art. 50, inciso VI, da Lei n. 18.573, de
@@ -2524,7 +2013,7 @@ III - cervejas, chopes e bebidas alcoólicas (NCM 22.03, 22.05, 22.06 e
 22.08) - 27%;
 Nova redação do inciso III dada pelo art. 3º da Lei nº 20.531, de 14.4.2021, produzindo
 efeitos a partir de 1º.4.2021.
-Redação original do inciso II,  acrescentado pelo art. 50, inciso VI, da Lei n. 18.573, de
+Redação original do inciso II, acrescentado pelo art. 50, inciso VI, da Lei n. 18.573, de
 30.09.2015, em vigor em 2.10.2015 (republicação), produziu efeitos de 1º.2.2016 (1º dia
 do quarto mês subsequente ao da republicação) até 31.3.2021:
 "III - cervejas, chopes e bebidas alcoólicas (NCM 22.03. 22.04, 22.05, 22.06 e 22.08) -
@@ -2535,13 +2024,8 @@ em 2.10.2015 (republicação), produzindo efeitos a partir de 1º.2.2016 (1º di
 mês subsequente ao da republicação).
 V - (REVOGADO)
 Revogado o inciso V pelo art. 8º, da Lei nº 21.308, de 13.12.2022, produzindo efeitos a
-partir de 23.6.2022
-Redação original  do inciso V, acrescentado pelo art. 50, inciso VI, da Lei n. 18.573, de
+Redação original do inciso V, acrescentado pelo art. 50, inciso VI, da Lei n. 18.573, de
 30.09.2015, em vigor em 2.10.2015 (republicação), que produziu efeitos de 1º.2.2016 (1º
-
-===== PAGINA 55 =====
-____________________________________________________________________
-55
 dia do quarto mês subsequente ao da republicação) até 22.6.2022.
 "V - gasolina, exceto para aviação - 27%;"
 VI - perfumes e cosméticos (NCM 33.03, 33.04, 33.05 exceto 3305.10.00,
@@ -2554,7 +2038,7 @@ ou aromatizadas, refrigerantes, refrescos e outros, cervejas sem álcool e isot�
 22.02) - 18% (dezoito por cento);
 Nova redação do inciso VII dada pelo art. 6º, da Lei nº 21.308, de 13.12.2022, produzindo
 efeitos a partir de 13.3.2023
-Redação original do inciso VII,  acrescentado pelo art. 50, inciso VI, da Lei n. 18.573, de
+Redação original do inciso VII, acrescentado pelo art. 50, inciso VI, da Lei n. 18.573, de
 30.09.2015, em vigor em 2.10.2015 (republicação), que produziu efeitos de 1º.2.2016 (1º
 dia do quarto mês subsequente ao da republicação) até 12.3.2023.
 "VII - águas gaseificadas, adicionadas de açúcar ou de outros edulcorantes ou
@@ -2566,10 +2050,9 @@ Nova redação do inciso VIII dada pelo art. 5º, da Lei nº 21.850, de 19.12.20
 produzindo efeitos a partir de 18.3.2024 (após 90 dias da publicação em 14.12.2023).
 Redação anterior do inciso VIII dada pelo art. 6º da Lei nº 21.308, de 13.12.2022,
 produzindo efeitos de 13.3.2023 até 17.3.2024 (90 dias da publicação da Lei nº
-21.850/2023, em 19.12.2023):
 "VIII - produtos de tabacaria (NCM 24.01 a 24.99) - 17% (dezessete por cento);"
-Redação original do inciso VIII,  acrescentado pelo art. 50, inciso VI, da Lei n. 18.573, de
-30.09.2015, em vigor em 2.10.2015 (republicação), que produziu efeitos  de 1º.2.2016 (1º
+Redação original do inciso VIII, acrescentado pelo art. 50, inciso VI, da Lei n. 18.573, de
+30.09.2015, em vigor em 2.10.2015 (republicação), que produziu efeitos de 1º.2.2016 (1º
 dia do quarto mês subsequente ao da republicação) até 12.3.2023:
 "VIII - produtos de tabacaria (NCM 24.01 a 24.99) – 16%."
 IX - veículos automotores novos, quando a operação seja realizada sob o
@@ -2578,12 +2061,7 @@ regime da sujeição passiva por substituição tributária, com retenção do i
 Acrescentado o inciso IX pelo art. 1º da Lei n. 20.554, de 5.5.2021, produzindo efeitos a
 partir de 6.8.2021
 X - (REVOGADO)
-
-===== PAGINA 56 =====
-____________________________________________________________________
-56
 Revogado o inciso X pelo inciso V do art. 14 da Lei n. 22.190, de 13.11.2024, em vigor
-em 13.11.2024 (publicação), produzindo efeitos a partir de 13.11.2024
 Redação original do inciso X, acrescentado pelo art. 1º da Lei n. 20.554, de 5.5.2021,
 que produziu efeitos de 6.8.2021 até 12.11.2024:
 "X - independentemente de sujeição passiva por substituição tributária, os veículos
@@ -2593,13 +2071,11 @@ de 1996, 8701.20.0200, 8701.20.9900, 8702.10.0100, 8702.10.0200, 8702.10.9900,
 8706.00.0100 e 8706.00.0200 - 10%;"
 XI - (REVOGADO)
 Revogado o inciso XI pelo art. 8º, da Lei nº 21.308, de 13.12.2022, produzindo efeitos a
-partir de 23.6.2022.
 Redação original do inciso XI, acrescentado pelo art. 1º da Lei n. 20.554, de 5.5.2021,
 que produziu efeitos de 6.8.2021 até 22.6.2022:
 "XI - prestações de serviço de comunicação - 27%;"
 XII - (REVOGADO)
 Revogado o inciso XII pelo art. 8º, da Lei nº 21.308, de 13.12.2022, produzindo efeitos a
-partir de 23.6.2022.
 Redação original do inciso XII, acrescentado pelo art. 1º da Lei n. 20.554, de 5.5.2021,
 que produziu efeitos de 6.8.2021 até 22.6.2022:
 "XII - energia elétrica, exceto a destinada à eletrificação rural - 27%."
@@ -2607,7 +2083,7 @@ Art. 14A. Cria o adicional de dois pontos percentuais sobre as
 alíquotas previstas para as operações internas destinadas a consumidor final
 com os produtos a seguir relacionados (§ 1º do art. 82 do Ato das Disposições
 Constitucionais Transitórias da Constituição da República):
-Acrescentado o caput do art. 14A  pelo art. 50, inciso VII, da Lei n. 18.573, de
+Acrescentado o caput do art. 14A pelo art. 50, inciso VII, da Lei n. 18.573, de
 30.09.2015, republicada em 2.10.2015, produzindo efeitos de 1º.2.2016 (1º dia do quarto
 mês subsequente ao da republicação em 2.10.2015).
 I - água mineral (NCM 22.01);
@@ -2616,25 +2092,14 @@ republicada em 2.10.2015, produzindo efeitos de 1º.2.2016 (1º dia do quarto m�
 subsequente ao da republicação em 2.10.2015).
 II - artefatos de joalheria e de ourivesaria, e suas partes (NCM 71.13 e
 71.14);
-
-===== PAGINA 57 =====
-____________________________________________________________________
-57
 Acrescentado o inciso II pelo art. 50, inciso VII, da Lei n. 18.573, de 30.09.2015,
-republicada em 2.10.2015, produzindo efeitos de 1º.2.2016 (1º dia do quarto mês
-subsequente ao da republicação em 2.10.2015).
 III - cervejas, chopes e bebidas alcoólicas (NCM 22.03. 22.04, 22.05,
 22.06 e 22.08);
 Acrescentado o inciso III pelo art. 50, inciso VII, da Lei n. 18.573, de 30.09.2015,
-republicada em 2.10.2015, produzindo efeitos de 1º.2.2016 (1º dia do quarto mês
-subsequente ao da republicação em 2.10.2015).
 IV - fumo e sucedâneos, manufaturados (NCM 24.02 e 24.03);
 Acrescentado o inciso IV pelo art. 50, inciso VII, da Lei n. 18.573, de 30.09.2015,
-republicada em 2.10.2015, produzindo efeitos de 1º.2.2016 (1º dia do quarto mês
-subsequente ao da republicação em 2.10.2015).
 V - (REVOGADO)
 Revogado o inciso V pelo art. 8º, da Lei nº 21.308, de 13.12.2022, produzindo efeitos a
-partir de 23.6.2022.
 Redação original do inciso V, acrescentado pelo art. 50, inciso VII, da Lei n. 18.573, de
 30.09.2015, republicada em 2.10.2015, que produziu efeitos de 1º.2.2016 (1º dia do
 quarto mês subsequente ao da republicação em 2.10.2015) até 22.6.2022:
@@ -2642,30 +2107,19 @@ quarto mês subsequente ao da republicação em 2.10.2015) até 22.6.2022:
 VI - perfumes e cosméticos (NCM 33.03, 33.04, 33.05 exceto 3305.10.00,
 e 33.07 exceto 3307.20);
 Acrescentado o inciso VI pelo art. 50, inciso VII, da Lei n. 18.573, de 30.09.2015,
-republicada em 2.10.2015, produzindo efeitos de 1º.2.2016 (1º dia do quarto mês
-subsequente ao da republicação em 2.10.2015).
 VII - águas gaseificadas, adicionadas de açúcar ou de outros edulcorantes
 ou aromatizadas, refrigerantes, refrescos e outros, cervejas sem álcool e isotônicos (NCM
 22.02);
 Acrescentado o inciso VII pelo art. 50, inciso VII, da Lei n. 18.573, de 30.09.2015,
-republicada em 2.10.2015, produzindo efeitos de 1º.2.2016 (1º dia do quarto mês
-subsequente ao da republicação em 2.10.2015).
 VIII - produtos de tabacaria (NCM 24.01 a 24.99).
 Acrescentado o inciso VIII pelo art. 50, inciso VII, da Lei n. 18.573, de 30.09.2015,
-republicada em 2.10.2015, produzindo efeitos de 1º.2.2016 (1º dia do quarto mês
-subsequente ao da republicação em 2.10.2015).
 IX - veículos automotores novos, quando a operação seja realizada sob o
 regime da sujeição passiva por substituição tributária, com retenção do imposto relativo
 às operações subsequentes, sem prejuízo do disposto no inciso X do caput deste artigo;
 Acrescentado o inciso IX pelo art. 2º da Lei n. 20.554, de 5.5.2021, produzindo efeitos a
-
-===== PAGINA 58 =====
-____________________________________________________________________
-58
 partir de 6.8.2021.
-X - (REVOGADO) 
+X - (REVOGADO)
 Revogado o inciso X pelo inciso VI do art. 14 da Lei n. 22.190, de 13.11.2024, em vigor
-em 13.11.2024 (publicação), produzindo efeitos a partir de 13.11.2024.
 Redação original do inciso X, acrescentado pelo art. 2º da Lei n. 20.554, de 5.5.2021,
 que produziu efeitos de 6.8.2021 até 12.11.2024:
 "X - independentemente de sujeição passiva por substituição tributária, os veículos
@@ -2675,13 +2129,11 @@ de 1996, 8701.20.0200, 8701.20.9900, 8702.10.0100, 8702.10.0200, 8702.10.9900,
 8706.00.0100 e 8706.00.0200;"
 XI - REVOGADO
 Revogado o inciso XI pelo art. 8º, da Lei nº 21.308, de 13.12.2022, produzindo efeitos a
-partir de 23.6.2022
 Redação original do inciso XI, acrescentado pelo art. 2º da Lei n. 20.554, de 5.5.2021,
 produziu efeitos de 6.8.2021 até 22.6.2022:
 "XI - prestações de serviço de comunicação;"
 XII - REVOGADO
 Revogado o inciso XII pelo art. 8º, da Lei nº 21.308, de 13.12.2022, produzindo efeitos a
-partir de 23.6.2022.
 Redação original do inciso XI, acrescentado pelo art. 2º da Lei n. 20.554, de 5.5.2021,
 produziu efeitos de 6.8.2021 até 22.6.2022:
 "XII - energia elétrica, exceto a destinada à eletrificação rural."
@@ -2693,13 +2145,7 @@ mês subsequente ao da republicação em 2.10.2015).
 I - autoriza o Poder Executivo a estabelecer as condições de destaque,
 escrituração, apuração e recolhimento do valor resultante;
 Acrescentado o inciso I pelo art. 50, inciso VII, da Lei n. 18.573, de 30.09.2015,
-republicada em 2.10.2015, produzindo efeitos de 1º.2.2016 (1º dia do quarto mês
-subsequente ao da republicação em 2.10.2015).
 II - sujeita-se ao regime de substituição tributária, de que trata o inciso IV
-
-===== PAGINA 59 =====
-____________________________________________________________________
-59
 do caput do art. 18 desta Lei.
 Nova redação do inciso II dada pelo art. 3º da Lei n. 20.554, de 5.5.2021, produzindo
 efeitos a partir de 6.8.2021
@@ -2734,10 +2180,6 @@ Nova redação do "caput" do inciso III dada pelo art. 5º, inciso II, da Lei n.
 27.12.2012, produzindo efeitos a partir de 27.12.2012 (publicação).
 Redação original do "caput" do inciso III, acrescentado pelo art. 2º da Lei nº 13.023, de
 22.12.2000, em vigor em 26.12.2000 (publicação), que produziu efeitos de 13.12.1996
-
-===== PAGINA 60 =====
-____________________________________________________________________
-60
 até 26.12.2012:
 "III - 4% (quatro por cento) na prestação serviço de transporte aéreo interestadual de
 passageiro, carga e mala postal (Resolução do Senado nº 95/96).
@@ -2749,7 +2191,6 @@ produzindo efeitos a partir de 27.12.2012 (publicação).
 b) nas operações interestaduais com bens e mercadorias importados do
 exterior (Resolução do Senado nº 13, de 25 de abril de 2012).
 Acrescentada a alínea "b" pelo art. 5º, inciso II, da Lei n. 17.444, de 27.12.2012,
-produzindo efeitos a partir de 27.12.2012 (publicação).
 Revogado tacitamente o parágrafo único pelo art. 5º, inciso II, da Lei n. 17.444, de
 27.12.2012, produzindo efeitos a partir de 27.12.2012 (publicação).
 § 1º Na saída de mercadoria para a empresa de construção civil inscrita no
@@ -2767,52 +2208,36 @@ alíquota interestadual."
 importados do exterior que, após seu desembaraço aduaneiro (Resolução do Senado nº
 13, de 25 de abril de 2012):
 Acrescentado o caput do § 2º pelo art. 5º, inciso II, da Lei n. 17.444, de 27.12.2012,
-produzindo efeitos a partir de 27.12.2012 (publicação).
 I – não tenham sido submetidos a processo de industrialização;
 Acrescentado o inciso I do § 2º pelo art. 5º, inciso II, da Lei n. 17.444, de 27.12.2012,
-produzindo efeitos a partir de 27.12.2012 (publicação).
 II – ainda que submetidos a qualquer processo de transformação,
 beneficiamento, montagem, acondicionamento, reacondicionamento, renovação ou
 recondicionamento, resultem em mercadorias ou bens com Conteúdo de Importação
 superior a 40% (quarenta por cento).
-
-===== PAGINA 61 =====
-____________________________________________________________________
-61
 Acrescentado inciso II do § 2º pelo art. 5º, inciso II, da Lei n. 17.444, de 27.12.2012,
-produzindo efeitos a partir de 27.12.2012 (publicação).
 § 3º O Conteúdo de Importação, a que se refere o inciso II do § 2º, é o
 percentual correspondente ao quociente entre o valor da parcela importada do exterior e
 o valor total da operação de saída interestadual da mercadoria ou do bem.
 Acrescentado o § 3º pelo art. 5º, inciso II, da Lei n. 17.444, de 27.12.2012, produzindo
 efeitos a partir de 27.12.2012 (publicação).
 § 4º Não se aplica o disposto na alínea “b” do inciso III:
-Acrescentado o caput do § 4º  pelo art. 5º, inciso II, da Lei n. 17.444, de 27.12.2012,
-produzindo efeitos a partir de 27.12.2012 (publicação).
+Acrescentado o caput do § 4º pelo art. 5º, inciso II, da Lei n. 17.444, de 27.12.2012,
 I – aos bens e mercadorias que não tenham similar nacional, a serem
 definidos em lista a ser editada pelo Conselho de Ministros da Câmara de Comércio
 Exterior (Camex);
-Acrescentado o inciso I do § 4º  pelo art. 5º, inciso II, da Lei n. 17.444, de 27.12.2012,
-produzindo efeitos a partir de 27.12.2012 (publicação).
+Acrescentado o inciso I do § 4º pelo art. 5º, inciso II, da Lei n. 17.444, de 27.12.2012,
 II – aos bens produzidos em conformidade com os processos produtivos
 básicos de que tratam o Decreto-Lei nº 288, de 28 de fevereiro de 1967, e a Lei nº
 8.248, de 23 de outubro de 1991, a Lei nº 8.387, de 30 de dezembro de 1991, a Lei nº
 10.176, de 11 de janeiro de 2001, e a Lei nº 11.484, de 31 de maio de 2007;
 Acrescentado o inciso II do § 4º pelo art. 5º, inciso II, da Lei n. 17.444, de 27.12.2012,
-produzindo efeitos a partir de 27.12.2012 (publicação).
 III – em operações com gás natural.
 Acrescentado o inciso III do § 4 pelo art. 5º, inciso II, da Lei n. 17.444, de 27.12.2012,
-produzindo efeitos a partir de 27.12.2012 (publicação).
 CAPÍTULO V
 DA SUJEIÇÃO PASSIVA
-SEÇÃO I
 DO CONTRIBUINTE
 Art. 16. Contribuinte do imposto é qualquer pessoa, física ou
 jurídica, que realize, com habitualidade ou em volume que caracterize intuito
-
-===== PAGINA 62 =====
-____________________________________________________________________
-62
 comercial, operações de circulação de mercadoria ou prestações de serviços de
 transporte interestadual e intermunicipal e de comunicação, ainda que as
 operações e as prestações se iniciem no exterior.
@@ -2824,11 +2249,11 @@ habitualidade ou em volume que caracterize intuito comercial, operações de cir
 de mercadoria ou prestações de serviços de transporte interestadual e intermunicipal e
 de comunicação, ainda que as operações e as prestações se iniciem no exterior. "
 § 1º É também contribuinte a pessoa física ou jurídica que, mesmo sem
-habitualidade ou intuito comercial: 
+habitualidade ou intuito comercial:
 Nova redação do caput do § 1º do art. 16 dada pelo art. 5º, da Lei n. 20.949, de
 31.12.2021, em vigor em 31.12.2021, produzindo efeitos a partir de 1º.4.2022.
-Redação anterior do caput do § 1º dada pelo art. 1°,  alteração 5ª, da Lei nº 14.050, de
-14.5.2003, em vigor em 14.5.2003 (publicação),  produziu efeitos de 17.12.2002 até
+Redação anterior do caput do § 1º dada pelo art. 1°, alteração 5ª, da Lei nº 14.050, de
+14.5.2003, em vigor em 14.5.2003 (publicação), produziu efeitos de 17.12.2002 até
 31.3.2022.
 "Parágrafo único. É também contribuinte a pessoa física ou jurídica que, mesmo sem
 habitualidade ou intuito comercial (Lei Complementar nº. 114/02):"
@@ -2837,43 +2262,34 @@ Redação original do caput do paragrafo único que produziu efeito de 1º.11.19
 "Parágrafo único. É também contribuinte a pessoa física ou jurídica que, mesmo sem
 habitualidade:"
 I - importe mercadoria ou bem do exterior, qualquer que seja a sua
-finalidade; 
+finalidade;
 Nova redação do inciso I dada pelo art. 5º, da Lei n. 20.949, de 31.12.2021, em vigor em
-31.12.2021, produzindo efeitos a partir de 1º.4.2022.
-Redação anterior do inciso I dada pelo art. 1°,  alteração 5ª, da Lei nº 14.050, de
-14.5.2003, em vigor em 14.5.2003 (publicação),  produzindo efeitos de 17.12.2002 até
+Redação anterior do inciso I dada pelo art. 1°, alteração 5ª, da Lei nº 14.050, de
+14.5.2003, em vigor em 14.5.2003 (publicação), produzindo efeitos de 17.12.2002 até
 31.3.2022.
 "I - importe mercadoria ou bem do exterior, qualquer que seja a sua finalidade (Lei
 Complementar nº. 114/02);"
 Redação original do inciso I que produziu efeito de 1º.11.1996 a 16.12.2002:
 "I - importe mercadorias do exterior, ainda que as destine a consumo ou ao ativo
 permanente do estabelecimento;"
-
-===== PAGINA 63 =====
-____________________________________________________________________
-63
 II - seja destinatária de serviço prestado no exterior ou cuja prestação se
 tenha iniciado no exterior;
 Nova redação do inciso II dada pelo art. 5º, da Lei n. 20.949, de 31.12.2021, em vigor em
-31.12.2021, produzindo efeitos a partir de 1º.4.2022.
 Redação original do inciso II que produziu efeito de 1º.11.1996 a 31.3.2022:
 "II - seja destinatária de serviço prestado no exterior ou cuja prestação se tenha iniciado
-no exterior;" 
-III 
-- 
-adquira 
-em 
-licitação 
-mercadoria 
-ou 
-bem 
-apreendidos 
-ou
-abandonados; 
+no exterior;"
+III
+-
+adquira
+licitação
+mercadoria
+bem
+apreendidos
+abandonados;
 Nova redação do inciso III dada pelo art. 5º, da Lei n. 20.949, de 31.12.2021, em vigor
 em 31.12.2021, produzindo efeitos a partir de 1º.4.2022.
-Redação anterior do inciso III dada pelo art. 1°,  alteração 5ª, da Lei nº 14.050, de
-14.5.2003, em vigor em 14.5.2003 (publicação),  produzindo efeitos de 17.12.2002 até
+Redação anterior do inciso III dada pelo art. 1°, alteração 5ª, da Lei nº 14.050, de
+14.5.2003, em vigor em 14.5.2003 (publicação), produzindo efeitos de 17.12.2002 até
 31.3.2022.
 "III - adquira em licitação mercadoria ou bem apreendidos ou abandonados (Lei
 Complementar nº. 114/02);"
@@ -2882,7 +2298,7 @@ Redação original do inciso III que produziu efeito de 1º.11.1996 a 16.12.2002
 abandonados;"
 IV - adquira petróleo, inclusive lubrificantes e combustíveis líquidos e
 gasosos dele derivados, ou energia elétrica, oriundos de outra unidade federada, quando
-não destinados à industrialização ou à comercialização. 
+não destinados à industrialização ou à comercialização.
 Nova redação do inciso IV dada pelo art. 5º, da Lei n. 20.949, de 31.12.2021, em vigor
 em 31.12.2021, produzindo efeitos a partir de 1º.4.2022.
 Redação original do inciso IV que produziu efeito de 1º.11.1996 a 31.3.2022:
@@ -2892,17 +2308,11 @@ destinados à industrialização ou à comercialização."
 § 2º É ainda contribuinte do imposto nas operações ou prestações que
 destinem mercadorias, bens e serviços a consumidor final domiciliado ou estabelecido
 neste Estado, em relação à diferença entre a alíquota interna deste Estado e a alíquota
-interestadual: 
+interestadual:
 Acrescentado o caput do § 2º pelo art. 5º, da Lei n. 20.949, de 31.12.2021, em vigor em
-31.12.2021, produzindo efeitos a partir de 1º.4.2022.
 I - o destinatário da mercadoria, bem ou serviço, na hipótese de
-
-===== PAGINA 64 =====
-____________________________________________________________________
-64
-contribuinte do imposto; 
+contribuinte do imposto;
 Acrescentado o inciso I do § 2º pelo art. 5º, da Lei n. 20.949, de 31.12.2021, em vigor em
-31.12.2021, produzindo efeitos a partir de 1º.4.2022.
 II - o remetente da mercadoria ou bem ou o prestador de serviço, na
 hipótese de o destinatário não ser contribuinte do imposto.
 Acrescentado o inciso II do § 2º pelo art. 5º, da Lei n. 20.949, de 31.12.2021, em vigor
@@ -2915,7 +2325,6 @@ prestação de serviços.
 § 2º Para os efeitos desta Lei, depósito fechado do contribuinte é o local
 destinado exclusivamente ao armazenamento de suas mercadorias no qual não se
 realizam vendas.
-SEÇÃO II
 DO RESPONSÁVEL OU SUBSTITUTO
 Art. 18. São responsáveis pelo pagamento do imposto:
 I - o transportador, em relação à mercadoria:
@@ -2929,10 +2338,6 @@ paranaense;
 II - o armazém geral e o depositário a qualquer título:
 a) pela saída real ou simbólica de mercadoria depositada neste Estado por
 contribuinte de outra unidade federada;
-
-===== PAGINA 65 =====
-____________________________________________________________________
-65
 b) pela manutenção em depósito de mercadoria com documentação fiscal
 irregular ou inidônea;
 c) pela manutenção em depósito de mercadoria desacompanhada de
@@ -2968,20 +2373,13 @@ Nova redação da alínea "d" dada pelo art. 6º da Lei n. 19.358, de 20.12.2017
 efeitos a partir de 21.12.2017 (publicação).
 Redação original da alínea "d" que produziu efeitos de 14.11.1996 até 20.12.2017:
 "d) produtos das indústrias alimentares, bebidas, líquidos alcoólicos e vinagres, fumo
-
-===== PAGINA 66 =====
-____________________________________________________________________
-66
 (tabaco) e seus sucedâneos manufaturados, compreendidos na Seção IV da NBM/SH;"
 e) produtos minerais compreendidos na Seção V da NBM/SH;
-f) 
-produtos 
-das 
-indústrias 
-químicas 
-ou 
-das 
-indústrias 
+f)
+produtos
+indústrias
+químicas
+indústrias
 conexas,
 compreendidos na Seção VI da NBM/SH;
 g) plásticos e suas obras e borracha e suas obras, compreendidos na
@@ -2997,7 +2395,6 @@ X da NBM/SH;
 l) matérias têxteis e suas obras, compreendidas na Seção XI da NBM/SH;
 m) obras de pedra, gesso, cimento, amianto, mica ou de matérias
 semelhantes, produtos cerâmicos e vidro e suas obras, compreendidos na Seção XIII da
-NBM/SH;
 n) pérolas naturais ou cultivadas, pedras preciosas ou semipreciosas e
 semelhantes, metais preciosos, metais folheados ou chapeados de metais preciosos, e
 suas obras, bijuterias e moedas, compreendidos na Seção XIV da NBM/SH;
@@ -3005,7 +2402,6 @@ o) metais comuns e suas obras, compreendidos na Seção XV da NBM/SH;
 p) máquinas e aparelhos, material elétrico, e suas partes, aparelhos de
 gravação ou de reprodução de som, aparelhos de gravação ou de reprodução de imagens
 e de som em televisão, e suas partes e acessórios, compreendidos na Seção XVI da
-NBM/SH;
 q) material de transporte compreendido na Seção XVII da NBM/SH;
 r) instrumentos e aparelhos de ótica, fotografia ou cinematografia,
 medida, controle ou de precisão, instrumentos e aparelhos médico-cirúrgicos, aparelhos
@@ -3013,12 +2409,7 @@ de relojoaria, instrumentos musicais, suas partes e acessórios, compreendidos n
 XVIII da NBM/SH;
 s) armas e munições, suas partes e acessórios, compreendidos na Seção
 XIX da NBM/SH;
-
-===== PAGINA 67 =====
-____________________________________________________________________
-67
 t) mercadorias e produtos diversos compreendidos na Seção XX da
-NBM/SH;
 u) serviços de transporte e de comunicação;
 V - o contribuinte, em relação à mercadoria cuja fase de diferimento ou
 suspensão tenha sido encerrada;
@@ -3043,17 +2434,12 @@ transporte interestadual ou intermunicipal e de comunicação."
 de ato do Poder Executivo, sendo que, em relação às operações interestaduais,
 dependerá de acordo específico celebrado pelas unidades federadas interessadas.
 Nova redação do § 1º dada pelo art. 9º da Lei n. 22.190, de 13.11.2024, em vigor em
-13.11.2024 (publicação), produzindo efeitos a partir de 13.11.2024.
 Redação anterior do § 1º dada pelo art. 2º da Lei n. 20.250, de 29.6.2020, que produziu
 efeitos de 2.7.2020 a 12.11.2024:
 "§ 1º A adoção do regime de substituição tributária será efetiva por meio de ato do Poder
 Executivo, sendo que em relação às operações interestaduais dependerá de acordo
 específico celebrado pelas unidades federadas interessadas."
 Redação original do § 1º que produziu efeitos de 14.11.1996 até 1º.7.2020:
-
-===== PAGINA 68 =====
-____________________________________________________________________
-68
 "§ 1º A adoção do regime de substituição tributária será efetivada através de decreto do
 Poder Executivo, sendo que em relação às operações interestaduais dependerá de
 acordo específico celebrado pelas unidades federadas interessadas."
@@ -3080,7 +2466,6 @@ de arrecadação, quando verificado que o contribuinte substituto incorreu em um
 situações previstas nas alíneas “a” a “c” do inciso II do art. 12 desta Lei, ou que deixar
 de cumprir as obrigações estabelecidas na legislação;
 Nova redação do inciso II dada pelo art. 7º da Lei n. 19.358, de 20.12.2017, produzindo
-efeitos a partir de 21.12.2017 (publicação).
 Redação original do inciso II que produziu efeitos de 14.11.1996 até 20.12.2017:
 "II - em relação a contribuinte substituto que descumprir as obrigações estabelecidas na
 legislação, a suspensão da aplicação do regime de substituição tributária ou o
@@ -3090,10 +2475,6 @@ III - a atribuição da responsabilidade pela retenção e recolhimento do
 imposto ao destinatário da mercadoria, em substituição ao remetente, quando este não
 for, ou deixar de ser, eleito substituto tributário.
 § 5º O responsável sub-roga-se nos direitos e obrigações do contribuinte,
-
-===== PAGINA 69 =====
-____________________________________________________________________
-69
 estendendo-se a sua responsabilidade à punibilidade por infração tributária, ressalvada,
 quanto ao síndico e o comissário, o disposto no parágrafo único do art. 134 do Código
 Tributário Nacional.
@@ -3127,12 +2508,7 @@ operações ou prestações antecedentes, o imposto devido pelas referidas
 operações ou prestações será pago pelo responsável, quando:
 I - da entrada ou recebimento da mercadoria, do bem ou do serviço (Lei
 Complementar nº. 114/02);
-
-===== PAGINA 70 =====
-____________________________________________________________________
-70
 Nova redação do inciso I dada pelo art. 1º, alteração 6ª, da Lei nº 14.050, de 14.5.2003,
-em vigor em 14.5.2003 (publicação),  produzindo efeitos a partir de 17.12.2002.
 Redação original do inciso I que produziu efeitos de 1º.11.1996 a 16.12.2002:
 "I - da entrada ou recebimento da mercadoria ou do serviço;"
 II - da saída subseqüente por ele promovida, ainda que isenta ou não
@@ -3160,21 +2536,15 @@ efeitos a partir de 22.12.2006.
 a) o imposto não tenha sido retido, no todo ou em parte, pelo substituto
 tributário;
 Acrescentada a alínea "a" pelo inciso II, art. 1º, Lei nº 15.343/2006, produzindo efeitos a
-
-===== PAGINA 71 =====
-____________________________________________________________________
-71
 partir de 22.12.2006.
 b) tenha ocorrido infração à legislação tributária para a qual o contribuinte
 substituído tenha concorrido;
 Acrescentada a alínea "b" pelo inciso II, art. 1º, Lei nº 15.343/2006, produzindo efeitos a
-partir de 22.12.2006.
 c) a informação ou declaração de que dependa o cumprimento de
 obrigação decorrente de substituição tributária não tenha sido prestada, tenha sido feita
 de forma irregular ou tenha sido apresentada fora do prazo regulamentar pelo
 contribuinte substituído.
 Acrescentada a alínea "c" pelo inciso II, art. 1º, Lei nº 15.343/2006, produzindo efeitos a
-partir de 22.12.2006.
 d) receber mercadoria desacompanhada do comprovante de recolhimento
 do imposto, nas situações em que o pagamento é exigido por ocasião da ocorrência do
 fato gerador.
@@ -3186,9 +2556,9 @@ em vigor em 22.12.2006, que não produziu efeitos.
 recolhimento do imposto, nas situações em que o pagamento é exigido por ocasião da
 ocorrência do fato gerador."
 V - os agentes prestadores de serviços de intermediação comercial em
-ambiente virtual, com utilização de tecnologias de informação, inclusive por meio  de
+ambiente virtual, com utilização de tecnologias de informação, inclusive por meio de
 leilões eletrônicos, em relação às operações ou prestações sobre as quais tenham
-deixado de prestar informações solicitadas pelo fisco; 
+deixado de prestar informações solicitadas pelo fisco;
 Acrescentado o inciso V pelo art. 1º da Lei nº 20.383/2020, produzindo efeitos a partir de
 19.11.2020.
 VI - os prestadores de serviços de tecnologia de informação que viabilizem
@@ -3200,10 +2570,6 @@ Acrescentado o inciso VI pelo art. 2º da Lei nº 20.383/2020, produzindo efeito
 19.11.2020.
 Parágrafo único. A responsabilidade prevista neste artigo é extensiva ao
 imposto devido por prestação de serviços vinculados a circulação de mercadoria ou bem.
-
-===== PAGINA 72 =====
-____________________________________________________________________
-72
 CAPÍTULO VI
 DO LOCAL DA OPERAÇÃO E DA PRESTAÇÃO
 Art. 22. O local da operação ou da prestação, para os efeitos da
@@ -3218,7 +2584,7 @@ represente, de mercadoria por ele adquirida no País e que por ele não tenha tr
 d) o do estabelecimento onde ocorrer a entrada física ou o do domicílio do
 adquirente quando não estabelecido, no caso de importação do exterior;
 e) aquele onde seja realizada a licitação, no caso de arrematação de
-mercadoria ou bem importados do exterior  e apreendidos ou abandonados (Lei
+mercadoria ou bem importados do exterior e apreendidos ou abandonados (Lei
 Complementar nº. 114/02);
 Nova redação da alínea "e" dada pela alteração 7ª, art. 1º, da Lei nº 14.050/2003, em
 vigor em 14.05.2003, produzindo efeitos a partir de 17.12.2002.
@@ -3233,10 +2599,6 @@ g) o território deste Estado em relação às operações com ouro aqui
 extraído, quando não considerado como ativo financeiro ou instrumento cambial ou na
 operação em que perdeu tal condição;
 h) onde ocorrer, no território paranaense, o desembarque do produto da
-
-===== PAGINA 73 =====
-____________________________________________________________________
-73
 captura de peixes, crustáceos e moluscos;
 i) o território deste Estado, em relação às operações realizadas em sua
 plataforma continental, mar territorial ou zona econômica exclusiva;
@@ -3246,7 +2608,6 @@ pela falta de documentação fiscal ou quando acompanhada de documentação fisc
 inidônea;
 b) (REVOGADA)
 Revogada a alínea "b" pelo inciso VII do art. 14 da Lei n. 22.190, de 13.11.2024, em vigor
-em 13.11.2024 (publicação), produzindo efeitos a partir de 13.11.2024.
 Redação original da alínea "b" que produziu efeitos de 1º.11.1996 a 12.11.2024:
 "b) o do estabelecimento destinatário do serviço, na hipótese do inciso XIII do art. 5º e
 para os efeitos do § 3º do art. 6º;"
@@ -3263,24 +2624,19 @@ Nova redação da alínea "c" dada pelo art. 3º da Lei nº 13.023/2010, em vigo
 26.12.2000, produzindo efeitos a partir de 01.08.2000.
 Redação original da alínea "c" em vigor no período de 01.11.96 a 31.07.2000:
 "c) onde seja cobrado o serviço, nos demais casos;"
-d) onde seja cobrado o serviço, nos demais casos; 
+d) onde seja cobrado o serviço, nos demais casos;
 Acrescentada a alínea "d" pelo art. 3º da Lei nº 13.023/2010, em vigor em 26.12.2000,
 produzindo efeitos a partir de 01.08.2000.
 IV - tratando-se de serviços prestados ou iniciados no exterior, o do
 estabelecimento ou domicílio do destinatário.
-
-===== PAGINA 74 =====
-____________________________________________________________________
-74
 V - tratando-se de operações ou prestações interestaduais destinadas a
 consumidor final, em relação à diferença entre a alíquota interna do Estado de destino e
-a alíquota interestadual: 
+a alíquota interestadual:
 a) o do estabelecimento do destinatário, quando o destinatário ou o
 tomador for contribuinte do imposto;
 b) o do estabelecimento do remetente ou onde tiver início a prestação,
 quando o destinatário ou tomador não for contribuinte do imposto.
 Acrescentado a alínea "b" pelo art. 6º, da Lei n. 20.949, de 31.12.2021, em vigor em
-31.12.2021, produzindo efeitos a partir de 1º.4.2022.
 § 1º O disposto na alínea "c" do inciso I não se aplica às mercadorias
 recebidas em regime de depósito de contribuinte de unidade federada que não a do
 depositário.
@@ -3307,56 +2663,39 @@ estabelecimento que fornecer esses instrumentos ao adquirente ou usuário.
 envolvam localidades situadas em diferentes unidades federadas e cujo preço seja
 cobrado por períodos definidos, o imposto devido será recolhido em partes iguais para as
 unidades federadas onde estiverem localizados o prestador e o tomador (Lei
-
-===== PAGINA 75 =====
-____________________________________________________________________
-75
 Complementar n. 102/00).
 Acrescentado o § 8º pelo art. 3º da Lei nº 13.023/2010, em vigor em 26.12.2000,
 produzindo efeitos a partir de 1º.8.2000.
 § 9º Na hipótese da alínea "b" do inciso V do caput deste artigo, quando o
 destino final da mercadoria, bem ou serviço ocorrer em Estado diferente daquele em que
-estiver 
-domiciliado 
-ou 
-estabelecido 
-o 
-adquirente 
-ou 
-o 
-tomador, 
-o 
+estiver
+domiciliado
+estabelecido
+adquirente
+tomador,
 imposto
 correspondente à diferença entre a alíquota interna e a interestadual será devido ao
 Estado no qual efetivamente ocorrer a entrada física da mercadoria ou bem ou o fim da
-prestação do serviço. 
+prestação do serviço.
 Acrescentado o § 9º pelo art. 7º, da Lei n. 20.949, de 31.12.2021, em vigor em
-31.12.2021, produzindo efeitos a partir de 1º.4.2022.
 § 10. Na hipótese de serviço de transporte interestadual de passageiros
-cujo tomador não seja contribuinte do imposto: 
+cujo tomador não seja contribuinte do imposto:
 I - o passageiro será considerado o consumidor final do serviço, e o fato
 gerador considerar-se-á ocorrido no local referido nas alíneas "a" ou "c" do inciso II do
 caput, conforme o caso, não se aplicando o disposto no inciso V do caput e no § 9º,
 todos deste artigo;
 Nova redação do inciso I dada pelo art. 10 da Lei n. 22.190, de 13.11.2024, em vigor em
-13.11.2024 (publicação), produzindo efeitos a partir de 13.11.2024.
 Redação original do inciso I, acrescentado pelo art. 7º, da Lei n. 20.949, de 31.12.2021,
 em vigor em 31.12.2021, que produziu efeitos de 1º.4.2022.até 12.11.2024:
 "I - o passageiro será considerado o consumidor final do serviço, e o fato gerador
 considerar-se-á ocorrido no Estado referido nas alíneas "a" ou "c" do inciso V do caput
-deste artigo, conforme o caso; e" 
+deste artigo, conforme o caso; e"
 II - o destinatário do serviço considerar-se-á localizado no Estado da
 ocorrência do fato gerador, e a prestação ficará sujeita à tributação pela sua alíquota
 interna.
 Acrescentado o § 10 pelo art. 7º, da Lei n. 20.949, de 31.12.2021, em vigor em
-31.12.2021, produzindo efeitos a partir de 1º.4.2022.
 CAPÍTULO VII
- DO REGIME DE COMPENSAÇÃO DO IMPOSTO
-SEÇÃO I
-
-===== PAGINA 76 =====
-____________________________________________________________________
-76
+DO REGIME DE COMPENSAÇÃO DO IMPOSTO
 DAS MODALIDADES
 Art. 23. O imposto é não-cumulativo, compensando-se o que for
 devido em cada operação relativa à circulação de mercadorias ou prestação de
@@ -3386,10 +2725,6 @@ cobrado em operações de que tenha resultado a entrada de mercadoria, real ou
 simbólica, no estabelecimento, inclusive a destinada ao seu uso ou consumo ou
 ao ativo permanente, ou o recebimento de serviços de transporte interestadual e
 intermunicipal ou de comunicação.
-
-===== PAGINA 77 =====
-____________________________________________________________________
-77
 § 1º O direito de crédito, para efeito de compensação com débito do
 imposto, reconhecido ao estabelecimento que tenha recebido as mercadorias ou para o
 qual tenham sido prestados os serviços, está condicionado à idoneidade da
@@ -3400,7 +2735,7 @@ anos contados da data de emissão do documento.
 § 3º (REVOGADO)
 Revogado o § 3º pelo art. 1º da Lei nº 13.671/2002, em vigor em 05.07.2002, produzindo
 efeitos a partir de 08.05.2002.
-Redação original do § 3º que produziu efeitos  de 1º.11.1996 até 7.5.2002:
+Redação original do § 3º que produziu efeitos de 1º.11.1996 até 7.5.2002:
 "§ 3º Na hipótese do art. 11 far-se-á a complementação ou a restituição das quantias
 pagas com insuficiência ou excesso, respectivamente."
 § 4º Para efeito do disposto no "caput" deste artigo, relativamente aos
@@ -3426,14 +2761,10 @@ e) na hipótese de alienação dos bens do ativo permanente, antes de
 decorrido o prazo de quatro anos contado da data de sua aquisição, não será admitido, a
 partir da data da alienação, o creditamento de que trata este parágrafo em relação à
 fração que corresponderia ao restante do quadriênio;
-
-===== PAGINA 78 =====
-____________________________________________________________________
-78
 f) serão objeto de outro lançamento, além do lançamento em conjunto
 com os demais créditos, para efeito da compensação prevista neste artigo e no art. 23,
 na forma regulamentada pelo Poder Executivo, para aplicação do disposto nas alíneas "a"
-a "e" deste parágrafo; 
+a "e" deste parágrafo;
 g) ao final do quadragésimo oitavo mês contado da data da entrada do
 bem no estabelecimento, o saldo remanescente do crédito será cancelado.
 Nova redação do §4º dada pelo art. 4º da Lei nº 13.023/2000, em vigor em 26.12.2000,
@@ -3465,11 +2796,6 @@ em 26.12.2000, que produziu efeitos de 1º.1.2001 até 31.03.2009:
 c) seu consumo resultar em operação de saída ou prestação para o
 exterior, na proporção destas sobre as saídas ou prestações totais.
 Acrescentada a alínea "c" pelo art. 4º da Lei nº 13.023/2000, em vigor em 26.12.2000,
-produzindo efeitos a partir de 1º.1.2001.
-
-===== PAGINA 79 =====
-____________________________________________________________________
-79
 § 7º Somente dá direito a crédito o recebimento de serviços de
 comunicação utilizados pelo estabelecimento (Lei Complementar n. 102/00):
 Acrescentado o "caput" do § 7º pelo art. 4º da Lei nº 13.023/2000, em vigor em
@@ -3477,11 +2803,9 @@ Acrescentado o "caput" do § 7º pelo art. 4º da Lei nº 13.023/2000, em vigor 
 a) ao qual tenham sido prestados na execução de serviços da mesma
 natureza;
 Acrescentada a alínea "a" pelo art. 4º da Lei nº 13.023/2000, em vigor em 26.12.2000,
-produzindo efeitos a partir de 1º.1.2001.
 b) quando sua utilização resultar em operação de saída ou prestação para
 o exterior, na proporção desta sobre as saídas ou prestações totais.
 Acrescentada a alínea "b" pelo art. 4º da Lei nº 13.023/2000, em vigor em 26.12.2000,
-produzindo efeitos a partir de 1º.1.2001.
 § 8º O contribuinte que efetue transporte de carga própria poderá
 creditar-se do imposto das operações tributadas de aquisição de combustíveis,
 lubrificantes, aditivos, fluidos, pneus e câmaras de ar, observado o disposto no art. 27.
@@ -3504,10 +2828,6 @@ b) NCM 2203, restrito aos estabelecimentos fabricantes cuja produção
 anual correspondente ao somatório da produção de todos os seus estabelecimentos,
 inclusive de coligadas ou controladas, mesmo que localizados em outras unidades
 federadas, não seja superior a cento e trinta milhões de litros no ano civil;
-
-===== PAGINA 80 =====
-____________________________________________________________________
-80
 c) NCM 2202, exceto os Ex 01 e Ex 02 da posição 2202.90.00, limitado à
 saída de quarenta e oito milhões de litros no ano civil;
 Acrescentado o art. 24A pelo art. 6º, da Lei n. 18.879, de 27.9.2016, produzindo efeitos a
@@ -3517,7 +2837,6 @@ Art. 24B Nas hipóteses dos incisos XVI e XVIII do art. 5º desta Lei,
 o crédito relativo às operações e prestações anteriores deve ser deduzido apenas
 do débito correspondente ao imposto devido à unidade federada de origem.
 Acrescentado o art. 24B pelo art. 8º, da Lei n. 20.949, de 31.12.2021, em vigor em
-31.12.2021, produzindo efeitos a partir de 1º.4.2022.
 Art. 25. O montante do ICMS a recolher, por estabelecimento,
 resultará da diferença positiva, no período considerado, do confronto
 débito-crédito.
@@ -3533,10 +2852,6 @@ I - entradas e prestações;
 II - outros créditos;
 III - estornos de débitos;
 IV - eventual saldo credor do período anterior.
-
-===== PAGINA 81 =====
-____________________________________________________________________
-81
 § 4º Nas situações em que o sistema de registro de saídas não identificar
 as mercadorias, a forma de apuração obedecerá ao critério estabelecido pela Fazenda
 Pública.
@@ -3544,7 +2859,7 @@ Pública.
 imposto devido em operações ou prestações realizadas por seus estabelecimentos
 localizados neste Estado, na forma regulamentada pelo Poder Executivo (Lei
 Complementar n. 102/00).
-Nova redação do  §5º dada pelo art. 5º da Lei nº 13.023/2000, em vigor em 26.12.2000,
+Nova redação do §5º dada pelo art. 5º da Lei nº 13.023/2000, em vigor em 26.12.2000,
 produzindo efeitos a partir de 1º.08.2000.
 Redação original do § 5º que produziu efeitos de 01.11.96 até 31.07.2000:
 "§ 5º Em regime especial, a Fazenda Pública poderá autorizar a empresa a efetuar a
@@ -3571,10 +2886,6 @@ II - sejam transferidos a outros contribuintes deste Estado.
 § 8º Os saldos credores acumulados por contribuinte poderão ser
 utilizados para pagamento do ICMS devido no desembaraço aduaneiro de mercadorias
 importadas do exterior por portos e aeroportos paranaenses.
-
-===== PAGINA 82 =====
-____________________________________________________________________
-82
 § 9º O contribuinte do ramo de fornecimento de alimentação de que trata
 o inciso I do art.nº 2º desta Lei, desde que seja emissor de Nota Fiscal Eletrônica - NF-e,
 modelo 65, poderá, em substituição ao regime normal de apuração do ICMS estabelecido
@@ -3582,8 +2893,7 @@ no caput, apurar o imposto devido mensalmente mediante aplicação do percentual
 3,2% (três inteiros e dois décimos por cento) sobre a receita bruta auferida, excluindo-se
 dessa os valores correspondentes a saídas de mercadorias abrangidas por substituição
 tributária.
-Nova redação do § 9º  dada pelo inciso X, art. 50, da Lei n. 18.573, de 30.09.2015,
-produzindo efeitos a partir de 2.10.2015.
+Nova redação do § 9º dada pelo inciso X, art. 50, da Lei n. 18.573, de 30.09.2015,
 Redação original do § 9º, acrescentado pelo art. 2º da Lei nº 13.961/2002, que produziu
 efeitos de 29.01.2003 até 31.12.2015:
 "§ 9º O contribuinte do ramo de fornecimento de alimentação de que trata o inciso I do
@@ -3601,16 +2911,11 @@ crédito sob condição resolutória da homologação.
 § 2º O Poder Executivo poderá, mediante convênio celebrado na forma de
 lei complementar, facultar a opção pelo abatimento de uma percentagem fixa em
 substituição ao imposto efetivamente cobrado nas operações anteriores.
-SEÇÃO II
 DA VEDAÇÃO DO CRÉDITO
 Art. 27. É vedado, salvo determinação em contrário da legislação,
 o crédito relativo a mercadoria ou bem entrados no estabelecimento ou a
 prestação de serviços a ele feita:
 I - decorrentes de operações ou prestações isentas ou não tributadas, ou
-
-===== PAGINA 83 =====
-____________________________________________________________________
-83
 que se refiram a bens, mercadorias, ou serviços alheios à atividade do estabelecimento;
 II - para integração ou consumo em processo de industrialização ou
 produção rural, quando a saída do produto resultante não for tributada ou estiver isenta
@@ -3643,10 +2948,6 @@ estabelecimento os veículos de transporte pessoal.
 exigível na forma da lei, o aproveitamento como crédito terá por limite o valor correto.
 Art. 28. O crédito lançado irregularmente fica sujeito a glosa em
 ação administrativo-fiscal.
-
-===== PAGINA 84 =====
-____________________________________________________________________
-84
 SEÇÃO III
 DO ESTORNO DO CRÉDITO
 Art. 29. O sujeito passivo deverá efetuar o estorno do imposto
@@ -3665,7 +2966,6 @@ V - vier a perecer, deteriorar-se ou extraviar-se.
 I - utilizados em desacordo com a legislação;
 II - (REVOGADO)
 Revogado o inciso II pelo art. 9º da Lei nº 13.023/2000, em vigor em 26.12.2000,
-produzindo efeitos a partir de 1º.1.2001.
 Redação original do inciso II que produziu efeitos de 1º.11.1996 a 31.12.2000:
 "II - referentes a bens do ativo permanente alienados antes de decorrido o prazo de cinco
 anos contado da data da sua aquisição, hipótese em que o estorno será de vinte por
@@ -3676,10 +2976,6 @@ Nova redação do § 2º dada pelo art. 29 pela alteração 1ª, art. 1º, da Le
 produzindo efeitos a partir de 7.7.2003.
 Redação anterior do § 2º dada pelo art. 1º da Lei nº 13.739/2002, que produziu efeitos de
 24.7.2002 até 06.7.2003:
-
-===== PAGINA 85 =====
-____________________________________________________________________
-85
 "§ 2º. Não se estornam créditos referentes a mercadorias e serviços que venham a ser
 objeto de operações ou prestações destinadas ao exterior, bem como referentes a
 mercadorias adquiridas no Estado ou importadas do exterior com despacho aduaneiro
@@ -3693,7 +2989,6 @@ periódicos de que trata o inciso I do art. 4º desta Lei."
 § 3º O não creditamento ou o estorno a que se referem os incisos II e III
 do art. 27 e os incisos I, II, III e V deste artigo, não impedem a utilização dos mesmos
 créditos em operações posteriores, sujeitas ao imposto, com a mesma mercadoria.
-§ 4º (REVOGADO)
 Revogado o § 4º pelo art. 9º da Lei nº 13.023/2000, em vigor em 26.12.2000, produzindo
 efeitos a partir de 1º.1.2001.
 Redação original do § 4º que produziu efeitos de 1º.11.1996 até 31.12.2000:
@@ -3709,23 +3004,17 @@ Redação original do § 5º que produziu efeitos de 1º.11.1996 até 31.12.2000
 se obtiver multiplicando-se o respectivo crédito pelo fator igual a um sessenta avos da
 relação entre as somas das saídas e prestações isentas e não tributadas, exceto as
 destinadas ao exterior, e o total das saídas e prestações no mesmo período."
-§ 6º (REVOGADO)
 Revogado o § 6º pelo art. 9º da Lei nº 13.023/2000, em vigor em 26.12.2000, produzindo
 efeitos a partir de 01.01.2001.
 Redação original do § 6º que produziu efeitos de 1º.11.1996 até 31.12.2000:
 § 6º. O quociente de um sessenta avos será proporcionalmente aumentado ou diminuído,
 pro rata dia, caso o período de apuração seja superior ou inferior a um mês.
-
-===== PAGINA 86 =====
-____________________________________________________________________
-86
 § 7º (REVOGADO)
 Revogado o § 7º pelo art. 9º da Lei nº 13.023/2000, em vigor em 26.12.2000, produzindo
 efeitos a partir de 01.01.2001.
 Redação original do § 7º que produziu efeitos de 1º.11.1996 até 31.12.2000:
 § 7º. O montante que resultar da aplicação dos §§ 4º, 5º e 6º deste artigo será lançado
 no livro próprio como estorno de crédito.
-§ 8º (REVOGADO)
 Revogado o § 8º pelo art. 9º da Lei nº 13.023/2000, em vigor em 26.12.2000, produzindo
 efeitos a partir de 1º.1.2001.
 Redação original do § 8º que produziu efeitos de 1º.11.1996 até 31.12.2000:
@@ -3739,7 +3028,6 @@ calculado mediante a aplicação da alíquota interna, vigente na data do estorn
 preço de aquisição mais recente para cada tipo de mercadoria, observado, no caso do
 inciso IV do caput deste artigo, o percentual de redução.
 Nova redação do § 9º dada pelo art. 8º da Lei n. 19.358, de 20.12.2017, produzindo
-efeitos a partir de 21.12.2017 (publicação).
 Redação original do § 9º que produziu efeitos de 14.11.1996 até 20.12.2017:
 "§ 9º O crédito a estornar, nas hipóteses indicadas neste artigo, quando não conhecido o
 valor exato, é o valor correspondente ao custo da matéria-prima, material secundário e
@@ -3752,10 +3040,6 @@ DO REGIME DE TRIBUTAÇÃO MONOFÁSICA
 Acrescentado o Capítulo VIIIA pelo art. 3º da Lei n. 22.262, de 13.12.2024, em vigor em
 13.12.2024 (publicação), produzindo efeitos a partir de 13.12.2024 (vide art. 43, inciso V,
 da Lei n.22.262, de 13.12.2024).
-
-===== PAGINA 87 =====
-____________________________________________________________________
-87
 Art. 29A. O imposto incidirá uma única vez, qualquer que seja sua
 finalidade, nas operações com os seguintes combustíveis, ainda que iniciadas no
 exterior (Lei Complementar Federal nº 192, de 11 de março de 2022):
@@ -3786,10 +3070,6 @@ do § 4º do art. 155 da Constituição Federal;
 c) poderão ser reduzidas e restabelecidas no mesmo exercício financeiro,
 observado o disposto na alínea "c" do inciso III do caput do art. 150 da Constituição
 Federal.
-
-===== PAGINA 88 =====
-____________________________________________________________________
-88
 Art. 29C. São contribuintes do imposto, no regime de tributação
 monofásica de que trata este Capítulo:
 I - o produtor e aqueles que lhe sejam equiparados mediante deliberação
@@ -3820,10 +3100,6 @@ quando o imposto não tiver sido objeto de cobrança ou recolhimento ou a opera�
 tiver sido informada ao responsável pelo repasse, na forma e prazo definidos em
 Convênio ICMS celebrado no âmbito do CONFAZ;
 III - o estabelecimento que detenha, armazene ou comercialize
-
-===== PAGINA 89 =====
-____________________________________________________________________
-89
 combustíveis sem possuir autorização para o exercício da atividade.
 Art. 29F. São solidariamente responsáveis os estabelecimentos que
 realizarem operações subsequentes à tributação monofásica com as mercadorias
@@ -3854,10 +3130,6 @@ sobrevindo decisão contrária irrecorrível, o contribuinte ou responsável, no
 quinze dias da respectiva notificação, procederá ao estorno dos créditos lançados,
 também devidamente atualizados, com o pagamento dos acréscimos legais cabíveis.
 Nova redação do § 5º dada pelo art. 4º da Lei n. 19.595 de 12.7.2018, produzindo efeitos
-
-===== PAGINA 90 =====
-____________________________________________________________________
-90
 a partir de 13.7.2018 (publicação).
 Redação original do § 5º que produziu efeitos de 14.11.1996 até 12.7.2018:
 "§ 5º Nas hipóteses do parágrafo anterior e do parágrafo único do art. 31, sobrevindo
@@ -3889,10 +3161,6 @@ valor inferior;
 Acrescentado o inciso I pelo art. 6º da Lei n. 19.595 de 12.7.2018, produzindo efeitos a
 partir de 13.7.2018 (publicação).
 II - recolher a diferença, na hipótese de se realizar por valor superior.
-
-===== PAGINA 91 =====
-____________________________________________________________________
-91
 Acrescentado o inciso II pelo art. 6º da Lei n. 19.595 de 12.7.2018, produzindo efeitos a
 partir de 13.7.2018 (publicação).
 § 3º No cálculo do imposto devido de que trata o § 2º deste artigo deverão
@@ -3915,20 +3183,14 @@ partir de 2.7.2020 (publicação).
 contribuintes que firmarem compromisso de não exigir a restituição de que trata o inciso
 I do § 2º deste artigo (Convênio ICMS 67/2019).
 Acrescentado o § 6º pelo art. 5º da Lei n. 20.250, de 29.6.2020, produzindo efeitos a
-partir de 2.7.2020 (publicação).
 § 7º Exercida a opção pelo regime de tributação de que trata o § 5º deste
 artigo, o contribuinte será mantido no sistema adotado pelo prazo mínimo de doze
 meses, vedada a alteração antes do término do exercício financeiro (Convênio ICMS
 67/2019)
 Acrescentado o § 7º pelo art. 6º da Lei n. 20.250, de 29.6.2020, produzindo efeitos a
-partir de 2.7.2020 (publicação).
 Art. 32. A restituição total ou parcial do ICMS dá lugar à devolução
 de penalidade tributária, juros de mora e correção monetária pagos, atualizados
 a partir da data do pagamento indevido até a data do despacho concessório.
-
-===== PAGINA 92 =====
-____________________________________________________________________
-92
 § 1º A restituição não abrange as multas de natureza formal não
 prejudicadas pela causa assecuratória da restituição.
 § 2º Nas hipóteses do § 4º do art. 30 e do parágrafo único do art. 31, o
@@ -3959,10 +3221,6 @@ do fato.
 Nova redação do § 4º dada pelo inciso I, art. 1º, da Lei nº 17.630/2013, produzindo
 efeitos a partir de 22.07.2013.
 Redação original do § 4º que produziu efeitos de 1º.11.1996 a 21.07.2013:
-
-===== PAGINA 93 =====
-____________________________________________________________________
-93
 "§ 4º A paralisação temporária ou o reinício de atividades, bem como as demais
 alterações que ocorrerem nos dados cadastrais do contribuinte, devem ser por este
 comunicadas à repartição fazendária na data da ocorrência do fato."
@@ -3973,13 +3231,13 @@ mediante a entrega da documentação fiscal.
 reativada desde que o contribuinte tenha regularizado a sua situação.
 § 7º O Poder Executivo poderá dispensar a inscrição, bem como denegar a
 concessão de mais de uma, para o mesmo ramo de atividade no mesmo local.
-Art. 
-34. 
-Compete 
-ao 
-Poder 
-Executivo 
-expedir 
+Art.
+34.
+Compete
+ao
+Poder
+Executivo
+expedir
 decreto
 estabelecendo as regras para inscrição, alteração, paralisação temporária,
 exclusão e cancelamento "ex officio", bem como os modelos dos respectivos
@@ -3988,23 +3246,16 @@ documentos.
 I - número de inscrição no CAD-ICMS;
 II - número de inscrição no CNPJ;
 Nova redação do inciso II dada pelo inciso II, art. 1º, da Lei nº 17.630/2013, produzindo
-efeitos a partir de 22.7.2013.
 Redação original do inciso II que produziu efeitos de 1º.11.1996 até 21.7.2013:
 "II - número de inscrição no CGC;"
 III - nome empresarial;
 Nova redação do inciso III dada pelo inciso II, art. 1º, da Lei nº 17.630/2013, produzindo
-efeitos a partir de 22.7.2013.
 Redação original do inciso III que produziu efeitos de 1º.11.1996 até 21.7.2013:
 "III - razão social;"
 IV - endereço completo;
 V - identificação de proprietários, sócios e responsáveis;
 VI - código de atividade econômica;
 Nova redação do inciso VI dada pelo inciso II, art. 1º, da Lei nº 17.630/2013, produzindo
-efeitos a partir de 22.7.2013.
-
-===== PAGINA 94 =====
-____________________________________________________________________
-94
 Redação original do inciso VI que produziu efeitos de 1º.11.1996 até 21.7.2013:
 "VI - código de atividade econômica definido pela Secretaria de Fazenda;"
 VII - outros que a legislação determinar.
@@ -4012,7 +3263,6 @@ VII - outros que a legislação determinar.
 temporária, poderá a Fazenda Estadual exigir garantias dos créditos pendentes.
 CAPÍTULO X
 DA EXTINÇÃO DO CRÉDITO TRIBUTÁRIO
-SEÇÃO I
 DAS MODALIDADES DE EXTINÇÃO
 Art. 35. O crédito tributário extingue-se pelo pagamento, podendo,
 ainda, ser extinto pelas demais modalidades previstas no Código Tributário
@@ -4030,18 +3280,13 @@ Redação original do inciso II que produziu efeitos de 1º.11.1996 até 1º.7.2
 "II - por dação em pagamento, de bens livres de quaisquer ônus."
 § 2º A liquidação dar-se-á nas condições e garantias a serem estipuladas
 em cada caso.
-
-===== PAGINA 95 =====
-____________________________________________________________________
-95
-§ 
-3º 
-O 
-pagamento 
-será 
-realizado 
-exclusivamente 
-nos 
+§
+3º
+pagamento
+será
+realizado
+exclusivamente
+nos
 agentes
 arrecadadores autorizados.
 Acrescentado o § 3º pelo inciso III, art. 1º, da Lei nº 17.630/2013, produzindo efeitos a
@@ -4056,7 +3301,7 @@ cheque administrativo."
 acréscimos, o pagamento de parte do valor total, ainda que atribuído pelo contribuinte a
 uma só dessas rubricas, será imputado proporcionalmente a todas elas, ressalvada a
 hipótese em que o contribuinte concordar apenas parcialmente com o auto de infração
-ou com a decisão de primeira instância, e oferecer  reclamação ou interpor recurso
+ou com a decisão de primeira instância, e oferecer reclamação ou interpor recurso
 ordinário apenas em relação à parcela do crédito tributário contestado, em relação à
 parcela para a qual efetuou, previamente o pagamento da parte não contestada.
 Nova redação do § 4º dada pelo art. 7º, da Lei n. 18.879, de 27.9.2016, produzindo
@@ -4076,43 +3321,32 @@ direta, de quaisquer dos poderes do Estado do Paraná, ou entidade integrante da
 administração indireta desse Estado, dependendo ainda de disponibilidade orçamentária
 e financeira;
 Acrescentado o inciso I pelo art. 2º da Lei n. 20.255, de 30.6.2020, produzindo efeitos a
-partir de 2.7.2020 (publicação).
 II - os bens imóveis oferecidos em dação devem ser de propriedade e
-
-===== PAGINA 96 =====
-____________________________________________________________________
-96
 estarem na posse direta do devedor, além de estarem localizados no território do Estado
 do Paraná;
 Acrescentado o inciso II pelo art. 2º da Lei n. 20.255, de 30.6.2020, produzindo efeitos a
-partir de 2.7.2020 (publicação).
 III - o bem oferecido em dação será avaliado por agente ou órgão oficial
 do Estado, sendo que a dação se dará pelo valor do laudo oficial;
 Acrescentado o inciso III pelo art. 2º da Lei n. 20.255, de 30.6.2020, produzindo efeitos a
-partir de 2.7.2020 (publicação).
 IV - a dação deve abranger a totalidade do crédito, com atualização, juros,
 multa e encargos legais, sem desconto de qualquer natureza, garantindo-se ao devedor
 a possibilidade de complementar em dinheiro eventual diferença entre o valor do bem e
 a totalidade da dívida;
 Acrescentado o inciso IV pelo art. 2º da Lei n. 20.255, de 30.6.2020, produzindo efeitos a
-partir de 2.7.2020 (publicação).
 V - na hipótese em que o valor do imóvel for superior ao valor inscrito em
 dívida ativa a ser extinto, o devedor deverá renunciar a eventual valor excedente do
 imóvel em relação ao débito;
 Acrescentado o inciso V pelo art. 2º da Lei n. 20.255, de 30.6.2020, produzindo efeitos a
-partir de 2.7.2020 (publicação).
 VI - o devedor ou o corresponsável deverão desistir de eventuais ações de
 impugnação dos débitos e de eventuais recursos administrativos, com a renúncia do
 direito sobre o qual se fundam, importando a proposta de dação em ato de
 reconhecimento da dívida;
 Acrescentado o inciso VI pelo art. 2º da Lei n. 20.255, de 30.6.2020, produzindo efeitos a
-partir de 2.7.2020 (publicação).
 VII - serão de responsabilidade do devedor o pagamento das custas
 judiciais e honorários advocatícios das ações referidas no inciso VI deste parágrafo, bem
 como das execuções fiscais que tenham por objeto os débitos a serem extintos mediante
 a dação;
 Acrescentado o inciso VII pelo art. 2º da Lei n. 20.255, de 30.6.2020, produzindo efeitos a
-partir de 2.7.2020 (publicação).
 VIII - o devedor arcará com eventuais custos de avaliação e de
 transferência do imóvel ao patrimônio do Estado;
 Acrescentado o inciso VIII pelo art. 2º da Lei n. 20.255, de 30.6.2020, produzindo efeitos
@@ -4120,20 +3354,13 @@ a partir de 2.7.2020 (publicação).
 IX - o procedimento e a documentação exigida do devedor interessado na
 dação serão previstos em ato do Poder Executivo.
 Acrescentado o inciso IX pelo art. 2º da Lei n. 20.255, de 30.6.2020, produzindo efeitos a
-
-===== PAGINA 97 =====
-____________________________________________________________________
-97
-partir de 2.7.2020 (publicação).
 §6º Excepcionalmente, poderão ser aceitos imóveis localizados fora do
 território paranaense, de acordo com o interesse da Administração Pública.
 Acrescentado o § 6º pelo art. 2º da Lei n. 20.255, de 30.6.2020, produzindo efeitos a
-partir de 2.7.2020 (publicação).
 Art. 35A. A prescrição do crédito tributário será reconhecida de
 ofício pela autoridade administrativa, quando certificada sua ocorrência.
 Acrescentado o art. 35A pelo art. 4º da Lei n. 22.262, de 13.12.2024, em vigor em
 13.12.2024 (publicação), produzindo efeitos a partir de 13.12.2024.
-SEÇÃO II
 DOS PRAZOS DE PAGAMENTO
 Art. 36. Por ocasião da ocorrência do fato gerador, a Fazenda
 Pública poderá exigir o pagamento do crédito tributário correspondente.
@@ -4154,16 +3381,12 @@ evitar prejuízos à economia paranaense, o Governador do Estado, ad referendum 
 Assembléia Legislativa poderá autorizar que o pagamento do imposto ocorra em data
 posterior ao prazo fixado no inciso I do § 1º deste artigo, desde que sujeito à atualização
 monetária plena.
-
-===== PAGINA 98 =====
-____________________________________________________________________
-98
 § 5º Poderá ser concedido desconto pelo recolhimento antecipado do
 imposto vincendo, cujos fatos geradores já ocorreram, mediante aplicação, sobre o
 imposto apurado, de percentual de desconto não superior aos índices exigidos pelo fisco
 para a cobrança de encargos de inadimplência, nos termos estabelecidos pelo Poder
 Executivo.
-Acrescentado o § 5º  pelo art. 1º da Lei nº 17.741/2013, produzindo efeitos a partir de
+Acrescentado o § 5º pelo art. 1º da Lei nº 17.741/2013, produzindo efeitos a partir de
 30.10.2013.
 SEÇÃO III
 DA ATUALIZAÇÃO MONETÁRIA DOS CRÉDITOS TRIBUTÁRIOS
@@ -4180,7 +3403,6 @@ depósito, na forma da lei, do seu montante integral."
 § 1º A Coordenação da Receita do Estado divulgará, periodicamente, os
 fatores de conversão e atualização.
 Nova redação do § 1º dada pelo inciso IV, art.1º, da Lei nº 15.610/2007, em vigor em
-22.8.2007, produzindo efeitos a partir de 22.1.2007.
 Redação anterior do § 1º dada pelo art. 6º da Lei nº 13.023/2000, em vigor em
 26.12.2000, produzindo efeitos de 26.10.2000 até 21.1.2007:
 "§ 1º Para os efeitos deste artigo, utilizar-se-á a variação do valor do Fator de Conversão
@@ -4190,10 +3412,6 @@ Redação original do § 1º que produziu efeitos de 1º.11.1996 até 25.10.2000
 "§ 1º. Para os efeitos deste artigo, utilizar-se-á a variação do valor da Unidade Fiscal de
 Referência ou outro índice que preserve adequadamente o valor real do imposto.'
 § 2º Para determinação do valor da multa a ser exigida em auto de
-
-===== PAGINA 99 =====
-____________________________________________________________________
-99
 infração:
 a) os valores originais correspondentes a sua base de cálculo deverão ser
 atualizados a partir da ocorrência da infração até a data da lavratura do auto;
@@ -4210,39 +3428,27 @@ produzindo efeitos a partir de 22.1.2007.
 Redação original do § 3º que produziu efeitos de 1º.11.1996 até 21.1.2007:
 "§ 3º Visando a uniformização do cálculo da atualização monetária do crédito tributário, a
 Fazenda poderá optar pelo índice fixado pela União na cobrança dos impostos federais."
-§ 4º (REVOGADO)
 Revogado o § 4º pelo inciso IV, art.1º, da Lei nº 15.610/2007, em vigor em 22.8.2007,
-produzindo efeitos a partir de 22.1.2007.
 Redação original do § 4º que produziu efeitos de 1º.11.1996 até 21.1.2007:
 "§ 4º A Secretaria da Fazenda divulgará, periodicamente, os fatores de conversão e
 atualização."
 § 5º (REVOGADO)
 Revogado o § 5º pelo inciso IV, art.1º, da Lei nº 15.610/2007, em vigor em 22.8.2007,
-produzindo efeitos a partir de 22.1.2007.
 Redação original que produziu efeitos de 1º.11.1996 até 21.1.2007:
 "§ 5º Quando não for possível precisar a data da ocorrência do fato gerador, adotar-se-á,
 para o cálculo da atualização monetária, a média aritmética dos índices do período
 verificado."
-§ 6º (REVOGADO)
 Revogado o § 6º pelo inciso IV, art.1º, da Lei nº 15.610/2007, em vigor em 22.8.2007,
-produzindo efeitos a partir de 22.1.2007.
-
-===== PAGINA 100 =====
-____________________________________________________________________
-100
 Redação original do § 6º que produziu efeitos de 1º.11.1996 até 21.1.2007:
 "§ 6º Nos casos de parcelamento, a atualização monetária será calculada até a data da
 celebração do respectivo termo de acordo e, a partir desta, até a data do efetivo
 pagamento de cada parcela."
 § 7º (REVOGADO)
 Revogado o § 7º pelo inciso IV, art.1º, da Lei nº 15.610/2007, em vigor em 22.8.2007,
-produzindo efeitos a partir de 22.1.2007.
 Redação original que produziu efeitos de 1º.11.1996 até 21.1.2007:
 "§ 7º Quando o pagamento da atualização monetária ou dos juros for a menor, a
 insuficiência será atualizada a partir do dia em que ocorreu aquele pagamento."
-§ 8º (REVOGADO)
 Revogado o § 8º pelo inciso IV, art.1º, da Lei nº 15.610/2007, em vigor em 22.08.2007,
-produzindo efeitos a partir de 22.1.2007.
 Redação original que produziu efeitos de 1º.11.1996 até 21.1.2007:
 "§ 8º Para determinação do valor do imposto a ser exigido em auto de infração, os
 valores originais deverão ser atualizados, nos termos definidos nesta Lei, a partir da
@@ -4250,48 +3456,40 @@ ocorrência da infração até a data da lavratura do auto, e desta até a do ef
 pagamento."
 SEÇÃO IV
 DOS JUROS DE MORA
-Art. 38. 
-O 
-crédito 
+Art. 38.
+crédito
 tributário não integralmente pago no
 vencimento, inclusive o decorrente de multas, será acrescido de juros de mora,
 correspondente ao somatório da taxa referencial do Sistema Especial de
 Liquidação e de Custódia - SELIC, para títulos federais, ao mês ou fração, exceto
 quando garantido pelo depósito do seu montante integral, na forma da lei.
 Nova redação do "caput" dada pelo inciso V, art.1º, da Lei nº 15.610/2007, em vigor em
-22.8.2007,  produzindo efeitos a partir de 22.1.2007.
 Redação original do "caput" que produziu efeitos de 1º.11.1996 até 21.1.2007:
 "Art. 38. O crédito tributário, inclusive o decorrente de multas, atualizado monetariamente,
 será acrescido de juros de mora, equivalentes à taxa referencial do Sistema Especial de
 Liquidação e de Custódia - SELIC, para títulos federais, acumuladas mensalmente, ao
 mês ou fração."
-
-===== PAGINA 101 =====
-____________________________________________________________________
-101
 § 1º Será de um por cento ao mês ou fração o percentual de juros de
 mora, relativo ao mês em que o pagamento estiver sendo efetuado.
 Nova redação do § 1º dada pelo inciso V, art.1º, da Lei nº 15.610/2007, em vigor em
-22.8.2007,  produzindo efeitos a partir de 22.1.2007.
-Redação anterior do § 1º dada pelo art. 1º  da Lei nº 12.321/1998, produzindo efeitos de
+Redação anterior do § 1º dada pelo art. 1º da Lei nº 12.321/1998, produzindo efeitos de
 14.9.1998 até 21.1.2007:
 "§ 1º. Será de 1% (um por cento) ao mês ou fração o percentual de juros de mora:
 a) até 180 (cento e oitenta) dias da data em que expirar o prazo de pagamento, desde
 que o crédito tributário correspondente seja pago ou parcelado;
 b) relativo ao mês em que o pagamento estiver sendo efetuado.".
-Redação original do § 1º que produziu efeitos  de 1º.11.1996 até 21.7.2007:
+Redação original do § 1º que produziu efeitos de 1º.11.1996 até 21.7.2007:
 "§ 1º. O percentual de juros de mora relativo ao mês em que o pagamento estiver sendo
 efetuado será de 1% (um por cento)."
 § 2º Nos casos de verificação fiscal, quando não for possível precisar a
 data da ocorrência do fato gerador, adotar-se-á:
 I - o índice correspondente ao mês de julho, quando o período objeto de
 verificação coincidir com o ano civil;
-II  - o índice correspondente ao mês central do período, se o número de
+II - o índice correspondente ao mês central do período, se o número de
 meses for ímpar, ou o correspondente ao primeiro mês da segunda metade do período,
 se aquele for par.
 Nova redação do § 2º dada pelo inciso XI, art. 50, da Lei n. 18.573, de 30.9.2015,
-produzindo efeitos a partir de 2.10.2015.
-Redação anterior do § 2º dada pelo inciso V, art.1º, da Lei nº 15.610/2007,  produzindo
+Redação anterior do § 2º dada pelo inciso V, art.1º, da Lei nº 15.610/2007, produzindo
 efeitos de 22.1.2007 até 31.12.2015:
 "§ 2º Nos casos de verificação fiscal, quando não for possível precisar a data da
 ocorrência do fato gerador, adotar-se-á a média aritmética das taxas do período
@@ -4300,26 +3498,18 @@ Redação original do § 2º que produziu efeitos de 1º.11.1996 até 21.1.2007:
 "§ 2º. Em nenhuma hipótese, os juros de mora previstos neste artigo poderão ser
 inferiores à taxa de juros estabelecida no art. 161, § 1º, do Código Tributário Nacional."
 § 3º A Coordenação da Receita do Estado divulgará, mensalmente, a taxa
-a que se refere o "caput".  
+a que se refere o "caput".
 Nova redação do § 3º dada pelo inciso V, art.1º, da Lei nº 15.610/2007, em vigor em
-22.8.2007,  produzindo efeitos a partir de 22.1.2007.
-
-===== PAGINA 102 =====
-____________________________________________________________________
-102
 Redação original do § 3º que produziu efeitos de 1º.11.1996 até 21.1.2007:
 "§ 3°. Os juros previstos neste artigo serão contados a partir do mês em que expirar o
 prazo de pagamento."
-                  § 4º (REVOGADO)
 Revogado o § 4º pelo inciso V, art.1º, da Lei nº 15.610/2007, em vigor em 22.08.2007,
-produzindo efeitos a partir de 22.1.2007.
 Redação original do § 4º que produziu efeitos de 1º.11.1996 até 21.1.2007:
 "§ 4º No caso de parcelamento, os juros de mora serão calculados até o mês da
 celebração do respectivo termo de acordo e, a partir daí, nova contagem até o mês do
 efetivo pagamento de cada parcela."
-                  § 5º (REVOGADO)
+§ 5º (REVOGADO)
 Revogado o § 5º pelo inciso V, art.1º, da Lei nº 15.610/2007, em vigor em 22.08.2007,
-produzindo efeitos a partir de 22.1.2007.
 Redação original do § 5º que produziu efeitos de 1º.11.1996 até 21.1.2007:
 "§ 5º Nos casos de verificação fiscal, quando não for possível precisar a data da
 ocorrência do fato gerador, adotar-se-á:
@@ -4327,7 +3517,6 @@ I - o índice correspondente ao mês de julho, quando o período objeto de verif
 coincidir com o ano civil;
 II - o índice correspondente ao mês central do período, se o número de meses for ímpar,
 ou o correspondente ao primeiro mês da segunda metade do período, se aquele for par.
-                 § 6º (REVOGADO)
 Revogado o § 5º pelo inciso V, art.1º, da Lei nº 15.610/2007, em vigor em 22.08.2007,
 produzindo efeitos a partir de 22.01.2007.
 Redação original do § 6º que produziu efeitos de 1º.11.1996 até 21.1.2007:
@@ -4336,10 +3525,6 @@ deste artigo."
 SEÇÃO V
 DA DENÚNCIA ESPONTÂNEA
 Art. 39. Os que procurarem espontaneamente a repartição
-
-===== PAGINA 103 =====
-____________________________________________________________________
-103
 fazendária para denunciar a infração, terão excluída a imposição de penalidade.
 § 1º Ocorre a denúncia espontânea quando não tenha sido iniciado
 formalmente, em relação à infração, qualquer procedimento administrativo ou outra
@@ -4348,7 +3533,7 @@ medida de fiscalização.
 concernente ao imposto, a exclusão da responsabilidade fica condicionada ao efetivo
 pagamento do tributo acrescido dos juros de mora devidos.
 Nova redação do § 2º dada pelo art. 39 pelo inciso VI, art.1º, da Lei nº 15.610/2007, em
-vigor em 22.08.2007,  produzindo efeitos a partir de 22.01.2007.
+vigor em 22.08.2007, produzindo efeitos a partir de 22.01.2007.
 Redação original do § 2º que produziu efeitos de 1º.11.1996 até 21.1.2007:
 "§ 2°. Quando a infração relacionar-se com a parcela do crédito tributário concernente ao
 imposto, a exclusão da responsabilidade fica condicionada ao efetivo pagamento do
@@ -4372,10 +3557,6 @@ DA REDUÇÃO DAS MULTAS
 Art. 40. A multa prevista no inciso I do § 1° do art. 55 será
 reduzida:
 I - do primeiro ao trigésimo dia seguintes ao dia em que tenha expirado o
-
-===== PAGINA 104 =====
-____________________________________________________________________
-104
 prazo do pagamento, para 0,33% (trinta e três centésimos por cento) do valor do
 imposto declarado, por dia de atraso;
 II - a partir do 31° dia seguinte ao que tenha expirado o prazo de
@@ -4399,7 +3580,6 @@ III - em 10% (dez por cento) quando pagas no prazo de trinta dias
 contados a partir da ciência da notificação para cumprimento de obrigação relativa às
 decisões finais e irreformáveis, na esfera administrativa.
 Nova redação do inciso III dada pelo art. 8º, da Lei n. 18.879, de 27.9.2016, produzindo
-efeitos a partir de 30.9.2016 (publicação).
 Redação anterior do inciso III dada pelo art. 50, inciso XII, da Lei n. 18.573, de
 30.09.2015, publicada em 2.10.2015, produzindo efeitos de 1º.1.2016 até 29.9.2016:
 "III - em 10% (dez por cento), quando pagas no prazo de trinta dias contados a partir da
@@ -4410,13 +3590,9 @@ Redação anterior do § 1º dada pelo art. 2º da Lei nº 17.605/2013, produzin
 "§ 1° As demais multas previstas no § 1° do art. 55, propostas em auto de infração, serão
 reduzidas nos percentuais abaixo indicados, desde que quitadas juntamente com as
 demais quantias exigidas:
-I  - em 50% (cinquenta por cento), quando pagas até o trigésimo dia subsequente ao da
+I - em 50% (cinquenta por cento), quando pagas até o trigésimo dia subsequente ao da
 ciência do auto de infração;
-
-===== PAGINA 105 =====
-____________________________________________________________________
-105
-II  - em 20% (vinte por cento), quando pagas até o trigésimo dia subsequente ao da
+II - em 20% (vinte por cento), quando pagas até o trigésimo dia subsequente ao da
 ciência da decisão de primeira instância."
 Redação original do parágrafo único, renumero para § 1º, que produziu efeitos de
 14.11.1996 até 17.9.2013:
@@ -4426,10 +3602,9 @@ a) em 75% (setenta e cinco por cento) quando pagas, até o 15º dia subseqüente
 ciência do auto de infração, juntamente com as demais quantias exigidas, ou quando
 estas, quitada a multa, sejam objeto de parcelamento;
 b) em 50% (cinqüenta por cento) quando pagas, do 16º ao 30º dia subseqüente ao da
-ciência do auto de infração, juntamente com as demais quantias exigidas, ou quando
 estas, quitada a multa, sejam objeto de parcelamento."
 § 2º Na hipótese dos incisos II e III do § 1º, os juros incidentes sobre a
-multa também serão reduzidos na mesma proporção. 
+multa também serão reduzidos na mesma proporção.
 Nova redação do § 2º dada inciso XII, art. 50, da Lei n. 18.573, de 30.09.2015, publicada
 em 2.10.2015, produzindo efeitos a partir de 1º.1.2016.
 Redação original do § 2º, acrescentado pelo art. 2º da Lei nº 17.605/2013, que produziu
@@ -4448,15 +3623,9 @@ décimos por cento) do valor do imposto declarado, por dia de atraso.
 Parágrafo único. As demais multas previstas no § 1º do art. 55 desta Lei, propostas em
 auto de infração, serão reduzidas:
 a) em 75% (setenta e cinco por cento) quando pagas, até o 15º dia subseqüente ao da
-ciência do auto de infração, juntamente com as demais quantias exigidas, ou quando
 estas, quitada a multa, sejam objeto de parcelamento;
 b) em 50% (cinqüenta por cento) quando pagas, do 16º ao 30º dia subseqüente ao da
-ciência do auto de infração, juntamente com as demais quantias exigidas, ou quando
 estas, quitada a multa, sejam objeto de parcelamento."
-
-===== PAGINA 106 =====
-____________________________________________________________________
-106
 SEÇÃO VII
 DO PARCELAMENTO
 Art. 41. Os créditos tributários vencidos relativos ao ICMS poderão
@@ -4489,10 +3658,6 @@ benefício de ordem."
 calculados da data da celebração do respectivo acordo até o mês do efetivo pagamento
 de cada parcela.
 Acrescentado o § 4º pelo inciso VII, art. 1º, da Lei nº 15.610/2007, em vigor em
-
-===== PAGINA 107 =====
-____________________________________________________________________
-107
 22.08.2007, produzindo efeitos a partir de 22.01.2007.
 § 5º Para os créditos tributários inscritos em dívida ativa não ajuizados,
 cujo montante a parcelar seja superior a 5.000 UPF/PR (cinco mil Unidades Padrão Fiscal
@@ -4506,7 +3671,6 @@ parcelado com imposição da multa prevista no inciso I do § 1º do art. 55, ap
 percentual de redução estabelecido no inciso II do art. 40, todos desta Lei, quando
 realizado no prazo estipulado, observada a regulamentação do Poder Executivo.
 Acrescentado o § 6º pelo art. 11 da Lei n. da Lei n. 22.190, de 13.11.2024, em vigor em
-13.11.2024 (publicação), produzindo efeitos a partir de 13.11.2024.
 CAPÍTULO XI
 DOS REGIMES ESPECIAIS
 Art. 42. Em casos peculiares e objetivando facilitar o cumprimento
@@ -4523,21 +3687,17 @@ produtos industrializados, o pedido será encaminhado, desde que favorável a su
 concessão, à Secretaria da Receita Federal.
 § 2º Fica proibida qualquer concessão de regime especial fora das
 hipóteses indicadas neste artigo.
-
-===== PAGINA 108 =====
-____________________________________________________________________
-108
 § 3º O regime especial é revogável, a qualquer tempo, podendo, nos casos
 de acordo, ser denunciado isoladamente ou por ambas as partes.
 § 4º Os acordos celebrados na forma do inciso I deste artigo deverão ser
 publicados no Diário Oficial do Estado.
-Art. 
-44. 
-Incumbe 
-às 
-autoridades 
-fiscais, 
-atendendo 
+Art.
+44.
+Incumbe
+às
+autoridades
+fiscais,
+atendendo
 às
 conveniências da administração fazendária, propor, à autoridade competente, a
 reformulação ou revogação dos regimes especiais acordados.
@@ -4561,10 +3721,6 @@ declarados na forma e prazo estabelecidos em decreto do Poder Executivo.
 retirados do estabelecimento, salvo a permanência destes em escritório especializado de
 contabilidade mediante comunicação à repartição fiscal de seu domicílio tributário.
 Art. 46. As pessoas físicas ou jurídicas, contribuintes ou não,
-
-===== PAGINA 109 =====
-____________________________________________________________________
-109
 responsáveis, na forma da legislação, estão obrigadas ao cumprimento das
 obrigações tributárias acessórias, estabelecidas através de decreto do Poder
 Executivo.
@@ -4601,13 +3757,8 @@ que produziu efeitos de 27.11.2012 até 20.12.2017:
 estabelecimentos de contribuintes cujos pagamentos sejam realizados por meio de seus
 sistemas de crédito, débito ou similar, na forma estabelecida em decreto do Poder
 Executivo."
-
-===== PAGINA 110 =====
-____________________________________________________________________
-110
 CAPÍTULO XIII
 DO CONTROLE E DA ORIENTAÇÃO FISCAL
-SEÇÃO I
 DO CONTROLE E DA FISCALIZAÇÃO
 Art. 47. A fiscalização e orientação fiscal relativa ao ICMS compete
 à Secretaria da Fazenda.
@@ -4631,10 +3782,6 @@ depósitos, onde possivelmente estejam os documentos, livros e arquivos, inclusi
 magnéticos ou eletrônicos, lavrando termo desse procedimento do qual deixará cópia ao
 recusante, solicitando de imediato à autoridade administrativa a que estiver
 subordinado, providências para que se faça a exibição judicial.
-
-===== PAGINA 111 =====
-____________________________________________________________________
-111
 § 3º Nos casos de perda ou extravio de livros e demais documentos
 fiscais, poderá a autoridade fiscal intimar o contribuinte a comprovar o montante das
 operações e prestações escrituradas ou que deveriam ter sido escrituradas nos referidos
@@ -4666,10 +3813,6 @@ III - diferença entre o valor apurado em levantamento fiscal que tomou
 por base índice técnico de produção e o valor registrado na escrita fiscal;
 IV - a falta de registro de documento fiscal referente à entrada de
 mercadoria;
-
-===== PAGINA 112 =====
-____________________________________________________________________
-112
 V - a existência de contas no passivo exigível que apareçam oneradas por
 valores documentalmente inexistentes;
 VI - a existência de valores que se encontrem registrados em sistema de
@@ -4687,7 +3830,6 @@ e similares, vinculados a estabelecimento diverso daquele onde se encontram, hip
 na qual todos os valores transmitidos a autorizados por meio da solução serão atribuídos
 ao estabelecimento onde forem localizados.
 Acrescentado o inciso IX pelo art. 8º da Lei n. 20.250, de 29.6.2020, produzindo efeitos a
-partir de 2.7.2020 (publicação).
 Parágrafo único. Apurada a omissão de receita de que trata este artigo,
 caso existam elementos ou informações que permitam identificar a realização de
 operações ou prestações isentas, não tributadas ou sujeitas à substituição tributária,
@@ -4705,10 +3847,6 @@ partir de 30.4.2015.
 Redação original do "caput" que produziu efeitos 1º.11.1996 a 29.4.2015:
 "Art. 52. A fim de resguardar a correta execução desta Lei, a Coordenação da Receita do
 Estado da Secretaria da Fazenda poderá determinar, em casos excepcionais e
-
-===== PAGINA 113 =====
-____________________________________________________________________
-113
 temporariamente, na forma a ser disciplinada em decreto do Poder Executivo, sistema
 individual de controle e pagamento exigindo a cada operação ou prestação o pagamento
 do tributo correspondente, observando-se ao final do período da apuração o sistema de
@@ -4741,20 +3879,14 @@ correspondente, inclusive o devido por substituição tributária, anteriormente
 do documento fiscal, observando-se ao final do período da apuração o sistema de
 compensação do imposto;
 III - inclusão automática na programação de fiscalização; e
-IV - (REVOGADO) 
+IV - (REVOGADO)
 Revogado o inciso IV pelo inciso VIII do art. 14 da Lei n. 22.190, de 13.11.2024, em vigor
-em 13.11.2024 (publicação), produzindo efeitos a partir de 13.11.2024
-
-===== PAGINA 114 =====
-____________________________________________________________________
-114
 Redação original do inciso IV, acrescentado pelo § 3º ao art. 52 pelo art. 19 da Lei nº
 18.468/2015, que produziu efeitos de 30.4.2015 até 12.11.2024:
 "IV - autorização prévia e individual para emissão de notas fiscais."
 V - diferimento ou definição do momento do pagamento do imposto ou a
 sua exigência a cada operação.
 Acrescentado o inciso V pelo inciso XIII, art. 50, da Lei n. 18.573, de 30.09.2015,
-produzindo efeitos a partir de 2.10.2015.
 § 4º O regime especial de que trata este artigo não dispensa o
 contribuinte do cumprimento das demais obrigações acessórias e não elide a aplicação
 de outras medidas que visem garantir o recebimento dos créditos tributários, como:
@@ -4764,14 +3896,13 @@ III - representação ao Ministério Público, observada a disciplina pertinente
 sempre que for constatada a prática de ações que possam configurar, em tese, crime
 contra a ordem tributária, econômica ou delito de outra natureza; e
 IV - cancelamento da inscrição no Cadastro de Contribuintes do ICMS -
-CAD/ICMS, conforme previsto em decreto do Poder Executivo. 
+CAD/ICMS, conforme previsto em decreto do Poder Executivo.
 Acrescentado o § 4º pelo art. 19 da Lei nº 18.468/2015, produzindo efeitos a partir de
 30.04.2015.
 § 5º O contribuinte será excluído do regime especial de que trata este
 artigo se os débitos que motivaram sua inclusão forem extintos ou tiverem sua
 exigibilidade suspensa.
 Nova redação do § 5º dada pelo art. 11 da Lei n. 19.358, de 20.12.2017, produzindo
-efeitos a partir de 21.12.2017 (publicação).
 Redação original do § 5º, acrescentado pelo art. 19 da Lei nº 18.468/2015, que produziu
 efeitos de 30.4.2015 até 20.12.2017.
 "§ 5º O contribuinte deixará de ser considerado devedor contumaz se os débitos que
@@ -4783,15 +3914,10 @@ Acrescentado o § 6º pelo art. 11 da Lei n. 19.358, de 20.12.2017, produzindo e
 partir de 21.12.2017 (publicação).
 § 7º Em caso de alteração da denominação social do estabelecimento, de
 sua transferência, de fusão, de cisão, de transformação ou de incorporação, o regime
-
-===== PAGINA 115 =====
-____________________________________________________________________
-115
 especial de que trata este artigo será estendido automaticamente a seus sucessores (art.
 132 do Código Tributário Nacional).
 Acrescentado o § 7º pelo art. 11 da Lei n. 19.358, de 20.12.2017, produzindo efeitos a
 partir de 21.12.2017 (publicação).
-SEÇÃO II
 DA CONSULTA
 Art. 53. A Secretaria da Fazenda manterá setor consultivo que terá
 por incumbência específica responder a todas as consultas relativas ao ICMS
@@ -4799,7 +3925,6 @@ formuladas por contribuintes ou seus órgãos de classe e repartições fazendá
 § 1º As respostas às consultas serão disponibilizadas periodicamente no
 endereço da Secretaria da Fazenda na internet.
 Nova redação do § 1º dada pelo inciso IV, art. 1º, da Lei nº 17.630/2013, produzindo
-efeitos a partir de 22.7.2013.
 Redação original do § 1º que produziu efeitos de 1.11.96 a 21.7.2013:
 "§ 1º As respostas serão divulgadas pela Coordenação da Receita do Estado através de
 publicação periódica.”
@@ -4814,10 +3939,6 @@ DAS INFRAÇÕES E PENALIDADES
 Art. 54. Constitui infração, para os efeitos desta Lei, toda ação ou
 omissão que importe em inobservância pelo contribuinte, responsável ou
 intermediário de negócios, da legislação tributária relativa ao ICMS.
-
-===== PAGINA 116 =====
-____________________________________________________________________
-116
 § 1º Respondem pela infração, conjunta ou isoladamente, todos os que de
 qualquer forma concorram para a sua prática ou dela se beneficiem.
 § 2º A responsabilidade por infrações à legislação tributária relativa ao
@@ -4843,17 +3964,13 @@ II - equivalente a 40% (quarenta por cento) do valor do imposto devido,
 ao sujeito passivo que, nos casos não previstos no inciso anterior, deixar de pagar o
 imposto, no todo ou em parte, na forma e nos prazos previstos na legislação tributária;
 Nova redação do inciso II dada pelo inciso I, art. 1º da Lei nº 14.979/2005, produzindo
-efeito a partir de 28.12.2005.   (Ver Certidão Imprensa Oficial).
+efeito a partir de 28.12.2005. (Ver Certidão Imprensa Oficial).
 Redação original do inciso II que produziu efeitos de 14.11.96 a 27.12.2005:
 "II - equivalente a 20% (vinte por cento) do valor do imposto devido, ao sujeito passivo
 que, nos casos não previstos no inciso anterior, deixar de pagar o imposto, no todo ou
 em parte, na forma e nos prazos previstos na legislação tributária;"
 III - equivalente a 60% (sessenta por cento) do valor do crédito do
 imposto:
-
-===== PAGINA 117 =====
-____________________________________________________________________
-117
 a) indevidamente utilizado, sem prejuízo do respectivo estorno, ao sujeito
 passivo que se beneficiar com a utilização do crédito do imposto, em desacordo com o
 disposto nesta Lei;
@@ -4875,14 +3992,10 @@ a) deixar de emitir ou de entregar documento fiscal em relação a bem,
 mercadoria ou serviço em operação ou prestação beneficiadas com suspensão ou
 diferimento do pagamento do imposto;
 b) transportar, estocar ou manter em depósito bem ou mercadoria
-beneficiados 
-com 
-suspensão 
-ou 
-diferimento 
-do 
-pagamento 
-do 
+beneficiados
+suspensão
+diferimento
+pagamento
 imposto,
 desacompanhados da documentação fiscal regulamentar;
 c) executar prestação de serviço, beneficiada com suspensão ou
@@ -4896,18 +4009,12 @@ de substituição tributária concomitante ou subseqüente;
 b) transportar, estocar ou manter em depósito bem ou mercadoria
 tributados, inclusive sujeitos ao regime de substituição tributária concomitante ou
 subseqüente, desacompanhados da documentação fiscal regulamentar;
-
-===== PAGINA 118 =====
-____________________________________________________________________
-118
 c) executar prestação de serviço tributada, inclusive sujeita ao regime de
-substituição 
-tributária 
-concomitante 
-ou 
-subseqüente, 
-desacompanhadas 
-de
+substituição
+tributária
+concomitante
+subseqüente,
+desacompanhadas
 documentação fiscal regulamentar;
 VII - equivalente a 20% (vinte por cento) do valor da operação ou
 prestação indicada no documento fiscal, ao sujeito passivo que consignar em documento
@@ -4917,14 +4024,13 @@ serviço em operação ou prestação abrangidas por isenção, imunidade ou nã
 VIII - equivalente a 40% (quarenta por cento) do valor da operação ou
 prestação indicada no documento fiscal, ao sujeito passivo que: (Vide art. 30, II, Lei nº
 17082/2012)
-a) 
-consignar 
-em 
-documento 
-fiscal 
-declaração 
-falsa 
-quanto 
+a)
+consignar
+documento
+fiscal
+declaração
+falsa
+quanto
 ao
 estabelecimento de origem ou destino das mercadorias ou serviços em operações ou
 prestações tributadas, inclusive sujeitas ao regime da substituição tributária, ou
@@ -4951,10 +4057,6 @@ XI - equivalente a 20% (vinte por cento) do valor correspondente à
 diferença entre os valores constantes nas respectivas vias do documento fiscal, ao
 sujeito passivo que emitir documento fiscal constando valores diferentes nas respectivas
 vias em relação a operações ou prestações abrangidas por isenção, imunidade ou
-
-===== PAGINA 119 =====
-____________________________________________________________________
-119
 não-incidência; (Vide art. 30, II, Lei nº 17082/2012)
 XII - equivalente a 40% (quarenta por cento) do valor correspondente à
 diferença entre os valores constantes nas respectivas vias do documento fiscal, ao
@@ -4988,10 +4090,6 @@ deixar de entregar os documentos fiscais não utilizados, para custódia, até o
 suas atividades;
 h) não escriturar, na forma estabelecida na legislação tributária, as
 operações ou prestações com isenção, imunidade ou não-incidência do imposto;
-
-===== PAGINA 120 =====
-____________________________________________________________________
-120
 i) não efetuar a escrituração dos livros fiscais nos prazos regulamentares;
 j) utilizar documento fiscal cujas características extrínsecas não observem
 fidelidade com os requisitos mínimos estabelecidos na legislação;
@@ -5026,10 +4124,6 @@ venda, equipamento emissor de cupom fiscal ou equipamentos similares, ou ainda d
 de efetuar o seu registro no Sistema RO-e - Registro de Ocorrências Eletrônico;
 Nova redação da alínea "e" dada pelo inciso XIV, art. 50, da Lei n. 18.573, de
 30.09.2015, produzindo efeitos a partir de 2.10.2015.
-
-===== PAGINA 121 =====
-____________________________________________________________________
-121
 Redação original da alínea "e" em vigor de 14.11.1996 até 31.12.2015:
 "e) deixar de apresentar à repartição fiscal, na forma da legislação, o documento
 referente à cessação de uso de máquina registradora, terminal ponto de venda,
@@ -5060,13 +4154,8 @@ ao requerer alteração cadastral;
 c) não atender à notificação de estorno de crédito, conforme previsão da
 alínea “h” do inciso anterior.
 Acrescentada a alínea "c" pelo inciso III, art.1º, da Lei nº 15.343/2006, produzindo efeitos a
-partir de 22.12.2006.
 XVII - de 24 (vinte e quatro) UPF/PR, ao sujeito passivo que:
 a) utilizar, sem a autorização, máquina registradora, terminal ponto de
-
-===== PAGINA 122 =====
-____________________________________________________________________
-122
 venda, equipamento emissor de cupom fiscal ou equipamento similar, ou sistema de
 processamento de dados, que emita documento fiscal ou cupom que o substitua, ou,
 ainda, que os utilize em estabelecimento diverso daquele para o qual tenha sido
@@ -5103,10 +4192,6 @@ ou de entregar documento fiscal em relação a operações ou prestações que r
 regime da substituição tributária.
 Acrescentado o inciso XXI pelo inciso I, art. 1º, da Lei 14.859/2005, produzindo efeitos a partir
 de 20.10.2005.
-
-===== PAGINA 123 =====
-____________________________________________________________________
-123
 XXII - de 0,5% (cinco décimos por cento) do valor das operações ou
 prestações não informadas ou informadas em desacordo com a legislação, às instituições
 e aos intermediadores financeiros e de pagamento, integrantes ou não do Sistema de
@@ -5145,13 +4230,9 @@ Acrescentado o inciso XXIII pelo art. 18 da Lei nº 18.468/2015, produzindo efei
 de 30.04.2015.
 XXIV - equivalente a 3% (três por cento) do valor da operação ou da
 prestação, ao destinatário que deixar de registrar os eventos relativos aos documentos
-fiscais eletrônicos   na forma e nos prazos estabelecidos na legislação, ou registrá-los de
+fiscais eletrônicos na forma e nos prazos estabelecidos na legislação, ou registrá-los de
 forma que não corresponda aos fatos efetivamente ocorridos.
 Acrescentado o inciso XXIV pelo inciso XV, art. 50, da Lei n. 18.573, de 30.09.2015,
-
-===== PAGINA 124 =====
-____________________________________________________________________
-124
 publicado em 2.10.2015, produzindo efeitos a partir de 1º.1.2016.
 XXV - equivalente a 10% (dez por cento) do valor do crédito do imposto
 lançado em desacordo com o disposto nesta Lei, sem tê-lo ainda aproveitado, sem
@@ -5187,11 +4268,6 @@ artigo."
 a prevista no inciso I, exigível nos termos do art. 57 desta Lei, serão lançadas em
 processo administrativo fiscal de instrução contraditória.
 Nova redação do § 6º dada pelo art. 9º, da Lei n. 18.879, de 27.9.2016, produzindo
-efeitos a partir de 30.9.2016 (publicação).
-
-===== PAGINA 125 =====
-____________________________________________________________________
-125
 Redação original do § 6º que produziu efeitos de 14.11.96 até 29.9.2016:
 "§ 6º As infrações e penalidades indicadas no § 1º deste artigo, ressalvada a prevista no
 inciso I, exigível nos termos do art. 57, serão lançadas em processo administrativo fiscal
@@ -5203,7 +4279,6 @@ respectivamente, deixar de apresentar o documento de informação e apuração e
 comprovado, através de procedimento fiscal, a cessação de sua atividade no endereço
 cadastrado, ou que tenha encerrado suas atividades sem requerer sua exclusão na forma
 do § 5º do art. 33.
-§ 8º (REVOGADO)
 Revogado o § 8º pelo inciso IV, art.1º, da Lei nº 15.343/2006, produzindo efeitos a partir
 de 22.12.2006.
 Redação original do § 8º, acrescentado pelo inciso II, art. 1º, da Lei nº 14.979/2005, que
@@ -5221,13 +4296,8 @@ Acrescentado o § 9º pelo art. 18 da Lei nº 18.468/2015, produzindo efeitos a 
 30.04.2015.
 CAPÍTULO XV
 DO LANÇAMENTO
-SEÇÃO I
 DO PROCESSO ADMINISTRATIVO FISCAL DE INSTRUÇÃO
 CONTRADITÓRIA
-
-===== PAGINA 126 =====
-____________________________________________________________________
-126
 (REVOGADA)
 Revogada a Seção I pelo inciso II do art. 92 da Lei 18.877, de 27.9.2016, em vigor em
 30.9.2016 (publicação), produzindo efeitos a partir de 1º.5.2017, em razão da
@@ -5267,10 +4337,6 @@ O procedimento fiscal considera-se iniciado:
 a) por termo de início de fiscalização, cientificado o sujeito passivo, seu representante ou
 preposto;
 b) pelo ato de apreensão de quaisquer bens ou mercadorias, ou de retenção de
-
-===== PAGINA 127 =====
-____________________________________________________________________
-127
 documentos ou livros comerciais e fiscais;
 c) por qualquer outro ato escrito, praticado por servidor competente, no exercício de sua
 atividade funcional, desde que cientificado do ato o sujeito passivo, seu representante ou
@@ -5311,21 +4377,14 @@ produzindo efeitos a partir de 20.06.2013.
 e ) não se declarará a nulidade: se não houver prejuízo às partes; em favor de quem lhe
 houver dado causa, por ação ou omissão; se não influir na resolução do conflito ou se o
 ato praticado de forma diversa houver atingido a sua finalidade;
-
-===== PAGINA 128 =====
-____________________________________________________________________
-128
 Acrescentada a alínea "e" ao inciso III do art. 56 pelo art. 8º da Lei nº 17.605/2013,
-produzindo efeitos a partir de 20.06.2013.
 f ) a nulidade de qualquer ato só prejudica os posteriores que dele diretamente
 dependam ou sejam consequência;
 Acrescentada a alínea "f" ao inciso III do art. 56 pelo art. 8º da Lei nº 17.605/2013,
-produzindo efeitos a partir de 20.06.2013.
 g ) a indicação de dispositivo regulamentar supre a menção do dispositivo de lei que lhe
 seja correspondente e não implica nulidade o eventual erro nessa indicação, desde que,
 pela descrição dos fatos, fique evidente o enquadramento legal;
 Acrescentada a alínea "g" ao inciso III do art. 56 pelo art. 8º da Lei nº 17.605/2013,
-produzindo efeitos a partir de 20.06.2013.
 IV - APREENSÃO
 É admissível a apreensão de mercadorias, de bens, de livros, de documentos, de mídias
 ou de qualquer outro repositório de informações digitais, como prova material da infração
@@ -5347,7 +4406,6 @@ especialmente projetado para a autenticação de dados informatizados, garantind
 configuração do código autenticador seja modificada na hipótese de ocorrer qualquer
 alteração, intencional ou não, do seu conteúdo;
 Nova redação dada ao inciso IV do art. 56 pelo art. 6º da Lei nº 17.605/2013, produzindo
-efeitos a partir de 20.6.2013.
 Redação original do inciso IV que produziu efeitos de 1º.11.1996 a 19.6.2013:
 "IV - APREENSÃO
 É admissível a apreensão de mercadorias e demais bens, livros, documentos e arquivos,
@@ -5357,10 +4415,6 @@ a) se houver prova ou fundada suspeita de que as mercadorias e demais bens se
 encontram em residência particular, ou em dependência de qualquer estabelecimento, a
 fiscalização adotará cautelas necessárias para evitar a remoção clandestina e
 determinará providências para busca e apreensão judiciária, se o morador ou detentor
-
-===== PAGINA 129 =====
-____________________________________________________________________
-129
 recusar-se a fazer a exibição dessas mercadorias e demais bens;
 b) as mercadorias ou demais bens apreendidos ficam sob a custódia do Chefe da
 repartição fazendária por onde se iniciar o respectivo processo e poderão ser por este
@@ -5403,10 +4457,6 @@ administração tributária;
 d) consideram-se válidos, para fins de intimação, os endereços fornecidos pelo sujeito
 passivo ou por seu representante legalmente constituído, cabendo a esses mantê-los
 atualizados;
-
-===== PAGINA 130 =====
-____________________________________________________________________
-130
 e) não sendo localizado o sujeito passivo no endereço de que trata a alínea "c", a
 intimação deve ser feita mediante publicação de edital;
 f) os meios de intimação previstos nos itens 1, 2 e 3 da alínea "a" não estão sujeitos a
@@ -5440,22 +4490,17 @@ b) sua apresentação, ou na sua falta, o término do prazo para reclamação, i
 fase litigiosa do procedimento;
 c) apresentada tempestivamente supre eventual omissão ou defeito da intimação;
 Nova redação dada ao inciso VI do art. 56 pelo art. 6º da Lei nº 17.605/2013, produzindo
-efeitos a partir de 20.6.2013.
 Redação original do inciso VI que produziu efeitos de 1º.11.1996 a 19.6.2013:
 "VI - DA RECLAMAÇÃO
 Reclamação é a defesa apresentada, em cada processo, pelo autuado, no prazo de trinta
 dias, a contar da data em que se considera feita a intimação, observando-se que:
-
-===== PAGINA 131 =====
-____________________________________________________________________
-131
 a) será protocolizada na repartição por onde correr a instrução do processo e nela o
 autuado aduzirá todas as razões e argumentos de sua defesa, juntando, desde logo, as
 provas que tiver;
 b) sua apresentação, ou na sua falta, o término do prazo para reclamação, instaura a
 fase litigiosa do procedimento;
 c) apresentada tempestivamente supre eventual omissão ou defeito da intimação;"
-VII - (REVOGADO) 
+VII - (REVOGADO)
 Revogado o inciso VII do art. 56 pelo art. 13 da Lei nº 17.605/2013, produzindo efeitos a
 partir de 20.6.2013.
 Redação original do inciso VII que produziu efeitos de 1º.11.1996 até 19.6.2013:
@@ -5478,16 +4523,11 @@ IX - PARECER
 Concluídas as eventuais diligências, será ultimada a instrução do processo, com parecer
 circunstanciado sobre a matéria discutida;
 Nova redação dada ao inciso IX do art. 56 pelo art. 6º da Lei nº 17.605/2013, produzindo
-efeitos a partir de 20.6.2013.
 Redação original do inciso IX que produziu efeitos de 1º.11.1996 a 19.6.2013:
 "IX - PARECER
 Contestada a reclamação e concluídas as eventuais diligências, será ultimada a
 instrução do processo, no prazo de até quinze dias do recebimento, com parecer
 circunstanciado sobre a matéria discutida;"
-
-===== PAGINA 132 =====
-____________________________________________________________________
-132
 X - REVISÃO DE AUTO DE INFRAÇÃO
 Sem prejuízo do contido no art. 149 do Código Tributário Nacional, se após a ciência do
 auto de infração e antes da decisão de primeira instância for verificada a existência de
@@ -5496,7 +4536,6 @@ intimados os sujeitos passivos, abrindo-se o prazo de trinta dias para apresenta
 reclamação ou cumprimento da obrigação, sem prejuízo do benefício da redução da
 multa previsto no inciso I do § 1° do art. 40;
 Nova redação dada ao inciso X do art. 56 pelo art. 6º da Lei nº 17.605/2013, produzindo
-efeitos a partir de 20.6.2013.
 Redação original que produziu efeitos de 1º.11.1996 a 19.6.2013:
 "X - REVISÃO DE AUTO DE INFRAÇÃO
 Se, após a lavratura do auto de infração e antes da decisão de 1ª Instância, for verificado
@@ -5518,7 +4557,6 @@ que implique inovação no conjunto probatório;
 c) fará parte da decisão relatório resumido do processo, parecer circunstanciado sobre a
 matéria discutida, razões da defesa, fundamentos legais e conclusão;
 Nova redação dada ao inciso XI do art. 56 pelo art. 6º da Lei nº 17.605/2013, produzindo
-efeitos a partir de 20.6.2013.
 Redação original do inciso XI que produziu efeitos de 1º.11.1996 a 19.6.2013:
 "XI - JULGAMENTO EM PRIMEIRA INSTÂNCIA
 O julgamento do processo, em primeira instância, compete ao Diretor da Coordenação da
@@ -5526,10 +4564,6 @@ Receita do Estado da Secretaria da Fazenda, que poderá delegá-la, sendo que an
 proferir a decisão a autoridade administrativa poderá solicitar a audiência de órgão
 jurídico da Coordenação da Receita ou da Procuradoria Fiscal do Estado;"
 XII - DOS RECURSOS PARA SEGUNDA INSTÂNCIA
-
-===== PAGINA 133 =====
-____________________________________________________________________
-133
 As razões do recurso serão juntadas ao respectivo processo, para ulterior
 encaminhamento ao órgão de segunda instância, observando-se que:
 a) os recursos ao Conselho de Contribuintes e Recursos Fiscais são:
@@ -5569,10 +4603,6 @@ Em qualquer fase do processo, em primeira instância, é assegurado ao autuado o
 de vista dos autos na repartição fazendária onde tramitar o feito administrativo, e
 permitido o fornecimento de cópias autenticadas ou certidões por solicitação do
 interessado, lavrando o servidor termo com indicação das peças fornecidas.
-
-===== PAGINA 134 =====
-____________________________________________________________________
-134
 XIV - DECISÕES FINAIS
 As decisões são finais e irreformáveis, na esfera administrativa, quando delas não caiba
 mais recurso ou se esgotarem os prazos para tal procedimento, observando-se que:
@@ -5611,12 +4641,7 @@ Parágrafo único. A administração tributária poderá estabelecer hipóteses 
 reclamações, os recursos ou outros documentos e procedimentos possam ser
 encaminhados de forma eletrônica ou apresentados em formato digital.
 Acrescentado o parágrafo único ao art. 56 pelo art. 10 da Lei nº 17.605/2013, produzindo
-
-===== PAGINA 135 =====
-____________________________________________________________________
-135
 efeitos a partir de 20.06.2013.
-SEÇÃO II
 DO RITO ESPECIAL
 Art. 57. Quando ocorrer a infração descrita no inciso I do § 1º do
 art. 55, o imposto, acrescido da penalidade, será inscrito automaticamente em
@@ -5639,16 +4664,11 @@ assim entendido o endereço postal por ele fornecido para fins cadastrais o ende
 eletrônico a ele atribuído pela administração tributária, a intimação deve ser feita
 mediante publicação de edital.
 Nova redação do § 2º dada pelo art. 10, da Lei n. 18.879, de 27.9.2016, produzindo
-efeitos a partir de 30.9.2016 (publicação).
 Redação anterior do § 2º dada pelo art. 11 da Lei nº 17.605/2013, produzindo efeitos de
 20.06.2013 até 29.9.2016:
 "§ 2º Da inscrição em dívida ativa, o contribuinte será notificado na forma dos itens 2 a 4
 da alínea "a" do inciso V do art. 56, observado o disposto na alínea "e" desse inciso."
 Redação original do § 2º que produziu efeitos de 1º.11.1996 até 19.6.2013:
-
-===== PAGINA 136 =====
-____________________________________________________________________
-136
 "§ 2º Da inscrição em dívida ativa, o contribuinte será notificado através de:
 I - correspondência registrada - AR;
 II - edital publicado no Diário Oficial, quando não encontrado pela empresa de correios no
@@ -5660,7 +4680,6 @@ do sujeito passivo, além da prevista no parágrafo anterior.
 41, o saldo remanescente de imposto, acrescido da penalidade prevista no inciso I do §
 1º do art. 55, todos desta Lei, será inscrito em dívida ativa.
 Acrescentado o § 4º pelo art. 12 da Lei n. 22.190, de 13.11.2024, em vigor em
-13.11.2024 (publicação), produzindo efeitos a partir de 13.11.2024.
 CAPÍTULO XVI
 DAS DISPOSIÇÕES GERAIS E FINAIS
 Art. 58. A partir da eficácia desta Lei todas as infrações à legislação
@@ -5678,19 +4697,13 @@ sanáveis e se evidencie lesão ao interesse público ou prejuízo a terceiros.
 Nova redação do art. 59 dada pelo art. 12 da Lei nº 17.605/2013, produzindo efeitos a
 partir de 20.6.2013.
 Redação original do art. 59 que produziu efeitos de 1º.11.1996 até 19.6.2013:
-
-===== PAGINA 137 =====
-____________________________________________________________________
-137
 "Art. 59. Quando, em função de pagamento insuficiente de crédito tributário, em relação
-aos 
-recolhimentos 
-bancários 
-autorizados 
-ou 
-em 
-repartição 
-fazendária, 
+aos
+recolhimentos
+bancários
+autorizados
+repartição
+fazendária,
 for
 responsabilizado o Agente Fiscal, esta responsabilidade será ilidida, automaticamente,
 pelo lançamento das diferenças em processo administrativo fiscal ou em dívida ativa."
@@ -5718,10 +4731,6 @@ créditos tributários cujo valor atualizado seja inferior à multa mínima prev
 II - suspender a expedição de Certidão de Dívida Ativa, pelo prazo de 1
 (um) ano ou até que o valor dos créditos tributários devidos pelo contribuinte atinjam o
 montante atualizado de 30 (trinta) UPF/PR.
-
-===== PAGINA 138 =====
-____________________________________________________________________
-138
 Art. 64. O art. 18 da Lei nº 8.927, de 28.12.88, passa a vigorar
 com a seguinte redação:
 "Art. 18. Nas aquisições "causa mortis" ou por ato entre vivos, o contribuinte ou responsável
@@ -5738,7 +4747,7 @@ reclamação ou recurso.
 § 4º As multas deste artigo poderão ser impostas proporcionalmente aos infratores, ou
 integralmente a qualquer deles."
 Art. 65. Na aplicação do art. 24 e dos incisos I a III e § 1º do art.
-27, dará  direito a crédito (Lei Complementar n. 102/00):
+27, dará direito a crédito (Lei Complementar n. 102/00):
 I - a entrada de energia elétrica e o recebimento de serviço de
 comunicação, nas hipóteses não elencadas, respectivamente, nos §§ 6º e 7º do art. 24,
 e a entrada de mercadoria destinada ao uso ou consumo do estabelecimento, a partir
@@ -5759,15 +4768,11 @@ estabelecimento, nele entradas a partir da data prevista no inciso I, do art. 33
 Complementar nº 87, de 13 de setembro de 1996, observadas as alterações posteriores"
 Redação anterior do inciso III do art. 65 dada pelo art. 1º da Lei nº 11.964/1997,
 produzindo efeitos de 1º.1.1998 até 29.12.1999:
-
-===== PAGINA 139 =====
-____________________________________________________________________
-139
 "III - somente darão direito de crédito as mercadorias destinadas ao uso ou consumo do
 estabelecimento, nele entradas a partir de 1° de janeiro de 2000."
 Redação original do art. 65 que vigorou de 1º.11.1996 até 31.12.2000 em relação aos
 incisos I e II, e de 1º.11.1996 a 31.12.1997 em relação ao inciso III:
-"Art. 65. Na aplicação do "caput"  e §§ 4º e 5º do art. 24, e dos incisos I a III e § 1º do art.
+"Art. 65. Na aplicação do "caput" e §§ 4º e 5º do art. 24, e dos incisos I a III e § 1º do art.
 27, observar-se-á o seguinte:
 I - a energia elétrica usada ou consumida no estabelecimento dará direito de crédito a
 partir de 1º.11.96;
@@ -5777,14 +4782,12 @@ III - somente darão direito de crédito as mercadorias destinadas ao uso ou con
 estabelecimento, nele entradas a partir de 1º de janeiro de 1998 ."
 Art. 66. Os programas amparados pelas Leis n. 5.515, de 15 de
 fevereiro de 1967, e 9.895, de 8 de janeiro de 1992, submeter-se-ão aos
-regimes 
-de 
-prazos 
-e 
-encargos 
-financeiros 
-definidos 
-nos 
+regimes
+prazos
+encargos
+financeiros
+definidos
+nos
 respectivos
 regulamentos, limitados os juros ao máximo de 12% ao ano, facultada a
 dispensa de encargos de qualquer natureza em empreendimentos econômicos
@@ -5801,10 +4804,6 @@ demais disposições em contrário.
 Art. 69. O Poder Executivo regulamentará a presente Lei no prazo
 de cento e vinte dias da data da sua publicação.
 Art. 69A. O Poder Executivo poderá atualizar anualmente os
-
-===== PAGINA 140 =====
-____________________________________________________________________
-140
 valores monetários a que se refere esta Lei com base no Índice Nacional de
 Preços ao Consumidor Amplo - IPCA.
 Acrescentado o art. 69A pelo inciso XVII, art. 50, da Lei n. 18.573, de 30.09.2015,
@@ -5823,10 +4822,6 @@ JAIME LERNER
 GOVERNADOR DO ESTADO
 MIGUEL SALOMÃO
 SECRETÁRIO DE ESTADO DA FAZENDA
-
-===== PAGINA 141 =====
-____________________________________________________________________
-141
 Notas de Fim
 1 (Janela-flutuante - Janela-flutuante)
 Art. 51. O recolhimento a que se refere o § 7º do art. 5º da Lei nº 11.580,
