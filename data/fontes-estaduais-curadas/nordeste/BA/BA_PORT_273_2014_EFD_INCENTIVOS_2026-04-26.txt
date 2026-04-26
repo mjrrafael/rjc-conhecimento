@@ -1,0 +1,282 @@
+TITULO: Portaria nº 273/2014 - EFD dos incentivos fiscais
+TEMA: ICMS - obrigações acessórias e benefícios fiscais
+TIPO: portaria estadual
+FONTE PUBLICA: https://www.sefaz.ba.gov.br/docs/inspetoria-eletronica/icms/incentivos_fiscais_orientacoes_lancamento.pdf
+DATA DA CAPTURA: 2026-04-26
+
+TEXTO EXTRAIDO
+===== PAGINA 1 =====
+portaria_2014_273.doc 
+PORTARIA Nº 273 DE 17 DE DEZEMBRO DE 2014 
+(Publicada no Diário Oficial de 18/12/2014) 
+Alterada pelas Portarias nºs 143/15, 243/16 e 169/23. 
+Estabelece procedimentos relativos à inclusão na Escrituração Fiscal 
+Digital de informações sobre incentivos fiscais. 
+O SECRETÁRIO DA FAZENDA DO ESTADO DA BAHIA, no uso de suas 
+atribuições e de acordo com o § 3º do art. 247 do Regulamento do ICMS, Dec. nº 13.780, de 16 de 
+março de 2012, 
+RESOLVE: 
+Art. 1º Os contribuintes beneficiados com os incentivos fiscais a seguir indicados 
+deverão registrar as seguintes informações na Escrituração Fiscal Digital - EFD - registros E110, 
+E111, E115 e E116, de acordo com os códigos constantes das tabelas 5.1.1, 5.2 e 5.4, previstas do 
+Manual de Orientação do leiaute da EFD, constante no Anexo único do Ato COTEPE 09, de 18 de 
+abril de 2008, todos disponibilizados pelo Estado da Bahia no Sistema Público de Escrituração 
+Fiscal Digital: 
+I - beneficiários do Crédito Presumido do ICMS previsto na Lei nº 7.025/97 e no 
+Decreto nº 6.734/97: 
+a) informar mensalmente o valor do crédito presumido do ICMS utilizado, de acordo 
+com a tabela 5.1.1, código BA020110, sendo que para cada resolução principal deverá ser 
+apresentado um registro; 
+b) informar mensalmente, a título de declaração, o valor dos créditos não utilizados 
+relativo às entradas de bens e mercadorias destinados ao processo industrial incentivado, de acordo 
+com a tabela 5.2, código BA000111, nos termos da vedação prevista no Decreto nº 6.734/97; 
+Nota: A redação atual da alínea "b", do inciso I do caput do art. 1º foi dada pela Portaria nº 143, de 28/04/15, 
+DOE de 29/04/15, efeitos a partir de 29/04/15. 
+ 
+Redação anterior, efeitos até 28/04/15: 
+“b) informar mensalmente, a título de declaração, o valor dos créditos não utilizados relativo às entradas de bens e 
+mercadorias destinados ao processo industrial incentivado, de acordo com a tabela 5.2, código BA00111, nos termos 
+da vedação prevista no Decreto nº 6.734/97;” 
+c) declarar o valor das operações incentivadas, nos termos do art. 1º do Decreto nº 
+6.734/97, de acordo com a tabela 5.2, código BA000110, sendo que para cada resolução principal 
+deverá ser apresentado um registro; 
+d) declarar mensalmente o piso de faturamento devidamente atualizado, fixado em 
+cada resolução que concedeu o benefício fiscal do Crédito Presumido, de acordo com a tabela 5.2, 
+código BA000115, sendo que para cada piso deverá ser apresentado um registro; 
+e) informar o valor do depósito estabelecido pela Lei nº 13.564, de 20 de junho de 
+2016, em favor do Fundo Estadual de Combate e Erradicação da Pobreza, a título de “Débito 
+Especial”, nos registros E110 (linha relativa a valores recolhidos ou a recolher extra apuração), 
+E111 (código BA050111, tabela 5.1.1) e no registro E116 (código de recolhimento 090 (tabela 5.4 - 
+tabelas globais do SPED - Tabelas) e de receita 2037 (tabela de código de receitas da Bahia), 
+indicando o mês e ano de referência do imposto (mês e ano de apuração), sendo que para cada 
+recolhimento deverá ser apresentado um registro.
+
+===== PAGINA 2 =====
+portaria_2014_273.doc 
+Nota: A alínea “e” foi acrescentada ao inciso I do caput do art. 1º pela Portaria nº 243, de 04/10/16, DOE de 
+06/10/16, efeitos a partir de 06/10/16. 
+II - beneficiários do Programa Desenvolve, previsto na Lei nº 7.980/01 e no Decreto 
+nº 8.205/02: 
+a) informar mensalmente o valor do ICMS com prazo de recolhimento dilatado, 
+apurado de acordo com o Dec. nº 8.205/02, observadas as diretrizes constantes na Instrução 
+Normativa nº 27/2009, de acordo com a tabela 5.1.1, código BA040120, sendo que para cada 
+resolução principal/Piso deverá ser apresentado um registro; 
+b) para efeito de confissão de dívida, declarar mensalmente o valor de que trata a 
+alínea “a” deste inciso, de acordo com a tabela 5.2, código BA000120, independentemente de haver 
+sido recolhido antecipadamente, sendo que para cada resolução principal deverá ser apresentado um 
+registro; 
+c) declarar mensalmente o SDPI (Saldo Devedor Passível do Incentivo pelo 
+DESENVOLVE), apurado de acordo com a Instrução Normativa 27/2009, de acordo com a tabela 
+5.2, código BA000121, sendo que para cada resolução deverá ser informado um SDPI; 
+d) declarar mensalmente o piso de recolhimento devidamente atualizado, fixado em 
+cada resolução que concedeu o benefício fiscal do Desenvolve, de acordo com a tabela 5.2, código 
+BA000125, sendo que para cada piso deverá ser apresentado um registro; 
+e) no mês em que ocorrer o efetivo pagamento do ICMS que teve o prazo de 
+recolhimento dilatado, seja de forma antecipada ou no prazo regulamentar, o contribuinte deverá 
+informar tais recolhimentos a título de “Débito Especial”, nos registros E110 (linha relativa a 
+valores recolhidos ou a recolher extra apuração), E111 (código BA050120, tabela 5.1.1) e no 
+registro E116 (código de recolhimento 090 (tabela 5.4 - tabelas globais do SPED - Tabelas) e de 
+receita 2167 (tabela de código de receitas da Bahia)), indicando o mês e ano de referência do 
+imposto (mês e ano de apuração), sendo que para cada recolhimento deverá ser apresentado um 
+registro. 
+f) no mês em que ocorrer o efetivo pagamento do ICMS que teve o prazo de 
+recolhimento dilatado, com desconto, o contribuinte deverá informar o valor do depósito 
+estabelecido pela Lei nº 13.564, de 20 de junho de 2016, em favor do Fundo Estadual de Combate e 
+Erradicação da Pobreza, separadamente do valor do imposto recolhido e a título de “Débito 
+Especial”, nos registros E110 (linha relativa a valores recolhidos ou a recolher extra apuração), 
+E111 (código BA050121, tabela 5.1.1) e no registro E116 (código de recolhimento 090, tabela 5.4 - 
+tabelas globais do SPED - Tabelas) e de receita 2037 (tabela de código de receitas da Bahia), 
+indicando o mês e ano de referência do imposto (mês e ano de apuração), sendo que para cada 
+recolhimento deverá ser apresentado um registro. 
+Nota: A alínea “f” foi acrescentada ao inciso II do caput do art. 1º pela Portaria nº 243, de 04/10/16, DOE de 
+06/10/16, efeitos a partir de 06/10/16. 
+III - beneficiários do Programa Pronaval, previsto na Lei nº 9.829/05 e no Decreto nº 
+11.015/08: 
+a) informar mensalmente o valor do débito do ICMS com prazo de recolhimento 
+dilatado, de acordo com a tabela 5.1.1, código BA040130, sendo que para cada resolução principal 
+deverá ser apresentado um registro;
+
+===== PAGINA 3 =====
+portaria_2014_273.doc 
+b) para efeito de confissão de dívida, declarar mensalmente o valor de que trata a 
+alínea “a” deste inciso, de acordo com a tabela 5.2, código BA000130, independentemente de haver 
+sido recolhido antecipadamente, sendo que para cada resolução principal deverá ser apresentado um 
+registro; 
+c) declarar mensalmente o SDPI (Saldo Devedor Passível do Incentivo pelo 
+PRONAVAL), de acordo com a tabela 5.2 e código BA000131; 
+d) declarar mensalmente o piso de recolhimento devidamente atualizado, fixado em 
+cada resolução que concedeu o benefício fiscal do Pronaval, de acordo com a tabela 5.2, código 
+BA000135, sendo que para cada piso deverá ser apresentado um registro; 
+Nota: A redação atual da alínea "d", do inciso III do caput do art. 1º foi dada pela Portaria nº 143, de 28/04/15, 
+DOE de 29/04/15, efeitos a partir de 29/04/15. 
+ 
+Redação anterior, efeitos até 28/04/15: 
+“d) declarar mensalmente o piso de recolhimento devidamente atualizado, fixado em cada resolução que concedeu o 
+benefício fiscal do Desenvolve, de acordo com a tabela 5.2, código BA000135, sendo que para cada piso deverá ser 
+apresentado um registro;” 
+e) No mês em que ocorrer o efetivo pagamento do ICMS que teve o prazo de 
+recolhimento dilatado, seja de forma antecipada ou no prazo regulamentar, o contribuinte deverá 
+informar tais recolhimentos a título de “Débito Especial”, nos registros E110 (linha relativa a 
+valores recolhidos ou a recolher extra apuração), E111 (código BA050130, tabela 5.1.1) e no 
+registro E116 (código de recolhimento 090 (tabela 5.4 - tabelas globais do SPED - Tabelas) e de 
+receita 2167 (tabela de código de receitas da Bahia), indicando o mês e ano de referência do 
+imposto (mês e ano de apuração), sendo que para cada recolhimento deverá ser apresentado um 
+registro; 
+IV - beneficiários do Crédito Presumido referente a artigos de Informática, eletrônica 
+e telecomunicações, previsto no Decreto nº 4.316/95: 
+a) informar mensalmente o valor do crédito presumido do ICMS utilizado, de acordo 
+com a tabela 5.1.1, código BA020140; 
+b) informar mensalmente o estorno de Crédito de ICMS relativo às entradas de bens 
+e mercadorias, que no momento da entrada não se tinha certeza de que seriam utilizados em 
+processo industrial incentivado de acordo com a tabela 5.1.1, código BA010140, atendendo à 
+vedação estabelecida no Decreto nº 4.316/95; 
+c) informar mensalmente, a título de declaração, o valor dos créditos não utilizados 
+(não escriturados e não apropriados) relativo às entradas de bens e mercadorias a serem utilizados 
+em processo industrial incentivado, de acordo com a tabela 5.2, código BA000141, atendendo à 
+vedação estabelecida no Decreto nº 4.316/95; 
+Nota: A redação atual da alínea "c", do inciso IV do caput do art. 1º foi dada pela Portaria nº 143, de 28/04/15, 
+DOE de 29/04/15, efeitos a partir de 29/04/15. 
+ 
+Redação anterior, efeitos até 28/04/15: 
+“c) informar mensalmente, a título de declaração, o valor dos créditos não utilizados (não escriturados e não 
+apropriados) relativo às entradas de bens e mercadorias a serem utilizados em processo industrial incentivado, de 
+acordo com a tabela 5.2, código BA00141, atendendo à vedação estabelecida no Decreto nº 4.316/95;” 
+d) declarar mensalmente o valor das operações incentivadas (saídas com amparo do 
+benefício), de acordo com a tabela 5.2, código BA000140.
+
+===== PAGINA 4 =====
+portaria_2014_273.doc 
+V - beneficiários do Crédito de ICMS em substituição ao Procomex, previsto na Lei 
+nº 9.430/05 e nos Decretos nºs 9.426/05 e 10.972/08, informar mensalmente o crédito de ICMS 
+utilizado em substituição ao Benefício Fiscal do Procomex, de acordo com a tabela 5.1.1, código 
+BA020150. 
+VI – Beneficiários do Programa de Estímulo à Indústria do Estado da Bahia - 
+PROIND, previsto no Decreto nº 18.802/2018: 
+Nota: O inciso VI foi acrescentado ao caput do art. 1º pela Portaria nº 169, de 04/12/23, DOE de 05/12/23, efeitos 
+a partir de 05/12/23. 
+a) informar mensalmente, no campo 12 (VL_TOT_DED) do Registro E110, o valor 
+do crédito presumido do ICMS utilizado e detalhar o lançamento no Registro E111, informando, no 
+campo "02" (COD_AJ_APUR), o código de ajuste BA040140 da tabela 5.1.1; 
+b) informar, no Registro E115, o valor das operações incentivadas, nos termos do art. 
+1º do Decreto nº 18.802/18, utilizando o código BA000111 da tabela 5.2, sendo que para cada 
+resolução deverá ser apresentado um registro; 
+c) informar, no Registro E115, no mês de janeiro de cada ano, o valor mínimo de 
+recolhimento devidamente atualizado a que se refere o Decreto nº 18.802/18, utilizando o código 
+BA000116 da tabela 5.2; 
+d) informar, no campo 15 (DEB_ESP) do Registro E110, o valor do recolhimento 
+relativo ao saldo residual a que se refere o Decreto nº 18.202/18, em cada mês de pagamento, 
+detalhar o lançamento no Registro E111, informando, no campo "02" (COD_AJ_APUR), o código 
+BA050112 da tabela 5.1.1 e informar um Registro E116 para cada recolhimento, utilizando, no 
+campo "02" (COD_OR), o código "090" da tabela 5.4, e, no campo "05" (COD_REC), o código 
+0806 da tabela de código de receitas; 
+e) informar o valor do depósito estabelecido pela Lei nº 13.564, de 20 de junho de 
+2016, em favor do Fundo Estadual de Combate e Erradicação da Pobreza no campo 15 (DEB_ESP) 
+do Registro E110, detalhar o lançamento no Registro E111, informando, no campo "02" 
+(COD_AJ_APUR), o código BA050142 da tabela 5.1.1, e informar um Registro E116 para cada 
+recolhimento, utilizando, no campo "02" (COD_OR), o código "090" da tabela 5.4, e, no campo 
+"05" (COD_REC), o código 2037 da tabela de código de receitas; 
+VII - beneficiários do crédito presumido previsto nos artigos 2° e 3°-D do Decreto n° 
+7.799/00, informar mensalmente o valor do crédito presumido utilizado, no campo 08 
+(VL_TOT_AJ_CREDITOS) do registro E110 e detalhar o lançamento no Registro E111, 
+informando, no campo "02" (COD_AJ_APUR), o código BA020010 da tabela 5.1.1; 
+Nota: O inciso VII foi acrescentado ao caput do art. 1º pela Portaria nº 169, de 04/12/23, DOE de 05/12/23, efeitos 
+a partir de 05/12/23. 
+VIII - beneficiários do crédito presumido previsto no artigo 3°-G do Decreto n° 
+7.799/00, informar mensalmente o valor do crédito presumido utilizado, no campo 08 
+(VL_TOT_AJ_CREDITOS) do registro E110 e detalhar o lançamento no Registro E111, 
+informando, no campo "02" (COD_AJ_APUR), o código BA020032 da tabela 5.1.1; 
+Nota: O inciso VIII foi acrescentado ao caput do art. 1º pela Portaria nº 169, de 04/12/23, DOE de 05/12/23, 
+efeitos a partir de 05/12/23. 
+IX - beneficiários dos artigos 1º, 2º, 3º-B, 3º-D, 3º-E, 3°-F e 3°-G do Decreto n° 
+7.799/00, informar mensalmente o valor do estorno de créditos fiscais relativos a mercadorias e
+
+===== PAGINA 5 =====
+portaria_2014_273.doc 
+bens adquiridos e a serviços tomados vinculados a operações subsequentes amparadas pelos 
+benefícios, no campo 05 (VL_ESTORNOS_CRED) do registro E110 e detalhar o lançamento no 
+Registro E111, informando, no campo "02" (COD_AJ_APUR), o código BA010005 da tabela 
+5.1.1; 
+Nota: O inciso IX foi acrescentado ao caput do art. 1º pela Portaria nº 169, de 04/12/23, DOE de 05/12/23, efeitos 
+a partir de 05/12/23. 
+X - beneficiários do crédito presumido previsto no artigo 1° do Decreto n° 
+19.190/19, 
+informar 
+mensalmente 
+o 
+valor 
+do 
+crédito 
+presumido, 
+no 
+campo 
+08 
+(VL_TOT_AJ_CREDITOS) do registro E110 e detalhar o lançamento no Registro E111, 
+informando, no campo "02" (COD_AJ_APUR), o código BA020041 da tabela 5.1.1; 
+Nota: O inciso X foi acrescentado ao caput do art. 1º pela Portaria nº 169, de 04/12/23, DOE de 05/12/23, efeitos a 
+partir de 05/12/23. 
+XI - beneficiários do crédito presumido previsto no artigo 1°-A do Decreto n° 
+11.872/09, 
+informar 
+mensalmente 
+o 
+valor 
+do 
+crédito 
+presumido, 
+no 
+campo 
+08 
+(VL_TOT_AJ_CREDITOS) do registro E110 e detalhar o lançamento no Registro E111, 
+informando, no campo "02" (COD_AJ_APUR), o código BA020042 da tabela 5.1.1; 
+Nota: O inciso XI foi acrescentado ao caput do art. 1º pela Portaria nº 169, de 04/12/23, DOE de 05/12/23, efeitos 
+a partir de 05/12/23. 
+XII - beneficiários do crédito presumido, previsto no Decreto nº 22.266/23: 
+Nota: O inciso XII foi acrescentado ao caput do art. 1º pela Portaria nº 169, de 04/12/23, DOE de 05/12/23, efeitos 
+a partir de 05/12/23. 
+a) informar mensalmente o valor do crédito presumido, no campo 08 
+(VL_TOT_AJ_CREDITOS) do registro E110 e detalhar, para cada resolução, o lançamento no 
+Registro E111, informando, no campo "02" (COD_AJ_APUR), o código BA020150 da tabela 
+5.1.1; 
+b) informar, no Registro E115, o valor das operações incentivadas, nos termos do art. 
+1º do Decreto nº 22.266/23, utilizando o código BA000112 da tabela 5.2, sendo que para cada 
+resolução deverá ser apresentado um registro; 
+c) informar o valor do recolhimento de ICMS, no campo 15 (DEB_ESP) do registro 
+E110 e detalhar o lançamento no Registro E111 informando, no campo "02" (COD_AJ_APUR), o 
+código BA050113 da tabela 5.1.1; 
+d) informar um Registro E116 para cada recolhimento, utilizando, no campo "02" 
+(COD_OR), o código "090" da tabela 5.4, e, no campo "05" (COD_REC), o código 0806 da tabela 
+de código de receitas; 
+e) informar o valor do depósito estabelecido pela Lei nº 13.564, de 20 de junho de 
+2016, em favor do Fundo Estadual de Combate e Erradicação da Pobreza, no campo 15 (DEB_ESP) 
+do registro E110 e detalhar o lançamento a que se refere essa alínea no Registro E111, informando, 
+no campo "02" (COD_AJ_APUR), o código BA050143 da tabela 5.1.1; 
+f) informar um Registro E116 para cada recolhimento, utilizando, no campo "02" 
+(COD_OR), o código "090" da tabela 5.4, e, no campo "05" (COD_REC), o código 2037 da tabela 
+de código de receitas;
+
+===== PAGINA 6 =====
+portaria_2014_273.doc 
+§ 1º Os registros na EFD de que trata este artigo serão exigidos a partir de: 
+I - 01/09/2014, em relação às informações constantes da Tabela Sefaz/Ba 5.1.1; 
+II - 01/01/2015, em relação às informações constantes da Tabela Sefaz/Ba 5.2. 
+§ 2º Em relação às informações constantes da Tabela Sefaz/Ba 5.2, o contribuinte 
+poderá registrar as informações a partir de 01/09/2014. 
+§ 3º A partir do mês em que o contribuinte apresentar as informações completas dos 
+incentivos fiscais na Escrituração Fiscal Digital - EFD (Tabelas 5.1.1 e 5.2), estará dispensado da 
+apresentação mensal da Declaração do Programa Desenvolve - DPD. 
+§ 4º Deverão ser informadas as resoluções principais, relativas a cada incentivo e 
+para cada período de apuração. 
+§ 5º Além das prestações das informações exigidas em cada registro, na linha 3 do 
+registro E111 e na linha 4 do registro E115, (“DESCR_COMPL_AJ”) deverá ser informado o 
+número da resolução principal, no formato XXX/XXXX: 
+§ 6º No caso de empresas beneficiárias do Dec.4.316/95, deverá ser declarado na 
+linha 3 do registro E111 e na linha 4 do Registro E115 (“DESC_COMPL_AJ”) que a empresa se 
+enquadra nas exigências legais para fruição do incentivo. 
+§ 7º Considera-se resolução principal aquela que concede o benefício, seja de 
+implantação ou de ampliação, sendo as demais resoluções a ela vinculadas, consideradas 
+retificadoras, ratificadoras ou explicativas. 
+Art. 2º Revogam-se as disposições em contrário, em especial a Portaria nº 196, de 26 
+de agosto de 2014. 
+Art. 3º Esta Portaria entrará em vigor na data de sua publicação. 
+MANOEL VITÓRIO DA SILVA FILHO 
+Secretário da Fazenda

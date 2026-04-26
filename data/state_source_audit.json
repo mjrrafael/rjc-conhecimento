@@ -561,7 +561,7 @@
     "BA": {
       "estado": "Bahia",
       "region": "Nordeste",
-      "curadoria": "revisao_fonte",
+      "curadoria": "em_segmentacao",
       "publish_deep": false,
       "document_count": 7,
       "publishable_document_count": 5,
@@ -582,7 +582,7 @@
         "texto curto para RICMS/benefícios"
       ],
       "recommendation": "bloquear_publicacao_ate_reclassificar_escopo",
-      "next_step": "Baixar RICMS e anexos de benefícios no portal oficial da Bahia.",
+      "next_step": "Material normativo reunido: Lei do ICMS, RICMS, anexos, DESENVOLVE, PROIND, PRONAVAL, crédito presumido, informática/eletrônica, atos da LC 160/Convênio 190 e EFD dos incentivos. Próxima etapa: segmentar por capítulos temáticos antes de publicar a página profunda.",
       "documents": [
         {
           "file": "BA_ICMS_ANEXOS.txt",
@@ -2168,7 +2168,7 @@
     "MT": {
       "estado": "Mato Grosso",
       "region": "Centro-Oeste",
-      "curadoria": "capturado_sem_aprovacao",
+      "curadoria": "em_segmentacao",
       "publish_deep": false,
       "document_count": 3,
       "publishable_document_count": 3,
@@ -2184,7 +2184,7 @@
         "ruído de extração/encoding"
       ],
       "recommendation": "bloquear_publicacao_ate_curadoria",
-      "next_step": "RICMS/MT capturado em data/fontes-estaduais-curadas/centro-oeste/MT; falta segmentar anexos, benefícios e validar vigência.",
+      "next_step": "Material normativo reunido: RICMS/MT. Próxima etapa: complementar anexos, benefícios fiscais, atos modificadores e validar vigência antes de publicar a página profunda.",
       "documents": [
         {
           "file": "MT_ICMS_ANEXOS.txt",

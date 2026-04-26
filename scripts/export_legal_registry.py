@@ -76,7 +76,7 @@ def main() -> int:
         "schema": "rjc-legal-sources-v1",
         "updated_on": UPDATED_ON,
         "editorial_rule": "Cada tese publicada deve apontar o ato oficial, manter o texto em tela e registrar o caminho de continuidade por tema.",
-        "change_workflow": [
+        "change_protocol": [
             "adicionar ou atualizar a fonte em scripts/legal_modules.py",
             "vincular a fonte a modulo e capitulo",
             "executar scripts/build_portal.py",

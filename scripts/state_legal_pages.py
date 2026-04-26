@@ -18,6 +18,7 @@ BD_ROOT = Path(os.environ.get("RJC_BD_LEGISLACAO", r"C:\Users\kris2\OneDrive\COW
 STATE_MAIN = BD_ROOT / "#ESTADUAIS-COMPILADO-NOTEBOOKLM"
 STATE_COMPLEMENT = BD_ROOT / "Estados_Complementar"
 CURATION_FILE = ROOT / "data" / "state_curadoria.json"
+SOURCE_PACK_ROOT = ROOT / "data" / "fontes-estaduais-curadas"
 UPDATED_ON = "25/04/2026"
 
 STATE_NAMES = {
@@ -382,6 +383,23 @@ def curation_statuses() -> dict:
 
 def state_curation(uf: str) -> dict:
     return curation_statuses().get(uf, {})
+
+
+@lru_cache(maxsize=None)
+def state_source_manifest_path(uf: str) -> Path | None:
+    uf = uf.upper()
+    if not SOURCE_PACK_ROOT.exists():
+        return None
+    matches = sorted(SOURCE_PACK_ROOT.glob(f"*/{uf}/manifest.json"))
+    return matches[0] if matches else None
+
+
+@lru_cache(maxsize=None)
+def state_source_manifest(uf: str) -> dict:
+    path = state_source_manifest_path(uf)
+    if not path or not path.exists():
+        return {}
+    return json.loads(path.read_text(encoding="utf-8"))
 
 
 def state_is_deep_published(uf: str) -> bool:
@@ -1032,6 +1050,39 @@ def state_legislation_teaser(uf: str, current_path: str) -> str:
     else:
         if not state_is_deep_published(uf):
             step = state_curation(uf).get("next_step", "Curadoria fonte-a-fonte pendente.")
+            manifest = state_source_manifest(uf)
+            if manifest:
+                manifest_path = state_source_manifest_path(uf)
+                manifest_rel = manifest_path.relative_to(ROOT).as_posix() if manifest_path else "#"
+                source_links = []
+                if manifest.get("fontes"):
+                    for source in manifest.get("fontes", []):
+                        target = (manifest_path.parent / source["arquivo"]).relative_to(ROOT).as_posix() if manifest_path else "#"
+                        source_links.append(
+                            f'<a href="{escape(rel_href(current_path, target))}">{escape(source["titulo"])}</a>'
+                        )
+                else:
+                    for filename in manifest.get("arquivos", []):
+                        target = (manifest_path.parent / filename).relative_to(ROOT).as_posix() if manifest_path else "#"
+                        label = filename.rsplit(".", 1)[0]
+                        label = re.sub(r"_fonte_oficial", "", label, flags=re.I)
+                        label = re.sub(r"_\d{4}-\d{2}-\d{2}$", "", label)
+                        label = label.replace("_", " ")
+                        source_links.append(
+                            f'<a href="{escape(rel_href(current_path, target))}">{escape(label)}</a>'
+                        )
+                source_links.append(
+                    f'<a href="{escape(rel_href(current_path, manifest_rel))}">Manifesto do pacote normativo</a>'
+                )
+                rendered_links = "".join(source_links)
+                return f"""
+<section class="continuity legal-continuity">
+  <h2>Pacote normativo em organização</h2>
+  <p>Os textos legais principais deste Estado já foram salvos no repositório em formato aberto. A próxima passagem é transformar esse material em capítulos temáticos, com lei em tela, análise, prova documental e riscos por assunto.</p>
+  <div>{rendered_links}</div>
+  <p>{escape(step)}</p>
+</section>
+"""
             return f"""
 <section class="continuity legal-continuity">
   <h2>Curadoria estadual em andamento</h2>

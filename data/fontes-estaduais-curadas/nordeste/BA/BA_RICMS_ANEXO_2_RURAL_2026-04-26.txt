@@ -1,0 +1,37 @@
+TITULO: Anexo 2 do RICMS/BA - Crédito fiscal nas atividades rurais
+TEMA: ICMS - crédito fiscal rural
+TIPO: anexo regulamentar
+FONTE PUBLICA: https://mbusca.sefaz.ba.gov.br/DITRI/normas_complementares/decretos/decreto_2012_13780_ricms_anexo_2.pdf
+DATA DA CAPTURA: 2026-04-26
+
+TEXTO EXTRAIDO
+===== PAGINA 1 =====
+decreto_2012_13780_ricms_anexo_2 
+ANEXO 2 
+PERCENTUAL PARA APURAÇÃO DO CRÉDITO FISCAL NAS 
+ATIVIDADES RURAIS 
+(Art. 318, § 2º) 
+PRODUTO 
+PERCENTUAL APLICADO SOBRE O VALOR 
+DO DÉBITO 
+OPERAÇÃO 
+INTERESTADUAL 
+OPERAÇÃO INTERNA 
+ALGODÃO 
+10,0 
+7,0 
+MILHO 
+13,0 
+22,5 
+FEIJÃO e ARROZ EM CASCA 
+5,0 
+9,0 
+CAFÉ 
+6,0 
+4,5 
+SOJA 
+16,5 
+12,0 
+OUTROS 
+5,0 
+3,5

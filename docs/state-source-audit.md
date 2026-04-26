@@ -20,7 +20,7 @@ Esta auditoria mede qualidade editorial do acervo estadual antes de publicação
 | AL | Nordeste | revisao_fonte | 3 | 3 | 0 | bloquear_publicacao_ate_curadoria | fonte local sem URL oficial no cabeçalho, ruído de extração/encoding, texto curto para RICMS/benefícios |
 | AM | Norte | revisao_fonte | 4 | 4 | 0 | bloquear_publicacao_ate_curadoria | categoria não específica de ICMS, contém IPVA, contém ITCMD/ITCD, contém Taxas, fallback amplo |
 | AP | Norte | revisao_fonte | 7 | 7 | 0 | bloquear_publicacao_ate_curadoria | contém Taxas, fonte local sem URL oficial no cabeçalho, ruído de extração/encoding, texto curto para RICMS/benefícios |
-| BA | Nordeste | revisao_fonte | 7 | 5 | 2 | bloquear_publicacao_ate_reclassificar_escopo | contém Taxas, escopo dominante incompatível: conteúdo parece tratar de Taxas, não de ICMS, escopo incompatível: arquivo classificado como ICMS, mas os documentos fonte indicam Taxas, escopo material incompatível com ICMS, fonte local sem URL oficial no cabeçalho |
+| BA | Nordeste | em_segmentacao | 7 | 5 | 2 | bloquear_publicacao_ate_reclassificar_escopo | contém Taxas, escopo dominante incompatível: conteúdo parece tratar de Taxas, não de ICMS, escopo incompatível: arquivo classificado como ICMS, mas os documentos fonte indicam Taxas, escopo material incompatível com ICMS, fonte local sem URL oficial no cabeçalho |
 | CE | Nordeste | revisao_fonte | 8 | 8 | 0 | bloquear_publicacao_ate_curadoria | categoria não específica de ICMS, contém IPVA, contém ITCMD/ITCD, contém Taxas, fallback amplo |
 | DF | Centro-Oeste | revisao_fonte | 5 | 1 | 4 | bloquear_publicacao_ate_reclassificar_escopo | categoria não específica de ICMS, contém IPVA, contém ITCMD/ITCD, contém Taxas, escopo material incompatível com ICMS |
 | ES | Sudeste | revisao_fonte | 7 | 7 | 0 | bloquear_publicacao_ate_curadoria | contém IPVA, contém Taxas, ruído de extração/encoding |
@@ -28,7 +28,7 @@ Esta auditoria mede qualidade editorial do acervo estadual antes de publicação
 | MA | Nordeste | revisao_fonte | 10 | 10 | 0 | bloquear_publicacao_ate_curadoria | contém Taxas, fonte local sem URL oficial no cabeçalho, ruído de extração/encoding |
 | MG | Sudeste | revisao_fonte | 31 | 31 | 0 | bloquear_publicacao_ate_curadoria | contém Taxas, ruído de extração/encoding |
 | MS | Centro-Oeste | revisao_fonte | 5 | 5 | 0 | bloquear_publicacao_ate_curadoria | contém IPVA, contém ITCMD/ITCD, contém Taxas, ruído de extração/encoding |
-| MT | Centro-Oeste | capturado_sem_aprovacao | 3 | 3 | 0 | bloquear_publicacao_ate_curadoria | contém IPVA, contém Taxas, ruído de extração/encoding |
+| MT | Centro-Oeste | em_segmentacao | 3 | 3 | 0 | bloquear_publicacao_ate_curadoria | contém IPVA, contém Taxas, ruído de extração/encoding |
 | PA | Norte | revisao_fonte | 2 | 0 | 2 | bloquear_publicacao_ate_reclassificar_escopo | categoria não específica de ICMS, contém IPVA, contém ITCMD/ITCD, contém Taxas, escopo material incompatível com ICMS |
 | PB | Nordeste | revisao_fonte | 1 | 1 | 0 | bloquear_publicacao_ate_curadoria | contém IPVA, contém ITCMD/ITCD, contém Taxas, ruído de extração/encoding |
 | PE | Nordeste | revisao_fonte | 8 | 8 | 0 | bloquear_publicacao_ate_curadoria | contém Taxas, fonte local sem URL oficial no cabeçalho, ruído de extração/encoding, texto curto para RICMS/benefícios |
