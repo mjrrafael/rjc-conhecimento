@@ -5,7 +5,7 @@
     "docs": 240,
     "publishable_docs": 237,
     "scope_blocked_docs": 3,
-    "blocked": 21
+    "blocked": 20
   },
   "states": {
     "AC": {
@@ -1236,125 +1236,139 @@
     "ES": {
       "estado": "Espírito Santo",
       "region": "Sudeste",
-      "curadoria": "revisao_fonte",
-      "publish_deep": false,
+      "curadoria": "publicado_v1",
+      "publish_deep": true,
       "document_count": 7,
       "publishable_document_count": 7,
       "scope_blocked_document_count": 0,
-      "total_chars": 3144165,
+      "total_chars": 3524247,
       "categories": {
-        "RICMS": 7
+        "ICMS_BENEFICIOS": 4,
+        "ICMS_LEIS": 1,
+        "INSTRUCOES_NORMATIVAS": 1,
+        "RICMS": 1
       },
-      "flags": [
-        "contém IPVA",
-        "contém Taxas"
-      ],
-      "recommendation": "bloquear_publicacao_ate_curadoria",
-      "next_step": "Baixar RICMS/ES vigente e benefícios no portal oficial do Espírito Santo.",
+      "flags": [],
+      "recommendation": "manter_publicado",
+      "next_step": "Espírito Santo publicado como página profunda: Lei nº 7.000/2001, RICMS/ES, COMPETE/ES, INVEST-ES, FUNDAP, cBenef, isenção, redução de base, crédito presumido, diferimento, ST, EFD e prova fiscal.",
       "documents": [
         {
-          "file": "ES_RICMS_pt1.txt",
-          "category": "RICMS",
-          "chars": 482946,
+          "file": "ES_LEI_7000_2001_ICMS_2026-04-26.txt",
+          "category": "ICMS_LEIS",
+          "chars": 170052,
           "named_icms": true,
           "fallback_icms": false,
           "dominant_scope": "ICMS",
-          "source_scopes": [],
+          "source_scopes": [
+            "ICMS"
+          ],
           "scope_blocked": false,
           "scope_flags": [],
-          "source_documents": [],
-          "flags": [
-            "contém IPVA",
-            "contém Taxas"
-          ]
+          "source_documents": [
+            "https://www2.sefaz.es.gov.br/LegislacaoOnline/lpext.dll/InfobaseLegislacaoOnline/leis/2001/lei%20n.%B0%207.000.htm?fn=document-frame.htm&f=templates&2.0"
+          ],
+          "flags": []
         },
         {
-          "file": "ES_RICMS_pt2.txt",
+          "file": "ES_DEC_1090_2002_RICMS_2026-04-26.txt",
           "category": "RICMS",
-          "chars": 479965,
+          "chars": 3143662,
           "named_icms": true,
           "fallback_icms": false,
           "dominant_scope": "ICMS",
-          "source_scopes": [],
+          "source_scopes": [
+            "ICMS"
+          ],
           "scope_blocked": false,
           "scope_flags": [],
-          "source_documents": [],
-          "flags": [
-            "contém Taxas"
-          ]
+          "source_documents": [
+            "https://www2.sefaz.es.gov.br/LegislacaoOnline/lpext.dll/InfobaseLegislacaoOnline/ricms%20-%20dec%201090-r/ricms%20-%20%EF%BF%BDndice.htm?2.0=&f=templates&fn=document-frame.htm"
+          ],
+          "flags": []
         },
         {
-          "file": "ES_RICMS_pt3.txt",
-          "category": "RICMS",
-          "chars": 481125,
+          "file": "ES_LEI_10550_2016_INVEST_ES_2026-04-26.txt",
+          "category": "ICMS_BENEFICIOS",
+          "chars": 39843,
           "named_icms": true,
           "fallback_icms": false,
           "dominant_scope": "ICMS",
-          "source_scopes": [],
+          "source_scopes": [
+            "ICMS"
+          ],
           "scope_blocked": false,
           "scope_flags": [],
-          "source_documents": [],
-          "flags": [
-            "contém Taxas"
-          ]
+          "source_documents": [
+            "https://www3.al.es.gov.br/arquivo/documents/legislacao/html/lei105502016.html"
+          ],
+          "flags": []
         },
         {
-          "file": "ES_RICMS_pt4.txt",
-          "category": "RICMS",
-          "chars": 479621,
+          "file": "ES_LEI_10568_2016_COMPETE_ES_2026-04-26.txt",
+          "category": "ICMS_BENEFICIOS",
+          "chars": 94583,
           "named_icms": true,
           "fallback_icms": false,
           "dominant_scope": "ICMS",
-          "source_scopes": [],
+          "source_scopes": [
+            "ICMS"
+          ],
           "scope_blocked": false,
           "scope_flags": [],
-          "source_documents": [],
-          "flags": [
-            "contém Taxas"
-          ]
+          "source_documents": [
+            "https://www3.al.es.gov.br/arquivo/documents/legislacao/html/lei105682016.html"
+          ],
+          "flags": []
         },
         {
-          "file": "ES_RICMS_pt5.txt",
-          "category": "RICMS",
-          "chars": 479189,
+          "file": "ES_LEI_10574_2016_COMPETE_INVEST_2026-04-26.txt",
+          "category": "ICMS_BENEFICIOS",
+          "chars": 4879,
           "named_icms": true,
           "fallback_icms": false,
           "dominant_scope": "ICMS",
-          "source_scopes": [],
+          "source_scopes": [
+            "ICMS"
+          ],
           "scope_blocked": false,
           "scope_flags": [],
-          "source_documents": [],
-          "flags": [
-            "contém Taxas"
-          ]
+          "source_documents": [
+            "https://www3.al.es.gov.br/arquivo/documents/legislacao/html/lei105742016.html"
+          ],
+          "flags": []
         },
         {
-          "file": "ES_RICMS_pt6.txt",
-          "category": "RICMS",
-          "chars": 479907,
+          "file": "ES_LEI_2508_1970_FUNDAP_2026-04-26.txt",
+          "category": "ICMS_BENEFICIOS",
+          "chars": 7507,
           "named_icms": true,
           "fallback_icms": false,
           "dominant_scope": "ICMS",
-          "source_scopes": [],
+          "source_scopes": [
+            "ICMS"
+          ],
           "scope_blocked": false,
           "scope_flags": [],
-          "source_documents": [],
-          "flags": [
-            "contém IPVA",
-            "contém Taxas"
-          ]
+          "source_documents": [
+            "https://www3.al.es.gov.br/arquivo/documents/legislacao/html/lei25081970.html"
+          ],
+          "flags": []
         },
         {
-          "file": "ES_RICMS_pt7.txt",
-          "category": "RICMS",
-          "chars": 261412,
+          "file": "ES_TABELA_CBENEF_2026_2026-04-26.txt",
+          "category": "INSTRUCOES_NORMATIVAS",
+          "chars": 63721,
           "named_icms": true,
           "fallback_icms": false,
           "dominant_scope": "ICMS",
-          "source_scopes": [],
+          "source_scopes": [
+            "ICMS"
+          ],
           "scope_blocked": false,
           "scope_flags": [],
-          "source_documents": [],
+          "source_documents": [
+            "https://sefaz.es.gov.br/Media/Sefaz/Receita%20Estadual/cBenef%20ES%20V5.pdf"
+          ],
           "flags": []
         }
       ]

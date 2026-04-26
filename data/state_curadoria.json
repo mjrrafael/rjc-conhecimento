@@ -46,9 +46,9 @@
     },
     "ES": {
       "region": "Sudeste",
-      "status": "revisao_fonte",
-      "publish_deep": false,
-      "next_step": "Baixar RICMS/ES vigente e benefícios no portal oficial do Espírito Santo."
+      "status": "publicado_v1",
+      "publish_deep": true,
+      "next_step": "Espírito Santo publicado como página profunda: Lei nº 7.000/2001, RICMS/ES, COMPETE/ES, INVEST-ES, FUNDAP, cBenef, isenção, redução de base, crédito presumido, diferimento, ST, EFD e prova fiscal."
     },
     "GO": {
       "region": "Centro-Oeste",

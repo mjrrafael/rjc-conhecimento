@@ -104,7 +104,7 @@ window.RJC_SEARCH = [
   {
     "title": "Espírito Santo: ICMS e benefícios fiscais",
     "url": "estados/es.html",
-    "summary": "Página estadual estruturada para futura publicação por UF, com foco em ICMS, benefícios, documento e prova.",
+    "summary": "Página estadual com legislação de ICMS em tela, benefícios, documento e prova.",
     "tags": "ES Espirito Santo Espírito Santo ICMS beneficios fiscais RICMS LEIS OUTROS RICMS"
   },
   {
@@ -1020,6 +1020,90 @@ window.RJC_SEARCH = [
     "tags": "DF Distrito Federal ICMS benefícios fiscais EFD SPED ICMS IPI documento fiscal XML prova escrituração ajuste"
   },
   {
+    "title": "Espírito Santo: ICMS e benefícios fiscais em tela",
+    "url": "estados/es/legislacao/index.html",
+    "summary": "Legislação estadual em tela: ICMS, benefícios fiscais, COMPETE/ES, INVEST-ES, FUNDAP, ST, cBenef, EFD, documentos e prova por assunto.",
+    "tags": "ES Espírito Santo ICMS RICMS benefícios fiscais alíquotas base cálculo substituição tributária ST COMPETE INVEST-ES FUNDAP crédito presumido redução base isenção diferimento cBenef EFD SPED LC 160 Convênio 190"
+  },
+  {
+    "title": "Espírito Santo: ICMS/ES: incidência, fato gerador, não incidência e contribuinte",
+    "url": "estados/es/legislacao/icms-regra-matriz.html",
+    "summary": "A regra maior do ICMS capixaba: quando o imposto nasce, quando a Constituição e a lei afastam a incidência e quem assume a condição de contribuinte ou responsável.",
+    "tags": "ES Espírito Santo ICMS benefícios fiscais Regra matriz ICMS/ES: incidência, fato gerador, não incidência e contribuinte A regra maior do ICMS capixaba: quando o imposto nasce, quando a Constituição e a lei afastam a incidência e quem assume a condição de contribuinte ou responsável."
+  },
+  {
+    "title": "Espírito Santo: Base de cálculo, alíquotas, importação, DIFAL, créditos e apuração",
+    "url": "estados/es/legislacao/base-aliquota-apuracao.html",
+    "summary": "Como a operação vira base tributável, qual alíquota se aplica, como ler importação, consumidor final, crédito, estorno, apuração e recolhimento.",
+    "tags": "ES Espírito Santo ICMS benefícios fiscais Carga tributária Base de cálculo, alíquotas, importação, DIFAL, créditos e apuração Como a operação vira base tributável, qual alíquota se aplica, como ler importação, consumidor final, crédito, estorno, apuração e recolhimento."
+  },
+  {
+    "title": "Espírito Santo: Benefícios fiscais: matriz legal, LC 160, CONFAZ, espécies e prova",
+    "url": "estados/es/legislacao/beneficios-matriz-lc160.html",
+    "summary": "A porta de entrada para benefícios do Espírito Santo: isenção, redução de base, crédito presumido, diferimento, suspensão, regime especial, programas estaduais e cBenef.",
+    "tags": "ES Espírito Santo ICMS benefícios fiscais Benefícios fiscais Benefícios fiscais: matriz legal, LC 160, CONFAZ, espécies e prova A porta de entrada para benefícios do Espírito Santo: isenção, redução de base, crédito presumido, diferimento, suspensão, regime especial, programas estaduais e cBenef."
+  },
+  {
+    "title": "Espírito Santo: Isenções, reduções de base, créditos presumidos e benefícios por setor",
+    "url": "estados/es/legislacao/isencoes-reducoes-creditos.html",
+    "summary": "Leitura setorial dos benefícios capixabas: indústria, importação, atacado, agro, medicamentos, máquinas, transporte, energia, operações especiais e manutenção de crédito.",
+    "tags": "ES Espírito Santo ICMS benefícios fiscais Benefícios por grupo Isenções, reduções de base, créditos presumidos e benefícios por setor Leitura setorial dos benefícios capixabas: indústria, importação, atacado, agro, medicamentos, máquinas, transporte, energia, operações especiais e manutenção de crédito."
+  },
+  {
+    "title": "Espírito Santo: INVEST-ES, COMPETE/ES, FUNDAP, regimes especiais e desenvolvimento",
+    "url": "estados/es/legislacao/invest-compete-fundap.html",
+    "summary": "Programas estaduais de incentivo e competitividade: investimento, contrato, diferimento, crédito presumido, importação, comércio exterior, condições, perda e prova.",
+    "tags": "ES Espírito Santo ICMS benefícios fiscais Programas estaduais INVEST-ES, COMPETE/ES, FUNDAP, regimes especiais e desenvolvimento Programas estaduais de incentivo e competitividade: investimento, contrato, diferimento, crédito presumido, importação, comércio exterior, condições, perda e prova."
+  },
+  {
+    "title": "Espírito Santo: Substituição tributária, antecipação, MVA, segmentos e ressarcimento",
+    "url": "estados/es/legislacao/st-antecipacao-segmentos.html",
+    "summary": "Responsabilidade por substituição, mercadorias sujeitas, base presumida, MVA, pauta, antecipação, complemento, ressarcimento e prova do imposto retido.",
+    "tags": "ES Espírito Santo ICMS benefícios fiscais Responsabilidade tributária Substituição tributária, antecipação, MVA, segmentos e ressarcimento Responsabilidade por substituição, mercadorias sujeitas, base presumida, MVA, pauta, antecipação, complemento, ressarcimento e prova do imposto retido."
+  },
+  {
+    "title": "Espírito Santo: cBenef, documentos fiscais, EFD, informações complementares e prova digital",
+    "url": "estados/es/legislacao/documentos-efd-prova.html",
+    "summary": "Como a regra aparece no XML, no cBenef, no CST, na EFD, nos ajustes, nos livros e no dossiê mensal de benefício ou regra especial.",
+    "tags": "ES Espírito Santo ICMS benefícios fiscais Prova digital cBenef, documentos fiscais, EFD, informações complementares e prova digital Como a regra aparece no XML, no cBenef, no CST, na EFD, nos ajustes, nos livros e no dossiê mensal de benefício ou regra especial."
+  },
+  {
+    "title": "Espírito Santo: Mapa revisado dos benefícios de ICMS do Espírito Santo",
+    "url": "estados/es/legislacao/mapa-revisado-beneficios.html",
+    "summary": "Inventário didático dos grupos de benefícios: RICMS/ES, cBenef, COMPETE/ES, INVEST-ES, FUNDAP, redução, isenção, crédito presumido, diferimento, ST e prova.",
+    "tags": "ES Espírito Santo ICMS benefícios fiscais Inventário de benefícios Mapa revisado dos benefícios de ICMS do Espírito Santo Inventário didático dos grupos de benefícios: RICMS/ES, cBenef, COMPETE/ES, INVEST-ES, FUNDAP, redução, isenção, crédito presumido, diferimento, ST e prova."
+  },
+  {
+    "title": "Espírito Santo: Fiscalização, penalidades, glosa, regularidade e defesa do benefício",
+    "url": "estados/es/legislacao/fiscalizacao-riscos.html",
+    "summary": "Pontos de controle do crédito tributário: documento, EFD, glosa de crédito, descumprimento de condição, perda de regime, autuação e correção de causa.",
+    "tags": "ES Espírito Santo ICMS benefícios fiscais Fiscalização e regularização Fiscalização, penalidades, glosa, regularidade e defesa do benefício Pontos de controle do crédito tributário: documento, EFD, glosa de crédito, descumprimento de condição, perda de regime, autuação e correção de causa."
+  },
+  {
+    "title": "Espírito Santo: isenções, reduções e créditos",
+    "url": "estados/es/legislacao/isencoes-reducoes-creditos.html",
+    "summary": "Entrada direta para o capítulo temático correspondente, com texto legal em tela e análise aplicada.",
+    "tags": "ES Espírito Santo ICMS benefícios fiscais isenção redução base crédito presumido máquinas medicamentos veículos saúde agro"
+  },
+  {
+    "title": "Espírito Santo: mapa revisado dos benefícios",
+    "url": "estados/es/legislacao/mapa-revisado-beneficios.html",
+    "summary": "Entrada direta para o capítulo temático correspondente, com texto legal em tela e análise aplicada.",
+    "tags": "ES Espírito Santo ICMS benefícios fiscais inventário benefícios regimes especiais LC 160 CONFAZ crédito presumido redução base diferimento"
+  },
+  {
+    "title": "Espírito Santo: COMPETE, INVEST e FUNDAP",
+    "url": "estados/es/legislacao/invest-compete-fundap.html",
+    "summary": "Entrada direta para o capítulo temático correspondente, com texto legal em tela e análise aplicada.",
+    "tags": "ES Espírito Santo ICMS benefícios fiscais COMPETE INVEST-ES FUNDAP regime especial contrato competitividade investimento importação crédito presumido diferimento"
+  },
+  {
+    "title": "Espírito Santo: ST, EFD e prova",
+    "url": "estados/es/legislacao/documentos-efd-prova.html",
+    "summary": "Entrada direta para o capítulo temático correspondente, com texto legal em tela e análise aplicada.",
+    "tags": "ES Espírito Santo ICMS benefícios fiscais substituição tributária EFD SPED XML documento fiscal cadastro prova"
+  },
+  {
     "title": "Mato Grosso: ICMS e benefícios fiscais em tela",
     "url": "estados/mt/legislacao/index.html",
     "summary": "Lei do ICMS/MT, RICMS/MT, LC 631/2019, anexos de benefícios, PRODEIC, cBenef, substituição tributária, estimativa simplificada, agro e EFD.",
@@ -1191,7 +1275,7 @@ window.RJC_SEARCH = [
     "title": "Mato Grosso do Sul: mapa revisado dos benefícios",
     "url": "estados/ms/legislacao/mapa-revisado-beneficios.html",
     "summary": "Entrada direta para o capítulo temático correspondente, com texto legal em tela e análise aplicada.",
-    "tags": "MS Mato Grosso do Sul ICMS benefícios fiscais Anexo I Anexo VI regimes especiais LC 160 FUNDERSUL MS-Empreendedor"
+    "tags": "MS Mato Grosso do Sul ICMS benefícios fiscais inventário benefícios regimes especiais LC 160 CONFAZ crédito presumido redução base diferimento"
   },
   {
     "title": "Mato Grosso do Sul: agro, FUNDERSUL e diferimento",

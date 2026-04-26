@@ -2049,6 +2049,238 @@
       ]
     },
     {
+      "source_id": "state-es-es-lei-7000-2001-icms",
+      "jurisdiction": "ES",
+      "title": "Lei n. 7.000/2001 - ICMS do Espírito Santo",
+      "short": "Lei material do ICMS",
+      "official_url": "https://www2.sefaz.es.gov.br/LegislacaoOnline/lpext.dll/InfobaseLegislacaoOnline/leis/2001/lei%20n.%B0%207.000.htm?fn=document-frame.htm&f=templates&2.0",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "data/fontes-estaduais-curadas/sudeste/ES/ES_LEI_7000_2001_ICMS_2026-04-26.txt"
+        ],
+        "sha256": {
+          "ES_LEI_7000_2001_ICMS_2026-04-26.txt": "a9235144d905fef2b1aa2e56ddc1cf0efec9dd39fd42605b056a9e64ab4f5753"
+        },
+        "fetch_url": "https://www2.sefaz.es.gov.br/LegislacaoOnline/lpext.dll/InfobaseLegislacaoOnline/leis/2001/lei%20n.%B0%207.000.htm?fn=document-frame.htm&f=templates&2.0"
+      },
+      "note": "Texto estadual de ICMS publicado em estados/es/legislacao/fontes/es-lei-7000-2001-icms.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-es",
+          "module_title": "Espírito Santo: ICMS e benefícios fiscais em tela",
+          "chapters": [
+            "icms-regra-matriz",
+            "base-aliquota-apuracao",
+            "beneficios-matriz-lc160",
+            "isencoes-reducoes-creditos",
+            "st-antecipacao-segmentos",
+            "documentos-efd-prova",
+            "fiscalizacao-riscos"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-es-es-dec-1090-2002-ricms",
+      "jurisdiction": "ES",
+      "title": "Decreto n. 1.090-R/2002 - Regulamento do ICMS/ES consolidado",
+      "short": "Regulamento do ICMS",
+      "official_url": "https://www2.sefaz.es.gov.br/LegislacaoOnline/lpext.dll/InfobaseLegislacaoOnline/ricms%20-%20dec%201090-r/ricms%20-%20%EF%BF%BDndice.htm?2.0=&f=templates&fn=document-frame.htm",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "data/fontes-estaduais-curadas/sudeste/ES/ES_DEC_1090_2002_RICMS_2026-04-26.txt"
+        ],
+        "sha256": {
+          "ES_DEC_1090_2002_RICMS_2026-04-26.txt": "0c953cb16ca9f9b326537547b12a378b1a97a37131c41721e64c3fda07b6c107"
+        },
+        "fetch_url": "https://www2.sefaz.es.gov.br/LegislacaoOnline/lpext.dll/InfobaseLegislacaoOnline/ricms%20-%20dec%201090-r/ricms%20-%20%EF%BF%BDndice.htm?2.0=&f=templates&fn=document-frame.htm"
+      },
+      "note": "Texto estadual de ICMS publicado em estados/es/legislacao/fontes/es-dec-1090-2002-ricms.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-es",
+          "module_title": "Espírito Santo: ICMS e benefícios fiscais em tela",
+          "chapters": [
+            "icms-regra-matriz",
+            "base-aliquota-apuracao",
+            "beneficios-matriz-lc160",
+            "isencoes-reducoes-creditos",
+            "invest-compete-fundap",
+            "st-antecipacao-segmentos",
+            "documentos-efd-prova",
+            "mapa-revisado-beneficios",
+            "fiscalizacao-riscos"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-es-es-lei-10550-2016-invest-es",
+      "jurisdiction": "ES",
+      "title": "Lei n. 10.550/2016 - Programa INVEST-ES",
+      "short": "benefícios fiscais de ICMS",
+      "official_url": "https://www3.al.es.gov.br/arquivo/documents/legislacao/html/lei105502016.html",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "data/fontes-estaduais-curadas/sudeste/ES/ES_LEI_10550_2016_INVEST_ES_2026-04-26.txt"
+        ],
+        "sha256": {
+          "ES_LEI_10550_2016_INVEST_ES_2026-04-26.txt": "e763d73dd8b4cc91059197b2443f0f0a244fcb1b5a1cf7ba81bffed02e05335d"
+        },
+        "fetch_url": "https://www3.al.es.gov.br/arquivo/documents/legislacao/html/lei105502016.html"
+      },
+      "note": "Texto estadual de ICMS publicado em estados/es/legislacao/fontes/es-lei-10550-2016-invest-es.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-es",
+          "module_title": "Espírito Santo: ICMS e benefícios fiscais em tela",
+          "chapters": [
+            "invest-compete-fundap",
+            "mapa-revisado-beneficios",
+            "fiscalizacao-riscos"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-es-es-lei-10568-2016-compete-es",
+      "jurisdiction": "ES",
+      "title": "Lei n. 10.568/2016 - COMPETE/ES",
+      "short": "benefícios fiscais de ICMS",
+      "official_url": "https://www3.al.es.gov.br/arquivo/documents/legislacao/html/lei105682016.html",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "data/fontes-estaduais-curadas/sudeste/ES/ES_LEI_10568_2016_COMPETE_ES_2026-04-26.txt"
+        ],
+        "sha256": {
+          "ES_LEI_10568_2016_COMPETE_ES_2026-04-26.txt": "847969ab0edd64f7dfb4e459a98101f1c7693a09cf4d40488a1dc46e2b14bf5f"
+        },
+        "fetch_url": "https://www3.al.es.gov.br/arquivo/documents/legislacao/html/lei105682016.html"
+      },
+      "note": "Texto estadual de ICMS publicado em estados/es/legislacao/fontes/es-lei-10568-2016-compete-es.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-es",
+          "module_title": "Espírito Santo: ICMS e benefícios fiscais em tela",
+          "chapters": [
+            "invest-compete-fundap",
+            "mapa-revisado-beneficios",
+            "fiscalizacao-riscos"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-es-es-lei-10574-2016-compete-invest",
+      "jurisdiction": "ES",
+      "title": "Lei n. 10.574/2016 - alterações em COMPETE/ES e INVEST-ES",
+      "short": "benefícios fiscais de ICMS",
+      "official_url": "https://www3.al.es.gov.br/arquivo/documents/legislacao/html/lei105742016.html",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "data/fontes-estaduais-curadas/sudeste/ES/ES_LEI_10574_2016_COMPETE_INVEST_2026-04-26.txt"
+        ],
+        "sha256": {
+          "ES_LEI_10574_2016_COMPETE_INVEST_2026-04-26.txt": "4aa9b3c06ec56b474afed91110aa4e8830f55cbfe92e1f668c3928c4db2ecd19"
+        },
+        "fetch_url": "https://www3.al.es.gov.br/arquivo/documents/legislacao/html/lei105742016.html"
+      },
+      "note": "Texto estadual de ICMS publicado em estados/es/legislacao/fontes/es-lei-10574-2016-compete-invest.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-es",
+          "module_title": "Espírito Santo: ICMS e benefícios fiscais em tela",
+          "chapters": [
+            "invest-compete-fundap"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-es-es-lei-2508-1970-fundap",
+      "jurisdiction": "ES",
+      "title": "Lei n. 2.508/1970 - FUNDAP",
+      "short": "benefícios fiscais de ICMS",
+      "official_url": "https://www3.al.es.gov.br/arquivo/documents/legislacao/html/lei25081970.html",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "data/fontes-estaduais-curadas/sudeste/ES/ES_LEI_2508_1970_FUNDAP_2026-04-26.txt"
+        ],
+        "sha256": {
+          "ES_LEI_2508_1970_FUNDAP_2026-04-26.txt": "629bfa5493d6234a859cf447f1df422e6eac48ea8e62dcb6bf34b58d226c3b35"
+        },
+        "fetch_url": "https://www3.al.es.gov.br/arquivo/documents/legislacao/html/lei25081970.html"
+      },
+      "note": "Texto estadual de ICMS publicado em estados/es/legislacao/fontes/es-lei-2508-1970-fundap.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-es",
+          "module_title": "Espírito Santo: ICMS e benefícios fiscais em tela",
+          "chapters": [
+            "invest-compete-fundap",
+            "mapa-revisado-beneficios"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-es-es-tabela-cbenef-2026",
+      "jurisdiction": "ES",
+      "title": "Tabela cBenef x CST para os benefícios fiscais vigentes do Espírito Santo",
+      "short": "Obrigações acessórias e documentos",
+      "official_url": "https://sefaz.es.gov.br/Media/Sefaz/Receita%20Estadual/cBenef%20ES%20V5.pdf",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "data/fontes-estaduais-curadas/sudeste/ES/ES_TABELA_CBENEF_2026_2026-04-26.txt"
+        ],
+        "sha256": {
+          "ES_TABELA_CBENEF_2026_2026-04-26.txt": "82db55c98c55817ddc72eefd0d09941a597766ee637437a562480c63375a238c"
+        },
+        "fetch_url": "https://sefaz.es.gov.br/Media/Sefaz/Receita%20Estadual/cBenef%20ES%20V5.pdf"
+      },
+      "note": "Texto estadual de ICMS publicado em estados/es/legislacao/fontes/es-tabela-cbenef-2026.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-es",
+          "module_title": "Espírito Santo: ICMS e benefícios fiscais em tela",
+          "chapters": [
+            "beneficios-matriz-lc160",
+            "isencoes-reducoes-creditos",
+            "documentos-efd-prova",
+            "mapa-revisado-beneficios"
+          ]
+        }
+      ]
+    },
+    {
       "source_id": "state-mt-mt-lei-7098-1998-icms",
       "jurisdiction": "MT",
       "title": "Lei nº 7.098/1998 - Lei material do ICMS/MT",

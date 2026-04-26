@@ -10,7 +10,7 @@ Esta auditoria mede qualidade editorial do acervo estadual antes de publicação
 - Documentos estaduais candidatos a ICMS: 240
 - Documentos úteis após teste de escopo: 237
 - Documentos bloqueados por escopo material: 3
-- Estados bloqueados para publicação profunda: 21
+- Estados bloqueados para publicação profunda: 20
 
 ## Estados
 
@@ -23,7 +23,7 @@ Esta auditoria mede qualidade editorial do acervo estadual antes de publicação
 | BA | Nordeste | publicado_v1 | 15 | 15 | 0 | manter_publicado | sem alerta automatizado |
 | CE | Nordeste | revisao_fonte | 8 | 8 | 0 | bloquear_publicacao_ate_curadoria | categoria não específica de ICMS, contém IPVA, contém ITCMD/ITCD, contém Taxas, fallback amplo |
 | DF | Centro-Oeste | publicado_v1 | 12 | 12 | 0 | manter_publicado | sem alerta automatizado |
-| ES | Sudeste | revisao_fonte | 7 | 7 | 0 | bloquear_publicacao_ate_curadoria | contém IPVA, contém Taxas |
+| ES | Sudeste | publicado_v1 | 7 | 7 | 0 | manter_publicado | sem alerta automatizado |
 | GO | Centro-Oeste | aprovado_v1 | 0 | 0 | 0 | manter_publicado | sem alerta automatizado |
 | MA | Nordeste | revisao_fonte | 10 | 10 | 0 | bloquear_publicacao_ate_curadoria | contém Taxas, fonte local sem URL oficial no cabeçalho |
 | MG | Sudeste | revisao_fonte | 31 | 31 | 0 | bloquear_publicacao_ate_curadoria | contém Taxas |

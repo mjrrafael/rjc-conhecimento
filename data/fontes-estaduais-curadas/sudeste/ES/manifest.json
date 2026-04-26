@@ -1,0 +1,73 @@
+{
+  "uf": "ES",
+  "estado": "Espírito Santo",
+  "regiao": "Sudeste",
+  "status_curadoria": "publicado_v1",
+  "data_captura": "2026-04-26",
+  "fonte_principal": "Secretaria da Fazenda do Espírito Santo, Assembleia Legislativa do Espírito Santo e publicações oficiais relacionadas ao ICMS",
+  "fontes": [
+    {
+      "id": "ES_LEI_7000_2001_ICMS",
+      "titulo": "Lei n. 7.000/2001 - ICMS do Espírito Santo",
+      "tema": "Lei material do ICMS",
+      "tipo": "lei",
+      "url": "https://www2.sefaz.es.gov.br/LegislacaoOnline/lpext.dll/InfobaseLegislacaoOnline/leis/2001/lei%20n.%B0%207.000.htm?fn=document-frame.htm&f=templates&2.0",
+      "arquivo": "ES_LEI_7000_2001_ICMS_2026-04-26.txt",
+      "sha256": "a9235144d905fef2b1aa2e56ddc1cf0efec9dd39fd42605b056a9e64ab4f5753"
+    },
+    {
+      "id": "ES_DEC_1090_2002_RICMS",
+      "titulo": "Decreto n. 1.090-R/2002 - Regulamento do ICMS/ES consolidado",
+      "tema": "Regulamento do ICMS",
+      "tipo": "decreto",
+      "url": "https://www2.sefaz.es.gov.br/LegislacaoOnline/lpext.dll/InfobaseLegislacaoOnline/ricms%20-%20dec%201090-r/ricms%20-%20%EF%BF%BDndice.htm?2.0=&f=templates&fn=document-frame.htm",
+      "arquivo": "ES_DEC_1090_2002_RICMS_2026-04-26.txt",
+      "sha256": "0c953cb16ca9f9b326537547b12a378b1a97a37131c41721e64c3fda07b6c107"
+    },
+    {
+      "id": "ES_LEI_10550_2016_INVEST_ES",
+      "titulo": "Lei n. 10.550/2016 - Programa INVEST-ES",
+      "tema": "benefícios fiscais de ICMS",
+      "tipo": "lei",
+      "url": "https://www3.al.es.gov.br/arquivo/documents/legislacao/html/lei105502016.html",
+      "arquivo": "ES_LEI_10550_2016_INVEST_ES_2026-04-26.txt",
+      "sha256": "e763d73dd8b4cc91059197b2443f0f0a244fcb1b5a1cf7ba81bffed02e05335d"
+    },
+    {
+      "id": "ES_LEI_10568_2016_COMPETE_ES",
+      "titulo": "Lei n. 10.568/2016 - COMPETE/ES",
+      "tema": "benefícios fiscais de ICMS",
+      "tipo": "lei",
+      "url": "https://www3.al.es.gov.br/arquivo/documents/legislacao/html/lei105682016.html",
+      "arquivo": "ES_LEI_10568_2016_COMPETE_ES_2026-04-26.txt",
+      "sha256": "847969ab0edd64f7dfb4e459a98101f1c7693a09cf4d40488a1dc46e2b14bf5f"
+    },
+    {
+      "id": "ES_LEI_10574_2016_COMPETE_INVEST",
+      "titulo": "Lei n. 10.574/2016 - alterações em COMPETE/ES e INVEST-ES",
+      "tema": "benefícios fiscais de ICMS",
+      "tipo": "lei",
+      "url": "https://www3.al.es.gov.br/arquivo/documents/legislacao/html/lei105742016.html",
+      "arquivo": "ES_LEI_10574_2016_COMPETE_INVEST_2026-04-26.txt",
+      "sha256": "4aa9b3c06ec56b474afed91110aa4e8830f55cbfe92e1f668c3928c4db2ecd19"
+    },
+    {
+      "id": "ES_LEI_2508_1970_FUNDAP",
+      "titulo": "Lei n. 2.508/1970 - FUNDAP",
+      "tema": "benefícios fiscais de ICMS",
+      "tipo": "lei",
+      "url": "https://www3.al.es.gov.br/arquivo/documents/legislacao/html/lei25081970.html",
+      "arquivo": "ES_LEI_2508_1970_FUNDAP_2026-04-26.txt",
+      "sha256": "629bfa5493d6234a859cf447f1df422e6eac48ea8e62dcb6bf34b58d226c3b35"
+    },
+    {
+      "id": "ES_TABELA_CBENEF_2026",
+      "titulo": "Tabela cBenef x CST para os benefícios fiscais vigentes do Espírito Santo",
+      "tema": "Obrigações acessórias e documentos",
+      "tipo": "tabela",
+      "url": "https://sefaz.es.gov.br/Media/Sefaz/Receita%20Estadual/cBenef%20ES%20V5.pdf",
+      "arquivo": "ES_TABELA_CBENEF_2026_2026-04-26.txt",
+      "sha256": "82db55c98c55817ddc72eefd0d09941a597766ee637437a562480c63375a238c"
+    }
+  ]
+}

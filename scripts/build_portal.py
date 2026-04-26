@@ -1391,10 +1391,12 @@ def configured_state_overview_cards(uf: str) -> str:
         "mapa-revisado-beneficios",
         "isencoes-reducoes-creditos",
         "agro-fundersul-diferimento",
+        "invest-compete-fundap",
         "ms-empreendedor-regimes",
         "st-antecipacao-segmentos",
         "documentos-efd-prova",
         "fiscalizacao-pagamento-restauracao",
+        "fiscalizacao-riscos",
     ]
     chapters = {chapter["id"]: chapter for chapter in configured_chapters(uf)}
     ordered = [chapters[item] for item in priority if item in chapters]
