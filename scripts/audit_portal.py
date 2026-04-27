@@ -19,6 +19,7 @@ from build_portal import STATE_REGIONS  # noqa: E402
 from legal_modules import (  # noqa: E402
     FEDERAL_ROOT,
     LEGAL_MODULES,
+    ROOT as PORTAL_ROOT,
     SOURCE_DEFS,
     THEME_TO_MODULES,
     TOPIC_TO_MODULES,
@@ -160,6 +161,9 @@ def audit_search_entries(parsed: dict[Path, PageParser]) -> list[str]:
 def source_has_file(source: dict) -> bool:
     if source.get("fetch_url"):
         return True
+    repo_files = source.get("repo_files") or []
+    if repo_files:
+        return all((PORTAL_ROOT / file_name).exists() for file_name in repo_files)
     files = source.get("files") or []
     if not files:
         return False

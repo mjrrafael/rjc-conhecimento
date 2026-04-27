@@ -1328,6 +1328,58 @@ a.state-card:hover {
   overflow-wrap: anywhere;
 }
 
+.source-heading {
+  margin: 20px 0 8px;
+  color: var(--navy);
+  overflow-wrap: anywhere;
+}
+
+.legal-table-block {
+  padding: 0;
+  overflow: hidden;
+}
+
+.legal-table-block .article-number {
+  padding: 14px 16px 0;
+}
+
+.law-table-wrap {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.law-table {
+  width: 100%;
+  min-width: 920px;
+  border-collapse: collapse;
+  color: #253047;
+  font-size: 0.84rem;
+  line-height: 1.45;
+}
+
+.law-table th,
+.law-table td {
+  vertical-align: top;
+  padding: 9px 10px;
+  border-top: 1px solid #eadfce;
+  border-right: 1px solid #f1e8da;
+  overflow-wrap: anywhere;
+}
+
+.law-table th {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  color: var(--navy);
+  background: #fff5df;
+  font-weight: 850;
+  text-align: left;
+}
+
+.law-table td {
+  background: #fffdf8;
+}
+
 .department-grid.compact {
   margin-top: 16px;
 }

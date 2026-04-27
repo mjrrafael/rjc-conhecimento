@@ -19,6 +19,7 @@
       "storage": {
         "type": "official_fetch",
         "files": [],
+        "repo_files": [],
         "sha256": {},
         "fetch_url": "https://appasp.economia.go.gov.br/legislacao/arquivos/Rcte/Anexos/ANEXO_09_Beneficio_Fiscal.htm"
       },
@@ -49,6 +50,7 @@
       "storage": {
         "type": "official_fetch",
         "files": [],
+        "repo_files": [],
         "sha256": {},
         "fetch_url": "https://www.planalto.gov.br/ccivil_03/Decreto-lei/Del5452.htm"
       },
@@ -78,6 +80,7 @@
       "storage": {
         "type": "official_fetch",
         "files": [],
+        "repo_files": [],
         "sha256": {},
         "fetch_url": "https://www.planalto.gov.br/ccivil_03/decreto/D3048.htm"
       },
@@ -107,6 +110,7 @@
         "files": [
           "Decreto_6306_2007_Regulamento_IOF.txt"
         ],
+        "repo_files": [],
         "sha256": {
           "Decreto_6306_2007_Regulamento_IOF.txt": "64914cfea167e63822f3800d7d196a7f378cdbf3c690a46286308da1871ea38f"
         },
@@ -138,6 +142,7 @@
       "storage": {
         "type": "official_fetch",
         "files": [],
+        "repo_files": [],
         "sha256": {},
         "fetch_url": "https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2014/decreto/d8373.htm"
       },
@@ -168,6 +173,7 @@
           "Decreto_12467_2025_IOF_Alteracoes.txt",
           "Decreto_12499_2025_IOF_Alteracoes2.txt"
         ],
+        "repo_files": [],
         "sha256": {
           "Decreto_12466_2025_IOF_Aliquotas.txt": "8c0e5391ad2526a8bbeb7bebd6cefbcb9e8081800253de2eb23f3fc51f99687b",
           "Decreto_12467_2025_IOF_Alteracoes.txt": "1cb8ead1f6786787f8925bc42992ffb03932e515daeabc9fc52d529917219a35",
@@ -200,6 +206,7 @@
         "files": [
           "Decreto_12549_2025_TIPI_Atualizada.txt"
         ],
+        "repo_files": [],
         "sha256": {
           "Decreto_12549_2025_TIPI_Atualizada.txt": "4d3b9457d4ddad8685834a2f2372d57f455bdd2c4fc8981322cd26ba2ef25965"
         },
@@ -230,6 +237,7 @@
         "files": [
           "EC_132_2023_Reforma_Tributaria.txt"
         ],
+        "repo_files": [],
         "sha256": {
           "EC_132_2023_Reforma_Tributaria.txt": "103afd2c9843569e5d379fee25babecf06fc79ca9a2c21f22be3a765098feaad"
         },
@@ -242,9 +250,10 @@
       "used_by": [
         {
           "module_id": "reforma-tributaria",
-          "module_title": "Reforma Tributaria: legislacao em tela",
+          "module_title": "Reforma Tributária: legislação em tela",
           "chapters": [
             "base-aliquotas-transicao",
+            "cbenef-icms-convivencia-reforma",
             "comite-gestor-fiscalizacao",
             "matriz-ibs-cbs",
             "regimes-diferenciados-beneficios",
@@ -262,6 +271,7 @@
       "storage": {
         "type": "official_fetch",
         "files": [],
+        "repo_files": [],
         "sha256": {},
         "fetch_url": "https://appasp.economia.go.gov.br/Legislacao/arquivos/Secretario/IN/IN_1518_2022.htm"
       },
@@ -292,6 +302,7 @@
           "IN_RFB_2121_2022_PIS_COFINS_Parte2.txt",
           "IN_RFB_2121_2022_PIS_COFINS_Parte3.txt"
         ],
+        "repo_files": [],
         "sha256": {
           "IN_RFB_2121_2022_PIS_COFINS_Parte1.txt": "e98d9706116597869c7c38bac567c7d64fdf2adac3c123fba2f60d45438c2b1e",
           "IN_RFB_2121_2022_PIS_COFINS_Parte2.txt": "156ac6aea549373aae7cc67b3fa3afbac9bd9008688fd473c698ac0bed3e0302",
@@ -328,6 +339,38 @@
       ]
     },
     {
+      "source_id": "it-2025-002-tabelas-reforma",
+      "jurisdiction": "Federal",
+      "title": "Informe Técnico 2025.002 v1.50 - tabelas de classificação do IBS e da CBS",
+      "short": "IT 2025.002 v1.50",
+      "official_url": "https://dfe-portal.svrs.rs.gov.br/Nfe/Documentos",
+      "storage": {
+        "type": "repo_text",
+        "files": [],
+        "repo_files": [
+          "data/legal_sources/reforma_tributaria/IT_2025_002_v1_50_Tabelas_Classificacao_IBS_CBS.txt"
+        ],
+        "sha256": {
+          "data/legal_sources/reforma_tributaria/IT_2025_002_v1_50_Tabelas_Classificacao_IBS_CBS.txt": "d8771043aec7834e228b9acd637da0e6a20209db408a83318c1dbf739e641bbb"
+        },
+        "fetch_url": ""
+      },
+      "note": "Informe técnico com conceitos de CST, cClassTrib, cCredPres, alíquotas padrão e links operacionais das tabelas da Reforma Tributária do Consumo.",
+      "render": "structured_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "reforma-tributaria",
+          "module_title": "Reforma Tributária: legislação em tela",
+          "chapters": [
+            "aliquotas-padrao-documentos-fiscais",
+            "documentos-fiscais-nfe-nfce-rtc"
+          ]
+        }
+      ]
+    },
+    {
       "source_id": "lc-214-2025-reforma",
       "jurisdiction": "Federal",
       "title": "Lei Complementar 214/2025 - IBS, CBS e Imposto Seletivo",
@@ -338,6 +381,7 @@
         "files": [
           "LC_214_2025_Compilada_IBS_CBS_IS.txt"
         ],
+        "repo_files": [],
         "sha256": {
           "LC_214_2025_Compilada_IBS_CBS_IS.txt": "d926cdfa4d7270a4e6b8088f274838f9fe70c32e98c890fe14f6091827cd2315"
         },
@@ -350,10 +394,14 @@
       "used_by": [
         {
           "module_id": "reforma-tributaria",
-          "module_title": "Reforma Tributaria: legislacao em tela",
+          "module_title": "Reforma Tributária: legislação em tela",
           "chapters": [
+            "aliquotas-padrao-documentos-fiscais",
             "base-aliquotas-transicao",
+            "cbenef-icms-convivencia-reforma",
+            "credito-presumido-codigos-ibs-cbs",
             "creditos-recolhimento-split-payment",
+            "cst-cclasstrib-ibs-cbs",
             "imposto-seletivo",
             "matriz-ibs-cbs",
             "regimes-diferenciados-beneficios",
@@ -373,6 +421,7 @@
         "files": [
           "LC_227_2026_Comite_Gestor_IBS.txt"
         ],
+        "repo_files": [],
         "sha256": {
           "LC_227_2026_Comite_Gestor_IBS.txt": "f33b484e98df0e66f2117b710686aed2dd45ecee9460a2af10c89d90ff077ed6"
         },
@@ -385,8 +434,9 @@
       "used_by": [
         {
           "module_id": "reforma-tributaria",
-          "module_title": "Reforma Tributaria: legislacao em tela",
+          "module_title": "Reforma Tributária: legislação em tela",
           "chapters": [
+            "cbenef-icms-convivencia-reforma",
             "comite-gestor-fiscalizacao",
             "transicao-icms-iss-beneficios-saldos"
           ]
@@ -404,6 +454,7 @@
         "files": [
           "LC_70_1991_COFINS_Original.txt"
         ],
+        "repo_files": [],
         "sha256": {
           "LC_70_1991_COFINS_Original.txt": "184f11f9c6c6cb50263647b1b06bf53f09e0cf502b8159f62fe8d6b3439d8c24"
         },
@@ -434,6 +485,7 @@
         "files": [
           "Lei_10637_2002_PIS_Nao_Cumulativo.txt"
         ],
+        "repo_files": [],
         "sha256": {
           "Lei_10637_2002_PIS_Nao_Cumulativo.txt": "338fb3f5d770a3552b270b2f05ef94f33cca771371f3b343e9fc87bbf00d21dd"
         },
@@ -464,6 +516,7 @@
         "files": [
           "Lei_10833_2003_Compilada_COFINS.txt"
         ],
+        "repo_files": [],
         "sha256": {
           "Lei_10833_2003_Compilada_COFINS.txt": "287e515301961c290a73c19b936cce22b56de22c99663f8ef35e8c09eab47aea"
         },
@@ -495,6 +548,7 @@
         "files": [
           "Lei_10865_2004_PIS_COFINS_Importacao.txt"
         ],
+        "repo_files": [],
         "sha256": {
           "Lei_10865_2004_PIS_COFINS_Importacao.txt": "e5a85dbbf20e5b759385bbdbe29f84bddece09ca75a70f9c6848907ec905d736"
         },
@@ -532,6 +586,7 @@
         "files": [
           "Lei_13097_2015_Reducao_Zero_PIS_COFINS.txt"
         ],
+        "repo_files": [],
         "sha256": {
           "Lei_13097_2015_Reducao_Zero_PIS_COFINS.txt": "044aca49e1caf0906ebd47faedb230e20d59a8926cfbb849f71a9b9cae856877"
         },
@@ -569,6 +624,7 @@
         "files": [
           "Lei_15079_2024_Adicional_CSLL.txt"
         ],
+        "repo_files": [],
         "sha256": {
           "Lei_15079_2024_Adicional_CSLL.txt": "b8979580bec1a3c42fc9eea19bd43619fa97307be941473310f5f5259e373b72"
         },
@@ -599,6 +655,7 @@
         "files": [
           "Lei_5143_1966_IOF_Original.txt"
         ],
+        "repo_files": [],
         "sha256": {
           "Lei_5143_1966_IOF_Original.txt": "d4641eec06717f618c7ba32d99e2a3c938a2ae9ecf12e4d47f5b90286f815744"
         },
@@ -629,6 +686,7 @@
         "files": [
           "Lei_7689_1988_CSLL_Original.txt"
         ],
+        "repo_files": [],
         "sha256": {
           "Lei_7689_1988_CSLL_Original.txt": "8718f91a6b04161b322721c2f367b97589c700387df1ac5d05e69509175f8dc2"
         },
@@ -660,6 +718,7 @@
         "files": [
           "Lei_7798_1989_IPI_Alteracoes.txt"
         ],
+        "repo_files": [],
         "sha256": {
           "Lei_7798_1989_IPI_Alteracoes.txt": "d4e621babf56620e3ef93d2234e746131b8aabd5490a4f254e9e24e295ed627e"
         },
@@ -686,6 +745,7 @@
       "storage": {
         "type": "official_fetch",
         "files": [],
+        "repo_files": [],
         "sha256": {},
         "fetch_url": "https://www.planalto.gov.br/ccivil_03/leis/L8036consol.htm"
       },
@@ -714,6 +774,7 @@
         "files": [
           "Lei_8212_1991_Custeio_Previdencia.txt"
         ],
+        "repo_files": [],
         "sha256": {
           "Lei_8212_1991_Custeio_Previdencia.txt": "e6f24c2dd0b522dfe83c3ef08eabd142deeadd8476b6dce19e22a7b241d3cd6c"
         },
@@ -745,6 +806,7 @@
         "files": [
           "Lei_8213_1991_Beneficios_Previdencia.txt"
         ],
+        "repo_files": [],
         "sha256": {
           "Lei_8213_1991_Beneficios_Previdencia.txt": "5b3101cf7dcc95ae11533b189d670750dd22a0ff8b01fac029a6b0d0ee9d37ff"
         },
@@ -776,6 +838,7 @@
         "files": [
           "Lei_8387_1991_ZFM_IPI_Isento.txt"
         ],
+        "repo_files": [],
         "sha256": {
           "Lei_8387_1991_ZFM_IPI_Isento.txt": "79931857949c510648b24f7ddf4e7c386e7af93b871b13a1836889b830c7e6dc"
         },
@@ -806,6 +869,7 @@
         "files": [
           "Lei_8894_1994_IOF_Aliquotas.txt"
         ],
+        "repo_files": [],
         "sha256": {
           "Lei_8894_1994_IOF_Aliquotas.txt": "ae252e16dfec157797dae9490061a6dc16b24a51b4b4769d225dd3cebc45691d"
         },
@@ -836,6 +900,7 @@
         "files": [
           "Lei_8981_1995_Lucro_Real_Presumido.txt"
         ],
+        "repo_files": [],
         "sha256": {
           "Lei_8981_1995_Lucro_Real_Presumido.txt": "7d53e23950872eeec693912c6c8fcae1e70e283bcf6b11230354776307853791"
         },
@@ -866,6 +931,7 @@
         "files": [
           "Lei_9065_1995_IRPJ_Aliquotas.txt"
         ],
+        "repo_files": [],
         "sha256": {
           "Lei_9065_1995_IRPJ_Aliquotas.txt": "099bee538d4194341c2a6afb7010280c76909c11ff65f716c63c95cf9a3e8e06"
         },
@@ -901,6 +967,7 @@
         "files": [
           "Lei_9249_1995_IRPJ_CSLL.txt"
         ],
+        "repo_files": [],
         "sha256": {
           "Lei_9249_1995_IRPJ_CSLL.txt": "05220e37a823ff62ffb6e3480bf7899621d359badf0638b035ded158dc91442e"
         },
@@ -939,6 +1006,7 @@
         "files": [
           "Lei_9430_1996_Compilada_IRPJ.txt"
         ],
+        "repo_files": [],
         "sha256": {
           "Lei_9430_1996_Compilada_IRPJ.txt": "fa2c04f9ac3c7d9d0fd0b32783983f0499e06a6e2dd8a0306f29be3a50ab9856"
         },
@@ -976,6 +1044,7 @@
         "files": [
           "Lei_9715_1998_PIS_Base_Contributiva.txt"
         ],
+        "repo_files": [],
         "sha256": {
           "Lei_9715_1998_PIS_Base_Contributiva.txt": "4c874044314d9cd682928f62ee767d003686cf147bceb181b22b49812d09bfeb"
         },
@@ -1006,6 +1075,7 @@
         "files": [
           "Lei_9718_1998_COFINS_Compilada.txt"
         ],
+        "repo_files": [],
         "sha256": {
           "Lei_9718_1998_COFINS_Compilada.txt": "7c86425c9a70a6d5fdcb2d67053a71d4f2bab8519be5bc7d191b692a93b026ad"
         },
@@ -1033,6 +1103,37 @@
       ]
     },
     {
+      "source_id": "nt-2025-002-rtc-nfe",
+      "jurisdiction": "Federal",
+      "title": "Nota Técnica 2025.002 v1.35 - adequações NF-e/NFC-e para IBS, CBS e IS",
+      "short": "NT 2025.002 v1.35",
+      "official_url": "https://dfe-portal.svrs.rs.gov.br/Nfe/Documentos",
+      "storage": {
+        "type": "repo_text",
+        "files": [],
+        "repo_files": [
+          "data/legal_sources/reforma_tributaria/NT_2025_002_v1_35_RTC_NFe_IBS_CBS_IS.txt"
+        ],
+        "sha256": {
+          "data/legal_sources/reforma_tributaria/NT_2025_002_v1_35_RTC_NFe_IBS_CBS_IS.txt": "1770d65192dfcf1864acae5abe549f01a3e040780bbae4e4c963086ca06ed40c"
+        },
+        "fetch_url": ""
+      },
+      "note": "Nota técnica de leiaute, campos e regras de validação da NF-e e NFC-e para a Reforma Tributária do Consumo.",
+      "render": "structured_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "reforma-tributaria",
+          "module_title": "Reforma Tributária: legislação em tela",
+          "chapters": [
+            "documentos-fiscais-nfe-nfce-rtc"
+          ]
+        }
+      ]
+    },
+    {
       "source_id": "rcte-go",
       "jurisdiction": "GO",
       "title": "Decreto GO 4.852/1997 - RCTE",
@@ -1041,6 +1142,7 @@
       "storage": {
         "type": "official_fetch",
         "files": [],
+        "repo_files": [],
         "sha256": {},
         "fetch_url": "https://appasp.economia.go.gov.br/legislacao/arquivos/RCTE/RCTE.htm"
       },
@@ -1088,6 +1190,7 @@
       "storage": {
         "type": "official_fetch",
         "files": [],
+        "repo_files": [],
         "sha256": {},
         "fetch_url": "https://www.planalto.gov.br/ccivil_03/_ato2007-2010/2010/decreto/d7212.htm"
       },
@@ -1119,6 +1222,7 @@
         "files": [
           "Decreto_9580_2018_Regulamento_IRPJ.txt"
         ],
+        "repo_files": [],
         "sha256": {
           "Decreto_9580_2018_Regulamento_IRPJ.txt": "6f719da265ae0cb60d7c1e36038a66900fbac184502f0abc9174ee2f51378f2b"
         },
@@ -1168,6 +1272,68 @@
       ]
     },
     {
+      "source_id": "tabela-ccredpres-ibs-cbs",
+      "jurisdiction": "Federal",
+      "title": "Tabela de códigos de crédito presumido do IBS e da CBS - 12/12/2025",
+      "short": "cCredPres IBS-CBS",
+      "official_url": "https://dfe-portal.svrs.rs.gov.br/CFF/TabelaCreditoPresumido",
+      "storage": {
+        "type": "repo_text",
+        "files": [],
+        "repo_files": [
+          "data/legal_sources/reforma_tributaria/Tabela_cCredPres_IBS_CBS_2025_12_12.txt"
+        ],
+        "sha256": {
+          "data/legal_sources/reforma_tributaria/Tabela_cCredPres_IBS_CBS_2025_12_12.txt": "02406eac4614550959e980844ed7507083a025a34837275bb2bc643c6437d69f"
+        },
+        "fetch_url": ""
+      },
+      "note": "Tabela operacional de crédito presumido: código, hipótese legal, forma de apropriação, grupos XML, alíquotas, vigência e referência de cClassTrib.",
+      "render": "structured_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "reforma-tributaria",
+          "module_title": "Reforma Tributária: legislação em tela",
+          "chapters": [
+            "credito-presumido-codigos-ibs-cbs"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "tabela-cst-cclasstrib-ibs-cbs",
+      "jurisdiction": "Federal",
+      "title": "Tabela CST e cClassTrib do IBS e da CBS - 15/04/2026",
+      "short": "CST/cClassTrib IBS-CBS",
+      "official_url": "https://dfe-portal.svrs.rs.gov.br/CFF/ClassificacaoTributaria",
+      "storage": {
+        "type": "repo_text",
+        "files": [],
+        "repo_files": [
+          "data/legal_sources/reforma_tributaria/Tabela_CST_cClassTrib_IBS_CBS_2026_04_15.txt"
+        ],
+        "sha256": {
+          "data/legal_sources/reforma_tributaria/Tabela_CST_cClassTrib_IBS_CBS_2026_04_15.txt": "1d847b2d1c7f98148de10f62cd1a59128e95a2889593ac6317abd72658d2bfe0"
+        },
+        "fetch_url": ""
+      },
+      "note": "Tabela operacional do Portal Nacional de Documentos Fiscais Eletrônicos que relaciona CST-IBS/CBS, cClassTrib, base legal, reduções, indicadores e aplicabilidade por documento fiscal.",
+      "render": "structured_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "reforma-tributaria",
+          "module_title": "Reforma Tributária: legislação em tela",
+          "chapters": [
+            "cst-cclasstrib-ibs-cbs"
+          ]
+        }
+      ]
+    },
+    {
       "source_id": "tipi-2022",
       "jurisdiction": "Federal",
       "title": "TIPI vigente - Tabela de Incidencia do IPI",
@@ -1180,6 +1346,7 @@
           "TIPI_Vigente_2022_Parte2.txt",
           "TIPI_Vigente_2022_Parte3.txt"
         ],
+        "repo_files": [],
         "sha256": {
           "TIPI_Vigente_2022_Parte1.txt": "c87cf25dcc17eff13481f1d8e6b03939d1b375fc57047c1033e2e948fcd65201",
           "TIPI_Vigente_2022_Parte2.txt": "04b69ba0e8996bb0979d9d1725fef0c72e24227598a6f74d759ebe2a8713dc1f",

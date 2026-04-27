@@ -21,6 +21,7 @@ from urllib.request import Request, urlopen
 ROOT = Path(__file__).resolve().parents[1]
 BD_ROOT = Path(os.environ.get("RJC_BD_LEGISLACAO", r"C:\Users\kris2\OneDrive\COWORK\BD_LEGISLACAO"))
 FEDERAL_ROOT = BD_ROOT / "#FEDERAIS-COMPILADO-ONLINE" / "legislacao_txt_completa"
+REPO_SOURCE_ROOT = ROOT / "data" / "legal_sources"
 UPDATED_ON = "25/04/2026"
 
 
@@ -119,6 +120,16 @@ def read_local_text(files: list[str]) -> str:
     return "\n\n".join(chunks)
 
 
+def read_repo_text(files: list[str]) -> str:
+    chunks = []
+    for file_name in files:
+        path = (ROOT / file_name) if ("/" in file_name or "\\" in file_name) else (REPO_SOURCE_ROOT / file_name)
+        if not path.exists():
+            raise FileNotFoundError(f"Arquivo versionado nao encontrado: {path}")
+        chunks.append(strip_local_header(path.read_text(encoding="utf-8", errors="ignore")))
+    return "\n\n".join(chunks)
+
+
 def strip_local_header(text: str) -> str:
     text = re.sub(r"(?s)^={20,}.*?={20,}\s*", "", text, count=1)
     return text.strip()
@@ -151,6 +162,8 @@ def normalize_law_text(text: str, start_marker: str = "") -> str:
 def read_source_text(source: dict) -> str:
     if source.get("fetch_url"):
         raw = fetch_public_text(source["fetch_url"])
+    elif source.get("repo_files"):
+        raw = read_repo_text(source.get("repo_files", []))
     else:
         raw = read_local_text(source.get("files", []))
     return normalize_law_text(raw, source.get("start_marker", ""))
@@ -651,6 +664,42 @@ SOURCE_DEFS: dict[str, dict] = {
         "url": "https://www.planalto.gov.br/ccivil_03/leis/lcp/Lcp227.htm",
         "files": ["LC_227_2026_Comite_Gestor_IBS.txt"],
         "note": "Institui o Comite Gestor do IBS, disciplina administracao integrada, fiscalizacao, distribuicao da arrecadacao e saldos credores de ICMS.",
+    },
+    "tabela-cst-cclasstrib-ibs-cbs": {
+        "jurisdiction": "Federal",
+        "title": "Tabela CST e cClassTrib do IBS e da CBS - 15/04/2026",
+        "short": "CST/cClassTrib IBS-CBS",
+        "url": "https://dfe-portal.svrs.rs.gov.br/CFF/ClassificacaoTributaria",
+        "repo_files": ["data/legal_sources/reforma_tributaria/Tabela_CST_cClassTrib_IBS_CBS_2026_04_15.txt"],
+        "render": "structured_text",
+        "note": "Tabela operacional do Portal Nacional de Documentos Fiscais Eletrônicos que relaciona CST-IBS/CBS, cClassTrib, base legal, reduções, indicadores e aplicabilidade por documento fiscal.",
+    },
+    "tabela-ccredpres-ibs-cbs": {
+        "jurisdiction": "Federal",
+        "title": "Tabela de códigos de crédito presumido do IBS e da CBS - 12/12/2025",
+        "short": "cCredPres IBS-CBS",
+        "url": "https://dfe-portal.svrs.rs.gov.br/CFF/TabelaCreditoPresumido",
+        "repo_files": ["data/legal_sources/reforma_tributaria/Tabela_cCredPres_IBS_CBS_2025_12_12.txt"],
+        "render": "structured_text",
+        "note": "Tabela operacional de crédito presumido: código, hipótese legal, forma de apropriação, grupos XML, alíquotas, vigência e referência de cClassTrib.",
+    },
+    "it-2025-002-tabelas-reforma": {
+        "jurisdiction": "Federal",
+        "title": "Informe Técnico 2025.002 v1.50 - tabelas de classificação do IBS e da CBS",
+        "short": "IT 2025.002 v1.50",
+        "url": "https://dfe-portal.svrs.rs.gov.br/Nfe/Documentos",
+        "repo_files": ["data/legal_sources/reforma_tributaria/IT_2025_002_v1_50_Tabelas_Classificacao_IBS_CBS.txt"],
+        "render": "structured_text",
+        "note": "Informe técnico com conceitos de CST, cClassTrib, cCredPres, alíquotas padrão e links operacionais das tabelas da Reforma Tributária do Consumo.",
+    },
+    "nt-2025-002-rtc-nfe": {
+        "jurisdiction": "Federal",
+        "title": "Nota Técnica 2025.002 v1.35 - adequações NF-e/NFC-e para IBS, CBS e IS",
+        "short": "NT 2025.002 v1.35",
+        "url": "https://dfe-portal.svrs.rs.gov.br/Nfe/Documentos",
+        "repo_files": ["data/legal_sources/reforma_tributaria/NT_2025_002_v1_35_RTC_NFe_IBS_CBS_IS.txt"],
+        "render": "structured_text",
+        "note": "Nota técnica de leiaute, campos e regras de validação da NF-e e NFC-e para a Reforma Tributária do Consumo.",
     },
     "rcte-go": {
         "jurisdiction": "GO",
@@ -1180,99 +1229,178 @@ LEGAL_MODULES: list[dict] = [
     {
         "id": "reforma-tributaria",
         "jurisdiction": "Federal",
-        "title": "Reforma Tributaria: legislacao em tela",
-        "summary": "EC 132/2023, LC 214/2025 e LC 227/2026 organizadas por IBS, CBS, Imposto Seletivo, transicao, creditos, split payment, beneficios e governanca.",
+        "title": "Reforma Tributária: legislação em tela",
+        "summary": "EC 132/2023, LC 214/2025, LC 227/2026, tabelas CST/cClassTrib/cCredPres, alíquotas, documentos fiscais, transição, créditos, split payment, benefícios e governança.",
         "legacy": "federal/reforma-tributaria.html",
-        "sources": ["ec-132-2023-reforma", "lc-214-2025-reforma", "lc-227-2026-cgibs"],
+        "sources": [
+            "ec-132-2023-reforma",
+            "lc-214-2025-reforma",
+            "lc-227-2026-cgibs",
+            "it-2025-002-tabelas-reforma",
+            "tabela-cst-cclasstrib-ibs-cbs",
+            "tabela-ccredpres-ibs-cbs",
+            "nt-2025-002-rtc-nfe",
+        ],
         "chapters": [
             {
                 "id": "matriz-ibs-cbs",
                 "title": "Regra matriz do IBS e da CBS",
-                "summary": "Competencia, neutralidade, incidencia ampla sobre bens e servicos, sujeito passivo, definicoes e local da operacao.",
+                "summary": "Competência, neutralidade, incidência ampla sobre bens e serviços, sujeito passivo, definições e local da operação.",
                 "refs": [
                     {"source": "ec-132-2023-reforma", "ranges": [(156, 156), (195, 195)]},
                     {"source": "lc-214-2025-reforma", "ranges": [(1, 18)]},
                 ],
                 "analysis": [
-                    "A Reforma muda a leitura de consumo: sai a logica fragmentada de tributos sobre mercadoria, servico e faturamento, e entra uma matriz ampla sobre operacoes com bens e servicos. O primeiro cuidado e separar competencia constitucional, lei complementar e regra operacional.",
-                    "Na pratica, compras, fiscal, cadastro e tecnologia precisam falar a mesma lingua: local da operacao, destinatario, documento fiscal, natureza do bem ou servico e tratamento da contraprestacao passam a ser pontos centrais de apuracao.",
+                    "A Reforma muda a leitura de consumo: sai a lógica fragmentada de tributos sobre mercadoria, serviço e faturamento, e entra uma matriz ampla sobre operações com bens e serviços. O primeiro cuidado é separar competência constitucional, lei complementar e regra operacional.",
+                    "Na prática, compras, fiscal, cadastro e tecnologia precisam falar a mesma língua: local da operação, destinatário, documento fiscal, natureza do bem ou serviço e tratamento da contraprestação passam a ser pontos centrais de apuração.",
                 ],
             },
             {
                 "id": "base-aliquotas-transicao",
-                "title": "Base de calculo, aliquotas e transicao",
-                "summary": "Como a lei constroi a base, fixa aliquotas de referencia e disciplina a convivencia de tributos antigos e novos.",
+                "title": "Base de cálculo, alíquotas e transição",
+                "summary": "Como a lei constrói a base, fixa alíquotas de referência e disciplina a convivência de tributos antigos e novos.",
                 "refs": [
                     {"source": "ec-132-2023-reforma", "ranges": [(21, 23)]},
                     {"source": "lc-214-2025-reforma", "ranges": [(12, 18), (345, 365)]},
                 ],
                 "analysis": [
-                    "A aliquota da Reforma nao deve ser lida como um numero isolado. Ela depende da referencia definida em lei, do periodo de transicao, do ente competente e de eventuais reducoes ou regimes diferenciados.",
-                    "O impacto real aparece em preco, contrato, ERP, pedido, NF-e, contas a receber, contas a pagar e fluxo de caixa. A transicao exige memoria de calculo para demonstrar por que uma operacao ficou em determinado periodo, aliquota e tratamento.",
+                    "A alíquota da Reforma não deve ser lida como um número isolado. Ela depende da referência definida em lei, do período de transição, do ente competente e de eventuais reduções ou regimes diferenciados.",
+                    "O impacto real aparece em preço, contrato, ERP, pedido, NF-e, contas a receber, contas a pagar e fluxo de caixa. A transição exige memória de cálculo para demonstrar por que uma operação ficou em determinado período, alíquota e tratamento.",
+                ],
+            },
+            {
+                "id": "aliquotas-padrao-documentos-fiscais",
+                "title": "Alíquotas padrão, teste e referência nos documentos fiscais",
+                "summary": "Percentuais de teste de 2026, regra de alíquota própria ou de referência e leitura operacional do pIBSUF, pIBSMun e pCBS.",
+                "refs": [
+                    {"source": "lc-214-2025-reforma", "ranges": [(12, 18), (343, 365)]},
+                    {"source": "it-2025-002-tabelas-reforma", "full_text": True},
+                ],
+                "analysis": [
+                    "A alíquota da Reforma precisa ser lida em três camadas: a lei complementar define a arquitetura, cada ente fixará suas alíquotas quando for o caso, e o documento fiscal precisa receber campos técnicos coerentes com o período.",
+                    "Para 2026, o ponto prático é parametrização e teste: pIBSUF, pIBSMun e pCBS devem existir no XML quando a regra técnica exigir. A empresa ainda não pode tratar o número como carga definitiva de 2033.",
+                    "O departamento fiscal deve manter tabela de vigência por ano, UF, município, tributo, CST, cClassTrib e regime. Tecnologia deve versionar regra, não sobrescrever histórico.",
+                ],
+            },
+            {
+                "id": "cst-cclasstrib-ibs-cbs",
+                "title": "CST-IBS/CBS e cClassTrib: como classificar a operação",
+                "summary": "Tabela completa de CST e cClassTrib, com base legal, reduções, indicadores e documentos fiscais permitidos.",
+                "refs": [
+                    {"source": "tabela-cst-cclasstrib-ibs-cbs", "full_text": True},
+                    {"source": "lc-214-2025-reforma", "ranges": [(1, 18), (101, 188)]},
+                ],
+                "analysis": [
+                    "O CST-IBS/CBS indica a família jurídica do tratamento: tributação integral, alíquota uniforme, redução, isenção, suspensão, não incidência, monofasia, transferência de crédito ou outra situação prevista.",
+                    "O cClassTrib refina a resposta. Ele não é enfeite do XML; é o código que aponta a hipótese concreta, o artigo legal, o tipo de alíquota, a redução e os campos que o documento fiscal pode ou deve receber.",
+                    "O bom cadastro nasce assim: produto ou serviço, natureza da operação, destinatário, finalidade, artigo da LC 214/2025, CST, cClassTrib, documento fiscal aplicável e evidência que sustenta a escolha.",
                 ],
             },
             {
                 "id": "creditos-recolhimento-split-payment",
-                "title": "Creditos, recolhimento e split payment",
-                "summary": "Extincao do debito, recolhimento, nao cumulatividade operacional e segregacao automatica do imposto no pagamento.",
+                "title": "Créditos, recolhimento e split payment",
+                "summary": "Extinção do débito, recolhimento, não cumulatividade operacional e segregação automática do imposto no pagamento.",
                 "refs": [
                     {"source": "lc-214-2025-reforma", "ranges": [(27, 68)]},
                 ],
                 "analysis": [
-                    "O credito deixa de ser apenas uma rotina contabil posterior. Com split payment e mecanismos de extincao do debito, o documento, o pagamento e a validacao do sistema se aproximam.",
-                    "A empresa precisa provar tres coisas: que a operacao ocorreu, que o tributo foi destacado ou tratado corretamente e que o credito ou recolhimento dialoga com o fluxo financeiro. Sem essa amarracao, o risco migra do imposto para a prova.",
+                    "O crédito deixa de ser apenas uma rotina contábil posterior. Com split payment e mecanismos de extinção do débito, o documento, o pagamento e a validação do sistema se aproximam.",
+                    "A empresa precisa provar três coisas: que a operação ocorreu, que o tributo foi destacado ou tratado corretamente e que o crédito ou recolhimento dialoga com o fluxo financeiro. Sem essa amarração, o risco migra do imposto para a prova.",
+                ],
+            },
+            {
+                "id": "credito-presumido-codigos-ibs-cbs",
+                "title": "Créditos presumidos: cCredPres, apropriação e prova",
+                "summary": "Tabela completa de cCredPres, hipóteses legais, forma de apropriação, grupos XML, alíquotas e vigência.",
+                "refs": [
+                    {"source": "lc-214-2025-reforma", "ranges": [(168, 171), (309, 312), (442, 450)]},
+                    {"source": "tabela-ccredpres-ibs-cbs", "full_text": True},
+                ],
+                "analysis": [
+                    "Crédito presumido na Reforma é benefício com código próprio e prova própria. A tabela cCredPres mostra se o crédito nasce no documento fiscal, por evento, ou por regra de apropriação posterior.",
+                    "A leitura segura exige amarrar quatro pontos: artigo da LC 214/2025, código cCredPres, base de cálculo do crédito e impedimentos. Sem essa amarração, o crédito vira risco de glosa.",
+                    "Compras e fiscal precisam identificar se o fornecedor ou a aquisição é a hipótese protegida pela lei: produtor rural não contribuinte, transportador autônomo, reciclagem, bem usado, regime automotivo ou Zona Franca de Manaus, conforme a tabela aplicável.",
                 ],
             },
             {
                 "id": "regimes-diferenciados-beneficios",
-                "title": "Regimes diferenciados, reducoes e beneficios",
-                "summary": "Cesta basica, devolucoes, reducoes de aliquota, regimes especificos e tratamentos favorecidos previstos em lei.",
+                "title": "Regimes diferenciados, reduções e benefícios",
+                "summary": "Cesta básica, devoluções, reduções de alíquota, regimes específicos e tratamentos favorecidos previstos em lei.",
                 "refs": [
                     {"source": "ec-132-2023-reforma", "ranges": [(8, 10), (12, 12), (19, 19)]},
                     {"source": "lc-214-2025-reforma", "ranges": [(101, 188), (234, 260)]},
                 ],
                 "analysis": [
-                    "Beneficio na Reforma continua sendo excecao legal, nao atalho comercial. A pergunta correta e: a operacao esta expressamente dentro da hipotese, no periodo e nas condicoes previstas?",
-                    "Para aplicar reducao, aliquota zero, regime especifico ou tratamento diferenciado, documente produto, servico, destinatario, finalidade, enquadramento legal, vigencia, reflexo no documento e memoria de calculo.",
+                    "Benefício na Reforma continua sendo exceção legal, não atalho comercial. A pergunta correta é: a operação está expressamente dentro da hipótese, no período e nas condições previstas?",
+                    "Para aplicar redução, alíquota zero, regime específico ou tratamento diferenciado, documente produto, serviço, destinatário, finalidade, enquadramento legal, vigência, reflexo no documento e memória de cálculo.",
+                ],
+            },
+            {
+                "id": "cbenef-icms-convivencia-reforma",
+                "title": "cBenef de ICMS e Reforma: convivência sem confundir códigos",
+                "summary": "Como o código de benefício estadual do ICMS convive com CST, cClassTrib e cCredPres de IBS/CBS durante a transição.",
+                "refs": [
+                    {"source": "ec-132-2023-reforma", "ranges": [(12, 23)]},
+                    {"source": "lc-214-2025-reforma", "ranges": [(542, 544)]},
+                    {"source": "lc-227-2026-cgibs", "ranges": [(109, 117), (132, 134)]},
+                ],
+                "analysis": [
+                    "cBenef continua sendo linguagem documental ligada a benefícios de ICMS definidos pela unidade federada. A Reforma não transforma cBenef em código federal de IBS/CBS.",
+                    "Para IBS e CBS, a classificação operacional passa por CST-IBS/CBS, cClassTrib e, quando houver crédito presumido, cCredPres. Durante a transição, a mesma operação pode exigir leitura do benefício de ICMS e leitura do tratamento de IBS/CBS.",
+                    "O ERP deve guardar as duas histórias: a história estadual do ICMS, com cBenef e fundamento local, e a história nacional da Reforma, com LC 214/2025, CST, cClassTrib, cCredPres, alíquotas e regras técnicas do documento fiscal.",
                 ],
             },
             {
                 "id": "imposto-seletivo",
                 "title": "Imposto Seletivo",
-                "summary": "Incidencia, nao incidencia, base, aliquotas, contribuinte, responsabilidade, apuracao e pagamento do IS.",
+                "summary": "Incidência, não incidência, base, alíquotas, contribuinte, responsabilidade, apuração e pagamento do IS.",
                 "refs": [
                     {"source": "lc-214-2025-reforma", "ranges": [(409, 433)]},
                 ],
                 "analysis": [
-                    "O Imposto Seletivo nao substitui a leitura do IBS e da CBS; ele adiciona uma camada sobre bens e servicos escolhidos pela lei. A materialidade, a base, a incidencia unica e as exclusoes precisam ser lidas antes de qualquer parametrizacao.",
-                    "No dia a dia, o risco nasce em NCM, enquadramento do produto, cadeia de fornecimento, exportacao, responsabilidade e centralizacao do pagamento. O cadastro fiscal deve registrar por que o item entra ou sai do campo do IS.",
+                    "O Imposto Seletivo não substitui a leitura do IBS e da CBS; ele adiciona uma camada sobre bens e serviços escolhidos pela lei. A materialidade, a base, a incidência única e as exclusões precisam ser lidas antes de qualquer parametrização.",
+                    "No dia a dia, o risco nasce em NCM, enquadramento do produto, cadeia de fornecimento, exportação, responsabilidade e centralização do pagamento. O cadastro fiscal deve registrar por que o item entra ou sai do campo do IS.",
+                ],
+            },
+            {
+                "id": "documentos-fiscais-nfe-nfce-rtc",
+                "title": "NF-e e NFC-e na Reforma: campos, validações e ERP",
+                "summary": "Nota Técnica 2025.002 v1.35 em tela para entender leiaute, grupos de IBS, CBS, IS e regras de validação.",
+                "refs": [
+                    {"source": "nt-2025-002-rtc-nfe", "full_text": True},
+                    {"source": "it-2025-002-tabelas-reforma", "full_text": True},
+                ],
+                "analysis": [
+                    "A Reforma não chega ao contribuinte apenas por uma lei nova; ela chega pelo XML. Se o ERP não conhece grupos, campos, CST, cClassTrib, cCredPres, alíquotas e validações, a tese jurídica correta não se transforma em documento fiscal válido.",
+                    "A leitura da NT deve ser feita por perfil: fiscal define enquadramento; tecnologia parametriza campos; compras e vendas testam cenários; auditoria verifica XML autorizado, rejeições, memória de cálculo e consistência com contrato e cadastro.",
+                    "A rotina recomendada é criar massa de teste por operação: tributação integral, redução, isenção, suspensão, não incidência, crédito presumido, monofasia, imposto seletivo, devolução e operação com benefício de ICMS em convivência.",
                 ],
             },
             {
                 "id": "comite-gestor-fiscalizacao",
-                "title": "Comite Gestor, administracao e fiscalizacao",
-                "summary": "Governanca do IBS, competencias administrativas, fiscalizacao integrada, cobranca e financiamento do CGIBS.",
+                "title": "Comitê Gestor, administração e fiscalização",
+                "summary": "Governança do IBS, competências administrativas, fiscalização integrada, cobrança e financiamento do CGIBS.",
                 "refs": [
                     {"source": "ec-132-2023-reforma", "ranges": [(156, 156)]},
                     {"source": "lc-227-2026-cgibs", "ranges": [(1, 12), (47, 51)]},
                 ],
                 "analysis": [
-                    "O CGIBS e a peca de governanca do IBS. Para o contribuinte, isso significa que a operacao pode continuar local, mas a administracao, a uniformizacao e parte relevante da fiscalizacao passam a ter desenho integrado.",
-                    "Departamentos fiscal e juridico devem acompanhar regulamento unico, procedimentos de fiscalizacao, cobranca e contencioso. A prova precisa estar pronta para uma leitura coordenada entre entes.",
+                    "O CGIBS é a peça de governança do IBS. Para o contribuinte, isso significa que a operação pode continuar local, mas a administração, a uniformização e parte relevante da fiscalização passam a ter desenho integrado.",
+                    "Departamentos fiscal e jurídico devem acompanhar regulamento único, procedimentos de fiscalização, cobrança e contencioso. A prova precisa estar pronta para uma leitura coordenada entre entes.",
                 ],
             },
             {
                 "id": "transicao-icms-iss-beneficios-saldos",
-                "title": "Transicao, beneficios antigos e saldos de ICMS",
-                "summary": "Extincao gradual de tributos, fundos de compensacao, beneficios onerosos, distribuicao da arrecadacao e saldos credores.",
+                "title": "Transição, benefícios antigos e saldos de ICMS",
+                "summary": "Extinção gradual de tributos, fundos de compensação, benefícios onerosos, distribuição da arrecadação e saldos credores.",
                 "refs": [
                     {"source": "ec-132-2023-reforma", "ranges": [(12, 23)]},
                     {"source": "lc-214-2025-reforma", "ranges": [(542, 544)]},
                     {"source": "lc-227-2026-cgibs", "ranges": [(109, 117), (132, 134), (180, 182)]},
                 ],
                 "analysis": [
-                    "A transicao e o ponto em que a Reforma conversa diretamente com ICMS, ISS, PIS, Cofins e beneficios fiscais existentes. Nao basta saber quando o tributo novo entra; e preciso provar o que acontece com contratos, creditos, incentivos e saldos.",
-                    "Empresas com beneficio estadual, saldo credor relevante, operacoes incentivadas ou contratos longos devem construir dossie por periodo: norma antiga, norma nova, condicao cumprida, efeito financeiro e reflexo documental.",
+                    "A transição é o ponto em que a Reforma conversa diretamente com ICMS, ISS, PIS, Cofins e benefícios fiscais existentes. Não basta saber quando o tributo novo entra; é preciso provar o que acontece com contratos, créditos, incentivos e saldos.",
+                    "Empresas com benefício estadual, saldo credor relevante, operações incentivadas ou contratos longos devem construir dossiê por período: norma antiga, norma nova, condição cumprida, efeito financeiro e reflexo documental.",
                 ],
             },
         ],
@@ -1496,17 +1624,21 @@ SIGNAL_CHAPTER_MAP = {
         "protege/fundo": ["fgts-deposito-rescisao"],
     },
     "reforma-tributaria": {
-        "aliquota": ["base-aliquotas-transicao", "regimes-diferenciados-beneficios"],
+        "aliquota": ["base-aliquotas-transicao", "aliquotas-padrao-documentos-fiscais", "regimes-diferenciados-beneficios"],
         "isencao": ["regimes-diferenciados-beneficios"],
         "suspensao": ["regimes-diferenciados-beneficios"],
         "exportacao": ["imposto-seletivo", "regimes-diferenciados-beneficios"],
         "nao incidencia": ["matriz-ibs-cbs", "imposto-seletivo"],
-        "credito outorgado": ["transicao-icms-iss-beneficios-saldos"],
-        "credito": ["creditos-recolhimento-split-payment", "transicao-icms-iss-beneficios-saldos"],
+        "credito outorgado": ["credito-presumido-codigos-ibs-cbs", "transicao-icms-iss-beneficios-saldos"],
+        "credito": ["creditos-recolhimento-split-payment", "credito-presumido-codigos-ibs-cbs", "transicao-icms-iss-beneficios-saldos"],
         "regime especial": ["regimes-diferenciados-beneficios"],
-        "efd/sped": ["creditos-recolhimento-split-payment", "comite-gestor-fiscalizacao"],
+        "efd/sped": ["documentos-fiscais-nfe-nfce-rtc", "creditos-recolhimento-split-payment", "comite-gestor-fiscalizacao"],
         "fundo/contrapartida": ["transicao-icms-iss-beneficios-saldos"],
         "protege/fundo": ["transicao-icms-iss-beneficios-saldos"],
+        "cBenef": ["cbenef-icms-convivencia-reforma", "cst-cclasstrib-ibs-cbs"],
+        "cst": ["cst-cclasstrib-ibs-cbs"],
+        "cclasstrib": ["cst-cclasstrib-ibs-cbs"],
+        "ccredpres": ["credito-presumido-codigos-ibs-cbs"],
     },
 }
 
@@ -1660,6 +1792,114 @@ def render_text_chunks(text: str, source_id: str, chunk_size: int = 28000) -> st
     return "".join(chunks)
 
 
+def split_table_row(line: str) -> list[str]:
+    clean = line.strip().strip("|")
+    return [cell.strip() for cell in clean.split("|")]
+
+
+def is_table_separator(line: str) -> bool:
+    cells = split_table_row(line)
+    return bool(cells) and all(re.fullmatch(r":?-{3,}:?", cell.strip()) for cell in cells if cell.strip())
+
+
+def render_markdown_table(lines: list[str], source_id: str, index: int) -> str:
+    rows = [split_table_row(line) for line in lines if line.strip().startswith("|")]
+    rows = [row for row in rows if row and not all(not cell for cell in row)]
+    if len(rows) >= 2 and is_table_separator(lines[1]):
+        header = rows[0]
+        body_rows = rows[2:]
+    else:
+        header = rows[0] if rows else []
+        body_rows = rows[1:]
+    width = len(header)
+    head = "".join(f"<th>{escape(cell)}</th>" for cell in header)
+    body = []
+    for row in body_rows:
+        row = row[:width] + [""] * max(0, width - len(row))
+        body.append("<tr>" + "".join(f"<td>{escape(cell)}</td>" for cell in row[:width]) + "</tr>")
+    return f"""
+<article class="article-block legal-table-block" id="{escape(source_id)}-tabela-{index}">
+  <div class="article-number">Tabela {index}</div>
+  <div class="law-table-wrap">
+    <table class="law-table">
+      <thead><tr>{head}</tr></thead>
+      <tbody>{''.join(body)}</tbody>
+    </table>
+  </div>
+</article>
+"""
+
+
+def render_structured_text(text: str, source_id: str) -> str:
+    rendered: list[str] = []
+    text_lines: list[str] = []
+    table_lines: list[str] = []
+    section_index = 1
+    table_index = 1
+
+    def flush_text() -> None:
+        nonlocal section_index, text_lines
+        block = "\n".join(text_lines).strip()
+        text_lines = []
+        if not block:
+            return
+        if block.startswith("# "):
+            title = block[2:].strip()
+            rendered.append(f'<h2 class="source-heading" id="{escape(source_id)}-secao-{section_index}">{escape(title)}</h2>')
+            section_index += 1
+            return
+        if block.startswith("## "):
+            title = block[3:].strip()
+            rendered.append(f'<h3 class="source-heading" id="{escape(source_id)}-secao-{section_index}">{escape(title)}</h3>')
+            section_index += 1
+            return
+        rendered.append(f"""
+<article class="article-block text-chunk" id="{escape(source_id)}-parte-{section_index}">
+  <div class="article-number">Bloco {section_index}</div>
+  <pre class="law-pre">{escape(block)}</pre>
+</article>
+""")
+        section_index += 1
+
+    def flush_table() -> None:
+        nonlocal table_index, table_lines
+        if table_lines:
+            rendered.append(render_markdown_table(table_lines, source_id, table_index))
+            table_index += 1
+            table_lines = []
+
+    for line in text.splitlines():
+        if line.strip().startswith("|"):
+            flush_text()
+            table_lines.append(line)
+            continue
+        flush_table()
+        if line.startswith("#"):
+            flush_text()
+            text_lines.append(line)
+            flush_text()
+        else:
+            text_lines.append(line)
+    flush_table()
+    flush_text()
+    return "".join(rendered)
+
+
+def render_source_body_for_ref(source: dict, source_data: dict, source_id: str, ref: dict | None, path: str) -> tuple[str, str]:
+    if source.get("render") == "structured_text":
+        body = render_structured_text(source_data["text"], source_id)
+        count = f"{fmt_num(len(source_data['text']))} caracteres"
+    elif (ref and ref.get("full_text")) or source.get("render") == "full_text":
+        body = render_text_chunks(source_data["text"], source_id)
+        count = f"{fmt_num(len(source_data['text']))} caracteres"
+    else:
+        ranges = ref.get("ranges") if ref else source.get("source_ranges")
+        articles = selected_articles(source_data, ranges, False)
+        body = render_article_blocks(articles, source_id, path)
+        count = f"{fmt_num(len(articles))} artigos"
+    return body, count
+
+
 def render_analysis(chapter: dict) -> str:
     points = "".join(f"<p>{escape(item)}</p>" for item in chapter.get("analysis", []))
     return f"""
@@ -1690,14 +1930,9 @@ def render_chapter_page(module: dict, chapter: dict, sources: dict, layout_func)
         source_id = ref["source"]
         source = sources[source_id]["def"]
         source_anchor = f"lei-{slug(source_id)}"
-        chapter_nav.append(f'<a href="#{escape(source_anchor)}">Lei: {escape(source["short"])}</a>')
-        if ref.get("full_text") or source.get("render") == "full_text":
-            body = render_text_chunks(sources[source_id]["text"], source_id)
-            count = f"{fmt_num(len(sources[source_id]['text']))} caracteres"
-        else:
-            articles = selected_articles(sources[source_id], ref.get("ranges"), False)
-            body = render_article_blocks(articles, source_id, path)
-            count = f"{fmt_num(len(articles))} artigos"
+        source_label = "Tabela" if source.get("render") == "structured_text" else "Lei"
+        chapter_nav.append(f'<a href="#{escape(source_anchor)}">{escape(source_label)}: {escape(source["short"])}</a>')
+        body, count = render_source_body_for_ref(source, sources[source_id], source_id, ref, path)
         source_blocks.append(f"""
 <section class="legal-document searchable-card" id="{escape(source_anchor)}" data-search="{escape(source['title'] + ' ' + chapter['title'])}">
   <div class="document-heading">
@@ -1754,14 +1989,7 @@ def render_chapter_page(module: dict, chapter: dict, sources: dict, layout_func)
 def render_source_page(source_id: str, source_data: dict, layout_func) -> str:
     source = source_data["def"]
     path = source_page_path(source_id)
-    source_ranges = source.get("source_ranges")
-    if source.get("render") == "full_text":
-        law_body = render_text_chunks(source_data["text"], source_id)
-        count = f"{fmt_num(len(source_data['text']))} caracteres"
-    else:
-        articles = selected_articles(source_data, source_ranges, False)
-        law_body = render_article_blocks(articles, source_id, path)
-        count = f"{fmt_num(len(articles))} artigos"
+    law_body, count = render_source_body_for_ref(source, source_data, source_id, None, path)
     body = f"""
 <section class="hero-panel legal-hero">
   <div>

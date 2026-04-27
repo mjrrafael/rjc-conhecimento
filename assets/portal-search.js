@@ -510,52 +510,82 @@ window.RJC_SEARCH = [
     "tags": "folha-clt beneficios-previdenciarios-prova Beneficios previdenciarios, incapacidades e prova"
   },
   {
-    "title": "Reforma Tributaria: legislacao em tela",
+    "title": "Reforma Tributária: legislação em tela",
     "url": "federal/legislacao/reforma-tributaria/index.html",
-    "summary": "EC 132/2023, LC 214/2025 e LC 227/2026 organizadas por IBS, CBS, Imposto Seletivo, transicao, creditos, split payment, beneficios e governanca.",
-    "tags": "Federal reforma-tributaria ec-132-2023-reforma lc-214-2025-reforma lc-227-2026-cgibs"
+    "summary": "EC 132/2023, LC 214/2025, LC 227/2026, tabelas CST/cClassTrib/cCredPres, alíquotas, documentos fiscais, transição, créditos, split payment, benefícios e governança.",
+    "tags": "Federal reforma-tributaria ec-132-2023-reforma lc-214-2025-reforma lc-227-2026-cgibs it-2025-002-tabelas-reforma tabela-cst-cclasstrib-ibs-cbs tabela-ccredpres-ibs-cbs nt-2025-002-rtc-nfe"
   },
   {
-    "title": "Reforma Tributaria: legislacao em tela - Regra matriz do IBS e da CBS",
+    "title": "Reforma Tributária: legislação em tela - Regra matriz do IBS e da CBS",
     "url": "federal/legislacao/reforma-tributaria/matriz-ibs-cbs.html",
-    "summary": "Competencia, neutralidade, incidencia ampla sobre bens e servicos, sujeito passivo, definicoes e local da operacao.",
+    "summary": "Competência, neutralidade, incidência ampla sobre bens e serviços, sujeito passivo, definições e local da operação.",
     "tags": "reforma-tributaria matriz-ibs-cbs Regra matriz do IBS e da CBS"
   },
   {
-    "title": "Reforma Tributaria: legislacao em tela - Base de calculo, aliquotas e transicao",
+    "title": "Reforma Tributária: legislação em tela - Base de cálculo, alíquotas e transição",
     "url": "federal/legislacao/reforma-tributaria/base-aliquotas-transicao.html",
-    "summary": "Como a lei constroi a base, fixa aliquotas de referencia e disciplina a convivencia de tributos antigos e novos.",
-    "tags": "reforma-tributaria base-aliquotas-transicao Base de calculo, aliquotas e transicao"
+    "summary": "Como a lei constrói a base, fixa alíquotas de referência e disciplina a convivência de tributos antigos e novos.",
+    "tags": "reforma-tributaria base-aliquotas-transicao Base de cálculo, alíquotas e transição"
   },
   {
-    "title": "Reforma Tributaria: legislacao em tela - Creditos, recolhimento e split payment",
+    "title": "Reforma Tributária: legislação em tela - Alíquotas padrão, teste e referência nos documentos fiscais",
+    "url": "federal/legislacao/reforma-tributaria/aliquotas-padrao-documentos-fiscais.html",
+    "summary": "Percentuais de teste de 2026, regra de alíquota própria ou de referência e leitura operacional do pIBSUF, pIBSMun e pCBS.",
+    "tags": "reforma-tributaria aliquotas-padrao-documentos-fiscais Alíquotas padrão, teste e referência nos documentos fiscais"
+  },
+  {
+    "title": "Reforma Tributária: legislação em tela - CST-IBS/CBS e cClassTrib: como classificar a operação",
+    "url": "federal/legislacao/reforma-tributaria/cst-cclasstrib-ibs-cbs.html",
+    "summary": "Tabela completa de CST e cClassTrib, com base legal, reduções, indicadores e documentos fiscais permitidos.",
+    "tags": "reforma-tributaria cst-cclasstrib-ibs-cbs CST-IBS/CBS e cClassTrib: como classificar a operação"
+  },
+  {
+    "title": "Reforma Tributária: legislação em tela - Créditos, recolhimento e split payment",
     "url": "federal/legislacao/reforma-tributaria/creditos-recolhimento-split-payment.html",
-    "summary": "Extincao do debito, recolhimento, nao cumulatividade operacional e segregacao automatica do imposto no pagamento.",
-    "tags": "reforma-tributaria creditos-recolhimento-split-payment Creditos, recolhimento e split payment"
+    "summary": "Extinção do débito, recolhimento, não cumulatividade operacional e segregação automática do imposto no pagamento.",
+    "tags": "reforma-tributaria creditos-recolhimento-split-payment Créditos, recolhimento e split payment"
   },
   {
-    "title": "Reforma Tributaria: legislacao em tela - Regimes diferenciados, reducoes e beneficios",
+    "title": "Reforma Tributária: legislação em tela - Créditos presumidos: cCredPres, apropriação e prova",
+    "url": "federal/legislacao/reforma-tributaria/credito-presumido-codigos-ibs-cbs.html",
+    "summary": "Tabela completa de cCredPres, hipóteses legais, forma de apropriação, grupos XML, alíquotas e vigência.",
+    "tags": "reforma-tributaria credito-presumido-codigos-ibs-cbs Créditos presumidos: cCredPres, apropriação e prova"
+  },
+  {
+    "title": "Reforma Tributária: legislação em tela - Regimes diferenciados, reduções e benefícios",
     "url": "federal/legislacao/reforma-tributaria/regimes-diferenciados-beneficios.html",
-    "summary": "Cesta basica, devolucoes, reducoes de aliquota, regimes especificos e tratamentos favorecidos previstos em lei.",
-    "tags": "reforma-tributaria regimes-diferenciados-beneficios Regimes diferenciados, reducoes e beneficios"
+    "summary": "Cesta básica, devoluções, reduções de alíquota, regimes específicos e tratamentos favorecidos previstos em lei.",
+    "tags": "reforma-tributaria regimes-diferenciados-beneficios Regimes diferenciados, reduções e benefícios"
   },
   {
-    "title": "Reforma Tributaria: legislacao em tela - Imposto Seletivo",
+    "title": "Reforma Tributária: legislação em tela - cBenef de ICMS e Reforma: convivência sem confundir códigos",
+    "url": "federal/legislacao/reforma-tributaria/cbenef-icms-convivencia-reforma.html",
+    "summary": "Como o código de benefício estadual do ICMS convive com CST, cClassTrib e cCredPres de IBS/CBS durante a transição.",
+    "tags": "reforma-tributaria cbenef-icms-convivencia-reforma cBenef de ICMS e Reforma: convivência sem confundir códigos"
+  },
+  {
+    "title": "Reforma Tributária: legislação em tela - Imposto Seletivo",
     "url": "federal/legislacao/reforma-tributaria/imposto-seletivo.html",
-    "summary": "Incidencia, nao incidencia, base, aliquotas, contribuinte, responsabilidade, apuracao e pagamento do IS.",
+    "summary": "Incidência, não incidência, base, alíquotas, contribuinte, responsabilidade, apuração e pagamento do IS.",
     "tags": "reforma-tributaria imposto-seletivo Imposto Seletivo"
   },
   {
-    "title": "Reforma Tributaria: legislacao em tela - Comite Gestor, administracao e fiscalizacao",
-    "url": "federal/legislacao/reforma-tributaria/comite-gestor-fiscalizacao.html",
-    "summary": "Governanca do IBS, competencias administrativas, fiscalizacao integrada, cobranca e financiamento do CGIBS.",
-    "tags": "reforma-tributaria comite-gestor-fiscalizacao Comite Gestor, administracao e fiscalizacao"
+    "title": "Reforma Tributária: legislação em tela - NF-e e NFC-e na Reforma: campos, validações e ERP",
+    "url": "federal/legislacao/reforma-tributaria/documentos-fiscais-nfe-nfce-rtc.html",
+    "summary": "Nota Técnica 2025.002 v1.35 em tela para entender leiaute, grupos de IBS, CBS, IS e regras de validação.",
+    "tags": "reforma-tributaria documentos-fiscais-nfe-nfce-rtc NF-e e NFC-e na Reforma: campos, validações e ERP"
   },
   {
-    "title": "Reforma Tributaria: legislacao em tela - Transicao, beneficios antigos e saldos de ICMS",
+    "title": "Reforma Tributária: legislação em tela - Comitê Gestor, administração e fiscalização",
+    "url": "federal/legislacao/reforma-tributaria/comite-gestor-fiscalizacao.html",
+    "summary": "Governança do IBS, competências administrativas, fiscalização integrada, cobrança e financiamento do CGIBS.",
+    "tags": "reforma-tributaria comite-gestor-fiscalizacao Comitê Gestor, administração e fiscalização"
+  },
+  {
+    "title": "Reforma Tributária: legislação em tela - Transição, benefícios antigos e saldos de ICMS",
     "url": "federal/legislacao/reforma-tributaria/transicao-icms-iss-beneficios-saldos.html",
-    "summary": "Extincao gradual de tributos, fundos de compensacao, beneficios onerosos, distribuicao da arrecadacao e saldos credores.",
-    "tags": "reforma-tributaria transicao-icms-iss-beneficios-saldos Transicao, beneficios antigos e saldos de ICMS"
+    "summary": "Extinção gradual de tributos, fundos de compensação, benefícios onerosos, distribuição da arrecadação e saldos credores.",
+    "tags": "reforma-tributaria transicao-icms-iss-beneficios-saldos Transição, benefícios antigos e saldos de ICMS"
   },
   {
     "title": "Goias: ICMS e beneficios fiscais em tela",
@@ -772,6 +802,30 @@ window.RJC_SEARCH = [
     "url": "federal/legislacao/atos/lc-227-2026-cgibs.html",
     "summary": "Institui o Comite Gestor do IBS, disciplina administracao integrada, fiscalizacao, distribuicao da arrecadacao e saldos credores de ICMS.",
     "tags": "lc-227-2026-cgibs Federal LC 227/2026"
+  },
+  {
+    "title": "Tabela CST e cClassTrib do IBS e da CBS - 15/04/2026",
+    "url": "federal/legislacao/atos/tabela-cst-cclasstrib-ibs-cbs.html",
+    "summary": "Tabela operacional do Portal Nacional de Documentos Fiscais Eletrônicos que relaciona CST-IBS/CBS, cClassTrib, base legal, reduções, indicadores e aplicabilidade por documento fiscal.",
+    "tags": "tabela-cst-cclasstrib-ibs-cbs Federal CST/cClassTrib IBS-CBS"
+  },
+  {
+    "title": "Tabela de códigos de crédito presumido do IBS e da CBS - 12/12/2025",
+    "url": "federal/legislacao/atos/tabela-ccredpres-ibs-cbs.html",
+    "summary": "Tabela operacional de crédito presumido: código, hipótese legal, forma de apropriação, grupos XML, alíquotas, vigência e referência de cClassTrib.",
+    "tags": "tabela-ccredpres-ibs-cbs Federal cCredPres IBS-CBS"
+  },
+  {
+    "title": "Informe Técnico 2025.002 v1.50 - tabelas de classificação do IBS e da CBS",
+    "url": "federal/legislacao/atos/it-2025-002-tabelas-reforma.html",
+    "summary": "Informe técnico com conceitos de CST, cClassTrib, cCredPres, alíquotas padrão e links operacionais das tabelas da Reforma Tributária do Consumo.",
+    "tags": "it-2025-002-tabelas-reforma Federal IT 2025.002 v1.50"
+  },
+  {
+    "title": "Nota Técnica 2025.002 v1.35 - adequações NF-e/NFC-e para IBS, CBS e IS",
+    "url": "federal/legislacao/atos/nt-2025-002-rtc-nfe.html",
+    "summary": "Nota técnica de leiaute, campos e regras de validação da NF-e e NFC-e para a Reforma Tributária do Consumo.",
+    "tags": "nt-2025-002-rtc-nfe Federal NT 2025.002 v1.35"
   },
   {
     "title": "Decreto GO 4.852/1997 - RCTE",

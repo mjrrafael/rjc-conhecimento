@@ -12,7 +12,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
 
-from legal_modules import FEDERAL_ROOT, LEGAL_MODULES, SOURCE_DEFS, UPDATED_ON  # noqa: E402
+from legal_modules import FEDERAL_ROOT, LEGAL_MODULES, ROOT as PORTAL_ROOT, SOURCE_DEFS, UPDATED_ON  # noqa: E402
 from state_legal_pages import state_source_records  # noqa: E402
 
 
@@ -46,11 +46,17 @@ def modules_for_source(source_id: str) -> list[dict]:
 
 def source_record(source_id: str, source: dict) -> dict:
     files = source.get("files") or []
+    repo_files = source.get("repo_files") or []
     hashes: dict[str, str] = {}
     for file_name in files:
         path = FEDERAL_ROOT / file_name
         if path.exists():
             hashes[file_name] = sha256_file(path)
+    for file_name in repo_files:
+        path = PORTAL_ROOT / file_name
+        if path.exists():
+            hashes[file_name] = sha256_file(path)
+    storage_type = "repo_text" if repo_files else ("local_text" if files else "official_fetch")
     return {
         "source_id": source_id,
         "jurisdiction": source.get("jurisdiction"),
@@ -58,8 +64,9 @@ def source_record(source_id: str, source: dict) -> dict:
         "short": source.get("short"),
         "official_url": source.get("url"),
         "storage": {
-            "type": "local_text" if files else "official_fetch",
+            "type": storage_type,
             "files": files,
+            "repo_files": repo_files,
             "sha256": hashes,
             "fetch_url": source.get("fetch_url", ""),
         },
