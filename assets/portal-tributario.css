@@ -184,6 +184,63 @@ a {
   font-size: 0.9rem;
 }
 
+.search-result em {
+  display: inline-flex;
+  margin-top: 7px;
+  padding: 3px 7px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  color: var(--green);
+  background: var(--green-soft);
+  font-size: 0.74rem;
+  font-style: normal;
+  font-weight: 850;
+}
+
+.search-status {
+  background: var(--soft-blue);
+}
+
+.study-strip {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 24px 12px;
+  display: grid;
+  grid-template-columns: 150px minmax(0, 1fr);
+  gap: 10px;
+  align-items: center;
+}
+
+.study-strip strong {
+  color: var(--muted);
+  font-size: 0.82rem;
+  text-transform: uppercase;
+}
+
+.study-strip div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.study-strip a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 30px;
+  padding: 5px 9px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  color: var(--navy);
+  background: var(--surface);
+  font-size: 0.8rem;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.study-strip a:hover {
+  background: var(--soft-blue);
+}
+
 main {
   max-width: 1180px;
   margin: 0 auto;
@@ -836,6 +893,98 @@ a.state-card:hover {
   line-height: 1.35;
 }
 
+.study-path {
+  display: grid;
+  gap: 16px;
+  margin-top: 28px;
+}
+
+.study-step-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.study-step {
+  display: grid;
+  grid-template-columns: 42px minmax(0, 1fr);
+  gap: 4px 12px;
+  min-width: 0;
+  padding: 14px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+  color: inherit;
+  text-decoration: none;
+  transition: border-color 160ms ease, transform 160ms ease, box-shadow 160ms ease;
+}
+
+.study-step:hover {
+  transform: translateY(-1px);
+  border-color: rgba(29, 111, 184, 0.45);
+  box-shadow: 0 10px 24px rgba(23, 32, 51, 0.09);
+}
+
+.study-step > span {
+  grid-row: span 2;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 999px;
+  background: var(--soft-blue);
+  color: var(--navy);
+  font-weight: 850;
+  font-size: 0.82rem;
+}
+
+.study-step strong {
+  color: var(--navy);
+  line-height: 1.25;
+}
+
+.study-step small {
+  color: var(--muted);
+  line-height: 1.35;
+}
+
+.chapter-flow {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.chapter-flow a {
+  display: grid;
+  gap: 5px;
+  min-width: 0;
+  padding: 14px 16px;
+  border: 1px solid rgba(169, 101, 22, 0.25);
+  border-radius: 8px;
+  background: var(--amber-soft);
+  color: inherit;
+  text-decoration: none;
+}
+
+.chapter-flow span {
+  color: var(--amber);
+  font-size: 0.78rem;
+  font-weight: 850;
+  text-transform: uppercase;
+}
+
+.chapter-flow strong {
+  color: var(--navy);
+  line-height: 1.25;
+}
+
+.chapter-flow small {
+  color: var(--muted);
+  line-height: 1.35;
+}
+
 .signals-inline {
   display: flex;
   flex-wrap: wrap;
@@ -1054,12 +1203,22 @@ a.state-card:hover {
 }
 
 .law-sidebar a {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
   padding: 8px 10px;
   border-radius: 6px;
   color: var(--muted);
   font-size: 0.9rem;
   font-weight: 650;
   text-decoration: none;
+}
+
+.law-sidebar a span {
+  color: var(--amber);
+  font-size: 0.75rem;
+  font-weight: 900;
+  line-height: 1.4;
 }
 
 .law-sidebar a:hover,
@@ -1623,7 +1782,9 @@ a.state-card:hover {
   .signal-study,
   .topic-index-grid,
   .department-grid,
-  .source-grid {
+  .source-grid,
+  .study-step-grid,
+  .chapter-flow {
     grid-template-columns: 1fr 1fr;
   }
 
@@ -1650,6 +1811,12 @@ a.state-card:hover {
   }
 
   .searchbar {
+    grid-template-columns: 1fr;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .study-strip {
     grid-template-columns: 1fr;
     padding-left: 16px;
     padding-right: 16px;
@@ -1694,6 +1861,8 @@ a.state-card:hover {
   .article-index-links,
   .department-grid,
   .source-grid,
+  .study-step-grid,
+  .chapter-flow,
   .document-heading {
     grid-template-columns: 1fr;
   }
@@ -1752,6 +1921,8 @@ a.state-card:hover {
   .signal-study-grid dd,
   .topic-index-group p,
   .topic-index-group a span,
+  .study-step small,
+  .chapter-flow small,
   .article-context-note span,
   .article-index p {
     width: calc(100vw - 90px);

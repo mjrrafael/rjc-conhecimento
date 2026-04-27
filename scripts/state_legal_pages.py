@@ -3630,6 +3630,72 @@ def docs_by_source_id(docs: list[dict] | tuple[dict, ...]) -> dict[str, dict]:
     return mapping
 
 
+def state_chapter_href(uf: str, chapter_id: str) -> str:
+    paths = {
+        "BA": ba_chapter_path,
+        "DF": df_chapter_path,
+        "MT": mt_chapter_path,
+        "RN": rn_chapter_path,
+    }
+    if uf in paths:
+        return paths[uf](chapter_id)
+    return configured_chapter_path(uf, chapter_id)
+
+
+def render_state_study_path(uf: str, chapters: list[dict], current_path: str, name: str) -> str:
+    steps = []
+    for index, chapter in enumerate(chapters, start=1):
+        steps.append(f"""
+<a class="study-step" href="{escape(rel_href(current_path, state_chapter_href(uf, chapter['id'])))}">
+  <span>{index:02d}</span>
+  <strong>{escape(chapter['title'])}</strong>
+  <small>{escape(chapter['summary'])}</small>
+</a>
+""")
+    return f"""
+<section class="study-path" aria-label="Roteiro de estudo estadual">
+  <div class="section-heading">
+    <span class="eyebrow">Roteiro de estudo</span>
+    <h2>Como estudar o ICMS de {escape(name)}</h2>
+    <p>Siga a sequencia: regra matriz, base e aliquotas, beneficios, regimes, documentos, prova e fiscalizacao. Cada etapa leva a uma pagina especifica, com texto legal em tela antes da analise.</p>
+  </div>
+  <div class="study-step-grid">{''.join(steps)}</div>
+</section>
+"""
+
+
+def render_state_chapter_flow(uf: str, chapters: list[dict], chapter: dict, current_path: str) -> str:
+    current_index = next((index for index, item in enumerate(chapters) if item["id"] == chapter["id"]), 0)
+    links = []
+    if current_index > 0:
+        links.append(("Assunto anterior", chapters[current_index - 1]))
+    links.append(("Indice estadual", None))
+    if current_index < len(chapters) - 1:
+        links.append(("Proximo assunto", chapters[current_index + 1]))
+    items = []
+    for label, target in links:
+        if target is None:
+            href = rel_href(current_path, index_path(uf))
+            title = f"Indice de {uf}"
+            summary = "Volte ao mapa completo do Estado para escolher outro tema."
+        else:
+            href = rel_href(current_path, state_chapter_href(uf, target["id"]))
+            title = target["title"]
+            summary = target["summary"]
+        items.append(f"""
+<a href="{escape(href)}">
+  <span>{escape(label)}</span>
+  <strong>{escape(title)}</strong>
+  <small>{escape(summary)}</small>
+</a>
+""")
+    return f"""
+<section class="chapter-flow" aria-label="Continuar leitura">
+  {''.join(items)}
+</section>
+"""
+
+
 def ba_chapter_path(chapter_id: str) -> str:
     return f"estados/ba/legislacao/{chapter_id}.html"
 
@@ -3723,6 +3789,7 @@ def render_ba_index_page(docs: tuple[dict, ...], layout_func) -> str:
     <p><a href="https://www.sefaz.ba.gov.br/legislacao/textos-legais/" target="_blank" rel="noopener">Textos legais da SEFAZ-BA</a></p>
   </div>
 </section>
+{render_state_study_path('BA', BA_CHAPTERS, current, 'Bahia')}
 <section class="topic-index">
   <div class="section-heading">
     <span class="eyebrow">Índice por tema</span>
@@ -3793,6 +3860,7 @@ def render_ba_chapter_page(docs: tuple[dict, ...], chapter: dict, layout_func) -
     </div>
   </div>
 </section>
+{render_state_chapter_flow('BA', BA_CHAPTERS, chapter, current)}
 <section class="legal-chapters">
   <div class="section-heading">
     <span class="eyebrow">Legislação em tela</span>
@@ -3820,6 +3888,7 @@ def render_ba_chapter_page(docs: tuple[dict, ...], chapter: dict, layout_func) -
     <p>{escape(chapter.get('risks', 'Aplicar tese sem dispositivo, condição, vigência ou prova documental suficiente.'))}</p>
   </div>
 </section>
+{render_state_chapter_flow('BA', BA_CHAPTERS, chapter, current)}
 <section class="continuity">
   <h2>Continuar este estudo</h2>
   <div>{related_links}</div>
@@ -3930,6 +3999,7 @@ def render_df_index_page(docs: tuple[dict, ...], layout_func) -> str:
     <p><a href="https://www.sinj.df.gov.br/sinj/" target="_blank" rel="noopener">Sistema Integrado de Normas Jurídicas do DF</a></p>
   </div>
 </section>
+{render_state_study_path('DF', DF_CHAPTERS, current, 'Distrito Federal')}
 <section class="topic-index">
   <div class="section-heading">
     <span class="eyebrow">Índice por tema</span>
@@ -4001,6 +4071,7 @@ def render_df_chapter_page(docs: tuple[dict, ...], chapter: dict, layout_func) -
     </div>
   </div>
 </section>
+{render_state_chapter_flow('DF', DF_CHAPTERS, chapter, current)}
 <section class="legal-chapters">
   <div class="section-heading">
     <span class="eyebrow">Legislação em tela</span>
@@ -4028,6 +4099,7 @@ def render_df_chapter_page(docs: tuple[dict, ...], chapter: dict, layout_func) -
     <p>{escape(chapter.get('risks', 'Aplicar tese sem dispositivo, condição, vigência ou prova documental suficiente.'))}</p>
   </div>
 </section>
+{render_state_chapter_flow('DF', DF_CHAPTERS, chapter, current)}
 <section class="continuity">
   <h2>Continuar este estudo</h2>
   <div>{related_links}</div>
@@ -4138,6 +4210,7 @@ def render_mt_index_page(docs: tuple[dict, ...], layout_func) -> str:
     <p><a href="https://www.sefaz.mt.gov.br/" target="_blank" rel="noopener">SEFAZ-MT: legislação tributária</a></p>
   </div>
 </section>
+{render_state_study_path('MT', MT_CHAPTERS, current, 'Mato Grosso')}
 <section class="topic-index">
   <div class="section-heading">
     <span class="eyebrow">Índice por tema</span>
@@ -4209,6 +4282,7 @@ def render_mt_chapter_page(docs: tuple[dict, ...], chapter: dict, layout_func) -
     </div>
   </div>
 </section>
+{render_state_chapter_flow('MT', MT_CHAPTERS, chapter, current)}
 <section class="legal-chapters">
   <div class="section-heading">
     <span class="eyebrow">Legislação em tela</span>
@@ -4236,6 +4310,7 @@ def render_mt_chapter_page(docs: tuple[dict, ...], chapter: dict, layout_func) -
     <p>{escape(chapter.get('risks', 'Aplicar tese sem dispositivo, condição, vigência ou prova documental suficiente.'))}</p>
   </div>
 </section>
+{render_state_chapter_flow('MT', MT_CHAPTERS, chapter, current)}
 <section class="continuity">
   <h2>Continuar este estudo</h2>
   <div>{related_links}</div>
@@ -4353,6 +4428,7 @@ def render_rn_index_page(docs: tuple[dict, ...], layout_func) -> str:
     <p>Regra matriz, base/alíquota, benefícios, programas, ST/antecipação, documentos e fiscalização.</p>
   </div>
 </section>
+{render_state_study_path('RN', RN_CHAPTERS, current, 'Rio Grande do Norte')}
 <section class="topic-index">
   <div class="section-heading">
     <span class="eyebrow">Índice por tema</span>
@@ -4415,6 +4491,7 @@ def render_rn_chapter_page(docs: tuple[dict, ...], chapter: dict, layout_func) -
     </div>
   </div>
 </section>
+{render_state_chapter_flow('RN', RN_CHAPTERS, chapter, current)}
 <section class="legal-chapters">
   <div class="section-heading">
     <span class="eyebrow">Legislação em tela</span>
@@ -4442,6 +4519,7 @@ def render_rn_chapter_page(docs: tuple[dict, ...], chapter: dict, layout_func) -
     <p>{escape(chapter.get('risks', 'Aplicar tese sem dispositivo, condição, vigência ou prova documental suficiente.'))}</p>
   </div>
 </section>
+{render_state_chapter_flow('RN', RN_CHAPTERS, chapter, current)}
 <section class="continuity">
   <h2>Continuar este estudo</h2>
   <div>{related_links}</div>
@@ -4578,6 +4656,7 @@ def render_configured_state_index_page(uf: str, docs: tuple[dict, ...], layout_f
     <p>{escape(profile.get('benefits', 'Isenção, redução, crédito, diferimento, ST, regimes especiais e prova fiscal.'))}</p>
   </div>
 </section>
+{render_state_study_path(uf, configured_chapters(uf), current, name)}
 <section class="topic-index">
   <div class="section-heading">
     <span class="eyebrow">Índice por tema</span>
@@ -4642,6 +4721,7 @@ def render_configured_state_chapter_page(uf: str, docs: tuple[dict, ...], chapte
     </div>
   </div>
 </section>
+{render_state_chapter_flow(uf, configured_chapters(uf), chapter, current)}
 <section class="legal-chapters">
   <div class="section-heading">
     <span class="eyebrow">Legislação em tela</span>
@@ -4669,6 +4749,7 @@ def render_configured_state_chapter_page(uf: str, docs: tuple[dict, ...], chapte
     <p>{escape(chapter.get('risks', 'Aplicar tese sem dispositivo, condição, vigência ou prova documental suficiente.'))}</p>
   </div>
 </section>
+{render_state_chapter_flow(uf, configured_chapters(uf), chapter, current)}
 <section class="continuity">
   <h2>Continuar este estudo</h2>
   <div>{related_links}</div>

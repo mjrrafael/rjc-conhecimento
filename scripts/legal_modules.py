@@ -2016,11 +2016,68 @@ def render_analysis(chapter: dict) -> str:
 """
 
 
+def render_module_study_path(module: dict, current_path: str) -> str:
+    steps = []
+    for index, chapter in enumerate(module["chapters"], start=1):
+        steps.append(f"""
+<a class="study-step" href="{escape(rel_href(current_path, module_chapter_path(module, chapter)))}">
+  <span>{index:02d}</span>
+  <strong>{escape(chapter['title'])}</strong>
+  <small>{escape(chapter['summary'])}</small>
+</a>
+""")
+    return f"""
+<section class="study-path" aria-label="Roteiro de estudo">
+  <div class="section-heading">
+    <span class="eyebrow">Roteiro de estudo</span>
+    <h2>Ordem recomendada de leitura</h2>
+    <p>Use esta trilha como aula: entenda a regra matriz, passe por base, aliquota e regime, depois feche beneficios, obrigacoes, prova e fiscalizacao.</p>
+  </div>
+  <div class="study-step-grid">{''.join(steps)}</div>
+</section>
+"""
+
+
+def render_chapter_flow(module: dict, chapter: dict, current_path: str) -> str:
+    chapters = module["chapters"]
+    current_index = next((index for index, item in enumerate(chapters) if item["id"] == chapter["id"]), 0)
+    links = []
+    if current_index > 0:
+        previous = chapters[current_index - 1]
+        links.append(("Assunto anterior", previous))
+    links.append(("Indice do modulo", None))
+    if current_index < len(chapters) - 1:
+        next_chapter = chapters[current_index + 1]
+        links.append(("Proximo assunto", next_chapter))
+    items = []
+    for label, target in links:
+        if target is None:
+            href = rel_href(current_path, module_index_path(module))
+            title = module["title"]
+            summary = "Volte ao mapa completo para escolher outro tema."
+        else:
+            href = rel_href(current_path, module_chapter_path(module, target))
+            title = target["title"]
+            summary = target["summary"]
+        items.append(f"""
+<a href="{escape(href)}">
+  <span>{escape(label)}</span>
+  <strong>{escape(title)}</strong>
+  <small>{escape(summary)}</small>
+</a>
+""")
+    return f"""
+<section class="chapter-flow" aria-label="Continuar leitura">
+  {''.join(items)}
+</section>
+"""
+
+
 def render_chapter_page(module: dict, chapter: dict, sources: dict, layout_func) -> str:
     path = module_chapter_path(module, chapter)
     sibling_links = "".join(
-        f'<a href="{escape(rel_href(path, module_chapter_path(module, item)))}" class="{ "active" if item["id"] == chapter["id"] else "" }">{escape(item["title"])}</a>'
-        for item in module["chapters"]
+        f'<a href="{escape(rel_href(path, module_chapter_path(module, item)))}" class="{ "active" if item["id"] == chapter["id"] else "" }"><span>{index:02d}</span>{escape(item["title"])}</a>'
+        for index, item in enumerate(module["chapters"], start=1)
     )
     source_blocks = []
     chapter_nav = []
@@ -2065,8 +2122,9 @@ def render_chapter_page(module: dict, chapter: dict, sources: dict, layout_func)
   <div>
     {''.join(chapter_nav)}
     <a href="#analise">Analise, aplicacao e prova</a>
-  </div>
+    </div>
 </section>
+{render_chapter_flow(module, chapter, path)}
 <section class="law-reader-grid">
   <aside class="law-sidebar">
     <strong>Capitulos</strong>
@@ -2078,6 +2136,7 @@ def render_chapter_page(module: dict, chapter: dict, sources: dict, layout_func)
   <div class="law-reader-main">
     {''.join(source_blocks)}
     {render_analysis(chapter)}
+    {render_chapter_flow(module, chapter, path)}
   </div>
 </section>
 """
@@ -2246,6 +2305,7 @@ def render_module_index(module: dict, sources: dict, layout_func) -> str:
     <p>Esta pagina complementa a estrutura aprovada e preserva a pagina principal ja publicada.</p>
   </div>
 </section>
+{render_module_study_path(module, path)}
 {render_module_topic_index(module, path)}
 <section class="section-wrap">
   <div class="section-heading">

@@ -5,7 +5,9 @@ from __future__ import annotations
 
 import json
 import re
+import unicodedata
 from html import escape
+from html.parser import HTMLParser
 from pathlib import Path
 
 from legal_modules import (
@@ -34,6 +36,14 @@ from state_legal_pages import (
 ROOT = Path(__file__).resolve().parents[1]
 CATALOG = ROOT / "data" / "portal_catalog.json"
 INVENTORY = ROOT / "data" / "legal_inventory.json"
+
+FULL_SEARCH_STOPWORDS = {
+    "a", "o", "as", "os", "um", "uma", "uns", "umas", "de", "da", "do", "das", "dos",
+    "e", "ou", "em", "no", "na", "nos", "nas", "por", "para", "com", "sem", "sob",
+    "sobre", "ao", "aos", "à", "às", "que", "se", "sua", "seu", "suas", "seus",
+    "este", "esta", "estes", "estas", "esse", "essa", "ser", "sera", "serao", "sao",
+    "nos", "termos",
+}
 
 STATE_DISPLAY_NAMES = {
     "AC": "Acre",
@@ -1008,6 +1018,18 @@ def layout(path: str, title: str, subtitle: str, body: str, active: str = "") ->
         f'<a href="{prefix}{href}" class="{ "active" if key == active else "" }">{label}</a>'
         for href, label, key in nav
     )
+    study_links = [
+        ("federal/legislacao/index.html", "Leis federais"),
+        ("estados/index.html", "ICMS por Estado"),
+        ("federal/beneficios-federais.html", "Benefícios"),
+        ("federal/legislacao/reforma-tributaria/index.html", "Reforma"),
+        ("federal/legislacao/reforma-tributaria/cst-cclasstrib-ibs-cbs.html", "CST/cClassTrib"),
+        ("confaz/index.html", "CONFAZ"),
+    ]
+    study_html = "".join(
+        f'<a href="{prefix}{href}">{label}</a>'
+        for href, label in study_links
+    )
     return f"""<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -1035,10 +1057,14 @@ def layout(path: str, title: str, subtitle: str, body: str, active: str = "") ->
       </nav>
     </div>
     <div class="searchbar" role="search">
-      <label for="globalSearch">Buscar no portal</label>
-      <input id="globalSearch" type="search" placeholder="Ex.: cBenef Goias, DIRBI, Convênio ICMS, Lucro Real">
+      <label for="globalSearch">Buscar em todo o portal</label>
+      <input id="globalSearch" type="search" placeholder="Busque lei, artigo, benefício, CST, NCM, Estado, regime ou termo parcial">
       <div id="searchResults" class="search-results" aria-live="polite"></div>
     </div>
+    <nav class="study-strip" aria-label="Trilhas rápidas de estudo">
+      <strong>Trilhas</strong>
+      <div>{study_html}</div>
+    </nav>
   </header>
   <main>
     {body}
@@ -1977,6 +2003,117 @@ def biblioteca(data: dict) -> str:
     return layout("biblioteca/index.html", "Biblioteca viva", "Manuais e painel preservados.", body, "biblioteca")
 
 
+class FullSearchTextParser(HTMLParser):
+    skip_tags = {"script", "style", "head", "svg"}
+    block_tags = {"p", "div", "section", "article", "li", "tr", "td", "th", "h1", "h2", "h3", "h4", "br"}
+
+    def __init__(self) -> None:
+        super().__init__()
+        self.parts: list[str] = []
+        self.skip_stack: list[str] = []
+        self.h1_parts: list[str] = []
+        self.in_h1 = False
+        self.meta_description = ""
+
+    def handle_starttag(self, tag: str, attrs: list[tuple[str, str | None]]) -> None:
+        tag = tag.lower()
+        attrs_map = {name.lower(): value or "" for name, value in attrs}
+        if tag in self.skip_tags:
+            self.skip_stack.append(tag)
+        if tag == "meta" and attrs_map.get("name", "").lower() == "description":
+            self.meta_description = attrs_map.get("content", "")
+        if tag == "h1" and not self.skip_stack:
+            self.in_h1 = True
+        if tag in self.block_tags and not self.skip_stack:
+            self.parts.append("\n")
+
+    def handle_endtag(self, tag: str) -> None:
+        tag = tag.lower()
+        if tag == "h1":
+            self.in_h1 = False
+        if tag in self.skip_stack:
+            while self.skip_stack:
+                current = self.skip_stack.pop()
+                if current == tag:
+                    break
+        if tag in self.block_tags and not self.skip_stack:
+            self.parts.append("\n")
+
+    def handle_data(self, data: str) -> None:
+        if self.skip_stack or not data.strip():
+            return
+        self.parts.append(data)
+        if self.in_h1:
+            self.h1_parts.append(data)
+
+    def visible_text(self) -> str:
+        text = " ".join("".join(self.parts).split())
+        return text.strip()
+
+    def title(self, fallback: str) -> str:
+        h1 = " ".join(" ".join(self.h1_parts).split()).strip()
+        return h1 or fallback
+
+
+def normalize_search_text(value: str) -> str:
+    normalized = unicodedata.normalize("NFKD", value or "")
+    ascii_text = normalized.encode("ascii", "ignore").decode("ascii")
+    ascii_text = ascii_text.lower()
+    ascii_text = re.sub(r"[^a-z0-9]+", " ", ascii_text)
+    return re.sub(r"\s+", " ", ascii_text).strip()
+
+
+def compact_search_terms(text: str) -> str:
+    seen: set[str] = set()
+    terms: list[str] = []
+    for token in normalize_search_text(text).split():
+        if len(token) < 2 or token in FULL_SEARCH_STOPWORDS or token in seen:
+            continue
+        seen.add(token)
+        terms.append(token)
+    return " ".join(terms)
+
+
+def search_summary(text: str, meta: str) -> str:
+    base = " ".join((meta or text).split())
+    if len(base) <= 230:
+        return base
+    return base[:227].rsplit(" ", 1)[0] + "..."
+
+
+def full_text_search_entries() -> list[dict[str, str]]:
+    entries: list[dict[str, str]] = []
+    for html_path in sorted(ROOT.rglob("*.html")):
+        if ".git" in html_path.parts or ".codex-screenshots" in html_path.parts:
+            continue
+        rel = html_path.relative_to(ROOT).as_posix()
+        if rel.startswith("assets/"):
+            continue
+        raw = html_path.read_text(encoding="utf-8", errors="ignore")
+        parser = FullSearchTextParser()
+        parser.feed(raw)
+        text = parser.visible_text()
+        if len(text) < 80:
+            continue
+        title_match = re.search(r"<title>(.*?)</title>", raw, flags=re.I | re.S)
+        fallback_title = re.sub(r"\s+", " ", title_match.group(1)).strip() if title_match else rel
+        title = parser.title(fallback_title)
+        terms = compact_search_terms(text)
+        if not terms:
+            continue
+        kind = "Texto legal" if "/legislacao/" in rel else "Página"
+        if "/fontes/" in rel or "/atos/" in rel:
+            kind = "Ato em tela"
+        entries.append({
+            "title": title,
+            "url": rel,
+            "summary": search_summary(text, parser.meta_description),
+            "tags": terms,
+            "kind": kind,
+        })
+    return entries
+
+
 def search_index(data: dict) -> str:
     entries = [
         {"title": data["site"]["title"], "url": "index.html", "summary": data["site"]["subtitle"], "tags": "portal tributario aberto"}
@@ -2086,6 +2223,7 @@ def main() -> None:
     for state_legal_path, state_legal_content in build_state_legal_pages(layout, data).items():
         write(state_legal_path, state_legal_content)
     write("assets/portal-search.js", search_index(data))
+    write("assets/portal-search-full.json", json.dumps(full_text_search_entries(), ensure_ascii=False, separators=(",", ":")))
     print("Portal generated successfully.")
 
 

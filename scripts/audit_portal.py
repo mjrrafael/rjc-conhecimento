@@ -137,6 +137,19 @@ def audit_search_entries(parsed: dict[Path, PageParser]) -> list[str]:
         entries = json.loads(raw[len(prefix):].rstrip(";"))
     except json.JSONDecodeError as exc:
         return [f"indice de busca invalido: {exc}"]
+    full_path = ROOT / "assets" / "portal-search-full.json"
+    if not full_path.exists():
+        errors.append("indice de busca integral ausente: assets/portal-search-full.json")
+    else:
+        try:
+            full_entries = json.loads(full_path.read_text(encoding="utf-8", errors="ignore"))
+        except json.JSONDecodeError as exc:
+            errors.append(f"indice de busca integral invalido: {exc}")
+            full_entries = []
+        if not isinstance(full_entries, list):
+            errors.append("indice de busca integral em formato inesperado")
+            full_entries = []
+        entries = entries + full_entries
     known = set(parsed)
     for index, entry in enumerate(entries):
         title = entry.get("title", "")

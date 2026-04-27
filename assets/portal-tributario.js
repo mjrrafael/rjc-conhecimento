@@ -68,7 +68,8 @@
     var title = normalize(entry.title);
     var summary = normalize(entry.summary);
     var tags = normalize(entry.tags);
-    var haystack = [title, summary, tags].join(" ");
+    var body = normalize(entry.body || entry.terms || "");
+    var haystack = [title, summary, tags, body].join(" ");
     var words = uniqueWords(haystack);
     var score = 0;
     for (var i = 0; i < queryTokens.length; i += 1) {
@@ -77,6 +78,7 @@
       if (!partScore) return 0;
       if (title.indexOf(token) >= 0) partScore += 8;
       if (tags.indexOf(token) >= 0) partScore += 3;
+      if (body.indexOf(token) >= 0) partScore += 1;
       score += partScore;
     }
     return score;
@@ -110,6 +112,58 @@
     return "../".repeat(depth);
   }
 
+  var fullSearchState = {
+    loaded: false,
+    loading: false,
+    failed: false,
+    entries: []
+  };
+
+  function loadFullSearch(prefix, callback) {
+    if (fullSearchState.loaded || fullSearchState.loading || fullSearchState.failed) {
+      if (callback) callback();
+      return;
+    }
+    if (!window.fetch) {
+      fullSearchState.failed = true;
+      if (callback) callback();
+      return;
+    }
+    fullSearchState.loading = true;
+    fetch(prefix + "assets/portal-search-full.json", { cache: "force-cache" })
+      .then(function (response) {
+        if (!response.ok) throw new Error("search index");
+        return response.json();
+      })
+      .then(function (entries) {
+        fullSearchState.entries = Array.isArray(entries) ? entries : [];
+        fullSearchState.loaded = true;
+      })
+      .catch(function () {
+        fullSearchState.failed = true;
+      })
+      .finally(function () {
+        fullSearchState.loading = false;
+        if (callback) callback();
+      });
+  }
+
+  function rankedHits(entries, queryTokens, limit) {
+    var byUrl = {};
+    entries.forEach(function (entry) {
+      var score = scoreEntry(entry, queryTokens);
+      if (!score) return;
+      var existing = byUrl[entry.url];
+      if (!existing || score > existing.score) {
+        byUrl[entry.url] = { entry: entry, score: score };
+      }
+    });
+    return Object.keys(byUrl)
+      .map(function (url) { return byUrl[url]; })
+      .sort(function (a, b) { return b.score - a.score; })
+      .slice(0, limit);
+  }
+
   function bindGlobalSearch() {
     var input = document.getElementById("globalSearch");
     var results = document.getElementById("searchResults");
@@ -122,23 +176,22 @@
       results.innerHTML = "";
     }
 
-    input.addEventListener("input", function () {
+    function renderFullSearch() {
       var queryTokens = tokens(input.value);
       if (!queryTokens.length) {
         closeResults();
         return;
       }
 
-      var hits = window.RJC_SEARCH
-        .map(function (entry) {
-          return { entry: entry, score: scoreEntry(entry, queryTokens) };
-        })
-        .filter(function (hit) { return hit.score > 0; })
-        .sort(function (a, b) { return b.score - a.score; })
-        .slice(0, 12);
+      if (input.value.trim().length >= 2 && !fullSearchState.loaded && !fullSearchState.loading && !fullSearchState.failed) {
+        loadFullSearch(prefix, renderFullSearch);
+      }
 
+      var hits = rankedHits(window.RJC_SEARCH.concat(fullSearchState.entries), queryTokens, 18);
       if (!hits.length) {
-        results.innerHTML = '<div class="search-result"><strong>Nenhum resultado direto</strong><span>Tente por pedaços do termo: veic, eletro, inform, cbenef, difal, presum.</span></div>';
+        results.innerHTML = fullSearchState.loading
+          ? '<div class="search-result search-status"><strong>Buscando no texto integral</strong><span>Carregando o índice completo das leis, atos e capítulos publicados.</span></div>'
+          : '<div class="search-result"><strong>Nenhum resultado direto</strong><span>Tente por pedaços do termo: veic, eletro, inform, cbenef, difal, presum.</span></div>';
         results.classList.add("open");
         return;
       }
@@ -148,9 +201,14 @@
         return '<a class="search-result" href="' + prefix + entry.url + '">' +
           '<strong>' + escapeHtml(entry.title) + '</strong>' +
           '<span>' + escapeHtml(entry.summary) + '</span>' +
+          (entry.kind ? '<em>' + escapeHtml(entry.kind) + '</em>' : '') +
           '</a>';
-      }).join("");
+      }).join("") + (fullSearchState.loading ? '<div class="search-result search-status"><strong>Ampliando busca</strong><span>Incluindo termos do texto integral da legislação.</span></div>' : '');
       results.classList.add("open");
+    }
+
+    input.addEventListener("input", function () {
+      window.setTimeout(renderFullSearch, 0);
     });
 
     document.addEventListener("click", function (event) {
