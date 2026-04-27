@@ -3924,7 +3924,11 @@
         {
           "module_id": "state-pr",
           "module_title": "Paraná: ICMS e benefícios fiscais em tela",
-          "chapters": []
+          "chapters": [
+            "documentos-efd-prova",
+            "mapa-revisado-beneficios",
+            "fiscalizacao-riscos"
+          ]
         }
       ]
     },
@@ -3952,7 +3956,11 @@
         {
           "module_id": "state-pr",
           "module_title": "Paraná: ICMS e benefícios fiscais em tela",
-          "chapters": []
+          "chapters": [
+            "documentos-efd-prova",
+            "mapa-revisado-beneficios",
+            "fiscalizacao-riscos"
+          ]
         }
       ]
     },
@@ -3980,7 +3988,11 @@
         {
           "module_id": "state-pr",
           "module_title": "Paraná: ICMS e benefícios fiscais em tela",
-          "chapters": []
+          "chapters": [
+            "documentos-efd-prova",
+            "mapa-revisado-beneficios",
+            "fiscalizacao-riscos"
+          ]
         }
       ]
     },
@@ -4042,7 +4054,13 @@
         {
           "module_id": "state-pr",
           "module_title": "Paraná: ICMS e benefícios fiscais em tela",
-          "chapters": []
+          "chapters": [
+            "base-aliquota-apuracao",
+            "beneficios-matriz-lc160",
+            "creditos-exportacao-acumulado",
+            "diferimento-regimes-especiais",
+            "mapa-revisado-beneficios"
+          ]
         }
       ]
     },

@@ -2281,9 +2281,9 @@ STANDARD_STATE_SOURCE_SETS = {
         "law": ["PR_LEI_11580_1996_ICMS"],
         "ricms": ["PR_DEC_7871_2017_RICMS"],
         "benefits_sources": ["PR_DEC_7871_2017_RICMS", "PR_PORTAL_BENEFICIOS_GERAIS"],
-        "program_sources": ["PR_PROGRAMA_PARANA_COMPETITIVO", "PR_DEC_7871_2017_RICMS"],
+        "program_sources": ["PR_PROGRAMA_PARANA_COMPETITIVO", "PR_DEC_7721_2024_PARANA_COMPETITIVO", "PR_DEC_7871_2017_RICMS"],
         "st_sources": ["PR_DEC_7871_2017_RICMS"],
-        "docs_sources": ["PR_DEC_7871_2017_RICMS"],
+        "docs_sources": ["PR_CODIGO_BENEFICIO_FISCAL", "PR_TABELA_CBENEF_CST", "PR_NPF_53_2018_CBENEF", "PR_DEC_7871_2017_RICMS"],
         "fund_name": "Paraná Competitivo, SISCRED e condições de transferência de créditos",
         "program_name": "Paraná Competitivo, crédito presumido, dilação de prazo e investimento produtivo",
     },
@@ -3199,7 +3199,7 @@ def render_chunks(text: str, doc_id: str, chunk_size: int = 30000) -> str:
 STATE_ARTICLE_RE = re.compile(r"(?mi)^\s*(?:Art\.?|Artigo)\s*(\d+(?:-[A-Za-z])?)\s*(?:º|°|o)?\s*(?:[-–.]|\b)")
 
 
-def clean_law_segment(text: str, limit: int = 12000) -> str:
+def clean_law_segment(text: str, limit: int | None = 12000) -> str:
     lines = []
     for line in text.splitlines():
         stripped = line.strip()
@@ -3221,12 +3221,175 @@ def clean_law_segment(text: str, limit: int = 12000) -> str:
         lines.append(line.rstrip())
     cleaned = "\n".join(lines).strip()
     cleaned = re.sub(r"\n{4,}", "\n\n\n", cleaned)
-    if len(cleaned) > limit:
+    if limit is not None and len(cleaned) > limit:
         cleaned = cleaned[:limit].rsplit("\n", 1)[0].strip() + "\n\n[continua na fonte integral em tela]"
     return cleaned
 
 
-def article_segments(doc: dict, numbers: list[str], max_segments_per_article: int = 4) -> list[tuple[str, str]]:
+def split_complete_segment(label: str, segment: str, chunk_size: int = 900_000) -> list[tuple[str, str]]:
+    if len(segment) <= chunk_size:
+        return [(label, segment)]
+    chunks: list[tuple[str, str]] = []
+    start = 0
+    index = 1
+    while start < len(segment):
+        end = min(start + chunk_size, len(segment))
+        if end < len(segment):
+            window = segment[start:end]
+            numbered_items = [start + match.start() for match in re.finditer(r"\n\d{1,3}\s+", window)]
+            natural = max(
+                segment.rfind("\nITEM ", start, end),
+                segment.rfind("\nArt. ", start, end),
+                segment.rfind("\n\n", start, end),
+                segment.rfind("\n", start, end),
+                max(numbered_items) if numbered_items else -1,
+            )
+            if natural > start + 20_000:
+                end = natural
+        chunk = segment[start:end].strip()
+        if chunk:
+            chunks.append((f"{label} - parte {index}", chunk))
+            index += 1
+        start = end
+    return chunks
+
+
+def expand_complete_segments(segments: list[tuple[str, str]], chunk_size: int = 900_000) -> list[tuple[str, str]]:
+    expanded: list[tuple[str, str]] = []
+    for label, segment in segments:
+        expanded.extend(split_complete_segment(label, segment, chunk_size=chunk_size))
+    return expanded
+
+
+def nearby_law_heading(text: str, start: int) -> str:
+    window = text[max(0, start - 3500):start]
+    headings: list[str] = []
+    for raw_line in reversed(window.splitlines()):
+        line = re.sub(r"\s+", " ", raw_line).strip()
+        if not line:
+            continue
+        low = normalize(line)
+        if low.startswith(("anexo ", "titulo ", "capitulo ", "secao ", "subsecao ")):
+            headings.append(line)
+        if len(headings) >= 2:
+            break
+    return " · ".join(reversed(headings))
+
+
+def keyword_article_segments(
+    doc: dict,
+    keywords: list[str],
+    max_segments: int = 8,
+    per_segment_limit: int | None = None,
+) -> list[tuple[str, str]]:
+    matches = list(STATE_ARTICLE_RE.finditer(doc["text"]))
+    normalized_needles = [normalize(keyword) for keyword in keywords]
+    segments: list[tuple[str, str]] = []
+    seen: set[str] = set()
+    for index, match in enumerate(matches):
+        end = matches[index + 1].start() if index + 1 < len(matches) else len(doc["text"])
+        block = doc["text"][match.start():end]
+        low = normalize(block)
+        if not any(needle in low for needle in normalized_needles):
+            continue
+        cleaned = clean_law_segment(block, limit=per_segment_limit)
+        if len(cleaned) < 80:
+            continue
+        fingerprint = normalize(cleaned[:900])
+        if fingerprint in seen:
+            continue
+        seen.add(fingerprint)
+        context = nearby_law_heading(doc["text"], match.start())
+        label = f"{context} · Art. {match.group(1)}" if context else f"Art. {match.group(1)}"
+        segments.append((label, cleaned))
+        if len(segments) >= max_segments:
+            break
+    return segments
+
+
+def top_level_heading_positions(text: str) -> list[tuple[int, str, str]]:
+    positions: list[tuple[int, str, str]] = []
+    offset = 0
+    for raw_line in text.splitlines(keepends=True):
+        line = raw_line.strip()
+        low = normalize(line)
+        is_anexo_heading = bool(re.fullmatch(r"anexo\s+(?:[ivxlcdm]+|unico)", low)) and not low.startswith("subanexo ")
+        is_other_heading = low.startswith(("titulo ", "capitulo "))
+        if is_anexo_heading or is_other_heading:
+            positions.append((offset, line, low))
+        offset += len(raw_line)
+    return positions
+
+
+def heading_segments(doc: dict, specs: list[tuple[str, str, str]]) -> list[tuple[str, str]]:
+    text = doc["text"]
+    positions = top_level_heading_positions(text)
+    segments: list[tuple[str, str]] = []
+    for label, heading_low, confirmation_low in specs:
+        scoped_positions = [item for item in positions if item[2].startswith("anexo ")] if heading_low.startswith("anexo ") else positions
+        for index, (start, _line, low) in enumerate(scoped_positions):
+            if low != heading_low:
+                continue
+            preview = normalize(text[start:start + 900])
+            if confirmation_low and confirmation_low not in preview:
+                continue
+            end = scoped_positions[index + 1][0] if index + 1 < len(scoped_positions) else len(text)
+            block = clean_law_segment(text[start:end], limit=None)
+            if block:
+                segments.append((label, block))
+            break
+    return segments
+
+
+PR_RICMS_HEADING_SEGMENTS: dict[str, list[tuple[str, str, str]]] = {
+    "isencoes-reducoes-creditos": [
+        ("Anexo V - Isenções", "anexo v", "das isencoes"),
+        ("Anexo VI - Redução na base de cálculo", "anexo vi", "reducao na base de calculo"),
+        ("Anexo VII - Crédito presumido", "anexo vii", "credito presumido"),
+    ],
+    "diferimento-regimes-especiais": [
+        ("Anexo VIII - Suspensão e diferimento", "anexo viii", "suspensao e do diferimento"),
+    ],
+    "st-antecipacao-segmentos": [
+        ("Anexo IX - Substituição tributária", "anexo ix", "substituicao tributaria"),
+    ],
+    "mapa-revisado-beneficios": [
+        ("Anexo V - Isenções", "anexo v", "das isencoes"),
+        ("Anexo VI - Redução na base de cálculo", "anexo vi", "reducao na base de calculo"),
+        ("Anexo VII - Crédito presumido", "anexo vii", "credito presumido"),
+        ("Anexo VIII - Suspensão e diferimento", "anexo viii", "suspensao e do diferimento"),
+    ],
+}
+
+
+def pr_complete_law_segments(doc: dict, ref: dict, chapter: dict) -> list[tuple[str, str]]:
+    source_id = doc.get("source_id", "")
+    if doc["chars"] <= 80_000 and source_id != "PR_DEC_7871_2017_RICMS":
+        return [("Texto integral do ato", clean_law_segment(doc["text"], limit=None))]
+    if source_id == "PR_DEC_7871_2017_RICMS":
+        segments = heading_segments(doc, PR_RICMS_HEADING_SEGMENTS.get(chapter["id"], []))
+        if segments:
+            return expand_complete_segments(segments)
+    if ref.get("articles"):
+        segments = []
+        for label, segment in article_segments(doc, ref["articles"], max_segments_per_article=8, segment_limit=None):
+            segments.append((label, segment))
+        return expand_complete_segments(segments)
+    if ref.get("keywords"):
+        segments = keyword_article_segments(doc, ref["keywords"], max_segments=10, per_segment_limit=None)
+        if segments:
+            return expand_complete_segments(segments)
+    fallback_keywords = [chapter["title"], chapter["summary"]]
+    segments = keyword_article_segments(doc, fallback_keywords, max_segments=4, per_segment_limit=None)
+    return expand_complete_segments(segments)
+
+
+def article_segments(
+    doc: dict,
+    numbers: list[str],
+    max_segments_per_article: int = 4,
+    segment_limit: int | None = 14000,
+) -> list[tuple[str, str]]:
     matches = list(STATE_ARTICLE_RE.finditer(doc["text"]))
     wanted = {number.upper() for number in numbers}
     by_number: dict[str, list[str]] = {number.upper(): [] for number in numbers}
@@ -3235,7 +3398,7 @@ def article_segments(doc: dict, numbers: list[str], max_segments_per_article: in
         if number not in wanted:
             continue
         end = matches[index + 1].start() if index + 1 < len(matches) else len(doc["text"])
-        block = clean_law_segment(doc["text"][match.start():end], limit=14000)
+        block = clean_law_segment(doc["text"][match.start():end], limit=segment_limit)
         if len(block) < 80:
             continue
         if block in by_number[number]:
@@ -4109,7 +4272,9 @@ def configured_law_blocks(current_path: str, uf: str, docs: tuple[dict, ...], ch
         if not doc:
             continue
         segments: list[tuple[str, str]] = []
-        if ref.get("articles"):
+        if uf == "PR":
+            segments = pr_complete_law_segments(doc, ref, chapter)
+        elif ref.get("articles"):
             segments = article_segments(doc, ref["articles"])
         elif ref.get("full_text"):
             if doc["chars"] <= 28000:
