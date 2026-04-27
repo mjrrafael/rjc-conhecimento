@@ -3197,6 +3197,9 @@ def render_chunks(text: str, doc_id: str, chunk_size: int = 30000) -> str:
 
 
 STATE_ARTICLE_RE = re.compile(r"(?mi)^\s*(?:Art\.?|Artigo)\s*(\d+(?:-[A-Za-z])?)\s*(?:º|°|o)?\s*(?:[-–.]|\b)")
+INLINE_STATE_ARTICLE_RE = re.compile(
+    "(?<![A-Za-z\\u00c0-\\u00ff])Art\\.?\\s*(\\d+(?:-[A-Za-z])?)\\s*(?:[\\u00ba\\u00b0o])?\\s*[-\\u2013]"
+)
 
 
 def clean_law_segment(text: str, limit: int | None = 12000) -> str:
@@ -3224,6 +3227,29 @@ def clean_law_segment(text: str, limit: int | None = 12000) -> str:
     if limit is not None and len(cleaned) > limit:
         cleaned = cleaned[:limit].rsplit("\n", 1)[0].strip() + "\n\n[continua na fonte integral em tela]"
     return cleaned
+
+
+def format_inline_law_text(text: str) -> str:
+    if not text:
+        return text
+    lines = text.splitlines()
+    longest_line = max((len(line) for line in lines), default=0)
+    if longest_line < 2500:
+        return text
+    value = text
+    value = re.sub(
+        r"(?<!\n)(?<!^)(?=(?:Art\.|Artigo)\s*\d+(?:-[A-Za-z])?\s*(?:[º°o])?\s*[-–])",
+        "\n\n",
+        value,
+    )
+    value = re.sub(r"(?<!\n)(?=NOTA(?:\s+\d{2})?\s*-)", "\n", value)
+    value = re.sub(r"(?<!\n)(?=(?:[IVXLCDM]{1,8}|[a-z])\s+-\s)", "\n", value)
+    value = re.sub(r"\n{4,}", "\n\n\n", value)
+    return value.strip()
+
+
+def clean_complete_law_segment(text: str) -> str:
+    return format_inline_law_text(clean_law_segment(text, limit=None))
 
 
 def split_complete_segment(label: str, segment: str, chunk_size: int = 900_000) -> list[tuple[str, str]]:
@@ -3259,6 +3285,68 @@ def expand_complete_segments(segments: list[tuple[str, str]], chunk_size: int = 
     for label, segment in segments:
         expanded.extend(split_complete_segment(label, segment, chunk_size=chunk_size))
     return expanded
+
+
+def normalized_index(text: str, needle: str, start: int = 0) -> int:
+    return normalize(text).find(normalize(needle), start)
+
+
+def segment_between_needles(
+    doc: dict,
+    label: str,
+    start_needle: str,
+    end_needles: list[str],
+    min_size: int = 120,
+) -> list[tuple[str, str]]:
+    text = doc["text"]
+    low = normalize(text)
+    start = low.find(normalize(start_needle))
+    if start < 0:
+        return []
+    end = len(text)
+    for needle in end_needles:
+        pos = low.find(normalize(needle), start + max(20, len(start_needle) // 2))
+        if pos > start:
+            end = min(end, pos)
+    segment = clean_complete_law_segment(text[start:end])
+    if len(segment) < min_size:
+        return []
+    return [(label, segment)]
+
+
+def inline_article_segments(
+    doc: dict,
+    numbers: list[str],
+    label_prefix: str = "",
+    span_start: int = 0,
+    span_end: int | None = None,
+    max_segments_per_article: int = 1,
+) -> list[tuple[str, str]]:
+    text = doc["text"]
+    span_end = span_end if span_end is not None else len(text)
+    matches = [
+        match for match in INLINE_STATE_ARTICLE_RE.finditer(text)
+        if span_start <= match.start() < span_end
+    ]
+    wanted = {number.upper() for number in numbers}
+    collected: dict[str, list[str]] = {number.upper(): [] for number in numbers}
+    for index, match in enumerate(matches):
+        number = match.group(1).upper()
+        if number not in wanted:
+            continue
+        end = matches[index + 1].start() if index + 1 < len(matches) else span_end
+        block = clean_complete_law_segment(text[match.start():end])
+        if len(block) < 80:
+            continue
+        if block in collected[number]:
+            continue
+        collected[number].append(block)
+    segments: list[tuple[str, str]] = []
+    for number in numbers:
+        for block in collected.get(number.upper(), [])[:max_segments_per_article]:
+            label = f"{label_prefix} · Art. {number}" if label_prefix else f"Art. {number}"
+            segments.append((label, block))
+    return segments
 
 
 def nearby_law_heading(text: str, start: int) -> str:
@@ -3382,6 +3470,129 @@ def pr_complete_law_segments(doc: dict, ref: dict, chapter: dict) -> list[tuple[
     fallback_keywords = [chapter["title"], chapter["summary"]]
     segments = keyword_article_segments(doc, fallback_keywords, max_segments=4, per_segment_limit=None)
     return expand_complete_segments(segments)
+
+
+def rs_complete_law_segments(doc: dict, ref: dict, chapter: dict) -> list[tuple[str, str]]:
+    source_id = doc.get("source_id", "")
+    if source_id != "RS_DEC_37699_1997_RICMS":
+        return expand_complete_segments([("Texto integral do ato", clean_complete_law_segment(doc["text"]))])
+
+    text = doc["text"]
+    livro_i = normalized_index(text, "LIVRO IDA OBRIGAÇÃO PRINCIPAL")
+    livro_ii = normalized_index(text, "LIVRO IIDAS OBRIGAÇÕES ACESSÓRIAS")
+    livro_iii = normalized_index(text, "LIVRO IIIDA SUBSTITUIÇÃO TRIBUTÁRIA")
+    livro_iv = normalized_index(text, "LIVRO IVDA FISCALIZAÇÃO DO IMPOSTO")
+    livro_v = normalized_index(text, "LIVRO VDAS DISPOSIÇÕES TRANSITÓRIAS E FINAIS")
+    apendices = normalized_index(text, "APÊNDICES APÊNDICE I")
+    livro_i_end = livro_ii if livro_ii > 0 else len(text)
+    livro_ii_end = livro_iii if livro_iii > 0 else len(text)
+    livro_iii_end = livro_iv if livro_iv > 0 else len(text)
+    livro_iv_end = livro_v if livro_v > 0 else len(text)
+
+    chapter_id = chapter["id"]
+    segments: list[tuple[str, str]] = []
+    if chapter_id == "icms-regra-matriz":
+        segments.extend(inline_article_segments(
+            doc,
+            ["1", "2", "3", "3-A", "4", "5", "6", "7", "8", "11", "12", "13", "14", "15"],
+            "Livro I - regra matriz, incidência, não incidência e sujeito passivo",
+            span_start=max(livro_i, 0),
+            span_end=livro_i_end,
+        ))
+    elif chapter_id == "base-aliquota-apuracao":
+        segments.extend(inline_article_segments(
+            doc,
+            ["16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "37", "38", "38-A", "39", "40", "45", "46", "47", "48", "49", "50"],
+            "Livro I - base de cálculo, alíquotas, apuração e pagamento",
+            span_start=max(livro_i, 0),
+            span_end=livro_i_end,
+        ))
+    elif chapter_id in {"beneficios-matriz-lc160", "isencoes-reducoes-creditos"}:
+        segments.extend(inline_article_segments(
+            doc,
+            ["9", "10", "23", "32", "35"],
+            "Livro I - isenção, redução de base, crédito fiscal presumido e não estorno",
+            span_start=max(livro_i, 0),
+            span_end=livro_i_end,
+        ))
+    elif chapter_id == "creditos-exportacao-acumulado":
+        segments.extend(inline_article_segments(
+            doc,
+            ["11", "30", "31", "31-A", "35", "56", "57", "58", "59", "60"],
+            "Livro I - exportação, crédito, saldo credor e transferência",
+            span_start=max(livro_i, 0),
+            span_end=livro_i_end,
+        ))
+    elif chapter_id == "diferimento-regimes-especiais":
+        segments.extend(inline_article_segments(
+            doc,
+            ["53", "53-A", "53-B", "54", "55"],
+            "Livro I - diferimento e suspensão",
+            span_start=max(livro_i, 0),
+            span_end=livro_i_end,
+        ))
+        if livro_iii > 0:
+            segments.extend(segment_between_needles(
+                doc,
+                "Livro III - diferimento com substituição tributária",
+                "LIVRO IIIDA SUBSTITUIÇÃO TRIBUTÁRIA Título IDO DIFERIMENTO COM SUBSTITUIÇÃO TRIBUTÁRIA",
+                ["Título IIDA SUBSTITUIÇÃO TRIBUTÁRIA EM OPERAÇÕES SUBSEQUENTES", "Título II DA SUBSTITUIÇÃO TRIBUTÁRIA EM OPERAÇÕES SUBSEQUENTES"],
+            ))
+    elif chapter_id == "st-antecipacao-segmentos":
+        if livro_iii > 0:
+            segments.append(("Livro III - substituição tributária, antecipação, MVA e responsabilidade", clean_complete_law_segment(text[livro_iii:livro_iii_end])))
+    elif chapter_id == "documentos-efd-prova":
+        if livro_ii > 0:
+            segments.append(("Livro II - obrigações acessórias, documentos fiscais e escrituração", clean_complete_law_segment(text[livro_ii:livro_ii_end])))
+    elif chapter_id == "fiscalizacao-riscos":
+        if livro_iv > 0:
+            segments.append(("Livro IV - fiscalização do imposto", clean_complete_law_segment(text[livro_iv:livro_iv_end])))
+        segments.extend(inline_article_segments(
+            doc,
+            ["61"],
+            "Livro I - restituição e correção de pagamento indevido",
+            span_start=max(livro_i, 0),
+            span_end=livro_i_end,
+        ))
+    elif chapter_id == "mapa-revisado-beneficios":
+        segments.extend(inline_article_segments(
+            doc,
+            ["9", "10", "23", "32", "35", "53", "54", "55"],
+            "Livro I - mapa legal dos benefícios e tratamentos",
+            span_start=max(livro_i, 0),
+            span_end=livro_i_end,
+        ))
+        if apendices > 0:
+            segments.extend(segment_between_needles(
+                doc,
+                "Apêndice II - mercadorias e operações vinculadas a diferimento e ST",
+                "APÊNDICE II MERCADORIAS SUBMETIDAS AO REGIME DE DIFERIMENTO COM SUBSTITUIÇÃO TRIBUTÁRIA",
+                ["APÊNDICE III", "APÊNDICE IV"],
+            ))
+
+    if not segments and ref.get("articles"):
+        segments = article_segments(doc, ref["articles"], max_segments_per_article=8, segment_limit=None)
+    if not segments and ref.get("keywords"):
+        segments = keyword_article_segments(doc, ref["keywords"], max_segments=10, per_segment_limit=None)
+    if not segments:
+        segments = keyword_article_segments(doc, [chapter["title"], chapter["summary"]], max_segments=4, per_segment_limit=None)
+    return expand_complete_segments(segments)
+
+
+def sc_complete_law_segments(doc: dict, ref: dict, chapter: dict) -> list[tuple[str, str]]:
+    source_id = doc.get("source_id", "")
+    label_by_source = {
+        "SC_RICMS_2001_REGULAMENTO": "RICMS/SC - parte geral em tela",
+        "SC_RICMS_ANEXO_1": "RICMS/SC - Anexo 1 em tela",
+        "SC_RICMS_ANEXO_2_BENEFICIOS": "RICMS/SC - Anexo 2: benefícios fiscais em tela",
+        "SC_RICMS_ANEXO_3_ST": "RICMS/SC - Anexo 3: substituição tributária em tela",
+        "SC_RICMS_ANEXO_5_OBRIGACOES": "RICMS/SC - Anexo 5: obrigações acessórias em tela",
+        "SC_RICMS_ANEXO_6_REGIMES_ESPECIAIS": "RICMS/SC - Anexo 6: regimes especiais em tela",
+        "SC_RICMS_ANEXO_10_CODIGOS": "RICMS/SC - Anexo 10: códigos fiscais em tela",
+        "SC_RICMS_ANEXO_11_NFE": "RICMS/SC - Anexo 11: Nota Fiscal Eletrônica em tela",
+    }
+    label = label_by_source.get(source_id, "Texto integral do ato")
+    return expand_complete_segments([(label, clean_complete_law_segment(doc["text"]))])
 
 
 def article_segments(
@@ -4274,6 +4485,10 @@ def configured_law_blocks(current_path: str, uf: str, docs: tuple[dict, ...], ch
         segments: list[tuple[str, str]] = []
         if uf == "PR":
             segments = pr_complete_law_segments(doc, ref, chapter)
+        elif uf == "RS":
+            segments = rs_complete_law_segments(doc, ref, chapter)
+        elif uf == "SC":
+            segments = sc_complete_law_segments(doc, ref, chapter)
         elif ref.get("articles"):
             segments = article_segments(doc, ref["articles"])
         elif ref.get("full_text"):
