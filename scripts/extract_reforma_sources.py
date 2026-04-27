@@ -148,7 +148,7 @@ def main() -> int:
 
     ccred = workbook_to_text(
         ORIG_DIR / "cCredPres_2025_12_12Public.xlsx",
-        "Tabela de codigos de credito presumido do IBS e da CBS - 12/12/2025",
+        "Tabela de códigos de crédito presumido do IBS e da CBS - 12/12/2025",
         CFF_CRED,
         [
             "A tabela estrutura as hipóteses legais de crédito presumido da LC 214/2025.",

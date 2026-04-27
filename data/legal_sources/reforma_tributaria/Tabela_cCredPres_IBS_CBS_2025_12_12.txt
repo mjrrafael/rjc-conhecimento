@@ -1,4 +1,4 @@
-# Tabela de codigos de credito presumido do IBS e da CBS - 12/12/2025
+# Tabela de códigos de crédito presumido do IBS e da CBS - 12/12/2025
 
 Fonte de publicacao: https://dfe-portal.svrs.rs.gov.br/Nfe/Documentos
 Consulta online: https://dfe-portal.svrs.rs.gov.br/CFF/TabelaCreditoPresumido

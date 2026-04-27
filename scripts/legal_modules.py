@@ -1802,6 +1802,102 @@ def is_table_separator(line: str) -> bool:
     return bool(cells) and all(re.fullmatch(r":?-{3,}:?", cell.strip()) for cell in cells if cell.strip())
 
 
+def row_dict(header: list[str], row: list[str]) -> dict[str, str]:
+    row = row[:len(header)] + [""] * max(0, len(header) - len(row))
+    return {header[index]: row[index].strip() for index in range(len(header))}
+
+
+def flag_label(value: str) -> str:
+    value = value.strip()
+    if value == "1":
+        return "Sim"
+    if value == "0":
+        return "Não"
+    return value or "Não indicado na tabela"
+
+
+def record_field(label: str, value: str, wide: bool = False) -> str:
+    clean = (value or "").strip()
+    if not clean:
+        return ""
+    klass = "record-field wide" if wide else "record-field"
+    return f"""
+<div class="{klass}">
+  <strong>{escape(label)}</strong>
+  <p>{escape(clean)}</p>
+</div>
+"""
+
+
+def render_ccredpres_cards(header: list[str], body_rows: list[list[str]], source_id: str, index: int) -> str:
+    cards = []
+    for row_index, row in enumerate(body_rows, start=1):
+        item = row_dict(header, row)
+        code = item.get("cCredPres", "").strip() or str(row_index)
+        desc = item.get("Descrição", "").strip()
+        if "LC 214/2025" in item and "Descrição" in item:
+            fields = [
+                record_field("Base legal em tela", item.get("LC 214/2025", ""), True),
+                record_field(
+                    "Apropriação",
+                    f"Via NF: {flag_label(item.get('Apropria via NF?', ''))}; "
+                    f"via evento: {flag_label(item.get('Apropria via evento?', ''))}; "
+                    f"deduz no cálculo: {flag_label(item.get('ind_DeduzCredPres', ''))}.",
+                ),
+                record_field(
+                    "Grupos no XML",
+                    f"CBS: {flag_label(item.get('ind_gCBSCredPres', ''))}; "
+                    f"IBS: {flag_label(item.get('ind_gIBSCredPres', ''))}.",
+                ),
+                record_field(
+                    "Alíquota da CBS",
+                    "; ".join(part for part in [item.get("Alíquota CBS", ""), item.get("pAliqCredPresCBS", "")] if part),
+                ),
+                record_field(
+                    "Alíquota do IBS",
+                    "; ".join(part for part in [item.get("Alíquota IBS", ""), item.get("pAliqCredPresIBS", "")] if part),
+                ),
+                record_field("cClass da nota referenciada", item.get("cClass nota referenciada", "")),
+                record_field(
+                    "Vigência geral",
+                    " a ".join(part for part in [item.get("dIniVig", ""), item.get("dFimVig", "") or "sem fim indicado"] if part),
+                ),
+                record_field(
+                    "Vigência por tributo",
+                    f"CBS: {item.get('dIniVigCBS', '') or 'não indicada'} a {item.get('dFimVigCBS', '') or 'sem fim indicado'}; "
+                    f"IBS: {item.get('dIniVigIBS', '') or 'não indicada'} a {item.get('dFimVigIBS', '') or 'sem fim indicado'}.",
+                    True,
+                ),
+            ]
+            title = desc or f"Código {code}"
+        else:
+            fields = [
+                record_field("Base legal em tela", item.get("LC 214/2025", ""), True),
+                record_field("Percentual ou regra de alíquota", item.get("pAliq", "")),
+                record_field("Base de cálculo do crédito", item.get("vBC_CredPres", "")),
+                record_field("Memória de cálculo", item.get("vCred Pres", "")),
+                record_field("Impedimentos e vedações", item.get("Impedimento de CredPres", ""), True),
+            ]
+            title = f"Memória de cálculo do cCredPres {code}"
+        cards.append(f"""
+<section class="legal-record-card" id="{escape(source_id)}-tabela-{index}-codigo-{escape(slug(code))}">
+  <header>
+    <span>cCredPres {escape(code)}</span>
+    <h4>{escape(title)}</h4>
+  </header>
+  <div class="record-fields">
+    {''.join(fields)}
+  </div>
+</section>
+""")
+    return f"""
+<article class="article-block legal-record-block" id="{escape(source_id)}-tabela-{index}">
+  <div class="article-number">Tabela {index} em fichas de leitura</div>
+  <div class="legal-record-list">{''.join(cards)}</div>
+</article>
+"""
+
+
 def render_markdown_table(lines: list[str], source_id: str, index: int) -> str:
     rows = [split_table_row(line) for line in lines if line.strip().startswith("|")]
     rows = [row for row in rows if row and not all(not cell for cell in row)]
@@ -1811,6 +1907,8 @@ def render_markdown_table(lines: list[str], source_id: str, index: int) -> str:
     else:
         header = rows[0] if rows else []
         body_rows = rows[1:]
+    if source_id == "tabela-ccredpres-ibs-cbs":
+        return render_ccredpres_cards(header, body_rows, source_id, index)
     width = len(header)
     head = "".join(f"<th>{escape(cell)}</th>" for cell in header)
     body = []

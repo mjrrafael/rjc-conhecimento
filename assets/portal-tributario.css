@@ -1380,6 +1380,85 @@ a.state-card:hover {
   background: #fffdf8;
 }
 
+.legal-record-block {
+  padding: 0;
+  overflow: hidden;
+}
+
+.legal-record-block .article-number {
+  padding: 14px 16px 0;
+}
+
+.legal-record-list {
+  display: grid;
+  gap: 12px;
+  padding: 14px 16px 16px;
+}
+
+.legal-record-card {
+  display: grid;
+  gap: 12px;
+  padding: 16px;
+  border: 1px solid #eadfce;
+  border-radius: 8px;
+  background: #fffdf8;
+}
+
+.legal-record-card header {
+  display: grid;
+  gap: 4px;
+}
+
+.legal-record-card header span {
+  color: var(--amber);
+  font-size: 0.8rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.legal-record-card h4 {
+  margin: 0;
+  color: var(--navy);
+  font-size: 1rem;
+  line-height: 1.35;
+  overflow-wrap: anywhere;
+}
+
+.record-fields {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.record-field {
+  min-width: 0;
+  padding: 10px 12px;
+  border: 1px solid #f1e8da;
+  border-radius: 8px;
+  background: #ffffff;
+}
+
+.record-field.wide {
+  grid-column: 1 / -1;
+}
+
+.record-field strong {
+  display: block;
+  margin-bottom: 5px;
+  color: var(--navy);
+  font-size: 0.78rem;
+  text-transform: uppercase;
+}
+
+.record-field p {
+  margin: 0;
+  color: #253047;
+  font-size: 0.9rem;
+  line-height: 1.55;
+  overflow-wrap: anywhere;
+  white-space: pre-wrap;
+}
+
 .department-grid.compact {
   margin-top: 16px;
 }
@@ -1622,6 +1701,10 @@ a.state-card:hover {
   .chapter-map {
     align-items: flex-start;
     flex-direction: column;
+  }
+
+  .record-fields {
+    grid-template-columns: 1fr;
   }
 
   .document-actions {
