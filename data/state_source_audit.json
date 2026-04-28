@@ -11,7 +11,7 @@
     "AC": {
       "estado": "Acre",
       "region": "Norte",
-      "curadoria": "revisao_fonte",
+      "curadoria": "aguardando_revisao",
       "publish_deep": false,
       "document_count": 6,
       "publishable_document_count": 6,
@@ -31,7 +31,7 @@
         "texto curto para RICMS/benefícios"
       ],
       "recommendation": "bloquear_publicacao_ate_curadoria",
-      "next_step": "Baixar RICMS e benefícios de ICMS no portal oficial do Acre.",
+      "next_step": "Baixar RICMS e benefÃƒÂ­cios de ICMS no portal oficial do Acre.",
       "documents": [
         {
           "file": "AC_ICMS_ALIQUOTAS.txt",
@@ -179,7 +179,7 @@
     "AL": {
       "estado": "Alagoas",
       "region": "Nordeste",
-      "curadoria": "revisao_fonte",
+      "curadoria": "aguardando_revisao",
       "publish_deep": false,
       "document_count": 3,
       "publishable_document_count": 3,
@@ -194,7 +194,7 @@
         "texto curto para RICMS/benefícios"
       ],
       "recommendation": "bloquear_publicacao_ate_curadoria",
-      "next_step": "Baixar RICMS e benefícios de ICMS no portal oficial de Alagoas.",
+      "next_step": "Baixar RICMS e benefÃƒÂ­cios de ICMS no portal oficial de Alagoas.",
       "documents": [
         {
           "file": "AL_ICMS_LEIS.txt",
@@ -251,7 +251,7 @@
     "AM": {
       "estado": "Amazonas",
       "region": "Norte",
-      "curadoria": "revisao_fonte",
+      "curadoria": "aguardando_revisao",
       "publish_deep": false,
       "document_count": 4,
       "publishable_document_count": 4,
@@ -269,7 +269,7 @@
         "fallback amplo"
       ],
       "recommendation": "bloquear_publicacao_ate_curadoria",
-      "next_step": "Separar Código Tributário, RICMS e benefícios; baixar o regulamento vigente do Amazonas.",
+      "next_step": "Separar CÃƒÂ³digo TributÃƒÂ¡rio, RICMS e benefÃƒÂ­cios; baixar o regulamento vigente do Amazonas.",
       "documents": [
         {
           "file": "AM_DECRETOS.txt",
@@ -363,7 +363,7 @@
     "AP": {
       "estado": "Amapá",
       "region": "Norte",
-      "curadoria": "revisao_fonte",
+      "curadoria": "aguardando_revisao",
       "publish_deep": false,
       "document_count": 7,
       "publishable_document_count": 7,
@@ -383,7 +383,7 @@
         "texto curto para RICMS/benefícios"
       ],
       "recommendation": "bloquear_publicacao_ate_curadoria",
-      "next_step": "Baixar RICMS e benefícios de ICMS no portal oficial do Amapá.",
+      "next_step": "Baixar RICMS e benefÃƒÂ­cios de ICMS no portal oficial do AmapÃƒÂ¡.",
       "documents": [
         {
           "file": "AP_ICMS_ANEXOS.txt",
@@ -552,7 +552,7 @@
       },
       "flags": [],
       "recommendation": "manter_publicado",
-      "next_step": "Bahia publicada como página profunda: Lei do ICMS, RICMS, anexos, substituição tributária, DESENVOLVE, PROIND, PRONAVAL, crédito presumido, informática/eletrônica, atos da LC 160/Convênio 190 e EFD dos incentivos.",
+      "next_step": "Bahia publicada como pÃƒÂ¡gina profunda: Lei do ICMS, RICMS, anexos, substituiÃƒÂ§ÃƒÂ£o tributÃƒÂ¡ria, DESENVOLVE, PROIND, PRONAVAL, crÃƒÂ©dito presumido, informÃƒÂ¡tica/eletrÃƒÂ´nica, atos da LC 160/ConvÃƒÂªnio 190 e EFD dos incentivos.",
       "documents": [
         {
           "file": "BA_LEI_7014_1996_ICMS_2026-04-26.txt",
@@ -814,7 +814,7 @@
     "CE": {
       "estado": "Ceará",
       "region": "Nordeste",
-      "curadoria": "revisao_fonte",
+      "curadoria": "aguardando_revisao",
       "publish_deep": false,
       "document_count": 8,
       "publishable_document_count": 8,
@@ -834,7 +834,7 @@
         "fonte local sem URL oficial no cabeçalho"
       ],
       "recommendation": "bloquear_publicacao_ate_curadoria",
-      "next_step": "Baixar RICMS, decretos modificadores e benefícios no portal oficial do Ceará.",
+      "next_step": "Baixar RICMS, decretos modificadores e benefÃƒÂ­cios no portal oficial do CearÃƒÂ¡.",
       "documents": [
         {
           "file": "CE_DECRETOS.txt",
@@ -1025,7 +1025,7 @@
       },
       "flags": [],
       "recommendation": "manter_publicado",
-      "next_step": "Distrito Federal publicado como página profunda: Lei do ICMS, RICMS, Cadernos do Anexo I, Anexo IV, LC 160/Convênio 190, regime especial de apuração, crédito outorgado, EMPREGA-DF, PRÓ-DF II, Desenvolve-DF, diferimento agro e EFD ICMS/IPI.",
+      "next_step": "Distrito Federal publicado como pÃƒÂ¡gina profunda: Lei do ICMS, RICMS, Cadernos do Anexo I, Anexo IV, LC 160/ConvÃƒÂªnio 190, regime especial de apuraÃƒÂ§ÃƒÂ£o, crÃƒÂ©dito outorgado, EMPREGA-DF, PRÃƒâ€œ-DF II, Desenvolve-DF, diferimento agro e EFD ICMS/IPI.",
       "documents": [
         {
           "file": "DF_LEI_1254_1996_ICMS_2026-04-26.txt",
@@ -1250,7 +1250,7 @@
       },
       "flags": [],
       "recommendation": "manter_publicado",
-      "next_step": "Espírito Santo publicado como página profunda: Lei nº 7.000/2001, RICMS/ES, COMPETE/ES, INVEST-ES, FUNDAP, cBenef, isenção, redução de base, crédito presumido, diferimento, ST, EFD e prova fiscal.",
+      "next_step": "EspÃƒÂ­rito Santo publicado como pÃƒÂ¡gina profunda: Lei nÃ‚Âº 7.000/2001, RICMS/ES, COMPETE/ES, INVEST-ES, FUNDAP, cBenef, isenÃƒÂ§ÃƒÂ£o, reduÃƒÂ§ÃƒÂ£o de base, crÃƒÂ©dito presumido, diferimento, ST, EFD e prova fiscal.",
       "documents": [
         {
           "file": "ES_LEI_7000_2001_ICMS_2026-04-26.txt",
@@ -1391,7 +1391,7 @@
     "MA": {
       "estado": "Maranhão",
       "region": "Nordeste",
-      "curadoria": "revisao_fonte",
+      "curadoria": "aguardando_revisao",
       "publish_deep": false,
       "document_count": 10,
       "publishable_document_count": 10,
@@ -1406,7 +1406,7 @@
         "fonte local sem URL oficial no cabeçalho"
       ],
       "recommendation": "bloquear_publicacao_ate_curadoria",
-      "next_step": "Baixar RICMS/MA e anexos de benefícios no portal oficial do Maranhão.",
+      "next_step": "Baixar RICMS/MA e anexos de benefÃƒÂ­cios no portal oficial do MaranhÃƒÂ£o.",
       "documents": [
         {
           "file": "MA_ICMS_LEIS.txt",
@@ -1671,7 +1671,7 @@
       },
       "flags": [],
       "recommendation": "manter_publicado",
-      "next_step": "Minas Gerais publicada como página profunda: Lei nº 6.763/1975, Decreto nº 48.589/2023, RICMS/MG 2023, Anexos I a VIII, alíquotas, redução de base, crédito presumido, crédito acumulado, diferimento, ST, EFD e prova fiscal.",
+      "next_step": "Minas Gerais publicada como pÃƒÂ¡gina profunda: Lei nÃ‚Âº 6.763/1975, Decreto nÃ‚Âº 48.589/2023, RICMS/MG 2023, Anexos I a VIII, alÃƒÂ­quotas, reduÃƒÂ§ÃƒÂ£o de base, crÃƒÂ©dito presumido, crÃƒÂ©dito acumulado, diferimento, ST, EFD e prova fiscal.",
       "documents": [
         {
           "file": "MG_LEI_6763_1975_ICMS_2026-04-26.txt",
@@ -1861,7 +1861,7 @@
       },
       "flags": [],
       "recommendation": "manter_publicado",
-      "next_step": "Mato Grosso do Sul publicado como página profunda: Lei nº 1.810/1997, RICMS/MS, Anexos I, II, III, V, VI e XV, LC nº 93/2001, FUNDERSUL, MS-Empreendedor, diferimento, crédito presumido, ST, EFD, parcelamento e prova fiscal.",
+      "next_step": "Mato Grosso do Sul publicado como pÃƒÂ¡gina profunda: Lei nÃ‚Âº 1.810/1997, RICMS/MS, Anexos I, II, III, V, VI e XV, LC nÃ‚Âº 93/2001, FUNDERSUL, MS-Empreendedor, diferimento, crÃƒÂ©dito presumido, ST, EFD, parcelamento e prova fiscal.",
       "documents": [
         {
           "file": "MS_LEI_1810_1997_ICMS_2026-04-26.txt",
@@ -2477,7 +2477,7 @@
       },
       "flags": [],
       "recommendation": "manter_publicado",
-      "next_step": "Mato Grosso publicado como página profunda: Lei do ICMS, RICMS, LC 631/2019, anexos de isenção, redução de base, créditos fiscais, diferimento, PRODEIC, substituição tributária, estimativa simplificada, cBenef e prova fiscal.",
+      "next_step": "Mato Grosso publicado como pÃƒÂ¡gina profunda: Lei do ICMS, RICMS, LC 631/2019, anexos de isenÃƒÂ§ÃƒÂ£o, reduÃƒÂ§ÃƒÂ£o de base, crÃƒÂ©ditos fiscais, diferimento, PRODEIC, substituiÃƒÂ§ÃƒÂ£o tributÃƒÂ¡ria, estimativa simplificada, cBenef e prova fiscal.",
       "documents": [
         {
           "file": "MT_LEI_7098_1998_ICMS_2026-04-26.txt",
@@ -2552,7 +2552,7 @@
     "PA": {
       "estado": "Pará",
       "region": "Norte",
-      "curadoria": "revisao_fonte",
+      "curadoria": "aguardando_revisao",
       "publish_deep": false,
       "document_count": 2,
       "publishable_document_count": 0,
@@ -2572,7 +2572,7 @@
         "fonte local sem URL oficial no cabeçalho"
       ],
       "recommendation": "bloquear_publicacao_ate_reclassificar_escopo",
-      "next_step": "Baixar RICMS/PA e benefícios no portal oficial do Pará.",
+      "next_step": "Baixar RICMS/PA e benefÃƒÂ­cios no portal oficial do ParÃƒÂ¡.",
       "documents": [
         {
           "file": "PA_OUTROS.txt",
@@ -2639,7 +2639,7 @@
     "PB": {
       "estado": "Paraíba",
       "region": "Nordeste",
-      "curadoria": "revisao_fonte",
+      "curadoria": "aguardando_revisao",
       "publish_deep": false,
       "document_count": 1,
       "publishable_document_count": 1,
@@ -2654,7 +2654,7 @@
         "contém Taxas"
       ],
       "recommendation": "bloquear_publicacao_ate_curadoria",
-      "next_step": "Baixar RICMS/PB e benefícios no portal oficial da Paraíba.",
+      "next_step": "Baixar RICMS/PB e benefÃƒÂ­cios no portal oficial da ParaÃƒÂ­ba.",
       "documents": [
         {
           "file": "PB_ICMS_LEIS.txt",
@@ -2689,7 +2689,7 @@
     "PE": {
       "estado": "Pernambuco",
       "region": "Nordeste",
-      "curadoria": "revisao_fonte",
+      "curadoria": "aguardando_revisao",
       "publish_deep": false,
       "document_count": 8,
       "publishable_document_count": 8,
@@ -2707,7 +2707,7 @@
         "texto curto para RICMS/benefícios"
       ],
       "recommendation": "bloquear_publicacao_ate_curadoria",
-      "next_step": "Baixar RICMS/PE e benefícios no portal oficial de Pernambuco.",
+      "next_step": "Baixar RICMS/PE e benefÃƒÂ­cios no portal oficial de Pernambuco.",
       "documents": [
         {
           "file": "PE_ICMS_ALIQUOTAS.txt",
@@ -2858,7 +2858,7 @@
     "PI": {
       "estado": "Piauí",
       "region": "Nordeste",
-      "curadoria": "revisao_fonte",
+      "curadoria": "aguardando_revisao",
       "publish_deep": false,
       "document_count": 9,
       "publishable_document_count": 9,
@@ -2875,7 +2875,7 @@
         "fonte local sem URL oficial no cabeçalho"
       ],
       "recommendation": "bloquear_publicacao_ate_curadoria",
-      "next_step": "Baixar RICMS/PI e benefícios no portal oficial do Piauí.",
+      "next_step": "Baixar RICMS/PI e benefÃƒÂ­cios no portal oficial do PiauÃƒÂ­.",
       "documents": [
         {
           "file": "PI_ICMS_ANEXOS.txt",
@@ -3075,7 +3075,7 @@
       },
       "flags": [],
       "recommendation": "manter_publicado",
-      "next_step": "Paraná publicado como página profunda: Lei nº 11.580/1996, RICMS/PR, benefícios fiscais de caráter geral, Paraná Competitivo, isenção, redução de base, crédito presumido, diferimento, ST, documentos, EFD e prova fiscal.",
+      "next_step": "ParanÃƒÂ¡ publicado como pÃƒÂ¡gina profunda: Lei nÃ‚Âº 11.580/1996, RICMS/PR, benefÃƒÂ­cios fiscais de carÃƒÂ¡ter geral, ParanÃƒÂ¡ Competitivo, isenÃƒÂ§ÃƒÂ£o, reduÃƒÂ§ÃƒÂ£o de base, crÃƒÂ©dito presumido, diferimento, ST, documentos, EFD e prova fiscal.",
       "documents": [
         {
           "file": "PR_LEI_11580_1996_ICMS_2026-04-26.txt",
@@ -3233,7 +3233,7 @@
       },
       "flags": [],
       "recommendation": "manter_publicado",
-      "next_step": "Rio de Janeiro publicado como página profunda: Lei nº 2.657/1996, RICMS/RJ, Manual de Benefícios, FOT/FEEF, Repetro, tratamento setorial industrial, ST, importação, transporte, veículos, combustíveis, EFD, cBenef/cCredPresumido e prova fiscal.",
+      "next_step": "Rio de Janeiro publicado como pÃƒÂ¡gina profunda: Lei nÃ‚Âº 2.657/1996, RICMS/RJ, Manual de BenefÃƒÂ­cios, FOT/FEEF, Repetro, tratamento setorial industrial, ST, importaÃƒÂ§ÃƒÂ£o, transporte, veÃƒÂ­culos, combustÃƒÂ­veis, EFD, cBenef/cCredPresumido e prova fiscal.",
       "documents": [
         {
           "file": "RJ_LEI_2657_1996_ICMS_2026-04-26.txt",
@@ -3680,7 +3680,7 @@
       },
       "flags": [],
       "recommendation": "manter_publicado",
-      "next_step": "RN publicado com RICMS, anexos de isenção, diferimento, crédito presumido, redução de base, antecipação, ST, PROEDI, FUNDERN, Tax Free, cBenef e matriz LC 160.",
+      "next_step": "RN publicado com RICMS, anexos de isenÃƒÂ§ÃƒÂ£o, diferimento, crÃƒÂ©dito presumido, reduÃƒÂ§ÃƒÂ£o de base, antecipaÃƒÂ§ÃƒÂ£o, ST, PROEDI, FUNDERN, Tax Free, cBenef e matriz LC 160.",
       "documents": [
         {
           "file": "RN_DEC_31825_2022_RICMS_GERAL_2026-04-26.txt",
@@ -4010,7 +4010,7 @@
     "RO": {
       "estado": "Rondônia",
       "region": "Norte",
-      "curadoria": "revisao_fonte",
+      "curadoria": "aguardando_revisao",
       "publish_deep": false,
       "document_count": 4,
       "publishable_document_count": 3,
@@ -4029,7 +4029,7 @@
         "fonte local sem URL oficial no cabeçalho"
       ],
       "recommendation": "bloquear_publicacao_ate_reclassificar_escopo",
-      "next_step": "Baixar RICMS/RO e benefícios no portal oficial de Rondônia.",
+      "next_step": "Baixar RICMS/RO e benefÃƒÂ­cios no portal oficial de RondÃƒÂ´nia.",
       "documents": [
         {
           "file": "RO_ICMS_BENEFICIOS.txt",
@@ -4122,7 +4122,7 @@
     "RR": {
       "estado": "Roraima",
       "region": "Norte",
-      "curadoria": "revisao_fonte",
+      "curadoria": "aguardando_revisao",
       "publish_deep": false,
       "document_count": 5,
       "publishable_document_count": 5,
@@ -4141,7 +4141,7 @@
         "texto curto para RICMS/benefícios"
       ],
       "recommendation": "bloquear_publicacao_ate_curadoria",
-      "next_step": "Baixar RICMS/RR e benefícios no portal oficial de Roraima.",
+      "next_step": "Baixar RICMS/RR e benefÃƒÂ­cios no portal oficial de Roraima.",
       "documents": [
         {
           "file": "RR_ICMS_ANEXOS.txt",
@@ -4254,7 +4254,7 @@
       },
       "flags": [],
       "recommendation": "manter_publicado",
-      "next_step": "Rio Grande do Sul publicado como página profunda: Decreto nº 37.699/1997, RICMS/RS integral, AMPARA-RS, importação, crédito presumido, diferimento, ST, documentos, EFD e prova fiscal.",
+      "next_step": "Rio Grande do Sul publicado como pÃƒÂ¡gina profunda: Decreto nÃ‚Âº 37.699/1997, RICMS/RS integral, AMPARA-RS, importaÃƒÂ§ÃƒÂ£o, crÃƒÂ©dito presumido, diferimento, ST, documentos, EFD e prova fiscal.",
       "documents": [
         {
           "file": "RS_DEC_37699_1997_RICMS_2026-04-26.txt",
@@ -4360,7 +4360,7 @@
       },
       "flags": [],
       "recommendation": "manter_publicado",
-      "next_step": "Santa Catarina publicada como página profunda: RICMS/SC, Anexo 2 de benefícios fiscais, Anexo 3 de substituição tributária, Anexo 5 de obrigações acessórias, Anexo 6 de regimes especiais, NF-e e prova fiscal.",
+      "next_step": "Santa Catarina publicada como pÃƒÂ¡gina profunda: RICMS/SC, Anexo 2 de benefÃƒÂ­cios fiscais, Anexo 3 de substituiÃƒÂ§ÃƒÂ£o tributÃƒÂ¡ria, Anexo 5 de obrigaÃƒÂ§ÃƒÂµes acessÃƒÂ³rias, Anexo 6 de regimes especiais, NF-e e prova fiscal.",
       "documents": [
         {
           "file": "SC_RICMS_2001_REGULAMENTO_2026-04-26.txt",
@@ -4503,7 +4503,7 @@
     "SE": {
       "estado": "Sergipe",
       "region": "Nordeste",
-      "curadoria": "revisao_fonte",
+      "curadoria": "aguardando_revisao",
       "publish_deep": false,
       "document_count": 4,
       "publishable_document_count": 4,
@@ -4520,7 +4520,7 @@
         "texto curto para RICMS/benefícios"
       ],
       "recommendation": "bloquear_publicacao_ate_curadoria",
-      "next_step": "Baixar RICMS/SE e benefícios no portal oficial de Sergipe.",
+      "next_step": "Baixar RICMS/SE e benefÃƒÂ­cios no portal oficial de Sergipe.",
       "documents": [
         {
           "file": "SE_ICMS_LEIS.txt",
@@ -4619,7 +4619,7 @@
       },
       "flags": [],
       "recommendation": "manter_publicado",
-      "next_step": "São Paulo publicado como página profunda: Lei nº 6.374/1989, RICMS/2000 integral, Anexos de isenções, reduções e créditos outorgados, substituição tributária, regimes especiais, cBenef, EFD e prova fiscal.",
+      "next_step": "SÃƒÂ£o Paulo publicado como pÃƒÂ¡gina profunda: Lei nÃ‚Âº 6.374/1989, RICMS/2000 integral, Anexos de isenÃƒÂ§ÃƒÂµes, reduÃƒÂ§ÃƒÂµes e crÃƒÂ©ditos outorgados, substituiÃƒÂ§ÃƒÂ£o tributÃƒÂ¡ria, regimes especiais, cBenef, EFD e prova fiscal.",
       "documents": [
         {
           "file": "SP_LEI_6374_1989_ICMS_2026-04-26.txt",
@@ -4694,7 +4694,7 @@
     "TO": {
       "estado": "Tocantins",
       "region": "Norte",
-      "curadoria": "revisao_fonte",
+      "curadoria": "aguardando_revisao",
       "publish_deep": false,
       "document_count": 2,
       "publishable_document_count": 2,
@@ -4709,7 +4709,7 @@
         "texto curto para RICMS/benefícios"
       ],
       "recommendation": "bloquear_publicacao_ate_curadoria",
-      "next_step": "Baixar RICMS/TO e benefícios no portal oficial do Tocantins.",
+      "next_step": "Baixar RICMS/TO e benefÃƒÂ­cios no portal oficial do Tocantins.",
       "documents": [
         {
           "file": "TO_ICMS_ANEXOS.txt",

@@ -303,8 +303,9 @@ def audit_content_pages() -> list[str]:
         if uf == "GO":
             continue
         if not state_is_deep_published(uf):
-            if read_page(state_index_path(uf)):
-                errors.append(f"{uf}: pagina profunda existe apesar de publish_deep=false")
+            review_html = read_page(state_index_path(uf))
+            if review_html and "aguardando revisão" not in review_html.lower():
+                errors.append(f"{uf}: pagina de revisao existe sem selo aguardando revisao")
             continue
         docs = collect_state_documents(uf)
         if not docs:

@@ -5,7 +5,7 @@ Este roteiro transforma cada UF no mesmo padrao aprovado para Goias: texto legal
 ## Estado Da Esteira Em 28/04/2026
 
 - Estados profundos publicados ou aprovados: GO, BA, DF, MT, MS, RN, ES, MG, RJ, SP, PR, RS e SC.
-- Estados bloqueados para publicacao profunda ate nova curadoria: AC, AL, AM, AP, CE, MA, PA, PB, PE, PI, RO, RR, SE e TO.
+- Estados publicados para leitura como `aguardando revisao`, sem conclusao tributaria aprovada ate nova curadoria: AC, AL, AM, AP, CE, MA, PA, PB, PE, PI, RO, RR, SE e TO.
 - Regra de seguranca: pagina estadual estrutural nao significa conteudo completo. A UF so entra como profunda quando RICMS, lei material, beneficios fiscais, atos modificadores e fonte oficial limpa estiverem salvos em texto local, com manifesto e auditoria sem contaminacao por Taxas, IPVA ou ITCD/ITCMD.
 
 ## Regra Editorial

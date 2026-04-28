@@ -190,7 +190,7 @@ def write_markdown(report: dict) -> None:
         f"- Documentos estaduais candidatos a ICMS: {report['summary'].get('docs', 0)}",
         f"- Documentos úteis após teste de escopo: {report['summary'].get('publishable_docs', 0)}",
         f"- Documentos bloqueados por escopo material: {report['summary'].get('scope_blocked_docs', 0)}",
-        f"- Estados bloqueados para publicação profunda: {report['summary'].get('blocked', 0)}",
+        f"- Estados aguardando revisão para aprovação profunda: {report['summary'].get('blocked', 0)}",
         "",
         "## Estados",
         "",
@@ -215,7 +215,7 @@ def write_markdown(report: dict) -> None:
         "",
         "## Regra Editorial Nova",
         "",
-        "Nenhum Estado pode sair de `revisao_fonte` apenas porque existe arquivo chamado RICMS ou ICMS. A curadoria precisa ler o cabeçalho, os documentos-fonte, o índice interno e amostras do texto. Se um bloco de ICMS estiver falando de Taxas, ele deve ser reclassificado, excluído da trilha de ICMS e substituído por fonte limpa antes de qualquer explicação didática.",
+        "Estados em `aguardando_revisao` podem ficar publicados para leitura na web, mas não representam conclusão tributária aprovada. Nenhum Estado sai desse selo apenas porque existe arquivo chamado RICMS ou ICMS. A curadoria precisa ler o cabeçalho, os documentos-fonte, o índice interno e amostras do texto. Se um bloco de ICMS estiver falando de Taxas, ele deve ser reclassificado, excluído da trilha de ICMS e substituído por fonte limpa antes de qualquer explicação didática.",
     ])
     OUT_MD.parent.mkdir(parents=True, exist_ok=True)
     OUT_MD.write_text("\n".join(lines) + "\n", encoding="utf-8", newline="\n")

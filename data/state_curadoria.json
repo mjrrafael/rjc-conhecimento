@@ -1,54 +1,54 @@
 {
   "updated_on": "2026-04-28",
-  "policy": "Conteúdo estadual profundo só pode ser publicado quando RICMS, benefícios fiscais e fontes oficiais estiverem curados, salvos em texto local e revisados contra portal oficial da UF.",
+  "policy": "ConteÃƒÂºdo estadual profundo sÃƒÂ³ pode ser publicado quando RICMS, benefÃƒÂ­cios fiscais e fontes oficiais estiverem curados, salvos em texto local e revisados contra portal oficial da UF.",
   "statuses": {
     "AC": {
       "region": "Norte",
-      "status": "revisao_fonte",
+      "status": "aguardando_revisao",
       "publish_deep": false,
-      "next_step": "Baixar RICMS e benefícios de ICMS no portal oficial do Acre."
+      "next_step": "Baixar RICMS e benefÃƒÂ­cios de ICMS no portal oficial do Acre."
     },
     "AL": {
       "region": "Nordeste",
-      "status": "revisao_fonte",
+      "status": "aguardando_revisao",
       "publish_deep": false,
-      "next_step": "Baixar RICMS e benefícios de ICMS no portal oficial de Alagoas."
+      "next_step": "Baixar RICMS e benefÃƒÂ­cios de ICMS no portal oficial de Alagoas."
     },
     "AP": {
       "region": "Norte",
-      "status": "revisao_fonte",
+      "status": "aguardando_revisao",
       "publish_deep": false,
-      "next_step": "Baixar RICMS e benefícios de ICMS no portal oficial do Amapá."
+      "next_step": "Baixar RICMS e benefÃƒÂ­cios de ICMS no portal oficial do AmapÃƒÂ¡."
     },
     "AM": {
       "region": "Norte",
-      "status": "revisao_fonte",
+      "status": "aguardando_revisao",
       "publish_deep": false,
-      "next_step": "Separar Código Tributário, RICMS e benefícios; baixar o regulamento vigente do Amazonas."
+      "next_step": "Separar CÃƒÂ³digo TributÃƒÂ¡rio, RICMS e benefÃƒÂ­cios; baixar o regulamento vigente do Amazonas."
     },
     "BA": {
       "region": "Nordeste",
       "status": "publicado_v1",
       "publish_deep": true,
-      "next_step": "Bahia publicada como página profunda: Lei do ICMS, RICMS, anexos, substituição tributária, DESENVOLVE, PROIND, PRONAVAL, crédito presumido, informática/eletrônica, atos da LC 160/Convênio 190 e EFD dos incentivos."
+      "next_step": "Bahia publicada como pÃƒÂ¡gina profunda: Lei do ICMS, RICMS, anexos, substituiÃƒÂ§ÃƒÂ£o tributÃƒÂ¡ria, DESENVOLVE, PROIND, PRONAVAL, crÃƒÂ©dito presumido, informÃƒÂ¡tica/eletrÃƒÂ´nica, atos da LC 160/ConvÃƒÂªnio 190 e EFD dos incentivos."
     },
     "CE": {
       "region": "Nordeste",
-      "status": "revisao_fonte",
+      "status": "aguardando_revisao",
       "publish_deep": false,
-      "next_step": "Baixar RICMS, decretos modificadores e benefícios no portal oficial do Ceará."
+      "next_step": "Baixar RICMS, decretos modificadores e benefÃƒÂ­cios no portal oficial do CearÃƒÂ¡."
     },
     "DF": {
       "region": "Centro-Oeste",
       "status": "publicado_v1",
       "publish_deep": true,
-      "next_step": "Distrito Federal publicado como página profunda: Lei do ICMS, RICMS, Cadernos do Anexo I, Anexo IV, LC 160/Convênio 190, regime especial de apuração, crédito outorgado, EMPREGA-DF, PRÓ-DF II, Desenvolve-DF, diferimento agro e EFD ICMS/IPI."
+      "next_step": "Distrito Federal publicado como pÃƒÂ¡gina profunda: Lei do ICMS, RICMS, Cadernos do Anexo I, Anexo IV, LC 160/ConvÃƒÂªnio 190, regime especial de apuraÃƒÂ§ÃƒÂ£o, crÃƒÂ©dito outorgado, EMPREGA-DF, PRÃƒâ€œ-DF II, Desenvolve-DF, diferimento agro e EFD ICMS/IPI."
     },
     "ES": {
       "region": "Sudeste",
       "status": "publicado_v1",
       "publish_deep": true,
-      "next_step": "Espírito Santo publicado como página profunda: Lei nº 7.000/2001, RICMS/ES, COMPETE/ES, INVEST-ES, FUNDAP, cBenef, isenção, redução de base, crédito presumido, diferimento, ST, EFD e prova fiscal."
+      "next_step": "EspÃƒÂ­rito Santo publicado como pÃƒÂ¡gina profunda: Lei nÃ‚Âº 7.000/2001, RICMS/ES, COMPETE/ES, INVEST-ES, FUNDAP, cBenef, isenÃƒÂ§ÃƒÂ£o, reduÃƒÂ§ÃƒÂ£o de base, crÃƒÂ©dito presumido, diferimento, ST, EFD e prova fiscal."
     },
     "GO": {
       "region": "Centro-Oeste",
@@ -58,111 +58,111 @@
     },
     "MA": {
       "region": "Nordeste",
-      "status": "revisao_fonte",
+      "status": "aguardando_revisao",
       "publish_deep": false,
-      "next_step": "Baixar RICMS/MA e anexos de benefícios no portal oficial do Maranhão."
+      "next_step": "Baixar RICMS/MA e anexos de benefÃƒÂ­cios no portal oficial do MaranhÃƒÂ£o."
     },
     "MT": {
       "region": "Centro-Oeste",
       "status": "publicado_v1",
       "publish_deep": true,
-      "next_step": "Mato Grosso publicado como página profunda: Lei do ICMS, RICMS, LC 631/2019, anexos de isenção, redução de base, créditos fiscais, diferimento, PRODEIC, substituição tributária, estimativa simplificada, cBenef e prova fiscal."
+      "next_step": "Mato Grosso publicado como pÃƒÂ¡gina profunda: Lei do ICMS, RICMS, LC 631/2019, anexos de isenÃƒÂ§ÃƒÂ£o, reduÃƒÂ§ÃƒÂ£o de base, crÃƒÂ©ditos fiscais, diferimento, PRODEIC, substituiÃƒÂ§ÃƒÂ£o tributÃƒÂ¡ria, estimativa simplificada, cBenef e prova fiscal."
     },
     "MS": {
       "region": "Centro-Oeste",
       "status": "publicado_v1",
       "publish_deep": true,
-      "next_step": "Mato Grosso do Sul publicado como página profunda: Lei nº 1.810/1997, RICMS/MS, Anexos I, II, III, V, VI e XV, LC nº 93/2001, FUNDERSUL, MS-Empreendedor, diferimento, crédito presumido, ST, EFD, parcelamento e prova fiscal."
+      "next_step": "Mato Grosso do Sul publicado como pÃƒÂ¡gina profunda: Lei nÃ‚Âº 1.810/1997, RICMS/MS, Anexos I, II, III, V, VI e XV, LC nÃ‚Âº 93/2001, FUNDERSUL, MS-Empreendedor, diferimento, crÃƒÂ©dito presumido, ST, EFD, parcelamento e prova fiscal."
     },
     "MG": {
       "region": "Sudeste",
       "status": "publicado_v1",
       "publish_deep": true,
-      "next_step": "Minas Gerais publicada como página profunda: Lei nº 6.763/1975, Decreto nº 48.589/2023, RICMS/MG 2023, Anexos I a VIII, alíquotas, redução de base, crédito presumido, crédito acumulado, diferimento, ST, EFD e prova fiscal."
+      "next_step": "Minas Gerais publicada como pÃƒÂ¡gina profunda: Lei nÃ‚Âº 6.763/1975, Decreto nÃ‚Âº 48.589/2023, RICMS/MG 2023, Anexos I a VIII, alÃƒÂ­quotas, reduÃƒÂ§ÃƒÂ£o de base, crÃƒÂ©dito presumido, crÃƒÂ©dito acumulado, diferimento, ST, EFD e prova fiscal."
     },
     "PA": {
       "region": "Norte",
-      "status": "revisao_fonte",
+      "status": "aguardando_revisao",
       "publish_deep": false,
-      "next_step": "Baixar RICMS/PA e benefícios no portal oficial do Pará."
+      "next_step": "Baixar RICMS/PA e benefÃƒÂ­cios no portal oficial do ParÃƒÂ¡."
     },
     "PB": {
       "region": "Nordeste",
-      "status": "revisao_fonte",
+      "status": "aguardando_revisao",
       "publish_deep": false,
-      "next_step": "Baixar RICMS/PB e benefícios no portal oficial da Paraíba."
+      "next_step": "Baixar RICMS/PB e benefÃƒÂ­cios no portal oficial da ParaÃƒÂ­ba."
     },
     "PR": {
       "region": "Sul",
       "status": "publicado_v1",
       "publish_deep": true,
-      "next_step": "Paraná publicado como página profunda: Lei nº 11.580/1996, RICMS/PR, benefícios fiscais de caráter geral, Paraná Competitivo, isenção, redução de base, crédito presumido, diferimento, ST, documentos, EFD e prova fiscal."
+      "next_step": "ParanÃƒÂ¡ publicado como pÃƒÂ¡gina profunda: Lei nÃ‚Âº 11.580/1996, RICMS/PR, benefÃƒÂ­cios fiscais de carÃƒÂ¡ter geral, ParanÃƒÂ¡ Competitivo, isenÃƒÂ§ÃƒÂ£o, reduÃƒÂ§ÃƒÂ£o de base, crÃƒÂ©dito presumido, diferimento, ST, documentos, EFD e prova fiscal."
     },
     "PE": {
       "region": "Nordeste",
-      "status": "revisao_fonte",
+      "status": "aguardando_revisao",
       "publish_deep": false,
-      "next_step": "Baixar RICMS/PE e benefícios no portal oficial de Pernambuco."
+      "next_step": "Baixar RICMS/PE e benefÃƒÂ­cios no portal oficial de Pernambuco."
     },
     "PI": {
       "region": "Nordeste",
-      "status": "revisao_fonte",
+      "status": "aguardando_revisao",
       "publish_deep": false,
-      "next_step": "Baixar RICMS/PI e benefícios no portal oficial do Piauí."
+      "next_step": "Baixar RICMS/PI e benefÃƒÂ­cios no portal oficial do PiauÃƒÂ­."
     },
     "RJ": {
       "region": "Sudeste",
       "status": "publicado_v1",
       "publish_deep": true,
-      "next_step": "Rio de Janeiro publicado como página profunda: Lei nº 2.657/1996, RICMS/RJ, Manual de Benefícios, FOT/FEEF, Repetro, tratamento setorial industrial, ST, importação, transporte, veículos, combustíveis, EFD, cBenef/cCredPresumido e prova fiscal."
+      "next_step": "Rio de Janeiro publicado como pÃƒÂ¡gina profunda: Lei nÃ‚Âº 2.657/1996, RICMS/RJ, Manual de BenefÃƒÂ­cios, FOT/FEEF, Repetro, tratamento setorial industrial, ST, importaÃƒÂ§ÃƒÂ£o, transporte, veÃƒÂ­culos, combustÃƒÂ­veis, EFD, cBenef/cCredPresumido e prova fiscal."
     },
     "RN": {
       "region": "Nordeste",
       "status": "publicado_v1",
       "publish_deep": true,
-      "next_step": "RN publicado com RICMS, anexos de isenção, diferimento, crédito presumido, redução de base, antecipação, ST, PROEDI, FUNDERN, Tax Free, cBenef e matriz LC 160."
+      "next_step": "RN publicado com RICMS, anexos de isenÃƒÂ§ÃƒÂ£o, diferimento, crÃƒÂ©dito presumido, reduÃƒÂ§ÃƒÂ£o de base, antecipaÃƒÂ§ÃƒÂ£o, ST, PROEDI, FUNDERN, Tax Free, cBenef e matriz LC 160."
     },
     "RS": {
       "region": "Sul",
       "status": "publicado_v1",
       "publish_deep": true,
-      "next_step": "Rio Grande do Sul publicado como página profunda: Decreto nº 37.699/1997, RICMS/RS integral, AMPARA-RS, importação, crédito presumido, diferimento, ST, documentos, EFD e prova fiscal."
+      "next_step": "Rio Grande do Sul publicado como pÃƒÂ¡gina profunda: Decreto nÃ‚Âº 37.699/1997, RICMS/RS integral, AMPARA-RS, importaÃƒÂ§ÃƒÂ£o, crÃƒÂ©dito presumido, diferimento, ST, documentos, EFD e prova fiscal."
     },
     "RO": {
       "region": "Norte",
-      "status": "revisao_fonte",
+      "status": "aguardando_revisao",
       "publish_deep": false,
-      "next_step": "Baixar RICMS/RO e benefícios no portal oficial de Rondônia."
+      "next_step": "Baixar RICMS/RO e benefÃƒÂ­cios no portal oficial de RondÃƒÂ´nia."
     },
     "RR": {
       "region": "Norte",
-      "status": "revisao_fonte",
+      "status": "aguardando_revisao",
       "publish_deep": false,
-      "next_step": "Baixar RICMS/RR e benefícios no portal oficial de Roraima."
+      "next_step": "Baixar RICMS/RR e benefÃƒÂ­cios no portal oficial de Roraima."
     },
     "SC": {
       "region": "Sul",
       "status": "publicado_v1",
       "publish_deep": true,
-      "next_step": "Santa Catarina publicada como página profunda: RICMS/SC, Anexo 2 de benefícios fiscais, Anexo 3 de substituição tributária, Anexo 5 de obrigações acessórias, Anexo 6 de regimes especiais, NF-e e prova fiscal."
+      "next_step": "Santa Catarina publicada como pÃƒÂ¡gina profunda: RICMS/SC, Anexo 2 de benefÃƒÂ­cios fiscais, Anexo 3 de substituiÃƒÂ§ÃƒÂ£o tributÃƒÂ¡ria, Anexo 5 de obrigaÃƒÂ§ÃƒÂµes acessÃƒÂ³rias, Anexo 6 de regimes especiais, NF-e e prova fiscal."
     },
     "SP": {
       "region": "Sudeste",
       "status": "publicado_v1",
       "publish_deep": true,
-      "next_step": "São Paulo publicado como página profunda: Lei nº 6.374/1989, RICMS/2000 integral, Anexos de isenções, reduções e créditos outorgados, substituição tributária, regimes especiais, cBenef, EFD e prova fiscal."
+      "next_step": "SÃƒÂ£o Paulo publicado como pÃƒÂ¡gina profunda: Lei nÃ‚Âº 6.374/1989, RICMS/2000 integral, Anexos de isenÃƒÂ§ÃƒÂµes, reduÃƒÂ§ÃƒÂµes e crÃƒÂ©ditos outorgados, substituiÃƒÂ§ÃƒÂ£o tributÃƒÂ¡ria, regimes especiais, cBenef, EFD e prova fiscal."
     },
     "SE": {
       "region": "Nordeste",
-      "status": "revisao_fonte",
+      "status": "aguardando_revisao",
       "publish_deep": false,
-      "next_step": "Baixar RICMS/SE e benefícios no portal oficial de Sergipe."
+      "next_step": "Baixar RICMS/SE e benefÃƒÂ­cios no portal oficial de Sergipe."
     },
     "TO": {
       "region": "Norte",
-      "status": "revisao_fonte",
+      "status": "aguardando_revisao",
       "publish_deep": false,
-      "next_step": "Baixar RICMS/TO e benefícios no portal oficial do Tocantins."
+      "next_step": "Baixar RICMS/TO e benefÃƒÂ­cios no portal oficial do Tocantins."
     }
   }
 }

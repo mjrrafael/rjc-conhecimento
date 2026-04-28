@@ -2891,17 +2891,67 @@ def state_has_legal_pack(uf: str) -> bool:
     return state_is_deep_published(uf) and bool(publishable_state_documents(uf))
 
 
+def state_is_reviewing(uf: str) -> bool:
+    return uf != "GO" and not state_is_deep_published(uf)
+
+
+def review_suffix(uf: str) -> str:
+    return " (aguardando revisão)" if state_is_reviewing(uf) else ""
+
+
+def doc_review_flags(doc: dict) -> list[str]:
+    flags: list[str] = []
+    if doc.get("scope_blocked"):
+        flags.append("escopo material a revisar")
+    if doc.get("fallback_icms"):
+        flags.append("categoria ampla")
+    if not doc.get("named_icms"):
+        flags.append("classificação a confirmar")
+    flags.extend(str(flag) for flag in doc.get("scope_flags", []))
+    return sorted(set(flags))
+
+
+def state_review_notice(uf: str, current_path: str, doc: dict | None = None) -> str:
+    if not state_is_reviewing(uf):
+        return ""
+    name = STATE_NAMES.get(uf, uf)
+    flags = doc_review_flags(doc) if doc else []
+    flag_html = ""
+    if flags:
+        flag_html = "<p><strong>Pontos de revisão:</strong> " + escape("; ".join(flags[:6])) + ".</p>"
+    return f"""
+<section class="content-block review-notice searchable-card"
+         data-search="{escape(uf + ' ' + name + ' aguardando revisão curadoria fonte ICMS benefícios fiscais')}">
+  <span class="eyebrow">Aguardando revisão</span>
+  <h2>Publicado para leitura, ainda não para conclusão</h2>
+  <p>Esta página foi aberta na web para facilitar a auditoria do conteúdo. Leia a legislação em tela, compare com o portal oficial do Estado e trate qualquer aplicação prática como pendente até a revisão fonte a fonte.</p>
+  {flag_html}
+  <div class="signal-law-links">
+    <strong>Conferência</strong>
+    <div>
+      <a href="{escape(STATE_OFFICIAL_PORTALS.get(uf, '#'))}" target="_blank" rel="noopener">portal oficial do Estado</a>
+      <a href="{escape(rel_href(current_path, index_path(uf)))}">índice estadual</a>
+      <a href="{escape(rel_href(current_path, state_page_path(uf)))}">página da UF</a>
+    </div>
+  </div>
+</section>
+"""
+
+
 def render_doc_links(current_path: str, uf: str, docs: list[dict]) -> str:
     if not docs:
         return '<p class="empty-note">Não há texto de ICMS selecionado para este tema nesta remessa.</p>'
     links = []
     for doc in docs:
+        badge = '<em class="review-pill">aguardando revisão</em>' if state_is_reviewing(uf) else ""
+        flags = doc_review_flags(doc)
+        flag_text = f"; revisão: {'; '.join(flags[:3])}" if flags else ""
         links.append(f"""
 <a class="source-card searchable-card" href="{escape(rel_href(current_path, source_path(uf, doc)))}"
    data-search="{escape(doc['title'] + ' ' + doc['file'] + ' ' + doc['category_label'])}">
-  <span>{escape(doc['category_label'])}</span>
+  <span>{escape(doc['category_label'])}{badge}</span>
   <strong>{escape(doc['title'])}</strong>
-  <small>{fmt_num(doc['chars'])} caracteres em tela; {escape(doc['file'])}</small>
+  <small>{fmt_num(doc['chars'])} caracteres em tela; {escape(doc['file'])}{escape(flag_text)}</small>
 </a>
 """)
     return f'<div class="source-grid">{"".join(links)}</div>'
@@ -4770,6 +4820,15 @@ def render_configured_state_pages(uf: str, docs: tuple[dict, ...], layout_func) 
 def render_index_page(uf: str, docs: list[dict], layout_func) -> str:
     name = STATE_NAMES.get(uf, uf)
     current = index_path(uf)
+    reviewing = state_is_reviewing(uf)
+    status_label = f"{uf} · aguardando revisão" if reviewing else uf
+    title_suffix = review_suffix(uf)
+    source_title = "Material em revisão" if reviewing else "Fonte pública"
+    source_text = (
+        "Textos abertos para leitura e conferência na web. A aplicação prática depende de revisão contra o portal oficial do Estado."
+        if reviewing
+        else "Texto extraído dos atos oficiais baixados dos portais estaduais. O link do portal do ente fica indicado em cada página."
+    )
     cards = []
     for group in GROUP_DEFS:
         docs_for_group = group_docs(docs, group)
@@ -4785,15 +4844,16 @@ def render_index_page(uf: str, docs: list[dict], layout_func) -> str:
     body = f"""
 <section class="hero-panel legal-hero">
   <div>
-    <span class="eyebrow">{escape(uf)}</span>
-    <h1>{escape(name)}: legislação de ICMS em tela</h1>
+    <span class="eyebrow">{escape(status_label)}</span>
+    <h1>{escape(name)}: legislação de ICMS em tela{escape(title_suffix)}</h1>
     <p>Regulamento, leis, anexos, benefícios fiscais, substituição tributária, alíquotas e prova documental organizados por assunto.</p>
   </div>
   <aside class="hero-proof">
-    <strong>Fonte pública</strong>
-    <p>Texto extraído dos atos oficiais baixados dos portais estaduais. O link do portal do ente fica indicado em cada página.</p>
+    <strong>{escape(source_title)}</strong>
+    <p>{escape(source_text)}</p>
   </aside>
 </section>
+{state_review_notice(uf, current)}
 <section class="law-ledger">
   <div>
     <h2>Material publicado</h2>
@@ -4825,12 +4885,13 @@ def render_index_page(uf: str, docs: list[dict], layout_func) -> str:
   </div>
 </section>
 """
-    return layout_func(current, f"{name}: legislação de ICMS em tela", f"ICMS, benefícios fiscais e prova de {name}.", body, "estados")
+    return layout_func(current, f"{name}: legislação de ICMS em tela{title_suffix}", f"ICMS, benefícios fiscais e prova de {name}.", body, "estados")
 
 
 def render_group_page(uf: str, docs: list[dict], group: dict, layout_func) -> str:
     name = STATE_NAMES.get(uf, uf)
     current = group_path(uf, group["id"])
+    title_suffix = review_suffix(uf)
     matched = group_docs(docs, group)
     benefit_results = benefit_sector_results(matched) if group["id"] == "beneficios" else []
     benefit_sector_html = ""
@@ -4839,7 +4900,7 @@ def render_group_page(uf: str, docs: list[dict], group: dict, layout_func) -> st
     body = f"""
 <section class="hero-panel legal-hero">
   <div>
-    <span class="eyebrow">{escape(name)}</span>
+    <span class="eyebrow">{escape(name + title_suffix)}</span>
     <h1>{escape(group['title'])}</h1>
     <p>{escape(group['summary'])}</p>
   </div>
@@ -4848,6 +4909,7 @@ def render_group_page(uf: str, docs: list[dict], group: dict, layout_func) -> st
     <p>{escape(group['lesson'])}</p>
   </aside>
 </section>
+{state_review_notice(uf, current)}
 <section class="law-ledger">
   <div>
     <h2>Textos deste tema</h2>
@@ -4886,24 +4948,32 @@ def render_group_page(uf: str, docs: list[dict], group: dict, layout_func) -> st
   </div>
 </section>
 """
-    return layout_func(current, f"{name}: {group['title']}", group["summary"], body, "estados")
+    return layout_func(current, f"{name}: {group['title']}{title_suffix}", group["summary"], body, "estados")
 
 
 def render_source_page(uf: str, doc: dict, layout_func) -> str:
     name = STATE_NAMES.get(uf, uf)
     current = source_path(uf, doc)
+    title_suffix = review_suffix(uf)
+    file_status = "Arquivo aguardando revisão" if state_is_reviewing(uf) else "Arquivo publicado"
+    intro = (
+        "Texto integral em tela para leitura e revisão pública de ICMS. A aplicação prática depende da conferência da fonte."
+        if state_is_reviewing(uf)
+        else "Texto integral em tela para leitura, estudo, prova e conferência operacional de ICMS."
+    )
     body = f"""
 <section class="hero-panel legal-hero">
   <div>
-    <span class="eyebrow">{escape(doc['category_label'])}</span>
+    <span class="eyebrow">{escape(doc['category_label'] + title_suffix)}</span>
     <h1>{escape(doc['title'])}</h1>
-    <p>Texto integral em tela para leitura, estudo, prova e conferência operacional de ICMS.</p>
+    <p>{escape(intro)}</p>
   </div>
   <aside class="hero-proof">
-    <strong>Arquivo publicado</strong>
+    <strong>{escape(file_status)}</strong>
     <p>{escape(doc['file'])}<br>{fmt_num(doc['chars'])} caracteres</p>
   </aside>
 </section>
+{state_review_notice(uf, current, doc)}
 <section class="law-ledger">
   <div>
     <h2>Origem normativa</h2>
@@ -4933,7 +5003,7 @@ def render_source_page(uf: str, doc: dict, layout_func) -> str:
   {render_chunks(clean_law_segment(doc['text'], limit=max(len(doc['text']) + 1000, 12000)), doc['id'])}
 </section>
 """
-    return layout_func(current, f"{doc['title']} | {name}", f"Texto integral de ICMS de {name}.", body, "estados")
+    return layout_func(current, f"{doc['title']} | {name}{title_suffix}", f"Texto integral de ICMS de {name}.", body, "estados")
 
 
 def build_state_legal_pages(layout_func, data: dict) -> dict[str, str]:
@@ -4942,10 +5012,16 @@ def build_state_legal_pages(layout_func, data: dict) -> dict[str, str]:
         uf = state["uf"]
         if uf == "GO":
             continue
-        if not state_is_deep_published(uf):
-            continue
-        docs = publishable_state_documents(uf)
+        reviewing = state_is_reviewing(uf)
+        docs = collect_state_documents(uf) if reviewing else publishable_state_documents(uf)
         if not docs:
+            continue
+        if reviewing:
+            pages[index_path(uf)] = render_index_page(uf, list(docs), layout_func)
+            for group in GROUP_DEFS:
+                pages[group_path(uf, group["id"])] = render_group_page(uf, list(docs), group, layout_func)
+            for doc in docs:
+                pages[source_path(uf, doc)] = render_source_page(uf, doc, layout_func)
             continue
         if uf == "BA":
             pages.update(render_ba_pages(docs, layout_func))
@@ -5030,6 +5106,28 @@ def state_legislation_teaser(uf: str, current_path: str) -> str:
     else:
         if not state_is_deep_published(uf):
             step = state_curation(uf).get("next_step", "Curadoria fonte-a-fonte pendente.")
+            docs = collect_state_documents(uf)
+            if docs:
+                links = [
+                    (f"{STATE_NAMES.get(uf, uf)}: índice aguardando revisão", index_path(uf)),
+                    ("ICMS completo", group_path(uf, "icms")),
+                    ("benefícios fiscais", group_path(uf, "beneficios")),
+                    ("alíquotas e base", group_path(uf, "aliquotas")),
+                    ("substituição tributária", group_path(uf, "st")),
+                    ("documentos, SPED e prova", group_path(uf, "prova")),
+                ]
+                rendered = "".join(
+                    f'<a href="{escape(rel_href(current_path, target))}">{escape(label)}</a>'
+                    for label, target in links
+                )
+                return f"""
+<section class="continuity legal-continuity">
+  <h2>Legislação em tela (aguardando revisão)</h2>
+  <p>O material candidato deste Estado foi publicado para leitura na web. Use como bancada de auditoria: leia, compare com a fonte oficial e só depois transforme em conclusão aplicada.</p>
+  <div>{rendered}</div>
+  <p>{escape(step)}</p>
+</section>
+"""
             manifest = state_source_manifest(uf)
             if manifest:
                 manifest_path = state_source_manifest_path(uf)
@@ -5188,12 +5286,12 @@ def state_legal_search_entries(data: dict) -> list[dict[str, str]]:
         uf = state["uf"]
         if uf == "GO":
             continue
-        if not state_is_deep_published(uf):
-            continue
-        docs = publishable_state_documents(uf)
+        reviewing = state_is_reviewing(uf)
+        docs = collect_state_documents(uf) if reviewing else publishable_state_documents(uf)
         if not docs:
             continue
         name = STATE_NAMES.get(uf, uf)
+        title_suffix = review_suffix(uf)
         if uf == "BA":
             entries.append({
                 "title": "Bahia: ICMS e benefícios fiscais em tela",
@@ -5342,17 +5440,17 @@ def state_legal_search_entries(data: dict) -> list[dict[str, str]]:
                     })
             continue
         entries.append({
-            "title": f"{name}: legislação de ICMS em tela",
+            "title": f"{name}: legislação de ICMS em tela{title_suffix}",
             "url": index_path(uf),
             "summary": f"RICMS, leis, anexos, benefícios fiscais, alíquotas, ST e prova documental de {name}.",
-            "tags": f"{uf} {name} ICMS RICMS benefícios fiscais alíquotas ST",
+            "tags": f"{uf} {name} ICMS RICMS benefícios fiscais alíquotas ST aguardando revisão",
         })
         for group in GROUP_DEFS:
             entries.append({
-                "title": f"{name}: {group['title']}",
+                "title": f"{name}: {group['title']}{title_suffix}",
                 "url": group_path(uf, group["id"]),
                 "summary": group["summary"],
-                "tags": f"{uf} {name} {group['title']} ICMS benefícios fiscais",
+                "tags": f"{uf} {name} {group['title']} ICMS benefícios fiscais aguardando revisão",
             })
         beneficios_group = group_by_id("beneficios")
         for result in benefit_sector_results(group_docs(docs, beneficios_group)):

@@ -24,9 +24,13 @@ from state_legal_pages import (
     CONFIGURED_STATE_CHAPTERS,
     STATE_OFFICIAL_PORTALS,
     build_state_legal_pages,
+    collect_state_documents,
     configured_chapter_path,
     configured_chapters,
     configured_profile,
+    index_path,
+    rel_href,
+    source_path,
     state_curation,
     state_has_legal_pack,
     state_legal_search_entries,
@@ -38,6 +42,7 @@ from state_legal_pages import (
 ROOT = Path(__file__).resolve().parents[1]
 CATALOG = ROOT / "data" / "portal_catalog.json"
 INVENTORY = ROOT / "data" / "legal_inventory.json"
+STATE_SOURCE_AUDIT = ROOT / "data" / "state_source_audit.json"
 
 FULL_SEARCH_STOPWORDS = {
     "a", "o", "as", "os", "um", "uma", "uns", "umas", "de", "da", "do", "das", "dos",
@@ -685,13 +690,13 @@ def state_card_markup(state: dict, data: dict) -> str:
     elif state_has_legal_pack(state["uf"]):
         status = "ICMS em tela publicado"
     elif inv.get("file_count", 0):
-        status = "Estrutura pronta para expansão"
+        status = "Aguardando revisão"
     else:
-        status = "Página em estruturação"
+        status = "Aguardando revisão"
     coverage = (
         "RICMS, leis, anexos e benefícios em tela"
         if state_has_legal_pack(state["uf"])
-        else "Texto legal estadual em preparacao"
+        else "Material aberto para leitura e revisão"
         if inv.get("file_count", 0)
         else state["coverage"]
     )
@@ -715,7 +720,7 @@ def state_queue_card(state: dict, current_path: str) -> str:
     next_step = curation.get("next_step", "Curadoria fonte-a-fonte pendente.")
     portal = STATE_OFFICIAL_PORTALS.get(uf, "")
     deep = state_has_legal_pack(uf)
-    status_label = "Publicado em profundidade" if deep else "Pendente de curadoria profunda"
+    status_label = "Publicado em profundidade" if deep else "Aguardando revisão"
     status_class = "is-ready" if deep else "is-pending"
     page_href = local_state_href(uf)
     portal_link = (
@@ -735,7 +740,7 @@ def state_queue_card(state: dict, current_path: str) -> str:
   </div>
   <p>{escape(next_step)}</p>
   <div class="state-queue-links">
-    <a href="{escape(page_href)}">página estadual</a>
+    <a href="{escape(page_href)}">ler na web</a>
     {portal_link}
   </div>
 </article>
@@ -770,15 +775,103 @@ def state_expansion_queue(data: dict) -> str:
   <div class="section-heading">
     <span class="eyebrow">Esteira editorial</span>
     <h2>O que já está profundo e o que ainda exige curadoria</h2>
-    <p>{fmt_num(len(published))} UFs têm legislação em tela por capítulos. {fmt_num(len(pending))} UFs continuam bloqueadas para publicação profunda até que RICMS, benefícios, atos modificadores e fonte oficial limpa sejam conferidos.</p>
+    <p>{fmt_num(len(published))} UFs têm legislação em tela por capítulos. {fmt_num(len(pending))} UFs estão abertas para leitura na web como aguardando revisão, até que RICMS, benefícios, atos modificadores e fonte oficial limpa sejam conferidos.</p>
   </div>
   <div class="continuity">
     <h2>Estados profundos publicados</h2>
-    <div>{''.join(f'<a href="{escape(local_state_href(uf))}">{escape(uf)}</a>' for uf in published)}</div>
+    <div>
+      {''.join(f'<a href="{escape(local_state_href(uf))}">{escape(uf)}</a>' for uf in published)}
+      <a href="auditoria-fontes.html">auditoria fonte a fonte</a>
+    </div>
   </div>
   {pending_html}
 </section>
 """
+
+
+def state_source_audit_page(data: dict) -> str:
+    current = "estados/auditoria-fontes.html"
+    if not STATE_SOURCE_AUDIT.exists():
+        body = """
+<section class="hero-panel legal-hero">
+  <div>
+    <span class="eyebrow">Estados</span>
+    <h1>Auditoria fonte a fonte</h1>
+    <p>A auditoria estadual ainda não foi gerada neste ambiente.</p>
+  </div>
+</section>
+"""
+        return layout(current, "Auditoria fonte a fonte", "Auditoria estadual por UF.", body, "estados")
+    report = json.loads(STATE_SOURCE_AUDIT.read_text(encoding="utf-8"))
+    summary = report.get("summary", {})
+    states_html = []
+    for uf, item in report.get("states", {}).items():
+        docs = item.get("documents", [])
+        local_docs = {doc["file"]: doc for doc in collect_state_documents(uf)} if uf != "GO" else {}
+        flags = item.get("flags") or ["sem alerta automatizado"]
+        state_status = "publicado" if item.get("publish_deep") or uf == "GO" else "aguardando revisão"
+        doc_rows = []
+        for doc in docs:
+            local_doc = local_docs.get(doc.get("file", ""))
+            open_link = ""
+            if local_doc:
+                open_link = f'<a href="{escape(rel_href(current, source_path(uf, local_doc)))}">abrir fonte em tela</a>'
+            source_names = "; ".join(doc.get("source_documents", [])[:3]) or "fonte interna a conferir"
+            doc_flags = "; ".join(doc.get("flags", [])[:5]) or "sem alerta automatizado"
+            doc_rows.append(f"""
+<article class="source-audit-doc searchable-card"
+         data-search="{escape(uf + ' ' + doc.get('file', '') + ' ' + doc.get('category', '') + ' ' + doc_flags)}">
+  <div>
+    <strong>{escape(doc.get('file', 'fonte'))}</strong>
+    <span>{escape(doc.get('category', ''))} · {fmt_num(int(doc.get('chars', 0)))} caracteres · escopo dominante: {escape(doc.get('dominant_scope', ''))}</span>
+  </div>
+  <p>{escape(doc_flags)}</p>
+  <small>{escape(source_names)}</small>
+  <div class="state-queue-links">{open_link}</div>
+</article>
+""")
+        state_index = index_path(uf) if local_docs else state_href(uf)
+        states_html.append(f"""
+<details class="source-audit-state searchable-card" {'open' if state_status == 'aguardando revisão' else ''}>
+  <summary>
+    <strong>{escape(uf)} · {escape(item.get('estado', uf))}</strong>
+    <span>{escape(state_status)} · {fmt_num(int(item.get('document_count', 0)))} documentos · {escape('; '.join(flags[:4]))}</span>
+  </summary>
+  <div class="source-audit-actions">
+    <a href="{escape(rel_href(current, state_href(uf)))}">página estadual</a>
+    <a href="{escape(rel_href(current, state_index))}">índice de leitura</a>
+    <a href="{escape(STATE_OFFICIAL_PORTALS.get(uf, '#'))}" target="_blank" rel="noopener">portal oficial</a>
+  </div>
+  <div class="source-audit-docs">{''.join(doc_rows) if doc_rows else '<p>Sem documentos candidatos nesta auditoria.</p>'}</div>
+</details>
+""")
+    body = f"""
+<section class="hero-panel legal-hero">
+  <div>
+    <span class="eyebrow">Estados · aguardando revisão</span>
+    <h1>Auditoria fonte a fonte</h1>
+    <p>Use esta página como bancada de revisão: abra a fonte em tela, compare com o portal oficial e só então aprove a análise estadual profunda.</p>
+  </div>
+  <aside class="hero-proof">
+    <strong>Escopo auditado</strong>
+    <p>{fmt_num(int(summary.get('states', 0)))} UFs · {fmt_num(int(summary.get('docs', 0)))} documentos candidatos · {fmt_num(int(summary.get('blocked', 0)))} UFs aguardando revisão</p>
+  </aside>
+</section>
+<section class="law-ledger">
+  <div><h2>Como usar</h2><p>Estados marcados como aguardando revisão podem ser lidos na web, mas ainda não devem ser usados como conclusão operacional.</p></div>
+  <div><h2>O que conferir</h2><p>Escopo ICMS, RICMS vigente, anexos de benefícios, atos modificadores, fonte oficial, ruído de extração e contaminação por outros tributos.</p></div>
+  <div><h2>Depois da aprovação</h2><p>O Estado sai do selo aguardando revisão e entra no padrão profundo: lei em tela, análise, aplicação, prova e riscos.</p></div>
+</section>
+<section class="section-wrap source-audit-list">
+  <div class="section-heading">
+    <span class="eyebrow">Leitura por UF</span>
+    <h2>Abra cada fonte sem sair do portal</h2>
+    <p>Os blocos abaixo são deliberadamente explícitos. A ideia é tornar a revisão mais confortável no navegador do que em relatório Markdown.</p>
+  </div>
+  {''.join(states_html)}
+</section>
+"""
+    return layout(current, "Auditoria fonte a fonte", "Auditoria estadual por UF com fontes em tela.", body, "estados")
 
 
 def state_curation_panel(uf: str) -> str:
@@ -794,14 +887,14 @@ def state_curation_panel(uf: str) -> str:
     return f"""
 <section class="content-block state-curation-panel searchable-card"
          data-search="{escape(uf + ' ' + name + ' curadoria ICMS RICMS beneficios fiscais fonte oficial')}">
-  <span class="eyebrow">Curadoria antes da publicação profunda</span>
-  <h2>Como este Estado vira conteúdo completo</h2>
+  <span class="eyebrow">Aguardando revisão</span>
+  <h2>Como revisar este Estado na web</h2>
   <p>{escape(next_step)}</p>
   <div class="department-grid">
-    <article><strong>1. Fonte material</strong><span>Lei do ICMS, RICMS vigente, anexos e decretos modificadores.</span></article>
-    <article><strong>2. Benefícios</strong><span>Isenções, reduções, créditos, diferimentos, regimes, fundos, programas e matriz LC 160/CONFAZ.</span></article>
-    <article><strong>3. Documento e prova</strong><span>NF-e, CT-e, EFD, cBenef ou códigos estaduais, guias, memória de cálculo e obrigação acessória.</span></article>
-    <article><strong>4. Publicação</strong><span>Texto em tela, capítulo temático, análise didática, risco comum e continuidade com Federal, CONFAZ e painel.</span></article>
+    <article><strong>1. Ler na web</strong><span>Abrir o índice estadual, fontes em tela e capítulos candidatos.</span></article>
+    <article><strong>2. Conferir fonte</strong><span>Comparar Lei do ICMS, RICMS, anexos e decretos com o portal oficial.</span></article>
+    <article><strong>3. Separar benefício</strong><span>Isenções, reduções, créditos, diferimentos, regimes, fundos, programas e matriz LC 160/CONFAZ.</span></article>
+    <article><strong>4. Aprovar depois</strong><span>Só após revisão a página deixa de exibir o selo aguardando revisão.</span></article>
   </div>
   <div class="continuity compact">
     <h2>Fonte de partida</h2>
@@ -1564,7 +1657,7 @@ def state_page(state: dict, data: dict) -> str:
     has_pack = state_has_legal_pack(state["uf"])
     if not inv.get("file_count", 0) and not has_pack:
         body = f"""
-{hero(f'{display_name}: ICMS e benefícios fiscais', 'Página preservada para publicação responsável quando houver texto legal estadual suficiente para leitura pública.', state["uf"])}
+{hero(f'{display_name}: ICMS e benefícios fiscais', 'Página estadual aberta como aguardando revisão, para leitura pública e conferência fonte a fonte antes da aprovação profunda.', state["uf"])}
 {state_legislation_teaser(state["uf"], path)}
 {state_curation_panel(state["uf"])}
 <section class="continuity">
@@ -1895,11 +1988,11 @@ def state_page(state: dict, data: dict) -> str:
 """
         return layout(path, f'{display_name}: ICMS e benefícios fiscais', "ICMS estadual em tela por UF.", body, "estados")
     body = f"""
-{hero(f'{display_name}: ICMS e benefícios fiscais', 'Página estadual em curadoria fonte-a-fonte: RICMS, benefícios, alíquotas, ST, atos infralegais e prova só entram depois de revisão contra fonte pública vigente.', state["uf"])}
+{hero(f'{display_name}: ICMS e benefícios fiscais', 'Página estadual aberta como aguardando revisão: RICMS, benefícios, alíquotas, ST, atos infralegais e prova podem ser lidos na web antes da aprovação profunda.', state["uf"])}
 <section class="law-ledger">
   <div>
     <h2>Estado do estudo</h2>
-    <p>Página estadual em revisão. O texto legal profundo anterior foi bloqueado até substituição por fonte pública limpa e vigente.</p>
+    <p>Página estadual aguardando revisão. O material disponível deve ser lido como bancada de conferência, não como conclusão tributária aprovada.</p>
   </div>
   <div>
     <h2>Primeira pergunta</h2>
@@ -2280,7 +2373,7 @@ def search_index(data: dict) -> str:
                 if state["uf"] == "GO"
                 else "Página estadual com legislação de ICMS em tela, benefícios, documento e prova."
                 if state_has_legal_pack(state["uf"])
-                else "Página estadual estruturada para futura publicação por UF, com foco em ICMS, benefícios, documento e prova."
+                else "Página estadual aberta como aguardando revisão, com material de ICMS, benefícios, documento e prova para leitura na web."
             ),
             "tags": f'{state["uf"]} {state["name"]} {state_display_name(state)} ICMS beneficios fiscais RICMS ' + " ".join(inventory_state(data, state["uf"]).get("categories", []))
         }
@@ -2345,6 +2438,7 @@ def main() -> None:
     audit(data)
     write("index.html", home(data))
     write("estados/index.html", estados_index(data))
+    write("estados/auditoria-fontes.html", state_source_audit_page(data))
     for state in data["states"]:
         write(state_href(state["uf"]), state_page(state, data))
     write("federal/index.html", federal_index(data))
