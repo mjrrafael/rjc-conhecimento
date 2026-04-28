@@ -184,6 +184,15 @@ a {
   font-size: 0.9rem;
 }
 
+.search-result small {
+  display: block;
+  margin-top: 5px;
+  color: #64748b;
+  font-size: 0.76rem;
+  font-weight: 750;
+  overflow-wrap: anywhere;
+}
+
 .search-result em {
   display: inline-flex;
   margin-top: 7px;
@@ -433,6 +442,96 @@ a.state-card:hover {
   margin-top: 14px;
   color: var(--green);
   font-weight: 800;
+}
+
+.state-expansion-queue {
+  display: grid;
+  gap: 22px;
+}
+
+.state-queue-region {
+  display: grid;
+  gap: 12px;
+}
+
+.state-queue-region h3 {
+  margin: 0;
+  color: var(--navy);
+}
+
+.state-queue-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.state-queue-card {
+  display: grid;
+  gap: 12px;
+  padding: 16px;
+  border: 1px solid var(--line);
+  border-left: 4px solid var(--amber);
+  border-radius: 8px;
+  background: var(--surface);
+}
+
+.state-queue-card.is-ready {
+  border-left-color: var(--green);
+}
+
+.state-queue-head {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 12px;
+  align-items: center;
+}
+
+.state-queue-head .state-symbol {
+  min-height: 54px;
+}
+
+.state-queue-head .state-symbol img {
+  width: 54px;
+  height: 38px;
+}
+
+.state-queue-head strong,
+.state-queue-head span {
+  display: block;
+}
+
+.state-queue-head strong {
+  color: var(--navy);
+}
+
+.state-queue-head span,
+.state-queue-card p {
+  color: var(--muted);
+}
+
+.state-queue-card p {
+  margin: 0;
+}
+
+.state-queue-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.state-queue-links a,
+.state-queue-links span {
+  display: inline-flex;
+  align-items: center;
+  min-height: 30px;
+  padding: 5px 9px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  color: var(--navy);
+  background: var(--paper);
+  font-size: 0.8rem;
+  font-weight: 800;
+  text-decoration: none;
 }
 
 .states-grid {
@@ -1829,6 +1928,7 @@ a.state-card:hover {
   .topic-index-grid,
   .department-grid,
   .source-grid,
+  .state-queue-grid,
   .study-step-grid,
   .chapter-flow {
     grid-template-columns: 1fr 1fr;
@@ -1907,6 +2007,7 @@ a.state-card:hover {
   .article-index-links,
   .department-grid,
   .source-grid,
+  .state-queue-grid,
   .study-step-grid,
   .chapter-flow,
   .document-heading {

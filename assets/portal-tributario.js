@@ -16,6 +16,72 @@
       .filter(function (part) { return part.length >= 2; });
   }
 
+  var SEARCH_SYNONYMS = {
+    aliquota: ["aliquotas", "carga", "percentual"],
+    aliquotas: ["aliquota", "carga", "percentual"],
+    beneficio: ["beneficios", "incentivo", "incentivos", "favor"],
+    beneficios: ["beneficio", "incentivo", "incentivos", "favores"],
+    cbenef: ["codigo beneficio", "codigo de beneficio", "beneficio fiscal"],
+    cclass: ["cclasstrib", "classificacao tributaria"],
+    cclasstrib: ["cclass", "classificacao tributaria"],
+    ccredpres: ["credito presumido", "presumido"],
+    cest: ["substituicao tributaria", "st", "segmento"],
+    cfop: ["operacao fiscal", "natureza operacao"],
+    clt: ["folha", "trabalhista", "empregado", "contrato trabalho"],
+    cofins: ["pis cofins", "contribuicoes"],
+    credito: ["creditos", "aproveitamento", "apropriacao"],
+    creditos: ["credito", "aproveitamento", "apropriacao"],
+    cst: ["codigo situacao tributaria", "tributacao"],
+    difal: ["diferencial aliquotas", "consumidor final"],
+    diferimento: ["diferido", "postergacao", "posterior"],
+    dirbi: ["beneficio federal", "declaracao incentivos"],
+    efd: ["sped", "escrituracao", "arquivo digital"],
+    exportacao: ["exterior", "imunidade", "fim especifico exportacao"],
+    fgts: ["fgts digital", "folha"],
+    ibs: ["reforma tributaria", "cbs", "imposto bens servicos"],
+    importacao: ["importado", "aduaneiro", "desembaraco"],
+    incentivo: ["beneficio", "beneficios", "regime especial"],
+    informatica: ["eletronicos", "tecnologia", "computador"],
+    ipi: ["tipi", "ripi", "industrializacao"],
+    irpj: ["imposto renda pessoa juridica", "lucro real", "lucro presumido"],
+    isencao: ["isento", "isenta", "beneficio", "dispensa"],
+    lc160: ["lei complementar 160", "convenio 190", "confaz"],
+    ncm: ["classificacao fiscal", "mercadoria", "produto"],
+    nf: ["nfe", "nf e", "nota fiscal"],
+    nfe: ["nf e", "nota fiscal eletronica", "xml"],
+    pis: ["pis pasep", "cofins", "contribuicoes"],
+    presumido: ["lucro presumido", "credito presumido"],
+    reducao: ["base reduzida", "reducao de base", "carga efetiva"],
+    regime: ["regime especial", "tratamento tributario"],
+    sped: ["efd", "escrituracao", "arquivo digital"],
+    st: ["substituicao tributaria", "cest", "mva"],
+    suspensao: ["suspenso", "suspensa"],
+    xml: ["nfe", "nf e", "documento fiscal"]
+  };
+
+  function uniqueList(values) {
+    var seen = {};
+    return values.map(normalize).filter(function (value) {
+      if (!value || seen[value]) return false;
+      seen[value] = true;
+      return true;
+    });
+  }
+
+  function queryGroups(value) {
+    return tokens(value).map(function (token) {
+      var related = [token];
+      if (SEARCH_SYNONYMS[token]) related = related.concat(SEARCH_SYNONYMS[token]);
+      Object.keys(SEARCH_SYNONYMS).forEach(function (key) {
+        if (key.indexOf(token) === 0 || token.indexOf(key) === 0) {
+          related.push(key);
+          related = related.concat(SEARCH_SYNONYMS[key]);
+        }
+      });
+      return uniqueList(related);
+    });
+  }
+
   function uniqueWords(value) {
     var seen = {};
     return normalize(value).split(" ").filter(function (word) {
@@ -64,31 +130,42 @@
     return 0;
   }
 
-  function scoreEntry(entry, queryTokens) {
+  function scoreEntry(entry, groups) {
     var title = normalize(entry.title);
     var summary = normalize(entry.summary);
     var tags = normalize(entry.tags);
     var body = normalize(entry.body || entry.terms || "");
-    var haystack = [title, summary, tags, body].join(" ");
+    var url = normalize(entry.url);
+    var scope = normalize([entry.kind, entry.jurisdiction, entry.tax, entry.theme].join(" "));
+    var haystack = [title, summary, tags, body, url, scope].join(" ");
     var words = uniqueWords(haystack);
     var score = 0;
-    for (var i = 0; i < queryTokens.length; i += 1) {
-      var token = queryTokens[i];
-      var partScore = tokenScore(token, haystack, words);
-      if (!partScore) return 0;
-      if (title.indexOf(token) >= 0) partScore += 8;
-      if (tags.indexOf(token) >= 0) partScore += 3;
-      if (body.indexOf(token) >= 0) partScore += 1;
-      score += partScore;
+    for (var i = 0; i < groups.length; i += 1) {
+      var bestScore = 0;
+      for (var j = 0; j < groups[i].length; j += 1) {
+        var token = groups[i][j];
+        var partScore = tokenScore(token, haystack, words);
+        if (!partScore) continue;
+        if (title.indexOf(token) >= 0) partScore += 10;
+        if (url.indexOf(token) >= 0) partScore += 5;
+        if (tags.indexOf(token) >= 0) partScore += 4;
+        if (summary.indexOf(token) >= 0) partScore += 3;
+        if (body.indexOf(token) >= 0) partScore += 1;
+        if (partScore > bestScore) bestScore = partScore;
+      }
+      if (!bestScore) return 0;
+      score += bestScore;
     }
     return score;
   }
 
-  function matchesText(text, queryTokens) {
+  function matchesText(text, groups) {
     var normalizedText = normalize(text);
     var words = uniqueWords(normalizedText);
-    return queryTokens.every(function (token) {
-      return tokenScore(token, normalizedText, words) > 0;
+    return groups.every(function (group) {
+      return group.some(function (token) {
+        return tokenScore(token, normalizedText, words) > 0;
+      });
     });
   }
 
@@ -148,10 +225,10 @@
       });
   }
 
-  function rankedHits(entries, queryTokens, limit) {
+  function rankedHits(entries, groups, limit) {
     var byUrl = {};
     entries.forEach(function (entry) {
-      var score = scoreEntry(entry, queryTokens);
+      var score = scoreEntry(entry, groups);
       if (!score) return;
       var existing = byUrl[entry.url];
       if (!existing || score > existing.score) {
@@ -177,8 +254,8 @@
     }
 
     function renderFullSearch() {
-      var queryTokens = tokens(input.value);
-      if (!queryTokens.length) {
+      var groups = queryGroups(input.value);
+      if (!groups.length) {
         closeResults();
         return;
       }
@@ -187,11 +264,11 @@
         loadFullSearch(prefix, renderFullSearch);
       }
 
-      var hits = rankedHits(window.RJC_SEARCH.concat(fullSearchState.entries), queryTokens, 18);
+      var hits = rankedHits(window.RJC_SEARCH.concat(fullSearchState.entries), groups, 24);
       if (!hits.length) {
         results.innerHTML = fullSearchState.loading
           ? '<div class="search-result search-status"><strong>Buscando no texto integral</strong><span>Carregando o índice completo das leis, atos e capítulos publicados.</span></div>'
-          : '<div class="search-result"><strong>Nenhum resultado direto</strong><span>Tente por pedaços do termo: veic, eletro, inform, cbenef, difal, presum.</span></div>';
+          : '<div class="search-result"><strong>Nenhum resultado direto</strong><span>Tente por pedaços do termo: veic, eletro, inform, cbenef, difal, presum, st, cst ou ncm.</span></div>';
         results.classList.add("open");
         return;
       }
@@ -201,6 +278,7 @@
         return '<a class="search-result" href="' + prefix + entry.url + '">' +
           '<strong>' + escapeHtml(entry.title) + '</strong>' +
           '<span>' + escapeHtml(entry.summary) + '</span>' +
+          '<small>' + escapeHtml(entry.url) + '</small>' +
           (entry.kind ? '<em>' + escapeHtml(entry.kind) + '</em>' : '') +
           '</a>';
       }).join("") + (fullSearchState.loading ? '<div class="search-result search-status"><strong>Ampliando busca</strong><span>Incluindo termos do texto integral da legislação.</span></div>' : '');
@@ -228,14 +306,14 @@
     if (!input || !cards.length) return;
 
     input.addEventListener("input", function () {
-      var queryTokens = tokens(input.value);
-      if (!queryTokens.length) {
+      var groups = queryGroups(input.value);
+      if (!groups.length) {
         cards.forEach(function (card) { card.classList.remove("is-hidden"); });
         return;
       }
       cards.forEach(function (card) {
         var haystack = card.getAttribute("data-search") || card.textContent;
-        card.classList.toggle("is-hidden", !matchesText(haystack, queryTokens));
+        card.classList.toggle("is-hidden", !matchesText(haystack, groups));
       });
     });
   }

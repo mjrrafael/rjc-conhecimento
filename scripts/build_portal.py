@@ -22,10 +22,12 @@ from legal_modules import (
 )
 from state_legal_pages import (
     CONFIGURED_STATE_CHAPTERS,
+    STATE_OFFICIAL_PORTALS,
     build_state_legal_pages,
     configured_chapter_path,
     configured_chapters,
     configured_profile,
+    state_curation,
     state_has_legal_pack,
     state_legal_search_entries,
     state_legislation_teaser,
@@ -702,6 +704,110 @@ def state_card_markup(state: dict, data: dict) -> str:
   <p>{escape(status)}</p>
   <small>{escape(coverage)}</small>
 </a>
+"""
+
+
+def state_queue_card(state: dict, current_path: str) -> str:
+    uf = state["uf"]
+    display_name = state_display_name(state)
+    curation = state_curation(uf)
+    status = curation.get("status", "estrutura")
+    next_step = curation.get("next_step", "Curadoria fonte-a-fonte pendente.")
+    portal = STATE_OFFICIAL_PORTALS.get(uf, "")
+    deep = state_has_legal_pack(uf)
+    status_label = "Publicado em profundidade" if deep else "Pendente de curadoria profunda"
+    status_class = "is-ready" if deep else "is-pending"
+    page_href = local_state_href(uf)
+    portal_link = (
+        f'<a href="{escape(portal)}" target="_blank" rel="noopener">portal oficial</a>'
+        if portal
+        else "<span>portal oficial a mapear</span>"
+    )
+    return f"""
+<article class="state-queue-card searchable-card {status_class}"
+         data-search="{escape(uf + ' ' + display_name + ' ICMS beneficios fiscais ' + status + ' ' + next_step)}">
+  <div class="state-queue-head">
+    {state_flag('../', uf, display_name)}
+    <div>
+      <strong>{escape(display_name)}</strong>
+      <span>{escape(status_label)}</span>
+    </div>
+  </div>
+  <p>{escape(next_step)}</p>
+  <div class="state-queue-links">
+    <a href="{escape(page_href)}">página estadual</a>
+    {portal_link}
+  </div>
+</article>
+"""
+
+
+def state_expansion_queue(data: dict) -> str:
+    states_by_uf = {state["uf"]: state for state in data["states"]}
+    published = [uf for _region_id, _label, ufs in STATE_REGIONS for uf in ufs if uf in states_by_uf and state_has_legal_pack(uf)]
+    pending = [uf for _region_id, _label, ufs in STATE_REGIONS for uf in ufs if uf in states_by_uf and not state_has_legal_pack(uf)]
+    region_blocks = []
+    for region_id, label, ufs in STATE_REGIONS:
+        cards = [
+            state_queue_card(states_by_uf[uf], "estados/index.html")
+            for uf in ufs
+            if uf in states_by_uf and not state_has_legal_pack(uf)
+        ]
+        if not cards:
+            continue
+        region_blocks.append(f"""
+<section class="state-queue-region" id="fila-{escape(region_id)}">
+  <h3>{escape(label)}</h3>
+  <div class="state-queue-grid">{''.join(cards)}</div>
+</section>
+""")
+    if not region_blocks:
+        pending_html = "<p>Todos os Estados estão publicados em profundidade.</p>"
+    else:
+        pending_html = "".join(region_blocks)
+    return f"""
+<section class="section-wrap state-expansion-queue">
+  <div class="section-heading">
+    <span class="eyebrow">Esteira editorial</span>
+    <h2>O que já está profundo e o que ainda exige curadoria</h2>
+    <p>{fmt_num(len(published))} UFs têm legislação em tela por capítulos. {fmt_num(len(pending))} UFs continuam bloqueadas para publicação profunda até que RICMS, benefícios, atos modificadores e fonte oficial limpa sejam conferidos.</p>
+  </div>
+  <div class="continuity">
+    <h2>Estados profundos publicados</h2>
+    <div>{''.join(f'<a href="{escape(local_state_href(uf))}">{escape(uf)}</a>' for uf in published)}</div>
+  </div>
+  {pending_html}
+</section>
+"""
+
+
+def state_curation_panel(uf: str) -> str:
+    name = STATE_DISPLAY_NAMES.get(uf, uf)
+    curation = state_curation(uf)
+    next_step = curation.get("next_step", "Curadoria fonte-a-fonte pendente.")
+    portal = STATE_OFFICIAL_PORTALS.get(uf, "")
+    portal_html = (
+        f'<a href="{escape(portal)}" target="_blank" rel="noopener">Abrir portal oficial da Secretaria da Fazenda</a>'
+        if portal
+        else "<span>Portal oficial ainda não mapeado</span>"
+    )
+    return f"""
+<section class="content-block state-curation-panel searchable-card"
+         data-search="{escape(uf + ' ' + name + ' curadoria ICMS RICMS beneficios fiscais fonte oficial')}">
+  <span class="eyebrow">Curadoria antes da publicação profunda</span>
+  <h2>Como este Estado vira conteúdo completo</h2>
+  <p>{escape(next_step)}</p>
+  <div class="department-grid">
+    <article><strong>1. Fonte material</strong><span>Lei do ICMS, RICMS vigente, anexos e decretos modificadores.</span></article>
+    <article><strong>2. Benefícios</strong><span>Isenções, reduções, créditos, diferimentos, regimes, fundos, programas e matriz LC 160/CONFAZ.</span></article>
+    <article><strong>3. Documento e prova</strong><span>NF-e, CT-e, EFD, cBenef ou códigos estaduais, guias, memória de cálculo e obrigação acessória.</span></article>
+    <article><strong>4. Publicação</strong><span>Texto em tela, capítulo temático, análise didática, risco comum e continuidade com Federal, CONFAZ e painel.</span></article>
+  </div>
+  <div class="continuity compact">
+    <h2>Fonte de partida</h2>
+    <div>{portal_html}</div>
+  </div>
+</section>
 """
 
 
@@ -1407,6 +1513,7 @@ def estados_index(data: dict) -> str:
   <nav class="region-jump" aria-label="Regiões do Brasil">{region_nav}</nav>
   {''.join(region_sections)}
 </section>
+{state_expansion_queue(data)}
 """
     return layout("estados/index.html", "ICMS por Estado", "Mapa nacional de ICMS e benefícios fiscais por UF.", body, "estados")
 
@@ -1459,6 +1566,7 @@ def state_page(state: dict, data: dict) -> str:
         body = f"""
 {hero(f'{display_name}: ICMS e benefícios fiscais', 'Página preservada para publicação responsável quando houver texto legal estadual suficiente para leitura pública.', state["uf"])}
 {state_legislation_teaser(state["uf"], path)}
+{state_curation_panel(state["uf"])}
 <section class="continuity">
   <h2>Continuar com seguranca</h2>
   <div>
@@ -1802,6 +1910,7 @@ def state_page(state: dict, data: dict) -> str:
     <p>XML, cadastro do item, NCM, EFD, memoria de calculo e dispositivo legal precisam sustentar a mesma conclusao.</p>
   </div>
 </section>
+{state_curation_panel(state["uf"])}
 <section class="matrix-section">
   <h2>Matriz estadual de trabalho</h2>
   <div class="matrix-grid">
@@ -2081,6 +2190,38 @@ def search_summary(text: str, meta: str) -> str:
     return base[:227].rsplit(" ", 1)[0] + "..."
 
 
+def search_body(text: str, limit: int = 1400) -> str:
+    base = " ".join(text.split())
+    if len(base) <= limit:
+        return base
+    return base[:limit].rsplit(" ", 1)[0]
+
+
+def search_scope(rel: str) -> dict[str, str]:
+    parts = rel.split("/")
+    scope = {"jurisdiction": "", "tax": "", "theme": ""}
+    if rel.startswith("estados/"):
+        scope["jurisdiction"] = parts[1].upper() if len(parts) > 1 else "Estados"
+        scope["tax"] = "ICMS"
+        scope["theme"] = "estadual beneficios fiscais"
+    elif rel.startswith("federal/"):
+        scope["jurisdiction"] = "Federal"
+        scope["theme"] = "federal"
+        for token in ("irpj", "csll", "iof", "ipi", "pis", "cofins", "reforma", "lucro-real", "lucro-presumido"):
+            if token in rel:
+                scope["tax"] = token.replace("-", " ").upper()
+                break
+    elif rel.startswith("folha-clt/"):
+        scope["jurisdiction"] = "Federal"
+        scope["tax"] = "Folha CLT Previdenciario"
+        scope["theme"] = "trabalhista"
+    elif rel.startswith("confaz/"):
+        scope["jurisdiction"] = "Nacional"
+        scope["tax"] = "ICMS"
+        scope["theme"] = "CONFAZ"
+    return scope
+
+
 def full_text_search_entries() -> list[dict[str, str]]:
     entries: list[dict[str, str]] = []
     for html_path in sorted(ROOT.rglob("*.html")):
@@ -2104,12 +2245,15 @@ def full_text_search_entries() -> list[dict[str, str]]:
         kind = "Texto legal" if "/legislacao/" in rel else "Página"
         if "/fontes/" in rel or "/atos/" in rel:
             kind = "Ato em tela"
+        scope = search_scope(rel)
         entries.append({
             "title": title,
             "url": rel,
             "summary": search_summary(text, parser.meta_description),
             "tags": terms,
+            "body": search_body(text),
             "kind": kind,
+            **scope,
         })
     return entries
 

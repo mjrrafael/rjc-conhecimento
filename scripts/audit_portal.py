@@ -149,6 +149,8 @@ def audit_search_entries(parsed: dict[Path, PageParser]) -> list[str]:
         if not isinstance(full_entries, list):
             errors.append("indice de busca integral em formato inesperado")
             full_entries = []
+        elif full_entries and not all(entry.get("body") and entry.get("kind") for entry in full_entries[:20]):
+            errors.append("indice de busca integral sem corpo contextual ou tipo de resultado")
         entries = entries + full_entries
     known = set(parsed)
     for index, entry in enumerate(entries):
@@ -274,6 +276,10 @@ def audit_content_pages() -> list[str]:
             continue
         if "legislacao/" not in html and "Lei em tela" not in html and "Legislacao em tela" not in html:
             errors.append(f"pagina critica sem caminho claro para lei em tela: {page}")
+
+    estados = read_page("estados/index.html")
+    if estados and "Esteira editorial" not in estados:
+        errors.append("estados/index.html sem esteira editorial de publicacao por UF")
 
     for module in LEGAL_MODULES:
         index_path = module_index_path(module)
