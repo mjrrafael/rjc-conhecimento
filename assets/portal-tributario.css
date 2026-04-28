@@ -1504,12 +1504,16 @@ a.state-card:hover {
 
 .law-table-wrap {
   width: 100%;
+  max-width: 100%;
   overflow-x: auto;
+  overflow-y: hidden;
 }
 
 .law-table {
-  width: 100%;
-  min-width: 920px;
+  width: max-content;
+  min-width: 100%;
+  max-width: none;
+  table-layout: auto;
   border-collapse: collapse;
   color: #253047;
   font-size: 0.84rem;
@@ -1522,7 +1526,10 @@ a.state-card:hover {
   padding: 9px 10px;
   border-top: 1px solid #eadfce;
   border-right: 1px solid #f1e8da;
-  overflow-wrap: anywhere;
+  min-width: 8rem;
+  max-width: 26rem;
+  overflow-wrap: break-word;
+  word-break: normal;
 }
 
 .law-table th {
@@ -1533,10 +1540,17 @@ a.state-card:hover {
   background: #fff5df;
   font-weight: 850;
   text-align: left;
+  white-space: nowrap;
 }
 
 .law-table td {
   background: #fffdf8;
+}
+
+.law-table td:nth-child(4),
+.law-table td:nth-child(5),
+.law-table td:nth-child(6) {
+  min-width: 18rem;
 }
 
 .legal-record-block {
@@ -1546,6 +1560,38 @@ a.state-card:hover {
 
 .legal-record-block .article-number {
   padding: 14px 16px 0;
+}
+
+.record-guide {
+  display: grid;
+  gap: 10px;
+  padding: 10px 16px 0;
+}
+
+.record-guide p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.55;
+}
+
+.record-guide-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.record-guide-links a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 32px;
+  padding: 6px 10px;
+  border: 1px solid #eadfce;
+  border-radius: 6px;
+  background: #fff8e9;
+  color: var(--navy);
+  font-size: 0.84rem;
+  font-weight: 800;
+  text-decoration: none;
 }
 
 .legal-record-list {

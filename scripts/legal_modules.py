@@ -1829,6 +1829,183 @@ def record_field(label: str, value: str, wide: bool = False) -> str:
 """
 
 
+def item_value(item: dict[str, str], *keys: str) -> str:
+    normalized = {slug(key): value for key, value in item.items()}
+    for key in keys:
+        direct = item.get(key, "")
+        if direct.strip():
+            return direct.strip()
+        value = normalized.get(slug(key), "")
+        if value.strip():
+            return value.strip()
+    return ""
+
+
+def yes_flag(value: str) -> bool:
+    clean = (value or "").strip().lower()
+    return clean in {"1", "s", "sim", "x", "true", "exige", "permitido"}
+
+
+def normalize_legal_cell(value: str) -> str:
+    clean = re.sub(r"\s*/\s*", "\n", (value or "").strip())
+    clean = re.sub(r"\n{3,}", "\n\n", clean)
+    return clean
+
+
+def format_reduction(item: dict[str, str]) -> str:
+    ibs = item_value(item, "pRedIBS")
+    cbs = item_value(item, "pRedCBS")
+    parts = []
+    if ibs:
+        parts.append(f"IBS: {ibs}%")
+    if cbs:
+        parts.append(f"CBS: {cbs}%")
+    return "; ".join(parts)
+
+
+def format_validity(item: dict[str, str]) -> str:
+    start = item_value(item, "dIniVig")
+    end = item_value(item, "dFimVig") or "sem fim indicado"
+    updated = item_value(item, "DataAtualização", "DataAtualizacao")
+    parts = []
+    if start:
+        parts.append(f"início: {start}")
+    if start or item_value(item, "dFimVig"):
+        parts.append(f"fim: {end}")
+    if updated:
+        parts.append(f"atualização da tabela: {updated}")
+    return "; ".join(parts)
+
+
+def flag_summary(item: dict[str, str], labels: list[tuple[str, str]], empty: str) -> str:
+    active = [label for key, label in labels if yes_flag(item_value(item, key))]
+    return "; ".join(active) if active else empty
+
+
+CST_OPERATIONAL_FLAGS = [
+    ("ind_gTribRegular", "grupo de tributação regular"),
+    ("ind_gCredPresOper", "crédito presumido da operação"),
+    ("ind_gMonoPadrao", "monofasia padrão"),
+    ("ind_gMonoReten", "retenção monofásica"),
+    ("ind_gMonoRet", "monofasia retida"),
+    ("ind_gMonoDif", "diferimento monofásico"),
+    ("ind_gEstornoCred", "estorno de crédito"),
+    ("ind_gIBSCBS", "grupo IBS/CBS"),
+    ("ind_gIBSCBSMono", "grupo IBS/CBS monofásico"),
+    ("ind_gRed", "grupo de redução"),
+    ("ind_gDif", "grupo de diferimento"),
+    ("ind_gTransfCred", "transferência de crédito"),
+    ("ind_ gCredPresIBSZFM", "crédito presumido IBS ZFM"),
+    ("ind_gAjusteCompet", "ajuste de competência"),
+    ("ind_RedutorBC", "redutor da base de cálculo"),
+]
+
+
+CST_DOCUMENT_FLAGS = [
+    ("indNFeABI", "NF-e com bem imóvel"),
+    ("indNFe", "NF-e"),
+    ("indNFCe", "NFC-e"),
+    ("indCTe", "CT-e"),
+    ("indCTeOS", "CT-e OS"),
+    ("indBPe", "BP-e"),
+    ("indBPeTA", "BP-e TA"),
+    ("indBPeTM", "BP-e TM"),
+    ("indNF3e", "NF3-e"),
+    ("indNFSe", "NFS-e"),
+    ("indNFSe Via", "NFS-e via"),
+    ("indNFCom", "NFCom"),
+    ("indNFAg", "NF-Ag"),
+    ("indNFGas", "NF-Gas"),
+    ("indDERE", "DERE"),
+]
+
+
+def render_cst_record_guide(text: str, links: list[tuple[str, str]]) -> str:
+    anchors = "".join(
+        f'<a href="#{escape(anchor)}">{escape(label)}</a>'
+        for anchor, label in links
+    )
+    links_block = f'<div class="record-guide-links">{anchors}</div>' if anchors else ""
+    return f"""
+<div class="record-guide">
+  <p>{escape(text)}</p>
+  {links_block}
+</div>
+"""
+
+
+def render_cst_cclasstrib_cards(header: list[str], body_rows: list[list[str]], source_id: str, index: int) -> str:
+    has_cclass = any(slug(cell) == "cclasstrib" for cell in header)
+    cards = []
+    guide_links: list[tuple[str, str]] = []
+    seen_groups: set[str] = set()
+
+    for row_index, row in enumerate(body_rows, start=1):
+        item = row_dict(header, row)
+        cst = item_value(item, "CST-IBS/CBS")
+        cst_desc = item_value(item, "Descrição CST-IBS/CBS", "Descricao CST-IBS/CBS")
+        if not cst:
+            continue
+
+        if has_cclass:
+            code = item_value(item, "cClassTrib") or str(row_index)
+            anchor = f"{escape(source_id)}-tabela-{index}-cclass-{escape(slug(code))}"
+            title = item_value(item, "Nome cClassTrib") or item_value(item, "Descrição cClassTrib", "Descricao cClassTrib") or f"cClassTrib {code}"
+            group_key = cst or code
+            if group_key not in seen_groups:
+                seen_groups.add(group_key)
+                guide_links.append((anchor, f"CST {cst} - {subunit_summary(cst_desc, 48)}"))
+            subtitle = " · ".join(part for part in [f"CST {cst}" if cst else "", f"cClassTrib {code}", item_value(item, "Tipo de Alíquota", "Tipo de Aliquota")] if part)
+            fields = [
+                record_field("Família CST", f"{cst} - {cst_desc}".strip(" -")),
+                record_field("Hipótese cClassTrib", item_value(item, "Descrição cClassTrib", "Descricao cClassTrib") or title, True),
+                record_field("Base legal em tela", normalize_legal_cell(item_value(item, "LC Redação", "LC Redacao")), True),
+                record_field("Referência legal", item_value(item, "LC 214/25")),
+                record_field("Tipo de alíquota", item_value(item, "Tipo de Alíquota", "Tipo de Aliquota")),
+                record_field("Redução informada", format_reduction(item)),
+                record_field("Indicadores operacionais", flag_summary(item, CST_OPERATIONAL_FLAGS, "nenhum indicador operacional marcado na tabela"), True),
+                record_field("Documentos fiscais admitidos", flag_summary(item, CST_DOCUMENT_FLAGS, "nenhum documento fiscal marcado na tabela"), True),
+                record_field("Vigência e atualização", format_validity(item)),
+                record_field("Anexo da tabela", item_value(item, "ANEXO")),
+                record_field("Link legal específico", item_value(item, "Link"), True),
+            ]
+        else:
+            code = cst or str(row_index)
+            anchor = f"{escape(source_id)}-tabela-{index}-cst-{escape(slug(code))}"
+            title = f"CST {code} - {cst_desc}" if cst_desc else f"CST {code}"
+            guide_links.append((anchor, f"CST {code}"))
+            subtitle = "Família CST-IBS/CBS"
+            fields = [
+                record_field("Como ler", f"Este CST organiza a família operacional '{cst_desc}'. Depois dele, escolha o cClassTrib que aponta a hipótese legal concreta da operação.", True),
+                record_field("Grupos exigidos ou permitidos", flag_summary(item, CST_OPERATIONAL_FLAGS, "sem grupo operacional marcado na tabela"), True),
+            ]
+
+        cards.append(f"""
+<section class="legal-record-card cst-record-card" id="{anchor}">
+  <header>
+    <span>{escape(subtitle)}</span>
+    <h4>{escape(title)}</h4>
+  </header>
+  <div class="record-fields">
+    {''.join(fields)}
+  </div>
+</section>
+""")
+
+    guide_text = (
+        "A tabela foi reorganizada em fichas para leitura humana: primeiro localize a família CST, depois confira o cClassTrib, a base legal, o tipo de alíquota, os campos do documento fiscal e a vigência."
+        if has_cclass
+        else "Este quadro resume as famílias CST. Ele serve como porta de entrada: a classificação completa acontece na ficha do cClassTrib correspondente."
+    )
+    return f"""
+<article class="article-block legal-record-block cst-record-block" id="{escape(source_id)}-tabela-{index}">
+  <div class="article-number">Tabela {index} em fichas de leitura</div>
+  {render_cst_record_guide(guide_text, guide_links)}
+  <div class="legal-record-list cst-record-list">{''.join(cards)}</div>
+</article>
+"""
+
+
 def render_ccredpres_cards(header: list[str], body_rows: list[list[str]], source_id: str, index: int) -> str:
     cards = []
     for row_index, row in enumerate(body_rows, start=1):
@@ -1909,6 +2086,8 @@ def render_markdown_table(lines: list[str], source_id: str, index: int) -> str:
         body_rows = rows[1:]
     if source_id == "tabela-ccredpres-ibs-cbs":
         return render_ccredpres_cards(header, body_rows, source_id, index)
+    if source_id == "tabela-cst-cclasstrib-ibs-cbs":
+        return render_cst_cclasstrib_cards(header, body_rows, source_id, index)
     width = len(header)
     head = "".join(f"<th>{escape(cell)}</th>" for cell in header)
     body = []
@@ -2038,7 +2217,7 @@ def render_module_study_path(module: dict, current_path: str) -> str:
 """
 
 
-def render_chapter_flow(module: dict, chapter: dict, current_path: str) -> str:
+def render_chapter_flow(module: dict, chapter: dict, current_path: str, section_id: str = "") -> str:
     chapters = module["chapters"]
     current_index = next((index for index, item in enumerate(chapters) if item["id"] == chapter["id"]), 0)
     links = []
@@ -2066,8 +2245,9 @@ def render_chapter_flow(module: dict, chapter: dict, current_path: str) -> str:
   <small>{escape(summary)}</small>
 </a>
 """)
+    id_attr = f' id="{escape(section_id)}"' if section_id else ""
     return f"""
-<section class="chapter-flow" aria-label="Continuar leitura">
+<section class="chapter-flow"{id_attr} aria-label="Continuar leitura">
   {''.join(items)}
 </section>
 """
@@ -2122,6 +2302,7 @@ def render_chapter_page(module: dict, chapter: dict, sources: dict, layout_func)
   <div>
     {''.join(chapter_nav)}
     <a href="#analise">Analise, aplicacao e prova</a>
+    <a href="#continuar-capitulo">Continuar leitura</a>
     </div>
 </section>
 {render_chapter_flow(module, chapter, path)}
@@ -2136,7 +2317,7 @@ def render_chapter_page(module: dict, chapter: dict, sources: dict, layout_func)
   <div class="law-reader-main">
     {''.join(source_blocks)}
     {render_analysis(chapter)}
-    {render_chapter_flow(module, chapter, path)}
+    {render_chapter_flow(module, chapter, path, "continuar-capitulo")}
   </div>
 </section>
 """
