@@ -13,6 +13,7 @@ FILES = {
     "taxonomy": ROOT / "data" / "master_taxonomy.json",
     "coverage": ROOT / "data" / "master_source_coverage.json",
     "benefits": ROOT / "data" / "benefits_crosswalk.json",
+    "ncm": ROOT / "data" / "ncm_benefits_index.json",
     "confaz": ROOT / "data" / "confaz_ultimos_5_anos.json",
 }
 
@@ -34,6 +35,7 @@ def main() -> int:
     taxonomy = read_json(FILES["taxonomy"])
     coverage = read_json(FILES["coverage"])
     benefits = read_json(FILES["benefits"])
+    ncm_index = read_json(FILES["ncm"])
     confaz = read_json(FILES["confaz"])
 
     if taxonomy.get("schema") != "rjc-master-taxonomy-v2":
@@ -99,6 +101,42 @@ def main() -> int:
         if not any(item.get(key) for key in ("ncm", "cest", "cbenef", "cst", "cclasstrib")) and "Produto ou operação descrito literalmente" in item.get("product_or_operation", ""):
             errors.append(f"beneficio sem codigo nem descricao operacional especifica: {item.get('id')}")
 
+    ncm_rows = ncm_index.get("rows", [])
+    if ncm_index.get("schema") != "rjc-ncm-benefits-index-v1":
+        errors.append("indice NCM x beneficios precisa estar no schema v1")
+    if not ncm_rows:
+        errors.append("indice NCM x beneficios vazio")
+    required_ncm_keys = {
+        "id",
+        "ncm",
+        "ncm_digits",
+        "origin",
+        "jurisdiction",
+        "tax",
+        "benefit_group",
+        "benefit_type",
+        "conditions",
+        "legal_basis",
+        "official_url",
+        "legal_excerpt",
+    }
+    for index, item in enumerate(ncm_rows):
+        missing = sorted(required_ncm_keys - set(item))
+        if missing:
+            errors.append(f"linha NCM {index} sem campos obrigatorios: {missing}")
+        digits = str(item.get("ncm_digits", ""))
+        if len(digits) not in {4, 6, 8} or not digits.isdigit() or digits.startswith("00"):
+            errors.append(f"linha NCM com codigo invalido: {item.get('id')} -> {digits}")
+        joined = json.dumps(item, ensure_ascii=False).lower()
+        if "a validar" in joined or "aguardando_revis" in joined:
+            errors.append(f"linha NCM contem pendencia publica: {item.get('id')}")
+        if not item.get("official_url", "").startswith(("http://", "https://")):
+            errors.append(f"linha NCM sem URL oficial: {item.get('id')}")
+        if item.get("origin") == "CONFAZ" and not item.get("official_url", "").startswith("https://www.confaz.fazenda.gov.br/"):
+            errors.append(f"linha CONFAZ sem URL oficial CONFAZ: {item.get('id')}")
+        if not item.get("legal_excerpt") or len(item.get("legal_excerpt", "")) < 80:
+            errors.append(f"linha NCM sem trecho legal suficiente: {item.get('id')}")
+
     if len(confaz.get("years", [])) != 5:
         errors.append("indice CONFAZ nao cobre exatamente 5 anos")
     families = confaz.get("families", {})
@@ -112,6 +150,7 @@ def main() -> int:
     print(f"Requisitos federais auditados: {len(federal)}")
     print(f"Estados auditados: {len(states)}")
     print(f"Entradas de beneficios auditadas: {len(benefit_entries)}")
+    print(f"Linhas NCM x beneficios auditadas: {len(ncm_rows)}")
     print(f"Familias CONFAZ auditadas: {len(families)}")
     if errors:
         print("Falhas encontradas:")

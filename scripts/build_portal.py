@@ -46,6 +46,7 @@ STATE_SOURCE_AUDIT = ROOT / "data" / "state_source_audit.json"
 MASTER_TAXONOMY = ROOT / "data" / "master_taxonomy.json"
 MASTER_COVERAGE = ROOT / "data" / "master_source_coverage.json"
 BENEFITS_CROSSWALK = ROOT / "data" / "benefits_crosswalk.json"
+NCM_BENEFITS_INDEX = ROOT / "data" / "ncm_benefits_index.json"
 CONFAZ_5Y = ROOT / "data" / "confaz_ultimos_5_anos.json"
 
 FULL_SEARCH_STOPWORDS = {
@@ -1519,6 +1520,7 @@ def legacy_benefits_crosswalk_page(data: dict) -> str:
 <section class="continuity">
   <h2>Continuar a leitura</h2>
   <div>
+    <a href="ncm.html">Lista NCM x beneficios</a>
     <a href="../auditoria/index.html">Auditoria mestre</a>
     <a href="../confaz/ultimos-5-anos.html">CONFAZ 5 anos</a>
     <a href="../federal/pis-cofins.html">PIS/Cofins</a>
@@ -1527,6 +1529,85 @@ def legacy_benefits_crosswalk_page(data: dict) -> str:
 </section>
 """
     return layout("beneficios/index.html", "Matriz nacional de beneficios fiscais", "Beneficios por UF, tributo, setor, NCM e prova.", body, "beneficios")
+
+
+def ncm_benefits_page(data: dict) -> str:
+    payload = load_json(NCM_BENEFITS_INDEX, {"summary": {}, "rows": []})
+    summary = payload.get("summary", {})
+    rows = payload.get("rows", [])
+    table_rows = []
+    for item in rows:
+        search_text = " ".join(
+            str(item.get(key, ""))
+            for key in (
+                "ncm",
+                "ncm_digits",
+                "origin",
+                "jurisdiction",
+                "tax",
+                "benefit_group",
+                "benefit_type",
+                "product_or_operation",
+                "conditions",
+                "prohibitions",
+                "legal_basis",
+                "source_title",
+                "legal_excerpt",
+            )
+        )
+        table_rows.append(f"""
+<tr id="{escape(item.get('id', ''))}" class="searchable-card" data-search="{escape(search_text)}">
+  <td><strong>{escape(item.get('ncm', ''))}</strong><span>{escape(item.get('ncm_level', 'NCM'))}</span></td>
+  <td><strong>{escape(item.get('jurisdiction', ''))}</strong><span>{escape(item.get('origin', ''))} · {escape(item.get('tax', ''))}</span></td>
+  <td><strong>{escape(item.get('benefit_type', ''))}</strong><span>{escape(item.get('benefit_group', ''))}</span></td>
+  <td>{escape(item.get('product_or_operation', ''))}</td>
+  <td>{escape(item.get('conditions', ''))}</td>
+  <td>{escape(item.get('legal_basis', ''))}<br><a href="{escape(item.get('official_url', ''))}" target="_blank" rel="noopener">fonte legal</a></td>
+  <td>{escape(item.get('legal_excerpt', ''))}</td>
+</tr>
+""")
+    origins = summary.get("origins", {})
+    origin_text = " · ".join(f"{escape(key)}: {fmt_num(value)}" for key, value in origins.items())
+    body = f"""
+{hero("Lista NCM x beneficios fiscais", "Relação operacional de NCM/TIPI com benefício, UF/Federal/CONFAZ, condição, base legal, prova e fonte.", "NCM e beneficios")}
+<section class="law-ledger">
+  <div>
+    <h2>Registros</h2>
+    <p>{fmt_num(summary.get('rows', 0))} linhas NCM x benefício, {fmt_num(summary.get('unique_ncm', 0))} NCM únicos e {fmt_num(summary.get('jurisdictions', 0))} jurisdições com NCM extraído em texto legal.</p>
+  </div>
+  <div>
+    <h2>Origem</h2>
+    <p>{origin_text}</p>
+  </div>
+  <div>
+    <h2>Exportar</h2>
+    <p><a href="../data/ncm_benefits_index.csv">CSV</a> · <a href="../data/ncm_benefits_index.json">JSON</a></p>
+  </div>
+</section>
+<section class="content-block">
+  <h2>Como usar a lista</h2>
+  <p>Pesquise pelo NCM completo, por posição, UF, benefício, produto, operação ou condição. A linha só entra quando o código aparece em trecho legal com tratamento tributário e contexto NCM/TIPI.</p>
+</section>
+<section class="content-block inventory-table">
+  <h2>NCM e benefícios em tela</h2>
+  <div class="doc-table-wrap">
+    <table class="doc-table ncm-benefits-table">
+      <thead><tr><th>NCM</th><th>Origem</th><th>Benefício</th><th>Produto/operação</th><th>Condição</th><th>Base legal</th><th>Trecho</th></tr></thead>
+      <tbody>{''.join(table_rows)}</tbody>
+    </table>
+  </div>
+</section>
+<section class="continuity">
+  <h2>Continuar a leitura</h2>
+  <div>
+    <a href="index.html">Matriz nacional de benefícios</a>
+    <a href="../confaz/ultimos-5-anos.html">CONFAZ</a>
+    <a href="../federal/index.html">Federal</a>
+    <a href="../estados/index.html">Estados</a>
+  </div>
+</section>
+"""
+    return layout("beneficios/ncm.html", "Lista NCM x beneficios fiscais", "NCM por beneficio fiscal, UF, Federal e CONFAZ.", body, "beneficios")
 
 
 def benefits_crosswalk_page(data: dict) -> str:
@@ -2736,6 +2817,44 @@ def benefit_full_search_entries() -> list[dict[str, str]]:
     return entries
 
 
+def ncm_full_search_entries() -> list[dict[str, str]]:
+    payload = load_json(NCM_BENEFITS_INDEX, {"rows": []})
+    entries: list[dict[str, str]] = []
+    for item in payload.get("rows", []):
+        parts = [
+            item.get("ncm", ""),
+            item.get("ncm_digits", ""),
+            item.get("origin", ""),
+            item.get("jurisdiction", ""),
+            item.get("tax", ""),
+            item.get("benefit_group", ""),
+            item.get("benefit_type", ""),
+            item.get("product_or_operation", ""),
+            item.get("conditions", ""),
+            item.get("prohibitions", ""),
+            item.get("legal_basis", ""),
+            item.get("source_title", ""),
+        ]
+        text = " ".join(str(part) for part in parts if str(part).strip())
+        body_text = " ".join([text, item.get("legal_excerpt", "")])
+        title = f"{item.get('ncm', '')} · {item.get('jurisdiction', '')} · {item.get('benefit_type', '')}"
+        entries.append({
+            "title": title,
+            "url": f"beneficios/ncm.html#{item.get('id', '')}",
+            "summary": search_summary(
+                " ".join([item.get("product_or_operation", ""), item.get("conditions", ""), item.get("legal_basis", "")]),
+                "",
+            ),
+            "tags": compact_search_terms(text),
+            "body": search_body(body_text, 360),
+            "kind": "NCM x beneficio",
+            "jurisdiction": item.get("jurisdiction", ""),
+            "tax": item.get("tax", ""),
+            "theme": item.get("benefit_group", ""),
+        })
+    return entries
+
+
 def full_text_search_entries() -> list[dict[str, str]]:
     entries: list[dict[str, str]] = []
     for html_path in sorted(ROOT.rglob("*.html")):
@@ -2829,6 +2948,12 @@ def search_index(data: dict) -> str:
             "tags": "beneficios fiscais NCM CEST cBenef CST cClassTrib isencao reducao credito presumido diferimento monofasico",
         },
         {
+            "title": "Lista NCM x beneficios fiscais",
+            "url": "beneficios/ncm.html",
+            "summary": "NCM/TIPI cruzado com beneficios estaduais, federais e CONFAZ, com condicao, base legal e fonte.",
+            "tags": "NCM TIPI beneficios fiscais estados federal CONFAZ isencao reducao credito presumido diferimento monofasico",
+        },
+        {
             "title": "CONFAZ dos ultimos 5 anos",
             "url": "confaz/ultimos-5-anos.html",
             "summary": "Indice de Convenios ICMS, Ajustes SINIEF e Protocolos ICMS para curadoria e cruzamentos.",
@@ -2880,6 +3005,7 @@ def main() -> None:
     write("index.html", home(data))
     write("auditoria/index.html", source_audit_index_page(data))
     write("beneficios/index.html", benefits_crosswalk_page(data))
+    write("beneficios/ncm.html", ncm_benefits_page(data))
     write("estados/index.html", estados_index(data))
     write("estados/auditoria-fontes.html", state_source_audit_page(data))
     for state in data["states"]:
@@ -2905,7 +3031,7 @@ def main() -> None:
     for state_legal_path, state_legal_content in build_state_legal_pages(layout, data).items():
         write(state_legal_path, state_legal_content)
     write("assets/portal-search.js", search_index(data))
-    write("assets/portal-search-full.json", json.dumps(full_text_search_entries() + benefit_full_search_entries(), ensure_ascii=False, separators=(",", ":")))
+    write("assets/portal-search-full.json", json.dumps(full_text_search_entries() + benefit_full_search_entries() + ncm_full_search_entries(), ensure_ascii=False, separators=(",", ":")))
     print("Portal generated successfully.")
 
 

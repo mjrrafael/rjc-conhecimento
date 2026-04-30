@@ -1358,6 +1358,21 @@ a.state-card:hover {
   font-weight: 750;
 }
 
+.ncm-benefits-table {
+  min-width: 1560px;
+}
+
+.ncm-benefits-table td:nth-child(4),
+.ncm-benefits-table td:nth-child(5),
+.ncm-benefits-table td:nth-child(7) {
+  max-width: 340px;
+  white-space: normal;
+}
+
+.ncm-benefits-table td {
+  overflow-wrap: anywhere;
+}
+
 .law-chapter-list {
   display: grid;
   gap: 16px;

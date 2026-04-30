@@ -252,6 +252,12 @@ window.RJC_SEARCH = [
     "tags": "beneficios fiscais NCM CEST cBenef CST cClassTrib isencao reducao credito presumido diferimento monofasico"
   },
   {
+    "title": "Lista NCM x beneficios fiscais",
+    "url": "beneficios/ncm.html",
+    "summary": "NCM/TIPI cruzado com beneficios estaduais, federais e CONFAZ, com condicao, base legal e fonte.",
+    "tags": "NCM TIPI beneficios fiscais estados federal CONFAZ isencao reducao credito presumido diferimento monofasico"
+  },
+  {
     "title": "CONFAZ dos ultimos 5 anos",
     "url": "confaz/ultimos-5-anos.html",
     "summary": "Indice de Convenios ICMS, Ajustes SINIEF e Protocolos ICMS para curadoria e cruzamentos.",
