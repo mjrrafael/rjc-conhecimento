@@ -1,0 +1,810 @@
+{
+  "schema": "rjc-master-source-coverage-v2",
+  "generated_on": "2026-04-29",
+  "summary": {
+    "federal_requirements": 15,
+    "federal_published": 11,
+    "federal_source_available": 4,
+    "states": 27,
+    "states_deep": 13,
+    "states_waiting_review": 14,
+    "registered_sources": 192
+  },
+  "federal": [
+    {
+      "id": "irpj",
+      "title": "IRPJ",
+      "terms": [
+        "IRPJ",
+        "RIR",
+        "Lei 9.430",
+        "Lei 9.249"
+      ],
+      "expected_files": [
+        {
+          "file": "Decreto_9580_2018_Regulamento_IRPJ.txt",
+          "available": true,
+          "size": 1282455,
+          "sha256": "6f719da265ae0cb60d7c1e36038a66900fbac184502f0abc9174ee2f51378f2b"
+        },
+        {
+          "file": "Lei_9430_1996_Compilada_IRPJ.txt",
+          "available": true,
+          "size": 114519,
+          "sha256": "fa2c04f9ac3c7d9d0fd0b32783983f0499e06a6e2dd8a0306f29be3a50ab9856"
+        }
+      ],
+      "minimum": "regra matriz, contribuinte, lucro real, presumido, arbitrado, adicionais, pagamentos, ECF e prova",
+      "status": "publicado_v1",
+      "registry_match": true,
+      "page_match": true
+    },
+    {
+      "id": "csll",
+      "title": "CSLL",
+      "terms": [
+        "CSLL",
+        "Lei 7.689",
+        "Lei 15.079"
+      ],
+      "expected_files": [
+        {
+          "file": "Lei_7689_1988_CSLL_Original.txt",
+          "available": true,
+          "size": 18565,
+          "sha256": "8718f91a6b04161b322721c2f367b97589c700387df1ac5d05e69509175f8dc2"
+        },
+        {
+          "file": "Lei_15079_2024_Adicional_CSLL.txt",
+          "available": true,
+          "size": 57334,
+          "sha256": "b8979580bec1a3c42fc9eea19bd43619fa97307be941473310f5f5259e373b72"
+        }
+      ],
+      "minimum": "base, aliquotas, adicional, compensacao, base negativa, ECF e prova",
+      "status": "publicado_v1",
+      "registry_match": true,
+      "page_match": true
+    },
+    {
+      "id": "pis",
+      "title": "PIS/Pasep",
+      "terms": [
+        "PIS",
+        "Pasep",
+        "Lei 10.637",
+        "IN RFB 2.121"
+      ],
+      "expected_files": [
+        {
+          "file": "Lei_10637_2002_PIS_Nao_Cumulativo.txt",
+          "available": true,
+          "size": 112690,
+          "sha256": "338fb3f5d770a3552b270b2f05ef94f33cca771371f3b343e9fc87bbf00d21dd"
+        },
+        {
+          "file": "IN_RFB_2121_2022_PIS_COFINS_Parte1.txt",
+          "available": true,
+          "size": 472411,
+          "sha256": "e98d9706116597869c7c38bac567c7d64fdf2adac3c123fba2f60d45438c2b1e"
+        }
+      ],
+      "minimum": "cumulativo, nao cumulativo, importacao, monofasico, aliquota zero, creditos e EFD",
+      "status": "publicado_v1",
+      "registry_match": true,
+      "page_match": true
+    },
+    {
+      "id": "cofins",
+      "title": "Cofins",
+      "terms": [
+        "COFINS",
+        "Lei 10.833",
+        "LC 70",
+        "IN RFB 2.121"
+      ],
+      "expected_files": [
+        {
+          "file": "Lei_10833_2003_Compilada_COFINS.txt",
+          "available": true,
+          "size": 143905,
+          "sha256": "287e515301961c290a73c19b936cce22b56de22c99663f8ef35e8c09eab47aea"
+        },
+        {
+          "file": "LC_70_1991_COFINS_Original.txt",
+          "available": true,
+          "size": 10990,
+          "sha256": "184f11f9c6c6cb50263647b1b06bf53f09e0cf502b8159f62fe8d6b3439d8c24"
+        }
+      ],
+      "minimum": "cumulativo, nao cumulativo, importacao, retencoes, monofasico, creditos e EFD",
+      "status": "publicado_v1",
+      "registry_match": true,
+      "page_match": true
+    },
+    {
+      "id": "ipi",
+      "title": "IPI",
+      "terms": [
+        "IPI",
+        "TIPI",
+        "RIPI"
+      ],
+      "expected_files": [
+        {
+          "file": "Decreto_7212_2010_RIPI.txt",
+          "available": true,
+          "size": 2064,
+          "sha256": "1cc844f7157995a9e422d7c99fae2cbf8cf9758cbc0600a3e1f7d9b8266f9a4f"
+        },
+        {
+          "file": "TIPI_Vigente_2022_Parte1.txt",
+          "available": true,
+          "size": 457502,
+          "sha256": "c87cf25dcc17eff13481f1d8e6b03939d1b375fc57047c1033e2e948fcd65201"
+        }
+      ],
+      "minimum": "industrializacao, equiparados, fato gerador, TIPI, suspensoes, isencoes, ZFM e prova",
+      "status": "publicado_v1",
+      "registry_match": true,
+      "page_match": true
+    },
+    {
+      "id": "iof",
+      "title": "IOF",
+      "terms": [
+        "IOF",
+        "Decreto 6.306",
+        "Lei 5.143"
+      ],
+      "expected_files": [
+        {
+          "file": "Decreto_6306_2007_Regulamento_IOF.txt",
+          "available": true,
+          "size": 220197,
+          "sha256": "64914cfea167e63822f3800d7d196a7f378cdbf3c690a46286308da1871ea38f"
+        },
+        {
+          "file": "Decreto_12499_2025_IOF_Alteracoes2.txt",
+          "available": true,
+          "size": 16694,
+          "sha256": "e7d01427001bb35c3aef6b64b40aea6a74dc775061fb24e0a15a08761cc2cf94"
+        }
+      ],
+      "minimum": "credito, cambio, seguro, titulos, valores mobiliarios, aliquotas e alteracoes vigentes",
+      "status": "publicado_v1",
+      "registry_match": true,
+      "page_match": true
+    },
+    {
+      "id": "irpf_pf",
+      "title": "IRPF e pessoa fisica",
+      "terms": [
+        "IRPF",
+        "pessoa fisica",
+        "Lei 9.250"
+      ],
+      "expected_files": [
+        {
+          "file": "Lei_9250_1995_IRPF.txt",
+          "available": true,
+          "size": 99310,
+          "sha256": "2991cd27b0c129f5db72313131b88bc5c03ff23c756d0a629903e32146078f29"
+        },
+        {
+          "file": "Lei_15191_2025_IRPF_Tabela_Progressiva.txt",
+          "available": true,
+          "size": 2825,
+          "sha256": "b7fc6ebeede29d86061edd21ceb5b11eb9a2c17bc6012dcbd1c6d077d1661830"
+        }
+      ],
+      "minimum": "rendimentos, deducoes, ganho de capital, tabela progressiva, declaracao e prova",
+      "status": "fonte_local_disponivel",
+      "registry_match": false,
+      "page_match": false
+    },
+    {
+      "id": "simples_mei",
+      "title": "Simples Nacional e MEI",
+      "terms": [
+        "Simples Nacional",
+        "MEI",
+        "LC 123"
+      ],
+      "expected_files": [
+        {
+          "file": "LC_123_2006_Simples_Nacional.txt",
+          "available": true,
+          "size": 315229,
+          "sha256": "663707b816c17d45bd80abed6dd5cd484075547a822e18645e689f5c8d79a57f"
+        },
+        {
+          "file": "LC_128_2008_MEI.txt",
+          "available": true,
+          "size": 82256,
+          "sha256": "821a4e4aa62ebd1c4f407aee02b2d10109611b33299b4d4c4c4456565444c6a1"
+        }
+      ],
+      "minimum": "enquadramento, anexos, sublimites, segregacao de receita, monofasico/ST/retencoes e PGDAS-D",
+      "status": "fonte_local_disponivel",
+      "registry_match": false,
+      "page_match": false
+    },
+    {
+      "id": "lucro_real",
+      "title": "Lucro Real",
+      "terms": [
+        "Lucro Real",
+        "Lalur",
+        "Lacs"
+      ],
+      "expected_files": [
+        {
+          "file": "Decreto_9580_2018_Regulamento_IRPJ.txt",
+          "available": true,
+          "size": 1282455,
+          "sha256": "6f719da265ae0cb60d7c1e36038a66900fbac184502f0abc9174ee2f51378f2b"
+        },
+        {
+          "file": "Lei_9430_1996_Compilada_IRPJ.txt",
+          "available": true,
+          "size": 114519,
+          "sha256": "fa2c04f9ac3c7d9d0fd0b32783983f0499e06a6e2dd8a0306f29be3a50ab9856"
+        }
+      ],
+      "minimum": "adicoes, exclusoes, compensacoes, estimativa, trimestral/anual, ECD, ECF e prova contabil",
+      "status": "publicado_v1",
+      "registry_match": true,
+      "page_match": true
+    },
+    {
+      "id": "lucro_presumido",
+      "title": "Lucro Presumido",
+      "terms": [
+        "Lucro Presumido",
+        "presuncao",
+        "Lei 8.981"
+      ],
+      "expected_files": [
+        {
+          "file": "Lei_8981_1995_Lucro_Real_Presumido.txt",
+          "available": true,
+          "size": 138640,
+          "sha256": "7d53e23950872eeec693912c6c8fcae1e70e283bcf6b11230354776307853791"
+        },
+        {
+          "file": "Decreto_12808_2026_Lucro_Presumido.txt",
+          "available": true,
+          "size": 14249,
+          "sha256": "eaa26c070371762291ea8b0380a1f29be97ce21c8a59182734c5f551e298316d"
+        }
+      ],
+      "minimum": "percentuais, segregacao de receita, limite, retencoes, PIS/Cofins cumulativo e ECF",
+      "status": "publicado_v1",
+      "registry_match": true,
+      "page_match": true
+    },
+    {
+      "id": "lucro_arbitrado",
+      "title": "Lucro Arbitrado",
+      "terms": [
+        "Lucro Arbitrado",
+        "arbitramento"
+      ],
+      "expected_files": [
+        {
+          "file": "Lei_8981_1995_Lucro_Real_Presumido.txt",
+          "available": true,
+          "size": 138640,
+          "sha256": "7d53e23950872eeec693912c6c8fcae1e70e283bcf6b11230354776307853791"
+        },
+        {
+          "file": "Decreto_9580_2018_Regulamento_IRPJ.txt",
+          "available": true,
+          "size": 1282455,
+          "sha256": "6f719da265ae0cb60d7c1e36038a66900fbac184502f0abc9174ee2f51378f2b"
+        }
+      ],
+      "minimum": "hipoteses de arbitramento, base, percentuais, provas e riscos",
+      "status": "fonte_local_disponivel",
+      "registry_match": false,
+      "page_match": true
+    },
+    {
+      "id": "comercio_exterior",
+      "title": "Importacao, exportacao e regimes aduaneiros",
+      "terms": [
+        "importacao",
+        "exportacao",
+        "aduaneiro",
+        "drawback",
+        "Siscomex"
+      ],
+      "expected_files": [
+        {
+          "file": "Decreto_6759_2009_Regulamento_Aduaneiro.txt",
+          "available": true,
+          "size": 777003,
+          "sha256": "05024c38feaab6ab3cbeaf6061db74d2ac5368ff44b612bbbc44272dbbfbad3e"
+        },
+        {
+          "file": "Lei_10865_2004_PIS_COFINS_Importacao.txt",
+          "available": true,
+          "size": 184301,
+          "sha256": "e5a85dbbf20e5b759385bbdbe29f84bddece09ca75a70f9c6848907ec905d736"
+        }
+      ],
+      "minimum": "II, IPI importacao, PIS/Cofins-Importacao, despacho, regimes especiais, drawback, REINTEGRA e prova",
+      "status": "fonte_local_disponivel",
+      "registry_match": true,
+      "page_match": false
+    },
+    {
+      "id": "beneficios_federais",
+      "title": "Beneficios federais, DIRBI e reducao de beneficios",
+      "terms": [
+        "DIRBI",
+        "beneficios fiscais",
+        "renuncias",
+        "Lei 14.973"
+      ],
+      "expected_files": [
+        {
+          "file": "Lei_14973_2024_DIRBI.txt",
+          "available": true,
+          "size": 61083,
+          "sha256": "80d4846e8c1dc7c989764e37a28af5947b4605ce6332649962c0be516619fac3"
+        },
+        {
+          "file": "Lei_15321_2025_DIRBI_Obrigatoriedade.txt",
+          "available": true,
+          "size": 336270,
+          "sha256": "d498edd986d63ab9ca2c14b2d7ca9a868a6ec6bbc8ab82e01441657d205b26b5"
+        },
+        {
+          "file": "Decreto_12861_2026_Regulamento_Beneficios.txt",
+          "available": true,
+          "size": 30879,
+          "sha256": "2bf091bba33509c7c24243e9996a33a976d4a292b1a72b5d409209be8bc3ae70"
+        }
+      ],
+      "minimum": "habilitacao, fruicao, declaracao, DIRBI, reducao de beneficios, prova e controles",
+      "status": "publicado_v1",
+      "registry_match": true,
+      "page_match": true
+    },
+    {
+      "id": "reforma",
+      "title": "Reforma Tributaria",
+      "terms": [
+        "IBS",
+        "CBS",
+        "Imposto Seletivo",
+        "cClassTrib",
+        "cCredPres"
+      ],
+      "expected_files": [
+        {
+          "file": "EC_132_2023_Reforma_Tributaria.txt",
+          "available": true,
+          "size": 107507,
+          "sha256": "103afd2c9843569e5d379fee25babecf06fc79ca9a2c21f22be3a765098feaad"
+        },
+        {
+          "file": "LC_214_2025_Compilada_IBS_CBS_IS.txt",
+          "available": true,
+          "size": 922628,
+          "sha256": "d926cdfa4d7270a4e6b8088f274838f9fe70c32e98c890fe14f6091827cd2315"
+        },
+        {
+          "file": "LC_227_2026_Comite_Gestor_IBS.txt",
+          "available": true,
+          "size": 435214,
+          "sha256": "f33b484e98df0e66f2117b710686aed2dd45ecee9460a2af10c89d90ff077ed6"
+        }
+      ],
+      "minimum": "EC 132, LC 214, LC 227, IBS, CBS, IS, CST, cClassTrib, cCredPres, transicao e documentos fiscais",
+      "status": "publicado_v1",
+      "registry_match": true,
+      "page_match": true
+    },
+    {
+      "id": "folha_clt",
+      "title": "Folha, CLT e previdenciario",
+      "terms": [
+        "CLT",
+        "previdencia",
+        "eSocial",
+        "DCTFWeb",
+        "FGTS"
+      ],
+      "expected_files": [
+        {
+          "file": "Lei_8212_1991_Custeio_Previdencia.txt",
+          "available": true,
+          "size": 312286,
+          "sha256": "e6f24c2dd0b522dfe83c3ef08eabd142deeadd8476b6dce19e22a7b241d3cd6c"
+        },
+        {
+          "file": "Lei_8213_1991_Beneficios_Previdencia.txt",
+          "available": true,
+          "size": 324414,
+          "sha256": "5b3101cf7dcc95ae11533b189d670750dd22a0ff8b01fac029a6b0d0ee9d37ff"
+        }
+      ],
+      "minimum": "contrato, jornada, salario, encargos, seguridade, eSocial, DCTFWeb, Reinf, FGTS e prova",
+      "status": "publicado_v1",
+      "registry_match": true,
+      "page_match": true
+    }
+  ],
+  "states": [
+    {
+      "uf": "AC",
+      "name": "Acre",
+      "region": "Norte",
+      "status": "aguardando_revisao",
+      "publish_deep": false,
+      "document_count": 6,
+      "publishable_document_count": 6,
+      "flags": [
+        "contém IPVA",
+        "contém ITCMD/ITCD",
+        "contém Taxas",
+        "fonte local sem URL oficial no cabeçalho",
+        "texto curto para RICMS/benefícios"
+      ],
+      "next_step": "Baixar RICMS e benefÃƒÂ­cios de ICMS no portal oficial do Acre."
+    },
+    {
+      "uf": "AL",
+      "name": "Alagoas",
+      "region": "Nordeste",
+      "status": "aguardando_revisao",
+      "publish_deep": false,
+      "document_count": 3,
+      "publishable_document_count": 3,
+      "flags": [
+        "fonte local sem URL oficial no cabeçalho",
+        "texto curto para RICMS/benefícios"
+      ],
+      "next_step": "Baixar RICMS e benefÃƒÂ­cios de ICMS no portal oficial de Alagoas."
+    },
+    {
+      "uf": "AM",
+      "name": "Amazonas",
+      "region": "Norte",
+      "status": "aguardando_revisao",
+      "publish_deep": false,
+      "document_count": 4,
+      "publishable_document_count": 4,
+      "flags": [
+        "categoria não específica de ICMS",
+        "contém IPVA",
+        "contém ITCMD/ITCD",
+        "contém Taxas",
+        "fallback amplo"
+      ],
+      "next_step": "Separar CÃƒÂ³digo TributÃƒÂ¡rio, RICMS e benefÃƒÂ­cios; baixar o regulamento vigente do Amazonas."
+    },
+    {
+      "uf": "AP",
+      "name": "Amapá",
+      "region": "Norte",
+      "status": "aguardando_revisao",
+      "publish_deep": false,
+      "document_count": 7,
+      "publishable_document_count": 7,
+      "flags": [
+        "contém Taxas",
+        "fonte local sem URL oficial no cabeçalho",
+        "ruído de extração/encoding",
+        "texto curto para RICMS/benefícios"
+      ],
+      "next_step": "Baixar RICMS e benefÃƒÂ­cios de ICMS no portal oficial do AmapÃƒÂ¡."
+    },
+    {
+      "uf": "BA",
+      "name": "Bahia",
+      "region": "Nordeste",
+      "status": "publicado_v1",
+      "publish_deep": true,
+      "document_count": 15,
+      "publishable_document_count": 15,
+      "flags": [],
+      "next_step": "Bahia publicada como pÃƒÂ¡gina profunda: Lei do ICMS, RICMS, anexos, substituiÃƒÂ§ÃƒÂ£o tributÃƒÂ¡ria, DESENVOLVE, PROIND, PRONAVAL, crÃƒÂ©dito presumido, informÃƒÂ¡tica/eletrÃƒÂ´nica, atos da LC 160/ConvÃƒÂªnio 190 e EFD dos incentivos."
+    },
+    {
+      "uf": "CE",
+      "name": "Ceará",
+      "region": "Nordeste",
+      "status": "aguardando_revisao",
+      "publish_deep": false,
+      "document_count": 8,
+      "publishable_document_count": 8,
+      "flags": [
+        "categoria não específica de ICMS",
+        "contém IPVA",
+        "contém ITCMD/ITCD",
+        "contém Taxas",
+        "fallback amplo",
+        "fonte local sem URL oficial no cabeçalho"
+      ],
+      "next_step": "Baixar RICMS, decretos modificadores e benefÃƒÂ­cios no portal oficial do CearÃƒÂ¡."
+    },
+    {
+      "uf": "DF",
+      "name": "Distrito Federal",
+      "region": "Centro-Oeste",
+      "status": "publicado_v1",
+      "publish_deep": true,
+      "document_count": 12,
+      "publishable_document_count": 12,
+      "flags": [],
+      "next_step": "Distrito Federal publicado como pÃƒÂ¡gina profunda: Lei do ICMS, RICMS, Cadernos do Anexo I, Anexo IV, LC 160/ConvÃƒÂªnio 190, regime especial de apuraÃƒÂ§ÃƒÂ£o, crÃƒÂ©dito outorgado, EMPREGA-DF, PRÃƒâ€œ-DF II, Desenvolve-DF, diferimento agro e EFD ICMS/IPI."
+    },
+    {
+      "uf": "ES",
+      "name": "Espírito Santo",
+      "region": "Sudeste",
+      "status": "publicado_v1",
+      "publish_deep": true,
+      "document_count": 7,
+      "publishable_document_count": 7,
+      "flags": [],
+      "next_step": "EspÃƒÂ­rito Santo publicado como pÃƒÂ¡gina profunda: Lei nÃ‚Âº 7.000/2001, RICMS/ES, COMPETE/ES, INVEST-ES, FUNDAP, cBenef, isenÃƒÂ§ÃƒÂ£o, reduÃƒÂ§ÃƒÂ£o de base, crÃƒÂ©dito presumido, diferimento, ST, EFD e prova fiscal."
+    },
+    {
+      "uf": "GO",
+      "name": "Goiás",
+      "region": "Centro-Oeste",
+      "status": "aprovado_v1",
+      "publish_deep": true,
+      "document_count": 0,
+      "publishable_document_count": 0,
+      "flags": [],
+      "next_step": "Manter monitoramento de RCTE, Anexo IX, cBenef e atos modificadores."
+    },
+    {
+      "uf": "MA",
+      "name": "Maranhão",
+      "region": "Nordeste",
+      "status": "aguardando_revisao",
+      "publish_deep": false,
+      "document_count": 10,
+      "publishable_document_count": 10,
+      "flags": [
+        "contém Taxas",
+        "fonte local sem URL oficial no cabeçalho"
+      ],
+      "next_step": "Baixar RICMS/MA e anexos de benefÃƒÂ­cios no portal oficial do MaranhÃƒÂ£o."
+    },
+    {
+      "uf": "MG",
+      "name": "Minas Gerais",
+      "region": "Sudeste",
+      "status": "publicado_v1",
+      "publish_deep": true,
+      "document_count": 10,
+      "publishable_document_count": 10,
+      "flags": [],
+      "next_step": "Minas Gerais publicada como pÃƒÂ¡gina profunda: Lei nÃ‚Âº 6.763/1975, Decreto nÃ‚Âº 48.589/2023, RICMS/MG 2023, Anexos I a VIII, alÃƒÂ­quotas, reduÃƒÂ§ÃƒÂ£o de base, crÃƒÂ©dito presumido, crÃƒÂ©dito acumulado, diferimento, ST, EFD e prova fiscal."
+    },
+    {
+      "uf": "MS",
+      "name": "Mato Grosso do Sul",
+      "region": "Centro-Oeste",
+      "status": "publicado_v1",
+      "publish_deep": true,
+      "document_count": 35,
+      "publishable_document_count": 35,
+      "flags": [],
+      "next_step": "Mato Grosso do Sul publicado como pÃƒÂ¡gina profunda: Lei nÃ‚Âº 1.810/1997, RICMS/MS, Anexos I, II, III, V, VI e XV, LC nÃ‚Âº 93/2001, FUNDERSUL, MS-Empreendedor, diferimento, crÃƒÂ©dito presumido, ST, EFD, parcelamento e prova fiscal."
+    },
+    {
+      "uf": "MT",
+      "name": "Mato Grosso",
+      "region": "Centro-Oeste",
+      "status": "publicado_v1",
+      "publish_deep": true,
+      "document_count": 4,
+      "publishable_document_count": 4,
+      "flags": [],
+      "next_step": "Mato Grosso publicado como pÃƒÂ¡gina profunda: Lei do ICMS, RICMS, LC 631/2019, anexos de isenÃƒÂ§ÃƒÂ£o, reduÃƒÂ§ÃƒÂ£o de base, crÃƒÂ©ditos fiscais, diferimento, PRODEIC, substituiÃƒÂ§ÃƒÂ£o tributÃƒÂ¡ria, estimativa simplificada, cBenef e prova fiscal."
+    },
+    {
+      "uf": "PA",
+      "name": "Pará",
+      "region": "Norte",
+      "status": "aguardando_revisao",
+      "publish_deep": false,
+      "document_count": 2,
+      "publishable_document_count": 0,
+      "flags": [
+        "categoria não específica de ICMS",
+        "contém IPVA",
+        "contém ITCMD/ITCD",
+        "contém Taxas",
+        "escopo material incompatível com ICMS",
+        "fallback amplo",
+        "fallback amplo contaminado: categoria OUTROS contém ICMS, mas o escopo dominante é Taxas",
+        "fonte local sem URL oficial no cabeçalho"
+      ],
+      "next_step": "Baixar RICMS/PA e benefÃƒÂ­cios no portal oficial do ParÃƒÂ¡."
+    },
+    {
+      "uf": "PB",
+      "name": "Paraíba",
+      "region": "Nordeste",
+      "status": "aguardando_revisao",
+      "publish_deep": false,
+      "document_count": 1,
+      "publishable_document_count": 1,
+      "flags": [
+        "contém IPVA",
+        "contém ITCMD/ITCD",
+        "contém Taxas"
+      ],
+      "next_step": "Baixar RICMS/PB e benefÃƒÂ­cios no portal oficial da ParaÃƒÂ­ba."
+    },
+    {
+      "uf": "PE",
+      "name": "Pernambuco",
+      "region": "Nordeste",
+      "status": "aguardando_revisao",
+      "publish_deep": false,
+      "document_count": 8,
+      "publishable_document_count": 8,
+      "flags": [
+        "contém Taxas",
+        "fonte local sem URL oficial no cabeçalho",
+        "texto curto para RICMS/benefícios"
+      ],
+      "next_step": "Baixar RICMS/PE e benefÃƒÂ­cios no portal oficial de Pernambuco."
+    },
+    {
+      "uf": "PI",
+      "name": "Piauí",
+      "region": "Nordeste",
+      "status": "aguardando_revisao",
+      "publish_deep": false,
+      "document_count": 9,
+      "publishable_document_count": 9,
+      "flags": [
+        "contém IPVA",
+        "contém Taxas",
+        "fonte local sem URL oficial no cabeçalho"
+      ],
+      "next_step": "Baixar RICMS/PI e benefÃƒÂ­cios no portal oficial do PiauÃƒÂ­."
+    },
+    {
+      "uf": "PR",
+      "name": "Paraná",
+      "region": "Sul",
+      "status": "publicado_v1",
+      "publish_deep": true,
+      "document_count": 8,
+      "publishable_document_count": 8,
+      "flags": [],
+      "next_step": "ParanÃƒÂ¡ publicado como pÃƒÂ¡gina profunda: Lei nÃ‚Âº 11.580/1996, RICMS/PR, benefÃƒÂ­cios fiscais de carÃƒÂ¡ter geral, ParanÃƒÂ¡ Competitivo, isenÃƒÂ§ÃƒÂ£o, reduÃƒÂ§ÃƒÂ£o de base, crÃƒÂ©dito presumido, diferimento, ST, documentos, EFD e prova fiscal."
+    },
+    {
+      "uf": "RJ",
+      "name": "Rio de Janeiro",
+      "region": "Sudeste",
+      "status": "publicado_v1",
+      "publish_deep": true,
+      "document_count": 25,
+      "publishable_document_count": 25,
+      "flags": [],
+      "next_step": "Rio de Janeiro publicado como pÃƒÂ¡gina profunda: Lei nÃ‚Âº 2.657/1996, RICMS/RJ, Manual de BenefÃƒÂ­cios, FOT/FEEF, Repetro, tratamento setorial industrial, ST, importaÃƒÂ§ÃƒÂ£o, transporte, veÃƒÂ­culos, combustÃƒÂ­veis, EFD, cBenef/cCredPresumido e prova fiscal."
+    },
+    {
+      "uf": "RN",
+      "name": "Rio Grande do Norte",
+      "region": "Nordeste",
+      "status": "publicado_v1",
+      "publish_deep": true,
+      "document_count": 19,
+      "publishable_document_count": 19,
+      "flags": [],
+      "next_step": "RN publicado com RICMS, anexos de isenÃƒÂ§ÃƒÂ£o, diferimento, crÃƒÂ©dito presumido, reduÃƒÂ§ÃƒÂ£o de base, antecipaÃƒÂ§ÃƒÂ£o, ST, PROEDI, FUNDERN, Tax Free, cBenef e matriz LC 160."
+    },
+    {
+      "uf": "RO",
+      "name": "Rondônia",
+      "region": "Norte",
+      "status": "aguardando_revisao",
+      "publish_deep": false,
+      "document_count": 4,
+      "publishable_document_count": 3,
+      "flags": [
+        "contém IPVA",
+        "contém Taxas",
+        "escopo dominante incompatível: conteúdo parece tratar de IPVA, não de ICMS",
+        "escopo material incompatível com ICMS",
+        "fonte local sem URL oficial no cabeçalho"
+      ],
+      "next_step": "Baixar RICMS/RO e benefÃƒÂ­cios no portal oficial de RondÃƒÂ´nia."
+    },
+    {
+      "uf": "RR",
+      "name": "Roraima",
+      "region": "Norte",
+      "status": "aguardando_revisao",
+      "publish_deep": false,
+      "document_count": 5,
+      "publishable_document_count": 5,
+      "flags": [
+        "contém IPVA",
+        "contém Taxas",
+        "fonte local sem URL oficial no cabeçalho",
+        "texto curto para RICMS/benefícios"
+      ],
+      "next_step": "Baixar RICMS/RR e benefÃƒÂ­cios no portal oficial de Roraima."
+    },
+    {
+      "uf": "RS",
+      "name": "Rio Grande do Sul",
+      "region": "Sul",
+      "status": "publicado_v1",
+      "publish_deep": true,
+      "document_count": 5,
+      "publishable_document_count": 5,
+      "flags": [],
+      "next_step": "Rio Grande do Sul publicado como pÃƒÂ¡gina profunda: Decreto nÃ‚Âº 37.699/1997, RICMS/RS integral, AMPARA-RS, importaÃƒÂ§ÃƒÂ£o, crÃƒÂ©dito presumido, diferimento, ST, documentos, EFD e prova fiscal."
+    },
+    {
+      "uf": "SC",
+      "name": "Santa Catarina",
+      "region": "Sul",
+      "status": "publicado_v1",
+      "publish_deep": true,
+      "document_count": 8,
+      "publishable_document_count": 8,
+      "flags": [],
+      "next_step": "Santa Catarina publicada como pÃƒÂ¡gina profunda: RICMS/SC, Anexo 2 de benefÃƒÂ­cios fiscais, Anexo 3 de substituiÃƒÂ§ÃƒÂ£o tributÃƒÂ¡ria, Anexo 5 de obrigaÃƒÂ§ÃƒÂµes acessÃƒÂ³rias, Anexo 6 de regimes especiais, NF-e e prova fiscal."
+    },
+    {
+      "uf": "SE",
+      "name": "Sergipe",
+      "region": "Nordeste",
+      "status": "aguardando_revisao",
+      "publish_deep": false,
+      "document_count": 4,
+      "publishable_document_count": 4,
+      "flags": [
+        "contém IPVA",
+        "contém Taxas",
+        "fonte local sem URL oficial no cabeçalho",
+        "texto curto para RICMS/benefícios"
+      ],
+      "next_step": "Baixar RICMS/SE e benefÃƒÂ­cios no portal oficial de Sergipe."
+    },
+    {
+      "uf": "SP",
+      "name": "São Paulo",
+      "region": "Sudeste",
+      "status": "publicado_v1",
+      "publish_deep": true,
+      "document_count": 4,
+      "publishable_document_count": 4,
+      "flags": [],
+      "next_step": "SÃƒÂ£o Paulo publicado como pÃƒÂ¡gina profunda: Lei nÃ‚Âº 6.374/1989, RICMS/2000 integral, Anexos de isenÃƒÂ§ÃƒÂµes, reduÃƒÂ§ÃƒÂµes e crÃƒÂ©ditos outorgados, substituiÃƒÂ§ÃƒÂ£o tributÃƒÂ¡ria, regimes especiais, cBenef, EFD e prova fiscal."
+    },
+    {
+      "uf": "TO",
+      "name": "Tocantins",
+      "region": "Norte",
+      "status": "aguardando_revisao",
+      "publish_deep": false,
+      "document_count": 2,
+      "publishable_document_count": 2,
+      "flags": [
+        "contém Taxas",
+        "texto curto para RICMS/benefícios"
+      ],
+      "next_step": "Baixar RICMS/TO e benefÃƒÂ­cios no portal oficial do Tocantins."
+    }
+  ]
+}

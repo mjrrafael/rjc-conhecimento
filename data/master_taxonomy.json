@@ -1,0 +1,537 @@
+{
+  "schema": "rjc-master-taxonomy-v2",
+  "generated_on": "2026-04-29",
+  "editorial_rule": "Lei em tela antes da analise; conclusao apenas com fonte oficial e prova documental.",
+  "benefit_types": [
+    "isencao",
+    "reducao_base",
+    "credito_presumido_outorgado",
+    "diferimento",
+    "suspensao",
+    "nao_incidencia_imunidade",
+    "monofasico",
+    "aliquota_zero",
+    "regime_especial",
+    "fundo_contrapartida",
+    "st_antecipacao",
+    "exportacao_creditos",
+    "importacao_regime"
+  ],
+  "benefit_groups": [
+    {
+      "id": "agro-alimentos",
+      "title": "Agropecuário, alimentos e cesta básica",
+      "summary": "Benefícios que normalmente dependem de produto, destinação, produtor rural, insumo, industrialização ou política de abastecimento.",
+      "keywords": [
+        "agropecuário",
+        "agropecuario",
+        "produtor rural",
+        "atividade rural",
+        "insumo agropecuário",
+        "insumo agropecuario",
+        "fertilizante",
+        "defensivo",
+        "semente",
+        "muda",
+        "ração",
+        "racao",
+        "milho",
+        "soja",
+        "arroz",
+        "feijão",
+        "feijao",
+        "leite",
+        "carne",
+        "frango",
+        "peixe",
+        "alimento",
+        "cesta básica",
+        "cesta basica"
+      ]
+    },
+    {
+      "id": "eletronicos-informatica-telecom",
+      "title": "Eletrônicos, informática e telecomunicações",
+      "summary": "Tratamentos ligados a equipamentos eletrônicos, bens de informática, telecomunicações, processamento de dados e cadeia tecnológica.",
+      "keywords": [
+        "eletrônico",
+        "eletronico",
+        "eletrônicos",
+        "eletronicos",
+        "informática",
+        "informatica",
+        "computador",
+        "computadores",
+        "software",
+        "hardware",
+        "processamento de dados",
+        "telecomunicação",
+        "telecomunicacao",
+        "telecomunicações",
+        "telefonia",
+        "telefone",
+        "celular",
+        "aparelho",
+        "equipamento de comunicação",
+        "equipamento de comunicacao",
+        "semicondutor",
+        "componentes eletrônicos",
+        "componentes eletronicos"
+      ]
+    },
+    {
+      "id": "veiculos-autopecas-transporte",
+      "title": "Veículos, autopeças e transporte",
+      "summary": "Benefícios e regimes para veículos, autopeças, transporte, frete, implementos, ônibus, caminhões e cadeias automotivas.",
+      "keywords": [
+        "veículo",
+        "veiculo",
+        "veículos",
+        "veiculos",
+        "automotor",
+        "automóvel",
+        "automovel",
+        "autopeça",
+        "autopeca",
+        "peças",
+        "pecas",
+        "caminhão",
+        "caminhao",
+        "ônibus",
+        "onibus",
+        "motocicleta",
+        "chassi",
+        "renavam",
+        "transporte",
+        "transportador",
+        "frete",
+        "carga",
+        "passageiro",
+        "implemento rodoviário",
+        "implemento rodoviario"
+      ]
+    },
+    {
+      "id": "medicamentos-saude",
+      "title": "Medicamentos, saúde e produtos hospitalares",
+      "summary": "Hipóteses de tratamento favorecido para medicamentos, produtos médico-hospitalares, saúde pública, deficiência e equipamentos assistivos.",
+      "keywords": [
+        "medicamento",
+        "medicamentos",
+        "farmacêutico",
+        "farmaceutico",
+        "hospital",
+        "hospitalar",
+        "produto médico",
+        "produto medico",
+        "saúde",
+        "saude",
+        "deficiente",
+        "deficiência",
+        "deficiencia",
+        "prótese",
+        "protese",
+        "órtese",
+        "ortese",
+        "cadeira de rodas",
+        "insumo hospitalar",
+        "equipamento hospitalar"
+      ]
+    },
+    {
+      "id": "energia-combustiveis-infraestrutura",
+      "title": "Energia, combustíveis e infraestrutura",
+      "summary": "Regras especiais envolvendo energia elétrica, combustíveis, gás, infraestrutura, obras, concessões e cadeias essenciais.",
+      "keywords": [
+        "energia elétrica",
+        "energia eletrica",
+        "combustível",
+        "combustivel",
+        "combustíveis",
+        "combustiveis",
+        "diesel",
+        "gasolina",
+        "etanol",
+        "álcool",
+        "alcool",
+        "biodiesel",
+        "biocombustível",
+        "biocombustivel",
+        "gás natural",
+        "gas natural",
+        "glp",
+        "infraestrutura",
+        "concessão",
+        "concessao",
+        "obra pública",
+        "obra publica"
+      ]
+    },
+    {
+      "id": "industria-maquinas-equipamentos",
+      "title": "Indústria, máquinas e equipamentos",
+      "summary": "Benefícios de desenvolvimento industrial, máquinas, equipamentos, ativo imobilizado, bens de capital, implantação e modernização.",
+      "keywords": [
+        "indústria",
+        "industria",
+        "industrial",
+        "industrialização",
+        "industrializacao",
+        "máquina",
+        "maquina",
+        "máquinas",
+        "maquinas",
+        "equipamento",
+        "equipamentos",
+        "bem de capital",
+        "bens de capital",
+        "ativo imobilizado",
+        "implantação",
+        "implantacao",
+        "modernização",
+        "modernizacao",
+        "investimento",
+        "parque industrial"
+      ]
+    },
+    {
+      "id": "importacao-exportacao-comercio-exterior",
+      "title": "Importação, exportação e comércio exterior",
+      "summary": "Imunidade, não incidência, suspensão, diferimento, desembaraço, importação por conta e ordem, exportação e regimes ligados ao exterior.",
+      "keywords": [
+        "importação",
+        "importacao",
+        "importado",
+        "desembaraço",
+        "desembaraco",
+        "exportação",
+        "exportacao",
+        "exterior",
+        "comércio exterior",
+        "comercio exterior",
+        "drawback",
+        "zona franca",
+        "área de livre comércio",
+        "area de livre comercio",
+        "fim específico de exportação",
+        "fim especifico de exportacao"
+      ]
+    },
+    {
+      "id": "atacado-comercio-distribuicao",
+      "title": "Atacado, comércio e centros de distribuição",
+      "summary": "Regimes e benefícios para atacadistas, varejo, distribuição, centrais, comércio, carga efetiva e credenciamentos.",
+      "keywords": [
+        "atacadista",
+        "atacado",
+        "comércio atacadista",
+        "comercio atacadista",
+        "varejo",
+        "varejista",
+        "distribuição",
+        "distribuicao",
+        "distribuidor",
+        "centro de distribuição",
+        "centro de distribuicao",
+        "central de distribuição",
+        "central de distribuicao",
+        "carga efetiva",
+        "regime atacadista"
+      ]
+    },
+    {
+      "id": "social-educacao-cultura-entidades",
+      "title": "Social, educação, cultura e entidades",
+      "summary": "Benefícios vinculados a entidades, assistência, educação, cultura, livros, doações, pessoas com deficiência e políticas públicas.",
+      "keywords": [
+        "educação",
+        "educacao",
+        "ensino",
+        "escola",
+        "universidade",
+        "cultura",
+        "livro",
+        "livros",
+        "entidade",
+        "filantrópica",
+        "filantropica",
+        "assistência social",
+        "assistencia social",
+        "doação",
+        "doacao",
+        "deficiência",
+        "deficiencia",
+        "pessoa com deficiência",
+        "pessoa com deficiencia"
+      ]
+    },
+    {
+      "id": "construcao-minerais-madeira",
+      "title": "Construção, minerais, madeira e materiais",
+      "summary": "Tratamentos para construção civil, minerais, madeira, cimento, cerâmica, aço, materiais e cadeias extrativas.",
+      "keywords": [
+        "construção civil",
+        "construcao civil",
+        "cimento",
+        "cerâmica",
+        "ceramica",
+        "madeira",
+        "mineral",
+        "minério",
+        "minerio",
+        "pedra",
+        "areia",
+        "brita",
+        "aço",
+        "aco",
+        "ferro",
+        "metalúrgica",
+        "metalurgica",
+        "material de construção",
+        "material de construcao"
+      ]
+    }
+  ],
+  "federal_requirements": [
+    {
+      "id": "irpj",
+      "title": "IRPJ",
+      "terms": [
+        "IRPJ",
+        "RIR",
+        "Lei 9.430",
+        "Lei 9.249"
+      ],
+      "expected_files": [
+        "Decreto_9580_2018_Regulamento_IRPJ.txt",
+        "Lei_9430_1996_Compilada_IRPJ.txt"
+      ],
+      "minimum": "regra matriz, contribuinte, lucro real, presumido, arbitrado, adicionais, pagamentos, ECF e prova"
+    },
+    {
+      "id": "csll",
+      "title": "CSLL",
+      "terms": [
+        "CSLL",
+        "Lei 7.689",
+        "Lei 15.079"
+      ],
+      "expected_files": [
+        "Lei_7689_1988_CSLL_Original.txt",
+        "Lei_15079_2024_Adicional_CSLL.txt"
+      ],
+      "minimum": "base, aliquotas, adicional, compensacao, base negativa, ECF e prova"
+    },
+    {
+      "id": "pis",
+      "title": "PIS/Pasep",
+      "terms": [
+        "PIS",
+        "Pasep",
+        "Lei 10.637",
+        "IN RFB 2.121"
+      ],
+      "expected_files": [
+        "Lei_10637_2002_PIS_Nao_Cumulativo.txt",
+        "IN_RFB_2121_2022_PIS_COFINS_Parte1.txt"
+      ],
+      "minimum": "cumulativo, nao cumulativo, importacao, monofasico, aliquota zero, creditos e EFD"
+    },
+    {
+      "id": "cofins",
+      "title": "Cofins",
+      "terms": [
+        "COFINS",
+        "Lei 10.833",
+        "LC 70",
+        "IN RFB 2.121"
+      ],
+      "expected_files": [
+        "Lei_10833_2003_Compilada_COFINS.txt",
+        "LC_70_1991_COFINS_Original.txt"
+      ],
+      "minimum": "cumulativo, nao cumulativo, importacao, retencoes, monofasico, creditos e EFD"
+    },
+    {
+      "id": "ipi",
+      "title": "IPI",
+      "terms": [
+        "IPI",
+        "TIPI",
+        "RIPI"
+      ],
+      "expected_files": [
+        "Decreto_7212_2010_RIPI.txt",
+        "TIPI_Vigente_2022_Parte1.txt"
+      ],
+      "minimum": "industrializacao, equiparados, fato gerador, TIPI, suspensoes, isencoes, ZFM e prova"
+    },
+    {
+      "id": "iof",
+      "title": "IOF",
+      "terms": [
+        "IOF",
+        "Decreto 6.306",
+        "Lei 5.143"
+      ],
+      "expected_files": [
+        "Decreto_6306_2007_Regulamento_IOF.txt",
+        "Decreto_12499_2025_IOF_Alteracoes2.txt"
+      ],
+      "minimum": "credito, cambio, seguro, titulos, valores mobiliarios, aliquotas e alteracoes vigentes"
+    },
+    {
+      "id": "irpf_pf",
+      "title": "IRPF e pessoa fisica",
+      "terms": [
+        "IRPF",
+        "pessoa fisica",
+        "Lei 9.250"
+      ],
+      "expected_files": [
+        "Lei_9250_1995_IRPF.txt",
+        "Lei_15191_2025_IRPF_Tabela_Progressiva.txt"
+      ],
+      "minimum": "rendimentos, deducoes, ganho de capital, tabela progressiva, declaracao e prova"
+    },
+    {
+      "id": "simples_mei",
+      "title": "Simples Nacional e MEI",
+      "terms": [
+        "Simples Nacional",
+        "MEI",
+        "LC 123"
+      ],
+      "expected_files": [
+        "LC_123_2006_Simples_Nacional.txt",
+        "LC_128_2008_MEI.txt"
+      ],
+      "minimum": "enquadramento, anexos, sublimites, segregacao de receita, monofasico/ST/retencoes e PGDAS-D"
+    },
+    {
+      "id": "lucro_real",
+      "title": "Lucro Real",
+      "terms": [
+        "Lucro Real",
+        "Lalur",
+        "Lacs"
+      ],
+      "expected_files": [
+        "Decreto_9580_2018_Regulamento_IRPJ.txt",
+        "Lei_9430_1996_Compilada_IRPJ.txt"
+      ],
+      "minimum": "adicoes, exclusoes, compensacoes, estimativa, trimestral/anual, ECD, ECF e prova contabil"
+    },
+    {
+      "id": "lucro_presumido",
+      "title": "Lucro Presumido",
+      "terms": [
+        "Lucro Presumido",
+        "presuncao",
+        "Lei 8.981"
+      ],
+      "expected_files": [
+        "Lei_8981_1995_Lucro_Real_Presumido.txt",
+        "Decreto_12808_2026_Lucro_Presumido.txt"
+      ],
+      "minimum": "percentuais, segregacao de receita, limite, retencoes, PIS/Cofins cumulativo e ECF"
+    },
+    {
+      "id": "lucro_arbitrado",
+      "title": "Lucro Arbitrado",
+      "terms": [
+        "Lucro Arbitrado",
+        "arbitramento"
+      ],
+      "expected_files": [
+        "Lei_8981_1995_Lucro_Real_Presumido.txt",
+        "Decreto_9580_2018_Regulamento_IRPJ.txt"
+      ],
+      "minimum": "hipoteses de arbitramento, base, percentuais, provas e riscos"
+    },
+    {
+      "id": "comercio_exterior",
+      "title": "Importacao, exportacao e regimes aduaneiros",
+      "terms": [
+        "importacao",
+        "exportacao",
+        "aduaneiro",
+        "drawback",
+        "Siscomex"
+      ],
+      "expected_files": [
+        "Decreto_6759_2009_Regulamento_Aduaneiro.txt",
+        "Lei_10865_2004_PIS_COFINS_Importacao.txt"
+      ],
+      "minimum": "II, IPI importacao, PIS/Cofins-Importacao, despacho, regimes especiais, drawback, REINTEGRA e prova"
+    },
+    {
+      "id": "beneficios_federais",
+      "title": "Beneficios federais, DIRBI e reducao de beneficios",
+      "terms": [
+        "DIRBI",
+        "beneficios fiscais",
+        "renuncias",
+        "Lei 14.973"
+      ],
+      "expected_files": [
+        "Lei_14973_2024_DIRBI.txt",
+        "Lei_15321_2025_DIRBI_Obrigatoriedade.txt",
+        "Decreto_12861_2026_Regulamento_Beneficios.txt"
+      ],
+      "minimum": "habilitacao, fruicao, declaracao, DIRBI, reducao de beneficios, prova e controles"
+    },
+    {
+      "id": "reforma",
+      "title": "Reforma Tributaria",
+      "terms": [
+        "IBS",
+        "CBS",
+        "Imposto Seletivo",
+        "cClassTrib",
+        "cCredPres"
+      ],
+      "expected_files": [
+        "EC_132_2023_Reforma_Tributaria.txt",
+        "LC_214_2025_Compilada_IBS_CBS_IS.txt",
+        "LC_227_2026_Comite_Gestor_IBS.txt"
+      ],
+      "minimum": "EC 132, LC 214, LC 227, IBS, CBS, IS, CST, cClassTrib, cCredPres, transicao e documentos fiscais"
+    },
+    {
+      "id": "folha_clt",
+      "title": "Folha, CLT e previdenciario",
+      "terms": [
+        "CLT",
+        "previdencia",
+        "eSocial",
+        "DCTFWeb",
+        "FGTS"
+      ],
+      "expected_files": [
+        "Lei_8212_1991_Custeio_Previdencia.txt",
+        "Lei_8213_1991_Beneficios_Previdencia.txt"
+      ],
+      "minimum": "contrato, jornada, salario, encargos, seguridade, eSocial, DCTFWeb, Reinf, FGTS e prova"
+    }
+  ],
+  "confaz_families": {
+    "convenios": {
+      "title": "Convenios ICMS",
+      "base_url": "https://www.confaz.fazenda.gov.br/legislacao/convenios"
+    },
+    "ajustes": {
+      "title": "Ajustes SINIEF",
+      "base_url": "https://www.confaz.fazenda.gov.br/legislacao/ajustes"
+    },
+    "protocolos": {
+      "title": "Protocolos ICMS",
+      "base_url": "https://www.confaz.fazenda.gov.br/legislacao/protocolos"
+    }
+  },
+  "validation_triple": [
+    "texto legal direto em tela",
+    "fonte oficial e vigencia identificadas",
+    "leitura contraditoria: escopo, revogacao, condicao, documento e risco"
+  ]
+}

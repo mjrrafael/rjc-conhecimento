@@ -553,6 +553,82 @@ a.state-card:hover {
   text-transform: uppercase;
 }
 
+.review-pill.approved {
+  border-color: rgba(4, 120, 87, 0.28);
+  background: #ecfdf5;
+  color: #047857;
+}
+
+.review-pill.danger {
+  border-color: rgba(185, 28, 28, 0.28);
+  background: #fef2f2;
+  color: #b91c1c;
+}
+
+.benefit-cross-grid {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.benefit-cross-card {
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: #fff;
+  padding: 18px;
+  display: grid;
+  gap: 12px;
+}
+
+.benefit-cross-card h3,
+.benefit-cross-card p {
+  margin: 0;
+}
+
+.benefit-cross-card p,
+.benefit-cross-card dd {
+  color: var(--muted);
+}
+
+.benefit-cross-card dl {
+  margin: 0;
+  display: grid;
+  grid-template-columns: 92px minmax(0, 1fr);
+  gap: 8px 12px;
+}
+
+.benefit-cross-card dt {
+  font-weight: 850;
+  color: var(--accent-dark);
+}
+
+.benefit-cross-card dd {
+  margin: 0;
+}
+
+.mini-link-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.mini-link-list a,
+.mini-link-list span {
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 7px 9px;
+  color: var(--ink);
+  background: #f8fafc;
+  font-weight: 750;
+  text-decoration: none;
+}
+
+.source-warning {
+  border-left: 3px solid #b45309;
+  padding-left: 10px;
+  color: #92400e;
+}
+
 .source-audit-list,
 .source-audit-docs {
   display: grid;
@@ -2017,6 +2093,7 @@ a.state-card:hover {
   .matrix-grid,
   .signal-grid,
   .benefit-sector-grid,
+  .benefit-cross-grid,
   .signal-study,
   .topic-index-grid,
   .department-grid,
@@ -2128,6 +2205,10 @@ a.state-card:hover {
   }
 
   .matrix-card dl {
+    grid-template-columns: 1fr;
+  }
+
+  .benefit-cross-card dl {
     grid-template-columns: 1fr;
   }
 

@@ -240,6 +240,24 @@ window.RJC_SEARCH = [
     "tags": "PIS Cofins IPI IOF IRPJ CSLL reforma beneficios DIRBI previdencia folha"
   },
   {
+    "title": "Auditoria mestre do portal",
+    "url": "auditoria/index.html",
+    "summary": "Cobertura, lacunas, status editorial, fontes e fila de curadoria do portal tributario.",
+    "tags": "auditoria cobertura lacunas fonte oficial estados federal confaz workflow A VALIDAR"
+  },
+  {
+    "title": "Matriz nacional de beneficios fiscais",
+    "url": "beneficios/index.html",
+    "summary": "Cruzamento por UF, tributo, NCM/CEST, grupo economico, tipo de beneficio e prova documental.",
+    "tags": "beneficios fiscais NCM CEST cBenef CST cClassTrib isencao reducao credito presumido diferimento monofasico"
+  },
+  {
+    "title": "CONFAZ dos ultimos 5 anos",
+    "url": "confaz/ultimos-5-anos.html",
+    "summary": "Indice de Convenios ICMS, Ajustes SINIEF e Protocolos ICMS para curadoria e cruzamentos.",
+    "tags": "CONFAZ Convenios ICMS Ajustes SINIEF Protocolos ICMS 2022 2023 2024 2025 2026"
+  },
+  {
     "title": "Legislacao federal em tela",
     "url": "federal/legislacao/index.html",
     "summary": "IRPJ, CSLL, IOF, IPI, PIS, Cofins, Reforma Tributaria, Folha e CLT por capitulos, com lei antes da analise.",

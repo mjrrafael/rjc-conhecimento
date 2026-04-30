@@ -43,6 +43,10 @@ ROOT = Path(__file__).resolve().parents[1]
 CATALOG = ROOT / "data" / "portal_catalog.json"
 INVENTORY = ROOT / "data" / "legal_inventory.json"
 STATE_SOURCE_AUDIT = ROOT / "data" / "state_source_audit.json"
+MASTER_TAXONOMY = ROOT / "data" / "master_taxonomy.json"
+MASTER_COVERAGE = ROOT / "data" / "master_source_coverage.json"
+BENEFITS_CROSSWALK = ROOT / "data" / "benefits_crosswalk.json"
+CONFAZ_5Y = ROOT / "data" / "confaz_ultimos_5_anos.json"
 
 FULL_SEARCH_STOPWORDS = {
     "a", "o", "as", "os", "um", "uma", "uns", "umas", "de", "da", "do", "das", "dos",
@@ -410,6 +414,12 @@ def load_inventory() -> dict:
     if not INVENTORY.exists():
         return {"states": [], "federal": {"themes": {}, "documents": []}}
     return json.loads(INVENTORY.read_text(encoding="utf-8"))
+
+
+def load_json(path: Path, fallback: object) -> object:
+    if not path.exists():
+        return fallback
+    return json.loads(path.read_text(encoding="utf-8"))
 
 
 def fmt_num(value: int | float | str) -> str:
@@ -1210,6 +1220,8 @@ def layout(path: str, title: str, subtitle: str, body: str, active: str = "") ->
         ("estados/index.html", "Estados", "estados"),
         ("confaz/index.html", "CONFAZ", "confaz"),
         ("federal/index.html", "Federal", "federal"),
+        ("beneficios/index.html", "Beneficios", "beneficios"),
+        ("auditoria/index.html", "Auditoria", "auditoria"),
         ("folha-clt/index.html", "Folha e CLT", "folha"),
         ("biblioteca/index.html", "Biblioteca", "biblioteca")
     ]
@@ -1220,10 +1232,11 @@ def layout(path: str, title: str, subtitle: str, body: str, active: str = "") ->
     study_links = [
         ("federal/legislacao/index.html", "Leis federais"),
         ("estados/index.html", "ICMS por Estado"),
-        ("federal/beneficios-federais.html", "Benefícios"),
+        ("beneficios/index.html", "Beneficios/NCM"),
+        ("auditoria/index.html", "Auditoria"),
         ("federal/legislacao/reforma-tributaria/index.html", "Reforma"),
         ("federal/legislacao/reforma-tributaria/cst-cclasstrib-ibs-cbs.html", "CST/cClassTrib"),
-        ("confaz/index.html", "CONFAZ"),
+        ("confaz/ultimos-5-anos.html", "CONFAZ 5 anos"),
     ]
     study_html = "".join(
         f'<a href="{prefix}{href}">{label}</a>'
@@ -1358,6 +1371,218 @@ def related_links(topic: dict) -> str:
         return ""
     html = "".join(f'<a href="{escape(link["href"])}">{escape(link["label"])}</a>' for link in links)
     return f'<section class="continuity"><h2>Continuar a leitura</h2><div>{html}</div></section>'
+
+
+def master_bundle() -> dict:
+    return {
+        "taxonomy": load_json(MASTER_TAXONOMY, {"benefit_groups": [], "federal_requirements": []}),
+        "coverage": load_json(MASTER_COVERAGE, {"summary": {}, "federal": [], "states": []}),
+        "benefits": load_json(BENEFITS_CROSSWALK, {"summary": {}, "entries": []}),
+        "confaz": load_json(CONFAZ_5Y, {"years": [], "families": {}}),
+    }
+
+
+def status_badge(status: str) -> str:
+    label = (status or "sem_status").replace("_", " ")
+    klass = "review-pill"
+    if status in {"publicado_v1", "aprovado_v1"}:
+        klass += " approved"
+    elif status in {"a_estruturar", "sem_status"}:
+        klass += " danger"
+    return f'<span class="{klass}">{escape(label)}</span>'
+
+
+def source_audit_index_page(data: dict) -> str:
+    master = master_bundle()
+    coverage = master["coverage"]
+    federal_rows = []
+    for item in coverage.get("federal", []):
+        files = [f for f in item.get("expected_files", []) if f.get("available")]
+        file_text = ", ".join(f["file"] for f in files) or "A VALIDAR"
+        federal_rows.append(f"""
+<article class="portal-card searchable-card" data-search="{escape(item.get('title', '') + ' ' + item.get('minimum', '') + ' ' + file_text)}">
+  <span class="card-kicker">{status_badge(item.get('status', ''))}</span>
+  <h3>{escape(item.get('title', ''))}</h3>
+  <p>{escape(item.get('minimum', ''))}</p>
+  <small>{escape(file_text)}</small>
+</article>
+""")
+    state_rows = []
+    for item in coverage.get("states", []):
+        state_rows.append(f"""
+<tr>
+  <td><a href="../{escape(state_href(item.get('uf', '')))}">{escape(item.get('uf', ''))}</a></td>
+  <td>{escape(item.get('name', ''))}</td>
+  <td>{status_badge(item.get('status', ''))}</td>
+  <td>{fmt_num(item.get('document_count', 0))}</td>
+  <td>{escape(', '.join(item.get('flags', [])[:3]) or 'sem alerta automatizado')}</td>
+</tr>
+""")
+    summary = coverage.get("summary", {})
+    body = f"""
+{hero("Auditoria mestre do portal", "Cobertura, lacunas, status editorial e fila de curadoria para transformar o portal em base tributaria nacional confiavel.", "Governanca")}
+<section class="method-strip">
+  <div><strong>{fmt_num(summary.get('registered_sources', 0))}</strong><span>fontes registradas</span></div>
+  <div><strong>{fmt_num(summary.get('federal_requirements', 0))}</strong><span>temas federais essenciais</span></div>
+  <div><strong>{fmt_num(summary.get('states_deep', 0))}</strong><span>Estados profundos</span></div>
+  <div><strong>{fmt_num(summary.get('states_waiting_review', 0))}</strong><span>Estados aguardando revisao</span></div>
+</section>
+<section class="content-block">
+  <h2>Como ler esta auditoria</h2>
+  <p>Esta pagina nao e parecer. Ela mostra onde o portal ja possui lei em tela, onde existe fonte local pronta para virar capitulo, e onde o conteudo ainda deve permanecer como aguardando revisao.</p>
+  <p>Uma conclusao tributaria so sai do estado de revisao quando o dispositivo legal, a fonte oficial, a vigencia, o documento de prova e a leitura contraditoria estiverem amarrados.</p>
+</section>
+<section class="section-wrap">
+  <div class="section-heading">
+    <span class="eyebrow">Federal</span>
+    <h2>Cobertura dos temas essenciais</h2>
+  </div>
+  {card_grid(federal_rows)}
+</section>
+<section class="content-block inventory-table">
+  <h2>Estados e status editorial</h2>
+  <div class="doc-table-wrap">
+    <table class="doc-table">
+      <thead><tr><th>UF</th><th>Estado</th><th>Status</th><th>Docs</th><th>Alertas</th></tr></thead>
+      <tbody>{''.join(state_rows)}</tbody>
+    </table>
+  </div>
+</section>
+<section class="continuity">
+  <h2>Continuar a auditoria</h2>
+  <div>
+    <a href="../beneficios/index.html">Matriz nacional de beneficios</a>
+    <a href="../confaz/ultimos-5-anos.html">CONFAZ dos ultimos 5 anos</a>
+    <a href="../estados/auditoria-fontes.html">Auditoria fonte a fonte dos Estados</a>
+    <a href="../federal/acervo.html">Acervo federal</a>
+  </div>
+</section>
+"""
+    return layout("auditoria/index.html", "Auditoria mestre", "Cobertura, lacunas e status editorial do portal.", body, "auditoria")
+
+
+def benefits_crosswalk_page(data: dict) -> str:
+    master = master_bundle()
+    benefits = master["benefits"]
+    entries = benefits.get("entries", [])
+    grouped: dict[str, list[dict]] = {}
+    for item in entries:
+        grouped.setdefault(item.get("benefit_group", "A classificar"), []).append(item)
+    groups = []
+    for group_name, items in sorted(grouped.items()):
+        rows = []
+        for item in items[:30]:
+            uf = item.get("jurisdiction", "")
+            href = f"../estados/{uf.lower()}.html" if len(uf) == 2 else "../federal/index.html"
+            rows.append(f"""
+<article class="benefit-cross-card searchable-card" data-search="{escape(' '.join(str(item.get(k, '')) for k in item))}">
+  <span class="card-kicker">{escape(item.get('jurisdiction', ''))} · {escape(item.get('tax', ''))} · {status_badge(item.get('evidence_status', ''))}</span>
+  <h3>{escape(item.get('name', item.get('jurisdiction', '')))}</h3>
+  <p>{escape(item.get('legal_description', '')[:420])}</p>
+  <dl>
+    <dt>NCM/CEST</dt><dd>{escape(item.get('ncm_cest', 'A VALIDAR'))}</dd>
+    <dt>Tipo</dt><dd>{escape(item.get('benefit_type', 'A VALIDAR'))}</dd>
+    <dt>Prova</dt><dd>{escape(item.get('proof_required', ''))}</dd>
+    <dt>Risco</dt><dd>{escape(item.get('risk', ''))}</dd>
+  </dl>
+  <a href="{escape(href)}">abrir origem</a>
+</article>
+""")
+        groups.append(f"""
+<section class="section-wrap" id="{escape(slug(group_name))}">
+  <div class="section-heading">
+    <span class="eyebrow">Grupo de beneficio</span>
+    <h2>{escape(group_name)}</h2>
+    <p>{fmt_num(len(items))} ocorrencias organizadas para cruzamento por UF, tributo, NCM/CEST, documento e prova.</p>
+  </div>
+  <div class="benefit-cross-grid">{''.join(rows)}</div>
+</section>
+""")
+    summary = benefits.get("summary", {})
+    body = f"""
+{hero("Matriz nacional de beneficios fiscais", "Cruzamento inicial por UF, tributo, setor, tipo de tratamento, NCM/CEST, documento de prova e status editorial.", "Beneficios e NCM")}
+<section class="law-ledger">
+  <div>
+    <h2>Regra de uso</h2>
+    <p>A matriz aponta caminhos de estudo. Ela nao autoriza aplicar beneficio sem ler o artigo, a vigencia, as condicoes, as vedacoes e o documento fiscal exigido.</p>
+  </div>
+  <div>
+    <h2>Validacao tripla</h2>
+    <p>Antes de cruzar NCM, beneficio e operacao: confirme texto legal direto, fonte/vigencia oficial e leitura contraditoria de escopo, revogacao, condicao e prova.</p>
+  </div>
+  <div>
+    <h2>Entradas</h2>
+    <p>{fmt_num(summary.get('entries', 0))} entradas, {fmt_num(summary.get('published_entries', 0))} em UFs/temas profundos e {fmt_num(summary.get('waiting_review_entries', 0))} aguardando revisao.</p>
+  </div>
+</section>
+{''.join(groups)}
+<section class="continuity">
+  <h2>Continuar a leitura</h2>
+  <div>
+    <a href="../auditoria/index.html">Auditoria mestre</a>
+    <a href="../confaz/ultimos-5-anos.html">CONFAZ 5 anos</a>
+    <a href="../federal/pis-cofins.html">PIS/Cofins</a>
+    <a href="../painel-fiscal/index.html">Painel fiscal</a>
+  </div>
+</section>
+"""
+    return layout("beneficios/index.html", "Matriz nacional de beneficios fiscais", "Beneficios por UF, tributo, setor, NCM e prova.", body, "beneficios")
+
+
+def confaz_5y_page(data: dict) -> str:
+    master = master_bundle()
+    confaz = master["confaz"]
+    sections = []
+    for family_id, family in confaz.get("families", {}).items():
+        year_cards = []
+        for year in family.get("years", []):
+            acts = year.get("acts", [])
+            act_links = "".join(
+                f'<a href="{escape(act.get("url", ""))}" target="_blank" rel="noopener">{escape(act.get("title", "") or act.get("url", "").rsplit("/", 1)[-1])}</a>'
+                for act in acts[:12]
+            )
+            if not act_links:
+                act_links = "<span>A VALIDAR no indice oficial ou sem atos capturados nesta rodada.</span>"
+            error = f'<p class="source-warning">Captura pendente: {escape(year.get("fetch_error", ""))}</p>' if year.get("fetch_error") else ""
+            year_cards.append(f"""
+<article class="portal-card searchable-card" data-search="{escape(family.get('title', '') + ' ' + str(year.get('year', '')) + ' ' + ' '.join(a.get('url', '') for a in acts))}">
+  <span class="card-kicker">{escape(str(year.get('year', '')))} · {fmt_num(year.get('count', 0))} atos</span>
+  <h3>{escape(family.get('title', ''))}</h3>
+  <p>Indice oficial do CONFAZ para leitura, classificacao e futura captura integral em tela.</p>
+  {error}
+  <div class="mini-link-list">{act_links}</div>
+  <small><a href="{escape(year.get('index_url', ''))}" target="_blank" rel="noopener">abrir indice oficial</a></small>
+</article>
+""")
+        sections.append(f"""
+<section class="section-wrap" id="{escape(family_id)}">
+  <div class="section-heading">
+    <span class="eyebrow">CONFAZ</span>
+    <h2>{escape(family.get('title', ''))}</h2>
+    <p>{fmt_num(family.get('total', 0))} atos indexados nos ultimos 5 anos para curadoria, internalizacao estadual e cruzamento com beneficios.</p>
+  </div>
+  {card_grid(year_cards)}
+</section>
+""")
+    body = f"""
+{hero("CONFAZ dos ultimos 5 anos", "Indice oficial de Convenios ICMS, Ajustes SINIEF e Protocolos ICMS para sustentar beneficios, ST, documentos fiscais e reforma tributaria.", "CONFAZ")}
+<section class="content-block">
+  <h2>Como esta pagina entra na curadoria</h2>
+  <p>O indice mostra onde buscar os atos oficiais. O proximo passo, para cada ato relevante, e trazer o texto integral em tela, classificar tema, UF, produto, beneficio, documento fiscal e internalizacao estadual.</p>
+  <p>Convenio, Ajuste ou Protocolo nao substitui a norma estadual quando a aplicacao depende de internalizacao. O portal deve guardar as duas pontas: ato nacional e ato local.</p>
+</section>
+{''.join(sections)}
+<section class="continuity">
+  <h2>Continuar a leitura</h2>
+  <div>
+    <a href="index.html">CONFAZ: regra maior</a>
+    <a href="../beneficios/index.html">Matriz de beneficios</a>
+    <a href="../estados/index.html">Estados</a>
+    <a href="../auditoria/index.html">Auditoria mestre</a>
+  </div>
+</section>
+"""
+    return layout("confaz/ultimos-5-anos.html", "CONFAZ dos ultimos 5 anos", "Convenios, Ajustes e Protocolos ICMS para curadoria.", body, "confaz")
 
 
 def state_inventory_sections(state_inv: dict, verified_on: str, compact: bool = False, current_path: str = "") -> str:
@@ -1495,6 +1720,30 @@ def home(data: dict) -> str:
 """,
         federal_legislation_card("index.html"),
         goias_legislation_card("index.html"),
+        f"""
+<a class="portal-card searchable-card" href="beneficios/index.html" data-search="matriz nacional beneficios fiscais NCM CEST cBenef CST cClassTrib isencao reducao credito presumido diferimento monofasico">
+  <span class="card-kicker">Cruzamentos</span>
+  <h3>Matriz de beneficios</h3>
+  <p>Beneficios por UF, tributo, grupo economico, NCM/CEST, tipo de tratamento, prova documental e status editorial.</p>
+  <small>Auditar por produto e operacao</small>
+</a>
+""",
+        f"""
+<a class="portal-card searchable-card" href="auditoria/index.html" data-search="auditoria cobertura lacunas fontes workflow estados federal confaz">
+  <span class="card-kicker">Governanca</span>
+  <h3>Auditoria mestre</h3>
+  <p>Cobertura, lacunas, fontes registradas, Estados em revisao e proximas frentes de curadoria.</p>
+  <small>Ver status do portal</small>
+</a>
+""",
+        f"""
+<a class="portal-card searchable-card" href="confaz/ultimos-5-anos.html" data-search="CONFAZ ultimos 5 anos convenios ajustes sinief protocolos icms">
+  <span class="card-kicker">CONFAZ</span>
+  <h3>Ultimos 5 anos</h3>
+  <p>Indice oficial de Convenios ICMS, Ajustes SINIEF e Protocolos ICMS para cruzar beneficios, ST e documentos.</p>
+  <small>Abrir esteira nacional</small>
+</a>
+""",
         topic_card(next(t for t in topics if t["id"] == "folha-clt-previdencia")),
         f"""
 <a class="portal-card searchable-card" href="biblioteca/index.html" data-search="manual fiscal financeiro DP RH transportadoras painel fiscal biblioteca">
@@ -2394,6 +2643,26 @@ def search_index(data: dict) -> str:
         "summary": "Mapa de atos federais por tema, fonte publica e sinais de auditoria.",
         "tags": "PIS Cofins IPI IOF IRPJ CSLL reforma beneficios DIRBI previdencia folha"
     })
+    entries += [
+        {
+            "title": "Auditoria mestre do portal",
+            "url": "auditoria/index.html",
+            "summary": "Cobertura, lacunas, status editorial, fontes e fila de curadoria do portal tributario.",
+            "tags": "auditoria cobertura lacunas fonte oficial estados federal confaz workflow A VALIDAR",
+        },
+        {
+            "title": "Matriz nacional de beneficios fiscais",
+            "url": "beneficios/index.html",
+            "summary": "Cruzamento por UF, tributo, NCM/CEST, grupo economico, tipo de beneficio e prova documental.",
+            "tags": "beneficios fiscais NCM CEST cBenef CST cClassTrib isencao reducao credito presumido diferimento monofasico",
+        },
+        {
+            "title": "CONFAZ dos ultimos 5 anos",
+            "url": "confaz/ultimos-5-anos.html",
+            "summary": "Indice de Convenios ICMS, Ajustes SINIEF e Protocolos ICMS para curadoria e cruzamentos.",
+            "tags": "CONFAZ Convenios ICMS Ajustes SINIEF Protocolos ICMS 2022 2023 2024 2025 2026",
+        },
+    ]
     entries += legal_search_entries()
     entries += state_legal_search_entries(data)
     entries += [
@@ -2437,6 +2706,8 @@ def main() -> None:
     data["inventory"] = load_inventory()
     audit(data)
     write("index.html", home(data))
+    write("auditoria/index.html", source_audit_index_page(data))
+    write("beneficios/index.html", benefits_crosswalk_page(data))
     write("estados/index.html", estados_index(data))
     write("estados/auditoria-fontes.html", state_source_audit_page(data))
     for state in data["states"]:
@@ -2452,6 +2723,7 @@ def main() -> None:
         write(page["path"], federal_theme_page(data, page))
     write("federal/acervo.html", federal_acervo_page(data))
     write("confaz/index.html", topic_page(next(t for t in data["topics"] if t["id"] == "confaz-atos-beneficios"), "confaz"))
+    write("confaz/ultimos-5-anos.html", confaz_5y_page(data))
     folha_topic = next(t for t in data["topics"] if t["id"] == "folha-clt-previdencia")
     folha_extra = federal_inventory_sections(data, TOPIC_THEME_MAP.get(folha_topic["id"], []), data["site"]["verified_on"], compact=True, current_path="folha-clt/index.html")
     write("folha-clt/index.html", topic_page(folha_topic, "folha", folha_extra))
