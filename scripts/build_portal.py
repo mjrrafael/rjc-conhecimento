@@ -2455,7 +2455,7 @@ def biblioteca(data: dict) -> str:
 
 
 class FullSearchTextParser(HTMLParser):
-    skip_tags = {"script", "style", "head", "svg"}
+    skip_tags = {"script", "style", "head", "svg", "header", "footer", "nav"}
     block_tags = {"p", "div", "section", "article", "li", "tr", "td", "th", "h1", "h2", "h3", "h4", "br"}
 
     def __init__(self) -> None:
