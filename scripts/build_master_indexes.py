@@ -31,6 +31,7 @@ from state_legal_pages import (  # noqa: E402
     benefit_sector_results,
     collect_state_documents,
 )
+from validated_benefits import build_validated_benefits  # noqa: E402
 
 
 TODAY = date.today().isoformat()
@@ -354,87 +355,7 @@ def build_coverage() -> dict:
 
 
 def build_benefits_crosswalk() -> dict:
-    entries = []
-    curation = read_json(ROOT / "data" / "state_curadoria.json", {})
-    statuses = curation.get("statuses", {}) if isinstance(curation, dict) else {}
-    for uf, name in sorted(STATE_NAMES.items()):
-        if uf == "GO":
-            continue
-        docs = list(collect_state_documents(uf))
-        benefit_docs = [doc for doc in docs if "BENEF" in doc.get("category", "") or doc.get("category") in {"RICMS", "ICMS_ANEXOS"}]
-        sector_results = benefit_sector_results(benefit_docs)
-        for result in sector_results:
-            sector = result["sector"]
-            entries.append({
-                "jurisdiction": uf,
-                "name": name,
-                "tax": "ICMS",
-                "benefit_group_id": sector["id"],
-                "benefit_group": sector["title"],
-                "benefit_type": "a_classificar_pelo_dispositivo",
-                "ncm_cest": "A VALIDAR por item legal, XML e cadastro de produto",
-                "operation": "A VALIDAR por operacao concreta",
-                "legal_description": result.get("sample", ""),
-                "source_file": result.get("source", ""),
-                "evidence_status": statuses.get(uf, {}).get("status", "sem_status"),
-                "publish_deep": bool(statuses.get(uf, {}).get("publish_deep")),
-                "proof_required": sector["documents"],
-                "risk": sector["risk"],
-                "validation": [
-                    "confirmar texto legal integral na fonte estadual",
-                    "confirmar vigencia e ato modificador",
-                    "confirmar NCM/CEST, operacao, destinatario e documento fiscal",
-                ],
-            })
-
-    federal_benefits = [
-        {
-            "jurisdiction": "Federal",
-            "name": "PIS/Cofins",
-            "tax": "PIS/Cofins",
-            "benefit_group_id": "monofasico-aliquota-zero-suspensao",
-            "benefit_group": "Monofasico, aliquota zero, suspensao e creditos",
-            "benefit_type": "monofasico/aliquota_zero/suspensao/credito",
-            "ncm_cest": "A VALIDAR por lei setorial e tabela fiscal",
-            "operation": "receita, venda, importacao, revenda, fabricante/importador e etapa da cadeia",
-            "legal_description": "Leis setoriais e IN RFB 2.121/2022 exigem leitura por produto, NCM, etapa, receita e CST.",
-            "source_file": "IN_RFB_2121_2022_PIS_COFINS_Parte1.txt",
-            "evidence_status": "publicado_v1",
-            "publish_deep": True,
-            "proof_required": "XML, cadastro de produto, NCM, CST, EFD-Contribuicoes, lei setorial e memoria de enquadramento.",
-            "risk": "Tratar produto por semelhanca comercial sem a NCM e a etapa previstas na lei.",
-            "validation": ["lei setorial", "IN RFB 2.121/2022", "EFD e XML"],
-        },
-        {
-            "jurisdiction": "Federal",
-            "name": "IPI",
-            "tax": "IPI",
-            "benefit_group_id": "industrializacao-tipi-zfm",
-            "benefit_group": "Industrializacao, TIPI, suspensoes e ZFM",
-            "benefit_type": "isencao/suspensao/aliquota_tipi",
-            "ncm_cest": "NCM/TIPI obrigatoria",
-            "operation": "industrializacao, importacao, saida de industrial ou equiparado",
-            "legal_description": "RIPI e TIPI ligam processo industrial, classificacao fiscal, aliquota e eventual tratamento favorecido.",
-            "source_file": "Decreto_7212_2010_RIPI.txt",
-            "evidence_status": "publicado_v1",
-            "publish_deep": True,
-            "proof_required": "processo produtivo, NCM/TIPI, XML, ficha tecnica, livro fiscal e memoria de aliquota.",
-            "risk": "Aplicar aliquota ou beneficio por descricao comercial sem classificacao fiscal validada.",
-            "validation": ["RIPI", "TIPI", "documento fiscal"],
-        },
-    ]
-    entries.extend(federal_benefits)
-    return {
-        "schema": "rjc-benefits-crosswalk-v2",
-        "generated_on": TODAY,
-        "editorial_status": "matriz de auditoria e cruzamento; nao substitui leitura do dispositivo legal especifico",
-        "summary": {
-            "entries": len(entries),
-            "published_entries": sum(1 for item in entries if item["publish_deep"]),
-            "waiting_review_entries": sum(1 for item in entries if item["evidence_status"] == "aguardando_revisao"),
-        },
-        "entries": entries,
-    }
+    return build_validated_benefits()
 
 
 def fetch_links(url: str) -> list[dict[str, str]]:
@@ -527,7 +448,7 @@ def write_markdown(coverage: dict, benefits: dict, confaz: dict) -> None:
         "",
         f"Gerado em {TODAY}.",
         "",
-        "Este arquivo resume cobertura, lacunas e cruzamentos do Portal RJC Tributario Aberto. Ele e uma trilha de auditoria, nao um parecer tributario.",
+        "Este arquivo resume cobertura e cruzamentos do Portal RJC Tributario Aberto. Ele e uma trilha de auditoria, nao um parecer tributario.",
         "",
         "## Cobertura",
         "",
@@ -537,7 +458,10 @@ def write_markdown(coverage: dict, benefits: dict, confaz: dict) -> None:
         f"- Requisitos federais com fonte local disponivel: {coverage['summary']['federal_source_available']}",
         f"- Estados profundos: {coverage['summary']['states_deep']}",
         f"- Estados aguardando revisao: {coverage['summary']['states_waiting_review']}",
-        f"- Entradas na matriz de beneficios: {benefits['summary']['entries']}",
+        f"- Entradas validadas na matriz de beneficios: {benefits['summary']['entries']}",
+        f"- Entradas com NCM/TIPI: {benefits['summary'].get('with_ncm', 0)}",
+        f"- Entradas com CEST: {benefits['summary'].get('with_cest', 0)}",
+        f"- Entradas com cBenef: {benefits['summary'].get('with_cbenef', 0)}",
         "",
         "## Lacunas Federais",
         "",

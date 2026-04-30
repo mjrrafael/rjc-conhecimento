@@ -1,8 +1,8 @@
 # Auditoria Mestre v2
 
-Gerado em 2026-04-29.
+Gerado em 2026-04-30.
 
-Este arquivo resume cobertura, lacunas e cruzamentos do Portal RJC Tributario Aberto. Ele e uma trilha de auditoria, nao um parecer tributario.
+Este arquivo resume cobertura e cruzamentos do Portal RJC Tributario Aberto. Ele e uma trilha de auditoria, nao um parecer tributario.
 
 ## Cobertura
 
@@ -12,7 +12,10 @@ Este arquivo resume cobertura, lacunas e cruzamentos do Portal RJC Tributario Ab
 - Requisitos federais com fonte local disponivel: 4
 - Estados profundos: 13
 - Estados aguardando revisao: 14
-- Entradas na matriz de beneficios: 212
+- Entradas validadas na matriz de beneficios: 12064
+- Entradas com NCM/TIPI: 2322
+- Entradas com CEST: 268
+- Entradas com cBenef: 2259
 
 ## Lacunas Federais
 

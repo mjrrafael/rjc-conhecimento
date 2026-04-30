@@ -606,6 +606,26 @@ a.state-card:hover {
   margin: 0;
 }
 
+.law-excerpt {
+  margin-top: 4px;
+  border-top: 1px solid var(--line);
+  padding-top: 10px;
+}
+
+.law-excerpt summary {
+  cursor: pointer;
+  font-weight: 850;
+  color: var(--navy);
+}
+
+.law-excerpt p {
+  margin: 10px 0;
+  color: var(--ink);
+  font-size: 0.92rem;
+  line-height: 1.55;
+  overflow-wrap: anywhere;
+}
+
 .mini-link-list {
   display: flex;
   flex-wrap: wrap;

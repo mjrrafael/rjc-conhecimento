@@ -61,24 +61,43 @@ def main() -> int:
     benefit_entries = benefits.get("entries", [])
     if not benefit_entries:
         errors.append("matriz de beneficios vazia")
+    if benefits.get("schema") != "rjc-validated-benefits-crosswalk-v3":
+        errors.append("matriz de beneficios precisa estar no schema validado v3")
     required_benefit_keys = {
+        "id",
         "jurisdiction",
         "tax",
         "benefit_group",
         "benefit_type",
-        "ncm_cest",
+        "product_or_operation",
+        "ncm",
+        "cest",
+        "cbenef",
+        "cst",
         "source_file",
-        "evidence_status",
+        "official_url",
+        "legal_basis",
+        "legal_excerpt",
+        "validation_status",
         "proof_required",
         "risk",
-        "validation",
+        "validation_basis",
     }
     for index, item in enumerate(benefit_entries):
         missing = sorted(required_benefit_keys - set(item))
         if missing:
             errors.append(f"beneficio {index} sem campos obrigatorios: {missing}")
-        if item.get("publish_deep") and item.get("evidence_status") == "aguardando_revisao":
-            errors.append(f"beneficio publicado como profundo mas ainda aguardando revisao: {item.get('jurisdiction')} {item.get('benefit_group')}")
+        if item.get("validation_status") != "validado":
+            errors.append(f"beneficio nao validado publicado: {item.get('id')}")
+        joined = json.dumps(item, ensure_ascii=False).lower()
+        if "a validar" in joined or "aguardando_revis" in joined:
+            errors.append(f"beneficio contem pendencia publica: {item.get('id')}")
+        if not item.get("official_url", "").startswith(("http://", "https://")):
+            errors.append(f"beneficio sem URL oficial: {item.get('id')}")
+        if not item.get("legal_excerpt") or len(item.get("legal_excerpt", "")) < 80:
+            errors.append(f"beneficio sem trecho legal suficiente: {item.get('id')}")
+        if not any(item.get(key) for key in ("ncm", "cest", "cbenef", "cst", "cclasstrib")) and "Produto ou operação descrito literalmente" in item.get("product_or_operation", ""):
+            errors.append(f"beneficio sem codigo nem descricao operacional especifica: {item.get('id')}")
 
     if len(confaz.get("years", [])) != 5:
         errors.append("indice CONFAZ nao cobre exatamente 5 anos")

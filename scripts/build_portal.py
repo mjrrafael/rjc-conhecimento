@@ -1398,7 +1398,7 @@ def source_audit_index_page(data: dict) -> str:
     federal_rows = []
     for item in coverage.get("federal", []):
         files = [f for f in item.get("expected_files", []) if f.get("available")]
-        file_text = ", ".join(f["file"] for f in files) or "A VALIDAR"
+        file_text = ", ".join(f["file"] for f in files) or "sem arquivo local"
         federal_rows.append(f"""
 <article class="portal-card searchable-card" data-search="{escape(item.get('title', '') + ' ' + item.get('minimum', '') + ' ' + file_text)}">
   <span class="card-kicker">{status_badge(item.get('status', ''))}</span>
@@ -1461,7 +1461,7 @@ def source_audit_index_page(data: dict) -> str:
     return layout("auditoria/index.html", "Auditoria mestre", "Cobertura, lacunas e status editorial do portal.", body, "auditoria")
 
 
-def benefits_crosswalk_page(data: dict) -> str:
+def legacy_benefits_crosswalk_page(data: dict) -> str:
     master = master_bundle()
     benefits = master["benefits"]
     entries = benefits.get("entries", [])
@@ -1480,8 +1480,8 @@ def benefits_crosswalk_page(data: dict) -> str:
   <h3>{escape(item.get('name', item.get('jurisdiction', '')))}</h3>
   <p>{escape(item.get('legal_description', '')[:420])}</p>
   <dl>
-    <dt>NCM/CEST</dt><dd>{escape(item.get('ncm_cest', 'A VALIDAR'))}</dd>
-    <dt>Tipo</dt><dd>{escape(item.get('benefit_type', 'A VALIDAR'))}</dd>
+    <dt>NCM/CEST</dt><dd>{escape(item.get('ncm_cest', 'nao indicado no trecho'))}</dd>
+    <dt>Tipo</dt><dd>{escape(item.get('benefit_type', 'tratamento tributario especifico'))}</dd>
     <dt>Prova</dt><dd>{escape(item.get('proof_required', ''))}</dd>
     <dt>Risco</dt><dd>{escape(item.get('risk', ''))}</dd>
   </dl>
@@ -1529,6 +1529,121 @@ def benefits_crosswalk_page(data: dict) -> str:
     return layout("beneficios/index.html", "Matriz nacional de beneficios fiscais", "Beneficios por UF, tributo, setor, NCM e prova.", body, "beneficios")
 
 
+def benefits_crosswalk_page(data: dict) -> str:
+    master = master_bundle()
+    benefits = master["benefits"]
+    entries = [item for item in benefits.get("entries", []) if item.get("validation_status") == "validado"]
+
+    def join_list(item: dict, key: str) -> str:
+        value = item.get(key)
+        if isinstance(value, list):
+            return ", ".join(str(part) for part in value if str(part).strip())
+        return str(value or "")
+
+    def field(item: dict, key: str, fallback: str = "nao indicado no trecho") -> str:
+        value = join_list(item, key)
+        return value if value else fallback
+
+    def source_href(item: dict) -> str:
+        jurisdiction = str(item.get("jurisdiction", ""))
+        if len(jurisdiction) == 2:
+            return "../" + state_href(jurisdiction)
+        return "../federal/index.html"
+
+    grouped: dict[str, list[dict]] = {}
+    for item in entries:
+        grouped.setdefault(item.get("benefit_group", "Geral e operacao tributaria"), []).append(item)
+
+    groups = []
+    for group_name, items in sorted(grouped.items()):
+        rows = []
+        for item in items:
+            href = source_href(item)
+            search_text = " ".join(
+                str(item.get(key, ""))
+                for key in (
+                    "jurisdiction",
+                    "tax",
+                    "benefit_group",
+                    "benefit_type",
+                    "product_or_operation",
+                    "ncm",
+                    "cest",
+                    "cbenef",
+                    "cst",
+                    "cclasstrib",
+                    "conditions",
+                    "prohibitions",
+                    "legal_basis",
+                    "legal_excerpt",
+                )
+            )
+            rows.append(f"""
+<article id="{escape(item.get('id', ''))}" class="benefit-cross-card searchable-card" data-search="{escape(search_text)}">
+  <span class="card-kicker">{escape(item.get('jurisdiction', ''))} &middot; {escape(item.get('tax', ''))} &middot; validado</span>
+  <h3>{escape(item.get('benefit_type', 'Tratamento tributario'))}</h3>
+  <p>{escape(item.get('product_or_operation', ''))}</p>
+  <dl>
+    <dt>NCM/TIPI</dt><dd>{escape(field(item, 'ncm'))}</dd>
+    <dt>CEST</dt><dd>{escape(field(item, 'cest'))}</dd>
+    <dt>cBenef</dt><dd>{escape(field(item, 'cbenef'))}</dd>
+    <dt>CST</dt><dd>{escape(field(item, 'cst'))}</dd>
+    <dt>Base legal</dt><dd>{escape(item.get('legal_basis', ''))}</dd>
+    <dt>Condicao</dt><dd>{escape(item.get('conditions', ''))}</dd>
+    <dt>Vedacao</dt><dd>{escape(item.get('prohibitions', ''))}</dd>
+    <dt>Prova</dt><dd>{escape(item.get('proof_required', ''))}</dd>
+    <dt>Risco</dt><dd>{escape(item.get('risk', ''))}</dd>
+  </dl>
+  <details class="law-excerpt">
+    <summary>legislacao em tela</summary>
+    <p>{escape(item.get('legal_excerpt', ''))}</p>
+    <a href="{escape(item.get('official_url', ''))}" target="_blank" rel="noopener">abrir fonte legal</a>
+  </details>
+  <a href="{escape(href)}">abrir origem</a>
+</article>
+""")
+        groups.append(f"""
+<section class="section-wrap" id="{escape(slug(group_name))}">
+  <div class="section-heading">
+    <span class="eyebrow">Grupo de beneficio</span>
+    <h2>{escape(group_name)}</h2>
+    <p>{fmt_num(len(items))} registros com trecho legal, condicao de uso, prova e codigo fiscal quando a norma traz o codigo em tela.</p>
+  </div>
+  <div class="benefit-cross-grid">{''.join(rows)}</div>
+</section>
+""")
+
+    summary = benefits.get("summary", {})
+    body = f"""
+{hero("Matriz nacional de beneficios fiscais", "Lista validada por UF, tributo, tratamento, NCM/TIPI, CEST, cBenef, CST, condicao, prova e trecho legal.", "Beneficios e NCM")}
+<section class="law-ledger">
+  <div>
+    <h2>Regra de uso</h2>
+    <p>A matriz leva ao dispositivo legal em tela. O beneficio so deve ser aplicado quando produto, operacao, destinatario, periodo, regime e documento fiscal couberem no texto normativo.</p>
+  </div>
+  <div>
+    <h2>Como ler</h2>
+    <p>Comece pelo grupo economico, confira o tipo de tratamento, leia a legislacao transcrita, depois valide codigos, condicoes, vedacoes, prova documental e reflexo no XML/EFD.</p>
+  </div>
+  <div>
+    <h2>Entradas validadas</h2>
+    <p>{fmt_num(summary.get('entries', 0))} entradas; {fmt_num(summary.get('with_ncm', 0))} com NCM/TIPI; {fmt_num(summary.get('with_cest', 0))} com CEST; {fmt_num(summary.get('with_cbenef', 0))} com cBenef; {fmt_num(summary.get('with_cst', 0))} com CST.</p>
+  </div>
+</section>
+{''.join(groups)}
+<section class="continuity">
+  <h2>Continuar a leitura</h2>
+  <div>
+    <a href="../auditoria/index.html">Auditoria mestre</a>
+    <a href="../confaz/ultimos-5-anos.html">CONFAZ 5 anos</a>
+    <a href="../federal/pis-cofins.html">PIS/Cofins</a>
+    <a href="../painel-fiscal/index.html">Painel fiscal</a>
+  </div>
+</section>
+"""
+    return layout("beneficios/index.html", "Matriz nacional de beneficios fiscais", "Beneficios por UF, tributo, setor, NCM e prova.", body, "beneficios")
+
+
 def confaz_5y_page(data: dict) -> str:
     master = master_bundle()
     confaz = master["confaz"]
@@ -1542,7 +1657,7 @@ def confaz_5y_page(data: dict) -> str:
                 for act in acts[:12]
             )
             if not act_links:
-                act_links = "<span>A VALIDAR no indice oficial ou sem atos capturados nesta rodada.</span>"
+                act_links = "<span>Sem atos capturados nesta rodada no indice consultado.</span>"
             error = f'<p class="source-warning">Captura pendente: {escape(year.get("fetch_error", ""))}</p>' if year.get("fetch_error") else ""
             year_cards.append(f"""
 <article class="portal-card searchable-card" data-search="{escape(family.get('title', '') + ' ' + str(year.get('year', '')) + ' ' + ' '.join(a.get('url', '') for a in acts))}">
@@ -2564,6 +2679,63 @@ def search_scope(rel: str) -> dict[str, str]:
     return scope
 
 
+def benefit_index_text(value: object) -> str:
+    if isinstance(value, list):
+        return " ".join(str(part) for part in value if str(part).strip())
+    return str(value or "")
+
+
+def benefit_full_search_entries() -> list[dict[str, str]]:
+    payload = load_json(BENEFITS_CROSSWALK, {"entries": []})
+    entries: list[dict[str, str]] = []
+    for item in payload.get("entries", []):
+        if item.get("validation_status") != "validado":
+            continue
+        parts = [
+            item.get("jurisdiction", ""),
+            item.get("name", ""),
+            item.get("tax", ""),
+            item.get("benefit_group", ""),
+            item.get("benefit_type", ""),
+            item.get("product_or_operation", ""),
+            benefit_index_text(item.get("ncm")),
+            benefit_index_text(item.get("cest")),
+            benefit_index_text(item.get("cbenef")),
+            benefit_index_text(item.get("cst")),
+            benefit_index_text(item.get("cclasstrib")),
+            item.get("conditions", ""),
+            item.get("prohibitions", ""),
+            item.get("legal_basis", ""),
+            item.get("source_title", ""),
+            item.get("legal_excerpt", ""),
+        ]
+        text = " ".join(str(part) for part in parts if str(part).strip())
+        title = " · ".join(
+            part for part in [
+                item.get("jurisdiction", ""),
+                item.get("tax", ""),
+                item.get("benefit_type", ""),
+            ]
+            if part
+        )
+        summary = search_summary(
+            " ".join([item.get("product_or_operation", ""), item.get("conditions", ""), item.get("legal_basis", "")]),
+            "",
+        )
+        entries.append({
+            "title": title or "Beneficio fiscal validado",
+            "url": f"beneficios/index.html#{item.get('id', '')}",
+            "summary": summary,
+            "tags": compact_search_terms(text),
+            "body": search_body(text, 1100),
+            "kind": "Beneficio fiscal validado",
+            "jurisdiction": item.get("jurisdiction", ""),
+            "tax": item.get("tax", ""),
+            "theme": item.get("benefit_group", ""),
+        })
+    return entries
+
+
 def full_text_search_entries() -> list[dict[str, str]]:
     entries: list[dict[str, str]] = []
     for html_path in sorted(ROOT.rglob("*.html")):
@@ -2648,7 +2820,7 @@ def search_index(data: dict) -> str:
             "title": "Auditoria mestre do portal",
             "url": "auditoria/index.html",
             "summary": "Cobertura, lacunas, status editorial, fontes e fila de curadoria do portal tributario.",
-            "tags": "auditoria cobertura lacunas fonte oficial estados federal confaz A VALIDAR",
+            "tags": "auditoria cobertura lacunas fonte oficial estados federal confaz",
         },
         {
             "title": "Matriz nacional de beneficios fiscais",
@@ -2733,7 +2905,7 @@ def main() -> None:
     for state_legal_path, state_legal_content in build_state_legal_pages(layout, data).items():
         write(state_legal_path, state_legal_content)
     write("assets/portal-search.js", search_index(data))
-    write("assets/portal-search-full.json", json.dumps(full_text_search_entries(), ensure_ascii=False, separators=(",", ":")))
+    write("assets/portal-search-full.json", json.dumps(full_text_search_entries() + benefit_full_search_entries(), ensure_ascii=False, separators=(",", ":")))
     print("Portal generated successfully.")
 
 

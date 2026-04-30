@@ -243,7 +243,7 @@ window.RJC_SEARCH = [
     "title": "Auditoria mestre do portal",
     "url": "auditoria/index.html",
     "summary": "Cobertura, lacunas, status editorial, fontes e fila de curadoria do portal tributario.",
-    "tags": "auditoria cobertura lacunas fonte oficial estados federal confaz A VALIDAR"
+    "tags": "auditoria cobertura lacunas fonte oficial estados federal confaz"
   },
   {
     "title": "Matriz nacional de beneficios fiscais",
