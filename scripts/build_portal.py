@@ -1729,7 +1729,7 @@ def home(data: dict) -> str:
 </a>
 """,
         f"""
-<a class="portal-card searchable-card" href="auditoria/index.html" data-search="auditoria cobertura lacunas fontes workflow estados federal confaz">
+<a class="portal-card searchable-card" href="auditoria/index.html" data-search="auditoria cobertura lacunas fontes estados federal confaz">
   <span class="card-kicker">Governanca</span>
   <h3>Auditoria mestre</h3>
   <p>Cobertura, lacunas, fontes registradas, Estados em revisao e proximas frentes de curadoria.</p>
@@ -2648,7 +2648,7 @@ def search_index(data: dict) -> str:
             "title": "Auditoria mestre do portal",
             "url": "auditoria/index.html",
             "summary": "Cobertura, lacunas, status editorial, fontes e fila de curadoria do portal tributario.",
-            "tags": "auditoria cobertura lacunas fonte oficial estados federal confaz workflow A VALIDAR",
+            "tags": "auditoria cobertura lacunas fonte oficial estados federal confaz A VALIDAR",
         },
         {
             "title": "Matriz nacional de beneficios fiscais",
