@@ -1234,6 +1234,8 @@ def layout(path: str, title: str, subtitle: str, body: str, active: str = "") ->
         ("federal/legislacao/index.html", "Leis federais"),
         ("estados/index.html", "ICMS por Estado"),
         ("beneficios/index.html", "Beneficios/NCM"),
+        ("beneficios/setores.html", "Beneficios por setor"),
+        ("beneficios/reforma.html", "Beneficios IBS/CBS"),
         ("auditoria/index.html", "Auditoria"),
         ("federal/legislacao/reforma-tributaria/index.html", "Reforma"),
         ("federal/legislacao/reforma-tributaria/cst-cclasstrib-ibs-cbs.html", "CST/cClassTrib"),
@@ -1715,6 +1717,12 @@ def benefits_crosswalk_page(data: dict) -> str:
 <section class="continuity">
   <h2>Continuar a leitura</h2>
   <div>
+    <a href="setores.html">Benefícios por setor</a>
+    <a href="uf.html">Benefícios por UF</a>
+    <a href="reforma.html">Benefícios na Reforma</a>
+    <a href="cesta-basica.html">Cesta básica e agro</a>
+    <a href="regimes-diferenciados.html">Regimes diferenciados</a>
+    <a href="documentos-de-prova.html">Documentos de prova</a>
     <a href="../auditoria/index.html">Auditoria mestre</a>
     <a href="../confaz/ultimos-5-anos.html">CONFAZ 5 anos</a>
     <a href="../federal/pis-cofins.html">PIS/Cofins</a>
@@ -1723,6 +1731,205 @@ def benefits_crosswalk_page(data: dict) -> str:
 </section>
 """
     return layout("beneficios/index.html", "Matriz nacional de beneficios fiscais", "Beneficios por UF, tributo, setor, NCM e prova.", body, "beneficios")
+
+
+def benefit_value(item: dict, key: str, fallback: str = "nao indicado no trecho") -> str:
+    value = item.get(key)
+    if isinstance(value, list):
+        text = ", ".join(str(part) for part in value if str(part).strip())
+    else:
+        text = str(value or "")
+    return text if text else fallback
+
+
+def benefit_card(item: dict, current_path: str, compact: bool = False) -> str:
+    source = "../federal/index.html"
+    jurisdiction = str(item.get("jurisdiction", ""))
+    if len(jurisdiction) == 2:
+        source = "../" + state_href(jurisdiction)
+    registry = rel_href(current_path, f"beneficios/index.html#{item.get('id', '')}")
+    details = "" if compact else f"""
+  <dl>
+    <dt>NCM/TIPI</dt><dd>{escape(benefit_value(item, 'ncm'))}</dd>
+    <dt>CEST</dt><dd>{escape(benefit_value(item, 'cest'))}</dd>
+    <dt>cBenef</dt><dd>{escape(benefit_value(item, 'cbenef'))}</dd>
+    <dt>CST/cClassTrib</dt><dd>{escape(' / '.join(part for part in [benefit_value(item, 'cst', ''), benefit_value(item, 'cclasstrib', '')] if part) or 'nao indicado no trecho')}</dd>
+    <dt>Vigencia</dt><dd>{escape(benefit_value(item, 'validity_start', 'vigente no ato capturado'))}{' ate ' + escape(item.get('validity_end', '')) if item.get('validity_end') else ''}</dd>
+    <dt>Prova</dt><dd>{escape(item.get('proof_required', ''))}</dd>
+  </dl>
+  <details class="law-excerpt">
+    <summary>legislacao em tela</summary>
+    <p>{escape(item.get('legal_excerpt', ''))}</p>
+    <a href="{escape(item.get('official_url', ''))}" target="_blank" rel="noopener">abrir fonte legal</a>
+  </details>
+"""
+    search_text = " ".join(str(item.get(key, "")) for key in (
+        "jurisdiction", "tax", "benefit_group", "benefit_type", "product_or_operation",
+        "ncm", "cest", "cbenef", "cst", "cclasstrib", "conditions", "legal_basis",
+        "transition_status", "legal_nature", "legal_excerpt",
+    ))
+    return f"""
+<article class="benefit-cross-card searchable-card" data-search="{escape(search_text)}">
+  <span class="card-kicker">{escape(jurisdiction)} &middot; {escape(item.get('tax', ''))} &middot; {escape(item.get('transition_status', 'regra vigente'))}</span>
+  <h3>{escape(item.get('benefit_type', 'Tratamento tributario'))}</h3>
+  <p>{escape(item.get('product_or_operation', ''))}</p>
+  <p><strong>{escape(item.get('legal_nature', 'tratamento tributario especifico'))}</strong></p>
+  <p>{escape(item.get('conditions', ''))}</p>
+  {details}
+  <div class="mini-link-list">
+    <a href="{escape(registry)}">abrir registro completo</a>
+    <a href="{escape(source)}">abrir origem no portal</a>
+  </div>
+</article>
+"""
+
+
+def benefit_entries() -> list[dict]:
+    benefits = master_bundle()["benefits"]
+    return [item for item in benefits.get("entries", []) if item.get("validation_status") == "validado"]
+
+
+def benefit_special_page(
+    path: str,
+    title: str,
+    subtitle: str,
+    eyebrow: str,
+    entries: list[dict],
+    intro: str,
+    group_key: str = "benefit_group",
+) -> str:
+    grouped: dict[str, list[dict]] = {}
+    for item in entries:
+        grouped.setdefault(benefit_value(item, group_key, "Geral"), []).append(item)
+    sections = []
+    for group, items in sorted(grouped.items(), key=lambda pair: (-len(pair[1]), pair[0])):
+        cards = "".join(benefit_card(item, path, compact=len(items) > 80) for item in items)
+        sections.append(f"""
+<section class="section-wrap" id="{escape(slug(group))}">
+  <div class="section-heading">
+    <span class="eyebrow">{escape(eyebrow)}</span>
+    <h2>{escape(group)}</h2>
+    <p>{fmt_num(len(items))} registros ligados a este recorte. Abra cada registro para ler a base legal, condicao, prova e risco.</p>
+  </div>
+  <div class="benefit-cross-grid">{cards}</div>
+</section>
+""")
+    body = f"""
+{hero(title, subtitle, eyebrow)}
+<section class="content-block">
+  <h2>Como estudar esta página</h2>
+  <p>{escape(intro)}</p>
+</section>
+<section class="law-ledger">
+  <div><h2>Registros</h2><p>{fmt_num(len(entries))} registros validados neste recorte.</p></div>
+  <div><h2>Origem</h2><p>Estados, Federal e CONFAZ entram apenas quando o trecho legal possui fonte oficial, tratamento tributario e campo operacional verificavel.</p></div>
+  <div><h2>Prova</h2><p>O uso prático sempre volta ao XML, EFD, cadastro, memória de cálculo, ato legal e documentos da operação.</p></div>
+</section>
+{''.join(sections) if sections else '<section class="content-block"><h2>Nenhum registro publicado neste recorte</h2><p>O portal não publica conclusão sem trecho legal validado.</p></section>'}
+<section class="continuity">
+  <h2>Continuar a leitura</h2>
+  <div>
+    <a href="{escape(rel_href(path, 'beneficios/index.html'))}">matriz completa</a>
+    <a href="{escape(rel_href(path, 'beneficios/ncm.html'))}">NCM x beneficios</a>
+    <a href="{escape(rel_href(path, 'federal/legislacao/reforma-tributaria/index.html'))}">Reforma tributaria</a>
+    <a href="{escape(rel_href(path, 'confaz/ultimos-5-anos.html'))}">CONFAZ</a>
+  </div>
+</section>
+"""
+    return layout(path, title, subtitle, body, "beneficios")
+
+
+def benefits_by_sector_page(data: dict) -> str:
+    entries = benefit_entries()
+    return benefit_special_page(
+        "beneficios/setores.html",
+        "Benefícios fiscais por setor",
+        "Agro, alimentos, medicamentos, veículos, eletrônicos, informática, energia, combustíveis, indústria, atacado, logística e demais cadeias com tratamento fiscal em tela.",
+        "Setores",
+        entries,
+        "Entre pelo assunto econômico, depois confirme o tipo de tratamento. Setor é porta de leitura; a aplicação depende da mercadoria, NCM, operação, destinatário, vigência e documento.",
+    )
+
+
+def benefits_by_uf_page(data: dict) -> str:
+    entries = benefit_entries()
+    return benefit_special_page(
+        "beneficios/uf.html",
+        "Benefícios fiscais por UF e jurisdição",
+        "Mapa de registros validados por Estado, Federal e CONFAZ, com retorno ao texto legal e ao módulo de origem.",
+        "UF e jurisdição",
+        entries,
+        "Use esta página para começar pela jurisdição. Depois volte ao registro individual para separar ICMS estadual, regra federal, ato CONFAZ, código documental e prova.",
+        group_key="jurisdiction",
+    )
+
+
+def benefits_reforma_page(data: dict) -> str:
+    needles = ("IBS", "CBS", "cClassTrib", "cCredPres", "Imposto Seletivo", "Reforma Tribut")
+    entries = [item for item in benefit_entries() if any(needle.lower() in json.dumps(item, ensure_ascii=False).lower() for needle in needles)]
+    return benefit_special_page(
+        "beneficios/reforma.html",
+        "Benefícios e tratamentos da Reforma Tributária",
+        "Tratamentos de IBS/CBS, cClassTrib, cCredPres, regimes diferenciados, alíquota zero, redução, créditos e transição.",
+        "Reforma",
+        entries,
+        "Leia primeiro a natureza jurídica: redução, alíquota zero, crédito presumido, regime específico ou regra de transição. Depois confira CST, cClassTrib, cCredPres e documento fiscal.",
+        group_key="legal_nature",
+    )
+
+
+def benefits_compensacao_icms_page(data: dict) -> str:
+    needles = ("compensa", "transi", "ICMS", "cBenef", "LC 160", "Convênio ICMS 190", "saldo credor")
+    entries = [item for item in benefit_entries() if any(needle.lower() in json.dumps(item, ensure_ascii=False).lower() for needle in needles)]
+    return benefit_special_page(
+        "beneficios/compensacao-icms.html",
+        "Compensação, transição e benefícios de ICMS",
+        "Leitura de benefícios atuais de ICMS, cBenef, LC 160/2017, Convênio ICMS 190/2017 e reflexos da transição para IBS/CBS.",
+        "ICMS e transição",
+        entries,
+        "Este recorte não transforma benefício de ICMS em benefício de IBS/CBS. Ele mostra onde há regra atual, código estadual, transição, risco de convivência e necessidade de prova.",
+        group_key="jurisdiction",
+    )
+
+
+def benefits_cesta_basica_page(data: dict) -> str:
+    needles = ("cesta", "alimento", "hortícola", "horticola", "fruta", "ovo", "arroz", "feijão", "feijao", "leite", "carne", "agro")
+    entries = [item for item in benefit_entries() if any(needle.lower() in json.dumps(item, ensure_ascii=False).lower() for needle in needles)]
+    return benefit_special_page(
+        "beneficios/cesta-basica.html",
+        "Cesta básica, alimentos e agro",
+        "Benefícios e tratamentos para alimentos, cesta básica, agropecuária, insumos e produtos essenciais.",
+        "Cesta básica",
+        entries,
+        "A leitura segura começa pelo produto legalmente descrito. Nome comercial não basta: confirme NCM, destinação, etapa da cadeia, manutenção ou estorno de crédito e documento fiscal.",
+    )
+
+
+def benefits_regimes_diferenciados_page(data: dict) -> str:
+    needles = ("regime", "diferenciado", "específico", "especifico", "crédito presumido", "credito presumido", "alíquota zero", "aliquota zero", "redução", "reducao", "Zona Franca", "produtor rural")
+    entries = [item for item in benefit_entries() if any(needle.lower() in json.dumps(item, ensure_ascii=False).lower() for needle in needles)]
+    return benefit_special_page(
+        "beneficios/regimes-diferenciados.html",
+        "Regimes diferenciados, específicos e créditos presumidos",
+        "Tratamentos que exigem leitura de condição, opção, credenciamento, código, cálculo e prova documental.",
+        "Regimes",
+        entries,
+        "Regime diferenciado não é sinônimo de economia automática. O uso defensável depende do artigo, do sujeito, da operação, da condição e do documento que prova a fruição.",
+        group_key="legal_nature",
+    )
+
+
+def benefits_documents_page(data: dict) -> str:
+    entries = benefit_entries()
+    return benefit_special_page(
+        "beneficios/documentos-de-prova.html",
+        "Documentos de prova dos benefícios fiscais",
+        "XML, EFD, cadastro, NCM, cBenef, CST, cClassTrib, guias, atos concessivos, memória de cálculo e documentos comerciais por tipo de tratamento.",
+        "Prova",
+        entries,
+        "A tese só fica útil quando vira prova. Esta página agrupa benefícios pelo documento que normalmente sustenta a aplicação e ajuda a montar dossiê por operação.",
+        group_key="proof_required",
+    )
 
 
 def confaz_5y_page(data: dict) -> str:
@@ -2757,6 +2964,9 @@ def search_scope(rel: str) -> dict[str, str]:
         scope["jurisdiction"] = "Nacional"
         scope["tax"] = "ICMS"
         scope["theme"] = "CONFAZ"
+    elif rel.startswith("beneficios/"):
+        scope["jurisdiction"] = "Nacional"
+        scope["theme"] = "beneficios fiscais"
     return scope
 
 
@@ -2784,6 +2994,10 @@ def benefit_full_search_entries() -> list[dict[str, str]]:
             benefit_index_text(item.get("cbenef")),
             benefit_index_text(item.get("cst")),
             benefit_index_text(item.get("cclasstrib")),
+            item.get("transition_status", ""),
+            item.get("legal_nature", ""),
+            item.get("validity_start", ""),
+            item.get("validity_end", ""),
             item.get("conditions", ""),
             item.get("prohibitions", ""),
             item.get("legal_basis", ""),
@@ -2862,6 +3076,11 @@ def full_text_search_entries() -> list[dict[str, str]]:
             continue
         rel = html_path.relative_to(ROOT).as_posix()
         if rel.startswith("assets/"):
+            continue
+        if rel.startswith("beneficios/"):
+            # Benefit/NCM records are indexed below as structured entries.
+            # Parsing the large matrix HTML pages duplicates content and makes
+            # the build unnecessarily slow.
             continue
         raw = html_path.read_text(encoding="utf-8", errors="ignore")
         parser = FullSearchTextParser()
@@ -2945,13 +3164,55 @@ def search_index(data: dict) -> str:
             "title": "Matriz nacional de beneficios fiscais",
             "url": "beneficios/index.html",
             "summary": "Cruzamento por UF, tributo, NCM/CEST, grupo economico, tipo de beneficio e prova documental.",
-            "tags": "beneficios fiscais NCM CEST cBenef CST cClassTrib isencao reducao credito presumido diferimento monofasico",
+            "tags": "beneficios fiscais NCM CEST cBenef CST cClassTrib isencao reducao credito presumido diferimento monofasico compensacao beneficio ICMS cBenef SP exportacao ICMS",
         },
         {
             "title": "Lista NCM x beneficios fiscais",
             "url": "beneficios/ncm.html",
             "summary": "NCM/TIPI cruzado com beneficios estaduais, federais e CONFAZ, com condicao, base legal e fonte.",
             "tags": "NCM TIPI beneficios fiscais estados federal CONFAZ isencao reducao credito presumido diferimento monofasico",
+        },
+        {
+            "title": "Beneficios fiscais por setor",
+            "url": "beneficios/setores.html",
+            "summary": "Beneficios por cadeia economica: agro, alimentos, medicamentos, veiculos, eletronicos, informatica, energia, industria, atacado e logistica.",
+            "tags": "beneficios fiscais setor agro alimentos cesta basica medicamentos veiculos eletronicos informatica combustiveis industria atacado logistica",
+        },
+        {
+            "title": "Beneficios fiscais por UF",
+            "url": "beneficios/uf.html",
+            "summary": "Registros validados por jurisdicao estadual, Federal e CONFAZ.",
+            "tags": "beneficios fiscais UF Estado Federal CONFAZ ICMS PIS Cofins IPI IBS CBS",
+        },
+        {
+            "title": "Beneficios e tratamentos da Reforma Tributaria",
+            "url": "beneficios/reforma.html",
+            "summary": "IBS, CBS, cClassTrib, cCredPres, regimes diferenciados, reducoes, aliquota zero, creditos e transicao.",
+            "tags": "IBS CBS Reforma Tributaria cClassTrib cCredPres CST regimes diferenciados cesta basica split payment",
+        },
+        {
+            "title": "Compensacao, transicao e beneficios de ICMS",
+            "url": "beneficios/compensacao-icms.html",
+            "summary": "Beneficios atuais de ICMS, cBenef, LC 160, Convenio ICMS 190 e convivencia com IBS/CBS.",
+            "tags": "ICMS cBenef LC 160 Convenio ICMS 190 compensacao beneficio ICMS transicao beneficios fiscais cBenef SP exportacao ICMS",
+        },
+        {
+            "title": "Cesta basica, alimentos e agro",
+            "url": "beneficios/cesta-basica.html",
+            "summary": "Tratamentos fiscais para alimentos, cesta basica, agropecuaria, insumos e produtos essenciais.",
+            "tags": "cesta basica alimentos agro insumos arroz feijao leite carne horticolas frutas ovos",
+        },
+        {
+            "title": "Regimes diferenciados e creditos presumidos",
+            "url": "beneficios/regimes-diferenciados.html",
+            "summary": "Regimes especificos, reducoes, creditos presumidos, aliquota zero e tratamentos condicionados.",
+            "tags": "regime diferenciado regime especifico credito presumido aliquota zero reducao beneficio fiscal",
+        },
+        {
+            "title": "Documentos de prova dos beneficios fiscais",
+            "url": "beneficios/documentos-de-prova.html",
+            "summary": "XML, EFD, NCM, cBenef, CST, cClassTrib, guias, atos concessivos e memoria de calculo.",
+            "tags": "prova documental XML EFD NCM cBenef CST cClassTrib guia ato concessivo memoria de calculo",
         },
         {
             "title": "CONFAZ dos ultimos 5 anos",
@@ -3006,6 +3267,13 @@ def main() -> None:
     write("auditoria/index.html", source_audit_index_page(data))
     write("beneficios/index.html", benefits_crosswalk_page(data))
     write("beneficios/ncm.html", ncm_benefits_page(data))
+    write("beneficios/setores.html", benefits_by_sector_page(data))
+    write("beneficios/uf.html", benefits_by_uf_page(data))
+    write("beneficios/reforma.html", benefits_reforma_page(data))
+    write("beneficios/compensacao-icms.html", benefits_compensacao_icms_page(data))
+    write("beneficios/cesta-basica.html", benefits_cesta_basica_page(data))
+    write("beneficios/regimes-diferenciados.html", benefits_regimes_diferenciados_page(data))
+    write("beneficios/documentos-de-prova.html", benefits_documents_page(data))
     write("estados/index.html", estados_index(data))
     write("estados/auditoria-fontes.html", state_source_audit_page(data))
     for state in data["states"]:

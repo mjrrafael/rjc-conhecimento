@@ -494,9 +494,13 @@
       "expected_files": [
         "EC_132_2023_Reforma_Tributaria.txt",
         "LC_214_2025_Compilada_IBS_CBS_IS.txt",
-        "LC_227_2026_Comite_Gestor_IBS.txt"
+        "LC_227_2026_Comite_Gestor_IBS.txt",
+        "data/legal_sources/reforma_tributaria/Decreto_12955_2026_Regulamento_CBS.txt",
+        "data/legal_sources/reforma_tributaria/Resolucao_CGIBS_6_2026_Regulamento_IBS.txt",
+        "data/legal_sources/reforma_tributaria/Portaria_Conjunta_MF_CGIBS_7_2026.txt",
+        "data/legal_sources/reforma_tributaria/Ato_Conjunto_RFB_CGIBS_1_2025_Obrigacoes_2026.txt"
       ],
-      "minimum": "EC 132, LC 214, LC 227, IBS, CBS, IS, CST, cClassTrib, cCredPres, transicao e documentos fiscais"
+      "minimum": "EC 132, LC 214, LC 227, Decreto CBS, Resolucao IBS, Portaria comum, Ato Conjunto 2026, CST, cClassTrib, cCredPres, transicao e documentos fiscais"
     },
     {
       "id": "folha_clt",

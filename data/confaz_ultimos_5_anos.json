@@ -5775,7 +5775,7 @@
         {
           "year": 2026,
           "index_url": "https://www.confaz.fazenda.gov.br/legislacao/convenios/2026",
-          "count": 52,
+          "count": 56,
           "fetch_error": "",
           "acts": [
             {
@@ -6141,11 +6141,39 @@
               "themes": [
                 "a_classificar"
               ]
+            },
+            {
+              "title": "CONVÊNIO ICMS 53/26",
+              "url": "https://www.confaz.fazenda.gov.br/legislacao/convenios/2026/CV053_26",
+              "themes": [
+                "a_classificar"
+              ]
+            },
+            {
+              "title": "CONVÊNIO ICMS 54/26",
+              "url": "https://www.confaz.fazenda.gov.br/legislacao/convenios/2026/CV054_26",
+              "themes": [
+                "a_classificar"
+              ]
+            },
+            {
+              "title": "CONVÊNIO ICMS 55/26",
+              "url": "https://www.confaz.fazenda.gov.br/legislacao/convenios/2026/CV055_26",
+              "themes": [
+                "a_classificar"
+              ]
+            },
+            {
+              "title": "CONVÊNIO ICMS 56/26",
+              "url": "https://www.confaz.fazenda.gov.br/legislacao/convenios/2026/CV056_26",
+              "themes": [
+                "a_classificar"
+              ]
             }
           ]
         }
       ],
-      "total": 870
+      "total": 874
     },
     "ajustes": {
       "title": "Ajustes SINIEF",

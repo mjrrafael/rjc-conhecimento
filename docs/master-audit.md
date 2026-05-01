@@ -12,8 +12,8 @@ Este arquivo resume cobertura e cruzamentos do Portal RJC Tributario Aberto. Ele
 - Requisitos federais com fonte local disponivel: 4
 - Estados profundos: 13
 - Estados aguardando revisao: 14
-- Entradas validadas na matriz de beneficios: 12064
-- Entradas com NCM/TIPI: 2322
+- Entradas validadas na matriz de beneficios: 12221
+- Entradas com NCM/TIPI: 2383
 - Entradas com CEST: 268
 - Entradas com cBenef: 2259
 
@@ -34,7 +34,7 @@ Este arquivo resume cobertura e cruzamentos do Portal RJC Tributario Aberto. Ele
 | Lucro Arbitrado | fonte_local_disponivel | hipoteses de arbitramento, base, percentuais, provas e riscos | Lei_8981_1995_Lucro_Real_Presumido.txt, Decreto_9580_2018_Regulamento_IRPJ.txt |
 | Importacao, exportacao e regimes aduaneiros | fonte_local_disponivel | II, IPI importacao, PIS/Cofins-Importacao, despacho, regimes especiais, drawback, REINTEGRA e prova | Decreto_6759_2009_Regulamento_Aduaneiro.txt, Lei_10865_2004_PIS_COFINS_Importacao.txt |
 | Beneficios federais, DIRBI e reducao de beneficios | publicado_v1 | habilitacao, fruicao, declaracao, DIRBI, reducao de beneficios, prova e controles | Lei_14973_2024_DIRBI.txt, Lei_15321_2025_DIRBI_Obrigatoriedade.txt, Decreto_12861_2026_Regulamento_Beneficios.txt |
-| Reforma Tributaria | publicado_v1 | EC 132, LC 214, LC 227, IBS, CBS, IS, CST, cClassTrib, cCredPres, transicao e documentos fiscais | EC_132_2023_Reforma_Tributaria.txt, LC_214_2025_Compilada_IBS_CBS_IS.txt, LC_227_2026_Comite_Gestor_IBS.txt |
+| Reforma Tributaria | publicado_v1 | EC 132, LC 214, LC 227, Decreto CBS, Resolucao IBS, Portaria comum, Ato Conjunto 2026, CST, cClassTrib, cCredPres, transicao e documentos fiscais | EC_132_2023_Reforma_Tributaria.txt, LC_214_2025_Compilada_IBS_CBS_IS.txt, LC_227_2026_Comite_Gestor_IBS.txt, data/legal_sources/reforma_tributaria/Decreto_12955_2026_Regulamento_CBS.txt, data/legal_sources/reforma_tributaria/Resolucao_CGIBS_6_2026_Regulamento_IBS.txt, data/legal_sources/reforma_tributaria/Portaria_Conjunta_MF_CGIBS_7_2026.txt, data/legal_sources/reforma_tributaria/Ato_Conjunto_RFB_CGIBS_1_2025_Obrigacoes_2026.txt |
 | Folha, CLT e previdenciario | publicado_v1 | contrato, jornada, salario, encargos, seguridade, eSocial, DCTFWeb, Reinf, FGTS e prova | Lei_8212_1991_Custeio_Previdencia.txt, Lei_8213_1991_Beneficios_Previdencia.txt |
 
 ## Estados
@@ -73,6 +73,6 @@ Este arquivo resume cobertura e cruzamentos do Portal RJC Tributario Aberto. Ele
 
 | Familia | Total indexado | Fonte oficial |
 | --- | ---: | --- |
-| Convenios ICMS | 870 | https://www.confaz.fazenda.gov.br/legislacao/convenios |
+| Convenios ICMS | 874 | https://www.confaz.fazenda.gov.br/legislacao/convenios |
 | Ajustes SINIEF | 145 | https://www.confaz.fazenda.gov.br/legislacao/ajustes |
 | Protocolos ICMS | 318 | https://www.confaz.fazenda.gov.br/legislacao/protocolos |

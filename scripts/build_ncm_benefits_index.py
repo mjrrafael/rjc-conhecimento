@@ -10,6 +10,7 @@ from __future__ import annotations
 import csv
 import hashlib
 import json
+import os
 import re
 import sys
 import time
@@ -275,6 +276,10 @@ def entry_rows(source: dict) -> list[dict]:
                 "product_or_operation": entry["product_or_operation"],
                 "conditions": entry["conditions"],
                 "prohibitions": entry["prohibitions"],
+                "validity_start": entry.get("validity_start", ""),
+                "validity_end": entry.get("validity_end", ""),
+                "transition_status": entry.get("transition_status", ""),
+                "legal_nature": entry.get("legal_nature", ""),
                 "proof_required": entry["proof_required"],
                 "risk": entry["risk"],
                 "legal_basis": entry["legal_basis"],
@@ -326,6 +331,49 @@ def build_index(include_confaz: bool = True) -> dict:
     }
 
 
+def merge_cached_confaz_rows(payload: dict) -> dict:
+    previous = load_json(OUT_JSON, {"rows": []})
+    cached = [
+        row for row in previous.get("rows", [])
+        if row.get("origin") == "CONFAZ" and row.get("official_url", "").startswith("https://www.confaz.fazenda.gov.br/")
+    ]
+    seen = {
+        "|".join([
+            row.get("ncm_digits", ""),
+            row.get("jurisdiction", ""),
+            row.get("benefit_type", ""),
+            clean_text(row.get("product_or_operation", ""))[:180],
+            row.get("legal_basis", ""),
+        ])
+        for row in payload.get("rows", [])
+    }
+    for row in cached:
+        key = "|".join([
+            row.get("ncm_digits", ""),
+            row.get("jurisdiction", ""),
+            row.get("benefit_type", ""),
+            clean_text(row.get("product_or_operation", ""))[:180],
+            row.get("legal_basis", ""),
+        ])
+        if key not in seen:
+            seen.add(key)
+            payload["rows"].append(row)
+    payload["rows"].sort(key=lambda item: (item["ncm_digits"], item["jurisdiction"], item["benefit_type"], item["legal_basis"]))
+    by_origin = Counter(row["origin"] for row in payload["rows"])
+    by_jurisdiction = Counter(row["jurisdiction"] for row in payload["rows"])
+    by_group = Counter(row["benefit_group"] for row in payload["rows"])
+    payload["summary"] = {
+        "rows": len(payload["rows"]),
+        "unique_ncm": len({row["ncm_digits"] for row in payload["rows"]}),
+        "jurisdictions": len({row["jurisdiction"] for row in payload["rows"]}),
+        "origins": dict(sorted(by_origin.items())),
+        "by_jurisdiction": dict(sorted(by_jurisdiction.items())),
+        "top_groups": dict(by_group.most_common(15)),
+        "confaz_mode": "cache_reutilizado",
+    }
+    return payload
+
+
 def write_csv(payload: dict) -> None:
     OUT_CSV.parent.mkdir(parents=True, exist_ok=True)
     fields = [
@@ -340,6 +388,10 @@ def write_csv(payload: dict) -> None:
         "product_or_operation",
         "conditions",
         "prohibitions",
+        "validity_start",
+        "validity_end",
+        "transition_status",
+        "legal_nature",
         "proof_required",
         "risk",
         "legal_basis",
@@ -354,7 +406,10 @@ def write_csv(payload: dict) -> None:
 
 
 def main() -> int:
-    payload = build_index(include_confaz=True)
+    refresh_confaz = os.environ.get("RJC_REFRESH_CONFAZ_NCM", "").strip() == "1"
+    payload = build_index(include_confaz=refresh_confaz)
+    if not refresh_confaz:
+        payload = merge_cached_confaz_rows(payload)
     OUT_JSON.parent.mkdir(parents=True, exist_ok=True)
     OUT_JSON.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
     write_csv(payload)

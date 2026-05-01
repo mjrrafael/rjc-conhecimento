@@ -136,6 +136,55 @@ FEDERAL_FILES = [
         "official_url": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2022/decreto/d11158.htm",
         "captured_on": "2026-04-26",
     },
+    {
+        "jurisdiction": "Federal",
+        "name": "Reforma Tributária",
+        "tax": "IBS/CBS",
+        "file": "LC_214_2025_Compilada_IBS_CBS_IS.txt",
+        "title": "Lei Complementar nº 214/2025 - IBS, CBS e Imposto Seletivo",
+        "official_url": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp214.htm",
+        "captured_on": "2026-04-26",
+    },
+    {
+        "jurisdiction": "Federal",
+        "name": "Reforma Tributária",
+        "tax": "CBS",
+        "repo_file": "data/legal_sources/reforma_tributaria/Decreto_12955_2026_Regulamento_CBS.txt",
+        "file": "Decreto_12955_2026_Regulamento_CBS.txt",
+        "title": "Decreto nº 12.955/2026 - Regulamento da CBS",
+        "official_url": "https://www.in.gov.br/en/web/dou/-/decreto-n-12.955-de-29-de-abril-de-2026-702415229",
+        "captured_on": "2026-04-30",
+    },
+    {
+        "jurisdiction": "Federal",
+        "name": "Reforma Tributária",
+        "tax": "IBS",
+        "repo_file": "data/legal_sources/reforma_tributaria/Resolucao_CGIBS_6_2026_Regulamento_IBS.txt",
+        "file": "Resolucao_CGIBS_6_2026_Regulamento_IBS.txt",
+        "title": "Resolução CGIBS nº 6/2026 - Regulamento do IBS",
+        "official_url": "https://www.cgibs.gov.br/upload/arquivos/202604/30084927-res-cgibs-n-6-30-abr-2026-regulamenta-o-ibs.pdf",
+        "captured_on": "2026-04-30",
+    },
+    {
+        "jurisdiction": "Federal",
+        "name": "Reforma Tributária",
+        "tax": "IBS/CBS",
+        "repo_file": "data/legal_sources/reforma_tributaria/Tabela_CST_cClassTrib_IBS_CBS_2026_04_15.txt",
+        "file": "Tabela_CST_cClassTrib_IBS_CBS_2026_04_15.txt",
+        "title": "Tabela CST e cClassTrib do IBS e da CBS - 15/04/2026",
+        "official_url": "https://dfe-portal.svrs.rs.gov.br/CFF/ClassificacaoTributaria",
+        "captured_on": "2026-04-15",
+    },
+    {
+        "jurisdiction": "Federal",
+        "name": "Reforma Tributária",
+        "tax": "IBS/CBS",
+        "repo_file": "data/legal_sources/reforma_tributaria/Tabela_cCredPres_IBS_CBS_2025_12_12.txt",
+        "file": "Tabela_cCredPres_IBS_CBS_2025_12_12.txt",
+        "title": "Tabela de códigos de crédito presumido do IBS e da CBS - 12/12/2025",
+        "official_url": "https://dfe-portal.svrs.rs.gov.br/CFF/TabelaCreditoPresumido",
+        "captured_on": "2025-12-12",
+    },
 ]
 
 
@@ -257,13 +306,16 @@ def source_meta_from_doc(uf: str, doc: dict, manifest: dict[str, dict]) -> dict:
 
 
 def federal_source_meta(config: dict) -> dict | None:
-    path = BD_FEDERAL / config["file"]
+    if config.get("repo_file"):
+        path = ROOT / config["repo_file"]
+    else:
+        path = BD_FEDERAL / config["file"]
     if not path.exists():
         return None
     return {
         **config,
-        "source_file": config["file"],
-        "source_path": str(path),
+        "source_file": config.get("file", path.name),
+        "source_path": path.relative_to(ROOT).as_posix() if path.is_relative_to(ROOT) else str(path),
         "sha256": hashlib.sha256(path.read_bytes()).hexdigest(),
         "text": path.read_text(encoding="utf-8", errors="ignore"),
     }
@@ -612,6 +664,12 @@ def build_entry(source: dict, excerpt: str, seq: int) -> dict | None:
         "operation": extract_operation(excerpt),
         "conditions": conditions,
         "prohibitions": prohibitions,
+        "validity_start": source.get("validity_start", source.get("captured_on", "")),
+        "validity_end": source.get("validity_end", ""),
+        "modifying_act": source.get("modifying_act", ""),
+        "transition_status": infer_transition_status(source, excerpt),
+        "legal_nature": infer_legal_nature(benefit_type, excerpt),
+        "source_kind": source.get("source_kind", "ato normativo"),
         "legal_basis": legal_basis,
         "legal_description": compact(excerpt, 700),
         "legal_excerpt": legal_excerpt,
@@ -631,6 +689,34 @@ def build_entry(source: dict, excerpt: str, seq: int) -> dict | None:
         "risk": risk_for(benefit_type),
         "seq": seq,
     }
+
+
+def infer_transition_status(source: dict, excerpt: str) -> str:
+    low = normalize(source.get("tax", "") + " " + source.get("title", "") + " " + excerpt)
+    if "ibs" in low or "cbs" in low or "imposto seletivo" in low or "reforma tributaria" in low:
+        if "2026" in low or "transicao" in low or "transitorio" in low:
+            return "regra de reforma/transicao"
+        return "regra de IBS/CBS"
+    return "regra vigente atual"
+
+
+def infer_legal_nature(benefit_type: str, excerpt: str) -> str:
+    low = normalize(benefit_type + " " + excerpt)
+    if "imunidade" in low or "nao incidencia" in low:
+        return "fora do campo de incidencia ou imunidade"
+    if "aliquota zero" in low:
+        return "aliquota zero"
+    if "isencao" in low:
+        return "isencao"
+    if "reducao" in low:
+        return "reducao de carga"
+    if "credito" in low:
+        return "credito fiscal"
+    if "diferimento" in low or "suspensao" in low:
+        return "adiamento ou suspensao da exigencia"
+    if "regime" in low:
+        return "regime especifico ou diferenciado"
+    return "tratamento tributario especifico"
 
 
 def proof_for(benefit_type: str, excerpt: str) -> str:

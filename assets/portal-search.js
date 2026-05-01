@@ -249,13 +249,55 @@ window.RJC_SEARCH = [
     "title": "Matriz nacional de beneficios fiscais",
     "url": "beneficios/index.html",
     "summary": "Cruzamento por UF, tributo, NCM/CEST, grupo economico, tipo de beneficio e prova documental.",
-    "tags": "beneficios fiscais NCM CEST cBenef CST cClassTrib isencao reducao credito presumido diferimento monofasico"
+    "tags": "beneficios fiscais NCM CEST cBenef CST cClassTrib isencao reducao credito presumido diferimento monofasico compensacao beneficio ICMS cBenef SP exportacao ICMS"
   },
   {
     "title": "Lista NCM x beneficios fiscais",
     "url": "beneficios/ncm.html",
     "summary": "NCM/TIPI cruzado com beneficios estaduais, federais e CONFAZ, com condicao, base legal e fonte.",
     "tags": "NCM TIPI beneficios fiscais estados federal CONFAZ isencao reducao credito presumido diferimento monofasico"
+  },
+  {
+    "title": "Beneficios fiscais por setor",
+    "url": "beneficios/setores.html",
+    "summary": "Beneficios por cadeia economica: agro, alimentos, medicamentos, veiculos, eletronicos, informatica, energia, industria, atacado e logistica.",
+    "tags": "beneficios fiscais setor agro alimentos cesta basica medicamentos veiculos eletronicos informatica combustiveis industria atacado logistica"
+  },
+  {
+    "title": "Beneficios fiscais por UF",
+    "url": "beneficios/uf.html",
+    "summary": "Registros validados por jurisdicao estadual, Federal e CONFAZ.",
+    "tags": "beneficios fiscais UF Estado Federal CONFAZ ICMS PIS Cofins IPI IBS CBS"
+  },
+  {
+    "title": "Beneficios e tratamentos da Reforma Tributaria",
+    "url": "beneficios/reforma.html",
+    "summary": "IBS, CBS, cClassTrib, cCredPres, regimes diferenciados, reducoes, aliquota zero, creditos e transicao.",
+    "tags": "IBS CBS Reforma Tributaria cClassTrib cCredPres CST regimes diferenciados cesta basica split payment"
+  },
+  {
+    "title": "Compensacao, transicao e beneficios de ICMS",
+    "url": "beneficios/compensacao-icms.html",
+    "summary": "Beneficios atuais de ICMS, cBenef, LC 160, Convenio ICMS 190 e convivencia com IBS/CBS.",
+    "tags": "ICMS cBenef LC 160 Convenio ICMS 190 compensacao beneficio ICMS transicao beneficios fiscais cBenef SP exportacao ICMS"
+  },
+  {
+    "title": "Cesta basica, alimentos e agro",
+    "url": "beneficios/cesta-basica.html",
+    "summary": "Tratamentos fiscais para alimentos, cesta basica, agropecuaria, insumos e produtos essenciais.",
+    "tags": "cesta basica alimentos agro insumos arroz feijao leite carne horticolas frutas ovos"
+  },
+  {
+    "title": "Regimes diferenciados e creditos presumidos",
+    "url": "beneficios/regimes-diferenciados.html",
+    "summary": "Regimes especificos, reducoes, creditos presumidos, aliquota zero e tratamentos condicionados.",
+    "tags": "regime diferenciado regime especifico credito presumido aliquota zero reducao beneficio fiscal"
+  },
+  {
+    "title": "Documentos de prova dos beneficios fiscais",
+    "url": "beneficios/documentos-de-prova.html",
+    "summary": "XML, EFD, NCM, cBenef, CST, cClassTrib, guias, atos concessivos e memoria de calculo.",
+    "tags": "prova documental XML EFD NCM cBenef CST cClassTrib guia ato concessivo memoria de calculo"
   },
   {
     "title": "CONFAZ dos ultimos 5 anos",
@@ -537,13 +579,67 @@ window.RJC_SEARCH = [
     "title": "Reforma Tributária: legislação em tela",
     "url": "federal/legislacao/reforma-tributaria/index.html",
     "summary": "EC 132/2023, LC 214/2025, LC 227/2026, tabelas CST/cClassTrib/cCredPres, alíquotas, documentos fiscais, transição, créditos, split payment, benefícios e governança.",
-    "tags": "Federal reforma-tributaria ec-132-2023-reforma lc-214-2025-reforma lc-227-2026-cgibs it-2025-002-tabelas-reforma tabela-cst-cclasstrib-ibs-cbs tabela-ccredpres-ibs-cbs nt-2025-002-rtc-nfe"
+    "tags": "Federal reforma-tributaria ec-132-2023-reforma lc-214-2025-reforma lc-227-2026-cgibs decreto-12955-2026-cbs resolucao-cgibs-6-2026-ibs portaria-mf-cgibs-7-2026 ato-conjunto-rfb-cgibs-1-2025 rfb-orientacoes-reforma-2026 rfb-marcos-reforma it-2025-002-tabelas-reforma tabela-cst-cclasstrib-ibs-cbs tabela-ccredpres-ibs-cbs nt-2025-002-rtc-nfe"
   },
   {
     "title": "Reforma Tributária: legislação em tela - Regra matriz do IBS e da CBS",
     "url": "federal/legislacao/reforma-tributaria/matriz-ibs-cbs.html",
     "summary": "Competência, neutralidade, incidência ampla sobre bens e serviços, sujeito passivo, definições e local da operação.",
     "tags": "reforma-tributaria matriz-ibs-cbs Regra matriz do IBS e da CBS"
+  },
+  {
+    "title": "Reforma Tributária: legislação em tela - Regulamentos publicados: CBS, IBS e disposições comuns",
+    "url": "federal/legislacao/reforma-tributaria/regulamentos-publicados-ibs-cbs.html",
+    "summary": "Decreto 12.955/2026, Resolução CGIBS 6/2026 e Portaria Conjunta MF/CGIBS 7/2026 em leitura coordenada.",
+    "tags": "reforma-tributaria regulamentos-publicados-ibs-cbs Regulamentos publicados: CBS, IBS e disposições comuns"
+  },
+  {
+    "title": "Reforma Tributária: legislação em tela - CBS: Decreto 12.955/2026 em tela",
+    "url": "federal/legislacao/reforma-tributaria/cbs-regulamento-integral-decreto-12955-2026.html",
+    "summary": "Regulamento integral da Contribuição Social sobre Bens e Serviços, com normas comuns, apuração, créditos, documentos, regimes e transição.",
+    "tags": "reforma-tributaria cbs-regulamento-integral-decreto-12955-2026 CBS: Decreto 12.955/2026 em tela"
+  },
+  {
+    "title": "Reforma Tributária: legislação em tela - IBS: Resolução CGIBS 6/2026 em tela",
+    "url": "federal/legislacao/reforma-tributaria/ibs-regulamento-integral-resolucao-cgibs-6-2026.html",
+    "summary": "Regulamento integral do Imposto sobre Bens e Serviços, com documento fiscal, regimes, administração, créditos e regras operacionais.",
+    "tags": "reforma-tributaria ibs-regulamento-integral-resolucao-cgibs-6-2026 IBS: Resolução CGIBS 6/2026 em tela"
+  },
+  {
+    "title": "Reforma Tributária: legislação em tela - Incidência, imunidades, fato gerador e local da operação",
+    "url": "federal/legislacao/reforma-tributaria/incidencia-imunidades-fato-gerador-regulamento.html",
+    "summary": "Como os regulamentos detalham o que entra no campo de IBS/CBS, quando o fato gerador ocorre e onde a operação se localiza.",
+    "tags": "reforma-tributaria incidencia-imunidades-fato-gerador-regulamento Incidência, imunidades, fato gerador e local da operação"
+  },
+  {
+    "title": "Reforma Tributária: legislação em tela - Base, créditos, ressarcimento e split payment nos regulamentos",
+    "url": "federal/legislacao/reforma-tributaria/base-creditos-recolhimento-split-regulamento.html",
+    "summary": "Leitura operacional da base de cálculo, não cumulatividade, extinção do débito, ressarcimento e recolhimento na liquidação financeira.",
+    "tags": "reforma-tributaria base-creditos-recolhimento-split-regulamento Base, créditos, ressarcimento e split payment nos regulamentos"
+  },
+  {
+    "title": "Reforma Tributária: legislação em tela - Documentos fiscais e obrigações acessórias em 2026",
+    "url": "federal/legislacao/reforma-tributaria/documentos-obrigacoes-2026-ato-conjunto.html",
+    "summary": "Ato Conjunto RFB/CGIBS 1/2025 e regulamentos mostram quais documentos alimentam a apuração de IBS/CBS em 2026.",
+    "tags": "reforma-tributaria documentos-obrigacoes-2026-ato-conjunto Documentos fiscais e obrigações acessórias em 2026"
+  },
+  {
+    "title": "Reforma Tributária: legislação em tela - Importação, exportação e regimes aduaneiros na Reforma",
+    "url": "federal/legislacao/reforma-tributaria/importacao-exportacao-regulamento-ibs-cbs.html",
+    "summary": "Tratamento de IBS/CBS sobre importações, exportações, combustível internacional, regimes aduaneiros especiais, ZPE e bens de capital.",
+    "tags": "reforma-tributaria importacao-exportacao-regulamento-ibs-cbs Importação, exportação e regimes aduaneiros na Reforma"
+  },
+  {
+    "title": "Reforma Tributária: legislação em tela - Benefícios futuros, cesta básica e regimes diferenciados de IBS/CBS",
+    "url": "federal/legislacao/reforma-tributaria/beneficios-futuros-regimes-diferenciados-reforma.html",
+    "summary": "Grupos favorecidos da Reforma: reduções, alíquota zero, regimes diferenciados, produtor rural, transportador autônomo, reciclagem e bens usados.",
+    "tags": "reforma-tributaria beneficios-futuros-regimes-diferenciados-reforma Benefícios futuros, cesta básica e regimes diferenciados de IBS/CBS"
+  },
+  {
+    "title": "Reforma Tributária: legislação em tela - Orientações operacionais da Receita Federal para 2026",
+    "url": "federal/legislacao/reforma-tributaria/orientacoes-operacionais-reforma-2026.html",
+    "summary": "Leitura administrativa para preparar cadastro, documento fiscal, apuração assistida, teste e governança da Reforma.",
+    "tags": "reforma-tributaria orientacoes-operacionais-reforma-2026 Orientações operacionais da Receita Federal para 2026"
   },
   {
     "title": "Reforma Tributária: legislação em tela - Base de cálculo, alíquotas e transição",
@@ -826,6 +922,42 @@ window.RJC_SEARCH = [
     "url": "federal/legislacao/atos/lc-227-2026-cgibs.html",
     "summary": "Institui o Comite Gestor do IBS, disciplina administracao integrada, fiscalizacao, distribuicao da arrecadacao e saldos credores de ICMS.",
     "tags": "lc-227-2026-cgibs Federal LC 227/2026"
+  },
+  {
+    "title": "Decreto 12.955/2026 - Regulamento da CBS",
+    "url": "federal/legislacao/atos/decreto-12955-2026-cbs.html",
+    "summary": "Regulamenta a Contribuicao Social sobre Bens e Servicos - CBS, com normas comuns espelhadas ao IBS, documento fiscal, apuracao, creditos, split payment, regimes e transicao.",
+    "tags": "decreto-12955-2026-cbs Federal Decreto 12.955/2026"
+  },
+  {
+    "title": "Resolucao CGIBS 6/2026 - Regulamento do IBS",
+    "url": "federal/legislacao/atos/resolucao-cgibs-6-2026-ibs.html",
+    "summary": "Regulamenta o Imposto sobre Bens e Servicos - IBS, com normas comuns a CBS, documento fiscal, apuracao, creditos, split payment, regimes e transicao.",
+    "tags": "resolucao-cgibs-6-2026-ibs Federal Resolucao CGIBS 6/2026"
+  },
+  {
+    "title": "Portaria Conjunta MF/CGIBS 7/2026 - disposicoes comuns IBS/CBS",
+    "url": "federal/legislacao/atos/portaria-mf-cgibs-7-2026.html",
+    "summary": "Formaliza o reconhecimento das disposicoes comuns ao IBS e a CBS nos respectivos regulamentos.",
+    "tags": "portaria-mf-cgibs-7-2026 Federal Portaria MF/CGIBS 7/2026"
+  },
+  {
+    "title": "Ato Conjunto RFB/CGIBS 1/2025 - obrigacoes acessorias IBS/CBS em 2026",
+    "url": "federal/legislacao/atos/ato-conjunto-rfb-cgibs-1-2025.html",
+    "summary": "Define documentos fiscais recepcionados e prazos de observancia para informacoes destinadas a apuracao do IBS e da CBS em 2026.",
+    "tags": "ato-conjunto-rfb-cgibs-1-2025 Federal Ato Conjunto 1/2025"
+  },
+  {
+    "title": "Receita Federal - orientacoes da Reforma Tributaria para 2026",
+    "url": "federal/legislacao/atos/rfb-orientacoes-reforma-2026.html",
+    "summary": "Orientacao administrativa da Receita Federal para preparacao operacional de 2026.",
+    "tags": "rfb-orientacoes-reforma-2026 Federal Orientacoes RFB 2026"
+  },
+  {
+    "title": "Receita Federal - principais marcos regulatorios da Reforma Tributaria",
+    "url": "federal/legislacao/atos/rfb-marcos-reforma.html",
+    "summary": "Pagina oficial de marcos regulatorios para acompanhamento de normas da Reforma Tributaria do Consumo.",
+    "tags": "rfb-marcos-reforma Federal Marcos RFB Reforma"
   },
   {
     "title": "Tabela CST e cClassTrib do IBS e da CBS - 15/04/2026",

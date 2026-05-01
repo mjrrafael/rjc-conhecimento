@@ -140,8 +140,16 @@ FEDERAL_REQUIREMENTS = [
         "id": "reforma",
         "title": "Reforma Tributaria",
         "terms": ["IBS", "CBS", "Imposto Seletivo", "cClassTrib", "cCredPres"],
-        "expected_files": ["EC_132_2023_Reforma_Tributaria.txt", "LC_214_2025_Compilada_IBS_CBS_IS.txt", "LC_227_2026_Comite_Gestor_IBS.txt"],
-        "minimum": "EC 132, LC 214, LC 227, IBS, CBS, IS, CST, cClassTrib, cCredPres, transicao e documentos fiscais",
+        "expected_files": [
+            "EC_132_2023_Reforma_Tributaria.txt",
+            "LC_214_2025_Compilada_IBS_CBS_IS.txt",
+            "LC_227_2026_Comite_Gestor_IBS.txt",
+            "data/legal_sources/reforma_tributaria/Decreto_12955_2026_Regulamento_CBS.txt",
+            "data/legal_sources/reforma_tributaria/Resolucao_CGIBS_6_2026_Regulamento_IBS.txt",
+            "data/legal_sources/reforma_tributaria/Portaria_Conjunta_MF_CGIBS_7_2026.txt",
+            "data/legal_sources/reforma_tributaria/Ato_Conjunto_RFB_CGIBS_1_2025_Obrigacoes_2026.txt",
+        ],
+        "minimum": "EC 132, LC 214, LC 227, Decreto CBS, Resolucao IBS, Portaria comum, Ato Conjunto 2026, CST, cClassTrib, cCredPres, transicao e documentos fiscais",
     },
     {
         "id": "folha_clt",
@@ -239,11 +247,17 @@ def file_digest(path: Path) -> str:
 
 def federal_files() -> dict[str, dict[str, object]]:
     files: dict[str, dict[str, object]] = {}
-    if not BD_FEDERAL.exists():
-        return files
-    for path in sorted(BD_FEDERAL.glob("*.txt")):
-        files[path.name] = {
-            "name": path.name,
+    if BD_FEDERAL.exists():
+        for path in sorted(BD_FEDERAL.glob("*.txt")):
+            files[path.name] = {
+                "name": path.name,
+                "size": path.stat().st_size,
+                "sha256": file_digest(path),
+            }
+    for path in sorted((ROOT / "data" / "legal_sources" / "reforma_tributaria").glob("*.txt")):
+        key = path.relative_to(ROOT).as_posix()
+        files[key] = {
+            "name": key,
             "size": path.stat().st_size,
             "sha256": file_digest(path),
         }

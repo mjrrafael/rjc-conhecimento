@@ -665,6 +665,56 @@ SOURCE_DEFS: dict[str, dict] = {
         "files": ["LC_227_2026_Comite_Gestor_IBS.txt"],
         "note": "Institui o Comite Gestor do IBS, disciplina administracao integrada, fiscalizacao, distribuicao da arrecadacao e saldos credores de ICMS.",
     },
+    "decreto-12955-2026-cbs": {
+        "jurisdiction": "Federal",
+        "title": "Decreto 12.955/2026 - Regulamento da CBS",
+        "short": "Decreto 12.955/2026",
+        "url": "https://www.in.gov.br/en/web/dou/-/decreto-n-12.955-de-29-de-abril-de-2026-702415229",
+        "repo_files": ["data/legal_sources/reforma_tributaria/Decreto_12955_2026_Regulamento_CBS.txt"],
+        "note": "Regulamenta a Contribuicao Social sobre Bens e Servicos - CBS, com normas comuns espelhadas ao IBS, documento fiscal, apuracao, creditos, split payment, regimes e transicao.",
+    },
+    "resolucao-cgibs-6-2026-ibs": {
+        "jurisdiction": "Federal",
+        "title": "Resolucao CGIBS 6/2026 - Regulamento do IBS",
+        "short": "Resolucao CGIBS 6/2026",
+        "url": "https://www.cgibs.gov.br/upload/arquivos/202604/30084927-res-cgibs-n-6-30-abr-2026-regulamenta-o-ibs.pdf",
+        "repo_files": ["data/legal_sources/reforma_tributaria/Resolucao_CGIBS_6_2026_Regulamento_IBS.txt"],
+        "note": "Regulamenta o Imposto sobre Bens e Servicos - IBS, com normas comuns a CBS, documento fiscal, apuracao, creditos, split payment, regimes e transicao.",
+    },
+    "portaria-mf-cgibs-7-2026": {
+        "jurisdiction": "Federal",
+        "title": "Portaria Conjunta MF/CGIBS 7/2026 - disposicoes comuns IBS/CBS",
+        "short": "Portaria MF/CGIBS 7/2026",
+        "url": "https://www.cgibs.gov.br/upload/arquivos/202604/30094136-sei-mgi-60959979-portaria-conjunta.pdf",
+        "repo_files": ["data/legal_sources/reforma_tributaria/Portaria_Conjunta_MF_CGIBS_7_2026.txt"],
+        "note": "Formaliza o reconhecimento das disposicoes comuns ao IBS e a CBS nos respectivos regulamentos.",
+    },
+    "ato-conjunto-rfb-cgibs-1-2025": {
+        "jurisdiction": "Federal",
+        "title": "Ato Conjunto RFB/CGIBS 1/2025 - obrigacoes acessorias IBS/CBS em 2026",
+        "short": "Ato Conjunto 1/2025",
+        "url": "https://www.in.gov.br/en/web/dou/-/ato-conjunto-rfb/cgibs-n-1-de-22-de-dezembro-de-2025-677624586",
+        "repo_files": ["data/legal_sources/reforma_tributaria/Ato_Conjunto_RFB_CGIBS_1_2025_Obrigacoes_2026.txt"],
+        "note": "Define documentos fiscais recepcionados e prazos de observancia para informacoes destinadas a apuracao do IBS e da CBS em 2026.",
+    },
+    "rfb-orientacoes-reforma-2026": {
+        "jurisdiction": "Federal",
+        "title": "Receita Federal - orientacoes da Reforma Tributaria para 2026",
+        "short": "Orientacoes RFB 2026",
+        "url": "https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-consumo/orientacoes-2026",
+        "repo_files": ["data/legal_sources/reforma_tributaria/Receita_Orientacoes_Reforma_2026.txt"],
+        "render": "structured_text",
+        "note": "Orientacao administrativa da Receita Federal para preparacao operacional de 2026.",
+    },
+    "rfb-marcos-reforma": {
+        "jurisdiction": "Federal",
+        "title": "Receita Federal - principais marcos regulatorios da Reforma Tributaria",
+        "short": "Marcos RFB Reforma",
+        "url": "https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-consumo/marcos",
+        "repo_files": ["data/legal_sources/reforma_tributaria/Receita_Marcos_Regulatorios_Reforma.txt"],
+        "render": "structured_text",
+        "note": "Pagina oficial de marcos regulatorios para acompanhamento de normas da Reforma Tributaria do Consumo.",
+    },
     "tabela-cst-cclasstrib-ibs-cbs": {
         "jurisdiction": "Federal",
         "title": "Tabela CST e cClassTrib do IBS e da CBS - 15/04/2026",
@@ -1236,6 +1286,12 @@ LEGAL_MODULES: list[dict] = [
             "ec-132-2023-reforma",
             "lc-214-2025-reforma",
             "lc-227-2026-cgibs",
+            "decreto-12955-2026-cbs",
+            "resolucao-cgibs-6-2026-ibs",
+            "portaria-mf-cgibs-7-2026",
+            "ato-conjunto-rfb-cgibs-1-2025",
+            "rfb-orientacoes-reforma-2026",
+            "rfb-marcos-reforma",
             "it-2025-002-tabelas-reforma",
             "tabela-cst-cclasstrib-ibs-cbs",
             "tabela-ccredpres-ibs-cbs",
@@ -1253,6 +1309,129 @@ LEGAL_MODULES: list[dict] = [
                 "analysis": [
                     "A Reforma muda a leitura de consumo: sai a lógica fragmentada de tributos sobre mercadoria, serviço e faturamento, e entra uma matriz ampla sobre operações com bens e serviços. O primeiro cuidado é separar competência constitucional, lei complementar e regra operacional.",
                     "Na prática, compras, fiscal, cadastro e tecnologia precisam falar a mesma língua: local da operação, destinatário, documento fiscal, natureza do bem ou serviço e tratamento da contraprestação passam a ser pontos centrais de apuração.",
+                ],
+            },
+            {
+                "id": "regulamentos-publicados-ibs-cbs",
+                "title": "Regulamentos publicados: CBS, IBS e disposições comuns",
+                "summary": "Decreto 12.955/2026, Resolução CGIBS 6/2026 e Portaria Conjunta MF/CGIBS 7/2026 em leitura coordenada.",
+                "refs": [
+                    {"source": "portaria-mf-cgibs-7-2026", "ranges": [(1, 2)]},
+                    {"source": "decreto-12955-2026-cbs", "ranges": [(1, 2), (617, 620)]},
+                    {"source": "resolucao-cgibs-6-2026-ibs", "ranges": [(1, 2), (614, 617)]},
+                ],
+                "analysis": [
+                    "A Portaria Conjunta amarra a leitura dos dois regulamentos: o Livro I do Decreto da CBS e o Livro I da Resolução do IBS foram reconhecidos como disposições comuns. Isso evita tratar CBS e IBS como mundos separados quando a regra operacional foi desenhada de forma espelhada.",
+                    "A leitura didática deve seguir esta ordem: primeiro a EC 132/2023 e a LC 214/2025; depois o decreto da CBS e a resolução do IBS; por fim, documentos fiscais, tabelas técnicas e orientações administrativas. A lei cria a matriz; o regulamento mostra como a rotina vai funcionar.",
+                    "Para o escritório, este capítulo vira a porta de entrada de qualquer estudo da Reforma: se a dúvida for documento, crédito, split payment, base, alíquota, importação, exportação, regime diferenciado ou transição, ela deve voltar a esta arquitetura comum antes de virar parametrização.",
+                ],
+            },
+            {
+                "id": "cbs-regulamento-integral-decreto-12955-2026",
+                "title": "CBS: Decreto 12.955/2026 em tela",
+                "summary": "Regulamento integral da Contribuição Social sobre Bens e Serviços, com normas comuns, apuração, créditos, documentos, regimes e transição.",
+                "refs": [
+                    {"source": "decreto-12955-2026-cbs", "full_text": True},
+                ],
+                "analysis": [
+                    "Este é o texto-base infralegal da CBS. A leitura não deve começar pela exceção: antes de falar em benefício, redução, crédito ou regime específico, confirme definições, fornecimento, adquirente, destinatário, fato gerador, base, alíquota, sujeito passivo e forma de extinção do débito.",
+                    "O fiscal deve transformar o regulamento em roteiro de ERP: cadastro de operações, documento fiscal, CST, cClassTrib, base de cálculo, alíquota, crédito, recolhimento e prova. A contabilidade deve preservar memória por período para que a transição não apague a regra vigente no fato gerador.",
+                ],
+            },
+            {
+                "id": "ibs-regulamento-integral-resolucao-cgibs-6-2026",
+                "title": "IBS: Resolução CGIBS 6/2026 em tela",
+                "summary": "Regulamento integral do Imposto sobre Bens e Serviços, com documento fiscal, regimes, administração, créditos e regras operacionais.",
+                "refs": [
+                    {"source": "resolucao-cgibs-6-2026-ibs", "full_text": True},
+                ],
+                "analysis": [
+                    "O IBS nasce com competência compartilhada, mas precisa ser operado como tributo nacionalmente padronizado. O regulamento do CGIBS deve ser lido junto da LC 214/2025 e da LC 227/2026, principalmente quando a pergunta envolve administração integrada, fiscalização, ressarcimento, créditos e distribuição da arrecadação.",
+                    "Na prática, a empresa deve guardar prova de local da operação, destinatário, documento, classificação, alíquota, crédito e pagamento. A transição não autoriza apagar a memória do ICMS; ela exige conviver com ICMS, ISS, CBS e IBS durante anos.",
+                ],
+            },
+            {
+                "id": "incidencia-imunidades-fato-gerador-regulamento",
+                "title": "Incidência, imunidades, fato gerador e local da operação",
+                "summary": "Como os regulamentos detalham o que entra no campo de IBS/CBS, quando o fato gerador ocorre e onde a operação se localiza.",
+                "refs": [
+                    {"source": "decreto-12955-2026-cbs", "ranges": [(2, 25)]},
+                    {"source": "resolucao-cgibs-6-2026-ibs", "ranges": [(2, 25)]},
+                    {"source": "lc-214-2025-reforma", "ranges": [(1, 18)]},
+                ],
+                "analysis": [
+                    "O erro mais caro na Reforma será pular direto para código de XML. Código é consequência. Antes dele, o analista precisa responder: houve operação com bem ou serviço? Quem forneceu? Quem adquiriu? Qual o destinatário? Onde está o local da operação? O fato gerador ocorreu em qual momento?",
+                    "Imunidade e não incidência não são sinônimos de benefício. Elas ficam antes da discussão de redução ou crédito. Quando a operação estiver fora do campo tributável, a prova deve demonstrar a natureza jurídica da operação e não apenas preencher um código fiscal favorável.",
+                ],
+            },
+            {
+                "id": "base-creditos-recolhimento-split-regulamento",
+                "title": "Base, créditos, ressarcimento e split payment nos regulamentos",
+                "summary": "Leitura operacional da base de cálculo, não cumulatividade, extinção do débito, ressarcimento e recolhimento na liquidação financeira.",
+                "refs": [
+                    {"source": "decreto-12955-2026-cbs", "ranges": [(17, 52), (58, 68)]},
+                    {"source": "resolucao-cgibs-6-2026-ibs", "ranges": [(17, 52), (58, 68)]},
+                    {"source": "lc-214-2025-reforma", "ranges": [(27, 68)]},
+                ],
+                "analysis": [
+                    "A Reforma aproxima três mundos que antes podiam ficar separados: documento fiscal, financeiro e crédito. Com split payment e apuração assistida, o XML deixa de ser apenas documento de venda; ele passa a conversar com extinção de débito, crédito do adquirente, pagamento e ressarcimento.",
+                    "O controle interno precisa nascer por evento: emissão, cancelamento, devolução, pagamento, estorno, crédito, compensação e ressarcimento. Se a empresa não amarrar XML, recebimento, pagamento e apuração, a divergência aparecerá no cruzamento digital.",
+                ],
+            },
+            {
+                "id": "documentos-obrigacoes-2026-ato-conjunto",
+                "title": "Documentos fiscais e obrigações acessórias em 2026",
+                "summary": "Ato Conjunto RFB/CGIBS 1/2025 e regulamentos mostram quais documentos alimentam a apuração de IBS/CBS em 2026.",
+                "refs": [
+                    {"source": "ato-conjunto-rfb-cgibs-1-2025", "full_text": True},
+                    {"source": "decreto-12955-2026-cbs", "ranges": [(69, 84)]},
+                    {"source": "resolucao-cgibs-6-2026-ibs", "ranges": [(69, 84)]},
+                    {"source": "nt-2025-002-rtc-nfe", "full_text": True},
+                ],
+                "analysis": [
+                    "Em 2026, a Reforma entra pelo documento fiscal. O Ato Conjunto lista os documentos recepcionados e fixa o dever de emitir documento fiscal eletrônico nas operações com bens e serviços, inclusive importação e exportação.",
+                    "A leitura para o departamento fiscal é direta: NF-e, NFC-e, NFS-e, CT-e, CT-e OS, BP-e, MDF-e, GTV-e e demais documentos reconhecidos precisam conversar com CST, cClassTrib, base, alíquota e campos técnicos. O ERP deve ser testado por cenário real, não apenas por exemplo genérico.",
+                ],
+            },
+            {
+                "id": "importacao-exportacao-regulamento-ibs-cbs",
+                "title": "Importação, exportação e regimes aduaneiros na Reforma",
+                "summary": "Tratamento de IBS/CBS sobre importações, exportações, combustível internacional, regimes aduaneiros especiais, ZPE e bens de capital.",
+                "refs": [
+                    {"source": "decreto-12955-2026-cbs", "ranges": [(85, 139)]},
+                    {"source": "resolucao-cgibs-6-2026-ibs", "ranges": [(85, 139)]},
+                    {"source": "lc-214-2025-reforma", "ranges": [(69, 100)]},
+                ],
+                "analysis": [
+                    "Comércio exterior exige prova mais forte que a venda interna. Importação pede DI/DUIMP, documento fiscal, base, local, responsável, pagamento e crédito. Exportação pede demonstração de destino ao exterior, documento correto e coerência entre fiscal, aduaneiro e financeiro.",
+                    "Regime aduaneiro especial não é benefício automático. A empresa precisa comprovar enquadramento no regime, cumprimento de prazo, destinação, baixa documental e reflexo correto no documento fiscal e na apuração.",
+                ],
+            },
+            {
+                "id": "beneficios-futuros-regimes-diferenciados-reforma",
+                "title": "Benefícios futuros, cesta básica e regimes diferenciados de IBS/CBS",
+                "summary": "Grupos favorecidos da Reforma: reduções, alíquota zero, regimes diferenciados, produtor rural, transportador autônomo, reciclagem e bens usados.",
+                "refs": [
+                    {"source": "decreto-12955-2026-cbs", "ranges": [(140, 260)]},
+                    {"source": "resolucao-cgibs-6-2026-ibs", "ranges": [(140, 260)]},
+                    {"source": "lc-214-2025-reforma", "ranges": [(101, 188), (234, 260)]},
+                ],
+                "analysis": [
+                    "Benefício futuro não pode ser tratado como promessa comercial. Ele só vira matriz do portal quando o texto legal trouxer grupo, produto, serviço, sujeito, condição, redução, crédito ou alíquota zero com vigência e documento de prova.",
+                    "A classificação por setor deve separar alimentos, medicamentos, saúde, educação, acessibilidade, agro, cultura, esporte, transporte, reciclagem, bens usados e regimes específicos. Cada grupo precisa indicar se o efeito é redução de alíquota, alíquota zero, crédito presumido, regime próprio ou tratamento documental.",
+                ],
+            },
+            {
+                "id": "orientacoes-operacionais-reforma-2026",
+                "title": "Orientações operacionais da Receita Federal para 2026",
+                "summary": "Leitura administrativa para preparar cadastro, documento fiscal, apuração assistida, teste e governança da Reforma.",
+                "refs": [
+                    {"source": "rfb-orientacoes-reforma-2026", "full_text": True},
+                    {"source": "rfb-marcos-reforma", "full_text": True},
+                ],
+                "analysis": [
+                    "Orientação administrativa não substitui lei, mas ajuda a transformar a lei em agenda de implementação. A leitura deve ser usada para preparar cronograma, testes, responsabilidades internas e trilha de acompanhamento de novos atos.",
+                    "O escritório deve converter estas orientações em tarefas: saneamento cadastral, CST/cClassTrib, testes de XML, revisão de contratos, conciliação de documentos, acompanhamento de novos regulamentos e revisão de benefícios atuais com impacto na transição.",
                 ],
             },
             {
@@ -1624,15 +1803,15 @@ SIGNAL_CHAPTER_MAP = {
         "protege/fundo": ["fgts-deposito-rescisao"],
     },
     "reforma-tributaria": {
-        "aliquota": ["base-aliquotas-transicao", "aliquotas-padrao-documentos-fiscais", "regimes-diferenciados-beneficios"],
-        "isencao": ["regimes-diferenciados-beneficios"],
-        "suspensao": ["regimes-diferenciados-beneficios"],
-        "exportacao": ["imposto-seletivo", "regimes-diferenciados-beneficios"],
-        "nao incidencia": ["matriz-ibs-cbs", "imposto-seletivo"],
-        "credito outorgado": ["credito-presumido-codigos-ibs-cbs", "transicao-icms-iss-beneficios-saldos"],
-        "credito": ["creditos-recolhimento-split-payment", "credito-presumido-codigos-ibs-cbs", "transicao-icms-iss-beneficios-saldos"],
-        "regime especial": ["regimes-diferenciados-beneficios"],
-        "efd/sped": ["documentos-fiscais-nfe-nfce-rtc", "creditos-recolhimento-split-payment", "comite-gestor-fiscalizacao"],
+        "aliquota": ["base-aliquotas-transicao", "aliquotas-padrao-documentos-fiscais", "base-creditos-recolhimento-split-regulamento", "regimes-diferenciados-beneficios"],
+        "isencao": ["beneficios-futuros-regimes-diferenciados-reforma", "regimes-diferenciados-beneficios"],
+        "suspensao": ["beneficios-futuros-regimes-diferenciados-reforma", "regimes-diferenciados-beneficios"],
+        "exportacao": ["importacao-exportacao-regulamento-ibs-cbs", "imposto-seletivo", "regimes-diferenciados-beneficios"],
+        "nao incidencia": ["incidencia-imunidades-fato-gerador-regulamento", "matriz-ibs-cbs", "imposto-seletivo"],
+        "credito outorgado": ["credito-presumido-codigos-ibs-cbs", "beneficios-futuros-regimes-diferenciados-reforma", "transicao-icms-iss-beneficios-saldos"],
+        "credito": ["base-creditos-recolhimento-split-regulamento", "creditos-recolhimento-split-payment", "credito-presumido-codigos-ibs-cbs", "transicao-icms-iss-beneficios-saldos"],
+        "regime especial": ["beneficios-futuros-regimes-diferenciados-reforma", "regimes-diferenciados-beneficios", "importacao-exportacao-regulamento-ibs-cbs"],
+        "efd/sped": ["documentos-obrigacoes-2026-ato-conjunto", "documentos-fiscais-nfe-nfce-rtc", "base-creditos-recolhimento-split-regulamento"],
         "fundo/contrapartida": ["transicao-icms-iss-beneficios-saldos"],
         "protege/fundo": ["transicao-icms-iss-beneficios-saldos"],
         "cBenef": ["cbenef-icms-convivencia-reforma", "cst-cclasstrib-ibs-cbs"],
@@ -1732,6 +1911,10 @@ def official_link_label(source: dict) -> str:
         return "link oficial na Receita Federal"
     if "confaz.fazenda.gov.br" in url:
         return "link oficial no CONFAZ"
+    if "cgibs.gov.br" in url:
+        return "link oficial no Comite Gestor do IBS"
+    if "in.gov.br" in url:
+        return "link oficial no Diario Oficial da Uniao"
     if "economia.go.gov.br" in url or "goias.gov.br/economia" in url:
         return "link oficial na Secretaria da Economia de Goias"
     if "sped.rfb.gov.br" in url:

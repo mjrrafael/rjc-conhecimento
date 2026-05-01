@@ -42,6 +42,37 @@
       ]
     },
     {
+      "source_id": "ato-conjunto-rfb-cgibs-1-2025",
+      "jurisdiction": "Federal",
+      "title": "Ato Conjunto RFB/CGIBS 1/2025 - obrigacoes acessorias IBS/CBS em 2026",
+      "short": "Ato Conjunto 1/2025",
+      "official_url": "https://www.in.gov.br/en/web/dou/-/ato-conjunto-rfb/cgibs-n-1-de-22-de-dezembro-de-2025-677624586",
+      "storage": {
+        "type": "repo_text",
+        "files": [],
+        "repo_files": [
+          "data/legal_sources/reforma_tributaria/Ato_Conjunto_RFB_CGIBS_1_2025_Obrigacoes_2026.txt"
+        ],
+        "sha256": {
+          "data/legal_sources/reforma_tributaria/Ato_Conjunto_RFB_CGIBS_1_2025_Obrigacoes_2026.txt": "46d6c2798ea17601e3c589d422654e45147dcd14c72accacaa2bf11da8a61c2f"
+        },
+        "fetch_url": ""
+      },
+      "note": "Define documentos fiscais recepcionados e prazos de observancia para informacoes destinadas a apuracao do IBS e da CBS em 2026.",
+      "render": "articles",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "reforma-tributaria",
+          "module_title": "Reforma Tributária: legislação em tela",
+          "chapters": [
+            "documentos-obrigacoes-2026-ato-conjunto"
+          ]
+        }
+      ]
+    },
+    {
       "source_id": "clt-1943",
       "jurisdiction": "Federal",
       "title": "Decreto-Lei 5.452/1943 - Consolidacao das Leis do Trabalho",
@@ -67,6 +98,43 @@
             "jornada-descanso-ferias",
             "salario-remuneracao-rescisao",
             "seguranca-saude-afastamentos"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "decreto-12955-2026-cbs",
+      "jurisdiction": "Federal",
+      "title": "Decreto 12.955/2026 - Regulamento da CBS",
+      "short": "Decreto 12.955/2026",
+      "official_url": "https://www.in.gov.br/en/web/dou/-/decreto-n-12.955-de-29-de-abril-de-2026-702415229",
+      "storage": {
+        "type": "repo_text",
+        "files": [],
+        "repo_files": [
+          "data/legal_sources/reforma_tributaria/Decreto_12955_2026_Regulamento_CBS.txt"
+        ],
+        "sha256": {
+          "data/legal_sources/reforma_tributaria/Decreto_12955_2026_Regulamento_CBS.txt": "15973a783600b48fc662d834681fc6660e75eb07bf6e312b41f081925322c172"
+        },
+        "fetch_url": ""
+      },
+      "note": "Regulamenta a Contribuicao Social sobre Bens e Servicos - CBS, com normas comuns espelhadas ao IBS, documento fiscal, apuracao, creditos, split payment, regimes e transicao.",
+      "render": "articles",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "reforma-tributaria",
+          "module_title": "Reforma Tributária: legislação em tela",
+          "chapters": [
+            "base-creditos-recolhimento-split-regulamento",
+            "beneficios-futuros-regimes-diferenciados-reforma",
+            "cbs-regulamento-integral-decreto-12955-2026",
+            "documentos-obrigacoes-2026-ato-conjunto",
+            "importacao-exportacao-regulamento-ibs-cbs",
+            "incidencia-imunidades-fato-gerador-regulamento",
+            "regulamentos-publicados-ibs-cbs"
           ]
         }
       ]
@@ -398,11 +466,15 @@
           "chapters": [
             "aliquotas-padrao-documentos-fiscais",
             "base-aliquotas-transicao",
+            "base-creditos-recolhimento-split-regulamento",
+            "beneficios-futuros-regimes-diferenciados-reforma",
             "cbenef-icms-convivencia-reforma",
             "credito-presumido-codigos-ibs-cbs",
             "creditos-recolhimento-split-payment",
             "cst-cclasstrib-ibs-cbs",
+            "importacao-exportacao-regulamento-ibs-cbs",
             "imposto-seletivo",
+            "incidencia-imunidades-fato-gerador-regulamento",
             "matriz-ibs-cbs",
             "regimes-diferenciados-beneficios",
             "transicao-icms-iss-beneficios-saldos"
@@ -1128,7 +1200,39 @@
           "module_id": "reforma-tributaria",
           "module_title": "Reforma Tributária: legislação em tela",
           "chapters": [
-            "documentos-fiscais-nfe-nfce-rtc"
+            "documentos-fiscais-nfe-nfce-rtc",
+            "documentos-obrigacoes-2026-ato-conjunto"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "portaria-mf-cgibs-7-2026",
+      "jurisdiction": "Federal",
+      "title": "Portaria Conjunta MF/CGIBS 7/2026 - disposicoes comuns IBS/CBS",
+      "short": "Portaria MF/CGIBS 7/2026",
+      "official_url": "https://www.cgibs.gov.br/upload/arquivos/202604/30094136-sei-mgi-60959979-portaria-conjunta.pdf",
+      "storage": {
+        "type": "repo_text",
+        "files": [],
+        "repo_files": [
+          "data/legal_sources/reforma_tributaria/Portaria_Conjunta_MF_CGIBS_7_2026.txt"
+        ],
+        "sha256": {
+          "data/legal_sources/reforma_tributaria/Portaria_Conjunta_MF_CGIBS_7_2026.txt": "4f37c9a8a973951de085c660ea527104dc55cbfd8a16101147db6012710cee76"
+        },
+        "fetch_url": ""
+      },
+      "note": "Formaliza o reconhecimento das disposicoes comuns ao IBS e a CBS nos respectivos regulamentos.",
+      "render": "articles",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "reforma-tributaria",
+          "module_title": "Reforma Tributária: legislação em tela",
+          "chapters": [
+            "regulamentos-publicados-ibs-cbs"
           ]
         }
       ]
@@ -1177,6 +1281,105 @@
             "cbenef-prova",
             "diferimento-st",
             "icms-regra-geral"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "resolucao-cgibs-6-2026-ibs",
+      "jurisdiction": "Federal",
+      "title": "Resolucao CGIBS 6/2026 - Regulamento do IBS",
+      "short": "Resolucao CGIBS 6/2026",
+      "official_url": "https://www.cgibs.gov.br/upload/arquivos/202604/30084927-res-cgibs-n-6-30-abr-2026-regulamenta-o-ibs.pdf",
+      "storage": {
+        "type": "repo_text",
+        "files": [],
+        "repo_files": [
+          "data/legal_sources/reforma_tributaria/Resolucao_CGIBS_6_2026_Regulamento_IBS.txt"
+        ],
+        "sha256": {
+          "data/legal_sources/reforma_tributaria/Resolucao_CGIBS_6_2026_Regulamento_IBS.txt": "a3da82f3b3d803bb3a790f67224a84c528583ee792a97b3b4e6788880fba5646"
+        },
+        "fetch_url": ""
+      },
+      "note": "Regulamenta o Imposto sobre Bens e Servicos - IBS, com normas comuns a CBS, documento fiscal, apuracao, creditos, split payment, regimes e transicao.",
+      "render": "articles",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "reforma-tributaria",
+          "module_title": "Reforma Tributária: legislação em tela",
+          "chapters": [
+            "base-creditos-recolhimento-split-regulamento",
+            "beneficios-futuros-regimes-diferenciados-reforma",
+            "documentos-obrigacoes-2026-ato-conjunto",
+            "ibs-regulamento-integral-resolucao-cgibs-6-2026",
+            "importacao-exportacao-regulamento-ibs-cbs",
+            "incidencia-imunidades-fato-gerador-regulamento",
+            "regulamentos-publicados-ibs-cbs"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "rfb-marcos-reforma",
+      "jurisdiction": "Federal",
+      "title": "Receita Federal - principais marcos regulatorios da Reforma Tributaria",
+      "short": "Marcos RFB Reforma",
+      "official_url": "https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-consumo/marcos",
+      "storage": {
+        "type": "repo_text",
+        "files": [],
+        "repo_files": [
+          "data/legal_sources/reforma_tributaria/Receita_Marcos_Regulatorios_Reforma.txt"
+        ],
+        "sha256": {
+          "data/legal_sources/reforma_tributaria/Receita_Marcos_Regulatorios_Reforma.txt": "43c9232ba4dc37ae6b0aced2efddc358473fe1b01145129ca5cff27525d7c178"
+        },
+        "fetch_url": ""
+      },
+      "note": "Pagina oficial de marcos regulatorios para acompanhamento de normas da Reforma Tributaria do Consumo.",
+      "render": "structured_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "reforma-tributaria",
+          "module_title": "Reforma Tributária: legislação em tela",
+          "chapters": [
+            "orientacoes-operacionais-reforma-2026"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "rfb-orientacoes-reforma-2026",
+      "jurisdiction": "Federal",
+      "title": "Receita Federal - orientacoes da Reforma Tributaria para 2026",
+      "short": "Orientacoes RFB 2026",
+      "official_url": "https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-consumo/orientacoes-2026",
+      "storage": {
+        "type": "repo_text",
+        "files": [],
+        "repo_files": [
+          "data/legal_sources/reforma_tributaria/Receita_Orientacoes_Reforma_2026.txt"
+        ],
+        "sha256": {
+          "data/legal_sources/reforma_tributaria/Receita_Orientacoes_Reforma_2026.txt": "a6905351d85a8f817623ab8df0cad994b80d4a9d64a6a00df72d43ae977f3880"
+        },
+        "fetch_url": ""
+      },
+      "note": "Orientacao administrativa da Receita Federal para preparacao operacional de 2026.",
+      "render": "structured_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "reforma-tributaria",
+          "module_title": "Reforma Tributária: legislação em tela",
+          "chapters": [
+            "orientacoes-operacionais-reforma-2026"
           ]
         }
       ]
