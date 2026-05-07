@@ -6,6 +6,7 @@ from __future__ import annotations
 import json
 import re
 import unicodedata
+from datetime import datetime
 from html import escape
 from html.parser import HTMLParser
 from pathlib import Path
@@ -40,6 +41,7 @@ from state_legal_pages import (
 
 
 ROOT = Path(__file__).resolve().parents[1]
+BASE_URL = "https://mjrrafael.github.io/rjc-conhecimento"
 CATALOG = ROOT / "data" / "portal_catalog.json"
 INVENTORY = ROOT / "data" / "legal_inventory.json"
 STATE_SOURCE_AUDIT = ROOT / "data" / "state_source_audit.json"
@@ -404,6 +406,17 @@ def slug(value: str) -> str:
 def rel_prefix(path: str) -> str:
     depth = len(Path(path).parts) - 1
     return "../" * depth
+
+
+def site_path(path: str) -> str:
+    return path.replace("\\", "/").lstrip("/")
+
+
+def canonical_url(path: str) -> str:
+    normalized = site_path(path)
+    if normalized in {"", "index.html"}:
+        return f"{BASE_URL}/"
+    return f"{BASE_URL}/{normalized}"
 
 
 def a(href: str, label: str, class_name: str = "") -> str:
@@ -1216,6 +1229,8 @@ def docs_table(docs: list[dict], title: str, intro: str, federal: bool = False) 
 
 def layout(path: str, title: str, subtitle: str, body: str, active: str = "") -> str:
     prefix = rel_prefix(path)
+    canonical = canonical_url(path)
+    social_title = f"{title} | RJC Assessoria"
     nav = [
         ("index.html", "Inicio", "home"),
         ("estados/index.html", "Estados", "estados"),
@@ -1250,8 +1265,15 @@ def layout(path: str, title: str, subtitle: str, body: str, active: str = "") ->
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{escape(title)} | RJC Assessoria</title>
+  <title>{escape(social_title)}</title>
   <meta name="description" content="{escape(subtitle)}">
+  <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+  <link rel="canonical" href="{escape(canonical, quote=True)}">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Portal RJC Tributario Aberto">
+  <meta property="og:title" content="{escape(social_title)}">
+  <meta property="og:description" content="{escape(subtitle)}">
+  <meta property="og:url" content="{escape(canonical, quote=True)}">
   <link rel="icon" href="{prefix}ico.png">
   <link rel="stylesheet" href="{prefix}assets/portal-tributario.css">
   <script defer src="{prefix}assets/portal-search.js"></script>
@@ -3236,6 +3258,154 @@ def search_index(data: dict) -> str:
     return "window.RJC_SEARCH = " + payload + ";\n"
 
 
+def html_pages_for_discovery() -> list[Path]:
+    blocked = {".git", ".codex-screenshots"}
+    pages = []
+    for page in ROOT.rglob("*.html"):
+        relative = page.relative_to(ROOT)
+        if any(part in blocked for part in relative.parts):
+            continue
+        pages.append(page)
+    return sorted(pages, key=lambda item: (site_path(str(item.relative_to(ROOT))) != "index.html", site_path(str(item.relative_to(ROOT)))))
+
+
+def page_title(path: Path) -> str:
+    try:
+        head = path.open("r", encoding="utf-8", errors="ignore").read(8192)
+    except OSError:
+        return site_path(str(path.relative_to(ROOT)))
+    match = re.search(r"<title>(.*?)</title>", head, flags=re.I | re.S)
+    if not match:
+        return site_path(str(path.relative_to(ROOT)))
+    return re.sub(r"\s+", " ", match.group(1)).strip()
+
+
+def sitemap_priority(relative_path: str) -> str:
+    if relative_path == "index.html":
+        return "1.0"
+    if relative_path.endswith("/index.html") or relative_path in {
+        "beneficios/ncm.html",
+        "beneficios/reforma.html",
+        "confaz/ultimos-5-anos.html",
+        "auditoria/index.html",
+    }:
+        return "0.9"
+    if "/legislacao/" in relative_path or relative_path.startswith("beneficios/"):
+        return "0.8"
+    return "0.7"
+
+
+def sitemap_xml() -> str:
+    rows = []
+    for page in html_pages_for_discovery():
+        relative = site_path(str(page.relative_to(ROOT)))
+        lastmod = datetime.fromtimestamp(page.stat().st_mtime).date().isoformat()
+        rows.append(
+            "  <url>\n"
+            f"    <loc>{escape(canonical_url(relative), quote=True)}</loc>\n"
+            f"    <lastmod>{lastmod}</lastmod>\n"
+            "    <changefreq>weekly</changefreq>\n"
+            f"    <priority>{sitemap_priority(relative)}</priority>\n"
+            "  </url>"
+        )
+    return "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n" + (
+        "<urlset xmlns=\"http://www.sitemaps.org/schemas/sitemap/0.9\">\n"
+        + "\n".join(rows)
+        + "\n</urlset>\n"
+    )
+
+
+def sitemap_txt() -> str:
+    return "\n".join(canonical_url(site_path(str(page.relative_to(ROOT)))) for page in html_pages_for_discovery()) + "\n"
+
+
+def robots_txt() -> str:
+    return f"""User-agent: *
+Allow: /
+
+Sitemap: {BASE_URL}/sitemap.xml
+Sitemap: {BASE_URL}/sitemap.txt
+
+# Portal publico de legislacao tributaria, fiscal, trabalhista e Reforma Tributaria.
+# Conteudo essencial tambem fica em tela no proprio GitHub Pages.
+"""
+
+
+def llm_manifest() -> list[dict[str, str]]:
+    items = []
+    for page in html_pages_for_discovery():
+        relative = site_path(str(page.relative_to(ROOT)))
+        section = relative.split("/", 1)[0] if "/" in relative else "portal"
+        items.append(
+            {
+                "title": page_title(page),
+                "path": relative,
+                "url": canonical_url(relative),
+                "section": section,
+            }
+        )
+    return items
+
+
+def llms_txt() -> str:
+    manifest = llm_manifest()
+    featured = [
+        ("Inicio", "index.html"),
+        ("Federal", "federal/index.html"),
+        ("Reforma Tributaria", "federal/legislacao/reforma-tributaria/index.html"),
+        ("Beneficios fiscais", "beneficios/index.html"),
+        ("Beneficios por NCM", "beneficios/ncm.html"),
+        ("Beneficios por setor", "beneficios/setores.html"),
+        ("Estados", "estados/index.html"),
+        ("CONFAZ", "confaz/index.html"),
+        ("CONFAZ ultimos 5 anos", "confaz/ultimos-5-anos.html"),
+        ("Folha e CLT", "folha-clt/index.html"),
+    ]
+    lines = [
+        "# Portal RJC Tributario Aberto",
+        "",
+        "> Base aberta, gratuita e versionada de legislacao tributaria, fiscal, trabalhista e Reforma Tributaria brasileira. O portal prioriza texto legal em tela, fonte oficial, analise didatica e cruzamentos por UF, tributo, beneficio, NCM, cBenef, CST, cClassTrib e documentos de prova.",
+        "",
+        "## Como usar esta base",
+        "",
+        "- Use as paginas HTML como fonte primaria navegavel.",
+        "- Use `sitemap.xml` ou `sitemap.txt` para descobrir todas as URLs publicas.",
+        "- Use `assets/portal-search-full.json`, `data/benefits_crosswalk.json` e `data/ncm_benefits_index.json` para busca e cruzamento estruturado.",
+        "- Em materia tributaria concreta, conferir a fonte oficial citada na propria pagina e fazer homologacao humana final.",
+        "",
+        "## Entradas principais",
+        "",
+    ]
+    for label, path in featured:
+        lines.append(f"- [{label}]({canonical_url(path)})")
+    lines += [
+        "",
+        "## Indices para agentes",
+        "",
+        f"- [Sitemap XML]({BASE_URL}/sitemap.xml)",
+        f"- [Sitemap texto]({BASE_URL}/sitemap.txt)",
+        f"- [Manifesto JSON]({BASE_URL}/assets/llm-manifest.json)",
+        f"- [Busca contextual JSON]({BASE_URL}/assets/portal-search-full.json)",
+        f"- [Matriz de beneficios]({BASE_URL}/data/benefits_crosswalk.json)",
+        f"- [NCM x beneficios]({BASE_URL}/data/ncm_benefits_index.json)",
+        f"- [Registro de fontes legais]({BASE_URL}/data/legal_sources_registry.json)",
+        "",
+        "## Mapa completo de paginas HTML",
+        "",
+    ]
+    for item in manifest:
+        lines.append(f"- [{item['title']}]({item['url']})")
+    return "\n".join(lines) + "\n"
+
+
+def write_discovery_files() -> None:
+    write("robots.txt", robots_txt())
+    write("sitemap.xml", sitemap_xml())
+    write("sitemap.txt", sitemap_txt())
+    write("llms.txt", llms_txt())
+    write("assets/llm-manifest.json", json.dumps(llm_manifest(), ensure_ascii=False, indent=2))
+
+
 def write(path: str, content: str) -> None:
     target = ROOT / path
     target.parent.mkdir(parents=True, exist_ok=True)
@@ -3300,6 +3470,7 @@ def main() -> None:
         write(state_legal_path, state_legal_content)
     write("assets/portal-search.js", search_index(data))
     write("assets/portal-search-full.json", json.dumps(full_text_search_entries() + benefit_full_search_entries() + ncm_full_search_entries(), ensure_ascii=False, separators=(",", ":")))
+    write_discovery_files()
     print("Portal generated successfully.")
 
 

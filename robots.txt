@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://mjrrafael.github.io/rjc-conhecimento/sitemap.xml
+Sitemap: https://mjrrafael.github.io/rjc-conhecimento/sitemap.txt
+
+# Portal publico de legislacao tributaria, fiscal, trabalhista e Reforma Tributaria.
+# Conteudo essencial tambem fica em tela no proprio GitHub Pages.
