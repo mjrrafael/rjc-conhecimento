@@ -1295,7 +1295,7 @@ def layout(path: str, title: str, subtitle: str, body: str, active: str = "") ->
     </div>
     <div class="searchbar" role="search">
       <label for="globalSearch">Buscar em todo o portal</label>
-      <input id="globalSearch" type="search" placeholder="Busque lei, artigo, benefício, CST, NCM, Estado, regime ou termo parcial">
+      <input id="globalSearch" type="search" placeholder="Busca semântica: arroz, benefício fiscal arroz, NCM, cBenef, CST, Estado, regime ou artigo">
       <div id="searchResults" class="search-results" aria-live="polite"></div>
     </div>
     <nav class="study-strip" aria-label="Trilhas rápidas de estudo">

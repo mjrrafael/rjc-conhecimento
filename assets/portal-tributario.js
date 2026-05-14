@@ -13,19 +13,43 @@
   function tokens(value) {
     return normalize(value)
       .split(" ")
-      .filter(function (part) { return part.length >= 2; });
+      .filter(function (part) { return part.length >= 2 && !QUERY_STOPWORDS[part]; });
   }
+
+  var QUERY_STOPWORDS = {
+    a: true, ao: true, aos: true, as: true, com: true, da: true, das: true,
+    de: true, do: true, dos: true, e: true, em: true, na: true, nas: true,
+    no: true, nos: true, o: true, os: true, ou: true, para: true, pela: true,
+    pelas: true, pelo: true, pelos: true, por: true, sobre: true, um: true,
+    uma: true, uns: true, umas: true
+  };
+
+  var QUERY_INTENT_TOKENS = {
+    beneficio: true, beneficios: true, beneficiado: true, favorecido: true,
+    fiscal: true, fiscais: true, tributario: true, tributaria: true,
+    tributarios: true, tributarias: true, tratamento: true, tratamentos: true,
+    tributacao: true, regime: true, regimes: true, especial: true, especiais: true,
+    especifico: true, especificos: true, diferenciado: true, diferenciados: true,
+    regra: true, regras: true, legal: true, legais: true, legislacao: true,
+    imposto: true, impostos: true, tributo: true, tributos: true
+  };
 
   var SEARCH_SYNONYMS = {
     aliquota: ["aliquotas", "carga", "percentual"],
     aliquotas: ["aliquota", "carga", "percentual"],
-    beneficio: ["beneficios", "incentivo", "incentivos", "favor"],
-    beneficios: ["beneficio", "incentivo", "incentivos", "favores"],
+    agro: ["agropecuario", "rural", "produtor rural", "insumo agropecuario"],
+    agropecuario: ["agro", "rural", "produtor rural", "atividade rural"],
+    alimento: ["alimentos", "cesta basica", "produto alimenticio", "genero alimenticio"],
+    alimentos: ["alimento", "cesta basica", "produtos alimenticios", "generos alimenticios"],
+    arroz: ["1006", "arroz em casca", "arroz descascado", "arroz beneficiado", "arroz semibranqueado", "arroz branqueado", "arroz polido", "arroz quebrado"],
+    beneficio: ["beneficios", "incentivo", "incentivos", "favor", "tratamento tributario", "tratamento fiscal", "regime diferenciado", "regime especial", "isencao", "reducao", "credito presumido", "credito outorgado"],
+    beneficios: ["beneficio", "incentivo", "incentivos", "favores", "tratamento tributario", "tratamento fiscal", "regime diferenciado", "regime especial", "isencao", "reducao", "credito presumido", "credito outorgado"],
     cbenef: ["codigo beneficio", "codigo de beneficio", "beneficio fiscal"],
     cclass: ["cclasstrib", "classificacao tributaria"],
     cclasstrib: ["cclass", "classificacao tributaria"],
     ccredpres: ["credito presumido", "presumido"],
     cest: ["substituicao tributaria", "st", "segmento"],
+    cesta: ["cesta basica", "alimento", "alimentos", "generos alimenticios"],
     cfop: ["operacao fiscal", "natureza operacao"],
     clt: ["folha", "trabalhista", "empregado", "contrato trabalho"],
     cofins: ["pis cofins", "contribuicoes"],
@@ -40,6 +64,8 @@
     efd: ["sped", "escrituracao", "arquivo digital"],
     exportacao: ["exterior", "imunidade", "fim especifico exportacao"],
     fgts: ["fgts digital", "folha"],
+    franca: ["zona franca", "zona franca de manaus", "zfm", "area de livre comercio"],
+    francas: ["zonas francas", "zona franca", "zfm", "areas de livre comercio"],
     ibs: ["reforma tributaria", "cbs", "imposto bens servicos"],
     importacao: ["importado", "aduaneiro", "desembaraco"],
     ii: ["imposto importacao", "aduaneiro", "importacao"],
@@ -50,6 +76,8 @@
     irpf: ["imposto renda pessoa fisica", "pessoa fisica", "ganho capital"],
     isencao: ["isento", "isenta", "beneficio", "dispensa"],
     lc160: ["lei complementar 160", "convenio 190", "confaz"],
+    monofasia: ["monofasico", "tributacao concentrada", "aliquota concentrada", "pis cofins monofasico"],
+    monofasico: ["monofasia", "tributacao concentrada", "aliquota concentrada", "pis cofins monofasico"],
     ncm: ["classificacao fiscal", "mercadoria", "produto"],
     nf: ["nfe", "nf e", "nota fiscal"],
     nfe: ["nf e", "nota fiscal eletronica", "xml"],
@@ -58,12 +86,20 @@
     perdcomp: ["per dcomp", "compensacao", "ressarcimento", "restituicao"],
     presumido: ["lucro presumido", "credito presumido"],
     simples: ["simples nacional", "mei", "pgdas", "das"],
-    reducao: ["base reduzida", "reducao de base", "carga efetiva"],
-    regime: ["regime especial", "tratamento tributario"],
+    reducao: ["base reduzida", "reducao de base", "carga efetiva", "beneficio fiscal"],
+    regime: ["regime especial", "tratamento tributario", "tratamento fiscal", "regime diferenciado", "regime especifico"],
+    especial: ["regime especial", "tratamento especial", "tratamento diferenciado", "regime especifico"],
+    diferenciado: ["regime diferenciado", "tratamento diferenciado", "regime especial", "regime especifico"],
+    tratamento: ["tratamento tributario", "tratamento fiscal", "beneficio fiscal", "regime especial", "regime diferenciado", "tributacao"],
+    tributario: ["fiscal", "tributacao", "imposto", "beneficio fiscal", "tratamento tributario"],
+    tributaria: ["fiscal", "tributacao", "imposto", "beneficio fiscal", "tratamento tributario"],
     sped: ["efd", "escrituracao", "arquivo digital"],
     st: ["substituicao tributaria", "cest", "mva"],
     suspensao: ["suspenso", "suspensa"],
-    xml: ["nfe", "nf e", "documento fiscal"]
+    xml: ["nfe", "nf e", "documento fiscal"],
+    zfm: ["zona franca", "zona franca de manaus", "amazonia ocidental", "area de livre comercio"],
+    zona: ["zona franca", "zfm", "area de livre comercio"],
+    zonas: ["zonas francas", "zona franca", "zfm", "areas de livre comercio"]
   };
 
   function uniqueList(values) {
@@ -75,8 +111,7 @@
     });
   }
 
-  function queryGroups(value) {
-    return tokens(value).map(function (token) {
+  function expandedGroup(token) {
       var related = [token];
       if (SEARCH_SYNONYMS[token]) related = related.concat(SEARCH_SYNONYMS[token]);
       Object.keys(SEARCH_SYNONYMS).forEach(function (key) {
@@ -86,7 +121,29 @@
         }
       });
       return uniqueList(related);
+  }
+
+  function queryPlan(value) {
+    var hard = [];
+    var soft = [];
+    tokens(value).forEach(function (token) {
+      var group = expandedGroup(token);
+      if (QUERY_INTENT_TOKENS[token]) {
+        soft.push(group);
+      } else {
+        hard.push(group);
+      }
     });
+    if (!hard.length && soft.length) {
+      hard = soft;
+      soft = [];
+    }
+    return {
+      hard: hard,
+      soft: soft,
+      groups: hard.concat(soft),
+      hasTerms: hard.length > 0 || soft.length > 0
+    };
   }
 
   function uniqueWords(value) {
@@ -137,39 +194,65 @@
     return 0;
   }
 
-  function scoreEntry(entry, groups) {
+  function bestGroupScore(group, haystack, words, title, summary, tags, body, url) {
+    var bestScore = 0;
+    for (var j = 0; j < group.length; j += 1) {
+      var token = group[j];
+      var partScore = tokenScore(token, haystack, words);
+      if (!partScore) continue;
+      if (title.indexOf(token) >= 0) partScore += 10;
+      if (url.indexOf(token) >= 0) partScore += 5;
+      if (tags.indexOf(token) >= 0) partScore += 4;
+      if (summary.indexOf(token) >= 0) partScore += 3;
+      if (body.indexOf(token) >= 0) partScore += 1;
+      if (partScore > bestScore) bestScore = partScore;
+    }
+    return bestScore;
+  }
+
+  function groupAppearsIn(group, text) {
+    return group.some(function (token) {
+      return text.indexOf(token) >= 0;
+    });
+  }
+
+  function scoreEntry(entry, plan) {
     var title = normalize(entry.title);
     var summary = normalize(entry.summary);
     var tags = normalize(entry.tags);
-    var body = normalize(entry.body || entry.terms || "");
-    var url = normalize(entry.url);
+    var body = normalize([entry.body, entry.terms, entry.semantic, entry.product, entry.legal_basis].join(" "));
+    var rawUrl = (entry.url || "").toString();
+    var url = normalize(rawUrl.split("#")[0]);
+    if (normalize(rawUrl).indexOf("backup") >= 0 || title.indexOf("backup") >= 0) return 0;
     var scope = normalize([entry.kind, entry.jurisdiction, entry.tax, entry.theme].join(" "));
     var haystack = [title, summary, tags, body, url, scope].join(" ");
     var words = uniqueWords(haystack);
     var score = 0;
-    for (var i = 0; i < groups.length; i += 1) {
-      var bestScore = 0;
-      for (var j = 0; j < groups[i].length; j += 1) {
-        var token = groups[i][j];
-        var partScore = tokenScore(token, haystack, words);
-        if (!partScore) continue;
-        if (title.indexOf(token) >= 0) partScore += 10;
-        if (url.indexOf(token) >= 0) partScore += 5;
-        if (tags.indexOf(token) >= 0) partScore += 4;
-        if (summary.indexOf(token) >= 0) partScore += 3;
-        if (body.indexOf(token) >= 0) partScore += 1;
-        if (partScore > bestScore) bestScore = partScore;
+    var directHardMatch = false;
+    for (var i = 0; i < plan.hard.length; i += 1) {
+      var hardScore = bestGroupScore(plan.hard[i], haystack, words, title, summary, tags, body, url);
+      if (!hardScore) return 0;
+      score += hardScore * 2;
+      if (groupAppearsIn(plan.hard[i], [title, tags, summary, url].join(" "))) {
+        score += 25;
+        directHardMatch = true;
       }
-      if (!bestScore) return 0;
-      score += bestScore;
     }
+    if (plan.soft.length && url.indexOf("beneficios ncm html") >= 0 && !directHardMatch) return 0;
+    if (plan.hard.length && plan.soft.length && url.indexOf("beneficios ncm html") >= 0) score += 20;
+    var softTotal = 0;
+    for (i = 0; i < plan.soft.length; i += 1) {
+      var softScore = bestGroupScore(plan.soft[i], haystack, words, title, summary, tags, body, url);
+      if (softScore) softTotal += Math.min(softScore, 14);
+    }
+    score += Math.min(softTotal, 40);
     return score;
   }
 
-  function matchesText(text, groups) {
+  function matchesText(text, plan) {
     var normalizedText = normalize(text);
     var words = uniqueWords(normalizedText);
-    return groups.every(function (group) {
+    return plan.hard.every(function (group) {
       return group.some(function (token) {
         return tokenScore(token, normalizedText, words) > 0;
       });
@@ -232,10 +315,10 @@
       });
   }
 
-  function rankedHits(entries, groups, limit) {
+  function rankedHits(entries, plan, limit) {
     var byUrl = {};
     entries.forEach(function (entry) {
-      var score = scoreEntry(entry, groups);
+      var score = scoreEntry(entry, plan);
       if (!score) return;
       var existing = byUrl[entry.url];
       if (!existing || score > existing.score) {
@@ -261,8 +344,8 @@
     }
 
     function renderFullSearch() {
-      var groups = queryGroups(input.value);
-      if (!groups.length) {
+      var plan = queryPlan(input.value);
+      if (!plan.hasTerms) {
         closeResults();
         return;
       }
@@ -271,7 +354,7 @@
         loadFullSearch(prefix, renderFullSearch);
       }
 
-      var hits = rankedHits(window.RJC_SEARCH.concat(fullSearchState.entries), groups, 24);
+      var hits = rankedHits(window.RJC_SEARCH.concat(fullSearchState.entries), plan, 80);
       if (!hits.length) {
         results.innerHTML = fullSearchState.loading
           ? '<div class="search-result search-status"><strong>Buscando no texto integral</strong><span>Carregando o índice completo das leis, atos e capítulos publicados.</span></div>'
@@ -313,14 +396,14 @@
     if (!input || !cards.length) return;
 
     input.addEventListener("input", function () {
-      var groups = queryGroups(input.value);
-      if (!groups.length) {
+      var plan = queryPlan(input.value);
+      if (!plan.hasTerms) {
         cards.forEach(function (card) { card.classList.remove("is-hidden"); });
         return;
       }
       cards.forEach(function (card) {
         var haystack = card.getAttribute("data-search") || card.textContent;
-        card.classList.toggle("is-hidden", !matchesText(haystack, groups));
+        card.classList.toggle("is-hidden", !matchesText(haystack, plan));
       });
     });
   }
