@@ -743,7 +743,7 @@
           "data/legal_sources/federal/Lei_15394_2026_PIS_COFINS_Residuos.txt"
         ],
         "sha256": {
-          "data/legal_sources/federal/Lei_15394_2026_PIS_COFINS_Residuos.txt": "5b072d0d8f2ba8ce2c3fa643c7cf05b27e1b8c9434a0f1f31deccb29d6e2cc23"
+          "data/legal_sources/federal/Lei_15394_2026_PIS_COFINS_Residuos.txt": "2800a5e7e9b3362c14c0f488fb36131c9506e1bf2990fed15a93772efbaac3c5"
         },
         "fetch_url": ""
       },
@@ -1241,7 +1241,7 @@
           "data/legal_sources/federal/MP_1357_2026_Remessas_Postais.txt"
         ],
         "sha256": {
-          "data/legal_sources/federal/MP_1357_2026_Remessas_Postais.txt": "0aea6d00a5739990a65e42b56ec714f9db28efe3acfe55d6274699338f236d6c"
+          "data/legal_sources/federal/MP_1357_2026_Remessas_Postais.txt": "a1ee41c024323382c46d128f68d62157b4e9005a6f068171c882470cf79f8344"
         },
         "fetch_url": ""
       },

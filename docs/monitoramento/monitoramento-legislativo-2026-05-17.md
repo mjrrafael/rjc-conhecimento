@@ -19,8 +19,8 @@ Regra usada: fonte oficial, texto em tela, data absoluta, hash e sem conclusao i
 
 | Ato/fonte | Data oficial | URL oficial | Hash/registro | Tratamento |
 | --- | ---: | --- | --- | --- |
-| Medida Provisoria 1.357/2026 - remessas postais internacionais | 2026-05-12 | https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2026/mpv/mpv1357.htm | repo text `0aea6d00a5739990a65e42b56ec714f9db28efe3acfe55d6274699338f236d6c` | Aplicado em modulo aduaneiro, sem ampliar conclusao alem do texto legal. |
-| Lei 15.394/2026 - creditos/isencao de PIS/Cofins para residuos e aparas | 2026-04-22 | https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2026/lei/l15394.htm | repo text `5b072d0d8f2ba8ce2c3fa643c7cf05b27e1b8c9434a0f1f31deccb29d6e2cc23` | Aplicado nos capitulos de PIS/Cofins de creditos e beneficios. |
+| Medida Provisoria 1.357/2026 - remessas postais internacionais | 2026-05-12 | https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2026/mpv/mpv1357.htm | repo text `a1ee41c024323382c46d128f68d62157b4e9005a6f068171c882470cf79f8344` | Aplicado em modulo aduaneiro, sem ampliar conclusao alem do texto legal. |
+| Lei 15.394/2026 - creditos/isencao de PIS/Cofins para residuos e aparas | 2026-04-22 | https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2026/lei/l15394.htm | repo text `2800a5e7e9b3362c14c0f488fb36131c9506e1bf2990fed15a93772efbaac3c5` | Aplicado nos capitulos de PIS/Cofins de creditos e beneficios. |
 | Receita Federal - Orientacoes da Reforma Tributaria para 2026 | atualizado em 2026-05-06 | https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-tributaria-do-consumo/orientacoes-2026 | repo text `ea5203f98a4ae161d92868bf193f7706c2d66875ee6cc1f2052af830b1f8fd1a` | URL oficial, data de captura e paginas regeneradas. |
 | Receita Federal - Marcos regulatorios da Reforma Tributaria | atualizado em 2026-05-06 | https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-tributaria-do-consumo/marcos | repo text `e8c1f8c7086f62db871241340b5d32874b5f9ddbce7c34dfa5651d172bd55d35` | URL oficial, data de captura e paginas regeneradas. |
 | Ajuste SINIEF 15/26 | publicado no DOU em 2026-04-30 | https://www.confaz.fazenda.gov.br/legislacao/ajustes/2026/AJ015_26 | texto CONFAZ `ebae4c85d05960c9a5bb0b2afc40332eb1e83cd4efe57bcbca06914c2e080c48` | Indexado no CONFAZ 2026; sem tese propria. |
@@ -47,12 +47,12 @@ Regra usada: fonte oficial, texto em tela, data absoluta, hash e sem conclusao i
 
 ## Auditorias
 
-- `portal_monitor.py --live`: concluido e salvo em `docs/monitoramento/portal-monitor-2026-05-17.md`; sem achado critico ou alto.
+- `portal_monitor.py --live`: concluido antes e depois da atualizacao; relatorio final salvo em `docs/monitoramento/portal-monitor-2026-05-17-014444-pos-atualizacao.md`; sem achado critico ou alto.
 - `python -m py_compile scripts/*.py`: OK.
 - `python scripts/audit_master_coverage.py`: OK, sem falhas estruturais.
 - `python scripts/audit_state_source_quality.py`: OK, relatorio estadual regenerado sem mudanca material.
-- `audit_portal.py`: chamada direta instavel no wrapper; subchecks internos rodados separadamente com 633 paginas HTML auditadas, 0 erros em links, busca, fontes legais, regioes e conteudo critico.
-- `build_portal.py`: a execucao completa ficou instavel em OneDrive/wrapper; a etapa final foi executada isoladamente e concluiu `assets/portal-search-full.json`, `assets/portal-search.js`, `sitemap.xml`, `sitemap.txt`, `llms.txt` e `assets/llm-manifest.json`.
+- `python scripts/audit_portal.py`: OK, 633 paginas HTML auditadas, sem falhas.
+- `build_portal.py`: houve instabilidade de I/O em OneDrive durante execucoes longas; o writer foi ajustado para gravacao temporaria/substituicao e os artefatos finais foram regenerados e validados pelas auditorias.
 
 ## Pendencias reais
 

@@ -1,6 +1,6 @@
 # Auditoria Do Portal RJC Tributario Aberto
 
-- Data: 2026-05-17 01:43:04
+- Data: 2026-05-17 01:47:35
 - Repo: `C:\Users\kris2\OneDrive\Documentos\Playbook\rjc-conhecimento`
 - Base publica: https://mjrrafael.github.io/rjc-conhecimento
 
@@ -31,7 +31,7 @@
 - `size:assets/portal-search-full.json`: 51664593
 - `size:assets/portal-search.js`: 306600
 - `size:data/benefits_crosswalk.json`: 56091176
-- `size:data/legal_sources_registry.json`: 261006
+- `size:data/legal_sources_registry.json`: 261176
 - `size:data/ncm_benefits_index.json`: 23105095
 - `size:index.html`: 14587
 - `size:llms.txt`: 120693
