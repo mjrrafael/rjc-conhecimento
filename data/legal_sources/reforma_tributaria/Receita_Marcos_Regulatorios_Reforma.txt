@@ -1,9 +1,9 @@
 # Receita Federal - Principais marcos regulatórios da Reforma Tributária
 
 Tipo: orientacao administrativa
-Fonte oficial: https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-consumo/marcos
-Data de captura: 2026-04-30
-SHA256 do arquivo capturado: a170d93fbce85c5cdbf28f41ef85bee16c49a3eb7108ab4c00af42a7616a868e
+Fonte oficial: https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-tributaria-do-consumo/marcos
+Data de captura: 2026-05-17
+SHA256 do arquivo capturado: 0f6dedff862f291ad1b7628ead1185633ae54130de7f36b029ab28966870eb18
 
 ## Texto em tela
 Principais Marcos Regulatórios
@@ -14,7 +14,7 @@ Principais Marcos Regulatórios
 
 Compartilhe: Compartilhe por FacebookCompartilhe por TwitterCompartilhe por LinkedInCompartilhe por WhatsApplink para Copiar para área de transferência
 
-Publicado em17/06/2025 10h03Atualizado em06/02/2026 17h14
+Publicado em17/06/2025 10h03Atualizado em06/05/2026 09h58
 
 Acompanhe pelos links abaixo os principais marcos regulatórios da Reforma Tributária do Consumo.
 
@@ -565,6 +565,8 @@ Twitter
 Instagram
 
 YouTube
+
+Linkedin
 
 Acesso àInformação
 

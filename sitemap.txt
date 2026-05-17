@@ -499,11 +499,15 @@ https://mjrrafael.github.io/rjc-conhecimento/estados/to/legislacao/icms.html
 https://mjrrafael.github.io/rjc-conhecimento/estados/to/legislacao/index.html
 https://mjrrafael.github.io/rjc-conhecimento/estados/to/legislacao/substituicao-tributaria.html
 https://mjrrafael.github.io/rjc-conhecimento/federal/acervo.html
+https://mjrrafael.github.io/rjc-conhecimento/federal/aduaneiro.html
 https://mjrrafael.github.io/rjc-conhecimento/federal/beneficios-federais.html
 https://mjrrafael.github.io/rjc-conhecimento/federal/index.html
 https://mjrrafael.github.io/rjc-conhecimento/federal/iof.html
 https://mjrrafael.github.io/rjc-conhecimento/federal/ipi.html
 https://mjrrafael.github.io/rjc-conhecimento/federal/irpj-csll.html
+https://mjrrafael.github.io/rjc-conhecimento/federal/legislacao/aduaneiro/index.html
+https://mjrrafael.github.io/rjc-conhecimento/federal/legislacao/aduaneiro/pis-cofins-importacao-prova.html
+https://mjrrafael.github.io/rjc-conhecimento/federal/legislacao/aduaneiro/remessas-postais-tributacao-simplificada.html
 https://mjrrafael.github.io/rjc-conhecimento/federal/legislacao/atos/ato-conjunto-rfb-cgibs-1-2025.html
 https://mjrrafael.github.io/rjc-conhecimento/federal/legislacao/atos/clt-1943.html
 https://mjrrafael.github.io/rjc-conhecimento/federal/legislacao/atos/decreto-12955-2026-cbs.html
@@ -523,6 +527,7 @@ https://mjrrafael.github.io/rjc-conhecimento/federal/legislacao/atos/lei-10833-2
 https://mjrrafael.github.io/rjc-conhecimento/federal/legislacao/atos/lei-10865-2004-pis-cofins-importacao.html
 https://mjrrafael.github.io/rjc-conhecimento/federal/legislacao/atos/lei-13097-2015-pis-cofins.html
 https://mjrrafael.github.io/rjc-conhecimento/federal/legislacao/atos/lei-15079-2024-csll.html
+https://mjrrafael.github.io/rjc-conhecimento/federal/legislacao/atos/lei-15394-2026-pis-cofins-residuos.html
 https://mjrrafael.github.io/rjc-conhecimento/federal/legislacao/atos/lei-5143-1966-iof.html
 https://mjrrafael.github.io/rjc-conhecimento/federal/legislacao/atos/lei-7689-1988-csll.html
 https://mjrrafael.github.io/rjc-conhecimento/federal/legislacao/atos/lei-7798-1989-ipi.html
@@ -537,6 +542,7 @@ https://mjrrafael.github.io/rjc-conhecimento/federal/legislacao/atos/lei-9249-19
 https://mjrrafael.github.io/rjc-conhecimento/federal/legislacao/atos/lei-9430-1996-irpj.html
 https://mjrrafael.github.io/rjc-conhecimento/federal/legislacao/atos/lei-9715-1998-pis.html
 https://mjrrafael.github.io/rjc-conhecimento/federal/legislacao/atos/lei-9718-1998-pis-cofins.html
+https://mjrrafael.github.io/rjc-conhecimento/federal/legislacao/atos/mpv-1357-2026-remessas-postais.html
 https://mjrrafael.github.io/rjc-conhecimento/federal/legislacao/atos/nt-2025-002-rtc-nfe.html
 https://mjrrafael.github.io/rjc-conhecimento/federal/legislacao/atos/portaria-mf-cgibs-7-2026.html
 https://mjrrafael.github.io/rjc-conhecimento/federal/legislacao/atos/resolucao-cgibs-6-2026-ibs.html

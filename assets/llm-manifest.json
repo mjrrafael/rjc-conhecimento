@@ -3006,6 +3006,12 @@
     "section": "federal"
   },
   {
+    "title": "Aduaneiro e remessas internacionais | RJC Assessoria",
+    "path": "federal/aduaneiro.html",
+    "url": "https://mjrrafael.github.io/rjc-conhecimento/federal/aduaneiro.html",
+    "section": "federal"
+  },
+  {
     "title": "Benefícios federais, regimes especiais e DIRBI | RJC Assessoria",
     "path": "federal/beneficios-federais.html",
     "url": "https://mjrrafael.github.io/rjc-conhecimento/federal/beneficios-federais.html",
@@ -3033,6 +3039,24 @@
     "title": "IRPJ e CSLL: base, adicoes, exclusoes e benefícios | RJC Assessoria",
     "path": "federal/irpj-csll.html",
     "url": "https://mjrrafael.github.io/rjc-conhecimento/federal/irpj-csll.html",
+    "section": "federal"
+  },
+  {
+    "title": "Aduaneiro e remessas internacionais: legislação em tela | RJC Assessoria",
+    "path": "federal/legislacao/aduaneiro/index.html",
+    "url": "https://mjrrafael.github.io/rjc-conhecimento/federal/legislacao/aduaneiro/index.html",
+    "section": "federal"
+  },
+  {
+    "title": "PIS/Cofins-Importação e prova documental | Aduaneiro e remessas internacionais: legislação em tela | RJC Assessoria",
+    "path": "federal/legislacao/aduaneiro/pis-cofins-importacao-prova.html",
+    "url": "https://mjrrafael.github.io/rjc-conhecimento/federal/legislacao/aduaneiro/pis-cofins-importacao-prova.html",
+    "section": "federal"
+  },
+  {
+    "title": "Remessas postais internacionais e tributação simplificada | Aduaneiro e remessas internacionais: legislação em tela | RJC Assessoria",
+    "path": "federal/legislacao/aduaneiro/remessas-postais-tributacao-simplificada.html",
+    "url": "https://mjrrafael.github.io/rjc-conhecimento/federal/legislacao/aduaneiro/remessas-postais-tributacao-simplificada.html",
     "section": "federal"
   },
   {
@@ -3150,6 +3174,12 @@
     "section": "federal"
   },
   {
+    "title": "Lei 15.394/2026 - créditos e isenção de PIS/Cofins para residuos e aparas | RJC Assessoria",
+    "path": "federal/legislacao/atos/lei-15394-2026-pis-cofins-residuos.html",
+    "url": "https://mjrrafael.github.io/rjc-conhecimento/federal/legislacao/atos/lei-15394-2026-pis-cofins-residuos.html",
+    "section": "federal"
+  },
+  {
     "title": "Lei 5.143/1966 - Instituicao do IOF | RJC Assessoria",
     "path": "federal/legislacao/atos/lei-5143-1966-iof.html",
     "url": "https://mjrrafael.github.io/rjc-conhecimento/federal/legislacao/atos/lei-5143-1966-iof.html",
@@ -3231,6 +3261,12 @@
     "title": "Lei 9.718/1998 - PIS/Cofins no regime cumulativo | RJC Assessoria",
     "path": "federal/legislacao/atos/lei-9718-1998-pis-cofins.html",
     "url": "https://mjrrafael.github.io/rjc-conhecimento/federal/legislacao/atos/lei-9718-1998-pis-cofins.html",
+    "section": "federal"
+  },
+  {
+    "title": "Medida Provisoria 1.357/2026 - remessas postais internacionais | RJC Assessoria",
+    "path": "federal/legislacao/atos/mpv-1357-2026-remessas-postais.html",
+    "url": "https://mjrrafael.github.io/rjc-conhecimento/federal/legislacao/atos/mpv-1357-2026-remessas-postais.html",
     "section": "federal"
   },
   {

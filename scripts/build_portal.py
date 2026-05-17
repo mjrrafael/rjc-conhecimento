@@ -245,6 +245,12 @@ FEDERAL_EXTRA_PAGES = [
         "title": "Reforma tributaria: IBS, CBS e Imposto Seletivo",
         "summary": "Transicao da EC 132/2023 para a LC 214/2025, com foco em documento, apuracao, credito e governanca.",
     },
+    {
+        "theme": "aduaneiro",
+        "path": "federal/aduaneiro.html",
+        "title": "Aduaneiro e remessas internacionais",
+        "summary": "Importacao, exportacao, remessas postais, PIS/Cofins-Importacao e prova documental em comercio exterior.",
+    },
 ]
 
 FEDERAL_ANALYSIS = {
@@ -3412,7 +3418,13 @@ def write(path: str, content: str) -> None:
     if path.endswith(".html"):
         content = polish_html_text(content)
     clean = "\n".join(line.rstrip() for line in content.splitlines()) + "\n"
-    target.write_text(clean, encoding="utf-8", newline="\n")
+    tmp = target.with_name(f".{target.name}.tmp")
+    tmp.write_text(clean, encoding="utf-8", newline="\n")
+    try:
+        tmp.replace(target)
+    except OSError:
+        target.unlink(missing_ok=True)
+        tmp.replace(target)
 
 
 def audit(data: dict) -> None:

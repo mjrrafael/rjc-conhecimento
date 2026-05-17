@@ -22,7 +22,7 @@ ROOT = Path(__file__).resolve().parents[1]
 BD_ROOT = Path(os.environ.get("RJC_BD_LEGISLACAO", r"C:\Users\kris2\OneDrive\COWORK\BD_LEGISLACAO"))
 FEDERAL_ROOT = BD_ROOT / "#FEDERAIS-COMPILADO-ONLINE" / "legislacao_txt_completa"
 REPO_SOURCE_ROOT = ROOT / "data" / "legal_sources"
-UPDATED_ON = "25/04/2026"
+UPDATED_ON = "17/05/2026"
 
 
 def slug(value: str) -> str:
@@ -609,6 +609,14 @@ SOURCE_DEFS: dict[str, dict] = {
         "files": ["Lei_10865_2004_PIS_COFINS_Importacao.txt"],
         "note": "Importacao de bens e servicos, base, aliquota, contribuinte e creditos.",
     },
+    "mpv-1357-2026-remessas-postais": {
+        "jurisdiction": "Federal",
+        "title": "Medida Provisoria 1.357/2026 - remessas postais internacionais",
+        "short": "MP 1.357/2026",
+        "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2026/mpv/mpv1357.htm",
+        "repo_files": ["data/legal_sources/federal/MP_1357_2026_Remessas_Postais.txt"],
+        "note": "Altera o Decreto-Lei 1.804/1980 para tratar da tributacao simplificada de remessas postais internacionais.",
+    },
     "lei-9715-1998-pis": {
         "jurisdiction": "Federal",
         "title": "Lei 9.715/1998 - PIS/Pasep",
@@ -640,6 +648,15 @@ SOURCE_DEFS: dict[str, dict] = {
         "url": "https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2015/lei/l13097.htm",
         "files": ["Lei_13097_2015_Reducao_Zero_PIS_COFINS.txt"],
         "note": "Tratamentos setoriais, aliquota zero e beneficios.",
+    },
+    "lei-15394-2026-pis-cofins-residuos": {
+        "jurisdiction": "Federal",
+        "title": "Lei 15.394/2026 - creditos e isencao de PIS/Cofins para residuos e aparas",
+        "short": "Lei 15.394/2026",
+        "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2026/lei/l15394.htm",
+        "repo_files": ["data/legal_sources/federal/Lei_15394_2026_PIS_COFINS_Residuos.txt"],
+        "start_marker": "LEI Nº 15.394, DE 22 DE ABRIL DE 2026",
+        "note": "Altera a Lei 11.196/2005 para autorizar creditamento de PIS/Cofins em aquisicoes de determinados residuos e aparas e isentar vendas especificadas.",
     },
     "ec-132-2023-reforma": {
         "jurisdiction": "Federal",
@@ -701,7 +718,7 @@ SOURCE_DEFS: dict[str, dict] = {
         "jurisdiction": "Federal",
         "title": "Receita Federal - orientacoes da Reforma Tributaria para 2026",
         "short": "Orientacoes RFB 2026",
-        "url": "https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-consumo/orientacoes-2026",
+        "url": "https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-tributaria-do-consumo/orientacoes-2026",
         "repo_files": ["data/legal_sources/reforma_tributaria/Receita_Orientacoes_Reforma_2026.txt"],
         "render": "structured_text",
         "note": "Orientacao administrativa da Receita Federal para preparacao operacional de 2026.",
@@ -710,7 +727,7 @@ SOURCE_DEFS: dict[str, dict] = {
         "jurisdiction": "Federal",
         "title": "Receita Federal - principais marcos regulatorios da Reforma Tributaria",
         "short": "Marcos RFB Reforma",
-        "url": "https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-consumo/marcos",
+        "url": "https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-tributaria-do-consumo/marcos",
         "repo_files": ["data/legal_sources/reforma_tributaria/Receita_Marcos_Regulatorios_Reforma.txt"],
         "render": "structured_text",
         "note": "Pagina oficial de marcos regulatorios para acompanhamento de normas da Reforma Tributaria do Consumo.",
@@ -1065,7 +1082,7 @@ LEGAL_MODULES: list[dict] = [
         "title": "PIS/Pasep: legislacao em tela",
         "summary": "Regimes cumulativo e nao cumulativo, creditos, importacao, monofasico, aliquota zero e prova.",
         "legacy": "federal/pis-cofins.html",
-        "sources": ["in-rfb-2121-2022-pis-cofins", "lei-9715-1998-pis", "lei-9718-1998-pis-cofins", "lei-10637-2002-pis", "lei-10865-2004-pis-cofins-importacao", "lei-13097-2015-pis-cofins"],
+        "sources": ["in-rfb-2121-2022-pis-cofins", "lei-9715-1998-pis", "lei-9718-1998-pis-cofins", "lei-10637-2002-pis", "lei-10865-2004-pis-cofins-importacao", "lei-13097-2015-pis-cofins", "lei-15394-2026-pis-cofins-residuos"],
         "chapters": [
             {
                 "id": "regra-geral",
@@ -1091,7 +1108,7 @@ LEGAL_MODULES: list[dict] = [
                 "id": "nao-cumulativo-creditos",
                 "title": "Nao cumulatividade e creditos",
                 "summary": "Debito sobre receita e credito admitido em lei.",
-                "refs": [{"source": "lei-10637-2002-pis", "ranges": [(1, 3), (15, 17)]}, {"source": "in-rfb-2121-2022-pis-cofins", "ranges": [(150, 206)]}],
+                "refs": [{"source": "lei-10637-2002-pis", "ranges": [(1, 3), (15, 17)]}, {"source": "in-rfb-2121-2022-pis-cofins", "ranges": [(150, 206)]}, {"source": "lei-15394-2026-pis-cofins-residuos", "ranges": [(1, 1)]}],
                 "analysis": [
                     "Credito de PIS nao nasce de despesa contabil; nasce de permissao legal, documento idoneo e vinculacao com receita tributada.",
                     "A revisao deve separar insumo, ativo, energia, frete, aluguel, monofasico, aliquota zero e vedacoes.",
@@ -1111,7 +1128,7 @@ LEGAL_MODULES: list[dict] = [
                 "id": "beneficios-monofasico",
                 "title": "Monofasico, aliquota zero, suspensao e beneficios",
                 "summary": "Tratamentos especiais por produto, cadeia ou politica fiscal.",
-                "refs": [{"source": "in-rfb-2121-2022-pis-cofins", "ranges": [(398, 500)]}, {"source": "lei-13097-2015-pis-cofins", "ranges": None}],
+                "refs": [{"source": "in-rfb-2121-2022-pis-cofins", "ranges": [(398, 500)]}, {"source": "lei-13097-2015-pis-cofins", "ranges": None}, {"source": "lei-15394-2026-pis-cofins-residuos", "ranges": [(1, 2)]}],
                 "analysis": [
                     "Beneficio de PIS depende de produto, NCM, etapa da cadeia, destinatario e vigencia. Parecido nao basta.",
                     "Quando a empresa aplica aliquota zero, suspensao ou monofasico, o XML e a EFD-Contribuicoes precisam apontar a mesma justificativa.",
@@ -1125,7 +1142,7 @@ LEGAL_MODULES: list[dict] = [
         "title": "Cofins: legislacao em tela",
         "summary": "Cumulatividade, nao cumulatividade, creditos, importacao, retencoes, beneficios e prova.",
         "legacy": "federal/pis-cofins.html",
-        "sources": ["lc-70-1991-cofins", "lei-9718-1998-pis-cofins", "lei-10833-2003-cofins", "lei-10865-2004-pis-cofins-importacao", "in-rfb-2121-2022-pis-cofins", "lei-13097-2015-pis-cofins"],
+        "sources": ["lc-70-1991-cofins", "lei-9718-1998-pis-cofins", "lei-10833-2003-cofins", "lei-10865-2004-pis-cofins-importacao", "in-rfb-2121-2022-pis-cofins", "lei-13097-2015-pis-cofins", "lei-15394-2026-pis-cofins-residuos"],
         "chapters": [
             {
                 "id": "instituicao-receita",
@@ -1151,7 +1168,7 @@ LEGAL_MODULES: list[dict] = [
                 "id": "nao-cumulativo-creditos",
                 "title": "Nao cumulatividade e creditos",
                 "summary": "Regra de debito e credito da Cofins.",
-                "refs": [{"source": "lei-10833-2003-cofins", "ranges": [(1, 3), (10, 16)]}, {"source": "in-rfb-2121-2022-pis-cofins", "ranges": [(150, 206)]}],
+                "refs": [{"source": "lei-10833-2003-cofins", "ranges": [(1, 3), (10, 16)]}, {"source": "in-rfb-2121-2022-pis-cofins", "ranges": [(150, 206)]}, {"source": "lei-15394-2026-pis-cofins-residuos", "ranges": [(1, 1)]}],
                 "analysis": [
                     "Credito de Cofins exige fundamento legal e rastreabilidade. Sem documento idoneo e vinculacao, a tese fragiliza.",
                     "A analise deve distinguir insumo, ativo, servico, frete, energia, aluguel, mercadoria monofasica e receita nao tributada.",
@@ -1171,10 +1188,40 @@ LEGAL_MODULES: list[dict] = [
                 "id": "beneficios-monofasico",
                 "title": "Monofasico, aliquota zero, suspensao e beneficios",
                 "summary": "Tratamentos especiais por setor, produto e etapa da cadeia.",
-                "refs": [{"source": "in-rfb-2121-2022-pis-cofins", "ranges": [(398, 500)]}, {"source": "lei-13097-2015-pis-cofins", "ranges": None}],
+                "refs": [{"source": "in-rfb-2121-2022-pis-cofins", "ranges": [(398, 500)]}, {"source": "lei-13097-2015-pis-cofins", "ranges": None}, {"source": "lei-15394-2026-pis-cofins-residuos", "ranges": [(1, 2)]}],
                 "analysis": [
                     "Beneficio de Cofins se prova por texto legal, produto, NCM, etapa, CST e documento. A cadeia importa.",
                     "O erro mais caro e vender como aliquota zero aquilo que a lei reservou a outra etapa ou a outro produto.",
+                ],
+            },
+        ],
+    },
+    {
+        "id": "aduaneiro",
+        "jurisdiction": "Federal",
+        "title": "Aduaneiro e remessas internacionais: legislacao em tela",
+        "summary": "Importacao, exportacao, remessas postais internacionais, PIS/Cofins-Importacao, documentos e prova aduaneira.",
+        "legacy": "federal/aduaneiro.html",
+        "sources": ["mpv-1357-2026-remessas-postais", "lei-10865-2004-pis-cofins-importacao", "in-rfb-2121-2022-pis-cofins"],
+        "chapters": [
+            {
+                "id": "remessas-postais-tributacao-simplificada",
+                "title": "Remessas postais internacionais e tributacao simplificada",
+                "summary": "MP 1.357/2026 e a moldura legal para faixas e aliquotas de remessas postais internacionais.",
+                "refs": [{"source": "mpv-1357-2026-remessas-postais", "ranges": [(1, 2)]}],
+                "analysis": [
+                    "A MP 1.357/2026 deve ser lida como alteracao expressa do Decreto-Lei 1.804/1980. Ela autoriza classificacao generica dos bens em grupos, com aliquotas constantes ou progressivas em funcao do valor das remessas, dentro dos limites indicados no texto.",
+                    "Para aplicar no cadastro ou na conferencia, ainda e necessario verificar o ato do Ministro da Fazenda que efetivamente fixar ou alterar as aliquotas por faixa, produto ou programa de conformidade.",
+                ],
+            },
+            {
+                "id": "pis-cofins-importacao-prova",
+                "title": "PIS/Cofins-Importacao e prova documental",
+                "summary": "Entrada de bens e servicos do exterior com base, contribuinte, documento e credito possivel.",
+                "refs": [{"source": "lei-10865-2004-pis-cofins-importacao", "ranges": [(1, 17)]}, {"source": "in-rfb-2121-2022-pis-cofins", "ranges": [(253, 354)]}],
+                "analysis": [
+                    "PIS/Cofins-Importacao nao se resolve pela etiqueta de compra internacional. A leitura exige bem ou servico, responsavel, base aduaneira, documento, pagamento, credito possivel e relacao com a EFD-Contribuicoes.",
+                    "O dossie minimo deve preservar DI ou DUIMP quando houver, invoice, contrato, conhecimento de transporte, NF-e de entrada, comprovante de recolhimento e memoria de apuracao das contribuicoes.",
                 ],
             },
         ],
@@ -1720,6 +1767,7 @@ THEME_TO_MODULES = {
     "irpj_csll": ["irpj", "csll"],
     "regimes": ["irpj", "csll"],
     "beneficios": ["pis", "cofins", "irpj", "csll", "reforma-tributaria"],
+    "aduaneiro": ["aduaneiro", "pis", "cofins", "reforma-tributaria"],
     "previdencia_folha": ["folha-clt"],
     "reforma": ["reforma-tributaria"],
     "goias": ["goias"],
@@ -1778,6 +1826,13 @@ SIGNAL_CHAPTER_MAP = {
         "credito outorgado": ["nao-cumulativo-creditos"],
         "efd/sped": ["nao-cumulativo-creditos"],
         "nao incidencia": ["instituicao-receita"],
+    },
+    "aduaneiro": {
+        "aliquota": ["remessas-postais-tributacao-simplificada"],
+        "regime especial": ["remessas-postais-tributacao-simplificada"],
+        "importacao": ["remessas-postais-tributacao-simplificada", "pis-cofins-importacao-prova"],
+        "exportacao": ["pis-cofins-importacao-prova"],
+        "efd/sped": ["pis-cofins-importacao-prova"],
     },
     "irpj": {
         "aliquota": ["apuracao-regimes"],
@@ -2721,7 +2776,7 @@ def render_federal_hub(sources: dict, layout_func) -> str:
   <div>
     <span class="eyebrow">Federal v1</span>
     <h1>Legislacao federal em tela</h1>
-    <p>IRPJ, CSLL, IOF, IPI, PIS, Cofins, Reforma Tributaria, Folha e CLT organizados por capitulo, com texto legal antes da analise e link oficial do Planalto ou da Receita Federal em cada ato.</p>
+    <p>IRPJ, CSLL, IOF, IPI, PIS, Cofins, Aduaneiro, Reforma Tributaria, Folha e CLT organizados por capitulo, com texto legal antes da analise e link oficial do Planalto ou da Receita Federal em cada ato.</p>
   </div>
   <aside class="hero-proof">
     <strong>Escopo desta fase</strong>
@@ -2743,7 +2798,7 @@ def render_federal_hub(sources: dict, layout_func) -> str:
   </div>
 </section>
 """
-    return layout_func(path, "Legislacao federal em tela", "IRPJ, CSLL, IOF, IPI, PIS, Cofins, Reforma Tributaria, Folha e CLT.", body, "federal")
+    return layout_func(path, "Legislacao federal em tela", "IRPJ, CSLL, IOF, IPI, PIS, Cofins, Aduaneiro, Reforma Tributaria, Folha e CLT.", body, "federal")
 
 
 def build_legal_pages(layout_func) -> dict[str, str]:
@@ -2819,10 +2874,10 @@ def legal_module_teaser(module_ids: list[str], current_path: str) -> str:
 def federal_legislation_card(current_path: str) -> str:
     return f"""
 <a class="portal-card featured searchable-card" href="{escape(rel_href(current_path, 'federal/legislacao/index.html'))}"
-   data-search="IRPJ CSLL IOF IPI PIS Cofins Reforma Tributaria IBS CBS Imposto Seletivo Folha CLT previdencia legislacao integral lei em tela">
+   data-search="IRPJ CSLL IOF IPI PIS Cofins Aduaneiro remessas internacionais Reforma Tributaria IBS CBS Imposto Seletivo Folha CLT previdencia legislacao integral lei em tela">
   <span class="card-kicker">Lei em tela</span>
   <h3>Federal: legislacao integral</h3>
-  <p>IRPJ, CSLL, IOF, IPI, PIS, Cofins, Reforma Tributaria, Folha e CLT em capitulos: primeiro a lei em tela, com link oficial, depois a analise.</p>
+  <p>IRPJ, CSLL, IOF, IPI, PIS, Cofins, Aduaneiro, Reforma Tributaria, Folha e CLT em capitulos: primeiro a lei em tela, com link oficial, depois a analise.</p>
   <small>fase federal publicada</small>
 </a>
 """
@@ -2845,8 +2900,8 @@ def legal_search_entries() -> list[dict[str, str]]:
         {
             "title": "Legislacao federal em tela",
             "url": "federal/legislacao/index.html",
-            "summary": "IRPJ, CSLL, IOF, IPI, PIS, Cofins, Reforma Tributaria, Folha e CLT por capitulos, com lei antes da analise.",
-            "tags": "IRPJ CSLL IOF IPI PIS Cofins Reforma Tributaria IBS CBS Imposto Seletivo Folha CLT previdencia legislacao integral",
+            "summary": "IRPJ, CSLL, IOF, IPI, PIS, Cofins, Aduaneiro, Reforma Tributaria, Folha e CLT por capitulos, com lei antes da analise.",
+            "tags": "IRPJ CSLL IOF IPI PIS Cofins Aduaneiro Remessas Internacionais Reforma Tributaria IBS CBS Imposto Seletivo Folha CLT previdencia legislacao integral",
         }
     ]
     for module in LEGAL_MODULES:

@@ -222,6 +222,27 @@ class LinkParser(HTMLParser):
             self._text = []
 
 
+class TextParser(HTMLParser):
+    def __init__(self) -> None:
+        super().__init__()
+        self.parts: list[str] = []
+        self._skip = 0
+
+    def handle_starttag(self, tag: str, attrs: list[tuple[str, str | None]]) -> None:
+        if tag.lower() in {"script", "style"}:
+            self._skip += 1
+
+    def handle_endtag(self, tag: str) -> None:
+        if tag.lower() in {"script", "style"} and self._skip:
+            self._skip -= 1
+
+    def handle_data(self, data: str) -> None:
+        if not self._skip:
+            text = " ".join(data.split())
+            if text:
+                self.parts.append(text)
+
+
 def normalize(value: str) -> str:
     text = unicodedata.normalize("NFKD", value or "")
     text = text.encode("ascii", "ignore").decode("ascii").lower()
@@ -381,6 +402,15 @@ def fetch_links(url: str) -> list[dict[str, str]]:
     return parser.links
 
 
+def fetch_text(url: str) -> str:
+    request = urllib.request.Request(url, headers={"User-Agent": "RJC-Conhecimento/2.0"})
+    with urllib.request.urlopen(request, timeout=45) as response:
+        raw = response.read().decode("utf-8", errors="ignore")
+    parser = TextParser()
+    parser.feed(raw)
+    return "\n".join(parser.parts)
+
+
 def absolute_url(base: str, href: str) -> str:
     if href.startswith("http://") or href.startswith("https://"):
         return href
@@ -404,6 +434,50 @@ def classify_confaz_theme(text: str) -> list[str]:
         if any(needle in low for needle in needles):
             themes.append(theme)
     return themes or ["a_classificar"]
+
+
+def fallback_confaz_acts(family_id: str, year_url: str, year: int) -> list[dict[str, object]]:
+    if family_id != "ajustes":
+        return []
+    text = fetch_text(year_url)
+    suffix = str(year)[-2:]
+    found: set[str] = set()
+    acts: list[dict[str, object]] = []
+    for match in re.finditer(r"AJUSTE\s+SINIEF\s+0*(\d{1,3})\s*/\s*(\d{2})", text, flags=re.I):
+        number, act_suffix = match.groups()
+        if act_suffix != suffix:
+            continue
+        padded = f"{int(number):03d}"
+        title = f"AJUSTE SINIEF {int(number):02d}/{suffix}"
+        url = f"{year_url.rstrip('/')}/AJ{padded}_{suffix}"
+        if url in found:
+            continue
+        found.add(url)
+        acts.append({
+            "title": title,
+            "url": url,
+            "themes": classify_confaz_theme(title),
+        })
+    if acts:
+        return acts
+    misses = 0
+    for number in range(1, 100):
+        padded = f"{number:03d}"
+        url = f"{year_url.rstrip('/')}/AJ{padded}_{suffix}"
+        try:
+            fetch_text(url)
+        except Exception:
+            misses += 1
+            if acts and misses >= 8:
+                break
+            continue
+        misses = 0
+        acts.append({
+            "title": f"AJUSTE SINIEF {number:02d}/{suffix}",
+            "url": url,
+            "themes": classify_confaz_theme(f"AJUSTE SINIEF {number:02d}/{suffix}"),
+        })
+    return acts
 
 
 def build_confaz_index() -> dict:
@@ -438,6 +512,8 @@ def build_confaz_index() -> dict:
                         "url": url,
                         "themes": classify_confaz_theme(label + " " + url),
                     })
+                if not links:
+                    links = fallback_confaz_acts(family_id, year_url, year)
             except Exception as exc:  # network source should not break local publishing
                 fetch_error = str(exc)
             family_rows.append({

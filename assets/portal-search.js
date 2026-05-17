@@ -234,6 +234,12 @@ window.RJC_SEARCH = [
     "tags": "reforma Reforma tributaria"
   },
   {
+    "title": "Aduaneiro e remessas internacionais",
+    "url": "federal/aduaneiro.html",
+    "summary": "Importacao, exportacao, remessas postais, PIS/Cofins-Importacao e prova documental em comercio exterior.",
+    "tags": "aduaneiro Aduaneiro"
+  },
+  {
     "title": "Fontes federais por tema",
     "url": "federal/acervo.html",
     "summary": "Mapa de atos federais por tema, fonte publica e sinais de auditoria.",
@@ -308,8 +314,8 @@ window.RJC_SEARCH = [
   {
     "title": "Legislacao federal em tela",
     "url": "federal/legislacao/index.html",
-    "summary": "IRPJ, CSLL, IOF, IPI, PIS, Cofins, Reforma Tributaria, Folha e CLT por capitulos, com lei antes da analise.",
-    "tags": "IRPJ CSLL IOF IPI PIS Cofins Reforma Tributaria IBS CBS Imposto Seletivo Folha CLT previdencia legislacao integral"
+    "summary": "IRPJ, CSLL, IOF, IPI, PIS, Cofins, Aduaneiro, Reforma Tributaria, Folha e CLT por capitulos, com lei antes da analise.",
+    "tags": "IRPJ CSLL IOF IPI PIS Cofins Aduaneiro Remessas Internacionais Reforma Tributaria IBS CBS Imposto Seletivo Folha CLT previdencia legislacao integral"
   },
   {
     "title": "IRPJ: legislacao em tela",
@@ -453,7 +459,7 @@ window.RJC_SEARCH = [
     "title": "PIS/Pasep: legislacao em tela",
     "url": "federal/legislacao/pis/index.html",
     "summary": "Regimes cumulativo e nao cumulativo, creditos, importacao, monofasico, aliquota zero e prova.",
-    "tags": "Federal pis in-rfb-2121-2022-pis-cofins lei-9715-1998-pis lei-9718-1998-pis-cofins lei-10637-2002-pis lei-10865-2004-pis-cofins-importacao lei-13097-2015-pis-cofins"
+    "tags": "Federal pis in-rfb-2121-2022-pis-cofins lei-9715-1998-pis lei-9718-1998-pis-cofins lei-10637-2002-pis lei-10865-2004-pis-cofins-importacao lei-13097-2015-pis-cofins lei-15394-2026-pis-cofins-residuos"
   },
   {
     "title": "PIS/Pasep: legislacao em tela - Regra geral, contribuinte e receita",
@@ -489,7 +495,7 @@ window.RJC_SEARCH = [
     "title": "Cofins: legislacao em tela",
     "url": "federal/legislacao/cofins/index.html",
     "summary": "Cumulatividade, nao cumulatividade, creditos, importacao, retencoes, beneficios e prova.",
-    "tags": "Federal cofins lc-70-1991-cofins lei-9718-1998-pis-cofins lei-10833-2003-cofins lei-10865-2004-pis-cofins-importacao in-rfb-2121-2022-pis-cofins lei-13097-2015-pis-cofins"
+    "tags": "Federal cofins lc-70-1991-cofins lei-9718-1998-pis-cofins lei-10833-2003-cofins lei-10865-2004-pis-cofins-importacao in-rfb-2121-2022-pis-cofins lei-13097-2015-pis-cofins lei-15394-2026-pis-cofins-residuos"
   },
   {
     "title": "Cofins: legislacao em tela - Instituicao, receita e sujeito passivo",
@@ -520,6 +526,24 @@ window.RJC_SEARCH = [
     "url": "federal/legislacao/cofins/beneficios-monofasico.html",
     "summary": "Tratamentos especiais por setor, produto e etapa da cadeia.",
     "tags": "cofins beneficios-monofasico Monofasico, aliquota zero, suspensao e beneficios"
+  },
+  {
+    "title": "Aduaneiro e remessas internacionais: legislacao em tela",
+    "url": "federal/legislacao/aduaneiro/index.html",
+    "summary": "Importacao, exportacao, remessas postais internacionais, PIS/Cofins-Importacao, documentos e prova aduaneira.",
+    "tags": "Federal aduaneiro mpv-1357-2026-remessas-postais lei-10865-2004-pis-cofins-importacao in-rfb-2121-2022-pis-cofins"
+  },
+  {
+    "title": "Aduaneiro e remessas internacionais: legislacao em tela - Remessas postais internacionais e tributacao simplificada",
+    "url": "federal/legislacao/aduaneiro/remessas-postais-tributacao-simplificada.html",
+    "summary": "MP 1.357/2026 e a moldura legal para faixas e aliquotas de remessas postais internacionais.",
+    "tags": "aduaneiro remessas-postais-tributacao-simplificada Remessas postais internacionais e tributacao simplificada"
+  },
+  {
+    "title": "Aduaneiro e remessas internacionais: legislacao em tela - PIS/Cofins-Importacao e prova documental",
+    "url": "federal/legislacao/aduaneiro/pis-cofins-importacao-prova.html",
+    "summary": "Entrada de bens e servicos do exterior com base, contribuinte, documento e credito possivel.",
+    "tags": "aduaneiro pis-cofins-importacao-prova PIS/Cofins-Importacao e prova documental"
   },
   {
     "title": "Folha e CLT: legislacao em tela",
@@ -882,6 +906,12 @@ window.RJC_SEARCH = [
     "tags": "lei-10865-2004-pis-cofins-importacao Federal Lei 10.865/2004"
   },
   {
+    "title": "Medida Provisoria 1.357/2026 - remessas postais internacionais",
+    "url": "federal/legislacao/atos/mpv-1357-2026-remessas-postais.html",
+    "summary": "Altera o Decreto-Lei 1.804/1980 para tratar da tributacao simplificada de remessas postais internacionais.",
+    "tags": "mpv-1357-2026-remessas-postais Federal MP 1.357/2026"
+  },
+  {
     "title": "Lei 9.715/1998 - PIS/Pasep",
     "url": "federal/legislacao/atos/lei-9715-1998-pis.html",
     "summary": "Base legal geral do PIS/Pasep.",
@@ -904,6 +934,12 @@ window.RJC_SEARCH = [
     "url": "federal/legislacao/atos/lei-13097-2015-pis-cofins.html",
     "summary": "Tratamentos setoriais, aliquota zero e beneficios.",
     "tags": "lei-13097-2015-pis-cofins Federal Lei 13.097/2015"
+  },
+  {
+    "title": "Lei 15.394/2026 - creditos e isencao de PIS/Cofins para residuos e aparas",
+    "url": "federal/legislacao/atos/lei-15394-2026-pis-cofins-residuos.html",
+    "summary": "Altera a Lei 11.196/2005 para autorizar creditamento de PIS/Cofins em aquisicoes de determinados residuos e aparas e isentar vendas especificadas.",
+    "tags": "lei-15394-2026-pis-cofins-residuos Federal Lei 15.394/2026"
   },
   {
     "title": "Emenda Constitucional 132/2023 - Reforma Tributaria",

@@ -1,6 +1,6 @@
 {
   "schema": "rjc-confaz-5y-index-v2",
-  "generated_on": "2026-04-30",
+  "generated_on": "2026-05-17",
   "years": [
     2022,
     2023,
@@ -7365,12 +7365,141 @@
         {
           "year": 2026,
           "index_url": "https://www.confaz.fazenda.gov.br/legislacao/ajustes/2026",
-          "count": 0,
+          "count": 16,
           "fetch_error": "",
-          "acts": []
+          "acts": [
+            {
+              "title": "AJUSTE SINIEF 01/26",
+              "url": "https://www.confaz.fazenda.gov.br/legislacao/ajustes/2026/AJ001_26",
+              "themes": [
+                "substituicao_tributaria",
+                "documento_fiscal"
+              ]
+            },
+            {
+              "title": "AJUSTE SINIEF 02/26",
+              "url": "https://www.confaz.fazenda.gov.br/legislacao/ajustes/2026/AJ002_26",
+              "themes": [
+                "substituicao_tributaria",
+                "documento_fiscal"
+              ]
+            },
+            {
+              "title": "AJUSTE SINIEF 03/26",
+              "url": "https://www.confaz.fazenda.gov.br/legislacao/ajustes/2026/AJ003_26",
+              "themes": [
+                "substituicao_tributaria",
+                "documento_fiscal"
+              ]
+            },
+            {
+              "title": "AJUSTE SINIEF 04/26",
+              "url": "https://www.confaz.fazenda.gov.br/legislacao/ajustes/2026/AJ004_26",
+              "themes": [
+                "substituicao_tributaria",
+                "documento_fiscal"
+              ]
+            },
+            {
+              "title": "AJUSTE SINIEF 05/26",
+              "url": "https://www.confaz.fazenda.gov.br/legislacao/ajustes/2026/AJ005_26",
+              "themes": [
+                "substituicao_tributaria",
+                "documento_fiscal"
+              ]
+            },
+            {
+              "title": "AJUSTE SINIEF 06/26",
+              "url": "https://www.confaz.fazenda.gov.br/legislacao/ajustes/2026/AJ006_26",
+              "themes": [
+                "substituicao_tributaria",
+                "documento_fiscal"
+              ]
+            },
+            {
+              "title": "AJUSTE SINIEF 07/26",
+              "url": "https://www.confaz.fazenda.gov.br/legislacao/ajustes/2026/AJ007_26",
+              "themes": [
+                "substituicao_tributaria",
+                "documento_fiscal"
+              ]
+            },
+            {
+              "title": "AJUSTE SINIEF 08/26",
+              "url": "https://www.confaz.fazenda.gov.br/legislacao/ajustes/2026/AJ008_26",
+              "themes": [
+                "substituicao_tributaria",
+                "documento_fiscal"
+              ]
+            },
+            {
+              "title": "AJUSTE SINIEF 09/26",
+              "url": "https://www.confaz.fazenda.gov.br/legislacao/ajustes/2026/AJ009_26",
+              "themes": [
+                "substituicao_tributaria",
+                "documento_fiscal"
+              ]
+            },
+            {
+              "title": "AJUSTE SINIEF 10/26",
+              "url": "https://www.confaz.fazenda.gov.br/legislacao/ajustes/2026/AJ010_26",
+              "themes": [
+                "substituicao_tributaria",
+                "documento_fiscal"
+              ]
+            },
+            {
+              "title": "AJUSTE SINIEF 11/26",
+              "url": "https://www.confaz.fazenda.gov.br/legislacao/ajustes/2026/AJ011_26",
+              "themes": [
+                "substituicao_tributaria",
+                "documento_fiscal"
+              ]
+            },
+            {
+              "title": "AJUSTE SINIEF 12/26",
+              "url": "https://www.confaz.fazenda.gov.br/legislacao/ajustes/2026/AJ012_26",
+              "themes": [
+                "substituicao_tributaria",
+                "documento_fiscal"
+              ]
+            },
+            {
+              "title": "AJUSTE SINIEF 13/26",
+              "url": "https://www.confaz.fazenda.gov.br/legislacao/ajustes/2026/AJ013_26",
+              "themes": [
+                "substituicao_tributaria",
+                "documento_fiscal"
+              ]
+            },
+            {
+              "title": "AJUSTE SINIEF 14/26",
+              "url": "https://www.confaz.fazenda.gov.br/legislacao/ajustes/2026/AJ014_26",
+              "themes": [
+                "substituicao_tributaria",
+                "documento_fiscal"
+              ]
+            },
+            {
+              "title": "AJUSTE SINIEF 15/26",
+              "url": "https://www.confaz.fazenda.gov.br/legislacao/ajustes/2026/AJ015_26",
+              "themes": [
+                "substituicao_tributaria",
+                "documento_fiscal"
+              ]
+            },
+            {
+              "title": "AJUSTE SINIEF 16/26",
+              "url": "https://www.confaz.fazenda.gov.br/legislacao/ajustes/2026/AJ016_26",
+              "themes": [
+                "substituicao_tributaria",
+                "documento_fiscal"
+              ]
+            }
+          ]
         }
       ],
-      "total": 145
+      "total": 161
     },
     "protocolos": {
       "title": "Protocolos ICMS",

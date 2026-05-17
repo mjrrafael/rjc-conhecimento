@@ -38,14 +38,14 @@ HTML_SOURCES = [
     {
         "file": "Receita_Orientacoes_Reforma_2026.txt",
         "title": "Receita Federal - Orientações da Reforma Tributária para 2026",
-        "url": "https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-consumo/orientacoes-2026",
+        "url": "https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-tributaria-do-consumo/orientacoes-2026",
         "start": "Orientações da Reforma Tributária para 2026",
         "kind": "orientacao administrativa",
     },
     {
         "file": "Receita_Marcos_Regulatorios_Reforma.txt",
         "title": "Receita Federal - Principais marcos regulatórios da Reforma Tributária",
-        "url": "https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-consumo/marcos",
+        "url": "https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-tributaria-do-consumo/marcos",
         "start": "Principais Marcos Regulatórios",
         "kind": "orientacao administrativa",
     },
