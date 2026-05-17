@@ -51,7 +51,7 @@ Regra usada: fonte oficial, texto em tela, data absoluta, hash e sem conclusao i
 - `python -m py_compile scripts/*.py`: OK.
 - `python scripts/audit_master_coverage.py`: OK, sem falhas estruturais.
 - `python scripts/audit_state_source_quality.py`: OK, relatorio estadual regenerado sem mudanca material.
-- `python scripts/audit_portal.py`: OK, 633 paginas HTML auditadas, sem falhas.
+- `python scripts/audit_portal.py`: executado, mas nao concluiu no limite operacional de 10 minutos nesta maquina; processos remanescentes foram encerrados. A validacao foi compensada por `portal_monitor.py --live`, JSON/sitemap/manifest, auditorias mestre/estadual e checagem direta de links das paginas novas, todas sem erro bloqueante.
 - `build_portal.py`: houve instabilidade de I/O em OneDrive durante execucoes longas; o writer foi ajustado para gravacao temporaria/substituicao e os artefatos finais foram regenerados e validados pelas auditorias.
 
 ## Pendencias reais
