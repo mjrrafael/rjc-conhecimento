@@ -1,5 +1,5 @@
 {
-  "generated_on": "2026-04-26",
+  "generated_on": "2026-05-17",
   "summary": {
     "states": 27,
     "docs": 225,
@@ -11,7 +11,7 @@
     "AC": {
       "estado": "Acre",
       "region": "Norte",
-      "curadoria": "aguardando_revisao",
+      "curadoria": "revisado_com_pendencias",
       "publish_deep": false,
       "document_count": 6,
       "publishable_document_count": 6,
@@ -31,7 +31,7 @@
         "texto curto para RICMS/benefícios"
       ],
       "recommendation": "bloquear_publicacao_ate_curadoria",
-      "next_step": "Baixar RICMS e benefÃƒÂ­cios de ICMS no portal oficial do Acre.",
+      "next_step": "Recapturar RICMS, beneficios de ICMS e atos modificadores no portal oficial do Acre, com URL oficial e limpeza de escopo.",
       "documents": [
         {
           "file": "AC_ICMS_ALIQUOTAS.txt",
@@ -179,7 +179,7 @@
     "AL": {
       "estado": "Alagoas",
       "region": "Nordeste",
-      "curadoria": "aguardando_revisao",
+      "curadoria": "revisado_com_pendencias",
       "publish_deep": false,
       "document_count": 3,
       "publishable_document_count": 3,
@@ -194,7 +194,7 @@
         "texto curto para RICMS/benefícios"
       ],
       "recommendation": "bloquear_publicacao_ate_curadoria",
-      "next_step": "Baixar RICMS e benefÃƒÂ­cios de ICMS no portal oficial de Alagoas.",
+      "next_step": "Recapturar RICMS, beneficios e ST no portal oficial de Alagoas, com URL oficial, vigencia e hash por fonte.",
       "documents": [
         {
           "file": "AL_ICMS_LEIS.txt",
@@ -251,7 +251,7 @@
     "AM": {
       "estado": "Amazonas",
       "region": "Norte",
-      "curadoria": "aguardando_revisao",
+      "curadoria": "revisado_com_pendencias",
       "publish_deep": false,
       "document_count": 4,
       "publishable_document_count": 4,
@@ -269,7 +269,7 @@
         "fallback amplo"
       ],
       "recommendation": "bloquear_publicacao_ate_curadoria",
-      "next_step": "Separar CÃƒÂ³digo TributÃƒÂ¡rio, RICMS e benefÃƒÂ­cios; baixar o regulamento vigente do Amazonas.",
+      "next_step": "Separar Codigo Tributario, RICMS, beneficios e atos modificadores do Amazonas, mantendo apenas trilha de ICMS nas paginas de ICMS.",
       "documents": [
         {
           "file": "AM_DECRETOS.txt",
@@ -363,7 +363,7 @@
     "AP": {
       "estado": "Amapá",
       "region": "Norte",
-      "curadoria": "aguardando_revisao",
+      "curadoria": "revisado_com_pendencias",
       "publish_deep": false,
       "document_count": 7,
       "publishable_document_count": 7,
@@ -383,7 +383,7 @@
         "texto curto para RICMS/benefícios"
       ],
       "recommendation": "bloquear_publicacao_ate_curadoria",
-      "next_step": "Baixar RICMS e benefÃƒÂ­cios de ICMS no portal oficial do AmapÃƒÂ¡.",
+      "next_step": "Recapturar RICMS, beneficios e anexos do Amapa em fonte oficial limpa antes de aprovar analise profunda.",
       "documents": [
         {
           "file": "AP_ICMS_ANEXOS.txt",
@@ -814,7 +814,7 @@
     "CE": {
       "estado": "Ceará",
       "region": "Nordeste",
-      "curadoria": "aguardando_revisao",
+      "curadoria": "revisado_com_pendencias",
       "publish_deep": false,
       "document_count": 8,
       "publishable_document_count": 8,
@@ -834,7 +834,7 @@
         "fonte local sem URL oficial no cabeçalho"
       ],
       "recommendation": "bloquear_publicacao_ate_curadoria",
-      "next_step": "Baixar RICMS, decretos modificadores e benefÃƒÂ­cios no portal oficial do CearÃƒÂ¡.",
+      "next_step": "Recapturar RICMS, decretos modificadores e beneficios de ICMS no portal oficial do Ceara, separando escopo nao ICMS.",
       "documents": [
         {
           "file": "CE_DECRETOS.txt",
@@ -1391,7 +1391,7 @@
     "MA": {
       "estado": "Maranhão",
       "region": "Nordeste",
-      "curadoria": "aguardando_revisao",
+      "curadoria": "revisado_com_pendencias",
       "publish_deep": false,
       "document_count": 10,
       "publishable_document_count": 10,
@@ -1406,7 +1406,7 @@
         "fonte local sem URL oficial no cabeçalho"
       ],
       "recommendation": "bloquear_publicacao_ate_curadoria",
-      "next_step": "Baixar RICMS/MA e anexos de benefÃƒÂ­cios no portal oficial do MaranhÃƒÂ£o.",
+      "next_step": "Recapturar RICMS/MA, anexos de beneficios e atos modificadores com URL oficial e separar Taxas da trilha de ICMS.",
       "documents": [
         {
           "file": "MA_ICMS_LEIS.txt",
@@ -2552,7 +2552,7 @@
     "PA": {
       "estado": "Pará",
       "region": "Norte",
-      "curadoria": "aguardando_revisao",
+      "curadoria": "revisado_escopo_bloqueado",
       "publish_deep": false,
       "document_count": 2,
       "publishable_document_count": 0,
@@ -2572,7 +2572,7 @@
         "fonte local sem URL oficial no cabeçalho"
       ],
       "recommendation": "bloquear_publicacao_ate_reclassificar_escopo",
-      "next_step": "Baixar RICMS/PA e benefÃƒÂ­cios no portal oficial do ParÃƒÂ¡.",
+      "next_step": "Refazer captura do Para do zero: RICMS/PA, beneficios de ICMS, aliquotas, ST e documentos no portal oficial da SEFA antes de publicar qualquer conclusao.",
       "documents": [
         {
           "file": "PA_OUTROS.txt",
@@ -2639,7 +2639,7 @@
     "PB": {
       "estado": "Paraíba",
       "region": "Nordeste",
-      "curadoria": "aguardando_revisao",
+      "curadoria": "revisado_com_pendencias",
       "publish_deep": false,
       "document_count": 1,
       "publishable_document_count": 1,
@@ -2654,7 +2654,7 @@
         "contém Taxas"
       ],
       "recommendation": "bloquear_publicacao_ate_curadoria",
-      "next_step": "Baixar RICMS/PB e benefÃƒÂ­cios no portal oficial da ParaÃƒÂ­ba.",
+      "next_step": "Recapturar RICMS/PB e beneficios de ICMS no portal oficial da Paraiba, separando tributos nao ICMS.",
       "documents": [
         {
           "file": "PB_ICMS_LEIS.txt",
@@ -2689,7 +2689,7 @@
     "PE": {
       "estado": "Pernambuco",
       "region": "Nordeste",
-      "curadoria": "aguardando_revisao",
+      "curadoria": "revisado_com_pendencias",
       "publish_deep": false,
       "document_count": 8,
       "publishable_document_count": 8,
@@ -2707,7 +2707,7 @@
         "texto curto para RICMS/benefícios"
       ],
       "recommendation": "bloquear_publicacao_ate_curadoria",
-      "next_step": "Baixar RICMS/PE e benefÃƒÂ­cios no portal oficial de Pernambuco.",
+      "next_step": "Recapturar RICMS/PE, beneficios e atos modificadores com URL oficial, vigencia e hash antes de aprovar analise.",
       "documents": [
         {
           "file": "PE_ICMS_ALIQUOTAS.txt",
@@ -2858,7 +2858,7 @@
     "PI": {
       "estado": "Piauí",
       "region": "Nordeste",
-      "curadoria": "aguardando_revisao",
+      "curadoria": "revisado_com_pendencias",
       "publish_deep": false,
       "document_count": 9,
       "publishable_document_count": 9,
@@ -2875,7 +2875,7 @@
         "fonte local sem URL oficial no cabeçalho"
       ],
       "recommendation": "bloquear_publicacao_ate_curadoria",
-      "next_step": "Baixar RICMS/PI e benefÃƒÂ­cios no portal oficial do PiauÃƒÂ­.",
+      "next_step": "Recapturar RICMS/PI e beneficios de ICMS no portal oficial do Piaui, separando IPVA/Taxas.",
       "documents": [
         {
           "file": "PI_ICMS_ANEXOS.txt",
@@ -4010,7 +4010,7 @@
     "RO": {
       "estado": "Rondônia",
       "region": "Norte",
-      "curadoria": "aguardando_revisao",
+      "curadoria": "revisado_escopo_bloqueado",
       "publish_deep": false,
       "document_count": 4,
       "publishable_document_count": 3,
@@ -4029,7 +4029,7 @@
         "fonte local sem URL oficial no cabeçalho"
       ],
       "recommendation": "bloquear_publicacao_ate_reclassificar_escopo",
-      "next_step": "Baixar RICMS/RO e benefÃƒÂ­cios no portal oficial de RondÃƒÂ´nia.",
+      "next_step": "Refazer captura de RICMS/RO e beneficios no portal oficial de Rondonia, removendo IPVA/Taxas da trilha de ICMS.",
       "documents": [
         {
           "file": "RO_ICMS_BENEFICIOS.txt",
@@ -4122,7 +4122,7 @@
     "RR": {
       "estado": "Roraima",
       "region": "Norte",
-      "curadoria": "aguardando_revisao",
+      "curadoria": "revisado_com_pendencias",
       "publish_deep": false,
       "document_count": 5,
       "publishable_document_count": 5,
@@ -4141,7 +4141,7 @@
         "texto curto para RICMS/benefícios"
       ],
       "recommendation": "bloquear_publicacao_ate_curadoria",
-      "next_step": "Baixar RICMS/RR e benefÃƒÂ­cios no portal oficial de Roraima.",
+      "next_step": "Recapturar RICMS/RR e beneficios de ICMS no portal oficial de Roraima, saneando anexos de IPVA.",
       "documents": [
         {
           "file": "RR_ICMS_ANEXOS.txt",
@@ -4503,7 +4503,7 @@
     "SE": {
       "estado": "Sergipe",
       "region": "Nordeste",
-      "curadoria": "aguardando_revisao",
+      "curadoria": "revisado_com_pendencias",
       "publish_deep": false,
       "document_count": 4,
       "publishable_document_count": 4,
@@ -4520,7 +4520,7 @@
         "texto curto para RICMS/benefícios"
       ],
       "recommendation": "bloquear_publicacao_ate_curadoria",
-      "next_step": "Baixar RICMS/SE e benefÃƒÂ­cios no portal oficial de Sergipe.",
+      "next_step": "Recapturar RICMS/SE, anexos e beneficios de ICMS no portal oficial de Sergipe, separando Taxas/IPVA.",
       "documents": [
         {
           "file": "SE_ICMS_LEIS.txt",
@@ -4694,7 +4694,7 @@
     "TO": {
       "estado": "Tocantins",
       "region": "Norte",
-      "curadoria": "aguardando_revisao",
+      "curadoria": "revisado_com_pendencias",
       "publish_deep": false,
       "document_count": 2,
       "publishable_document_count": 2,
@@ -4709,7 +4709,7 @@
         "texto curto para RICMS/benefícios"
       ],
       "recommendation": "bloquear_publicacao_ate_curadoria",
-      "next_step": "Baixar RICMS/TO e benefÃƒÂ­cios no portal oficial do Tocantins.",
+      "next_step": "Recapturar beneficios, anexos e atos complementares do Tocantins com URL oficial e validar separadamente do RICMS.",
       "documents": [
         {
           "file": "TO_ICMS_ANEXOS.txt",

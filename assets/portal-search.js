@@ -62,25 +62,25 @@ window.RJC_SEARCH = [
   {
     "title": "Acre: ICMS e benefícios fiscais",
     "url": "estados/ac.html",
-    "summary": "Página estadual aberta como aguardando revisão, com material de ICMS, benefícios, documento e prova para leitura na web.",
+    "summary": "Página estadual revisado com pendências, com material de ICMS, benefícios, documento e prova para leitura na web.",
     "tags": "AC Acre Acre ICMS beneficios fiscais RICMS DECRETOS ICMS_ALIQUOTAS ICMS_BENEFICIOS ICMS_LEIS INSTRUCOES_NORMATIVAS LEIS OUTROS PORTARIAS RESOLUCOES RICMS TABELAS"
   },
   {
     "title": "Alagoas: ICMS e benefícios fiscais",
     "url": "estados/al.html",
-    "summary": "Página estadual aberta como aguardando revisão, com material de ICMS, benefícios, documento e prova para leitura na web.",
+    "summary": "Página estadual revisado com pendências, com material de ICMS, benefícios, documento e prova para leitura na web.",
     "tags": "AL Alagoas Alagoas ICMS beneficios fiscais RICMS DECRETOS ICMS_LEIS ICMS_ST INSTRUCOES_NORMATIVAS ITCD LEIS OUTROS"
   },
   {
     "title": "Amapá: ICMS e benefícios fiscais",
     "url": "estados/ap.html",
-    "summary": "Página estadual aberta como aguardando revisão, com material de ICMS, benefícios, documento e prova para leitura na web.",
+    "summary": "Página estadual revisado com pendências, com material de ICMS, benefícios, documento e prova para leitura na web.",
     "tags": "AP Amapa Amapá ICMS beneficios fiscais RICMS DECRETOS ICMS_ANEXOS ICMS_BENEFICIOS ICMS_LEIS ICMS_ST INSTRUCOES_NORMATIVAS IPVA ITCD LEIS OUTROS PORTARIAS RICMS TAXAS"
   },
   {
     "title": "Amazonas: ICMS e benefícios fiscais",
     "url": "estados/am.html",
-    "summary": "Página estadual aberta como aguardando revisão, com material de ICMS, benefícios, documento e prova para leitura na web.",
+    "summary": "Página estadual revisado com pendências, com material de ICMS, benefícios, documento e prova para leitura na web.",
     "tags": "AM Amazonas Amazonas ICMS beneficios fiscais RICMS DECRETOS LEIS"
   },
   {
@@ -92,7 +92,7 @@ window.RJC_SEARCH = [
   {
     "title": "Ceará: ICMS e benefícios fiscais",
     "url": "estados/ce.html",
-    "summary": "Página estadual aberta como aguardando revisão, com material de ICMS, benefícios, documento e prova para leitura na web.",
+    "summary": "Página estadual revisado com pendências, com material de ICMS, benefícios, documento e prova para leitura na web.",
     "tags": "CE Ceara Ceará ICMS beneficios fiscais RICMS DECRETOS INSTRUCOES_NORMATIVAS LEIS"
   },
   {
@@ -116,7 +116,7 @@ window.RJC_SEARCH = [
   {
     "title": "Maranhão: ICMS e benefícios fiscais",
     "url": "estados/ma.html",
-    "summary": "Página estadual aberta como aguardando revisão, com material de ICMS, benefícios, documento e prova para leitura na web.",
+    "summary": "Página estadual revisado com pendências, com material de ICMS, benefícios, documento e prova para leitura na web.",
     "tags": "MA Maranhao Maranhão ICMS beneficios fiscais RICMS ICMS_LEIS LEIS RICMS"
   },
   {
@@ -140,13 +140,13 @@ window.RJC_SEARCH = [
   {
     "title": "Pará: ICMS e benefícios fiscais",
     "url": "estados/pa.html",
-    "summary": "Página estadual aberta como aguardando revisão, com material de ICMS, benefícios, documento e prova para leitura na web.",
+    "summary": "Página estadual revisado: escopo bloqueado, com material de ICMS, benefícios, documento e prova para leitura na web.",
     "tags": "PA Para Pará ICMS beneficios fiscais RICMS OUTROS"
   },
   {
     "title": "Paraíba: ICMS e benefícios fiscais",
     "url": "estados/pb.html",
-    "summary": "Página estadual aberta como aguardando revisão, com material de ICMS, benefícios, documento e prova para leitura na web.",
+    "summary": "Página estadual revisado com pendências, com material de ICMS, benefícios, documento e prova para leitura na web.",
     "tags": "PB Paraiba Paraíba ICMS beneficios fiscais RICMS ICMS_LEIS IPVA ITCD"
   },
   {
@@ -158,13 +158,13 @@ window.RJC_SEARCH = [
   {
     "title": "Pernambuco: ICMS e benefícios fiscais",
     "url": "estados/pe.html",
-    "summary": "Página estadual aberta como aguardando revisão, com material de ICMS, benefícios, documento e prova para leitura na web.",
+    "summary": "Página estadual revisado com pendências, com material de ICMS, benefícios, documento e prova para leitura na web.",
     "tags": "PE Pernambuco Pernambuco ICMS beneficios fiscais RICMS ICMS_ALIQUOTAS ICMS_LEIS ICMS_ST IPVA ITCD LEIS OUTROS RICMS"
   },
   {
     "title": "Piauí: ICMS e benefícios fiscais",
     "url": "estados/pi.html",
-    "summary": "Página estadual aberta como aguardando revisão, com material de ICMS, benefícios, documento e prova para leitura na web.",
+    "summary": "Página estadual revisado com pendências, com material de ICMS, benefícios, documento e prova para leitura na web.",
     "tags": "PI Piaui Piauí ICMS beneficios fiscais RICMS DECRETOS ICMS_ANEXOS ICMS_LEIS IPVA ITCD PORTARIAS RICMS"
   },
   {
@@ -188,13 +188,13 @@ window.RJC_SEARCH = [
   {
     "title": "Rondônia: ICMS e benefícios fiscais",
     "url": "estados/ro.html",
-    "summary": "Página estadual aberta como aguardando revisão, com material de ICMS, benefícios, documento e prova para leitura na web.",
+    "summary": "Página estadual revisado: escopo bloqueado, com material de ICMS, benefícios, documento e prova para leitura na web.",
     "tags": "RO Rondonia Rondônia ICMS beneficios fiscais RICMS ICMS_BENEFICIOS ICMS_LEIS IPVA ITCD RICMS"
   },
   {
     "title": "Roraima: ICMS e benefícios fiscais",
     "url": "estados/rr.html",
-    "summary": "Página estadual aberta como aguardando revisão, com material de ICMS, benefícios, documento e prova para leitura na web.",
+    "summary": "Página estadual revisado com pendências, com material de ICMS, benefícios, documento e prova para leitura na web.",
     "tags": "RR Roraima Roraima ICMS beneficios fiscais RICMS DECRETOS ICMS_ANEXOS ICMS_BENEFICIOS ICMS_LEIS IPVA ITCD LEIS OUTROS PORTARIAS RICMS"
   },
   {
@@ -212,13 +212,13 @@ window.RJC_SEARCH = [
   {
     "title": "Sergipe: ICMS e benefícios fiscais",
     "url": "estados/se.html",
-    "summary": "Página estadual aberta como aguardando revisão, com material de ICMS, benefícios, documento e prova para leitura na web.",
+    "summary": "Página estadual revisado com pendências, com material de ICMS, benefícios, documento e prova para leitura na web.",
     "tags": "SE Sergipe Sergipe ICMS beneficios fiscais RICMS DECRETOS ICMS_LEIS LEIS OUTROS PORTARIAS RICMS"
   },
   {
     "title": "Tocantins: ICMS e benefícios fiscais",
     "url": "estados/to.html",
-    "summary": "Página estadual aberta como aguardando revisão, com material de ICMS, benefícios, documento e prova para leitura na web.",
+    "summary": "Página estadual revisado com pendências, com material de ICMS, benefícios, documento e prova para leitura na web.",
     "tags": "TO Tocantins Tocantins ICMS beneficios fiscais RICMS DECRETOS ICMS_ANEXOS ITCD LEIS PORTARIAS RICMS"
   },
   {
@@ -549,7 +549,7 @@ window.RJC_SEARCH = [
     "title": "Folha e CLT: legislacao em tela",
     "url": "federal/legislacao/folha-clt/index.html",
     "summary": "CLT, contrato, jornada, salario, ferias, rescisao, custeio previdenciario, FGTS, afastamentos e eSocial.",
-    "tags": "Federal folha-clt clt-1943 lei-8212-1991-custeio lei-8213-1991-beneficios decreto-3048-1999-rps lei-8036-1990-fgts decreto-8373-2014-esocial"
+    "tags": "Federal folha-clt clt-1943 lei-8212-1991-custeio lei-12546-2011-cprb lei-8213-1991-beneficios decreto-3048-1999-rps lei-8036-1990-fgts decreto-8373-2014-esocial"
   },
   {
     "title": "Folha e CLT: legislacao em tela - Contrato de trabalho, empregado e registro",
@@ -570,6 +570,12 @@ window.RJC_SEARCH = [
     "tags": "folha-clt salario-remuneracao-rescisao Salario, remuneracao, verbas e rescisao"
   },
   {
+    "title": "Folha e CLT: legislacao em tela - Verbas indenizatorias x remuneratorias",
+    "url": "federal/legislacao/folha-clt/verbas-indenizatorias-remuneratorias.html",
+    "summary": "Natureza da verba, salario-de-contribuicao, reflexos de FGTS, IRRF, eSocial e prova da rubrica.",
+    "tags": "folha-clt verbas-indenizatorias-remuneratorias Verbas indenizatorias x remuneratorias"
+  },
+  {
     "title": "Folha e CLT: legislacao em tela - Seguranca, saude, acidente e afastamentos",
     "url": "federal/legislacao/folha-clt/seguranca-saude-afastamentos.html",
     "summary": "Normas de protecao, acidente do trabalho, CAT, estabilidade e reflexos na folha.",
@@ -580,6 +586,24 @@ window.RJC_SEARCH = [
     "url": "federal/legislacao/folha-clt/custeio-previdenciario.html",
     "summary": "Quem contribui, sobre qual base, com quais responsabilidades e controles.",
     "tags": "folha-clt custeio-previdenciario Custeio previdenciario e salario-de-contribuicao"
+  },
+  {
+    "title": "Folha e CLT: legislacao em tela - FAP, RAT/SAT e risco ambiental do trabalho",
+    "url": "federal/legislacao/folha-clt/fap-rat-sat.html",
+    "summary": "Enquadramento de risco, adicional por atividade, FAP, nexo acidentario e efeito no custo previdenciario.",
+    "tags": "folha-clt fap-rat-sat FAP, RAT/SAT e risco ambiental do trabalho"
+  },
+  {
+    "title": "Folha e CLT: legislacao em tela - Retencao de 11% na cessao de mao de obra",
+    "url": "federal/legislacao/folha-clt/retencao-11-cessao-mao-obra.html",
+    "summary": "Retencao previdenciaria em nota fiscal/fatura, cessao de mao de obra, empreitada, responsavel e compensacao.",
+    "tags": "folha-clt retencao-11-cessao-mao-obra Retencao de 11% na cessao de mao de obra"
+  },
+  {
+    "title": "Folha e CLT: legislacao em tela - Desoneracao da folha e CPRB",
+    "url": "federal/legislacao/folha-clt/desoneracao-folha-cprb.html",
+    "summary": "Contribuicao sobre receita bruta, substituicao das contribuicoes patronais, setores, base, aliquota e controle por periodo.",
+    "tags": "folha-clt desoneracao-folha-cprb Desoneracao da folha e CPRB"
   },
   {
     "title": "Folha e CLT: legislacao em tela - FGTS, deposito, movimentacao e prova",
@@ -1050,6 +1074,12 @@ window.RJC_SEARCH = [
     "tags": "lei-8212-1991-custeio Federal Lei 8.212/1991"
   },
   {
+    "title": "Lei 12.546/2011 - CPRB e desoneracao da folha",
+    "url": "federal/legislacao/atos/lei-12546-2011-cprb.html",
+    "summary": "Contribuicao previdenciaria sobre a receita bruta, substituicao de contribuicoes sobre folha, setores, bases, aliquotas e controles.",
+    "tags": "lei-12546-2011-cprb Federal Lei 12.546/2011"
+  },
+  {
     "title": "Lei 8.213/1991 - Planos de Beneficios da Previdencia Social",
     "url": "federal/legislacao/atos/lei-8213-1991-beneficios.html",
     "summary": "Beneficios previdenciarios, incapacidade, acidente do trabalho, estabilidade e deveres informacionais.",
@@ -1074,40 +1104,40 @@ window.RJC_SEARCH = [
     "tags": "decreto-8373-2014-esocial Federal Decreto do eSocial"
   },
   {
-    "title": "Acre: legislação de ICMS em tela (aguardando revisão)",
+    "title": "Acre: legislação de ICMS em tela (revisado com pendências)",
     "url": "estados/ac/legislacao/index.html",
     "summary": "RICMS, leis, anexos, benefícios fiscais, alíquotas, ST e prova documental de Acre.",
-    "tags": "AC Acre ICMS RICMS benefícios fiscais alíquotas ST aguardando revisão"
+    "tags": "AC Acre ICMS RICMS benefícios fiscais alíquotas ST revisado com pendências"
   },
   {
-    "title": "Acre: ICMS completo (aguardando revisão)",
+    "title": "Acre: ICMS completo (revisado com pendências)",
     "url": "estados/ac/legislacao/icms.html",
     "summary": "RICMS, leis materiais, decretos e anexos que formam a base de incidência, apuração e documentação do ICMS estadual.",
-    "tags": "AC Acre ICMS completo ICMS benefícios fiscais aguardando revisão"
+    "tags": "AC Acre ICMS completo ICMS benefícios fiscais revisado com pendências"
   },
   {
-    "title": "Acre: Benefícios fiscais de ICMS (aguardando revisão)",
+    "title": "Acre: Benefícios fiscais de ICMS (revisado com pendências)",
     "url": "estados/ac/legislacao/beneficios-fiscais.html",
     "summary": "Isenção, redução de base, crédito presumido/outorgado, diferimento, suspensão, fundos, regimes especiais e condicionantes.",
-    "tags": "AC Acre Benefícios fiscais de ICMS ICMS benefícios fiscais aguardando revisão"
+    "tags": "AC Acre Benefícios fiscais de ICMS ICMS benefícios fiscais revisado com pendências"
   },
   {
-    "title": "Acre: Alíquotas e base de cálculo (aguardando revisão)",
+    "title": "Acre: Alíquotas e base de cálculo (revisado com pendências)",
     "url": "estados/ac/legislacao/aliquotas.html",
     "summary": "Alíquota interna, interestadual, carga efetiva, redução de base, fundo estadual e formação da base de cálculo.",
-    "tags": "AC Acre Alíquotas e base de cálculo ICMS benefícios fiscais aguardando revisão"
+    "tags": "AC Acre Alíquotas e base de cálculo ICMS benefícios fiscais revisado com pendências"
   },
   {
-    "title": "Acre: Substituição tributária (aguardando revisão)",
+    "title": "Acre: Substituição tributária (revisado com pendências)",
     "url": "estados/ac/legislacao/substituicao-tributaria.html",
     "summary": "Responsável, substituído, MVA, pauta, protocolos, convênios, recolhimento e documento fiscal em operações sujeitas a ST.",
-    "tags": "AC Acre Substituição tributária ICMS benefícios fiscais aguardando revisão"
+    "tags": "AC Acre Substituição tributária ICMS benefícios fiscais revisado com pendências"
   },
   {
-    "title": "Acre: Documentos, SPED e prova (aguardando revisão)",
+    "title": "Acre: Documentos, SPED e prova (revisado com pendências)",
     "url": "estados/ac/legislacao/documentos-prova.html",
     "summary": "NF-e, CT-e, EFD, escrituração, cBenef quando aplicável, obrigações acessórias, comprovantes e memória de cálculo.",
-    "tags": "AC Acre Documentos, SPED e prova ICMS benefícios fiscais aguardando revisão"
+    "tags": "AC Acre Documentos, SPED e prova ICMS benefícios fiscais revisado com pendências"
   },
   {
     "title": "Acre: benefícios fiscais - Construção, minerais, madeira e materiais",
@@ -1170,40 +1200,40 @@ window.RJC_SEARCH = [
     "tags": "AC Acre ICMS benefícios fiscais incentivo isenção redução crédito presumido Atacado, comércio e centros de distribuição atacadista atacado comércio atacadista comercio atacadista varejo varejista distribuição distribuicao distribuidor centro de distribuição centro de distribuicao central de distribuição central de distribuicao carga efetiva regime atacadista"
   },
   {
-    "title": "Alagoas: legislação de ICMS em tela (aguardando revisão)",
+    "title": "Alagoas: legislação de ICMS em tela (revisado com pendências)",
     "url": "estados/al/legislacao/index.html",
     "summary": "RICMS, leis, anexos, benefícios fiscais, alíquotas, ST e prova documental de Alagoas.",
-    "tags": "AL Alagoas ICMS RICMS benefícios fiscais alíquotas ST aguardando revisão"
+    "tags": "AL Alagoas ICMS RICMS benefícios fiscais alíquotas ST revisado com pendências"
   },
   {
-    "title": "Alagoas: ICMS completo (aguardando revisão)",
+    "title": "Alagoas: ICMS completo (revisado com pendências)",
     "url": "estados/al/legislacao/icms.html",
     "summary": "RICMS, leis materiais, decretos e anexos que formam a base de incidência, apuração e documentação do ICMS estadual.",
-    "tags": "AL Alagoas ICMS completo ICMS benefícios fiscais aguardando revisão"
+    "tags": "AL Alagoas ICMS completo ICMS benefícios fiscais revisado com pendências"
   },
   {
-    "title": "Alagoas: Benefícios fiscais de ICMS (aguardando revisão)",
+    "title": "Alagoas: Benefícios fiscais de ICMS (revisado com pendências)",
     "url": "estados/al/legislacao/beneficios-fiscais.html",
     "summary": "Isenção, redução de base, crédito presumido/outorgado, diferimento, suspensão, fundos, regimes especiais e condicionantes.",
-    "tags": "AL Alagoas Benefícios fiscais de ICMS ICMS benefícios fiscais aguardando revisão"
+    "tags": "AL Alagoas Benefícios fiscais de ICMS ICMS benefícios fiscais revisado com pendências"
   },
   {
-    "title": "Alagoas: Alíquotas e base de cálculo (aguardando revisão)",
+    "title": "Alagoas: Alíquotas e base de cálculo (revisado com pendências)",
     "url": "estados/al/legislacao/aliquotas.html",
     "summary": "Alíquota interna, interestadual, carga efetiva, redução de base, fundo estadual e formação da base de cálculo.",
-    "tags": "AL Alagoas Alíquotas e base de cálculo ICMS benefícios fiscais aguardando revisão"
+    "tags": "AL Alagoas Alíquotas e base de cálculo ICMS benefícios fiscais revisado com pendências"
   },
   {
-    "title": "Alagoas: Substituição tributária (aguardando revisão)",
+    "title": "Alagoas: Substituição tributária (revisado com pendências)",
     "url": "estados/al/legislacao/substituicao-tributaria.html",
     "summary": "Responsável, substituído, MVA, pauta, protocolos, convênios, recolhimento e documento fiscal em operações sujeitas a ST.",
-    "tags": "AL Alagoas Substituição tributária ICMS benefícios fiscais aguardando revisão"
+    "tags": "AL Alagoas Substituição tributária ICMS benefícios fiscais revisado com pendências"
   },
   {
-    "title": "Alagoas: Documentos, SPED e prova (aguardando revisão)",
+    "title": "Alagoas: Documentos, SPED e prova (revisado com pendências)",
     "url": "estados/al/legislacao/documentos-prova.html",
     "summary": "NF-e, CT-e, EFD, escrituração, cBenef quando aplicável, obrigações acessórias, comprovantes e memória de cálculo.",
-    "tags": "AL Alagoas Documentos, SPED e prova ICMS benefícios fiscais aguardando revisão"
+    "tags": "AL Alagoas Documentos, SPED e prova ICMS benefícios fiscais revisado com pendências"
   },
   {
     "title": "Alagoas: benefícios fiscais - Construção, minerais, madeira e materiais",
@@ -1266,40 +1296,40 @@ window.RJC_SEARCH = [
     "tags": "AL Alagoas ICMS benefícios fiscais incentivo isenção redução crédito presumido Social, educação, cultura e entidades educação educacao ensino escola universidade cultura livro livros entidade filantrópica filantropica assistência social assistencia social doação doacao deficiência deficiencia pessoa com deficiência pessoa com deficiencia"
   },
   {
-    "title": "Amapá: legislação de ICMS em tela (aguardando revisão)",
+    "title": "Amapá: legislação de ICMS em tela (revisado com pendências)",
     "url": "estados/ap/legislacao/index.html",
     "summary": "RICMS, leis, anexos, benefícios fiscais, alíquotas, ST e prova documental de Amapá.",
-    "tags": "AP Amapá ICMS RICMS benefícios fiscais alíquotas ST aguardando revisão"
+    "tags": "AP Amapá ICMS RICMS benefícios fiscais alíquotas ST revisado com pendências"
   },
   {
-    "title": "Amapá: ICMS completo (aguardando revisão)",
+    "title": "Amapá: ICMS completo (revisado com pendências)",
     "url": "estados/ap/legislacao/icms.html",
     "summary": "RICMS, leis materiais, decretos e anexos que formam a base de incidência, apuração e documentação do ICMS estadual.",
-    "tags": "AP Amapá ICMS completo ICMS benefícios fiscais aguardando revisão"
+    "tags": "AP Amapá ICMS completo ICMS benefícios fiscais revisado com pendências"
   },
   {
-    "title": "Amapá: Benefícios fiscais de ICMS (aguardando revisão)",
+    "title": "Amapá: Benefícios fiscais de ICMS (revisado com pendências)",
     "url": "estados/ap/legislacao/beneficios-fiscais.html",
     "summary": "Isenção, redução de base, crédito presumido/outorgado, diferimento, suspensão, fundos, regimes especiais e condicionantes.",
-    "tags": "AP Amapá Benefícios fiscais de ICMS ICMS benefícios fiscais aguardando revisão"
+    "tags": "AP Amapá Benefícios fiscais de ICMS ICMS benefícios fiscais revisado com pendências"
   },
   {
-    "title": "Amapá: Alíquotas e base de cálculo (aguardando revisão)",
+    "title": "Amapá: Alíquotas e base de cálculo (revisado com pendências)",
     "url": "estados/ap/legislacao/aliquotas.html",
     "summary": "Alíquota interna, interestadual, carga efetiva, redução de base, fundo estadual e formação da base de cálculo.",
-    "tags": "AP Amapá Alíquotas e base de cálculo ICMS benefícios fiscais aguardando revisão"
+    "tags": "AP Amapá Alíquotas e base de cálculo ICMS benefícios fiscais revisado com pendências"
   },
   {
-    "title": "Amapá: Substituição tributária (aguardando revisão)",
+    "title": "Amapá: Substituição tributária (revisado com pendências)",
     "url": "estados/ap/legislacao/substituicao-tributaria.html",
     "summary": "Responsável, substituído, MVA, pauta, protocolos, convênios, recolhimento e documento fiscal em operações sujeitas a ST.",
-    "tags": "AP Amapá Substituição tributária ICMS benefícios fiscais aguardando revisão"
+    "tags": "AP Amapá Substituição tributária ICMS benefícios fiscais revisado com pendências"
   },
   {
-    "title": "Amapá: Documentos, SPED e prova (aguardando revisão)",
+    "title": "Amapá: Documentos, SPED e prova (revisado com pendências)",
     "url": "estados/ap/legislacao/documentos-prova.html",
     "summary": "NF-e, CT-e, EFD, escrituração, cBenef quando aplicável, obrigações acessórias, comprovantes e memória de cálculo.",
-    "tags": "AP Amapá Documentos, SPED e prova ICMS benefícios fiscais aguardando revisão"
+    "tags": "AP Amapá Documentos, SPED e prova ICMS benefícios fiscais revisado com pendências"
   },
   {
     "title": "Amapá: benefícios fiscais - Construção, minerais, madeira e materiais",
@@ -1362,40 +1392,40 @@ window.RJC_SEARCH = [
     "tags": "AP Amapá ICMS benefícios fiscais incentivo isenção redução crédito presumido Medicamentos, saúde e produtos hospitalares medicamento medicamentos farmacêutico farmaceutico hospital hospitalar produto médico produto medico saúde saude deficiente deficiência deficiencia prótese protese órtese ortese cadeira de rodas insumo hospitalar equipamento hospitalar"
   },
   {
-    "title": "Amazonas: legislação de ICMS em tela (aguardando revisão)",
+    "title": "Amazonas: legislação de ICMS em tela (revisado com pendências)",
     "url": "estados/am/legislacao/index.html",
     "summary": "RICMS, leis, anexos, benefícios fiscais, alíquotas, ST e prova documental de Amazonas.",
-    "tags": "AM Amazonas ICMS RICMS benefícios fiscais alíquotas ST aguardando revisão"
+    "tags": "AM Amazonas ICMS RICMS benefícios fiscais alíquotas ST revisado com pendências"
   },
   {
-    "title": "Amazonas: ICMS completo (aguardando revisão)",
+    "title": "Amazonas: ICMS completo (revisado com pendências)",
     "url": "estados/am/legislacao/icms.html",
     "summary": "RICMS, leis materiais, decretos e anexos que formam a base de incidência, apuração e documentação do ICMS estadual.",
-    "tags": "AM Amazonas ICMS completo ICMS benefícios fiscais aguardando revisão"
+    "tags": "AM Amazonas ICMS completo ICMS benefícios fiscais revisado com pendências"
   },
   {
-    "title": "Amazonas: Benefícios fiscais de ICMS (aguardando revisão)",
+    "title": "Amazonas: Benefícios fiscais de ICMS (revisado com pendências)",
     "url": "estados/am/legislacao/beneficios-fiscais.html",
     "summary": "Isenção, redução de base, crédito presumido/outorgado, diferimento, suspensão, fundos, regimes especiais e condicionantes.",
-    "tags": "AM Amazonas Benefícios fiscais de ICMS ICMS benefícios fiscais aguardando revisão"
+    "tags": "AM Amazonas Benefícios fiscais de ICMS ICMS benefícios fiscais revisado com pendências"
   },
   {
-    "title": "Amazonas: Alíquotas e base de cálculo (aguardando revisão)",
+    "title": "Amazonas: Alíquotas e base de cálculo (revisado com pendências)",
     "url": "estados/am/legislacao/aliquotas.html",
     "summary": "Alíquota interna, interestadual, carga efetiva, redução de base, fundo estadual e formação da base de cálculo.",
-    "tags": "AM Amazonas Alíquotas e base de cálculo ICMS benefícios fiscais aguardando revisão"
+    "tags": "AM Amazonas Alíquotas e base de cálculo ICMS benefícios fiscais revisado com pendências"
   },
   {
-    "title": "Amazonas: Substituição tributária (aguardando revisão)",
+    "title": "Amazonas: Substituição tributária (revisado com pendências)",
     "url": "estados/am/legislacao/substituicao-tributaria.html",
     "summary": "Responsável, substituído, MVA, pauta, protocolos, convênios, recolhimento e documento fiscal em operações sujeitas a ST.",
-    "tags": "AM Amazonas Substituição tributária ICMS benefícios fiscais aguardando revisão"
+    "tags": "AM Amazonas Substituição tributária ICMS benefícios fiscais revisado com pendências"
   },
   {
-    "title": "Amazonas: Documentos, SPED e prova (aguardando revisão)",
+    "title": "Amazonas: Documentos, SPED e prova (revisado com pendências)",
     "url": "estados/am/legislacao/documentos-prova.html",
     "summary": "NF-e, CT-e, EFD, escrituração, cBenef quando aplicável, obrigações acessórias, comprovantes e memória de cálculo.",
-    "tags": "AM Amazonas Documentos, SPED e prova ICMS benefícios fiscais aguardando revisão"
+    "tags": "AM Amazonas Documentos, SPED e prova ICMS benefícios fiscais revisado com pendências"
   },
   {
     "title": "Amazonas: benefícios fiscais - Construção, minerais, madeira e materiais",
@@ -1554,40 +1584,40 @@ window.RJC_SEARCH = [
     "tags": "BA Bahia ICMS benefícios fiscais substituição tributária ST CEST MVA mercadoria antecipação"
   },
   {
-    "title": "Ceará: legislação de ICMS em tela (aguardando revisão)",
+    "title": "Ceará: legislação de ICMS em tela (revisado com pendências)",
     "url": "estados/ce/legislacao/index.html",
     "summary": "RICMS, leis, anexos, benefícios fiscais, alíquotas, ST e prova documental de Ceará.",
-    "tags": "CE Ceará ICMS RICMS benefícios fiscais alíquotas ST aguardando revisão"
+    "tags": "CE Ceará ICMS RICMS benefícios fiscais alíquotas ST revisado com pendências"
   },
   {
-    "title": "Ceará: ICMS completo (aguardando revisão)",
+    "title": "Ceará: ICMS completo (revisado com pendências)",
     "url": "estados/ce/legislacao/icms.html",
     "summary": "RICMS, leis materiais, decretos e anexos que formam a base de incidência, apuração e documentação do ICMS estadual.",
-    "tags": "CE Ceará ICMS completo ICMS benefícios fiscais aguardando revisão"
+    "tags": "CE Ceará ICMS completo ICMS benefícios fiscais revisado com pendências"
   },
   {
-    "title": "Ceará: Benefícios fiscais de ICMS (aguardando revisão)",
+    "title": "Ceará: Benefícios fiscais de ICMS (revisado com pendências)",
     "url": "estados/ce/legislacao/beneficios-fiscais.html",
     "summary": "Isenção, redução de base, crédito presumido/outorgado, diferimento, suspensão, fundos, regimes especiais e condicionantes.",
-    "tags": "CE Ceará Benefícios fiscais de ICMS ICMS benefícios fiscais aguardando revisão"
+    "tags": "CE Ceará Benefícios fiscais de ICMS ICMS benefícios fiscais revisado com pendências"
   },
   {
-    "title": "Ceará: Alíquotas e base de cálculo (aguardando revisão)",
+    "title": "Ceará: Alíquotas e base de cálculo (revisado com pendências)",
     "url": "estados/ce/legislacao/aliquotas.html",
     "summary": "Alíquota interna, interestadual, carga efetiva, redução de base, fundo estadual e formação da base de cálculo.",
-    "tags": "CE Ceará Alíquotas e base de cálculo ICMS benefícios fiscais aguardando revisão"
+    "tags": "CE Ceará Alíquotas e base de cálculo ICMS benefícios fiscais revisado com pendências"
   },
   {
-    "title": "Ceará: Substituição tributária (aguardando revisão)",
+    "title": "Ceará: Substituição tributária (revisado com pendências)",
     "url": "estados/ce/legislacao/substituicao-tributaria.html",
     "summary": "Responsável, substituído, MVA, pauta, protocolos, convênios, recolhimento e documento fiscal em operações sujeitas a ST.",
-    "tags": "CE Ceará Substituição tributária ICMS benefícios fiscais aguardando revisão"
+    "tags": "CE Ceará Substituição tributária ICMS benefícios fiscais revisado com pendências"
   },
   {
-    "title": "Ceará: Documentos, SPED e prova (aguardando revisão)",
+    "title": "Ceará: Documentos, SPED e prova (revisado com pendências)",
     "url": "estados/ce/legislacao/documentos-prova.html",
     "summary": "NF-e, CT-e, EFD, escrituração, cBenef quando aplicável, obrigações acessórias, comprovantes e memória de cálculo.",
-    "tags": "CE Ceará Documentos, SPED e prova ICMS benefícios fiscais aguardando revisão"
+    "tags": "CE Ceará Documentos, SPED e prova ICMS benefícios fiscais revisado com pendências"
   },
   {
     "title": "Ceará: benefícios fiscais - Construção, minerais, madeira e materiais",
@@ -1830,40 +1860,40 @@ window.RJC_SEARCH = [
     "tags": "ES Espírito Santo ICMS benefícios fiscais substituição tributária EFD SPED XML documento fiscal cadastro prova"
   },
   {
-    "title": "Maranhão: legislação de ICMS em tela (aguardando revisão)",
+    "title": "Maranhão: legislação de ICMS em tela (revisado com pendências)",
     "url": "estados/ma/legislacao/index.html",
     "summary": "RICMS, leis, anexos, benefícios fiscais, alíquotas, ST e prova documental de Maranhão.",
-    "tags": "MA Maranhão ICMS RICMS benefícios fiscais alíquotas ST aguardando revisão"
+    "tags": "MA Maranhão ICMS RICMS benefícios fiscais alíquotas ST revisado com pendências"
   },
   {
-    "title": "Maranhão: ICMS completo (aguardando revisão)",
+    "title": "Maranhão: ICMS completo (revisado com pendências)",
     "url": "estados/ma/legislacao/icms.html",
     "summary": "RICMS, leis materiais, decretos e anexos que formam a base de incidência, apuração e documentação do ICMS estadual.",
-    "tags": "MA Maranhão ICMS completo ICMS benefícios fiscais aguardando revisão"
+    "tags": "MA Maranhão ICMS completo ICMS benefícios fiscais revisado com pendências"
   },
   {
-    "title": "Maranhão: Benefícios fiscais de ICMS (aguardando revisão)",
+    "title": "Maranhão: Benefícios fiscais de ICMS (revisado com pendências)",
     "url": "estados/ma/legislacao/beneficios-fiscais.html",
     "summary": "Isenção, redução de base, crédito presumido/outorgado, diferimento, suspensão, fundos, regimes especiais e condicionantes.",
-    "tags": "MA Maranhão Benefícios fiscais de ICMS ICMS benefícios fiscais aguardando revisão"
+    "tags": "MA Maranhão Benefícios fiscais de ICMS ICMS benefícios fiscais revisado com pendências"
   },
   {
-    "title": "Maranhão: Alíquotas e base de cálculo (aguardando revisão)",
+    "title": "Maranhão: Alíquotas e base de cálculo (revisado com pendências)",
     "url": "estados/ma/legislacao/aliquotas.html",
     "summary": "Alíquota interna, interestadual, carga efetiva, redução de base, fundo estadual e formação da base de cálculo.",
-    "tags": "MA Maranhão Alíquotas e base de cálculo ICMS benefícios fiscais aguardando revisão"
+    "tags": "MA Maranhão Alíquotas e base de cálculo ICMS benefícios fiscais revisado com pendências"
   },
   {
-    "title": "Maranhão: Substituição tributária (aguardando revisão)",
+    "title": "Maranhão: Substituição tributária (revisado com pendências)",
     "url": "estados/ma/legislacao/substituicao-tributaria.html",
     "summary": "Responsável, substituído, MVA, pauta, protocolos, convênios, recolhimento e documento fiscal em operações sujeitas a ST.",
-    "tags": "MA Maranhão Substituição tributária ICMS benefícios fiscais aguardando revisão"
+    "tags": "MA Maranhão Substituição tributária ICMS benefícios fiscais revisado com pendências"
   },
   {
-    "title": "Maranhão: Documentos, SPED e prova (aguardando revisão)",
+    "title": "Maranhão: Documentos, SPED e prova (revisado com pendências)",
     "url": "estados/ma/legislacao/documentos-prova.html",
     "summary": "NF-e, CT-e, EFD, escrituração, cBenef quando aplicável, obrigações acessórias, comprovantes e memória de cálculo.",
-    "tags": "MA Maranhão Documentos, SPED e prova ICMS benefícios fiscais aguardando revisão"
+    "tags": "MA Maranhão Documentos, SPED e prova ICMS benefícios fiscais revisado com pendências"
   },
   {
     "title": "Maranhão: benefícios fiscais - Construção, minerais, madeira e materiais",
@@ -2226,40 +2256,40 @@ window.RJC_SEARCH = [
     "tags": "MG Minas Gerais ICMS benefícios fiscais substituição tributária EFD SPED XML documento fiscal cadastro prova"
   },
   {
-    "title": "Pará: legislação de ICMS em tela (aguardando revisão)",
+    "title": "Pará: legislação de ICMS em tela (revisado: escopo bloqueado)",
     "url": "estados/pa/legislacao/index.html",
     "summary": "RICMS, leis, anexos, benefícios fiscais, alíquotas, ST e prova documental de Pará.",
-    "tags": "PA Pará ICMS RICMS benefícios fiscais alíquotas ST aguardando revisão"
+    "tags": "PA Pará ICMS RICMS benefícios fiscais alíquotas ST revisado: escopo bloqueado"
   },
   {
-    "title": "Pará: ICMS completo (aguardando revisão)",
+    "title": "Pará: ICMS completo (revisado: escopo bloqueado)",
     "url": "estados/pa/legislacao/icms.html",
     "summary": "RICMS, leis materiais, decretos e anexos que formam a base de incidência, apuração e documentação do ICMS estadual.",
-    "tags": "PA Pará ICMS completo ICMS benefícios fiscais aguardando revisão"
+    "tags": "PA Pará ICMS completo ICMS benefícios fiscais revisado: escopo bloqueado"
   },
   {
-    "title": "Pará: Benefícios fiscais de ICMS (aguardando revisão)",
+    "title": "Pará: Benefícios fiscais de ICMS (revisado: escopo bloqueado)",
     "url": "estados/pa/legislacao/beneficios-fiscais.html",
     "summary": "Isenção, redução de base, crédito presumido/outorgado, diferimento, suspensão, fundos, regimes especiais e condicionantes.",
-    "tags": "PA Pará Benefícios fiscais de ICMS ICMS benefícios fiscais aguardando revisão"
+    "tags": "PA Pará Benefícios fiscais de ICMS ICMS benefícios fiscais revisado: escopo bloqueado"
   },
   {
-    "title": "Pará: Alíquotas e base de cálculo (aguardando revisão)",
+    "title": "Pará: Alíquotas e base de cálculo (revisado: escopo bloqueado)",
     "url": "estados/pa/legislacao/aliquotas.html",
     "summary": "Alíquota interna, interestadual, carga efetiva, redução de base, fundo estadual e formação da base de cálculo.",
-    "tags": "PA Pará Alíquotas e base de cálculo ICMS benefícios fiscais aguardando revisão"
+    "tags": "PA Pará Alíquotas e base de cálculo ICMS benefícios fiscais revisado: escopo bloqueado"
   },
   {
-    "title": "Pará: Substituição tributária (aguardando revisão)",
+    "title": "Pará: Substituição tributária (revisado: escopo bloqueado)",
     "url": "estados/pa/legislacao/substituicao-tributaria.html",
     "summary": "Responsável, substituído, MVA, pauta, protocolos, convênios, recolhimento e documento fiscal em operações sujeitas a ST.",
-    "tags": "PA Pará Substituição tributária ICMS benefícios fiscais aguardando revisão"
+    "tags": "PA Pará Substituição tributária ICMS benefícios fiscais revisado: escopo bloqueado"
   },
   {
-    "title": "Pará: Documentos, SPED e prova (aguardando revisão)",
+    "title": "Pará: Documentos, SPED e prova (revisado: escopo bloqueado)",
     "url": "estados/pa/legislacao/documentos-prova.html",
     "summary": "NF-e, CT-e, EFD, escrituração, cBenef quando aplicável, obrigações acessórias, comprovantes e memória de cálculo.",
-    "tags": "PA Pará Documentos, SPED e prova ICMS benefícios fiscais aguardando revisão"
+    "tags": "PA Pará Documentos, SPED e prova ICMS benefícios fiscais revisado: escopo bloqueado"
   },
   {
     "title": "Pará: benefícios fiscais - Construção, minerais, madeira e materiais",
@@ -2322,40 +2352,40 @@ window.RJC_SEARCH = [
     "tags": "PA Pará ICMS benefícios fiscais incentivo isenção redução crédito presumido Atacado, comércio e centros de distribuição atacadista atacado comércio atacadista comercio atacadista varejo varejista distribuição distribuicao distribuidor centro de distribuição centro de distribuicao central de distribuição central de distribuicao carga efetiva regime atacadista"
   },
   {
-    "title": "Paraíba: legislação de ICMS em tela (aguardando revisão)",
+    "title": "Paraíba: legislação de ICMS em tela (revisado com pendências)",
     "url": "estados/pb/legislacao/index.html",
     "summary": "RICMS, leis, anexos, benefícios fiscais, alíquotas, ST e prova documental de Paraíba.",
-    "tags": "PB Paraíba ICMS RICMS benefícios fiscais alíquotas ST aguardando revisão"
+    "tags": "PB Paraíba ICMS RICMS benefícios fiscais alíquotas ST revisado com pendências"
   },
   {
-    "title": "Paraíba: ICMS completo (aguardando revisão)",
+    "title": "Paraíba: ICMS completo (revisado com pendências)",
     "url": "estados/pb/legislacao/icms.html",
     "summary": "RICMS, leis materiais, decretos e anexos que formam a base de incidência, apuração e documentação do ICMS estadual.",
-    "tags": "PB Paraíba ICMS completo ICMS benefícios fiscais aguardando revisão"
+    "tags": "PB Paraíba ICMS completo ICMS benefícios fiscais revisado com pendências"
   },
   {
-    "title": "Paraíba: Benefícios fiscais de ICMS (aguardando revisão)",
+    "title": "Paraíba: Benefícios fiscais de ICMS (revisado com pendências)",
     "url": "estados/pb/legislacao/beneficios-fiscais.html",
     "summary": "Isenção, redução de base, crédito presumido/outorgado, diferimento, suspensão, fundos, regimes especiais e condicionantes.",
-    "tags": "PB Paraíba Benefícios fiscais de ICMS ICMS benefícios fiscais aguardando revisão"
+    "tags": "PB Paraíba Benefícios fiscais de ICMS ICMS benefícios fiscais revisado com pendências"
   },
   {
-    "title": "Paraíba: Alíquotas e base de cálculo (aguardando revisão)",
+    "title": "Paraíba: Alíquotas e base de cálculo (revisado com pendências)",
     "url": "estados/pb/legislacao/aliquotas.html",
     "summary": "Alíquota interna, interestadual, carga efetiva, redução de base, fundo estadual e formação da base de cálculo.",
-    "tags": "PB Paraíba Alíquotas e base de cálculo ICMS benefícios fiscais aguardando revisão"
+    "tags": "PB Paraíba Alíquotas e base de cálculo ICMS benefícios fiscais revisado com pendências"
   },
   {
-    "title": "Paraíba: Substituição tributária (aguardando revisão)",
+    "title": "Paraíba: Substituição tributária (revisado com pendências)",
     "url": "estados/pb/legislacao/substituicao-tributaria.html",
     "summary": "Responsável, substituído, MVA, pauta, protocolos, convênios, recolhimento e documento fiscal em operações sujeitas a ST.",
-    "tags": "PB Paraíba Substituição tributária ICMS benefícios fiscais aguardando revisão"
+    "tags": "PB Paraíba Substituição tributária ICMS benefícios fiscais revisado com pendências"
   },
   {
-    "title": "Paraíba: Documentos, SPED e prova (aguardando revisão)",
+    "title": "Paraíba: Documentos, SPED e prova (revisado com pendências)",
     "url": "estados/pb/legislacao/documentos-prova.html",
     "summary": "NF-e, CT-e, EFD, escrituração, cBenef quando aplicável, obrigações acessórias, comprovantes e memória de cálculo.",
-    "tags": "PB Paraíba Documentos, SPED e prova ICMS benefícios fiscais aguardando revisão"
+    "tags": "PB Paraíba Documentos, SPED e prova ICMS benefícios fiscais revisado com pendências"
   },
   {
     "title": "Paraíba: benefícios fiscais - Construção, minerais, madeira e materiais",
@@ -2508,40 +2538,40 @@ window.RJC_SEARCH = [
     "tags": "PR Paraná ICMS benefícios fiscais substituição tributária EFD SPED XML documento fiscal cadastro prova"
   },
   {
-    "title": "Pernambuco: legislação de ICMS em tela (aguardando revisão)",
+    "title": "Pernambuco: legislação de ICMS em tela (revisado com pendências)",
     "url": "estados/pe/legislacao/index.html",
     "summary": "RICMS, leis, anexos, benefícios fiscais, alíquotas, ST e prova documental de Pernambuco.",
-    "tags": "PE Pernambuco ICMS RICMS benefícios fiscais alíquotas ST aguardando revisão"
+    "tags": "PE Pernambuco ICMS RICMS benefícios fiscais alíquotas ST revisado com pendências"
   },
   {
-    "title": "Pernambuco: ICMS completo (aguardando revisão)",
+    "title": "Pernambuco: ICMS completo (revisado com pendências)",
     "url": "estados/pe/legislacao/icms.html",
     "summary": "RICMS, leis materiais, decretos e anexos que formam a base de incidência, apuração e documentação do ICMS estadual.",
-    "tags": "PE Pernambuco ICMS completo ICMS benefícios fiscais aguardando revisão"
+    "tags": "PE Pernambuco ICMS completo ICMS benefícios fiscais revisado com pendências"
   },
   {
-    "title": "Pernambuco: Benefícios fiscais de ICMS (aguardando revisão)",
+    "title": "Pernambuco: Benefícios fiscais de ICMS (revisado com pendências)",
     "url": "estados/pe/legislacao/beneficios-fiscais.html",
     "summary": "Isenção, redução de base, crédito presumido/outorgado, diferimento, suspensão, fundos, regimes especiais e condicionantes.",
-    "tags": "PE Pernambuco Benefícios fiscais de ICMS ICMS benefícios fiscais aguardando revisão"
+    "tags": "PE Pernambuco Benefícios fiscais de ICMS ICMS benefícios fiscais revisado com pendências"
   },
   {
-    "title": "Pernambuco: Alíquotas e base de cálculo (aguardando revisão)",
+    "title": "Pernambuco: Alíquotas e base de cálculo (revisado com pendências)",
     "url": "estados/pe/legislacao/aliquotas.html",
     "summary": "Alíquota interna, interestadual, carga efetiva, redução de base, fundo estadual e formação da base de cálculo.",
-    "tags": "PE Pernambuco Alíquotas e base de cálculo ICMS benefícios fiscais aguardando revisão"
+    "tags": "PE Pernambuco Alíquotas e base de cálculo ICMS benefícios fiscais revisado com pendências"
   },
   {
-    "title": "Pernambuco: Substituição tributária (aguardando revisão)",
+    "title": "Pernambuco: Substituição tributária (revisado com pendências)",
     "url": "estados/pe/legislacao/substituicao-tributaria.html",
     "summary": "Responsável, substituído, MVA, pauta, protocolos, convênios, recolhimento e documento fiscal em operações sujeitas a ST.",
-    "tags": "PE Pernambuco Substituição tributária ICMS benefícios fiscais aguardando revisão"
+    "tags": "PE Pernambuco Substituição tributária ICMS benefícios fiscais revisado com pendências"
   },
   {
-    "title": "Pernambuco: Documentos, SPED e prova (aguardando revisão)",
+    "title": "Pernambuco: Documentos, SPED e prova (revisado com pendências)",
     "url": "estados/pe/legislacao/documentos-prova.html",
     "summary": "NF-e, CT-e, EFD, escrituração, cBenef quando aplicável, obrigações acessórias, comprovantes e memória de cálculo.",
-    "tags": "PE Pernambuco Documentos, SPED e prova ICMS benefícios fiscais aguardando revisão"
+    "tags": "PE Pernambuco Documentos, SPED e prova ICMS benefícios fiscais revisado com pendências"
   },
   {
     "title": "Pernambuco: benefícios fiscais - Construção, minerais, madeira e materiais",
@@ -2604,40 +2634,40 @@ window.RJC_SEARCH = [
     "tags": "PE Pernambuco ICMS benefícios fiscais incentivo isenção redução crédito presumido Medicamentos, saúde e produtos hospitalares medicamento medicamentos farmacêutico farmaceutico hospital hospitalar produto médico produto medico saúde saude deficiente deficiência deficiencia prótese protese órtese ortese cadeira de rodas insumo hospitalar equipamento hospitalar"
   },
   {
-    "title": "Piauí: legislação de ICMS em tela (aguardando revisão)",
+    "title": "Piauí: legislação de ICMS em tela (revisado com pendências)",
     "url": "estados/pi/legislacao/index.html",
     "summary": "RICMS, leis, anexos, benefícios fiscais, alíquotas, ST e prova documental de Piauí.",
-    "tags": "PI Piauí ICMS RICMS benefícios fiscais alíquotas ST aguardando revisão"
+    "tags": "PI Piauí ICMS RICMS benefícios fiscais alíquotas ST revisado com pendências"
   },
   {
-    "title": "Piauí: ICMS completo (aguardando revisão)",
+    "title": "Piauí: ICMS completo (revisado com pendências)",
     "url": "estados/pi/legislacao/icms.html",
     "summary": "RICMS, leis materiais, decretos e anexos que formam a base de incidência, apuração e documentação do ICMS estadual.",
-    "tags": "PI Piauí ICMS completo ICMS benefícios fiscais aguardando revisão"
+    "tags": "PI Piauí ICMS completo ICMS benefícios fiscais revisado com pendências"
   },
   {
-    "title": "Piauí: Benefícios fiscais de ICMS (aguardando revisão)",
+    "title": "Piauí: Benefícios fiscais de ICMS (revisado com pendências)",
     "url": "estados/pi/legislacao/beneficios-fiscais.html",
     "summary": "Isenção, redução de base, crédito presumido/outorgado, diferimento, suspensão, fundos, regimes especiais e condicionantes.",
-    "tags": "PI Piauí Benefícios fiscais de ICMS ICMS benefícios fiscais aguardando revisão"
+    "tags": "PI Piauí Benefícios fiscais de ICMS ICMS benefícios fiscais revisado com pendências"
   },
   {
-    "title": "Piauí: Alíquotas e base de cálculo (aguardando revisão)",
+    "title": "Piauí: Alíquotas e base de cálculo (revisado com pendências)",
     "url": "estados/pi/legislacao/aliquotas.html",
     "summary": "Alíquota interna, interestadual, carga efetiva, redução de base, fundo estadual e formação da base de cálculo.",
-    "tags": "PI Piauí Alíquotas e base de cálculo ICMS benefícios fiscais aguardando revisão"
+    "tags": "PI Piauí Alíquotas e base de cálculo ICMS benefícios fiscais revisado com pendências"
   },
   {
-    "title": "Piauí: Substituição tributária (aguardando revisão)",
+    "title": "Piauí: Substituição tributária (revisado com pendências)",
     "url": "estados/pi/legislacao/substituicao-tributaria.html",
     "summary": "Responsável, substituído, MVA, pauta, protocolos, convênios, recolhimento e documento fiscal em operações sujeitas a ST.",
-    "tags": "PI Piauí Substituição tributária ICMS benefícios fiscais aguardando revisão"
+    "tags": "PI Piauí Substituição tributária ICMS benefícios fiscais revisado com pendências"
   },
   {
-    "title": "Piauí: Documentos, SPED e prova (aguardando revisão)",
+    "title": "Piauí: Documentos, SPED e prova (revisado com pendências)",
     "url": "estados/pi/legislacao/documentos-prova.html",
     "summary": "NF-e, CT-e, EFD, escrituração, cBenef quando aplicável, obrigações acessórias, comprovantes e memória de cálculo.",
-    "tags": "PI Piauí Documentos, SPED e prova ICMS benefícios fiscais aguardando revisão"
+    "tags": "PI Piauí Documentos, SPED e prova ICMS benefícios fiscais revisado com pendências"
   },
   {
     "title": "Piauí: benefícios fiscais - Construção, minerais, madeira e materiais",
@@ -3000,40 +3030,40 @@ window.RJC_SEARCH = [
     "tags": "RS Rio Grande do Sul ICMS benefícios fiscais substituição tributária EFD SPED XML documento fiscal cadastro prova"
   },
   {
-    "title": "Rondônia: legislação de ICMS em tela (aguardando revisão)",
+    "title": "Rondônia: legislação de ICMS em tela (revisado: escopo bloqueado)",
     "url": "estados/ro/legislacao/index.html",
     "summary": "RICMS, leis, anexos, benefícios fiscais, alíquotas, ST e prova documental de Rondônia.",
-    "tags": "RO Rondônia ICMS RICMS benefícios fiscais alíquotas ST aguardando revisão"
+    "tags": "RO Rondônia ICMS RICMS benefícios fiscais alíquotas ST revisado: escopo bloqueado"
   },
   {
-    "title": "Rondônia: ICMS completo (aguardando revisão)",
+    "title": "Rondônia: ICMS completo (revisado: escopo bloqueado)",
     "url": "estados/ro/legislacao/icms.html",
     "summary": "RICMS, leis materiais, decretos e anexos que formam a base de incidência, apuração e documentação do ICMS estadual.",
-    "tags": "RO Rondônia ICMS completo ICMS benefícios fiscais aguardando revisão"
+    "tags": "RO Rondônia ICMS completo ICMS benefícios fiscais revisado: escopo bloqueado"
   },
   {
-    "title": "Rondônia: Benefícios fiscais de ICMS (aguardando revisão)",
+    "title": "Rondônia: Benefícios fiscais de ICMS (revisado: escopo bloqueado)",
     "url": "estados/ro/legislacao/beneficios-fiscais.html",
     "summary": "Isenção, redução de base, crédito presumido/outorgado, diferimento, suspensão, fundos, regimes especiais e condicionantes.",
-    "tags": "RO Rondônia Benefícios fiscais de ICMS ICMS benefícios fiscais aguardando revisão"
+    "tags": "RO Rondônia Benefícios fiscais de ICMS ICMS benefícios fiscais revisado: escopo bloqueado"
   },
   {
-    "title": "Rondônia: Alíquotas e base de cálculo (aguardando revisão)",
+    "title": "Rondônia: Alíquotas e base de cálculo (revisado: escopo bloqueado)",
     "url": "estados/ro/legislacao/aliquotas.html",
     "summary": "Alíquota interna, interestadual, carga efetiva, redução de base, fundo estadual e formação da base de cálculo.",
-    "tags": "RO Rondônia Alíquotas e base de cálculo ICMS benefícios fiscais aguardando revisão"
+    "tags": "RO Rondônia Alíquotas e base de cálculo ICMS benefícios fiscais revisado: escopo bloqueado"
   },
   {
-    "title": "Rondônia: Substituição tributária (aguardando revisão)",
+    "title": "Rondônia: Substituição tributária (revisado: escopo bloqueado)",
     "url": "estados/ro/legislacao/substituicao-tributaria.html",
     "summary": "Responsável, substituído, MVA, pauta, protocolos, convênios, recolhimento e documento fiscal em operações sujeitas a ST.",
-    "tags": "RO Rondônia Substituição tributária ICMS benefícios fiscais aguardando revisão"
+    "tags": "RO Rondônia Substituição tributária ICMS benefícios fiscais revisado: escopo bloqueado"
   },
   {
-    "title": "Rondônia: Documentos, SPED e prova (aguardando revisão)",
+    "title": "Rondônia: Documentos, SPED e prova (revisado: escopo bloqueado)",
     "url": "estados/ro/legislacao/documentos-prova.html",
     "summary": "NF-e, CT-e, EFD, escrituração, cBenef quando aplicável, obrigações acessórias, comprovantes e memória de cálculo.",
-    "tags": "RO Rondônia Documentos, SPED e prova ICMS benefícios fiscais aguardando revisão"
+    "tags": "RO Rondônia Documentos, SPED e prova ICMS benefícios fiscais revisado: escopo bloqueado"
   },
   {
     "title": "Rondônia: benefícios fiscais - Construção, minerais, madeira e materiais",
@@ -3096,40 +3126,40 @@ window.RJC_SEARCH = [
     "tags": "RO Rondônia ICMS benefícios fiscais incentivo isenção redução crédito presumido Atacado, comércio e centros de distribuição atacadista atacado comércio atacadista comercio atacadista varejo varejista distribuição distribuicao distribuidor centro de distribuição centro de distribuicao central de distribuição central de distribuicao carga efetiva regime atacadista"
   },
   {
-    "title": "Roraima: legislação de ICMS em tela (aguardando revisão)",
+    "title": "Roraima: legislação de ICMS em tela (revisado com pendências)",
     "url": "estados/rr/legislacao/index.html",
     "summary": "RICMS, leis, anexos, benefícios fiscais, alíquotas, ST e prova documental de Roraima.",
-    "tags": "RR Roraima ICMS RICMS benefícios fiscais alíquotas ST aguardando revisão"
+    "tags": "RR Roraima ICMS RICMS benefícios fiscais alíquotas ST revisado com pendências"
   },
   {
-    "title": "Roraima: ICMS completo (aguardando revisão)",
+    "title": "Roraima: ICMS completo (revisado com pendências)",
     "url": "estados/rr/legislacao/icms.html",
     "summary": "RICMS, leis materiais, decretos e anexos que formam a base de incidência, apuração e documentação do ICMS estadual.",
-    "tags": "RR Roraima ICMS completo ICMS benefícios fiscais aguardando revisão"
+    "tags": "RR Roraima ICMS completo ICMS benefícios fiscais revisado com pendências"
   },
   {
-    "title": "Roraima: Benefícios fiscais de ICMS (aguardando revisão)",
+    "title": "Roraima: Benefícios fiscais de ICMS (revisado com pendências)",
     "url": "estados/rr/legislacao/beneficios-fiscais.html",
     "summary": "Isenção, redução de base, crédito presumido/outorgado, diferimento, suspensão, fundos, regimes especiais e condicionantes.",
-    "tags": "RR Roraima Benefícios fiscais de ICMS ICMS benefícios fiscais aguardando revisão"
+    "tags": "RR Roraima Benefícios fiscais de ICMS ICMS benefícios fiscais revisado com pendências"
   },
   {
-    "title": "Roraima: Alíquotas e base de cálculo (aguardando revisão)",
+    "title": "Roraima: Alíquotas e base de cálculo (revisado com pendências)",
     "url": "estados/rr/legislacao/aliquotas.html",
     "summary": "Alíquota interna, interestadual, carga efetiva, redução de base, fundo estadual e formação da base de cálculo.",
-    "tags": "RR Roraima Alíquotas e base de cálculo ICMS benefícios fiscais aguardando revisão"
+    "tags": "RR Roraima Alíquotas e base de cálculo ICMS benefícios fiscais revisado com pendências"
   },
   {
-    "title": "Roraima: Substituição tributária (aguardando revisão)",
+    "title": "Roraima: Substituição tributária (revisado com pendências)",
     "url": "estados/rr/legislacao/substituicao-tributaria.html",
     "summary": "Responsável, substituído, MVA, pauta, protocolos, convênios, recolhimento e documento fiscal em operações sujeitas a ST.",
-    "tags": "RR Roraima Substituição tributária ICMS benefícios fiscais aguardando revisão"
+    "tags": "RR Roraima Substituição tributária ICMS benefícios fiscais revisado com pendências"
   },
   {
-    "title": "Roraima: Documentos, SPED e prova (aguardando revisão)",
+    "title": "Roraima: Documentos, SPED e prova (revisado com pendências)",
     "url": "estados/rr/legislacao/documentos-prova.html",
     "summary": "NF-e, CT-e, EFD, escrituração, cBenef quando aplicável, obrigações acessórias, comprovantes e memória de cálculo.",
-    "tags": "RR Roraima Documentos, SPED e prova ICMS benefícios fiscais aguardando revisão"
+    "tags": "RR Roraima Documentos, SPED e prova ICMS benefícios fiscais revisado com pendências"
   },
   {
     "title": "Roraima: benefícios fiscais - Indústria, máquinas e equipamentos",
@@ -3384,40 +3414,40 @@ window.RJC_SEARCH = [
     "tags": "SP São Paulo ICMS benefícios fiscais substituição tributária EFD SPED XML documento fiscal cadastro prova"
   },
   {
-    "title": "Sergipe: legislação de ICMS em tela (aguardando revisão)",
+    "title": "Sergipe: legislação de ICMS em tela (revisado com pendências)",
     "url": "estados/se/legislacao/index.html",
     "summary": "RICMS, leis, anexos, benefícios fiscais, alíquotas, ST e prova documental de Sergipe.",
-    "tags": "SE Sergipe ICMS RICMS benefícios fiscais alíquotas ST aguardando revisão"
+    "tags": "SE Sergipe ICMS RICMS benefícios fiscais alíquotas ST revisado com pendências"
   },
   {
-    "title": "Sergipe: ICMS completo (aguardando revisão)",
+    "title": "Sergipe: ICMS completo (revisado com pendências)",
     "url": "estados/se/legislacao/icms.html",
     "summary": "RICMS, leis materiais, decretos e anexos que formam a base de incidência, apuração e documentação do ICMS estadual.",
-    "tags": "SE Sergipe ICMS completo ICMS benefícios fiscais aguardando revisão"
+    "tags": "SE Sergipe ICMS completo ICMS benefícios fiscais revisado com pendências"
   },
   {
-    "title": "Sergipe: Benefícios fiscais de ICMS (aguardando revisão)",
+    "title": "Sergipe: Benefícios fiscais de ICMS (revisado com pendências)",
     "url": "estados/se/legislacao/beneficios-fiscais.html",
     "summary": "Isenção, redução de base, crédito presumido/outorgado, diferimento, suspensão, fundos, regimes especiais e condicionantes.",
-    "tags": "SE Sergipe Benefícios fiscais de ICMS ICMS benefícios fiscais aguardando revisão"
+    "tags": "SE Sergipe Benefícios fiscais de ICMS ICMS benefícios fiscais revisado com pendências"
   },
   {
-    "title": "Sergipe: Alíquotas e base de cálculo (aguardando revisão)",
+    "title": "Sergipe: Alíquotas e base de cálculo (revisado com pendências)",
     "url": "estados/se/legislacao/aliquotas.html",
     "summary": "Alíquota interna, interestadual, carga efetiva, redução de base, fundo estadual e formação da base de cálculo.",
-    "tags": "SE Sergipe Alíquotas e base de cálculo ICMS benefícios fiscais aguardando revisão"
+    "tags": "SE Sergipe Alíquotas e base de cálculo ICMS benefícios fiscais revisado com pendências"
   },
   {
-    "title": "Sergipe: Substituição tributária (aguardando revisão)",
+    "title": "Sergipe: Substituição tributária (revisado com pendências)",
     "url": "estados/se/legislacao/substituicao-tributaria.html",
     "summary": "Responsável, substituído, MVA, pauta, protocolos, convênios, recolhimento e documento fiscal em operações sujeitas a ST.",
-    "tags": "SE Sergipe Substituição tributária ICMS benefícios fiscais aguardando revisão"
+    "tags": "SE Sergipe Substituição tributária ICMS benefícios fiscais revisado com pendências"
   },
   {
-    "title": "Sergipe: Documentos, SPED e prova (aguardando revisão)",
+    "title": "Sergipe: Documentos, SPED e prova (revisado com pendências)",
     "url": "estados/se/legislacao/documentos-prova.html",
     "summary": "NF-e, CT-e, EFD, escrituração, cBenef quando aplicável, obrigações acessórias, comprovantes e memória de cálculo.",
-    "tags": "SE Sergipe Documentos, SPED e prova ICMS benefícios fiscais aguardando revisão"
+    "tags": "SE Sergipe Documentos, SPED e prova ICMS benefícios fiscais revisado com pendências"
   },
   {
     "title": "Sergipe: benefícios fiscais - Construção, minerais, madeira e materiais",
@@ -3480,40 +3510,40 @@ window.RJC_SEARCH = [
     "tags": "SE Sergipe ICMS benefícios fiscais incentivo isenção redução crédito presumido Medicamentos, saúde e produtos hospitalares medicamento medicamentos farmacêutico farmaceutico hospital hospitalar produto médico produto medico saúde saude deficiente deficiência deficiencia prótese protese órtese ortese cadeira de rodas insumo hospitalar equipamento hospitalar"
   },
   {
-    "title": "Tocantins: legislação de ICMS em tela (aguardando revisão)",
+    "title": "Tocantins: legislação de ICMS em tela (revisado com pendências)",
     "url": "estados/to/legislacao/index.html",
     "summary": "RICMS, leis, anexos, benefícios fiscais, alíquotas, ST e prova documental de Tocantins.",
-    "tags": "TO Tocantins ICMS RICMS benefícios fiscais alíquotas ST aguardando revisão"
+    "tags": "TO Tocantins ICMS RICMS benefícios fiscais alíquotas ST revisado com pendências"
   },
   {
-    "title": "Tocantins: ICMS completo (aguardando revisão)",
+    "title": "Tocantins: ICMS completo (revisado com pendências)",
     "url": "estados/to/legislacao/icms.html",
     "summary": "RICMS, leis materiais, decretos e anexos que formam a base de incidência, apuração e documentação do ICMS estadual.",
-    "tags": "TO Tocantins ICMS completo ICMS benefícios fiscais aguardando revisão"
+    "tags": "TO Tocantins ICMS completo ICMS benefícios fiscais revisado com pendências"
   },
   {
-    "title": "Tocantins: Benefícios fiscais de ICMS (aguardando revisão)",
+    "title": "Tocantins: Benefícios fiscais de ICMS (revisado com pendências)",
     "url": "estados/to/legislacao/beneficios-fiscais.html",
     "summary": "Isenção, redução de base, crédito presumido/outorgado, diferimento, suspensão, fundos, regimes especiais e condicionantes.",
-    "tags": "TO Tocantins Benefícios fiscais de ICMS ICMS benefícios fiscais aguardando revisão"
+    "tags": "TO Tocantins Benefícios fiscais de ICMS ICMS benefícios fiscais revisado com pendências"
   },
   {
-    "title": "Tocantins: Alíquotas e base de cálculo (aguardando revisão)",
+    "title": "Tocantins: Alíquotas e base de cálculo (revisado com pendências)",
     "url": "estados/to/legislacao/aliquotas.html",
     "summary": "Alíquota interna, interestadual, carga efetiva, redução de base, fundo estadual e formação da base de cálculo.",
-    "tags": "TO Tocantins Alíquotas e base de cálculo ICMS benefícios fiscais aguardando revisão"
+    "tags": "TO Tocantins Alíquotas e base de cálculo ICMS benefícios fiscais revisado com pendências"
   },
   {
-    "title": "Tocantins: Substituição tributária (aguardando revisão)",
+    "title": "Tocantins: Substituição tributária (revisado com pendências)",
     "url": "estados/to/legislacao/substituicao-tributaria.html",
     "summary": "Responsável, substituído, MVA, pauta, protocolos, convênios, recolhimento e documento fiscal em operações sujeitas a ST.",
-    "tags": "TO Tocantins Substituição tributária ICMS benefícios fiscais aguardando revisão"
+    "tags": "TO Tocantins Substituição tributária ICMS benefícios fiscais revisado com pendências"
   },
   {
-    "title": "Tocantins: Documentos, SPED e prova (aguardando revisão)",
+    "title": "Tocantins: Documentos, SPED e prova (revisado com pendências)",
     "url": "estados/to/legislacao/documentos-prova.html",
     "summary": "NF-e, CT-e, EFD, escrituração, cBenef quando aplicável, obrigações acessórias, comprovantes e memória de cálculo.",
-    "tags": "TO Tocantins Documentos, SPED e prova ICMS benefícios fiscais aguardando revisão"
+    "tags": "TO Tocantins Documentos, SPED e prova ICMS benefícios fiscais revisado com pendências"
   },
   {
     "title": "Tocantins: benefícios fiscais - Construção, minerais, madeira e materiais",

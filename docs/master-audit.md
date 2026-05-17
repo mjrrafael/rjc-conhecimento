@@ -1,17 +1,18 @@
 # Auditoria Mestre v2
 
-Gerado em 2026-04-30.
+Gerado em 2026-05-17.
 
 Este arquivo resume cobertura e cruzamentos do Portal RJC Tributario Aberto. Ele e uma trilha de auditoria, nao um parecer tributario.
 
 ## Cobertura
 
-- Fontes registradas: 192
+- Fontes registradas: 200
 - Requisitos federais mapeados: 15
 - Requisitos federais publicados: 11
 - Requisitos federais com fonte local disponivel: 4
 - Estados profundos: 13
-- Estados aguardando revisao: 14
+- Estados aguardando revisao: 0
+- Estados revisados sem aprovacao profunda: 14
 - Entradas validadas na matriz de beneficios: 12221
 - Entradas com NCM/TIPI: 2383
 - Entradas com CEST: 268
@@ -41,38 +42,38 @@ Este arquivo resume cobertura e cruzamentos do Portal RJC Tributario Aberto. Ele
 
 | UF | Status | Docs | Alertas principais | Proximo passo |
 | --- | --- | ---: | --- | --- |
-| AC | aguardando_revisao | 6 | contém IPVA, contém ITCMD/ITCD, contém Taxas, fonte local sem URL oficial no cabeçalho | Baixar RICMS e benefÃƒÂ­cios de ICMS no portal oficial do Acre. |
-| AL | aguardando_revisao | 3 | fonte local sem URL oficial no cabeçalho, texto curto para RICMS/benefícios | Baixar RICMS e benefÃƒÂ­cios de ICMS no portal oficial de Alagoas. |
-| AM | aguardando_revisao | 4 | categoria não específica de ICMS, contém IPVA, contém ITCMD/ITCD, contém Taxas | Separar CÃƒÂ³digo TributÃƒÂ¡rio, RICMS e benefÃƒÂ­cios; baixar o regulamento vigente do Amazonas. |
-| AP | aguardando_revisao | 7 | contém Taxas, fonte local sem URL oficial no cabeçalho, ruído de extração/encoding, texto curto para RICMS/benefícios | Baixar RICMS e benefÃƒÂ­cios de ICMS no portal oficial do AmapÃƒÂ¡. |
+| AC | revisado_com_pendencias | 6 | contém IPVA, contém ITCMD/ITCD, contém Taxas, fonte local sem URL oficial no cabeçalho | Recapturar RICMS, beneficios de ICMS e atos modificadores no portal oficial do Acre, com URL oficial e limpeza de escopo. |
+| AL | revisado_com_pendencias | 3 | fonte local sem URL oficial no cabeçalho, texto curto para RICMS/benefícios | Recapturar RICMS, beneficios e ST no portal oficial de Alagoas, com URL oficial, vigencia e hash por fonte. |
+| AM | revisado_com_pendencias | 4 | categoria não específica de ICMS, contém IPVA, contém ITCMD/ITCD, contém Taxas | Separar Codigo Tributario, RICMS, beneficios e atos modificadores do Amazonas, mantendo apenas trilha de ICMS nas paginas de ICMS. |
+| AP | revisado_com_pendencias | 7 | contém Taxas, fonte local sem URL oficial no cabeçalho, ruído de extração/encoding, texto curto para RICMS/benefícios | Recapturar RICMS, beneficios e anexos do Amapa em fonte oficial limpa antes de aprovar analise profunda. |
 | BA | publicado_v1 | 15 | sem alerta automatizado | Bahia publicada como pÃƒÂ¡gina profunda: Lei do ICMS, RICMS, anexos, substituiÃƒÂ§ÃƒÂ£o tributÃƒÂ¡ria, DESENVOLVE, PROIND, PRONAVAL, crÃƒÂ©dito presumido, informÃƒÂ¡tica/eletrÃƒÂ´nica, atos da LC 160/ConvÃƒÂªnio 190 e EFD dos incentivos. |
-| CE | aguardando_revisao | 8 | categoria não específica de ICMS, contém IPVA, contém ITCMD/ITCD, contém Taxas | Baixar RICMS, decretos modificadores e benefÃƒÂ­cios no portal oficial do CearÃƒÂ¡. |
+| CE | revisado_com_pendencias | 8 | categoria não específica de ICMS, contém IPVA, contém ITCMD/ITCD, contém Taxas | Recapturar RICMS, decretos modificadores e beneficios de ICMS no portal oficial do Ceara, separando escopo nao ICMS. |
 | DF | publicado_v1 | 12 | sem alerta automatizado | Distrito Federal publicado como pÃƒÂ¡gina profunda: Lei do ICMS, RICMS, Cadernos do Anexo I, Anexo IV, LC 160/ConvÃƒÂªnio 190, regime especial de apuraÃƒÂ§ÃƒÂ£o, crÃƒÂ©dito outorgado, EMPREGA-DF, PRÃƒâ€œ-DF II, Desenvolve-DF, diferimento agro e EFD ICMS/IPI. |
 | ES | publicado_v1 | 7 | sem alerta automatizado | EspÃƒÂ­rito Santo publicado como pÃƒÂ¡gina profunda: Lei nÃ‚Âº 7.000/2001, RICMS/ES, COMPETE/ES, INVEST-ES, FUNDAP, cBenef, isenÃƒÂ§ÃƒÂ£o, reduÃƒÂ§ÃƒÂ£o de base, crÃƒÂ©dito presumido, diferimento, ST, EFD e prova fiscal. |
 | GO | aprovado_v1 | 0 | sem alerta automatizado | Manter monitoramento de RCTE, Anexo IX, cBenef e atos modificadores. |
-| MA | aguardando_revisao | 10 | contém Taxas, fonte local sem URL oficial no cabeçalho | Baixar RICMS/MA e anexos de benefÃƒÂ­cios no portal oficial do MaranhÃƒÂ£o. |
+| MA | revisado_com_pendencias | 10 | contém Taxas, fonte local sem URL oficial no cabeçalho | Recapturar RICMS/MA, anexos de beneficios e atos modificadores com URL oficial e separar Taxas da trilha de ICMS. |
 | MG | publicado_v1 | 10 | sem alerta automatizado | Minas Gerais publicada como pÃƒÂ¡gina profunda: Lei nÃ‚Âº 6.763/1975, Decreto nÃ‚Âº 48.589/2023, RICMS/MG 2023, Anexos I a VIII, alÃƒÂ­quotas, reduÃƒÂ§ÃƒÂ£o de base, crÃƒÂ©dito presumido, crÃƒÂ©dito acumulado, diferimento, ST, EFD e prova fiscal. |
 | MS | publicado_v1 | 35 | sem alerta automatizado | Mato Grosso do Sul publicado como pÃƒÂ¡gina profunda: Lei nÃ‚Âº 1.810/1997, RICMS/MS, Anexos I, II, III, V, VI e XV, LC nÃ‚Âº 93/2001, FUNDERSUL, MS-Empreendedor, diferimento, crÃƒÂ©dito presumido, ST, EFD, parcelamento e prova fiscal. |
 | MT | publicado_v1 | 4 | sem alerta automatizado | Mato Grosso publicado como pÃƒÂ¡gina profunda: Lei do ICMS, RICMS, LC 631/2019, anexos de isenÃƒÂ§ÃƒÂ£o, reduÃƒÂ§ÃƒÂ£o de base, crÃƒÂ©ditos fiscais, diferimento, PRODEIC, substituiÃƒÂ§ÃƒÂ£o tributÃƒÂ¡ria, estimativa simplificada, cBenef e prova fiscal. |
-| PA | aguardando_revisao | 2 | categoria não específica de ICMS, contém IPVA, contém ITCMD/ITCD, contém Taxas | Baixar RICMS/PA e benefÃƒÂ­cios no portal oficial do ParÃƒÂ¡. |
-| PB | aguardando_revisao | 1 | contém IPVA, contém ITCMD/ITCD, contém Taxas | Baixar RICMS/PB e benefÃƒÂ­cios no portal oficial da ParaÃƒÂ­ba. |
-| PE | aguardando_revisao | 8 | contém Taxas, fonte local sem URL oficial no cabeçalho, texto curto para RICMS/benefícios | Baixar RICMS/PE e benefÃƒÂ­cios no portal oficial de Pernambuco. |
-| PI | aguardando_revisao | 9 | contém IPVA, contém Taxas, fonte local sem URL oficial no cabeçalho | Baixar RICMS/PI e benefÃƒÂ­cios no portal oficial do PiauÃƒÂ­. |
+| PA | revisado_escopo_bloqueado | 2 | categoria não específica de ICMS, contém IPVA, contém ITCMD/ITCD, contém Taxas | Refazer captura do Para do zero: RICMS/PA, beneficios de ICMS, aliquotas, ST e documentos no portal oficial da SEFA antes de publicar qualquer conclusao. |
+| PB | revisado_com_pendencias | 1 | contém IPVA, contém ITCMD/ITCD, contém Taxas | Recapturar RICMS/PB e beneficios de ICMS no portal oficial da Paraiba, separando tributos nao ICMS. |
+| PE | revisado_com_pendencias | 8 | contém Taxas, fonte local sem URL oficial no cabeçalho, texto curto para RICMS/benefícios | Recapturar RICMS/PE, beneficios e atos modificadores com URL oficial, vigencia e hash antes de aprovar analise. |
+| PI | revisado_com_pendencias | 9 | contém IPVA, contém Taxas, fonte local sem URL oficial no cabeçalho | Recapturar RICMS/PI e beneficios de ICMS no portal oficial do Piaui, separando IPVA/Taxas. |
 | PR | publicado_v1 | 8 | sem alerta automatizado | ParanÃƒÂ¡ publicado como pÃƒÂ¡gina profunda: Lei nÃ‚Âº 11.580/1996, RICMS/PR, benefÃƒÂ­cios fiscais de carÃƒÂ¡ter geral, ParanÃƒÂ¡ Competitivo, isenÃƒÂ§ÃƒÂ£o, reduÃƒÂ§ÃƒÂ£o de base, crÃƒÂ©dito presumido, diferimento, ST, documentos, EFD e prova fiscal. |
 | RJ | publicado_v1 | 25 | sem alerta automatizado | Rio de Janeiro publicado como pÃƒÂ¡gina profunda: Lei nÃ‚Âº 2.657/1996, RICMS/RJ, Manual de BenefÃƒÂ­cios, FOT/FEEF, Repetro, tratamento setorial industrial, ST, importaÃƒÂ§ÃƒÂ£o, transporte, veÃƒÂ­culos, combustÃƒÂ­veis, EFD, cBenef/cCredPresumido e prova fiscal. |
 | RN | publicado_v1 | 19 | sem alerta automatizado | RN publicado com RICMS, anexos de isenÃƒÂ§ÃƒÂ£o, diferimento, crÃƒÂ©dito presumido, reduÃƒÂ§ÃƒÂ£o de base, antecipaÃƒÂ§ÃƒÂ£o, ST, PROEDI, FUNDERN, Tax Free, cBenef e matriz LC 160. |
-| RO | aguardando_revisao | 4 | contém IPVA, contém Taxas, escopo dominante incompatível: conteúdo parece tratar de IPVA, não de ICMS, escopo material incompatível com ICMS | Baixar RICMS/RO e benefÃƒÂ­cios no portal oficial de RondÃƒÂ´nia. |
-| RR | aguardando_revisao | 5 | contém IPVA, contém Taxas, fonte local sem URL oficial no cabeçalho, texto curto para RICMS/benefícios | Baixar RICMS/RR e benefÃƒÂ­cios no portal oficial de Roraima. |
+| RO | revisado_escopo_bloqueado | 4 | contém IPVA, contém Taxas, escopo dominante incompatível: conteúdo parece tratar de IPVA, não de ICMS, escopo material incompatível com ICMS | Refazer captura de RICMS/RO e beneficios no portal oficial de Rondonia, removendo IPVA/Taxas da trilha de ICMS. |
+| RR | revisado_com_pendencias | 5 | contém IPVA, contém Taxas, fonte local sem URL oficial no cabeçalho, texto curto para RICMS/benefícios | Recapturar RICMS/RR e beneficios de ICMS no portal oficial de Roraima, saneando anexos de IPVA. |
 | RS | publicado_v1 | 5 | sem alerta automatizado | Rio Grande do Sul publicado como pÃƒÂ¡gina profunda: Decreto nÃ‚Âº 37.699/1997, RICMS/RS integral, AMPARA-RS, importaÃƒÂ§ÃƒÂ£o, crÃƒÂ©dito presumido, diferimento, ST, documentos, EFD e prova fiscal. |
 | SC | publicado_v1 | 8 | sem alerta automatizado | Santa Catarina publicada como pÃƒÂ¡gina profunda: RICMS/SC, Anexo 2 de benefÃƒÂ­cios fiscais, Anexo 3 de substituiÃƒÂ§ÃƒÂ£o tributÃƒÂ¡ria, Anexo 5 de obrigaÃƒÂ§ÃƒÂµes acessÃƒÂ³rias, Anexo 6 de regimes especiais, NF-e e prova fiscal. |
-| SE | aguardando_revisao | 4 | contém IPVA, contém Taxas, fonte local sem URL oficial no cabeçalho, texto curto para RICMS/benefícios | Baixar RICMS/SE e benefÃƒÂ­cios no portal oficial de Sergipe. |
+| SE | revisado_com_pendencias | 4 | contém IPVA, contém Taxas, fonte local sem URL oficial no cabeçalho, texto curto para RICMS/benefícios | Recapturar RICMS/SE, anexos e beneficios de ICMS no portal oficial de Sergipe, separando Taxas/IPVA. |
 | SP | publicado_v1 | 4 | sem alerta automatizado | SÃƒÂ£o Paulo publicado como pÃƒÂ¡gina profunda: Lei nÃ‚Âº 6.374/1989, RICMS/2000 integral, Anexos de isenÃƒÂ§ÃƒÂµes, reduÃƒÂ§ÃƒÂµes e crÃƒÂ©ditos outorgados, substituiÃƒÂ§ÃƒÂ£o tributÃƒÂ¡ria, regimes especiais, cBenef, EFD e prova fiscal. |
-| TO | aguardando_revisao | 2 | contém Taxas, texto curto para RICMS/benefícios | Baixar RICMS/TO e benefÃƒÂ­cios no portal oficial do Tocantins. |
+| TO | revisado_com_pendencias | 2 | contém Taxas, texto curto para RICMS/benefícios | Recapturar beneficios, anexos e atos complementares do Tocantins com URL oficial e validar separadamente do RICMS. |
 
 ## CONFAZ 5 anos
 
 | Familia | Total indexado | Fonte oficial |
 | --- | ---: | --- |
 | Convenios ICMS | 874 | https://www.confaz.fazenda.gov.br/legislacao/convenios |
-| Ajustes SINIEF | 145 | https://www.confaz.fazenda.gov.br/legislacao/ajustes |
+| Ajustes SINIEF | 161 | https://www.confaz.fazenda.gov.br/legislacao/ajustes |
 | Protocolos ICMS | 318 | https://www.confaz.fazenda.gov.br/legislacao/protocolos |

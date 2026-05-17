@@ -10,39 +10,39 @@ Esta auditoria mede qualidade editorial do acervo estadual antes de publicação
 - Documentos estaduais candidatos a ICMS: 225
 - Documentos úteis após teste de escopo: 222
 - Documentos bloqueados por escopo material: 3
-- Estados aguardando revisão para aprovação profunda: 14
+- Estados sem aprovação profunda após auditoria: 14
 
 ## Estados
 
 | UF | Região | Status | Docs | Úteis | Escopo bloqueado | Recomendação | Principais alertas |
 | --- | --- | --- | ---: | ---: | ---: | --- | --- |
-| AC | Norte | aguardando_revisao | 6 | 6 | 0 | bloquear_publicacao_ate_curadoria | contém IPVA, contém ITCMD/ITCD, contém Taxas, fonte local sem URL oficial no cabeçalho, texto curto para RICMS/benefícios |
-| AL | Nordeste | aguardando_revisao | 3 | 3 | 0 | bloquear_publicacao_ate_curadoria | fonte local sem URL oficial no cabeçalho, texto curto para RICMS/benefícios |
-| AM | Norte | aguardando_revisao | 4 | 4 | 0 | bloquear_publicacao_ate_curadoria | categoria não específica de ICMS, contém IPVA, contém ITCMD/ITCD, contém Taxas, fallback amplo |
-| AP | Norte | aguardando_revisao | 7 | 7 | 0 | bloquear_publicacao_ate_curadoria | contém Taxas, fonte local sem URL oficial no cabeçalho, ruído de extração/encoding, texto curto para RICMS/benefícios |
+| AC | Norte | revisado_com_pendencias | 6 | 6 | 0 | bloquear_publicacao_ate_curadoria | contém IPVA, contém ITCMD/ITCD, contém Taxas, fonte local sem URL oficial no cabeçalho, texto curto para RICMS/benefícios |
+| AL | Nordeste | revisado_com_pendencias | 3 | 3 | 0 | bloquear_publicacao_ate_curadoria | fonte local sem URL oficial no cabeçalho, texto curto para RICMS/benefícios |
+| AM | Norte | revisado_com_pendencias | 4 | 4 | 0 | bloquear_publicacao_ate_curadoria | categoria não específica de ICMS, contém IPVA, contém ITCMD/ITCD, contém Taxas, fallback amplo |
+| AP | Norte | revisado_com_pendencias | 7 | 7 | 0 | bloquear_publicacao_ate_curadoria | contém Taxas, fonte local sem URL oficial no cabeçalho, ruído de extração/encoding, texto curto para RICMS/benefícios |
 | BA | Nordeste | publicado_v1 | 15 | 15 | 0 | manter_publicado | sem alerta automatizado |
-| CE | Nordeste | aguardando_revisao | 8 | 8 | 0 | bloquear_publicacao_ate_curadoria | categoria não específica de ICMS, contém IPVA, contém ITCMD/ITCD, contém Taxas, fallback amplo |
+| CE | Nordeste | revisado_com_pendencias | 8 | 8 | 0 | bloquear_publicacao_ate_curadoria | categoria não específica de ICMS, contém IPVA, contém ITCMD/ITCD, contém Taxas, fallback amplo |
 | DF | Centro-Oeste | publicado_v1 | 12 | 12 | 0 | manter_publicado | sem alerta automatizado |
 | ES | Sudeste | publicado_v1 | 7 | 7 | 0 | manter_publicado | sem alerta automatizado |
 | GO | Centro-Oeste | aprovado_v1 | 0 | 0 | 0 | manter_publicado | sem alerta automatizado |
-| MA | Nordeste | aguardando_revisao | 10 | 10 | 0 | bloquear_publicacao_ate_curadoria | contém Taxas, fonte local sem URL oficial no cabeçalho |
+| MA | Nordeste | revisado_com_pendencias | 10 | 10 | 0 | bloquear_publicacao_ate_curadoria | contém Taxas, fonte local sem URL oficial no cabeçalho |
 | MG | Sudeste | publicado_v1 | 10 | 10 | 0 | manter_publicado | sem alerta automatizado |
 | MS | Centro-Oeste | publicado_v1 | 35 | 35 | 0 | manter_publicado | sem alerta automatizado |
 | MT | Centro-Oeste | publicado_v1 | 4 | 4 | 0 | manter_publicado | sem alerta automatizado |
-| PA | Norte | aguardando_revisao | 2 | 0 | 2 | bloquear_publicacao_ate_reclassificar_escopo | categoria não específica de ICMS, contém IPVA, contém ITCMD/ITCD, contém Taxas, escopo material incompatível com ICMS |
-| PB | Nordeste | aguardando_revisao | 1 | 1 | 0 | bloquear_publicacao_ate_curadoria | contém IPVA, contém ITCMD/ITCD, contém Taxas |
-| PE | Nordeste | aguardando_revisao | 8 | 8 | 0 | bloquear_publicacao_ate_curadoria | contém Taxas, fonte local sem URL oficial no cabeçalho, texto curto para RICMS/benefícios |
-| PI | Nordeste | aguardando_revisao | 9 | 9 | 0 | bloquear_publicacao_ate_curadoria | contém IPVA, contém Taxas, fonte local sem URL oficial no cabeçalho |
+| PA | Norte | revisado_escopo_bloqueado | 2 | 0 | 2 | bloquear_publicacao_ate_reclassificar_escopo | categoria não específica de ICMS, contém IPVA, contém ITCMD/ITCD, contém Taxas, escopo material incompatível com ICMS |
+| PB | Nordeste | revisado_com_pendencias | 1 | 1 | 0 | bloquear_publicacao_ate_curadoria | contém IPVA, contém ITCMD/ITCD, contém Taxas |
+| PE | Nordeste | revisado_com_pendencias | 8 | 8 | 0 | bloquear_publicacao_ate_curadoria | contém Taxas, fonte local sem URL oficial no cabeçalho, texto curto para RICMS/benefícios |
+| PI | Nordeste | revisado_com_pendencias | 9 | 9 | 0 | bloquear_publicacao_ate_curadoria | contém IPVA, contém Taxas, fonte local sem URL oficial no cabeçalho |
 | PR | Sul | publicado_v1 | 8 | 8 | 0 | manter_publicado | sem alerta automatizado |
 | RJ | Sudeste | publicado_v1 | 25 | 25 | 0 | manter_publicado | sem alerta automatizado |
 | RN | Nordeste | publicado_v1 | 19 | 19 | 0 | manter_publicado | sem alerta automatizado |
-| RO | Norte | aguardando_revisao | 4 | 3 | 1 | bloquear_publicacao_ate_reclassificar_escopo | contém IPVA, contém Taxas, escopo dominante incompatível: conteúdo parece tratar de IPVA, não de ICMS, escopo material incompatível com ICMS, fonte local sem URL oficial no cabeçalho |
-| RR | Norte | aguardando_revisao | 5 | 5 | 0 | bloquear_publicacao_ate_curadoria | contém IPVA, contém Taxas, fonte local sem URL oficial no cabeçalho, texto curto para RICMS/benefícios |
+| RO | Norte | revisado_escopo_bloqueado | 4 | 3 | 1 | bloquear_publicacao_ate_reclassificar_escopo | contém IPVA, contém Taxas, escopo dominante incompatível: conteúdo parece tratar de IPVA, não de ICMS, escopo material incompatível com ICMS, fonte local sem URL oficial no cabeçalho |
+| RR | Norte | revisado_com_pendencias | 5 | 5 | 0 | bloquear_publicacao_ate_curadoria | contém IPVA, contém Taxas, fonte local sem URL oficial no cabeçalho, texto curto para RICMS/benefícios |
 | RS | Sul | publicado_v1 | 5 | 5 | 0 | manter_publicado | sem alerta automatizado |
 | SC | Sul | publicado_v1 | 8 | 8 | 0 | manter_publicado | sem alerta automatizado |
-| SE | Nordeste | aguardando_revisao | 4 | 4 | 0 | bloquear_publicacao_ate_curadoria | contém IPVA, contém Taxas, fonte local sem URL oficial no cabeçalho, texto curto para RICMS/benefícios |
+| SE | Nordeste | revisado_com_pendencias | 4 | 4 | 0 | bloquear_publicacao_ate_curadoria | contém IPVA, contém Taxas, fonte local sem URL oficial no cabeçalho, texto curto para RICMS/benefícios |
 | SP | Sudeste | publicado_v1 | 4 | 4 | 0 | manter_publicado | sem alerta automatizado |
-| TO | Norte | aguardando_revisao | 2 | 2 | 0 | bloquear_publicacao_ate_curadoria | contém Taxas, texto curto para RICMS/benefícios |
+| TO | Norte | revisado_com_pendencias | 2 | 2 | 0 | bloquear_publicacao_ate_curadoria | contém Taxas, texto curto para RICMS/benefícios |
 
 ## Regra De Leitura Do Resultado
 
@@ -54,4 +54,4 @@ Esta auditoria mede qualidade editorial do acervo estadual antes de publicação
 
 ## Regra Editorial Nova
 
-Estados em `aguardando_revisao` podem ficar publicados para leitura na web, mas não representam conclusão tributária aprovada. Nenhum Estado sai desse selo apenas porque existe arquivo chamado RICMS ou ICMS. A curadoria precisa ler o cabeçalho, os documentos-fonte, o índice interno e amostras do texto. Se um bloco de ICMS estiver falando de Taxas, ele deve ser reclassificado, excluído da trilha de ICMS e substituído por fonte limpa antes de qualquer explicação didática.
+Estados em `revisado_com_pendencias`, `revisado_escopo_bloqueado` ou `aguardando_revisao` podem ficar publicados para leitura na web, mas não representam conclusão tributária aprovada. Nenhum Estado sai desse selo apenas porque existe arquivo chamado RICMS ou ICMS. A curadoria precisa ler o cabeçalho, os documentos-fonte, o índice interno e amostras do texto. Se um bloco de ICMS estiver falando de Taxas, IPVA, ITCMD/ITCD ou outro escopo material incompatível, ele deve ser reclassificado, excluído da trilha de ICMS e substituído por fonte limpa antes de qualquer explicação didática.

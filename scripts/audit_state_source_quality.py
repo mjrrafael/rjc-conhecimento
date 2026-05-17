@@ -7,6 +7,7 @@ import json
 import re
 import sys
 from collections import Counter
+from datetime import date
 from pathlib import Path
 
 
@@ -78,7 +79,7 @@ def audit() -> dict:
     curation = load_curation()
     status_map = curation.get("statuses", {})
     report = {
-        "generated_on": "2026-04-26",
+        "generated_on": date.today().isoformat(),
         "summary": {},
         "states": {},
     }
@@ -190,7 +191,7 @@ def write_markdown(report: dict) -> None:
         f"- Documentos estaduais candidatos a ICMS: {report['summary'].get('docs', 0)}",
         f"- Documentos úteis após teste de escopo: {report['summary'].get('publishable_docs', 0)}",
         f"- Documentos bloqueados por escopo material: {report['summary'].get('scope_blocked_docs', 0)}",
-        f"- Estados aguardando revisão para aprovação profunda: {report['summary'].get('blocked', 0)}",
+        f"- Estados sem aprovação profunda após auditoria: {report['summary'].get('blocked', 0)}",
         "",
         "## Estados",
         "",
@@ -215,7 +216,7 @@ def write_markdown(report: dict) -> None:
         "",
         "## Regra Editorial Nova",
         "",
-        "Estados em `aguardando_revisao` podem ficar publicados para leitura na web, mas não representam conclusão tributária aprovada. Nenhum Estado sai desse selo apenas porque existe arquivo chamado RICMS ou ICMS. A curadoria precisa ler o cabeçalho, os documentos-fonte, o índice interno e amostras do texto. Se um bloco de ICMS estiver falando de Taxas, ele deve ser reclassificado, excluído da trilha de ICMS e substituído por fonte limpa antes de qualquer explicação didática.",
+        "Estados em `revisado_com_pendencias`, `revisado_escopo_bloqueado` ou `aguardando_revisao` podem ficar publicados para leitura na web, mas não representam conclusão tributária aprovada. Nenhum Estado sai desse selo apenas porque existe arquivo chamado RICMS ou ICMS. A curadoria precisa ler o cabeçalho, os documentos-fonte, o índice interno e amostras do texto. Se um bloco de ICMS estiver falando de Taxas, IPVA, ITCMD/ITCD ou outro escopo material incompatível, ele deve ser reclassificado, excluído da trilha de ICMS e substituído por fonte limpa antes de qualquer explicação didática.",
     ])
     OUT_MD.parent.mkdir(parents=True, exist_ok=True)
     OUT_MD.write_text("\n".join(lines) + "\n", encoding="utf-8", newline="\n")

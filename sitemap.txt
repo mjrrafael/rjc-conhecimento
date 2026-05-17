@@ -525,6 +525,7 @@ https://mjrrafael.github.io/rjc-conhecimento/federal/legislacao/atos/lc-70-1991-
 https://mjrrafael.github.io/rjc-conhecimento/federal/legislacao/atos/lei-10637-2002-pis.html
 https://mjrrafael.github.io/rjc-conhecimento/federal/legislacao/atos/lei-10833-2003-cofins.html
 https://mjrrafael.github.io/rjc-conhecimento/federal/legislacao/atos/lei-10865-2004-pis-cofins-importacao.html
+https://mjrrafael.github.io/rjc-conhecimento/federal/legislacao/atos/lei-12546-2011-cprb.html
 https://mjrrafael.github.io/rjc-conhecimento/federal/legislacao/atos/lei-13097-2015-pis-cofins.html
 https://mjrrafael.github.io/rjc-conhecimento/federal/legislacao/atos/lei-15079-2024-csll.html
 https://mjrrafael.github.io/rjc-conhecimento/federal/legislacao/atos/lei-15394-2026-pis-cofins-residuos.html
@@ -567,12 +568,16 @@ https://mjrrafael.github.io/rjc-conhecimento/federal/legislacao/csll/instituicao
 https://mjrrafael.github.io/rjc-conhecimento/federal/legislacao/folha-clt/beneficios-previdenciarios-prova.html
 https://mjrrafael.github.io/rjc-conhecimento/federal/legislacao/folha-clt/contrato-emprego-registro.html
 https://mjrrafael.github.io/rjc-conhecimento/federal/legislacao/folha-clt/custeio-previdenciario.html
+https://mjrrafael.github.io/rjc-conhecimento/federal/legislacao/folha-clt/desoneracao-folha-cprb.html
 https://mjrrafael.github.io/rjc-conhecimento/federal/legislacao/folha-clt/esocial-obrigacoes-digitais.html
+https://mjrrafael.github.io/rjc-conhecimento/federal/legislacao/folha-clt/fap-rat-sat.html
 https://mjrrafael.github.io/rjc-conhecimento/federal/legislacao/folha-clt/fgts-deposito-rescisao.html
 https://mjrrafael.github.io/rjc-conhecimento/federal/legislacao/folha-clt/index.html
 https://mjrrafael.github.io/rjc-conhecimento/federal/legislacao/folha-clt/jornada-descanso-ferias.html
+https://mjrrafael.github.io/rjc-conhecimento/federal/legislacao/folha-clt/retencao-11-cessao-mao-obra.html
 https://mjrrafael.github.io/rjc-conhecimento/federal/legislacao/folha-clt/salario-remuneracao-rescisao.html
 https://mjrrafael.github.io/rjc-conhecimento/federal/legislacao/folha-clt/seguranca-saude-afastamentos.html
+https://mjrrafael.github.io/rjc-conhecimento/federal/legislacao/folha-clt/verbas-indenizatorias-remuneratorias.html
 https://mjrrafael.github.io/rjc-conhecimento/federal/legislacao/index.html
 https://mjrrafael.github.io/rjc-conhecimento/federal/legislacao/iof/atualizacoes-risco.html
 https://mjrrafael.github.io/rjc-conhecimento/federal/legislacao/iof/cambio-seguro.html

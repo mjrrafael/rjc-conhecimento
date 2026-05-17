@@ -1,30 +1,38 @@
 {
-  "updated_on": "2026-04-28",
+  "updated_on": "2026-05-17",
   "policy": "ConteÃƒÂºdo estadual profundo sÃƒÂ³ pode ser publicado quando RICMS, benefÃƒÂ­cios fiscais e fontes oficiais estiverem curados, salvos em texto local e revisados contra portal oficial da UF.",
   "statuses": {
     "AC": {
       "region": "Norte",
-      "status": "aguardando_revisao",
+      "status": "revisado_com_pendencias",
       "publish_deep": false,
-      "next_step": "Baixar RICMS e benefÃƒÂ­cios de ICMS no portal oficial do Acre."
+      "reviewed_on": "2026-05-17",
+      "review_result": "Conteudo predominantemente de ICMS, mas ainda contaminado por IPVA/ITCMD/Taxas e sem URL oficial suficiente no cabecalho local.",
+      "next_step": "Recapturar RICMS, beneficios de ICMS e atos modificadores no portal oficial do Acre, com URL oficial e limpeza de escopo."
     },
     "AL": {
       "region": "Nordeste",
-      "status": "aguardando_revisao",
+      "status": "revisado_com_pendencias",
       "publish_deep": false,
-      "next_step": "Baixar RICMS e benefÃƒÂ­cios de ICMS no portal oficial de Alagoas."
+      "reviewed_on": "2026-05-17",
+      "review_result": "Conteudo util para ICMS/ST, porem curto para RICMS/beneficios e sem URL oficial suficiente no cabecalho local.",
+      "next_step": "Recapturar RICMS, beneficios e ST no portal oficial de Alagoas, com URL oficial, vigencia e hash por fonte."
     },
     "AP": {
       "region": "Norte",
-      "status": "aguardando_revisao",
+      "status": "revisado_com_pendencias",
       "publish_deep": false,
-      "next_step": "Baixar RICMS e benefÃƒÂ­cios de ICMS no portal oficial do AmapÃƒÂ¡."
+      "reviewed_on": "2026-05-17",
+      "review_result": "Conteudo majoritariamente de ICMS, mas com ruido de extracao/encoding, taxas e lacunas de fonte oficial.",
+      "next_step": "Recapturar RICMS, beneficios e anexos do Amapa em fonte oficial limpa antes de aprovar analise profunda."
     },
     "AM": {
       "region": "Norte",
-      "status": "aguardando_revisao",
+      "status": "revisado_com_pendencias",
       "publish_deep": false,
-      "next_step": "Separar CÃƒÂ³digo TributÃƒÂ¡rio, RICMS e benefÃƒÂ­cios; baixar o regulamento vigente do Amazonas."
+      "reviewed_on": "2026-05-17",
+      "review_result": "Base ampla mistura codigo tributario, leis e decretos; ha ICMS, mas tambem IPVA, ITCMD/ITCD e Taxas.",
+      "next_step": "Separar Codigo Tributario, RICMS, beneficios e atos modificadores do Amazonas, mantendo apenas trilha de ICMS nas paginas de ICMS."
     },
     "BA": {
       "region": "Nordeste",
@@ -34,9 +42,11 @@
     },
     "CE": {
       "region": "Nordeste",
-      "status": "aguardando_revisao",
+      "status": "revisado_com_pendencias",
       "publish_deep": false,
-      "next_step": "Baixar RICMS, decretos modificadores e benefÃƒÂ­cios no portal oficial do CearÃƒÂ¡."
+      "reviewed_on": "2026-05-17",
+      "review_result": "Conteudo tributario amplo com sinais de ICMS, mas categorias genericas e contaminacao por IPVA, ITCMD/ITCD e Taxas.",
+      "next_step": "Recapturar RICMS, decretos modificadores e beneficios de ICMS no portal oficial do Ceara, separando escopo nao ICMS."
     },
     "DF": {
       "region": "Centro-Oeste",
@@ -58,9 +68,11 @@
     },
     "MA": {
       "region": "Nordeste",
-      "status": "aguardando_revisao",
+      "status": "revisado_com_pendencias",
       "publish_deep": false,
-      "next_step": "Baixar RICMS/MA e anexos de benefÃƒÂ­cios no portal oficial do MaranhÃƒÂ£o."
+      "reviewed_on": "2026-05-17",
+      "review_result": "Conteudo aproveitavel para ICMS, porem com Taxas e fonte local sem URL oficial suficiente no cabecalho.",
+      "next_step": "Recapturar RICMS/MA, anexos de beneficios e atos modificadores com URL oficial e separar Taxas da trilha de ICMS."
     },
     "MT": {
       "region": "Centro-Oeste",
@@ -82,15 +94,19 @@
     },
     "PA": {
       "region": "Norte",
-      "status": "aguardando_revisao",
+      "status": "revisado_escopo_bloqueado",
       "publish_deep": false,
-      "next_step": "Baixar RICMS/PA e benefÃƒÂ­cios no portal oficial do ParÃƒÂ¡."
+      "reviewed_on": "2026-05-17",
+      "review_result": "Arquivos candidatos foram bloqueados por escopo material incompativel: a trilha marcada como ICMS traz IPVA, ITCMD/ITCD, Taxas ou categoria ampla sem ICMS suficiente.",
+      "next_step": "Refazer captura do Para do zero: RICMS/PA, beneficios de ICMS, aliquotas, ST e documentos no portal oficial da SEFA antes de publicar qualquer conclusao."
     },
     "PB": {
       "region": "Nordeste",
-      "status": "aguardando_revisao",
+      "status": "revisado_com_pendencias",
       "publish_deep": false,
-      "next_step": "Baixar RICMS/PB e benefÃƒÂ­cios no portal oficial da ParaÃƒÂ­ba."
+      "reviewed_on": "2026-05-17",
+      "review_result": "Ha fonte candidata, mas com IPVA, ITCMD/ITCD e Taxas no mesmo escopo; insuficiente para aprovacao profunda.",
+      "next_step": "Recapturar RICMS/PB e beneficios de ICMS no portal oficial da Paraiba, separando tributos nao ICMS."
     },
     "PR": {
       "region": "Sul",
@@ -100,15 +116,19 @@
     },
     "PE": {
       "region": "Nordeste",
-      "status": "aguardando_revisao",
+      "status": "revisado_com_pendencias",
       "publish_deep": false,
-      "next_step": "Baixar RICMS/PE e benefÃƒÂ­cios no portal oficial de Pernambuco."
+      "reviewed_on": "2026-05-17",
+      "review_result": "Conteudo de ICMS/RICMS existe, mas ha Taxas, textos curtos e fonte local sem URL oficial suficiente.",
+      "next_step": "Recapturar RICMS/PE, beneficios e atos modificadores com URL oficial, vigencia e hash antes de aprovar analise."
     },
     "PI": {
       "region": "Nordeste",
-      "status": "aguardando_revisao",
+      "status": "revisado_com_pendencias",
       "publish_deep": false,
-      "next_step": "Baixar RICMS/PI e benefÃƒÂ­cios no portal oficial do PiauÃƒÂ­."
+      "reviewed_on": "2026-05-17",
+      "review_result": "Conteudo aproveitavel para ICMS, mas com IPVA, Taxas e lacunas de URL oficial no cabecalho local.",
+      "next_step": "Recapturar RICMS/PI e beneficios de ICMS no portal oficial do Piaui, separando IPVA/Taxas."
     },
     "RJ": {
       "region": "Sudeste",
@@ -130,15 +150,19 @@
     },
     "RO": {
       "region": "Norte",
-      "status": "aguardando_revisao",
+      "status": "revisado_escopo_bloqueado",
       "publish_deep": false,
-      "next_step": "Baixar RICMS/RO e benefÃƒÂ­cios no portal oficial de RondÃƒÂ´nia."
+      "reviewed_on": "2026-05-17",
+      "review_result": "Ha conteudo de ICMS, mas um bloco foi bloqueado por escopo dominante de IPVA e a base ainda mistura Taxas.",
+      "next_step": "Refazer captura de RICMS/RO e beneficios no portal oficial de Rondonia, removendo IPVA/Taxas da trilha de ICMS."
     },
     "RR": {
       "region": "Norte",
-      "status": "aguardando_revisao",
+      "status": "revisado_com_pendencias",
       "publish_deep": false,
-      "next_step": "Baixar RICMS/RR e benefÃƒÂ­cios no portal oficial de Roraima."
+      "reviewed_on": "2026-05-17",
+      "review_result": "Base inclui RICMS e leis de ICMS, mas tambem IPVA/Taxas e fonte local sem URL oficial suficiente.",
+      "next_step": "Recapturar RICMS/RR e beneficios de ICMS no portal oficial de Roraima, saneando anexos de IPVA."
     },
     "SC": {
       "region": "Sul",
@@ -154,15 +178,19 @@
     },
     "SE": {
       "region": "Nordeste",
-      "status": "aguardando_revisao",
+      "status": "revisado_com_pendencias",
       "publish_deep": false,
-      "next_step": "Baixar RICMS/SE e benefÃƒÂ­cios no portal oficial de Sergipe."
+      "reviewed_on": "2026-05-17",
+      "review_result": "Conteudo de RICMS/ICMS existe, mas com IPVA, Taxas, textos curtos e fonte local sem URL oficial suficiente.",
+      "next_step": "Recapturar RICMS/SE, anexos e beneficios de ICMS no portal oficial de Sergipe, separando Taxas/IPVA."
     },
     "TO": {
       "region": "Norte",
-      "status": "aguardando_revisao",
+      "status": "revisado_com_pendencias",
       "publish_deep": false,
-      "next_step": "Baixar RICMS/TO e benefÃƒÂ­cios no portal oficial do Tocantins."
+      "reviewed_on": "2026-05-17",
+      "review_result": "RICMS/TO esta em tela e parece materialmente ICMS, mas ha Taxas e material curto para beneficios/anexos.",
+      "next_step": "Recapturar beneficios, anexos e atos complementares do Tocantins com URL oficial e validar separadamente do RICMS."
     }
   }
 }

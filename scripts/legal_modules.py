@@ -810,6 +810,14 @@ SOURCE_DEFS: dict[str, dict] = {
         "files": ["Lei_8212_1991_Custeio_Previdencia.txt"],
         "note": "Custeio previdenciario, segurados, empresa, contribuicoes sobre folha, obrigacoes, arrecadacao e prova.",
     },
+    "lei-12546-2011-cprb": {
+        "jurisdiction": "Federal",
+        "title": "Lei 12.546/2011 - CPRB e desoneracao da folha",
+        "short": "Lei 12.546/2011",
+        "url": "https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2011/lei/l12546.htm",
+        "files": ["Lei_12546_2011_CPRB.txt"],
+        "note": "Contribuicao previdenciaria sobre a receita bruta, substituicao de contribuicoes sobre folha, setores, bases, aliquotas e controles.",
+    },
     "lei-8213-1991-beneficios": {
         "jurisdiction": "Federal",
         "title": "Lei 8.213/1991 - Planos de Beneficios da Previdencia Social",
@@ -1235,6 +1243,7 @@ LEGAL_MODULES: list[dict] = [
         "sources": [
             "clt-1943",
             "lei-8212-1991-custeio",
+            "lei-12546-2011-cprb",
             "lei-8213-1991-beneficios",
             "decreto-3048-1999-rps",
             "lei-8036-1990-fgts",
@@ -1272,6 +1281,16 @@ LEGAL_MODULES: list[dict] = [
                 ],
             },
             {
+                "id": "verbas-indenizatorias-remuneratorias",
+                "title": "Verbas indenizatorias x remuneratorias",
+                "summary": "Natureza da verba, salario-de-contribuicao, reflexos de FGTS, IRRF, eSocial e prova da rubrica.",
+                "refs": [{"source": "clt-1943", "ranges": [(457, 458)]}, {"source": "lei-8212-1991-custeio", "ranges": [(28, 28)]}],
+                "analysis": [
+                    "A pergunta nao e o nome da rubrica; e a natureza juridica do pagamento. Verba remuneratoria, indenizatoria, ajuda de custo, premio, diaria, abono e ressarcimento mudam reflexos trabalhistas, previdenciarios, FGTS, IRRF e eSocial.",
+                    "O dossie minimo deve mostrar contrato, politica interna, fato gerador da rubrica, criterio de calculo, incidencia parametrizada, evento transmitido e conciliacao com DCTFWeb, FGTS Digital e contabilidade.",
+                ],
+            },
+            {
                 "id": "seguranca-saude-afastamentos",
                 "title": "Seguranca, saude, acidente e afastamentos",
                 "summary": "Normas de protecao, acidente do trabalho, CAT, estabilidade e reflexos na folha.",
@@ -1289,6 +1308,36 @@ LEGAL_MODULES: list[dict] = [
                 "analysis": [
                     "A contribuicao previdenciaria nasce da remuneracao paga, devida ou creditada, mas a base depende da natureza juridica da verba. Por isso rubrica e incidencia precisam ser governadas juntas.",
                     "O fechamento forte concilia folha, eSocial, DCTFWeb, DARF, contabilidade, retenções e demonstrativo por estabelecimento, lotacao e categoria.",
+                ],
+            },
+            {
+                "id": "fap-rat-sat",
+                "title": "FAP, RAT/SAT e risco ambiental do trabalho",
+                "summary": "Enquadramento de risco, adicional por atividade, FAP, nexo acidentario e efeito no custo previdenciario.",
+                "refs": [{"source": "lei-8212-1991-custeio", "ranges": [(22, 22)]}, {"source": "decreto-3048-1999-rps", "ranges": [(202, 203)]}],
+                "analysis": [
+                    "FAP e RAT nao sao detalhe da guia: eles ligam atividade economica, ambiente de trabalho, historico acidentario e custeio previdenciario. A folha precisa conversar com CNAE, laudos, eventos de SST, CAT, afastamentos e contestacoes.",
+                    "A auditoria deve reconstruir periodo, estabelecimento, alíquota RAT, multiplicador FAP, base da folha, eventos de SST e memoria que levou o valor para DCTFWeb.",
+                ],
+            },
+            {
+                "id": "retencao-11-cessao-mao-obra",
+                "title": "Retencao de 11% na cessao de mao de obra",
+                "summary": "Retencao previdenciaria em nota fiscal/fatura, cessao de mao de obra, empreitada, responsavel e compensacao.",
+                "refs": [{"source": "lei-8212-1991-custeio", "ranges": [(31, 33)]}, {"source": "decreto-3048-1999-rps", "ranges": [(219, 220)]}],
+                "analysis": [
+                    "A retencao de 11% nasce fora da folha mensal comum, mas fecha dentro do mesmo ecossistema: contrato, nota, servico, cessao de mao de obra ou empreitada, tomador, prestador, EFD-Reinf, DCTFWeb e compensacao.",
+                    "O erro comum e tratar toda prestacao de servico como retencao automatica, ou deixar de reter quando o contrato colocou trabalhadores a disposicao do tomador. A prova deve separar objeto contratual, local, supervisao, nota, base e recolhimento.",
+                ],
+            },
+            {
+                "id": "desoneracao-folha-cprb",
+                "title": "Desoneracao da folha e CPRB",
+                "summary": "Contribuicao sobre receita bruta, substituicao das contribuicoes patronais, setores, base, aliquota e controle por periodo.",
+                "refs": [{"source": "lei-12546-2011-cprb", "ranges": [(7, 9)]}],
+                "analysis": [
+                    "CPRB nao e reducao generica de encargo. Ela substitui contribuicoes previdenciarias patronais em hipoteses legais delimitadas por setor, receita, periodo, regras de exclusao da base e convivencia com atividades nao abrangidas.",
+                    "A revisao precisa bater CNAE/atividade real, receita bruta, exclusoes, aliquota aplicavel, periodo, memoria de segregacao, DCTFWeb/EFD-Reinf quando aplicavel e conciliacao contabil.",
                 ],
             },
             {
@@ -1758,6 +1807,12 @@ TOPIC_CHAPTER_LINKS = {
         ("Cofins: instituicao e receita", "cofins", "instituicao-receita"),
         ("Cofins: nao cumulatividade e creditos", "cofins", "nao-cumulativo-creditos"),
     ],
+    "folha-clt-previdencia": [
+        ("Folha: verbas indenizatorias x remuneratorias", "folha-clt", "verbas-indenizatorias-remuneratorias"),
+        ("Folha: FAP, RAT/SAT e risco", "folha-clt", "fap-rat-sat"),
+        ("Folha: retencao de 11% na cessao de mao de obra", "folha-clt", "retencao-11-cessao-mao-obra"),
+        ("Folha: desoneracao e CPRB", "folha-clt", "desoneracao-folha-cprb"),
+    ],
 }
 
 THEME_TO_MODULES = {
@@ -1850,12 +1905,16 @@ SIGNAL_CHAPTER_MAP = {
         "efd/sped": ["compensacao-controles"],
     },
     "folha-clt": {
-        "aliquota": ["custeio-previdenciario"],
-        "regime especial": ["esocial-obrigacoes-digitais"],
-        "efd/sped": ["esocial-obrigacoes-digitais"],
-        "isencao": ["custeio-previdenciario"],
+        "aliquota": ["custeio-previdenciario", "fap-rat-sat", "desoneracao-folha-cprb"],
+        "regime especial": ["desoneracao-folha-cprb", "esocial-obrigacoes-digitais"],
+        "efd/sped": ["esocial-obrigacoes-digitais", "retencao-11-cessao-mao-obra"],
+        "isencao": ["verbas-indenizatorias-remuneratorias", "custeio-previdenciario"],
         "suspensao": ["beneficios-previdenciarios-prova"],
         "protege/fundo": ["fgts-deposito-rescisao"],
+        "retencao": ["retencao-11-cessao-mao-obra"],
+        "cprb": ["desoneracao-folha-cprb"],
+        "rat": ["fap-rat-sat"],
+        "fap": ["fap-rat-sat"],
     },
     "reforma-tributaria": {
         "aliquota": ["base-aliquotas-transicao", "aliquotas-padrao-documentos-fiscais", "base-creditos-recolhimento-split-regulamento", "regimes-diferenciados-beneficios"],
@@ -2415,20 +2474,33 @@ def render_source_body_for_ref(source: dict, source_data: dict, source_id: str, 
     return body, count
 
 
-def render_analysis(chapter: dict) -> str:
+def render_analysis(module: dict, chapter: dict) -> str:
     points = "".join(f"<p>{escape(item)}</p>" for item in chapter.get("analysis", []))
-    return f"""
-<section class="analysis-panel" id="analise">
-  <span class="eyebrow">Depois da lei</span>
-  <h2>Leitura didatica e aplicacao</h2>
-  <p>Os comentarios abaixo partem do texto legal exibido acima. A aplicacao concreta deve voltar ao artigo citado e ao link oficial do ato antes de entrar no ERP, no fechamento ou em parecer.</p>
-  {points}
+    if module.get("id") == "folha-clt":
+        department_grid = """
+  <div class="department-grid compact">
+    <article><strong>DP/RH</strong><span>Confere vinculo, jornada, rubrica, afastamento, rescisao, laudo e evento trabalhista.</span></article>
+    <article><strong>Fiscal previdenciario</strong><span>Valida incidencia, salario-de-contribuicao, FAP/RAT, retencao, CPRB, DCTFWeb e EFD-Reinf.</span></article>
+    <article><strong>Financeiro</strong><span>Confere DARF, FGTS Digital, retencoes, comprovantes, caixa e conciliacao com a folha.</span></article>
+    <article><strong>Auditoria</strong><span>Fecha o dossie: lei, contrato, ponto, rubrica, recibo, evento, guia, memoria e evidencia.</span></article>
+  </div>
+"""
+    else:
+        department_grid = """
   <div class="department-grid compact">
     <article><strong>Fiscal</strong><span>Transforma o artigo em CST, CFOP, base, aliquota, beneficio e documento.</span></article>
     <article><strong>Contabil</strong><span>Leva a regra para receita, custo, credito, provisao, conta e conciliacao.</span></article>
     <article><strong>Financeiro</strong><span>Confere vencimento, DARF/guia, retencao, caixa, comprovante e contrato.</span></article>
     <article><strong>Auditoria</strong><span>Fecha o dossie: lei, XML, declaracao, memoria, contrato e evidencia.</span></article>
   </div>
+"""
+    return f"""
+<section class="analysis-panel" id="analise">
+  <span class="eyebrow">Depois da lei</span>
+  <h2>Leitura didatica e aplicacao</h2>
+  <p>Os comentarios abaixo partem do texto legal exibido acima. A aplicacao concreta deve voltar ao artigo citado e ao link oficial do ato antes de entrar no ERP, no fechamento ou em parecer.</p>
+  {points}
+  {department_grid}
 </section>
 """
 
@@ -2443,12 +2515,17 @@ def render_module_study_path(module: dict, current_path: str) -> str:
   <small>{escape(chapter['summary'])}</small>
 </a>
 """)
+    intro = (
+        "Use esta trilha como auditoria de folha: comece pelo vínculo e pela jornada, classifique rubricas, confira custeio previdenciário, FGTS, eSocial, DCTFWeb, EFD-Reinf, FAP/RAT, retenções e CPRB."
+        if module.get("id") == "folha-clt"
+        else "Use esta trilha como aula: entenda a regra matriz, passe por base, aliquota e regime, depois feche beneficios, obrigacoes, prova e fiscalizacao."
+    )
     return f"""
 <section class="study-path" aria-label="Roteiro de estudo">
   <div class="section-heading">
     <span class="eyebrow">Roteiro de estudo</span>
     <h2>Ordem recomendada de leitura</h2>
-    <p>Use esta trilha como aula: entenda a regra matriz, passe por base, aliquota e regime, depois feche beneficios, obrigacoes, prova e fiscalizacao.</p>
+    <p>{escape(intro)}</p>
   </div>
   <div class="study-step-grid">{''.join(steps)}</div>
 </section>
@@ -2554,7 +2631,7 @@ def render_chapter_page(module: dict, chapter: dict, sources: dict, layout_func)
   </aside>
   <div class="law-reader-main">
     {''.join(source_blocks)}
-    {render_analysis(chapter)}
+    {render_analysis(module, chapter)}
     {render_chapter_flow(module, chapter, path, "continuar-capitulo")}
   </div>
 </section>

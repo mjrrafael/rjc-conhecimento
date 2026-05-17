@@ -33,6 +33,8 @@ from state_legal_pages import (
     rel_href,
     source_path,
     state_curation,
+    state_review_label,
+    state_review_suffix,
     state_has_legal_pack,
     state_legal_search_entries,
     state_legislation_teaser,
@@ -720,9 +722,9 @@ def state_card_markup(state: dict, data: dict) -> str:
     elif state_has_legal_pack(state["uf"]):
         status = "ICMS em tela publicado"
     elif inv.get("file_count", 0):
-        status = "Aguardando revisão"
+        status = state_review_label(state["uf"])
     else:
-        status = "Aguardando revisão"
+        status = state_review_label(state["uf"])
     coverage = (
         "RICMS, leis, anexos e benefícios em tela"
         if state_has_legal_pack(state["uf"])
@@ -750,8 +752,8 @@ def state_queue_card(state: dict, current_path: str) -> str:
     next_step = curation.get("next_step", "Curadoria fonte-a-fonte pendente.")
     portal = STATE_OFFICIAL_PORTALS.get(uf, "")
     deep = state_has_legal_pack(uf)
-    status_label = "Publicado em profundidade" if deep else "Aguardando revisão"
-    status_class = "is-ready" if deep else "is-pending"
+    status_label = "Publicado em profundidade" if deep else state_review_label(uf)
+    status_class = "is-ready" if deep else ("is-blocked" if status == "revisado_escopo_bloqueado" else "is-pending")
     page_href = local_state_href(uf)
     portal_link = (
         f'<a href="{escape(portal)}" target="_blank" rel="noopener">portal oficial</a>'
@@ -781,6 +783,7 @@ def state_expansion_queue(data: dict) -> str:
     states_by_uf = {state["uf"]: state for state in data["states"]}
     published = [uf for _region_id, _label, ufs in STATE_REGIONS for uf in ufs if uf in states_by_uf and state_has_legal_pack(uf)]
     pending = [uf for _region_id, _label, ufs in STATE_REGIONS for uf in ufs if uf in states_by_uf and not state_has_legal_pack(uf)]
+    reviewed = [uf for uf in pending if state_curation(uf).get("status", "").startswith("revisado")]
     region_blocks = []
     for region_id, label, ufs in STATE_REGIONS:
         cards = [
@@ -805,7 +808,7 @@ def state_expansion_queue(data: dict) -> str:
   <div class="section-heading">
     <span class="eyebrow">Esteira editorial</span>
     <h2>O que já está profundo e o que ainda exige curadoria</h2>
-    <p>{fmt_num(len(published))} UFs têm legislação em tela por capítulos. {fmt_num(len(pending))} UFs estão abertas para leitura na web como aguardando revisão, até que RICMS, benefícios, atos modificadores e fonte oficial limpa sejam conferidos.</p>
+    <p>{fmt_num(len(published))} UFs têm legislação em tela por capítulos. {fmt_num(len(reviewed))} UFs foram revisadas criticamente e seguem abertas para leitura, sem aprovação profunda, até que RICMS, benefícios, atos modificadores e fonte oficial limpa sejam conferidos.</p>
   </div>
   <div class="continuity">
     <h2>Estados profundos publicados</h2>
@@ -839,7 +842,7 @@ def state_source_audit_page(data: dict) -> str:
         docs = item.get("documents", [])
         local_docs = {doc["file"]: doc for doc in collect_state_documents(uf)} if uf != "GO" else {}
         flags = item.get("flags") or ["sem alerta automatizado"]
-        state_status = "publicado" if item.get("publish_deep") or uf == "GO" else "aguardando revisão"
+        state_status = "publicado" if item.get("publish_deep") or uf == "GO" else state_review_label(uf)
         doc_rows = []
         for doc in docs:
             local_doc = local_docs.get(doc.get("file", ""))
@@ -862,7 +865,7 @@ def state_source_audit_page(data: dict) -> str:
 """)
         state_index = index_path(uf) if local_docs else state_href(uf)
         states_html.append(f"""
-<details class="source-audit-state searchable-card" {'open' if state_status == 'aguardando revisão' else ''}>
+<details class="source-audit-state searchable-card" {'open' if not (item.get('publish_deep') or uf == 'GO') else ''}>
   <summary>
     <strong>{escape(uf)} · {escape(item.get('estado', uf))}</strong>
     <span>{escape(state_status)} · {fmt_num(int(item.get('document_count', 0)))} documentos · {escape('; '.join(flags[:4]))}</span>
@@ -878,19 +881,19 @@ def state_source_audit_page(data: dict) -> str:
     body = f"""
 <section class="hero-panel legal-hero">
   <div>
-    <span class="eyebrow">Estados · aguardando revisão</span>
+    <span class="eyebrow">Estados · revisão crítica</span>
     <h1>Auditoria fonte a fonte</h1>
     <p>Use esta página como bancada de revisão: abra a fonte em tela, compare com o portal oficial e só então aprove a análise estadual profunda.</p>
   </div>
   <aside class="hero-proof">
     <strong>Escopo auditado</strong>
-    <p>{fmt_num(int(summary.get('states', 0)))} UFs · {fmt_num(int(summary.get('docs', 0)))} documentos candidatos · {fmt_num(int(summary.get('blocked', 0)))} UFs aguardando revisão</p>
+    <p>{fmt_num(int(summary.get('states', 0)))} UFs · {fmt_num(int(summary.get('docs', 0)))} documentos candidatos · {fmt_num(int(summary.get('blocked', 0)))} UFs sem aprovação profunda</p>
   </aside>
 </section>
 <section class="law-ledger">
-  <div><h2>Como usar</h2><p>Estados marcados como aguardando revisão podem ser lidos na web, mas ainda não devem ser usados como conclusão operacional.</p></div>
+  <div><h2>Como usar</h2><p>Estados revisados com pendências podem ser lidos na web, mas ainda não devem ser usados como conclusão operacional.</p></div>
   <div><h2>O que conferir</h2><p>Escopo ICMS, RICMS vigente, anexos de benefícios, atos modificadores, fonte oficial, ruído de extração e contaminação por outros tributos.</p></div>
-  <div><h2>Depois da aprovação</h2><p>O Estado sai do selo aguardando revisão e entra no padrão profundo: lei em tela, análise, aplicação, prova e riscos.</p></div>
+  <div><h2>Depois da aprovação</h2><p>O Estado sai do selo de revisão com pendências e entra no padrão profundo: lei em tela, análise, aplicação, prova e riscos.</p></div>
 </section>
 <section class="section-wrap source-audit-list">
   <div class="section-heading">
@@ -908,6 +911,9 @@ def state_curation_panel(uf: str) -> str:
     name = STATE_DISPLAY_NAMES.get(uf, uf)
     curation = state_curation(uf)
     next_step = curation.get("next_step", "Curadoria fonte-a-fonte pendente.")
+    label = state_review_label(uf)
+    reviewed_on = curation.get("reviewed_on", "")
+    reviewed_note = f" Revisão crítica registrada em {reviewed_on}." if reviewed_on else ""
     portal = STATE_OFFICIAL_PORTALS.get(uf, "")
     portal_html = (
         f'<a href="{escape(portal)}" target="_blank" rel="noopener">Abrir portal oficial da Secretaria da Fazenda</a>'
@@ -917,14 +923,14 @@ def state_curation_panel(uf: str) -> str:
     return f"""
 <section class="content-block state-curation-panel searchable-card"
          data-search="{escape(uf + ' ' + name + ' curadoria ICMS RICMS beneficios fiscais fonte oficial')}">
-  <span class="eyebrow">Aguardando revisão</span>
-  <h2>Como revisar este Estado na web</h2>
-  <p>{escape(next_step)}</p>
+  <span class="eyebrow">{escape(label)}</span>
+  <h2>Como continuar a revisão deste Estado</h2>
+  <p>{escape(next_step + reviewed_note)}</p>
   <div class="department-grid">
     <article><strong>1. Ler na web</strong><span>Abrir o índice estadual, fontes em tela e capítulos candidatos.</span></article>
     <article><strong>2. Conferir fonte</strong><span>Comparar Lei do ICMS, RICMS, anexos e decretos com o portal oficial.</span></article>
     <article><strong>3. Separar benefício</strong><span>Isenções, reduções, créditos, diferimentos, regimes, fundos, programas e matriz LC 160/CONFAZ.</span></article>
-    <article><strong>4. Aprovar depois</strong><span>Só após revisão a página deixa de exibir o selo aguardando revisão.</span></article>
+    <article><strong>4. Aprovar depois</strong><span>Só após fonte limpa e escopo ICMS comprovado a página deixa o selo de pendência.</span></article>
   </div>
   <div class="continuity compact">
     <h2>Fonte de partida</h2>
@@ -1068,6 +1074,74 @@ def signal_grid(signals: dict, title: str, intro: str, current_path: str = "", t
   <div class="signal-grid">{cards}</div>
 </section>
 {signal_sections(items, current_path, theme_key)}
+"""
+
+
+FOLHA_STUDY_CARDS = [
+    (
+        "Contrato e registro",
+        "A relação de emprego, registro, função, salário, admissão e eventos não periódicos.",
+        "federal/legislacao/folha-clt/contrato-emprego-registro.html",
+    ),
+    (
+        "Jornada e férias",
+        "Ponto, escala, horas extras, intervalo, descanso, férias e reflexo na remuneração.",
+        "federal/legislacao/folha-clt/jornada-descanso-ferias.html",
+    ),
+    (
+        "Verbas e incidências",
+        "Separação entre verba remuneratória e indenizatória, rubrica, eSocial, FGTS, IRRF e previdência.",
+        "federal/legislacao/folha-clt/verbas-indenizatorias-remuneratorias.html",
+    ),
+    (
+        "Custeio previdenciário",
+        "Salário-de-contribuição, segurados, empresa, retenções, arrecadação e DCTFWeb.",
+        "federal/legislacao/folha-clt/custeio-previdenciario.html",
+    ),
+    (
+        "FAP e RAT/SAT",
+        "Risco ambiental do trabalho, FAP, SST, CAT, afastamentos e efeito no custo previdenciário.",
+        "federal/legislacao/folha-clt/fap-rat-sat.html",
+    ),
+    (
+        "Retenção de 11%",
+        "Cessão de mão de obra, empreitada, nota fiscal, EFD-Reinf, DCTFWeb e compensação.",
+        "federal/legislacao/folha-clt/retencao-11-cessao-mao-obra.html",
+    ),
+    (
+        "Desoneração e CPRB",
+        "Contribuição sobre receita bruta, setores, base, alíquota, segregação e período de aplicação.",
+        "federal/legislacao/folha-clt/desoneracao-folha-cprb.html",
+    ),
+    (
+        "eSocial e FGTS Digital",
+        "Eventos, rubricas, fechamento, FGTS, DCTFWeb, EFD-Reinf, recibos e prova mensal.",
+        "federal/legislacao/folha-clt/esocial-obrigacoes-digitais.html",
+    ),
+]
+
+
+def folha_study_grid(current_path: str) -> str:
+    cards = "".join(
+        f"""
+<a class="signal-card searchable-card" href="{escape(rel_href(current_path, href))}"
+   data-search="{escape('Folha CLT previdencia eSocial FGTS DCTFWeb Reinf ' + title + ' ' + summary)}">
+  <strong>{escape(title)}</strong>
+  <span>{escape(summary)}</span>
+  <small>Abrir capítulo</small>
+</a>
+"""
+        for title, summary, href in FOLHA_STUDY_CARDS
+    )
+    return f"""
+<section class="signal-panel">
+  <div class="section-heading">
+    <span class="eyebrow">Índice de estudo</span>
+    <h2>Capítulos trabalhistas-tributários</h2>
+    <p>A trilha de Folha/CLT agora fica restrita a vínculo, rubrica, custeio previdenciário, FGTS, eSocial, DCTFWeb, EFD-Reinf, FAP/RAT, retenção e CPRB.</p>
+  </div>
+  <div class="signal-grid">{cards}</div>
+</section>
 """
 
 
@@ -1418,6 +1492,8 @@ def status_badge(status: str) -> str:
     klass = "review-pill"
     if status in {"publicado_v1", "aprovado_v1"}:
         klass += " approved"
+    elif status.startswith("revisado"):
+        klass += " warning"
     elif status in {"a_estruturar", "sem_status"}:
         klass += " danger"
     return f'<span class="{klass}">{escape(label)}</span>'
@@ -1456,11 +1532,11 @@ def source_audit_index_page(data: dict) -> str:
   <div><strong>{fmt_num(summary.get('registered_sources', 0))}</strong><span>fontes registradas</span></div>
   <div><strong>{fmt_num(summary.get('federal_requirements', 0))}</strong><span>temas federais essenciais</span></div>
   <div><strong>{fmt_num(summary.get('states_deep', 0))}</strong><span>Estados profundos</span></div>
-  <div><strong>{fmt_num(summary.get('states_waiting_review', 0))}</strong><span>Estados aguardando revisao</span></div>
+  <div><strong>{fmt_num(summary.get('states_reviewed_with_pendencies', 0))}</strong><span>Estados revisados sem aprovação profunda</span></div>
 </section>
 <section class="content-block">
   <h2>Como ler esta auditoria</h2>
-  <p>Esta pagina nao e parecer. Ela mostra onde o portal ja possui lei em tela, onde existe fonte local pronta para virar capitulo, e onde o conteudo ainda deve permanecer como aguardando revisao.</p>
+  <p>Esta pagina nao e parecer. Ela mostra onde o portal ja possui lei em tela, onde existe fonte local pronta para virar capitulo, e onde o conteudo foi revisado mas ainda deve permanecer sem aprovacao profunda.</p>
   <p>Uma conclusao tributaria so sai do estado de revisao quando o dispositivo legal, a fonte oficial, a vigencia, o documento de prova e a leitura contraditoria estiverem amarrados.</p>
 </section>
 <section class="section-wrap">
@@ -2077,6 +2153,11 @@ def federal_inventory_sections(data: dict, themes: list[str], verified_on: str, 
         docs = theme.get("documents", [])
         analysis = FEDERAL_ANALYSIS.get(key, FEDERAL_ANALYSIS["geral"])
         law = ""
+        study_grid = (
+            folha_study_grid(current_path)
+            if key == "previdencia_folha"
+            else signal_grid(theme.get('signals', {}), 'Capítulos temáticos do tema', 'Abra cada assunto como aula: conceito, lei em tela, interpretação, prova documental e risco de aplicação.', current_path, key)
+        )
         blocks.append(f"""
 <section class="law-ledger">
   {inventory_badge(FEDERAL_THEME_LABELS.get(key, key), '11/04/2026', verified_on)}
@@ -2095,7 +2176,7 @@ def federal_inventory_sections(data: dict, themes: list[str], verified_on: str, 
   <p>{escape(analysis[1])}</p>
 </section>
 {law}
-{signal_grid(theme.get('signals', {}), 'Capítulos temáticos do tema', 'Abra cada assunto como aula: conceito, lei em tela, interpretação, prova documental e risco de aplicação.', current_path, key)}
+{study_grid}
 """)
     return "".join(blocks)
 
@@ -2337,7 +2418,7 @@ def state_page(state: dict, data: dict) -> str:
     has_pack = state_has_legal_pack(state["uf"])
     if not inv.get("file_count", 0) and not has_pack:
         body = f"""
-{hero(f'{display_name}: ICMS e benefícios fiscais', 'Página estadual aberta como aguardando revisão, para leitura pública e conferência fonte a fonte antes da aprovação profunda.', state["uf"])}
+{hero(f'{display_name}: ICMS e benefícios fiscais', f'Página estadual {state_review_suffix(state["uf"])}, para leitura pública e conferência fonte a fonte antes da aprovação profunda.', state["uf"])}
 {state_legislation_teaser(state["uf"], path)}
 {state_curation_panel(state["uf"])}
 <section class="continuity">
@@ -2668,11 +2749,11 @@ def state_page(state: dict, data: dict) -> str:
 """
         return layout(path, f'{display_name}: ICMS e benefícios fiscais', "ICMS estadual em tela por UF.", body, "estados")
     body = f"""
-{hero(f'{display_name}: ICMS e benefícios fiscais', 'Página estadual aberta como aguardando revisão: RICMS, benefícios, alíquotas, ST, atos infralegais e prova podem ser lidos na web antes da aprovação profunda.', state["uf"])}
+{hero(f'{display_name}: ICMS e benefícios fiscais', f'Página estadual {state_review_suffix(state["uf"])}: RICMS, benefícios, alíquotas, ST, atos infralegais e prova podem ser lidos na web antes da aprovação profunda.', state["uf"])}
 <section class="law-ledger">
   <div>
     <h2>Estado do estudo</h2>
-    <p>Página estadual aguardando revisão. O material disponível deve ser lido como bancada de conferência, não como conclusão tributária aprovada.</p>
+    <p>Página estadual revisada criticamente, mas ainda sem aprovação profunda. O material disponível deve ser lido como bancada de conferência, não como conclusão tributária aprovada.</p>
   </div>
   <div>
     <h2>Primeira pergunta</h2>
@@ -3160,7 +3241,7 @@ def search_index(data: dict) -> str:
                 if state["uf"] == "GO"
                 else "Página estadual com legislação de ICMS em tela, benefícios, documento e prova."
                 if state_has_legal_pack(state["uf"])
-                else "Página estadual aberta como aguardando revisão, com material de ICMS, benefícios, documento e prova para leitura na web."
+                else f"Página estadual {state_review_suffix(state['uf'])}, com material de ICMS, benefícios, documento e prova para leitura na web."
             ),
             "tags": f'{state["uf"]} {state["name"]} {state_display_name(state)} ICMS beneficios fiscais RICMS ' + " ".join(inventory_state(data, state["uf"]).get("categories", []))
         }

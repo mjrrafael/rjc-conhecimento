@@ -304,8 +304,13 @@ def audit_content_pages() -> list[str]:
             continue
         if not state_is_deep_published(uf):
             review_html = read_page(state_index_path(uf))
-            if review_html and "aguardando revisão" not in review_html.lower():
-                errors.append(f"{uf}: pagina de revisao existe sem selo aguardando revisao")
+            review_tokens = (
+                "aguardando revis",
+                "revisado com pend",
+                "revisado: escopo bloqueado",
+            )
+            if review_html and not any(token in review_html.lower() for token in review_tokens):
+                errors.append(f"{uf}: pagina de revisao existe sem selo editorial reconhecido")
             continue
         docs = collect_state_documents(uf)
         if not docs:

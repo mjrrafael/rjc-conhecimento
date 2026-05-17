@@ -2895,8 +2895,24 @@ def state_is_reviewing(uf: str) -> bool:
     return uf != "GO" and not state_is_deep_published(uf)
 
 
+def state_review_label(uf: str) -> str:
+    if not state_is_reviewing(uf):
+        return "Publicado em profundidade"
+    status = state_curation(uf).get("status", "")
+    labels = {
+        "revisado_com_pendencias": "Revisado com pendências",
+        "revisado_escopo_bloqueado": "Revisado: escopo bloqueado",
+        "aguardando_revisao": "Aguardando revisão",
+    }
+    return labels.get(status, status.replace("_", " ").strip().capitalize() or "Aguardando revisão")
+
+
+def state_review_suffix(uf: str) -> str:
+    return state_review_label(uf).lower()
+
+
 def review_suffix(uf: str) -> str:
-    return " (aguardando revisão)" if state_is_reviewing(uf) else ""
+    return f" ({state_review_suffix(uf)})" if state_is_reviewing(uf) else ""
 
 
 def doc_review_flags(doc: dict) -> list[str]:
@@ -2915,16 +2931,19 @@ def state_review_notice(uf: str, current_path: str, doc: dict | None = None) -> 
     if not state_is_reviewing(uf):
         return ""
     name = STATE_NAMES.get(uf, uf)
+    label = state_review_label(uf)
+    reviewed_on = state_curation(uf).get("reviewed_on", "")
+    review_text = f" Revisão crítica registrada em {reviewed_on}." if reviewed_on else ""
     flags = doc_review_flags(doc) if doc else []
     flag_html = ""
     if flags:
         flag_html = "<p><strong>Pontos de revisão:</strong> " + escape("; ".join(flags[:6])) + ".</p>"
     return f"""
 <section class="content-block review-notice searchable-card"
-         data-search="{escape(uf + ' ' + name + ' aguardando revisão curadoria fonte ICMS benefícios fiscais')}">
-  <span class="eyebrow">Aguardando revisão</span>
-  <h2>Publicado para leitura, ainda não para conclusão</h2>
-  <p>Esta página foi aberta na web para facilitar a auditoria do conteúdo. Leia a legislação em tela, compare com o portal oficial do Estado e trate qualquer aplicação prática como pendente até a revisão fonte a fonte.</p>
+         data-search="{escape(uf + ' ' + name + ' ' + label + ' curadoria fonte ICMS benefícios fiscais revisão crítica')}">
+  <span class="eyebrow">{escape(label)}</span>
+  <h2>Revisado para leitura, ainda não aprovado como conclusão</h2>
+  <p>Esta página foi reprocessada para leitura humana e auditoria crítica. Leia a legislação em tela, compare com o portal oficial do Estado e trate qualquer aplicação prática como pendente até que fonte, escopo, vigência e texto legal estejam limpos.{escape(review_text)}</p>
   {flag_html}
   <div class="signal-law-links">
     <strong>Conferência</strong>
@@ -2943,7 +2962,7 @@ def render_doc_links(current_path: str, uf: str, docs: list[dict]) -> str:
         return '<p class="empty-note">Não há texto de ICMS selecionado para este tema nesta remessa.</p>'
     links = []
     for doc in docs:
-        badge = '<em class="review-pill">aguardando revisão</em>' if state_is_reviewing(uf) else ""
+        badge = f'<em class="review-pill">{escape(state_review_suffix(uf))}</em>' if state_is_reviewing(uf) else ""
         flags = doc_review_flags(doc)
         flag_text = f"; revisão: {'; '.join(flags[:3])}" if flags else ""
         links.append(f"""
@@ -4821,11 +4840,11 @@ def render_index_page(uf: str, docs: list[dict], layout_func) -> str:
     name = STATE_NAMES.get(uf, uf)
     current = index_path(uf)
     reviewing = state_is_reviewing(uf)
-    status_label = f"{uf} · aguardando revisão" if reviewing else uf
+    status_label = f"{uf} · {state_review_suffix(uf)}" if reviewing else uf
     title_suffix = review_suffix(uf)
-    source_title = "Material em revisão" if reviewing else "Fonte pública"
+    source_title = "Material revisado com ressalvas" if reviewing else "Fonte pública"
     source_text = (
-        "Textos abertos para leitura e conferência na web. A aplicação prática depende de revisão contra o portal oficial do Estado."
+        "Textos abertos para leitura e conferência na web. A aplicação prática depende de nova checagem contra o portal oficial do Estado."
         if reviewing
         else "Texto extraído dos atos oficiais baixados dos portais estaduais. O link do portal do ente fica indicado em cada página."
     )
@@ -4955,9 +4974,9 @@ def render_source_page(uf: str, doc: dict, layout_func) -> str:
     name = STATE_NAMES.get(uf, uf)
     current = source_path(uf, doc)
     title_suffix = review_suffix(uf)
-    file_status = "Arquivo aguardando revisão" if state_is_reviewing(uf) else "Arquivo publicado"
+    file_status = f"Arquivo {state_review_suffix(uf)}" if state_is_reviewing(uf) else "Arquivo publicado"
     intro = (
-        "Texto integral em tela para leitura e revisão pública de ICMS. A aplicação prática depende da conferência da fonte."
+        "Texto integral em tela para leitura humana e revisão pública de ICMS. A aplicação prática depende da conferência crítica da fonte."
         if state_is_reviewing(uf)
         else "Texto integral em tela para leitura, estudo, prova e conferência operacional de ICMS."
     )
@@ -5108,8 +5127,10 @@ def state_legislation_teaser(uf: str, current_path: str) -> str:
             step = state_curation(uf).get("next_step", "Curadoria fonte-a-fonte pendente.")
             docs = collect_state_documents(uf)
             if docs:
+                label = state_review_label(uf)
+                suffix = state_review_suffix(uf)
                 links = [
-                    (f"{STATE_NAMES.get(uf, uf)}: índice aguardando revisão", index_path(uf)),
+                    (f"{STATE_NAMES.get(uf, uf)}: índice {suffix}", index_path(uf)),
                     ("ICMS completo", group_path(uf, "icms")),
                     ("benefícios fiscais", group_path(uf, "beneficios")),
                     ("alíquotas e base", group_path(uf, "aliquotas")),
@@ -5122,10 +5143,10 @@ def state_legislation_teaser(uf: str, current_path: str) -> str:
                 )
                 return f"""
 <section class="continuity legal-continuity">
-  <h2>Legislação em tela (aguardando revisão)</h2>
-  <p>O material candidato deste Estado foi publicado para leitura na web. Use como bancada de auditoria: leia, compare com a fonte oficial e só depois transforme em conclusão aplicada.</p>
+  <h2>Legislação em tela ({escape(suffix)})</h2>
+  <p>O material candidato deste Estado foi revisado para leitura na web, mas continua sem aprovação profunda. Use como bancada de auditoria: leia, compare com a fonte oficial e só depois transforme em conclusão aplicada.</p>
   <div>{rendered}</div>
-  <p>{escape(step)}</p>
+  <p><strong>{escape(label)}.</strong> {escape(step)}</p>
 </section>
 """
             manifest = state_source_manifest(uf)
@@ -5443,14 +5464,14 @@ def state_legal_search_entries(data: dict) -> list[dict[str, str]]:
             "title": f"{name}: legislação de ICMS em tela{title_suffix}",
             "url": index_path(uf),
             "summary": f"RICMS, leis, anexos, benefícios fiscais, alíquotas, ST e prova documental de {name}.",
-            "tags": f"{uf} {name} ICMS RICMS benefícios fiscais alíquotas ST aguardando revisão",
+            "tags": f"{uf} {name} ICMS RICMS benefícios fiscais alíquotas ST {state_review_suffix(uf)}",
         })
         for group in GROUP_DEFS:
             entries.append({
                 "title": f"{name}: {group['title']}{title_suffix}",
                 "url": group_path(uf, group["id"]),
                 "summary": group["summary"],
-                "tags": f"{uf} {name} {group['title']} ICMS benefícios fiscais aguardando revisão",
+                "tags": f"{uf} {name} {group['title']} ICMS benefícios fiscais {state_review_suffix(uf)}",
             })
         beneficios_group = group_by_id("beneficios")
         for result in benefit_sector_results(group_docs(docs, beneficios_group)):
