@@ -22,7 +22,7 @@ ROOT = Path(__file__).resolve().parents[1]
 BD_ROOT = Path(os.environ.get("RJC_BD_LEGISLACAO", r"C:\Users\kris2\OneDrive\COWORK\BD_LEGISLACAO"))
 FEDERAL_ROOT = BD_ROOT / "#FEDERAIS-COMPILADO-ONLINE" / "legislacao_txt_completa"
 REPO_SOURCE_ROOT = ROOT / "data" / "legal_sources"
-UPDATED_ON = "17/05/2026"
+UPDATED_ON = "18/05/2026"
 
 
 def slug(value: str) -> str:
@@ -784,6 +784,24 @@ SOURCE_DEFS: dict[str, dict] = {
         "url": "https://appasp.economia.go.gov.br/legislacao/arquivos/Rcte/Anexos/ANEXO_09_Beneficio_Fiscal.htm",
         "fetch_url": "https://appasp.economia.go.gov.br/legislacao/arquivos/Rcte/Anexos/ANEXO_09_Beneficio_Fiscal.htm",
         "note": "Isencoes, reducoes, creditos outorgados, condicionantes e beneficios goianos.",
+    },
+    "decreto-go-10904-2026-anexo-ix-transmissao-energia": {
+        "jurisdiction": "GO",
+        "title": "Decreto GO 10.904/2026 - Anexo IX do RCTE/GO - linhas de transmissao",
+        "short": "Decreto GO 10.904/2026",
+        "url": "https://goias.gov.br/economia/wp-content/uploads/sites/45/2026/05/D_10904.doc",
+        "repo_files": ["data/legal_sources/goias/Decreto_GO_10904_2026_Anexo_IX_Transmissao_Energia.txt"],
+        "render": "full_text",
+        "note": "Altera o Anexo IX do RCTE/GO para tratar de beneficio em entradas de mercadorias e bens destinados a obras de linhas de transmissao de energia eletrica, nos termos do Convenio ICMS 30/2025.",
+    },
+    "decreto-go-10905-2026-anexo-ix-biogas-biometano": {
+        "jurisdiction": "GO",
+        "title": "Decreto GO 10.905/2026 - Anexo IX do RCTE/GO - biogas e biometano",
+        "short": "Decreto GO 10.905/2026",
+        "url": "https://goias.gov.br/economia/wp-content/uploads/sites/45/2026/05/D_10905.doc",
+        "repo_files": ["data/legal_sources/goias/Decreto_GO_10905_2026_Anexo_IX_Biogas_Biometano.txt"],
+        "render": "full_text",
+        "note": "Altera o Anexo IX do RCTE/GO com regras de credito especial de investimento para unidades industriais de biogas e biometano e termo de acordo de regime especial.",
     },
     "in-1518-2022-cbenef-go": {
         "jurisdiction": "GO",
@@ -1686,7 +1704,13 @@ LEGAL_MODULES: list[dict] = [
         "title": "Goias: ICMS e beneficios fiscais em tela",
         "summary": "RCTE, Anexo IX, cBenef, isencoes, reducoes, creditos outorgados, PROTEGE, ST e prova documental.",
         "legacy": "estados/goias.html",
-        "sources": ["rcte-go", "anexo-ix-go", "in-1518-2022-cbenef-go"],
+        "sources": [
+            "rcte-go",
+            "anexo-ix-go",
+            "decreto-go-10904-2026-anexo-ix-transmissao-energia",
+            "decreto-go-10905-2026-anexo-ix-biogas-biometano",
+            "in-1518-2022-cbenef-go",
+        ],
         "chapters": [
             {
                 "id": "icms-regra-geral",
@@ -1746,6 +1770,26 @@ LEGAL_MODULES: list[dict] = [
                 "analysis": [
                     "Credito outorgado e tecnica de apuracao, nao credito livre. O valor nasce da lei e precisa obedecer limite, condicao e eventual fundo.",
                     "Guarde ato concessivo, memoria, comprovantes, EFD, recolhimentos e demonstracao de que o beneficio nao foi acumulado indevidamente.",
+                ],
+            },
+            {
+                "id": "transmissao-energia-anexo-ix-2026",
+                "title": "Linhas de transmissao de energia: Decreto 10.904/2026",
+                "summary": "Reducao de base em entradas destinadas a obras de instalacao e construcao de linhas de transmissao.",
+                "refs": [{"source": "decreto-go-10904-2026-anexo-ix-transmissao-energia", "full_text": True}],
+                "analysis": [
+                    "O Decreto 10.904/2026 altera expressamente o Anexo IX do RCTE/GO para operacoes de entrada de mercadorias e bens destinados a obras de linhas de transmissao de energia eletrica.",
+                    "A aplicacao exige conferir origem da mercadoria, existencia de similar nacional quando houver importacao, percentuais do inciso, substituicao de creditos e eventual desistencia de discussao administrativa ou judicial.",
+                ],
+            },
+            {
+                "id": "biogas-biometano-investimento-2026",
+                "title": "Biogas e biometano: credito especial de investimento",
+                "summary": "Credito especial de investimento, TARE e limites para unidades industriais de biogas e biometano.",
+                "refs": [{"source": "decreto-go-10905-2026-anexo-ix-biogas-biometano", "full_text": True}],
+                "analysis": [
+                    "O Decreto 10.905/2026 altera o Anexo IX para disciplinar credito especial de investimento vinculado a unidade industrial de biogas e biometano.",
+                    "A fruicao depende de regime especial, limites, controles de investimento e memoria que conecte ato concessivo, apuracao, EFD, recolhimentos e eventual interdependencia entre estabelecimentos.",
                 ],
             },
             {
@@ -1832,12 +1876,12 @@ THEME_TO_MODULES = {
 SIGNAL_CHAPTER_MAP = {
     "goias": {
         "aliquota": ["base-aliquota-apuracao", "reducao-base"],
-        "reducao de base": ["reducao-base"],
+        "reducao de base": ["reducao-base", "transmissao-energia-anexo-ix-2026"],
         "isencao": ["isencoes"],
-        "credito outorgado": ["credito-outorgado"],
+        "credito outorgado": ["credito-outorgado", "biogas-biometano-investimento-2026"],
         "diferimento": ["diferimento-st"],
         "substituicao tributaria": ["diferimento-st"],
-        "regime especial": ["beneficios-regra-maior", "credito-outorgado"],
+        "regime especial": ["beneficios-regra-maior", "credito-outorgado", "biogas-biometano-investimento-2026"],
         "protege/fundo": ["beneficios-regra-maior", "credito-outorgado"],
         "cBenef": ["cbenef-prova"],
         "efd/sped": ["cbenef-prova"],

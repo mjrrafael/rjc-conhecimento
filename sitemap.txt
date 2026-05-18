@@ -148,10 +148,13 @@ https://mjrrafael.github.io/rjc-conhecimento/estados/es/legislacao/mapa-revisado
 https://mjrrafael.github.io/rjc-conhecimento/estados/es/legislacao/st-antecipacao-segmentos.html
 https://mjrrafael.github.io/rjc-conhecimento/estados/goias.html
 https://mjrrafael.github.io/rjc-conhecimento/estados/goias/legislacao/atos/anexo-ix-go.html
+https://mjrrafael.github.io/rjc-conhecimento/estados/goias/legislacao/atos/decreto-go-10904-2026-anexo-ix-transmissao-energia.html
+https://mjrrafael.github.io/rjc-conhecimento/estados/goias/legislacao/atos/decreto-go-10905-2026-anexo-ix-biogas-biometano.html
 https://mjrrafael.github.io/rjc-conhecimento/estados/goias/legislacao/atos/in-1518-2022-cbenef-go.html
 https://mjrrafael.github.io/rjc-conhecimento/estados/goias/legislacao/atos/rcte-go.html
 https://mjrrafael.github.io/rjc-conhecimento/estados/goias/legislacao/base-aliquota-apuracao.html
 https://mjrrafael.github.io/rjc-conhecimento/estados/goias/legislacao/beneficios-regra-maior.html
+https://mjrrafael.github.io/rjc-conhecimento/estados/goias/legislacao/biogas-biometano-investimento-2026.html
 https://mjrrafael.github.io/rjc-conhecimento/estados/goias/legislacao/cbenef-prova.html
 https://mjrrafael.github.io/rjc-conhecimento/estados/goias/legislacao/credito-outorgado.html
 https://mjrrafael.github.io/rjc-conhecimento/estados/goias/legislacao/diferimento-st.html
@@ -159,6 +162,7 @@ https://mjrrafael.github.io/rjc-conhecimento/estados/goias/legislacao/icms-regra
 https://mjrrafael.github.io/rjc-conhecimento/estados/goias/legislacao/index.html
 https://mjrrafael.github.io/rjc-conhecimento/estados/goias/legislacao/isencoes.html
 https://mjrrafael.github.io/rjc-conhecimento/estados/goias/legislacao/reducao-base.html
+https://mjrrafael.github.io/rjc-conhecimento/estados/goias/legislacao/transmissao-energia-anexo-ix-2026.html
 https://mjrrafael.github.io/rjc-conhecimento/estados/index.html
 https://mjrrafael.github.io/rjc-conhecimento/estados/ma.html
 https://mjrrafael.github.io/rjc-conhecimento/estados/ma/legislacao/aliquotas.html

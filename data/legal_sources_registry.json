@@ -1,6 +1,6 @@
 {
   "schema": "rjc-legal-sources-v1",
-  "updated_on": "17/05/2026",
+  "updated_on": "18/05/2026",
   "editorial_rule": "Cada tese publicada deve apontar o ato oficial, manter o texto em tela e registrar o caminho de continuidade por tema.",
   "change_protocol": [
     "adicionar ou atualizar a fonte em scripts/legal_modules.py",
@@ -97,7 +97,8 @@
             "contrato-emprego-registro",
             "jornada-descanso-ferias",
             "salario-remuneracao-rescisao",
-            "seguranca-saude-afastamentos"
+            "seguranca-saude-afastamentos",
+            "verbas-indenizatorias-remuneratorias"
           ]
         }
       ]
@@ -162,7 +163,9 @@
           "module_title": "Folha e CLT: legislacao em tela",
           "chapters": [
             "beneficios-previdenciarios-prova",
-            "custeio-previdenciario"
+            "custeio-previdenciario",
+            "fap-rat-sat",
+            "retencao-11-cessao-mao-obra"
           ]
         }
       ]
@@ -224,6 +227,68 @@
           "module_title": "Folha e CLT: legislacao em tela",
           "chapters": [
             "esocial-obrigacoes-digitais"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "decreto-go-10904-2026-anexo-ix-transmissao-energia",
+      "jurisdiction": "GO",
+      "title": "Decreto GO 10.904/2026 - Anexo IX do RCTE/GO - linhas de transmissao",
+      "short": "Decreto GO 10.904/2026",
+      "official_url": "https://goias.gov.br/economia/wp-content/uploads/sites/45/2026/05/D_10904.doc",
+      "storage": {
+        "type": "repo_text",
+        "files": [],
+        "repo_files": [
+          "data/legal_sources/goias/Decreto_GO_10904_2026_Anexo_IX_Transmissao_Energia.txt"
+        ],
+        "sha256": {
+          "data/legal_sources/goias/Decreto_GO_10904_2026_Anexo_IX_Transmissao_Energia.txt": "c9ef7ab5abe79f22039b34b5358712e1d093de078b809c4b08c113bf3aea6f63"
+        },
+        "fetch_url": ""
+      },
+      "note": "Altera o Anexo IX do RCTE/GO para tratar de beneficio em entradas de mercadorias e bens destinados a obras de linhas de transmissao de energia eletrica, nos termos do Convenio ICMS 30/2025.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "goias",
+          "module_title": "Goias: ICMS e beneficios fiscais em tela",
+          "chapters": [
+            "transmissao-energia-anexo-ix-2026"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "decreto-go-10905-2026-anexo-ix-biogas-biometano",
+      "jurisdiction": "GO",
+      "title": "Decreto GO 10.905/2026 - Anexo IX do RCTE/GO - biogas e biometano",
+      "short": "Decreto GO 10.905/2026",
+      "official_url": "https://goias.gov.br/economia/wp-content/uploads/sites/45/2026/05/D_10905.doc",
+      "storage": {
+        "type": "repo_text",
+        "files": [],
+        "repo_files": [
+          "data/legal_sources/goias/Decreto_GO_10905_2026_Anexo_IX_Biogas_Biometano.txt"
+        ],
+        "sha256": {
+          "data/legal_sources/goias/Decreto_GO_10905_2026_Anexo_IX_Biogas_Biometano.txt": "26084ad69999fe753efe624f829f819aaee0fec59eae60f7ec3ae97881117aac"
+        },
+        "fetch_url": ""
+      },
+      "note": "Altera o Anexo IX do RCTE/GO com regras de credito especial de investimento para unidades industriais de biogas e biometano e termo de acordo de regime especial.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "goias",
+          "module_title": "Goias: ICMS e beneficios fiscais em tela",
+          "chapters": [
+            "biogas-biometano-investimento-2026"
           ]
         }
       ]
@@ -662,6 +727,37 @@
       ]
     },
     {
+      "source_id": "lei-12546-2011-cprb",
+      "jurisdiction": "Federal",
+      "title": "Lei 12.546/2011 - CPRB e desoneracao da folha",
+      "short": "Lei 12.546/2011",
+      "official_url": "https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2011/lei/l12546.htm",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "Lei_12546_2011_CPRB.txt"
+        ],
+        "repo_files": [],
+        "sha256": {
+          "Lei_12546_2011_CPRB.txt": "338ac21e85d00335ac2669d0d50746d842477563261afaddbaf61ca973ca4951"
+        },
+        "fetch_url": ""
+      },
+      "note": "Contribuicao previdenciaria sobre a receita bruta, substituicao de contribuicoes sobre folha, setores, bases, aliquotas e controles.",
+      "render": "articles",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "folha-clt",
+          "module_title": "Folha e CLT: legislacao em tela",
+          "chapters": [
+            "desoneracao-folha-cprb"
+          ]
+        }
+      ]
+    },
+    {
       "source_id": "lei-13097-2015-pis-cofins",
       "jurisdiction": "Federal",
       "title": "Lei 13.097/2015 - Reducoes a zero e regimes setoriais",
@@ -916,7 +1012,10 @@
           "module_title": "Folha e CLT: legislacao em tela",
           "chapters": [
             "custeio-previdenciario",
-            "esocial-obrigacoes-digitais"
+            "esocial-obrigacoes-digitais",
+            "fap-rat-sat",
+            "retencao-11-cessao-mao-obra",
+            "verbas-indenizatorias-remuneratorias"
           ]
         }
       ]

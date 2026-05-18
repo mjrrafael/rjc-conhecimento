@@ -759,7 +759,7 @@ window.RJC_SEARCH = [
     "title": "Goias: ICMS e beneficios fiscais em tela",
     "url": "estados/goias/legislacao/index.html",
     "summary": "RCTE, Anexo IX, cBenef, isencoes, reducoes, creditos outorgados, PROTEGE, ST e prova documental.",
-    "tags": "GO goias rcte-go anexo-ix-go in-1518-2022-cbenef-go"
+    "tags": "GO goias rcte-go anexo-ix-go decreto-go-10904-2026-anexo-ix-transmissao-energia decreto-go-10905-2026-anexo-ix-biogas-biometano in-1518-2022-cbenef-go"
   },
   {
     "title": "Goias: ICMS e beneficios fiscais em tela - ICMS: incidencia, fato gerador e contribuinte",
@@ -796,6 +796,18 @@ window.RJC_SEARCH = [
     "url": "estados/goias/legislacao/credito-outorgado.html",
     "summary": "Creditos presumidos/outorgados e contrapartidas.",
     "tags": "goias credito-outorgado Credito outorgado, programas e PROTEGE"
+  },
+  {
+    "title": "Goias: ICMS e beneficios fiscais em tela - Linhas de transmissao de energia: Decreto 10.904/2026",
+    "url": "estados/goias/legislacao/transmissao-energia-anexo-ix-2026.html",
+    "summary": "Reducao de base em entradas destinadas a obras de instalacao e construcao de linhas de transmissao.",
+    "tags": "goias transmissao-energia-anexo-ix-2026 Linhas de transmissao de energia: Decreto 10.904/2026"
+  },
+  {
+    "title": "Goias: ICMS e beneficios fiscais em tela - Biogas e biometano: credito especial de investimento",
+    "url": "estados/goias/legislacao/biogas-biometano-investimento-2026.html",
+    "summary": "Credito especial de investimento, TARE e limites para unidades industriais de biogas e biometano.",
+    "tags": "goias biogas-biometano-investimento-2026 Biogas e biometano: credito especial de investimento"
   },
   {
     "title": "Goias: ICMS e beneficios fiscais em tela - Diferimento, substituicao tributaria e regimes",
@@ -1054,6 +1066,18 @@ window.RJC_SEARCH = [
     "url": "estados/goias/legislacao/atos/anexo-ix-go.html",
     "summary": "Isencoes, reducoes, creditos outorgados, condicionantes e beneficios goianos.",
     "tags": "anexo-ix-go GO Anexo IX"
+  },
+  {
+    "title": "Decreto GO 10.904/2026 - Anexo IX do RCTE/GO - linhas de transmissao",
+    "url": "estados/goias/legislacao/atos/decreto-go-10904-2026-anexo-ix-transmissao-energia.html",
+    "summary": "Altera o Anexo IX do RCTE/GO para tratar de beneficio em entradas de mercadorias e bens destinados a obras de linhas de transmissao de energia eletrica, nos termos do Convenio ICMS 30/2025.",
+    "tags": "decreto-go-10904-2026-anexo-ix-transmissao-energia GO Decreto GO 10.904/2026"
+  },
+  {
+    "title": "Decreto GO 10.905/2026 - Anexo IX do RCTE/GO - biogas e biometano",
+    "url": "estados/goias/legislacao/atos/decreto-go-10905-2026-anexo-ix-biogas-biometano.html",
+    "summary": "Altera o Anexo IX do RCTE/GO com regras de credito especial de investimento para unidades industriais de biogas e biometano e termo de acordo de regime especial.",
+    "tags": "decreto-go-10905-2026-anexo-ix-biogas-biometano GO Decreto GO 10.905/2026"
   },
   {
     "title": "IN 1.518/2022-GSE - Codigo de Beneficio Fiscal em Goias",
