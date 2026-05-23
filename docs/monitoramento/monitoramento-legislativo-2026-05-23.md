@@ -82,6 +82,7 @@ Relatorios salvos:
 
 - `docs/monitoramento/portal-monitor-2026-05-23.md`
 - `docs/monitoramento/portal-monitor-2026-05-23-pos-atualizacao.md`
+- `docs/monitoramento/portal-monitor-2026-05-23-final.md`
 
 ## Pendencias reais
 
@@ -90,4 +91,3 @@ Relatorios salvos:
 - Capturar ato normativo completo da Bahia sobre parcelamento da Liquida Bahia 2026 antes de publicar qualquer regra.
 - Recapturar/curar AC antes de publicar efeito operacional do Decreto 11.888/2026.
 - Validar indexacao real no Search Console; a auditoria confirma indexabilidade e acesso tecnico, nao indexacao efetiva.
-
