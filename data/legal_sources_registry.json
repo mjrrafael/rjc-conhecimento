@@ -1,6 +1,6 @@
 {
   "schema": "rjc-legal-sources-v1",
-  "updated_on": "18/05/2026",
+  "updated_on": "23/05/2026",
   "editorial_rule": "Cada tese publicada deve apontar o ato oficial, manter o texto em tela e registrar o caminho de continuidade por tema.",
   "change_protocol": [
     "adicionar ou atualizar a fonte em scripts/legal_modules.py",
@@ -2507,6 +2507,36 @@
           "chapters": [
             "documentos-efd-prova",
             "mapa-revisado-beneficios"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-df-df-lc-1068-2026-devedor-contumaz",
+      "jurisdiction": "DF",
+      "title": "Lei Complementar nº 1.068/2026 - devedor contumaz de ICMS",
+      "short": "ICMS - fiscalização, devedor contumaz e regime especial",
+      "official_url": "https://www.sinj.df.gov.br/sinj/Norma/1cd1e9da5d464be4b22ffc0ca173e58b/LC_1068_2026.html",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "data/fontes-estaduais-curadas/centro-oeste/DF/DF_LC_1068_2026_DEVEDOR_CONTUMAZ_2026-05-23.txt"
+        ],
+        "sha256": {
+          "DF_LC_1068_2026_DEVEDOR_CONTUMAZ_2026-05-23.txt": "dbc7306540fdbc0a2c65c3338c57684edd52ba64d345f9234764f88199e57765"
+        },
+        "fetch_url": "https://www.sinj.df.gov.br/sinj/Norma/1cd1e9da5d464be4b22ffc0ca173e58b/LC_1068_2026.html"
+      },
+      "note": "Texto estadual de ICMS publicado em estados/df/legislacao/fontes/df-lc-1068-2026-devedor-contumaz.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-df",
+          "module_title": "Distrito Federal: ICMS e benefícios fiscais em tela",
+          "chapters": [
+            "fiscalizacao-riscos"
           ]
         }
       ]
@@ -6496,6 +6526,36 @@
             "documentos-efd-prova",
             "mapa-revisado-beneficios",
             "fiscalizacao-riscos"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "state-sp-sp-portaria-sre-24-2026-iva-st-eletronicos",
+      "jurisdiction": "SP",
+      "title": "Portaria SRE nº 24/2026 - IVA-ST de eletrônicos, eletroeletrônicos e eletrodomésticos",
+      "short": "ICMS - substituição tributária e IVA-ST",
+      "official_url": "https://legislacao.fazenda.sp.gov.br/Paginas/Portaria-SRE-24-de-2026.aspx",
+      "storage": {
+        "type": "local_text",
+        "files": [
+          "data/fontes-estaduais-curadas/sudeste/SP/SP_PORTARIA_SRE_24_2026_IVA_ST_ELETRONICOS_2026-05-23.txt"
+        ],
+        "sha256": {
+          "SP_PORTARIA_SRE_24_2026_IVA_ST_ELETRONICOS_2026-05-23.txt": "6c23a92d919b7a346f3f01aaf295fa900d73cbbfe089c9ea948dd7911f7428e7"
+        },
+        "fetch_url": "https://legislacao.fazenda.sp.gov.br/Paginas/Portaria-SRE-24-de-2026.aspx"
+      },
+      "note": "Texto estadual de ICMS publicado em estados/sp/legislacao/fontes/sp-portaria-sre-24-2026-iva-st-eletronicos.html.",
+      "render": "full_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "state-sp",
+          "module_title": "São Paulo: ICMS e benefícios fiscais em tela",
+          "chapters": [
+            "st-antecipacao-segmentos"
           ]
         }
       ]

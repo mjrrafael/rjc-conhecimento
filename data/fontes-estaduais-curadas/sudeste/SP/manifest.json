@@ -27,6 +27,16 @@
       "caracteres": 4435135
     },
     {
+      "id": "SP_PORTARIA_SRE_24_2026_IVA_ST_ELETRONICOS",
+      "titulo": "Portaria SRE nº 24/2026 - IVA-ST de eletrônicos, eletroeletrônicos e eletrodomésticos",
+      "tema": "ICMS - substituição tributária e IVA-ST",
+      "tipo": "portaria",
+      "url": "https://legislacao.fazenda.sp.gov.br/Paginas/Portaria-SRE-24-de-2026.aspx",
+      "arquivo": "SP_PORTARIA_SRE_24_2026_IVA_ST_ELETRONICOS_2026-05-23.txt",
+      "sha256": "6c23a92d919b7a346f3f01aaf295fa900d73cbbfe089c9ea948dd7911f7428e7",
+      "caracteres": 2764
+    },
+    {
       "id": "SP_PORTARIA_SRE_70_2025_CBENEF",
       "titulo": "Portaria SRE n. 70/2025 - cBenef nos documentos fiscais eletrônicos",
       "tema": "Obrigações acessórias e documentos",

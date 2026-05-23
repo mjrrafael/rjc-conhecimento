@@ -7,8 +7,8 @@ Esta auditoria mede qualidade editorial do acervo estadual antes de publicação
 ## Resumo
 
 - Estados avaliados: 27
-- Documentos estaduais candidatos a ICMS: 225
-- Documentos úteis após teste de escopo: 222
+- Documentos estaduais candidatos a ICMS: 227
+- Documentos úteis após teste de escopo: 224
 - Documentos bloqueados por escopo material: 3
 - Estados sem aprovação profunda após auditoria: 14
 
@@ -22,7 +22,7 @@ Esta auditoria mede qualidade editorial do acervo estadual antes de publicação
 | AP | Norte | revisado_com_pendencias | 7 | 7 | 0 | bloquear_publicacao_ate_curadoria | contém Taxas, fonte local sem URL oficial no cabeçalho, ruído de extração/encoding, texto curto para RICMS/benefícios |
 | BA | Nordeste | publicado_v1 | 15 | 15 | 0 | manter_publicado | sem alerta automatizado |
 | CE | Nordeste | revisado_com_pendencias | 8 | 8 | 0 | bloquear_publicacao_ate_curadoria | categoria não específica de ICMS, contém IPVA, contém ITCMD/ITCD, contém Taxas, fallback amplo |
-| DF | Centro-Oeste | publicado_v1 | 12 | 12 | 0 | manter_publicado | sem alerta automatizado |
+| DF | Centro-Oeste | publicado_v1 | 13 | 13 | 0 | manter_publicado | sem alerta automatizado |
 | ES | Sudeste | publicado_v1 | 7 | 7 | 0 | manter_publicado | sem alerta automatizado |
 | GO | Centro-Oeste | aprovado_v1 | 0 | 0 | 0 | manter_publicado | sem alerta automatizado |
 | MA | Nordeste | revisado_com_pendencias | 10 | 10 | 0 | bloquear_publicacao_ate_curadoria | contém Taxas, fonte local sem URL oficial no cabeçalho |
@@ -41,7 +41,7 @@ Esta auditoria mede qualidade editorial do acervo estadual antes de publicação
 | RS | Sul | publicado_v1 | 5 | 5 | 0 | manter_publicado | sem alerta automatizado |
 | SC | Sul | publicado_v1 | 8 | 8 | 0 | manter_publicado | sem alerta automatizado |
 | SE | Nordeste | revisado_com_pendencias | 4 | 4 | 0 | bloquear_publicacao_ate_curadoria | contém IPVA, contém Taxas, fonte local sem URL oficial no cabeçalho, texto curto para RICMS/benefícios |
-| SP | Sudeste | publicado_v1 | 4 | 4 | 0 | manter_publicado | sem alerta automatizado |
+| SP | Sudeste | publicado_v1 | 5 | 5 | 0 | manter_publicado | sem alerta automatizado |
 | TO | Norte | revisado_com_pendencias | 2 | 2 | 0 | bloquear_publicacao_ate_curadoria | contém Taxas, texto curto para RICMS/benefícios |
 
 ## Regra De Leitura Do Resultado

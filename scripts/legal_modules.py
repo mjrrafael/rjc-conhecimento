@@ -11,6 +11,7 @@ from __future__ import annotations
 
 import os
 import re
+import time
 import unicodedata
 from html import escape
 from html.parser import HTMLParser
@@ -22,7 +23,7 @@ ROOT = Path(__file__).resolve().parents[1]
 BD_ROOT = Path(os.environ.get("RJC_BD_LEGISLACAO", r"C:\Users\kris2\OneDrive\COWORK\BD_LEGISLACAO"))
 FEDERAL_ROOT = BD_ROOT / "#FEDERAIS-COMPILADO-ONLINE" / "legislacao_txt_completa"
 REPO_SOURCE_ROOT = ROOT / "data" / "legal_sources"
-UPDATED_ON = "18/05/2026"
+UPDATED_ON = "23/05/2026"
 
 
 def slug(value: str) -> str:
@@ -103,11 +104,25 @@ def html_to_text(raw: bytes, content_type: str = "") -> str:
 
 
 def fetch_public_text(url: str) -> str:
-    request = Request(url, headers={"User-Agent": "Mozilla/5.0 RJC-Conhecimento/1.0"})
-    with urlopen(request, timeout=120) as response:
-        raw = response.read()
-        content_type = response.headers.get("Content-Type", "")
-    return html_to_text(raw, content_type)
+    last_error: Exception | None = None
+    for attempt in range(1, 4):
+        request = Request(
+            url,
+            headers={
+                "User-Agent": "Mozilla/5.0 RJC-Conhecimento/1.0",
+                "Accept-Language": "pt-BR,pt;q=0.9",
+                "Connection": "close",
+            },
+        )
+        try:
+            with urlopen(request, timeout=240) as response:
+                raw = response.read()
+                content_type = response.headers.get("Content-Type", "")
+            return html_to_text(raw, content_type)
+        except Exception as error:
+            last_error = error
+            time.sleep(attempt * 2)
+    raise RuntimeError(f"Falha ao buscar fonte publica: {url}") from last_error
 
 
 def read_local_text(files: list[str]) -> str:

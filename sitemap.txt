@@ -118,6 +118,7 @@ https://mjrrafael.github.io/rjc-conhecimento/estados/df/legislacao/fontes/df-dec
 https://mjrrafael.github.io/rjc-conhecimento/estados/df/legislacao/fontes/df-dec-39803-2019-empregadf.html
 https://mjrrafael.github.io/rjc-conhecimento/estados/df/legislacao/fontes/df-dec-45287-2023-alho-credito-outorgado.html
 https://mjrrafael.github.io/rjc-conhecimento/estados/df/legislacao/fontes/df-dec-46900-2025-prodf-desenvolvedf.html
+https://mjrrafael.github.io/rjc-conhecimento/estados/df/legislacao/fontes/df-lc-1068-2026-devedor-contumaz.html
 https://mjrrafael.github.io/rjc-conhecimento/estados/df/legislacao/fontes/df-lei-1254-1996-icms.html
 https://mjrrafael.github.io/rjc-conhecimento/estados/df/legislacao/fontes/df-lei-3196-2003-prodf-ii.html
 https://mjrrafael.github.io/rjc-conhecimento/estados/df/legislacao/fontes/df-lei-3266-2003-prodf-ii-complementar.html
@@ -486,6 +487,7 @@ https://mjrrafael.github.io/rjc-conhecimento/estados/sp/legislacao/documentos-ef
 https://mjrrafael.github.io/rjc-conhecimento/estados/sp/legislacao/fiscalizacao-riscos.html
 https://mjrrafael.github.io/rjc-conhecimento/estados/sp/legislacao/fontes/sp-lei-6374-1989-icms.html
 https://mjrrafael.github.io/rjc-conhecimento/estados/sp/legislacao/fontes/sp-portal-cbenef-nfe.html
+https://mjrrafael.github.io/rjc-conhecimento/estados/sp/legislacao/fontes/sp-portaria-sre-24-2026-iva-st-eletronicos.html
 https://mjrrafael.github.io/rjc-conhecimento/estados/sp/legislacao/fontes/sp-portaria-sre-70-2025-cbenef.html
 https://mjrrafael.github.io/rjc-conhecimento/estados/sp/legislacao/fontes/sp-ricms-2000-integral.html
 https://mjrrafael.github.io/rjc-conhecimento/estados/sp/legislacao/icms-regra-matriz.html

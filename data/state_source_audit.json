@@ -1,9 +1,9 @@
 {
-  "generated_on": "2026-05-18",
+  "generated_on": "2026-05-23",
   "summary": {
     "states": 27,
-    "docs": 225,
-    "publishable_docs": 222,
+    "docs": 227,
+    "publishable_docs": 224,
     "scope_blocked_docs": 3,
     "blocked": 14
   },
@@ -1013,13 +1013,13 @@
       "region": "Centro-Oeste",
       "curadoria": "publicado_v1",
       "publish_deep": true,
-      "document_count": 12,
-      "publishable_document_count": 12,
+      "document_count": 13,
+      "publishable_document_count": 13,
       "scope_blocked_document_count": 0,
-      "total_chars": 1333827,
+      "total_chars": 1341311,
       "categories": {
         "ICMS_BENEFICIOS": 9,
-        "ICMS_LEIS": 1,
+        "ICMS_LEIS": 2,
         "INSTRUCOES_NORMATIVAS": 1,
         "RICMS": 1
       },
@@ -1177,6 +1177,23 @@
           "scope_flags": [],
           "source_documents": [
             "https://www.sinj.df.gov.br/sinj/Norma/c2775e5323a848c5ac079c921d210e08/Decreto_39789_26_04_2019.html"
+          ],
+          "flags": []
+        },
+        {
+          "file": "DF_LC_1068_2026_DEVEDOR_CONTUMAZ_2026-05-23.txt",
+          "category": "ICMS_LEIS",
+          "chars": 7484,
+          "named_icms": true,
+          "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [
+            "ICMS"
+          ],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [
+            "https://www.sinj.df.gov.br/sinj/Norma/1cd1e9da5d464be4b22ffc0ca173e58b/LC_1068_2026.html"
           ],
           "flags": []
         },
@@ -4608,13 +4625,14 @@
       "region": "Sudeste",
       "curadoria": "publicado_v1",
       "publish_deep": true,
-      "document_count": 4,
-      "publishable_document_count": 4,
+      "document_count": 5,
+      "publishable_document_count": 5,
       "scope_blocked_document_count": 0,
-      "total_chars": 4838552,
+      "total_chars": 4841315,
       "categories": {
         "ICMS_BENEFICIOS": 1,
         "ICMS_LEIS": 1,
+        "ICMS_ST": 1,
         "OUTROS": 2
       },
       "flags": [],
@@ -4652,6 +4670,23 @@
           "scope_flags": [],
           "source_documents": [
             "https://legislacao.fazenda.sp.gov.br/Paginas/textoricms.aspx"
+          ],
+          "flags": []
+        },
+        {
+          "file": "SP_PORTARIA_SRE_24_2026_IVA_ST_ELETRONICOS_2026-05-23.txt",
+          "category": "ICMS_ST",
+          "chars": 2763,
+          "named_icms": true,
+          "fallback_icms": false,
+          "dominant_scope": "ICMS",
+          "source_scopes": [
+            "ICMS"
+          ],
+          "scope_blocked": false,
+          "scope_flags": [],
+          "source_documents": [
+            "https://legislacao.fazenda.sp.gov.br/Paginas/Portaria-SRE-24-de-2026.aspx"
           ],
           "flags": []
         },

@@ -97,6 +97,16 @@
       "caracteres": 6061
     },
     {
+      "id": "DF_LC_1068_2026_DEVEDOR_CONTUMAZ",
+      "titulo": "Lei Complementar nº 1.068/2026 - devedor contumaz de ICMS",
+      "tema": "ICMS - fiscalização, devedor contumaz e regime especial",
+      "arquivo": "DF_LC_1068_2026_DEVEDOR_CONTUMAZ_2026-05-23.txt",
+      "url": "https://www.sinj.df.gov.br/sinj/Norma/1cd1e9da5d464be4b22ffc0ca173e58b/LC_1068_2026.html",
+      "tipo": "lei complementar distrital",
+      "sha256": "dbc7306540fdbc0a2c65c3338c57684edd52ba64d345f9234764f88199e57765",
+      "caracteres": 7485
+    },
+    {
       "id": "DF_LEI_3196_2003_PRODF_II",
       "titulo": "Lei nº 3.196/2003 - PRÓ-DF II",
       "tema": "Incentivos econômicos - PRÓ-DF II",
