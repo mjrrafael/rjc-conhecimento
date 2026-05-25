@@ -423,7 +423,7 @@ window.RJC_SEARCH = [
     "title": "IPI: legislacao em tela",
     "url": "federal/legislacao/ipi/index.html",
     "summary": "Industrializacao, contribuinte, TIPI, suspensoes, isencoes, creditos, obrigacoes e prova.",
-    "tags": "Federal ipi ripi-2010 tipi-2022 lei-7798-1989-ipi lei-8387-1991-zfm-ipi decretos-tipi-2025"
+    "tags": "Federal ipi ripi-2010 tipi-2022 lei-7798-1989-ipi lei-8387-1991-zfm-ipi decretos-tipi-2025 in-rfb-2324-2026-ipi-suspensao"
   },
   {
     "title": "IPI: legislacao em tela - Materialidade e industrializacao",
@@ -916,6 +916,12 @@ window.RJC_SEARCH = [
     "url": "federal/legislacao/atos/decretos-tipi-2025.html",
     "summary": "Ajustes recentes de classificacao e aliquota.",
     "tags": "decretos-tipi-2025 Federal Atualizacoes TIPI 2025"
+  },
+  {
+    "title": "IN RFB 2.324/2026 - suspensao do IPI",
+    "url": "federal/legislacao/atos/in-rfb-2324-2026-ipi-suspensao.html",
+    "summary": "Disciplina hipoteses de suspensao do IPI previstas nas Leis 9.826/1999 e 10.637/2002, com condicoes, declaracoes, registro e informacao em nota fiscal.",
+    "tags": "in-rfb-2324-2026-ipi-suspensao Federal IN RFB 2.324/2026"
   },
   {
     "title": "IN RFB 2.121/2022 - PIS/Pasep, Cofins e importacao",

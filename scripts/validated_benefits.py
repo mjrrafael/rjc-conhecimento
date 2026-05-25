@@ -138,6 +138,16 @@ FEDERAL_FILES = [
     },
     {
         "jurisdiction": "Federal",
+        "name": "IPI",
+        "tax": "IPI",
+        "repo_file": "data/legal_sources/federal/IN_RFB_2324_2026_IPI_Suspensao.txt",
+        "file": "IN_RFB_2324_2026_IPI_Suspensao.txt",
+        "title": "Instrucao Normativa RFB n. 2.324/2026 - suspensao do IPI",
+        "official_url": "https://normas.receita.fazenda.gov.br/sijut2consulta/link.action?antigo=1&idAto=150886",
+        "captured_on": "2026-05-25",
+    },
+    {
+        "jurisdiction": "Federal",
         "name": "Reforma Tributária",
         "tax": "IBS/CBS",
         "file": "LC_214_2025_Compilada_IBS_CBS_IS.txt",

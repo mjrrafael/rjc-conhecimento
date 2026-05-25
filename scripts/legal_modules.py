@@ -23,7 +23,7 @@ ROOT = Path(__file__).resolve().parents[1]
 BD_ROOT = Path(os.environ.get("RJC_BD_LEGISLACAO", r"C:\Users\kris2\OneDrive\COWORK\BD_LEGISLACAO"))
 FEDERAL_ROOT = BD_ROOT / "#FEDERAIS-COMPILADO-ONLINE" / "legislacao_txt_completa"
 REPO_SOURCE_ROOT = ROOT / "data" / "legal_sources"
-UPDATED_ON = "23/05/2026"
+UPDATED_ON = "25/05/2026"
 
 
 def slug(value: str) -> str:
@@ -591,6 +591,15 @@ SOURCE_DEFS: dict[str, dict] = {
         "files": ["Decreto_12549_2025_TIPI_Atualizada.txt"],
         "note": "Ajustes recentes de classificacao e aliquota.",
     },
+    "in-rfb-2324-2026-ipi-suspensao": {
+        "jurisdiction": "Federal",
+        "title": "IN RFB 2.324/2026 - suspensao do IPI",
+        "short": "IN RFB 2.324/2026",
+        "url": "https://normas.receita.fazenda.gov.br/sijut2consulta/link.action?antigo=1&idAto=150886",
+        "repo_files": ["data/legal_sources/federal/IN_RFB_2324_2026_IPI_Suspensao.txt"],
+        "start_marker": "Art. 1",
+        "note": "Disciplina hipoteses de suspensao do IPI previstas nas Leis 9.826/1999 e 10.637/2002, com condicoes, declaracoes, registro e informacao em nota fiscal.",
+    },
     "in-rfb-2121-2022-pis-cofins": {
         "jurisdiction": "Federal",
         "title": "IN RFB 2.121/2022 - PIS/Pasep, Cofins e importacao",
@@ -1063,7 +1072,7 @@ LEGAL_MODULES: list[dict] = [
         "title": "IPI: legislacao em tela",
         "summary": "Industrializacao, contribuinte, TIPI, suspensoes, isencoes, creditos, obrigacoes e prova.",
         "legacy": "federal/ipi.html",
-        "sources": ["ripi-2010", "tipi-2022", "lei-7798-1989-ipi", "lei-8387-1991-zfm-ipi", "decretos-tipi-2025"],
+        "sources": ["ripi-2010", "tipi-2022", "lei-7798-1989-ipi", "lei-8387-1991-zfm-ipi", "decretos-tipi-2025", "in-rfb-2324-2026-ipi-suspensao"],
         "chapters": [
             {
                 "id": "materialidade-industrializacao",
@@ -1099,10 +1108,14 @@ LEGAL_MODULES: list[dict] = [
                 "id": "suspensoes-isencoes",
                 "title": "Suspensoes, isencoes e areas incentivadas",
                 "summary": "Tratamentos que afastam ou suspendem a cobranca quando a condicao legal existe.",
-                "refs": [{"source": "ripi-2010", "ranges": [(43, 55)]}, {"source": "lei-8387-1991-zfm-ipi", "ranges": None}],
+                "refs": [
+                    {"source": "ripi-2010", "ranges": [(43, 55)]},
+                    {"source": "lei-8387-1991-zfm-ipi", "ranges": None},
+                    {"source": "in-rfb-2324-2026-ipi-suspensao", "ranges": [(1, 28)]},
+                ],
                 "analysis": [
                     "Suspensao e isencao nao sao sinonimos. Uma posterga a exigencia sob condicao; outra afasta a tributacao dentro do recorte legal.",
-                    "O risco comum e aplicar beneficio pelo destino comercial sem provar habilitacao, finalidade, produto e documento fiscal.",
+                    "A IN RFB 2.324/2026 reforca que a suspensao de IPI depende do produto, da finalidade industrial, da declaracao do adquirente, do registro quando exigido e da informacao expressa na nota fiscal.",
                 ],
             },
             {

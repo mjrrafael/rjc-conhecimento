@@ -1,6 +1,6 @@
 {
   "schema": "rjc-legal-sources-v1",
-  "updated_on": "23/05/2026",
+  "updated_on": "25/05/2026",
   "editorial_rule": "Cada tese publicada deve apontar o ato oficial, manter o texto em tela e registrar o caminho de continuidade por tema.",
   "change_protocol": [
     "adicionar ou atualizar a fonte em scripts/legal_modules.py",
@@ -474,6 +474,37 @@
           "module_title": "Aduaneiro e remessas internacionais: legislacao em tela",
           "chapters": [
             "pis-cofins-importacao-prova"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "in-rfb-2324-2026-ipi-suspensao",
+      "jurisdiction": "Federal",
+      "title": "IN RFB 2.324/2026 - suspensao do IPI",
+      "short": "IN RFB 2.324/2026",
+      "official_url": "https://normas.receita.fazenda.gov.br/sijut2consulta/link.action?antigo=1&idAto=150886",
+      "storage": {
+        "type": "repo_text",
+        "files": [],
+        "repo_files": [
+          "data/legal_sources/federal/IN_RFB_2324_2026_IPI_Suspensao.txt"
+        ],
+        "sha256": {
+          "data/legal_sources/federal/IN_RFB_2324_2026_IPI_Suspensao.txt": "abcd6556619832859d0d6fec4263441264d2331a0ff6f52bc8043019887d7f34"
+        },
+        "fetch_url": ""
+      },
+      "note": "Disciplina hipoteses de suspensao do IPI previstas nas Leis 9.826/1999 e 10.637/2002, com condicoes, declaracoes, registro e informacao em nota fiscal.",
+      "render": "articles",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "ipi",
+          "module_title": "IPI: legislacao em tela",
+          "chapters": [
+            "suspensoes-isencoes"
           ]
         }
       ]

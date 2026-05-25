@@ -1,6 +1,6 @@
 {
   "schema": "rjc-master-source-coverage-v2",
-  "generated_on": "2026-05-23",
+  "generated_on": "2026-05-25",
   "summary": {
     "federal_requirements": 15,
     "federal_published": 11,
@@ -9,7 +9,7 @@
     "states_deep": 13,
     "states_waiting_review": 0,
     "states_reviewed_with_pendencies": 14,
-    "registered_sources": 205
+    "registered_sources": 206
   },
   "federal": [
     {
@@ -563,8 +563,8 @@
       "region": "Centro-Oeste",
       "status": "publicado_v1",
       "publish_deep": true,
-      "document_count": 12,
-      "publishable_document_count": 12,
+      "document_count": 13,
+      "publishable_document_count": 13,
       "flags": [],
       "next_step": "Distrito Federal publicado como pÃƒÂ¡gina profunda: Lei do ICMS, RICMS, Cadernos do Anexo I, Anexo IV, LC 160/ConvÃƒÂªnio 190, regime especial de apuraÃƒÂ§ÃƒÂ£o, crÃƒÂ©dito outorgado, EMPREGA-DF, PRÃƒâ€œ-DF II, Desenvolve-DF, diferimento agro e EFD ICMS/IPI."
     },
@@ -812,8 +812,8 @@
       "region": "Sudeste",
       "status": "publicado_v1",
       "publish_deep": true,
-      "document_count": 4,
-      "publishable_document_count": 4,
+      "document_count": 5,
+      "publishable_document_count": 5,
       "flags": [],
       "next_step": "SÃƒÂ£o Paulo publicado como pÃƒÂ¡gina profunda: Lei nÃ‚Âº 6.374/1989, RICMS/2000 integral, Anexos de isenÃƒÂ§ÃƒÂµes, reduÃƒÂ§ÃƒÂµes e crÃƒÂ©ditos outorgados, substituiÃƒÂ§ÃƒÂ£o tributÃƒÂ¡ria, regimes especiais, cBenef, EFD e prova fiscal."
     },

@@ -1,20 +1,20 @@
 # Auditoria Mestre v2
 
-Gerado em 2026-05-23.
+Gerado em 2026-05-25.
 
 Este arquivo resume cobertura e cruzamentos do Portal RJC Tributario Aberto. Ele e uma trilha de auditoria, nao um parecer tributario.
 
 ## Cobertura
 
-- Fontes registradas: 205
+- Fontes registradas: 206
 - Requisitos federais mapeados: 15
 - Requisitos federais publicados: 11
 - Requisitos federais com fonte local disponivel: 4
 - Estados profundos: 13
 - Estados aguardando revisao: 0
 - Estados revisados sem aprovacao profunda: 14
-- Entradas validadas na matriz de beneficios: 12223
-- Entradas com NCM/TIPI: 2383
+- Entradas validadas na matriz de beneficios: 12246
+- Entradas com NCM/TIPI: 2389
 - Entradas com CEST: 268
 - Entradas com cBenef: 2259
 
@@ -48,7 +48,7 @@ Este arquivo resume cobertura e cruzamentos do Portal RJC Tributario Aberto. Ele
 | AP | revisado_com_pendencias | 7 | contém Taxas, fonte local sem URL oficial no cabeçalho, ruído de extração/encoding, texto curto para RICMS/benefícios | Recapturar RICMS, beneficios e anexos do Amapa em fonte oficial limpa antes de aprovar analise profunda. |
 | BA | publicado_v1 | 15 | sem alerta automatizado | Bahia publicada como pÃƒÂ¡gina profunda: Lei do ICMS, RICMS, anexos, substituiÃƒÂ§ÃƒÂ£o tributÃƒÂ¡ria, DESENVOLVE, PROIND, PRONAVAL, crÃƒÂ©dito presumido, informÃƒÂ¡tica/eletrÃƒÂ´nica, atos da LC 160/ConvÃƒÂªnio 190 e EFD dos incentivos. |
 | CE | revisado_com_pendencias | 8 | categoria não específica de ICMS, contém IPVA, contém ITCMD/ITCD, contém Taxas | Recapturar RICMS, decretos modificadores e beneficios de ICMS no portal oficial do Ceara, separando escopo nao ICMS. |
-| DF | publicado_v1 | 12 | sem alerta automatizado | Distrito Federal publicado como pÃƒÂ¡gina profunda: Lei do ICMS, RICMS, Cadernos do Anexo I, Anexo IV, LC 160/ConvÃƒÂªnio 190, regime especial de apuraÃƒÂ§ÃƒÂ£o, crÃƒÂ©dito outorgado, EMPREGA-DF, PRÃƒâ€œ-DF II, Desenvolve-DF, diferimento agro e EFD ICMS/IPI. |
+| DF | publicado_v1 | 13 | sem alerta automatizado | Distrito Federal publicado como pÃƒÂ¡gina profunda: Lei do ICMS, RICMS, Cadernos do Anexo I, Anexo IV, LC 160/ConvÃƒÂªnio 190, regime especial de apuraÃƒÂ§ÃƒÂ£o, crÃƒÂ©dito outorgado, EMPREGA-DF, PRÃƒâ€œ-DF II, Desenvolve-DF, diferimento agro e EFD ICMS/IPI. |
 | ES | publicado_v1 | 7 | sem alerta automatizado | EspÃƒÂ­rito Santo publicado como pÃƒÂ¡gina profunda: Lei nÃ‚Âº 7.000/2001, RICMS/ES, COMPETE/ES, INVEST-ES, FUNDAP, cBenef, isenÃƒÂ§ÃƒÂ£o, reduÃƒÂ§ÃƒÂ£o de base, crÃƒÂ©dito presumido, diferimento, ST, EFD e prova fiscal. |
 | GO | aprovado_v1 | 0 | sem alerta automatizado | Manter monitoramento de RCTE, Anexo IX, cBenef e atos modificadores. |
 | MA | revisado_com_pendencias | 10 | contém Taxas, fonte local sem URL oficial no cabeçalho | Recapturar RICMS/MA, anexos de beneficios e atos modificadores com URL oficial e separar Taxas da trilha de ICMS. |
@@ -67,7 +67,7 @@ Este arquivo resume cobertura e cruzamentos do Portal RJC Tributario Aberto. Ele
 | RS | publicado_v1 | 5 | sem alerta automatizado | Rio Grande do Sul publicado como pÃƒÂ¡gina profunda: Decreto nÃ‚Âº 37.699/1997, RICMS/RS integral, AMPARA-RS, importaÃƒÂ§ÃƒÂ£o, crÃƒÂ©dito presumido, diferimento, ST, documentos, EFD e prova fiscal. |
 | SC | publicado_v1 | 8 | sem alerta automatizado | Santa Catarina publicada como pÃƒÂ¡gina profunda: RICMS/SC, Anexo 2 de benefÃƒÂ­cios fiscais, Anexo 3 de substituiÃƒÂ§ÃƒÂ£o tributÃƒÂ¡ria, Anexo 5 de obrigaÃƒÂ§ÃƒÂµes acessÃƒÂ³rias, Anexo 6 de regimes especiais, NF-e e prova fiscal. |
 | SE | revisado_com_pendencias | 4 | contém IPVA, contém Taxas, fonte local sem URL oficial no cabeçalho, texto curto para RICMS/benefícios | Recapturar RICMS/SE, anexos e beneficios de ICMS no portal oficial de Sergipe, separando Taxas/IPVA. |
-| SP | publicado_v1 | 4 | sem alerta automatizado | SÃƒÂ£o Paulo publicado como pÃƒÂ¡gina profunda: Lei nÃ‚Âº 6.374/1989, RICMS/2000 integral, Anexos de isenÃƒÂ§ÃƒÂµes, reduÃƒÂ§ÃƒÂµes e crÃƒÂ©ditos outorgados, substituiÃƒÂ§ÃƒÂ£o tributÃƒÂ¡ria, regimes especiais, cBenef, EFD e prova fiscal. |
+| SP | publicado_v1 | 5 | sem alerta automatizado | SÃƒÂ£o Paulo publicado como pÃƒÂ¡gina profunda: Lei nÃ‚Âº 6.374/1989, RICMS/2000 integral, Anexos de isenÃƒÂ§ÃƒÂµes, reduÃƒÂ§ÃƒÂµes e crÃƒÂ©ditos outorgados, substituiÃƒÂ§ÃƒÂ£o tributÃƒÂ¡ria, regimes especiais, cBenef, EFD e prova fiscal. |
 | TO | revisado_com_pendencias | 2 | contém Taxas, texto curto para RICMS/benefícios | Recapturar beneficios, anexos e atos complementares do Tocantins com URL oficial e validar separadamente do RICMS. |
 
 ## CONFAZ 5 anos
