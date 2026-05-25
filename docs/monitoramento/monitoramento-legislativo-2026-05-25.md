@@ -70,6 +70,17 @@ Relatorios salvos:
 - `docs/monitoramento/portal-monitor-2026-05-25-pos-atualizacao.md`
 - `docs/monitoramento/fontes-oficiais-scan-2026-05-25.json`
 
+## Publicacao
+
+- Commit principal: `d98bb0f` (`Atualiza portal com IN RFB 2324 de IPI`).
+- Push em `main` concluido em 25/05/2026.
+- GitHub Pages validado em 25/05/2026, 07:58 America/Sao_Paulo:
+  - `https://mjrrafael.github.io/rjc-conhecimento/federal/legislacao/atos/in-rfb-2324-2026-ipi-suspensao.html`;
+  - `https://mjrrafael.github.io/rjc-conhecimento/federal/legislacao/ipi/suspensoes-isencoes.html`;
+  - `https://mjrrafael.github.io/rjc-conhecimento/data/legal_sources_registry.json`;
+  - `https://mjrrafael.github.io/rjc-conhecimento/sitemap.xml`.
+- Auditoria live final apos commit, gravada fora do repositorio para nao sujar a arvore: sem critico/alto, `git_dirty_entries = 0`, medio remanescente apenas para `data/benefits_crosswalk.json` acima de 50 MB.
+
 ## Pendencias reais
 
 - Dividir ou paginar `data/benefits_crosswalk.json`, que segue acima de 50 MB e deixa `build_portal.py` lento.
