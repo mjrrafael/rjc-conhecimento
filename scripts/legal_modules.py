@@ -23,7 +23,7 @@ ROOT = Path(__file__).resolve().parents[1]
 BD_ROOT = Path(os.environ.get("RJC_BD_LEGISLACAO", r"C:\Users\kris2\OneDrive\COWORK\BD_LEGISLACAO"))
 FEDERAL_ROOT = BD_ROOT / "#FEDERAIS-COMPILADO-ONLINE" / "legislacao_txt_completa"
 REPO_SOURCE_ROOT = ROOT / "data" / "legal_sources"
-UPDATED_ON = "25/05/2026"
+UPDATED_ON = "06/06/2026"
 
 
 def slug(value: str) -> str:
@@ -600,6 +600,15 @@ SOURCE_DEFS: dict[str, dict] = {
         "start_marker": "Art. 1",
         "note": "Disciplina hipoteses de suspensao do IPI previstas nas Leis 9.826/1999 e 10.637/2002, com condicoes, declaracoes, registro e informacao em nota fiscal.",
     },
+    "in-rfb-2326-2026-valor-aduaneiro": {
+        "jurisdiction": "Federal",
+        "title": "IN RFB 2.326/2026 - valor aduaneiro",
+        "short": "IN RFB 2.326/2026",
+        "url": "https://normas.receita.fazenda.gov.br/sijut2consulta/link.action?antigo=1&idAto=151412",
+        "repo_files": ["data/legal_sources/federal/IN_RFB_2326_2026_Valor_Aduaneiro.txt"],
+        "start_marker": "Art. 1",
+        "note": "Altera a IN RFB 2.090/2022 para atualizar referencias, opinioes consultivas, notas explicativas e estudos de caso do CTVA/OMA sobre valor aduaneiro.",
+    },
     "in-rfb-2121-2022-pis-cofins": {
         "jurisdiction": "Federal",
         "title": "IN RFB 2.121/2022 - PIS/Pasep, Cofins e importacao",
@@ -682,6 +691,24 @@ SOURCE_DEFS: dict[str, dict] = {
         "start_marker": "LEI Nº 15.394, DE 22 DE ABRIL DE 2026",
         "note": "Altera a Lei 11.196/2005 para autorizar creditamento de PIS/Cofins em aquisicoes de determinados residuos e aparas e isentar vendas especificadas.",
     },
+    "decreto-12991-2026-pis-cofins-combustiveis": {
+        "jurisdiction": "Federal",
+        "title": "Decreto 12.991/2026 - PIS/Cofins sobre querosene de aviacao e biodiesel",
+        "short": "Decreto 12.991/2026",
+        "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2026/decreto/d12991.htm",
+        "repo_files": ["data/legal_sources/federal/Decreto_12991_2026_PIS_COFINS_Combustiveis.txt"],
+        "start_marker": "Art. 1",
+        "note": "Prorroga coeficientes de reducao de PIS/Pasep e Cofins incidentes sobre importacao e comercializacao de querosene de aviacao e biodiesel.",
+    },
+    "portaria-rfb-688-2026-transparencia-dirbi": {
+        "jurisdiction": "Federal",
+        "title": "Portaria RFB 688/2026 - transparencia ativa de beneficios e Dirbi",
+        "short": "Portaria RFB 688/2026",
+        "url": "https://normas.receita.fazenda.gov.br/sijut2consulta/link.action?antigo=1&idAto=151498",
+        "repo_files": ["data/legal_sources/federal/Portaria_RFB_688_2026_Transparencia_DIRBI.txt"],
+        "start_marker": "Art. 1",
+        "note": "Altera a Portaria RFB 319/2023 para tratar da transparencia ativa de incentivos, renuncias, beneficios e imunidades, com prevalencia de informacoes coletadas via Dirbi.",
+    },
     "ec-132-2023-reforma": {
         "jurisdiction": "Federal",
         "title": "Emenda Constitucional 132/2023 - Reforma Tributaria",
@@ -737,6 +764,15 @@ SOURCE_DEFS: dict[str, dict] = {
         "url": "https://www.in.gov.br/en/web/dou/-/ato-conjunto-rfb/cgibs-n-1-de-22-de-dezembro-de-2025-677624586",
         "repo_files": ["data/legal_sources/reforma_tributaria/Ato_Conjunto_RFB_CGIBS_1_2025_Obrigacoes_2026.txt"],
         "note": "Define documentos fiscais recepcionados e prazos de observancia para informacoes destinadas a apuracao do IBS e da CBS em 2026.",
+    },
+    "ato-conjunto-rfb-cgibs-2-2026-split-payment": {
+        "jurisdiction": "Federal",
+        "title": "Ato Conjunto RFB/CGIBS 2/2026 - Plataforma Publica do Split Payment",
+        "short": "Ato Conjunto 2/2026",
+        "url": "https://normas.receita.fazenda.gov.br/sijut2consulta/link.action?antigo=1&idAto=151582",
+        "repo_files": ["data/legal_sources/reforma_tributaria/Ato_Conjunto_RFB_CGIBS_2_2026_Split_Payment.txt"],
+        "start_marker": "Art. 1",
+        "note": "Autoriza a publicacao do Manual de Integracao e do Swagger da Plataforma Publica do Split Payment para CBS e IBS.",
     },
     "rfb-orientacoes-reforma-2026": {
         "jurisdiction": "Federal",
@@ -902,7 +938,7 @@ LEGAL_MODULES: list[dict] = [
         "title": "IRPJ: legislacao em tela",
         "summary": "Regra matriz, regimes, lucro real, presumido, JCP, beneficios e prova do imposto de renda da pessoa juridica.",
         "legacy": "federal/irpj-csll.html",
-        "sources": ["rir-2018-pj", "lei-9249-1995-irpj-csll", "lei-9430-1996-irpj", "lei-8981-1995-regimes", "lei-9065-1995-irpj"],
+        "sources": ["rir-2018-pj", "lei-9249-1995-irpj-csll", "lei-9430-1996-irpj", "lei-8981-1995-regimes", "lei-9065-1995-irpj", "portaria-rfb-688-2026-transparencia-dirbi"],
         "chapters": [
             {
                 "id": "contribuintes-regra-matriz",
@@ -952,6 +988,16 @@ LEGAL_MODULES: list[dict] = [
                 "analysis": [
                     "Beneficio e deducao nao sao desconto livre. Cada vantagem exige requisito, limite, demonstracao e documento que suporte a decisao.",
                     "Para JCP, pagamento e Lalur, o controle forte e documental: deliberacao societaria, calculo, retencao quando aplicavel, escrituração e cruzamento na ECF.",
+                ],
+            },
+            {
+                "id": "transparencia-beneficios-dirbi",
+                "title": "Transparencia de beneficios federais e Dirbi",
+                "summary": "Portaria RFB 688/2026 e a trilha de transparencia ativa de incentivos, renuncias, beneficios e imunidades.",
+                "refs": [{"source": "portaria-rfb-688-2026-transparencia-dirbi", "ranges": [(1, 3)]}],
+                "analysis": [
+                    "A Portaria RFB 688/2026 nao cria beneficio novo. Ela ajusta a regra de transparencia ativa e indica que as informacoes coletadas via Dirbi passam a prevalecer para essa finalidade, ressalvados tributos ligados ao comercio exterior.",
+                    "Na pratica, a empresa que frui incentivo, renuncia, beneficio ou imunidade federal deve preservar a trilha entre enquadramento legal, Dirbi, demonstrativo fiscal, declaracao e documento que prova a fruicao.",
                 ],
             },
         ],
@@ -1136,7 +1182,7 @@ LEGAL_MODULES: list[dict] = [
         "title": "PIS/Pasep: legislacao em tela",
         "summary": "Regimes cumulativo e nao cumulativo, creditos, importacao, monofasico, aliquota zero e prova.",
         "legacy": "federal/pis-cofins.html",
-        "sources": ["in-rfb-2121-2022-pis-cofins", "lei-9715-1998-pis", "lei-9718-1998-pis-cofins", "lei-10637-2002-pis", "lei-10865-2004-pis-cofins-importacao", "lei-13097-2015-pis-cofins", "lei-15394-2026-pis-cofins-residuos"],
+        "sources": ["in-rfb-2121-2022-pis-cofins", "lei-9715-1998-pis", "lei-9718-1998-pis-cofins", "lei-10637-2002-pis", "lei-10865-2004-pis-cofins-importacao", "lei-13097-2015-pis-cofins", "lei-15394-2026-pis-cofins-residuos", "decreto-12991-2026-pis-cofins-combustiveis"],
         "chapters": [
             {
                 "id": "regra-geral",
@@ -1182,10 +1228,11 @@ LEGAL_MODULES: list[dict] = [
                 "id": "beneficios-monofasico",
                 "title": "Monofasico, aliquota zero, suspensao e beneficios",
                 "summary": "Tratamentos especiais por produto, cadeia ou politica fiscal.",
-                "refs": [{"source": "in-rfb-2121-2022-pis-cofins", "ranges": [(398, 500)]}, {"source": "lei-13097-2015-pis-cofins", "ranges": None}, {"source": "lei-15394-2026-pis-cofins-residuos", "ranges": [(1, 2)]}],
+                "refs": [{"source": "in-rfb-2121-2022-pis-cofins", "ranges": [(398, 500)]}, {"source": "lei-13097-2015-pis-cofins", "ranges": None}, {"source": "lei-15394-2026-pis-cofins-residuos", "ranges": [(1, 2)]}, {"source": "decreto-12991-2026-pis-cofins-combustiveis", "ranges": [(1, 4)]}],
                 "analysis": [
                     "Beneficio de PIS depende de produto, NCM, etapa da cadeia, destinatario e vigencia. Parecido nao basta.",
                     "Quando a empresa aplica aliquota zero, suspensao ou monofasico, o XML e a EFD-Contribuicoes precisam apontar a mesma justificativa.",
+                    "O Decreto 12.991/2026 entrou como fonte literal para querosene de aviacao e biodiesel; a aplicacao pratica exige confirmar produto, periodo e ato alterado antes de parametrizar.",
                 ],
             },
         ],
@@ -1196,7 +1243,7 @@ LEGAL_MODULES: list[dict] = [
         "title": "Cofins: legislacao em tela",
         "summary": "Cumulatividade, nao cumulatividade, creditos, importacao, retencoes, beneficios e prova.",
         "legacy": "federal/pis-cofins.html",
-        "sources": ["lc-70-1991-cofins", "lei-9718-1998-pis-cofins", "lei-10833-2003-cofins", "lei-10865-2004-pis-cofins-importacao", "in-rfb-2121-2022-pis-cofins", "lei-13097-2015-pis-cofins", "lei-15394-2026-pis-cofins-residuos"],
+        "sources": ["lc-70-1991-cofins", "lei-9718-1998-pis-cofins", "lei-10833-2003-cofins", "lei-10865-2004-pis-cofins-importacao", "in-rfb-2121-2022-pis-cofins", "lei-13097-2015-pis-cofins", "lei-15394-2026-pis-cofins-residuos", "decreto-12991-2026-pis-cofins-combustiveis"],
         "chapters": [
             {
                 "id": "instituicao-receita",
@@ -1242,10 +1289,11 @@ LEGAL_MODULES: list[dict] = [
                 "id": "beneficios-monofasico",
                 "title": "Monofasico, aliquota zero, suspensao e beneficios",
                 "summary": "Tratamentos especiais por setor, produto e etapa da cadeia.",
-                "refs": [{"source": "in-rfb-2121-2022-pis-cofins", "ranges": [(398, 500)]}, {"source": "lei-13097-2015-pis-cofins", "ranges": None}, {"source": "lei-15394-2026-pis-cofins-residuos", "ranges": [(1, 2)]}],
+                "refs": [{"source": "in-rfb-2121-2022-pis-cofins", "ranges": [(398, 500)]}, {"source": "lei-13097-2015-pis-cofins", "ranges": None}, {"source": "lei-15394-2026-pis-cofins-residuos", "ranges": [(1, 2)]}, {"source": "decreto-12991-2026-pis-cofins-combustiveis", "ranges": [(1, 4)]}],
                 "analysis": [
                     "Beneficio de Cofins se prova por texto legal, produto, NCM, etapa, CST e documento. A cadeia importa.",
                     "O erro mais caro e vender como aliquota zero aquilo que a lei reservou a outra etapa ou a outro produto.",
+                    "O Decreto 12.991/2026 foi incorporado apenas como texto legal e vigencia setorial: querosene de aviacao, biodiesel, importacao/comercializacao e periodo precisam ser conferidos no ato antes de qualquer cadastro.",
                 ],
             },
         ],
@@ -1256,7 +1304,7 @@ LEGAL_MODULES: list[dict] = [
         "title": "Aduaneiro e remessas internacionais: legislacao em tela",
         "summary": "Importacao, exportacao, remessas postais internacionais, PIS/Cofins-Importacao, documentos e prova aduaneira.",
         "legacy": "federal/aduaneiro.html",
-        "sources": ["mpv-1357-2026-remessas-postais", "lei-10865-2004-pis-cofins-importacao", "in-rfb-2121-2022-pis-cofins"],
+        "sources": ["mpv-1357-2026-remessas-postais", "lei-10865-2004-pis-cofins-importacao", "in-rfb-2121-2022-pis-cofins", "in-rfb-2326-2026-valor-aduaneiro"],
         "chapters": [
             {
                 "id": "remessas-postais-tributacao-simplificada",
@@ -1276,6 +1324,16 @@ LEGAL_MODULES: list[dict] = [
                 "analysis": [
                     "PIS/Cofins-Importacao nao se resolve pela etiqueta de compra internacional. A leitura exige bem ou servico, responsavel, base aduaneira, documento, pagamento, credito possivel e relacao com a EFD-Contribuicoes.",
                     "O dossie minimo deve preservar DI ou DUIMP quando houver, invoice, contrato, conhecimento de transporte, NF-e de entrada, comprovante de recolhimento e memoria de apuracao das contribuicoes.",
+                ],
+            },
+            {
+                "id": "valor-aduaneiro-in-rfb-2326",
+                "title": "Valor aduaneiro e instrumentos CTVA/OMA",
+                "summary": "IN RFB 2.326/2026 atualiza referencias aplicaveis ao controle do valor aduaneiro.",
+                "refs": [{"source": "in-rfb-2326-2026-valor-aduaneiro", "ranges": [(1, 3)]}],
+                "analysis": [
+                    "A IN RFB 2.326/2026 altera a IN RFB 2.090/2022 e incorpora instrumentos do Comite Tecnico de Valoracao Aduaneira da OMA. A publicacao no portal fica limitada a essa literalidade normativa.",
+                    "Para operacao real, o ponto de controle e manter memoria de preco efetivamente pago ou a pagar, ajustes, pagamentos a terceiros, documentos de importacao e justificativa de valoracao usada na DI ou DUIMP.",
                 ],
             },
         ],
@@ -1432,6 +1490,7 @@ LEGAL_MODULES: list[dict] = [
             "resolucao-cgibs-6-2026-ibs",
             "portaria-mf-cgibs-7-2026",
             "ato-conjunto-rfb-cgibs-1-2025",
+            "ato-conjunto-rfb-cgibs-2-2026-split-payment",
             "rfb-orientacoes-reforma-2026",
             "rfb-marcos-reforma",
             "it-2025-002-tabelas-reforma",
@@ -1514,10 +1573,12 @@ LEGAL_MODULES: list[dict] = [
                     {"source": "decreto-12955-2026-cbs", "ranges": [(17, 52), (58, 68)]},
                     {"source": "resolucao-cgibs-6-2026-ibs", "ranges": [(17, 52), (58, 68)]},
                     {"source": "lc-214-2025-reforma", "ranges": [(27, 68)]},
+                    {"source": "ato-conjunto-rfb-cgibs-2-2026-split-payment", "ranges": [(1, 3)]},
                 ],
                 "analysis": [
                     "A Reforma aproxima três mundos que antes podiam ficar separados: documento fiscal, financeiro e crédito. Com split payment e apuração assistida, o XML deixa de ser apenas documento de venda; ele passa a conversar com extinção de débito, crédito do adquirente, pagamento e ressarcimento.",
                     "O controle interno precisa nascer por evento: emissão, cancelamento, devolução, pagamento, estorno, crédito, compensação e ressarcimento. Se a empresa não amarrar XML, recebimento, pagamento e apuração, a divergência aparecerá no cruzamento digital.",
+                    "O Ato Conjunto RFB/CGIBS 2/2026 autoriza a publicacao do Manual de Integracao e do Swagger da Plataforma Publica do Split Payment. Isso e sinal operacional para desenvolvimento de sistemas, nao conclusao nova sobre calculo ou carga tributaria.",
                 ],
             },
             {
@@ -1623,10 +1684,12 @@ LEGAL_MODULES: list[dict] = [
                 "summary": "Extinção do débito, recolhimento, não cumulatividade operacional e segregação automática do imposto no pagamento.",
                 "refs": [
                     {"source": "lc-214-2025-reforma", "ranges": [(27, 68)]},
+                    {"source": "ato-conjunto-rfb-cgibs-2-2026-split-payment", "ranges": [(1, 3)]},
                 ],
                 "analysis": [
                     "O crédito deixa de ser apenas uma rotina contábil posterior. Com split payment e mecanismos de extinção do débito, o documento, o pagamento e a validação do sistema se aproximam.",
                     "A empresa precisa provar três coisas: que a operação ocorreu, que o tributo foi destacado ou tratado corretamente e que o crédito ou recolhimento dialoga com o fluxo financeiro. Sem essa amarração, o risco migra do imposto para a prova.",
+                    "A publicacao do manual e do Swagger deve ser tratada como marco tecnico de integracao: fiscal, financeiro e tecnologia precisam acompanhar os dominios oficiais antes de construir automacao propria.",
                 ],
             },
             {
@@ -1957,7 +2020,8 @@ SIGNAL_CHAPTER_MAP = {
     "aduaneiro": {
         "aliquota": ["remessas-postais-tributacao-simplificada"],
         "regime especial": ["remessas-postais-tributacao-simplificada"],
-        "importacao": ["remessas-postais-tributacao-simplificada", "pis-cofins-importacao-prova"],
+        "importacao": ["remessas-postais-tributacao-simplificada", "pis-cofins-importacao-prova", "valor-aduaneiro-in-rfb-2326"],
+        "valor aduaneiro": ["valor-aduaneiro-in-rfb-2326"],
         "exportacao": ["pis-cofins-importacao-prova"],
         "efd/sped": ["pis-cofins-importacao-prova"],
     },

@@ -321,7 +321,7 @@ window.RJC_SEARCH = [
     "title": "IRPJ: legislacao em tela",
     "url": "federal/legislacao/irpj/index.html",
     "summary": "Regra matriz, regimes, lucro real, presumido, JCP, beneficios e prova do imposto de renda da pessoa juridica.",
-    "tags": "Federal irpj rir-2018-pj lei-9249-1995-irpj-csll lei-9430-1996-irpj lei-8981-1995-regimes lei-9065-1995-irpj"
+    "tags": "Federal irpj rir-2018-pj lei-9249-1995-irpj-csll lei-9430-1996-irpj lei-8981-1995-regimes lei-9065-1995-irpj portaria-rfb-688-2026-transparencia-dirbi"
   },
   {
     "title": "IRPJ: legislacao em tela - Contribuintes, equiparacoes e regra matriz",
@@ -352,6 +352,12 @@ window.RJC_SEARCH = [
     "url": "federal/legislacao/irpj/beneficios-jcp-prova.html",
     "summary": "Tratamentos que reduzem, diferem ou controlam a base e o recolhimento.",
     "tags": "irpj beneficios-jcp-prova Beneficios, JCP, pagamento e prova"
+  },
+  {
+    "title": "IRPJ: legislacao em tela - Transparencia de beneficios federais e Dirbi",
+    "url": "federal/legislacao/irpj/transparencia-beneficios-dirbi.html",
+    "summary": "Portaria RFB 688/2026 e a trilha de transparencia ativa de incentivos, renuncias, beneficios e imunidades.",
+    "tags": "irpj transparencia-beneficios-dirbi Transparencia de beneficios federais e Dirbi"
   },
   {
     "title": "CSLL: legislacao em tela",
@@ -459,7 +465,7 @@ window.RJC_SEARCH = [
     "title": "PIS/Pasep: legislacao em tela",
     "url": "federal/legislacao/pis/index.html",
     "summary": "Regimes cumulativo e nao cumulativo, creditos, importacao, monofasico, aliquota zero e prova.",
-    "tags": "Federal pis in-rfb-2121-2022-pis-cofins lei-9715-1998-pis lei-9718-1998-pis-cofins lei-10637-2002-pis lei-10865-2004-pis-cofins-importacao lei-13097-2015-pis-cofins lei-15394-2026-pis-cofins-residuos"
+    "tags": "Federal pis in-rfb-2121-2022-pis-cofins lei-9715-1998-pis lei-9718-1998-pis-cofins lei-10637-2002-pis lei-10865-2004-pis-cofins-importacao lei-13097-2015-pis-cofins lei-15394-2026-pis-cofins-residuos decreto-12991-2026-pis-cofins-combustiveis"
   },
   {
     "title": "PIS/Pasep: legislacao em tela - Regra geral, contribuinte e receita",
@@ -495,7 +501,7 @@ window.RJC_SEARCH = [
     "title": "Cofins: legislacao em tela",
     "url": "federal/legislacao/cofins/index.html",
     "summary": "Cumulatividade, nao cumulatividade, creditos, importacao, retencoes, beneficios e prova.",
-    "tags": "Federal cofins lc-70-1991-cofins lei-9718-1998-pis-cofins lei-10833-2003-cofins lei-10865-2004-pis-cofins-importacao in-rfb-2121-2022-pis-cofins lei-13097-2015-pis-cofins lei-15394-2026-pis-cofins-residuos"
+    "tags": "Federal cofins lc-70-1991-cofins lei-9718-1998-pis-cofins lei-10833-2003-cofins lei-10865-2004-pis-cofins-importacao in-rfb-2121-2022-pis-cofins lei-13097-2015-pis-cofins lei-15394-2026-pis-cofins-residuos decreto-12991-2026-pis-cofins-combustiveis"
   },
   {
     "title": "Cofins: legislacao em tela - Instituicao, receita e sujeito passivo",
@@ -531,7 +537,7 @@ window.RJC_SEARCH = [
     "title": "Aduaneiro e remessas internacionais: legislacao em tela",
     "url": "federal/legislacao/aduaneiro/index.html",
     "summary": "Importacao, exportacao, remessas postais internacionais, PIS/Cofins-Importacao, documentos e prova aduaneira.",
-    "tags": "Federal aduaneiro mpv-1357-2026-remessas-postais lei-10865-2004-pis-cofins-importacao in-rfb-2121-2022-pis-cofins"
+    "tags": "Federal aduaneiro mpv-1357-2026-remessas-postais lei-10865-2004-pis-cofins-importacao in-rfb-2121-2022-pis-cofins in-rfb-2326-2026-valor-aduaneiro"
   },
   {
     "title": "Aduaneiro e remessas internacionais: legislacao em tela - Remessas postais internacionais e tributacao simplificada",
@@ -544,6 +550,12 @@ window.RJC_SEARCH = [
     "url": "federal/legislacao/aduaneiro/pis-cofins-importacao-prova.html",
     "summary": "Entrada de bens e servicos do exterior com base, contribuinte, documento e credito possivel.",
     "tags": "aduaneiro pis-cofins-importacao-prova PIS/Cofins-Importacao e prova documental"
+  },
+  {
+    "title": "Aduaneiro e remessas internacionais: legislacao em tela - Valor aduaneiro e instrumentos CTVA/OMA",
+    "url": "federal/legislacao/aduaneiro/valor-aduaneiro-in-rfb-2326.html",
+    "summary": "IN RFB 2.326/2026 atualiza referencias aplicaveis ao controle do valor aduaneiro.",
+    "tags": "aduaneiro valor-aduaneiro-in-rfb-2326 Valor aduaneiro e instrumentos CTVA/OMA"
   },
   {
     "title": "Folha e CLT: legislacao em tela",
@@ -627,7 +639,7 @@ window.RJC_SEARCH = [
     "title": "Reforma Tributária: legislação em tela",
     "url": "federal/legislacao/reforma-tributaria/index.html",
     "summary": "EC 132/2023, LC 214/2025, LC 227/2026, tabelas CST/cClassTrib/cCredPres, alíquotas, documentos fiscais, transição, créditos, split payment, benefícios e governança.",
-    "tags": "Federal reforma-tributaria ec-132-2023-reforma lc-214-2025-reforma lc-227-2026-cgibs decreto-12955-2026-cbs resolucao-cgibs-6-2026-ibs portaria-mf-cgibs-7-2026 ato-conjunto-rfb-cgibs-1-2025 rfb-orientacoes-reforma-2026 rfb-marcos-reforma it-2025-002-tabelas-reforma tabela-cst-cclasstrib-ibs-cbs tabela-ccredpres-ibs-cbs nt-2025-002-rtc-nfe"
+    "tags": "Federal reforma-tributaria ec-132-2023-reforma lc-214-2025-reforma lc-227-2026-cgibs decreto-12955-2026-cbs resolucao-cgibs-6-2026-ibs portaria-mf-cgibs-7-2026 ato-conjunto-rfb-cgibs-1-2025 ato-conjunto-rfb-cgibs-2-2026-split-payment rfb-orientacoes-reforma-2026 rfb-marcos-reforma it-2025-002-tabelas-reforma tabela-cst-cclasstrib-ibs-cbs tabela-ccredpres-ibs-cbs nt-2025-002-rtc-nfe"
   },
   {
     "title": "Reforma Tributária: legislação em tela - Regra matriz do IBS e da CBS",
@@ -924,6 +936,12 @@ window.RJC_SEARCH = [
     "tags": "in-rfb-2324-2026-ipi-suspensao Federal IN RFB 2.324/2026"
   },
   {
+    "title": "IN RFB 2.326/2026 - valor aduaneiro",
+    "url": "federal/legislacao/atos/in-rfb-2326-2026-valor-aduaneiro.html",
+    "summary": "Altera a IN RFB 2.090/2022 para atualizar referencias, opinioes consultivas, notas explicativas e estudos de caso do CTVA/OMA sobre valor aduaneiro.",
+    "tags": "in-rfb-2326-2026-valor-aduaneiro Federal IN RFB 2.326/2026"
+  },
+  {
     "title": "IN RFB 2.121/2022 - PIS/Pasep, Cofins e importacao",
     "url": "federal/legislacao/atos/in-rfb-2121-2022-pis-cofins.html",
     "summary": "Consolidacao normativa de PIS/Pasep, Cofins, importacao, regimes e obrigacoes.",
@@ -984,6 +1002,18 @@ window.RJC_SEARCH = [
     "tags": "lei-15394-2026-pis-cofins-residuos Federal Lei 15.394/2026"
   },
   {
+    "title": "Decreto 12.991/2026 - PIS/Cofins sobre querosene de aviacao e biodiesel",
+    "url": "federal/legislacao/atos/decreto-12991-2026-pis-cofins-combustiveis.html",
+    "summary": "Prorroga coeficientes de reducao de PIS/Pasep e Cofins incidentes sobre importacao e comercializacao de querosene de aviacao e biodiesel.",
+    "tags": "decreto-12991-2026-pis-cofins-combustiveis Federal Decreto 12.991/2026"
+  },
+  {
+    "title": "Portaria RFB 688/2026 - transparencia ativa de beneficios e Dirbi",
+    "url": "federal/legislacao/atos/portaria-rfb-688-2026-transparencia-dirbi.html",
+    "summary": "Altera a Portaria RFB 319/2023 para tratar da transparencia ativa de incentivos, renuncias, beneficios e imunidades, com prevalencia de informacoes coletadas via Dirbi.",
+    "tags": "portaria-rfb-688-2026-transparencia-dirbi Federal Portaria RFB 688/2026"
+  },
+  {
     "title": "Emenda Constitucional 132/2023 - Reforma Tributaria",
     "url": "federal/legislacao/atos/ec-132-2023-reforma.html",
     "summary": "Altera o Sistema Tributario Nacional, cria a arquitetura constitucional do IBS, CBS e Imposto Seletivo e disciplina a transicao.",
@@ -1024,6 +1054,12 @@ window.RJC_SEARCH = [
     "url": "federal/legislacao/atos/ato-conjunto-rfb-cgibs-1-2025.html",
     "summary": "Define documentos fiscais recepcionados e prazos de observancia para informacoes destinadas a apuracao do IBS e da CBS em 2026.",
     "tags": "ato-conjunto-rfb-cgibs-1-2025 Federal Ato Conjunto 1/2025"
+  },
+  {
+    "title": "Ato Conjunto RFB/CGIBS 2/2026 - Plataforma Publica do Split Payment",
+    "url": "federal/legislacao/atos/ato-conjunto-rfb-cgibs-2-2026-split-payment.html",
+    "summary": "Autoriza a publicacao do Manual de Integracao e do Swagger da Plataforma Publica do Split Payment para CBS e IBS.",
+    "tags": "ato-conjunto-rfb-cgibs-2-2026-split-payment Federal Ato Conjunto 2/2026"
   },
   {
     "title": "Receita Federal - orientacoes da Reforma Tributaria para 2026",

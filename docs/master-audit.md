@@ -1,12 +1,12 @@
 # Auditoria Mestre v2
 
-Gerado em 2026-05-25.
+Gerado em 2026-06-06.
 
 Este arquivo resume cobertura e cruzamentos do Portal RJC Tributario Aberto. Ele e uma trilha de auditoria, nao um parecer tributario.
 
 ## Cobertura
 
-- Fontes registradas: 206
+- Fontes registradas: 210
 - Requisitos federais mapeados: 15
 - Requisitos federais publicados: 11
 - Requisitos federais com fonte local disponivel: 4

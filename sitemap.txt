@@ -514,9 +514,12 @@ https://mjrrafael.github.io/rjc-conhecimento/federal/irpj-csll.html
 https://mjrrafael.github.io/rjc-conhecimento/federal/legislacao/aduaneiro/index.html
 https://mjrrafael.github.io/rjc-conhecimento/federal/legislacao/aduaneiro/pis-cofins-importacao-prova.html
 https://mjrrafael.github.io/rjc-conhecimento/federal/legislacao/aduaneiro/remessas-postais-tributacao-simplificada.html
+https://mjrrafael.github.io/rjc-conhecimento/federal/legislacao/aduaneiro/valor-aduaneiro-in-rfb-2326.html
 https://mjrrafael.github.io/rjc-conhecimento/federal/legislacao/atos/ato-conjunto-rfb-cgibs-1-2025.html
+https://mjrrafael.github.io/rjc-conhecimento/federal/legislacao/atos/ato-conjunto-rfb-cgibs-2-2026-split-payment.html
 https://mjrrafael.github.io/rjc-conhecimento/federal/legislacao/atos/clt-1943.html
 https://mjrrafael.github.io/rjc-conhecimento/federal/legislacao/atos/decreto-12955-2026-cbs.html
+https://mjrrafael.github.io/rjc-conhecimento/federal/legislacao/atos/decreto-12991-2026-pis-cofins-combustiveis.html
 https://mjrrafael.github.io/rjc-conhecimento/federal/legislacao/atos/decreto-3048-1999-rps.html
 https://mjrrafael.github.io/rjc-conhecimento/federal/legislacao/atos/decreto-6306-2007-iof.html
 https://mjrrafael.github.io/rjc-conhecimento/federal/legislacao/atos/decreto-8373-2014-esocial.html
@@ -525,6 +528,7 @@ https://mjrrafael.github.io/rjc-conhecimento/federal/legislacao/atos/decretos-ti
 https://mjrrafael.github.io/rjc-conhecimento/federal/legislacao/atos/ec-132-2023-reforma.html
 https://mjrrafael.github.io/rjc-conhecimento/federal/legislacao/atos/in-rfb-2121-2022-pis-cofins.html
 https://mjrrafael.github.io/rjc-conhecimento/federal/legislacao/atos/in-rfb-2324-2026-ipi-suspensao.html
+https://mjrrafael.github.io/rjc-conhecimento/federal/legislacao/atos/in-rfb-2326-2026-valor-aduaneiro.html
 https://mjrrafael.github.io/rjc-conhecimento/federal/legislacao/atos/it-2025-002-tabelas-reforma.html
 https://mjrrafael.github.io/rjc-conhecimento/federal/legislacao/atos/lc-214-2025-reforma.html
 https://mjrrafael.github.io/rjc-conhecimento/federal/legislacao/atos/lc-227-2026-cgibs.html
@@ -553,6 +557,7 @@ https://mjrrafael.github.io/rjc-conhecimento/federal/legislacao/atos/lei-9718-19
 https://mjrrafael.github.io/rjc-conhecimento/federal/legislacao/atos/mpv-1357-2026-remessas-postais.html
 https://mjrrafael.github.io/rjc-conhecimento/federal/legislacao/atos/nt-2025-002-rtc-nfe.html
 https://mjrrafael.github.io/rjc-conhecimento/federal/legislacao/atos/portaria-mf-cgibs-7-2026.html
+https://mjrrafael.github.io/rjc-conhecimento/federal/legislacao/atos/portaria-rfb-688-2026-transparencia-dirbi.html
 https://mjrrafael.github.io/rjc-conhecimento/federal/legislacao/atos/resolucao-cgibs-6-2026-ibs.html
 https://mjrrafael.github.io/rjc-conhecimento/federal/legislacao/atos/rfb-marcos-reforma.html
 https://mjrrafael.github.io/rjc-conhecimento/federal/legislacao/atos/rfb-orientacoes-reforma-2026.html
@@ -604,6 +609,7 @@ https://mjrrafael.github.io/rjc-conhecimento/federal/legislacao/irpj/contribuint
 https://mjrrafael.github.io/rjc-conhecimento/federal/legislacao/irpj/index.html
 https://mjrrafael.github.io/rjc-conhecimento/federal/legislacao/irpj/lucro-presumido.html
 https://mjrrafael.github.io/rjc-conhecimento/federal/legislacao/irpj/lucro-real.html
+https://mjrrafael.github.io/rjc-conhecimento/federal/legislacao/irpj/transparencia-beneficios-dirbi.html
 https://mjrrafael.github.io/rjc-conhecimento/federal/legislacao/pis/beneficios-monofasico.html
 https://mjrrafael.github.io/rjc-conhecimento/federal/legislacao/pis/cumulativo.html
 https://mjrrafael.github.io/rjc-conhecimento/federal/legislacao/pis/importacao.html

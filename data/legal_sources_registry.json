@@ -1,6 +1,6 @@
 {
   "schema": "rjc-legal-sources-v1",
-  "updated_on": "25/05/2026",
+  "updated_on": "06/06/2026",
   "editorial_rule": "Cada tese publicada deve apontar o ato oficial, manter o texto em tela e registrar o caminho de continuidade por tema.",
   "change_protocol": [
     "adicionar ou atualizar a fonte em scripts/legal_modules.py",
@@ -73,6 +73,38 @@
       ]
     },
     {
+      "source_id": "ato-conjunto-rfb-cgibs-2-2026-split-payment",
+      "jurisdiction": "Federal",
+      "title": "Ato Conjunto RFB/CGIBS 2/2026 - Plataforma Publica do Split Payment",
+      "short": "Ato Conjunto 2/2026",
+      "official_url": "https://normas.receita.fazenda.gov.br/sijut2consulta/link.action?antigo=1&idAto=151582",
+      "storage": {
+        "type": "repo_text",
+        "files": [],
+        "repo_files": [
+          "data/legal_sources/reforma_tributaria/Ato_Conjunto_RFB_CGIBS_2_2026_Split_Payment.txt"
+        ],
+        "sha256": {
+          "data/legal_sources/reforma_tributaria/Ato_Conjunto_RFB_CGIBS_2_2026_Split_Payment.txt": "bea570b5da8c45d6c88c287718bce9f01096c1f9d07ed5c9f2d97e324c8cb3ff"
+        },
+        "fetch_url": ""
+      },
+      "note": "Autoriza a publicacao do Manual de Integracao e do Swagger da Plataforma Publica do Split Payment para CBS e IBS.",
+      "render": "articles",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "reforma-tributaria",
+          "module_title": "Reforma Tributária: legislação em tela",
+          "chapters": [
+            "base-creditos-recolhimento-split-regulamento",
+            "creditos-recolhimento-split-payment"
+          ]
+        }
+      ]
+    },
+    {
       "source_id": "clt-1943",
       "jurisdiction": "Federal",
       "title": "Decreto-Lei 5.452/1943 - Consolidacao das Leis do Trabalho",
@@ -136,6 +168,44 @@
             "importacao-exportacao-regulamento-ibs-cbs",
             "incidencia-imunidades-fato-gerador-regulamento",
             "regulamentos-publicados-ibs-cbs"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "decreto-12991-2026-pis-cofins-combustiveis",
+      "jurisdiction": "Federal",
+      "title": "Decreto 12.991/2026 - PIS/Cofins sobre querosene de aviacao e biodiesel",
+      "short": "Decreto 12.991/2026",
+      "official_url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2026/decreto/d12991.htm",
+      "storage": {
+        "type": "repo_text",
+        "files": [],
+        "repo_files": [
+          "data/legal_sources/federal/Decreto_12991_2026_PIS_COFINS_Combustiveis.txt"
+        ],
+        "sha256": {
+          "data/legal_sources/federal/Decreto_12991_2026_PIS_COFINS_Combustiveis.txt": "1acc12c11d27f13213b451a82838da5529e316aa060db42e8bd40ad469a458af"
+        },
+        "fetch_url": ""
+      },
+      "note": "Prorroga coeficientes de reducao de PIS/Pasep e Cofins incidentes sobre importacao e comercializacao de querosene de aviacao e biodiesel.",
+      "render": "articles",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "pis",
+          "module_title": "PIS/Pasep: legislacao em tela",
+          "chapters": [
+            "beneficios-monofasico"
+          ]
+        },
+        {
+          "module_id": "cofins",
+          "module_title": "Cofins: legislacao em tela",
+          "chapters": [
+            "beneficios-monofasico"
           ]
         }
       ]
@@ -505,6 +575,37 @@
           "module_title": "IPI: legislacao em tela",
           "chapters": [
             "suspensoes-isencoes"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "in-rfb-2326-2026-valor-aduaneiro",
+      "jurisdiction": "Federal",
+      "title": "IN RFB 2.326/2026 - valor aduaneiro",
+      "short": "IN RFB 2.326/2026",
+      "official_url": "https://normas.receita.fazenda.gov.br/sijut2consulta/link.action?antigo=1&idAto=151412",
+      "storage": {
+        "type": "repo_text",
+        "files": [],
+        "repo_files": [
+          "data/legal_sources/federal/IN_RFB_2326_2026_Valor_Aduaneiro.txt"
+        ],
+        "sha256": {
+          "data/legal_sources/federal/IN_RFB_2326_2026_Valor_Aduaneiro.txt": "29d5295d628dfb81b4c1b2d9f4cbd4e5985d0c9594484d5ab74444cd35c12c0d"
+        },
+        "fetch_url": ""
+      },
+      "note": "Altera a IN RFB 2.090/2022 para atualizar referencias, opinioes consultivas, notas explicativas e estudos de caso do CTVA/OMA sobre valor aduaneiro.",
+      "render": "articles",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "aduaneiro",
+          "module_title": "Aduaneiro e remessas internacionais: legislacao em tela",
+          "chapters": [
+            "valor-aduaneiro-in-rfb-2326"
           ]
         }
       ]
@@ -1448,6 +1549,37 @@
           "module_title": "Reforma Tributária: legislação em tela",
           "chapters": [
             "regulamentos-publicados-ibs-cbs"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "portaria-rfb-688-2026-transparencia-dirbi",
+      "jurisdiction": "Federal",
+      "title": "Portaria RFB 688/2026 - transparencia ativa de beneficios e Dirbi",
+      "short": "Portaria RFB 688/2026",
+      "official_url": "https://normas.receita.fazenda.gov.br/sijut2consulta/link.action?antigo=1&idAto=151498",
+      "storage": {
+        "type": "repo_text",
+        "files": [],
+        "repo_files": [
+          "data/legal_sources/federal/Portaria_RFB_688_2026_Transparencia_DIRBI.txt"
+        ],
+        "sha256": {
+          "data/legal_sources/federal/Portaria_RFB_688_2026_Transparencia_DIRBI.txt": "bd9fdd4358181429ab192407e130fe0d2f0a7e10e5b32d03d287e0ee006b9e79"
+        },
+        "fetch_url": ""
+      },
+      "note": "Altera a Portaria RFB 319/2023 para tratar da transparencia ativa de incentivos, renuncias, beneficios e imunidades, com prevalencia de informacoes coletadas via Dirbi.",
+      "render": "articles",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "irpj",
+          "module_title": "IRPJ: legislacao em tela",
+          "chapters": [
+            "transparencia-beneficios-dirbi"
           ]
         }
       ]
