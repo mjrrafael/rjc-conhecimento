@@ -83,10 +83,19 @@
 - `python -X dev scripts/audit_portal.py`: 651 paginas HTML auditadas, sem falhas.
 - `portal_monitor.py --live` pos-atualizacao: `docs/monitoramento/portal-monitor-2026-06-06-pos-atualizacao.md`; 651 paginas HTML, 0 critico, 0 alto, 2 medios.
 
+## Validacao GitHub Pages pos-push
+
+- Commit publicado: `afe53e9`.
+- URLs novas validadas com HTTP 200 e conteudo esperado:
+  - https://mjrrafael.github.io/rjc-conhecimento/federal/legislacao/atos/ato-conjunto-rfb-cgibs-2-2026-split-payment.html
+  - https://mjrrafael.github.io/rjc-conhecimento/federal/legislacao/atos/decreto-12991-2026-pis-cofins-combustiveis.html
+  - https://mjrrafael.github.io/rjc-conhecimento/federal/legislacao/aduaneiro/valor-aduaneiro-in-rfb-2326.html
+  - https://mjrrafael.github.io/rjc-conhecimento/sitemap.xml
+  - https://mjrrafael.github.io/rjc-conhecimento/assets/llm-manifest.json
+
 ## Pendencias reais
 
 - `data/benefits_crosswalk.json` segue acima de 50 MB; dividir matriz/pagina continua sendo melhoria tecnica pendente.
-- GitHub Pages ainda mostrava artefatos antigos no monitor live pos-atualizacao porque as mudancas ainda nao tinham sido commitadas e publicadas naquele momento.
 - Bahia Liquida Bahia 2026: localizar e capturar texto integral oficial do Decreto 24.538/2026 antes de qualquer conclusao aplicada.
 - CGIBS e alguns portais estaduais com bloqueio/reset no scan devem ser revisitados em proxima rodada.
 - Search Console/indexacao real continuam fora da prova tecnica local; confirmar por Search Console ou URL Inspection.
