@@ -591,7 +591,7 @@
 - [Lei 9.715/1998 - PIS/Pasep | RJC Assessoria](https://mjrrafael.github.io/rjc-conhecimento/federal/legislacao/atos/lei-9715-1998-pis.html)
 - [Lei 9.718/1998 - PIS/Cofins no regime cumulativo | RJC Assessoria](https://mjrrafael.github.io/rjc-conhecimento/federal/legislacao/atos/lei-9718-1998-pis-cofins.html)
 - [Medida Provisoria 1.357/2026 - remessas postais internacionais | RJC Assessoria](https://mjrrafael.github.io/rjc-conhecimento/federal/legislacao/atos/mpv-1357-2026-remessas-postais.html)
-- [Nota Técnica 2025.002 v1.35 - adequações NF-e/NFC-e para IBS, CBS e IS | RJC Assessoria](https://mjrrafael.github.io/rjc-conhecimento/federal/legislacao/atos/nt-2025-002-rtc-nfe.html)
+- [Nota Técnica 2025.002 v1.35 - referência histórica superada para NF-e/NFC-e na Reforma | RJC Assessoria](https://mjrrafael.github.io/rjc-conhecimento/federal/legislacao/atos/nt-2025-002-rtc-nfe.html)
 - [Portaria Conjunta MF/CGIBS 7/2026 - disposicoes comuns IBS/CBS | RJC Assessoria](https://mjrrafael.github.io/rjc-conhecimento/federal/legislacao/atos/portaria-mf-cgibs-7-2026.html)
 - [Portaria RFB 688/2026 - transparencia ativa de benefícios e Dirbi | RJC Assessoria](https://mjrrafael.github.io/rjc-conhecimento/federal/legislacao/atos/portaria-rfb-688-2026-transparencia-dirbi.html)
 - [Resolucao CGIBS 6/2026 - Regulamento do IBS | RJC Assessoria](https://mjrrafael.github.io/rjc-conhecimento/federal/legislacao/atos/resolucao-cgibs-6-2026-ibs.html)

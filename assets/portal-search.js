@@ -752,7 +752,7 @@ window.RJC_SEARCH = [
   {
     "title": "Reforma Tributária: legislação em tela - NF-e e NFC-e na Reforma: campos, validações e ERP",
     "url": "federal/legislacao/reforma-tributaria/documentos-fiscais-nfe-nfce-rtc.html",
-    "summary": "Nota Técnica 2025.002 v1.35 em tela para entender leiaute, grupos de IBS, CBS, IS e regras de validação.",
+    "summary": "Leitura historica da NT 2025.002 v1.35, com alerta para conferir a versao mais recente no SVRS antes de parametrizar NF-e/NFC-e.",
     "tags": "reforma-tributaria documentos-fiscais-nfe-nfce-rtc NF-e e NFC-e na Reforma: campos, validações e ERP"
   },
   {
@@ -1092,10 +1092,10 @@ window.RJC_SEARCH = [
     "tags": "it-2025-002-tabelas-reforma Federal IT 2025.002 v1.50"
   },
   {
-    "title": "Nota Técnica 2025.002 v1.35 - adequações NF-e/NFC-e para IBS, CBS e IS",
+    "title": "Nota Técnica 2025.002 v1.35 - referência histórica superada para NF-e/NFC-e na Reforma",
     "url": "federal/legislacao/atos/nt-2025-002-rtc-nfe.html",
-    "summary": "Nota técnica de leiaute, campos e regras de validação da NF-e e NFC-e para a Reforma Tributária do Consumo.",
-    "tags": "nt-2025-002-rtc-nfe Federal NT 2025.002 v1.35"
+    "summary": "ATENCAO: transcricao local historica da v1.35. Conferir a versao mais recente publicada no portal SVRS/NF-e antes de parametrizar NF-e/NFC-e.",
+    "tags": "nt-2025-002-rtc-nfe Federal NT 2025.002 v1.35 histórica"
   },
   {
     "title": "Decreto GO 4.852/1997 - RCTE",

@@ -1493,8 +1493,8 @@
     {
       "source_id": "nt-2025-002-rtc-nfe",
       "jurisdiction": "Federal",
-      "title": "Nota Técnica 2025.002 v1.35 - adequações NF-e/NFC-e para IBS, CBS e IS",
-      "short": "NT 2025.002 v1.35",
+      "title": "Nota Técnica 2025.002 v1.35 - referência histórica superada para NF-e/NFC-e na Reforma",
+      "short": "NT 2025.002 v1.35 histórica",
       "official_url": "https://dfe-portal.svrs.rs.gov.br/Nfe/Documentos",
       "storage": {
         "type": "repo_text",
@@ -1503,11 +1503,11 @@
           "data/legal_sources/reforma_tributaria/NT_2025_002_v1_35_RTC_NFe_IBS_CBS_IS.txt"
         ],
         "sha256": {
-          "data/legal_sources/reforma_tributaria/NT_2025_002_v1_35_RTC_NFe_IBS_CBS_IS.txt": "1770d65192dfcf1864acae5abe549f01a3e040780bbae4e4c963086ca06ed40c"
+          "data/legal_sources/reforma_tributaria/NT_2025_002_v1_35_RTC_NFe_IBS_CBS_IS.txt": "235267158c0081922eac27776da2360451456b86a922c1a001d7552c79442928"
         },
         "fetch_url": ""
       },
-      "note": "Nota técnica de leiaute, campos e regras de validação da NF-e e NFC-e para a Reforma Tributária do Consumo.",
+      "note": "ATENCAO: transcricao local historica da v1.35. Para parametrizacao atual de NF-e/NFC-e da Reforma, conferir a versao mais recente publicada no portal SVRS/NF-e; em 14/06/2026 a referencia operacional localizada foi a v1.50.",
       "render": "structured_text",
       "source_ranges": [],
       "modified_by": [],

@@ -20,7 +20,24 @@ from urllib.request import Request, urlopen
 
 
 ROOT = Path(__file__).resolve().parents[1]
-BD_ROOT = Path(os.environ.get("RJC_BD_LEGISLACAO", r"C:\Users\kris2\OneDrive\COWORK\BD_LEGISLACAO"))
+
+
+def resolve_bd_root() -> Path:
+    configured = os.environ.get("RJC_BD_LEGISLACAO")
+    if configured:
+        return Path(configured)
+
+    candidates = [
+        Path.home() / "OneDrive" / "COWORK" / "BD_LEGISLACAO",
+        Path(r"C:\Users\kris2\OneDrive\COWORK\BD_LEGISLACAO"),
+    ]
+    for candidate in candidates:
+        if (candidate / "#FEDERAIS-COMPILADO-ONLINE" / "legislacao_txt_completa").exists():
+            return candidate
+    return candidates[0]
+
+
+BD_ROOT = resolve_bd_root()
 FEDERAL_ROOT = BD_ROOT / "#FEDERAIS-COMPILADO-ONLINE" / "legislacao_txt_completa"
 REPO_SOURCE_ROOT = ROOT / "data" / "legal_sources"
 UPDATED_ON = "06/06/2026"
@@ -821,12 +838,12 @@ SOURCE_DEFS: dict[str, dict] = {
     },
     "nt-2025-002-rtc-nfe": {
         "jurisdiction": "Federal",
-        "title": "Nota Técnica 2025.002 v1.35 - adequações NF-e/NFC-e para IBS, CBS e IS",
-        "short": "NT 2025.002 v1.35",
+        "title": "Nota Técnica 2025.002 v1.35 - referência histórica superada para NF-e/NFC-e na Reforma",
+        "short": "NT 2025.002 v1.35 histórica",
         "url": "https://dfe-portal.svrs.rs.gov.br/Nfe/Documentos",
         "repo_files": ["data/legal_sources/reforma_tributaria/NT_2025_002_v1_35_RTC_NFe_IBS_CBS_IS.txt"],
         "render": "structured_text",
-        "note": "Nota técnica de leiaute, campos e regras de validação da NF-e e NFC-e para a Reforma Tributária do Consumo.",
+        "note": "ATENCAO: transcricao local historica da v1.35. Para parametrizacao atual de NF-e/NFC-e da Reforma, conferir a versao mais recente publicada no portal SVRS/NF-e; em 14/06/2026 a referencia operacional localizada foi a v1.50.",
     },
     "rcte-go": {
         "jurisdiction": "GO",
@@ -1593,6 +1610,7 @@ LEGAL_MODULES: list[dict] = [
                 ],
                 "analysis": [
                     "Em 2026, a Reforma entra pelo documento fiscal. O Ato Conjunto lista os documentos recepcionados e fixa o dever de emitir documento fiscal eletrônico nas operações com bens e serviços, inclusive importação e exportação.",
+                    "A referencia local da NT 2025.002 v1.35 e apenas memoria historica ate captura integral da versao mais recente. Antes de aplicar leiaute, schema ou regra de validacao, conferir o documento atual no portal SVRS/NF-e.",
                     "A leitura para o departamento fiscal é direta: NF-e, NFC-e, NFS-e, CT-e, CT-e OS, BP-e, MDF-e, GTV-e e demais documentos reconhecidos precisam conversar com CST, cClassTrib, base, alíquota e campos técnicos. O ERP deve ser testado por cenário real, não apenas por exemplo genérico.",
                 ],
             },
@@ -1749,12 +1767,13 @@ LEGAL_MODULES: list[dict] = [
             {
                 "id": "documentos-fiscais-nfe-nfce-rtc",
                 "title": "NF-e e NFC-e na Reforma: campos, validações e ERP",
-                "summary": "Nota Técnica 2025.002 v1.35 em tela para entender leiaute, grupos de IBS, CBS, IS e regras de validação.",
+                "summary": "Leitura historica da NT 2025.002 v1.35, com alerta para conferir a versao mais recente no SVRS antes de parametrizar NF-e/NFC-e.",
                 "refs": [
                     {"source": "nt-2025-002-rtc-nfe", "full_text": True},
                     {"source": "it-2025-002-tabelas-reforma", "full_text": True},
                 ],
                 "analysis": [
+                    "A NT 2025.002 v1.35 exibida aqui permanece como memoria tecnica historica. Antes de configurar ERP, schema, validacao ou regra operacional, a equipe deve confrontar a versao vigente no portal SVRS/NF-e; em 14/06/2026 a revisao local apontou a v1.50 como referencia operacional mais recente.",
                     "A Reforma não chega ao contribuinte apenas por uma lei nova; ela chega pelo XML. Se o ERP não conhece grupos, campos, CST, cClassTrib, cCredPres, alíquotas e validações, a tese jurídica correta não se transforma em documento fiscal válido.",
                     "A leitura da NT deve ser feita por perfil: fiscal define enquadramento; tecnologia parametriza campos; compras e vendas testam cenários; auditoria verifica XML autorizado, rejeições, memória de cálculo e consistência com contrato e cadastro.",
                     "A rotina recomendada é criar massa de teste por operação: tributação integral, redução, isenção, suspensão, não incidência, crédito presumido, monofasia, imposto seletivo, devolução e operação com benefício de ICMS em convivência.",

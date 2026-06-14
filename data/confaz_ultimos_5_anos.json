@@ -1,6 +1,6 @@
 {
   "schema": "rjc-confaz-5y-index-v2",
-  "generated_on": "2026-06-06",
+  "generated_on": "2026-06-14",
   "years": [
     2022,
     2023,
@@ -5775,7 +5775,7 @@
         {
           "year": 2026,
           "index_url": "https://www.confaz.fazenda.gov.br/legislacao/convenios/2026",
-          "count": 56,
+          "count": 62,
           "fetch_error": "",
           "acts": [
             {
@@ -6169,11 +6169,53 @@
               "themes": [
                 "a_classificar"
               ]
+            },
+            {
+              "title": "CONVÊNIO ICMS 57/26",
+              "url": "https://www.confaz.fazenda.gov.br/legislacao/convenios/2026/CV057_26",
+              "themes": [
+                "a_classificar"
+              ]
+            },
+            {
+              "title": "CONVÊNIO ICMS 58/26",
+              "url": "https://www.confaz.fazenda.gov.br/legislacao/convenios/2026/CV058_26",
+              "themes": [
+                "a_classificar"
+              ]
+            },
+            {
+              "title": "CONVÊNIO ICMS 59/26",
+              "url": "https://www.confaz.fazenda.gov.br/legislacao/convenios/2026/CV059_26",
+              "themes": [
+                "a_classificar"
+              ]
+            },
+            {
+              "title": "CONVÊNIO ICMS 60/26",
+              "url": "https://www.confaz.fazenda.gov.br/legislacao/convenios/2026/CV060_26",
+              "themes": [
+                "a_classificar"
+              ]
+            },
+            {
+              "title": "CONVÊNIO ICMS 61/26",
+              "url": "https://www.confaz.fazenda.gov.br/legislacao/convenios/2026/CV061_26",
+              "themes": [
+                "a_classificar"
+              ]
+            },
+            {
+              "title": "CONVÊNIO ICMS 62/26",
+              "url": "https://www.confaz.fazenda.gov.br/legislacao/convenios/2026/CV062_26",
+              "themes": [
+                "a_classificar"
+              ]
             }
           ]
         }
       ],
-      "total": 874
+      "total": 880
     },
     "ajustes": {
       "title": "Ajustes SINIEF",
