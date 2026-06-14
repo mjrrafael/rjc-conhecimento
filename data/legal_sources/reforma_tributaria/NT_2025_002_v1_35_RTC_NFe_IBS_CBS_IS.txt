@@ -1,11 +1,13 @@
-# Nota Tecnica 2025.002 v1.35 - adequacoes NF-e/NFC-e para IBS, CBS e IS
+# Nota Tecnica 2025.002 v1.35 - referencia historica superada para NF-e/NFC-e na Reforma
+
+ATENCAO EDITORIAL RJC (14/06/2026): esta transcricao local preserva a v1.35 como memoria historica. Para parametrizacao atual de NF-e/NFC-e da Reforma Tributaria, conferir a versao mais recente no portal oficial SVRS/NF-e; a revisao local de 14/06/2026 localizou a v1.50 como referencia operacional mais recente.
 
 Fonte de publicacao: https://dfe-portal.svrs.rs.gov.br/Nfe/Documentos
 Arquivo: NT_2025_002_v1_35_RTC_NFe_IBS_CBS_IS.pdf
 Referencia de download no portal: download_arquivo_estatico('NFE', 3, 'NT_2025.002_v1.35_RTC_NF-e_IBS_CBS_IS.pdf')
 
 A nota técnica trata da adequação dos leiautes da NF-e e da NFC-e aos campos e regras de validação da Reforma Tributária do Consumo.
-Ela é leitura operacional para ERP, emissão, auditoria de XML e parametrização fiscal.
+Este arquivo nao deve ser usado sozinho para ERP, emissao, auditoria de XML ou parametrizacao fiscal atual; antes de aplicar, confrontar a versao vigente no portal SVRS/NF-e.
 
 ## Texto integral extraido do documento
 ## Pagina 1

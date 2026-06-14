@@ -11,6 +11,7 @@ from __future__ import annotations
 
 import hashlib
 import json
+import os
 import re
 import sys
 import unicodedata
@@ -35,7 +36,25 @@ from validated_benefits import build_validated_benefits  # noqa: E402
 
 
 TODAY = date.today().isoformat()
-BD_FEDERAL = Path(r"C:\Users\kris2\OneDrive\COWORK\BD_LEGISLACAO\#FEDERAIS-COMPILADO-ONLINE\legislacao_txt_completa")
+
+
+def resolve_bd_federal() -> Path:
+    configured = os.environ.get("RJC_BD_LEGISLACAO")
+    candidates = []
+    if configured:
+        candidates.append(Path(configured))
+    candidates.extend([
+        Path.home() / "OneDrive" / "COWORK" / "BD_LEGISLACAO",
+        Path(r"C:\Users\kris2\OneDrive\COWORK\BD_LEGISLACAO"),
+    ])
+    for candidate in candidates:
+        federal = candidate / "#FEDERAIS-COMPILADO-ONLINE" / "legislacao_txt_completa"
+        if federal.exists():
+            return federal
+    return candidates[0] / "#FEDERAIS-COMPILADO-ONLINE" / "legislacao_txt_completa"
+
+
+BD_FEDERAL = resolve_bd_federal()
 
 OUT_TAXONOMY = ROOT / "data" / "master_taxonomy.json"
 OUT_COVERAGE = ROOT / "data" / "master_source_coverage.json"

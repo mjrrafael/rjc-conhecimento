@@ -179,11 +179,11 @@ def main() -> int:
 
     nt_text = write_pdf_source(
         ORIG_DIR / "NT_2025_002_v1_35_RTC_NFe_IBS_CBS_IS.pdf",
-        "Nota Tecnica 2025.002 v1.35 - adequacoes NF-e/NFC-e para IBS, CBS e IS",
+        "Nota Tecnica 2025.002 v1.35 - referencia historica superada para NF-e/NFC-e",
         "download_arquivo_estatico('NFE', 3, 'NT_2025.002_v1.35_RTC_NF-e_IBS_CBS_IS.pdf')",
         [
-            "A nota técnica trata da adequação dos leiautes da NF-e e da NFC-e aos campos e regras de validação da Reforma Tributária do Consumo.",
-            "Ela é leitura operacional para ERP, emissão, auditoria de XML e parametrização fiscal.",
+            "A versão 1.35 deve permanecer marcada como referência histórica, pois foi superada por versões posteriores da NT 2025.002.",
+            "Não utilizar esta versão como orientação operacional vigente sem captura e validação da versão vigente publicada no Portal NF-e.",
         ],
     )
     (OUT_DIR / "NT_2025_002_v1_35_RTC_NFe_IBS_CBS_IS.txt").write_text(nt_text, encoding="utf-8")
