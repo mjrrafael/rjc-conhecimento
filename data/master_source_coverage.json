@@ -1,6 +1,6 @@
 {
   "schema": "rjc-master-source-coverage-v2",
-  "generated_on": "2026-06-06",
+  "generated_on": "2026-06-14",
   "summary": {
     "federal_requirements": 15,
     "federal_published": 11,
@@ -406,26 +406,26 @@
         {
           "file": "data/legal_sources/reforma_tributaria/Decreto_12955_2026_Regulamento_CBS.txt",
           "available": true,
-          "size": 890325,
-          "sha256": "15973a783600b48fc662d834681fc6660e75eb07bf6e312b41f081925322c172"
+          "size": 907734,
+          "sha256": "5ca71d99f1e10aa7465fc109f4a8a5600b8311e228b29871b8d22a309ac821cd"
         },
         {
           "file": "data/legal_sources/reforma_tributaria/Resolucao_CGIBS_6_2026_Regulamento_IBS.txt",
           "available": true,
-          "size": 969046,
-          "sha256": "a3da82f3b3d803bb3a790f67224a84c528583ee792a97b3b4e6788880fba5646"
+          "size": 983226,
+          "sha256": "100d4beedc5a22a8b0f49fbce6b708e0ff9d71a67e0359d36f4237600fa81810"
         },
         {
           "file": "data/legal_sources/reforma_tributaria/Portaria_Conjunta_MF_CGIBS_7_2026.txt",
           "available": true,
-          "size": 1811,
-          "sha256": "4f37c9a8a973951de085c660ea527104dc55cbfd8a16101147db6012710cee76"
+          "size": 1848,
+          "sha256": "b27e6222407043d7a10c16d79f90f28709d4507ca49ecba106a1fe62e3905100"
         },
         {
           "file": "data/legal_sources/reforma_tributaria/Ato_Conjunto_RFB_CGIBS_1_2025_Obrigacoes_2026.txt",
           "available": true,
-          "size": 5582,
-          "sha256": "46d6c2798ea17601e3c589d422654e45147dcd14c72accacaa2bf11da8a61c2f"
+          "size": 5747,
+          "sha256": "85531e13a347c385992923f4ea3c523ff610de7529de9775940acde7b242fbbf"
         }
       ],
       "minimum": "EC 132, LC 214, LC 227, Decreto CBS, Resolucao IBS, Portaria comum, Ato Conjunto 2026, CST, cClassTrib, cCredPres, transicao e documentos fiscais",

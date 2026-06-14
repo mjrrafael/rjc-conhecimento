@@ -13,10 +13,11 @@ Este arquivo resume cobertura e cruzamentos do Portal RJC Tributario Aberto. Ele
 - Estados profundos: 13
 - Estados aguardando revisao: 0
 - Estados revisados sem aprovacao profunda: 14
-- Entradas validadas na matriz de beneficios: 12246
-- Entradas com NCM/TIPI: 2389
-- Entradas com CEST: 268
-- Entradas com cBenef: 2259
+- Entradas validadas na matriz de beneficios: 9727
+- Entradas em quarentena editorial: 13137
+- Entradas com NCM/TIPI: 1752
+- Entradas com CEST: 174
+- Entradas com cBenef: 3633
 
 ## Lacunas Federais
 

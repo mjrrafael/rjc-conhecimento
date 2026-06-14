@@ -2,7 +2,7 @@
   "site": {
     "title": "Portal RJC Tributario Aberto",
     "subtitle": "Legislacao tributaria brasileira organizada por Estado, tributo, regime e prova documental.",
-    "verified_on": "17/05/2026",
+    "verified_on": "14/06/2026",
     "repository_state": "v1 arquitetura nacional, federal profundo, Estados pendentes revisados com ressalvas e Folha/CLT saneada",
     "source_policy": "A publicacao so ocorre quando a regra esta amarrada a texto legal, fonte publica, contexto de vigencia e prova operacional."
   },
@@ -51,7 +51,7 @@
         {"label": "IN 1.518/2022-GSE - cBenef Goias", "url": "https://appasp.economia.go.gov.br/Legislacao/arquivos/Secretario/IN/IN_1518_2022.htm"},
         {"label": "Secretaria da Economia de Goias - Legislacao Tributaria", "url": "https://goias.gov.br/economia/categoria/institucional/legislacao/tributaria/"}
       ],
-      "data_conferencia": "25/04/2026",
+      "data_conferencia": "14/06/2026",
       "status_curadoria": "Publicado v1 - base legal em tela",
       "links_relacionados": [
         {"label": "Painel Fiscal - cBenef Goias", "href": "../painel-fiscal/index.html#cbenef"},
@@ -142,7 +142,7 @@
         {"label": "LC 24/1975 - Planalto", "url": "https://www.planalto.gov.br/ccivil_03/leis/LCP/Lcp24.htm"},
         {"label": "LC 160/2017 - Planalto", "url": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp160.htm"}
       ],
-      "data_conferencia": "25/04/2026",
+      "data_conferencia": "14/06/2026",
       "status_curadoria": "Publicado v1 - base legal em tela",
       "links_relacionados": [
         {"label": "Goias: beneficios fiscais", "href": "../estados/goias.html"},
@@ -219,7 +219,7 @@
         {"label": "Lei 10.833/2003 - Planalto", "url": "https://www.planalto.gov.br/ccivil_03/leis/2003/l10.833.htm"},
         {"label": "Lei 10.865/2004 - Planalto", "url": "https://www.planalto.gov.br/ccivil_03/_ato2004-2006/2004/lei/l10.865.htm"}
       ],
-      "data_conferencia": "25/04/2026",
+      "data_conferencia": "14/06/2026",
       "status_curadoria": "Publicado v1 - base legal em tela",
       "links_relacionados": [
         {"label": "Beneficios federais e DIRBI", "href": "beneficios-federais.html"},
@@ -288,7 +288,7 @@
         {"label": "Receita Federal - Legislação", "url": "https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/legislacao"},
         {"label": "TIPI - Decreto 11.158/2022", "url": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2022/decreto/d11158.htm"}
       ],
-      "data_conferencia": "25/04/2026",
+      "data_conferencia": "14/06/2026",
       "status_curadoria": "Publicado v1 - base legal em tela",
       "links_relacionados": [
         {"label": "PIS/Cofins por NCM", "href": "pis-cofins.html"},
@@ -339,7 +339,7 @@
         {"label": "Lei 9.249/1995", "url": "https://www.planalto.gov.br/ccivil_03/leis/l9249.htm"},
         {"label": "Lei 9.430/1996", "url": "https://www.planalto.gov.br/ccivil_03/leis/l9430.htm"}
       ],
-      "data_conferencia": "25/04/2026",
+      "data_conferencia": "14/06/2026",
       "status_curadoria": "Publicado v1 - base legal em tela",
       "links_relacionados": [
         {"label": "Lucro Real", "href": "lucro-real.html"},
@@ -389,7 +389,7 @@
         {"label": "RIR - Decreto 9.580/2018", "url": "https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/decreto/d9580.htm"},
         {"label": "SPED - ECF", "url": "https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/sped"}
       ],
-      "data_conferencia": "25/04/2026",
+      "data_conferencia": "14/06/2026",
       "status_curadoria": "Publicado v1 - base legal em tela",
       "links_relacionados": [
         {"label": "IRPJ e CSLL", "href": "irpj-csll.html"},
@@ -427,7 +427,7 @@
         {"label": "Lei 9.249/1995", "url": "https://www.planalto.gov.br/ccivil_03/leis/l9249.htm"},
         {"label": "Lei 9.430/1996", "url": "https://www.planalto.gov.br/ccivil_03/leis/l9430.htm"}
       ],
-      "data_conferencia": "25/04/2026",
+      "data_conferencia": "14/06/2026",
       "status_curadoria": "Publicado v1 - base legal em tela",
       "links_relacionados": [
         {"label": "IRPJ e CSLL", "href": "irpj-csll.html"},
@@ -466,7 +466,7 @@
         {"label": "LC 224/2025 - Planalto", "url": "https://www.planalto.gov.br/ccivil_03/leis/lcp/Lcp224.htm"},
         {"label": "Receita Federal - Beneficios Fiscais", "url": "https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/beneficios"}
       ],
-      "data_conferencia": "25/04/2026",
+      "data_conferencia": "14/06/2026",
       "status_curadoria": "Publicado v1 - base legal em tela",
       "links_relacionados": [
         {"label": "PIS/Cofins", "href": "pis-cofins.html"},
@@ -518,7 +518,7 @@
         {"label": "eSocial", "url": "https://www.gov.br/esocial/pt-br"},
         {"label": "Receita Federal - DCTFWeb", "url": "https://www.gov.br/receitafederal/pt-br/assuntos/orientacao-tributaria/declaracoes-e-demonstrativos/dctfweb"}
       ],
-      "data_conferencia": "25/04/2026",
+      "data_conferencia": "14/06/2026",
       "status_curadoria": "Publicado v1 - base legal em tela",
       "links_relacionados": [
         {"label": "Guia DP/RH", "href": "../guia-dp-rh.html#fechamento-2026"},

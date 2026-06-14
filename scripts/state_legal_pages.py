@@ -19,7 +19,7 @@ STATE_MAIN = BD_ROOT / "#ESTADUAIS-COMPILADO-NOTEBOOKLM"
 STATE_COMPLEMENT = BD_ROOT / "Estados_Complementar"
 CURATION_FILE = ROOT / "data" / "state_curadoria.json"
 SOURCE_PACK_ROOT = ROOT / "data" / "fontes-estaduais-curadas"
-UPDATED_ON = "25/04/2026"
+UPDATED_ON = "14/06/2026"
 
 STATE_NAMES = {
     "AC": "Acre",

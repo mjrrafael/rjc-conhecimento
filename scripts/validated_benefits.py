@@ -16,6 +16,7 @@ import sys
 import unicodedata
 import urllib.request
 from datetime import date
+from html import unescape
 from html.parser import HTMLParser
 from pathlib import Path
 
@@ -243,8 +244,89 @@ def sha256_bytes(raw: bytes) -> str:
     return hashlib.sha256(raw).hexdigest()
 
 
+PAGE_MARKER_RE = re.compile(
+    r"(?:=+\s*)?(?:PÁGINA|PAGINA|PÃ.?GINA)\s+\d+(?:\s*=+)?(?:\s+[A-Za-z0-9_.\\/-]+){0,10}",
+    re.I,
+)
+GENERIC_SCOPE_PREFIX = normalize("Produto ou operação descrito literalmente no trecho legal")
+BENEFIT_EFFECT_NEEDLES = [
+    "isencao",
+    "reducao de base",
+    "credito presumido",
+    "credito outorgado",
+    "diferimento",
+    "suspensao",
+    "aliquota zero",
+    "nao incidencia",
+    "imunidade",
+    "substituicao tributaria",
+    "antecipacao",
+    "monofasico",
+    "ccredpres",
+]
+OPERATION_CONTEXT_NEEDLES = [
+    "produto",
+    "mercadoria",
+    "operacao",
+    "saida",
+    "entrada",
+    "venda",
+    "importacao",
+    "exportacao",
+    "prestacao",
+    "revenda",
+    "fabricante",
+    "produtor",
+    "destinatario",
+    "industrializacao",
+]
+NON_BENEFIT_NOISE_NEEDLES = [
+    "auto de infracao",
+    "penalidade",
+    "multa",
+    "obrigacao acessoria",
+    "cadastro fiscal",
+    "suspensao de inscricao",
+    "cancelamento de inscricao",
+    "gia st",
+    "declaracao de conteudo eletronica",
+    "nfcom",
+    "livro fiscal",
+    "escrituracao fiscal",
+]
+SCOPE_DOCUMENT_NOISE_NEEDLES = [
+    "nota fiscal",
+    "nota fiscal avulsa",
+    "documento de arrecadacao",
+    "declaracao da movimentacao",
+    "dmd",
+    "efd",
+    "registro e110",
+    "registro e111",
+    "cod_aj_apur",
+    "vl_tot_aj",
+    "livros fiscais",
+    "devera emitir",
+    "devera ser emitida",
+    "deverao apresentar",
+    "informar mensalmente",
+    "campo 02",
+    "campo 08",
+]
+
+
+def sanitize_text(value: str) -> str:
+    clean = unescape(value or "")
+    clean = PAGE_MARKER_RE.sub(" ", clean)
+    clean = re.sub(r"\[\s*\]", " ", clean)
+    clean = clean.replace("\u00a0", " ")
+    clean = re.sub(r"\s+", " ", clean)
+    return clean.strip()
+
+
 def compact(value: str, limit: int = 900) -> str:
-    clean = " ".join((value or "").split())
+    clean = sanitize_text(value)
+    clean = " ".join(clean.split())
     if len(clean) <= limit:
         return clean
     return clean[: limit - 3].rsplit(" ", 1)[0] + "..."
@@ -467,6 +549,18 @@ def split_sentences(value: str) -> list[str]:
     return [piece.strip() for piece in pieces if len(piece.strip()) > 18]
 
 
+def is_transport_cfop_noise(excerpt: str, identifiers: list[str]) -> bool:
+    if identifiers:
+        return False
+    low = normalize(excerpt)
+    if "declaracao de conteudo eletronica" in low or "nfcom" in low:
+        return True
+    if "transportador autonomo" not in low and "onde iniciado o servico" not in low:
+        return False
+    cfops = re.findall(r"\b[1-7]\.\d{3}\b", excerpt)
+    return len(cfops) >= 2
+
+
 def sentences_matching(value: str, needles: list[str], default: str) -> str:
     low_needles = [normalize(needle) for needle in needles]
     hits = []
@@ -498,13 +592,193 @@ def infer_benefit_type(value: str) -> str:
 
 
 def classify_group(value: str) -> tuple[str, str]:
+    group_id, group_title, _evidence = classify_group_details(value)
+    return group_id, group_title
+
+
+def keyword_in_normalized_text(keyword: str, normalized_text: str) -> bool:
+    normalized_keyword = normalize(keyword)
+    if not normalized_keyword:
+        return False
+    if " " in normalized_keyword:
+        return normalized_keyword in normalized_text
+    return bool(re.search(rf"(?<![a-z0-9]){re.escape(normalized_keyword)}(?![a-z0-9])", normalized_text))
+
+
+def classify_group_details(value: str) -> tuple[str, str, list[str]]:
     low = normalize(value)
-    best = (0, "geral", "Geral e operação tributária")
+    best = (0, "geral", "Geral e operação tributária", [])
     for sector in BENEFIT_SECTOR_DEFS:
-        score = sum(1 for keyword in sector["keywords"] if normalize(keyword) in low)
+        evidence = [keyword for keyword in sector["keywords"] if keyword_in_normalized_text(keyword, low)]
+        score = len(evidence)
         if score > best[0]:
-            best = (score, sector["id"], sector["title"])
-    return best[1], best[2]
+            best = (score, sector["id"], sector["title"], evidence[:8])
+    return best[1], best[2], best[3]
+
+
+def has_benefit_effect(value: str) -> bool:
+    low = normalize(value)
+    return any(needle in low for needle in BENEFIT_EFFECT_NEEDLES)
+
+
+def has_noise_profile(value: str) -> bool:
+    low = normalize(value)
+    return any(needle in low for needle in NON_BENEFIT_NOISE_NEEDLES)
+
+
+def has_scope_document_noise(value: str) -> bool:
+    low = normalize(value)
+    return any(needle in low for needle in SCOPE_DOCUMENT_NOISE_NEEDLES)
+
+
+def is_table_of_contents_noise(value: str) -> bool:
+    low = normalize(value)
+    if "modelos de documentos fiscaisdisciplinados" in low or "parte 3 dos modelos de documentos" in low:
+        return True
+    return low.count("capitulo") >= 5 and low.count(" art ") < 2
+
+
+def is_generic_scope(value: str) -> bool:
+    low = normalize(value)
+    if not low:
+        return True
+    if low.startswith(GENERIC_SCOPE_PREFIX):
+        return True
+    generic = {
+        "aplicacao definida pela operacao descrita no dispositivo transcrito",
+        "produto ou operacao descrito literalmente no trecho legal",
+    }
+    return low in generic
+
+
+def clean_scope_value(value: str) -> str:
+    clean = sanitize_text(value)
+    clean = re.sub(
+        r"^(?:\d{1,4}(?:,\s*[A-ZXLVI]+)?\s+)?(?:\d{2}/\d{2}/\d{4}\s+){1,3}(?:RICMS/\d+\s+)?(?:\d+(?:\.\d+)?\s+)?(?:Decreto\s+[\d./-]+\s*)?",
+        "",
+        clean,
+    )
+    clean = re.sub(r"^\d{1,4},\s*[A-ZXLVI]+\s+", "", clean)
+    clean = re.sub(r"^(?:\d+(?:\.\d+)?\s+)?Decreto\s+[\d./-]+\s+", "", clean)
+    return clean.strip(" ;,")
+
+
+def is_incomplete_scope(value: str) -> bool:
+    low = normalize(value)
+    if not low:
+        return True
+    if low.endswith((" e", " ou", " de", " da", " do", " a", " o", " para", " com")):
+        return True
+    return low in {"produtor rural", "cooperativas", "associacoes", "fabricantes", "contribuintes"}
+
+
+def scope_has_operational_detail(value: str, identifiers: list[str]) -> bool:
+    if identifiers:
+        return True
+    value = clean_scope_value(value)
+    low = normalize(value)
+    if is_generic_scope(value):
+        return False
+    if is_incomplete_scope(value):
+        return False
+    if len(low.split()) < 5:
+        return False
+    if low.startswith(("considerando que", "para fruicao do beneficio", "contribuintes que")) and "produto" not in low and "mercadoria" not in low:
+        return False
+    return any(normalize(needle) in low for needle in OPERATION_CONTEXT_NEEDLES)
+
+
+def validity_status(source: dict, excerpt: str) -> str:
+    raw_end = str(source.get("validity_end", "") or "").strip()
+    if raw_end:
+        return f"vigencia ate {raw_end}"
+    low = normalize(excerpt)
+    if "ate 31 12" in low or "ate 30 11" in low or "efeitos ate" in low:
+        return "vigencia exige conferencia do periodo citado no trecho"
+    if "ibs" in low or "cbs" in low or "reforma tributaria" in low:
+        return "transicao IBS/CBS"
+    return "vigente conforme ato capturado"
+
+
+def build_scope_summary(
+    product: str,
+    operation: str,
+    identifiers: list[str],
+    ncm: list[str],
+    cest: list[str],
+    cbenef: list[str],
+    cst: list[str],
+    cclasstrib: list[str],
+) -> str:
+    parts: list[str] = []
+    product = clean_scope_value(product)
+    operation = clean_scope_value(operation)
+    if product and not is_generic_scope(product):
+        parts.append(product)
+    elif operation and not is_generic_scope(operation):
+        parts.append(operation)
+    code_bits = []
+    if ncm:
+        code_bits.append("NCM/TIPI " + ", ".join(ncm[:8]))
+    if cest:
+        code_bits.append("CEST " + ", ".join(cest[:8]))
+    if cbenef:
+        code_bits.append("cBenef " + ", ".join(cbenef[:8]))
+    if cst:
+        code_bits.append("CST " + ", ".join(cst[:8]))
+    if cclasstrib:
+        code_bits.append("cClassTrib " + ", ".join(cclasstrib[:8]))
+    if code_bits:
+        parts.append("; ".join(code_bits))
+    if not parts and identifiers:
+        parts.append(", ".join(identifiers[:12]))
+    return compact(" | ".join(parts), 650)
+
+
+def classification_confidence(
+    excerpt: str,
+    product: str,
+    operation: str,
+    identifiers: list[str],
+    group_evidence: list[str],
+) -> str:
+    if identifiers and scope_has_operational_detail(product, identifiers):
+        return "alta"
+    if identifiers:
+        return "media"
+    if scope_has_operational_detail(product, identifiers) and (group_evidence or scope_has_operational_detail(operation, identifiers)):
+        return "media"
+    if has_benefit_effect(excerpt) and scope_has_operational_detail(product, identifiers):
+        return "media"
+    return "baixa"
+
+
+def rejection_reasons(
+    excerpt: str,
+    legal_excerpt: str,
+    product: str,
+    operation: str,
+    identifiers: list[str],
+    confidence: str,
+) -> list[str]:
+    reasons: list[str] = []
+    if len(legal_excerpt) < 80:
+        reasons.append("trecho legal curto demais para publicacao")
+    if is_table_of_contents_noise(excerpt):
+        reasons.append("trecho parece indice/sumario de anexo, nao dispositivo operacional")
+    if not has_benefit_effect(excerpt):
+        reasons.append("sem efeito tributario favorecido claro")
+    if not scope_has_operational_detail(product, identifiers) and not scope_has_operational_detail(operation, identifiers):
+        reasons.append("sem produto, mercadoria, operacao ou codigo fiscal suficientemente explicito")
+    if has_noise_profile(excerpt) and not identifiers:
+        reasons.append("perfil de obrigacao acessoria, cadastro, penalidade ou documento sem codigo de beneficio")
+    if has_scope_document_noise(product) and not re.search(r"\b(sa[ií]das?|entradas?|vendas?|importa[cç][aã]o|exporta[cç][aã]o)\b", product, re.I):
+        reasons.append("escopo extraido descreve obrigacao documental, nao mercadoria ou operacao beneficiada")
+    if has_scope_document_noise(product) and not has_benefit_effect(product):
+        reasons.append("escopo documental sem efeito favorecido no proprio campo publicado")
+    if confidence == "baixa":
+        reasons.append("confianca baixa na classificacao automatica")
+    return reasons
 
 
 def extract_operation(value: str) -> str:
@@ -568,15 +842,15 @@ def legal_windows(text: str) -> list[str]:
     lines = [line.strip() for line in text.splitlines() if line.strip()]
     norm_lines = [normalize(line) for line in lines]
     benefit_needles = benefit_needles_norm()
-    code_or_operation = re.compile(
-        r"\b(NCM|TIPI|NBM|CEST|cBenef|CST|cClassTrib|produtos?|mercadorias?|opera[cÃ§][oÃµ]es?|sa[iÃ­]das?|vendas?|importa[cÃ§][aÃ£]o|exporta[cÃ§][aÃ£]o)\b",
-        re.I,
-    )
-    header = re.compile(
-        r"^(Art(?:igo)?\.?\s*\d+|CAP[ÃI]TULO|SE[Ã‡C][ÃƒA]O|SUBSE[Ã‡C][ÃƒA]O|ANEXO|ITEM\s+\d+)",
-        re.I,
-    )
-    next_article = re.compile(r"^Art(?:igo)?\.?\s*\d+", re.I)
+    context_needles = [normalize(needle) for needle in OPERATION_CONTEXT_NEEDLES]
+
+    def is_header(line: str) -> bool:
+        low = normalize(line)
+        return bool(re.match(r"^(art(?:igo)? \d+|capitulo|secao|subsecao|anexo|item \d+)", low))
+
+    def is_next_article(line: str) -> bool:
+        return bool(re.match(r"^art(?:igo)? \d+", normalize(line)))
+
     indexes = []
     for index in range(len(lines)):
         start_window = max(0, index - 3)
@@ -585,7 +859,14 @@ def legal_windows(text: str) -> list[str]:
         if not any(needle in norm_window for needle in benefit_needles):
             continue
         raw_window = " ".join(lines[start_window:end_window])
-        if code_or_operation.search(raw_window):
+        if (
+            extract_ncm(raw_window)
+            or extract_cest(raw_window)
+            or extract_cbenef(raw_window)
+            or extract_cst(raw_window)
+            or extract_cclasstrib(raw_window)
+            or any(needle in norm_window for needle in context_needles)
+        ):
             indexes.append(index)
 
     windows = []
@@ -593,15 +874,15 @@ def legal_windows(text: str) -> list[str]:
     for index in indexes:
         start = index
         for pos in range(index, max(-1, index - 28), -1):
-            if header.match(lines[pos]):
+            if is_header(lines[pos]):
                 start = pos
                 break
         end = min(len(lines), index + 18)
         for pos in range(index + 1, min(len(lines), index + 60)):
-            if next_article.match(lines[pos]):
+            if is_next_article(lines[pos]):
                 end = pos
                 break
-        excerpt = " ".join(lines[start:end])
+        excerpt = sanitize_text(" ".join(lines[start:end]))
         key = normalize(excerpt[:700])
         if key and key not in seen and not is_stale(excerpt):
             seen.add(key)
@@ -618,6 +899,7 @@ def table_line_windows(text: str) -> list[str]:
             continue
         window = " ".join(lines[max(0, index - 1): min(len(lines), index + 3)])
         if has_benefit_text(window) and not is_stale(window):
+            window = sanitize_text(window)
             key = normalize(window[:700])
             if key not in seen:
                 seen.add(key)
@@ -625,15 +907,18 @@ def table_line_windows(text: str) -> list[str]:
     return windows
 
 
-def build_entry(source: dict, excerpt: str, seq: int) -> dict | None:
+def evaluate_entry(source: dict, excerpt: str, seq: int) -> tuple[dict | None, list[str]]:
+    excerpt = sanitize_text(excerpt)
     ncm = extract_ncm(excerpt)
     cest = extract_cest(excerpt)
     cbenef = extract_cbenef(excerpt)
     cst = extract_cst(excerpt)
     cclasstrib = extract_cclasstrib(excerpt)
+    identifiers = [*ncm, *cest, *cbenef, *cst, *cclasstrib]
+    if is_transport_cfop_noise(excerpt, identifiers):
+        return None, ["perfil de CFOP/transporte sem codigo de beneficio"]
     if not (ncm or cest or cbenef or cst or cclasstrib or re.search(r"\bprodutos?|mercadorias?|opera[cç][oõ]es?|sa[ií]das?|vendas?|importa[cç][aã]o|exporta[cç][aã]o\b", excerpt, re.I)):
-        return None
-    group_id, group_name = classify_group(excerpt)
+        return None, ["sem codigo fiscal ou contexto operacional no trecho"]
     benefit_type = infer_benefit_type(excerpt)
     legal_basis = extract_legal_basis(excerpt, source["title"])
     product = sentences_matching(
@@ -641,11 +926,11 @@ def build_entry(source: dict, excerpt: str, seq: int) -> dict | None:
         ["produto", "produtos", "mercadoria", "mercadorias", "classificados", "código", "códigos", "NCM", "CEST", "TIPI"],
         "Produto ou operação descrito literalmente no trecho legal.",
     )
-    if not (ncm or cest or cbenef or cst or cclasstrib) and normalize(product).startswith("produto ou opera"):
-        return None
+    product = clean_scope_value(product)
+    operation = clean_scope_value(extract_operation(excerpt))
+    scope_summary = build_scope_summary(product, operation, identifiers, ncm, cest, cbenef, cst, cclasstrib)
+    group_id, group_name, group_evidence = classify_group_details(scope_summary)
     legal_excerpt = compact(excerpt, 1600)
-    if len(legal_excerpt) < 80:
-        return None
     conditions = sentences_matching(
         excerpt,
         ["desde que", "condicion", "somente", "quando", "destinad", "habilita", "credenci", "mediante", "termo", "declara"],
@@ -656,6 +941,10 @@ def build_entry(source: dict, excerpt: str, seq: int) -> dict | None:
         ["vedad", "não se aplica", "nao se aplica", "exceto", "exclu", "salvo", "não alcança", "nao alcanca"],
         "Não ampliar por analogia para produto, destinatário ou operação fora do texto legal.",
     )
+    confidence = classification_confidence(excerpt, product, operation, identifiers, group_evidence)
+    reasons = rejection_reasons(excerpt, legal_excerpt, product, operation, identifiers, confidence)
+    if reasons:
+        return None, reasons
     entry_id = f"{source['jurisdiction'].lower()}-{hashlib.sha1((source['source_file'] + excerpt).encode('utf-8')).hexdigest()[:12]}"
     return {
         "id": entry_id,
@@ -664,18 +953,23 @@ def build_entry(source: dict, excerpt: str, seq: int) -> dict | None:
         "tax": source["tax"],
         "benefit_group_id": group_id,
         "benefit_group": group_name,
+        "benefit_group_evidence": group_evidence,
+        "benefit_group_confidence": "alta" if len(group_evidence) >= 2 else ("media" if group_evidence else "baixa"),
         "benefit_type": benefit_type,
+        "scope_summary": scope_summary,
+        "goods_or_services": product if not is_generic_scope(product) else scope_summary,
         "product_or_operation": product,
         "ncm": ncm,
         "cest": cest,
         "cbenef": cbenef,
         "cst": cst,
         "cclasstrib": cclasstrib,
-        "operation": extract_operation(excerpt),
+        "operation": operation,
         "conditions": conditions,
         "prohibitions": prohibitions,
         "validity_start": source.get("validity_start", source.get("captured_on", "")),
         "validity_end": source.get("validity_end", ""),
+        "validity_status": validity_status(source, excerpt),
         "modifying_act": source.get("modifying_act", ""),
         "transition_status": infer_transition_status(source, excerpt),
         "legal_nature": infer_legal_nature(benefit_type, excerpt),
@@ -692,11 +986,44 @@ def build_entry(source: dict, excerpt: str, seq: int) -> dict | None:
         "validation_status": "validado",
         "validation_basis": [
             "texto legal local capturado de fonte oficial",
-            "trecho contém tratamento tributário e campo operacional",
+            "trecho contém tratamento tributário favorecido e campo operacional",
+            "escopo publicado foi extraído do próprio trecho legal",
             "registro publicado sem pendência pública",
         ],
+        "classification_confidence": confidence,
+        "audience_status": "humano e IA",
+        "publishable": True,
         "proof_required": proof_for(benefit_type, excerpt),
         "risk": risk_for(benefit_type),
+        "seq": seq,
+    }, []
+
+
+def build_entry(source: dict, excerpt: str, seq: int) -> dict | None:
+    entry, _reasons = evaluate_entry(source, excerpt, seq)
+    return entry
+
+
+def quarantine_entry(source: dict, excerpt: str, seq: int, reasons: list[str]) -> dict | None:
+    excerpt = sanitize_text(excerpt)
+    if len(excerpt) < 60:
+        return None
+    entry_id = f"q-{source['jurisdiction'].lower()}-{hashlib.sha1((source['source_file'] + excerpt).encode('utf-8')).hexdigest()[:12]}"
+    return {
+        "id": entry_id,
+        "jurisdiction": source.get("jurisdiction", ""),
+        "name": source.get("name", ""),
+        "tax": source.get("tax", ""),
+        "source_title": source.get("title", ""),
+        "source_file": source.get("source_file", ""),
+        "source_path": source.get("source_path", ""),
+        "official_url": source.get("official_url", ""),
+        "captured_on": source.get("captured_on", ""),
+        "legal_excerpt": compact(excerpt, 900),
+        "quarantine_reasons": reasons,
+        "validation_status": "a_validar",
+        "audience_status": "IA/editorial",
+        "public_impact": "registro nao publicado ate revisao humana do escopo",
         "seq": seq,
     }
 
@@ -762,20 +1089,32 @@ def risk_for(benefit_type: str) -> str:
 
 def build_validated_benefits() -> dict:
     entries: list[dict] = []
+    quarantine: list[dict] = []
     seen: set[str] = set()
+    seen_quarantine: set[str] = set()
     for source in source_candidates():
         seq = 0
         excerpts = legal_windows(source["text"]) + table_line_windows(source["text"])
         for excerpt in excerpts:
             seq += 1
-            entry = build_entry(source, excerpt, seq)
+            entry, reasons = evaluate_entry(source, excerpt, seq)
             if not entry:
+                quarantined = quarantine_entry(source, excerpt, seq, reasons)
+                if quarantined:
+                    q_key = "|".join([
+                        quarantined["jurisdiction"],
+                        quarantined["source_file"],
+                        normalize(quarantined["legal_excerpt"])[:180],
+                    ])
+                    if q_key not in seen_quarantine:
+                        seen_quarantine.add(q_key)
+                        quarantine.append(quarantined)
                 continue
             fingerprint = "|".join([
                 entry["jurisdiction"],
                 entry["source_file"],
                 entry["benefit_type"],
-                normalize(entry["product_or_operation"])[:120],
+                normalize(entry["scope_summary"])[:160],
                 ",".join(entry["ncm"]),
                 ",".join(entry["cest"]),
                 ",".join(entry["cbenef"]),
@@ -786,20 +1125,25 @@ def build_validated_benefits() -> dict:
             seen.add(fingerprint)
             entries.append(entry)
     entries.sort(key=lambda item: (item["jurisdiction"], item["benefit_group"], item["benefit_type"], item["source_file"], item["seq"]))
+    quarantine.sort(key=lambda item: (item["jurisdiction"], item["source_file"], item["seq"]))
     return {
         "schema": "rjc-validated-benefits-crosswalk-v3",
         "generated_on": TODAY,
-        "editorial_status": "matriz publica composta somente por itens validados em texto legal de fonte oficial",
-        "validation_rule": "publicar somente quando houver fonte oficial, trecho legal em tela, tratamento tributario e campo operacional extraido",
+        "editorial_status": "matriz publica composta somente por itens com escopo operacional extraido do proprio texto legal",
+        "validation_rule": "publicar somente quando houver fonte oficial, trecho legal em tela, tratamento tributario favorecido, campo operacional extraido e confianca media ou alta",
         "summary": {
             "entries": len(entries),
+            "quarantined_entries": len(quarantine),
             "jurisdictions": len({item["jurisdiction"] for item in entries}),
             "with_ncm": sum(1 for item in entries if item["ncm"]),
             "with_cest": sum(1 for item in entries if item["cest"]),
             "with_cbenef": sum(1 for item in entries if item["cbenef"]),
             "with_cst": sum(1 for item in entries if item["cst"]),
+            "high_confidence": sum(1 for item in entries if item.get("classification_confidence") == "alta"),
+            "medium_confidence": sum(1 for item in entries if item.get("classification_confidence") == "media"),
         },
         "entries": entries,
+        "quarantine": quarantine,
     }
 
 

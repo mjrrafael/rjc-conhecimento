@@ -15,7 +15,7 @@ ROOT = Path(__file__).resolve().parents[1]
 SCRIPTS = ROOT / "scripts"
 sys.path.insert(0, str(SCRIPTS))
 
-from build_portal import STATE_REGIONS  # noqa: E402
+from build_portal import EDITORIAL_UPDATED_ON, STATE_REGIONS  # noqa: E402
 from legal_modules import (  # noqa: E402
     FEDERAL_ROOT,
     LEGAL_MODULES,
@@ -170,6 +170,24 @@ def audit_search_entries(parsed: dict[Path, PageParser]) -> list[str]:
             continue
         if fragment and fragment not in parsed[target].ids:
             errors.append(f"busca ancora sem destino: {title} -> {url}")
+    return errors
+
+
+def audit_editorial_dates(parsed: dict[Path, PageParser]) -> list[str]:
+    errors: list[str] = []
+    stale_markers = (
+        "Atualizacao editorial: 25/04/2026",
+        "Atualizada em 25/04/2026",
+        "Conteudos profundos v1 atualizados em 17/05/2026",
+    )
+    expected_footer = f"Atualizacao editorial: {EDITORIAL_UPDATED_ON}"
+    for path in parsed:
+        html = path.read_text(encoding="utf-8", errors="ignore")
+        for marker in stale_markers:
+            if marker in html:
+                errors.append(f"{path.relative_to(ROOT)}: data editorial antiga -> {marker}")
+        if "Atualizacao editorial:" in html and expected_footer not in html:
+            errors.append(f"{path.relative_to(ROOT)}: rodape sem data editorial atual")
     return errors
 
 
@@ -480,6 +498,7 @@ def main() -> int:
     parsed = parse_pages()
     checks = [
         ("links e ancoras", audit_links(parsed)),
+        ("datas editoriais", audit_editorial_dates(parsed)),
         ("indice de busca", audit_search_entries(parsed)),
         ("fontes e modulos legais", audit_legal_registry()),
         ("regioes e bandeiras", audit_regions()),

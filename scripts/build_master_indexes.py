@@ -59,6 +59,7 @@ BD_FEDERAL = resolve_bd_federal()
 OUT_TAXONOMY = ROOT / "data" / "master_taxonomy.json"
 OUT_COVERAGE = ROOT / "data" / "master_source_coverage.json"
 OUT_BENEFITS = ROOT / "data" / "benefits_crosswalk.json"
+OUT_BENEFITS_QUARANTINE = ROOT / "data" / "benefits_quarantine.json"
 OUT_CONFAZ = ROOT / "data" / "confaz_ultimos_5_anos.json"
 OUT_DOC = ROOT / "docs" / "master-audit.md"
 
@@ -570,6 +571,7 @@ def write_markdown(coverage: dict, benefits: dict, confaz: dict) -> None:
         f"- Estados aguardando revisao: {coverage['summary']['states_waiting_review']}",
         f"- Estados revisados sem aprovacao profunda: {coverage['summary']['states_reviewed_with_pendencies']}",
         f"- Entradas validadas na matriz de beneficios: {benefits['summary']['entries']}",
+        f"- Entradas em quarentena editorial: {benefits['summary'].get('quarantined_entries', 0)}",
         f"- Entradas com NCM/TIPI: {benefits['summary'].get('with_ncm', 0)}",
         f"- Entradas com CEST: {benefits['summary'].get('with_cest', 0)}",
         f"- Entradas com cBenef: {benefits['summary'].get('with_cbenef', 0)}",
@@ -610,14 +612,27 @@ def main() -> None:
     coverage = build_coverage()
     benefits = build_benefits_crosswalk()
     confaz = build_confaz_index()
+    benefits_quarantine = {
+        "schema": "rjc-benefits-quarantine-v1",
+        "generated_on": benefits.get("generated_on", TODAY),
+        "source": "data/benefits_crosswalk.json",
+        "summary": {
+            "entries": len(benefits.get("quarantine", [])),
+            "rule": "itens extraidos de fonte oficial, mas nao publicados por escopo ambíguo, baixa confiança ou ruido editorial",
+        },
+        "entries": benefits.get("quarantine", []),
+    }
+    public_benefits = {key: value for key, value in benefits.items() if key != "quarantine"}
     write_json(OUT_TAXONOMY, taxonomy)
     write_json(OUT_COVERAGE, coverage)
-    write_json(OUT_BENEFITS, benefits)
+    write_json(OUT_BENEFITS, public_benefits)
+    write_json(OUT_BENEFITS_QUARANTINE, benefits_quarantine)
     write_json(OUT_CONFAZ, confaz)
     write_markdown(coverage, benefits, confaz)
     print(f"Taxonomia mestre: {OUT_TAXONOMY.relative_to(ROOT)}")
     print(f"Cobertura mestre: {OUT_COVERAGE.relative_to(ROOT)}")
     print(f"Matriz de beneficios: {OUT_BENEFITS.relative_to(ROOT)}")
+    print(f"Quarentena de beneficios: {OUT_BENEFITS_QUARANTINE.relative_to(ROOT)}")
     print(f"CONFAZ 5 anos: {OUT_CONFAZ.relative_to(ROOT)}")
     print(f"Relatorio: {OUT_DOC.relative_to(ROOT)}")
 

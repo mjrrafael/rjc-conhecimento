@@ -7,7 +7,7 @@ import json
 import re
 import unicodedata
 from datetime import datetime
-from html import escape
+from html import escape, unescape
 from html.parser import HTMLParser
 from pathlib import Path
 
@@ -44,6 +44,7 @@ from state_legal_pages import (
 
 ROOT = Path(__file__).resolve().parents[1]
 BASE_URL = "https://mjrrafael.github.io/rjc-conhecimento"
+EDITORIAL_UPDATED_ON = "14/06/2026"
 CATALOG = ROOT / "data" / "portal_catalog.json"
 INVENTORY = ROOT / "data" / "legal_inventory.json"
 STATE_SOURCE_AUDIT = ROOT / "data" / "state_source_audit.json"
@@ -1392,7 +1393,7 @@ def layout(path: str, title: str, subtitle: str, body: str, active: str = "") ->
       <p>Conteudo educativo pautado em legislacao oficial. Nao substitui parecer individual para operacao concreta.</p>
     </div>
     <div>
-      <span>Atualizacao editorial: 25/04/2026</span>
+      <span>Atualizacao editorial: {EDITORIAL_UPDATED_ON}</span>
       <a href="{prefix}biblioteca/index.html#metodo">Metodo e fontes</a>
     </div>
   </footer>
@@ -1582,7 +1583,7 @@ def legacy_benefits_crosswalk_page(data: dict) -> str:
             uf = item.get("jurisdiction", "")
             href = f"../estados/{uf.lower()}.html" if len(uf) == 2 else "../federal/index.html"
             rows.append(f"""
-<article class="benefit-cross-card searchable-card" data-search="{escape(' '.join(str(item.get(k, '')) for k in item))}">
+<article class="benefit-cross-card searchable-card" data-search="{escape(search_value_text(item))}">
   <span class="card-kicker">{escape(item.get('jurisdiction', ''))} · {escape(item.get('tax', ''))} · {status_badge(item.get('evidence_status', ''))}</span>
   <h3>{escape(item.get('name', item.get('jurisdiction', '')))}</h3>
   <p>{escape(item.get('legal_description', '')[:420])}</p>
@@ -1644,7 +1645,7 @@ def ncm_benefits_page(data: dict) -> str:
     table_rows = []
     for item in rows:
         search_text = " ".join(
-            str(item.get(key, ""))
+            search_value_text(item.get(key, ""))
             for key in (
                 "ncm",
                 "ncm_digits",
@@ -1653,6 +1654,8 @@ def ncm_benefits_page(data: dict) -> str:
                 "tax",
                 "benefit_group",
                 "benefit_type",
+                "scope_summary",
+                "goods_or_services",
                 "product_or_operation",
                 "conditions",
                 "prohibitions",
@@ -1666,7 +1669,7 @@ def ncm_benefits_page(data: dict) -> str:
   <td><strong>{escape(item.get('ncm', ''))}</strong><span>{escape(item.get('ncm_level', 'NCM'))}</span></td>
   <td><strong>{escape(item.get('jurisdiction', ''))}</strong><span>{escape(item.get('origin', ''))} · {escape(item.get('tax', ''))}</span></td>
   <td><strong>{escape(item.get('benefit_type', ''))}</strong><span>{escape(item.get('benefit_group', ''))}</span></td>
-  <td>{escape(item.get('product_or_operation', ''))}</td>
+  <td>{escape(item.get('scope_summary') or item.get('product_or_operation', ''))}</td>
   <td>{escape(item.get('conditions', ''))}</td>
   <td>{escape(item.get('legal_basis', ''))}<br><a href="{escape(item.get('official_url', ''))}" target="_blank" rel="noopener">fonte legal</a></td>
   <td>{escape(item.get('legal_excerpt', ''))}</td>
@@ -1746,13 +1749,17 @@ def benefits_crosswalk_page(data: dict) -> str:
         rows = []
         for item in items:
             href = source_href(item)
+            scope = item.get("scope_summary") or item.get("product_or_operation", "")
             search_text = " ".join(
-                str(item.get(key, ""))
+                search_value_text(item.get(key, ""))
                 for key in (
                     "jurisdiction",
                     "tax",
                     "benefit_group",
+                    "benefit_group_evidence",
                     "benefit_type",
+                    "scope_summary",
+                    "goods_or_services",
                     "product_or_operation",
                     "ncm",
                     "cest",
@@ -1762,19 +1769,21 @@ def benefits_crosswalk_page(data: dict) -> str:
                     "conditions",
                     "prohibitions",
                     "legal_basis",
-                    "legal_excerpt",
+                    "validity_status",
                 )
             )
             rows.append(f"""
 <article id="{escape(item.get('id', ''))}" class="benefit-cross-card searchable-card" data-search="{escape(search_text)}">
-  <span class="card-kicker">{escape(item.get('jurisdiction', ''))} &middot; {escape(item.get('tax', ''))} &middot; validado</span>
+  <span class="card-kicker">{escape(item.get('jurisdiction', ''))} &middot; {escape(item.get('tax', ''))} &middot; validado &middot; confiança {escape(item.get('classification_confidence', 'media'))}</span>
   <h3>{escape(item.get('benefit_type', 'Tratamento tributario'))}</h3>
-  <p>{escape(item.get('product_or_operation', ''))}</p>
+  <p><strong>Escopo publicado:</strong> {escape(scope)}</p>
   <dl>
+    <dt>Mercadoria/operação</dt><dd>{escape(item.get('goods_or_services') or item.get('product_or_operation', ''))}</dd>
     <dt>NCM/TIPI</dt><dd>{escape(field(item, 'ncm'))}</dd>
     <dt>CEST</dt><dd>{escape(field(item, 'cest'))}</dd>
     <dt>cBenef</dt><dd>{escape(field(item, 'cbenef'))}</dd>
     <dt>CST</dt><dd>{escape(field(item, 'cst'))}</dd>
+    <dt>Vigência/status</dt><dd>{escape(item.get('validity_status', item.get('transition_status', '')))}</dd>
     <dt>Base legal</dt><dd>{escape(item.get('legal_basis', ''))}</dd>
     <dt>Condicao</dt><dd>{escape(item.get('conditions', ''))}</dd>
     <dt>Vedacao</dt><dd>{escape(item.get('prohibitions', ''))}</dd>
@@ -1843,6 +1852,7 @@ def benefit_value(item: dict, key: str, fallback: str = "nao indicado no trecho"
         text = ", ".join(str(part) for part in value if str(part).strip())
     else:
         text = str(value or "")
+    text = clean_search_fragment(text)
     return text if text else fallback
 
 
@@ -1852,13 +1862,17 @@ def benefit_card(item: dict, current_path: str, compact: bool = False) -> str:
     if len(jurisdiction) == 2:
         source = "../" + state_href(jurisdiction)
     registry = rel_href(current_path, f"beneficios/index.html#{item.get('id', '')}")
+    scope = item.get("scope_summary") or item.get("product_or_operation", "")
     details = "" if compact else f"""
   <dl>
+    <dt>Mercadoria/operação</dt><dd>{escape(benefit_value(item, 'goods_or_services'))}</dd>
     <dt>NCM/TIPI</dt><dd>{escape(benefit_value(item, 'ncm'))}</dd>
     <dt>CEST</dt><dd>{escape(benefit_value(item, 'cest'))}</dd>
     <dt>cBenef</dt><dd>{escape(benefit_value(item, 'cbenef'))}</dd>
     <dt>CST/cClassTrib</dt><dd>{escape(' / '.join(part for part in [benefit_value(item, 'cst', ''), benefit_value(item, 'cclasstrib', '')] if part) or 'nao indicado no trecho')}</dd>
-    <dt>Vigencia</dt><dd>{escape(benefit_value(item, 'validity_start', 'vigente no ato capturado'))}{' ate ' + escape(item.get('validity_end', '')) if item.get('validity_end') else ''}</dd>
+    <dt>Vigencia/status</dt><dd>{escape(item.get('validity_status') or benefit_value(item, 'validity_start', 'vigente no ato capturado'))}{' ate ' + escape(item.get('validity_end', '')) if item.get('validity_end') else ''}</dd>
+    <dt>Condição</dt><dd>{escape(benefit_value(item, 'conditions', 'ver texto legal'))}</dd>
+    <dt>Vedação</dt><dd>{escape(benefit_value(item, 'prohibitions', 'ver texto legal'))}</dd>
     <dt>Prova</dt><dd>{escape(item.get('proof_required', ''))}</dd>
   </dl>
   <details class="law-excerpt">
@@ -1868,15 +1882,16 @@ def benefit_card(item: dict, current_path: str, compact: bool = False) -> str:
   </details>
 """
     search_text = " ".join(str(item.get(key, "")) for key in (
-        "jurisdiction", "tax", "benefit_group", "benefit_type", "product_or_operation",
+        "jurisdiction", "tax", "benefit_group", "benefit_group_evidence", "benefit_type",
+        "scope_summary", "goods_or_services", "product_or_operation",
         "ncm", "cest", "cbenef", "cst", "cclasstrib", "conditions", "legal_basis",
-        "transition_status", "legal_nature", "legal_excerpt",
+        "transition_status", "validity_status", "legal_nature",
     ))
     return f"""
-<article class="benefit-cross-card searchable-card" data-search="{escape(search_text)}">
-  <span class="card-kicker">{escape(jurisdiction)} &middot; {escape(item.get('tax', ''))} &middot; {escape(item.get('transition_status', 'regra vigente'))}</span>
+<article class="benefit-cross-card searchable-card" data-search="{escape(search_value_text(search_text))}">
+  <span class="card-kicker">{escape(jurisdiction)} &middot; {escape(item.get('tax', ''))} &middot; {escape(item.get('transition_status', 'regra vigente'))} &middot; confiança {escape(item.get('classification_confidence', 'media'))}</span>
   <h3>{escape(item.get('benefit_type', 'Tratamento tributario'))}</h3>
-  <p>{escape(item.get('product_or_operation', ''))}</p>
+  <p><strong>Escopo publicado:</strong> {escape(scope)}</p>
   <p><strong>{escape(item.get('legal_nature', 'tratamento tributario especifico'))}</strong></p>
   <p>{escape(item.get('conditions', ''))}</p>
   {details}
@@ -1891,6 +1906,110 @@ def benefit_card(item: dict, current_path: str, compact: bool = False) -> str:
 def benefit_entries() -> list[dict]:
     benefits = master_bundle()["benefits"]
     return [item for item in benefits.get("entries", []) if item.get("validation_status") == "validado"]
+
+
+def benefit_public_topic_text(item: dict, include_group: bool = False) -> str:
+    keys = [
+        "scope_summary",
+        "goods_or_services",
+        "product_or_operation",
+        "operation",
+        "benefit_type",
+        "legal_nature",
+        "tax",
+        "ncm",
+        "cest",
+        "cbenef",
+        "cst",
+        "cclasstrib",
+        "validity_status",
+    ]
+    if include_group:
+        keys.extend(["benefit_group", "benefit_group_evidence"])
+    return search_value_text({key: item.get(key, "") for key in keys})
+
+
+def benefit_matches_terms(item: dict, needles: tuple[str, ...], include_group: bool = False) -> bool:
+    text = normalize_search_text(benefit_public_topic_text(item, include_group=include_group))
+    return any(normalize_search_text(needle) in text for needle in needles)
+
+
+def topic_term_in_text(needle: str, text: str) -> bool:
+    term = normalize_search_text(needle)
+    if not term:
+        return False
+    if " " in term:
+        return term in text
+    return bool(re.search(rf"(?<![a-z0-9]){re.escape(term)}(?![a-z0-9])", text))
+
+
+def benefit_matches_cesta_basica(item: dict) -> bool:
+    if item.get("benefit_group_id") == "energia-combustiveis-infraestrutura":
+        return False
+    text = normalize_search_text(benefit_public_topic_text(item, include_group=False))
+    guard_text = normalize_search_text(search_value_text({
+        "scope_summary": item.get("scope_summary", ""),
+        "goods_or_services": item.get("goods_or_services", ""),
+        "product_or_operation": item.get("product_or_operation", ""),
+        "operation": item.get("operation", ""),
+        "conditions": item.get("conditions", ""),
+        "prohibitions": item.get("prohibitions", ""),
+        "legal_excerpt": item.get("legal_excerpt", ""),
+    }))
+    food_needles = (
+        "cesta",
+        "alimento",
+        "alimenticio",
+        "horticola",
+        "fruta",
+        "ovo",
+        "arroz",
+        "feijao",
+        "leite",
+        "carne",
+        "aves",
+        "frango",
+        "peixe",
+        "trigo",
+        "farinha",
+        "pao",
+        "alho",
+        "tomate",
+        "soja",
+        "milho",
+    )
+    agro_needles = (
+        "produtos agropecuarios",
+        "produtor rural",
+        "agricultor familiar",
+        "cooperativa de produtores",
+    )
+    exclusion_needles = (
+        "biodiesel",
+        "biocombustivel",
+        "diesel",
+        "oleo diesel",
+        "combustivel",
+        "querosene",
+        "gas natural",
+        "gnv",
+        "energia",
+        "energia eletrica",
+        "energia solar",
+        "fotovoltaica",
+        "microgeracao",
+        "minigeracao",
+        "hidreletrica",
+        "pch",
+        "alcool etilico hidratado combustivel",
+        "alcool metilico",
+        "metanol",
+        "aehc",
+        "etanol",
+    )
+    if any(topic_term_in_text(needle, guard_text) for needle in exclusion_needles):
+        return False
+    return any(topic_term_in_text(needle, text) for needle in food_needles) or any(topic_term_in_text(needle, text) for needle in agro_needles)
 
 
 def benefit_special_page(
@@ -1970,7 +2089,7 @@ def benefits_by_uf_page(data: dict) -> str:
 
 def benefits_reforma_page(data: dict) -> str:
     needles = ("IBS", "CBS", "cClassTrib", "cCredPres", "Imposto Seletivo", "Reforma Tribut")
-    entries = [item for item in benefit_entries() if any(needle.lower() in json.dumps(item, ensure_ascii=False).lower() for needle in needles)]
+    entries = [item for item in benefit_entries() if benefit_matches_terms(item, needles, include_group=True)]
     return benefit_special_page(
         "beneficios/reforma.html",
         "Benefícios e tratamentos da Reforma Tributária",
@@ -1984,7 +2103,7 @@ def benefits_reforma_page(data: dict) -> str:
 
 def benefits_compensacao_icms_page(data: dict) -> str:
     needles = ("compensa", "transi", "ICMS", "cBenef", "LC 160", "Convênio ICMS 190", "saldo credor")
-    entries = [item for item in benefit_entries() if any(needle.lower() in json.dumps(item, ensure_ascii=False).lower() for needle in needles)]
+    entries = [item for item in benefit_entries() if benefit_matches_terms(item, needles, include_group=True)]
     return benefit_special_page(
         "beneficios/compensacao-icms.html",
         "Compensação, transição e benefícios de ICMS",
@@ -1997,8 +2116,7 @@ def benefits_compensacao_icms_page(data: dict) -> str:
 
 
 def benefits_cesta_basica_page(data: dict) -> str:
-    needles = ("cesta", "alimento", "hortícola", "horticola", "fruta", "ovo", "arroz", "feijão", "feijao", "leite", "carne", "agro")
-    entries = [item for item in benefit_entries() if any(needle.lower() in json.dumps(item, ensure_ascii=False).lower() for needle in needles)]
+    entries = [item for item in benefit_entries() if benefit_matches_cesta_basica(item)]
     return benefit_special_page(
         "beneficios/cesta-basica.html",
         "Cesta básica, alimentos e agro",
@@ -2011,7 +2129,7 @@ def benefits_cesta_basica_page(data: dict) -> str:
 
 def benefits_regimes_diferenciados_page(data: dict) -> str:
     needles = ("regime", "diferenciado", "específico", "especifico", "crédito presumido", "credito presumido", "alíquota zero", "aliquota zero", "redução", "reducao", "Zona Franca", "produtor rural")
-    entries = [item for item in benefit_entries() if any(needle.lower() in json.dumps(item, ensure_ascii=False).lower() for needle in needles)]
+    entries = [item for item in benefit_entries() if benefit_matches_terms(item, needles, include_group=True)]
     return benefit_special_page(
         "beneficios/regimes-diferenciados.html",
         "Regimes diferenciados, específicos e créditos presumidos",
@@ -3029,7 +3147,7 @@ def normalize_search_text(value: str) -> str:
 def compact_search_terms(text: str) -> str:
     seen: set[str] = set()
     terms: list[str] = []
-    for token in normalize_search_text(text).split():
+    for token in normalize_search_text(clean_search_fragment(text)).split():
         if len(token) < 2 or token in FULL_SEARCH_STOPWORDS or token in seen:
             continue
         seen.add(token)
@@ -3037,15 +3155,40 @@ def compact_search_terms(text: str) -> str:
     return " ".join(terms)
 
 
+def clean_search_fragment(value: object) -> str:
+    text = unescape(str(value or ""))
+    text = re.sub(
+        r"(?:=+\s*)?(?:PÁGINA|PAGINA|PÃ.?GINA)\s+\d+(?:\s*=+)?(?:\s+[A-Za-z0-9_.\\/-]+){0,10}",
+        " ",
+        text,
+        flags=re.I,
+    )
+    text = text.replace("[]", " ")
+    text = text.replace("[", " ").replace("]", " ")
+    text = text.replace("{", " ").replace("}", " ")
+    text = text.replace("'", " ").replace('"', " ")
+    return " ".join(text.split())
+
+
+def search_value_text(value: object) -> str:
+    if value is None:
+        return ""
+    if isinstance(value, list):
+        return " ".join(part for item in value if (part := search_value_text(item)))
+    if isinstance(value, dict):
+        return " ".join(part for item in value.values() if (part := search_value_text(item)))
+    return clean_search_fragment(value)
+
+
 def search_summary(text: str, meta: str) -> str:
-    base = " ".join((meta or text).split())
+    base = clean_search_fragment(meta or text)
     if len(base) <= 230:
         return base
     return base[:227].rsplit(" ", 1)[0] + "..."
 
 
 def search_body(text: str, limit: int = 1400) -> str:
-    base = " ".join(text.split())
+    base = clean_search_fragment(text)
     if len(base) <= limit:
         return base
     return base[:limit].rsplit(" ", 1)[0]
@@ -3081,8 +3224,8 @@ def search_scope(rel: str) -> dict[str, str]:
 
 def benefit_index_text(value: object) -> str:
     if isinstance(value, list):
-        return " ".join(str(part) for part in value if str(part).strip())
-    return str(value or "")
+        return " ".join(clean_search_fragment(part) for part in value if clean_search_fragment(part))
+    return clean_search_fragment(value)
 
 
 def benefit_full_search_entries() -> list[dict[str, str]]:
@@ -3096,7 +3239,10 @@ def benefit_full_search_entries() -> list[dict[str, str]]:
             item.get("name", ""),
             item.get("tax", ""),
             item.get("benefit_group", ""),
+            benefit_index_text(item.get("benefit_group_evidence")),
             item.get("benefit_type", ""),
+            item.get("scope_summary", ""),
+            item.get("goods_or_services", ""),
             item.get("product_or_operation", ""),
             benefit_index_text(item.get("ncm")),
             benefit_index_text(item.get("cest")),
@@ -3104,6 +3250,7 @@ def benefit_full_search_entries() -> list[dict[str, str]]:
             benefit_index_text(item.get("cst")),
             benefit_index_text(item.get("cclasstrib")),
             item.get("transition_status", ""),
+            item.get("validity_status", ""),
             item.get("legal_nature", ""),
             item.get("validity_start", ""),
             item.get("validity_end", ""),
@@ -3123,7 +3270,7 @@ def benefit_full_search_entries() -> list[dict[str, str]]:
             if part
         )
         summary = search_summary(
-            " ".join([item.get("product_or_operation", ""), item.get("conditions", ""), item.get("legal_basis", "")]),
+            " ".join([item.get("scope_summary", ""), item.get("conditions", ""), item.get("legal_basis", "")]),
             "",
         )
         entries.append({
@@ -3508,6 +3655,31 @@ def write(path: str, content: str) -> None:
         tmp.replace(target)
 
 
+def normalize_legacy_editorial_dates() -> None:
+    replacements = {
+        "Atualizacao editorial: 25/04/2026": f"Atualizacao editorial: {EDITORIAL_UPDATED_ON}",
+        "Atualizada em 25/04/2026": f"Atualizada em {EDITORIAL_UPDATED_ON}",
+        "Conteudos profundos v1 atualizados em 17/05/2026": f"Conteudos profundos v1 atualizados em {EDITORIAL_UPDATED_ON}",
+    }
+    for path in ROOT.rglob("*.html"):
+        if ".git" in path.parts:
+            continue
+        text = path.read_text(encoding="utf-8", errors="ignore")
+        updated = text
+        for old, new in replacements.items():
+            updated = updated.replace(old, new)
+        if updated == text:
+            continue
+        clean = "\n".join(line.rstrip() for line in updated.splitlines()) + "\n"
+        tmp = path.with_name(f".{path.name}.tmp")
+        tmp.write_text(clean, encoding="utf-8", newline="\n")
+        try:
+            tmp.replace(path)
+        except OSError:
+            path.unlink(missing_ok=True)
+            tmp.replace(path)
+
+
 def audit(data: dict) -> None:
     required = ["titulo", "jurisdicao", "tema", "tipo", "resumo", "base_legal", "fonte_oficial", "data_conferencia", "status_curadoria", "links_relacionados"]
     errors = []
@@ -3561,6 +3733,7 @@ def main() -> None:
         write(legal_path, legal_content)
     for state_legal_path, state_legal_content in build_state_legal_pages(layout, data).items():
         write(state_legal_path, state_legal_content)
+    normalize_legacy_editorial_dates()
     write("assets/portal-search.js", search_index(data))
     write("assets/portal-search-full.json", json.dumps(full_text_search_entries() + benefit_full_search_entries() + ncm_full_search_entries(), ensure_ascii=False, separators=(",", ":")))
     write_discovery_files()
