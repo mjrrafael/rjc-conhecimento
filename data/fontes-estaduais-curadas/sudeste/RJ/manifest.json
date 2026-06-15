@@ -248,10 +248,10 @@
     },
     {
       "id": "RJ_TABELA_CODIGO_BENEFICIO_CST_2026",
-      "titulo": "SEFAZ/RJ - Tabela de codigo de beneficio x CST - versao 2026-03-09",
+      "titulo": "SEFAZ/RJ - Tabela de codigo de beneficio x CST - tabela atualizada em 04/05/2026",
       "tema": "Obrigacoes acessorias e documentos",
       "tipo": "tabela oficial",
-      "url": "http://portal.fazenda.rj.gov.br/dfe/wp-content/uploads/sites/17/2023/10/Tabela-codigo-de-beneficio-X-CST_versao_2026-03-09.pdf",
+      "url": "https://portal.fazenda.rj.gov.br/dfe/wp-content/uploads/sites/17/2023/10/Tabela-codigo-de-beneficio-X-CST.pdf",
       "arquivo": "RJ_TABELA_CODIGO_BENEFICIO_CST_2026_2026-04-26.txt",
       "sha256": "cfe75329ef79b601d8fbda75618f00a2c5fe14fefb4ef62424f6553e1b76f3de",
       "caracteres": 85028

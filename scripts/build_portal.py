@@ -3,6 +3,7 @@
 
 from __future__ import annotations
 
+import hashlib
 import json
 import re
 import unicodedata
@@ -44,7 +45,6 @@ from state_legal_pages import (
 
 ROOT = Path(__file__).resolve().parents[1]
 BASE_URL = "https://mjrrafael.github.io/rjc-conhecimento"
-EDITORIAL_UPDATED_ON = "14/06/2026"
 CATALOG = ROOT / "data" / "portal_catalog.json"
 INVENTORY = ROOT / "data" / "legal_inventory.json"
 STATE_SOURCE_AUDIT = ROOT / "data" / "state_source_audit.json"
@@ -53,6 +53,22 @@ MASTER_COVERAGE = ROOT / "data" / "master_source_coverage.json"
 BENEFITS_CROSSWALK = ROOT / "data" / "benefits_crosswalk.json"
 NCM_BENEFITS_INDEX = ROOT / "data" / "ncm_benefits_index.json"
 CONFAZ_5Y = ROOT / "data" / "confaz_ultimos_5_anos.json"
+
+
+def derive_editorial_updated_on() -> str:
+    try:
+        payload = json.loads(BENEFITS_CROSSWALK.read_text(encoding="utf-8"))
+    except Exception:
+        return "14/06/2026"
+    summary = payload.get("summary", {}) if isinstance(payload, dict) else {}
+    value = str(summary.get("editorial_date") or summary.get("oldest_verified_on") or "").strip()
+    try:
+        return datetime.fromisoformat(value).strftime("%d/%m/%Y")
+    except ValueError:
+        return "14/06/2026"
+
+
+EDITORIAL_UPDATED_ON = derive_editorial_updated_on()
 
 FULL_SEARCH_STOPWORDS = {
     "a", "o", "as", "os", "um", "uma", "uns", "umas", "de", "da", "do", "das", "dos",
@@ -1774,27 +1790,10 @@ def benefits_crosswalk_page(data: dict) -> str:
             )
             rows.append(f"""
 <article id="{escape(item.get('id', ''))}" class="benefit-cross-card searchable-card" data-search="{escape(search_text)}">
-  <span class="card-kicker">{escape(item.get('jurisdiction', ''))} &middot; {escape(item.get('tax', ''))} &middot; validado &middot; confiança {escape(item.get('classification_confidence', 'media'))}</span>
+  <span class="card-kicker">{escape(str(item.get('jurisdiction', '')))} &middot; {escape(str(item.get('tax', '')))} &middot; validado &middot; confiança {escape(str(item.get('classification_confidence', 'media')))}</span>
   <h3>{escape(item.get('benefit_type', 'Tratamento tributario'))}</h3>
   <p><strong>Escopo publicado:</strong> {escape(scope)}</p>
-  <dl>
-    <dt>Mercadoria/operação</dt><dd>{escape(item.get('goods_or_services') or item.get('product_or_operation', ''))}</dd>
-    <dt>NCM/TIPI</dt><dd>{escape(field(item, 'ncm'))}</dd>
-    <dt>CEST</dt><dd>{escape(field(item, 'cest'))}</dd>
-    <dt>cBenef</dt><dd>{escape(field(item, 'cbenef'))}</dd>
-    <dt>CST</dt><dd>{escape(field(item, 'cst'))}</dd>
-    <dt>Vigência/status</dt><dd>{escape(item.get('validity_status', item.get('transition_status', '')))}</dd>
-    <dt>Base legal</dt><dd>{escape(item.get('legal_basis', ''))}</dd>
-    <dt>Condicao</dt><dd>{escape(item.get('conditions', ''))}</dd>
-    <dt>Vedacao</dt><dd>{escape(item.get('prohibitions', ''))}</dd>
-    <dt>Prova</dt><dd>{escape(item.get('proof_required', ''))}</dd>
-    <dt>Risco</dt><dd>{escape(item.get('risk', ''))}</dd>
-  </dl>
-  <details class="law-excerpt">
-    <summary>legislacao em tela</summary>
-    <p>{escape(item.get('legal_excerpt', ''))}</p>
-    <a href="{escape(item.get('official_url', ''))}" target="_blank" rel="noopener">abrir fonte legal</a>
-  </details>
+  {benefit_contract_details(item)}
   <a href="{escape(href)}">abrir origem</a>
 </article>
 """)
@@ -1850,10 +1849,75 @@ def benefit_value(item: dict, key: str, fallback: str = "nao indicado no trecho"
     value = item.get(key)
     if isinstance(value, list):
         text = ", ".join(str(part) for part in value if str(part).strip())
+    elif isinstance(value, dict):
+        text = " | ".join(str(part) for part in value.values() if str(part).strip())
     else:
         text = str(value or "")
     text = clean_search_fragment(text)
     return text if text else fallback
+
+
+def benefit_act_label(item: dict) -> str:
+    act = item.get("ato_oficial") or item.get("ato") or {}
+    if isinstance(act, dict):
+        title = str(act.get("titulo") or item.get("source_title") or "").strip()
+        number = str(act.get("num") or "").strip()
+        act_type = str(act.get("tipo") or "Ato oficial").strip()
+        url = str(act.get("url") or item.get("official_url") or "").strip()
+        label = " ".join(part for part in [act_type, number] if part).strip() or title or "Ato oficial"
+        if title and title not in label:
+            label = f"{label} - {title}"
+        return f"{label} ({url})" if url else label
+    return benefit_value(item, "source_title", "ato oficial indicado na fonte")
+
+
+def benefit_proof_label(item: dict) -> str:
+    proof = item.get("prova_documental")
+    if isinstance(proof, dict):
+        parts = [
+            str(proof.get("descricao") or item.get("proof_required") or "").strip(),
+            str(proof.get("url") or item.get("official_url") or "").strip(),
+        ]
+        return " | ".join(part for part in parts if part) or benefit_value(item, "proof_required")
+    return benefit_value(item, "proof_required")
+
+
+def benefit_contract_details(item: dict, compact: bool = False) -> str:
+    status = benefit_value(item, "status", benefit_value(item, "validity_status", "a_revalidar"))
+    end = benefit_value(item, "fim_vigencia", "sem fim declarado no registro")
+    details = f"""
+  <dl>
+    <dt>Benefício</dt><dd>{escape(benefit_value(item, 'beneficio', benefit_value(item, 'benefit_type')))}</dd>
+    <dt>Mercadoria/operação</dt><dd>{escape(benefit_value(item, 'mercadoria_servico', benefit_value(item, 'goods_or_services')))}</dd>
+    <dt>Ente/UF</dt><dd>{escape(benefit_value(item, 'ente_uf', benefit_value(item, 'jurisdiction')))}</dd>
+    <dt>Ato oficial</dt><dd>{escape(benefit_act_label(item))}</dd>
+    <dt>Publicação</dt><dd>{escape(benefit_value(item, 'publicacao'))}</dd>
+    <dt>Início vigência</dt><dd>{escape(benefit_value(item, 'inicio_vigencia'))}</dd>
+    <dt>Início eficácia</dt><dd>{escape(benefit_value(item, 'inicio_eficacia'))}</dd>
+    <dt>Fim vigência</dt><dd>{escape(end)}</dd>
+    <dt>Vigência/status</dt><dd>{escape(benefit_value(item, 'validity_status', status))}</dd>
+    <dt>Status</dt><dd>{escape(status)}</dd>
+    <dt>Condição</dt><dd>{escape(benefit_value(item, 'condicao', benefit_value(item, 'conditions', 'ver texto legal')))}</dd>
+    <dt>Vedação</dt><dd>{escape(benefit_value(item, 'prohibitions', 'ver texto legal'))}</dd>
+    <dt>Prova</dt><dd>{escape(benefit_proof_label(item))}</dd>
+    <dt>Transição RT-2026</dt><dd>{escape(benefit_value(item, 'transicao_rt', 'n/a'))}</dd>
+    <dt>Risco</dt><dd>{escape(benefit_value(item, 'risco', benefit_value(item, 'risk')))}</dd>
+    <dt>NCM/TIPI</dt><dd>{escape(benefit_value(item, 'ncm'))}</dd>
+    <dt>CEST</dt><dd>{escape(benefit_value(item, 'cest'))}</dd>
+    <dt>cBenef</dt><dd>{escape(benefit_value(item, 'cbenef'))}</dd>
+    <dt>CST/cClassTrib</dt><dd>{escape(' / '.join(part for part in [benefit_value(item, 'cst', ''), benefit_value(item, 'cclasstrib', '')] if part) or 'nao indicado no trecho')}</dd>
+    <dt>Base legal</dt><dd>{escape(benefit_value(item, 'legal_basis'))}</dd>
+    <dt>Verificado em</dt><dd>{escape(benefit_value(item, 'verificado_em'))}</dd>
+  </dl>
+"""
+    excerpt = "" if compact else f"""
+  <details class="law-excerpt">
+    <summary>legislacao em tela</summary>
+    <p>{escape(item.get('legal_excerpt', ''))}</p>
+    <a href="{escape(item.get('official_url', ''))}" target="_blank" rel="noopener">abrir fonte legal</a>
+  </details>
+"""
+    return details + excerpt
 
 
 def benefit_card(item: dict, current_path: str, compact: bool = False) -> str:
@@ -1863,33 +1927,17 @@ def benefit_card(item: dict, current_path: str, compact: bool = False) -> str:
         source = "../" + state_href(jurisdiction)
     registry = rel_href(current_path, f"beneficios/index.html#{item.get('id', '')}")
     scope = item.get("scope_summary") or item.get("product_or_operation", "")
-    details = "" if compact else f"""
-  <dl>
-    <dt>Mercadoria/operação</dt><dd>{escape(benefit_value(item, 'goods_or_services'))}</dd>
-    <dt>NCM/TIPI</dt><dd>{escape(benefit_value(item, 'ncm'))}</dd>
-    <dt>CEST</dt><dd>{escape(benefit_value(item, 'cest'))}</dd>
-    <dt>cBenef</dt><dd>{escape(benefit_value(item, 'cbenef'))}</dd>
-    <dt>CST/cClassTrib</dt><dd>{escape(' / '.join(part for part in [benefit_value(item, 'cst', ''), benefit_value(item, 'cclasstrib', '')] if part) or 'nao indicado no trecho')}</dd>
-    <dt>Vigencia/status</dt><dd>{escape(item.get('validity_status') or benefit_value(item, 'validity_start', 'vigente no ato capturado'))}{' ate ' + escape(item.get('validity_end', '')) if item.get('validity_end') else ''}</dd>
-    <dt>Condição</dt><dd>{escape(benefit_value(item, 'conditions', 'ver texto legal'))}</dd>
-    <dt>Vedação</dt><dd>{escape(benefit_value(item, 'prohibitions', 'ver texto legal'))}</dd>
-    <dt>Prova</dt><dd>{escape(item.get('proof_required', ''))}</dd>
-  </dl>
-  <details class="law-excerpt">
-    <summary>legislacao em tela</summary>
-    <p>{escape(item.get('legal_excerpt', ''))}</p>
-    <a href="{escape(item.get('official_url', ''))}" target="_blank" rel="noopener">abrir fonte legal</a>
-  </details>
-"""
+    details = benefit_contract_details(item, compact=compact)
     search_text = " ".join(str(item.get(key, "")) for key in (
         "jurisdiction", "tax", "benefit_group", "benefit_group_evidence", "benefit_type",
         "scope_summary", "goods_or_services", "product_or_operation",
         "ncm", "cest", "cbenef", "cst", "cclasstrib", "conditions", "legal_basis",
-        "transition_status", "validity_status", "legal_nature",
+        "transition_status", "validity_status", "legal_nature", "status", "transicao_rt",
+        "publicacao", "inicio_vigencia", "inicio_eficacia", "fim_vigencia", "verificado_em",
     ))
     return f"""
 <article class="benefit-cross-card searchable-card" data-search="{escape(search_value_text(search_text))}">
-  <span class="card-kicker">{escape(jurisdiction)} &middot; {escape(item.get('tax', ''))} &middot; {escape(item.get('transition_status', 'regra vigente'))} &middot; confiança {escape(item.get('classification_confidence', 'media'))}</span>
+  <span class="card-kicker">{escape(jurisdiction)} &middot; {escape(str(item.get('tax', '')))} &middot; {escape(str(item.get('transition_status', 'regra vigente')))} &middot; confiança {escape(str(item.get('classification_confidence', 'media')))}</span>
   <h3>{escape(item.get('benefit_type', 'Tratamento tributario'))}</h3>
   <p><strong>Escopo publicado:</strong> {escape(scope)}</p>
   <p><strong>{escape(item.get('legal_nature', 'tratamento tributario especifico'))}</strong></p>
@@ -3225,6 +3273,8 @@ def search_scope(rel: str) -> dict[str, str]:
 def benefit_index_text(value: object) -> str:
     if isinstance(value, list):
         return " ".join(clean_search_fragment(part) for part in value if clean_search_fragment(part))
+    if isinstance(value, dict):
+        return " ".join(clean_search_fragment(part) for part in value.values() if clean_search_fragment(part))
     return clean_search_fragment(value)
 
 
@@ -3252,15 +3302,39 @@ def benefit_full_search_entries() -> list[dict[str, str]]:
             item.get("transition_status", ""),
             item.get("validity_status", ""),
             item.get("legal_nature", ""),
+            item.get("beneficio", ""),
+            item.get("mercadoria_servico", ""),
+            item.get("ente_uf", ""),
+            benefit_index_text(item.get("ato_oficial")),
+            item.get("publicacao", ""),
+            item.get("inicio_vigencia", ""),
+            item.get("inicio_eficacia", ""),
+            item.get("fim_vigencia", ""),
+            item.get("status", ""),
+            item.get("transicao_rt", ""),
+            item.get("verificado_em", ""),
             item.get("validity_start", ""),
             item.get("validity_end", ""),
             item.get("conditions", ""),
+            item.get("condicao", ""),
             item.get("prohibitions", ""),
             item.get("legal_basis", ""),
+            benefit_index_text(item.get("prova_documental")),
+            item.get("risco", ""),
             item.get("source_title", ""),
             item.get("legal_excerpt", ""),
         ]
-        text = " ".join(str(part) for part in parts if str(part).strip())
+        contract_prefix = " ".join(
+            str(part) for part in [
+                item.get("scope_summary", ""),
+                item.get("validity_status", ""),
+                item.get("status", ""),
+                item.get("transicao_rt", ""),
+                item.get("verificado_em", ""),
+            ]
+            if str(part).strip()
+        )
+        text = " ".join([contract_prefix, *(str(part) for part in parts if str(part).strip())])
         title = " · ".join(
             part for part in [
                 item.get("jurisdiction", ""),
@@ -3640,6 +3714,38 @@ def write_discovery_files() -> None:
     write("assets/llm-manifest.json", json.dumps(llm_manifest(), ensure_ascii=False, indent=2))
 
 
+def file_sha256(path: Path) -> str:
+    digest = hashlib.sha256()
+    with path.open("rb") as handle:
+        for chunk in iter(lambda: handle.read(1024 * 1024), b""):
+            digest.update(chunk)
+    return digest.hexdigest()
+
+
+def write_build_freshness() -> None:
+    artifact_paths = [
+        "beneficios/index.html",
+        "llms.txt",
+        "assets/llm-manifest.json",
+        "assets/portal-search.js",
+        "assets/portal-search-full.json",
+        "data/benefits_crosswalk.json",
+    ]
+    artifacts = {}
+    for rel in artifact_paths:
+        path = ROOT / rel
+        artifacts[rel] = {
+            "sha256": file_sha256(path),
+            "bytes": path.stat().st_size,
+        }
+    payload = {
+        "schema": "rjc-build-freshness-v1",
+        "generated_at": datetime.now().isoformat(timespec="seconds"),
+        "artifacts": artifacts,
+    }
+    write("assets/build-freshness.json", json.dumps(payload, ensure_ascii=False, indent=2))
+
+
 def write(path: str, content: str) -> None:
     target = ROOT / path
     target.parent.mkdir(parents=True, exist_ok=True)
@@ -3656,11 +3762,23 @@ def write(path: str, content: str) -> None:
 
 
 def normalize_legacy_editorial_dates() -> None:
+    old_editorial_dates = [
+        "/".join(["25", "04", "2026"]),
+        "/".join(["14", "06", "2026"]),
+    ]
     replacements = {
-        "Atualizacao editorial: 25/04/2026": f"Atualizacao editorial: {EDITORIAL_UPDATED_ON}",
-        "Atualizada em 25/04/2026": f"Atualizada em {EDITORIAL_UPDATED_ON}",
         "Conteudos profundos v1 atualizados em 17/05/2026": f"Conteudos profundos v1 atualizados em {EDITORIAL_UPDATED_ON}",
     }
+    for old_editorial_date in old_editorial_dates:
+        replacements.update({
+            f"<span>{old_editorial_date}</span>": f"<span>{EDITORIAL_UPDATED_ON}</span>",
+            f"Atualizacao editorial: {old_editorial_date}": f"Atualizacao editorial: {EDITORIAL_UPDATED_ON}",
+            f"Atualizada em {old_editorial_date}": f"Atualizada em {EDITORIAL_UPDATED_ON}",
+            f"Conteúdo atualizado em {old_editorial_date}": f"Conteúdo atualizado em {EDITORIAL_UPDATED_ON}",
+            f"Conteudo atualizado em {old_editorial_date}": f"Conteudo atualizado em {EDITORIAL_UPDATED_ON}",
+            f"organização editorial V3 atualizada em {old_editorial_date}": f"organização editorial V3 atualizada em {EDITORIAL_UPDATED_ON}",
+            f"organizacao editorial V3 atualizada em {old_editorial_date}": f"organizacao editorial V3 atualizada em {EDITORIAL_UPDATED_ON}",
+        })
     for path in ROOT.rglob("*.html"):
         if ".git" in path.parts:
             continue
@@ -3737,6 +3855,7 @@ def main() -> None:
     write("assets/portal-search.js", search_index(data))
     write("assets/portal-search-full.json", json.dumps(full_text_search_entries() + benefit_full_search_entries() + ncm_full_search_entries(), ensure_ascii=False, separators=(",", ":")))
     write_discovery_files()
+    write_build_freshness()
     print("Portal generated successfully.")
 
 

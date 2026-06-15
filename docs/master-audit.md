@@ -1,6 +1,6 @@
 # Auditoria Mestre v2
 
-Gerado em 2026-06-14.
+Gerado em 2026-06-15.
 
 Este arquivo resume cobertura e cruzamentos do Portal RJC Tributario Aberto. Ele e uma trilha de auditoria, nao um parecer tributario.
 

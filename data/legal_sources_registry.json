@@ -5553,9 +5553,9 @@
     {
       "source_id": "state-rj-rj-tabela-codigo-beneficio-cst-2026",
       "jurisdiction": "RJ",
-      "title": "SEFAZ/RJ - Tabela de codigo de beneficio x CST - versao 2026-03-09",
+      "title": "SEFAZ/RJ - Tabela de codigo de beneficio x CST - tabela atualizada em 04/05/2026",
       "short": "Obrigacoes acessorias e documentos",
-      "official_url": "http://portal.fazenda.rj.gov.br/dfe/wp-content/uploads/sites/17/2023/10/Tabela-codigo-de-beneficio-X-CST_versao_2026-03-09.pdf",
+      "official_url": "https://portal.fazenda.rj.gov.br/dfe/wp-content/uploads/sites/17/2023/10/Tabela-codigo-de-beneficio-X-CST.pdf",
       "storage": {
         "type": "local_text",
         "files": [
@@ -5564,7 +5564,7 @@
         "sha256": {
           "RJ_TABELA_CODIGO_BENEFICIO_CST_2026_2026-04-26.txt": "cfe75329ef79b601d8fbda75618f00a2c5fe14fefb4ef62424f6553e1b76f3de"
         },
-        "fetch_url": "http://portal.fazenda.rj.gov.br/dfe/wp-content/uploads/sites/17/2023/10/Tabela-codigo-de-beneficio-X-CST_versao_2026-03-09.pdf"
+        "fetch_url": "https://portal.fazenda.rj.gov.br/dfe/wp-content/uploads/sites/17/2023/10/Tabela-codigo-de-beneficio-X-CST.pdf"
       },
       "note": "Texto estadual de ICMS publicado em estados/rj/legislacao/fontes/rj-tabela-codigo-beneficio-cst-2026.html.",
       "render": "full_text",
