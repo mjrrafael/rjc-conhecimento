@@ -164,5 +164,7 @@
 - PR aberto: `https://github.com/mjrrafael/rjc-conhecimento/pull/4` com título `[codex] Atualiza portal tributario - 2026-06-15`, em modo draft contra `main`.
 - Labels `codex` e `codex-automation`: não aplicados porque o repositório não possui esses labels (`gh label list` retornou apenas labels padrão).
 - Checks GitHub do PR: `gh pr checks 4` retornou `no checks reported` no momento da abertura.
+- PR #4 marcado como pronto e mergeado por PR em `2026-06-15T13:02:53Z`; merge commit/squash em `main`: `9c330ca65492c429a43d4db0b186bd84abf77a65`.
+- Verificação HTTP pública do Pages após merge: `assets/build-freshness.json`, `beneficios/index.html`, `data/benefits_crosswalk.json` e `llms.txt` retornaram HTTP `200`; `llms.txt` manteve referência ao manifest.
 - **Status literal atualizado:** `CONCLUIDO COM RESSALVA`
 - Ressalva: há soft warnings de rede/SSL/host em fontes oficiais durante link health, sem `404/410` em benefício publicado; esses itens permanecem `A VALIDAR` para rechecagem posterior.
