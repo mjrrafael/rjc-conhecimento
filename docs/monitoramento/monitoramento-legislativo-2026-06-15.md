@@ -160,5 +160,9 @@
 
 - Política aplicada: conteúdo e índices públicos não vão direto para `main`; publicação deve ocorrer por PR.
 - Estado desta continuação: apto a abrir PR com gates verdes, anexando esta seção do ledger como evidência.
+- Commit publicado: `710c6a7` (`Atualiza portal tributario v2`) na branch `codex/atualiza-portal-tributario-2026-06-15`.
+- PR aberto: `https://github.com/mjrrafael/rjc-conhecimento/pull/4` com título `[codex] Atualiza portal tributario - 2026-06-15`, em modo draft contra `main`.
+- Labels `codex` e `codex-automation`: não aplicados porque o repositório não possui esses labels (`gh label list` retornou apenas labels padrão).
+- Checks GitHub do PR: `gh pr checks 4` retornou `no checks reported` no momento da abertura.
 - **Status literal atualizado:** `CONCLUIDO COM RESSALVA`
 - Ressalva: há soft warnings de rede/SSL/host em fontes oficiais durante link health, sem `404/410` em benefício publicado; esses itens permanecem `A VALIDAR` para rechecagem posterior.
