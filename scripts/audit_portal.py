@@ -176,8 +176,12 @@ def audit_search_entries(parsed: dict[Path, PageParser]) -> list[str]:
 def audit_editorial_dates(parsed: dict[Path, PageParser]) -> list[str]:
     errors: list[str] = []
     stale_markers = (
-        "Atualizacao editorial: 25/04/2026",
-        "Atualizada em 25/04/2026",
+        f"Atualizacao editorial: {'/'.join(['25', '04', '2026'])}",
+        f"Atualizada em {'/'.join(['25', '04', '2026'])}",
+        f"Conteúdo atualizado em {'/'.join(['25', '04', '2026'])}",
+        f"Conteudo atualizado em {'/'.join(['25', '04', '2026'])}",
+        f"organização editorial V3 atualizada em {'/'.join(['25', '04', '2026'])}",
+        f"organizacao editorial V3 atualizada em {'/'.join(['25', '04', '2026'])}",
         "Conteudos profundos v1 atualizados em 17/05/2026",
     )
     expected_footer = f"Atualizacao editorial: {EDITORIAL_UPDATED_ON}"

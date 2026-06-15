@@ -590,7 +590,7 @@
 <div class="header-content">
 <div class="logo">Painel Fiscal - Consulta Tributária</div>
 <div class="tagline">Consulta prática com foco em Goiás, PIS/Cofins federal, cBenef, setores críticos e leitura normativa de ponta a ponta</div>
-<div class="subtitle">Conteúdo atualizado em 25/04/2026 para apoiar emissão fiscal, enquadramento documental e leitura integrada de ICMS/GO, PIS/Cofins, transporte e reforma tributária</div>
+<div class="subtitle">Conteúdo atualizado em 15/06/2026 para apoiar emissão fiscal, enquadramento documental e leitura integrada de ICMS/GO, PIS/Cofins, transporte e reforma tributária</div>
 </div>
 </header>
 <!-- Container Principal -->
@@ -928,8 +928,8 @@
       </p>
 <div class="info-box">
 <h3>⚠️ Marcos recentes acompanhados nesta base:</h3>
-<p><strong>Maranhão:</strong> 22% → 23% (vigência: 23/02/2025) | 
-           <strong>Rio Grande do Norte:</strong> 18% → 20% (vigência: 20/03/2025) | 
+<p><strong>Maranhão:</strong> 22% → 23% (vigência: 23/02/2025) |
+           <strong>Rio Grande do Norte:</strong> 18% → 20% (vigência: 20/03/2025) |
            <strong>Piauí:</strong> 21% → 22,5% (vigência: 01/04/2025)</p>
 </div>
 <div class="info-box" style="background:#f8fafc;border-color:#cbd5e1;">
@@ -1851,7 +1851,7 @@
 <p class="logo-footer">RJC ASSESSORIA</p>
 <p>A Arte de Registrar o Patrimônio</p>
 <p>contato@rjcassessoria.com.br | (62) 8168-0949</p>
-<p>© 2026 RJC Assessoria - Painel Fiscal | organização editorial V3 atualizada em 25/04/2026</p>
+<p>© 2026 RJC Assessoria - Painel Fiscal | organização editorial V3 atualizada em 15/06/2026</p>
 </div>
 </footer>
 <script>
@@ -2823,7 +2823,7 @@
     function renderCFOPTable() {
       const tbody = document.getElementById('cfopTableBody');
       const data = currentData.cfop || window.__DATA__.cfop;
-      
+
       tbody.innerHTML = data.map(item => `
         <tr>
           <td><strong>${item.codigo}</strong></td>
@@ -2838,7 +2838,7 @@
     function renderCSTTable() {
       const tbody = document.getElementById('cstTableBody');
       const data = currentData.cst || window.__DATA__.cst;
-      
+
       tbody.innerHTML = data.map(item => `
         <tr>
           <td><strong>${item.codigo}</strong></td>
@@ -2851,7 +2851,7 @@
     function renderAliquotasTable() {
       const tbody = document.getElementById('aliquotasTableBody');
       const data = currentData.aliquotas || window.__DATA__.aliquotas;
-      
+
       tbody.innerHTML = data.map(item => `
         <tr>
           <td><strong>${item.uf}</strong></td>
@@ -2865,7 +2865,7 @@
     function renderNCMTable() {
       const tbody = document.getElementById('ncmTableBody');
       const data = currentData.ncm || window.__DATA__.ncm;
-      
+
       tbody.innerHTML = data.map(item => `
         <tr>
           <td><strong>${item.ncm}</strong></td>
@@ -2879,7 +2879,7 @@
     function renderICMSGOTable() {
       const tbody = document.getElementById('icmsgoTableBody');
       const data = currentData.icmsgo || window.__DATA__.icmsgo;
-      
+
       tbody.innerHTML = data.map(item => {
         const benefitText = String(item.beneficio || '').toLowerCase();
         const benefitTag = benefitText.includes('isen') ? 'entrada' : 'saida';
@@ -2924,7 +2924,7 @@
     function renderFAQ() {
       const container = document.getElementById('faqContent');
       const data = window.__DATA__.faq;
-      
+
       container.innerHTML = data.map((item, index) => `
         <div style="margin-bottom: 1.5rem; border: 1px solid #e2e8f0; border-radius: 12px; overflow: hidden;">
           <div style="background: #f8fafc; padding: 1rem; cursor: pointer; font-weight: 600; color: #1e3a8a;" onclick="toggleFAQ(${index})">
@@ -2951,11 +2951,11 @@
 
       const section = getCurrentSection();
       const data = window.__DATA__[section];
-      
+
       if (!data) return;
 
       currentData[section] = data.filter(item => {
-        return Object.values(item).some(value => 
+        return Object.values(item).some(value =>
           value.toString().toLowerCase().includes(query)
         );
       });

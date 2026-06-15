@@ -79,7 +79,7 @@ Cada achado deve indicar se afeta `humano`, `IA` ou `ambos`, e deve ser classifi
 - O build integral do portal ainda nao foi concluido nesta maquina. Houve regeneracao curta de `llms.txt`, `assets/llm-manifest.json`, `assets/portal-search.js`, `assets/portal-search-full.json` e sitemaps depois da correcao da NT 2025.002, mas isso nao substitui uma execucao completa de `build_portal.py` com todas as paginas de beneficios e estaduais.
 - Ha mojibake visivel em paginas publicadas, especialmente no painel fiscal e em paginas estaduais de AM/CE/AP/GO, com textos como `alteraÃ§Ãµes`, `pÃ¡gina`, `legislaÃ§Ã£o`, `cÃ³digo`. Risco: leitura humana ruim, busca imprecisa e chunking ruim para IA.
 - Paginas/arquivos de beneficios continuam grandes demais para leitura humana, GitHub Pages e ingestao por IA: `beneficios/index.html`, `data/benefits_crosswalk.json`, `assets/portal-search-full.json`, `beneficios/uf.html` e paginas tematicas acima de dezenas de MB. Risco: lentidao, falhas de renderizacao e respostas de IA com contexto ruidoso.
-- Cards de beneficios ainda carregam texto bruto demais, incluindo residuos como `[] [] []`, linhas de separacao e historico de redacoes antigas misturado com regra atual. Risco: IA aplicar texto historico/revogado como vigente se o card nao separar claramente `vigente`, `historico` e `a validar`.
+- Cards de beneficios ainda carregam texto bruto demais, incluindo marcadores de listas vazias, linhas de separacao e historico de redacoes antigas misturado com regra atual. Risco: IA aplicar texto historico/revogado como vigente se o card nao separar claramente `vigente`, `historico` e `a validar`.
 
 ### CORRIGIDO NESTA REVISAO
 
@@ -91,7 +91,7 @@ Cada achado deve indicar se afeta `humano`, `IA` ou `ambos`, e deve ser classifi
 - Foram encontrados varios trechos com vigencia ate `31/12/2025` ou periodos encerrados em paginas federais, estaduais e beneficios. Parte disso e historico legislativo legitimo, mas os trechos precisam ser reclassificados para impedir uso como regra atual sem conferencia fonte a fonte.
 - Ha itens de cBenef/RJ e beneficios estaduais com datas finais de 2025 dentro de cards ainda pesquisaveis como regra atual. Precisam de confronto com tabelas 2026 antes de qualquer exclusao ou substituicao.
 - Paginas com marcadores de `revisado com pendencias` somam volume relevante. Isso e transparente, mas precisa ser refletido nos metadados de IA como conteudo `nao aplicar sem validacao`.
-- Resolvido localmente em 14/06/2026 17:09: paginas HTML, badges estruturais, `llms.txt` e indices de busca foram regenerados/normalizados para `Atualizacao editorial: 14/06/2026`. O auditor do portal agora bloqueia regressao para `25/04/2026`.
+- Resolvido localmente em 14/06/2026 17:09: paginas HTML, badges estruturais, `llms.txt` e indices de busca foram regenerados/normalizados para `Atualizacao editorial: 14/06/2026`. O auditor do portal agora bloqueia regressao para a data editorial antiga de abril/2026.
 
 ### OK ESTRUTURAL
 
@@ -159,7 +159,7 @@ Cada achado deve indicar se afeta `humano`, `IA` ou `ambos`, e deve ser classifi
 
 - A data `generated_on` dos indices mestres e NCM foi atualizada para `2026-06-14`, reduzindo risco de stale metadata.
 - O risco de aplicar a NT 2025.002 v1.35 como regra atual continua mitigado.
-- Persistem residuos textuais como `[] [] []`, listas serializadas e blocos historicos extensos em `data-search` de cards de beneficios; a limpeza de serializacao foi codificada, mas nao propagou integralmente para todas as paginas geradas dentro do tempo local disponivel.
+- Persistem residuos textuais como marcadores de listas vazias, listas serializadas e blocos historicos extensos em `data-search` de cards de beneficios; a limpeza de serializacao foi codificada, mas nao propagou integralmente para todas as paginas geradas dentro do tempo local disponivel.
 - Conclusao IA: a recuperacao melhorou nos indices mestres, mas ainda ha ruído material em beneficios tematicos; qualquer uso automatizado deve tratar `beneficios/*.html` como corpus de apoio, nao como resposta pronta sem conferencia no dispositivo legal.
 
 ### Validacoes complementares executadas
@@ -179,7 +179,7 @@ Cada achado deve indicar se afeta `humano`, `IA` ou `ambos`, e deve ser classifi
 
 - Propagar a limpeza de serializacao do `data-search` para todas as paginas de beneficios em execucao integral estavel de `build_portal.py`, com tempo maior ou CI.
 - Refinar o gerador para separar, nos cards e chunks, `vigente`, `historico` e `nao aplicar sem validacao`, evitando mistura de texto operacional antigo com regra atual.
-- Criar auditoria especifica para detectar `[] [] []`, blocos `===== PAGINA =====`, residuos de OCR e trechos de documento fiscal que nao deveriam virar card de beneficio.
+- Criar auditoria especifica para detectar marcadores de listas vazias, blocos `===== PAGINA =====`, residuos de OCR e trechos de documento fiscal que nao deveriam virar card de beneficio.
 
 ## Rodada especifica de saneamento de beneficios - 14/06/2026
 

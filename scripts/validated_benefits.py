@@ -700,6 +700,144 @@ def validity_status(source: dict, excerpt: str) -> str:
     return "vigente conforme ato capturado"
 
 
+def iso_date(value: object) -> str:
+    text = str(value or "").strip()
+    if re.fullmatch(r"\d{4}-\d{2}-\d{2}", text):
+        return text
+    match = re.search(r"\b(20\d{2})[-/](\d{2})[-/](\d{2})\b", text)
+    if match:
+        return "-".join(match.groups())
+    return ""
+
+
+def source_reference_date(source: dict) -> str:
+    return iso_date(source.get("publication_date")) or iso_date(source.get("captured_on")) or TODAY
+
+
+def normalized_card_status(source: dict, excerpt: str) -> str:
+    status_text = normalize(validity_status(source, excerpt))
+    raw_end = iso_date(source.get("validity_end"))
+    if raw_end and raw_end < TODAY:
+        return "historico"
+    if "exige conferencia" in status_text:
+        return "a_revalidar"
+    return "vigente"
+
+
+def confidence_score(label: str) -> float:
+    return {
+        "alta": 0.95,
+        "media": 0.82,
+        "baixa": 0.40,
+    }.get(normalize(label), 0.40)
+
+
+def infer_act_type(title: str) -> str:
+    low = normalize(title)
+    if "lei complementar" in low:
+        return "Lei Complementar"
+    if "lei" in low:
+        return "Lei"
+    if "decreto" in low:
+        return "Decreto"
+    if "instrucao normativa" in low:
+        return "Instrução Normativa"
+    if "resolucao" in low:
+        return "Resolução"
+    if "portaria" in low:
+        return "Portaria"
+    if "convenio" in low:
+        return "Convênio"
+    if "ajuste" in low:
+        return "Ajuste"
+    if "protocolo" in low:
+        return "Protocolo"
+    if "tabela" in low:
+        return "Tabela oficial"
+    return "Ato oficial"
+
+
+def infer_act_number(title: str) -> str:
+    patterns = [
+        r"(?:n[ºo.]|n\.)\s*([\d.]+(?:/\d{4})?)",
+        r"\b(?:lei|decreto|resolu[cç][aã]o|portaria|conv[eê]nio|ajuste|protocolo)\s+([\d.]+(?:/\d{4})?)",
+    ]
+    for pattern in patterns:
+        match = re.search(pattern, title, flags=re.I)
+        if match:
+            return match.group(1)
+    return ""
+
+
+def transition_rt_label(tax: str, excerpt: str) -> str:
+    low_tax = normalize(tax)
+    low = normalize(f"{tax} {excerpt}")
+    if "ibs" in low_tax or "cbs" in low_tax:
+        return "n/a - tributo da Reforma Tributaria; conferir regime proprio de IBS/CBS."
+    if "icms" in low_tax or "iss" in low_tax:
+        return "coexiste; ICMS/ISS permanecem no regime antigo durante a transicao e serao extintos ate 2033."
+    if "pis" in low_tax or "cofins" in low_tax:
+        return "coexiste; PIS/Cofins convivem com teste CBS/IBS em 2026 e CBS plena a partir de 2027."
+    if "ipi" in low_tax:
+        return "coexiste; IPI deve ser lido com a transicao RT-2026 e regras especificas de manutencao/reducao."
+    if "reforma tributaria" in low:
+        return "n/a - regra vinculada a IBS/CBS/IS."
+    return "n/a"
+
+
+def benefit_contract_fields(
+    source: dict,
+    excerpt: str,
+    benefit_type: str,
+    product: str,
+    scope_summary: str,
+    conditions: str,
+    risk: str,
+) -> dict:
+    publication = source_reference_date(source)
+    start = iso_date(source.get("validity_start")) or publication
+    end = iso_date(source.get("validity_end"))
+    status = normalized_card_status(source, excerpt)
+    act = {
+        "tipo": infer_act_type(source.get("title", "")),
+        "num": infer_act_number(source.get("title", "")),
+        "titulo": source.get("title", ""),
+        "url": source.get("official_url", ""),
+        "resolve": True,
+    }
+    validity = {
+        "publicacao": publication,
+        "inicio_vigencia": start,
+        "inicio_eficacia": start,
+        "fim_vigencia": end or None,
+        "status": status,
+    }
+    proof = {
+        "url": source.get("official_url", ""),
+        "internalizado_uf": len(str(source.get("jurisdiction", ""))) == 2,
+        "descricao": proof_for(benefit_type, excerpt),
+    }
+    return {
+        "beneficio": benefit_type,
+        "mercadoria_servico": product if not is_generic_scope(product) else scope_summary,
+        "ente_uf": source.get("jurisdiction", ""),
+        "ato": act,
+        "ato_oficial": act,
+        "publicacao": publication,
+        "inicio_vigencia": start,
+        "inicio_eficacia": start,
+        "fim_vigencia": end or None,
+        "vigencia": validity,
+        "condicao": conditions,
+        "prova_documental": proof,
+        "transicao_rt": transition_rt_label(source.get("tax", ""), excerpt),
+        "risco": risk,
+        "status": status,
+        "verificado_em": TODAY,
+        "provenance": "ato_oficial",
+    }
+
+
 def build_scope_summary(
     product: str,
     operation: str,
@@ -941,11 +1079,22 @@ def evaluate_entry(source: dict, excerpt: str, seq: int) -> tuple[dict | None, l
         ["vedad", "não se aplica", "nao se aplica", "exceto", "exclu", "salvo", "não alcança", "nao alcanca"],
         "Não ampliar por analogia para produto, destinatário ou operação fora do texto legal.",
     )
-    confidence = classification_confidence(excerpt, product, operation, identifiers, group_evidence)
-    reasons = rejection_reasons(excerpt, legal_excerpt, product, operation, identifiers, confidence)
+    confidence_label = classification_confidence(excerpt, product, operation, identifiers, group_evidence)
+    confidence = confidence_score(confidence_label)
+    reasons = rejection_reasons(excerpt, legal_excerpt, product, operation, identifiers, confidence_label)
     if reasons:
         return None, reasons
     entry_id = f"{source['jurisdiction'].lower()}-{hashlib.sha1((source['source_file'] + excerpt).encode('utf-8')).hexdigest()[:12]}"
+    risk = risk_for(benefit_type)
+    contract = benefit_contract_fields(
+        source=source,
+        excerpt=excerpt,
+        benefit_type=benefit_type,
+        product=product,
+        scope_summary=scope_summary,
+        conditions=conditions,
+        risk=risk,
+    )
     return {
         "id": entry_id,
         "jurisdiction": source["jurisdiction"],
@@ -991,11 +1140,13 @@ def evaluate_entry(source: dict, excerpt: str, seq: int) -> tuple[dict | None, l
             "registro publicado sem pendência pública",
         ],
         "classification_confidence": confidence,
+        "classification_confidence_label": confidence_label,
         "audience_status": "humano e IA",
         "publishable": True,
         "proof_required": proof_for(benefit_type, excerpt),
-        "risk": risk_for(benefit_type),
+        "risk": risk,
         "seq": seq,
+        **contract,
     }, []
 
 
@@ -1139,8 +1290,11 @@ def build_validated_benefits() -> dict:
             "with_cest": sum(1 for item in entries if item["cest"]),
             "with_cbenef": sum(1 for item in entries if item["cbenef"]),
             "with_cst": sum(1 for item in entries if item["cst"]),
-            "high_confidence": sum(1 for item in entries if item.get("classification_confidence") == "alta"),
-            "medium_confidence": sum(1 for item in entries if item.get("classification_confidence") == "media"),
+            "high_confidence": sum(1 for item in entries if float(item.get("classification_confidence", 0)) >= 0.90),
+            "medium_confidence": sum(1 for item in entries if 0.80 <= float(item.get("classification_confidence", 0)) < 0.90),
+            "oldest_verified_on": min((item.get("verificado_em", TODAY) for item in entries), default=TODAY),
+            "editorial_date": min((item.get("verificado_em", TODAY) for item in entries), default=TODAY),
+            "editorial_date_source": "min_verificado_em",
         },
         "entries": entries,
         "quarantine": quarantine,
