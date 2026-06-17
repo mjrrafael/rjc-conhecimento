@@ -129,7 +129,7 @@
 - `assets/portal-search-full.json`: busca integral reindexada com escopo, status, transição RT-2026 e verificação por card no início do corpo indexado.
 - `assets/build-freshness.json`: criado manifesto de checksum cruzado para `beneficios/index.html`, `llms.txt`, `assets/llm-manifest.json`, `assets/portal-search.js`, `assets/portal-search-full.json` e `data/benefits_crosswalk.json`.
 - `scripts/audit_*.py`: gates v2 passaram a validar contrato visível, inferência por keyword, envelope temporal, link health, frescor por checksum, isolamento de quarentena, transição RT-2026, convergência HTML/JSON/busca e data editorial derivada.
-- `scripts/state_legal_pages.py` e `scripts/build_portal.py`: rodapés legados de 14/06/2026 e 25/04/2026 foram normalizados para a data editorial derivada da menor `verificado_em` dos cards publicados.
+- `scripts/state_legal_pages.py` e `scripts/build_portal.py`: rodapés legados de 14/06/2026 e 25-04-2026 foram normalizados para a data editorial derivada da menor `verificado_em` dos cards publicados.
 
 ### Gates finais
 

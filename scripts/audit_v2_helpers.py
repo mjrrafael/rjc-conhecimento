@@ -20,7 +20,6 @@ LLMS_TXT = ROOT / "llms.txt"
 SITEMAP_TXT = ROOT / "sitemap.txt"
 SITEMAP_XML = ROOT / "sitemap.xml"
 BENEFIT_INDEX = ROOT / "beneficios" / "index.html"
-BENEFIT_PAGES = sorted((ROOT / "beneficios").glob("*.html"))
 STALE_DATE_MARKERS = (
     "/".join(["25", "04", "2026"]),
     f"Atualizacao editorial: {'/'.join(['25', '04', '2026'])}",
@@ -30,6 +29,21 @@ STALE_DATE_MARKERS = (
     f"organização editorial V3 atualizada em {'/'.join(['25', '04', '2026'])}",
     f"organizacao editorial V3 atualizada em {'/'.join(['25', '04', '2026'])}",
 )
+
+
+def is_workspace_duplicate(path: Path) -> bool:
+    return bool(re.search(r" \(\d+\)$", path.stem))
+
+
+def iter_public_html_files(base: Path = ROOT) -> list[Path]:
+    return sorted(
+        path
+        for path in base.rglob("*.html")
+        if ".git" not in path.parts and not is_workspace_duplicate(path)
+    )
+
+
+BENEFIT_PAGES = [path for path in iter_public_html_files(ROOT / "beneficios") if path.parent == ROOT / "beneficios"]
 
 
 def load_json(path: Path, fallback: object) -> object:
@@ -150,9 +164,7 @@ def raw_benefit_articles(path: Path) -> list[str]:
 
 def stale_date_hits() -> list[str]:
     hits: list[str] = []
-    for path in ROOT.rglob("*.html"):
-        if ".git" in path.parts:
-            continue
+    for path in iter_public_html_files():
         text = read_text(path)
         for marker in STALE_DATE_MARKERS:
             if marker in text:
