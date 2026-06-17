@@ -1,6 +1,6 @@
 {
   "schema": "rjc-build-freshness-v1",
-  "generated_at": "2026-06-15T09:51:21",
+  "generated_at": "2026-06-17T07:45:42",
   "artifacts": {
     "beneficios/index.html": {
       "sha256": "22938ac572bab3fc0fb5661613f890b548f9432a7c00959713243f145d0ecb2a",
@@ -19,12 +19,12 @@
       "bytes": 179350
     },
     "assets/portal-search-full.json": {
-      "sha256": "caa34cd0775316a52cadef415acdcf206f8d2e64671d85dc4b47c8669219e990",
+      "sha256": "f1993ecaa5d36dc90d23d6f9559065ee215ff863e0f0f7bb3b18be24a92c6dc8",
       "bytes": 47892612
     },
     "data/benefits_crosswalk.json": {
-      "sha256": "bd9770cee117cd3efbb8ee41ac901f24f85eeccd2376e96626fb5c631e7f9afc",
-      "bytes": 75582811
+      "sha256": "3b222388329c56550a5a62e574ebf2ad2bd2e0254516c2ae464a34b4b050464a",
+      "bytes": 76518089
     }
   }
 }

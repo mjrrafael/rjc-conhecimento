@@ -3401,9 +3401,7 @@ def ncm_full_search_entries() -> list[dict[str, str]]:
 
 def full_text_search_entries() -> list[dict[str, str]]:
     entries: list[dict[str, str]] = []
-    for html_path in sorted(ROOT.rglob("*.html")):
-        if ".git" in html_path.parts or ".codex-screenshots" in html_path.parts:
-            continue
+    for html_path in iter_public_html_files():
         rel = html_path.relative_to(ROOT).as_posix()
         if rel.startswith("assets/"):
             continue
@@ -3566,15 +3564,24 @@ def search_index(data: dict) -> str:
     return "window.RJC_SEARCH = " + payload + ";\n"
 
 
-def html_pages_for_discovery() -> list[Path]:
+def is_workspace_duplicate(path: Path) -> bool:
+    return bool(re.search(r" \(\d+\)$", path.stem))
+
+
+def iter_public_html_files() -> list[Path]:
     blocked = {".git", ".codex-screenshots"}
-    pages = []
-    for page in ROOT.rglob("*.html"):
-        relative = page.relative_to(ROOT)
-        if any(part in blocked for part in relative.parts):
-            continue
-        pages.append(page)
-    return sorted(pages, key=lambda item: (site_path(str(item.relative_to(ROOT))) != "index.html", site_path(str(item.relative_to(ROOT)))))
+    return sorted(
+        page
+        for page in ROOT.rglob("*.html")
+        if not any(part in blocked for part in page.relative_to(ROOT).parts) and not is_workspace_duplicate(page)
+    )
+
+
+def html_pages_for_discovery() -> list[Path]:
+    return sorted(
+        iter_public_html_files(),
+        key=lambda item: (site_path(str(item.relative_to(ROOT))) != "index.html", site_path(str(item.relative_to(ROOT)))),
+    )
 
 
 def page_title(path: Path) -> str:
@@ -3779,9 +3786,7 @@ def normalize_legacy_editorial_dates() -> None:
             f"organização editorial V3 atualizada em {old_editorial_date}": f"organização editorial V3 atualizada em {EDITORIAL_UPDATED_ON}",
             f"organizacao editorial V3 atualizada em {old_editorial_date}": f"organizacao editorial V3 atualizada em {EDITORIAL_UPDATED_ON}",
         })
-    for path in ROOT.rglob("*.html"):
-        if ".git" in path.parts:
-            continue
+    for path in iter_public_html_files():
         text = path.read_text(encoding="utf-8", errors="ignore")
         updated = text
         for old, new in replacements.items():

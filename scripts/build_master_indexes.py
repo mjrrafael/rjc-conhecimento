@@ -344,7 +344,11 @@ def build_coverage() -> dict:
     sources = registry_sources()
     federal_available = federal_files()
     source_text = normalize(" ".join((item.get("title", "") + " " + item.get("short", "") + " " + item.get("note", "")) for item in sources))
-    pages = {path.relative_to(ROOT).as_posix() for path in ROOT.rglob("*.html") if ".git" not in path.parts}
+    pages = {
+        path.relative_to(ROOT).as_posix()
+        for path in ROOT.rglob("*.html")
+        if ".git" not in path.parts and not re.search(r" \(\d+\)$", path.stem)
+    }
     federal = []
     for req in FEDERAL_REQUIREMENTS:
         expected = []

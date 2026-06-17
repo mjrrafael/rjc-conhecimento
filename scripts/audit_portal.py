@@ -79,8 +79,16 @@ def is_external(value: str) -> bool:
     return low.startswith(("http://", "https://", "mailto:", "tel:", "javascript:", "data:"))
 
 
+def is_workspace_duplicate(path: Path) -> bool:
+    return bool(re.search(r" \(\d+\)$", path.stem))
+
+
 def html_files() -> list[Path]:
-    return sorted(path for path in ROOT.rglob("*.html") if ".git" not in path.parts)
+    return sorted(
+        path
+        for path in ROOT.rglob("*.html")
+        if ".git" not in path.parts and not is_workspace_duplicate(path)
+    )
 
 
 def parse_pages() -> dict[Path, PageParser]:
