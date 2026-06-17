@@ -83,8 +83,12 @@
 
 ## Publicacao
 
-- Nenhum commit, push ou PR aberto nesta rodada.
-- Estado atual: branch `main` local pronta para PR apenas se o objetivo for publicar o endurecimento tecnico contra duplicatas e o rebuild associado.
+- Commit de publicacao inicial: `6a13b44` (`Atualiza portal tributario 2026-06-17`) na branch `codex/atualiza-portal-tributario-2026-06-17`.
+- PR aberto: `https://github.com/mjrrafael/rjc-conhecimento/pull/6`, titulo `[codex] Atualiza portal tributario - 2026-06-17`.
+- Labels `codex` e `codex-automation`: nao aplicados porque o repositorio segue apenas com labels padrao.
+- PR #6 mergeado por squash em `2026-06-17T12:36:48Z`; commit publicado em `main`: `470b58c78f95817d971301327abe664931322a91`.
+- Verificacao HTTP publica apos merge: `assets/build-freshness.json`, `docs/master-audit.md`, `docs/monitoramento/monitoramento-legislativo-2026-06-15.md`, `docs/monitoramento/monitoramento-legislativo-2026-06-17.md`, `beneficios/index.html`, `sitemap.xml` e `llms.txt` retornaram HTTP `200`.
+- Evidencia de versao publica: `assets/build-freshness.json` em `https://mjrrafael.github.io/rjc-conhecimento/assets/build-freshness.json` exibe `generated_at` igual a `2026-06-17T07:45:42`.
 
 ## Status da rodada
 
