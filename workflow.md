@@ -147,7 +147,7 @@ Observacao: subagentes nao substituem prova. O resultado deles entra como insumo
 | 2026-06-21 | Artefatos LLM enriquecidos | OK: NDJSON e busca carregam resumo operacional, texto pesquisavel, como validar e nao usar sem | revalidar gates |
 | 2026-06-21 | Excel local gerado | OK: `G:\Meu Drive\RJC\BD_LEGISLACAO\PIS_COFINS_NCM\pis-cofins-ncm-2026-06-21.xlsx` auditado com 291 linhas | manter fora do Pages |
 | 2026-06-21 | Revisao UX/LLM publicada | OK: PR #12 mergeado, Pages run `27914470566`, HTTP publico conferido | fechamento com ressalva de completude |
-| 2026-06-21 | Revisao UX pos-print aplicada | OK local: cards curtos, consulta guiada, tabela tecnica fechada, pagina generica NCM recolhida e auditoria UI reforcada | publicar via PR e verificar HTTP publico |
+| 2026-06-21 | Revisao UX pos-print aplicada e publicada | OK: PR #14 mergeado em `7132fa6`; Pages run `27915401092`; HTTP publico conferido com 291 cards, busca presente e tabela tecnica fechada | manter monitoramento |
 
 ## Passe adversarial vivo
 
