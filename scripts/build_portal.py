@@ -7,6 +7,7 @@ import hashlib
 import json
 import re
 import unicodedata
+from collections import Counter
 from datetime import datetime
 from html import escape, unescape
 from html.parser import HTMLParser
@@ -52,6 +53,8 @@ MASTER_TAXONOMY = ROOT / "data" / "master_taxonomy.json"
 MASTER_COVERAGE = ROOT / "data" / "master_source_coverage.json"
 BENEFITS_CROSSWALK = ROOT / "data" / "benefits_crosswalk.json"
 NCM_BENEFITS_INDEX = ROOT / "data" / "ncm_benefits_index.json"
+PIS_COFINS_NCM = ROOT / "data" / "pis-cofins" / "ncm.ndjson"
+PIS_COFINS_NCM_INDEX = ROOT / "data" / "pis-cofins" / "ncm-index.json"
 CONFAZ_5Y = ROOT / "data" / "confaz_ultimos_5_anos.json"
 
 
@@ -252,6 +255,13 @@ TOPIC_THEME_MAP = {
 }
 
 FEDERAL_EXTRA_PAGES = [
+    {
+        "theme": "pis_cofins",
+        "path": "federal/pis-cofins-ncm.html",
+        "title": "PIS/Cofins por NCM",
+        "summary": "Tabela operacional de NCM, setor, aplicacao, monofasico, aliquota zero e outros tratamentos especificos com fonte primaria.",
+        "custom_page": True,
+    },
     {
         "theme": "iof",
         "path": "federal/iof.html",
@@ -459,6 +469,16 @@ def load_json(path: Path, fallback: object) -> object:
     if not path.exists():
         return fallback
     return json.loads(path.read_text(encoding="utf-8"))
+
+
+def load_ndjson(path: Path) -> list[dict]:
+    if not path.exists():
+        return []
+    rows: list[dict] = []
+    for line in path.read_text(encoding="utf-8").splitlines():
+        if line.strip():
+            rows.append(json.loads(line))
+    return rows
 
 
 def fmt_num(value: int | float | str) -> str:
@@ -1733,6 +1753,257 @@ def ncm_benefits_page(data: dict) -> str:
 </section>
 """
     return layout("beneficios/ncm.html", "Lista NCM x beneficios fiscais", "NCM por beneficio fiscal, UF, Federal e CONFAZ.", body, "beneficios")
+
+
+PIS_COFINS_TREATMENT_LABELS = {
+    "aliquota_zero": "Aliquota zero",
+    "monofasico": "Monofasico",
+    "credito_presumido": "Credito presumido",
+    "suspensao": "Suspensao",
+    "isencao": "Isencao",
+    "tratamento_especifico": "Tratamento especifico",
+    "coeficiente_reducao": "Coeficiente/reducao",
+}
+
+
+def pis_cofins_ncm_public_rows() -> list[dict]:
+    return [row for row in load_ndjson(PIS_COFINS_NCM) if row.get("publishable") is True]
+
+
+def pis_cofins_ncm_summary(rows: list[dict]) -> dict:
+    payload = load_json(PIS_COFINS_NCM_INDEX, {"summary": {}})
+    summary = payload.get("summary", {}) if isinstance(payload, dict) else {}
+    if summary:
+        return summary
+    return {
+        "published_rows": len(rows),
+        "unique_ncm": len({str(row.get("ncm", {}).get("digitos", "")) for row in rows}),
+        "sources_checked": len({row.get("source_id", "") for row in rows}),
+        "quarantine_rows": 0,
+        "by_treatment": dict(Counter(row.get("tratamento", "sem_tratamento") for row in rows)),
+        "by_sector": dict(Counter(row.get("setor", "sem_setor") for row in rows)),
+        "by_source": dict(Counter(row.get("source_id", "sem_fonte") for row in rows)),
+        "oldest_verificado_em": min((row.get("verificado_em", "") for row in rows if row.get("verificado_em")), default=""),
+    }
+
+
+def pis_value(value: object, fallback: str = "nao informado") -> str:
+    if isinstance(value, list):
+        text = "; ".join(str(part) for part in value if str(part).strip())
+    elif isinstance(value, dict):
+        text = "; ".join(f"{key}: {part}" for key, part in value.items() if str(part).strip())
+    else:
+        text = str(value or "")
+    return text.strip() or fallback
+
+
+def pis_trim(value: object, limit: int = 520) -> str:
+    text = " ".join(pis_value(value, "").split())
+    if len(text) <= limit:
+        return text
+    return text[: limit - 1].rstrip() + "..."
+
+
+def pis_ncm_search_text(row: dict) -> str:
+    ato = row.get("ato_oficial", {}) if isinstance(row.get("ato_oficial"), dict) else {}
+    ncm = row.get("ncm", {}) if isinstance(row.get("ncm"), dict) else {}
+    parts = [
+        row.get("id", ""),
+        ncm.get("codigo", ""),
+        ncm.get("digitos", ""),
+        ncm.get("descricao_tipi", ""),
+        row.get("mercadoria_servico", ""),
+        row.get("setor", ""),
+        row.get("aplicacao", ""),
+        row.get("tratamento", ""),
+        row.get("operacao", ""),
+        row.get("etapa_cadeia", ""),
+        row.get("status", ""),
+        row.get("validity_status", ""),
+        row.get("publicacao", ""),
+        row.get("inicio_vigencia", ""),
+        row.get("inicio_eficacia", ""),
+        row.get("fim_vigencia", ""),
+        row.get("condicoes", []),
+        row.get("vedacoes", []),
+        row.get("prova_documental", []),
+        row.get("risco", ""),
+        row.get("trecho_legal", ""),
+        ato.get("tipo", ""),
+        ato.get("numero", ""),
+        ato.get("titulo", ""),
+        ato.get("url", ""),
+    ]
+    return " ".join(pis_value(part, "") for part in parts if pis_value(part, ""))
+
+
+def pis_cofins_ncm_landing_page(data: dict) -> str:
+    rows = pis_cofins_ncm_public_rows()
+    summary = pis_cofins_ncm_summary(rows)
+    by_treatment = summary.get("by_treatment", {})
+    by_sector = summary.get("by_sector", {})
+    by_source = summary.get("by_source", {})
+
+    treatment_cards = []
+    for treatment, count in sorted(by_treatment.items(), key=lambda item: (-item[1], item[0])):
+        label = PIS_COFINS_TREATMENT_LABELS.get(treatment, str(treatment).replace("_", " "))
+        examples = sorted({
+            row.get("ncm", {}).get("codigo", "")
+            for row in rows
+            if row.get("tratamento") == treatment and row.get("ncm", {}).get("codigo")
+        })[:10]
+        treatment_cards.append(f"""
+<article class="portal-card searchable-card" data-search="{escape(treatment + ' ' + ' '.join(examples))}">
+  <span class="card-kicker">PIS/Cofins</span>
+  <h3>{escape(label)}</h3>
+  <p>{fmt_num(count)} registros publicados. Exemplos NCM: {escape(', '.join(examples) or 'sem exemplo')}.</p>
+  <small>Pesquisar na tabela por tratamento</small>
+</article>
+""")
+
+    sector_cards = []
+    for sector, count in sorted(by_sector.items(), key=lambda item: (-item[1], item[0]))[:12]:
+        sector_cards.append(f"""
+<article class="matrix-card searchable-card" data-search="{escape(str(sector))}">
+  <h3>{escape(str(sector).replace('_', ' '))}</h3>
+  <p>{fmt_num(count)} linhas por NCM, aplicacao, etapa da cadeia, ato e prova documental.</p>
+</article>
+""")
+
+    source_rows = []
+    for source_id, count in sorted(by_source.items(), key=lambda item: (-item[1], item[0])):
+        source_rows.append(f"<tr><td>{escape(str(source_id))}</td><td>{fmt_num(count)}</td></tr>")
+
+    body = f"""
+{hero("PIS/Cofins por NCM", "Base operacional de PIS/Pasep e Cofins por NCM, setor, aplicacao e tratamento diferenciado, com fonte primaria e envelope de vigencia.", "Federal")}
+<section class="law-ledger">
+  <div>
+    <h2>Linhas publicadas</h2>
+    <p>{fmt_num(summary.get('published_rows', 0))} linhas validadas e {fmt_num(summary.get('unique_ncm', 0))} NCM/codigos TIPI unicos. Verificado por card em {escape(str(summary.get('oldest_verificado_em') or 'a validar'))}.</p>
+  </div>
+  <div>
+    <h2>Fontes conferidas</h2>
+    <p>{fmt_num(summary.get('sources_checked', 0))} atos oficiais ou fontes de controle. {fmt_num(summary.get('quarantine_rows', 0))} candidatos ficaram fora do publico por falta de NCM, baixa confianca, historico sem publicacao ou papel nao dispositivo.</p>
+  </div>
+  <div>
+    <h2>Regra de uso</h2>
+    <p>NCM aponta caminho, nao decide sozinho. Antes de aplicar, leia artigo, etapa da cadeia, sujeito, vigencia, condicao, CST/EFD e documento fiscal.</p>
+  </div>
+</section>
+<section class="content-block">
+  <h2>O que esta seção resolve</h2>
+  <p>Ela separa monofasico, aliquota zero, suspensao, isencao, credito presumido e outros tratamentos de PIS/Cofins quando a norma oficial traz NCM, TIPI, posicao, codigo ou capitulo em contexto de aplicacao.</p>
+  <p><strong>Status de completude:</strong> base inicial em execucao. Os registros abaixo sao publicados porque passaram pelos gates locais; a cobertura total da legislacao ainda depende do inventario expandido descrito em <a href="../workflow.md">workflow.md</a> e no ledger da rodada.</p>
+</section>
+<section class="section-wrap">
+  <div class="section-heading">
+    <span class="eyebrow">Tratamentos</span>
+    <h2>Pesquisar por aplicacao tributaria</h2>
+    <p>Cada card abre uma familia de busca; a tabela completa permite filtrar por NCM, descricao legal, setor, operacao, etapa e ato.</p>
+  </div>
+  {card_grid(treatment_cards)}
+</section>
+<section class="matrix-section">
+  <h2>Setores com registros</h2>
+  <div class="matrix-grid">{''.join(sector_cards)}</div>
+</section>
+<section class="content-block inventory-table">
+  <h2>Fontes com linhas publicadas</h2>
+  <div class="doc-table-wrap">
+    <table class="doc-table">
+      <thead><tr><th>Fonte</th><th>Linhas</th></tr></thead>
+      <tbody>{''.join(source_rows)}</tbody>
+    </table>
+  </div>
+</section>
+<section class="continuity">
+  <h2>Abrir base operacional</h2>
+  <div>
+    <a href="legislacao/pis-cofins/ncm.html">Tabela completa por NCM</a>
+    <a href="../data/pis-cofins/ncm.ndjson">NDJSON publico para LLM</a>
+    <a href="../data/pis-cofins/ncm-index.json">Indice compacto JSON</a>
+    <a href="pis-cofins.html">Voltar ao guia de PIS/Cofins</a>
+  </div>
+</section>
+"""
+    return layout("federal/pis-cofins-ncm.html", "PIS/Cofins por NCM", "NCM, setor e tratamento especifico de PIS/Cofins com fonte primaria.", body, "federal")
+
+
+def pis_cofins_ncm_table_page(data: dict) -> str:
+    rows = sorted(
+        pis_cofins_ncm_public_rows(),
+        key=lambda row: (
+            str(row.get("ncm", {}).get("digitos", "")),
+            str(row.get("tratamento", "")),
+            str(row.get("source_id", "")),
+            str(row.get("id", "")),
+        ),
+    )
+    summary = pis_cofins_ncm_summary(rows)
+    table_rows = []
+    for row in rows:
+        ncm = row.get("ncm", {}) if isinstance(row.get("ncm"), dict) else {}
+        ato = row.get("ato_oficial", {}) if isinstance(row.get("ato_oficial"), dict) else {}
+        vigencia = row.get("vigencia", {}) if isinstance(row.get("vigencia"), dict) else {}
+        transition = row.get("transicao_cbs", {}) if isinstance(row.get("transicao_cbs"), dict) else {}
+        treatment = row.get("tratamento", "")
+        treatment_label = PIS_COFINS_TREATMENT_LABELS.get(str(treatment), str(treatment).replace("_", " "))
+        validity = (
+            f"publicacao {row.get('publicacao')}; vigencia {row.get('inicio_vigencia')}; "
+            f"eficacia {row.get('inicio_eficacia')}; fim {row.get('fim_vigencia') or 'sem fim indicado'}"
+        )
+        source_label = f"{ato.get('tipo', '')} {ato.get('numero', '')}".strip()
+        table_rows.append(f"""
+<tr id="{escape(str(row.get('id', '')))}" class="searchable-card" data-search="{escape(pis_ncm_search_text(row))}">
+  <td><strong>{escape(str(ncm.get('codigo', '')))}</strong><span>{escape(str(ncm.get('nivel', 'NCM')))} · {escape(str(ncm.get('status', '')))}</span></td>
+  <td><strong>{escape(pis_trim(row.get('mercadoria_servico'), 220))}</strong><span>TIPI: {escape(str(ncm.get('descricao_tipi') or ncm.get('tipi_versao') or 'a validar'))}</span></td>
+  <td><strong>{escape(str(row.get('setor', '')).replace('_', ' '))}</strong><span>{escape(str(row.get('aplicacao', '')))} · etapa {escape(str(row.get('etapa_cadeia', '')))}</span></td>
+  <td><strong>{escape(treatment_label)}</strong><span>{escape(', '.join(row.get('tributos', [])))} · {escape(str(row.get('operacao', '')))}</span></td>
+  <td><strong>{status_badge(str(row.get('status', '')))}</strong><span>{escape(validity)}</span><span>{escape('vigencia inline: ' + str(vigencia.get('status', '')))}</span></td>
+  <td>{escape(pis_value(row.get('condicoes')))}<br><strong>Vedacao:</strong> {escape(pis_value(row.get('vedacoes')))}</td>
+  <td>{escape(pis_value(row.get('prova_documental')))}<br><strong>Risco:</strong> {escape(str(row.get('risco', '')))}</td>
+  <td><strong>{escape(source_label)}</strong><br><a href="{escape(str(ato.get('url', '')))}" target="_blank" rel="noopener">fonte oficial HTTP {escape(str(ato.get('http_status', '')))}</a><br><span>{escape(str(ato.get('titulo', '')))}</span></td>
+  <td><strong>{escape(str(transition.get('status', '')))}</strong><br>{escape(str(transition.get('referencia', '')))}</td>
+  <td>{escape(pis_trim(row.get('trecho_legal'), 620))}</td>
+</tr>
+""")
+    body = f"""
+{hero("Tabela PIS/Cofins por NCM", "Registros autodescritivos para pesquisa humana e por LLM: NCM, descricao legal, setor, aplicacao, tratamento, vigencia, ato, prova, risco e transicao CBS.", "PIS/Cofins")}
+<section class="law-ledger">
+  <div>
+    <h2>Base publica</h2>
+    <p>{fmt_num(summary.get('published_rows', len(rows)))} linhas publicadas e {fmt_num(summary.get('unique_ncm', 0))} NCM/codigos unicos.</p>
+  </div>
+  <div>
+    <h2>Quarentena</h2>
+    <p>{fmt_num(summary.get('quarantine_rows', 0))} candidatos ficaram isolados e nao entram em busca, sitemap, llms.txt ou manifest publico.</p>
+  </div>
+  <div>
+    <h2>Advertencia fiscal</h2>
+    <p>Use a busca para localizar o item, mas aplique somente apos conferir artigo, sujeito, etapa da cadeia, regime da empresa, documento fiscal e EFD-Contribuicoes.</p>
+  </div>
+</section>
+<section class="content-block inventory-table">
+  <h2>Linhas pesquisaveis</h2>
+  <p>Pesquise por NCM completo ou parcial, descricao, setor, tratamento, operacao, ato, status, prova ou trecho legal. Cada linha carrega seu envelope de validade.</p>
+  <div class="doc-table-wrap">
+    <table class="doc-table ncm-benefits-table">
+      <thead><tr><th>NCM</th><th>Descricao legal</th><th>Setor/aplicacao</th><th>Tratamento</th><th>Status e vigencia</th><th>Condicoes</th><th>Prova e risco</th><th>Ato oficial</th><th>Transicao CBS</th><th>Trecho legal</th></tr></thead>
+      <tbody>{''.join(table_rows)}</tbody>
+    </table>
+  </div>
+</section>
+<section class="continuity">
+  <h2>Continuar a leitura</h2>
+  <div>
+    <a href="../../pis-cofins-ncm.html">Voltar ao painel PIS/Cofins por NCM</a>
+    <a href="../../../data/pis-cofins/ncm.ndjson">NDJSON publico</a>
+    <a href="../../../data/pis-cofins/ncm-index.json">Indice compacto JSON</a>
+    <a href="../../pis-cofins.html">Guia PIS/Cofins</a>
+  </div>
+</section>
+"""
+    return layout("federal/legislacao/pis-cofins/ncm.html", "Tabela PIS/Cofins por NCM", "Tabela pesquisavel de PIS/Cofins por NCM.", body, "federal")
 
 
 def benefits_crosswalk_page(data: dict) -> str:
@@ -3399,6 +3670,38 @@ def ncm_full_search_entries() -> list[dict[str, str]]:
     return entries
 
 
+def pis_cofins_ncm_full_search_entries() -> list[dict[str, str]]:
+    entries: list[dict[str, str]] = []
+    for row in pis_cofins_ncm_public_rows():
+        ncm = row.get("ncm", {}) if isinstance(row.get("ncm"), dict) else {}
+        ato = row.get("ato_oficial", {}) if isinstance(row.get("ato_oficial"), dict) else {}
+        treatment = str(row.get("tratamento", ""))
+        treatment_label = PIS_COFINS_TREATMENT_LABELS.get(treatment, treatment.replace("_", " "))
+        text = pis_ncm_search_text(row)
+        title = f"{ncm.get('codigo', '')} · PIS/Cofins · {treatment_label}"
+        summary = " | ".join(
+            part
+            for part in (
+                pis_trim(row.get("mercadoria_servico"), 180),
+                f"status {row.get('status', '')}",
+                f"ato {ato.get('tipo', '')} {ato.get('numero', '')}",
+            )
+            if str(part).strip()
+        )
+        entries.append({
+            "title": title,
+            "url": f"federal/legislacao/pis-cofins/ncm.html#{row.get('id', '')}",
+            "summary": summary,
+            "tags": compact_search_terms(text),
+            "body": search_body(text, 1200),
+            "kind": "PIS/Cofins por NCM",
+            "jurisdiction": "Federal",
+            "tax": "PIS/Cofins",
+            "theme": treatment_label,
+        })
+    return entries
+
+
 def full_text_search_entries() -> list[dict[str, str]]:
     entries: list[dict[str, str]] = []
     for html_path in iter_public_html_files():
@@ -3409,6 +3712,10 @@ def full_text_search_entries() -> list[dict[str, str]]:
             # Benefit/NCM records are indexed below as structured entries.
             # Parsing the large matrix HTML pages duplicates content and makes
             # the build unnecessarily slow.
+            continue
+        if rel == "federal/legislacao/pis-cofins/ncm.html":
+            # PIS/Cofins NCM rows are indexed below from NDJSON so each record
+            # keeps its own validity envelope and source link.
             continue
         raw = html_path.read_text(encoding="utf-8", errors="ignore")
         parser = FullSearchTextParser()
@@ -3601,6 +3908,8 @@ def sitemap_priority(relative_path: str) -> str:
     if relative_path.endswith("/index.html") or relative_path in {
         "beneficios/ncm.html",
         "beneficios/reforma.html",
+        "federal/pis-cofins-ncm.html",
+        "federal/legislacao/pis-cofins/ncm.html",
         "confaz/ultimos-5-anos.html",
         "auditoria/index.html",
     }:
@@ -3668,6 +3977,7 @@ def llms_txt() -> str:
         ("Inicio", "index.html"),
         ("Federal", "federal/index.html"),
         ("Reforma Tributaria", "federal/legislacao/reforma-tributaria/index.html"),
+        ("PIS/Cofins por NCM", "federal/pis-cofins-ncm.html"),
         ("Beneficios fiscais", "beneficios/index.html"),
         ("Beneficios por NCM", "beneficios/ncm.html"),
         ("Beneficios por setor", "beneficios/setores.html"),
@@ -3685,7 +3995,7 @@ def llms_txt() -> str:
         "",
         "- Use as paginas HTML como fonte primaria navegavel.",
         "- Use `sitemap.xml` ou `sitemap.txt` para descobrir todas as URLs publicas.",
-        "- Use `assets/portal-search-full.json`, `data/benefits_crosswalk.json` e `data/ncm_benefits_index.json` para busca e cruzamento estruturado.",
+        "- Use `assets/portal-search-full.json`, `data/benefits_crosswalk.json`, `data/ncm_benefits_index.json` e `data/pis-cofins/ncm.ndjson` para busca e cruzamento estruturado.",
         "- Em materia tributaria concreta, conferir a fonte oficial citada na propria pagina e fazer homologacao humana final.",
         "",
         "## Entradas principais",
@@ -3703,6 +4013,8 @@ def llms_txt() -> str:
         f"- [Busca contextual JSON]({BASE_URL}/assets/portal-search-full.json)",
         f"- [Matriz de beneficios]({BASE_URL}/data/benefits_crosswalk.json)",
         f"- [NCM x beneficios]({BASE_URL}/data/ncm_benefits_index.json)",
+        f"- [PIS/Cofins por NCM NDJSON]({BASE_URL}/data/pis-cofins/ncm.ndjson)",
+        f"- [PIS/Cofins por NCM indice]({BASE_URL}/data/pis-cofins/ncm-index.json)",
         f"- [Registro de fontes legais]({BASE_URL}/data/legal_sources_registry.json)",
         "",
         "## Mapa completo de paginas HTML",
@@ -3737,6 +4049,10 @@ def write_build_freshness() -> None:
         "assets/portal-search.js",
         "assets/portal-search-full.json",
         "data/benefits_crosswalk.json",
+        "data/pis-cofins/ncm.ndjson",
+        "data/pis-cofins/ncm-index.json",
+        "federal/pis-cofins-ncm.html",
+        "federal/legislacao/pis-cofins/ncm.html",
     ]
     artifacts = {}
     for rel in artifact_paths:
@@ -3837,6 +4153,8 @@ def main() -> None:
     for state in data["states"]:
         write(state_href(state["uf"]), state_page(state, data))
     write("federal/index.html", federal_index(data))
+    write("federal/pis-cofins-ncm.html", pis_cofins_ncm_landing_page(data))
+    write("federal/legislacao/pis-cofins/ncm.html", pis_cofins_ncm_table_page(data))
     for topic in data["topics"]:
         if topic["path"] in {"estados/goias.html", "confaz/index.html", "folha-clt/index.html"}:
             continue
@@ -3844,6 +4162,8 @@ def main() -> None:
             extra = federal_inventory_sections(data, TOPIC_THEME_MAP.get(topic["id"], []), data["site"]["verified_on"], compact=True, current_path=topic["path"])
             write(topic["path"], topic_page(topic, "federal", extra))
     for page in FEDERAL_EXTRA_PAGES:
+        if page.get("custom_page"):
+            continue
         write(page["path"], federal_theme_page(data, page))
     write("federal/acervo.html", federal_acervo_page(data))
     write("confaz/index.html", topic_page(next(t for t in data["topics"] if t["id"] == "confaz-atos-beneficios"), "confaz"))
@@ -3858,7 +4178,7 @@ def main() -> None:
         write(state_legal_path, state_legal_content)
     normalize_legacy_editorial_dates()
     write("assets/portal-search.js", search_index(data))
-    write("assets/portal-search-full.json", json.dumps(full_text_search_entries() + benefit_full_search_entries() + ncm_full_search_entries(), ensure_ascii=False, separators=(",", ":")))
+    write("assets/portal-search-full.json", json.dumps(full_text_search_entries() + benefit_full_search_entries() + ncm_full_search_entries() + pis_cofins_ncm_full_search_entries(), ensure_ascii=False, separators=(",", ":")))
     write_discovery_files()
     write_build_freshness()
     print("Portal generated successfully.")

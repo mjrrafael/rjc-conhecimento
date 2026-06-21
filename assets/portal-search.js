@@ -222,6 +222,12 @@ window.RJC_SEARCH = [
     "tags": "TO Tocantins Tocantins ICMS beneficios fiscais RICMS DECRETOS ICMS_ANEXOS ITCD LEIS PORTARIAS RICMS"
   },
   {
+    "title": "PIS/Cofins por NCM",
+    "url": "federal/pis-cofins-ncm.html",
+    "summary": "Tabela operacional de NCM, setor, aplicacao, monofasico, aliquota zero e outros tratamentos especificos com fonte primaria.",
+    "tags": "pis_cofins PIS e Cofins"
+  },
+  {
     "title": "IOF: credito, cambio, seguro e titulos",
     "url": "federal/iof.html",
     "summary": "Leitura do IOF a partir da lei instituidora, regulamento e alteracoes recentes de aliquotas.",

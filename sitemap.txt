@@ -611,6 +611,7 @@ https://mjrrafael.github.io/rjc-conhecimento/federal/legislacao/irpj/index.html
 https://mjrrafael.github.io/rjc-conhecimento/federal/legislacao/irpj/lucro-presumido.html
 https://mjrrafael.github.io/rjc-conhecimento/federal/legislacao/irpj/lucro-real.html
 https://mjrrafael.github.io/rjc-conhecimento/federal/legislacao/irpj/transparencia-beneficios-dirbi.html
+https://mjrrafael.github.io/rjc-conhecimento/federal/legislacao/pis-cofins/ncm.html
 https://mjrrafael.github.io/rjc-conhecimento/federal/legislacao/pis/beneficios-monofasico.html
 https://mjrrafael.github.io/rjc-conhecimento/federal/legislacao/pis/cumulativo.html
 https://mjrrafael.github.io/rjc-conhecimento/federal/legislacao/pis/importacao.html
@@ -641,6 +642,7 @@ https://mjrrafael.github.io/rjc-conhecimento/federal/legislacao/reforma-tributar
 https://mjrrafael.github.io/rjc-conhecimento/federal/legislacao/reforma-tributaria/transicao-icms-iss-beneficios-saldos.html
 https://mjrrafael.github.io/rjc-conhecimento/federal/lucro-presumido.html
 https://mjrrafael.github.io/rjc-conhecimento/federal/lucro-real.html
+https://mjrrafael.github.io/rjc-conhecimento/federal/pis-cofins-ncm.html
 https://mjrrafael.github.io/rjc-conhecimento/federal/pis-cofins.html
 https://mjrrafael.github.io/rjc-conhecimento/federal/reforma-tributaria.html
 https://mjrrafael.github.io/rjc-conhecimento/folha-clt/index.html

@@ -3678,6 +3678,12 @@
     "section": "federal"
   },
   {
+    "title": "Tabela PIS/Cofins por NCM | RJC Assessoria",
+    "path": "federal/legislacao/pis-cofins/ncm.html",
+    "url": "https://mjrrafael.github.io/rjc-conhecimento/federal/legislacao/pis-cofins/ncm.html",
+    "section": "federal"
+  },
+  {
     "title": "Monofásico, alíquota zero, suspensão e benefícios | PIS/Pasep: legislação em tela | RJC Assessoria",
     "path": "federal/legislacao/pis/beneficios-monofasico.html",
     "url": "https://mjrrafael.github.io/rjc-conhecimento/federal/legislacao/pis/beneficios-monofasico.html",
@@ -3855,6 +3861,12 @@
     "title": "Lucro Real: apuração, créditos, controles e fechamento | RJC Assessoria",
     "path": "federal/lucro-real.html",
     "url": "https://mjrrafael.github.io/rjc-conhecimento/federal/lucro-real.html",
+    "section": "federal"
+  },
+  {
+    "title": "PIS/Cofins por NCM | RJC Assessoria",
+    "path": "federal/pis-cofins-ncm.html",
+    "url": "https://mjrrafael.github.io/rjc-conhecimento/federal/pis-cofins-ncm.html",
     "section": "federal"
   },
   {

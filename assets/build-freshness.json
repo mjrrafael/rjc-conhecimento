@@ -1,30 +1,46 @@
 {
   "schema": "rjc-build-freshness-v1",
-  "generated_at": "2026-06-20T03:14:07",
+  "generated_at": "2026-06-21T15:24:01",
   "artifacts": {
     "beneficios/index.html": {
       "sha256": "22938ac572bab3fc0fb5661613f890b548f9432a7c00959713243f145d0ecb2a",
       "bytes": 54748505
     },
     "llms.txt": {
-      "sha256": "c52e256417f8ff5d3d9283cc21b252d42f0b33e4c0dc0e64253fc6f65dfbf393",
-      "bytes": 125454
+      "sha256": "a464fea61586646415994d8890537d3371ebb0ac3a17d502ff18bdba7edee9e0",
+      "bytes": 126037
     },
     "assets/llm-manifest.json": {
-      "sha256": "1a95b80266f444be7ab3479a16637278e5e1602f1342db5a8e61f76f053aa43f",
-      "bytes": 205225
+      "sha256": "c1ca0ed6c7b8310faa54c7fd9034b1bb36f35194a00a6be7cead0912320e9d99",
+      "bytes": 205686
     },
     "assets/portal-search.js": {
-      "sha256": "352d8394a6701d08036865115cb747e95a19a2f4d61975f1622c8b1a20dcc481",
-      "bytes": 179839
+      "sha256": "0612641662b6abf00f92202dc930bab7367eab8ec71625aeb98c273796c7840f",
+      "bytes": 180105
     },
     "assets/portal-search-full.json": {
-      "sha256": "abe4df7641261b34d8a2f0f9d86d6eec7df475651f566324269f6cd741b175d0",
-      "bytes": 47898662
+      "sha256": "ea5a8c7f36931e76716b9e01082ddfe4ff4da5b6c2deae63379675f83ff97d84",
+      "bytes": 48711133
     },
     "data/benefits_crosswalk.json": {
       "sha256": "3b222388329c56550a5a62e574ebf2ad2bd2e0254516c2ae464a34b4b050464a",
       "bytes": 76518089
+    },
+    "data/pis-cofins/ncm.ndjson": {
+      "sha256": "b816de4f9b74ed70bd28fcb4b2c0286abd02c48d8300b7e19b53ffa29e27e48a",
+      "bytes": 1302581
+    },
+    "data/pis-cofins/ncm-index.json": {
+      "sha256": "2d4d41adcb94b83dc0cc174294da2684e1aa50cffe372b2975a1898d9518da24",
+      "bytes": 229284
+    },
+    "federal/pis-cofins-ncm.html": {
+      "sha256": "0fda474d7e942d40026b77fdf1521eeab8c4cd890a625d13665a05ead70d73da",
+      "bytes": 10733
+    },
+    "federal/legislacao/pis-cofins/ncm.html": {
+      "sha256": "711cebc7732ad885027f04abe07b3258ff11e5d4c8aa17cbc66e4636f5a397ce",
+      "bytes": 1414166
     }
   }
 }

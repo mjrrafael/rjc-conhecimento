@@ -222,6 +222,7 @@
       "data_conferencia": "14/06/2026",
       "status_curadoria": "Publicado v1 - base legal em tela",
       "links_relacionados": [
+        {"label": "PIS/Cofins por NCM", "href": "pis-cofins-ncm.html"},
         {"label": "Beneficios federais e DIRBI", "href": "beneficios-federais.html"},
         {"label": "Lucro Real", "href": "lucro-real.html"},
         {"label": "Painel Fiscal - NCM x PIS/Cofins", "href": "../painel-fiscal/index.html#ncm"}

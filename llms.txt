@@ -6,7 +6,7 @@
 
 - Use as paginas HTML como fonte primaria navegavel.
 - Use `sitemap.xml` ou `sitemap.txt` para descobrir todas as URLs publicas.
-- Use `assets/portal-search-full.json`, `data/benefits_crosswalk.json` e `data/ncm_benefits_index.json` para busca e cruzamento estruturado.
+- Use `assets/portal-search-full.json`, `data/benefits_crosswalk.json`, `data/ncm_benefits_index.json` e `data/pis-cofins/ncm.ndjson` para busca e cruzamento estruturado.
 - Em materia tributaria concreta, conferir a fonte oficial citada na propria pagina e fazer homologacao humana final.
 
 ## Entradas principais
@@ -14,6 +14,7 @@
 - [Inicio](https://mjrrafael.github.io/rjc-conhecimento/)
 - [Federal](https://mjrrafael.github.io/rjc-conhecimento/federal/index.html)
 - [Reforma Tributaria](https://mjrrafael.github.io/rjc-conhecimento/federal/legislacao/reforma-tributaria/index.html)
+- [PIS/Cofins por NCM](https://mjrrafael.github.io/rjc-conhecimento/federal/pis-cofins-ncm.html)
 - [Beneficios fiscais](https://mjrrafael.github.io/rjc-conhecimento/beneficios/index.html)
 - [Beneficios por NCM](https://mjrrafael.github.io/rjc-conhecimento/beneficios/ncm.html)
 - [Beneficios por setor](https://mjrrafael.github.io/rjc-conhecimento/beneficios/setores.html)
@@ -30,6 +31,8 @@
 - [Busca contextual JSON](https://mjrrafael.github.io/rjc-conhecimento/assets/portal-search-full.json)
 - [Matriz de beneficios](https://mjrrafael.github.io/rjc-conhecimento/data/benefits_crosswalk.json)
 - [NCM x beneficios](https://mjrrafael.github.io/rjc-conhecimento/data/ncm_benefits_index.json)
+- [PIS/Cofins por NCM NDJSON](https://mjrrafael.github.io/rjc-conhecimento/data/pis-cofins/ncm.ndjson)
+- [PIS/Cofins por NCM indice](https://mjrrafael.github.io/rjc-conhecimento/data/pis-cofins/ncm-index.json)
 - [Registro de fontes legais](https://mjrrafael.github.io/rjc-conhecimento/data/legal_sources_registry.json)
 
 ## Mapa completo de paginas HTML
@@ -647,6 +650,7 @@
 - [Lucro Presumido e segregacao de receitas | IRPJ: legislação em tela | RJC Assessoria](https://mjrrafael.github.io/rjc-conhecimento/federal/legislacao/irpj/lucro-presumido.html)
 - [Lucro Real, adicoes, exclusoes e compensacoes | IRPJ: legislação em tela | RJC Assessoria](https://mjrrafael.github.io/rjc-conhecimento/federal/legislacao/irpj/lucro-real.html)
 - [Transparencia de benefícios federais e Dirbi | IRPJ: legislação em tela | RJC Assessoria](https://mjrrafael.github.io/rjc-conhecimento/federal/legislacao/irpj/transparencia-beneficios-dirbi.html)
+- [Tabela PIS/Cofins por NCM | RJC Assessoria](https://mjrrafael.github.io/rjc-conhecimento/federal/legislacao/pis-cofins/ncm.html)
 - [Monofásico, alíquota zero, suspensão e benefícios | PIS/Pasep: legislação em tela | RJC Assessoria](https://mjrrafael.github.io/rjc-conhecimento/federal/legislacao/pis/beneficios-monofasico.html)
 - [Regime cumulativo | PIS/Pasep: legislação em tela | RJC Assessoria](https://mjrrafael.github.io/rjc-conhecimento/federal/legislacao/pis/cumulativo.html)
 - [PIS/Pasep-Importação | PIS/Pasep: legislação em tela | RJC Assessoria](https://mjrrafael.github.io/rjc-conhecimento/federal/legislacao/pis/importacao.html)
@@ -677,6 +681,7 @@
 - [Transição, benefícios antigos e saldos de ICMS | Reforma Tributária: legislação em tela | RJC Assessoria](https://mjrrafael.github.io/rjc-conhecimento/federal/legislacao/reforma-tributaria/transicao-icms-iss-beneficios-saldos.html)
 - [Lucro Presumido: presuncao, segregacao de receita e riscos | RJC Assessoria](https://mjrrafael.github.io/rjc-conhecimento/federal/lucro-presumido.html)
 - [Lucro Real: apuração, créditos, controles e fechamento | RJC Assessoria](https://mjrrafael.github.io/rjc-conhecimento/federal/lucro-real.html)
+- [PIS/Cofins por NCM | RJC Assessoria](https://mjrrafael.github.io/rjc-conhecimento/federal/pis-cofins-ncm.html)
 - [PIS e Cofins: cumulativo, não cumulativo, monofásico e benefícios | RJC Assessoria](https://mjrrafael.github.io/rjc-conhecimento/federal/pis-cofins.html)
 - [Reforma tributária: IBS, CBS e Imposto Seletivo | RJC Assessoria](https://mjrrafael.github.io/rjc-conhecimento/federal/reforma-tributaria.html)
 - [Folha, CLT, previdência e obrigações trabalhistas | RJC Assessoria](https://mjrrafael.github.io/rjc-conhecimento/folha-clt/index.html)

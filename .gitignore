@@ -2,3 +2,4 @@
 __pycache__/
 *.py[cod]
 /Workflow.md
+data/pis-cofins/quarentena.ndjson
