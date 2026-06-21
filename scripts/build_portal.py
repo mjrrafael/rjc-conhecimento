@@ -1731,16 +1731,21 @@ def ncm_benefits_page(data: dict) -> str:
 </section>
 <section class="content-block">
   <h2>Como usar a lista</h2>
-  <p>Pesquise pelo NCM completo, por posição, UF, benefício, produto, operação ou condição. A linha só entra quando o código aparece em trecho legal com tratamento tributário e contexto NCM/TIPI.</p>
+  <p>Esta é a base técnica ampla de NCM x benefícios. Para leitura humana, comece pelos painéis temáticos e use esta página como conferência/exportação: a linha só entra quando o código aparece em trecho legal com tratamento tributário e contexto NCM/TIPI.</p>
+  <p><strong>Atalho seguro:</strong> para PIS/Cofins por NCM, use a <a href="../federal/legislacao/pis-cofins/ncm.html#consulta-pis-cofins-ncm">consulta guiada por cards</a>. Ela separa tratamento, setor, vigência, ato oficial, prova e risco antes de mostrar a tabela técnica.</p>
 </section>
 <section class="content-block inventory-table">
-  <h2>NCM e benefícios em tela</h2>
-  <div class="doc-table-wrap">
+  <h2>Base técnica NCM x benefícios</h2>
+  <p>Fechada por padrão para não transformar a leitura humana em uma planilha estreita. Abra somente para auditoria, exportação ou conferência pontual.</p>
+  <details class="ncm-audit-table-details">
+    <summary>Abrir tabela técnica com {fmt_num(summary.get('rows', 0))} linhas</summary>
+    <div class="doc-table-wrap">
     <table class="doc-table ncm-benefits-table">
       <thead><tr><th>NCM</th><th>Origem</th><th>Benefício</th><th>Produto/operação</th><th>Condição</th><th>Base legal</th><th>Trecho</th></tr></thead>
       <tbody>{''.join(table_rows)}</tbody>
     </table>
-  </div>
+    </div>
+  </details>
 </section>
 <section class="continuity">
   <h2>Continuar a leitura</h2>
@@ -1906,7 +1911,7 @@ def pis_cofins_ncm_landing_page(data: dict) -> str:
   <span class="card-kicker">PIS/Cofins</span>
   <h3>{escape(label)}</h3>
   <p>{fmt_num(count)} registros publicados. Exemplos NCM: {escape(', '.join(examples) or 'sem exemplo')}.</p>
-  <small>Pesquisar na tabela por tratamento</small>
+  <small>Abra a consulta guiada e filtre por este tratamento</small>
 </article>
 """)
 
@@ -1944,11 +1949,22 @@ def pis_cofins_ncm_landing_page(data: dict) -> str:
   <p>Ela separa monofasico, aliquota zero, suspensao, isencao, credito presumido e outros tratamentos de PIS/Cofins quando a norma oficial traz NCM, TIPI, posicao, codigo ou capitulo em contexto de aplicacao.</p>
   <p><strong>Status de completude:</strong> base inicial em execucao. Os registros abaixo sao publicados porque passaram pelos gates locais; a cobertura total da legislacao ainda depende do inventario expandido descrito em <a href="../workflow.md">workflow.md</a> e no ledger da rodada.</p>
 </section>
+<section class="content-block pis-ncm-entry-panel">
+  <div>
+    <span class="eyebrow">Caminho recomendado</span>
+    <h2>Consulta por NCM em cards, não em planilha estreita</h2>
+    <p>Use a página operacional para pesquisar por NCM, descrição, setor, tratamento, ato oficial ou trecho legal. Cada resultado mostra primeiro o envelope de aplicação: condição, vigência, prova, risco e transição CBS.</p>
+  </div>
+  <div class="pis-ncm-entry-actions">
+    <a href="legislacao/pis-cofins/ncm.html#consulta-pis-cofins-ncm">Abrir consulta pesquisável por NCM</a>
+    <a href="../data/pis-cofins/ncm.ndjson">Baixar NDJSON para LLM</a>
+  </div>
+</section>
 <section class="section-wrap">
   <div class="section-heading">
     <span class="eyebrow">Tratamentos</span>
     <h2>Pesquisar por aplicacao tributaria</h2>
-    <p>Cada card abre uma familia de busca; a tabela completa permite filtrar por NCM, descricao legal, setor, operacao, etapa e ato.</p>
+    <p>Cada card mostra a família de tratamento e leva para a consulta pesquisável por NCM, descrição legal, setor, operação, etapa e ato.</p>
   </div>
   {card_grid(treatment_cards)}
 </section>
@@ -1968,7 +1984,7 @@ def pis_cofins_ncm_landing_page(data: dict) -> str:
 <section class="continuity">
   <h2>Abrir base operacional</h2>
   <div>
-    <a href="legislacao/pis-cofins/ncm.html">Tabela completa por NCM</a>
+    <a href="legislacao/pis-cofins/ncm.html#consulta-pis-cofins-ncm">Consulta guiada por NCM</a>
     <a href="../data/pis-cofins/ncm.ndjson">NDJSON publico para LLM</a>
     <a href="../data/pis-cofins/ncm-index.json">Indice compacto JSON</a>
     <a href="pis-cofins.html">Voltar ao guia de PIS/Cofins</a>
@@ -2033,7 +2049,9 @@ def pis_cofins_ncm_table_page(data: dict) -> str:
         source_label = pis_ato_label(row)
         search_text = pis_ncm_search_text(row)
         operational_summary = pis_operational_summary(row)
-        card_heading = pis_trim(operational_summary, 420)
+        ncm_code = str(ncm.get("codigo", "")).strip()
+        goods_summary = pis_trim(row.get("mercadoria_servico") or ncm.get("descricao_tipi") or operational_summary, 260)
+        card_heading = f"NCM {ncm_code} - {treatment_label}" if ncm_code else treatment_label
         record_cards.append(f"""
 <article id="card-{escape(str(row.get('id', '')))}"
          class="pis-ncm-record searchable-card"
@@ -2045,10 +2063,11 @@ def pis_cofins_ncm_table_page(data: dict) -> str:
          data-source="{escape(str(row.get('source_id', '')))}">
   <div class="pis-ncm-record-head">
     <div>
-      <span class="card-kicker">NCM {escape(str(ncm.get('codigo', '')))} · {escape(treatment_label)}</span>
+      <span class="card-kicker">{escape(pis_display_label(row.get('setor')))} · {escape(pis_display_label(row.get('operacao')))}</span>
       <h3>{escape(card_heading)}</h3>
+      <p class="pis-ncm-record-summary">{escape(goods_summary)}</p>
     </div>
-    <a href="#{escape(str(row.get('id', '')))}">abrir na tabela</a>
+    <span class="pis-ncm-record-id">id {escape(str(row.get('id', '')))}</span>
   </div>
   <dl class="pis-ncm-facts">
     <div><dt>Setor/aplicacao</dt><dd>{escape(pis_display_label(row.get('setor')))} · {escape(pis_display_label(row.get('aplicacao')))}</dd></div>
@@ -2058,6 +2077,7 @@ def pis_cofins_ncm_table_page(data: dict) -> str:
     <div><dt>Condicao</dt><dd>{escape(pis_value(row.get('condicoes')))}</dd></div>
     <div><dt>Prova</dt><dd>{escape(pis_value(row.get('prova_documental')))}</dd></div>
   </dl>
+  <p class="pis-ncm-guardrail"><strong>Antes de aplicar:</strong> confirme produto/codigo, etapa da cadeia, regime da empresa, documento fiscal e EFD-Contribuicoes. NCM sozinho nao autoriza o tratamento.</p>
   <details class="pis-ncm-details">
     <summary>Ver trecho legal, vedacao, risco e transicao CBS</summary>
     <p><strong>Vedacao:</strong> {escape(pis_value(row.get('vedacoes')))}</p>
@@ -2091,7 +2111,7 @@ def pis_cofins_ncm_table_page(data: dict) -> str:
 </tr>
 """)
     body = f"""
-{hero("Tabela PIS/Cofins por NCM", "Registros autodescritivos para pesquisa humana e por LLM: NCM, descricao legal, setor, aplicacao, tratamento, vigencia, ato, prova, risco e transicao CBS.", "PIS/Cofins")}
+{hero("Consulta PIS/Cofins por NCM", "Registros autodescritivos para pesquisa humana e por LLM: NCM, descricao legal, setor, aplicacao, tratamento, vigencia, ato, prova, risco e transicao CBS.", "PIS/Cofins")}
 <section class="law-ledger">
   <div>
     <h2>Base publica</h2>
@@ -2115,11 +2135,11 @@ def pis_cofins_ncm_table_page(data: dict) -> str:
     <article><strong>4. Feche com prova</strong><span>Ato oficial, vigencia, documento fiscal e EFD-Contribuicoes sustentam a aplicacao.</span></article>
   </div>
 </section>
-<section class="content-block pis-ncm-explorer" data-pis-ncm-explorer data-total="{fmt_num(len(rows))}">
+<section id="consulta-pis-cofins-ncm" class="content-block pis-ncm-explorer" data-pis-ncm-explorer data-total="{fmt_num(len(rows))}">
   <div class="section-heading compact">
     <span class="eyebrow">Consulta guiada</span>
     <h2>Pesquisar por NCM, descricao, setor, tratamento ou ato</h2>
-    <p>Este campo filtra os cards e a tabela tecnica desta pagina. Exemplos: <code>3004</code>, <code>8708</code>, <code>monofasico</code>, <code>farmaceutico</code>, <code>Lei 10.147</code>.</p>
+    <p>Este campo filtra os cards operacionais desta pagina. A tabela tecnica fica fechada abaixo, para auditoria. Exemplos: <code>3004</code>, <code>8708</code>, <code>monofasico</code>, <code>farmaceutico</code>, <code>Lei 10.147</code>.</p>
   </div>
   <div class="pis-ncm-query">
     <label for="pisNcmSearch">Busca dentro da base PIS/Cofins por NCM</label>
@@ -2135,14 +2155,14 @@ def pis_cofins_ncm_table_page(data: dict) -> str:
   <div class="pis-ncm-presets" aria-label="Filtros rapidos por tratamento">
     {''.join(treatment_summary)}
   </div>
-  <p class="pis-ncm-count"><strong data-pis-count>{fmt_num(len(rows))}</strong> registros visiveis de {fmt_num(len(rows))} publicados.</p>
+  <p class="pis-ncm-count"><strong data-pis-count>{fmt_num(len(rows))}</strong> cards visiveis de {fmt_num(len(rows))} publicados.</p>
   <div class="pis-ncm-card-grid">
     {''.join(record_cards)}
   </div>
 </section>
-<section class="content-block inventory-table">
-  <h2>Tabela tecnica completa</h2>
-  <p>A mesma busca acima tambem filtra esta tabela. Ela fica abaixo dos cards para manter leitura humana primeiro e auditoria tecnica logo depois.</p>
+<section class="content-block inventory-table pis-ncm-audit-table">
+  <h2>Tabela tecnica fechada para auditoria</h2>
+  <p>Esta tabela repete os mesmos registros dos cards, mas em formato largo. Ela permanece fechada por padrao para nao virar a leitura principal do portal humano.</p>
   <details class="pis-ncm-table-details">
     <summary>Abrir tabela tecnica com todos os campos auditaveis</summary>
   <div class="doc-table-wrap">
@@ -2167,7 +2187,7 @@ def pis_cofins_ncm_table_page(data: dict) -> str:
   </div>
 </section>
 """
-    return layout("federal/legislacao/pis-cofins/ncm.html", "Tabela PIS/Cofins por NCM", "Tabela pesquisavel de PIS/Cofins por NCM.", body, "federal")
+    return layout("federal/legislacao/pis-cofins/ncm.html", "Consulta PIS/Cofins por NCM", "Consulta pesquisavel de PIS/Cofins por NCM.", body, "federal")
 
 
 def benefits_crosswalk_page(data: dict) -> str:

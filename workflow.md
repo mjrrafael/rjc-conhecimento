@@ -47,7 +47,7 @@ Observacao: subagentes nao substituem prova. O resultado deles entra como insumo
 | 4 | Registro publicavel contem fonte primaria, trecho, vigencia, condicoes, status e `verificado_em` | auditoria automatizada | OK | `python scripts\audit_pis_cofins_ncm.py` |
 | 5 | Nenhum registro keyword-only ou `classification_confidence < 0.80` e publicavel | auditoria automatizada | OK | `audit_pis_cofins_ncm.py` + `audit_pis_cofins_ncm_adversarial.py` |
 | 6 | Quarentena nao aparece em HTML, busca, sitemap, llms ou manifest | auditoria automatizada | OK | `audit_quarantine_isolation.py` verificou 13137 ids; auditoria PIS/Cofins isolou 183 candidatos |
-| 7 | Tabela publica e pesquisavel por NCM, descricao, setor, tratamento, fonte e status | build + busca local | OK | `federal/legislacao/pis-cofins/ncm.html`; 291 ids presentes no HTML |
+| 7 | Consulta publica e pesquisavel por NCM, descricao, setor, tratamento, fonte e status, com cards antes da tabela tecnica | build + busca local + render Chrome | OK | `federal/legislacao/pis-cofins/ncm.html`; 291 ids presentes no HTML; `#pisNcmSearch` filtra cards |
 | 8 | HTML, NDJSON e busca convergem por id | auditoria automatizada | OK | prova direta: 291 ids, 0 ausentes no HTML, 0 ausentes no `portal-search-full.json` |
 | 9 | LLM consegue ler cada registro com envelope completo de validade | manifest/search + inspecao adversarial | OK | `llms.txt`, manifest e busca incluem pagina, NDJSON e indice |
 | 10 | Hard gates canonicos do portal ficam verdes | bateria oficial | OK COM AVISOS SOFT | gates verdes; `audit_link_health.py` trouxe avisos de SSL/conexao sem 404/410 em beneficio publicado |
@@ -56,6 +56,7 @@ Observacao: subagentes nao substituem prova. O resultado deles entra como insumo
 | 13 | Portal humano traz busca local por NCM, descricao, setor, tratamento, fonte e status | auditoria automatizada + HTML gerado | OK | `python scripts\audit_pis_cofins_ncm_ui.py` => 291 cards, 291 linhas e 291 entradas de busca/LLM |
 | 14 | NDJSON servido para LLM inclui resumo operacional, texto pesquisavel e salvaguardas de leitura | auditoria automatizada | OK | `python scripts\audit_pis_cofins_ncm.py`; campos `resumo_operacional`, `pesquisa_texto`, `leitura_humana` obrigatorios |
 | 15 | Excel local pesquisavel foi gerado e bate com a base publica | exportacao + auditoria da planilha | OK | `python scripts\export_pis_cofins_ncm_excel.py`; `python scripts\audit_pis_cofins_ncm_excel.py` |
+| 16 | A tabela larga nao domina a leitura humana do portal | auditoria UI + render Chrome local | OK | `audit_pis_cofins_ncm_ui.py` bloqueia tabela antes da busca/cards, tabela aberta por padrao e texto antigo; Chrome local mostrou tabela tecnica fechada e busca `3004` com 43 cards |
 
 ## Decomposicao das subtarefas
 
@@ -146,6 +147,7 @@ Observacao: subagentes nao substituem prova. O resultado deles entra como insumo
 | 2026-06-21 | Artefatos LLM enriquecidos | OK: NDJSON e busca carregam resumo operacional, texto pesquisavel, como validar e nao usar sem | revalidar gates |
 | 2026-06-21 | Excel local gerado | OK: `G:\Meu Drive\RJC\BD_LEGISLACAO\PIS_COFINS_NCM\pis-cofins-ncm-2026-06-21.xlsx` auditado com 291 linhas | manter fora do Pages |
 | 2026-06-21 | Revisao UX/LLM publicada | OK: PR #12 mergeado, Pages run `27914470566`, HTTP publico conferido | fechamento com ressalva de completude |
+| 2026-06-21 | Revisao UX pos-print aplicada | OK local: cards curtos, consulta guiada, tabela tecnica fechada, pagina generica NCM recolhida e auditoria UI reforcada | publicar via PR e verificar HTTP publico |
 
 ## Passe adversarial vivo
 

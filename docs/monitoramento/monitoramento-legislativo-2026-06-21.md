@@ -165,6 +165,29 @@ Publicacao da revisao UX/LLM/Excel:
 | Busca LLM | https://mjrrafael.github.io/rjc-conhecimento/assets/portal-search-full.json | HTTP 200; registro `pcncm-3f639de017155021` encontrado |
 | Quarentena | https://mjrrafael.github.io/rjc-conhecimento/data/pis-cofins/quarentena.ndjson | HTTP 404; nao publicada |
 
+## Revisao UX pos-print - PIS/Cofins NCM
+
+Motivo: em 2026-06-21, a verificacao humana em navegador mostrou que a pagina ainda podia ser lida como tabela larga, estreita e pouco didatica antes da consulta operacional. O risco editorial era induzir o usuario a aplicar PIS/Cofins por NCM sem ler condicao, vigencia, prova, risco e etapa da cadeia.
+
+Correcoes aplicadas:
+
+| Achado | Correcao | Arquivo | Status |
+|---|---|---|---|
+| Rota federal ainda chamava a experiencia operacional de tabela | Landing passou a apontar para consulta guiada por NCM, com cards e CTA de NDJSON | `scripts/build_portal.py`; `federal/pis-cofins-ncm.html` | OK |
+| Cards tinham titulo longo demais, parecendo trecho legal bruto | Card passou a usar titulo curto `NCM + tratamento`, resumo da mercadoria e alerta operacional | `scripts/build_portal.py`; `federal/legislacao/pis-cofins/ncm.html` | OK |
+| Tabela tecnica ainda podia dominar a leitura humana | Tabela tecnica ficou em bloco de auditoria fechado por padrao; pagina generica `beneficios/ncm.html` tambem recolheu a tabela ampla | `scripts/build_portal.py`; `beneficios/ncm.html` | OK |
+| Gate UI nao derrubava regressao visual equivalente ao print | `audit_pis_cofins_ncm_ui.py` passou a bloquear tabela antes da busca/cards, tabela aberta por padrao, texto antigo e link de rota humana como tabela | `scripts/audit_pis_cofins_ncm_ui.py` | OK |
+| CSS nao destacava claramente o caminho recomendado | Criados estilos para painel de entrada, resumo de card, id do registro, alerta operacional e tabela de auditoria | `assets/portal-tributario.css` | OK |
+
+Evidencias locais da revisao:
+
+| Verificacao | Resultado | Evidencia |
+|---|---|---|
+| Build | OK | `python scripts\build_portal.py` => `Portal generated successfully.` em 344s |
+| Auditoria UI | OK | `python scripts\audit_pis_cofins_ncm_ui.py` => 291 cards, 291 linhas tecnicas e busca/LLM sincronizados |
+| Render Chrome local | OK | titulo `Consulta PIS/Cofins por NCM`; `#pisNcmSearch` presente; tabela tecnica fechada; primeiro card `NCM 01.02 - Crédito presumido`; busca `3004` retornou 43 cards |
+| Hard gates canonicos | OK com avisos soft | bateria canônica passou; `audit_link_health.py` sem 404/410 em beneficio publicado |
+
 ## Pendencias humanas
 
 - Revisar semanticamente as descricoes legais mais truncadas antes de usar a base como cadastro ERP.

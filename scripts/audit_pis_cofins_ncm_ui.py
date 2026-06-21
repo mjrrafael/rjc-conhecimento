@@ -12,6 +12,7 @@ ROOT = Path(__file__).resolve().parents[1]
 NDJSON = ROOT / "data" / "pis-cofins" / "ncm.ndjson"
 HTML = ROOT / "federal" / "legislacao" / "pis-cofins" / "ncm.html"
 LANDING = ROOT / "federal" / "pis-cofins-ncm.html"
+BENEFITS_NCM = ROOT / "beneficios" / "ncm.html"
 SEARCH = ROOT / "assets" / "portal-search-full.json"
 JS = ROOT / "assets" / "portal-tributario.js"
 CSS = ROOT / "assets" / "portal-tributario.css"
@@ -26,12 +27,14 @@ def main() -> int:
     rows = [row for row in load_ndjson(NDJSON) if row.get("publishable") is True]
     html = HTML.read_text(encoding="utf-8", errors="ignore")
     landing = LANDING.read_text(encoding="utf-8", errors="ignore")
+    benefits_ncm = BENEFITS_NCM.read_text(encoding="utf-8", errors="ignore")
     js = JS.read_text(encoding="utf-8", errors="ignore")
     css = CSS.read_text(encoding="utf-8", errors="ignore")
     search_entries = json.loads(SEARCH.read_text(encoding="utf-8"))
     search_urls = {str(entry.get("url", "")) for entry in search_entries if isinstance(entry, dict)}
 
     required_html = [
+        'id="consulta-pis-cofins-ncm"',
         'data-pis-ncm-explorer',
         'id="pisNcmSearch"',
         'data-pis-filter="tratamento"',
@@ -40,6 +43,9 @@ def main() -> int:
         'data-pis-filter="source"',
         'data-pis-count',
         'pis-ncm-card-grid',
+        'pis-ncm-record-summary',
+        'pis-ncm-guardrail',
+        'pis-ncm-audit-table',
         'Como validar',
         'Não usar sem',
     ]
@@ -49,10 +55,40 @@ def main() -> int:
 
     if "bindPisNcmExplorer" not in js or "[data-pis-ncm-explorer]" not in js:
         errors.append("local PIS/Cofins NCM search binder is missing from portal JS")
+    required_css = [".pis-ncm-card-grid", ".pis-ncm-query", ".pis-ncm-entry-panel", ".pis-ncm-audit-table"]
+    for token in required_css:
+        if token not in css:
+            errors.append(f"PIS/Cofins NCM responsive styles are missing: {token}")
     if ".pis-ncm-card-grid" not in css or ".pis-ncm-query" not in css:
         errors.append("PIS/Cofins NCM responsive styles are missing")
     if "legislacao/pis-cofins/ncm.html" not in landing:
         errors.append("landing page does not link to the NCM table")
+    if "Tabela completa por NCM" in landing:
+        errors.append("landing page still presents the human route as a complete table")
+
+    forbidden_human_tokens = [
+        "Linhas pesquisaveis",
+        "Linhas pesquisáveis",
+        "abrir na tabela",
+    ]
+    for token in forbidden_human_tokens:
+        if token.lower() in html.lower():
+            errors.append(f"old table-first human wording leaked into PIS/Cofins NCM page: {token}")
+
+    explorer_pos = html.find('id="consulta-pis-cofins-ncm"')
+    cards_pos = html.find('pis-ncm-card-grid')
+    audit_pos = html.find('pis-ncm-audit-table')
+    table_pos = html.find('ncm-benefits-table')
+    if not (0 <= explorer_pos < cards_pos < audit_pos < table_pos):
+        errors.append("PIS/Cofins NCM page does not place guided search/cards before the technical table")
+    if re.search(r'<details[^>]*class="[^"]*pis-ncm-table-details[^"]*"[^>]*\bopen\b', html, re.I):
+        errors.append("PIS/Cofins NCM technical table is open by default")
+    if '<details class="pis-ncm-table-details">' not in html:
+        errors.append("PIS/Cofins NCM technical table is not wrapped in closed details")
+    if '<details class="ncm-audit-table-details">' not in benefits_ncm:
+        errors.append("generic NCM benefits table is not wrapped in closed details")
+    if benefits_ncm.find("ncm-benefits-table") < benefits_ncm.find("ncm-audit-table-details"):
+        errors.append("generic NCM benefits table appears before the closed audit details wrapper")
 
     card_count = html.count('data-pis-result="card"')
     row_count = html.count('data-pis-result="row"')
