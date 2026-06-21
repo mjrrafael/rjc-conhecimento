@@ -139,8 +139,21 @@ Resultado: 8 casos adversariais, status OK.
 
 Politica aplicavel: conteudo via PR, nunca direto em `main`.
 
-Status: PR draft aberto em https://github.com/mjrrafael/rjc-conhecimento/pull/10 na branch `codex/pis-cofins-ncm`.
+Status: PR aberto em https://github.com/mjrrafael/rjc-conhecimento/pull/10, convertido para ready e mergeado em `main`.
 
 Commit inicial da secao: `eb808cc`.
 
-A publicacao publica no GitHub Pages so pode ser declarada depois de merge do PR, run do Pages concluido e verificacao HTTP publica.
+Merge/publicacao: `99b8fe1` - `[codex] Atualiza portal tributario - 2026-06-21`.
+
+Run Pages: `27913604935`, concluido com sucesso em 2026-06-21.
+
+Verificacao HTTP publica:
+
+| URL | HTTP | Evidencia |
+|---|---:|---|
+| https://mjrrafael.github.io/rjc-conhecimento/federal/pis-cofins-ncm.html | 200 | landing publicada |
+| https://mjrrafael.github.io/rjc-conhecimento/federal/legislacao/pis-cofins/ncm.html | 200 | tabela publicada |
+| https://mjrrafael.github.io/rjc-conhecimento/data/pis-cofins/ncm.ndjson | 200 | 291 linhas remotas; schema `rjc-pis-cofins-ncm-v1` |
+| https://mjrrafael.github.io/rjc-conhecimento/data/pis-cofins/ncm-index.json | 200 | 291 linhas publicadas, 140 NCM/codigos unicos, 183 candidatos locais em quarentena |
+| https://mjrrafael.github.io/rjc-conhecimento/llms.txt | 200 | entrada PIS/Cofins por NCM presente |
+| https://mjrrafael.github.io/rjc-conhecimento/data/pis-cofins/quarentena.ndjson | 404 | quarentena nao publicada |
