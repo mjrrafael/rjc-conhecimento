@@ -1,6 +1,6 @@
 {
   "schema": "rjc-build-freshness-v1",
-  "generated_at": "2026-06-21T15:24:01",
+  "generated_at": "2026-06-21T15:59:51",
   "artifacts": {
     "beneficios/index.html": {
       "sha256": "22938ac572bab3fc0fb5661613f890b548f9432a7c00959713243f145d0ecb2a",
@@ -19,28 +19,28 @@
       "bytes": 180105
     },
     "assets/portal-search-full.json": {
-      "sha256": "ea5a8c7f36931e76716b9e01082ddfe4ff4da5b6c2deae63379675f83ff97d84",
-      "bytes": 48711133
+      "sha256": "371e77f74aad02c81afd3c3a9c07966bbbc7f0a38321bf895ee8ba8170445a17",
+      "bytes": 48739769
     },
     "data/benefits_crosswalk.json": {
       "sha256": "3b222388329c56550a5a62e574ebf2ad2bd2e0254516c2ae464a34b4b050464a",
       "bytes": 76518089
     },
     "data/pis-cofins/ncm.ndjson": {
-      "sha256": "b816de4f9b74ed70bd28fcb4b2c0286abd02c48d8300b7e19b53ffa29e27e48a",
-      "bytes": 1302581
+      "sha256": "6b1bd525ae56dd39db116caea307f7d279831f0be7ebddcda0b1e38f17d818dd",
+      "bytes": 2541485
     },
     "data/pis-cofins/ncm-index.json": {
-      "sha256": "2d4d41adcb94b83dc0cc174294da2684e1aa50cffe372b2975a1898d9518da24",
-      "bytes": 229284
+      "sha256": "18e33c53c33e482bbdbb1f3a5c2a5c8f92a69f3f0da5828334a2a751620b570e",
+      "bytes": 1097268
     },
     "federal/pis-cofins-ncm.html": {
       "sha256": "0fda474d7e942d40026b77fdf1521eeab8c4cd890a625d13665a05ead70d73da",
       "bytes": 10733
     },
     "federal/legislacao/pis-cofins/ncm.html": {
-      "sha256": "711cebc7732ad885027f04abe07b3258ff11e5d4c8aa17cbc66e4636f5a397ce",
-      "bytes": 1414166
+      "sha256": "ca3ac786ad5a8ebad3c1f5522ae5340363d4269b28f5c8834409bac03cc3fb20",
+      "bytes": 5364242
     }
   }
 }

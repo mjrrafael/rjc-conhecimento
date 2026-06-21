@@ -2053,6 +2053,195 @@ a.state-card:hover {
   color: var(--muted);
 }
 
+.pis-ncm-howto {
+  background: linear-gradient(135deg, #f8fafc 0%, #ecfdf5 100%);
+}
+
+.pis-ncm-steps,
+.pis-ncm-filters,
+.pis-ncm-presets,
+.pis-ncm-card-grid,
+.pis-ncm-facts {
+  display: grid;
+  gap: 12px;
+}
+
+.pis-ncm-steps {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.pis-ncm-steps article,
+.pis-ncm-preset,
+.pis-ncm-record {
+  border: 1px solid var(--line);
+  background: var(--surface);
+}
+
+.pis-ncm-steps article {
+  border-radius: 12px;
+  padding: 14px;
+}
+
+.pis-ncm-steps strong,
+.pis-ncm-steps span,
+.pis-ncm-preset strong,
+.pis-ncm-preset span {
+  display: block;
+}
+
+.pis-ncm-steps strong,
+.pis-ncm-preset strong,
+.pis-ncm-record-head h3 {
+  color: var(--navy);
+}
+
+.pis-ncm-steps span,
+.pis-ncm-preset span {
+  margin-top: 5px;
+  color: var(--muted);
+}
+
+.pis-ncm-explorer {
+  border-color: #b7d6c2;
+  box-shadow: 0 18px 50px rgba(17, 24, 39, 0.08);
+}
+
+.pis-ncm-query {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 10px;
+  align-items: end;
+}
+
+.pis-ncm-query label {
+  grid-column: 1 / -1;
+  color: var(--navy);
+  font-weight: 850;
+}
+
+.pis-ncm-query input,
+.pis-ncm-filters select {
+  width: 100%;
+  min-height: 46px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 12px 14px;
+  background: var(--surface);
+  color: var(--ink);
+  font: inherit;
+}
+
+.pis-ncm-query button {
+  min-height: 46px;
+  border: 0;
+  border-radius: 10px;
+  padding: 12px 16px;
+  background: var(--navy);
+  color: #fff;
+  cursor: pointer;
+  font-weight: 850;
+}
+
+.pis-ncm-filters {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  margin-top: 12px;
+}
+
+.pis-ncm-presets {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin: 16px 0;
+}
+
+.pis-ncm-preset {
+  border-radius: 12px;
+  padding: 12px;
+  text-align: left;
+  cursor: pointer;
+}
+
+.pis-ncm-preset:hover,
+.pis-ncm-preset:focus {
+  border-color: var(--green);
+  outline: none;
+}
+
+.pis-ncm-count {
+  display: inline-block;
+  border-radius: 999px;
+  padding: 10px 12px;
+  background: var(--soft-blue);
+  color: var(--navy);
+}
+
+.pis-ncm-card-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin-top: 16px;
+}
+
+.pis-ncm-record {
+  border-radius: 16px;
+  padding: 18px;
+  box-shadow: 0 10px 28px rgba(15, 23, 42, 0.06);
+}
+
+.pis-ncm-record-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.pis-ncm-record-head h3 {
+  margin: 6px 0 0;
+  font-size: 1.02rem;
+  line-height: 1.35;
+}
+
+.pis-ncm-record-head a {
+  color: var(--blue);
+  font-weight: 850;
+  white-space: nowrap;
+}
+
+.pis-ncm-facts {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin: 16px 0;
+}
+
+.pis-ncm-facts div {
+  border-left: 3px solid #0f766e;
+  padding-left: 10px;
+}
+
+.pis-ncm-facts dt {
+  color: var(--muted);
+  font-size: 0.72rem;
+  font-weight: 850;
+  text-transform: uppercase;
+}
+
+.pis-ncm-facts dd {
+  margin: 3px 0 0;
+  color: var(--ink);
+}
+
+.pis-ncm-details {
+  border-top: 1px solid var(--line);
+  padding-top: 10px;
+}
+
+.pis-ncm-details summary,
+.pis-ncm-table-details summary {
+  color: var(--navy);
+  cursor: pointer;
+  font-weight: 850;
+}
+
+.pis-ncm-details p {
+  margin: 10px 0 0;
+  color: var(--ink);
+}
+
 .continuity {
   padding: 24px;
   border-radius: 8px;
@@ -2136,7 +2325,12 @@ a.state-card:hover {
   .state-queue-grid,
   .source-audit-state summary,
   .study-step-grid,
-  .chapter-flow {
+  .chapter-flow,
+  .pis-ncm-steps,
+  .pis-ncm-filters,
+  .pis-ncm-presets,
+  .pis-ncm-card-grid,
+  .pis-ncm-facts {
     grid-template-columns: 1fr 1fr;
   }
 
@@ -2222,8 +2416,18 @@ a.state-card:hover {
   .state-queue-grid,
   .study-step-grid,
   .chapter-flow,
-  .document-heading {
+  .document-heading,
+  .pis-ncm-steps,
+  .pis-ncm-filters,
+  .pis-ncm-presets,
+  .pis-ncm-card-grid,
+  .pis-ncm-facts,
+  .pis-ncm-query {
     grid-template-columns: 1fr;
+  }
+
+  .pis-ncm-record-head {
+    flex-direction: column;
   }
 
   .chapter-map {

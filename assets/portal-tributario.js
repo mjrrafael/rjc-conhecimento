@@ -408,8 +408,74 @@
     });
   }
 
+  function bindPisNcmExplorer() {
+    var root = document.querySelector("[data-pis-ncm-explorer]");
+    if (!root) return;
+    var input = root.querySelector("#pisNcmSearch");
+    var filters = Array.prototype.slice.call(root.querySelectorAll("[data-pis-filter]"));
+    var results = Array.prototype.slice.call(root.querySelectorAll("[data-pis-result]"));
+    var count = root.querySelector("[data-pis-count]");
+    var clear = root.querySelector("[data-pis-clear]");
+    var presets = Array.prototype.slice.call(root.querySelectorAll("[data-pis-preset]"));
+
+    function matchesFilters(item) {
+      return filters.every(function (filter) {
+        var value = filter.value;
+        if (!value) return true;
+        var attr = "data-" + filter.getAttribute("data-pis-filter");
+        return (item.getAttribute(attr) || "") === value;
+      });
+    }
+
+    function render() {
+      var plan = queryPlan(input ? input.value : "");
+      var visibleCards = 0;
+      results.forEach(function (item) {
+        var haystack = item.getAttribute("data-search") || item.textContent;
+        var textOk = !plan.hasTerms || matchesText(haystack, plan);
+        var ok = textOk && matchesFilters(item);
+        item.classList.toggle("is-hidden", !ok);
+        if (ok && item.getAttribute("data-pis-result") === "card") {
+          visibleCards += 1;
+        }
+      });
+      if (count) count.textContent = visibleCards.toLocaleString("pt-BR");
+    }
+
+    if (input) {
+      input.addEventListener("input", render);
+    }
+    filters.forEach(function (filter) {
+      filter.addEventListener("change", render);
+    });
+    presets.forEach(function (button) {
+      button.addEventListener("click", function () {
+        var parts = (button.getAttribute("data-pis-preset") || "").split(":");
+        var name = parts[0];
+        var value = parts.slice(1).join(":");
+        filters.forEach(function (filter) {
+          if (filter.getAttribute("data-pis-filter") === name) {
+            filter.value = value;
+          }
+        });
+        render();
+        if (input) input.focus();
+      });
+    });
+    if (clear) {
+      clear.addEventListener("click", function () {
+        if (input) input.value = "";
+        filters.forEach(function (filter) { filter.value = ""; });
+        render();
+        if (input) input.focus();
+      });
+    }
+    render();
+  }
+
   document.addEventListener("DOMContentLoaded", function () {
     bindGlobalSearch();
     bindLocalCardFilter();
+    bindPisNcmExplorer();
   });
 })();

@@ -79,7 +79,7 @@ Distribuicao por fonte com linha publica:
 | `python -m compileall -q scripts` | OK | exit 0 |
 | `python scripts\build_pis_cofins_ncm.py` | OK | 14 fontes, 291 publicaveis, 183 quarentena |
 | `python scripts\audit_pis_cofins_ncm.py` | OK | `OK: 291 public PIS/Cofins NCM rows; 183 quarantine rows isolated.` |
-| `python scripts\audit_pis_cofins_ncm_adversarial.py` | OK | `{"status": "OK", "adversarial_cases": 8}` |
+| `python scripts\audit_pis_cofins_ncm_adversarial.py` | OK | `{"status": "OK", "adversarial_cases": 11}` |
 | `python scripts\build_portal.py` | OK | `Portal generated successfully.` em aproximadamente 399s |
 | `python scripts\audit_portal.py` | OK | 654 paginas HTML auditadas |
 | `python scripts\audit_master_coverage.py` | OK | requisitos federais, Estados, beneficios, NCM e CONFAZ sem falhas estruturais |
@@ -96,7 +96,7 @@ Distribuicao por fonte com linha publica:
 | Prova direta PIS/Cofins id x HTML x busca | OK | 291 ids; 0 ausentes no HTML; 0 ausentes no `portal-search-full.json` |
 | Prova direta LLM | OK | `llms.txt` inclui pagina, NDJSON e indice; manifest inclui landing e tabela |
 | `git diff --check` | OK | exit 0; apenas warnings de CRLF |
-| `rg -n "25/04/2026|\[\] \[\] \[\]|str\(\[" .` | OK | exit 1 por ausencia de matches |
+| Rede final `rg` contra data editorial antiga, listas vazias serializadas e `str(list)` | OK | exit 1 por ausencia de matches |
 
 ## Avisos soft de link health
 
@@ -120,8 +120,36 @@ Casos que precisam falhar e falharam:
 - provenance `keyword_only`;
 - transicao CBS ausente;
 - codigo suspeito/data/artigo sem trecho legal suficiente.
+- resumo operacional fraco;
+- texto de pesquisa sem NCM;
+- leitura humana sem salvaguardas minimas.
 
-Resultado: 8 casos adversariais, status OK.
+Resultado: 11 casos adversariais, status OK.
+
+## Revisao UX/LLM/Excel pos-publicacao inicial
+
+Motivo: a publicacao inicial respondia HTTP 200 e tinha dados validos, mas a tela humana ainda estava operacionalmente ruim: tabela extensa demais, sem busca local dedicada por NCM/tratamento/setor/fonte/status e sem camada didatica suficiente antes da tabela tecnica.
+
+Correcoes aplicadas em 2026-06-21:
+
+| Achado | Correcao | Evidencia | Status |
+|---|---|---|---|
+| Tabela tecnica dominava a leitura humana | Criados cards por registro, passos de leitura, presets por tratamento e tabela tecnica recolhida em `details` | `federal/legislacao/pis-cofins/ncm.html` | OK |
+| Busca local da pagina PIS/Cofins NCM nao existia | Criado `#pisNcmSearch` com filtros por tratamento, setor, status e fonte | `assets/portal-tributario.js`; `assets/portal-tributario.css` | OK |
+| LLM recebia campos estruturados, mas ainda sem resumo operacional explicito | `ncm.ndjson` passou a exigir `resumo_operacional`, `pesquisa_texto` e `leitura_humana` | `python scripts\audit_pis_cofins_ncm.py` | OK |
+| Nao havia planilha local pesquisavel | Gerada planilha Excel com abas `Pesquisar`, `Base_NCM`, `Resumo`, `Fontes`, `Metodo` | `G:\Meu Drive\RJC\BD_LEGISLACAO\PIS_COFINS_NCM\pis-cofins-ncm-2026-06-21.xlsx` | OK |
+
+Gates adicionais da revisao:
+
+| Gate | Resultado | Evidencia |
+|---|---|---|
+| `python scripts\audit_pis_cofins_ncm.py` | OK | 291 linhas publicas; 183 quarentena |
+| `python scripts\audit_pis_cofins_ncm_adversarial.py` | OK | 11 casos adversariais |
+| `python scripts\audit_pis_cofins_ncm_ui.py` | OK | 291 cards, 291 linhas tecnicas e 291 entradas de busca/LLM |
+| `python scripts\export_pis_cofins_ncm_excel.py` | OK | Excel gerado em `G:` |
+| `python scripts\audit_pis_cofins_ncm_excel.py` | OK | workbook auditado com 291 linhas |
+
+Passe adversarial adicional: o teste textual da UI falhou inicialmente porque o HTML gerado trazia `Não usar sem` com acento, enquanto a auditoria procurava `Nao usar sem`. Foi corrigido o gate para verificar o texto renderizado real. A rede final `rg` tambem encontrou o proprio literal do comando antigo no ledger; o texto foi reescrito para remover esse falso positivo. Apos correcao, `git diff --check` saiu 0 e a rede final saiu 1 por ausencia de matches.
 
 ## Pendencias humanas
 
