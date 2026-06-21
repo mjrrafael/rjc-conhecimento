@@ -139,4 +139,8 @@ Resultado: 8 casos adversariais, status OK.
 
 Politica aplicavel: conteudo via PR, nunca direto em `main`.
 
-Status: PR pendente no momento deste ledger. A publicacao publica no GitHub Pages so pode ser declarada depois de push/PR, merge e verificacao HTTP publica.
+Status: PR draft aberto em https://github.com/mjrrafael/rjc-conhecimento/pull/10 na branch `codex/pis-cofins-ncm`.
+
+Commit inicial da secao: `eb808cc`.
+
+A publicacao publica no GitHub Pages so pode ser declarada depois de merge do PR, run do Pages concluido e verificacao HTTP publica.
