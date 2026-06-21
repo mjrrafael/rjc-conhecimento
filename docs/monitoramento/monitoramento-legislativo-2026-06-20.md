@@ -94,6 +94,12 @@
 - defeitos novos abertos: nenhum
 
 ## Publicacao
-- commit/PR: nao aberto nesta rodada; conteudo alterado permanece local aguardando PR obrigatorio
-- run do Pages: nao aplicavel enquanto o PR nao for aberto/mesclado
-- verificacao HTTP publica: pendente de PR e deploy
+- commit/PR: PR #8 - https://github.com/mjrrafael/rjc-conhecimento/pull/8 - merge squash em `f951c4f5095f2bf3ed8396e1b0dd21d63161f029`
+- run do Pages: https://github.com/mjrrafael/rjc-conhecimento/actions/runs/27911232574 - sucesso em 2026-06-21
+- verificacao HTTP publica:
+  - https://mjrrafael.github.io/rjc-conhecimento/federal/legislacao/atos/cgibs-marco-03-08-2026-campos-ibs-cbs.html - HTTP 200 com `03/08/2026`
+  - https://mjrrafael.github.io/rjc-conhecimento/assets/build-freshness.json - HTTP 200 com `2026-06-20T03:14:07`
+  - https://mjrrafael.github.io/rjc-conhecimento/llms.txt - HTTP 200 com `cgibs-marco-03-08-2026-campos-ibs-cbs`
+  - https://mjrrafael.github.io/rjc-conhecimento/assets/llm-manifest.json - HTTP 200 com `cgibs-marco-03-08-2026-campos-ibs-cbs`
+  - https://mjrrafael.github.io/rjc-conhecimento/assets/portal-search.js - HTTP 200 com `CGIBS - marco operacional de 03/08/2026`
+  - https://mjrrafael.github.io/rjc-conhecimento/docs/monitoramento/monitoramento-legislativo-2026-06-20.md - HTTP 200 com o ledger da rodada antes deste registro final de publicacao
