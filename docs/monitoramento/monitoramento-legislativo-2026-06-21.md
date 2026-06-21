@@ -151,6 +151,20 @@ Gates adicionais da revisao:
 
 Passe adversarial adicional: o teste textual da UI falhou inicialmente porque o HTML gerado trazia `Não usar sem` com acento, enquanto a auditoria procurava `Nao usar sem`. Foi corrigido o gate para verificar o texto renderizado real. A rede final `rg` tambem encontrou o proprio literal do comando antigo no ledger; o texto foi reescrito para remover esse falso positivo. Apos correcao, `git diff --check` saiu 0 e a rede final saiu 1 por ausencia de matches.
 
+Publicacao da revisao UX/LLM/Excel:
+
+| Item | Evidencia | Status |
+|---|---|---|
+| PR | https://github.com/mjrrafael/rjc-conhecimento/pull/12 | mergeado |
+| Commit publicado | `68ac619` | OK |
+| Pages run | `27914470566` | sucesso |
+| Pagina PIS/Cofins NCM | https://mjrrafael.github.io/rjc-conhecimento/federal/legislacao/pis-cofins/ncm.html | HTTP 200; 291 cards; 291 linhas tecnicas; `#pisNcmSearch` presente |
+| JS publico | https://mjrrafael.github.io/rjc-conhecimento/assets/portal-tributario.js | HTTP 200; `bindPisNcmExplorer` presente |
+| NDJSON publico | https://mjrrafael.github.io/rjc-conhecimento/data/pis-cofins/ncm.ndjson | HTTP 200; 291 linhas; `resumo_operacional`, `pesquisa_texto`, `leitura_humana` presentes |
+| Indice publico | https://mjrrafael.github.io/rjc-conhecimento/data/pis-cofins/ncm-index.json | HTTP 200; 291 linhas no resumo |
+| Busca LLM | https://mjrrafael.github.io/rjc-conhecimento/assets/portal-search-full.json | HTTP 200; registro `pcncm-3f639de017155021` encontrado |
+| Quarentena | https://mjrrafael.github.io/rjc-conhecimento/data/pis-cofins/quarentena.ndjson | HTTP 404; nao publicada |
+
 ## Pendencias humanas
 
 - Revisar semanticamente as descricoes legais mais truncadas antes de usar a base como cadastro ERP.

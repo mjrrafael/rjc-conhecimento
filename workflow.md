@@ -52,7 +52,7 @@ Observacao: subagentes nao substituem prova. O resultado deles entra como insumo
 | 9 | LLM consegue ler cada registro com envelope completo de validade | manifest/search + inspecao adversarial | OK | `llms.txt`, manifest e busca incluem pagina, NDJSON e indice |
 | 10 | Hard gates canonicos do portal ficam verdes | bateria oficial | OK COM AVISOS SOFT | gates verdes; `audit_link_health.py` trouxe avisos de SSL/conexao sem 404/410 em beneficio publicado |
 | 11 | Passe adversarial gera teste executavel e nao encontra defeito novo | teste dedicado | OK | `python scripts\audit_pis_cofins_ncm_adversarial.py` => 11 casos adversariais OK |
-| 12 | Conteudo so sobe via PR e Pages HTTP publico | PR + Actions + HTTP 200 | A VALIDAR | pendente |
+| 12 | Conteudo so sobe via PR e Pages HTTP publico | PR + Actions + HTTP 200 | OK | PR #12 mergeado; commit `68ac619`; Pages run `27914470566`; verificacao publica HTTP 200 |
 | 13 | Portal humano traz busca local por NCM, descricao, setor, tratamento, fonte e status | auditoria automatizada + HTML gerado | OK | `python scripts\audit_pis_cofins_ncm_ui.py` => 291 cards, 291 linhas e 291 entradas de busca/LLM |
 | 14 | NDJSON servido para LLM inclui resumo operacional, texto pesquisavel e salvaguardas de leitura | auditoria automatizada | OK | `python scripts\audit_pis_cofins_ncm.py`; campos `resumo_operacional`, `pesquisa_texto`, `leitura_humana` obrigatorios |
 | 15 | Excel local pesquisavel foi gerado e bate com a base publica | exportacao + auditoria da planilha | OK | `python scripts\export_pis_cofins_ncm_excel.py`; `python scripts\audit_pis_cofins_ncm_excel.py` |
@@ -145,6 +145,7 @@ Observacao: subagentes nao substituem prova. O resultado deles entra como insumo
 | 2026-06-21 | Revisao UX solicitada apos publicacao inicial | CORRIGIR aplicado: tabela tecnica deixou de ser a primeira leitura; criada consulta guiada por NCM/tratamento/setor/fonte/status | publicar nova revisao via PR |
 | 2026-06-21 | Artefatos LLM enriquecidos | OK: NDJSON e busca carregam resumo operacional, texto pesquisavel, como validar e nao usar sem | revalidar gates |
 | 2026-06-21 | Excel local gerado | OK: `G:\Meu Drive\RJC\BD_LEGISLACAO\PIS_COFINS_NCM\pis-cofins-ncm-2026-06-21.xlsx` auditado com 291 linhas | manter fora do Pages |
+| 2026-06-21 | Revisao UX/LLM publicada | OK: PR #12 mergeado, Pages run `27914470566`, HTTP publico conferido | fechamento com ressalva de completude |
 
 ## Passe adversarial vivo
 
