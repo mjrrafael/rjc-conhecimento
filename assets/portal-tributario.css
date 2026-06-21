@@ -2106,6 +2106,29 @@ a.state-card:hover {
   box-shadow: 0 18px 50px rgba(17, 24, 39, 0.08);
 }
 
+.pis-ncm-entry-panel {
+  display: grid;
+  grid-template-columns: minmax(0, 1.5fr) minmax(260px, 0.7fr);
+  gap: 18px;
+  align-items: center;
+  background: linear-gradient(135deg, #eff6ff 0%, #ecfdf5 100%);
+}
+
+.pis-ncm-entry-actions {
+  display: grid;
+  gap: 10px;
+}
+
+.pis-ncm-entry-actions a {
+  border: 1px solid rgba(30, 64, 175, 0.2);
+  border-radius: 12px;
+  padding: 12px 14px;
+  background: var(--surface);
+  color: var(--navy);
+  font-weight: 850;
+  text-decoration: none;
+}
+
 .pis-ncm-query {
   display: grid;
   grid-template-columns: 1fr auto;
@@ -2197,8 +2220,19 @@ a.state-card:hover {
   line-height: 1.35;
 }
 
-.pis-ncm-record-head a {
-  color: var(--blue);
+.pis-ncm-record-summary {
+  margin: 8px 0 0;
+  color: var(--muted);
+  line-height: 1.45;
+}
+
+.pis-ncm-record-id {
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 6px 9px;
+  background: #f8fafc;
+  color: var(--muted);
+  font-size: 0.72rem;
   font-weight: 850;
   white-space: nowrap;
 }
@@ -2223,6 +2257,30 @@ a.state-card:hover {
 .pis-ncm-facts dd {
   margin: 3px 0 0;
   color: var(--ink);
+}
+
+.pis-ncm-guardrail {
+  border-radius: 12px;
+  margin: 12px 0;
+  padding: 12px;
+  background: #fff7ed;
+  color: #7c2d12;
+  line-height: 1.45;
+}
+
+.pis-ncm-audit-table,
+.ncm-audit-table-details {
+  border-style: dashed;
+}
+
+.pis-ncm-table-details,
+.ncm-audit-table-details {
+  margin-top: 12px;
+}
+
+.pis-ncm-table-details .doc-table-wrap,
+.ncm-audit-table-details .doc-table-wrap {
+  max-height: 72vh;
 }
 
 .pis-ncm-details {
@@ -2326,6 +2384,7 @@ a.state-card:hover {
   .source-audit-state summary,
   .study-step-grid,
   .chapter-flow,
+  .pis-ncm-entry-panel,
   .pis-ncm-steps,
   .pis-ncm-filters,
   .pis-ncm-presets,
@@ -2417,6 +2476,7 @@ a.state-card:hover {
   .study-step-grid,
   .chapter-flow,
   .document-heading,
+  .pis-ncm-entry-panel,
   .pis-ncm-steps,
   .pis-ncm-filters,
   .pis-ncm-presets,

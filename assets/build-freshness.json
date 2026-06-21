@@ -1,46 +1,46 @@
 {
   "schema": "rjc-build-freshness-v1",
-  "generated_at": "2026-06-21T15:59:51",
+  "generated_at": "2026-06-21T16:30:35",
   "artifacts": {
     "beneficios/index.html": {
       "sha256": "22938ac572bab3fc0fb5661613f890b548f9432a7c00959713243f145d0ecb2a",
       "bytes": 54748505
     },
     "llms.txt": {
-      "sha256": "a464fea61586646415994d8890537d3371ebb0ac3a17d502ff18bdba7edee9e0",
-      "bytes": 126037
+      "sha256": "388f9178e321450df7c4186bf28a08939d00dab91e115523ac8cd361ab467388",
+      "bytes": 126039
     },
     "assets/llm-manifest.json": {
-      "sha256": "c1ca0ed6c7b8310faa54c7fd9034b1bb36f35194a00a6be7cead0912320e9d99",
-      "bytes": 205686
+      "sha256": "14b60915d927154b3ff027a8c29fa03705a0596b5a20b595dd98b61e32ebfa1c",
+      "bytes": 205688
     },
     "assets/portal-search.js": {
       "sha256": "0612641662b6abf00f92202dc930bab7367eab8ec71625aeb98c273796c7840f",
       "bytes": 180105
     },
     "assets/portal-search-full.json": {
-      "sha256": "371e77f74aad02c81afd3c3a9c07966bbbc7f0a38321bf895ee8ba8170445a17",
-      "bytes": 48739769
+      "sha256": "a7647f72307831b8993562bd2f764ddd80ae0ff6cad3cfb8cd5a6c4c7681cb48",
+      "bytes": 48739893
     },
     "data/benefits_crosswalk.json": {
       "sha256": "3b222388329c56550a5a62e574ebf2ad2bd2e0254516c2ae464a34b4b050464a",
       "bytes": 76518089
     },
     "data/pis-cofins/ncm.ndjson": {
-      "sha256": "6b1bd525ae56dd39db116caea307f7d279831f0be7ebddcda0b1e38f17d818dd",
-      "bytes": 2541485
+      "sha256": "db43477e51a95f0f81f7aff82eb38c547f96474f501ef83202342e4ab902958c",
+      "bytes": 2541776
     },
     "data/pis-cofins/ncm-index.json": {
-      "sha256": "18e33c53c33e482bbdbb1f3a5c2a5c8f92a69f3f0da5828334a2a751620b570e",
-      "bytes": 1097268
+      "sha256": "0f2e8f8cf7096839bf87c6c1a3baf4f74cfe68384a78e25e87be2a040adaf5cd",
+      "bytes": 1101967
     },
     "federal/pis-cofins-ncm.html": {
-      "sha256": "0fda474d7e942d40026b77fdf1521eeab8c4cd890a625d13665a05ead70d73da",
-      "bytes": 10733
+      "sha256": "44e34a980c765cadcf26e44179196eb2ae6f1a4b394888eecbfef6eec470d3c1",
+      "bytes": 11527
     },
     "federal/legislacao/pis-cofins/ncm.html": {
-      "sha256": "ca3ac786ad5a8ebad3c1f5522ae5340363d4269b28f5c8834409bac03cc3fb20",
-      "bytes": 5364242
+      "sha256": "afd2cc1f52a00bd7846c1ffec1f108c7b0ea0a015d0d8d9f969eb69b2a35d057",
+      "bytes": 5399858
     }
   }
 }

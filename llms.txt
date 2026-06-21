@@ -650,7 +650,7 @@
 - [Lucro Presumido e segregacao de receitas | IRPJ: legislação em tela | RJC Assessoria](https://mjrrafael.github.io/rjc-conhecimento/federal/legislacao/irpj/lucro-presumido.html)
 - [Lucro Real, adicoes, exclusoes e compensacoes | IRPJ: legislação em tela | RJC Assessoria](https://mjrrafael.github.io/rjc-conhecimento/federal/legislacao/irpj/lucro-real.html)
 - [Transparencia de benefícios federais e Dirbi | IRPJ: legislação em tela | RJC Assessoria](https://mjrrafael.github.io/rjc-conhecimento/federal/legislacao/irpj/transparencia-beneficios-dirbi.html)
-- [Tabela PIS/Cofins por NCM | RJC Assessoria](https://mjrrafael.github.io/rjc-conhecimento/federal/legislacao/pis-cofins/ncm.html)
+- [Consulta PIS/Cofins por NCM | RJC Assessoria](https://mjrrafael.github.io/rjc-conhecimento/federal/legislacao/pis-cofins/ncm.html)
 - [Monofásico, alíquota zero, suspensão e benefícios | PIS/Pasep: legislação em tela | RJC Assessoria](https://mjrrafael.github.io/rjc-conhecimento/federal/legislacao/pis/beneficios-monofasico.html)
 - [Regime cumulativo | PIS/Pasep: legislação em tela | RJC Assessoria](https://mjrrafael.github.io/rjc-conhecimento/federal/legislacao/pis/cumulativo.html)
 - [PIS/Pasep-Importação | PIS/Pasep: legislação em tela | RJC Assessoria](https://mjrrafael.github.io/rjc-conhecimento/federal/legislacao/pis/importacao.html)
