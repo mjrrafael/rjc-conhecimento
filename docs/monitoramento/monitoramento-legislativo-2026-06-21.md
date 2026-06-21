@@ -188,6 +188,20 @@ Evidencias locais da revisao:
 | Render Chrome local | OK | titulo `Consulta PIS/Cofins por NCM`; `#pisNcmSearch` presente; tabela tecnica fechada; primeiro card `NCM 01.02 - Crédito presumido`; busca `3004` retornou 43 cards |
 | Hard gates canonicos | OK com avisos soft | bateria canônica passou; `audit_link_health.py` sem 404/410 em beneficio publicado |
 
+Publicacao da revisao UX pos-print:
+
+| Item | Evidencia | Status |
+|---|---|---|
+| PR | https://github.com/mjrrafael/rjc-conhecimento/pull/14 | mergeado |
+| Commit da branch | `c30ffd9` | OK |
+| Merge em `main` | `7132fa6` | OK |
+| Pages run | `27915401092` | sucesso |
+| Pagina PIS/Cofins NCM | https://mjrrafael.github.io/rjc-conhecimento/federal/legislacao/pis-cofins/ncm.html | HTTP 200; titulo novo; `#pisNcmSearch`; 291 cards; 291 linhas tecnicas; texto antigo ausente; tabela tecnica fechada |
+| Landing PIS/Cofins NCM | https://mjrrafael.github.io/rjc-conhecimento/federal/pis-cofins-ncm.html | HTTP 200; CTA `Abrir consulta pesquisável por NCM` |
+| Pagina generica NCM | https://mjrrafael.github.io/rjc-conhecimento/beneficios/ncm.html | HTTP 200; tabela ampla em `details` fechado |
+| CSS publico | https://mjrrafael.github.io/rjc-conhecimento/assets/portal-tributario.css | HTTP 200; estilos `pis-ncm-entry-panel` e `pis-ncm-guardrail` presentes |
+| LLM | https://mjrrafael.github.io/rjc-conhecimento/llms.txt | HTTP 200; entrada da pagina PIS/Cofins NCM presente |
+
 ## Pendencias humanas
 
 - Revisar semanticamente as descricoes legais mais truncadas antes de usar a base como cadastro ERP.
