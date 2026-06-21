@@ -18,6 +18,9 @@ REQUIRED_TOP_LEVEL = {
     "id",
     "ncm",
     "mercadoria_servico",
+    "resumo_operacional",
+    "pesquisa_texto",
+    "leitura_humana",
     "setor",
     "aplicacao",
     "tratamento",
@@ -98,6 +101,17 @@ def validate_public_row(row: dict) -> list[str]:
         errors.append(f"{row_id}: missing inline vigencia envelope")
     if len(str(row.get("mercadoria_servico", "")).strip()) < 40:
         errors.append(f"{row_id}: mercadoria_servico too short for human table")
+    resumo = str(row.get("resumo_operacional", "")).strip()
+    if len(resumo) < 120 or "PIS/Cofins" not in resumo or str(ncm.get("codigo", "")) not in resumo:
+        errors.append(f"{row_id}: resumo_operacional must be human-readable and include NCM/PIS-Cofins")
+    pesquisa = str(row.get("pesquisa_texto", "")).strip()
+    if len(pesquisa) < 180 or str(ncm.get("digitos", "")) not in pesquisa:
+        errors.append(f"{row_id}: pesquisa_texto must support NCM search")
+    leitura = row.get("leitura_humana") if isinstance(row.get("leitura_humana"), dict) else {}
+    if not leitura.get("resposta_curta") or not isinstance(leitura.get("como_validar"), list) or len(leitura.get("como_validar", [])) < 3:
+        errors.append(f"{row_id}: leitura_humana missing resposta_curta/como_validar")
+    if not isinstance(leitura.get("nao_usar_sem"), list) or len(leitura.get("nao_usar_sem", [])) < 3:
+        errors.append(f"{row_id}: leitura_humana missing nao_usar_sem safeguards")
     legal = str(row.get("trecho_legal", ""))
     if len(legal) < 120:
         errors.append(f"{row_id}: trecho_legal too short")

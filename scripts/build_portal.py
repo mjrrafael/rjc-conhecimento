@@ -1804,6 +1804,52 @@ def pis_trim(value: object, limit: int = 520) -> str:
     return text[: limit - 1].rstrip() + "..."
 
 
+def pis_display_label(value: object) -> str:
+    return str(value or "nao especificado").replace("_", " ")
+
+
+def pis_ato_label(row: dict) -> str:
+    ato = row.get("ato_oficial", {}) if isinstance(row.get("ato_oficial"), dict) else {}
+    return f"{ato.get('tipo', '')} {ato.get('numero', '')}".strip() or "ato nao informado"
+
+
+def pis_treatment_label(row_or_value: dict | str) -> str:
+    treatment = row_or_value.get("tratamento", "") if isinstance(row_or_value, dict) else str(row_or_value or "")
+    return PIS_COFINS_TREATMENT_LABELS.get(str(treatment), pis_display_label(treatment))
+
+
+def pis_validity_label(row: dict) -> str:
+    return (
+        f"publicacao {row.get('publicacao')}; vigencia {row.get('inicio_vigencia')}; "
+        f"eficacia {row.get('inicio_eficacia')}; fim {row.get('fim_vigencia') or 'sem fim indicado'}"
+    )
+
+
+def pis_operational_summary(row: dict) -> str:
+    stored = pis_value(row.get("resumo_operacional"), "")
+    if stored:
+        return stored
+    ncm = row.get("ncm", {}) if isinstance(row.get("ncm"), dict) else {}
+    code = str(ncm.get("codigo", "")).strip()
+    treatment = pis_treatment_label(row)
+    setor = pis_display_label(row.get("setor"))
+    operacao = pis_display_label(row.get("operacao"))
+    ato = pis_ato_label(row)
+    descricao = pis_trim(row.get("mercadoria_servico"), 260)
+    return f"NCM {code}: {treatment} de PIS/Cofins em {setor}, operacao {operacao}, conforme {ato}. Recorte legal: {descricao}"
+
+
+def pis_filter_options(rows: list[dict], key: str) -> list[tuple[str, str]]:
+    values = sorted({str(row.get(key, "")).strip() for row in rows if str(row.get(key, "")).strip()})
+    return [(value, pis_treatment_label(value) if key == "tratamento" else pis_display_label(value)) for value in values]
+
+
+def pis_select(name: str, label: str, options: list[tuple[str, str]]) -> str:
+    option_html = [f'<option value="">{escape(label)}</option>']
+    option_html += [f'<option value="{escape(value)}">{escape(display)}</option>' for value, display in options]
+    return f'<select aria-label="{escape(label)}" data-pis-filter="{escape(name)}">{"".join(option_html)}</select>'
+
+
 def pis_ncm_search_text(row: dict) -> str:
     ato = row.get("ato_oficial", {}) if isinstance(row.get("ato_oficial"), dict) else {}
     ncm = row.get("ncm", {}) if isinstance(row.get("ncm"), dict) else {}
@@ -1828,6 +1874,9 @@ def pis_ncm_search_text(row: dict) -> str:
         row.get("vedacoes", []),
         row.get("prova_documental", []),
         row.get("risco", ""),
+        row.get("resumo_operacional", ""),
+        row.get("pesquisa_texto", ""),
+        pis_operational_summary(row),
         row.get("trecho_legal", ""),
         ato.get("tipo", ""),
         ato.get("numero", ""),
@@ -1940,24 +1989,98 @@ def pis_cofins_ncm_table_page(data: dict) -> str:
         ),
     )
     summary = pis_cofins_ncm_summary(rows)
+    treatment_options = pis_filter_options(rows, "tratamento")
+    sector_options = pis_filter_options(rows, "setor")
+    status_options = pis_filter_options(rows, "status")
+    source_options = sorted({(row.get("source_id", ""), pis_ato_label(row)) for row in rows if row.get("source_id")})
+
+    treatment_summary = []
+    for treatment, label in treatment_options:
+        count = sum(1 for row in rows if row.get("tratamento") == treatment)
+        examples = sorted({
+            row.get("ncm", {}).get("codigo", "")
+            for row in rows
+            if row.get("tratamento") == treatment and row.get("ncm", {}).get("codigo")
+        })[:7]
+        treatment_summary.append(f"""
+<button type="button" class="pis-ncm-preset" data-pis-preset="tratamento:{escape(treatment)}">
+  <strong>{escape(label)}</strong>
+  <span>{fmt_num(count)} registros · {escape(', '.join(examples))}</span>
+</button>
+""")
+
+    source_summary = []
+    for source_id, count in sorted(summary.get("by_source", {}).items(), key=lambda item: (-item[1], item[0])):
+        sample = next((row for row in rows if row.get("source_id") == source_id), {})
+        source_summary.append(f"""
+<article class="matrix-card searchable-card" data-search="{escape(source_id + ' ' + pis_ato_label(sample))}">
+  <h3>{escape(pis_ato_label(sample))}</h3>
+  <p>{fmt_num(count)} registros publicados. Fonte: {escape(str(source_id))}.</p>
+</article>
+""")
+
+    record_cards = []
     table_rows = []
     for row in rows:
         ncm = row.get("ncm", {}) if isinstance(row.get("ncm"), dict) else {}
         ato = row.get("ato_oficial", {}) if isinstance(row.get("ato_oficial"), dict) else {}
         vigencia = row.get("vigencia", {}) if isinstance(row.get("vigencia"), dict) else {}
         transition = row.get("transicao_cbs", {}) if isinstance(row.get("transicao_cbs"), dict) else {}
+        leitura = row.get("leitura_humana", {}) if isinstance(row.get("leitura_humana"), dict) else {}
         treatment = row.get("tratamento", "")
-        treatment_label = PIS_COFINS_TREATMENT_LABELS.get(str(treatment), str(treatment).replace("_", " "))
-        validity = (
-            f"publicacao {row.get('publicacao')}; vigencia {row.get('inicio_vigencia')}; "
-            f"eficacia {row.get('inicio_eficacia')}; fim {row.get('fim_vigencia') or 'sem fim indicado'}"
-        )
-        source_label = f"{ato.get('tipo', '')} {ato.get('numero', '')}".strip()
+        treatment_label = pis_treatment_label(row)
+        validity = pis_validity_label(row)
+        source_label = pis_ato_label(row)
+        search_text = pis_ncm_search_text(row)
+        operational_summary = pis_operational_summary(row)
+        card_heading = pis_trim(operational_summary, 420)
+        record_cards.append(f"""
+<article id="card-{escape(str(row.get('id', '')))}"
+         class="pis-ncm-record searchable-card"
+         data-pis-result="card"
+         data-search="{escape(search_text)}"
+         data-tratamento="{escape(str(treatment))}"
+         data-setor="{escape(str(row.get('setor', '')))}"
+         data-status="{escape(str(row.get('status', '')))}"
+         data-source="{escape(str(row.get('source_id', '')))}">
+  <div class="pis-ncm-record-head">
+    <div>
+      <span class="card-kicker">NCM {escape(str(ncm.get('codigo', '')))} · {escape(treatment_label)}</span>
+      <h3>{escape(card_heading)}</h3>
+    </div>
+    <a href="#{escape(str(row.get('id', '')))}">abrir na tabela</a>
+  </div>
+  <dl class="pis-ncm-facts">
+    <div><dt>Setor/aplicacao</dt><dd>{escape(pis_display_label(row.get('setor')))} · {escape(pis_display_label(row.get('aplicacao')))}</dd></div>
+    <div><dt>Operacao/etapa</dt><dd>{escape(pis_display_label(row.get('operacao')))} · {escape(pis_display_label(row.get('etapa_cadeia')))}</dd></div>
+    <div><dt>Status/vigencia</dt><dd>{escape(str(row.get('status', '')))} · {escape(validity)}</dd></div>
+    <div><dt>Ato oficial</dt><dd><a href="{escape(str(ato.get('url', '')))}" target="_blank" rel="noopener">{escape(source_label)}</a> · HTTP {escape(str(ato.get('http_status', '')))}</dd></div>
+    <div><dt>Condicao</dt><dd>{escape(pis_value(row.get('condicoes')))}</dd></div>
+    <div><dt>Prova</dt><dd>{escape(pis_value(row.get('prova_documental')))}</dd></div>
+  </dl>
+  <details class="pis-ncm-details">
+    <summary>Ver trecho legal, vedacao, risco e transicao CBS</summary>
+    <p><strong>Vedacao:</strong> {escape(pis_value(row.get('vedacoes')))}</p>
+    <p><strong>Risco:</strong> {escape(str(row.get('risco', '')))}</p>
+    <p><strong>Como validar:</strong> {escape(pis_value(leitura.get('como_validar')))}</p>
+    <p><strong>Nao usar sem:</strong> {escape(pis_value(leitura.get('nao_usar_sem')))}</p>
+    <p><strong>Transicao CBS:</strong> {escape(str(transition.get('status', '')))} · {escape(str(transition.get('referencia', '')))}</p>
+    <p><strong>Trecho legal:</strong> {escape(pis_trim(row.get('trecho_legal'), 900))}</p>
+  </details>
+</article>
+""")
         table_rows.append(f"""
-<tr id="{escape(str(row.get('id', '')))}" class="searchable-card" data-search="{escape(pis_ncm_search_text(row))}">
+<tr id="{escape(str(row.get('id', '')))}"
+    class="searchable-card"
+    data-pis-result="row"
+    data-search="{escape(search_text)}"
+    data-tratamento="{escape(str(treatment))}"
+    data-setor="{escape(str(row.get('setor', '')))}"
+    data-status="{escape(str(row.get('status', '')))}"
+    data-source="{escape(str(row.get('source_id', '')))}">
   <td><strong>{escape(str(ncm.get('codigo', '')))}</strong><span>{escape(str(ncm.get('nivel', 'NCM')))} · {escape(str(ncm.get('status', '')))}</span></td>
-  <td><strong>{escape(pis_trim(row.get('mercadoria_servico'), 220))}</strong><span>TIPI: {escape(str(ncm.get('descricao_tipi') or ncm.get('tipi_versao') or 'a validar'))}</span></td>
-  <td><strong>{escape(str(row.get('setor', '')).replace('_', ' '))}</strong><span>{escape(str(row.get('aplicacao', '')))} · etapa {escape(str(row.get('etapa_cadeia', '')))}</span></td>
+  <td><strong>{escape(pis_trim(operational_summary, 260))}</strong><span>TIPI: {escape(str(ncm.get('descricao_tipi') or ncm.get('tipi_versao') or 'a validar'))}</span></td>
+  <td><strong>{escape(pis_display_label(row.get('setor')))}</strong><span>{escape(pis_display_label(row.get('aplicacao')))} · etapa {escape(pis_display_label(row.get('etapa_cadeia')))}</span></td>
   <td><strong>{escape(treatment_label)}</strong><span>{escape(', '.join(row.get('tributos', [])))} · {escape(str(row.get('operacao', '')))}</span></td>
   <td><strong>{status_badge(str(row.get('status', '')))}</strong><span>{escape(validity)}</span><span>{escape('vigencia inline: ' + str(vigencia.get('status', '')))}</span></td>
   <td>{escape(pis_value(row.get('condicoes')))}<br><strong>Vedacao:</strong> {escape(pis_value(row.get('vedacoes')))}</td>
@@ -1983,15 +2106,56 @@ def pis_cofins_ncm_table_page(data: dict) -> str:
     <p>Use a busca para localizar o item, mas aplique somente apos conferir artigo, sujeito, etapa da cadeia, regime da empresa, documento fiscal e EFD-Contribuicoes.</p>
   </div>
 </section>
+<section class="content-block pis-ncm-howto">
+  <h2>Como ler sem cair em atalho perigoso</h2>
+  <div class="pis-ncm-steps">
+    <article><strong>1. Comece pelo NCM</strong><span>Use codigo completo, posicao ou descricao. O resultado so aponta o caminho.</span></article>
+    <article><strong>2. Leia o tratamento</strong><span>Monofasico, aliquota zero, credito presumido, suspensao e isencao tem efeitos diferentes.</span></article>
+    <article><strong>3. Confira etapa e operacao</strong><span>Fabricante, importador, varejo, mercado interno ou importacao mudam a conclusao.</span></article>
+    <article><strong>4. Feche com prova</strong><span>Ato oficial, vigencia, documento fiscal e EFD-Contribuicoes sustentam a aplicacao.</span></article>
+  </div>
+</section>
+<section class="content-block pis-ncm-explorer" data-pis-ncm-explorer data-total="{fmt_num(len(rows))}">
+  <div class="section-heading compact">
+    <span class="eyebrow">Consulta guiada</span>
+    <h2>Pesquisar por NCM, descricao, setor, tratamento ou ato</h2>
+    <p>Este campo filtra os cards e a tabela tecnica desta pagina. Exemplos: <code>3004</code>, <code>8708</code>, <code>monofasico</code>, <code>farmaceutico</code>, <code>Lei 10.147</code>.</p>
+  </div>
+  <div class="pis-ncm-query">
+    <label for="pisNcmSearch">Busca dentro da base PIS/Cofins por NCM</label>
+    <input id="pisNcmSearch" type="search" placeholder="Digite NCM, descricao, tratamento, setor, ato ou trecho legal">
+    <button type="button" data-pis-clear>Limpar</button>
+  </div>
+  <div class="pis-ncm-filters">
+    {pis_select('tratamento', 'Todos os tratamentos', treatment_options)}
+    {pis_select('setor', 'Todos os setores', sector_options)}
+    {pis_select('status', 'Todos os status', status_options)}
+    {pis_select('source', 'Todos os atos', source_options)}
+  </div>
+  <div class="pis-ncm-presets" aria-label="Filtros rapidos por tratamento">
+    {''.join(treatment_summary)}
+  </div>
+  <p class="pis-ncm-count"><strong data-pis-count>{fmt_num(len(rows))}</strong> registros visiveis de {fmt_num(len(rows))} publicados.</p>
+  <div class="pis-ncm-card-grid">
+    {''.join(record_cards)}
+  </div>
+</section>
 <section class="content-block inventory-table">
-  <h2>Linhas pesquisaveis</h2>
-  <p>Pesquise por NCM completo ou parcial, descricao, setor, tratamento, operacao, ato, status, prova ou trecho legal. Cada linha carrega seu envelope de validade.</p>
+  <h2>Tabela tecnica completa</h2>
+  <p>A mesma busca acima tambem filtra esta tabela. Ela fica abaixo dos cards para manter leitura humana primeiro e auditoria tecnica logo depois.</p>
+  <details class="pis-ncm-table-details">
+    <summary>Abrir tabela tecnica com todos os campos auditaveis</summary>
   <div class="doc-table-wrap">
     <table class="doc-table ncm-benefits-table">
       <thead><tr><th>NCM</th><th>Descricao legal</th><th>Setor/aplicacao</th><th>Tratamento</th><th>Status e vigencia</th><th>Condicoes</th><th>Prova e risco</th><th>Ato oficial</th><th>Transicao CBS</th><th>Trecho legal</th></tr></thead>
       <tbody>{''.join(table_rows)}</tbody>
     </table>
   </div>
+  </details>
+</section>
+<section class="matrix-section">
+  <h2>Fontes com linhas publicadas</h2>
+  <div class="matrix-grid">{''.join(source_summary)}</div>
 </section>
 <section class="continuity">
   <h2>Continuar a leitura</h2>
@@ -3682,7 +3846,7 @@ def pis_cofins_ncm_full_search_entries() -> list[dict[str, str]]:
         summary = " | ".join(
             part
             for part in (
-                pis_trim(row.get("mercadoria_servico"), 180),
+                pis_trim(row.get("resumo_operacional") or row.get("mercadoria_servico"), 220),
                 f"status {row.get('status', '')}",
                 f"ato {ato.get('tipo', '')} {ato.get('numero', '')}",
             )

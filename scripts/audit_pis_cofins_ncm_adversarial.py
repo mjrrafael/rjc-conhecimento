@@ -51,6 +51,18 @@ def main() -> int:
     expect_failure("short human description", bad, "mercadoria_servico too short")
 
     bad = copy.deepcopy(row)
+    bad["resumo_operacional"] = "regra fiscal"
+    expect_failure("weak operational summary", bad, "resumo_operacional must be human-readable")
+
+    bad = copy.deepcopy(row)
+    bad["pesquisa_texto"] = "sem codigo pesquisavel"
+    expect_failure("weak search text", bad, "pesquisa_texto must support NCM search")
+
+    bad = copy.deepcopy(row)
+    bad["leitura_humana"] = {"resposta_curta": "ok"}
+    expect_failure("weak human reading", bad, "leitura_humana missing resposta_curta/como_validar")
+
+    bad = copy.deepcopy(row)
     bad["provenance"]["origem"] = "keyword_only"
     expect_failure("keyword-only provenance", bad, "provenance must be ato_oficial")
 
@@ -66,7 +78,7 @@ def main() -> int:
     if not errors:
         raise AssertionError("date/article-like code should not pass with short legal excerpt")
 
-    print(json.dumps({"status": "OK", "adversarial_cases": 8}, ensure_ascii=False))
+    print(json.dumps({"status": "OK", "adversarial_cases": 11}, ensure_ascii=False))
     return 0
 
 

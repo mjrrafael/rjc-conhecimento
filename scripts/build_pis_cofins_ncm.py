@@ -352,6 +352,25 @@ def clean(value: object) -> str:
     return " ".join(str(value or "").split())
 
 
+TREATMENT_LABELS = {
+    "aliquota_zero": "aliquota zero",
+    "monofasico": "monofasico",
+    "credito_presumido": "credito presumido",
+    "suspensao": "suspensao",
+    "isencao": "isencao",
+    "coeficiente_reducao": "coeficiente/reducao",
+    "tratamento_especifico": "tratamento especifico",
+}
+
+
+def display(value: object) -> str:
+    return clean(str(value or "nao especificado").replace("_", " "))
+
+
+def treatment_label_for(treatment: str) -> str:
+    return TREATMENT_LABELS.get(treatment, display(treatment))
+
+
 def compact(value: str, limit: int = 900) -> str:
     text = clean(value)
     if len(text) <= limit:
@@ -583,12 +602,61 @@ def build_rows_for_source(spec: SourceSpec, status: int | str, text: str, raw_ha
             continue
         for code in codes:
             treatment = treatment_for(excerpt, spec)
+            sector = sector_for(spec, excerpt)
+            operation = operation_for(excerpt)
+            chain_stage = chain_stage_for(excerpt)
             status_label = status_for(spec, excerpt)
             confidence = confidence_for(excerpt, spec, code)
             row_hash = hashlib.sha1(
                 "|".join([spec.source_id, str(seq), ncm_digits(code), treatment, excerpt[:220]]).encode("utf-8")
             ).hexdigest()[:16]
             source_line = sentence_for_code(excerpt, code)
+            resumo_operacional = compact(
+                " ".join([
+                    f"NCM {code} ({ncm_level(code)}) com {treatment_label_for(treatment)} de PIS/Cofins.",
+                    f"Setor {display(sector)}; operacao {display(operation)}; etapa da cadeia {display(chain_stage)}.",
+                    f"Fonte primaria {spec.tipo} {spec.numero}.",
+                    "Aplicar somente se produto, sujeito, etapa, operacao e documento fiscal coincidirem com o dispositivo legal.",
+                    f"Recorte legal: {source_line}",
+                ]),
+                900,
+            )
+            leitura_humana = {
+                "pergunta_de_uso": "Este NCM tem tratamento de PIS/Cofins diferente da regra habitual?",
+                "resposta_curta": resumo_operacional,
+                "como_validar": [
+                    "Conferir o NCM/TIPI no cadastro do produto e no documento fiscal.",
+                    "Ler o trecho legal, o artigo e o ato oficial primario antes de aplicar.",
+                    "Conferir sujeito, etapa da cadeia, operacao, CST e EFD-Contribuicoes.",
+                    "Nao aplicar se houver divergencia de produto, destinatario, finalidade ou periodo.",
+                ],
+                "nao_usar_sem": [
+                    "fonte oficial primaria HTTP 200",
+                    "envelope de vigencia e eficacia",
+                    "documento fiscal/XML ou documento de importacao quando aplicavel",
+                    "memoria de enquadramento por produto",
+                ],
+            }
+            pesquisa_texto = compact(
+                " ".join([
+                    code,
+                    ncm_digits(code),
+                    ncm_level(code),
+                    resumo_operacional,
+                    spec.tipo,
+                    spec.numero,
+                    spec.titulo,
+                    spec.source_id,
+                    sector,
+                    operation,
+                    chain_stage,
+                    treatment,
+                    status_label,
+                    source_line,
+                    excerpt,
+                ]),
+                2600,
+            )
             row = {
                 "schema": "rjc-pis-cofins-ncm-v1",
                 "id": f"pcncm-{row_hash}",
@@ -604,12 +672,15 @@ def build_rows_for_source(spec: SourceSpec, status: int | str, text: str, raw_ha
                     "ex": "Ex" if re.search(rf"{re.escape(code)}\s+Ex", excerpt, re.I) else None,
                 },
                 "mercadoria_servico": source_line,
-                "setor": sector_for(spec, excerpt),
-                "aplicacao": operation_for(excerpt),
+                "resumo_operacional": resumo_operacional,
+                "pesquisa_texto": pesquisa_texto,
+                "leitura_humana": leitura_humana,
+                "setor": sector,
+                "aplicacao": operation,
                 "tratamento": treatment,
                 "tributos": ["PIS/Pasep", "Cofins"],
-                "operacao": operation_for(excerpt),
-                "etapa_cadeia": chain_stage_for(excerpt),
+                "operacao": operation,
+                "etapa_cadeia": chain_stage,
                 "regime_sujeito": "conforme_dispositivo_legal",
                 "aliquota": {
                     "tipo": "zero" if treatment == "aliquota_zero" else treatment,
@@ -730,10 +801,13 @@ def build_index(rows: list[dict], quarantine: list[dict], inventory: list[dict])
                 "ncm": row["ncm"]["codigo"],
                 "ncm_digits": row["ncm"]["digitos"],
                 "descricao": row["mercadoria_servico"],
+                "resumo_operacional": row["resumo_operacional"],
+                "pesquisa_texto": row["pesquisa_texto"],
                 "setor": row["setor"],
                 "tratamento": row["tratamento"],
                 "operacao": row["operacao"],
                 "status": row["status"],
+                "validity_status": row["validity_status"],
                 "ato": f"{row['ato_oficial']['tipo']} {row['ato_oficial']['numero']}",
                 "url": row["ato_oficial"]["url"],
                 "verificado_em": row["verificado_em"],
