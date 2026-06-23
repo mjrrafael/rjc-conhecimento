@@ -208,6 +208,8 @@ Status:
 
 ## Publicacao
 
-- Branch prevista: `feat/busca-ncm`.
+- Branch publicada: `feat/busca-ncm`.
+- Commit: `018994c` (`feat: integra busca produto ncm cowork`).
+- PR: https://github.com/mjrrafael/rjc-conhecimento/pull/16
 - Politica aplicavel: conteudo/dados via PR; nada publicado direto em `main`.
-- PR deve citar re-selo Planalto, hashes, Produto/NCM A_VALIDAR e pendencias SEFAZ/cBenef.
+- PR cita re-selo Planalto, hashes, Produto/NCM A_VALIDAR e pendencias SEFAZ/cBenef.
