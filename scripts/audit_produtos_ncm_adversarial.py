@@ -17,6 +17,7 @@ from audit_produtos_ncm import (  # noqa: E402
     UF_PLAN,
     load_json,
     validate_corpus,
+    validate_no_local_paths,
     validate_payloads,
     validate_product,
     validate_source,
@@ -74,7 +75,11 @@ def main() -> int:
 
     bad_corpus = copy.deepcopy(corpus)
     bad_corpus["entries"][0]["storage"]["path"] = r"G:\vaza\fonte.txt"
-    expect_failure("absolute path leak", validate_corpus(bad_corpus), "leaks an absolute local drive path")
+    expect_failure("absolute path leak", validate_no_local_paths("bad corpus", bad_corpus), "leaks an absolute local drive path")
+
+    bad_corpus = copy.deepcopy(corpus)
+    bad_corpus["entries"][0]["storage"]["source_relative_path"] = "Outros computadores/LOCALHOST/fonte.txt"
+    expect_failure("local marker leak", validate_no_local_paths("bad corpus", bad_corpus), "leaks local environment markers")
 
     bad_plan = copy.deepcopy(uf_plan)
     first_non_go = next(row for row in bad_plan["ufs"] if row["uf"] != "GO")
@@ -94,7 +99,7 @@ def main() -> int:
         "unknown source id fonte_inventada",
     )
 
-    print(json.dumps({"status": "OK", "adversarial_cases": 11}, ensure_ascii=False))
+    print(json.dumps({"status": "OK", "adversarial_cases": 12}, ensure_ascii=False))
     return 0
 
 

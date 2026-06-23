@@ -213,3 +213,13 @@ Status:
 - PR: https://github.com/mjrrafael/rjc-conhecimento/pull/16
 - Politica aplicavel: conteudo/dados via PR; nada publicado direto em `main`.
 - PR cita re-selo Planalto, hashes, Produto/NCM A_VALIDAR e pendencias SEFAZ/cBenef.
+
+## Correcao pos-publicacao - sanitizacao de caminhos locais
+
+- Achado adversarial: verificacao HTTP publica detectou `snapshot_path` absoluto do ambiente `G:\...` no NDJSON `data/reforma-tributaria/reselo-lc214-lc224-lc227.ndjson`.
+- Impacto: vazamento de caminho local; nao alterava o status legal dos registros, mas violava higiene de publicacao de dados.
+- Correcao aplicada: `scripts/import_cowork_portal_package.py` passou a converter `snapshot_path` em `snapshot_file` e a redigir `source_root` do manifesto como `#codex`.
+- Gate novo: `scripts/audit_produtos_ncm.py` bloqueia drive absoluto e marcadores sensiveis (`Outros computadores`, `LOCALHOST`, `#administra`) nos datasets publicos Produto/NCM, corpus, manifesto e re-selo.
+- Passe adversarial atualizado: `scripts/audit_produtos_ncm_adversarial.py` subiu para 12 casos, incluindo vazamento de drive e marcador local.
+- Evidencia: `rg -n "[A-Z]:[\\/]|Outros computadores|LOCALHOST|#administra" data/produtos-ncm data/reforma-tributaria data/cowork data/corpus-local produto.html llms.txt assets/portal-search-full.json` retornou exit `1` sem matches.
+- Gates reexecutados: bateria canonica completa com exit `0`; `audit_link_health.py` manteve apenas soft warnings e nenhum 404/410.

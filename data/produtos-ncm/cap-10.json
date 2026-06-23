@@ -1,6 +1,6 @@
 {
   "schema": "rjc-produto-ncm-chapter-v1",
-  "generated_at": "2026-06-22T21:30:49-03:00",
+  "generated_at": "2026-06-22T21:49:49-03:00",
   "chapter": "10",
   "chapter_title": "Cereais",
   "source": "Cowork/Bruno + re-selo Planalto Sofia 2026-06-22",
@@ -113,21 +113,21 @@
           "url": "https://www.planalto.gov.br/ccivil_03/_ato2004-2006/2004/lei/l10.925.htm",
           "http_status": 200,
           "snapshot_sha256": "08abfce2984d16c3e5e95a995759dcb677c34576791dd2119940608f2c03c67d",
-          "live_sha256": "e0a0c499999dacf3c24694ca706b6390f0326db42c12588c17231c57c796cdb8"
+          "live_sha256": "e537e4aa538834a0cffedfb0d66abd7361fd4cc051316aef6687743e822779ff"
         },
         {
           "id": "lc224_2025",
           "url": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp224.htm",
           "http_status": 200,
           "snapshot_sha256": "450b76a97ba4cc40eb4f07263cadb145320dc0f539ad8526b3a8d711249c0611",
-          "live_sha256": "6be89451edf0ef25c89891e2faf27341fa09c6deae5e48014a185611f71233ad"
+          "live_sha256": "acb51c0cec21296608590be55b0b62d1c75618fb68c1dc2e44022d247d34798c"
         },
         {
           "id": "lc214_2025",
           "url": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp214.htm",
           "http_status": 200,
           "snapshot_sha256": "276ee6ba1da661057331ac8e6c059c6b73d53f62ab90bdbaed91345e1170fc91",
-          "live_sha256": "57e18fe4ede6d5a928c3dac392c22aa04509ee1496495d8dadb3f983a76720dd"
+          "live_sha256": "09b53ba9dfeae55f2368db8d64f0d4f3f483a1ffff8524bae1c57a3414f66a8d"
         }
       ],
       "source_records": {
