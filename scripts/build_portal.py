@@ -3018,18 +3018,23 @@ def confaz_5y_page(data: dict) -> str:
         year_cards = []
         for year in family.get("years", []):
             acts = year.get("acts", [])
+            visible_acts = list(reversed(acts[-12:]))
             act_links = "".join(
                 f'<a href="{escape(act.get("url", ""))}" target="_blank" rel="noopener">{escape(act.get("title", "") or act.get("url", "").rsplit("/", 1)[-1])}</a>'
-                for act in acts[:12]
+                for act in visible_acts
             )
             if not act_links:
                 act_links = "<span>Sem atos capturados nesta rodada no indice consultado.</span>"
             error = f'<p class="source-warning">Captura pendente: {escape(year.get("fetch_error", ""))}</p>' if year.get("fetch_error") else ""
+            search_terms = " ".join(
+                [family.get("title", ""), str(year.get("year", ""))]
+                + [f"{act.get('title', '')} {act.get('url', '')}" for act in acts]
+            )
             year_cards.append(f"""
-<article class="portal-card searchable-card" data-search="{escape(family.get('title', '') + ' ' + str(year.get('year', '')) + ' ' + ' '.join(a.get('url', '') for a in acts))}">
+<article class="portal-card searchable-card" data-search="{escape(search_terms)}">
   <span class="card-kicker">{escape(str(year.get('year', '')))} · {fmt_num(year.get('count', 0))} atos</span>
   <h3>{escape(family.get('title', ''))}</h3>
-  <p>Indice oficial do CONFAZ para leitura, classificacao e futura captura integral em tela.</p>
+  <p>Indice oficial do CONFAZ para leitura, classificacao e futura captura integral em tela. A lista abaixo mostra os atos mais recentes capturados.</p>
   {error}
   <div class="mini-link-list">{act_links}</div>
   <small><a href="{escape(year.get('index_url', ''))}" target="_blank" rel="noopener">abrir indice oficial</a></small>
@@ -4285,6 +4290,38 @@ def produtos_ncm_full_search_entries() -> list[dict[str, str]]:
     return entries
 
 
+def confaz_search_entries() -> list[dict[str, str]]:
+    entries: list[dict[str, str]] = []
+    confaz = master_bundle()["confaz"]
+    for family_id, family in confaz.get("families", {}).items():
+        for year in family.get("years", []):
+            for act in year.get("acts", []):
+                title = act.get("title", "") or act.get("url", "").rsplit("/", 1)[-1]
+                official_url = act.get("url", "")
+                text = " ".join(
+                    [
+                        title,
+                        official_url,
+                        family.get("title", ""),
+                        family_id,
+                        str(year.get("year", "")),
+                        " ".join(act.get("themes", [])),
+                    ]
+                )
+                entries.append({
+                    "title": f"{title} · CONFAZ",
+                    "url": f"confaz/ultimos-5-anos.html#{family_id}",
+                    "summary": f"{family.get('title', 'Ato CONFAZ')} de {year.get('year', '')}. Fonte oficial: {official_url}",
+                    "tags": compact_search_terms(text),
+                    "body": search_body(text, 600),
+                    "kind": "Ato CONFAZ",
+                    "jurisdiction": "CONFAZ",
+                    "tax": "ICMS",
+                    "theme": family.get("title", "CONFAZ"),
+                })
+    return entries
+
+
 def full_text_search_entries() -> list[dict[str, str]]:
     entries: list[dict[str, str]] = []
     for html_path in iter_public_html_files():
@@ -4453,6 +4490,7 @@ def search_index(data: dict) -> str:
         }
         for item in data["library"]
     ]
+    entries += confaz_search_entries()
     payload = json.dumps(entries, ensure_ascii=False, indent=2)
     return "window.RJC_SEARCH = " + payload + ";\n"
 
@@ -4649,6 +4687,7 @@ def write_build_freshness() -> None:
         "assets/portal-tributario.js",
         "data/benefits_crosswalk.json",
         "data/ncm_benefits_index.json",
+        "data/confaz_ultimos_5_anos.json",
         "produto.html",
         "data/produtos-ncm/index.json",
         "data/produtos-ncm/cap-10.json",
@@ -4785,7 +4824,7 @@ def main() -> None:
         write(state_legal_path, state_legal_content)
     normalize_legacy_editorial_dates()
     write("assets/portal-search.js", search_index(data))
-    write("assets/portal-search-full.json", json.dumps(full_text_search_entries() + benefit_full_search_entries() + ncm_full_search_entries() + pis_cofins_ncm_full_search_entries() + produtos_ncm_full_search_entries(), ensure_ascii=False, separators=(",", ":")))
+    write("assets/portal-search-full.json", json.dumps(full_text_search_entries() + confaz_search_entries() + benefit_full_search_entries() + ncm_full_search_entries() + pis_cofins_ncm_full_search_entries() + produtos_ncm_full_search_entries(), ensure_ascii=False, separators=(",", ":")))
     write_discovery_files()
     write_build_freshness()
     print("Portal generated successfully.")

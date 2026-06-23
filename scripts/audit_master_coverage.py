@@ -146,6 +146,19 @@ def main() -> int:
             continue
         if len(families[family_id].get("years", [])) != 5:
             errors.append(f"familia CONFAZ sem 5 anos: {family_id}")
+    protocolo_2026 = next(
+        (
+            year
+            for year in families.get("protocolos", {}).get("years", [])
+            if year.get("year") == 2026
+        ),
+        {},
+    )
+    protocolo_2026_titles = {act.get("title") for act in protocolo_2026.get("acts", [])}
+    if protocolo_2026.get("count", 0) < 52:
+        errors.append("protocolos CONFAZ 2026 parecem desatualizados: esperado ao menos 52 atos oficiais")
+    if "PROTOCOLO ICMS 52/26" not in protocolo_2026_titles:
+        errors.append("PROTOCOLO ICMS 52/26 ausente do indice CONFAZ 2026")
 
     print(f"Requisitos federais auditados: {len(federal)}")
     print(f"Estados auditados: {len(states)}")

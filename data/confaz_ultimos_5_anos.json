@@ -1,6 +1,6 @@
 {
   "schema": "rjc-confaz-5y-index-v2",
-  "generated_on": "2026-06-15",
+  "generated_on": "2026-06-23",
   "years": [
     2022,
     2023,
@@ -7550,7 +7550,7 @@
         {
           "year": 2022,
           "index_url": "https://www.confaz.fazenda.gov.br/legislacao/protocolos/2022",
-          "count": 104,
+          "count": 106,
           "fetch_error": "",
           "acts": [
             {
@@ -7752,6 +7752,13 @@
             {
               "title": "PROTOCOLO ICMS 29/22",
               "url": "https://www.confaz.fazenda.gov.br/legislacao/protocolos/2022/pt029_22",
+              "themes": [
+                "a_classificar"
+              ]
+            },
+            {
+              "title": "PROTOCOLO ICMS 12/22 - RETIFICAÇÃO",
+              "url": "https://www.confaz.fazenda.gov.br/legislacao/protocolos/2022/protocolo-icms-12-22-retificacao",
               "themes": [
                 "a_classificar"
               ]
@@ -8270,6 +8277,13 @@
             {
               "title": "PROTOCOLO ICMS 100/22",
               "url": "https://www.confaz.fazenda.gov.br/legislacao/protocolos/2022/pt100_22",
+              "themes": [
+                "a_classificar"
+              ]
+            },
+            {
+              "title": "PROTOCOLO ICMS 94/22 - RETIFICAÇÃO",
+              "url": "https://www.confaz.fazenda.gov.br/legislacao/protocolos/2022/protocolo-icms-94-22-retificacao",
               "themes": [
                 "a_classificar"
               ]
@@ -9549,7 +9563,7 @@
         {
           "year": 2026,
           "index_url": "https://www.confaz.fazenda.gov.br/legislacao/protocolos/2026",
-          "count": 37,
+          "count": 53,
           "fetch_error": "",
           "acts": [
             {
@@ -9810,11 +9824,123 @@
               "themes": [
                 "a_classificar"
               ]
+            },
+            {
+              "title": "PROTOCOLO ICMS 37/26",
+              "url": "https://www.confaz.fazenda.gov.br/legislacao/protocolos/2026/protocolo-icms-37-26",
+              "themes": [
+                "a_classificar"
+              ]
+            },
+            {
+              "title": "PROTOCOLO ICMS 38/26",
+              "url": "https://www.confaz.fazenda.gov.br/legislacao/protocolos/2026/protocolo-icms-38-26",
+              "themes": [
+                "a_classificar"
+              ]
+            },
+            {
+              "title": "PROTOCOLO ICMS 39/26",
+              "url": "https://www.confaz.fazenda.gov.br/legislacao/protocolos/2026/protocolo-icms-39-26",
+              "themes": [
+                "a_classificar"
+              ]
+            },
+            {
+              "title": "PROTOCOLO ICMS 40/26",
+              "url": "https://www.confaz.fazenda.gov.br/legislacao/protocolos/2026/protocolo-icms-40-26",
+              "themes": [
+                "a_classificar"
+              ]
+            },
+            {
+              "title": "PROTOCOLO ICMS 41/26",
+              "url": "https://www.confaz.fazenda.gov.br/legislacao/protocolos/2026/protocolo-icms-41-26",
+              "themes": [
+                "a_classificar"
+              ]
+            },
+            {
+              "title": "PROTOCOLO ICMS 42/26",
+              "url": "https://www.confaz.fazenda.gov.br/legislacao/protocolos/2026/protocolo-icms-42-26",
+              "themes": [
+                "a_classificar"
+              ]
+            },
+            {
+              "title": "PROTOCOLO ICMS 43/26",
+              "url": "https://www.confaz.fazenda.gov.br/legislacao/protocolos/2026/protocolo-icms-43-26",
+              "themes": [
+                "a_classificar"
+              ]
+            },
+            {
+              "title": "PROTOCOLO ICMS 44/26",
+              "url": "https://www.confaz.fazenda.gov.br/legislacao/protocolos/2026/protocolo-icms-44-26",
+              "themes": [
+                "a_classificar"
+              ]
+            },
+            {
+              "title": "PROTOCOLO ICMS 45/26",
+              "url": "https://www.confaz.fazenda.gov.br/legislacao/protocolos/2026/protocolo-icms-45-26",
+              "themes": [
+                "a_classificar"
+              ]
+            },
+            {
+              "title": "PROTOCOLO ICMS 46/26",
+              "url": "https://www.confaz.fazenda.gov.br/legislacao/protocolos/2026/protocolo-icms-46-26",
+              "themes": [
+                "a_classificar"
+              ]
+            },
+            {
+              "title": "PROTOCOLO ICMS 47/26",
+              "url": "https://www.confaz.fazenda.gov.br/legislacao/protocolos/2026/protocolo-icms-47-26",
+              "themes": [
+                "a_classificar"
+              ]
+            },
+            {
+              "title": "PROTOCOLO ICMS 48/26",
+              "url": "https://www.confaz.fazenda.gov.br/legislacao/protocolos/2026/protocolo-icms-48-26",
+              "themes": [
+                "a_classificar"
+              ]
+            },
+            {
+              "title": "PROTOCOLO ICMS 49/26",
+              "url": "https://www.confaz.fazenda.gov.br/legislacao/protocolos/2026/protocolo-icms-49-26",
+              "themes": [
+                "a_classificar"
+              ]
+            },
+            {
+              "title": "PROTOCOLO ICMS 50/26",
+              "url": "https://www.confaz.fazenda.gov.br/legislacao/protocolos/2026/protocolo-icms-50-26",
+              "themes": [
+                "a_classificar"
+              ]
+            },
+            {
+              "title": "PROTOCOLO ICMS 51/26",
+              "url": "https://www.confaz.fazenda.gov.br/legislacao/protocolos/2026/protocolo-icms-51-26",
+              "themes": [
+                "a_classificar"
+              ]
+            },
+            {
+              "title": "PROTOCOLO ICMS 52/26",
+              "url": "https://www.confaz.fazenda.gov.br/legislacao/protocolos/2026/protocolo-icms-52-26",
+              "themes": [
+                "a_classificar"
+              ]
             }
           ]
         }
       ],
-      "total": 318
+      "total": 336
     }
   }
 }
