@@ -59,6 +59,7 @@ def main() -> int:
         "assets/portal-tributario.js",
         "data/benefits_crosswalk.json",
         "data/ncm_benefits_index.json",
+        "data/confaz_ultimos_5_anos.json",
         "produto.html",
         "data/produtos-ncm/index.json",
         "data/produtos-ncm/cap-10.json",

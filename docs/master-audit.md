@@ -1,6 +1,6 @@
 # Auditoria Mestre v2
 
-Gerado em 2026-06-15.
+Gerado em 2026-06-23.
 
 Este arquivo resume cobertura e cruzamentos do Portal RJC Tributario Aberto. Ele e uma trilha de auditoria, nao um parecer tributario.
 
@@ -77,4 +77,4 @@ Este arquivo resume cobertura e cruzamentos do Portal RJC Tributario Aberto. Ele
 | --- | ---: | --- |
 | Convenios ICMS | 880 | https://www.confaz.fazenda.gov.br/legislacao/convenios |
 | Ajustes SINIEF | 161 | https://www.confaz.fazenda.gov.br/legislacao/ajustes |
-| Protocolos ICMS | 318 | https://www.confaz.fazenda.gov.br/legislacao/protocolos |
+| Protocolos ICMS | 336 | https://www.confaz.fazenda.gov.br/legislacao/protocolos |

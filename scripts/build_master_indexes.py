@@ -212,7 +212,7 @@ CONFaz_FAMILIES = {
     "protocolos": {
         "title": "Protocolos ICMS",
         "base_url": "https://www.confaz.fazenda.gov.br/legislacao/protocolos",
-        "pattern": r"/legislacao/protocolos/(?P<year>20\d{2})/(?:PT|ICMS|PROTOCOLO|pt)\w+",
+        "pattern": r"/legislacao/protocolos/(?:20\d{2})/(?:PT|pt)\d+_\d+|/legislacao/protocolos/(?:20\d{2})/protocolo-icms-\d+-\d+(?:-[a-z0-9-]+)?",
     },
 }
 
