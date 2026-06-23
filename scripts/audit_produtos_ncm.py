@@ -12,17 +12,21 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 INDEX = ROOT / "data" / "produtos-ncm" / "index.json"
 CAP10 = ROOT / "data" / "produtos-ncm" / "cap-10.json"
+NCM_BENEFITS_INDEX = ROOT / "data" / "ncm_benefits_index.json"
 CORPUS = ROOT / "data" / "corpus-local" / "legal_sources_registry.json"
 UF_PLAN = ROOT / "data" / "corpus-local" / "uf-sealing-plan.json"
 PROJECT_MANIFEST = ROOT / "data" / "cowork" / "portal-package-manifest.json"
 REFORMA_RESELO = ROOT / "data" / "reforma-tributaria" / "reselo-lc214-lc224-lc227.ndjson"
 HTML = ROOT / "produto.html"
+PRODUCT_JS = ROOT / "assets" / "portal-tributario.js"
 SEARCH_FULL = ROOT / "assets" / "portal-search-full.json"
 LLMS = ROOT / "llms.txt"
 
 SHA_RE = re.compile(r"^[0-9a-f]{64}$")
 ABSOLUTE_DRIVE_RE = re.compile(r"\b[A-Z]:[\\/]", re.I)
 LOCAL_ENV_RE = re.compile(r"(Outros computadores|LOCALHOST|#administra)", re.I)
+MIN_REAL_NCM_ROWS = 1000
+MIN_REAL_NCM_UNIQUE = 500
 
 
 def load_json(path: Path) -> object:
@@ -124,20 +128,82 @@ def validate_uf_plan(plan: dict) -> list[str]:
     return errors
 
 
-def validate_rendered_outputs() -> list[str]:
+def validate_real_ncm_index(payload: dict) -> list[str]:
+    errors: list[str] = []
+    if payload.get("schema") != "rjc-ncm-benefits-index-v1":
+        errors.append("NCM benefits index schema invalid")
+    rows = payload.get("rows", [])
+    summary = payload.get("summary", {})
+    if not isinstance(rows, list) or len(rows) < MIN_REAL_NCM_ROWS:
+        errors.append(f"NCM benefits index too small for Produto/NCM search: {len(rows) if isinstance(rows, list) else 0}")
+        return errors
+    if int(summary.get("unique_ncm", 0) or 0) < MIN_REAL_NCM_UNIQUE:
+        errors.append("NCM benefits index has too few unique NCM codes")
+    if not any(
+        isinstance(row, dict)
+        and str(row.get("ncm_digits", "")) == "100620"
+        and "arroz" in json.dumps(row, ensure_ascii=False).lower()
+        and str(row.get("official_url", "")).startswith("https://")
+        for row in rows
+    ):
+        errors.append("NCM benefits index missing real arroz 1006.20 row with official URL")
+    required = {"id", "ncm", "ncm_digits", "jurisdiction", "tax", "benefit_type", "legal_basis", "official_url", "sha256"}
+    for row in rows[:200]:
+        if not isinstance(row, dict):
+            errors.append("NCM benefits index contains non-object row")
+            continue
+        missing = sorted(required - set(row))
+        if missing:
+            errors.append(f"NCM benefits row missing required fields: {missing}")
+    return errors
+
+
+def validate_rendered_outputs(ncm_index: dict | None = None) -> list[str]:
     errors: list[str] = []
     if not HTML.exists():
         errors.append("produto.html missing")
         return errors
     html = HTML.read_text(encoding="utf-8", errors="ignore")
-    for token in ("data-product-ncm-explorer", "produto-arroz-ncm-1006", "A_VALIDAR", "1006.20", "1006.40.00"):
+    for token in (
+        "data-product-ncm-explorer",
+        "produto-arroz-ncm-1006",
+        "A_VALIDAR",
+        "1006.20",
+        "1006.40.00",
+        "NCM x benefício",
+        'data-product-dataset="data/ncm_benefits_index.json"',
+        "data-product-results",
+        "data/ncm_benefits_index.json",
+        "beneficios/ncm.html#ncm-",
+    ):
         if token not in html:
             errors.append(f"produto.html missing {token}")
+    rendered_results = len(re.findall(r"\bdata-product-result\b", html))
+    expected_rows = 0
+    if isinstance(ncm_index, dict) and isinstance(ncm_index.get("rows"), list):
+        expected_rows = len(ncm_index["rows"])
+    if rendered_results < 10:
+        errors.append(f"produto.html renders too few real sample records before JS load: {rendered_results}")
+    if expected_rows and f"Base técnica: {expected_rows:,}".replace(",", ".") not in html:
+        errors.append("produto.html does not disclose the full NCM dataset size")
+    if "1 produto(s) e 3 codigo(s) NCM no seed inicial" in html:
+        errors.append("produto.html still exposes seed-only summary")
+    js = PRODUCT_JS.read_text(encoding="utf-8", errors="ignore") if PRODUCT_JS.exists() else ""
+    for token in ("fetch(datasetUrl", "payload.rows", "rowCard(row)", "data-product-results"):
+        if token not in js:
+            errors.append(f"assets/portal-tributario.js missing dynamic Produto/NCM loader token {token}")
     search = load_json(SEARCH_FULL) if SEARCH_FULL.exists() else []
     if not any(isinstance(item, dict) and item.get("url") == "produto.html#produto-arroz-ncm-1006" for item in search):
         errors.append("Produto/NCM entry missing from full search")
+    if not any(
+        isinstance(item, dict)
+        and str(item.get("url", "")).startswith("beneficios/ncm.html#")
+        and "1006.20" in json.dumps(item, ensure_ascii=False)
+        for item in search
+    ):
+        errors.append("real NCM 1006.20 entry missing from full search")
     llms = LLMS.read_text(encoding="utf-8", errors="ignore") if LLMS.exists() else ""
-    for token in ("Produto/NCM", "data/produtos-ncm/index.json", "data/corpus-local/legal_sources_registry.json"):
+    for token in ("Produto/NCM", "data/produtos-ncm/index.json", "data/ncm_benefits_index.json", "data/corpus-local/legal_sources_registry.json"):
         if token not in llms:
             errors.append(f"llms.txt missing {token}")
     return errors
@@ -169,19 +235,22 @@ def validate_payloads(index: dict, cap10: dict, corpus: dict, uf_plan: dict) -> 
 
 def main() -> int:
     errors: list[str] = []
-    required = [INDEX, CAP10, CORPUS, UF_PLAN, PROJECT_MANIFEST, REFORMA_RESELO]
+    required = [INDEX, CAP10, NCM_BENEFITS_INDEX, CORPUS, UF_PLAN, PROJECT_MANIFEST, REFORMA_RESELO]
     for path in required:
         if not path.exists():
             errors.append(f"{path.relative_to(ROOT)} missing")
+    ncm_index: dict | None = None
     if not errors:
         index = load_json(INDEX)
         cap10 = load_json(CAP10)
+        ncm_index = load_json(NCM_BENEFITS_INDEX)
         corpus = load_json(CORPUS)
         uf_plan = load_json(UF_PLAN)
         project_manifest = load_json(PROJECT_MANIFEST)
         reforma_rows = load_ndjson(REFORMA_RESELO)
-        if all(isinstance(obj, dict) for obj in (index, cap10, corpus, uf_plan)):
+        if all(isinstance(obj, dict) for obj in (index, cap10, ncm_index, corpus, uf_plan)):
             errors.extend(validate_payloads(index, cap10, corpus, uf_plan))
+            errors.extend(validate_real_ncm_index(ncm_index))
         else:
             errors.append("one or more product/corpus payloads are not JSON objects")
         payloads = {
@@ -194,7 +263,7 @@ def main() -> int:
         }
         for name, payload in payloads.items():
             errors.extend(validate_no_local_paths(name, payload))
-    errors.extend(validate_rendered_outputs())
+    errors.extend(validate_rendered_outputs(ncm_index))
     if errors:
         print("Falhas na auditoria Produto/NCM:")
         for error in errors:

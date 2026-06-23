@@ -58,12 +58,12 @@
 
 <section class="law-ledger">
   <div>
-    <h2>Produtos</h2>
-    <p>1 produto(s) e 3 código(s) NCM no seed inicial. A primeira trilha e arroz.</p>
+    <h2>Consulta real</h2>
+    <p>7.050 linhas NCM x benefício carregadas do índice técnico, com 1.441 NCM únicos e 15 jurisdições.</p>
   </div>
   <div>
-    <h2>Fontes oficiais</h2>
-    <p>4 fontes Planalto carregadas; 4 responderam HTTP 200 na importação.</p>
+    <h2>Seed federal</h2>
+    <p>1 trilha(s) re-selada(s) do pacote Cowork; arroz permanece A_VALIDAR até envelope temporal completo.</p>
   </div>
   <div>
     <h2>Regra #0</h2>
@@ -77,23 +77,555 @@
     <p>Esta tela pesquisa NCM, descrição, tributo e ato oficial. Ela mostra evidencias e pendencias; não transforma o seed em benefício vigente.</p>
   </div>
   <div class="pis-ncm-entry-actions">
-    <a href="#consulta-produto-ncm">Pesquisar arroz / NCM 1006</a>
-    <a href="data/produtos-ncm/index.json">Baixar índice Produto/NCM</a>
+    <a href="#consulta-produto-ncm">Pesquisar NCM/produto agora</a>
+    <a href="beneficios/ncm.html">Abrir lista técnica completa</a>
+    <a href="data/ncm_benefits_index.json">Baixar NCM x benefícios JSON</a>
     <a href="data/corpus-local/legal_sources_registry.json">Ver corpus local amarelo</a>
   </div>
 </section>
-<section id="consulta-produto-ncm" class="content-block pis-ncm-explorer product-ncm-explorer" data-product-ncm-explorer>
+<section id="consulta-produto-ncm" class="content-block pis-ncm-explorer product-ncm-explorer" data-product-ncm-explorer data-product-dataset="data/ncm_benefits_index.json" data-product-total="7.050">
   <div class="section-heading compact">
     <span class="eyebrow">Consulta guiada</span>
     <h2>Pesquisar por produto, NCM, tributo, ato ou status</h2>
-    <p>Exemplos: <code>arroz</code>, <code>1006.20</code>, <code>10064000</code>, <code>LC 224</code>, <code>A_VALIDAR</code>.</p>
+    <p>Exemplos: <code>arroz</code>, <code>1006.20</code>, <code>2711.21.00</code>, <code>MG ICMS</code>, <code>crédito presumido</code>, <code>LC 224</code>.</p>
   </div>
   <div class="pis-ncm-query">
     <label for="productNcmSearch">Busca dentro da base Produto/NCM</label>
     <input id="productNcmSearch" type="search" placeholder="Digite produto, NCM, tributo, ato, hash ou status">
     <button type="button" data-product-clear>Limpar</button>
   </div>
-  <p class="pis-ncm-count"><strong data-product-count>1</strong> card(s) visiveis de 1 seed(s).</p>
+  <p class="pis-ncm-count"><strong data-product-count>18</strong> resultado(s) exibidos. Base técnica: 7.050 linhas NCM x benefício.</p>
+  <p class="pis-ncm-count" data-product-load-status>Carregando índice técnico completo para busca no navegador; as amostras abaixo já vêm da base real.</p>
+  <div class="pis-ncm-card-grid product-ncm-card-grid" data-product-results>
+<article id="produto-ncm-417c640a1dd9c709"
+         class="pis-ncm-record product-ncm-record product-ncm-real-record searchable-card"
+         data-product-result
+         data-search="0901.21.00 09012100 Estado RS ICMS Agropecuário, alimentos e cesta básica substituição tributária/antecipação Até o dia 05 do mês subsequente operações com produto resultante da mistura de óleo diesel com biocombustível em percentual superior ao obrigatório, conforme Livro III, art. ICMS 199/22 e 15/23.)APÊNDICE IVMERCADORIAS QUE COMPÕEM A CESTA BÁSICA DE ALIMENTOS DO ESTADO DO RIO GRANDE DO SUL, REFERIDAS NO LIVRO I, ART. ITEM MERCADORIAS I Açúcar II Arroz beneficiado III Banha suína IV Batata V Café torrado e moído, classificado no código 0901.21.00 da NBM/SH-NCM, exceto em cápsulas | NCM/TIPI 6665, 0901.21.00 Até o dia 05 do mês subsequente operações com produto resultante da mistura de óleo diesel com biocombustível em percentual superior ao obrigatório, conforme Livro III, art. ICMS 199/22 e 15/23.)APÊNDICE IVMERCADORIAS QUE COMPÕEM A CESTA BÁSICA DE ALIMENTOS DO ESTADO DO RIO GRANDE DO SUL, REFERIDAS NO LIVRO I, ART. ITEM MERCADORIAS I Açúcar II Arroz beneficiado III Banha suína IV Batata V Café torrado e moído, classificado no código 0901.21.00 da NBM/SH-NCM, exceto em cápsulas Até o dia 05 do mês subsequente operações com produto resultante da mistura de óleo diesel com biocombustível em percentual superior ao obrigatório, conforme Livro III, art. ICMS 199/22 e 15/23.)APÊNDICE IVMERCADORIAS QUE COMPÕEM A CESTA BÁSICA DE ALIMENTOS DO ESTADO DO RIO GRANDE DO SUL, REFERIDAS NO LIVRO I, ART. ITEM MERCADORIAS I Açúcar II Arroz beneficiado III Banha suína IV Batata V Café torrado e moído, classificado no código 0901.21.00 da NBM/SH-NCM, exceto em cápsulas Aplicar somente dentro do produto, operação, sujeito, período e documento descritos no trecho legal. Decreto n. 37.699/1997 - RICMS/RS integral - art. 140-A Decreto n. 37.699/1997 - RICMS/RS integral http://www.legislacao.sefaz.rs.gov.br/Site/DocumentView.aspx?inpKey=109362&amp;inpCodDispositive=0&amp;inpStToValidateDoc=&amp;inpForceEdit=&amp;inpDtTimeTunnel=&amp;inpDsKeywords=&amp;Debug= ea57050509baa35ea1542f591079daf7dbf84918f3d73ca65935bcc7d1965f71 vigente conforme ato capturado regra vigente atual; exige conferência de coexistência IBS/CBS antes de aplicar Aplicar ST por descrição aproximada sem conferir NCM/CEST, operação, destinatário e protocolo vigente.">
+  <div class="pis-ncm-record-head">
+    <div>
+      <span class="card-kicker">NCM x benefício · Estado · ICMS</span>
+      <h3>NCM 0901.21.00 · RS · substituição tributária/antecipação</h3>
+      <p class="pis-ncm-record-summary">Até o dia 05 do mês subsequente operações com produto resultante da mistura de óleo diesel com biocombustível em percentual superior ao obrigatório, conforme Livro III, art. ICMS 199/22 e 15/23.)APÊNDICE IVMERCADORIAS QUE COMPÕEM A CESTA BÁSICA DE ALIMENTOS DO ESTADO DO RIO GRANDE DO SUL, REFERIDAS...</p>
+    </div>
+    <span class="pis-ncm-record-id">id ncm-417c640a1dd9c709</span>
+  </div>
+  <dl class="pis-ncm-facts product-ncm-facts">
+    <div><dt>Grupo</dt><dd>Agropecuário, alimentos e cesta básica</dd></div>
+    <div><dt>Condição</dt><dd>Aplicar somente dentro do produto, operação, sujeito, período e documento descritos no trecho legal.</dd></div>
+    <div><dt>Vigência/status</dt><dd>2026-04-26 até sem fim informado; vigente conforme ato capturado</dd></div>
+    <div><dt>Transição RT</dt><dd>regra vigente atual; exige conferência de coexistência IBS/CBS antes de aplicar</dd></div>
+    <div><dt>Base legal</dt><dd>Decreto n. 37.699/1997 - RICMS/RS integral - art. 140-A</dd></div>
+    <div><dt>Fonte oficial</dt><dd><a href="http://www.legislacao.sefaz.rs.gov.br/Site/DocumentView.aspx?inpKey=109362&amp;inpCodDispositive=0&amp;inpStToValidateDoc=&amp;inpForceEdit=&amp;inpDtTimeTunnel=&amp;inpDsKeywords=&amp;Debug=" target="_blank" rel="noopener">abrir fonte</a></dd></div>
+    <div><dt>SHA256 fonte</dt><dd><code>ea57050509baa35ea154</code></dd></div>
+    <div><dt>Prova/Risco</dt><dd>XML/NF-e, NCM, CEST, MVA/pauta quando houver, guia de recolhimento, EFD e memória de ST. · Aplicar ST por descrição aproximada sem conferir NCM/CEST, operação, destinatário e protocolo vigente.</dd></div>
+  </dl>
+  <details class="pis-ncm-details">
+    <summary>Ver trecho legal e abrir linha técnica</summary>
+    <p>Até o dia 05 do mês subsequente operações com produto resultante da mistura de óleo diesel com biocombustível em percentual superior ao obrigatório, conforme Livro III, art. 140-A, promovidas por distribuidora de combustíveis. XII Até o dia 20 do mês subsequente na hipótese de complementação de imposto retido por substituição tributária prevista no Livro III, art. 25-C, I (Redação dada ao caput do item V, coluna...</p>
+    <p><a href="beneficios/ncm.html#ncm-417c640a1dd9c709">Abrir esta linha na lista técnica NCM x benefícios</a></p>
+  </details>
+</article>
+
+<article id="produto-ncm-155ff48a3c5ca471"
+         class="pis-ncm-record product-ncm-record product-ncm-real-record searchable-card"
+         data-product-result
+         data-search="0901.21.00 09012100 Estado RS ICMS Agropecuário, alimentos e cesta básica substituição tributária/antecipação operações com produto resultante da mistura de óleo diesel com biocombustível em percentual superior ao obrigatório, conforme Livro III, art. ICMS 199/22 e 15/23.)APÊNDICE IVMERCADORIAS QUE COMPÕEM A CESTA BÁSICA DE ALIMENTOS DO ESTADO DO RIO GRANDE DO SUL, REFERIDAS NO LIVRO I, ART. ITEM MERCADORIAS I Açúcar II Arroz beneficiado III Banha suína IV Batata V Café torrado e moído, classificado no código 0901.21.00 da NBM/SH-NCM, exceto em cápsulas VI | NCM/TIPI 6665, 0901.21.00 operações com produto resultante da mistura de óleo diesel com biocombustível em percentual superior ao obrigatório, conforme Livro III, art. ICMS 199/22 e 15/23.)APÊNDICE IVMERCADORIAS QUE COMPÕEM A CESTA BÁSICA DE ALIMENTOS DO ESTADO DO RIO GRANDE DO SUL, REFERIDAS NO LIVRO I, ART. ITEM MERCADORIAS I Açúcar II Arroz beneficiado III Banha suína IV Batata V Café torrado e moído, classificado no código 0901.21.00 da NBM/SH-NCM, exceto em cápsulas VI operações com produto resultante da mistura de óleo diesel com biocombustível em percentual superior ao obrigatório, conforme Livro III, art. ICMS 199/22 e 15/23.)APÊNDICE IVMERCADORIAS QUE COMPÕEM A CESTA BÁSICA DE ALIMENTOS DO ESTADO DO RIO GRANDE DO SUL, REFERIDAS NO LIVRO I, ART. ITEM MERCADORIAS I Açúcar II Arroz beneficiado III Banha suína IV Batata V Café torrado e moído, classificado no código 0901.21.00 da NBM/SH-NCM, exceto em cápsulas VI Aplicar somente dentro do produto, operação, sujeito, período e documento descritos no trecho legal. Decreto n. 37.699/1997 - RICMS/RS integral - art. 140-A Decreto n. 37.699/1997 - RICMS/RS integral http://www.legislacao.sefaz.rs.gov.br/Site/DocumentView.aspx?inpKey=109362&amp;inpCodDispositive=0&amp;inpStToValidateDoc=&amp;inpForceEdit=&amp;inpDtTimeTunnel=&amp;inpDsKeywords=&amp;Debug= ea57050509baa35ea1542f591079daf7dbf84918f3d73ca65935bcc7d1965f71 vigente conforme ato capturado regra vigente atual; exige conferência de coexistência IBS/CBS antes de aplicar Aplicar ST por descrição aproximada sem conferir NCM/CEST, operação, destinatário e protocolo vigente.">
+  <div class="pis-ncm-record-head">
+    <div>
+      <span class="card-kicker">NCM x benefício · Estado · ICMS</span>
+      <h3>NCM 0901.21.00 · RS · substituição tributária/antecipação</h3>
+      <p class="pis-ncm-record-summary">operações com produto resultante da mistura de óleo diesel com biocombustível em percentual superior ao obrigatório, conforme Livro III, art. ICMS 199/22 e 15/23.)APÊNDICE IVMERCADORIAS QUE COMPÕEM A CESTA BÁSICA DE ALIMENTOS DO ESTADO DO RIO GRANDE DO SUL, REFERIDAS NO LIVRO I, ART. ITEM...</p>
+    </div>
+    <span class="pis-ncm-record-id">id ncm-155ff48a3c5ca471</span>
+  </div>
+  <dl class="pis-ncm-facts product-ncm-facts">
+    <div><dt>Grupo</dt><dd>Agropecuário, alimentos e cesta básica</dd></div>
+    <div><dt>Condição</dt><dd>Aplicar somente dentro do produto, operação, sujeito, período e documento descritos no trecho legal.</dd></div>
+    <div><dt>Vigência/status</dt><dd>2026-04-26 até sem fim informado; vigente conforme ato capturado</dd></div>
+    <div><dt>Transição RT</dt><dd>regra vigente atual; exige conferência de coexistência IBS/CBS antes de aplicar</dd></div>
+    <div><dt>Base legal</dt><dd>Decreto n. 37.699/1997 - RICMS/RS integral - art. 140-A</dd></div>
+    <div><dt>Fonte oficial</dt><dd><a href="http://www.legislacao.sefaz.rs.gov.br/Site/DocumentView.aspx?inpKey=109362&amp;inpCodDispositive=0&amp;inpStToValidateDoc=&amp;inpForceEdit=&amp;inpDtTimeTunnel=&amp;inpDsKeywords=&amp;Debug=" target="_blank" rel="noopener">abrir fonte</a></dd></div>
+    <div><dt>SHA256 fonte</dt><dd><code>ea57050509baa35ea154</code></dd></div>
+    <div><dt>Prova/Risco</dt><dd>XML/NF-e, NCM, CEST, MVA/pauta quando houver, guia de recolhimento, EFD e memória de ST. · Aplicar ST por descrição aproximada sem conferir NCM/CEST, operação, destinatário e protocolo vigente.</dd></div>
+  </dl>
+  <details class="pis-ncm-details">
+    <summary>Ver trecho legal e abrir linha técnica</summary>
+    <p>operações com produto resultante da mistura de óleo diesel com biocombustível em percentual superior ao obrigatório, conforme Livro III, art. 140-A, promovidas por distribuidora de combustíveis. XII Até o dia 20 do mês subsequente na hipótese de complementação de imposto retido por substituição tributária prevista no Livro III, art. 25-C, I (Redação dada ao caput do item V, coluna Prazos , pelo art. 1º (Alteração...</p>
+    <p><a href="beneficios/ncm.html#ncm-155ff48a3c5ca471">Abrir esta linha na lista técnica NCM x benefícios</a></p>
+  </details>
+</article>
+
+<article id="produto-ncm-b37150182c196abd"
+         class="pis-ncm-record product-ncm-record product-ncm-real-record searchable-card"
+         data-product-result
+         data-search="0901.21.00 09012100 Estado RS ICMS Agropecuário, alimentos e cesta básica substituição tributária/antecipação ICMS 199/22 e 15/23.)APÊNDICE IVMERCADORIAS QUE COMPÕEM A CESTA BÁSICA DE ALIMENTOS DO ESTADO DO RIO GRANDE DO SUL, REFERIDAS NO LIVRO I, ART. ITEM MERCADORIAS I Açúcar II Arroz beneficiado III Banha suína IV Batata V Café torrado e moído, classificado no código 0901.21.00 da NBM/SH-NCM, exceto em cápsulas VI Carne e produtos comestíveis, inclusive salgados, resfriados ou congelados, resultantes do abate de frangos, de suínos, exceto javalis, e de gado vacum, ovino e bufalino. | NCM/TIPI 6665, 0901.21.00 ICMS 199/22 e 15/23.)APÊNDICE IVMERCADORIAS QUE COMPÕEM A CESTA BÁSICA DE ALIMENTOS DO ESTADO DO RIO GRANDE DO SUL, REFERIDAS NO LIVRO I, ART. ITEM MERCADORIAS I Açúcar II Arroz beneficiado III Banha suína IV Batata V Café torrado e moído, classificado no código 0901.21.00 da NBM/SH-NCM, exceto em cápsulas VI Carne e produtos comestíveis, inclusive salgados, resfriados ou congelados, resultantes do abate de frangos, de suínos, exceto javalis, e de gado vacum, ovino e bufalino. ICMS 199/22 e 15/23.)APÊNDICE IVMERCADORIAS QUE COMPÕEM A CESTA BÁSICA DE ALIMENTOS DO ESTADO DO RIO GRANDE DO SUL, REFERIDAS NO LIVRO I, ART. ITEM MERCADORIAS I Açúcar II Arroz beneficiado III Banha suína IV Batata V Café torrado e moído, classificado no código 0901.21.00 da NBM/SH-NCM, exceto em cápsulas VI Carne e produtos comestíveis, inclusive salgados, resfriados ou congelados, resultantes do abate de frangos, de suínos, exceto javalis, e de gado vacum, ovino e bufalino. Aplicar somente dentro do produto, operação, sujeito, período e documento descritos no trecho legal. Decreto n. 37.699/1997 - RICMS/RS integral - art. 25-C Decreto n. 37.699/1997 - RICMS/RS integral http://www.legislacao.sefaz.rs.gov.br/Site/DocumentView.aspx?inpKey=109362&amp;inpCodDispositive=0&amp;inpStToValidateDoc=&amp;inpForceEdit=&amp;inpDtTimeTunnel=&amp;inpDsKeywords=&amp;Debug= ea57050509baa35ea1542f591079daf7dbf84918f3d73ca65935bcc7d1965f71 vigente conforme ato capturado regra vigente atual; exige conferência de coexistência IBS/CBS antes de aplicar Aplicar ST por descrição aproximada sem conferir NCM/CEST, operação, destinatário e protocolo vigente.">
+  <div class="pis-ncm-record-head">
+    <div>
+      <span class="card-kicker">NCM x benefício · Estado · ICMS</span>
+      <h3>NCM 0901.21.00 · RS · substituição tributária/antecipação</h3>
+      <p class="pis-ncm-record-summary">ICMS 199/22 e 15/23.)APÊNDICE IVMERCADORIAS QUE COMPÕEM A CESTA BÁSICA DE ALIMENTOS DO ESTADO DO RIO GRANDE DO SUL, REFERIDAS NO LIVRO I, ART. ITEM MERCADORIAS I Açúcar II Arroz beneficiado III Banha suína IV Batata V Café torrado e moído, classificado no código 0901.21.00 da NBM/SH-NCM, exceto em...</p>
+    </div>
+    <span class="pis-ncm-record-id">id ncm-b37150182c196abd</span>
+  </div>
+  <dl class="pis-ncm-facts product-ncm-facts">
+    <div><dt>Grupo</dt><dd>Agropecuário, alimentos e cesta básica</dd></div>
+    <div><dt>Condição</dt><dd>Aplicar somente dentro do produto, operação, sujeito, período e documento descritos no trecho legal.</dd></div>
+    <div><dt>Vigência/status</dt><dd>2026-04-26 até sem fim informado; vigente conforme ato capturado</dd></div>
+    <div><dt>Transição RT</dt><dd>regra vigente atual; exige conferência de coexistência IBS/CBS antes de aplicar</dd></div>
+    <div><dt>Base legal</dt><dd>Decreto n. 37.699/1997 - RICMS/RS integral - art. 25-C</dd></div>
+    <div><dt>Fonte oficial</dt><dd><a href="http://www.legislacao.sefaz.rs.gov.br/Site/DocumentView.aspx?inpKey=109362&amp;inpCodDispositive=0&amp;inpStToValidateDoc=&amp;inpForceEdit=&amp;inpDtTimeTunnel=&amp;inpDsKeywords=&amp;Debug=" target="_blank" rel="noopener">abrir fonte</a></dd></div>
+    <div><dt>SHA256 fonte</dt><dd><code>ea57050509baa35ea154</code></dd></div>
+    <div><dt>Prova/Risco</dt><dd>XML/NF-e, NCM, CEST, MVA/pauta quando houver, guia de recolhimento, EFD e memória de ST. · Aplicar ST por descrição aproximada sem conferir NCM/CEST, operação, destinatário e protocolo vigente.</dd></div>
+  </dl>
+  <details class="pis-ncm-details">
+    <summary>Ver trecho legal e abrir linha técnica</summary>
+    <p>XII Até o dia 20 do mês subsequente na hipótese de complementação de imposto retido por substituição tributária prevista no Livro III, art. 25-C, I (Redação dada ao caput do item V, coluna Prazos , pelo art. 1º (Alteração 6665) do Decreto 58.511, de 15/12/25. (DOE 16/12/25) - Efeitos para os fatos geradores ocorridos a partir de 01/12/25 - Lei Compl. Fed. nº 192/22 e Convs. ICMS 199/22 e 15/23.)APÊNDICE...</p>
+    <p><a href="beneficios/ncm.html#ncm-b37150182c196abd">Abrir esta linha na lista técnica NCM x benefícios</a></p>
+  </details>
+</article>
+
+<article id="produto-ncm-31e318ec31c4cb96"
+         class="pis-ncm-record product-ncm-record product-ncm-real-record searchable-card"
+         data-product-result
+         data-search="1006.10 100610 Estado MG ICMS Importação, exportação e comércio exterior diferimento 80 Entrada, em decorrência de importação do exterior, de arroz classificado nos códigos 1006.10, 1006.20, 1006.30 e 1006.40 da NBM/SH, promovida por estabelecimento beneficiador do produto que promova, no mínimo, a sua seleção e brunimento. ágina 15 de 19 PARTE 2 PRODUTOS NATURAIS DESTINADOS A INDUSTRIALIZAÇÃO (a que se refere o item 6 da Parte 1 deste anexo) ITEM DESCRIÇÃO/MERCADORIA 1 Abóbora, abobrinha, acelga, agrião, aipim, aipo, alcachofra, alecrim, alface, alfavaca, alfazema,... | NCM/TIPI 1006.10, 1006.20, 1006.30, 1006.40 80 Entrada, em decorrência de importação do exterior, de arroz classificado nos códigos 1006.10, 1006.20, 1006.30 e 1006.40 da NBM/SH, promovida por estabelecimento beneficiador do produto que promova, no mínimo, a sua seleção e brunimento. ágina 15 de 19 PARTE 2 PRODUTOS NATURAIS DESTINADOS A INDUSTRIALIZAÇÃO (a que se refere o item 6 da Parte 1 deste anexo) ITEM DESCRIÇÃO/MERCADORIA 1 Abóbora, abobrinha, acelga, agrião, aipim, aipo, alcachofra, alecrim, alface, alfavaca, alfazema,... 80 Entrada, em decorrência de importação do exterior, de arroz classificado nos códigos 1006.10, 1006.20, 1006.30 e 1006.40 da NBM/SH, promovida por estabelecimento beneficiador do produto que promova, no mínimo, a sua seleção e brunimento. ágina 15 de 19 PARTE 2 PRODUTOS NATURAIS DESTINADOS A INDUSTRIALIZAÇÃO (a que se refere o item 6 da Parte 1 deste anexo) ITEM DESCRIÇÃO/MERCADORIA 1 Abóbora, abobrinha, acelga, agrião, aipim, aipo, alcachofra, alecrim, alface, alfavaca, alfazema,... 81 Operação de venda de floresta plantada destinada a contribuinte do imposto situado no Estado. 81.1 O diferimento previsto neste item fica condicionado à emissão de documento fiscal pelo vendedor na data da transferência de propriedade da floresta plantada concretizada com a tradição das árvores. ágina 15 de 19 PARTE 2 PRODUTOS NATURAIS DESTINADOS A INDUSTRIALIZAÇÃO (a que se refere o item 6 da Parte 1 deste anexo) ITEM DESCRIÇÃO/MERCADORIA 1 Abóbora, abobrinha, acelga, agrião, aipim,... RICMS/MG 2023 - Anexo VI - Diferimento - item 6 RICMS/MG 2023 - Anexo VI - Diferimento https://www.fazenda.mg.gov.br/empresas/legislacao_tributaria/ricms2023/anexovi2023.pdf 61305a97845d5e34233f7e655e40099f01642ab829a7b1ba16b4c8c9068031b8 vigente conforme ato capturado regra vigente atual; exige conferência de coexistência IBS/CBS antes de aplicar Perder o evento que encerra o diferimento e deixar imposto sem recolhimento ou sem prova.">
+  <div class="pis-ncm-record-head">
+    <div>
+      <span class="card-kicker">NCM x benefício · Estado · ICMS</span>
+      <h3>NCM 1006.10 · MG · diferimento</h3>
+      <p class="pis-ncm-record-summary">80 Entrada, em decorrência de importação do exterior, de arroz classificado nos códigos 1006.10, 1006.20, 1006.30 e 1006.40 da NBM/SH, promovida por estabelecimento beneficiador do produto que promova, no mínimo, a sua seleção e brunimento. ágina 15 de 19 PARTE 2 PRODUTOS NATURAIS DESTINADOS A...</p>
+    </div>
+    <span class="pis-ncm-record-id">id ncm-31e318ec31c4cb96</span>
+  </div>
+  <dl class="pis-ncm-facts product-ncm-facts">
+    <div><dt>Grupo</dt><dd>Importação, exportação e comércio exterior</dd></div>
+    <div><dt>Condição</dt><dd>81 Operação de venda de floresta plantada destinada a contribuinte do imposto situado no Estado. 81.1 O diferimento previsto neste item fica condicionado à emissão de documento fiscal pelo vendedor na data da transferência de propriedade da floresta plantada concretizada com a...</dd></div>
+    <div><dt>Vigência/status</dt><dd>2026-04-26 até sem fim informado; vigente conforme ato capturado</dd></div>
+    <div><dt>Transição RT</dt><dd>regra vigente atual; exige conferência de coexistência IBS/CBS antes de aplicar</dd></div>
+    <div><dt>Base legal</dt><dd>RICMS/MG 2023 - Anexo VI - Diferimento - item 6</dd></div>
+    <div><dt>Fonte oficial</dt><dd><a href="https://www.fazenda.mg.gov.br/empresas/legislacao_tributaria/ricms2023/anexovi2023.pdf" target="_blank" rel="noopener">abrir fonte</a></dd></div>
+    <div><dt>SHA256 fonte</dt><dd><code>61305a97845d5e34233f</code></dd></div>
+    <div><dt>Prova/Risco</dt><dd>XML/NF-e, cadastro fiscal do produto, memória de enquadramento, escrituração e dispositivo legal transcrito. · Perder o evento que encerra o diferimento e deixar imposto sem recolhimento ou sem prova.</dd></div>
+  </dl>
+  <details class="pis-ncm-details">
+    <summary>Ver trecho legal e abrir linha técnica</summary>
+    <p>80 Entrada, em decorrência de importação do exterior, de arroz classificado nos códigos 1006.10, 1006.20, 1006.30 e 1006.40 da NBM/SH, promovida por estabelecimento beneficiador do produto que promova, no mínimo, a sua seleção e brunimento. 81 Operação de venda de floresta plantada destinada a contribuinte do imposto situado no Estado. 81.1 O diferimento previsto neste item fica condicionado à emissão de documento...</p>
+    <p><a href="beneficios/ncm.html#ncm-31e318ec31c4cb96">Abrir esta linha na lista técnica NCM x benefícios</a></p>
+  </details>
+</article>
+
+<article id="produto-ncm-2e431275e7ea142f"
+         class="pis-ncm-record product-ncm-record product-ncm-real-record searchable-card"
+         data-product-result
+         data-search="1006.20 100620 Estado MG ICMS Importação, exportação e comércio exterior diferimento 80 Entrada, em decorrência de importação do exterior, de arroz classificado nos códigos 1006.10, 1006.20, 1006.30 e 1006.40 da NBM/SH, promovida por estabelecimento beneficiador do produto que promova, no mínimo, a sua seleção e brunimento. ágina 15 de 19 PARTE 2 PRODUTOS NATURAIS DESTINADOS A INDUSTRIALIZAÇÃO (a que se refere o item 6 da Parte 1 deste anexo) ITEM DESCRIÇÃO/MERCADORIA 1 Abóbora, abobrinha, acelga, agrião, aipim, aipo, alcachofra, alecrim, alface, alfavaca, alfazema,... | NCM/TIPI 1006.10, 1006.20, 1006.30, 1006.40 80 Entrada, em decorrência de importação do exterior, de arroz classificado nos códigos 1006.10, 1006.20, 1006.30 e 1006.40 da NBM/SH, promovida por estabelecimento beneficiador do produto que promova, no mínimo, a sua seleção e brunimento. ágina 15 de 19 PARTE 2 PRODUTOS NATURAIS DESTINADOS A INDUSTRIALIZAÇÃO (a que se refere o item 6 da Parte 1 deste anexo) ITEM DESCRIÇÃO/MERCADORIA 1 Abóbora, abobrinha, acelga, agrião, aipim, aipo, alcachofra, alecrim, alface, alfavaca, alfazema,... 80 Entrada, em decorrência de importação do exterior, de arroz classificado nos códigos 1006.10, 1006.20, 1006.30 e 1006.40 da NBM/SH, promovida por estabelecimento beneficiador do produto que promova, no mínimo, a sua seleção e brunimento. ágina 15 de 19 PARTE 2 PRODUTOS NATURAIS DESTINADOS A INDUSTRIALIZAÇÃO (a que se refere o item 6 da Parte 1 deste anexo) ITEM DESCRIÇÃO/MERCADORIA 1 Abóbora, abobrinha, acelga, agrião, aipim, aipo, alcachofra, alecrim, alface, alfavaca, alfazema,... 81 Operação de venda de floresta plantada destinada a contribuinte do imposto situado no Estado. 81.1 O diferimento previsto neste item fica condicionado à emissão de documento fiscal pelo vendedor na data da transferência de propriedade da floresta plantada concretizada com a tradição das árvores. ágina 15 de 19 PARTE 2 PRODUTOS NATURAIS DESTINADOS A INDUSTRIALIZAÇÃO (a que se refere o item 6 da Parte 1 deste anexo) ITEM DESCRIÇÃO/MERCADORIA 1 Abóbora, abobrinha, acelga, agrião, aipim,... RICMS/MG 2023 - Anexo VI - Diferimento - item 6 RICMS/MG 2023 - Anexo VI - Diferimento https://www.fazenda.mg.gov.br/empresas/legislacao_tributaria/ricms2023/anexovi2023.pdf 61305a97845d5e34233f7e655e40099f01642ab829a7b1ba16b4c8c9068031b8 vigente conforme ato capturado regra vigente atual; exige conferência de coexistência IBS/CBS antes de aplicar Perder o evento que encerra o diferimento e deixar imposto sem recolhimento ou sem prova.">
+  <div class="pis-ncm-record-head">
+    <div>
+      <span class="card-kicker">NCM x benefício · Estado · ICMS</span>
+      <h3>NCM 1006.20 · MG · diferimento</h3>
+      <p class="pis-ncm-record-summary">80 Entrada, em decorrência de importação do exterior, de arroz classificado nos códigos 1006.10, 1006.20, 1006.30 e 1006.40 da NBM/SH, promovida por estabelecimento beneficiador do produto que promova, no mínimo, a sua seleção e brunimento. ágina 15 de 19 PARTE 2 PRODUTOS NATURAIS DESTINADOS A...</p>
+    </div>
+    <span class="pis-ncm-record-id">id ncm-2e431275e7ea142f</span>
+  </div>
+  <dl class="pis-ncm-facts product-ncm-facts">
+    <div><dt>Grupo</dt><dd>Importação, exportação e comércio exterior</dd></div>
+    <div><dt>Condição</dt><dd>81 Operação de venda de floresta plantada destinada a contribuinte do imposto situado no Estado. 81.1 O diferimento previsto neste item fica condicionado à emissão de documento fiscal pelo vendedor na data da transferência de propriedade da floresta plantada concretizada com a...</dd></div>
+    <div><dt>Vigência/status</dt><dd>2026-04-26 até sem fim informado; vigente conforme ato capturado</dd></div>
+    <div><dt>Transição RT</dt><dd>regra vigente atual; exige conferência de coexistência IBS/CBS antes de aplicar</dd></div>
+    <div><dt>Base legal</dt><dd>RICMS/MG 2023 - Anexo VI - Diferimento - item 6</dd></div>
+    <div><dt>Fonte oficial</dt><dd><a href="https://www.fazenda.mg.gov.br/empresas/legislacao_tributaria/ricms2023/anexovi2023.pdf" target="_blank" rel="noopener">abrir fonte</a></dd></div>
+    <div><dt>SHA256 fonte</dt><dd><code>61305a97845d5e34233f</code></dd></div>
+    <div><dt>Prova/Risco</dt><dd>XML/NF-e, cadastro fiscal do produto, memória de enquadramento, escrituração e dispositivo legal transcrito. · Perder o evento que encerra o diferimento e deixar imposto sem recolhimento ou sem prova.</dd></div>
+  </dl>
+  <details class="pis-ncm-details">
+    <summary>Ver trecho legal e abrir linha técnica</summary>
+    <p>80 Entrada, em decorrência de importação do exterior, de arroz classificado nos códigos 1006.10, 1006.20, 1006.30 e 1006.40 da NBM/SH, promovida por estabelecimento beneficiador do produto que promova, no mínimo, a sua seleção e brunimento. 81 Operação de venda de floresta plantada destinada a contribuinte do imposto situado no Estado. 81.1 O diferimento previsto neste item fica condicionado à emissão de documento...</p>
+    <p><a href="beneficios/ncm.html#ncm-2e431275e7ea142f">Abrir esta linha na lista técnica NCM x benefícios</a></p>
+  </details>
+</article>
+
+<article id="produto-ncm-6381af171bda0fcd"
+         class="pis-ncm-record product-ncm-record product-ncm-real-record searchable-card"
+         data-product-result
+         data-search="1006.20 100620 Estado MG ICMS Importação, exportação e comércio exterior substituição tributária/antecipação 2º – Na aquisição ou recebimento de arroz classificado nos códigos 1006.20, 1006.30 e 1006.40 da Nomenclatura Brasileira de Mercadorias/Sistema Harmonizado – NBM/SH, promovida por estabelecimento de contribuinte, o imposto devido pela operação subsequente será recolhido pelo destinatário até o momento da entrada da mercadoria no território mineiro. I – importador de arroz, que efetuará o recolhimento do imposto no momento do desembaraço aduaneiro da mercadoria importada | NCM/TIPI 1006.20, 1006.30, 1006.40 2º – Na aquisição ou recebimento de arroz classificado nos códigos 1006.20, 1006.30 e 1006.40 da Nomenclatura Brasileira de Mercadorias/Sistema Harmonizado – NBM/SH, promovida por estabelecimento de contribuinte, o imposto devido pela operação subsequente será recolhido pelo destinatário até o momento da entrada da mercadoria no território mineiro. I – importador de arroz, que efetuará o recolhimento do imposto no momento do desembaraço aduaneiro da mercadoria importada 2º – Na aquisição ou recebimento de arroz classificado nos códigos 1006.20, 1006.30 e 1006.40 da Nomenclatura Brasileira de Mercadorias/Sistema Harmonizado – NBM/SH, promovida por estabelecimento de contribuinte, o imposto devido pela operação subsequente será recolhido pelo destinatário até o momento da entrada da mercadoria no território mineiro. I – importador de arroz, que efetuará o recolhimento do imposto no momento do desembaraço aduaneiro da mercadoria importada II – de microempresa e de empresa de pequeno porte, hipótese em que o recolhimento do imposto na forma prevista neste capítulo será definitivo em relação às operações subsequentes, nos termos do item 1 da alínea “g” do inciso XIII do § 1 º do art. RICMS/MG 2023 - Anexo VIII - Disposições especiais de tributação - Art. 2º RICMS/MG 2023 - Anexo VIII - Disposições especiais de tributação https://www.fazenda.mg.gov.br/empresas/legislacao_tributaria/ricms2023/anexoviii2023.pdf 8673fe017a9d12990a6cbc1d51cded9222bd166ddebac5fd96a8054dcfe29b16 vigente conforme ato capturado regra vigente atual; exige conferência de coexistência IBS/CBS antes de aplicar Aplicar ST por descrição aproximada sem conferir NCM/CEST, operação, destinatário e protocolo vigente.">
+  <div class="pis-ncm-record-head">
+    <div>
+      <span class="card-kicker">NCM x benefício · Estado · ICMS</span>
+      <h3>NCM 1006.20 · MG · substituição tributária/antecipação</h3>
+      <p class="pis-ncm-record-summary">2º – Na aquisição ou recebimento de arroz classificado nos códigos 1006.20, 1006.30 e 1006.40 da Nomenclatura Brasileira de Mercadorias/Sistema Harmonizado – NBM/SH, promovida por estabelecimento de contribuinte, o imposto devido pela operação subsequente será recolhido pelo destinatário até o...</p>
+    </div>
+    <span class="pis-ncm-record-id">id ncm-6381af171bda0fcd</span>
+  </div>
+  <dl class="pis-ncm-facts product-ncm-facts">
+    <div><dt>Grupo</dt><dd>Importação, exportação e comércio exterior</dd></div>
+    <div><dt>Condição</dt><dd>II – de microempresa e de empresa de pequeno porte, hipótese em que o recolhimento do imposto na forma prevista neste capítulo será definitivo em relação às operações subsequentes, nos termos do item 1 da alínea “g” do inciso XIII do § 1 º do art.</dd></div>
+    <div><dt>Vigência/status</dt><dd>2026-04-26 até sem fim informado; vigente conforme ato capturado</dd></div>
+    <div><dt>Transição RT</dt><dd>regra vigente atual; exige conferência de coexistência IBS/CBS antes de aplicar</dd></div>
+    <div><dt>Base legal</dt><dd>RICMS/MG 2023 - Anexo VIII - Disposições especiais de tributação - Art. 2º</dd></div>
+    <div><dt>Fonte oficial</dt><dd><a href="https://www.fazenda.mg.gov.br/empresas/legislacao_tributaria/ricms2023/anexoviii2023.pdf" target="_blank" rel="noopener">abrir fonte</a></dd></div>
+    <div><dt>SHA256 fonte</dt><dd><code>8673fe017a9d12990a6c</code></dd></div>
+    <div><dt>Prova/Risco</dt><dd>XML/NF-e, NCM, CEST, MVA/pauta quando houver, guia de recolhimento, EFD e memória de ST. · Aplicar ST por descrição aproximada sem conferir NCM/CEST, operação, destinatário e protocolo vigente.</dd></div>
+  </dl>
+  <details class="pis-ncm-details">
+    <summary>Ver trecho legal e abrir linha técnica</summary>
+    <p>Art. 2º – Na aquisição ou recebimento de arroz classificado nos códigos 1006.20, 1006.30 e 1006.40 da Nomenclatura Brasileira de Mercadorias/Sistema Harmonizado – NBM/SH, promovida por estabelecimento de contribuinte, o imposto devido pela operação subsequente será recolhido pelo destinatário até o momento da entrada da mercadoria no território mineiro. Parágrafo único – A antecipação tributária prevista no caput...</p>
+    <p><a href="beneficios/ncm.html#ncm-6381af171bda0fcd">Abrir esta linha na lista técnica NCM x benefícios</a></p>
+  </details>
+</article>
+
+<article id="produto-ncm-01b10561f011295a"
+         class="pis-ncm-record product-ncm-record product-ncm-real-record searchable-card"
+         data-product-result
+         data-search="1006.30 100630 Estado MG ICMS Importação, exportação e comércio exterior diferimento 80 Entrada, em decorrência de importação do exterior, de arroz classificado nos códigos 1006.10, 1006.20, 1006.30 e 1006.40 da NBM/SH, promovida por estabelecimento beneficiador do produto que promova, no mínimo, a sua seleção e brunimento. ágina 15 de 19 PARTE 2 PRODUTOS NATURAIS DESTINADOS A INDUSTRIALIZAÇÃO (a que se refere o item 6 da Parte 1 deste anexo) ITEM DESCRIÇÃO/MERCADORIA 1 Abóbora, abobrinha, acelga, agrião, aipim, aipo, alcachofra, alecrim, alface, alfavaca, alfazema,... | NCM/TIPI 1006.10, 1006.20, 1006.30, 1006.40 80 Entrada, em decorrência de importação do exterior, de arroz classificado nos códigos 1006.10, 1006.20, 1006.30 e 1006.40 da NBM/SH, promovida por estabelecimento beneficiador do produto que promova, no mínimo, a sua seleção e brunimento. ágina 15 de 19 PARTE 2 PRODUTOS NATURAIS DESTINADOS A INDUSTRIALIZAÇÃO (a que se refere o item 6 da Parte 1 deste anexo) ITEM DESCRIÇÃO/MERCADORIA 1 Abóbora, abobrinha, acelga, agrião, aipim, aipo, alcachofra, alecrim, alface, alfavaca, alfazema,... 80 Entrada, em decorrência de importação do exterior, de arroz classificado nos códigos 1006.10, 1006.20, 1006.30 e 1006.40 da NBM/SH, promovida por estabelecimento beneficiador do produto que promova, no mínimo, a sua seleção e brunimento. ágina 15 de 19 PARTE 2 PRODUTOS NATURAIS DESTINADOS A INDUSTRIALIZAÇÃO (a que se refere o item 6 da Parte 1 deste anexo) ITEM DESCRIÇÃO/MERCADORIA 1 Abóbora, abobrinha, acelga, agrião, aipim, aipo, alcachofra, alecrim, alface, alfavaca, alfazema,... 81 Operação de venda de floresta plantada destinada a contribuinte do imposto situado no Estado. 81.1 O diferimento previsto neste item fica condicionado à emissão de documento fiscal pelo vendedor na data da transferência de propriedade da floresta plantada concretizada com a tradição das árvores. ágina 15 de 19 PARTE 2 PRODUTOS NATURAIS DESTINADOS A INDUSTRIALIZAÇÃO (a que se refere o item 6 da Parte 1 deste anexo) ITEM DESCRIÇÃO/MERCADORIA 1 Abóbora, abobrinha, acelga, agrião, aipim,... RICMS/MG 2023 - Anexo VI - Diferimento - item 6 RICMS/MG 2023 - Anexo VI - Diferimento https://www.fazenda.mg.gov.br/empresas/legislacao_tributaria/ricms2023/anexovi2023.pdf 61305a97845d5e34233f7e655e40099f01642ab829a7b1ba16b4c8c9068031b8 vigente conforme ato capturado regra vigente atual; exige conferência de coexistência IBS/CBS antes de aplicar Perder o evento que encerra o diferimento e deixar imposto sem recolhimento ou sem prova.">
+  <div class="pis-ncm-record-head">
+    <div>
+      <span class="card-kicker">NCM x benefício · Estado · ICMS</span>
+      <h3>NCM 1006.30 · MG · diferimento</h3>
+      <p class="pis-ncm-record-summary">80 Entrada, em decorrência de importação do exterior, de arroz classificado nos códigos 1006.10, 1006.20, 1006.30 e 1006.40 da NBM/SH, promovida por estabelecimento beneficiador do produto que promova, no mínimo, a sua seleção e brunimento. ágina 15 de 19 PARTE 2 PRODUTOS NATURAIS DESTINADOS A...</p>
+    </div>
+    <span class="pis-ncm-record-id">id ncm-01b10561f011295a</span>
+  </div>
+  <dl class="pis-ncm-facts product-ncm-facts">
+    <div><dt>Grupo</dt><dd>Importação, exportação e comércio exterior</dd></div>
+    <div><dt>Condição</dt><dd>81 Operação de venda de floresta plantada destinada a contribuinte do imposto situado no Estado. 81.1 O diferimento previsto neste item fica condicionado à emissão de documento fiscal pelo vendedor na data da transferência de propriedade da floresta plantada concretizada com a...</dd></div>
+    <div><dt>Vigência/status</dt><dd>2026-04-26 até sem fim informado; vigente conforme ato capturado</dd></div>
+    <div><dt>Transição RT</dt><dd>regra vigente atual; exige conferência de coexistência IBS/CBS antes de aplicar</dd></div>
+    <div><dt>Base legal</dt><dd>RICMS/MG 2023 - Anexo VI - Diferimento - item 6</dd></div>
+    <div><dt>Fonte oficial</dt><dd><a href="https://www.fazenda.mg.gov.br/empresas/legislacao_tributaria/ricms2023/anexovi2023.pdf" target="_blank" rel="noopener">abrir fonte</a></dd></div>
+    <div><dt>SHA256 fonte</dt><dd><code>61305a97845d5e34233f</code></dd></div>
+    <div><dt>Prova/Risco</dt><dd>XML/NF-e, cadastro fiscal do produto, memória de enquadramento, escrituração e dispositivo legal transcrito. · Perder o evento que encerra o diferimento e deixar imposto sem recolhimento ou sem prova.</dd></div>
+  </dl>
+  <details class="pis-ncm-details">
+    <summary>Ver trecho legal e abrir linha técnica</summary>
+    <p>80 Entrada, em decorrência de importação do exterior, de arroz classificado nos códigos 1006.10, 1006.20, 1006.30 e 1006.40 da NBM/SH, promovida por estabelecimento beneficiador do produto que promova, no mínimo, a sua seleção e brunimento. 81 Operação de venda de floresta plantada destinada a contribuinte do imposto situado no Estado. 81.1 O diferimento previsto neste item fica condicionado à emissão de documento...</p>
+    <p><a href="beneficios/ncm.html#ncm-01b10561f011295a">Abrir esta linha na lista técnica NCM x benefícios</a></p>
+  </details>
+</article>
+
+<article id="produto-ncm-c54851a09707a078"
+         class="pis-ncm-record product-ncm-record product-ncm-real-record searchable-card"
+         data-product-result
+         data-search="1006.30 100630 Estado MG ICMS Indústria, máquinas e equipamentos diferimento 1006.30 e 1006.40 da NBM/SH, promovida por estabelecimento beneficiador do produto que promova, no mínimo, a sua seleção e brunimento. ágina 15 de 19 PARTE 2 PRODUTOS NATURAIS DESTINADOS A INDUSTRIALIZAÇÃO (a que se refere o item 6 da Parte 1 deste anexo) ITEM DESCRIÇÃO/MERCADORIA 1 Abóbora, abobrinha, acelga, agrião, aipim, aipo, alcachofra, alecrim, alface, alfavaca, alfazema, almeirão, aneto, anis, araruta, arruda, aspargo e azedim. | NCM/TIPI 1006.30, 1006.40 1006.30 e 1006.40 da NBM/SH, promovida por estabelecimento beneficiador do produto que promova, no mínimo, a sua seleção e brunimento. ágina 15 de 19 PARTE 2 PRODUTOS NATURAIS DESTINADOS A INDUSTRIALIZAÇÃO (a que se refere o item 6 da Parte 1 deste anexo) ITEM DESCRIÇÃO/MERCADORIA 1 Abóbora, abobrinha, acelga, agrião, aipim, aipo, alcachofra, alecrim, alface, alfavaca, alfazema, almeirão, aneto, anis, araruta, arruda, aspargo e azedim. 1006.30 e 1006.40 da NBM/SH, promovida por estabelecimento beneficiador do produto que promova, no mínimo, a sua seleção e brunimento. ágina 15 de 19 PARTE 2 PRODUTOS NATURAIS DESTINADOS A INDUSTRIALIZAÇÃO (a que se refere o item 6 da Parte 1 deste anexo) ITEM DESCRIÇÃO/MERCADORIA 1 Abóbora, abobrinha, acelga, agrião, aipim, aipo, alcachofra, alecrim, alface, alfavaca, alfazema, almeirão, aneto, anis, araruta, arruda, aspargo e azedim. 81 Operação de venda de floresta plantada destinada a contribuinte do imposto situado no Estado. 81.1 O diferimento previsto neste item fica condicionado à emissão de documento fiscal pelo vendedor na data da transferência de propriedade da floresta plantada concretizada com a tradição das árvores. ágina 15 de 19 PARTE 2 PRODUTOS NATURAIS DESTINADOS A INDUSTRIALIZAÇÃO (a que se refere o item 6 da Parte 1 deste anexo) ITEM DESCRIÇÃO/MERCADORIA 1 Abóbora, abobrinha, acelga, agrião, aipim,... RICMS/MG 2023 - Anexo VI - Diferimento - item 6 RICMS/MG 2023 - Anexo VI - Diferimento https://www.fazenda.mg.gov.br/empresas/legislacao_tributaria/ricms2023/anexovi2023.pdf 61305a97845d5e34233f7e655e40099f01642ab829a7b1ba16b4c8c9068031b8 vigente conforme ato capturado regra vigente atual; exige conferência de coexistência IBS/CBS antes de aplicar Perder o evento que encerra o diferimento e deixar imposto sem recolhimento ou sem prova.">
+  <div class="pis-ncm-record-head">
+    <div>
+      <span class="card-kicker">NCM x benefício · Estado · ICMS</span>
+      <h3>NCM 1006.30 · MG · diferimento</h3>
+      <p class="pis-ncm-record-summary">1006.30 e 1006.40 da NBM/SH, promovida por estabelecimento beneficiador do produto que promova, no mínimo, a sua seleção e brunimento. ágina 15 de 19 PARTE 2 PRODUTOS NATURAIS DESTINADOS A INDUSTRIALIZAÇÃO (a que se refere o item 6 da Parte 1 deste anexo) ITEM DESCRIÇÃO/MERCADORIA 1 Abóbora,...</p>
+    </div>
+    <span class="pis-ncm-record-id">id ncm-c54851a09707a078</span>
+  </div>
+  <dl class="pis-ncm-facts product-ncm-facts">
+    <div><dt>Grupo</dt><dd>Indústria, máquinas e equipamentos</dd></div>
+    <div><dt>Condição</dt><dd>81 Operação de venda de floresta plantada destinada a contribuinte do imposto situado no Estado. 81.1 O diferimento previsto neste item fica condicionado à emissão de documento fiscal pelo vendedor na data da transferência de propriedade da floresta plantada concretizada com a...</dd></div>
+    <div><dt>Vigência/status</dt><dd>2026-04-26 até sem fim informado; vigente conforme ato capturado</dd></div>
+    <div><dt>Transição RT</dt><dd>regra vigente atual; exige conferência de coexistência IBS/CBS antes de aplicar</dd></div>
+    <div><dt>Base legal</dt><dd>RICMS/MG 2023 - Anexo VI - Diferimento - item 6</dd></div>
+    <div><dt>Fonte oficial</dt><dd><a href="https://www.fazenda.mg.gov.br/empresas/legislacao_tributaria/ricms2023/anexovi2023.pdf" target="_blank" rel="noopener">abrir fonte</a></dd></div>
+    <div><dt>SHA256 fonte</dt><dd><code>61305a97845d5e34233f</code></dd></div>
+    <div><dt>Prova/Risco</dt><dd>XML/NF-e, cadastro fiscal do produto, memória de enquadramento, escrituração e dispositivo legal transcrito. · Perder o evento que encerra o diferimento e deixar imposto sem recolhimento ou sem prova.</dd></div>
+  </dl>
+  <details class="pis-ncm-details">
+    <summary>Ver trecho legal e abrir linha técnica</summary>
+    <p>1006.30 e 1006.40 da NBM/SH, promovida por estabelecimento beneficiador do produto que promova, no mínimo, a sua seleção e brunimento. 81 Operação de venda de floresta plantada destinada a contribuinte do imposto situado no Estado. 81.1 O diferimento previsto neste item fica condicionado à emissão de documento fiscal pelo vendedor na data da transferência de propriedade da floresta plantada concretizada com a...</p>
+    <p><a href="beneficios/ncm.html#ncm-c54851a09707a078">Abrir esta linha na lista técnica NCM x benefícios</a></p>
+  </details>
+</article>
+
+<article id="produto-ncm-864d1359e656a228"
+         class="pis-ncm-record product-ncm-record product-ncm-real-record searchable-card"
+         data-product-result
+         data-search="1006.30 100630 Estado MG ICMS Importação, exportação e comércio exterior substituição tributária/antecipação 2º – Na aquisição ou recebimento de arroz classificado nos códigos 1006.20, 1006.30 e 1006.40 da Nomenclatura Brasileira de Mercadorias/Sistema Harmonizado – NBM/SH, promovida por estabelecimento de contribuinte, o imposto devido pela operação subsequente será recolhido pelo destinatário até o momento da entrada da mercadoria no território mineiro. I – importador de arroz, que efetuará o recolhimento do imposto no momento do desembaraço aduaneiro da mercadoria importada | NCM/TIPI 1006.20, 1006.30, 1006.40 2º – Na aquisição ou recebimento de arroz classificado nos códigos 1006.20, 1006.30 e 1006.40 da Nomenclatura Brasileira de Mercadorias/Sistema Harmonizado – NBM/SH, promovida por estabelecimento de contribuinte, o imposto devido pela operação subsequente será recolhido pelo destinatário até o momento da entrada da mercadoria no território mineiro. I – importador de arroz, que efetuará o recolhimento do imposto no momento do desembaraço aduaneiro da mercadoria importada 2º – Na aquisição ou recebimento de arroz classificado nos códigos 1006.20, 1006.30 e 1006.40 da Nomenclatura Brasileira de Mercadorias/Sistema Harmonizado – NBM/SH, promovida por estabelecimento de contribuinte, o imposto devido pela operação subsequente será recolhido pelo destinatário até o momento da entrada da mercadoria no território mineiro. I – importador de arroz, que efetuará o recolhimento do imposto no momento do desembaraço aduaneiro da mercadoria importada II – de microempresa e de empresa de pequeno porte, hipótese em que o recolhimento do imposto na forma prevista neste capítulo será definitivo em relação às operações subsequentes, nos termos do item 1 da alínea “g” do inciso XIII do § 1 º do art. RICMS/MG 2023 - Anexo VIII - Disposições especiais de tributação - Art. 2º RICMS/MG 2023 - Anexo VIII - Disposições especiais de tributação https://www.fazenda.mg.gov.br/empresas/legislacao_tributaria/ricms2023/anexoviii2023.pdf 8673fe017a9d12990a6cbc1d51cded9222bd166ddebac5fd96a8054dcfe29b16 vigente conforme ato capturado regra vigente atual; exige conferência de coexistência IBS/CBS antes de aplicar Aplicar ST por descrição aproximada sem conferir NCM/CEST, operação, destinatário e protocolo vigente.">
+  <div class="pis-ncm-record-head">
+    <div>
+      <span class="card-kicker">NCM x benefício · Estado · ICMS</span>
+      <h3>NCM 1006.30 · MG · substituição tributária/antecipação</h3>
+      <p class="pis-ncm-record-summary">2º – Na aquisição ou recebimento de arroz classificado nos códigos 1006.20, 1006.30 e 1006.40 da Nomenclatura Brasileira de Mercadorias/Sistema Harmonizado – NBM/SH, promovida por estabelecimento de contribuinte, o imposto devido pela operação subsequente será recolhido pelo destinatário até o...</p>
+    </div>
+    <span class="pis-ncm-record-id">id ncm-864d1359e656a228</span>
+  </div>
+  <dl class="pis-ncm-facts product-ncm-facts">
+    <div><dt>Grupo</dt><dd>Importação, exportação e comércio exterior</dd></div>
+    <div><dt>Condição</dt><dd>II – de microempresa e de empresa de pequeno porte, hipótese em que o recolhimento do imposto na forma prevista neste capítulo será definitivo em relação às operações subsequentes, nos termos do item 1 da alínea “g” do inciso XIII do § 1 º do art.</dd></div>
+    <div><dt>Vigência/status</dt><dd>2026-04-26 até sem fim informado; vigente conforme ato capturado</dd></div>
+    <div><dt>Transição RT</dt><dd>regra vigente atual; exige conferência de coexistência IBS/CBS antes de aplicar</dd></div>
+    <div><dt>Base legal</dt><dd>RICMS/MG 2023 - Anexo VIII - Disposições especiais de tributação - Art. 2º</dd></div>
+    <div><dt>Fonte oficial</dt><dd><a href="https://www.fazenda.mg.gov.br/empresas/legislacao_tributaria/ricms2023/anexoviii2023.pdf" target="_blank" rel="noopener">abrir fonte</a></dd></div>
+    <div><dt>SHA256 fonte</dt><dd><code>8673fe017a9d12990a6c</code></dd></div>
+    <div><dt>Prova/Risco</dt><dd>XML/NF-e, NCM, CEST, MVA/pauta quando houver, guia de recolhimento, EFD e memória de ST. · Aplicar ST por descrição aproximada sem conferir NCM/CEST, operação, destinatário e protocolo vigente.</dd></div>
+  </dl>
+  <details class="pis-ncm-details">
+    <summary>Ver trecho legal e abrir linha técnica</summary>
+    <p>Art. 2º – Na aquisição ou recebimento de arroz classificado nos códigos 1006.20, 1006.30 e 1006.40 da Nomenclatura Brasileira de Mercadorias/Sistema Harmonizado – NBM/SH, promovida por estabelecimento de contribuinte, o imposto devido pela operação subsequente será recolhido pelo destinatário até o momento da entrada da mercadoria no território mineiro. Parágrafo único – A antecipação tributária prevista no caput...</p>
+    <p><a href="beneficios/ncm.html#ncm-864d1359e656a228">Abrir esta linha na lista técnica NCM x benefícios</a></p>
+  </details>
+</article>
+
+<article id="produto-ncm-26911bcac7cdfa7b"
+         class="pis-ncm-record product-ncm-record product-ncm-real-record searchable-card"
+         data-product-result
+         data-search="1006.40 100640 Estado MG ICMS Importação, exportação e comércio exterior diferimento 80 Entrada, em decorrência de importação do exterior, de arroz classificado nos códigos 1006.10, 1006.20, 1006.30 e 1006.40 da NBM/SH, promovida por estabelecimento beneficiador do produto que promova, no mínimo, a sua seleção e brunimento. ágina 15 de 19 PARTE 2 PRODUTOS NATURAIS DESTINADOS A INDUSTRIALIZAÇÃO (a que se refere o item 6 da Parte 1 deste anexo) ITEM DESCRIÇÃO/MERCADORIA 1 Abóbora, abobrinha, acelga, agrião, aipim, aipo, alcachofra, alecrim, alface, alfavaca, alfazema,... | NCM/TIPI 1006.10, 1006.20, 1006.30, 1006.40 80 Entrada, em decorrência de importação do exterior, de arroz classificado nos códigos 1006.10, 1006.20, 1006.30 e 1006.40 da NBM/SH, promovida por estabelecimento beneficiador do produto que promova, no mínimo, a sua seleção e brunimento. ágina 15 de 19 PARTE 2 PRODUTOS NATURAIS DESTINADOS A INDUSTRIALIZAÇÃO (a que se refere o item 6 da Parte 1 deste anexo) ITEM DESCRIÇÃO/MERCADORIA 1 Abóbora, abobrinha, acelga, agrião, aipim, aipo, alcachofra, alecrim, alface, alfavaca, alfazema,... 80 Entrada, em decorrência de importação do exterior, de arroz classificado nos códigos 1006.10, 1006.20, 1006.30 e 1006.40 da NBM/SH, promovida por estabelecimento beneficiador do produto que promova, no mínimo, a sua seleção e brunimento. ágina 15 de 19 PARTE 2 PRODUTOS NATURAIS DESTINADOS A INDUSTRIALIZAÇÃO (a que se refere o item 6 da Parte 1 deste anexo) ITEM DESCRIÇÃO/MERCADORIA 1 Abóbora, abobrinha, acelga, agrião, aipim, aipo, alcachofra, alecrim, alface, alfavaca, alfazema,... 81 Operação de venda de floresta plantada destinada a contribuinte do imposto situado no Estado. 81.1 O diferimento previsto neste item fica condicionado à emissão de documento fiscal pelo vendedor na data da transferência de propriedade da floresta plantada concretizada com a tradição das árvores. ágina 15 de 19 PARTE 2 PRODUTOS NATURAIS DESTINADOS A INDUSTRIALIZAÇÃO (a que se refere o item 6 da Parte 1 deste anexo) ITEM DESCRIÇÃO/MERCADORIA 1 Abóbora, abobrinha, acelga, agrião, aipim,... RICMS/MG 2023 - Anexo VI - Diferimento - item 6 RICMS/MG 2023 - Anexo VI - Diferimento https://www.fazenda.mg.gov.br/empresas/legislacao_tributaria/ricms2023/anexovi2023.pdf 61305a97845d5e34233f7e655e40099f01642ab829a7b1ba16b4c8c9068031b8 vigente conforme ato capturado regra vigente atual; exige conferência de coexistência IBS/CBS antes de aplicar Perder o evento que encerra o diferimento e deixar imposto sem recolhimento ou sem prova.">
+  <div class="pis-ncm-record-head">
+    <div>
+      <span class="card-kicker">NCM x benefício · Estado · ICMS</span>
+      <h3>NCM 1006.40 · MG · diferimento</h3>
+      <p class="pis-ncm-record-summary">80 Entrada, em decorrência de importação do exterior, de arroz classificado nos códigos 1006.10, 1006.20, 1006.30 e 1006.40 da NBM/SH, promovida por estabelecimento beneficiador do produto que promova, no mínimo, a sua seleção e brunimento. ágina 15 de 19 PARTE 2 PRODUTOS NATURAIS DESTINADOS A...</p>
+    </div>
+    <span class="pis-ncm-record-id">id ncm-26911bcac7cdfa7b</span>
+  </div>
+  <dl class="pis-ncm-facts product-ncm-facts">
+    <div><dt>Grupo</dt><dd>Importação, exportação e comércio exterior</dd></div>
+    <div><dt>Condição</dt><dd>81 Operação de venda de floresta plantada destinada a contribuinte do imposto situado no Estado. 81.1 O diferimento previsto neste item fica condicionado à emissão de documento fiscal pelo vendedor na data da transferência de propriedade da floresta plantada concretizada com a...</dd></div>
+    <div><dt>Vigência/status</dt><dd>2026-04-26 até sem fim informado; vigente conforme ato capturado</dd></div>
+    <div><dt>Transição RT</dt><dd>regra vigente atual; exige conferência de coexistência IBS/CBS antes de aplicar</dd></div>
+    <div><dt>Base legal</dt><dd>RICMS/MG 2023 - Anexo VI - Diferimento - item 6</dd></div>
+    <div><dt>Fonte oficial</dt><dd><a href="https://www.fazenda.mg.gov.br/empresas/legislacao_tributaria/ricms2023/anexovi2023.pdf" target="_blank" rel="noopener">abrir fonte</a></dd></div>
+    <div><dt>SHA256 fonte</dt><dd><code>61305a97845d5e34233f</code></dd></div>
+    <div><dt>Prova/Risco</dt><dd>XML/NF-e, cadastro fiscal do produto, memória de enquadramento, escrituração e dispositivo legal transcrito. · Perder o evento que encerra o diferimento e deixar imposto sem recolhimento ou sem prova.</dd></div>
+  </dl>
+  <details class="pis-ncm-details">
+    <summary>Ver trecho legal e abrir linha técnica</summary>
+    <p>80 Entrada, em decorrência de importação do exterior, de arroz classificado nos códigos 1006.10, 1006.20, 1006.30 e 1006.40 da NBM/SH, promovida por estabelecimento beneficiador do produto que promova, no mínimo, a sua seleção e brunimento. 81 Operação de venda de floresta plantada destinada a contribuinte do imposto situado no Estado. 81.1 O diferimento previsto neste item fica condicionado à emissão de documento...</p>
+    <p><a href="beneficios/ncm.html#ncm-26911bcac7cdfa7b">Abrir esta linha na lista técnica NCM x benefícios</a></p>
+  </details>
+</article>
+
+<article id="produto-ncm-e4e19801ff6b739b"
+         class="pis-ncm-record product-ncm-record product-ncm-real-record searchable-card"
+         data-product-result
+         data-search="1006.40 100640 Estado MG ICMS Indústria, máquinas e equipamentos diferimento 1006.30 e 1006.40 da NBM/SH, promovida por estabelecimento beneficiador do produto que promova, no mínimo, a sua seleção e brunimento. ágina 15 de 19 PARTE 2 PRODUTOS NATURAIS DESTINADOS A INDUSTRIALIZAÇÃO (a que se refere o item 6 da Parte 1 deste anexo) ITEM DESCRIÇÃO/MERCADORIA 1 Abóbora, abobrinha, acelga, agrião, aipim, aipo, alcachofra, alecrim, alface, alfavaca, alfazema, almeirão, aneto, anis, araruta, arruda, aspargo e azedim. | NCM/TIPI 1006.30, 1006.40 1006.30 e 1006.40 da NBM/SH, promovida por estabelecimento beneficiador do produto que promova, no mínimo, a sua seleção e brunimento. ágina 15 de 19 PARTE 2 PRODUTOS NATURAIS DESTINADOS A INDUSTRIALIZAÇÃO (a que se refere o item 6 da Parte 1 deste anexo) ITEM DESCRIÇÃO/MERCADORIA 1 Abóbora, abobrinha, acelga, agrião, aipim, aipo, alcachofra, alecrim, alface, alfavaca, alfazema, almeirão, aneto, anis, araruta, arruda, aspargo e azedim. 1006.30 e 1006.40 da NBM/SH, promovida por estabelecimento beneficiador do produto que promova, no mínimo, a sua seleção e brunimento. ágina 15 de 19 PARTE 2 PRODUTOS NATURAIS DESTINADOS A INDUSTRIALIZAÇÃO (a que se refere o item 6 da Parte 1 deste anexo) ITEM DESCRIÇÃO/MERCADORIA 1 Abóbora, abobrinha, acelga, agrião, aipim, aipo, alcachofra, alecrim, alface, alfavaca, alfazema, almeirão, aneto, anis, araruta, arruda, aspargo e azedim. 81 Operação de venda de floresta plantada destinada a contribuinte do imposto situado no Estado. 81.1 O diferimento previsto neste item fica condicionado à emissão de documento fiscal pelo vendedor na data da transferência de propriedade da floresta plantada concretizada com a tradição das árvores. ágina 15 de 19 PARTE 2 PRODUTOS NATURAIS DESTINADOS A INDUSTRIALIZAÇÃO (a que se refere o item 6 da Parte 1 deste anexo) ITEM DESCRIÇÃO/MERCADORIA 1 Abóbora, abobrinha, acelga, agrião, aipim,... RICMS/MG 2023 - Anexo VI - Diferimento - item 6 RICMS/MG 2023 - Anexo VI - Diferimento https://www.fazenda.mg.gov.br/empresas/legislacao_tributaria/ricms2023/anexovi2023.pdf 61305a97845d5e34233f7e655e40099f01642ab829a7b1ba16b4c8c9068031b8 vigente conforme ato capturado regra vigente atual; exige conferência de coexistência IBS/CBS antes de aplicar Perder o evento que encerra o diferimento e deixar imposto sem recolhimento ou sem prova.">
+  <div class="pis-ncm-record-head">
+    <div>
+      <span class="card-kicker">NCM x benefício · Estado · ICMS</span>
+      <h3>NCM 1006.40 · MG · diferimento</h3>
+      <p class="pis-ncm-record-summary">1006.30 e 1006.40 da NBM/SH, promovida por estabelecimento beneficiador do produto que promova, no mínimo, a sua seleção e brunimento. ágina 15 de 19 PARTE 2 PRODUTOS NATURAIS DESTINADOS A INDUSTRIALIZAÇÃO (a que se refere o item 6 da Parte 1 deste anexo) ITEM DESCRIÇÃO/MERCADORIA 1 Abóbora,...</p>
+    </div>
+    <span class="pis-ncm-record-id">id ncm-e4e19801ff6b739b</span>
+  </div>
+  <dl class="pis-ncm-facts product-ncm-facts">
+    <div><dt>Grupo</dt><dd>Indústria, máquinas e equipamentos</dd></div>
+    <div><dt>Condição</dt><dd>81 Operação de venda de floresta plantada destinada a contribuinte do imposto situado no Estado. 81.1 O diferimento previsto neste item fica condicionado à emissão de documento fiscal pelo vendedor na data da transferência de propriedade da floresta plantada concretizada com a...</dd></div>
+    <div><dt>Vigência/status</dt><dd>2026-04-26 até sem fim informado; vigente conforme ato capturado</dd></div>
+    <div><dt>Transição RT</dt><dd>regra vigente atual; exige conferência de coexistência IBS/CBS antes de aplicar</dd></div>
+    <div><dt>Base legal</dt><dd>RICMS/MG 2023 - Anexo VI - Diferimento - item 6</dd></div>
+    <div><dt>Fonte oficial</dt><dd><a href="https://www.fazenda.mg.gov.br/empresas/legislacao_tributaria/ricms2023/anexovi2023.pdf" target="_blank" rel="noopener">abrir fonte</a></dd></div>
+    <div><dt>SHA256 fonte</dt><dd><code>61305a97845d5e34233f</code></dd></div>
+    <div><dt>Prova/Risco</dt><dd>XML/NF-e, cadastro fiscal do produto, memória de enquadramento, escrituração e dispositivo legal transcrito. · Perder o evento que encerra o diferimento e deixar imposto sem recolhimento ou sem prova.</dd></div>
+  </dl>
+  <details class="pis-ncm-details">
+    <summary>Ver trecho legal e abrir linha técnica</summary>
+    <p>1006.30 e 1006.40 da NBM/SH, promovida por estabelecimento beneficiador do produto que promova, no mínimo, a sua seleção e brunimento. 81 Operação de venda de floresta plantada destinada a contribuinte do imposto situado no Estado. 81.1 O diferimento previsto neste item fica condicionado à emissão de documento fiscal pelo vendedor na data da transferência de propriedade da floresta plantada concretizada com a...</p>
+    <p><a href="beneficios/ncm.html#ncm-e4e19801ff6b739b">Abrir esta linha na lista técnica NCM x benefícios</a></p>
+  </details>
+</article>
+
+<article id="produto-ncm-1fb83f7e3c1d649c"
+         class="pis-ncm-record product-ncm-record product-ncm-real-record searchable-card"
+         data-product-result
+         data-search="1006.40 100640 Estado MG ICMS Importação, exportação e comércio exterior substituição tributária/antecipação 2º – Na aquisição ou recebimento de arroz classificado nos códigos 1006.20, 1006.30 e 1006.40 da Nomenclatura Brasileira de Mercadorias/Sistema Harmonizado – NBM/SH, promovida por estabelecimento de contribuinte, o imposto devido pela operação subsequente será recolhido pelo destinatário até o momento da entrada da mercadoria no território mineiro. I – importador de arroz, que efetuará o recolhimento do imposto no momento do desembaraço aduaneiro da mercadoria importada | NCM/TIPI 1006.20, 1006.30, 1006.40 2º – Na aquisição ou recebimento de arroz classificado nos códigos 1006.20, 1006.30 e 1006.40 da Nomenclatura Brasileira de Mercadorias/Sistema Harmonizado – NBM/SH, promovida por estabelecimento de contribuinte, o imposto devido pela operação subsequente será recolhido pelo destinatário até o momento da entrada da mercadoria no território mineiro. I – importador de arroz, que efetuará o recolhimento do imposto no momento do desembaraço aduaneiro da mercadoria importada 2º – Na aquisição ou recebimento de arroz classificado nos códigos 1006.20, 1006.30 e 1006.40 da Nomenclatura Brasileira de Mercadorias/Sistema Harmonizado – NBM/SH, promovida por estabelecimento de contribuinte, o imposto devido pela operação subsequente será recolhido pelo destinatário até o momento da entrada da mercadoria no território mineiro. I – importador de arroz, que efetuará o recolhimento do imposto no momento do desembaraço aduaneiro da mercadoria importada II – de microempresa e de empresa de pequeno porte, hipótese em que o recolhimento do imposto na forma prevista neste capítulo será definitivo em relação às operações subsequentes, nos termos do item 1 da alínea “g” do inciso XIII do § 1 º do art. RICMS/MG 2023 - Anexo VIII - Disposições especiais de tributação - Art. 2º RICMS/MG 2023 - Anexo VIII - Disposições especiais de tributação https://www.fazenda.mg.gov.br/empresas/legislacao_tributaria/ricms2023/anexoviii2023.pdf 8673fe017a9d12990a6cbc1d51cded9222bd166ddebac5fd96a8054dcfe29b16 vigente conforme ato capturado regra vigente atual; exige conferência de coexistência IBS/CBS antes de aplicar Aplicar ST por descrição aproximada sem conferir NCM/CEST, operação, destinatário e protocolo vigente.">
+  <div class="pis-ncm-record-head">
+    <div>
+      <span class="card-kicker">NCM x benefício · Estado · ICMS</span>
+      <h3>NCM 1006.40 · MG · substituição tributária/antecipação</h3>
+      <p class="pis-ncm-record-summary">2º – Na aquisição ou recebimento de arroz classificado nos códigos 1006.20, 1006.30 e 1006.40 da Nomenclatura Brasileira de Mercadorias/Sistema Harmonizado – NBM/SH, promovida por estabelecimento de contribuinte, o imposto devido pela operação subsequente será recolhido pelo destinatário até o...</p>
+    </div>
+    <span class="pis-ncm-record-id">id ncm-1fb83f7e3c1d649c</span>
+  </div>
+  <dl class="pis-ncm-facts product-ncm-facts">
+    <div><dt>Grupo</dt><dd>Importação, exportação e comércio exterior</dd></div>
+    <div><dt>Condição</dt><dd>II – de microempresa e de empresa de pequeno porte, hipótese em que o recolhimento do imposto na forma prevista neste capítulo será definitivo em relação às operações subsequentes, nos termos do item 1 da alínea “g” do inciso XIII do § 1 º do art.</dd></div>
+    <div><dt>Vigência/status</dt><dd>2026-04-26 até sem fim informado; vigente conforme ato capturado</dd></div>
+    <div><dt>Transição RT</dt><dd>regra vigente atual; exige conferência de coexistência IBS/CBS antes de aplicar</dd></div>
+    <div><dt>Base legal</dt><dd>RICMS/MG 2023 - Anexo VIII - Disposições especiais de tributação - Art. 2º</dd></div>
+    <div><dt>Fonte oficial</dt><dd><a href="https://www.fazenda.mg.gov.br/empresas/legislacao_tributaria/ricms2023/anexoviii2023.pdf" target="_blank" rel="noopener">abrir fonte</a></dd></div>
+    <div><dt>SHA256 fonte</dt><dd><code>8673fe017a9d12990a6c</code></dd></div>
+    <div><dt>Prova/Risco</dt><dd>XML/NF-e, NCM, CEST, MVA/pauta quando houver, guia de recolhimento, EFD e memória de ST. · Aplicar ST por descrição aproximada sem conferir NCM/CEST, operação, destinatário e protocolo vigente.</dd></div>
+  </dl>
+  <details class="pis-ncm-details">
+    <summary>Ver trecho legal e abrir linha técnica</summary>
+    <p>Art. 2º – Na aquisição ou recebimento de arroz classificado nos códigos 1006.20, 1006.30 e 1006.40 da Nomenclatura Brasileira de Mercadorias/Sistema Harmonizado – NBM/SH, promovida por estabelecimento de contribuinte, o imposto devido pela operação subsequente será recolhido pelo destinatário até o momento da entrada da mercadoria no território mineiro. Parágrafo único – A antecipação tributária prevista no caput...</p>
+    <p><a href="beneficios/ncm.html#ncm-1fb83f7e3c1d649c">Abrir esta linha na lista técnica NCM x benefícios</a></p>
+  </details>
+</article>
+
+<article id="produto-ncm-243c43414f3a79e0"
+         class="pis-ncm-record product-ncm-record product-ncm-real-record searchable-card"
+         data-product-result
+         data-search="1507.10.00 15071000 Estado RS ICMS Importação, exportação e comércio exterior diferimento LXXXVII Ácido sulfúrico, classificado no código 2807.00.10 da NBM/SH-NCM, destinado à produção de sílica de origem vegetal, obtida a partir da queima da casca de arroz, desde que o desembaraço aduaneiro ocorra neste Estado. LXXXVIII Óleo de soja bruto, mesmo degomado, classificado no código 1507.10.00 da NBM/SH-NCM, importado por estabelecimentos industriais produtores de biodiesel. NOTA - Este diferimento fica condicionado a que a saída interestadual subsequente do produto industrializado,... | NCM/TIPI 2807.00.10, 1507.10.00, 2912.11.00, 3909.10.00, 3909.20.19, 3909.20.29, 3909.40.11, 3909.40.91 LXXXVII Ácido sulfúrico, classificado no código 2807.00.10 da NBM/SH-NCM, destinado à produção de sílica de origem vegetal, obtida a partir da queima da casca de arroz, desde que o desembaraço aduaneiro ocorra neste Estado. LXXXVIII Óleo de soja bruto, mesmo degomado, classificado no código 1507.10.00 da NBM/SH-NCM, importado por estabelecimentos industriais produtores de biodiesel. NOTA - Este diferimento fica condicionado a que a saída interestadual subsequente do produto industrializado,... LXXXVII Ácido sulfúrico, classificado no código 2807.00.10 da NBM/SH-NCM, destinado à produção de sílica de origem vegetal, obtida a partir da queima da casca de arroz, desde que o desembaraço aduaneiro ocorra neste Estado. LXXXVIII Óleo de soja bruto, mesmo degomado, classificado no código 1507.10.00 da NBM/SH-NCM, importado por estabelecimentos industriais produtores de biodiesel. NOTA - Este diferimento fica condicionado a que a saída interestadual subsequente do produto industrializado,... LXXXVII Ácido sulfúrico, classificado no código 2807.00.10 da NBM/SH-NCM, destinado à produção de sílica de origem vegetal, obtida a partir da queima da casca de arroz, desde que o desembaraço aduaneiro ocorra neste Estado. NOTA - Este diferimento fica condicionado a que a saída interestadual subsequente do produto industrializado, não esteja sujeita à alíquota de 4% (quatro por cento) de que trata o Livro I, art. NOTA 01 - Este diferimento fica condicionado à celebração de Termo de Acordo... Decreto n. 37.699/1997 - RICMS/RS integral - art. 26 Decreto n. 37.699/1997 - RICMS/RS integral http://www.legislacao.sefaz.rs.gov.br/Site/DocumentView.aspx?inpKey=109362&amp;inpCodDispositive=0&amp;inpStToValidateDoc=&amp;inpForceEdit=&amp;inpDtTimeTunnel=&amp;inpDsKeywords=&amp;Debug= ea57050509baa35ea1542f591079daf7dbf84918f3d73ca65935bcc7d1965f71 vigente conforme ato capturado regra vigente atual; exige conferência de coexistência IBS/CBS antes de aplicar Perder o evento que encerra o diferimento e deixar imposto sem recolhimento ou sem prova.">
+  <div class="pis-ncm-record-head">
+    <div>
+      <span class="card-kicker">NCM x benefício · Estado · ICMS</span>
+      <h3>NCM 1507.10.00 · RS · diferimento</h3>
+      <p class="pis-ncm-record-summary">LXXXVII Ácido sulfúrico, classificado no código 2807.00.10 da NBM/SH-NCM, destinado à produção de sílica de origem vegetal, obtida a partir da queima da casca de arroz, desde que o desembaraço aduaneiro ocorra neste Estado. LXXXVIII Óleo de soja bruto, mesmo degomado, classificado no código...</p>
+    </div>
+    <span class="pis-ncm-record-id">id ncm-243c43414f3a79e0</span>
+  </div>
+  <dl class="pis-ncm-facts product-ncm-facts">
+    <div><dt>Grupo</dt><dd>Importação, exportação e comércio exterior</dd></div>
+    <div><dt>Condição</dt><dd>LXXXVII Ácido sulfúrico, classificado no código 2807.00.10 da NBM/SH-NCM, destinado à produção de sílica de origem vegetal, obtida a partir da queima da casca de arroz, desde que o desembaraço aduaneiro ocorra neste Estado. NOTA - Este diferimento fica condicionado a que a saída...</dd></div>
+    <div><dt>Vigência/status</dt><dd>2026-04-26 até sem fim informado; vigente conforme ato capturado</dd></div>
+    <div><dt>Transição RT</dt><dd>regra vigente atual; exige conferência de coexistência IBS/CBS antes de aplicar</dd></div>
+    <div><dt>Base legal</dt><dd>Decreto n. 37.699/1997 - RICMS/RS integral - art. 26</dd></div>
+    <div><dt>Fonte oficial</dt><dd><a href="http://www.legislacao.sefaz.rs.gov.br/Site/DocumentView.aspx?inpKey=109362&amp;inpCodDispositive=0&amp;inpStToValidateDoc=&amp;inpForceEdit=&amp;inpDtTimeTunnel=&amp;inpDsKeywords=&amp;Debug=" target="_blank" rel="noopener">abrir fonte</a></dd></div>
+    <div><dt>SHA256 fonte</dt><dd><code>ea57050509baa35ea154</code></dd></div>
+    <div><dt>Prova/Risco</dt><dd>XML/NF-e, EFD, ajuste de apuração, memória de crédito, termo/credenciamento quando exigido e prova da condição. · Perder o evento que encerra o diferimento e deixar imposto sem recolhimento ou sem prova.</dd></div>
+  </dl>
+  <details class="pis-ncm-details">
+    <summary>Ver trecho legal e abrir linha técnica</summary>
+    <p>LXXXVII Ácido sulfúrico, classificado no código 2807.00.10 da NBM/SH-NCM, destinado à produção de sílica de origem vegetal, obtida a partir da queima da casca de arroz, desde que o desembaraço aduaneiro ocorra neste Estado. LXXXVIII Óleo de soja bruto, mesmo degomado, classificado no código 1507.10.00 da NBM/SH-NCM, importado por estabelecimentos industriais produtores de biodiesel. NOTA - Este diferimento fica...</p>
+    <p><a href="beneficios/ncm.html#ncm-243c43414f3a79e0">Abrir esta linha na lista técnica NCM x benefícios</a></p>
+  </details>
+</article>
+
+<article id="produto-ncm-195b1a82ae89b91d"
+         class="pis-ncm-record product-ncm-record product-ncm-real-record searchable-card"
+         data-product-result
+         data-search="1507.10.00 15071000 Estado RS ICMS Importação, exportação e comércio exterior diferimento Ácido sulfúrico, classificado no código 2807.00.10 da NBM/SH-NCM, destinado à produção de sílica de origem vegetal, obtida a partir da queima da casca de arroz, desde que o desembaraço aduaneiro ocorra neste Estado. LXXXVIII Óleo de soja bruto, mesmo degomado, classificado no código 1507.10.00 da NBM/SH-NCM, importado por estabelecimentos industriais produtores de biodiesel. NOTA - Este diferimento fica condicionado a que a saída interestadual subsequente do produto industrializado, não... | NCM/TIPI 2807.00.10, 1507.10.00, 2912.11.00, 3909.10.00, 3909.20.19, 3909.20.29, 3909.40.11, 3909.40.91 Ácido sulfúrico, classificado no código 2807.00.10 da NBM/SH-NCM, destinado à produção de sílica de origem vegetal, obtida a partir da queima da casca de arroz, desde que o desembaraço aduaneiro ocorra neste Estado. LXXXVIII Óleo de soja bruto, mesmo degomado, classificado no código 1507.10.00 da NBM/SH-NCM, importado por estabelecimentos industriais produtores de biodiesel. NOTA - Este diferimento fica condicionado a que a saída interestadual subsequente do produto industrializado, não... Ácido sulfúrico, classificado no código 2807.00.10 da NBM/SH-NCM, destinado à produção de sílica de origem vegetal, obtida a partir da queima da casca de arroz, desde que o desembaraço aduaneiro ocorra neste Estado. LXXXVIII Óleo de soja bruto, mesmo degomado, classificado no código 1507.10.00 da NBM/SH-NCM, importado por estabelecimentos industriais produtores de biodiesel. NOTA - Este diferimento fica condicionado a que a saída interestadual subsequente do produto industrializado, não... Ácido sulfúrico, classificado no código 2807.00.10 da NBM/SH-NCM, destinado à produção de sílica de origem vegetal, obtida a partir da queima da casca de arroz, desde que o desembaraço aduaneiro ocorra neste Estado. NOTA - Este diferimento fica condicionado a que a saída interestadual subsequente do produto industrializado, não esteja sujeita à alíquota de 4% (quatro por cento) de que trata o Livro I, art. NOTA 01 - Este diferimento fica condicionado à celebração de Termo de Acordo com o... Decreto n. 37.699/1997 - RICMS/RS integral - art. 26 Decreto n. 37.699/1997 - RICMS/RS integral http://www.legislacao.sefaz.rs.gov.br/Site/DocumentView.aspx?inpKey=109362&amp;inpCodDispositive=0&amp;inpStToValidateDoc=&amp;inpForceEdit=&amp;inpDtTimeTunnel=&amp;inpDsKeywords=&amp;Debug= ea57050509baa35ea1542f591079daf7dbf84918f3d73ca65935bcc7d1965f71 vigente conforme ato capturado regra vigente atual; exige conferência de coexistência IBS/CBS antes de aplicar Perder o evento que encerra o diferimento e deixar imposto sem recolhimento ou sem prova.">
+  <div class="pis-ncm-record-head">
+    <div>
+      <span class="card-kicker">NCM x benefício · Estado · ICMS</span>
+      <h3>NCM 1507.10.00 · RS · diferimento</h3>
+      <p class="pis-ncm-record-summary">Ácido sulfúrico, classificado no código 2807.00.10 da NBM/SH-NCM, destinado à produção de sílica de origem vegetal, obtida a partir da queima da casca de arroz, desde que o desembaraço aduaneiro ocorra neste Estado. LXXXVIII Óleo de soja bruto, mesmo degomado, classificado no código 1507.10.00 da...</p>
+    </div>
+    <span class="pis-ncm-record-id">id ncm-195b1a82ae89b91d</span>
+  </div>
+  <dl class="pis-ncm-facts product-ncm-facts">
+    <div><dt>Grupo</dt><dd>Importação, exportação e comércio exterior</dd></div>
+    <div><dt>Condição</dt><dd>Ácido sulfúrico, classificado no código 2807.00.10 da NBM/SH-NCM, destinado à produção de sílica de origem vegetal, obtida a partir da queima da casca de arroz, desde que o desembaraço aduaneiro ocorra neste Estado. NOTA - Este diferimento fica condicionado a que a saída...</dd></div>
+    <div><dt>Vigência/status</dt><dd>2026-04-26 até sem fim informado; vigente conforme ato capturado</dd></div>
+    <div><dt>Transição RT</dt><dd>regra vigente atual; exige conferência de coexistência IBS/CBS antes de aplicar</dd></div>
+    <div><dt>Base legal</dt><dd>Decreto n. 37.699/1997 - RICMS/RS integral - art. 26</dd></div>
+    <div><dt>Fonte oficial</dt><dd><a href="http://www.legislacao.sefaz.rs.gov.br/Site/DocumentView.aspx?inpKey=109362&amp;inpCodDispositive=0&amp;inpStToValidateDoc=&amp;inpForceEdit=&amp;inpDtTimeTunnel=&amp;inpDsKeywords=&amp;Debug=" target="_blank" rel="noopener">abrir fonte</a></dd></div>
+    <div><dt>SHA256 fonte</dt><dd><code>ea57050509baa35ea154</code></dd></div>
+    <div><dt>Prova/Risco</dt><dd>XML/NF-e, EFD, ajuste de apuração, memória de crédito, termo/credenciamento quando exigido e prova da condição. · Perder o evento que encerra o diferimento e deixar imposto sem recolhimento ou sem prova.</dd></div>
+  </dl>
+  <details class="pis-ncm-details">
+    <summary>Ver trecho legal e abrir linha técnica</summary>
+    <p>Ácido sulfúrico, classificado no código 2807.00.10 da NBM/SH-NCM, destinado à produção de sílica de origem vegetal, obtida a partir da queima da casca de arroz, desde que o desembaraço aduaneiro ocorra neste Estado. LXXXVIII Óleo de soja bruto, mesmo degomado, classificado no código 1507.10.00 da NBM/SH-NCM, importado por estabelecimentos industriais produtores de biodiesel. NOTA - Este diferimento fica condicionado...</p>
+    <p><a href="beneficios/ncm.html#ncm-195b1a82ae89b91d">Abrir esta linha na lista técnica NCM x benefícios</a></p>
+  </details>
+</article>
+
+<article id="produto-ncm-3f42fdc1fe2bf427"
+         class="pis-ncm-record product-ncm-record product-ncm-real-record searchable-card"
+         data-product-result
+         data-search="1507.10.00 15071000 Estado RS ICMS Agropecuário, alimentos e cesta básica diferimento NOTA 02 - Este diferimento fica limitado, por empresa, em cada trimestre civil, à quantidade equivalente a 20% (vinte por cento) de suas aquisições de arroz em casca de produtores ou de cooperativa de produtores, produzido neste Estado, ou em leilões da CONAB realizados neste Estado, somadas às suas aquisições de arroz em casca e de arroz beneficiado importados do exterior, no trimestre civil anterior, considerando-se para o cálculo que cada 1 kg de arroz beneficiado corresponde 1,3 kg de... | NCM/TIPI 2807.00.10, 1507.10.00 NOTA 02 - Este diferimento fica limitado, por empresa, em cada trimestre civil, à quantidade equivalente a 20% (vinte por cento) de suas aquisições de arroz em casca de produtores ou de cooperativa de produtores, produzido neste Estado, ou em leilões da CONAB realizados neste Estado, somadas às suas aquisições de arroz em casca e de arroz beneficiado importados do exterior, no trimestre civil anterior, considerando-se para o cálculo que cada 1 kg de arroz beneficiado corresponde 1,3 kg de... NOTA 02 - Este diferimento fica limitado, por empresa, em cada trimestre civil, à quantidade equivalente a 20% (vinte por cento) de suas aquisições de arroz em casca de produtores ou de cooperativa de produtores, produzido neste Estado, ou em leilões da CONAB realizados neste Estado, somadas às suas aquisições de arroz em casca e de arroz beneficiado importados do exterior, no trimestre civil anterior, considerando-se para o cálculo que cada 1 kg de arroz beneficiado corresponde 1,3 kg de... NOTA 01 - Este diferimento fica condicionado a que o desembaraço aduaneiro ocorra neste Estado. NOTA 02 - O diferimento previsto neste item estende-se às importações realizadas por empresa comercial exportadora, inclusive trading company , credenciada pelo estabelecimento industrial habilitado no Programa de Incentivos à Cadeia Produtiva de Veículos de Transporte de Carga - PROCAM/RS, criado pela Lei nº 14.388, de 30/12/13, pertencente a empresa que tenha firmado Protocolo de Intenções com... Decreto n. 37.699/1997 - RICMS/RS integral - art. 32 Decreto n. 37.699/1997 - RICMS/RS integral http://www.legislacao.sefaz.rs.gov.br/Site/DocumentView.aspx?inpKey=109362&amp;inpCodDispositive=0&amp;inpStToValidateDoc=&amp;inpForceEdit=&amp;inpDtTimeTunnel=&amp;inpDsKeywords=&amp;Debug= ea57050509baa35ea1542f591079daf7dbf84918f3d73ca65935bcc7d1965f71 vigente conforme ato capturado regra vigente atual; exige conferência de coexistência IBS/CBS antes de aplicar Perder o evento que encerra o diferimento e deixar imposto sem recolhimento ou sem prova.">
+  <div class="pis-ncm-record-head">
+    <div>
+      <span class="card-kicker">NCM x benefício · Estado · ICMS</span>
+      <h3>NCM 1507.10.00 · RS · diferimento</h3>
+      <p class="pis-ncm-record-summary">NOTA 02 - Este diferimento fica limitado, por empresa, em cada trimestre civil, à quantidade equivalente a 20% (vinte por cento) de suas aquisições de arroz em casca de produtores ou de cooperativa de produtores, produzido neste Estado, ou em leilões da CONAB realizados neste Estado, somadas às...</p>
+    </div>
+    <span class="pis-ncm-record-id">id ncm-3f42fdc1fe2bf427</span>
+  </div>
+  <dl class="pis-ncm-facts product-ncm-facts">
+    <div><dt>Grupo</dt><dd>Agropecuário, alimentos e cesta básica</dd></div>
+    <div><dt>Condição</dt><dd>NOTA 01 - Este diferimento fica condicionado a que o desembaraço aduaneiro ocorra neste Estado. NOTA 02 - O diferimento previsto neste item estende-se às importações realizadas por empresa comercial exportadora, inclusive trading company , credenciada pelo estabelecimento...</dd></div>
+    <div><dt>Vigência/status</dt><dd>2026-04-26 até sem fim informado; vigente conforme ato capturado</dd></div>
+    <div><dt>Transição RT</dt><dd>regra vigente atual; exige conferência de coexistência IBS/CBS antes de aplicar</dd></div>
+    <div><dt>Base legal</dt><dd>Decreto n. 37.699/1997 - RICMS/RS integral - art. 32</dd></div>
+    <div><dt>Fonte oficial</dt><dd><a href="http://www.legislacao.sefaz.rs.gov.br/Site/DocumentView.aspx?inpKey=109362&amp;inpCodDispositive=0&amp;inpStToValidateDoc=&amp;inpForceEdit=&amp;inpDtTimeTunnel=&amp;inpDsKeywords=&amp;Debug=" target="_blank" rel="noopener">abrir fonte</a></dd></div>
+    <div><dt>SHA256 fonte</dt><dd><code>ea57050509baa35ea154</code></dd></div>
+    <div><dt>Prova/Risco</dt><dd>XML/NF-e, NCM, CEST, MVA/pauta quando houver, guia de recolhimento, EFD e memória de ST. · Perder o evento que encerra o diferimento e deixar imposto sem recolhimento ou sem prova.</dd></div>
+  </dl>
+  <details class="pis-ncm-details">
+    <summary>Ver trecho legal e abrir linha técnica</summary>
+    <p>NOTA 01 - Este diferimento fica condicionado a que o desembaraço aduaneiro ocorra neste Estado. NOTA 02 - O diferimento previsto neste item estende-se às importações realizadas por empresa comercial exportadora, inclusive trading company , credenciada pelo estabelecimento industrial habilitado no Programa de Incentivos à Cadeia Produtiva de Veículos de Transporte de Carga - PROCAM/RS, criado pela Lei nº 14.388, de...</p>
+    <p><a href="beneficios/ncm.html#ncm-3f42fdc1fe2bf427">Abrir esta linha na lista técnica NCM x benefícios</a></p>
+  </details>
+</article>
+
+<article id="produto-ncm-1892cdd635c80581"
+         class="pis-ncm-record product-ncm-record product-ncm-real-record searchable-card"
+         data-product-result
+         data-search="1507.10.00 15071000 Estado RS ICMS Agropecuário, alimentos e cesta básica diferimento NOTA 05 - No período de 01/04/17 a 31/12/17, em substituição ao limite estabelecido na nota 02, este diferimento fica limitado, por empresa, em cada trimestre civil, à quantidade equivalente a 10% (dez por cento) de suas aquisições de arroz em casca de produtores ou de cooperativa de produtores, produzido neste Estado, ou em leilões da CONAB realizados neste Estado, somadas às suas aquisições de arroz em casca e de arroz beneficiado importados do exterior, no trimestre civil anterior,... | NCM/TIPI 2807.00.10, 1507.10.00, 2912.11.00, 3909.10.00, 3909.20.19, 3909.20.29, 3909.40.11, 3909.40.91 NOTA 05 - No período de 01/04/17 a 31/12/17, em substituição ao limite estabelecido na nota 02, este diferimento fica limitado, por empresa, em cada trimestre civil, à quantidade equivalente a 10% (dez por cento) de suas aquisições de arroz em casca de produtores ou de cooperativa de produtores, produzido neste Estado, ou em leilões da CONAB realizados neste Estado, somadas às suas aquisições de arroz em casca e de arroz beneficiado importados do exterior, no trimestre civil anterior,... NOTA 05 - No período de 01/04/17 a 31/12/17, em substituição ao limite estabelecido na nota 02, este diferimento fica limitado, por empresa, em cada trimestre civil, à quantidade equivalente a 10% (dez por cento) de suas aquisições de arroz em casca de produtores ou de cooperativa de produtores, produzido neste Estado, ou em leilões da CONAB realizados neste Estado, somadas às suas aquisições de arroz em casca e de arroz beneficiado importados do exterior, no trimestre civil anterior,... NOTA 04 - Este diferimento fica condicionado a que o desembaraço aduaneiro ocorra neste Estado. LXXXVI A partir de 1º de fevereiro de 2020, componentes, partes e peças, de produtos eletroeletrônicos e de informática, importados por estabelecimento fabricante localizado nos Municípios englobados no Arranjo Produtivo Local Eletroeletrônico de Automação e Controle, enquadrado nos termos do Decreto nº 48.936/12, para utilização no respectivo processo industrial. NOTA - Este diferimento aplica-se... Decreto n. 37.699/1997 - RICMS/RS integral - art. 32 Decreto n. 37.699/1997 - RICMS/RS integral http://www.legislacao.sefaz.rs.gov.br/Site/DocumentView.aspx?inpKey=109362&amp;inpCodDispositive=0&amp;inpStToValidateDoc=&amp;inpForceEdit=&amp;inpDtTimeTunnel=&amp;inpDsKeywords=&amp;Debug= ea57050509baa35ea1542f591079daf7dbf84918f3d73ca65935bcc7d1965f71 vigente conforme ato capturado regra vigente atual; exige conferência de coexistência IBS/CBS antes de aplicar Perder o evento que encerra o diferimento e deixar imposto sem recolhimento ou sem prova.">
+  <div class="pis-ncm-record-head">
+    <div>
+      <span class="card-kicker">NCM x benefício · Estado · ICMS</span>
+      <h3>NCM 1507.10.00 · RS · diferimento</h3>
+      <p class="pis-ncm-record-summary">NOTA 05 - No período de 01/04/17 a 31/12/17, em substituição ao limite estabelecido na nota 02, este diferimento fica limitado, por empresa, em cada trimestre civil, à quantidade equivalente a 10% (dez por cento) de suas aquisições de arroz em casca de produtores ou de cooperativa de produtores,...</p>
+    </div>
+    <span class="pis-ncm-record-id">id ncm-1892cdd635c80581</span>
+  </div>
+  <dl class="pis-ncm-facts product-ncm-facts">
+    <div><dt>Grupo</dt><dd>Agropecuário, alimentos e cesta básica</dd></div>
+    <div><dt>Condição</dt><dd>NOTA 04 - Este diferimento fica condicionado a que o desembaraço aduaneiro ocorra neste Estado. LXXXVI A partir de 1º de fevereiro de 2020, componentes, partes e peças, de produtos eletroeletrônicos e de informática, importados por estabelecimento fabricante localizado nos...</dd></div>
+    <div><dt>Vigência/status</dt><dd>2026-04-26 até sem fim informado; vigente conforme ato capturado</dd></div>
+    <div><dt>Transição RT</dt><dd>regra vigente atual; exige conferência de coexistência IBS/CBS antes de aplicar</dd></div>
+    <div><dt>Base legal</dt><dd>Decreto n. 37.699/1997 - RICMS/RS integral - art. 32</dd></div>
+    <div><dt>Fonte oficial</dt><dd><a href="http://www.legislacao.sefaz.rs.gov.br/Site/DocumentView.aspx?inpKey=109362&amp;inpCodDispositive=0&amp;inpStToValidateDoc=&amp;inpForceEdit=&amp;inpDtTimeTunnel=&amp;inpDsKeywords=&amp;Debug=" target="_blank" rel="noopener">abrir fonte</a></dd></div>
+    <div><dt>SHA256 fonte</dt><dd><code>ea57050509baa35ea154</code></dd></div>
+    <div><dt>Prova/Risco</dt><dd>XML/NF-e, NCM, CEST, MVA/pauta quando houver, guia de recolhimento, EFD e memória de ST. · Perder o evento que encerra o diferimento e deixar imposto sem recolhimento ou sem prova.</dd></div>
+  </dl>
+  <details class="pis-ncm-details">
+    <summary>Ver trecho legal e abrir linha técnica</summary>
+    <p>NOTA 03 - O contribuinte deverá observar, ainda, as instruções baixadas pela Receita Estadual. NOTA 04 - Este diferimento fica condicionado a que o desembaraço aduaneiro ocorra neste Estado. NOTA 05 - No período de 01/04/17 a 31/12/17, em substituição ao limite estabelecido na nota 02, este diferimento fica limitado, por empresa, em cada trimestre civil, à quantidade equivalente a 10% (dez por cento) de suas...</p>
+    <p><a href="beneficios/ncm.html#ncm-1892cdd635c80581">Abrir esta linha na lista técnica NCM x benefícios</a></p>
+  </details>
+</article>
+
+<article id="produto-ncm-ac6b6a4766a6c7f0"
+         class="pis-ncm-record product-ncm-record product-ncm-real-record searchable-card"
+         data-product-result
+         data-search="1507.10.00 15071000 Estado RS ICMS Agropecuário, alimentos e cesta básica diferimento NOTA 06 - No período de 1º de fevereiro de 2024 a 30 de abril de 2026, em substituição ao limite estabelecido na nota 02, este diferimento fica limitado, por empresa, em cada trimestre civil, à quantidade equivalente a 40% (quarenta por cento) de suas aquisições de arroz em casca de produtores ou de cooperativa de produtores, produzido neste Estado, ou em leilões da CONAB realizados neste Estado, somadas às suas aquisições de arroz em casca e de arroz beneficiado importados do exterior, no... | NCM/TIPI 2807.00.10, 1507.10.00, 2912.11.00, 3909.10.00, 3909.20.19, 3909.20.29, 3909.40.11, 3909.40.91 NOTA 06 - No período de 1º de fevereiro de 2024 a 30 de abril de 2026, em substituição ao limite estabelecido na nota 02, este diferimento fica limitado, por empresa, em cada trimestre civil, à quantidade equivalente a 40% (quarenta por cento) de suas aquisições de arroz em casca de produtores ou de cooperativa de produtores, produzido neste Estado, ou em leilões da CONAB realizados neste Estado, somadas às suas aquisições de arroz em casca e de arroz beneficiado importados do exterior, no... NOTA 06 - No período de 1º de fevereiro de 2024 a 30 de abril de 2026, em substituição ao limite estabelecido na nota 02, este diferimento fica limitado, por empresa, em cada trimestre civil, à quantidade equivalente a 40% (quarenta por cento) de suas aquisições de arroz em casca de produtores ou de cooperativa de produtores, produzido neste Estado, ou em leilões da CONAB realizados neste Estado, somadas às suas aquisições de arroz em casca e de arroz beneficiado importados do exterior, no... LXXXVI A partir de 1º de fevereiro de 2020, componentes, partes e peças, de produtos eletroeletrônicos e de informática, importados por estabelecimento fabricante localizado nos Municípios englobados no Arranjo Produtivo Local Eletroeletrônico de Automação e Controle, enquadrado nos termos do Decreto nº 48.936/12, para utilização no respectivo processo industrial. NOTA - Este diferimento aplica-se somente aos estabelecimentos que comprovem a industrialização das mercadorias referidas no... Decreto n. 37.699/1997 - RICMS/RS integral - art. 32 Decreto n. 37.699/1997 - RICMS/RS integral http://www.legislacao.sefaz.rs.gov.br/Site/DocumentView.aspx?inpKey=109362&amp;inpCodDispositive=0&amp;inpStToValidateDoc=&amp;inpForceEdit=&amp;inpDtTimeTunnel=&amp;inpDsKeywords=&amp;Debug= ea57050509baa35ea1542f591079daf7dbf84918f3d73ca65935bcc7d1965f71 vigente conforme ato capturado regra vigente atual; exige conferência de coexistência IBS/CBS antes de aplicar Perder o evento que encerra o diferimento e deixar imposto sem recolhimento ou sem prova.">
+  <div class="pis-ncm-record-head">
+    <div>
+      <span class="card-kicker">NCM x benefício · Estado · ICMS</span>
+      <h3>NCM 1507.10.00 · RS · diferimento</h3>
+      <p class="pis-ncm-record-summary">NOTA 06 - No período de 1º de fevereiro de 2024 a 30 de abril de 2026, em substituição ao limite estabelecido na nota 02, este diferimento fica limitado, por empresa, em cada trimestre civil, à quantidade equivalente a 40% (quarenta por cento) de suas aquisições de arroz em casca de produtores ou...</p>
+    </div>
+    <span class="pis-ncm-record-id">id ncm-ac6b6a4766a6c7f0</span>
+  </div>
+  <dl class="pis-ncm-facts product-ncm-facts">
+    <div><dt>Grupo</dt><dd>Agropecuário, alimentos e cesta básica</dd></div>
+    <div><dt>Condição</dt><dd>LXXXVI A partir de 1º de fevereiro de 2020, componentes, partes e peças, de produtos eletroeletrônicos e de informática, importados por estabelecimento fabricante localizado nos Municípios englobados no Arranjo Produtivo Local Eletroeletrônico de Automação e Controle, enquadrado...</dd></div>
+    <div><dt>Vigência/status</dt><dd>2026-04-26 até sem fim informado; vigente conforme ato capturado</dd></div>
+    <div><dt>Transição RT</dt><dd>regra vigente atual; exige conferência de coexistência IBS/CBS antes de aplicar</dd></div>
+    <div><dt>Base legal</dt><dd>Decreto n. 37.699/1997 - RICMS/RS integral - art. 32</dd></div>
+    <div><dt>Fonte oficial</dt><dd><a href="http://www.legislacao.sefaz.rs.gov.br/Site/DocumentView.aspx?inpKey=109362&amp;inpCodDispositive=0&amp;inpStToValidateDoc=&amp;inpForceEdit=&amp;inpDtTimeTunnel=&amp;inpDsKeywords=&amp;Debug=" target="_blank" rel="noopener">abrir fonte</a></dd></div>
+    <div><dt>SHA256 fonte</dt><dd><code>ea57050509baa35ea154</code></dd></div>
+    <div><dt>Prova/Risco</dt><dd>XML/NF-e, NCM, CEST, MVA/pauta quando houver, guia de recolhimento, EFD e memória de ST. · Perder o evento que encerra o diferimento e deixar imposto sem recolhimento ou sem prova.</dd></div>
+  </dl>
+  <details class="pis-ncm-details">
+    <summary>Ver trecho legal e abrir linha técnica</summary>
+    <p>NOTA 06 - No período de 1º de fevereiro de 2024 a 30 de abril de 2026, em substituição ao limite estabelecido na nota 02, este diferimento fica limitado, por empresa, em cada trimestre civil, à quantidade equivalente a 40% (quarenta por cento) de suas aquisições de arroz em casca de produtores ou de cooperativa de produtores, produzido neste Estado, ou em leilões da CONAB realizados neste Estado, somadas às suas...</p>
+    <p><a href="beneficios/ncm.html#ncm-ac6b6a4766a6c7f0">Abrir esta linha na lista técnica NCM x benefícios</a></p>
+  </details>
+</article>
+
+<article id="produto-ncm-ad6160945bc456a8"
+         class="pis-ncm-record product-ncm-record product-ncm-real-record searchable-card"
+         data-product-result
+         data-search="1507.10.00 15071000 Estado RS ICMS Importação, exportação e comércio exterior diferimento NOTA - Este diferimento aplica-se somente aos estabelecimentos que comprovem a industrialização das mercadorias referidas no Livro I, art. LXXXVII Ácido sulfúrico, classificado no código 2807.00.10 da NBM/SH-NCM, destinado à produção de sílica de origem vegetal, obtida a partir da queima da casca de arroz, desde que o desembaraço aduaneiro ocorra neste Estado. LXXXVIII Óleo de soja bruto, mesmo degomado, classificado no código 1507.10.00 da NBM/SH-NCM, importado por estabelecimentos... | NCM/TIPI 2807.00.10, 1507.10.00, 2912.11.00, 3909.10.00, 3909.20.19, 3909.20.29, 3909.40.11, 3909.40.91 NOTA - Este diferimento aplica-se somente aos estabelecimentos que comprovem a industrialização das mercadorias referidas no Livro I, art. LXXXVII Ácido sulfúrico, classificado no código 2807.00.10 da NBM/SH-NCM, destinado à produção de sílica de origem vegetal, obtida a partir da queima da casca de arroz, desde que o desembaraço aduaneiro ocorra neste Estado. LXXXVIII Óleo de soja bruto, mesmo degomado, classificado no código 1507.10.00 da NBM/SH-NCM, importado por estabelecimentos... NOTA - Este diferimento aplica-se somente aos estabelecimentos que comprovem a industrialização das mercadorias referidas no Livro I, art. LXXXVII Ácido sulfúrico, classificado no código 2807.00.10 da NBM/SH-NCM, destinado à produção de sílica de origem vegetal, obtida a partir da queima da casca de arroz, desde que o desembaraço aduaneiro ocorra neste Estado. LXXXVIII Óleo de soja bruto, mesmo degomado, classificado no código 1507.10.00 da NBM/SH-NCM, importado por estabelecimentos... NOTA - Este diferimento aplica-se somente aos estabelecimentos que comprovem a industrialização das mercadorias referidas no Livro I, art. LXXXVII Ácido sulfúrico, classificado no código 2807.00.10 da NBM/SH-NCM, destinado à produção de sílica de origem vegetal, obtida a partir da queima da casca de arroz, desde que o desembaraço aduaneiro ocorra neste Estado. NOTA - Este diferimento fica condicionado a que a saída interestadual subsequente do produto industrializado, não esteja sujeita à... Decreto n. 37.699/1997 - RICMS/RS integral - art. 32 Decreto n. 37.699/1997 - RICMS/RS integral http://www.legislacao.sefaz.rs.gov.br/Site/DocumentView.aspx?inpKey=109362&amp;inpCodDispositive=0&amp;inpStToValidateDoc=&amp;inpForceEdit=&amp;inpDtTimeTunnel=&amp;inpDsKeywords=&amp;Debug= ea57050509baa35ea1542f591079daf7dbf84918f3d73ca65935bcc7d1965f71 vigente conforme ato capturado regra vigente atual; exige conferência de coexistência IBS/CBS antes de aplicar Perder o evento que encerra o diferimento e deixar imposto sem recolhimento ou sem prova.">
+  <div class="pis-ncm-record-head">
+    <div>
+      <span class="card-kicker">NCM x benefício · Estado · ICMS</span>
+      <h3>NCM 1507.10.00 · RS · diferimento</h3>
+      <p class="pis-ncm-record-summary">NOTA - Este diferimento aplica-se somente aos estabelecimentos que comprovem a industrialização das mercadorias referidas no Livro I, art. LXXXVII Ácido sulfúrico, classificado no código 2807.00.10 da NBM/SH-NCM, destinado à produção de sílica de origem vegetal, obtida a partir da queima da casca...</p>
+    </div>
+    <span class="pis-ncm-record-id">id ncm-ad6160945bc456a8</span>
+  </div>
+  <dl class="pis-ncm-facts product-ncm-facts">
+    <div><dt>Grupo</dt><dd>Importação, exportação e comércio exterior</dd></div>
+    <div><dt>Condição</dt><dd>NOTA - Este diferimento aplica-se somente aos estabelecimentos que comprovem a industrialização das mercadorias referidas no Livro I, art. LXXXVII Ácido sulfúrico, classificado no código 2807.00.10 da NBM/SH-NCM, destinado à produção de sílica de origem vegetal, obtida a partir...</dd></div>
+    <div><dt>Vigência/status</dt><dd>2026-04-26 até sem fim informado; vigente conforme ato capturado</dd></div>
+    <div><dt>Transição RT</dt><dd>regra vigente atual; exige conferência de coexistência IBS/CBS antes de aplicar</dd></div>
+    <div><dt>Base legal</dt><dd>Decreto n. 37.699/1997 - RICMS/RS integral - art. 32</dd></div>
+    <div><dt>Fonte oficial</dt><dd><a href="http://www.legislacao.sefaz.rs.gov.br/Site/DocumentView.aspx?inpKey=109362&amp;inpCodDispositive=0&amp;inpStToValidateDoc=&amp;inpForceEdit=&amp;inpDtTimeTunnel=&amp;inpDsKeywords=&amp;Debug=" target="_blank" rel="noopener">abrir fonte</a></dd></div>
+    <div><dt>SHA256 fonte</dt><dd><code>ea57050509baa35ea154</code></dd></div>
+    <div><dt>Prova/Risco</dt><dd>XML/NF-e, EFD, ajuste de apuração, memória de crédito, termo/credenciamento quando exigido e prova da condição. · Perder o evento que encerra o diferimento e deixar imposto sem recolhimento ou sem prova.</dd></div>
+  </dl>
+  <details class="pis-ncm-details">
+    <summary>Ver trecho legal e abrir linha técnica</summary>
+    <p>NOTA - Este diferimento aplica-se somente aos estabelecimentos que comprovem a industrialização das mercadorias referidas no Livro I, art. 32, CLXXXV. LXXXVII Ácido sulfúrico, classificado no código 2807.00.10 da NBM/SH-NCM, destinado à produção de sílica de origem vegetal, obtida a partir da queima da casca de arroz, desde que o desembaraço aduaneiro ocorra neste Estado. LXXXVIII Óleo de soja bruto, mesmo degomado,...</p>
+    <p><a href="beneficios/ncm.html#ncm-ad6160945bc456a8">Abrir esta linha na lista técnica NCM x benefícios</a></p>
+  </details>
+</article>
+</div>
+</section>
+<section class="content-block product-ncm-seed-panel">
+  <div class="section-heading compact">
+    <span class="eyebrow">Re-selo federal importado</span>
+    <h2>Seed Cowork mantido como A_VALIDAR</h2>
+    <p>Este bloco preserva a trilha arroz/LC 214/LC 224/LC 227 com hashes Planalto. Ele não substitui a consulta real acima e não pública benefício verde sem envelope temporal.</p>
+  </div>
   <div class="pis-ncm-card-grid product-ncm-card-grid">
 <article id="produto-arroz-ncm-1006"
          class="pis-ncm-record product-ncm-record searchable-card"
@@ -464,6 +996,7 @@
   <div>
     <a href="data/produtos-ncm/index.json">Índice Produto/NCM</a>
     <a href="data/produtos-ncm/cap-10.json">Shard capítulo 10</a>
+    <a href="data/ncm_benefits_index.json">NCM x benefícios completo</a>
     <a href="data/reforma-tributaria/reselo-lc214-lc224-lc227.ndjson">Re-selo LC 214/224/227</a>
     <a href="data/corpus-local/uf-sealing-plan.json">Plano UF/cBenef</a>
   </div>

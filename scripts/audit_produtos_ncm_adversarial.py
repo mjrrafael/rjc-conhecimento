@@ -14,12 +14,14 @@ from audit_produtos_ncm import (  # noqa: E402
     CAP10,
     CORPUS,
     INDEX,
+    NCM_BENEFITS_INDEX,
     UF_PLAN,
     load_json,
     validate_corpus,
     validate_no_local_paths,
     validate_payloads,
     validate_product,
+    validate_real_ncm_index,
     validate_source,
     validate_uf_plan,
 )
@@ -34,10 +36,12 @@ def expect_failure(name: str, errors: list[str], expected_fragment: str) -> None
 def main() -> int:
     index = load_json(INDEX)
     cap10 = load_json(CAP10)
+    ncm_index = load_json(NCM_BENEFITS_INDEX)
     corpus = load_json(CORPUS)
     uf_plan = load_json(UF_PLAN)
     assert isinstance(index, dict)
     assert isinstance(cap10, dict)
+    assert isinstance(ncm_index, dict)
     assert isinstance(corpus, dict)
     assert isinstance(uf_plan, dict)
     product = copy.deepcopy(cap10["products"][0])
@@ -63,6 +67,18 @@ def main() -> int:
     bad_product = copy.deepcopy(product)
     bad_product["search_text"] = "arroz"
     expect_failure("weak search text", validate_product(bad_product, source_ids), "search_text missing 1006")
+
+    bad_ncm_index = copy.deepcopy(ncm_index)
+    bad_ncm_index["rows"] = bad_ncm_index["rows"][:3]
+    bad_ncm_index["summary"]["unique_ncm"] = 3
+    expect_failure("seed-sized NCM index", validate_real_ncm_index(bad_ncm_index), "too small")
+
+    bad_ncm_index = copy.deepcopy(ncm_index)
+    bad_ncm_index["rows"] = [
+        row for row in bad_ncm_index["rows"]
+        if not (str(row.get("ncm_digits", "")) == "100620" and "arroz" in json.dumps(row, ensure_ascii=False).lower())
+    ]
+    expect_failure("missing arroz real row", validate_real_ncm_index(bad_ncm_index), "missing real arroz 1006.20")
 
     bad_product = copy.deepcopy(product)
     bad_product["reselos"][0]["status"] = "vigente"
@@ -99,7 +115,7 @@ def main() -> int:
         "unknown source id fonte_inventada",
     )
 
-    print(json.dumps({"status": "OK", "adversarial_cases": 12}, ensure_ascii=False))
+    print(json.dumps({"status": "OK", "adversarial_cases": 14}, ensure_ascii=False))
     return 0
 
 

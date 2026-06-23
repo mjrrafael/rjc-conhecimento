@@ -1,6 +1,6 @@
 {
   "schema": "rjc-build-freshness-v1",
-  "generated_at": "2026-06-22T21:56:17",
+  "generated_at": "2026-06-22T22:32:42",
   "artifacts": {
     "beneficios/index.html": {
       "sha256": "83e5cd610a70385f68daff4696fd8d45c48b99aa6cf796e89ec9f8c264bc3b23",
@@ -22,33 +22,41 @@
       "sha256": "ea09c95c8b01dec038d3c7ab846926f894c1ce76ba5f725a7874a91c1be4ca55",
       "bytes": 48742314
     },
+    "assets/portal-tributario.js": {
+      "sha256": "54b896b65651e0d1e5df42c2db50be27ee68ab9dd65ef5d417d6f8ef7fe07f12",
+      "bytes": 26901
+    },
     "data/benefits_crosswalk.json": {
       "sha256": "bd9770cee117cd3efbb8ee41ac901f24f85eeccd2376e96626fb5c631e7f9afc",
       "bytes": 76518089
     },
+    "data/ncm_benefits_index.json": {
+      "sha256": "a17775308e2537689a67186793efcf406e2af59069d6d3fbdf4c65f367f2cf7a",
+      "bytes": 27734849
+    },
     "produto.html": {
-      "sha256": "c896539f3432265e61d49081f85b3811fb91480dcb9b9b7fc29ce86680299e38",
-      "bytes": 21240
+      "sha256": "ab34ac6a499cd2125e7806403a88e00858f0f5520604948536e2c22a6635b77e",
+      "bytes": 119242
     },
     "data/produtos-ncm/index.json": {
       "sha256": "2145534bfe266ef86662c19bb7951c60517be5042a9e377776ef53b258463fac",
-      "bytes": 3886
+      "bytes": 3978
     },
     "data/produtos-ncm/cap-10.json": {
       "sha256": "7db2485a207c80fced2e12684dcb5edb3a23b99f5e83e824a3e304a23137498b",
-      "bytes": 5966
+      "bytes": 6113
     },
     "data/corpus-local/legal_sources_registry.json": {
       "sha256": "40d2d2dc1740ab3344fbbceac7bda9c9b4bd838dea51ff07c652501fe5a7bab6",
-      "bytes": 409178
+      "bytes": 418059
     },
     "data/corpus-local/uf-sealing-plan.json": {
       "sha256": "c4c0af0a635865a0a40ddf8709c78d411f994c52fbf00e79c57d0f82ed5fd4bc",
-      "bytes": 14781
+      "bytes": 15166
     },
     "data/reforma-tributaria/reselo-lc214-lc224-lc227.ndjson": {
       "sha256": "2fb5842cade4b5cd06c7d89e7e814d5b41aba34736f52d317fd7059fa80c046c",
-      "bytes": 4123
+      "bytes": 4127
     },
     "data/pis-cofins/ncm.ndjson": {
       "sha256": "6b1bd525ae56dd39db116caea307f7d279831f0be7ebddcda0b1e38f17d818dd",
