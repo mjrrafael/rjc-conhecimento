@@ -98,4 +98,6 @@ Nenhum item de quarentena foi promovido. O corpus estadual local segue no maximo
 
 Branch: `fix/produto-ncm-real-data`.
 
-PR, merge, Pages e verificacao HTTP publica serao registrados no fechamento da automacao apos push.
+PR: `https://github.com/mjrrafael/rjc-conhecimento/pull/18`.
+
+Merge, Pages e verificacao HTTP publica serao registrados no fechamento da automacao apos publicacao.
