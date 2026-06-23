@@ -477,20 +477,144 @@
     var root = document.querySelector("[data-product-ncm-explorer]");
     if (!root) return;
     var input = root.querySelector("#productNcmSearch");
-    var results = Array.prototype.slice.call(root.querySelectorAll("[data-product-result]"));
+    var grid = root.querySelector("[data-product-results]");
+    var staticResults = Array.prototype.slice.call(root.querySelectorAll("[data-product-result]"));
     var count = root.querySelector("[data-product-count]");
     var clear = root.querySelector("[data-product-clear]");
+    var status = root.querySelector("[data-product-load-status]");
+    var datasetUrl = root.getAttribute("data-product-dataset");
+    var records = [];
+    var renderLimit = 250;
+
+    function htmlEscape(value) {
+      return (value == null ? "" : String(value))
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;")
+        .replace(/'/g, "&#39;");
+    }
+
+    function textValue(value) {
+      if (Array.isArray(value)) return value.map(textValue).join(" ");
+      if (value && typeof value === "object") {
+        return Object.keys(value).map(function (key) { return textValue(value[key]); }).join(" ");
+      }
+      return value == null ? "" : String(value);
+    }
+
+    function trimText(value, limit) {
+      var text = textValue(value).replace(/\s+/g, " ").trim();
+      if (!text) return "nao informado";
+      if (text.length <= limit) return text;
+      return text.slice(0, limit).replace(/\s+\S*$/, "") + "...";
+    }
+
+    function rtLabel(row) {
+      var tax = String(row.tax || "").toUpperCase();
+      var base = String(row.transition_status || "").trim();
+      var legacy = { ICMS: true, ISS: true, PIS: true, COFINS: true, IPI: true, "PIS/COFINS": true };
+      if (legacy[tax]) {
+        return (base ? base + "; " : "") + "exige conferência de coexistência IBS/CBS antes de aplicar";
+      }
+      return base || "n/a";
+    }
+
+    function rowSearchText(row) {
+      return textValue({
+        ncm: row.ncm,
+        digits: row.ncm_digits,
+        origin: row.origin,
+        jurisdiction: row.jurisdiction,
+        tax: row.tax,
+        group: row.benefit_group,
+        benefit: row.benefit_type,
+        scope: row.scope_summary,
+        goods: row.goods_or_services,
+        operation: row.product_or_operation,
+        conditions: row.conditions,
+        legal_basis: row.legal_basis,
+        source: row.source_title,
+        url: row.official_url,
+        sha256: row.sha256,
+        status: row.validity_status,
+        transition: rtLabel(row),
+        risk: row.risk
+      });
+    }
+
+    function rowCard(row) {
+      var id = htmlEscape(row.id || "");
+      var scope = trimText(row.scope_summary || row.product_or_operation, 300);
+      var conditions = trimText(row.conditions, 280);
+      var legalExcerpt = trimText(row.legal_excerpt, 420);
+      var rt = rtLabel(row);
+      return [
+        '<article id="produto-' + id + '" class="pis-ncm-record product-ncm-record product-ncm-real-record searchable-card" data-product-result data-search="' + htmlEscape(row._search || rowSearchText(row)) + '">',
+        '<div class="pis-ncm-record-head"><div>',
+        '<span class="card-kicker">NCM x benefício · ' + htmlEscape(row.origin || "") + ' · ' + htmlEscape(row.tax || "") + '</span>',
+        '<h3>NCM ' + htmlEscape(row.ncm || "") + ' · ' + htmlEscape(row.jurisdiction || "") + ' · ' + htmlEscape(row.benefit_type || "") + '</h3>',
+        '<p class="pis-ncm-record-summary">' + htmlEscape(scope) + '</p>',
+        '</div><span class="pis-ncm-record-id">id ' + id + '</span></div>',
+        '<dl class="pis-ncm-facts product-ncm-facts">',
+        '<div><dt>Grupo</dt><dd>' + htmlEscape(row.benefit_group || "") + '</dd></div>',
+        '<div><dt>Condição</dt><dd>' + htmlEscape(conditions) + '</dd></div>',
+        '<div><dt>Vigência/status</dt><dd>' + htmlEscape(row.validity_start || "a validar") + ' até ' + htmlEscape(row.validity_end || "sem fim informado") + '; ' + htmlEscape(row.validity_status || "") + '</dd></div>',
+        '<div><dt>Transição RT</dt><dd>' + htmlEscape(rt) + '</dd></div>',
+        '<div><dt>Base legal</dt><dd>' + htmlEscape(row.legal_basis || "") + '</dd></div>',
+        '<div><dt>Fonte oficial</dt><dd><a href="' + htmlEscape(row.official_url || "") + '" target="_blank" rel="noopener">abrir fonte</a></dd></div>',
+        '<div><dt>SHA256 fonte</dt><dd><code>' + htmlEscape(String(row.sha256 || "").slice(0, 20)) + '</code></dd></div>',
+        '<div><dt>Prova/Risco</dt><dd>' + htmlEscape(trimText(row.proof_required, 220)) + ' · ' + htmlEscape(trimText(row.risk, 220)) + '</dd></div>',
+        '</dl>',
+        '<details class="pis-ncm-details"><summary>Ver trecho legal e abrir linha técnica</summary>',
+        '<p>' + htmlEscape(legalExcerpt) + '</p>',
+        '<p><a href="beneficios/ncm.html#' + id + '">Abrir esta linha na lista técnica NCM x benefícios</a></p>',
+        '</details></article>'
+      ].join("");
+    }
 
     function render() {
       var plan = queryPlan(input ? input.value : "");
+      if (records.length && grid) {
+        var matches = records.filter(function (row) {
+          return !plan.hasTerms || matchesText(row._search, plan);
+        });
+        var visible = matches.length;
+        var limited = matches.slice(0, renderLimit);
+        grid.innerHTML = limited.map(rowCard).join("");
+        if (count) count.textContent = visible.toLocaleString("pt-BR");
+        if (status) {
+          status.textContent = visible > renderLimit
+            ? "Exibindo " + renderLimit.toLocaleString("pt-BR") + " de " + visible.toLocaleString("pt-BR") + " resultado(s); refine a busca por NCM, UF, tributo ou benefício."
+            : "Índice técnico carregado: " + visible.toLocaleString("pt-BR") + " resultado(s) encontrados.";
+        }
+        return;
+      }
       var visibleCards = 0;
-      results.forEach(function (item) {
+      staticResults.forEach(function (item) {
         var haystack = item.getAttribute("data-search") || item.textContent;
         var ok = !plan.hasTerms || matchesText(haystack, plan);
         item.classList.toggle("is-hidden", !ok);
         if (ok) visibleCards += 1;
       });
       if (count) count.textContent = visibleCards.toLocaleString("pt-BR");
+    }
+
+    if (datasetUrl && window.fetch) {
+      fetch(datasetUrl, { cache: "no-cache" })
+        .then(function (response) {
+          if (!response.ok) throw new Error("HTTP " + response.status);
+          return response.json();
+        })
+        .then(function (payload) {
+          records = Array.isArray(payload.rows) ? payload.rows : [];
+          records.forEach(function (row) { row._search = rowSearchText(row); });
+          render();
+        })
+        .catch(function () {
+          if (status) status.textContent = "Não foi possível carregar o índice completo; usando apenas amostras renderizadas.";
+          render();
+        });
     }
 
     if (input) {

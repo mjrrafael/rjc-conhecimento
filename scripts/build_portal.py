@@ -2244,6 +2244,131 @@ def produto_source_rows(sources: list[dict]) -> str:
     return "".join(cards)
 
 
+def produto_trim(value: object, limit: int = 360, fallback: str = "nao informado") -> str:
+    text = clean_search_fragment(value)
+    if not text:
+        return fallback
+    if len(text) <= limit:
+        return text
+    return text[:limit].rsplit(" ", 1)[0] + "..."
+
+
+def produto_ncm_real_rows() -> list[dict]:
+    payload = load_json(NCM_BENEFITS_INDEX, {"rows": []})
+    rows = payload.get("rows", []) if isinstance(payload, dict) else []
+    valid_rows = [row for row in rows if isinstance(row, dict)]
+    return sorted(
+        valid_rows,
+        key=lambda row: (
+            0 if len(str(row.get("ncm_digits", ""))) in {6, 8} else 1,
+            str(row.get("ncm_digits", "")),
+            str(row.get("jurisdiction", "")),
+            str(row.get("benefit_type", "")),
+        ),
+    )
+
+
+def produto_ncm_sample_rows(rows: list[dict], limit: int = 18) -> list[dict]:
+    selected: list[dict] = []
+    seen: set[str] = set()
+
+    def add(row: dict) -> None:
+        row_id = str(row.get("id", ""))
+        if row_id and row_id not in seen and len(selected) < limit:
+            seen.add(row_id)
+            selected.append(row)
+
+    for row in rows:
+        blob = json.dumps(row, ensure_ascii=False).lower()
+        if "arroz" in blob or str(row.get("ncm_digits", "")).startswith("1006"):
+            add(row)
+    for wanted_group in (
+        "Agropecuário, alimentos e cesta básica",
+        "Medicamentos, saúde e produtos hospitalares",
+        "Energia, combustíveis e infraestrutura",
+        "Indústria, máquinas e equipamentos",
+    ):
+        for row in rows:
+            if row.get("benefit_group") == wanted_group:
+                add(row)
+                break
+    for row in rows:
+        add(row)
+    return selected
+
+
+def produto_ncm_rt_label(row: dict) -> str:
+    tax = str(row.get("tax", "")).upper()
+    base = str(row.get("transition_status") or "").strip()
+    if tax in {"ICMS", "ISS", "PIS", "COFINS", "IPI", "PIS/COFINS"}:
+        suffix = "exige conferência de coexistência IBS/CBS antes de aplicar"
+        return f"{base}; {suffix}" if base else suffix
+    return base or "n/a"
+
+
+def produto_ncm_real_card(row: dict) -> str:
+    row_id = str(row.get("id", ""))
+    ncm = str(row.get("ncm", ""))
+    jurisdiction = str(row.get("jurisdiction", ""))
+    benefit_type = str(row.get("benefit_type", ""))
+    scope = produto_trim(row.get("scope_summary") or row.get("product_or_operation"), 300)
+    conditions = produto_trim(row.get("conditions"), 280)
+    legal_excerpt = produto_trim(row.get("legal_excerpt"), 420)
+    rt_label = produto_ncm_rt_label(row)
+    search_text = search_value_text(
+        {
+            "ncm": row.get("ncm"),
+            "digits": row.get("ncm_digits"),
+            "origin": row.get("origin"),
+            "jurisdiction": row.get("jurisdiction"),
+            "tax": row.get("tax"),
+            "group": row.get("benefit_group"),
+            "benefit": row.get("benefit_type"),
+            "scope": row.get("scope_summary"),
+            "goods": row.get("goods_or_services"),
+            "operation": row.get("product_or_operation"),
+            "conditions": row.get("conditions"),
+            "legal_basis": row.get("legal_basis"),
+            "source": row.get("source_title"),
+            "url": row.get("official_url"),
+            "sha256": row.get("sha256"),
+            "status": row.get("validity_status"),
+            "transition": rt_label,
+            "risk": row.get("risk"),
+        }
+    )
+    return f"""
+<article id="produto-{escape(row_id)}"
+         class="pis-ncm-record product-ncm-record product-ncm-real-record searchable-card"
+         data-product-result
+         data-search="{escape(search_text)}">
+  <div class="pis-ncm-record-head">
+    <div>
+      <span class="card-kicker">NCM x benefício · {escape(str(row.get('origin', '')))} · {escape(str(row.get('tax', '')))}</span>
+      <h3>NCM {escape(ncm)} · {escape(jurisdiction)} · {escape(benefit_type)}</h3>
+      <p class="pis-ncm-record-summary">{escape(scope)}</p>
+    </div>
+    <span class="pis-ncm-record-id">id {escape(row_id)}</span>
+  </div>
+  <dl class="pis-ncm-facts product-ncm-facts">
+    <div><dt>Grupo</dt><dd>{escape(str(row.get('benefit_group', '')))}</dd></div>
+    <div><dt>Condição</dt><dd>{escape(conditions)}</dd></div>
+    <div><dt>Vigência/status</dt><dd>{escape(str(row.get('validity_start', '') or 'a validar'))} até {escape(str(row.get('validity_end', '') or 'sem fim informado'))}; {escape(str(row.get('validity_status', '')))}</dd></div>
+    <div><dt>Transição RT</dt><dd>{escape(rt_label)}</dd></div>
+    <div><dt>Base legal</dt><dd>{escape(str(row.get('legal_basis', '')))}</dd></div>
+    <div><dt>Fonte oficial</dt><dd><a href="{escape(str(row.get('official_url', '')))}" target="_blank" rel="noopener">abrir fonte</a></dd></div>
+    <div><dt>SHA256 fonte</dt><dd><code>{escape(str(row.get('sha256', ''))[:20])}</code></dd></div>
+    <div><dt>Prova/Risco</dt><dd>{escape(produto_trim(row.get('proof_required'), 220))} · {escape(produto_trim(row.get('risk'), 220))}</dd></div>
+  </dl>
+  <details class="pis-ncm-details">
+    <summary>Ver trecho legal e abrir linha técnica</summary>
+    <p>{escape(legal_excerpt)}</p>
+    <p><a href="beneficios/ncm.html#{escape(row_id)}">Abrir esta linha na lista técnica NCM x benefícios</a></p>
+  </details>
+</article>
+"""
+
+
 def produto_ncm_card(product: dict, source_map: dict[str, dict]) -> str:
     ncm_rows = []
     for ncm in product.get("ncm", []):
@@ -2309,13 +2434,19 @@ def produto_ncm_card(product: dict, source_map: dict[str, dict]) -> str:
 def produto_ncm_page(data: dict) -> str:
     index = produtos_ncm_index()
     products = produtos_ncm_products()
+    ncm_payload = load_json(NCM_BENEFITS_INDEX, {"summary": {}, "rows": []})
+    ncm_summary = ncm_payload.get("summary", {}) if isinstance(ncm_payload, dict) else {}
+    ncm_rows = produto_ncm_real_rows()
+    ncm_sample_rows = produto_ncm_sample_rows(ncm_rows)
     source_map = produto_source_map()
     sources = list(source_map.values())
     corpus = load_json(CORPUS_LOCAL_REGISTRY, {"summary": {}})
     uf_plan = load_json(UF_SEALING_PLAN, {"ufs": []})
     summary = index.get("summary", {})
     source_cards = produto_source_rows(sources)
-    product_cards = "".join(produto_ncm_card(product, source_map) for product in products)
+    seed_cards = "".join(produto_ncm_card(product, source_map) for product in products)
+    real_sample_cards = "".join(produto_ncm_real_card(row) for row in ncm_sample_rows)
+    total_product_results = len(ncm_rows)
     uf_rows = []
     for row in uf_plan.get("ufs", []):
         if not isinstance(row, dict):
@@ -2333,12 +2464,12 @@ def produto_ncm_page(data: dict) -> str:
 {hero("Consulta Produto/NCM", "Pesquisa operacional por produto e NCM com re-selo federal, hashes de fonte oficial, corpus estadual amarelo e cBenef A_VALIDAR quando faltar SEFAZ viva.", "Produto/NCM")}
 <section class="law-ledger">
   <div>
-    <h2>Produtos</h2>
-    <p>{fmt_num(summary.get('products', len(products)))} produto(s) e {fmt_num(summary.get('ncm_codes', 0))} codigo(s) NCM no seed inicial. A primeira trilha e arroz.</p>
+    <h2>Consulta real</h2>
+    <p>{fmt_num(len(ncm_rows))} linhas NCM x benefício carregadas do índice técnico, com {fmt_num(ncm_summary.get('unique_ncm', 0))} NCM únicos e {fmt_num(ncm_summary.get('jurisdictions', 0))} jurisdições.</p>
   </div>
   <div>
-    <h2>Fontes oficiais</h2>
-    <p>{fmt_num(summary.get('official_sources', len(sources)))} fontes Planalto carregadas; {fmt_num(summary.get('plantalto_sources_http_200', 0))} responderam HTTP 200 na importacao.</p>
+    <h2>Seed federal</h2>
+    <p>{fmt_num(summary.get('products', len(products)))} trilha(s) re-selada(s) do pacote Cowork; arroz permanece A_VALIDAR até envelope temporal completo.</p>
   </div>
   <div>
     <h2>Regra #0</h2>
@@ -2352,24 +2483,34 @@ def produto_ncm_page(data: dict) -> str:
     <p>Esta tela pesquisa NCM, descricao, tributo e ato oficial. Ela mostra evidencias e pendencias; nao transforma o seed em beneficio vigente.</p>
   </div>
   <div class="pis-ncm-entry-actions">
-    <a href="#consulta-produto-ncm">Pesquisar arroz / NCM 1006</a>
-    <a href="data/produtos-ncm/index.json">Baixar indice Produto/NCM</a>
+    <a href="#consulta-produto-ncm">Pesquisar NCM/produto agora</a>
+    <a href="beneficios/ncm.html">Abrir lista técnica completa</a>
+    <a href="data/ncm_benefits_index.json">Baixar NCM x benefícios JSON</a>
     <a href="data/corpus-local/legal_sources_registry.json">Ver corpus local amarelo</a>
   </div>
 </section>
-<section id="consulta-produto-ncm" class="content-block pis-ncm-explorer product-ncm-explorer" data-product-ncm-explorer>
+<section id="consulta-produto-ncm" class="content-block pis-ncm-explorer product-ncm-explorer" data-product-ncm-explorer data-product-dataset="data/ncm_benefits_index.json" data-product-total="{fmt_num(total_product_results)}">
   <div class="section-heading compact">
     <span class="eyebrow">Consulta guiada</span>
     <h2>Pesquisar por produto, NCM, tributo, ato ou status</h2>
-    <p>Exemplos: <code>arroz</code>, <code>1006.20</code>, <code>10064000</code>, <code>LC 224</code>, <code>A_VALIDAR</code>.</p>
+    <p>Exemplos: <code>arroz</code>, <code>1006.20</code>, <code>2711.21.00</code>, <code>MG ICMS</code>, <code>crédito presumido</code>, <code>LC 224</code>.</p>
   </div>
   <div class="pis-ncm-query">
     <label for="productNcmSearch">Busca dentro da base Produto/NCM</label>
     <input id="productNcmSearch" type="search" placeholder="Digite produto, NCM, tributo, ato, hash ou status">
     <button type="button" data-product-clear>Limpar</button>
   </div>
-  <p class="pis-ncm-count"><strong data-product-count>{fmt_num(len(products))}</strong> card(s) visiveis de {fmt_num(len(products))} seed(s).</p>
-  <div class="pis-ncm-card-grid product-ncm-card-grid">{product_cards}</div>
+  <p class="pis-ncm-count"><strong data-product-count>{fmt_num(len(ncm_sample_rows))}</strong> resultado(s) exibidos. Base técnica: {fmt_num(total_product_results)} linhas NCM x benefício.</p>
+  <p class="pis-ncm-count" data-product-load-status>Carregando índice técnico completo para busca no navegador; as amostras abaixo já vêm da base real.</p>
+  <div class="pis-ncm-card-grid product-ncm-card-grid" data-product-results>{real_sample_cards}</div>
+</section>
+<section class="content-block product-ncm-seed-panel">
+  <div class="section-heading compact">
+    <span class="eyebrow">Re-selo federal importado</span>
+    <h2>Seed Cowork mantido como A_VALIDAR</h2>
+    <p>Este bloco preserva a trilha arroz/LC 214/LC 224/LC 227 com hashes Planalto. Ele nao substitui a consulta real acima e nao publica benefício verde sem envelope temporal.</p>
+  </div>
+  <div class="pis-ncm-card-grid product-ncm-card-grid">{seed_cards}</div>
 </section>
 <section class="matrix-section">
   <h2>Fontes federais re-seladas</h2>
@@ -2393,6 +2534,7 @@ def produto_ncm_page(data: dict) -> str:
   <div>
     <a href="data/produtos-ncm/index.json">Indice Produto/NCM</a>
     <a href="data/produtos-ncm/cap-10.json">Shard capitulo 10</a>
+    <a href="data/ncm_benefits_index.json">NCM x benefícios completo</a>
     <a href="data/reforma-tributaria/reselo-lc214-lc224-lc227.ndjson">Re-selo LC 214/224/227</a>
     <a href="data/corpus-local/uf-sealing-plan.json">Plano UF/cBenef</a>
   </div>
@@ -4504,7 +4646,9 @@ def write_build_freshness() -> None:
         "assets/llm-manifest.json",
         "assets/portal-search.js",
         "assets/portal-search-full.json",
+        "assets/portal-tributario.js",
         "data/benefits_crosswalk.json",
+        "data/ncm_benefits_index.json",
         "produto.html",
         "data/produtos-ncm/index.json",
         "data/produtos-ncm/cap-10.json",
