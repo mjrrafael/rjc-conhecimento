@@ -1,7 +1,7 @@
 {
   "schema": "rjc-cowork-package-manifest-v1",
-  "generated_at": "2026-06-22T21:30:49-03:00",
-  "source_root": "G:/Outros computadores/LOCALHOST/Departamento Financeiro MTJ/#administração/#codex",
+  "generated_at": "2026-06-22T21:49:49-03:00",
+  "source_root": "#codex",
   "rule_zero": "Nada suposto; sem fonte oficial lida, vigencia e hash, o item fica A_VALIDAR.",
   "summary": {
     "documents_ingested": 36,

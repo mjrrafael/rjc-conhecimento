@@ -14,16 +14,37 @@ INDEX = ROOT / "data" / "produtos-ncm" / "index.json"
 CAP10 = ROOT / "data" / "produtos-ncm" / "cap-10.json"
 CORPUS = ROOT / "data" / "corpus-local" / "legal_sources_registry.json"
 UF_PLAN = ROOT / "data" / "corpus-local" / "uf-sealing-plan.json"
+PROJECT_MANIFEST = ROOT / "data" / "cowork" / "portal-package-manifest.json"
+REFORMA_RESELO = ROOT / "data" / "reforma-tributaria" / "reselo-lc214-lc224-lc227.ndjson"
 HTML = ROOT / "produto.html"
 SEARCH_FULL = ROOT / "assets" / "portal-search-full.json"
 LLMS = ROOT / "llms.txt"
 
 SHA_RE = re.compile(r"^[0-9a-f]{64}$")
 ABSOLUTE_DRIVE_RE = re.compile(r"\b[A-Z]:[\\/]", re.I)
+LOCAL_ENV_RE = re.compile(r"(Outros computadores|LOCALHOST|#administra)", re.I)
 
 
 def load_json(path: Path) -> object:
     return json.loads(path.read_text(encoding="utf-8"))
+
+
+def load_ndjson(path: Path) -> list[dict]:
+    rows: list[dict] = []
+    for line in path.read_text(encoding="utf-8").splitlines():
+        if line.strip():
+            rows.append(json.loads(line))
+    return rows
+
+
+def validate_no_local_paths(name: str, payload: object) -> list[str]:
+    serialized = json.dumps(payload, ensure_ascii=False) if not isinstance(payload, str) else payload
+    errors: list[str] = []
+    if ABSOLUTE_DRIVE_RE.search(serialized):
+        errors.append(f"{name} leaks an absolute local drive path")
+    if LOCAL_ENV_RE.search(serialized):
+        errors.append(f"{name} leaks local environment markers")
+    return errors
 
 
 def validate_source(source: dict) -> list[str]:
@@ -84,9 +105,6 @@ def validate_corpus(corpus: dict) -> list[str]:
     errors: list[str] = []
     if corpus.get("selo_maximo_atual") != "AMARELO_CORPUS_LOCAL":
         errors.append("corpus registry must be capped at AMARELO_CORPUS_LOCAL")
-    serialized = json.dumps(corpus, ensure_ascii=False)
-    if ABSOLUTE_DRIVE_RE.search(serialized):
-        errors.append("corpus registry leaks an absolute local drive path")
     entries = corpus.get("entries", [])
     if not isinstance(entries, list) or not entries:
         errors.append("corpus registry has no entries")
@@ -151,7 +169,7 @@ def validate_payloads(index: dict, cap10: dict, corpus: dict, uf_plan: dict) -> 
 
 def main() -> int:
     errors: list[str] = []
-    required = [INDEX, CAP10, CORPUS, UF_PLAN]
+    required = [INDEX, CAP10, CORPUS, UF_PLAN, PROJECT_MANIFEST, REFORMA_RESELO]
     for path in required:
         if not path.exists():
             errors.append(f"{path.relative_to(ROOT)} missing")
@@ -160,10 +178,22 @@ def main() -> int:
         cap10 = load_json(CAP10)
         corpus = load_json(CORPUS)
         uf_plan = load_json(UF_PLAN)
+        project_manifest = load_json(PROJECT_MANIFEST)
+        reforma_rows = load_ndjson(REFORMA_RESELO)
         if all(isinstance(obj, dict) for obj in (index, cap10, corpus, uf_plan)):
             errors.extend(validate_payloads(index, cap10, corpus, uf_plan))
         else:
             errors.append("one or more product/corpus payloads are not JSON objects")
+        payloads = {
+            "produto index": index,
+            "produto cap-10": cap10,
+            "corpus registry": corpus,
+            "uf sealing plan": uf_plan,
+            "cowork manifest": project_manifest,
+            "reforma reselo": reforma_rows,
+        }
+        for name, payload in payloads.items():
+            errors.extend(validate_no_local_paths(name, payload))
     errors.extend(validate_rendered_outputs())
     if errors:
         print("Falhas na auditoria Produto/NCM:")

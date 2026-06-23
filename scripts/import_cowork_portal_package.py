@@ -109,8 +109,15 @@ def write_ndjson(path: Path, rows: list[dict]) -> None:
     path.write_text(text, encoding="utf-8", newline="\n")
 
 
+def basename_from_any_path(value: str) -> str:
+    normalized = str(value or "").replace("\\", "/").rstrip("/")
+    return normalized.rsplit("/", 1)[-1] if normalized else ""
+
+
 def rel_from_source(path: str) -> str:
     normalized = str(path or "").replace("\\", "/")
+    if normalized.endswith("#codex"):
+        return "#codex"
     marker = "BD_LEGISLACAO/"
     idx = normalized.find(marker)
     if idx >= 0:
@@ -120,6 +127,25 @@ def rel_from_source(path: str) -> str:
     if idx >= 0:
         return normalized[idx + len(marker) :]
     return normalized
+
+
+def public_sanitize(value: object) -> object:
+    """Remove local machine paths from public JSON while preserving file identity."""
+    if isinstance(value, list):
+        return [public_sanitize(item) for item in value]
+    if isinstance(value, dict):
+        clean: dict[str, object] = {}
+        for key, item in value.items():
+            if key == "snapshot_path":
+                clean["snapshot_file"] = basename_from_any_path(str(item))
+                continue
+            clean[key] = public_sanitize(item)
+        return clean
+    if isinstance(value, str):
+        if "G:\\" in value or "G:/" in value:
+            return rel_from_source(value)
+        return value
+    return value
 
 
 def strip_absolute_paths(entry: dict) -> dict:
@@ -192,7 +218,7 @@ def project_manifest(generated_at: str) -> dict:
     return {
         "schema": "rjc-cowork-package-manifest-v1",
         "generated_at": generated_at,
-        "source_root": rel_from_source(str(SOURCE_ROOT)),
+        "source_root": "#codex",
         "rule_zero": "Nada suposto; sem fonte oficial lida, vigencia e hash, o item fica A_VALIDAR.",
         "summary": {
             "documents_ingested": len(docs),
@@ -417,6 +443,8 @@ def main() -> int:
     ingestion = read_json(INGESTION_JSON)
     reforma_rows = read_jsonl(REFORMA_RESELO_JSONL)
     arroz_rows = read_jsonl(ARROZ_RESELO_JSONL)
+    reforma_rows = [public_sanitize(row) for row in reforma_rows]
+    arroz_rows = [public_sanitize(row) for row in arroz_rows]
     sources = official_sources(ingestion, generated_at)
     corpus = corpus_registry(generated_at)
     index, cap10 = product_seed(generated_at, sources, reforma_rows, arroz_rows)

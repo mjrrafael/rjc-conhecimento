@@ -1,6 +1,6 @@
 {
   "schema": "rjc-build-freshness-v1",
-  "generated_at": "2026-06-22T21:38:06",
+  "generated_at": "2026-06-22T21:56:17",
   "artifacts": {
     "beneficios/index.html": {
       "sha256": "83e5cd610a70385f68daff4696fd8d45c48b99aa6cf796e89ec9f8c264bc3b23",
@@ -27,28 +27,28 @@
       "bytes": 76518089
     },
     "produto.html": {
-      "sha256": "deb5f98ac0231210a686670a8aed63baf332e28ea43af7f952aba80d5c0377f6",
+      "sha256": "c896539f3432265e61d49081f85b3811fb91480dcb9b9b7fc29ce86680299e38",
       "bytes": 21240
     },
     "data/produtos-ncm/index.json": {
-      "sha256": "218970992916730f735ee4912979f6e9d5461338081471f6fd15a2c41abfa334",
+      "sha256": "2145534bfe266ef86662c19bb7951c60517be5042a9e377776ef53b258463fac",
       "bytes": 3886
     },
     "data/produtos-ncm/cap-10.json": {
-      "sha256": "baa4791eb53ef9beb16a3f0a3639c417d51c29175893fe7e9ba86e1a86a8008b",
+      "sha256": "7db2485a207c80fced2e12684dcb5edb3a23b99f5e83e824a3e304a23137498b",
       "bytes": 5966
     },
     "data/corpus-local/legal_sources_registry.json": {
-      "sha256": "8e1cd7d2e36396c2c22af692910b67d681b90a6d96958ebb5ac50bf0eb876c31",
+      "sha256": "40d2d2dc1740ab3344fbbceac7bda9c9b4bd838dea51ff07c652501fe5a7bab6",
       "bytes": 409178
     },
     "data/corpus-local/uf-sealing-plan.json": {
-      "sha256": "e3da1415409fab41c6473ca88e24eb55109bd8612ba9009b67d23ec89cc293bc",
+      "sha256": "c4c0af0a635865a0a40ddf8709c78d411f994c52fbf00e79c57d0f82ed5fd4bc",
       "bytes": 14781
     },
     "data/reforma-tributaria/reselo-lc214-lc224-lc227.ndjson": {
-      "sha256": "10e1566de75d952a227fc6539bea0f68fe154e8b3a0687941cf7e61c72423bde",
-      "bytes": 5460
+      "sha256": "2fb5842cade4b5cd06c7d89e7e814d5b41aba34736f52d317fd7059fa80c046c",
+      "bytes": 4123
     },
     "data/pis-cofins/ncm.ndjson": {
       "sha256": "6b1bd525ae56dd39db116caea307f7d279831f0be7ebddcda0b1e38f17d818dd",

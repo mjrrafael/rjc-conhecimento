@@ -1,6 +1,6 @@
 {
   "schema": "rjc-produto-ncm-v1",
-  "generated_at": "2026-06-22T21:30:49-03:00",
+  "generated_at": "2026-06-22T21:49:49-03:00",
   "rule_zero": "Produto/NCM nao publica beneficio verde sem fonte oficial viva, vigencia completa e sha256.",
   "summary": {
     "products": 1,
@@ -18,13 +18,13 @@
       "url": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp214.htm",
       "url_resolve": true,
       "http_status": 200,
-      "live_sha256": "57e18fe4ede6d5a928c3dac392c22aa04509ee1496495d8dadb3f983a76720dd",
+      "live_sha256": "09b53ba9dfeae55f2368db8d64f0d4f3f483a1ffff8524bae1c57a3414f66a8d",
       "live_bytes": 5399944,
       "live_error": null,
       "snapshot_sha256": "276ee6ba1da661057331ac8e6c059c6b73d53f62ab90bdbaed91345e1170fc91",
       "snapshot_source_path": "BD_LEGISLACAO/Memória_profunda/memória_profunda_federal/fontes/planalto_snapshots_2026-06-22/lc214_2025.html",
       "snapshot_status": "FONTE_OFICIAL_VIVA_LIDA",
-      "verified_at": "2026-06-22T21:30:49-03:00",
+      "verified_at": "2026-06-22T21:49:49-03:00",
       "source_role": "fonte_oficial_primaria"
     },
     {
@@ -35,13 +35,13 @@
       "url": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp224.htm",
       "url_resolve": true,
       "http_status": 200,
-      "live_sha256": "6be89451edf0ef25c89891e2faf27341fa09c6deae5e48014a185611f71233ad",
-      "live_bytes": 85758,
+      "live_sha256": "acb51c0cec21296608590be55b0b62d1c75618fb68c1dc2e44022d247d34798c",
+      "live_bytes": 84199,
       "live_error": null,
       "snapshot_sha256": "450b76a97ba4cc40eb4f07263cadb145320dc0f539ad8526b3a8d711249c0611",
       "snapshot_source_path": "BD_LEGISLACAO/Memória_profunda/memória_profunda_federal/fontes/planalto_snapshots_2026-06-22/lc224_2025.html",
       "snapshot_status": "FONTE_OFICIAL_VIVA_LIDA",
-      "verified_at": "2026-06-22T21:30:49-03:00",
+      "verified_at": "2026-06-22T21:49:49-03:00",
       "source_role": "fonte_oficial_primaria"
     },
     {
@@ -52,13 +52,13 @@
       "url": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp227.htm",
       "url_resolve": true,
       "http_status": 200,
-      "live_sha256": "a994fcfb4d303bff5fa3ca9c63d395d586c06cc6b122f4fe31770a3023558f81",
-      "live_bytes": 1334008,
+      "live_sha256": "4175167fdfa317c29b622f9c766602625f620fa621318f15cfeab3a2bc31b81c",
+      "live_bytes": 1332449,
       "live_error": null,
       "snapshot_sha256": "0770059d59454ee81218d5ce0262a6bd45a0cd7e3a7bce6ea18556baa444e14c",
       "snapshot_source_path": "BD_LEGISLACAO/Memória_profunda/memória_profunda_federal/fontes/planalto_snapshots_2026-06-22/lc227_2026.html",
       "snapshot_status": "FONTE_OFICIAL_VIVA_LIDA",
-      "verified_at": "2026-06-22T21:30:49-03:00",
+      "verified_at": "2026-06-22T21:49:49-03:00",
       "source_role": "fonte_oficial_primaria"
     },
     {
@@ -69,13 +69,13 @@
       "url": "https://www.planalto.gov.br/ccivil_03/_ato2004-2006/2004/lei/l10.925.htm",
       "url_resolve": true,
       "http_status": 200,
-      "live_sha256": "e0a0c499999dacf3c24694ca706b6390f0326db42c12588c17231c57c796cdb8",
+      "live_sha256": "e537e4aa538834a0cffedfb0d66abd7361fd4cc051316aef6687743e822779ff",
       "live_bytes": 145121,
       "live_error": null,
       "snapshot_sha256": "08abfce2984d16c3e5e95a995759dcb677c34576791dd2119940608f2c03c67d",
       "snapshot_source_path": "BD_LEGISLACAO/Memória_profunda/memória_profunda_federal/fontes/planalto_snapshots_2026-06-22/lei_10925_2004.html",
       "snapshot_status": "FONTE_OFICIAL_VIVA_LIDA",
-      "verified_at": "2026-06-22T21:30:49-03:00",
+      "verified_at": "2026-06-22T21:49:49-03:00",
       "source_role": "fonte_oficial_primaria"
     }
   ],
