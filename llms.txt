@@ -6,7 +6,8 @@
 
 - Use as paginas HTML como fonte primaria navegavel.
 - Use `sitemap.xml` ou `sitemap.txt` para descobrir todas as URLs publicas.
-- Use `assets/portal-search-full.json`, `data/benefits_crosswalk.json`, `data/ncm_benefits_index.json` e `data/pis-cofins/ncm.ndjson` para busca e cruzamento estruturado.
+- Use `assets/portal-search-full.json`, `data/benefits_crosswalk.json`, `data/ncm_benefits_index.json`, `data/pis-cofins/ncm.ndjson` e `data/produtos-ncm/index.json` para busca e cruzamento estruturado.
+- Corpus estadual local em `data/corpus-local/legal_sources_registry.json` tem teto AMARELO; nao use como prova verde sem SEFAZ/CONFAZ oficial viva.
 - Em materia tributaria concreta, conferir a fonte oficial citada na propria pagina e fazer homologacao humana final.
 
 ## Entradas principais
@@ -15,6 +16,7 @@
 - [Federal](https://mjrrafael.github.io/rjc-conhecimento/federal/index.html)
 - [Reforma Tributaria](https://mjrrafael.github.io/rjc-conhecimento/federal/legislacao/reforma-tributaria/index.html)
 - [PIS/Cofins por NCM](https://mjrrafael.github.io/rjc-conhecimento/federal/pis-cofins-ncm.html)
+- [Produto/NCM](https://mjrrafael.github.io/rjc-conhecimento/produto.html)
 - [Beneficios fiscais](https://mjrrafael.github.io/rjc-conhecimento/beneficios/index.html)
 - [Beneficios por NCM](https://mjrrafael.github.io/rjc-conhecimento/beneficios/ncm.html)
 - [Beneficios por setor](https://mjrrafael.github.io/rjc-conhecimento/beneficios/setores.html)
@@ -33,6 +35,11 @@
 - [NCM x beneficios](https://mjrrafael.github.io/rjc-conhecimento/data/ncm_benefits_index.json)
 - [PIS/Cofins por NCM NDJSON](https://mjrrafael.github.io/rjc-conhecimento/data/pis-cofins/ncm.ndjson)
 - [PIS/Cofins por NCM indice](https://mjrrafael.github.io/rjc-conhecimento/data/pis-cofins/ncm-index.json)
+- [Produto/NCM indice](https://mjrrafael.github.io/rjc-conhecimento/data/produtos-ncm/index.json)
+- [Produto/NCM capitulo 10](https://mjrrafael.github.io/rjc-conhecimento/data/produtos-ncm/cap-10.json)
+- [Re-selo LC 214/224/227](https://mjrrafael.github.io/rjc-conhecimento/data/reforma-tributaria/reselo-lc214-lc224-lc227.ndjson)
+- [Corpus estadual local amarelo](https://mjrrafael.github.io/rjc-conhecimento/data/corpus-local/legal_sources_registry.json)
+- [Plano UF/cBenef A_VALIDAR](https://mjrrafael.github.io/rjc-conhecimento/data/corpus-local/uf-sealing-plan.json)
 - [Registro de fontes legais](https://mjrrafael.github.io/rjc-conhecimento/data/legal_sources_registry.json)
 
 ## Mapa completo de paginas HTML
@@ -691,3 +698,4 @@
 - [Painel Fiscal RJC Assessoria | Goiás, cBenef, Benefícios Fiscais, ICMS e Reforma Tributária](https://mjrrafael.github.io/rjc-conhecimento/painel-fiscal/index-v2-backup-2026-04-19.html)
 - [Painel Fiscal RJC Assessoria | ICMS Goiás, PIS/Cofins, cBenef e Reforma Tributária](https://mjrrafael.github.io/rjc-conhecimento/painel-fiscal/index-v3.html)
 - [Painel Fiscal RJC Assessoria | ICMS Goiás, PIS/Cofins, cBenef e Reforma Tributária](https://mjrrafael.github.io/rjc-conhecimento/painel-fiscal/index.html)
+- [Consulta Produto/NCM | RJC Assessoria](https://mjrrafael.github.io/rjc-conhecimento/produto.html)

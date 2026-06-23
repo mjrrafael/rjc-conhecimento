@@ -473,9 +473,43 @@
     render();
   }
 
+  function bindProductNcmExplorer() {
+    var root = document.querySelector("[data-product-ncm-explorer]");
+    if (!root) return;
+    var input = root.querySelector("#productNcmSearch");
+    var results = Array.prototype.slice.call(root.querySelectorAll("[data-product-result]"));
+    var count = root.querySelector("[data-product-count]");
+    var clear = root.querySelector("[data-product-clear]");
+
+    function render() {
+      var plan = queryPlan(input ? input.value : "");
+      var visibleCards = 0;
+      results.forEach(function (item) {
+        var haystack = item.getAttribute("data-search") || item.textContent;
+        var ok = !plan.hasTerms || matchesText(haystack, plan);
+        item.classList.toggle("is-hidden", !ok);
+        if (ok) visibleCards += 1;
+      });
+      if (count) count.textContent = visibleCards.toLocaleString("pt-BR");
+    }
+
+    if (input) {
+      input.addEventListener("input", render);
+    }
+    if (clear) {
+      clear.addEventListener("click", function () {
+        if (input) input.value = "";
+        render();
+        if (input) input.focus();
+      });
+    }
+    render();
+  }
+
   document.addEventListener("DOMContentLoaded", function () {
     bindGlobalSearch();
     bindLocalCardFilter();
     bindPisNcmExplorer();
+    bindProductNcmExplorer();
   });
 })();

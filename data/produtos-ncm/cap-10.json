@@ -1,0 +1,147 @@
+{
+  "schema": "rjc-produto-ncm-chapter-v1",
+  "generated_at": "2026-06-22T21:30:49-03:00",
+  "chapter": "10",
+  "chapter_title": "Cereais",
+  "source": "Cowork/Bruno + re-selo Planalto Sofia 2026-06-22",
+  "products": [
+    {
+      "id": "produto-arroz-ncm-1006",
+      "produto": "Arroz",
+      "chapter": "10",
+      "chapter_title": "Cereais",
+      "status": "A_VALIDAR_ENVELOPE_TEMPORAL",
+      "public_status": "visible_research_seed",
+      "publishable": false,
+      "verificado_em": "2026-06-22",
+      "why_not_green": [
+        "campo publicacao/inicio_vigencia/inicio_eficacia/fim_vigencia nao foi extraido integralmente para card de beneficio",
+        "TIPI/NCM oficial da posicao 1006 ainda nao foi capturada nesta rodada",
+        "CST/cClassTrib operacional da Reforma Tributaria permanece A_VALIDAR"
+      ],
+      "ncm": [
+        {
+          "codigo": "1006.20",
+          "digitos": "100620",
+          "descricao": "Arroz descascado (cargo ou castanho)",
+          "pis_cofins": "Lei 10.925/2004 art. 1, V cobre 1006.20 conforme re-selo Planalto.",
+          "ibs_cbs": "LC 214/2025 art. 125 + Anexo I cobre 1006.20 conforme re-selo Planalto.",
+          "status": "A_VALIDAR_ENVELOPE_TEMPORAL"
+        },
+        {
+          "codigo": "1006.30",
+          "digitos": "100630",
+          "descricao": "Arroz semibranqueado ou branqueado, mesmo polido ou brunido",
+          "pis_cofins": "Lei 10.925/2004 art. 1, V cobre 1006.30 conforme re-selo Planalto.",
+          "ibs_cbs": "LC 214/2025 art. 125 + Anexo I cobre 1006.30 conforme re-selo Planalto.",
+          "status": "A_VALIDAR_ENVELOPE_TEMPORAL"
+        },
+        {
+          "codigo": "1006.40.00",
+          "digitos": "10064000",
+          "descricao": "Arroz quebrado",
+          "pis_cofins": "A_VALIDAR: nao consta no re-selo da Lei 10.925/2004 art. 1, V.",
+          "ibs_cbs": "LC 214/2025 art. 125 + Anexo I cobre 1006.40.00 conforme re-selo Planalto.",
+          "status": "A_VALIDAR_ENVELOPE_TEMPORAL"
+        }
+      ],
+      "reselos": [
+        {
+          "id": "arroz-pis-cofins-lei10925-lc224",
+          "tributos": [
+            "PIS",
+            "COFINS"
+          ],
+          "beneficio": "aliquota_zero",
+          "ente_uf": "Uniao",
+          "assertion": "Lei 10.925/2004 art. 1, V cobre 1006.20 e 1006.30; LC 224/2025 art. 4, par. 8, III preserva a excecao da Cesta Basica Nacional.",
+          "official_source_ids": [
+            "lei_10925_2004",
+            "lc224_2025"
+          ],
+          "publicacao": "A_VALIDAR",
+          "inicio_vigencia": "A_VALIDAR",
+          "inicio_eficacia": "A_VALIDAR",
+          "fim_vigencia": "A_VALIDAR",
+          "transicao_rt": "coexiste; PIS/Cofins antigo em transicao com CBS/IBS; conferir LC 214/2025 e LC 224/2025",
+          "status": "A_VALIDAR_ENVELOPE_TEMPORAL",
+          "publishable": false
+        },
+        {
+          "id": "arroz-ibs-cbs-lc214",
+          "tributos": [
+            "IBS",
+            "CBS"
+          ],
+          "beneficio": "aliquota_zero",
+          "ente_uf": "Uniao",
+          "assertion": "LC 214/2025 art. 125 + Anexo I cobre arroz NCM 1006.20, 1006.30 e 1006.40.00.",
+          "official_source_ids": [
+            "lc214_2025"
+          ],
+          "publicacao": "A_VALIDAR",
+          "inicio_vigencia": "A_VALIDAR",
+          "inicio_eficacia": "A_VALIDAR",
+          "fim_vigencia": "A_VALIDAR",
+          "transicao_rt": "IBS/CBS em implantacao; teste 2026 e plena CBS 2027 devem ser conferidos no card operacional",
+          "status": "A_VALIDAR_ENVELOPE_TEMPORAL",
+          "publishable": false
+        },
+        {
+          "id": "lc227-nao-fonte-10pct",
+          "tributos": [
+            "IBS"
+          ],
+          "beneficio": "nao_e_beneficio",
+          "ente_uf": "Uniao",
+          "assertion": "LC 227/2026 institui CGIBS/administracao do IBS e nao e fonte da mecanica de 10% dos beneficios federais.",
+          "official_source_ids": [
+            "lc227_2026"
+          ],
+          "publicacao": "A_VALIDAR",
+          "inicio_vigencia": "A_VALIDAR",
+          "inicio_eficacia": "A_VALIDAR",
+          "fim_vigencia": "A_VALIDAR",
+          "transicao_rt": "n/a; registro negativo de enquadramento",
+          "status": "VERIFICADO_FONTE_SEM_CARD_BENEFICIO",
+          "publishable": false
+        }
+      ],
+      "official_sources": [
+        {
+          "id": "lei_10925_2004",
+          "url": "https://www.planalto.gov.br/ccivil_03/_ato2004-2006/2004/lei/l10.925.htm",
+          "http_status": 200,
+          "snapshot_sha256": "08abfce2984d16c3e5e95a995759dcb677c34576791dd2119940608f2c03c67d",
+          "live_sha256": "e0a0c499999dacf3c24694ca706b6390f0326db42c12588c17231c57c796cdb8"
+        },
+        {
+          "id": "lc224_2025",
+          "url": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp224.htm",
+          "http_status": 200,
+          "snapshot_sha256": "450b76a97ba4cc40eb4f07263cadb145320dc0f539ad8526b3a8d711249c0611",
+          "live_sha256": "6be89451edf0ef25c89891e2faf27341fa09c6deae5e48014a185611f71233ad"
+        },
+        {
+          "id": "lc214_2025",
+          "url": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp214.htm",
+          "http_status": 200,
+          "snapshot_sha256": "276ee6ba1da661057331ac8e6c059c6b73d53f62ab90bdbaed91345e1170fc91",
+          "live_sha256": "57e18fe4ede6d5a928c3dac392c22aa04509ee1496495d8dadb3f983a76720dd"
+        }
+      ],
+      "source_records": {
+        "reforma_reselo_ids": [
+          "lc224_2025_existe_objeto_e_efeito",
+          "lei_10925_art1_reducao_10_por_cento_lc224",
+          "arroz_pis_cofins_lei10925_e_excecao_cesta",
+          "lc227_2026_cgibs_nao_e_mecanica_10_por_cento"
+        ],
+        "arroz_reselo_ids": [
+          "arroz_pis_cofins_lei10925_e_excecao_cesta"
+        ]
+      },
+      "search_text": "arroz 1006 100620 100630 10064000 pis cofins aliquota zero lei 10925 lc224 lc214 ibs cbs cesta basica nacional"
+    }
+  ]
+}

@@ -1,0 +1,385 @@
+{
+  "schema": "rjc-uf-sealing-plan-v1",
+  "generated_at": "2026-06-22T21:30:49-03:00",
+  "rule_zero": "UF/cBenef nao-GO nunca vira verde por corpus local ou keyword.",
+  "ufs": [
+    {
+      "uf": "AC",
+      "corpus_entries": 33,
+      "corpus_selo": "AMARELO_CORPUS_LOCAL",
+      "cbenef_status": "A_VALIDAR_SEFAZ_VIVA",
+      "publicavel_verde": false,
+      "green_requirements": [
+        "URL oficial da SEFAZ/UF resolvendo HTTP 200",
+        "vigencia/eficacia/fim extraidos da fonte oficial",
+        "sha256 do artefato oficial lido",
+        "internalizacao/ratificacao quando depender de CONFAZ"
+      ],
+      "note": "cBenef e grades por NCM permanecem A_VALIDAR ate captura oficial viva da SEFAZ."
+    },
+    {
+      "uf": "AL",
+      "corpus_entries": 12,
+      "corpus_selo": "AMARELO_CORPUS_LOCAL",
+      "cbenef_status": "A_VALIDAR_SEFAZ_VIVA",
+      "publicavel_verde": false,
+      "green_requirements": [
+        "URL oficial da SEFAZ/UF resolvendo HTTP 200",
+        "vigencia/eficacia/fim extraidos da fonte oficial",
+        "sha256 do artefato oficial lido",
+        "internalizacao/ratificacao quando depender de CONFAZ"
+      ],
+      "note": "cBenef e grades por NCM permanecem A_VALIDAR ate captura oficial viva da SEFAZ."
+    },
+    {
+      "uf": "AP",
+      "corpus_entries": 31,
+      "corpus_selo": "AMARELO_CORPUS_LOCAL",
+      "cbenef_status": "A_VALIDAR_SEFAZ_VIVA",
+      "publicavel_verde": false,
+      "green_requirements": [
+        "URL oficial da SEFAZ/UF resolvendo HTTP 200",
+        "vigencia/eficacia/fim extraidos da fonte oficial",
+        "sha256 do artefato oficial lido",
+        "internalizacao/ratificacao quando depender de CONFAZ"
+      ],
+      "note": "cBenef e grades por NCM permanecem A_VALIDAR ate captura oficial viva da SEFAZ."
+    },
+    {
+      "uf": "AM",
+      "corpus_entries": 5,
+      "corpus_selo": "AMARELO_CORPUS_LOCAL",
+      "cbenef_status": "A_VALIDAR_SEFAZ_VIVA",
+      "publicavel_verde": false,
+      "green_requirements": [
+        "URL oficial da SEFAZ/UF resolvendo HTTP 200",
+        "vigencia/eficacia/fim extraidos da fonte oficial",
+        "sha256 do artefato oficial lido",
+        "internalizacao/ratificacao quando depender de CONFAZ"
+      ],
+      "note": "cBenef e grades por NCM permanecem A_VALIDAR ate captura oficial viva da SEFAZ."
+    },
+    {
+      "uf": "BA",
+      "corpus_entries": 14,
+      "corpus_selo": "AMARELO_CORPUS_LOCAL",
+      "cbenef_status": "A_VALIDAR_SEFAZ_VIVA",
+      "publicavel_verde": false,
+      "green_requirements": [
+        "URL oficial da SEFAZ/UF resolvendo HTTP 200",
+        "vigencia/eficacia/fim extraidos da fonte oficial",
+        "sha256 do artefato oficial lido",
+        "internalizacao/ratificacao quando depender de CONFAZ"
+      ],
+      "note": "cBenef e grades por NCM permanecem A_VALIDAR ate captura oficial viva da SEFAZ."
+    },
+    {
+      "uf": "CE",
+      "corpus_entries": 9,
+      "corpus_selo": "AMARELO_CORPUS_LOCAL",
+      "cbenef_status": "A_VALIDAR_SEFAZ_VIVA",
+      "publicavel_verde": false,
+      "green_requirements": [
+        "URL oficial da SEFAZ/UF resolvendo HTTP 200",
+        "vigencia/eficacia/fim extraidos da fonte oficial",
+        "sha256 do artefato oficial lido",
+        "internalizacao/ratificacao quando depender de CONFAZ"
+      ],
+      "note": "cBenef e grades por NCM permanecem A_VALIDAR ate captura oficial viva da SEFAZ."
+    },
+    {
+      "uf": "DF",
+      "corpus_entries": 13,
+      "corpus_selo": "AMARELO_CORPUS_LOCAL",
+      "cbenef_status": "A_VALIDAR_SEFAZ_VIVA",
+      "publicavel_verde": false,
+      "green_requirements": [
+        "URL oficial da SEFAZ/UF resolvendo HTTP 200",
+        "vigencia/eficacia/fim extraidos da fonte oficial",
+        "sha256 do artefato oficial lido",
+        "internalizacao/ratificacao quando depender de CONFAZ"
+      ],
+      "note": "cBenef e grades por NCM permanecem A_VALIDAR ate captura oficial viva da SEFAZ."
+    },
+    {
+      "uf": "ES",
+      "corpus_entries": 12,
+      "corpus_selo": "AMARELO_CORPUS_LOCAL",
+      "cbenef_status": "A_VALIDAR_SEFAZ_VIVA",
+      "publicavel_verde": false,
+      "green_requirements": [
+        "URL oficial da SEFAZ/UF resolvendo HTTP 200",
+        "vigencia/eficacia/fim extraidos da fonte oficial",
+        "sha256 do artefato oficial lido",
+        "internalizacao/ratificacao quando depender de CONFAZ"
+      ],
+      "note": "cBenef e grades por NCM permanecem A_VALIDAR ate captura oficial viva da SEFAZ."
+    },
+    {
+      "uf": "GO",
+      "corpus_entries": 11,
+      "corpus_selo": "AMARELO_CORPUS_LOCAL",
+      "cbenef_status": "AMARELO_COM_SNAPSHOT_LOCAL_REVALIDAR_SEFAZ",
+      "publicavel_verde": false,
+      "green_requirements": [
+        "URL oficial da SEFAZ/UF resolvendo HTTP 200",
+        "vigencia/eficacia/fim extraidos da fonte oficial",
+        "sha256 do artefato oficial lido",
+        "internalizacao/ratificacao quando depender de CONFAZ"
+      ],
+      "note": "GO tem snapshot local de cBenef; ainda requer revalidacao das URLs SEFAZ para verde."
+    },
+    {
+      "uf": "MA",
+      "corpus_entries": 12,
+      "corpus_selo": "AMARELO_CORPUS_LOCAL",
+      "cbenef_status": "A_VALIDAR_SEFAZ_VIVA",
+      "publicavel_verde": false,
+      "green_requirements": [
+        "URL oficial da SEFAZ/UF resolvendo HTTP 200",
+        "vigencia/eficacia/fim extraidos da fonte oficial",
+        "sha256 do artefato oficial lido",
+        "internalizacao/ratificacao quando depender de CONFAZ"
+      ],
+      "note": "cBenef e grades por NCM permanecem A_VALIDAR ate captura oficial viva da SEFAZ."
+    },
+    {
+      "uf": "MT",
+      "corpus_entries": 6,
+      "corpus_selo": "AMARELO_CORPUS_LOCAL",
+      "cbenef_status": "A_VALIDAR_SEFAZ_VIVA",
+      "publicavel_verde": false,
+      "green_requirements": [
+        "URL oficial da SEFAZ/UF resolvendo HTTP 200",
+        "vigencia/eficacia/fim extraidos da fonte oficial",
+        "sha256 do artefato oficial lido",
+        "internalizacao/ratificacao quando depender de CONFAZ"
+      ],
+      "note": "cBenef e grades por NCM permanecem A_VALIDAR ate captura oficial viva da SEFAZ."
+    },
+    {
+      "uf": "MS",
+      "corpus_entries": 11,
+      "corpus_selo": "AMARELO_CORPUS_LOCAL",
+      "cbenef_status": "A_VALIDAR_SEFAZ_VIVA",
+      "publicavel_verde": false,
+      "green_requirements": [
+        "URL oficial da SEFAZ/UF resolvendo HTTP 200",
+        "vigencia/eficacia/fim extraidos da fonte oficial",
+        "sha256 do artefato oficial lido",
+        "internalizacao/ratificacao quando depender de CONFAZ"
+      ],
+      "note": "cBenef e grades por NCM permanecem A_VALIDAR ate captura oficial viva da SEFAZ."
+    },
+    {
+      "uf": "MG",
+      "corpus_entries": 47,
+      "corpus_selo": "AMARELO_CORPUS_LOCAL",
+      "cbenef_status": "A_VALIDAR_SEFAZ_VIVA",
+      "publicavel_verde": false,
+      "green_requirements": [
+        "URL oficial da SEFAZ/UF resolvendo HTTP 200",
+        "vigencia/eficacia/fim extraidos da fonte oficial",
+        "sha256 do artefato oficial lido",
+        "internalizacao/ratificacao quando depender de CONFAZ"
+      ],
+      "note": "cBenef e grades por NCM permanecem A_VALIDAR ate captura oficial viva da SEFAZ."
+    },
+    {
+      "uf": "PA",
+      "corpus_entries": 3,
+      "corpus_selo": "AMARELO_CORPUS_LOCAL",
+      "cbenef_status": "A_VALIDAR_SEFAZ_VIVA",
+      "publicavel_verde": false,
+      "green_requirements": [
+        "URL oficial da SEFAZ/UF resolvendo HTTP 200",
+        "vigencia/eficacia/fim extraidos da fonte oficial",
+        "sha256 do artefato oficial lido",
+        "internalizacao/ratificacao quando depender de CONFAZ"
+      ],
+      "note": "cBenef e grades por NCM permanecem A_VALIDAR ate captura oficial viva da SEFAZ."
+    },
+    {
+      "uf": "PB",
+      "corpus_entries": 4,
+      "corpus_selo": "AMARELO_CORPUS_LOCAL",
+      "cbenef_status": "A_VALIDAR_SEFAZ_VIVA",
+      "publicavel_verde": false,
+      "green_requirements": [
+        "URL oficial da SEFAZ/UF resolvendo HTTP 200",
+        "vigencia/eficacia/fim extraidos da fonte oficial",
+        "sha256 do artefato oficial lido",
+        "internalizacao/ratificacao quando depender de CONFAZ"
+      ],
+      "note": "cBenef e grades por NCM permanecem A_VALIDAR ate captura oficial viva da SEFAZ."
+    },
+    {
+      "uf": "PR",
+      "corpus_entries": 23,
+      "corpus_selo": "AMARELO_CORPUS_LOCAL",
+      "cbenef_status": "A_VALIDAR_SEFAZ_VIVA",
+      "publicavel_verde": false,
+      "green_requirements": [
+        "URL oficial da SEFAZ/UF resolvendo HTTP 200",
+        "vigencia/eficacia/fim extraidos da fonte oficial",
+        "sha256 do artefato oficial lido",
+        "internalizacao/ratificacao quando depender de CONFAZ"
+      ],
+      "note": "cBenef e grades por NCM permanecem A_VALIDAR ate captura oficial viva da SEFAZ."
+    },
+    {
+      "uf": "PE",
+      "corpus_entries": 13,
+      "corpus_selo": "AMARELO_CORPUS_LOCAL",
+      "cbenef_status": "A_VALIDAR_SEFAZ_VIVA",
+      "publicavel_verde": false,
+      "green_requirements": [
+        "URL oficial da SEFAZ/UF resolvendo HTTP 200",
+        "vigencia/eficacia/fim extraidos da fonte oficial",
+        "sha256 do artefato oficial lido",
+        "internalizacao/ratificacao quando depender de CONFAZ"
+      ],
+      "note": "cBenef e grades por NCM permanecem A_VALIDAR ate captura oficial viva da SEFAZ."
+    },
+    {
+      "uf": "PI",
+      "corpus_entries": 14,
+      "corpus_selo": "AMARELO_CORPUS_LOCAL",
+      "cbenef_status": "A_VALIDAR_SEFAZ_VIVA",
+      "publicavel_verde": false,
+      "green_requirements": [
+        "URL oficial da SEFAZ/UF resolvendo HTTP 200",
+        "vigencia/eficacia/fim extraidos da fonte oficial",
+        "sha256 do artefato oficial lido",
+        "internalizacao/ratificacao quando depender de CONFAZ"
+      ],
+      "note": "cBenef e grades por NCM permanecem A_VALIDAR ate captura oficial viva da SEFAZ."
+    },
+    {
+      "uf": "RJ",
+      "corpus_entries": 4,
+      "corpus_selo": "AMARELO_CORPUS_LOCAL",
+      "cbenef_status": "A_VALIDAR_SEFAZ_VIVA",
+      "publicavel_verde": false,
+      "green_requirements": [
+        "URL oficial da SEFAZ/UF resolvendo HTTP 200",
+        "vigencia/eficacia/fim extraidos da fonte oficial",
+        "sha256 do artefato oficial lido",
+        "internalizacao/ratificacao quando depender de CONFAZ"
+      ],
+      "note": "cBenef e grades por NCM permanecem A_VALIDAR ate captura oficial viva da SEFAZ."
+    },
+    {
+      "uf": "RN",
+      "corpus_entries": 16,
+      "corpus_selo": "AMARELO_CORPUS_LOCAL",
+      "cbenef_status": "A_VALIDAR_SEFAZ_VIVA",
+      "publicavel_verde": false,
+      "green_requirements": [
+        "URL oficial da SEFAZ/UF resolvendo HTTP 200",
+        "vigencia/eficacia/fim extraidos da fonte oficial",
+        "sha256 do artefato oficial lido",
+        "internalizacao/ratificacao quando depender de CONFAZ"
+      ],
+      "note": "cBenef e grades por NCM permanecem A_VALIDAR ate captura oficial viva da SEFAZ."
+    },
+    {
+      "uf": "RS",
+      "corpus_entries": 20,
+      "corpus_selo": "AMARELO_CORPUS_LOCAL",
+      "cbenef_status": "A_VALIDAR_SEFAZ_VIVA",
+      "publicavel_verde": false,
+      "green_requirements": [
+        "URL oficial da SEFAZ/UF resolvendo HTTP 200",
+        "vigencia/eficacia/fim extraidos da fonte oficial",
+        "sha256 do artefato oficial lido",
+        "internalizacao/ratificacao quando depender de CONFAZ"
+      ],
+      "note": "cBenef e grades por NCM permanecem A_VALIDAR ate captura oficial viva da SEFAZ."
+    },
+    {
+      "uf": "RO",
+      "corpus_entries": 9,
+      "corpus_selo": "AMARELO_CORPUS_LOCAL",
+      "cbenef_status": "A_VALIDAR_SEFAZ_VIVA",
+      "publicavel_verde": false,
+      "green_requirements": [
+        "URL oficial da SEFAZ/UF resolvendo HTTP 200",
+        "vigencia/eficacia/fim extraidos da fonte oficial",
+        "sha256 do artefato oficial lido",
+        "internalizacao/ratificacao quando depender de CONFAZ"
+      ],
+      "note": "cBenef e grades por NCM permanecem A_VALIDAR ate captura oficial viva da SEFAZ."
+    },
+    {
+      "uf": "RR",
+      "corpus_entries": 13,
+      "corpus_selo": "AMARELO_CORPUS_LOCAL",
+      "cbenef_status": "A_VALIDAR_SEFAZ_VIVA",
+      "publicavel_verde": false,
+      "green_requirements": [
+        "URL oficial da SEFAZ/UF resolvendo HTTP 200",
+        "vigencia/eficacia/fim extraidos da fonte oficial",
+        "sha256 do artefato oficial lido",
+        "internalizacao/ratificacao quando depender de CONFAZ"
+      ],
+      "note": "cBenef e grades por NCM permanecem A_VALIDAR ate captura oficial viva da SEFAZ."
+    },
+    {
+      "uf": "SC",
+      "corpus_entries": 7,
+      "corpus_selo": "AMARELO_CORPUS_LOCAL",
+      "cbenef_status": "A_VALIDAR_SEFAZ_VIVA",
+      "publicavel_verde": false,
+      "green_requirements": [
+        "URL oficial da SEFAZ/UF resolvendo HTTP 200",
+        "vigencia/eficacia/fim extraidos da fonte oficial",
+        "sha256 do artefato oficial lido",
+        "internalizacao/ratificacao quando depender de CONFAZ"
+      ],
+      "note": "cBenef e grades por NCM permanecem A_VALIDAR ate captura oficial viva da SEFAZ."
+    },
+    {
+      "uf": "SP",
+      "corpus_entries": 23,
+      "corpus_selo": "AMARELO_CORPUS_LOCAL",
+      "cbenef_status": "A_VALIDAR_SEFAZ_VIVA",
+      "publicavel_verde": false,
+      "green_requirements": [
+        "URL oficial da SEFAZ/UF resolvendo HTTP 200",
+        "vigencia/eficacia/fim extraidos da fonte oficial",
+        "sha256 do artefato oficial lido",
+        "internalizacao/ratificacao quando depender de CONFAZ"
+      ],
+      "note": "cBenef e grades por NCM permanecem A_VALIDAR ate captura oficial viva da SEFAZ."
+    },
+    {
+      "uf": "SE",
+      "corpus_entries": 9,
+      "corpus_selo": "AMARELO_CORPUS_LOCAL",
+      "cbenef_status": "A_VALIDAR_SEFAZ_VIVA",
+      "publicavel_verde": false,
+      "green_requirements": [
+        "URL oficial da SEFAZ/UF resolvendo HTTP 200",
+        "vigencia/eficacia/fim extraidos da fonte oficial",
+        "sha256 do artefato oficial lido",
+        "internalizacao/ratificacao quando depender de CONFAZ"
+      ],
+      "note": "cBenef e grades por NCM permanecem A_VALIDAR ate captura oficial viva da SEFAZ."
+    },
+    {
+      "uf": "TO",
+      "corpus_entries": 9,
+      "corpus_selo": "AMARELO_CORPUS_LOCAL",
+      "cbenef_status": "A_VALIDAR_SEFAZ_VIVA",
+      "publicavel_verde": false,
+      "green_requirements": [
+        "URL oficial da SEFAZ/UF resolvendo HTTP 200",
+        "vigencia/eficacia/fim extraidos da fonte oficial",
+        "sha256 do artefato oficial lido",
+        "internalizacao/ratificacao quando depender de CONFAZ"
+      ],
+      "note": "cBenef e grades por NCM permanecem A_VALIDAR ate captura oficial viva da SEFAZ."
+    }
+  ]
+}

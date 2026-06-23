@@ -1,0 +1,265 @@
+{
+  "schema": "rjc-cowork-package-manifest-v1",
+  "generated_at": "2026-06-22T21:30:49-03:00",
+  "source_root": "G:/Outros computadores/LOCALHOST/Departamento Financeiro MTJ/#administração/#codex",
+  "rule_zero": "Nada suposto; sem fonte oficial lida, vigencia e hash, o item fica A_VALIDAR.",
+  "summary": {
+    "documents_ingested": 36,
+    "bytes": 540625,
+    "chars": 523630
+  },
+  "documents": [
+    {
+      "relative_path": "00-diagnostico/CONSOLIDADO-NACIONAL.md",
+      "sha256": "5b10f68bccf1290c4bb536eb026d7a6712e576780b7cf706537455c5f3561513",
+      "bytes": 5979,
+      "chars": 5735,
+      "ingested_at": "2026-06-22"
+    },
+    {
+      "relative_path": "00-diagnostico/DIAGNOSTICO-CONSOLIDADO.md",
+      "sha256": "8ff43e573f7b3821861f1a3b3fe4a909f74c0dc8aad0ff7a85ae0e75e412319c",
+      "bytes": 6255,
+      "chars": 6053,
+      "ingested_at": "2026-06-22"
+    },
+    {
+      "relative_path": "01-plano-arquitetura/PLANO-MESTRE-E-ARQUITETURA.md",
+      "sha256": "704012e09f3cd1983fed0760b49688b8f3fb9f9a48dd840e2024bb7ba6bcee23",
+      "bytes": 21315,
+      "chars": 20906,
+      "ingested_at": "2026-06-22"
+    },
+    {
+      "relative_path": "02-pesquisa-federal/CBS-conteudo.md",
+      "sha256": "e794703cbda98b132f3df8161de17576f62a74deaf84bfb67e9c346f888d7914",
+      "bytes": 10291,
+      "chars": 9905,
+      "ingested_at": "2026-06-22"
+    },
+    {
+      "relative_path": "02-pesquisa-federal/IBS-conteudo.md",
+      "sha256": "c4497652e9e586329aaa272200a1c6999384506c6dd8a8d1f3b24e4a3ff86c79",
+      "bytes": 13607,
+      "chars": 13093,
+      "ingested_at": "2026-06-22"
+    },
+    {
+      "relative_path": "02-pesquisa-federal/II-IE-importacao-exportacao-conteudo.md",
+      "sha256": "87cc9526048139f1c27c3d2378bc45f01ce3bee720c1377eaafd3f2abf9cff03",
+      "bytes": 15552,
+      "chars": 14928,
+      "ingested_at": "2026-06-22"
+    },
+    {
+      "relative_path": "02-pesquisa-federal/IOF-conteudo.md",
+      "sha256": "497d37d276ee21189a1319a7943ec7b900a42864ce5907bb27e86742e594463e",
+      "bytes": 16239,
+      "chars": 15694,
+      "ingested_at": "2026-06-22"
+    },
+    {
+      "relative_path": "02-pesquisa-federal/IPI-revisao.md",
+      "sha256": "2172813747c6632837124bdd0f0f2eb1a222a75369d9c69c2c0006703cc85228",
+      "bytes": 10266,
+      "chars": 9897,
+      "ingested_at": "2026-06-22"
+    },
+    {
+      "relative_path": "02-pesquisa-federal/IRPJ-CSLL-conteudo.md",
+      "sha256": "f512f613e561278c2f936c8f5eb71500956b0ae8109aa80e0116df049b4d28fa",
+      "bytes": 23424,
+      "chars": 22551,
+      "ingested_at": "2026-06-22"
+    },
+    {
+      "relative_path": "02-pesquisa-federal/IS-conteudo.md",
+      "sha256": "54466323cd2f7c5f21b81ec49ad32408df9bb594a9406d3f877745864c2679e1",
+      "bytes": 10689,
+      "chars": 10250,
+      "ingested_at": "2026-06-22"
+    },
+    {
+      "relative_path": "02-pesquisa-federal/PIS-COFINS-NCM-completude.md",
+      "sha256": "f631ca5a086ea252e0ced8941bf07684ec64e5670b49083ca92cd8d0463a90d5",
+      "bytes": 13220,
+      "chars": 12824,
+      "ingested_at": "2026-06-22"
+    },
+    {
+      "relative_path": "03-pesquisa-estados/centro-oeste/CO-F1-principal.md",
+      "sha256": "e2abe7a1dd2359c85829d6b39e7de27e19e12fe52968c730f147043243974e82",
+      "bytes": 10758,
+      "chars": 10417,
+      "ingested_at": "2026-06-22"
+    },
+    {
+      "relative_path": "03-pesquisa-estados/centro-oeste/CO-F2-beneficios-majoradas.md",
+      "sha256": "1d0797e9e2b0a3a38f65cf973b10e3e6dbe24f3320745d3d0f5c6d9d33a666f1",
+      "bytes": 34119,
+      "chars": 32928,
+      "ingested_at": "2026-06-22"
+    },
+    {
+      "relative_path": "03-pesquisa-estados/centro-oeste/CO-F3-especial-temporaria.md",
+      "sha256": "1c8bf09e2e6cf753f6f60169af80b47b17db2361a2d037e00181a9307a45135e",
+      "bytes": 18038,
+      "chars": 17590,
+      "ingested_at": "2026-06-22"
+    },
+    {
+      "relative_path": "03-pesquisa-estados/GO-ICMS-piloto-verificado.md",
+      "sha256": "93382fba2ee31284e7606609d585841a245615a2d119f3cd3c50a0d21a53f2fc",
+      "bytes": 14716,
+      "chars": 14305,
+      "ingested_at": "2026-06-22"
+    },
+    {
+      "relative_path": "03-pesquisa-estados/nordeste/NE-F1-principal.md",
+      "sha256": "cb22ffd30a456736055e9b472a4eadb0a6d19750d0ab8d72428928ff74a03a15",
+      "bytes": 13265,
+      "chars": 12816,
+      "ingested_at": "2026-06-22"
+    },
+    {
+      "relative_path": "03-pesquisa-estados/nordeste/NE-F2-beneficios-majoradas.md",
+      "sha256": "a09bb037a273f4e1ae14531e288cd290369540cc7ca5f5a9154992bce2f82d38",
+      "bytes": 18790,
+      "chars": 18100,
+      "ingested_at": "2026-06-22"
+    },
+    {
+      "relative_path": "03-pesquisa-estados/nordeste/NE-F3-especial-temporaria.md",
+      "sha256": "da81160ae8cfc2fba244e8fe2d5fc87e89b9b9dd344d8e326f36ff3b597b2638",
+      "bytes": 17742,
+      "chars": 17237,
+      "ingested_at": "2026-06-22"
+    },
+    {
+      "relative_path": "03-pesquisa-estados/norte/N-F1-principal.md",
+      "sha256": "c226d66ffcf730769c3351df8eec61a4559e5ce4e425519d16673f7fec495828",
+      "bytes": 13982,
+      "chars": 13574,
+      "ingested_at": "2026-06-22"
+    },
+    {
+      "relative_path": "03-pesquisa-estados/norte/N-F2-beneficios-majoradas.md",
+      "sha256": "27549fd40b739a9a421e27ba7d7d408d7d832fd8ba486c9a8359945dec1fa706",
+      "bytes": 34885,
+      "chars": 33602,
+      "ingested_at": "2026-06-22"
+    },
+    {
+      "relative_path": "03-pesquisa-estados/norte/N-F3-especial-temporaria.md",
+      "sha256": "ce8f7e22e28f04e434e8d62fa7ccdecdd7a558bf944b00213d0c07f5fbaff3b5",
+      "bytes": 15257,
+      "chars": 14705,
+      "ingested_at": "2026-06-22"
+    },
+    {
+      "relative_path": "03-pesquisa-estados/sudeste/SUDESTE-F1-principal.md",
+      "sha256": "e0c249a230235a351f2d2655ae632d3a7f278e91511ceccbb61e1bd3c9c765b3",
+      "bytes": 11677,
+      "chars": 11359,
+      "ingested_at": "2026-06-22"
+    },
+    {
+      "relative_path": "03-pesquisa-estados/sudeste/SUDESTE-F2-beneficios-majoradas.md",
+      "sha256": "183058da0d69ef373e73454e38e176a1fa7d7da0104a6bc219ae6a49727e1ee9",
+      "bytes": 32003,
+      "chars": 31100,
+      "ingested_at": "2026-06-22"
+    },
+    {
+      "relative_path": "03-pesquisa-estados/sudeste/SUDESTE-F3-especial-temporaria.md",
+      "sha256": "2adc8b8a8a775a1e9e36648ff624d09a7995d649171de986354ba9a33bc682b0",
+      "bytes": 18047,
+      "chars": 17438,
+      "ingested_at": "2026-06-22"
+    },
+    {
+      "relative_path": "03-pesquisa-estados/sul/SUL-F1-principal.md",
+      "sha256": "9b8e85a8ddb8b71ca2793a1a73d2bdcbb9b842529ccbe751f29c2244f2a80245",
+      "bytes": 13685,
+      "chars": 13138,
+      "ingested_at": "2026-06-22"
+    },
+    {
+      "relative_path": "03-pesquisa-estados/sul/SUL-F2-beneficios-majoradas.md",
+      "sha256": "d5df7136510098c992e3a24b6a46cc646dec2cb407cbb3439068e9458792945a",
+      "bytes": 23801,
+      "chars": 23130,
+      "ingested_at": "2026-06-22"
+    },
+    {
+      "relative_path": "03-pesquisa-estados/sul/SUL-F3-especial-temporaria.md",
+      "sha256": "e5c7e1b9757465f1cc8e97a61917e14b5390db0a5a84203b89f75c530f413ae2",
+      "bytes": 15190,
+      "chars": 14695,
+      "ingested_at": "2026-06-22"
+    },
+    {
+      "relative_path": "04-busca-nova/busca-produto.html",
+      "sha256": "777653ca4cc74689f6806809ff471764b731110eadf9130618634c2183fccdcf",
+      "bytes": 9574,
+      "chars": 9522,
+      "ingested_at": "2026-06-22"
+    },
+    {
+      "relative_path": "05-piloto-arroz/produtos-seed.json",
+      "sha256": "7d83b460f9cb71ff61559ec141b99c5dddcdd6c520f79015336c67911a3db830",
+      "bytes": 11319,
+      "chars": 11319,
+      "ingested_at": "2026-06-22"
+    },
+    {
+      "relative_path": "06-revisao/PARECER-REVISAO-ADVERSARIAL.md",
+      "sha256": "435233b35267c5fb2d69c4d603b457704ce5049509b307bbe537a45daa154cef",
+      "bytes": 13988,
+      "chars": 13551,
+      "ingested_at": "2026-06-22"
+    },
+    {
+      "relative_path": "07-handoff-sofia/PROMPT-SOFIA-CODEX-v2.md",
+      "sha256": "62dda9369c162bd07398eafbbe0bfdd8a76bd68e564bbe0ff60991caaf81f1a1",
+      "bytes": 7531,
+      "chars": 7322,
+      "ingested_at": "2026-06-22"
+    },
+    {
+      "relative_path": "07-handoff-sofia/PROMPT-SOFIA-CODEX.md",
+      "sha256": "29355de3741302a6fc7d82e5891b1fb84837768d451ea1ddeb9035b5a3e6ff50",
+      "bytes": 9864,
+      "chars": 9594,
+      "ingested_at": "2026-06-22"
+    },
+    {
+      "relative_path": "08-integracao-bd-legislacao/AVALIACAO-INTEGRACAO-E-REVISAO.md",
+      "sha256": "4c50f2083b3789dd5f705841d1044f61433ea8037abc42e3caa7b87d740df370",
+      "bytes": 6433,
+      "chars": 6255,
+      "ingested_at": "2026-06-22"
+    },
+    {
+      "relative_path": "08-integracao-bd-legislacao/MAPA-BANCO-FEDERAL-E-MEMORIA.md",
+      "sha256": "9002a834315b00989ca85823d1369382842b0fcc1d3772ea67996c82b7069984",
+      "bytes": 9015,
+      "chars": 8806,
+      "ingested_at": "2026-06-22"
+    },
+    {
+      "relative_path": "08-integracao-bd-legislacao/MAPA-CORPUS-ESTADUAL.md",
+      "sha256": "638279be4d4bdd00a1a4a1a634ed1ccfc3401787a4ca550c91817f394284567c",
+      "bytes": 14254,
+      "chars": 13865,
+      "ingested_at": "2026-06-22"
+    },
+    {
+      "relative_path": "workflow.md",
+      "sha256": "5abe5b56cebf6feb9077b2737b4bd70057a36977b8b79d9bbd01043ce8b4747b",
+      "bytes": 5855,
+      "chars": 5426,
+      "ingested_at": "2026-06-22"
+    }
+  ]
+}

@@ -5,6 +5,7 @@ from __future__ import annotations
 
 import json
 import re
+import hashlib
 from html.parser import HTMLParser
 from pathlib import Path
 
@@ -20,6 +21,7 @@ LLMS_TXT = ROOT / "llms.txt"
 SITEMAP_TXT = ROOT / "sitemap.txt"
 SITEMAP_XML = ROOT / "sitemap.xml"
 BENEFIT_INDEX = ROOT / "beneficios" / "index.html"
+TEXTUAL_HASH_SUFFIXES = {".html", ".txt", ".json", ".js", ".xml", ".ndjson", ".md"}
 STALE_DATE_MARKERS = (
     "/".join(["25", "04", "2026"]),
     f"Atualizacao editorial: {'/'.join(['25', '04', '2026'])}",
@@ -54,6 +56,18 @@ def load_json(path: Path, fallback: object) -> object:
 
 def read_text(path: Path) -> str:
     return path.read_text(encoding="utf-8", errors="ignore") if path.exists() else ""
+
+
+def canonical_sha256(path: Path) -> str:
+    digest = hashlib.sha256()
+    if path.suffix.lower() in TEXTUAL_HASH_SUFFIXES:
+        data = read_text(path).replace("\r\n", "\n").replace("\r", "\n").encode("utf-8")
+        digest.update(data)
+        return digest.hexdigest()
+    with path.open("rb") as handle:
+        for chunk in iter(lambda: handle.read(1024 * 1024), b""):
+            digest.update(chunk)
+    return digest.hexdigest()
 
 
 def benefit_payload() -> dict:
