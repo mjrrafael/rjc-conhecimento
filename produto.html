@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Consulta Produto/NCM | RJC Assessoria</title>
+  <meta name="description" content="Produto, NCM, re-selo federal, corpus local amarelo e pendencias A_VALIDAR.">
+  <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+  <link rel="canonical" href="https://mjrrafael.github.io/rjc-conhecimento/produto.html">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Portal RJC Tributario Aberto">
+  <meta property="og:title" content="Consulta Produto/NCM | RJC Assessoria">
+  <meta property="og:description" content="Produto, NCM, re-selo federal, corpus local amarelo e pendencias A_VALIDAR.">
+  <meta property="og:url" content="https://mjrrafael.github.io/rjc-conhecimento/produto.html">
+  <link rel="icon" href="ico.png">
+  <link rel="stylesheet" href="assets/portal-tributario.css">
+  <script defer src="assets/portal-search.js"></script>
+  <script defer src="assets/portal-tributario.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="topbar">
+      <a class="brand" href="index.html" aria-label="Portal RJC Tributario Aberto">
+        <img src="logo.png" alt="RJC Assessoria">
+        <span>
+          <strong>RJC Tributário Aberto</strong>
+          <small>A Arte de Registrar o Patrimonio</small>
+        </span>
+      </a>
+      <nav class="primary-nav" aria-label="Navegacao principal">
+        <a href="index.html" class="active">Inicio</a><a href="estados/index.html" class="">Estados</a><a href="confaz/index.html" class="">CONFAZ</a><a href="federal/index.html" class="">Federal</a><a href="beneficios/index.html" class="">Benefícios</a><a href="auditoria/index.html" class="">Auditoria</a><a href="folha-clt/index.html" class="">Folha e CLT</a><a href="biblioteca/index.html" class="">Biblioteca</a>
+      </nav>
+    </div>
+    <div class="searchbar" role="search">
+      <label for="globalSearch">Buscar em todo o portal</label>
+      <input id="globalSearch" type="search" placeholder="Busca semântica: arroz, benefício fiscal arroz, NCM, cBenef, CST, Estado, regime ou artigo">
+      <div id="searchResults" class="search-results" aria-live="polite"></div>
+    </div>
+    <nav class="study-strip" aria-label="Trilhas rápidas de estudo">
+      <strong>Trilhas</strong>
+      <div><a href="federal/legislacao/index.html">Leis federais</a><a href="estados/index.html">ICMS por Estado</a><a href="beneficios/index.html">Benefícios/NCM</a><a href="produto.html">Produto/NCM</a><a href="beneficios/setores.html">Benefícios por setor</a><a href="beneficios/reforma.html">Benefícios IBS/CBS</a><a href="auditoria/index.html">Auditoria</a><a href="federal/legislacao/reforma-tributaria/index.html">Reforma</a><a href="federal/legislacao/reforma-tributaria/cst-cclasstrib-ibs-cbs.html">CST/cClassTrib</a><a href="confaz/ultimos-5-anos.html">CONFAZ 5 anos</a></div>
+    </nav>
+  </header>
+  <main>
+
+
+<section class="hero-panel">
+  <div>
+    <span class="eyebrow">Produto/NCM</span>
+    <h1>Consulta Produto/NCM</h1>
+    <p>Pesquisa operacional por produto e NCM com re-selo federal, hashes de fonte oficial, corpus estadual amarelo e cBenef A_VALIDAR quando faltar SEFAZ viva.</p>
+  </div>
+  <aside class="hero-proof">
+    <strong>Regra editorial</strong>
+    <p>Lei em tela. Depois a leitura pratica.</p>
+  </aside>
+</section>
+
+<section class="law-ledger">
+  <div>
+    <h2>Produtos</h2>
+    <p>1 produto(s) e 3 código(s) NCM no seed inicial. A primeira trilha e arroz.</p>
+  </div>
+  <div>
+    <h2>Fontes oficiais</h2>
+    <p>4 fontes Planalto carregadas; 4 responderam HTTP 200 na importação.</p>
+  </div>
+  <div>
+    <h2>Regra #0</h2>
+    <p>Fonte local ou keyword nunca vira verde. Sem URL oficial viva, vigência completa e sha256, o item permanece A_VALIDAR.</p>
+  </div>
+</section>
+<section class="content-block pis-ncm-entry-panel product-entry-panel">
+  <div>
+    <span class="eyebrow">Nova busca estruturada</span>
+    <h2>Produto primeiro, benefício depois</h2>
+    <p>Esta tela pesquisa NCM, descrição, tributo e ato oficial. Ela mostra evidencias e pendencias; não transforma o seed em benefício vigente.</p>
+  </div>
+  <div class="pis-ncm-entry-actions">
+    <a href="#consulta-produto-ncm">Pesquisar arroz / NCM 1006</a>
+    <a href="data/produtos-ncm/index.json">Baixar índice Produto/NCM</a>
+    <a href="data/corpus-local/legal_sources_registry.json">Ver corpus local amarelo</a>
+  </div>
+</section>
+<section id="consulta-produto-ncm" class="content-block pis-ncm-explorer product-ncm-explorer" data-product-ncm-explorer>
+  <div class="section-heading compact">
+    <span class="eyebrow">Consulta guiada</span>
+    <h2>Pesquisar por produto, NCM, tributo, ato ou status</h2>
+    <p>Exemplos: <code>arroz</code>, <code>1006.20</code>, <code>10064000</code>, <code>LC 224</code>, <code>A_VALIDAR</code>.</p>
+  </div>
+  <div class="pis-ncm-query">
+    <label for="productNcmSearch">Busca dentro da base Produto/NCM</label>
+    <input id="productNcmSearch" type="search" placeholder="Digite produto, NCM, tributo, ato, hash ou status">
+    <button type="button" data-product-clear>Limpar</button>
+  </div>
+  <p class="pis-ncm-count"><strong data-product-count>1</strong> card(s) visiveis de 1 seed(s).</p>
+  <div class="pis-ncm-card-grid product-ncm-card-grid">
+<article id="produto-arroz-ncm-1006"
+         class="pis-ncm-record product-ncm-record searchable-card"
+         data-product-result
+         data-search="Arroz arroz 1006 100620 100630 10064000 pis cofins aliquota zero lei 10925 lc224 lc214 ibs cbs cesta basica nacional lei_10925_2004 lc224_2025 lc214_2025">
+  <div class="pis-ncm-record-head">
+    <div>
+      <span class="card-kicker">Produto/NCM · A_VALIDAR_ENVELOPE_TEMPORAL</span>
+      <h3>Arroz · Capítulo 10</h3>
+      <p class="pis-ncm-record-summary">Seed de pesquisa com fonte oficial primaria e hashes Planalto. Não e card de benefício publishable enquanto o envelope temporal completo não for extraido.</p>
+    </div>
+    <span class="pis-ncm-record-id">id produto-arroz-ncm-1006</span>
+  </div>
+  <div class="product-ncm-grid">
+<article class="product-ncm-chip searchable-card" data-search="1006.20 100620 Arroz descascado (cargo ou castanho) Lei 10.925/2004 art. 1, V cobre 1006.20 conforme re-selo Planalto. LC 214/2025 art. 125 + Anexo I cobre 1006.20 conforme re-selo Planalto. A_VALIDAR_ENVELOPE_TEMPORAL">
+  <strong>1006.20</strong>
+  <span>Arroz descascado (cargo ou castanho)</span>
+  <small>A_VALIDAR_ENVELOPE_TEMPORAL</small>
+  <p><b>PIS/Cofins:</b> Lei 10.925/2004 art. 1, V cobre 1006.20 conforme re-selo Planalto.</p>
+  <p><b>IBS/CBS:</b> LC 214/2025 art. 125 + Anexo I cobre 1006.20 conforme re-selo Planalto.</p>
+</article>
+
+<article class="product-ncm-chip searchable-card" data-search="1006.30 100630 Arroz semibranqueado ou branqueado, mesmo polido ou brunido Lei 10.925/2004 art. 1, V cobre 1006.30 conforme re-selo Planalto. LC 214/2025 art. 125 + Anexo I cobre 1006.30 conforme re-selo Planalto. A_VALIDAR_ENVELOPE_TEMPORAL">
+  <strong>1006.30</strong>
+  <span>Arroz semibranqueado ou branqueado, mesmo polido ou brunido</span>
+  <small>A_VALIDAR_ENVELOPE_TEMPORAL</small>
+  <p><b>PIS/Cofins:</b> Lei 10.925/2004 art. 1, V cobre 1006.30 conforme re-selo Planalto.</p>
+  <p><b>IBS/CBS:</b> LC 214/2025 art. 125 + Anexo I cobre 1006.30 conforme re-selo Planalto.</p>
+</article>
+
+<article class="product-ncm-chip searchable-card" data-search="1006.40.00 10064000 Arroz quebrado A_VALIDAR: nao consta no re-selo da Lei 10.925/2004 art. 1, V. LC 214/2025 art. 125 + Anexo I cobre 1006.40.00 conforme re-selo Planalto. A_VALIDAR_ENVELOPE_TEMPORAL">
+  <strong>1006.40.00</strong>
+  <span>Arroz quebrado</span>
+  <small>A_VALIDAR_ENVELOPE_TEMPORAL</small>
+  <p><b>PIS/Cofins:</b> A_VALIDAR: não consta no re-selo da Lei 10.925/2004 art. 1, V.</p>
+  <p><b>IBS/CBS:</b> LC 214/2025 art. 125 + Anexo I cobre 1006.40.00 conforme re-selo Planalto.</p>
+</article>
+</div>
+  <div class="product-ncm-warning">
+    <strong>Bloqueios para verde</strong>
+    <ul><li>campo publicação/inicio_vigencia/inicio_eficacia/fim_vigencia não foi extraido integralmente para card de benefício</li><li>TIPI/NCM oficial da posicao 1006 ainda não foi capturada nesta rodada</li><li>CST/cClassTrib operacional da Reforma Tributária permanece A_VALIDAR</li></ul>
+  </div>
+  <div class="product-reselo-grid">
+<article class="product-reselo-card searchable-card" data-search="Lei 10.925/2004 art. 1, V cobre 1006.20 e 1006.30; LC 224/2025 art. 4, par. 8, III preserva a excecao da Cesta Basica Nacional. arroz-pis-cofins-lei10925-lc224">
+  <span class="card-kicker">PIS, COFINS · A_VALIDAR_ENVELOPE_TEMPORAL</span>
+  <h4>aliquota_zero</h4>
+  <p>Lei 10.925/2004 art. 1, V cobre 1006.20 e 1006.30; LC 224/2025 art. 4, par. 8, III preserva a exceção da Cesta Basica Nacional.</p>
+  <dl class="product-validity-grid">
+    <div><dt>Publicação</dt><dd>A_VALIDAR</dd></div>
+    <div><dt>Vigência</dt><dd>A_VALIDAR</dd></div>
+    <div><dt>Eficacia</dt><dd>A_VALIDAR</dd></div>
+    <div><dt>Fim</dt><dd>A_VALIDAR</dd></div>
+  </dl>
+  <p><strong>Transicao RT:</strong> coexiste; PIS/Cofins antigo em transicao com CBS/IBS; conferir LC 214/2025 e LC 224/2025</p>
+  <p><strong>Fontes:</strong> <a href="https://www.planalto.gov.br/ccivil_03/_ato2004-2006/2004/lei/l10.925.htm" target="_blank" rel="noopener">Lei 10.925/2004</a> · <a href="https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp224.htm" target="_blank" rel="noopener">Lei Complementar 224/2025</a></p>
+</article>
+
+<article class="product-reselo-card searchable-card" data-search="LC 214/2025 art. 125 + Anexo I cobre arroz NCM 1006.20, 1006.30 e 1006.40.00. arroz-ibs-cbs-lc214">
+  <span class="card-kicker">IBS, CBS · A_VALIDAR_ENVELOPE_TEMPORAL</span>
+  <h4>aliquota_zero</h4>
+  <p>LC 214/2025 art. 125 + Anexo I cobre arroz NCM 1006.20, 1006.30 e 1006.40.00.</p>
+  <dl class="product-validity-grid">
+    <div><dt>Publicação</dt><dd>A_VALIDAR</dd></div>
+    <div><dt>Vigência</dt><dd>A_VALIDAR</dd></div>
+    <div><dt>Eficacia</dt><dd>A_VALIDAR</dd></div>
+    <div><dt>Fim</dt><dd>A_VALIDAR</dd></div>
+  </dl>
+  <p><strong>Transicao RT:</strong> IBS/CBS em implantacao; teste 2026 e plena CBS 2027 devem ser conferidos no card operacional</p>
+  <p><strong>Fontes:</strong> <a href="https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp214.htm" target="_blank" rel="noopener">Lei Complementar 214/2025</a></p>
+</article>
+
+<article class="product-reselo-card searchable-card" data-search="LC 227/2026 institui CGIBS/administracao do IBS e nao e fonte da mecanica de 10% dos beneficios federais. lc227-nao-fonte-10pct">
+  <span class="card-kicker">IBS · VERIFICADO_FONTE_SEM_CARD_BENEFICIO</span>
+  <h4>nao_e_beneficio</h4>
+  <p>LC 227/2026 institui CGIBS/administracao do IBS e não e fonte da mecanica de 10% dos benefícios federais.</p>
+  <dl class="product-validity-grid">
+    <div><dt>Publicação</dt><dd>A_VALIDAR</dd></div>
+    <div><dt>Vigência</dt><dd>A_VALIDAR</dd></div>
+    <div><dt>Eficacia</dt><dd>A_VALIDAR</dd></div>
+    <div><dt>Fim</dt><dd>A_VALIDAR</dd></div>
+  </dl>
+  <p><strong>Transicao RT:</strong> n/a; registro negativo de enquadramento</p>
+  <p><strong>Fontes:</strong> <a href="https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp227.htm" target="_blank" rel="noopener">Lei Complementar 227/2026</a></p>
+</article>
+</div>
+</article>
+</div>
+</section>
+<section class="matrix-section">
+  <h2>Fontes federais re-seladas</h2>
+  <div class="matrix-grid product-source-grid">
+<article class="matrix-card product-source-card searchable-card" data-search="Lei Complementar 214/2025 LC 214/2025 - IBS, CBS e Imposto Seletivo lc214_2025">
+  <h3>Lei Complementar 214/2025</h3>
+  <p>LC 214/2025 - IBS, CBS e Imposto Seletivo</p>
+  <dl>
+    <dt>HTTP</dt><dd>200</dd>
+    <dt>URL</dt><dd><a href="https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp214.htm" target="_blank" rel="noopener">fonte oficial</a></dd>
+    <dt>SHA vivo</dt><dd><code>57e18fe4ede6d5a9...</code></dd>
+    <dt>SHA snapshot</dt><dd><code>276ee6ba1da66105...</code></dd>
+  </dl>
+</article>
+
+<article class="matrix-card product-source-card searchable-card" data-search="Lei Complementar 224/2025 LC 224/2025 - reducao gradual de beneficios federais lc224_2025">
+  <h3>Lei Complementar 224/2025</h3>
+  <p>LC 224/2025 - redução gradual de benefícios federais</p>
+  <dl>
+    <dt>HTTP</dt><dd>200</dd>
+    <dt>URL</dt><dd><a href="https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp224.htm" target="_blank" rel="noopener">fonte oficial</a></dd>
+    <dt>SHA vivo</dt><dd><code>6be89451edf0ef25...</code></dd>
+    <dt>SHA snapshot</dt><dd><code>450b76a97ba4cc40...</code></dd>
+  </dl>
+</article>
+
+<article class="matrix-card product-source-card searchable-card" data-search="Lei Complementar 227/2026 LC 227/2026 - CGIBS e administracao do IBS lc227_2026">
+  <h3>Lei Complementar 227/2026</h3>
+  <p>LC 227/2026 - CGIBS e administracao do IBS</p>
+  <dl>
+    <dt>HTTP</dt><dd>200</dd>
+    <dt>URL</dt><dd><a href="https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp227.htm" target="_blank" rel="noopener">fonte oficial</a></dd>
+    <dt>SHA vivo</dt><dd><code>a994fcfb4d303bff...</code></dd>
+    <dt>SHA snapshot</dt><dd><code>0770059d59454ee8...</code></dd>
+  </dl>
+</article>
+
+<article class="matrix-card product-source-card searchable-card" data-search="Lei 10.925/2004 Lei 10.925/2004 - aliquota zero PIS/Cofins lei_10925_2004">
+  <h3>Lei 10.925/2004</h3>
+  <p>Lei 10.925/2004 - alíquota zero PIS/Cofins</p>
+  <dl>
+    <dt>HTTP</dt><dd>200</dd>
+    <dt>URL</dt><dd><a href="https://www.planalto.gov.br/ccivil_03/_ato2004-2006/2004/lei/l10.925.htm" target="_blank" rel="noopener">fonte oficial</a></dd>
+    <dt>SHA vivo</dt><dd><code>e0a0c499999dacf3...</code></dd>
+    <dt>SHA snapshot</dt><dd><code>08abfce2984d16c3...</code></dd>
+  </dl>
+</article>
+</div>
+</section>
+<section class="content-block inventory-table product-uf-plan">
+  <h2>Plano UF/cBenef: corpus local amarelo</h2>
+  <p>O registro estadual importado tem 384 entradas locais. Nenhuma UF não-GO e publicada como verde para cBenef sem captura oficial SEFAZ viva.</p>
+  <details class="pis-ncm-table-details">
+    <summary>Abrir plano das 27 UFs</summary>
+    <div class="doc-table-wrap">
+      <table class="doc-table">
+        <thead><tr><th>UF</th><th>Selo corpus</th><th>Status cBenef</th><th>Verde publicavel?</th><th>Nota</th></tr></thead>
+        <tbody>
+<tr>
+  <td><strong>AC</strong></td>
+  <td>AMARELO_CORPUS_LOCAL</td>
+  <td>A_VALIDAR_SEFAZ_VIVA</td>
+  <td>não</td>
+  <td>cBenef e grades por NCM permanecem A_VALIDAR ate captura oficial viva da SEFAZ.</td>
+</tr>
+
+<tr>
+  <td><strong>AL</strong></td>
+  <td>AMARELO_CORPUS_LOCAL</td>
+  <td>A_VALIDAR_SEFAZ_VIVA</td>
+  <td>não</td>
+  <td>cBenef e grades por NCM permanecem A_VALIDAR ate captura oficial viva da SEFAZ.</td>
+</tr>
+
+<tr>
+  <td><strong>AP</strong></td>
+  <td>AMARELO_CORPUS_LOCAL</td>
+  <td>A_VALIDAR_SEFAZ_VIVA</td>
+  <td>não</td>
+  <td>cBenef e grades por NCM permanecem A_VALIDAR ate captura oficial viva da SEFAZ.</td>
+</tr>
+
+<tr>
+  <td><strong>AM</strong></td>
+  <td>AMARELO_CORPUS_LOCAL</td>
+  <td>A_VALIDAR_SEFAZ_VIVA</td>
+  <td>não</td>
+  <td>cBenef e grades por NCM permanecem A_VALIDAR ate captura oficial viva da SEFAZ.</td>
+</tr>
+
+<tr>
+  <td><strong>BA</strong></td>
+  <td>AMARELO_CORPUS_LOCAL</td>
+  <td>A_VALIDAR_SEFAZ_VIVA</td>
+  <td>não</td>
+  <td>cBenef e grades por NCM permanecem A_VALIDAR ate captura oficial viva da SEFAZ.</td>
+</tr>
+
+<tr>
+  <td><strong>CE</strong></td>
+  <td>AMARELO_CORPUS_LOCAL</td>
+  <td>A_VALIDAR_SEFAZ_VIVA</td>
+  <td>não</td>
+  <td>cBenef e grades por NCM permanecem A_VALIDAR ate captura oficial viva da SEFAZ.</td>
+</tr>
+
+<tr>
+  <td><strong>DF</strong></td>
+  <td>AMARELO_CORPUS_LOCAL</td>
+  <td>A_VALIDAR_SEFAZ_VIVA</td>
+  <td>não</td>
+  <td>cBenef e grades por NCM permanecem A_VALIDAR ate captura oficial viva da SEFAZ.</td>
+</tr>
+
+<tr>
+  <td><strong>ES</strong></td>
+  <td>AMARELO_CORPUS_LOCAL</td>
+  <td>A_VALIDAR_SEFAZ_VIVA</td>
+  <td>não</td>
+  <td>cBenef e grades por NCM permanecem A_VALIDAR ate captura oficial viva da SEFAZ.</td>
+</tr>
+
+<tr>
+  <td><strong>GO</strong></td>
+  <td>AMARELO_CORPUS_LOCAL</td>
+  <td>AMARELO_COM_SNAPSHOT_LOCAL_REVALIDAR_SEFAZ</td>
+  <td>não</td>
+  <td>GO tem snapshot local de cBenef; ainda requer revalidacao das URLs SEFAZ para verde.</td>
+</tr>
+
+<tr>
+  <td><strong>MA</strong></td>
+  <td>AMARELO_CORPUS_LOCAL</td>
+  <td>A_VALIDAR_SEFAZ_VIVA</td>
+  <td>não</td>
+  <td>cBenef e grades por NCM permanecem A_VALIDAR ate captura oficial viva da SEFAZ.</td>
+</tr>
+
+<tr>
+  <td><strong>MT</strong></td>
+  <td>AMARELO_CORPUS_LOCAL</td>
+  <td>A_VALIDAR_SEFAZ_VIVA</td>
+  <td>não</td>
+  <td>cBenef e grades por NCM permanecem A_VALIDAR ate captura oficial viva da SEFAZ.</td>
+</tr>
+
+<tr>
+  <td><strong>MS</strong></td>
+  <td>AMARELO_CORPUS_LOCAL</td>
+  <td>A_VALIDAR_SEFAZ_VIVA</td>
+  <td>não</td>
+  <td>cBenef e grades por NCM permanecem A_VALIDAR ate captura oficial viva da SEFAZ.</td>
+</tr>
+
+<tr>
+  <td><strong>MG</strong></td>
+  <td>AMARELO_CORPUS_LOCAL</td>
+  <td>A_VALIDAR_SEFAZ_VIVA</td>
+  <td>não</td>
+  <td>cBenef e grades por NCM permanecem A_VALIDAR ate captura oficial viva da SEFAZ.</td>
+</tr>
+
+<tr>
+  <td><strong>PA</strong></td>
+  <td>AMARELO_CORPUS_LOCAL</td>
+  <td>A_VALIDAR_SEFAZ_VIVA</td>
+  <td>não</td>
+  <td>cBenef e grades por NCM permanecem A_VALIDAR ate captura oficial viva da SEFAZ.</td>
+</tr>
+
+<tr>
+  <td><strong>PB</strong></td>
+  <td>AMARELO_CORPUS_LOCAL</td>
+  <td>A_VALIDAR_SEFAZ_VIVA</td>
+  <td>não</td>
+  <td>cBenef e grades por NCM permanecem A_VALIDAR ate captura oficial viva da SEFAZ.</td>
+</tr>
+
+<tr>
+  <td><strong>PR</strong></td>
+  <td>AMARELO_CORPUS_LOCAL</td>
+  <td>A_VALIDAR_SEFAZ_VIVA</td>
+  <td>não</td>
+  <td>cBenef e grades por NCM permanecem A_VALIDAR ate captura oficial viva da SEFAZ.</td>
+</tr>
+
+<tr>
+  <td><strong>PE</strong></td>
+  <td>AMARELO_CORPUS_LOCAL</td>
+  <td>A_VALIDAR_SEFAZ_VIVA</td>
+  <td>não</td>
+  <td>cBenef e grades por NCM permanecem A_VALIDAR ate captura oficial viva da SEFAZ.</td>
+</tr>
+
+<tr>
+  <td><strong>PI</strong></td>
+  <td>AMARELO_CORPUS_LOCAL</td>
+  <td>A_VALIDAR_SEFAZ_VIVA</td>
+  <td>não</td>
+  <td>cBenef e grades por NCM permanecem A_VALIDAR ate captura oficial viva da SEFAZ.</td>
+</tr>
+
+<tr>
+  <td><strong>RJ</strong></td>
+  <td>AMARELO_CORPUS_LOCAL</td>
+  <td>A_VALIDAR_SEFAZ_VIVA</td>
+  <td>não</td>
+  <td>cBenef e grades por NCM permanecem A_VALIDAR ate captura oficial viva da SEFAZ.</td>
+</tr>
+
+<tr>
+  <td><strong>RN</strong></td>
+  <td>AMARELO_CORPUS_LOCAL</td>
+  <td>A_VALIDAR_SEFAZ_VIVA</td>
+  <td>não</td>
+  <td>cBenef e grades por NCM permanecem A_VALIDAR ate captura oficial viva da SEFAZ.</td>
+</tr>
+
+<tr>
+  <td><strong>RS</strong></td>
+  <td>AMARELO_CORPUS_LOCAL</td>
+  <td>A_VALIDAR_SEFAZ_VIVA</td>
+  <td>não</td>
+  <td>cBenef e grades por NCM permanecem A_VALIDAR ate captura oficial viva da SEFAZ.</td>
+</tr>
+
+<tr>
+  <td><strong>RO</strong></td>
+  <td>AMARELO_CORPUS_LOCAL</td>
+  <td>A_VALIDAR_SEFAZ_VIVA</td>
+  <td>não</td>
+  <td>cBenef e grades por NCM permanecem A_VALIDAR ate captura oficial viva da SEFAZ.</td>
+</tr>
+
+<tr>
+  <td><strong>RR</strong></td>
+  <td>AMARELO_CORPUS_LOCAL</td>
+  <td>A_VALIDAR_SEFAZ_VIVA</td>
+  <td>não</td>
+  <td>cBenef e grades por NCM permanecem A_VALIDAR ate captura oficial viva da SEFAZ.</td>
+</tr>
+
+<tr>
+  <td><strong>SC</strong></td>
+  <td>AMARELO_CORPUS_LOCAL</td>
+  <td>A_VALIDAR_SEFAZ_VIVA</td>
+  <td>não</td>
+  <td>cBenef e grades por NCM permanecem A_VALIDAR ate captura oficial viva da SEFAZ.</td>
+</tr>
+
+<tr>
+  <td><strong>SP</strong></td>
+  <td>AMARELO_CORPUS_LOCAL</td>
+  <td>A_VALIDAR_SEFAZ_VIVA</td>
+  <td>não</td>
+  <td>cBenef e grades por NCM permanecem A_VALIDAR ate captura oficial viva da SEFAZ.</td>
+</tr>
+
+<tr>
+  <td><strong>SE</strong></td>
+  <td>AMARELO_CORPUS_LOCAL</td>
+  <td>A_VALIDAR_SEFAZ_VIVA</td>
+  <td>não</td>
+  <td>cBenef e grades por NCM permanecem A_VALIDAR ate captura oficial viva da SEFAZ.</td>
+</tr>
+
+<tr>
+  <td><strong>TO</strong></td>
+  <td>AMARELO_CORPUS_LOCAL</td>
+  <td>A_VALIDAR_SEFAZ_VIVA</td>
+  <td>não</td>
+  <td>cBenef e grades por NCM permanecem A_VALIDAR ate captura oficial viva da SEFAZ.</td>
+</tr>
+</tbody>
+      </table>
+    </div>
+  </details>
+</section>
+<section class="continuity">
+  <h2>Dados para IA/LLM</h2>
+  <div>
+    <a href="data/produtos-ncm/index.json">Índice Produto/NCM</a>
+    <a href="data/produtos-ncm/cap-10.json">Shard capítulo 10</a>
+    <a href="data/reforma-tributaria/reselo-lc214-lc224-lc227.ndjson">Re-selo LC 214/224/227</a>
+    <a href="data/corpus-local/uf-sealing-plan.json">Plano UF/cBenef</a>
+  </div>
+</section>
+
+  </main>
+  <footer class="site-footer">
+    <div>
+      <strong>Portal RJC Tributário Aberto</strong>
+      <p>Conteúdo educativo pautado em legislação oficial. Não substitui parecer individual para operação concreta.</p>
+    </div>
+    <div>
+      <span>Atualizacao editorial: 15/06/2026</span>
+      <a href="biblioteca/index.html#metodo">Metodo e fontes</a>
+    </div>
+  </footer>
+</body>
+</html>

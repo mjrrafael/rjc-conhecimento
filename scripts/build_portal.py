@@ -55,6 +55,10 @@ BENEFITS_CROSSWALK = ROOT / "data" / "benefits_crosswalk.json"
 NCM_BENEFITS_INDEX = ROOT / "data" / "ncm_benefits_index.json"
 PIS_COFINS_NCM = ROOT / "data" / "pis-cofins" / "ncm.ndjson"
 PIS_COFINS_NCM_INDEX = ROOT / "data" / "pis-cofins" / "ncm-index.json"
+PRODUTOS_NCM_INDEX = ROOT / "data" / "produtos-ncm" / "index.json"
+CORPUS_LOCAL_REGISTRY = ROOT / "data" / "corpus-local" / "legal_sources_registry.json"
+UF_SEALING_PLAN = ROOT / "data" / "corpus-local" / "uf-sealing-plan.json"
+REFORMA_RESELO = ROOT / "data" / "reforma-tributaria" / "reselo-lc214-lc224-lc227.ndjson"
 CONFAZ_5Y = ROOT / "data" / "confaz_ultimos_5_anos.json"
 
 
@@ -1366,6 +1370,7 @@ def layout(path: str, title: str, subtitle: str, body: str, active: str = "") ->
         ("federal/legislacao/index.html", "Leis federais"),
         ("estados/index.html", "ICMS por Estado"),
         ("beneficios/index.html", "Beneficios/NCM"),
+        ("produto.html", "Produto/NCM"),
         ("beneficios/setores.html", "Beneficios por setor"),
         ("beneficios/reforma.html", "Beneficios IBS/CBS"),
         ("auditoria/index.html", "Auditoria"),
@@ -2190,6 +2195,212 @@ def pis_cofins_ncm_table_page(data: dict) -> str:
     return layout("federal/legislacao/pis-cofins/ncm.html", "Consulta PIS/Cofins por NCM", "Consulta pesquisavel de PIS/Cofins por NCM.", body, "federal")
 
 
+def produtos_ncm_index() -> dict:
+    payload = load_json(PRODUTOS_NCM_INDEX, {"summary": {}, "official_sources": [], "chapters": []})
+    return payload if isinstance(payload, dict) else {"summary": {}, "official_sources": [], "chapters": []}
+
+
+def produtos_ncm_products() -> list[dict]:
+    payload = produtos_ncm_index()
+    products: list[dict] = []
+    for chapter in payload.get("chapters", []):
+        chapter_path = ROOT / str(chapter.get("path", ""))
+        chapter_payload = load_json(chapter_path, {"products": []})
+        if isinstance(chapter_payload, dict):
+            products.extend(item for item in chapter_payload.get("products", []) if isinstance(item, dict))
+    return products
+
+
+def produto_source_map() -> dict[str, dict]:
+    return {
+        str(source.get("id", "")): source
+        for source in produtos_ncm_index().get("official_sources", [])
+        if isinstance(source, dict)
+    }
+
+
+def produto_source_label(source: dict) -> str:
+    return " ".join(part for part in [str(source.get("tipo", "")), str(source.get("numero", ""))] if part).strip() or str(source.get("id", "fonte"))
+
+
+def produto_source_rows(sources: list[dict]) -> str:
+    cards = []
+    for source in sources:
+        label = produto_source_label(source)
+        live_sha = str(source.get("live_sha256") or "")
+        snap_sha = str(source.get("snapshot_sha256") or "")
+        cards.append(f"""
+<article class="matrix-card product-source-card searchable-card" data-search="{escape(label + ' ' + str(source.get('titulo', '')) + ' ' + str(source.get('id', '')))}">
+  <h3>{escape(label)}</h3>
+  <p>{escape(str(source.get('titulo', '')))}</p>
+  <dl>
+    <dt>HTTP</dt><dd>{escape(str(source.get('http_status') or 'A_VALIDAR'))}</dd>
+    <dt>URL</dt><dd><a href="{escape(str(source.get('url', '')))}" target="_blank" rel="noopener">fonte oficial</a></dd>
+    <dt>SHA vivo</dt><dd><code>{escape(live_sha[:16] + '...' if live_sha else 'A_VALIDAR')}</code></dd>
+    <dt>SHA snapshot</dt><dd><code>{escape(snap_sha[:16] + '...' if snap_sha else 'A_VALIDAR')}</code></dd>
+  </dl>
+</article>
+""")
+    return "".join(cards)
+
+
+def produto_ncm_card(product: dict, source_map: dict[str, dict]) -> str:
+    ncm_rows = []
+    for ncm in product.get("ncm", []):
+        search = " ".join(str(ncm.get(key, "")) for key in ("codigo", "digitos", "descricao", "pis_cofins", "ibs_cbs", "status"))
+        ncm_rows.append(f"""
+<article class="product-ncm-chip searchable-card" data-search="{escape(search)}">
+  <strong>{escape(str(ncm.get('codigo', '')))}</strong>
+  <span>{escape(str(ncm.get('descricao', '')))}</span>
+  <small>{escape(str(ncm.get('status', '')))}</small>
+  <p><b>PIS/Cofins:</b> {escape(str(ncm.get('pis_cofins', '')))}</p>
+  <p><b>IBS/CBS:</b> {escape(str(ncm.get('ibs_cbs', '')))}</p>
+</article>
+""")
+    reselo_rows = []
+    for reselo in product.get("reselos", []):
+        source_links = []
+        for source_id in reselo.get("official_source_ids", []):
+            source = source_map.get(str(source_id), {})
+            source_links.append(
+                f'<a href="{escape(str(source.get("url", "")))}" target="_blank" rel="noopener">{escape(produto_source_label(source) or str(source_id))}</a>'
+            )
+        reselo_rows.append(f"""
+<article class="product-reselo-card searchable-card" data-search="{escape(str(reselo.get('assertion', '')) + ' ' + str(reselo.get('id', '')))}">
+  <span class="card-kicker">{escape(', '.join(reselo.get('tributos', [])))} · {escape(str(reselo.get('status', '')))}</span>
+  <h4>{escape(str(reselo.get('beneficio', 're-selo normativo')))}</h4>
+  <p>{escape(str(reselo.get('assertion', '')))}</p>
+  <dl class="product-validity-grid">
+    <div><dt>Publicacao</dt><dd>{escape(str(reselo.get('publicacao', 'A_VALIDAR')))}</dd></div>
+    <div><dt>Vigencia</dt><dd>{escape(str(reselo.get('inicio_vigencia', 'A_VALIDAR')))}</dd></div>
+    <div><dt>Eficacia</dt><dd>{escape(str(reselo.get('inicio_eficacia', 'A_VALIDAR')))}</dd></div>
+    <div><dt>Fim</dt><dd>{escape(str(reselo.get('fim_vigencia', 'A_VALIDAR')))}</dd></div>
+  </dl>
+  <p><strong>Transicao RT:</strong> {escape(str(reselo.get('transicao_rt', 'A_VALIDAR')))}</p>
+  <p><strong>Fontes:</strong> {' · '.join(source_links) if source_links else 'A_VALIDAR'}</p>
+</article>
+""")
+    why_not_green = "".join(f"<li>{escape(str(item))}</li>" for item in product.get("why_not_green", []))
+    sources_text = " ".join(str(source.get("id", "")) for source in product.get("official_sources", []))
+    data_search = " ".join([str(product.get("produto", "")), str(product.get("search_text", "")), sources_text])
+    return f"""
+<article id="{escape(str(product.get('id', '')))}"
+         class="pis-ncm-record product-ncm-record searchable-card"
+         data-product-result
+         data-search="{escape(data_search)}">
+  <div class="pis-ncm-record-head">
+    <div>
+      <span class="card-kicker">Produto/NCM · {escape(str(product.get('status', '')))}</span>
+      <h3>{escape(str(product.get('produto', 'Produto')))} · Capitulo {escape(str(product.get('chapter', '')))}</h3>
+      <p class="pis-ncm-record-summary">Seed de pesquisa com fonte oficial primaria e hashes Planalto. Nao e card de beneficio publishable enquanto o envelope temporal completo nao for extraido.</p>
+    </div>
+    <span class="pis-ncm-record-id">id {escape(str(product.get('id', '')))}</span>
+  </div>
+  <div class="product-ncm-grid">{''.join(ncm_rows)}</div>
+  <div class="product-ncm-warning">
+    <strong>Bloqueios para verde</strong>
+    <ul>{why_not_green}</ul>
+  </div>
+  <div class="product-reselo-grid">{''.join(reselo_rows)}</div>
+</article>
+"""
+
+
+def produto_ncm_page(data: dict) -> str:
+    index = produtos_ncm_index()
+    products = produtos_ncm_products()
+    source_map = produto_source_map()
+    sources = list(source_map.values())
+    corpus = load_json(CORPUS_LOCAL_REGISTRY, {"summary": {}})
+    uf_plan = load_json(UF_SEALING_PLAN, {"ufs": []})
+    summary = index.get("summary", {})
+    source_cards = produto_source_rows(sources)
+    product_cards = "".join(produto_ncm_card(product, source_map) for product in products)
+    uf_rows = []
+    for row in uf_plan.get("ufs", []):
+        if not isinstance(row, dict):
+            continue
+        uf_rows.append(f"""
+<tr>
+  <td><strong>{escape(str(row.get('uf', '')))}</strong></td>
+  <td>{escape(str(row.get('corpus_selo', 'AMARELO_CORPUS_LOCAL')))}</td>
+  <td>{escape(str(row.get('cbenef_status', 'A_VALIDAR_SEFAZ_VIVA')))}</td>
+  <td>{escape('sim' if row.get('publicavel_verde') else 'nao')}</td>
+  <td>{escape(str(row.get('note', '')))}</td>
+</tr>
+""")
+    body = f"""
+{hero("Consulta Produto/NCM", "Pesquisa operacional por produto e NCM com re-selo federal, hashes de fonte oficial, corpus estadual amarelo e cBenef A_VALIDAR quando faltar SEFAZ viva.", "Produto/NCM")}
+<section class="law-ledger">
+  <div>
+    <h2>Produtos</h2>
+    <p>{fmt_num(summary.get('products', len(products)))} produto(s) e {fmt_num(summary.get('ncm_codes', 0))} codigo(s) NCM no seed inicial. A primeira trilha e arroz.</p>
+  </div>
+  <div>
+    <h2>Fontes oficiais</h2>
+    <p>{fmt_num(summary.get('official_sources', len(sources)))} fontes Planalto carregadas; {fmt_num(summary.get('plantalto_sources_http_200', 0))} responderam HTTP 200 na importacao.</p>
+  </div>
+  <div>
+    <h2>Regra #0</h2>
+    <p>Fonte local ou keyword nunca vira verde. Sem URL oficial viva, vigencia completa e sha256, o item permanece A_VALIDAR.</p>
+  </div>
+</section>
+<section class="content-block pis-ncm-entry-panel product-entry-panel">
+  <div>
+    <span class="eyebrow">Nova busca estruturada</span>
+    <h2>Produto primeiro, beneficio depois</h2>
+    <p>Esta tela pesquisa NCM, descricao, tributo e ato oficial. Ela mostra evidencias e pendencias; nao transforma o seed em beneficio vigente.</p>
+  </div>
+  <div class="pis-ncm-entry-actions">
+    <a href="#consulta-produto-ncm">Pesquisar arroz / NCM 1006</a>
+    <a href="data/produtos-ncm/index.json">Baixar indice Produto/NCM</a>
+    <a href="data/corpus-local/legal_sources_registry.json">Ver corpus local amarelo</a>
+  </div>
+</section>
+<section id="consulta-produto-ncm" class="content-block pis-ncm-explorer product-ncm-explorer" data-product-ncm-explorer>
+  <div class="section-heading compact">
+    <span class="eyebrow">Consulta guiada</span>
+    <h2>Pesquisar por produto, NCM, tributo, ato ou status</h2>
+    <p>Exemplos: <code>arroz</code>, <code>1006.20</code>, <code>10064000</code>, <code>LC 224</code>, <code>A_VALIDAR</code>.</p>
+  </div>
+  <div class="pis-ncm-query">
+    <label for="productNcmSearch">Busca dentro da base Produto/NCM</label>
+    <input id="productNcmSearch" type="search" placeholder="Digite produto, NCM, tributo, ato, hash ou status">
+    <button type="button" data-product-clear>Limpar</button>
+  </div>
+  <p class="pis-ncm-count"><strong data-product-count>{fmt_num(len(products))}</strong> card(s) visiveis de {fmt_num(len(products))} seed(s).</p>
+  <div class="pis-ncm-card-grid product-ncm-card-grid">{product_cards}</div>
+</section>
+<section class="matrix-section">
+  <h2>Fontes federais re-seladas</h2>
+  <div class="matrix-grid product-source-grid">{source_cards}</div>
+</section>
+<section class="content-block inventory-table product-uf-plan">
+  <h2>Plano UF/cBenef: corpus local amarelo</h2>
+  <p>O registro estadual importado tem {fmt_num(corpus.get('summary', {}).get('entries', 0))} entradas locais. Nenhuma UF nao-GO e publicada como verde para cBenef sem captura oficial SEFAZ viva.</p>
+  <details class="pis-ncm-table-details">
+    <summary>Abrir plano das 27 UFs</summary>
+    <div class="doc-table-wrap">
+      <table class="doc-table">
+        <thead><tr><th>UF</th><th>Selo corpus</th><th>Status cBenef</th><th>Verde publicavel?</th><th>Nota</th></tr></thead>
+        <tbody>{''.join(uf_rows)}</tbody>
+      </table>
+    </div>
+  </details>
+</section>
+<section class="continuity">
+  <h2>Dados para IA/LLM</h2>
+  <div>
+    <a href="data/produtos-ncm/index.json">Indice Produto/NCM</a>
+    <a href="data/produtos-ncm/cap-10.json">Shard capitulo 10</a>
+    <a href="data/reforma-tributaria/reselo-lc214-lc224-lc227.ndjson">Re-selo LC 214/224/227</a>
+    <a href="data/corpus-local/uf-sealing-plan.json">Plano UF/cBenef</a>
+  </div>
+</section>
+"""
+    return layout("produto.html", "Consulta Produto/NCM", "Produto, NCM, re-selo federal, corpus local amarelo e pendencias A_VALIDAR.", body, "home")
+
+
 def benefits_crosswalk_page(data: dict) -> str:
     master = master_bundle()
     benefits = master["benefits"]
@@ -2849,6 +3060,14 @@ def home(data: dict) -> str:
   <h3>Tributos federais</h3>
   <p>PIS, Cofins, IPI, IOF, IRPJ, CSLL, regimes, beneficios federais, DIRBI e reforma tributaria em leitura guiada.</p>
   <small>Lei em tela por tributo</small>
+</a>
+""",
+        f"""
+<a class="portal-card featured searchable-card" href="produto.html" data-search="produto NCM arroz 1006 1006.20 1006.30 1006.40 PIS Cofins IBS CBS LC214 LC224 fonte oficial sha256">
+  <span class="card-kicker">Produto/NCM</span>
+  <h3>Consulta por produto</h3>
+  <p>Pesquisa por produto e NCM com re-selo Planalto, hashes oficiais, corpus estadual amarelo e pendencias A_VALIDAR visiveis.</p>
+  <small>Abrir busca inteligente por NCM</small>
 </a>
 """,
         federal_legislation_card("index.html"),
@@ -3886,6 +4105,44 @@ def pis_cofins_ncm_full_search_entries() -> list[dict[str, str]]:
     return entries
 
 
+def produtos_ncm_full_search_entries() -> list[dict[str, str]]:
+    entries: list[dict[str, str]] = []
+    source_map = produto_source_map()
+    for product in produtos_ncm_products():
+        ncm_codes = ", ".join(str(item.get("codigo", "")) for item in product.get("ncm", []) if item.get("codigo"))
+        source_labels = ", ".join(
+            produto_source_label(source_map.get(str(source.get("id", "")), {}))
+            for source in product.get("official_sources", [])
+            if isinstance(source, dict)
+        )
+        text_parts = [
+            product.get("id", ""),
+            product.get("produto", ""),
+            product.get("status", ""),
+            product.get("search_text", ""),
+            ncm_codes,
+            source_labels,
+            " ".join(str(item) for item in product.get("why_not_green", [])),
+        ]
+        for ncm in product.get("ncm", []):
+            text_parts.extend(str(ncm.get(key, "")) for key in ("codigo", "digitos", "descricao", "pis_cofins", "ibs_cbs", "status"))
+        for reselo in product.get("reselos", []):
+            text_parts.extend(str(reselo.get(key, "")) for key in ("id", "beneficio", "assertion", "status", "transicao_rt"))
+        text = " ".join(part for part in text_parts if str(part).strip())
+        entries.append({
+            "title": f"{product.get('produto', 'Produto')} · Produto/NCM",
+            "url": f"produto.html#{product.get('id', '')}",
+            "summary": f"{ncm_codes or 'NCM a validar'} · status {product.get('status', 'A_VALIDAR')} · seed com fonte oficial e hashes.",
+            "tags": compact_search_terms(text),
+            "body": search_body(text, 1200),
+            "kind": "Produto/NCM",
+            "jurisdiction": "Federal/Estados",
+            "tax": "PIS/Cofins IBS/CBS ICMS",
+            "theme": "Produto e classificacao fiscal",
+        })
+    return entries
+
+
 def full_text_search_entries() -> list[dict[str, str]]:
     entries: list[dict[str, str]] = []
     for html_path in iter_public_html_files():
@@ -3900,6 +4157,9 @@ def full_text_search_entries() -> list[dict[str, str]]:
         if rel == "federal/legislacao/pis-cofins/ncm.html":
             # PIS/Cofins NCM rows are indexed below from NDJSON so each record
             # keeps its own validity envelope and source link.
+            continue
+        if rel == "produto.html":
+            # Produto/NCM is indexed below from JSON so A_VALIDAR and hashes stay inline.
             continue
         raw = html_path.read_text(encoding="utf-8", errors="ignore")
         parser = FullSearchTextParser()
@@ -4091,6 +4351,7 @@ def sitemap_priority(relative_path: str) -> str:
         return "1.0"
     if relative_path.endswith("/index.html") or relative_path in {
         "beneficios/ncm.html",
+        "produto.html",
         "beneficios/reforma.html",
         "federal/pis-cofins-ncm.html",
         "federal/legislacao/pis-cofins/ncm.html",
@@ -4162,6 +4423,7 @@ def llms_txt() -> str:
         ("Federal", "federal/index.html"),
         ("Reforma Tributaria", "federal/legislacao/reforma-tributaria/index.html"),
         ("PIS/Cofins por NCM", "federal/pis-cofins-ncm.html"),
+        ("Produto/NCM", "produto.html"),
         ("Beneficios fiscais", "beneficios/index.html"),
         ("Beneficios por NCM", "beneficios/ncm.html"),
         ("Beneficios por setor", "beneficios/setores.html"),
@@ -4179,7 +4441,8 @@ def llms_txt() -> str:
         "",
         "- Use as paginas HTML como fonte primaria navegavel.",
         "- Use `sitemap.xml` ou `sitemap.txt` para descobrir todas as URLs publicas.",
-        "- Use `assets/portal-search-full.json`, `data/benefits_crosswalk.json`, `data/ncm_benefits_index.json` e `data/pis-cofins/ncm.ndjson` para busca e cruzamento estruturado.",
+        "- Use `assets/portal-search-full.json`, `data/benefits_crosswalk.json`, `data/ncm_benefits_index.json`, `data/pis-cofins/ncm.ndjson` e `data/produtos-ncm/index.json` para busca e cruzamento estruturado.",
+        "- Corpus estadual local em `data/corpus-local/legal_sources_registry.json` tem teto AMARELO; nao use como prova verde sem SEFAZ/CONFAZ oficial viva.",
         "- Em materia tributaria concreta, conferir a fonte oficial citada na propria pagina e fazer homologacao humana final.",
         "",
         "## Entradas principais",
@@ -4199,6 +4462,11 @@ def llms_txt() -> str:
         f"- [NCM x beneficios]({BASE_URL}/data/ncm_benefits_index.json)",
         f"- [PIS/Cofins por NCM NDJSON]({BASE_URL}/data/pis-cofins/ncm.ndjson)",
         f"- [PIS/Cofins por NCM indice]({BASE_URL}/data/pis-cofins/ncm-index.json)",
+        f"- [Produto/NCM indice]({BASE_URL}/data/produtos-ncm/index.json)",
+        f"- [Produto/NCM capitulo 10]({BASE_URL}/data/produtos-ncm/cap-10.json)",
+        f"- [Re-selo LC 214/224/227]({BASE_URL}/data/reforma-tributaria/reselo-lc214-lc224-lc227.ndjson)",
+        f"- [Corpus estadual local amarelo]({BASE_URL}/data/corpus-local/legal_sources_registry.json)",
+        f"- [Plano UF/cBenef A_VALIDAR]({BASE_URL}/data/corpus-local/uf-sealing-plan.json)",
         f"- [Registro de fontes legais]({BASE_URL}/data/legal_sources_registry.json)",
         "",
         "## Mapa completo de paginas HTML",
@@ -4219,6 +4487,10 @@ def write_discovery_files() -> None:
 
 def file_sha256(path: Path) -> str:
     digest = hashlib.sha256()
+    if path.suffix.lower() in {".html", ".txt", ".json", ".js", ".xml", ".ndjson", ".md"}:
+        data = path.read_text(encoding="utf-8", errors="ignore").replace("\r\n", "\n").replace("\r", "\n").encode("utf-8")
+        digest.update(data)
+        return digest.hexdigest()
     with path.open("rb") as handle:
         for chunk in iter(lambda: handle.read(1024 * 1024), b""):
             digest.update(chunk)
@@ -4233,6 +4505,12 @@ def write_build_freshness() -> None:
         "assets/portal-search.js",
         "assets/portal-search-full.json",
         "data/benefits_crosswalk.json",
+        "produto.html",
+        "data/produtos-ncm/index.json",
+        "data/produtos-ncm/cap-10.json",
+        "data/corpus-local/legal_sources_registry.json",
+        "data/corpus-local/uf-sealing-plan.json",
+        "data/reforma-tributaria/reselo-lc214-lc224-lc227.ndjson",
         "data/pis-cofins/ncm.ndjson",
         "data/pis-cofins/ncm-index.json",
         "federal/pis-cofins-ncm.html",
@@ -4323,6 +4601,7 @@ def main() -> None:
     audit(data)
     write("index.html", home(data))
     write("auditoria/index.html", source_audit_index_page(data))
+    write("produto.html", produto_ncm_page(data))
     write("beneficios/index.html", benefits_crosswalk_page(data))
     write("beneficios/ncm.html", ncm_benefits_page(data))
     write("beneficios/setores.html", benefits_by_sector_page(data))
@@ -4362,7 +4641,7 @@ def main() -> None:
         write(state_legal_path, state_legal_content)
     normalize_legacy_editorial_dates()
     write("assets/portal-search.js", search_index(data))
-    write("assets/portal-search-full.json", json.dumps(full_text_search_entries() + benefit_full_search_entries() + ncm_full_search_entries() + pis_cofins_ncm_full_search_entries(), ensure_ascii=False, separators=(",", ":")))
+    write("assets/portal-search-full.json", json.dumps(full_text_search_entries() + benefit_full_search_entries() + ncm_full_search_entries() + pis_cofins_ncm_full_search_entries() + produtos_ncm_full_search_entries(), ensure_ascii=False, separators=(",", ":")))
     write_discovery_files()
     write_build_freshness()
     print("Portal generated successfully.")

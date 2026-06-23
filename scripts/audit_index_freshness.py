@@ -3,8 +3,6 @@
 
 from __future__ import annotations
 
-import hashlib
-
 from audit_v2_helpers import (
     BENEFIT_INDEX,
     BUILD_FRESHNESS,
@@ -14,18 +12,11 @@ from audit_v2_helpers import (
     SEARCH_FULL,
     SEARCH_JS,
     benefit_entries,
+    canonical_sha256,
     load_json,
     read_text,
     stale_date_hits,
 )
-
-
-def sha256(path) -> str:
-    digest = hashlib.sha256()
-    with path.open("rb") as handle:
-        for chunk in iter(lambda: handle.read(1024 * 1024), b""):
-            digest.update(chunk)
-    return digest.hexdigest()
 
 
 def main() -> int:
@@ -66,13 +57,19 @@ def main() -> int:
         "assets/portal-search.js",
         "assets/portal-search-full.json",
         "data/benefits_crosswalk.json",
+        "produto.html",
+        "data/produtos-ncm/index.json",
+        "data/produtos-ncm/cap-10.json",
+        "data/corpus-local/legal_sources_registry.json",
+        "data/corpus-local/uf-sealing-plan.json",
+        "data/reforma-tributaria/reselo-lc214-lc224-lc227.ndjson",
     ):
         path = ROOT / rel
         expected = artifacts.get(rel, {}) if isinstance(artifacts, dict) else {}
         if not path.exists():
             errors.append(f"{rel} ausente")
             continue
-        if expected.get("sha256") != sha256(path):
+        if expected.get("sha256") != canonical_sha256(path):
             errors.append(f"{rel} diverge do checksum registrado em assets/build-freshness.json")
     if errors:
         print("Falhas de frescor/coerência de índices:")

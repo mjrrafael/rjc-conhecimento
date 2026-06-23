@@ -1,46 +1,70 @@
 {
   "schema": "rjc-build-freshness-v1",
-  "generated_at": "2026-06-21T16:30:35",
+  "generated_at": "2026-06-22T21:38:06",
   "artifacts": {
     "beneficios/index.html": {
-      "sha256": "22938ac572bab3fc0fb5661613f890b548f9432a7c00959713243f145d0ecb2a",
-      "bytes": 54748505
+      "sha256": "83e5cd610a70385f68daff4696fd8d45c48b99aa6cf796e89ec9f8c264bc3b23",
+      "bytes": 54748546
     },
     "llms.txt": {
-      "sha256": "388f9178e321450df7c4186bf28a08939d00dab91e115523ac8cd361ab467388",
-      "bytes": 126039
+      "sha256": "d5f719aea0e9ec21dfbbef259a1a363ea58ea7e7312c5c30a7d4e2125b0f3f00",
+      "bytes": 126968
     },
     "assets/llm-manifest.json": {
-      "sha256": "14b60915d927154b3ff027a8c29fa03705a0596b5a20b595dd98b61e32ebfa1c",
-      "bytes": 205688
+      "sha256": "1b8901e66cfc45391343febf2bfdfc9eb903518ef28115e7758b68d830d67240",
+      "bytes": 205875
     },
     "assets/portal-search.js": {
       "sha256": "0612641662b6abf00f92202dc930bab7367eab8ec71625aeb98c273796c7840f",
       "bytes": 180105
     },
     "assets/portal-search-full.json": {
-      "sha256": "a7647f72307831b8993562bd2f764ddd80ae0ff6cad3cfb8cd5a6c4c7681cb48",
-      "bytes": 48739893
+      "sha256": "ea09c95c8b01dec038d3c7ab846926f894c1ce76ba5f725a7874a91c1be4ca55",
+      "bytes": 48742314
     },
     "data/benefits_crosswalk.json": {
-      "sha256": "3b222388329c56550a5a62e574ebf2ad2bd2e0254516c2ae464a34b4b050464a",
+      "sha256": "bd9770cee117cd3efbb8ee41ac901f24f85eeccd2376e96626fb5c631e7f9afc",
       "bytes": 76518089
     },
+    "produto.html": {
+      "sha256": "deb5f98ac0231210a686670a8aed63baf332e28ea43af7f952aba80d5c0377f6",
+      "bytes": 21240
+    },
+    "data/produtos-ncm/index.json": {
+      "sha256": "218970992916730f735ee4912979f6e9d5461338081471f6fd15a2c41abfa334",
+      "bytes": 3886
+    },
+    "data/produtos-ncm/cap-10.json": {
+      "sha256": "baa4791eb53ef9beb16a3f0a3639c417d51c29175893fe7e9ba86e1a86a8008b",
+      "bytes": 5966
+    },
+    "data/corpus-local/legal_sources_registry.json": {
+      "sha256": "8e1cd7d2e36396c2c22af692910b67d681b90a6d96958ebb5ac50bf0eb876c31",
+      "bytes": 409178
+    },
+    "data/corpus-local/uf-sealing-plan.json": {
+      "sha256": "e3da1415409fab41c6473ca88e24eb55109bd8612ba9009b67d23ec89cc293bc",
+      "bytes": 14781
+    },
+    "data/reforma-tributaria/reselo-lc214-lc224-lc227.ndjson": {
+      "sha256": "10e1566de75d952a227fc6539bea0f68fe154e8b3a0687941cf7e61c72423bde",
+      "bytes": 5460
+    },
     "data/pis-cofins/ncm.ndjson": {
-      "sha256": "db43477e51a95f0f81f7aff82eb38c547f96474f501ef83202342e4ab902958c",
+      "sha256": "6b1bd525ae56dd39db116caea307f7d279831f0be7ebddcda0b1e38f17d818dd",
       "bytes": 2541776
     },
     "data/pis-cofins/ncm-index.json": {
-      "sha256": "0f2e8f8cf7096839bf87c6c1a3baf4f74cfe68384a78e25e87be2a040adaf5cd",
+      "sha256": "18e33c53c33e482bbdbb1f3a5c2a5c8f92a69f3f0da5828334a2a751620b570e",
       "bytes": 1101967
     },
     "federal/pis-cofins-ncm.html": {
-      "sha256": "44e34a980c765cadcf26e44179196eb2ae6f1a4b394888eecbfef6eec470d3c1",
-      "bytes": 11527
+      "sha256": "cd3192b0e0428f05b6e598fd5412845941c033009fe914b05e58e7a91a78dfd7",
+      "bytes": 11568
     },
     "federal/legislacao/pis-cofins/ncm.html": {
-      "sha256": "afd2cc1f52a00bd7846c1ffec1f108c7b0ea0a015d0d8d9f969eb69b2a35d057",
-      "bytes": 5399858
+      "sha256": "76ee24a4ad2360c3579d8d5f10f4f61d7bf3e0c933320e8cf7ba93b16bbae661",
+      "bytes": 5399905
     }
   }
 }

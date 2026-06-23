@@ -3922,5 +3922,11 @@
     "path": "painel-fiscal/index.html",
     "url": "https://mjrrafael.github.io/rjc-conhecimento/painel-fiscal/index.html",
     "section": "painel-fiscal"
+  },
+  {
+    "title": "Consulta Produto/NCM | RJC Assessoria",
+    "path": "produto.html",
+    "url": "https://mjrrafael.github.io/rjc-conhecimento/produto.html",
+    "section": "portal"
   }
 ]
