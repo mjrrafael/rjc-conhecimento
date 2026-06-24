@@ -205,3 +205,17 @@ Resultado:
 - O portal publico estava defasado em relacao ao localhost justamente na fonte nova material.
 - Arquivos duplicados ` (1)` nao apareceram em indices publicos.
 - Decisao: publicar a atualizacao do portal.
+
+### Publicacao verificada
+
+- PR: `#20` - `https://github.com/mjrrafael/rjc-conhecimento/pull/20`.
+- Merge commit: `f5dbd55a10b2de73126b595661c09374e16e6e6b`.
+- GitHub Pages run: `28114468688` - `https://github.com/mjrrafael/rjc-conhecimento/actions/runs/28114468688`, conclusao `success`, deploy concluido em `2026-06-24T16:47:30Z`.
+- HTTP publico verificado em 2026-06-24 apos deploy:
+  - `https://mjrrafael.github.io/rjc-conhecimento/federal/legislacao/atos/ato-conjunto-rfb-cgibs-3-2026-dere.html`: HTTP 200, contem `Ato Conjunto RFB/CGIBS 3/2026`.
+  - `https://mjrrafael.github.io/rjc-conhecimento/llms.txt`: HTTP 200, contem `ato-conjunto-rfb-cgibs-3-2026-dere`.
+  - `https://mjrrafael.github.io/rjc-conhecimento/assets/llm-manifest.json`: HTTP 200, contem `ato-conjunto-rfb-cgibs-3-2026-dere`.
+  - `https://mjrrafael.github.io/rjc-conhecimento/assets/portal-search.js`: HTTP 200, contem `ato-conjunto-rfb-cgibs-3-2026-dere`.
+- Limpeza local: sobras nao rastreadas com sufixo ` (1)` removidas do workspace apos confirmar que nao foram publicadas.
+
+Status final da rodada: `CONCLUIDO`.
