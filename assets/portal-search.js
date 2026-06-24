@@ -645,7 +645,7 @@ window.RJC_SEARCH = [
     "title": "Reforma Tributária: legislação em tela",
     "url": "federal/legislacao/reforma-tributaria/index.html",
     "summary": "EC 132/2023, LC 214/2025, LC 227/2026, tabelas CST/cClassTrib/cCredPres, alíquotas, documentos fiscais, transição, créditos, split payment, benefícios e governança.",
-    "tags": "Federal reforma-tributaria ec-132-2023-reforma lc-214-2025-reforma lc-227-2026-cgibs decreto-12955-2026-cbs resolucao-cgibs-6-2026-ibs portaria-mf-cgibs-7-2026 ato-conjunto-rfb-cgibs-1-2025 ato-conjunto-rfb-cgibs-2-2026-split-payment rfb-orientacoes-reforma-2026 rfb-marcos-reforma cgibs-marco-03-08-2026-campos-ibs-cbs it-2025-002-tabelas-reforma tabela-cst-cclasstrib-ibs-cbs tabela-ccredpres-ibs-cbs nt-2025-002-rtc-nfe"
+    "tags": "Federal reforma-tributaria ec-132-2023-reforma lc-214-2025-reforma lc-227-2026-cgibs decreto-12955-2026-cbs resolucao-cgibs-6-2026-ibs portaria-mf-cgibs-7-2026 ato-conjunto-rfb-cgibs-1-2025 ato-conjunto-rfb-cgibs-2-2026-split-payment ato-conjunto-rfb-cgibs-3-2026-dere rfb-orientacoes-reforma-2026 rfb-marcos-reforma cgibs-marco-03-08-2026-campos-ibs-cbs it-2025-002-tabelas-reforma tabela-cst-cclasstrib-ibs-cbs tabela-ccredpres-ibs-cbs nt-2025-002-rtc-nfe"
   },
   {
     "title": "Reforma Tributária: legislação em tela - Regra matriz do IBS e da CBS",
@@ -686,7 +686,7 @@ window.RJC_SEARCH = [
   {
     "title": "Reforma Tributária: legislação em tela - Documentos fiscais e obrigações acessórias em 2026",
     "url": "federal/legislacao/reforma-tributaria/documentos-obrigacoes-2026-ato-conjunto.html",
-    "summary": "Ato Conjunto RFB/CGIBS 1/2025 e regulamentos mostram quais documentos alimentam a apuração de IBS/CBS em 2026.",
+    "summary": "Atos Conjuntos RFB/CGIBS, regulamentos e documentos técnicos mostram quais documentos alimentam a apuração de IBS/CBS em 2026.",
     "tags": "reforma-tributaria documentos-obrigacoes-2026-ato-conjunto Documentos fiscais e obrigações acessórias em 2026"
   },
   {
@@ -1066,6 +1066,12 @@ window.RJC_SEARCH = [
     "url": "federal/legislacao/atos/ato-conjunto-rfb-cgibs-2-2026-split-payment.html",
     "summary": "Autoriza a publicacao do Manual de Integracao e do Swagger da Plataforma Publica do Split Payment para CBS e IBS.",
     "tags": "ato-conjunto-rfb-cgibs-2-2026-split-payment Federal Ato Conjunto 2/2026"
+  },
+  {
+    "title": "Ato Conjunto RFB/CGIBS 3/2026 - documentacao tecnica da DeRE",
+    "url": "federal/legislacao/atos/ato-conjunto-rfb-cgibs-3-2026-dere.html",
+    "summary": "Autoriza a publicacao da documentacao tecnica da Declaracao de Regimes Especificos - DeRE, versao 1.1.0, e ratifica versoes preliminares.",
+    "tags": "ato-conjunto-rfb-cgibs-3-2026-dere Federal Ato Conjunto 3/2026"
   },
   {
     "title": "Receita Federal - orientacoes da Reforma Tributaria para 2026",

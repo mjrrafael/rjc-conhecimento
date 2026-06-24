@@ -1,12 +1,12 @@
 # Auditoria Mestre v2
 
-Gerado em 2026-06-23.
+Gerado em 2026-06-24.
 
 Este arquivo resume cobertura e cruzamentos do Portal RJC Tributario Aberto. Ele e uma trilha de auditoria, nao um parecer tributario.
 
 ## Cobertura
 
-- Fontes registradas: 210
+- Fontes registradas: 212
 - Requisitos federais mapeados: 15
 - Requisitos federais publicados: 11
 - Requisitos federais com fonte local disponivel: 4
@@ -14,7 +14,7 @@ Este arquivo resume cobertura e cruzamentos do Portal RJC Tributario Aberto. Ele
 - Estados aguardando revisao: 0
 - Estados revisados sem aprovacao profunda: 14
 - Entradas validadas na matriz de beneficios: 9727
-- Entradas em quarentena editorial: 13137
+- Entradas em quarentena editorial: 13143
 - Entradas com NCM/TIPI: 1752
 - Entradas com CEST: 174
 - Entradas com cBenef: 3633
@@ -36,7 +36,7 @@ Este arquivo resume cobertura e cruzamentos do Portal RJC Tributario Aberto. Ele
 | Lucro Arbitrado | fonte_local_disponivel | hipoteses de arbitramento, base, percentuais, provas e riscos | Lei_8981_1995_Lucro_Real_Presumido.txt, Decreto_9580_2018_Regulamento_IRPJ.txt |
 | Importacao, exportacao e regimes aduaneiros | fonte_local_disponivel | II, IPI importacao, PIS/Cofins-Importacao, despacho, regimes especiais, drawback, REINTEGRA e prova | Decreto_6759_2009_Regulamento_Aduaneiro.txt, Lei_10865_2004_PIS_COFINS_Importacao.txt |
 | Beneficios federais, DIRBI e reducao de beneficios | publicado_v1 | habilitacao, fruicao, declaracao, DIRBI, reducao de beneficios, prova e controles | Lei_14973_2024_DIRBI.txt, Lei_15321_2025_DIRBI_Obrigatoriedade.txt, Decreto_12861_2026_Regulamento_Beneficios.txt |
-| Reforma Tributaria | publicado_v1 | EC 132, LC 214, LC 227, Decreto CBS, Resolucao IBS, Portaria comum, Ato Conjunto 2026, CST, cClassTrib, cCredPres, transicao e documentos fiscais | EC_132_2023_Reforma_Tributaria.txt, LC_214_2025_Compilada_IBS_CBS_IS.txt, LC_227_2026_Comite_Gestor_IBS.txt, data/legal_sources/reforma_tributaria/Decreto_12955_2026_Regulamento_CBS.txt, data/legal_sources/reforma_tributaria/Resolucao_CGIBS_6_2026_Regulamento_IBS.txt, data/legal_sources/reforma_tributaria/Portaria_Conjunta_MF_CGIBS_7_2026.txt, data/legal_sources/reforma_tributaria/Ato_Conjunto_RFB_CGIBS_1_2025_Obrigacoes_2026.txt |
+| Reforma Tributaria | publicado_v1 | EC 132, LC 214, LC 227, Decreto CBS, Resolucao IBS, Portaria comum, Ato Conjunto 2026, CST, cClassTrib, cCredPres, transicao e documentos fiscais | EC_132_2023_Reforma_Tributaria.txt, LC_214_2025_Compilada_IBS_CBS_IS.txt, LC_227_2026_Comite_Gestor_IBS.txt, data/legal_sources/reforma_tributaria/Decreto_12955_2026_Regulamento_CBS.txt, data/legal_sources/reforma_tributaria/Resolucao_CGIBS_6_2026_Regulamento_IBS.txt, data/legal_sources/reforma_tributaria/Portaria_Conjunta_MF_CGIBS_7_2026.txt, data/legal_sources/reforma_tributaria/Ato_Conjunto_RFB_CGIBS_1_2025_Obrigacoes_2026.txt, data/legal_sources/reforma_tributaria/Ato_Conjunto_RFB_CGIBS_3_2026_DeRE.txt |
 | Folha, CLT e previdenciario | publicado_v1 | contrato, jornada, salario, encargos, seguridade, eSocial, DCTFWeb, Reinf, FGTS e prova | Lei_8212_1991_Custeio_Previdencia.txt, Lei_8213_1991_Beneficios_Previdencia.txt |
 
 ## Estados

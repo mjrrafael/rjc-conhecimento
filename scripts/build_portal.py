@@ -4750,6 +4750,16 @@ def normalize_legacy_editorial_dates() -> None:
     for path in iter_public_html_files():
         text = path.read_text(encoding="utf-8", errors="ignore")
         updated = text
+        updated = re.sub(
+            r"Atualizacao editorial: \d{2}/\d{2}/\d{4}",
+            f"Atualizacao editorial: {EDITORIAL_UPDATED_ON}",
+            updated,
+        )
+        updated = re.sub(
+            r"Atualizada em \d{2}/\d{2}/\d{4}",
+            f"Atualizada em {EDITORIAL_UPDATED_ON}",
+            updated,
+        )
         for old, new in replacements.items():
             updated = updated.replace(old, new)
         if updated == text:

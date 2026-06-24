@@ -1,6 +1,6 @@
 {
   "schema": "rjc-legal-sources-v1",
-  "updated_on": "06/06/2026",
+  "updated_on": "24/06/2026",
   "editorial_rule": "Cada tese publicada deve apontar o ato oficial, manter o texto em tela e registrar o caminho de continuidade por tema.",
   "change_protocol": [
     "adicionar ou atualizar a fonte em scripts/legal_modules.py",
@@ -54,7 +54,7 @@
           "data/legal_sources/reforma_tributaria/Ato_Conjunto_RFB_CGIBS_1_2025_Obrigacoes_2026.txt"
         ],
         "sha256": {
-          "data/legal_sources/reforma_tributaria/Ato_Conjunto_RFB_CGIBS_1_2025_Obrigacoes_2026.txt": "46d6c2798ea17601e3c589d422654e45147dcd14c72accacaa2bf11da8a61c2f"
+          "data/legal_sources/reforma_tributaria/Ato_Conjunto_RFB_CGIBS_1_2025_Obrigacoes_2026.txt": "85531e13a347c385992923f4ea3c523ff610de7529de9775940acde7b242fbbf"
         },
         "fetch_url": ""
       },
@@ -85,7 +85,7 @@
           "data/legal_sources/reforma_tributaria/Ato_Conjunto_RFB_CGIBS_2_2026_Split_Payment.txt"
         ],
         "sha256": {
-          "data/legal_sources/reforma_tributaria/Ato_Conjunto_RFB_CGIBS_2_2026_Split_Payment.txt": "bea570b5da8c45d6c88c287718bce9f01096c1f9d07ed5c9f2d97e324c8cb3ff"
+          "data/legal_sources/reforma_tributaria/Ato_Conjunto_RFB_CGIBS_2_2026_Split_Payment.txt": "14004f6affe4e3a2e8c79a67b601db2edee243e4a1b1fcdcb4e7931c0e51eab9"
         },
         "fetch_url": ""
       },
@@ -100,6 +100,66 @@
           "chapters": [
             "base-creditos-recolhimento-split-regulamento",
             "creditos-recolhimento-split-payment"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "ato-conjunto-rfb-cgibs-3-2026-dere",
+      "jurisdiction": "Federal",
+      "title": "Ato Conjunto RFB/CGIBS 3/2026 - documentacao tecnica da DeRE",
+      "short": "Ato Conjunto 3/2026",
+      "official_url": "https://www.cgibs.gov.br/upload/arquivos/202606/22083423-ato-conjunto-nro-3-dere.pdf",
+      "storage": {
+        "type": "repo_text",
+        "files": [],
+        "repo_files": [
+          "data/legal_sources/reforma_tributaria/Ato_Conjunto_RFB_CGIBS_3_2026_DeRE.txt"
+        ],
+        "sha256": {
+          "data/legal_sources/reforma_tributaria/Ato_Conjunto_RFB_CGIBS_3_2026_DeRE.txt": "c903229d80d3cd6619366f8a55f96a9044c72bba66ee2dc5a1e5e379babe5317"
+        },
+        "fetch_url": ""
+      },
+      "note": "Autoriza a publicacao da documentacao tecnica da Declaracao de Regimes Especificos - DeRE, versao 1.1.0, e ratifica versoes preliminares.",
+      "render": "articles",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "reforma-tributaria",
+          "module_title": "Reforma Tributária: legislação em tela",
+          "chapters": [
+            "documentos-obrigacoes-2026-ato-conjunto",
+            "regimes-diferenciados-beneficios"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "cgibs-marco-03-08-2026-campos-ibs-cbs",
+      "jurisdiction": "Federal",
+      "title": "CGIBS - marco operacional de 03/08/2026 para campos de IBS e CBS",
+      "short": "Comunicado CGIBS 15/06/2026",
+      "official_url": "https://www.cgibs.gov.br/novo-marco-da-reforma-tributaria-inicia-em-03-de-agosto-com-preenchimento-obrigatorio-dos-campos-relativos-ao-ibs-e-a-cbs",
+      "storage": {
+        "type": "official_fetch",
+        "files": [],
+        "repo_files": [],
+        "sha256": {},
+        "fetch_url": "https://www.cgibs.gov.br/novo-marco-da-reforma-tributaria-inicia-em-03-de-agosto-com-preenchimento-obrigatorio-dos-campos-relativos-ao-ibs-e-a-cbs"
+      },
+      "note": "Comunicado oficial do CGIBS que fixa a data operacional de 03/08/2026 para exigencia sistêmica dos campos de IBS e CBS nos documentos fiscais eletronicos do regime regular.",
+      "render": "structured_text",
+      "source_ranges": [],
+      "modified_by": [],
+      "used_by": [
+        {
+          "module_id": "reforma-tributaria",
+          "module_title": "Reforma Tributária: legislação em tela",
+          "chapters": [
+            "documentos-obrigacoes-2026-ato-conjunto",
+            "orientacoes-operacionais-reforma-2026"
           ]
         }
       ]
@@ -148,7 +208,7 @@
           "data/legal_sources/reforma_tributaria/Decreto_12955_2026_Regulamento_CBS.txt"
         ],
         "sha256": {
-          "data/legal_sources/reforma_tributaria/Decreto_12955_2026_Regulamento_CBS.txt": "15973a783600b48fc662d834681fc6660e75eb07bf6e312b41f081925322c172"
+          "data/legal_sources/reforma_tributaria/Decreto_12955_2026_Regulamento_CBS.txt": "5ca71d99f1e10aa7465fc109f4a8a5600b8311e228b29871b8d22a309ac821cd"
         },
         "fetch_url": ""
       },
@@ -185,7 +245,7 @@
           "data/legal_sources/federal/Decreto_12991_2026_PIS_COFINS_Combustiveis.txt"
         ],
         "sha256": {
-          "data/legal_sources/federal/Decreto_12991_2026_PIS_COFINS_Combustiveis.txt": "1acc12c11d27f13213b451a82838da5529e316aa060db42e8bd40ad469a458af"
+          "data/legal_sources/federal/Decreto_12991_2026_PIS_COFINS_Combustiveis.txt": "6905f44147588703ab1f8d7a64fcfa2261d79a9b43a83dc0785ec739aa382c6d"
         },
         "fetch_url": ""
       },
@@ -561,7 +621,7 @@
           "data/legal_sources/federal/IN_RFB_2324_2026_IPI_Suspensao.txt"
         ],
         "sha256": {
-          "data/legal_sources/federal/IN_RFB_2324_2026_IPI_Suspensao.txt": "abcd6556619832859d0d6fec4263441264d2331a0ff6f52bc8043019887d7f34"
+          "data/legal_sources/federal/IN_RFB_2324_2026_IPI_Suspensao.txt": "59075a37a16c54b89d2dde36a79b1f15d6bb571c0b7caefb44325d277161b9f1"
         },
         "fetch_url": ""
       },
@@ -592,7 +652,7 @@
           "data/legal_sources/federal/IN_RFB_2326_2026_Valor_Aduaneiro.txt"
         ],
         "sha256": {
-          "data/legal_sources/federal/IN_RFB_2326_2026_Valor_Aduaneiro.txt": "29d5295d628dfb81b4c1b2d9f4cbd4e5985d0c9594484d5ab74444cd35c12c0d"
+          "data/legal_sources/federal/IN_RFB_2326_2026_Valor_Aduaneiro.txt": "cd4cc3645630ceeaec452d7d5bf27f4bc778c14cf7ce092f5f7d14fdbe46e29a"
         },
         "fetch_url": ""
       },
@@ -971,7 +1031,7 @@
           "data/legal_sources/federal/Lei_15394_2026_PIS_COFINS_Residuos.txt"
         ],
         "sha256": {
-          "data/legal_sources/federal/Lei_15394_2026_PIS_COFINS_Residuos.txt": "2800a5e7e9b3362c14c0f488fb36131c9506e1bf2990fed15a93772efbaac3c5"
+          "data/legal_sources/federal/Lei_15394_2026_PIS_COFINS_Residuos.txt": "1c4d508782f3b02ea12fb739ebaef08f281ebc09bfd5f808c2018cf2918deff1"
         },
         "fetch_url": ""
       },
@@ -1472,7 +1532,7 @@
           "data/legal_sources/federal/MP_1357_2026_Remessas_Postais.txt"
         ],
         "sha256": {
-          "data/legal_sources/federal/MP_1357_2026_Remessas_Postais.txt": "a1ee41c024323382c46d128f68d62157b4e9005a6f068171c882470cf79f8344"
+          "data/legal_sources/federal/MP_1357_2026_Remessas_Postais.txt": "b8b37425495a169ec5d7b6958a90f5eaa919785e0695c0098eadba998f8e64aa"
         },
         "fetch_url": ""
       },
@@ -1503,7 +1563,7 @@
           "data/legal_sources/reforma_tributaria/NT_2025_002_v1_35_RTC_NFe_IBS_CBS_IS.txt"
         ],
         "sha256": {
-          "data/legal_sources/reforma_tributaria/NT_2025_002_v1_35_RTC_NFe_IBS_CBS_IS.txt": "235267158c0081922eac27776da2360451456b86a922c1a001d7552c79442928"
+          "data/legal_sources/reforma_tributaria/NT_2025_002_v1_35_RTC_NFe_IBS_CBS_IS.txt": "613b39dcc6cc25cb3e944b1f830b34fdedb6f7dbb2b0d45e2446d65999a6b417"
         },
         "fetch_url": ""
       },
@@ -1535,7 +1595,7 @@
           "data/legal_sources/reforma_tributaria/Portaria_Conjunta_MF_CGIBS_7_2026.txt"
         ],
         "sha256": {
-          "data/legal_sources/reforma_tributaria/Portaria_Conjunta_MF_CGIBS_7_2026.txt": "4f37c9a8a973951de085c660ea527104dc55cbfd8a16101147db6012710cee76"
+          "data/legal_sources/reforma_tributaria/Portaria_Conjunta_MF_CGIBS_7_2026.txt": "b27e6222407043d7a10c16d79f90f28709d4507ca49ecba106a1fe62e3905100"
         },
         "fetch_url": ""
       },
@@ -1566,7 +1626,7 @@
           "data/legal_sources/federal/Portaria_RFB_688_2026_Transparencia_DIRBI.txt"
         ],
         "sha256": {
-          "data/legal_sources/federal/Portaria_RFB_688_2026_Transparencia_DIRBI.txt": "bd9fdd4358181429ab192407e130fe0d2f0a7e10e5b32d03d287e0ee006b9e79"
+          "data/legal_sources/federal/Portaria_RFB_688_2026_Transparencia_DIRBI.txt": "1e3afe8e0ee3a99e1c5c2e38e4780aebb9cc5a406221f04c18c22f545274e006"
         },
         "fetch_url": ""
       },
@@ -1645,7 +1705,7 @@
           "data/legal_sources/reforma_tributaria/Resolucao_CGIBS_6_2026_Regulamento_IBS.txt"
         ],
         "sha256": {
-          "data/legal_sources/reforma_tributaria/Resolucao_CGIBS_6_2026_Regulamento_IBS.txt": "a3da82f3b3d803bb3a790f67224a84c528583ee792a97b3b4e6788880fba5646"
+          "data/legal_sources/reforma_tributaria/Resolucao_CGIBS_6_2026_Regulamento_IBS.txt": "100d4beedc5a22a8b0f49fbce6b708e0ff9d71a67e0359d36f4237600fa81810"
         },
         "fetch_url": ""
       },
@@ -1682,7 +1742,7 @@
           "data/legal_sources/reforma_tributaria/Receita_Marcos_Regulatorios_Reforma.txt"
         ],
         "sha256": {
-          "data/legal_sources/reforma_tributaria/Receita_Marcos_Regulatorios_Reforma.txt": "e8c1f8c7086f62db871241340b5d32874b5f9ddbce7c34dfa5651d172bd55d35"
+          "data/legal_sources/reforma_tributaria/Receita_Marcos_Regulatorios_Reforma.txt": "e56f223e156dffeb064443163c2a77298f0f8eb25c2c67681ed86c190be8e02e"
         },
         "fetch_url": ""
       },
@@ -1713,7 +1773,7 @@
           "data/legal_sources/reforma_tributaria/Receita_Orientacoes_Reforma_2026.txt"
         ],
         "sha256": {
-          "data/legal_sources/reforma_tributaria/Receita_Orientacoes_Reforma_2026.txt": "ea5203f98a4ae161d92868bf193f7706c2d66875ee6cc1f2052af830b1f8fd1a"
+          "data/legal_sources/reforma_tributaria/Receita_Orientacoes_Reforma_2026.txt": "d3c5fcf331e00b7c68b9a21d41bfa937bcee8d5091aefa0925dfd45840ba66a0"
         },
         "fetch_url": ""
       },
