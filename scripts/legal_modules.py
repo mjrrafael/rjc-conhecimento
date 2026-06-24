@@ -40,7 +40,7 @@ def resolve_bd_root() -> Path:
 BD_ROOT = resolve_bd_root()
 FEDERAL_ROOT = BD_ROOT / "#FEDERAIS-COMPILADO-ONLINE" / "legislacao_txt_completa"
 REPO_SOURCE_ROOT = ROOT / "data" / "legal_sources"
-UPDATED_ON = "06/06/2026"
+UPDATED_ON = "24/06/2026"
 
 
 def slug(value: str) -> str:
@@ -791,6 +791,15 @@ SOURCE_DEFS: dict[str, dict] = {
         "start_marker": "Art. 1",
         "note": "Autoriza a publicacao do Manual de Integracao e do Swagger da Plataforma Publica do Split Payment para CBS e IBS.",
     },
+    "ato-conjunto-rfb-cgibs-3-2026-dere": {
+        "jurisdiction": "Federal",
+        "title": "Ato Conjunto RFB/CGIBS 3/2026 - documentacao tecnica da DeRE",
+        "short": "Ato Conjunto 3/2026",
+        "url": "https://www.cgibs.gov.br/upload/arquivos/202606/22083423-ato-conjunto-nro-3-dere.pdf",
+        "repo_files": ["data/legal_sources/reforma_tributaria/Ato_Conjunto_RFB_CGIBS_3_2026_DeRE.txt"],
+        "start_marker": "Art. 1",
+        "note": "Autoriza a publicacao da documentacao tecnica da Declaracao de Regimes Especificos - DeRE, versao 1.1.0, e ratifica versoes preliminares.",
+    },
     "rfb-orientacoes-reforma-2026": {
         "jurisdiction": "Federal",
         "title": "Receita Federal - orientacoes da Reforma Tributaria para 2026",
@@ -1518,6 +1527,7 @@ LEGAL_MODULES: list[dict] = [
             "portaria-mf-cgibs-7-2026",
             "ato-conjunto-rfb-cgibs-1-2025",
             "ato-conjunto-rfb-cgibs-2-2026-split-payment",
+            "ato-conjunto-rfb-cgibs-3-2026-dere",
             "rfb-orientacoes-reforma-2026",
             "rfb-marcos-reforma",
             "cgibs-marco-03-08-2026-campos-ibs-cbs",
@@ -1612,9 +1622,10 @@ LEGAL_MODULES: list[dict] = [
             {
                 "id": "documentos-obrigacoes-2026-ato-conjunto",
                 "title": "Documentos fiscais e obrigações acessórias em 2026",
-                "summary": "Ato Conjunto RFB/CGIBS 1/2025 e regulamentos mostram quais documentos alimentam a apuração de IBS/CBS em 2026.",
+                "summary": "Atos Conjuntos RFB/CGIBS, regulamentos e documentos técnicos mostram quais documentos alimentam a apuração de IBS/CBS em 2026.",
                 "refs": [
                     {"source": "ato-conjunto-rfb-cgibs-1-2025", "full_text": True},
+                    {"source": "ato-conjunto-rfb-cgibs-3-2026-dere", "full_text": True},
                     {"source": "decreto-12955-2026-cbs", "ranges": [(69, 84)]},
                     {"source": "resolucao-cgibs-6-2026-ibs", "ranges": [(69, 84)]},
                     {"source": "cgibs-marco-03-08-2026-campos-ibs-cbs", "full_text": True},
@@ -1623,6 +1634,7 @@ LEGAL_MODULES: list[dict] = [
                 "analysis": [
                     "Em 2026, a Reforma entra pelo documento fiscal. O Ato Conjunto lista os documentos recepcionados e fixa o dever de emitir documento fiscal eletrônico nas operações com bens e serviços, inclusive importação e exportação.",
                     "O comunicado oficial do CGIBS publicado em 15/06/2026 fecha a ambiguidade operacional do art. 3º do Ato Conjunto 1/2025: para o regime regular, o preenchimento dos campos de IBS e CBS passa a ser exigido de forma sistêmica a partir de 03/08/2026, com rejeição de documentos incompletos.",
+                    "O Ato Conjunto RFB/CGIBS 3/2026 incorpora a DeRE como trilha técnica propria para regimes específicos, com MOD, leiautes, tabelas, regras de validação, XSD e pacote para desenvolvedores.",
                     "A referencia local da NT 2025.002 v1.35 e apenas memoria historica ate captura integral da versao mais recente. Antes de aplicar leiaute, schema ou regra de validacao, conferir o documento atual no portal SVRS/NF-e.",
                     "A leitura para o departamento fiscal é direta: NF-e, NFC-e, NFS-e, CT-e, CT-e OS, BP-e, MDF-e, GTV-e e demais documentos reconhecidos precisam conversar com CST, cClassTrib, base, alíquota e campos técnicos. O ERP deve ser testado por cenário real, não apenas por exemplo genérico.",
                 ],
@@ -1746,10 +1758,12 @@ LEGAL_MODULES: list[dict] = [
                 "refs": [
                     {"source": "ec-132-2023-reforma", "ranges": [(8, 10), (12, 12), (19, 19)]},
                     {"source": "lc-214-2025-reforma", "ranges": [(101, 188), (234, 260)]},
+                    {"source": "ato-conjunto-rfb-cgibs-3-2026-dere", "ranges": [(1, 5)]},
                 ],
                 "analysis": [
                     "Benefício na Reforma continua sendo exceção legal, não atalho comercial. A pergunta correta é: a operação está expressamente dentro da hipótese, no período e nas condições previstas?",
                     "Para aplicar redução, alíquota zero, regime específico ou tratamento diferenciado, documente produto, serviço, destinatário, finalidade, enquadramento legal, vigência, reflexo no documento e memória de cálculo.",
+                    "A DeRE passa a ser ponto de controle técnico para contribuintes sujeitos a regimes específicos, especialmente serviços financeiros, planos de assistência à saúde e concursos de prognósticos.",
                 ],
             },
             {
