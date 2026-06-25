@@ -2673,6 +2673,14 @@ def curated_category(source: dict) -> str:
     return "OUTROS"
 
 
+def source_is_quarantined(source: dict) -> bool:
+    status = normalize(str(source.get("status_curadoria") or source.get("curation_status") or ""))
+    if not status:
+        return False
+    quarantine_markers = ("a validar", "quarentena", "link 404", "404", "bloqueado")
+    return any(marker in status for marker in quarantine_markers)
+
+
 @lru_cache(maxsize=None)
 def collect_curated_state_documents(uf: str) -> tuple[dict, ...]:
     manifest = state_source_manifest(uf)
@@ -2688,6 +2696,11 @@ def collect_curated_state_documents(uf: str) -> tuple[dict, ...]:
         text = clean_text(read_text(path))
         category = curated_category(source)
         source_id = source.get("id") or path.stem
+        curation_blocked = source_is_quarantined(source)
+        scope_flags = []
+        if curation_blocked:
+            reason = source.get("motivo_quarentena") or "fonte estadual marcada para quarentena editorial"
+            scope_flags.append(reason)
         docs.append({
             "id": slug(source_id),
             "source_id": source_id,
@@ -2703,10 +2716,13 @@ def collect_curated_state_documents(uf: str) -> tuple[dict, ...]:
             "sha256": source.get("sha256") or sha256_file(path),
             "source_documents": [source.get("url", "")] if source.get("url") else [],
             "official_url": source.get("url", STATE_OFFICIAL_PORTALS.get(uf, "")),
+            "curation_status": source.get("status_curadoria", ""),
+            "quarantine_reason": source.get("motivo_quarentena", ""),
+            "curation_blocked": curation_blocked,
             "dominant_scope": "ICMS",
             "scores": {"ICMS": normalize(text).count("icms")},
             "source_scopes": ["ICMS"],
-            "scope_flags": [],
+            "scope_flags": scope_flags,
             "scope_blocked": False,
             "named_icms": True,
             "fallback_icms": False,
@@ -2839,7 +2855,10 @@ def collect_state_documents(uf: str) -> tuple[dict, ...]:
 
 
 def publishable_state_documents(uf: str) -> tuple[dict, ...]:
-    return tuple(doc for doc in collect_state_documents(uf) if not doc.get("scope_blocked"))
+    return tuple(
+        doc for doc in collect_state_documents(uf)
+        if not doc.get("scope_blocked") and not doc.get("curation_blocked")
+    )
 
 
 def title_from_file(uf: str, path: Path, category: str) -> str:

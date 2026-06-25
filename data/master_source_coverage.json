@@ -1,6 +1,6 @@
 {
   "schema": "rjc-master-source-coverage-v2",
-  "generated_on": "2026-06-24",
+  "generated_on": "2026-06-25",
   "summary": {
     "federal_requirements": 15,
     "federal_published": 11,
@@ -430,8 +430,8 @@
         {
           "file": "data/legal_sources/reforma_tributaria/Ato_Conjunto_RFB_CGIBS_3_2026_DeRE.txt",
           "available": true,
-          "size": 2883,
-          "sha256": "c903229d80d3cd6619366f8a55f96a9044c72bba66ee2dc5a1e5e379babe5317"
+          "size": 2935,
+          "sha256": "ba3db141bc31ac993e11d546aebdcaef7bd0f6a15c2621b0dd4049391f15b038"
         }
       ],
       "minimum": "EC 132, LC 214, LC 227, Decreto CBS, Resolucao IBS, Portaria comum, Ato Conjunto 2026, CST, cClassTrib, cCredPres, transicao e documentos fiscais",

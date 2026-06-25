@@ -117,7 +117,7 @@
           "data/legal_sources/reforma_tributaria/Ato_Conjunto_RFB_CGIBS_3_2026_DeRE.txt"
         ],
         "sha256": {
-          "data/legal_sources/reforma_tributaria/Ato_Conjunto_RFB_CGIBS_3_2026_DeRE.txt": "c903229d80d3cd6619366f8a55f96a9044c72bba66ee2dc5a1e5e379babe5317"
+          "data/legal_sources/reforma_tributaria/Ato_Conjunto_RFB_CGIBS_3_2026_DeRE.txt": "ba3db141bc31ac993e11d546aebdcaef7bd0f6a15c2621b0dd4049391f15b038"
         },
         "fetch_url": ""
       },
@@ -6337,42 +6337,6 @@
             "documentos-efd-prova",
             "mapa-revisado-beneficios",
             "fiscalizacao-riscos"
-          ]
-        }
-      ]
-    },
-    {
-      "source_id": "state-rs-rs-credito-presumido-demais-casos",
-      "jurisdiction": "RS",
-      "title": "Receita Estadual/RS - Opcao ao credito presumido: demais casos",
-      "short": "Beneficios fiscais de ICMS",
-      "official_url": "https://receita.fazenda.rs.gov.br/servicos-a-empresas/servicos?servico=2959",
-      "storage": {
-        "type": "local_text",
-        "files": [
-          "data/fontes-estaduais-curadas/sul/RS/RS_CREDITO_PRESUMIDO_DEMAIS_CASOS_2026-04-26.txt"
-        ],
-        "sha256": {
-          "RS_CREDITO_PRESUMIDO_DEMAIS_CASOS_2026-04-26.txt": "34d42a1d1b63898fe7d21b5ad25e190c29d3dd0e6a16b1642921ab08e689c4f7"
-        },
-        "fetch_url": "https://receita.fazenda.rs.gov.br/servicos-a-empresas/servicos?servico=2959"
-      },
-      "note": "Texto estadual de ICMS publicado em estados/rs/legislacao/fontes/rs-credito-presumido-demais-casos.html.",
-      "render": "full_text",
-      "source_ranges": [],
-      "modified_by": [],
-      "used_by": [
-        {
-          "module_id": "state-rs",
-          "module_title": "Rio Grande do Sul: ICMS e benefícios fiscais em tela",
-          "chapters": [
-            "base-aliquota-apuracao",
-            "beneficios-matriz-lc160",
-            "isencoes-reducoes-creditos",
-            "creditos-exportacao-acumulado",
-            "diferimento-regimes-especiais",
-            "documentos-efd-prova",
-            "mapa-revisado-beneficios"
           ]
         }
       ]

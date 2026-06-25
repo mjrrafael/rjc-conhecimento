@@ -43,8 +43,10 @@
       "tipo": "servico oficial",
       "url": "https://receita.fazenda.rs.gov.br/servicos-a-empresas/servicos?servico=2959",
       "arquivo": "RS_CREDITO_PRESUMIDO_DEMAIS_CASOS_2026-04-26.txt",
-      "sha256": "34d42a1d1b63898fe7d21b5ad25e190c29d3dd0e6a16b1642921ab08e689c4f7",
-      "caracteres": 5613
+      "sha256": "330a4cc467e75e5307719eb72f8ad36b8e159118234c3e7c9059f716b3d5796e",
+      "caracteres": 5921,
+      "status_curadoria": "a_validar_link_404",
+      "motivo_quarentena": "fonte oficial retornou HTTP 404 no gate local de 2026-06-25; nao publicar card ate haver URL primaria resolvivel."
     },
     {
       "id": "RS_CREDITO_PRESUMIDO_IMPORTACAO",

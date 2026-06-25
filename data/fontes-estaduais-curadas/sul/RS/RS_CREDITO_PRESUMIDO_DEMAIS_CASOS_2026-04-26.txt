@@ -3,6 +3,8 @@ TEMA: Beneficios fiscais de ICMS
 TIPO: servico oficial
 FONTE PUBLICA: https://receita.fazenda.rs.gov.br/servicos-a-empresas/servicos?servico=2959
 DATA DA CAPTURA: 2026-04-26
+STATUS CURADORIA: a_validar_link_404
+MOTIVO QUARENTENA: fonte oficial retornou HTTP 404 no gate local de 2026-06-25; nao publicar card ate haver URL primaria resolvivel.
 
 TEXTO EXTRAIDO
 Opção ao Crédito Presumido – Demais Casos -
