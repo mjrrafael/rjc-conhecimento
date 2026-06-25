@@ -34,6 +34,7 @@ from state_legal_pages import (
     index_path,
     rel_href,
     source_path,
+    publishable_state_documents,
     state_curation,
     state_review_label,
     state_review_suffix,
@@ -881,11 +882,15 @@ def state_source_audit_page(data: dict) -> str:
     states_html = []
     for uf, item in report.get("states", {}).items():
         docs = item.get("documents", [])
-        local_docs = {doc["file"]: doc for doc in collect_state_documents(uf)} if uf != "GO" else {}
+        all_local_docs = {doc["file"]: doc for doc in collect_state_documents(uf)} if uf != "GO" else {}
+        blocked_files = {name for name, doc in all_local_docs.items() if doc.get("curation_blocked")}
+        local_docs = {doc["file"]: doc for doc in publishable_state_documents(uf)} if uf != "GO" else {}
         flags = item.get("flags") or ["sem alerta automatizado"]
         state_status = "publicado" if item.get("publish_deep") or uf == "GO" else state_review_label(uf)
         doc_rows = []
         for doc in docs:
+            if doc.get("file", "") in blocked_files:
+                continue
             local_doc = local_docs.get(doc.get("file", ""))
             open_link = ""
             if local_doc:

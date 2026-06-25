@@ -438,7 +438,6 @@ https://mjrrafael.github.io/rjc-conhecimento/estados/rs/legislacao/diferimento-r
 https://mjrrafael.github.io/rjc-conhecimento/estados/rs/legislacao/documentos-efd-prova.html
 https://mjrrafael.github.io/rjc-conhecimento/estados/rs/legislacao/fiscalizacao-riscos.html
 https://mjrrafael.github.io/rjc-conhecimento/estados/rs/legislacao/fontes/rs-ampara-rs.html
-https://mjrrafael.github.io/rjc-conhecimento/estados/rs/legislacao/fontes/rs-credito-presumido-demais-casos.html
 https://mjrrafael.github.io/rjc-conhecimento/estados/rs/legislacao/fontes/rs-credito-presumido-importacao.html
 https://mjrrafael.github.io/rjc-conhecimento/estados/rs/legislacao/fontes/rs-dec-37699-1997-ricms.html
 https://mjrrafael.github.io/rjc-conhecimento/estados/rs/legislacao/fontes/rs-icms-importacao-fundamentos.html

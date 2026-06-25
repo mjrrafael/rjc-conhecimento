@@ -375,6 +375,10 @@ def extract_header_meta(text: str) -> dict[str, str]:
             meta["captured_on"] = value
         elif key_norm.startswith("tema"):
             meta["theme"] = value
+        elif key_norm.startswith("status curadoria"):
+            meta["curation_status"] = value
+        elif key_norm.startswith("motivo quarentena"):
+            meta["quarantine_reason"] = value
     return meta
 
 
@@ -390,6 +394,8 @@ def source_meta_from_doc(uf: str, doc: dict, manifest: dict[str, dict]) -> dict:
         "title": header.get("title") or manifest_source.get("titulo") or doc.get("title", ""),
         "official_url": header.get("official_url") or manifest_source.get("url") or doc.get("official_url", ""),
         "captured_on": header.get("captured_on") or manifest_source.get("data_captura") or manifest_source.get("capturado_em") or "2026-04-26",
+        "curation_status": header.get("curation_status") or manifest_source.get("status_curadoria") or "",
+        "quarantine_reason": header.get("quarantine_reason") or manifest_source.get("motivo_quarentena") or "",
         "source_file": doc.get("file", path.name),
         "source_path": path.relative_to(ROOT).as_posix() if path.is_relative_to(ROOT) else str(path),
         "sha256": doc.get("sha256") or hashlib.sha256(path.read_bytes()).hexdigest(),
@@ -1045,8 +1051,24 @@ def table_line_windows(text: str) -> list[str]:
     return windows
 
 
+def source_quarantine_reasons(source: dict) -> list[str]:
+    status = normalize(str(source.get("curation_status", "")))
+    if not status:
+        return []
+    quarantine_markers = ("a validar", "quarentena", "link 404", "404", "bloqueado")
+    if not any(marker in status for marker in quarantine_markers):
+        return []
+    reason = str(source.get("quarantine_reason") or "").strip()
+    if not reason:
+        reason = f"fonte marcada como {source.get('curation_status')}; nao publicar ate revalidacao oficial."
+    return [reason]
+
+
 def evaluate_entry(source: dict, excerpt: str, seq: int) -> tuple[dict | None, list[str]]:
     excerpt = sanitize_text(excerpt)
+    source_reasons = source_quarantine_reasons(source)
+    if source_reasons:
+        return None, source_reasons
     ncm = extract_ncm(excerpt)
     cest = extract_cest(excerpt)
     cbenef = extract_cbenef(excerpt)

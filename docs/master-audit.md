@@ -1,6 +1,6 @@
 # Auditoria Mestre v2
 
-Gerado em 2026-06-24.
+Gerado em 2026-06-25.
 
 Este arquivo resume cobertura e cruzamentos do Portal RJC Tributario Aberto. Ele e uma trilha de auditoria, nao um parecer tributario.
 
@@ -13,8 +13,8 @@ Este arquivo resume cobertura e cruzamentos do Portal RJC Tributario Aberto. Ele
 - Estados profundos: 13
 - Estados aguardando revisao: 0
 - Estados revisados sem aprovacao profunda: 14
-- Entradas validadas na matriz de beneficios: 9727
-- Entradas em quarentena editorial: 13143
+- Entradas validadas na matriz de beneficios: 9726
+- Entradas em quarentena editorial: 13150
 - Entradas com NCM/TIPI: 1752
 - Entradas com CEST: 174
 - Entradas com cBenef: 3633
