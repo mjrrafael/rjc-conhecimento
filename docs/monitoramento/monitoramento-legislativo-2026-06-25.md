@@ -4,9 +4,9 @@
 
 Rodada extraordinaria para corrigir achado hard de qualidade publicado em 2026-06-25: card RS de credito presumido com fonte oficial retornando HTTP 404 no gate local.
 
-Status literal da rodada: `CONCLUIDO COM RESSALVA`.
+Status literal da rodada: `CONCLUIDO`.
 
-Ressalva: correcao validada localmente em branch `codex/corrige-fonte-rs-credito-presumido`; publicacao depende de commit, push e PR, pois a mudanca toca conteudo publicado.
+Publicacao concluida via PR #21, merge commit `f914054f74997e6f3175af6c979ae0c55a16b074`, com GitHub Pages publicado e verificacao HTTP publica final em 2026-06-25.
 
 ## Criterios de pronto
 
@@ -79,4 +79,27 @@ Resultado: `PASSE ADVERSARIAL OK`.
 
 ## Publicacao
 
-Publicacao ainda pendente. Mudanca toca conteudo (`data/*.json`, HTML publico, busca, `llms.txt`, manifest e sitemap), portanto deve seguir por PR.
+Publicacao concluida.
+
+- PR: https://github.com/mjrrafael/rjc-conhecimento/pull/21
+- Branch: `codex/corrige-fonte-rs-credito-presumido`
+- Commit da correcao: `699ff9c2ecd5108231a294730b0f020f32967722`
+- Merge em `main`: `f914054f74997e6f3175af6c979ae0c55a16b074`
+- GitHub Pages: run `28201074973`, `pages-build-deployment`, sucesso em 2026-06-25T21:18:13Z
+- Verificacao HTTP publica final: `PUBLIC_VERIFY_OK`
+
+Artefatos publicos verificados com cache-buster em 2026-06-25:
+
+| Artefato publico | HTTP | Evidencia |
+| --- | ---: | --- |
+| `llms.txt` | 200 | sem `rs-4ab7ac6454f0`, `servico=2959`, `RS_CREDITO_PRESUMIDO_DEMAIS_CASOS` ou slug |
+| `sitemap.xml` | 200 | sem vazamento |
+| `sitemap.txt` | 200 | sem vazamento |
+| `assets/llm-manifest.json` | 200 | sem vazamento |
+| `assets/portal-search.js` | 200 | sem vazamento |
+| `assets/portal-search-full.json` | 200 | sem vazamento |
+| `data/benefits_crosswalk.json` | 200 | sem vazamento |
+| `beneficios/index.html` | 200 | sem vazamento |
+| `estados/auditoria-fontes.html` | 200 | sem vazamento |
+| `data/legal_sources_registry.json` | 200 | sem vazamento |
+| `estados/rs/legislacao/fontes/rs-credito-presumido-demais-casos.html` | 404 | pagina-fonte removida do publico |
