@@ -645,7 +645,7 @@ window.RJC_SEARCH = [
     "title": "Reforma Tributária: legislação em tela",
     "url": "federal/legislacao/reforma-tributaria/index.html",
     "summary": "EC 132/2023, LC 214/2025, LC 227/2026, tabelas CST/cClassTrib/cCredPres, alíquotas, documentos fiscais, transição, créditos, split payment, benefícios e governança.",
-    "tags": "Federal reforma-tributaria ec-132-2023-reforma lc-214-2025-reforma lc-227-2026-cgibs decreto-12955-2026-cbs resolucao-cgibs-6-2026-ibs portaria-mf-cgibs-7-2026 ato-conjunto-rfb-cgibs-1-2025 ato-conjunto-rfb-cgibs-2-2026-split-payment ato-conjunto-rfb-cgibs-3-2026-dere rfb-orientacoes-reforma-2026 rfb-marcos-reforma cgibs-marco-03-08-2026-campos-ibs-cbs it-2025-002-tabelas-reforma tabela-cst-cclasstrib-ibs-cbs tabela-ccredpres-ibs-cbs nt-2025-002-rtc-nfe"
+    "tags": "Federal reforma-tributaria ec-132-2023-reforma lc-214-2025-reforma lc-227-2026-cgibs decreto-12955-2026-cbs resolucao-cgibs-6-2026-ibs portaria-mf-cgibs-7-2026 ato-conjunto-rfb-cgibs-1-2025 ato-conjunto-rfb-cgibs-2-2026-split-payment ato-conjunto-rfb-cgibs-3-2026-dere rfb-orientacoes-reforma-2026 rfb-marcos-reforma cgibs-marco-03-08-2026-campos-ibs-cbs rfb-cgibs-cnpj-pessoas-fisicas-documentos-2027 it-2025-002-tabelas-reforma tabela-cst-cclasstrib-ibs-cbs tabela-ccredpres-ibs-cbs nt-2025-002-rtc-nfe"
   },
   {
     "title": "Reforma Tributária: legislação em tela - Regra matriz do IBS e da CBS",
@@ -1090,6 +1090,12 @@ window.RJC_SEARCH = [
     "url": "federal/legislacao/atos/cgibs-marco-03-08-2026-campos-ibs-cbs.html",
     "summary": "Comunicado oficial do CGIBS que fixa a data operacional de 03/08/2026 para exigencia sistêmica dos campos de IBS e CBS nos documentos fiscais eletronicos do regime regular.",
     "tags": "cgibs-marco-03-08-2026-campos-ibs-cbs Federal Comunicado CGIBS 15/06/2026"
+  },
+  {
+    "title": "RFB/CGIBS - CNPJ para pessoas fisicas em documentos fiscais prorrogado para 2027",
+    "url": "federal/legislacao/atos/rfb-cgibs-cnpj-pessoas-fisicas-documentos-2027.html",
+    "summary": "Noticia oficial da Receita Federal sobre a prorrogacao para 01/01/2027 da obrigatoriedade de CNPJ para pessoas fisicas que emitem documentos fiscais no contexto da Reforma Tributaria.",
+    "tags": "rfb-cgibs-cnpj-pessoas-fisicas-documentos-2027 Federal Comunicado RFB/CGIBS 26/06/2026"
   },
   {
     "title": "Tabela CST e cClassTrib do IBS e da CBS - 15/04/2026",

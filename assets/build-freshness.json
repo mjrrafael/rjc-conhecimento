@@ -1,26 +1,26 @@
 {
   "schema": "rjc-build-freshness-v1",
-  "generated_at": "2026-06-26T07:46:26",
+  "generated_at": "2026-06-29T07:54:54",
   "artifacts": {
     "beneficios/index.html": {
       "sha256": "5b6951667cbc9560902ee54df6f0bfd665089015a261eada0f242f4af29024bb",
       "bytes": 54742810
     },
     "llms.txt": {
-      "sha256": "b0132d7a8f7a564269e3c106297e1bd9617c2e801c0d2e1941249dabc19a39dc",
-      "bytes": 126942
+      "sha256": "28f871de257cb7014537a7af59fa02e30e72a679f44d88eaa821c1c109fff0e6",
+      "bytes": 127166
     },
     "assets/llm-manifest.json": {
-      "sha256": "3598749cd3075342da3c38f69fb324a571c72b5c29cd521a6b23e75d2e435954",
-      "bytes": 205845
+      "sha256": "c38098970be96fcafb6257c2a511475d27f4e26dd81b9a93cf724ddd09bcbf86",
+      "bytes": 206219
     },
     "assets/portal-search.js": {
-      "sha256": "03681ab9cde07d9656d1deb8c5cc38cf620d605172cc22c8d8cc0f2d9dbe0edd",
-      "bytes": 1017013
+      "sha256": "705af2a4731c781b19a1c438921075a382036b697bd13da380d7cdd51a558369",
+      "bytes": 1017559
     },
     "assets/portal-search-full.json": {
-      "sha256": "86b7aedab15d639fa03af8595e32eae91c3f8f59a92c9ac49d8079a606ecbc7c",
-      "bytes": 49493122
+      "sha256": "4f0d4f5c4556d254f3241be834da2a36b358a9393866b7302eda7ee10b57409c",
+      "bytes": 49494814
     },
     "assets/portal-tributario.js": {
       "sha256": "54b896b65651e0d1e5df42c2db50be27ee68ab9dd65ef5d417d6f8ef7fe07f12",

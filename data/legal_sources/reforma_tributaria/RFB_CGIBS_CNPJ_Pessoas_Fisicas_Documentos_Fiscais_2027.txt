@@ -1,0 +1,31 @@
+# Obrigatoriedade de inscrição de pessoas físicas no CNPJ para emissão de documentos fiscais é prorrogada para 2027
+
+Fonte oficial:
+https://www.gov.br/receitafederal/pt-br/assuntos/noticias/obrigatoriedade-de-inscricao-de-pessoas-fisicas-no-cnpj-para-emissao-de-documentos-fiscais-e-prorrogada-para-2027
+
+Publicação:
+26/06/2026 às 19h31
+
+A Receita Federal informa que foi prorrogada para 1º de janeiro de 2027 a obrigatoriedade de inscrição no Cadastro Nacional da Pessoa Jurídica (CNPJ) para pessoas físicas que emitem documentos fiscais no exercício de atividade econômica.
+
+Conforme previsto na Nota Técnica Conjunta RFB/CGIBS/Sefaz-SE nº 01/2025, de 11 de junho de 2026, a medida tem caráter excepcional e busca assegurar a transição organizada para o novo modelo de identificação cadastral previsto na Reforma Tributária do Consumo.
+
+Regra até 1º de janeiro de 2027:
+
+As pessoas físicas enquadradas nessa situação poderão continuar emitindo documentos fiscais conforme os mecanismos atualmente vigentes, sem necessidade imediata de inscrição no CNPJ.
+
+A partir de novembro de 2026:
+
+Será disponibilizado um sistema simplificado para que essas pessoas físicas possam se inscrever no CNPJ com baixo esforço operacional, viabilizando a adequação até o novo prazo.
+
+Orientações técnicas:
+
+As instruções técnicas relativas ao novo sistema serão detalhadas em manual específico, a ser publicado no momento oportuno.
+
+Ambiente de testes:
+
+Será disponibilizado ambiente de homologação (sandbox) para que contribuintes, emissores e entes federativos possam testar os procedimentos antes da entrada em vigor da obrigatoriedade.
+
+Escopo:
+
+A prorrogação não altera as demais obrigações cadastrais, fiscais ou acessórias previstas na legislação tributária. Ela se aplica ao cronograma de inscrição no CNPJ para pessoas físicas vinculadas à emissão de documentos fiscais no contexto da Reforma Tributária do Consumo.

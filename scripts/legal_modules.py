@@ -43,6 +43,10 @@ REPO_SOURCE_ROOT = ROOT / "data" / "legal_sources"
 UPDATED_ON = "24/06/2026"
 
 
+def source_verified_on(source: dict) -> str:
+    return source.get("verified_on", UPDATED_ON)
+
+
 def slug(value: str) -> str:
     normalized = unicodedata.normalize("NFKD", value)
     ascii_text = normalized.encode("ascii", "ignore").decode("ascii")
@@ -823,10 +827,20 @@ SOURCE_DEFS: dict[str, dict] = {
         "title": "CGIBS - marco operacional de 03/08/2026 para campos de IBS e CBS",
         "short": "Comunicado CGIBS 15/06/2026",
         "url": "https://www.cgibs.gov.br/novo-marco-da-reforma-tributaria-inicia-em-03-de-agosto-com-preenchimento-obrigatorio-dos-campos-relativos-ao-ibs-e-a-cbs",
-        "fetch_url": "https://www.cgibs.gov.br/novo-marco-da-reforma-tributaria-inicia-em-03-de-agosto-com-preenchimento-obrigatorio-dos-campos-relativos-ao-ibs-e-a-cbs",
+        "repo_files": ["data/legal_sources/reforma_tributaria/CGIBS_Marco_03082026_Campos_IBS_CBS.txt"],
         "render": "structured_text",
-        "start_marker": "Novo marco da Reforma Tributária inicia em 03/08 com preenchimento de campos relativos ao IBS e à CBS",
+        "verified_on": "29/06/2026",
         "note": "Comunicado oficial do CGIBS que fixa a data operacional de 03/08/2026 para exigencia sistêmica dos campos de IBS e CBS nos documentos fiscais eletronicos do regime regular.",
+    },
+    "rfb-cgibs-cnpj-pessoas-fisicas-documentos-2027": {
+        "jurisdiction": "Federal",
+        "title": "RFB/CGIBS - CNPJ para pessoas fisicas em documentos fiscais prorrogado para 2027",
+        "short": "Comunicado RFB/CGIBS 26/06/2026",
+        "url": "https://www.gov.br/receitafederal/pt-br/assuntos/noticias/obrigatoriedade-de-inscricao-de-pessoas-fisicas-no-cnpj-para-emissao-de-documentos-fiscais-e-prorrogada-para-2027",
+        "repo_files": ["data/legal_sources/reforma_tributaria/RFB_CGIBS_CNPJ_Pessoas_Fisicas_Documentos_Fiscais_2027.txt"],
+        "render": "structured_text",
+        "verified_on": "29/06/2026",
+        "note": "Noticia oficial da Receita Federal sobre a prorrogacao para 01/01/2027 da obrigatoriedade de CNPJ para pessoas fisicas que emitem documentos fiscais no contexto da Reforma Tributaria.",
     },
     "tabela-cst-cclasstrib-ibs-cbs": {
         "jurisdiction": "Federal",
@@ -1531,6 +1545,7 @@ LEGAL_MODULES: list[dict] = [
             "rfb-orientacoes-reforma-2026",
             "rfb-marcos-reforma",
             "cgibs-marco-03-08-2026-campos-ibs-cbs",
+            "rfb-cgibs-cnpj-pessoas-fisicas-documentos-2027",
             "it-2025-002-tabelas-reforma",
             "tabela-cst-cclasstrib-ibs-cbs",
             "tabela-ccredpres-ibs-cbs",
@@ -1629,11 +1644,13 @@ LEGAL_MODULES: list[dict] = [
                     {"source": "decreto-12955-2026-cbs", "ranges": [(69, 84)]},
                     {"source": "resolucao-cgibs-6-2026-ibs", "ranges": [(69, 84)]},
                     {"source": "cgibs-marco-03-08-2026-campos-ibs-cbs", "full_text": True},
+                    {"source": "rfb-cgibs-cnpj-pessoas-fisicas-documentos-2027", "full_text": True},
                     {"source": "nt-2025-002-rtc-nfe", "full_text": True},
                 ],
                 "analysis": [
                     "Em 2026, a Reforma entra pelo documento fiscal. O Ato Conjunto lista os documentos recepcionados e fixa o dever de emitir documento fiscal eletrônico nas operações com bens e serviços, inclusive importação e exportação.",
                     "O comunicado oficial do CGIBS publicado em 15/06/2026 fecha a ambiguidade operacional do art. 3º do Ato Conjunto 1/2025: para o regime regular, o preenchimento dos campos de IBS e CBS passa a ser exigido de forma sistêmica a partir de 03/08/2026, com rejeição de documentos incompletos.",
+                    "A noticia oficial da Receita Federal publicada em 26/06/2026 registra prorrogação excepcional para 01/01/2027 da obrigatoriedade de inscrição no CNPJ para pessoas físicas que emitem documentos fiscais no exercício de atividade econômica; até essa data, elas podem seguir usando os mecanismos atuais, com sistema simplificado previsto para novembro de 2026.",
                     "O Ato Conjunto RFB/CGIBS 3/2026 incorpora a DeRE como trilha técnica propria para regimes específicos, com MOD, leiautes, tabelas, regras de validação, XSD e pacote para desenvolvedores.",
                     "A referencia local da NT 2025.002 v1.35 e apenas memoria historica ate captura integral da versao mais recente. Antes de aplicar leiaute, schema ou regra de validacao, conferir o documento atual no portal SVRS/NF-e.",
                     "A leitura para o departamento fiscal é direta: NF-e, NFC-e, NFS-e, CT-e, CT-e OS, BP-e, MDF-e, GTV-e e demais documentos reconhecidos precisam conversar com CST, cClassTrib, base, alíquota e campos técnicos. O ERP deve ser testado por cenário real, não apenas por exemplo genérico.",
@@ -2848,7 +2865,7 @@ def render_source_page(source_id: str, source_data: dict, layout_func) -> str:
     </div>
     <div class="document-actions">
       {official_anchor(source)}
-      <span>{escape(UPDATED_ON)}</span>
+      <span>{escape(source_verified_on(source))}</span>
     </div>
   </div>
   {law_body}
