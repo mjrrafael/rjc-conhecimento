@@ -1,6 +1,6 @@
 {
   "schema": "rjc-build-freshness-v1",
-  "generated_at": "2026-06-25T16:29:08",
+  "generated_at": "2026-06-26T07:46:26",
   "artifacts": {
     "beneficios/index.html": {
       "sha256": "5b6951667cbc9560902ee54df6f0bfd665089015a261eada0f242f4af29024bb",
@@ -19,7 +19,7 @@
       "bytes": 1017013
     },
     "assets/portal-search-full.json": {
-      "sha256": "72b84138c0b5ac0b3cd9d9b0d8a9ec7d72338751c0ef7d5f0d0029e9fdce83e3",
+      "sha256": "86b7aedab15d639fa03af8595e32eae91c3f8f59a92c9ac49d8079a606ecbc7c",
       "bytes": 49493122
     },
     "assets/portal-tributario.js": {
@@ -28,7 +28,7 @@
     },
     "data/benefits_crosswalk.json": {
       "sha256": "df3f2261681d184d177ab632d04f7334bcd77ed37826d43e72db7ee7f11c7810",
-      "bytes": 75574513
+      "bytes": 76509697
     },
     "data/ncm_benefits_index.json": {
       "sha256": "a17775308e2537689a67186793efcf406e2af59069d6d3fbdf4c65f367f2cf7a",
@@ -36,7 +36,7 @@
     },
     "data/confaz_ultimos_5_anos.json": {
       "sha256": "4f2d1672a084bb2f2fc644a1182a4d8c445a4da2e9d046d6f0ac063292ca4c80",
-      "bytes": 346841
+      "bytes": 356787
     },
     "produto.html": {
       "sha256": "d2e5fb0c7a01d1d5c5cff49b9b992e9d6ba8ec9705152275d46edb9139bf61ed",
