@@ -100,7 +100,13 @@ Defeitos derrubados pelo passe adversarial:
 
 Publicacao obrigatoriamente por PR, sem push direto em `main`.
 
-Estado no momento de gravacao inicial deste ledger: PR a abrir apos commit dos artefatos validados.
+Estado de publicacao desta rodada:
+
+- PR: https://github.com/mjrrafael/rjc-conhecimento/pull/24
+- Branch: `codex/monitor-portal-2026-06-29-cnpj-pf-rtc`
+- Commit inicial validado: `6b2104d` (`Atualiza fonte RFB CGIBS de CNPJ PF`)
+- Status: PR draft aberta; sem merge/publicacao em `main` nesta rodada.
+- Rotulos: `codex` e `codex-automation` nao existem no repositorio no momento da verificacao por `gh label list`, portanto nao foram aplicados.
 
 ## Pendencias humanas
 
