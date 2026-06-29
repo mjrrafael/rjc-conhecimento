@@ -6,13 +6,13 @@ Rodada recorrente do Portal RJC Tributario Aberto para verificar fontes oficiais
 
 Status literal da rodada: `CONCLUIDO COM RESSALVA`.
 
-Ressalvas: a PR `#22` continuava aberta na branch `codex/monitor-portal-2026-06-26-freshness-sync`; esta rodada nao alterou artefatos publicos. O GET do HTML do CGIBS/DeRE sofreu reset de conexao em uma tentativa, mas o HEAD da pagina e o PDF oficial primario do Ato Conjunto 3/2026 responderam HTTP 200. O arquivo local nao rastreado `beneficios/cesta-basica (1).html` foi comparado integralmente e removido por ser snapshot antigo sem diferenca material apos normalizar datas/line endings.
+Ressalvas: o GET do HTML do CGIBS/DeRE sofreu reset de conexao em uma tentativa, mas o HEAD da pagina e o PDF oficial primario do Ato Conjunto 3/2026 responderam HTTP 200. O arquivo local nao rastreado `beneficios/cesta-basica (1).html` foi comparado integralmente e removido por ser snapshot antigo sem diferenca material apos normalizar datas/line endings.
 
 ## Criterios de pronto
 
 | # | Criterio de pronto | Metodo | Status | Evidencia |
 | --- | --- | --- | --- | --- |
-| 1 | Hard gates canonicos saem com codigo `0` | execucao integral local | OK | bateria canonica executada em 2026-06-28 21h local; todos os exits `0` |
+| 1 | Hard gates canonicos saem com codigo `0` | execucao integral local | OK | bateria canonica executada em 2026-06-28 21h e reexecutada em 2026-06-28 22h local; todos os exits `0` |
 | 2 | Nenhuma fonte oficial nova obrigatoria desde 2026-06-26 fica ausente | confronto com fonte primaria + busca local | OK | CONFAZ 2026 local contem `CONVENIO ICMS 62/26`, `AJUSTE SINIEF 16/26` e `PROTOCOLO ICMS 52/26`; CGIBS DeRE 1.1.0 coberta pelo Ato Conjunto 3/2026 |
 | 3 | HTML, JSON, busca e LLM continuam convergentes | auditorias v2 e checks de checksum | OK | `audit_index_freshness`, `audit_divergence_html_json_search`, `audit_quarantine_isolation` verdes |
 | 4 | Passe adversarial gera teste executavel e nao encontra defeito novo no portal | script PowerShell + auditorias independentes | OK | URLs oficiais individuais CONFAZ resolveram 200; JSON/HTML/busca contem os ultimos atos; gates adversariais verdes |
@@ -84,15 +84,18 @@ Observacao adversarial: a primeira versao do teste falhou por regex fragil contr
 
 ## Publicacao
 
-Sem publicacao direta em `main` nesta etapa. A publicacao deve seguir pela PR `#22`.
+Publicacao feita por PR, sem push direto em `main`.
 
-- Branch local: `codex/monitor-portal-2026-06-26-freshness-sync`
-- PR existente: `#22` aberta, `mergeStateStatus=CLEAN`, sem checks no `statusCheckRollup`
-- Politica aplicavel: como a branch ja possuia PR de conteudo/artefatos aberta, este ledger deve ser anexado a mesma PR antes do merge.
+- PR: `#22` - https://github.com/mjrrafael/rjc-conhecimento/pull/22
+- Branch: `codex/monitor-portal-2026-06-26-freshness-sync`
+- Commit adicional de ledger anexado a PR: `345bfa3a6011d3d3b1ac8ef5f868e03de4b9bf37`
+- Merge commit: `fd021dabd18eca63a650c39949342bece9a81d2f`
+- Pages run: `28343979900`, `success`, https://github.com/mjrrafael/rjc-conhecimento/actions/runs/28343979900
+- Verificacao HTTP publica apos Pages: raiz `200`; este ledger `200`; `beneficios/cesta-basica.html` `200`; `beneficios/cesta-basica%20(1).html` `404`; `llms.txt` `200`; `assets/llm-manifest.json` `200`; `assets/portal-search.js` `200`; `assets/build-freshness.json` `200`.
 
 ## Pendencias humanas
 
-- Revisar/mesclar ou fechar a PR `#22`, que ainda concentra a sincronizacao de artefatos de 2026-06-26.
+Sem pendencia humana da rodada.
 
 ## Pendencias IA/LLM
 
