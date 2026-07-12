@@ -16,8 +16,8 @@ SITE = Path(sys.argv[1]).resolve() if len(sys.argv) > 1 else ROOT / "_site"
 RUN = ROOT / "auditoria" / "execucoes" / "monitor-v3-2026-07-12"
 ALLOWED = {"index.html", "404.html", "robots.txt", "llms.txt"}
 APPROVED_SHA256 = {
-    "404.html": "085964c0cfdfb739c122e2f363b84a2d9ea97a9924d1c760af3cf4331bbabf07",
-    "index.html": "bbe1897614377f3c46e6b93e067fc1004ab1234ab5511a3ba36453d6bc095816",
+    "404.html": "07e4f9f163f5653ca81949a694ba17f00d8416bcdb84f13fafbb7f5d154d13e7",
+    "index.html": "f3f84f1276d7dfb911624c02ed8a56891473d60cc41d18481321254611e53368",
     "llms.txt": "08f53be6f0f48b242d6d82bc41ccf287ecace2088813b58f9c1f2d5205f0dd07",
     "robots.txt": "331ea9090db0c9f6f597bd9840fd5b171830f6e0b3ba1cb24dfa91f0c95aedc1",
 }
