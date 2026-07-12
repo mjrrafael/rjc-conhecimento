@@ -74,8 +74,7 @@ def audit_public_benefits(errors: list[str]) -> None:
     if payload.get("quarantine"):
         errors.append("matriz publica ainda contem bloco quarantine")
     entries = payload.get("entries", [])
-    if not entries:
-        errors.append("matriz publica de beneficios ficou vazia")
+    # Zero public entries is the safe fail-closed state while material proof is absent.
     required = {
         "id",
         "official_url",
@@ -117,13 +116,15 @@ def audit_quarantine(errors: list[str]) -> None:
     payload = read_json(QUARANTINE)
     if payload.get("schema") != "rjc-benefits-quarantine-v1":
         errors.append("quarentena de beneficios em schema inesperado")
+    if payload.get("entries"):
+        errors.append("quarentena material foi serializada em superfície pública")
     for index, item in enumerate(payload.get("entries", [])):
         if item.get("validation_status") != "a_validar":
             errors.append(f"quarentena {index} sem status a_validar")
         if not item.get("quarantine_reasons"):
             errors.append(f"quarentena {index} sem motivo")
-        if not str(item.get("official_url", "")).startswith(("http://", "https://")):
-            errors.append(f"quarentena {index} sem URL oficial")
+        if any(key in item for key in ("official_url", "legal_excerpt", "scope_summary", "conditions")):
+            errors.append(f"quarentena {index} repete conteúdo material protegido")
 
 
 def audit_public_files(errors: list[str]) -> None:

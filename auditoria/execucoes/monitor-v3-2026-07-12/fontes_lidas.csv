@@ -1,0 +1,8 @@
+fonte,tipo,caminho_ou_url,escopo_lido,limitacao
+Memória da automação,markdown,C:\Users\rafae\.codex\automations\monitor-portal-rjc-tributario\memory.md,integral,nenhuma
+Contrato revisar-ate-concluir,yaml,C:\Users\rafae\.codex\skills\revisar-ate-concluir\contrato_execucao.yaml,integral,nenhuma
+Skill revisar-ate-concluir,markdown,C:\Users\rafae\.codex\skills\revisar-ate-concluir\SKILL.md,integral,nenhuma
+Skill revisor-de-aplicacao,markdown,C:\Users\rafae\.codex\skills\revisor-de-aplicacao\SKILL.md,integral,nenhuma
+GitHub main,git,23d864f510bfbb16d6ef5d73049c63a1003b5ac6,integral,árvore material ainda em revisão
+PR 24,github,https://github.com/mjrrafael/rjc-conhecimento/pull/24,metadados e lista de arquivos,conteúdo não reutilizado
+Produção,web,https://mjrrafael.github.io/rjc-conhecimento/,parcial,raiz não aberta pelo web; busca confirmou páginas públicas; crawl integral pendente

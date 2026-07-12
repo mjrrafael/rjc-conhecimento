@@ -1,0 +1,39 @@
+skill: revisar-ate-concluir
+versao_contrato: 2026-07-09
+dominio: governanca
+risco_padrao: alto
+artefatos_obrigatorios:
+  - workflow.md
+  - ledger_verificacao.csv
+  - fontes_lidas.csv
+  - achados_e_pendencias.md
+  - revisao_adversarial.md
+  - relatorio_final.md
+gates:
+  - id: G0
+    nome: enquadramento_e_escopo
+    artefatos: [workflow.md]
+  - id: G1
+    nome: fontes_e_inventario
+    artefatos: [fontes_lidas.csv, workflow.md]
+  - id: G2
+    nome: execucao_com_evidencia
+    artefatos: [ledger_verificacao.csv, achados_e_pendencias.md]
+  - id: G3
+    nome: revisao_adversarial
+    artefatos: [revisao_adversarial.md, ledger_verificacao.csv]
+  - id: G4
+    nome: verificador_deterministico
+    artefatos: [conformidade.json]
+  - id: G5
+    nome: fechamento_literal
+    artefatos: [relatorio_final.md]
+checks_obrigatorios:
+  - Definir criterios falsificaveis antes de executar.
+  - Registrar ledger com status e evidencia concreta.
+  - Executar revisao adversarial real com cadeia re-derivada.
+  - Re-derivar a partir da fonte primaria crua.
+  - Fechar apenas com status literal permitido.
+camadas_manuais:
+  - verdade material das fontes juridicas
+  - cobertura integral e adversarial

@@ -717,7 +717,57 @@ def iso_date(value: object) -> str:
 
 
 def source_reference_date(source: dict) -> str:
-    return iso_date(source.get("publication_date")) or iso_date(source.get("captured_on")) or TODAY
+    """Return only a proven legal publication date.
+
+    Capture/build/editorial dates are metadata and must never become legal dates.
+    """
+    return iso_date(source.get("publication_date"))
+
+
+def material_publication_blockers(source: dict) -> list[str]:
+    """List missing material evidence; publication is fail-closed."""
+    blockers: list[str] = []
+    if source.get("publishable") is not True:
+        blockers.append("fonte sem autorização material publishable=true")
+    if not iso_date(source.get("publication_date")):
+        blockers.append("publicação AUSENTE ou sem prova")
+    if not iso_date(source.get("validity_start")):
+        blockers.append("início de vigência AUSENTE ou sem prova")
+    if not iso_date(source.get("effectiveness_start")):
+        blockers.append("início de eficácia AUSENTE ou sem prova")
+    provenance = source.get("field_provenance")
+    if not isinstance(provenance, dict):
+        blockers.append("field_provenance ausente")
+    else:
+        for field in ("publication_date", "validity_start", "effectiveness_start"):
+            item = provenance.get(field)
+            if not isinstance(item, dict):
+                blockers.append(f"proveniência ausente para {field}")
+                continue
+            required = {
+                "card_id", "field", "value", "final_url", "official_domain",
+                "redirects", "http_status", "mime", "body_sha256",
+                "literal_excerpt", "locator", "normalization_rule",
+            }
+            if required - set(item):
+                blockers.append(f"proveniência incompleta para {field}")
+            if item.get("http_status") != 200:
+                blockers.append(f"HTTP material inválido para {field}")
+    receipt_ids = source.get("independent_http_receipt_ids")
+    if not isinstance(receipt_ids, list) or len({str(value) for value in receipt_ids if value}) < 2:
+        blockers.append("duas capturas HTTP nativas independentes ausentes")
+    if not str(source.get("verification_receipt_id", "")).strip():
+        blockers.append("recibo material de verificação ausente")
+    if not iso_date(source.get("verified_on")):
+        blockers.append("verificado_em sem revalidação material")
+    jurisdiction = str(source.get("jurisdiction", ""))
+    if len(jurisdiction) == 2 and source.get("tax") == "ICMS":
+        status = source.get("internalization_status")
+        if status not in {"COMPROVADA", "DISPENSADA_COM_FUNDAMENTO"}:
+            blockers.append("internalização NÃO_COMPROVADA")
+        if not isinstance(source.get("internalization_evidence"), dict):
+            blockers.append("prova específica de internalização ausente")
+    return blockers
 
 
 def normalized_card_status(source: dict, excerpt: str) -> str:
@@ -726,6 +776,8 @@ def normalized_card_status(source: dict, excerpt: str) -> str:
     if raw_end and raw_end < TODAY:
         return "historico"
     if "exige conferencia" in status_text:
+        return "a_revalidar"
+    if material_publication_blockers(source):
         return "a_revalidar"
     return "vigente"
 
@@ -801,7 +853,8 @@ def benefit_contract_fields(
     risk: str,
 ) -> dict:
     publication = source_reference_date(source)
-    start = iso_date(source.get("validity_start")) or publication
+    start = iso_date(source.get("validity_start"))
+    effectiveness = iso_date(source.get("effectiveness_start"))
     end = iso_date(source.get("validity_end"))
     status = normalized_card_status(source, excerpt)
     act = {
@@ -809,18 +862,19 @@ def benefit_contract_fields(
         "num": infer_act_number(source.get("title", "")),
         "titulo": source.get("title", ""),
         "url": source.get("official_url", ""),
-        "resolve": True,
+        "resolve": bool(source.get("act_identity_proven") is True),
     }
     validity = {
         "publicacao": publication,
         "inicio_vigencia": start,
-        "inicio_eficacia": start,
+        "inicio_eficacia": effectiveness,
         "fim_vigencia": end or None,
         "status": status,
     }
     proof = {
         "url": source.get("official_url", ""),
-        "internalizado_uf": len(str(source.get("jurisdiction", ""))) == 2,
+        "internalizacao_status": source.get("internalization_status", "NÃO_COMPROVADA"),
+        "internalizacao_evidencia": source.get("internalization_evidence"),
         "descricao": proof_for(benefit_type, excerpt),
     }
     return {
@@ -831,7 +885,7 @@ def benefit_contract_fields(
         "ato_oficial": act,
         "publicacao": publication,
         "inicio_vigencia": start,
-        "inicio_eficacia": start,
+        "inicio_eficacia": effectiveness,
         "fim_vigencia": end or None,
         "vigencia": validity,
         "condicao": conditions,
@@ -839,7 +893,9 @@ def benefit_contract_fields(
         "transicao_rt": transition_rt_label(source.get("tax", ""), excerpt),
         "risco": risk,
         "status": status,
-        "verificado_em": TODAY,
+        "verificado_em": iso_date(source.get("verified_on")),
+        "field_provenance": source.get("field_provenance", {}),
+        "verification_receipt_id": source.get("verification_receipt_id", ""),
         "provenance": "ato_oficial",
     }
 
@@ -1104,6 +1160,7 @@ def evaluate_entry(source: dict, excerpt: str, seq: int) -> tuple[dict | None, l
     confidence_label = classification_confidence(excerpt, product, operation, identifiers, group_evidence)
     confidence = confidence_score(confidence_label)
     reasons = rejection_reasons(excerpt, legal_excerpt, product, operation, identifiers, confidence_label)
+    reasons.extend(material_publication_blockers(source))
     if reasons:
         return None, reasons
     entry_id = f"{source['jurisdiction'].lower()}-{hashlib.sha1((source['source_file'] + excerpt).encode('utf-8')).hexdigest()[:12]}"
@@ -1138,7 +1195,7 @@ def evaluate_entry(source: dict, excerpt: str, seq: int) -> tuple[dict | None, l
         "operation": operation,
         "conditions": conditions,
         "prohibitions": prohibitions,
-        "validity_start": source.get("validity_start", source.get("captured_on", "")),
+        "validity_start": source.get("validity_start", ""),
         "validity_end": source.get("validity_end", ""),
         "validity_status": validity_status(source, excerpt),
         "modifying_act": source.get("modifying_act", ""),
@@ -1164,7 +1221,7 @@ def evaluate_entry(source: dict, excerpt: str, seq: int) -> tuple[dict | None, l
         "classification_confidence": confidence,
         "classification_confidence_label": confidence_label,
         "audience_status": "humano e IA",
-        "publishable": True,
+        "publishable": not material_publication_blockers(source),
         "proof_required": proof_for(benefit_type, excerpt),
         "risk": risk,
         "seq": seq,
@@ -1184,19 +1241,16 @@ def quarantine_entry(source: dict, excerpt: str, seq: int, reasons: list[str]) -
     entry_id = f"q-{source['jurisdiction'].lower()}-{hashlib.sha1((source['source_file'] + excerpt).encode('utf-8')).hexdigest()[:12]}"
     return {
         "id": entry_id,
+        # Internal-only fields used for deterministic deduplication. The writer
+        # deliberately serializes no quarantine entries into the public tree.
         "jurisdiction": source.get("jurisdiction", ""),
-        "name": source.get("name", ""),
-        "tax": source.get("tax", ""),
-        "source_title": source.get("title", ""),
         "source_file": source.get("source_file", ""),
-        "source_path": source.get("source_path", ""),
-        "official_url": source.get("official_url", ""),
-        "captured_on": source.get("captured_on", ""),
         "legal_excerpt": compact(excerpt, 900),
-        "quarantine_reasons": reasons,
+        "source_fingerprint": hashlib.sha256(str(source.get("sha256", "")).encode("utf-8")).hexdigest(),
+        "quarantine_reasons": sorted(set(reasons)),
         "validation_status": "a_validar",
-        "audience_status": "IA/editorial",
-        "public_impact": "registro nao publicado ate revisao humana do escopo",
+        "audience_status": "interno-nao-publicar",
+        "public_impact": "tombstone sem conteúdo material",
         "seq": seq,
     }
 
@@ -1314,8 +1368,8 @@ def build_validated_benefits() -> dict:
             "with_cst": sum(1 for item in entries if item["cst"]),
             "high_confidence": sum(1 for item in entries if float(item.get("classification_confidence", 0)) >= 0.90),
             "medium_confidence": sum(1 for item in entries if 0.80 <= float(item.get("classification_confidence", 0)) < 0.90),
-            "oldest_verified_on": min((item.get("verificado_em", TODAY) for item in entries), default=TODAY),
-            "editorial_date": min((item.get("verificado_em", TODAY) for item in entries), default=TODAY),
+            "oldest_verified_on": min((item.get("verificado_em") for item in entries if item.get("verificado_em")), default=None),
+            "editorial_date": min((item.get("verificado_em") for item in entries if item.get("verificado_em")), default=None),
             "editorial_date_source": "min_verificado_em",
         },
         "entries": entries,

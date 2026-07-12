@@ -623,9 +623,9 @@ def main() -> None:
         "source": "data/benefits_crosswalk.json",
         "summary": {
             "entries": len(benefits.get("quarantine", [])),
-            "rule": "itens extraidos de fonte oficial, mas nao publicados por escopo ambíguo, baixa confiança ou ruido editorial",
+            "rule": "conteúdo material de quarentena não é serializado em repositório ou superfície pública",
         },
-        "entries": benefits.get("quarantine", []),
+        "entries": [],
     }
     public_benefits = {key: value for key, value in benefits.items() if key != "quarantine"}
     write_json(OUT_TAXONOMY, taxonomy)

@@ -1,0 +1,9 @@
+criterio,metodo,status,evidencia
+Inventário integral e diferença simétrica zero,"git ls-tree + filesystem + geradores + build + crawl",A VALIDAR,"baseline com 990 arquivos rastreados e 990 no filesystem; universos derivados ainda não reconciliados"
+Escopo canônico completo,"matriz fixa 27 UFs + federal + municípios + URLs",A VALIDAR,"matriz ainda não produzida"
+Verdade jurídica por campo,"refetch anônimo + trecho/localizador + hash",CORRIGIR,"scripts/validated_benefits.py linhas identificadas por rg usam captured_on/TODAY e internalização por UF"
+Quarentena isolada,"varredura por ID/literal/fingerprint",A VALIDAR,"gates v3 ausentes"
+Gates materiais e mutantes,"dois runners independentes e matriz fechada",BLOQUEADO,"duas raízes de confiança preexistentes ainda não localizadas"
+Ondas independentes,"seis agentes distintos + prova negativa de leitura",A VALIDAR,"Onda 1 iniciada; isolamento efetivo e export de tool calls ainda não provados"
+Publicação no SHA exato,"PR + CI + merge + Pages + HTTP/hash",A VALIDAR,"não iniciada"
+Refetch pós-deploy,"todas as URLs oficiais públicas",A VALIDAR,"não iniciada"
