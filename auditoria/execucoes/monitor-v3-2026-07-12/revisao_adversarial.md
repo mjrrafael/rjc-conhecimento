@@ -16,6 +16,12 @@ cadeia re-derivada: portal humano | fontes cruas reabertas: 990 arquivos, 655 HT
 
 cadeia re-derivada: fontes/vigência | fontes cruas reabertas: 1.917 alvos e 1.865 recibos persistidos pela Onda 1 jurídica | resultado: só 797 HTTP 200 completos; 92.980 identidades e 485 internalizações não comprovadas.
 
+cadeia re-derivada: candidato Pages | fonte crua reaberta: SHA e96aafa, Jekyll 3.10.0 e 2.432 rotas pela Onda 2 humana | resultado: dois builds emitiram só quatro arquivos; 2.423 rotas 404 e zero vazamento técnico.
+
+cadeia re-derivada: rebuild candidato | fonte crua reaberta: oito etapas do pipeline pela Onda 2 IA/dados | resultado: zero benefício público após master build, mas `build_portal.py` volta a gerar 658 URLs e desfaz a quarentena raiz.
+
+cadeia re-derivada: aplicação do rito | fonte crua reaberta: contrato, Git, inventário, PR e produção pelo revisor independente | resultado: veredito NÃO CONFORME; status BLOQUEADO coerente; hashes obsoletos corrigidos.
+
 ## 3. Detalhe interno que derrubaria a conclusão
 
 Qualquer URL oficial sem identidade material do ato, qualquer arquivo fora do inventário, ou qualquer leitura da Onda 2 sobre artefato da Onda 1.

@@ -13,6 +13,10 @@
 - Onda 1 final — IA/dados: 9.726 históricos sem cadeia explícita, 27 contradições PIS candidatas e build só-Git não reproduzível.
 - PR draft #25 aberta no SHA `48e51c48566468ce70b54b6a43d9579be1db74e8`, com labels `codex` e `codex-automation`, sem autorização para merge.
 - O push dos workflows foi rejeitado pelo GitHub porque o token OAuth não possui escopo `workflow`; SSH também não está configurado.
+- Onda 2 fontes/vigência: 9.726/9.726 cards sem proveniência/recibos, 9.611 ICMS sem internalização específica e produção com quarentena bruta HTTP 200.
+- Onda 2 humano: dois builds Jekyll emitiram exatamente quatro arquivos; crawl de 2.432 rotas não encontrou vazamento candidato, mas a independência foi contaminada por leitura acidental de snippets internos ao SHA.
+- Onda 2 IA/dados: pipeline integral levou 821,6 s, alterou 674 arquivos; `build_portal.py` desfaz a quarentena da raiz e gera 658 URLs; 16 gates passaram e 4 falharam.
+- Revisor de aplicação independente: veredito `NÃO CONFORME`; confirmou status `BLOQUEADO`, detectou artefatos obsoletos e dois hashes de inventário divergentes, posteriormente corrigidos por geração do inventário por último.
 
 ## Pendências
 

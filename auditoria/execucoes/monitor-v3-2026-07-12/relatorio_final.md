@@ -2,7 +2,7 @@
 
 ## Sumário executivo
 
-O baseline foi reprovado pelos três revisores independentes da Onda 1. A correção segura candidata reduz o Pages a um aviso neutro e exclui o acervo do artefato publicado, mas ainda não foi submetida à Onda 2 nem publicada. A PR draft #25 preserva o checkpoint, sem checks ou autorização para merge.
+O baseline foi reprovado pela Onda 1. A Onda 2 confirmou que a projeção Jekyll candidata serviria apenas quatro arquivos neutros, mas reprovou o corpus e ficou formalmente contaminada. O revisor de aplicação também retornou `NÃO CONFORME`. A PR draft #25 permanece sem checks, merge ou deploy.
 
 ## Achados com lastro
 
@@ -10,8 +10,10 @@ Ver `achados_e_pendencias.md`.
 
 ## Pendências / A VALIDAR
 
-Conclusão da Onda 1, universos, correção integral, Onda 2, gates certificados, CI, merge, Pages e produção. O token GitHub precisa receber escopo `workflow`.
+Correção integral do corpus/geradores, nova Onda 2 isolada, recibos nativos, duas raízes assinadas, hard gates, CI, merge, Pages e refetch pós-deploy. O token GitHub precisa receber escopo `workflow`.
 
 ## Status literal
 
 Status: BLOQUEADO
+
+Estado operacional da automação: `BLOQUEADO TEMPORÁRIO`.

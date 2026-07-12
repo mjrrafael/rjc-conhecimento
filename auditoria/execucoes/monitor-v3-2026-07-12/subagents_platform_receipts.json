@@ -7,5 +7,11 @@
     "/root/onda1_humano_portal",
     "/root/onda1_ia_dados"
   ],
+  "wave2_tasks": [
+    "/root/onda2_fontes_vigencia",
+    "/root/onda2_humano_portal",
+    "/root/onda2_ia_dados"
+  ],
+  "wave2_independence": "FAILED: revisor humano leu acidentalmente snippets de relatórios internos incluídos no próprio SHA candidato",
   "certifiable": false
 }

@@ -1,0 +1,10 @@
+{
+  "schema": "rjc-gate-mutation-results-v3",
+  "executed": false,
+  "status": "BLOQUEADO",
+  "trusted_roots_found": 0,
+  "required_trusted_roots": 2,
+  "candidate_signed": false,
+  "mutants_executed": 0,
+  "reason": "Nenhuma dupla de raízes preexistentes, assinadas e administrativamente distinta estava disponível; nenhum gate foi autocertificado."
+}

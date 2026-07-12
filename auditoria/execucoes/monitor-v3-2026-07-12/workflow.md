@@ -37,6 +37,8 @@ Sanear integralmente o portal, corrigir o gerador legado, provar cobertura jurí
 - Achados parciais da Onda 1 confirmam ausência universal de proveniência/recibos nos 9.726 cards e vazamento material da quarentena.
 - Onda 1 final concluída pelos três papéis, todos com veredito material `NÃO CONFORME` e status de execução `CONCLUÍDO COM RESSALVA`.
 - Candidato de quarentena integral usa Jekyll legado com allowlist efetiva de `index.html`, `404.html`, `robots.txt` e `llms.txt`; o acervo permanece no Git, mas deve ser excluído do artefato Pages.
+- Onda 2 executada pelos três novos papéis sobre `e96aafa`; resultados técnicos confirmam a projeção Jekyll, porém a onda é não certificável por independência contaminada, raízes/recibos/isolamento ausentes e corpus ainda inseguro.
+- Revisor de aplicação retornou `NÃO CONFORME`; a forma G0–G5 passa, mas as camadas manuais e a ordem temporal falham.
 
 ## 6. Arquivos gerados
 
