@@ -49,7 +49,7 @@ arquivo::auditoria/execucoes/monitor-v3-2026-07-12/http_platform_receipts.json,a
 arquivo::auditoria/execucoes/monitor-v3-2026-07-12/inventario_integral.csv,auditoria/execucoes/monitor-v3-2026-07-12/inventario_integral.csv,True,True,SELF_REFERENTIAL_GIT_TREE,OK,git ls-tree + filesystem
 arquivo::auditoria/execucoes/monitor-v3-2026-07-12/inventory_exclusions.csv,auditoria/execucoes/monitor-v3-2026-07-12/inventory_exclusions.csv,True,True,7253bda31eb1bfaf12f09ab6c4a3c8ab160ae17b2eda9266951ddfd7e2e6696a,OK,git ls-tree + filesystem
 arquivo::auditoria/execucoes/monitor-v3-2026-07-12/ledger_verificacao.csv,auditoria/execucoes/monitor-v3-2026-07-12/ledger_verificacao.csv,True,True,dfbefa1f2f7a3f5ec93f2c97014c9e497f3567d337996b7a94d1dcc7b8d43d86,OK,git ls-tree + filesystem
-arquivo::auditoria/execucoes/monitor-v3-2026-07-12/manifesto_diff.csv,auditoria/execucoes/monitor-v3-2026-07-12/manifesto_diff.csv,True,True,bdc8d9c293c1b4b848b8320b4ab9129cfa6f04179f6e7d9becb6c2fd1b5edd31,OK,git ls-tree + filesystem
+arquivo::auditoria/execucoes/monitor-v3-2026-07-12/manifesto_diff.csv,auditoria/execucoes/monitor-v3-2026-07-12/manifesto_diff.csv,True,True,989d601c5af9ecd0002628b43b54f2e399c38ecc8b56a3a1513e9bbbcc5c4e9e,OK,git ls-tree + filesystem
 arquivo::auditoria/execucoes/monitor-v3-2026-07-12/matriz_fontes_canonicas.csv,auditoria/execucoes/monitor-v3-2026-07-12/matriz_fontes_canonicas.csv,True,True,63d3161ad2ba15648e2b0e5f53a3acc26fa797801cf0caf17c6280c02badac7c,OK,git ls-tree + filesystem
 arquivo::auditoria/execucoes/monitor-v3-2026-07-12/relatorio_conformidade.md,auditoria/execucoes/monitor-v3-2026-07-12/relatorio_conformidade.md,True,True,b11c5f234b98176392d764da770ea5be3feb75e911ea311eda1fb70844f8cef4,OK,git ls-tree + filesystem
 arquivo::auditoria/execucoes/monitor-v3-2026-07-12/relatorio_final.md,auditoria/execucoes/monitor-v3-2026-07-12/relatorio_final.md,True,True,4a2b24818f52a994b7f6a75212d08bf9afe25a10984330a9e7782c7eccfc594f,OK,git ls-tree + filesystem
@@ -1001,7 +1001,7 @@ arquivo::scripts/audit_state_source_quality.py,scripts/audit_state_source_qualit
 arquivo::scripts/audit_temporal_consistency.py,scripts/audit_temporal_consistency.py,True,True,a613af60a8986ffdfb7a2d12a47fe6965b3e48af5da79ec3ce52ddc28da0c3ee,OK,git ls-tree + filesystem
 arquivo::scripts/audit_v2_helpers.py,scripts/audit_v2_helpers.py,True,True,8ae06a0d804bfbc7221a07d4ac183ce9ed862c7b0422d28e82ef1a62d2cafa7f,OK,git ls-tree + filesystem
 arquivo::scripts/audit_v3_readiness.py,scripts/audit_v3_readiness.py,True,True,2d73dc57758d1b9a50c3b844edf42f745ee4b0dd71063aa2b38a7a917dbf1f80,OK,git ls-tree + filesystem
-arquivo::scripts/build_diff_manifest.py,scripts/build_diff_manifest.py,True,True,2113c9d08ab85dfb5c7e92d33e2f809c2ff06bf9935a43fd7a14e632928acb28,OK,git ls-tree + filesystem
+arquivo::scripts/build_diff_manifest.py,scripts/build_diff_manifest.py,True,True,15911ca6db120545383dab741678e63d3fb661b968d084c36c581e9a38dc651b,OK,git ls-tree + filesystem
 arquivo::scripts/build_master_indexes.py,scripts/build_master_indexes.py,True,True,2f311c538c4f3668524345061316f1d08a653abc81fc3fd03d10a62ff86179ca,OK,git ls-tree + filesystem
 arquivo::scripts/build_ncm_benefits_index.py,scripts/build_ncm_benefits_index.py,True,True,48dc3b7d8d30a6a4af17d33af1cd4d455080e391ba2f900fb93e465f90387439,OK,git ls-tree + filesystem
 arquivo::scripts/build_pis_cofins_ncm.py,scripts/build_pis_cofins_ncm.py,True,True,39edb8f16030b1c1c59dd45213e769af3877b2bb42b8304433a2515dd1d47ca8,OK,git ls-tree + filesystem
