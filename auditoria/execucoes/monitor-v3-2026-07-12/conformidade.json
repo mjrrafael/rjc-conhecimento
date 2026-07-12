@@ -3,42 +3,42 @@
   "skill": "revisar-ate-concluir",
   "contract": "C:\\Users\\rafae\\Documents\\Codex\\2026-06-14\\pesquisa-na-mem-ria-profunda-l\\worktrees\\rjc-monitor-2026-07-12-1610\\auditoria\\execucoes\\monitor-v3-2026-07-12\\contrato_execucao.yaml",
   "workdir": "C:\\Users\\rafae\\Documents\\Codex\\2026-06-14\\pesquisa-na-mem-ria-profunda-l\\worktrees\\rjc-monitor-2026-07-12-1610\\auditoria\\execucoes\\monitor-v3-2026-07-12",
-  "checked_at": "2026-07-12T15:56:59",
+  "checked_at": "2026-07-12T16:27:45",
   "conforme": true,
   "status_final_detectado": "BLOQUEADO",
-  "pendencias_abertas_no_ledger": 8,
+  "pendencias_abertas_no_ledger": 7,
   "issues": [],
   "warnings": [],
   "checks": [
     {
       "artifact": "workflow.md",
       "ok": true,
-      "detail": "ok (3639 bytes)"
+      "detail": "ok (4006 bytes)"
     },
     {
       "artifact": "ledger_verificacao.csv",
       "ok": true,
-      "detail": "ok (1389 bytes)"
+      "detail": "ok (1603 bytes)"
     },
     {
       "artifact": "fontes_lidas.csv",
       "ok": true,
-      "detail": "ok (910 bytes)"
+      "detail": "ok (2304 bytes)"
     },
     {
       "artifact": "achados_e_pendencias.md",
       "ok": true,
-      "detail": "ok (2807 bytes)"
+      "detail": "ok (3588 bytes)"
     },
     {
       "artifact": "revisao_adversarial.md",
       "ok": true,
-      "detail": "ok (2027 bytes)"
+      "detail": "ok (2710 bytes)"
     },
     {
       "artifact": "relatorio_final.md",
       "ok": true,
-      "detail": "ok (690 bytes)"
+      "detail": "ok (785 bytes)"
     }
   ],
   "gates": [

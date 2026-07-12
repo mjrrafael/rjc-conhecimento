@@ -3,18 +3,18 @@
 Skill: revisar-ate-concluir
 Veredito: CONFORME
 Status final detectado: BLOQUEADO
-Pendencias abertas no ledger: 8
+Pendencias abertas no ledger: 7
 
 ## Achados
 - Nenhum defeito encontrado pelo verificador deterministico.
 
 ## Artefatos conferidos
-- OK: workflow.md (ok (3639 bytes))
-- OK: ledger_verificacao.csv (ok (1389 bytes))
-- OK: fontes_lidas.csv (ok (910 bytes))
-- OK: achados_e_pendencias.md (ok (2807 bytes))
-- OK: revisao_adversarial.md (ok (2027 bytes))
-- OK: relatorio_final.md (ok (690 bytes))
+- OK: workflow.md (ok (4006 bytes))
+- OK: ledger_verificacao.csv (ok (1603 bytes))
+- OK: fontes_lidas.csv (ok (2304 bytes))
+- OK: achados_e_pendencias.md (ok (3588 bytes))
+- OK: revisao_adversarial.md (ok (2710 bytes))
+- OK: relatorio_final.md (ok (785 bytes))
 
 ## Gates conferidos
 - OK: G0 enquadramento_e_escopo
