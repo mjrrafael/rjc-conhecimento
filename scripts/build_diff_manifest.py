@@ -35,12 +35,13 @@ def main() -> int:
     rows = []
     for line in raw.splitlines():
         status, path = line.split("\t", 1)
-        target = ROOT / path
-        digest = (
-            hashlib.sha256(target.read_bytes()).hexdigest()
-            if target.is_file() and path not in CYCLIC_GENERATED
-            else "SELF_REFERENTIAL_GENERATED_SET"
-        )
+        if status == "D":
+            digest = "DELETED"
+        elif path in CYCLIC_GENERATED:
+            digest = "SELF_REFERENTIAL_GENERATED_SET"
+        else:
+            blob = subprocess.check_output(["git", "show", f"HEAD:{path}"], cwd=ROOT)
+            digest = hashlib.sha256(blob).hexdigest()
         rows.append((path, status, digest, purpose(path), "rederivado de origin/main"))
     OUT.parent.mkdir(parents=True, exist_ok=True)
     with OUT.open("w", encoding="utf-8", newline="") as handle:
