@@ -13,6 +13,7 @@ auditoria/execucoes/monitor-v3-2026-07-12/http_platform_receipts.json,A,ffdff6e4
 auditoria/execucoes/monitor-v3-2026-07-12/inventario_integral.csv,A,a39bb8e597f8fc3805734e92a1e7b99387e85155a8ed2390cba77017cfa3ddaf,evidência e ledger da vigília,rederivado de origin/main
 auditoria/execucoes/monitor-v3-2026-07-12/inventory_exclusions.csv,A,7253bda31eb1bfaf12f09ab6c4a3c8ab160ae17b2eda9266951ddfd7e2e6696a,evidência e ledger da vigília,rederivado de origin/main
 auditoria/execucoes/monitor-v3-2026-07-12/ledger_verificacao.csv,A,5b321e378881bbb4604b184ea5e039e68502233765e341d4c7236cef319e5c8b,evidência e ledger da vigília,rederivado de origin/main
+auditoria/execucoes/monitor-v3-2026-07-12/manifesto_diff.csv,A,SELF_REFERENTIAL_GIT_TREE,evidência e ledger da vigília,rederivado de origin/main
 auditoria/execucoes/monitor-v3-2026-07-12/matriz_fontes_canonicas.csv,A,e46ed1f1bc17f3a839382f00e4dbd2254b061f7219e839c069edc21f7ae5e6dc,evidência e ledger da vigília,rederivado de origin/main
 auditoria/execucoes/monitor-v3-2026-07-12/relatorio_conformidade.md,A,a60b8c2da91c32d1477eaf33f292de22fd67ee6145296e70fb19a15eec356e82,evidência e ledger da vigília,rederivado de origin/main
 auditoria/execucoes/monitor-v3-2026-07-12/relatorio_final.md,A,6eb1416692e3e27551156467300ed4cd38d78025654e87af335312de491036e3,evidência e ledger da vigília,rederivado de origin/main
