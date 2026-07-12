@@ -176,6 +176,7 @@ urls_referenciadas:
   - https://dtri.sefaz.to.gov.br/legislação/ntributaria/portarias/Anexos/anexounico
   - https://efazenda.servicos.ms.gov.br
   - https://example.invalid/a
+  - https://example.invalid/redirect
   - https://github.com/facebook/react/issues
   - https://github.com/facebook/react/issues/3236
   - https://github.com/mjrrafael/rjc-conhecimento/actions/runs/27911232574
@@ -2536,6 +2537,7 @@ urls_referenciadas:
   - https://www.fazenda.sp.gov.br/RECOPINACIONAL
   - https://www.fazenda.sp.gov.br/recopinacional
   - https://www.gov.br/
+  - https://www.gov.br/?documento=9281
   - https://www.gov.br/antt/pt-br/assuntos/ultimas-noticias/frete-irregular-e-barrado-antes-de-existir-antt-transforma-ciot-em-filtro-obrigatorio-e-reforca-o-cumprimento-do-piso-minimo
   - https://www.gov.br/esocial/pt-br
   - https://www.gov.br/fazenda/pt-br
@@ -2562,6 +2564,7 @@ urls_referenciadas:
   - https://www.gov.br/receitafederal/pt-br/acesso-a-informação/acoes-e-programas/programas-e-atividades/reforma-tributária-do-consumo/orientacoes-2026
   - https://www.gov.br/receitafederal/pt-br/assuntos/agenda-tributaria/2026/junho/dia-22-06-2026
   - https://www.gov.br/receitafederal/pt-br/assuntos/legislacao/ato-9999
+  - https://www.gov.br/receitafederal/pt-br/assuntos/legislacao/ato-diferente
   - https://www.gov.br/receitafederal/pt-br/assuntos/noticias/2026
   - https://www.gov.br/receitafederal/pt-br/assuntos/noticias/2026/abril/reforma-tributaria-receita-federal-desmentem-aplicacao-imediata-de-multas-e-reforcam-transicao-simplificada-em-2026
   - https://www.gov.br/receitafederal/pt-br/assuntos/noticias/2026/abril/reforma-tributaria-receita-federal-esclarece-pontos-sobre-a-operacao-assistida-e-as-obrigacoes-acessorias-no-periodo-de-testes
