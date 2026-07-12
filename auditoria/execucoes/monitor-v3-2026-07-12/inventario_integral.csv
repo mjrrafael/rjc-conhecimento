@@ -1,5 +1,5 @@
 chave,caminho_ou_id,git,filesystem,sha256,status,evidencia
-arquivo::.github/workflows/portal-audit.yml,.github/workflows/portal-audit.yml,True,True,25d915c6218be42090643f2827948e8795fc409e72d0f5af38e67f57dc724b1d,OK,git ls-tree + filesystem
+arquivo::.github/workflows/portal-audit.yml,.github/workflows/portal-audit.yml,True,True,3ab6bcccd04abb81d84116161e65ce8776f5550c7d69c02bbac6b1e17e76302d,OK,git ls-tree + filesystem
 arquivo::.gitignore,.gitignore,True,True,f3cf8503af3bc12c833dfdf1716e2d805577f0704dd1c3f554cf7597fe36b805,OK,git ls-tree + filesystem
 arquivo::404.html,404.html,True,True,085964c0cfdfb739c122e2f363b84a2d9ea97a9924d1c760af3cf4331bbabf07,OK,git ls-tree + filesystem
 arquivo::_config.yml,_config.yml,True,True,69330c9cc6d0e640e062fc1cc48b8da7d3abddbae6c25d9551aa43ecbd589e01,OK,git ls-tree + filesystem
