@@ -57,7 +57,18 @@ def fs_files() -> set[str]:
 
 def referenced_urls(paths: set[str]) -> set[str]:
     urls: set[str] = set()
+    generated_scope = {
+        (RUN / name).relative_to(ROOT).as_posix()
+        for name in (
+            "escopo_fontes_canonico.yaml",
+            "matriz_fontes_canonicas.csv",
+            "inventario_integral.csv",
+            "inventory_exclusions.csv",
+        )
+    }
     for rel in sorted(paths):
+        if rel in generated_scope:
+            continue
         path = ROOT / rel
         try:
             if path.stat().st_size > 20_000_000:
@@ -74,12 +85,13 @@ def referenced_urls(paths: set[str]) -> set[str]:
 
 def write_inventory(tracked: set[str], filesystem: set[str]) -> None:
     path = RUN / "inventario_integral.csv"
+    self_rel = path.relative_to(ROOT).as_posix()
     with path.open("w", encoding="utf-8", newline="") as handle:
         writer = csv.writer(handle, lineterminator="\n")
         writer.writerow(("chave", "caminho_ou_id", "git", "filesystem", "sha256", "status", "evidencia"))
         for rel in sorted(tracked | filesystem):
             present = rel in filesystem
-            digest = sha256(ROOT / rel) if present else ""
+            digest = "SELF_REFERENTIAL_GIT_TREE" if rel == self_rel else (sha256(ROOT / rel) if present else "")
             status = "OK" if rel in tracked and present else "A_VALIDAR"
             writer.writerow((f"arquivo::{rel}", rel, rel in tracked, present, digest, status, "git ls-tree + filesystem"))
 
