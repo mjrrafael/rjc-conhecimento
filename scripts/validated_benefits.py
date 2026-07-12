@@ -19,6 +19,7 @@ from datetime import date
 from html import unescape
 from html.parser import HTMLParser
 from pathlib import Path
+from urllib.parse import urlparse
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -708,12 +709,43 @@ def validity_status(source: dict, excerpt: str) -> str:
 
 def iso_date(value: object) -> str:
     text = str(value or "").strip()
-    if re.fullmatch(r"\d{4}-\d{2}-\d{2}", text):
-        return text
-    match = re.search(r"\b(20\d{2})[-/](\d{2})[-/](\d{2})\b", text)
-    if match:
-        return "-".join(match.groups())
+    candidate = text if re.fullmatch(r"\d{4}-\d{2}-\d{2}", text) else ""
+    if not candidate:
+        match = re.search(r"\b(\d{4})[-/](\d{2})[-/](\d{2})\b", text)
+        candidate = "-".join(match.groups()) if match else ""
+    if candidate:
+        try:
+            return date.fromisoformat(candidate).isoformat()
+        except ValueError:
+            pass
     return ""
+
+
+def is_material_sha256(value: object) -> bool:
+    return bool(re.fullmatch(r"[0-9a-fA-F]{64}", str(value or "").strip()))
+
+
+def official_url_identity(value: object) -> tuple[str, str] | None:
+    text = str(value or "").strip()
+    try:
+        parsed = urlparse(text)
+    except ValueError:
+        return None
+    host = (parsed.hostname or "").casefold().rstrip(".")
+    if parsed.scheme != "https" or not host:
+        return None
+    if not host.endswith((".gov.br", ".leg.br", ".jus.br")):
+        return None
+    if (parsed.path or "/") == "/" and not parsed.query:
+        return None
+    return host, text
+
+
+def material_text(value: object, minimum: int = 12) -> bool:
+    text = compact(str(value or ""), 4000).strip()
+    if len(text) < minimum:
+        return False
+    return normalize(text) not in {"none", "nenhum", "na", "n a", "nao aplicavel", "indeterminado"}
 
 
 def source_reference_date(source: dict) -> str:
@@ -729,12 +761,24 @@ def material_publication_blockers(source: dict) -> list[str]:
     blockers: list[str] = []
     if source.get("publishable") is not True:
         blockers.append("fonte sem autorização material publishable=true")
-    if not iso_date(source.get("publication_date")):
+    publication_date = iso_date(source.get("publication_date"))
+    validity_start = iso_date(source.get("validity_start"))
+    effectiveness_start = iso_date(source.get("effectiveness_start"))
+    if not publication_date:
         blockers.append("publicação AUSENTE ou sem prova")
-    if not iso_date(source.get("validity_start")):
+    if not validity_start:
         blockers.append("início de vigência AUSENTE ou sem prova")
-    if not iso_date(source.get("effectiveness_start")):
+    if not effectiveness_start:
         blockers.append("início de eficácia AUSENTE ou sem prova")
+    if publication_date and validity_start and publication_date > validity_start:
+        blockers.append("início de vigência anterior à publicação sem prova específica")
+    if publication_date and effectiveness_start and publication_date > effectiveness_start:
+        blockers.append("início de eficácia anterior à publicação sem prova específica")
+    source_url = official_url_identity(source.get("official_url"))
+    if not source_url:
+        blockers.append("URL oficial material inválida ou sem localizador")
+    if not is_material_sha256(source.get("sha256")):
+        blockers.append("hash SHA-256 material da fonte inválido")
     provenance = source.get("field_provenance")
     if not isinstance(provenance, dict):
         blockers.append("field_provenance ausente")
@@ -751,12 +795,40 @@ def material_publication_blockers(source: dict) -> list[str]:
             }
             if required - set(item):
                 blockers.append(f"proveniência incompleta para {field}")
+                continue
+            if not material_text(item.get("card_id"), 8):
+                blockers.append(f"card_id material inválido para {field}")
+            if item.get("field") != field:
+                blockers.append(f"campo de proveniência divergente para {field}")
+            if iso_date(item.get("value")) != iso_date(source.get(field)):
+                blockers.append(f"valor de proveniência divergente para {field}")
+            final_identity = official_url_identity(item.get("final_url"))
+            official_domain = str(item.get("official_domain", "")).casefold().rstrip(".")
+            if not final_identity or official_domain != (final_identity[0] if final_identity else ""):
+                blockers.append(f"identidade oficial inválida para {field}")
+            redirects = item.get("redirects")
+            if not isinstance(redirects, list) or any(not isinstance(value, str) for value in redirects):
+                blockers.append(f"cadeia de redirects inválida para {field}")
             if item.get("http_status") != 200:
                 blockers.append(f"HTTP material inválido para {field}")
+            mime = str(item.get("mime", "")).casefold().split(";", 1)[0].strip()
+            if mime not in {"text/html", "text/plain", "application/pdf", "application/xml", "text/xml"}:
+                blockers.append(f"MIME material inválido para {field}")
+            if not is_material_sha256(item.get("body_sha256")):
+                blockers.append(f"hash material inválido para {field}")
+            if not material_text(item.get("literal_excerpt"), 20):
+                blockers.append(f"trecho literal material inválido para {field}")
+            if not material_text(item.get("locator"), 4):
+                blockers.append(f"localizador material inválido para {field}")
+            if not material_text(item.get("normalization_rule"), 8):
+                blockers.append(f"regra de normalização material inválida para {field}")
     receipt_ids = source.get("independent_http_receipt_ids")
-    if not isinstance(receipt_ids, list) or len({str(value) for value in receipt_ids if value}) < 2:
+    material_receipts = {
+        str(value).strip() for value in receipt_ids or [] if material_text(value, 8)
+    } if isinstance(receipt_ids, list) else set()
+    if len(material_receipts) < 2:
         blockers.append("duas capturas HTTP nativas independentes ausentes")
-    if not str(source.get("verification_receipt_id", "")).strip():
+    if not material_text(source.get("verification_receipt_id"), 8):
         blockers.append("recibo material de verificação ausente")
     if not iso_date(source.get("verified_on")):
         blockers.append("verificado_em sem revalidação material")
