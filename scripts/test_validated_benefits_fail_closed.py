@@ -18,9 +18,9 @@ EXCERPT = (
 
 def strong_source() -> dict:
     values = {
-        "publication_date": "2027-01-10",
-        "validity_start": "2027-01-11",
-        "effectiveness_start": "2027-01-12",
+        "publication_date": "2026-01-10",
+        "validity_start": "2026-01-11",
+        "effectiveness_start": "2026-01-12",
     }
     provenance = {}
     for field, value in values.items():
@@ -33,7 +33,7 @@ def strong_source() -> dict:
             "redirects": [],
             "http_status": 200,
             "mime": "text/html",
-            "body_sha256": "a" * 64,
+            "body_sha256": "0123456789abcdef" * 4,
             "literal_excerpt": f"O ato oficial fixa {field} na data de {value} para o benefício descrito.",
             "locator": "art. 1, caput",
             "normalization_rule": "data literal normalizada para ISO-8601",
@@ -46,19 +46,29 @@ def strong_source() -> dict:
         "source_file": "ato-9999.txt",
         "source_path": "ato-9999.txt",
         "official_url": "https://www.gov.br/receitafederal/pt-br/assuntos/legislacao/ato-9999",
-        "sha256": "b" * 64,
+        "sha256": "123456789abcdef0" * 4,
         "publishable": True,
         **values,
-        "verified_on": "2027-01-13",
+        "verified_on": "2026-01-13",
         "field_provenance": provenance,
         "independent_http_receipt_ids": ["native-http-001", "native-http-002"],
         "verification_receipt_id": "verification-001",
+        "verification_receipt": {
+            "id": "verification-001",
+            "verified_on": "2026-01-13",
+            "reviewer": "reviewer-independent-001",
+            "previous_card_sha256": "23456789abcdef01" * 4,
+            "final_card_sha256": "3456789abcdef012" * 4,
+            "http_receipt_ids": ["native-http-001", "native-http-002"],
+            "fields_checked": list(FIELDS),
+            "result": "PASS",
+        },
     }
 
 
 def rejected(source: dict) -> bool:
     entry, reasons = vb.evaluate_entry(source, EXCERPT, 1)
-    return entry is None and bool(reasons) and bool(vb.material_publication_blockers(source))
+    return entry is None and bool(reasons) and bool(vb.structural_publication_blockers(source))
 
 
 def main() -> int:
@@ -68,12 +78,12 @@ def main() -> int:
         raise SystemExit("data bissexta válida foi rejeitada")
 
     source = strong_source()
-    blockers = vb.material_publication_blockers(source)
+    blockers = vb.structural_publication_blockers(source)
     if blockers:
         raise SystemExit(f"fixture material forte reprovada: {blockers}")
     entry, reasons = vb.evaluate_entry(source, EXCERPT, 1)
-    if not entry or reasons or entry.get("publishable") is not True:
-        raise SystemExit(f"fixture material forte não publicou: {reasons}")
+    if entry is not None or "atestado nativo externo de recibos indisponível neste runtime" not in reasons:
+        raise SystemExit(f"trava nativa externa não bloqueou a publicação: {reasons}")
 
     variants = []
     for field in (*FIELDS, "verified_on"):
@@ -106,11 +116,42 @@ def main() -> int:
     item = copy.deepcopy(source)
     item["verification_receipt_id"] = "v1"
     variants.append(("short_verification_receipt", item))
+    item = copy.deepcopy(source)
+    item["sha256"] = "0" * 64
+    variants.append(("degenerate_source_hash", item))
+    item = copy.deepcopy(source)
+    item["official_url"] = "https://www.gov.br/?documento=9281"
+    variants.append(("root_url_with_query", item))
+    item = copy.deepcopy(source)
+    item["field_provenance"]["publication_date"]["literal_excerpt"] = "Trecho oficial longo sem qualquer data declarada para a publicação do ato."
+    variants.append(("excerpt_without_date", item))
+    item = copy.deepcopy(source)
+    item["field_provenance"]["publication_date"]["redirects"] = ["https://example.invalid/redirect"]
+    variants.append(("untrusted_redirect", item))
+    item = copy.deepcopy(source)
+    item["verified_on"] = "2099-12-31"
+    item["verification_receipt"]["verified_on"] = "2099-12-31"
+    variants.append(("future_verification", item))
+    item = copy.deepcopy(source)
+    item["tax"] = "ICMS"
+    item["jurisdiction"] = "GO"
+    item["internalization_status"] = "COMPROVADA"
+    item["internalization_evidence"] = {}
+    variants.append(("empty_internalization", item))
+    item = copy.deepcopy(source)
+    for field in FIELDS:
+        item["field_provenance"][field]["final_url"] = (
+            "https://www.gov.br/receitafederal/pt-br/assuntos/legislacao/ato-diferente"
+        )
+    variants.append(("different_act_same_domain", item))
 
     missed = [name for name, item in variants if not rejected(item)]
     if missed:
         raise SystemExit("variantes materiais aceitas: " + ", ".join(missed))
-    print(f"Gerador fail-closed: fixture forte aprovada e {len(variants)}/{len(variants)} variantes rejeitadas.")
+    print(
+        "Gerador fail-closed: fixture estrutural forte validada, publicação travada sem atestado nativo "
+        f"e {len(variants)}/{len(variants)} variantes rejeitadas."
+    )
     return 0
 
 

@@ -722,7 +722,13 @@ def iso_date(value: object) -> str:
 
 
 def is_material_sha256(value: object) -> bool:
-    return bool(re.fullmatch(r"[0-9a-fA-F]{64}", str(value or "").strip()))
+    text = str(value or "").strip().casefold()
+    return bool(re.fullmatch(r"[0-9a-f]{64}", text)) and len(set(text)) >= 8
+
+
+def material_identifier(value: object, minimum: int = 8) -> bool:
+    text = re.sub(r"[^a-z0-9]", "", str(value or "").casefold())
+    return len(text) >= minimum and len(set(text)) >= 4
 
 
 def official_url_identity(value: object) -> tuple[str, str] | None:
@@ -736,7 +742,7 @@ def official_url_identity(value: object) -> tuple[str, str] | None:
         return None
     if not host.endswith((".gov.br", ".leg.br", ".jus.br")):
         return None
-    if (parsed.path or "/") == "/" and not parsed.query:
+    if (parsed.path or "/") == "/":
         return None
     return host, text
 
@@ -745,7 +751,20 @@ def material_text(value: object, minimum: int = 12) -> bool:
     text = compact(str(value or ""), 4000).strip()
     if len(text) < minimum:
         return False
-    return normalize(text) not in {"none", "nenhum", "na", "n a", "nao aplicavel", "indeterminado"}
+    normalized = normalize(text)
+    if normalized in {"none", "nenhum", "na", "n a", "nao aplicavel", "indeterminado"}:
+        return False
+    words = re.findall(r"[a-z0-9]+", normalized)
+    return len(set(words)) >= 3 and len(set(re.sub(r"[^a-z0-9]", "", normalized))) >= 6
+
+
+def proven_date_in_excerpt(value: object, excerpt: object) -> bool:
+    canonical = iso_date(value)
+    if not canonical:
+        return False
+    year, month, day = canonical.split("-")
+    haystack = normalize(excerpt)
+    return f"{year} {month} {day}" in haystack or f"{day} {month} {year}" in haystack
 
 
 def source_reference_date(source: dict) -> str:
@@ -756,8 +775,8 @@ def source_reference_date(source: dict) -> str:
     return iso_date(source.get("publication_date"))
 
 
-def material_publication_blockers(source: dict) -> list[str]:
-    """List missing material evidence; publication is fail-closed."""
+def structural_publication_blockers(source: dict) -> list[str]:
+    """Validate structure and internal consistency before platform attestation."""
     blockers: list[str] = []
     if source.get("publishable") is not True:
         blockers.append("fonte sem autorização material publishable=true")
@@ -796,7 +815,7 @@ def material_publication_blockers(source: dict) -> list[str]:
             if required - set(item):
                 blockers.append(f"proveniência incompleta para {field}")
                 continue
-            if not material_text(item.get("card_id"), 8):
+            if not material_identifier(item.get("card_id")):
                 blockers.append(f"card_id material inválido para {field}")
             if item.get("field") != field:
                 blockers.append(f"campo de proveniência divergente para {field}")
@@ -806,9 +825,13 @@ def material_publication_blockers(source: dict) -> list[str]:
             official_domain = str(item.get("official_domain", "")).casefold().rstrip(".")
             if not final_identity or official_domain != (final_identity[0] if final_identity else ""):
                 blockers.append(f"identidade oficial inválida para {field}")
+            if final_identity and source_url and final_identity[1] != source_url[1]:
+                blockers.append(f"URL do ato divergente da fonte para {field}")
             redirects = item.get("redirects")
             if not isinstance(redirects, list) or any(not isinstance(value, str) for value in redirects):
                 blockers.append(f"cadeia de redirects inválida para {field}")
+            elif any(not official_url_identity(value) for value in redirects):
+                blockers.append(f"redirect não oficial para {field}")
             if item.get("http_status") != 200:
                 blockers.append(f"HTTP material inválido para {field}")
             mime = str(item.get("mime", "")).casefold().split(";", 1)[0].strip()
@@ -818,27 +841,76 @@ def material_publication_blockers(source: dict) -> list[str]:
                 blockers.append(f"hash material inválido para {field}")
             if not material_text(item.get("literal_excerpt"), 20):
                 blockers.append(f"trecho literal material inválido para {field}")
-            if not material_text(item.get("locator"), 4):
+            elif not proven_date_in_excerpt(item.get("value"), item.get("literal_excerpt")):
+                blockers.append(f"trecho literal não prova a data de {field}")
+            if not material_text(item.get("locator"), 8):
                 blockers.append(f"localizador material inválido para {field}")
-            if not material_text(item.get("normalization_rule"), 8):
+            if not material_text(item.get("normalization_rule"), 16):
                 blockers.append(f"regra de normalização material inválida para {field}")
     receipt_ids = source.get("independent_http_receipt_ids")
     material_receipts = {
-        str(value).strip() for value in receipt_ids or [] if material_text(value, 8)
+        str(value).strip() for value in receipt_ids or [] if material_identifier(value)
     } if isinstance(receipt_ids, list) else set()
     if len(material_receipts) < 2:
         blockers.append("duas capturas HTTP nativas independentes ausentes")
-    if not material_text(source.get("verification_receipt_id"), 8):
+    verification_receipt_id = source.get("verification_receipt_id")
+    if not material_identifier(verification_receipt_id):
         blockers.append("recibo material de verificação ausente")
-    if not iso_date(source.get("verified_on")):
+    verified_on = iso_date(source.get("verified_on"))
+    if not verified_on:
         blockers.append("verificado_em sem revalidação material")
+    elif verified_on > TODAY:
+        blockers.append("verificado_em futuro")
+    verification_receipt = source.get("verification_receipt")
+    if not isinstance(verification_receipt, dict):
+        blockers.append("recibo material de verificação incompleto")
+    else:
+        if verification_receipt.get("id") != verification_receipt_id:
+            blockers.append("ID do recibo de verificação divergente")
+        if iso_date(verification_receipt.get("verified_on")) != verified_on:
+            blockers.append("data do recibo de verificação divergente")
+        if not material_identifier(verification_receipt.get("reviewer")):
+            blockers.append("revisor material ausente no recibo")
+        previous_hash = verification_receipt.get("previous_card_sha256")
+        final_hash = verification_receipt.get("final_card_sha256")
+        if not is_material_sha256(previous_hash) or not is_material_sha256(final_hash) or previous_hash == final_hash:
+            blockers.append("hashes materiais anterior/final inválidos no recibo")
+        receipt_http_ids = verification_receipt.get("http_receipt_ids")
+        if not isinstance(receipt_http_ids, list) or set(receipt_http_ids) != material_receipts:
+            blockers.append("capturas HTTP do recibo divergem da fonte")
+        checked = verification_receipt.get("fields_checked")
+        if not isinstance(checked, list) or not set(("publication_date", "validity_start", "effectiveness_start")) <= set(checked):
+            blockers.append("campos materiais não conferidos no recibo")
+        if verification_receipt.get("result") != "PASS":
+            blockers.append("resultado material do recibo não aprovado")
     jurisdiction = str(source.get("jurisdiction", ""))
     if len(jurisdiction) == 2 and source.get("tax") == "ICMS":
         status = source.get("internalization_status")
         if status not in {"COMPROVADA", "DISPENSADA_COM_FUNDAMENTO"}:
             blockers.append("internalização NÃO_COMPROVADA")
-        if not isinstance(source.get("internalization_evidence"), dict):
+        evidence = source.get("internalization_evidence")
+        if not isinstance(evidence, dict):
             blockers.append("prova específica de internalização ausente")
+        else:
+            required_evidence = {"act", "authority", "jurisdiction", "benefit", "final_url", "body_sha256", "locator"}
+            if required_evidence - set(evidence):
+                blockers.append("prova específica de internalização incompleta")
+            else:
+                if any(not material_text(evidence.get(field), 8) for field in ("act", "authority", "benefit", "locator")):
+                    blockers.append("conteúdo material da internalização inválido")
+                if str(evidence.get("jurisdiction", "")).upper() != jurisdiction.upper():
+                    blockers.append("jurisdição da internalização divergente")
+                if not official_url_identity(evidence.get("final_url")):
+                    blockers.append("URL oficial da internalização inválida")
+                if not is_material_sha256(evidence.get("body_sha256")):
+                    blockers.append("hash material da internalização inválido")
+    return blockers
+
+
+def material_publication_blockers(source: dict) -> list[str]:
+    """Fail closed until immutable native platform receipts can be verified."""
+    blockers = structural_publication_blockers(source)
+    blockers.append("atestado nativo externo de recibos indisponível neste runtime")
     return blockers
 
 
