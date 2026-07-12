@@ -1,0 +1,9 @@
+criterio,metodo,status,evidencia
+Inventário integral e diferença simétrica zero,"git ls-tree + filesystem + geradores + build + crawl",OK,"candidato: 1.014 linhas; verificação SHA-256 item a item retornou zero divergências após correção da ordem de geração"
+Escopo canônico completo,"matriz fixa 27 UFs + federal + municípios + URLs",BLOQUEADO,"94 linhas fixas existem, mas todas sem recibo/hash material; completude municipal não provada"
+Verdade jurídica por campo,"refetch anônimo + trecho/localizador + hash",CORRIGIR,"scripts/validated_benefits.py linhas identificadas por rg usam captured_on/TODAY e internalização por UF"
+Quarentena isolada,"varredura por ID/literal/fingerprint",CORRIGIR,"projeção Jekyll candidata emite só 4 arquivos e zero vazamentos; corpus Git ainda retém 13.150 itens materiais e build_portal desfaz a quarentena"
+Gates materiais e mutantes,"dois runners independentes e matriz fechada",BLOQUEADO,"duas raízes de confiança preexistentes ainda não localizadas; token sem escopo workflow impede versionar CI"
+Ondas independentes,"seis agentes distintos + prova negativa de leitura",BLOQUEADO,"duas ondas e seis agentes executados; Onda 2 humana contaminada, sem mount imutável/export nativo/prova negativa"
+Publicação no SHA exato,"PR + CI + merge + Pages + HTTP/hash",BLOQUEADO,"PR draft #25 sem checks; push de workflow rejeitado por escopo OAuth; produção permanece baseline 23d864f"
+Refetch pós-deploy,"todas as URLs oficiais públicas",BLOQUEADO,"não existe deploy; produção ainda serve quarantine JSON HTTP 200 com 20.487.960 bytes"

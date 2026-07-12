@@ -1,0 +1,14 @@
+gate,invariante,classe_de_bypass,mutantes_esperados,mutantes_executados,status,evidencia
+audit_field_provenance,proveniência vinculante por campo,MATRIZ_NAO_CERTIFICADA,2,0,BLOQUEADO,zero raízes assinadas
+audit_no_synthetic_legal_dates,nenhuma data derivada,captured_on_TODAY_mtime_build_copia_fallback_sem_localizador,14,0,BLOQUEADO,zero raízes assinadas
+audit_verification_receipts,bijeção card-recibo,reuso_duplicidade_boilerplate,6,0,BLOQUEADO,recibos nativos indisponíveis
+audit_http_platform_receipts,IDs confrontáveis,recibo_autocriado,2,0,BLOQUEADO,plataforma não exporta histórico bruto
+audit_link_receipts,identidade material do ato,homepage_login_soft404,6,0,BLOQUEADO,gate ausente
+audit_internalization_evidence,autoridade UF ato benefício,presunção_por_sigla,2,0,BLOQUEADO,gate ausente
+audit_full_content_coverage,diferença simétrica zero,arquivo_orfao_extensao_desconhecida,4,0,BLOQUEADO,gate ausente
+audit_canonical_source_scope,27x3 e federal completos,omissão_de_classe_ente_família,6,0,BLOQUEADO,94 linhas sem recibo
+audit_public_set_algebra,projeção publishable segura,estado_inseguro_publico,2,0,BLOQUEADO,gate ausente
+audit_quarantine_fingerprints,zero vazamento,renomeação_shingle_copia_sem_id,6,0,BLOQUEADO,gate ausente
+audit_subagent_independence,zero leitura entre ondas,leitura_direta_indireta,4,0,BLOQUEADO,Onda 2 contaminada
+audit_publication,PR CI merge Pages no SHA,zero_checks_SHA_divergente,4,0,BLOQUEADO,token sem workflow
+audit_public_http_hashes,produção igual ao merge,cache_Pages_antigo_fonte_invalida,4,0,BLOQUEADO,sem deploy

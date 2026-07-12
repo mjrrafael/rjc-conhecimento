@@ -19,6 +19,7 @@ from datetime import date
 from html import unescape
 from html.parser import HTMLParser
 from pathlib import Path
+from urllib.parse import urlparse
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -708,16 +709,209 @@ def validity_status(source: dict, excerpt: str) -> str:
 
 def iso_date(value: object) -> str:
     text = str(value or "").strip()
-    if re.fullmatch(r"\d{4}-\d{2}-\d{2}", text):
-        return text
-    match = re.search(r"\b(20\d{2})[-/](\d{2})[-/](\d{2})\b", text)
-    if match:
-        return "-".join(match.groups())
+    candidate = text if re.fullmatch(r"\d{4}-\d{2}-\d{2}", text) else ""
+    if not candidate:
+        match = re.search(r"\b(\d{4})[-/](\d{2})[-/](\d{2})\b", text)
+        candidate = "-".join(match.groups()) if match else ""
+    if candidate:
+        try:
+            return date.fromisoformat(candidate).isoformat()
+        except ValueError:
+            pass
     return ""
 
 
+def is_material_sha256(value: object) -> bool:
+    text = str(value or "").strip().casefold()
+    return bool(re.fullmatch(r"[0-9a-f]{64}", text)) and len(set(text)) >= 8
+
+
+def material_identifier(value: object, minimum: int = 8) -> bool:
+    text = re.sub(r"[^a-z0-9]", "", str(value or "").casefold())
+    return len(text) >= minimum and len(set(text)) >= 4
+
+
+def official_url_identity(value: object) -> tuple[str, str] | None:
+    text = str(value or "").strip()
+    try:
+        parsed = urlparse(text)
+    except ValueError:
+        return None
+    host = (parsed.hostname or "").casefold().rstrip(".")
+    if parsed.scheme != "https" or not host:
+        return None
+    if not host.endswith((".gov.br", ".leg.br", ".jus.br")):
+        return None
+    if (parsed.path or "/") == "/":
+        return None
+    return host, text
+
+
+def material_text(value: object, minimum: int = 12) -> bool:
+    text = compact(str(value or ""), 4000).strip()
+    if len(text) < minimum:
+        return False
+    normalized = normalize(text)
+    if normalized in {"none", "nenhum", "na", "n a", "nao aplicavel", "indeterminado"}:
+        return False
+    words = re.findall(r"[a-z0-9]+", normalized)
+    return len(set(words)) >= 3 and len(set(re.sub(r"[^a-z0-9]", "", normalized))) >= 6
+
+
+def proven_date_in_excerpt(value: object, excerpt: object) -> bool:
+    canonical = iso_date(value)
+    if not canonical:
+        return False
+    year, month, day = canonical.split("-")
+    haystack = normalize(excerpt)
+    return f"{year} {month} {day}" in haystack or f"{day} {month} {year}" in haystack
+
+
 def source_reference_date(source: dict) -> str:
-    return iso_date(source.get("publication_date")) or iso_date(source.get("captured_on")) or TODAY
+    """Return only a proven legal publication date.
+
+    Capture/build/editorial dates are metadata and must never become legal dates.
+    """
+    return iso_date(source.get("publication_date"))
+
+
+def structural_publication_blockers(source: dict) -> list[str]:
+    """Validate structure and internal consistency before platform attestation."""
+    blockers: list[str] = []
+    if source.get("publishable") is not True:
+        blockers.append("fonte sem autorização material publishable=true")
+    publication_date = iso_date(source.get("publication_date"))
+    validity_start = iso_date(source.get("validity_start"))
+    effectiveness_start = iso_date(source.get("effectiveness_start"))
+    if not publication_date:
+        blockers.append("publicação AUSENTE ou sem prova")
+    if not validity_start:
+        blockers.append("início de vigência AUSENTE ou sem prova")
+    if not effectiveness_start:
+        blockers.append("início de eficácia AUSENTE ou sem prova")
+    if publication_date and validity_start and publication_date > validity_start:
+        blockers.append("início de vigência anterior à publicação sem prova específica")
+    if publication_date and effectiveness_start and publication_date > effectiveness_start:
+        blockers.append("início de eficácia anterior à publicação sem prova específica")
+    source_url = official_url_identity(source.get("official_url"))
+    if not source_url:
+        blockers.append("URL oficial material inválida ou sem localizador")
+    if not is_material_sha256(source.get("sha256")):
+        blockers.append("hash SHA-256 material da fonte inválido")
+    provenance = source.get("field_provenance")
+    if not isinstance(provenance, dict):
+        blockers.append("field_provenance ausente")
+    else:
+        for field in ("publication_date", "validity_start", "effectiveness_start"):
+            item = provenance.get(field)
+            if not isinstance(item, dict):
+                blockers.append(f"proveniência ausente para {field}")
+                continue
+            required = {
+                "card_id", "field", "value", "final_url", "official_domain",
+                "redirects", "http_status", "mime", "body_sha256",
+                "literal_excerpt", "locator", "normalization_rule",
+            }
+            if required - set(item):
+                blockers.append(f"proveniência incompleta para {field}")
+                continue
+            if not material_identifier(item.get("card_id")):
+                blockers.append(f"card_id material inválido para {field}")
+            if item.get("field") != field:
+                blockers.append(f"campo de proveniência divergente para {field}")
+            if iso_date(item.get("value")) != iso_date(source.get(field)):
+                blockers.append(f"valor de proveniência divergente para {field}")
+            final_identity = official_url_identity(item.get("final_url"))
+            official_domain = str(item.get("official_domain", "")).casefold().rstrip(".")
+            if not final_identity or official_domain != (final_identity[0] if final_identity else ""):
+                blockers.append(f"identidade oficial inválida para {field}")
+            if final_identity and source_url and final_identity[1] != source_url[1]:
+                blockers.append(f"URL do ato divergente da fonte para {field}")
+            redirects = item.get("redirects")
+            if not isinstance(redirects, list) or any(not isinstance(value, str) for value in redirects):
+                blockers.append(f"cadeia de redirects inválida para {field}")
+            elif any(not official_url_identity(value) for value in redirects):
+                blockers.append(f"redirect não oficial para {field}")
+            if item.get("http_status") != 200:
+                blockers.append(f"HTTP material inválido para {field}")
+            mime = str(item.get("mime", "")).casefold().split(";", 1)[0].strip()
+            if mime not in {"text/html", "text/plain", "application/pdf", "application/xml", "text/xml"}:
+                blockers.append(f"MIME material inválido para {field}")
+            if not is_material_sha256(item.get("body_sha256")):
+                blockers.append(f"hash material inválido para {field}")
+            if not material_text(item.get("literal_excerpt"), 20):
+                blockers.append(f"trecho literal material inválido para {field}")
+            elif not proven_date_in_excerpt(item.get("value"), item.get("literal_excerpt")):
+                blockers.append(f"trecho literal não prova a data de {field}")
+            if not material_text(item.get("locator"), 8):
+                blockers.append(f"localizador material inválido para {field}")
+            if not material_text(item.get("normalization_rule"), 16):
+                blockers.append(f"regra de normalização material inválida para {field}")
+    receipt_ids = source.get("independent_http_receipt_ids")
+    material_receipts = {
+        str(value).strip() for value in receipt_ids or [] if material_identifier(value)
+    } if isinstance(receipt_ids, list) else set()
+    if len(material_receipts) < 2:
+        blockers.append("duas capturas HTTP nativas independentes ausentes")
+    verification_receipt_id = source.get("verification_receipt_id")
+    if not material_identifier(verification_receipt_id):
+        blockers.append("recibo material de verificação ausente")
+    verified_on = iso_date(source.get("verified_on"))
+    if not verified_on:
+        blockers.append("verificado_em sem revalidação material")
+    elif verified_on > TODAY:
+        blockers.append("verificado_em futuro")
+    verification_receipt = source.get("verification_receipt")
+    if not isinstance(verification_receipt, dict):
+        blockers.append("recibo material de verificação incompleto")
+    else:
+        if verification_receipt.get("id") != verification_receipt_id:
+            blockers.append("ID do recibo de verificação divergente")
+        if iso_date(verification_receipt.get("verified_on")) != verified_on:
+            blockers.append("data do recibo de verificação divergente")
+        if not material_identifier(verification_receipt.get("reviewer")):
+            blockers.append("revisor material ausente no recibo")
+        previous_hash = verification_receipt.get("previous_card_sha256")
+        final_hash = verification_receipt.get("final_card_sha256")
+        if not is_material_sha256(previous_hash) or not is_material_sha256(final_hash) or previous_hash == final_hash:
+            blockers.append("hashes materiais anterior/final inválidos no recibo")
+        receipt_http_ids = verification_receipt.get("http_receipt_ids")
+        if not isinstance(receipt_http_ids, list) or set(receipt_http_ids) != material_receipts:
+            blockers.append("capturas HTTP do recibo divergem da fonte")
+        checked = verification_receipt.get("fields_checked")
+        if not isinstance(checked, list) or not set(("publication_date", "validity_start", "effectiveness_start")) <= set(checked):
+            blockers.append("campos materiais não conferidos no recibo")
+        if verification_receipt.get("result") != "PASS":
+            blockers.append("resultado material do recibo não aprovado")
+    jurisdiction = str(source.get("jurisdiction", ""))
+    if len(jurisdiction) == 2 and source.get("tax") == "ICMS":
+        status = source.get("internalization_status")
+        if status not in {"COMPROVADA", "DISPENSADA_COM_FUNDAMENTO"}:
+            blockers.append("internalização NÃO_COMPROVADA")
+        evidence = source.get("internalization_evidence")
+        if not isinstance(evidence, dict):
+            blockers.append("prova específica de internalização ausente")
+        else:
+            required_evidence = {"act", "authority", "jurisdiction", "benefit", "final_url", "body_sha256", "locator"}
+            if required_evidence - set(evidence):
+                blockers.append("prova específica de internalização incompleta")
+            else:
+                if any(not material_text(evidence.get(field), 8) for field in ("act", "authority", "benefit", "locator")):
+                    blockers.append("conteúdo material da internalização inválido")
+                if str(evidence.get("jurisdiction", "")).upper() != jurisdiction.upper():
+                    blockers.append("jurisdição da internalização divergente")
+                if not official_url_identity(evidence.get("final_url")):
+                    blockers.append("URL oficial da internalização inválida")
+                if not is_material_sha256(evidence.get("body_sha256")):
+                    blockers.append("hash material da internalização inválido")
+    return blockers
+
+
+def material_publication_blockers(source: dict) -> list[str]:
+    """Fail closed until immutable native platform receipts can be verified."""
+    blockers = structural_publication_blockers(source)
+    blockers.append("atestado nativo externo de recibos indisponível neste runtime")
+    return blockers
 
 
 def normalized_card_status(source: dict, excerpt: str) -> str:
@@ -726,6 +920,8 @@ def normalized_card_status(source: dict, excerpt: str) -> str:
     if raw_end and raw_end < TODAY:
         return "historico"
     if "exige conferencia" in status_text:
+        return "a_revalidar"
+    if material_publication_blockers(source):
         return "a_revalidar"
     return "vigente"
 
@@ -801,7 +997,8 @@ def benefit_contract_fields(
     risk: str,
 ) -> dict:
     publication = source_reference_date(source)
-    start = iso_date(source.get("validity_start")) or publication
+    start = iso_date(source.get("validity_start"))
+    effectiveness = iso_date(source.get("effectiveness_start"))
     end = iso_date(source.get("validity_end"))
     status = normalized_card_status(source, excerpt)
     act = {
@@ -809,18 +1006,19 @@ def benefit_contract_fields(
         "num": infer_act_number(source.get("title", "")),
         "titulo": source.get("title", ""),
         "url": source.get("official_url", ""),
-        "resolve": True,
+        "resolve": bool(source.get("act_identity_proven") is True),
     }
     validity = {
         "publicacao": publication,
         "inicio_vigencia": start,
-        "inicio_eficacia": start,
+        "inicio_eficacia": effectiveness,
         "fim_vigencia": end or None,
         "status": status,
     }
     proof = {
         "url": source.get("official_url", ""),
-        "internalizado_uf": len(str(source.get("jurisdiction", ""))) == 2,
+        "internalizacao_status": source.get("internalization_status", "NÃO_COMPROVADA"),
+        "internalizacao_evidencia": source.get("internalization_evidence"),
         "descricao": proof_for(benefit_type, excerpt),
     }
     return {
@@ -831,7 +1029,7 @@ def benefit_contract_fields(
         "ato_oficial": act,
         "publicacao": publication,
         "inicio_vigencia": start,
-        "inicio_eficacia": start,
+        "inicio_eficacia": effectiveness,
         "fim_vigencia": end or None,
         "vigencia": validity,
         "condicao": conditions,
@@ -839,7 +1037,9 @@ def benefit_contract_fields(
         "transicao_rt": transition_rt_label(source.get("tax", ""), excerpt),
         "risco": risk,
         "status": status,
-        "verificado_em": TODAY,
+        "verificado_em": iso_date(source.get("verified_on")),
+        "field_provenance": source.get("field_provenance", {}),
+        "verification_receipt_id": source.get("verification_receipt_id", ""),
         "provenance": "ato_oficial",
     }
 
@@ -1104,6 +1304,7 @@ def evaluate_entry(source: dict, excerpt: str, seq: int) -> tuple[dict | None, l
     confidence_label = classification_confidence(excerpt, product, operation, identifiers, group_evidence)
     confidence = confidence_score(confidence_label)
     reasons = rejection_reasons(excerpt, legal_excerpt, product, operation, identifiers, confidence_label)
+    reasons.extend(material_publication_blockers(source))
     if reasons:
         return None, reasons
     entry_id = f"{source['jurisdiction'].lower()}-{hashlib.sha1((source['source_file'] + excerpt).encode('utf-8')).hexdigest()[:12]}"
@@ -1138,7 +1339,7 @@ def evaluate_entry(source: dict, excerpt: str, seq: int) -> tuple[dict | None, l
         "operation": operation,
         "conditions": conditions,
         "prohibitions": prohibitions,
-        "validity_start": source.get("validity_start", source.get("captured_on", "")),
+        "validity_start": source.get("validity_start", ""),
         "validity_end": source.get("validity_end", ""),
         "validity_status": validity_status(source, excerpt),
         "modifying_act": source.get("modifying_act", ""),
@@ -1164,7 +1365,7 @@ def evaluate_entry(source: dict, excerpt: str, seq: int) -> tuple[dict | None, l
         "classification_confidence": confidence,
         "classification_confidence_label": confidence_label,
         "audience_status": "humano e IA",
-        "publishable": True,
+        "publishable": not material_publication_blockers(source),
         "proof_required": proof_for(benefit_type, excerpt),
         "risk": risk,
         "seq": seq,
@@ -1184,19 +1385,16 @@ def quarantine_entry(source: dict, excerpt: str, seq: int, reasons: list[str]) -
     entry_id = f"q-{source['jurisdiction'].lower()}-{hashlib.sha1((source['source_file'] + excerpt).encode('utf-8')).hexdigest()[:12]}"
     return {
         "id": entry_id,
+        # Internal-only fields used for deterministic deduplication. The writer
+        # deliberately serializes no quarantine entries into the public tree.
         "jurisdiction": source.get("jurisdiction", ""),
-        "name": source.get("name", ""),
-        "tax": source.get("tax", ""),
-        "source_title": source.get("title", ""),
         "source_file": source.get("source_file", ""),
-        "source_path": source.get("source_path", ""),
-        "official_url": source.get("official_url", ""),
-        "captured_on": source.get("captured_on", ""),
         "legal_excerpt": compact(excerpt, 900),
-        "quarantine_reasons": reasons,
+        "source_fingerprint": hashlib.sha256(str(source.get("sha256", "")).encode("utf-8")).hexdigest(),
+        "quarantine_reasons": sorted(set(reasons)),
         "validation_status": "a_validar",
-        "audience_status": "IA/editorial",
-        "public_impact": "registro nao publicado ate revisao humana do escopo",
+        "audience_status": "interno-nao-publicar",
+        "public_impact": "tombstone sem conteúdo material",
         "seq": seq,
     }
 
@@ -1314,8 +1512,8 @@ def build_validated_benefits() -> dict:
             "with_cst": sum(1 for item in entries if item["cst"]),
             "high_confidence": sum(1 for item in entries if float(item.get("classification_confidence", 0)) >= 0.90),
             "medium_confidence": sum(1 for item in entries if 0.80 <= float(item.get("classification_confidence", 0)) < 0.90),
-            "oldest_verified_on": min((item.get("verificado_em", TODAY) for item in entries), default=TODAY),
-            "editorial_date": min((item.get("verificado_em", TODAY) for item in entries), default=TODAY),
+            "oldest_verified_on": min((item.get("verificado_em") for item in entries if item.get("verificado_em")), default=None),
+            "editorial_date": min((item.get("verificado_em") for item in entries if item.get("verificado_em")), default=None),
             "editorial_date_source": "min_verificado_em",
         },
         "entries": entries,

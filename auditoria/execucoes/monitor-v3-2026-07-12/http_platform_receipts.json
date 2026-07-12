@@ -1,0 +1,14 @@
+{
+  "schema": "rjc-http-platform-receipts-v3",
+  "native_receipt_status": "UNAVAILABLE",
+  "reason": "As ferramentas permitiram capturas e hashes, mas não forneceram IDs nativos exportáveis e confrontáveis com o histórico bruto da sessão.",
+  "root_production_observation": {
+    "url": "https://mjrrafael.github.io/rjc-conhecimento/",
+    "http_status": 200,
+    "bytes": 15559,
+    "sha256": "9e6fbc131c18f828659d6634b558f2d433cffb088b8732475b4460e3fd18fa2a",
+    "git_sha": "23d864f510bfbb16d6ef5d73049c63a1003b5ac6",
+    "native_call_id": null
+  },
+  "certifiable": false
+}

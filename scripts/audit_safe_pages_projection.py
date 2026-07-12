@@ -1,0 +1,201 @@
+#!/usr/bin/env python3
+"""Audit the complete fail-closed Pages projection for the quarantined portal."""
+
+from __future__ import annotations
+
+import csv
+import functools
+import hashlib
+import json
+import re
+import sys
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parents[1]
+SITE = Path(sys.argv[1]).resolve() if len(sys.argv) > 1 else ROOT / "_site"
+RUN = ROOT / "auditoria" / "execucoes" / "monitor-v3-2026-07-12"
+ALLOWED = {"index.html", "404.html", "robots.txt", "llms.txt"}
+APPROVED_SHA256 = {
+    "404.html": "07e4f9f163f5653ca81949a694ba17f00d8416bcdb84f13fafbb7f5d154d13e7",
+    "index.html": "f3f84f1276d7dfb911624c02ed8a56891473d60cc41d18481321254611e53368",
+    "llms.txt": "08f53be6f0f48b242d6d82bc41ccf287ecace2088813b58f9c1f2d5205f0dd07",
+    "robots.txt": "331ea9090db0c9f6f597bd9840fd5b171830f6e0b3ba1cb24dfa91f0c95aedc1",
+}
+PROTECTED_DATASETS = (
+    ("data/benefits_quarantine.json", "entries"),
+    ("data/benefits_crosswalk.json", "entries"),
+    ("data/ncm_benefits_index.json", "rows"),
+    ("data/pis-cofins/ncm-index.json", "records"),
+)
+
+
+def canonical_sha(path: Path) -> str:
+    raw = path.read_bytes()
+    if b"\x00" not in raw:
+        raw = raw.replace(b"\r\n", b"\n").replace(b"\r", b"\n")
+    return hashlib.sha256(raw).hexdigest()
+
+
+def normalized_words(value: object) -> list[str]:
+    return re.findall(r"[a-z0-9]+", str(value).casefold())
+
+
+@functools.lru_cache(maxsize=1)
+def protected_material() -> tuple[set[str], list[tuple[str, list[str]]]]:
+    """Re-derive identifiers, source fingerprints and legal text from raw data."""
+    tokens: set[str] = set()
+    statements: list[tuple[str, list[str]]] = []
+    for rel, collection in PROTECTED_DATASETS:
+        payload = json.loads((ROOT / rel).read_text(encoding="utf-8"))
+        for item in payload.get(collection, []):
+            for field in ("id", "sha256"):
+                value = str(item.get(field, "")).strip().casefold()
+                if len(value) >= 10:
+                    tokens.add(value)
+            ncm = re.sub(r"\D", "", str(item.get("ncm", "")))
+            if len(ncm) >= 6:
+                tokens.add(ncm)
+            for field in ("legal_excerpt", "scope_summary", "product_or_operation", "conditions"):
+                words = normalized_words(item.get(field, ""))
+                if len(words) >= 8:
+                    statements.append((f"{rel}:{item.get('id', '')}:{field}", words))
+    return tokens, statements
+
+
+def audit_protected_material(site_text: str, errors: list[str]) -> None:
+    tokens, statements = protected_material()
+    folded = site_text.casefold()
+    leaked = sorted(token for token in tokens if token in folded)
+    if leaked:
+        errors.append(f"identificador/fingerprint protegido vazou: {leaked[0]}")
+
+    public_words = normalized_words(site_text)
+    public_shingles = {tuple(public_words[i : i + 8]) for i in range(max(0, len(public_words) - 7))}
+    if public_shingles:
+        for locator, words in statements:
+            if any(tuple(words[i : i + 8]) in public_shingles for i in range(len(words) - 7)):
+                errors.append(f"shingle jurídico protegido vazou: {locator}")
+                break
+
+    card_markup = re.compile(
+        r"(?:benefit[-_ ]?card|data-(?:card|benefit)-id|class\s*=\s*['\"][^'\"]*\bcard\b)", re.I
+    )
+    if card_markup.search(site_text):
+        errors.append("markup de card/benefício vazou na projeção")
+
+
+def audit_site(errors: list[str]) -> None:
+    files = {path.relative_to(SITE).as_posix() for path in SITE.rglob("*") if path.is_file()}
+    if files != ALLOWED:
+        errors.append(f"projeção Pages divergente: faltam={sorted(ALLOWED-files)} sobram={sorted(files-ALLOWED)}")
+    for rel, expected in APPROVED_SHA256.items():
+        emitted = SITE / rel
+        source = ROOT / rel
+        if not emitted.is_file() or canonical_sha(emitted) != expected:
+            errors.append(f"conteúdo público fora do contrato fechado: {rel}")
+        if not source.is_file() or canonical_sha(source) != expected:
+            errors.append(f"fonte pública fora do contrato fechado: {rel}")
+    joined = "\n".join((SITE / rel).read_text(encoding="utf-8", errors="ignore") for rel in sorted(files))
+    forbidden = re.compile(r"\b(publishable|A_VALIDAR|verificado_em|field_provenance|cClassTrib|cBenef|NCM\s*\d|art\.\s*\d|lei\s+n[ºo])\b", re.I)
+    if forbidden.search(joined):
+        errors.append("artefato seguro contém campo ou fato jurídico")
+    audit_protected_material(joined, errors)
+    robots = (SITE / "robots.txt").read_text(encoding="utf-8")
+    robot_lines = [line.split("#", 1)[0].strip().casefold() for line in robots.splitlines()]
+    robot_lines = [line for line in robot_lines if line]
+    if robot_lines != ["user-agent: *", "disallow: /"]:
+        errors.append("robots.txt não é o contrato fechado de bloqueio integral")
+    for rel in ("index.html", "404.html"):
+        raw = (SITE / rel).read_text(encoding="utf-8")
+        uncommented = re.sub(r"<!--.*?-->", "", raw, flags=re.S)
+        tags = re.findall(r"<meta\b[^>]*>", uncommented, flags=re.I)
+        robots_tags = [tag for tag in tags if re.search(r"\bname\s*=\s*(['\"]?)robots\1", tag, flags=re.I)]
+        if len(robots_tags) != 1:
+            errors.append(f"{rel} deve ter exatamente uma meta robots efetiva")
+            continue
+        match = re.search(
+            r"\bcontent\s*=\s*(['\"])(.*?)\1|\bcontent\s*=\s*([^\s>]+)", robots_tags[0], flags=re.I
+        )
+        content = (match.group(2) or match.group(3) or "") if match else ""
+        directives = {item for item in re.split(r"[\s,]+", content.casefold()) if item}
+        if directives != {"noindex", "nofollow", "noarchive"}:
+            errors.append(f"{rel} tem diretiva robots conflitante ou incompleta")
+
+
+def audit_generator(errors: list[str]) -> None:
+    raw = (ROOT / "scripts" / "validated_benefits.py").read_text(encoding="utf-8")
+    forbidden = {
+        'iso_date(source.get("captured_on")) or TODAY': "data jurídica sintética",
+        '"internalizado_uf": len(': "internalização presumida por sigla",
+        '"verificado_em": TODAY': "verificação renovada em massa",
+        '"publishable": True': "publicação incondicional",
+        'source.get("validity_start", source.get("captured_on"': "vigência derivada da captura",
+    }
+    for needle, label in forbidden.items():
+        if needle in raw:
+            errors.append(label)
+    for required in ("material_publication_blockers", "field_provenance", "independent_http_receipt_ids", "verification_receipt_id"):
+        if required not in raw:
+            errors.append(f"controle fail-closed ausente: {required}")
+
+
+def audit_inventory(errors: list[str]) -> None:
+    path = RUN / "inventario_integral.csv"
+    rows = list(csv.DictReader(path.open(encoding="utf-8")))
+    fs = {p.relative_to(ROOT).as_posix() for p in ROOT.rglob("*") if p.is_file() and ".git" not in p.parts and "_site" not in p.parts}
+    inv = {row["caminho_ou_id"] for row in rows}
+    if fs != inv:
+        errors.append(f"inventário divergente: faltam={len(fs-inv)} sobram={len(inv-fs)}")
+    for row in rows:
+        rel = row["caminho_ou_id"]
+        if row["sha256"] == "SELF_REFERENTIAL_GIT_TREE":
+            continue
+        target = ROOT / rel
+        if target.is_file() and row["sha256"] != canonical_sha(target):
+            errors.append(f"hash divergente: {rel}")
+            if len(errors) > 20:
+                break
+
+
+def audit_scope(errors: list[str]) -> None:
+    rows = list(csv.DictReader((RUN / "matriz_fontes_canonicas.csv").open(encoding="utf-8")))
+    ufs = set("AC AL AM AP BA CE DF ES GO MA MG MS MT PA PB PE PI PR RJ RN RO RR RS SC SE SP TO".split())
+    state_classes = {"SEFAZ_LEGISLACAO", "DOE", "ASSEMBLEIA_LEGISLATIVA"}
+    state = {(row["jurisdicao"], row["classe"]) for row in rows if row["jurisdicao"] in ufs}
+    expected = {(uf, cls) for uf in ufs for cls in state_classes}
+    federal = [row for row in rows if row["jurisdicao"] == "BR"]
+    if state != expected or len(federal) != 13:
+        errors.append("matriz canônica não contém 81 linhas estaduais e 13 federais")
+
+
+def audit_quarantine(errors: list[str]) -> None:
+    quarantine = ROOT / "data" / "benefits_quarantine.json"
+    if not quarantine.exists():
+        return
+    payload = json.loads(quarantine.read_text(encoding="utf-8"))
+    site_text = " ".join((SITE / rel).read_text(encoding="utf-8", errors="ignore") for rel in ALLOWED)
+    for item in payload.get("entries", []):
+        item_id = str(item.get("id", ""))
+        if item_id and item_id in site_text:
+            errors.append(f"ID de quarentena vazou no Pages: {item_id}")
+            break
+
+
+def main() -> int:
+    errors: list[str] = []
+    audit_site(errors)
+    audit_generator(errors)
+    audit_inventory(errors)
+    audit_scope(errors)
+    audit_quarantine(errors)
+    if errors:
+        print("Falhas na projeção segura:")
+        for error in errors:
+            print(f"- {error}")
+        return 1
+    print("Projeção Pages integralmente auditada: 4 arquivos seguros; corpus e quarentena fora do artefato.")
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

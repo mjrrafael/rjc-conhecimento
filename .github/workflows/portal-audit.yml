@@ -1,0 +1,42 @@
+name: portal-audit
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  portal-audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "3.1"
+      - name: Compile Python
+        run: PYTHONPYCACHEPREFIX=/tmp/rjc-pycache python -m compileall -q scripts
+      - name: Install GitHub Pages toolchain
+        run: gem install github-pages -v 232 --no-document
+      - name: Build exact Pages projection
+        run: jekyll build --source . --destination "$RUNNER_TEMP/portal-site"
+      - name: Audit every emitted and excluded surface
+        run: python scripts/audit_safe_pages_projection.py "$RUNNER_TEMP/portal-site"
+      - name: Reject property-directed unsafe mutations
+        run: python -B scripts/test_safe_pages_projection_gate.py "$RUNNER_TEMP/portal-site"
+      - name: Reject impossible dates and hollow provenance
+        run: python -B scripts/test_validated_benefits_fail_closed.py
+      - name: Rebuild and verify inventory freshness
+        run: |
+          python scripts/monitor_v3_inventory.py
+          git diff --exit-code
+      - name: Diff hygiene
+        run: git diff --check
