@@ -141,6 +141,7 @@ urls_referenciadas:
   - https://appasp.economia.go.gov.br/legislacao/arquivos/Secretario/IN/IN_1590_2024.htm
   - https://appasp.economia.go.gov.br/legislacao/arquivos/Secretario/IN/IN_1615_2025.htm
   - https://appasp.economia.go.gov.br/legislacao/arquivos/Superintendencia/SAT/Parecer_Normativo/P_0002_2005.htm
+  - https://appasp.economia.go.gov.br/legislação/arquivos/Rcte/Anexos/ANEXO_09_Beneficio_Fiscal.htm
   - https://assets.imprensaoficial.ms.gov.br/public/prd/Diario%20Oficial/2025/10/31/DO11983_31_10_2025.pdf
   - https://atendimento.receita.rs.gov.br/dos-fundamentos-basicos-do-icms-importacao
   - https://atendimento.receita.rs.gov.br/dos-fundamentos-basicos-do-icms-importação
@@ -1270,7 +1271,6 @@ urls_referenciadas:
   - https://www.confaz.fazenda.gov.br/legislacao/ajustes/2026/AJ014_26
   - https://www.confaz.fazenda.gov.br/legislacao/ajustes/2026/AJ015_26
   - https://www.confaz.fazenda.gov.br/legislacao/ajustes/2026/AJ016_26
-  - https://www.confaz.fazenda.gov.br/legislacao/ajustes/2026/AJ017_26
   - https://www.confaz.fazenda.gov.br/legislacao/atos/2026
   - https://www.confaz.fazenda.gov.br/legislacao/convenios
   - https://www.confaz.fazenda.gov.br/legislacao/convenios/2017/CV190_17
@@ -2163,29 +2163,6 @@ urls_referenciadas:
   - https://www.confaz.fazenda.gov.br/legislacao/convenios/2026/CV060_26
   - https://www.confaz.fazenda.gov.br/legislacao/convenios/2026/CV061_26
   - https://www.confaz.fazenda.gov.br/legislacao/convenios/2026/CV062_26
-  - https://www.confaz.fazenda.gov.br/legislacao/convenios/2026/CV063_26
-  - https://www.confaz.fazenda.gov.br/legislacao/convenios/2026/CV064_26
-  - https://www.confaz.fazenda.gov.br/legislacao/convenios/2026/CV065_26
-  - https://www.confaz.fazenda.gov.br/legislacao/convenios/2026/CV066_26
-  - https://www.confaz.fazenda.gov.br/legislacao/convenios/2026/CV067_26
-  - https://www.confaz.fazenda.gov.br/legislacao/convenios/2026/CV068_26
-  - https://www.confaz.fazenda.gov.br/legislacao/convenios/2026/CV069_26
-  - https://www.confaz.fazenda.gov.br/legislacao/convenios/2026/CV070_26
-  - https://www.confaz.fazenda.gov.br/legislacao/convenios/2026/CV071_26
-  - https://www.confaz.fazenda.gov.br/legislacao/convenios/2026/CV072_26
-  - https://www.confaz.fazenda.gov.br/legislacao/convenios/2026/CV073_26
-  - https://www.confaz.fazenda.gov.br/legislacao/convenios/2026/CV074_26
-  - https://www.confaz.fazenda.gov.br/legislacao/convenios/2026/CV075_26
-  - https://www.confaz.fazenda.gov.br/legislacao/convenios/2026/CV076_26
-  - https://www.confaz.fazenda.gov.br/legislacao/convenios/2026/CV077_26
-  - https://www.confaz.fazenda.gov.br/legislacao/convenios/2026/CV078_26
-  - https://www.confaz.fazenda.gov.br/legislacao/convenios/2026/CV079_26
-  - https://www.confaz.fazenda.gov.br/legislacao/convenios/2026/CV080_26
-  - https://www.confaz.fazenda.gov.br/legislacao/convenios/2026/CV081_26
-  - https://www.confaz.fazenda.gov.br/legislacao/convenios/2026/CV083_26
-  - https://www.confaz.fazenda.gov.br/legislacao/convenios/2026/CV084_26
-  - https://www.confaz.fazenda.gov.br/legislacao/convenios/2026/CV085_26
-  - https://www.confaz.fazenda.gov.br/legislacao/convenios/2026/CV086_26
   - https://www.confaz.fazenda.gov.br/legislacao/convenios/sinief/cvsn_70
   - https://www.confaz.fazenda.gov.br/legislacao/outros/modelos/modeloseformularios
   - https://www.confaz.fazenda.gov.br/legislacao/protocolos
@@ -2476,41 +2453,22 @@ urls_referenciadas:
   - https://www.confaz.fazenda.gov.br/legislacao/protocolos/2025/pt085_25
   - https://www.confaz.fazenda.gov.br/legislacao/protocolos/2025/pt086_25
   - https://www.confaz.fazenda.gov.br/legislacao/protocolos/2026
+  - https://www.confaz.fazenda.gov.br/legislacao/protocolos/2026/protocolo-icms-37-26
+  - https://www.confaz.fazenda.gov.br/legislacao/protocolos/2026/protocolo-icms-38-26
+  - https://www.confaz.fazenda.gov.br/legislacao/protocolos/2026/protocolo-icms-39-26
+  - https://www.confaz.fazenda.gov.br/legislacao/protocolos/2026/protocolo-icms-40-26
+  - https://www.confaz.fazenda.gov.br/legislacao/protocolos/2026/protocolo-icms-41-26
+  - https://www.confaz.fazenda.gov.br/legislacao/protocolos/2026/protocolo-icms-42-26
+  - https://www.confaz.fazenda.gov.br/legislacao/protocolos/2026/protocolo-icms-43-26
+  - https://www.confaz.fazenda.gov.br/legislacao/protocolos/2026/protocolo-icms-44-26
+  - https://www.confaz.fazenda.gov.br/legislacao/protocolos/2026/protocolo-icms-45-26
+  - https://www.confaz.fazenda.gov.br/legislacao/protocolos/2026/protocolo-icms-46-26
+  - https://www.confaz.fazenda.gov.br/legislacao/protocolos/2026/protocolo-icms-47-26
+  - https://www.confaz.fazenda.gov.br/legislacao/protocolos/2026/protocolo-icms-48-26
+  - https://www.confaz.fazenda.gov.br/legislacao/protocolos/2026/protocolo-icms-49-26
+  - https://www.confaz.fazenda.gov.br/legislacao/protocolos/2026/protocolo-icms-50-26
+  - https://www.confaz.fazenda.gov.br/legislacao/protocolos/2026/protocolo-icms-51-26
   - https://www.confaz.fazenda.gov.br/legislacao/protocolos/2026/protocolo-icms-52-26
-  - https://www.confaz.fazenda.gov.br/legislacao/protocolos/2026/protocolo-icms-53-26
-  - https://www.confaz.fazenda.gov.br/legislacao/protocolos/2026/protocolo-icms-54-26
-  - https://www.confaz.fazenda.gov.br/legislacao/protocolos/2026/protocolo-icms-55-26
-  - https://www.confaz.fazenda.gov.br/legislacao/protocolos/2026/protocolo-icms-56-26
-  - https://www.confaz.fazenda.gov.br/legislacao/protocolos/2026/protocolo-icms-57-26
-  - https://www.confaz.fazenda.gov.br/legislacao/protocolos/2026/protocolo-icms-58-26
-  - https://www.confaz.fazenda.gov.br/legislacao/protocolos/2026/protocolo-icms-59-26
-  - https://www.confaz.fazenda.gov.br/legislacao/protocolos/2026/protocolo-icms-60-26
-  - https://www.confaz.fazenda.gov.br/legislacao/protocolos/2026/protocolo-icms-61-26
-  - https://www.confaz.fazenda.gov.br/legislacao/protocolos/2026/protocolo-icms-62-26
-  - https://www.confaz.fazenda.gov.br/legislacao/protocolos/2026/protocolo-icms-63-26
-  - https://www.confaz.fazenda.gov.br/legislacao/protocolos/2026/protocolo-icms-64-26
-  - https://www.confaz.fazenda.gov.br/legislacao/protocolos/2026/protocolo-icms-65-26
-  - https://www.confaz.fazenda.gov.br/legislacao/protocolos/2026/protocolo-icms-66-26
-  - https://www.confaz.fazenda.gov.br/legislacao/protocolos/2026/protocolo-icms-67-26
-  - https://www.confaz.fazenda.gov.br/legislacao/protocolos/2026/protocolo-icms-68-26
-  - https://www.confaz.fazenda.gov.br/legislacao/protocolos/2026/protocolo-icms-69-26
-  - https://www.confaz.fazenda.gov.br/legislacao/protocolos/2026/protocolo-icms-70-26
-  - https://www.confaz.fazenda.gov.br/legislacao/protocolos/2026/protocolo-icms-71-26
-  - https://www.confaz.fazenda.gov.br/legislacao/protocolos/2026/protocolo-icms-72-26
-  - https://www.confaz.fazenda.gov.br/legislacao/protocolos/2026/protocolo-icms-73-26
-  - https://www.confaz.fazenda.gov.br/legislacao/protocolos/2026/protocolo-icms-74-26
-  - https://www.confaz.fazenda.gov.br/legislacao/protocolos/2026/protocolo-icms-75-26
-  - https://www.confaz.fazenda.gov.br/legislacao/protocolos/2026/protocolo-icms-76-26
-  - https://www.confaz.fazenda.gov.br/legislacao/protocolos/2026/protocolo-icms-77-26
-  - https://www.confaz.fazenda.gov.br/legislacao/protocolos/2026/protocolo-icms-79-26
-  - https://www.confaz.fazenda.gov.br/legislacao/protocolos/2026/protocolo-icms-80-26
-  - https://www.confaz.fazenda.gov.br/legislacao/protocolos/2026/protocolo-icms-81-26
-  - https://www.confaz.fazenda.gov.br/legislacao/protocolos/2026/protocolo-icms-82-26
-  - https://www.confaz.fazenda.gov.br/legislacao/protocolos/2026/protocolo-icms-83-26
-  - https://www.confaz.fazenda.gov.br/legislacao/protocolos/2026/protocolo-icms-84-26
-  - https://www.confaz.fazenda.gov.br/legislacao/protocolos/2026/protocolo-icms-85-26
-  - https://www.confaz.fazenda.gov.br/legislacao/protocolos/2026/protocolo-icms-86-26
-  - https://www.confaz.fazenda.gov.br/legislacao/protocolos/2026/protocolo-icms-87-26-1
   - https://www.confaz.fazenda.gov.br/legislacao/protocolos/2026/pt001_26
   - https://www.confaz.fazenda.gov.br/legislacao/protocolos/2026/pt002_26
   - https://www.confaz.fazenda.gov.br/legislacao/protocolos/2026/pt003_26
@@ -2548,22 +2506,6 @@ urls_referenciadas:
   - https://www.confaz.fazenda.gov.br/legislacao/protocolos/2026/pt035_26
   - https://www.confaz.fazenda.gov.br/legislacao/protocolos/2026/pt035_26_Retificacao
   - https://www.confaz.fazenda.gov.br/legislacao/protocolos/2026/pt036_26
-  - https://www.confaz.fazenda.gov.br/legislacao/protocolos/2026/pt037_26
-  - https://www.confaz.fazenda.gov.br/legislacao/protocolos/2026/pt038_26
-  - https://www.confaz.fazenda.gov.br/legislacao/protocolos/2026/pt039_26
-  - https://www.confaz.fazenda.gov.br/legislacao/protocolos/2026/pt040_26
-  - https://www.confaz.fazenda.gov.br/legislacao/protocolos/2026/pt041_26
-  - https://www.confaz.fazenda.gov.br/legislacao/protocolos/2026/pt042_26
-  - https://www.confaz.fazenda.gov.br/legislacao/protocolos/2026/pt043_26
-  - https://www.confaz.fazenda.gov.br/legislacao/protocolos/2026/pt044_26
-  - https://www.confaz.fazenda.gov.br/legislacao/protocolos/2026/pt045_26
-  - https://www.confaz.fazenda.gov.br/legislacao/protocolos/2026/pt046_26
-  - https://www.confaz.fazenda.gov.br/legislacao/protocolos/2026/pt047_26
-  - https://www.confaz.fazenda.gov.br/legislacao/protocolos/2026/pt048_26
-  - https://www.confaz.fazenda.gov.br/legislacao/protocolos/2026/pt049_26
-  - https://www.confaz.fazenda.gov.br/legislacao/protocolos/2026/pt050_26
-  - https://www.confaz.fazenda.gov.br/legislacao/protocolos/2026/pt051_26
-  - https://www.confaz.fazenda.gov.br/legislacao/protocolos/2026/pt052_26
   - https://www.confaz.fazenda.gov.br/legislação/outros/modelos/modeloseformularios
   - https://www.cte.fazenda.gov.br/portal/informe.aspx
   - https://www.diariooficial.rn.gov.br/dei/dorn3/documentos/00000001/20170421/569957.htm
