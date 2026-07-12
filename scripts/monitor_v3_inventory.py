@@ -33,7 +33,12 @@ URL_RE = re.compile(r"https?://[^\s\"'<>]+", re.I)
 
 
 def sha256(path: Path) -> str:
-    return hashlib.sha256(path.read_bytes()).hexdigest()
+    raw = path.read_bytes()
+    # Text files are normalized so inventory hashes are stable across the
+    # Windows authoring worktree and Linux GitHub Actions checkouts.
+    if b"\x00" not in raw:
+        raw = raw.replace(b"\r\n", b"\n").replace(b"\r", b"\n")
+    return hashlib.sha256(raw).hexdigest()
 
 
 def git_files() -> set[str]:
