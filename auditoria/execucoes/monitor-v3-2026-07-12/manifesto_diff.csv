@@ -1,6 +1,6 @@
 caminho,status_git,sha256,finalidade,origem
 .github/workflows/portal-audit.yml,A,41fd05ba90d790b2897caffdd6940f40211d418a0ab0d5927a9aee9031e7e7fe,CI obrigatório fail-closed,rederivado de origin/main
-.nojekyll,D,SELF_REFERENTIAL_GIT_TREE,quarentena segura do Pages legado,rederivado de origin/main
+.nojekyll,D,SELF_REFERENTIAL_GENERATED_SET,quarentena segura do Pages legado,rederivado de origin/main
 404.html,A,07e4f9f163f5653ca81949a694ba17f00d8416bcdb84f13fafbb7f5d154d13e7,quarentena segura do Pages legado,rederivado de origin/main
 _config.yml,A,69330c9cc6d0e640e062fc1cc48b8da7d3abddbae6c25d9551aa43ecbd589e01,quarentena segura do Pages legado,rederivado de origin/main
 auditoria/execucoes/monitor-v3-2026-07-12/achados_e_pendencias.md,A,ccd440317c1e6685a025a450f222d56c33803658892e416b3465fc64071af7ad,evidência e ledger da vigília,rederivado de origin/main
@@ -11,10 +11,10 @@ auditoria/execucoes/monitor-v3-2026-07-12/fontes_lidas.csv,A,4fb679b7a50d22a8f15
 auditoria/execucoes/monitor-v3-2026-07-12/gate_invariant_matrix.csv,A,60353f12f8eaa5d7331c74042e7f386d41fe018afa490b67ab1038b7c813c2fc,evidência e ledger da vigília,rederivado de origin/main
 auditoria/execucoes/monitor-v3-2026-07-12/gate_mutation_results.json,A,a15c449d8cc6d129a877012b061495c384da6f732cb222d85f1ca48fd83b65f4,evidência e ledger da vigília,rederivado de origin/main
 auditoria/execucoes/monitor-v3-2026-07-12/http_platform_receipts.json,A,ffdff6e48fe37285b73d3ad9f4f60db95294a5a28b15f9a200e026a285481f39,evidência e ledger da vigília,rederivado de origin/main
-auditoria/execucoes/monitor-v3-2026-07-12/inventario_integral.csv,A,c50592f8e3cb7203218d3123d8704af081719d03eb0015cdd694bd17454ea886,evidência e ledger da vigília,rederivado de origin/main
+auditoria/execucoes/monitor-v3-2026-07-12/inventario_integral.csv,A,SELF_REFERENTIAL_GENERATED_SET,evidência e ledger da vigília,rederivado de origin/main
 auditoria/execucoes/monitor-v3-2026-07-12/inventory_exclusions.csv,A,7253bda31eb1bfaf12f09ab6c4a3c8ab160ae17b2eda9266951ddfd7e2e6696a,evidência e ledger da vigília,rederivado de origin/main
 auditoria/execucoes/monitor-v3-2026-07-12/ledger_verificacao.csv,A,5b321e378881bbb4604b184ea5e039e68502233765e341d4c7236cef319e5c8b,evidência e ledger da vigília,rederivado de origin/main
-auditoria/execucoes/monitor-v3-2026-07-12/manifesto_diff.csv,A,SELF_REFERENTIAL_GIT_TREE,evidência e ledger da vigília,rederivado de origin/main
+auditoria/execucoes/monitor-v3-2026-07-12/manifesto_diff.csv,A,SELF_REFERENTIAL_GENERATED_SET,evidência e ledger da vigília,rederivado de origin/main
 auditoria/execucoes/monitor-v3-2026-07-12/matriz_fontes_canonicas.csv,A,63d3161ad2ba15648e2b0e5f53a3acc26fa797801cf0caf17c6280c02badac7c,evidência e ledger da vigília,rederivado de origin/main
 auditoria/execucoes/monitor-v3-2026-07-12/relatorio_conformidade.md,A,a60b8c2da91c32d1477eaf33f292de22fd67ee6145296e70fb19a15eec356e82,evidência e ledger da vigília,rederivado de origin/main
 auditoria/execucoes/monitor-v3-2026-07-12/relatorio_final.md,A,6eb1416692e3e27551156467300ed4cd38d78025654e87af335312de491036e3,evidência e ledger da vigília,rederivado de origin/main
@@ -34,7 +34,7 @@ robots.txt,M,331ea9090db0c9f6f597bd9840fd5b171830f6e0b3ba1cb24dfa91f0c95aedc1,qu
 scripts/audit_benefit_cards.py,M,1a18ac19285d749b0386e18b64781df15e2f16b10747e2ea679d1f661b863c3d,controle fail-closed e auditoria,rederivado de origin/main
 scripts/audit_safe_pages_projection.py,A,0a67601b4d570d37961a06bae5ab5b310c7b3f10fe68a041cb3359fce3c7207d,controle fail-closed e auditoria,rederivado de origin/main
 scripts/audit_v3_readiness.py,A,2d73dc57758d1b9a50c3b844edf42f745ee4b0dd71063aa2b38a7a917dbf1f80,controle fail-closed e auditoria,rederivado de origin/main
-scripts/build_diff_manifest.py,A,2113c9d08ab85dfb5c7e92d33e2f809c2ff06bf9935a43fd7a14e632928acb28,controle fail-closed e auditoria,rederivado de origin/main
+scripts/build_diff_manifest.py,A,15911ca6db120545383dab741678e63d3fb661b968d084c36c581e9a38dc651b,controle fail-closed e auditoria,rederivado de origin/main
 scripts/build_master_indexes.py,M,1e46b057bc089548172a9229f31ce021d34d8e95cf4ce40efc210ec294725f93,controle fail-closed e auditoria,rederivado de origin/main
 scripts/monitor_v3_inventory.py,A,ccba3418042a34d81332164aca20a538fc1a9a688453f79d4a4812f3ca9854e8,controle fail-closed e auditoria,rederivado de origin/main
 scripts/test_safe_pages_projection_gate.py,A,1349b447b30640c42adae6f2ab09ce1c3ecc72f0ec0479d921fca90907e0da86,controle fail-closed e auditoria,rederivado de origin/main
