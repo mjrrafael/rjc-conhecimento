@@ -1,0 +1,93 @@
+{
+  "verificador_versao": "3.1.1",
+  "skill": "revisar-ate-concluir",
+  "contract": "C:\\Users\\rafae\\Documents\\Codex\\2026-06-14\\pesquisa-na-mem-ria-profunda-l\\worktrees\\rjc-monitor-2026-07-12-1610\\auditoria\\execucoes\\monitor-v3-2026-07-12\\contrato_execucao.yaml",
+  "workdir": "C:\\Users\\rafae\\Documents\\Codex\\2026-06-14\\pesquisa-na-mem-ria-profunda-l\\worktrees\\rjc-monitor-2026-07-12-1610\\auditoria\\execucoes\\monitor-v3-2026-07-12",
+  "checked_at": "2026-07-12T15:56:59",
+  "conforme": true,
+  "status_final_detectado": "BLOQUEADO",
+  "pendencias_abertas_no_ledger": 8,
+  "issues": [],
+  "warnings": [],
+  "checks": [
+    {
+      "artifact": "workflow.md",
+      "ok": true,
+      "detail": "ok (3639 bytes)"
+    },
+    {
+      "artifact": "ledger_verificacao.csv",
+      "ok": true,
+      "detail": "ok (1389 bytes)"
+    },
+    {
+      "artifact": "fontes_lidas.csv",
+      "ok": true,
+      "detail": "ok (910 bytes)"
+    },
+    {
+      "artifact": "achados_e_pendencias.md",
+      "ok": true,
+      "detail": "ok (2807 bytes)"
+    },
+    {
+      "artifact": "revisao_adversarial.md",
+      "ok": true,
+      "detail": "ok (2027 bytes)"
+    },
+    {
+      "artifact": "relatorio_final.md",
+      "ok": true,
+      "detail": "ok (690 bytes)"
+    }
+  ],
+  "gates": [
+    {
+      "gate": "G0",
+      "nome": "enquadramento_e_escopo",
+      "ok": true,
+      "faltando": []
+    },
+    {
+      "gate": "G1",
+      "nome": "fontes_e_inventario",
+      "ok": true,
+      "faltando": []
+    },
+    {
+      "gate": "G2",
+      "nome": "execucao_com_evidencia",
+      "ok": true,
+      "faltando": []
+    },
+    {
+      "gate": "G3",
+      "nome": "revisao_adversarial",
+      "ok": true,
+      "faltando": []
+    },
+    {
+      "gate": "G4",
+      "nome": "verificador_deterministico",
+      "ok": true,
+      "faltando": []
+    },
+    {
+      "gate": "G5",
+      "nome": "fechamento_literal",
+      "ok": true,
+      "faltando": []
+    }
+  ],
+  "checks_obrigatorios_declarados": [
+    "Definir criterios falsificaveis antes de executar.",
+    "Registrar ledger com status e evidencia concreta.",
+    "Executar revisao adversarial real com cadeia re-derivada.",
+    "Re-derivar a partir da fonte primaria crua.",
+    "Fechar apenas com status literal permitido."
+  ],
+  "camadas_manuais": [
+    "verdade material das fontes juridicas",
+    "cobertura integral e adversarial"
+  ]
+}

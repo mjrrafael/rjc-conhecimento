@@ -133,7 +133,6 @@ def main() -> int:
     tracked = git_files()
     filesystem = fs_files()
     urls = referenced_urls(tracked | filesystem)
-    write_inventory(tracked, filesystem)
     write_scope(urls)
     write_matrix(urls)
     (RUN / "inventory_exclusions.csv").write_text(
@@ -141,6 +140,9 @@ def main() -> int:
         encoding="utf-8",
         newline="\n",
     )
+    # Inventory is written last so hashes for every other generated artifact
+    # reflect their final bytes from this same run.
+    write_inventory(tracked, filesystem)
     symmetric = tracked ^ filesystem
     print(f"tracked={len(tracked)} filesystem={len(filesystem)} urls={len(urls)} symmetric_diff={len(symmetric)}")
     return 1 if symmetric else 0

@@ -6,3 +6,9 @@ Skill revisor-de-aplicacao,markdown,C:\Users\rafae\.codex\skills\revisor-de-apli
 GitHub main,git,23d864f510bfbb16d6ef5d73049c63a1003b5ac6,integral,árvore material ainda em revisão
 PR 24,github,https://github.com/mjrrafael/rjc-conhecimento/pull/24,metadados e lista de arquivos,conteúdo não reutilizado
 Produção,web,https://mjrrafael.github.io/rjc-conhecimento/,parcial,raiz não aberta pelo web; busca confirmou páginas públicas; crawl integral pendente
+Onda 1 fontes/vigência,artefato,C:\Users\rafae\Documents\Codex\2026-06-14\pesquisa-na-mem-ria-profunda-l\reviewers\wave1\fontes_vigencia\outputs\relatorio_final.md,integral,execução concluída com ressalva
+Onda 1 humano/portal,artefato,C:\Users\rafae\Documents\Codex\2026-06-14\pesquisa-na-mem-ria-profunda-l\reviewers\wave1\humano_portal\outputs\relatorio_final.md,integral,execução concluída com ressalva
+Onda 1 IA/dados,artefato,C:\Users\rafae\Documents\Codex\2026-06-14\pesquisa-na-mem-ria-profunda-l\reviewers\wave1\ia_dados\outputs\relatorio_tecnico_ia_dados.md,integral,execução concluída com ressalva
+Onda 2 fontes/vigência,artefato,C:\Users\rafae\Documents\Codex\2026-06-14\pesquisa-na-mem-ria-profunda-l\reviewers\wave2\fontes_vigencia\outputs\relatorio_final.md,integral,status BLOQUEADO
+Onda 2 humano/portal,artefato,C:\Users\rafae\Documents\Codex\2026-06-14\pesquisa-na-mem-ria-profunda-l\reviewers\wave2\humano_portal\outputs\rito\relatorio_final.md,integral,status BLOQUEADO; independência contaminada
+Revisor de aplicação,artefato,C:\Users\rafae\Documents\Codex\2026-06-14\pesquisa-na-mem-ria-profunda-l\reviewers\application_final\relatorio_conformidade.md,integral,veredito NÃO CONFORME
