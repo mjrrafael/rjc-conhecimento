@@ -13,6 +13,8 @@ OUT = ROOT / "auditoria" / "execucoes" / "monitor-v3-2026-07-12" / "manifesto_di
 
 
 def purpose(path: str) -> str:
+    if path.startswith(".github/workflows/"):
+        return "CI obrigatório fail-closed"
     if path.startswith("auditoria/") or path.startswith("docs/monitoramento/"):
         return "evidência e ledger da vigília"
     if path.startswith("scripts/"):
