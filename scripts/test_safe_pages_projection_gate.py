@@ -88,13 +88,26 @@ def main() -> int:
             if not errors:
                 failures.append(name)
 
-        for index, (name, rel, old, new) in enumerate(
-            [
+        replacement_mutants = [
                 ("index_noindex_removed", "index.html", "noindex,nofollow,noarchive", "index,follow"),
                 ("404_noindex_removed", "404.html", "noindex,nofollow,noarchive", "index,follow"),
                 ("robots_allow_all", "robots.txt", "Disallow: /", "Disallow:"),
                 ("robots_empty", "robots.txt", "Disallow: /", ""),
-            ],
+                ("robots_allow_conflict", "robots.txt", "Disallow: /", "Disallow: /\nAllow: /"),
+                ("robots_commented", "robots.txt", "Disallow: /", "# Disallow: /"),
+                ("meta_conflict", "index.html", "</head>", "<meta name='robots' content='index,follow'></head>"),
+                (
+                    "meta_comment_only",
+                    "index.html",
+                    '<meta name="robots" content="noindex,nofollow,noarchive">',
+                    "<!-- noindex,nofollow,noarchive --><meta name='robots' content='index,follow'>",
+                ),
+                ("short_fact_index", "index.html", "</main>", "<p>ICMS aplicável: 18% nas operações internas.</p></main>"),
+                ("short_fact_404", "404.html", "</main>", "<p>ICMS aplicável: 18% nas operações internas.</p></main>"),
+                ("short_fact_llms", "llms.txt", "Não há fatos", "ICMS aplicável: 18%. Não há fatos"),
+        ]
+        for index, (name, rel, old, new) in enumerate(
+            replacement_mutants,
             len(mutants) + len(structural),
         ):
             site = base / f"m{index:02d}"
@@ -110,7 +123,7 @@ def main() -> int:
     if failures:
         print("Mutantes não detectados: " + ", ".join(failures))
         return 1
-    total = len(mutants) + len(structural) + 4
+    total = len(mutants) + len(structural) + len(replacement_mutants)
     print(f"Gate eficaz: corpus limpo aprovado e {total}/{total} mutantes materiais rejeitados.")
     return 0
 

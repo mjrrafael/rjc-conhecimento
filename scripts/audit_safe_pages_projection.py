@@ -15,6 +15,12 @@ ROOT = Path(__file__).resolve().parents[1]
 SITE = Path(sys.argv[1]).resolve() if len(sys.argv) > 1 else ROOT / "_site"
 RUN = ROOT / "auditoria" / "execucoes" / "monitor-v3-2026-07-12"
 ALLOWED = {"index.html", "404.html", "robots.txt", "llms.txt"}
+APPROVED_SHA256 = {
+    "404.html": "085964c0cfdfb739c122e2f363b84a2d9ea97a9924d1c760af3cf4331bbabf07",
+    "index.html": "bbe1897614377f3c46e6b93e067fc1004ab1234ab5511a3ba36453d6bc095816",
+    "llms.txt": "08f53be6f0f48b242d6d82bc41ccf287ecace2088813b58f9c1f2d5205f0dd07",
+    "robots.txt": "331ea9090db0c9f6f597bd9840fd5b171830f6e0b3ba1cb24dfa91f0c95aedc1",
+}
 PROTECTED_DATASETS = (
     ("data/benefits_quarantine.json", "entries"),
     ("data/benefits_crosswalk.json", "entries"),
@@ -82,17 +88,38 @@ def audit_site(errors: list[str]) -> None:
     files = {path.relative_to(SITE).as_posix() for path in SITE.rglob("*") if path.is_file()}
     if files != ALLOWED:
         errors.append(f"projeção Pages divergente: faltam={sorted(ALLOWED-files)} sobram={sorted(files-ALLOWED)}")
+    for rel, expected in APPROVED_SHA256.items():
+        emitted = SITE / rel
+        source = ROOT / rel
+        if not emitted.is_file() or canonical_sha(emitted) != expected:
+            errors.append(f"conteúdo público fora do contrato fechado: {rel}")
+        if not source.is_file() or canonical_sha(source) != expected:
+            errors.append(f"fonte pública fora do contrato fechado: {rel}")
     joined = "\n".join((SITE / rel).read_text(encoding="utf-8", errors="ignore") for rel in sorted(files))
     forbidden = re.compile(r"\b(publishable|A_VALIDAR|verificado_em|field_provenance|cClassTrib|cBenef|NCM\s*\d|art\.\s*\d|lei\s+n[ºo])\b", re.I)
     if forbidden.search(joined):
         errors.append("artefato seguro contém campo ou fato jurídico")
     audit_protected_material(joined, errors)
-    if "Disallow: /" not in (SITE / "robots.txt").read_text(encoding="utf-8"):
-        errors.append("robots.txt não bloqueia indexação integral")
+    robots = (SITE / "robots.txt").read_text(encoding="utf-8")
+    robot_lines = [line.split("#", 1)[0].strip().casefold() for line in robots.splitlines()]
+    robot_lines = [line for line in robot_lines if line]
+    if robot_lines != ["user-agent: *", "disallow: /"]:
+        errors.append("robots.txt não é o contrato fechado de bloqueio integral")
     for rel in ("index.html", "404.html"):
         raw = (SITE / rel).read_text(encoding="utf-8")
-        if "noindex,nofollow,noarchive" not in raw:
-            errors.append(f"{rel} sem meta robots fail-closed")
+        uncommented = re.sub(r"<!--.*?-->", "", raw, flags=re.S)
+        tags = re.findall(r"<meta\b[^>]*>", uncommented, flags=re.I)
+        robots_tags = [tag for tag in tags if re.search(r"\bname\s*=\s*(['\"]?)robots\1", tag, flags=re.I)]
+        if len(robots_tags) != 1:
+            errors.append(f"{rel} deve ter exatamente uma meta robots efetiva")
+            continue
+        match = re.search(
+            r"\bcontent\s*=\s*(['\"])(.*?)\1|\bcontent\s*=\s*([^\s>]+)", robots_tags[0], flags=re.I
+        )
+        content = (match.group(2) or match.group(3) or "") if match else ""
+        directives = {item for item in re.split(r"[\s,]+", content.casefold()) if item}
+        if directives != {"noindex", "nofollow", "noarchive"}:
+            errors.append(f"{rel} tem diretiva robots conflitante ou incompleta")
 
 
 def audit_generator(errors: list[str]) -> None:
