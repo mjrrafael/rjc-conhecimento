@@ -33,6 +33,8 @@ Sanear integralmente o portal, corrigir o gerador legado, provar cobertura jurí
 - `origin/main` no SHA baseline acima.
 - `.github/workflows/portal-audit.yml` ausente.
 - `scripts/validated_benefits.py` contém fallbacks sintéticos proibidos.
+- PR draft #25 registra o checkpoint fail-closed; workflows permanecem apenas em branch local por falta do escopo OAuth `workflow`.
+- Achados parciais da Onda 1 confirmam ausência universal de proveniência/recibos nos 9.726 cards e vazamento material da quarentena.
 
 ## 6. Arquivos gerados
 
@@ -53,6 +55,7 @@ Todos os critérios 1–8 permanecem abertos até evidência integral.
 - [ ] Corrigir/quarentenar integralmente.
 - [ ] Executar Onda 2 e gates.
 - [ ] Publicar e verificar produção.
+- [ ] Após autorização externa, adicionar os workflows completos à PR #25 e exigir check no SHA exato.
 
 ## 10. Notas técnicas
 
