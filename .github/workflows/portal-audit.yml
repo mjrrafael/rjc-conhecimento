@@ -30,6 +30,8 @@ jobs:
         run: jekyll build --source . --destination "$RUNNER_TEMP/portal-site"
       - name: Audit every emitted and excluded surface
         run: python scripts/audit_safe_pages_projection.py "$RUNNER_TEMP/portal-site"
+      - name: Reject property-directed unsafe mutations
+        run: python -B scripts/test_safe_pages_projection_gate.py "$RUNNER_TEMP/portal-site"
       - name: Rebuild and verify inventory freshness
         run: |
           python scripts/monitor_v3_inventory.py

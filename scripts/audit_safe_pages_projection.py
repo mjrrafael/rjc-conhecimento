@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import csv
+import functools
 import hashlib
 import json
 import re
@@ -14,6 +15,12 @@ ROOT = Path(__file__).resolve().parents[1]
 SITE = Path(sys.argv[1]).resolve() if len(sys.argv) > 1 else ROOT / "_site"
 RUN = ROOT / "auditoria" / "execucoes" / "monitor-v3-2026-07-12"
 ALLOWED = {"index.html", "404.html", "robots.txt", "llms.txt"}
+PROTECTED_DATASETS = (
+    ("data/benefits_quarantine.json", "entries"),
+    ("data/benefits_crosswalk.json", "entries"),
+    ("data/ncm_benefits_index.json", "rows"),
+    ("data/pis-cofins/ncm-index.json", "records"),
+)
 
 
 def canonical_sha(path: Path) -> str:
@@ -21,6 +28,54 @@ def canonical_sha(path: Path) -> str:
     if b"\x00" not in raw:
         raw = raw.replace(b"\r\n", b"\n").replace(b"\r", b"\n")
     return hashlib.sha256(raw).hexdigest()
+
+
+def normalized_words(value: object) -> list[str]:
+    return re.findall(r"[a-z0-9]+", str(value).casefold())
+
+
+@functools.lru_cache(maxsize=1)
+def protected_material() -> tuple[set[str], list[tuple[str, list[str]]]]:
+    """Re-derive identifiers, source fingerprints and legal text from raw data."""
+    tokens: set[str] = set()
+    statements: list[tuple[str, list[str]]] = []
+    for rel, collection in PROTECTED_DATASETS:
+        payload = json.loads((ROOT / rel).read_text(encoding="utf-8"))
+        for item in payload.get(collection, []):
+            for field in ("id", "sha256"):
+                value = str(item.get(field, "")).strip().casefold()
+                if len(value) >= 10:
+                    tokens.add(value)
+            ncm = re.sub(r"\D", "", str(item.get("ncm", "")))
+            if len(ncm) >= 6:
+                tokens.add(ncm)
+            for field in ("legal_excerpt", "scope_summary", "product_or_operation", "conditions"):
+                words = normalized_words(item.get(field, ""))
+                if len(words) >= 8:
+                    statements.append((f"{rel}:{item.get('id', '')}:{field}", words))
+    return tokens, statements
+
+
+def audit_protected_material(site_text: str, errors: list[str]) -> None:
+    tokens, statements = protected_material()
+    folded = site_text.casefold()
+    leaked = sorted(token for token in tokens if token in folded)
+    if leaked:
+        errors.append(f"identificador/fingerprint protegido vazou: {leaked[0]}")
+
+    public_words = normalized_words(site_text)
+    public_shingles = {tuple(public_words[i : i + 8]) for i in range(max(0, len(public_words) - 7))}
+    if public_shingles:
+        for locator, words in statements:
+            if any(tuple(words[i : i + 8]) in public_shingles for i in range(len(words) - 7)):
+                errors.append(f"shingle jurídico protegido vazou: {locator}")
+                break
+
+    card_markup = re.compile(
+        r"(?:benefit[-_ ]?card|data-(?:card|benefit)-id|class\s*=\s*['\"][^'\"]*\bcard\b)", re.I
+    )
+    if card_markup.search(site_text):
+        errors.append("markup de card/benefício vazou na projeção")
 
 
 def audit_site(errors: list[str]) -> None:
@@ -31,6 +86,7 @@ def audit_site(errors: list[str]) -> None:
     forbidden = re.compile(r"\b(publishable|A_VALIDAR|verificado_em|field_provenance|cClassTrib|cBenef|NCM\s*\d|art\.\s*\d|lei\s+n[ºo])\b", re.I)
     if forbidden.search(joined):
         errors.append("artefato seguro contém campo ou fato jurídico")
+    audit_protected_material(joined, errors)
     if "Disallow: /" not in (SITE / "robots.txt").read_text(encoding="utf-8"):
         errors.append("robots.txt não bloqueia indexação integral")
     for rel in ("index.html", "404.html"):
