@@ -35,6 +35,8 @@ Sanear integralmente o portal, corrigir o gerador legado, provar cobertura jurí
 - `scripts/validated_benefits.py` contém fallbacks sintéticos proibidos.
 - PR draft #25 registra o checkpoint fail-closed; workflows permanecem apenas em branch local por falta do escopo OAuth `workflow`.
 - Achados parciais da Onda 1 confirmam ausência universal de proveniência/recibos nos 9.726 cards e vazamento material da quarentena.
+- Onda 1 final concluída pelos três papéis, todos com veredito material `NÃO CONFORME` e status de execução `CONCLUÍDO COM RESSALVA`.
+- Candidato de quarentena integral usa Jekyll legado com allowlist efetiva de `index.html`, `404.html`, `robots.txt` e `llms.txt`; o acervo permanece no Git, mas deve ser excluído do artefato Pages.
 
 ## 6. Arquivos gerados
 

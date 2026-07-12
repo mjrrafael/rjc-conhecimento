@@ -10,6 +10,12 @@
 
 cadeia re-derivada: P0 do gerador legado | fonte crua reaberta: `scripts/validated_benefits.py` no SHA 23d864f | resultado: divergiu do contrato v3; fallbacks sintéticos e publicação presumida encontrados.
 
+cadeia re-derivada: superfície/quarentena | fontes cruas reabertas: 13.150 registros e 678 URLs de produção pela Onda 1 IA/dados | resultado: endpoint da quarentena HTTP 200 e 6.728 sobreposições por shingle.
+
+cadeia re-derivada: portal humano | fontes cruas reabertas: 990 arquivos, 655 HTML e 991 GETs anônimos pela Onda 1 humana | resultado: 29.369 pares fingerprint registro×página; 3 respostas HTTP 503.
+
+cadeia re-derivada: fontes/vigência | fontes cruas reabertas: 1.917 alvos e 1.865 recibos persistidos pela Onda 1 jurídica | resultado: só 797 HTTP 200 completos; 92.980 identidades e 485 internalizações não comprovadas.
+
 ## 3. Detalhe interno que derrubaria a conclusão
 
 Qualquer URL oficial sem identidade material do ato, qualquer arquivo fora do inventário, ou qualquer leitura da Onda 2 sobre artefato da Onda 1.
@@ -22,4 +28,4 @@ Qualquer URL oficial sem identidade material do ato, qualquer arquivo fora do in
 
 ## 5. Veredito do passe
 
-Defeitos e bloqueios materiais abertos; conclusão proibida.
+Onda 1 convergiu em NÃO CONFORME. A projeção candidata foi reduzida a aviso neutro via Jekyll, mas Onda 2, recibos nativos, raízes de confiança, CI, merge e produção permanecem bloqueados; conclusão proibida.

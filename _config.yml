@@ -1,0 +1,33 @@
+title: Portal RJC Tributário
+description: Conteúdo temporariamente indisponível durante revisão técnica integral.
+exclude:
+  - .github
+  - .gitignore
+  - assets
+  - auditoria
+  - beneficios
+  - biblioteca
+  - confaz
+  - data
+  - docs
+  - estados
+  - federal
+  - folha-clt
+  - painel-fiscal
+  - public
+  - scripts
+  - workflow.md
+  - ciclo_mdfe.png
+  - compliance-transportadoras.html
+  - estrutura_chave_acesso.png
+  - fluxo_emissao_nfe.png
+  - guia-dp-rh.html
+  - ico.png
+  - logo.png
+  - manual-financeiro.html
+  - manual-fiscal.html
+  - mapa_difal.png
+  - nfce_qrcode_v3.png
+  - produto.html
+  - sitemap.txt
+  - sitemap.xml

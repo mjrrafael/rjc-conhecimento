@@ -2,7 +2,7 @@
 
 ## Sumário executivo
 
-Execução em andamento. O baseline contém defeitos P0, vazamento material de quarentena e não possui os controles v3 exigidos. A PR draft #25 preserva o checkpoint seguro, mas não tem checks nem autorização para merge.
+O baseline foi reprovado pelos três revisores independentes da Onda 1. A correção segura candidata reduz o Pages a um aviso neutro e exclui o acervo do artefato publicado, mas ainda não foi submetida à Onda 2 nem publicada. A PR draft #25 preserva o checkpoint, sem checks ou autorização para merge.
 
 ## Achados com lastro
 

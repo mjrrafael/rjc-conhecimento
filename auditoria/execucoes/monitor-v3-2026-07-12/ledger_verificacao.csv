@@ -4,6 +4,6 @@ Escopo canônico completo,"matriz fixa 27 UFs + federal + municípios + URLs",A 
 Verdade jurídica por campo,"refetch anônimo + trecho/localizador + hash",CORRIGIR,"scripts/validated_benefits.py linhas identificadas por rg usam captured_on/TODAY e internalização por UF"
 Quarentena isolada,"varredura por ID/literal/fingerprint",A VALIDAR,"gates v3 ausentes"
 Gates materiais e mutantes,"dois runners independentes e matriz fechada",BLOQUEADO,"duas raízes de confiança preexistentes ainda não localizadas; token sem escopo workflow impede versionar CI"
-Ondas independentes,"seis agentes distintos + prova negativa de leitura",A VALIDAR,"Onda 1 iniciada; isolamento efetivo e export de tool calls ainda não provados"
+Ondas independentes,"seis agentes distintos + prova negativa de leitura",BLOQUEADO,"Onda 1 concluída por três agentes; cópias próprias/read-only, mas sem mount imutável, export nativo de tool calls ou prova negativa criptográfica; Onda 2 não iniciada"
 Publicação no SHA exato,"PR + CI + merge + Pages + HTTP/hash",BLOQUEADO,"PR draft #25 no SHA 48e51c48566468ce70b54b6a43d9579be1db74e8; zero checks; push de workflow rejeitado por escopo OAuth"
 Refetch pós-deploy,"todas as URLs oficiais públicas",A VALIDAR,"não iniciada"

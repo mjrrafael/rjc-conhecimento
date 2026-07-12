@@ -1,0 +1,31 @@
+{
+  "schema": "rjc-subagents-v3",
+  "baseline_sha": "23d864f510bfbb16d6ef5d73049c63a1003b5ac6",
+  "wave": 1,
+  "agents": [
+    {
+      "canonical_task": "/root/onda1_fontes_vigencia",
+      "role": "revisor_fontes_vigencia",
+      "fork_turns": "none",
+      "status": "CONCLUÍDO COM RESSALVA",
+      "verdict": "NÃO CONFORME",
+      "report": "C:/Users/rafae/Documents/Codex/2026-06-14/pesquisa-na-mem-ria-profunda-l/reviewers/wave1/fontes_vigencia/outputs/relatorio_final.md"
+    },
+    {
+      "canonical_task": "/root/onda1_humano_portal",
+      "role": "revisor_humano_portal",
+      "fork_turns": "none",
+      "status": "CONCLUÍDO COM RESSALVA",
+      "verdict": "NÃO CONFORME",
+      "report": "C:/Users/rafae/Documents/Codex/2026-06-14/pesquisa-na-mem-ria-profunda-l/reviewers/wave1/humano_portal/outputs/relatorio_final.md"
+    },
+    {
+      "canonical_task": "/root/onda1_ia_dados",
+      "role": "revisor_ia_dados",
+      "fork_turns": "none",
+      "status": "CONCLUÍDO COM RESSALVA",
+      "verdict": "NÃO CONFORME",
+      "report": "C:/Users/rafae/Documents/Codex/2026-06-14/pesquisa-na-mem-ria-profunda-l/reviewers/wave1/ia_dados/outputs/relatorio_tecnico_ia_dados.md"
+    }
+  ]
+}

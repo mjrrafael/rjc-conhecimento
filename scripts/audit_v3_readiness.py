@@ -78,6 +78,22 @@ def check_public(errors: list[str]) -> None:
         raw = (public / rel).read_text(encoding="utf-8", errors="ignore")
         if "A_VALIDAR" in raw or "publishable" in raw:
             errors.append(f"estado indevido no artefato público: {rel}")
+    if (ROOT / ".nojekyll").exists():
+        errors.append(".nojekyll mantém o acervo bruto exposto no Pages legado")
+    config = ROOT / "_config.yml"
+    if not config.exists():
+        errors.append("_config.yml de quarentena integral ausente")
+        return
+    excluded = {
+        line.strip()[2:].strip()
+        for line in config.read_text(encoding="utf-8").splitlines()
+        if line.strip().startswith("- ")
+    }
+    allowed = {"_config.yml", "index.html", "404.html", "robots.txt", "llms.txt"}
+    top_level = {path.name for path in ROOT.iterdir() if path.name != ".git"}
+    leaked = top_level - excluded - allowed
+    if leaked:
+        errors.append("raízes não excluídas do Pages legado: " + ", ".join(sorted(leaked)))
 
 
 def main() -> int:
