@@ -1,0 +1,14 @@
+{
+  "schema": "rjc-publication-proof-v3",
+  "recorded_at": "2026-07-13T08:37:55-03:00",
+  "status": "BLOQUEADO TEMPORÁRIO",
+  "pr": "https://github.com/mjrrafael/rjc-conhecimento/pull/26",
+  "candidate_sha": "7153dc343275eaa5d2c05fd2a48839b3bb5eeab1",
+  "ci_run": "https://github.com/mjrrafael/rjc-conhecimento/actions/runs/29246803780",
+  "ci_conclusion": "failure",
+  "merge_sha": null,
+  "pages_run": null,
+  "pages_conclusion": null,
+  "production_checked_at": "2026-07-13T07:45:46-03:00",
+  "note": "A observação pertence ao SHA anterior a este commit de evidência. A PR permanece draft; não houve merge ou deploy."
+}

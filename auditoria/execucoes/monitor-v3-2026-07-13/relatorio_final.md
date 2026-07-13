@@ -20,3 +20,7 @@ O corpus contém 9.726 cards sem proveniência/recibos, datas sintéticas e 9.61
 ## Próximo passo obrigatório
 
 Retomar pela infraestrutura de prova: provisionar duas raízes independentes com recibos nativos e reexecutar a Onda 2 sobre um SHA único e congelado. A PR desta vigília deve permanecer draft até essa certificação e o saneamento integral do corpus.
+
+## Estado remoto observado
+
+A PR draft [#26](https://github.com/mjrrafael/rjc-conhecimento/pull/26) foi aberta com os labels `codex` e `codex-automation`. O `portal-audit` remoto da primeira cabeça observada (`7153dc343275eaa5d2c05fd2a48839b3bb5eeab1`, run `29246803780`) reprovou no readiness v3 por ausência de duas raízes, mutação certificada, dois runners e recibos das 94 linhas mínimas. Não houve merge nem deploy.
