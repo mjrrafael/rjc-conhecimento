@@ -138,16 +138,39 @@ def write_scope(urls: set[str]) -> None:
 
 def write_matrix(urls: set[str]) -> None:
     path = RUN / "matriz_fontes_canonicas.csv"
+    existing_by_key: dict[tuple[str, str], dict[str, str]] = {}
+    existing_by_url: dict[str, dict[str, str]] = {}
+    if path.exists():
+        with path.open(encoding="utf-8-sig", newline="") as handle:
+            for row in csv.DictReader(handle):
+                existing_by_key[(row.get("jurisdicao", ""), row.get("classe", ""))] = row
+                if row.get("jurisdicao") == "REFERENCIADA" and row.get("url_inicial"):
+                    existing_by_url[row["url_inicial"]] = row
+
+    fields = ("jurisdicao", "classe", "url_inicial", "url_final", "dominio", "http_receipt_id", "status_http", "sha256_corpo", "resultado")
+
+    def material_row(jurisdiction: str, source_class: str, url: str = "") -> tuple[str, ...]:
+        previous = existing_by_url.get(url) if jurisdiction == "REFERENCIADA" else existing_by_key.get((jurisdiction, source_class))
+        if previous:
+            return tuple(str(previous.get(field, "")) for field in fields)
+        return (jurisdiction, source_class, url, "", "", "", "", "", "A_VALIDAR")
+
     with path.open("w", encoding="utf-8", newline="") as handle:
         writer = csv.writer(handle, lineterminator="\n")
-        writer.writerow(("jurisdicao", "classe", "url_inicial", "url_final", "dominio", "http_receipt_id", "status_http", "sha256_corpo", "resultado"))
+        writer.writerow(fields)
         for uf in UFS:
             for source_class in STATE_CLASSES:
-                writer.writerow((uf, source_class, "", "", "", "", "", "", "A_VALIDAR"))
+                writer.writerow(material_row(uf, source_class))
         for family in FEDERAL_FAMILIES:
-            writer.writerow(("BR", family, "", "", "", "", "", "", "A_VALIDAR"))
+            writer.writerow(material_row("BR", family))
         for index, url in enumerate(sorted(urls), 1):
-            writer.writerow(("REFERENCIADA", f"URL_{index:05d}", url, "", "", "", "", "", "A_VALIDAR"))
+            previous = existing_by_url.get(url)
+            if previous:
+                row = {field: str(previous.get(field, "")) for field in fields}
+                row["classe"] = f"URL_{index:05d}"
+                writer.writerow(tuple(row[field] for field in fields))
+            else:
+                writer.writerow(material_row("REFERENCIADA", f"URL_{index:05d}", url))
 
 
 def main() -> int:
