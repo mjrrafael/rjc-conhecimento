@@ -1,0 +1,11 @@
+command=["C:\\Users\\rafae\\AppData\\Local\\Programs\\Python\\Python312\\python.exe", "-B", "scripts/audit_card_scope_visible.py"]
+started_at=2026-07-13T08:24:12.961671-03:00
+finished_at=2026-07-13T08:24:19.473480-03:00
+exit_code=0
+timed_out=false
+
+[stdout]
+Todos os cards públicos expõem o contrato v2 no HTML.
+
+
+[stderr]

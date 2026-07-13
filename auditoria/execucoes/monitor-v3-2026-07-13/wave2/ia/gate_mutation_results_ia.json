@@ -1,0 +1,343 @@
+{
+  "temp_root": "C:\\Users\\rafae\\AppData\\Local\\Temp\\rjc-monitor-2026-07-13-wave2\\ia\\gates-2a0pqhx9",
+  "results": [
+    {
+      "gate": "audit_field_provenance",
+      "mutant": "baseline",
+      "expected": "PASS",
+      "detected": true,
+      "errors": []
+    },
+    {
+      "gate": "audit_field_provenance",
+      "mutant": "missing_body_hash",
+      "expected": "FAIL",
+      "detected": true,
+      "errors": [
+        "card-abcdef12: proveniência incompleta para publicacao",
+        "total de cards publishable auditados=1; falhas mostradas até o limite"
+      ]
+    },
+    {
+      "gate": "audit_field_provenance",
+      "mutant": "nonofficial_url",
+      "expected": "FAIL",
+      "detected": true,
+      "errors": [
+        "card-abcdef12: captura oficial inválida para publicacao",
+        "total de cards publishable auditados=1; falhas mostradas até o limite"
+      ]
+    },
+    {
+      "gate": "audit_no_synthetic_legal_dates",
+      "mutant": "baseline",
+      "expected": "PASS",
+      "detected": false,
+      "errors": [
+        "build_pis_cofins_ncm.py: padrão sintético proibido (verificado_em=TODAY)"
+      ]
+    },
+    {
+      "gate": "audit_no_synthetic_legal_dates",
+      "mutant": "missing_date_proof",
+      "expected": "FAIL",
+      "detected": true,
+      "errors": [
+        "build_pis_cofins_ncm.py: padrão sintético proibido (verificado_em=TODAY)",
+        "card-abcdef12: data publicacao sem prova literal vinculante"
+      ]
+    },
+    {
+      "gate": "audit_no_synthetic_legal_dates",
+      "mutant": "mismatched_date_value",
+      "expected": "FAIL",
+      "detected": true,
+      "errors": [
+        "build_pis_cofins_ncm.py: padrão sintético proibido (verificado_em=TODAY)",
+        "card-abcdef12: data publicacao sem prova literal vinculante"
+      ]
+    },
+    {
+      "gate": "audit_verification_receipts",
+      "mutant": "baseline",
+      "expected": "PASS",
+      "detected": true,
+      "errors": []
+    },
+    {
+      "gate": "audit_verification_receipts",
+      "mutant": "single_http_capture",
+      "expected": "FAIL",
+      "detected": true,
+      "errors": [
+        "card-a: menos de duas capturas independentes"
+      ]
+    },
+    {
+      "gate": "audit_verification_receipts",
+      "mutant": "reused_receipt",
+      "expected": "FAIL",
+      "detected": true,
+      "errors": [
+        "card-b: recibo vr-abcdef12 reutilizado por card-a"
+      ]
+    },
+    {
+      "gate": "audit_http_platform_receipts",
+      "mutant": "baseline",
+      "expected": "PASS",
+      "detected": true,
+      "errors": []
+    },
+    {
+      "gate": "audit_http_platform_receipts",
+      "mutant": "native_unavailable",
+      "expected": "FAIL",
+      "detected": true,
+      "errors": [
+        "recibos HTTP nativos confrontáveis indisponíveis"
+      ]
+    },
+    {
+      "gate": "audit_http_platform_receipts",
+      "mutant": "authenticated_capture",
+      "expected": "FAIL",
+      "detected": true,
+      "errors": [
+        "http-a123: captura não anônima"
+      ]
+    },
+    {
+      "gate": "audit_link_receipts",
+      "mutant": "baseline",
+      "expected": "PASS",
+      "detected": true,
+      "errors": []
+    },
+    {
+      "gate": "audit_link_receipts",
+      "mutant": "single_link_receipt",
+      "expected": "FAIL",
+      "detected": true,
+      "errors": [
+        "card-link: capturas independentes ausentes"
+      ]
+    },
+    {
+      "gate": "audit_link_receipts",
+      "mutant": "challenge_body",
+      "expected": "FAIL",
+      "detected": true,
+      "errors": [
+        "card-link: homepage/login/challenge/soft-404"
+      ]
+    },
+    {
+      "gate": "audit_internalization_evidence",
+      "mutant": "baseline",
+      "expected": "PASS",
+      "detected": true,
+      "errors": []
+    },
+    {
+      "gate": "audit_internalization_evidence",
+      "mutant": "not_proven",
+      "expected": "FAIL",
+      "detected": true,
+      "errors": [
+        "card-icms: internalização não comprovada"
+      ]
+    },
+    {
+      "gate": "audit_internalization_evidence",
+      "mutant": "bad_internalization_hash",
+      "expected": "FAIL",
+      "detected": true,
+      "errors": [
+        "card-icms: prova de internalização não vincula UF/ato/hash"
+      ]
+    },
+    {
+      "gate": "audit_full_content_coverage",
+      "mutant": "baseline",
+      "expected": "PASS",
+      "detected": true,
+      "errors": []
+    },
+    {
+      "gate": "audit_full_content_coverage",
+      "mutant": "unsafe_inventory_status",
+      "expected": "FAIL",
+      "detected": true,
+      "errors": [
+        "itens sem estado terminal seguro=1"
+      ]
+    },
+    {
+      "gate": "audit_full_content_coverage",
+      "mutant": "missing_root_surface",
+      "expected": "FAIL",
+      "detected": true,
+      "errors": [
+        "superfície obrigatória ausente: robots.txt"
+      ]
+    },
+    {
+      "gate": "audit_canonical_source_scope",
+      "mutant": "baseline",
+      "expected": "PASS",
+      "detected": true,
+      "errors": []
+    },
+    {
+      "gate": "audit_canonical_source_scope",
+      "mutant": "missing_federal_family",
+      "expected": "FAIL",
+      "detected": true,
+      "errors": [
+        "matriz federal divergente: faltam=1 sobram=0"
+      ]
+    },
+    {
+      "gate": "audit_canonical_source_scope",
+      "mutant": "blank_body_hash",
+      "expected": "FAIL",
+      "detected": true,
+      "errors": [
+        "linhas canônicas/referenciadas sem URL/recibo/hash material=1"
+      ]
+    },
+    {
+      "gate": "audit_public_set_algebra",
+      "mutant": "baseline",
+      "expected": "PASS",
+      "detected": true,
+      "errors": []
+    },
+    {
+      "gate": "audit_public_set_algebra",
+      "mutant": "missing_surface",
+      "expected": "FAIL",
+      "detected": true,
+      "errors": [
+        "superfície segura divergente: ['robots.txt']"
+      ]
+    },
+    {
+      "gate": "audit_public_set_algebra",
+      "mutant": "unsafe_status_leak",
+      "expected": "FAIL",
+      "detected": true,
+      "errors": [
+        "estado inseguro exposto como fato público"
+      ]
+    },
+    {
+      "gate": "audit_quarantine_fingerprints",
+      "mutant": "baseline",
+      "expected": "PASS",
+      "detected": true,
+      "errors": []
+    },
+    {
+      "gate": "audit_quarantine_fingerprints",
+      "mutant": "tracked_quarantine_path",
+      "expected": "FAIL",
+      "detected": true,
+      "errors": [
+        "quarentena está em repositório público rastreado: 1 arquivo(s)"
+      ]
+    },
+    {
+      "gate": "audit_quarantine_fingerprints",
+      "mutant": "token_leak",
+      "expected": "FAIL",
+      "detected": true,
+      "errors": [
+        "data\\benefits_quarantine.json:$[0]: token de quarentena vazou"
+      ]
+    },
+    {
+      "gate": "audit_subagent_independence",
+      "mutant": "baseline",
+      "expected": "PASS",
+      "detected": true,
+      "errors": []
+    },
+    {
+      "gate": "audit_subagent_independence",
+      "mutant": "two_tasks_only",
+      "expected": "FAIL",
+      "detected": true,
+      "errors": [
+        "wave1: menos de três tasks nativas distintas"
+      ]
+    },
+    {
+      "gate": "audit_subagent_independence",
+      "mutant": "negative_access_missing",
+      "expected": "FAIL",
+      "detected": true,
+      "errors": [
+        "prova negativa de leitura entre ondas ausente"
+      ]
+    },
+    {
+      "gate": "audit_publication",
+      "mutant": "baseline",
+      "expected": "PASS",
+      "detected": true,
+      "errors": []
+    },
+    {
+      "gate": "audit_publication",
+      "mutant": "ci_failure",
+      "expected": "FAIL",
+      "detected": true,
+      "errors": [
+        "CI/Pages não verdes"
+      ]
+    },
+    {
+      "gate": "audit_publication",
+      "mutant": "invalid_merge_sha",
+      "expected": "FAIL",
+      "detected": true,
+      "errors": [
+        "SHA candidato/merge inválido"
+      ]
+    },
+    {
+      "gate": "audit_public_http_hashes",
+      "mutant": "baseline",
+      "expected": "PASS",
+      "detected": true,
+      "errors": []
+    },
+    {
+      "gate": "audit_public_http_hashes",
+      "mutant": "http_merge_mismatch",
+      "expected": "FAIL",
+      "detected": true,
+      "errors": [
+        "artefato público diverge do merge/HTTP 200"
+      ]
+    },
+    {
+      "gate": "audit_public_http_hashes",
+      "mutant": "refetch_incomplete",
+      "expected": "FAIL",
+      "detected": true,
+      "errors": [
+        "refetch pós-deploy das fontes oficiais públicas incompleto"
+      ]
+    }
+  ],
+  "summary": {
+    "tests": 39,
+    "baselines": 13,
+    "mutants": 26,
+    "detected": 38,
+    "undetected": 1
+  }
+}

@@ -1,0 +1,23 @@
+id,classe,universo,rederivacao,status,evidencia
+S01,INVENTARIO_PERMITIDO,309 arquivos / 249376272 bytes,"git ls-tree candidato + SHA-256 canônico item a item",OK,inventario.csv
+S02,JSON_NDJSON,34 arquivos,"parse integral; 0 erros; 0 chaves JSON duplicadas",OK,scan_results.json
+S03,CSV_NCM,7050 linhas,"comparação integral dos 21 campos CSV contra JSON",OK,data/ncm_benefits_index.csv
+S04,UFS_FIXAS,27 UFs,"conjuntos rederivados em registry; sealing; coverage; catalog; source_audit; curadoria",OK,scan_results.json
+S05,BENEFICIOS,9726 registros,"9726 publishable; 0 field_provenance; 0 verification_receipt_id; 0 pares de recibos",NAO_CONFORME,scan_results.json
+S06,DATAS_LEGAIS,9726 registros,"publicacao; validity_start e inicio_vigencia iguais a captured_on em 9726/9726",NAO_CONFORME,scan_results.json
+S07,INTERNALIZACAO,9726 registros,"9611 internalizado_uf=true; 0 internalization_evidence",NAO_CONFORME,scan_results.json
+S08,QUARENTENA,13150 registros,"0 source_fingerprint; 0 sha256; arquivo rastreado",NAO_CONFORME,scan_results.json
+S09,NCM_JSON,7050 linhas,"7016 IDs únicos; 34 ocorrências excedentes; conteúdos divergentes compartilham âncora",NAO_CONFORME,scan_results.json
+S10,PIS_COFINS,291 registros,"NDJSON projetado integralmente para ncm-index.json",OK,scan_results.json
+S11,FONTES_CURADAS,154 fontes,"154 caminhos presentes; 66 hashes divergentes; 88 hashes coincidentes",NAO_CONFORME,scan_results.json
+S12,HASH_BENEFICIOS,9726 registros,"3442 atuais; 5866 hashes antigos; 418 externos/desconhecidos",NAO_CONFORME,scan_results.json
+S13,HASH_NCM,7050 registros,"3863 atuais; 1749 hashes antigos; 1438 externos/desconhecidos",NAO_CONFORME,scan_results.json
+S14,BUSCA_FULL,19089 entradas,"17681 URLs únicas; 1408 duplicações; 34 colisões NCM materiais",NAO_CONFORME,scan_results.json
+S15,MANIFESTO_LLM,655 páginas,"655 paths únicos; 7 páginas sem base correspondente na busca full",NAO_CONFORME,scan_results.json
+S16,BUILD_FRESHNESS,19 artefatos,"16 divergentes/não comprováveis: 1 hash stale; 11 bytes dependentes de CRLF; 4 fora do universo local autorizado",NAO_CONFORME,scan_results.json
+S17,PRODUCAO,674 URLs,"5 respostas 200 correspondendo a 4 superfícies únicas; 669 respostas 404; hashes dos 4 arquivos batem",OK,production_scan.json
+S18,GERADOR_BUILD,1 reconstrução isolada,"falhou após 114.4s por raiz externa ausente e já havia escrito páginas na cópia temporária",BLOQUEADO,mutant-root-b360dbe04b364bb1980d743abbea16dc
+S19,GATES_CANDIDATO,13 gates,"0 PASS; 12 FAIL; 1 BLOQUEADO",NAO_CONFORME,actual_gate_results.json
+S20,MUTANTES_PROPRIOS,26 mutantes,"2 por gate; 26/26 rejeitados; 13 baselines; 1 baseline revelou falha real adicional",OK,gate_mutation_results_ia.json
+S21,BYPASSES,17 sondas,"16 estados sintéticos/omissos aceitos; 1 já falhou por defeito real do candidato",NAO_CONFORME,bypass_results.json
+S22,RECIBOS_RAIZES_ISOLAMENTO,3 classes,"recibos HTTP nativos; raízes distintas; prova negativa de isolamento indisponíveis",BLOQUEADO,actual_gate_results.json

@@ -1,0 +1,11 @@
+command=["C:\\Users\\rafae\\AppData\\Local\\Programs\\Python\\Python312\\python.exe", "-B", "scripts/audit_divergence_html_json_search.py"]
+started_at=2026-07-13T08:24:38.193258-03:00
+finished_at=2026-07-13T08:24:43.722837-03:00
+exit_code=0
+timed_out=false
+
+[stdout]
+HTML, JSON e busca convergem para os benefícios publicados.
+
+
+[stderr]

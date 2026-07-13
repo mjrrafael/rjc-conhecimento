@@ -1,0 +1,10 @@
+id,criterio,metodo,status,evidencia
+RJC-001,"Baseline e isolamento preservam o worktree do usuário","fetch + worktree exclusivo + status",OK,"origin/main=f814f80efbab84bf43b671bf544c4678d4dda82a; worktree exclusivo; árvore suja do usuário intocada"
+RJC-002,"Inventário integral com diferença simétrica zero","git ls-tree + filesystem + geradores + build + crawl",BLOQUEADO,"inventário reconstruído; a diferença final será recalculada após a incorporação deste ledger; os crawls independentes não cobrem todos os universos"
+RJC-003,"Escopo canônico completo com recibos nativos","27 UFs x 3 classes + famílias federais + links/entes",BLOQUEADO,"94/94 raízes mínimas enumeradas; 0/94 possui recibo HTTP nativo confrontável; universo referenciado ampliado a 33.848 URLs"
+RJC-004,"Verdade jurídica e proveniência por campo","captura primária + refetch cego + localizador + hash",BLOQUEADO,"9.726 cards sem field_provenance/recibos; 9.726 datas sintéticas; 9.611 internalizações ICMS sem prova"
+RJC-005,"Quarentena sem vazamento público","crawl + ID/literal/fingerprint",BLOQUEADO,"Pages observado contém só quatro superfícies neutras; corpus rastreado mantém 13.150 registros materiais sem fingerprint"
+RJC-006,"Hard gates materialmente eficazes","matriz fechada + dois mutantes por célula + dois runners",BLOQUEADO,"13 gates adicionados e execução local fail-closed; 0/2 raízes de confiança e 0 runners nativos certificáveis"
+RJC-007,"Duas ondas realmente independentes","seis agentes + ambientes somente leitura + prova negativa",BLOQUEADO,"3+3 revisores executados com fork_turns=none; plataforma não exporta tool calls/paths e ACL usa o mesmo usuário; SHA atual 3d27f5a difere do 074bff85 revisado na Onda 2"
+RJC-008,"Publicação ou não alteração comprovada","PR/CI/merge/Pages/hash ou equivalência integral",BLOQUEADO,"produção main permanece segura em f814f80; mudanças locais não foram mescladas nem publicadas; PR será mantida draft"
+RJC-009,"Refetch pós-deploy de todas as fontes públicas","capturas anônimas independentes",BLOQUEADO,"não houve deploy candidato e não há recibos nativos de refetch; produção segura atual foi confrontada por HTTP/hash"

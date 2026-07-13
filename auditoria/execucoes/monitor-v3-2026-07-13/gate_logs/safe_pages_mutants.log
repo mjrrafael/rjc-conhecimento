@@ -1,0 +1,11 @@
+command=["C:\\Users\\rafae\\AppData\\Local\\Programs\\Python\\Python312\\python.exe", "-B", "scripts/test_safe_pages_projection_gate.py", "C:\\Users\\rafae\\AppData\\Local\\Temp\\rjc-safe-pages-3q94g5ai"]
+started_at=2026-07-13T08:25:07.903121-03:00
+finished_at=2026-07-13T08:25:31.435835-03:00
+exit_code=0
+timed_out=false
+
+[stdout]
+Gate eficaz: corpus limpo aprovado e 27/27 mutantes materiais rejeitados.
+
+
+[stderr]

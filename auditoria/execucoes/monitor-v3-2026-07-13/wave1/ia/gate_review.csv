@@ -1,0 +1,36 @@
+﻿gate,location,implementation,execution,effectiveness,bypass_or_gap,status,evidence
+CI-01,portal-audit.yml: Compile Python,compileall; refeito por compile() em memória,41/41 OK,"detecta sintaxe, não semântica",,OK,python compile() 41 fontes
+CI-02,portal-audit.yml: Jekyll build,jekyll build exato,não executável: Ruby/Jekyll ausentes,"produção confirma 4 arquivos, mas não substitui build isolado",ambiente local sem toolchain,BLOQUEADO,ruby/jekyll command not found
+CI-03,audit_safe_pages_projection.audit_site,allowlist + hashes + robots + vazamento,4/4 limpo,27/27 mutantes rejeitados,protege apenas 4 datasets/campos selecionados,OK,projeção reconstruída fora do worktree
+CI-04,audit_safe_pages_projection.audit_inventory,compara RUN/inventario_integral.csv,não executado por fronteira proibida,depende de relatório prévio e exceção SELF_REFERENTIAL_GIT_TREE,estado derivado dentro do próprio repositório,BLOQUEADO,dependência auditoria/execucoes/**
+CI-05,audit_safe_pages_projection.audit_scope,81 pares + len federal,não executado por fronteira proibida,"não confere URL, recibo, hash ou classes federais por conjunto",matriz vazia ainda passa,NONCONFORM,implementação estática
+CI-06,test_safe_pages_projection_gate.py,mutantes dirigidos,27/27 rejeitados,bom para 4 arquivos,usa primeiro/último em várias classes; não cobre todos os campos/datasets,OK,execução local
+CI-07,test_validated_benefits_fail_closed.py,fixture forte + 27 variantes,27/27 rejeitados,gerador trava sem atestado nativo,CI não reconstrói nem valida os 9726 registros já commitados,NONCONFORM,9726/9726 sem proveniência/recibos
+CI-08,monitor_v3_inventory.py,regera inventário/escopo/matriz,não executado: escreveria fronteira proibida,esqueleto fixa 94 linhas,todas 94 saem vazias/A_VALIDAR; baseline hardcoded 23d864...; pula arquivos >20MB ao extrair URLs,NONCONFORM,leitura integral do script
+CI-09,git diff --exit-code,freshness pós-geração,não executado,não supre validação material,depende de artefatos gerados proibidos,BLOQUEADO,workflow estático
+LOCAL-01,audit_portal.py,links/âncoras/datas/conteúdo,exit 0; 658 HTML,0 links/âncoras ausentes,não detecta IDs duplicados; 322 excedentes,NONCONFORM,rederivação independente do grafo
+LOCAL-02,audit_quarantine_isolation.py,IDs q-* em alvos finitos,exit 0; 13150 IDs,ID literal coberto,não cobre literal/hash/texto normalizado/shingles,NONCONFORM,leitura integral do script
+LOCAL-03,audit_benefit_cards.py,cards/quarentena,exit 1,reprova quarentena material serializada,"confunde artefato de repositório excluído com Pages, mas revela contrato inconsistente",NONCONFORM,execução local
+LOCAL-04,audit_index_freshness.py,hashes de 15/19 artefatos,exit 1,detectou llms divergente,amostra 1 benefício e não confere bytes/idade,NONCONFORM,execução local + recálculo 19/19
+LOCAL-05,audit_link_health.py,102 URLs oficiais,exit 0 com 11 avisos,0 404/410 detectado,falhas TLS/DNS/timeout são soft; sem hash/recibo; pode parar após 25 hard errors,NONCONFORM,11 URLs sem prova de saúde
+LOCAL-06,build_portal.py filtro benefit_entries,validation_status==validado,não executado por somente leitura,inclui 9726 entradas,ignora publishable/status/validity; 241 A_REVALIDAR entram páginas e busca,NONCONFORM,funções benefit_entries e benefit_full_search_entries
+LOCAL-07,JSON/NDJSON parser,parse integral,36/36 OK,estrutura sintática íntegra,não garante verdade material,OK,todos os arquivos permitidos
+LOCAL-08,manifestos estaduais,154 fontes/12 UFs,154/154 presentes,117 hashes batem raw ou canonical,"37 hashes inválidos: MS 35, RJ 1, RS 1",NONCONFORM,recálculo SHA-256 integral
+LOCAL-09,produção HTTP,1024 candidatos do git ls-tree,5x200 + 1019x404,0 divergências; hashes 4/4,"recibos são HTTP do runtime, não atestações nativas da plataforma",BLOQUEADO,surfaces.csv linha a linha
+LOCAL-10,proveniência dataset commitado,campos materiais e hashes,9726/9726 sem recibos,7827 hashes locais batem,1596 hashes divergem; 303 apontam URL sem corpo local,NONCONFORM,data/benefits_crosswalk.json
+ABS-01,audit_field_provenance.py,hard gate declarado,ausente,,,NONCONFORM,scripts/audit_v3_readiness.py
+ABS-02,audit_no_synthetic_legal_dates.py,hard gate declarado,ausente,,,NONCONFORM,scripts/audit_v3_readiness.py
+ABS-03,audit_verification_receipts.py,hard gate declarado,ausente,,,NONCONFORM,scripts/audit_v3_readiness.py
+ABS-04,audit_http_platform_receipts.py,hard gate declarado,ausente,,,NONCONFORM,scripts/audit_v3_readiness.py
+ABS-05,audit_link_receipts.py,hard gate declarado,ausente,,,NONCONFORM,scripts/audit_v3_readiness.py
+ABS-06,audit_internalization_evidence.py,hard gate declarado,ausente,,,NONCONFORM,scripts/audit_v3_readiness.py
+ABS-07,audit_full_content_coverage.py,hard gate declarado,ausente,,,NONCONFORM,scripts/audit_v3_readiness.py
+ABS-08,audit_canonical_source_scope.py,hard gate declarado,ausente,,,NONCONFORM,scripts/audit_v3_readiness.py
+ABS-09,audit_public_set_algebra.py,hard gate declarado,ausente,,,NONCONFORM,scripts/audit_v3_readiness.py
+ABS-10,audit_quarantine_fingerprints.py,hard gate declarado,ausente,,,NONCONFORM,scripts/audit_v3_readiness.py
+ABS-11,audit_subagent_independence.py,hard gate declarado,ausente,,,NONCONFORM,scripts/audit_v3_readiness.py
+ABS-12,audit_publication.py,hard gate declarado,ausente,,,NONCONFORM,scripts/audit_v3_readiness.py
+ABS-13,audit_public_http_hashes.py,hard gate declarado,ausente,,,NONCONFORM,scripts/audit_v3_readiness.py
+ABS-14,ID/anchor uniqueness gate,necessário pelo grafo,ausente,,322 IDs duplicados em 15 HTML; 34 IDs NCM excedentes,NONCONFORM,rederivação integral
+ABS-15,publishable unsafe-status gate,necessário pela álgebra,ausente,,241 A_REVALIDAR + 291 registros com A_VALIDAR publicados em legado,NONCONFORM,dados + busca + HTML
+ABS-16,reproducible isolated rebuild/diff,necessário à freshness,ausente,,build_portal escreve no worktree e não há modo --check/--output,NONCONFORM,AST e implementação do gerador

@@ -1,0 +1,138 @@
+{
+  "schema": "rjc-wave1-ia-audit-v1",
+  "baseline": "f814f80efbab84bf43b671bf544c4678d4dda82a",
+  "run_at": "2026-07-13T07:57:07-03:00",
+  "mode": "blind_read_only",
+  "status": "BLOQUEADO",
+  "veredito": "NÃO CONFORME",
+  "portal": "https://mjrrafael.github.io/rjc-conhecimento/",
+  "counts": {
+    "baseline_files": 1023,
+    "inventory_rows": 1024,
+    "prohibited_files_not_read": 20,
+    "allowed_files_hashed": 1004,
+    "json_ndjson_allowed": 36,
+    "json_ndjson_parse_ok": 36,
+    "data_asset_files": 247,
+    "production_urls_checked": 1024,
+    "production_200_expected": 5,
+    "production_404_expected": 1019,
+    "production_divergences": 0,
+    "html_files": 658,
+    "graph_edges": 194246,
+    "internal_edges": 174240,
+    "external_edges": 20006,
+    "unique_external_urls": 1223,
+    "missing_local_targets": 0,
+    "duplicate_html_id_excess": 322,
+    "duplicate_html_files": 15,
+    "search_entries": 19089,
+    "search_unique_urls": 17681,
+    "llm_manifest_entries": 655,
+    "sitemap_urls": 655,
+    "crosswalk_entries": 9726,
+    "crosswalk_publishable": 9726,
+    "crosswalk_field_provenance": 0,
+    "crosswalk_native_receipts": 0,
+    "crosswalk_source_hash_ok": 7827,
+    "crosswalk_source_hash_bad": 1596,
+    "crosswalk_source_remote_unverified": 303,
+    "quarantine_entries": 13150,
+    "quarantine_leaks_safe_projection": 0,
+    "ncm_rows": 7050,
+    "ncm_unique_ids": 7016,
+    "ncm_duplicate_groups": 32,
+    "ncm_duplicate_excess": 34,
+    "pis_ncm_rows": 291,
+    "pis_ncm_rows_with_a_validar": 291,
+    "a_revalidar_crosswalk_rows": 241,
+    "curated_manifest_sources": 154,
+    "curated_manifest_hash_ok": 117,
+    "curated_manifest_hash_bad": 37,
+    "freshness_artifacts": 19,
+    "freshness_hash_mismatch": 1,
+    "freshness_bytes_mismatch": 8,
+    "required_canonical_sources": 94,
+    "canonical_sources_with_native_receipt": 0,
+    "declared_missing_hard_gates": 13,
+    "local_audits_run": 19,
+    "local_audits_pass": 15,
+    "local_audits_fail": 4,
+    "projection_mutants_rejected": 27
+  },
+  "blocking_conditions": [
+    "isolamento cego não comprovável: rg amplo exibiu trechos de workflow/docs anteriores; achados desses trechos foram descartados",
+    "Ruby/Jekyll ausentes; build exato não reproduzido",
+    "recibos HTTP nativos/plataforma ausentes para 94 raízes canônicas e registros publishable",
+    "raízes externas G:/C:/BD_LEGISLACAO não disponíveis"
+  ],
+  "material_findings": [
+    {
+      "id": "F-001",
+      "severity": "P0",
+      "finding": "9726/9726 registros publishable não têm field_provenance, independent_http_receipt_ids ou verification_receipt_id; CI testa o gerador, não o dataset commitado."
+    },
+    {
+      "id": "F-002",
+      "severity": "P0",
+      "finding": "13 hard gates declarados estão ausentes e não integram o workflow."
+    },
+    {
+      "id": "F-003",
+      "severity": "P1",
+      "finding": "241 registros A_REVALIDAR aparecem como Beneficio fiscal validado em busca e HTML; 291 PIS/NCM publicáveis carregam A_VALIDAR."
+    },
+    {
+      "id": "F-004",
+      "severity": "P1",
+      "finding": "37/154 hashes de manifestos estaduais divergem; 1596/9726 hashes de origem do crosswalk divergem e 303 dependem de corpo remoto não atestado."
+    },
+    {
+      "id": "F-005",
+      "severity": "P1",
+      "finding": "build-freshness contém 1 hash e 8 tamanhos divergentes; llms.txt não pertence ao build legado registrado."
+    },
+    {
+      "id": "F-006",
+      "severity": "P1",
+      "finding": "0/94 raízes canônicas têm recibo nativo classificável nas entradas cruas permitidas."
+    },
+    {
+      "id": "F-007",
+      "severity": "P2",
+      "finding": "322 IDs HTML duplicados em 15 páginas; 32 grupos/34 excedentes no índice NCM; gate de links não detecta unicidade."
+    }
+  ],
+  "positive_evidence": [
+    "produção atual corresponde exatamente à allowlist segura: 5 URLs 200 esperadas e 1019 caminhos 404",
+    "quarentena ∩ projeção segura = vazio por ID, literal, hash canônico, texto normalizado e shingles",
+    "36/36 JSON/NDJSON parseiam; 41/41 scripts compilam em memória; 27/27 mutantes da projeção são rejeitados"
+  ],
+  "artifacts": {
+    "inventario.csv": {
+      "path": "C:\\Users\\rafae\\AppData\\Local\\Temp\\rjc-monitor-2026-07-13-wave1\\ia\\inventario.csv",
+      "sha256": "8f46b4f00d9e54be3890c600a09ff25124fbf16278f2c6529513fdee8855767a",
+      "bytes": 235835
+    },
+    "superficies.csv": {
+      "path": "C:\\Users\\rafae\\AppData\\Local\\Temp\\rjc-monitor-2026-07-13-wave1\\ia\\superficies.csv",
+      "sha256": "90c9107da9e7c7ac8098f19d327b489f9c6d9efcdac4b504c9082a758384c4b6",
+      "bytes": 606290
+    },
+    "ledger.csv": {
+      "path": "C:\\Users\\rafae\\AppData\\Local\\Temp\\rjc-monitor-2026-07-13-wave1\\ia\\ledger.csv",
+      "sha256": "36a5a3d0ef75add7b7ba837924ea68044c59f412a53d70003881ef490e50865f",
+      "bytes": 2368
+    },
+    "gate_review.csv": {
+      "path": "C:\\Users\\rafae\\AppData\\Local\\Temp\\rjc-monitor-2026-07-13-wave1\\ia\\gate_review.csv",
+      "sha256": "de463768bda481d492e3822f8c777383735511d2f88df5ea3d4556535a38d7de",
+      "bytes": 6032
+    },
+    "revisao.md": {
+      "path": "C:\\Users\\rafae\\AppData\\Local\\Temp\\rjc-monitor-2026-07-13-wave1\\ia\\revisao.md",
+      "sha256": "72cf17043dcc47a2767e7374aacbb7078cf63f5fecee8b7a429847c433c67265",
+      "bytes": 7315
+    }
+  }
+}

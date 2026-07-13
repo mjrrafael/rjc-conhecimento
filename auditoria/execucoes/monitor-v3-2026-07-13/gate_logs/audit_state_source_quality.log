@@ -1,0 +1,12 @@
+command=["C:\\Users\\rafae\\AppData\\Local\\Programs\\Python\\Python312\\python.exe", "-B", "scripts/audit_state_source_quality.py"]
+started_at=2026-07-13T08:24:47.616065-03:00
+finished_at=2026-07-13T08:24:53.055264-03:00
+exit_code=0
+timed_out=false
+
+[stdout]
+Auditoria estadual gravada: data\state_source_audit.json
+Relatorio gravado: docs\state-source-audit.md
+
+
+[stderr]

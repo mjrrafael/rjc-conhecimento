@@ -1,0 +1,9 @@
+id,criterio,metodo,status,evidencia
+RAC-001,Inventário integral permitido,git ls-tree e hash independente,A VALIDAR,
+RAC-002,JSON e NDJSON integralmente válidos,parse streaming de todos os arquivos,A VALIDAR,
+RAC-003,Busca e manifestos consistentes,rederivação de conjuntos e referências,A VALIDAR,
+RAC-004,Superfícies públicas coerentes,HTTP direto e álgebra de conjuntos,A VALIDAR,
+RAC-005,13 gates materialmente revisados,inspeção de código e mutação,A VALIDAR,
+RAC-006,Build e freshness reproduzíveis,reexecução isolada e comparação,A VALIDAR,
+RAC-007,Grafo e quarentena íntegros,rederivação de arestas/fingerprints/isolamento,A VALIDAR,
+RAC-008,Entregáveis válidos e consistentes,parse e reconciliação final,A VALIDAR,

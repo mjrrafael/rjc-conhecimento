@@ -1,0 +1,11 @@
+command=["C:\\Users\\rafae\\AppData\\Local\\Programs\\Python\\Python312\\python.exe", "-B", "scripts/test_validated_benefits_fail_closed.py"]
+started_at=2026-07-13T08:25:31.436831-03:00
+finished_at=2026-07-13T08:25:31.627835-03:00
+exit_code=0
+timed_out=false
+
+[stdout]
+Gerador fail-closed: fixture estrutural forte validada, publicação travada sem atestado nativo e 27/27 variantes rejeitadas.
+
+
+[stderr]

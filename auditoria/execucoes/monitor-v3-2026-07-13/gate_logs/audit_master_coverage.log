@@ -1,0 +1,16 @@
+command=["C:\\Users\\rafae\\AppData\\Local\\Programs\\Python\\Python312\\python.exe", "-B", "scripts/audit_master_coverage.py"]
+started_at=2026-07-13T08:23:42.870244-03:00
+finished_at=2026-07-13T08:23:43.917658-03:00
+exit_code=0
+timed_out=false
+
+[stdout]
+Requisitos federais auditados: 15
+Estados auditados: 27
+Entradas de beneficios auditadas: 9726
+Linhas NCM x beneficios auditadas: 7050
+Familias CONFAZ auditadas: 3
+Auditoria mestre concluida sem falhas estruturais.
+
+
+[stderr]

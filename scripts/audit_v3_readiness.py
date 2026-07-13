@@ -12,10 +12,14 @@ ROOT = Path(__file__).resolve().parents[1]
 
 
 def resolve_run() -> Path:
+    allowed = (ROOT / "auditoria" / "execucoes").resolve()
     configured = os.environ.get("RJC_MONITOR_RUN", "").strip()
     if configured:
         path = Path(configured)
-        return path if path.is_absolute() else ROOT / path
+        resolved = (path if path.is_absolute() else ROOT / path).resolve()
+        if not resolved.is_relative_to(allowed) or not resolved.name.startswith("monitor-v3-"):
+            raise RuntimeError("RJC_MONITOR_RUN fora de auditoria/execucoes/monitor-v3-*")
+        return resolved
     candidates = sorted((ROOT / "auditoria" / "execucoes").glob("monitor-v3-*"))
     if not candidates:
         raise RuntimeError("nenhuma execução monitor-v3 encontrada")

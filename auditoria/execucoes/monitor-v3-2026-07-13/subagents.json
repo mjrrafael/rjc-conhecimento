@@ -1,0 +1,24 @@
+{
+  "schema": "rjc-subagents-v3",
+  "baseline_sha": "f814f80efbab84bf43b671bf544c4678d4dda82a",
+  "candidate_reviewed_sha": "074bff85c7c560386ca0ed7f0802d4e896534571",
+  "candidate_current_sha": "3d27f5a71f23358b32673afd767d7ef9295aa0a9",
+  "wave1": [
+    {"canonical_task_path":"/root/onda1_fontes_vigencia","role":"revisor_fontes_vigencia","fork_turns":"none","source_sha":"f814f80efbab84bf43b671bf544c4678d4dda82a","status":"BLOQUEADO","verdict":"NÃO CONFORME","artifacts":"wave1/fontes"},
+    {"canonical_task_path":"/root/onda1_humano_portal","role":"revisor_humano_portal","fork_turns":"none","source_sha":"f814f80efbab84bf43b671bf544c4678d4dda82a","status":"BLOQUEADO","verdict":"NÃO CONFORME","artifacts":"wave1/humano"},
+    {"canonical_task_path":"/root/onda1_ia_dados","role":"revisor_ia_dados","fork_turns":"none","source_sha":"f814f80efbab84bf43b671bf544c4678d4dda82a","status":"BLOQUEADO","verdict":"NÃO CONFORME","artifacts":"wave1/ia"}
+  ],
+  "wave2": [
+    {"canonical_task_path":"/root/onda2_fontes_vigencia","role":"revisor_fontes_vigencia","fork_turns":"none","source_sha":"074bff85c7c560386ca0ed7f0802d4e896534571","status":"BLOQUEADO","verdict":"NÃO CONFORME","artifacts":"wave2/fontes"},
+    {"canonical_task_path":"/root/onda2_humano_portal","role":"revisor_humano_portal","fork_turns":"none","source_sha":"074bff85c7c560386ca0ed7f0802d4e896534571","status":"BLOQUEADO","verdict":"NÃO CONFORME","artifacts":"wave2/humano"},
+    {"canonical_task_path":"/root/onda2_ia_dados","role":"revisor_ia_dados","fork_turns":"none","source_sha":"074bff85c7c560386ca0ed7f0802d4e896534571","status":"BLOQUEADO","verdict":"NÃO CONFORME","artifacts":"wave2/ia"}
+  ],
+  "application_review": {
+    "canonical_task_path": "/root/revisor_aplicacao_final",
+    "fork_turns": "none",
+    "status": "NÃO CONFORME",
+    "artifacts": "revisor_aplicacao"
+  },
+  "certifiable": false,
+  "reason": "A plataforma não exporta prompt/tool calls/paths lidos como recibo nativo e o código recebeu correção após o SHA entregue à Onda 2."
+}

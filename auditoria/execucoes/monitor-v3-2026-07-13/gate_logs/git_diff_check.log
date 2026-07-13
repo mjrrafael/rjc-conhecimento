@@ -1,0 +1,12 @@
+command=["git", "diff", "--check"]
+started_at=2026-07-13T08:25:31.627835-03:00
+finished_at=2026-07-13T08:25:31.673342-03:00
+exit_code=0
+timed_out=false
+
+[stdout]
+
+
+[stderr]
+warning: in the working copy of 'data/state_source_audit.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'docs/state-source-audit.md', LF will be replaced by CRLF the next time Git touches it

@@ -1,0 +1,545 @@
+{
+  "schema": "rjc-gate-run-ledger-v3",
+  "run": "auditoria/execucoes/monitor-v3-2026-07-13",
+  "completed_at": "2026-07-13T08:25:32.146601-03:00",
+  "results": [
+    {
+      "name": "compileall",
+      "command": [
+        "C:\\Users\\rafae\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "-m",
+        "compileall",
+        "-q",
+        "scripts"
+      ],
+      "started_at": "2026-07-13T08:22:50.583419-03:00",
+      "finished_at": "2026-07-13T08:22:50.677935-03:00",
+      "exit_code": 0,
+      "timed_out": false,
+      "log": "auditoria/execucoes/monitor-v3-2026-07-13/gate_logs/compileall.log",
+      "log_sha256": "51d66f65714f662e5d93cb657f50fa0fad4c06c6e190a449d2328cc8e51d028b",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "audit_portal",
+      "command": [
+        "C:\\Users\\rafae\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "-B",
+        "scripts/audit_portal.py"
+      ],
+      "started_at": "2026-07-13T08:22:50.677935-03:00",
+      "finished_at": "2026-07-13T08:23:42.869244-03:00",
+      "exit_code": 0,
+      "timed_out": false,
+      "log": "auditoria/execucoes/monitor-v3-2026-07-13/gate_logs/audit_portal.log",
+      "log_sha256": "6c33146d7b1a02ec777c6e71fa1997890cb8f56c33ade548bb9d294a69e6ad4c",
+      "stdout_sha256": "8e0c0f35f8cf284083c717169b45a3b7c2694b8b6286b759653129cf6b132c44",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "audit_master_coverage",
+      "command": [
+        "C:\\Users\\rafae\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "-B",
+        "scripts/audit_master_coverage.py"
+      ],
+      "started_at": "2026-07-13T08:23:42.870244-03:00",
+      "finished_at": "2026-07-13T08:23:43.917658-03:00",
+      "exit_code": 0,
+      "timed_out": false,
+      "log": "auditoria/execucoes/monitor-v3-2026-07-13/gate_logs/audit_master_coverage.log",
+      "log_sha256": "2dd3012ee122e5f11dbe2c5113e685fb66d5eb309a8082819fb9d7184d0127ba",
+      "stdout_sha256": "c94e6568a9386417140d9e0d1a41f085cfa4ff07f45b192f76c6fa7dc8b71285",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "audit_benefit_cards",
+      "command": [
+        "C:\\Users\\rafae\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "-B",
+        "scripts/audit_benefit_cards.py"
+      ],
+      "started_at": "2026-07-13T08:23:43.918658-03:00",
+      "finished_at": "2026-07-13T08:24:12.959671-03:00",
+      "exit_code": 1,
+      "timed_out": false,
+      "log": "auditoria/execucoes/monitor-v3-2026-07-13/gate_logs/audit_benefit_cards.log",
+      "log_sha256": "d9b91ed014cfb4fd125a029a4771ab5b4ab359db6c1500598488cabf6d3960fb",
+      "stdout_sha256": "4a1513418e4e73943e588c7fa84fb859521d0113290894ed9a826d74f8c6a8bc",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "audit_card_scope_visible",
+      "command": [
+        "C:\\Users\\rafae\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "-B",
+        "scripts/audit_card_scope_visible.py"
+      ],
+      "started_at": "2026-07-13T08:24:12.961671-03:00",
+      "finished_at": "2026-07-13T08:24:19.473480-03:00",
+      "exit_code": 0,
+      "timed_out": false,
+      "log": "auditoria/execucoes/monitor-v3-2026-07-13/gate_logs/audit_card_scope_visible.log",
+      "log_sha256": "4ce41ead84e9dedab449ed79c510a3543baf54f5a0aeca0351be762c73d8dc11",
+      "stdout_sha256": "8e6dc931d4f80cf938e1d1c75cba36f7d297732135ffe0bc464fcd6a0f888ee8",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "audit_no_keyword_inference",
+      "command": [
+        "C:\\Users\\rafae\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "-B",
+        "scripts/audit_no_keyword_inference.py"
+      ],
+      "started_at": "2026-07-13T08:24:19.474480-03:00",
+      "finished_at": "2026-07-13T08:24:19.933502-03:00",
+      "exit_code": 0,
+      "timed_out": false,
+      "log": "auditoria/execucoes/monitor-v3-2026-07-13/gate_logs/audit_no_keyword_inference.log",
+      "log_sha256": "37dc9fbb42aeaa2111d6d0d3e1ef0a5ab8e7d3286cb8300a2de5f77b0d4eac60",
+      "stdout_sha256": "72208de886d75d640e630806b4a0f40468c9040c858172ce5c4229484528ea35",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "audit_temporal_consistency",
+      "command": [
+        "C:\\Users\\rafae\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "-B",
+        "scripts/audit_temporal_consistency.py"
+      ],
+      "started_at": "2026-07-13T08:24:19.934503-03:00",
+      "finished_at": "2026-07-13T08:24:20.404618-03:00",
+      "exit_code": 0,
+      "timed_out": false,
+      "log": "auditoria/execucoes/monitor-v3-2026-07-13/gate_logs/audit_temporal_consistency.log",
+      "log_sha256": "f226b0d87189fdaaa862d184fe6cca0e15dbf91db281d1510a33ac50325ad5fd",
+      "stdout_sha256": "dadfa40fe1e80a1d7d004a7e39158ef408c350d313f0f4cf9156afd6fcccbb0a",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "audit_link_health",
+      "command": [
+        "C:\\Users\\rafae\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "-B",
+        "scripts/audit_link_health.py"
+      ],
+      "started_at": "2026-07-13T08:24:20.404618-03:00",
+      "finished_at": "2026-07-13T08:24:26.844371-03:00",
+      "exit_code": 0,
+      "timed_out": false,
+      "log": "auditoria/execucoes/monitor-v3-2026-07-13/gate_logs/audit_link_health.log",
+      "log_sha256": "510c4e21595ce9606490cde08be2a2a29598ba6358d40340eb67c8a46a47d36b",
+      "stdout_sha256": "9cff0ba585216e6679c5bdcc3e93a024b072feb9cb5b3bb6f9430c82519bb9e3",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "audit_index_freshness",
+      "command": [
+        "C:\\Users\\rafae\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "-B",
+        "scripts/audit_index_freshness.py"
+      ],
+      "started_at": "2026-07-13T08:24:26.844883-03:00",
+      "finished_at": "2026-07-13T08:24:32.017427-03:00",
+      "exit_code": 1,
+      "timed_out": false,
+      "log": "auditoria/execucoes/monitor-v3-2026-07-13/gate_logs/audit_index_freshness.log",
+      "log_sha256": "81486e54794e297dc8c642465f61efbaa7a5bc1c2e1df300141a698c7adbcd0d",
+      "stdout_sha256": "b0fc9c2c43d6ceedc3cbbe478ee350811a971f1ce035fa004fb9602a708112ff",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "audit_quarantine_isolation",
+      "command": [
+        "C:\\Users\\rafae\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "-B",
+        "scripts/audit_quarantine_isolation.py"
+      ],
+      "started_at": "2026-07-13T08:24:32.017427-03:00",
+      "finished_at": "2026-07-13T08:24:37.747235-03:00",
+      "exit_code": 0,
+      "timed_out": false,
+      "log": "auditoria/execucoes/monitor-v3-2026-07-13/gate_logs/audit_quarantine_isolation.log",
+      "log_sha256": "e0c52a30e03e0de56a9ffedecfa440cc7db0468b7cdfaca79acc4e59825b3331",
+      "stdout_sha256": "aad93fa43fc935feae56e2bf44dd7650c418a4294584405cf7cdb8b130ac659a",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "audit_reforma_transition",
+      "command": [
+        "C:\\Users\\rafae\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "-B",
+        "scripts/audit_reforma_transition.py"
+      ],
+      "started_at": "2026-07-13T08:24:37.748236-03:00",
+      "finished_at": "2026-07-13T08:24:38.193258-03:00",
+      "exit_code": 0,
+      "timed_out": false,
+      "log": "auditoria/execucoes/monitor-v3-2026-07-13/gate_logs/audit_reforma_transition.log",
+      "log_sha256": "242875ff9da54163a4abbcc1392c7132645c89048ef491e81ae671da97491c0f",
+      "stdout_sha256": "73fec7866641cf88713d1de61572b0c20f84e206cfeeb4e08a7022fad2a47682",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "audit_divergence_html_json_search",
+      "command": [
+        "C:\\Users\\rafae\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "-B",
+        "scripts/audit_divergence_html_json_search.py"
+      ],
+      "started_at": "2026-07-13T08:24:38.193258-03:00",
+      "finished_at": "2026-07-13T08:24:43.722837-03:00",
+      "exit_code": 0,
+      "timed_out": false,
+      "log": "auditoria/execucoes/monitor-v3-2026-07-13/gate_logs/audit_divergence_html_json_search.log",
+      "log_sha256": "a9d35c8b16303bc04b0e46392620b23e44a79e7d3a3cbc928ae474bfa6c81de1",
+      "stdout_sha256": "8b0c0accd94c949cdf267cdbc52540ebd0395846dec425aa51f0e7195a715547",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "audit_editorial_date_per_card",
+      "command": [
+        "C:\\Users\\rafae\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "-B",
+        "scripts/audit_editorial_date_per_card.py"
+      ],
+      "started_at": "2026-07-13T08:24:43.722837-03:00",
+      "finished_at": "2026-07-13T08:24:47.615064-03:00",
+      "exit_code": 0,
+      "timed_out": false,
+      "log": "auditoria/execucoes/monitor-v3-2026-07-13/gate_logs/audit_editorial_date_per_card.log",
+      "log_sha256": "8861ea338ee47fe1cde0ec13261f50c22b21447637c7b4ccad14c0e80ed8fc94",
+      "stdout_sha256": "e4c99cc92a013fdb64a24d596b6ba99d2d9eba3e6ac3fa9576ac5e69569e3159",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "audit_state_source_quality",
+      "command": [
+        "C:\\Users\\rafae\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "-B",
+        "scripts/audit_state_source_quality.py"
+      ],
+      "started_at": "2026-07-13T08:24:47.616065-03:00",
+      "finished_at": "2026-07-13T08:24:53.055264-03:00",
+      "exit_code": 0,
+      "timed_out": false,
+      "log": "auditoria/execucoes/monitor-v3-2026-07-13/gate_logs/audit_state_source_quality.log",
+      "log_sha256": "39322a546f77cc2709adcfbbd7a627d5a9aa5454381095fa366ca8d955860152",
+      "stdout_sha256": "41c1a7828afd501c2352bafaeb1f4b7a2ad37849744b87922f3d1eccb6cfe0bb",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "audit_field_provenance",
+      "command": [
+        "C:\\Users\\rafae\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "-B",
+        "scripts/audit_field_provenance.py"
+      ],
+      "started_at": "2026-07-13T08:24:53.056264-03:00",
+      "finished_at": "2026-07-13T08:24:54.517091-03:00",
+      "exit_code": 1,
+      "timed_out": false,
+      "log": "auditoria/execucoes/monitor-v3-2026-07-13/gate_logs/audit_field_provenance.log",
+      "log_sha256": "9cf14d39c0e474a1f35af3b8e1089115db360450adb91afce2a5b1ac1011d361",
+      "stdout_sha256": "c4d5a56ee73d4fd68ab519f83c8d1aa179fbd23b27b8b47894569c22ddd84138",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "audit_no_synthetic_legal_dates",
+      "command": [
+        "C:\\Users\\rafae\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "-B",
+        "scripts/audit_no_synthetic_legal_dates.py"
+      ],
+      "started_at": "2026-07-13T08:24:54.518091-03:00",
+      "finished_at": "2026-07-13T08:24:56.023261-03:00",
+      "exit_code": 1,
+      "timed_out": false,
+      "log": "auditoria/execucoes/monitor-v3-2026-07-13/gate_logs/audit_no_synthetic_legal_dates.log",
+      "log_sha256": "d61bc64faeca627db9e7c4cd2840dc21628a6bade8e8ea66384600fd6d4c57fa",
+      "stdout_sha256": "515e3588518b72ba0a7fbea983c0a0d69260c3182a549e35d45857e256ccb0c8",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "audit_verification_receipts",
+      "command": [
+        "C:\\Users\\rafae\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "-B",
+        "scripts/audit_verification_receipts.py"
+      ],
+      "started_at": "2026-07-13T08:24:56.024261-03:00",
+      "finished_at": "2026-07-13T08:24:57.407059-03:00",
+      "exit_code": 1,
+      "timed_out": false,
+      "log": "auditoria/execucoes/monitor-v3-2026-07-13/gate_logs/audit_verification_receipts.log",
+      "log_sha256": "cc815b7500d3a8339e50bba6e0a238df12b7403f0481ce111e0c0b308c65d53c",
+      "stdout_sha256": "4e0af20c7c9f9bb008c723a8682e81600fed66cf1f147cbb4249bbc9e4fc50b8",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "audit_http_platform_receipts",
+      "command": [
+        "C:\\Users\\rafae\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "-B",
+        "scripts/audit_http_platform_receipts.py"
+      ],
+      "started_at": "2026-07-13T08:24:57.408059-03:00",
+      "finished_at": "2026-07-13T08:24:57.482059-03:00",
+      "exit_code": 1,
+      "timed_out": false,
+      "log": "auditoria/execucoes/monitor-v3-2026-07-13/gate_logs/audit_http_platform_receipts.log",
+      "log_sha256": "46a591ffe1d220e250cf1a0319e44ac50ea49b57fb11998172bd8029f0be744f",
+      "stdout_sha256": "4d9674c5c96cd7a97aba611b8f44839837fe34c6a24a247ef60dea82823a8351",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "audit_link_receipts",
+      "command": [
+        "C:\\Users\\rafae\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "-B",
+        "scripts/audit_link_receipts.py"
+      ],
+      "started_at": "2026-07-13T08:24:57.483060-03:00",
+      "finished_at": "2026-07-13T08:24:58.852457-03:00",
+      "exit_code": 1,
+      "timed_out": false,
+      "log": "auditoria/execucoes/monitor-v3-2026-07-13/gate_logs/audit_link_receipts.log",
+      "log_sha256": "1b5e8d494d1bfae453d792b4205652b278d80d7073b368ef79a41be7740607b5",
+      "stdout_sha256": "837b1a95411ec9e40c94aba60c0b815012949845f01b8e81d2658953102372f5",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "audit_internalization_evidence",
+      "command": [
+        "C:\\Users\\rafae\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "-B",
+        "scripts/audit_internalization_evidence.py"
+      ],
+      "started_at": "2026-07-13T08:24:58.853457-03:00",
+      "finished_at": "2026-07-13T08:25:00.254492-03:00",
+      "exit_code": 1,
+      "timed_out": false,
+      "log": "auditoria/execucoes/monitor-v3-2026-07-13/gate_logs/audit_internalization_evidence.log",
+      "log_sha256": "6bbbea077ec233eb9bd2785c0106f98732917362beacc6c8af3e187b4183e7b8",
+      "stdout_sha256": "f3dcfccfd106b105ac2a30f7b5983af166194f11d24310a41bd21f26962cfeec",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "audit_full_content_coverage",
+      "command": [
+        "C:\\Users\\rafae\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "-B",
+        "scripts/audit_full_content_coverage.py"
+      ],
+      "started_at": "2026-07-13T08:25:00.255490-03:00",
+      "finished_at": "2026-07-13T08:25:00.431163-03:00",
+      "exit_code": 1,
+      "timed_out": false,
+      "log": "auditoria/execucoes/monitor-v3-2026-07-13/gate_logs/audit_full_content_coverage.log",
+      "log_sha256": "6409f867e5f144a04edfb4669bdfc4d8015fdfc7d46bd6b6ab5492d389f03a9f",
+      "stdout_sha256": "3dfa124857a1318a3b5cdb59f5dadc699861b88678c4e501822a7d6ed49f7082",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "audit_canonical_source_scope",
+      "command": [
+        "C:\\Users\\rafae\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "-B",
+        "scripts/audit_canonical_source_scope.py"
+      ],
+      "started_at": "2026-07-13T08:25:00.431163-03:00",
+      "finished_at": "2026-07-13T08:25:00.583673-03:00",
+      "exit_code": 1,
+      "timed_out": false,
+      "log": "auditoria/execucoes/monitor-v3-2026-07-13/gate_logs/audit_canonical_source_scope.log",
+      "log_sha256": "4d6139d28f7cb263640787eee881508219def975e97f25f1a763b54527c9e259",
+      "stdout_sha256": "b96257a43ed27f530c85d6131138cfbee57f71e0677e09fce1362c94d81eb2ac",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "audit_public_set_algebra",
+      "command": [
+        "C:\\Users\\rafae\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "-B",
+        "scripts/audit_public_set_algebra.py"
+      ],
+      "started_at": "2026-07-13T08:25:00.584674-03:00",
+      "finished_at": "2026-07-13T08:25:01.902857-03:00",
+      "exit_code": 1,
+      "timed_out": false,
+      "log": "auditoria/execucoes/monitor-v3-2026-07-13/gate_logs/audit_public_set_algebra.log",
+      "log_sha256": "dc44ddafd5be909c7e8ee26d9e686b4c19822f86a917b23a83e3ef5a9afb156d",
+      "stdout_sha256": "7e926053ca94d7c476e418b29a8fb6279e51c8ae1d11c564efb5d03a24d01f96",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "audit_quarantine_fingerprints",
+      "command": [
+        "C:\\Users\\rafae\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "-B",
+        "scripts/audit_quarantine_fingerprints.py"
+      ],
+      "started_at": "2026-07-13T08:25:01.903854-03:00",
+      "finished_at": "2026-07-13T08:25:03.706930-03:00",
+      "exit_code": 1,
+      "timed_out": false,
+      "log": "auditoria/execucoes/monitor-v3-2026-07-13/gate_logs/audit_quarantine_fingerprints.log",
+      "log_sha256": "0450b50ecf84b26dfa494069c3f3ffd9973d41e7e3503628a3af463deb3cd434",
+      "stdout_sha256": "1195eb6586dcd9251fd6483152a9c779f499ebd7632c99c8dbbc91f4dc81a956",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "audit_subagent_independence",
+      "command": [
+        "C:\\Users\\rafae\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "-B",
+        "scripts/audit_subagent_independence.py"
+      ],
+      "started_at": "2026-07-13T08:25:03.707931-03:00",
+      "finished_at": "2026-07-13T08:25:03.778930-03:00",
+      "exit_code": 1,
+      "timed_out": false,
+      "log": "auditoria/execucoes/monitor-v3-2026-07-13/gate_logs/audit_subagent_independence.log",
+      "log_sha256": "503ea79b66ac34998c6a16dfa3cd00c7e992f361307ab9f0d1714b559fbf93f6",
+      "stdout_sha256": "d55f98457055de17ab2bbd54630c9556f057053cee38233a175e8b47b2b484c1",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "audit_publication",
+      "command": [
+        "C:\\Users\\rafae\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "-B",
+        "scripts/audit_publication.py"
+      ],
+      "started_at": "2026-07-13T08:25:03.779930-03:00",
+      "finished_at": "2026-07-13T08:25:03.849442-03:00",
+      "exit_code": 1,
+      "timed_out": false,
+      "log": "auditoria/execucoes/monitor-v3-2026-07-13/gate_logs/audit_publication.log",
+      "log_sha256": "b0be71abbbc54c1afee090fc16324bf2868b35c7d301b14d39821102617ab7eb",
+      "stdout_sha256": "22d748fa11e5a5217ba60121c7a606ac2fff5cd894d082979a2eb0b556203ba3",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "audit_public_http_hashes",
+      "command": [
+        "C:\\Users\\rafae\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "-B",
+        "scripts/audit_public_http_hashes.py"
+      ],
+      "started_at": "2026-07-13T08:25:03.850441-03:00",
+      "finished_at": "2026-07-13T08:25:03.929443-03:00",
+      "exit_code": 1,
+      "timed_out": false,
+      "log": "auditoria/execucoes/monitor-v3-2026-07-13/gate_logs/audit_public_http_hashes.log",
+      "log_sha256": "aafe2633618b446263f565cc6a5030659abb8d4f314439da4ddb579dcd149564",
+      "stdout_sha256": "256bb99ab330020e0581adf183da59f5dc1685f31752908b93a31ef22a890d5d",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "audit_v3_readiness",
+      "command": [
+        "C:\\Users\\rafae\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "-B",
+        "scripts/audit_v3_readiness.py"
+      ],
+      "started_at": "2026-07-13T08:25:03.929443-03:00",
+      "finished_at": "2026-07-13T08:25:04.068448-03:00",
+      "exit_code": 1,
+      "timed_out": false,
+      "log": "auditoria/execucoes/monitor-v3-2026-07-13/gate_logs/audit_v3_readiness.log",
+      "log_sha256": "a10e9556e4d4a80cc3efb13802f9f35e2b94be9ee4443f4e065692da991bd087",
+      "stdout_sha256": "3449d0f7836014719b3430da91a59b1e95ec1ca9f03e0f06c03becf356556123",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "safe_pages_projection",
+      "command": [
+        "C:\\Users\\rafae\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "-B",
+        "scripts/audit_safe_pages_projection.py",
+        "C:\\Users\\rafae\\AppData\\Local\\Temp\\rjc-safe-pages-3q94g5ai"
+      ],
+      "started_at": "2026-07-13T08:25:04.076448-03:00",
+      "finished_at": "2026-07-13T08:25:07.902108-03:00",
+      "exit_code": 1,
+      "timed_out": false,
+      "log": "auditoria/execucoes/monitor-v3-2026-07-13/gate_logs/safe_pages_projection.log",
+      "log_sha256": "b1d54828ff557390e29256365a59d28ff41f4885a43ab78acb0e3a0372b305f9",
+      "stdout_sha256": "441232a30f6a559efc5059ed9e36a238aa3425b77e312ccac69a19f5f2846c97",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "safe_pages_mutants",
+      "command": [
+        "C:\\Users\\rafae\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "-B",
+        "scripts/test_safe_pages_projection_gate.py",
+        "C:\\Users\\rafae\\AppData\\Local\\Temp\\rjc-safe-pages-3q94g5ai"
+      ],
+      "started_at": "2026-07-13T08:25:07.903121-03:00",
+      "finished_at": "2026-07-13T08:25:31.435835-03:00",
+      "exit_code": 0,
+      "timed_out": false,
+      "log": "auditoria/execucoes/monitor-v3-2026-07-13/gate_logs/safe_pages_mutants.log",
+      "log_sha256": "f4e382a20309a44596ebaf8ef58376cf62ebdad45971fbb7c90147da3aee03ff",
+      "stdout_sha256": "d63bbfde57bf566bba36786cd2579a7493367dee9c43c47e0d91a4ef6850e588",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "validated_benefits_mutants",
+      "command": [
+        "C:\\Users\\rafae\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "-B",
+        "scripts/test_validated_benefits_fail_closed.py"
+      ],
+      "started_at": "2026-07-13T08:25:31.436831-03:00",
+      "finished_at": "2026-07-13T08:25:31.627835-03:00",
+      "exit_code": 0,
+      "timed_out": false,
+      "log": "auditoria/execucoes/monitor-v3-2026-07-13/gate_logs/validated_benefits_mutants.log",
+      "log_sha256": "0c6e288bab757aa1129c77e0cd5c517b674a8a7adba320bec8f2474a16c3c457",
+      "stdout_sha256": "c07fa988c196bbd2673016778390bd5f9602ac7c68b2a9dcd72916c75f5fb104",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "git_diff_check",
+      "command": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "started_at": "2026-07-13T08:25:31.627835-03:00",
+      "finished_at": "2026-07-13T08:25:31.673342-03:00",
+      "exit_code": 0,
+      "timed_out": false,
+      "log": "auditoria/execucoes/monitor-v3-2026-07-13/gate_logs/git_diff_check.log",
+      "log_sha256": "5a64219d063c6a79a89614fa1868f9d7071df106113600f713ec6369578c6339",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "3f09a62c2aa3f6d73a10e6cfc00edf31bb830792743f40442ab1077f700cc6ad"
+    },
+    {
+      "name": "git_lfs_inventory",
+      "command": [
+        "git",
+        "lfs",
+        "ls-files"
+      ],
+      "started_at": "2026-07-13T08:25:31.674341-03:00",
+      "finished_at": "2026-07-13T08:25:32.145602-03:00",
+      "exit_code": 0,
+      "timed_out": false,
+      "log": "auditoria/execucoes/monitor-v3-2026-07-13/gate_logs/git_lfs_inventory.log",
+      "log_sha256": "f0be5a4cf971b74af596d6d1b50dd19b2f9e1fde07b5b7795c951803ed45f03f",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "summary": {
+    "total": 33,
+    "passed": 16,
+    "failed": 17,
+    "timed_out": 0
+  }
+}

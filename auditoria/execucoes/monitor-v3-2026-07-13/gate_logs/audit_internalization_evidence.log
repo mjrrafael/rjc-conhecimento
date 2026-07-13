@@ -1,0 +1,51 @@
+command=["C:\\Users\\rafae\\AppData\\Local\\Programs\\Python\\Python312\\python.exe", "-B", "scripts/audit_internalization_evidence.py"]
+started_at=2026-07-13T08:24:58.853457-03:00
+finished_at=2026-07-13T08:25:00.254492-03:00
+exit_code=1
+timed_out=false
+
+[stdout]
+audit_internalization_evidence: FAIL
+- ba-4ea3d188bb54: internalização não comprovada
+- ba-b9748c8ac454: internalização não comprovada
+- ba-8ae0cde8886c: internalização não comprovada
+- ba-d5aad7dc6b0a: internalização não comprovada
+- ba-b6f8d5563474: internalização não comprovada
+- ba-06000336d842: internalização não comprovada
+- ba-df8c8b4892de: internalização não comprovada
+- ba-a40743414355: internalização não comprovada
+- ba-c9201d734184: internalização não comprovada
+- ba-5ba09ff7e4d6: internalização não comprovada
+- ba-402caaafbfe3: internalização não comprovada
+- ba-7e096b2daff7: internalização não comprovada
+- ba-069afe75d142: internalização não comprovada
+- ba-61b23645a448: internalização não comprovada
+- ba-c0b1a558bc6f: internalização não comprovada
+- ba-6ed05e5eba2a: internalização não comprovada
+- ba-01215c5c6e30: internalização não comprovada
+- ba-151a0a0da2be: internalização não comprovada
+- ba-bb6ac4658be8: internalização não comprovada
+- ba-f8db1682482c: internalização não comprovada
+- ba-57b02fba4948: internalização não comprovada
+- ba-32bfbd914caf: internalização não comprovada
+- ba-b206d372b7e6: internalização não comprovada
+- ba-0d20d273e347: internalização não comprovada
+- ba-4e6383b194d4: internalização não comprovada
+- ba-aab777a63c7f: internalização não comprovada
+- ba-66193b941056: internalização não comprovada
+- ba-f52d31f5e105: internalização não comprovada
+- ba-84a70228158c: internalização não comprovada
+- ba-105283074478: internalização não comprovada
+- ba-6a47f9398c65: internalização não comprovada
+- ba-982c5bf30deb: internalização não comprovada
+- ba-da32f3a58926: internalização não comprovada
+- ba-dcba5fc1bc59: internalização não comprovada
+- ba-bc0a27488a79: internalização não comprovada
+- ba-f4ca67135e24: internalização não comprovada
+- ba-9d551a767be3: internalização não comprovada
+- ba-fa6be2dfd8a5: internalização não comprovada
+- ba-0c588e6d0e78: internalização não comprovada
+- ba-c94f1a5dabf0: internalização não comprovada
+
+
+[stderr]

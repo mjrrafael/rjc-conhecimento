@@ -1,0 +1,73 @@
+{
+  "task": "Onda 1 - revisão cega do portal humano",
+  "baseline": "f814f80efbab84bf43b671bf544c4678d4dda82a",
+  "portal": "https://mjrrafael.github.io/rjc-conhecimento/",
+  "decision": "NAO_CONFORME",
+  "status": "BLOQUEADO",
+  "public_surface_observed": "SAFE_WITHDRAWAL_PROJECTION",
+  "blocking_reasons": [
+    "recibo nativo GitHub Pages/Actions vinculado ao baseline não coletado",
+    "matriz conceitual 27 UFs x 3 famílias (81 células) não fechada item a item",
+    "famílias federais fixas não classificadas integralmente"
+  ],
+  "counts": {
+    "git_files_total": 1023,
+    "git_files_authorized_reconciled": 1002,
+    "git_files_auditoria": 21,
+    "git_files_auditoria_execucoes": 20,
+    "filesystem_missing": 0,
+    "filesystem_extra": 0,
+    "git_oid_mismatch": 0,
+    "html_total": 658,
+    "html_structurally_parsed": 656,
+    "html_prior_artifacts_not_interpreted": 2,
+    "build_files": 4,
+    "manifest_files": 12,
+    "manifest_invalid": 0,
+    "link_occurrences": 193929,
+    "portal_routes_unique": 1070,
+    "external_urls_unique": 562,
+    "crawl_local_200": 5,
+    "crawl_local_404": 1065,
+    "crawl_local_errors": 0,
+    "crawl_production_portal_200": 5,
+    "crawl_production_portal_404": 1065,
+    "crawl_production_portal_errors": 0,
+    "external_200": 448,
+    "external_403": 21,
+    "external_404": 6,
+    "external_errors": 87,
+    "quarantine_entries": 13150,
+    "quarantine_ids_checked": 13150,
+    "quarantine_literals_checked": 68436,
+    "quarantine_fingerprints_checked": 13150,
+    "quarantine_public_hits": 0,
+    "historical_candidates_checked": 57,
+    "historical_public_hits": 0,
+    "visual_renderings": 8,
+    "visual_overflow_failures": 0
+  },
+  "hashes": {
+    "inventario_csv": "a530dbbdefc71a6498e30dc457772eb92c1b699ba8f26bece214e674489dfbd2",
+    "crawl_local_csv": "883e4a0b472ca00611da2af0a4c5aaa15254c7f0f0b4ca47016a7f246d7c970d",
+    "crawl_producao_csv": "bbcf6ed063cf810659482fcdb70c6fcc9b9111dade122a53e9a46d990ce3822a",
+    "quarantine_source": "cb9ae22b8932ee8487606b8db2cb033900b5cacb8b42a3a3036f396a88f7a032",
+    "quarantine_checks": "acbc8b6d3f116afef2d274da57848a74b085a043a2bd5bb3e9cda68c742171b6",
+    "historical_checks": "beb2ac41127976cc2f2618f9ce994036e0f944d5f2ba0b41312990fbf57f3311"
+  },
+  "production_body_hashes_lf": {
+    "index_html_and_root": "f3f84f1276d7dfb911624c02ed8a56891473d60cc41d18481321254611e53368",
+    "404_html": "07e4f9f163f5653ca81949a694ba17f00d8416bcdb84f13fafbb7f5d154d13e7",
+    "llms_txt": "08f53be6f0f48b242d6d82bc41ccf287ecace2088813b58f9c1f2d5205f0dd07",
+    "robots_txt": "331ea9090db0c9f6f597bd9840fd5b171830f6e0b3ba1cb24dfa91f0c95aedc1"
+  },
+  "deliverables": [
+    "inventario.csv",
+    "crawl_local.csv",
+    "crawl_producao.csv",
+    "ledger.csv",
+    "revisao.md",
+    "final.json"
+  ],
+  "generated_at": "2026-07-13T07:58:00-03:00"
+}

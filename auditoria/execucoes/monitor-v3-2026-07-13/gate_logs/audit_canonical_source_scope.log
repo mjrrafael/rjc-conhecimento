@@ -1,0 +1,12 @@
+command=["C:\\Users\\rafae\\AppData\\Local\\Programs\\Python\\Python312\\python.exe", "-B", "scripts/audit_canonical_source_scope.py"]
+started_at=2026-07-13T08:25:00.431163-03:00
+finished_at=2026-07-13T08:25:00.583673-03:00
+exit_code=1
+timed_out=false
+
+[stdout]
+audit_canonical_source_scope: FAIL
+- linhas canônicas/referenciadas sem URL/recibo/hash material=33942
+
+
+[stderr]

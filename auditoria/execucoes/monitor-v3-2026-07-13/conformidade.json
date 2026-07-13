@@ -1,0 +1,31 @@
+{
+  "schema": "rjc-monitor-conformidade-v3",
+  "run_started_at": "2026-07-13T07:32:32-03:00",
+  "timezone": "America/Sao_Paulo",
+  "baseline_sha": "f814f80efbab84bf43b671bf544c4678d4dda82a",
+  "candidate_reviewed_sha": "074bff85c7c560386ca0ed7f0802d4e896534571",
+  "candidate_current_sha_before_evidence_commit": "3d27f5a71f23358b32673afd767d7ef9295aa0a9",
+  "status": "BLOQUEADO TEMPORÁRIO",
+  "success": false,
+  "production_safe": true,
+  "publication_authorized": false,
+  "waves": {"baseline_reviewers": 3, "candidate_reviewers": 3, "certifiable_independence": false},
+  "native_http_receipts": 0,
+  "trusted_roots": 0,
+  "blocking_counts": {
+    "cards_without_field_provenance": 9726,
+    "synthetic_date_cards": 9726,
+    "icms_cards_without_internalization_evidence": 9611,
+    "quarantine_without_fingerprint": 13150,
+    "minimum_source_roots_without_native_receipt": 94
+  },
+  "failures": [
+    "ausência de recibos nativos confrontáveis",
+    "ausência das duas raízes independentes preexistentes",
+    "isolamento negativo dos revisores não demonstrável",
+    "Onda 2 não revisou o SHA corrente",
+    "corpus jurídico legado sem prova material",
+    "candidato não publicado"
+  ],
+  "decision": "não aprovar, não mesclar e não publicar"
+}

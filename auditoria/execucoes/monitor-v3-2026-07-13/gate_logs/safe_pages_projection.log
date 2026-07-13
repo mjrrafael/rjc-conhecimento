@@ -1,0 +1,32 @@
+command=["C:\\Users\\rafae\\AppData\\Local\\Programs\\Python\\Python312\\python.exe", "-B", "scripts/audit_safe_pages_projection.py", "C:\\Users\\rafae\\AppData\\Local\\Temp\\rjc-safe-pages-3q94g5ai"]
+started_at=2026-07-13T08:25:04.076448-03:00
+finished_at=2026-07-13T08:25:07.902108-03:00
+exit_code=1
+timed_out=false
+
+[stdout]
+Falhas na projeção segura:
+- inventário divergente: faltam=35 sobram=0
+- hash divergente: auditoria/execucoes/monitor-v3-2026-07-13/gate_logs/audit_benefit_cards.log
+- hash divergente: auditoria/execucoes/monitor-v3-2026-07-13/gate_logs/audit_canonical_source_scope.log
+- hash divergente: auditoria/execucoes/monitor-v3-2026-07-13/gate_logs/audit_card_scope_visible.log
+- hash divergente: auditoria/execucoes/monitor-v3-2026-07-13/gate_logs/audit_divergence_html_json_search.log
+- hash divergente: auditoria/execucoes/monitor-v3-2026-07-13/gate_logs/audit_editorial_date_per_card.log
+- hash divergente: auditoria/execucoes/monitor-v3-2026-07-13/gate_logs/audit_field_provenance.log
+- hash divergente: auditoria/execucoes/monitor-v3-2026-07-13/gate_logs/audit_full_content_coverage.log
+- hash divergente: auditoria/execucoes/monitor-v3-2026-07-13/gate_logs/audit_http_platform_receipts.log
+- hash divergente: auditoria/execucoes/monitor-v3-2026-07-13/gate_logs/audit_index_freshness.log
+- hash divergente: auditoria/execucoes/monitor-v3-2026-07-13/gate_logs/audit_internalization_evidence.log
+- hash divergente: auditoria/execucoes/monitor-v3-2026-07-13/gate_logs/audit_link_health.log
+- hash divergente: auditoria/execucoes/monitor-v3-2026-07-13/gate_logs/audit_link_receipts.log
+- hash divergente: auditoria/execucoes/monitor-v3-2026-07-13/gate_logs/audit_master_coverage.log
+- hash divergente: auditoria/execucoes/monitor-v3-2026-07-13/gate_logs/audit_no_keyword_inference.log
+- hash divergente: auditoria/execucoes/monitor-v3-2026-07-13/gate_logs/audit_no_synthetic_legal_dates.log
+- hash divergente: auditoria/execucoes/monitor-v3-2026-07-13/gate_logs/audit_portal.log
+- hash divergente: auditoria/execucoes/monitor-v3-2026-07-13/gate_logs/audit_public_http_hashes.log
+- hash divergente: auditoria/execucoes/monitor-v3-2026-07-13/gate_logs/audit_public_set_algebra.log
+- hash divergente: auditoria/execucoes/monitor-v3-2026-07-13/gate_logs/audit_publication.log
+- hash divergente: auditoria/execucoes/monitor-v3-2026-07-13/gate_logs/audit_quarantine_fingerprints.log
+
+
+[stderr]

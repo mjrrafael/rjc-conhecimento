@@ -1,0 +1,22 @@
+command=["C:\\Users\\rafae\\AppData\\Local\\Programs\\Python\\Python312\\python.exe", "-B", "scripts/audit_link_health.py"]
+started_at=2026-07-13T08:24:20.404618-03:00
+finished_at=2026-07-13T08:24:26.844371-03:00
+exit_code=0
+timed_out=false
+
+[stdout]
+Avisos de saúde de link (soft gate):
+- erro -> https://www3.al.es.gov.br/arquivo/documents/legislacao/html/lei105682016.html (<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)>)
+- erro -> https://www3.al.es.gov.br/arquivo/documents/legislacao/html/lei105742016.html (<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)>)
+- erro -> https://www3.al.es.gov.br/arquivo/documents/legislacao/html/lei105502016.html (<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)>)
+- erro -> https://www.sefazms.com.br/legislacao (<urlopen error [Errno 11001] getaddrinfo failed>)
+- erro -> https://www2.sefaz.es.gov.br/LegislacaoOnline/lpext.dll/InfobaseLegislacaoOnline/ricms%20-%20dec%201090-r/ricms%20-%20%EF%BF%BDndice.htm?2.0=&f=templates&fn=document-frame.htm (<urlopen error [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente>)
+- erro -> https://www2.sefaz.es.gov.br/LegislacaoOnline/lpext.dll/InfobaseLegislacaoOnline/leis/2001/lei%20n.%B0%207.000.htm?fn=document-frame.htm&f=templates&2.0 (<urlopen error [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente>)
+- erro -> https://diariooficial.rn.gov.br/dei/dorn3/documentos/00000001/20191228/670256.htm (<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'diariooficial.rn.gov.br'. (_ssl.c:1010)>)
+- erro -> https://diariooficial.rn.gov.br/dei/dorn3/documentos/00000001/20191228/670153.htm (<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'diariooficial.rn.gov.br'. (_ssl.c:1010)>)
+- erro -> https://diariooficial.rn.gov.br/dei/dorn3/documentos/00000001/20171214/594560.htm (<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'diariooficial.rn.gov.br'. (_ssl.c:1010)>)
+- erro -> https://www.sefaz.ba.gov.br/docs/inspetoria-eletronica/icms/incentivos_fiscais_orientacoes_lancamento.pdf (<urlopen error timed out>)
+Links oficiais verificados: 102 URLs únicas; nenhum 404/410 em benefício publicado.
+
+
+[stderr]

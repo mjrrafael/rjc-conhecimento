@@ -31,10 +31,14 @@ SAFE_SURFACE = {"index.html", "404.html", "robots.txt", "llms.txt"}
 
 
 def resolve_run() -> Path:
+    allowed = (ROOT / "auditoria" / "execucoes").resolve()
     configured = os.environ.get("RJC_MONITOR_RUN", "").strip()
     if configured:
         path = Path(configured)
-        return path if path.is_absolute() else ROOT / path
+        resolved = (path if path.is_absolute() else ROOT / path).resolve()
+        if not resolved.is_relative_to(allowed) or not resolved.name.startswith("monitor-v3-"):
+            raise RuntimeError("RJC_MONITOR_RUN fora de auditoria/execucoes/monitor-v3-*")
+        return resolved
     candidates = sorted(path for path in (ROOT / "auditoria" / "execucoes").glob("monitor-v3-*") if path.is_dir())
     if not candidates:
         raise RuntimeError("nenhuma execução monitor-v3 encontrada")
@@ -127,7 +131,15 @@ def gate_field_provenance() -> list[str]:
         count += 1
         provenance = provenance_items(card)
         card_id = str(card.get("id") or f"{path.relative_to(ROOT)}:{locator}")
-        for field in sorted(LEGAL_FIELDS & card.keys()):
+        material_fields = {
+            field for field in LEGAL_FIELDS & card.keys()
+            if card.get(field) not in (None, "", [], {})
+        }
+        if not material_fields:
+            add_limited(errors, f"{card_id}: publishable sem qualquer campo jurídico material")
+        if not provenance:
+            add_limited(errors, f"{card_id}: field_provenance ausente/vazio")
+        for field in sorted(material_fields):
             value = card.get(field)
             if value in (None, "", [], {}):
                 continue
@@ -164,6 +176,9 @@ def gate_no_synthetic_legal_dates() -> list[str]:
     for path, locator, card in public_cards():
         provenance = provenance_items(card)
         card_id = str(card.get("id") or f"{path.relative_to(ROOT)}:{locator}")
+        missing_dates = DATE_FIELDS - set(card)
+        if missing_dates:
+            add_limited(errors, f"{card_id}: campos temporais ausentes={sorted(missing_dates)}")
         for field in DATE_FIELDS:
             value = card.get(field)
             if value in (None, "", "AUSENTE", "INDETERMINADO", "NÃO_APLICÁVEL"):
@@ -207,6 +222,11 @@ def gate_verification_receipts() -> list[str]:
             add_limited(errors, f"{card_id}: recibo material incompleto/reprovado")
         if not material_hash(receipt.get("previous_card_sha256")) or not material_hash(receipt.get("final_card_sha256")):
             add_limited(errors, f"{card_id}: hashes anterior/final inválidos")
+        current_card_sha = hashlib.sha256(
+            json.dumps(card, ensure_ascii=False, sort_keys=True, separators=(",", ":")).encode("utf-8")
+        ).hexdigest()
+        if receipt.get("final_card_sha256") != current_card_sha:
+            add_limited(errors, f"{card_id}: hash final do recibo não corresponde ao card auditado")
         ids = receipt.get("http_receipt_ids")
         if not isinstance(ids, list) or len(set(map(str, ids))) < 2:
             add_limited(errors, f"{card_id}: menos de duas capturas independentes")
@@ -295,10 +315,15 @@ def gate_internalization_evidence() -> list[str]:
             add_limited(errors, f"{card_id}: internalização não comprovada")
             continue
         evidence = card.get("internalization_evidence") or card.get("internalizacao_evidencia")
-        required = {"act", "authority", "jurisdiction", "benefit", "final_url", "body_sha256", "locator"}
+        required = {"card_id", "act", "authority", "jurisdiction", "benefit", "final_url", "body_sha256", "locator"}
         if not isinstance(evidence, dict) or required - set(evidence):
             add_limited(errors, f"{card_id}: prova específica de internalização incompleta")
             continue
+        if str(evidence.get("card_id")) != card_id:
+            add_limited(errors, f"{card_id}: prova de internalização não vincula o card")
+        expected_benefit = str(card.get("benefit") or card.get("beneficio") or card.get("benefit_type") or "").strip().casefold()
+        if not expected_benefit or str(evidence.get("benefit", "")).strip().casefold() != expected_benefit:
+            add_limited(errors, f"{card_id}: prova de internalização não vincula o benefício")
         if str(evidence.get("jurisdiction", "")).upper() != jurisdiction or not official_url(evidence.get("final_url")) or not material_hash(evidence.get("body_sha256")):
             add_limited(errors, f"{card_id}: prova de internalização não vincula UF/ato/hash")
     return errors
@@ -336,6 +361,20 @@ def gate_full_content_coverage() -> list[str]:
     unsafe_status = [row for row in rows if row.get("status") not in {"OK", "CORRIGIDO", "QUARENTENA"}]
     if unsafe_status:
         errors.append(f"itens sem estado terminal seguro={len(unsafe_status)}")
+    if len(inventory) != len(rows):
+        errors.append(f"chaves duplicadas no inventário={len(rows)-len(inventory)}")
+    bad_hashes = 0
+    for row in rows:
+        rel, recorded = row.get("caminho_ou_id", ""), row.get("sha256", "")
+        target = ROOT / rel
+        if not target.is_file():
+            continue
+        if recorded == "SELF_REFERENTIAL_GIT_TREE" and target == inventory_path:
+            continue
+        if not material_hash(recorded) or recorded.casefold() != canonical_sha(target):
+            bad_hashes += 1
+    if bad_hashes:
+        errors.append(f"hashes de inventário ausentes/divergentes={bad_hashes}")
     for rel in ("_config.yml", "index.html", "404.html", "robots.txt", "llms.txt"):
         if rel not in filesystem:
             errors.append(f"superfície obrigatória ausente: {rel}")
@@ -363,6 +402,14 @@ def gate_canonical_source_scope() -> list[str]:
     incomplete = [row for row in rows if any(not str(row.get(field, "")).strip() for field in required)]
     if incomplete:
         errors.append(f"linhas canônicas/referenciadas sem URL/recibo/hash material={len(incomplete)}")
+    receipts = native_receipts_by_id()
+    unbound = 0
+    for row in rows:
+        receipt = receipts.get(str(row.get("http_receipt_id", "")))
+        if not receipt or receipt.get("body_sha256") != row.get("sha256_corpo"):
+            unbound += 1
+    if unbound:
+        errors.append(f"linhas sem vínculo ao bundle HTTP nativo={unbound}")
     return errors
 
 
@@ -370,10 +417,10 @@ def emitted_surface() -> dict[str, str]:
     site = Path(os.environ.get("RJC_PORTAL_SITE", "")) if os.environ.get("RJC_PORTAL_SITE") else None
     base = site if site and site.exists() else ROOT
     result: dict[str, str] = {}
-    for rel in SAFE_SURFACE:
-        path = base / rel
+    candidates = sorted(base.rglob("*")) if site and site.exists() else [base / rel for rel in SAFE_SURFACE]
+    for path in candidates:
         if path.is_file():
-            result[rel] = path.read_text(encoding="utf-8", errors="ignore")
+            result[path.relative_to(base).as_posix()] = path.read_text(encoding="utf-8", errors="ignore")
     return result
 
 
@@ -416,6 +463,12 @@ def gate_quarantine_fingerprints() -> list[str]:
     public_words = normalized_words(joined)
     public_shingles = {tuple(public_words[i:i+8]) for i in range(max(0, len(public_words)-7))}
     for path, locator, item in quarantine_records():
+        missing_fingerprints = [
+            field for field in ("id", "sha256", "source_fingerprint")
+            if not str(item.get(field, "")).strip()
+        ]
+        if missing_fingerprints or not material_hash(item.get("source_fingerprint")):
+            add_limited(errors, f"{path.relative_to(ROOT)}:{locator}: fingerprints materiais ausentes/inválidos")
         for field in ("id", "sha256", "source_fingerprint"):
             token = str(item.get(field, "")).strip().casefold()
             if len(token) >= 8 and token in joined:

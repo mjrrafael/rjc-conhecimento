@@ -1,0 +1,12 @@
+command=["C:\\Users\\rafae\\AppData\\Local\\Programs\\Python\\Python312\\python.exe", "-B", "scripts/audit_http_platform_receipts.py"]
+started_at=2026-07-13T08:24:57.408059-03:00
+finished_at=2026-07-13T08:24:57.482059-03:00
+exit_code=1
+timed_out=false
+
+[stdout]
+audit_http_platform_receipts: FAIL
+- recibos HTTP nativos confrontáveis indisponíveis
+
+
+[stderr]

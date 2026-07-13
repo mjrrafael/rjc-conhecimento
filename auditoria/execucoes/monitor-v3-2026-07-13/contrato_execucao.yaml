@@ -1,0 +1,54 @@
+skill: revisar-ate-concluir
+versao_contrato: 2026-07-13
+dominio: governanca-tributaria
+risco_padrao: alto
+baseline_sha: f814f80efbab84bf43b671bf544c4678d4dda82a
+timezone: America/Sao_Paulo
+artefatos_obrigatorios:
+  - workflow.md
+  - ledger_verificacao.csv
+  - fontes_lidas.csv
+  - achados_e_pendencias.md
+  - revisao_adversarial.md
+  - relatorio_final.md
+  - escopo_fontes_canonico.yaml
+  - matriz_fontes_canonicas.csv
+  - inventario_integral.csv
+  - inventory_exclusions.csv
+  - subagents.json
+  - subagents_platform_receipts.json
+  - http_platform_receipts.json
+  - gate_invariant_matrix.csv
+  - gate_mutation_results.json
+  - manifesto_diff.csv
+gates:
+  - id: G0
+    nome: baseline_e_isolamento
+    artefatos: [workflow.md, ledger_verificacao.csv]
+  - id: G1
+    nome: fontes_e_inventario_integral
+    artefatos: [escopo_fontes_canonico.yaml, matriz_fontes_canonicas.csv, inventario_integral.csv, inventory_exclusions.csv, fontes_lidas.csv]
+  - id: G2
+    nome: execucao_com_evidencia
+    artefatos: [ledger_verificacao.csv, achados_e_pendencias.md]
+  - id: G3
+    nome: revisao_adversarial_em_duas_ondas
+    artefatos: [revisao_adversarial.md, subagents.json, subagents_platform_receipts.json]
+  - id: G4
+    nome: hard_gates_e_publicacao
+    artefatos: [conformidade.json, gate_invariant_matrix.csv, gate_mutation_results.json, manifesto_diff.csv]
+  - id: G5
+    nome: fechamento_literal
+    artefatos: [relatorio_final.md]
+checks_obrigatorios:
+  - Definir criterios falsificaveis antes da execucao.
+  - Reconciliar Git, filesystem, geradores, build e producao sem amostragem.
+  - Reconstruir a matriz fixa das 27 UFs e familias federais.
+  - Revalidar integralmente a projecao humana e de IA.
+  - Executar duas ondas cegas de tres revisores.
+  - Exigir gates materiais, duas raizes de confianca e recibos nativos.
+  - Fechar somente nos estados literais admitidos pela automacao.
+camadas_manuais:
+  - verdade material das fontes juridicas
+  - cobertura integral do inventario e da producao
+  - independencia real dos revisores e runners

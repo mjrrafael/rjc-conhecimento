@@ -1,0 +1,51 @@
+command=["C:\\Users\\rafae\\AppData\\Local\\Programs\\Python\\Python312\\python.exe", "-B", "scripts/audit_verification_receipts.py"]
+started_at=2026-07-13T08:24:56.024261-03:00
+finished_at=2026-07-13T08:24:57.407059-03:00
+exit_code=1
+timed_out=false
+
+[stdout]
+audit_verification_receipts: FAIL
+- ba-4ea3d188bb54: recibo de verificação ausente
+- ba-b9748c8ac454: recibo de verificação ausente
+- ba-8ae0cde8886c: recibo de verificação ausente
+- ba-d5aad7dc6b0a: recibo de verificação ausente
+- ba-b6f8d5563474: recibo de verificação ausente
+- ba-06000336d842: recibo de verificação ausente
+- ba-df8c8b4892de: recibo de verificação ausente
+- ba-a40743414355: recibo de verificação ausente
+- ba-c9201d734184: recibo de verificação ausente
+- ba-5ba09ff7e4d6: recibo de verificação ausente
+- ba-402caaafbfe3: recibo de verificação ausente
+- ba-7e096b2daff7: recibo de verificação ausente
+- ba-069afe75d142: recibo de verificação ausente
+- ba-61b23645a448: recibo de verificação ausente
+- ba-c0b1a558bc6f: recibo de verificação ausente
+- ba-6ed05e5eba2a: recibo de verificação ausente
+- ba-01215c5c6e30: recibo de verificação ausente
+- ba-151a0a0da2be: recibo de verificação ausente
+- ba-bb6ac4658be8: recibo de verificação ausente
+- ba-f8db1682482c: recibo de verificação ausente
+- ba-57b02fba4948: recibo de verificação ausente
+- ba-32bfbd914caf: recibo de verificação ausente
+- ba-b206d372b7e6: recibo de verificação ausente
+- ba-0d20d273e347: recibo de verificação ausente
+- ba-4e6383b194d4: recibo de verificação ausente
+- ba-aab777a63c7f: recibo de verificação ausente
+- ba-66193b941056: recibo de verificação ausente
+- ba-f52d31f5e105: recibo de verificação ausente
+- ba-84a70228158c: recibo de verificação ausente
+- ba-105283074478: recibo de verificação ausente
+- ba-6a47f9398c65: recibo de verificação ausente
+- ba-982c5bf30deb: recibo de verificação ausente
+- ba-da32f3a58926: recibo de verificação ausente
+- ba-dcba5fc1bc59: recibo de verificação ausente
+- ba-bc0a27488a79: recibo de verificação ausente
+- ba-f4ca67135e24: recibo de verificação ausente
+- ba-9d551a767be3: recibo de verificação ausente
+- ba-fa6be2dfd8a5: recibo de verificação ausente
+- ba-0c588e6d0e78: recibo de verificação ausente
+- ba-c94f1a5dabf0: recibo de verificação ausente
+
+
+[stderr]
