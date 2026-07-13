@@ -1,0 +1,14 @@
+command=["C:\\Users\\rafae\\AppData\\Local\\Programs\\Python\\Python312\\python.exe", "-B", "scripts/audit_full_content_coverage.py"]
+started_at=2026-07-13T08:25:00.255490-03:00
+finished_at=2026-07-13T08:25:00.431163-03:00
+exit_code=1
+timed_out=false
+
+[stdout]
+audit_full_content_coverage: FAIL
+- Git/filesystem divergentes: faltam=0 sobram=104
+- inventário/filesystem divergentes: faltam=35 sobram=0
+- itens sem estado terminal seguro=69
+
+
+[stderr]

@@ -1,0 +1,79 @@
+{
+  "schema": "rjc-revisor-aplicacao-v1",
+  "checked_at": "2026-07-13T08:29:00-03:00",
+  "worktree": "C:\\Users\\rafae\\Documents\\Codex\\2026-06-14\\pesquisa-na-mem-ria-profunda-l\\worktrees\\rjc-monitor-2026-07-13-0732",
+  "contract": "C:\\Users\\rafae\\Documents\\Codex\\2026-06-14\\pesquisa-na-mem-ria-profunda-l\\worktrees\\rjc-monitor-2026-07-13-0732\\auditoria\\execucoes\\monitor-v3-2026-07-13\\contrato_execucao.yaml",
+  "status": "NÃO CONFORME",
+  "domain_status_detected": "BLOQUEADO TEMPORÁRIO",
+  "decision": "NÃO APROVAR; manter BLOQUEADO TEMPORÁRIO; não mesclar e não publicar",
+  "success_criteria_met": false,
+  "baseline_sha": "f814f80efbab84bf43b671bf544c4678d4dda82a",
+  "candidate_reviewed_sha": "074bff85c7c560386ca0ed7f0802d4e896534571",
+  "head_sha": "3d27f5a71f23358b32673afd767d7ef9295aa0a9",
+  "critical_failures": [
+    {"id": "CF-01", "gate": "G4", "finding": "manifesto_diff.csv ausente", "classification": "NÃO EXECUTADO"},
+    {"id": "CF-02", "gate": "G3", "finding": "Onda 2 revisou SHA anterior ao HEAD final", "classification": "INCONSISTENTE"},
+    {"id": "CF-03", "gate": "G3", "finding": "independência não certificável; recibos e prova negativa ausentes", "classification": "NÃO COMPROVADO"},
+    {"id": "CF-04", "gate": "G1/G4", "finding": "0 recibos HTTP nativos, 0 raízes de confiança e 0/94 raízes mínimas completas", "classification": "NÃO EXECUTADO"},
+    {"id": "CF-05", "gate": "G4", "finding": "69 células bloqueadas, 0/138 mutantes certificados e 16/17 bypasses aceitos na revisão IA", "classification": "NÃO EXECUTADO"},
+    {"id": "CF-06", "gate": "G1/G2", "finding": "Git/filesystem/inventário não reconciliados; 104 extras, 35 faltantes do inventário e 69 A_VALIDAR", "classification": "INCONSISTENTE"},
+    {"id": "CF-07", "gate": "G4", "finding": "workflow omite audit_publication e audit_public_http_hashes", "classification": "FRACO"},
+    {"id": "CF-08", "gate": "G4/G5", "finding": "candidato sem CI/Pages/publicação/hash/refetch pós-deploy", "classification": "NÃO EXECUTADO"},
+    {"id": "CF-09", "gate": "G3/G4", "finding": "seis arquivos de código/workflow têm alterações pós-HEAD não revisadas (86 inserções, 10 remoções)", "classification": "INCONSISTENTE"}
+  ],
+  "executed_items": [
+    {"id": "EX-01", "item": "baseline e isolamento por worktree", "result": "baseline/merge-base exatos"},
+    {"id": "EX-02", "item": "duas ondas de três papéis", "result": "seis artefatos finais e vereditos bloqueantes; independência não certificada"},
+    {"id": "EX-03", "item": "enumeração mínima canônica", "result": "81 classes estaduais + 13 federais enumeradas"},
+    {"id": "EX-04", "item": "execução fail-closed de gates", "result": "33 checks; 16 PASS, 17 FAIL, 0 timeout na rodada final"},
+    {"id": "EX-05", "item": "confronto da superfície neutra atual", "result": "4/4 hashes canônicos locais batem com a observação HTTP do baseline"},
+    {"id": "EX-06", "item": "fechamento literal", "result": "BLOQUEADO TEMPORÁRIO coerente com oito pendências"}
+  ],
+  "not_executed_items": [
+    "manifesto_diff.csv e G4 completo",
+    "independência nativa e prova negativa entre revisores",
+    "duas raízes administrativas e dois runners confiáveis",
+    "138 mutantes certificados por célula",
+    "Onda 2 sobre o HEAD final",
+    "reconciliação integral Git/filesystem/inventário/build/produção",
+    "recibos nativos das 94 raízes e do universo referenciado",
+    "CI dos 13 gates, publicação, hashes e refetch pós-deploy"
+  ],
+  "gate_assessment": {
+    "G0": {"status": "EXECUTADO", "note": "baseline exato e worktree separado"},
+    "G1": {"status": "INCONSISTENTE", "note": "inventário e fontes existem, mas cobertura/recibos não fecham"},
+    "G2": {"status": "EXECUTADO COM BLOQUEIOS", "note": "ledger e achados registram falhas materiais"},
+    "G3": {"status": "INCONSISTENTE", "note": "duas ondas existem, mas independência e SHA final não são provados"},
+    "G4": {"status": "NÃO EXECUTADO", "note": "manifesto ausente; raízes/mutações/publicação incompletas"},
+    "G5": {"status": "EXECUTADO", "note": "fechamento BLOQUEADO TEMPORÁRIO é coerente"}
+  },
+  "manual_rederivations": [
+    {"chain": "SHA", "raw_source": "Git", "result": "baseline bateu; SHA da Onda 2 divergiu do HEAD"},
+    {"chain": "G4", "raw_source": "contrato + filesystem", "result": "manifesto ausente"},
+    {"chain": "independência", "raw_source": "subagents + recibos", "result": "seis tasks; certificação ausente"},
+    {"chain": "raízes/gates", "raw_source": "matrizes + mutações", "result": "0 recibos, 0/94 raízes completas, 0/138 mutantes certificados"},
+    {"chain": "cobertura", "raw_source": "git ls-tree + filesystem + inventário", "result": "104 extras, 35 faltantes, 69 A_VALIDAR"},
+    {"chain": "produção", "raw_source": "arquivos locais + observação HTTP", "result": "4/4 hashes do baseline bateram; candidato não provado"}
+  ],
+  "deterministic_verifier": {
+    "version": "3.1.1",
+    "exit_code": 1,
+    "conforme": false,
+    "status_final_detected": "BLOQUEADO",
+    "open_ledger_items": 8,
+    "substantive_blocker": "manifesto_diff.csv ausente e G4 falho",
+    "schema_noise_note": "o verificador também marcou o schema não canônico de fontes_lidas.csv; isso não é a base única do veredito"
+  },
+  "production_assessment": {
+    "current_baseline_surface_hashes_match": true,
+    "native_receipt": false,
+    "candidate_deployed": false,
+    "post_deploy_refetch_complete": false
+  },
+  "terminal_worktree_state": {
+    "dirty_code_files": 6,
+    "uncommitted_insertions": 86,
+    "uncommitted_deletions": 10,
+    "exact_sha_represents_current_executable_state": false
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "artifacts": {
+    "fontes_lidas.csv": {
+      "bytes": 436332,
+      "path": "C:\\Users\\rafae\\AppData\\Local\\Temp\\rjc-monitor-2026-07-13-wave1\\fontes\\fontes_lidas.csv",
+      "sha256": "349f28b86bfe8fcc4d32e82088b701900ee49e3dd43ded7a164c65c13fef5ff9"
+    },
+    "inventario.csv": {
+      "bytes": 8499490,
+      "path": "C:\\Users\\rafae\\AppData\\Local\\Temp\\rjc-monitor-2026-07-13-wave1\\fontes\\inventario.csv",
+      "sha256": "2729cbf6837a3dbe47fd9f4c2a782c41227cb78c89b3cf00537d48b481f6fd23"
+    },
+    "ledger.csv": {
+      "bytes": 5060847,
+      "path": "C:\\Users\\rafae\\AppData\\Local\\Temp\\rjc-monitor-2026-07-13-wave1\\fontes\\ledger.csv",
+      "sha256": "bfb891809310e7ead6a5495872af23dcb8a7e62d749d58ef6eef5481cd97cb1f"
+    },
+    "matriz_fontes.csv": {
+      "bytes": 38197,
+      "path": "C:\\Users\\rafae\\AppData\\Local\\Temp\\rjc-monitor-2026-07-13-wave1\\fontes\\matriz_fontes.csv",
+      "sha256": "652e846911cdc5ccc51ee90888c5b43e168304276fc9fd777fbbc093cd14282d"
+    },
+    "revisao.md": {
+      "bytes": 4298,
+      "path": "C:\\Users\\rafae\\AppData\\Local\\Temp\\rjc-monitor-2026-07-13-wave1\\fontes\\revisao.md",
+      "sha256": "8b37f1aba138f39c068ab31fd5ff90f7b3dc4dee562c1ab370981f19f16ee2e9"
+    }
+  },
+  "baseline": "f814f80efbab84bf43b671bf544c4678d4dda82a",
+  "checks": {
+    "blind_exclusions": {
+      "data/corpus-local/uf-sealing-plan.json": "plano previo excluido por regra cega",
+      "data/master_source_coverage.json": "matriz previa excluida por regra cega",
+      "data/state_source_audit.json": "achado/auditoria previa excluida por regra cega"
+    },
+    "head_exact": true,
+    "matrix_27x3_plus_13": true,
+    "no_receipts_fabricated": true,
+    "published_100_percent": true,
+    "quarantine_100_percent": true
+  },
+  "counts": {
+    "a_revalidar": 241,
+    "baseline_files": 856,
+    "blind_excluded": 3,
+    "dates_equal_capture": 9726,
+    "explicit_past_until": 351,
+    "field_provenance_missing": 9726,
+    "hash_mismatch": 5038,
+    "hash_ok": 4385,
+    "historico": 0,
+    "internalization_missing": 9611,
+    "inventory_rows": 23732,
+    "ledger_rows": 22982,
+    "local_files_read": 853,
+    "matrix_rows": 94,
+    "published_cards": 9726,
+    "quarantine_cards": 13150,
+    "receipts_missing": 9726,
+    "source_missing": 303,
+    "sources_rows": 1068,
+    "unique_urls": 212,
+    "vigente": 9485,
+    "vigente_past_until": 217
+  },
+  "decision": "NÃO CONFORME",
+  "input_hashes": {
+    "crosswalk": "552ded43ab72c3fd94c6a92d64bdda554bc56372f668346a784070cac8878f20",
+    "quarantine": "cb9ae22b8932ee8487606b8db2cb033900b5cacb8b42a3a3036f396a88f7a032",
+    "validated_benefits_py": "c515723a8ba673f3fedaf77cd4fd18d9289fac9a8d6870d471d2dd4815518e60"
+  },
+  "output_dir": "C:\\Users\\rafae\\AppData\\Local\\Temp\\rjc-monitor-2026-07-13-wave1\\fontes",
+  "portal_http": {
+    "https://mjrrafael.github.io/rjc-conhecimento/": 200,
+    "https://mjrrafael.github.io/rjc-conhecimento/data/benefits_crosswalk.json": 404,
+    "https://mjrrafael.github.io/rjc-conhecimento/data/benefits_quarantine.json": 404
+  },
+  "reason": "sem recibo nativo confrontável; field_provenance ausente; datas sem prova; fontes divergentes",
+  "run_at": "2026-07-13T07:58:57-03:00",
+  "schema": "rjc-wave1-fontes-v1",
+  "self_hash_note": "hash externo apos escrita",
+  "status": "BLOQUEADO",
+  "worktree": "C:\\Users\\rafae\\Documents\\Codex\\2026-06-14\\pesquisa-na-mem-ria-profunda-l\\worktrees\\rjc-monitor-2026-07-13-wave1-fontes"
+}

@@ -1,0 +1,97 @@
+{
+  "schema": "rjc-wave2-fontes-blind-review-v1",
+  "candidate": "074bff85c7c560386ca0ed7f0802d4e896534571",
+  "run_at": "2026-07-13T08:15:46-03:00",
+  "decision": "NÃO CONFORME",
+  "status": "BLOQUEADO",
+  "counts": {
+    "cards": 9726,
+    "status_vigente": 9485,
+    "synthetic_dates": 9726,
+    "missing_provenance": 9726,
+    "missing_receipt": 9726,
+    "missing_http2": 9726,
+    "state_icms": 9611,
+    "missing_internalization": 9611,
+    "hash_mismatch": 5038,
+    "excerpt_match": 8879,
+    "excerpt_mismatch": 544,
+    "status_a_revalidar": 241,
+    "revalidate_publishable": 241,
+    "hash_match": 4385,
+    "root_absent": 303,
+    "quarantine": 13150,
+    "q_missing_fingerprint": 13150,
+    "q_material": 13150,
+    "q_bad_audience": 13150,
+    "manifest_total": 154,
+    "manifest_mismatch": 125,
+    "manifest_match": 29,
+    "matrix_total": 94,
+    "matrix_ok": 0
+  },
+  "inventory_files": 862,
+  "local_sources_read": 129,
+  "mutants": {
+    "classes": {
+      "dates": 2,
+      "field_provenance": 2,
+      "receipts": 2,
+      "internalization": 2,
+      "native_attestation": 2,
+      "transition_rt": 2,
+      "canonical_source_scope": 2,
+      "quarantine_fingerprints": 2,
+      "run_root_isolation": 2
+    },
+    "total": 18,
+    "killed": 18,
+    "temp_root": "C:\\Users\\rafae\\AppData\\Local\\Temp\\rjc-fontes-mutants-rfon81ar",
+    "removed": true
+  },
+  "blockers": [
+    "recibos nativos ausentes em 9.726 cards",
+    "raízes canônicas 0/94",
+    "field_provenance ausente em 9.726 cards",
+    "internalização ausente em 9.611 cards",
+    "5.038 hashes divergentes e 303 raízes locais ausentes",
+    "isolamento RJC_MONITOR_RUN falha em 2/2 travessias"
+  ],
+  "chains": [
+    "cadeia re-derivada: cards/datas | fonte crua: data/benefits_crosswalk.json | resultado: 9726/9726 copiam captured_on em publicação/vigência/eficácia e não têm field_provenance.",
+    "cadeia re-derivada: recibos | fonte crua: scripts/validated_benefits.py + 9726 cards | resultado: 9726 sem recibo, 9726 sem duas capturas e bloqueio externo incondicional.",
+    "cadeia re-derivada: internalização | fonte crua: data/benefits_crosswalk.json | resultado: 9611/9611 cards ICMS estaduais sem prova.",
+    "cadeia re-derivada: raízes | fonte crua: 129 fontes locais lidas | resultado: hash match=4385, mismatch=5038, raiz ausente=303, trecho diverge=544.",
+    "cadeia re-derivada: quarentena | fonte crua: data/benefits_quarantine.json | resultado: 13150/13150 sem fingerprint e com conteúdo material.",
+    "cadeia re-derivada: matriz | fonte crua: git ls-tree + inputs autorizados | resultado: 0/94 classes nativas exatas.",
+    "cadeia re-derivada: isolamento | fonte crua: scripts/build_diff_manifest.py | resultado: 2/2 travessias relativas escreveram fora da raiz do repositório temporário.",
+    "cadeia re-derivada: produção | fonte crua: refetch anônimo já realizado | resultado: portal neutro 200; superfícies tributárias testadas 404."
+  ],
+  "outputs": {
+    "inventario.csv": {
+      "path": "C:\\Users\\rafae\\AppData\\Local\\Temp\\rjc-monitor-2026-07-13-wave2\\fontes\\inventario.csv",
+      "sha256": "4fc2ab51db0322b80311e76c97a51a294d0bfb4561e3e6be8e63406d6481fa50",
+      "bytes": 180740
+    },
+    "matriz_fontes.csv": {
+      "path": "C:\\Users\\rafae\\AppData\\Local\\Temp\\rjc-monitor-2026-07-13-wave2\\fontes\\matriz_fontes.csv",
+      "sha256": "4080cda3f6f12bfd60dd8597c47b4e18d6a12693c455f404294bb7d18f559b5a",
+      "bytes": 348901
+    },
+    "ledger.csv": {
+      "path": "C:\\Users\\rafae\\AppData\\Local\\Temp\\rjc-monitor-2026-07-13-wave2\\fontes\\ledger.csv",
+      "sha256": "f9b5622e057d25c4fd8126080923365f4ac3a573e9e86789e37f78d5437e68b9",
+      "bytes": 2561
+    },
+    "fontes_lidas.csv": {
+      "path": "C:\\Users\\rafae\\AppData\\Local\\Temp\\rjc-monitor-2026-07-13-wave2\\fontes\\fontes_lidas.csv",
+      "sha256": "1a572a2a6884a4b658f5eefbd96578d6410f5eb63ffaa35481c261ab114db486",
+      "bytes": 49981
+    },
+    "revisao.md": {
+      "path": "C:\\Users\\rafae\\AppData\\Local\\Temp\\rjc-monitor-2026-07-13-wave2\\fontes\\revisao.md",
+      "sha256": "79587728fedfee68bab38b2810653339c79b72ac0e2e4e68a2bcc30f31a63262",
+      "bytes": 2723
+    }
+  }
+}

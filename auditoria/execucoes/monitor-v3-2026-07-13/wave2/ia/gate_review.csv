@@ -1,0 +1,14 @@
+gate,candidate_status,ci_enforced,baseline_fixture,mutants_executed,mutants_detected,bypass_aceito,veredito_material
+audit_field_provenance,FAIL,SIM,PASS,2,2,"publishable sem campos legais passa",NAO_CONFORME
+audit_no_synthetic_legal_dates,FAIL,SIM,"FAIL por verificado_em=TODAY no gerador",2,2,"publishable sem campos de data passa quando isolado do defeito estático",NAO_CONFORME
+audit_verification_receipts,FAIL,SIM,PASS,2,2,"hashes arbitrários não são vinculados ao card real",NAO_CONFORME
+audit_http_platform_receipts,FAIL,SIM,PASS,2,2,"objeto sintético com formato correto passa sem raiz nativa",NAO_CONFORME
+audit_link_receipts,FAIL,SIM,PASS,2,2,"duas IDs com mesmo hash/corpo passam sem independência material",NAO_CONFORME
+audit_internalization_evidence,FAIL,SIM,PASS,2,2,"benefício genérico não é vinculado ao card",NAO_CONFORME
+audit_full_content_coverage,BLOQUEADO,SIM,PASS,2,2,"inventário mínimo sem hashes passa; execução integral violaria escopo proibido",BLOQUEADO
+audit_canonical_source_scope,FAIL,SIM,PASS,2,2,"URLs; hashes e recibos fictícios não são cruzados com bundle nativo",NAO_CONFORME
+audit_public_set_algebra,FAIL,SIM,PASS,2,2,"arquivo público extra é ignorado pelo gate",NAO_CONFORME
+audit_quarantine_fingerprints,FAIL,SIM,PASS,2,2,"registro a_validar sem id/hash/source_fingerprint passa",NAO_CONFORME
+audit_subagent_independence,FAIL,SIM,PASS,2,2,"JSON moldado passa sem assinatura/export nativo validado",NAO_CONFORME
+audit_publication,FAIL,NAO,PASS,2,2,"prova moldada passa sem consulta à plataforma",NAO_CONFORME
+audit_public_http_hashes,FAIL,NAO,PASS,2,2,"um artefato autodeclarado basta; cobertura pública não é fechada",NAO_CONFORME

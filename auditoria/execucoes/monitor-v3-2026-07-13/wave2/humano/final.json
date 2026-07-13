@@ -1,0 +1,44 @@
+{
+  "schema": "rjc-wave2-human-portal-review-v1",
+  "candidate_sha": "074bff85c7c560386ca0ed7f0802d4e896534571",
+  "candidate_tree": "cd1858ccdabb600d5d91545adbff88c4932986a8",
+  "worktree": "C:\\Users\\rafae\\Documents\\Codex\\2026-06-14\\pesquisa-na-mem-ria-profunda-l\\worktrees\\rjc-monitor-2026-07-13-wave2-humano",
+  "read_only": true,
+  "inventory": {
+    "rows": 1180,
+    "files": 1039,
+    "directories": 141,
+    "tracked_missing": 0,
+    "filesystem_only": 1,
+    "prohibited_unread_files": 20
+  },
+  "pages_build": {
+    "ruby": "3.1.7",
+    "github_pages": "232",
+    "jekyll": "3.10.0",
+    "exit_code": 0,
+    "emitted_files": 4,
+    "paths": ["index.html", "404.html", "robots.txt", "llms.txt"]
+  },
+  "crawl_local": {"routes": 5, "http_executed": 0, "status": "BLOQUEADO"},
+  "crawl_production": {"routes": 5, "http_executed": 0, "status": "BLOQUEADO"},
+  "mutation_tests": {"executed": 0, "status": "BLOQUEADO"},
+  "critical_findings": [
+    "audit_publication.py não é chamado por .github/workflows/portal-audit.yml",
+    "audit_public_http_hashes.py não é chamado por .github/workflows/portal-audit.yml",
+    "recibos HTTP nativos, duas raízes administrativas e prova de isolamento não são verificáveis no escopo autorizado",
+    "crawl HTTP de produção, matriz, quarentena integral e mutantes próprios não foram concluídos antes da ordem de fechamento"
+  ],
+  "gate_counts": {"ok": 6, "a_validar": 1, "bloqueado": 7},
+  "verdict": "NÃO CONFORME",
+  "status": "BLOQUEADO",
+  "reason": "Fail-closed por ausência de recibos/raízes/isolamento verificáveis e omissão dos dois gates pós-publicação no workflow.",
+  "artifacts": [
+    "C:\\Users\\rafae\\AppData\\Local\\Temp\\rjc-monitor-2026-07-13-wave2\\humano\\inventario.csv",
+    "C:\\Users\\rafae\\AppData\\Local\\Temp\\rjc-monitor-2026-07-13-wave2\\humano\\crawl_local.csv",
+    "C:\\Users\\rafae\\AppData\\Local\\Temp\\rjc-monitor-2026-07-13-wave2\\humano\\crawl_producao.csv",
+    "C:\\Users\\rafae\\AppData\\Local\\Temp\\rjc-monitor-2026-07-13-wave2\\humano\\ledger.csv",
+    "C:\\Users\\rafae\\AppData\\Local\\Temp\\rjc-monitor-2026-07-13-wave2\\humano\\revisao.md",
+    "C:\\Users\\rafae\\AppData\\Local\\Temp\\rjc-monitor-2026-07-13-wave2\\humano\\final.json"
+  ]
+}

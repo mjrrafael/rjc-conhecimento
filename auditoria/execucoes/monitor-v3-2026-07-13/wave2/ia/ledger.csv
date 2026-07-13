@@ -1,0 +1,23 @@
+id,criterio,metodo,status,evidencia
+L01,"Commit auditado é 074bff85c7c560386ca0ed7f0802d4e896534571","HEAD + git ls-tree restrito",OK,inventario.csv
+L02,"100% do universo autorizado foi inventariado e hasheado","309 linhas reconciliadas",OK,inventario.csv
+L03,"JSON/NDJSON é estruturalmente legível","parse integral com detecção de chaves duplicadas",OK,scan_results.json
+L04,"Conjuntos fixos de 27 UFs estão completos","álgebra independente em seis datasets",OK,scan_results.json
+L05,"Benefícios publishable têm prova por campo e recibos","recontagem de 9726 cards",BLOQUEADO,"0 proveniências; 0 verification_receipt_id; 0 pares de recibos"
+L06,"Datas legais não derivam de captura","comparação item a item",CORRIGIR,"9726/9726 publicações e vigências coincidem com captured_on"
+L07,"Internalização de ICMS é comprovada","comparação de flag e objeto probatório",BLOQUEADO,"9611 flags true; 0 provas específicas"
+L08,"Fingerprints da quarentena são materiais e isolados","scan integral de 13150 registros",CORRIGIR,"0 source_fingerprint; 0 sha256; conteúdo rastreado"
+L09,"IDs NCM são únicos e endereçam um único fato","group-by integral por id",CORRIGIR,"34 ocorrências excedentes; 32 IDs repetidos; dois triplos"
+L10,"Manifestos vinculam o conteúdo atual","hash independente de 154 fontes",CORRIGIR,"66/154 hashes divergem"
+L11,"Busca; manifesto e grafo fecham","álgebra de paths; URLs e âncoras",CORRIGIR,"7 páginas do manifesto sem base na busca; colisões NCM"
+L12,"Freshness descreve o candidato atual","hash e bytes por artefato",CORRIGIR,"1 hash stale; bytes não portáveis; 4 artefatos sem prova local autorizada"
+L13,"Gerador é hermético; atômico e reproduz o candidato","rebuild em raiz aleatória isolada",BLOQUEADO,"dependência externa ausente; escrita parcial antes do FileNotFoundError"
+L14,"Produção serve apenas a projeção segura","674 GETs derivados do manifesto e endpoints protegidos",OK,"4 superfícies únicas 200; 669 URLs 404; hashes coincidentes"
+L15,"Todos os 13 gates aprovam o candidato","execução material sem relatórios anteriores",CORRIGIR,"12 FAIL; 1 BLOQUEADO; 0 PASS"
+L16,"Dois mutantes próprios por gate são rejeitados","26 mutantes em paths aleatórios",OK,"26/26 detectados"
+L17,"Gates resistem a evidência sintética e omissões","17 sondas de bypass",CORRIGIR,"16 estados falsos/omissos aceitos"
+L18,"CI executa todos os 13 gates","leitura do workflow candidato",CORRIGIR,"audit_publication e audit_public_http_hashes não são chamados"
+L19,"Recibos nativos são confrontáveis","busca somente na raiz autorizada da revisão",BLOQUEADO,"http_platform_receipts e verification_receipts nativos indisponíveis"
+L20,"Duas raízes administrativas preexistentes são comprovadas","verificação fail-closed",BLOQUEADO,"nenhum atestado nativo autorizado foi apresentado"
+L21,"Isolamento entre ondas/subagentes é provado nativamente","verificação fail-closed",BLOQUEADO,"subagents_platform_receipts e prova negativa indisponíveis"
+L22,"Seis entregáveis mínimos foram emitidos","contagem nominal",OK,"inventario.csv; superficies.csv; ledger.csv; gate_review.csv; revisao.md; final.json"

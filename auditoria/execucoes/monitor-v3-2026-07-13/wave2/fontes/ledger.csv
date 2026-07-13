@@ -1,0 +1,17 @@
+﻿id,criterio,metodo,status,evidencia,detalhe
+SRC-001,candidato único,git ls-tree/HEAD,OK,074bff85c7c560386ca0ed7f0802d4e896534571,SHA integral conferido
+SRC-002,inventário autorizado integral,git ls-tree + SHA-256,OK,C:\Users\rafae\AppData\Local\Temp\rjc-monitor-2026-07-13-wave2\fontes\inventario.csv,862 arquivos hashados
+SRC-003,matriz fixa 27x3 + BRx13,identificador nativo exato,BLOQUEADO,C:\Users\rafae\AppData\Local\Temp\rjc-monitor-2026-07-13-wave2\fontes\matriz_fontes.csv,0/94 classes; raízes nativas ausentes
+SRC-004,100% cards vigentes/históricos,checagem agregada item a item já executada,BLOQUEADO,data/benefits_crosswalk.json,total=9726;vigentes=9485;a_revalidar=241;historicos=0
+SRC-005,datas legais com prova,datas vs captured_on,BLOQUEADO,data/benefits_crosswalk.json,sintéticas/sem prova=9726
+SRC-006,field_provenance,presença por card,BLOQUEADO,data/benefits_crosswalk.json,ausente=9726
+SRC-007,recibos nativos,verification_receipt + 2 HTTP,BLOQUEADO,scripts/validated_benefits.py,sem recibo=9726;sem duas capturas=9726;atestado externo indisponível
+SRC-008,internalização estadual,prova específica ICMS,BLOQUEADO,data/benefits_crosswalk.json,não comprovada=9611/9611
+SRC-009,raízes/hash/trechos,SHA-256 + busca integral,BLOQUEADO,C:\Users\rafae\AppData\Local\Temp\rjc-monitor-2026-07-13-wave2\fontes\fontes_lidas.csv,hash_match=4385;hash_mismatch=5038;raiz_ausente=303;trecho_diverge=544
+SRC-010,manifestos curados,hash declarado vs bytes,BLOQUEADO,data/fontes-estaduais-curadas/**/manifest.json,match=29;mismatch=125
+SRC-011,100% quarentena,fingerprint+tombstone,BLOQUEADO,data/benefits_quarantine.json,total=13150;sem fingerprint=13150;conteúdo material=13150
+SRC-012,transicao_rt,compatibilidade por tributo,A VALIDAR,data/benefits_crosswalk.json,"rótulos estruturais presentes, sem field_provenance material"
+SRC-013,produção contida,refetch anônimo já realizado,OK,https://mjrrafael.github.io/rjc-conhecimento/,"root 200 neutro/noindex; crosswalk, quarentena e benefícios 404"
+SRC-014,gates novos ativados,workflow,OK,.github/workflows/portal-audit.yml,12/12 comandos invocados e paths existentes; conteúdo fora da lista autorizada não lido
+SRC-015,mutantes próprios,2 por classe em paths aleatórios,OK,C:\Users\rafae\AppData\Local\Temp\rjc-monitor-2026-07-13-wave2\fontes\revisao.md,18/18 mortos; 9 classes; temporários removidos
+SRC-016,isolamento build_diff_manifest,duas travessias RJC_MONITOR_RUN,BLOQUEADO,scripts/build_diff_manifest.py,2/2 escaparam da raiz do repo temporário; raízes não isoladas

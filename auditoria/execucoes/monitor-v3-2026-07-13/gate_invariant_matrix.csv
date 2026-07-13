@@ -1,0 +1,70 @@
+gate,invariante,classe_de_bypass,mutantes_esperados,mutantes_executados,status,evidencia
+audit_field_provenance,vínculo exato campo-valor,proveniência ausente,2,0,BLOQUEADO,raízes externas ausentes
+audit_field_provenance,vínculo exato campo-valor,valor divergente,2,0,BLOQUEADO,raízes externas ausentes
+audit_field_provenance,captura oficial material,domínio não oficial ou URL não final,2,0,BLOQUEADO,raízes externas ausentes
+audit_field_provenance,captura oficial material,status MIME ou hash inválido,2,0,BLOQUEADO,raízes externas ausentes
+audit_field_provenance,localização verificável,trecho ou localizador vazio,2,0,BLOQUEADO,raízes externas ausentes
+audit_no_synthetic_legal_dates,data rederivada da fonte,captured_on,2,0,BLOQUEADO,raízes externas ausentes
+audit_no_synthetic_legal_dates,data rederivada da fonte,TODAY,2,0,BLOQUEADO,raízes externas ausentes
+audit_no_synthetic_legal_dates,data rederivada da fonte,mtime,2,0,BLOQUEADO,raízes externas ausentes
+audit_no_synthetic_legal_dates,data rederivada da fonte,data do build ou editorial,2,0,BLOQUEADO,raízes externas ausentes
+audit_no_synthetic_legal_dates,data rederivada da fonte,cópia entre campos,2,0,BLOQUEADO,raízes externas ausentes
+audit_no_synthetic_legal_dates,data rederivada da fonte,fallback,2,0,BLOQUEADO,raízes externas ausentes
+audit_no_synthetic_legal_dates,data rederivada da fonte,valor sem localizador,2,0,BLOQUEADO,raízes externas ausentes
+audit_verification_receipts,bijeção card-recibo,recibo ausente,2,0,BLOQUEADO,raízes externas ausentes
+audit_verification_receipts,bijeção card-recibo,recibo duplicado ou reutilizado,2,0,BLOQUEADO,raízes externas ausentes
+audit_verification_receipts,materialidade do recibo,boilerplate ou resultado não PASS,2,0,BLOQUEADO,raízes externas ausentes
+audit_verification_receipts,hashes de alteração,hash ausente igual ou inválido,2,0,BLOQUEADO,raízes externas ausentes
+audit_verification_receipts,capturas independentes,IDs HTTP ausentes ou divergentes,2,0,BLOQUEADO,raízes externas ausentes
+audit_http_platform_receipts,ID nativo confrontável,recibo autocriado,2,0,BLOQUEADO,plataforma não exporta IDs nativos
+audit_http_platform_receipts,captura anônima,cookies token ou Authorization,2,0,BLOQUEADO,plataforma não exporta IDs nativos
+audit_http_platform_receipts,HTTP bruto íntegro,headers redirects ou tamanho ausente,2,0,BLOQUEADO,plataforma não exporta IDs nativos
+audit_http_platform_receipts,HTTP bruto íntegro,status MIME ou SHA divergente,2,0,BLOQUEADO,plataforma não exporta IDs nativos
+audit_link_receipts,identidade simultânea do ato,homepage ou índice genérico,2,0,BLOQUEADO,raízes externas ausentes
+audit_link_receipts,identidade simultânea do ato,login ou challenge,2,0,BLOQUEADO,raízes externas ausentes
+audit_link_receipts,identidade simultânea do ato,soft-404,2,0,BLOQUEADO,raízes externas ausentes
+audit_link_receipts,identidade simultânea do ato,tipo número autoridade ou jurisdição ausente,2,0,BLOQUEADO,raízes externas ausentes
+audit_link_receipts,suporte semântico do campo,trecho não sustenta localizador,2,0,BLOQUEADO,raízes externas ausentes
+audit_internalization_evidence,internalização específica,presunção por sigla da UF,2,0,BLOQUEADO,raízes externas ausentes
+audit_internalization_evidence,internalização específica,autoridade incompetente,2,0,BLOQUEADO,raízes externas ausentes
+audit_internalization_evidence,internalização específica,UF divergente,2,0,BLOQUEADO,raízes externas ausentes
+audit_internalization_evidence,internalização específica,ato ou benefício divergente,2,0,BLOQUEADO,raízes externas ausentes
+audit_internalization_evidence,internalização específica,hash URL ou localizador ausente,2,0,BLOQUEADO,raízes externas ausentes
+audit_full_content_coverage,diferença simétrica zero,arquivo Git ausente no filesystem,2,0,BLOQUEADO,raízes externas ausentes
+audit_full_content_coverage,diferença simétrica zero,dotfile sem extensão ou extensão desconhecida órfã,2,0,BLOQUEADO,raízes externas ausentes
+audit_full_content_coverage,entradas cruas reconciliadas,gerador ou registro-fonte omitido,2,0,BLOQUEADO,raízes externas ausentes
+audit_full_content_coverage,derivados reconciliados,build ou freshness divergente,2,0,BLOQUEADO,raízes externas ausentes
+audit_full_content_coverage,superfícies auxiliares reconciliadas,sitemap robots manifesto busca ou LLM divergente,2,0,BLOQUEADO,raízes externas ausentes
+audit_full_content_coverage,crawl integral,rota local ou HTTP omitida,2,0,BLOQUEADO,raízes externas ausentes
+audit_canonical_source_scope,81 linhas estaduais completas,UF omitida,2,0,BLOQUEADO,raízes externas ausentes
+audit_canonical_source_scope,81 linhas estaduais completas,classe estadual omitida ou duplicada,2,0,BLOQUEADO,raízes externas ausentes
+audit_canonical_source_scope,13 famílias federais completas,família federal omitida,2,0,BLOQUEADO,raízes externas ausentes
+audit_canonical_source_scope,entes referenciados completos,município ou ente citado omitido,2,0,BLOQUEADO,raízes externas ausentes
+audit_canonical_source_scope,URLs referenciadas completas,URL domínio catálogo ou ledger omitido,2,0,BLOQUEADO,raízes externas ausentes
+audit_canonical_source_scope,linha material,URL final recibo status ou hash ausente,2,0,BLOQUEADO,raízes externas ausentes
+audit_public_set_algebra,projeção exata de publishable,publishable ausente da superfície,2,0,BLOQUEADO,raízes externas ausentes
+audit_public_set_algebra,projeção exata de publishable,não publishable exposto,2,0,BLOQUEADO,raízes externas ausentes
+audit_public_set_algebra,zero estado inseguro,A_VALIDAR A_REVALIDAR ou BLOQUEADO público,2,0,BLOQUEADO,raízes externas ausentes
+audit_public_set_algebra,histórico somente comprovado,histórico sem prova resolvível,2,0,BLOQUEADO,raízes externas ausentes
+audit_public_set_algebra,interseção vazia,quarentena visível,2,0,BLOQUEADO,raízes externas ausentes
+audit_quarantine_fingerprints,zero vazamento,ID direto,2,0,BLOQUEADO,raízes externas ausentes
+audit_quarantine_fingerprints,zero vazamento,literal copiado,2,0,BLOQUEADO,raízes externas ausentes
+audit_quarantine_fingerprints,zero vazamento,texto normalizado equivalente,2,0,BLOQUEADO,raízes externas ausentes
+audit_quarantine_fingerprints,zero vazamento,shingle ou n-grama,2,0,BLOQUEADO,raízes externas ausentes
+audit_quarantine_fingerprints,zero vazamento,hash ou fingerprint,2,0,BLOQUEADO,raízes externas ausentes
+audit_quarantine_fingerprints,zero vazamento,cópia reidentificada sem ID,2,0,BLOQUEADO,raízes externas ausentes
+audit_subagent_independence,seis tasks distintas,menos de três agentes por onda,2,0,BLOQUEADO,export nativo indisponível
+audit_subagent_independence,prompt cego,fork_turns diferente de none,2,0,BLOQUEADO,export nativo indisponível
+audit_subagent_independence,isolamento de leitura,worktree gravável ou compartilhado,2,0,BLOQUEADO,mesma conta filesystem
+audit_subagent_independence,prova negativa,leitura direta ou indireta de artefato de outra onda,2,0,BLOQUEADO,export nativo indisponível
+audit_subagent_independence,artefatos confrontáveis,session export ou tool calls ausentes,2,0,BLOQUEADO,export nativo indisponível
+audit_publication,PR obrigatório,PR ausente draft não pronta ou diff não classificado,2,0,BLOQUEADO,publicação ainda não iniciada
+audit_publication,CI no SHA exato,zero checks check vermelho ou SHA divergente,2,0,BLOQUEADO,publicação ainda não iniciada
+audit_publication,merge controlado,main divergente ou merge ausente,2,0,BLOQUEADO,publicação ainda não iniciada
+audit_publication,Pages no merge,run ausente vermelho ou commit antigo,2,0,BLOQUEADO,publicação ainda não iniciada
+audit_publication,higiene Git,worktree sujo ou arquivo sem autoria,2,0,BLOQUEADO,publicação ainda não iniciada
+audit_public_http_hashes,HTTP igual ao merge,status diferente de 200,2,0,BLOQUEADO,publicação ainda não iniciada
+audit_public_http_hashes,HTTP igual ao merge,hash da raiz divergente,2,0,BLOQUEADO,publicação ainda não iniciada
+audit_public_http_hashes,HTTP igual ao merge,artefato alterado ausente ou divergente,2,0,BLOQUEADO,publicação ainda não iniciada
+audit_public_http_hashes,Pages atual,cache ou commit antigo,2,0,BLOQUEADO,publicação ainda não iniciada
+audit_public_http_hashes,fontes oficiais ainda válidas,refetch ausente status inválido ou corpo divergente,2,0,BLOQUEADO,publicação ainda não iniciada

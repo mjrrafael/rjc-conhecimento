@@ -1,0 +1,6 @@
+route,url,status,http_status,bytes,sha256,final_url,content_type,meta_robots,note
+/rjc-conhecimento/,https://mjrrafael.github.io/rjc-conhecimento/,BLOQUEADO_NAO_EXECUTADO,,,,,,,"coleta proibida após ordem de fechamento; nenhuma inferência de produção"
+/rjc-conhecimento/index.html,https://mjrrafael.github.io/rjc-conhecimento/index.html,BLOQUEADO_NAO_EXECUTADO,,,,,,,"sem recibo HTTP nativo verificável no escopo permitido"
+/rjc-conhecimento/404.html,https://mjrrafael.github.io/rjc-conhecimento/404.html,BLOQUEADO_NAO_EXECUTADO,,,,,,,"sem recibo HTTP nativo verificável no escopo permitido"
+/rjc-conhecimento/robots.txt,https://mjrrafael.github.io/rjc-conhecimento/robots.txt,BLOQUEADO_NAO_EXECUTADO,,,,,,,"sem recibo HTTP nativo verificável no escopo permitido"
+/rjc-conhecimento/llms.txt,https://mjrrafael.github.io/rjc-conhecimento/llms.txt,BLOQUEADO_NAO_EXECUTADO,,,,,,,"sem recibo HTTP nativo verificável no escopo permitido"

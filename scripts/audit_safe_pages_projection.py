@@ -7,13 +7,31 @@ import csv
 import functools
 import hashlib
 import json
+import os
 import re
 import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 SITE = Path(sys.argv[1]).resolve() if len(sys.argv) > 1 else ROOT / "_site"
-RUN = ROOT / "auditoria" / "execucoes" / "monitor-v3-2026-07-12"
+
+
+def resolve_run() -> Path:
+    allowed = (ROOT / "auditoria" / "execucoes").resolve()
+    configured = os.environ.get("RJC_MONITOR_RUN", "").strip()
+    if configured:
+        path = Path(configured)
+        resolved = (path if path.is_absolute() else ROOT / path).resolve()
+        if not resolved.is_relative_to(allowed) or not resolved.name.startswith("monitor-v3-"):
+            raise RuntimeError("RJC_MONITOR_RUN fora de auditoria/execucoes/monitor-v3-*")
+        return resolved
+    candidates = sorted((ROOT / "auditoria" / "execucoes").glob("monitor-v3-*"))
+    if not candidates:
+        raise RuntimeError("nenhuma execução monitor-v3 encontrada")
+    return candidates[-1]
+
+
+RUN = resolve_run()
 ALLOWED = {"index.html", "404.html", "robots.txt", "llms.txt"}
 APPROVED_SHA256 = {
     "404.html": "07e4f9f163f5653ca81949a694ba17f00d8416bcdb84f13fafbb7f5d154d13e7",

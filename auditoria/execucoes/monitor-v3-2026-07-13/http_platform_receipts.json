@@ -1,0 +1,6 @@
+{
+  "schema": "rjc-http-platform-receipts-v3",
+  "native_receipt_status": "UNAVAILABLE",
+  "receipts": [],
+  "reason": "A plataforma desta sessão não exporta ID nativo, request/response bruto e histórico confrontável para as capturas HTTP; observações shell não são promovidas a recibo nativo."
+}

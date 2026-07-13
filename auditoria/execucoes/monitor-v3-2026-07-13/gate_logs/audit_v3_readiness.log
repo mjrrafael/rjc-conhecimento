@@ -1,0 +1,16 @@
+command=["C:\\Users\\rafae\\AppData\\Local\\Programs\\Python\\Python312\\python.exe", "-B", "scripts/audit_v3_readiness.py"]
+started_at=2026-07-13T08:25:03.929443-03:00
+finished_at=2026-07-13T08:25:04.068448-03:00
+exit_code=1
+timed_out=false
+
+[stdout]
+PORTAL V3 NÃO PRONTO:
+- artefatos obrigatórios ausentes: manifesto_diff.csv
+- duas raízes de confiança preexistentes e administrativamente distintas não comprovadas
+- mutation testing material não executado/aprovado
+- dois runners confiáveis distintos não comprovados
+- 94 linhas canônicas sem URL/recibo/hash material
+
+
+[stderr]

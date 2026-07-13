@@ -1,0 +1,51 @@
+command=["C:\\Users\\rafae\\AppData\\Local\\Programs\\Python\\Python312\\python.exe", "-B", "scripts/audit_no_synthetic_legal_dates.py"]
+started_at=2026-07-13T08:24:54.518091-03:00
+finished_at=2026-07-13T08:24:56.023261-03:00
+exit_code=1
+timed_out=false
+
+[stdout]
+audit_no_synthetic_legal_dates: FAIL
+- build_pis_cofins_ncm.py: padrão sintético proibido (verificado_em=TODAY)
+- ba-4ea3d188bb54: data inicio_eficacia sem prova literal vinculante
+- ba-4ea3d188bb54: data inicio_vigencia sem prova literal vinculante
+- ba-4ea3d188bb54: data publicacao sem prova literal vinculante
+- ba-b9748c8ac454: data inicio_eficacia sem prova literal vinculante
+- ba-b9748c8ac454: data inicio_vigencia sem prova literal vinculante
+- ba-b9748c8ac454: data publicacao sem prova literal vinculante
+- ba-8ae0cde8886c: data inicio_eficacia sem prova literal vinculante
+- ba-8ae0cde8886c: data inicio_vigencia sem prova literal vinculante
+- ba-8ae0cde8886c: data publicacao sem prova literal vinculante
+- ba-d5aad7dc6b0a: data inicio_eficacia sem prova literal vinculante
+- ba-d5aad7dc6b0a: data inicio_vigencia sem prova literal vinculante
+- ba-d5aad7dc6b0a: data publicacao sem prova literal vinculante
+- ba-b6f8d5563474: data inicio_eficacia sem prova literal vinculante
+- ba-b6f8d5563474: data inicio_vigencia sem prova literal vinculante
+- ba-b6f8d5563474: data publicacao sem prova literal vinculante
+- ba-06000336d842: data inicio_eficacia sem prova literal vinculante
+- ba-06000336d842: data inicio_vigencia sem prova literal vinculante
+- ba-06000336d842: data publicacao sem prova literal vinculante
+- ba-df8c8b4892de: data inicio_eficacia sem prova literal vinculante
+- ba-df8c8b4892de: data inicio_vigencia sem prova literal vinculante
+- ba-df8c8b4892de: data publicacao sem prova literal vinculante
+- ba-a40743414355: data inicio_eficacia sem prova literal vinculante
+- ba-a40743414355: data inicio_vigencia sem prova literal vinculante
+- ba-a40743414355: data publicacao sem prova literal vinculante
+- ba-c9201d734184: data inicio_eficacia sem prova literal vinculante
+- ba-c9201d734184: data inicio_vigencia sem prova literal vinculante
+- ba-c9201d734184: data publicacao sem prova literal vinculante
+- ba-5ba09ff7e4d6: data inicio_eficacia sem prova literal vinculante
+- ba-5ba09ff7e4d6: data inicio_vigencia sem prova literal vinculante
+- ba-5ba09ff7e4d6: data publicacao sem prova literal vinculante
+- ba-402caaafbfe3: data inicio_eficacia sem prova literal vinculante
+- ba-402caaafbfe3: data inicio_vigencia sem prova literal vinculante
+- ba-402caaafbfe3: data publicacao sem prova literal vinculante
+- ba-7e096b2daff7: data inicio_eficacia sem prova literal vinculante
+- ba-7e096b2daff7: data inicio_vigencia sem prova literal vinculante
+- ba-7e096b2daff7: data publicacao sem prova literal vinculante
+- ba-069afe75d142: data inicio_eficacia sem prova literal vinculante
+- ba-069afe75d142: data inicio_vigencia sem prova literal vinculante
+- ba-069afe75d142: data publicacao sem prova literal vinculante
+
+
+[stderr]

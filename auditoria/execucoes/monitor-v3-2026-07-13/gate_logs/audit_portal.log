@@ -1,0 +1,12 @@
+command=["C:\\Users\\rafae\\AppData\\Local\\Programs\\Python\\Python312\\python.exe", "-B", "scripts/audit_portal.py"]
+started_at=2026-07-13T08:22:50.677935-03:00
+finished_at=2026-07-13T08:23:42.869244-03:00
+exit_code=0
+timed_out=false
+
+[stdout]
+Paginas HTML auditadas: 658
+Auditoria concluida sem falhas.
+
+
+[stderr]

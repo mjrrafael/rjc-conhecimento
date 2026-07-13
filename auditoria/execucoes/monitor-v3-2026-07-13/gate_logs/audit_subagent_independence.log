@@ -1,0 +1,12 @@
+command=["C:\\Users\\rafae\\AppData\\Local\\Programs\\Python\\Python312\\python.exe", "-B", "scripts/audit_subagent_independence.py"]
+started_at=2026-07-13T08:25:03.707931-03:00
+finished_at=2026-07-13T08:25:03.778930-03:00
+exit_code=1
+timed_out=false
+
+[stdout]
+audit_subagent_independence: FAIL
+- recibos nativos/export bruto de subagentes indisponíveis
+
+
+[stderr]

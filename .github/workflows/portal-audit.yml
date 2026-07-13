@@ -34,6 +34,28 @@ jobs:
         run: python -B scripts/test_safe_pages_projection_gate.py "$RUNNER_TEMP/portal-site"
       - name: Reject impossible dates and hollow provenance
         run: python -B scripts/test_validated_benefits_fail_closed.py
+      - name: Enforce material v3 candidate gates
+        if: github.event_name == 'pull_request' || github.event_name == 'push' || github.event_name == 'workflow_dispatch'
+        env:
+          RJC_PORTAL_SITE: ${{ runner.temp }}/portal-site
+        run: |
+          python -B scripts/audit_v3_readiness.py
+          python -B scripts/audit_field_provenance.py
+          python -B scripts/audit_no_synthetic_legal_dates.py
+          python -B scripts/audit_verification_receipts.py
+          python -B scripts/audit_http_platform_receipts.py
+          python -B scripts/audit_link_receipts.py
+          python -B scripts/audit_internalization_evidence.py
+          python -B scripts/audit_full_content_coverage.py
+          python -B scripts/audit_canonical_source_scope.py
+          python -B scripts/audit_public_set_algebra.py
+          python -B scripts/audit_quarantine_fingerprints.py
+          python -B scripts/audit_subagent_independence.py
+      - name: Enforce post-publication v3 gates
+        if: github.event_name == 'workflow_dispatch'
+        run: |
+          python -B scripts/audit_publication.py
+          python -B scripts/audit_public_http_hashes.py
       - name: Rebuild and verify inventory freshness
         run: |
           python scripts/monitor_v3_inventory.py

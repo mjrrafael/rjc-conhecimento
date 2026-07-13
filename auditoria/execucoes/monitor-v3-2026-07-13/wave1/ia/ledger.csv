@@ -1,0 +1,11 @@
+﻿id,criterio,metodo,status,evidencia
+IA-001,baseline e filesystem integralmente inventariados; exclusões proibidas não lidas,git ls-tree + filesystem + SHA-256,BLOQUEADO,"1024 linhas; conteúdo proibido não lido, mas isolamento cego foi comprometido por rg amplo que exibiu trechos de workflow/docs anteriores"
+IA-002,100% de JSON e NDJSON permitidos parseados e contabilizados,parser integral por arquivo/linha,OK,36/36 parseáveis; inventario.csv + surfaces.csv
+IA-003,público igual à projeção autorizada publishable,sets + produção 1024 URLs + campos publishable,CORRIGIR,"produção=allowlist 4/4, porém 9726 registros marcados publishable não possuem proveniência e estão desligados pela quarentena global; álgebra de flags/artefato não fecha"
+IA-004,quarentena sem vazamento público por ID literal hash texto normalizado e shingles,varredura integral 13150 entradas,OK,0 hits ID; 0 literal; 0 hash canônico; 0 texto normalizado; 0 shingles na projeção/produção segura
+IA-005,histórico comprovado e nenhum status inseguro como fato,scan integral dados/busca/HTML,CORRIGIR,241 A_REVALIDAR em busca+HTML; 291 PIS/NCM publicados com 2 campos A_VALIDAR cada; produção segura contém 0 fatos
+IA-006,27 UFs x 3 classes e 13 famílias federais cobertas,94 linhas obrigatórias + recibo/hash,BLOQUEADO,0/94 com recibo nativo classificado em entradas cruas permitidas; 15 UFs sem manifesto curado; raízes externas não comprovadas
+IA-007,busca manifestos chunks sitemap robots llms scripts build freshness e links reconciliados,parsers/grafo/hash integral,CORRIGIR,grafo sem alvos faltantes; 322 IDs duplicados; frescor 1 hash/8 bytes; 37/154 hashes de manifestos inválidos; llms diverge
+IA-008,gates existentes executados e eficácia/bypasses avaliados,execução + mutantes + inspeção,CORRIGIR,15/19 auditorias locais passaram; 4 falharam; 13 hard gates declarados ausentes; bypasses em dataset commitado e status
+IA-009,portal de produção confrontado com artefatos locais e recibos HTTP nativos,1024 GET/HEAD + hashes,BLOQUEADO,"1024/1024 respostas conformes, mas recibos nativos/plataforma e build Jekyll isolado indisponíveis"
+IA-010,passe adversarial final e artefatos coerentes,reexecução + autovalidação,BLOQUEADO,decisão material NÃO CONFORME; limitações impeditivas de isolamento/recibos/toolchain registradas

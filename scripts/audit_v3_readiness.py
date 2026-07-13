@@ -4,10 +4,29 @@
 from __future__ import annotations
 
 import csv
+import json
+import os
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-RUN = ROOT / "auditoria" / "execucoes" / "monitor-v3-2026-07-12"
+
+
+def resolve_run() -> Path:
+    allowed = (ROOT / "auditoria" / "execucoes").resolve()
+    configured = os.environ.get("RJC_MONITOR_RUN", "").strip()
+    if configured:
+        path = Path(configured)
+        resolved = (path if path.is_absolute() else ROOT / path).resolve()
+        if not resolved.is_relative_to(allowed) or not resolved.name.startswith("monitor-v3-"):
+            raise RuntimeError("RJC_MONITOR_RUN fora de auditoria/execucoes/monitor-v3-*")
+        return resolved
+    candidates = sorted((ROOT / "auditoria" / "execucoes").glob("monitor-v3-*"))
+    if not candidates:
+        raise RuntimeError("nenhuma execução monitor-v3 encontrada")
+    return candidates[-1]
+
+
+RUN = resolve_run()
 UFS = set("AC AL AM AP BA CE DF ES GO MA MG MS MT PA PB PE PI PR RJ RN RO RR RS SC SE SP TO".split())
 STATE_CLASSES = {"SEFAZ_LEGISLACAO", "DOE", "ASSEMBLEIA_LEGISLATIVA"}
 FEDERAL_CLASSES = {
@@ -96,6 +115,45 @@ def check_public(errors: list[str]) -> None:
         errors.append("raízes não excluídas do Pages legado: " + ", ".join(sorted(leaked)))
 
 
+def check_trust_and_mutations(errors: list[str]) -> None:
+    roots = []
+    for path in sorted((RUN / "trust_roots").glob("*.attestation.json")) if (RUN / "trust_roots").exists() else []:
+        try:
+            item = json.loads(path.read_text(encoding="utf-8"))
+        except (OSError, json.JSONDecodeError):
+            errors.append(f"atestado de raiz inválido: {path.name}")
+            continue
+        required = {"root_id", "admin_domain", "version", "commit", "signature", "baseline_registered_at", "candidate_write_access"}
+        if not isinstance(item, dict) or required - set(item) or item.get("candidate_write_access") is not False:
+            errors.append(f"atestado de raiz incompleto/não independente: {path.name}")
+            continue
+        roots.append(item)
+    if len(roots) < 2 or len({item["admin_domain"] for item in roots}) < 2:
+        errors.append("duas raízes de confiança preexistentes e administrativamente distintas não comprovadas")
+
+    matrix_path = RUN / "gate_invariant_matrix.csv"
+    if matrix_path.exists():
+        rows = list(csv.DictReader(matrix_path.open(encoding="utf-8")))
+        gates = {row.get("gate") for row in rows}
+        missing = {name.removesuffix(".py") for name in NEW_GATES} - gates
+        if missing:
+            errors.append("matriz de invariantes omite gates: " + ", ".join(sorted(missing)))
+        bad = [row for row in rows if int(row.get("mutantes_esperados") or 0) < 2]
+        if bad:
+            errors.append(f"células sem dois mutantes esperados={len(bad)}")
+    mutations_path = RUN / "gate_mutation_results.json"
+    if mutations_path.exists():
+        try:
+            result = json.loads(mutations_path.read_text(encoding="utf-8"))
+        except json.JSONDecodeError:
+            errors.append("gate_mutation_results.json inválido")
+        else:
+            if result.get("executed") is not True or result.get("status") != "PASS":
+                errors.append("mutation testing material não executado/aprovado")
+            if len(set(result.get("trusted_runner_ids") or [])) < 2:
+                errors.append("dois runners confiáveis distintos não comprovados")
+
+
 def main() -> int:
     errors: list[str] = []
     missing = sorted(name for name in MANDATORY_ARTIFACTS if not (RUN / name).exists())
@@ -104,9 +162,7 @@ def main() -> int:
     missing_gates = sorted(name for name in NEW_GATES if not (ROOT / "scripts" / name).exists())
     if missing_gates:
         errors.append("hard gates ausentes: " + ", ".join(missing_gates))
-    roots = list((RUN / "trust_roots").glob("*.attestation.json")) if (RUN / "trust_roots").exists() else []
-    if len(roots) < 2:
-        errors.append("duas raízes de confiança preexistentes não comprovadas")
+    check_trust_and_mutations(errors)
     check_matrix(errors)
     check_generator(errors)
     check_public(errors)

@@ -1,0 +1,89 @@
+{
+  "audit_field_provenance": {
+    "probe": "synthetic_minimal_fixture_accepted",
+    "passed": true,
+    "evidence": []
+  },
+  "audit_no_synthetic_legal_dates": {
+    "probe": "synthetic_minimal_fixture_accepted",
+    "passed": false,
+    "evidence": [
+      "build_pis_cofins_ncm.py: padrão sintético proibido (verificado_em=TODAY)"
+    ]
+  },
+  "audit_verification_receipts": {
+    "probe": "synthetic_minimal_fixture_accepted",
+    "passed": true,
+    "evidence": []
+  },
+  "audit_http_platform_receipts": {
+    "probe": "synthetic_minimal_fixture_accepted",
+    "passed": true,
+    "evidence": []
+  },
+  "audit_link_receipts": {
+    "probe": "synthetic_minimal_fixture_accepted",
+    "passed": true,
+    "evidence": []
+  },
+  "audit_internalization_evidence": {
+    "probe": "synthetic_minimal_fixture_accepted",
+    "passed": true,
+    "evidence": []
+  },
+  "audit_full_content_coverage": {
+    "probe": "synthetic_minimal_fixture_accepted",
+    "passed": true,
+    "evidence": []
+  },
+  "audit_canonical_source_scope": {
+    "probe": "synthetic_minimal_fixture_accepted",
+    "passed": true,
+    "evidence": []
+  },
+  "audit_public_set_algebra": {
+    "probe": "synthetic_minimal_fixture_accepted",
+    "passed": true,
+    "evidence": []
+  },
+  "audit_quarantine_fingerprints": {
+    "probe": "synthetic_minimal_fixture_accepted",
+    "passed": true,
+    "evidence": []
+  },
+  "audit_subagent_independence": {
+    "probe": "synthetic_minimal_fixture_accepted",
+    "passed": true,
+    "evidence": []
+  },
+  "audit_publication": {
+    "probe": "synthetic_minimal_fixture_accepted",
+    "passed": true,
+    "evidence": []
+  },
+  "audit_public_http_hashes": {
+    "probe": "synthetic_minimal_fixture_accepted",
+    "passed": true,
+    "evidence": []
+  },
+  "audit_field_provenance_empty_legal_fields": {
+    "probe": "publishable sem qualquer campo legal",
+    "passed": true,
+    "evidence": []
+  },
+  "audit_no_synthetic_dates_absent": {
+    "probe": "publishable sem campos de data",
+    "passed": true,
+    "evidence": []
+  },
+  "audit_public_set_algebra_extra_file": {
+    "probe": "quinto arquivo inseguro no site",
+    "passed": true,
+    "evidence": []
+  },
+  "audit_quarantine_missing_fingerprints": {
+    "probe": "registro a_validar sem id/hash/source_fingerprint",
+    "passed": true,
+    "evidence": []
+  }
+}

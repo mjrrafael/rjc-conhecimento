@@ -1,0 +1,23 @@
+{
+  "schema": "rjc-subagents-platform-receipts-v3",
+  "native_receipt_status": "UNAVAILABLE",
+  "canonical_task_paths": [
+    "/root/onda1_fontes_vigencia",
+    "/root/onda1_humano_portal",
+    "/root/onda1_ia_dados",
+    "/root/onda2_fontes_vigencia",
+    "/root/onda2_humano_portal",
+    "/root/onda2_ia_dados"
+  ],
+  "fork_turns_requested": "none",
+  "native_prompt_ids": null,
+  "native_prompt_hashes": null,
+  "native_spawn_timestamps": null,
+  "native_completion_timestamps": null,
+  "native_session_exports": null,
+  "native_tool_call_history": null,
+  "negative_access_proof": false,
+  "filesystem_isolation": "Read-only file attributes and detached worktrees were used, but every agent runs under the same Windows account and can theoretically change ACLs or read sibling paths.",
+  "certifiable": false,
+  "reason": "Canonical task paths and live states were exposed, but no immutable platform export exists to confront prompts, tool calls, timestamps and paths read."
+}

@@ -1,0 +1,12 @@
+command=["C:\\Users\\rafae\\AppData\\Local\\Programs\\Python\\Python312\\python.exe", "-B", "scripts/audit_index_freshness.py"]
+started_at=2026-07-13T08:24:26.844883-03:00
+finished_at=2026-07-13T08:24:32.017427-03:00
+exit_code=1
+timed_out=false
+
+[stdout]
+Falhas de frescor/coerência de índices:
+- llms.txt diverge do checksum registrado em assets/build-freshness.json
+
+
+[stderr]

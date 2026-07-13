@@ -1,0 +1,12 @@
+command=["C:\\Users\\rafae\\AppData\\Local\\Programs\\Python\\Python312\\python.exe", "-B", "scripts/audit_publication.py"]
+started_at=2026-07-13T08:25:03.779930-03:00
+finished_at=2026-07-13T08:25:03.849442-03:00
+exit_code=1
+timed_out=false
+
+[stdout]
+audit_publication: FAIL
+- publication_proof.json ausente
+
+
+[stderr]

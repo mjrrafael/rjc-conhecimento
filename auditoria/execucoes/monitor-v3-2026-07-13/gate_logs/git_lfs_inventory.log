@@ -1,0 +1,10 @@
+command=["git", "lfs", "ls-files"]
+started_at=2026-07-13T08:25:31.674341-03:00
+finished_at=2026-07-13T08:25:32.145602-03:00
+exit_code=0
+timed_out=false
+
+[stdout]
+
+
+[stderr]

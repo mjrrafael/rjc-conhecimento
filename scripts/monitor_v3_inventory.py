@@ -5,13 +5,32 @@ from __future__ import annotations
 
 import csv
 import hashlib
+import os
 import re
 import subprocess
 from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[1]
-RUN = ROOT / "auditoria" / "execucoes" / "monitor-v3-2026-07-12"
+
+
+def resolve_run() -> Path:
+    allowed = (ROOT / "auditoria" / "execucoes").resolve()
+    configured = os.environ.get("RJC_MONITOR_RUN", "").strip()
+    if configured:
+        path = Path(configured)
+        resolved = (path if path.is_absolute() else ROOT / path).resolve()
+        if not resolved.is_relative_to(allowed) or not resolved.name.startswith("monitor-v3-"):
+            raise RuntimeError("RJC_MONITOR_RUN fora de auditoria/execucoes/monitor-v3-*")
+        return resolved
+    base = ROOT / "auditoria" / "execucoes"
+    candidates = sorted(path for path in base.glob("monitor-v3-*") if path.is_dir())
+    if not candidates:
+        raise RuntimeError("nenhuma execução monitor-v3 encontrada; defina RJC_MONITOR_RUN")
+    return candidates[-1]
+
+
+RUN = resolve_run()
 UFS = "AC AL AM AP BA CE DF ES GO MA MG MS MT PA PB PE PI PR RJ RN RO RR RS SC SE SP TO".split()
 STATE_CLASSES = ("SEFAZ_LEGISLACAO", "DOE", "ASSEMBLEIA_LEGISLATIVA")
 FEDERAL_FAMILIES = (
@@ -105,7 +124,9 @@ def write_scope(urls: set[str]) -> None:
     scope = RUN / "escopo_fontes_canonico.yaml"
     lines = [
         "schema: rjc-canonical-source-scope-v3",
-        "baseline_sha: 23d864f510bfbb16d6ef5d73049c63a1003b5ac6",
+        "baseline_sha: " + subprocess.check_output(
+            ["git", "merge-base", "HEAD", "origin/main"], cwd=ROOT, text=True, encoding="utf-8"
+        ).strip(),
         "jurisdicoes:",
         "  - BR",
         *[f"  - {uf}" for uf in UFS],
@@ -121,16 +142,39 @@ def write_scope(urls: set[str]) -> None:
 
 def write_matrix(urls: set[str]) -> None:
     path = RUN / "matriz_fontes_canonicas.csv"
+    existing_by_key: dict[tuple[str, str], dict[str, str]] = {}
+    existing_by_url: dict[str, dict[str, str]] = {}
+    if path.exists():
+        with path.open(encoding="utf-8-sig", newline="") as handle:
+            for row in csv.DictReader(handle):
+                existing_by_key[(row.get("jurisdicao", ""), row.get("classe", ""))] = row
+                if row.get("jurisdicao") == "REFERENCIADA" and row.get("url_inicial"):
+                    existing_by_url[row["url_inicial"]] = row
+
+    fields = ("jurisdicao", "classe", "url_inicial", "url_final", "dominio", "http_receipt_id", "status_http", "sha256_corpo", "resultado")
+
+    def material_row(jurisdiction: str, source_class: str, url: str = "") -> tuple[str, ...]:
+        previous = existing_by_url.get(url) if jurisdiction == "REFERENCIADA" else existing_by_key.get((jurisdiction, source_class))
+        if previous:
+            return tuple(str(previous.get(field, "")) for field in fields)
+        return (jurisdiction, source_class, url, "", "", "", "", "", "A_VALIDAR")
+
     with path.open("w", encoding="utf-8", newline="") as handle:
         writer = csv.writer(handle, lineterminator="\n")
-        writer.writerow(("jurisdicao", "classe", "url_inicial", "url_final", "dominio", "http_receipt_id", "status_http", "sha256_corpo", "resultado"))
+        writer.writerow(fields)
         for uf in UFS:
             for source_class in STATE_CLASSES:
-                writer.writerow((uf, source_class, "", "", "", "", "", "", "A_VALIDAR"))
+                writer.writerow(material_row(uf, source_class))
         for family in FEDERAL_FAMILIES:
-            writer.writerow(("BR", family, "", "", "", "", "", "", "A_VALIDAR"))
+            writer.writerow(material_row("BR", family))
         for index, url in enumerate(sorted(urls), 1):
-            writer.writerow(("REFERENCIADA", f"URL_{index:05d}", url, "", "", "", "", "", "A_VALIDAR"))
+            previous = existing_by_url.get(url)
+            if previous:
+                row = {field: str(previous.get(field, "")) for field in fields}
+                row["classe"] = f"URL_{index:05d}"
+                writer.writerow(tuple(row[field] for field in fields))
+            else:
+                writer.writerow(material_row("REFERENCIADA", f"URL_{index:05d}", url))
 
 
 def main() -> int:

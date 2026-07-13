@@ -1,0 +1,51 @@
+command=["C:\\Users\\rafae\\AppData\\Local\\Programs\\Python\\Python312\\python.exe", "-B", "scripts/audit_link_receipts.py"]
+started_at=2026-07-13T08:24:57.483060-03:00
+finished_at=2026-07-13T08:24:58.852457-03:00
+exit_code=1
+timed_out=false
+
+[stdout]
+audit_link_receipts: FAIL
+- ba-4ea3d188bb54: capturas independentes ausentes
+- ba-b9748c8ac454: capturas independentes ausentes
+- ba-8ae0cde8886c: capturas independentes ausentes
+- ba-d5aad7dc6b0a: capturas independentes ausentes
+- ba-b6f8d5563474: capturas independentes ausentes
+- ba-06000336d842: capturas independentes ausentes
+- ba-df8c8b4892de: capturas independentes ausentes
+- ba-a40743414355: capturas independentes ausentes
+- ba-c9201d734184: capturas independentes ausentes
+- ba-5ba09ff7e4d6: capturas independentes ausentes
+- ba-402caaafbfe3: capturas independentes ausentes
+- ba-7e096b2daff7: capturas independentes ausentes
+- ba-069afe75d142: capturas independentes ausentes
+- ba-61b23645a448: capturas independentes ausentes
+- ba-c0b1a558bc6f: capturas independentes ausentes
+- ba-6ed05e5eba2a: capturas independentes ausentes
+- ba-01215c5c6e30: capturas independentes ausentes
+- ba-151a0a0da2be: capturas independentes ausentes
+- ba-bb6ac4658be8: capturas independentes ausentes
+- ba-f8db1682482c: capturas independentes ausentes
+- ba-57b02fba4948: capturas independentes ausentes
+- ba-32bfbd914caf: capturas independentes ausentes
+- ba-b206d372b7e6: capturas independentes ausentes
+- ba-0d20d273e347: capturas independentes ausentes
+- ba-4e6383b194d4: capturas independentes ausentes
+- ba-aab777a63c7f: capturas independentes ausentes
+- ba-66193b941056: capturas independentes ausentes
+- ba-f52d31f5e105: capturas independentes ausentes
+- ba-84a70228158c: capturas independentes ausentes
+- ba-105283074478: capturas independentes ausentes
+- ba-6a47f9398c65: capturas independentes ausentes
+- ba-982c5bf30deb: capturas independentes ausentes
+- ba-da32f3a58926: capturas independentes ausentes
+- ba-dcba5fc1bc59: capturas independentes ausentes
+- ba-bc0a27488a79: capturas independentes ausentes
+- ba-f4ca67135e24: capturas independentes ausentes
+- ba-9d551a767be3: capturas independentes ausentes
+- ba-fa6be2dfd8a5: capturas independentes ausentes
+- ba-0c588e6d0e78: capturas independentes ausentes
+- ba-c94f1a5dabf0: capturas independentes ausentes
+
+
+[stderr]

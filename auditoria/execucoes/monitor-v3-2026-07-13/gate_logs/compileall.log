@@ -1,0 +1,10 @@
+command=["C:\\Users\\rafae\\AppData\\Local\\Programs\\Python\\Python312\\python.exe", "-m", "compileall", "-q", "scripts"]
+started_at=2026-07-13T08:22:50.583419-03:00
+finished_at=2026-07-13T08:22:50.677935-03:00
+exit_code=0
+timed_out=false
+
+[stdout]
+
+
+[stderr]

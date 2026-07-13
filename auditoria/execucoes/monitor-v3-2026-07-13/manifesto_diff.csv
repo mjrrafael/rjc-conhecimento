@@ -1,0 +1,127 @@
+caminho,status_git,sha256,finalidade,origem
+.github/workflows/portal-audit.yml,M,b098817844defaff381b3d7ca94ccb1437f3f529d38cb050a48f4d3dc19979e3,CI obrigatório fail-closed,rederivado de origin/main
+auditoria/execucoes/monitor-v3-2026-07-13/achados_e_pendencias.md,A,cc7ae9861d2e225aabf96297d25da021482a8c2d2c22c381289925f14ecf4207,evidência e ledger da vigília,rederivado de origin/main
+auditoria/execucoes/monitor-v3-2026-07-13/conformidade.json,A,129a3cd2001772025d9fc4202e654c534e70c5232b3ae6b6c94455ee05227bb3,evidência e ledger da vigília,rederivado de origin/main
+auditoria/execucoes/monitor-v3-2026-07-13/contrato_execucao.yaml,A,096358fb0d5a2a5396af0a0aac64a74d09dc00aa866a076706335fa0330195b8,evidência e ledger da vigília,rederivado de origin/main
+auditoria/execucoes/monitor-v3-2026-07-13/escopo_fontes_canonico.yaml,A,4309fa12884226208bed32837e0950657071d19b410fae8c66e214bc0a6992d2,evidência e ledger da vigília,rederivado de origin/main
+auditoria/execucoes/monitor-v3-2026-07-13/fontes_lidas.csv,A,bc72af0da3f63a1d53d7fd0a87c78ae27d1fd0c08dda0bf505fc086b50513abc,evidência e ledger da vigília,rederivado de origin/main
+auditoria/execucoes/monitor-v3-2026-07-13/gate_invariant_matrix.csv,A,6e998856df848e4f078b68cb59ddd6ec067b5af72e0c1717584a5995cc56a9bd,evidência e ledger da vigília,rederivado de origin/main
+auditoria/execucoes/monitor-v3-2026-07-13/gate_logs/audit_benefit_cards.log,A,3b3efe67f19a5e4ef2a11ceb8e6979020334f8ff6f10ee0a2da76a62d74f7934,evidência e ledger da vigília,rederivado de origin/main
+auditoria/execucoes/monitor-v3-2026-07-13/gate_logs/audit_canonical_source_scope.log,A,6076115e9e56b9febca7293e10767a60247a21e671de7a7be090e49cb12eca75,evidência e ledger da vigília,rederivado de origin/main
+auditoria/execucoes/monitor-v3-2026-07-13/gate_logs/audit_card_scope_visible.log,A,cccdc259502d60682f594cd57601807af572b30fe9cf5c44240684000b56fe7c,evidência e ledger da vigília,rederivado de origin/main
+auditoria/execucoes/monitor-v3-2026-07-13/gate_logs/audit_divergence_html_json_search.log,A,c42753f63f778c13e1c51971992d180372255bb6d3da18d2c4cd663765121d10,evidência e ledger da vigília,rederivado de origin/main
+auditoria/execucoes/monitor-v3-2026-07-13/gate_logs/audit_editorial_date_per_card.log,A,d630451325828bc49aa1c79eef13c9f41b7ab430e9660e258b2b77db81ad9ce2,evidência e ledger da vigília,rederivado de origin/main
+auditoria/execucoes/monitor-v3-2026-07-13/gate_logs/audit_field_provenance.log,A,28ae92eab656ce4a3698a36220e32d89ef1a654151de85b8dfcaa562625bbc31,evidência e ledger da vigília,rederivado de origin/main
+auditoria/execucoes/monitor-v3-2026-07-13/gate_logs/audit_full_content_coverage.log,A,b79e8604b762aa65362fe528e4d179d4a4706e9bd5550df08e0dd0f70211c25d,evidência e ledger da vigília,rederivado de origin/main
+auditoria/execucoes/monitor-v3-2026-07-13/gate_logs/audit_http_platform_receipts.log,A,bbe1052e44d095fcacdd81938bae36b3508c2f4dcdaa2e2e24aac25a87cb2a48,evidência e ledger da vigília,rederivado de origin/main
+auditoria/execucoes/monitor-v3-2026-07-13/gate_logs/audit_index_freshness.log,A,77017cc644023cde741550d2749802c764e283e70c18356ec14d4652071a0013,evidência e ledger da vigília,rederivado de origin/main
+auditoria/execucoes/monitor-v3-2026-07-13/gate_logs/audit_internalization_evidence.log,A,2cb50aa71761be0159836c3019996d68cb89239bb46368ae1f3b39b1078ae06d,evidência e ledger da vigília,rederivado de origin/main
+auditoria/execucoes/monitor-v3-2026-07-13/gate_logs/audit_link_health.log,A,11ba13ddb253e9a89c222d0e38bac546ce510ffaef8779e3522e00fa8b0d0af1,evidência e ledger da vigília,rederivado de origin/main
+auditoria/execucoes/monitor-v3-2026-07-13/gate_logs/audit_link_receipts.log,A,e2cde3153a8fca6a52d552dcf31f6964e2a8a661448e57d8ae2301775315bf08,evidência e ledger da vigília,rederivado de origin/main
+auditoria/execucoes/monitor-v3-2026-07-13/gate_logs/audit_master_coverage.log,A,7f56f72a85edbcd4ba9bed8821dc222658f1efc4820f4fc0174788c9141419e3,evidência e ledger da vigília,rederivado de origin/main
+auditoria/execucoes/monitor-v3-2026-07-13/gate_logs/audit_no_keyword_inference.log,A,61c30438d838581b9b97f01d5bf0aaf0fde3987513f0868ecac9729e7cf944ed,evidência e ledger da vigília,rederivado de origin/main
+auditoria/execucoes/monitor-v3-2026-07-13/gate_logs/audit_no_synthetic_legal_dates.log,A,ae626151cfdd9d25b39d536bbab86ce5dc51685f1d9ae2ad32e00fd380c4f3bd,evidência e ledger da vigília,rederivado de origin/main
+auditoria/execucoes/monitor-v3-2026-07-13/gate_logs/audit_portal.log,A,96759b9cad9d35503e630f9941a713e63a0a209e17891c6150b96e58c663b3e8,evidência e ledger da vigília,rederivado de origin/main
+auditoria/execucoes/monitor-v3-2026-07-13/gate_logs/audit_public_http_hashes.log,A,42c3a93e64eacdcc389cda21f93d1139c1137ca391f8d432915d82e6e67cc311,evidência e ledger da vigília,rederivado de origin/main
+auditoria/execucoes/monitor-v3-2026-07-13/gate_logs/audit_public_set_algebra.log,A,6709f3a2ce842eba36f65450688c1ae5d0960355d412a58f8a0e8649e77addf6,evidência e ledger da vigília,rederivado de origin/main
+auditoria/execucoes/monitor-v3-2026-07-13/gate_logs/audit_publication.log,A,83d9c331b021bc6ccb9ee84da0e0a9c14bbcf913b3e8f5eda6f77313bd73c472,evidência e ledger da vigília,rederivado de origin/main
+auditoria/execucoes/monitor-v3-2026-07-13/gate_logs/audit_quarantine_fingerprints.log,A,bcf782f4474560092ba64249470ac85c552691a21bd3f76ee374aa0469b392b7,evidência e ledger da vigília,rederivado de origin/main
+auditoria/execucoes/monitor-v3-2026-07-13/gate_logs/audit_quarantine_isolation.log,A,8759cc63cfece089ffbfff55df9de9ae58e6c6e44ef4466f1399185c9b71d5f7,evidência e ledger da vigília,rederivado de origin/main
+auditoria/execucoes/monitor-v3-2026-07-13/gate_logs/audit_reforma_transition.log,A,538cbc5dac6276f0c4adfbed7b44623c834d2d9cbee7c1e87c3d9fb7d64cf3fb,evidência e ledger da vigília,rederivado de origin/main
+auditoria/execucoes/monitor-v3-2026-07-13/gate_logs/audit_state_source_quality.log,A,d7ecb57da4b6f8256b4ca84407d0c04730127d189ce55b2205a521974698369f,evidência e ledger da vigília,rederivado de origin/main
+auditoria/execucoes/monitor-v3-2026-07-13/gate_logs/audit_subagent_independence.log,A,6b9aac491e5652561bff9563a47f152cc94d9d500cebf8ec93cc74d36d230447,evidência e ledger da vigília,rederivado de origin/main
+auditoria/execucoes/monitor-v3-2026-07-13/gate_logs/audit_temporal_consistency.log,A,161bdde3e026083c4776c3c28253dacbb9fa997621420f445c577a189381bd19,evidência e ledger da vigília,rederivado de origin/main
+auditoria/execucoes/monitor-v3-2026-07-13/gate_logs/audit_v3_readiness.log,A,d17e242d471b6194a0b36f850621bf6ad1cdf66af002f81be8fc8ac612c51fc9,evidência e ledger da vigília,rederivado de origin/main
+auditoria/execucoes/monitor-v3-2026-07-13/gate_logs/audit_verification_receipts.log,A,cf7ff12872f007d2a079cabd9d7a463941230598bb936da655e7034eb4e86825,evidência e ledger da vigília,rederivado de origin/main
+auditoria/execucoes/monitor-v3-2026-07-13/gate_logs/compileall.log,A,51d66f65714f662e5d93cb657f50fa0fad4c06c6e190a449d2328cc8e51d028b,evidência e ledger da vigília,rederivado de origin/main
+auditoria/execucoes/monitor-v3-2026-07-13/gate_logs/git_diff_check.log,A,5a64219d063c6a79a89614fa1868f9d7071df106113600f713ec6369578c6339,evidência e ledger da vigília,rederivado de origin/main
+auditoria/execucoes/monitor-v3-2026-07-13/gate_logs/git_lfs_inventory.log,A,f0be5a4cf971b74af596d6d1b50dd19b2f9e1fde07b5b7795c951803ed45f03f,evidência e ledger da vigília,rederivado de origin/main
+auditoria/execucoes/monitor-v3-2026-07-13/gate_logs/safe_pages_mutants.log,A,eb7f829b4e05e5d2d113057c58ee7490f90c4152e8a586d3152ce5bbd0640001,evidência e ledger da vigília,rederivado de origin/main
+auditoria/execucoes/monitor-v3-2026-07-13/gate_logs/safe_pages_projection.log,A,6854a783e78ea191066fa4a25d47a7b842b7970c528b107d73fcf6977a94268a,evidência e ledger da vigília,rederivado de origin/main
+auditoria/execucoes/monitor-v3-2026-07-13/gate_logs/validated_benefits_mutants.log,A,5d31608aaf54f110bfa3145b8d4994e6868dfdb41db74b83d04457f75474d2a9,evidência e ledger da vigília,rederivado de origin/main
+auditoria/execucoes/monitor-v3-2026-07-13/gate_mutation_results.json,A,df86ae97f8d8b3d162c9502b0580ef1ad7187c2e1096b05bb57f3254ea1bccbb,evidência e ledger da vigília,rederivado de origin/main
+auditoria/execucoes/monitor-v3-2026-07-13/gate_runs.json,A,00d0b4f5ee1ad607a1128ce0b641c76c50be1c97533227b406ee4af51dc46532,evidência e ledger da vigília,rederivado de origin/main
+auditoria/execucoes/monitor-v3-2026-07-13/http_platform_receipts.json,A,0b45c4e1fb24fbbb4e319c095bb11cdf97089e9a5a476351eed42c77d2599a19,evidência e ledger da vigília,rederivado de origin/main
+auditoria/execucoes/monitor-v3-2026-07-13/inventario_integral.csv,A,SELF_REFERENTIAL_GENERATED_SET,evidência e ledger da vigília,rederivado de origin/main
+auditoria/execucoes/monitor-v3-2026-07-13/inventory_exclusions.csv,A,7253bda31eb1bfaf12f09ab6c4a3c8ab160ae17b2eda9266951ddfd7e2e6696a,evidência e ledger da vigília,rederivado de origin/main
+auditoria/execucoes/monitor-v3-2026-07-13/ledger_verificacao.csv,A,afdea52da9d9721881151f96c9a40cb95a3664c34ebadba8db7830da4657d8a0,evidência e ledger da vigília,rederivado de origin/main
+auditoria/execucoes/monitor-v3-2026-07-13/manifesto_diff.csv,A,SELF_REFERENTIAL_GENERATED_SET,evidência e ledger da vigília,rederivado de origin/main
+auditoria/execucoes/monitor-v3-2026-07-13/matriz_fontes_canonicas.csv,A,d9eb62bfab5dc72ff853af42d71029cbe954490e695a24715debb2c862feaa55,evidência e ledger da vigília,rederivado de origin/main
+auditoria/execucoes/monitor-v3-2026-07-13/production_observation.json,A,48f8c05b0a9532e7eed7071ef8979358ea18f5e37ffa8079299e64fdb14cce69,evidência e ledger da vigília,rederivado de origin/main
+auditoria/execucoes/monitor-v3-2026-07-13/public_http_hashes.json,A,35b1d020580edef7c5f159de0de3299fc800c7c3b0b2c53a96e503a46029a971,evidência e ledger da vigília,rederivado de origin/main
+auditoria/execucoes/monitor-v3-2026-07-13/publication_proof.json,A,c962a8972452931d143eb284930dd1f18b9e83e71a445bfaee34b56249bed012,evidência e ledger da vigília,rederivado de origin/main
+auditoria/execucoes/monitor-v3-2026-07-13/relatorio_conformidade.md,A,87f3beca5eb5e58b7a54e98e1a97a4ee3c512ebf20fea35bba4f2650ef7e6ea9,evidência e ledger da vigília,rederivado de origin/main
+auditoria/execucoes/monitor-v3-2026-07-13/relatorio_final.md,A,1d0dcc5b9c741c5dbeb48be59f92923ad23591cfaf05298867c060409c27652b,evidência e ledger da vigília,rederivado de origin/main
+auditoria/execucoes/monitor-v3-2026-07-13/revisao_adversarial.md,A,f0480a0f789dd238a52ba2640d8c3593695ace71d41a0c2ac7024cc4633e425d,evidência e ledger da vigília,rederivado de origin/main
+auditoria/execucoes/monitor-v3-2026-07-13/revisor_aplicacao/conformidade.json,A,f042b1d38104f91bac99b27344fa0e031afe921b0595f54e0a7564c0da92b4fa,evidência e ledger da vigília,rederivado de origin/main
+auditoria/execucoes/monitor-v3-2026-07-13/revisor_aplicacao/relatorio_conformidade.md,A,5d1cc0649eb49e76bf90aab2c79158c850fd8f635f0cc1dc559178192a78dc63,evidência e ledger da vigília,rederivado de origin/main
+auditoria/execucoes/monitor-v3-2026-07-13/revisor_aplicacao/revisao_adversarial.md,A,56b4f352cdcebefa17af7a1117c82079196e5c7b93136db67a1d56eeb1fae511,evidência e ledger da vigília,rederivado de origin/main
+auditoria/execucoes/monitor-v3-2026-07-13/subagent_session_exports/README.md,A,62ad4158e0474c7b2d10551608cedfe113365b9a0b9a3cea2dc20a6444cbdb9d,evidência e ledger da vigília,rederivado de origin/main
+auditoria/execucoes/monitor-v3-2026-07-13/subagents.json,A,8a22958f404a4b38f47eade9f5e531cd2584e22cfe7d63c1ed49a1332d72dbec,evidência e ledger da vigília,rederivado de origin/main
+auditoria/execucoes/monitor-v3-2026-07-13/subagents_platform_receipts.json,A,4bad88a33784cb4516155bdd5f8205e2c2f021c93edd520a3fd746355c636f05,evidência e ledger da vigília,rederivado de origin/main
+auditoria/execucoes/monitor-v3-2026-07-13/wave1/fontes/final.json,A,073edac5bbd2d12c873e188cce08e022698dbcbd8d1b8b81ad4c0a019c4be224,evidência e ledger da vigília,rederivado de origin/main
+auditoria/execucoes/monitor-v3-2026-07-13/wave1/fontes/fontes_lidas.csv,A,bc72af0da3f63a1d53d7fd0a87c78ae27d1fd0c08dda0bf505fc086b50513abc,evidência e ledger da vigília,rederivado de origin/main
+auditoria/execucoes/monitor-v3-2026-07-13/wave1/fontes/inventario.csv,A,bc1b3661be038702e3cab247dc1b8fa41d39e068a43d74959032904f0d801138,evidência e ledger da vigília,rederivado de origin/main
+auditoria/execucoes/monitor-v3-2026-07-13/wave1/fontes/ledger.csv,A,336b07a0cb3d78394e26e4f3093760a1cac2cda9ff7fe28b736f6e2cf38f581b,evidência e ledger da vigília,rederivado de origin/main
+auditoria/execucoes/monitor-v3-2026-07-13/wave1/fontes/matriz_fontes.csv,A,306b3224fa33f426714f71bcead25cb4c2eded9b66f0764b0599fa5b98bd7efb,evidência e ledger da vigília,rederivado de origin/main
+auditoria/execucoes/monitor-v3-2026-07-13/wave1/fontes/revisao.md,A,e6b916cb77fd8620ac9b0d8b1f97661cd6e29f03fa4c9ef0c8de02a7d95b2ad0,evidência e ledger da vigília,rederivado de origin/main
+auditoria/execucoes/monitor-v3-2026-07-13/wave1/humano/crawl_local.csv,A,efe9b49462fc8292ffc0b9720e47ec0378fa314262326794cbfb82759ef4fd3f,evidência e ledger da vigília,rederivado de origin/main
+auditoria/execucoes/monitor-v3-2026-07-13/wave1/humano/crawl_producao.csv,A,a6f717df7541e93a01513126e26e2d1a2999c03416533a97a967101f5b1fcc55,evidência e ledger da vigília,rederivado de origin/main
+auditoria/execucoes/monitor-v3-2026-07-13/wave1/humano/final.json,A,d9e2ae28ca89b670ce89b413126d9d9d95565bfde55d1049364ca0b6e2b6f01b,evidência e ledger da vigília,rederivado de origin/main
+auditoria/execucoes/monitor-v3-2026-07-13/wave1/humano/inventario.csv,A,30c7d5af52ff88703bc02474b4b4629495babd61dd75d4696a44408b19c8387a,evidência e ledger da vigília,rederivado de origin/main
+auditoria/execucoes/monitor-v3-2026-07-13/wave1/humano/ledger.csv,A,b33243972934678cf352953cb2e9d4e79a26c99b1c4239b0d2c568e02efb43dc,evidência e ledger da vigília,rederivado de origin/main
+auditoria/execucoes/monitor-v3-2026-07-13/wave1/humano/revisao.md,A,e23a0b19527172db5193027ed99ab87cd8f7dfbbaacf8258c5775fcebe3212c1,evidência e ledger da vigília,rederivado de origin/main
+auditoria/execucoes/monitor-v3-2026-07-13/wave1/ia/final.json,A,e458c3a14de654dd8f90ec804275afaac222884bdc207442737fb20791e44400,evidência e ledger da vigília,rederivado de origin/main
+auditoria/execucoes/monitor-v3-2026-07-13/wave1/ia/gate_review.csv,A,c282efdc29ed8cabfda249c0ca0cdeaf1488d38b032ff3bcd264334c57b19c52,evidência e ledger da vigília,rederivado de origin/main
+auditoria/execucoes/monitor-v3-2026-07-13/wave1/ia/inventario.csv,A,77e2bb76121ec980d8980557e1bf639f0bf041c7eb7b2c27d93941dc96da6265,evidência e ledger da vigília,rederivado de origin/main
+auditoria/execucoes/monitor-v3-2026-07-13/wave1/ia/ledger.csv,A,7774c0a9b038e248178979cf3b0dc88b95a0ab01720a336e562df090be2efbae,evidência e ledger da vigília,rederivado de origin/main
+auditoria/execucoes/monitor-v3-2026-07-13/wave1/ia/revisao.md,A,a10b7208e82f1a3c1c3db129cdc6e0e66564f945994f663d470d26575d88ca30,evidência e ledger da vigília,rederivado de origin/main
+auditoria/execucoes/monitor-v3-2026-07-13/wave1/ia/superficies.csv,A,fa35e6dd6ea78c579ad044f6cbf416ab5a16e0e3919994a4a11eb546003a855a,evidência e ledger da vigília,rederivado de origin/main
+auditoria/execucoes/monitor-v3-2026-07-13/wave2/fontes/final.json,A,6e40d1590dab42cdca9a2051d9cd2fe1d26237847ae02734acd3c53ac1d9ba2e,evidência e ledger da vigília,rederivado de origin/main
+auditoria/execucoes/monitor-v3-2026-07-13/wave2/fontes/fontes_lidas.csv,A,1a572a2a6884a4b658f5eefbd96578d6410f5eb63ffaa35481c261ab114db486,evidência e ledger da vigília,rederivado de origin/main
+auditoria/execucoes/monitor-v3-2026-07-13/wave2/fontes/inventario.csv,A,4fc2ab51db0322b80311e76c97a51a294d0bfb4561e3e6be8e63406d6481fa50,evidência e ledger da vigília,rederivado de origin/main
+auditoria/execucoes/monitor-v3-2026-07-13/wave2/fontes/ledger.csv,A,f9b5622e057d25c4fd8126080923365f4ac3a573e9e86789e37f78d5437e68b9,evidência e ledger da vigília,rederivado de origin/main
+auditoria/execucoes/monitor-v3-2026-07-13/wave2/fontes/matriz_fontes.csv,A,4080cda3f6f12bfd60dd8597c47b4e18d6a12693c455f404294bb7d18f559b5a,evidência e ledger da vigília,rederivado de origin/main
+auditoria/execucoes/monitor-v3-2026-07-13/wave2/fontes/revisao.md,A,0f307bd75d58d61deffc7e64f0debe0efdaee220d48c7da130ea257494b9ee82,evidência e ledger da vigília,rederivado de origin/main
+auditoria/execucoes/monitor-v3-2026-07-13/wave2/humano/crawl_local.csv,A,3517deb9616a29f41fb676f9c3373100c85b56ab81ef069b91324a32bbb6f13c,evidência e ledger da vigília,rederivado de origin/main
+auditoria/execucoes/monitor-v3-2026-07-13/wave2/humano/crawl_producao.csv,A,77a983164356c86b6d2382cfb1a4f4569762fd5991c94974698bdbc3b7a7bdf6,evidência e ledger da vigília,rederivado de origin/main
+auditoria/execucoes/monitor-v3-2026-07-13/wave2/humano/final.json,A,a34baf0be3c78c7fec2b9d1db84f7c6214dc7d499146d9f70b0866a6f8b543a6,evidência e ledger da vigília,rederivado de origin/main
+auditoria/execucoes/monitor-v3-2026-07-13/wave2/humano/inventario.csv,A,6bf72fb208aefb61d23795834a1cbd7bbb277cdda331433a099643ed476ead66,evidência e ledger da vigília,rederivado de origin/main
+auditoria/execucoes/monitor-v3-2026-07-13/wave2/humano/ledger.csv,A,b3c3b3611499a256c898023cc55fa8c6136bbbfc9baeb4e35d62bd642eb49912,evidência e ledger da vigília,rederivado de origin/main
+auditoria/execucoes/monitor-v3-2026-07-13/wave2/humano/revisao.md,A,ad80462661c4b4a64af0080ac3ef14390b2484deadf76fc140fe71023e4a0219,evidência e ledger da vigília,rederivado de origin/main
+auditoria/execucoes/monitor-v3-2026-07-13/wave2/ia/actual_gate_results.json,A,538eb72c16a9bd7c5451bb97647c15094c1a09a53145995af16168139efdc31e,evidência e ledger da vigília,rederivado de origin/main
+auditoria/execucoes/monitor-v3-2026-07-13/wave2/ia/audit_scan.py,A,49fa6903308e9a0c9d05229e7b5802fcee7d28e17c38acd2530e3f05f9fc07c9,evidência e ledger da vigília,rederivado de origin/main
+auditoria/execucoes/monitor-v3-2026-07-13/wave2/ia/bypass_results.json,A,2472b7615e7d31ece3c828a2b7c7079c52ea258ad6362d7fad4517f415644ef8,evidência e ledger da vigília,rederivado de origin/main
+auditoria/execucoes/monitor-v3-2026-07-13/wave2/ia/final.json,A,b42d42edbb6a0cacdaeb32074332228f5f318f42f2a266d484f3e0f02925d74b,evidência e ledger da vigília,rederivado de origin/main
+auditoria/execucoes/monitor-v3-2026-07-13/wave2/ia/gate_mutants.py,A,a376cbc3ed82c219dfdef854ba383db75d419547a04d20b79192d4e267fc30eb,evidência e ledger da vigília,rederivado de origin/main
+auditoria/execucoes/monitor-v3-2026-07-13/wave2/ia/gate_mutation_results_ia.json,A,e3fe8d16987faf8ebcc57131ccf0594b10a100a819ad12af77906fc96a9c6a41,evidência e ledger da vigília,rederivado de origin/main
+auditoria/execucoes/monitor-v3-2026-07-13/wave2/ia/gate_review.csv,A,ea86a0b13a599e755f38ce2a729d49562eb12fa1f0397ec2325ad0a2db3a9725,evidência e ledger da vigília,rederivado de origin/main
+auditoria/execucoes/monitor-v3-2026-07-13/wave2/ia/inventario.csv,A,f49f5dc8a73747e0ae82985ac092105e1ca8e9c5a399ef82e231f89b49c859ef,evidência e ledger da vigília,rederivado de origin/main
+auditoria/execucoes/monitor-v3-2026-07-13/wave2/ia/ledger.csv,A,c9ad8b5980af86e6eebebdc731e807b7b2ff2bb950024b48130f9ef611f26853,evidência e ledger da vigília,rederivado de origin/main
+auditoria/execucoes/monitor-v3-2026-07-13/wave2/ia/ledger_verificacao.csv,A,ed3805e3d6b358612c190b158b9dd95bb60bedae8037e04c23e2f40823f9ca24,evidência e ledger da vigília,rederivado de origin/main
+auditoria/execucoes/monitor-v3-2026-07-13/wave2/ia/production_scan.json,A,d1ba096c2e94d04712f11366f1733a87093b02b7a812a8ed7ae503fbd95f2e0d,evidência e ledger da vigília,rederivado de origin/main
+auditoria/execucoes/monitor-v3-2026-07-13/wave2/ia/revisao.md,A,bf575827369fbc1b0074c01c8b449e68290cbc5647898a413cea7d03e219368e,evidência e ledger da vigília,rederivado de origin/main
+auditoria/execucoes/monitor-v3-2026-07-13/wave2/ia/scan_results.json,A,b78c168cf302e88cb30d76279f4862f27d36f2edb29be49d57c6e290ff888bbe,evidência e ledger da vigília,rederivado de origin/main
+auditoria/execucoes/monitor-v3-2026-07-13/wave2/ia/superficies.csv,A,446f06c27698bc517670974dbbbc16f70c6bf06354640f81f543c286f3b1d480,evidência e ledger da vigília,rederivado de origin/main
+auditoria/execucoes/monitor-v3-2026-07-13/wave2/ia/workflow.md,A,597ad6848bb5744085af567183ba0eeffc530c8eb56b4f0d37d99ae5b9a27032,evidência e ledger da vigília,rederivado de origin/main
+auditoria/execucoes/monitor-v3-2026-07-13/workflow.md,A,782de546250483eb446302bc0c7bb2d57f45d4acb7bf532752a607502a207fd7,evidência e ledger da vigília,rederivado de origin/main
+docs/monitoramento/monitoramento-legislativo-2026-07-13.md,A,793c5f3b2a9e85e02ff7bbd15c22d07119b0a9b643041dc9d8f4d0cd1aafad7e,evidência e ledger da vigília,rederivado de origin/main
+scripts/audit_canonical_source_scope.py,A,078a3f824d82e9fe035c3e97686053fc067309757fddf3824b03b1e706232968,controle fail-closed e auditoria,rederivado de origin/main
+scripts/audit_field_provenance.py,A,c1894d4b3f44ac2214ab0a8b6aed9f2aeee3ba79796be73d0a2fcfbd74d89662,controle fail-closed e auditoria,rederivado de origin/main
+scripts/audit_full_content_coverage.py,A,9ce134d0d729ef2f77332ca7e504f4130f8ac91d6a01c4d699ddc8a777a3b31a,controle fail-closed e auditoria,rederivado de origin/main
+scripts/audit_http_platform_receipts.py,A,5d0335b55790d533ebe9329fcd7453fec9e8458f53bb7c9498e4fa674f42579e,controle fail-closed e auditoria,rederivado de origin/main
+scripts/audit_internalization_evidence.py,A,633d8aa3c688638f5a642f64f200733ca6b22c546fb65f1966b44906000118a2,controle fail-closed e auditoria,rederivado de origin/main
+scripts/audit_link_receipts.py,A,6127ac6324c217505344b23e7f7411382205e1acd5e1c3d72693bec7a9cd3c46,controle fail-closed e auditoria,rederivado de origin/main
+scripts/audit_no_synthetic_legal_dates.py,A,1063f425686dbf4b0cefa6dd87c39d905e3511a67c794caa763921aa69b3de50,controle fail-closed e auditoria,rederivado de origin/main
+scripts/audit_public_http_hashes.py,A,eefcebf113f78efffb75ac961dcce9c18dba2587c6035df59d627a5ce548476c,controle fail-closed e auditoria,rederivado de origin/main
+scripts/audit_public_set_algebra.py,A,c85dc811156def452668e705f56486652784375957009e985f2c698ace32fee6,controle fail-closed e auditoria,rederivado de origin/main
+scripts/audit_publication.py,A,69215154817fa028c4c753286be10144daadefdc1bd820e948ba66efdceae91e,controle fail-closed e auditoria,rederivado de origin/main
+scripts/audit_quarantine_fingerprints.py,A,13bcff8e792fcedd80e03de7037e6d0f1c1781852d16294dfbd8fac78ce80175,controle fail-closed e auditoria,rederivado de origin/main
+scripts/audit_safe_pages_projection.py,M,d6a8d77a0792bbb45261c65bb3fe627ff5f25a69a1e730d821275357bef00ac5,controle fail-closed e auditoria,rederivado de origin/main
+scripts/audit_subagent_independence.py,A,7e48d22c5da8e23f70b433a7c975fc3c4b0acd51103fe219b23b55a366ad492f,controle fail-closed e auditoria,rederivado de origin/main
+scripts/audit_v3_readiness.py,M,aeb487b289ad2d4bc8ccd2daefde05f551854ca24df80d78b18c316ffba27e87,controle fail-closed e auditoria,rederivado de origin/main
+scripts/audit_verification_receipts.py,A,b7de505abddb5c67723d10849353f6e2eb040d80ecbe310073f147a98c620ea1,controle fail-closed e auditoria,rederivado de origin/main
+scripts/build_diff_manifest.py,M,ce89aec90ab150e11498000624d3f9f724e52b03b746a41b46e6c5cc3949201f,controle fail-closed e auditoria,rederivado de origin/main
+scripts/monitor_v3_inventory.py,M,7347da2ae161ace0232cec1998af4369dbfb52269579f527a722cc95d299d616,controle fail-closed e auditoria,rederivado de origin/main
+scripts/portal_v3_gates.py,A,6859fc70a819b178ad68c269e9e85d7f938c1e7c78bf90472ae3bbb22f9a2a40,controle fail-closed e auditoria,rederivado de origin/main
+scripts/run_portal_v3_gates.py,A,958eb0d9609ea8297a4d405bba5ce9a013b9c9cca9f5f97f3824cb39d6e91ada,controle fail-closed e auditoria,rederivado de origin/main
