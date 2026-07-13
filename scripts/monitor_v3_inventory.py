@@ -5,13 +5,28 @@ from __future__ import annotations
 
 import csv
 import hashlib
+import os
 import re
 import subprocess
 from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[1]
-RUN = ROOT / "auditoria" / "execucoes" / "monitor-v3-2026-07-12"
+
+
+def resolve_run() -> Path:
+    configured = os.environ.get("RJC_MONITOR_RUN", "").strip()
+    if configured:
+        path = Path(configured)
+        return path if path.is_absolute() else ROOT / path
+    base = ROOT / "auditoria" / "execucoes"
+    candidates = sorted(path for path in base.glob("monitor-v3-*") if path.is_dir())
+    if not candidates:
+        raise RuntimeError("nenhuma execução monitor-v3 encontrada; defina RJC_MONITOR_RUN")
+    return candidates[-1]
+
+
+RUN = resolve_run()
 UFS = "AC AL AM AP BA CE DF ES GO MA MG MS MT PA PB PE PI PR RJ RN RO RR RS SC SE SP TO".split()
 STATE_CLASSES = ("SEFAZ_LEGISLACAO", "DOE", "ASSEMBLEIA_LEGISLATIVA")
 FEDERAL_FAMILIES = (
@@ -105,7 +120,9 @@ def write_scope(urls: set[str]) -> None:
     scope = RUN / "escopo_fontes_canonico.yaml"
     lines = [
         "schema: rjc-canonical-source-scope-v3",
-        "baseline_sha: 23d864f510bfbb16d6ef5d73049c63a1003b5ac6",
+        "baseline_sha: " + subprocess.check_output(
+            ["git", "merge-base", "HEAD", "origin/main"], cwd=ROOT, text=True, encoding="utf-8"
+        ).strip(),
         "jurisdicoes:",
         "  - BR",
         *[f"  - {uf}" for uf in UFS],

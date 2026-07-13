@@ -5,14 +5,29 @@ from __future__ import annotations
 
 import csv
 import hashlib
+import os
 import subprocess
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-OUT = ROOT / "auditoria" / "execucoes" / "monitor-v3-2026-07-12" / "manifesto_diff.csv"
+
+
+def resolve_run() -> Path:
+    configured = os.environ.get("RJC_MONITOR_RUN", "").strip()
+    if configured:
+        path = Path(configured)
+        return path if path.is_absolute() else ROOT / path
+    candidates = sorted((ROOT / "auditoria" / "execucoes").glob("monitor-v3-*"))
+    if not candidates:
+        raise RuntimeError("nenhuma execução monitor-v3 encontrada")
+    return candidates[-1]
+
+
+RUN = resolve_run()
+OUT = RUN / "manifesto_diff.csv"
 CYCLIC_GENERATED = {
     OUT.relative_to(ROOT).as_posix(),
-    "auditoria/execucoes/monitor-v3-2026-07-12/inventario_integral.csv",
+    (RUN / "inventario_integral.csv").relative_to(ROOT).as_posix(),
 }
 
 
