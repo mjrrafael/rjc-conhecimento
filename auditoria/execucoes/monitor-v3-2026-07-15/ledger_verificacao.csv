@@ -1,0 +1,14 @@
+id,criterio,metodo,status,evidencia
+RAC-001,"Criterios falsificaveis definidos antes da execucao",leitura de workflow,OK,workflow.md
+RAC-002,"Ledger com status permitido e evidencia concreta",conferencia de artefatos,OK,ledger_verificacao.csv
+RAC-003,"Executar revisao adversarial real com marcador cadeia re-derivada e fonte primaria crua",tarefas novas somente leitura,OK,revisao_adversarial.md; revisor_aplicacao.md
+RAC-004,"Detalhe interno sustenta a conclusao de seguranca publica",hash normalizado e crawl da producao,OK,production_observation.json
+RAC-005,"Fechar com linha explicita Status BLOQUEADO e decisao permitida",verificador e relatorio,BLOQUEADO,relatorio_final.md
+PUB-001,"Pages aponta para o SHA principal e publicacao esta em quarentena segura",GitHub Pages API e HTTP,OK,production_observation.json
+PUB-002,"Nenhum fato tributario esta publicado",projecao Jekyll/HTTP/crawl 655 URLs,OK,revisao_adversarial.md
+PR-001,"PR #26 nao e candidata aprovada",consulta GitHub e log CI,OK,achados_e_pendencias.md
+V3-001,"Matriz de fontes minima possui prova material completa",rederivacao de 94 linhas,BLOQUEADO,revisao_adversarial.md
+V3-002,"Cards publicaveis possuem proveniencia e recibos por campo",rederivacao dos dados,BLOQUEADO,revisao_adversarial.md
+V3-003,"Independencia de ondas e mutantes e certificavel",recibos nativos e raizes externas,BLOQUEADO,subagents_platform_receipts.json
+V3-004,"Jekyll foi reproduzido localmente",execucao local,A VALIDAR,achados_e_pendencias.md
+COR-001,"Corrigir a ausencia de recibos nativos, duas raizes confiaveis e matriz/card material antes de liberar o acervo",provisionamento externo e nova execucao integral,CORRIGIR,achados_e_pendencias.md

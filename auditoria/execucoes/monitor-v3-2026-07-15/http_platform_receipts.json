@@ -1,0 +1,6 @@
+{
+  "schema": "rjc-http-platform-receipts-v3",
+  "native_receipt_status": "UNAVAILABLE",
+  "receipts": [],
+  "reason": "As observacoes HTTP desta vigilia nao contem IDs de chamada, cadeia completa, headers e corpo bruto arquivado exportados pela plataforma; nao foram declaradas recibos nativos."
+}

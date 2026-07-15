@@ -1,0 +1,153 @@
+{
+  "verificador_versao": "4.5.0",
+  "skill": "revisar-ate-concluir",
+  "contract": "C:\\Users\\rafae\\Documents\\Codex\\2026-06-14\\pesquisa-na-mem-ria-profunda-l\\worktrees\\rjc-monitor-2026-07-15-1200\\auditoria\\execucoes\\monitor-v3-2026-07-15\\contrato_execucao.yaml",
+  "workdir": "C:\\Users\\rafae\\Documents\\Codex\\2026-06-14\\pesquisa-na-mem-ria-profunda-l\\worktrees\\rjc-monitor-2026-07-15-1200\\auditoria\\execucoes\\monitor-v3-2026-07-15",
+  "checked_at": "2026-07-15T07:51:23",
+  "conforme": true,
+  "status_final_detectado": "BLOQUEADO",
+  "decisao_final_detectada": "MANTER_QUARENTENA_SEGURA",
+  "pendencias_abertas_no_ledger": 6,
+  "issues": [],
+  "warnings": [],
+  "checks": [
+    {
+      "artifact": "workflow.md",
+      "ok": true,
+      "detail": "ok (2839 bytes)"
+    },
+    {
+      "artifact": "workflow.md",
+      "ok": true,
+      "detail": "UTF-8 integro",
+      "check": "integridade_textual"
+    },
+    {
+      "artifact": "ledger_verificacao.csv",
+      "ok": true,
+      "detail": "ok (1699 bytes)"
+    },
+    {
+      "artifact": "ledger_verificacao.csv",
+      "ok": true,
+      "detail": "UTF-8 integro",
+      "check": "integridade_textual"
+    },
+    {
+      "artifact": "fontes_lidas.csv",
+      "ok": true,
+      "detail": "ok (2127 bytes)"
+    },
+    {
+      "artifact": "fontes_lidas.csv",
+      "ok": true,
+      "detail": "UTF-8 integro",
+      "check": "integridade_textual"
+    },
+    {
+      "artifact": "inventario_documentos.csv",
+      "ok": true,
+      "detail": "ok (2069 bytes)"
+    },
+    {
+      "artifact": "inventario_documentos.csv",
+      "ok": true,
+      "detail": "UTF-8 integro",
+      "check": "integridade_textual"
+    },
+    {
+      "artifact": "achados_e_pendencias.md",
+      "ok": true,
+      "detail": "ok (1892 bytes)"
+    },
+    {
+      "artifact": "achados_e_pendencias.md",
+      "ok": true,
+      "detail": "UTF-8 integro",
+      "check": "integridade_textual"
+    },
+    {
+      "artifact": "revisao_adversarial.md",
+      "ok": true,
+      "detail": "ok (2818 bytes)"
+    },
+    {
+      "artifact": "revisao_adversarial.md",
+      "ok": true,
+      "detail": "UTF-8 integro",
+      "check": "integridade_textual"
+    },
+    {
+      "artifact": "relatorio_final.md",
+      "ok": true,
+      "detail": "ok (1110 bytes)"
+    },
+    {
+      "artifact": "relatorio_final.md",
+      "ok": true,
+      "detail": "UTF-8 integro",
+      "check": "integridade_textual"
+    },
+    {
+      "artifact": "conformidade.json",
+      "ok": true,
+      "detail": "ok (4398 bytes)"
+    },
+    {
+      "artifact": "conformidade.json",
+      "ok": true,
+      "detail": "UTF-8 integro",
+      "check": "integridade_textual"
+    }
+  ],
+  "gates": [
+    {
+      "gate": "G0",
+      "nome": "enquadramento_e_escopo",
+      "ok": true,
+      "faltando": []
+    },
+    {
+      "gate": "G1",
+      "nome": "fontes_e_inventario",
+      "ok": true,
+      "faltando": []
+    },
+    {
+      "gate": "G2",
+      "nome": "execucao_com_evidencia",
+      "ok": true,
+      "faltando": []
+    },
+    {
+      "gate": "G3",
+      "nome": "revisao_adversarial",
+      "ok": true,
+      "faltando": []
+    },
+    {
+      "gate": "G4",
+      "nome": "verificador_deterministico",
+      "ok": true,
+      "faltando": []
+    },
+    {
+      "gate": "G5",
+      "nome": "fechamento_literal",
+      "ok": true,
+      "faltando": []
+    }
+  ],
+  "checks_obrigatorios_declarados": [
+    "RAC-001 | Definir criterios falsificaveis antes de executar.",
+    "RAC-002 | Registrar ledger com status permitido e evidencia concreta existente.",
+    "RAC-003 | Executar revisao adversarial real com marcador 'cadeia re-derivada:' e fonte primaria crua.",
+    "RAC-004 | Conferir o detalhe interno que sustenta resumo, subtotal, dashboard ou relatorio sintetico.",
+    "RAC-005 | Fechar com linha explicita Status: CONCLUIDO, CONCLUIDO COM RESSALVA, A VALIDAR ou BLOQUEADO."
+  ],
+  "camadas_manuais": [
+    "Re-derivacao da superficie publicada, matriz de fontes e dados de cards a partir de arquivos/HTTP crus.",
+    "Cobertura adversarial: toda URL juridica servida fora da projeção segura derruba a decisao.",
+    "Recibos nativos, raizes de confianca e prova negativa de independencia permanecem bloqueios externos."
+  ]
+}

@@ -1,0 +1,15 @@
+fonte,tipo,caminho_ou_url,escopo_lido,limitacao
+baseline Git,git,https://github.com/mjrrafael/rjc-conhecimento/commit/f814f80efbab84bf43b671bf544c4678d4dda82a,parcial,"metadado Git e arvore rederivada; nao e fonte juridica"
+configuracao Pages,arquivo,C:\Users\rafae\Documents\Codex\2026-06-14\pesquisa-na-mem-ria-profunda-l\worktrees\rjc-monitor-2026-07-15-1200\_config.yml,integral,
+workflow CI,arquivo,C:\Users\rafae\Documents\Codex\2026-06-14\pesquisa-na-mem-ria-profunda-l\worktrees\rjc-monitor-2026-07-15-1200\.github\workflows\portal-audit.yml,integral,
+producao raiz,web,https://mjrrafael.github.io/rjc-conhecimento/,parcial,"observacao HTTP sem recibo nativo exportavel"
+producao 404,web,https://mjrrafael.github.io/rjc-conhecimento/404.html,parcial,"observacao HTTP sem recibo nativo exportavel"
+producao robots,web,https://mjrrafael.github.io/rjc-conhecimento/robots.txt,parcial,"observacao HTTP sem recibo nativo exportavel"
+producao llms,web,https://mjrrafael.github.io/rjc-conhecimento/llms.txt,parcial,"observacao HTTP sem recibo nativo exportavel"
+Pages API,api,https://api.github.com/repos/mjrrafael/rjc-conhecimento/pages,parcial,"metadado de deploy nao substitui recibo juridico"
+Pages build API,api,https://api.github.com/repos/mjrrafael/rjc-conhecimento/pages/builds/1092129146,parcial,"metadado de deploy"
+CI portal-audit,api,https://github.com/mjrrafael/rjc-conhecimento/actions/runs/29210072326,parcial,"log remoto lido por gh"
+PR 26,api,https://github.com/mjrrafael/rjc-conhecimento/pull/26,parcial,"candidata bloqueada; nao e prova de publicacao"
+matriz v3,arquivo,C:\Users\rafae\Documents\Codex\2026-06-14\pesquisa-na-mem-ria-profunda-l\worktrees\rjc-monitor-2026-07-12-1610\auditoria\execucoes\monitor-v3-2026-07-12\matriz_fontes_canonicas.csv,integral,
+dados cards,arquivo,C:\Users\rafae\Documents\Codex\2026-06-14\pesquisa-na-mem-ria-profunda-l\worktrees\rjc-monitor-2026-07-15-1200\data\benefits_crosswalk.json,integral,
+dados quarentena,arquivo,C:\Users\rafae\Documents\Codex\2026-06-14\pesquisa-na-mem-ria-profunda-l\worktrees\rjc-monitor-2026-07-15-1200\data\benefits_quarantine.json,integral,
