@@ -118,6 +118,8 @@ urls_referenciadas:
   - https://aacpdappls.net.ms.gov.br/appls/legislação/serc/legato.nsf/23b657614c182061042579c80053770d/0fabf2cd6f2fefed04256ae7004d34c5
   - https://aacpdappls.net.ms.gov.br/appls/legislação/serc/legato.nsf/23b657614c182061042579c80053770d/8c374a7005c9643104256da9006e87c4
   - https://aacpdappls.net.ms.gov.br/appls/legislação/serc/legato.nsf/7a2675fdf26e910204256b1f005348a7/d3cc39d3a6aeeda803256cc20066f1fb
+  - https://api.github.com/repos/mjrrafael/rjc-conhecimento/pages,parcial
+  - https://api.github.com/repos/mjrrafael/rjc-conhecimento/pages/builds/1092129146,parcial
   - https://app1.sefaz.mt.gov.br/0425762E005567C5/9733A1D3F5BB1AB384256710004D4754/5631FD07CED41894842584490048FC5A
   - https://app1.sefaz.mt.gov.br/Sistema/Legislacao/legislacaotribut.nsf/173e6c0d2202fdcb03258b1700659f1e/7cd6803a7eaf464103258bf5005302a2/%24FILE/ANEXO%20%C3%9ANICO%20-%20Port.%20211.2024.pdf
   - https://app1.sefaz.mt.gov.br/Sistema/Legislação/legislacaotribut.nsf/173e6c0d2202fdcb03258b1700659f1e/7cd6803a7eaf464103258bf5005302a2/%24FILE/ANEXO%20%C3%9ANICO%20-%20Port.%20211.2024.pdf
@@ -182,6 +184,8 @@ urls_referenciadas:
   - https://github.com/mjrrafael/rjc-conhecimento/actions/runs/27911232574
   - https://github.com/mjrrafael/rjc-conhecimento/actions/runs/28114468688`
   - https://github.com/mjrrafael/rjc-conhecimento/actions/runs/28343979900
+  - https://github.com/mjrrafael/rjc-conhecimento/actions/runs/29210072326,parcial
+  - https://github.com/mjrrafael/rjc-conhecimento/commit/f814f80efbab84bf43b671bf544c4678d4dda82a,parcial
   - https://github.com/mjrrafael/rjc-conhecimento/pull/10
   - https://github.com/mjrrafael/rjc-conhecimento/pull/12
   - https://github.com/mjrrafael/rjc-conhecimento/pull/14
@@ -192,6 +196,9 @@ urls_referenciadas:
   - https://github.com/mjrrafael/rjc-conhecimento/pull/22
   - https://github.com/mjrrafael/rjc-conhecimento/pull/24,metadados
   - https://github.com/mjrrafael/rjc-conhecimento/pull/25`
+  - https://github.com/mjrrafael/rjc-conhecimento/pull/26
+  - https://github.com/mjrrafael/rjc-conhecimento/pull/26,parcial
+  - https://github.com/mjrrafael/rjc-conhecimento/pull/26`
   - https://github.com/mjrrafael/rjc-conhecimento/pull/4`
   - https://github.com/mjrrafael/rjc-conhecimento/pull/6`
   - https://github.com/mjrrafael/rjc-conhecimento/pull/8
@@ -289,7 +296,11 @@ urls_referenciadas:
   - https://mbusca.sefaz.ba.gov.br/DITRI/normas_complementares/decretos/decreto_2018_18802.pdf
   - https://mjrrafael.github.io/rjc-conhecimento
   - https://mjrrafael.github.io/rjc-conhecimento/
+  - https://mjrrafael.github.io/rjc-conhecimento/,parcial
   - https://mjrrafael.github.io/rjc-conhecimento/,parcial,raiz
+  - https://mjrrafael.github.io/rjc-conhecimento/404.html
+  - https://mjrrafael.github.io/rjc-conhecimento/404.html,parcial
+  - https://mjrrafael.github.io/rjc-conhecimento/`
   - https://mjrrafael.github.io/rjc-conhecimento/assets/build-freshness.json
   - https://mjrrafael.github.io/rjc-conhecimento/assets/build-freshness.json`
   - https://mjrrafael.github.io/rjc-conhecimento/assets/llm-manifest.json
@@ -959,6 +970,7 @@ urls_referenciadas:
   - https://mjrrafael.github.io/rjc-conhecimento/folha-clt/index.html
   - https://mjrrafael.github.io/rjc-conhecimento/guia-dp-rh.html
   - https://mjrrafael.github.io/rjc-conhecimento/llms.txt
+  - https://mjrrafael.github.io/rjc-conhecimento/llms.txt,parcial
   - https://mjrrafael.github.io/rjc-conhecimento/llms.txt`:
   - https://mjrrafael.github.io/rjc-conhecimento/manual-financeiro.html
   - https://mjrrafael.github.io/rjc-conhecimento/manual-fiscal.html
@@ -968,6 +980,8 @@ urls_referenciadas:
   - https://mjrrafael.github.io/rjc-conhecimento/painel-fiscal/index.html
   - https://mjrrafael.github.io/rjc-conhecimento/produto.html
   - https://mjrrafael.github.io/rjc-conhecimento/produto.html`
+  - https://mjrrafael.github.io/rjc-conhecimento/robots.txt
+  - https://mjrrafael.github.io/rjc-conhecimento/robots.txt,parcial
   - https://mjrrafael.github.io/rjc-conhecimento/sitemap.xml
   - https://mjrrafael.github.io/rjc-conhecimento/sitemap.xml`
   - https://nfe.set.rn.gov.br/scimt/login1.asp
