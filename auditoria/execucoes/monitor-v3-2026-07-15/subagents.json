@@ -1,0 +1,13 @@
+{
+  "schema": "rjc-subagents-observation-v1",
+  "wave": "baseline",
+  "baseline_sha": "f814f80efbab84bf43b671bf544c4678d4dda82a",
+  "tasks": [
+    {"canonical_task_path": "/root/baseline_fontes", "role": "revisor_fontes_vigencia", "fork_turns": "none", "result": "BLOQUEADO: 94/94 linhas sem prova material"},
+    {"canonical_task_path": "/root/baseline_humano", "role": "revisor_humano_portal", "fork_turns": "none", "result": "OK para quarentena publica; 655 URLs confrontadas"},
+    {"canonical_task_path": "/root/baseline_ia", "role": "revisor_ia_dados", "fork_turns": "none", "result": "V3 NAO PRONTO: cards/gates sem lastro"}
+  ],
+  "application_reviewer": {"canonical_task_path": "/root/revisor_execucao_curto", "fork_turns": "none", "result": "CONFORME para a coerencia do bloqueio"},
+  "certifiable_independence": false,
+  "reason": "A plataforma compartilha filesystem e nao exporta historico imutavel de leituras/tool calls."
+}

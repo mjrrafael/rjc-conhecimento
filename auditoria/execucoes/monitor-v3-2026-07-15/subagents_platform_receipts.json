@@ -1,0 +1,11 @@
+{
+  "schema": "rjc-subagents-platform-receipts-v3",
+  "native_receipt_status": "UNAVAILABLE",
+  "tasks_observed": ["/root/baseline_fontes", "/root/baseline_humano", "/root/baseline_ia", "/root/revisor_execucao_curto"],
+  "fork_turns_requested": "none",
+  "native_session_exports": null,
+  "native_tool_call_history": null,
+  "negative_access_proof": false,
+  "certifiable": false,
+  "reason": "Esta plataforma nao fornece exportacao imutavel confrontavel de prompts, chamadas, caminhos lidos e resultados de spawn/finalizacao."
+}

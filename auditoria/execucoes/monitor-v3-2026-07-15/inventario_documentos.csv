@@ -1,0 +1,10 @@
+arquivo,hash,tipo,lido_integral,motivo_se_nao
+C:\Users\rafae\Documents\Codex\2026-06-14\pesquisa-na-mem-ria-profunda-l\worktrees\rjc-monitor-2026-07-15-1200\index.html,sha256:d7a6028b2525c0faacb8811c81c8e5c2123578adf3f00ff28bff0e1559b4be6e,superficie Pages,S,
+C:\Users\rafae\Documents\Codex\2026-06-14\pesquisa-na-mem-ria-profunda-l\worktrees\rjc-monitor-2026-07-15-1200\404.html,sha256:d580b6695218dd56e4a6f3bc0e006725109c7e58dbaa39154c2cd960768d5952,superficie Pages,S,
+C:\Users\rafae\Documents\Codex\2026-06-14\pesquisa-na-mem-ria-profunda-l\worktrees\rjc-monitor-2026-07-15-1200\robots.txt,sha256:a8f31103361fca68bef71fc69cff844b7c23bd3d64d2b872d74690cbda656bfc,superficie Pages,S,
+C:\Users\rafae\Documents\Codex\2026-06-14\pesquisa-na-mem-ria-profunda-l\worktrees\rjc-monitor-2026-07-15-1200\llms.txt,sha256:c2fbc181df664a4c123c6758b9419a31aa5653f676f09fc1b9d513405510256a,superficie Pages,S,
+C:\Users\rafae\Documents\Codex\2026-06-14\pesquisa-na-mem-ria-profunda-l\worktrees\rjc-monitor-2026-07-15-1200\_config.yml,sha256:cedf76ae9da7968a24c138ef5bee2c6b1b30f44bc658ee9c7cef3321d9e354c3,configuracao,S,
+C:\Users\rafae\Documents\Codex\2026-06-14\pesquisa-na-mem-ria-profunda-l\worktrees\rjc-monitor-2026-07-15-1200\.github\workflows\portal-audit.yml,sha256:ce45510b6a2db79a1e74acb7ce48384ec55a41e540cf8c8c5e593db9914e346a,workflow,S,
+C:\Users\rafae\Documents\Codex\2026-06-14\pesquisa-na-mem-ria-profunda-l\worktrees\rjc-monitor-2026-07-15-1200\data\benefits_crosswalk.json,sha256:552ded43ab72c3fd94c6a92d64bdda554bc56372f668346a784070cac8878f20,dados cards,S,
+C:\Users\rafae\Documents\Codex\2026-06-14\pesquisa-na-mem-ria-profunda-l\worktrees\rjc-monitor-2026-07-15-1200\data\benefits_quarantine.json,sha256:cb9ae22b8932ee8487606b8db2cb033900b5cacb8b42a3a3036f396a88f7a032,dados quarentena,S,
+C:\Users\rafae\Documents\Codex\2026-06-14\pesquisa-na-mem-ria-profunda-l\worktrees\rjc-monitor-2026-07-12-1610\auditoria\execucoes\monitor-v3-2026-07-12\matriz_fontes_canonicas.csv,sha256:3fd5c5ebe2af0b39781ef0aab742d942ad250c4fd016f751699727c32a9ae23b,matriz fontes,S,

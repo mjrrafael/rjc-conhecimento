@@ -1,0 +1,8 @@
+{
+  "schema": "rjc-gate-mutation-results-v3",
+  "executed": false,
+  "status": "BLOQUEADO",
+  "trusted_roots_found": 0,
+  "required_trusted_roots": 2,
+  "reason": "Sem duas raizes preexistentes e administrativamente distintas, nenhum gate e autocertificavel."
+}

@@ -1,0 +1,22 @@
+{
+  "schema": "rjc-pr-observation-v1",
+  "pr": 26,
+  "url": "https://github.com/mjrrafael/rjc-conhecimento/pull/26",
+  "head_sha": "5fd601925898042926cd9cd3d760ae8a033672d5",
+  "is_draft": true,
+  "mergeable": "MERGEABLE",
+  "merge_state": "UNSTABLE",
+  "check": {
+    "name": "portal-audit",
+    "run": "29247017374",
+    "conclusion": "failure",
+    "failure_summary": [
+      "duas raizes de confianca preexistentes e administrativamente distintas nao comprovadas",
+      "mutation testing material nao executado/aprovado",
+      "dois runners confiaveis distintos nao comprovados",
+      "94 linhas canonicas sem URL/recibo/hash material"
+    ]
+  },
+  "labels": ["codex", "codex-automation"],
+  "conclusion": "nao aprovar, nao mesclar e nao publicar"
+}

@@ -1,0 +1,3 @@
+gate,invariante,classe_de_bypass,mutantes_exigidos,mutantes_executados,status,motivo
+todos,"matriz integral por invariante e bypass",raizes_confiaveis_externas,2,0,BLOQUEADO,"nao ha duas raizes preexistentes independentes"
+todos,"oraculos/runners independentes",recibos_nativos_confrontaveis,2,0,BLOQUEADO,"plataforma nao exporta recibos nativos exigidos"
