@@ -1,0 +1,698 @@
+{
+  "schema": "rjc-prova-material-cards-v1",
+  "gerado_por": "scripts/build_initial_proven_cards.py",
+  "cards": [
+    {
+      "id": "br-ctn-legislacao-tributaria-art96",
+      "tipo": "NORMA_GERAL",
+      "jurisdicao": "BR",
+      "titulo_humano": "O que conta como legislação tributária",
+      "resumo_humano": "O art. 96 do CTN inclui leis, tratados e convenções internacionais, decretos e normas complementares que tratem, total ou parcialmente, de tributos e de relações jurídicas a eles ligadas.",
+      "regra_estruturada": {
+        "regra": "A expressão abrange leis, tratados e convenções internacionais, decretos e normas complementares sobre tributos e relações jurídicas pertinentes."
+      },
+      "orientacao_editorial": "Este card define fontes normativas; não calcula tributo e não substitui a leitura do ato aplicável ao caso.",
+      "ato": {
+        "tipo": "Lei",
+        "numero": "5.172",
+        "data": "1966-10-25",
+        "autoridade_emissora": "Presidente da República / Congresso Nacional"
+      },
+      "temporal": {
+        "publicacao": {
+          "valor": "1966-10-27",
+          "status": "COMPROVADA"
+        },
+        "inicio_vigencia": {
+          "valor": "1967-01-01",
+          "status": "COMPROVADA"
+        },
+        "inicio_eficacia": {
+          "valor": null,
+          "status": "INDETERMINADO",
+          "justificativa": "O dispositivo de vigência lido não separa uma data autônoma de eficácia para o art. 96."
+        },
+        "fim_vigencia": {
+          "valor": null,
+          "status": "INDETERMINADO",
+          "justificativa": "A consulta não encontrou termo final expresso para o art. 96; isso não prova inexistência de alteração ou revogação futura."
+        }
+      },
+      "fontes": [
+        {
+          "source_id": "BR-CTN-TEXTO-COMPILED",
+          "url_final": "https://legis.senado.gov.br/norma/547034/publicacao/34620375",
+          "dominio_oficial": "legis.senado.gov.br",
+          "http_status": 200,
+          "mime": "text/html",
+          "sha256_corpo_bruto": "99ab35a13a6bdfc465b3c613dafb62ea254fed9b5452c557e2a6d83b2d04299b",
+          "capturas_locais_independentes": [
+            "local-act-BR-CTN-TEXTO-COMPILED-20260716T172353057580Z",
+            "local-act-BR-CTN-TEXTO-COMPILED-20260716T172404758694Z"
+          ],
+          "web_tool_references": [
+            "turn56view2",
+            "turn60view2",
+            "turn60view1",
+            "turn61view0"
+          ],
+          "nota": "Capturas locais coincidentes; ainda depende de recibo nativo de plataforma e revisão cega para autorizar publicação.",
+          "identificacao_humana": "Texto consolidado do CTN — Senado Federal",
+          "papel": "texto normativo consolidado e vigência"
+        },
+        {
+          "source_id": "BR-CTN-SENADO-REGISTRO",
+          "url_final": "https://legis.senado.gov.br/norma/547034",
+          "dominio_oficial": "legis.senado.gov.br",
+          "http_status": 200,
+          "mime": "text/html",
+          "sha256_corpo_bruto": "7e287d66f8298a97d3fafe36e26d072d61783556864d5adbaa58716a69920fc2",
+          "capturas_locais_independentes": [
+            "local-act-BR-CTN-SENADO-REGISTRO-20260716T172354157388Z",
+            "local-act-BR-CTN-SENADO-REGISTRO-20260716T172405703962Z"
+          ],
+          "web_tool_references": [
+            "turn87view0"
+          ],
+          "nota": "Capturas locais coincidentes; ainda depende de recibo nativo de plataforma e revisão cega para autorizar publicação.",
+          "identificacao_humana": "Registro da Lei nº 5.172/1966 — Senado Federal",
+          "papel": "publicação original"
+        },
+        {
+          "source_id": "BR-CTN-CAMARA-HISTORICO",
+          "url_final": "https://www2.camara.leg.br/legin/fed/lei/1960-1969/lei-5172-25-outubro-1966-358971-norma-pl.html",
+          "dominio_oficial": "www2.camara.leg.br",
+          "http_status": 200,
+          "mime": "",
+          "sha256_corpo_bruto": "a16318efa6603971cc6d2b9a8511caed850b2b87a70d1ef1989304bf91e05abd",
+          "capturas_locais_independentes": [
+            "local-act-BR-CTN-CAMARA-HISTORICO-20260716T172356972260Z",
+            "local-act-BR-CTN-CAMARA-HISTORICO-20260716T172408528807Z"
+          ],
+          "web_tool_references": [
+            "turn61view0"
+          ],
+          "nota": "Capturas locais coincidentes; ainda depende de recibo nativo de plataforma e revisão cega para autorizar publicação.",
+          "identificacao_humana": "Ficha histórica da Lei nº 5.172/1966 — Câmara dos Deputados",
+          "papel": "origem e histórico legislativo"
+        }
+      ],
+      "field_provenance": {
+        "titulo_humano": {
+          "card_id": "br-ctn-legislacao-tributaria-art96",
+          "campo": "titulo_humano",
+          "valor": "O que conta como legislação tributária",
+          "url_final": "https://legis.senado.gov.br/norma/547034/publicacao/34620375",
+          "dominio_oficial": "legis.senado.gov.br",
+          "http_status": 200,
+          "mime": "text/html",
+          "sha256_corpo_bruto": "99ab35a13a6bdfc465b3c613dafb62ea254fed9b5452c557e2a6d83b2d04299b",
+          "trecho_literal": "LEGISLAÇÃO TRIBUTÁRIA",
+          "localizador": "Título I, Livro Segundo",
+          "regra_normalizacao": "rótulo editorial fiel ao título legal",
+          "recibos": [
+            "local-act-BR-CTN-TEXTO-COMPILED-20260716T172353057580Z",
+            "local-act-BR-CTN-TEXTO-COMPILED-20260716T172404758694Z"
+          ],
+          "web_tool_references": [
+            "turn60view2"
+          ]
+        },
+        "resumo_humano": {
+          "card_id": "br-ctn-legislacao-tributaria-art96",
+          "campo": "resumo_humano",
+          "valor": "O art. 96 do CTN inclui leis, tratados e convenções internacionais, decretos e normas complementares que tratem, total ou parcialmente, de tributos e de relações jurídicas a eles ligadas.",
+          "url_final": "https://legis.senado.gov.br/norma/547034/publicacao/34620375",
+          "dominio_oficial": "legis.senado.gov.br",
+          "http_status": 200,
+          "mime": "text/html",
+          "sha256_corpo_bruto": "99ab35a13a6bdfc465b3c613dafb62ea254fed9b5452c557e2a6d83b2d04299b",
+          "trecho_literal": "Art. 96. A expressão \"legislação tributária\" compreende as leis, os tratados e as convenções internacionais, os decretos e as normas complementares que versem, no todo ou em parte, sobre tributos e relações jurídicas a eles pertinentes.",
+          "localizador": "Art. 96",
+          "regra_normalizacao": "paráfrase conservadora; sem ampliar o alcance",
+          "recibos": [
+            "local-act-BR-CTN-TEXTO-COMPILED-20260716T172353057580Z",
+            "local-act-BR-CTN-TEXTO-COMPILED-20260716T172404758694Z"
+          ],
+          "web_tool_references": [
+            "turn60view2"
+          ]
+        },
+        "regra_estruturada.regra": {
+          "card_id": "br-ctn-legislacao-tributaria-art96",
+          "campo": "regra_estruturada.regra",
+          "valor": "A expressão abrange leis, tratados e convenções internacionais, decretos e normas complementares sobre tributos e relações jurídicas pertinentes.",
+          "url_final": "https://legis.senado.gov.br/norma/547034/publicacao/34620375",
+          "dominio_oficial": "legis.senado.gov.br",
+          "http_status": 200,
+          "mime": "text/html",
+          "sha256_corpo_bruto": "99ab35a13a6bdfc465b3c613dafb62ea254fed9b5452c557e2a6d83b2d04299b",
+          "trecho_literal": "Art. 96. A expressão \"legislação tributária\" compreende as leis, os tratados e as convenções internacionais, os decretos e as normas complementares que versem, no todo ou em parte, sobre tributos e relações jurídicas a eles pertinentes.",
+          "localizador": "Art. 96",
+          "regra_normalizacao": "paráfrase conservadora; sem ampliar o alcance",
+          "recibos": [
+            "local-act-BR-CTN-TEXTO-COMPILED-20260716T172353057580Z",
+            "local-act-BR-CTN-TEXTO-COMPILED-20260716T172404758694Z"
+          ],
+          "web_tool_references": [
+            "turn60view2"
+          ]
+        },
+        "ato.tipo": {
+          "card_id": "br-ctn-legislacao-tributaria-art96",
+          "campo": "ato.tipo",
+          "valor": "Lei",
+          "url_final": "https://legis.senado.gov.br/norma/547034/publicacao/34620375",
+          "dominio_oficial": "legis.senado.gov.br",
+          "http_status": 200,
+          "mime": "text/html",
+          "sha256_corpo_bruto": "99ab35a13a6bdfc465b3c613dafb62ea254fed9b5452c557e2a6d83b2d04299b",
+          "trecho_literal": "LEI Nº 5.172, DE 25 DE OUTUBRO DE 1966",
+          "localizador": "cabeçalho do texto",
+          "regra_normalizacao": "tipo normalizado",
+          "recibos": [
+            "local-act-BR-CTN-TEXTO-COMPILED-20260716T172353057580Z",
+            "local-act-BR-CTN-TEXTO-COMPILED-20260716T172404758694Z"
+          ],
+          "web_tool_references": [
+            "turn61view0"
+          ]
+        },
+        "ato.numero": {
+          "card_id": "br-ctn-legislacao-tributaria-art96",
+          "campo": "ato.numero",
+          "valor": "5.172",
+          "url_final": "https://legis.senado.gov.br/norma/547034/publicacao/34620375",
+          "dominio_oficial": "legis.senado.gov.br",
+          "http_status": 200,
+          "mime": "text/html",
+          "sha256_corpo_bruto": "99ab35a13a6bdfc465b3c613dafb62ea254fed9b5452c557e2a6d83b2d04299b",
+          "trecho_literal": "LEI Nº 5.172, DE 25 DE OUTUBRO DE 1966",
+          "localizador": "cabeçalho do texto",
+          "regra_normalizacao": "número sem pontuação adicional",
+          "recibos": [
+            "local-act-BR-CTN-TEXTO-COMPILED-20260716T172353057580Z",
+            "local-act-BR-CTN-TEXTO-COMPILED-20260716T172404758694Z"
+          ],
+          "web_tool_references": [
+            "turn61view0"
+          ]
+        },
+        "ato.data": {
+          "card_id": "br-ctn-legislacao-tributaria-art96",
+          "campo": "ato.data",
+          "valor": "1966-10-25",
+          "url_final": "https://legis.senado.gov.br/norma/547034/publicacao/34620375",
+          "dominio_oficial": "legis.senado.gov.br",
+          "http_status": 200,
+          "mime": "text/html",
+          "sha256_corpo_bruto": "99ab35a13a6bdfc465b3c613dafb62ea254fed9b5452c557e2a6d83b2d04299b",
+          "trecho_literal": "LEI Nº 5.172, DE 25 DE OUTUBRO DE 1966",
+          "localizador": "cabeçalho do texto",
+          "regra_normalizacao": "DD de mês por extenso de AAAA para ISO-8601",
+          "recibos": [
+            "local-act-BR-CTN-TEXTO-COMPILED-20260716T172353057580Z",
+            "local-act-BR-CTN-TEXTO-COMPILED-20260716T172404758694Z"
+          ],
+          "web_tool_references": [
+            "turn61view0"
+          ]
+        },
+        "ato.autoridade_emissora": {
+          "card_id": "br-ctn-legislacao-tributaria-art96",
+          "campo": "ato.autoridade_emissora",
+          "valor": "Presidente da República / Congresso Nacional",
+          "url_final": "https://legis.senado.gov.br/norma/547034/publicacao/34620375",
+          "dominio_oficial": "legis.senado.gov.br",
+          "http_status": 200,
+          "mime": "text/html",
+          "sha256_corpo_bruto": "99ab35a13a6bdfc465b3c613dafb62ea254fed9b5452c557e2a6d83b2d04299b",
+          "trecho_literal": "O PRESIDENTE DA REPÚBLICA: Faço saber que o Congresso Nacional decreta e eu sanciono a seguinte Lei:",
+          "localizador": "preâmbulo da Lei nº 5.172/1966 no texto consolidado",
+          "regra_normalizacao": "autoridades literais normalizadas em ordem de promulgação e decreto",
+          "recibos": [
+            "local-act-BR-CTN-TEXTO-COMPILED-20260716T172353057580Z",
+            "local-act-BR-CTN-TEXTO-COMPILED-20260716T172404758694Z"
+          ],
+          "web_tool_references": [
+            "turn61view0"
+          ]
+        },
+        "jurisdicao": {
+          "card_id": "br-ctn-legislacao-tributaria-art96",
+          "campo": "jurisdicao",
+          "valor": "BR",
+          "url_final": "https://www2.camara.leg.br/legin/fed/lei/1960-1969/lei-5172-25-outubro-1966-358971-norma-pl.html",
+          "dominio_oficial": "www2.camara.leg.br",
+          "http_status": 200,
+          "mime": "",
+          "sha256_corpo_bruto": "a16318efa6603971cc6d2b9a8511caed850b2b87a70d1ef1989304bf91e05abd",
+          "trecho_literal": "normas gerais de direito tributário aplicáveis à União, Estados e Municípios",
+          "localizador": "ementa da Lei nº 5.172/1966 na ficha histórica da Câmara",
+          "regra_normalizacao": "alcance federativo normalizado como jurisdição BR",
+          "recibos": [
+            "local-act-BR-CTN-CAMARA-HISTORICO-20260716T172356972260Z",
+            "local-act-BR-CTN-CAMARA-HISTORICO-20260716T172408528807Z"
+          ],
+          "web_tool_references": [
+            "turn61view0"
+          ]
+        },
+        "temporal.publicacao": {
+          "card_id": "br-ctn-legislacao-tributaria-art96",
+          "campo": "temporal.publicacao",
+          "valor": "1966-10-27",
+          "url_final": "https://legis.senado.gov.br/norma/547034",
+          "dominio_oficial": "legis.senado.gov.br",
+          "http_status": 200,
+          "mime": "text/html",
+          "sha256_corpo_bruto": "7e287d66f8298a97d3fafe36e26d072d61783556864d5adbaa58716a69920fc2",
+          "trecho_literal": "[Diário Oficial da União de 27/10/1966] (p. 12451, col. 1)",
+          "localizador": "registro do Senado, Publicação do Texto Principal",
+          "regra_normalizacao": "DD/MM/AAAA para ISO-8601",
+          "recibos": [
+            "local-act-BR-CTN-SENADO-REGISTRO-20260716T172354157388Z",
+            "local-act-BR-CTN-SENADO-REGISTRO-20260716T172405703962Z"
+          ],
+          "web_tool_references": [
+            "turn87view0"
+          ]
+        },
+        "temporal.inicio_vigencia": {
+          "card_id": "br-ctn-legislacao-tributaria-art96",
+          "campo": "temporal.inicio_vigencia",
+          "valor": "1967-01-01",
+          "url_final": "https://legis.senado.gov.br/norma/547034/publicacao/34620375",
+          "dominio_oficial": "legis.senado.gov.br",
+          "http_status": 200,
+          "mime": "text/html",
+          "sha256_corpo_bruto": "99ab35a13a6bdfc465b3c613dafb62ea254fed9b5452c557e2a6d83b2d04299b",
+          "trecho_literal": "Esta Lei entrará em vigor, em todo o território nacional, no dia 1º de janeiro de 1967",
+          "localizador": "Art. 218",
+          "regra_normalizacao": "data literal para ISO-8601",
+          "recibos": [
+            "local-act-BR-CTN-TEXTO-COMPILED-20260716T172353057580Z",
+            "local-act-BR-CTN-TEXTO-COMPILED-20260716T172404758694Z"
+          ],
+          "web_tool_references": [
+            "turn60view1"
+          ]
+        }
+      },
+      "estado_publicacao": "NAO_PUBLICAR_SEM_RECIBO_NATIVO_E_REVISAO_CEGA",
+      "sha256_registro": "9f13cb206f20015d92e503676a697aaed1e5717b62a7a56f417c639990836384"
+    },
+    {
+      "id": "br-lc214-ibs-cbs-incidencia-geral",
+      "tipo": "NORMA_GERAL",
+      "jurisdicao": "BR",
+      "titulo_humano": "IBS e CBS: instituição e regra geral de incidência",
+      "resumo_humano": "A Lei Complementar nº 214/2025 institui o IBS e a CBS. O art. 4º estabelece que, como regra geral, os dois tributos incidem sobre operações onerosas com bens ou serviços.",
+      "regra_estruturada": {
+        "tributos": [
+          "IBS",
+          "CBS"
+        ],
+        "instituicao": "O IBS é de competência compartilhada entre Estados, Municípios e Distrito Federal; a CBS é de competência da União.",
+        "incidencia_geral": "IBS e CBS incidem sobre operações onerosas com bens ou serviços.",
+        "transicao_rt": "Para os dispositivos deste card, a LC 214 fixa produção de efeitos a partir de 1º de janeiro de 2026, salvo regra específica do art. 544."
+      },
+      "orientacao_editorial": "Não use este card para calcular alíquota, crédito, benefício ou obrigação acessória sem o dispositivo específico aplicável.",
+      "ato": {
+        "tipo": "Lei Complementar",
+        "numero": "214",
+        "data": "2025-01-16",
+        "autoridade_emissora": "Presidente da República / Congresso Nacional"
+      },
+      "temporal": {
+        "publicacao": {
+          "valor": "2025-01-16",
+          "status": "COMPROVADA"
+        },
+        "inicio_vigencia": {
+          "valor": "2025-01-16",
+          "status": "COMPROVADA"
+        },
+        "inicio_eficacia": {
+          "valor": "2026-01-01",
+          "status": "COMPROVADA"
+        },
+        "fim_vigencia": {
+          "valor": null,
+          "status": "INDETERMINADO",
+          "justificativa": "A consulta não encontrou termo final expresso para os arts. 1º e 4º; isso não prova inexistência de alteração ou revogação futura."
+        }
+      },
+      "fontes": [
+        {
+          "source_id": "BR-LC214-DOU-ORIGINAL",
+          "url_final": "https://pesquisa.in.gov.br/imprensa/servlet/INPDFViewer?captchafield=firstAccess&data=16%2F01%2F2025&jornal=601&pagina=1",
+          "dominio_oficial": "pesquisa.in.gov.br",
+          "http_status": 200,
+          "mime": "application/pdf",
+          "sha256_corpo_bruto": "1723a606d2fed5c8f3e63854a9273e6e3f19d4e1d1e13d0ea63a46731d2e420c",
+          "capturas_locais_independentes": [
+            "local-act-BR-LC214-DOU-ORIGINAL-20260716T172356328448Z",
+            "local-act-BR-LC214-DOU-ORIGINAL-20260716T172408015716Z"
+          ],
+          "web_tool_references": [
+            "turn73search1"
+          ],
+          "nota": "Capturas locais coincidentes; ainda depende de recibo nativo de plataforma e revisão cega para autorizar publicação.",
+          "identificacao_humana": "Publicação original da LC nº 214/2025 — Diário Oficial da União",
+          "papel": "ato e publicação original"
+        },
+        {
+          "source_id": "BR-LC214-TEXTO-ATUAL",
+          "url_final": "https://legis.senado.gov.br/norma/40180341/publicacao/40181429",
+          "dominio_oficial": "legis.senado.gov.br",
+          "http_status": 200,
+          "mime": "text/html",
+          "sha256_corpo_bruto": "cc78f94f664c5e1717da540582ca1907215867e285fa950f1534f49890ada8b0",
+          "capturas_locais_independentes": [
+            "local-act-BR-LC214-TEXTO-ATUAL-20260716T172354851442Z",
+            "local-act-BR-LC214-TEXTO-ATUAL-20260716T172406696997Z"
+          ],
+          "web_tool_references": [
+            "turn56view0",
+            "turn57view0",
+            "turn59view0"
+          ],
+          "nota": "Capturas locais coincidentes; ainda depende de recibo nativo de plataforma e revisão cega para autorizar publicação.",
+          "identificacao_humana": "Texto atual da LC nº 214/2025 — Senado Federal",
+          "papel": "vigência e eficácia do texto vigente"
+        }
+      ],
+      "field_provenance": {
+        "titulo_humano": {
+          "card_id": "br-lc214-ibs-cbs-incidencia-geral",
+          "campo": "titulo_humano",
+          "valor": "IBS e CBS: instituição e regra geral de incidência",
+          "url_final": "https://pesquisa.in.gov.br/imprensa/servlet/INPDFViewer?captchafield=firstAccess&data=16%2F01%2F2025&jornal=601&pagina=1",
+          "dominio_oficial": "pesquisa.in.gov.br",
+          "http_status": 200,
+          "mime": "application/pdf",
+          "sha256_corpo_bruto": "1723a606d2fed5c8f3e63854a9273e6e3f19d4e1d1e13d0ea63a46731d2e420c",
+          "trecho_literal": "Institui o Imposto sobre Bens e Serviços (IBS), a Contribuição Social sobre Bens e Serviços (CBS) e o Imposto Seletivo (IS)",
+          "localizador": "ementa no DOU, edição extra 11-B, p. 1",
+          "regra_normalizacao": "rótulo editorial restrito à ementa e aos arts. 1º e 4º",
+          "recibos": [
+            "local-act-BR-LC214-DOU-ORIGINAL-20260716T172356328448Z",
+            "local-act-BR-LC214-DOU-ORIGINAL-20260716T172408015716Z"
+          ],
+          "web_tool_references": [
+            "turn73search1"
+          ]
+        },
+        "resumo_humano": {
+          "card_id": "br-lc214-ibs-cbs-incidencia-geral",
+          "campo": "resumo_humano",
+          "valor": "A Lei Complementar nº 214/2025 institui o IBS e a CBS. O art. 4º estabelece que, como regra geral, os dois tributos incidem sobre operações onerosas com bens ou serviços.",
+          "url_final": "https://pesquisa.in.gov.br/imprensa/servlet/INPDFViewer?captchafield=firstAccess&data=16%2F01%2F2025&jornal=601&pagina=1",
+          "dominio_oficial": "pesquisa.in.gov.br",
+          "http_status": 200,
+          "mime": "application/pdf",
+          "sha256_corpo_bruto": "1723a606d2fed5c8f3e63854a9273e6e3f19d4e1d1e13d0ea63a46731d2e420c",
+          "trecho_literal": "Art. 1º Ficam instituídos:\nI - o Imposto sobre Bens e Serviços (IBS), de competência compartilhada entre Estados, Municípios e Distrito Federal, de que trata o art. 156-A da Constituição Federal; e\nII - a Contribuição Social sobre Bens e Serviços (CBS), de competência da União, de que trata o inciso V do caput do art. 195 da Constituição Federal.\n\nArt. 4º O IBS e a CBS incidem sobre operações onerosas com bens ou com serviços.",
+          "localizador": "DOU edição extra 11-B, p. 1, arts. 1º, I e II, e 4º, caput",
+          "regra_normalizacao": "paráfrase conservadora; excertos literais identificados por artigo",
+          "recibos": [
+            "local-act-BR-LC214-DOU-ORIGINAL-20260716T172356328448Z",
+            "local-act-BR-LC214-DOU-ORIGINAL-20260716T172408015716Z"
+          ],
+          "web_tool_references": [
+            "turn73search1"
+          ]
+        },
+        "regra_estruturada.tributos": {
+          "card_id": "br-lc214-ibs-cbs-incidencia-geral",
+          "campo": "regra_estruturada.tributos",
+          "valor": [
+            "IBS",
+            "CBS"
+          ],
+          "url_final": "https://pesquisa.in.gov.br/imprensa/servlet/INPDFViewer?captchafield=firstAccess&data=16%2F01%2F2025&jornal=601&pagina=1",
+          "dominio_oficial": "pesquisa.in.gov.br",
+          "http_status": 200,
+          "mime": "application/pdf",
+          "sha256_corpo_bruto": "1723a606d2fed5c8f3e63854a9273e6e3f19d4e1d1e13d0ea63a46731d2e420c",
+          "trecho_literal": "Art. 1º Ficam instituídos:\nI - o Imposto sobre Bens e Serviços (IBS), de competência compartilhada entre Estados, Municípios e Distrito Federal, de que trata o art. 156-A da Constituição Federal; e\nII - a Contribuição Social sobre Bens e Serviços (CBS), de competência da União, de que trata o inciso V do caput do art. 195 da Constituição Federal.",
+          "localizador": "DOU edição extra 11-B, p. 1, art. 1º, I e II",
+          "regra_normalizacao": "siglas e nomes literais convertidos em lista",
+          "recibos": [
+            "local-act-BR-LC214-DOU-ORIGINAL-20260716T172356328448Z",
+            "local-act-BR-LC214-DOU-ORIGINAL-20260716T172408015716Z"
+          ],
+          "web_tool_references": [
+            "turn73search1"
+          ]
+        },
+        "regra_estruturada.instituicao": {
+          "card_id": "br-lc214-ibs-cbs-incidencia-geral",
+          "campo": "regra_estruturada.instituicao",
+          "valor": "O IBS é de competência compartilhada entre Estados, Municípios e Distrito Federal; a CBS é de competência da União.",
+          "url_final": "https://pesquisa.in.gov.br/imprensa/servlet/INPDFViewer?captchafield=firstAccess&data=16%2F01%2F2025&jornal=601&pagina=1",
+          "dominio_oficial": "pesquisa.in.gov.br",
+          "http_status": 200,
+          "mime": "application/pdf",
+          "sha256_corpo_bruto": "1723a606d2fed5c8f3e63854a9273e6e3f19d4e1d1e13d0ea63a46731d2e420c",
+          "trecho_literal": "Art. 1º Ficam instituídos:\nI - o Imposto sobre Bens e Serviços (IBS), de competência compartilhada entre Estados, Municípios e Distrito Federal, de que trata o art. 156-A da Constituição Federal; e\nII - a Contribuição Social sobre Bens e Serviços (CBS), de competência da União, de que trata o inciso V do caput do art. 195 da Constituição Federal.",
+          "localizador": "DOU edição extra 11-B, p. 1, art. 1º, I e II",
+          "regra_normalizacao": "paráfrase conservadora",
+          "recibos": [
+            "local-act-BR-LC214-DOU-ORIGINAL-20260716T172356328448Z",
+            "local-act-BR-LC214-DOU-ORIGINAL-20260716T172408015716Z"
+          ],
+          "web_tool_references": [
+            "turn73search1"
+          ]
+        },
+        "regra_estruturada.incidencia_geral": {
+          "card_id": "br-lc214-ibs-cbs-incidencia-geral",
+          "campo": "regra_estruturada.incidencia_geral",
+          "valor": "IBS e CBS incidem sobre operações onerosas com bens ou serviços.",
+          "url_final": "https://pesquisa.in.gov.br/imprensa/servlet/INPDFViewer?captchafield=firstAccess&data=16%2F01%2F2025&jornal=601&pagina=1",
+          "dominio_oficial": "pesquisa.in.gov.br",
+          "http_status": 200,
+          "mime": "application/pdf",
+          "sha256_corpo_bruto": "1723a606d2fed5c8f3e63854a9273e6e3f19d4e1d1e13d0ea63a46731d2e420c",
+          "trecho_literal": "Art. 4º O IBS e a CBS incidem sobre operações onerosas com bens ou com serviços.",
+          "localizador": "DOU edição extra 11-B, p. 1, art. 4º, caput",
+          "regra_normalizacao": "reprodução sem ampliação",
+          "recibos": [
+            "local-act-BR-LC214-DOU-ORIGINAL-20260716T172356328448Z",
+            "local-act-BR-LC214-DOU-ORIGINAL-20260716T172408015716Z"
+          ],
+          "web_tool_references": [
+            "turn73search1"
+          ]
+        },
+        "ato.tipo": {
+          "card_id": "br-lc214-ibs-cbs-incidencia-geral",
+          "campo": "ato.tipo",
+          "valor": "Lei Complementar",
+          "url_final": "https://pesquisa.in.gov.br/imprensa/servlet/INPDFViewer?captchafield=firstAccess&data=16%2F01%2F2025&jornal=601&pagina=1",
+          "dominio_oficial": "pesquisa.in.gov.br",
+          "http_status": 200,
+          "mime": "application/pdf",
+          "sha256_corpo_bruto": "1723a606d2fed5c8f3e63854a9273e6e3f19d4e1d1e13d0ea63a46731d2e420c",
+          "trecho_literal": "LEI COMPLEMENTAR Nº 214, DE 16 DE JANEIRO DE 2025",
+          "localizador": "cabeçalho no DOU, edição extra 11-B, p. 1",
+          "regra_normalizacao": "tipo normalizado",
+          "recibos": [
+            "local-act-BR-LC214-DOU-ORIGINAL-20260716T172356328448Z",
+            "local-act-BR-LC214-DOU-ORIGINAL-20260716T172408015716Z"
+          ],
+          "web_tool_references": [
+            "turn73search1"
+          ]
+        },
+        "ato.numero": {
+          "card_id": "br-lc214-ibs-cbs-incidencia-geral",
+          "campo": "ato.numero",
+          "valor": "214",
+          "url_final": "https://pesquisa.in.gov.br/imprensa/servlet/INPDFViewer?captchafield=firstAccess&data=16%2F01%2F2025&jornal=601&pagina=1",
+          "dominio_oficial": "pesquisa.in.gov.br",
+          "http_status": 200,
+          "mime": "application/pdf",
+          "sha256_corpo_bruto": "1723a606d2fed5c8f3e63854a9273e6e3f19d4e1d1e13d0ea63a46731d2e420c",
+          "trecho_literal": "LEI COMPLEMENTAR Nº 214, DE 16 DE JANEIRO DE 2025",
+          "localizador": "cabeçalho no DOU, edição extra 11-B, p. 1",
+          "regra_normalizacao": "número sem pontuação adicional",
+          "recibos": [
+            "local-act-BR-LC214-DOU-ORIGINAL-20260716T172356328448Z",
+            "local-act-BR-LC214-DOU-ORIGINAL-20260716T172408015716Z"
+          ],
+          "web_tool_references": [
+            "turn73search1"
+          ]
+        },
+        "ato.data": {
+          "card_id": "br-lc214-ibs-cbs-incidencia-geral",
+          "campo": "ato.data",
+          "valor": "2025-01-16",
+          "url_final": "https://pesquisa.in.gov.br/imprensa/servlet/INPDFViewer?captchafield=firstAccess&data=16%2F01%2F2025&jornal=601&pagina=1",
+          "dominio_oficial": "pesquisa.in.gov.br",
+          "http_status": 200,
+          "mime": "application/pdf",
+          "sha256_corpo_bruto": "1723a606d2fed5c8f3e63854a9273e6e3f19d4e1d1e13d0ea63a46731d2e420c",
+          "trecho_literal": "LEI COMPLEMENTAR Nº 214, DE 16 DE JANEIRO DE 2025",
+          "localizador": "cabeçalho no DOU, edição extra 11-B, p. 1",
+          "regra_normalizacao": "DD de mês por extenso de AAAA para ISO-8601",
+          "recibos": [
+            "local-act-BR-LC214-DOU-ORIGINAL-20260716T172356328448Z",
+            "local-act-BR-LC214-DOU-ORIGINAL-20260716T172408015716Z"
+          ],
+          "web_tool_references": [
+            "turn73search1"
+          ]
+        },
+        "ato.autoridade_emissora": {
+          "card_id": "br-lc214-ibs-cbs-incidencia-geral",
+          "campo": "ato.autoridade_emissora",
+          "valor": "Presidente da República / Congresso Nacional",
+          "url_final": "https://pesquisa.in.gov.br/imprensa/servlet/INPDFViewer?captchafield=firstAccess&data=16%2F01%2F2025&jornal=601&pagina=1",
+          "dominio_oficial": "pesquisa.in.gov.br",
+          "http_status": 200,
+          "mime": "application/pdf",
+          "sha256_corpo_bruto": "1723a606d2fed5c8f3e63854a9273e6e3f19d4e1d1e13d0ea63a46731d2e420c",
+          "trecho_literal": "O P R E S I D E N T E D A R E P Ú B L I C A\nFaço saber que o Congresso Nacional decreta e eu sanciono a seguinte Lei Complementar:",
+          "localizador": "DOU, edição extra 11-B, p. 1, preâmbulo da LC nº 214/2025",
+          "regra_normalizacao": "autoridades literais normalizadas em ordem de promulgação e decreto",
+          "recibos": [
+            "local-act-BR-LC214-DOU-ORIGINAL-20260716T172356328448Z",
+            "local-act-BR-LC214-DOU-ORIGINAL-20260716T172408015716Z"
+          ],
+          "web_tool_references": [
+            "turn73search1"
+          ]
+        },
+        "jurisdicao": {
+          "card_id": "br-lc214-ibs-cbs-incidencia-geral",
+          "campo": "jurisdicao",
+          "valor": "BR",
+          "url_final": "https://pesquisa.in.gov.br/imprensa/servlet/INPDFViewer?captchafield=firstAccess&data=16%2F01%2F2025&jornal=601&pagina=1",
+          "dominio_oficial": "pesquisa.in.gov.br",
+          "http_status": 200,
+          "mime": "application/pdf",
+          "sha256_corpo_bruto": "1723a606d2fed5c8f3e63854a9273e6e3f19d4e1d1e13d0ea63a46731d2e420c",
+          "trecho_literal": "I - o Imposto sobre Bens e Serviços (IBS), de competência compartilhada entre Estados, Municípios e Distrito Federal, de que trata o art. 156-A da Constituição Federal; e\nII - a Contribuição Social sobre Bens e Serviços (CBS), de competência da União, de que trata o inciso V do caput do art. 195 da Constituição Federal.",
+          "localizador": "DOU edição extra 11-B, p. 1, art. 1º, I e II",
+          "regra_normalizacao": "competências federativas brasileiras normalizadas como jurisdição BR",
+          "recibos": [
+            "local-act-BR-LC214-DOU-ORIGINAL-20260716T172356328448Z",
+            "local-act-BR-LC214-DOU-ORIGINAL-20260716T172408015716Z"
+          ],
+          "web_tool_references": [
+            "turn73search1"
+          ]
+        },
+        "temporal.publicacao": {
+          "card_id": "br-lc214-ibs-cbs-incidencia-geral",
+          "campo": "temporal.publicacao",
+          "valor": "2025-01-16",
+          "url_final": "https://pesquisa.in.gov.br/imprensa/servlet/INPDFViewer?captchafield=firstAccess&data=16%2F01%2F2025&jornal=601&pagina=1",
+          "dominio_oficial": "pesquisa.in.gov.br",
+          "http_status": 200,
+          "mime": "application/pdf",
+          "sha256_corpo_bruto": "1723a606d2fed5c8f3e63854a9273e6e3f19d4e1d1e13d0ea63a46731d2e420c",
+          "trecho_literal": "Brasília - DF, quinta-feira, 16 de janeiro de 2025",
+          "localizador": "DOU, edição extra 11-B, p. 1, cabeçalho",
+          "regra_normalizacao": "data da edição oficial para ISO-8601",
+          "recibos": [
+            "local-act-BR-LC214-DOU-ORIGINAL-20260716T172356328448Z",
+            "local-act-BR-LC214-DOU-ORIGINAL-20260716T172408015716Z"
+          ],
+          "web_tool_references": [
+            "turn73search1"
+          ]
+        },
+        "temporal.inicio_vigencia": {
+          "card_id": "br-lc214-ibs-cbs-incidencia-geral",
+          "campo": "temporal.inicio_vigencia",
+          "valor": "2025-01-16",
+          "url_final": "https://legis.senado.gov.br/norma/40180341/publicacao/40181429",
+          "dominio_oficial": "legis.senado.gov.br",
+          "http_status": 200,
+          "mime": "text/html",
+          "sha256_corpo_bruto": "cc78f94f664c5e1717da540582ca1907215867e285fa950f1534f49890ada8b0",
+          "trecho_literal": "Esta Lei Complementar entra em vigor na data de sua publicação",
+          "localizador": "Art. 544, caput",
+          "regra_normalizacao": "data de publicação comprovada aplicada somente porque o ato a incorpora literalmente",
+          "recibos": [
+            "local-act-BR-LC214-TEXTO-ATUAL-20260716T172354851442Z",
+            "local-act-BR-LC214-TEXTO-ATUAL-20260716T172406696997Z"
+          ],
+          "web_tool_references": [
+            "turn59view0"
+          ],
+          "fundamentos_adicionais": [
+            {
+              "card_id": "br-lc214-ibs-cbs-incidencia-geral",
+              "campo": "temporal.inicio_vigencia.publicacao",
+              "valor": "2025-01-16",
+              "url_final": "https://pesquisa.in.gov.br/imprensa/servlet/INPDFViewer?captchafield=firstAccess&data=16%2F01%2F2025&jornal=601&pagina=1",
+              "dominio_oficial": "pesquisa.in.gov.br",
+              "http_status": 200,
+              "mime": "application/pdf",
+              "sha256_corpo_bruto": "1723a606d2fed5c8f3e63854a9273e6e3f19d4e1d1e13d0ea63a46731d2e420c",
+              "trecho_literal": "Brasília - DF, quinta-feira, 16 de janeiro de 2025",
+              "localizador": "DOU, edição extra 11-B, p. 1, cabeçalho",
+              "regra_normalizacao": "data da edição oficial para ISO-8601; fundamento da expressão 'data de sua publicação'",
+              "recibos": [
+                "local-act-BR-LC214-DOU-ORIGINAL-20260716T172356328448Z",
+                "local-act-BR-LC214-DOU-ORIGINAL-20260716T172408015716Z"
+              ],
+              "web_tool_references": [
+                "turn73search1"
+              ]
+            }
+          ]
+        },
+        "temporal.inicio_eficacia": {
+          "card_id": "br-lc214-ibs-cbs-incidencia-geral",
+          "campo": "temporal.inicio_eficacia",
+          "valor": "2026-01-01",
+          "url_final": "https://legis.senado.gov.br/norma/40180341/publicacao/40181429",
+          "dominio_oficial": "legis.senado.gov.br",
+          "http_status": 200,
+          "mime": "text/html",
+          "sha256_corpo_bruto": "cc78f94f664c5e1717da540582ca1907215867e285fa950f1534f49890ada8b0",
+          "trecho_literal": "a partir de 1º de janeiro de 2026, em relação aos demais dispositivos",
+          "localizador": "Art. 544, VI; arts. 1º e 4º não constam dos incisos I a V",
+          "regra_normalizacao": "data literal para ISO-8601; exclusão verificada no elenco do art. 544",
+          "recibos": [
+            "local-act-BR-LC214-TEXTO-ATUAL-20260716T172354851442Z",
+            "local-act-BR-LC214-TEXTO-ATUAL-20260716T172406696997Z"
+          ],
+          "web_tool_references": [
+            "turn59view0"
+          ]
+        },
+        "regra_estruturada.transicao_rt": {
+          "card_id": "br-lc214-ibs-cbs-incidencia-geral",
+          "campo": "regra_estruturada.transicao_rt",
+          "valor": "Para os dispositivos deste card, a LC 214 fixa produção de efeitos a partir de 1º de janeiro de 2026, salvo regra específica do art. 544.",
+          "url_final": "https://legis.senado.gov.br/norma/40180341/publicacao/40181429",
+          "dominio_oficial": "legis.senado.gov.br",
+          "http_status": 200,
+          "mime": "text/html",
+          "sha256_corpo_bruto": "cc78f94f664c5e1717da540582ca1907215867e285fa950f1534f49890ada8b0",
+          "trecho_literal": "VI – a partir de 1º de janeiro de 2026, em relação aos demais dispositivos.",
+          "localizador": "Art. 544, VI",
+          "regra_normalizacao": "paráfrase conservadora vinculada aos arts. 1º e 4º",
+          "recibos": [
+            "local-act-BR-LC214-TEXTO-ATUAL-20260716T172354851442Z",
+            "local-act-BR-LC214-TEXTO-ATUAL-20260716T172406696997Z"
+          ],
+          "web_tool_references": [
+            "turn59view0"
+          ]
+        }
+      },
+      "estado_publicacao": "NAO_PUBLICAR_SEM_RECIBO_NATIVO_E_REVISAO_CEGA",
+      "sha256_registro": "e2345f3f3ce0d092ea9bedb9b579e24e77047088d5504bde2fdefe26508637bd"
+    }
+  ],
+  "nota": "O arquivo é uma fila de publicação: dupla captura local coincidiu, mas o estado bloqueia a superfície pública até haver recibo nativo de plataforma e revisão cega."
+}

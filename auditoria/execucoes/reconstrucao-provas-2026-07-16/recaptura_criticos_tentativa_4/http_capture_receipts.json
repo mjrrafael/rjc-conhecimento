@@ -1,0 +1,167 @@
+[
+  {
+    "receipt_id": "local-BR_PLANALTO-20260716T171929529055Z",
+    "receipt_class": "LOCAL_REPRODUCIBLE_NOT_PLATFORM_NATIVE",
+    "source_id": "BR::PLANALTO",
+    "captured_at": "2026-07-16T17:19:29.529055Z",
+    "request": {
+      "url": "https://www.planalto.gov.br/ccivil_03/leis/_lei-principal.htm",
+      "method": "GET",
+      "headers": {
+        "Accept": "text/html,application/xhtml+xml,application/pdf,application/json;q=0.9,*/*;q=0.1",
+        "User-Agent": "RJC-Portal-Proof-Research/1.0 (anonymous, no-cookie)"
+      },
+      "cookies": "none"
+    },
+    "redirect_chain": [],
+    "response": {},
+    "body": {},
+    "result": "ERRO_DE_REDE",
+    "publication_authorization": "NAO",
+    "error": "RemoteDisconnected: Remote end closed connection without response"
+  },
+  {
+    "receipt_id": "local-BR_STF-20260716T171929529055Z",
+    "receipt_class": "LOCAL_REPRODUCIBLE_NOT_PLATFORM_NATIVE",
+    "source_id": "BR::STF",
+    "captured_at": "2026-07-16T17:19:29.529055Z",
+    "request": {
+      "url": "https://portal.stf.jus.br/jurisprudencia/",
+      "method": "GET",
+      "headers": {
+        "Accept": "text/html,application/xhtml+xml,application/pdf,application/json;q=0.9,*/*;q=0.1",
+        "User-Agent": "RJC-Portal-Proof-Research/1.0 (anonymous, no-cookie)"
+      },
+      "cookies": "none"
+    },
+    "redirect_chain": [],
+    "response": {
+      "url_final": "https://portal.stf.jus.br/jurisprudencia/",
+      "status": 403,
+      "headers": {
+        "Server": "awselb/2.0",
+        "Date": "Thu, 16 Jul 2026 17:19:30 GMT",
+        "Content-Type": "text/html",
+        "Content-Length": "118",
+        "Connection": "close"
+      },
+      "mime": "text/html"
+    },
+    "body": {},
+    "result": "HTTP_ERROR",
+    "publication_authorization": "NAO"
+  },
+  {
+    "receipt_id": "local-RJ_DOE-20260716T171929527054Z",
+    "receipt_class": "LOCAL_REPRODUCIBLE_NOT_PLATFORM_NATIVE",
+    "source_id": "RJ::DOE",
+    "captured_at": "2026-07-16T17:19:29.527054Z",
+    "request": {
+      "url": "https://www.ioerj.com.br/",
+      "method": "GET",
+      "headers": {
+        "Accept": "text/html,application/xhtml+xml,application/pdf,application/json;q=0.9,*/*;q=0.1",
+        "User-Agent": "RJC-Portal-Proof-Research/1.0 (anonymous, no-cookie)"
+      },
+      "cookies": "none"
+    },
+    "redirect_chain": [],
+    "response": {},
+    "body": {},
+    "result": "ERRO_DE_REDE",
+    "publication_authorization": "NAO",
+    "error": "URLError: <urlopen error [WinError 10054] Foi forçado o cancelamento de uma conexão existente pelo host remoto>"
+  },
+  {
+    "receipt_id": "local-RN_DOE-20260716T171929528054Z",
+    "receipt_class": "LOCAL_REPRODUCIBLE_NOT_PLATFORM_NATIVE",
+    "source_id": "RN::DOE",
+    "captured_at": "2026-07-16T17:19:29.528054Z",
+    "request": {
+      "url": "https://diariooficial.rn.gov.br/",
+      "method": "GET",
+      "headers": {
+        "Accept": "text/html,application/xhtml+xml,application/pdf,application/json;q=0.9,*/*;q=0.1",
+        "User-Agent": "RJC-Portal-Proof-Research/1.0 (anonymous, no-cookie)"
+      },
+      "cookies": "none"
+    },
+    "redirect_chain": [],
+    "response": {},
+    "body": {},
+    "result": "ERRO_DE_REDE",
+    "publication_authorization": "NAO",
+    "error": "URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'diariooficial.rn.gov.br'. (_ssl.c:1010)>"
+  },
+  {
+    "receipt_id": "local-RN_SEFAZ_LEGISLACAO-20260716T171929528054Z",
+    "receipt_class": "LOCAL_REPRODUCIBLE_NOT_PLATFORM_NATIVE",
+    "source_id": "RN::SEFAZ_LEGISLACAO",
+    "captured_at": "2026-07-16T17:19:29.528054Z",
+    "request": {
+      "url": "https://www.set.rn.gov.br/contentProducao/aplicacao/set_v2/legislacao/legislacao.asp",
+      "method": "GET",
+      "headers": {
+        "Accept": "text/html,application/xhtml+xml,application/pdf,application/json;q=0.9,*/*;q=0.1",
+        "User-Agent": "RJC-Portal-Proof-Research/1.0 (anonymous, no-cookie)"
+      },
+      "cookies": "none"
+    },
+    "redirect_chain": [],
+    "response": {},
+    "body": {},
+    "result": "ERRO_DE_REDE",
+    "publication_authorization": "NAO",
+    "error": "URLError: <urlopen error [WinError 10060] Uma tentativa de conexão falhou porque o componente conectado não respondeu\r\ncorretamente após um período de tempo ou a conexão estabelecida falhou\r\nporque o host conectado não respondeu>"
+  },
+  {
+    "receipt_id": "local-SP_ASSEMBLEIA_LEGISLATIVA-20260716T171929528054Z",
+    "receipt_class": "LOCAL_REPRODUCIBLE_NOT_PLATFORM_NATIVE",
+    "source_id": "SP::ASSEMBLEIA_LEGISLATIVA",
+    "captured_at": "2026-07-16T17:19:29.528054Z",
+    "request": {
+      "url": "https://www.al.sp.gov.br/norma/resultados?idsTipoNorma=9&tipoPesquisa=E",
+      "method": "GET",
+      "headers": {
+        "Accept": "text/html,application/xhtml+xml,application/pdf,application/json;q=0.9,*/*;q=0.1",
+        "User-Agent": "RJC-Portal-Proof-Research/1.0 (anonymous, no-cookie)"
+      },
+      "cookies": "none"
+    },
+    "redirect_chain": [],
+    "response": {
+      "url_final": "https://www.al.sp.gov.br/norma/resultados?idsTipoNorma=9&tipoPesquisa=E",
+      "status": 200,
+      "headers": {
+        "Date": "Thu, 16 Jul 2026 17:19:42 GMT",
+        "Server": "Apache",
+        "Vary": "Origin,Access-Control-Request-Method,Access-Control-Request-Headers",
+        "X-Content-Type-Options": "nosniff",
+        "X-XSS-Protection": "1; mode=block",
+        "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+        "Pragma": "no-cache",
+        "Expires": "0",
+        "Strict-Transport-Security": "max-age=31536000 ; includeSubDomains",
+        "Content-Language": "en-US",
+        "X-OneAgent-JS-Injection": "true",
+        "X-ruxit-JS-Agent": "true",
+        "Access-Control-Allow-Origin": "https://app.al.sp.gov.br https://idp.al.sp.gov.br",
+        "Access-Control-Allow-Methods": "*",
+        "Access-Control-Allow-Headers": "*",
+        "Server-Timing": "dtRpid;desc=\"-1342555037\"",
+        "Set-Cookie": "BNES_dtCookie810ommp0=YXnSHrdGD1P2NOkYrUhQ8Nc1/0hqY203vFS93uGz48gTw//Pa9t4LPblAvF92mZ+A9wyhCSwckBc6djbx5ucJNnuIXhaI7/2ZmLOSvzVH1TQzxck9suM6B4dp1Bv1xAUVgq1oOIOC2sHRT5iU9PyRNxqyjYmCXl3H15+lEs86oYITIdvspUq9moNohKSD6dKprEo0sT/xeo=; Path=/; Domain=.sp.gov.br",
+        "Content-Type": "text/html;charset=ISO-8859-1",
+        "X-FRAME-OPTIONS": "Allow-From sts.al.sp.gov.br www.al.sp.gov.br",
+        "Connection": "close"
+      },
+      "mime": "text/html"
+    },
+    "body": {
+      "bytes": 178043,
+      "sha256": "8c2a83b8465c55e6ef6f36c792622559f65bb1e21d972cfdf5cce0707ed4818a",
+      "path_externo": "C:\\Users\\rafae\\.codex\\automations\\monitor-portal-rjc-tributario\\evidencias\\2026-07-16-prova-material\\matriz-criticos-tentativa-4\\bodies\\SP_ASSEMBLEIA_LEGISLATIVA-8c2a83b8465c55e6ef6f36c792622559f65bb1e21d972cfdf5cce0707ed4818a.bin"
+    },
+    "result": "CAPTURADA_PENDENTE_DE_LEITURA_E_REFETCH",
+    "publication_authorization": "NAO"
+  }
+]
