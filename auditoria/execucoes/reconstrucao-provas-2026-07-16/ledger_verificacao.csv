@@ -1,0 +1,12 @@
+id,criterio,metodo,status,evidencia
+RAC-001,"Definir critérios falsificáveis antes de executar","leitura do workflow antes da captura",OK,"workflow.md, seção 5; contrato_execucao.yaml"
+RAC-002,"Registrar ledger com status permitido e evidência concreta existente","atualização por ciclo e vínculo a arquivos/recibos",A VALIDAR,"ledger_verificacao.csv; cobertura nacional e publicação ainda pendentes"
+RAC-003,"Executar revisão adversarial real da fonte primária crua","refetch independente de cada ato que alimentar card",CORRIGIR,"revisao_adversarial.md; achado de publicação do CTN corrigido com act_capture_receipts_tentativa_3.json e _4.json; aguarda revisor independente pós-correção"
+RAC-004,"Conferir o detalhe interno que sustenta cada resumo","comparar campo publicado com trecho/localizador da fonte crua",A VALIDAR,"scripts/audit_proof_material_cards.py; cards_em_reconstrucao.json; ainda não há aprovação pública"
+RAC-005,"Fechar com Status explícito coerente","verificador determinístico e revisão manual",A VALIDAR,"relatorio_final.md: Status A VALIDAR"
+PM-001,"Matriz estadual e federal fechada, sem lacuna institucional","geração e contagem por UF/classe",A VALIDAR,"escopo_fontes_canonico.yaml; matriz_fontes_canonicas.csv; 5 capturas institucionais ainda falharam"
+PM-002,"Capturas sem cookie e com hash não são confundidas com validade jurídica","auditoria de recibos e refetch",A VALIDAR,"http_capture_receipts.json; act_capture_receipts_tentativa_3.json; faltam recibos nativos e refetch cego isolado"
+PM-003,"Todo campo de card público possui proveniência material completa","auditoria de proveniência por card/campo",A VALIDAR,"data/prova_material/cards_em_reconstrucao.json; cards continuam não públicos"
+PM-004,"Nenhuma data jurídica é sintética","testes negativos e auditoria de dependências",A VALIDAR,"scripts/test_audit_proof_material_cards.py; faltam mutações independentes e raiz confiável"
+PM-005,"Público, busca e IA projetam somente cards aprovados","build, crawl e hash",A VALIDAR,"scripts/render_proven_cards.py e scripts/test_render_proven_cards.py; emissão pública é recusada"
+PM-006,"PR, CI, Pages e refetch pós-deploy correspondem ao mesmo SHA","GitHub + HTTP",A VALIDAR,"nenhuma PR ou implantação desta reconstrução foi autorizada"
