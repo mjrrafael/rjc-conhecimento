@@ -34,22 +34,30 @@ def main() -> int:
     pcncm = load_items("data/pis-cofins/ncm-index.json", "records")
     hashes = sorted({str(item.get("sha256", "")) for item in cards + ncm if item.get("sha256")})
 
-    mutants: list[tuple[str, str, str]] = [
-        ("quarantine_id_first", "index.html", quarantine[0]["id"]),
-        ("quarantine_id_last", "index.html", quarantine[-1]["id"]),
-        ("card_id_first", "index.html", cards[0]["id"]),
-        ("card_id_last", "index.html", cards[-1]["id"]),
+    mutants: list[tuple[str, str, str]] = []
+    if quarantine:
+        mutants.extend([
+            ("quarantine_id_first", "index.html", quarantine[0]["id"]),
+            ("quarantine_id_last", "index.html", quarantine[-1]["id"]),
+            ("legal_shingle_quarantine", "index.html", legal_shingle(quarantine[0])),
+        ])
+    if cards:
+        card_with_excerpt = next(item for item in cards if len(gate.normalized_words(item.get("legal_excerpt", ""))) >= 8)
+        mutants.extend([
+            ("card_id_first", "index.html", cards[0]["id"]),
+            ("card_id_last", "index.html", cards[-1]["id"]),
+            ("legal_shingle_card", "index.html", legal_shingle(card_with_excerpt)),
+        ])
+    mutants.extend([
         ("ncm_id", "index.html", ncm[0]["id"]),
         ("pis_cofins_ncm_id", "index.html", pcncm[0]["id"]),
         ("source_hash_first", "index.html", hashes[0]),
         ("source_hash_last", "index.html", hashes[-1]),
-        ("legal_shingle_quarantine", "index.html", legal_shingle(quarantine[0])),
-        ("legal_shingle_card", "index.html", legal_shingle(next(item for item in cards if len(gate.normalized_words(item.get("legal_excerpt", ""))) >= 8))),
         ("card_markup_class", "index.html", "<article class='benefit-card'>x</article>"),
         ("card_markup_data", "index.html", "<section data-card-id='opaque'>x</section>"),
         ("legal_field", "index.html", "field_provenance"),
         ("legal_act", "index.html", "Lei nº 123"),
-    ]
+    ])
 
     clean_errors: list[str] = []
     gate.SITE = clean

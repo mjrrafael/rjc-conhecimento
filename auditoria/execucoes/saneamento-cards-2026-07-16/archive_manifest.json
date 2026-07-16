@@ -1,0 +1,21 @@
+{
+  "schema": "rjc-benefit-sanitization-archive-v1",
+  "run_date": "2026-07-16",
+  "inputs": {
+    "crosswalk_entries": 9726,
+    "quarantine_entries": 13150,
+    "files": [
+      {
+        "name": "benefits_crosswalk.legacy.json",
+        "sha256": "552ded43ab72c3fd94c6a92d64bdda554bc56372f668346a784070cac8878f20",
+        "bytes": 76509697
+      },
+      {
+        "name": "benefits_quarantine.legacy.json",
+        "sha256": "cb9ae22b8932ee8487606b8db2cb033900b5cacb8b42a3a3036f396a88f7a032",
+        "bytes": 20743190
+      }
+    ]
+  },
+  "result": "dados_legados_externalizados_sem_promocao_publica"
+}
