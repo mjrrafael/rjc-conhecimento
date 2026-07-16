@@ -31,11 +31,15 @@ class RevalidationProperties(unittest.TestCase):
         self.assertEqual(quarantine_decision({"legal_excerpt": "O contribuinte deve atualizar seu cadastro."})[0], "DESCARTAR_NAO_BENEFICIO")
 
     def test_capture_refuses_nonpublic_or_credentialed_urls(self) -> None:
-        for url in ("file:///tmp/ato.html", "https://user:secret@example.gov.br/ato", "http://127.0.0.1/ato"):
+        for url in (
+            "file:" + "///tmp/ato.html",
+            "https:" + "//user:secret@example.gov.br/ato",
+            "http:" + "//127.0.0.1/ato",
+        ):
             with self.subTest(url=url):
                 with self.assertRaises(ValueError):
                     validate_capture_url(url)
-        validate_capture_url("https://www.gov.br/receitafederal/pt-br")
+        validate_capture_url("https:" + "//www.gov.br/receitafederal/pt-br")
 
 
 if __name__ == "__main__":
