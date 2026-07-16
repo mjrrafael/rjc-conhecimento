@@ -7,3 +7,4 @@
 
 - Revalidar cada benefício a partir de fonte primária, com recibos nativos e revisão independente, antes de qualquer nova publicação. Status: BLOQUEADO.
 - Tratar histórico, forks, caches e demais acervos legados como superfícies ainda a conter.
+- A cronologia do contrato formal não foi provada antes da escrita material; o saneamento é verificável, mas este rito específico não recebe certificação integral retroativa.

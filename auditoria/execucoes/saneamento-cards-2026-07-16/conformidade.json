@@ -3,7 +3,7 @@
   "skill": "revisar-ate-concluir",
   "contract": "auditoria\\execucoes\\saneamento-cards-2026-07-16\\contrato_execucao.yaml",
   "workdir": "auditoria\\execucoes\\saneamento-cards-2026-07-16",
-  "checked_at": "2026-07-16T13:37:32",
+  "checked_at": "2026-07-16T13:40:36",
   "conforme": true,
   "status_final_detectado": "BLOQUEADO",
   "decisao_final_detectada": null,
@@ -58,7 +58,7 @@
     {
       "artifact": "achados_e_pendencias.md",
       "ok": true,
-      "detail": "ok (540 bytes)"
+      "detail": "ok (722 bytes)"
     },
     {
       "artifact": "achados_e_pendencias.md",
@@ -69,7 +69,7 @@
     {
       "artifact": "revisao_adversarial.md",
       "ok": true,
-      "detail": "ok (782 bytes)"
+      "detail": "ok (1760 bytes)"
     },
     {
       "artifact": "revisao_adversarial.md",
