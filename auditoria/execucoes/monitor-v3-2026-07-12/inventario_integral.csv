@@ -310,6 +310,7 @@ arquivo::docs/monitoramento/monitoramento-legislativo-2026-06-25.md,docs/monitor
 arquivo::docs/monitoramento/monitoramento-legislativo-2026-06-26.md,docs/monitoramento/monitoramento-legislativo-2026-06-26.md,True,True,c4a6580a2b99b106c0e84cf74ebdd00a2a81d8c3c51ad4c8c39940cb660cdc98,OK,git ls-tree + filesystem
 arquivo::docs/monitoramento/monitoramento-legislativo-2026-06-28.md,docs/monitoramento/monitoramento-legislativo-2026-06-28.md,True,True,35347fc17418d5c38c48abbbc50ca0739fc9a2a387f9e9dca31284ebfe25ea95,OK,git ls-tree + filesystem
 arquivo::docs/monitoramento/monitoramento-legislativo-2026-07-12.md,docs/monitoramento/monitoramento-legislativo-2026-07-12.md,True,True,45a70a17b25d8017b762914d75b4ffc0957e739b6de2521486abcaa6aaf2f0f1,OK,git ls-tree + filesystem
+arquivo::docs/monitoramento/monitoramento-legislativo-2026-07-16.md,docs/monitoramento/monitoramento-legislativo-2026-07-16.md,True,True,e9995fb8140761c0a2be5fff854197f316fe28dda9b789ae9c1e833160967461,OK,git ls-tree + filesystem
 arquivo::docs/monitoramento/portal-monitor-2026-05-17-014444-pos-atualizacao.md,docs/monitoramento/portal-monitor-2026-05-17-014444-pos-atualizacao.md,True,True,43127d690fc29713daa16a7c10c3929fe52afbd12589294861d4231413776c5e,OK,git ls-tree + filesystem
 arquivo::docs/monitoramento/portal-monitor-2026-05-17-revisao-estados-folha.md,docs/monitoramento/portal-monitor-2026-05-17-revisao-estados-folha.md,True,True,134d49360ff994726a48ae37206f69988010072c6a5c70a3c96768f8717e5c06,OK,git ls-tree + filesystem
 arquivo::docs/monitoramento/portal-monitor-2026-05-18-pos-atualizacao.md,docs/monitoramento/portal-monitor-2026-05-18-pos-atualizacao.md,True,True,c5916ae3945fc956e05ad42913803d253a38b2bdc15d6a7aba34be7b3e5f8728,OK,git ls-tree + filesystem
@@ -996,6 +997,7 @@ arquivo::scripts/audit_produtos_ncm.py,scripts/audit_produtos_ncm.py,True,True,0
 arquivo::scripts/audit_produtos_ncm_adversarial.py,scripts/audit_produtos_ncm_adversarial.py,True,True,e9cc8268984baac5fe57562ee8794040e559e5cc2dc2b591af249c2b8e436cbe,OK,git ls-tree + filesystem
 arquivo::scripts/audit_quarantine_isolation.py,scripts/audit_quarantine_isolation.py,True,True,635c820c69c748d1ce3f5a1750899f8a96c07f5a3325bca33fc4e46b19708f04,OK,git ls-tree + filesystem
 arquivo::scripts/audit_reforma_transition.py,scripts/audit_reforma_transition.py,True,True,1dd20a0d6bbdd758973bb7b85f21634ee2b41737bdbb37fdca0c3b7268c0c5fc,OK,git ls-tree + filesystem
+arquivo::scripts/audit_revalidation_ledger.py,scripts/audit_revalidation_ledger.py,True,True,0db0a6d82a2bb3a2659d003bd62f465a5452a9cd161583617e5f086ff67ad628,OK,git ls-tree + filesystem
 arquivo::scripts/audit_safe_pages_projection.py,scripts/audit_safe_pages_projection.py,True,True,0a67601b4d570d37961a06bae5ab5b310c7b3f10fe68a041cb3359fce3c7207d,OK,git ls-tree + filesystem
 arquivo::scripts/audit_state_source_quality.py,scripts/audit_state_source_quality.py,True,True,7d083b8aeb1250edfb3ec369a7633e8a81f60199b56f313dae70efc251ee8c1e,OK,git ls-tree + filesystem
 arquivo::scripts/audit_temporal_consistency.py,scripts/audit_temporal_consistency.py,True,True,a613af60a8986ffdfb7a2d12a47fe6965b3e48af5da79ec3ce52ddc28da0c3ee,OK,git ls-tree + filesystem
@@ -1012,13 +1014,16 @@ arquivo::scripts/export_legal_registry.py,scripts/export_legal_registry.py,True,
 arquivo::scripts/export_pis_cofins_ncm_excel.py,scripts/export_pis_cofins_ncm_excel.py,True,True,d03678a10639397413af754e05c44bf55c064af5e771a415ba15023fc2610a51,OK,git ls-tree + filesystem
 arquivo::scripts/extract_reforma_sources.py,scripts/extract_reforma_sources.py,True,True,3ba21f1370056f0b07a93f8a08932321aed1c2cad939804be274e7b2c72baefa,OK,git ls-tree + filesystem
 arquivo::scripts/import_cowork_portal_package.py,scripts/import_cowork_portal_package.py,True,True,c22f5bdd6697d6b2fe867f0e4458bd5ea988479b193009047cb57ef1280f5fdb,OK,git ls-tree + filesystem
-arquivo::scripts/ingest_bd_legislacao.py,scripts/ingest_bd_legislacao.py,True,True,7db3fbb9c646f0d82fc8d619148a02ef035898178dc2466801d6988f7c00fd75,OK,git ls-tree + filesystem
+arquivo::scripts/ingest_bd_legislacao.py,scripts/ingest_bd_legislacao.py,True,True,c0d5339faafb53d9ba099eac81b281e9343ec3703c9f12ea71a19e7ed13ecac4,OK,git ls-tree + filesystem
 arquivo::scripts/legal_modules.py,scripts/legal_modules.py,True,True,1b440df11aeab2053a24c27ea8a648dffe31f4d19baa1cab5ec29b1437bf746b,OK,git ls-tree + filesystem
 arquivo::scripts/monitor_v3_inventory.py,scripts/monitor_v3_inventory.py,True,True,ba1dd37d961fea54944b1d84cd1a91de26c1183ae9e57a7b7acd975e0ed2c1dc,OK,git ls-tree + filesystem
+arquivo::scripts/revalidate_corpus_v3.py,scripts/revalidate_corpus_v3.py,True,True,fea0364e51f0842c15a08286b378fda2acfdc67bae1a121ffd61c4532060c762,OK,git ls-tree + filesystem
 arquivo::scripts/state_legal_pages.py,scripts/state_legal_pages.py,True,True,eadac52616e205a8b7de8fd3916c93a9ef0619350a08dd5886eb03d0f9f1133b,OK,git ls-tree + filesystem
+arquivo::scripts/test_corpus_root_config.py,scripts/test_corpus_root_config.py,True,True,3beb528ce0f361bad3b8d28de13520bbba84780247d7870d331cdec2b35e8bc0,OK,git ls-tree + filesystem
+arquivo::scripts/test_revalidate_corpus_v3.py,scripts/test_revalidate_corpus_v3.py,True,True,e5eec06c401a9f6808e95c06768e851fcd81120c9a7888b07ac56ce0d7a8c24c,OK,git ls-tree + filesystem
 arquivo::scripts/test_safe_pages_projection_gate.py,scripts/test_safe_pages_projection_gate.py,True,True,1349b447b30640c42adae6f2ab09ce1c3ecc72f0ec0479d921fca90907e0da86,OK,git ls-tree + filesystem
 arquivo::scripts/test_validated_benefits_fail_closed.py,scripts/test_validated_benefits_fail_closed.py,True,True,c14a8c8047ebc270fd18636894e2412c8fff8b09d59dc106480bf8036a09a7ed,OK,git ls-tree + filesystem
-arquivo::scripts/validated_benefits.py,scripts/validated_benefits.py,True,True,716ddd1d4b2b1501e38c3a17630ee6a5992b98e59f178cd0c39574148b647299,OK,git ls-tree + filesystem
+arquivo::scripts/validated_benefits.py,scripts/validated_benefits.py,True,True,07d10e82389df6657976196417ade38f1eeab7c77aaff8cd76763d71f36034b7,OK,git ls-tree + filesystem
 arquivo::sitemap.txt,sitemap.txt,True,True,824e96d4d86fd19c6b17d228576668a918989b6169630a84effba60cc270371d,OK,git ls-tree + filesystem
 arquivo::sitemap.xml,sitemap.xml,True,True,81a814003b52e6558f12fd173cbe091a66b68c58c41574e21a16801e81304d8a,OK,git ls-tree + filesystem
 arquivo::workflow.md,workflow.md,True,True,8fc99ea57c308fb4f008684662e2829b431bd3baad0e64bd46ad2d7c2562b77e,OK,git ls-tree + filesystem
