@@ -1,0 +1,8 @@
+item,caminho,tipo,lido_integral,hash,observacao
+config_pages,_config.yml,configuração,SIM,cedf76ae9da7968a24c138ef5bee2c6b1b30f44bc658ee9c7cef3321d9e354c3,Restringe Pages ao aviso neutro
+pagina_publica,index.html,HTML,SIM,d7a6028b2525c0faacb8811c81c8e5c2123578adf3f00ff28bff0e1559b4be6e,Não contém orientação tributária
+crosswalk,data/benefits_crosswalk.json,JSON,N,,9726 registros; leitura integral pendente
+quarentena,data/benefits_quarantine.json,JSON,N,,13150 registros; leitura integral pendente
+indice_busca,assets/portal-search-full.json,JSON,N,,19089 entradas; não publicado em main
+artefato_candidato,data/approved_cards.json@6d8dc9d7,JSON,SIM,,Sete registros; não comprova o universo integral
+gate_prontidao,scripts/audit_v3_readiness.py,Python,SIM,7646dbf68e0205d31f9189f9bf07cbf76d38a621bd37e315ab0e952342f95d59,Reprovou o baseline por controles e prova ausentes

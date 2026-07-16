@@ -1,0 +1,25 @@
+{
+  "schema": "rjc-liberacao-material-v1",
+  "timestamp": "2026-07-16T11:08:23-03:00",
+  "status": "BLOQUEADO TEMPORÁRIO",
+  "veredito_independente": "NÃO CONFORME",
+  "publicacao_integral_autorizada_por_evidencia": false,
+  "evidencias": {
+    "crosswalk_entries": 9726,
+    "quarantine_entries": 13150,
+    "html_total": 658,
+    "sitemap_urls": 655,
+    "search_entries": 19089,
+    "audit_v3_readiness_exit": 1,
+    "audit_v3_readiness_log_sha256": "46bef972d3afc40d03988ea37ad750aa23c0e9500c31a2c469e75e77057d5a65",
+    "hard_gates_missing": 13,
+    "canonical_rows_without_material_proof": 94
+  },
+  "sources": [
+    "scripts/audit_v3_readiness.py",
+    "data/benefits_crosswalk.json",
+    "data/benefits_quarantine.json",
+    "_config.yml",
+    "revisao_de_aplicacao_independente.md"
+  ]
+}
