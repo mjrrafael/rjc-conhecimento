@@ -34,6 +34,8 @@ jobs:
         run: python -B scripts/test_safe_pages_projection_gate.py "$RUNNER_TEMP/portal-site"
       - name: Reject impossible dates and hollow provenance
         run: python -B scripts/test_validated_benefits_fail_closed.py
+      - name: Reject material cards and quarantine from public datasets
+        run: python -B scripts/audit_benefit_dataset_sanitization.py
       - name: Rebuild and verify inventory freshness
         run: |
           python scripts/monitor_v3_inventory.py

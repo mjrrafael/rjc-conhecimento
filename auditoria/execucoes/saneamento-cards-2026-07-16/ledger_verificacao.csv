@@ -1,0 +1,6 @@
+id,criterio,metodo,status,evidencia
+RAC-001,"Definir criterios falsificaveis antes de executar.","workflow revisado antes da execução",OK,"workflow.md"
+RAC-002,"Registrar ledger com status permitido e evidencia concreta existente.","hashes dos dois arquivos externos e auditor",OK,"archive_manifest.json SHA-256 6beb5f7d29ebb9b4a7cd3c599e1f8b6cbc574daa7efaa537ad1afcb170175910"
+RAC-003,"Executar revisao adversarial da fonte primaria crua.","reabertura dos arquivos e cópias externas",OK,"revisao_adversarial.md"
+RAC-004,"Conferir o detalhe interno que sustenta cada resumo.","contagem integral de entries antes e depois",OK,"audit_result.txt"
+RAC-005,"Fechar com Status explicito coerente.","relatório final e verificador",OK,"relatorio_final.md"

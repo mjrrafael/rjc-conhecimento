@@ -9,6 +9,7 @@ editorial reading path for each state and federal theme.
 from __future__ import annotations
 
 import json
+import os
 import re
 import unicodedata
 from collections import Counter
@@ -17,7 +18,21 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[1]
-DEFAULT_BD = Path(r"C:\Users\kris2\OneDrive\COWORK\BD_LEGISLACAO")
+def default_bd_root() -> Path:
+    """Return the local legal corpus root without binding the build to one user.
+
+    A caller may set ``RJC_BD_LEGISLACAO``.  The home-relative fallback keeps
+    the historical workstation layout usable while avoiding a path belonging
+    to a different user profile.
+    """
+
+    configured = os.environ.get("RJC_BD_LEGISLACAO")
+    if configured:
+        return Path(configured).expanduser()
+    return Path.home() / "OneDrive" / "COWORK" / "BD_LEGISLACAO"
+
+
+DEFAULT_BD = default_bd_root()
 OUT = ROOT / "data" / "legal_inventory.json"
 
 STATE_NAMES = {

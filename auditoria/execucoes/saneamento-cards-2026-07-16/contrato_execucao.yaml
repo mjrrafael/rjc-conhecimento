@@ -1,0 +1,37 @@
+skill: revisar-ate-concluir
+versao_contrato: 2026-07-12
+dominio: governanca
+risco_padrao: alto
+artefatos_obrigatorios:
+  - workflow.md
+  - ledger_verificacao.csv
+  - fontes_lidas.csv
+  - inventario_documentos.csv
+  - achados_e_pendencias.md
+  - revisao_adversarial.md
+  - relatorio_final.md
+gates:
+  - id: G0
+    nome: enquadramento_e_escopo
+    artefatos: [workflow.md]
+  - id: G1
+    nome: fontes_e_inventario
+    artefatos: [fontes_lidas.csv, inventario_documentos.csv]
+  - id: G2
+    nome: execucao_com_evidencia
+    artefatos: [ledger_verificacao.csv, achados_e_pendencias.md]
+  - id: G3
+    nome: revisao_adversarial
+    artefatos: [revisao_adversarial.md, ledger_verificacao.csv]
+  - id: G4
+    nome: verificador_deterministico
+    artefatos: []
+  - id: G5
+    nome: fechamento_literal
+    artefatos: [relatorio_final.md]
+checks_obrigatorios:
+  - "RAC-001 | Definir criterios falsificaveis antes de executar."
+  - "RAC-002 | Registrar ledger com status permitido e evidencia concreta existente."
+  - "RAC-003 | Executar revisao adversarial da fonte primaria crua."
+  - "RAC-004 | Conferir o detalhe interno que sustenta cada resumo."
+  - "RAC-005 | Fechar com Status explicito coerente."

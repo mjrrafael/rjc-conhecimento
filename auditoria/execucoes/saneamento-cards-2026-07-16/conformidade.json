@@ -1,0 +1,142 @@
+{
+  "verificador_versao": "4.5.0",
+  "skill": "revisar-ate-concluir",
+  "contract": "auditoria\\execucoes\\saneamento-cards-2026-07-16\\contrato_execucao.yaml",
+  "workdir": "auditoria\\execucoes\\saneamento-cards-2026-07-16",
+  "checked_at": "2026-07-16T13:40:36",
+  "conforme": true,
+  "status_final_detectado": "BLOQUEADO",
+  "decisao_final_detectada": null,
+  "pendencias_abertas_no_ledger": 0,
+  "issues": [],
+  "warnings": [],
+  "checks": [
+    {
+      "artifact": "workflow.md",
+      "ok": true,
+      "detail": "ok (1001 bytes)"
+    },
+    {
+      "artifact": "workflow.md",
+      "ok": true,
+      "detail": "UTF-8 integro",
+      "check": "integridade_textual"
+    },
+    {
+      "artifact": "ledger_verificacao.csv",
+      "ok": true,
+      "detail": "ok (752 bytes)"
+    },
+    {
+      "artifact": "ledger_verificacao.csv",
+      "ok": true,
+      "detail": "UTF-8 integro",
+      "check": "integridade_textual"
+    },
+    {
+      "artifact": "fontes_lidas.csv",
+      "ok": true,
+      "detail": "ok (391 bytes)"
+    },
+    {
+      "artifact": "fontes_lidas.csv",
+      "ok": true,
+      "detail": "UTF-8 integro",
+      "check": "integridade_textual"
+    },
+    {
+      "artifact": "inventario_documentos.csv",
+      "ok": true,
+      "detail": "ok (487 bytes)"
+    },
+    {
+      "artifact": "inventario_documentos.csv",
+      "ok": true,
+      "detail": "UTF-8 integro",
+      "check": "integridade_textual"
+    },
+    {
+      "artifact": "achados_e_pendencias.md",
+      "ok": true,
+      "detail": "ok (722 bytes)"
+    },
+    {
+      "artifact": "achados_e_pendencias.md",
+      "ok": true,
+      "detail": "UTF-8 integro",
+      "check": "integridade_textual"
+    },
+    {
+      "artifact": "revisao_adversarial.md",
+      "ok": true,
+      "detail": "ok (1760 bytes)"
+    },
+    {
+      "artifact": "revisao_adversarial.md",
+      "ok": true,
+      "detail": "UTF-8 integro",
+      "check": "integridade_textual"
+    },
+    {
+      "artifact": "relatorio_final.md",
+      "ok": true,
+      "detail": "ok (356 bytes)"
+    },
+    {
+      "artifact": "relatorio_final.md",
+      "ok": true,
+      "detail": "UTF-8 integro",
+      "check": "integridade_textual"
+    }
+  ],
+  "gates": [
+    {
+      "gate": "G0",
+      "nome": "enquadramento_e_escopo",
+      "ok": true,
+      "faltando": []
+    },
+    {
+      "gate": "G1",
+      "nome": "fontes_e_inventario",
+      "ok": true,
+      "faltando": []
+    },
+    {
+      "gate": "G2",
+      "nome": "execucao_com_evidencia",
+      "ok": true,
+      "faltando": []
+    },
+    {
+      "gate": "G3",
+      "nome": "revisao_adversarial",
+      "ok": true,
+      "faltando": []
+    },
+    {
+      "gate": "G4",
+      "nome": "verificador_deterministico",
+      "ok": true,
+      "faltando": []
+    },
+    {
+      "gate": "G5",
+      "nome": "fechamento_literal",
+      "ok": true,
+      "faltando": []
+    }
+  ],
+  "checks_obrigatorios_declarados": [
+    "RAC-001 | Definir criterios falsificaveis antes de executar.",
+    "RAC-002 | Registrar ledger com status permitido e evidencia concreta existente.",
+    "RAC-003 | Executar revisao adversarial da fonte primaria crua.",
+    "RAC-004 | Conferir o detalhe interno que sustenta cada resumo.",
+    "RAC-005 | Fechar com Status explicito coerente."
+  ],
+  "camadas_manuais": [
+    "verdade material dos numeros (G3 humano/revisor re-deriva da fonte crua)",
+    "cobertura adversarial: 'qual detalhe interno derrubaria o concluido?'",
+    "leitura integral real das fontes (o script confere declaracao, nao leitura)"
+  ]
+}
