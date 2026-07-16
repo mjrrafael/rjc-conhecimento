@@ -11,6 +11,7 @@ from __future__ import annotations
 
 import hashlib
 import json
+import os
 import re
 import sys
 import unicodedata
@@ -33,7 +34,15 @@ from state_legal_pages import (  # noqa: E402
 )
 
 
-BD_FEDERAL = Path(r"C:\Users\kris2\OneDrive\COWORK\BD_LEGISLACAO\#FEDERAIS-COMPILADO-ONLINE\legislacao_txt_completa")
+def federal_corpus_root() -> Path:
+    """Locate the local federal corpus without pinning it to another profile."""
+
+    configured = os.environ.get("RJC_BD_LEGISLACAO")
+    base = Path(configured).expanduser() if configured else Path.home() / "OneDrive" / "COWORK" / "BD_LEGISLACAO"
+    return base / "#FEDERAIS-COMPILADO-ONLINE" / "legislacao_txt_completa"
+
+
+BD_FEDERAL = federal_corpus_root()
 TODAY = date.today().isoformat()
 
 BENEFIT_NEEDLES = [
