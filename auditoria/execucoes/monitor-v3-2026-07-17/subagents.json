@@ -1,0 +1,10 @@
+{
+  "baseline_sha": "4caecc1c61e98e76a6c4a4eedaf10ada9e1d4e5f",
+  "wave": "baseline",
+  "reviews": [
+    {"task_path": "/root/revisor_fontes_vigencia_20260717", "fork_turns": "none", "role": "fontes_vigencia", "result": "NAO_AUTORIZAR"},
+    {"task_path": "/root/revisor_humano_portal_20260717", "fork_turns": "none", "role": "humano_portal", "result": "NAO_AUTORIZAR"},
+    {"task_path": "/root/revisor_ia_dados_20260717", "fork_turns": "none", "role": "ia_dados", "result": "ACHADO_P0"}
+  ],
+  "certification": "NEGADA: filesystem compartilhado, sem mount/ACL somente-leitura e sem export nativo de tool calls/leitura negativa"
+}
