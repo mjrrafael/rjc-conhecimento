@@ -1,6 +1,6 @@
 # Revisão adversarial
 
-cadeia re-derivada: contenção Pages | fonte crua: crawl anônimo de `https://mjrrafael.github.io/rjc-conhecimento/` e 927 URLs pelo revisor humano | resultado: bateu — raiz, `404.html`, `robots.txt` e `llms.txt` são as únicas superfícies servidas; rotas legadas retornam 404 seguro.
+cadeia re-derivada: contenção Pages | fonte crua: crawl anônimo de https://mjrrafael.github.io/rjc-conhecimento/ e 927 URLs pelo revisor humano | resultado: bateu — raiz, `404.html`, `robots.txt` e `llms.txt` são as únicas superfícies servidas; rotas legadas retornam 404 seguro.
 
 cadeia re-derivada: exposição pública fora de Pages | fonte crua: `raw.githubusercontent.com/mjrrafael/rjc-conhecimento/4caecc1c61e98e76a6c4a4eedaf10ada9e1d4e5f/...` | resultado: divergiu da conclusão de contenção global — 875/875 arquivos legados deram HTTP 200, incluindo busca e índices jurídicos materiais.
 

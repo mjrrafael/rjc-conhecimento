@@ -2,7 +2,7 @@ fonte,tipo,identificador,resultado,uso
 memory.md,estado_persistido,C:\\Users\\rafae\\.codex\\automations\\monitor-portal-rjc-tributario\\memory.md,LI_DO_INTEGRALMENTE,retomada e bloqueios conhecidos
 origin/main,git,4caecc1c61e98e76a6c4a4eedaf10ada9e1d4e5f,CONFIRMADO,baseline isolado
 GitHub_PRs,API_gh,mjrrafael/rjc-conhecimento,CONFIRMADO,PRs #26 #27 #28 #30 continuam draft
-Portal_RJC,HTTP_anônimo,https://mjrrafael.github.io/rjc-conhecimento/?monitor=20260717,HTTP_200,contenção pública e hash da raiz
+Portal_RJC,HTTP_anônimo,"https://mjrrafael.github.io/rjc-conhecimento/",HTTP_200,contenção pública e hash da raiz
 Pages_crawl,plataforma_task,/root/revisor_humano_portal_20260717,CONCLUIDO,"927 URLs; 655 sitemap legadas, 658 HTML, 212 data, 5 assets e 47 diretórios; somente quatro superfícies seguras mais raiz retornaram 200"
 Raw_GitHub_crawl,plataforma_task,/root/revisor_humano_portal_20260717,ACHADO_P0,"875 de 875 arquivos legados do SHA baseline retornaram HTTP 200 em raw.githubusercontent.com"
 Fontes_e_vigencia,plataforma_task,/root/revisor_fontes_vigencia_20260717,NAO_AUTORIZAR,"41 refetches anônimos: 36 HTTP 200 e 5 falhas; cobertura integral e recibos nativos não comprovados"

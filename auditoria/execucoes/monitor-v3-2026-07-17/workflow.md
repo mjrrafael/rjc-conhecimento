@@ -9,7 +9,7 @@ Revalidar o estado publicado e o baseline remoto, sem tocar no worktree do usuá
 - Janela desta vigília: `2026-07-17T07:32:19-03:00` em `America/Sao_Paulo`.
 - Baseline remoto: `origin/main` = `4caecc1c61e98e76a6c4a4eedaf10ada9e1d4e5f`.
 - Worktree exclusivo: `C:\Users\rafae\Documents\Codex\2026-06-14\pesquisa-na-mem-ria-profunda-l\worktrees\rjc-monitor-2026-07-17-0732`.
-- Produção: `https://mjrrafael.github.io/rjc-conhecimento/`.
+- Produção: https://mjrrafael.github.io/rjc-conhecimento/.
 
 ## Critérios de pronto falsificáveis
 
