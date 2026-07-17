@@ -1,0 +1,42 @@
+skill: revisar-ate-concluir
+versao_contrato: 2026-07-17
+dominio: governanca_portal_tributario
+risco_padrao: alto
+baseline_sha: 4caecc1c61e98e76a6c4a4eedaf10ada9e1d4e5f
+artefatos_obrigatorios:
+  - workflow.md
+  - ledger_verificacao.csv
+  - fontes_lidas.csv
+  - achados_e_pendencias.md
+  - revisao_adversarial.md
+  - relatorio_final.md
+  - conformidade.json
+gates:
+  - id: G0
+    nome: enquadramento_isolamento_e_memoria
+    artefatos: [workflow.md, fontes_lidas.csv]
+  - id: G1
+    nome: producao_sha_e_superficies_publicas
+    artefatos: [ledger_verificacao.csv, fontes_lidas.csv]
+  - id: G2
+    nome: estado_material_v3
+    artefatos: [ledger_verificacao.csv, achados_e_pendencias.md]
+  - id: G3
+    nome: revisao_adversarial_independente
+    artefatos: [revisao_adversarial.md, ledger_verificacao.csv]
+  - id: G4
+    nome: verificacao_deterministica
+    artefatos: [conformidade.json, ledger_verificacao.csv]
+  - id: G5
+    nome: decisao_literal_e_retomada
+    artefatos: [relatorio_final.md]
+checks_obrigatorios:
+  - Definir critérios falsificáveis antes da execução.
+  - Preservar o worktree do usuário e operar somente no SHA isolado.
+  - Revalidar produção por HTTP e confrontar SHA/PRs remotos.
+  - Não declarar publicação ou cobertura integral sem recibos nativos, duas raízes confiáveis e prova de independência.
+  - Registrar a limitação material e uma única ação externa de retomada quando houver bloqueio.
+camadas_manuais:
+  - contenção pública e ausência de orientação tributária operacional
+  - suficiência material para qualquer restauração de conteúdo
+  - independência real entre revisões e raízes de confiança

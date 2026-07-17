@@ -1,14 +1,14 @@
 {
   "schema": "rjc-build-freshness-v1",
-  "generated_at": "2026-06-26T07:46:26",
+  "generated_at": "2026-07-17T07:32:19-03:00",
   "artifacts": {
     "beneficios/index.html": {
       "sha256": "5b6951667cbc9560902ee54df6f0bfd665089015a261eada0f242f4af29024bb",
       "bytes": 54742810
     },
     "llms.txt": {
-      "sha256": "b0132d7a8f7a564269e3c106297e1bd9617c2e801c0d2e1941249dabc19a39dc",
-      "bytes": 126942
+      "sha256": "08f53be6f0f48b242d6d82bc41ccf287ecace2088813b58f9c1f2d5205f0dd07",
+      "bytes": 223
     },
     "assets/llm-manifest.json": {
       "sha256": "3598749cd3075342da3c38f69fb324a571c72b5c29cd521a6b23e75d2e435954",
@@ -27,8 +27,8 @@
       "bytes": 27047
     },
     "data/benefits_crosswalk.json": {
-      "sha256": "df3f2261681d184d177ab632d04f7334bcd77ed37826d43e72db7ee7f11c7810",
-      "bytes": 76509697
+      "sha256": "ece9196c246c593ce32efc004e27fb186000aba8075ded0ffede6a610c97d9a7",
+      "bytes": 325
     },
     "data/ncm_benefits_index.json": {
       "sha256": "a17775308e2537689a67186793efcf406e2af59069d6d3fbdf4c65f367f2cf7a",

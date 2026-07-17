@@ -1,0 +1,6 @@
+id,criterio,metodo,status,evidencia
+M17-01,Contenção da produção,"HTTP anônimo e inspeção do corpo",OK,"raiz HTTP 200; 929 bytes; SHA-256 f3f84f1276d7dfb911624c02ed8a56891473d60cc41d18481321254611e53368; aviso de revisão presente; padrão de conteúdo tributário operacional ausente"
+M17-02,Reconciliação de main e PRs,"git fetch --prune + gh pr list",OK,"origin/main=4caecc1c61e98e76a6c4a4eedaf10ada9e1d4e5f; PRs abertas #26,#27,#28,#30, todas draft; #30=3b65856e721eaabad1ed63203b3d3f3882739b23"
+M17-03,Suficiência para restaurar conteúdo público,"matriz v3, recibos, proveniência, gates e raízes confiáveis",BLOQUEADO,"audit_v3_readiness exit 1: 13 gates ausentes, 94 linhas sem recibo/hash e duas raízes não comprovadas; 875 arquivos legados continuam acessíveis por Raw GitHub"
+M17-04,Revisão independente,"três papéis somente-leitura sobre SHA congelado",BLOQUEADO,"três papéis concluíram; todos negam autorização. A plataforma compartilhada e a ausência de export/recibos nativos impedem certificar independência entre ondas"
+M17-05,Rastreabilidade e retomada,"artefatos do rito, memória e commit explícito",OK,"contrato anterior aos testes; artefatos, manifesto e bloqueio material registrados; commit e PR draft previstos para este diff explícito"

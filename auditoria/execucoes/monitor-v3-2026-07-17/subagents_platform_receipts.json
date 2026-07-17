@@ -1,0 +1,5 @@
+{
+  "status": "INDISPONIVEL",
+  "reason": "A plataforma expõe os resultados de spawn/finalização à sessão, mas não disponibiliza nesta execução export imutável de task graph, tool calls, caminhos lidos ou prova negativa de acesso. Este arquivo não é um recibo nativo e não deve ser usado para certificar independência.",
+  "required_next_action": "Prover export nativo imutável e dois ambientes com isolamento efetivo antes da Onda 2."
+}

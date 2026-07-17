@@ -1,0 +1,5 @@
+caminho,finalidade,origem,validacao
+assets/build-freshness.json,reconciliar hashes de superfícies saneadas,hashes canônicos locais e HTTP, audit_index_freshness.py exit 0
+scripts/audit_master_coverage.py,aceitar somente matriz explicitamente fail-closed,defeito de gate detectado nesta vigília,gate normal e mutante executados
+scripts/audit_editorial_date_per_card.py,não exigir data editorial sem card publicado,contrato fail-closed e dataset vazio,gate normal e mutante executados
+auditoria/execucoes/monitor-v3-2026-07-17,registrar vigília e bloqueio,execução 2026-07-17,rito e evidências deste diretório

@@ -61,7 +61,11 @@ def main() -> int:
             errors.append(f"estado marcado profundo e aguardando revisao ao mesmo tempo: {item.get('uf')}")
 
     benefit_entries = benefits.get("entries", [])
-    if not benefit_entries:
+    benefits_fail_closed = (
+        benefits.get("publication_status") == "BLOQUEADO_SEM_PROVA_MATERIAL"
+        and benefit_entries == []
+    )
+    if not benefit_entries and not benefits_fail_closed:
         errors.append("matriz de beneficios vazia")
     if benefits.get("schema") != "rjc-validated-benefits-crosswalk-v3":
         errors.append("matriz de beneficios precisa estar no schema validado v3")
@@ -162,6 +166,8 @@ def main() -> int:
 
     print(f"Requisitos federais auditados: {len(federal)}")
     print(f"Estados auditados: {len(states)}")
+    if benefits_fail_closed:
+        print("Matriz de beneficios: fail-closed, sem entradas públicas materiais.")
     print(f"Entradas de beneficios auditadas: {len(benefit_entries)}")
     print(f"Linhas NCM x beneficios auditadas: {len(ncm_rows)}")
     print(f"Familias CONFAZ auditadas: {len(families)}")
