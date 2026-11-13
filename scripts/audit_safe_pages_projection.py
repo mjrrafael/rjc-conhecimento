@@ -106,12 +106,11 @@ def audit_site(errors: list[str]) -> None:
     # visible archival notice and noindex directives. Their hashes above prevent
     # unreviewed edits; the general corpus and benefit-provenance leak checks
     # remain scoped to the four safe shell files.
-    archived_text = "\n".join((SITE / rel).read_text(encoding="utf-8", errors="ignore") for rel in sorted(ARCHIVED_SHA256))
     for rel in ARCHIVED_SHA256:
         raw = (SITE / rel).read_text(encoding="utf-8", errors="ignore")
         if ARCHIVE_NOTICE not in raw:
             errors.append(f"aviso histórico ausente: {rel}")
-        robots_tags = re.findall(r"<meta\\b[^>]*name=[\"']robots[\"'][^>]*>", raw, flags=re.I)
+        robots_tags = re.findall(r"<meta\b[^>]*name=[\"']robots[\"'][^>]*>", raw, flags=re.I)
         if len(robots_tags) != 1 or "noindex" not in robots_tags[0].casefold():
             errors.append(f"página histórica sem noindex único: {rel}")
 
