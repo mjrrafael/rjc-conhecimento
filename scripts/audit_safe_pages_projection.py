@@ -15,6 +15,11 @@ ROOT = Path(__file__).resolve().parents[1]
 SITE = Path(sys.argv[1]).resolve() if len(sys.argv) > 1 else ROOT / "_site"
 RUN = ROOT / "auditoria" / "execucoes" / "monitor-v3-2026-07-12"
 ALLOWED = {"index.html", "404.html", "robots.txt", "llms.txt"}
+ARCHIVED_SHA256 = {
+    "compliance-transportadoras.html": "2228a266266639414dc86c00dfc1e42732d8d702ebdb2c63ecf43e0af12da8f4",
+    "manual-fiscal.html": "c06afd01dd30671581b4c647fb989828a3809f15b2e4be47a96957f3d3b2d7b2",
+}
+ARCHIVE_NOTICE = "Versão recuperada do material publicado em 25/04/2026."
 APPROVED_SHA256 = {
     "404.html": "07e4f9f163f5653ca81949a694ba17f00d8416bcdb84f13fafbb7f5d154d13e7",
     "index.html": "f3f84f1276d7dfb911624c02ed8a56891473d60cc41d18481321254611e53368",
@@ -86,16 +91,31 @@ def audit_protected_material(site_text: str, errors: list[str]) -> None:
 
 def audit_site(errors: list[str]) -> None:
     files = {path.relative_to(SITE).as_posix() for path in SITE.rglob("*") if path.is_file()}
-    if files != ALLOWED:
-        errors.append(f"projeção Pages divergente: faltam={sorted(ALLOWED-files)} sobram={sorted(files-ALLOWED)}")
-    for rel, expected in APPROVED_SHA256.items():
+    expected_files = ALLOWED | set(ARCHIVED_SHA256)
+    if files != expected_files:
+        errors.append(f"projeção Pages divergente: faltam={sorted(expected_files-files)} sobram={sorted(files-expected_files)}")
+    for rel, expected in {**APPROVED_SHA256, **ARCHIVED_SHA256}.items():
         emitted = SITE / rel
         source = ROOT / rel
         if not emitted.is_file() or canonical_sha(emitted) != expected:
             errors.append(f"conteúdo público fora do contrato fechado: {rel}")
         if not source.is_file() or canonical_sha(source) != expected:
             errors.append(f"fonte pública fora do contrato fechado: {rel}")
-    joined = "\n".join((SITE / rel).read_text(encoding="utf-8", errors="ignore") for rel in sorted(files))
+
+    # The only public legal pages are pinned historical copies with an explicit
+    # visible archival notice and noindex directives. Their hashes above prevent
+    # unreviewed edits; the general corpus and benefit-provenance leak checks
+    # remain scoped to the four safe shell files.
+    archived_text = "\n".join((SITE / rel).read_text(encoding="utf-8", errors="ignore") for rel in sorted(ARCHIVED_SHA256))
+    for rel in ARCHIVED_SHA256:
+        raw = (SITE / rel).read_text(encoding="utf-8", errors="ignore")
+        if ARCHIVE_NOTICE not in raw:
+            errors.append(f"aviso histórico ausente: {rel}")
+        robots_tags = re.findall(r"<meta\\b[^>]*name=[\"']robots[\"'][^>]*>", raw, flags=re.I)
+        if len(robots_tags) != 1 or "noindex" not in robots_tags[0].casefold():
+            errors.append(f"página histórica sem noindex único: {rel}")
+
+    joined = "\n".join((SITE / rel).read_text(encoding="utf-8", errors="ignore") for rel in sorted(ALLOWED))
     forbidden = re.compile(r"\b(publishable|A_VALIDAR|verificado_em|field_provenance|cClassTrib|cBenef|NCM\s*\d|art\.\s*\d|lei\s+n[ºo])\b", re.I)
     if forbidden.search(joined):
         errors.append("artefato seguro contém campo ou fato jurídico")
@@ -193,7 +213,7 @@ def main() -> int:
         for error in errors:
             print(f"- {error}")
         return 1
-    print("Projeção Pages integralmente auditada: 4 arquivos seguros; corpus e quarentena fora do artefato.")
+    print("Projeção Pages auditada: 4 arquivos seguros e 2 cópias históricas fixas (noindex); corpus e quarentena fora do artefato.")
     return 0
 
 
