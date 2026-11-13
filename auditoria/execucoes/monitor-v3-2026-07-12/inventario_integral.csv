@@ -2,7 +2,7 @@ chave,caminho_ou_id,git,filesystem,sha256,status,evidencia
 arquivo::.github/workflows/portal-audit.yml,.github/workflows/portal-audit.yml,True,True,25648f07e96f5b813fd7002fae84ab05cf9ea4ca4c39164620b21a7873bb81f6,OK,git ls-tree + filesystem
 arquivo::.gitignore,.gitignore,True,True,f3cf8503af3bc12c833dfdf1716e2d805577f0704dd1c3f554cf7597fe36b805,OK,git ls-tree + filesystem
 arquivo::404.html,404.html,True,True,07e4f9f163f5653ca81949a694ba17f00d8416bcdb84f13fafbb7f5d154d13e7,OK,git ls-tree + filesystem
-arquivo::_config.yml,_config.yml,True,True,69330c9cc6d0e640e062fc1cc48b8da7d3abddbae6c25d9551aa43ecbd589e01,OK,git ls-tree + filesystem
+arquivo::_config.yml,_config.yml,True,True,3ed6c2d11d3e96daa6f7d8fb89250beaf032a208cda6e417778d5efc263bca95,OK,git ls-tree + filesystem
 arquivo::assets/build-freshness.json,assets/build-freshness.json,True,True,155022c5de38e27ae7e5891547e37826a51de9c5ac0b56d0b463af915d39c837,OK,git ls-tree + filesystem
 arquivo::assets/flags/README.md,assets/flags/README.md,True,True,122c924ce9878e8fea0d8d1da3459b816bf3004354423795b9382b48e693d3c6,OK,git ls-tree + filesystem
 arquivo::assets/flags/ac.svg,assets/flags/ac.svg,True,True,54d4374657e1bdb16c109bbc2e579ad9339785d92767b490d3e8bea4ea8cfb3c,OK,git ls-tree + filesystem
@@ -82,7 +82,7 @@ arquivo::beneficios/setores.html,beneficios/setores.html,True,True,a2895433bec4c
 arquivo::beneficios/uf.html,beneficios/uf.html,True,True,25cc80a10218a05da8bb28309b7bf04ecb80941401a2b10a1985bbe0d68dc3bf,OK,git ls-tree + filesystem
 arquivo::biblioteca/index.html,biblioteca/index.html,True,True,4f0f7067ead40415c82cc9145cc1bc52397e88221a6cf51de60958df10689644,OK,git ls-tree + filesystem
 arquivo::ciclo_mdfe.png,ciclo_mdfe.png,True,True,52f4843b674dcd13ec18df595912b76f5fb2f73de3e01180c2bd03ad3f45e688,OK,git ls-tree + filesystem
-arquivo::compliance-transportadoras.html,compliance-transportadoras.html,True,True,e03b8992cf3161ada53bd230cc46005e98451509ee33dac0641aba61f4383521,OK,git ls-tree + filesystem
+arquivo::compliance-transportadoras.html,compliance-transportadoras.html,True,True,2228a266266639414dc86c00dfc1e42732d8d702ebdb2c63ecf43e0af12da8f4,OK,git ls-tree + filesystem
 arquivo::confaz/index.html,confaz/index.html,True,True,e5d2e0c2d54e0fb9f14d81c1ec10f159a9d06c82595844c843d2fecccd63e51d,OK,git ls-tree + filesystem
 arquivo::confaz/ultimos-5-anos.html,confaz/ultimos-5-anos.html,True,True,afabe684713448819fcedb807709d96a40a7a99ee03a99d7e4c4bc6ef43aeacf,OK,git ls-tree + filesystem
 arquivo::data/benefits_crosswalk.json,data/benefits_crosswalk.json,True,True,ece9196c246c593ce32efc004e27fb186000aba8075ded0ffede6a610c97d9a7,OK,git ls-tree + filesystem
@@ -976,7 +976,7 @@ arquivo::index.html,index.html,True,True,f3f84f1276d7dfb911624c02ed8a56891473d60
 arquivo::llms.txt,llms.txt,True,True,08f53be6f0f48b242d6d82bc41ccf287ecace2088813b58f9c1f2d5205f0dd07,OK,git ls-tree + filesystem
 arquivo::logo.png,logo.png,True,True,2dfc9598e4bca0fa4e9fe36c5fd42b051b3b3a0bc36cd805e09ea8e45568cb12,OK,git ls-tree + filesystem
 arquivo::manual-financeiro.html,manual-financeiro.html,True,True,fa811d8f60cb3bf30fa2433bf83e7bcc8e6546f982bf1071be1278f6f5b2dd24,OK,git ls-tree + filesystem
-arquivo::manual-fiscal.html,manual-fiscal.html,True,True,3712e6c502a3631f0c086d92587e5f76e48bf61c82cb80d4704851869ec72b61,OK,git ls-tree + filesystem
+arquivo::manual-fiscal.html,manual-fiscal.html,True,True,c06afd01dd30671581b4c647fb989828a3809f15b2e4be47a96957f3d3b2d7b2,OK,git ls-tree + filesystem
 arquivo::mapa_difal.png,mapa_difal.png,True,True,d226718a8e1765a826b13e9eb251f92146624ed4205b693125bcaf36a44c7a18,OK,git ls-tree + filesystem
 arquivo::nfce_qrcode_v3.png,nfce_qrcode_v3.png,True,True,d4a392516f29d6e4091ec848286226ed211376f49b4ed6fc060b3b0a8cc42573,OK,git ls-tree + filesystem
 arquivo::painel-fiscal/assets/index-DNWnQOuP.js,painel-fiscal/assets/index-DNWnQOuP.js,True,True,8105e13f1ee9e155afac4a63a05aa31f10e4681beef09f87323adfa129789321,OK,git ls-tree + filesystem
