@@ -1,0 +1,8 @@
+fonte,tipo,localizacao,escopo_lido,limitacao,uso
+baseline_git,controle de versão,origin/main:f814f80efbab84bf43b671bf544c4678d4dda82a,integral,Nenhuma,Definição da versão atualmente publicada
+crosswalk_beneficios,dados jurídicos,data/benefits_crosswalk.json,parcial,9726 registros; inspeção estrutural e contagem,Dimensionar revalidação necessária
+quarentena_beneficios,dados jurídicos,data/benefits_quarantine.json,parcial,13150 registros; inspeção estrutural e contagem,Dimensionar risco de vazamento
+candidato_local,controle de versão,6d8dc9d7,parcial,Somente metadados e 7 cards foram inspecionados; recibos são locais não nativos,Avaliar se havia conjunto parcialmente publicável
+audit_v3_readiness,controle técnico,scripts/audit_v3_readiness.py,integral,Nenhuma,Verificar pré-requisitos materiais de publicação
+config_pages,configuração,_config.yml,integral,Nenhuma,Verificar a projeção Pages atual
+pagina_raiz,HTML,index.html,integral,Nenhuma,Verificar conteúdo efetivamente servido pela raiz

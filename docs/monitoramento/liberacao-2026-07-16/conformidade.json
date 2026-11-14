@@ -1,0 +1,99 @@
+{
+  "verificador_versao": "3.1.1",
+  "skill": "revisar-ate-concluir",
+  "contract": "C:\\Users\\rafae\\.codex\\skills\\revisar-ate-concluir\\contrato_execucao.yaml",
+  "workdir": "C:\\Users\\rafae\\Documents\\Codex\\2026-06-14\\pesquisa-na-mem-ria-profunda-l\\worktrees\\rjc-restore-2026-07-16-1100\\docs\\monitoramento\\liberacao-2026-07-16",
+  "checked_at": "2026-07-16T11:08:47",
+  "conforme": true,
+  "status_final_detectado": "BLOQUEADO",
+  "pendencias_abertas_no_ledger": 3,
+  "issues": [],
+  "warnings": [],
+  "checks": [
+    {
+      "artifact": "workflow.md",
+      "ok": true,
+      "detail": "ok (2159 bytes)"
+    },
+    {
+      "artifact": "ledger_verificacao.csv",
+      "ok": true,
+      "detail": "ok (2187 bytes)"
+    },
+    {
+      "artifact": "fontes_lidas.csv",
+      "ok": true,
+      "detail": "ok (1026 bytes)"
+    },
+    {
+      "artifact": "inventario_documentos.csv",
+      "ok": true,
+      "detail": "ok (884 bytes)"
+    },
+    {
+      "artifact": "achados_e_pendencias.md",
+      "ok": true,
+      "detail": "ok (1711 bytes)"
+    },
+    {
+      "artifact": "revisao_adversarial.md",
+      "ok": true,
+      "detail": "ok (1399 bytes)"
+    },
+    {
+      "artifact": "relatorio_final.md",
+      "ok": true,
+      "detail": "ok (1192 bytes)"
+    }
+  ],
+  "gates": [
+    {
+      "gate": "G0",
+      "nome": "enquadramento_e_escopo",
+      "ok": true,
+      "faltando": []
+    },
+    {
+      "gate": "G1",
+      "nome": "fontes_e_inventario",
+      "ok": true,
+      "faltando": []
+    },
+    {
+      "gate": "G2",
+      "nome": "execucao_com_evidencia",
+      "ok": true,
+      "faltando": []
+    },
+    {
+      "gate": "G3",
+      "nome": "revisao_adversarial",
+      "ok": true,
+      "faltando": []
+    },
+    {
+      "gate": "G4",
+      "nome": "verificador_deterministico",
+      "ok": true,
+      "faltando": []
+    },
+    {
+      "gate": "G5",
+      "nome": "fechamento_literal",
+      "ok": true,
+      "faltando": []
+    }
+  ],
+  "checks_obrigatorios_declarados": [
+    "RAC-001 | Definir criterios falsificaveis antes de executar.",
+    "RAC-002 | Registrar ledger com status permitido e evidencia concreta existente.",
+    "RAC-003 | Executar revisao adversarial real com marcador 'cadeia re-derivada:' e fonte primaria crua.",
+    "RAC-004 | Conferir o detalhe interno que sustenta resumo, subtotal, dashboard ou relatorio sintetico.",
+    "RAC-005 | Fechar com linha explicita Status: CONCLUIDO, CONCLUIDO COM RESSALVA, A VALIDAR ou BLOQUEADO."
+  ],
+  "camadas_manuais": [
+    "verdade material dos numeros (re-derivacao da fonte crua no passe adversarial)",
+    "cobertura adversarial: qual detalhe interno derrubaria o 'concluido'?",
+    "leitura integral real das fontes (o script confere declaracao, nao leitura)"
+  ]
+}

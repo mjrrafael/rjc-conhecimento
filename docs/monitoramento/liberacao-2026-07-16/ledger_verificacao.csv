@@ -1,0 +1,13 @@
+id,criterio,metodo,status,evidencia
+G0,enquadramento_e_escopo,Reconstrução local do baseline e contagem integral,A_VALIDAR,workflow.md
+RAC-001,critérios definidos antes da intervenção,Leitura de workflow e critérios RLS-01 a RLS-05,OK,"workflow.md: critérios RLS-01..RLS-05"
+RAC-002,ledger com evidência concreta,Inspeção de cada linha do ledger,A_VALIDAR,"ledger_verificacao.csv: pendências RLS-01..RLS-05 permanecem abertas"
+RAC-003,revisão adversarial a partir de fonte crua,Recontagem dos JSONs e execução do gate,OK,"revisao_adversarial.md: cadeia re-derivada; ../../../scripts/audit_v3_readiness.py sha256=7646dbf68e0205d31f9189f9bf07cbf76d38a621bd37e315ab0e952342f95d59"
+RAC-004,detalhe que sustenta o resumo,Conferência de chaves e cardinalidades nos JSONs crus,OK,"../../../data/benefits_crosswalk.json: entries=9726; ../../../data/benefits_quarantine.json: entries=13150"
+RAC-005,fechamento com status literal,Leitura do relatório final,OK,"relatorio_final.md: Status: BLOQUEADO TEMPORÁRIO"
+RLS-01,proveniência por campo e refetch,Inspeção do crosswalk e controles v3,CORRIGIR,"audit_v3_readiness.py: 94 linhas canônicas sem URL/recibo/hash material; 9726 cards no crosswalk"
+RLS-02,isolamento de quarentena,Inspeção da projeção Pages atual,A_VALIDAR,"_config.yml:3-33 sha256=cedf76ae9da7968a24c138ef5bee2c6b1b30f44bc658ee9c7cef3321d9e354c3; index.html sha256=d7a6028b2525c0faacb8811c81c8e5c2123578adf3f00ff28bff0e1559b4be6e; build Pages local pendente"
+RLS-03,matriz nacional fechada,Execução do gate de prontidão,CORRIGIR,"audit_v3_readiness.py: matriz de 94 linhas sem URL/recibo/hash material"
+RLS-04,reconciliação integral,Inventário dos artefatos e tentativas de build,A_VALIDAR,"658 HTML; sitemap com 655 URLs; build local de Pages ainda não executado"
+RLS-05,publicação comprovada,Consulta do repositório e Pages,A_VALIDAR,"produção atual corresponde ao aviso neutro de main; nenhuma restauração foi publicada"
+G4,verificador determinístico material,Execução de scripts/audit_v3_readiness.py,CORRIGIR,"exit=1: 13 hard gates ausentes; 2 raízes de confiança não comprovadas; 94 linhas canônicas sem URL/recibo/hash material"

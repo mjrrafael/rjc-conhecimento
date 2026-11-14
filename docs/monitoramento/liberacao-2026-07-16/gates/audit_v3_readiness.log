@@ -1,0 +1,9 @@
+Comando: python -B scripts/audit_v3_readiness.py
+Diretório: C:\Users\rafae\Documents\Codex\2026-06-14\pesquisa-na-mem-ria-profunda-l\worktrees\rjc-restore-2026-07-16-1100
+Código de saída: 1
+
+STDOUT/STDERR:
+PORTAL V3 NÃO PRONTO:
+- hard gates ausentes: audit_canonical_source_scope.py, audit_field_provenance.py, audit_full_content_coverage.py, audit_http_platform_receipts.py, audit_internalization_evidence.py, audit_link_receipts.py, audit_no_synthetic_legal_dates.py, audit_public_http_hashes.py, audit_public_set_algebra.py, audit_publication.py, audit_quarantine_fingerprints.py, audit_subagent_independence.py, audit_verification_receipts.py
+- duas raízes de confiança preexistentes não comprovadas
+- 94 linhas canônicas sem URL/recibo/hash material
