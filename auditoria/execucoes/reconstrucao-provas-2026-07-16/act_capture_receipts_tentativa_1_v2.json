@@ -1,0 +1,122 @@
+[
+  {
+    "receipt_id": "local-act-BR-CTN-TEXTO-COMPILED-20260716T171128102266Z",
+    "receipt_class": "LOCAL_REPRODUCIBLE_NOT_PLATFORM_NATIVE",
+    "source_id": "BR-CTN-TEXTO-COMPILED",
+    "source_url": "https://legis.senado.gov.br/norma/547034/publicacao/34620375",
+    "captured_at": "2026-07-16T17:11:28.102266Z",
+    "request_headers": {
+      "Accept": "text/html,application/xhtml+xml,application/pdf;q=0.9,*/*;q=0.1",
+      "User-Agent": "RJC-Portal-Proof-Research/1.0 (anonymous, no-cookie)"
+    },
+    "cookies": "none",
+    "redirect_chain": [],
+    "result": "CAPTURADA_PENDENTE_DE_REFETCH",
+    "publication_authorization": "NAO",
+    "response": {
+      "url_final": "https://legis.senado.gov.br/norma/547034/publicacao/34620375",
+      "status": 200,
+      "headers": {
+        "Server": "nginx",
+        "Date": "Thu, 16 Jul 2026 17:11:29 GMT",
+        "Content-Type": "text/html;charset=UTF-8",
+        "Transfer-Encoding": "chunked",
+        "Connection": "close",
+        "vary": "accept-encoding",
+        "content-language": "en-US",
+        "Age": "0",
+        "X-Content-Type-Options": "nosniff",
+        "Referrer-Policy": "strict-origin-when-cross-origin",
+        "X-Frame-Options": "SAMEORIGIN",
+        "Content-Security-Policy": "default-src 'self' blob: *.senado.gov.br:* *.senado.leg.br:* wss://*.senado.gov.br:* wss://*.senado.leg.br:* wss://*.normas.leg.br:* *.congressonacional.leg.br *.lexml.gov.br normas.leg.br *.normas.leg.br *.camara.leg.br vlibras.gov.br *.vlibras.gov.br *.qlikdataengineering.com *.googleapis.com *.bootstrapcdn.com cdnjs.cloudflare.com code.jquery.com *.fontawesome.com fonts.gstatic.com www.google-analytics.com ssl.google-analytics.com google-analytics.com analytics.google.com translate.google.com stats.g.doubleclick.net ampcid.google.com recaptcha.net www.recaptcha.net use.typekit.net www.gstatic.com www.google.com/recaptcha/ *.ytimg.com *.youtube.com grafana.com cdn.jsdelivr.net www.facebook.com connect.facebook.net cdn.datatables.net *.addthis.com; script-src 'self' 'unsafe-inline' 'unsafe-eval' blob: *.senado.gov.br:* *.senado.leg.br:* *.congressonacional.leg.br *.lexml.gov.br normas.leg.br *.normas.leg.br *.camara.leg.br vlibras.gov.br *.vlibras.gov.br graph.facebook.com www.facebook.com connect.facebook.net apis.google.com *.googleapis.com apex.oracle.com *.bootstrapcdn.com cdnjs.cloudflare.com code.jquery.com *.fontawesome.com fonts.gstatic.com www.google-analytics.com maps.google.com ssl.google-analytics.com google-analytics.com analytics.google.com translate.google.com stats.g.doubleclick.net ampcid.google.com recaptcha.net www.recaptcha.net www.gstatic.com www.google.com/recaptcha/ *.ytimg.com *.youtube.com cdn.datatables.net www.googletagmanager.com code.getmdl.io code.highcharts.com unpkg.com cdn.jsdelivr.net *.addthis.com v1.addthisedge.com z.moatads.com; style-src 'self' 'unsafe-inline' *.senado.gov.br:* *.senado.leg.br:* *.congressonacional.leg.br *.lexml.gov.br normas.leg.br *.normas.leg.br *.camara.leg.br vlibras.gov.br *.vlibras.gov.br *.googleapis.com *.bootstrapcdn.com cdnjs.cloudflare.com code.jquery.com *.fontawesome.com fonts.gstatic.com www.google-analytics.com ssl.google-analytics.com google-analytics.com analytics.google.com translate.google.com stats.g.doubleclick.net ampcid.google.com recaptcha.net use.typekit.net www.recaptcha.net www.gstatic.com www.google.com/recaptcha/ *.ytimg.com *.youtube.com cdn.datatables.net code.getmdl.io cdn.quilljs.com ajax.aspnetcdn.com unpkg.com cdn.jsdelivr.net; img-src 'self' data: blob: *.senado.gov.br:* *.senado.leg.br:* *.congressonacional.leg.br *.lexml.gov.br normas.leg.br *.normas.leg.br *.camara.leg.br vlibras.gov.br *.vlibras.gov.br *.interlegis.leg.br *.googleapis.com *.ggpht.com maps.google.com translate.google.com maps.gstatic.com *.bootstrapcdn.com cdnjs.cloudflare.com code.jquery.com *.fontawesome.com *.gravatar.com fonts.gstatic.com www.google-analytics.com ssl.google-analytics.com google-analytics.com analytics.google.com stats.g.doubleclick.net ampcid.google.com p.typekit.net recaptcha.net www.recaptcha.net www.gstatic.com www.google.com/recaptcha/ *.ytimg.com *.youtube.com cdn.datatables.net www.facebook.com web.facebook.com img.youtube.com validator.swagger.io online.swagger.io grafana.com *.tile.openstreetmap.org tiles.maps.opensearch.org maps.opensearch.org www.googletagmanager.com unpkg.com cdn.jsdelivr.net www.addthis.com; font-src 'self' data: *.senado.gov.br:* *.senado.leg.br:* *.congressonacional.leg.br *.lexml.gov.br normas.leg.br *.normas.leg.br *.camara.leg.br vlibras.gov.br *.vlibras.gov.br *.googleapis.com fonts.gstatic.com *.fontawesome.com use.typekit.net *.bootstrapcdn.com cdnjs.cloudflare.com unpkg.com cdn.jsdelivr.net; object-src 'self' *.senado.gov.br:* *.senado.leg.br:*; frame-src 'self' *.senado.gov.br:* *.senado.leg.br:* *.congressonacional.leg.br *.lexml.gov.br normas.leg.br *.normas.leg.br *.camara.leg.br vlibras.gov.br *.vlibras.gov.br *.recaptcha.net recaptcha.net https://www.google.com/recaptcha/ https://recaptcha.google.com *.youtube.com www.youtube-nocookie.com www.youtube.com accounts.google.com www.facebook.com web.facebook.com m.facebook.com *.addthis.com; worker-src 'self' blob: *.senado.gov.br:* *.senado.leg.br:*; frame-ancestors 'self' *.senado.gov.br:* *.senado.leg.br:* *.congressonacional.leg.br *.lexml.gov.br normas.leg.br *.normas.leg.br *.camara.leg.br; form-action 'self' *.senado.gov.br:* *.senado.leg.br:* *.congressonacional.leg.br *.lexml.gov.br normas.leg.br *.normas.leg.br *.camara.leg.br senado.zoom.us; block-all-mixed-content; base-uri 'self' *.senado.gov.br:* *.senado.leg.br:*; manifest-src 'self' data: *.senado.gov.br:* *.senado.leg.br:* *.congressonacional.leg.br *.lexml.gov.br normas.leg.br *.normas.leg.br *.camara.leg.br; upgrade-insecure-requests; report-uri https://adm.senado.gov.br/csp-report-collector/collect",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "Accept-Ranges": "bytes"
+      },
+      "mime": "text/html"
+    },
+    "body": {
+      "bytes": 291155,
+      "sha256": "99ab35a13a6bdfc465b3c613dafb62ea254fed9b5452c557e2a6d83b2d04299b",
+      "path_externo": "C:\\Users\\rafae\\.codex\\automations\\monitor-portal-rjc-tributario\\evidencias\\2026-07-16-prova-material\\atos-iniciais\\lote-com-dou\\tentativa-1\\bodies\\BR-CTN-TEXTO-COMPILED-99ab35a13a6bdfc465b3c613dafb62ea254fed9b5452c557e2a6d83b2d04299b.bin"
+    }
+  },
+  {
+    "receipt_id": "local-act-BR-LC214-TEXTO-ATUAL-20260716T171129335260Z",
+    "receipt_class": "LOCAL_REPRODUCIBLE_NOT_PLATFORM_NATIVE",
+    "source_id": "BR-LC214-TEXTO-ATUAL",
+    "source_url": "https://legis.senado.gov.br/norma/40180341/publicacao/40181429",
+    "captured_at": "2026-07-16T17:11:29.335260Z",
+    "request_headers": {
+      "Accept": "text/html,application/xhtml+xml,application/pdf;q=0.9,*/*;q=0.1",
+      "User-Agent": "RJC-Portal-Proof-Research/1.0 (anonymous, no-cookie)"
+    },
+    "cookies": "none",
+    "redirect_chain": [],
+    "result": "CAPTURADA_PENDENTE_DE_REFETCH",
+    "publication_authorization": "NAO",
+    "response": {
+      "url_final": "https://legis.senado.gov.br/norma/40180341/publicacao/40181429",
+      "status": 200,
+      "headers": {
+        "Server": "nginx",
+        "Date": "Thu, 16 Jul 2026 17:11:31 GMT",
+        "Content-Type": "text/html;charset=UTF-8",
+        "Transfer-Encoding": "chunked",
+        "Connection": "close",
+        "vary": "accept-encoding",
+        "content-language": "en-US",
+        "Age": "0",
+        "X-Content-Type-Options": "nosniff",
+        "Referrer-Policy": "strict-origin-when-cross-origin",
+        "X-Frame-Options": "SAMEORIGIN",
+        "Content-Security-Policy": "default-src 'self' blob: *.senado.gov.br:* *.senado.leg.br:* wss://*.senado.gov.br:* wss://*.senado.leg.br:* wss://*.normas.leg.br:* *.congressonacional.leg.br *.lexml.gov.br normas.leg.br *.normas.leg.br *.camara.leg.br vlibras.gov.br *.vlibras.gov.br *.qlikdataengineering.com *.googleapis.com *.bootstrapcdn.com cdnjs.cloudflare.com code.jquery.com *.fontawesome.com fonts.gstatic.com www.google-analytics.com ssl.google-analytics.com google-analytics.com analytics.google.com translate.google.com stats.g.doubleclick.net ampcid.google.com recaptcha.net www.recaptcha.net use.typekit.net www.gstatic.com www.google.com/recaptcha/ *.ytimg.com *.youtube.com grafana.com cdn.jsdelivr.net www.facebook.com connect.facebook.net cdn.datatables.net *.addthis.com; script-src 'self' 'unsafe-inline' 'unsafe-eval' blob: *.senado.gov.br:* *.senado.leg.br:* *.congressonacional.leg.br *.lexml.gov.br normas.leg.br *.normas.leg.br *.camara.leg.br vlibras.gov.br *.vlibras.gov.br graph.facebook.com www.facebook.com connect.facebook.net apis.google.com *.googleapis.com apex.oracle.com *.bootstrapcdn.com cdnjs.cloudflare.com code.jquery.com *.fontawesome.com fonts.gstatic.com www.google-analytics.com maps.google.com ssl.google-analytics.com google-analytics.com analytics.google.com translate.google.com stats.g.doubleclick.net ampcid.google.com recaptcha.net www.recaptcha.net www.gstatic.com www.google.com/recaptcha/ *.ytimg.com *.youtube.com cdn.datatables.net www.googletagmanager.com code.getmdl.io code.highcharts.com unpkg.com cdn.jsdelivr.net *.addthis.com v1.addthisedge.com z.moatads.com; style-src 'self' 'unsafe-inline' *.senado.gov.br:* *.senado.leg.br:* *.congressonacional.leg.br *.lexml.gov.br normas.leg.br *.normas.leg.br *.camara.leg.br vlibras.gov.br *.vlibras.gov.br *.googleapis.com *.bootstrapcdn.com cdnjs.cloudflare.com code.jquery.com *.fontawesome.com fonts.gstatic.com www.google-analytics.com ssl.google-analytics.com google-analytics.com analytics.google.com translate.google.com stats.g.doubleclick.net ampcid.google.com recaptcha.net use.typekit.net www.recaptcha.net www.gstatic.com www.google.com/recaptcha/ *.ytimg.com *.youtube.com cdn.datatables.net code.getmdl.io cdn.quilljs.com ajax.aspnetcdn.com unpkg.com cdn.jsdelivr.net; img-src 'self' data: blob: *.senado.gov.br:* *.senado.leg.br:* *.congressonacional.leg.br *.lexml.gov.br normas.leg.br *.normas.leg.br *.camara.leg.br vlibras.gov.br *.vlibras.gov.br *.interlegis.leg.br *.googleapis.com *.ggpht.com maps.google.com translate.google.com maps.gstatic.com *.bootstrapcdn.com cdnjs.cloudflare.com code.jquery.com *.fontawesome.com *.gravatar.com fonts.gstatic.com www.google-analytics.com ssl.google-analytics.com google-analytics.com analytics.google.com stats.g.doubleclick.net ampcid.google.com p.typekit.net recaptcha.net www.recaptcha.net www.gstatic.com www.google.com/recaptcha/ *.ytimg.com *.youtube.com cdn.datatables.net www.facebook.com web.facebook.com img.youtube.com validator.swagger.io online.swagger.io grafana.com *.tile.openstreetmap.org tiles.maps.opensearch.org maps.opensearch.org www.googletagmanager.com unpkg.com cdn.jsdelivr.net www.addthis.com; font-src 'self' data: *.senado.gov.br:* *.senado.leg.br:* *.congressonacional.leg.br *.lexml.gov.br normas.leg.br *.normas.leg.br *.camara.leg.br vlibras.gov.br *.vlibras.gov.br *.googleapis.com fonts.gstatic.com *.fontawesome.com use.typekit.net *.bootstrapcdn.com cdnjs.cloudflare.com unpkg.com cdn.jsdelivr.net; object-src 'self' *.senado.gov.br:* *.senado.leg.br:*; frame-src 'self' *.senado.gov.br:* *.senado.leg.br:* *.congressonacional.leg.br *.lexml.gov.br normas.leg.br *.normas.leg.br *.camara.leg.br vlibras.gov.br *.vlibras.gov.br *.recaptcha.net recaptcha.net https://www.google.com/recaptcha/ https://recaptcha.google.com *.youtube.com www.youtube-nocookie.com www.youtube.com accounts.google.com www.facebook.com web.facebook.com m.facebook.com *.addthis.com; worker-src 'self' blob: *.senado.gov.br:* *.senado.leg.br:*; frame-ancestors 'self' *.senado.gov.br:* *.senado.leg.br:* *.congressonacional.leg.br *.lexml.gov.br normas.leg.br *.normas.leg.br *.camara.leg.br; form-action 'self' *.senado.gov.br:* *.senado.leg.br:* *.congressonacional.leg.br *.lexml.gov.br normas.leg.br *.normas.leg.br *.camara.leg.br senado.zoom.us; block-all-mixed-content; base-uri 'self' *.senado.gov.br:* *.senado.leg.br:*; manifest-src 'self' data: *.senado.gov.br:* *.senado.leg.br:* *.congressonacional.leg.br *.lexml.gov.br normas.leg.br *.normas.leg.br *.camara.leg.br; upgrade-insecure-requests; report-uri https://adm.senado.gov.br/csp-report-collector/collect",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "Accept-Ranges": "bytes"
+      },
+      "mime": "text/html"
+    },
+    "body": {
+      "bytes": 1366130,
+      "sha256": "cc78f94f664c5e1717da540582ca1907215867e285fa950f1534f49890ada8b0",
+      "path_externo": "C:\\Users\\rafae\\.codex\\automations\\monitor-portal-rjc-tributario\\evidencias\\2026-07-16-prova-material\\atos-iniciais\\lote-com-dou\\tentativa-1\\bodies\\BR-LC214-TEXTO-ATUAL-cc78f94f664c5e1717da540582ca1907215867e285fa950f1534f49890ada8b0.bin"
+    }
+  },
+  {
+    "receipt_id": "local-act-BR-LC214-DOU-ORIGINAL-20260716T171131249757Z",
+    "receipt_class": "LOCAL_REPRODUCIBLE_NOT_PLATFORM_NATIVE",
+    "source_id": "BR-LC214-DOU-ORIGINAL",
+    "source_url": "https://pesquisa.in.gov.br/imprensa/servlet/INPDFViewer?captchafield=firstAccess&data=16%2F01%2F2025&jornal=601&pagina=1",
+    "captured_at": "2026-07-16T17:11:31.249757Z",
+    "request_headers": {
+      "Accept": "text/html,application/xhtml+xml,application/pdf;q=0.9,*/*;q=0.1",
+      "User-Agent": "RJC-Portal-Proof-Research/1.0 (anonymous, no-cookie)"
+    },
+    "cookies": "none",
+    "redirect_chain": [],
+    "result": "CAPTURADA_PENDENTE_DE_REFETCH",
+    "publication_authorization": "NAO",
+    "response": {
+      "url_final": "https://pesquisa.in.gov.br/imprensa/servlet/INPDFViewer?captchafield=firstAccess&data=16%2F01%2F2025&jornal=601&pagina=1",
+      "status": 200,
+      "headers": {
+        "Date": "Thu, 16 Jul 2026 17:11:32 GMT",
+        "Content-Type": "application/pdf",
+        "Content-Length": "370272",
+        "Connection": "close",
+        "Vary": "Accept-Encoding",
+        "X-Azion-Request-Id": "69c5b6c5c756c714735d8efae53662f5",
+        "X-Azion-Edge-Location": "IAD",
+        "debug": "4",
+        "Set-Cookie": "az_botm=69c5b6c5c756c714735d8efae53662f5; Domain=pesquisa.in.gov.br; Path=/; Max-Age=86400; Secure; HttpOnly; SameSite=Lax",
+        "Expires": "Thu, 16 Jul 2026 17:11:32 GMT",
+        "Cache-Control": "max-age=0"
+      },
+      "mime": "application/pdf"
+    },
+    "body": {
+      "bytes": 370272,
+      "sha256": "1723a606d2fed5c8f3e63854a9273e6e3f19d4e1d1e13d0ea63a46731d2e420c",
+      "path_externo": "C:\\Users\\rafae\\.codex\\automations\\monitor-portal-rjc-tributario\\evidencias\\2026-07-16-prova-material\\atos-iniciais\\lote-com-dou\\tentativa-1\\bodies\\BR-LC214-DOU-ORIGINAL-1723a606d2fed5c8f3e63854a9273e6e3f19d4e1d1e13d0ea63a46731d2e420c.bin"
+    }
+  }
+]

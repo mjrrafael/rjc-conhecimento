@@ -56,6 +56,8 @@ def fs_files() -> set[str]:
         rel = path.relative_to(ROOT).as_posix()
         if rel == ".git" or rel.startswith(".git/"):
             continue
+        if "__pycache__" in path.parts or path.suffix == ".pyc":
+            continue
         result.add(rel)
     return result
 

@@ -1,0 +1,3957 @@
+[
+  {
+    "receipt_id": "local-AC_ASSEMBLEIA_LEGISLATIVA-20260716T170450776894Z",
+    "receipt_class": "LOCAL_REPRODUCIBLE_NOT_PLATFORM_NATIVE",
+    "source_id": "AC::ASSEMBLEIA_LEGISLATIVA",
+    "captured_at": "2026-07-16T17:04:50.776894Z",
+    "request": {
+      "url": "https://www.al.ac.leg.br/",
+      "method": "GET",
+      "headers": {
+        "Accept": "text/html,application/xhtml+xml,application/pdf,application/json;q=0.9,*/*;q=0.1",
+        "User-Agent": "RJC-Portal-Proof-Research/1.0 (anonymous, no-cookie)"
+      },
+      "cookies": "none"
+    },
+    "redirect_chain": [],
+    "response": {
+      "url_final": "https://www.al.ac.leg.br/",
+      "status": 200,
+      "headers": {
+        "Date": "Thu, 16 Jul 2026 17:04:51 GMT",
+        "Server": "Apache",
+        "X-Frame-Options": "SAMEORIGIN",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains; preload",
+        "X-Content-Type-Options": "nosniff",
+        "X-XSS-Protection": "1; mode=block",
+        "Referrer-Policy": "strict-origin-when-cross-origin",
+        "Permissions-Policy": "geolocation=(), midi=(), camera=()",
+        "Content-Security-Policy": "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https: blob: https://connect.facebook.net; script-src-elem 'self' 'unsafe-inline' 'unsafe-eval' https: blob: https://connect.facebook.net; worker-src 'self' blob:; style-src 'self' 'unsafe-inline' https:; font-src 'self' https://fonts.gstatic.com https://fonts.googleapis.com https://cdn.userway.org https://vlibras.gov.br/app/ https://cdn.jsdelivr.net/gh/spbgovbr-vlibras/ data:; img-src 'self' data: https: https://www.facebook.com https://graph.facebook.com https://connect.facebook.net https://static.xx.fbcdn.net https://scontent.xx.fbcdn.net; frame-src 'self' https://www.google.com https://maps.google.com https://td.doubleclick.net https://www.googletagmanager.com https://static.addtoany.com https://open.spotify.com https://www.youtube.com https://cdn.userway.org https://www.facebook.com; connect-src 'self' https://www.google-analytics.com https://stats.g.doubleclick.net https://api.userway.org https://www.google.com https://www.googletagmanager.com https://cdn.userway.org https://acessos.vlibras.gov.br https://dicionario2.vlibras.gov.br https://vlibras.gov.br/app/target/playerweb.json https://cdn.jsdelivr.net/gh/spbgovbr-vlibras/ https://vlibras.gov.br/app/target/ https://www.facebook.com https://graph.facebook.com; ",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "GET, POST, OPTIONS",
+        "Access-Control-Allow-Headers": "Content-Type, Authorization",
+        "Upgrade": "h2",
+        "Connection": "Upgrade, close",
+        "Link": "<https://www.al.ac.leg.br/>; rel=shortlink",
+        "Cache-Control": "max-age=3600",
+        "Expires": "Thu, 16 Jul 2026 18:04:51 GMT",
+        "Vary": "Accept-Encoding",
+        "Transfer-Encoding": "chunked",
+        "Content-Type": "text/html; charset=UTF-8"
+      },
+      "mime": "text/html"
+    },
+    "body": {
+      "bytes": 751407,
+      "sha256": "2bd0cf88a77a2077cfca9aa28a5476e06b2b809e23460c128a8c7cec5f0ff915",
+      "path_externo": "C:\\Users\\rafae\\.codex\\automations\\monitor-portal-rjc-tributario\\evidencias\\2026-07-16-prova-material\\fontes-institucionais\\tentativa-2\\bodies\\AC_ASSEMBLEIA_LEGISLATIVA-2bd0cf88a77a2077cfca9aa28a5476e06b2b809e23460c128a8c7cec5f0ff915.bin"
+    },
+    "result": "CAPTURADA_PENDENTE_DE_LEITURA_E_REFETCH",
+    "publication_authorization": "NAO"
+  },
+  {
+    "receipt_id": "local-AC_DOE-20260716T170450776894Z",
+    "receipt_class": "LOCAL_REPRODUCIBLE_NOT_PLATFORM_NATIVE",
+    "source_id": "AC::DOE",
+    "captured_at": "2026-07-16T17:04:50.776894Z",
+    "request": {
+      "url": "https://diario.ac.gov.br/",
+      "method": "GET",
+      "headers": {
+        "Accept": "text/html,application/xhtml+xml,application/pdf,application/json;q=0.9,*/*;q=0.1",
+        "User-Agent": "RJC-Portal-Proof-Research/1.0 (anonymous, no-cookie)"
+      },
+      "cookies": "none"
+    },
+    "redirect_chain": [],
+    "response": {
+      "url_final": "https://diario.ac.gov.br/",
+      "status": 200,
+      "headers": {
+        "Date": "Thu, 16 Jul 2026 17:04:51 GMT",
+        "Server": "Apache/2.4.59 (Debian)",
+        "Vary": "Accept-Encoding",
+        "Content-Length": "7798",
+        "Connection": "close",
+        "Content-Type": "text/html; charset=iso-8859-1"
+      },
+      "mime": "text/html"
+    },
+    "body": {
+      "bytes": 7798,
+      "sha256": "83c505fec2a057265856b126a31d2ca6c29f61312dd7fc0b64d106b04ca33604",
+      "path_externo": "C:\\Users\\rafae\\.codex\\automations\\monitor-portal-rjc-tributario\\evidencias\\2026-07-16-prova-material\\fontes-institucionais\\tentativa-2\\bodies\\AC_DOE-83c505fec2a057265856b126a31d2ca6c29f61312dd7fc0b64d106b04ca33604.bin"
+    },
+    "result": "CAPTURADA_PENDENTE_DE_LEITURA_E_REFETCH",
+    "publication_authorization": "NAO"
+  },
+  {
+    "receipt_id": "local-AC_SEFAZ_LEGISLACAO-20260716T170450775897Z",
+    "receipt_class": "LOCAL_REPRODUCIBLE_NOT_PLATFORM_NATIVE",
+    "source_id": "AC::SEFAZ_LEGISLACAO",
+    "captured_at": "2026-07-16T17:04:50.775897Z",
+    "request": {
+      "url": "https://www.sefaz.ac.gov.br/legislacao/",
+      "method": "GET",
+      "headers": {
+        "Accept": "text/html,application/xhtml+xml,application/pdf,application/json;q=0.9,*/*;q=0.1",
+        "User-Agent": "RJC-Portal-Proof-Research/1.0 (anonymous, no-cookie)"
+      },
+      "cookies": "none"
+    },
+    "redirect_chain": [
+      {
+        "from_url": "https://www.sefaz.ac.gov.br/legislacao/",
+        "to_url": "https://sefaz.ac.gov.br/2021/?page_id=16558",
+        "status": 302,
+        "location": "https://sefaz.ac.gov.br/2021/?page_id=16558"
+      }
+    ],
+    "response": {
+      "url_final": "https://sefaz.ac.gov.br/2021/?page_id=16558",
+      "status": 200,
+      "headers": {
+        "Date": "Thu, 16 Jul 2026 17:04:51 GMT",
+        "Server": "Apache/2.4.62 (Ubuntu)",
+        "Set-Cookie": "icwp-wpsf-notbot=exp-1784222092; expires=Thu, 16 Jul 2026 17:14:52 GMT; Max-Age=600; path=/2021/; secure",
+        "Referrer-Policy": "unsafe-url",
+        "x-frame-options": "SAMEORIGIN",
+        "X-XSS-Protection": "1; mode=block",
+        "X-Content-Type-Options": "nosniff",
+        "Link": "<https://sefaz.ac.gov.br/2021/?p=16558>; rel=shortlink",
+        "Vary": "Accept-Encoding",
+        "Content-Length": "178757",
+        "Connection": "close",
+        "Content-Type": "text/html; charset=UTF-8"
+      },
+      "mime": "text/html"
+    },
+    "body": {
+      "bytes": 178757,
+      "sha256": "23ecc592bf22b9382d3b554d0448f1a8996e0561b285ccdea256a4b203f51e6d",
+      "path_externo": "C:\\Users\\rafae\\.codex\\automations\\monitor-portal-rjc-tributario\\evidencias\\2026-07-16-prova-material\\fontes-institucionais\\tentativa-2\\bodies\\AC_SEFAZ_LEGISLACAO-23ecc592bf22b9382d3b554d0448f1a8996e0561b285ccdea256a4b203f51e6d.bin"
+    },
+    "result": "CAPTURADA_PENDENTE_DE_LEITURA_E_REFETCH",
+    "publication_authorization": "NAO"
+  },
+  {
+    "receipt_id": "local-AL_ASSEMBLEIA_LEGISLATIVA-20260716T170450777892Z",
+    "receipt_class": "LOCAL_REPRODUCIBLE_NOT_PLATFORM_NATIVE",
+    "source_id": "AL::ASSEMBLEIA_LEGISLATIVA",
+    "captured_at": "2026-07-16T17:04:50.777892Z",
+    "request": {
+      "url": "https://www.al.al.leg.br/",
+      "method": "GET",
+      "headers": {
+        "Accept": "text/html,application/xhtml+xml,application/pdf,application/json;q=0.9,*/*;q=0.1",
+        "User-Agent": "RJC-Portal-Proof-Research/1.0 (anonymous, no-cookie)"
+      },
+      "cookies": "none"
+    },
+    "redirect_chain": [],
+    "response": {
+      "url_final": "https://www.al.al.leg.br/",
+      "status": 200,
+      "headers": {
+        "Date": "Thu, 16 Jul 2026 17:04:50 GMT",
+        "Content-Type": "text/html;charset=utf-8",
+        "Content-Length": "8730",
+        "Connection": "close",
+        "X-Cache-Operation": "plone.app.caching.weakCaching",
+        "X-RAMCache": "plone.app.caching.operations.ramcache",
+        "Content-Language": "pt-br",
+        "Content-Encoding": "gzip",
+        "Expires": "Mon, 18 Jul 2016 12:59:19 GMT",
+        "Vary": "Accept-Encoding",
+        "ETag": "\"||414318|pt-br|1|Sunburst Theme|0|1724090717.68\"",
+        "X-Ua-Compatible": "IE=edge,chrome=1",
+        "Cache-Control": "max-age=0, must-revalidate, private",
+        "X-Cache-Rule": "plone.content.itemView",
+        "X-Frame-Options": "SAMEORIGIN",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "X-Cache-Status": "STALE"
+      },
+      "mime": "text/html"
+    },
+    "body": {
+      "bytes": 8730,
+      "sha256": "ff0dbffab356d9b31952ce2c2765acadec6aafeb0aaa30ede40a91961e1264c1",
+      "path_externo": "C:\\Users\\rafae\\.codex\\automations\\monitor-portal-rjc-tributario\\evidencias\\2026-07-16-prova-material\\fontes-institucionais\\tentativa-2\\bodies\\AL_ASSEMBLEIA_LEGISLATIVA-ff0dbffab356d9b31952ce2c2765acadec6aafeb0aaa30ede40a91961e1264c1.bin"
+    },
+    "result": "CAPTURADA_PENDENTE_DE_LEITURA_E_REFETCH",
+    "publication_authorization": "NAO"
+  },
+  {
+    "receipt_id": "local-AL_DOE-20260716T170450777892Z",
+    "receipt_class": "LOCAL_REPRODUCIBLE_NOT_PLATFORM_NATIVE",
+    "source_id": "AL::DOE",
+    "captured_at": "2026-07-16T17:04:50.777892Z",
+    "request": {
+      "url": "https://diario.imprensaoficial.al.gov.br/",
+      "method": "GET",
+      "headers": {
+        "Accept": "text/html,application/xhtml+xml,application/pdf,application/json;q=0.9,*/*;q=0.1",
+        "User-Agent": "RJC-Portal-Proof-Research/1.0 (anonymous, no-cookie)"
+      },
+      "cookies": "none"
+    },
+    "redirect_chain": [],
+    "response": {
+      "url_final": "https://diario.imprensaoficial.al.gov.br/",
+      "status": 200,
+      "headers": {
+        "Date": "Thu, 16 Jul 2026 17:04:51 GMT",
+        "Server": "Apache/2.4.61 (Debian)",
+        "Last-Modified": "Tue, 27 Jan 2026 19:22:11 GMT",
+        "ETag": "\"3c4-649638a503633\"",
+        "Accept-Ranges": "bytes",
+        "Content-Length": "964",
+        "Vary": "Accept-Encoding",
+        "Connection": "close",
+        "Content-Type": "text/html"
+      },
+      "mime": "text/html"
+    },
+    "body": {
+      "bytes": 964,
+      "sha256": "f60afb26147ceb8db5687399cb555a965fbf54f0c14d878f17c208274a45e812",
+      "path_externo": "C:\\Users\\rafae\\.codex\\automations\\monitor-portal-rjc-tributario\\evidencias\\2026-07-16-prova-material\\fontes-institucionais\\tentativa-2\\bodies\\AL_DOE-f60afb26147ceb8db5687399cb555a965fbf54f0c14d878f17c208274a45e812.bin"
+    },
+    "result": "CAPTURADA_PENDENTE_DE_LEITURA_E_REFETCH",
+    "publication_authorization": "NAO"
+  },
+  {
+    "receipt_id": "local-AL_SEFAZ_LEGISLACAO-20260716T170450777892Z",
+    "receipt_class": "LOCAL_REPRODUCIBLE_NOT_PLATFORM_NATIVE",
+    "source_id": "AL::SEFAZ_LEGISLACAO",
+    "captured_at": "2026-07-16T17:04:50.777892Z",
+    "request": {
+      "url": "https://www.sefaz.al.gov.br/legislacao",
+      "method": "GET",
+      "headers": {
+        "Accept": "text/html,application/xhtml+xml,application/pdf,application/json;q=0.9,*/*;q=0.1",
+        "User-Agent": "RJC-Portal-Proof-Research/1.0 (anonymous, no-cookie)"
+      },
+      "cookies": "none"
+    },
+    "redirect_chain": [],
+    "response": {
+      "url_final": "https://www.sefaz.al.gov.br/legislacao",
+      "status": 200,
+      "headers": {
+        "Server": "nginx/1.24.0",
+        "Date": "Thu, 16 Jul 2026 17:04:52 GMT",
+        "Content-Type": "text/html; charset=utf-8",
+        "Transfer-Encoding": "chunked",
+        "Connection": "close",
+        "Cache-Control": "no-store, no-cache, must-revalidate, post-check=0, pre-check=0",
+        "Expires": "Wed, 17 Aug 2005 00:00:00 GMT",
+        "Last-Modified": "Thu, 16 Jul 2026 17:04:52 GMT",
+        "P3p": "CP=\"NOI ADM DEV PSAi COM NAV OUR OTRo STP IND DEM\"",
+        "Pragma": "no-cache",
+        "Set-Cookie": "2724013fe63a5ea6c922600d7b3b7bb4=pjfmckaep3p962hag9a48rfg88; path=/; HttpOnly",
+        "Vary": "Accept-Encoding",
+        "X-Content-Powered-By": "K2 v2.10.3 (by JoomlaWorks)",
+        "X-Logged-In": "False",
+        "X-Powered-By": "PHP/7.3.20",
+        "X-Frame-Options": "SAMEORIGIN",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains; preload;"
+      },
+      "mime": "text/html"
+    },
+    "body": {
+      "bytes": 97267,
+      "sha256": "415fb454705d50f41354be08a2d82afe8883cc09bbe34fa758e9c51acc103bcd",
+      "path_externo": "C:\\Users\\rafae\\.codex\\automations\\monitor-portal-rjc-tributario\\evidencias\\2026-07-16-prova-material\\fontes-institucionais\\tentativa-2\\bodies\\AL_SEFAZ_LEGISLACAO-415fb454705d50f41354be08a2d82afe8883cc09bbe34fa758e9c51acc103bcd.bin"
+    },
+    "result": "CAPTURADA_PENDENTE_DE_LEITURA_E_REFETCH",
+    "publication_authorization": "NAO"
+  },
+  {
+    "receipt_id": "local-AM_ASSEMBLEIA_LEGISLATIVA-20260716T170450928400Z",
+    "receipt_class": "LOCAL_REPRODUCIBLE_NOT_PLATFORM_NATIVE",
+    "source_id": "AM::ASSEMBLEIA_LEGISLATIVA",
+    "captured_at": "2026-07-16T17:04:50.928400Z",
+    "request": {
+      "url": "https://www.aleam.gov.br/",
+      "method": "GET",
+      "headers": {
+        "Accept": "text/html,application/xhtml+xml,application/pdf,application/json;q=0.9,*/*;q=0.1",
+        "User-Agent": "RJC-Portal-Proof-Research/1.0 (anonymous, no-cookie)"
+      },
+      "cookies": "none"
+    },
+    "redirect_chain": [],
+    "response": {
+      "url_final": "https://www.aleam.gov.br/",
+      "status": 200,
+      "headers": {
+        "Date": "Thu, 16 Jul 2026 17:07:48 GMT",
+        "Server": "Apache/2.4.65 (Debian)",
+        "Link": "<https://www.aleam.gov.br/wp-json/>; rel=\"https://api.w.org/\", <https://www.aleam.gov.br/wp-json/wp/v2/pages/376987>; rel=\"alternate\"; title=\"JSON\"; type=\"application/json\", <https://www.aleam.gov.br/>; rel=shortlink",
+        "Vary": "Accept-Encoding",
+        "Connection": "close",
+        "Transfer-Encoding": "chunked",
+        "Content-Type": "text/html; charset=UTF-8"
+      },
+      "mime": "text/html"
+    },
+    "body": {
+      "bytes": 381852,
+      "sha256": "fcda2e8ff0fd0bb5e5da1c2539304ca83ae8a418e9e7226c63943a70a3176761",
+      "path_externo": "C:\\Users\\rafae\\.codex\\automations\\monitor-portal-rjc-tributario\\evidencias\\2026-07-16-prova-material\\fontes-institucionais\\tentativa-2\\bodies\\AM_ASSEMBLEIA_LEGISLATIVA-fcda2e8ff0fd0bb5e5da1c2539304ca83ae8a418e9e7226c63943a70a3176761.bin"
+    },
+    "result": "CAPTURADA_PENDENTE_DE_LEITURA_E_REFETCH",
+    "publication_authorization": "NAO"
+  },
+  {
+    "receipt_id": "local-AM_DOE-20260716T170450906541Z",
+    "receipt_class": "LOCAL_REPRODUCIBLE_NOT_PLATFORM_NATIVE",
+    "source_id": "AM::DOE",
+    "captured_at": "2026-07-16T17:04:50.906541Z",
+    "request": {
+      "url": "https://diario.imprensaoficial.am.gov.br/",
+      "method": "GET",
+      "headers": {
+        "Accept": "text/html,application/xhtml+xml,application/pdf,application/json;q=0.9,*/*;q=0.1",
+        "User-Agent": "RJC-Portal-Proof-Research/1.0 (anonymous, no-cookie)"
+      },
+      "cookies": "none"
+    },
+    "redirect_chain": [],
+    "response": {
+      "url_final": "https://diario.imprensaoficial.am.gov.br/",
+      "status": 200,
+      "headers": {
+        "Date": "Thu, 16 Jul 2026 17:04:51 GMT",
+        "Server": "Apache/2.4.25 (Debian)",
+        "Set-Cookie": "CAKEPHP=rdgttn0sqg4qi531dvt56ooho4; expires=Thu, 16-Jul-2026 23:04:51 GMT; Max-Age=21600; path=/; secure; HttpOnly",
+        "Content-Length": "16426",
+        "Vary": "Accept-Encoding",
+        "Access-Control-Allow-Origin": "*",
+        "Connection": "close",
+        "Content-Type": "text/html; charset=UTF-8"
+      },
+      "mime": "text/html"
+    },
+    "body": {
+      "bytes": 16426,
+      "sha256": "a054aecfc094540a1e809c2898b242a135ba06bddd6b949d10245341dd7cb541",
+      "path_externo": "C:\\Users\\rafae\\.codex\\automations\\monitor-portal-rjc-tributario\\evidencias\\2026-07-16-prova-material\\fontes-institucionais\\tentativa-2\\bodies\\AM_DOE-a054aecfc094540a1e809c2898b242a135ba06bddd6b949d10245341dd7cb541.bin"
+    },
+    "result": "CAPTURADA_PENDENTE_DE_LEITURA_E_REFETCH",
+    "publication_authorization": "NAO"
+  },
+  {
+    "receipt_id": "local-AM_SEFAZ_LEGISLACAO-20260716T170450777892Z",
+    "receipt_class": "LOCAL_REPRODUCIBLE_NOT_PLATFORM_NATIVE",
+    "source_id": "AM::SEFAZ_LEGISLACAO",
+    "captured_at": "2026-07-16T17:04:50.777892Z",
+    "request": {
+      "url": "https://online.sefaz.am.gov.br/silt/",
+      "method": "GET",
+      "headers": {
+        "Accept": "text/html,application/xhtml+xml,application/pdf,application/json;q=0.9,*/*;q=0.1",
+        "User-Agent": "RJC-Portal-Proof-Research/1.0 (anonymous, no-cookie)"
+      },
+      "cookies": "none"
+    },
+    "redirect_chain": [
+      {
+        "from_url": "https://online.sefaz.am.gov.br/silt/",
+        "to_url": "https://sistemas.sefaz.am.gov.br/silt/",
+        "status": 301,
+        "location": "https://sistemas.sefaz.am.gov.br/silt/"
+      }
+    ],
+    "response": {
+      "url_final": "https://sistemas.sefaz.am.gov.br/silt/",
+      "status": 200,
+      "headers": {
+        "Server": "nginx",
+        "Date": "Thu, 16 Jul 2026 17:04:52 GMT",
+        "Content-Type": "text/html;charset=UTF-8",
+        "Transfer-Encoding": "chunked",
+        "Connection": "close",
+        "Content-Language": "en-US"
+      },
+      "mime": "text/html"
+    },
+    "body": {
+      "bytes": 42998,
+      "sha256": "9024a3aff0ccd53bd042021f683687c1f4c857b1c56c42cc6fbd9a753b365aaf",
+      "path_externo": "C:\\Users\\rafae\\.codex\\automations\\monitor-portal-rjc-tributario\\evidencias\\2026-07-16-prova-material\\fontes-institucionais\\tentativa-2\\bodies\\AM_SEFAZ_LEGISLACAO-9024a3aff0ccd53bd042021f683687c1f4c857b1c56c42cc6fbd9a753b365aaf.bin"
+    },
+    "result": "CAPTURADA_PENDENTE_DE_LEITURA_E_REFETCH",
+    "publication_authorization": "NAO"
+  },
+  {
+    "receipt_id": "local-AP_ASSEMBLEIA_LEGISLATIVA-20260716T170450981969Z",
+    "receipt_class": "LOCAL_REPRODUCIBLE_NOT_PLATFORM_NATIVE",
+    "source_id": "AP::ASSEMBLEIA_LEGISLATIVA",
+    "captured_at": "2026-07-16T17:04:50.981969Z",
+    "request": {
+      "url": "https://www.al.ap.gov.br/",
+      "method": "GET",
+      "headers": {
+        "Accept": "text/html,application/xhtml+xml,application/pdf,application/json;q=0.9,*/*;q=0.1",
+        "User-Agent": "RJC-Portal-Proof-Research/1.0 (anonymous, no-cookie)"
+      },
+      "cookies": "none"
+    },
+    "redirect_chain": [],
+    "response": {
+      "url_final": "https://www.al.ap.gov.br/",
+      "status": 200,
+      "headers": {
+        "Date": "Thu, 16 Jul 2026 17:04:51 GMT",
+        "Server": "Apache",
+        "X-Frame-Options": "SAMEORIGIN",
+        "Content-Security-Policy": "frame-ancestors 'self' https://al.ap.leg.br https://al.ap.gov.br https://silegis.al.ap.leg.br https://silegis.al.ap.gov.br https://www.al.ap.leg.br https://www.al.ap.gov.br https://www.silegis.al.ap.leg.br https://www.silegis.al.ap.gov.br;",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "Upgrade": "h2,h2c",
+        "Connection": "Upgrade, close",
+        "X-Powered-By": "PHP/7.4.33",
+        "Expires": "Mon, 26 Jul 1997 05:00:00 GMT",
+        "Last-Modified": "Thu, 16 Jul 2026 17:04:51 GMT",
+        "Cache-Control": "no-cache, must-revalidate",
+        "Pragma": "no-cache",
+        "Vary": "Accept-Encoding",
+        "Transfer-Encoding": "chunked",
+        "Content-Type": "text/html; charset=UTF-8"
+      },
+      "mime": "text/html"
+    },
+    "body": {
+      "bytes": 77977,
+      "sha256": "c7ddd90427352940adbc57b65f5909627058649e6473fcbd328415f9d4ccf28b",
+      "path_externo": "C:\\Users\\rafae\\.codex\\automations\\monitor-portal-rjc-tributario\\evidencias\\2026-07-16-prova-material\\fontes-institucionais\\tentativa-2\\bodies\\AP_ASSEMBLEIA_LEGISLATIVA-c7ddd90427352940adbc57b65f5909627058649e6473fcbd328415f9d4ccf28b.bin"
+    },
+    "result": "CAPTURADA_PENDENTE_DE_LEITURA_E_REFETCH",
+    "publication_authorization": "NAO"
+  },
+  {
+    "receipt_id": "local-AP_DOE-20260716T170450950434Z",
+    "receipt_class": "LOCAL_REPRODUCIBLE_NOT_PLATFORM_NATIVE",
+    "source_id": "AP::DOE",
+    "captured_at": "2026-07-16T17:04:50.950434Z",
+    "request": {
+      "url": "https://diofe.portal.ap.gov.br/",
+      "method": "GET",
+      "headers": {
+        "Accept": "text/html,application/xhtml+xml,application/pdf,application/json;q=0.9,*/*;q=0.1",
+        "User-Agent": "RJC-Portal-Proof-Research/1.0 (anonymous, no-cookie)"
+      },
+      "cookies": "none"
+    },
+    "redirect_chain": [],
+    "response": {
+      "url_final": "https://diofe.portal.ap.gov.br/",
+      "status": 200,
+      "headers": {
+        "Date": "Thu, 16 Jul 2026 17:04:51 GMT",
+        "Server": "Apache",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "X-Content-Type-Options": "nosniff",
+        "Referrer-Policy": "strict-origin-when-cross-origin",
+        "X-Frame-Options": "SAMEORIGIN",
+        "Permissions-Policy": "geolocation=(), microphone=(), camera=()",
+        "Content-Security-Policy": "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' *.googleapis.com *.gstatic.com; style-src 'self' 'unsafe-inline' *.googleapis.com; img-src 'self' data: *; font-src 'self' *.gstatic.com; object-src 'none'; frame-ancestors 'self';",
+        "Set-Cookie": "CAKEPHP=sult02271nj3h1l4gjgu9ktiat; expires=Thu, 16-Jul-2026 23:04:52 GMT; Max-Age=21600; path=/; secure; HttpOnly",
+        "Content-Length": "278872",
+        "Vary": "Accept-Encoding",
+        "Access-Control-Allow-Origin": "*",
+        "Connection": "close",
+        "Content-Type": "text/html; charset=UTF-8"
+      },
+      "mime": "text/html"
+    },
+    "body": {
+      "bytes": 278872,
+      "sha256": "0ef669f36023212f2345621d5f2b6500d563c8423a0ec2f516fea890f7fbecf9",
+      "path_externo": "C:\\Users\\rafae\\.codex\\automations\\monitor-portal-rjc-tributario\\evidencias\\2026-07-16-prova-material\\fontes-institucionais\\tentativa-2\\bodies\\AP_DOE-0ef669f36023212f2345621d5f2b6500d563c8423a0ec2f516fea890f7fbecf9.bin"
+    },
+    "result": "CAPTURADA_PENDENTE_DE_LEITURA_E_REFETCH",
+    "publication_authorization": "NAO"
+  },
+  {
+    "receipt_id": "local-AP_SEFAZ_LEGISLACAO-20260716T170450929397Z",
+    "receipt_class": "LOCAL_REPRODUCIBLE_NOT_PLATFORM_NATIVE",
+    "source_id": "AP::SEFAZ_LEGISLACAO",
+    "captured_at": "2026-07-16T17:04:50.929397Z",
+    "request": {
+      "url": "https://virtual.sefaz.ap.gov.br/portal/",
+      "method": "GET",
+      "headers": {
+        "Accept": "text/html,application/xhtml+xml,application/pdf,application/json;q=0.9,*/*;q=0.1",
+        "User-Agent": "RJC-Portal-Proof-Research/1.0 (anonymous, no-cookie)"
+      },
+      "cookies": "none"
+    },
+    "redirect_chain": [],
+    "response": {
+      "url_final": "https://virtual.sefaz.ap.gov.br/portal/",
+      "status": 200,
+      "headers": {
+        "Date": "Thu, 16 Jul 2026 17:04:51 GMT",
+        "Server": "Apache/2.2.15 (Oracle)",
+        "X-Powered-By": "PHP/5.6.22",
+        "Set-Cookie": "aa9bc70a7a79288c74c89e6433247f04=m22bilfg471pu8dsvgb3aupid6; path=/; HttpOnly",
+        "P3P": "CP=\"NOI ADM DEV PSAi COM NAV OUR OTRo STP IND DEM\"",
+        "Expires": "Wed, 17 Aug 2005 00:00:00 GMT",
+        "Last-Modified": "Thu, 16 Jul 2026 17:04:52 GMT",
+        "Cache-Control": "no-store, no-cache, must-revalidate, post-check=0, pre-check=0",
+        "Pragma": "no-cache",
+        "Vary": "Accept-Encoding",
+        "Connection": "close",
+        "Transfer-Encoding": "chunked",
+        "Content-Type": "text/html; charset=utf-8"
+      },
+      "mime": "text/html"
+    },
+    "body": {
+      "bytes": 49018,
+      "sha256": "74ba58987c9c74fa04268de3ee8bb7ad38aa6f3bd61f6bc45bdc4eda08a1ad6f",
+      "path_externo": "C:\\Users\\rafae\\.codex\\automations\\monitor-portal-rjc-tributario\\evidencias\\2026-07-16-prova-material\\fontes-institucionais\\tentativa-2\\bodies\\AP_SEFAZ_LEGISLACAO-74ba58987c9c74fa04268de3ee8bb7ad38aa6f3bd61f6bc45bdc4eda08a1ad6f.bin"
+    },
+    "result": "CAPTURADA_PENDENTE_DE_LEITURA_E_REFETCH",
+    "publication_authorization": "NAO"
+  },
+  {
+    "receipt_id": "local-BA_ASSEMBLEIA_LEGISLATIVA-20260716T170451345042Z",
+    "receipt_class": "LOCAL_REPRODUCIBLE_NOT_PLATFORM_NATIVE",
+    "source_id": "BA::ASSEMBLEIA_LEGISLATIVA",
+    "captured_at": "2026-07-16T17:04:51.345042Z",
+    "request": {
+      "url": "https://www.al.ba.gov.br/",
+      "method": "GET",
+      "headers": {
+        "Accept": "text/html,application/xhtml+xml,application/pdf,application/json;q=0.9,*/*;q=0.1",
+        "User-Agent": "RJC-Portal-Proof-Research/1.0 (anonymous, no-cookie)"
+      },
+      "cookies": "none"
+    },
+    "redirect_chain": [],
+    "response": {
+      "url_final": "https://www.al.ba.gov.br/",
+      "status": 200,
+      "headers": {
+        "Content-Type": "text/html;charset=UTF-8",
+        "Content-Language": "pt-BR",
+        "Date": "Thu, 16 Jul 2026 17:04:51 GMT",
+        "Connection": "close",
+        "Set-Cookie": "cookiesession1=678B29927400037830C2A0A2D84574BA;Expires=Fri, 16 Jul 2027 17:04:52 GMT;Path=/;HttpOnly",
+        "content-length": "40281"
+      },
+      "mime": "text/html"
+    },
+    "body": {
+      "bytes": 40281,
+      "sha256": "52f5ada89c97d762568ba025e248eb7c6ff35752a84288b36129cc14c000788c",
+      "path_externo": "C:\\Users\\rafae\\.codex\\automations\\monitor-portal-rjc-tributario\\evidencias\\2026-07-16-prova-material\\fontes-institucionais\\tentativa-2\\bodies\\BA_ASSEMBLEIA_LEGISLATIVA-52f5ada89c97d762568ba025e248eb7c6ff35752a84288b36129cc14c000788c.bin"
+    },
+    "result": "CAPTURADA_PENDENTE_DE_LEITURA_E_REFETCH",
+    "publication_authorization": "NAO"
+  },
+  {
+    "receipt_id": "local-BA_DOE-20260716T170451222719Z",
+    "receipt_class": "LOCAL_REPRODUCIBLE_NOT_PLATFORM_NATIVE",
+    "source_id": "BA::DOE",
+    "captured_at": "2026-07-16T17:04:51.222719Z",
+    "request": {
+      "url": "https://dool.egba.ba.gov.br/",
+      "method": "GET",
+      "headers": {
+        "Accept": "text/html,application/xhtml+xml,application/pdf,application/json;q=0.9,*/*;q=0.1",
+        "User-Agent": "RJC-Portal-Proof-Research/1.0 (anonymous, no-cookie)"
+      },
+      "cookies": "none"
+    },
+    "redirect_chain": [],
+    "response": {
+      "url_final": "https://dool.egba.ba.gov.br/",
+      "status": 200,
+      "headers": {
+        "Date": "Thu, 16 Jul 2026 17:04:52 GMT",
+        "Server": "Apache/2.2.22 (Debian)",
+        "Set-Cookie": "cookiesession1=678B29963C2F30CAF54D00794E966E54;Expires=Fri, 16 Jul 2027 17:04:52 GMT;Path=/;HttpOnly",
+        "Content-Length": "43603",
+        "Vary": "Accept-Encoding",
+        "Connection": "close",
+        "Content-Type": "text/html; charset=UTF-8"
+      },
+      "mime": "text/html"
+    },
+    "body": {
+      "bytes": 43603,
+      "sha256": "7c75ed4b8232b822cf2bc0411901fcedfb1d7cfc0bffa8f8b2347aa21801a829",
+      "path_externo": "C:\\Users\\rafae\\.codex\\automations\\monitor-portal-rjc-tributario\\evidencias\\2026-07-16-prova-material\\fontes-institucionais\\tentativa-2\\bodies\\BA_DOE-7c75ed4b8232b822cf2bc0411901fcedfb1d7cfc0bffa8f8b2347aa21801a829.bin"
+    },
+    "result": "CAPTURADA_PENDENTE_DE_LEITURA_E_REFETCH",
+    "publication_authorization": "NAO"
+  },
+  {
+    "receipt_id": "local-BA_SEFAZ_LEGISLACAO-20260716T170451197170Z",
+    "receipt_class": "LOCAL_REPRODUCIBLE_NOT_PLATFORM_NATIVE",
+    "source_id": "BA::SEFAZ_LEGISLACAO",
+    "captured_at": "2026-07-16T17:04:51.197170Z",
+    "request": {
+      "url": "https://www.sefaz.ba.gov.br/legislacao/",
+      "method": "GET",
+      "headers": {
+        "Accept": "text/html,application/xhtml+xml,application/pdf,application/json;q=0.9,*/*;q=0.1",
+        "User-Agent": "RJC-Portal-Proof-Research/1.0 (anonymous, no-cookie)"
+      },
+      "cookies": "none"
+    },
+    "redirect_chain": [],
+    "response": {
+      "url_final": "https://www.sefaz.ba.gov.br/legislacao/",
+      "status": 200,
+      "headers": {
+        "Server": "nginx",
+        "Date": "Thu, 16 Jul 2026 17:04:52 GMT",
+        "Content-Type": "text/html; charset=UTF-8",
+        "Transfer-Encoding": "chunked",
+        "Connection": "close",
+        "Last-Modified": "Thu, 16 Jul 2026 11:07:46 GMT",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "X-Content-Type-Options": "nosniff",
+        "X-XSS-Protection": "1; mode=block"
+      },
+      "mime": "text/html"
+    },
+    "body": {
+      "bytes": 489496,
+      "sha256": "ba6fd37ae91b08cb1b305eea36b6dc80b25bca2e8b3892dd7b6feea288a70ee7",
+      "path_externo": "C:\\Users\\rafae\\.codex\\automations\\monitor-portal-rjc-tributario\\evidencias\\2026-07-16-prova-material\\fontes-institucionais\\tentativa-2\\bodies\\BA_SEFAZ_LEGISLACAO-ba6fd37ae91b08cb1b305eea36b6dc80b25bca2e8b3892dd7b6feea288a70ee7.bin"
+    },
+    "result": "CAPTURADA_PENDENTE_DE_LEITURA_E_REFETCH",
+    "publication_authorization": "NAO"
+  },
+  {
+    "receipt_id": "local-BR_CARF-20260716T170458609873Z",
+    "receipt_class": "LOCAL_REPRODUCIBLE_NOT_PLATFORM_NATIVE",
+    "source_id": "BR::CARF",
+    "captured_at": "2026-07-16T17:04:58.609873Z",
+    "request": {
+      "url": "https://www.gov.br/carf/pt-br/jurisprudencia",
+      "method": "GET",
+      "headers": {
+        "Accept": "text/html,application/xhtml+xml,application/pdf,application/json;q=0.9,*/*;q=0.1",
+        "User-Agent": "RJC-Portal-Proof-Research/1.0 (anonymous, no-cookie)"
+      },
+      "cookies": "none"
+    },
+    "redirect_chain": [],
+    "response": {
+      "url_final": "https://www.gov.br/carf/pt-br/jurisprudencia",
+      "status": 200,
+      "headers": {
+        "Date": "Thu, 16 Jul 2026 16:46:44 GMT",
+        "Content-Length": "97882",
+        "X-Cache-Operation": "plone.app.caching.moderateCaching",
+        "Content-Language": "pt-br",
+        "Expires": "Mon, 18 Jul 2016 16:46:44 GMT",
+        "Vary": "X-Anonymous,Accept-Encoding",
+        "X-Ua-Compatible": "IE=edge",
+        "X-Cache-Rule": "plone.content.folderView",
+        "X-Frame-Options": "DENY",
+        "Content-Type": "text/html;charset=utf-8",
+        "cache-control": "max-age=10, s-maxage=0, must-revalidate",
+        "X-VCL-Version": "2.1.1",
+        "X-Varnish": "11140286 12496387",
+        "Via": "1.1 www.gov.br",
+        "X-Cache": "HIT",
+        "X-Varnish-Age": "1094",
+        "Age": "0",
+        "Accept-Ranges": "bytes",
+        "X-Content-Type-Options": "nosniff",
+        "X-XSS-Protection": "1",
+        "Referrer-Policy": "strict-origin-when-cross-origin",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "Content-Security-Policy": "frame-ancestors 'self';",
+        "Connection": "close"
+      },
+      "mime": "text/html"
+    },
+    "body": {
+      "bytes": 97882,
+      "sha256": "f9ff8e6a3dc93269fa34a9e94431353423ddf2e9d066d15ffb09b174f8cffc9a",
+      "path_externo": "C:\\Users\\rafae\\.codex\\automations\\monitor-portal-rjc-tributario\\evidencias\\2026-07-16-prova-material\\fontes-institucionais\\tentativa-2\\bodies\\BR_CARF-f9ff8e6a3dc93269fa34a9e94431353423ddf2e9d066d15ffb09b174f8cffc9a.bin"
+    },
+    "result": "CAPTURADA_PENDENTE_DE_LEITURA_E_REFETCH",
+    "publication_authorization": "NAO"
+  },
+  {
+    "receipt_id": "local-BR_CGIBS_REGULAMENTOS-20260716T170458275884Z",
+    "receipt_class": "LOCAL_REPRODUCIBLE_NOT_PLATFORM_NATIVE",
+    "source_id": "BR::CGIBS_REGULAMENTOS",
+    "captured_at": "2026-07-16T17:04:58.275884Z",
+    "request": {
+      "url": "https://www.cgibs.gov.br/regulamentos",
+      "method": "GET",
+      "headers": {
+        "Accept": "text/html,application/xhtml+xml,application/pdf,application/json;q=0.9,*/*;q=0.1",
+        "User-Agent": "RJC-Portal-Proof-Research/1.0 (anonymous, no-cookie)"
+      },
+      "cookies": "none"
+    },
+    "redirect_chain": [],
+    "response": {
+      "url_final": "https://www.cgibs.gov.br/regulamentos",
+      "status": 200,
+      "headers": {
+        "Server": "nginx",
+        "Date": "Thu, 16 Jul 2026 17:05:01 GMT",
+        "Content-Type": "text/html; charset=UTF-8",
+        "Transfer-Encoding": "chunked",
+        "Connection": "close",
+        "Vary": "Accept-Encoding",
+        "X-Powered-By": "PHP/7.3.33",
+        "X-Frame-Options": "DENY",
+        "X-Content-Type-Options": "nosniff",
+        "X-XSS-Protection": "1; mode=block",
+        "X-Cache-Status": "EXPIRED",
+        "Alternate-Protocol": "443:npn-spdy/3",
+        "Strict-Transport-Security": "max-age=31536000;"
+      },
+      "mime": "text/html"
+    },
+    "body": {
+      "bytes": 46653,
+      "sha256": "4d630b5f52ae2474250e7587e59f91b763fee8c8d7eca0f9421e50bed7567981",
+      "path_externo": "C:\\Users\\rafae\\.codex\\automations\\monitor-portal-rjc-tributario\\evidencias\\2026-07-16-prova-material\\fontes-institucionais\\tentativa-2\\bodies\\BR_CGIBS_REGULAMENTOS-4d630b5f52ae2474250e7587e59f91b763fee8c8d7eca0f9421e50bed7567981.bin"
+    },
+    "result": "CAPTURADA_PENDENTE_DE_LEITURA_E_REFETCH",
+    "publication_authorization": "NAO"
+  },
+  {
+    "receipt_id": "local-BR_CONFAZ_AJUSTES_SINIEF-20260716T170457894798Z",
+    "receipt_class": "LOCAL_REPRODUCIBLE_NOT_PLATFORM_NATIVE",
+    "source_id": "BR::CONFAZ_AJUSTES_SINIEF",
+    "captured_at": "2026-07-16T17:04:57.894798Z",
+    "request": {
+      "url": "https://www.confaz.fazenda.gov.br/legislacao/ajustes",
+      "method": "GET",
+      "headers": {
+        "Accept": "text/html,application/xhtml+xml,application/pdf,application/json;q=0.9,*/*;q=0.1",
+        "User-Agent": "RJC-Portal-Proof-Research/1.0 (anonymous, no-cookie)"
+      },
+      "cookies": "none"
+    },
+    "redirect_chain": [],
+    "response": {
+      "url_final": "https://www.confaz.fazenda.gov.br/legislacao/ajustes",
+      "status": 200,
+      "headers": {
+        "Date": "Thu, 16 Jul 2026 17:04:58 GMT",
+        "Server": "Zope/(2.13.22, python 2.7.3, linux2) ZServer/1.1",
+        "X-Cache-Operation": "plone.app.caching.moderateCaching",
+        "Content-Language": "pt-br",
+        "Expires": "Mon, 18 Jul 2016 16:22:57 GMT",
+        "Vary": "Accept-Encoding",
+        "X-Ua-Compatible": "IE=edge,chrome=1",
+        "X-Cache-Rule": "plone.content.itemView",
+        "Content-Type": "text/html;charset=utf-8",
+        "Cache-Control": "max-age=0, s-maxage=0, must-revalidate",
+        "X-Varnish": "1449920395 1449896160",
+        "Via": "1.1 varnish",
+        "X-Cache": "HIT",
+        "X-Varnish-Age": "2521",
+        "Age": "0",
+        "Connection": "close",
+        "Transfer-Encoding": "chunked"
+      },
+      "mime": "text/html"
+    },
+    "body": {
+      "bytes": 50909,
+      "sha256": "d2db96de1c460a9c853d52796cee91a3be99ae854445e98fb3e550b18bf09bcc",
+      "path_externo": "C:\\Users\\rafae\\.codex\\automations\\monitor-portal-rjc-tributario\\evidencias\\2026-07-16-prova-material\\fontes-institucionais\\tentativa-2\\bodies\\BR_CONFAZ_AJUSTES_SINIEF-d2db96de1c460a9c853d52796cee91a3be99ae854445e98fb3e550b18bf09bcc.bin"
+    },
+    "result": "CAPTURADA_PENDENTE_DE_LEITURA_E_REFETCH",
+    "publication_authorization": "NAO"
+  },
+  {
+    "receipt_id": "local-BR_CONFAZ_ATOS_COTEPE-20260716T170457995918Z",
+    "receipt_class": "LOCAL_REPRODUCIBLE_NOT_PLATFORM_NATIVE",
+    "source_id": "BR::CONFAZ_ATOS_COTEPE",
+    "captured_at": "2026-07-16T17:04:57.995918Z",
+    "request": {
+      "url": "https://www.confaz.fazenda.gov.br/legislacao/atos-cotepe",
+      "method": "GET",
+      "headers": {
+        "Accept": "text/html,application/xhtml+xml,application/pdf,application/json;q=0.9,*/*;q=0.1",
+        "User-Agent": "RJC-Portal-Proof-Research/1.0 (anonymous, no-cookie)"
+      },
+      "cookies": "none"
+    },
+    "redirect_chain": [],
+    "response": {
+      "url_final": "https://www.confaz.fazenda.gov.br/legislacao/atos-cotepe",
+      "status": 404,
+      "headers": {
+        "Date": "Thu, 16 Jul 2026 17:04:58 GMT",
+        "Server": "Zope/(2.13.22, python 2.7.3, linux2) ZServer/1.1",
+        "Content-Language": "pt-br",
+        "Expires": "Sat, 01 Jan 2000 00:00:00 GMT",
+        "Vary": "Accept-Encoding",
+        "X-Ua-Compatible": "IE=edge,chrome=1",
+        "Content-Type": "text/html;charset=utf-8",
+        "X-Varnish": "1449920394 1449918420",
+        "Via": "1.1 varnish",
+        "X-Cache": "HIT",
+        "X-Varnish-Age": "172",
+        "Age": "0",
+        "Connection": "close",
+        "Transfer-Encoding": "chunked"
+      },
+      "mime": "text/html"
+    },
+    "body": {},
+    "result": "HTTP_ERROR",
+    "publication_authorization": "NAO"
+  },
+  {
+    "receipt_id": "local-BR_CONFAZ_CONVENIOS_ICMS-20260716T170457608990Z",
+    "receipt_class": "LOCAL_REPRODUCIBLE_NOT_PLATFORM_NATIVE",
+    "source_id": "BR::CONFAZ_CONVENIOS_ICMS",
+    "captured_at": "2026-07-16T17:04:57.608990Z",
+    "request": {
+      "url": "https://www.confaz.fazenda.gov.br/legislacao/convenios",
+      "method": "GET",
+      "headers": {
+        "Accept": "text/html,application/xhtml+xml,application/pdf,application/json;q=0.9,*/*;q=0.1",
+        "User-Agent": "RJC-Portal-Proof-Research/1.0 (anonymous, no-cookie)"
+      },
+      "cookies": "none"
+    },
+    "redirect_chain": [],
+    "response": {
+      "url_final": "https://www.confaz.fazenda.gov.br/legislacao/convenios",
+      "status": 200,
+      "headers": {
+        "Date": "Thu, 16 Jul 2026 17:04:58 GMT",
+        "Server": "Zope/(2.13.22, python 2.7.3, linux2) ZServer/1.1",
+        "X-Cache-Operation": "plone.app.caching.moderateCaching",
+        "Content-Language": "pt-br",
+        "Expires": "Mon, 18 Jul 2016 16:09:25 GMT",
+        "Vary": "Accept-Encoding",
+        "X-Ua-Compatible": "IE=edge,chrome=1",
+        "X-Cache-Rule": "plone.content.itemView",
+        "Content-Type": "text/html;charset=utf-8",
+        "Cache-Control": "max-age=0, s-maxage=0, must-revalidate",
+        "X-Varnish": "1449920393 1449891117",
+        "Via": "1.1 varnish",
+        "X-Cache": "HIT",
+        "X-Varnish-Age": "3333",
+        "Age": "0",
+        "Connection": "close",
+        "Transfer-Encoding": "chunked"
+      },
+      "mime": "text/html"
+    },
+    "body": {
+      "bytes": 55379,
+      "sha256": "77c128306f690c7649676f0fbfddd3c6b09296a37bfa577cb66fa581475bd9eb",
+      "path_externo": "C:\\Users\\rafae\\.codex\\automations\\monitor-portal-rjc-tributario\\evidencias\\2026-07-16-prova-material\\fontes-institucionais\\tentativa-2\\bodies\\BR_CONFAZ_CONVENIOS_ICMS-77c128306f690c7649676f0fbfddd3c6b09296a37bfa577cb66fa581475bd9eb.bin"
+    },
+    "result": "CAPTURADA_PENDENTE_DE_LEITURA_E_REFETCH",
+    "publication_authorization": "NAO"
+  },
+  {
+    "receipt_id": "local-BR_CONFAZ_PROTOCOLOS_ICMS-20260716T170458113600Z",
+    "receipt_class": "LOCAL_REPRODUCIBLE_NOT_PLATFORM_NATIVE",
+    "source_id": "BR::CONFAZ_PROTOCOLOS_ICMS",
+    "captured_at": "2026-07-16T17:04:58.113600Z",
+    "request": {
+      "url": "https://www.confaz.fazenda.gov.br/legislacao/protocolos",
+      "method": "GET",
+      "headers": {
+        "Accept": "text/html,application/xhtml+xml,application/pdf,application/json;q=0.9,*/*;q=0.1",
+        "User-Agent": "RJC-Portal-Proof-Research/1.0 (anonymous, no-cookie)"
+      },
+      "cookies": "none"
+    },
+    "redirect_chain": [],
+    "response": {
+      "url_final": "https://www.confaz.fazenda.gov.br/legislacao/protocolos",
+      "status": 200,
+      "headers": {
+        "Date": "Thu, 16 Jul 2026 17:04:58 GMT",
+        "Server": "Zope/(2.13.22, python 2.7.3, linux2) ZServer/1.1",
+        "X-Cache-Operation": "plone.app.caching.moderateCaching",
+        "Content-Language": "pt-br",
+        "Expires": "Mon, 18 Jul 2016 16:39:07 GMT",
+        "Vary": "Accept-Encoding",
+        "X-Ua-Compatible": "IE=edge,chrome=1",
+        "X-Cache-Rule": "plone.content.itemView",
+        "Content-Type": "text/html;charset=utf-8",
+        "Cache-Control": "max-age=0, s-maxage=0, must-revalidate",
+        "X-Varnish": "1449920396 1449903787",
+        "Via": "1.1 varnish",
+        "X-Cache": "HIT",
+        "X-Varnish-Age": "1552",
+        "Age": "0",
+        "Connection": "close",
+        "Transfer-Encoding": "chunked"
+      },
+      "mime": "text/html"
+    },
+    "body": {
+      "bytes": 55893,
+      "sha256": "e6b9aeb99ab92c544f5615c3f252e0a20b58e95f51054d85de01806d092eb04a",
+      "path_externo": "C:\\Users\\rafae\\.codex\\automations\\monitor-portal-rjc-tributario\\evidencias\\2026-07-16-prova-material\\fontes-institucionais\\tentativa-2\\bodies\\BR_CONFAZ_PROTOCOLOS_ICMS-e6b9aeb99ab92c544f5615c3f252e0a20b58e95f51054d85de01806d092eb04a.bin"
+    },
+    "result": "CAPTURADA_PENDENTE_DE_LEITURA_E_REFETCH",
+    "publication_authorization": "NAO"
+  },
+  {
+    "receipt_id": "local-BR_CONFAZ_RESOLUCOES-20260716T170458251232Z",
+    "receipt_class": "LOCAL_REPRODUCIBLE_NOT_PLATFORM_NATIVE",
+    "source_id": "BR::CONFAZ_RESOLUCOES",
+    "captured_at": "2026-07-16T17:04:58.251232Z",
+    "request": {
+      "url": "https://www.confaz.fazenda.gov.br/legislacao/resolucoes",
+      "method": "GET",
+      "headers": {
+        "Accept": "text/html,application/xhtml+xml,application/pdf,application/json;q=0.9,*/*;q=0.1",
+        "User-Agent": "RJC-Portal-Proof-Research/1.0 (anonymous, no-cookie)"
+      },
+      "cookies": "none"
+    },
+    "redirect_chain": [],
+    "response": {
+      "url_final": "https://www.confaz.fazenda.gov.br/legislacao/resolucoes",
+      "status": 200,
+      "headers": {
+        "Date": "Thu, 16 Jul 2026 17:04:58 GMT",
+        "Server": "Zope/(2.13.22, python 2.7.3, linux2) ZServer/1.1",
+        "X-Cache-Operation": "plone.app.caching.moderateCaching",
+        "Content-Language": "pt-br",
+        "Expires": "Mon, 18 Jul 2016 16:10:53 GMT",
+        "Vary": "Accept-Encoding",
+        "X-Ua-Compatible": "IE=edge,chrome=1",
+        "X-Cache-Rule": "plone.content.itemView",
+        "Content-Type": "text/html;charset=utf-8",
+        "Cache-Control": "max-age=0, s-maxage=0, must-revalidate",
+        "X-Varnish": "1449920397 1449891690",
+        "Via": "1.1 varnish",
+        "X-Cache": "HIT",
+        "X-Varnish-Age": "3245",
+        "Age": "0",
+        "Connection": "close",
+        "Transfer-Encoding": "chunked"
+      },
+      "mime": "text/html"
+    },
+    "body": {
+      "bytes": 39536,
+      "sha256": "ced4ca1abfaeb7a2b71d18fb9b31a96b39d45bb4c51263f0cc64600e5fc123b8",
+      "path_externo": "C:\\Users\\rafae\\.codex\\automations\\monitor-portal-rjc-tributario\\evidencias\\2026-07-16-prova-material\\fontes-institucionais\\tentativa-2\\bodies\\BR_CONFAZ_RESOLUCOES-ced4ca1abfaeb7a2b71d18fb9b31a96b39d45bb4c51263f0cc64600e5fc123b8.bin"
+    },
+    "result": "CAPTURADA_PENDENTE_DE_LEITURA_E_REFETCH",
+    "publication_authorization": "NAO"
+  },
+  {
+    "receipt_id": "local-BR_DOU_IMPRENSA_NACIONAL-20260716T170457229470Z",
+    "receipt_class": "LOCAL_REPRODUCIBLE_NOT_PLATFORM_NATIVE",
+    "source_id": "BR::DOU_IMPRENSA_NACIONAL",
+    "captured_at": "2026-07-16T17:04:57.229470Z",
+    "request": {
+      "url": "https://www.in.gov.br/leiturajornal",
+      "method": "GET",
+      "headers": {
+        "Accept": "text/html,application/xhtml+xml,application/pdf,application/json;q=0.9,*/*;q=0.1",
+        "User-Agent": "RJC-Portal-Proof-Research/1.0 (anonymous, no-cookie)"
+      },
+      "cookies": "none"
+    },
+    "redirect_chain": [],
+    "response": {
+      "url_final": "https://www.in.gov.br/leiturajornal",
+      "status": 200,
+      "headers": {
+        "Date": "Thu, 16 Jul 2026 17:04:57 GMT",
+        "Content-Type": "text/html;charset=UTF-8",
+        "Transfer-Encoding": "chunked",
+        "Connection": "close",
+        "Vary": "Accept-Encoding",
+        "Expires": "Thu, 01 Jan 1970 00:00:00 GMT",
+        "Cache-Control": "public",
+        "X-XSS-Protection": "1",
+        "Pragma": "no-cache",
+        "X-Content-Type-Options": "nosniff",
+        "Liferay-Portal": "Liferay Community Edition Portal 7.1.2 CE GA3 (Judson / Build 7102 / January 7, 2019)",
+        "Link": "<https://www.in.gov.br/o/api/doc rel=\"http://www.w3.org/ns/hydra/core#apiDocumentation\">",
+        "X-Cached": "EXPIRED",
+        "Access-Control-Allow-Origin": "*",
+        "X-Cache-Date": "Thu, 16 Jul 2026 10:01:12 GMT",
+        "X-Azion-Request-Id": "4f3f5391bad0e79757eeb1a5f0dd544e",
+        "X-Azion-Edge-Location": "GYN",
+        "Set-Cookie": "az_botm=4f3f5391bad0e79757eeb1a5f0dd544e; Domain=www.in.gov.br; Path=/; Max-Age=86400; Secure; HttpOnly; SameSite=Lax"
+      },
+      "mime": "text/html"
+    },
+    "body": {
+      "bytes": 482746,
+      "sha256": "168def05f8229bcc6f9dd9627fd1f91debd81aad22dd47b837262c8bba20c05f",
+      "path_externo": "C:\\Users\\rafae\\.codex\\automations\\monitor-portal-rjc-tributario\\evidencias\\2026-07-16-prova-material\\fontes-institucionais\\tentativa-2\\bodies\\BR_DOU_IMPRENSA_NACIONAL-168def05f8229bcc6f9dd9627fd1f91debd81aad22dd47b837262c8bba20c05f.bin"
+    },
+    "result": "CAPTURADA_PENDENTE_DE_LEITURA_E_REFETCH",
+    "publication_authorization": "NAO"
+  },
+  {
+    "receipt_id": "local-BR_PGFN-20260716T170457389806Z",
+    "receipt_class": "LOCAL_REPRODUCIBLE_NOT_PLATFORM_NATIVE",
+    "source_id": "BR::PGFN",
+    "captured_at": "2026-07-16T17:04:57.389806Z",
+    "request": {
+      "url": "https://www.gov.br/pgfn/pt-br/assuntos/representacao-judicial/legislacao-e-normas",
+      "method": "GET",
+      "headers": {
+        "Accept": "text/html,application/xhtml+xml,application/pdf,application/json;q=0.9,*/*;q=0.1",
+        "User-Agent": "RJC-Portal-Proof-Research/1.0 (anonymous, no-cookie)"
+      },
+      "cookies": "none"
+    },
+    "redirect_chain": [],
+    "response": {
+      "url_final": "https://www.gov.br/pgfn/pt-br/assuntos/representacao-judicial/legislacao-e-normas",
+      "status": 200,
+      "headers": {
+        "Date": "Thu, 16 Jul 2026 17:04:58 GMT",
+        "Content-Length": "148196",
+        "X-Cache-Operation": "plone.app.caching.moderateCaching",
+        "Content-Language": "pt-br",
+        "Expires": "Mon, 18 Jul 2016 17:04:58 GMT",
+        "Vary": "X-Anonymous,Accept-Encoding",
+        "X-Ua-Compatible": "IE=edge",
+        "X-Cache-Rule": "plone.content.itemView",
+        "X-Frame-Options": "DENY",
+        "Content-Type": "text/html;charset=utf-8",
+        "cache-control": "max-age=10, s-maxage=0, must-revalidate",
+        "X-VCL-Version": "2.1.0",
+        "X-Varnish": "10375588",
+        "Via": "1.1 www.gov.br",
+        "X-Cache": "MISS",
+        "X-Varnish-Age": "0",
+        "Age": "0",
+        "Accept-Ranges": "bytes",
+        "X-Content-Type-Options": "nosniff",
+        "X-XSS-Protection": "1",
+        "Referrer-Policy": "strict-origin-when-cross-origin",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "Content-Security-Policy": "frame-ancestors 'self';",
+        "Connection": "close"
+      },
+      "mime": "text/html"
+    },
+    "body": {
+      "bytes": 148196,
+      "sha256": "e47d1af29562ab18813b63ea29fbdcaa2fc6452aa7cc9afcd11237d8d964eebe",
+      "path_externo": "C:\\Users\\rafae\\.codex\\automations\\monitor-portal-rjc-tributario\\evidencias\\2026-07-16-prova-material\\fontes-institucionais\\tentativa-2\\bodies\\BR_PGFN-e47d1af29562ab18813b63ea29fbdcaa2fc6452aa7cc9afcd11237d8d964eebe.bin"
+    },
+    "result": "CAPTURADA_PENDENTE_DE_LEITURA_E_REFETCH",
+    "publication_authorization": "NAO"
+  },
+  {
+    "receipt_id": "local-BR_PLANALTO-20260716T170457193526Z",
+    "receipt_class": "LOCAL_REPRODUCIBLE_NOT_PLATFORM_NATIVE",
+    "source_id": "BR::PLANALTO",
+    "captured_at": "2026-07-16T17:04:57.193526Z",
+    "request": {
+      "url": "https://www.planalto.gov.br/ccivil_03/leis/_lei-principal.htm",
+      "method": "GET",
+      "headers": {
+        "Accept": "text/html,application/xhtml+xml,application/pdf,application/json;q=0.9,*/*;q=0.1",
+        "User-Agent": "RJC-Portal-Proof-Research/1.0 (anonymous, no-cookie)"
+      },
+      "cookies": "none"
+    },
+    "redirect_chain": [],
+    "response": {},
+    "body": {},
+    "result": "ERRO_DE_REDE",
+    "publication_authorization": "NAO",
+    "error": "TimeoutError: The read operation timed out"
+  },
+  {
+    "receipt_id": "local-BR_PORTAL_NACIONAL_TCBS-20260716T170458300436Z",
+    "receipt_class": "LOCAL_REPRODUCIBLE_NOT_PLATFORM_NATIVE",
+    "source_id": "BR::PORTAL_NACIONAL_TCBS",
+    "captured_at": "2026-07-16T17:04:58.300436Z",
+    "request": {
+      "url": "https://consumo.tributos.gov.br/",
+      "method": "GET",
+      "headers": {
+        "Accept": "text/html,application/xhtml+xml,application/pdf,application/json;q=0.9,*/*;q=0.1",
+        "User-Agent": "RJC-Portal-Proof-Research/1.0 (anonymous, no-cookie)"
+      },
+      "cookies": "none"
+    },
+    "redirect_chain": [],
+    "response": {
+      "url_final": "https://consumo.tributos.gov.br/",
+      "status": 200,
+      "headers": {
+        "content-length": "44336",
+        "content-type": "text/html",
+        "date": "Thu, 16 Jul 2026 17:04:59 GMT",
+        "server": "openresty/1.29.2.3",
+        "accept-ranges": "bytes",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate",
+        "etag": "\"6a0ccd05-ad30\"",
+        "last-modified": "Tue, 19 May 2026 20:50:13 GMT",
+        "strict-transport-security": "max-age=15768000",
+        "connection": "close"
+      },
+      "mime": ""
+    },
+    "body": {
+      "bytes": 44336,
+      "sha256": "4a7c212e70b4ef7ee53fb0d22c1605de8ea04c62ecb7247b4c52fd6b107eb628",
+      "path_externo": "C:\\Users\\rafae\\.codex\\automations\\monitor-portal-rjc-tributario\\evidencias\\2026-07-16-prova-material\\fontes-institucionais\\tentativa-2\\bodies\\BR_PORTAL_NACIONAL_TCBS-4a7c212e70b4ef7ee53fb0d22c1605de8ea04c62ecb7247b4c52fd6b107eb628.bin"
+    },
+    "result": "CAPTURADA_PENDENTE_DE_LEITURA_E_REFETCH",
+    "publication_authorization": "NAO"
+  },
+  {
+    "receipt_id": "local-BR_RFB_NORMAS-20260716T170457263019Z",
+    "receipt_class": "LOCAL_REPRODUCIBLE_NOT_PLATFORM_NATIVE",
+    "source_id": "BR::RFB_NORMAS",
+    "captured_at": "2026-07-16T17:04:57.263019Z",
+    "request": {
+      "url": "https://normas.receita.fazenda.gov.br/sijut2consulta/consulta.action",
+      "method": "GET",
+      "headers": {
+        "Accept": "text/html,application/xhtml+xml,application/pdf,application/json;q=0.9,*/*;q=0.1",
+        "User-Agent": "RJC-Portal-Proof-Research/1.0 (anonymous, no-cookie)"
+      },
+      "cookies": "none"
+    },
+    "redirect_chain": [],
+    "response": {
+      "url_final": "https://normas.receita.fazenda.gov.br/sijut2consulta/consulta.action",
+      "status": 200,
+      "headers": {
+        "Date": "Thu, 16 Jul 2026 17:04:56 GMT",
+        "Server": "Apache",
+        "X-Powered-By": "JSP/2.3",
+        "Set-Cookie": "ss_lbappSIJUT=1.vv4976; path=/sijut2servico;",
+        "Content-Type": "text/html;charset=UTF-8",
+        "Content-Language": "pt-BR",
+        "Vary": "Accept-Encoding",
+        "Connection": "close",
+        "Transfer-Encoding": "chunked"
+      },
+      "mime": "text/html"
+    },
+    "body": {
+      "bytes": 372048,
+      "sha256": "297050e24df179f00b12151ee5283718a0f3dd82d60f42ecc76f7d5525162ef9",
+      "path_externo": "C:\\Users\\rafae\\.codex\\automations\\monitor-portal-rjc-tributario\\evidencias\\2026-07-16-prova-material\\fontes-institucionais\\tentativa-2\\bodies\\BR_RFB_NORMAS-297050e24df179f00b12151ee5283718a0f3dd82d60f42ecc76f7d5525162ef9.bin"
+    },
+    "result": "CAPTURADA_PENDENTE_DE_LEITURA_E_REFETCH",
+    "publication_authorization": "NAO"
+  },
+  {
+    "receipt_id": "local-BR_SENADO-20260716T170458300436Z",
+    "receipt_class": "LOCAL_REPRODUCIBLE_NOT_PLATFORM_NATIVE",
+    "source_id": "BR::SENADO",
+    "captured_at": "2026-07-16T17:04:58.300436Z",
+    "request": {
+      "url": "https://www25.senado.leg.br/web/atividade/legislacao/legislacao-federal",
+      "method": "GET",
+      "headers": {
+        "Accept": "text/html,application/xhtml+xml,application/pdf,application/json;q=0.9,*/*;q=0.1",
+        "User-Agent": "RJC-Portal-Proof-Research/1.0 (anonymous, no-cookie)"
+      },
+      "cookies": "none"
+    },
+    "redirect_chain": [],
+    "response": {
+      "url_final": "https://www25.senado.leg.br/web/atividade/legislacao/legislacao-federal",
+      "status": 200,
+      "headers": {
+        "Server": "nginx",
+        "Date": "Thu, 16 Jul 2026 17:04:59 GMT",
+        "Content-Type": "text/html;charset=UTF-8",
+        "Transfer-Encoding": "chunked",
+        "Connection": "close",
+        "x-content-type-options": "nosniff",
+        "content-security-policy": "default-src 'self' *.senado.leg.br *.senado.gov.br *.congressonacional.leg.br wss://*.senado.gov.br:* wss://*.senado.leg.br:* vlibras.gov.br *.vlibras.gov.br gov.br cdn.jsdelivr.net *.googletagmanager.com www.google.com/recaptcha *.google-analytics.com analytics.google.com; script-src 'self' 'unsafe-inline' 'unsafe-eval' blob: *.senado.leg.br *.senado.gov.br *.congressonacional.leg.br *.vlibras.gov.br vlibras.gov.br cdn.jsdelivr.net connect.facebook.net *.qlikcloud.com *.googletagmanager.com www.google.com/recaptcha/ www.gstatic.com/recaptcha/ *.youtube.com www.google-analytics.com ssl.google-analytics.com google-analytics.com analytics.google.com; style-src 'self' 'unsafe-inline' *.senado.leg.br *.senado.gov.br *.congressonacional.leg.br *.vlibras.gov.br fonts.googleapis.com www.gstatic.com/charts/ fonts.cdnfonts.com; font-src 'self' data: *.senado.leg.br *.senado.gov.br *.congressonacional.leg.br fonts.gstatic.com use.typekit.net vlibras.gov.br cdn.jsdelivr.net fonts.googleapis.com static3.avast.com fonts.cdnfonts.com; img-src 'self' data: blob: *.senado.leg.br *.senado.gov.br *.congressonacional.leg.br www.camara.leg.br *.vlibras.gov.br vlibras.gov.br cdn.jsdelivr.net translate.google.com www.facebook.com www.gstatic.com *.googletagmanager.com *.ytimg.com www.google-analytics.com ssl.google-analytics.com google-analytics.com analytics.google.com; media-src 'self' *.camara.leg.br *.senado.leg.br *.congressonacional.leg.br *.youtube.com; object-src 'self' *.senado.leg.br *.senado.gov.br; frame-src 'self' *.camara.leg.br *.senado.leg.br *.senado.gov.br spark.adobe.com www.google.com/recaptcha/ *.youtube.com; worker-src 'self' blob:; frame-ancestors 'self'; form-action 'self' *.senado.gov.br *.senado.leg.br *.congressonacional.leg.br www.lexml.gov.br; block-all-mixed-content; base-uri 'self'; upgrade-insecure-requests; manifest-src 'self' data: *.senado.gov.br:* *.senado.leg.br *.congressonacional.leg.br; report-uri https://adm.senado.gov.br/csp-report-collector/collect",
+        "set-cookie": "SF_LFR_SRVR=00b4d101f9aa1045; path=/",
+        "Age": "0",
+        "Referrer-Policy": "strict-origin-when-cross-origin",
+        "X-Frame-Options": "SAMEORIGIN",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "Accept-Ranges": "bytes"
+      },
+      "mime": "text/html"
+    },
+    "body": {
+      "bytes": 59884,
+      "sha256": "1e1eef733cd199f73d86d68a4b070c092bbc90845df512f22ef0593ecedee0ad",
+      "path_externo": "C:\\Users\\rafae\\.codex\\automations\\monitor-portal-rjc-tributario\\evidencias\\2026-07-16-prova-material\\fontes-institucionais\\tentativa-2\\bodies\\BR_SENADO-1e1eef733cd199f73d86d68a4b070c092bbc90845df512f22ef0593ecedee0ad.bin"
+    },
+    "result": "CAPTURADA_PENDENTE_DE_LEITURA_E_REFETCH",
+    "publication_authorization": "NAO"
+  },
+  {
+    "receipt_id": "local-BR_STF-20260716T170458423219Z",
+    "receipt_class": "LOCAL_REPRODUCIBLE_NOT_PLATFORM_NATIVE",
+    "source_id": "BR::STF",
+    "captured_at": "2026-07-16T17:04:58.423219Z",
+    "request": {
+      "url": "https://portal.stf.jus.br/jurisprudencia/",
+      "method": "GET",
+      "headers": {
+        "Accept": "text/html,application/xhtml+xml,application/pdf,application/json;q=0.9,*/*;q=0.1",
+        "User-Agent": "RJC-Portal-Proof-Research/1.0 (anonymous, no-cookie)"
+      },
+      "cookies": "none"
+    },
+    "redirect_chain": [],
+    "response": {
+      "url_final": "https://portal.stf.jus.br/jurisprudencia/",
+      "status": 403,
+      "headers": {
+        "Server": "awselb/2.0",
+        "Date": "Thu, 16 Jul 2026 17:04:59 GMT",
+        "Content-Type": "text/html",
+        "Content-Length": "118",
+        "Connection": "close"
+      },
+      "mime": "text/html"
+    },
+    "body": {},
+    "result": "HTTP_ERROR",
+    "publication_authorization": "NAO"
+  },
+  {
+    "receipt_id": "local-BR_STJ-20260716T170458543008Z",
+    "receipt_class": "LOCAL_REPRODUCIBLE_NOT_PLATFORM_NATIVE",
+    "source_id": "BR::STJ",
+    "captured_at": "2026-07-16T17:04:58.543008Z",
+    "request": {
+      "url": "https://processo.stj.jus.br/SCON/",
+      "method": "GET",
+      "headers": {
+        "Accept": "text/html,application/xhtml+xml,application/pdf,application/json;q=0.9,*/*;q=0.1",
+        "User-Agent": "RJC-Portal-Proof-Research/1.0 (anonymous, no-cookie)"
+      },
+      "cookies": "none"
+    },
+    "redirect_chain": [],
+    "response": {},
+    "body": {},
+    "result": "ERRO_DE_REDE",
+    "publication_authorization": "NAO",
+    "error": "TimeoutError: The read operation timed out"
+  },
+  {
+    "receipt_id": "local-CE_ASSEMBLEIA_LEGISLATIVA-20260716T170451732932Z",
+    "receipt_class": "LOCAL_REPRODUCIBLE_NOT_PLATFORM_NATIVE",
+    "source_id": "CE::ASSEMBLEIA_LEGISLATIVA",
+    "captured_at": "2026-07-16T17:04:51.732932Z",
+    "request": {
+      "url": "https://www.al.ce.gov.br/",
+      "method": "GET",
+      "headers": {
+        "Accept": "text/html,application/xhtml+xml,application/pdf,application/json;q=0.9,*/*;q=0.1",
+        "User-Agent": "RJC-Portal-Proof-Research/1.0 (anonymous, no-cookie)"
+      },
+      "cookies": "none"
+    },
+    "redirect_chain": [],
+    "response": {
+      "url_final": "https://www.al.ce.gov.br/",
+      "status": 200,
+      "headers": {
+        "Server": "nginx",
+        "Date": "Thu, 16 Jul 2026 17:04:47 GMT",
+        "Content-Type": "text/html; charset=UTF-8",
+        "Transfer-Encoding": "chunked",
+        "Connection": "close",
+        "X-Powered-By": "PHP/7.4.30",
+        "Cache-Control": "no-cache, private",
+        "Set-Cookie": "alece_session=eyJpdiI6IlJGV1RYcTdhQ1dxbkpnNkFDOEZKbnc9PSIsInZhbHVlIjoiS3VNSlVHSkhIcDdteEg4bUM5OFhqNmNiaFFyWXE4ZkN0Q0Q5M3k2aE91SnVoWURrMXZOdXlBYjMxZ2x2eXVTbEdKbEZhNzdHWk1HVmk5RFFpUkxlSTgzYStGb0hadGozWXBBc2VhaFBQUytPZWRjMG9pWDdubloyalp6Z0ExQ3YiLCJtYWMiOiIwYjY0YjYwYzAyNWVkYjEwZmNmNzU2ZGI4MTk1ZDIxZWUzYmQ0Y2UzODBkZjhjYTQ2MjEzODAxYmIxMzM0YzFiIiwidGFnIjoiIn0%3D; expires=Thu, 16-Jul-2026 19:04:52 GMT; Max-Age=7200; path=/; httponly; samesite=lax",
+        "Vary": "Accept-Encoding"
+      },
+      "mime": "text/html"
+    },
+    "body": {
+      "bytes": 195543,
+      "sha256": "afd85e3c173bb316fc4fa52ff386afbcc6d88413be5880772e46273a20c883bb",
+      "path_externo": "C:\\Users\\rafae\\.codex\\automations\\monitor-portal-rjc-tributario\\evidencias\\2026-07-16-prova-material\\fontes-institucionais\\tentativa-2\\bodies\\CE_ASSEMBLEIA_LEGISLATIVA-afd85e3c173bb316fc4fa52ff386afbcc6d88413be5880772e46273a20c883bb.bin"
+    },
+    "result": "CAPTURADA_PENDENTE_DE_LEITURA_E_REFETCH",
+    "publication_authorization": "NAO"
+  },
+  {
+    "receipt_id": "local-CE_DOE-20260716T170451702837Z",
+    "receipt_class": "LOCAL_REPRODUCIBLE_NOT_PLATFORM_NATIVE",
+    "source_id": "CE::DOE",
+    "captured_at": "2026-07-16T17:04:51.702837Z",
+    "request": {
+      "url": "https://www.ce.gov.br/diario-oficial/",
+      "method": "GET",
+      "headers": {
+        "Accept": "text/html,application/xhtml+xml,application/pdf,application/json;q=0.9,*/*;q=0.1",
+        "User-Agent": "RJC-Portal-Proof-Research/1.0 (anonymous, no-cookie)"
+      },
+      "cookies": "none"
+    },
+    "redirect_chain": [],
+    "response": {
+      "url_final": "https://www.ce.gov.br/diario-oficial/",
+      "status": 200,
+      "headers": {
+        "date": "Thu, 16 Jul 2026 17:04:52 GMT",
+        "content-type": "text/html; charset=UTF-8",
+        "link": "<https://www.ce.gov.br/wp-json/>; rel=\"https://api.w.org/\", <https://www.ce.gov.br/wp-json/wp/v2/pages/289861>; rel=\"alternate\"; title=\"JSON\"; type=\"application/json\", <https://www.ce.gov.br/?p=289861>; rel=shortlink",
+        "x-envoy-upstream-service-time": "153",
+        "x-volterra-location": "sp4-sao",
+        "server": "volt-adc",
+        "connection": "close",
+        "transfer-encoding": "chunked"
+      },
+      "mime": ""
+    },
+    "body": {
+      "bytes": 142850,
+      "sha256": "fded55d8884c887f3a960b7385c6e11aa5744b4c7218abb4c001e294d92d6ea7",
+      "path_externo": "C:\\Users\\rafae\\.codex\\automations\\monitor-portal-rjc-tributario\\evidencias\\2026-07-16-prova-material\\fontes-institucionais\\tentativa-2\\bodies\\CE_DOE-fded55d8884c887f3a960b7385c6e11aa5744b4c7218abb4c001e294d92d6ea7.bin"
+    },
+    "result": "CAPTURADA_PENDENTE_DE_LEITURA_E_REFETCH",
+    "publication_authorization": "NAO"
+  },
+  {
+    "receipt_id": "local-CE_SEFAZ_LEGISLACAO-20260716T170451493213Z",
+    "receipt_class": "LOCAL_REPRODUCIBLE_NOT_PLATFORM_NATIVE",
+    "source_id": "CE::SEFAZ_LEGISLACAO",
+    "captured_at": "2026-07-16T17:04:51.493213Z",
+    "request": {
+      "url": "https://www.sefaz.ce.gov.br/legislacao-tributaria/",
+      "method": "GET",
+      "headers": {
+        "Accept": "text/html,application/xhtml+xml,application/pdf,application/json;q=0.9,*/*;q=0.1",
+        "User-Agent": "RJC-Portal-Proof-Research/1.0 (anonymous, no-cookie)"
+      },
+      "cookies": "none"
+    },
+    "redirect_chain": [
+      {
+        "from_url": "https://www.sefaz.ce.gov.br/legislacao-tributaria/",
+        "to_url": "https://www.ce.gov.br/sefaz/legislacao-tributaria/",
+        "status": 301,
+        "location": "https://www.ce.gov.br/sefaz/legislacao-tributaria/"
+      }
+    ],
+    "response": {
+      "url_final": "https://www.ce.gov.br/sefaz/legislacao-tributaria/",
+      "status": 200,
+      "headers": {
+        "date": "Thu, 16 Jul 2026 17:04:53 GMT",
+        "content-type": "text/html; charset=UTF-8",
+        "link": "<https://www.ce.gov.br/sefaz/wp-json/>; rel=\"https://api.w.org/\", <https://www.ce.gov.br/sefaz/wp-json/wp/v2/pages/3113>; rel=\"alternate\"; title=\"JSON\"; type=\"application/json\", <https://www.ce.gov.br/sefaz/?p=3113>; rel=shortlink",
+        "x-envoy-upstream-service-time": "161",
+        "x-volterra-location": "sp4-sao",
+        "server": "volt-adc",
+        "connection": "close",
+        "transfer-encoding": "chunked"
+      },
+      "mime": ""
+    },
+    "body": {
+      "bytes": 136969,
+      "sha256": "8162307b2160b0c5e3728a738aa117e2b5d074f46d04cbf43f73494b631a2750",
+      "path_externo": "C:\\Users\\rafae\\.codex\\automations\\monitor-portal-rjc-tributario\\evidencias\\2026-07-16-prova-material\\fontes-institucionais\\tentativa-2\\bodies\\CE_SEFAZ_LEGISLACAO-8162307b2160b0c5e3728a738aa117e2b5d074f46d04cbf43f73494b631a2750.bin"
+    },
+    "result": "CAPTURADA_PENDENTE_DE_LEITURA_E_REFETCH",
+    "publication_authorization": "NAO"
+  },
+  {
+    "receipt_id": "local-DF_ASSEMBLEIA_LEGISLATIVA-20260716T170452089881Z",
+    "receipt_class": "LOCAL_REPRODUCIBLE_NOT_PLATFORM_NATIVE",
+    "source_id": "DF::ASSEMBLEIA_LEGISLATIVA",
+    "captured_at": "2026-07-16T17:04:52.089881Z",
+    "request": {
+      "url": "https://www.cl.df.gov.br/leis",
+      "method": "GET",
+      "headers": {
+        "Accept": "text/html,application/xhtml+xml,application/pdf,application/json;q=0.9,*/*;q=0.1",
+        "User-Agent": "RJC-Portal-Proof-Research/1.0 (anonymous, no-cookie)"
+      },
+      "cookies": "none"
+    },
+    "redirect_chain": [],
+    "response": {
+      "url_final": "https://www.cl.df.gov.br/leis",
+      "status": 200,
+      "headers": {
+        "x-content-type-options": "nosniff",
+        "x-frame-options": "SAMEORIGIN",
+        "set-cookie": "session-liferay-portal-internet=\"737c0065a67a3695\"; Path=/; Secure=true; HttpOnly=true; SameSite=Lax; HttpOnly",
+        "liferay-portal": "Liferay Community Edition Portal 7.4.3.15 CE GA15 (Cavanaugh / Build 7403 / March 11, 2022)",
+        "content-type": "text/html;charset=UTF-8",
+        "date": "Thu, 16 Jul 2026 17:04:52 GMT",
+        "x-envoy-upstream-service-time": "42",
+        "server": "envoy",
+        "connection": "close",
+        "transfer-encoding": "chunked"
+      },
+      "mime": ""
+    },
+    "body": {
+      "bytes": 197495,
+      "sha256": "44a021b89312388d9c1a5fd5d6df0264cc245bd78c3f4558e1d4736fd4d6233e",
+      "path_externo": "C:\\Users\\rafae\\.codex\\automations\\monitor-portal-rjc-tributario\\evidencias\\2026-07-16-prova-material\\fontes-institucionais\\tentativa-2\\bodies\\DF_ASSEMBLEIA_LEGISLATIVA-44a021b89312388d9c1a5fd5d6df0264cc245bd78c3f4558e1d4736fd4d6233e.bin"
+    },
+    "result": "CAPTURADA_PENDENTE_DE_LEITURA_E_REFETCH",
+    "publication_authorization": "NAO"
+  },
+  {
+    "receipt_id": "local-DF_DOE-20260716T170451855383Z",
+    "receipt_class": "LOCAL_REPRODUCIBLE_NOT_PLATFORM_NATIVE",
+    "source_id": "DF::DOE",
+    "captured_at": "2026-07-16T17:04:51.855383Z",
+    "request": {
+      "url": "https://www.dodf.df.gov.br/",
+      "method": "GET",
+      "headers": {
+        "Accept": "text/html,application/xhtml+xml,application/pdf,application/json;q=0.9,*/*;q=0.1",
+        "User-Agent": "RJC-Portal-Proof-Research/1.0 (anonymous, no-cookie)"
+      },
+      "cookies": "none"
+    },
+    "redirect_chain": [],
+    "response": {
+      "url_final": "https://www.dodf.df.gov.br/",
+      "status": 202,
+      "headers": {
+        "Access-Control-Allow-Origin": "*",
+        "Content-Type": "text/html; charset=utf-8",
+        "Date": "Thu, 16 Jul 2026 17:13:30 GMT",
+        "Server": "Apache",
+        "Connection": "close",
+        "Transfer-Encoding": "chunked"
+      },
+      "mime": "text/html"
+    },
+    "body": {
+      "bytes": 62228,
+      "sha256": "851f2b24406a209d7868f517c2253d4ed6dda22bd47a1b21c8ebffcfc8137f4e",
+      "path_externo": "C:\\Users\\rafae\\.codex\\automations\\monitor-portal-rjc-tributario\\evidencias\\2026-07-16-prova-material\\fontes-institucionais\\tentativa-2\\bodies\\DF_DOE-851f2b24406a209d7868f517c2253d4ed6dda22bd47a1b21c8ebffcfc8137f4e.bin"
+    },
+    "result": "CAPTURADA_PENDENTE_DE_LEITURA_E_REFETCH",
+    "publication_authorization": "NAO"
+  },
+  {
+    "receipt_id": "local-DF_SEFAZ_LEGISLACAO-20260716T170451835355Z",
+    "receipt_class": "LOCAL_REPRODUCIBLE_NOT_PLATFORM_NATIVE",
+    "source_id": "DF::SEFAZ_LEGISLACAO",
+    "captured_at": "2026-07-16T17:04:51.835355Z",
+    "request": {
+      "url": "https://ww1.receita.fazenda.df.gov.br/legislacao/pesquisa-avancada",
+      "method": "GET",
+      "headers": {
+        "Accept": "text/html,application/xhtml+xml,application/pdf,application/json;q=0.9,*/*;q=0.1",
+        "User-Agent": "RJC-Portal-Proof-Research/1.0 (anonymous, no-cookie)"
+      },
+      "cookies": "none"
+    },
+    "redirect_chain": [],
+    "response": {
+      "url_final": "https://ww1.receita.fazenda.df.gov.br/legislacao/pesquisa-avancada",
+      "status": 200,
+      "headers": {
+        "Date": "Thu, 16 Jul 2026 17:04:52 GMT",
+        "Content-Type": "text/html",
+        "Transfer-Encoding": "chunked",
+        "Connection": "close",
+        "Last-Modified": "Thu, 09 Jul 2026 16:22:42 GMT",
+        "Accept-Ranges": "bytes",
+        "set-cookie": "__cf_bm=AH2U5dF2w5KmqNhCMS6HQ6oxZuQVyqqdl2VNWEJVac8-1784221492.6132813-1.0.1.1-V91wNh23GSse476KoqCDLEUSPKZVbizuY07f2x2W3NNX6kG0CJ_ISGzw3SOBaJ022RbifbT8wPJwQSGEo5r.OnjVG5Ujj1bvH66Z.DBD_v.eEZjmCTHNGQMdh0sIR_aI; HttpOnly; SameSite=None; Secure; Path=/; Domain=df.gov.br; Expires=Thu, 16 Jul 2026 17:34:52 GMT",
+        "Server": "cloudflare",
+        "X-Powered-By": "ASP.NET",
+        "cf-cache-status": "DYNAMIC",
+        "Server-Timing": "cfEdge;dur=13,cfOrigin;dur=52",
+        "CF-RAY": "a1c296a8dd0e7843-MAO",
+        "alt-svc": "h3=\":443\"; ma=86400"
+      },
+      "mime": "text/html"
+    },
+    "body": {
+      "bytes": 3422,
+      "sha256": "18185dbcc15d5d91d3ddfcaf9b686db3d3b9d6271244792b6a22cbcf7fc20e6a",
+      "path_externo": "C:\\Users\\rafae\\.codex\\automations\\monitor-portal-rjc-tributario\\evidencias\\2026-07-16-prova-material\\fontes-institucionais\\tentativa-2\\bodies\\DF_SEFAZ_LEGISLACAO-18185dbcc15d5d91d3ddfcaf9b686db3d3b9d6271244792b6a22cbcf7fc20e6a.bin"
+    },
+    "result": "CAPTURADA_PENDENTE_DE_LEITURA_E_REFETCH",
+    "publication_authorization": "NAO"
+  },
+  {
+    "receipt_id": "local-ES_ASSEMBLEIA_LEGISLATIVA-20260716T170452203748Z",
+    "receipt_class": "LOCAL_REPRODUCIBLE_NOT_PLATFORM_NATIVE",
+    "source_id": "ES::ASSEMBLEIA_LEGISLATIVA",
+    "captured_at": "2026-07-16T17:04:52.203748Z",
+    "request": {
+      "url": "https://www3.al.es.gov.br/legislacao/consulta-legislacao.aspx",
+      "method": "GET",
+      "headers": {
+        "Accept": "text/html,application/xhtml+xml,application/pdf,application/json;q=0.9,*/*;q=0.1",
+        "User-Agent": "RJC-Portal-Proof-Research/1.0 (anonymous, no-cookie)"
+      },
+      "cookies": "none"
+    },
+    "redirect_chain": [],
+    "response": {
+      "url_final": "https://www3.al.es.gov.br/legislacao/consulta-legislacao.aspx",
+      "status": 200,
+      "headers": {
+        "Cache-Control": "public, max-age=120",
+        "Content-Type": "text/html; charset=utf-8",
+        "Expires": "Thu, 16 Jul 2026 17:07:02 GMT",
+        "Last-Modified": "Thu, 16 Jul 2026 17:05:02 GMT",
+        "Vary": "*",
+        "Set-Cookie": "ASP.NET_SessionId=q5dgb0zgym441on1ifm0szaq; path=/; HttpOnly; SameSite=Lax",
+        "X-Powered-By": "ASP.NET",
+        "Access-Control-Allow-Origin": "*",
+        "Date": "Thu, 16 Jul 2026 17:05:04 GMT",
+        "Connection": "close",
+        "Content-Length": "118443"
+      },
+      "mime": "text/html"
+    },
+    "body": {
+      "bytes": 118443,
+      "sha256": "e550dde89d7dabfce3b72aec2bb020de1ac3d6cce4aa7066ba8838efaba3de28",
+      "path_externo": "C:\\Users\\rafae\\.codex\\automations\\monitor-portal-rjc-tributario\\evidencias\\2026-07-16-prova-material\\fontes-institucionais\\tentativa-2\\bodies\\ES_ASSEMBLEIA_LEGISLATIVA-e550dde89d7dabfce3b72aec2bb020de1ac3d6cce4aa7066ba8838efaba3de28.bin"
+    },
+    "result": "CAPTURADA_PENDENTE_DE_LEITURA_E_REFETCH",
+    "publication_authorization": "NAO"
+  },
+  {
+    "receipt_id": "local-ES_DOE-20260716T170452203748Z",
+    "receipt_class": "LOCAL_REPRODUCIBLE_NOT_PLATFORM_NATIVE",
+    "source_id": "ES::DOE",
+    "captured_at": "2026-07-16T17:04:52.203748Z",
+    "request": {
+      "url": "https://ioes.dio.es.gov.br/portal/visualizacoes/diario_oficial",
+      "method": "GET",
+      "headers": {
+        "Accept": "text/html,application/xhtml+xml,application/pdf,application/json;q=0.9,*/*;q=0.1",
+        "User-Agent": "RJC-Portal-Proof-Research/1.0 (anonymous, no-cookie)"
+      },
+      "cookies": "none"
+    },
+    "redirect_chain": [],
+    "response": {
+      "url_final": "https://ioes.dio.es.gov.br/portal/visualizacoes/diario_oficial",
+      "status": 200,
+      "headers": {
+        "Date": "Thu, 16 Jul 2026 17:04:52 GMT",
+        "Server": "Apache",
+        "Set-Cookie": "CAKEPHP=qqf6n72sh7mbkiukj7ko58804s; expires=Thu, 16-Jul-2026 23:04:52 GMT; Max-Age=21600; path=/; secure; HttpOnly",
+        "Content-Length": "18334",
+        "Vary": "Accept-Encoding",
+        "Access-Control-Allow-Origin": "*",
+        "Connection": "close",
+        "Content-Type": "text/html; charset=UTF-8"
+      },
+      "mime": "text/html"
+    },
+    "body": {
+      "bytes": 18334,
+      "sha256": "b254acf272aed1d7c3a84e217d0a2143d957f4745b52aff514afc249a3a8b4a6",
+      "path_externo": "C:\\Users\\rafae\\.codex\\automations\\monitor-portal-rjc-tributario\\evidencias\\2026-07-16-prova-material\\fontes-institucionais\\tentativa-2\\bodies\\ES_DOE-b254acf272aed1d7c3a84e217d0a2143d957f4745b52aff514afc249a3a8b4a6.bin"
+    },
+    "result": "CAPTURADA_PENDENTE_DE_LEITURA_E_REFETCH",
+    "publication_authorization": "NAO"
+  },
+  {
+    "receipt_id": "local-ES_SEFAZ_LEGISLACAO-20260716T170452167209Z",
+    "receipt_class": "LOCAL_REPRODUCIBLE_NOT_PLATFORM_NATIVE",
+    "source_id": "ES::SEFAZ_LEGISLACAO",
+    "captured_at": "2026-07-16T17:04:52.167209Z",
+    "request": {
+      "url": "https://www3.sefaz.es.gov.br/legislacao/",
+      "method": "GET",
+      "headers": {
+        "Accept": "text/html,application/xhtml+xml,application/pdf,application/json;q=0.9,*/*;q=0.1",
+        "User-Agent": "RJC-Portal-Proof-Research/1.0 (anonymous, no-cookie)"
+      },
+      "cookies": "none"
+    },
+    "redirect_chain": [],
+    "response": {
+      "url_final": "https://www3.sefaz.es.gov.br/legislacao/",
+      "status": 200,
+      "headers": {
+        "Date": "Thu, 16 Jul 2026 17:04:52 GMT",
+        "Content-Type": "text/html; charset=utf-8",
+        "Content-Length": "8960",
+        "Connection": "close",
+        "X-Frame-Options": "SAMEORIGIN",
+        "X-Content-Type-Options": "nosniff",
+        "X-XSS-Protection": "1; mode=block",
+        "Referrer-Policy": "strict-origin-when-cross-origin",
+        "Set-Cookie": "TS01c5dcaa=01d7c9d46aa7f1eb51a6da4afb2c072b186020446dc29dbfaa31f872b57ce26a1e725f3f5ac99ca4e5dd1fc959da0e6b395914575a; Path=/; Domain=.www3.sefaz.es.gov.br"
+      },
+      "mime": "text/html"
+    },
+    "body": {
+      "bytes": 8960,
+      "sha256": "e90f47c52e40a270003f4bb35d632e8020c71b7ed4ad01407e79d2e7912d5c35",
+      "path_externo": "C:\\Users\\rafae\\.codex\\automations\\monitor-portal-rjc-tributario\\evidencias\\2026-07-16-prova-material\\fontes-institucionais\\tentativa-2\\bodies\\ES_SEFAZ_LEGISLACAO-e90f47c52e40a270003f4bb35d632e8020c71b7ed4ad01407e79d2e7912d5c35.bin"
+    },
+    "result": "CAPTURADA_PENDENTE_DE_LEITURA_E_REFETCH",
+    "publication_authorization": "NAO"
+  },
+  {
+    "receipt_id": "local-GO_ASSEMBLEIA_LEGISLATIVA-20260716T170452316085Z",
+    "receipt_class": "LOCAL_REPRODUCIBLE_NOT_PLATFORM_NATIVE",
+    "source_id": "GO::ASSEMBLEIA_LEGISLATIVA",
+    "captured_at": "2026-07-16T17:04:52.316085Z",
+    "request": {
+      "url": "https://transparencia.al.go.leg.br/legislacoes",
+      "method": "GET",
+      "headers": {
+        "Accept": "text/html,application/xhtml+xml,application/pdf,application/json;q=0.9,*/*;q=0.1",
+        "User-Agent": "RJC-Portal-Proof-Research/1.0 (anonymous, no-cookie)"
+      },
+      "cookies": "none"
+    },
+    "redirect_chain": [],
+    "response": {
+      "url_final": "https://transparencia.al.go.leg.br/legislacoes",
+      "status": 200,
+      "headers": {
+        "Date": "Thu, 16 Jul 2026 17:04:53 GMT",
+        "Server": "nginx",
+        "Content-Type": "text/html; charset=utf-8",
+        "Vary": "Accept-Encoding,Origin",
+        "X-Frame-Options": "SAMEORIGIN",
+        "X-XSS-Protection": "1; mode=block",
+        "X-Content-Type-Options": "nosniff",
+        "X-Download-Options": "noopen",
+        "X-Permitted-Cross-Domain-Policies": "none",
+        "Referrer-Policy": "strict-origin-when-cross-origin",
+        "ETag": "W/\"99a4ef824aad73a9925711b6cb437e25\"",
+        "Cache-Control": "max-age=0, private, must-revalidate",
+        "X-Request-Id": "a97e443e-38c0-40ef-aa0d-0a7dded505f9",
+        "X-Runtime": "0.004780",
+        "Set-Cookie": "_portal_production_session=62fa91ad1e6928b1d9547a35a12ad428; path=/; expires=Thu, 16 Jul 2026 17:34:53 GMT; HttpOnly",
+        "Content-Length": "12941",
+        "Connection": "close"
+      },
+      "mime": "text/html"
+    },
+    "body": {
+      "bytes": 12941,
+      "sha256": "99a4ef824aad73a9925711b6cb437e255728ff54ca2b8ea17064e61569c02f7c",
+      "path_externo": "C:\\Users\\rafae\\.codex\\automations\\monitor-portal-rjc-tributario\\evidencias\\2026-07-16-prova-material\\fontes-institucionais\\tentativa-2\\bodies\\GO_ASSEMBLEIA_LEGISLATIVA-99a4ef824aad73a9925711b6cb437e255728ff54ca2b8ea17064e61569c02f7c.bin"
+    },
+    "result": "CAPTURADA_PENDENTE_DE_LEITURA_E_REFETCH",
+    "publication_authorization": "NAO"
+  },
+  {
+    "receipt_id": "local-GO_DOE-20260716T170452294728Z",
+    "receipt_class": "LOCAL_REPRODUCIBLE_NOT_PLATFORM_NATIVE",
+    "source_id": "GO::DOE",
+    "captured_at": "2026-07-16T17:04:52.294728Z",
+    "request": {
+      "url": "https://www.diariooficial.abc.go.gov.br/",
+      "method": "GET",
+      "headers": {
+        "Accept": "text/html,application/xhtml+xml,application/pdf,application/json;q=0.9,*/*;q=0.1",
+        "User-Agent": "RJC-Portal-Proof-Research/1.0 (anonymous, no-cookie)"
+      },
+      "cookies": "none"
+    },
+    "redirect_chain": [],
+    "response": {
+      "url_final": "https://www.diariooficial.abc.go.gov.br/",
+      "status": 200,
+      "headers": {
+        "Date": "Thu, 16 Jul 2026 17:04:53 GMT",
+        "Set-Cookie": "TS01f53d74=01c51a2261511d39c161e89cf541e0570ef21c41611eed58a8b5413630cd73d7b5cbf5b26a549df89a7a10c0071cb7bae96fe93bba; Path=/; Domain=.www.diariooficial.abc.go.gov.br",
+        "Content-Length": "17281",
+        "Vary": "Accept-Encoding",
+        "Access-Control-Allow-Origin": "*",
+        "Content-Type": "text/html; charset=UTF-8",
+        "Connection": "close",
+        "BackendRespTime": "235",
+        "RespTime": "235"
+      },
+      "mime": "text/html"
+    },
+    "body": {
+      "bytes": 17281,
+      "sha256": "e79412ae872ee9e6c2db86e8187055b4399f88287e832180906bbd698fb29240",
+      "path_externo": "C:\\Users\\rafae\\.codex\\automations\\monitor-portal-rjc-tributario\\evidencias\\2026-07-16-prova-material\\fontes-institucionais\\tentativa-2\\bodies\\GO_DOE-e79412ae872ee9e6c2db86e8187055b4399f88287e832180906bbd698fb29240.bin"
+    },
+    "result": "CAPTURADA_PENDENTE_DE_LEITURA_E_REFETCH",
+    "publication_authorization": "NAO"
+  },
+  {
+    "receipt_id": "local-GO_SEFAZ_LEGISLACAO-20260716T170452244674Z",
+    "receipt_class": "LOCAL_REPRODUCIBLE_NOT_PLATFORM_NATIVE",
+    "source_id": "GO::SEFAZ_LEGISLACAO",
+    "captured_at": "2026-07-16T17:04:52.244674Z",
+    "request": {
+      "url": "https://goias.gov.br/economia/legislacao-tributaria/",
+      "method": "GET",
+      "headers": {
+        "Accept": "text/html,application/xhtml+xml,application/pdf,application/json;q=0.9,*/*;q=0.1",
+        "User-Agent": "RJC-Portal-Proof-Research/1.0 (anonymous, no-cookie)"
+      },
+      "cookies": "none"
+    },
+    "redirect_chain": [],
+    "response": {
+      "url_final": "https://goias.gov.br/economia/legislacao-tributaria/",
+      "status": 200,
+      "headers": {
+        "Date": "Thu, 16 Jul 2026 17:04:52 GMT",
+        "Link": "<https://goias.gov.br/economia/wp-json/>; rel=\"https://api.w.org/\", <https://goias.gov.br/economia/wp-json/wp/v2/posts/33941>; rel=\"alternate\"; title=\"JSON\"; type=\"application/json\", <https://goias.gov.br/economia/?p=33941>; rel=shortlink",
+        "Strict-Transport-Security": "max-age=7889400; includeSubDomains",
+        "X-Frame-Options": "SAMEORIGIN",
+        "X-Content-Type-Options": "nosniff",
+        "Last-Modified": "Thu, 16 Jul 2026 16:16:48 GMT",
+        "ETag": "\"4aa4ffde1dd2ec8ab54ab99b7c33a6fa\"",
+        "Vary": "Accept-Encoding",
+        "Referrer-Policy": "no-referrer-when-downgrade",
+        "Content-Type": "text/html; charset=UTF-8",
+        "Connection": "close",
+        "BackendRespTime": "16",
+        "RespTime": "17",
+        "Set-Cookie": "TS01d7ce91=01365759336edd8d07f8023bb7e04dfb9f44a4ca969221acf95e60e2387ee0083df97cb17b69c8a49a81b85a9b9f02a3436298e601; Path=/; Domain=.goias.gov.br",
+        "Transfer-Encoding": "chunked"
+      },
+      "mime": "text/html"
+    },
+    "body": {
+      "bytes": 171403,
+      "sha256": "af9af645a5e03dcdf8de5fefe8b274ba0cab22d54366c727c0609df40e5cf37a",
+      "path_externo": "C:\\Users\\rafae\\.codex\\automations\\monitor-portal-rjc-tributario\\evidencias\\2026-07-16-prova-material\\fontes-institucionais\\tentativa-2\\bodies\\GO_SEFAZ_LEGISLACAO-af9af645a5e03dcdf8de5fefe8b274ba0cab22d54366c727c0609df40e5cf37a.bin"
+    },
+    "result": "CAPTURADA_PENDENTE_DE_LEITURA_E_REFETCH",
+    "publication_authorization": "NAO"
+  },
+  {
+    "receipt_id": "local-MA_ASSEMBLEIA_LEGISLATIVA-20260716T170452532963Z",
+    "receipt_class": "LOCAL_REPRODUCIBLE_NOT_PLATFORM_NATIVE",
+    "source_id": "MA::ASSEMBLEIA_LEGISLATIVA",
+    "captured_at": "2026-07-16T17:04:52.532963Z",
+    "request": {
+      "url": "https://www.al.ma.leg.br/",
+      "method": "GET",
+      "headers": {
+        "Accept": "text/html,application/xhtml+xml,application/pdf,application/json;q=0.9,*/*;q=0.1",
+        "User-Agent": "RJC-Portal-Proof-Research/1.0 (anonymous, no-cookie)"
+      },
+      "cookies": "none"
+    },
+    "redirect_chain": [
+      {
+        "from_url": "https://www.al.ma.leg.br/",
+        "to_url": "https://www.al.ma.leg.br/sitealema",
+        "status": 301,
+        "location": "https://www.al.ma.leg.br/sitealema"
+      },
+      {
+        "from_url": "https://www.al.ma.leg.br/sitealema",
+        "to_url": "https://www.al.ma.leg.br/sitealema/",
+        "status": 301,
+        "location": "https://www.al.ma.leg.br/sitealema/"
+      }
+    ],
+    "response": {
+      "url_final": "https://www.al.ma.leg.br/sitealema/",
+      "status": 200,
+      "headers": {
+        "Server": "openresty",
+        "Date": "Thu, 16 Jul 2026 17:04:54 GMT",
+        "Content-Type": "text/html; charset=UTF-8",
+        "Transfer-Encoding": "chunked",
+        "Connection": "close",
+        "X-Powered-By": "PHP/8.3.29",
+        "Link": "<https://www.al.ma.leg.br/sitealema/wp-json/>; rel=\"https://api.w.org/\", <https://www.al.ma.leg.br/sitealema/wp-json/wp/v2/pages/11>; rel=\"alternate\"; title=\"JSON\"; type=\"application/json\", <https://www.al.ma.leg.br/sitealema/>; rel=shortlink",
+        "X-Served-By": "www.al.ma.leg.br"
+      },
+      "mime": "text/html"
+    },
+    "body": {
+      "bytes": 144789,
+      "sha256": "9e4dc78394306f79909118683b088fa9294bbe5127173dd7a69c68c42293f59f",
+      "path_externo": "C:\\Users\\rafae\\.codex\\automations\\monitor-portal-rjc-tributario\\evidencias\\2026-07-16-prova-material\\fontes-institucionais\\tentativa-2\\bodies\\MA_ASSEMBLEIA_LEGISLATIVA-9e4dc78394306f79909118683b088fa9294bbe5127173dd7a69c68c42293f59f.bin"
+    },
+    "result": "CAPTURADA_PENDENTE_DE_LEITURA_E_REFETCH",
+    "publication_authorization": "NAO"
+  },
+  {
+    "receipt_id": "local-MA_DOE-20260716T170452464822Z",
+    "receipt_class": "LOCAL_REPRODUCIBLE_NOT_PLATFORM_NATIVE",
+    "source_id": "MA::DOE",
+    "captured_at": "2026-07-16T17:04:52.464822Z",
+    "request": {
+      "url": "https://www.diariooficial.ma.gov.br/",
+      "method": "GET",
+      "headers": {
+        "Accept": "text/html,application/xhtml+xml,application/pdf,application/json;q=0.9,*/*;q=0.1",
+        "User-Agent": "RJC-Portal-Proof-Research/1.0 (anonymous, no-cookie)"
+      },
+      "cookies": "none"
+    },
+    "redirect_chain": [],
+    "response": {
+      "url_final": "https://www.diariooficial.ma.gov.br/",
+      "status": 200,
+      "headers": {
+        "Date": "Thu, 16 Jul 2026 17:04:53 GMT",
+        "Server": "Apache",
+        "Access-Control-Allow-Methods": "GET, POST",
+        "Access-Control-Allow-Headers": "Content-Type, Authorization",
+        "Access-Control-Max-Age": "86400",
+        "Vary": "Accept-Encoding",
+        "Connection": "close",
+        "Transfer-Encoding": "chunked",
+        "Content-Type": "text/html; charset=UTF-8"
+      },
+      "mime": "text/html"
+    },
+    "body": {
+      "bytes": 26137,
+      "sha256": "44cf8304930789c9a8ee564d2f7d840f4b22b2312942041721b2511a28b62345",
+      "path_externo": "C:\\Users\\rafae\\.codex\\automations\\monitor-portal-rjc-tributario\\evidencias\\2026-07-16-prova-material\\fontes-institucionais\\tentativa-2\\bodies\\MA_DOE-44cf8304930789c9a8ee564d2f7d840f4b22b2312942041721b2511a28b62345.bin"
+    },
+    "result": "CAPTURADA_PENDENTE_DE_LEITURA_E_REFETCH",
+    "publication_authorization": "NAO"
+  },
+  {
+    "receipt_id": "local-MA_SEFAZ_LEGISLACAO-20260716T170452414013Z",
+    "receipt_class": "LOCAL_REPRODUCIBLE_NOT_PLATFORM_NATIVE",
+    "source_id": "MA::SEFAZ_LEGISLACAO",
+    "captured_at": "2026-07-16T17:04:52.414013Z",
+    "request": {
+      "url": "https://sistemas1.sefaz.ma.gov.br/portalsefaz/jsp/pagina/pagina.jsf?codigo=95",
+      "method": "GET",
+      "headers": {
+        "Accept": "text/html,application/xhtml+xml,application/pdf,application/json;q=0.9,*/*;q=0.1",
+        "User-Agent": "RJC-Portal-Proof-Research/1.0 (anonymous, no-cookie)"
+      },
+      "cookies": "none"
+    },
+    "redirect_chain": [],
+    "response": {
+      "url_final": "https://sistemas1.sefaz.ma.gov.br/portalsefaz/jsp/pagina/pagina.jsf?codigo=95",
+      "status": 200,
+      "headers": {
+        "Date": "Thu, 16 Jul 2026 17:05:40 GMT",
+        "Server": "Apache-Coyote/1.1",
+        "X-Powered-By": "JSF/1.2",
+        "Content-Type": "text/html;charset=ISO-8859-1",
+        "Set-Cookie": "JSESSIONID=A5BEC5FACCB9A295D8009BFFB7F9CADB; Path=/",
+        "Vary": "Accept-Encoding,User-Agent",
+        "X-XSS-Protection": "1; mode=block",
+        "Connection": "close",
+        "Transfer-Encoding": "chunked"
+      },
+      "mime": "text/html"
+    },
+    "body": {
+      "bytes": 73728,
+      "sha256": "b7dd372c096584e2154684e311a6d8bca638c95771048fd81393a1c98204126c",
+      "path_externo": "C:\\Users\\rafae\\.codex\\automations\\monitor-portal-rjc-tributario\\evidencias\\2026-07-16-prova-material\\fontes-institucionais\\tentativa-2\\bodies\\MA_SEFAZ_LEGISLACAO-b7dd372c096584e2154684e311a6d8bca638c95771048fd81393a1c98204126c.bin"
+    },
+    "result": "CAPTURADA_PENDENTE_DE_LEITURA_E_REFETCH",
+    "publication_authorization": "NAO"
+  },
+  {
+    "receipt_id": "local-MG_ASSEMBLEIA_LEGISLATIVA-20260716T170452671854Z",
+    "receipt_class": "LOCAL_REPRODUCIBLE_NOT_PLATFORM_NATIVE",
+    "source_id": "MG::ASSEMBLEIA_LEGISLATIVA",
+    "captured_at": "2026-07-16T17:04:52.671854Z",
+    "request": {
+      "url": "https://www.almg.gov.br/atividade-parlamentar/leis/legislacao-mineira",
+      "method": "GET",
+      "headers": {
+        "Accept": "text/html,application/xhtml+xml,application/pdf,application/json;q=0.9,*/*;q=0.1",
+        "User-Agent": "RJC-Portal-Proof-Research/1.0 (anonymous, no-cookie)"
+      },
+      "cookies": "none"
+    },
+    "redirect_chain": [],
+    "response": {
+      "url_final": "https://www.almg.gov.br/atividade-parlamentar/leis/legislacao-mineira",
+      "status": 200,
+      "headers": {
+        "Date": "Thu, 16 Jul 2026 17:04:53 GMT",
+        "Server": "Apache",
+        "X-Frame-Options": "SAMEORIGIN",
+        "Content-Type": "text/html;charset=UTF-8",
+        "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+        "Last-Modified": "Thu, 16 Jul 2026 17:04:53 GMT",
+        "Accept-Ranges": "bytes",
+        "Set-Cookie": "PORTAL_SESSIONID=9AF4D584E115940C74F74E90D51716B6.worker2; Path=/; Secure; HttpOnly",
+        "Vary": "Accept-Encoding",
+        "Connection": "close",
+        "Transfer-Encoding": "chunked"
+      },
+      "mime": "text/html"
+    },
+    "body": {
+      "bytes": 159713,
+      "sha256": "6c6c06ccb9bb2e73fe8ac30b6bd3de43189eb524e783d1921bbfa6272df2e610",
+      "path_externo": "C:\\Users\\rafae\\.codex\\automations\\monitor-portal-rjc-tributario\\evidencias\\2026-07-16-prova-material\\fontes-institucionais\\tentativa-2\\bodies\\MG_ASSEMBLEIA_LEGISLATIVA-6c6c06ccb9bb2e73fe8ac30b6bd3de43189eb524e783d1921bbfa6272df2e610.bin"
+    },
+    "result": "CAPTURADA_PENDENTE_DE_LEITURA_E_REFETCH",
+    "publication_authorization": "NAO"
+  },
+  {
+    "receipt_id": "local-MG_DOE-20260716T170452626780Z",
+    "receipt_class": "LOCAL_REPRODUCIBLE_NOT_PLATFORM_NATIVE",
+    "source_id": "MG::DOE",
+    "captured_at": "2026-07-16T17:04:52.626780Z",
+    "request": {
+      "url": "https://www.jornalminasgerais.mg.gov.br/",
+      "method": "GET",
+      "headers": {
+        "Accept": "text/html,application/xhtml+xml,application/pdf,application/json;q=0.9,*/*;q=0.1",
+        "User-Agent": "RJC-Portal-Proof-Research/1.0 (anonymous, no-cookie)"
+      },
+      "cookies": "none"
+    },
+    "redirect_chain": [],
+    "response": {
+      "url_final": "https://www.jornalminasgerais.mg.gov.br/",
+      "status": 200,
+      "headers": {
+        "Date": "Thu, 16 Jul 2026 17:05:35 GMT",
+        "Server": "openresty",
+        "Content-Type": "text/html; charset=UTF-8",
+        "Content-Length": "27709",
+        "Last-Modified": "Thu, 18 Jun 2026 18:16:40 GMT",
+        "ETag": "\"6a343608-6c3d\"",
+        "Accept-Ranges": "bytes",
+        "X-Served-By": "www.jornalminasgerais.mg.gov.br",
+        "Connection": "close"
+      },
+      "mime": "text/html"
+    },
+    "body": {
+      "bytes": 27709,
+      "sha256": "11c26416be582b0506cd71063e4b8e4145f7e6cf63940f690bc575c73f4c5dbe",
+      "path_externo": "C:\\Users\\rafae\\.codex\\automations\\monitor-portal-rjc-tributario\\evidencias\\2026-07-16-prova-material\\fontes-institucionais\\tentativa-2\\bodies\\MG_DOE-11c26416be582b0506cd71063e4b8e4145f7e6cf63940f690bc575c73f4c5dbe.bin"
+    },
+    "result": "CAPTURADA_PENDENTE_DE_LEITURA_E_REFETCH",
+    "publication_authorization": "NAO"
+  },
+  {
+    "receipt_id": "local-MG_SEFAZ_LEGISLACAO-20260716T170452569335Z",
+    "receipt_class": "LOCAL_REPRODUCIBLE_NOT_PLATFORM_NATIVE",
+    "source_id": "MG::SEFAZ_LEGISLACAO",
+    "captured_at": "2026-07-16T17:04:52.569335Z",
+    "request": {
+      "url": "https://www.fazenda.mg.gov.br/empresas/legislacao_tributaria/",
+      "method": "GET",
+      "headers": {
+        "Accept": "text/html,application/xhtml+xml,application/pdf,application/json;q=0.9,*/*;q=0.1",
+        "User-Agent": "RJC-Portal-Proof-Research/1.0 (anonymous, no-cookie)"
+      },
+      "cookies": "none"
+    },
+    "redirect_chain": [],
+    "response": {
+      "url_final": "https://www.fazenda.mg.gov.br/empresas/legislacao_tributaria/",
+      "status": 200,
+      "headers": {
+        "Set-Cookie": "TS01d01dd2=0121e28f0e4ecec5f785ea81732a8c88781a16ad288c38b6382b61561d8cbfeb49fbe920d1b5778208604396ebf1162e239312aafd32cb9fea50cc50d8f399c7f251ceccb7; Path=/; Domain=.www.fazenda.mg.gov.br",
+        "Last-Modified": "Thu, 16 Jul 2026 17:01:57 GMT",
+        "Cache-Control": "public, max-age=0",
+        "Content-Type": "text/html;charset=UTF-8",
+        "Content-Length": "39722",
+        "Date": "Thu, 16 Jul 2026 17:01:57 GMT",
+        "Connection": "close"
+      },
+      "mime": "text/html"
+    },
+    "body": {
+      "bytes": 39722,
+      "sha256": "dbcefa941c5d2d9372850081a91a6a8a6ad086c8d3e708be4ed576feb24b6313",
+      "path_externo": "C:\\Users\\rafae\\.codex\\automations\\monitor-portal-rjc-tributario\\evidencias\\2026-07-16-prova-material\\fontes-institucionais\\tentativa-2\\bodies\\MG_SEFAZ_LEGISLACAO-dbcefa941c5d2d9372850081a91a6a8a6ad086c8d3e708be4ed576feb24b6313.bin"
+    },
+    "result": "CAPTURADA_PENDENTE_DE_LEITURA_E_REFETCH",
+    "publication_authorization": "NAO"
+  },
+  {
+    "receipt_id": "local-MS_ASSEMBLEIA_LEGISLATIVA-20260716T170452833717Z",
+    "receipt_class": "LOCAL_REPRODUCIBLE_NOT_PLATFORM_NATIVE",
+    "source_id": "MS::ASSEMBLEIA_LEGISLATIVA",
+    "captured_at": "2026-07-16T17:04:52.833717Z",
+    "request": {
+      "url": "https://al.ms.gov.br/",
+      "method": "GET",
+      "headers": {
+        "Accept": "text/html,application/xhtml+xml,application/pdf,application/json;q=0.9,*/*;q=0.1",
+        "User-Agent": "RJC-Portal-Proof-Research/1.0 (anonymous, no-cookie)"
+      },
+      "cookies": "none"
+    },
+    "redirect_chain": [],
+    "response": {
+      "url_final": "https://al.ms.gov.br/",
+      "status": 200,
+      "headers": {
+        "Server": "openresty",
+        "Date": "Thu, 16 Jul 2026 17:04:53 GMT",
+        "Content-Type": "text/html; charset=utf-8",
+        "Transfer-Encoding": "chunked",
+        "Connection": "close",
+        "Cache-Control": "no-cache, no-store",
+        "Pragma": "no-cache",
+        "Set-Cookie": ".AspNetCore.Antiforgery.D3rQlalE-X0=CfDJ8IJ_8Mevjh5MiMe_SMsyc6hdFzlUJAMzHON43HMS_LOYY6kYWXbf7tnB1nZAFSFc1EIKJ1-tY_maC3dogbrEwAtQu9tQFpME3pbMy1yTGtDJTjo8Wr6r0yciCWCJzOUHw-7ZQCJnyuKU7vV70vmVieA; path=/; samesite=strict; httponly",
+        "X-Frame-Options": "SAMEORIGIN",
+        "X-Powered-By": "ASP.NET",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "GET, OPTIONS",
+        "Access-Control-Allow-Headers": "Origin, Accept, Content-Type",
+        "Access-Control-Allow-Credentials": "true",
+        "X-Served-By": "al.ms.gov.br"
+      },
+      "mime": "text/html"
+    },
+    "body": {
+      "bytes": 72463,
+      "sha256": "f7436d65862cae581e5c3fe11319bdb741a718aedd8d49af23cee5ca567be063",
+      "path_externo": "C:\\Users\\rafae\\.codex\\automations\\monitor-portal-rjc-tributario\\evidencias\\2026-07-16-prova-material\\fontes-institucionais\\tentativa-2\\bodies\\MS_ASSEMBLEIA_LEGISLATIVA-f7436d65862cae581e5c3fe11319bdb741a718aedd8d49af23cee5ca567be063.bin"
+    },
+    "result": "CAPTURADA_PENDENTE_DE_LEITURA_E_REFETCH",
+    "publication_authorization": "NAO"
+  },
+  {
+    "receipt_id": "local-MS_DOE-20260716T170452833717Z",
+    "receipt_class": "LOCAL_REPRODUCIBLE_NOT_PLATFORM_NATIVE",
+    "source_id": "MS::DOE",
+    "captured_at": "2026-07-16T17:04:52.833717Z",
+    "request": {
+      "url": "https://www.spdo.ms.gov.br/DiarioDOE/Index/Index/",
+      "method": "GET",
+      "headers": {
+        "Accept": "text/html,application/xhtml+xml,application/pdf,application/json;q=0.9,*/*;q=0.1",
+        "User-Agent": "RJC-Portal-Proof-Research/1.0 (anonymous, no-cookie)"
+      },
+      "cookies": "none"
+    },
+    "redirect_chain": [],
+    "response": {
+      "url_final": "https://www.spdo.ms.gov.br/DiarioDOE/Index/Index/",
+      "status": 200,
+      "headers": {
+        "Cache-Control": "private",
+        "Content-Type": "text/html; charset=utf-8",
+        "Server": "Microsoft-IIS/8.5",
+        "X-AspNetMvc-Version": "5.2",
+        "X-AspNet-Version": "4.0.30319",
+        "X-Powered-By": "ASP.NET",
+        "Date": "Thu, 16 Jul 2026 17:04:53 GMT",
+        "Content-Length": "39542",
+        "Connection": "close",
+        "Set-Cookie": "AppPersist=!Mc8fuMK2MVurizs0Go/BC0FeKaKhxt+rbLXvQDXKloWinB3EoNmLTJ7SKGmXP2fOgXuSsNNPD9EN6g==; path=/; Httponly; Secure",
+        "Vary": "Accept-Encoding"
+      },
+      "mime": "text/html"
+    },
+    "body": {
+      "bytes": 39542,
+      "sha256": "329e9ecbb726cefd83350c71f3fa80e8a95f002461f6f0c1be9571dd1083033a",
+      "path_externo": "C:\\Users\\rafae\\.codex\\automations\\monitor-portal-rjc-tributario\\evidencias\\2026-07-16-prova-material\\fontes-institucionais\\tentativa-2\\bodies\\MS_DOE-329e9ecbb726cefd83350c71f3fa80e8a95f002461f6f0c1be9571dd1083033a.bin"
+    },
+    "result": "CAPTURADA_PENDENTE_DE_LEITURA_E_REFETCH",
+    "publication_authorization": "NAO"
+  },
+  {
+    "receipt_id": "local-MS_SEFAZ_LEGISLACAO-20260716T170452814646Z",
+    "receipt_class": "LOCAL_REPRODUCIBLE_NOT_PLATFORM_NATIVE",
+    "source_id": "MS::SEFAZ_LEGISLACAO",
+    "captured_at": "2026-07-16T17:04:52.814646Z",
+    "request": {
+      "url": "https://www.sefaz.ms.gov.br/legislacao/",
+      "method": "GET",
+      "headers": {
+        "Accept": "text/html,application/xhtml+xml,application/pdf,application/json;q=0.9,*/*;q=0.1",
+        "User-Agent": "RJC-Portal-Proof-Research/1.0 (anonymous, no-cookie)"
+      },
+      "cookies": "none"
+    },
+    "redirect_chain": [],
+    "response": {
+      "url_final": "https://www.sefaz.ms.gov.br/legislacao/",
+      "status": 200,
+      "headers": {
+        "Content-Type": "text/html; charset=UTF-8",
+        "Date": "Thu, 16 Jul 2026 17:04:53 GMT",
+        "Link": "<https://www.sefaz.ms.gov.br/?p=11561>; rel=shortlink",
+        "Server": "nginx",
+        "Vary": "Accept-Encoding",
+        "X-Powered-By": "PHP/8.3.15",
+        "Transfer-Encoding": "chunked",
+        "Connection": "close"
+      },
+      "mime": "text/html"
+    },
+    "body": {
+      "bytes": 248806,
+      "sha256": "7d2c729281c469c79f561b330023d29e10945044747d049a43cc52c84387e1c6",
+      "path_externo": "C:\\Users\\rafae\\.codex\\automations\\monitor-portal-rjc-tributario\\evidencias\\2026-07-16-prova-material\\fontes-institucionais\\tentativa-2\\bodies\\MS_SEFAZ_LEGISLACAO-7d2c729281c469c79f561b330023d29e10945044747d049a43cc52c84387e1c6.bin"
+    },
+    "result": "CAPTURADA_PENDENTE_DE_LEITURA_E_REFETCH",
+    "publication_authorization": "NAO"
+  },
+  {
+    "receipt_id": "local-MT_ASSEMBLEIA_LEGISLATIVA-20260716T170453101607Z",
+    "receipt_class": "LOCAL_REPRODUCIBLE_NOT_PLATFORM_NATIVE",
+    "source_id": "MT::ASSEMBLEIA_LEGISLATIVA",
+    "captured_at": "2026-07-16T17:04:53.101607Z",
+    "request": {
+      "url": "https://diariooficial.al.mt.gov.br/",
+      "method": "GET",
+      "headers": {
+        "Accept": "text/html,application/xhtml+xml,application/pdf,application/json;q=0.9,*/*;q=0.1",
+        "User-Agent": "RJC-Portal-Proof-Research/1.0 (anonymous, no-cookie)"
+      },
+      "cookies": "none"
+    },
+    "redirect_chain": [],
+    "response": {
+      "url_final": "https://diariooficial.al.mt.gov.br/",
+      "status": 200,
+      "headers": {
+        "Content-Type": "text/html; charset=utf-8",
+        "Date": "Thu, 16 Jul 2026 17:04:59 GMT",
+        "Server": "nginx/1.10.1",
+        "X-Frame-Options": "SAMEORIGIN",
+        "Connection": "close",
+        "Transfer-Encoding": "chunked"
+      },
+      "mime": "text/html"
+    },
+    "body": {
+      "bytes": 10304,
+      "sha256": "5ec12e0b70455895d269de6c91daad9e36254f8667240d815d8f36d5fe55b234",
+      "path_externo": "C:\\Users\\rafae\\.codex\\automations\\monitor-portal-rjc-tributario\\evidencias\\2026-07-16-prova-material\\fontes-institucionais\\tentativa-2\\bodies\\MT_ASSEMBLEIA_LEGISLATIVA-5ec12e0b70455895d269de6c91daad9e36254f8667240d815d8f36d5fe55b234.bin"
+    },
+    "result": "CAPTURADA_PENDENTE_DE_LEITURA_E_REFETCH",
+    "publication_authorization": "NAO"
+  },
+  {
+    "receipt_id": "local-MT_DOE-20260716T170453042529Z",
+    "receipt_class": "LOCAL_REPRODUCIBLE_NOT_PLATFORM_NATIVE",
+    "source_id": "MT::DOE",
+    "captured_at": "2026-07-16T17:04:53.042529Z",
+    "request": {
+      "url": "https://www.iomat.mt.gov.br/",
+      "method": "GET",
+      "headers": {
+        "Accept": "text/html,application/xhtml+xml,application/pdf,application/json;q=0.9,*/*;q=0.1",
+        "User-Agent": "RJC-Portal-Proof-Research/1.0 (anonymous, no-cookie)"
+      },
+      "cookies": "none"
+    },
+    "redirect_chain": [],
+    "response": {
+      "url_final": "https://www.iomat.mt.gov.br/",
+      "status": 200,
+      "headers": {
+        "Date": "Thu, 16 Jul 2026 17:04:53 GMT",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "X-Content-Type-Options": "nosniff",
+        "Referrer-Policy": "strict-origin-when-cross-origin",
+        "Permissions-Policy": "geolocation=(), microphone=(), camera=()",
+        "Set-Cookie": "TS0139fcff=010837eae7d56517db2706b9f176fe723afebb5a4ab83c7a48f287c5112d887f89f3e3b73669fc64363bd3ecdcc31cc21ae3ff801f13bc6156ff37e25f2dbc9161bb22ecbb1052b7cb05d9bad071e39fd80360a101; Path=/",
+        "Content-Length": "33966",
+        "Vary": "Accept-Encoding",
+        "Access-Control-Allow-Origin": "*",
+        "Connection": "close",
+        "Content-Type": "text/html; charset=UTF-8"
+      },
+      "mime": "text/html"
+    },
+    "body": {
+      "bytes": 33966,
+      "sha256": "e3a6eb7a349644138898f7d302ea81401572a30f80043baeb7b9c62200fd24a8",
+      "path_externo": "C:\\Users\\rafae\\.codex\\automations\\monitor-portal-rjc-tributario\\evidencias\\2026-07-16-prova-material\\fontes-institucionais\\tentativa-2\\bodies\\MT_DOE-e3a6eb7a349644138898f7d302ea81401572a30f80043baeb7b9c62200fd24a8.bin"
+    },
+    "result": "CAPTURADA_PENDENTE_DE_LEITURA_E_REFETCH",
+    "publication_authorization": "NAO"
+  },
+  {
+    "receipt_id": "local-MT_SEFAZ_LEGISLACAO-20260716T170452970711Z",
+    "receipt_class": "LOCAL_REPRODUCIBLE_NOT_PLATFORM_NATIVE",
+    "source_id": "MT::SEFAZ_LEGISLACAO",
+    "captured_at": "2026-07-16T17:04:52.970711Z",
+    "request": {
+      "url": "https://app1.sefaz.mt.gov.br/Sistema/legislacao/legislacaotribut.nsf/",
+      "method": "GET",
+      "headers": {
+        "Accept": "text/html,application/xhtml+xml,application/pdf,application/json;q=0.9,*/*;q=0.1",
+        "User-Agent": "RJC-Portal-Proof-Research/1.0 (anonymous, no-cookie)"
+      },
+      "cookies": "none"
+    },
+    "redirect_chain": [],
+    "response": {
+      "url_final": "https://app1.sefaz.mt.gov.br/Sistema/legislacao/legislacaotribut.nsf/",
+      "status": 200,
+      "headers": {
+        "Date": "Thu, 16 Jul 2026 17:04:55 GMT",
+        "Connection": "close",
+        "Last-Modified": "Thu, 16 Jul 2026 16:03:35 GMT",
+        "Content-Type": "text/html; charset=US-ASCII",
+        "Content-Length": "794",
+        "Cache-control": "private",
+        "ETag": "W/\"MTAtODA4NS0wMzI1OEQ2MzAwMkIyRENCLTAtMA==\"",
+        "Set-Cookie": "TS01990c39=016fd53c32919153ddcbe2438dda646cc3ae18de866d9668e1537dc47a728c123b829e9f4f02ef2c32b61862518cdf27fb05e1e7303c3a35de8f7f346fd2b677372e593c4f; Path=/"
+      },
+      "mime": "text/html"
+    },
+    "body": {
+      "bytes": 794,
+      "sha256": "17fba42b543b20ca8227f3dbfe9896bb0cd1750c7587833643e69f3e6efbf03a",
+      "path_externo": "C:\\Users\\rafae\\.codex\\automations\\monitor-portal-rjc-tributario\\evidencias\\2026-07-16-prova-material\\fontes-institucionais\\tentativa-2\\bodies\\MT_SEFAZ_LEGISLACAO-17fba42b543b20ca8227f3dbfe9896bb0cd1750c7587833643e69f3e6efbf03a.bin"
+    },
+    "result": "CAPTURADA_PENDENTE_DE_LEITURA_E_REFETCH",
+    "publication_authorization": "NAO"
+  },
+  {
+    "receipt_id": "local-PA_ASSEMBLEIA_LEGISLATIVA-20260716T170453407045Z",
+    "receipt_class": "LOCAL_REPRODUCIBLE_NOT_PLATFORM_NATIVE",
+    "source_id": "PA::ASSEMBLEIA_LEGISLATIVA",
+    "captured_at": "2026-07-16T17:04:53.407045Z",
+    "request": {
+      "url": "https://www.alepa.pa.gov.br/",
+      "method": "GET",
+      "headers": {
+        "Accept": "text/html,application/xhtml+xml,application/pdf,application/json;q=0.9,*/*;q=0.1",
+        "User-Agent": "RJC-Portal-Proof-Research/1.0 (anonymous, no-cookie)"
+      },
+      "cookies": "none"
+    },
+    "redirect_chain": [],
+    "response": {
+      "url_final": "https://www.alepa.pa.gov.br/",
+      "status": 200,
+      "headers": {
+        "Cache-Control": "private",
+        "Content-Type": "text/html; charset=utf-8",
+        "Server": "Microsoft-IIS/10.0",
+        "Set-Cookie": "ASP.NET_SessionId=wu1y4scc3vvlukh5gcq1mjum; path=/; HttpOnly; SameSite=Lax",
+        "X-AspNetMvc-Version": "5.2",
+        "X-AspNet-Version": "4.0.30319",
+        "X-Powered-By": "ASP.NET",
+        "Date": "Thu, 16 Jul 2026 17:04:54 GMT",
+        "Connection": "close",
+        "Content-Length": "162688"
+      },
+      "mime": "text/html"
+    },
+    "body": {
+      "bytes": 162688,
+      "sha256": "d2beb83573b73631aa25be106d399e39c6072e41c647b181822e83f2c046e2d6",
+      "path_externo": "C:\\Users\\rafae\\.codex\\automations\\monitor-portal-rjc-tributario\\evidencias\\2026-07-16-prova-material\\fontes-institucionais\\tentativa-2\\bodies\\PA_ASSEMBLEIA_LEGISLATIVA-d2beb83573b73631aa25be106d399e39c6072e41c647b181822e83f2c046e2d6.bin"
+    },
+    "result": "CAPTURADA_PENDENTE_DE_LEITURA_E_REFETCH",
+    "publication_authorization": "NAO"
+  },
+  {
+    "receipt_id": "local-PA_DOE-20260716T170453260249Z",
+    "receipt_class": "LOCAL_REPRODUCIBLE_NOT_PLATFORM_NATIVE",
+    "source_id": "PA::DOE",
+    "captured_at": "2026-07-16T17:04:53.260249Z",
+    "request": {
+      "url": "http://www.ioepa.com.br/pesquisa",
+      "method": "GET",
+      "headers": {
+        "Accept": "text/html,application/xhtml+xml,application/pdf,application/json;q=0.9,*/*;q=0.1",
+        "User-Agent": "RJC-Portal-Proof-Research/1.0 (anonymous, no-cookie)"
+      },
+      "cookies": "none"
+    },
+    "redirect_chain": [],
+    "response": {
+      "url_final": "http://www.ioepa.com.br/pesquisa",
+      "status": 200,
+      "headers": {
+        "Date": "Thu, 16 Jul 2026 17:04:53 GMT",
+        "Content-Type": "text/html; charset=utf-8",
+        "Transfer-Encoding": "chunked",
+        "Connection": "close",
+        "Cache-Control": "private",
+        "Nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+        "Vary": "Accept-Encoding",
+        "Server": "cloudflare",
+        "X-Aspnetmvc-Version": "5.2",
+        "X-Aspnet-Version": "4.0.30319",
+        "X-Powered-By": "ASP.NET",
+        "Cf-Cache-Status": "DYNAMIC",
+        "Server-Timing": "cfEdge;dur=17,cfOrigin;dur=63",
+        "Report-To": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=ynOCoMfW90rRPta4ydidRUyUJLVl%2FgSdlEwG1uxtCV%2FnpoQCBc73hZUcgCGdMLsCieo6DzzsVrr6uzB0NtZX3w7GU%2Bc4tX%2FT74rsysKFX755dfTP9gQYYQmV1KTlPE%2FMWsPb\"}]}",
+        "CF-RAY": "a1c296b0ab953fbe-GYN",
+        "alt-svc": "h3=\":443\"; ma=86400"
+      },
+      "mime": "text/html"
+    },
+    "body": {
+      "bytes": 3820,
+      "sha256": "e18bf992f97ae9562c9384407ecf507507e2a0c3ca67a897a56ccb9fc7428553",
+      "path_externo": "C:\\Users\\rafae\\.codex\\automations\\monitor-portal-rjc-tributario\\evidencias\\2026-07-16-prova-material\\fontes-institucionais\\tentativa-2\\bodies\\PA_DOE-e18bf992f97ae9562c9384407ecf507507e2a0c3ca67a897a56ccb9fc7428553.bin"
+    },
+    "result": "CAPTURADA_PENDENTE_DE_LEITURA_E_REFETCH",
+    "publication_authorization": "NAO"
+  },
+  {
+    "receipt_id": "local-PA_SEFAZ_LEGISLACAO-20260716T170453147713Z",
+    "receipt_class": "LOCAL_REPRODUCIBLE_NOT_PLATFORM_NATIVE",
+    "source_id": "PA::SEFAZ_LEGISLACAO",
+    "captured_at": "2026-07-16T17:04:53.147713Z",
+    "request": {
+      "url": "https://www.sistemas.pa.gov.br/sisleis/legislacao/",
+      "method": "GET",
+      "headers": {
+        "Accept": "text/html,application/xhtml+xml,application/pdf,application/json;q=0.9,*/*;q=0.1",
+        "User-Agent": "RJC-Portal-Proof-Research/1.0 (anonymous, no-cookie)"
+      },
+      "cookies": "none"
+    },
+    "redirect_chain": [],
+    "response": {
+      "url_final": "https://www.sistemas.pa.gov.br/sisleis/legislacao/",
+      "status": 200,
+      "headers": {
+        "server": "Apache-Coyote/1.1",
+        "access-control-allow-origin": "*",
+        "access-control-allow-methods": "POST, GET",
+        "access-control-allow-headers": "Content-Type, Accept, X-Requested-With",
+        "content-type": "text/html",
+        "content-length": "589",
+        "date": "Thu, 16 Jul 2026 17:04:53 GMT",
+        "connection": "close"
+      },
+      "mime": ""
+    },
+    "body": {
+      "bytes": 589,
+      "sha256": "ff1a349989c085cbf79ed2b5d5f42aa8dfbad0a9184055d5d4c2306085708e32",
+      "path_externo": "C:\\Users\\rafae\\.codex\\automations\\monitor-portal-rjc-tributario\\evidencias\\2026-07-16-prova-material\\fontes-institucionais\\tentativa-2\\bodies\\PA_SEFAZ_LEGISLACAO-ff1a349989c085cbf79ed2b5d5f42aa8dfbad0a9184055d5d4c2306085708e32.bin"
+    },
+    "result": "CAPTURADA_PENDENTE_DE_LEITURA_E_REFETCH",
+    "publication_authorization": "NAO"
+  },
+  {
+    "receipt_id": "local-PB_ASSEMBLEIA_LEGISLATIVA-20260716T170453444623Z",
+    "receipt_class": "LOCAL_REPRODUCIBLE_NOT_PLATFORM_NATIVE",
+    "source_id": "PB::ASSEMBLEIA_LEGISLATIVA",
+    "captured_at": "2026-07-16T17:04:53.444623Z",
+    "request": {
+      "url": "https://www.al.pb.leg.br/",
+      "method": "GET",
+      "headers": {
+        "Accept": "text/html,application/xhtml+xml,application/pdf,application/json;q=0.9,*/*;q=0.1",
+        "User-Agent": "RJC-Portal-Proof-Research/1.0 (anonymous, no-cookie)"
+      },
+      "cookies": "none"
+    },
+    "redirect_chain": [],
+    "response": {
+      "url_final": "https://www.al.pb.leg.br/",
+      "status": 200,
+      "headers": {
+        "Server": "nginx",
+        "Date": "Thu, 16 Jul 2026 17:04:57 GMT",
+        "Content-Type": "text/html; charset=UTF-8",
+        "Transfer-Encoding": "chunked",
+        "Connection": "close",
+        "Vary": "Accept-Encoding",
+        "Set-Cookie": "PHPSESSID=ilh2sgpb8elpd4b311jha18cjr; expires=Fri, 17-Jul-2026 17:04:54 GMT; Max-Age=86400; path=/",
+        "Expires": "Thu, 19 Nov 1981 08:52:00 GMT",
+        "Cache-Control": "no-store, no-cache, must-revalidate",
+        "Pragma": "no-cache",
+        "Link": "<https://www.al.pb.leg.br/wp-json/>; rel=\"https://api.w.org/\""
+      },
+      "mime": "text/html"
+    },
+    "body": {
+      "bytes": 150468,
+      "sha256": "29da560a529aaa14605c6d7a3132ba64beb159df039cf767ba8f6c1481bd0164",
+      "path_externo": "C:\\Users\\rafae\\.codex\\automations\\monitor-portal-rjc-tributario\\evidencias\\2026-07-16-prova-material\\fontes-institucionais\\tentativa-2\\bodies\\PB_ASSEMBLEIA_LEGISLATIVA-29da560a529aaa14605c6d7a3132ba64beb159df039cf767ba8f6c1481bd0164.bin"
+    },
+    "result": "CAPTURADA_PENDENTE_DE_LEITURA_E_REFETCH",
+    "publication_authorization": "NAO"
+  },
+  {
+    "receipt_id": "local-PB_DOE-20260716T170453444623Z",
+    "receipt_class": "LOCAL_REPRODUCIBLE_NOT_PLATFORM_NATIVE",
+    "source_id": "PB::DOE",
+    "captured_at": "2026-07-16T17:04:53.443119Z",
+    "request": {
+      "url": "https://auniao.pb.gov.br/servicos/doe",
+      "method": "GET",
+      "headers": {
+        "Accept": "text/html,application/xhtml+xml,application/pdf,application/json;q=0.9,*/*;q=0.1",
+        "User-Agent": "RJC-Portal-Proof-Research/1.0 (anonymous, no-cookie)"
+      },
+      "cookies": "none"
+    },
+    "redirect_chain": [],
+    "response": {
+      "url_final": "https://auniao.pb.gov.br/servicos/doe",
+      "status": 200,
+      "headers": {
+        "Server": "openresty",
+        "Date": "Thu, 16 Jul 2026 17:04:54 GMT",
+        "Content-Type": "text/html;charset=utf-8",
+        "Content-Length": "124606",
+        "Connection": "close",
+        "content-language": "pt-br",
+        "x-ua-compatible": "IE=edge,chrome=1",
+        "x-frame-options": "SAMEORIGIN",
+        "X-Varnish": "274068027 278300625",
+        "Age": "195",
+        "Via": "1.1 varnish (Varnish/5.2)",
+        "X-Cache": "HIT",
+        "X-Cache-Hits": "4",
+        "X-Varnish-Server": "Codata-Varnish",
+        "Accept-Ranges": "bytes",
+        "X-Served-By": "auniao.pb.gov.br"
+      },
+      "mime": "text/html"
+    },
+    "body": {
+      "bytes": 124606,
+      "sha256": "73caf9639e30280ef67bb0ad0cc6a1d07fbb0d9f787b899c0ed224f99d108440",
+      "path_externo": "C:\\Users\\rafae\\.codex\\automations\\monitor-portal-rjc-tributario\\evidencias\\2026-07-16-prova-material\\fontes-institucionais\\tentativa-2\\bodies\\PB_DOE-73caf9639e30280ef67bb0ad0cc6a1d07fbb0d9f787b899c0ed224f99d108440.bin"
+    },
+    "result": "CAPTURADA_PENDENTE_DE_LEITURA_E_REFETCH",
+    "publication_authorization": "NAO"
+  },
+  {
+    "receipt_id": "local-PB_SEFAZ_LEGISLACAO-20260716T170453426601Z",
+    "receipt_class": "LOCAL_REPRODUCIBLE_NOT_PLATFORM_NATIVE",
+    "source_id": "PB::SEFAZ_LEGISLACAO",
+    "captured_at": "2026-07-16T17:04:53.426601Z",
+    "request": {
+      "url": "https://www.sefaz.pb.gov.br/legislacao",
+      "method": "GET",
+      "headers": {
+        "Accept": "text/html,application/xhtml+xml,application/pdf,application/json;q=0.9,*/*;q=0.1",
+        "User-Agent": "RJC-Portal-Proof-Research/1.0 (anonymous, no-cookie)"
+      },
+      "cookies": "none"
+    },
+    "redirect_chain": [],
+    "response": {
+      "url_final": "https://www.sefaz.pb.gov.br/legislacao",
+      "status": 200,
+      "headers": {
+        "Date": "Thu, 16 Jul 2026 17:04:54 GMT",
+        "Server": "Apache",
+        "Strict-Transport-Security": "max-age=63072000; includeSubDomains",
+        "Content-Security-Policy": "",
+        "X-Content-Type-Options": "nosniff",
+        "Referrer-Policy": "strict-origin",
+        "Permissions-Policy": "geolocation=(),midi=(),sync-xhr=(),microphone=(),camera=(),magnetometer=(),gyroscope=(),fullscreen=(self),payment=()",
+        "Set-Cookie": "cookiesession1=678A3E388B23A2CBA79C00DD6A377021;Expires=Fri, 16 Jul 2027 17:04:58 GMT;Path=/;HttpOnly",
+        "P3P": "CP=\"NOI ADM DEV PSAi COM NAV OUR OTRo STP IND DEM\"",
+        "Expires": "Wed, 17 Aug 2005 00:00:00 GMT",
+        "Last-Modified": "Thu, 16 Jul 2026 17:04:58 GMT",
+        "Cache-Control": "no-store, no-cache, must-revalidate, post-check=0, pre-check=0",
+        "Pragma": "no-cache",
+        "Vary": "Accept-Encoding",
+        "X-XSS-Protection": "1; mode=block",
+        "X-FRAME-OPTIONS": "SAMEORIGIN",
+        "Connection": "close",
+        "Content-Type": "text/html; charset=utf-8",
+        "content-length": "105649"
+      },
+      "mime": "text/html"
+    },
+    "body": {
+      "bytes": 105649,
+      "sha256": "201dd704e5f8c33e1296cd2adf1c7cf654790d98693a6df54f2d84169e06bcc2",
+      "path_externo": "C:\\Users\\rafae\\.codex\\automations\\monitor-portal-rjc-tributario\\evidencias\\2026-07-16-prova-material\\fontes-institucionais\\tentativa-2\\bodies\\PB_SEFAZ_LEGISLACAO-201dd704e5f8c33e1296cd2adf1c7cf654790d98693a6df54f2d84169e06bcc2.bin"
+    },
+    "result": "CAPTURADA_PENDENTE_DE_LEITURA_E_REFETCH",
+    "publication_authorization": "NAO"
+  },
+  {
+    "receipt_id": "local-PE_ASSEMBLEIA_LEGISLATIVA-20260716T170453518005Z",
+    "receipt_class": "LOCAL_REPRODUCIBLE_NOT_PLATFORM_NATIVE",
+    "source_id": "PE::ASSEMBLEIA_LEGISLATIVA",
+    "captured_at": "2026-07-16T17:04:53.518005Z",
+    "request": {
+      "url": "https://www.alepe.pe.gov.br/",
+      "method": "GET",
+      "headers": {
+        "Accept": "text/html,application/xhtml+xml,application/pdf,application/json;q=0.9,*/*;q=0.1",
+        "User-Agent": "RJC-Portal-Proof-Research/1.0 (anonymous, no-cookie)"
+      },
+      "cookies": "none"
+    },
+    "redirect_chain": [],
+    "response": {
+      "url_final": "https://www.alepe.pe.gov.br/",
+      "status": 200,
+      "headers": {
+        "Date": "Thu, 16 Jul 2026 17:04:55 GMT",
+        "Server": "Apache/2.4.65 (Win64) OpenSSL/3.5.1",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "Upgrade": "h2",
+        "Connection": "Upgrade, close",
+        "X-LiteSpeed-Tag": "131_HTTP.200",
+        "Link": "<https://www.alepe.pe.gov.br/wp-json/>; rel=\"https://api.w.org/\"",
+        "Transfer-Encoding": "chunked",
+        "Content-Type": "text/html; charset=UTF-8"
+      },
+      "mime": "text/html"
+    },
+    "body": {
+      "bytes": 116185,
+      "sha256": "ab584f83fd17380be96af0bf52228db714ee55b419a8365cdc1e589154cac3d9",
+      "path_externo": "C:\\Users\\rafae\\.codex\\automations\\monitor-portal-rjc-tributario\\evidencias\\2026-07-16-prova-material\\fontes-institucionais\\tentativa-2\\bodies\\PE_ASSEMBLEIA_LEGISLATIVA-ab584f83fd17380be96af0bf52228db714ee55b419a8365cdc1e589154cac3d9.bin"
+    },
+    "result": "CAPTURADA_PENDENTE_DE_LEITURA_E_REFETCH",
+    "publication_authorization": "NAO"
+  },
+  {
+    "receipt_id": "local-PE_DOE-20260716T170453497957Z",
+    "receipt_class": "LOCAL_REPRODUCIBLE_NOT_PLATFORM_NATIVE",
+    "source_id": "PE::DOE",
+    "captured_at": "2026-07-16T17:04:53.497957Z",
+    "request": {
+      "url": "https://www.cepe.com.br/diario-oficial",
+      "method": "GET",
+      "headers": {
+        "Accept": "text/html,application/xhtml+xml,application/pdf,application/json;q=0.9,*/*;q=0.1",
+        "User-Agent": "RJC-Portal-Proof-Research/1.0 (anonymous, no-cookie)"
+      },
+      "cookies": "none"
+    },
+    "redirect_chain": [],
+    "response": {
+      "url_final": "https://www.cepe.com.br/diario-oficial",
+      "status": 200,
+      "headers": {
+        "Content-Type": "text/html; charset=utf-8",
+        "Transfer-Encoding": "chunked",
+        "Connection": "close",
+        "Date": "Thu, 16 Jul 2026 17:04:54 GMT",
+        "x-powered-by": "Next.js",
+        "Cache-Control": "private, no-cache, no-store, max-age=0, must-revalidate",
+        "Vary": "Accept-Encoding",
+        "X-Cache": "Miss from cloudfront",
+        "Via": "1.1 ba4ab412b1deeae23ff138b73bbe555a.cloudfront.net (CloudFront)",
+        "X-Amz-Cf-Pop": "GIG51-P3",
+        "Alt-Svc": "h3=\":443\"; ma=86400",
+        "X-Amz-Cf-Id": "Rg_Qpdz7cVYAQ1U6qLvQrDVLUSJWutODDa34EA45k98wgCc99MjYPQ=="
+      },
+      "mime": "text/html"
+    },
+    "body": {
+      "bytes": 1419322,
+      "sha256": "f9d6bc63d12d1b4c96d934b4fedefb2f1cc04343ee3fdc8f3bb6a8de4a657520",
+      "path_externo": "C:\\Users\\rafae\\.codex\\automations\\monitor-portal-rjc-tributario\\evidencias\\2026-07-16-prova-material\\fontes-institucionais\\tentativa-2\\bodies\\PE_DOE-f9d6bc63d12d1b4c96d934b4fedefb2f1cc04343ee3fdc8f3bb6a8de4a657520.bin"
+    },
+    "result": "CAPTURADA_PENDENTE_DE_LEITURA_E_REFETCH",
+    "publication_authorization": "NAO"
+  },
+  {
+    "receipt_id": "local-PE_SEFAZ_LEGISLACAO-20260716T170453477932Z",
+    "receipt_class": "LOCAL_REPRODUCIBLE_NOT_PLATFORM_NATIVE",
+    "source_id": "PE::SEFAZ_LEGISLACAO",
+    "captured_at": "2026-07-16T17:04:53.477932Z",
+    "request": {
+      "url": "https://www.sefaz.pe.gov.br/Legislacao/",
+      "method": "GET",
+      "headers": {
+        "Accept": "text/html,application/xhtml+xml,application/pdf,application/json;q=0.9,*/*;q=0.1",
+        "User-Agent": "RJC-Portal-Proof-Research/1.0 (anonymous, no-cookie)"
+      },
+      "cookies": "none"
+    },
+    "redirect_chain": [
+      {
+        "from_url": "https://www.sefaz.pe.gov.br/Legislacao/",
+        "to_url": "https://www.sefaz.pe.gov.br/Legislacao/Paginas/default.aspx",
+        "status": 302,
+        "location": "https://www.sefaz.pe.gov.br/Legislacao/Paginas/default.aspx"
+      }
+    ],
+    "response": {
+      "url_final": "https://www.sefaz.pe.gov.br/Legislacao/Paginas/default.aspx",
+      "status": 200,
+      "headers": {
+        "Cache-Control": "private, max-age=0",
+        "Content-Type": "text/html; charset=utf-8",
+        "Expires": "Wed, 01 Jul 2026 17:04:54 GMT",
+        "Last-Modified": "Thu, 16 Jul 2026 17:04:54 GMT",
+        "Server": "Microsoft-IIS/10.0",
+        "X-SharePointHealthScore": "0",
+        "X-AspNet-Version": "4.0.30319",
+        "SPRequestGuid": "04e127a2-7b53-90a1-28fc-7eaa7a82615e",
+        "request-id": "04e127a2-7b53-90a1-28fc-7eaa7a82615e",
+        "X-FRAME-OPTIONS": "SAMEORIGIN",
+        "Content-Security-Policy": "frame-ancestors 'self' teams.microsoft.com *.teams.microsoft.com *.skype.com *.teams.microsoft.us local.teams.office.com *.powerapps.com *.yammer.com *.officeapps.live.com *.office.com *.stream.azure-test.net *.microsoftstream.com *.dynamics.com *.microsoft.com onedrive.live.com *.onedrive.live.com;",
+        "SPRequestDuration": "304",
+        "SPIisLatency": "1",
+        "X-Powered-By": "ASP.NET",
+        "MicrosoftSharePointTeamServices": "16.0.0.18526",
+        "X-Content-Type-Options": "nosniff",
+        "X-MS-InvokeApp": "1; RequireReadOnly",
+        "Date": "Thu, 16 Jul 2026 17:04:54 GMT",
+        "Connection": "close",
+        "Content-Length": "278595"
+      },
+      "mime": "text/html"
+    },
+    "body": {
+      "bytes": 278595,
+      "sha256": "5ecc09abd438f8303ecb1b123985eb75b92901d59402c748e1a825a8fb2fd5c8",
+      "path_externo": "C:\\Users\\rafae\\.codex\\automations\\monitor-portal-rjc-tributario\\evidencias\\2026-07-16-prova-material\\fontes-institucionais\\tentativa-2\\bodies\\PE_SEFAZ_LEGISLACAO-5ecc09abd438f8303ecb1b123985eb75b92901d59402c748e1a825a8fb2fd5c8.bin"
+    },
+    "result": "CAPTURADA_PENDENTE_DE_LEITURA_E_REFETCH",
+    "publication_authorization": "NAO"
+  },
+  {
+    "receipt_id": "local-PI_ASSEMBLEIA_LEGISLATIVA-20260716T170454219151Z",
+    "receipt_class": "LOCAL_REPRODUCIBLE_NOT_PLATFORM_NATIVE",
+    "source_id": "PI::ASSEMBLEIA_LEGISLATIVA",
+    "captured_at": "2026-07-16T17:04:54.219151Z",
+    "request": {
+      "url": "https://www.al.pi.leg.br/",
+      "method": "GET",
+      "headers": {
+        "Accept": "text/html,application/xhtml+xml,application/pdf,application/json;q=0.9,*/*;q=0.1",
+        "User-Agent": "RJC-Portal-Proof-Research/1.0 (anonymous, no-cookie)"
+      },
+      "cookies": "none"
+    },
+    "redirect_chain": [],
+    "response": {
+      "url_final": "https://www.al.pi.leg.br/",
+      "status": 200,
+      "headers": {
+        "date": "Thu, 16 Jul 2026 17:04:54 GMT",
+        "content-type": "text/html;charset=utf-8",
+        "content-length": "12346",
+        "x-cache-operation": "plone.app.caching.weakCaching",
+        "content-language": "pt-br",
+        "content-encoding": "gzip",
+        "expires": "Mon, 18 Jul 2016 17:03:09 GMT",
+        "vary": "Accept-Encoding",
+        "etag": "\"||970579|pt-br|1|Sunburst Theme|0|1783016319.51\"",
+        "x-ua-compatible": "IE=edge,chrome=1",
+        "cache-control": "max-age=0, must-revalidate, private",
+        "x-cache-rule": "plone.content.itemView",
+        "x-frame-options": "SAMEORIGIN",
+        "strict-transport-security": "max-age=31536000; includeSubDomains",
+        "x-cache-status": "HIT",
+        "x-envoy-upstream-service-time": "54",
+        "x-volterra-location": "sp4-sao",
+        "server": "volt-adc",
+        "connection": "close"
+      },
+      "mime": ""
+    },
+    "body": {
+      "bytes": 12346,
+      "sha256": "a5c5f8c2b01ee13a58257e5607ecd6778e56d46081c11e401df4ef2cd358fc50",
+      "path_externo": "C:\\Users\\rafae\\.codex\\automations\\monitor-portal-rjc-tributario\\evidencias\\2026-07-16-prova-material\\fontes-institucionais\\tentativa-2\\bodies\\PI_ASSEMBLEIA_LEGISLATIVA-a5c5f8c2b01ee13a58257e5607ecd6778e56d46081c11e401df4ef2cd358fc50.bin"
+    },
+    "result": "CAPTURADA_PENDENTE_DE_LEITURA_E_REFETCH",
+    "publication_authorization": "NAO"
+  },
+  {
+    "receipt_id": "local-PI_DOE-20260716T170454039168Z",
+    "receipt_class": "LOCAL_REPRODUCIBLE_NOT_PLATFORM_NATIVE",
+    "source_id": "PI::DOE",
+    "captured_at": "2026-07-16T17:04:54.039168Z",
+    "request": {
+      "url": "https://www.diario.pi.gov.br/doe/",
+      "method": "GET",
+      "headers": {
+        "Accept": "text/html,application/xhtml+xml,application/pdf,application/json;q=0.9,*/*;q=0.1",
+        "User-Agent": "RJC-Portal-Proof-Research/1.0 (anonymous, no-cookie)"
+      },
+      "cookies": "none"
+    },
+    "redirect_chain": [],
+    "response": {
+      "url_final": "https://www.diario.pi.gov.br/doe/",
+      "status": 200,
+      "headers": {
+        "date": "Thu, 16 Jul 2026 17:04:54 GMT",
+        "server": "Apache/2.4.37 (Oracle Linux)",
+        "x-powered-by": "PHP/7.4.30",
+        "transfer-encoding": "chunked",
+        "content-type": "text/html; charset=UTF-8",
+        "strict-transport-security": "max-age=31536000; includeSubDomains; preload",
+        "connection": "close"
+      },
+      "mime": ""
+    },
+    "body": {
+      "bytes": 336525,
+      "sha256": "0095b782be75c215f5dfa08447e8f802a12506379fa28850b5fe9aff845d4308",
+      "path_externo": "C:\\Users\\rafae\\.codex\\automations\\monitor-portal-rjc-tributario\\evidencias\\2026-07-16-prova-material\\fontes-institucionais\\tentativa-2\\bodies\\PI_DOE-0095b782be75c215f5dfa08447e8f802a12506379fa28850b5fe9aff845d4308.bin"
+    },
+    "result": "CAPTURADA_PENDENTE_DE_LEITURA_E_REFETCH",
+    "publication_authorization": "NAO"
+  },
+  {
+    "receipt_id": "local-PI_SEFAZ_LEGISLACAO-20260716T170453654764Z",
+    "receipt_class": "LOCAL_REPRODUCIBLE_NOT_PLATFORM_NATIVE",
+    "source_id": "PI::SEFAZ_LEGISLACAO",
+    "captured_at": "2026-07-16T17:04:53.654764Z",
+    "request": {
+      "url": "https://portal.sefaz.pi.gov.br/legislacao/",
+      "method": "GET",
+      "headers": {
+        "Accept": "text/html,application/xhtml+xml,application/pdf,application/json;q=0.9,*/*;q=0.1",
+        "User-Agent": "RJC-Portal-Proof-Research/1.0 (anonymous, no-cookie)"
+      },
+      "cookies": "none"
+    },
+    "redirect_chain": [],
+    "response": {
+      "url_final": "https://portal.sefaz.pi.gov.br/legislacao/",
+      "status": 200,
+      "headers": {
+        "Date": "Thu, 16 Jul 2026 17:04:54 GMT",
+        "Content-Type": "text/html;charset=utf-8",
+        "Connection": "close",
+        "cache-control": "no-cache",
+        "expires": "Thu, 01 Jan 1970 00:00:00 GMT",
+        "accept-ranges": "bytes",
+        "content-disposition": "inline",
+        "access-control-allow-methods": "*",
+        "access-control-max-age": "86400",
+        "x-one-concurrent-actions": "10",
+        "x-one-request-id": "rdz7qj:om6jsj",
+        "content-security-policy": "frame-ancestors 'self' https://portal.sefaz.pi.gov.br https://portal-atendimento.sefaz.pi.gov.br;",
+        "x-xss-protection": "1; mode=block",
+        "permissions-policy": "*",
+        "referrer-policy": "no-referrer-when-downgrade",
+        "x-content-type-options": "nosniff",
+        "access-control-allow-origin": "https://servicedesk-dev.sydle.com",
+        "x-one-request-duration": "163",
+        "vary": "accept-encoding",
+        "X-Azion-Request-Id": "742ab2c0ac2d2331bac7e691a5aeb162",
+        "X-Azion-Edge-Location": "CGH",
+        "X-Version": "20260612-0906",
+        "content-length": "21352",
+        "Set-Cookie": "az_botm=742ab2c0ac2d2331bac7e691a5aeb162; Domain=portal.sefaz.pi.gov.br; Path=/; Max-Age=86400; Secure; HttpOnly; SameSite=Lax"
+      },
+      "mime": "text/html"
+    },
+    "body": {
+      "bytes": 21352,
+      "sha256": "05322bcf58d49675e1cbd27ca3bf263c79ee4b205f553387bcef059655173d86",
+      "path_externo": "C:\\Users\\rafae\\.codex\\automations\\monitor-portal-rjc-tributario\\evidencias\\2026-07-16-prova-material\\fontes-institucionais\\tentativa-2\\bodies\\PI_SEFAZ_LEGISLACAO-05322bcf58d49675e1cbd27ca3bf263c79ee4b205f553387bcef059655173d86.bin"
+    },
+    "result": "CAPTURADA_PENDENTE_DE_LEITURA_E_REFETCH",
+    "publication_authorization": "NAO"
+  },
+  {
+    "receipt_id": "local-PR_ASSEMBLEIA_LEGISLATIVA-20260716T170454555268Z",
+    "receipt_class": "LOCAL_REPRODUCIBLE_NOT_PLATFORM_NATIVE",
+    "source_id": "PR::ASSEMBLEIA_LEGISLATIVA",
+    "captured_at": "2026-07-16T17:04:54.555268Z",
+    "request": {
+      "url": "https://consultas.assembleia.pr.leg.br/",
+      "method": "GET",
+      "headers": {
+        "Accept": "text/html,application/xhtml+xml,application/pdf,application/json;q=0.9,*/*;q=0.1",
+        "User-Agent": "RJC-Portal-Proof-Research/1.0 (anonymous, no-cookie)"
+      },
+      "cookies": "none"
+    },
+    "redirect_chain": [],
+    "response": {
+      "url_final": "https://consultas.assembleia.pr.leg.br/",
+      "status": 200,
+      "headers": {
+        "Date": "Thu, 16 Jul 2026 17:04:55 GMT",
+        "Server": "Apache",
+        "Content-Encoding": "identity",
+        "Expires": "0",
+        "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+        "X-XSS-Protection": "1; mode=block",
+        "Pragma": "no-cache",
+        "Accept-Ranges": "bytes",
+        "Last-Modified": "Fri, 03 Jul 2026 17:14:30 GMT",
+        "X-Content-Type-Options": "nosniff",
+        "Content-Length": "4215",
+        "Content-Type": "text/html;charset=utf-8",
+        "Content-Language": "en-US",
+        "Via": "1.1 consultas.assembleia.pr.leg.br",
+        "Vary": "Accept-Encoding",
+        "Connection": "close"
+      },
+      "mime": "text/html"
+    },
+    "body": {
+      "bytes": 4215,
+      "sha256": "f52a82a514f787418f40efde8faae0490453022c1e7eab8a93df4863c0ab1c22",
+      "path_externo": "C:\\Users\\rafae\\.codex\\automations\\monitor-portal-rjc-tributario\\evidencias\\2026-07-16-prova-material\\fontes-institucionais\\tentativa-2\\bodies\\PR_ASSEMBLEIA_LEGISLATIVA-f52a82a514f787418f40efde8faae0490453022c1e7eab8a93df4863c0ab1c22.bin"
+    },
+    "result": "CAPTURADA_PENDENTE_DE_LEITURA_E_REFETCH",
+    "publication_authorization": "NAO"
+  },
+  {
+    "receipt_id": "local-PR_DOE-20260716T170454260917Z",
+    "receipt_class": "LOCAL_REPRODUCIBLE_NOT_PLATFORM_NATIVE",
+    "source_id": "PR::DOE",
+    "captured_at": "2026-07-16T17:04:54.260917Z",
+    "request": {
+      "url": "https://dioe.pr.gov.br/portal/pages/display",
+      "method": "GET",
+      "headers": {
+        "Accept": "text/html,application/xhtml+xml,application/pdf,application/json;q=0.9,*/*;q=0.1",
+        "User-Agent": "RJC-Portal-Proof-Research/1.0 (anonymous, no-cookie)"
+      },
+      "cookies": "none"
+    },
+    "redirect_chain": [],
+    "response": {
+      "url_final": "https://dioe.pr.gov.br/portal/pages/display",
+      "status": 200,
+      "headers": {
+        "date": "Thu, 16 Jul 2026 17:04:54 GMT",
+        "server": "Apache/2.4.52 (Ubuntu)",
+        "set-cookie": "CAKEPHP=crete786r8s1sft14o26jf37i0; expires=Thu, 16-Jul-2026 23:04:55 GMT; Max-Age=21600; path=/; HttpOnly",
+        "content-length": "27825",
+        "vary": "Accept-Encoding",
+        "access-control-allow-origin": "*",
+        "content-type": "text/html; charset=UTF-8",
+        "connection": "close"
+      },
+      "mime": ""
+    },
+    "body": {
+      "bytes": 27825,
+      "sha256": "c04cb8d2a9e815b0d17c99d5f019bc4579684bc725590b5c2a5419b826cb7b1b",
+      "path_externo": "C:\\Users\\rafae\\.codex\\automations\\monitor-portal-rjc-tributario\\evidencias\\2026-07-16-prova-material\\fontes-institucionais\\tentativa-2\\bodies\\PR_DOE-c04cb8d2a9e815b0d17c99d5f019bc4579684bc725590b5c2a5419b826cb7b1b.bin"
+    },
+    "result": "CAPTURADA_PENDENTE_DE_LEITURA_E_REFETCH",
+    "publication_authorization": "NAO"
+  },
+  {
+    "receipt_id": "local-PR_SEFAZ_LEGISLACAO-20260716T170454233664Z",
+    "receipt_class": "LOCAL_REPRODUCIBLE_NOT_PLATFORM_NATIVE",
+    "source_id": "PR::SEFAZ_LEGISLACAO",
+    "captured_at": "2026-07-16T17:04:54.233664Z",
+    "request": {
+      "url": "https://www.legislacao.pr.gov.br/legislacao/pesquisarAto.do?action=iniciarProcesso",
+      "method": "GET",
+      "headers": {
+        "Accept": "text/html,application/xhtml+xml,application/pdf,application/json;q=0.9,*/*;q=0.1",
+        "User-Agent": "RJC-Portal-Proof-Research/1.0 (anonymous, no-cookie)"
+      },
+      "cookies": "none"
+    },
+    "redirect_chain": [],
+    "response": {
+      "url_final": "https://www.legislacao.pr.gov.br/legislacao/pesquisarAto.do?action=iniciarProcesso",
+      "status": 200,
+      "headers": {
+        "Date": "Thu, 16 Jul 2026 17:04:54 GMT",
+        "Server": "WildFly/11",
+        "X-Powered-By": "JSP/2.3",
+        "Set-Cookie": "JSESSIONID=32HSG9cImRfahBSJ7yHAMdDL8CPdhKDsujj0PbfY.sparana00940; path=/legislacao",
+        "Content-Type": "text/html;charset=UTF-8",
+        "Connection": "close",
+        "Transfer-Encoding": "chunked"
+      },
+      "mime": "text/html"
+    },
+    "body": {
+      "bytes": 39670,
+      "sha256": "94cb07a51771599a523b538c4204973c6c94080aaa445b72916d9cc7e743a5bd",
+      "path_externo": "C:\\Users\\rafae\\.codex\\automations\\monitor-portal-rjc-tributario\\evidencias\\2026-07-16-prova-material\\fontes-institucionais\\tentativa-2\\bodies\\PR_SEFAZ_LEGISLACAO-94cb07a51771599a523b538c4204973c6c94080aaa445b72916d9cc7e743a5bd.bin"
+    },
+    "result": "CAPTURADA_PENDENTE_DE_LEITURA_E_REFETCH",
+    "publication_authorization": "NAO"
+  },
+  {
+    "receipt_id": "local-RJ_ASSEMBLEIA_LEGISLATIVA-20260716T170454759120Z",
+    "receipt_class": "LOCAL_REPRODUCIBLE_NOT_PLATFORM_NATIVE",
+    "source_id": "RJ::ASSEMBLEIA_LEGISLATIVA",
+    "captured_at": "2026-07-16T17:04:54.759120Z",
+    "request": {
+      "url": "https://www3.alerj.rj.gov.br/lotus_notes/default.asp?id=144",
+      "method": "GET",
+      "headers": {
+        "Accept": "text/html,application/xhtml+xml,application/pdf,application/json;q=0.9,*/*;q=0.1",
+        "User-Agent": "RJC-Portal-Proof-Research/1.0 (anonymous, no-cookie)"
+      },
+      "cookies": "none"
+    },
+    "redirect_chain": [],
+    "response": {
+      "url_final": "https://www3.alerj.rj.gov.br/lotus_notes/default.asp?id=144",
+      "status": 200,
+      "headers": {
+        "Cache-Control": "private",
+        "Content-Length": "124094",
+        "Content-Type": "text/html; Charset=utf-8",
+        "Server": "Microsoft-IIS/7.5",
+        "Set-Cookie": "ASPSESSIONIDSWQDRTRA=AOFFEPODMEFDHGINFGOMGBCO; secure; path=/",
+        "X-Powered-By": "ASP.NET",
+        "Date": "Thu, 16 Jul 2026 17:04:54 GMT",
+        "Connection": "close"
+      },
+      "mime": "text/html"
+    },
+    "body": {
+      "bytes": 124094,
+      "sha256": "1c2af620af5866b66ff8b8eaf94adab6d2c689baf3cebd0d8327b4e1b0eb0db3",
+      "path_externo": "C:\\Users\\rafae\\.codex\\automations\\monitor-portal-rjc-tributario\\evidencias\\2026-07-16-prova-material\\fontes-institucionais\\tentativa-2\\bodies\\RJ_ASSEMBLEIA_LEGISLATIVA-1c2af620af5866b66ff8b8eaf94adab6d2c689baf3cebd0d8327b4e1b0eb0db3.bin"
+    },
+    "result": "CAPTURADA_PENDENTE_DE_LEITURA_E_REFETCH",
+    "publication_authorization": "NAO"
+  },
+  {
+    "receipt_id": "local-RJ_DOE-20260716T170454732623Z",
+    "receipt_class": "LOCAL_REPRODUCIBLE_NOT_PLATFORM_NATIVE",
+    "source_id": "RJ::DOE",
+    "captured_at": "2026-07-16T17:04:54.732623Z",
+    "request": {
+      "url": "https://www.ioerj.com.br/",
+      "method": "GET",
+      "headers": {
+        "Accept": "text/html,application/xhtml+xml,application/pdf,application/json;q=0.9,*/*;q=0.1",
+        "User-Agent": "RJC-Portal-Proof-Research/1.0 (anonymous, no-cookie)"
+      },
+      "cookies": "none"
+    },
+    "redirect_chain": [],
+    "response": {},
+    "body": {},
+    "result": "ERRO_DE_REDE",
+    "publication_authorization": "NAO",
+    "error": "URLError: <urlopen error [WinError 10054] Foi forçado o cancelamento de uma conexão existente pelo host remoto>"
+  },
+  {
+    "receipt_id": "local-RJ_SEFAZ_LEGISLACAO-20260716T170454599310Z",
+    "receipt_class": "LOCAL_REPRODUCIBLE_NOT_PLATFORM_NATIVE",
+    "source_id": "RJ::SEFAZ_LEGISLACAO",
+    "captured_at": "2026-07-16T17:04:54.599310Z",
+    "request": {
+      "url": "https://portal.fazenda.rj.gov.br/icms/",
+      "method": "GET",
+      "headers": {
+        "Accept": "text/html,application/xhtml+xml,application/pdf,application/json;q=0.9,*/*;q=0.1",
+        "User-Agent": "RJC-Portal-Proof-Research/1.0 (anonymous, no-cookie)"
+      },
+      "cookies": "none"
+    },
+    "redirect_chain": [],
+    "response": {
+      "url_final": "https://portal.fazenda.rj.gov.br/icms/",
+      "status": 200,
+      "headers": {
+        "date": "Thu, 16 Jul 2026 17:04:55 GMT",
+        "vary": "Accept-Encoding",
+        "content-type": "text/html; charset=UTF-8",
+        "x-envoy-upstream-service-time": "228",
+        "set-cookie": "a1054d11093a18a3dc03fbaa19ff4d61=f940b18539dba58c0b750f5a7feee8bd; path=/; HttpOnly",
+        "connection": "close",
+        "Set-Cookie": "TS01e6357b=0186922275004d9e29cef2e1c580e25bf8f877e7a8ff3fce7aa2f21a69d277e667bd228172213fa19cbadfb965a3eb84b55aaf785300a4e8918ec17773e13f62899cc76945; Path=/",
+        "Transfer-Encoding": "chunked"
+      },
+      "mime": ""
+    },
+    "body": {
+      "bytes": 53573,
+      "sha256": "e3c8c067982dcca7972e7952d0a26df9c108f090a30a42da4cc834c40100b852",
+      "path_externo": "C:\\Users\\rafae\\.codex\\automations\\monitor-portal-rjc-tributario\\evidencias\\2026-07-16-prova-material\\fontes-institucionais\\tentativa-2\\bodies\\RJ_SEFAZ_LEGISLACAO-e3c8c067982dcca7972e7952d0a26df9c108f090a30a42da4cc834c40100b852.bin"
+    },
+    "result": "CAPTURADA_PENDENTE_DE_LEITURA_E_REFETCH",
+    "publication_authorization": "NAO"
+  },
+  {
+    "receipt_id": "local-RN_ASSEMBLEIA_LEGISLATIVA-20260716T170454854600Z",
+    "receipt_class": "LOCAL_REPRODUCIBLE_NOT_PLATFORM_NATIVE",
+    "source_id": "RN::ASSEMBLEIA_LEGISLATIVA",
+    "captured_at": "2026-07-16T17:04:54.854600Z",
+    "request": {
+      "url": "https://www.al.rn.leg.br/",
+      "method": "GET",
+      "headers": {
+        "Accept": "text/html,application/xhtml+xml,application/pdf,application/json;q=0.9,*/*;q=0.1",
+        "User-Agent": "RJC-Portal-Proof-Research/1.0 (anonymous, no-cookie)"
+      },
+      "cookies": "none"
+    },
+    "redirect_chain": [],
+    "response": {
+      "url_final": "https://www.al.rn.leg.br/",
+      "status": 200,
+      "headers": {
+        "Server": "nginx",
+        "Date": "Thu, 16 Jul 2026 17:04:56 GMT",
+        "Content-Type": "text/html; charset=UTF-8",
+        "Transfer-Encoding": "chunked",
+        "Connection": "close",
+        "Cache-Control": "no-cache, private",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "PUT, POST, DELETE, GET, OPTIONS",
+        "Access-Control-Allow-Headers": "Accept, Authorization, Content-Type",
+        "Set-Cookie": "laravel_session=eyJpdiI6Ik1NaFVINzBBc29pQUNac2E4QnJJWWc9PSIsInZhbHVlIjoiKzdpSERjaEZjOGdxeWoxVWZVbUd2SmtmOVlkMXY3dmtHV1wvUG9MRFZcLzhSUjJMQ0pBcTVWbG9rNG1hMEFDYlZoIiwibWFjIjoiMzE5ZjQ1MTMzYzRmY2NjNWFlNDlhMDdhMTRlZDQxZjFhYWRhNjFjNDk0MDk5YWE3MjQwOGE0NTAyNGRmNGNmZiJ9; expires=Thu, 16-Jul-2026 19:04:56 GMT; Max-Age=7200; path=/; httponly",
+        "Content-Security-Policy": "upgrade-insecure-requests"
+      },
+      "mime": "text/html"
+    },
+    "body": {
+      "bytes": 88486,
+      "sha256": "c191e6e028231956b457f0ec0bda35d11e8bd7d5ca9d7767005acad16201ce52",
+      "path_externo": "C:\\Users\\rafae\\.codex\\automations\\monitor-portal-rjc-tributario\\evidencias\\2026-07-16-prova-material\\fontes-institucionais\\tentativa-2\\bodies\\RN_ASSEMBLEIA_LEGISLATIVA-c191e6e028231956b457f0ec0bda35d11e8bd7d5ca9d7767005acad16201ce52.bin"
+    },
+    "result": "CAPTURADA_PENDENTE_DE_LEITURA_E_REFETCH",
+    "publication_authorization": "NAO"
+  },
+  {
+    "receipt_id": "local-RN_DOE-20260716T170454802715Z",
+    "receipt_class": "LOCAL_REPRODUCIBLE_NOT_PLATFORM_NATIVE",
+    "source_id": "RN::DOE",
+    "captured_at": "2026-07-16T17:04:54.802715Z",
+    "request": {
+      "url": "https://diariooficial.rn.gov.br/",
+      "method": "GET",
+      "headers": {
+        "Accept": "text/html,application/xhtml+xml,application/pdf,application/json;q=0.9,*/*;q=0.1",
+        "User-Agent": "RJC-Portal-Proof-Research/1.0 (anonymous, no-cookie)"
+      },
+      "cookies": "none"
+    },
+    "redirect_chain": [],
+    "response": {},
+    "body": {},
+    "result": "ERRO_DE_REDE",
+    "publication_authorization": "NAO",
+    "error": "URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'diariooficial.rn.gov.br'. (_ssl.c:1010)>"
+  },
+  {
+    "receipt_id": "local-RN_SEFAZ_LEGISLACAO-20260716T170454781147Z",
+    "receipt_class": "LOCAL_REPRODUCIBLE_NOT_PLATFORM_NATIVE",
+    "source_id": "RN::SEFAZ_LEGISLACAO",
+    "captured_at": "2026-07-16T17:04:54.781147Z",
+    "request": {
+      "url": "https://www.set.rn.gov.br/contentProducao/aplicacao/set_v2/legislacao/legislacao.asp",
+      "method": "GET",
+      "headers": {
+        "Accept": "text/html,application/xhtml+xml,application/pdf,application/json;q=0.9,*/*;q=0.1",
+        "User-Agent": "RJC-Portal-Proof-Research/1.0 (anonymous, no-cookie)"
+      },
+      "cookies": "none"
+    },
+    "redirect_chain": [],
+    "response": {},
+    "body": {},
+    "result": "ERRO_DE_REDE",
+    "publication_authorization": "NAO",
+    "error": "URLError: <urlopen error timed out>"
+  },
+  {
+    "receipt_id": "local-RO_ASSEMBLEIA_LEGISLATIVA-20260716T170455046913Z",
+    "receipt_class": "LOCAL_REPRODUCIBLE_NOT_PLATFORM_NATIVE",
+    "source_id": "RO::ASSEMBLEIA_LEGISLATIVA",
+    "captured_at": "2026-07-16T17:04:55.046913Z",
+    "request": {
+      "url": "https://www.al.ro.leg.br/",
+      "method": "GET",
+      "headers": {
+        "Accept": "text/html,application/xhtml+xml,application/pdf,application/json;q=0.9,*/*;q=0.1",
+        "User-Agent": "RJC-Portal-Proof-Research/1.0 (anonymous, no-cookie)"
+      },
+      "cookies": "none"
+    },
+    "redirect_chain": [],
+    "response": {
+      "url_final": "https://www.al.ro.leg.br/",
+      "status": 200,
+      "headers": {
+        "Server": "nginx",
+        "Date": "Thu, 16 Jul 2026 17:04:55 GMT",
+        "Content-Type": "text/html; charset=utf-8",
+        "Content-Length": "72809",
+        "Connection": "close",
+        "Referrer-Policy": "same-origin",
+        "Vary": "Cookie, origin",
+        "X-Content-Type-Options": "nosniff",
+        "X-Frame-Options": "SAMEORIGIN",
+        "Strict-Transport-Security": "max-age=17280000; includeSubDomains"
+      },
+      "mime": "text/html"
+    },
+    "body": {
+      "bytes": 72809,
+      "sha256": "535e7b67da257421d9fb63deb7cb5a0c401fc93715805c988af317ea5012e516",
+      "path_externo": "C:\\Users\\rafae\\.codex\\automations\\monitor-portal-rjc-tributario\\evidencias\\2026-07-16-prova-material\\fontes-institucionais\\tentativa-2\\bodies\\RO_ASSEMBLEIA_LEGISLATIVA-535e7b67da257421d9fb63deb7cb5a0c401fc93715805c988af317ea5012e516.bin"
+    },
+    "result": "CAPTURADA_PENDENTE_DE_LEITURA_E_REFETCH",
+    "publication_authorization": "NAO"
+  },
+  {
+    "receipt_id": "local-RO_DOE-20260716T170454996165Z",
+    "receipt_class": "LOCAL_REPRODUCIBLE_NOT_PLATFORM_NATIVE",
+    "source_id": "RO::DOE",
+    "captured_at": "2026-07-16T17:04:54.996165Z",
+    "request": {
+      "url": "https://diof.ro.gov.br/",
+      "method": "GET",
+      "headers": {
+        "Accept": "text/html,application/xhtml+xml,application/pdf,application/json;q=0.9,*/*;q=0.1",
+        "User-Agent": "RJC-Portal-Proof-Research/1.0 (anonymous, no-cookie)"
+      },
+      "cookies": "none"
+    },
+    "redirect_chain": [],
+    "response": {
+      "url_final": "https://diof.ro.gov.br/",
+      "status": 200,
+      "headers": {
+        "Date": "Thu, 16 Jul 2026 17:04:55 GMT",
+        "Pragma": "no-cache",
+        "Expires": "0",
+        "Cache-Control": "max-age=0",
+        "Connection": "Keep-alive, close",
+        "X-UA-Compatible": "IE=edge,chrome=1",
+        "Set-Cookie": "TS01f2a2f5=0112a42b6dbfc670b8e9d631f04731cac6aed59babb2d8100b5ebb8dac6e722c71bfac0c4e15b9d11cc18b611a74e3ae98ef9b4b1a9ada7adac524d7f3b74b20b33b9e4253; Path=/; Domain=.diof.ro.gov.br; ",
+        "Content-Type": "text/html; charset=UTF-8",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "Transfer-Encoding": "chunked"
+      },
+      "mime": "text/html"
+    },
+    "body": {
+      "bytes": 116378,
+      "sha256": "0c899957dd96ff6dfd5af6fc1748e12b08a5f20094b01dc020f7e0ed6b2cff37",
+      "path_externo": "C:\\Users\\rafae\\.codex\\automations\\monitor-portal-rjc-tributario\\evidencias\\2026-07-16-prova-material\\fontes-institucionais\\tentativa-2\\bodies\\RO_DOE-0c899957dd96ff6dfd5af6fc1748e12b08a5f20094b01dc020f7e0ed6b2cff37.bin"
+    },
+    "result": "CAPTURADA_PENDENTE_DE_LEITURA_E_REFETCH",
+    "publication_authorization": "NAO"
+  },
+  {
+    "receipt_id": "local-RO_SEFAZ_LEGISLACAO-20260716T170454886401Z",
+    "receipt_class": "LOCAL_REPRODUCIBLE_NOT_PLATFORM_NATIVE",
+    "source_id": "RO::SEFAZ_LEGISLACAO",
+    "captured_at": "2026-07-16T17:04:54.886401Z",
+    "request": {
+      "url": "https://legislacao.sefin.ro.gov.br/",
+      "method": "GET",
+      "headers": {
+        "Accept": "text/html,application/xhtml+xml,application/pdf,application/json;q=0.9,*/*;q=0.1",
+        "User-Agent": "RJC-Portal-Proof-Research/1.0 (anonymous, no-cookie)"
+      },
+      "cookies": "none"
+    },
+    "redirect_chain": [],
+    "response": {
+      "url_final": "https://legislacao.sefin.ro.gov.br/",
+      "status": 200,
+      "headers": {
+        "Server": "nginx",
+        "Date": "Thu, 16 Jul 2026 17:04:56 GMT",
+        "Content-Type": "text/html; charset=utf-8",
+        "Content-Length": "54292",
+        "Connection": "close",
+        "x-frame-options": "SAMEORIGIN",
+        "x-xss-protection": "0",
+        "x-content-type-options": "nosniff",
+        "x-permitted-cross-domain-policies": "none",
+        "referrer-policy": "strict-origin-when-cross-origin",
+        "link": "</assets/application-d460efaacdca5a82a82ab0c7fe5aec2da0d3ee6be33960d91cd7859277cf35f2.css>; rel=preload; as=style; nopush,<//cdn.sefin.ro.gov.br/assets/cookies_sefin/cookies.css>; rel=preload; as=style; nopush,<//cdn.sefin.ro.gov.br/assets/fontawesome/7.0.1/css/all.min.css>; rel=preload; as=style; nopush,</assets/application-266dc7fed89bdeff0bb4fc4139785e56478307e62bbefe04659eb5f27a4a816c.js>; rel=preload; as=script; nopush,</assets/detail-script-ee9fc3d68ad0c42b8cc849cd734d3d997a4aa1e57a0e537f541d9ca1534d4422.js>; rel=modulepreload; as=script; nopush,</assets/legislacao-script-4bf4e723de376c0f590a35ffddf25ff7491519f2b0f12323dd74a2a0a93458cd.js>; rel=modulepreload; as=script; nopush,</assets/busca-filtro-avancado-8f8c72e3e75807efdbcfdbbc8f3e3ab39ed3371a9070d98d56e43df779329e0b.js>; rel=modulepreload; as=script; nopush,<//cdn.sefin.ro.gov.br/assets/cookies_sefin/cookies.js>; rel=preload; as=script; nopush",
+        "etag": "W/\"d719b4d61b1cb6accd17f141d076bdad\"",
+        "cache-control": "max-age=0, private, must-revalidate",
+        "set-cookie": "_legislacao_rails_session=1Wu8bGqweMLMEB1rma38SQJB8dFkZ7hr%2BP%2Fs%2Bgt4G8M1VAubOnUU4fGkWgAJP4xcbuutnFjbAbCiMoYXT0P518l%2BEzf%2Fgn%2BIZklrcyAk%2BCmece8agj3TtVKizEnufHsVE2HIuogKglp7m%2FcivefgPgedmZG6oGkO4BCBzAb7mxODWHjuDK6NzZij04WBM0PDgx4mY4Nftza7FjT2EYgUqlqgC0NuRiK2x19MIkDtSkiKU%2Bz4TABYxAx9f3BS7AwsdCl8YzbMGxyhdNRyjsFAP4QnK1ncsSL7iaJbR2pTXZbK--aQ4suo8tQzMbWhWX--WWpLWeWTZasL9D4FVgpIBg%3D%3D; path=/; secure; httponly; samesite=lax",
+        "x-request-id": "2fe7491e-6195-4ae6-b470-a4e2963d81e3",
+        "x-runtime": "0.284990",
+        "strict-transport-security": "max-age=63072000; includeSubDomains"
+      },
+      "mime": "text/html"
+    },
+    "body": {
+      "bytes": 54292,
+      "sha256": "d719b4d61b1cb6accd17f141d076bdade1b6404e4db9cc311aebe36293583241",
+      "path_externo": "C:\\Users\\rafae\\.codex\\automations\\monitor-portal-rjc-tributario\\evidencias\\2026-07-16-prova-material\\fontes-institucionais\\tentativa-2\\bodies\\RO_SEFAZ_LEGISLACAO-d719b4d61b1cb6accd17f141d076bdade1b6404e4db9cc311aebe36293583241.bin"
+    },
+    "result": "CAPTURADA_PENDENTE_DE_LEITURA_E_REFETCH",
+    "publication_authorization": "NAO"
+  },
+  {
+    "receipt_id": "local-RR_ASSEMBLEIA_LEGISLATIVA-20260716T170455313690Z",
+    "receipt_class": "LOCAL_REPRODUCIBLE_NOT_PLATFORM_NATIVE",
+    "source_id": "RR::ASSEMBLEIA_LEGISLATIVA",
+    "captured_at": "2026-07-16T17:04:55.313690Z",
+    "request": {
+      "url": "https://al.rr.leg.br/",
+      "method": "GET",
+      "headers": {
+        "Accept": "text/html,application/xhtml+xml,application/pdf,application/json;q=0.9,*/*;q=0.1",
+        "User-Agent": "RJC-Portal-Proof-Research/1.0 (anonymous, no-cookie)"
+      },
+      "cookies": "none"
+    },
+    "redirect_chain": [],
+    "response": {
+      "url_final": "https://al.rr.leg.br/",
+      "status": 200,
+      "headers": {
+        "Server": "nginx",
+        "Date": "Thu, 16 Jul 2026 17:04:58 GMT",
+        "Content-Type": "text/html; charset=UTF-8",
+        "Content-Length": "315517",
+        "Connection": "close",
+        "Vary": "X-Forwarded-Proto,Accept-Encoding",
+        "Last-Modified": "Thu, 16 Jul 2026 16:02:35 GMT",
+        "ETag": "\"4d07d-656bc917e7917\"",
+        "Referrer-Policy": "no-referrer-when-downgrade",
+        "Accept-Ranges": "bytes"
+      },
+      "mime": "text/html"
+    },
+    "body": {
+      "bytes": 315517,
+      "sha256": "1e8df06269a4f968c474e6c21ec1cf9e79b40b7a70e506cff0a7ccc961664f34",
+      "path_externo": "C:\\Users\\rafae\\.codex\\automations\\monitor-portal-rjc-tributario\\evidencias\\2026-07-16-prova-material\\fontes-institucionais\\tentativa-2\\bodies\\RR_ASSEMBLEIA_LEGISLATIVA-1e8df06269a4f968c474e6c21ec1cf9e79b40b7a70e506cff0a7ccc961664f34.bin"
+    },
+    "result": "CAPTURADA_PENDENTE_DE_LEITURA_E_REFETCH",
+    "publication_authorization": "NAO"
+  },
+  {
+    "receipt_id": "local-RR_DOE-20260716T170455266600Z",
+    "receipt_class": "LOCAL_REPRODUCIBLE_NOT_PLATFORM_NATIVE",
+    "source_id": "RR::DOE",
+    "captured_at": "2026-07-16T17:04:55.266600Z",
+    "request": {
+      "url": "https://imprensaoficial.rr.gov.br/",
+      "method": "GET",
+      "headers": {
+        "Accept": "text/html,application/xhtml+xml,application/pdf,application/json;q=0.9,*/*;q=0.1",
+        "User-Agent": "RJC-Portal-Proof-Research/1.0 (anonymous, no-cookie)"
+      },
+      "cookies": "none"
+    },
+    "redirect_chain": [],
+    "response": {
+      "url_final": "https://imprensaoficial.rr.gov.br/",
+      "status": 200,
+      "headers": {
+        "Date": "Thu, 16 Jul 2026 17:04:56 GMT",
+        "Server": "Apache/2.4.38 (Debian)",
+        "Last-Modified": "Mon, 01 Oct 2018 15:00:49 GMT",
+        "ETag": "\"17a-5772c12122a40\"",
+        "Accept-Ranges": "bytes",
+        "Content-Length": "378",
+        "Vary": "Accept-Encoding",
+        "Connection": "close",
+        "Content-Type": "text/html"
+      },
+      "mime": "text/html"
+    },
+    "body": {
+      "bytes": 378,
+      "sha256": "e9567287d591c6ec6386f42f5ae75768af91e389e11762b2f0992ccb9d2f8cf4",
+      "path_externo": "C:\\Users\\rafae\\.codex\\automations\\monitor-portal-rjc-tributario\\evidencias\\2026-07-16-prova-material\\fontes-institucionais\\tentativa-2\\bodies\\RR_DOE-e9567287d591c6ec6386f42f5ae75768af91e389e11762b2f0992ccb9d2f8cf4.bin"
+    },
+    "result": "CAPTURADA_PENDENTE_DE_LEITURA_E_REFETCH",
+    "publication_authorization": "NAO"
+  },
+  {
+    "receipt_id": "local-RR_SEFAZ_LEGISLACAO-20260716T170455145286Z",
+    "receipt_class": "LOCAL_REPRODUCIBLE_NOT_PLATFORM_NATIVE",
+    "source_id": "RR::SEFAZ_LEGISLACAO",
+    "captured_at": "2026-07-16T17:04:55.145286Z",
+    "request": {
+      "url": "https://www.sefaz.rr.gov.br/downloads/legislacao",
+      "method": "GET",
+      "headers": {
+        "Accept": "text/html,application/xhtml+xml,application/pdf,application/json;q=0.9,*/*;q=0.1",
+        "User-Agent": "RJC-Portal-Proof-Research/1.0 (anonymous, no-cookie)"
+      },
+      "cookies": "none"
+    },
+    "redirect_chain": [],
+    "response": {
+      "url_final": "https://www.sefaz.rr.gov.br/downloads/legislacao",
+      "status": 200,
+      "headers": {
+        "Content-Type": "text/html; charset=UTF-8",
+        "Date": "Thu, 16 Jul 2026 17:04:56 GMT",
+        "Server": "Apache/2.4.67 (Unix)",
+        "Connection": "close",
+        "Transfer-Encoding": "chunked"
+      },
+      "mime": "text/html"
+    },
+    "body": {
+      "bytes": 43030,
+      "sha256": "6fc922195c60567b1b80daddfec56acf76ddfadf105a3b557ec9093f3cf4b08a",
+      "path_externo": "C:\\Users\\rafae\\.codex\\automations\\monitor-portal-rjc-tributario\\evidencias\\2026-07-16-prova-material\\fontes-institucionais\\tentativa-2\\bodies\\RR_SEFAZ_LEGISLACAO-6fc922195c60567b1b80daddfec56acf76ddfadf105a3b557ec9093f3cf4b08a.bin"
+    },
+    "result": "CAPTURADA_PENDENTE_DE_LEITURA_E_REFETCH",
+    "publication_authorization": "NAO"
+  },
+  {
+    "receipt_id": "local-RS_ASSEMBLEIA_LEGISLATIVA-20260716T170455562724Z",
+    "receipt_class": "LOCAL_REPRODUCIBLE_NOT_PLATFORM_NATIVE",
+    "source_id": "RS::ASSEMBLEIA_LEGISLATIVA",
+    "captured_at": "2026-07-16T17:04:55.562724Z",
+    "request": {
+      "url": "https://ww4.al.rs.gov.br/legislacao-estadual",
+      "method": "GET",
+      "headers": {
+        "Accept": "text/html,application/xhtml+xml,application/pdf,application/json;q=0.9,*/*;q=0.1",
+        "User-Agent": "RJC-Portal-Proof-Research/1.0 (anonymous, no-cookie)"
+      },
+      "cookies": "none"
+    },
+    "redirect_chain": [],
+    "response": {
+      "url_final": "https://ww4.al.rs.gov.br/legislacao-estadual",
+      "status": 200,
+      "headers": {
+        "Date": "Thu, 16 Jul 2026 17:04:56 GMT",
+        "Server": "Apache/2.4.41 (Ubuntu)",
+        "Cache-Control": "must-revalidate, no-cache, private",
+        "X-Drupal-Dynamic-Cache": "MISS",
+        "X-UA-Compatible": "IE=edge",
+        "Content-language": "pt-br",
+        "X-Content-Type-Options": "nosniff",
+        "X-Frame-Options": "SAMEORIGIN",
+        "Expires": "Sun, 19 Nov 1978 05:00:00 GMT",
+        "X-Generator": "Drupal 9 (https://www.drupal.org)",
+        "X-Drupal-Cache": "HIT",
+        "Vary": "Accept-Encoding",
+        "Content-Type": "text/html; charset=UTF-8",
+        "Connection": "close",
+        "Transfer-Encoding": "chunked"
+      },
+      "mime": "text/html"
+    },
+    "body": {
+      "bytes": 100343,
+      "sha256": "fb5fe2a8620e3d08e156c80975acdff30dbfb157a9ed893b83651cf74b9854c0",
+      "path_externo": "C:\\Users\\rafae\\.codex\\automations\\monitor-portal-rjc-tributario\\evidencias\\2026-07-16-prova-material\\fontes-institucionais\\tentativa-2\\bodies\\RS_ASSEMBLEIA_LEGISLATIVA-fb5fe2a8620e3d08e156c80975acdff30dbfb157a9ed893b83651cf74b9854c0.bin"
+    },
+    "result": "CAPTURADA_PENDENTE_DE_LEITURA_E_REFETCH",
+    "publication_authorization": "NAO"
+  },
+  {
+    "receipt_id": "local-RS_DOE-20260716T170455537185Z",
+    "receipt_class": "LOCAL_REPRODUCIBLE_NOT_PLATFORM_NATIVE",
+    "source_id": "RS::DOE",
+    "captured_at": "2026-07-16T17:04:55.537185Z",
+    "request": {
+      "url": "https://www.diariooficial.rs.gov.br/",
+      "method": "GET",
+      "headers": {
+        "Accept": "text/html,application/xhtml+xml,application/pdf,application/json;q=0.9,*/*;q=0.1",
+        "User-Agent": "RJC-Portal-Proof-Research/1.0 (anonymous, no-cookie)"
+      },
+      "cookies": "none"
+    },
+    "redirect_chain": [],
+    "response": {
+      "url_final": "https://www.diariooficial.rs.gov.br/",
+      "status": 200,
+      "headers": {
+        "Server": "nginx",
+        "Date": "Thu, 16 Jul 2026 17:04:59 GMT",
+        "Content-Type": "text/html",
+        "Content-Length": "2700",
+        "Connection": "close",
+        "Vary": "Accept-Encoding",
+        "last-modified": "Tue, 07 Jul 2026 16:09:42 GMT",
+        "etag": "\"6a4d24c6-a8c\"",
+        "cache-control": "no-cache, no-store, must-revalidate",
+        "accept-ranges": "bytes",
+        "set-cookie": "b3a251dda027ef05ee3e79f234080dbf=fbb87cb94497f9a679fc64151603a8aa; path=/; HttpOnly",
+        "Alternate-Protocol": "443:npn-spdy/3",
+        "Strict-Transport-Security": "max-age=31536000;"
+      },
+      "mime": "text/html"
+    },
+    "body": {
+      "bytes": 2700,
+      "sha256": "ceb24675bd485e029c2a16de215607959290a556f51abfe170e13dbf43745fa6",
+      "path_externo": "C:\\Users\\rafae\\.codex\\automations\\monitor-portal-rjc-tributario\\evidencias\\2026-07-16-prova-material\\fontes-institucionais\\tentativa-2\\bodies\\RS_DOE-ceb24675bd485e029c2a16de215607959290a556f51abfe170e13dbf43745fa6.bin"
+    },
+    "result": "CAPTURADA_PENDENTE_DE_LEITURA_E_REFETCH",
+    "publication_authorization": "NAO"
+  },
+  {
+    "receipt_id": "local-RS_SEFAZ_LEGISLACAO-20260716T170455409405Z",
+    "receipt_class": "LOCAL_REPRODUCIBLE_NOT_PLATFORM_NATIVE",
+    "source_id": "RS::SEFAZ_LEGISLACAO",
+    "captured_at": "2026-07-16T17:04:55.409405Z",
+    "request": {
+      "url": "https://estado.rs.gov.br/legislacao",
+      "method": "GET",
+      "headers": {
+        "Accept": "text/html,application/xhtml+xml,application/pdf,application/json;q=0.9,*/*;q=0.1",
+        "User-Agent": "RJC-Portal-Proof-Research/1.0 (anonymous, no-cookie)"
+      },
+      "cookies": "none"
+    },
+    "redirect_chain": [],
+    "response": {
+      "url_final": "https://estado.rs.gov.br/legislacao",
+      "status": 200,
+      "headers": {
+        "Date": "Thu, 16 Jul 2026 17:04:57 GMT",
+        "Content-Type": "text/html; charset=UTF-8",
+        "Connection": "close",
+        "Vary": "Accept-Encoding",
+        "X-Frame-Options": "DENY",
+        "X-Content-Type-Options": "nosniff",
+        "X-XSS-Protection": "1; mode=block",
+        "X-Server-ID": "0663",
+        "X-Cache-Status": "EXPIRED",
+        "Alternate-Protocol": "443:npn-spdy/3",
+        "Strict-Transport-Security": "max-age=31536000;",
+        "Set-Cookie": "f5avraaaaaaaaaaaaaaaa_session_=CPPNHLOMLGBGFOIHNGEFJBMKBJJNDAPNCHBHLEBFIHMMOLBOKDEMJHDKBGBCOCAIAEEDBKLMNOKPOLFGEDFAIIEJOACDIHHOCNENBFDJNPFLKGCIKGFDOIOPOPCNCCHP; HttpOnly; secure;",
+        "Transfer-Encoding": "chunked"
+      },
+      "mime": "text/html"
+    },
+    "body": {
+      "bytes": 60398,
+      "sha256": "4a2f60c7c98a0461c610df912ebdd57f9726c160797633e28de076f12c9f7238",
+      "path_externo": "C:\\Users\\rafae\\.codex\\automations\\monitor-portal-rjc-tributario\\evidencias\\2026-07-16-prova-material\\fontes-institucionais\\tentativa-2\\bodies\\RS_SEFAZ_LEGISLACAO-4a2f60c7c98a0461c610df912ebdd57f9726c160797633e28de076f12c9f7238.bin"
+    },
+    "result": "CAPTURADA_PENDENTE_DE_LEITURA_E_REFETCH",
+    "publication_authorization": "NAO"
+  },
+  {
+    "receipt_id": "local-SC_ASSEMBLEIA_LEGISLATIVA-20260716T170455870878Z",
+    "receipt_class": "LOCAL_REPRODUCIBLE_NOT_PLATFORM_NATIVE",
+    "source_id": "SC::ASSEMBLEIA_LEGISLATIVA",
+    "captured_at": "2026-07-16T17:04:55.870878Z",
+    "request": {
+      "url": "https://leis.alesc.sc.gov.br/",
+      "method": "GET",
+      "headers": {
+        "Accept": "text/html,application/xhtml+xml,application/pdf,application/json;q=0.9,*/*;q=0.1",
+        "User-Agent": "RJC-Portal-Proof-Research/1.0 (anonymous, no-cookie)"
+      },
+      "cookies": "none"
+    },
+    "redirect_chain": [
+      {
+        "from_url": "https://leis.alesc.sc.gov.br/",
+        "to_url": "https://leis.alesc.sc.gov.br/legislativo",
+        "status": 307,
+        "location": "/legislativo"
+      }
+    ],
+    "response": {
+      "url_final": "https://leis.alesc.sc.gov.br/legislativo",
+      "status": 200,
+      "headers": {
+        "Cache-Control": "private, no-cache, no-store, max-age=0, must-revalidate",
+        "Content-Type": "text/html; charset=utf-8",
+        "Date": "Thu, 16 Jul 2026 17:05:04 GMT",
+        "Vary": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding",
+        "X-Powered-By": "Next.js",
+        "Connection": "close",
+        "Transfer-Encoding": "chunked"
+      },
+      "mime": "text/html"
+    },
+    "body": {
+      "bytes": 57913,
+      "sha256": "bcb784a9f639778dd9550a5e4efa679d0ba024ba16f50cf74e72f5952425fd9a",
+      "path_externo": "C:\\Users\\rafae\\.codex\\automations\\monitor-portal-rjc-tributario\\evidencias\\2026-07-16-prova-material\\fontes-institucionais\\tentativa-2\\bodies\\SC_ASSEMBLEIA_LEGISLATIVA-bcb784a9f639778dd9550a5e4efa679d0ba024ba16f50cf74e72f5952425fd9a.bin"
+    },
+    "result": "CAPTURADA_PENDENTE_DE_LEITURA_E_REFETCH",
+    "publication_authorization": "NAO"
+  },
+  {
+    "receipt_id": "local-SC_DOE-20260716T170455722626Z",
+    "receipt_class": "LOCAL_REPRODUCIBLE_NOT_PLATFORM_NATIVE",
+    "source_id": "SC::DOE",
+    "captured_at": "2026-07-16T17:04:55.722626Z",
+    "request": {
+      "url": "https://portal.doe.sea.sc.gov.br/",
+      "method": "GET",
+      "headers": {
+        "Accept": "text/html,application/xhtml+xml,application/pdf,application/json;q=0.9,*/*;q=0.1",
+        "User-Agent": "RJC-Portal-Proof-Research/1.0 (anonymous, no-cookie)"
+      },
+      "cookies": "none"
+    },
+    "redirect_chain": [],
+    "response": {
+      "url_final": "https://portal.doe.sea.sc.gov.br/",
+      "status": 200,
+      "headers": {
+        "Server": "nginx/1.25.1",
+        "Date": "Thu, 16 Jul 2026 17:04:56 GMT",
+        "Content-Type": "text/html",
+        "Content-Length": "2419",
+        "Last-Modified": "Thu, 09 Jul 2026 12:31:02 GMT",
+        "Connection": "close",
+        "ETag": "\"6a4f9486-973\"",
+        "X-Frame-Options": "SAMEORIGIN",
+        "Accept-Ranges": "bytes"
+      },
+      "mime": "text/html"
+    },
+    "body": {
+      "bytes": 2419,
+      "sha256": "a718d93b6af6a0722ffdb720d7b2001cc476a515b50d2511281dcc5c1df04f5c",
+      "path_externo": "C:\\Users\\rafae\\.codex\\automations\\monitor-portal-rjc-tributario\\evidencias\\2026-07-16-prova-material\\fontes-institucionais\\tentativa-2\\bodies\\SC_DOE-a718d93b6af6a0722ffdb720d7b2001cc476a515b50d2511281dcc5c1df04f5c.bin"
+    },
+    "result": "CAPTURADA_PENDENTE_DE_LEITURA_E_REFETCH",
+    "publication_authorization": "NAO"
+  },
+  {
+    "receipt_id": "local-SC_SEFAZ_LEGISLACAO-20260716T170455698949Z",
+    "receipt_class": "LOCAL_REPRODUCIBLE_NOT_PLATFORM_NATIVE",
+    "source_id": "SC::SEFAZ_LEGISLACAO",
+    "captured_at": "2026-07-16T17:04:55.698949Z",
+    "request": {
+      "url": "https://legislacao.sef.sc.gov.br/",
+      "method": "GET",
+      "headers": {
+        "Accept": "text/html,application/xhtml+xml,application/pdf,application/json;q=0.9,*/*;q=0.1",
+        "User-Agent": "RJC-Portal-Proof-Research/1.0 (anonymous, no-cookie)"
+      },
+      "cookies": "none"
+    },
+    "redirect_chain": [],
+    "response": {
+      "url_final": "https://legislacao.sef.sc.gov.br/",
+      "status": 200,
+      "headers": {
+        "Content-Type": "text/html",
+        "Last-Modified": "Tue, 12 Sep 2017 21:59:04 GMT",
+        "Accept-Ranges": "bytes",
+        "ETag": "\"87196359122cd31:0\"",
+        "Server": "Microsoft-IIS/10.0",
+        "X-Powered-By": "ASP.NET",
+        "Date": "Thu, 16 Jul 2026 17:05:10 GMT",
+        "Connection": "close",
+        "Content-Length": "3042"
+      },
+      "mime": "text/html"
+    },
+    "body": {
+      "bytes": 3042,
+      "sha256": "12c0b45dda63e441583399fe2d8b4acc1961ad961dc106725cea0df35fc37a79",
+      "path_externo": "C:\\Users\\rafae\\.codex\\automations\\monitor-portal-rjc-tributario\\evidencias\\2026-07-16-prova-material\\fontes-institucionais\\tentativa-2\\bodies\\SC_SEFAZ_LEGISLACAO-12c0b45dda63e441583399fe2d8b4acc1961ad961dc106725cea0df35fc37a79.bin"
+    },
+    "result": "CAPTURADA_PENDENTE_DE_LEITURA_E_REFETCH",
+    "publication_authorization": "NAO"
+  },
+  {
+    "receipt_id": "local-SE_ASSEMBLEIA_LEGISLATIVA-20260716T170456195977Z",
+    "receipt_class": "LOCAL_REPRODUCIBLE_NOT_PLATFORM_NATIVE",
+    "source_id": "SE::ASSEMBLEIA_LEGISLATIVA",
+    "captured_at": "2026-07-16T17:04:56.195977Z",
+    "request": {
+      "url": "https://al.se.leg.br/",
+      "method": "GET",
+      "headers": {
+        "Accept": "text/html,application/xhtml+xml,application/pdf,application/json;q=0.9,*/*;q=0.1",
+        "User-Agent": "RJC-Portal-Proof-Research/1.0 (anonymous, no-cookie)"
+      },
+      "cookies": "none"
+    },
+    "redirect_chain": [],
+    "response": {
+      "url_final": "https://al.se.leg.br/",
+      "status": 200,
+      "headers": {
+        "Server": "nginx",
+        "Date": "Thu, 16 Jul 2026 17:04:56 GMT",
+        "Content-Type": "text/html; charset=UTF-8",
+        "Content-Length": "279883",
+        "Connection": "close",
+        "Vary": "User-Agent",
+        "Last-Modified": "Thu, 16 Jul 2026 14:54:29 GMT",
+        "Accept-Ranges": "bytes",
+        "Cache-Control": "max-age=0, no-cache, no-store, must-revalidate",
+        "Pragma": "no-cache",
+        "Expires": "Mon, 29 Oct 1923 20:30:00 GMT",
+        "Strict-Transport-Security": "max-age=15768000; includeSubDomains",
+        "X-Powered-By": "PleskLin"
+      },
+      "mime": "text/html"
+    },
+    "body": {
+      "bytes": 279883,
+      "sha256": "a643613212b0dc53ac69ae4651caeb8ad136785b9013def854bfe63ef6f0695d",
+      "path_externo": "C:\\Users\\rafae\\.codex\\automations\\monitor-portal-rjc-tributario\\evidencias\\2026-07-16-prova-material\\fontes-institucionais\\tentativa-2\\bodies\\SE_ASSEMBLEIA_LEGISLATIVA-a643613212b0dc53ac69ae4651caeb8ad136785b9013def854bfe63ef6f0695d.bin"
+    },
+    "result": "CAPTURADA_PENDENTE_DE_LEITURA_E_REFETCH",
+    "publication_authorization": "NAO"
+  },
+  {
+    "receipt_id": "local-SE_DOE-20260716T170456005002Z",
+    "receipt_class": "LOCAL_REPRODUCIBLE_NOT_PLATFORM_NATIVE",
+    "source_id": "SE::DOE",
+    "captured_at": "2026-07-16T17:04:56.005002Z",
+    "request": {
+      "url": "https://iose.se.gov.br/",
+      "method": "GET",
+      "headers": {
+        "Accept": "text/html,application/xhtml+xml,application/pdf,application/json;q=0.9,*/*;q=0.1",
+        "User-Agent": "RJC-Portal-Proof-Research/1.0 (anonymous, no-cookie)"
+      },
+      "cookies": "none"
+    },
+    "redirect_chain": [],
+    "response": {
+      "url_final": "https://iose.se.gov.br/",
+      "status": 200,
+      "headers": {
+        "Date": "Thu, 16 Jul 2026 17:04:56 GMT",
+        "Server": "Apache",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "X-Content-Type-Options": "nosniff",
+        "Referrer-Policy": "strict-origin-when-cross-origin",
+        "Permissions-Policy": "geolocation=(), microphone=(), camera=()",
+        "Content-Security-Policy": "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' *.googletagmanager.com *.googleapis.com *.gstatic.com; style-src 'self' 'unsafe-inline' *.googleapis.com; img-src 'self' data: * *.googletagmanager.com; connect-src 'self' *.google-analytics.com *.analytics.google.com *.googletagmanager.com; font-src 'self' *.gstatic.com; object-src 'none'; frame-ancestors 'self' https://*.se.gov.br;",
+        "Access-Control-Allow-Origin": "*",
+        "Set-Cookie": "CAKEPHP=d7k6857v7fifvtv2v3l6t51cjs; expires=Thu, 16-Jul-2026 23:04:56 GMT; Max-Age=21600; path=/; secure; HttpOnly",
+        "Content-Length": "34057",
+        "Vary": "Accept-Encoding",
+        "Connection": "close",
+        "Content-Type": "text/html; charset=UTF-8"
+      },
+      "mime": "text/html"
+    },
+    "body": {
+      "bytes": 34057,
+      "sha256": "84e2efa640aacf83324b0449343b3e918096c155aaef6a596cb7bbf97a2b0ccd",
+      "path_externo": "C:\\Users\\rafae\\.codex\\automations\\monitor-portal-rjc-tributario\\evidencias\\2026-07-16-prova-material\\fontes-institucionais\\tentativa-2\\bodies\\SE_DOE-84e2efa640aacf83324b0449343b3e918096c155aaef6a596cb7bbf97a2b0ccd.bin"
+    },
+    "result": "CAPTURADA_PENDENTE_DE_LEITURA_E_REFETCH",
+    "publication_authorization": "NAO"
+  },
+  {
+    "receipt_id": "local-SE_SEFAZ_LEGISLACAO-20260716T170455919364Z",
+    "receipt_class": "LOCAL_REPRODUCIBLE_NOT_PLATFORM_NATIVE",
+    "source_id": "SE::SEFAZ_LEGISLACAO",
+    "captured_at": "2026-07-16T17:04:55.919364Z",
+    "request": {
+      "url": "http://legislacaoonline.sefaz.se.gov.br:17501/Paginas/Default.aspx",
+      "method": "GET",
+      "headers": {
+        "Accept": "text/html,application/xhtml+xml,application/pdf,application/json;q=0.9,*/*;q=0.1",
+        "User-Agent": "RJC-Portal-Proof-Research/1.0 (anonymous, no-cookie)"
+      },
+      "cookies": "none"
+    },
+    "redirect_chain": [],
+    "response": {
+      "url_final": "http://legislacaoonline.sefaz.se.gov.br:17501/Paginas/Default.aspx",
+      "status": 200,
+      "headers": {
+        "Cache-Control": "private, max-age=0",
+        "Content-Type": "text/html; charset=utf-8",
+        "Expires": "Wed, 01 Jul 2026 17:04:56 GMT",
+        "Last-Modified": "Thu, 16 Jul 2026 17:04:56 GMT",
+        "Server": "Microsoft-IIS/7.5",
+        "X-SharePointHealthScore": "1",
+        "X-AspNet-Version": "4.0.30319",
+        "SPRequestGuid": "04e127a2-6dc2-2078-a4db-b3b94646c9ba",
+        "request-id": "04e127a2-6dc2-2078-a4db-b3b94646c9ba",
+        "X-FRAME-OPTIONS": "SAMEORIGIN",
+        "SPRequestDuration": "116",
+        "SPIisLatency": "1",
+        "X-Powered-By": "ASP.NET",
+        "MicrosoftSharePointTeamServices": "15.0.0.4420",
+        "X-Content-Type-Options": "nosniff",
+        "X-MS-InvokeApp": "1; RequireReadOnly",
+        "Access-Control-Allow-Origin": "http://www.sefaz.se.gov.br",
+        "Access-Control-Allow-Headers": "Content-Type,Accept,X-FORMS_BASED_AUTH_ACCEPTED,crossDomain,credentials,X-RequestDigest ",
+        "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, OPTIONS",
+        "Access-Control-Allow-Credentials": "true",
+        "Date": "Thu, 16 Jul 2026 17:04:56 GMT",
+        "Connection": "close",
+        "Content-Length": "72406"
+      },
+      "mime": "text/html"
+    },
+    "body": {
+      "bytes": 72406,
+      "sha256": "78752ded45c73b90c33ad899dff8163a07810d036de139886b5d6ae8009c115d",
+      "path_externo": "C:\\Users\\rafae\\.codex\\automations\\monitor-portal-rjc-tributario\\evidencias\\2026-07-16-prova-material\\fontes-institucionais\\tentativa-2\\bodies\\SE_SEFAZ_LEGISLACAO-78752ded45c73b90c33ad899dff8163a07810d036de139886b5d6ae8009c115d.bin"
+    },
+    "result": "CAPTURADA_PENDENTE_DE_LEITURA_E_REFETCH",
+    "publication_authorization": "NAO"
+  },
+  {
+    "receipt_id": "local-SP_ASSEMBLEIA_LEGISLATIVA-20260716T170456743124Z",
+    "receipt_class": "LOCAL_REPRODUCIBLE_NOT_PLATFORM_NATIVE",
+    "source_id": "SP::ASSEMBLEIA_LEGISLATIVA",
+    "captured_at": "2026-07-16T17:04:56.743124Z",
+    "request": {
+      "url": "https://www.al.sp.gov.br/norma/resultados?idsTipoNorma=9&tipoPesquisa=E",
+      "method": "GET",
+      "headers": {
+        "Accept": "text/html,application/xhtml+xml,application/pdf,application/json;q=0.9,*/*;q=0.1",
+        "User-Agent": "RJC-Portal-Proof-Research/1.0 (anonymous, no-cookie)"
+      },
+      "cookies": "none"
+    },
+    "redirect_chain": [],
+    "response": {
+      "url_final": "https://www.al.sp.gov.br/norma/resultados?idsTipoNorma=9&tipoPesquisa=E",
+      "status": 200,
+      "headers": {
+        "Date": "Thu, 16 Jul 2026 17:05:02 GMT",
+        "Server": "Apache",
+        "Vary": "Origin,Access-Control-Request-Method,Access-Control-Request-Headers",
+        "X-Content-Type-Options": "nosniff",
+        "X-XSS-Protection": "1; mode=block",
+        "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+        "Pragma": "no-cache",
+        "Expires": "0",
+        "Strict-Transport-Security": "max-age=31536000 ; includeSubDomains",
+        "Content-Language": "en-US",
+        "X-OneAgent-JS-Injection": "true",
+        "X-ruxit-JS-Agent": "true",
+        "Access-Control-Allow-Origin": "https://app.al.sp.gov.br https://idp.al.sp.gov.br",
+        "Access-Control-Allow-Methods": "*",
+        "Access-Control-Allow-Headers": "*",
+        "Server-Timing": "dtRpid;desc=\"1259153625\"",
+        "Set-Cookie": "BNES_dtCookie810ommp0=gbB+DoSR+3RrpF4kb8NvAod22Ne/Oa79caGr+RXzVYL7F+QuSM2XWcHlZmj8R6wpni8l7QXVT3LCM0wPVVJNlG4yxQrq5sJ8lR8wpy9dIfRpQ7bRMMU/OLxv4T46mXwxvHvfmD3HLdAQJ/ieRcxtnPR3NLcfqU0RdJLnosxJ6jwks6mRpLexhOBcIFI8+BXRSwdR9B/7+Sc=; Path=/; Domain=.sp.gov.br",
+        "Content-Type": "text/html;charset=ISO-8859-1",
+        "X-FRAME-OPTIONS": "Allow-From sts.al.sp.gov.br www.al.sp.gov.br",
+        "Connection": "close"
+      },
+      "mime": "text/html"
+    },
+    "body": {
+      "bytes": 177723,
+      "sha256": "c5aca8df37b57af821d2d796280010166465e628f58c8f824fc415a6e42d2eaf",
+      "path_externo": "C:\\Users\\rafae\\.codex\\automations\\monitor-portal-rjc-tributario\\evidencias\\2026-07-16-prova-material\\fontes-institucionais\\tentativa-2\\bodies\\SP_ASSEMBLEIA_LEGISLATIVA-c5aca8df37b57af821d2d796280010166465e628f58c8f824fc415a6e42d2eaf.bin"
+    },
+    "result": "CAPTURADA_PENDENTE_DE_LEITURA_E_REFETCH",
+    "publication_authorization": "NAO"
+  },
+  {
+    "receipt_id": "local-SP_DOE-20260716T170456590691Z",
+    "receipt_class": "LOCAL_REPRODUCIBLE_NOT_PLATFORM_NATIVE",
+    "source_id": "SP::DOE",
+    "captured_at": "2026-07-16T17:04:56.590691Z",
+    "request": {
+      "url": "https://doe.sp.gov.br/",
+      "method": "GET",
+      "headers": {
+        "Accept": "text/html,application/xhtml+xml,application/pdf,application/json;q=0.9,*/*;q=0.1",
+        "User-Agent": "RJC-Portal-Proof-Research/1.0 (anonymous, no-cookie)"
+      },
+      "cookies": "none"
+    },
+    "redirect_chain": [],
+    "response": {
+      "url_final": "https://doe.sp.gov.br/",
+      "status": 200,
+      "headers": {
+        "Server": "nginx/1.22.1",
+        "Date": "Thu, 16 Jul 2026 17:04:57 GMT",
+        "Content-Type": "text/html; charset=utf-8",
+        "Content-Length": "46906",
+        "Connection": "close",
+        "Vary": "Accept-Encoding",
+        "X-Powered-By": "Next.js",
+        "ETag": "\"o36u7nbzi21057\"",
+        "traceresponse": "00-e01b0c85986b74d00151a558b37c59b1-b78d9f9987bc5480-01",
+        "x-dt-tracestate": "80153834-d863fdd6@dt"
+      },
+      "mime": "text/html"
+    },
+    "body": {
+      "bytes": 46906,
+      "sha256": "d0e32126c9b8e2213cb2ea0537f3eab596eee2efdfd39648b543ee71c0f06196",
+      "path_externo": "C:\\Users\\rafae\\.codex\\automations\\monitor-portal-rjc-tributario\\evidencias\\2026-07-16-prova-material\\fontes-institucionais\\tentativa-2\\bodies\\SP_DOE-d0e32126c9b8e2213cb2ea0537f3eab596eee2efdfd39648b543ee71c0f06196.bin"
+    },
+    "result": "CAPTURADA_PENDENTE_DE_LEITURA_E_REFETCH",
+    "publication_authorization": "NAO"
+  },
+  {
+    "receipt_id": "local-SP_SEFAZ_LEGISLACAO-20260716T170456566072Z",
+    "receipt_class": "LOCAL_REPRODUCIBLE_NOT_PLATFORM_NATIVE",
+    "source_id": "SP::SEFAZ_LEGISLACAO",
+    "captured_at": "2026-07-16T17:04:56.566072Z",
+    "request": {
+      "url": "https://portal.fazenda.sp.gov.br/paginas/legislacao.aspx",
+      "method": "GET",
+      "headers": {
+        "Accept": "text/html,application/xhtml+xml,application/pdf,application/json;q=0.9,*/*;q=0.1",
+        "User-Agent": "RJC-Portal-Proof-Research/1.0 (anonymous, no-cookie)"
+      },
+      "cookies": "none"
+    },
+    "redirect_chain": [],
+    "response": {
+      "url_final": "https://portal.fazenda.sp.gov.br/paginas/legislacao.aspx",
+      "status": 200,
+      "headers": {
+        "Cache-Control": "private",
+        "Content-Type": "text/html; charset=utf-8",
+        "Expires": "Thu, 16 Jul 2026 17:07:57 GMT",
+        "Vary": "*",
+        "Server": "Microsoft-IIS/10.0",
+        "X-SharePointHealthScore": "0",
+        "X-XSS-Protection": "0",
+        "X-AspNet-Version": "4.0.30319",
+        "SPRequestGuid": "04e127a2-fcff-9038-8be1-cf4de70512c5",
+        "request-id": "04e127a2-fcff-9038-8be1-cf4de70512c5",
+        "X-FRAME-OPTIONS": "SAMEORIGIN",
+        "Content-Security-Policy": "frame-ancestors 'self' teams.microsoft.com *.teams.microsoft.com *.skype.com *.teams.microsoft.us local.teams.office.com *.powerapps.com *.yammer.com *.officeapps.live.com *.office.com *.stream.azure-test.net *.microsoftstream.com *.dynamics.com *.microsoft.com onedrive.live.com *.onedrive.live.com;",
+        "SPRequestDuration": "95",
+        "SPIisLatency": "1",
+        "X-Powered-By": "ASP.NET",
+        "MicrosoftSharePointTeamServices": "16.0.0.19725",
+        "X-Content-Type-Options": "nosniff",
+        "X-MS-InvokeApp": "1; RequireReadOnly",
+        "Strict-Transport-Security": "max-age=31536000",
+        "Date": "Thu, 16 Jul 2026 17:04:57 GMT",
+        "Connection": "close",
+        "Content-Length": "95902"
+      },
+      "mime": "text/html"
+    },
+    "body": {
+      "bytes": 95902,
+      "sha256": "c4950a3d01428df725447d0e68d86f505b6b352e60ac5c8f14df5abdc9b8c72f",
+      "path_externo": "C:\\Users\\rafae\\.codex\\automations\\monitor-portal-rjc-tributario\\evidencias\\2026-07-16-prova-material\\fontes-institucionais\\tentativa-2\\bodies\\SP_SEFAZ_LEGISLACAO-c4950a3d01428df725447d0e68d86f505b6b352e60ac5c8f14df5abdc9b8c72f.bin"
+    },
+    "result": "CAPTURADA_PENDENTE_DE_LEITURA_E_REFETCH",
+    "publication_authorization": "NAO"
+  },
+  {
+    "receipt_id": "local-TO_ASSEMBLEIA_LEGISLATIVA-20260716T170457165802Z",
+    "receipt_class": "LOCAL_REPRODUCIBLE_NOT_PLATFORM_NATIVE",
+    "source_id": "TO::ASSEMBLEIA_LEGISLATIVA",
+    "captured_at": "2026-07-16T17:04:57.165802Z",
+    "request": {
+      "url": "https://www.al.to.leg.br/",
+      "method": "GET",
+      "headers": {
+        "Accept": "text/html,application/xhtml+xml,application/pdf,application/json;q=0.9,*/*;q=0.1",
+        "User-Agent": "RJC-Portal-Proof-Research/1.0 (anonymous, no-cookie)"
+      },
+      "cookies": "none"
+    },
+    "redirect_chain": [],
+    "response": {
+      "url_final": "https://www.al.to.leg.br/",
+      "status": 200,
+      "headers": {
+        "Cache-Control": "private",
+        "Expires": "Thu, 01 Jan 1970 00:00:00 GMT",
+        "Set-Cookie": "JSESSIONID=15B40F0F0514B3C9C86101264A11F7EE; Path=/; Secure; HttpOnly",
+        "Content-Type": "text/html;charset=UTF-8",
+        "Transfer-Encoding": "chunked",
+        "Date": "Thu, 16 Jul 2026 10:04:54 PDT",
+        "Connection": "close"
+      },
+      "mime": "text/html"
+    },
+    "body": {
+      "bytes": 17310,
+      "sha256": "e8f74a2b747a91428babb546247e538aaca4d91104a15efd0dbfa687a533eacd",
+      "path_externo": "C:\\Users\\rafae\\.codex\\automations\\monitor-portal-rjc-tributario\\evidencias\\2026-07-16-prova-material\\fontes-institucionais\\tentativa-2\\bodies\\TO_ASSEMBLEIA_LEGISLATIVA-e8f74a2b747a91428babb546247e538aaca4d91104a15efd0dbfa687a533eacd.bin"
+    },
+    "result": "CAPTURADA_PENDENTE_DE_LEITURA_E_REFETCH",
+    "publication_authorization": "NAO"
+  },
+  {
+    "receipt_id": "local-TO_DOE-20260716T170457000329Z",
+    "receipt_class": "LOCAL_REPRODUCIBLE_NOT_PLATFORM_NATIVE",
+    "source_id": "TO::DOE",
+    "captured_at": "2026-07-16T17:04:57.000329Z",
+    "request": {
+      "url": "https://diariooficial.to.gov.br/",
+      "method": "GET",
+      "headers": {
+        "Accept": "text/html,application/xhtml+xml,application/pdf,application/json;q=0.9,*/*;q=0.1",
+        "User-Agent": "RJC-Portal-Proof-Research/1.0 (anonymous, no-cookie)"
+      },
+      "cookies": "none"
+    },
+    "redirect_chain": [],
+    "response": {
+      "url_final": "https://diariooficial.to.gov.br/",
+      "status": 200,
+      "headers": {
+        "Server": "nginx/1.30.1",
+        "Date": "Thu, 16 Jul 2026 17:04:57 GMT",
+        "Content-Type": "text/html; charset=UTF-8",
+        "Transfer-Encoding": "chunked",
+        "Connection": "close",
+        "Cache-Control": "no-cache, private",
+        "Content-Encoding": "gzip",
+        "X-XSS-Protection": "1; mode=block",
+        "Referrer-Policy": "no-referrer-when-downgrade",
+        "Strict-Transport-Security": "max-age=31536000;",
+        "X-Proxy-Cache": "HIT"
+      },
+      "mime": "text/html"
+    },
+    "body": {
+      "bytes": 2969,
+      "sha256": "fbbacf00f3d7409f7cb2736870fff24ddc163a23e47f8063d68247fe6fd8a0be",
+      "path_externo": "C:\\Users\\rafae\\.codex\\automations\\monitor-portal-rjc-tributario\\evidencias\\2026-07-16-prova-material\\fontes-institucionais\\tentativa-2\\bodies\\TO_DOE-fbbacf00f3d7409f7cb2736870fff24ddc163a23e47f8063d68247fe6fd8a0be.bin"
+    },
+    "result": "CAPTURADA_PENDENTE_DE_LEITURA_E_REFETCH",
+    "publication_authorization": "NAO"
+  },
+  {
+    "receipt_id": "local-TO_SEFAZ_LEGISLACAO-20260716T170456837802Z",
+    "receipt_class": "LOCAL_REPRODUCIBLE_NOT_PLATFORM_NATIVE",
+    "source_id": "TO::SEFAZ_LEGISLACAO",
+    "captured_at": "2026-07-16T17:04:56.837802Z",
+    "request": {
+      "url": "https://www.to.gov.br/sefaz/legislacao-tributaria/3lb4r1ekdyvb",
+      "method": "GET",
+      "headers": {
+        "Accept": "text/html,application/xhtml+xml,application/pdf,application/json;q=0.9,*/*;q=0.1",
+        "User-Agent": "RJC-Portal-Proof-Research/1.0 (anonymous, no-cookie)"
+      },
+      "cookies": "none"
+    },
+    "redirect_chain": [],
+    "response": {
+      "url_final": "https://www.to.gov.br/sefaz/legislacao-tributaria/3lb4r1ekdyvb",
+      "status": 200,
+      "headers": {
+        "Server": "nginx",
+        "Date": "Thu, 16 Jul 2026 17:04:57 GMT",
+        "Content-Type": "text/html; charset=UTF-8",
+        "Transfer-Encoding": "chunked",
+        "Connection": "close",
+        "GovTO-Cache-Status": "STALE"
+      },
+      "mime": "text/html"
+    },
+    "body": {
+      "bytes": 19558,
+      "sha256": "0e1ba81e41e4f2849f4c121460ed24e7774d5b3a713f4aff2d5112862c6b4d9f",
+      "path_externo": "C:\\Users\\rafae\\.codex\\automations\\monitor-portal-rjc-tributario\\evidencias\\2026-07-16-prova-material\\fontes-institucionais\\tentativa-2\\bodies\\TO_SEFAZ_LEGISLACAO-0e1ba81e41e4f2849f4c121460ed24e7774d5b3a713f4aff2d5112862c6b4d9f.bin"
+    },
+    "result": "CAPTURADA_PENDENTE_DE_LEITURA_E_REFETCH",
+    "publication_authorization": "NAO"
+  }
+]
